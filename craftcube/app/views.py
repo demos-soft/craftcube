@@ -5,6 +5,7 @@ import functools
 import io
 import json
 import re
+import secrets
 from datetime import UTC
 from html import escape as html_escape
 from html import unescape
@@ -16,6 +17,7 @@ from flask import (
     current_app,
     flash,
     g,
+    jsonify,
     redirect,
     render_template,
     request,
@@ -188,6 +190,9 @@ def login():
             store.touch_login(uid)
             session["user_id"] = uid
             session["username"] = username
+            # stable per-login token like PHP's session_id(); the compose
+            # local-storage copy uses it to distinguish sessions (app.js:5440)
+            session["sid"] = secrets.token_hex(16)
             session["imap_password"] = password
             # Roundcube keeps the browser-detected timezone in the session
             # only (the stored preference remains 'auto' unless chosen)
@@ -1222,6 +1227,13 @@ def compose():
                           for i in identities},
                       editor_env={
                           "task": "mail", "action": "compose",
+                          "compose_id": request.form.get("_compose_id")
+                                        or request.args.get("_compose_id")
+                                        or str(secrets.randbelow(900000000) + 100000000),
+                          "draft_autosave": int(prefs.get("draft_autosave", 300) or 0),
+                          "save_localstorage": bool(prefs.get("compose_save_localstorage", 1)),
+                          "user_id": session["user_id"],
+                          "session_id": session.get("sid", ""),
                           "compose_mode": {"draft": "draft", "edit": "edit",
                                            "reply": "reply", "replyall": "reply",
                                            "replylist": "reply"}.get(mode, ""),
@@ -1264,6 +1276,16 @@ def compose():
             mdn=bool(request.form.get("_mdn")),
         )
         act = request.form.get("_action", "send")
+        if act == "save" and request.form.get("_ajax"):
+            # draft autosave (app.js auto_save_start -> command('savedraft')):
+            # store silently and report the draft uid so the next save
+            # replaces it instead of piling up copies
+            try:
+                new_uid = box.save_draft(
+                    msg.as_bytes(), replace_uid=int(draft_uid) if draft_uid else None)
+                return jsonify({"draft_id": new_uid or ""})
+            except MailError as e:
+                return jsonify({"error": str(e)}), 500
         # spellcheck_before_send (send.php:134-165): check the body before
         # sending unless this form was already checked (a second Send goes
         # through); found words are highlighted on re-render

@@ -466,6 +466,16 @@
     identities: {{ identities_map | default({}) | tojson }},
     editor_config: {{ editor_cfg | tojson }}
   });
+  // draft autosave + local-storage recovery (app.js auto_save_start,
+  // save_compose_form_local, compose_restore_dialog)
+  window.cc_compose_env = {
+    compose_id: {{ editor_env.compose_id | tojson }},
+    draft_id: {{ (draft_uid or '') | tojson }},
+    draft_autosave: {{ editor_env.draft_autosave | tojson }},
+    save_localstorage: {{ editor_env.save_localstorage | tojson }},
+    session_id: {{ editor_env.session_id | tojson }},
+    storage_prefix: 'roundcube.{{ editor_env.user_id }}.'
+  };
   window.addEventListener('load', function () {
     cc_editor.init_editor('composebody');
     // spellcheck_before_send: the server checked on send and came back with
@@ -486,4 +496,228 @@
     // signatures are inserted on identity *change* only (app.js
     // change_identity); drafts/new messages start without re-insertion
   });
+
+  // --------------------------------------------------------------- autosave
+  // app.js auto_save_start() (5423) + save_compose_form_local() (5494) +
+  // compose_restore_dialog() (4955), honoring draft_autosave and
+  // compose_save_localstorage.
+  (function () {
+    var env = window.cc_compose_env;
+    var form = document.getElementById('composeform');
+    var type_activity = 0, type_activity_last = 0;
+    var cmp_hash = null, skip_unsavedcheck = false;
+    document.addEventListener('keypress', function () { type_activity++; });
+
+    function compose_field_hash() {
+      var s = '', ed = cc_editor.get_editor_for('composebody');
+      if (ed) ed.save();
+      form.querySelectorAll('input,select,textarea').forEach(function (e) {
+        if (e.type === 'hidden') return;
+        s += (e.name || '') + '=' + (e.type === 'checkbox' ? (e.checked ? 1 : '') : e.value) + ';';
+      });
+      var h = 0;
+      for (var i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) | 0; }
+      return String(h);
+    }
+
+    function ls_get(key, def) {
+      try {
+        var raw = localStorage.getItem(env.storage_prefix + key);
+        return raw ? JSON.parse(raw) : def;
+      } catch (e) { return def; }
+    }
+    function ls_set(key, data) {
+      try { localStorage.setItem(env.storage_prefix + key, JSON.stringify(data)); } catch (e) {}
+    }
+    function ls_remove(key) {
+      try { localStorage.removeItem(env.storage_prefix + key); } catch (e) {}
+    }
+
+    // save_compose_form_local (app.js:5494): snapshot every visible form
+    // field (hidden ones kept only for _is_html, as the reference does)
+    function save_compose_form_local() {
+      if (!env.save_localstorage) return;
+      var ed = cc_editor.get_editor_for('composebody');
+      if (ed) ed.save();
+      var formdata = { session: env.session_id, changed: new Date().getTime() };
+      if (env.draft_id) formdata.draft_id = env.draft_id;
+      var empty = true;
+      form.querySelectorAll('input,select,textarea').forEach(function (elem) {
+        var name = elem.name;
+        if (!name) return;
+        if (elem.tagName === 'INPUT' &&
+            (elem.type === 'button' || elem.type === 'submit' ||
+             (elem.type === 'hidden' && name !== '_is_html'))) return;
+        formdata[name] = elem.type === 'checkbox' ? (elem.checked ? elem.value : '') : elem.value;
+        if (String(formdata[name]) !== '' && !(elem.type === 'hidden')) empty = false;
+      });
+      if (empty) return;
+      var index = ls_get('compose.index', []);
+      if (index.indexOf(env.compose_id) < 0) index.push(env.compose_id);
+      ls_set('compose.' + env.compose_id, formdata);
+      ls_set('compose.index', index);
+    }
+
+    function remove_compose_data(key) {
+      var index = ls_get('compose.index', []);
+      if (index.indexOf(key) >= 0) {
+        ls_remove('compose.' + key);
+        ls_set('compose.index', index.filter(function (k) { return k !== key; }));
+      }
+    }
+    window.cc_remove_compose_data = remove_compose_data;
+
+    // command('savedraft') — silent AJAX variant (the reference submits the
+    // form into a hidden iframe; the _ajax endpoint answers with draft_id)
+    function save_draft() {
+      clearTimeout(save_timer);
+      if (env.draft_id && cmp_hash === compose_field_hash()) {
+        auto_save_start();
+        return;
+      }
+      var ed = cc_editor.get_editor_for('composebody');
+      if (ed) ed.save();
+      var fd = new FormData(form);
+      fd.set('_action', 'save');
+      fd.set('_ajax', '1');
+      fd.set('_compose_id', env.compose_id);
+      fetch(form.action || window.location.href, { method: 'POST', body: fd })
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (j && j.draft_id) {
+            env.draft_id = j.draft_id;
+            var hid = form.querySelector('[name=_draft]');
+            if (hid) hid.value = j.draft_id;
+          }
+          // always remove local copy upon saving as draft (app.js:5402)
+          remove_compose_data(env.compose_id);
+          cmp_hash = compose_field_hash();
+          auto_save_start();
+        })
+        .catch(function () { auto_save_start(); });
+    }
+
+    // auto_save_start (app.js:5423)
+    var save_timer = null;
+    function auto_save_start() {
+      clearTimeout(save_timer);
+      if (env.draft_autosave) {
+        save_timer = setTimeout(save_draft, env.draft_autosave * 1000);
+      }
+    }
+
+    // compose_restore_dialog (app.js:4955)
+    function restore_compose_form(formdata) {
+      Object.keys(formdata).forEach(function (k) {
+        if (k[0] !== '_' || k === '_action') return;
+        var add = window.cc_recipient_add && window.cc_recipient_add[k];
+        if (add) {
+          String(formdata[k] || '').split(/,(?![^<]*>)/).forEach(function (a) {
+            a = a.trim();
+            if (a) add(a, true);
+          });
+          return;
+        }
+        var el = form.querySelector('[name="' + k + '"]');
+        if (!el) return;
+        if (el.type === 'checkbox') el.checked = formdata[k] !== '';
+        else el.value = formdata[k];
+      });
+      // match the stored html/plain mode (toggle-editor noconvert)
+      var cur_html = (form.querySelector('[name=_is_html]') || {}).value === '1';
+      var want_html = formdata._is_html === '1';
+      if (want_html !== cur_html) {
+        cc_editor.command('toggle-editor', { id: 'composebody', html: want_html, noconvert: true });
+      }
+    }
+
+    function show_restore_dialog(key, formdata, show_next) {
+      var subject = (formdata._subject || '').replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+      var msg = 'A previously composed but unsent message was found.\n\n' +
+        'Subject: ' + subject + '\nSaved: ' +
+        new Date(formdata.changed).toLocaleString() +
+        '\n\nDo you want to restore this message?';
+      var box = document.createElement('div');
+      box.style.cssText = 'padding:1rem;white-space:pre-wrap';
+      box.textContent = msg;
+      var dlg = null;
+      function buttons() {
+        return [
+          { label: 'Restore', cls: 'mainaction restore', click: function () {
+              dlg.close();
+              restore_compose_form(formdata);
+              remove_compose_data(key);
+              save_compose_form_local();
+            } },
+          { label: 'Delete', cls: 'delete', click: function () {
+              dlg.close(); remove_compose_data(key); show_next();
+            } },
+          { label: 'Ignore', cls: 'cancel', click: function () {
+              dlg.close(); show_next();
+            } }
+        ];
+      }
+      dlg = window.cc_simple_dialog(box, 'Restore message?', { buttons: buttons(), height: 280 });
+    }
+
+    window.addEventListener('load', function () {
+      cmp_hash = compose_field_hash();
+      auto_save_start();
+
+      if (env.save_localstorage && window.localStorage) {
+        var index = ls_get('compose.index', []);
+        for (var i = 0; i < index.length; i++) {
+          var key = index[i];
+          var formdata = ls_get('compose.' + key, null);
+          if (!formdata) continue;
+          // restore saved copy of current compose_id silently
+          if (formdata.changed && key === env.compose_id) {
+            restore_compose_form(formdata);
+            break;
+          }
+          if (env.draft_id && formdata.draft_id && formdata.draft_id !== env.draft_id) continue;
+          // other session's copy: ask (restore / delete / ignore)
+          if (formdata.changed && formdata.session !== env.session_id) {
+            (function (j) {
+              show_restore_dialog(key, formdata, function () {
+                for (var n = j + 1; n < index.length; n++) {
+                  var k2 = index[n], f2 = ls_get('compose.' + k2, null);
+                  if (f2 && f2.changed && f2.session !== env.session_id) {
+                    show_restore_dialog(k2, f2, function () {});
+                    break;
+                  }
+                }
+              });
+            })(i);
+            break;
+          }
+        }
+
+        // 5-second local snapshot timer while typing (app.js:5431)
+        setInterval(function () {
+          if (type_activity > type_activity_last) {
+            save_compose_form_local();
+            type_activity_last = type_activity;
+          }
+        }, 5000);
+        window.addEventListener('pagehide', function () {
+          remove_compose_data(env.compose_id);
+        });
+      }
+
+      // unsaved-changes warning (app.js:5452); intentional submits clear
+      // skip_unsavedcheck's guard via the submit handler below
+      window.onbeforeunload = function () {
+        if (!skip_unsavedcheck && cmp_hash !== compose_field_hash()) {
+          return 'The message has not been sent and has unsaved changes. Do you want to discard your changes?';
+        }
+      };
+      form.addEventListener('submit', function () {
+        skip_unsavedcheck = true;
+        remove_compose_data(env.compose_id);
+      });
+    });
+  })();
 </script>

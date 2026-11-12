@@ -244,6 +244,14 @@ class Imap:
         typ, msg = self.conn.append(_q(folder), _flagstr(list(flags)) if flags else None, None, raw_bytes)
         if typ != "OK":
             raise MailError(f"Append failed: {msg}")
+        # dovecot answers '[APPENDUID <valid> <uid>] ...' — hand the new uid
+        # back so autosave can replace the draft it just wrote (app.js keeps
+        # env.draft_id to avoid saving the same content twice)
+        try:
+            m = re.search(rb"\[APPENDUID \d+ (\d+)\]", msg[0])
+            return int(m.group(1)) if m else None
+        except (TypeError, IndexError, AttributeError):
+            return None
 
     def expunge(self):
         self.conn.expunge()
@@ -787,7 +795,7 @@ class Mailbox:
             pass
         if replace_uid:
             self.delete_draft(replace_uid)
-        self.imap.append(drafts, raw_bytes, ["\\Draft", "\\Seen"])
+        return self.imap.append(drafts, raw_bytes, ["\\Draft", "\\Seen"])
 
     def delete_draft(self, uid):
         drafts = self.special("drafts") or "Drafts"
