@@ -77,8 +77,8 @@
 
   // textarea_autoresize_init (ui.js): grow with content, no scrollbar
   function textarea_autoresize_init(textarea) {
-    var padding, minHeight,
-      resize = function () {
+    var padding; var minHeight;
+      var resize = function () {
         if (!textarea.scrollHeight) return setTimeout(resize, 250);
         if (!padding) {
           var cs = window.getComputedStyle(textarea);
@@ -86,7 +86,7 @@
           minHeight = textarea.offsetHeight;
         }
         if (textarea.scrollHeight - padding <= minHeight) return;
-        var scroll_element = null, scroll_pos = 0;
+        var scroll_element = null; var scroll_pos = 0;
         for (var p = textarea.parentNode; p; p = p.parentNode) {
           if (p.scrollTop > 0) { scroll_element = p; scroll_pos = p.scrollTop; break; }
         }
@@ -107,8 +107,8 @@
   function format_converter(text, format, func) {
     // warn the user (if converted content is not empty)
     if (!text
-      || (format == 'html' && !(text.replace(/<[^>]+>|&nbsp;|\u00C2\u00A0|\s/g, '')).length)
-      || (format != 'html' && !(text.replace(/\u00C2\u00A0|\s/g, '')).length)
+      || (format === 'html' && !(text.replace(/<[^>]+>|&nbsp;|\u00C2\u00A0|\s/g, '')).length)
+      || (format !== 'html' && !(text.replace(/\u00C2\u00A0|\s/g, '')).length)
     ) {
       if (func) setTimeout(function () { func(''); }, 50);
       return true;
@@ -118,8 +118,8 @@
     env.editor_warned = true;
     if (!confirmed) return false;
 
-    var url = (format == 'html' ? '/utils/html2text' : '/utils/text2html'),
-      lock = set_busy(true, get_label('converting'));
+    var url = (format === 'html' ? '/utils/html2text' : '/utils/text2html');
+      var lock = set_busy(true, get_label('converting'));
 
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url, true);
@@ -127,7 +127,7 @@
     xhr.onerror = function () { if (lock) set_busy(false); };
     xhr.onload = function () {
       if (lock) set_busy(false);
-      if (func && xhr.status == 200) func(xhr.responseText);
+      if (func && xhr.status === 200) func(xhr.responseText);
     };
     xhr.send(text);
     return true;
@@ -136,10 +136,10 @@
   // ------------------------------------------------------------- editor class
   // rcube_text_editor (editor.js), jQuery-free
   function rcube_text_editor(config, id) {
-    var ref = this,
-      editorElement = byId(id),
-      abs_url = location.href.replace(/[?#].*$/, '').replace(/\/$/, ''),
-      conf = {
+    var ref = this;
+      var editorElement = byId(id);
+      var abs_url = location.href.replace(/[?#].*$/, '').replace(/\/$/, '');
+      var conf = {
         selector: '#' + (editorElement.classList.contains('mce_editor') ? id : 'fake-editor-id'),
         readonly: editorElement.hasAttribute('readonly') || editorElement.disabled,
         cache_suffix: 's=5080200',
@@ -167,7 +167,7 @@
         anchor_bottom: false,
         anchor_top: false,
         file_picker_types: 'image media',
-        min_height: config.mode == 'identity' ? 100 : 400,
+        min_height: config.mode === 'identity' ? 100 : 400,
         deprecation_warnings: false
       };
 
@@ -179,7 +179,7 @@
     }
 
     // minimal editor (identity/response) vs full-featured (compose)
-    if (config.mode == 'identity' || config.mode == 'response') {
+    if (config.mode === 'identity' || config.mode === 'response') {
       conf.toolbar += ' | charmap hr link unlink image code $extra';
       conf.plugins = 'autolink charmap code hr image link paste tabfocus';
       conf.file_picker_types = 'image';
@@ -231,7 +231,7 @@
       ed.on('init', function () { ref.init_callback(ed); });
       // spellcheck button state update (editor.js setup)
       ed.on('SpellcheckStart SpellcheckEnd', function (args) {
-        ref.spellcheck_active = args.type == 'spellcheckstart';
+        ref.spellcheck_active = args.type === 'spellcheckstart';
         ref.spellcheck_observer();
       });
       // make links open on shift-click
@@ -259,9 +259,9 @@
     // react to real individual TinyMCE init
     this.init_callback = function (editor) {
       this.editor = editor;
-      if (env.action == 'compose') {
-        var area = editorElement,
-          group = editorElement.parentNode.querySelector('div.tox-toolbar__group');
+      if (env.action === 'compose') {
+        var area = editorElement;
+          var group = editorElement.parentNode.querySelector('div.tox-toolbar__group');
         // jQuery .height() also measures display:none elements (rows *
         // line-height), unlike offsetHeight; without this the wait-loop
         // below never ends once the textarea is hidden by the editor
@@ -277,9 +277,9 @@
     };
 
     this.tabindex = function (focus) {
-      if (env.task == 'mail' && this.editor) {
-        var textarea = this.editor.getElement(),
-          node = this.editor.getContentAreaContainer().childNodes[0];
+      if (env.task === 'mail' && this.editor) {
+        var textarea = this.editor.getElement();
+          var node = this.editor.getContentAreaContainer().childNodes[0];
         if (textarea && node && textarea.tabIndex >= 0) node.tabIndex = textarea.tabIndex;
       }
       if (focus) this.focus();
@@ -294,12 +294,12 @@
 
     // switch html/plain mode (editor.js toggle())
     this.toggle = function (ishtml, noconvert) {
-      var curr, content, result,
+      var curr; var content; var result;
         // non-printable chars survive text2html/html2text as sig placeholder
-        sig_mark = '\u0002\u0003',
-        input = editorElement,
-        signature = env.identity ? env.signatures[env.identity] : null,
-        is_sig = signature && signature.text && signature.text.length > 1;
+        var sig_mark = '\u0002\u0003';
+        var input = editorElement;
+        var signature = env.identity ? env.signatures[env.identity] : null;
+        var is_sig = signature && signature.text && signature.text.length > 1;
 
       if (ishtml) {
         content = input.value;
@@ -353,21 +353,21 @@
 
       if (ed) {
         ed.getWin().focus();
-        var html, format;
-        if (typeof input == 'object' && ('html' in input)) {
+        var html; var format;
+        if (typeof input === 'object' && ('html' in input)) {
           html = input.html; format = 'html';
         } else {
-          if (typeof input == 'object') input = input.text || '';
+          if (typeof input === 'object') input = input.text || '';
           html = quote_html(input).replace(/\r?\n/g, '<br/>');
           format = 'text';
         }
         ed.selection.setContent(html, { format: format });
       } else {
-        var selection = get_input_selection(editorElement),
-          value = editorElement.value,
-          pre = value.substring(0, selection.start),
-          end = value.substring(selection.end, value.length);
-        if (typeof input == 'object') input = input.text || '';
+        var selection = get_input_selection(editorElement);
+          var value = editorElement.value;
+          var pre = value.substring(0, selection.start);
+          var end = value.substring(selection.end, value.length);
+        if (typeof input === 'object') input = input.text || '';
         editorElement.value = pre + input + end;
         set_caret_pos(editorElement, selection.start + input.length);
         editorElement.focus();
@@ -408,11 +408,11 @@
 
     // change user signature (editor.js change_signature) — show_sig=true
     // (re)inserts the given identity's signature
-    this.change_signature = function (id, show_sig) {
-      var position_element, cursor_pos, p = -1,
-        input_message = editorElement,
-        message = input_message.value,
-        sig = env.identity;
+    this.change_signature = function (identity_id, show_sig) {
+      var position_element; var cursor_pos; var p = -1;
+        var input_message = editorElement;
+        var message = input_message.value;
+        var sig = env.identity;
 
       if (!this.editor) { // plain text mode
         if (show_sig && sig && env.signatures && env.signatures[sig]) {
@@ -421,8 +421,8 @@
           if (p >= 0) message = message.substring(0, p) + message.substring(p + sig.length);
         }
 
-        if (show_sig && env.signatures && env.signatures[id]) {
-          sig = env.signatures[id].text.replace(/\r\n/g, '\n');
+        if (show_sig && env.signatures && env.signatures[identity_id]) {
+          sig = env.signatures[identity_id].text.replace(/\r\n/g, '\n');
           if (p >= 0) { // in place of removed signature
             message = message.substring(0, p) + sig + message.substring(p);
             cursor_pos = p - 1;
@@ -460,7 +460,7 @@
             && (body.childNodes.length > 1 || body.textContent)) {
             this.editor.getWin().focus();
             var node = this.editor.selection.getNode();
-            var anchor = node.nodeName == 'BODY' ? body.firstChild : node.nextSibling;
+            var anchor = node.nodeName === 'BODY' ? body.firstChild : node.nextSibling;
             var br_p = document.createElement('p');
             br_p.appendChild(document.createElement('br'));
             body.insertBefore(br_p, anchor);
@@ -489,10 +489,10 @@
   // ------------------------------------------------------------- ui.js side
   // html_editor_init(obj): the strip button + autoresize + control binding
   function html_editor_init(obj) {
-    var editor = obj,
-      parent = editor.parentNode,
-      readonly = editor.hasAttribute('readonly') || editor.disabled,
-      plain_btn = document.createElement('a');
+    var editor = obj;
+      var parent = editor.parentNode;
+      var readonly = editor.hasAttribute('readonly') || editor.disabled;
+      var plain_btn = document.createElement('a');
     plain_btn.className = 'mce-i-html';
     plain_btn.href = '#';
     plain_btn.tabIndex = readonly ? -1 : 0;
@@ -503,15 +503,15 @@
     toolbar.className = 'editor-toolbar';
     toolbar.appendChild(plain_btn);
 
-    var is_table = parent.tagName.toLowerCase() == 'td',
-      sw;
+    var is_table = parent.tagName.toLowerCase() === 'td';
+      var sw;
     if (is_table) {
       // the switch control is the checkbox/hidden input in the next row
       var row = parent.parentNode.nextElementSibling;
       sw = row && row.querySelector('input');
     } else {
       sw = editor.nextElementSibling;
-      if (sw && !(sw.tagName == 'SELECT' && sw.classList.contains('hidden'))) sw = null;
+      if (sw && !(sw.tagName === 'SELECT' && sw.classList.contains('hidden'))) sw = null;
     }
 
     textarea_autoresize_init(editor);
@@ -526,13 +526,13 @@
       }
     });
     plain_btn.addEventListener('keydown', function (e) {
-      if (e.which == 9) { editor.focus(); e.preventDefault(); }
+      if (e.which === 9) { editor.focus(); e.preventDefault(); }
     });
 
     editor.parentNode.insertBefore(toolbar, editor.nextSibling);
     editor._ccControl = sw;
     editor.addEventListener('keydown', function (e) {
-      if (e.altKey && e.which == 121) plain_btn.focus();
+      if (e.altKey && e.which === 121) plain_btn.focus();
     });
 
     if (is_table) {
@@ -560,20 +560,20 @@
   function cc_toggle_editor(props) {
     var ed = get_editor(props.id || env.composebody);
     // reference: this.editor.toggle(props.html, props.noconvert || false)
-    var result = ed.toggle(props.html, props.noconvert || false),
-      control = byId(ed.id)._ccControl,
-      mode;
+    var result = ed.toggle(props.html, props.noconvert || false);
+      var control = byId(ed.id)._ccControl;
+      var mode;
 
     mode = result ? (props.html ? 'html' : 'plain') : (props.html ? 'plain' : 'html');
 
     // update internal format flag(s)
     var isHtml = document.querySelector("[name='_is_html']");
-    if (isHtml) isHtml.value = mode == 'html' ? 1 : 0;
+    if (isHtml) isHtml.value = mode === 'html' ? 1 : 0;
     var fmt = document.getElementById('composeformat');
     if (fmt) fmt.value = mode;
 
     if (control) {
-      if (control.type == 'checkbox') control.checked = mode == 'html';
+      if (control.type === 'checkbox') control.checked = mode === 'html';
       else control.value = mode;
     }
     return result;
@@ -583,10 +583,10 @@
   // updates identity/reply-to/bcc fields and (re)inserts the signature
   function cc_change_identity(elem, show) {
     if (!elem || !elem.options) return false;
-    var id = elem.value,
-      got_sig = !!(env.signatures && env.signatures[id]),
-      old_id = env.identity,
-      show_sig = show ? show : env.show_sig;
+    var id = elem.value;
+      var got_sig = !!(env.signatures && env.signatures[id]);
+      var old_id = env.identity;
+      var show_sig = show ? show : env.show_sig;
 
     // reference enables the Signature toolbar button iff a signature exists
     var btn = byId('tb-signature');
@@ -598,10 +598,10 @@
 
     // update reply-to/bcc fields with addresses defined in identities
     ['replyto', 'bcc'].forEach(function (key) {
-      var rx,
-        old_val = old_id && env.identities[old_id] ? env.identities[old_id][key] : '',
-        new_val = id && env.identities[id] ? env.identities[id][key] : '',
-        input = document.querySelector("[name='_" + (key == 'replyto' ? 'reply_to' : key) + "']");
+      var rx;
+        var old_val = old_id && env.identities[old_id] ? env.identities[old_id][key] : '';
+        var new_val = id && env.identities[id] ? env.identities[id][key] : '';
+        var input = document.querySelector("[name='_" + (key === 'replyto' ? 'reply_to' : key) + "']");
       if (!input) return;
       var input_val = input.value;
       if (old_val && input_val) {
@@ -609,7 +609,7 @@
         input_val = input_val.replace(rx, '');
       }
       input_val = String(input_val).replace(/[,;]\s*[,;]/g, ',').replace(/^[\s,;]+/, '');
-      if (new_val && input_val.indexOf(new_val) == -1 && input_val.indexOf(new_val.replace(/"/g, '')) == -1) {
+      if (new_val && input_val.indexOf(new_val) === -1 && input_val.indexOf(new_val.replace(/"/g, '')) === -1) {
         if (input_val) input_val = input_val.replace(/[,;\s]+$/, '') + ', ';
         input_val += new_val + ', ';
       }
@@ -626,11 +626,11 @@
   // rcmail.command() subset for the compose toolbar
   function cc_command(cmd, props) {
     var ed = editors[env.composebody];
-    if (cmd == 'toggle-editor') {
+    if (cmd === 'toggle-editor') {
       // elastic strip toggle (ui.js): props = {id, html}
       return cc_toggle_editor(props || {});
     }
-    if (cmd == 'spellcheck') {
+    if (cmd === 'spellcheck') {
       if (ed && ed.is_html()) {
         if (ed.spellcheck_active) ed.spellcheck_stop();
         else ed.spellcheck_start();
@@ -638,10 +638,10 @@
       }
       return false; // plain mode: the page keeps native spellcheck
     }
-    if (cmd == 'insert-sig') {
+    if (cmd === 'insert-sig') {
       return cc_change_identity(byId('identities'), true);
     }
-    if (cmd == 'insert-response') {
+    if (cmd === 'insert-response') {
       if (ed) ed.replace(props || {});
       return true;
     }

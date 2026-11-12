@@ -12,7 +12,7 @@
   // selected pane is visible, the menu drawer is a .popover with an overlay,
   // floating action buttons are created on small screens, and header titles
   // are margin-balanced (screen_resize_headers).
-  var mode = 'large', touch = false;
+  var mode = 'large'; var touch = false;
   var panes = {};
   function pane(id) { return document.getElementById(id); }
   function computeScreenMode() {
@@ -78,20 +78,24 @@
   function popupHeaderMenus(onContent, onList) {
     if (onContent) {
       var c = pane('layout-content');
-      if (c) c.querySelectorAll(':scope > .header > ul.menu').forEach(function (u) {
-        u.classList.add('popupmenu');
-      });
+      if (c) {
+        c.querySelectorAll(':scope > .header > ul.menu').forEach(function (u) {
+          u.classList.add('popupmenu');
+        });
+      }
     }
     if (onList) {
       var l = pane('layout-list');
-      if (l) l.querySelectorAll(':scope > .header > ul.menu').forEach(function (u) {
-        u.classList.add('popupmenu');
-      });
+      if (l) {
+        l.querySelectorAll(':scope > .header > ul.menu').forEach(function (u) {
+          u.classList.add('popupmenu');
+        });
+      }
     }
   }
   function smallAll() {
-    var got_content = false, s;
-    var content = pane('layout-content'), list = pane('layout-list'), sidebar = pane('layout-sidebar');
+    var got_content = false; var s;
+    var content = pane('layout-content'); var list = pane('layout-list'); var sidebar = pane('layout-sidebar');
     if (content) {
       s = content === last_selected;
       content.classList.toggle('hidden', !s);
@@ -112,8 +116,8 @@
     }
   }
   function screenResize() {
-    var menu = pane('layout-menu'), sidebar = pane('layout-sidebar'),
-      list = pane('layout-list'), content = pane('layout-content');
+    var menu = pane('layout-menu'); var sidebar = pane('layout-sidebar');
+      var list = pane('layout-list'); var content = pane('layout-content');
     if (mode === 'phone') { smallAll(); popupHeaderMenus(true, true); appMenu(false); }
     else if (mode === 'small') { smallAll(); popupHeaderMenus(true, true); appMenu(true); }
     else if (mode === 'normal') {
@@ -142,14 +146,14 @@
   // title stays centered between the header's left/right button groups.
   function screenResizeHeaders() {
     document.querySelectorAll('#layout > div > .header').forEach(function (hdr) {
-      var title = null, sizes = { left: 0, right: 0 };
+      var title = null; var sizes = { left: 0, right: 0 };
       Array.prototype.forEach.call(hdr.children, function (ch) {
         if (ch.offsetParent === null || ch.classList.contains('position-absolute')) return;
         if (!title && ch.classList.contains('header-title')) { title = ch; return; }
         sizes[title ? 'right' : 'left'] += ch.offsetWidth;
       });
       if (!title) return;
-      var right = 0, left = 0;
+      var right = 0; var left = 0;
       if (sizes.right >= sizes.left) { right = 0; left = sizes.right - sizes.left; }
       else { left = 0; right = sizes.left - sizes.right; }
       title.style.marginRight = right + 'px';
@@ -174,7 +178,7 @@
     last_selected = sb; screenResizeHeaders();
   }
   function showList() {
-    var list = pane('layout-list'), sidebar = pane('layout-sidebar');
+    var list = pane('layout-list'); var sidebar = pane('layout-sidebar');
     if (!list && !sidebar) { history.back(); return; }
     if (sidebar) { sidebar.classList.add('hidden'); sidebar.classList.remove('layout-sticky'); }
     show(list, true);
@@ -184,7 +188,7 @@
 
   // ui.js layout_init(): floating action buttons, small screens only
   function initFabs() {
-    var list = pane('layout-list'), content = pane('layout-content');
+    var list = pane('layout-list'); var content = pane('layout-content');
     if (!(list || content)) return;
     if (!(window.innerWidth <= 768)) return;   // is_mobile()
     var cls = document.body.className;
@@ -192,8 +196,8 @@
     var action = (cls.match(/action-([a-z-]+)/) || [])[1] || 'none';
     var fabs = [];
     document.querySelectorAll('[data-fab]').forEach(function (button) {
-      var t = button.getAttribute('data-fab-task') || '*',
-        a = button.getAttribute('data-fab-action') || '*';
+      var t = button.getAttribute('data-fab-task') || '*';
+        var a = button.getAttribute('data-fab-action') || '*';
       if ((t === '*' || t === task) &&
         (a === '*' || a === action || (a === 'none' && action === 'none'))) fabs.push(button);
     });
@@ -273,8 +277,8 @@
   // data-hidden="big|small|phone|large|lbs" becomes hidden-<mode> class
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('[data-hidden]').forEach(function (el) {
-      var v = el.getAttribute('data-hidden'), re = /(large|big|small|phone|lbs)/g, m,
-        parent = el.parentElement && el.parentElement.tagName === 'LI' ? el.parentElement : el;
+      var v = el.getAttribute('data-hidden'); var re = /(large|big|small|phone|lbs)/g; var m;
+        var parent = el.parentElement && el.parentElement.tagName === 'LI' ? el.parentElement : el;
       while ((m = re.exec(v))) parent.classList.add('hidden-' + m[1]);
     });
   });
@@ -355,7 +359,7 @@
 
   // ------------------------------------------------------------ popup menus
   function initPopups() {
-    var open = null, drawer = null;
+    var open = null; var drawer = null;
     // ui.js is_mobile(): phone and small widths render popups as a
     // right-side .popover drawer with a Close/Back header + overlay.
     function isMobile() { return mode === 'phone' || mode === 'small'; }
@@ -467,8 +471,8 @@
 
     var buttons = opts.buttons || [{ label: 'Close', cls: 'cancel mainaction', click: close }];
     if (buttons.length) {
-      var pane = document.createElement('div');
-      pane.className = 'ui-dialog-buttonpane ui-widget-content ui-helper-clearfix';
+      var btnpane = document.createElement('div');
+      btnpane.className = 'ui-dialog-buttonpane ui-widget-content ui-helper-clearfix';
       var set = document.createElement('div');
       set.className = 'ui-dialog-buttonset';
       buttons.forEach(function (b) {
@@ -481,8 +485,8 @@
         el.addEventListener('click', function () { if (b.click) b.click(); });
         set.appendChild(el);
       });
-      pane.appendChild(set);
-      dlg.appendChild(pane);
+      btnpane.appendChild(set);
+      dlg.appendChild(btnpane);
     }
 
     // resizable grip (jQuery-UI resizable markup; Elastic themes .ui-icon.ui-resizable-se)
@@ -492,7 +496,7 @@
     dlg.appendChild(grip);
     grip.addEventListener('mousedown', function (e) {
       e.preventDefault();
-      var h0 = dlg.offsetHeight, y0 = e.clientY;
+      var h0 = dlg.offsetHeight; var y0 = e.clientY;
       var move = function (ev) { dlg.style.height = Math.max(200, h0 + ev.clientY - y0) + 'px'; popup.style.height = Math.max(120, dlg.offsetHeight - (pane0 ? pane0.offsetHeight : 0) - bar.offsetHeight) + 'px'; };
       var up = function () { document.removeEventListener('mousemove', move); document.removeEventListener('mouseup', up); };
       var pane0 = dlg.querySelector('.ui-dialog-buttonpane');
@@ -504,7 +508,7 @@
     bar.style.cursor = 'default';
     bar.addEventListener('mousedown', function (e) {
       if (e.target.closest('.ui-dialog-titlebar-close')) return;
-      var x0 = e.clientX, y0 = e.clientY, l0 = dlg.offsetLeft, t0 = dlg.offsetTop;
+      var x0 = e.clientX; var y0 = e.clientY; var l0 = dlg.offsetLeft; var t0 = dlg.offsetTop;
       var move = function (ev) { dlg.style.left = (l0 + ev.clientX - x0) + 'px'; dlg.style.top = (t0 + ev.clientY - y0) + 'px'; };
       var up = function () { document.removeEventListener('mousemove', move); document.removeEventListener('mouseup', up); };
       document.addEventListener('mousemove', move);
@@ -663,34 +667,38 @@
 
     // selection column toggle (stock: rcmail.enable_selection)
     var toggle = document.getElementById('list-toggle-button');
-    if (toggle) toggle.addEventListener('click', function (e) {
-      e.preventDefault();
-      var on = list.classList.toggle('selection');
-      document.querySelectorAll('#listselect-menu a[data-select]').forEach(function (el) {
-        el.classList.toggle('disabled', !on);
+    if (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        var on = list.classList.toggle('selection');
+        document.querySelectorAll('#listselect-menu a[data-select]').forEach(function (el) {
+          el.classList.toggle('disabled', !on);
+        });
+        if (!on) {
+          rows().forEach(function (r) {
+            var cb = r.querySelector('td.selection input');
+            if (cb) cb.checked = false;
+          });
+        }
+        updateToolbar();
+        window.cc_close_popups();
       });
-      if (!on) rows().forEach(function (r) {
-        var cb = r.querySelector('td.selection input');
-        if (cb) cb.checked = false;
-      });
-      updateToolbar();
-      window.cc_close_popups();
-    });
+    }
 
     // select-menu actions
     document.querySelectorAll('#listselect-menu a[data-select]').forEach(function (a) {
       a.addEventListener('click', function (e) {
         e.preventDefault();
         if (a.classList.contains('disabled')) return;
-        var mode = a.getAttribute('data-select');
+        var selmode = a.getAttribute('data-select');
         rows().forEach(function (r) {
           var cb = r.querySelector('td.selection input');
           if (!cb) return;
-          if (mode === 'all' || mode === 'page') cb.checked = true;
-          else if (mode === 'unread') cb.checked = r.classList.contains('unread');
-          else if (mode === 'flagged') cb.checked = r.classList.contains('flagged');
-          else if (mode === 'invert') cb.checked = !cb.checked;
-          else if (mode === 'none') cb.checked = false;
+          if (selmode === 'all' || selmode === 'page') cb.checked = true;
+          else if (selmode === 'unread') cb.checked = r.classList.contains('unread');
+          else if (selmode === 'flagged') cb.checked = r.classList.contains('flagged');
+          else if (selmode === 'invert') cb.checked = !cb.checked;
+          else if (selmode === 'none') cb.checked = false;
         });
         updateToolbar();
         window.cc_close_popups();
@@ -786,9 +794,11 @@
         var boxes = {};
         uids.forEach(function (u) { boxes[boxOf(u)] = true; });
         var names = Object.keys(boxes);
-        if (names.length === 1) field('_mbox_override', names[0]);
-        else if (names.length > 1)
+        if (names.length === 1) {
+          field('_mbox_override', names[0]);
+        } else if (names.length > 1) {
           field('_box_map', uids.map(function (u) { return u + ':' + boxOf(u); }).join(','));
+        }
       }
       Object.keys(extra).forEach(function (k) { field(k, extra[k]); });
       actForm.submit();
@@ -840,15 +850,15 @@
     });
 
     // Threads popup: expand unread / all / collapse all — client-side, like Elastic
-    function setThreadState(mode) {
+    function setThreadState(thmode) {
       var roots = rows().filter(function (r) { return r.getAttribute('data-depth') === '0'; });
       roots.forEach(function (root) {
         var hide = false;
         var sib = root.nextElementSibling;
         while (sib && sib.getAttribute('data-depth') !== null && sib.getAttribute('data-depth') !== '0') {
-          if (mode === 'all') sib.style.display = '';
-          else if (mode === 'none') sib.style.display = 'none';
-          else if (mode === 'unread') {
+          if (thmode === 'all') sib.style.display = '';
+          else if (thmode === 'none') sib.style.display = 'none';
+          else if (thmode === 'unread') {
             if (!hide && sib.classList.contains('unread')) sib.style.display = '';
             else { sib.style.display = 'none'; hide = true; }
           }
@@ -877,11 +887,11 @@
       var sel = document.querySelector('#messagelist tr.selected');
       if (rt <= 0 || !sel || !sel.classList.contains('unread')) return;
       var uid = sel.getAttribute('data-uid') || (sel.querySelector('input[name=_uids[]]') || {}).value;
-      var mbox = frame.getAttribute('data-folder');
+      var folder = frame.getAttribute('data-folder');
       clearTimeout(scheduleRead._t);
       scheduleRead._t = setTimeout(function () {
         var fd = new FormData();
-        fd.append('_mbox', mbox); fd.append('_act', 'read'); fd.append('_uids[]', uid);
+        fd.append('_mbox', folder); fd.append('_act', 'read'); fd.append('_uids[]', uid);
         fetch('/mail/act', { method: 'POST', body: fd })
           .then(function () { sel.classList.remove('unread'); });
       }, rt * 1000);
@@ -900,7 +910,7 @@
   function initStandaloneMessage() {
     var tb = document.getElementById('mailtoolbar');
     if (!tb || document.getElementById('messagelist')) return;   // shell handles itself
-    var uid = tb.getAttribute('data-uid'), box = tb.getAttribute('data-box');
+    var uid = tb.getAttribute('data-uid'); var box = tb.getAttribute('data-box');
     if (!uid) return;
     document.body.classList.add('has-selection');
 
@@ -920,8 +930,9 @@
       var cmd = a.getAttribute('data-act') || a.getAttribute('data-mode');
       e.preventDefault();
       if (cmd === 'delete') {
-        if (confirm('Really delete the message?'))
+        if (confirm('Really delete the message?')) {
           post({ _mbox: box, _uids: uid, _act: 'delete' });
+        }
       } else if (cmd === 'archive' || cmd === 'read' || cmd === 'unread' ||
                  cmd === 'flag' || cmd === 'unflag' ||
                  cmd === 'move' || cmd === 'copy') {
@@ -960,7 +971,7 @@
                 '#compose_replyto input[name="_reply_to"]',
                 '#compose_followupto input[name="_followup_to"]'];
     function split_addr(v) {
-      var out = [], depth = 0, cur = '';
+      var out = []; var depth = 0; var cur = '';
       for (var i = 0; i < v.length; i++) {
         var ch = v[i];
         if (ch === '<') depth++;
@@ -1095,10 +1106,12 @@
       var frame = document.getElementById('preferences-frame');
       if (!frame) return;
       var table = row.closest('table, ul');
-      if (table) table.querySelectorAll('.selected').forEach(function (el) {
-        el.classList.remove('selected', 'focused');
-        el.setAttribute('aria-selected', 'false');
-      });
+      if (table) {
+        table.querySelectorAll('.selected').forEach(function (el) {
+          el.classList.remove('selected', 'focused');
+          el.setAttribute('aria-selected', 'false');
+        });
+      }
       row.classList.add('selected', 'focused');
       row.setAttribute('aria-selected', 'true');
       frame.src = row.getAttribute('data-framed-href');
