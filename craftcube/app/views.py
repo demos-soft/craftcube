@@ -164,6 +164,28 @@ def folders_for_menu():
     return ph("folders_list", {"folders": out})["folders"]
 
 
+def folder_tree(entries):
+    """Nested copy of a flat folder list (reference treelist renders the
+    imap hierarchy: children live in a <ul> under their parent's caret;
+    '/' is the namespace separator, cf. rcube::get_bool_arg('sep'))."""
+    by = {}
+    for f in entries:
+        f = dict(f)
+        f["sub"] = []
+        by[f["name"].upper()] = f
+    # keep server (alphabetical) order; parents precede children naturally
+    result = []
+    for src in entries:
+        f = by[src["name"].upper()]
+        idx = f["name"].rfind("/")
+        parent = by.get(f["name"][:idx].upper()) if idx > 0 else None
+        if parent is not None and parent is not f:
+            parent["sub"].append(f)
+        else:
+            result.append(f)
+    return result
+
+
 def _framed_arg():
     """Preserve the _framed=1 flow marker through redirects (reference
     keeps loading framed pages inside their parent frame)."""
@@ -174,6 +196,10 @@ def _framed_arg():
 def render(task, tmpl, **ctx):
     g.task = task
     ctx.setdefault("folders", folders_for_menu())
+    if task == "mail":
+        # sidebar renders the nested tree (reference treelist); the flat
+        # list stays for move/copy selectors and filters
+        ctx.setdefault("folder_tree", folder_tree(ctx["folders"]))
     # rcube_output_html::render(): plugins may amend the template properties
     ctx = ph("render_page", {"template": tmpl, "task": task, "props": ctx})["props"]
     # Roundcube page titles: "<product> :: <task title>" (mail list uses the

@@ -876,7 +876,10 @@
       var mlRow = ctx.length === 1 ? list.querySelector('tr.message[data-uid="' + ctx[0] + '"]') : null;
       var isList = !!(mlRow && mlRow.getAttribute('data-ml') === '1');
       enabled('#replyall-menu a[data-mode="replylist"]', ctx.length === 1 && isList);
-      enabled('#message-menu a', hasSel);
+      // 'import' is a folder-level command (mail_get.php import), not a
+      // per-message action: it must stay enabled without a selection
+      enabled('#message-menu a:not(.import)', hasSel);
+      enabled('#message-menu a.import', true);
       enabled('#download-menu a', hasSel);
       // ui.js also enables the Mark submenu items with a selection
       enabled('#markmessage-menu a', hasSel);
@@ -922,10 +925,7 @@
           el.classList.toggle('disabled', !on);
         });
         if (!on) {
-          rows().forEach(function (r) {
-            var cb = r.querySelector('td.selection input');
-            if (cb) cb.checked = false;
-          });
+          rows().forEach(function (r) { markRow(r, false); });
         }
         updateToolbar();
         window.cc_close_popups();
@@ -939,22 +939,71 @@
         if (a.classList.contains('disabled')) return;
         var selmode = a.getAttribute('data-select');
         rows().forEach(function (r) {
-          var cb = r.querySelector('td.selection input');
-          if (!cb) return;
-          if (selmode === 'all' || selmode === 'page') cb.checked = true;
-          else if (selmode === 'unread') cb.checked = r.classList.contains('unread');
-          else if (selmode === 'flagged') cb.checked = r.classList.contains('flagged');
-          else if (selmode === 'invert') cb.checked = !cb.checked;
-          else if (selmode === 'none') cb.checked = false;
+          if (selmode === 'all' || selmode === 'page') markRow(r, true);
+          else if (selmode === 'unread') markRow(r, r.classList.contains('unread'));
+          else if (selmode === 'flagged') markRow(r, r.classList.contains('flagged'));
+          else if (selmode === 'invert') markRow(r, !r.classList.contains('selected'));
+          else if (selmode === 'none') markRow(r, false);
         });
         updateToolbar();
         window.cc_close_popups();
       });
     });
 
-    // interactions: flag toggle / subject preview / selection
+    // ---- row selection: port of rcube_list_widget::select_row (list.js).
+    // Plain click replaces the selection, ctrl toggles, shift extends from
+    // the anchor. Selection state lives on tr.selected with the checkbox
+    // kept in sync. Rows never open on single click: elastic registers the
+    // subject link with mouse_activation 'keyboard_only', so the mouse
+    // selects (dblclick opens) and the href only fires on keyboard
+    // activation (click events with detail === 0).
+    var selAnchor = null;
+    function rowLink(tr) {
+      return tr.querySelector('td.subject span.subject a');
+    }
+    function markRow(tr, on) {
+      tr.classList.toggle('selected', !!on);
+      tr.setAttribute('aria-selected', on ? 'true' : 'false');
+      var cb = tr.querySelector('td.selection input');
+      if (cb) cb.checked = !!on;
+    }
+    function clearSel() { rows().forEach(function (r) { markRow(r, false); }); }
+    function focusRow(tr) {
+      rows().forEach(function (r) { r.classList.remove('focused'); });
+      tr.classList.add('focused');
+    }
+    function selectRow(tr, ctrl, shift) {
+      var all = rows();
+      if (shift && selAnchor && all.indexOf(selAnchor) >= 0) {
+        var a = all.indexOf(selAnchor), b = all.indexOf(tr);
+        if (!ctrl) clearSel();
+        for (var i = Math.min(a, b); i <= Math.max(a, b); i++) markRow(all[i], true);
+      } else if (ctrl) {
+        markRow(tr, !tr.classList.contains('selected'));
+        selAnchor = tr;
+      } else {
+        clearSel();
+        markRow(tr, true);
+        selAnchor = tr;
+      }
+      focusRow(tr);
+      updateToolbar();
+    }
+
+    // interactions: flag toggle / selection
     list.addEventListener('change', function (e) {
-      if (e.target.type === 'checkbox') updateToolbar();
+      if (e.target.type !== 'checkbox') return;
+      var tr = e.target.closest('tr.message');
+      if (tr) {
+        // list.js checkbox onchange: select_row(uid, key||CONTROL_KEY) --
+        // the checkbox already flipped natively, mirror it onto the row
+        markRow(tr, e.target.checked);
+        if (e.target.checked) { selAnchor = tr; focusRow(tr); }
+      } else {
+        // header 'select' checkbox toggles every row on the page
+        rows().forEach(function (r) { markRow(r, e.target.checked); });
+      }
+      updateToolbar();
     });
     list.addEventListener('click', function (e) {
       var flag = e.target.closest('td.flags span.flag span[data-uid]');
@@ -969,49 +1018,52 @@
       }
       var tr = e.target.closest('tr.message');
       if (!tr) return;
-      // a click on the selection checkbox is always the checkbox's own
-      // business (reference: rowselection ignores input targets);
-      // preventDefault() in the preview branch below would cancel the
-      // native toggle and the box would never show checked
+      // the checkbox is always its own business (rowselection ignores
+      // input targets; the native toggle must not be undone here)
       if (e.target.tagName === 'INPUT') { updateToolbar(); return; }
-      // selection mode (reference rowselection): a row click toggles the
-      // checkbox; the subject link still navigates/previews
-      if (list.classList.contains('selection') && !e.target.closest('td.subject span.subject a')) {
-        var cb2 = tr.querySelector('td.selection input');
-        if (cb2) {
-          // reference (elastic ui.js rowselection) ignores row-click toggling
-          // when the click already landed on the checkbox itself: its native
-          // toggle must not be undone, or the box never shows checked
-          if (e.target !== cb2) cb2.checked = !cb2.checked;
-          updateToolbar();
+      var a2 = e.target.closest('a');
+      if (window.innerWidth <= 768) {
+        // mobile (elastic phone/small layouts): tap anywhere opens the row
+        if (!a2) {
+          var ml = rowLink(tr);
+          if (ml) {
+            e.preventDefault();
+            window.location.href = ml.getAttribute('href');
+            return;
+          }
         }
+        selAnchor = tr; focusRow(tr); updateToolbar();
         return;
       }
-      // Elastic: clicking anywhere in a message row focuses it and opens
-      // the preview (only the anchor is a real href for keyboard/no-JS)
-      var url = null;
-      var a2 = e.target.closest('td.subject span.subject a');
-      if (a2) url = a2.getAttribute('href');
-      else {
-        var link = tr.querySelector('td.subject span.subject a');
-        if (link) url = link.getAttribute('href');
+      if (a2) {
+        if (e.detail !== 0) e.preventDefault();
+        else { selAnchor = tr; focusRow(tr); updateToolbar(); return; }
       }
-      var frame = document.getElementById('messagecontframe');
-      // Elastic opens the preview everywhere the layout is not single-pane
-      // (is_mobile() = phone/small, <=768); normal/large keep list+content
-      if (url && frame && window.innerWidth > 768) {
-        e.preventDefault();
-        frame.src = url + (url.indexOf('?') > -1 ? '&' : '?') + '_framed=1';
-        var content = document.getElementById('layout-content');
-        if (content) content.classList.add('selected');
-        rows().forEach(function (r) { r.classList.remove('selected'); });
-        tr.classList.add('selected');
-        unreadDecrementOnRead(tr, frame.getAttribute('data-folder') || mbox);
-        var icon = tr.querySelector('.msgicon.status');
-        if (icon) { icon.classList.remove('unread'); icon.title = ''; }
-        tr.classList.remove('unread');
-        updateToolbar();
-        setTimeout(scheduleRead, 300);
+      selectRow(tr, e.ctrlKey || e.metaKey, e.shiftKey);
+    });
+    // list.js dblclick: open the double-clicked message (full page view,
+    // same as the reference top-level navigation to _action=view)
+    list.addEventListener('dblclick', function (e) {
+      var tr = e.target.closest('tr.message');
+      if (!tr) return;
+      var a = rowLink(tr);
+      if (a) window.location.href = a.getAttribute('href');
+    });
+    // keyboard row navigation (rcube_list_widget::keyup_select, arrows)
+    document.addEventListener('keydown', function (e) {
+      var cur = list.querySelector('tr.message.focused');
+      if (!cur) return;
+      var t = e.target;
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' ||
+                t.tagName === 'SELECT' || t.isContentEditable)) return;
+      var all = rows(), i = all.indexOf(cur), n = -1;
+      if (e.key === 'ArrowDown') n = Math.min(i + 1, all.length - 1);
+      else if (e.key === 'ArrowUp') n = Math.max(i - 1, 0);
+      else return;
+      e.preventDefault();
+      if (n >= 0 && all[n] !== cur) {
+        selectRow(all[n], e.ctrlKey || e.metaKey, e.shiftKey);
+        all[n].scrollIntoView(false);
       }
     });
 
@@ -1098,6 +1150,7 @@
     // ui.js menu_messagelist(): the Options link opens a modal dialog with
     // a clone of #listoptions-menu (ids/labels suffixed -clone), applied on
     // Save; it is not an inline popup menu
+    window.ccDialog = ccDialog;  // shared with cc_import_dialog (IIFE tail)
     window.cc_listoptions_dialog = function (elem, event) {
       if (event) event.preventDefault();
       var src = document.getElementById('listoptions-menu');
@@ -1208,7 +1261,9 @@
     // 'Mark messages as read' preference: mark seen N seconds after preview
     function scheduleRead() {
       var frame = document.getElementById('messagecontframe');
-      if (!frame) return;
+      // only when a preview is actually showing (read_when_previewed);
+      // a blank frame means the row is merely selected, never mark read
+      if (!frame || !frame.src || frame.src === 'about:blank') return;
       var rt = parseInt(frame.getAttribute('data-read-time') || '0', 10);
       var sel = document.querySelector('#messagelist tr.selected');
       if (rt <= 0 || !sel || !sel.classList.contains('unread')) return;
@@ -1940,6 +1995,131 @@
   if (document.readyState === 'loading')
     document.addEventListener('DOMContentLoaded', function () { initTabs(); });
   else initTabs();
+
+  // ------------------------------------------- mail list: refresh (ui.js
+  // check_mail/checkmail: a persistent 'loading' info box while the request
+  // runs, then the list re-renders in place) and Import (ui.js
+  // mail_operation('import'): uploadform re-hosted in a dialog)
+  function cc_hide_busy(key) {
+    document.querySelectorAll('#messagestack div').forEach(function (el) {
+      if (el.ccKey === key) window.cc_hide(el);
+    });
+  }
+  window.cc_refresh_list = function (elem, event) {
+    if (event) event.preventDefault();
+    var url = (elem && elem.getAttribute('href')) || window.location.href;
+    var key = window.cc_display(cc_get_label('loading') || 'Loading...', 'loading', 30000);
+    fetch(url, { credentials: 'same-origin',
+                 headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+      .then(function (r) { return r.text(); })
+      .then(function (html) {
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        var freshBody = doc.querySelector('#messagelist tbody');
+        var curBody = document.querySelector('#messagelist tbody');
+        if (!freshBody || !curBody) { window.location.href = url; return; }
+        curBody.innerHTML = freshBody.innerHTML;
+        // page navigator state (disabled links, page text, jumper)
+        var freshNav = doc.querySelector('.pagenav');
+        var curNav = document.querySelector('.pagenav');
+        if (freshNav && curNav) curNav.innerHTML = freshNav.innerHTML;
+        // sidebar unread counts (reference check_mail also re-renders the
+        // tree); fold state is re-applied over the fresh nodes
+        var freshTree = doc.querySelector('#mailboxlist');
+        var curTree = document.getElementById('mailboxlist');
+        if (freshTree && curTree) {
+          curTree.innerHTML = freshTree.innerHTML;
+          cc_apply_folds(curTree);
+        }
+        cc_hide_busy(key);
+      })
+      .catch(function () { cc_hide_busy(key); window.location.href = url; });
+    return false;
+  };
+
+  window.cc_import_dialog = function (event) {
+    if (event) event.preventDefault();
+    var src = document.getElementById('uploadform');
+    if (!src) return false;
+    // ui.js: the uploadform popup is shown as a modal dialog titled
+    // 'Import messages' with the import button
+    var form = src.cloneNode(true);
+    form.removeAttribute('id');
+    form.classList.remove('popupmenu', 'open', 'inactive');
+    // the real <form> lives inside the cloned #uploadform div
+    var formEl = form.tagName === 'FORM' ? form : form.querySelector('form');
+    if (formEl) formEl.removeAttribute('id');
+    var inp = form.querySelector('input[type=file]');
+    if (inp) {
+      inp.id = 'uploadformInput-clone';
+      var lbl = form.querySelector('label[for="uploadformInput"]');
+      if (lbl) lbl.setAttribute('for', 'uploadformInput-clone');
+    }
+    var dlg = ccDialog(form, cc_get_label('importmessages') || 'Import messages', {
+      width: 530,
+      buttons: [
+        { label: cc_get_label('import') || 'Import', cls: 'mainaction import',
+          click: function () {
+            if (!inp || !inp.files || !inp.files.length) {
+              // ui.js upload_import(): 'Please select a file to upload.'
+              window.cc_display(cc_get_label('selectimportfile'), 'error');
+              return;
+            }
+            window.cc_display(cc_get_label('loading') || 'Loading...', 'loading', 120000);
+            // submit first: close() would detach the form from the
+            // document and the submission would silently no-op
+            (formEl || form).submit();
+          } },
+        { label: cc_get_label('cancel') || 'Cancel', cls: 'cancel',
+          click: function () { dlg.close(); } },
+      ],
+    });
+    window.cc_close_popups && window.cc_close_popups();
+    return false;
+  };
+
+  // ------------------------------------------- mailbox tree fold state
+  // (reference persists fold in user prefs; craftcube has no server-side
+  // fold storage, so keep it per browser via localStorage)
+  function cc_apply_folds(root) {
+    var folds = {};
+    try { folds = JSON.parse(localStorage.getItem('cc-mailbox-fold') || '{}'); } catch (e) {}
+    root.querySelectorAll('li[data-name]').forEach(function (li) {
+      var t = li.querySelector('.treetoggle');
+      if (!t || t.parentNode !== li) return;
+      if (folds[li.getAttribute('data-name')]) setFold(li, t, true);
+    });
+  }
+  function setFold(li, t, collapsed) {
+    var ul = null;
+    for (var i = 0; i < li.children.length; i++) {
+      if (li.children[i].tagName === 'UL') { ul = li.children[i]; break; }
+    }
+    t.classList.toggle('expanded', !collapsed);
+    t.classList.toggle('collapsed', !!collapsed);
+    li.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    if (ul) ul.style.display = collapsed ? 'none' : '';
+  }
+  function initMailboxFold() {
+    var mlist = document.getElementById('mailboxlist');
+    if (!mlist) return;
+    cc_apply_folds(mlist);
+    mlist.addEventListener('click', function (e) {
+      var t = e.target.closest('.treetoggle');
+      if (!t) return;
+      e.preventDefault();
+      e.stopPropagation();
+      var li = t.parentNode;
+      var collapsed = !t.classList.contains('collapsed');
+      setFold(li, t, collapsed);
+      var folds = {};
+      try { folds = JSON.parse(localStorage.getItem('cc-mailbox-fold') || '{}'); } catch (err) {}
+      folds[li.getAttribute('data-name')] = collapsed;
+      try { localStorage.setItem('cc-mailbox-fold', JSON.stringify(folds)); } catch (err) {}
+    });
+  }
+  if (document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', function () { initMailboxFold(); });
+  else initMailboxFold();
 })();
 
 /* Reference elastic ui.js: "Convert checkbox input into Bootstrap's custom

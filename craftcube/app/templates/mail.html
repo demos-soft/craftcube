@@ -13,14 +13,25 @@
       </div>
       <h2 id="aria-label-folderlist" class="voice">{{ 'Email folder selection'|lc }}</h2>
       <div id="folderlist-content" class="scroller">
-        <ul id="mailboxlist" class="treelist listing folderlist notree" role="tree">
-          {% for f in folders %}
+        <ul id="mailboxlist" class="treelist listing folderlist" role="tree">
+          {# reference treelist (folder_tree.php::list_render): children nest
+             in a <ul> after a .treetoggle caret inside the parent li #}
+          {%- macro folderli(f, level) %}
           <li class="mailbox{{ ' inbox' if f.name.upper() == 'INBOX' else (' ' ~ f.special if f.special) }}{{ ' selected' if f.name == folder }}"
-              role="treeitem" aria-level="1" data-name="{{ f.name }}">
+              role="treeitem" aria-level="{{ level }}" data-name="{{ f.name }}"{% if f.sub %} aria-expanded="true"{% endif %}>
             <a href="{{ url_for('views.mail', _mbox=f.name) }}">{{ f.display }}</a>
             {% if f.unseen %}<span class="unreadcount">{{ f.unseen }}</span>{% endif %}
+            {%- if f.sub %}
+            <div class="treetoggle expanded">&nbsp;</div>
+            <ul role="group">
+              {%- for c in f.sub %}{{ folderli(c, level + 1) }}
+              {%- endfor %}
+            </ul>
+            {%- endif %}
           </li>
-          {% endfor %}
+          {%- endmacro %}
+          {%- for f in folder_tree %}{{ folderli(f, 1) }}
+          {%- endfor %}
         </ul>
       </div>
       <div class="footer small">
@@ -49,7 +60,8 @@
               title="{{ 'Options'|lc }}" tabindex="0"><span class="inner">{{ 'Options'|lc }}</span></a></li>
         </ul>
         <a href="{{ url_for('views.mail', _mbox=folder, _sort=sort, _sort_order=order) }}"
-           class="button icon toolbar-button refresh" title="{{ 'Check for new messages'|lc }}"><span class="inner">{{ 'Refresh'|lc }}</span></a>
+           class="button icon toolbar-button refresh" title="{{ 'Check for new messages'|lc }}"
+           onclick="return cc_refresh_list(this, event)"><span class="inner">{{ 'Refresh'|lc }}</span></a>
         <a class="button icon toolbar-menu-button" href="#list-menu" data-popup="list-menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
         {{ plugin_container("listcontrols") }}
         <a class="button icon toolbar-list-button active" href="#list-menu" data-popup="toolbar-list-menu"

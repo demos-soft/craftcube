@@ -155,6 +155,8 @@ JS_LABEL_KEYS = [
     "deletecontactconfirm",
     "deleteidentityconfirm", "deleteresponseconfirm",
     "restoremessage", "restoresavedcomposedata", "notsentwarning",
+    # mail list refresh + import dialog (ui.js checkmail / mail_import)
+    "loading", "import", "importmessages", "selectimportfile",
 ]
 
 

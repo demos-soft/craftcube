@@ -71,7 +71,7 @@
         target="_blank"><span>{{ 'Print this message'|lc }}</span></a></li>
     {% endif %}
     {% if not message_view %}
-    <li role="menuitem"><a class="import" href="#" data-popup="uploadform"><span>{{ 'Import'|lc }}</span></a></li>
+    <li role="menuitem"><a class="import" href="#" onclick="return cc_import_dialog(event)"><span>{{ 'Import'|lc }}</span></a></li>
     {% endif %}
     {# reference elastic core mail-menu: 'download' command labelled 'Export',
        present unconditionally in both list and message More menus; the
