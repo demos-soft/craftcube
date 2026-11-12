@@ -49,7 +49,7 @@
         <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
       </div>
       <div class="searchbar menu" role="search" aria-labelledby="aria-label-contactquicksearchbox">
-        <h2 id="aria-label-contactquicksearchbox" class="voice">Contact search form</h2>
+        <h2 id="aria-label-contactquicksearchbox" class="voice">Contacts search form</h2>
         <form name="searchform" id="searchform" action="{{ url_for('views.contacts') }}" method="get">
           <input type="hidden" name="_source" value="{{ source }}">
           {% if group %}<input type="hidden" name="_group" value="{{ group }}">{% endif %}
@@ -130,7 +130,7 @@
 
     <!-- contact details frame -->
     <div id="layout-content" role="main">
-      <h2 id="aria-label-toolbar" class="voice">Toolbar</h2>
+      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
         <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
         <span class="header-title"></span>
@@ -160,7 +160,7 @@
       </div>
       <h2 id="aria-label-contact-frame" class="voice">Contact properties</h2>
       <div class="iframe-wrapper">
-        <iframe id="contentframe" name="contentframe" title="Contact preview" src="about:blank"></iframe>
+        <iframe id="contentframe" name="contentframe" title="Contact properties" src="{{ url_for('static', filename='watermark.html') }}"></iframe>
       </div>
     </div>
 

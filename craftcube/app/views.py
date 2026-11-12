@@ -91,6 +91,23 @@ def folders_for_menu():
 def render(task, tmpl, **ctx):
     g.task = task
     ctx.setdefault("folders", folders_for_menu())
+    # Roundcube page titles: "<product> :: <task title>" (mail list uses the
+    # folder name, message view the subject; compose keeps the default)
+    ctx.setdefault("page_title", {
+        "mail.html": ctx.get("folder_title"),
+        "message.html": ctx.get("subject_title"),
+        "compose.html": "Compose",
+        "addressbook.html": "Contacts",
+        "contact.html": "Contacts",
+        "contactedit.html": "Contacts",
+        "contact_framed.html": "Contacts",
+        "preferences.html": "Preferences",
+        "responses.html": "Preferences",
+        "responseedit.html": "Preferences",
+        "identities.html": "Preferences",
+        "identityedit.html": "Preferences",
+        "folders.html": "Preferences",
+    }.get(tmpl))
     return render_template(tmpl, **ctx)
 
 
@@ -345,6 +362,7 @@ def message_view():
         ctx = build_message_ctx(box, folder, uid, mark_seen=False, allow_remote=True)
         ctx["remote_blocked"] = False
     ctx["framed"] = framed
+    ctx["subject_title"] = ctx.get("subject")
     ctx["print"] = request.args.get("_print") == "1"
     # prev/next navigation within the folder (same order as the message list)
     prev_uid = next_uid = None

@@ -222,7 +222,7 @@
 
     <!-- message preview -->
     <div id="layout-content"{{ ' class="selected"'|safe if preview_uid }}>
-      <h2 id="aria-label-toolbar" class="voice">Toolbar</h2>
+      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
         <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
         <span class="header-title"></span>
@@ -235,7 +235,7 @@
         {% set rt = (g.prefs or {}).get('mail_read_time', '0')|string %}
         <iframe id="messagecontframe" name="messagecontframe" title="Message preview"
                 data-read-time="{{ rt }}" data-folder="{{ folder }}"
-                src="{{ url_for('views.message_view', _mbox=folder, _uid=preview_uid, _framed=1, _noseen=1 if rt != '0' else none) if preview_uid else 'about:blank' }}"></iframe>
+                src="{{ url_for('views.message_view', _mbox=folder, _uid=preview_uid, _framed=1, _noseen=1 if rt != '0' else none) if preview_uid else url_for('static', filename='watermark.html') }}"></iframe>
       </div>
     </div>
 
