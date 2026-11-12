@@ -60,3 +60,20 @@ persistence:
   enabled: true
   size: 1Gi
   storageClassName: "microk8s-hostpath"
+
+# OOM history at the 512Mi default (4 restarts on 2026-11-04); gunicorn runs
+# 2 sync-IMAP workers, 1Gi keeps liveness probes from starving.
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    memory: 1Gi
+
+# Live-only overrides promoted into the chart so helm upgrade cannot revert
+# them (plugins wiped on every upgrade before 2026-11-04).
+extraEnv:
+  - name: CRAFTCUBE_PLUGINS
+    value: zipdownload,additional_message_headers
+  - name: CRAFTCUBE_DB
+    value: /data/craftcube.sqlite
