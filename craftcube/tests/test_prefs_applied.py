@@ -350,3 +350,12 @@ def test_spellcheck_prefs_control_send(client, store, user, make_box, monkeypatc
     make_box.prefs = dict(store.get_user_prefs(user))
     client.post("/compose", data=form)
     assert seen[-1] == {"syms": True, "nums": True, "caps": True}, seen[-1]
+
+def test_mail_read_time_controls_preview_marking(client, store, user, make_box):
+    cases = [("0", False), ("5", True), ("-1", True)]
+    for rt, noseen in cases:
+        store.set_user_prefs(user, {"mail_read_time": rt})
+        make_box.prefs = dict(store.get_user_prefs(user))
+        html = client.get("/mail?_mbox=INBOX&_uid=10").get_data(as_text=True)
+        assert f'data-read-time="{rt}"' in html, rt
+        assert ("_noseen=1" in html) == noseen, rt
