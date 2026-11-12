@@ -331,6 +331,10 @@ class Mailbox:
         return res
 
     def special(self, kind):
+        # user preference (Settings > Special Folders) wins over config defaults
+        user_pref = (getattr(self, "prefs", None) or {}).get(kind)
+        if user_pref:
+            return user_pref
         try:
             conf = self.conf({"drafts": "DRAFTS_FOLDER", "sent": "SENT_FOLDER",
                               "trash": "TRASH_FOLDER", "archive": "ARCHIVE_FOLDER",

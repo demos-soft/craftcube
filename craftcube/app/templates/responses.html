@@ -1,0 +1,40 @@
+{% include "includes/layout.html" %}
+{% include "includes/menu.html" %}
+{% set settings_nav = 'responses' %}
+{% include "includes/settings-sidebar.html" %}
+
+    <h1 class="voice">Responses</h1>
+
+    <div id="layout-content" class="selected">
+      <div class="header">
+        <span class="header-title">Responses</span>
+        <div class="toolbar menu" role="toolbar">
+          <a href="{{ url_for('views.response_edit', rid=None) }}" class="button icon add"
+             title="Create a new response"><span class="inner">Create</span></a>
+        </div>
+      </div>
+      <div class="scroller content">
+        <table class="listing responses" summary="Responses list">
+          <thead>
+            <tr><th class="subject">Name</th><th class="actions">&nbsp;</th></tr>
+          </thead>
+          <tbody>
+            {% for r in rows %}
+            <tr>
+              <td class="subject"><a href="{{ url_for('views.response_edit', rid=r.response_id) }}">{{ r.name }}</a></td>
+              <td class="actions">
+                <form method="post" action="{{ url_for('views.response_delete', rid=r.response_id) }}"
+                      onsubmit="return confirm('Delete this response?')" class="actions">
+                  <button type="submit" class="btn btn-link icon delete" title="Delete"><span class="inner">Delete</span></button>
+                </form>
+              </td>
+            </tr>
+            {% else %}
+            <tr><td colspan="2" class="listing empty">No responses defined.</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}

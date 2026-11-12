@@ -26,6 +26,12 @@
                     <td><input type="text" name="bcc" id="inputbcc" value="{{ row.bcc if row else '' }}" class="form-control"></td></tr>
                 <tr><td class="title"><label for="inputsig">Signature</label></td>
                     <td><textarea name="signature" id="inputsig" rows="6" class="form-control">{{ row.signature if row else '' }}</textarea></td></tr>
+                <tr class="proprow">
+                  <td class="title">Signature options</td>
+                  <td class="field">
+                    <label><input type="checkbox" name="html_signature" value="1" {{ 'checked' if row and row.html_signature }}> HTML signature</label>
+                  </td>
+                </tr>
                 <tr><td class="title">Options</td>
                     <td>
                       <label><input type="checkbox" name="standard" value="1" {{ 'checked' if row and row.standard or not row }}> Set as default</label>

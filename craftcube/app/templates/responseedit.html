@@ -1,0 +1,45 @@
+{% include "includes/layout.html" %}
+{% include "includes/menu.html" %}
+{% set settings_nav = 'responses' %}
+{% include "includes/settings-sidebar.html" %}
+
+    <h1 class="voice">{{ 'Edit response' if row else 'New response' }}</h1>
+
+    <div id="layout-content" class="selected">
+      <div class="header">
+        <a class="button icon back-content-button" href="{{ url_for('views.responses') }}"><span class="inner">Cancel</span></a>
+        <span class="header-title">{{ 'Edit' if row else 'Create' }} response</span>
+      </div>
+      <div class="formcontainer content">
+        <form method="post" class="formcontent">
+          <fieldset>
+            <legend>Response</legend>
+            <table class="layout propform">
+              <tbody>
+                <tr>
+                  <td class="title"><label for="inputname">Name</label></td>
+                  <td class="field"><input type="text" name="name" id="inputname"
+                      value="{{ row.name if row else '' }}" class="form-control" required></td>
+                </tr>
+                <tr>
+                  <td class="title"><label for="inputbody">Text</label></td>
+                  <td class="field"><textarea name="body" id="inputbody" rows="12" class="form-control">{{ row.body if row else '' }}</textarea></td>
+                </tr>
+                <tr>
+                  <td class="title">Options</td>
+                  <td class="field">
+                    <label><input type="checkbox" name="html" value="1"{{ ' checked' if row and row.html }}> HTML signature</label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+          <div class="formbuttons">
+            <button type="submit" class="btn btn-primary icon save">Save</button>
+            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.responses') }}">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}

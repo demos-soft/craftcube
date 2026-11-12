@@ -30,11 +30,13 @@ def create_app(config_overrides=None):
 
     @app.template_filter("listdate")
     def _listdate(dt):
-        return util.fmt_list_date(dt)
+        prefs = getattr(g, "prefs", None)
+        return util.list_pref_date(dt, prefs) if prefs else util.fmt_list_date(dt)
 
     @app.template_filter("summarydate")
     def _summarydate(dt):
-        return util.fmt_summary_date(dt)
+        prefs = getattr(g, "prefs", None)
+        return util.fmt_pref_date(dt, prefs) if prefs else util.fmt_summary_date(dt)
 
     @app.template_filter("datetime")
     def _datetime(dt):

@@ -1,0 +1,15 @@
+{# Settings navigation sidebar (Elastic: Preferences / Identities / Folders / Responses) #}
+<div id="layout-sidebar" class="listbox" role="navigation">
+  <div class="header">
+    <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+    <span class="header-title username">{{ current_user.username }}</span>
+  </div>
+  <div class="scroller">
+    <ul class="listing settings-table treelist">
+      <li{{ ' class="selected"' if settings_nav == 'preferences' }}><a href="{{ url_for('views.settings_preferences') }}">Preferences</a></li>
+      <li{{ ' class="selected"' if settings_nav == 'identities' }}><a href="{{ url_for('views.identities') }}">Identities</a></li>
+      <li{{ ' class="selected"' if settings_nav == 'folders' }}><a href="{{ url_for('views.folders_view') }}">Folders</a></li>
+      <li{{ ' class="selected"' if settings_nav == 'responses' }}><a href="{{ url_for('views.responses') }}">Responses</a></li>
+    </ul>
+  </div>
+</div>

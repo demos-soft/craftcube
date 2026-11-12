@@ -42,6 +42,64 @@ def fmt_summary_date(dt):
         return ""
     return to_local(dt).strftime("%Y-%m-%d %H:%M")
 
+
+# Preferred date/time formatting (settings > preferences) ---------------------
+
+DATE_FORMATS = {
+    "long": "%e %B %Y %H:%M",       # 9 January 2026 14:05
+    "short": "%d.%m.%y %H:%M",      # 09.01.26 14:05
+    "yyyy-mm-dd": "%Y-%m-%d %H:%M",
+    "mm/dd/yyyy": "%m/%d/%Y %H:%M",
+}
+
+def to_local_tz(dt, tzname=None):
+    """Convert to local zone, or to the IANA zone named in prefs."""
+    if dt is None:
+        return None
+    if tzname:
+        try:
+            from zoneinfo import ZoneInfo
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt.astimezone(ZoneInfo(tzname))
+        except Exception:
+            pass
+    return to_local(dt)
+
+def fmt_pref_time(dt, prefs):
+    if dt is None:
+        return ""
+    fmt = "%H:%M" if (prefs or {}).get("time_format", "H") == "H" else "%I:%M %p"
+    return to_local_tz(dt, (prefs or {}).get("timezone")).strftime(fmt)
+
+def fmt_pref_date(dt, prefs):
+    """Message view date honouring date_format/pretty_date/time_format prefs."""
+    if dt is None:
+        return ""
+    prefs = prefs or {}
+    dt = to_local_tz(dt, prefs.get("timezone"))
+    if prefs.get("pretty_date"):
+        # Roundcube 'pretty' style: weekday + human date + time
+        return dt.strftime("%a, ") + dt.strftime(DATE_FORMATS.get(
+            prefs.get("date_format", "long"), DATE_FORMATS["long"])) + \
+            " " + fmt_pref_time(dt, prefs)
+    fmt = DATE_FORMATS.get(prefs.get("date_format", "long"), DATE_FORMATS["long"])
+    return dt.strftime(fmt)
+
+def list_pref_date(dt, prefs):
+    """Message-list date honouring timezone + time_format prefs."""
+    if dt is None:
+        return ""
+    prefs = prefs or {}
+    dt = to_local_tz(dt, prefs.get("timezone"))
+    now = to_local_tz(datetime.now(timezone.utc), prefs.get("timezone"))
+    tfmt = "%H:%M" if prefs.get("time_format", "H") == "H" else "%I:%M %p"
+    if dt.date() == now.date():
+        return dt.strftime(tfmt)
+    if dt.year == now.year:
+        return dt.strftime("%d %b")
+    return dt.strftime("%d.%m.%y")
+
 def fmt_datetime(dt):
     if dt is None:
         return ""

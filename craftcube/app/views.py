@@ -45,6 +45,7 @@ def imap_box():
         raise e
     box = Mailbox(imap, cfg, default_email=username)
     box.smtp_user, box.smtp_pass = username, password
+    box.prefs = current_app.store.get_user_prefs(session.get("user_id") or 0)
     g._mailbox = box
     return box
 
@@ -60,6 +61,7 @@ def _close_imap(exc):
 def _load_user():
     if session.get("user_id"):
         g.user = get_store().get_user(session["username"])
+        g.prefs = get_store().get_user_prefs(session["user_id"])
 
 
 def folders_for_menu():
@@ -478,6 +480,16 @@ def compose():
     prefill = {"to": "", "cc": "", "bcc": "", "subject": "", "body": "", "html": "",
                "in_reply_to": "", "references": "", "reply_to": "", "followup_to": "",
                "priority": "3", "mdn": False, "dsn": False}
+    # defaults from Settings > Preferences (Composing Messages)
+    prefs = getattr(box, "prefs", None) or {}
+    prefill["mdn"] = bool(prefs.get("mdn_default"))
+    prefill["dsn"] = bool(prefs.get("dsn_default"))
+    if mode == "reply" and prefs.get("reply_mode") == "all":
+        mode = "replyall"
+    elif mode == "reply" and prefs.get("reply_mode") == "list":
+        mode = "replylist"
+    if mode == "forward" and prefs.get("forward_mode") == "attachment":
+        mode = "forward-attachment"
     attachments_kept = []
     attach_original = None   # (filename, bytes) for forward-as-attachment
     source_msg = None
@@ -765,9 +777,7 @@ def contact_group_remove(cid, gid):
 @bp.route("/settings")
 @login_required
 def settings():
-    store = get_store()
-    user = store._conn().execute("SELECT * FROM users WHERE user_id = ?", (session["user_id"],)).fetchone()
-    return render("settings", "settings.html", user=user)
+    return redirect(url_for("views.settings_preferences"))
 
 
 @bp.post("/settings/password")
@@ -789,6 +799,81 @@ def settings_password():
         flash("Password changed.", "confirmation")
         session["imap_password"] = new
     return redirect(url_for("views.settings"))
+
+
+@bp.route("/settings/preferences", methods=["GET", "POST"])
+@login_required
+def settings_preferences():
+    store = get_store()
+    prefs = dict(store.get_user_prefs(session["user_id"]))
+    # prefs are stored at the top level of the user prefs dict; folder keys
+    # use the same names as Mailbox.special(kind): drafts/sent/trash/archive/junk
+    if request.method == "POST":
+        for key in ("timezone", "time_format", "date_format", "refresh_interval",
+                    "reply_mode", "forward_mode", "html_editor"):
+            if key in request.form:
+                prefs[key] = request.form[key].strip()
+        for form_key, pref_key in (("drafts_mbox", "drafts"), ("sent_mbox", "sent"),
+                                   ("trash_mbox", "trash"), ("archive_mbox", "archive"),
+                                   ("junk_mbox", "junk")):
+            val = request.form.get(form_key, "").strip()
+            if val:
+                prefs[pref_key] = val
+            else:
+                prefs.pop(pref_key, None)
+        for key in ("pretty_date", "display_next", "check_all_folders",
+                    "mdn_default", "dsn_default", "reply_same_folder",
+                    "show_real_foldernames"):
+            prefs[key] = 1 if request.form.get(key) else 0
+        for key in ("pagesize", "read_time"):
+            if key in request.form:
+                try:
+                    prefs[key] = max(0, int(request.form[key]))
+                except ValueError:
+                    pass
+        for key, value in list(prefs.items()):
+            store.set_user_pref(session["user_id"], key, value)
+        flash("Preferences saved.", "confirmation")
+        return redirect(url_for("views.settings_preferences"))
+    folders = [f["name"] for f in folders_for_menu()]
+    return render("settings", "preferences.html", prefs=prefs, mail_folders=folders)
+
+
+@bp.route("/settings/responses")
+@login_required
+def responses():
+    store = get_store()
+    rows = store.responses(session["user_id"])
+    return render("settings", "responses.html", rows=rows)
+
+
+@bp.route("/settings/response/edit/<int:rid>", methods=["GET", "POST"])
+@bp.route("/settings/response/new", defaults={"rid": None}, methods=["GET", "POST"])
+@login_required
+def response_edit(rid):
+    store = get_store()
+    row = store.response(session["user_id"], rid) if rid else None
+    if rid and not row:
+        abort(404)
+    if request.method == "POST":
+        name = request.form.get("name", "").strip()
+        body = request.form.get("body", "")
+        if name:
+            new_id = store.response_save(session["user_id"], name, body,
+                                         html=1 if request.form.get("html") else 0,
+                                         rid=rid)
+            flash("Response saved.", "confirmation")
+            return redirect(url_for("views.responses"))
+        flash("Name is required.", "error")
+    return render("settings", "responseedit.html", row=row)
+
+
+@bp.post("/settings/response/<int:rid>/delete")
+@login_required
+def response_delete(rid):
+    get_store().response_delete(session["user_id"], rid)
+    flash("Response deleted.", "confirmation")
+    return redirect(url_for("views.responses"))
 
 
 @bp.route("/settings/identities")

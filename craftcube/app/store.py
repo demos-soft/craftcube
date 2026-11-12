@@ -101,6 +101,15 @@ CREATE TABLE IF NOT EXISTS collected_addresses (
   "type" integer NOT NULL
 );
 CREATE UNIQUE INDEX IF NOT EXISTS ix_collected_addresses_user_id ON collected_addresses(user_id, "type", email);
+
+CREATE TABLE IF NOT EXISTS responses (
+  response_id integer NOT NULL PRIMARY KEY,
+  user_id integer NOT NULL
+    REFERENCES users (user_id) ON DELETE CASCADE ON UPDATE CASCADE,
+  name varchar(100) NOT NULL,
+  body text NOT NULL,
+  html tinyint NOT NULL default '0'
+);
 """
 
 _lock = threading.Lock()
@@ -267,6 +276,40 @@ class Store:
             c = self._conn()
             c.execute("UPDATE identities SET del = 1, changed = ? WHERE user_id = ? AND identity_id = ?",
                       (now(), user_id, identity_id))
+            c.commit()
+
+    # ------------------------------------------------------------ responses
+
+    def responses(self, user_id):
+        return self._conn().execute(
+            "SELECT * FROM responses WHERE user_id = ? ORDER BY name", (user_id,)
+        ).fetchall()
+
+    def response(self, user_id, rid):
+        return self._conn().execute(
+            "SELECT * FROM responses WHERE user_id = ? AND response_id = ?",
+            (user_id, rid)).fetchone()
+
+    def response_save(self, user_id, name, body, html=0, rid=None):
+        with _lock:
+            c = self._conn()
+            if rid:
+                c.execute("UPDATE responses SET name = ?, body = ?, html = ? "
+                          "WHERE user_id = ? AND response_id = ?",
+                          (name, body, html, user_id, rid))
+            else:
+                cur = c.execute(
+                    "INSERT INTO responses (user_id, name, body, html) VALUES (?,?,?,?)",
+                    (user_id, name, body, html))
+                rid = cur.lastrowid
+            c.commit()
+            return rid
+
+    def response_delete(self, user_id, rid):
+        with _lock:
+            c = self._conn()
+            c.execute("DELETE FROM responses WHERE user_id = ? AND response_id = ?",
+                      (user_id, rid))
             c.commit()
 
     # ------------------------------------------------------------ contacts
