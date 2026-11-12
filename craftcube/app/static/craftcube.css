@@ -122,3 +122,26 @@ html.dark-mode #settings-sections ul.verticaltabs.linkslist li a:hover { backgro
 .ui-widget-header { font-weight:700; background-color:#fff; }
 .ui-dialog { background-color:#fff; }
 html.dark-mode .ui-widget-content, html.dark-mode .ui-widget-header { color:#c5d1d3; }
+
+/* Login page parity (reference: label table, oversized inputs, full-width
+   uppercase btn-lg submit). Values taken from the reference's computed
+   styles at the desktop breakpoint. */
+#login-form td.title { width: auto; padding: 0 1px; }
+#login-form td.title label { font-size: .875rem; text-align: center; font-weight: 400; }
+#login-form td.input { width: 100%; }
+#login-form .form-control {
+  font-size: 17.5px;
+  line-height: 26.25px;
+  padding: 7px 14px;
+  border-radius: 0 4.2px 4.2px 0;
+}
+#rcmloginsubmit {
+  width: 100%;
+  padding: 7px 14px;
+  font-size: 17.5px;
+  line-height: 1.5;
+  border-radius: 4.2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+

@@ -4,25 +4,35 @@
 
     <div id="layout-content" class="selected no-navbar" role="main">
       <img src="{{ url_for('static', filename='images/logo.svg') }}" id="logo" alt="Logo">
-      <form id="login-form" method="post" class="propform">
-        <div class="form-group row">
-          <div class="col">
-            <input type="text" id="rcmloginsuser" name="_user" value="" size="40"
-                   class="form-control input-md" tabindex="1" placeholder="Username" autocapitalize="none" autocomplete="username" required autofocus>
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col">
-            <input type="password" id="rcmloginpass" name="_pass" size="40" class="form-control input-md"
-                   tabindex="2" placeholder="Password" autocomplete="current-password" required>
-          </div>
-        </div>
+      <form id="login-form" name="login-form" method="post" class="propform">
+        <table>
+          <tbody>
+            <tr class="form-group row">
+              <td class="title" style="display: none;"><label for="rcmloginuser">Username</label></td>
+              <td class="input input-group input-group-lg">
+                <span class="input-group-prepend"><i class="input-group-text icon user"></i></span>
+                <input name="_user" id="rcmloginuser" required size="40" placeholder="Username"
+                   class="form-control" autocapitalize="off" autocomplete="username" value="" type="text">
+              </td>
+            </tr>
+            <tr class="form-group row">
+              <td class="title" style="display: none;"><label for="rcmloginpwd">Password</label></td>
+              <td class="input input-group input-group-lg">
+                <span class="input-group-prepend"><i class="input-group-text icon pass"></i></span>
+                <input name="_pass" id="rcmloginpwd" required size="40" placeholder="Password"
+                   class="form-control" autocapitalize="off" autocomplete="off" type="password">
+              </td>
+            </tr>
+          </tbody>
+        </table>
         {% if error %}
         <div class="text-danger mb-2">{{ error }}</div>
         {% endif %}
-        <div class="formbuttons">
-          <button type="submit" class="btn btn-primary icon login" id="rcmloginsubmit" tabindex="3">Login</button>
-        </div>
+        <p class="formbuttons">
+          <button type="submit" id="rcmloginsubmit"
+                  class="button mainaction submit btn btn-primary btn-lg text-uppercase w-100"
+                  tabindex="3">Login</button>
+        </p>
         <input type="hidden" name="_timezone" id="rcmlogintz" value="_default_">
         <script>
           // Roundcube-style client timezone detection sent with the login POST
