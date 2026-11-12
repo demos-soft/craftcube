@@ -123,6 +123,18 @@ html.dark-mode #settings-sections ul.verticaltabs.linkslist li a:hover { backgro
 .ui-dialog { background-color:#fff; }
 html.dark-mode .ui-widget-content, html.dark-mode .ui-widget-header { color:#c5d1d3; }
 
+/* The reference toolbar is a <ul> whose <li> children are inline-block; ours
+   is a div whose anchors float (.toolbar a{float:left} in the vendored CSS).
+   Float the dropbutton/spacer wrappers too, or they fall out of the float
+   order and render after the last button (reply-all/forward landed after More
+   instead of between Reply and Delete). */
+.toolbar > .dropbutton,
+.toolbar > .spacer { float: left; }
+/* The reference wraps each toolbar item in an inline-block <li> that is as
+   tall as the buttons (58px), so the spacer pushes the following buttons;
+   a zero-height floated spacer would not (zero-height ranges don't overlap). */
+.toolbar > .spacer { height: 58px; }
+
 /* Login page parity (reference: label table, oversized inputs, full-width
    uppercase btn-lg submit). Values taken from the reference's computed
    styles at the desktop breakpoint. */
@@ -144,7 +156,6 @@ html.dark-mode .ui-widget-content, html.dark-mode .ui-widget-header { color:#c5d
   text-transform: uppercase;
   font-weight: 400;
 }
-
 
 /* Message-list toolbar: the Archive button only exists for an actual
    selection (reference hides it on direct ?_action=view links, showing it
