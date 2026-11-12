@@ -702,7 +702,9 @@
       if (a) {
         var url = a.getAttribute('href');
         var frame = document.getElementById('messagecontframe');
-        if (frame && window.innerWidth > 1024) {
+        // Elastic opens the preview everywhere the layout is not single-pane
+        // (is_mobile() = phone/small, <=768); normal/large keep list+content
+        if (frame && window.innerWidth > 768) {
           e.preventDefault();
           frame.src = url + (url.indexOf('?') > -1 ? '&' : '?') + '_framed=1';
           var content = document.getElementById('layout-content');
