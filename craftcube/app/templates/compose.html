@@ -34,11 +34,11 @@
             <label for="compose-priority" class="col-form-label col-6">Priority</label>
             <div class="col-6">
               <select id="compose-priority" name="_priority" class="custom-select">
-                <option value="1"{{ ' selected' if prefill.priority == '1' }}>Highest</option>
-                <option value="2"{{ ' selected' if prefill.priority == '2' }}>High</option>
-                <option value="3"{{ ' selected' if prefill.priority in ('3', '', none) }}>Normal</option>
-                <option value="4"{{ ' selected' if prefill.priority == '4' }}>Low</option>
                 <option value="5"{{ ' selected' if prefill.priority == '5' }}>Lowest</option>
+                <option value="4"{{ ' selected' if prefill.priority == '4' }}>Low</option>
+                <option value="3"{{ ' selected' if prefill.priority in ('3', '', none) }}>Normal</option>
+                <option value="2"{{ ' selected' if prefill.priority == '2' }}>High</option>
+                <option value="1"{{ ' selected' if prefill.priority == '1' }}>Highest</option>
               </select>
             </div>
           </div>
@@ -46,8 +46,10 @@
             <label for="compose-store-target" class="col-form-label col-6">Save sent message in</label>
             <div class="col-6">
               <select id="compose-store-target" name="_store_target" class="custom-select">
-                <option value="sent">Sent</option>
-                <option value="">Do not save</option>
+                <option value="">- don't save -</option>
+                {% for f in folders %}
+                <option value="{{ f.name }}"{{ ' selected' if f.name.lower() == 'sent' }}>{{ f.display }}</option>
+                {% endfor %}
               </select>
             </div>
           </div>
@@ -70,10 +72,27 @@
           <span class="spacer"></span>
           <button type="button" class="btn btn-link attach" title="Add attachment"
                   onclick="document.getElementById('compose-file').click()"><span class="inner">Attach</span></button>
+          <button type="button" class="btn btn-link signature" id="tb-signature" title="Insert signature"><span class="inner">Signature</span></button>
+          <span class="dropbutton">
+            <a href="#responses" id="responsesmenulink" class="responses" title="Insert response"
+               data-popup="responses-menu"><span class="inner">Responses</span></a>
+          </span>
+          <button type="button" class="btn btn-link spellcheck" id="tb-spell" title="Check spelling"><span class="inner">Spell</span></button>
         </div>
       </div>
 
       <div id="compose-content" class="formcontainer content">
+      <div id="responses-menu" class="popupmenu">
+        <h3 class="voice">Insert response</h3>
+        <ul class="menu listing" role="menu">
+          {% for r in responses %}
+          <li role="menuitem"><a class="insertresponse" href="#" data-response="{{ r.response_id }}"
+              data-name="{{ r.name }}">{{ r.name }}</a></li>
+          {% else %}
+          <li role="menuitem" class="disabled"><a href="#"><span>No responses defined</span></a></li>
+          {% endfor %}
+        </ul>
+      </div>
         <form id="composeform" method="post" enctype="multipart/form-data" class="formcontent scroller" action="">
           <input type="hidden" name="_uid" value="{{ uid_of or '' }}">
           <input type="hidden" name="_mode" value="{{ mode or '' }}">
@@ -164,4 +183,49 @@
       });
     });
   }
+</script>
+<script>
+  // Signature / Responses / Spell toolbar (elastic behaviour)
+  (function () {
+    var body = document.getElementById('composebody');
+    if (!body) return;
+    var sigs = { {% for i in identities %}'{{ i.identity_id }}': {{ (i.signature or '') | tojson }}{% if not loop.last %}, {% endif %}{% endfor %} };
+    var responses = { {% for r in responses %}'{{ r.response_id }}': {{ (r.body or '') | tojson }}{% if not loop.last %}, {% endif %}{% endfor %} };
+
+    function insertAtCursor(text) {
+      var s = body.selectionStart || 0, e = body.selectionEnd || 0;
+      body.value = body.value.slice(0, s) + text + body.value.slice(e);
+      body.selectionStart = body.selectionEnd = s + text.length;
+      body.focus();
+    }
+
+    var sigBtn = document.getElementById('tb-signature');
+    if (sigBtn) sigBtn.addEventListener('click', function () {
+      var sel = document.getElementById('identities');
+      var sig = (sigs[sel ? sel.value : ''] || '').replace(/\r\n/g, '\n');
+      if (!sig) return;
+      var v = body.value.replace(/\s+$/, '');
+      var sep = v ? '\n\n-- \n' : '-- \n';
+      if (v.indexOf(sep + sig) > -1) return;  // already inserted
+      insertAtCursor((v ? v + sep : sep) + sig);
+      body.selectionStart = body.selectionEnd = body.value.length;
+    });
+
+    document.querySelectorAll('#responses-menu a.insertresponse').forEach(function (a) {
+      a.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        var txt = responses[a.getAttribute('data-response')] || '';
+        if (txt) insertAtCursor(txt);
+        window.cc_close_popups && window.cc_close_popups();
+      });
+    });
+
+    var spell = document.getElementById('tb-spell');
+    if (spell) spell.addEventListener('click', function () {
+      // no server spell engine in this build: toggle browser-native spellcheck
+      var on = body.getAttribute('spellcheck') !== 'true';
+      body.setAttribute('spellcheck', on ? 'true' : 'false');
+      if (on) body.focus();
+    });
+  })();
 </script>

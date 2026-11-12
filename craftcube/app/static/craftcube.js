@@ -48,6 +48,7 @@
     initPopups();
     initList();
     initStack();
+    initRefresh();
   });
   function onHash() {
     var h = location.hash.replace('#', '');
@@ -164,6 +165,7 @@
       enabled('#tb-replyall, #replyall-menu a[data-mode]', ctx.length === 1);
       enabled('#tb-forward, #forward-menu a[data-mode]', ctx.length === 1);
       enabled('#message-menu a', ctx.length > 0);
+      enabled('#download-menu a', ctx.length > 0);
       if (ctx.length === 1) {
         var uid = ctx[0];
         var q = '_mbox=' + encodeURIComponent(boxOf(uid)) + '&_uid=' + uid;
@@ -278,7 +280,12 @@
           act('markallread', [], {});
         } else if (cmd === 'delete') {
           var uids = toolbarContext();
-          if (uids.length && confirm('Really delete the selected message(s)?')) act('delete', uids, {});
+          if (uids.length && confirm('Really delete the selected message(s)?')) {
+            var extra = {};
+            var sel = document.querySelector('#messagelist tr.selected');
+            if (sel) extra._return_uid = sel.getAttribute('data-uid') || '';
+            act('delete', uids, extra);
+          }
         } else if (cmd === 'move' || cmd === 'copy') {
           act(cmd, toolbarContext(), { _dest: a.getAttribute('data-dest') });
         } else {
@@ -313,16 +320,103 @@
       actForm.submit();
     }
 
-    // list-options popup applies sort/order
+    // list-options popup applies sort/order/list-mode
     window.cc_apply_list_options = function () {
       var col = document.getElementById('listoptions-sortcol').value;
       var ord = document.getElementById('listoptions-sortord').value.toLowerCase();
+      var modeSel = document.getElementById('listoptions-threads');
       var url = new URL(location.href);
       url.searchParams.set('_sort', col);
       url.searchParams.set('_sort_order', ord);
+      if (modeSel) url.searchParams.set('_mode', modeSel.value);
       url.searchParams.delete('_page');
       location.href = url.toString();
     };
+
+    // search-modifier sublists (Sender/Recipient expand to fine-grained fields)
+    document.querySelectorAll('#searchmenu li.with-sublist > a.dropdown').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var sub = a.parentElement.querySelector('ul.proplist');
+        if (sub) sub.classList.toggle('d-none');
+      });
+    });
+
+    // Import uploadform: picking a file submits immediately (like Elastic)
+    document.querySelectorAll('#uploadform input.local-upload').forEach(function (inp) {
+      inp.addEventListener('change', function () {
+        if (inp.files && inp.files.length) inp.form.submit();
+      });
+    });
+
+    // Download... submenu (zipdownload): build export URL for current selection
+    document.querySelectorAll('#download-menu a[data-dlfmt]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (a.classList.contains('disabled')) return;
+        var uids = toolbarContext();
+        if (!uids.length) return;
+        var url = '/message/export?_mbox=' + encodeURIComponent(boxOf(uids[0])) +
+                  '&_format=' + a.getAttribute('data-dlfmt');
+        uids.forEach(function (u) { url += '&_uids[]=' + u; });
+        location.href = url;
+        window.cc_close_popups();
+      });
+    });
+
+    // Threads popup: expand unread / all / collapse all — client-side, like Elastic
+    function setThreadState(mode) {
+      var roots = rows().filter(function (r) { return r.getAttribute('data-depth') === '0'; });
+      roots.forEach(function (root) {
+        var hide = false;
+        var sib = root.nextElementSibling;
+        while (sib && sib.getAttribute('data-depth') !== null && sib.getAttribute('data-depth') !== '0') {
+          if (mode === 'all') sib.style.display = '';
+          else if (mode === 'none') sib.style.display = 'none';
+          else if (mode === 'unread') {
+            if (!hide && sib.classList.contains('unread')) sib.style.display = '';
+            else { sib.style.display = 'none'; hide = true; }
+          }
+          sib = sib.nextElementSibling;
+        }
+      });
+    }
+    document.querySelectorAll('#threadselect-menu a[data-thread]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        setThreadState(a.getAttribute('data-thread'));
+        window.cc_close_popups();
+      });
+    });
+
+    // 'Expand message threads' preference: 0 never, 1 all, 2 only unread
+    var aet = document.body.getAttribute('data-autoexpand-threads');
+    if (aet === '1') setThreadState('all');
+    else if (aet === '2') setThreadState('unread');
+
+    // 'Mark messages as read' preference: mark seen N seconds after preview
+    function scheduleRead() {
+      var frame = document.getElementById('messagecontframe');
+      if (!frame) return;
+      var rt = parseInt(frame.getAttribute('data-read-time') || '0', 10);
+      var sel = document.querySelector('#messagelist tr.selected');
+      if (rt <= 0 || !sel || !sel.classList.contains('unread')) return;
+      var uid = sel.getAttribute('data-uid') || (sel.querySelector('input[name=_uids[]]') || {}).value;
+      var mbox = frame.getAttribute('data-folder');
+      clearTimeout(scheduleRead._t);
+      scheduleRead._t = setTimeout(function () {
+        var fd = new FormData();
+        fd.append('_mbox', mbox); fd.append('_act', 'read'); fd.append('_uids[]', uid);
+        fetch('/mail/act', { method: 'POST', body: fd })
+          .then(function () { sel.classList.remove('unread'); });
+      }, rt * 1000);
+    }
+    document.querySelectorAll('#messagelist tr.message').forEach(function (r) {
+      r.addEventListener('click', function () { setTimeout(scheduleRead, 300); });
+    });
+    scheduleRead();
+
     updateToolbar();
   }
 
@@ -339,6 +433,30 @@
     var el = document.querySelector('.details-toggle');
     if (el) el.textContent = label;
   };
+
+  // ----------------------------------------------- listing rows with data-href
+  // (Elastic navigates list rows via JS; e.g. Settings > Preferences sections)
+  document.querySelectorAll('tr[data-href]').forEach(function (row) {
+    function go() { location.href = row.getAttribute('data-href'); }
+    row.addEventListener('click', function (e) {
+      if (e.target.closest('a, input, button')) return;
+      go();
+    });
+    row.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') go();
+    });
+  });
+
+  // ------------------------------------------------------------ auto refresh
+  function initRefresh() {
+    var mins = parseInt(document.body.getAttribute('data-refresh-interval') || '0', 10);
+    if (!mins || !document.getElementById('messagelist')) return;
+    setTimeout(function () {
+      var url = new URL(location.href);
+      url.searchParams.delete('_uid'); // don't steal focus back to the preview
+      location.href = url.toString();
+    }, mins * 60000);
+  }
 
   // ------------------------------------------------------------ message stack
   function initStack() {

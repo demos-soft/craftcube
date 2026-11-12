@@ -20,5 +20,9 @@
   </script>
   {% endif %}
 </head>
-<body class="task-{{ task or 'error' }} action-{{ action or 'none' }}">
+<body class="task-{{ task or 'error' }} action-{{ action or 'none' }}"
+      data-display-next="{{ 1 if (g.prefs or {}).get('display_next') else 0 }}"
+      data-refresh-interval="{{ (g.prefs or {}).get('refresh_interval', 0) or 0 }}"
+      data-autoexpand-threads="{{ (g.prefs or {}).get('autoexpand_threads', '0') or '0' }}"
+      data-mail-read-time="{{ (g.prefs or {}).get('mail_read_time', '0') or '0' }}">
   <div id="layout">

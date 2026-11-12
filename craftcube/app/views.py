@@ -64,8 +64,25 @@ def _load_user():
         g.prefs = get_store().get_user_prefs(session["user_id"])
 
 
+def folder_label(name, prefs=None):
+    """Roundcube-style folder display name: INBOX -> Inbox, basename of subfolders,
+    special folders titled-cased; raw name when 'show_real_foldernames' is on."""
+    if (prefs or {}).get("show_real_foldernames"):
+        return name
+    base = name.rsplit("/", 1)[-1]
+    if base.upper() == "INBOX":
+        return "Inbox"
+    return base[:1].upper() + base[1:]
+
+
 def folders_for_menu():
-    return imap_box().folders()
+    prefs = g.get("prefs") or {}
+    out = []
+    for f in imap_box().folders():
+        f = dict(f)
+        f["display"] = folder_label(f["name"], prefs)
+        out.append(f)
+    return out
 
 
 def render(task, tmpl, **ctx):
@@ -176,12 +193,18 @@ def mail():
     sfilter = request.args.get("_sf") or "all"
     sinterval = request.args.get("_si") or "all"
     sscope = request.args.get("_ss") or "base"
+    list_mode = request.args.get("_mode") or (
+        "threads" if (getattr(box, "prefs", None) or {}).get("viewmode") == "threads" else "list")
     searching = bool(search or sfilter != "all" or sinterval != "all")
     try:
+        pspec = (getattr(box, "prefs", {}).get("mail_pagesize")
+                 or getattr(box, "prefs", {}).get("pagesize"))
         listing = box.message_list(folder, page=page, sort=sort, order=order,
+                                   page_size=(int(pspec) if pspec else None) or 20,
                                    search=search or None, search_mods=mods or None,
                                    search_filter=sfilter, search_interval=sinterval,
-                                   search_scope=sscope if searching else "base")
+                                   search_scope=sscope if searching else "base",
+                                   threads=(list_mode == "threads"))
     except MailError as e:
         flash(str(e), "error")
         listing = {"items": [], "page": 1, "pages": 1, "total": 0, "first": 0, "last": 0, "uids": []}
@@ -191,10 +214,13 @@ def mail():
         quota_used, quota_kb = box.quota_usage()
     except Exception:
         pass
-    return render("mail", "mail.html", folder=folder, listing=listing,
+    return render("mail", "mail.html", folder=folder,
+                  folder_title=folder_label(folder, getattr(box, "prefs", None) or g.get("prefs") or {}),
+                  listing=listing,
                   sort=sort, order=order, search=search,
                   search_mods=mods, search_filter=sfilter,
                   search_interval=sinterval, search_scope=sscope,
+                  list_mode=list_mode,
                   searching=searching, preview_uid=uid,
                   quota_used=quota_used, quota_kb=quota_kb,
                   message_count=listing["total"])
@@ -313,6 +339,20 @@ def message_view():
         ctx["remote_blocked"] = False
     ctx["framed"] = framed
     ctx["print"] = request.args.get("_print") == "1"
+    # prev/next navigation within the folder (same order as the message list)
+    prev_uid = next_uid = None
+    if not framed:
+        try:
+            order_uids = box.message_list(folder, page=1, page_size=100000,
+                                          sort="date", order="desc")["uids"]
+            if uid in order_uids:
+                idx = order_uids.index(uid)
+                prev_uid = order_uids[idx + 1] if idx + 1 < len(order_uids) else None
+                next_uid = order_uids[idx - 1] if idx > 0 else None
+        except Exception:
+            pass
+    ctx["prev_uid"] = prev_uid
+    ctx["next_uid"] = next_uid
     if framed:
         return render_template("message_part.html", **ctx, task="mail")
     return render("mail", "message.html", **ctx)
@@ -321,18 +361,102 @@ def message_view():
 @bp.route("/message/export")
 @login_required
 def message_export():
+    """Export messages — the zipdownload plugin's three formats:
+    eml (single raw .eml), mbox (zip with one RFC4155 mbox), maildir
+    (zip with '<uid> <subject>.eml' entries)."""
     box = imap_box()
     folder = request.args.get("_mbox") or "INBOX"
+    uids = (request.form.getlist("_uids[]") + request.args.getlist("_uids[]")
+            if request.method == "POST" else list(request.args.getlist("_uids[]")))
     uid = request.args.get("_uid")
-    if not uid:
+    if uid and uid not in uids:
+        uids.append(uid)
+    if not uids:
         abort(404)
-    raw = box.raw_message(folder, uid)
+    fmt = request.args.get("_format") or "eml"
+    import io as _io
     import re as _re
-    subject = _hdr(raw, "Subject") or "message"
-    fname = _re.sub(r"[^A-Za-z0-9 ._-]", "_", subject)[:80] + ".eml"
-    return Response(raw.as_string(), mimetype="message/rfc822", headers={
-        "Content-Disposition": f"attachment; filename*=UTF-8''{fname}",
+    import zipfile
+
+    def raw_for(u):
+        try:
+            raw = box.raw_message(folder, u)
+        except MailError:
+            abort(404)  # unknown uid: 404, not a server error
+        if raw is None:
+            abort(404)
+        return raw
+
+    if fmt == "eml" and len(uids) == 1:
+        raw = raw_for(uids[0])
+        subject = _hdr(raw, "Subject") or "message"
+        fname = _re.sub(r"[^A-Za-z0-9 ._-]", "_", subject)[:80] + ".eml"
+        return Response(raw.as_string(), mimetype="message/rfc822", headers={
+            "Content-Disposition": f"attachment; filename*=UTF-8''{fname}",
+        })
+
+    from email.utils import parseaddr
+    from datetime import timezone as _tz
+    buf = _io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
+        if fmt == "mbox":
+            body = b""
+            for u in uids:
+                raw = raw_for(u)
+                frm = parseaddr(str(raw.get("From", "")))[1] or "MAILER-DAEMON"
+                frm = _re.sub(r"\s", "-", frm)
+                d = _msg_date(raw) or util.to_local(__import__("datetime").datetime.now(_tz.utc))
+                # RFC4155 "From " separator line + escaped in-body separators
+                body += (
+                    f"From {frm} {d.strftime('%a %b %d %H:%M:%S %Y')}\r\n".encode()
+                    + _re.sub(rb"(?m)^From ", b">From ", raw.as_bytes()) + b"\n")
+            z.writestr("messages.mbox", body)
+            zname = "messages.zip"
+        else:  # maildir: <folder>/<uid> <subject>.eml
+            for u in uids:
+                raw = raw_for(u)
+                subject = _hdr(raw, "Subject") or ""
+                subject = _re.sub(r"[^A-Za-z0-9 ._ -]", "", subject)[:16]
+                path = folder.replace("/", "/") + "/" if folder.upper() != "INBOX" else ""
+                z.writestr(f"{path}{u}{' ' + subject if subject else ''}.eml", raw.as_string())
+            zname = folder.rsplit("/", 1)[-1] + ".zip"
+    return Response(buf.getvalue(), mimetype="application/zip", headers={
+        "Content-Disposition": f"attachment; filename*=UTF-8''{zname}",
     })
+
+
+@bp.post("/message/import")
+@login_required
+def message_import():
+    """Import messages into a folder (Elastic 'Import' — MIME or Mbox upload)."""
+    box = imap_box()
+    folder = request.form.get("_mbox") or "INBOX"
+    f = request.files.get("_file")
+    if not f or not f.filename:
+        flash("No file uploaded.", "error")
+        return redirect(url_for("views.mail", _mbox=folder))
+    data = f.read()
+    fmt = request.form.get("_format") or "MIME"
+    count = 0
+    try:
+        if fmt == "Mbox":
+            import mailbox as _mb
+            import tempfile
+            with tempfile.NamedTemporaryFile(suffix=".mbox", delete=False) as tf:
+                tf.write(data)
+                tname = tf.name
+            for msg in _mb.mbox(tname):
+                box.imap.append(folder, msg.as_bytes())
+                count += 1
+            import os as _os
+            _os.unlink(tname)
+        else:
+            box.imap.append(folder, data)
+            count = 1
+        flash(f"{count} message(s) imported.", "confirmation")
+    except Exception as e:  # noqa: BLE001
+        flash(f"Import failed: {e}", "error")
+    return redirect(url_for("views.mail", _mbox=folder))
 
 
 @bp.route("/attachment")
@@ -388,13 +512,44 @@ def mail_act():
             _run_mail_action(box, command, b, us)
         return redirect(request.form.get("_return") or url_for("views.mail", _mbox=folder))
     if uids or command in ("empty", "markallread", "compact"):
+        # 'Show next message after delete' preference: remember the neighbour of
+        # the deleted message BEFORE deleting, to reopen it after the redirect.
+        ret_uid = request.form.get("_return_uid", "")
+        next_preview = None
+        if (command == "delete" and ret_uid
+                and (getattr(box, "prefs", None) or {}).get("display_next")):
+            try:
+                next_preview = _next_uid_after(box, folder, ret_uid, uids)
+            except Exception:
+                next_preview = None
         try:
             _run_mail_action(box, command, folder, uids,
                              dest=request.form.get("_dest"))
         except MailError as e:
             flash(str(e), "error")
+        if next_preview:
+            return redirect(url_for("views.mail", _mbox=folder, _uid=next_preview))
     nxt = request.form.get("_return") or url_for("views.mail", _mbox=folder)
     return redirect(nxt)
+
+
+def _next_uid_after(box, folder, ref_uid, removed):
+    """First remaining uid after ref_uid (newest-first order), given the
+    folder's uid order BEFORE the removal."""
+    uids = [str(u) for u in box.message_list(folder, page=1, page_size=100000,
+                                             sort="date", order="desc")["uids"]]
+    removed = {str(u) for u in removed}
+    try:
+        idx = uids.index(str(ref_uid))
+    except ValueError:
+        idx = 0
+    for u in uids[idx + 1:]:
+        if u not in removed:
+            return u
+    for u in reversed(uids[:idx]):
+        if u not in removed:
+            return u
+    return None
 
 
 def _run_mail_action(box, command, folder, uids, dest=None):
@@ -484,11 +639,15 @@ def compose():
     prefs = getattr(box, "prefs", None) or {}
     prefill["mdn"] = bool(prefs.get("mdn_default"))
     prefill["dsn"] = bool(prefs.get("dsn_default"))
-    if mode == "reply" and prefs.get("reply_mode") == "all":
+    # Roundcube semantics: reply_all_mode 1 = reply to mailing list only;
+    # forward_attachment 1 = forward as attachment. Legacy values still work.
+    if mode == "reply" and str(prefs.get("reply_mode", "0")) in ("all",):
         mode = "replyall"
-    elif mode == "reply" and prefs.get("reply_mode") == "list":
+    elif mode == "reply" and (str(prefs.get("reply_mode", "0")) == "list"
+                              or str(prefs.get("reply_all_mode", "0")) == "1"):
         mode = "replylist"
-    if mode == "forward" and prefs.get("forward_mode") == "attachment":
+    if mode == "forward" and (prefs.get("forward_mode") == "attachment"
+                              or str(prefs.get("forward_attachment", "0")) == "1"):
         mode = "forward-attachment"
     attachments_kept = []
     attach_original = None   # (filename, bytes) for forward-as-attachment
@@ -641,19 +800,42 @@ def compose():
                 return redirect(url_for("views.mail", _mbox=box.special("drafts") or "Drafts"))
             # smtplib needs the combined recipient list (incl. Bcc); the
             # transmitted header block and the Sent copy must not carry Bcc
-            box.send(msg, msg.as_bytes())
+            store_target = request.form.get("_store_target")
+            box.send(msg, msg.as_bytes(),
+                     store_target=store_target if store_target is not None else None)
             if draft_uid:
                 box.delete_draft(draft_uid)
+            # 'Collected addresses' prefs: store recipients (type 1) and the
+            # replied-to sender as a trusted sender (type 2), like Roundcube.
+            try:
+                up = getattr(box, "prefs", None) or {}
+                cr = str(up.get("collected_recipients", "1"))
+                if cr == "1":
+                    import email.utils as _eu
+                    for raw in (to + cc + bcc):
+                        nm, addr = _decode_header(raw.rsplit("<", 1)[0] if "<" in raw else raw), \
+                            _eu.parseaddr(raw)[1]
+                        if addr:
+                            store.collected_upsert(session["user_id"], 1,
+                                                   (nm or "").strip() or addr, addr)
+                if mode in ("reply", "replyall", "replylist") and source_msg is not None:
+                    import email.utils as _eu
+                    frm = source_msg.get("From") or ""
+                    nm, addr = _decode_header(frm), _eu.parseaddr(frm)[1]
+                    if addr and str(up.get("collected_senders", "2")) == "2":
+                        store.collected_upsert(session["user_id"], 2, nm or addr, addr)
+            except Exception:
+                pass  # never fail a send over address bookkeeping
             flash("Message sent successfully.", "confirmation")
-            sent = request.form.get("_store_target")
-            if sent == "":  # "do not save"
-                return redirect(url_for("views.mail", _mbox="INBOX"))
-            return redirect(url_for("views.mail", _mbox=box.special("sent") or "INBOX"))
+            if store_target == "":  # "don't save"
+                return redirect(url_for("views.mail", _mbox=box.special("drafts") or "INBOX"))
+            return redirect(url_for("views.mail", _mbox=store_target or box.special("sent") or "INBOX"))
         except MailError as e:
             flash(str(e), "error")
             prefill.update(to=", ".join(to), cc=", ".join(cc), bcc=", ".join(bcc),
                            subject=subject, body=body, html="1" if html else "")
     return render("mail", "compose.html", prefill=prefill, identities=identities,
+                  responses=store.responses(session["user_id"]),
                   folders=folders, mode=mode, uid_of=uid_of,
                   draft_uid=draft_uid, attachments_kept=attachments_kept,
                   keep_formatting=(mode == "edit"))

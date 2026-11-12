@@ -18,6 +18,11 @@
   </span>
   <span class="spacer"></span>
   <a href="#" class="delete disabled" id="tb-delete" title="Delete message"><span class="inner">Delete</span></a>
+  {% if message_view %}
+  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
+     class="print disabled" id="tb-print-direct" title="Print message" target="_blank"
+     data-hidden="small"><span class="inner">Print</span></a>
+  {% endif %}
   <a href="#" class="archive disabled" id="tb-archive" title="Move to the archive folder"><span class="inner">Archive</span></a>
   <a href="#mark" id="markmessagemenulink" class="markmessage" title="Mark messages"
      data-popup="markmessage-menu"><span class="inner">Mark</span></a>
@@ -59,18 +64,42 @@
   <ul class="menu listing" role="menu">
     <li role="menuitem"><a class="print disabled" id="tb-print"
         href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
-        target="_blank"><span>Print</span></a></li>
-    <li role="menuitem"><a class="download disabled" id="tb-export"
-        href="{{ url_for('views.message_export', _mbox=folder, _uid=uid) if message_view else '#' }}"><span>Export</span></a></li>
+        target="_blank"><span>Print this message</span></a></li>
+    {% if not message_view %}
+    <li role="menuitem"><a class="import" href="#" data-popup="uploadform"><span>Import</span></a></li>
+    {% endif %}
+    <li role="menuitem"{{ ' class="with-sublist"'|safe if not message_view }}>
+      <a class="download disabled" id="tb-export"
+        href="{{ url_for('views.message_export', _mbox=folder, _uid=uid, _format='eml') if message_view else '#' }}"><span>Download...</span></a>
+      {% if not message_view %}
+      <a class="button icon dropdown" role="button" href="#download" data-popup="download-menu"
+         title="Export"><span class="voice">Download options</span></a>
+      {% endif %}
+    </li>
     <li role="menuitem"><a class="edit asnew disabled" data-mode="edit"
         href="{{ url_for('views.compose', _mode='edit') }}"><span>Edit as new</span></a></li>
     <li role="menuitem"><a class="source disabled" id="tb-source"
         href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _source=1) if message_view else '#' }}"
-        target="_blank"><span>View source</span></a></li>
+        target="_blank"><span>Show source</span></a></li>
     <li role="menuitem"><a class="move disabled" id="tb-move" href="#move"
         data-popup="moveto-menu"><span>Move to...</span></a></li>
     <li role="menuitem"><a class="copy disabled" id="tb-copy" href="#copy"
         data-popup="copyto-menu"><span>Copy to...</span></a></li>
+    <li role="menuitem"><a class="extwin disabled" id="tb-extwin"
+        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid) if message_view else '#' }}"
+        target="_blank"><span>Open in new window</span></a></li>
+  </ul>
+</div>
+
+<div id="download-menu" class="popupmenu">
+  <h2 class="voice">Export</h2>
+  <ul class="menu listing" role="menu">
+    <li role="menuitem"><a class="download eml" id="dl-eml" href="#"
+        data-dlfmt="eml"><span>Source (.eml)</span></a></li>
+    <li role="menuitem"><a class="download mbox" id="dl-mbox" href="#"
+        data-dlfmt="mbox"><span>Mbox format (.zip)</span></a></li>
+    <li role="menuitem"><a class="download maildir" id="dl-maildir" href="#"
+        data-dlfmt="maildir"><span>Maildir format (.zip)</span></a></li>
   </ul>
 </div>
 

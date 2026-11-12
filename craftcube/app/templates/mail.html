@@ -17,7 +17,7 @@
           {% for f in folders %}
           <li class="mailbox{{ ' ' ~ f.special if f.special }}{{ ' selected' if f.name == folder }}"
               role="treeitem" aria-level="1" data-name="{{ f.name }}">
-            <a href="{{ url_for('views.mail', _mbox=f.name) }}">{{ f.name if '/' not in f.name else f.name.split('/')|last }}</a>
+            <a href="{{ url_for('views.mail', _mbox=f.name) }}">{{ f.display }}</a>
             {% if f.unseen %}<span class="unreadcount">{{ f.unseen }}</span>{% endif %}
           </li>
           {% endfor %}
@@ -41,10 +41,12 @@
       <div id="messagelist-header" class="header">
         <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
         <a class="button icon back-sidebar-button folders" href="#sidebar"><span class="inner">Folders</span></a>
-        <span class="header-title">{{ folder }}</span>
+        <span class="header-title">{{ folder_title }}</span>
         <div class="toolbar menu" role="toolbar">
           <a href="#select" class="select{{ ' disabled' if not listing.items }}" title="Select"
              data-popup="listselect-menu"><span class="inner">Select</span></a>
+          <a href="#threads" class="threads{{ ' disabled' if not listing.items }}" title="Threads"
+             data-popup="threadselect-menu"><span class="inner">Threads</span></a>
           <a href="#list-options" class="options active" title="Options"
              data-popup="listoptions-menu"><span class="inner">Options</span></a>
         </div>
@@ -77,13 +79,26 @@
           {% set mods = search_mods or ['subject','from','to','body'] %}
           <ul class="proplist">
             <li><label><input type="checkbox" name="_sm" value="subject" form="rcmqsearchform"{{ ' checked' if 'subject' in mods }}> Subject</label></li>
-            <li><label><input type="checkbox" name="_sm" value="from" form="rcmqsearchform"{{ ' checked' if 'from' in mods }}> From</label></li>
-            <li><label><input type="checkbox" name="_sm" value="replyto" form="rcmqsearchform"{{ ' checked' if 'replyto' in mods }}> Reply-to</label></li>
-            <li><label><input type="checkbox" name="_sm" value="followupto" form="rcmqsearchform"{{ ' checked' if 'followupto' in mods }}> Follow-up-to</label></li>
-            <li><label><input type="checkbox" name="_sm" value="to" form="rcmqsearchform"{{ ' checked' if 'to' in mods }}> To</label></li>
-            <li><label><input type="checkbox" name="_sm" value="cc" form="rcmqsearchform"{{ ' checked' if 'cc' in mods }}> Cc</label></li>
-            <li><label><input type="checkbox" name="_sm" value="bcc" form="rcmqsearchform"{{ ' checked' if 'bcc' in mods }}> Bcc</label></li>
+            <li class="with-sublist">
+              <label><input type="checkbox" name="_sm" value="sender" form="rcmqsearchform"{{ ' checked' if 'sender' in mods or 'from' in mods or 'replyto' in mods or 'followupto' in mods }}> Sender</label>
+              <a class="button icon dropdown" role="button" href="#" title="Details"></a>
+              <ul class="proplist d-none">
+                <li><label><input type="checkbox" name="_sm" value="from" form="rcmqsearchform"{{ ' checked' if 'from' in mods }}> From</label></li>
+                <li><label><input type="checkbox" name="_sm" value="replyto" form="rcmqsearchform"{{ ' checked' if 'replyto' in mods }}> Reply-to</label></li>
+                <li><label><input type="checkbox" name="_sm" value="followupto" form="rcmqsearchform"{{ ' checked' if 'followupto' in mods }}> Follow-up-to</label></li>
+              </ul>
+            </li>
+            <li class="with-sublist">
+              <label><input type="checkbox" name="_sm" value="recipient" form="rcmqsearchform"{{ ' checked' if 'to' in mods or 'cc' in mods or 'bcc' in mods }}> Recipient</label>
+              <a class="button icon dropdown" role="button" href="#" title="Details"></a>
+              <ul class="proplist d-none">
+                <li><label><input type="checkbox" name="_sm" value="to" form="rcmqsearchform"{{ ' checked' if 'to' in mods }}> To</label></li>
+                <li><label><input type="checkbox" name="_sm" value="cc" form="rcmqsearchform"{{ ' checked' if 'cc' in mods }}> Cc</label></li>
+                <li><label><input type="checkbox" name="_sm" value="bcc" form="rcmqsearchform"{{ ' checked' if 'bcc' in mods }}> Bcc</label></li>
+              </ul>
+            </li>
             <li><label><input type="checkbox" name="_sm" value="body" form="rcmqsearchform"{{ ' checked' if 'body' in mods }}> Body</label></li>
+            <li><label><input type="checkbox" name="_sm" value="text" form="rcmqsearchform"{{ ' checked' if 'text' in mods }}> Text</label></li>
           </ul>
           <div class="input-group">
             <div class="input-group-prepend">
@@ -152,8 +167,9 @@
             </thead>
             <tbody>
               {% for m in listing['items'] %}
-              <tr class="message{{ ' selected' if preview_uid == m.uid|string }}{{ ' unread' if not m.seen }}{{ ' flagged' if m.flagged }}{{ ' deleted' if m.deleted }}"
-                  data-uid="{{ m.uid }}" data-box="{{ m.folder or folder }}">
+              <tr class="message{{ ' selected' if preview_uid == m.uid|string }}{{ ' unread' if not m.seen }}{{ ' flagged' if m.flagged }}{{ ' deleted' if m.deleted }}{{ ' thread-child' if list_mode == 'threads' and m.depth }}{{ ' thread-root' if list_mode == 'threads' }}"
+                  data-uid="{{ m.uid }}" data-box="{{ m.folder or folder }}"
+                  {% if list_mode == 'threads' %}data-depth="{{ m.depth }}"{% endif %}>
                 <td class="selection"><input type="checkbox" name="_uids[]" value="{{ m.uid }}" tabindex="-1"></td>
                 <td class="subject" tabindex="0">
                   <span class="fromto skip-on-drag"><span class="adr"><span class="rcmContactAddress">{{ m.fromto }}</span></span></span>
@@ -211,8 +227,12 @@
       </div>
       <h2 id="aria-label-mailpreviewframe" class="voice">Message preview</h2>
       <div class="iframe-wrapper">
+        {# 'Mark messages as read' pref: 0 immediately, N>0 after N seconds
+           (client schedules the flag), -1 never in preview. #}
+        {% set rt = (g.prefs or {}).get('mail_read_time', '0')|string %}
         <iframe id="messagecontframe" name="messagecontframe" title="Message preview"
-                src="{{ url_for('views.message_view', _mbox=folder, _uid=preview_uid, _framed=1) if preview_uid else 'about:blank' }}"></iframe>
+                data-read-time="{{ rt }}" data-folder="{{ folder }}"
+                src="{{ url_for('views.message_view', _mbox=folder, _uid=preview_uid, _framed=1, _noseen=1 if rt != '0' else none) if preview_uid else 'about:blank' }}"></iframe>
       </div>
     </div>
 
@@ -243,7 +263,7 @@
     <div id="listoptions-menu" class="popupmenu propform" role="dialog">
       <h3 class="voice">Message list options</h3>
       <div class="form-group row">
-        <label for="listoptions-sortcol" class="col-form-label col-sm-4">Sort by</label>
+        <label for="listoptions-sortcol" class="col-form-label col-sm-4">Sorting column</label>
         <div class="col-sm-8">
           <select id="listoptions-sortcol" name="sort_col" onchange="cc_apply_list_options()">
             <option value=""{{ ' selected' if sort == '' }}>No sorting</option>
@@ -259,7 +279,7 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="listoptions-sortord" class="col-form-label col-sm-4">Order</label>
+        <label for="listoptions-sortord" class="col-form-label col-sm-4">Sorting order</label>
         <div class="col-sm-8">
           <select id="listoptions-sortord" name="sort_ord" onchange="cc_apply_list_options()">
             <option value="ASC"{{ ' selected' if order == 'asc' }}>Ascending</option>
@@ -267,6 +287,24 @@
           </select>
         </div>
       </div>
+      <div class="form-group row">
+        <label for="listoptions-threads" class="col-form-label col-sm-4">List mode</label>
+        <div class="col-sm-8">
+          <select id="listoptions-threads" name="mode" onchange="cc_apply_list_options()">
+            <option value="list"{{ ' selected' if list_mode != 'threads' }}>List</option>
+            <option value="threads"{{ ' selected' if list_mode == 'threads' }}>Threads</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="threadselect-menu" class="popupmenu">
+      <h3 class="voice">Threads</h3>
+      <ul class="menu listing" role="menu">
+        <li role="menuitem"><a class="expand unread" href="#" data-thread="unread"><span>Expand Unread</span></a></li>
+        <li role="menuitem"><a class="expand all" href="#" data-thread="all"><span>Expand All</span></a></li>
+        <li role="menuitem"><a class="collapse all" href="#" data-thread="none"><span>Collapse All</span></a></li>
+      </ul>
     </div>
 
     <div id="mailboxoptions-menu" class="popupmenu">
@@ -277,6 +315,31 @@
         <li role="menuitem"><a class="read" href="#" data-act="markallread">Mark all as read</a></li>
         <li role="menuitem"><a class="folders" href="{{ url_for('views.folders_view') }}">Manage folders</a></li>
       </ul>
+    </div>
+
+    <!-- message import (Elastic uploadform) -->
+    <div id="uploadform" class="popupmenu formcontent">
+      <form method="post" action="{{ url_for('views.message_import') }}" enctype="multipart/form-data">
+        <input type="hidden" name="_mbox" value="{{ folder }}">
+        <div class="form-group">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="import-mime" name="_format" value="MIME" class="custom-control-input" checked>
+            <label class="custom-control-label" for="import-mime">MIME</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="import-mbox" name="_format" value="Mbox" class="custom-control-input">
+            <label class="custom-control-label" for="import-mbox">Mbox</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text btn btn-primary icon upload">
+              <span class="inner">Choose files...</span>
+              <input type="file" name="_file" class="local-upload">
+            </span>
+          </div>
+        </div>
+      </form>
     </div>
 
 {% include "includes/footer.html" %}

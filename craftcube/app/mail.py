@@ -305,6 +305,47 @@ def _decode_header(value):
     return "".join(out)
 
 
+def thread_messages(msgs):
+    """Group messages into threads the way IMAP SORT=REFERENCES does: a message
+    joins the thread of the message whose Message-ID it references; a thread is
+    ordered by the sort position of its earliest message, messages within a
+    thread by date (oldest first)."""
+    mid_idx = {}
+    for i, m in enumerate(msgs):
+        if m.get("mid") and m["mid"] not in mid_idx:
+            mid_idx[m["mid"]] = i
+    # union-find over message indexes
+    parent = list(range(len(msgs)))
+
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    def union(a, b):
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            parent[max(ra, rb)] = min(ra, rb)
+
+    for i, m in enumerate(msgs):
+        for ref in m.get("refs") or []:
+            j = mid_idx.get(ref)
+            if j is not None:
+                union(i, j)
+    groups = {}
+    for i in range(len(msgs)):
+        groups.setdefault(find(i), []).append(i)
+    out = []
+    # thread rank = best (first) position of any of its messages in the sorted list
+    for root, idxs in sorted(groups.items(), key=lambda kv: min(kv[1])):
+        idxs.sort(key=lambda i: msgs[i]["date"].timestamp() if msgs[i].get("date") else 0)
+        for depth, i in enumerate(idxs):
+            msgs[i]["depth"] = depth
+        out.extend(msgs[i] for i in idxs)
+    return out
+
+
 class Mailbox:
     """High-level mail API used by the views."""
 
@@ -348,7 +389,7 @@ class Mailbox:
 
     def message_list(self, folder, page=1, page_size=20, sort="date", order="desc",
                      search=None, search_mods=None, search_filter="all",
-                     search_interval="all", search_scope="base"):
+                     search_interval="all", search_scope="base", threads=False):
         if search_scope == "all":
             return self._search_all_folders(page, page_size, sort, order, search,
                                             search_mods, search_filter, search_interval)
@@ -362,10 +403,11 @@ class Mailbox:
                 for m in d["items"]:
                     m["folder"] = name
                 merged.extend(d["items"])
-            return self._paginate(merged, page, page_size, sort, order)
+            return self._paginate(merged, page, page_size, sort, order,
+                                  threads=threads)
         return self._list_one(folder, page_size, search, search_mods,
                               search_filter, search_interval, page=page,
-                              sort=sort, order=order)
+                              sort=sort, order=order, threads=threads)
 
     def _search_criteria(self, search, mods, search_filter, search_interval):
         crit = []
@@ -414,22 +456,26 @@ class Mailbox:
 
     def _list_one(self, folder, page_size, search=None, mods=None,
                   search_filter="all", search_interval="all", page=1,
-                  sort="date", order="desc"):
+                  sort="date", order="desc", threads=False):
         total = self.imap.select(folder, readonly=True)
         crit = self._search_criteria(search, mods, search_filter, search_interval)
         uids = self.imap.uid_search(crit)
         MAX_SCAN = 400
         window = uids[-MAX_SCAN:]
         msgs = self._enrich(folder, window)
-        return self._paginate(msgs, page, page_size, sort, order, uidvalidity=total)
+        return self._paginate(msgs, page, page_size, sort, order, uidvalidity=total,
+                              threads=threads)
 
-    def _paginate(self, msgs, page, page_size, sort, order, uidvalidity=0):
+    def _paginate(self, msgs, page, page_size, sort, order, uidvalidity=0,
+                  threads=False):
         key, _asc = SORTS.get(sort, SORTS["date"])
         reverse = order != "asc"
         try:
             msgs.sort(key=key, reverse=reverse)
         except TypeError:
             msgs.sort(key=lambda m: str(key(m)), reverse=reverse)
+        if threads:
+            msgs = thread_messages(msgs)
         pages = max(1, (len(msgs) + page_size - 1) // page_size) if page_size else 1
         page = max(1, min(page, pages))
         start = (page - 1) * (page_size or len(msgs) or 1)
@@ -466,7 +512,7 @@ class Mailbox:
         seq = ",".join(str(u) for u in uids)
         typ, data = self.imap.conn.uid(
             "FETCH", seq,
-            "(FLAGS INTERNALDATE RFC822.SIZE BODYSTRUCTURE BODY.PEEK[HEADER.FIELDS (FROM TO CC SUBJECT DATE MESSAGE-ID IN-REPLY-TO CONTENT-TYPE)])")
+            "(FLAGS INTERNALDATE RFC822.SIZE BODYSTRUCTURE BODY.PEEK[HEADER.FIELDS (FROM TO CC SUBJECT DATE MESSAGE-ID IN-REPLY-TO REFERENCES CONTENT-TYPE)])")
         out = []
         if typ != "OK":
             return out
@@ -491,6 +537,10 @@ class Mailbox:
             subject = _decode_header(msg.get("Subject", "")) or ""
             in_reply_to = _decode_header(msg.get("In-Reply-To", "") or "") \
                 or _decode_header(msg.get("References", "") or "")
+            mid = _decode_header(msg.get("Message-ID", "") or "").strip()
+            refs = [r.strip() for r in
+                    (msg.get("References", "") or "").replace("\n", " ").split()
+                    if r.strip()]
             info = _envelope_from_message(msg)
             # Elastic shows sender in normal folders, recipients in Sent
             fromto = info["to"] if (sent and folder == sent) else info["from"]
@@ -508,6 +558,9 @@ class Mailbox:
                 "forwarded": subject.lower().lstrip(" \t").startswith(("fwd:", "fw:", "aw:", "wg:")),
                 "subject": subject,
                 "fromto": fromto,
+                "mid": mid,
+                "refs": refs,
+                "reply": bool(in_reply_to.strip()),
                 **{k: v for k, v in info.items() if k not in ("subject",)},
             })
         return out
@@ -547,13 +600,23 @@ class Mailbox:
         self.imap.set_flags(uids, flags, mode=mode)
 
     def delete(self, folder, uids):
+        prefs = getattr(self, "prefs", None) or {}
         trash = self.special("trash")
         self.imap.select(folder)
+        if prefs.get("read_when_deleted"):
+            self.imap.set_flags(uids, ["\\Seen"], mode="add")
+        # 'Directly delete messages in Junk': no trash copy, straight delete
+        if prefs.get("delete_junk") and self.special("junk") == folder:
+            self.imap.set_flags(uids, ["\\Deleted"], mode="add")
+            self.imap.expunge()
+            return
         if trash and trash != folder:
             self.imap.copy(uids, trash)
             self.imap.set_flags(uids, ["\\Deleted"], mode="add")
         else:
             self.imap.set_flags(uids, ["\\Deleted"], mode="add")
+        if prefs.get("flag_for_deletion"):
+            return  # leave \\Deleted flags; the folder is compacted later
         self.imap.expunge()
 
     def move(self, folder, uids, dest):
@@ -587,10 +650,34 @@ class Mailbox:
 
     def archive(self, folder, uids):
         target = self.special("archive")
+        prefs = getattr(self, "prefs", None) or {}
         if not target or target == folder:
             raise MailError("No archive folder configured")
+        # 'Divide archive by' (archive plugin archive_type): subfolder per
+        # year/month; unsupported groupings archive flat like 'None'.
+        atype = prefs.get("archive_type") or ""
+        if atype in ("year", "month", "tbmonth"):
+            date = None
+            try:
+                envs = self.imap.fetch_envelopes([int(uids[0])])
+                if envs:
+                    date = envs[0].get("date")
+            except Exception:
+                date = None
+            if date:
+                y = date.strftime("%Y")
+                m = date.strftime("%m")
+                sub = {"year": y, "month": f"{y}/{m}",
+                       "tbmonth": f"{y}/{y}-{m}"}[atype]
+                target = f"{target}/{sub}"
+                try:
+                    self.imap.create_folder(target)
+                except Exception:
+                    pass
         self.imap.select(folder)
         self.imap.copy(uids, target)
+        if prefs.get("read_on_archive"):
+            self.imap.set_flags(uids, ["\\Seen"], mode="add")
         self.imap.set_flags(uids, ["\\Deleted"], mode="add")
         self.imap.expunge()
         return target
@@ -636,7 +723,9 @@ class Mailbox:
         except (MailError, ValueError, TypeError):
             pass
 
-    def send(self, msg: EmailMessage, raw_bytes):
+    def send(self, msg: EmailMessage, raw_bytes, store_target=None):
+        """Send via SMTP, then store a copy. store_target: None → the Sent
+        special folder, '' → don't store, otherwise that folder."""
         cfg = self
         smtp_user = getattr(self, "smtp_user", None)
         smtp_pass = getattr(self, "smtp_pass", None)
@@ -665,7 +754,9 @@ class Mailbox:
             s.quit()
         except (smtplib.SMTPException, OSError) as e:
             raise MailError(str(e))
-        sent = self.special("sent")
+        if store_target == "":
+            return
+        sent = store_target or self.special("sent")
         if sent:
             try:
                 self.imap.create_folder(sent)
