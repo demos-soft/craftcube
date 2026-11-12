@@ -7,6 +7,8 @@ import re
 from datetime import UTC, datetime, timedelta
 from html.parser import HTMLParser
 
+from . import i18n
+
 # ---------------------------------------------------------------- dates/sizes
 
 def to_local(dt):
@@ -25,20 +27,20 @@ def fmt_date(dt):
         return dt.strftime("%d %b")
     return dt.strftime("%d.%m.%y")
 
-def fmt_list_date(dt):
+def fmt_list_date(dt, lang="en_US"):
     """Roundcube rcmail::format_date() default semantics: today shows
-    'Today <time>' (date_today=time_format), the last 7 days use date_short
-    ('D H:i'), everything older date_long ('Y-m-d H:i')."""
+    '<localized today> <time>' (date_today=time_format), the last 7 days use
+    date_short ('D H:i'), everything older date_long ('Y-m-d H:i')."""
     if dt is None:
         return ""
     dt = to_local(dt)
     now = datetime.now().astimezone()
     if dt.date() == now.date():
-        return "Today " + dt.strftime("%H:%M")
+        return i18n.gettext("today", lang) + " " + dt.strftime("%H:%M")
     week_limit = (now - timedelta(days=6)).replace(hour=0, minute=0,
                                                    second=0, microsecond=0)
     if dt > week_limit:
-        return dt.strftime("%a %H:%M")
+        return i18n.gettext(dt.strftime("%a").lower(), lang) + " " + dt.strftime("%H:%M")
     return dt.strftime("%Y-%m-%d %H:%M")
 
 def fmt_summary_date(dt):
@@ -294,10 +296,10 @@ def fmt_pref_date(dt, prefs):
         if any(c in df for c in "Yydj") and prefs.get("show_pref_time", 1) \
         else base
 
-def list_pref_date(dt, prefs):
+def list_pref_date(dt, prefs, lang="en_US"):
     """Message-list date honouring timezone + time/date format prefs,
-    following rcmail::format_date(): Today / D H:i / date_long. With
-    prettydate off the default format is plain date_long (rcmail.php:1653)."""
+    following rcmail::format_date(): localized Today / D H:i / date_long.
+    With prettydate off the default format is plain date_long."""
     if dt is None:
         return ""
     prefs = prefs or {}
@@ -308,11 +310,11 @@ def list_pref_date(dt, prefs):
     df = prefs.get("date_format", "Y-m-d")
     if prefs.get("pretty_date", 1):
         if dt.date() == now.date():
-            return "Today " + dt.strftime(tfmt)
+            return i18n.gettext("today", lang) + " " + dt.strftime(tfmt)
         week_limit = (now - timedelta(days=6)).replace(hour=0, minute=0,
                                                        second=0, microsecond=0)
         if dt > week_limit:
-            return dt.strftime("%a ") + dt.strftime(tfmt)
+            return i18n.gettext(dt.strftime("%a").lower(), lang) + " " + dt.strftime(tfmt)
     return php_strftime(df, dt) + " " + dt.strftime(tfmt)
 
 def fmt_datetime(dt):

@@ -104,7 +104,8 @@ def create_app(config_overrides=None):
     @app.template_filter("listdate")
     def _listdate(dt):
         prefs = getattr(g, "prefs", None)
-        return util.list_pref_date(dt, prefs) if prefs else util.fmt_list_date(dt)
+        lang = g.get("lang", "en_US")
+        return util.list_pref_date(dt, prefs, lang) if prefs else util.fmt_list_date(dt, lang)
 
     @app.template_filter("summarydate")
     def _summarydate(dt):
