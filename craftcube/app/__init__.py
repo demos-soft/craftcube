@@ -113,6 +113,13 @@ def create_app(config_overrides=None):
     def _size(n):
         return util.human_size(n)
 
+    @app.template_filter("text2html")
+    def _text2html(text):
+        # rcube_text2html: escaped, nl2br, quote blocks, sig span, linkify —
+        # the reference plain-part display pipeline
+        from .converters import text2html
+        return text2html(text)
+
     @app.template_filter("rc_recipient")
     def _rc_recipient(ident):
         # rcube format_email_recipient(email, name)

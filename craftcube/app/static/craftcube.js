@@ -1404,22 +1404,56 @@
   }
 
   // ------------------------------------------------------------ auto refresh
+  // app.js add_callback('check-recent') loop: poll the check_recent XHR and
+  // apply its set_unread_count commands; reload the page only when the
+  // currently viewed folder actually changed (the reference inserts the new
+  // rows into its JS list; our list is server-rendered).
   function initRefresh() {
     var mins = parseInt(document.body.getAttribute('data-refresh-interval') || '0', 10);
     if (!mins || !document.getElementById('messagelist')) return;
+    var listEl = document.getElementById('messagelist');
+    var currentFolder = (listEl && listEl.getAttribute('data-folder')) || '';
     function tick() {
-      var url = new URL(location.href);
-      // Elastic's check_mime_message reloads the list *with* the previewed
-      // message (_uid stays in the request), so the content frame and the
-      // focused row survive the refresh. Dropping _uid here made the opened
-      // message vanish and its row lose focus after one interval.
-      var sel = document.querySelector('#messagelist tr.selected, #messagelist tr.focused');
-      var uid = sel && sel.getAttribute('data-uid');
-      if (uid) url.searchParams.set('_uid', uid);
-      else url.searchParams.delete('_uid');
-      location.href = url.toString();
+      fetch('/mail/check-recent', {headers: {'X-Requested-With': 'XMLHttpRequest'}})
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          var changed = false, inboxPrev = -1, inboxNow = 0;
+          function badge(mbox) {
+            var li = folderLi(mbox);
+            var s = li && li.querySelector('span.unreadcount');
+            return s ? parseInt(s.textContent, 10) || 0 : 0;
+          }
+          inboxPrev = badge('INBOX');
+          var re = /this\.set_unread_count\((.*?)\);/g, m;
+          var text = d.exec || '';
+          while ((m = re.exec(text))) {
+            var args = JSON.parse('[' + m[1] + ']');
+            var mbox = String(args[0]), count = parseInt(args[1], 10) || 0;
+            if (mbox === 'INBOX') inboxNow = count;
+            // reload only when the visible folder's unread count moved
+            if (mbox === currentFolder && folderLi(mbox) && badge(mbox) !== count)
+              changed = true;
+            setUnreadCount(mbox, count, !!args[2]);
+          }
+          if (inboxNow > inboxPrev && window.cc_display) {
+            cc_display(inboxNow - inboxPrev === 1 ? 'You have 1 new message.'
+                   : 'You have ' + (inboxNow - inboxPrev) + ' new messages.', 'info');
+          }
+          if (changed) {
+            var url = new URL(location.href);
+            // Elastic's check_mime_message reloads the list *with* the previewed
+            // message (_uid stays in the request), so the content frame and the
+            // focused row survive the refresh.
+            var sel = document.querySelector('#messagelist tr.selected, #messagelist tr.focused');
+            var uid = sel && sel.getAttribute('data-uid');
+            if (uid) url.searchParams.set('_uid', uid);
+            else url.searchParams.delete('_uid');
+            location.href = url.toString();
+          }
+        })
+        .catch(function () { /* offline session: next tick retries */ });
     }
-    setTimeout(tick, mins * 60000);
+    setInterval(tick, mins * 60000);
     window.cc_refresh_tick = tick; // exposed for tests
   }
 

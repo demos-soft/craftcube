@@ -3,7 +3,9 @@
 One IMAP connection per request (flask.g); credentials come from the login
 form (or the configured admin account when per-user passwords are disabled).
 """
+import calendar
 import contextlib
+import datetime
 import email
 import email.utils
 import hashlib
@@ -55,25 +57,226 @@ SORTS = {
 }
 
 SEARCH_FILTERS = {
-    "all": None,
-    "unread": ["UNSEEN"],
-    "flagged": ["FLAGGED"],
-    "answered": ["ANSWERED"],
-    "unanswered": ["UNANSWERED"],
-    # reference offers these two when skip_deleted is off
-    # (actions/mail/index.php:1551)
-    "deleted": ["DELETED"],
-    "undeleted": ["UNDELETED"],
+    # legacy aliases; the reference passes raw IMAP fragments in _filter
+    # (actions/mail/index.php:1548-1561). Raw values are passed through.
+    "all": "ALL", "unread": "UNSEEN", "flagged": "FLAGGED",
+    "answered": "ANSWERED", "unanswered": "UNANSWERED",
+    "deleted": "DELETED", "undeleted": "UNDELETED",
 }
 
-SEARCH_INTERVALS = {
-    "all": None,
-    "today": ["SINCE"],   # today
-    "last7": ["SINCE"],   # -7d
-    "last14": ["SINCE"],
-    "last30": ["SINCE"],
-    "thismonth": None,    # implemented specially
+# rcube_imap_generic::escape-style quoting for search values is _q() below.
+# IMAP SEARCH token order mirrors program/actions/mail/search.php exactly.
+
+_IS_FLAGS = {
+    "unread": "UNSEEN", "read": "SEEN", "unseen": "UNSEEN", "seen": "SEEN",
+    "flagged": "FLAGGED", "unflagged": "UNFLAGGED", "deleted": "DELETED",
+    "undeleted": "UNDELETED", "answered": "ANSWERED",
+    "unanswered": "UNANSWERED",
 }
+
+# search.php::search_has_attachment()
+_HAS_ATT_TYPES = ["application/", "multipart/mixed", "multipart/signed",
+                  "multipart/report"]
+
+
+def _search_has_attachment():
+    # ltrim(str_repeat(' OR', count($ctypes))) -- i.e. "OR OR OR OR"
+    result = " ".join(["OR"] * len(_HAS_ATT_TYPES))
+    for t in _HAS_ATT_TYPES:
+        result += " HEADER Content-Type " + _q(t)
+    return result + " KEYWORD $HasAttachment NOT KEYWORD $HasNoAttachment"
+
+
+def _parse_bytes(v):
+    # PHP parse_bytes()
+    m = re.match(r"^([0-9.]+)(k|m|g|b|kb|mb|gb)$", v.lower())
+    if not m:
+        return None
+    num = float(m.group(1))
+    unit = m.group(2)[0]
+    mult = {"b": 1, "k": 1024, "m": 1024 * 1024, "g": 1024 ** 3}[unit]
+    return int(num * mult)
+
+
+def _imap_date(d):
+    # DateTime::format('j-M-Y'): day without leading zero
+    return f"{d.day}-{d.strftime('%b')}-{d.year}"
+
+
+def _sub_interval(d, spec):
+    """PHP (new DateTime('now'))->sub(new DateInterval('P' . $spec))."""
+    spec = spec.upper()
+    if not re.fullmatch(r"[0-9]+[A-Z]", spec):
+        return None
+    n, unit = int(spec[:-1]), spec[-1]
+    if unit == "W":
+        return d - datetime.timedelta(weeks=n)
+    if unit == "D":
+        return d - datetime.timedelta(days=n)
+    months = n * (12 if unit == "Y" else 1)
+    y, m = d.year, d.month - 1 - months
+    y, m = y + m // 12, m % 12 + 1
+    day = min(d.day, calendar.monthrange(y, m)[1])
+    return datetime.date(y, m, day)
+
+
+def _search_interval_criteria(interval):
+    # search.php::search_interval_criteria()
+    if not interval:
+        return ""
+    interval = interval.upper()
+    if interval[0] == "-":
+        op, interval = "BEFORE", interval[1:]
+    else:
+        op = "SINCE"
+    d = _sub_interval(datetime.date.today(), interval)
+    if not d:
+        return ""
+    return f"{op} {_imap_date(d)}"
+
+
+def _explode_quoted_string(s, delim=r"\s+"):
+    r"""rcube_utils::explode_quoted_string('\s+', $str)."""
+    res, parts = [], re.split(r'("(?:[^"\\]|\\.)*"|\\$)', s)
+    is_quoted = False
+    tmp = ""
+    for part in parts:
+        if is_quoted:
+            tmp += part
+        else:
+            first = True
+            for v in re.split(delim, part):
+                if first:
+                    tmp += v
+                    first = False
+                else:
+                    res.append(tmp)
+                    tmp = v
+        is_quoted = not is_quoted
+    res.append(tmp)
+    return res
+
+
+def _search_input_option(option, value):
+    """search.php::search_input_option(); returns an IMAP fragment or None."""
+    if not value:
+        return None
+    option = option.lower()
+    escaped = _q(value)
+    if option == "body":
+        return "BODY " + escaped
+    if option == "text":
+        return "TEXT " + escaped
+    if option in ("replyto", "reply-to"):
+        return ("OR HEADER REPLY-TO " + escaped
+                + " HEADER MAIL-REPLY-TO " + escaped)
+    if option in ("followupto", "followup-to"):
+        return ("OR HEADER FOLLOWUP-TO " + escaped
+                + " HEADER MAIL-FOLLOWUP-TO " + escaped)
+    if option in ("larger", "smaller"):
+        if re.search(r"([0-9.]+)(k|m|g|b|kb|mb|gb)", value.lower()):
+            n = _parse_bytes(value)
+            if n is not None:
+                return option.upper() + " " + str(n)
+        return None
+    if option == "is":
+        return _IS_FLAGS.get(value.lower())
+    if option == "has":
+        if value == "attachment":
+            return _search_has_attachment()
+        return None
+    if option in ("older_than", "newer_than", "since", "before"):
+        # PHP switch fall-through: aliases assign option, then share the
+        # since/before body
+        real = {"older_than": "before", "newer_than": "since"}.get(option, option)
+        val = value
+        if re.fullmatch(r"[0-9]+[WMY]", val, re.I):
+            if real == "before":
+                val = "-" + val
+            si = _search_interval_criteria(val.upper())
+            if si:
+                return si
+        else:
+            m = re.match(r"^([0-9]{4})[-/]([0-9]{1,2})[-/]([0-9]{1,2})$", val)
+            if m:
+                d = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+                return real.upper() + " " + _imap_date(d)
+        return None
+    if option in ("subject", "from", "to", "cc", "bcc"):
+        return f"HEADER {option.upper()} {escaped}"
+    return None
+
+
+def _search_input_text(text, headers):
+    """search.php::search_input_text(): OR-chain over the selected fields."""
+    query = []
+    seen = set()
+    for header in headers:
+        imap = _search_input_option(header, text)
+        if imap and header not in seen:
+            seen.add(header)
+            query.append(imap)
+    if not query:
+        return ""
+    return "OR " * (len(query) - 1) + " ".join(query)
+
+
+def _search_value_function(value):
+    value = value.strip()
+    value = re.sub(r'(^"|"$)', "", value)
+    return value.replace('\\"', '"')
+
+
+def _search_input(s, headers="", search_filter="ALL", interval=None):
+    """search.php::search_input() — parse the search box grammar."""
+    headers = [h for h in headers.split(",") if h] if headers else ["subject"]
+    result = search_filter if search_filter and search_filter != "ALL" else ""
+    result = re.sub(r"[\r\n]+", " ", result)
+    s = re.sub(r"[\r\n]+", " ", s)
+    si = _search_interval_criteria(interval)
+    if si:
+        result += " " + si
+    parts = [p for p in _explode_quoted_string(s) if p]
+    for idx, part in enumerate(parts):
+        if part.lower() == "or":
+            parts[idx] = "OR"
+            continue
+        if part.lower() == "and":
+            parts[idx] = "AND"
+            continue
+        not_ = ""
+        m = re.match(r"^(-?[a-zA-Z-]+):(.*)$", part, re.S)
+        if m:
+            option, value = m.group(1), _search_value_function(m.group(2))
+            if option[0] == "-":
+                not_, option = "NOT ", option[1:]
+            imap_query = _search_input_option(option, value)
+            if imap_query:
+                parts[idx] = not_ + imap_query
+                continue
+        if re.match(r'^-".*"$', part, re.S):
+            not_, part = "NOT ", part[1:]
+        imap_query = _search_input_text(_search_value_function(part), headers)
+        if imap_query:
+            parts[idx] = not_ + imap_query
+    # OR/AND keyword assembly (search.php:274-299)
+    keys = list(enumerate(parts))
+    for idx, part in keys:
+        if part == "OR":
+            nxt = parts[idx + 1] if idx + 1 < len(parts) else None
+            if idx == 0 or nxt is None or nxt == "OR":
+                parts[idx] = None
+                continue
+            parts[idx] = None
+            for index in range(idx - 1, -1, -1):
+                if parts[index] is not None:
+                    parts[index] = "OR " + parts[index]
+                    break
+        elif part == "AND":
+            parts[idx] = None
+    parts = [p for p in parts if p]
+    result = (result + " " + " ".join(parts)).strip()
+    return "" if result == "ALL" else result
 
 
 
@@ -84,12 +287,17 @@ class MailError(Exception):
 class Imap:
     """Thin, stateless wrapper around one IMAP connection."""
 
+    # reference rcube imap connect/read timeouts: a stalled server must
+    # never wedge a sync worker (imaplib defaults to timeout=None -> hang)
+    SOCK_TIMEOUT = 30
+
     def __init__(self, host, port, user, password, use_ssl=False):
         try:
             if use_ssl:
-                self.conn = imaplib.IMAP4_SSL(host, port, ssl_context=_ssl.create_default_context())
+                self.conn = imaplib.IMAP4_SSL(host, port, timeout=self.SOCK_TIMEOUT,
+                                              ssl_context=_ssl.create_default_context())
             else:
-                self.conn = imaplib.IMAP4(host, port)
+                self.conn = imaplib.IMAP4(host, port, timeout=self.SOCK_TIMEOUT)
                 with contextlib.suppress(imaplib.IMAP4.error):
                     # server without STARTTLS (local dev)
                     self.conn.starttls()
@@ -235,6 +443,29 @@ class Imap:
         if typ != "OK":
             return []
         return [int(x) for x in (data[0].split() if data and data[0] else [])]
+
+    def uid_sort(self, keys="(ARRIVAL)", criteria="ALL"):
+        """RFC 5256 UID SORT (ascending UIDs); raises MailError if unsupported.
+
+        imaplib routes the untagged '* SORT 1 2 3' line into
+        untagged_responses, so check there before the (usually empty) data."""
+        self.conn.untagged_responses.pop("SORT", None)
+        typ, data = self.conn.uid("SORT", keys, "UTF-8", criteria)
+        raw = None
+        untagged = self.conn.untagged_responses.pop("SORT", None)
+        if untagged:
+            raw = untagged[0]
+        elif data and data[0] not in (None, ""):
+            raw = data[0]
+        if typ != "OK" or raw is None:
+            raise MailError("IMAP SORT failed")
+        if isinstance(raw, bytes):
+            raw = raw.decode("ascii", "replace")
+        raw = raw.split("SORT", 1)[-1] if raw.strip().startswith("SORT") else raw
+        try:
+            return [int(x) for x in raw.split()]
+        except ValueError:
+            raise MailError("IMAP SORT failed")
 
     # ------------------------------------------------------------ messages
 
@@ -519,55 +750,21 @@ class Mailbox:
                               sort=sort, order=order, threads=threads)
 
     def _search_criteria(self, search, mods, search_filter, search_interval):
-        crit = []
-        if search_filter and search_filter != "all":
-            crit += SEARCH_FILTERS.get(search_filter) or []
-        elif (getattr(self, "prefs", None) or {}).get("skip_deleted") \
-                and search_filter in (None, "", "all"):
+        # legacy short filter names map to the reference's raw IMAP values
+        f = SEARCH_FILTERS.get(search_filter, search_filter) if search_filter else None
+        # legacy interval names (pre-1.7 RFC-interval select) map to RC values
+        interval = search_interval
+        if interval == "all":
+            interval = ""
+        crit = _search_input(search or "", ",".join(mods) if mods else "",
+                             f or "ALL", interval or None)
+        if (getattr(self, "prefs", None) or {}).get("skip_deleted") \
+                and (f or "ALL") in ("ALL",):
             # rcube_imap::search adds UNDELETED to every listing when the
             # skip_deleted pref is on (rcube_imap.php:1500); an explicit
             # filter (e.g. 'deleted') wins over the pref
-            crit += ["UNDELETED"]
-        if search_interval and search_interval != "all":
-            import datetime
-            today = datetime.date.today()
-            if search_interval == "today":
-                since = today
-            elif search_interval == "thismonth":
-                since = today.replace(day=1)
-            else:
-                days = {"last7": 7, "last14": 14, "last30": 30}.get(search_interval, 7)
-                since = today - datetime.timedelta(days=days)
-            crit += ["SINCE", since.strftime("%d-%b-%Y")]
-        if search:
-            mods = mods or ["subject", "from", "to", "body"]
-            fields = {"subject": "SUBJECT", "from": "FROM", "to": "TO",
-                      "cc": "CC", "body": "BODY", "text": "TEXT"}
-            # header-based modifiers: HEADER "<name>" (Elastic offers all of these)
-            headers = {"replyto": "Reply-To", "followupto": "Followup-To",
-                       "bcc": "Bcc", "sender": "Sender"}
-            terms = []
-            for mod in mods:
-                if mod in headers:
-                    terms.append(["HEADER", _q(headers[mod]), _q(search)])
-                    continue
-                f = fields.get(mod)
-                if f and [f, _q(search)] not in terms:
-                    terms.append([f, _q(search)])
-            if not terms:
-                terms = [["TEXT", _q(search)]]
-            # interleaved right-associated OR chain:
-            # OR SUBJECT "x" OR FROM "x" OR TO "x" BODY "x"
-            if len(terms) > 1:
-                chain = []
-                for idx, pair in enumerate(terms):
-                    if idx < len(terms) - 1:
-                        chain.append("OR")
-                    chain += pair
-                crit += chain
-            else:
-                crit += terms[0]
-        return crit or ["ALL"]
+            crit = (crit + " UNDELETED").strip()
+        return crit or "ALL"
 
     def _list_one(self, folder, page_size, search=None, mods=None,
                   search_filter="all", search_interval="all", page=1,
@@ -578,17 +775,33 @@ class Mailbox:
         MAX_SCAN = 400
         window = uids[-MAX_SCAN:]
         msgs = self._enrich(folder, window)
-        return self._paginate(msgs, page, page_size, sort, order, uidvalidity=total,
-                              threads=threads)
+        # message_sort_col='' (default) -> rcube_imap_generic::sort() defaults to
+        # IMAP ARRIVAL (actual receive time; not derivable from Date/UID order)
+        try:
+            arr = self.imap.uid_sort("(ARRIVAL)")
+        except MailError:
+            arr = []
+        pos = {u: i for i, u in enumerate(arr)}
+        for m in msgs:
+            m["_arrival"] = pos.get(m["uid"], len(pos))
+        return self._paginate(msgs, page, page_size, sort or "arrival", order,
+                              uidvalidity=total, threads=threads)
 
     def _paginate(self, msgs, page, page_size, sort, order, uidvalidity=0,
                   threads=False):
-        key, _asc = SORTS.get(sort, SORTS["date"])
-        reverse = order != "asc"
-        try:
-            msgs.sort(key=key, reverse=reverse)
-        except TypeError:
-            msgs.sort(key=lambda m: str(key(m)), reverse=reverse)
+        if sort in ("arrival", "", None):
+            # arrival ranks assigned at fetch time (IMAP SORT ARRIVAL)
+            msgs.sort(key=lambda m: m.get("_arrival", 0))
+        else:
+            key, _asc = SORTS.get(sort, SORTS["date"])
+            # dovecot SORT breaks ties by message order ~ arrival; mirror that
+            def _k(m):
+                return (key(m), m.get("_arrival", 0))
+            try:
+                msgs.sort(key=_k, reverse=order != "asc")
+            except TypeError:
+                msgs.sort(key=lambda m: (str(_k(m)[0]), _k(m)[1]),
+                          reverse=order != "asc")
         if threads:
             msgs = thread_messages(msgs)
         pages = max(1, (len(msgs) + page_size - 1) // page_size) if page_size else 1

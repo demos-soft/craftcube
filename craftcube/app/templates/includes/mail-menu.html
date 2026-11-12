@@ -21,21 +21,20 @@
   <span class="spacer"></span>
   <a href="#" class="delete{{ dis }}" id="tb-delete" data-act="delete" title="{{ 'Delete message'|lc }}"><span class="inner">{{ 'Delete'|lc }}</span></a>
   {% if message_view %}
-  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
-     class="print{{ dis }}" id="tb-print-direct" title="Print message" target="_blank"
-     data-hidden="small"><span class="inner">{{ 'Print'|lc }}</span></a>
+  {# reference reader: Print sits in the main toolbar (more menu has none) #}
+  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) }}" class="print{{ dis }}" id="tb-print-message"
+     title="{{ 'Print this message'|lc }}" target="_blank">{{ 'Print'|lc }}</a>
   {% endif %}
-  <a href="#" class="archive{{ dis }}" id="tb-archive" data-act="archive" title="Move to the archive folder"><span class="inner">Archive</span></a>
   <a href="#mark" id="markmessagemenulink" class="markmessage" title="{{ 'Mark messages'|lc }}"
      data-popup="markmessage-menu"><span class="inner">{{ 'Mark'|lc }}</span></a>
   <a href="#more" id="messagemenulink" class="more" title="{{ 'More actions...'|lc }}"
      data-popup="message-menu"><span class="inner">{{ 'More'|lc }}</span></a>
   {% if message_view %}
-  <span class="spacer"></span>
-  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=prev_uid, _framed=framed, _extwin=1 if extwin else none) if prev_uid else '#' }}"
-     class="prev{{ ' disabled' if not prev_uid }}" id="tb-prev" title="Previous message"><span class="inner">{{ 'Previous'|lc }}</span></a>
-  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=next_uid, _framed=framed, _extwin=1 if extwin else none) if next_uid else '#' }}"
-     class="next{{ ' disabled' if not next_uid }}" id="tb-next" title="Next message"><span class="inner">{{ 'Next'|lc }}</span></a>
+  {# reference action-show toolbar ends with prev/next (classes 'prev'/'next') #}
+  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=prev_uid) if prev_uid else '#' }}"
+     class="prev{{ '' if prev_uid else ' disabled' }}" title="{{ 'Show previous message'|lc }}"><span class="inner">{{ 'Previous'|lc }}</span></a>
+  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=next_uid) if next_uid else '#' }}"
+     class="next{{ '' if next_uid else ' disabled' }}" title="{{ 'Show next message'|lc }}"><span class="inner">{{ 'Next'|lc }}</span></a>
   {% endif %}
 </div>
 
@@ -66,23 +65,25 @@
 <div id="message-menu" class="popupmenu">
   <h3 id="aria-label-message-menu" class="voice">{{ 'More message actions'|lc }}</h3>
   <ul class="menu listing" role="menu" aria-labelledby="aria-label-message-menu">
+    {% if not message_view %}
     <li role="menuitem"><a class="print{{ dis }}" id="tb-print"
         href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
         target="_blank"><span>{{ 'Print this message'|lc }}</span></a></li>
+    {% endif %}
     {% if not message_view %}
     <li role="menuitem"><a class="import" href="#" data-popup="uploadform"><span>{{ 'Import'|lc }}</span></a></li>
     {% endif %}
-    {# like Roundcube: the export items come from the zipdownload plugin #}
-    {% if plugin_enabled('zipdownload') %}
-    <li role="menuitem"{{ ' class="with-sublist"'|safe if not message_view }}>
-      <a class="download{{ dis }}" id="tb-export"
-        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _save=1) if message_view else '#' }}"><span>{{ 'Download'|lc }}</span></a>
-      {% if not message_view %}
+    {# reference elastic core mail-menu: 'download' command labelled 'Export',
+       present unconditionally in both list and message More menus; the
+       zipdownload plugin supplies the export submenu in list view #}
+    <li role="menuitem"{{ ' class="with-sublist"'|safe if not message_view and plugin_enabled('zipdownload') }}>
+      <a class="download{{ dis }}" id="tb-export" aria-haspopup="true"
+        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _save=1) if message_view else '#download' }}"><span>{{ 'Export'|lc }}...</span></a>
+      {% if not message_view and plugin_enabled('zipdownload') %}
       <a class="button icon dropdown" role="button" href="#download" data-popup="download-menu"
          title="{{ 'Export'|lc }}"><span class="voice">Download options</span></a>
       {% endif %}
     </li>
-    {% endif %}
     <li role="menuitem"><a class="edit asnew{{ dis }}" data-mode="edit"
         href="{{ url_for('views.compose', _mode='edit') }}"><span>{{ 'Edit as new'|lc }}</span></a></li>
     <li role="menuitem"><a class="source{{ dis }}" id="tb-source"

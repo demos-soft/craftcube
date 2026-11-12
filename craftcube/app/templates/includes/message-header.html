@@ -6,16 +6,33 @@
                href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _extwin=1) }}"><span class="inner">{{ 'Open in new window'|lc }}</span></a>
             {% endif %}
           </h2>
+          {% macro adr_links(addrs) %}
+          {%- set se = (g.prefs or {}).get('message_show_email') -%}
+          {%- for n, a in addrs -%}
+          <span class="adr"><a href="{{ url_for('views.compose', _to=a) }}" class="rcmContactAddress"
+                title="{{ a }}">{{ (n ~ ' <' ~ a ~ '>') if se and n and n != a else (n if n else a) }}</a><a href="{{ url_for('views.contact_edit', _email=a) }}" title="{{ 'Add to address book'|lc }}" class="rcmaddcontact"></a></span>{% if not loop.last %}, {% endif %}
+          {%- endfor -%}
+          {% endmacro %}
           <div class="header">
-            <img src="{{ url_for('static', filename='images/contactpic.svg') }}"
-                 alt="Contact photo" class="contactphoto">
+            <img src="{{ photo_src }}"
+                 onerror="this.onerror=null;this.src='{{ url_for('static', filename='images/contactpic.svg') }}';"
+                 alt="" class="contactphoto">
             <div class="header-content">
-              <div class="header-summary"><span>{{ 'From'|lc }} <span class="adr"><a href="mailto:{{ sender[0][1] if sender else '' }}"
-                    class="rcmContactAddress" title="{{ sender[0][1] if sender else '' }}">{% set se = (g.prefs or {}).get('message_show_email') %}{{ (sender[0][0] ~ ' <' ~ sender[0][1] ~ '>') if se and sender and sender[0][0] and sender[0][1] and sender[0][0] != sender[0][1] else (sender[0][0] if sender and sender[0][0] else (sender[0][1] if sender else '')) }}</a></span> on <span class="text-nowrap">{{ date|summarydate }}</span></span></div>
+              <div class="header-summary">
+                {% if not has_from %}
+                <span>{{ 'On'|lc }} <span class="text-nowrap">{{ date|summarydate }}</span></span>
+                {% else %}
+                <span>{{ 'From'|lc }} {{ adr_links(from_addr or sender) }} {{ 'on'|lc }} <span class="text-nowrap">{{ date|summarydate }}</span></span>
+                {% endif %}
+              </div>
               <table class="header-headers"><tbody>
-                {% for h, v in headers if h not in ('Subject',) %}
-                <tr><td class="header-title">{{ h }}</td><td class="header {{ h|lower|replace('-','') }}">{{ v }}</td></tr>
-                {% endfor %}
+                {% if has_from %}
+                {% if from_addr %}<tr><td class="header-title">{{ 'From'|lc }}</td><td class="header from">{{ adr_links(from_addr) }}</td></tr>{% endif %}
+                {% if to_addr %}<tr><td class="header-title">{{ 'To'|lc }}</td><td class="header to">{{ adr_links(to_addr) }}</td></tr>{% endif %}
+                {% if cc_addr %}<tr><td class="header-title">{{ 'Cc'|lc }}</td><td class="header cc">{{ adr_links(cc_addr) }}</td></tr>{% endif %}
+                {% if replyto_addr %}<tr><td class="header-title">{{ 'Reply-To'|lc }}</td><td class="header replyto">{{ adr_links(replyto_addr) }}</td></tr>{% endif %}
+                {% endif %}
+                <tr><td class="header-title">{{ 'Date'|lc }}</td><td class="header date">{{ date_short }}</td></tr>
               </tbody></table>
               <div class="header-links">
                 <a href="#" class="headers-summary" id="hdr-toggle">{{ 'Details'|lc }}</a>

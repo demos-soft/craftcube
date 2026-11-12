@@ -4,13 +4,20 @@
             {% if attachments %}
             <ul class="attachmentslist" id="attachment-list">
               {% for a in attachments %}
-              <li class="message-attachment aria">
-                <a class="filename" href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part) }}">{{ a.filename }}</a>
-                <span class="size">{{ a.size|size }}</span>
+              {# reference rcube_html attachment item: li class is the
+                 content-type pair ('image png'), spans carry name+size #}
+              <li class="{{ a.ctype.replace('/', ' ') }}" id="attach{{ a.part }}">
+                <a class="filename" title=""
+                   href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part) }}"><span class="attachment-name">{{ a.filename }}</span><span class="attachment-size">(~{{ a.size|size }})</span></a>
               </li>
               {% endfor %}
             </ul>
-            <a class="zipdownload" href="{{ url_for('views.message_export', _mbox=folder, _uid=uid) }}">Download all</a>
+            {% if plugin_enabled('zipdownload') and attachments|length > 1 %}
+            {# reference zipdownload plugin: link appears only with more than
+               zipdownload_attachments (1) attachments; href is the plugin
+               action, not the eml export #}
+            <a class="button zipdownload" href="{{ url_for('views.plugin_action', name='zipdownload', action='attachments', _mbox=folder, _uid=uid) }}">Download all</a>
+            {% endif %}
             {% endif %}
           </div>
           <div class="rightcol" role="region" aria-labelledby="aria-label-messagebody">
@@ -28,7 +35,10 @@
                 {% if kind == 'html' %}
                 <div class="message-htmlpart"><div class="rcmBody">{{ body|safe }}</div></div>
                 {% else %}
-                <div class="message-part"><div class="pre">{{ body }}</div></div>
+                {# reference: the plain part arrives pre-converted by
+                   rcube_text2html (escaped, nl2br, quotes, sig span, links)
+                   as '<div class="pre">..</div>' inside .message-part #}
+                <div class="message-part" id="message-part{{ loop.index }}">{{ body|text2html|safe }}</div>
                 {% endif %}
               {% endfor %}
               {# reference (show.php:714): image attachments as thumbnails

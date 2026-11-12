@@ -29,9 +29,23 @@ from flask import (
 
 from . import compose_wash, i18n, prefs_data, prefs_sections, util
 from .auth import hash_password, verify_password
-from .mail import Imap, Mailbox, MailError, _decode_header, build_message, wire_bytes
+from .mail import (
+    SEARCH_FILTERS,
+    Imap,
+    Mailbox,
+    MailError,
+    _decode_header,
+    _search_has_attachment,
+    build_message,
+    wire_bytes,
+)
 from .plugins import get_api
 from .store import _UNSET
+
+
+def mail_mods_norm(v):
+    """Legacy short search-filter names -> the reference's raw IMAP values."""
+    return SEARCH_FILTERS.get(v, v) if v else "ALL"
 
 
 def ph(name, args):
@@ -288,20 +302,72 @@ def mail():
     # config/defaults.inc.php: message_sort_col = '' (no explicit column) →
     # Roundcube sorts by arrival (IMAPSORT UID, desc). Not sent-date.
     sort = request.args.get("_sort") or ""
+    # elastic "smart" From/To column: Sent/Drafts (and subfolders) sort by To
+    # (rcmail_action_mail_index::message_list_smart_column_name)
+    if sort == "fromto":
+        _fp = getattr(box, "prefs", None) or {}
+        _pfx = tuple(p for p in (_fp.get("sent_mbox"), _fp.get("drafts_mbox")) if p)
+        sort = ("to" if _pfx and folder.startswith(_pfx) and folder.upper() != "INBOX"
+                else "from")
     order = request.args.get("_sort_order") or "desc"
     search = request.args.get("_q") or ""
+    # search modifiers: reference UI sends _headers (comma list); Craft's SSR
+    # form posts _sm checkboxes. Master checkboxes expand like elastic ui.js
+    # set_searchmod (sender -> from/replyto/followupto, recipient ->
+    # to/cc/bcc, text selects only itself).
     mods = []
-    for m in request.args.getlist("_sm") + (request.args.get("_sm_csv") or "").split(","):
+    for m in (request.args.getlist("_sm")
+              + request.args.getlist("_sm[]")
+              + (request.args.get("_headers") or "").split(",")):
         mods += [x for x in m.split(",") if x]
-    sfilter = request.args.get("_sf") or "all"
-    sinterval = request.args.get("_si") or "all"
-    sscope = request.args.get("_ss") or "base"
+    if "sender" in mods:
+        mods = [m for m in mods if m != "sender"] + ["from", "replyto", "followupto"]
+    if "recipient" in mods:
+        mods = [m for m in mods if m != "recipient"] + ["to", "cc", "bcc"]
+    if "text" in mods:
+        mods = ["text"]
+    mods = list(dict.fromkeys(mods))
+    mods_given = bool(mods)
+    sfilter = (request.args.get("_filter") or request.args.get("_sf") or "ALL")
+    sinterval = (request.args.get("_interval") or request.args.get("_si") or "")
+    if sinterval == "all":  # legacy alias
+        sinterval = ""
+    sscope = (request.args.get("_scope") or request.args.get("_ss") or "base")
+    # rcmail_action_mail_index::search_mods(): '*' default subject+from,
+    # Sent/Drafts folders default to subject+to; user prefs persist per-folder
+    if not mods:
+        prefs_all = getattr(box, "prefs", None) or {}
+        stored = prefs_all.get("search_mods") or {}
+        special = {}
+        for key in ("sent_mbox", "drafts_mbox"):
+            if prefs_all.get(key):
+                special[prefs_all[key]] = ["subject", "to"]
+        eff = stored.get(folder) or stored.get("*") \
+            or special.get(folder) or ["subject", "from"]
+        if isinstance(eff, dict):
+            eff = list(eff.keys())
+        mods = list(eff)
+    if (search and mods_given and sscope != "all" and folder):
+        # search.php::update_search_mods() — persist for this folder only
+        supported = ["subject", "from", "to", "cc", "bcc", "replyto",
+                     "followupto", "body", "text"]
+        keep = [m for m in mods if m in supported]
+        if keep:
+            store = get_store()
+            prefs = dict(store.get_user_prefs(session["user_id"]))
+            stored = prefs.get("search_mods") or {}
+            value = dict.fromkeys(keep, 1)
+            if not (isinstance(stored.get(folder), dict) and stored[folder] == value):
+                stored[folder] = value
+                prefs["search_mods"] = stored
+                store.set_user_pref(session["user_id"], "search_mods", stored)
     fvpref = (getattr(box, "prefs", None) or {}).get("folder_viewmodes") or {}
     folder_viewmode = fvpref.get(folder)
     list_mode = request.args.get("_mode") or (
         folder_viewmode if folder_viewmode in ("list", "threads") else
-        ("threads" if (getattr(box, "prefs", None) or {}).get("viewmode") == "threads" else "list"))
-    searching = bool(search or sfilter != "all" or sinterval != "all")
+        ("list" if (getattr(box, "prefs", None) or {}).get("viewmode") == "list"
+         else "threads"))
+    searching = bool(search or mail_mods_norm(sfilter) != "ALL" or sinterval)
     try:
         pspec = (getattr(box, "prefs", {}).get("mail_pagesize")
                  or getattr(box, "prefs", {}).get("pagesize"))
@@ -327,8 +393,9 @@ def mail():
                   folder_title=folder_label(folder, getattr(box, "prefs", None) or g.get("prefs") or {}),
                   listing=listing,
                   sort=sort, order=order, search=search,
-                  search_mods=mods, search_filter=sfilter,
+                  search_mods=mods, search_filter=mail_mods_norm(sfilter),
                   search_interval=sinterval, search_scope=sscope,
+                  search_has_attachment=_search_has_attachment(),
                   list_mode=list_mode,
                   searching=searching, preview_uid=uid, action="view" if uid else None,
                   quota_used=quota_used, quota_kb=quota_kb,
@@ -569,6 +636,22 @@ def _mdn_request(box, folder, uid, msg):
             "sender": {"mailto": mailto, "string": full}}
 
 
+def _header_date_short(dt):
+    """Reference friendly date used in the collapsed header Date row:
+    'Today 14:25', 'Yesterday 09:12', weekday 'Tue 20:37' within the last
+    week, plain date otherwise (rcube output date() helpers)."""
+    if not dt:
+        return ""
+    from datetime import datetime
+    now = datetime.now(dt.tzinfo) if dt.tzinfo else datetime.now()
+    days = (now.date() - dt.date()).days
+    if days == 0:
+        return "Today " + dt.strftime("%H:%M")
+    if 0 < days < 7:
+        return dt.strftime("%a %H:%M")
+    return dt.strftime("%Y-%m-%d")
+
+
 def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
     try:
         msg = box.get_message(folder, uid, mark_seen=False)
@@ -699,6 +782,8 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
                 remote_blocked = True
             rendered.append(("html", safe))
         else:
+            if p.get_param("format") == "flowed":
+                text = util.unfold_flowed(text, p.get_param("delsp") == "yes")
             rendered.append(("plain", text))
     headers = []
     for h in ("From", "To", "Cc", "Bcc", "Subject", "Date", "Reply-To",
@@ -706,6 +791,22 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
         v = _hdr(msg, h)
         if v:
             headers.append((h, v))
+    # reference elastic message header (messageSummary): a message WITH a
+    # From header renders "From <adr> on <date>"; one WITHOUT a usable From
+    # header (e.g. our malformed import test message) collapses to
+    # "On <date>" and the details table keeps only the friendly Date row.
+    # The sender's own address is NOT special-cased (a self-addressed
+    # message still shows "From …", verified against the reference).
+    from_addr = util.header_addresses(msg, "From")
+    photo_src = url_for("static", filename="images/contactpic.svg")
+    try:
+        if from_addr:
+            pcid = get_store().email_to_contact(session["user_id"], from_addr[0][1])
+            if pcid and get_store().contact_photo(session["user_id"], pcid):
+                photo_src = url_for("views.contact_photo", cid=pcid)
+    except Exception:
+        pass
+    date_short = _header_date_short(_msg_date(msg))
     attachments = []
     image_attachments = []
     if msg.is_multipart():
@@ -751,6 +852,13 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
             "image_attachments": image_attachments,
             "sender": util.header_addresses(msg, "From")[:1],
             "sender_domain": sender_domain,
+            "from_addr": from_addr,
+            "to_addr": util.header_addresses(msg, "To"),
+            "cc_addr": util.header_addresses(msg, "Cc"),
+            "replyto_addr": util.header_addresses(msg, "Reply-To"),
+            "has_from": bool(from_addr),
+            "photo_src": photo_src,
+            "date_short": date_short,
             # reference 'ml' flag -- enables the Reply list menu item
             "list_post": bool(_hdr(msg, "List-Post")),
             "remote_blocked": remote_blocked,
@@ -798,13 +906,9 @@ def message_view():
         raw = box.raw_message(folder, uid)
         return Response(raw.as_string(), mimetype="text/plain; charset=utf-8")
     framed = request.args.get("_framed") == "1"
-    # Reference behavior: a plain (non-framed, non-extwin, non-print) message
-    # URL renders the mail shell with the preview iframe, never a bare pane —
-    # redirect into /mail?_uid= which loads the framed preview. extwin/print/
-    # framed/source/headers keep their standalone pages.
-    if not framed and not request.args.get("_print") and not request.args.get("_extwin"):
-        return redirect(url_for("views.mail", _mbox=folder, _uid=uid,
-                                _noseen=request.args.get("_noseen")))
+    # Reference behavior (verified live): ?_action=show renders a dedicated
+    # reader page — no list/sidebar columns, toolbar with Print/Previous/Next.
+    # The shell-with-preview layout is only for /mail?_uid= (index + preview).
     ctx = build_message_ctx(box, folder, uid,
                             mark_seen=request.args.get("_noseen") != "1",
                             allow_remote=True if request.args.get("_load") == "remote" else None)
@@ -836,8 +940,10 @@ def message_view():
                                      sort="", order="desc")["uids"]]
             if uid in order_uids:
                 idx = order_uids.index(uid)
-                prev_uid = order_uids[idx + 1] if idx + 1 < len(order_uids) else None
-                next_uid = order_uids[idx - 1] if idx > 0 else None
+                # reference direction: 'prev' is the row ABOVE in the list
+                # (newer in date-desc), disabled at the top boundary
+                prev_uid = order_uids[idx - 1] if idx > 0 else None
+                next_uid = order_uids[idx + 1] if idx + 1 < len(order_uids) else None
     ctx["prev_uid"] = prev_uid
     ctx["next_uid"] = next_uid
     if request.args.get("_headers") == "1":

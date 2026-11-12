@@ -43,10 +43,8 @@
         <ul class="menu toolbar listing iconized" id="toolbar-list-menu">
           <li role="menuitem"><a href="#select" class="select{{ ' active' }}" data-popup="listselect-menu"
               title="{{ 'Select'|lc }}" aria-haspopup="true" aria-expanded="false" aria-owns="listselect-menu"><span class="inner">{{ 'Select'|lc }}</span></a></li>
-          {% if not preview_uid %}
           <li role="menuitem"><a href="#threads" class="threads disabled" data-popup="threadselect-menu"
               title="{{ 'Threads'|lc }}" aria-haspopup="true" aria-expanded="false" aria-owns="threadselect-menu"><span class="inner">{{ 'Threads'|lc }}</span></a></li>
-          {% endif %}
           <li role="menuitem"><a href="#list-options" class="options active" id="listmenulink" data-popup="listoptions-menu"
               title="{{ 'Options'|lc }}" tabindex="0"><span class="inner">{{ 'Options'|lc }}</span></a></li>
         </ul>
@@ -69,7 +67,7 @@
         </form>
         <a class="button reset{{ ' hidden' if not search }}" href="#" title="{{ 'Reset search'|lc }}"
            role="button"><span class="inner">{{ 'Reset search'|lc }}</span></a>
-        <a class="button unread{{ ' selected' if search_filter == 'unread' }}" href="#" role="button"
+        <a class="button unread{{ ' selected' if search_filter == 'UNSEEN' }}" href="#" role="button"
            title="{{ 'Show unread messages'|lc }}" data-toggle-unread></a>
         <a href="#search-filter" class="button options{{ ' selected' if searching }}" title="{{ 'Options'|lc }}"
            role="button" data-popup="searchmenu"><span class="inner">{{ 'Options'|lc }}</span></a>
@@ -82,11 +80,11 @@
            aria-labelledby="aria-label-search-menu" aria-controls="messagelist">
         <h3 id="aria-label-search-menu" class="voice">{{ 'Search modifiers'|lc }}</h3>
         <div class="formcontent">
-          {% set mods = search_mods or ['subject','from','to','body'] %}
+          {% set mods = search_mods or ['subject','from'] %}
           <ul class="proplist">
             <li><label><input type="checkbox" name="_sm" value="subject" form="rcmqsearchform"{{ ' checked' if 'subject' in mods }}> {{ 'Subject'|lc }}</label></li>
             <li class="with-sublist">
-              <label><input type="checkbox" name="_sm" value="sender" form="rcmqsearchform"{{ ' checked' if 'sender' in mods or 'from' in mods or 'replyto' in mods or 'followupto' in mods }}> {{ 'Sender'|lc }}</label>
+              <label><input type="checkbox" name="_sm" value="sender" form="rcmqsearchform"{{ ' checked' if 'from' in mods and 'replyto' in mods and 'followupto' in mods }}> {{ 'Sender'|lc }}</label>
               <a class="button icon dropdown" role="button" href="#" title="{{ 'Details'|lc }}"></a>
               <ul class="proplist d-none">
                 <li><label><input type="checkbox" name="_sm" value="from" form="rcmqsearchform"{{ ' checked' if 'from' in mods }}> {{ 'From'|lc }}</label></li>
@@ -95,7 +93,7 @@
               </ul>
             </li>
             <li class="with-sublist">
-              <label><input type="checkbox" name="_sm" value="recipient" form="rcmqsearchform"{{ ' checked' if 'to' in mods or 'cc' in mods or 'bcc' in mods }}> {{ 'Recipient'|lc }}</label>
+              <label><input type="checkbox" name="_sm" value="recipient" form="rcmqsearchform"{{ ' checked' if 'to' in mods and 'cc' in mods and 'bcc' in mods }}> {{ 'Recipient'|lc }}</label>
               <a class="button icon dropdown" role="button" href="#" title="{{ 'Details'|lc }}"></a>
               <ul class="proplist d-none">
                 <li><label><input type="checkbox" name="_sm" value="to" form="rcmqsearchform"{{ ' checked' if 'to' in mods }}> {{ 'To'|lc }}</label></li>
@@ -110,37 +108,43 @@
             <div class="input-group-prepend">
               <label for="searchfilter" class="input-group-text">{{ 'Type'|lc }}</label>
             </div>
-            <select name="_sf" id="searchfilter" class="custom-select" form="rcmqsearchform">
-              <option value="all"{{ ' selected' if search_filter == 'all' }}>{{ 'All'|lc }}</option>
-              <option value="unread"{{ ' selected' if search_filter == 'unread' }}>{{ 'Unread'|lc }}</option>
-              <option value="flagged"{{ ' selected' if search_filter == 'flagged' }}>{{ 'Flagged'|lc }}</option>
-              <option value="answered"{{ ' selected' if search_filter == 'answered' }}>Answered</option>
-              <option value="unanswered"{{ ' selected' if search_filter == 'unanswered' }}>{{ 'Unanswered'|lc }}</option>
+            <select name="_filter" id="searchfilter" class="custom-select" form="rcmqsearchform">
+              <option value="ALL"{{ ' selected' if search_filter == 'ALL' }}>{{ 'All'|lc }}</option>
+              <option value="UNSEEN"{{ ' selected' if search_filter == 'UNSEEN' }}>{{ 'Unread'|lc }}</option>
+              <option value="FLAGGED"{{ ' selected' if search_filter == 'FLAGGED' }}>{{ 'Flagged'|lc }}</option>
+              <option value="ANSWERED"{{ ' selected' if search_filter == 'ANSWERED' }}>Answered</option>
+              <option value="UNANSWERED"{{ ' selected' if search_filter == 'UNANSWERED' }}>{{ 'Unanswered'|lc }}</option>
               {# reference: deleted/undeleted only when skip_deleted is off #}
               {% if not (g.prefs or {}).get('skip_deleted') %}
-              <option value="deleted"{{ ' selected' if search_filter == 'deleted' }}>{{ 'Deleted'|lc }}</option>
-              <option value="undeleted"{{ ' selected' if search_filter == 'undeleted' }}>Undeleted</option>
+              <option value="DELETED"{{ ' selected' if search_filter == 'DELETED' }}>{{ 'Deleted'|lc }}</option>
+              <option value="UNDELETED"{{ ' selected' if search_filter == 'UNDELETED' }}>Undeleted</option>
               {% endif %}
+              <option value="{{ search_has_attachment }}"{{ ' selected' if search_filter == search_has_attachment }}>{{ 'with attachment'|lc }}</option>
+              <option value="HEADER X-PRIORITY 1"{{ ' selected' if search_filter == 'HEADER X-PRIORITY 1' }}>{{ 'Priority'|lc }}: {{ 'Highest'|lc }}</option>
+              <option value="HEADER X-PRIORITY 2"{{ ' selected' if search_filter == 'HEADER X-PRIORITY 2' }}>{{ 'Priority'|lc }}: {{ 'High'|lc }}</option>
             </select>
           </div>
           <div class="input-group">
             <div class="input-group-prepend">
               <label for="s_interval" class="input-group-text">{{ 'Date'|lc }}</label>
             </div>
-            <select name="_si" id="s_interval" class="custom-select" form="rcmqsearchform">
-              <option value="all"{{ ' selected' if search_interval == 'all' }}>Any</option>
-              <option value="today"{{ ' selected' if search_interval == 'today' }}>{{ 'Today'|lc }}</option>
-              <option value="last7"{{ ' selected' if search_interval == 'last7' }}>Last 7 days</option>
-              <option value="last14"{{ ' selected' if search_interval == 'last14' }}>Last 14 days</option>
-              <option value="last30"{{ ' selected' if search_interval == 'last30' }}>Last 30 days</option>
-              <option value="thismonth"{{ ' selected' if search_interval == 'thismonth' }}>This month</option>
+            <select name="_interval" id="s_interval" class="custom-select" form="rcmqsearchform">
+              <option value=""{{ ' selected' if not search_interval }}></option>
+              <option value="1W"{{ ' selected' if search_interval == '1W' }}>{{ 'younger than a week'|lc }}</option>
+              <option value="1M"{{ ' selected' if search_interval == '1M' }}>{{ 'younger than a month'|lc }}</option>
+              <option value="1Y"{{ ' selected' if search_interval == '1Y' }}>{{ 'younger than a year'|lc }}</option>
+              <option value="3M"{{ ' selected' if search_interval == '3M' }}>{{ 'younger than 3 months'|lc }}</option>
+              <option value="-1W"{{ ' selected' if search_interval == '-1W' }}>{{ 'older than a week'|lc }}</option>
+              <option value="-1M"{{ ' selected' if search_interval == '-1M' }}>{{ 'older than a month'|lc }}</option>
+              <option value="-1Y"{{ ' selected' if search_interval == '-1Y' }}>{{ 'older than a year'|lc }}</option>
+              <option value="-3M"{{ ' selected' if search_interval == '-3M' }}>{{ 'older than 3 months'|lc }}</option>
             </select>
           </div>
           <div class="input-group">
             <div class="input-group-prepend">
               <label for="s_scope" class="input-group-text">{{ 'Scope'|lc }}</label>
             </div>
-            <select name="_ss" id="s_scope" class="custom-select" form="rcmqsearchform">
+            <select name="_scope" id="s_scope" class="custom-select" form="rcmqsearchform">
               <option value="base"{{ ' selected' if search_scope == 'base' }}>{{ 'Current folder'|lc }}</option>
               <option value="sub"{{ ' selected' if search_scope == 'sub' }}>Subfolders</option>
               <option value="all"{{ ' selected' if search_scope == 'all' }}>{{ 'All folders'|lc }}</option>
