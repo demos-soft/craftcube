@@ -1,10 +1,8 @@
         <div id="message-header">
           <h2 class="subject">
             <span class="voice">Subject: </span>{{ subject }}
-            {% if not framed %}
             <a class="extwin" title="Open in new window" target="_blank"
                href="{{ url_for('views.message_view', _mbox=folder, _uid=uid) }}"><span class="inner">Open in new window</span></a>
-            {% endif %}
           </h2>
           <div class="header">
             <img src="{{ url_for('static', filename='images/contactpic.svg') }}"
@@ -18,7 +16,9 @@
                 {% endfor %}
               </tbody></table>
               <div class="header-links">
-                <a href="#" class="details-toggle" onclick="var h=this.closest('.header-content'); var on=h.classList.toggle('details-view'); this.textContent = on ? 'Less' : 'More'; if(window.cc_set_summary_label) cc_set_summary_label(on ? 'Less' : 'More'); return false;">More</a>
+                <a href="#" class="headers-summary" id="hdr-toggle">Details</a>
+                <a href="#all-headers" class="headers-all" id="hdr-all">Headers</a>
+                <span class="voice">Message headers</span>
                 {% if remote_blocked %}
                 <a class="remote-allow" href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}">Allow remote content</a>
                 {% endif %}

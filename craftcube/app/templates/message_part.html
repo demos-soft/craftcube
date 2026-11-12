@@ -25,15 +25,22 @@
       </div>
     </div>
   </div>
+  <script src="{{ url_for('static', filename='craftcube.js') }}"></script>
   <script>
+    // ui.js headers_show(): Details/Summary toggle of the header block
     document.getElementById('hdr-toggle')?.addEventListener('click', function (e) {
       e.preventDefault();
-      var el = document.querySelector('.header-headers');
+      var el = document.querySelector('.header-content');
       if (!el) return;
-      var show = el.classList.toggle('show');
+      var show = el.classList.toggle('details-view');
       this.textContent = show ? 'Summary' : 'Details';
-      if (window.parent && window.parent.cc_set_summary_label)
-        window.parent.cc_set_summary_label(this.textContent);
+    });
+    // ui.js headers_dialog(): raw headers in a dialog. The dialog is opened
+    // in the parent window (app.js forwards show_popup_dialog() to parent).
+    document.getElementById('hdr-all')?.addEventListener('click', function (e) {
+      e.preventDefault();
+      parent.cc_iframe_dialog('/message?_mbox={{ folder|urlencode }}&_uid={{ uid }}&_framed=1&_headers=1',
+        'Message headers', 400);
     });
   </script>
 </body>

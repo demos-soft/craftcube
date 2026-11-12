@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="iframe">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  <script>
+  try {
+    if (document.cookie.indexOf('colorMode=dark') > -1
+      || (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.className += ' dark-mode';
+    }
+  } catch (e) { }
+  </script>
+</head>
+<body class="task-mail action-headers">
+  <!-- program/actions/mail/headers.php headers_output(): raw header source,
+       header names bold, values <br>-separated -->
+  <div class="frame-content text-nowrap">{% for h, v in rawh %}<font class="bold">{{ h }}:</font> {{ v }}{% if not loop.last %}<br>{% endif %}{% endfor %}</div>
+</body>
+</html>

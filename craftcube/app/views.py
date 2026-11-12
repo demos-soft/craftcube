@@ -378,6 +378,11 @@ def message_view():
             pass
     ctx["prev_uid"] = prev_uid
     ctx["next_uid"] = next_uid
+    if request.args.get("_headers") == "1":
+        # reference `?_action=headers`: raw header source, all headers in
+        # wire order, names bold (headers.php headers_output)
+        return render_template("headers.html", **ctx, task="mail",
+                               action="headers", rawh=list(ctx["msg"].items()))
     if framed:
         return render_template("message_part.html", **ctx, task="mail")
     return render("mail", "message.html", **ctx)
