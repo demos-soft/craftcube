@@ -55,6 +55,7 @@ def driver():
         pytest.skip(f"chromedriver unavailable: {exc}")
     try:
         _login(drv)
+        _ensure_en_us(drv)
     except Exception as exc:
         drv.quit()
         pytest.skip(f"staging login failed: {exc}")
@@ -69,7 +70,7 @@ def _login(drv):
         drv.find_element(By.ID, "rcmloginuser").send_keys(USER)
         drv.find_element(By.ID, "rcmloginpwd").send_keys(PASSWORD)
         drv.find_element(By.ID, "rcmloginsubmit").click()
-        _wait_until(drv, lambda d: "/mail" in d.current_url)
+        _wait_until(drv, lambda d: "/login" not in d.current_url and "/mail" in d.current_url)
 
 
 def _wait_until(drv, fn, timeout=12.0):
@@ -83,6 +84,18 @@ def _wait_until(drv, fn, timeout=12.0):
             last = exc
         time.sleep(0.25)
     raise AssertionError("condition not met" + (" last=" + str(last) if last else ""))
+
+
+def _ensure_en_us(drv):
+    """The shared staging user may carry a non-English preference; make the
+    localized flash/dialog assertions deterministic."""
+    drv.get(CC + "/settings/preferences/general?_framed=1")
+    _wait_until(drv, lambda d: d.find_elements(By.CSS_SELECTOR, "select[name=_language]"))
+    drv.execute_script(
+        "var s=document.querySelector('select[name=_language]');"
+        " if (s) { s.value='en_US'; s.form.submit(); }"
+    )
+    time.sleep(1.2)
 
 
 def _open_list(drv):
@@ -550,12 +563,12 @@ def test_folder_selector_matches_reference(driver):
       return [...document.querySelectorAll('#folder-selector li')].map(li => {
         var a = li.querySelector('a');
         return [li.className, a.className, a.textContent.trim(),
-                a.style.paddingLeft];
+                a.style.paddingLeft, a.getAttribute('data-dest')];
       });""")
     assert rows, "folder-selector did not render"
     assert any(r[0] == "inbox" and r[1] == "icon active" for r in rows)
     assert any(r[0] == "drafts" and r[1] == "icon active" for r in rows)
-    assert any("INBOX/Drafts" in r[1] or (r[2] == "Drafts" and r[3] == "16px") for r in rows), (
+    assert any(r[4] == "INBOX/Drafts" and r[3] == "16px" for r in rows), (
         "nested folder indentation missing"
     )
     html = driver.execute_script("return document.getElementById('folder-selector').outerHTML;")
