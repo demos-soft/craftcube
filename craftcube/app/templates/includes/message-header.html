@@ -10,7 +10,7 @@
             <img src="{{ url_for('static', filename='images/contactpic.svg') }}"
                  alt="Contact photo" class="contactphoto">
             <div class="header-content">
-              <div class="header-summary"><span>{{ 'From'|lc }}<span class="adr"><a href="mailto:{{ sender[0][1] if sender else '' }}"
+              <div class="header-summary"><span>{{ 'From'|lc }} <span class="adr"><a href="mailto:{{ sender[0][1] if sender else '' }}"
                     class="rcmContactAddress" title="{{ sender[0][1] if sender else '' }}">{% set se = (g.prefs or {}).get('message_show_email') %}{{ (sender[0][0] ~ ' <' ~ sender[0][1] ~ '>') if se and sender and sender[0][0] and sender[0][1] and sender[0][0] != sender[0][1] else (sender[0][0] if sender and sender[0][0] else (sender[0][1] if sender else '')) }}</a></span> on <span class="text-nowrap">{{ date|summarydate }}</span></span></div>
               <table class="header-headers"><tbody>
                 {% for h, v in headers if h not in ('Subject',) %}
@@ -20,6 +20,14 @@
               <div class="header-links">
                 <a href="#" class="headers-summary" id="hdr-toggle">{{ 'Details'|lc }}</a>
                 <a href="#all-headers" class="headers-all" id="hdr-all">{{ 'Headers'|lc }}</a>
+                {# elastic message.html:38-43 — optional_format toggle #}
+                {% if optional_format == 'text' %}
+                <a class="plain" title="{{ 'Display in plain text format'|lc }}"
+                   href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _format='text') }}{{ '&_framed=1' if framed else '' }}{{ '&_extwin=1' if extwin else '' }}"><span class="inner">{{ 'Plain text'|lc }}</span></a>
+                {% elif optional_format == 'html' %}
+                <a class="html" title="{{ 'Display in HTML format'|lc }}"
+                   href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _format='html') }}{{ '&_framed=1' if framed else '' }}{{ '&_extwin=1' if extwin else '' }}"><span class="inner">{{ 'HTML'|lc }}</span></a>
+                {% endif %}
                 <span class="voice">{{ 'Message headers'|lc }}</span>
                 {% if remote_blocked %}
                 <a class="remote-allow" href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}{{ '&_extwin=1' if extwin else '' }}">Allow remote content</a>

@@ -17,7 +17,7 @@
       <div class="content frame-content" role="main">
         <fieldset class="contact-head">
           <div class="contact-header">
-            <div class="contact-photo"><img id="contactpic" src="{{ url_for('static', filename='images/contactpic.svg') }}" alt=""></div>
+            <div class="contact-photo"><img id="contactpic" src="{{ url_for('views.contact_photo', cid=row.contact_id) if has_photo else url_for('static', filename='images/contactpic.svg') }}" alt=""></div>
             <div class="contact-head">
               <legend>Contact</legend>
               <div id="contacthead" class="readonly">

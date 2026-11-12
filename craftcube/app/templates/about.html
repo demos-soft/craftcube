@@ -1,20 +1,53 @@
-{% include "includes/layout.html" %}
-{% include "includes/menu.html" %}
-
-    <h1 class="voice">{{ 'About'|lc }}</h1>
-
-    <div id="layout-content" class="selected no-navbar" role="main">
-      <div class="header">
-        <a class="button icon close" href="{{ url_for('views.mail') }}" style="position:absolute;right:.5rem;top:0"><span class="inner">{{ 'Close'|lc }}</span></a>
-        <span class="header-title">{{ 'About'|lc }}</span>
-      </div>
-      <div class="content frame-content" role="main" style="text-align:center">
-        <img src="{{ url_for('static', filename='images/logo.svg') }}" id="aboutlogo" style="max-height:96px;margin:1rem auto">
-        <h2 style="font-weight:700">{{ product_name }}</h2>
-        <p>Version {{ version }}</p>
-        <p>A webmail client reverse-engineered from Roundcube Webmail,<br>
-           re-implemented in Python (Flask) with the Elastic skin look &amp; feel.</p>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ product_name }} :: {{ 'About'|lc }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/unicorn.svg') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  <script>
+  try {
+    if (document.cookie.indexOf('colorMode=dark') > -1
+      || (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.className += ' dark-mode';
+    }
+  } catch (e) { }
+  </script>
+</head>
+<body class="task-settings action-about">
+  <!-- skins/elastic/templates/about.html: chrome-less frame-content page -->
+  <h1 class="voice">{{ 'About'|lc }}</h1>
+  <div class="frame-content">
+    <p class="aboutlogo"><img src="{{ url_for('static', filename='images/logo.svg') }}" id="aboutlogo" alt=""></p>
+    <h2 class="sysname">{{ product_name }} {{ version }}</h2>
+    <p class="copyright">Copyright &copy; The {{ product_name }} Project &mdash;
+       a webmail client reverse-engineered from Roundcube Webmail, re-implemented in Python.</p>
+    <p class="license">This program is free software; you can redistribute it and/or
+      modify it under the terms of the
+      <a href="https://www.gnu.org/licenses/gpl.html" target="_blank" rel="noopener">GNU General Public License</a>
+      as published by the Free Software Foundation, either version 3 of the License,
+      or (at your option) any later version.<br>Some
+      <a href="https://roundcube.net/license" target="_blank" rel="noopener">exceptions</a> for skins &amp; plugins apply.</p>
+    <div class="readtext table-responsive-sm">
+      <h3>{{ 'Interface skin'|lc }}</h3>
+      <p><span class="skinitem"><span class="skinname">Elastic</span><br>
+         <span class="skinauthor">by Aleksander Machniak</span><br>
+         <span class="skinlicense">License:&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/"
+         target="_blank" rel="noopener" tabindex="-1">Creative Commons Attribution-ShareAlike</a></span><br>
+         </span></p>
+      <h3>{{ 'Installed plugins'|lc }}</h3>
+      <table id="pluginlist" class="records-table table">
+        <thead class="thead-default"><tr>
+          <th class="name">{{ 'Plugin'|lc }}</th>
+          <th class="version">{{ 'Version'|lc }}</th>
+          <th class="license">{{ 'License'|lc }}</th>
+          <th class="source">{{ 'Source'|lc }}</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
     </div>
-
-{% include "includes/footer.html" %}
+  </div>
+</body>
+</html>

@@ -83,27 +83,27 @@
         <div class="formcontent">
           {% set mods = search_mods or ['subject','from','to','body'] %}
           <ul class="proplist">
-            <li><label><input type="checkbox" name="_sm" value="subject" form="rcmqsearchform"{{ ' checked' if 'subject' in mods }}> Subject</label></li>
+            <li><label><input type="checkbox" name="_sm" value="subject" form="rcmqsearchform"{{ ' checked' if 'subject' in mods }}> {{ 'Subject'|lc }}</label></li>
             <li class="with-sublist">
-              <label><input type="checkbox" name="_sm" value="sender" form="rcmqsearchform"{{ ' checked' if 'sender' in mods or 'from' in mods or 'replyto' in mods or 'followupto' in mods }}> Sender</label>
+              <label><input type="checkbox" name="_sm" value="sender" form="rcmqsearchform"{{ ' checked' if 'sender' in mods or 'from' in mods or 'replyto' in mods or 'followupto' in mods }}> {{ 'Sender'|lc }}</label>
               <a class="button icon dropdown" role="button" href="#" title="{{ 'Details'|lc }}"></a>
               <ul class="proplist d-none">
-                <li><label><input type="checkbox" name="_sm" value="from" form="rcmqsearchform"{{ ' checked' if 'from' in mods }}> From</label></li>
-                <li><label><input type="checkbox" name="_sm" value="replyto" form="rcmqsearchform"{{ ' checked' if 'replyto' in mods }}> Reply-To</label></li>
-                <li><label><input type="checkbox" name="_sm" value="followupto" form="rcmqsearchform"{{ ' checked' if 'followupto' in mods }}> Followup-To</label></li>
+                <li><label><input type="checkbox" name="_sm" value="from" form="rcmqsearchform"{{ ' checked' if 'from' in mods }}> {{ 'From'|lc }}</label></li>
+                <li><label><input type="checkbox" name="_sm" value="replyto" form="rcmqsearchform"{{ ' checked' if 'replyto' in mods }}> {{ 'Reply-To'|lc }}</label></li>
+                <li><label><input type="checkbox" name="_sm" value="followupto" form="rcmqsearchform"{{ ' checked' if 'followupto' in mods }}> {{ 'Followup-To'|lc }}</label></li>
               </ul>
             </li>
             <li class="with-sublist">
-              <label><input type="checkbox" name="_sm" value="recipient" form="rcmqsearchform"{{ ' checked' if 'to' in mods or 'cc' in mods or 'bcc' in mods }}> Recipient</label>
+              <label><input type="checkbox" name="_sm" value="recipient" form="rcmqsearchform"{{ ' checked' if 'to' in mods or 'cc' in mods or 'bcc' in mods }}> {{ 'Recipient'|lc }}</label>
               <a class="button icon dropdown" role="button" href="#" title="{{ 'Details'|lc }}"></a>
               <ul class="proplist d-none">
-                <li><label><input type="checkbox" name="_sm" value="to" form="rcmqsearchform"{{ ' checked' if 'to' in mods }}> To</label></li>
-                <li><label><input type="checkbox" name="_sm" value="cc" form="rcmqsearchform"{{ ' checked' if 'cc' in mods }}> Cc</label></li>
-                <li><label><input type="checkbox" name="_sm" value="bcc" form="rcmqsearchform"{{ ' checked' if 'bcc' in mods }}> Bcc</label></li>
+                <li><label><input type="checkbox" name="_sm" value="to" form="rcmqsearchform"{{ ' checked' if 'to' in mods }}> {{ 'To'|lc }}</label></li>
+                <li><label><input type="checkbox" name="_sm" value="cc" form="rcmqsearchform"{{ ' checked' if 'cc' in mods }}> {{ 'Cc'|lc }}</label></li>
+                <li><label><input type="checkbox" name="_sm" value="bcc" form="rcmqsearchform"{{ ' checked' if 'bcc' in mods }}> {{ 'Bcc'|lc }}</label></li>
               </ul>
             </li>
-            <li><label><input type="checkbox" name="_sm" value="body" form="rcmqsearchform"{{ ' checked' if 'body' in mods }}> Body</label></li>
-            <li><label><input type="checkbox" name="_sm" value="text" form="rcmqsearchform"{{ ' checked' if 'text' in mods }}> Entire message</label></li>
+            <li><label><input type="checkbox" name="_sm" value="body" form="rcmqsearchform"{{ ' checked' if 'body' in mods }}> {{ 'Body'|lc }}</label></li>
+            <li><label><input type="checkbox" name="_sm" value="text" form="rcmqsearchform"{{ ' checked' if 'text' in mods }}> {{ 'Entire message'|lc }}</label></li>
           </ul>
           <div class="input-group">
             <div class="input-group-prepend">
@@ -162,6 +162,7 @@
             <thead>
               <tr>
                 <th class="selection"><span class="inner">{{ 'Select'|lc }}</span></th>
+                <th class="threads" id="rcmthreads"><span class="threads"></span></th>
                 <th class="subject{{ ' sorted ' ~ order if sort == 'subject' }}"><a class="sortcol" rel="subject" title="{{ 'Sort by'|lc }}"
                     href="{{ url_for('views.mail', _mbox=folder, _sort='subject', _sort_order=('asc' if sort=='subject' and order=='desc' else 'desc'), _q=search) }}">{{ 'Subject'|lc }}</a></th>
                 <th class="status"><span class="status">{{ 'Read status'|lc }}</span></th>
@@ -177,7 +178,7 @@
             </thead>
             <tbody>
               {% for m in listing['items'] %}
-              <tr class="message{{ ' focused' if preview_uid == m.uid|string }}{{ ' unread' if not m.seen }}{{ ' flagged' if m.flagged }}{{ ' deleted' if m.deleted }}{{ ' thread-child' if list_mode == 'threads' and m.depth }}{{ ' thread-root' if list_mode == 'threads' }}"
+              <tr class="message{{ ' selected' if preview_uid == m.uid|string }}{{ ' unread' if not m.seen }}{{ ' flagged' if m.flagged }}{{ ' deleted' if m.deleted }}{{ ' thread-child' if list_mode == 'threads' and m.depth }}{{ ' thread-root' if list_mode == 'threads' }}"
                   data-uid="{{ m.uid }}" data-box="{{ m.folder or folder }}"
                   data-ml="{{ 1 if m.ml else 0 }}"
                   {% if list_mode == 'threads' %}data-depth="{{ m.depth }}"{% endif %}>

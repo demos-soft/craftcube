@@ -15,6 +15,58 @@ containerPort: 8000
 service:
   type: ClusterIP
   port: 80
+  # nodePort: 30080   # only used when type is NodePort
+
+# Mailpit SMTP front-end + web UI (SMTP :1025, UI :8025) for staging/demo.
+# OSS mailpit has NO IMAP server (that is Mailpit Pro); pair it with the
+# `dovecot` component below (mailpit relays all mail into dovecot, webmail
+# clients read via IMAP) — same topology as docker/docker-compose.yml.
+mailpit:
+  enabled: false
+  image: docker.io/axllent/mailpit:latest
+  imagePullPolicy: IfNotPresent
+  maxMessages: 5000
+  relay:
+    # relay every accepted message to an IMAP-capable store (dovecot)
+    enabled: false
+    host: ""
+    port: 2525
+  persistence:
+    size: 1Gi
+    storageClassName: ""
+  service:
+    type: ClusterIP
+    smtpNodePort: null
+    uiNodePort: null
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      memory: 256Mi
+
+# Development-style dovecot (IMAP :143 + a stdlib SMTP receiver :2525 that
+# appends to a Maildir; special folders auto-created; passwd-file logins).
+# The image is custom — build it from docker/imap/ (see README/staging docs).
+dovecot:
+  enabled: false
+  image:
+    repository: ""
+    tag: stage
+    pullPolicy: IfNotPresent
+    pullSecrets: []
+  persistence:
+    size: 2Gi
+    storageClassName: ""
+  service:
+    type: ClusterIP
+    imapNodePort: null
+  resources:
+    requests:
+      cpu: 50m
+      memory: 96Mi
+    limits:
+      memory: 256Mi
 
 ingress:
   enabled: false
@@ -46,7 +98,7 @@ config:
   # "1": authenticate IMAP with each user's own password (Roundcube default).
   # "0": shared-mailbox mode using the admin credentials from `secret`.
   perUserPasswords: "1"
-  pageSize: 20
+  pageSize: 50
 
 # Credentials managed as a Kubernetes Secret.
 secret:

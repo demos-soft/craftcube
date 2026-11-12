@@ -76,7 +76,7 @@ All configuration is environment-driven.
 | `CRAFTCUBE_PER_USER_PASSWORDS` | `1` | `1`: log in with each user's own IMAP password. `0`: shared mailbox using `CRAFTCUBE_IMAP_ADMIN_USER` / `CRAFTCUBE_IMAP_ADMIN_PASS` |
 | `CRAFTCUBE_SECRET` | dev key | Flask session signing key — **always set** in production |
 | `CRAFTCUBE_PRODUCT_NAME` | `CraftCube` | name shown in title, login, about |
-| `CRAFTCUBE_PAGE_SIZE` | `20` | messages per page |
+| `CRAFTCUBE_PAGE_SIZE` | `50` | messages per page (matches the reference `mail_pagesize`) |
 
 ## Reverse proxy
 

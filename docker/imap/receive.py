@@ -53,6 +53,11 @@ class Handler(socketserver.StreamRequestHandler):
 
     def deliver(self, raw):
         os.makedirs(MAILDIR, exist_ok=True)
+        # mailbox.Maildir() skips creating the cur/new/tmp subdirs when the
+        # base dir already exists (e.g. mounted volumes), which then fails
+        # the message write with FileNotFoundError — create them explicitly.
+        for sub in ("tmp", "new", "cur"):
+            os.makedirs(os.path.join(MAILDIR, sub), exist_ok=True)
         mb = mailbox.Maildir(MAILDIR, create=True)
         try:
             mb.add(mailbox.MaildirMessage(raw))

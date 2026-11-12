@@ -52,8 +52,9 @@
             <a href="#">{{ f.display_name or f.name }}</a>
             <div class="custom-control custom-switch">
               <input name="_subscribed[]" title="{{ 'Click to change subscription'|lc }}" value="{{ f.name }}"
-                     disabled checked type="checkbox" id="icochk{{ loop.index }}"
-                     class="form-check-input custom-control-input">
+                     {{ 'disabled' if f.name|upper == 'INBOX' }}{{ ' checked' if f.subscribed }} type="checkbox" id="icochk{{ loop.index }}"
+                     class="form-check-input custom-control-input"
+                     onchange="cc_subscription_toggle('{{ f.name }}', this.checked)">
               <label for="icochk{{ loop.index }}" class="custom-control-label"
                      title="{{ 'Click to change subscription'|lc }}"></label>
             </div>
@@ -74,8 +75,8 @@
         <span class="header-title"></span>
         <div id="folderstoolbar" class="toolbar menu">
           <a class="create" title="{{ 'Create new folder'|lc }}" role="button"
-             href="#" onclick="return window.cc_create_folder ? window.cc_create_folder() : true"><span class="inner">{{ 'Create'|lc }}</span></a>
-          {% if edit_folder %}
+             href="{{ url_for('views.folders_view', _edit='new') }}"><span class="inner">{{ 'Create'|lc }}</span></a>
+          {% if edit_folder and edit_folder != 'new' %}
           <a class="delete" title="{{ 'Delete'|lc }}" role="button"
              href="#" onclick="if (confirm('Delete folder {{ edit_folder }}?')) document.getElementById('folder-delete-form').submit(); return false"><span class="inner">{{ 'Delete'|lc }}</span></a>
           <a class="purge" title="{{ 'Empty'|lc }}" role="button"
@@ -93,12 +94,30 @@
         <div class="formcontent propform">
           <h1 class="voice">{{ 'Folder properties'|lc }}</h1>
           <form method="post" action="{{ url_for('views.folders_view') }}">
-            <input type="hidden" name="_act" value="rename">
+            <input type="hidden" name="_act" value="{{ 'create' if edit_folder == 'new' else 'rename' }}">
+            {% if edit_folder and edit_folder != 'new' %}
             <input type="hidden" name="folder" value="{{ edit_folder }}">
+            {% endif %}
             <table class="layout">
               <tbody>
                 <tr><td class="title"><label for="inputname">{{ 'Folder name'|lc }}</label></td>
-                    <td><input type="text" name="name" id="inputname" value="{{ edit_folder }}" class="form-control" required></td></tr>
+                    <td><input type="text" name="name" id="inputname"
+                        value="{{ '' if edit_folder == 'new' else edit_folder.split('/')[-1] }}" class="form-control" required></td></tr>
+                <tr><td class="title"><label for="inputparent">{{ 'Parent folder'|lc }}</label></td>
+                    <td><select name="parent" id="inputparent" class="form-select">
+                      <option value="">---</option>
+                      {% for f in all_folders %}
+                        {% if edit_folder == 'new' or not edit_folder
+                              or (f.name != edit_folder and not f.name.startswith(edit_folder ~ '/')) %}
+                        <option value="{{ f.name }}" {{ 'selected' if f.name == parent_of }}>{{ f.display_name }}</option>
+                        {% endif %}
+                      {% endfor %}
+                    </select></td></tr>
+                <tr><td class="title"><label for="inputviewmode">{{ 'View mode'|lc }}</label></td>
+                    <td><select name="viewmode" id="inputviewmode" class="form-select">
+                      <option value="list" {{ 'selected' if folder_viewmode != 'threads' }}>{{ 'List'|lc }}</option>
+                      <option value="threads" {{ 'selected' if folder_viewmode == 'threads' }}>{{ 'Threads'|lc }}</option>
+                    </select></td></tr>
               </tbody>
             </table>
             <div class="formbuttons">

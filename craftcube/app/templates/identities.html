@@ -19,7 +19,7 @@
             <tr id="rcmrow{{ i.identity_id }}"{{ ' class="selected"'|safe if editing and i.identity_id == edit_row.identity_id }} role="option" tabindex="0"
                 aria-selected="{{ 'true' if editing and edit_row and i.identity_id == edit_row.identity_id else 'false' }}"
                 data-href="{{ url_for('views.identities', _edit=i.identity_id) }}">
-              <td class="mail">&lt;{{ i.email }}&gt;</td>
+              <td class="mail">{% if i.name %}{{ i.name }} {% endif %}&lt;{{ i.email }}&gt;</td>
             </tr>
             {% endfor %}
           </tbody>

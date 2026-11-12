@@ -1,0 +1,99 @@
+# Reference Roundcube (the "original" CraftCube is cloned from), staged
+# side-by-side with CraftCube on k8s3.lan for parity comparison.
+# Shares the in-chart mailpit of the craftcube helm release (ns craftcube).
+#
+#   sudo microk8s kubectl -n craftcube apply -f roundcube-reference.yaml
+#   UI: http://k8s3.lan:30091  (login with any user@mailpit; mailpit accepts
+#   any credentials — use test@example.org / secret to match CraftCube)
+#
+# Pin the reference to the current Roundcube release (1.7.5); the vendored
+# reference tree in ../../roundcubemail is the post-1.7.4 snapshot.
+# Mirrors docker/docker-compose.rc.yml otherwise (apache, sqlite, elastic,
+# plugins disabled). NOT part of the CraftCube product — comparison harness.
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: roundcube-reference-db
+  labels:
+    app: roundcube-reference
+spec:
+  accessModes: [ReadWriteOnce]
+  storageClassName: microk8s-hostpath
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: roundcube-reference
+  labels:
+    app: roundcube-reference
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: roundcube-reference
+  template:
+    metadata:
+      labels:
+        app: roundcube-reference
+    spec:
+      containers:
+        - name: roundcube
+          image: docker.io/roundcube/roundcubemail:1.7.5-apache
+          ports:
+            - name: http
+              containerPort: 80
+          env:
+            - name: ROUNDCUBEMAIL_DEFAULT_HOST
+              value: craftcube-dovecot
+            - name: ROUNDCUBEMAIL_DEFAULT_PORT
+              value: "143"
+            - name: ROUNDCUBEMAIL_SMTP_SERVER
+              value: craftcube-mailpit
+            - name: ROUNDCUBEMAIL_SMTP_PORT
+              value: "1025"
+            - name: ROUNDCUBEMAIL_DB_TYPE
+              value: sqlite
+            - name: ROUNDCUBEMAIL_SKIN
+              value: elastic
+            - name: ROUNDCUBEMAIL_PLUGINS
+              value: ""
+          volumeMounts:
+            - name: db
+              mountPath: /var/roundcube/db
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 5
+          resources:
+            requests:
+              cpu: 100m
+              memory: 192Mi
+            limits:
+              memory: 512Mi
+      volumes:
+        - name: db
+          persistentVolumeClaim:
+            claimName: roundcube-reference-db
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: roundcube-reference
+  labels:
+    app: roundcube-reference
+spec:
+  type: NodePort
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      nodePort: 30091
+  selector:
+    app: roundcube-reference

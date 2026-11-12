@@ -6,6 +6,7 @@ import sqlite3
 import threading
 from datetime import datetime, timedelta
 
+from . import util
 from .util import format_address  # noqa: F401 (kept symmetric)
 
 SCHEMA = """
@@ -34,7 +35,8 @@ CREATE TABLE IF NOT EXISTS contacts (
   firstname varchar(128) NOT NULL default '',
   surname varchar(128) NOT NULL default '',
   vcard text NOT NULL default '',
-  words text NOT NULL default ''
+  words text NOT NULL default '',
+  photo blob default null
 );
 CREATE INDEX IF NOT EXISTS ix_contacts_user_id ON contacts(user_id, del);
 
@@ -115,6 +117,9 @@ CREATE TABLE IF NOT EXISTS responses (
 _lock = threading.Lock()
 
 
+_UNSET = object()  # "field absent from form" sentinel (vs explicit clear)
+
+
 def now():
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -126,6 +131,10 @@ class Store:
         self._local = threading.local()
         with self._conn() as c:
             c.executescript(SCHEMA)
+            # RC contacts table has a photo blob; add it to pre-existing DBs
+            cols = [r["name"] for r in c.execute("PRAGMA table_info(contacts)")]
+            if "photo" not in cols:
+                c.execute("ALTER TABLE contacts ADD COLUMN photo blob")
 
     def _conn(self):
         c = getattr(self._local, "conn", None)
@@ -239,7 +248,8 @@ class Store:
 
     def identities(self, user_id):
         return self._conn().execute(
-            'SELECT * FROM identities WHERE user_id = ? AND del = 0 ORDER BY standard DESC, identity_id',
+            'SELECT * FROM identities WHERE user_id = ? AND del = 0'
+            ' ORDER BY standard DESC, name ASC, email ASC, identity_id ASC',
             (user_id,),
         ).fetchall()
 
@@ -333,9 +343,11 @@ class Store:
         sql = "SELECT * FROM contacts WHERE user_id = ? AND del = 0"
         args = [user_id]
         if query:
-            like = f"%{query}%"
-            sql += " AND (name LIKE ? OR email LIKE ? OR firstname LIKE ? OR surname LIKE ?)"
-            args += [like] * 4
+            # rcube_contacts::search() quick '*' mode: every normalized query
+            # token must be present as a substring of the words column
+            for tok in util.normalize_string(query, as_array=True, minlen=1):
+                sql += " AND words LIKE ?"
+                args.append(f"%{tok}%")
         if group:
             sql += " AND contact_id IN (SELECT contact_id FROM contactgroupmembers WHERE contactgroup_id = ?)"
             args.append(group)
@@ -350,8 +362,17 @@ class Store:
             "SELECT * FROM contacts WHERE user_id = ? AND contact_id = ? AND del = 0", (user_id, contact_id)
         ).fetchone()
 
-    def contact_save(self, user_id, data, contact_id=None):
-        words = " ".join(filter(None, [data["name"], data["email"], data["firstname"], data["surname"]])).lower()
+    def contact_photo(self, user_id, contact_id):
+        """Raw photo bytes or None (RC stores photo as a separate blob column)."""
+        row = self._conn().execute(
+            "SELECT photo FROM contacts WHERE user_id = ? AND contact_id = ? AND del = 0",
+            (user_id, contact_id),
+        ).fetchone()
+        return row["photo"] if row and row["photo"] else None
+
+    def contact_save(self, user_id, data, contact_id=None, photo=_UNSET):
+        words = data.get("words") or " ".join(
+            filter(None, [data["name"], data["email"], data["firstname"], data["surname"]])).lower()
         with _lock:
             c = self._conn()
             if contact_id:
@@ -361,13 +382,18 @@ class Store:
                     (data["name"], data["email"], data["firstname"], data["surname"],
                      data.get("vcard", ""), words, now(), user_id, contact_id),
                 )
+                if photo is not _UNSET:
+                    # RC save.php: photo '' means delete (form '-del-' marker)
+                    c.execute("UPDATE contacts SET photo=? WHERE user_id=? AND contact_id=?",
+                              (photo or None, user_id, contact_id))
                 c.commit()
                 return contact_id
             cur = c.execute(
-                """INSERT INTO contacts (user_id, name, email, firstname, surname, vcard, words, changed)
-                   VALUES (?,?,?,?,?,?,?,?)""",
+                """INSERT INTO contacts (user_id, name, email, firstname, surname, vcard, words, changed, photo)
+                   VALUES (?,?,?,?,?,?,?,?,?)""",
                 (user_id, data["name"], data["email"], data["firstname"], data["surname"],
-                 data.get("vcard", ""), words, now()),
+                 data.get("vcard", ""), words, now(),
+                 photo if photo is not _UNSET else None),
             )
             c.commit()
             return cur.lastrowid
@@ -388,12 +414,23 @@ class Store:
     def contactgroup_save(self, user_id, name, group_id=None):
         with _lock:
             c = self._conn()
+            # rcube_contacts::unique_groupname() — append ' 2', ' 3', ... on
+            # collision (used by both create_group and rename_group, and like
+            # the original it counts a group's own name as a collision)
+            check, num = name, 2
+            while c.execute(
+                    "SELECT 1 FROM contactgroups WHERE del = 0 AND user_id = ? AND name = ?",
+                    (user_id, check)).fetchone():
+                check = f"{name} {num}"
+                num += 1
+            name = check
             if group_id:
                 c.execute("UPDATE contactgroups SET name = ?, changed = ? WHERE user_id = ? AND contactgroup_id = ?",
                           (name, now(), user_id, group_id))
             else:
                 c.execute("INSERT INTO contactgroups (user_id, name, changed) VALUES (?,?,?)", (user_id, name, now()))
             c.commit()
+            return name
 
     def contactgroup_delete(self, user_id, group_id):
         with _lock:

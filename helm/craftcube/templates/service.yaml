@@ -11,5 +11,8 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
+      {{- with .Values.service.nodePort }}
+      nodePort: {{ . }}
+      {{- end }}
   selector:
     {{- include "craftcube.selectorLabels" . | nindent 4 }}

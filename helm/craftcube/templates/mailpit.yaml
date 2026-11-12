@@ -1,0 +1,109 @@
+{{- if .Values.mailpit.enabled }}
+{{- $fullName := include "craftcube.fullname" . -}}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ $fullName }}-mailpit-data
+  labels:
+    {{- include "craftcube.labels" . | nindent 4 }}
+    app.kubernetes.io/component: mailpit
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.mailpit.persistence.size | quote }}
+  {{- with .Values.mailpit.persistence.storageClassName }}
+  storageClassName: {{ . }}
+  {{- end }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $fullName }}-mailpit
+  labels:
+    {{- include "craftcube.labels" . | nindent 4 }}
+    app.kubernetes.io/component: mailpit
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: {{ $fullName }}-mailpit
+  template:
+    metadata:
+      labels:
+        # deliberately NOT craftcube.selectorLabels: the app's Service
+        # selector must never match mailpit pods (port name 'http' exists
+        # on both, traffic would be cross-routed)
+        app: {{ $fullName }}-mailpit
+    spec:
+      containers:
+        - name: mailpit
+          image: {{ .Values.mailpit.image | quote }}
+          imagePullPolicy: {{ .Values.mailpit.imagePullPolicy }}
+          ports:
+            - name: smtp
+              containerPort: 1025
+            - name: http
+              containerPort: 8025
+          env:
+            - name: MP_SMTP_AUTH_ACCEPT_ANY
+              value: "1"
+            - name: MP_SMTP_AUTH_ALLOW_INSECURE
+              value: "1"
+            - name: MP_MAX_MESSAGES
+              value: {{ .Values.mailpit.maxMessages | quote }}
+            - name: MP_DATABASE
+              value: /data/mailpit.db
+            {{- if .Values.mailpit.relay.enabled }}
+            - name: MP_SMTP_RELAY_HOST
+              value: {{ .Values.mailpit.relay.host | quote }}
+            - name: MP_SMTP_RELAY_PORT
+              value: {{ .Values.mailpit.relay.port | quote }}
+            {{- end }}
+          {{- if .Values.mailpit.relay.enabled }}
+          command: ["/mailpit", "--smtp-relay-all"]
+          {{- end }}
+          volumeMounts:
+            - name: data
+              mountPath: /data
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 3
+            periodSeconds: 5
+          resources:
+            {{- toYaml .Values.mailpit.resources | nindent 12 }}
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: {{ $fullName }}-mailpit-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $fullName }}-mailpit
+  labels:
+    {{- include "craftcube.labels" . | nindent 4 }}
+    app.kubernetes.io/component: mailpit
+spec:
+  type: {{ .Values.mailpit.service.type }}
+  ports:
+    - name: smtp
+      port: 1025
+      targetPort: smtp
+      {{- with .Values.mailpit.service.smtpNodePort }}
+      nodePort: {{ . }}
+      {{- end }}
+    - name: http
+      port: 8025
+      targetPort: http
+      {{- with .Values.mailpit.service.uiNodePort }}
+      nodePort: {{ . }}
+      {{- end }}
+  selector:
+    app: {{ $fullName }}-mailpit
+{{- end }}

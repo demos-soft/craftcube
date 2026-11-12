@@ -9,7 +9,17 @@
         <span class="header-title">{{ 'Edit' if row else 'Create' }} contact</span>
       </div>
       <div class="formcontainer content">
-        <form method="post" class="formcontent">
+        <form method="post" class="formcontent" enctype="multipart/form-data">
+
+          <fieldset id="contactphoto" class="contact-photo">
+            <legend class="voice">{{ 'Contact photo'|lc }}</legend>
+            <img id="contactpic" class="image-upload"
+                 src="{{ url_for('views.contact_photo', cid=row.contact_id) if row and row['photo'] else url_for('static', filename='images/contactpic.svg') }}" alt="">
+            <input type="file" name="photo" id="rcmfd_photo" accept="image/*" class="file">
+            {% if row and row['photo'] %}
+            <label class="delphoto"><input type="checkbox" name="delete_photo" value="1"> {{ 'Delete photo'|lc }}</label>
+            {% endif %}
+          </fieldset>
 
           <fieldset class="contact-section">
             <legend>{{ 'Name and Organization'|lc }}</legend>
@@ -85,7 +95,7 @@
                 <tr>
                   <td class="title">
                     <select name="_phone_type[]" class="custom-select">
-                      {% for t in contact_types %}
+                      {% for t in contact_phone_types %}
                       <option value="{{ t }}"{{ ' selected' if typ == t }}>{{ t|capitalize }}</option>
                       {% endfor %}
                     </select>
@@ -96,7 +106,7 @@
                 <tr>
                   <td class="title">
                     <select name="_phone_type[]" class="custom-select">
-                      {% for t in contact_types %}<option value="{{ t }}">{{ t|capitalize }}</option>{% endfor %}
+                      {% for t in contact_phone_types %}<option value="{{ t }}">{{ t|capitalize }}</option>{% endfor %}
                     </select>
                   </td>
                   <td class="field"><input type="text" name="_phone_value[]" value="" class="form-control"></td>
@@ -153,10 +163,11 @@
                   <td class="title"><label for="inputgender">{{ 'Gender'|lc }}</label></td>
                   <td class="field">
                     <select name="gender" id="inputgender" class="custom-select" style="max-width:10rem">
-                      <option value=""{{ ' selected' if not ext.gender }}></option>
-                      <option value="M"{{ ' selected' if ext.gender == 'M' }}>Male</option>
-                      <option value="F"{{ ' selected' if ext.gender == 'F' }}>Female</option>
-                      <option value="O"{{ ' selected' if ext.gender == 'O' }}>{{ 'Other'|lc }}</option>
+                      <option value=""{{ ' selected' if not ext.gender }}>---</option>
+                      <option value="male"{{ ' selected' if ext.gender == 'male' }}>{{ 'male'|lc }}</option>
+                      <option value="female"{{ ' selected' if ext.gender == 'female' }}>{{ 'female'|lc }}</option>
+                      <option value="non-binary"{{ ' selected' if ext.gender == 'non-binary' }}>non-binary</option>
+                      <option value="other"{{ ' selected' if ext.gender == 'other' }}>{{ 'other'|lc }}</option>
                     </select>
                   </td>
                 </tr>

@@ -23,10 +23,28 @@
     <p class="copyright">Copyright &copy; 2026, The {{ product_name }} Dev Team</p>
     <p class="license">This program is free software; you can redistribute it and/or
       modify it under the terms of the
-      <a href="https://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a>
+      <a href="https://www.gnu.org/licenses/gpl.html" target="_blank" rel="noopener">GNU General Public License</a>
       as published by the Free Software Foundation, either version 3 of the License,
       or (at your option) any later version.<br>Some
-      <a href="https://roundcube.net/license" target="_blank">exceptions</a> for skins &amp; plugins apply.</p>
+      <a href="https://roundcube.net/license" target="_blank" rel="noopener">exceptions</a> for skins &amp; plugins apply.</p>
+    <div class="readtext table-responsive-sm">
+      <h3>{{ 'Interface skin'|lc }}</h3>
+      <p><span class="skinitem"><span class="skinname">Elastic</span><br>
+         <span class="skinauthor">by Aleksander Machniak</span><br>
+         <span class="skinlicense">License:&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/"
+         target="_blank" rel="noopener" tabindex="-1">Creative Commons Attribution-ShareAlike</a></span><br>
+         </span></p>
+      <h3>{{ 'Installed plugins'|lc }}</h3>
+      <table id="pluginlist" class="records-table table">
+        <thead class="thead-default"><tr>
+          <th class="name">{{ 'Plugin'|lc }}</th>
+          <th class="version">{{ 'Version'|lc }}</th>
+          <th class="license">{{ 'License'|lc }}</th>
+          <th class="source">{{ 'Source'|lc }}</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
   </div>
 </body>
 </html>

@@ -6,29 +6,51 @@ form (or the configured admin account when per-user passwords are disabled).
 import contextlib
 import email
 import email.utils
+import hashlib
 import imaplib
+import os
+import random
 import re
 import smtplib
 import ssl as _ssl
+import string
+import time
+import unicodedata
 from email.message import EmailMessage
 from email.utils import parsedate_to_datetime
 
-from .util import format_address, parse_header_date
+from . import util
+from .util import format_address, parse_header_date, to_local
 
 # fetched envelope: uid, flags, size, date, from, to, subject, reply-to, in-reply-to, message-id, attachments hint
 # LIST-POST drives the reference's per-message "ml" flag (reply-list enable)
 FETCH_ITEMS = ("(FLAGS INTERNALDATE RFC822.SIZE ENVELOPE BODYSTRUCTURE "
                "BODY.PEEK[HEADER.FIELDS (LIST-POST)])")
 
+def _coll(s):
+    """Sort key approximating JS localeCompare (accent- and case-blind)."""
+    return "".join(c for c in unicodedata.normalize("NFD", str(s).casefold())
+                   if not unicodedata.combining(c))
+
+def _subject_key(s):
+    """Dovecot subject_sort_cmp semantics: strip repeated Re:/Fw:/... prefixes,
+    drop spaces, compare accent- and case-blind."""
+    s = str(s or "")
+    prev = None
+    while prev != s:
+        prev = s
+        s = re.sub(r"^\s*(re|fw|fwd|aw|sv|vs):\s*", "", s, count=1, flags=re.I)
+    return _coll(s).replace(" ", "").replace("\t", "")
+
 SORTS = {
     "": (lambda m: m["uid"] or 0, True),          # no sorting (arrival order)
     "arrival": (lambda m: m["uid"] or 0, True),
     "date": (lambda m: m["date"].timestamp() if m.get("date") else 0, True),
-    "subject": (lambda m: (m.get("subject") or "").lower(), False),
-    "from": (lambda m: (m.get("from") or "").lower(), False),
-    "to": (lambda m: (m.get("to") or "").lower(), False),
-    "cc": (lambda m: (m.get("cc") or "").lower(), False),
-    "fromto": (lambda m: (m.get("from") or m.get("to") or "").lower(), False),
+    "subject": (lambda m: _subject_key(m.get("subject") or ""), False),
+    "from": (lambda m: _coll(m.get("from") or ""), False),
+    "to": (lambda m: _coll(m.get("to") or ""), False),
+    "cc": (lambda m: _coll(m.get("cc") or ""), False),
+    "fromto": (lambda m: _coll(m.get("from") or m.get("to") or ""), False),
     "size": (lambda m: m.get("size") or 0, True),
 }
 
@@ -83,8 +105,22 @@ class Imap:
 
     # ------------------------------------------------------------ folders
 
-    def list_folders(self):
-        typ, data = self.conn.list()
+    def list_folders(self, subscribed_only=False):
+        if subscribed_only:
+            # the reference's mail tree lists subscribed folders only
+            # (rcube_imap::listfolders(); LIST RETURN (SUBSCRIBED) is its
+            # LIST-EXTENDED path). Fall back to the full LIST if the server
+            # chokes on the extended syntax.
+            try:
+                typ, _ = self.conn._simple_command(
+                    "LIST", "RETURN", "(SUBSCRIBED)", '""', "*")
+                typ, data = self.conn._untagged_response(typ, None, "LIST")
+                if typ != "OK":
+                    typ, data = self.conn.list()
+            except imaplib.IMAP4.error:
+                typ, data = self.conn.list()
+        else:
+            typ, data = self.conn.list()
         out = []
         if typ != "OK":
             return out
@@ -124,6 +160,13 @@ class Imap:
             0 if f["name"].upper() == "INBOX" else
             rc_special_order.get(f["special"], 6),
             f["name"].lower()))
+        if subscribed_only and out and out[0]["name"].upper() != "INBOX":
+            # INBOX is implicitly subscribed even when absent from LSUB
+            out.insert(0, {"name": "INBOX", "flags": ["\\Subscribed"],
+                           "special": None, "inferior": False})
+        elif subscribed_only and not out:
+            out = [{"name": "INBOX", "flags": ["\\Subscribed"],
+                    "special": None, "inferior": False}]
         return out
 
     def status(self, folder):
@@ -139,10 +182,17 @@ class Imap:
         u = re.search(r"UNSEEN (\d+)", s)
         return (int(m.group(1)) if m else 0), (int(u.group(1)) if u else 0)
 
-    def create_folder(self, name):
+    def create_folder(self, name, subscribe=False):
         typ, msg = self.conn.create(_q(name))
         if typ != "OK":
             raise MailError(msg)
+        # rcube_imap::create_folder(): "try to subscribe it" when asked
+        # (all runtime auto-creations in the reference pass subscribe=true)
+        if subscribe:
+            self.subscribe(name)
+
+    def unsubscribe(self, name):
+        self.conn.unsubscribe(_q(name))
 
     def delete_folder(self, name):
         typ, msg = self.conn.delete(_q(name))
@@ -399,8 +449,8 @@ class Mailbox:
         except AttributeError:
             return self.config[key]
 
-    def folders(self):
-        folders = self.imap.list_folders()
+    def folders(self, subscribed_only=False):
+        folders = self.imap.list_folders(subscribed_only=subscribed_only)
         res = []
         for f in folders:
             if f.get("inferior"):
@@ -453,9 +503,10 @@ class Mailbox:
         if search_filter and search_filter != "all":
             crit += SEARCH_FILTERS.get(search_filter) or []
         elif (getattr(self, "prefs", None) or {}).get("skip_deleted") \
-                and not search_filter:
+                and search_filter in (None, "", "all"):
             # rcube_imap::search adds UNDELETED to every listing when the
-            # skip_deleted pref is on (rcube_imap.php:1500)
+            # skip_deleted pref is on (rcube_imap.php:1500); an explicit
+            # filter (e.g. 'deleted') wins over the pref
             crit += ["UNDELETED"]
         if search_interval and search_interval != "all":
             import datetime
@@ -576,6 +627,17 @@ class Mailbox:
                      for f in (imaplib.ParseFlags(meta.encode()) if "FLAGS" in meta else [])]
             msg = email.message_from_bytes(raw)
             d = parse_header_date(msg)
+            if d is None:
+                # rcube_imap_generic.php:2182 — non-existent/empty Date:
+                # header, use INTERNALDATE
+                im = re.search(r'INTERNALDATE "([^"]+)"', meta)
+                if im:
+                    from datetime import datetime
+                    try:
+                        d = to_local(datetime.strptime(
+                            im.group(1), "%d-%b-%Y %H:%M:%S %z"))
+                    except ValueError:
+                        d = None
             ct = (msg.get_content_type() or "")
             # attachment hint from BODYSTRUCTURE: disposition "attachment" or a
             # filename parameter anywhere in the structure
@@ -811,7 +873,7 @@ class Mailbox:
     def save_draft(self, raw_bytes, replace_uid=None):
         drafts = self.special("drafts") or "Drafts"
         try:
-            self.imap.create_folder(drafts)
+            self.imap.create_folder(drafts, subscribe=True)
         except MailError:
             pass
         if replace_uid:
@@ -827,19 +889,18 @@ class Mailbox:
         except (MailError, ValueError, TypeError):
             pass
 
-    def send(self, msg: EmailMessage, raw_bytes, store_target=None):
+    def send(self, msg: EmailMessage, raw_bytes, store_target=None, extra_rcpts=None):
         """Send via SMTP, then store a copy. store_target: None → the Sent
-        special folder, '' → don't store, otherwise that folder."""
+        special folder, '' → don't store, otherwise that folder.
+        extra_rcpts: Bcc addresses — envelope only, never a header
+        (rcmail_sendmail::send_message / create_message_header)."""
         cfg = self
         smtp_user = getattr(self, "smtp_user", None)
         smtp_pass = getattr(self, "smtp_pass", None)
-        # envelope recipients include Bcc; the header itself must not be
-        # transmitted to the other recipients (RFC 5322 §5)
         rcpts = []
-        for h in ("To", "Cc", "Bcc"):
+        for h in ("To", "Cc"):
             rcpts += [a for _d, a in email.utils.getaddresses([msg.get(h, "") or ""]) if a]
-        if "Bcc" in msg:
-            del msg["Bcc"]
+        rcpts += [a for a in (extra_rcpts or []) if a]
         try:
             if cfg.conf("SMTP_SSL"):
                 s = smtplib.SMTP_SSL(cfg.conf("SMTP_HOST"), cfg.conf("SMTP_PORT"), timeout=30)
@@ -854,7 +915,7 @@ class Mailbox:
                     s.login(smtp_user, smtp_pass)
                 except smtplib.SMTPException:
                     pass  # relay without auth (mailpit)
-            s.sendmail(msg.get("From", smtp_user or ""), rcpts, msg.as_string())
+            s.sendmail(msg.get("From", smtp_user or ""), rcpts, wire_bytes(msg))
             s.quit()
         except (smtplib.SMTPException, OSError) as e:
             raise MailError(str(e)) from e
@@ -863,7 +924,7 @@ class Mailbox:
         sent = store_target or self.special("sent")
         if sent:
             try:
-                self.imap.create_folder(sent)
+                self.imap.create_folder(sent, subscribe=True)
             except MailError:
                 pass
             self.imap.append(sent, raw_bytes, ["\\Seen"])
@@ -871,57 +932,318 @@ class Mailbox:
 
 def build_message(from_addr, from_name, to, cc, bcc, subject, body, html=False,
                   attachments=None, in_reply_to=None, references=None, reply_to=None,
-                  priority=None, mdn=False, followup_to=None, force_7bit=False):
-    """Compose an RFC2822 message. attachments: [(filename, ctype, bytes)]."""
-    msg = EmailMessage()
+                  priority=None, mdn=False, followup_to=None, force_7bit=False,
+                  flowed=True, keepformatting=False):
+    """Compose an RFC2822 message the way rcmail_sendmail::create_message()
+    does: same header set and order (MIME-Version, Date, From, To, Cc,
+    Subject, Reply-To + Mail-Reply-To, Mail-Followup-To, In-Reply-To,
+    References, Message-ID, X-Sender, DNT, X-Priority), format=flowed plain
+    bodies (send_format_flowed default true; keepformatting disables),
+    US-ASCII charset for ASCII bodies, <md5@sender-domain> Message-IDs.
+    Bcc is never a header (envelope only). attachments: [(filename, ctype, bytes)]."""
+    import hashlib
+    from email.message import Message
+    msg = Message()   # plain Message: set_raw/items stay verbatim
     frm = format_address(from_name, from_addr) if from_name else from_addr
-    msg["From"] = frm
-    if to:
-        msg["To"] = ", ".join(to)
-    if cc:
-        msg["Cc"] = ", ".join(cc)
-    if bcc:
-        msg["Bcc"] = ", ".join(bcc)
-    if subject:
-        msg["Subject"] = subject
-    msg["Date"] = email.utils.formatdate(localtime=True)
-    msg["Message-ID"] = email.utils.make_msgid(domain="craftcube.local")
-    if in_reply_to:
-        msg["In-Reply-To"] = in_reply_to
-    if references:
-        msg["References"] = references
-    if reply_to:
-        msg["Reply-To"] = reply_to
-    if followup_to:
-        msg["Followup-To"] = followup_to
-    if priority and priority != "3":
-        msg["X-Priority"] = priority
-        msg["Importance"] = {"1": "highest", "2": "high", "4": "low", "5": "lowest"}.get(priority, "normal")
-    if mdn:
-        msg["Disposition-Notification-To"] = frm
 
-    if attachments:
-        # EmailMessage builds multipart/mixed with the body part itself
+    enc = encode_header_value
+
+    def hdr(name, value):
+        msg.set_raw(name, enc(name, value))   # verbatim: no policy re-parse
+
+    hdr("MIME-Version", "1.0")
+    hdr("Date", email.utils.formatdate(localtime=True))
+    hdr("From", frm)
+    if to:
+        hdr("To", ", ".join(to))
+    if cc:
+        hdr("Cc", ", ".join(cc))
+    if subject:
+        hdr("Subject", subject)
+    if reply_to:
+        hdr("Reply-To", reply_to)
+        hdr("Mail-Reply-To", reply_to)
+    if followup_to:
+        hdr("Mail-Followup-To", followup_to)
+    if in_reply_to:
+        hdr("In-Reply-To", in_reply_to)
+    if references:
+        hdr("References", references)
+    domain = from_addr.rpartition("@")[2] or "localhost"
+    uid_seed = f"{time.time()}{os.getpid()}{random.random()}"  # noqa: S311 - id, not crypto
+    hdr("Message-ID", "<" + hashlib.md5(uid_seed.encode(), usedforsecurity=False).hexdigest()
+        + "@" + domain + ">")
+    hdr("X-Sender", from_addr)
+    if mdn:
+        hdr("Disposition-Notification-To", frm)
+    if priority and priority != "3":
+        label = {"1": "Highest", "2": "High", "4": "Low", "5": "Lowest"}.get(str(priority))
+        if label:
+            hdr("X-Priority", f"{priority} ({label})")
+
+    flowed = flowed and not keepformatting
+
+    def line_prep(text):
+        text = text or ""
+        if flowed:
+            text = util.format_flowed(text, 74)
+        elif not keepformatting:
+            text = util.wordwrap_rc(text, 72, "\r\n", False)
+        text = util.wordwrap_rc(text, 998, "\r\n", True)
+        return re.sub(r"\r?\n", "\r\n", text)
+
+    def text_charset_cte(txt):
         try:
-            (body or "").encode("ascii")
-            msg.set_content(body or "", subtype="html" if html else "plain")
+            txt.encode("ascii")
+            return "US-ASCII", "7bit"
         except UnicodeEncodeError:
-            cte = "quoted-printable" if (force_7bit or html) else "8bit"
-            msg.set_content(body or "", subtype="html" if html else "plain", cte=cte)
-        for fname, ctype, data in attachments:
-            maintype, _, subtype = (ctype or "application/octet-stream").partition("/")
-            msg.add_attachment(data, maintype=maintype or "application",
-                               subtype=subtype or "octet-stream", filename=fname)
-        return msg
+            pass
+        return ("UTF-8", "quoted-printable") if force_7bit else ("UTF-8", "8bit")
+
+    def text_part(txt, sub=True):
+        cs, cte = text_charset_cte(txt)
+        data = txt.encode("ascii" if cs == "US-ASCII" else "utf-8")
+        if cte == "quoted-printable":
+            data = _qp_body(data, keep_trailing=False)
+        ct = "text/plain; charset=" + cs
+        if flowed:
+            ct += ";\r\n format=flowed"
+        heads = [("Content-Transfer-Encoding", cte), ("Content-Type", ct)] if sub \
+            else [("Content-Type", ct), ("Content-Transfer-Encoding", cte)]
+        return _rc_part(heads, data)
+
+    top_headers = list(msg.items())
+
     if html:
-        msg.set_content(body or "", subtype="html", cte="quoted-printable")
+        body_crlf = re.sub(r"\r?\n", "\r\n", body or "")
+        hosted = ('<html><head><meta http-equiv="Content-Type" content="text/html;'
+                  ' charset=UTF-8" /></head><body style=\'font-size: 10pt;'
+                  " font-family: Verdana,Geneva,sans-serif'>\r\n"
+                  + body_crlf + "\r\n</body></html>\r\n")
+        html_part = _rc_part(
+            [("Content-Transfer-Encoding", "quoted-printable"),
+             ("Content-Type", "text/html; charset=UTF-8")],
+            _qp_body(hosted.encode("utf-8")))
+        plain_body = line_prep(util.html_to_text(body or "", width=0))
+        parts = []
+        if plain_body.strip():
+            parts.append(text_part(plain_body, sub=True))
+        parts.append(html_part)
     else:
-        # rcmail_sendmail.php:292 - plain bodies with non-ASCII content use
-        # quoted-printable when force_7bit is on, otherwise 8bit; pure-ASCII
-        # bodies stay 7bit (set_content's own fallback)
-        try:
-            (body or "").encode("ascii")
-            msg.set_content(body or "")
-        except UnicodeEncodeError:
-            msg.set_content(body or "", cte="quoted-printable" if force_7bit else "8bit")
-    return msg
+        parts = [text_part(line_prep(body))]
+
+    if not attachments and len(parts) == 1:
+        # top-level single part: Content-Type before Content-Transfer-Encoding
+        solo = parts[0]
+        ordered = [(n, v) for n, v in (("Content-Type", solo.get("Content-Type")),
+                                       ("Content-Transfer-Encoding",
+                                        solo.get("Content-Transfer-Encoding"))) if v]
+        top = _rc_part(top_headers + ordered, solo.get_payload())
+    elif not attachments:
+        top = _rc_part(top_headers, None, children=parts,
+                       content_type=f'multipart/alternative;\r\n boundary="{_boundary()}"')
+    else:
+        boundary = _boundary()
+        if len(parts) > 1:
+            body_child = _rc_part(
+                [("Content-Type", f'multipart/alternative;\r\n boundary="{boundary}"')],
+                None, children=parts)
+        else:
+            body_child = parts[0]
+        pl = body_child.get_payload()
+        if len(parts) == 1 and isinstance(pl, (bytes, str)) and pl and not pl.endswith("\r\n"):
+            body_child.set_payload(pl + "\r\n")  # setTXTBody(..., append_newline)
+        children = [body_child]
+        for fname, ctype, data in attachments or []:
+            children.append(_attachment_part(fname, ctype, data))
+        top = _rc_part(top_headers, None, children=children,
+                       content_type=f'multipart/mixed;\r\n boundary="{boundary}"')
+    return top
+
+
+_COMMA_HEADERS = {
+    "from", "to", "cc", "bcc", "sender", "reply-to",
+    "resent-from", "resent-to", "resent-cc", "resent-bcc",
+    "resent-sender", "resent-reply-to", "mail-reply-to", "mail-followup-to",
+    "return-receipt-to", "disposition-notification-to",
+}
+
+_Q2047_OK = set(string.ascii_letters + string.digits) | set("!*+-/")
+
+
+def _encode_header_value(value, prefix_len=0):
+    """Mail_mimePart::encodeMB() Q-scheme (mbstring is present in RC): walk
+    characters; a multi-octet char never straddles encoded-word folds;
+    line_length starts at prefix_len; folds between encoded-words."""
+    prefix, suffix = "=?UTF-8?Q?", "?="
+    max_len = 75 - len(prefix) - len(suffix)
+    result = ""
+    line_length = prefix_len
+    for ch in value:
+        if ch == " ":
+            enc, clen = "_", 1
+        elif ch.isascii() and ch in _Q2047_OK:
+            enc, clen = ch, 1
+        else:
+            enc = "".join(f"={b:02X}" for b in ch.encode("utf-8"))
+            clen = len(enc)
+        if line_length + clen > max_len:
+            if result:
+                result += "\n"
+            line_length = 0
+        result += enc
+        line_length += clen
+    return prefix + result.replace("\n", suffix + "\r\n " + prefix) + suffix
+
+
+def _php_wordwrap(text, width=76, brk="\r\n "):
+    """PHP wordwrap(): '\n'-delimited lines wrapped independently at spaces."""
+    out = []
+    for line in text.split("\n"):
+        cur = ""
+        parts = []
+        started = False
+        for word in line.split(" "):
+            if not started:
+                cur, started = word, True
+            elif len(cur) + 1 + len(word) <= width:
+                cur += " " + word
+            else:
+                parts.append(cur)
+                cur = word
+        parts.append(cur)
+        out.append(brk.join(parts))
+    return "\n".join(out)
+
+
+_EMAIL_RX = re.compile(r'(<[^<>\s"@]+@[^<>\s"@]+>|[^\s<>"@]+@[^\s<>"@]+)$')
+
+
+def encode_header_value(name, value):
+    """Mail_mimePart::encodeHeader(): structured address headers keep the
+    addr-spec raw and Q-encode only the display phrase; other headers are
+    encoded whole when they contain non-ASCII."""
+    if not value:
+        return value
+    if name.lower() in _COMMA_HEADERS:
+        parts, cur, quoted = [], "", False
+        for ch in value:
+            if ch == '"':
+                quoted = not quoted
+            if ch == "," and not quoted:
+                parts.append(cur)
+                cur = ""
+            else:
+                cur += ch
+        parts.append(cur)
+        acc = ""
+        for part in parts:
+            part = re.sub(r"\r?\n[\s\t]*", " ", part).strip()
+            if not part:
+                continue
+            acc += ", " if acc else f"{name}: "
+            m = _EMAIL_RX.search(part)
+            if m:
+                addr = m.group(0)
+                word = part[:m.start()].strip()
+                if word and not word.isascii():
+                    if len(word) > 1 and word[0] == '"' and word[-1] == '"':
+                        word = word[1:-1].replace('\\"', '"').replace("\\\\", "\\")
+                    pos = acc.rfind("\r\n")
+                    last_len = len(acc) - (pos + 2) if pos != -1 else len(acc)
+                    word = _encode_header_value(word, last_len)
+                elif word and not (word[0] == '"' and word[-1] == '"') \
+                        and re.search(r'[()<>\.\[\]@,;:"]', word):
+                    word = '"' + word.replace("\\", "\\\\").replace('"', '\\"') + '"'
+                acc += (word + " " + addr) if word else addr
+            else:
+                # Mail_mime: no addr-spec found, don't encode
+                acc += part
+            acc = _php_wordwrap(acc, 76, "\r\n ")
+        return re.sub(rf"^{re.escape(name)}:(\r\n)* ", "", acc)
+    if not re.search(r"[^\s!-~]", value):
+        return value
+    if len(value) > 1 and value[0] == '"' and value[-1] == '"':
+        value = value[1:-1].replace('\"', '"').replace("\\\\", "\\")
+    return _encode_header_value(value, len(name) + 2)
+
+
+def _b64_body(data):
+    import base64
+    b64 = base64.encodebytes(data).rstrip(b"\n")
+    return b64.replace(b"\n", b"\r\n")   # chunk_split($s, 76, CRLF), no trailing CRLF
+
+
+def _qp_body(data, keep_trailing=True):
+    import quopri
+    out = quopri.encodestring(re.sub(rb"\r\n", b"\n", data)).replace(b"\n", b"\r\n")
+    trailing = out.endswith(b"\r\n") and data.endswith(b"\r\n")
+    out = re.sub(rb"(\r\n)+$", b"", out)
+    return out + (b"\r\n" if keep_trailing and trailing else b"")
+
+
+def _boundary():
+    # Mail_mime uniqueid(): '=_<md5 hex>'
+    seed = f"{time.time()}{os.getpid()}{random.random()}"  # noqa: S311 - id, not crypto
+    return "=_" + hashlib.md5(seed.encode(), usedforsecurity=False).hexdigest()
+
+
+def _rc_part(headers, payload=None, children=None, content_type=None):
+    """Raw header/value MIME node (email.message.Message with set_raw)."""
+    from email.message import Message
+    p = Message()
+    for n, v in headers:
+        p.set_raw(n, v)
+    if content_type:
+        p.set_raw("Content-Type", content_type)
+    if children is not None:
+        p.set_payload(list(children))
+    elif payload is not None:
+        p.set_payload(payload)
+    return p
+
+
+def _attachment_part(fname, ctype, data):
+    """Mail_mimePart subpart: CTE first, then Content-Type with name= and
+    Content-Disposition with filename= on a folded line (RFC2231 if non-ASCII)."""
+    def qname(key, val):
+        if val.isascii() and not re.search(r'[\s"\\:;<>,@\[\]()]', val):
+            return key + "=" + val          # Mail_mime: atom, unquoted
+        from urllib.parse import quote
+        if val.isascii():
+            return f'{key}="{val.replace(chr(92), chr(92)*2).replace(chr(34), chr(92)+chr(34))}"'
+        return f"{key}*0*=UTF-8''{quote(val, safe='')}"
+    disp = f"attachment;\r\n {qname('filename', fname)};\r\n size={len(data)}"
+    return _rc_part(
+        [("Content-Transfer-Encoding", "base64"),
+         ("Content-Type", (ctype or "application/octet-stream")
+          + ";\r\n " + qname("name", fname)),
+         ("Content-Disposition", disp)],
+        _b64_body(data))
+
+
+def wire_bytes(msg) -> bytes:
+    """Serialize verbatim with CRLF like PHP Mail_mime: headers, blank line,
+    body; multipart children each behind '--boundary', closing '--boundary--'."""
+    def ser(m):
+        buf = bytearray()
+        for n, v in m.items():
+            buf += (f"{n}: {v}" + "\r\n").encode("utf-8")
+        payload = m.get_payload()
+        if isinstance(payload, list):
+            mm = re.search(r'boundary="([^"]+)"', m.get("Content-Type") or "")
+            b = (mm.group(1) if mm else "boundary").encode()
+            buf += b"\r\n"
+            for child in payload:
+                buf += b"--" + b + b"\r\n"
+                buf += ser(child)
+                buf += b"\r\n"
+            buf += b"--" + b + b"--\r\n"
+        else:
+            buf += b"\r\n"
+            if isinstance(payload, (bytes, bytearray)):
+                buf += bytes(payload)
+            elif payload is not None:
+                buf += str(payload).encode("utf-8")
+        return bytes(buf)
+    return ser(msg)

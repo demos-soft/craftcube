@@ -1,0 +1,101 @@
+{{- if .Values.dovecot.enabled }}
+{{- $fullName := include "craftcube.fullname" . -}}
+{{- if not .Values.dovecot.image.repository }}
+{{- fail "dovecot.image.repository is required when dovecot.enabled (build it from docker/imap/)" }}
+{{- end }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ $fullName }}-mail-data
+  labels:
+    {{- include "craftcube.labels" . | nindent 4 }}
+    app.kubernetes.io/component: dovecot
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.dovecot.persistence.size | quote }}
+  {{- with .Values.dovecot.persistence.storageClassName }}
+  storageClassName: {{ . }}
+  {{- end }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $fullName }}-dovecot
+  labels:
+    {{- include "craftcube.labels" . | nindent 4 }}
+    app.kubernetes.io/component: dovecot
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: {{ $fullName }}-dovecot
+  template:
+    metadata:
+      labels:
+        app: {{ $fullName }}-dovecot
+    spec:
+      {{- with .Values.dovecot.image.pullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      initContainers:
+        # hostPath-backed PVCs arrive root-owned; the maildir must belong to
+        # vmail (uid 5000, as baked into the imap image)
+        - name: chown-maildir
+          image: {{ printf "%s:%s" .Values.dovecot.image.repository (.Values.dovecot.image.tag | default "latest") | quote }}
+          imagePullPolicy: {{ .Values.dovecot.image.pullPolicy }}
+          command: ["sh", "-c", "mkdir -p /var/mail/test/Maildir/{tmp,new,cur} && chown -R 5000:5000 /var/mail"]
+          volumeMounts:
+            - name: mail
+              mountPath: /var/mail
+      containers:
+        - name: dovecot
+          image: {{ printf "%s:%s" .Values.dovecot.image.repository (.Values.dovecot.image.tag | default "latest") | quote }}
+          imagePullPolicy: {{ .Values.dovecot.image.pullPolicy }}
+          ports:
+            - name: imap
+              containerPort: 143
+            - name: smtp
+              containerPort: 2525
+          volumeMounts:
+            - name: mail
+              mountPath: /var/mail
+          readinessProbe:
+            tcpSocket:
+              port: imap
+            initialDelaySeconds: 3
+            periodSeconds: 5
+          resources:
+            {{- toYaml .Values.dovecot.resources | nindent 12 }}
+      volumes:
+        - name: mail
+          persistentVolumeClaim:
+            claimName: {{ $fullName }}-mail-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $fullName }}-dovecot
+  labels:
+    {{- include "craftcube.labels" . | nindent 4 }}
+    app.kubernetes.io/component: dovecot
+spec:
+  type: {{ .Values.dovecot.service.type }}
+  ports:
+    - name: imap
+      port: 143
+      targetPort: imap
+      {{- with .Values.dovecot.service.imapNodePort }}
+      nodePort: {{ . }}
+      {{- end }}
+    - name: smtp
+      port: 2525
+      targetPort: smtp
+  selector:
+    app: {{ $fullName }}-dovecot
+{{- end }}

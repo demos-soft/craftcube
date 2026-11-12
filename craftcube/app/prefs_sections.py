@@ -19,6 +19,7 @@ DEFAULTS = {
     "mdn_default": 0, "dsn_default": 0, "reply_same_folder": 0,
     "reply_mode": "0", "forward_attachment": "0",
     "default_font": "Verdana", "default_font_size": "10pt",
+    "enable_autolink": 1, "keep_formatting_default": 0,
     "reply_all_mode": "0", "show_sig": "1", "sig_below": 0,
     "strip_existing_sig": 1, "sig_separator": 1,
     "spellcheck_before_send": 0, "spellcheck_ignore_syms": 0,
@@ -43,6 +44,7 @@ CHECKBOXES = [
     "pretty_date", "display_next", "standard_windows", "check_all_folders",
     "message_extwin", "message_show_email", "prefer_html", "inline_images",
     "compose_extwin", "mdn_default", "dsn_default", "reply_same_folder",
+    "enable_autolink", "keep_formatting_default",
     "sig_below", "strip_existing_sig", "sig_separator",
     "spellcheck_before_send", "spellcheck_ignore_syms", "spellcheck_ignore_nums",
     "spellcheck_ignore_caps", "force_7bit", "compose_save_localstorage",
@@ -166,6 +168,10 @@ def sections(prefs, folders):
                  "fields": [_sel("default_font", "Default font of HTML message", p),
                             _sel("default_font_size", "Default font size", p)]},
                 _sel("reply_all_mode", "Default action of [Reply all] button", p),
+            ]),
+            ("editor", "Editor Options", [
+                _cb("enable_autolink", "Automatically convert valid URLs into hyperlinks", p),
+                _cb("keep_formatting_default", "Always keep original text formatting", p),
             ]),
             ("sig", "Signature Options", [
                 _sel("show_sig", "Automatically add signature", p),

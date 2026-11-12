@@ -26,7 +26,10 @@ class Config:
     PRODUCT_NAME = os.environ.get("CRAFTCUBE_PRODUCT_NAME", "CraftCube")
     VERSION = "1.0.0"
 
-    PAGE_SIZE = int(os.environ.get("CRAFTCUBE_PAGE_SIZE", "20"))
+    # pages of the message/contact lists when the user has no preference;
+    # matches the reference defaults (config/defaults.inc.php:
+    # mail_pagesize = 50, addressbook_pagesize = 50)
+    PAGE_SIZE = int(os.environ.get("CRAFTCUBE_PAGE_SIZE", "50"))
     PER_USER_PASSWORDS = os.environ.get("CRAFTCUBE_PER_USER_PASSWORDS", "1") == "1"
     # shared-mailbox mode (PER_USER_PASSWORDS=0): authenticate IMAP/SMTP with
     # these admin credentials instead of the user's own password

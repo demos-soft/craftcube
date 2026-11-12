@@ -14,8 +14,9 @@
 body.task-login #layout-content { text-align: center; width: 100%; display: block; }
 #login-form table, #login-form tbody { display: block; }
 
-/* ---- message list: server-rendered bits the reference emits via JS ---- */
-table.messagelist { table-layout: auto; width: 100%; }
+/* ---- message list: server-rendered bits the reference emits via JS ----
+   (column sizing matches the reference: table.listing gives
+   width:100% + table-layout:fixed in the vendored skin css) */
 
 /* the stock skin hides .messagelist>thead (sorting lives in the list
    Options popup); other server-rendered listings keep their headers */
@@ -166,4 +167,29 @@ html.dark-mode .ui-widget-content, html.dark-mode .ui-widget-header { color:#c5d
    once a row is selected/clicked). */
 body.action-view:not(.has-selection) #toolbar-menu a.archive {
   display: none;
+}
+
+/* Roundcube 1.7.5 parity: the unread status dot inherits the text colour
+   (the vendored 1.6-era rules painted it yellow / dark-amber). */
+.messagelist td.subject span.msgicon.status.unread:before {
+  color: inherit;
+}
+html.dark-mode .messagelist tr:not(.flagged):not(.deleted) td.subject span.msgicon.status.unread:before {
+  color: inherit;
+}
+
+/* RC 1.7 parity: the message list lives directly in the .scroller column;
+   Craft's #mailact form must not introduce a second block box, or the list
+   table sizes to its content (736px) and overflows the 327px list column. */
+form#mailact {
+  display: contents;
+}
+
+/* CraftCube about page logo (branding addition to the Elastic about layout) */
+p.aboutlogo {
+  text-align: center;
+}
+
+p.aboutlogo #aboutlogo {
+  max-height: 96px;
 }

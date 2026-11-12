@@ -99,3 +99,46 @@ class TestVCard:
         parsed = util.vcard_parse(util.vcard_encode(f))
         assert parsed["name"] == "Bob"
         assert any("b@x.org" in str(e) for e in parsed.get("emails", []))
+
+
+class TestHtmlToText:
+    # Oracles captured from the real rcube_html2text (Roundcube 1.7.5)
+    def test_alternative_conversions(self):
+        from app import util
+        h = ('<h1>Headline</h1><p>Paragraph with <b>bold</b> and a '
+             '<a href="https://example.org/article">link to article</a> plus '
+             '<a href="mailto:box@example.org">mail</a>.</p>'
+             '<ul><li>alpha item</li><li>beta item</li></ul>'
+             '<blockquote>quoted line A<br>quoted line B</blockquote>'
+             '<hr><p>trailing text</p>')
+        want = ('HEADLINE\n\nParagraph with bold and a link to article [1] '
+                'plus mail.\n\n\t* alpha item\n\t* beta item\n\n'
+                '> quoted line A\n> quoted line B\n\n'
+                '-------------------------\n\ntrailing text\n\n'
+                'Links:\n------\n[1] https://example.org/article\n')
+        assert util.html_to_text(h) == want
+
+    def test_tables_emphasis_and_dedup_links(self):
+        from app import util
+        h = ('<body><div>para one<br>line two</div><table><tr><th>H1</th>'
+             '<th>H2</th></tr><tr><td>a</td><td>b</td></tr></table>'
+             '<em>it</em> <a href="https://a.example/x">x</a>'
+             '<a href="https://a.example/x">again</a></body>')
+        want = ('para one\nline two\n\n\t\tH1\n\t\tH2\n\n\t\ta\n\t\tb\n\n'
+                '_it_ x [1]again [1]\n\nLinks:\n------\n'
+                '[1] https://a.example/x\n')
+        assert util.html_to_text(h) == want
+
+    def test_wordwrap_at_75(self):
+        from app import util
+        text = util.html_to_text("<p>" + "word " * 40 + "</p>")
+        assert all(len(ln) <= 75 for ln in text.split("\n"))
+
+    def test_entity_replacements(self):
+        # Oracle captured from real rcube_html2text (1.7.5 pod) via
+        # rcube_html2text::get_text(70); ent_search/ent_replace set.
+        from app import util
+        h = ('<p>Author &mdash; said &ldquo;hi&rdquo; &amp; bye &bull; '
+             'price &pound;1 &euro;2 &copy; &ndash;&nbsp;&nbsp;x</p>')
+        assert util.html_to_text(h, 70) == (
+            'Author -- said "hi" & bye * price \u00a31 EUR2 (c) -  x')

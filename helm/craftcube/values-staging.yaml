@@ -1,0 +1,62 @@
+# Staging deployment on k8s3.lan (microk8s, single node).
+# helm upgrade --install craftcube ./helm/craftcube -f helm/craftcube/values-staging.yaml -n craftcube --create-namespace
+#
+# Mail topology (mirrors docker/docker-compose.yml): mailpit takes SMTP +
+# web UI and relays everything into the dovecot component (IMAP + Maildir).
+#
+# NodePorts (quintone owns 30080/30025/30362, stay clear):
+#   craftcube      http://k8s3.lan:30090
+#   roundcube ref  http://k8s3.lan:30091  (staging/k8s3/roundcube-reference.yaml)
+#   mailpit UI     http://k8s3.lan:30092
+
+image:
+  repository: registry.k8s3.lan:5000/craftcube
+  tag: stage
+  pullPolicy: Always
+  pullSecrets: []
+
+service:
+  type: NodePort
+  nodePort: 30090
+
+mailpit:
+  enabled: true
+  imagePullPolicy: Always
+  relay:
+    enabled: true
+    host: craftcube-dovecot
+    port: 2525
+  persistence:
+    size: 2Gi
+    storageClassName: microk8s-hostpath
+  service:
+    type: NodePort
+    uiNodePort: 30092
+
+dovecot:
+  enabled: true
+  image:
+    repository: registry.k8s3.lan:5000/craftcube-dovecot
+    tag: stage
+    pullPolicy: Always
+  persistence:
+    size: 2Gi
+    storageClassName: microk8s-hostpath
+  # imapNodePort: 30093   # uncomment to debug IMAP from outside
+
+config:
+  imap:
+    host: craftcube-dovecot
+    port: 143
+  smtp:
+    host: craftcube-mailpit
+    port: 1025
+
+secret:
+  create: true
+  flaskSecret: "staging-only-secret-4f3d2c1b9a08"
+
+persistence:
+  enabled: true
+  size: 1Gi
+  storageClassName: "microk8s-hostpath"

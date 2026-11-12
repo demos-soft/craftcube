@@ -18,6 +18,64 @@
   }
   window.cc_get_label = cc_get_label;
 
+  // Settings > Folders: the subscription switch posts the same thing the
+  // reference's folder_subscribe/folder_unsubscribe AJAX actions do.
+  window.cc_subscription_toggle = function (folder, subscribed) {
+    var f = document.createElement('form');
+    f.method = 'post';
+    f.action = '/settings/folders';
+    f.style.display = 'none';
+    [['_act', subscribed ? 'subscribe' : 'unsubscribe'],
+     ['folder', folder]].forEach(function (p) {
+      var i = document.createElement('input');
+      i.type = 'hidden'; i.name = p[0]; i.value = p[1];
+      f.appendChild(i);
+    });
+    document.body.appendChild(f);
+    f.submit();
+  };
+
+  // Reference: rcube_webmail.set_unread_count()/set_unread_count_display()
+  // (program/js/app.js:8976): the INBOX unread count drives the document
+  // title ("(n) ...", app.js:9039) and reading a message decrements its
+  // folder badge client-side (app.js:2787) without a page reload.
+  function folderLi(mbox) {
+    return document.querySelector('#mailboxlist li[data-name="' + mbox + '"]');
+  }
+  function setPageTitleUnread(count) {
+    var reg = /^\([0-9]+\)\s+/i;
+    var t = String(document.title);
+    document.title = count ? '(' + count + ') ' + t.replace(reg, '')
+                           : t.replace(reg, '');
+  }
+  function setUnreadCount(mbox, count, setTitle) {
+    var li = folderLi(mbox);
+    if (!li) return;
+    var span = li.querySelector('span.unreadcount');
+    if (count > 0) {
+      if (!span) {
+        span = document.createElement('span');
+        span.className = 'unreadcount skip-content';
+        li.appendChild(span);
+      }
+      span.textContent = count;
+    } else if (span) {
+      span.remove();
+    }
+    li.classList.toggle('unread', count > 0);
+    if (setTitle) setPageTitleUnread(count);
+  }
+  function unreadDecrementOnRead(row, folder) {
+    // app.js:2787 — only INBOX updates the title, and never in a
+    // multifolder (search across folders) listing
+    if (!row.classList.contains('unread') || !folder) return;
+    if (document.querySelector('#messagelist .folder-name')) return;
+    var li = folderLi(folder);
+    var span = li && li.querySelector('span.unreadcount');
+    var n = span ? parseInt(span.textContent, 10) || 0 : 0;
+    setUnreadCount(folder, n > 1 ? n - 1 : 0, folder === 'INBOX');
+  }
+
   // ------------------------------------------------- layout engine (ui.js)
   // Ports Elastic's screen_mode()/screen_resize()/screen_resize_small_all()/
   // app_menu()/show_*/hide_content machinery: on phone/small only the last
@@ -686,6 +744,12 @@
     var list = document.getElementById('messagelist');
     if (!list) return;
     var mbox = list.getAttribute('data-folder') || 'INBOX';
+    // title badge on load, like the reference's initial set_unread_count()
+    var inboxLi = folderLi('INBOX');
+    if (inboxLi) {
+      var inboxCount = inboxLi.querySelector('span.unreadcount');
+      setPageTitleUnread(inboxCount ? parseInt(inboxCount.textContent, 10) || 0 : 0);
+    }
     var actForm = document.getElementById('mailact');
 
     function rows() {
@@ -756,6 +820,8 @@
       enabled('#replyall-menu a[data-mode="replylist"]', ctx.length === 1 && isList);
       enabled('#message-menu a', hasSel);
       enabled('#download-menu a', hasSel);
+      // ui.js also enables the Mark submenu items with a selection
+      enabled('#markmessage-menu a', hasSel);
       if (ctx.length === 1) {
         var uid = ctx[0];
         var q = '_mbox=' + encodeURIComponent(boxOf(uid)) + '&_uid=' + uid;
@@ -871,6 +937,7 @@
         if (content) content.classList.add('selected');
         rows().forEach(function (r) { r.classList.remove('selected'); });
         tr.classList.add('selected');
+        unreadDecrementOnRead(tr, frame.getAttribute('data-folder') || mbox);
         var icon = tr.querySelector('.msgicon.status');
         if (icon) { icon.classList.remove('unread'); icon.title = ''; }
         tr.classList.remove('unread');

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b3dff"/>
+      <stop offset="1" stop-color="#3f0878"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- one continuous knight outline: neck -> ear spike -> forehead -> muzzle -> jaw -> neck -->
+  <path d="M24 64 L29 40 C31 31 31 24 28 17 L30 5 L42 16
+           C49 19 54 24 57 31 L60 38 C61 41 59 43 56 42 L50 39
+           C45 44 41 50 38 57 L36 64 Z" fill="#ffffff"/>
+  <!-- big solid gold horn from the forehead -->
+  <path d="M47 20 L63 1 L57 26 Z" fill="#ffd23f"/>
+  <!-- eye -->
+  <circle cx="43" cy="26" r="3.1" fill="#3f0878"/>
+</svg>

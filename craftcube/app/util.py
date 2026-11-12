@@ -2,6 +2,7 @@
 import email
 import email.utils
 import html as _html
+import math
 import re
 from datetime import UTC, datetime, timedelta
 from html.parser import HTMLParser
@@ -44,6 +45,175 @@ def fmt_summary_date(dt):
     if dt is None:
         return ""
     return to_local(dt).strftime("%Y-%m-%d %H:%M")
+
+
+# HTML -> plain text: faithful port of rcube_html2text (Roundcube's HTML2Text
+# fork) with LINKS_END and width 75 -- the defaults used by rcmail::html2text()
+# on the print_body plain path (program/actions/mail/index.php). The replace
+# arrays mirror rcube_html2text::$search/$replace 1:1.
+_H2T_SEARCH = [
+    (re.compile(r"\r"), ""),
+    (re.compile(r"\n*</?html>\n*", re.I), ""),
+    (re.compile(r"\n*<head[^>]*>.*?</head>\n*", re.I | re.S), ""),
+    (re.compile(r"\n*<script[^>]*>.*?</script>\n*", re.I | re.S), ""),
+    (re.compile(r"\n*<style[^>]*>.*?</style>\n*", re.I | re.S), ""),
+    (re.compile(r"[\n\t]+"), " "),
+    (re.compile(r"<p[^>]*>", re.I), "\n\n"),
+    (re.compile(r"</p>[\s\n\t]*<div[^>]*>", re.I), "\n<div>"),
+    (re.compile(r"<br[^>]*>[\s\n\t]*<div[^>]*>", re.I), "<div>"),
+    (re.compile(r"<br[^>]*>\s*", re.I), "\n"),
+    (re.compile(r"<i[^>]*>(.*?)</i>", re.I | re.S), r"_\1_"),
+    (re.compile(r"<em[^>]*>(.*?)</em>", re.I | re.S), r"_\1_"),
+    (re.compile(r"(<ul[^>]*>|</ul>)", re.I), "\n\n"),
+    (re.compile(r"(<ol[^>]*>|</ol>)", re.I), "\n\n"),
+    (re.compile(r"<li[^>]*>(.*?)</li>", re.I | re.S), "\\1", ),
+    (re.compile(r"<li[^>]*>", re.I), "\n\t* "),
+    (re.compile(r"<hr[^>]*>", re.I), "\n-------------------------\n"),
+    (re.compile(r"<div[^>]*>", re.I), "<div>\n"),
+    (re.compile(r"(<table[^>]*>|</table>)", re.I), "\n\n"),
+    (re.compile(r"(<tr[^>]*>|</tr>)", re.I), "\n"),
+    (re.compile(r"<td[^>]*>(.*?)</td>", re.I | re.S), "\\1"),
+]
+# the \t*\1 and \t\t\1 replacements need callables (backrefs with literal \t)
+_H2T_SEARCH[14] = (_H2T_SEARCH[14][0], lambda m: "\t* " + m.group(1) + "\n")
+_H2T_SEARCH[20] = (_H2T_SEARCH[20][0], lambda m: "\t\t" + m.group(1) + "\n")
+
+_H2T_LINK_RX = re.compile(
+    r'<(a) [^>]*href=("|\')(.*?)\2[^>]*>(.*?)</a>', re.I | re.S)
+_H2T_H_RX = re.compile(r"<(h)[123456]( [^>]*)?>(.*?)</h[123456]>", re.I | re.S)
+_H2T_TH_RX = re.compile(r"<(th)( [^>]*)?>(.*?)</th>", re.I | re.S)
+
+# rcube_html2text::$ent_search / $ent_replace — applied to the tag-stripped
+# text BEFORE generic entity decoding (so &mdash; becomes '--', not an
+# em-dash, and &amp; is parked behind a marker until the very end).
+_H2T_ENT = [
+    (re.compile(r"&(nbsp|#160);", re.I), "\u00a0"),
+    (re.compile(r"&(quot|rdquo|ldquo|#8220|#8221|#147|#148);", re.I), '"'),
+    (re.compile(r"&(apos|rsquo|lsquo|#8216|#8217);", re.I), "'"),
+    (re.compile(r"&gt;", re.I), ">"),
+    (re.compile(r"&lt;", re.I), "<"),
+    (re.compile(r"&(copy|#169);", re.I), "(c)"),
+    (re.compile(r"&(trade|#8482|#153);", re.I), "(tm)"),
+    (re.compile(r"&(reg|#174);", re.I), "(R)"),
+    (re.compile(r"&(mdash|#151|#8212);", re.I), "--"),
+    (re.compile(r"&(ndash|minus|#8211|#8722);", re.I), "-"),
+    (re.compile(r"&(bull|#149|#8226);", re.I), "*"),
+    (re.compile(r"&(pound|#163);", re.I), "\u00a3"),
+    (re.compile(r"&(euro|#8364);", re.I), "EUR"),
+    (re.compile(r"&(amp|#38);", re.I), "|+|amp|+|"),
+    (re.compile(r"[ ]{2,}"), " "),
+]
+
+
+def _h2t_wordwrap(text, width):
+    """PHP wordwrap() with break="\\n", cut_long_words=false."""
+    if width <= 0:
+        return text
+    out = []
+    for line in text.split("\n"):
+        cur = ""
+        for word in line.split(" "):
+            if not cur:
+                cur = word
+            elif len(cur) + 1 + len(word) <= width:
+                cur += " " + word
+            else:
+                out.append(cur)
+                cur = word
+        out.append(cur)
+    return "\n".join(out)
+
+
+def html_to_text(html, width=75):
+    """Convert an HTML mail body to plain text exactly like rcube_html2text:
+    h1-h6/<th> uppercased, <em>/<i> _underscored_, <li> bullets, 25-dash <hr>,
+    URLs as inline ' [n]' markers plus a trailing 'Links:' list (LINKS_END),
+    <blockquote> citation '> ' lines, PHP wordwrap at `width`."""
+    links = []
+
+    def _handle_link(url, display):
+        url = _html.unescape(url.replace(" ", ""))
+        if (not url or re.match(r"^(javascript:|mailto:|#)", url, re.I)
+                or url == display):
+            return display
+        if url not in links:
+            links.append(url)
+        return f"{display} [{links.index(url) + 1}]"
+
+    def _toupper(s):
+        # uppercase the text between tags only (_toupper)
+        return "".join(p.upper() if not p.startswith("<") else p
+                       for p in re.split(r"(<[^>]*>)", s))
+
+    def _callbacks(text):
+        text = _H2T_LINK_RX.sub(
+            lambda m: _handle_link(m.group(3), m.group(4)), text)
+        text = _H2T_H_RX.sub(
+            lambda m: _toupper("\n\n" + m.group(3) + "\n\n"), text)
+        return _H2T_TH_RX.sub(
+            lambda m: _toupper("\t\t" + m.group(3) + "\n"), text)
+
+    def _cite_line(ln):
+        # blockquote_citation_callback: run of '>' then ltrim, space unless
+        # the remainder itself starts with '>'
+        marks = re.match(r">*", ln).group(0)
+        rest = ln[len(marks):].lstrip()
+        space = "" if rest.startswith(">") else " "
+        return marks + ">" + space + rest
+
+    def _convert(text, w):
+        # blockquotes: convert inner, quote it, insert as escaped <pre>
+        # (RC decodes the inner once here; the outer pass decodes again)
+        def _bq(bm):
+            inner = _convert(bm.group(1).strip("\n"), max(w - 2, 0))
+            inner = _html.unescape(inner)
+            lines = inner.strip("\n").split("\n")
+            quoted = "\n".join(_cite_line(ln) for ln in lines)
+            return ("<pre>"
+                    + _html.escape(quoted, quote=False).replace("\n", "<br>")
+                    + "</pre>\n")
+        text = re.sub(r"<blockquote[^>]*>(.*?)</blockquote>", _bq, text,
+                      flags=re.I | re.S)
+
+        # _convert_pre: every <pre> (including the blockquote ones just
+        # inserted) becomes <div><br>..<br></div> with whitespace protected
+        def _protect_pre(pm):
+            inner = _callbacks(pm.group(1))
+            inner = inner.replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;")
+            inner = inner.replace(" ", "&nbsp;")
+            inner = re.sub(r"\r?\n", "<br>", inner)
+            return "<div><br>" + inner + "<br></div>"
+        text = re.sub(r"<pre[^>]*>(.*?)</pre>", _protect_pre, text,
+                      flags=re.I | re.S)
+
+        # drop everything up to and including the <body...> tag
+        i = text.lower().find("<body")
+        if i >= 0:
+            j = text.find(">", i)
+            if j >= 0:
+                text = text[j + 1:].lstrip()
+
+        for rx, rep in _H2T_SEARCH:
+            text = rx.sub(rep, text)
+        text = _callbacks(text)
+        text = re.sub(r"<[^>]+>", "", text)
+        for rx, rep in _H2T_ENT:
+            text = rx.sub(rep, text)
+        text = _html.unescape(text)
+        text = text.replace("\u00a0", " ")
+        text = re.sub(r"&([a-zA-Z0-9]{2,6}|#[0-9]{2,4});", "", text)
+        text = text.replace("|+|amp|+|", "&")
+        text = re.sub(r"\n\s+\n", "\n\n", text)
+        text = re.sub(r"\n{3,}", "\n\n", text)
+        text = text.lstrip("\n")
+        return _h2t_wordwrap(text, w)
+
+    return _convert(html or "", width) + (
+        "\n\nLinks:\n------\n"
+        + "".join(f"[{i + 1}] {u}\n" for i, u in enumerate(links))
+        if links else "")
+
+
 
 
 # Preferred date/time formatting (settings > preferences) ---------------------
@@ -101,7 +271,7 @@ def fmt_pref_time(dt, prefs):
     if dt is None:
         return ""
     prefs = prefs or {}
-    tf = prefs.get("time_format", "H")
+    tf = prefs.get("time_format", "H:i")
     # reference stores PHP formats ('H:i'); legacy CraftCube used 'H'/'h'
     if ":" in tf:
         return php_strftime(tf, to_local_tz(dt, prefs.get("timezone")))
@@ -117,9 +287,9 @@ def fmt_pref_date(dt, prefs):
         return ""
     prefs = prefs or {}
     dt = to_local_tz(dt, prefs.get("timezone"))
-    df = prefs.get("date_format", "long")
+    df = prefs.get("date_format", "Y-m-d")  # rc default (1.7: date_long='Y-m-d H:i')
     base = php_strftime(df, dt) if any(c in df for c in "Yydj") \
-        else dt.strftime(DATE_FORMATS.get(df, DATE_FORMATS["long"]))
+        else dt.strftime(DATE_FORMATS.get(df, "%Y-%m-%d"))
     return base + " " + fmt_pref_time(dt, prefs) \
         if any(c in df for c in "Yydj") and prefs.get("show_pref_time", 1) \
         else base
@@ -133,7 +303,7 @@ def list_pref_date(dt, prefs):
     prefs = prefs or {}
     dt = to_local_tz(dt, prefs.get("timezone"))
     now = to_local_tz(datetime.now(UTC), prefs.get("timezone"))
-    tf = prefs.get("time_format", "H")
+    tf = prefs.get("time_format", "H:i")
     tfmt = php_strftime(tf, dt) if ":" in tf else ("%H:%M" if tf == "H" else "%I:%M %p")
     df = prefs.get("date_format", "Y-m-d")
     if prefs.get("pretty_date", 1):
@@ -151,14 +321,152 @@ def fmt_datetime(dt):
     return dt.strftime("%a, %d %b %Y %H:%M %z")
 
 def human_size(n):
+    # mirrors rcube_html::show_message_size(): whole KB, one-decimal MB+,
+    # half-way values away from zero like PHP round()
     if n is None:
         return ""
     n = float(n)
-    for unit in ("B", "KB", "MB", "GB", "TB"):
-        if n < 1024:
-            return f"{n:.1f} {unit}" if unit != "B" else f"{int(n)} {unit}"
-        n /= 1024
-    return ""
+    if n > 1023:
+        from decimal import ROUND_HALF_UP, Decimal
+        power = int(math.log(n, 1024))
+        if power > 1:
+            value = str((Decimal(n) / Decimal(1024) ** power).quantize(Decimal("0.1"), ROUND_HALF_UP))
+            if value.endswith(".0"):
+                value = value[:-2]
+        else:
+            value = str((Decimal(n) / Decimal(1024)).quantize(Decimal(1), ROUND_HALF_UP))
+        unit = ("KB", "MB", "GB", "TB", "PB")[min(power - 1, 4)]
+        return f"{value} {unit}"
+    return f"{int(n)} B"
+
+# ---------------------------------------------------------------- mime text
+# Ports of rcube_mime::wordwrap() and rcube_mime::format_flowed() (Roundcube
+# 1.7.5) used when building sent messages (rcmail_sendmail::format_plain_body).
+
+def wordwrap_rc(text, width=75, break_="\n", cut=False, wrap_quoted=True):
+    """rcube_mime::wordwrap() — mb-aware wordwrap; PHP semantics kept
+    deliberately: short lines pass through with their own separator, quoted
+    ('>') lines are never wrapped unless wrap_quoted is False, long words
+    overflow when cut=False."""
+    text = text.replace("\r\n", "\n")
+    result = []
+    s = text
+    while s:
+        n = len(s)
+        break_pos = s.find("\n")
+        if wrap_quoted and s[0] == ">":
+            if break_pos == n - 1 or break_pos == -1:
+                sub, cut_len = s, None
+            else:
+                sub, cut_len = s[:break_pos], break_pos + 1
+        elif break_pos != -1 and break_pos < width:
+            if break_pos == n - 1:
+                sub, cut_len = s, None
+            else:
+                sub, cut_len = s[:break_pos], break_pos + 1
+        else:
+            sub = s[:width] if width > 0 else s[:1]
+            if break_pos == -1 and sub == s:
+                cut_len = None
+            else:
+                next_char = s[width] if width < n else ""
+                if next_char in (" ", "\n"):
+                    after = s[width + 1] if width + 1 < n else ""
+                    if after == "":
+                        sub += next_char
+                    cut_len = len(sub) + 1
+                else:
+                    space_pos = sub.rfind(" ")
+                    if space_pos != -1:
+                        sub = sub[:space_pos]
+                        cut_len = space_pos + 1
+                    elif cut is False:
+                        space_pos = s.find(" ")
+                        if space_pos != -1 and (break_pos == -1 or space_pos < break_pos):
+                            sub = s[:space_pos]
+                            cut_len = space_pos + 1
+                        elif break_pos == -1:
+                            sub, cut_len = s, None
+                        else:
+                            sub, cut_len = s[:break_pos], break_pos + 1
+                    else:
+                        cut_len = width
+        result.append(sub)
+        if cut_len is None:
+            break
+        s = s[cut_len:]
+    return break_.join(result)
+
+
+def format_flowed(text, length=72):
+    """rcube_mime::format_flowed(): re-wrap to RFC 3676 flowed lines (soft
+    break = trailing space before CRLF), space-stuff lines starting with
+    'From', ' ' or '>'; the bare '-- ' signature delimiter passes through."""
+    out = []
+    for line in re.split(r"\r?\n", text):
+        if line == "-- ":
+            out.append(line)
+            continue
+        level = len(line) - len(line.lstrip(">"))
+        if level:
+            line = line[level:].rstrip(" ")
+            if line[:1] == " ":
+                line = line[1:]
+            prefix = ">" * level + " "
+            out.append(prefix + wordwrap_rc(line, length - level - 2, " \r\n" + prefix, False))
+        elif line:
+            wrapped = wordwrap_rc(line.rstrip(" "), length - 2, " \r\n", False)
+            out.append(re.sub(r"(^|\r\n)(From| |>)", r"\1 \2", wrapped))
+        else:
+            out.append(line)
+    return "\r\n".join(out)
+
+
+def unfold_flowed(text, delsp=False):
+    """rcube_mime::unfold_flowed($text, null, $delsp): join RFC 3676 flowed
+    soft lines (previous line ending in a space, same quote level), undo
+    space-stuffing; '-- ' signature lines never join. Faithful port incl.
+    the raw-$text[$last] checks and unset() rows."""
+    rows = re.split(r"\r?\n", text)
+    last = -1
+    q_level = 0
+    for idx in range(len(rows)):
+        line = rows[idx]
+        q = len(line) - len(line.lstrip(">"))
+        if q:
+            line = line[q:]
+            if line[:1] == " ":
+                line = line[1:]
+            prev = rows[last] if 0 <= last < len(rows) else None
+            if (q == q_level and prev is not None and prev[-1:] == " "
+                    and not re.match(r"^>+ {0,1}$", prev)):
+                if delsp:
+                    rows[last] = rows[last][:-1]
+                rows[last] += line
+                rows[idx] = None
+            else:
+                last = idx
+        else:
+            if line == "-- ":
+                last = idx
+            else:
+                if line[:1] == " ":
+                    line = line[1:]
+                prev = rows[last] if 0 <= last < len(rows) else None
+                last_len = len(prev) if prev is not None else 0
+                if (last_len and line and not q_level
+                        and prev is not None and prev != "-- "
+                        and prev[-1] == " "):
+                    if delsp:
+                        rows[last] = rows[last][:-1]
+                    rows[last] += line
+                    rows[idx] = None
+                else:
+                    rows[idx] = line
+                    last = idx
+        q_level = q
+    return "\r\n".join(r for r in rows if r is not None)
+
 
 # ---------------------------------------------------------------- headers
 
@@ -285,7 +593,95 @@ def attachment_icon(content_type, filename):
 
 # ---------------------------------------------------------------- vcards
 
-CONTACT_TYPES = ["work", "home", "other"]
+_PHP_LATIN1 = dict(zip("äâàåáãæçéêëèïîìíñöôòøõóüûùúýÿ",
+                       "aaaaaaaceeeeiiiinoooooouuuuyy", strict=True))
+_PHP_LATIN2 = dict(zip("ąáâäćçčéęëěíîłľĺńňóôöŕřśšşťţůúűüźžżý",
+                       "aaaaccceeeeiilllnnooorrsssttuuuuzzzy", strict=True))
+_PHP_DIGRAPHS = {"ß": "ss", "ae": "a", "oe": "o", "ue": "u"}
+
+_4BYTE_RE = re.compile("[\U00010000-\U0010FFFF]")
+_TOK1_RE = re.compile(r"[\s;,\"'/+-]+")
+_TOK2_RE = re.compile(r"(\d)[-.\s]+(\d)")
+
+
+def tokenize_string(s, minlen=2):
+    """Port of rcube_utils::tokenize_string() (PHP preg_replace order)."""
+    if not isinstance(s, str):
+        return []
+    s = _TOK1_RE.sub(" ", s)
+    s = _TOK2_RE.sub(r"\1\2", s)
+    if minlen > 1:
+        s = re.sub(rf"(^|\s+)\w{{1,{minlen - 1}}}(\s+|$)", " ", s)
+    # PHP array_filter drops '0' tokens too
+    return [t for t in s.split(" ") if t and t != "0"]
+
+
+def normalize_string(s, as_array=False, minlen=2):
+    """Port of rcube_utils::normalize_string(): tokenize, lowercase, fold
+    ISO-8859-1/2 accents (map chosen exactly like PHP's charset probe)."""
+    if isinstance(s, str):
+        s = _4BYTE_RE.sub("?", s)
+    tokens = tokenize_string(s, minlen)
+    mapping = None
+    try:
+        (s or "").encode("iso8859_1")
+        mapping = dict(_PHP_LATIN1)
+    except (UnicodeEncodeError, AttributeError):
+        try:
+            (s or "").encode("iso8859_2")
+            mapping = dict(_PHP_LATIN2)
+        except (UnicodeEncodeError, AttributeError):
+            mapping = None
+    if mapping is not None:
+        mapping.update(_PHP_DIGRAPHS)
+        # PHP strtr(array): longest key wins at each position, no rescan
+        keys = sorted(mapping, key=len, reverse=True)
+        alt = re.compile("|".join(re.escape(k) for k in keys))
+        mp = mapping
+
+        def _fold(m):
+            return mp[m.group(0)]
+        tokens = [alt.sub(_fold, t.lower()) for t in tokens]
+    else:
+        tokens = [t.lower() for t in tokens]
+    return tokens if as_array else " ".join(tokens)
+
+
+# rcube_contacts::$fulltext_cols
+_FULLTEXT_KEYS = ("name", "firstname", "surname", "middlename", "nickname",
+                  "jobtitle", "organization", "department")
+
+
+def contact_words(ext):
+    """rcube_contacts::convert_save_data() words column content."""
+    parts = []
+    for key in _FULLTEXT_KEYS:
+        v = ext.get(key) or ""
+        if v and len(v.encode()) >= 3:
+            parts.append(normalize_string(v))
+    for _typ, val in ext.get("emails") or []:
+        if val and len(val.encode()) >= 3:
+            parts.append(normalize_string(val))
+    for _typ, val in ext.get("phones") or []:
+        if val and len(val.encode()) >= 3:
+            parts.append(normalize_string(val))
+    for addr in ext.get("addresses") or []:
+        joined = " ".join(x for x in addr[1:] if x)
+        if joined and len(joined.encode()) >= 3:
+            parts.append(normalize_string(joined))
+    notes = ext.get("notes") or ""
+    if notes and len(notes.encode()) >= 3:
+        parts.append(normalize_string(notes))
+    words = " ".join(parts)
+    return " ".join(dict.fromkeys(words.split(" ")))
+
+# Elastic contactedit subtype selects (verified against 1.7.5 edit form)
+CONTACT_EMAIL_TYPES = ["home", "work", "other"]
+CONTACT_ADDRESS_TYPES = ["home", "work", "other"]
+CONTACT_PHONE_TYPES = ["home", "home2", "work", "work2", "mobile", "main",
+                       "homefax", "workfax", "car", "pager", "video",
+                       "assistant", "other"]
+CONTACT_TYPES = CONTACT_EMAIL_TYPES
 
 def vcard_encode(f):
     """Serialize extended contact fields to a minimal vCard 4.0."""
@@ -305,15 +701,15 @@ def vcard_encode(f):
         lines.append("TITLE:" + esc(f["jobtitle"]))
     for typ, val in f.get("emails") or []:
         if val:
-            lines.append(f"EMAIL;TYPE={typ or 'work'}:{esc(val)}")
+            lines.append(f"EMAIL;TYPE={typ}:{esc(val)}")
     for typ, val in f.get("phones") or []:
         if val:
-            lines.append(f"TEL;TYPE={typ or 'work'}:{esc(val)}")
+            lines.append(f"TEL;TYPE={typ}:{esc(val)}")
     for addr in f.get("addresses") or []:
         typ, street, locality, zipcode, region, country = (list(addr) + [""] * 6)[:6]
         if any((street, locality, zipcode, region, country)):
             lines.append(
-                f"ADR;TYPE={typ or 'home'}:;;{esc(street)};{esc(locality)};"
+                f"ADR;TYPE={typ}:;;{esc(street)};{esc(locality)};"
                 f"{esc(region)};{esc(zipcode)};{esc(country)}")
     if f.get("gender"):
         lines.append("GENDER:" + esc(f["gender"]))
@@ -323,6 +719,80 @@ def vcard_encode(f):
         lines.append("NOTE:" + esc(f["notes"]))
     lines.append("END:VCARD")
     return "\n".join(lines)
+
+
+def _vc_esc(v):
+    """rcube_vcard v3 escaping: backslash, semicolon, CR drop, LF -> \\n.
+
+    Roundcube trims stored property values (oracle: trailing space dropped).
+    Note: commas are NOT escaped in v3 (verified against Roundcube 1.7.5)."""
+    return ((v or "").strip().replace("\\", "\\\\").replace(";", "\\;")
+            .replace("\r", "").replace("\n", "\\n"))
+
+
+def _vc_fold(line):
+    """Hard-fold a property line at 76 chars, continuation ' ' + 76 (oracle)."""
+    if len(line) <= 76:
+        return [line]
+    out = [line[:76]]
+    rest = line[76:]
+    while rest:
+        out.append(" " + rest[:76])
+        rest = rest[76:]
+    return out
+
+
+def _vc_typ(typ):
+    """v3 TYPE= parameter; Roundcube lowercases and drops empty/'other'."""
+    typ = (typ or "").lower()
+    return f";TYPE={typ}" if typ and typ != "other" else ""
+
+
+def vcard_export(f, categories=()):
+    """Byte-exact Roundcube 1.7.5 vCard 3.0 export of a parsed contact dict.
+
+    Field order mirrors rcube_contacts CONTACT_COLTYPES; CATEGORIES lists
+    group names. f uses the util.vcard_parse() dict shape."""
+    lines = ["BEGIN:VCARD", "VERSION:3.0"]
+    n = ";".join(_vc_esc(f.get(k)) for k in
+                 ("surname", "firstname", "middlename", "prefix", "suffix"))
+    lines.append("N:" + n)
+    lines.append("FN:" + _vc_esc(f.get("name")))
+    for typ, val in f.get("emails") or []:
+        if val:
+            lines.append("EMAIL" + _vc_typ(typ) + ":" + _vc_esc(val))
+    if f.get("nickname"):
+        lines.append("NICKNAME:" + _vc_esc(f["nickname"]))
+    if f.get("jobtitle"):
+        lines.append("TITLE:" + _vc_esc(f["jobtitle"]))
+    if f.get("organization"):
+        lines.append("ORG:" + _vc_esc(f["organization"]))
+    if f.get("department"):
+        lines.append("X-DEPARTMENT:" + _vc_esc(f["department"]))
+    if f.get("gender"):
+        lines.append("X-GENDER:" + _vc_esc(f["gender"]))
+    for typ, val in f.get("phones") or []:
+        if val:
+            lines.append("TEL" + _vc_typ(typ) + ":" + _vc_esc(val))
+    for addr in f.get("addresses") or []:
+        typ, street, locality, zipcode, region, country = (list(addr) + [""] * 6)[:6]
+        if any((street, locality, zipcode, region, country)):
+            lines.append("ADR" + _vc_typ(typ) + ":;;"
+                         + _vc_esc(street) + ";" + _vc_esc(locality) + ";"
+                         + _vc_esc(region) + ";" + _vc_esc(zipcode) + ";"
+                         + _vc_esc(country))
+    if f.get("birthday"):
+        lines.append("BDAY;VALUE=date:" + _vc_esc(f["birthday"]))
+    if f.get("notes"):
+        lines.append("NOTE:" + _vc_esc(f["notes"]))
+    cats = [c for c in (categories or []) if c]
+    if cats:
+        lines.append("CATEGORIES:" + ";".join(_vc_esc(c) for c in cats))
+    lines.append("END:VCARD")
+    out = []
+    for ln in lines:
+        out.extend(_vc_fold(ln))
+    return "\r\n".join(out) + "\r\n"
 
 
 def _vcard_unesc(v):
@@ -347,15 +817,24 @@ def vcard_parse(text):
          "notes": "", "emails": [], "phones": [], "addresses": []}
     if not text or "BEGIN:VCARD" not in text:
         return f
+    # unfold RFC5322-style continuation lines (CRLF + space/tab)
+    unfolded = []
     for raw in text.splitlines():
-        raw = raw.strip()
+        if raw[:1] in (" ", "\t") and unfolded:
+            unfolded[-1] += raw[1:]
+        else:
+            unfolded.append(raw)
+    for raw in unfolded:
+        raw = raw.strip("\r")
         if not raw or ":" not in raw:
             continue
         head, val = raw.split(":", 1)
         val = _vcard_unesc(val)
         parts = head.split(";")
         prop = parts[0].upper()
-        typ = "work"
+        # no TYPE= parameter means "no subtype" (Roundcube drops TYPE=other on
+        # export); keep it distinct from an explicit type for byte stability
+        typ = ""
         for p in parts[1:]:
             if p.upper().startswith("TYPE="):
                 typ = p.split("=", 1)[1].lower()
@@ -379,9 +858,9 @@ def vcard_parse(text):
         elif prop == "ADR":
             bits = val.split(";") + [""] * 7
             f["addresses"].append((typ, bits[2], bits[3], bits[5], bits[4], bits[6]))
-        elif prop == "GENDER":
+        elif prop in ("GENDER", "X-GENDER"):
             f["gender"] = val
-        elif prop == "BIRTHDAY":
+        elif prop in ("BIRTHDAY", "BDAY"):
             f["birthday"] = val
         elif prop == "NOTE":
             f["notes"] = val
