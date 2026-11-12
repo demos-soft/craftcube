@@ -1,0 +1,2918 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: lt_LT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Sveiki! Čia $product"
+
+msgid "username"
+msgstr "Naudotojo vardas"
+
+msgid "password"
+msgstr "Slaptažodis"
+
+msgid "server"
+msgstr "Serveris"
+
+msgid "login"
+msgstr "Prisijungti"
+
+msgid "oauthlogin"
+msgstr "Prisijungti per $provider"
+
+msgid "menu"
+msgstr "Meniu"
+
+msgid "logout"
+msgstr "Atsijungti"
+
+msgid "mail"
+msgstr "El. paštas"
+
+msgid "settings"
+msgstr "Nuostatos"
+
+msgid "addressbook"
+msgstr "Adresų knyga"
+
+msgid "darkmode"
+msgstr "Tamsi veiksena"
+
+msgid "lightmode"
+msgstr "Šviesi veiksena"
+
+msgid "inbox"
+msgstr "Gauti laiškai"
+
+msgid "drafts"
+msgstr "Juodraščiai"
+
+msgid "sent"
+msgstr "Išsiųsti laiškai"
+
+msgid "trash"
+msgstr "Šiukšlinė"
+
+msgid "junk"
+msgstr "Brukalas"
+
+msgid "show_real_foldernames"
+msgstr "Rodyti tikrus specialiųjų aplankų vardus"
+
+msgid "subject"
+msgstr "Tema"
+
+msgid "from"
+msgstr "Siuntėjas"
+
+msgid "sender"
+msgstr "Siuntikas"
+
+msgid "to"
+msgstr "Gavėjas"
+
+msgid "cc"
+msgstr "Kopija"
+
+msgid "bcc"
+msgstr "Slaptoji kopija"
+
+msgid "replyto"
+msgstr "Atsakymą gaus"
+
+msgid "followupto"
+msgstr "Followup-To"
+
+msgid "date"
+msgstr "Data"
+
+msgid "size"
+msgstr "Dydis"
+
+msgid "priority"
+msgstr "Prioritetas"
+
+msgid "organization"
+msgstr "Organizacija"
+
+msgid "readstatus"
+msgstr "Neskaitytas"
+
+msgid "listoptions"
+msgstr "Sąrašo nuostatos…"
+
+msgid "listoptionstitle"
+msgstr "Sąrašo nuostatos"
+
+msgid "mailboxlist"
+msgstr "Aplankai"
+
+msgid "messagesfromto"
+msgstr "Laiškai nuo $from iki $to iš $count"
+
+msgid "threadsfromto"
+msgstr "Gijos nuo $from iki $to iš $count"
+
+msgid "messagenrof"
+msgstr "Laiškas $nr iš $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to iš $count"
+
+msgid "copy"
+msgstr "Kopijuoti"
+
+msgid "move"
+msgstr "Perkelti"
+
+msgid "moveto"
+msgstr "Perkelti į…"
+
+msgid "copyto"
+msgstr "Kopijuoti į..."
+
+msgid "download"
+msgstr "Parsisiųsti"
+
+msgid "open"
+msgstr "Atverti"
+
+msgid "showattachment"
+msgstr "Rodyti"
+
+msgid "showanyway"
+msgstr "Vistiek rodyti"
+
+msgid "filename"
+msgstr "Failo vardas"
+
+msgid "filesize"
+msgstr "Failo dydis"
+
+msgid "addtoaddressbook"
+msgstr "Įtraukti į adresų knygą"
+
+msgid "sun"
+msgstr "Sek"
+
+msgid "mon"
+msgstr "Pir"
+
+msgid "tue"
+msgstr "Ant"
+
+msgid "wed"
+msgstr "Tre"
+
+msgid "thu"
+msgstr "Ket"
+
+msgid "fri"
+msgstr "Pen"
+
+msgid "sat"
+msgstr "Šeš"
+
+msgid "sunday"
+msgstr "Sekmadienis"
+
+msgid "monday"
+msgstr "Pirmadienis"
+
+msgid "tuesday"
+msgstr "Antradienis"
+
+msgid "wednesday"
+msgstr "Trečiadienis"
+
+msgid "thursday"
+msgstr "Ketvirtadienis"
+
+msgid "friday"
+msgstr "Penktadienis"
+
+msgid "saturday"
+msgstr "Šeštadienis"
+
+msgid "jan"
+msgstr "Sau"
+
+msgid "feb"
+msgstr "Vas"
+
+msgid "mar"
+msgstr "Kov"
+
+msgid "apr"
+msgstr "Bal"
+
+msgid "may"
+msgstr "Gegužė"
+
+msgid "jun"
+msgstr "Bir"
+
+msgid "jul"
+msgstr "Lie"
+
+msgid "aug"
+msgstr "Rgp"
+
+msgid "sep"
+msgstr "Rgs"
+
+msgid "oct"
+msgstr "Spl"
+
+msgid "nov"
+msgstr "Lap"
+
+msgid "dec"
+msgstr "Grd"
+
+msgid "longjan"
+msgstr "Sausis"
+
+msgid "longfeb"
+msgstr "Vasaris"
+
+msgid "longmar"
+msgstr "Kovas"
+
+msgid "longapr"
+msgstr "Balandis"
+
+msgid "longmay"
+msgstr "Gegužė"
+
+msgid "longjun"
+msgstr "Biržėlis"
+
+msgid "longjul"
+msgstr "Liepa"
+
+msgid "longaug"
+msgstr "Rugpjūtis"
+
+msgid "longsep"
+msgstr "Rugsėjis"
+
+msgid "longoct"
+msgstr "Spalis"
+
+msgid "longnov"
+msgstr "Lapkritis"
+
+msgid "longdec"
+msgstr "Gruodis"
+
+msgid "today"
+msgstr "Šiandien"
+
+msgid "refresh"
+msgstr "Atnaujinti"
+
+msgid "checkmail"
+msgstr "Tikrinti, ar yra naujų laiškų"
+
+msgid "compose"
+msgstr "Rašyti"
+
+msgid "writenewmessage"
+msgstr "Rašyti naują laišką"
+
+msgid "reply"
+msgstr "Atsakyti"
+
+msgid "replytomessage"
+msgstr "Atsakyti siuntėjui"
+
+msgid "replytoallmessage"
+msgstr ""
+"Atsakyti el. pašto grupei arba laiško siuntėjui ir visiems jo gavėjams"
+
+msgid "replyall"
+msgstr "Atsakyti visiems"
+
+msgid "replylist"
+msgstr "Atsakyti el. pašto grupei"
+
+msgid "forward"
+msgstr "Persiųsti"
+
+msgid "forwardinline"
+msgstr "Persiųsti cituojant"
+
+msgid "forwardattachment"
+msgstr "Persiųsti priedu"
+
+msgid "forwardmessage"
+msgstr "Persiųsti laišką"
+
+msgid "bouncemsg"
+msgstr "Siųsti iš naujo (grąžinimas)"
+
+msgid "bounce"
+msgstr "Siųsti iš naujo"
+
+msgid "deletemessage"
+msgstr "Pašalinti laišką"
+
+msgid "undeletemessage"
+msgstr "Atšaukti laiško pašalinimą"
+
+msgid "movemessagetotrash"
+msgstr "Perkelti laišką į šiukšlinę"
+
+msgid "printmessage"
+msgstr "Atspausdinti laišką"
+
+msgid "previousmessage"
+msgstr "Rodyti ankstesnį laišką"
+
+msgid "firstmessage"
+msgstr "Rodyti pirmąjį laišką"
+
+msgid "nextmessage"
+msgstr "Rodyti tolesnį laišką"
+
+msgid "lastmessage"
+msgstr "Rodyti paskutinį laišką"
+
+msgid "backtolist"
+msgstr "Grižti į laiškų sarašą"
+
+msgid "viewsource"
+msgstr "Rodyti pirminį tekstą"
+
+msgid "mark"
+msgstr "Pažymėti"
+
+msgid "markmessages"
+msgstr "Pažymėti laiškus"
+
+msgid "markread"
+msgstr "Kaip skaitytus"
+
+msgid "markunread"
+msgstr "Kaip neskaitytus"
+
+msgid "markflagged"
+msgstr "Pažymėti gairele"
+
+msgid "markunflagged"
+msgstr "Pašalinti gairelę"
+
+msgid "markundeleted"
+msgstr "Kaip nepašalintus"
+
+msgid "markasread"
+msgstr "Žymėti kaip skaitytą"
+
+msgid "markasunread"
+msgstr "Žymėti kaip neskaitytą"
+
+msgid "markasflagged"
+msgstr "Pažymėti gairele"
+
+msgid "markasunflagged"
+msgstr "Pašalinti gairelę"
+
+msgid "moreactions"
+msgstr "Kiti veiksmai…"
+
+msgid "markallread"
+msgstr "Žymėti visus kaip skaitytus"
+
+msgid "folders-cur"
+msgstr "Tik pasirinktas aplankas"
+
+msgid "folders-sub"
+msgstr "Pasirinktas aplankas ir jo poaplankiai"
+
+msgid "folders-all"
+msgstr "Visi aplankai"
+
+msgid "more"
+msgstr "Kita"
+
+msgid "back"
+msgstr "Grįžti"
+
+msgid "options"
+msgstr "Nuostatos"
+
+msgid "composeoptions"
+msgstr "Laiško kūrimo nuostatos"
+
+msgid "optionsandattachments"
+msgstr "Nuostatos ir priedai"
+
+msgid "actions"
+msgstr "Veiksmai"
+
+msgid "first"
+msgstr "Pirmas"
+
+msgid "last"
+msgstr "Paskutinis"
+
+msgid "previous"
+msgstr "Ankstesnis"
+
+msgid "next"
+msgstr "Sekantis"
+
+msgid "select"
+msgstr "Pažymėti"
+
+msgid "selection"
+msgstr "Žymėjimas"
+
+msgid "all"
+msgstr "visus"
+
+msgid "none"
+msgstr "Nieko"
+
+msgid "currpage"
+msgstr "matomus šiame puslapyje"
+
+msgid "isread"
+msgstr "Skaityti"
+
+msgid "unread"
+msgstr "neskaitytus"
+
+msgid "flagged"
+msgstr "su gairele"
+
+msgid "unflagged"
+msgstr "Nepažymėti vėliavėle"
+
+msgid "unanswered"
+msgstr "neatsakytus"
+
+msgid "withattachment"
+msgstr "Su priedu"
+
+msgid "deleted"
+msgstr "pašalintus"
+
+msgid "undeleted"
+msgstr "Neištrintas"
+
+msgid "replied"
+msgstr "Atsakytieji"
+
+msgid "forwarded"
+msgstr "Persiųstieji"
+
+msgid "invert"
+msgstr "invertuoti"
+
+msgid "filter"
+msgstr "Rodyti"
+
+msgid "list"
+msgstr "Sąrašas"
+
+msgid "threads"
+msgstr "Gijos"
+
+msgid "expand-all"
+msgstr "išskleisti visas"
+
+msgid "expand-unread"
+msgstr "išskleisti turinčias neskaitytų laiškų"
+
+msgid "collapse-all"
+msgstr "suskleisti visas"
+
+msgid "threaded"
+msgstr "Rodyti gijas"
+
+msgid "showunread"
+msgstr "Rodyti neskaitytus laiškus"
+
+msgid "autoexpand_threads"
+msgstr "Išskleisti gijas"
+
+msgid "do_expand"
+msgstr "visas"
+
+msgid "expand_only_unread"
+msgstr "tik turinčias neskaitytų laiškų"
+
+msgid "fromto"
+msgstr "Siuntėjas/Gavėjas"
+
+msgid "flag"
+msgstr "Gairelė"
+
+msgid "attachment"
+msgstr "Priedas"
+
+msgid "nonesort"
+msgstr "Nerūšiuoti"
+
+msgid "sentdate"
+msgstr "Išsiuntimo laikas"
+
+msgid "arrival"
+msgstr "Gavimo laikas"
+
+msgid "asc"
+msgstr "didėjančiai"
+
+msgid "desc"
+msgstr "mažėjančiai"
+
+msgid "listcolumns"
+msgstr "Stulpelių sąrašas"
+
+msgid "listsorting"
+msgstr "Stulpelis rikiavimui"
+
+msgid "listorder"
+msgstr "Rikiavimo tvarka"
+
+msgid "listmode"
+msgstr "Sąrašo rodymo veiksena"
+
+msgid "lmode"
+msgstr "Sąrašo veiksena"
+
+msgid "layout"
+msgstr "Išdėstymas"
+
+msgid "layoutwidescreen"
+msgstr "Platus ekranas"
+
+msgid "layoutdesktop"
+msgstr "Darbalaukis"
+
+msgid "layoutlist"
+msgstr "Sąrašas"
+
+msgid "layoutwidescreendesc"
+msgstr "Plačiaekranis (3 stulpelių rodymas)"
+
+msgid "layoutdesktopdesc"
+msgstr "Darbalaukis (platus sąrašas, o žemiau pašto peržiūra)"
+
+msgid "layoutlistdesc"
+msgstr "Sąrašas (be pašto peržiūros)"
+
+msgid "folderactions"
+msgstr "Veiksmai su aplankais…"
+
+msgid "compact"
+msgstr "Suglaudinti"
+
+msgid "empty"
+msgstr "Ištuštinti"
+
+msgid "importmessages"
+msgstr "Importuoti laiškus"
+
+msgid "mailimportdesc"
+msgstr ""
+"Jūs galite įkelti paštą, naudodami failus <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> ar <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> formatu."
+
+msgid "mailimportzip"
+msgstr "Keli failai gali būti suglaudinti į zip archyvus."
+
+msgid "quota"
+msgstr "Disko naudojimas"
+
+msgid "unknown"
+msgstr "nežinomas"
+
+msgid "unlimited"
+msgstr "neribotas"
+
+msgid "quotatype"
+msgstr "Kvotos tipas"
+
+msgid "quotatotal"
+msgstr "Limitas"
+
+msgid "quotaused"
+msgstr "Išnaudota"
+
+msgid "quotastorage"
+msgstr "Disko talpa"
+
+msgid "quotamessage"
+msgstr "Laiškų skaičius"
+
+msgid "shortheaderdate"
+msgstr "Ties $date"
+
+msgid "shortheaderto"
+msgstr "Skirtas $to ties $date"
+
+msgid "shortheaderfrom"
+msgstr "Nuo $from ties $date"
+
+msgid "quicksearch"
+msgstr "Sparčioji paieška"
+
+msgid "searchplaceholder"
+msgstr "Ieškoti..."
+
+msgid "resetsearch"
+msgstr "Atšaukti paiešką"
+
+msgid "searchmod"
+msgstr "Paieškos modifikatoriai"
+
+msgid "msgtext"
+msgstr "Visas laiškas"
+
+msgid "body"
+msgstr "Laiško tekstas"
+
+msgid "type"
+msgstr "Tipas"
+
+msgid "namex"
+msgstr "Vardas"
+
+msgid "searchscope"
+msgstr "Sritis"
+
+msgid "currentfolder"
+msgstr "Šis aplankas"
+
+msgid "subfolders"
+msgstr "Šis ir poaplankiai"
+
+msgid "allfolders"
+msgstr "Visi aplankai"
+
+msgid "searchinterval-1W"
+msgstr "senesni nei savaitės"
+
+msgid "searchinterval-1M"
+msgstr "senesni nei mėnesio"
+
+msgid "searchinterval-1Y"
+msgstr "senesni nei metų"
+
+msgid "searchinterval1W"
+msgstr "ne senesni nei savaitės"
+
+msgid "searchinterval1M"
+msgstr "ne senesni nei mėnesio"
+
+msgid "searchinterval1Y"
+msgstr "ne senesni nei metų"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Atverti naujame lange"
+
+msgid "emlsave"
+msgstr "Parsisiųsti (.eml)"
+
+msgid "changeformattext"
+msgstr "Rodyti grynojo teksto formatu"
+
+msgid "changeformathtml"
+msgstr "Rodyti HTML formatu"
+
+msgid "editasnew"
+msgstr "Redaguoti kaip naują"
+
+msgid "send"
+msgstr "Siųsti"
+
+msgid "sendmessage"
+msgstr "Išsiųsti laiską"
+
+msgid "savemessage"
+msgstr "Išsaugoti šį juodraštį"
+
+msgid "addattachment"
+msgstr "Pridėti failą"
+
+msgid "charset"
+msgstr "Koduotė"
+
+msgid "editortype"
+msgstr "Laiško tipas"
+
+msgid "returnreceipt"
+msgstr "Prašyti pristatymo pažymos"
+
+msgid "dsn"
+msgstr "Laiško pristatymo pažyma"
+
+msgid "keepformatting"
+msgstr "Išlaikyti formatavimą"
+
+msgid "mailreplyintro"
+msgstr "$date, $sender rašė:"
+
+msgid "originalmessage"
+msgstr "Originalus laiškas"
+
+msgid "selectimage"
+msgstr "Pažymėti paveikslą"
+
+msgid "addimage"
+msgstr "Pridėti paveikslą"
+
+msgid "selectmedia"
+msgstr "Pažymėti vaizdo įrašą"
+
+msgid "addmedia"
+msgstr "Pridėti vaizdo įrašą"
+
+msgid "encrypt"
+msgstr "Šifruoti"
+
+msgid "encryptmessage"
+msgstr "Šifruoti laišką"
+
+msgid "encryptmessagemailvelope"
+msgstr "Šifruoti laišką, naudojant „Mailvelope“ naršyklės plėtinį"
+
+msgid "importpubkeys"
+msgstr "Importuoti viešuosius raktus"
+
+msgid "encryptedsendialog"
+msgstr "Siunčiamas šifruotas laiškas"
+
+msgid "encryptandsign"
+msgstr "Šifruoti ir pasirašyti"
+
+msgid "keyid"
+msgstr "Rakto ID"
+
+msgid "keylength"
+msgstr "Bitai"
+
+msgid "keyexpired"
+msgstr "Nebegalioja"
+
+msgid "keyrevoked"
+msgstr "Atšauktas"
+
+msgid "bccinstead"
+msgstr "Naudoti Bcc"
+
+msgid "addheader"
+msgstr "Pridėti lauką (Cc, Bcc, ...)"
+
+msgid "insert"
+msgstr "Įterpti"
+
+msgid "insertcontact"
+msgstr "Įterpti adresatą(-us)"
+
+msgid "recipient"
+msgstr "Gavėjas"
+
+msgid "recipientedit"
+msgstr "Gavėjo taisymas"
+
+msgid "editidents"
+msgstr "Tvarkyti tapatybes"
+
+msgid "spellcheck"
+msgstr "Tikrinti rašybą"
+
+msgid "checkspelling"
+msgstr "Tikrinti rašybą"
+
+msgid "resumeediting"
+msgstr "Tęsti redagavimą"
+
+msgid "revertto"
+msgstr "Atstatyti į"
+
+msgid "restore"
+msgstr "Atkurti"
+
+msgid "restoremessage"
+msgstr "Atkurti pranešimus?"
+
+msgid "ignore"
+msgstr "Ignoruoti"
+
+msgid "responses"
+msgstr "Atsakymai"
+
+msgid "insertresponse"
+msgstr "Įterpti atsakymą"
+
+msgid "manageresponses"
+msgstr "Tvarkyti atsakymus"
+
+msgid "newresponse"
+msgstr "Kurti naują atsakymą"
+
+msgid "addresponse"
+msgstr "Pridėti atsakymą"
+
+msgid "editresponse"
+msgstr "Taisyti atsakymą"
+
+msgid "editresponses"
+msgstr "Taisyti atsakymus"
+
+msgid "responsename"
+msgstr "Pavadinimas"
+
+msgid "responsetext"
+msgstr "Atsakymo tekstas"
+
+msgid "attach"
+msgstr "Pridėti failą"
+
+msgid "attachments"
+msgstr "Pridėti failai"
+
+msgid "upload"
+msgstr "Įkelti"
+
+msgid "uploadprogress"
+msgstr "$percent ($current iš $total)"
+
+msgid "close"
+msgstr "Užverti"
+
+msgid "messageoptions"
+msgstr "Laiško savybės…"
+
+msgid "togglecomposeoptions"
+msgstr "Rodyti/slėpti nustatymus"
+
+msgid "attachmentrename"
+msgstr "Pervardinti priedą"
+
+msgid "low"
+msgstr "Žemas"
+
+msgid "lowest"
+msgstr "Žemiausias"
+
+msgid "normal"
+msgstr "Normalus"
+
+msgid "high"
+msgstr "Aukštas"
+
+msgid "highest"
+msgstr "Aukščiausias"
+
+msgid "nosubject"
+msgstr "(tema nenurodyta)"
+
+msgid "showimages"
+msgstr "Rodyti paveikslėlius"
+
+msgid "allow"
+msgstr "Leisti"
+
+msgid "alwaysshow"
+msgstr "Visada rodyti paveikslėlius $sender laiškuose"
+
+msgid "alwaysallow"
+msgstr "Visada leisti nuo $sender"
+
+msgid "isdraft"
+msgstr "Tai – laiško juodraštis."
+
+msgid "andnmore"
+msgstr "$nr daugiau..."
+
+msgid "details"
+msgstr "Išsamiau"
+
+msgid "summary"
+msgstr "Santrauka"
+
+msgid "headers"
+msgstr "Antraštės"
+
+msgid "allheaders"
+msgstr "Visos antraštės..."
+
+msgid "togglemoreheaders"
+msgstr "Rodyti daugiau antraščių"
+
+msgid "togglefullheaders"
+msgstr "Įjungti/išjungti neapdorotas laiškų antraštes"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Grynasis tekstas"
+
+msgid "savesentmessagein"
+msgstr "Išsiųstus laiškus įrašyti į"
+
+msgid "dontsave"
+msgstr "neįrašyti"
+
+msgid "maxuploadsize"
+msgstr "Maksimalus leistinas failo dydis yra $size"
+
+msgid "addcc"
+msgstr "Pridėti Cc"
+
+msgid "addbcc"
+msgstr "Pridėti Bcc"
+
+msgid "addreplyto"
+msgstr "Pridėti Reply-To"
+
+msgid "addfollowupto"
+msgstr "Pridėti Followup-To"
+
+msgid "sendreceipt"
+msgstr "Išsiųsti perskaitymo patvirtinimą?"
+
+msgid "mdnrequest"
+msgstr ""
+"Šio laiško siuntėjas paprašė patvirtinti, kad jūs jį perskaitėte. Ar "
+"išsiųsti tai patvirtinančią pažymą?"
+
+msgid "receiptread"
+msgstr "Patvirtinimas (laiškas perskaitytas)"
+
+msgid "yourmessage"
+msgstr "Tai – pažyma, patvirtinanti, jog buvo perskaitytas Jūsų laiškas"
+
+msgid "receiptnote"
+msgstr ""
+"Pastaba: šia pažyma patvirtinamas tik faktas, jog laiškas buvo parodytas "
+"gavėjui. Ja negarantuojama, jog gavėjas perskaitė ir suprato laiško turinį."
+
+msgid "sendalwaysto"
+msgstr "Visada siųsti adresu $email"
+
+msgid "zoomin"
+msgstr "Didinti"
+
+msgid "zoomout"
+msgstr "Mažinti"
+
+msgid "rotate"
+msgstr "Pasukti"
+
+msgid "increaseimage"
+msgstr "Padidinti paveikslo dydį"
+
+msgid "decreaseimage"
+msgstr "Sumažinti paveikslo dydį"
+
+msgid "rotateimage"
+msgstr "Pasukti paveikslą"
+
+msgid "showtools"
+msgstr "Rodyti paveikslų įrankius"
+
+msgid "hidetools"
+msgstr "Slėpti paveikslų įrankius"
+
+msgid "name"
+msgstr "Rodomas vardas"
+
+msgid "firstname"
+msgstr "Vardas"
+
+msgid "surname"
+msgstr "Pavardė"
+
+msgid "middlename"
+msgstr "Kiti vardai"
+
+msgid "nameprefix"
+msgstr "Titulas"
+
+msgid "namesuffix"
+msgstr "Sufiksas"
+
+msgid "nickname"
+msgstr "Pravardė"
+
+msgid "jobtitle"
+msgstr "Pareigos"
+
+msgid "department"
+msgstr "Padalinys"
+
+msgid "gender"
+msgstr "Lytis"
+
+msgid "maidenname"
+msgstr "Mergautinė pavardė"
+
+msgid "email"
+msgstr "El. paštas"
+
+msgid "phone"
+msgstr "Telefono numeris"
+
+msgid "address"
+msgstr "Adresas"
+
+msgid "street"
+msgstr "Gatvė, namas ir butas"
+
+msgid "locality"
+msgstr "Miestas"
+
+msgid "zipcode"
+msgstr "Pašto kodas"
+
+msgid "region"
+msgstr "Regionas"
+
+msgid "country"
+msgstr "Valstybė"
+
+msgid "birthday"
+msgstr "Gimimo data"
+
+msgid "anniversary"
+msgstr "Jubiliejus"
+
+msgid "website"
+msgstr "Svetainė"
+
+msgid "instantmessenger"
+msgstr "Tikralaikiai pokalbiai"
+
+msgid "notes"
+msgstr "Pastabos"
+
+msgid "male"
+msgstr "vyras"
+
+msgid "female"
+msgstr "moteris"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Vadybininkas(-ė)"
+
+msgid "assistant"
+msgstr "Padėjėjo(-os)"
+
+msgid "spouse"
+msgstr "Sutuoktinis"
+
+msgid "allfields"
+msgstr "Visi laukai"
+
+msgid "search"
+msgstr "Paieška"
+
+msgid "searchresult"
+msgstr "Paieškos rezultatas"
+
+msgid "advsearch"
+msgstr "Išplėstinė paieška"
+
+msgid "advanced"
+msgstr "Išsamiau"
+
+msgid "other"
+msgstr "Kitas"
+
+msgid "printcontact"
+msgstr "Spausdinti kontakto duomenis"
+
+msgid "qrcode"
+msgstr "QR kodas"
+
+msgid "typehome"
+msgstr "Namų"
+
+msgid "typework"
+msgstr "Darbo"
+
+msgid "typeother"
+msgstr "Kitas"
+
+msgid "typemobile"
+msgstr "Mobilusis"
+
+msgid "typemain"
+msgstr "Pagrindinis"
+
+msgid "typehomefax"
+msgstr "Namų faksas"
+
+msgid "typeworkfax"
+msgstr "Darbo faksas"
+
+msgid "typecar"
+msgstr "Automobilyje"
+
+msgid "typepager"
+msgstr "Pranešimų gaviklis"
+
+msgid "typevideo"
+msgstr "Vaizdo"
+
+msgid "typeassistant"
+msgstr "Padėjėjo(-os)"
+
+msgid "typehomepage"
+msgstr "Tinklalapis"
+
+msgid "typeblog"
+msgstr "Tinklaraštis"
+
+msgid "typeprofile"
+msgstr "Profilis"
+
+msgid "addfield"
+msgstr "Pridėti lauką…"
+
+msgid "addcontact"
+msgstr "Pridėti adresatą"
+
+msgid "editcontact"
+msgstr "Taisyti adresatą"
+
+msgid "contacts"
+msgstr "Adresatai"
+
+msgid "contactproperties"
+msgstr "Adresato savybės"
+
+msgid "contactnameandorg"
+msgstr "Vardas ir organizacija"
+
+msgid "personalinfo"
+msgstr "Asmeniniai duomenys"
+
+msgid "personal"
+msgstr "Asmeninis"
+
+msgid "contactphoto"
+msgstr "Adresato nuotrauka"
+
+msgid "edit"
+msgstr "Redaguoti"
+
+msgid "cancel"
+msgstr "Atsisakyti"
+
+msgid "save"
+msgstr "Įrašyti"
+
+msgid "delete"
+msgstr "Pašalinti"
+
+msgid "discard"
+msgstr "Panaikinti"
+
+msgid "continue"
+msgstr "Tęsti"
+
+msgid "ok"
+msgstr "Gerai"
+
+msgid "rename"
+msgstr "Pervardinti"
+
+msgid "addphoto"
+msgstr "Pridėti"
+
+msgid "replacephoto"
+msgstr "Pakeisti"
+
+msgid "uploadphoto"
+msgstr "Įkelti nuotrauką"
+
+msgid "choosefile"
+msgstr "Pasirinkti failą..."
+
+msgid "choosefiles"
+msgstr "Pasirinkti failus..."
+
+msgid "browse"
+msgstr "Naršyti"
+
+msgid "newcontact"
+msgstr "Sukurti naują adresatą"
+
+msgid "deletecontact"
+msgstr "Ištrinti pažymėtus adresatus"
+
+msgid "composeto"
+msgstr "Rašyti laišką"
+
+msgid "contactsfromto"
+msgstr "Adresatai nuo $from iki $to iš $count"
+
+msgid "print"
+msgstr "Spausdinti"
+
+msgid "export"
+msgstr "Eksportuoti"
+
+msgid "exportall"
+msgstr "Eksportuoti visus"
+
+msgid "exportsel"
+msgstr "Eksportuoti pažymėtus"
+
+msgid "exportvcards"
+msgstr "Eksportuoti adresatus  „vCard“ formatu"
+
+msgid "newgroup"
+msgstr "Kurti naują grupę"
+
+msgid "addgroup"
+msgstr "Pridėti grupę"
+
+msgid "grouprename"
+msgstr "Pervardinti grupę"
+
+msgid "groupdelete"
+msgstr "Pašalinti grupę"
+
+msgid "groupassign"
+msgstr "Priskirti grupei..."
+
+msgid "groupremove"
+msgstr "Šalinti iš grupės"
+
+msgid "groupremoveselected"
+msgstr "Pašalinti pažymėtus adresatus iš grupės"
+
+msgid "uponelevel"
+msgstr "Į viršų per vieną"
+
+msgid "previouspage"
+msgstr "Rodyti ankstesnį puslapį"
+
+msgid "firstpage"
+msgstr "Rodyti pirmąjį puslapį"
+
+msgid "nextpage"
+msgstr "Rodyti tolesnį puslapį"
+
+msgid "lastpage"
+msgstr "Rodyti paskutinį puslapį"
+
+msgid "group"
+msgstr "Grupė"
+
+msgid "groups"
+msgstr "Grupės"
+
+msgid "listgroup"
+msgstr "Išvardinti grupės narius"
+
+msgid "personaladrbook"
+msgstr "Asmeniniai adresai"
+
+msgid "searchsave"
+msgstr "Įrašyti kaip radinių aplanką"
+
+msgid "searchdelete"
+msgstr "Pašalinti radinių aplanką"
+
+msgid "import"
+msgstr "Importuoti"
+
+msgid "importcontacts"
+msgstr "Importuoti adresatus"
+
+msgid "importfromfile"
+msgstr "Importuoti iš failo"
+
+msgid "importtarget"
+msgstr "Pridėti adresatus į"
+
+msgid "importreplace"
+msgstr "Perrašyti visą adresų knygą"
+
+msgid "importgroups"
+msgstr "Importuoti priskyrimus grupėms"
+
+msgid "importgroupsall"
+msgstr "Visus (sukurti trūkstamas grupes)"
+
+msgid "importgroupsexisting"
+msgstr "Tik esamoms grupėms"
+
+msgid "importdesc"
+msgstr ""
+"Galite įkelti kontaktus iš jau turimos adresų knygos.<br/>Šiuo metu galima "
+"importuoti kontaktus iš <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> ar CSV (comma-"
+"separated) duomenų formatų."
+
+msgid "importmapdesc"
+msgstr ""
+"Prieš tęsdami CSV importą, patvirtinkite, jog žemiau pateikti laukų "
+"atitikmenys yra teisingi."
+
+msgid "fieldnotmapped"
+msgstr "Laukas nesusietas (neimportuoti)"
+
+msgid "skipheader"
+msgstr "Neimportuoti pirmosios (antraštinės) eilutės"
+
+msgid "done"
+msgstr "Baigta"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Nuostatos"
+
+msgid "about"
+msgstr "Apie"
+
+msgid "preferences"
+msgstr "Nuostatos"
+
+msgid "userpreferences"
+msgstr "Naudotojo nuostatos"
+
+msgid "editpreferences"
+msgstr "Keisti naudotojo nuostatas"
+
+msgid "identities"
+msgstr "Tapatybės"
+
+msgid "manageidentities"
+msgstr "Tvarkyti tapatybes"
+
+msgid "newidentity"
+msgstr "Sukurti naują tapatybę"
+
+msgid "addidentity"
+msgstr "Pridėti tapatybę"
+
+msgid "editidentity"
+msgstr "Tvarkyti tapatybę"
+
+msgid "identityencryption"
+msgstr "Šifravimas"
+
+msgid "preferhtml"
+msgstr "Rodyti HTML"
+
+msgid "defaultcharset"
+msgstr "Numatytoji koduotė"
+
+msgid "htmlmessage"
+msgstr "HTML laiškas"
+
+msgid "messagepart"
+msgstr "Dalis"
+
+msgid "digitalsig"
+msgstr "Skaitmeninis parašas"
+
+msgid "dateformat"
+msgstr "Datos formatas"
+
+msgid "timeformat"
+msgstr "Laiko formatas"
+
+msgid "prettydate"
+msgstr "Dailios datos"
+
+msgid "setdefault"
+msgstr "Laikyti numatytąja"
+
+msgid "autodetect"
+msgstr "Aptikti automatiškai"
+
+msgid "language"
+msgstr "Kalba"
+
+msgid "timezone"
+msgstr "Laiko juosta"
+
+msgid "pagesize"
+msgstr "Eilučių skaičius puslapyje"
+
+msgid "signature"
+msgstr "Parašas"
+
+msgid "dstactive"
+msgstr "Vasaros laikas skiriasi"
+
+msgid "showinextwin"
+msgstr "Atidaryti pranešimą naujame lange"
+
+msgid "composeextwin"
+msgstr "Rašyti naujame lange"
+
+msgid "htmleditor"
+msgstr "Laiškus kurti HTML formatu"
+
+msgid "htmlonreply"
+msgstr "tik atsakymus į HTML formato laiškus"
+
+msgid "htmlonreplyandforward"
+msgstr "atsakant į HTML laišką arba jį persiunčiant"
+
+msgid "htmlsignature"
+msgstr "HTML parašas"
+
+msgid "showemail"
+msgstr "Rodyti el. pašto adresą ir asmenvardį"
+
+msgid "previewpane"
+msgstr "Rodyti laiško peržiūros polangį"
+
+msgid "skin"
+msgstr "Grafinis apvalkalas"
+
+msgid "logoutclear"
+msgstr "Išvalyti Šiukšlinę atsijungiant"
+
+msgid "logoutcompact"
+msgstr "Suglaudinti gautųjų laiškų aplanką atsijungiant"
+
+msgid "uisettings"
+msgstr "Naudotojo sąsaja"
+
+msgid "serversettings"
+msgstr "Serverio nuostatos"
+
+msgid "mailboxview"
+msgstr "Pašto dėžutės rodymas"
+
+msgid "mdnrequests"
+msgstr "Gavus prašymą patvirtinti, jog laiškas perskaitytas"
+
+msgid "askuser"
+msgstr "visuomet klausti, ar siųsti patvirtinimą"
+
+msgid "autosend"
+msgstr "visuomet siųsti patvirtinimą automatiškai"
+
+msgid "autosendknown"
+msgstr ""
+"automatiškai siųsti patvirtinimą adresų knygoje esantiems adresatams, kitu "
+"atveju klausti"
+
+msgid "autosendknownignore"
+msgstr ""
+"automatiškai siųsti patvirtinimą adresų knygoje esantiems adresatams, kitu "
+"atveju nesiųsti"
+
+msgid "autosendtrusted"
+msgstr ""
+"automatiškai siųsti patvirtinimą patikimiems siuntėjams, kitu atveju klausti"
+
+msgid "autosendtrustedignore"
+msgstr ""
+"automatiškai siųsti patvirtinimą patikimiems siuntėjams, kitu atveju "
+"nesiųsti"
+
+msgid "ignorerequest"
+msgstr "Ignoruoti prašymą"
+
+msgid "readwhendeleted"
+msgstr "Pažymėti laišką kaip skaitytą prieš šalinant"
+
+msgid "flagfordeletion"
+msgstr "Pažymėti laišką šalinimui užuot šalinus"
+
+msgid "skipdeleted"
+msgstr "Nerodyti pašalintų laiškų"
+
+msgid "deletealways"
+msgstr "Pašalinti laiškus, jeigu nepavyksta jų perkelti į Šiukšlinę"
+
+msgid "deletejunk"
+msgstr "Pašalinti Brukalo aplanke esančius laiškus"
+
+msgid "showremoteimages"
+msgstr "Įkelti paveikslėlius iš interneto serverių"
+
+msgid "allowremoteresources"
+msgstr "Leisti nuotolinius išteklius (paveikslėlius, stilius)"
+
+msgid "fromknownsenders"
+msgstr "tik žinomų siuntėjų laiškuose"
+
+msgid "fromtrustedsenders"
+msgstr "iš patikimų siuntėjų"
+
+msgid "frommycontacts"
+msgstr "iš mano adresatų knygos adresatų"
+
+msgid "always"
+msgstr "visada"
+
+msgid "alwaysbutplain"
+msgstr "visuomet, išskyrus atsakant į grynojo teksto laiškus"
+
+msgid "showinlineimages"
+msgstr "Rodyti pridėtus paveikslėlius žemiau laiško"
+
+msgid "autosavedraft"
+msgstr "Automatiškai įrašyti juodraščius"
+
+msgid "everynminutes"
+msgstr "kas $n min."
+
+msgid "refreshinterval"
+msgstr "Atnaujinti (patikrinti, ar nėra naujų laiškų ir pan.)"
+
+msgid "never"
+msgstr "niekada"
+
+msgid "immediately"
+msgstr "nedelsiant"
+
+msgid "messagesdisplaying"
+msgstr "Laiškų rodymas"
+
+msgid "messagescomposition"
+msgstr "Laiškų rašymas"
+
+msgid "mimeparamfolding"
+msgstr "Prisegtų failų vardų kodavimas"
+
+msgid "2231folding"
+msgstr "visiškas RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "visiškas RFC 2047 (kitos programos)"
+
+msgid "force7bit"
+msgstr "Naudoti MIME kodavimą 8 bitų simboliams"
+
+msgid "savelocalstorage"
+msgstr "Išsaugoti naršyklės laikinoje saugykloje (keše)"
+
+msgid "advancedoptions"
+msgstr "Papildomos nuostatos"
+
+msgid "toggleadvancedoptions"
+msgstr "Rodyti/slėpti papildomus nustatymus"
+
+msgid "focusonnewmessage"
+msgstr "Fokusuoti naršyklės langą gavus naują laišką"
+
+msgid "checkallfolders"
+msgstr "Naujų laiškų ieškoti visuose aplankuose"
+
+msgid "displaynext"
+msgstr "Rodyti kitą sąrašo įrašą ištrinus/perkėlus"
+
+msgid "defaultfont"
+msgstr "Numatytasis HTML laiškų šriftas"
+
+msgid "mainoptions"
+msgstr "Pagrindinės nuostatos"
+
+msgid "browseroptions"
+msgstr "Naršyklės nuostatos"
+
+msgid "section"
+msgstr "Sekcija"
+
+msgid "maintenance"
+msgstr "Priežiūra"
+
+msgid "newmessage"
+msgstr "Naujas laiškas"
+
+msgid "signatureoptions"
+msgstr "Parašo nuostatos"
+
+msgid "whenreplying"
+msgstr "Kuriant atsakymą"
+
+msgid "replyempty"
+msgstr "necituoti originalaus laiško"
+
+msgid "replytopposting"
+msgstr "rašyti atsakymą virš cituojamo laiško"
+
+msgid "replytoppostingnoindent"
+msgstr "rašyti atsakymą virš cituojamo laiško (be įtraukos)"
+
+msgid "replybottomposting"
+msgstr "rašyti atsakymą po cituojamu laišku"
+
+msgid "replyremovesignature"
+msgstr "Pašalinti cituojamame laiške esantį parašą"
+
+msgid "autoaddsignature"
+msgstr "Automatiškai pridėti parašą"
+
+msgid "newmessageonly"
+msgstr "tik naujuose laiškuose"
+
+msgid "replyandforwardonly"
+msgstr "tik atsakymuose ir persiunčiamuose laiškuose"
+
+msgid "insertsignature"
+msgstr "Pridėti parašą"
+
+msgid "sigbelow"
+msgstr "Įterpti parašą žemiau kabutėmis išskirto laiško turinio"
+
+msgid "sigseparator"
+msgstr "Priverstinai naudoti standartinį skyriklį parašuose"
+
+msgid "automarkread"
+msgstr "Pažymėti laiškus kaip skaitytus"
+
+msgid "afternseconds"
+msgstr "praėjus $n sek."
+
+msgid "reqmdn"
+msgstr "Visuomet prašyti patvirtinimo, jog laiškas perskaitytas"
+
+msgid "reqdsn"
+msgstr "Visuomet prašyti laiško pristatymo pažymos"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Atsakymus talpinti į tą patį aplanką, kuriame yra pirminis laiškas"
+
+msgid "defaultabook"
+msgstr "Numatytoji adresų knyga"
+
+msgid "autocompletesingle"
+msgstr "Užbaigiant adresus, praleisti antrinius"
+
+msgid "listnamedisplay"
+msgstr "Rodyti adresatus kaip"
+
+msgid "contactformmode"
+msgstr "Numatytieji adresato laukai"
+
+msgid "privatemode"
+msgstr "Namų"
+
+msgid "businessmode"
+msgstr "Darbo"
+
+msgid "collectedaddresses"
+msgstr "Surinkti adresai"
+
+msgid "collectedrecipients"
+msgstr "Surinkti gavėjai"
+
+msgid "collectedrecipientsopt"
+msgstr "Laikyti išsiunčiamų el. laiškų gavėjus ties"
+
+msgid "collectedsendersopt"
+msgstr "Laikyti patikimus siuntėjus ties"
+
+msgid "trustedsenders"
+msgstr "Patikimi siuntėjai"
+
+msgid "spellcheckbeforesend"
+msgstr "Tikrinti rašybą prieš išsiunčiant laišką"
+
+msgid "spellcheckoptions"
+msgstr "Rašybos tikrinimo nuostatos"
+
+msgid "spellcheckignoresyms"
+msgstr "Nepaisyti žodžių su spec. simboliais"
+
+msgid "spellcheckignorenums"
+msgstr "Nepaisyti žodžių su skaitmenimis"
+
+msgid "spellcheckignorecaps"
+msgstr "Nepaisyti žodžių vien iš didžiųjų raidžių"
+
+msgid "addtodict"
+msgstr "Įtraukti į žodyną"
+
+msgid "editoroptions"
+msgstr "Redaktoriaus nuostatos"
+
+msgid "enableautolink"
+msgstr "Automatiškai konvertuoti tinkamus URL adresus į hipersaitus"
+
+msgid "mailtoprotohandler"
+msgstr "Užregistruoti svetainę kaip dirbančią su „mailto:“ saitais"
+
+msgid "standardwindows"
+msgstr "Iškylančiuosius langus traktuoti kaip įprastus"
+
+msgid "forwardmode"
+msgstr "Laiškų persiuntimo būdas"
+
+msgid "inline"
+msgstr "kaip citatą"
+
+msgid "asattachment"
+msgstr "kaip priedas"
+
+msgid "replyallmode"
+msgstr "Numatytasis mygtuko „Atsakyti visiems“ veiksmas"
+
+msgid "replyalldefault"
+msgstr "atsakyti visiems"
+
+msgid "replyalllist"
+msgstr "atsakyti el. pašto grupei (jei aptikta)"
+
+msgid "allmessages"
+msgstr "visi laiškai"
+
+msgid "olderxdays"
+msgstr "senesni nei $x d."
+
+msgid "folder"
+msgstr "Aplankas"
+
+msgid "folders"
+msgstr "Aplankai"
+
+msgid "foldername"
+msgstr "Aplanko vardas"
+
+msgid "subscribed"
+msgstr "Užsakytas"
+
+msgid "messagecount"
+msgstr "Laiškai"
+
+msgid "create"
+msgstr "Sukurti"
+
+msgid "createfolder"
+msgstr "Sukurti naują aplanką"
+
+msgid "managefolders"
+msgstr "Tvarkyti aplankus"
+
+msgid "specialfolders"
+msgstr "Specialieji aplankai"
+
+msgid "properties"
+msgstr "Savybės"
+
+msgid "folderproperties"
+msgstr "Aplanko savybės"
+
+msgid "parentfolder"
+msgstr "Tėvinis aplankas"
+
+msgid "location"
+msgstr "Vieta"
+
+msgid "info"
+msgstr "Informacija"
+
+msgid "getfoldersize"
+msgstr "Spustelėkite, norėdami sužinoti aplanko dydį"
+
+msgid "changesubscription"
+msgstr "Spustelėkite, norėdami keisti prenumeratos nuostatas"
+
+msgid "foldertype"
+msgstr "Aplanko tipas"
+
+msgid "personalfolder"
+msgstr "Asmeninis aplankas"
+
+msgid "otherfolder"
+msgstr "Kito naudotojo aplankas"
+
+msgid "sharedfolder"
+msgstr "Viešas aplankas"
+
+msgid "findfolders"
+msgstr "Ieškoti aplankų"
+
+msgid "findcontacts"
+msgstr "Rasti adresatus"
+
+msgid "findmail"
+msgstr "Rasti el. laiškus"
+
+msgid "namespace.personal"
+msgstr "Asmeninis"
+
+msgid "namespace.other"
+msgstr "Kito naudotojo"
+
+msgid "namespace.shared"
+msgstr "Bendrinamas"
+
+msgid "dualuselabel"
+msgstr "Savyje gali turėti tik"
+
+msgid "dualusemail"
+msgstr "laiškai"
+
+msgid "dualusefolder"
+msgstr "aplankai"
+
+msgid "generate"
+msgstr "Generuoti"
+
+msgid "encryptioncreatekey"
+msgstr "Kurti naują raktų porą"
+
+msgid "openmailvelopesettings"
+msgstr "Atverti Mailvelope nustatymus"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Turite $nr atitinkančius privačiuosius raktus, saugomus jūsų Mailvelope "
+"raktinėje:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Šio siuntėjo tapatybė kol kas neturi jūsų Mailvelope priede saugomo PGP "
+"privačiojo rakto. Ar norėtumėte jį sukurti, kad būtų įjungtas šifruotas "
+"susirašinėjimas?"
+
+msgid "encryption"
+msgstr "Šifravimas"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelope nuostatos"
+
+msgid "mailvelopemainkeyring"
+msgstr "Naudoti Mailvelope pagrindinę raktinę"
+
+msgid "mailvelopenotfound"
+msgstr "Jūsų naršyklėje nėra įjungtas/įdiegtas Mailvelope priedas."
+
+msgid "mailvelopeenable"
+msgstr "Įjungti"
+
+msgid "sortby"
+msgstr "Rikiuoti pagal"
+
+msgid "sortasc"
+msgstr "Rikiuoti didėjančiai"
+
+msgid "sortdesc"
+msgstr "Rikiuoti mažėjančiai"
+
+msgid "undo"
+msgstr "Atšaukti"
+
+msgid "installedplugins"
+msgstr "Įdiegti įskiepiai"
+
+msgid "plugin"
+msgstr "Papildinys"
+
+msgid "version"
+msgstr "Versija"
+
+msgid "source"
+msgstr "Šaltinis"
+
+msgid "destination"
+msgstr "Paskirtis"
+
+msgid "license"
+msgstr "Licencija"
+
+msgid "skinauthor"
+msgstr "pagal $author"
+
+msgid "support"
+msgstr "Gauti pagalbos"
+
+msgid "savedsearches"
+msgstr "Įrašytos paieškos"
+
+msgid "dateformatY"
+msgstr "MMMM"
+
+msgid "dateformaty"
+msgstr "MM"
+
+msgid "dateformatm"
+msgstr "mm"
+
+msgid "dateformatd"
+msgstr "dd"
+
+msgid "dateformatj"
+msgstr "d"
+
+msgid "dateformatn"
+msgstr "m"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unikodas"
+
+msgid "english"
+msgstr "Anglų"
+
+msgid "westerneuropean"
+msgstr "Vakarų Europos"
+
+msgid "easterneuropean"
+msgstr "Rytų Europos"
+
+msgid "southeasterneuropean"
+msgstr "Pietryčių Europos"
+
+msgid "baltic"
+msgstr "Baltijos šalių"
+
+msgid "cyrillic"
+msgstr "Kirilica"
+
+msgid "arabic"
+msgstr "Arabų"
+
+msgid "greek"
+msgstr "Graikų"
+
+msgid "hebrew"
+msgstr "Hebrajų"
+
+msgid "turkish"
+msgstr "Turkų"
+
+msgid "nordic"
+msgstr "Šiaurės šalių"
+
+msgid "thai"
+msgstr "Tajų"
+
+msgid "celtic"
+msgstr "Keltų"
+
+msgid "vietnamese"
+msgstr "Vietnamiečių"
+
+msgid "japanese"
+msgstr "Japonų"
+
+msgid "korean"
+msgstr "Korėjiečių"
+
+msgid "chinese"
+msgstr "Kinų"
+
+msgid "arialabeltopnav"
+msgstr "Lango valdymas"
+
+msgid "arialabeltasknav"
+msgstr "Aplikacijos užduotys"
+
+msgid "arialabeltoolbar"
+msgstr "Aplikacijos įrankių juosta"
+
+msgid "arialabellistnav"
+msgstr "Naršymas sąraše"
+
+msgid "arialabelactivetask"
+msgstr "Aktyvi užduotis"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Laiškų sąrašo filtras"
+
+msgid "arialabelmailsearchform"
+msgstr "El. laiško paieškos forma"
+
+msgid "arialabelcontactsearchform"
+msgstr "Adresatų paieškos forma"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "El. pašto paieškos įvestis"
+
+msgid "arialabelquicksearchbox"
+msgstr "Paieškos įvestis"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Aplankų sąrašo filtras"
+
+msgid "arialabelfoldersearchform"
+msgstr "Aplanko paieškos forma"
+
+msgid "arialabelfolderlist"
+msgstr "Laiškų aplanko pasirinkimas"
+
+msgid "arialabelmessagelist"
+msgstr "Elektroninių laiškų sąrašas"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Laiško peržiūra"
+
+msgid "arialabelmailboxmenu"
+msgstr "Veiksmų su aplankais meniu"
+
+msgid "arialabellistselectmenu"
+msgstr "Sąrašo pasirinkimo meniu"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Gijų sąrašo meniu"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Laiškų rodymo ir rikiavimo nustatymai"
+
+msgid "arialabelmailimportdialog"
+msgstr "Laiškų importavimo dialogas"
+
+msgid "arialabelmessagenav"
+msgstr "Navigacija tarp laiškų"
+
+msgid "arialabelmessagebody"
+msgstr "Laiško turinys"
+
+msgid "arialabelmessageactions"
+msgstr "Veiksmai su laišku"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Adresatų paieškos forma"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Kontaktų paieškos įvestis"
+
+msgid "arialabelmessageheaders"
+msgstr "Laiško antraštės"
+
+msgid "arialabelforwardingoptions"
+msgstr "Persiuntimo nustatymai"
+
+msgid "arialabelreplyalloptions"
+msgstr "Atsakyti visiems nustatymai"
+
+msgid "arialabelmoremessageactions"
+msgstr "Daugiau laiškų veiksmų"
+
+msgid "arialabelmorecontactactions"
+msgstr "Daugiau adresatų veiksmų"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Pažymėti pasirinktus laiškus kaip..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Laiško kūrimo nustatymai"
+
+msgid "arialabelresponsesmenu"
+msgstr "Atsakymų meniu"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Priedo įkėlimo forma"
+
+msgid "arialabelattachmentmenu"
+msgstr "Priedo nuostatos"
+
+msgid "arialabelmailtomenu"
+msgstr "El. pašto adreso nuostatos"
+
+msgid "arialabelattachmentpreview"
+msgstr "Priedo peržiūra"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Sąrašas adresatų ir grupių, kuriuos galima pasirinkti kaip gavėją"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Adresatų eksportavimo nustymai"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Adresų knygos/grupių nustatymai"
+
+msgid "arialabelpreferencesform"
+msgstr "Nustatymų forma"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Tapatybės redagavimo forma"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Atsakymo redagavimo forma"
+
+msgid "arialabelsearchterms"
+msgstr "Paieškos žodžiai"
+
+msgid "arialabeldropactionmenu"
+msgstr "Vilkimo veiksmo meniu"
+
+msgid "arialabelheadersmenu"
+msgstr "Gavėjo (antraštė) pridėjimo meniu"
+
+msgid "arialabelimagetools"
+msgstr "Paveikslų įrankiai"
+
+msgid "helplistnavigation"
+msgstr "Navigacija klaviatūra sąraše"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Rodyklė aukštyn / žemyn: fokusuoti / pasirinkti kitą eilutę.\n"
+"Tarpas: pasirinkti sufokusuoą eilutę.\n"
+"Lyg2 + rodyklė aukštyn / žemyn: pasirinkti papildomą eilutę viršuje / apačioje.\n"
+"Vald + tarpas: įtraukti sufokusuotą eilutę į pasirinktų sąrašą / pašalinti ją iš jo."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Rodyklė dešinėn / kairėn: išskleisti / suskleisti laiškų giją (esant gijų veiksenoje).\n"
+"Įvesti: atverti pasirinktą / sufokusuotą laišką.\n"
+"Šalinti: perkelti pasirinktus laiškus į Šiukšlinę."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Atidaryti pasirinktą adresatą"
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Įvyko klaida!"
+
+msgid "messages.loginfailed"
+msgstr "Prisijungti nepavyko."
+
+msgid "messages.cookiesdisabled"
+msgstr "Jūsų naršyklė nepriima slapukų."
+
+msgid "messages.sessionerror"
+msgstr "Jūsų sesija negaliojanti."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Aptiktas slapukų neatitikimas. Prašome išvalyti savo naršyklės slapukus."
+
+msgid "messages.storageerror"
+msgstr "Nepavyko prisijungti prie IMAP serverio."
+
+msgid "messages.servererror"
+msgstr "Serverio klaida!"
+
+msgid "messages.servererrormsg"
+msgstr "Serverio klaida: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Per daug nesėkmingų bandymų prisijungti. Bandykite jungtis vėliau."
+
+msgid "messages.connerror"
+msgstr "Ryšio klaida (nepavyko susijungti su serveriu)!"
+
+msgid "messages.dberror"
+msgstr "Duomenų bazės klaida!"
+
+msgid "messages.dbconnerror"
+msgstr "Nepavyko prisijungti prie duomenų bazės!"
+
+msgid "messages.windowopenerror"
+msgstr "Buvo užblokuotas iššokantis langas!"
+
+msgid "messages.requesttimedout"
+msgstr "Baigėsi užklausai skirtas laikas"
+
+msgid "messages.errorreadonly"
+msgstr "Nepavyko atlikti veiksmo – aplankas prieinamas tik skaitymui."
+
+msgid "messages.errornoperm"
+msgstr "Nepavyko atlikti veiksmo – nepakanka teisių."
+
+msgid "messages.erroroverquota"
+msgstr "Nepavyko atlikti veiksmo. Diske trūksta laisvos vietos."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Diske trūksta laisvos vietos. Laiškui pašalinti naudokite Lyg2+Šal "
+"(Shift+Del) klavišų kombinaciją."
+
+msgid "messages.invalidrequest"
+msgstr "Netinkama užklausa! Duomenys neišsaugoti."
+
+msgid "messages.invalidhost"
+msgstr "Negalimas serverio vardas."
+
+msgid "messages.nomessagesfound"
+msgstr "Šioje pašto dėžutėje laiškų nėra."
+
+msgid "messages.loggedout"
+msgstr "Jūs sėkmingai užbaigėte sesiją. Viso gero!"
+
+msgid "messages.mailboxempty"
+msgstr "Pašto dėžutė tuščia."
+
+msgid "messages.nomessages"
+msgstr "Laiškų nėra"
+
+msgid "messages.refreshing"
+msgstr "Atnaujinama…"
+
+msgid "messages.loading"
+msgstr "Įkeliama…"
+
+msgid "messages.uploading"
+msgstr "Įkeliamas failas…"
+
+msgid "messages.attaching"
+msgstr "Įkeliamas failas…"
+
+msgid "messages.uploadingmany"
+msgstr "Įkeliami failai…"
+
+msgid "messages.loadingdata"
+msgstr "Įkeliami duomenys…"
+
+msgid "messages.checkingmail"
+msgstr "Tikrinama ar nėra naujų pranešimų…"
+
+msgid "messages.sendingmessage"
+msgstr "Siunčiamas laiškas…"
+
+msgid "messages.messagesent"
+msgstr "Laiškas sėkmingai nusiųstas."
+
+msgid "messages.savingmessage"
+msgstr "Laiškas įrašomas…"
+
+msgid "messages.messagesaved"
+msgstr "Laiškas įrašytas į Juodraščių aplanką."
+
+msgid "messages.successfullysaved"
+msgstr "Sėkmingai įrašyta."
+
+msgid "messages.savingresponse"
+msgstr "Įrašomas atsakymo tekstas…"
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Ar tikrai norite pašalinti šį atsakymo tekstą?"
+
+msgid "messages.nocontactselected"
+msgstr "Kol kas nesate pasirinkę adresato."
+
+msgid "messages.addedsuccessfully"
+msgstr "Asmuo įtrauktas į adresų knygą."
+
+msgid "messages.contactexists"
+msgstr "Adresatas, turintis šį el. pašto adresą, jau egzistuoja."
+
+msgid "messages.contactnameexists"
+msgstr "Adresatas tokiu vardu jau egzistuoja."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Siekiant apsaugoti Jūsų privatumą, paveikslėliai iš interneto neįkelti."
+
+msgid "messages.blockedresources"
+msgstr ""
+"Siekiant apsaugoti jūsų privatumą, nuotoliniai ištekliai buvo užblokuoti."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Šiame laiške yra įtartinų el. pašto adresų, kurie gali būti apgaulingi."
+
+msgid "messages.bccemail"
+msgstr ""
+"Persiunčiamame laiške (laiškuose) yra nurodyti slaptųjų kopijų gavėjai."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Laiškas bus išsiųstas be jokių pakeitimų jo tekste, antraštėse ar gavėjų "
+"sąrašuose."
+
+msgid "messages.encryptedmessage"
+msgstr ""
+"Apgailestaujame, tačiau šis laiškas užšifruotas ir negali būti parodytas."
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Šis laiškas šifruotas. Jį iššifruoti galima jūsų naršyklės priedo pagalba."
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+"Adresui $email nerastas galiojantis viešasis raktas. Ar norite šifruoti "
+"laišką tiktai gavėjams?"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Jūsų tapatybei nerastas galiojantis viešasis raktas. Ar norite užšifruoti "
+"laišką tiktai gavėjams?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Jau įkeltų priedų užšifruoti negalima. Jei norite tai padaryti, įkelkite "
+"juos iš naujo šifravimo redaktoriuje."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Ar norite ieškoti trūkstamų raktų viešuosiuose raktų serveriuose?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Aptikti šie viešieji raktai:"
+
+msgid "messages.keyservererror"
+msgstr "Nepavyko gauti rakto iš raktų serverio."
+
+msgid "messages.keyimportsuccess"
+msgstr "Viešasis raktas $key sėkmingai įtrauktas į jūsų raktinę."
+
+msgid "messages.nocontactsfound"
+msgstr "Adresatų nerasta."
+
+msgid "messages.contactnotfound"
+msgstr "Ieškotas adresatas nerastas."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Turite naudoti paieškos formą, norėdami pamatyti adresatus iš pasirinktos "
+"adresų knygos."
+
+msgid "messages.sendingfailed"
+msgstr "Laiško išsiųsti nepavyko."
+
+msgid "messages.senttooquickly"
+msgstr "Turite luktelėti $sec sek., kad galėtumėte išsiųsti laišką."
+
+msgid "messages.errorsavingsent"
+msgstr "Įrašant išsiųstą laišką, įvyko klaida."
+
+msgid "messages.errorsaving"
+msgstr "Įvyko klaida įrašant."
+
+msgid "messages.errormoving"
+msgstr "Laiško(-ų) perkelti nepavyko."
+
+msgid "messages.errorcopying"
+msgstr "Laiško(-ų) nukopijuoti nepavyko."
+
+msgid "messages.errordeleting"
+msgstr "Laiško(-ų) pašalinti nepavyko."
+
+msgid "messages.errormarking"
+msgstr "Laiško(-ų) pažymėti nepavyko."
+
+msgid "messages.alerttitle"
+msgstr "Dėmėsio"
+
+msgid "messages.confirmationtitle"
+msgstr "Ar tikrai..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Ar tikrai pašalinti pažymėtą(-us) adresatą(-us)?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Ar tikrai pašalinti pažymėtą grupę?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Ar tikrai pašalinti pažymėtą(-us) laišką(-us)?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Ar tikrai pašalinti šį aplanką?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Ar tikrai norite perkelti šį aplanką?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Ar tikrai pašalinti visus šiame aplanke esančius laiškus?"
+
+msgid "messages.contactdeleting"
+msgstr "Adresatas(-ai) šalinamas(-i)…"
+
+msgid "messages.groupdeleting"
+msgstr "Grupė šalinama…"
+
+msgid "messages.folderdeleting"
+msgstr "Aplankas šalinamas…"
+
+msgid "messages.foldermoving"
+msgstr "Aplankas perkeliamas…"
+
+msgid "messages.foldersubscribing"
+msgstr "Aplankas prenumeruojamas…"
+
+msgid "messages.folderunsubscribing"
+msgstr "Atsisakoma aplanko prenumeratos…"
+
+msgid "messages.formincomplete"
+msgstr "Forma nepilnai užpildyta."
+
+msgid "messages.noemailwarning"
+msgstr "Prašom įvesti teisingą el. pašto adresą."
+
+msgid "messages.nonamewarning"
+msgstr "Prašom įvesti vardą."
+
+msgid "messages.nopagesizewarning"
+msgstr "Prašom įvesti puslapio dydį."
+
+msgid "messages.nosenderwarning"
+msgstr "Prašom įvesti siuntėjo el. pašto adresą."
+
+msgid "messages.recipientsadded"
+msgstr "Gavėjas(-ai) sėkmingai pridėtas(-i)."
+
+msgid "messages.norecipientwarning"
+msgstr "Prašom įvesti bent vieną gavėją."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Visi gavėjai matys vieni kitų el. pašto adresus. Norėdami to neleisti ir "
+"apsaugoti jų privatumą, galite naudoti Bcc lauką."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Per daug viešų gavėjų"
+
+msgid "messages.nosubjectwarning"
+msgstr "Temos laukelis tuščias. Ar norite temą įvesti dabar?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Nenurodyta tema"
+
+msgid "messages.nobodywarning"
+msgstr "Išsiųsti šį laišką be teksto?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Laiškas nebuvo išsiųstas ir jame yra neišsaugotų pakeitimų. Ar norite "
+"panaikinti savo pakeitimus?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Buvo rastas anksčiau pradėtas rašyti, bet neišsiųstas "
+"laiškas.\\n\\nTema:$subject\\nIšsaugotas: $date\\n\\nAr norite šį laišką "
+"atkurti?"
+
+msgid "messages.nosearchname"
+msgstr "Prašom įvesti vardą arba el. pašto adresą."
+
+msgid "messages.notuploadedwarning"
+msgstr "Įkelti dar ne visi priedai. Prašom palaukti arba atšaukti jų įkėlimą."
+
+msgid "messages.searchsuccessful"
+msgstr "Rasta laiškų: $nr."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Rasta adresatų: $nr."
+
+msgid "messages.searchnomatch"
+msgstr "Paiešką atitinkančių rezultatų nėra."
+
+msgid "messages.searching"
+msgstr "Ieškoma…"
+
+msgid "messages.checking"
+msgstr "Tikrinama…"
+
+msgid "messages.stillsearching"
+msgstr "Dar ieškoma..."
+
+msgid "messages.nospellerrors"
+msgstr "Rašybos klaidų nerasta."
+
+msgid "messages.folderdeleted"
+msgstr "Aplankas sėkmingai pašalintas."
+
+msgid "messages.foldersubscribed"
+msgstr "Aplankas sėkmingai užprenumeruotas."
+
+msgid "messages.folderunsubscribed"
+msgstr "Aplanko prenumeratos sėkmingai atsisakyta."
+
+msgid "messages.folderpurged"
+msgstr "Aplankas sėkmingai ištuštintas."
+
+msgid "messages.folderexpunged"
+msgstr "Aplankas sėkmingai suglaudintas."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Sėkmingai pašalinta."
+
+msgid "messages.converting"
+msgstr "Šalinamas laiško formatavimas…"
+
+msgid "messages.messageopenerror"
+msgstr "Nepavyko įkelti laiško iš serverio."
+
+msgid "messages.filelinkerror"
+msgstr "Failo įkelti nepavyko."
+
+msgid "messages.fileuploaderror"
+msgstr "Nepavyko įkelti failo."
+
+msgid "messages.csvfilemismatch"
+msgstr "Kelių CSV failų su skirtingais laukais importavimas yra nepalaikomas."
+
+msgid "messages.filesizeerror"
+msgstr "Įkeltas failas viršija maksimalų leistiną dydį – $size."
+
+msgid "messages.filecounterror"
+msgstr "Jūs daugiausiai vienu metu galite įkelti $count failų(-us)."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Nepavyko pridėti failo. Viršytas maksimalus leistinas laiko dydis ($size)."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Viršytas maksimalus laiško dydis ($size). $num laiškai(-ų) nebuvo pridėti."
+
+msgid "messages.copysuccess"
+msgstr "Nukopijuota adresatų: $nr."
+
+msgid "messages.movesuccess"
+msgstr "Perkelta adresatų: $nr."
+
+msgid "messages.copyerror"
+msgstr "Adresatų nukopijuoti nepavyko."
+
+msgid "messages.moveerror"
+msgstr "Adresatų perkelti nepavyko."
+
+msgid "messages.sourceisreadonly"
+msgstr "Šis adresų šaltinis prieinamas tik skaitymui."
+
+msgid "messages.errorsavingcontact"
+msgstr "Asmens adreso įrašyti nepavyko."
+
+msgid "messages.movingmessage"
+msgstr "Laiškas(-ai) perkeliamas(-i)…"
+
+msgid "messages.copyingmessage"
+msgstr "Laiškas(-ai) kopijuojamas(-i)…"
+
+msgid "messages.copyingcontact"
+msgstr "Adresatas(-ai) kopijuojamas(-i)…"
+
+msgid "messages.movingcontact"
+msgstr "Adresatas(-ai) perkeliamas(-i)…"
+
+msgid "messages.deletingmessage"
+msgstr "Laiškas(-ai) šalinamas(-i)…"
+
+msgid "messages.markingmessage"
+msgstr "Laiškas(-ai) žymimas(-i)…"
+
+msgid "messages.addingmember"
+msgstr "Adresatas(-ai) įtraukiamas(-i) į grupę…"
+
+msgid "messages.removingmember"
+msgstr "Adresatas(-ai) šalinamas(-i) iš grupės…"
+
+msgid "messages.receiptsent"
+msgstr "Laiško perskaitymo pažyma sėkmingai išsiųsta."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Laiško perskaitymo pažymos išsiųsti nepavyko."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Ar tikrai norite pašalinti šią tapatybę?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Šios tapatybės šalinti negalima, nes ji vienintelė likusi."
+
+msgid "messages.forbiddencharacter"
+msgstr "Aplanko varde aptikta neleistinų simbolių."
+
+msgid "messages.selectimportfile"
+msgstr "Parinkite norimą įkelti failą."
+
+msgid "messages.addresswriterror"
+msgstr "Pasirinktoji adresų knyga prieinama tik skaitymui."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Adresatai sėkmingai įtraukti į šią grupę."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Adresatai sėkmingai pašalinti iš šios grupės."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Grupių priskyrimai nepakeisti."
+
+msgid "messages.importwait"
+msgstr "Importuojama, prašome palaukti…"
+
+msgid "messages.importformaterror"
+msgstr ""
+"Importas nepavyko! Įkeltasis failas nėra tinkamas importavimui duomenų "
+"failas."
+
+msgid "messages.importconfirm"
+msgstr "<b>Sėkmingai importuoti $inserted adresatai(-ų)</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>Praleisti $skipped jau egzistuojantys adresatai(-ų)</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>Praleisti $invalid neteisingi adresatai(-ų)</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "<b>Nepavyko importuoti $errors teisingų adresatų</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "Importuota laiškų: $nr"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Importas nepavyko! Įkeltasis failas nėra tinkamas importavimui laiško arba "
+"pašto dėžutės failas"
+
+msgid "messages.opnotpermitted"
+msgstr "Veiksmas neleistinas!"
+
+msgid "messages.nofromaddress"
+msgstr "Nenurodytas pasirinktosios tapatybės el. pašto adresas."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Keičiant redaktorių gali būti prarastas teksto formatavimas. Ar norite "
+"tęsti?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Įvyko lemtinga konfigūracijos klaida. Nedelsiant susisiekite su "
+"administratoriumi. <b>Jūsų laiškas negali būti išsiųstas.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP klaida ($code): nepavyko prisijungti prie serverio."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP klaida ($code): nepavyko autentikuotis."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP klaida ($code): nepavyko nurodyti siuntėjo „$from“ ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP klaida ($code): nepavyko pridėti gavėjo „$to“ ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP klaida: nepavyko apdoroti gavėjų sąrašo."
+
+msgid "messages.smtputf8error"
+msgstr "SMTP klaida: Serveris nepalaiko unikodo el. pašto adrese."
+
+msgid "messages.smtpsizeerror"
+msgstr "SMTP klaida: Laiško dydis viršija serverio nustatytą ribą ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP klaida: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Netinkamas el. pašto adresas: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Per daug gavėjų. Sumažinkite jų bent iki $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Grupės narių skaičius viršijo maksimalų leistiną ($max)."
+
+msgid "messages.internalerror"
+msgstr "Įvyko klaida. Prašom bandyti iš naujo."
+
+msgid "messages.contactdelerror"
+msgstr "Nepavyko pašalinti adresato(-ų)."
+
+msgid "messages.contactdeleted"
+msgstr "Adresatas(-ai) sėkmingai pašalintas(-i)."
+
+msgid "messages.contactrestoreerror"
+msgstr "Nepavyko atkurti pašalinto(-ų) adresato(-ų)."
+
+msgid "messages.contactrestored"
+msgstr "Adresatas(-ai) sėkmingai atkurtas(-i)."
+
+msgid "messages.groupdeleted"
+msgstr "Grupė sėkmingai pašalinta."
+
+msgid "messages.grouprenamed"
+msgstr "Grupė sėkmingai pervardinta."
+
+msgid "messages.groupcreated"
+msgstr "Grupė sėkmingai sukurta."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Radinių aplankas sėkmingai pašalintas."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Radinių aplanko pašalinti nepavyko."
+
+msgid "messages.savedsearchcreated"
+msgstr "Radinių aplankas sėkmingai sukurtas."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Radinių aplanko sukurti nepavyko."
+
+msgid "messages.messagedeleted"
+msgstr "Laiškas(-ai) sėkmingai pašalintas(-i)."
+
+msgid "messages.messagemoved"
+msgstr "Laiškas(-ai) sėkmingai perkeltas(-i)."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Laiškas(-ai) sėkmingai perkeltas(-i) į Šiukšlinę."
+
+msgid "messages.messagecopied"
+msgstr "Laiškas(-ai) sėkmingai nukopijuotas(-i)."
+
+msgid "messages.messagemarked"
+msgstr "Laiškas(-ai) sėkmingai pažymėtas(-i)."
+
+msgid "messages.autocompletechars"
+msgstr "Automatiniam užbaigimui būtini bent $min simboliai."
+
+msgid "messages.autocompletemore"
+msgstr "Rasta daugiau atitikmenų. Įveskite dar porą simbolių."
+
+msgid "messages.namecannotbeempty"
+msgstr "Vardas negali būti tuščias."
+
+msgid "messages.nametoolong"
+msgstr "Vardas yra per ilgas."
+
+msgid "messages.namedotforbidden"
+msgstr "Aplanko vardas negali prasidėti tašku."
+
+msgid "messages.folderupdated"
+msgstr "Aplanko savybės sėkmingai atnaujintos."
+
+msgid "messages.foldercreated"
+msgstr "Aplankas sėkmingai sukurtas."
+
+msgid "messages.invalidimageformat"
+msgstr "Paveikslo formatas netinkamas."
+
+msgid "messages.mispellingsfound"
+msgstr "Laiške rasta rašybos klaidų."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Nepavyko sukurti arba perkelti aplanko į parinktą tėvinį aplanką. Trūksta "
+"prieigos teisių."
+
+msgid "messages.messagetoobig"
+msgstr "Laiško dalis yra per didelė, kad galėtų būti apdorota."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Šis priedas yra įtartinas, nes jo tipas neatitinka laiške deklaruoto tipo. "
+"Jeigu nepasitikite siuntėju, tuomet jūs neturėtumėte naršyklėje atverti šio "
+"priedo, nes jame gali būti kenkėjiškas turinys.<br/><br/><em>Tikėtasi: "
+"$expected; rasta: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Dėmesio: šiai saityno el. pašto sistemai veikti būtini „JavaScript“ "
+"scenarijai! Norėdami ja naudotis, įjunkite „JavaScript“ savo naršyklės "
+"nuostatose."
+
+msgid "messages.messageissent"
+msgstr ""
+"Laiškas jau buvo išsiųstas, bet dar neišsaugotas. Ar norite jį išsaugoti?"
+
+msgid "messages.errnotfound"
+msgstr "Failas nerastas"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Ieškomas šaltinis nerastas"
+
+msgid "messages.errfailedrequest"
+msgstr "Nesėkminga užklausa"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Nepavyko suteikti įgaliojimų"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Nepavyko patvirtinti ar jums leista naudotis šia paslauga."
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Patikrinimas nepavyko"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Jūsų saugumui, prieiga prie šio išteklio yra apsaugota nuo CSRF.\n"
+"lfJeigu jūs tai matote, tai reiškia, kad taisyklingai neatsijungėte prieš baigdamas darbąsu programa.\n"
+"\n"
+"Norint tęsti reikalingas žmogaus įsikišimas."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Susisiekite su serverio administratoriumi."
+
+msgid "messages.clicktoresumesession"
+msgstr "Spauskite čia, tam kad tęstumėte ankstesnę sesiją"
+
+msgid "messages.errcomposesession"
+msgstr "Laiško rašymo sesijos klaida."
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Ieškoma pranešimo kūrimo sesija nerasta."
+
+msgid "messages.clicktocompose"
+msgstr "Spausk čia, norėdamas pradėti rašyti naują laišką"
+
+msgid "messages.nosupporterror"
+msgstr "Jūsų saityno naršyklė nepalaiko šios ypatybės."
+
+msgid "messages.siginserted"
+msgstr "Parašas sėkmingai įterptas."
+
+msgid "messages.responseinserted"
+msgstr "Atsakymas sėkmingai įterptas."
+
+msgid "messages.noresponsesavailable"
+msgstr "Nėra prieinamų atsakymų"
+
+msgid "messages.listempty"
+msgstr "Sąrašas tuščias."
+
+msgid "messages.listusebutton"
+msgstr "Norėdami sukurti naują įrašą, naudokite mygtuką \"Sukurti\"."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Nauja raktų pora buvo sėkmingai sukurta tapatybei $identity."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Atrodo, kad šis priedas yra tuščias.<br>Pasiteiraukite asmens, kuris "
+"atsiuntė jums šį priedą."
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth prisijungimas nepavyko. Bandykite dar kartą."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Įgaliojimų suteikimo užklausa buvo neteisinga arba neužbaigta."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Įgaliojimų suteikimo serveris arba naudotojas atmetė užklausą."

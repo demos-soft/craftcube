@@ -1,0 +1,2841 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ps\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "$product ته ښه راغلاست"
+
+msgid "username"
+msgstr "کارن نوم"
+
+msgid "password"
+msgstr "پټنوم"
+
+msgid "server"
+msgstr "برابرونکی"
+
+msgid "login"
+msgstr "ننوتون"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "وتون"
+
+msgid "mail"
+msgstr "برېښناليک"
+
+msgid "settings"
+msgstr "ځاني برابرونې"
+
+msgid "addressbook"
+msgstr "پتې کتاب"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "راغلي ليکونه"
+
+msgid "drafts"
+msgstr "بارليک"
+
+msgid "sent"
+msgstr "لېږل شوي ليکونه"
+
+msgid "trash"
+msgstr "کثافت دانۍ"
+
+msgid "junk"
+msgstr "جنک"
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr "مضمون"
+
+msgid "from"
+msgstr "استوونکی"
+
+msgid "sender"
+msgstr ""
+
+msgid "to"
+msgstr "ترلاسه کوونکی"
+
+msgid "cc"
+msgstr "لمېسل"
+
+msgid "bcc"
+msgstr "پټليکی"
+
+msgid "replyto"
+msgstr "ځوابول"
+
+msgid "followupto"
+msgstr ""
+
+msgid "date"
+msgstr "نېټه"
+
+msgid "size"
+msgstr "کچه"
+
+msgid "priority"
+msgstr "لومړيتوب"
+
+msgid "organization"
+msgstr "ټولنه"
+
+msgid "readstatus"
+msgstr ""
+
+msgid "listoptions"
+msgstr ""
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "پوښۍ"
+
+msgid "messagesfromto"
+msgstr "له ټاکلي استوزو څخه ټاکلي شمېرل شوو استوزو ته"
+
+msgid "threadsfromto"
+msgstr ""
+
+msgid "messagenrof"
+msgstr "له $nr ځخه استوزو $count استوزو ته"
+
+msgid "fromtoshort"
+msgstr ""
+
+msgid "copy"
+msgstr "لمېسل"
+
+msgid "move"
+msgstr ""
+
+msgid "moveto"
+msgstr "ته خوځوي"
+
+msgid "copyto"
+msgstr ""
+
+msgid "download"
+msgstr "ښکته کول"
+
+msgid "open"
+msgstr ""
+
+msgid "showattachment"
+msgstr ""
+
+msgid "showanyway"
+msgstr ""
+
+msgid "filename"
+msgstr "فايل نوم"
+
+msgid "filesize"
+msgstr "فايل کچه"
+
+msgid "addtoaddressbook"
+msgstr "د پتو کتاب ته يې ورزيات کړئ"
+
+msgid "sun"
+msgstr "يوه نۍ"
+
+msgid "mon"
+msgstr "دوه نۍ"
+
+msgid "tue"
+msgstr "درې نۍ"
+
+msgid "wed"
+msgstr "څلورنۍ"
+
+msgid "thu"
+msgstr "پنځنۍ"
+
+msgid "fri"
+msgstr "جمعه"
+
+msgid "sat"
+msgstr "نۍ"
+
+msgid "sunday"
+msgstr "يوه نۍ"
+
+msgid "monday"
+msgstr "دوه نۍ"
+
+msgid "tuesday"
+msgstr "درې نۍ"
+
+msgid "wednesday"
+msgstr "منځنۍ"
+
+msgid "thursday"
+msgstr "پنځنۍ"
+
+msgid "friday"
+msgstr "جمعه"
+
+msgid "saturday"
+msgstr "نۍ"
+
+msgid "jan"
+msgstr "حنوري"
+
+msgid "feb"
+msgstr "فبروري"
+
+msgid "mar"
+msgstr "مارچ"
+
+msgid "apr"
+msgstr "اپريل"
+
+msgid "may"
+msgstr "مئ"
+
+msgid "jun"
+msgstr "جون"
+
+msgid "jul"
+msgstr "جولاي"
+
+msgid "aug"
+msgstr "اګست"
+
+msgid "sep"
+msgstr "سپتمپر"
+
+msgid "oct"
+msgstr "اکتوبر"
+
+msgid "nov"
+msgstr "نومبر"
+
+msgid "dec"
+msgstr "ډسمبر"
+
+msgid "longjan"
+msgstr "جنوري"
+
+msgid "longfeb"
+msgstr "فبروري"
+
+msgid "longmar"
+msgstr "مارچ"
+
+msgid "longapr"
+msgstr "اپريل"
+
+msgid "longmay"
+msgstr "مئ"
+
+msgid "longjun"
+msgstr "جون"
+
+msgid "longjul"
+msgstr "جولای"
+
+msgid "longaug"
+msgstr "اګست"
+
+msgid "longsep"
+msgstr "سپتمبر"
+
+msgid "longoct"
+msgstr "اکتوبر"
+
+msgid "longnov"
+msgstr "نومبر"
+
+msgid "longdec"
+msgstr "ډسمبر"
+
+msgid "today"
+msgstr "نن"
+
+msgid "refresh"
+msgstr ""
+
+msgid "checkmail"
+msgstr "نوي استوزي وګوره"
+
+msgid "compose"
+msgstr "استوزه وليکه"
+
+msgid "writenewmessage"
+msgstr "نوي استوزي جوړول"
+
+msgid "reply"
+msgstr ""
+
+msgid "replytomessage"
+msgstr "استوونکي ته ځواب ورکړئ"
+
+msgid "replytoallmessage"
+msgstr "استوونکي او ټولو ترلاسه کوونکو ته ځواب لېږل"
+
+msgid "replyall"
+msgstr ""
+
+msgid "replylist"
+msgstr ""
+
+msgid "forward"
+msgstr ""
+
+msgid "forwardinline"
+msgstr ""
+
+msgid "forwardattachment"
+msgstr ""
+
+msgid "forwardmessage"
+msgstr "استوزه بل ته استول"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "استوزه ړنګول"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "استوزه کثافت داني ته واستوه"
+
+msgid "printmessage"
+msgstr "دا استوزه چاپ کړه"
+
+msgid "previousmessage"
+msgstr "پخوانۍ استوزه وښيه"
+
+msgid "firstmessage"
+msgstr "لومړی استوزه وښيه"
+
+msgid "nextmessage"
+msgstr "ورپسې استوزه وښيه"
+
+msgid "lastmessage"
+msgstr "پای /آخري استوزه وښيه"
+
+msgid "backtolist"
+msgstr "بيرته د استوزو لست ته"
+
+msgid "viewsource"
+msgstr "سرچينه وښيه"
+
+msgid "mark"
+msgstr ""
+
+msgid "markmessages"
+msgstr "استوزي په نښه کړئ"
+
+msgid "markread"
+msgstr "لوستل شوي په توګه"
+
+msgid "markunread"
+msgstr "د نالوستل شوي په توګه"
+
+msgid "markflagged"
+msgstr "د بي کاره په توګه"
+
+msgid "markunflagged"
+msgstr "د کارونې په توګه"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr ""
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr ""
+
+msgid "more"
+msgstr ""
+
+msgid "back"
+msgstr ""
+
+msgid "options"
+msgstr ""
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "next"
+msgstr ""
+
+msgid "select"
+msgstr "ټاکل"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "ټول"
+
+msgid "none"
+msgstr "هېڅ"
+
+msgid "currpage"
+msgstr ""
+
+msgid "isread"
+msgstr ""
+
+msgid "unread"
+msgstr "نالوستي"
+
+msgid "flagged"
+msgstr "بې کاره"
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr "ناځواب شوي"
+
+msgid "withattachment"
+msgstr ""
+
+msgid "deleted"
+msgstr ""
+
+msgid "undeleted"
+msgstr ""
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr ""
+
+msgid "invert"
+msgstr ""
+
+msgid "filter"
+msgstr "چڼول"
+
+msgid "list"
+msgstr ""
+
+msgid "threads"
+msgstr ""
+
+msgid "expand-all"
+msgstr ""
+
+msgid "expand-unread"
+msgstr ""
+
+msgid "collapse-all"
+msgstr ""
+
+msgid "threaded"
+msgstr ""
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr ""
+
+msgid "do_expand"
+msgstr ""
+
+msgid "expand_only_unread"
+msgstr ""
+
+msgid "fromto"
+msgstr ""
+
+msgid "flag"
+msgstr ""
+
+msgid "attachment"
+msgstr ""
+
+msgid "nonesort"
+msgstr "هېڅ"
+
+msgid "sentdate"
+msgstr ""
+
+msgid "arrival"
+msgstr ""
+
+msgid "asc"
+msgstr ""
+
+msgid "desc"
+msgstr ""
+
+msgid "listcolumns"
+msgstr ""
+
+msgid "listsorting"
+msgstr ""
+
+msgid "listorder"
+msgstr ""
+
+msgid "listmode"
+msgstr ""
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr ""
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr ""
+
+msgid "compact"
+msgstr "کېښکلی"
+
+msgid "empty"
+msgstr "تش"
+
+msgid "importmessages"
+msgstr ""
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "ټيکلي لارښود"
+
+msgid "unknown"
+msgstr "نامعلوم"
+
+msgid "unlimited"
+msgstr "بي کچه"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr ""
+
+msgid "quotastorage"
+msgstr ""
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "ژر پلټنه"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "د پلټنې بياسمون"
+
+msgid "searchmod"
+msgstr ""
+
+msgid "msgtext"
+msgstr ""
+
+msgid "body"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "namex"
+msgstr ""
+
+msgid "searchscope"
+msgstr ""
+
+msgid "currentfolder"
+msgstr ""
+
+msgid "subfolders"
+msgstr ""
+
+msgid "allfolders"
+msgstr ""
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "په نوي کړکۍ کې پرانيزه"
+
+msgid "emlsave"
+msgstr ""
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr ""
+
+msgid "send"
+msgstr ""
+
+msgid "sendmessage"
+msgstr "اوس يې واستوه"
+
+msgid "savemessage"
+msgstr "دا ګارليک خوندي کړه"
+
+msgid "addattachment"
+msgstr "يو فايل ونښلوه"
+
+msgid "charset"
+msgstr "چيرست"
+
+msgid "editortype"
+msgstr "د ټايب سمونګر"
+
+msgid "returnreceipt"
+msgstr "د رسليک راګرځېدل"
+
+msgid "dsn"
+msgstr ""
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr ""
+
+msgid "originalmessage"
+msgstr ""
+
+msgid "selectimage"
+msgstr ""
+
+msgid "addimage"
+msgstr ""
+
+msgid "selectmedia"
+msgstr ""
+
+msgid "addmedia"
+msgstr ""
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr ""
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr ""
+
+msgid "spellcheck"
+msgstr ""
+
+msgid "checkspelling"
+msgstr "ليکدود کتنه"
+
+msgid "resumeediting"
+msgstr "کارمخينې سمونه"
+
+msgid "revertto"
+msgstr "ته بېرته اړول"
+
+msgid "restore"
+msgstr ""
+
+msgid "restoremessage"
+msgstr ""
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr ""
+
+msgid "insertresponse"
+msgstr ""
+
+msgid "manageresponses"
+msgstr ""
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr ""
+
+msgid "editresponse"
+msgstr ""
+
+msgid "editresponses"
+msgstr ""
+
+msgid "responsename"
+msgstr ""
+
+msgid "responsetext"
+msgstr ""
+
+msgid "attach"
+msgstr ""
+
+msgid "attachments"
+msgstr "نښلني"
+
+msgid "upload"
+msgstr "پورته کول"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "بندول"
+
+msgid "messageoptions"
+msgstr ""
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "ټيټ"
+
+msgid "lowest"
+msgstr "خورا ټيټ"
+
+msgid "normal"
+msgstr "نورمال"
+
+msgid "high"
+msgstr "لوړ"
+
+msgid "highest"
+msgstr "خورا لوړ"
+
+msgid "nosubject"
+msgstr "هېڅ موضوع"
+
+msgid "showimages"
+msgstr "انځورونه وښيه"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "تل له $استوونکي څخه انځورونه وښيه"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr ""
+
+msgid "andnmore"
+msgstr ""
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr ""
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "ايچ ټی ايمل ال"
+
+msgid "plaintoggle"
+msgstr "ساده متن"
+
+msgid "savesentmessagein"
+msgstr "استول شوي استوزه په خوندي کړه"
+
+msgid "dontsave"
+msgstr "مه ساته"
+
+msgid "maxuploadsize"
+msgstr "لږترلږه د اجازه شوي فايل کچه $وي"
+
+msgid "addcc"
+msgstr "څرګندليک"
+
+msgid "addbcc"
+msgstr "پټليک"
+
+msgid "addreplyto"
+msgstr "ته ورزيات کړه"
+
+msgid "addfollowupto"
+msgstr ""
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"ددې استوزي استوونکی پوښتي چېد استوزي لوستلو سره سم تاسې خبر کړي،.    غواړئ "
+"چې استوونکی خبرشي؟"
+
+msgid "receiptread"
+msgstr "رسليک راګرځېدل (لوستل"
+
+msgid "yourmessage"
+msgstr "دا رسليک راګرځېدل ستاسې استوزي لپاره دی"
+
+msgid "receiptnote"
+msgstr ""
+"يادونه: دا رسليک تاسې ته يوازې ددې خبرتيا درکوي چې کله استوزی د ترلاسه "
+"کوونکي په کمپيوټر کې څرګند شي،  ددې هيڅ ډاډګيرنه نشته چې ترلاسه کوونکي د  "
+"استوزي متن لوستی او يا پرې پوه شوی دی"
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "نوم ښوونه"
+
+msgid "firstname"
+msgstr "نوم"
+
+msgid "surname"
+msgstr "کورنی نوم"
+
+msgid "middlename"
+msgstr ""
+
+msgid "nameprefix"
+msgstr ""
+
+msgid "namesuffix"
+msgstr ""
+
+msgid "nickname"
+msgstr ""
+
+msgid "jobtitle"
+msgstr ""
+
+msgid "department"
+msgstr ""
+
+msgid "gender"
+msgstr ""
+
+msgid "maidenname"
+msgstr ""
+
+msgid "email"
+msgstr "برېښناليک"
+
+msgid "phone"
+msgstr ""
+
+msgid "address"
+msgstr ""
+
+msgid "street"
+msgstr ""
+
+msgid "locality"
+msgstr ""
+
+msgid "zipcode"
+msgstr ""
+
+msgid "region"
+msgstr ""
+
+msgid "country"
+msgstr ""
+
+msgid "birthday"
+msgstr ""
+
+msgid "anniversary"
+msgstr ""
+
+msgid "website"
+msgstr ""
+
+msgid "instantmessenger"
+msgstr ""
+
+msgid "notes"
+msgstr ""
+
+msgid "male"
+msgstr ""
+
+msgid "female"
+msgstr ""
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr ""
+
+msgid "assistant"
+msgstr ""
+
+msgid "spouse"
+msgstr ""
+
+msgid "allfields"
+msgstr ""
+
+msgid "search"
+msgstr ""
+
+msgid "searchresult"
+msgstr ""
+
+msgid "advsearch"
+msgstr ""
+
+msgid "advanced"
+msgstr ""
+
+msgid "other"
+msgstr ""
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr ""
+
+msgid "typework"
+msgstr ""
+
+msgid "typeother"
+msgstr ""
+
+msgid "typemobile"
+msgstr ""
+
+msgid "typemain"
+msgstr ""
+
+msgid "typehomefax"
+msgstr ""
+
+msgid "typeworkfax"
+msgstr ""
+
+msgid "typecar"
+msgstr ""
+
+msgid "typepager"
+msgstr ""
+
+msgid "typevideo"
+msgstr ""
+
+msgid "typeassistant"
+msgstr ""
+
+msgid "typehomepage"
+msgstr ""
+
+msgid "typeblog"
+msgstr ""
+
+msgid "typeprofile"
+msgstr ""
+
+msgid "addfield"
+msgstr ""
+
+msgid "addcontact"
+msgstr ""
+
+msgid "editcontact"
+msgstr "اړيکلوري سمون"
+
+msgid "contacts"
+msgstr ""
+
+msgid "contactproperties"
+msgstr ""
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr ""
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr ""
+
+msgid "edit"
+msgstr "سمون"
+
+msgid "cancel"
+msgstr "لري کول"
+
+msgid "save"
+msgstr "ساتل"
+
+msgid "delete"
+msgstr "ړنګول"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr ""
+
+msgid "addphoto"
+msgstr ""
+
+msgid "replacephoto"
+msgstr ""
+
+msgid "uploadphoto"
+msgstr ""
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr "ټاکل شوي اړيکلوري ړنګ کړه"
+
+msgid "composeto"
+msgstr "ته ليک وليکه"
+
+msgid "contactsfromto"
+msgstr "له دومره اړيکلورو څخه دومره شمېرل شوي Contacts $from to $to of $count"
+
+msgid "print"
+msgstr "چاپ"
+
+msgid "export"
+msgstr "بهرول"
+
+msgid "exportall"
+msgstr ""
+
+msgid "exportsel"
+msgstr ""
+
+msgid "exportvcards"
+msgstr "اړيکلوري د ويکارډ په بڼه واستوئ"
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr ""
+
+msgid "groupdelete"
+msgstr ""
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr ""
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "پخوانی غونډ وښيه"
+
+msgid "firstpage"
+msgstr "لومړی غونډ وښيه"
+
+msgid "nextpage"
+msgstr "ورپسې غونډ وښيه"
+
+msgid "lastpage"
+msgstr "پای غونډ وښيه"
+
+msgid "group"
+msgstr ""
+
+msgid "groups"
+msgstr "ډلې"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr "ځاني پتې"
+
+msgid "searchsave"
+msgstr ""
+
+msgid "searchdelete"
+msgstr ""
+
+msgid "import"
+msgstr "رانقلول"
+
+msgid "importcontacts"
+msgstr "اړيکلوري نقل کړئ"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr ""
+
+msgid "importreplace"
+msgstr "ټول ادرس کتاب بدل کړئ"
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "ترسره شو"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "لپاره برابرونې"
+
+msgid "about"
+msgstr ""
+
+msgid "preferences"
+msgstr "غورونې"
+
+msgid "userpreferences"
+msgstr "کارن غورونې"
+
+msgid "editpreferences"
+msgstr "د کارن غورونو سمون"
+
+msgid "identities"
+msgstr "پېژندنې"
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "ايچ ټي ام ايل ښوون"
+
+msgid "defaultcharset"
+msgstr ""
+
+msgid "htmlmessage"
+msgstr "ايچ ټي ام ايل استوزه"
+
+msgid "messagepart"
+msgstr ""
+
+msgid "digitalsig"
+msgstr ""
+
+msgid "dateformat"
+msgstr ""
+
+msgid "timeformat"
+msgstr ""
+
+msgid "prettydate"
+msgstr "په زړه پورې نېټې"
+
+msgid "setdefault"
+msgstr "تلوالي برابرول"
+
+msgid "autodetect"
+msgstr "په خپلواکه توګه"
+
+msgid "language"
+msgstr "ژبه"
+
+msgid "timezone"
+msgstr "سيميز وخت"
+
+msgid "pagesize"
+msgstr "په هر مخ پرتې کښې"
+
+msgid "signature"
+msgstr "لاسليک"
+
+msgid "dstactive"
+msgstr "ورځنيو کارونو لنډيز ساتل"
+
+msgid "showinextwin"
+msgstr ""
+
+msgid "composeextwin"
+msgstr ""
+
+msgid "htmleditor"
+msgstr "ايچ ټي‌ام ايل استوزي وليکه"
+
+msgid "htmlonreply"
+msgstr ""
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr "ايچ ټي ام ايل لاسليک"
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr "پخوانی چوکاټ وښييه"
+
+msgid "skin"
+msgstr "انټرفيس بڼه"
+
+msgid "logoutclear"
+msgstr "کثافت داني د وتنې په وخت کې پاکه کړه"
+
+msgid "logoutcompact"
+msgstr "د وتنې په وخت کې ليکبکس ونښلوه"
+
+msgid "uisettings"
+msgstr "د کاروونکي برسېر"
+
+msgid "serversettings"
+msgstr "سرور برابرونې"
+
+msgid "mailboxview"
+msgstr "ليکبکس ښکار کړه"
+
+msgid "mdnrequests"
+msgstr "د استوونکي خبرتياوې"
+
+msgid "askuser"
+msgstr "له کاروونکي څخه وپوښته"
+
+msgid "autosend"
+msgstr "په خپلواکه توګه واستوه"
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "په ړنګ شوو کې استوزي د لوستل شوي  په توګه په نښه کړه"
+
+msgid "flagfordeletion"
+msgstr "استوزه د ړنګ شوي پرځای بېکاره کړه"
+
+msgid "skipdeleted"
+msgstr "ړنګ شوي استوزي مه ښکاره کوه"
+
+msgid "deletealways"
+msgstr ""
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr "انځورونه له لري په ليکه کې ښکاره کړه"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "له اشنا استوونکو څخه"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "تل"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "نښلول شوي انځورونه تر استوزې لاندې ښکاره کړه"
+
+msgid "autosavedraft"
+msgstr "بارليک په خپل سري توګه  خوندي‌کړه"
+
+msgid "everynminutes"
+msgstr "هر ه ګڼه په دقيقو کې"
+
+msgid "refreshinterval"
+msgstr ""
+
+msgid "never"
+msgstr "هېڅ"
+
+msgid "immediately"
+msgstr ""
+
+msgid "messagesdisplaying"
+msgstr "استوزي ښيي"
+
+msgid "messagescomposition"
+msgstr "استوزي ليکي"
+
+msgid "mimeparamfolding"
+msgstr "د نښلول شوو نومونه"
+
+msgid "2231folding"
+msgstr "بشپړ RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (نور)"
+
+msgid "force7bit"
+msgstr ""
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "پرمختللي لارې"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "فوکاس براوسر کړکۍ په نوي استوزي کې"
+
+msgid "checkallfolders"
+msgstr "په ټولو پوښيو کې نوي استوزي وګورئ"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr ""
+
+msgid "browseroptions"
+msgstr ""
+
+msgid "section"
+msgstr ""
+
+msgid "maintenance"
+msgstr ""
+
+msgid "newmessage"
+msgstr ""
+
+msgid "signatureoptions"
+msgstr ""
+
+msgid "whenreplying"
+msgstr ""
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr ""
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr ""
+
+msgid "replyremovesignature"
+msgstr ""
+
+msgid "autoaddsignature"
+msgstr ""
+
+msgid "newmessageonly"
+msgstr ""
+
+msgid "replyandforwardonly"
+msgstr ""
+
+msgid "insertsignature"
+msgstr ""
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr ""
+
+msgid "reqmdn"
+msgstr ""
+
+msgid "reqdsn"
+msgstr ""
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr ""
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr ""
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr ""
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr ""
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr ""
+
+msgid "asattachment"
+msgstr ""
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr ""
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "پوښۍ"
+
+msgid "folders"
+msgstr "پوښۍ"
+
+msgid "foldername"
+msgstr "پوښۍ نوم"
+
+msgid "subscribed"
+msgstr "ګډ شو"
+
+msgid "messagecount"
+msgstr "استوزي"
+
+msgid "create"
+msgstr "جوړول، رامنځ ته کول"
+
+msgid "createfolder"
+msgstr "نوې پوښۍ جوړ کړه"
+
+msgid "managefolders"
+msgstr "پوښيو څارل"
+
+msgid "specialfolders"
+msgstr "ځانګړي پوښۍۍ"
+
+msgid "properties"
+msgstr ""
+
+msgid "folderproperties"
+msgstr ""
+
+msgid "parentfolder"
+msgstr ""
+
+msgid "location"
+msgstr ""
+
+msgid "info"
+msgstr ""
+
+msgid "getfoldersize"
+msgstr ""
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr ""
+
+msgid "personalfolder"
+msgstr ""
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr ""
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "اڼل"
+
+msgid "sortasc"
+msgstr "له پورته نه ښکته خوا ته برابرول"
+
+msgid "sortdesc"
+msgstr "له ښکته نه پورته خوا ته برابرول"
+
+msgid "undo"
+msgstr ""
+
+msgid "installedplugins"
+msgstr ""
+
+msgid "plugin"
+msgstr ""
+
+msgid "version"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr ""
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr ""
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "بي"
+
+msgid "KB"
+msgstr "کي بي"
+
+msgid "MB"
+msgstr "ام بي"
+
+msgid "GB"
+msgstr "جي بي"
+
+msgid "unicode"
+msgstr ""
+
+msgid "english"
+msgstr ""
+
+msgid "westerneuropean"
+msgstr ""
+
+msgid "easterneuropean"
+msgstr ""
+
+msgid "southeasterneuropean"
+msgstr ""
+
+msgid "baltic"
+msgstr ""
+
+msgid "cyrillic"
+msgstr ""
+
+msgid "arabic"
+msgstr ""
+
+msgid "greek"
+msgstr ""
+
+msgid "hebrew"
+msgstr ""
+
+msgid "turkish"
+msgstr ""
+
+msgid "nordic"
+msgstr ""
+
+msgid "thai"
+msgstr ""
+
+msgid "celtic"
+msgstr ""
+
+msgid "vietnamese"
+msgstr ""
+
+msgid "japanese"
+msgstr ""
+
+msgid "korean"
+msgstr ""
+
+msgid "chinese"
+msgstr ""
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr ""
+
+msgid "messages.loginfailed"
+msgstr "ننوتنه په بري سره ترسره نه شوه"
+
+msgid "messages.cookiesdisabled"
+msgstr "ستاسو لټوني ککوړي ونه منل"
+
+msgid "messages.sessionerror"
+msgstr "ستاسې ناسته ناباوري يا له مينځه تللې ده"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "له ای ميپ سرور سره پيوستون په بري سره ترسره نه شو"
+
+msgid "messages.servererror"
+msgstr ""
+
+msgid "messages.servererrormsg"
+msgstr ""
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr ""
+
+msgid "messages.dberror"
+msgstr ""
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr ""
+
+msgid "messages.errorreadonly"
+msgstr ""
+
+msgid "messages.errornoperm"
+msgstr ""
+
+msgid "messages.erroroverquota"
+msgstr ""
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+
+msgid "messages.invalidrequest"
+msgstr ""
+
+msgid "messages.invalidhost"
+msgstr ""
+
+msgid "messages.nomessagesfound"
+msgstr "ليکبکس کې هېڅ استوزي ونه مونده"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr ""
+
+msgid "messages.nomessages"
+msgstr ""
+
+msgid "messages.refreshing"
+msgstr ""
+
+msgid "messages.loading"
+msgstr "د کار په حال کې"
+
+msgid "messages.uploading"
+msgstr ""
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr ""
+
+msgid "messages.loadingdata"
+msgstr "اومتوک د کار په حال کې"
+
+msgid "messages.checkingmail"
+msgstr "نوي استوزي ګوري"
+
+msgid "messages.sendingmessage"
+msgstr "استوزه استوي."
+
+msgid "messages.messagesent"
+msgstr "استوزه په بري سره واستول شوه"
+
+msgid "messages.savingmessage"
+msgstr "استوزه خوندي کوي"
+
+msgid "messages.messagesaved"
+msgstr "استوزه په بارليک کې خوندي شوه"
+
+msgid "messages.successfullysaved"
+msgstr "په بري‌سره خوندي شوه"
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "اړيکلوری په بري سره پتې کتاب ته ور زيات شو"
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr ""
+
+msgid "messages.blockedimages"
+msgstr ""
+"ستاسو د پټتيآ خوندي کېدو لپاره ، له لري انځورنه په دې استوزي‌کې بند کړئ"
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "دا يوه پټه استوزه ده او نه څرګندېږي. بښنه غواړو"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "هېڅ اړيکلوری يې ونه موند"
+
+msgid "messages.contactnotfound"
+msgstr "وړاندی شوی اړيکلوری ونه مونده"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "استوزي استونه په بري سره پای ته ونه رسېده"
+
+msgid "messages.senttooquickly"
+msgstr "مهرباني وکړئ $صبر وکړئ د دې استوزې له لېږلو مخکې"
+
+msgid "messages.errorsavingsent"
+msgstr ""
+
+msgid "messages.errorsaving"
+msgstr ""
+
+msgid "messages.errormoving"
+msgstr "استوزه ونه خوځول شوه"
+
+msgid "messages.errorcopying"
+msgstr ""
+
+msgid "messages.errordeleting"
+msgstr "استوزه ړنګه نه شوه"
+
+msgid "messages.errormarking"
+msgstr ""
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "په رښتيا سره غواړئ چې ټاکل شوی اړيکلوری ړنګ کړئ؟"
+
+msgid "messages.deletegroupconfirm"
+msgstr ""
+
+msgid "messages.deletemessagesconfirm"
+msgstr "په رښتيا سره غواړئ چې ټاکل شوي استوزي‌ړنګ کړئ؟"
+
+msgid "messages.deletefolderconfirm"
+msgstr "په رښتيآ سره غواړئ چې دا پوښۍ ړنګه کړئ؟"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "په رښتيا سره غواړئ چې ددې پوښۍ ټول استوزي‌ړنګ کړئ؟"
+
+msgid "messages.contactdeleting"
+msgstr ""
+
+msgid "messages.groupdeleting"
+msgstr ""
+
+msgid "messages.folderdeleting"
+msgstr "پوښۍ ړنګوي"
+
+msgid "messages.foldermoving"
+msgstr "پوښۍ خوځوي"
+
+msgid "messages.foldersubscribing"
+msgstr ""
+
+msgid "messages.folderunsubscribing"
+msgstr ""
+
+msgid "messages.formincomplete"
+msgstr "دا پورمه بشپړه ډکه شوې نه ده"
+
+msgid "messages.noemailwarning"
+msgstr "مهرباني وکړئ د يوه شته برېښناليک پته ورځای کړئ"
+
+msgid "messages.nonamewarning"
+msgstr "مهرباني‌وکړئ يو نوم وليکئ"
+
+msgid "messages.nopagesizewarning"
+msgstr "مهرباني‌وکړئ د پاڼې کچه ورکړئ"
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "مهرباني‌وکړئ لږ تر لږه يو ترلاسه کوونکی وليکئ"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "د مضمون ډګر تش دی يا تاسو غواړئ چې همدا اوس يو له هغو څخه وليکئ"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "دا استوزه پرته له متن څخه استوئ؟"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr "مهرباني وکړئ  د يو اړيکلوري‌نوم يا برېښناليک پته وليکئ"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+
+msgid "messages.searchsuccessful"
+msgstr "استوزي ومونده$"
+
+msgid "messages.contactsearchsuccessful"
+msgstr ""
+
+msgid "messages.searchnomatch"
+msgstr "د پلټلو بيا راګرځېدل هېڅ سمون ونه خوړه"
+
+msgid "messages.searching"
+msgstr "پلټي"
+
+msgid "messages.checking"
+msgstr "ګوري"
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr "هېڅ ليکدودي‌تيروتنه ونه مونده"
+
+msgid "messages.folderdeleted"
+msgstr "پوښۍ په بشپړه توګه ړنګه شوه"
+
+msgid "messages.foldersubscribed"
+msgstr ""
+
+msgid "messages.folderunsubscribed"
+msgstr ""
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "په بشپړه توګه ړنګ شول"
+
+msgid "messages.converting"
+msgstr "له استوزي څخه بڼې ړنګېږي"
+
+msgid "messages.messageopenerror"
+msgstr "له سرور څخه استوزي پرمخ نه شي تلی"
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "دفايل پورته کول په بري سره سرته ونه رسيده"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "د پورته شوي فايل کچه بايد لږترلږه له $څخه تيری ونه کړي"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr ""
+
+msgid "messages.moveerror"
+msgstr ""
+
+msgid "messages.sourceisreadonly"
+msgstr "ددې پتې يوازې سرچينه لوستل کېږي"
+
+msgid "messages.errorsavingcontact"
+msgstr "د پتې اړيکلوری يې خوندي‌نه شو کړای"
+
+msgid "messages.movingmessage"
+msgstr "استوزه خوځوي"
+
+msgid "messages.copyingmessage"
+msgstr ""
+
+msgid "messages.copyingcontact"
+msgstr ""
+
+msgid "messages.movingcontact"
+msgstr ""
+
+msgid "messages.deletingmessage"
+msgstr ""
+
+msgid "messages.markingmessage"
+msgstr ""
+
+msgid "messages.addingmember"
+msgstr ""
+
+msgid "messages.removingmember"
+msgstr ""
+
+msgid "messages.receiptsent"
+msgstr "يو لوستل شوی رسليک په بشپړه توګه واستول شو"
+
+msgid "messages.errorsendingreceipt"
+msgstr "رسليک يې ونه شوای ليږلی"
+
+msgid "messages.deleteidentityconfirm"
+msgstr ""
+
+msgid "messages.nodeletelastidentity"
+msgstr "تاسې نه شئ کولی چې دا پېژندنه ړنګه کړئ، داستاسو اخرنی پيژندنه ده"
+
+msgid "messages.forbiddencharacter"
+msgstr "د پوښۍ نوم له فوربايډن تورو څخه جوړ دی"
+
+msgid "messages.selectimportfile"
+msgstr "مهرباني وکړئ‌يو فايل د پورته کولو لپاره وټاکئ"
+
+msgid "messages.addresswriterror"
+msgstr "ټاکل شوی پتې کتاب د بياليکلو نه دی"
+
+msgid "messages.contactaddedtogroup"
+msgstr ""
+
+msgid "messages.contactremovedfromgroup"
+msgstr ""
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr "نقلوي...صبر وکړئ"
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>په بشپړه توګه نقل شو $اړيکلوري داخل شول, $شته تيرشوي انټاير څخه "
+"تيرشول</b>:<p><em>$نومونه</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr "چار اجازه نه لري"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+
+msgid "messages.smtpconnerror"
+msgstr ""
+
+msgid "messages.smtpautherror"
+msgstr ""
+
+msgid "messages.smtpfromerror"
+msgstr ""
+
+msgid "messages.smtptoerror"
+msgstr ""
+
+msgid "messages.smtprecipientserror"
+msgstr ""
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr ""
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+
+msgid "messages.maxgroupmembersreached"
+msgstr ""
+
+msgid "messages.internalerror"
+msgstr ""
+
+msgid "messages.contactdelerror"
+msgstr ""
+
+msgid "messages.contactdeleted"
+msgstr ""
+
+msgid "messages.contactrestoreerror"
+msgstr ""
+
+msgid "messages.contactrestored"
+msgstr ""
+
+msgid "messages.groupdeleted"
+msgstr ""
+
+msgid "messages.grouprenamed"
+msgstr ""
+
+msgid "messages.groupcreated"
+msgstr ""
+
+msgid "messages.savedsearchdeleted"
+msgstr ""
+
+msgid "messages.savedsearchdeleteerror"
+msgstr ""
+
+msgid "messages.savedsearchcreated"
+msgstr ""
+
+msgid "messages.savedsearchcreateerror"
+msgstr ""
+
+msgid "messages.messagedeleted"
+msgstr ""
+
+msgid "messages.messagemoved"
+msgstr ""
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr ""
+
+msgid "messages.messagemarked"
+msgstr ""
+
+msgid "messages.autocompletechars"
+msgstr ""
+
+msgid "messages.autocompletemore"
+msgstr ""
+
+msgid "messages.namecannotbeempty"
+msgstr ""
+
+msgid "messages.nametoolong"
+msgstr ""
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr ""
+
+msgid "messages.foldercreated"
+msgstr ""
+
+msgid "messages.invalidimageformat"
+msgstr ""
+
+msgid "messages.mispellingsfound"
+msgstr ""
+
+msgid "messages.parentnotwritable"
+msgstr ""
+
+msgid "messages.messagetoobig"
+msgstr ""
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

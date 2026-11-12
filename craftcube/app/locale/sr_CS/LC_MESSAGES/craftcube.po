@@ -1,0 +1,2876 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: sr_CS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Добродошли на $product"
+
+msgid "username"
+msgstr "Корисничко име"
+
+msgid "password"
+msgstr "Лозинка"
+
+msgid "server"
+msgstr "Сервер"
+
+msgid "login"
+msgstr "Пријава"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr "Мени"
+
+msgid "logout"
+msgstr "Одјава"
+
+msgid "mail"
+msgstr "Пошта"
+
+msgid "settings"
+msgstr "Поставке"
+
+msgid "addressbook"
+msgstr "Адресар"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Примљене"
+
+msgid "drafts"
+msgstr "Нацрти"
+
+msgid "sent"
+msgstr "Послате"
+
+msgid "trash"
+msgstr "Смеће"
+
+msgid "junk"
+msgstr "Отпад"
+
+msgid "show_real_foldernames"
+msgstr "Прикажи права имена за специјалне фасцикле"
+
+msgid "subject"
+msgstr "Наслов"
+
+msgid "from"
+msgstr "Од"
+
+msgid "sender"
+msgstr "Пошиљалац"
+
+msgid "to"
+msgstr "За"
+
+msgid "cc"
+msgstr "Цц"
+
+msgid "bcc"
+msgstr "Бцц"
+
+msgid "replyto"
+msgstr "Одговори"
+
+msgid "followupto"
+msgstr ""
+
+msgid "date"
+msgstr "Датум"
+
+msgid "size"
+msgstr "Величина"
+
+msgid "priority"
+msgstr "Приоритет"
+
+msgid "organization"
+msgstr "Организација"
+
+msgid "readstatus"
+msgstr "Стање читања"
+
+msgid "listoptions"
+msgstr "Опције листе..."
+
+msgid "listoptionstitle"
+msgstr "Опције листе"
+
+msgid "mailboxlist"
+msgstr "Фасцикле"
+
+msgid "messagesfromto"
+msgstr "Порука $from за $to од $count"
+
+msgid "threadsfromto"
+msgstr "Нити $from за $to од $count"
+
+msgid "messagenrof"
+msgstr "Порука $nr од $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to од $count"
+
+msgid "copy"
+msgstr "Копирај"
+
+msgid "move"
+msgstr "Премести"
+
+msgid "moveto"
+msgstr "Премести у..."
+
+msgid "copyto"
+msgstr "Копирај у..."
+
+msgid "download"
+msgstr "Преузми"
+
+msgid "open"
+msgstr "Отвори"
+
+msgid "showattachment"
+msgstr "Прикажи"
+
+msgid "showanyway"
+msgstr "Свеједно прикажи"
+
+msgid "filename"
+msgstr "Назив фајла"
+
+msgid "filesize"
+msgstr "Величина фајла"
+
+msgid "addtoaddressbook"
+msgstr "Додај у адресар"
+
+msgid "sun"
+msgstr "нед"
+
+msgid "mon"
+msgstr "пон"
+
+msgid "tue"
+msgstr "уто"
+
+msgid "wed"
+msgstr "сре"
+
+msgid "thu"
+msgstr "чет"
+
+msgid "fri"
+msgstr "пет"
+
+msgid "sat"
+msgstr "суб"
+
+msgid "sunday"
+msgstr "недеља"
+
+msgid "monday"
+msgstr "понедељак"
+
+msgid "tuesday"
+msgstr "уторак"
+
+msgid "wednesday"
+msgstr "среда"
+
+msgid "thursday"
+msgstr "четвртак"
+
+msgid "friday"
+msgstr "петак"
+
+msgid "saturday"
+msgstr "субота"
+
+msgid "jan"
+msgstr "јан"
+
+msgid "feb"
+msgstr "феб"
+
+msgid "mar"
+msgstr "мар"
+
+msgid "apr"
+msgstr "апр"
+
+msgid "may"
+msgstr "мај"
+
+msgid "jun"
+msgstr "јун"
+
+msgid "jul"
+msgstr "јул"
+
+msgid "aug"
+msgstr "авг"
+
+msgid "sep"
+msgstr "сеп"
+
+msgid "oct"
+msgstr "окт"
+
+msgid "nov"
+msgstr "нов"
+
+msgid "dec"
+msgstr "дец"
+
+msgid "longjan"
+msgstr "јануар"
+
+msgid "longfeb"
+msgstr "фебруар"
+
+msgid "longmar"
+msgstr "март"
+
+msgid "longapr"
+msgstr "април"
+
+msgid "longmay"
+msgstr "мај"
+
+msgid "longjun"
+msgstr "јун"
+
+msgid "longjul"
+msgstr "јул"
+
+msgid "longaug"
+msgstr "август"
+
+msgid "longsep"
+msgstr "септембар"
+
+msgid "longoct"
+msgstr "октобар"
+
+msgid "longnov"
+msgstr "новембар"
+
+msgid "longdec"
+msgstr "децембар"
+
+msgid "today"
+msgstr "данас"
+
+msgid "refresh"
+msgstr "Освежи"
+
+msgid "checkmail"
+msgstr "Провера нових порука"
+
+msgid "compose"
+msgstr "Нова порука"
+
+msgid "writenewmessage"
+msgstr "Напиши нову поруку"
+
+msgid "reply"
+msgstr "Одговори"
+
+msgid "replytomessage"
+msgstr "Одговори пошиљаоцу"
+
+msgid "replytoallmessage"
+msgstr "Одговори на листу или пошиљаоцу и свим примаоцима"
+
+msgid "replyall"
+msgstr "Одговори свима"
+
+msgid "replylist"
+msgstr "Одговори на листу"
+
+msgid "forward"
+msgstr "Проследи"
+
+msgid "forwardinline"
+msgstr "Проследи у тексту"
+
+msgid "forwardattachment"
+msgstr "Проследи као прилог"
+
+msgid "forwardmessage"
+msgstr "Проследи поруку"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Избриши поруку"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Премести поруку у смеће"
+
+msgid "printmessage"
+msgstr "Одштампај поруку"
+
+msgid "previousmessage"
+msgstr "Прикажи претходну поруку"
+
+msgid "firstmessage"
+msgstr "Прикажи прву поруку"
+
+msgid "nextmessage"
+msgstr "Прикажи следећу поруку"
+
+msgid "lastmessage"
+msgstr "Прикажи последњу поруку"
+
+msgid "backtolist"
+msgstr "Повратак на листу порука"
+
+msgid "viewsource"
+msgstr "Прикажи изворни облик"
+
+msgid "mark"
+msgstr "Означи"
+
+msgid "markmessages"
+msgstr "Обележи поруке"
+
+msgid "markread"
+msgstr "као прочитано"
+
+msgid "markunread"
+msgstr "као непрочитано"
+
+msgid "markflagged"
+msgstr "као обележено"
+
+msgid "markunflagged"
+msgstr "као необележено"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Остале радње..."
+
+msgid "markallread"
+msgstr "Означи све као прочитано"
+
+msgid "folders-cur"
+msgstr "Само изабрана фасцикла"
+
+msgid "folders-sub"
+msgstr "Изабрана фасцикла и потфасцикле"
+
+msgid "folders-all"
+msgstr "Све фасцикле"
+
+msgid "more"
+msgstr "Још"
+
+msgid "back"
+msgstr "Назад"
+
+msgid "options"
+msgstr "Опције"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr "Радње"
+
+msgid "first"
+msgstr "Прво"
+
+msgid "last"
+msgstr "Последње"
+
+msgid "previous"
+msgstr "Претходно"
+
+msgid "next"
+msgstr "Следеће"
+
+msgid "select"
+msgstr "Изабери"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Све"
+
+msgid "none"
+msgstr "Ништа"
+
+msgid "currpage"
+msgstr "Тренутна страница"
+
+msgid "isread"
+msgstr "Прочитана"
+
+msgid "unread"
+msgstr "Непрочитана"
+
+msgid "flagged"
+msgstr "Обележено"
+
+msgid "unflagged"
+msgstr "Необележена"
+
+msgid "unanswered"
+msgstr "Неодговорена"
+
+msgid "withattachment"
+msgstr "Са прилогом"
+
+msgid "deleted"
+msgstr "Обрисано"
+
+msgid "undeleted"
+msgstr "Необрисано"
+
+msgid "replied"
+msgstr "Одговорено"
+
+msgid "forwarded"
+msgstr "Прослеђено"
+
+msgid "invert"
+msgstr "Обрни"
+
+msgid "filter"
+msgstr "Филтер"
+
+msgid "list"
+msgstr "Листа"
+
+msgid "threads"
+msgstr "Нити"
+
+msgid "expand-all"
+msgstr "Рашири све"
+
+msgid "expand-unread"
+msgstr "Рашири непрочитане"
+
+msgid "collapse-all"
+msgstr "Сажми све"
+
+msgid "threaded"
+msgstr "Разгранато"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Рашири гране порука"
+
+msgid "do_expand"
+msgstr "све гране"
+
+msgid "expand_only_unread"
+msgstr "само са непрочитаним порукама"
+
+msgid "fromto"
+msgstr "од/за"
+
+msgid "flag"
+msgstr "Обележено"
+
+msgid "attachment"
+msgstr "Прилог"
+
+msgid "nonesort"
+msgstr "Ништа"
+
+msgid "sentdate"
+msgstr "Датум слања"
+
+msgid "arrival"
+msgstr "Датум пријема"
+
+msgid "asc"
+msgstr "растуће"
+
+msgid "desc"
+msgstr "опадајуће"
+
+msgid "listcolumns"
+msgstr "Колоне листе"
+
+msgid "listsorting"
+msgstr "Колона сортирања"
+
+msgid "listorder"
+msgstr "Ређање"
+
+msgid "listmode"
+msgstr "Режим приказа листе"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr "Распоред"
+
+msgid "layoutwidescreen"
+msgstr "Широк екран"
+
+msgid "layoutdesktop"
+msgstr "Радна површ"
+
+msgid "layoutlist"
+msgstr "Листа"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Радње фасцикле..."
+
+msgid "compact"
+msgstr "Сажми"
+
+msgid "empty"
+msgstr "Испразни"
+
+msgid "importmessages"
+msgstr "Увези поруке"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Заузеће"
+
+msgid "unknown"
+msgstr "непознато"
+
+msgid "unlimited"
+msgstr "неограничено"
+
+msgid "quotatype"
+msgstr "Врста квоте"
+
+msgid "quotatotal"
+msgstr "Ограничење"
+
+msgid "quotaused"
+msgstr "Коришћено"
+
+msgid "quotastorage"
+msgstr "Заузеће диска"
+
+msgid "quotamessage"
+msgstr "Број порука"
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Брза претрага"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Ресетуј претрагу"
+
+msgid "searchmod"
+msgstr "Модификатори претраге"
+
+msgid "msgtext"
+msgstr "Цела порука"
+
+msgid "body"
+msgstr "Тело"
+
+msgid "type"
+msgstr "Тип"
+
+msgid "namex"
+msgstr "Име"
+
+msgid "searchscope"
+msgstr "Распон"
+
+msgid "currentfolder"
+msgstr "Текућа фасцикла"
+
+msgid "subfolders"
+msgstr "Ова и потфасцикле"
+
+msgid "allfolders"
+msgstr "Све фасцикле"
+
+msgid "searchinterval-1W"
+msgstr "старије од седмице"
+
+msgid "searchinterval-1M"
+msgstr "старије од месеца"
+
+msgid "searchinterval-1Y"
+msgstr "старије од године"
+
+msgid "searchinterval1W"
+msgstr "млађе од седмице"
+
+msgid "searchinterval1M"
+msgstr "млађе од месеца"
+
+msgid "searchinterval1Y"
+msgstr "млађе од године"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Отвори у новом прозору"
+
+msgid "emlsave"
+msgstr "Преузимање (.eml)"
+
+msgid "changeformattext"
+msgstr "Прикажи у обичном текстуалном формату"
+
+msgid "changeformathtml"
+msgstr "Прикажи у ХТМЛ формату"
+
+msgid "editasnew"
+msgstr "Уреди као ново"
+
+msgid "send"
+msgstr "Пошаљи"
+
+msgid "sendmessage"
+msgstr "Пошаљи поруку"
+
+msgid "savemessage"
+msgstr "Сачувај као нацрт"
+
+msgid "addattachment"
+msgstr "Приложи фајл"
+
+msgid "charset"
+msgstr "Кодирање"
+
+msgid "editortype"
+msgstr "Тип уређивача"
+
+msgid "returnreceipt"
+msgstr "Потврда о приспећу"
+
+msgid "dsn"
+msgstr "Обавештење о статусу испоруке"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "Дана $date, $sender написа:"
+
+msgid "originalmessage"
+msgstr "Оригинална порука"
+
+msgid "selectimage"
+msgstr "Изабери слику"
+
+msgid "addimage"
+msgstr "Додај слику"
+
+msgid "selectmedia"
+msgstr "Изабери видео"
+
+msgid "addmedia"
+msgstr "Додај видео"
+
+msgid "encrypt"
+msgstr "Шифруј"
+
+msgid "encryptmessage"
+msgstr "Шифруј поруку"
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr "Увези јавне кључеве"
+
+msgid "encryptedsendialog"
+msgstr "Шаљем шифровану поруку"
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr "ИД кључа"
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr "Истекао"
+
+msgid "keyrevoked"
+msgstr "Опозван"
+
+msgid "bccinstead"
+msgstr "Користи БЦЦ"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Убаци"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Уреди идентитете"
+
+msgid "spellcheck"
+msgstr "Правопис"
+
+msgid "checkspelling"
+msgstr "Провера правописа"
+
+msgid "resumeediting"
+msgstr "Настави уређивање"
+
+msgid "revertto"
+msgstr "Врати на"
+
+msgid "restore"
+msgstr "Врати"
+
+msgid "restoremessage"
+msgstr "Да вратим поруку?"
+
+msgid "ignore"
+msgstr "Игнориши"
+
+msgid "responses"
+msgstr "Одговори"
+
+msgid "insertresponse"
+msgstr "Уметни одговор"
+
+msgid "manageresponses"
+msgstr "Управљај одговорима"
+
+msgid "newresponse"
+msgstr "Направи нови одговор"
+
+msgid "addresponse"
+msgstr "Додај одговор"
+
+msgid "editresponse"
+msgstr "Уреди одговор"
+
+msgid "editresponses"
+msgstr "Уреди одговоре"
+
+msgid "responsename"
+msgstr "Назив"
+
+msgid "responsetext"
+msgstr "Текст одговора"
+
+msgid "attach"
+msgstr "Приложи"
+
+msgid "attachments"
+msgstr "Прилози"
+
+msgid "upload"
+msgstr "Отпреми"
+
+msgid "uploadprogress"
+msgstr "$percent ($current од $total)"
+
+msgid "close"
+msgstr "Затвори"
+
+msgid "messageoptions"
+msgstr "Опције поруке..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr "Преименуј прилог"
+
+msgid "low"
+msgstr "низак"
+
+msgid "lowest"
+msgstr "најнижи"
+
+msgid "normal"
+msgstr "средњи"
+
+msgid "high"
+msgstr "висок"
+
+msgid "highest"
+msgstr "највиши"
+
+msgid "nosubject"
+msgstr "(без наслова)"
+
+msgid "showimages"
+msgstr "Прикажи слике"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "Увек прикажи слике од $sender"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Ово је нацрт поруке."
+
+msgid "andnmore"
+msgstr "још $nr..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Прикажи још заглавља поруке"
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "ХТМЛ"
+
+msgid "plaintoggle"
+msgstr "Обичан текст"
+
+msgid "savesentmessagein"
+msgstr "Послате поруке сачувај у"
+
+msgid "dontsave"
+msgstr "не чувај"
+
+msgid "maxuploadsize"
+msgstr "Максимална величина фајла је $size"
+
+msgid "addcc"
+msgstr "Додај Цц"
+
+msgid "addbcc"
+msgstr "Додај Бцц"
+
+msgid "addreplyto"
+msgstr "Додај Одговор-на"
+
+msgid "addfollowupto"
+msgstr ""
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Пошиљалац ове поруке је замолио да буде обавештен када прочитате ову поруку."
+" Да ли желите да обавестите пошиљаоца?"
+
+msgid "receiptread"
+msgstr "Обавештење о приспећу (прочитано)"
+
+msgid "yourmessage"
+msgstr "Ово је обавештење о приспећу за вашу поруку"
+
+msgid "receiptnote"
+msgstr ""
+"Пажња: Ово обавештење само потврђује да је порука приказана на рачунару "
+"примаоца. Не постоји гаранција да је прималац прочитао или разумео садржај "
+"поруке."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Приказано име"
+
+msgid "firstname"
+msgstr "Име"
+
+msgid "surname"
+msgstr "Презиме"
+
+msgid "middlename"
+msgstr "Средње име"
+
+msgid "nameprefix"
+msgstr "Префикс"
+
+msgid "namesuffix"
+msgstr "Суфикс"
+
+msgid "nickname"
+msgstr "Надимак"
+
+msgid "jobtitle"
+msgstr "Пословна титула"
+
+msgid "department"
+msgstr "Одељење"
+
+msgid "gender"
+msgstr "Пол"
+
+msgid "maidenname"
+msgstr "Девојачко презиме"
+
+msgid "email"
+msgstr "Е-пошта"
+
+msgid "phone"
+msgstr "Телефон"
+
+msgid "address"
+msgstr "Адреса"
+
+msgid "street"
+msgstr "Улица"
+
+msgid "locality"
+msgstr "Град"
+
+msgid "zipcode"
+msgstr "Поштански број"
+
+msgid "region"
+msgstr "Покрајина/Провинција"
+
+msgid "country"
+msgstr "Држава"
+
+msgid "birthday"
+msgstr "Датум рођења"
+
+msgid "anniversary"
+msgstr "Годишњица"
+
+msgid "website"
+msgstr "Веб сајт"
+
+msgid "instantmessenger"
+msgstr "ИМ"
+
+msgid "notes"
+msgstr "Белешке"
+
+msgid "male"
+msgstr "мушко"
+
+msgid "female"
+msgstr "женско"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Менаџер"
+
+msgid "assistant"
+msgstr "Асистент"
+
+msgid "spouse"
+msgstr "Супружник"
+
+msgid "allfields"
+msgstr "Сва поља"
+
+msgid "search"
+msgstr "Тражи"
+
+msgid "searchresult"
+msgstr "Резултат претраге"
+
+msgid "advsearch"
+msgstr "Напредна претрага"
+
+msgid "advanced"
+msgstr "Напредно"
+
+msgid "other"
+msgstr "Остало"
+
+msgid "printcontact"
+msgstr "Штампај контакт"
+
+msgid "qrcode"
+msgstr "КуЕР код"
+
+msgid "typehome"
+msgstr "Кућа"
+
+msgid "typework"
+msgstr "Посао"
+
+msgid "typeother"
+msgstr "Остало"
+
+msgid "typemobile"
+msgstr "Мобилни"
+
+msgid "typemain"
+msgstr "Главно"
+
+msgid "typehomefax"
+msgstr "Кућни факс"
+
+msgid "typeworkfax"
+msgstr "Пословни факс"
+
+msgid "typecar"
+msgstr "Ауто"
+
+msgid "typepager"
+msgstr "Пејџер"
+
+msgid "typevideo"
+msgstr "Видео"
+
+msgid "typeassistant"
+msgstr "Асистент"
+
+msgid "typehomepage"
+msgstr "Почетна страница"
+
+msgid "typeblog"
+msgstr "Блог"
+
+msgid "typeprofile"
+msgstr "Профил"
+
+msgid "addfield"
+msgstr "Додај поље..."
+
+msgid "addcontact"
+msgstr "Додај контакт"
+
+msgid "editcontact"
+msgstr "Измени контакт"
+
+msgid "contacts"
+msgstr "Контакти"
+
+msgid "contactproperties"
+msgstr "Својства контакта"
+
+msgid "contactnameandorg"
+msgstr "Име и организација"
+
+msgid "personalinfo"
+msgstr "Лични подаци"
+
+msgid "personal"
+msgstr "Лично"
+
+msgid "contactphoto"
+msgstr "Фотографија контакта"
+
+msgid "edit"
+msgstr "Измени"
+
+msgid "cancel"
+msgstr "Одустани"
+
+msgid "save"
+msgstr "Сачувај"
+
+msgid "delete"
+msgstr "Обриши"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Преименуј"
+
+msgid "addphoto"
+msgstr "Додај"
+
+msgid "replacephoto"
+msgstr "Замени"
+
+msgid "uploadphoto"
+msgstr "Отпреми слику"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "Направи нови контакт"
+
+msgid "deletecontact"
+msgstr "Обриши изаабране контакте"
+
+msgid "composeto"
+msgstr "Напиши поруку"
+
+msgid "contactsfromto"
+msgstr "Контакти $from до $to од $count"
+
+msgid "print"
+msgstr "Штампај"
+
+msgid "export"
+msgstr "Извези"
+
+msgid "exportall"
+msgstr "Извези све"
+
+msgid "exportsel"
+msgstr "Извези изабрано"
+
+msgid "exportvcards"
+msgstr "Извези конакте у формату в-картице"
+
+msgid "newgroup"
+msgstr "Направи нову групу"
+
+msgid "addgroup"
+msgstr "Додај групу"
+
+msgid "grouprename"
+msgstr "Преименуј групу"
+
+msgid "groupdelete"
+msgstr "Обриши групу"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Избриши изабране контакте из групе"
+
+msgid "uponelevel"
+msgstr "Горе један ниво"
+
+msgid "previouspage"
+msgstr "Прикажи претходну страну"
+
+msgid "firstpage"
+msgstr "Прикажи прву страну"
+
+msgid "nextpage"
+msgstr "Прикажи следећу страну"
+
+msgid "lastpage"
+msgstr "Прикажи последњу страну"
+
+msgid "group"
+msgstr "Група"
+
+msgid "groups"
+msgstr "Групе"
+
+msgid "listgroup"
+msgstr "Излистај чланове групе"
+
+msgid "personaladrbook"
+msgstr "Личне адресе"
+
+msgid "searchsave"
+msgstr "Сачувај претрагу"
+
+msgid "searchdelete"
+msgstr "Избриши претрагу"
+
+msgid "import"
+msgstr "Увези"
+
+msgid "importcontacts"
+msgstr "Увези контакте"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Додај контакте у"
+
+msgid "importreplace"
+msgstr "Замени цео адресар"
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr "Само за постојеће групе"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Готово"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Поставке за"
+
+msgid "about"
+msgstr "О програму"
+
+msgid "preferences"
+msgstr "Подешавања"
+
+msgid "userpreferences"
+msgstr "Корисничка подешавања"
+
+msgid "editpreferences"
+msgstr "Измена корисничких подешавања"
+
+msgid "identities"
+msgstr "Идентитети"
+
+msgid "manageidentities"
+msgstr "Управљај идентитетима"
+
+msgid "newidentity"
+msgstr "Направи нови идентитет"
+
+msgid "addidentity"
+msgstr "Додај идентитет"
+
+msgid "editidentity"
+msgstr "Уреди идентитет"
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "Прикажи ХТМЛ"
+
+msgid "defaultcharset"
+msgstr "Подразумевани сет знакова"
+
+msgid "htmlmessage"
+msgstr "ХТМЛ порука"
+
+msgid "messagepart"
+msgstr "Део"
+
+msgid "digitalsig"
+msgstr "Дигитални потпис"
+
+msgid "dateformat"
+msgstr "Формат датума"
+
+msgid "timeformat"
+msgstr "Формат времена"
+
+msgid "prettydate"
+msgstr "Лепи датуми"
+
+msgid "setdefault"
+msgstr "Постави подразумевано"
+
+msgid "autodetect"
+msgstr "Аутоматски"
+
+msgid "language"
+msgstr "Језик"
+
+msgid "timezone"
+msgstr "Временска зона"
+
+msgid "pagesize"
+msgstr "Редова по страни"
+
+msgid "signature"
+msgstr "Потпис"
+
+msgid "dstactive"
+msgstr "Летње време"
+
+msgid "showinextwin"
+msgstr "Отвори поруку у новом прозору"
+
+msgid "composeextwin"
+msgstr "Састави у новом прозору"
+
+msgid "htmleditor"
+msgstr "Састави ХТМЛ поруке"
+
+msgid "htmlonreply"
+msgstr "само при одговору на ХТМЛ поруку"
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr "ХТМЛ потпис"
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr "Прикажи панел за преглед"
+
+msgid "skin"
+msgstr "Маска сучеља"
+
+msgid "logoutclear"
+msgstr "Испразни смеће при одјављивању"
+
+msgid "logoutcompact"
+msgstr "Сажми долазне при одјављивању"
+
+msgid "uisettings"
+msgstr "Сучеље"
+
+msgid "serversettings"
+msgstr "Поставке сервера"
+
+msgid "mailboxview"
+msgstr "Приказ сандучета"
+
+msgid "mdnrequests"
+msgstr ""
+
+msgid "askuser"
+msgstr "питај ме"
+
+msgid "autosend"
+msgstr "шаљи потврду"
+
+msgid "autosendknown"
+msgstr "шаљи потврду мојим контактима, иначе питај"
+
+msgid "autosendknownignore"
+msgstr "шаљи потврду мојим контактима, иначе игнориши"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "игнориши захтев"
+
+msgid "readwhendeleted"
+msgstr "Означи као прочитано при брисању"
+
+msgid "flagfordeletion"
+msgstr ""
+
+msgid "skipdeleted"
+msgstr "Не приказуј избрисане поруке"
+
+msgid "deletealways"
+msgstr "Ако премештање порука у смеће не успе, обриши их"
+
+msgid "deletejunk"
+msgstr "Директно брисање порука у отпаду"
+
+msgid "showremoteimages"
+msgstr ""
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "од знаних пошиљалаца"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "увек"
+
+msgid "alwaysbutplain"
+msgstr "увек, осим кад се одговара на обичан текст"
+
+msgid "showinlineimages"
+msgstr "Покажи приложене слике испод поруке"
+
+msgid "autosavedraft"
+msgstr "Аутоматски сачувај нацрте"
+
+msgid "everynminutes"
+msgstr "сваких $n минута"
+
+msgid "refreshinterval"
+msgstr "Освежи (проверава нове поруке итд.)"
+
+msgid "never"
+msgstr "никад"
+
+msgid "immediately"
+msgstr "одмах"
+
+msgid "messagesdisplaying"
+msgstr "Приказ порука"
+
+msgid "messagescomposition"
+msgstr "Састављање порука"
+
+msgid "mimeparamfolding"
+msgstr "Називи прилога"
+
+msgid "2231folding"
+msgstr "Пун РФЦ 2231 (Тандерберд )"
+
+msgid "miscfolding"
+msgstr "РФЦ 2047/2231 (МС Аутлук)"
+
+msgid "2047folding"
+msgstr "Пун РФЦ 2047 (остали)"
+
+msgid "force7bit"
+msgstr "МИМЕ кодирање за 8-битне знакове"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Напредне опције"
+
+msgid "toggleadvancedoptions"
+msgstr "Напредне опције"
+
+msgid "focusonnewmessage"
+msgstr "Фокусирај прозор претраживача на новој поруци"
+
+msgid "checkallfolders"
+msgstr "Провери све фасцикле за нове поруке"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "Подразумевани фонт за ХТМЛ поруке"
+
+msgid "mainoptions"
+msgstr "Главне опције"
+
+msgid "browseroptions"
+msgstr "Опције претраживача"
+
+msgid "section"
+msgstr "Одељак"
+
+msgid "maintenance"
+msgstr "Одржавање"
+
+msgid "newmessage"
+msgstr "Нова порука"
+
+msgid "signatureoptions"
+msgstr "Опције потписа"
+
+msgid "whenreplying"
+msgstr "При одговору"
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr "почни нову поруку изнад цитата"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "почни нову поруку испод цитата"
+
+msgid "replyremovesignature"
+msgstr "При одговору одстрани оригинални потпис из поруке"
+
+msgid "autoaddsignature"
+msgstr "Аутоматски додај потпис"
+
+msgid "newmessageonly"
+msgstr "само нове поруке"
+
+msgid "replyandforwardonly"
+msgstr "само одговори и прослеђивања"
+
+msgid "insertsignature"
+msgstr "Убаци потпис"
+
+msgid "sigbelow"
+msgstr "Потпис испод цитиране поруке"
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "након $n сек."
+
+msgid "reqmdn"
+msgstr "Увек затражи потврду пријема"
+
+msgid "reqdsn"
+msgstr "Увек затражи обавештење о статусу слања поруке"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Сачувај одговоре у фасцикли поруке на коју се одговара"
+
+msgid "defaultabook"
+msgstr "Подразумевани адресар"
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr "Листа контаката као"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Проверите правопис пре слања поруке"
+
+msgid "spellcheckoptions"
+msgstr "Опције провере правописа"
+
+msgid "spellcheckignoresyms"
+msgstr "Игнориши речи са симболима"
+
+msgid "spellcheckignorenums"
+msgstr "Игнориши речи са бројевима"
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr "Додај у речник"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr "Прослеђивање порука"
+
+msgid "inline"
+msgstr "уткано"
+
+msgid "asattachment"
+msgstr "као прилог"
+
+msgid "replyallmode"
+msgstr "Подразумевана радња за дугме [Одговори свима]"
+
+msgid "replyalldefault"
+msgstr "одговори свима"
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "све поруке"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Фасцикла"
+
+msgid "folders"
+msgstr "Фасцикле"
+
+msgid "foldername"
+msgstr "Назив фасцикле"
+
+msgid "subscribed"
+msgstr "Претплаћено"
+
+msgid "messagecount"
+msgstr "Поруке"
+
+msgid "create"
+msgstr "Направи"
+
+msgid "createfolder"
+msgstr "Направи нову фасциклу"
+
+msgid "managefolders"
+msgstr "Управљај фасциклама"
+
+msgid "specialfolders"
+msgstr "Посебне фасцикле"
+
+msgid "properties"
+msgstr "Својства"
+
+msgid "folderproperties"
+msgstr "Својства фасцикле"
+
+msgid "parentfolder"
+msgstr "Над-фасцикла"
+
+msgid "location"
+msgstr "Локација"
+
+msgid "info"
+msgstr "Подаци"
+
+msgid "getfoldersize"
+msgstr "Кликните да добијете величину фасцикле"
+
+msgid "changesubscription"
+msgstr "Кликните да промените претплату"
+
+msgid "foldertype"
+msgstr "Тип фасцикле"
+
+msgid "personalfolder"
+msgstr "Лична фасцикла"
+
+msgid "otherfolder"
+msgstr "Фасцикла других корисникa"
+
+msgid "sharedfolder"
+msgstr "Јавна фасцикла"
+
+msgid "findfolders"
+msgstr "Нађи фасцикле"
+
+msgid "findcontacts"
+msgstr "Пронађи контакте"
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr "Лично"
+
+msgid "namespace.other"
+msgstr "Остали корисници"
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Поређај"
+
+msgid "sortasc"
+msgstr "растуће"
+
+msgid "sortdesc"
+msgstr "опадајуће"
+
+msgid "undo"
+msgstr "Поништи"
+
+msgid "installedplugins"
+msgstr "Инсталирани прикључци"
+
+msgid "plugin"
+msgstr "Прикључак"
+
+msgid "version"
+msgstr "Верзија"
+
+msgid "source"
+msgstr "Изворни код"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Лиценца"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Подршка"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Уникод"
+
+msgid "english"
+msgstr "енглески"
+
+msgid "westerneuropean"
+msgstr "западноевропски"
+
+msgid "easterneuropean"
+msgstr "источноевропски"
+
+msgid "southeasterneuropean"
+msgstr "југоисточна Европа"
+
+msgid "baltic"
+msgstr "балтички"
+
+msgid "cyrillic"
+msgstr "Ћирилица"
+
+msgid "arabic"
+msgstr "арапски"
+
+msgid "greek"
+msgstr "грчки"
+
+msgid "hebrew"
+msgstr "хебрејски"
+
+msgid "turkish"
+msgstr "турски"
+
+msgid "nordic"
+msgstr "нордијски"
+
+msgid "thai"
+msgstr "тајландски"
+
+msgid "celtic"
+msgstr "келтски"
+
+msgid "vietnamese"
+msgstr "вијетнамски"
+
+msgid "japanese"
+msgstr "јапански"
+
+msgid "korean"
+msgstr "корејски"
+
+msgid "chinese"
+msgstr "кинески"
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr "Унос претраге"
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr "Преглед поруке"
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr "Дијалог увоза поруке"
+
+msgid "arialabelmessagenav"
+msgstr "Навигација поруке"
+
+msgid "arialabelmessagebody"
+msgstr "Тело поруке"
+
+msgid "arialabelmessageactions"
+msgstr "Радње поруке"
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr "Заглавља поруке"
+
+msgid "arialabelforwardingoptions"
+msgstr "Опције прослеђивања"
+
+msgid "arialabelreplyalloptions"
+msgstr "Опције одговора свима"
+
+msgid "arialabelmoremessageactions"
+msgstr "Још радњи за поруку"
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Означи изабране поруке као..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Опције састављања"
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "Преглед прилога"
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr "Опције извоза контакта"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Опције адресара/групе"
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr "Појмови претраге"
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Стрелице лево/десно: скупљају/шире нит порука (само у нитном режиму).\n"
+"Ентер: отвара означену поруку.\n"
+"Delete: премешта изабране поруке у смеће."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Дошло је до грешке!"
+
+msgid "messages.loginfailed"
+msgstr "Неуспешно пријављивање"
+
+msgid "messages.cookiesdisabled"
+msgstr "Ваш прегледач не прихвата колачиће."
+
+msgid "messages.sessionerror"
+msgstr "Сесија није важећа или је истекла."
+
+msgid "messages.cookiesmismatch"
+msgstr "Откривено је неслагање колачића. Очистите колачиће из прегледача."
+
+msgid "messages.storageerror"
+msgstr "Неуспешно повезивање на складишни сервер."
+
+msgid "messages.servererror"
+msgstr "Грешка на серверу!"
+
+msgid "messages.servererrormsg"
+msgstr "Грешка на серверу: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Превише погрешних покушаја. Покушајте касније."
+
+msgid "messages.connerror"
+msgstr "Грешка везе (нисам приступио серверу)"
+
+msgid "messages.dberror"
+msgstr "Грешка базе података!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Искачући прозор је блокиран!"
+
+msgid "messages.requesttimedout"
+msgstr "Захтев је истекао"
+
+msgid "messages.errorreadonly"
+msgstr "Не могу да извршим радњу. Фасцикла је само за читање."
+
+msgid "messages.errornoperm"
+msgstr "Не могу да извршим радњу. Дозволе су одбијене."
+
+msgid "messages.erroroverquota"
+msgstr "Не могу да извршим радњу. Нема простора на диску."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Нема слободног простора на диску. Користите SHIFT+DEL за брисање поруке."
+
+msgid "messages.invalidrequest"
+msgstr "Неисправан захтев! Подаци нису сачувани."
+
+msgid "messages.invalidhost"
+msgstr "Неисправно име сервера."
+
+msgid "messages.nomessagesfound"
+msgstr "Немате порука у сандучету."
+
+msgid "messages.loggedout"
+msgstr "Успешно сте завршили сесију. Довиђења!"
+
+msgid "messages.mailboxempty"
+msgstr "Сандуче је празно"
+
+msgid "messages.nomessages"
+msgstr "Нема порука"
+
+msgid "messages.refreshing"
+msgstr "Освежавам..."
+
+msgid "messages.loading"
+msgstr "Учитавам..."
+
+msgid "messages.uploading"
+msgstr "Отпремам фајл..."
+
+msgid "messages.attaching"
+msgstr "Прилажем фајл..."
+
+msgid "messages.uploadingmany"
+msgstr "Отпремам фајлове..."
+
+msgid "messages.loadingdata"
+msgstr "Учитавам податке..."
+
+msgid "messages.checkingmail"
+msgstr "Проверавам нове поруке..."
+
+msgid "messages.sendingmessage"
+msgstr "Шаљем поруку..."
+
+msgid "messages.messagesent"
+msgstr "Порука је успешно послата."
+
+msgid "messages.savingmessage"
+msgstr "Уписујем поруку..."
+
+msgid "messages.messagesaved"
+msgstr "Порука сачувана у нацрте."
+
+msgid "messages.successfullysaved"
+msgstr "Успешно сачувано."
+
+msgid "messages.savingresponse"
+msgstr "Снимам текст одговора..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Заиста желите да обришете овај текст одговора?"
+
+msgid "messages.nocontactselected"
+msgstr "Још увек нисте изабрали контакт."
+
+msgid "messages.addedsuccessfully"
+msgstr "Контакт успешно додат у адресар."
+
+msgid "messages.contactexists"
+msgstr "Контакт са истом адресом већ постоји."
+
+msgid "messages.contactnameexists"
+msgstr "Контакт са истим именом већ постоји."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Због заштите приватности, слике са удаљених сервера су блокиране у овој "
+"поруци."
+
+msgid "messages.blockedresources"
+msgstr "Због заштите приватности, удаљени ресурси су блокирани."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Ова порука је шифрована и не може се приказати. Жао нам је!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Ово је шифрована порука и може се дешифровати са проширењем вашег "
+"прегледача."
+
+msgid "messages.nopubkeyfor"
+msgstr "Нема исправног јавног кључа за $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Нема исправног јавног кључа за ваш идентитет пошиљаоца. Желите ли да поруку "
+"шифрујете само за примаоце?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Већ одаслат прилог не може се шифровати. Додајте га поново у уређивач "
+"шифровања."
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"Желите ли да недостајуће кључеве потражите на серверима јавних кључева?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Нађени су следећи јавни кључеви:"
+
+msgid "messages.keyservererror"
+msgstr "Неуспело добављање кључа са сервера."
+
+msgid "messages.keyimportsuccess"
+msgstr "Јавни кључ $key успешно увезен."
+
+msgid "messages.nocontactsfound"
+msgstr "Нема контаката."
+
+msgid "messages.contactnotfound"
+msgstr "Тражени контакт није нађен."
+
+msgid "messages.contactsearchonly"
+msgstr "Користите форму претраге да видите контакте из изабраног адресара."
+
+msgid "messages.sendingfailed"
+msgstr "Грешка при слању поруке."
+
+msgid "messages.senttooquickly"
+msgstr "Сачекајте $sec сек. пре слања ове поруке."
+
+msgid "messages.errorsavingsent"
+msgstr "Десила се грешка при упису послате поруке."
+
+msgid "messages.errorsaving"
+msgstr "Десила се грешка при упису."
+
+msgid "messages.errormoving"
+msgstr "Не могу да преместим поруке."
+
+msgid "messages.errorcopying"
+msgstr "Не могу да копирам поруке."
+
+msgid "messages.errordeleting"
+msgstr "Не могу да обришем поруке."
+
+msgid "messages.errormarking"
+msgstr "Не могу да означим поруке."
+
+msgid "messages.alerttitle"
+msgstr "Пажња"
+
+msgid "messages.confirmationtitle"
+msgstr "Јесте ли сигурни..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Да ли заиста желите да обришете изабране контакте?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Да ли заиста желите да обришете изабрану групу?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Да ли заиста желите да обришете изабране поруке?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Да ли заиста желите да обришете ову фасциклу?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Да ли заиста желите да преместите ову фасциклу?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Да ли заиста желите да обришете све поруке у фасцикли?"
+
+msgid "messages.contactdeleting"
+msgstr "Бришем контакте..."
+
+msgid "messages.groupdeleting"
+msgstr "Бришем групу..."
+
+msgid "messages.folderdeleting"
+msgstr "Бришем фасциклу..."
+
+msgid "messages.foldermoving"
+msgstr "Премештам фасциклу..."
+
+msgid "messages.foldersubscribing"
+msgstr "Претплаћујем се на фасциклу..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Одјављујем претплату на фасциклу..."
+
+msgid "messages.formincomplete"
+msgstr "Образац није у целости попуњен."
+
+msgid "messages.noemailwarning"
+msgstr "Унесите исправну адресу е-поште."
+
+msgid "messages.nonamewarning"
+msgstr "Унесите име."
+
+msgid "messages.nopagesizewarning"
+msgstr "Унесите величину странице."
+
+msgid "messages.nosenderwarning"
+msgstr "Унесите е-адресу пошиљаоца."
+
+msgid "messages.recipientsadded"
+msgstr "Примаоци успешно додати."
+
+msgid "messages.norecipientwarning"
+msgstr "Унесите бар једног примаоца."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "Превише јавних корисика"
+
+msgid "messages.nosubjectwarning"
+msgstr "Поље „Наслов“ је празно. Желите ли да унесете наслов?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Нема теме"
+
+msgid "messages.nobodywarning"
+msgstr "Да ли желите да пошаљете поруку без текста?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Порука није послата и има несачуване измене. Желите ли да одбаците измене?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Нађена је порука претходно састављена али није послата.\\n\\nПредмет: "
+"$subject\\nСачувана: $date\\n\\nЖелите ли да вратите ову поруку?"
+
+msgid "messages.nosearchname"
+msgstr "Унесите име контакта или е-адресу."
+
+msgid "messages.notuploadedwarning"
+msgstr "Нису сви прилози отпремљени. Сачекајте или откажите отпремање."
+
+msgid "messages.searchsuccessful"
+msgstr "Пронађених порука: $nr"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Пронађено контаката: $nr"
+
+msgid "messages.searchnomatch"
+msgstr "Претрага није дала резултате."
+
+msgid "messages.searching"
+msgstr "Тражим..."
+
+msgid "messages.checking"
+msgstr "Проверавам..."
+
+msgid "messages.stillsearching"
+msgstr "И даље тражим..."
+
+msgid "messages.nospellerrors"
+msgstr "Нису нађене правописне грешке."
+
+msgid "messages.folderdeleted"
+msgstr "Фасцикла успешно обрисана."
+
+msgid "messages.foldersubscribed"
+msgstr "Фасцикла успешно претплаћена."
+
+msgid "messages.folderunsubscribed"
+msgstr "Фасцикла успешно одјављена са претплате."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Успешно обрисано."
+
+msgid "messages.converting"
+msgstr "Уклањам форматирања..."
+
+msgid "messages.messageopenerror"
+msgstr "Порука се не може учитати са сервера."
+
+msgid "messages.filelinkerror"
+msgstr "Прилагање фајла није успело."
+
+msgid "messages.fileuploaderror"
+msgstr "Неуспешно отпремање фајла."
+
+msgid "messages.csvfilemismatch"
+msgstr "Увоз више ЦСВ фајлова са различитим пољима није подржано."
+
+msgid "messages.filesizeerror"
+msgstr "Отпремљени фајл превазилази максимум од $size."
+
+msgid "messages.filecounterror"
+msgstr "Највише фајлова које можете послати одједном је $count"
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Не могу да приложим фајл. Максимална величина поруке од ($size) је "
+"прекорачена."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Ограничење величине поруке ($size) прекорачено. Број порука које нису "
+"приложене: $num."
+
+msgid "messages.copysuccess"
+msgstr "Успешно копирано $nr контаката."
+
+msgid "messages.movesuccess"
+msgstr "Успешно премештено $nr контаката."
+
+msgid "messages.copyerror"
+msgstr "Нисам могао да копирам ниједан контакт."
+
+msgid "messages.moveerror"
+msgstr "Нисам могао да преместим ниједан контакт."
+
+msgid "messages.sourceisreadonly"
+msgstr "Овај извор адресе је само за читање."
+
+msgid "messages.errorsavingcontact"
+msgstr "Не могу да сачувам адресу контакта."
+
+msgid "messages.movingmessage"
+msgstr "Премештам поруке..."
+
+msgid "messages.copyingmessage"
+msgstr "Копирам поруке..."
+
+msgid "messages.copyingcontact"
+msgstr "Копирам контакте..."
+
+msgid "messages.movingcontact"
+msgstr "Премештам контакт(е)..."
+
+msgid "messages.deletingmessage"
+msgstr "Бришем поруке..."
+
+msgid "messages.markingmessage"
+msgstr "Означавам поруке..."
+
+msgid "messages.addingmember"
+msgstr "Додајем контакте у групу..."
+
+msgid "messages.removingmember"
+msgstr "Уклањам контакте из групе..."
+
+msgid "messages.receiptsent"
+msgstr "Успешно послато обавештење о приспећу."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Неуспело слање обавештења о приспећу."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Заиста желите да обришете овај идентитет?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Не можете обрисати овај идентитет. Он је последњи."
+
+msgid "messages.forbiddencharacter"
+msgstr "Назив фасцикле садржи забрањени знак."
+
+msgid "messages.selectimportfile"
+msgstr "Изаберите фајл за отпремање.."
+
+msgid "messages.addresswriterror"
+msgstr "Изабрани адресар није уписив."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Контакти су успешно додати у групу."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Контакти су успешно уклоњени из групе."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Нису измењена задужења групе."
+
+msgid "messages.importwait"
+msgstr "Увозим, сачекајте..."
+
+msgid "messages.importformaterror"
+msgstr "Увоз није успео! Отпремљени фајл није исправан фајл увоза података."
+
+msgid "messages.importconfirm"
+msgstr "<b>Успешно увезено контаката: $inserted</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Успешно увезено $nr порука"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Увоз није успео! Отпремљени фајл није исправан фајл поруке или сандучета"
+
+msgid "messages.opnotpermitted"
+msgstr "Радња није дозвољена!"
+
+msgid "messages.nofromaddress"
+msgstr "У изабраном идентитету недостаје е-адреса."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Пребацивање типа уређивача може узроковати губитак форматирања текста. "
+"Желите ли да наставите?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Кобна грешка у постави. Контактирајте одмах вашег администратора. <b>Ваша "
+"порука се не може послати.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "СМТП грешка ($code): неуспешно повезивање на сервер."
+
+msgid "messages.smtpautherror"
+msgstr "СМТП грешка ($code): неуспешна аутентификација."
+
+msgid "messages.smtpfromerror"
+msgstr "СМТП грешка ($code): неуспешно постављање пошиљаоца \"$from\" ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "СМТП грешка ($code): неуспешно додавање примаоца \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "СМТП грешка ($code): није могуће рашчланити листу прималаца."
+
+msgid "messages.smtputf8error"
+msgstr "СМТП грешка: сервер не подржава Уникод у адресама е-поште."
+
+msgid "messages.smtpsizeerror"
+msgstr "СМТП грешка: порука прекорачује ограничење величине ($limit)"
+
+msgid "messages.smtperror"
+msgstr "СМТП грешка ($code): $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Неисправна е-адреса: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Превише прималаца. Смањите број прималаца на $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Број чланова групе прелази максимум од $max."
+
+msgid "messages.internalerror"
+msgstr "Десила се унутрашња грешка. Покушајте поново."
+
+msgid "messages.contactdelerror"
+msgstr "Не могу да обришем контакте."
+
+msgid "messages.contactdeleted"
+msgstr "Брисање контаката успешно."
+
+msgid "messages.contactrestoreerror"
+msgstr "Не могу да вратим обрисане контакте."
+
+msgid "messages.contactrestored"
+msgstr "Контакти су успешно враћени."
+
+msgid "messages.groupdeleted"
+msgstr "Група успешно обрисана."
+
+msgid "messages.grouprenamed"
+msgstr "Група успешно преименована."
+
+msgid "messages.groupcreated"
+msgstr "Група успешно направљена."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Сачувана претрага је успешно обрисана."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Не могу да обришем сачувану претрагу."
+
+msgid "messages.savedsearchcreated"
+msgstr "Успешно је сачувана претрага."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Не могу да сачувам претрагу."
+
+msgid "messages.messagedeleted"
+msgstr "Поруке су успешно обрисане."
+
+msgid "messages.messagemoved"
+msgstr "Поруке су успешно премештене."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Поруке успешно премештене у Смеће."
+
+msgid "messages.messagecopied"
+msgstr "Поруке су успешно копиране."
+
+msgid "messages.messagemarked"
+msgstr "Поруке су успешно означене."
+
+msgid "messages.autocompletechars"
+msgstr "За аутоматско довршавање унесите бар $min знака."
+
+msgid "messages.autocompletemore"
+msgstr "Више резултата се поклапа. Унесите још знакова."
+
+msgid "messages.namecannotbeempty"
+msgstr "Назив не може бити празан."
+
+msgid "messages.nametoolong"
+msgstr "Предугачак назив."
+
+msgid "messages.namedotforbidden"
+msgstr "Назив фасцикле не може почети тачком."
+
+msgid "messages.folderupdated"
+msgstr "Фасцикла успешно ажурирана."
+
+msgid "messages.foldercreated"
+msgstr "Фасцикла је успешно направљена."
+
+msgid "messages.invalidimageformat"
+msgstr "Није исправан формат слике."
+
+msgid "messages.mispellingsfound"
+msgstr "Уочене су правописне грешке у поруци."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Не могу да направим/преместим фасциклу у изабрану фасциклу. Нема дозволе "
+"приступа."
+
+msgid "messages.messagetoobig"
+msgstr "Део са поруком је превелик за обраду."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Овај прилог је сумњив јер се његов тип не поклапа са типом наведеним у "
+"поруци. Ако не верујете пошиљаоцу, не би требало да га отварате у прегледачу"
+" јер може имати малициозан садржај.<br/><br/><em>Очекивано: $expected; "
+"откривено: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Упозорење: ова поштанска услуга захтева Јава скрипт! Да бисте је користили, "
+"укључите Јава скрипт у поставкама вашег прегледача."
+
+msgid "messages.messageissent"
+msgstr ""
+"Порука је већ послата али није још сачувана. Желите ли да је сачувате сада?"
+
+msgid "messages.errnotfound"
+msgstr "Фајл није нађен"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Захтевани ресурс није нађен!"
+
+msgid "messages.errfailedrequest"
+msgstr "Неуспешан захтев"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Овлашћење није успело"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Нисам могао да проверим ваше овлашћење за приступ овом сервису!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Захтев за провером није успео"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Због ваше заштите, приступ овом ресурсу је обезбјеђен против ЦСРФ-а.\n"
+"Ако видите ово, вероватно се нисте одјавили пре напуштања веб апликације.\n"
+"\n"
+"Сада је потребна интеракција човека за наставак."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Контактирајте администратора вашег сервера."
+
+msgid "messages.clicktoresumesession"
+msgstr "Кликните овде да бисте наставили вашу претходну сесију"
+
+msgid "messages.errcomposesession"
+msgstr "Грешка сесије састављача"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Тражена сесија састављача није нађена."
+
+msgid "messages.clicktocompose"
+msgstr "Кликните овде да саставите нову поруку"
+
+msgid "messages.nosupporterror"
+msgstr "Ваш прегледач не подржава ову могућност."
+
+msgid "messages.siginserted"
+msgstr "Потпис успешно убачен."
+
+msgid "messages.responseinserted"
+msgstr "Одговор успешно убачен."
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr "Списак је празан."
+
+msgid "messages.listusebutton"
+msgstr "Користите дугме Направи да додате нови запис."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Нови пар кључева је успешно креиран за $identity."
+
+msgid "messages.emptyattachment"
+msgstr "Овај прилог делује празно.<br>Проверите са особом која га је послала."
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

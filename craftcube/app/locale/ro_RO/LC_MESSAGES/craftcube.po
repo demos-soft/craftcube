@@ -1,0 +1,2885 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Bine aţi venit la $product"
+
+msgid "username"
+msgstr "Utilizator"
+
+msgid "password"
+msgstr "Parolă"
+
+msgid "server"
+msgstr "Server"
+
+msgid "login"
+msgstr "Autentificare"
+
+msgid "oauthlogin"
+msgstr "Autentificare cu $provider"
+
+msgid "menu"
+msgstr "Meniu"
+
+msgid "logout"
+msgstr "Deconectare"
+
+msgid "mail"
+msgstr "E-Mail"
+
+msgid "settings"
+msgstr "Setări personale"
+
+msgid "addressbook"
+msgstr "Agendă"
+
+msgid "darkmode"
+msgstr "Mod întunecat"
+
+msgid "lightmode"
+msgstr "Mod luminos"
+
+msgid "inbox"
+msgstr "Primite"
+
+msgid "drafts"
+msgstr "Ciorne"
+
+msgid "sent"
+msgstr "Trimise"
+
+msgid "trash"
+msgstr "Gunoi"
+
+msgid "junk"
+msgstr "Spam"
+
+msgid "show_real_foldernames"
+msgstr "Arata numele reale pentru folderele speciale"
+
+msgid "subject"
+msgstr "Subiect"
+
+msgid "from"
+msgstr "Expeditor"
+
+msgid "sender"
+msgstr "Expeditor"
+
+msgid "to"
+msgstr "Destinatar"
+
+msgid "cc"
+msgstr "Copie (CC)"
+
+msgid "bcc"
+msgstr "Copie oarbă (BCC)"
+
+msgid "replyto"
+msgstr "Răspunde la"
+
+msgid "followupto"
+msgstr "Followup La"
+
+msgid "date"
+msgstr "Data"
+
+msgid "size"
+msgstr "Mărime"
+
+msgid "priority"
+msgstr "Prioritate"
+
+msgid "organization"
+msgstr "Organizaţie"
+
+msgid "readstatus"
+msgstr "Citit/Necitit"
+
+msgid "listoptions"
+msgstr "Listează opţiunile..."
+
+msgid "listoptionstitle"
+msgstr "Listează opţiuni"
+
+msgid "mailboxlist"
+msgstr "Dosare"
+
+msgid "messagesfromto"
+msgstr "Mesaje de la $from până la $to din $count"
+
+msgid "threadsfromto"
+msgstr "Grupuri de la $from până la $to din $count"
+
+msgid "messagenrof"
+msgstr "Mesajul $nr din $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to din $count"
+
+msgid "copy"
+msgstr "Copiază"
+
+msgid "move"
+msgstr "Mută"
+
+msgid "moveto"
+msgstr "Mută in..."
+
+msgid "copyto"
+msgstr "Copiază în..."
+
+msgid "download"
+msgstr "Descarcă"
+
+msgid "open"
+msgstr "Deschide"
+
+msgid "showattachment"
+msgstr "Arată"
+
+msgid "showanyway"
+msgstr "Arată oricum"
+
+msgid "filename"
+msgstr "Nume fişier"
+
+msgid "filesize"
+msgstr "Mărime fişier"
+
+msgid "addtoaddressbook"
+msgstr "Adaugă în agendă"
+
+msgid "sun"
+msgstr "Dum"
+
+msgid "mon"
+msgstr "Lun"
+
+msgid "tue"
+msgstr "Mar"
+
+msgid "wed"
+msgstr "Mie"
+
+msgid "thu"
+msgstr "Joi"
+
+msgid "fri"
+msgstr "Vin"
+
+msgid "sat"
+msgstr "Sâm"
+
+msgid "sunday"
+msgstr "Duminică"
+
+msgid "monday"
+msgstr "Luni"
+
+msgid "tuesday"
+msgstr "Marţi"
+
+msgid "wednesday"
+msgstr "Miercuri"
+
+msgid "thursday"
+msgstr "Joi"
+
+msgid "friday"
+msgstr "Vineri"
+
+msgid "saturday"
+msgstr "Sâmbătă"
+
+msgid "jan"
+msgstr "Ian"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "Mai"
+
+msgid "jun"
+msgstr "Iun"
+
+msgid "jul"
+msgstr "Iul"
+
+msgid "aug"
+msgstr "Aug"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Oct"
+
+msgid "nov"
+msgstr "Noi"
+
+msgid "dec"
+msgstr "Dec"
+
+msgid "longjan"
+msgstr "Ianuarie"
+
+msgid "longfeb"
+msgstr "Februarie"
+
+msgid "longmar"
+msgstr "Martie"
+
+msgid "longapr"
+msgstr "Aprilie"
+
+msgid "longmay"
+msgstr "Mai"
+
+msgid "longjun"
+msgstr "Iunie"
+
+msgid "longjul"
+msgstr "Iulie"
+
+msgid "longaug"
+msgstr "August"
+
+msgid "longsep"
+msgstr "Septembrie"
+
+msgid "longoct"
+msgstr "Octombrie"
+
+msgid "longnov"
+msgstr "Noiembrie"
+
+msgid "longdec"
+msgstr "Decembrie"
+
+msgid "today"
+msgstr "Astăzi"
+
+msgid "refresh"
+msgstr "Actualizează"
+
+msgid "checkmail"
+msgstr "Verifică mesaje noi"
+
+msgid "compose"
+msgstr "Scrie un mesaj"
+
+msgid "writenewmessage"
+msgstr "Scrie mesaj nou"
+
+msgid "reply"
+msgstr "Răspunde"
+
+msgid "replytomessage"
+msgstr "Răspunde expeditorului"
+
+msgid "replytoallmessage"
+msgstr "Răspunde la toţi"
+
+msgid "replyall"
+msgstr "Răspunde la toţi"
+
+msgid "replylist"
+msgstr "Răspunde listei"
+
+msgid "forward"
+msgstr "Înaintează"
+
+msgid "forwardinline"
+msgstr "Înaintează ca citat"
+
+msgid "forwardattachment"
+msgstr "Înaintează ca ataşament"
+
+msgid "forwardmessage"
+msgstr "Trimite mesajul mai departe"
+
+msgid "bouncemsg"
+msgstr "Retrimite (returnat)"
+
+msgid "bounce"
+msgstr "Retrimite"
+
+msgid "deletemessage"
+msgstr "Șterge mesajul"
+
+msgid "undeletemessage"
+msgstr "Anulează ștergere mesaj"
+
+msgid "movemessagetotrash"
+msgstr "Mută mesajul la gunoi"
+
+msgid "printmessage"
+msgstr "Listează mesajul"
+
+msgid "previousmessage"
+msgstr "Afişează mesajul anterior"
+
+msgid "firstmessage"
+msgstr "Afişează primul mesaj"
+
+msgid "nextmessage"
+msgstr "Afişează următorul mesaj"
+
+msgid "lastmessage"
+msgstr "Afişează ultimul mesaj"
+
+msgid "backtolist"
+msgstr "Înapoi la mesaje"
+
+msgid "viewsource"
+msgstr "Afişează sursa"
+
+msgid "mark"
+msgstr "Marchează"
+
+msgid "markmessages"
+msgstr "Marchează mesajele"
+
+msgid "markread"
+msgstr "Ca citit"
+
+msgid "markunread"
+msgstr "Ca necitit"
+
+msgid "markflagged"
+msgstr "Ca marcat"
+
+msgid "markunflagged"
+msgstr "Ca nemarcat"
+
+msgid "markundeleted"
+msgstr "Ca neșters"
+
+msgid "markasread"
+msgstr "Marchează ca citit"
+
+msgid "markasunread"
+msgstr "Marchează ca necitit"
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Mai multe acțiuni..."
+
+msgid "markallread"
+msgstr "Marchează tot ca citit"
+
+msgid "folders-cur"
+msgstr "Doar dosarul selectat"
+
+msgid "folders-sub"
+msgstr "Dosarul selectat și subdosarele acestuia"
+
+msgid "folders-all"
+msgstr "Toate dosarele"
+
+msgid "more"
+msgstr "Mai multe"
+
+msgid "back"
+msgstr "Înapoi"
+
+msgid "options"
+msgstr "Opţiuni"
+
+msgid "composeoptions"
+msgstr "Opțiuni compunere"
+
+msgid "optionsandattachments"
+msgstr "Opțiuni și atașamente"
+
+msgid "actions"
+msgstr "Acțiuni"
+
+msgid "first"
+msgstr "Primul"
+
+msgid "last"
+msgstr "Ultimul"
+
+msgid "previous"
+msgstr "Precedentul"
+
+msgid "next"
+msgstr "Următorul"
+
+msgid "select"
+msgstr "Selectează"
+
+msgid "selection"
+msgstr "Selecție"
+
+msgid "all"
+msgstr "Toate"
+
+msgid "none"
+msgstr "Niciunul"
+
+msgid "currpage"
+msgstr "Pagina curentă"
+
+msgid "isread"
+msgstr "Citit"
+
+msgid "unread"
+msgstr "Necitite"
+
+msgid "flagged"
+msgstr "Marcat"
+
+msgid "unflagged"
+msgstr "Nemarcat"
+
+msgid "unanswered"
+msgstr "Fără răspuns"
+
+msgid "withattachment"
+msgstr "Cu atașament"
+
+msgid "deleted"
+msgstr "Şterse"
+
+msgid "undeleted"
+msgstr "Nu a fost șters"
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr "Redirecționat"
+
+msgid "invert"
+msgstr "Inversează"
+
+msgid "filter"
+msgstr "Filtru"
+
+msgid "list"
+msgstr "Listă"
+
+msgid "threads"
+msgstr "Grupare după subiect"
+
+msgid "expand-all"
+msgstr "Extinde toate"
+
+msgid "expand-unread"
+msgstr "Extinde necitite"
+
+msgid "collapse-all"
+msgstr "Compactează toate"
+
+msgid "threaded"
+msgstr "Grupate"
+
+msgid "showunread"
+msgstr "Arată mesaje necitite"
+
+msgid "autoexpand_threads"
+msgstr "Extinde mesajele grupate"
+
+msgid "do_expand"
+msgstr "toate grupările"
+
+msgid "expand_only_unread"
+msgstr "doar pe cele cu mesaje necitite"
+
+msgid "fromto"
+msgstr "Expeditor/Destinatar"
+
+msgid "flag"
+msgstr "Marcaj"
+
+msgid "attachment"
+msgstr "Ataşament"
+
+msgid "nonesort"
+msgstr "Fără sortare"
+
+msgid "sentdate"
+msgstr "Data trimiterii"
+
+msgid "arrival"
+msgstr "Data primirii"
+
+msgid "asc"
+msgstr "ascendent"
+
+msgid "desc"
+msgstr "descendent"
+
+msgid "listcolumns"
+msgstr "Arată coloane"
+
+msgid "listsorting"
+msgstr "Sortează după"
+
+msgid "listorder"
+msgstr "Ordinea de sortare"
+
+msgid "listmode"
+msgstr "Mod de vizualizare"
+
+msgid "lmode"
+msgstr "Mod listă"
+
+msgid "layout"
+msgstr "Aspect"
+
+msgid "layoutwidescreen"
+msgstr "Ecran panoramic"
+
+msgid "layoutdesktop"
+msgstr "Desktop"
+
+msgid "layoutlist"
+msgstr "Listă"
+
+msgid "layoutwidescreendesc"
+msgstr "Ecran panoramic (vizualizare pe 3 coloane)"
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr "Listă (fără previzualizare mail)"
+
+msgid "folderactions"
+msgstr "Acțiuni dosar..."
+
+msgid "compact"
+msgstr "Compactează"
+
+msgid "empty"
+msgstr "Goleşte"
+
+msgid "importmessages"
+msgstr "Import mesaje"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Spaţiu folosit"
+
+msgid "unknown"
+msgstr "necunoscut"
+
+msgid "unlimited"
+msgstr "nelimitat"
+
+msgid "quotatype"
+msgstr "Tip cotă"
+
+msgid "quotatotal"
+msgstr "Limită"
+
+msgid "quotaused"
+msgstr "Folosit"
+
+msgid "quotastorage"
+msgstr "Spațiu disc"
+
+msgid "quotamessage"
+msgstr "Număr mesaje"
+
+msgid "shortheaderdate"
+msgstr "În $date"
+
+msgid "shortheaderto"
+msgstr "Către $to în $date"
+
+msgid "shortheaderfrom"
+msgstr "De la $from în $date"
+
+msgid "quicksearch"
+msgstr "Căutare rapidă"
+
+msgid "searchplaceholder"
+msgstr "Caută..."
+
+msgid "resetsearch"
+msgstr "Anulează căutarea"
+
+msgid "searchmod"
+msgstr "Parametrii de căutare"
+
+msgid "msgtext"
+msgstr "Tot mesajul"
+
+msgid "body"
+msgstr "Corp"
+
+msgid "type"
+msgstr "Tip"
+
+msgid "namex"
+msgstr "Nume"
+
+msgid "searchscope"
+msgstr "Scop"
+
+msgid "currentfolder"
+msgstr "Dosarul curent"
+
+msgid "subfolders"
+msgstr "Acesta și sub-folderele"
+
+msgid "allfolders"
+msgstr "Toate dosarele"
+
+msgid "searchinterval-1W"
+msgstr "mai vechi de o săptămână"
+
+msgid "searchinterval-1M"
+msgstr "mai vechi de o lună"
+
+msgid "searchinterval-1Y"
+msgstr "mai vechi de un an"
+
+msgid "searchinterval1W"
+msgstr "mai nou de o săptămână"
+
+msgid "searchinterval1M"
+msgstr "mai nou de o lună"
+
+msgid "searchinterval1Y"
+msgstr "mai nou de un an"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Deschide în fereastră nouă"
+
+msgid "emlsave"
+msgstr "Salvează în format .eml"
+
+msgid "changeformattext"
+msgstr "Afișează în format text"
+
+msgid "changeformathtml"
+msgstr "Afișează în format HTML"
+
+msgid "editasnew"
+msgstr "Editează ca nou"
+
+msgid "send"
+msgstr "Trimite"
+
+msgid "sendmessage"
+msgstr "Trimite mesaj"
+
+msgid "savemessage"
+msgstr "Salvează ciornă"
+
+msgid "addattachment"
+msgstr "Ataşează fişier"
+
+msgid "charset"
+msgstr "Set de caractere"
+
+msgid "editortype"
+msgstr "Tip de editor"
+
+msgid "returnreceipt"
+msgstr "Returnează confirmare de primire"
+
+msgid "dsn"
+msgstr "Notificare despre starea trimiterii"
+
+msgid "keepformatting"
+msgstr "Păstrează formatarea"
+
+msgid "mailreplyintro"
+msgstr "În $date, $sender a scris:"
+
+msgid "originalmessage"
+msgstr "Mesaj original"
+
+msgid "selectimage"
+msgstr "Alege imagine"
+
+msgid "addimage"
+msgstr "Adaugă imagine"
+
+msgid "selectmedia"
+msgstr "Alege videoclip"
+
+msgid "addmedia"
+msgstr "Adaugă videoclip"
+
+msgid "encrypt"
+msgstr "Criptează"
+
+msgid "encryptmessage"
+msgstr "Criptează mesaj"
+
+msgid "encryptmessagemailvelope"
+msgstr "Criptează mesajul cu Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Importă chei publice"
+
+msgid "encryptedsendialog"
+msgstr "Se trimite mesaj criptat"
+
+msgid "encryptandsign"
+msgstr "Criptare și semn"
+
+msgid "keyid"
+msgstr "ID Cheie"
+
+msgid "keylength"
+msgstr "Biți"
+
+msgid "keyexpired"
+msgstr "Expirat"
+
+msgid "keyrevoked"
+msgstr "Revocat"
+
+msgid "bccinstead"
+msgstr "Folosește Bcc"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Inserează"
+
+msgid "insertcontact"
+msgstr "Introdu contact(e)"
+
+msgid "recipient"
+msgstr "Destinatar"
+
+msgid "recipientedit"
+msgstr "Editare destinatar"
+
+msgid "editidents"
+msgstr "Editează identităţi"
+
+msgid "spellcheck"
+msgstr "Ortografie"
+
+msgid "checkspelling"
+msgstr "Verifică ortografie"
+
+msgid "resumeediting"
+msgstr "Reia editarea"
+
+msgid "revertto"
+msgstr "Revino la"
+
+msgid "restore"
+msgstr "Restaurează"
+
+msgid "restoremessage"
+msgstr "Restaurezi mesajul?"
+
+msgid "ignore"
+msgstr "Ignoră"
+
+msgid "responses"
+msgstr "Răspunsuri"
+
+msgid "insertresponse"
+msgstr "Adaugă un răspuns"
+
+msgid "manageresponses"
+msgstr "Administrează răspunsurile"
+
+msgid "newresponse"
+msgstr "Creează răspuns nou"
+
+msgid "addresponse"
+msgstr "Adaugă răspuns"
+
+msgid "editresponse"
+msgstr "Modifică răspunsul"
+
+msgid "editresponses"
+msgstr "Modifică răspunsurile"
+
+msgid "responsename"
+msgstr "Nume"
+
+msgid "responsetext"
+msgstr "Textul răspunsului"
+
+msgid "attach"
+msgstr "Ataşează"
+
+msgid "attachments"
+msgstr "Ataşamente"
+
+msgid "upload"
+msgstr "Încarcă"
+
+msgid "uploadprogress"
+msgstr "$percent ($current din $total)"
+
+msgid "close"
+msgstr "Închide"
+
+msgid "messageoptions"
+msgstr "Opţiuni mesaj..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr "Redenumește atașament"
+
+msgid "low"
+msgstr "Mică"
+
+msgid "lowest"
+msgstr "Cea mai mică"
+
+msgid "normal"
+msgstr "Normală"
+
+msgid "high"
+msgstr "Mare"
+
+msgid "highest"
+msgstr "Cea mai mare"
+
+msgid "nosubject"
+msgstr "(fără subiect)"
+
+msgid "showimages"
+msgstr "Afişează imagini"
+
+msgid "allow"
+msgstr "Permite"
+
+msgid "alwaysshow"
+msgstr "Afişează întotdeauna imaginile de la $sender"
+
+msgid "alwaysallow"
+msgstr "Permite întotdeauna de la $sender"
+
+msgid "isdraft"
+msgstr "Acest mesaj este o ciornă."
+
+msgid "andnmore"
+msgstr "$nr mai multe..."
+
+msgid "details"
+msgstr "Detalii"
+
+msgid "summary"
+msgstr "Rezumat"
+
+msgid "headers"
+msgstr "Antete"
+
+msgid "allheaders"
+msgstr "Toate anteturile"
+
+msgid "togglemoreheaders"
+msgstr "Arată mai mult din antet"
+
+msgid "togglefullheaders"
+msgstr "Arată mai puțin din antet"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Text simplu"
+
+msgid "savesentmessagein"
+msgstr "Salvează mesajele trimise în"
+
+msgid "dontsave"
+msgstr "Nu salva"
+
+msgid "maxuploadsize"
+msgstr "Mărimea maxim admisă a fişierului este $size"
+
+msgid "addcc"
+msgstr "Adaugă CC"
+
+msgid "addbcc"
+msgstr "Adaugă BCC"
+
+msgid "addreplyto"
+msgstr "Adaugă Raspunde-La"
+
+msgid "addfollowupto"
+msgstr "Adaugă Followup-La"
+
+msgid "sendreceipt"
+msgstr "Trimiți confirmare de citire?"
+
+msgid "mdnrequest"
+msgstr ""
+"Expeditorul acestui mesaj a solicitat să fie notificat la cititrea "
+"mesajului. Doriţi să notificaţi expeditorul?"
+
+msgid "receiptread"
+msgstr "Returnează confirmare (citit)"
+
+msgid "yourmessage"
+msgstr "Aceasta este o confirmare de primire a mesajului dumneavoastră."
+
+msgid "receiptnote"
+msgstr ""
+"Notă: Această confirmare doar vă informează că mesajul a fost afişat pe "
+"calculatorul destinatarului. Nu există nici o garanţie că destinatarul a "
+"citit sau a inţeles conţinutul mesajului."
+
+msgid "sendalwaysto"
+msgstr "Trimite întotdeauna către $email"
+
+msgid "zoomin"
+msgstr "Mărește"
+
+msgid "zoomout"
+msgstr "Micșorează"
+
+msgid "rotate"
+msgstr "Rotește"
+
+msgid "increaseimage"
+msgstr "Mărește dimensiune imagine"
+
+msgid "decreaseimage"
+msgstr "Micșorează dimensiune imagine"
+
+msgid "rotateimage"
+msgstr "Rotește imagine"
+
+msgid "showtools"
+msgstr "Arată instrumente imagine"
+
+msgid "hidetools"
+msgstr "Ascunde instrumente imagine"
+
+msgid "name"
+msgstr "Numele Contact"
+
+msgid "firstname"
+msgstr "Nume"
+
+msgid "surname"
+msgstr "Prenume"
+
+msgid "middlename"
+msgstr "Iniţiala tatălui"
+
+msgid "nameprefix"
+msgstr "Prefix"
+
+msgid "namesuffix"
+msgstr "Sufix"
+
+msgid "nickname"
+msgstr "Poreclă"
+
+msgid "jobtitle"
+msgstr "Funcția"
+
+msgid "department"
+msgstr "Departament"
+
+msgid "gender"
+msgstr "Sex"
+
+msgid "maidenname"
+msgstr "Nume de fată"
+
+msgid "email"
+msgstr "E-Mail"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Adresă"
+
+msgid "street"
+msgstr "Strada"
+
+msgid "locality"
+msgstr "Oraș"
+
+msgid "zipcode"
+msgstr "Cod poştal"
+
+msgid "region"
+msgstr "Stat/Judeţ"
+
+msgid "country"
+msgstr "Țara"
+
+msgid "birthday"
+msgstr "Ziua de naştere:"
+
+msgid "anniversary"
+msgstr "Aniversare"
+
+msgid "website"
+msgstr "Pagină web"
+
+msgid "instantmessenger"
+msgstr "IM (Mesaj Instant)"
+
+msgid "notes"
+msgstr "Notițe"
+
+msgid "male"
+msgstr "masculin"
+
+msgid "female"
+msgstr "feminin"
+
+msgid "nonbinary"
+msgstr "non-binar"
+
+msgid "othergender"
+msgstr "altele"
+
+msgid "manager"
+msgstr "Manager"
+
+msgid "assistant"
+msgstr "Asistent"
+
+msgid "spouse"
+msgstr "Soț/soție"
+
+msgid "allfields"
+msgstr "Toate câmpurile"
+
+msgid "search"
+msgstr "Căutare"
+
+msgid "searchresult"
+msgstr "Rezultate căutare"
+
+msgid "advsearch"
+msgstr "Căutare avansată"
+
+msgid "advanced"
+msgstr "Avansat"
+
+msgid "other"
+msgstr "Altele"
+
+msgid "printcontact"
+msgstr "Imprimă contact"
+
+msgid "qrcode"
+msgstr "Cod QR"
+
+msgid "typehome"
+msgstr "Acasă"
+
+msgid "typework"
+msgstr "Serviciu"
+
+msgid "typeother"
+msgstr "Altele"
+
+msgid "typemobile"
+msgstr "Mobil"
+
+msgid "typemain"
+msgstr "Principal"
+
+msgid "typehomefax"
+msgstr "Fax acasă"
+
+msgid "typeworkfax"
+msgstr "Fax serviciu"
+
+msgid "typecar"
+msgstr "Mașină"
+
+msgid "typepager"
+msgstr "Pager"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Asistent"
+
+msgid "typehomepage"
+msgstr "Pagină de pornire"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Adaugă câmp..."
+
+msgid "addcontact"
+msgstr "Adaugă contact"
+
+msgid "editcontact"
+msgstr "Modifică contact"
+
+msgid "contacts"
+msgstr "Contacte"
+
+msgid "contactproperties"
+msgstr "Proprietăţile contactului..."
+
+msgid "contactnameandorg"
+msgstr "Nume și Organizație"
+
+msgid "personalinfo"
+msgstr "Informații personale"
+
+msgid "personal"
+msgstr "Personal"
+
+msgid "contactphoto"
+msgstr "Poză contact"
+
+msgid "edit"
+msgstr "Editează"
+
+msgid "cancel"
+msgstr "Renunţă"
+
+msgid "save"
+msgstr "Salvează"
+
+msgid "delete"
+msgstr "Şterge"
+
+msgid "discard"
+msgstr "Renunță"
+
+msgid "continue"
+msgstr "Continuă"
+
+msgid "ok"
+msgstr "Ok"
+
+msgid "rename"
+msgstr "Redenumeşte"
+
+msgid "addphoto"
+msgstr "Adaugă"
+
+msgid "replacephoto"
+msgstr "Înlocuiește"
+
+msgid "uploadphoto"
+msgstr "Încarcă imagine"
+
+msgid "choosefile"
+msgstr "Alege fișier..."
+
+msgid "choosefiles"
+msgstr "Alege fișiere..."
+
+msgid "browse"
+msgstr "Răsfoiește"
+
+msgid "newcontact"
+msgstr "Creează contact nou"
+
+msgid "deletecontact"
+msgstr "Şterge contactul selectat"
+
+msgid "composeto"
+msgstr "Compune e-mail pentru"
+
+msgid "contactsfromto"
+msgstr "Contacte de la $from până la $to din $count"
+
+msgid "print"
+msgstr "Listează"
+
+msgid "export"
+msgstr "Exportă"
+
+msgid "exportall"
+msgstr "Exportă tot"
+
+msgid "exportsel"
+msgstr "Exportă partea selectată"
+
+msgid "exportvcards"
+msgstr "Exportă contactele în format vCard"
+
+msgid "newgroup"
+msgstr "Creează grup nou"
+
+msgid "addgroup"
+msgstr "Adaugă grup"
+
+msgid "grouprename"
+msgstr "Redenumește grupul"
+
+msgid "groupdelete"
+msgstr "Șterge grupul"
+
+msgid "groupassign"
+msgstr "Atribuie la grup..."
+
+msgid "groupremove"
+msgstr "Înlătură de la grup"
+
+msgid "groupremoveselected"
+msgstr "Șterge contactele selectate din grup"
+
+msgid "uponelevel"
+msgstr "Mai sus cu un nivel"
+
+msgid "previouspage"
+msgstr "Pagina anterioară"
+
+msgid "firstpage"
+msgstr "Prima pagină"
+
+msgid "nextpage"
+msgstr "Pagina următoare"
+
+msgid "lastpage"
+msgstr "Ultima pagină"
+
+msgid "group"
+msgstr "Grup"
+
+msgid "groups"
+msgstr "Grupuri"
+
+msgid "listgroup"
+msgstr "Lista membrii grupului"
+
+msgid "personaladrbook"
+msgstr "Adrese personale"
+
+msgid "searchsave"
+msgstr "Salvează căutarea"
+
+msgid "searchdelete"
+msgstr "Şterge căutarea"
+
+msgid "import"
+msgstr "Importă"
+
+msgid "importcontacts"
+msgstr "Importă contacte"
+
+msgid "importfromfile"
+msgstr "Importă din fișier"
+
+msgid "importtarget"
+msgstr "Adaugă contactele la"
+
+msgid "importreplace"
+msgstr "Înlocuieşte întreaga agendă"
+
+msgid "importgroups"
+msgstr "Importă atribuirile în grup"
+
+msgid "importgroupsall"
+msgstr "Toate (creează grupurile dacă este necesar)"
+
+msgid "importgroupsexisting"
+msgstr "Doar pentru grupurile existente"
+
+msgid "importdesc"
+msgstr ""
+"Poți încărca contacte dintr-o agendă de adrese existentă.<br/>Momentan "
+"acceptăm importarea adreselor din formatul de date <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> sau CSV (separate "
+"prin virgulă)."
+
+msgid "importmapdesc"
+msgstr ""
+"Confirmă că informațiile de mapare a câmpurilor de mai jos sunt corecte "
+"înainte de a continua cu importul de date CSV (separate prin virgulă)."
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Finalizat"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Setări pentru"
+
+msgid "about"
+msgstr "Despre"
+
+msgid "preferences"
+msgstr "Preferinţe"
+
+msgid "userpreferences"
+msgstr "Preferinţe utilizator"
+
+msgid "editpreferences"
+msgstr "Modifică preferinţe utilizator"
+
+msgid "identities"
+msgstr "Identităţi"
+
+msgid "manageidentities"
+msgstr "Administrează identități"
+
+msgid "newidentity"
+msgstr "Creează identitate nouă"
+
+msgid "addidentity"
+msgstr "Adaugă identitate"
+
+msgid "editidentity"
+msgstr "Modifică identitate"
+
+msgid "identityencryption"
+msgstr "Criptare"
+
+msgid "preferhtml"
+msgstr "Format HTML"
+
+msgid "defaultcharset"
+msgstr "Set implicit de caractere"
+
+msgid "htmlmessage"
+msgstr "Mesaj HTML"
+
+msgid "messagepart"
+msgstr "Parte"
+
+msgid "digitalsig"
+msgstr "Semnătură digitală"
+
+msgid "dateformat"
+msgstr "Format dată"
+
+msgid "timeformat"
+msgstr "Format oră"
+
+msgid "prettydate"
+msgstr "Dată formatată"
+
+msgid "setdefault"
+msgstr "Setează implicit"
+
+msgid "autodetect"
+msgstr "Automat"
+
+msgid "language"
+msgstr "Limba"
+
+msgid "timezone"
+msgstr "Fus orar"
+
+msgid "pagesize"
+msgstr "Rânduri pe pagină"
+
+msgid "signature"
+msgstr "Semnătură"
+
+msgid "dstactive"
+msgstr "Reglare ora de vară"
+
+msgid "showinextwin"
+msgstr "Deschide mesajul în fereastră nouă"
+
+msgid "composeextwin"
+msgstr "Compune mesajul în fereastră nouă"
+
+msgid "htmleditor"
+msgstr "Scrie mesaje HTML"
+
+msgid "htmlonreply"
+msgstr "la răspunsul doar către un mesaj HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "la trimitere mai departe sau la răspuns la mesaj HTML"
+
+msgid "htmlsignature"
+msgstr "Semnatură HTML"
+
+msgid "showemail"
+msgstr "Arată adresa email alături de nume afișat"
+
+msgid "previewpane"
+msgstr "Previzualizare mail"
+
+msgid "skin"
+msgstr "Temă interfaţă"
+
+msgid "logoutclear"
+msgstr "Goleşte Coşul de Gunoi la deconectare"
+
+msgid "logoutcompact"
+msgstr "Compactează dosarul Primite la deconectare"
+
+msgid "uisettings"
+msgstr "Interfaţă utilizator"
+
+msgid "serversettings"
+msgstr "Configuraţii server"
+
+msgid "mailboxview"
+msgstr "Afişare căsuţă poştală"
+
+msgid "mdnrequests"
+msgstr "Notificări expeditor"
+
+msgid "askuser"
+msgstr "întreabă-mă"
+
+msgid "autosend"
+msgstr "trimite automat"
+
+msgid "autosendknown"
+msgstr ""
+"trimite confirmarea de primire către contactele mele, în rest întreabă-mă"
+
+msgid "autosendknownignore"
+msgstr "trimite confirmarea de primire către contactele mele, în rest ignoră"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "ignoră solicitare"
+
+msgid "readwhendeleted"
+msgstr "Marchează mesajul ca citit la ştergere"
+
+msgid "flagfordeletion"
+msgstr "Marchează mesajul pentru ştergere în loc de a-l şterge direct"
+
+msgid "skipdeleted"
+msgstr "Nu arăta mesajele şterse"
+
+msgid "deletealways"
+msgstr "Dacă mutarea mesajelor în Coş eşuează, șterge-le"
+
+msgid "deletejunk"
+msgstr "Șterge direct mesajele în Junk"
+
+msgid "showremoteimages"
+msgstr "Arată imaginile care nu fac parte din e-mail"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "de la expeditori cunoscuţi"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "întotdeauna"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "Arată imaginile ataşate sub mesaj"
+
+msgid "autosavedraft"
+msgstr "Salvează ciorna automat"
+
+msgid "everynminutes"
+msgstr "la fiecare $n minut(e)"
+
+msgid "refreshinterval"
+msgstr "Actualizare (verificare mesaje noi, etc.)"
+
+msgid "never"
+msgstr "niciodată"
+
+msgid "immediately"
+msgstr "imediat"
+
+msgid "messagesdisplaying"
+msgstr "Afişarea mesajelor"
+
+msgid "messagescomposition"
+msgstr "Compunerea mesajelor"
+
+msgid "mimeparamfolding"
+msgstr "Nume ataşamente"
+
+msgid "2231folding"
+msgstr "RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "RFC 2047 (Altele)"
+
+msgid "force7bit"
+msgstr "Foloseşte encodarea MIME pentru caracterele cu 8 biţi"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Opţiuni avansate"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "Focalizare pe fereastra browser-ului la mesaje noi"
+
+msgid "checkallfolders"
+msgstr "Verifică toate dosarele pentru mesaje noi"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "Font-ul implicit al mesajului HTML"
+
+msgid "mainoptions"
+msgstr "Opţiuni principale"
+
+msgid "browseroptions"
+msgstr "Opțiuni browser"
+
+msgid "section"
+msgstr "Secţiune"
+
+msgid "maintenance"
+msgstr "Mentenanţă"
+
+msgid "newmessage"
+msgstr "Mesaj nou"
+
+msgid "signatureoptions"
+msgstr "Opţiuni semnătură"
+
+msgid "whenreplying"
+msgstr "Când răspundeţi"
+
+msgid "replyempty"
+msgstr "nu cita mesajul original"
+
+msgid "replytopposting"
+msgstr "începeţi mesajul nou deasupra originalului"
+
+msgid "replytoppostingnoindent"
+msgstr "Porniți un mesaj nou deasupra citatului (fără indentare)"
+
+msgid "replybottomposting"
+msgstr "începeţi mesajul nou dedesubtul originalului"
+
+msgid "replyremovesignature"
+msgstr "Când răspundeţi, se şterge semnătura originală din mesaj"
+
+msgid "autoaddsignature"
+msgstr "Adăugarea automată a semnăturii"
+
+msgid "newmessageonly"
+msgstr "numai la mesajele noi"
+
+msgid "replyandforwardonly"
+msgstr "numai la răspunsuri si cele trimise mai departe"
+
+msgid "insertsignature"
+msgstr "Introduce o semnătură"
+
+msgid "sigbelow"
+msgstr "Plasați semnătura sub mesajul citat"
+
+msgid "sigseparator"
+msgstr "Forțează separator standard în semnături"
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "după $n secunde"
+
+msgid "reqmdn"
+msgstr "Cere întotdeauna o confirmare de primire"
+
+msgid "reqdsn"
+msgstr "Cere întotdeauna o notificare a stării de trimitere"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Pune răspunsurile în folder-ul mesajului la care se răspunde"
+
+msgid "defaultabook"
+msgstr "Agenda implicită"
+
+msgid "autocompletesingle"
+msgstr "Sari peste adresele e-mail alternative la autocompletare"
+
+msgid "listnamedisplay"
+msgstr "Listează contactele ca"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Verifică ortografia înainte de a trimite un mesaj"
+
+msgid "spellcheckoptions"
+msgstr "Opţiuni verificare ortografie"
+
+msgid "spellcheckignoresyms"
+msgstr "Ignoră cuvintele cu simboluri"
+
+msgid "spellcheckignorenums"
+msgstr "Ignoră cuvintele cu numere"
+
+msgid "spellcheckignorecaps"
+msgstr "Ignoră cuvintele din litere mari"
+
+msgid "addtodict"
+msgstr "Adaugă la dicţionar"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Îregistrează handler protocol pentru mailto: link-uri"
+
+msgid "standardwindows"
+msgstr "Trateaza popupsurile ca ferestre standard"
+
+msgid "forwardmode"
+msgstr "Trimitere mai departe mesaj"
+
+msgid "inline"
+msgstr "într-e linii"
+
+msgid "asattachment"
+msgstr "ca atașament"
+
+msgid "replyallmode"
+msgstr "Acțiunea implicită pentru butonul [Răspunde la toți]"
+
+msgid "replyalldefault"
+msgstr "răspunde la toți"
+
+msgid "replyalllist"
+msgstr "răspunde listei (dacă este găsită)"
+
+msgid "allmessages"
+msgstr "toate mesajele"
+
+msgid "olderxdays"
+msgstr "mai vechi de $x zile"
+
+msgid "folder"
+msgstr "Dosar"
+
+msgid "folders"
+msgstr "Dosare"
+
+msgid "foldername"
+msgstr "Nume dosar"
+
+msgid "subscribed"
+msgstr "Înscris"
+
+msgid "messagecount"
+msgstr "Mesaje"
+
+msgid "create"
+msgstr "Creează"
+
+msgid "createfolder"
+msgstr "Creează dosar nou"
+
+msgid "managefolders"
+msgstr "Administrează dosare"
+
+msgid "specialfolders"
+msgstr "Dosare speciale"
+
+msgid "properties"
+msgstr "Proprietăți"
+
+msgid "folderproperties"
+msgstr "Proprietăţile folder-ului"
+
+msgid "parentfolder"
+msgstr "Dosar părinte"
+
+msgid "location"
+msgstr "Locație"
+
+msgid "info"
+msgstr "Informații"
+
+msgid "getfoldersize"
+msgstr "Click pentru dimensiunea dosarului"
+
+msgid "changesubscription"
+msgstr "Click pentru a modifica abonarea"
+
+msgid "foldertype"
+msgstr "Tip dosar"
+
+msgid "personalfolder"
+msgstr "Dosar privat"
+
+msgid "otherfolder"
+msgstr "Dosarul altui utilizator"
+
+msgid "sharedfolder"
+msgstr "Dosar public"
+
+msgid "findfolders"
+msgstr "Găsește dosare"
+
+msgid "findcontacts"
+msgstr "Găsește contacte"
+
+msgid "findmail"
+msgstr "Găsește mesaje"
+
+msgid "namespace.personal"
+msgstr "Personal"
+
+msgid "namespace.other"
+msgstr "Alți utilizatori"
+
+msgid "namespace.shared"
+msgstr "Partajat"
+
+msgid "dualuselabel"
+msgstr "Poate conține doar"
+
+msgid "dualusemail"
+msgstr "mesaje"
+
+msgid "dualusefolder"
+msgstr "dosare"
+
+msgid "generate"
+msgstr "Generează"
+
+msgid "encryptioncreatekey"
+msgstr "Creează cheie pereche nouă"
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "Criptare"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr "Activat"
+
+msgid "sortby"
+msgstr "Sortează după"
+
+msgid "sortasc"
+msgstr "Sortează ascendent"
+
+msgid "sortdesc"
+msgstr "Sortează descendent"
+
+msgid "undo"
+msgstr "Anulaţi/Revocați"
+
+msgid "installedplugins"
+msgstr "Instalare module"
+
+msgid "plugin"
+msgstr "Plugin"
+
+msgid "version"
+msgstr "Versiune"
+
+msgid "source"
+msgstr "Sursă"
+
+msgid "destination"
+msgstr "Destinație"
+
+msgid "license"
+msgstr "Licență"
+
+msgid "skinauthor"
+msgstr "de $author"
+
+msgid "support"
+msgstr "Cere asistenţă"
+
+msgid "savedsearches"
+msgstr "Căutări salvate"
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "O"
+
+msgid "KB"
+msgstr "KO"
+
+msgid "MB"
+msgstr "MO"
+
+msgid "GB"
+msgstr "GO"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Englezesc"
+
+msgid "westerneuropean"
+msgstr "Europa de Vest"
+
+msgid "easterneuropean"
+msgstr "Europa de Est"
+
+msgid "southeasterneuropean"
+msgstr "Europa de Sud-Est"
+
+msgid "baltic"
+msgstr "Baltic"
+
+msgid "cyrillic"
+msgstr "Chirilic"
+
+msgid "arabic"
+msgstr "Arab"
+
+msgid "greek"
+msgstr "Grecesc"
+
+msgid "hebrew"
+msgstr "Evreiesc"
+
+msgid "turkish"
+msgstr "Turcesc"
+
+msgid "nordic"
+msgstr "Ţările Nordice"
+
+msgid "thai"
+msgstr "Tailandez"
+
+msgid "celtic"
+msgstr "Celtic"
+
+msgid "vietnamese"
+msgstr "Vietnamez"
+
+msgid "japanese"
+msgstr "Japonez"
+
+msgid "korean"
+msgstr "Coreean"
+
+msgid "chinese"
+msgstr "Chinezesc"
+
+msgid "arialabeltopnav"
+msgstr "Controlul ferestrelor"
+
+msgid "arialabeltasknav"
+msgstr "Sarcini aplicații"
+
+msgid "arialabeltoolbar"
+msgstr "Bară instrumente aplicații"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "Sarcină activă"
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr "Formulare căutare mesaj email"
+
+msgid "arialabelcontactsearchform"
+msgstr "Formular căutare contacte"
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr "Formular căutare dosar"
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr "Previzualizare mesaj"
+
+msgid "arialabelmailboxmenu"
+msgstr "Meniu acțiuni dosar"
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr "Corp mesaj"
+
+msgid "arialabelmessageactions"
+msgstr "Acțiuni mesaj"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Formular căutare contacte"
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr "Antete mesaj"
+
+msgid "arialabelforwardingoptions"
+msgstr "Opțiuni redirecționare"
+
+msgid "arialabelreplyalloptions"
+msgstr "Opțiuni Răspunde la toți"
+
+msgid "arialabelmoremessageactions"
+msgstr "Mai multe acțiuni mesaj"
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Marchează mesajele selectate ca și..."
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr "Formular încărcare atașament"
+
+msgid "arialabelattachmentmenu"
+msgstr "Opțiuni atașament"
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "Previzualizare atașament"
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr "Opțiuni export contact"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Opțiuni Agendă/Grup"
+
+msgid "arialabelpreferencesform"
+msgstr "Formular preferințe"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Formular modificare identitate"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Formular modificare răspuns"
+
+msgid "arialabelsearchterms"
+msgstr "Termenii căutării"
+
+msgid "arialabeldropactionmenu"
+msgstr "Meniu acțiune Drag-n-Drop"
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "A avut loc o EROARE!"
+
+msgid "messages.loginfailed"
+msgstr "Autentificare eşuată"
+
+msgid "messages.cookiesdisabled"
+msgstr "Browserul dumneavoastră nu acceptă cookies"
+
+msgid "messages.sessionerror"
+msgstr "Sesiunea dumneavoastră este invalidă sau a expirat"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "Conectarea la serverul IMAP a eşuat"
+
+msgid "messages.servererror"
+msgstr "Eroare de server!"
+
+msgid "messages.servererrormsg"
+msgstr "Eroare Server: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Prea multe încercări de conectare nereușite. Încearcați mai târziu."
+
+msgid "messages.connerror"
+msgstr "Eroare de conexiune (Serverul nu a fost găsit)!"
+
+msgid "messages.dberror"
+msgstr "Eroare bază de date!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Fereastra nouă a fost blocată!"
+
+msgid "messages.requesttimedout"
+msgstr "Timpul alocat cererii a expirat"
+
+msgid "messages.errorreadonly"
+msgstr ""
+"Nu se poate efectua operaţiunea. Dosarul este disponibil doar pentru citire."
+
+msgid "messages.errornoperm"
+msgstr "Nu se poate efectua operaţiunea. Acces interzis."
+
+msgid "messages.erroroverquota"
+msgstr "Nu se poate efectua operația. Nu există spațiu liber."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Nu există spațiu liber. Folosiți SHIFT+DEL pentru a șterge un mesaj."
+
+msgid "messages.invalidrequest"
+msgstr "Solicitare invalidă! Datele nu au fost salvate."
+
+msgid "messages.invalidhost"
+msgstr "Nume server invalid."
+
+msgid "messages.nomessagesfound"
+msgstr "Nu a fost găsit nici un mesaj în această căsuţă poştală"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "Căsuţa poştală este goală"
+
+msgid "messages.nomessages"
+msgstr "Nici un mesaj"
+
+msgid "messages.refreshing"
+msgstr "Reîmprospătare..."
+
+msgid "messages.loading"
+msgstr "Se încarcă..."
+
+msgid "messages.uploading"
+msgstr "Fişierul se încarcă..."
+
+msgid "messages.attaching"
+msgstr "Fișierul se atașează...."
+
+msgid "messages.uploadingmany"
+msgstr "Încarc fişierele..."
+
+msgid "messages.loadingdata"
+msgstr "Se încarcă informaţiile..."
+
+msgid "messages.checkingmail"
+msgstr "Se verifică pentru mesaje noi..."
+
+msgid "messages.sendingmessage"
+msgstr "Trimitere mesaj..."
+
+msgid "messages.messagesent"
+msgstr "Mesajul a fost trimis cu succes!"
+
+msgid "messages.savingmessage"
+msgstr "Salvare mesaj..."
+
+msgid "messages.messagesaved"
+msgstr "Mesajul a fost salvat în Ciorne"
+
+msgid "messages.successfullysaved"
+msgstr "Salvat cu succes."
+
+msgid "messages.savingresponse"
+msgstr "Se salvează textul pentru răspuns..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Chiar vrei să ștergi acest text pentru răspuns?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Contactul a fost adăugat cu succes în agendă"
+
+msgid "messages.contactexists"
+msgstr "Există deja un contact cu aceeași adresă de e-mail."
+
+msgid "messages.contactnameexists"
+msgstr "Există deja un contact cu acelaşi nume."
+
+msgid "messages.blockedimages"
+msgstr "Pentru a vă proteja intimitatea, imaginile externe au fost blocate."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Acesta este un mesaj criptat şi nu poate fi afişat. Ne pare rău."
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Acesta este un mesaj criptat și poate fi decriptat cu extensia dvs. de "
+"browser."
+
+msgid "messages.nopubkeyfor"
+msgstr "Nu a fost găsită nici o cheie publică validă pentru $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Nu a fost găsită nici o cheie publică validă pentru identitatea "
+"expeditorului dvs. Doriți să criptați mesajul doar pentru destinatari?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Atașamentele deja încărcate nu pot fi criptate. Vă rugăm re-adăugați-le în "
+"editorul de criptare."
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"Doriți să căutați în servere de chei publice pentru cheile care lipsesc?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Au fost găsite următoarele chei publice:"
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Nu s-a găsit nici un contact"
+
+msgid "messages.contactnotfound"
+msgstr "Contactul solicitat nu a fost găsit."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Nu s-a reuşit trimiterea mesajului"
+
+msgid "messages.senttooquickly"
+msgstr "Vă rugăm aşteptaţi $sec sec. înainte de a trimite acest mesaj"
+
+msgid "messages.errorsavingsent"
+msgstr ""
+"A intervenit o eroare în timp ce se efectua salvarea mesajului trimis."
+
+msgid "messages.errorsaving"
+msgstr "A intervenit o eroare în timp ce se efectua salvarea."
+
+msgid "messages.errormoving"
+msgstr "Nu am putut muta mesajul (mesajele)."
+
+msgid "messages.errorcopying"
+msgstr "Nu am putut copia mesajul (mesajele)."
+
+msgid "messages.errordeleting"
+msgstr "Nu am putut şterge mesajul (mesajele)."
+
+msgid "messages.errormarking"
+msgstr "Nu am putut marca mesajul (mesajele)"
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "Sunteţi sigur că doriţi să ştergeţi contactul/ele selectat(e)?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Sunteţi sigur că doriţi să ştergeţi grupul selectat?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Sunteţi sigur că doriţi să ştergeţi mesajul (mesajele) selectate ?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Sunteţi sigur că doriţi să ştergeţi acest dosar?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Sunteţi sigur că doriţi să ştergeţi toate mesajele din acest dosar?"
+
+msgid "messages.contactdeleting"
+msgstr "Şterg contactul (ele)..."
+
+msgid "messages.groupdeleting"
+msgstr "Şterg grupul..."
+
+msgid "messages.folderdeleting"
+msgstr "Se şterge dosarul..."
+
+msgid "messages.foldermoving"
+msgstr "Se mută dosarul..."
+
+msgid "messages.foldersubscribing"
+msgstr "Abonez dosarul..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Dezabonez dosarul..."
+
+msgid "messages.formincomplete"
+msgstr "Formularul nu a fost completat corect"
+
+msgid "messages.noemailwarning"
+msgstr "Vă rugăm să introduceţi o adresă de e-mail validă"
+
+msgid "messages.nonamewarning"
+msgstr "Vă rugăm să introduceţi un nume"
+
+msgid "messages.nopagesizewarning"
+msgstr "Vă rugăm să introduceţi mărimea paginii"
+
+msgid "messages.nosenderwarning"
+msgstr "Vă rugăm introduceți adresa de e-mail a expeditorului."
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Vă rugăm să introduceţi cel puţin un destinatar"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "Prea mulți destinatari"
+
+msgid "messages.nosubjectwarning"
+msgstr "Mesajul nu are subiect. Vreţi să introduceţi unul acum?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Fără subiect"
+
+msgid "messages.nobodywarning"
+msgstr "Trimiteţi acest mesaj fără text?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Mesajul nu a fost trimis și are modificări nesalvate. Doriți să renunțați la"
+" modificările dvs.?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Un mesaj compus anterior a fost găsit.\\n\\nSubiect:$subject\\nSalvat: "
+"$date\\n\\nDoriţi restaurarea acestuia ?"
+
+msgid "messages.nosearchname"
+msgstr "Vă rugăm să introduceţi un nume de contact sau adresă de e-mail"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Nu toate fişierele au fost ataşate. Vă rugăm să aşteptaţi sau să anulaţi "
+"încărcarea acestora."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr mesaje găsite"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr contact(e) găsit(e)."
+
+msgid "messages.searchnomatch"
+msgstr "Căutarea nu a returnat niciun rezultat"
+
+msgid "messages.searching"
+msgstr "Se caută..."
+
+msgid "messages.checking"
+msgstr "Se verifică..."
+
+msgid "messages.stillsearching"
+msgstr "Se caută..."
+
+msgid "messages.nospellerrors"
+msgstr "Nu s-a găsit nicio greşeală de ortografie"
+
+msgid "messages.folderdeleted"
+msgstr "Dosarul a fost şters cu succes"
+
+msgid "messages.foldersubscribed"
+msgstr "Dosarul a fost abonat cu succes."
+
+msgid "messages.folderunsubscribed"
+msgstr "Dosarul a fost dezabonat cu succes."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Mesaj şters cu succes !"
+
+msgid "messages.converting"
+msgstr "Resetez mesajul la parametrii iniţiali..."
+
+msgid "messages.messageopenerror"
+msgstr "Nu s-a putut încărca mesajul din server"
+
+msgid "messages.filelinkerror"
+msgstr "Atașarea fișierului a eșuat."
+
+msgid "messages.fileuploaderror"
+msgstr "Încărcarea pe server a eşuat"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Fişierul încărcat depăşeşte dimensiunea de $size"
+
+msgid "messages.filecounterror"
+msgstr "Puteți încărca maxim $count fișiere simultan."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Nu s-a atașat un fișier. Dimensiunea maximă a unui mesaj ($size) a fost "
+"depășită."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "Am copiat cu succes $nr contacte."
+
+msgid "messages.movesuccess"
+msgstr "Am mutat cu succes $nr contacte."
+
+msgid "messages.copyerror"
+msgstr "Nu am putut copia nici un contact."
+
+msgid "messages.moveerror"
+msgstr "Nu am putut muta nici un contact."
+
+msgid "messages.sourceisreadonly"
+msgstr "Sursa acestei adrese este \"read-only\" (se poate doar citi)"
+
+msgid "messages.errorsavingcontact"
+msgstr "Nu s-a putut salva adresa de contact"
+
+msgid "messages.movingmessage"
+msgstr "Mutare mesaj...."
+
+msgid "messages.copyingmessage"
+msgstr "Copiere mesaj..."
+
+msgid "messages.copyingcontact"
+msgstr "Copiez contact(ele)..."
+
+msgid "messages.movingcontact"
+msgstr "Se muta contactul (contactele) ..."
+
+msgid "messages.deletingmessage"
+msgstr "Şterg mesaj(ele)..."
+
+msgid "messages.markingmessage"
+msgstr "Marchez mesaj(ele)..."
+
+msgid "messages.addingmember"
+msgstr "Adaug contact(ele) la grup..."
+
+msgid "messages.removingmember"
+msgstr "Şterg contact(ele) din grup..."
+
+msgid "messages.receiptsent"
+msgstr "Confirmarea de citire a fost trimisă cu succes"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Confirmarea nu a putut fi trimisă"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Chiar vrei să ştergi aceasă identitate?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Nu puteţi şterge această identitate, este ultima."
+
+msgid "messages.forbiddencharacter"
+msgstr "Numele dosarului conţine un caracter nepermis."
+
+msgid "messages.selectimportfile"
+msgstr "Va rugăm să selectaţi fişierul pentru încărcare"
+
+msgid "messages.addresswriterror"
+msgstr ""
+"Agenda selectată nu poate fi actualizată, aceasta fiind disponibila doar "
+"pentru citire."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Contactele au fost adăugate cu succes la acest grup"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Contactele au fost şterse cu succes din acest grup"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Atribuirile la grupuri nu au fost modificate."
+
+msgid "messages.importwait"
+msgstr "Datele sunt importate, vă rugăm să aşteptaţi..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Importul a eșuat! Fișierul încărcat nu este un fișier valid pentru import de"
+" date."
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>$inserted contacte au fost importate cu succes, $skipped intrări au fost "
+"ignorate deoarece ele există deja: $names</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Am importat cu succes $nr mesaje."
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Importarea a esuat. Fisierul incarca nu este un mesaj valid pentru email."
+
+msgid "messages.opnotpermitted"
+msgstr "Operaţiunea nu este permisă!"
+
+msgid "messages.nofromaddress"
+msgstr "Lipsește adresa de email în identitatea selectată."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Trecerea în mod text a editorului va cauza pierderea formatării textului. "
+"Doriţi să continuaţi?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Vă rugăm să luaţi legătura cu administratorul serverului de mail, deoarece "
+"există o eroare în configuraţia acestuia. <b>Mesajul d-voastră nu a fost "
+"trimis.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Eroare SMTP ($code): Conexiunea cu serverul a eşuat"
+
+msgid "messages.smtpautherror"
+msgstr "Eroare SMTP ($code): Autentificare eşuată"
+
+msgid "messages.smtpfromerror"
+msgstr "Eroare SMTP ($code): Nu s-a putut seta expeditorul \"$from\" ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "Eroare SMTP ($code): Nu s-a putut adăuga destinatarul \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "Eroare SMTP: Nu s-a putut procesa lista cu destinatari"
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "Eroare SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Adresă email nevalidă: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Prea mulţi destinatari. Reduceţi numărul de destinatari la $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Numărul de membri ai grupului depăşeşte maximul de $max."
+
+msgid "messages.internalerror"
+msgstr "A avut loc o eroare internă. Te rog încearcă din nou."
+
+msgid "messages.contactdelerror"
+msgstr "Nu am putut şterge contact(ele)."
+
+msgid "messages.contactdeleted"
+msgstr "Contact(ele) au fost şterse cu succes."
+
+msgid "messages.contactrestoreerror"
+msgstr "Nu am putut restaura contact(ele) şterse."
+
+msgid "messages.contactrestored"
+msgstr "Contact(ele) au fost restaurate cu succes."
+
+msgid "messages.groupdeleted"
+msgstr "Grupul a fost şters cu succes."
+
+msgid "messages.grouprenamed"
+msgstr "Grupul a fost redenumit cu succes."
+
+msgid "messages.groupcreated"
+msgstr "Grupul a fost creat cu succes."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Căutarea salvată a fost ştearsă cu succes."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Nu am putut şterge căutarea salvată."
+
+msgid "messages.savedsearchcreated"
+msgstr "Căutarea a fost salvată cu succes."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Nu am putut salva căutarea."
+
+msgid "messages.messagedeleted"
+msgstr "Mesajul (ele) a (u) fost şters (e) cu succes."
+
+msgid "messages.messagemoved"
+msgstr "Mesajul (ele) a (u) fost mutat (e) cu succes."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Mesaj(e) mutat(e) cu succes în Coșul de Gunoi"
+
+msgid "messages.messagecopied"
+msgstr "Mesajul (ele) a (u) fost copiat (e) cu succes."
+
+msgid "messages.messagemarked"
+msgstr "Mesajul (ele) a (u) fost marcat (e) cu succes."
+
+msgid "messages.autocompletechars"
+msgstr "Introdu măcar $min caractere pentru autocompletare."
+
+msgid "messages.autocompletemore"
+msgstr "Au fost găsite mai multe înregistrări. Introdu mai multe caractere."
+
+msgid "messages.namecannotbeempty"
+msgstr "\"Nume\" nu poate fi gol."
+
+msgid "messages.nametoolong"
+msgstr "Numele este prea lung."
+
+msgid "messages.namedotforbidden"
+msgstr "Numele dosarului nu poate începe cu punct."
+
+msgid "messages.folderupdated"
+msgstr "Dosar actualizat cu succes."
+
+msgid "messages.foldercreated"
+msgstr "Dosar creat cu succes."
+
+msgid "messages.invalidimageformat"
+msgstr "Tip invalid de imagine."
+
+msgid "messages.mispellingsfound"
+msgstr "Au fost găsite greşeli de ortografie în mesaj."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Nu pot crea/muta dosarul în dosarul părinte selectat. Fără drepturi de "
+"acces."
+
+msgid "messages.messagetoobig"
+msgstr "Partea de mesaj este prea mare pentru a o procesa."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Atenție: Serviciul de webmail necesită Javascript! Pentru a-l utiliza vă "
+"rugăm activați Javascript în setările browserului."
+
+msgid "messages.messageissent"
+msgstr ""
+"Mesajul a fost deja trimis, dar încă nu a fost salvat.\n"
+"Vreți să îl salvați acum?"
+
+msgid "messages.errnotfound"
+msgstr "Fișierul nu a fost găsit"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Resursa solicitată nu a fost găsită!"
+
+msgid "messages.errfailedrequest"
+msgstr "Solicitare eșuată"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Autorizarea nu a reușit"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Nu s-a putut verifica dacă sunteți autorizat să accesați acest serviciu!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Verificarea solicitării a eșuat"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Pentru protecția dvs., accesul la această resursă este protejat împotriva CSRF.\n"
+"Dacă vedeți acest lucru, probabil că nu v-ați deconectat înainte de a părăsi aplicația web.\n"
+"\n"
+"Interacțiunea umană este necesară acum pentru a continua."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Vă rugăm contactați administratorul de server."
+
+msgid "messages.clicktoresumesession"
+msgstr "Faceți clic aici pentru a vă relua sesiunea anterioară"
+
+msgid "messages.errcomposesession"
+msgstr "Eroare sesiune de compunere"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Sesiunea de compunere solicitată nu a fost găsită."
+
+msgid "messages.clicktocompose"
+msgstr "Clic aici pentru a compune un mesaj nou"
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

@@ -1,0 +1,2878 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: fy_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Wolkom by $product"
+
+msgid "username"
+msgstr "Brûkersnamme"
+
+msgid "password"
+msgstr "Wachtwurd"
+
+msgid "server"
+msgstr "Tsjinner"
+
+msgid "login"
+msgstr "Ynlogge"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Ôfmelde"
+
+msgid "mail"
+msgstr "E-post"
+
+msgid "settings"
+msgstr "Ynstellings"
+
+msgid "addressbook"
+msgstr "Adresboek"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Postfek Yn"
+
+msgid "drafts"
+msgstr "Konsepten"
+
+msgid "sent"
+msgstr "Ferstjoerd"
+
+msgid "trash"
+msgstr "Jiskefet"
+
+msgid "junk"
+msgstr "Spam"
+
+msgid "show_real_foldernames"
+msgstr "Lit echte nammen sjen foar spesjale mappen"
+
+msgid "subject"
+msgstr "Ûnderwerp"
+
+msgid "from"
+msgstr "Fan"
+
+msgid "sender"
+msgstr "Stjoerder"
+
+msgid "to"
+msgstr "Oan"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Antwurd oan"
+
+msgid "followupto"
+msgstr "Oanslutend oan"
+
+msgid "date"
+msgstr "Datum"
+
+msgid "size"
+msgstr "Grutte"
+
+msgid "priority"
+msgstr "Prioriteit"
+
+msgid "organization"
+msgstr "Organisaasje"
+
+msgid "readstatus"
+msgstr "Lêzen status"
+
+msgid "listoptions"
+msgstr "Lyst opsjes..."
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Mappen"
+
+msgid "messagesfromto"
+msgstr "Berjochten $from nei $to fan $count"
+
+msgid "threadsfromto"
+msgstr "Rigen $from oan $to fan $count"
+
+msgid "messagenrof"
+msgstr "Berjocht $nr fan $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to fan $count"
+
+msgid "copy"
+msgstr "Kopiearje"
+
+msgid "move"
+msgstr "Ferpleatse"
+
+msgid "moveto"
+msgstr "Ferpleatse nei..."
+
+msgid "copyto"
+msgstr "Kopiearje nei..."
+
+msgid "download"
+msgstr "Ynlade"
+
+msgid "open"
+msgstr "Iepenje"
+
+msgid "showattachment"
+msgstr "Toane"
+
+msgid "showanyway"
+msgstr "Dochs toane"
+
+msgid "filename"
+msgstr "Bestânsnamme"
+
+msgid "filesize"
+msgstr "Bestânsgrutte"
+
+msgid "addtoaddressbook"
+msgstr "Oan adresboek tafoegje"
+
+msgid "sun"
+msgstr "si"
+
+msgid "mon"
+msgstr "mo"
+
+msgid "tue"
+msgstr "ti"
+
+msgid "wed"
+msgstr "wo"
+
+msgid "thu"
+msgstr "to"
+
+msgid "fri"
+msgstr "fr"
+
+msgid "sat"
+msgstr "so"
+
+msgid "sunday"
+msgstr "snein"
+
+msgid "monday"
+msgstr "moandei"
+
+msgid "tuesday"
+msgstr "tiisdei"
+
+msgid "wednesday"
+msgstr "woansdei"
+
+msgid "thursday"
+msgstr "tongersdei"
+
+msgid "friday"
+msgstr "freed"
+
+msgid "saturday"
+msgstr "sneon"
+
+msgid "jan"
+msgstr "jan"
+
+msgid "feb"
+msgstr "feb"
+
+msgid "mar"
+msgstr "mrt"
+
+msgid "apr"
+msgstr "apr"
+
+msgid "may"
+msgstr "mai"
+
+msgid "jun"
+msgstr "jun"
+
+msgid "jul"
+msgstr "jul"
+
+msgid "aug"
+msgstr "aug"
+
+msgid "sep"
+msgstr "sep"
+
+msgid "oct"
+msgstr "okt"
+
+msgid "nov"
+msgstr "nov"
+
+msgid "dec"
+msgstr "des"
+
+msgid "longjan"
+msgstr "jannewaris"
+
+msgid "longfeb"
+msgstr "febrewaris"
+
+msgid "longmar"
+msgstr "maart"
+
+msgid "longapr"
+msgstr "april"
+
+msgid "longmay"
+msgstr "maaie"
+
+msgid "longjun"
+msgstr "juny"
+
+msgid "longjul"
+msgstr "july"
+
+msgid "longaug"
+msgstr "augustus"
+
+msgid "longsep"
+msgstr "septimber"
+
+msgid "longoct"
+msgstr "oktober"
+
+msgid "longnov"
+msgstr "novimber"
+
+msgid "longdec"
+msgstr "desimber"
+
+msgid "today"
+msgstr "Hjoed"
+
+msgid "refresh"
+msgstr "Ferfarskje"
+
+msgid "checkmail"
+msgstr "Op nije berjochten kontrolearje"
+
+msgid "compose"
+msgstr "Opstelle"
+
+msgid "writenewmessage"
+msgstr "Nij berjocht oanmeitsje"
+
+msgid "reply"
+msgstr "Beäntwurdzje"
+
+msgid "replytomessage"
+msgstr "Antwurd oan stjoerder"
+
+msgid "replytoallmessage"
+msgstr "Antwurd nei lyst of nei stjoerder en alle ûntfangers"
+
+msgid "replyall"
+msgstr "Antwurdzje alle"
+
+msgid "replylist"
+msgstr "Antwurdzje lyst"
+
+msgid "forward"
+msgstr "Trochstjoere"
+
+msgid "forwardinline"
+msgstr "Ynsletten trochstjoere"
+
+msgid "forwardattachment"
+msgstr "Trochstjoere as taheaksel"
+
+msgid "forwardmessage"
+msgstr "Stjoer it berjocht troch"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Berjocht wiskje"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Berjocht ferpleatse nei jiskefet"
+
+msgid "printmessage"
+msgstr "Dit berjocht ôfdrukke"
+
+msgid "previousmessage"
+msgstr "Lit foarige berjocht sjen"
+
+msgid "firstmessage"
+msgstr "Lit earste berjocht sjen"
+
+msgid "nextmessage"
+msgstr "Lit folgjende berjocht sjen"
+
+msgid "lastmessage"
+msgstr "Lit lêste berjocht sjen"
+
+msgid "backtolist"
+msgstr "Tebek nei berjochtlyst"
+
+msgid "viewsource"
+msgstr "Toan boarne"
+
+msgid "mark"
+msgstr "Markearje"
+
+msgid "markmessages"
+msgstr "Markearje berjochten"
+
+msgid "markread"
+msgstr "As lêzen"
+
+msgid "markunread"
+msgstr "As net-lêzen"
+
+msgid "markflagged"
+msgstr "As flagge"
+
+msgid "markunflagged"
+msgstr "As net-flagge"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Mear aksjes..."
+
+msgid "markallread"
+msgstr "Markearje alles as lêzen"
+
+msgid "folders-cur"
+msgstr "Allinnich selektearre map"
+
+msgid "folders-sub"
+msgstr "Selektearre map en ûnderlizzende mappen"
+
+msgid "folders-all"
+msgstr "Alle mappen"
+
+msgid "more"
+msgstr "Mear"
+
+msgid "back"
+msgstr "Tebek"
+
+msgid "options"
+msgstr "Opsjes"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr "Earst"
+
+msgid "last"
+msgstr "Lêst"
+
+msgid "previous"
+msgstr "Foarige"
+
+msgid "next"
+msgstr "Folgjende"
+
+msgid "select"
+msgstr "Selektearje"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Alle"
+
+msgid "none"
+msgstr "Gjin"
+
+msgid "currpage"
+msgstr "Aktuele side"
+
+msgid "isread"
+msgstr "Lêzen"
+
+msgid "unread"
+msgstr "Net-lêzen"
+
+msgid "flagged"
+msgstr "Flagge"
+
+msgid "unflagged"
+msgstr "Net-flagge"
+
+msgid "unanswered"
+msgstr "Unbeantwurde"
+
+msgid "withattachment"
+msgstr "Mei taheaksel"
+
+msgid "deleted"
+msgstr "Ferwidere"
+
+msgid "undeleted"
+msgstr "Net ferwidere"
+
+msgid "replied"
+msgstr "Antwurde"
+
+msgid "forwarded"
+msgstr "Trochstjoerd"
+
+msgid "invert"
+msgstr "Omkeart"
+
+msgid "filter"
+msgstr "Filter"
+
+msgid "list"
+msgstr "Lyst"
+
+msgid "threads"
+msgstr "Streamen"
+
+msgid "expand-all"
+msgstr "Alles útwreidzje"
+
+msgid "expand-unread"
+msgstr "Net-lêzen útwreidzje"
+
+msgid "collapse-all"
+msgstr "Alles ynsakje"
+
+msgid "threaded"
+msgstr "Streamde"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Berjocht stream útwreidzje"
+
+msgid "do_expand"
+msgstr "Alle streamen"
+
+msgid "expand_only_unread"
+msgstr "Allinnich mei net-lêzen berjochten"
+
+msgid "fromto"
+msgstr "Fan/Nei"
+
+msgid "flag"
+msgstr "Flagge"
+
+msgid "attachment"
+msgstr "Taheaksel"
+
+msgid "nonesort"
+msgstr "Gjin"
+
+msgid "sentdate"
+msgstr "Ferstjoer datum"
+
+msgid "arrival"
+msgstr "Oankomst datum"
+
+msgid "asc"
+msgstr "oprinnend"
+
+msgid "desc"
+msgstr "delgeande"
+
+msgid "listcolumns"
+msgstr "Lyst kolommen"
+
+msgid "listsorting"
+msgstr "Skiftsje kolom"
+
+msgid "listorder"
+msgstr "Sorting oarder"
+
+msgid "listmode"
+msgstr "Lyst werjefte modus"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr "Yndieling"
+
+msgid "layoutwidescreen"
+msgstr "Breedbyld"
+
+msgid "layoutdesktop"
+msgstr "Desktop"
+
+msgid "layoutlist"
+msgstr "Lyst"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Map aksjes"
+
+msgid "compact"
+msgstr "Kompakt"
+
+msgid "empty"
+msgstr "Leech"
+
+msgid "importmessages"
+msgstr "Berjochten ymportearje"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Skiifgebrûk"
+
+msgid "unknown"
+msgstr "ûnbekend"
+
+msgid "unlimited"
+msgstr "ûnbeheind"
+
+msgid "quotatype"
+msgstr "Kwota type"
+
+msgid "quotatotal"
+msgstr "Beheining"
+
+msgid "quotaused"
+msgstr "Brûkt"
+
+msgid "quotastorage"
+msgstr "Skiifromte"
+
+msgid "quotamessage"
+msgstr "Oantal berjochten"
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Fluch sykje"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Sykopdracht wiskje"
+
+msgid "searchmod"
+msgstr "Syk modifikaasjes"
+
+msgid "msgtext"
+msgstr "Hiele berjocht"
+
+msgid "body"
+msgstr "Ynhâld"
+
+msgid "type"
+msgstr "Type"
+
+msgid "namex"
+msgstr "Namme"
+
+msgid "searchscope"
+msgstr "Berik"
+
+msgid "currentfolder"
+msgstr "Aktuele map"
+
+msgid "subfolders"
+msgstr "Dizze en ûnderlizzende mappen"
+
+msgid "allfolders"
+msgstr "Alle mappen"
+
+msgid "searchinterval-1W"
+msgstr "Alder as in wike"
+
+msgid "searchinterval-1M"
+msgstr "Alder as in moanne"
+
+msgid "searchinterval-1Y"
+msgstr "Alder as in jier"
+
+msgid "searchinterval1W"
+msgstr "Nijer as in wike"
+
+msgid "searchinterval1M"
+msgstr "Nijer as in moanne"
+
+msgid "searchinterval1Y"
+msgstr "Nijer as in jier"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Iepenje yn nij finster"
+
+msgid "emlsave"
+msgstr "Ynlade (.eml)"
+
+msgid "changeformattext"
+msgstr "Toan yn gewoane tekst"
+
+msgid "changeformathtml"
+msgstr "Toan yn HTML formaat"
+
+msgid "editasnew"
+msgstr "Bewurkje as nij"
+
+msgid "send"
+msgstr "Ferstjoere"
+
+msgid "sendmessage"
+msgstr "Berjocht ferstjoere"
+
+msgid "savemessage"
+msgstr "Bewarje as konsept"
+
+msgid "addattachment"
+msgstr "In bestân taheakje"
+
+msgid "charset"
+msgstr "Tekenset"
+
+msgid "editortype"
+msgstr "Bewurker type"
+
+msgid "returnreceipt"
+msgstr "Untfangst werom stjoere"
+
+msgid "dsn"
+msgstr "Levering status notifikaasje"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "Op $date, skreau $sender:"
+
+msgid "originalmessage"
+msgstr "Oarspronklik Berjocht"
+
+msgid "selectimage"
+msgstr "Ofbylding selektearje"
+
+msgid "addimage"
+msgstr "Ofbylding tafoegje"
+
+msgid "selectmedia"
+msgstr "Fideo selektearje"
+
+msgid "addmedia"
+msgstr "Fideo tafoegje"
+
+msgid "encrypt"
+msgstr "Fersiferje"
+
+msgid "encryptmessage"
+msgstr "Berjocht fersiferje"
+
+msgid "encryptmessagemailvelope"
+msgstr "Berjocht fersiferje mei Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Publike kaaien ymportearje"
+
+msgid "encryptedsendialog"
+msgstr "Fersifere berjocht ferstjoere"
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr "Kaai ID"
+
+msgid "keylength"
+msgstr "Bits"
+
+msgid "keyexpired"
+msgstr "Ferrûn"
+
+msgid "keyrevoked"
+msgstr "Ynlutsen"
+
+msgid "bccinstead"
+msgstr "Bcc brûke"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Ynfoegje"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Identiteiten bewurkje"
+
+msgid "spellcheck"
+msgstr "Stavering"
+
+msgid "checkspelling"
+msgstr "Stavering kontrolearje"
+
+msgid "resumeediting"
+msgstr "Bewurkje ferfetsje"
+
+msgid "revertto"
+msgstr "Tebeksette nei"
+
+msgid "restore"
+msgstr "Weromsette"
+
+msgid "restoremessage"
+msgstr "Berjocht weromsette?"
+
+msgid "ignore"
+msgstr "Negearje"
+
+msgid "responses"
+msgstr "Antwurden"
+
+msgid "insertresponse"
+msgstr "In antwurd ynfiere"
+
+msgid "manageresponses"
+msgstr "Antwurden beheare"
+
+msgid "newresponse"
+msgstr "Nij antwurd oanmeitsje"
+
+msgid "addresponse"
+msgstr "Antwurd tafoegje"
+
+msgid "editresponse"
+msgstr "Antwurd bewurkje"
+
+msgid "editresponses"
+msgstr "Antwurden bewurkje"
+
+msgid "responsename"
+msgstr "Namme"
+
+msgid "responsetext"
+msgstr "Antwurd tekst"
+
+msgid "attach"
+msgstr "Taheakje"
+
+msgid "attachments"
+msgstr "Taheaksels"
+
+msgid "upload"
+msgstr "Oplade"
+
+msgid "uploadprogress"
+msgstr "$percent ($current fan $total)"
+
+msgid "close"
+msgstr "Slúte"
+
+msgid "messageoptions"
+msgstr "Berjocht opsjes..."
+
+msgid "togglecomposeoptions"
+msgstr "Komposysje opsjes skeakelje"
+
+msgid "attachmentrename"
+msgstr "Taheaksel omneame"
+
+msgid "low"
+msgstr "Leech"
+
+msgid "lowest"
+msgstr "Leechste"
+
+msgid "normal"
+msgstr "Normaal"
+
+msgid "high"
+msgstr "Heech"
+
+msgid "highest"
+msgstr "Heechste"
+
+msgid "nosubject"
+msgstr "(gjin ûnderwerp)"
+
+msgid "showimages"
+msgstr "Ofbyldings toane"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "Ofbyldings fan $sender altyd toane"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Dit is in konsept berjocht"
+
+msgid "andnmore"
+msgstr "$nr mear..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Mear berjocht koppen toane"
+
+msgid "togglefullheaders"
+msgstr "Ruwe berjocht koppen skeakelje"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Gewoane tekst"
+
+msgid "savesentmessagein"
+msgstr "Bewarje ferstjoerd berjoch yn"
+
+msgid "dontsave"
+msgstr "net bewarje"
+
+msgid "maxuploadsize"
+msgstr "Maksimum bestâns grutte is $size"
+
+msgid "addcc"
+msgstr "CC tafoegje"
+
+msgid "addbcc"
+msgstr "BCC tafoegje"
+
+msgid "addreplyto"
+msgstr "Reagearje-Op Tafoegje"
+
+msgid "addfollowupto"
+msgstr "Ferfolch-Op Tafoegje"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"De stjoerder fan dit berjocht hat frege om op de hichte brocht te wurden as "
+"jo dit berjocht lêzen hawwe. Wolle jo de ôfstjoerder op de hichte bringe?"
+
+msgid "receiptread"
+msgstr "Weromstjoerd Untfangstbewiis (lêzen)"
+
+msgid "yourmessage"
+msgstr "Dit is in Weromstjoerd Untfangstbewiis foar jo berjocht"
+
+msgid "receiptnote"
+msgstr ""
+"Tink derom: Dit ûntfangstbewiis erkent allinnich dat it berjocht waard "
+"werjûn op de kompjûter fan ûntfanger. Der is gjin garânsje dat de ûntfanger "
+"de berjocht ynhâld lêzen of begrepen hat."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Skerm Namme"
+
+msgid "firstname"
+msgstr "Foarnamme"
+
+msgid "surname"
+msgstr "Achternamme"
+
+msgid "middlename"
+msgstr "Twadde Namme"
+
+msgid "nameprefix"
+msgstr "Foarheaksel"
+
+msgid "namesuffix"
+msgstr "Efterheaksel"
+
+msgid "nickname"
+msgstr "Skûlnamme"
+
+msgid "jobtitle"
+msgstr "Funksjenamme"
+
+msgid "department"
+msgstr "Ofdieling"
+
+msgid "gender"
+msgstr "Geslacht"
+
+msgid "maidenname"
+msgstr "Famkesnamme"
+
+msgid "email"
+msgstr "E-post"
+
+msgid "phone"
+msgstr "Telefoannûmer"
+
+msgid "address"
+msgstr "Adres"
+
+msgid "street"
+msgstr "Strjitte"
+
+msgid "locality"
+msgstr "Doarp/Stêd"
+
+msgid "zipcode"
+msgstr "Postkoade"
+
+msgid "region"
+msgstr "Provinsje"
+
+msgid "country"
+msgstr "Lân"
+
+msgid "birthday"
+msgstr "Jierdei"
+
+msgid "anniversary"
+msgstr "Troudei"
+
+msgid "website"
+msgstr "Webstee"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Notysjes"
+
+msgid "male"
+msgstr "man"
+
+msgid "female"
+msgstr "frou"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Behearder"
+
+msgid "assistant"
+msgstr "Assistint"
+
+msgid "spouse"
+msgstr "Echtgenoat"
+
+msgid "allfields"
+msgstr "Alle fjilden"
+
+msgid "search"
+msgstr "Sykje"
+
+msgid "searchresult"
+msgstr "Syk risseltaten"
+
+msgid "advsearch"
+msgstr "Avansearre Sykje"
+
+msgid "advanced"
+msgstr "Avansearre"
+
+msgid "other"
+msgstr "Oars"
+
+msgid "printcontact"
+msgstr "Kontakt ôfdrukke"
+
+msgid "qrcode"
+msgstr "QR Koade"
+
+msgid "typehome"
+msgstr "Thús"
+
+msgid "typework"
+msgstr "Wurk"
+
+msgid "typeother"
+msgstr "Oars"
+
+msgid "typemobile"
+msgstr "Mobyl"
+
+msgid "typemain"
+msgstr "Foarnaamste"
+
+msgid "typehomefax"
+msgstr "Fax Thús"
+
+msgid "typeworkfax"
+msgstr "Fax Wurk"
+
+msgid "typecar"
+msgstr "Auto"
+
+msgid "typepager"
+msgstr "Pieper"
+
+msgid "typevideo"
+msgstr "Fideo"
+
+msgid "typeassistant"
+msgstr "Assistint"
+
+msgid "typehomepage"
+msgstr "Thússide"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profyl"
+
+msgid "addfield"
+msgstr "Fjild tafoegje"
+
+msgid "addcontact"
+msgstr "Kontakt tafoegje"
+
+msgid "editcontact"
+msgstr "Kontakt bewurkje"
+
+msgid "contacts"
+msgstr "Kontakten"
+
+msgid "contactproperties"
+msgstr "Kontakt eigenskippen"
+
+msgid "contactnameandorg"
+msgstr "Namme en Organisaasje"
+
+msgid "personalinfo"
+msgstr "Persoanlike ynformaasje"
+
+msgid "personal"
+msgstr "Persoanlik"
+
+msgid "contactphoto"
+msgstr "Kontakt foto"
+
+msgid "edit"
+msgstr "Bewurkje"
+
+msgid "cancel"
+msgstr "Annulearje"
+
+msgid "save"
+msgstr "Bewarje"
+
+msgid "delete"
+msgstr "Fuortsmite"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Omneame"
+
+msgid "addphoto"
+msgstr "Tafoegje"
+
+msgid "replacephoto"
+msgstr "Ferfange"
+
+msgid "uploadphoto"
+msgstr "Foto oplade"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "Nij kontakt oanmeitsje"
+
+msgid "deletecontact"
+msgstr "Selektearre kontakten ferwiderje"
+
+msgid "composeto"
+msgstr "Skriuw berjocht oan"
+
+msgid "contactsfromto"
+msgstr "Kontakten $from oant $to fan $count"
+
+msgid "print"
+msgstr "Ofdrukke"
+
+msgid "export"
+msgstr "Eksportearje"
+
+msgid "exportall"
+msgstr "Alles eksportearje"
+
+msgid "exportsel"
+msgstr "Selektearre eksportearje"
+
+msgid "exportvcards"
+msgstr "Kontakten eksportearje yn vCard formaat"
+
+msgid "newgroup"
+msgstr "Nije groep oanmeitsje"
+
+msgid "addgroup"
+msgstr "Groep tafoegje"
+
+msgid "grouprename"
+msgstr "Groep omneame"
+
+msgid "groupdelete"
+msgstr "Groep ferwiderje"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Selektearre kontakten út groep ferwiderje"
+
+msgid "uponelevel"
+msgstr "Ien nivo omheech"
+
+msgid "previouspage"
+msgstr "Lit foarige side sjen"
+
+msgid "firstpage"
+msgstr "Lit earste side sjen"
+
+msgid "nextpage"
+msgstr "Lit folgjende side sjen"
+
+msgid "lastpage"
+msgstr "Lit lêste side sjen"
+
+msgid "group"
+msgstr "Groep"
+
+msgid "groups"
+msgstr "Groepen"
+
+msgid "listgroup"
+msgstr "Groep leden yn lyst"
+
+msgid "personaladrbook"
+msgstr "Persoanlike adressen"
+
+msgid "searchsave"
+msgstr "Sykopdracht bewarje"
+
+msgid "searchdelete"
+msgstr "Sykopdracht wiskje"
+
+msgid "import"
+msgstr "Ymportearje"
+
+msgid "importcontacts"
+msgstr "Kontakten ymportearje"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Kontakten tafoegje oan"
+
+msgid "importreplace"
+msgstr "It hiele adresboek ferfange"
+
+msgid "importgroups"
+msgstr "Ymportearje groep opdrachten"
+
+msgid "importgroupsall"
+msgstr "Alle (meitsje groepen oan wêr nedich)"
+
+msgid "importgroupsexisting"
+msgstr "Allinnich foar besteande groepen"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Klear"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Ynstellings foar"
+
+msgid "about"
+msgstr "Oer"
+
+msgid "preferences"
+msgstr "Foarkarren"
+
+msgid "userpreferences"
+msgstr "Brûkers foarkarren"
+
+msgid "editpreferences"
+msgstr "Brûkers foarkarren bewurkje"
+
+msgid "identities"
+msgstr "Identiteiten"
+
+msgid "manageidentities"
+msgstr "Identiteiten beheare"
+
+msgid "newidentity"
+msgstr "Nije identiteit oanmeitsje"
+
+msgid "addidentity"
+msgstr "Identiteit tafoegje"
+
+msgid "editidentity"
+msgstr "Identiteit bewurkje"
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "Toan HTML"
+
+msgid "defaultcharset"
+msgstr "Standert Teken Set"
+
+msgid "htmlmessage"
+msgstr "HTML Berjocht"
+
+msgid "messagepart"
+msgstr "Diel"
+
+msgid "digitalsig"
+msgstr "Digitale Hantekening"
+
+msgid "dateformat"
+msgstr "Datum formaat"
+
+msgid "timeformat"
+msgstr "Tiid formaat"
+
+msgid "prettydate"
+msgstr "Moaie datums"
+
+msgid "setdefault"
+msgstr "Set standert"
+
+msgid "autodetect"
+msgstr "Auto"
+
+msgid "language"
+msgstr "Taal"
+
+msgid "timezone"
+msgstr "Tiidsône"
+
+msgid "pagesize"
+msgstr "Rigen per side"
+
+msgid "signature"
+msgstr "Hantekening"
+
+msgid "dstactive"
+msgstr "Simmertiid"
+
+msgid "showinextwin"
+msgstr "Berjocht yn nij finster iepenje"
+
+msgid "composeextwin"
+msgstr "Skriuw yn in nij finster"
+
+msgid "htmleditor"
+msgstr "Skriuw HTML berjochten"
+
+msgid "htmlonreply"
+msgstr "Allinnich op HTML berjocht antwurdzje"
+
+msgid "htmlonreplyandforward"
+msgstr "op trochstjoerd of antwurd nei HTML berjocht"
+
+msgid "htmlsignature"
+msgstr "HTML hantekening"
+
+msgid "showemail"
+msgstr "Toan e-post adres mei skermnamme"
+
+msgid "previewpane"
+msgstr "Toan foarbyld skerm"
+
+msgid "skin"
+msgstr "Omjouwings tema"
+
+msgid "logoutclear"
+msgstr "Jiskefet leechje by útloggen"
+
+msgid "logoutcompact"
+msgstr "Komprimearje Postfek YN by útloggen"
+
+msgid "uisettings"
+msgstr "Brûkers omjouwing"
+
+msgid "serversettings"
+msgstr "Tsjinner Ynstellings"
+
+msgid "mailboxview"
+msgstr "Postfek Yndieling"
+
+msgid "mdnrequests"
+msgstr "Op fersyk by ûntfangstbewiis"
+
+msgid "askuser"
+msgstr "freegje my"
+
+msgid "autosend"
+msgstr "stjoer ûntfangstbewiis "
+
+msgid "autosendknown"
+msgstr "stjoer ûntfangstbewiis nei kontakten, oars my freegje"
+
+msgid "autosendknownignore"
+msgstr "stjoer ûntfangstbewiis nei kontakten, oars negearje"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "fersyk negearje"
+
+msgid "readwhendeleted"
+msgstr "Markearje berjocht as lêzen by wiskjen"
+
+msgid "flagfordeletion"
+msgstr "Berjocht flagje foar wiskjen yn pleats fan wiskjen"
+
+msgid "skipdeleted"
+msgstr "Wiske berjochten net sjen litte"
+
+msgid "deletealways"
+msgstr "As berjochten nei Jiskefet ferpleatse mislearret, wiskje"
+
+msgid "deletejunk"
+msgstr "Berjochten yn Jiskefet fuort wiskje"
+
+msgid "showremoteimages"
+msgstr "Werjaan eksterne ynsletten ôfbyldings"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "fan bekende stjoerders"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "altyd"
+
+msgid "alwaysbutplain"
+msgstr "Altyd, útsein as antwurde wurd yn gewoane tekst"
+
+msgid "showinlineimages"
+msgstr "Lit taheake ôfbyldings ûnder it berjocht sjen"
+
+msgid "autosavedraft"
+msgstr "Konsept automatysk bewarje"
+
+msgid "everynminutes"
+msgstr "eltse $n minút(en)"
+
+msgid "refreshinterval"
+msgstr "Ferfarskje (op nije berjochten kontrolearje, ensaf.)"
+
+msgid "never"
+msgstr "nea"
+
+msgid "immediately"
+msgstr "fuortendaliks"
+
+msgid "messagesdisplaying"
+msgstr "Berjochten Toane"
+
+msgid "messagescomposition"
+msgstr "Berjochten Skriuwe"
+
+msgid "mimeparamfolding"
+msgstr "Taheaksel nammen"
+
+msgid "2231folding"
+msgstr "Fol RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Fol RFC 2047 (other)"
+
+msgid "force7bit"
+msgstr "Brûk MIME fersifering foar 8-bit tekens"
+
+msgid "savelocalstorage"
+msgstr "Bewarje yn lokale opslach fan de browser (tydlik)"
+
+msgid "advancedoptions"
+msgstr "Avansearre opsjes"
+
+msgid "toggleadvancedoptions"
+msgstr "Avansearre opsjes skeakelje"
+
+msgid "focusonnewmessage"
+msgstr "Fokus browser finster by nij berjocht"
+
+msgid "checkallfolders"
+msgstr "Kontrolearje alle mappen op nije berjochten"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "Standert lettertype fan HTML berjocht"
+
+msgid "mainoptions"
+msgstr "Haad Opsjes"
+
+msgid "browseroptions"
+msgstr "Browser Opsjes"
+
+msgid "section"
+msgstr "Seleksje"
+
+msgid "maintenance"
+msgstr "Underhâld"
+
+msgid "newmessage"
+msgstr "Nij Berjocht"
+
+msgid "signatureoptions"
+msgstr "Hantekening Opsjes"
+
+msgid "whenreplying"
+msgstr "By beäntwurdzjen"
+
+msgid "replyempty"
+msgstr "It oarspronklike berjocht net sitearje"
+
+msgid "replytopposting"
+msgstr "begjinne nij berjocht boppe de sitaat"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "begjinne nij berjocht ûnder de sitaat"
+
+msgid "replyremovesignature"
+msgstr "By it beäntwurdzjen oarspronklike hântekening fan berjocht wiskje"
+
+msgid "autoaddsignature"
+msgstr "Automatysk hantekening tafoegje"
+
+msgid "newmessageonly"
+msgstr "allinnich nije berjochten"
+
+msgid "replyandforwardonly"
+msgstr "by antwurdzjen en trochstjoeren"
+
+msgid "insertsignature"
+msgstr "Hantekening ynfoegje"
+
+msgid "sigbelow"
+msgstr "Hantekening ûnder it siteare berjocht"
+
+msgid "sigseparator"
+msgstr "Forsearje standert skiedingsteken yn hantekenings"
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "nei $n sekonden"
+
+msgid "reqmdn"
+msgstr "Freegje altyd in ûntfangstbewiis"
+
+msgid "reqdsn"
+msgstr "Freegje altyd in levering status notifikaasje"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Set antwurden yn de map fan it berjocht dêr't op antwurde wurd"
+
+msgid "defaultabook"
+msgstr "Standert adresboek"
+
+msgid "autocompletesingle"
+msgstr "Sla alternative e-post adressen oer yn autokompleet"
+
+msgid "listnamedisplay"
+msgstr "Kontakten yn lyst as"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Kontrolearje de stavering foar it ferstjoeren fan in berjocht"
+
+msgid "spellcheckoptions"
+msgstr "Staverings Opsjes"
+
+msgid "spellcheckignoresyms"
+msgstr "Negearje wurden mei symboalen"
+
+msgid "spellcheckignorenums"
+msgstr "Negearje wurden mei sifers"
+
+msgid "spellcheckignorecaps"
+msgstr "Negearje wurden mei alle letters as haadletters"
+
+msgid "addtodict"
+msgstr "Taheakje oan wurdboek"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Registrearje protokol handler foar mailto: keppelings"
+
+msgid "standardwindows"
+msgstr "Omgean mei popups as standert finsters"
+
+msgid "forwardmode"
+msgstr "Berjocht trochstjoeren"
+
+msgid "inline"
+msgstr "ynsletten"
+
+msgid "asattachment"
+msgstr "as taheaksel"
+
+msgid "replyallmode"
+msgstr "Standert aksje foar [Alles beäntwurdzje] knop"
+
+msgid "replyalldefault"
+msgstr "op alles antwurdzje"
+
+msgid "replyalllist"
+msgstr "allinnich antwurdzje nei mailing lyst (wêr fûn)"
+
+msgid "allmessages"
+msgstr ""
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Map"
+
+msgid "folders"
+msgstr "Mappen"
+
+msgid "foldername"
+msgstr "Map namme"
+
+msgid "subscribed"
+msgstr "Ynskreaun"
+
+msgid "messagecount"
+msgstr "Berjochten"
+
+msgid "create"
+msgstr "Oanmeitsje"
+
+msgid "createfolder"
+msgstr "Nije map oanmeitsje"
+
+msgid "managefolders"
+msgstr "Mappen beheare"
+
+msgid "specialfolders"
+msgstr "Spesjale Mappen"
+
+msgid "properties"
+msgstr "Eigenskippen"
+
+msgid "folderproperties"
+msgstr "Map eigenskippen"
+
+msgid "parentfolder"
+msgstr "Boppelizzende map"
+
+msgid "location"
+msgstr "Lokaasje"
+
+msgid "info"
+msgstr "Ynformaasje"
+
+msgid "getfoldersize"
+msgstr "Klik om map grutte te krijen"
+
+msgid "changesubscription"
+msgstr "Klik om ynskriuwing te feroarjen"
+
+msgid "foldertype"
+msgstr "Map Type"
+
+msgid "personalfolder"
+msgstr "Privee Map"
+
+msgid "otherfolder"
+msgstr "Oare Brûker's Map"
+
+msgid "sharedfolder"
+msgstr "Publike Map"
+
+msgid "findfolders"
+msgstr "Mappen fine"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr "Persoanlik"
+
+msgid "namespace.other"
+msgstr "Oare brûkers"
+
+msgid "namespace.shared"
+msgstr "Dielt"
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Sortearje op"
+
+msgid "sortasc"
+msgstr "Sortearje oprinnend"
+
+msgid "sortdesc"
+msgstr "Sortearje delgeand"
+
+msgid "undo"
+msgstr "Ungedien meitsje"
+
+msgid "installedplugins"
+msgstr "Ynstallearre ynstekkers"
+
+msgid "plugin"
+msgstr "Ynstekker"
+
+msgid "version"
+msgstr "Ferzje"
+
+msgid "source"
+msgstr "Boarne"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Lisinsje"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Krij help"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Ingelsk"
+
+msgid "westerneuropean"
+msgstr "West Europeesk"
+
+msgid "easterneuropean"
+msgstr "East Europeesk"
+
+msgid "southeasterneuropean"
+msgstr "Súd-East Europeesk"
+
+msgid "baltic"
+msgstr "Baltysk"
+
+msgid "cyrillic"
+msgstr "Syrillysk"
+
+msgid "arabic"
+msgstr "Arabysk"
+
+msgid "greek"
+msgstr "Gryksk"
+
+msgid "hebrew"
+msgstr "Hebrieuwsk"
+
+msgid "turkish"
+msgstr "Turksk"
+
+msgid "nordic"
+msgstr "Noardsk"
+
+msgid "thai"
+msgstr "Taisk"
+
+msgid "celtic"
+msgstr "Keltysk"
+
+msgid "vietnamese"
+msgstr "Fietnameesk"
+
+msgid "japanese"
+msgstr "Japansk"
+
+msgid "korean"
+msgstr "Koreaansk"
+
+msgid "chinese"
+msgstr "Sineesk"
+
+msgid "arialabeltopnav"
+msgstr "Finster kontrôle"
+
+msgid "arialabeltasknav"
+msgstr "Applikaasje taken"
+
+msgid "arialabeltoolbar"
+msgstr "Applikaasje arkbalke"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "Aktive taak"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "E-post fermelding filter"
+
+msgid "arialabelmailsearchform"
+msgstr "E-post berjocht syk formulier"
+
+msgid "arialabelcontactsearchform"
+msgstr "Kontakt syk formulier"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "E-post sykje ynbring"
+
+msgid "arialabelquicksearchbox"
+msgstr "Sykje ynbring"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Map fermelding filter"
+
+msgid "arialabelfoldersearchform"
+msgstr "Map syk formulier"
+
+msgid "arialabelfolderlist"
+msgstr "E-post map seleksje"
+
+msgid "arialabelmessagelist"
+msgstr "E-post Berjocht Fermelding"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Berjocht foarbyld"
+
+msgid "arialabelmailboxmenu"
+msgstr "Map aksje menu"
+
+msgid "arialabellistselectmenu"
+msgstr "Lyst seleksje menu"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Stream fermelding menu"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Berjocht lyst werjefte en sortearjen opsjes"
+
+msgid "arialabelmailimportdialog"
+msgstr "Berjocht ymport skerm"
+
+msgid "arialabelmessagenav"
+msgstr "Berjocht navigaasje"
+
+msgid "arialabelmessagebody"
+msgstr "Berjocht Ynhâld"
+
+msgid "arialabelmessageactions"
+msgstr "Berjocht aksjes"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Kontakten syk formulier"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Kontakt syk ynbring"
+
+msgid "arialabelmessageheaders"
+msgstr "Berjocht koppen"
+
+msgid "arialabelforwardingoptions"
+msgstr "Trochstjoer opsjes"
+
+msgid "arialabelreplyalloptions"
+msgstr "Antwurdzje-alle opsjes"
+
+msgid "arialabelmoremessageactions"
+msgstr "Mear berjocht aksjes"
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Markearje selektearre berjochten as..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Skriuw opsjes"
+
+msgid "arialabelresponsesmenu"
+msgstr "Ynblikte antwurden menu"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Taheaksel oplaad formulier"
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "Taheaksel foarbyld"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Lyst fan kontakten en groepen te selektearjen as ûntfangers"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Kontakt eksport opsjes"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Adresboek/groep opsjes"
+
+msgid "arialabelpreferencesform"
+msgstr "Foarkarren formulier"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Identiteit bewurkings formulier"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Antwurd bewurkings formulier"
+
+msgid "arialabelsearchterms"
+msgstr "Syktermen"
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr "Lyst toetseboerd navigaasje"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Pylken op/del: Beweegje rige fokus/seleksje.\n"
+"Spatie: Selektearje fokuse rige.\n"
+"Shift + op/del: Selektearje oanfoljende rige boppe/ûnder.\n"
+"Ctrl + Spatie: Foegje fokuse rige ta oan seleksje/ferwiderje fan seleksje."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Pylken rjochts/lofts: útwreidzje/ynsakje berjocht stream (allinnich yn stream modus).\n"
+"Enter: Iepenje it selektearre/fokuse berjocht.\n"
+"Delete: Ferpleats selektearre berjocht nei jiskefet."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Iepenje it selektearre/fokuse kontakt."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Der is in flater bard!"
+
+msgid "messages.loginfailed"
+msgstr "Ynloggen mislearre."
+
+msgid "messages.cookiesdisabled"
+msgstr "Jo browser akseptearret gjin koekjes."
+
+msgid "messages.sessionerror"
+msgstr "Jo sesje is ûnjildich of ferrûn."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "Ferbining mei opslach tsjinner mislearre."
+
+msgid "messages.servererror"
+msgstr "Tsjinner Flater!"
+
+msgid "messages.servererrormsg"
+msgstr "Tsjinner Flater: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Ynloggen te faak mislearre. Besykje it letter nochris."
+
+msgid "messages.connerror"
+msgstr "Ferbinings Flater (Kin de tsjinner net berikke)!"
+
+msgid "messages.dberror"
+msgstr "Databank Flater!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "De popup finster waard blokkearre!"
+
+msgid "messages.requesttimedout"
+msgstr "Fersyk ferrûn"
+
+msgid "messages.errorreadonly"
+msgstr "Koe operaasje net útfiere. Map kin allinnich lêzen wurde."
+
+msgid "messages.errornoperm"
+msgstr "Koe operaasje net útfiere. Tastimming wegere."
+
+msgid "messages.erroroverquota"
+msgstr "Koe operaasje net útfiere. Gjin frije skiifromte."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Gjin frije skiifromte. Brûk Shift + DEL om in berjocht te wiskjen."
+
+msgid "messages.invalidrequest"
+msgstr "Ûnjildich fersyk! Gjin data waard bewarre."
+
+msgid "messages.invalidhost"
+msgstr "Unjildige tsjinner namme."
+
+msgid "messages.nomessagesfound"
+msgstr "Gjin berjochten fûn yn dit postfek."
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "Postfek is leech"
+
+msgid "messages.nomessages"
+msgstr "Gjin berjochten"
+
+msgid "messages.refreshing"
+msgstr "Ferfarskje..."
+
+msgid "messages.loading"
+msgstr "Lade..."
+
+msgid "messages.uploading"
+msgstr "Bestân oplade..."
+
+msgid "messages.attaching"
+msgstr "Bestân tafoegje..."
+
+msgid "messages.uploadingmany"
+msgstr "Bestânnen oplade..."
+
+msgid "messages.loadingdata"
+msgstr "Data lade..."
+
+msgid "messages.checkingmail"
+msgstr "Kontrolearje op nije berjochten..."
+
+msgid "messages.sendingmessage"
+msgstr "Berjocht ferstjoere..."
+
+msgid "messages.messagesent"
+msgstr "Berjocht mei sukses ferstjoerd."
+
+msgid "messages.savingmessage"
+msgstr "Berjocht bewarje..."
+
+msgid "messages.messagesaved"
+msgstr "Berjocht bewarre yn ûntwerpen."
+
+msgid "messages.successfullysaved"
+msgstr "Mei sukses bewarre."
+
+msgid "messages.savingresponse"
+msgstr "Antwurd tekst bewarje..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Wolle jo dizze antwurd tekst echt wiskje?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontakt mei sukses taheakke oan adresboek."
+
+msgid "messages.contactexists"
+msgstr "In kontakt mei deselde e-post adres bestiet al."
+
+msgid "messages.contactnameexists"
+msgstr "In kontakt mei deselde namme bestiet al."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Om jo privacy te beskermjen binne eksterne ôfbyldingen blokkeare yn dit "
+"berjocht."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Dit is in fersifere berjocht en kin net werjûn wurde. Sorry!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Dit is in fersifere berjocht en kin ûntsifere wurde mei jo browser "
+"ekstinsje."
+
+msgid "messages.nopubkeyfor"
+msgstr "Gjin jildich iepenbiere kaai fûn foar $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Gjin jildich iepenbiere kaai fûn foar jo stjoerder identiteit. Wolle jo it "
+"berjocht allinnich foar de ûntfangers fersiferje?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Al oanbeane taheaksels kinne net fersifere wurde. Asjebleaft op 'e nij "
+"taheakje yn de fersifering bewurker."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Wolle jo op publike kaai tsjinners sykje nei de missende kaaien?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "De folgjende publike kaaien binne fûn:"
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Gjin kontakten fûn."
+
+msgid "messages.contactnotfound"
+msgstr "De opfrege kontakt waard net fûn."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Berjocht koe net ferstjoerd wurde."
+
+msgid "messages.senttooquickly"
+msgstr "Wachtsje $sec sekonde(n) foar it ferstjoeren fan dit berjocht."
+
+msgid "messages.errorsavingsent"
+msgstr "Der barde in flater ûnder it bewarjen fan ferstjoerd berjocht."
+
+msgid "messages.errorsaving"
+msgstr "Der barde in flater ûnder it bewarjen."
+
+msgid "messages.errormoving"
+msgstr "Koe berjocht(en) net ferpleatse."
+
+msgid "messages.errorcopying"
+msgstr "Koe berjocht(en) net kopieare."
+
+msgid "messages.errordeleting"
+msgstr "Koe berjocht(en) net wiskje."
+
+msgid "messages.errormarking"
+msgstr "Koe berjocht(en) net markearje."
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "Wolle jo selektearre kontakt(en) echt wiskje?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Wolle jo selektearre groep echt wiskje?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Wolle jo selektearre berjocht(en) echt wiskje?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Wolle jo dizze map echt wiskje?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Wolle jo echt alle berjochten yn dizze map wiskje?"
+
+msgid "messages.contactdeleting"
+msgstr "Kontakt(en) wiskje..."
+
+msgid "messages.groupdeleting"
+msgstr "Groep wiskje..."
+
+msgid "messages.folderdeleting"
+msgstr "Map wiskje..."
+
+msgid "messages.foldermoving"
+msgstr "Map ferpleatse..."
+
+msgid "messages.foldersubscribing"
+msgstr "Ynskriuwe map..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Utskriuwe map..."
+
+msgid "messages.formincomplete"
+msgstr "It formulier wie net hielendal ynfolle."
+
+msgid "messages.noemailwarning"
+msgstr "Fier in jildich e-post adres yn."
+
+msgid "messages.nonamewarning"
+msgstr "Fier in namme yn."
+
+msgid "messages.nopagesizewarning"
+msgstr "Fier in side grutte yn."
+
+msgid "messages.nosenderwarning"
+msgstr "Fier stjoerder e-post adres yn."
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Fier op syn minst ien ûntfanger yn."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "Tefolle iepenbiere ûntfangers"
+
+msgid "messages.nosubjectwarning"
+msgstr "It \"Underwerp\" fjild is leech. Wolle jo no ien ynfiere?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Gjin ûnderwerp"
+
+msgid "messages.nobodywarning"
+msgstr "Dit berjocht sûnder tekst ferstjoere?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"It berjocht is net ferstjoerd en hat net-bewarre feroarings. Wolle jo de "
+"feroarings fuort smite?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"In earder komponearre mar net-ferstjoerd berjocht waard fûn.\\n\\nSubject: "
+"$subject\\nSaved: $date\\n\\nWolle jo dit berjocht weromsette?"
+
+msgid "messages.nosearchname"
+msgstr "Fier in kontakt namme of e-post adres yn."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Noch net alle taheaksels binne opladen. Jo kinne wachtsje of it opladen "
+"ôfbrekke."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr berjochten fûn."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr kontakten fûn."
+
+msgid "messages.searchnomatch"
+msgstr "Sykjen hat gjin risseltaten opsmiten."
+
+msgid "messages.searching"
+msgstr "Sykje..."
+
+msgid "messages.checking"
+msgstr "Kontrolearje..."
+
+msgid "messages.stillsearching"
+msgstr "Noch oan it sykjen..."
+
+msgid "messages.nospellerrors"
+msgstr "Gjin stavering flaters fûn."
+
+msgid "messages.folderdeleted"
+msgstr "Map mei sukses wiske."
+
+msgid "messages.foldersubscribed"
+msgstr "Map mei sukses ynskreaun."
+
+msgid "messages.folderunsubscribed"
+msgstr "Map mei sukses útskreaun."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Mei sukses wiske."
+
+msgid "messages.converting"
+msgstr "Opmaak wiskje..."
+
+msgid "messages.messageopenerror"
+msgstr "Koe berjocht net fan tsjinner lade."
+
+msgid "messages.filelinkerror"
+msgstr "Taheakjen fan bestân mislearre."
+
+msgid "messages.fileuploaderror"
+msgstr "Bestân oplade mislearre."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "It opladen bestân is grutter as de maksimale grutte fan $size."
+
+msgid "messages.filecounterror"
+msgstr "Jo kinne maksimaal $count bestânnen yn ien kear oplade."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Bestân taheakje mislearre. Maksimum grutte fan in berjocht ($size) oer gien."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "Mei sukses $nr kontakten kopiearre."
+
+msgid "messages.movesuccess"
+msgstr "Mei sukses $nr kontakten ferpleatst."
+
+msgid "messages.copyerror"
+msgstr "Koe gjin kontakten kopiearje."
+
+msgid "messages.moveerror"
+msgstr "Koe gjin kontakten ferpleatse."
+
+msgid "messages.sourceisreadonly"
+msgstr "Dizze adres boarne kin allinnich lêzen wurde."
+
+msgid "messages.errorsavingcontact"
+msgstr "Koe kontakt adres net bewarje."
+
+msgid "messages.movingmessage"
+msgstr "Berjocht(en) ferpleatse..."
+
+msgid "messages.copyingmessage"
+msgstr "Berjocht(en) kopiearje..."
+
+msgid "messages.copyingcontact"
+msgstr "Kontakt(en) kopiearje..."
+
+msgid "messages.movingcontact"
+msgstr "Kontakt(en) ferpleatse..."
+
+msgid "messages.deletingmessage"
+msgstr "Berjocht(en) wiskje..."
+
+msgid "messages.markingmessage"
+msgstr "Berjocht(en) markearje..."
+
+msgid "messages.addingmember"
+msgstr "Kontakt(en) oan de groep tafoegje..."
+
+msgid "messages.removingmember"
+msgstr "Kontakt(en) út de groep ferwiderje..."
+
+msgid "messages.receiptsent"
+msgstr "Mei súkses in lêzen ûntfangstbewiis ferstjoerd."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Koe it ûntfangstbewiis net stjoere."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Wolle jo echt dizze identiteit wiskje?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Jo kinne dizze identiteit net wiskje, it is jo lêste."
+
+msgid "messages.forbiddencharacter"
+msgstr "Mapnamme befettet in ferbean karakter."
+
+msgid "messages.selectimportfile"
+msgstr "Selektearje in bestân om op te laden."
+
+msgid "messages.addresswriterror"
+msgstr "It selektearre adres boek is net skriuwber."
+
+msgid "messages.contactaddedtogroup"
+msgstr "De kontakten mei sukses oan dizze groep taheakke."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "De kontakten mei sukses út dizze groep ferwidere."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Gjin groep opdrachten feroare."
+
+msgid "messages.importwait"
+msgstr "Ymportearjen, in amerijke..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Ymport mislearre! It opladen bestân is net in jildich ymport data bestân."
+
+msgid "messages.importconfirm"
+msgstr "<b>Mei sukses ymportearre $inserted kontakten</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Mei sukses $nr berjochten ymportearre"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Ymport mislearre! It opladen bestân is net in jildich berjocht of postfek "
+"bestân"
+
+msgid "messages.opnotpermitted"
+msgstr "Operaasje net tastien!"
+
+msgid "messages.nofromaddress"
+msgstr "E-post adres mist yn selektearre identiteit."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Troch te wiskeljen fan berwurker kin tekst opmaak ferlern gean. Wolle jo "
+"trochgean?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"In fatale konfiguraasje flater. Nim fuortendaliks kontakt op mei jo "
+"systeembehearder. <B>Jo berjocht kin net stjoerd wurde.</ B>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP Flater ($code): Ferbining mei tsjinner mislearre."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP Flater ($code): Ferifikaasje mislearre."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP Flater ($code): Stjoerder fêststelle mislearre \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP Flater ($code): Untfanger tafoegje mislearre \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP Flater: Koe ûntfangers lyst net ferwurkje."
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP Flater: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Unjildich e-post adres: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Tefolle ûntfangers. Ferminderje it tal fan ûntfangers nei $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "It tal fan groep leden is grutter as it maksimum fan $max."
+
+msgid "messages.internalerror"
+msgstr "In ynterne flater. Besykje it nochris."
+
+msgid "messages.contactdelerror"
+msgstr "Koe kontakt(en) net wiskje."
+
+msgid "messages.contactdeleted"
+msgstr "Kontakt(en) mei sukses wiske."
+
+msgid "messages.contactrestoreerror"
+msgstr "Koe wiske kontakt(en) net werom sette."
+
+msgid "messages.contactrestored"
+msgstr "Kontakt(en) mei sukses werom setten."
+
+msgid "messages.groupdeleted"
+msgstr "Groep mei sukses wiske."
+
+msgid "messages.grouprenamed"
+msgstr "Groep namme mei sukses feroare."
+
+msgid "messages.groupcreated"
+msgstr "Groep mei sukses oanmakke."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Bewarre syk opdracht mei sukses wiske."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Koe bewarre syk opdracht net wiskje."
+
+msgid "messages.savedsearchcreated"
+msgstr "Syk opdracht mei sukses bewarre."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Koe syk opdracht net bewarje."
+
+msgid "messages.messagedeleted"
+msgstr "Berjocht(en) mei sukses wiske."
+
+msgid "messages.messagemoved"
+msgstr "Berjocht(en) mei sukses ferpleatst."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Berjocht(en) mei sukses nei Jiskefet ferpleatse."
+
+msgid "messages.messagecopied"
+msgstr "Berjocht(en) mei sukses kopieare."
+
+msgid "messages.messagemarked"
+msgstr "Berjocht(en) mei sukses markeare."
+
+msgid "messages.autocompletechars"
+msgstr "Fier op syn minst $min tekens yn foar autokompleet."
+
+msgid "messages.autocompletemore"
+msgstr "Mear oerienkommende risseltaten fûn. Typ mear tekens."
+
+msgid "messages.namecannotbeempty"
+msgstr "Namme kin net leech wêze."
+
+msgid "messages.nametoolong"
+msgstr "Namme is te lang."
+
+msgid "messages.namedotforbidden"
+msgstr "Mapnamme kin net mei in punt begjinne."
+
+msgid "messages.folderupdated"
+msgstr "Map mei sukses bywurke."
+
+msgid "messages.foldercreated"
+msgstr "Map mei sukses oanmakke."
+
+msgid "messages.invalidimageformat"
+msgstr "Gjin jildich ôfbyldings formaat."
+
+msgid "messages.mispellingsfound"
+msgstr "Stavering flaters ûntdutsen yn it berjocht."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Koe map net oanmeitsje/ferhúzje yn selektearre boppelizzende map. Gjin "
+"tagong rjochten."
+
+msgid "messages.messagetoobig"
+msgstr "It berjocht diel is te grut om te ferwurkjen."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Warskôging: Dizze webmail tsjinst fereasket Javascript! Om it te brûken "
+"moatte jo Javascript ynskeakelje yn jo browser ynstellings."
+
+msgid "messages.messageissent"
+msgstr ""
+"Dit berjocht wie al ferstjoerd, mar noch net bewarre. Wolle jo it no "
+"bewarje?"
+
+msgid "messages.errnotfound"
+msgstr "Bestân Net Fûn"
+
+msgid "messages.errnotfoundexplain"
+msgstr "De frege boarne waard net fûn!"
+
+msgid "messages.errfailedrequest"
+msgstr "Mislearre Fersyk"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Autorisaasje Mislearre"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Koe net nei gean oft jo machtige binne om tagong te krijen ta dizze tsjinst!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Fersyk Kontrole Mislearre"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Foar jo beskerming, tagong ta dizze boarne is befeilige tsjin CSRF.\n"
+"As jo dit sjogge, hawwe jo net útlogge foar it ferlitten fan de web applikaasje.\n"
+"\n"
+"Minskelike ynteraksje is no ferplichte om fierder te gean."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Nim kontakt op mei jo tsjinner-behearder."
+
+msgid "messages.clicktoresumesession"
+msgstr "Klik hjir om jo foarige sesje te ferfetsjen"
+
+msgid "messages.errcomposesession"
+msgstr "Skriuw berjocht sesje flater"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Fersyk skriuw berjocht sesje net fûn."
+
+msgid "messages.clicktocompose"
+msgstr "Klik hjir om in nij berjocht te skriuwen"
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

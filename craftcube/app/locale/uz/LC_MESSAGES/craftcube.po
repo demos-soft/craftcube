@@ -1,0 +1,2891 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "$product ga xush kelibsiz!"
+
+msgid "username"
+msgstr "Foydalanuvchi nomi"
+
+msgid "password"
+msgstr "Parol"
+
+msgid "server"
+msgstr "Server"
+
+msgid "login"
+msgstr "Kirish"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr "Menyu"
+
+msgid "logout"
+msgstr "Chiqish"
+
+msgid "mail"
+msgstr "Pochta"
+
+msgid "settings"
+msgstr "Sozlamalar"
+
+msgid "addressbook"
+msgstr "Kontaktlar"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Kirish xatlari"
+
+msgid "drafts"
+msgstr "Qoralama xatlar"
+
+msgid "sent"
+msgstr "Jo`natilgan xatlar"
+
+msgid "trash"
+msgstr "Savat"
+
+msgid "junk"
+msgstr "SPAM"
+
+msgid "show_real_foldernames"
+msgstr "Maxsus papkalarning haqiqiy nomini ko`rsatish"
+
+msgid "subject"
+msgstr "Mavzu"
+
+msgid "from"
+msgstr "Kimdan"
+
+msgid "sender"
+msgstr "Jo`natuvchi"
+
+msgid "to"
+msgstr "Kimga"
+
+msgid "cc"
+msgstr "Nusxasi"
+
+msgid "bcc"
+msgstr "Berkitilgan"
+
+msgid "replyto"
+msgstr "Javob berish"
+
+msgid "followupto"
+msgstr "Kuzatib borish"
+
+msgid "date"
+msgstr "Sana"
+
+msgid "size"
+msgstr "O`lchami"
+
+msgid "priority"
+msgstr "Imtiyoz"
+
+msgid "organization"
+msgstr "Tashkilot"
+
+msgid "readstatus"
+msgstr "O`qilganlik statusi"
+
+msgid "listoptions"
+msgstr "Ro`yxat sozlamalari..."
+
+msgid "listoptionstitle"
+msgstr "Xossalar ro'yxati"
+
+msgid "mailboxlist"
+msgstr "Papkalar"
+
+msgid "messagesfromto"
+msgstr "$count ta xat $from dan $to ga "
+
+msgid "threadsfromto"
+msgstr "$count ta muhokama $from dan $to ga "
+
+msgid "messagenrof"
+msgstr "$count dan $nr ta xat"
+
+msgid "fromtoshort"
+msgstr "$count ta donadan $from dan– $to ga"
+
+msgid "copy"
+msgstr "Nusxa olish"
+
+msgid "move"
+msgstr "Ko`chirish"
+
+msgid "moveto"
+msgstr "... ga ko`chirish"
+
+msgid "copyto"
+msgstr "... ga nusxa olish"
+
+msgid "download"
+msgstr "Yuklash"
+
+msgid "open"
+msgstr "Ochish"
+
+msgid "showattachment"
+msgstr "Ko`rsatish"
+
+msgid "showanyway"
+msgstr "Shunday bo`lsada, ko`rsatish"
+
+msgid "filename"
+msgstr "Fayl nomi"
+
+msgid "filesize"
+msgstr "Fayl o`lchami"
+
+msgid "addtoaddressbook"
+msgstr "Kontaktlarga qo`shish"
+
+msgid "sun"
+msgstr "Yak"
+
+msgid "mon"
+msgstr "Du"
+
+msgid "tue"
+msgstr "Se"
+
+msgid "wed"
+msgstr "Chor"
+
+msgid "thu"
+msgstr "Pa"
+
+msgid "fri"
+msgstr "Ju"
+
+msgid "sat"
+msgstr "Sha"
+
+msgid "sunday"
+msgstr "Yakshanba"
+
+msgid "monday"
+msgstr "Dushanba"
+
+msgid "tuesday"
+msgstr "Seshanba"
+
+msgid "wednesday"
+msgstr "Chorshanba"
+
+msgid "thursday"
+msgstr "Payshanba"
+
+msgid "friday"
+msgstr "Juma"
+
+msgid "saturday"
+msgstr "Shanba"
+
+msgid "jan"
+msgstr "Yan"
+
+msgid "feb"
+msgstr "Fev"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "May"
+
+msgid "jun"
+msgstr "Iyun"
+
+msgid "jul"
+msgstr "Iyul"
+
+msgid "aug"
+msgstr "Avg"
+
+msgid "sep"
+msgstr "Sen"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Noy"
+
+msgid "dec"
+msgstr "Dek"
+
+msgid "longjan"
+msgstr "Yanvar"
+
+msgid "longfeb"
+msgstr "Fevral"
+
+msgid "longmar"
+msgstr "Mart"
+
+msgid "longapr"
+msgstr "Aprel"
+
+msgid "longmay"
+msgstr "May"
+
+msgid "longjun"
+msgstr "Iyun"
+
+msgid "longjul"
+msgstr "Iyul"
+
+msgid "longaug"
+msgstr "Avgust"
+
+msgid "longsep"
+msgstr "Sentyabr"
+
+msgid "longoct"
+msgstr "Oktyabr"
+
+msgid "longnov"
+msgstr "Noyabr"
+
+msgid "longdec"
+msgstr "Dekabr"
+
+msgid "today"
+msgstr "Bugun"
+
+msgid "refresh"
+msgstr "Yangilash"
+
+msgid "checkmail"
+msgstr "Pochtani yetkazish"
+
+msgid "compose"
+msgstr "Xat yozish"
+
+msgid "writenewmessage"
+msgstr "Yangi xat"
+
+msgid "reply"
+msgstr "Javob berish"
+
+msgid "replytomessage"
+msgstr "Javob berish"
+
+msgid "replytoallmessage"
+msgstr ""
+"Ro`yxat bo`yicha yoki jo`natuvchi va barcha qabul qiluvchilarga javob berish"
+
+msgid "replyall"
+msgstr "Hammaga javob berish"
+
+msgid "replylist"
+msgstr "Rassilka ro`yxatiga javob berish"
+
+msgid "forward"
+msgstr "Uzatib yuborish"
+
+msgid "forwardinline"
+msgstr "Xat tarkibida uzatib yuborish"
+
+msgid "forwardattachment"
+msgstr "Biriktirma sifatida yuborish"
+
+msgid "forwardmessage"
+msgstr "Uzatib yuborish"
+
+msgid "bouncemsg"
+msgstr "Qayta uzatish"
+
+msgid "bounce"
+msgstr "Qayta uzatish"
+
+msgid "deletemessage"
+msgstr "Savatga"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Xatni savatga jo`natish"
+
+msgid "printmessage"
+msgstr "Chop etish"
+
+msgid "previousmessage"
+msgstr "Avvalgi xatni ko`rsatish"
+
+msgid "firstmessage"
+msgstr "Dastlabki xatni ko`rsatish"
+
+msgid "nextmessage"
+msgstr "Keyingi xatni ko`rsatish"
+
+msgid "lastmessage"
+msgstr "Oxirgi xatni ko`rsatish"
+
+msgid "backtolist"
+msgstr "Xatlar ro`yxatiga"
+
+msgid "viewsource"
+msgstr "Dastlabki matn"
+
+msgid "mark"
+msgstr "Belgilash"
+
+msgid "markmessages"
+msgstr "Xatni belgilash"
+
+msgid "markread"
+msgstr "O`qilgandek"
+
+msgid "markunread"
+msgstr "O`qilmagandek"
+
+msgid "markflagged"
+msgstr "Belgi o`rnatish"
+
+msgid "markunflagged"
+msgstr "Belgini olish"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Qo`shimcha harakatlar..."
+
+msgid "markallread"
+msgstr "Barchasini o`qilgan deb belgilash"
+
+msgid "folders-cur"
+msgstr "Faqat belgilangan papka"
+
+msgid "folders-sub"
+msgstr "Belgilangan papka va uning tarkibidagi papkalar"
+
+msgid "folders-all"
+msgstr "Barcha papkalar"
+
+msgid "more"
+msgstr "Yana"
+
+msgid "back"
+msgstr "Orqaga"
+
+msgid "options"
+msgstr "Sozlamalar"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr "Birinchi"
+
+msgid "last"
+msgstr "Oxirgi"
+
+msgid "previous"
+msgstr "Avvalgi"
+
+msgid "next"
+msgstr "Keyingi"
+
+msgid "select"
+msgstr "Tanlash"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Barchasi"
+
+msgid "none"
+msgstr "Mavjud emas"
+
+msgid "currpage"
+msgstr "Mazkur sahifa"
+
+msgid "isread"
+msgstr "O`qilgan"
+
+msgid "unread"
+msgstr "O`qilmagan"
+
+msgid "flagged"
+msgstr "Belgilangan"
+
+msgid "unflagged"
+msgstr "Belgilanmagan"
+
+msgid "unanswered"
+msgstr "Javob berilmagan"
+
+msgid "withattachment"
+msgstr "Biriktirmaga ega"
+
+msgid "deleted"
+msgstr "O`chirilgan"
+
+msgid "undeleted"
+msgstr "O`chirilmagan"
+
+msgid "replied"
+msgstr "Javob berilgan"
+
+msgid "forwarded"
+msgstr "Jo`natilgan"
+
+msgid "invert"
+msgstr "Invertlash"
+
+msgid "filter"
+msgstr "Filtr"
+
+msgid "list"
+msgstr "Ro`yxat"
+
+msgid "threads"
+msgstr "Muhokama"
+
+msgid "expand-all"
+msgstr "Barchasini yoyish"
+
+msgid "expand-unread"
+msgstr "O`qilganlarni yoyish"
+
+msgid "collapse-all"
+msgstr "Barchasini berkitish"
+
+msgid "threaded"
+msgstr "Muhokama"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Muhokamalarni yoyish"
+
+msgid "do_expand"
+msgstr "Barcha muhokamalar"
+
+msgid "expand_only_unread"
+msgstr "Faqat o`qilmagan xatlar bilan"
+
+msgid "fromto"
+msgstr "Jo`natuvchi/Qabul qiluvchi"
+
+msgid "flag"
+msgstr "Belgi"
+
+msgid "attachment"
+msgstr "Ilovalar"
+
+msgid "nonesort"
+msgstr "Mavjud emas"
+
+msgid "sentdate"
+msgstr "Jo`natish vaqti"
+
+msgid "arrival"
+msgstr "Qabul qilish vaqti"
+
+msgid "asc"
+msgstr "o`sish tartibida"
+
+msgid "desc"
+msgstr "kamayish tartibida"
+
+msgid "listcolumns"
+msgstr "Kolonkalar"
+
+msgid "listsorting"
+msgstr "bo`yicha taxlash"
+
+msgid "listorder"
+msgstr "Taxlash tartibi"
+
+msgid "listmode"
+msgstr "Ko`rish rejimi"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr "Joylashtirish"
+
+msgid "layoutwidescreen"
+msgstr "Keng ekranli"
+
+msgid "layoutdesktop"
+msgstr "Ish stoli"
+
+msgid "layoutlist"
+msgstr "Ro`yxat"
+
+msgid "layoutwidescreendesc"
+msgstr "Keng ekran( 3 ustunli ko`rinish)"
+
+msgid "layoutdesktopdesc"
+msgstr "Ish stoli (keng sahifa va quyida xat ko'rinishi)"
+
+msgid "layoutlistdesc"
+msgstr "Ro'yxat (xat ko'rinishi yo'q)"
+
+msgid "folderactions"
+msgstr "... papka ustida operatsiya"
+
+msgid "compact"
+msgstr "Siqish"
+
+msgid "empty"
+msgstr "Bo`shatish"
+
+msgid "importmessages"
+msgstr "Xatlarni import qilish"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Kvota"
+
+msgid "unknown"
+msgstr "ma`lum emas"
+
+msgid "unlimited"
+msgstr "cheklanmagan"
+
+msgid "quotatype"
+msgstr "Kvota turi"
+
+msgid "quotatotal"
+msgstr "Limit"
+
+msgid "quotaused"
+msgstr "Foydalanilgan"
+
+msgid "quotastorage"
+msgstr "Disk hajmi"
+
+msgid "quotamessage"
+msgstr "Xatlar soni"
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Tezkor qidirish"
+
+msgid "searchplaceholder"
+msgstr "Izlash..."
+
+msgid "resetsearch"
+msgstr "Сброс"
+
+msgid "searchmod"
+msgstr "Qidirish variantlari"
+
+msgid "msgtext"
+msgstr "Barcha xatlar"
+
+msgid "body"
+msgstr "Xat tarkibi"
+
+msgid "type"
+msgstr "Turi"
+
+msgid "namex"
+msgstr "Ism"
+
+msgid "searchscope"
+msgstr "Viloyat"
+
+msgid "currentfolder"
+msgstr "Mazkur papka"
+
+msgid "subfolders"
+msgstr "Shu va uning tarkibidagi papkalar"
+
+msgid "allfolders"
+msgstr "Barcha papkalar"
+
+msgid "searchinterval-1W"
+msgstr "1 haftadan ko`proq"
+
+msgid "searchinterval-1M"
+msgstr "1 oydan ko`proq"
+
+msgid "searchinterval-1Y"
+msgstr "1 yildan ko`proq"
+
+msgid "searchinterval1W"
+msgstr "1 hahftadan kamroq"
+
+msgid "searchinterval1M"
+msgstr "1 oydan kamroq"
+
+msgid "searchinterval1Y"
+msgstr "1 yildan kamroq"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Yangi oynada ochish"
+
+msgid "emlsave"
+msgstr "Saqlash (.eml)"
+
+msgid "changeformattext"
+msgstr "Oddiy matn ko`rinishida tasvirlash"
+
+msgid "changeformathtml"
+msgstr "HTML formatda tasvirlash"
+
+msgid "editasnew"
+msgstr "Yangi kabi tahrirlash"
+
+msgid "send"
+msgstr "Jo`natish"
+
+msgid "sendmessage"
+msgstr "Hoziroq jo`natish"
+
+msgid "savemessage"
+msgstr "Qoralamaga saqlash"
+
+msgid "addattachment"
+msgstr "Ilova qo`shish"
+
+msgid "charset"
+msgstr "Kodirovka"
+
+msgid "editortype"
+msgstr "Tahrirlovchi"
+
+msgid "returnreceipt"
+msgstr "Javob so`rovi"
+
+msgid "dsn"
+msgstr "Yetib borganligi haqida eslatma"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "$sender yozgan kun $date:"
+
+msgid "originalmessage"
+msgstr "Asl xat"
+
+msgid "selectimage"
+msgstr "Rasm tanlash"
+
+msgid "addimage"
+msgstr "Rasm qo`shish"
+
+msgid "selectmedia"
+msgstr "Video tanlash"
+
+msgid "addmedia"
+msgstr "Video qo`shish"
+
+msgid "encrypt"
+msgstr "Shiffrlash"
+
+msgid "encryptmessage"
+msgstr "Xatni shifrlash"
+
+msgid "encryptmessagemailvelope"
+msgstr "Mailvelope yordamida xatni shifrlash"
+
+msgid "importpubkeys"
+msgstr "Ochiq kalitlarni import qilish"
+
+msgid "encryptedsendialog"
+msgstr "Shifrlangan xatni jo`natish"
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr "Kalit ID si"
+
+msgid "keylength"
+msgstr "Bit"
+
+msgid "keyexpired"
+msgstr "Muddati o`tgan"
+
+msgid "keyrevoked"
+msgstr "Qayta tuzilgan"
+
+msgid "bccinstead"
+msgstr "BCCdan foydalanish"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr ""
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Ma`lumotlarni o`zgartirish"
+
+msgid "spellcheck"
+msgstr "Orfografiya"
+
+msgid "checkspelling"
+msgstr "Orfografiyani tekshirish"
+
+msgid "resumeediting"
+msgstr "Tahrirlashni  davom ettirish"
+
+msgid "revertto"
+msgstr "Tuzatmani bekor qilish"
+
+msgid "restore"
+msgstr "Qayta tiklash"
+
+msgid "restoremessage"
+msgstr "Xabar qayta tiklansinmi?"
+
+msgid "ignore"
+msgstr "O`tkazib yuborish"
+
+msgid "responses"
+msgstr "Javoblar"
+
+msgid "insertresponse"
+msgstr "Javob qo`yish"
+
+msgid "manageresponses"
+msgstr "Javoblarni boshqarish"
+
+msgid "newresponse"
+msgstr "Yangi javob yaratish"
+
+msgid "addresponse"
+msgstr "Javob yaratish"
+
+msgid "editresponse"
+msgstr "Javobni tahrirlash"
+
+msgid "editresponses"
+msgstr "Javoblarni tahrirlash"
+
+msgid "responsename"
+msgstr "Nomlanishi"
+
+msgid "responsetext"
+msgstr "Javob matni"
+
+msgid "attach"
+msgstr "Biriktirish"
+
+msgid "attachments"
+msgstr "Ilovalar"
+
+msgid "upload"
+msgstr "Yuklash"
+
+msgid "uploadprogress"
+msgstr "$percent ( $total dan $current)"
+
+msgid "close"
+msgstr "Закрыть"
+
+msgid "messageoptions"
+msgstr "Xat sozlamalari..."
+
+msgid "togglecomposeoptions"
+msgstr "Yaratish parametrlari"
+
+msgid "attachmentrename"
+msgstr "Ilova nomini o`zgartirish"
+
+msgid "low"
+msgstr "Pastroq"
+
+msgid "lowest"
+msgstr "Pastr"
+
+msgid "normal"
+msgstr "Normal."
+
+msgid "high"
+msgstr "Yuqori"
+
+msgid "highest"
+msgstr "O`ta yuqori."
+
+msgid "nosubject"
+msgstr "(nomlanmagan)"
+
+msgid "showimages"
+msgstr "Rasmlarni tasvirlash"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "$sender ning barcha xatlarida rasmlarni tasvirlash"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Bu qoralama."
+
+msgid "andnmore"
+msgstr "yana $nr..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Yana xat sarlavhalarini yuklash"
+
+msgid "togglefullheaders"
+msgstr "Xatlarning asl sarlavhalarini ko`rsatish"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Matn"
+
+msgid "savesentmessagein"
+msgstr "Saqlash:"
+
+msgid "dontsave"
+msgstr "saqlama"
+
+msgid "maxuploadsize"
+msgstr "Faylning maksimal hajmi $size "
+
+msgid "addcc"
+msgstr "Nusxasi"
+
+msgid "addbcc"
+msgstr "Berkitilgan nusxasi"
+
+msgid "addreplyto"
+msgstr "Kimga javob berish"
+
+msgid "addfollowupto"
+msgstr "Followup-To ga qo`shish"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Mazkur xat jo`natuvchisi xat o`qilganligi haqida eslatma yuborishni "
+"so`ragan. Eslatmani yuborasizmi?"
+
+msgid "receiptread"
+msgstr "O`qilganligi haqida eslatma"
+
+msgid "yourmessage"
+msgstr "Bu sizning xatingiz o`qilganligi haqida eslatma"
+
+msgid "receiptnote"
+msgstr ""
+"Bu eslatma xat qabul qiluvchi tomonidan ochilganligini bildiradi, biroq "
+"uning o`qilganligini anglatmaydi."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Ko`rsatiladigan nom"
+
+msgid "firstname"
+msgstr "Ism"
+
+msgid "surname"
+msgstr "Familiya"
+
+msgid "middlename"
+msgstr "Otasining ismi"
+
+msgid "nameprefix"
+msgstr "Prefiks"
+
+msgid "namesuffix"
+msgstr "Suffiks"
+
+msgid "nickname"
+msgstr "Taxallus"
+
+msgid "jobtitle"
+msgstr "Lavozim"
+
+msgid "department"
+msgstr "Bo`lim"
+
+msgid "gender"
+msgstr "Jins"
+
+msgid "maidenname"
+msgstr "Qizlik familiyasi"
+
+msgid "email"
+msgstr "E-Mail"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Manzil"
+
+msgid "street"
+msgstr "Ko`cha"
+
+msgid "locality"
+msgstr "Shahar"
+
+msgid "zipcode"
+msgstr "Indeks"
+
+msgid "region"
+msgstr "Viloyat"
+
+msgid "country"
+msgstr "Mamlakat"
+
+msgid "birthday"
+msgstr "Tug`ilgan kun"
+
+msgid "anniversary"
+msgstr "Yillik"
+
+msgid "website"
+msgstr "Veb sayt"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Eslatmalar"
+
+msgid "male"
+msgstr "erkak"
+
+msgid "female"
+msgstr "ayol"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Boshqaruvchi"
+
+msgid "assistant"
+msgstr "Yordamchi"
+
+msgid "spouse"
+msgstr "Turmush o`rtog`i"
+
+msgid "allfields"
+msgstr "Barcha maydonlar"
+
+msgid "search"
+msgstr "Qidirish"
+
+msgid "searchresult"
+msgstr "Qidirish natijalari"
+
+msgid "advsearch"
+msgstr "Kengaytirilgan qidiruv"
+
+msgid "advanced"
+msgstr "Qo`shimcha"
+
+msgid "other"
+msgstr "Boshqa"
+
+msgid "printcontact"
+msgstr "Kontaktlarni chop etish"
+
+msgid "qrcode"
+msgstr "QR kod"
+
+msgid "typehome"
+msgstr "Uy"
+
+msgid "typework"
+msgstr "Ish"
+
+msgid "typeother"
+msgstr "Boshqa"
+
+msgid "typemobile"
+msgstr "Mobil"
+
+msgid "typemain"
+msgstr "Asosiy"
+
+msgid "typehomefax"
+msgstr "Uy faksi"
+
+msgid "typeworkfax"
+msgstr "Ish faksi"
+
+msgid "typecar"
+msgstr "Avtomobil"
+
+msgid "typepager"
+msgstr "Peydjer"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Yordamchi"
+
+msgid "typehomepage"
+msgstr "Uy sahifasi"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Maydon qo`shish..."
+
+msgid "addcontact"
+msgstr "Kontakt qo`shish"
+
+msgid "editcontact"
+msgstr "Kontaktni tahrirlash"
+
+msgid "contacts"
+msgstr "Kontaktlar"
+
+msgid "contactproperties"
+msgstr "Kontakt xossalari"
+
+msgid "contactnameandorg"
+msgstr "Nom va tashkilot"
+
+msgid "personalinfo"
+msgstr "Shaxsiy ma`lumot"
+
+msgid "personal"
+msgstr "Shaxsiy"
+
+msgid "contactphoto"
+msgstr "Kontakt surati"
+
+msgid "edit"
+msgstr "Tahrirlash"
+
+msgid "cancel"
+msgstr "Bekor qilish"
+
+msgid "save"
+msgstr "Saqlash"
+
+msgid "delete"
+msgstr "O`chirish"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Qayta nomlash"
+
+msgid "addphoto"
+msgstr "Qo`shish"
+
+msgid "replacephoto"
+msgstr "Almashtirish"
+
+msgid "uploadphoto"
+msgstr "Surat yuklash"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "Yangi kontakt yaratish"
+
+msgid "deletecontact"
+msgstr "Tanlangan kontaktlarni o`chirish"
+
+msgid "composeto"
+msgstr "Tanlangan kontaktlar uchun xat yaratish"
+
+msgid "contactsfromto"
+msgstr "$count ta $from dan $to ga kontaktlar"
+
+msgid "print"
+msgstr "Chop etish"
+
+msgid "export"
+msgstr "Eksport qilish"
+
+msgid "exportall"
+msgstr "Barchasini eksport qilish"
+
+msgid "exportsel"
+msgstr "Tanlanganlarni eksport qilish"
+
+msgid "exportvcards"
+msgstr "Kontaktalrni vCard ko`rinishida eksport qilish"
+
+msgid "newgroup"
+msgstr "Yangi guruh yaratish"
+
+msgid "addgroup"
+msgstr "Guruh qo`shish"
+
+msgid "grouprename"
+msgstr "Guruh nomini o`zgartirish"
+
+msgid "groupdelete"
+msgstr "Guruhni o`chirish"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Tanlangan kontaktlarni guruhdan o`chirish"
+
+msgid "uponelevel"
+msgstr "Bir pog`ona yuqoriga"
+
+msgid "previouspage"
+msgstr "Avvalgi sahifani ko`rsatish"
+
+msgid "firstpage"
+msgstr "Birinchi sahifani ko`rsatish"
+
+msgid "nextpage"
+msgstr "Keyingi sahifani ko`rsatish"
+
+msgid "lastpage"
+msgstr "Oxirgi sahifani ko`rsatish"
+
+msgid "group"
+msgstr "Guruh"
+
+msgid "groups"
+msgstr "Guruhlar"
+
+msgid "listgroup"
+msgstr "Guruh a`zolari ro`yxati"
+
+msgid "personaladrbook"
+msgstr "Shaxsiy manzillar"
+
+msgid "searchsave"
+msgstr "So`rovni saqlash"
+
+msgid "searchdelete"
+msgstr "So`rovni o`chirish"
+
+msgid "import"
+msgstr "Import qilish"
+
+msgid "importcontacts"
+msgstr "Kontaktlarni import qilish"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Kontaktlarni qo`shish:"
+
+msgid "importreplace"
+msgstr "Jami manzillar kitobini almashtirish"
+
+msgid "importgroups"
+msgstr "Importda guruhlar bo`yicha taqsimlash"
+
+msgid "importgroupsall"
+msgstr "Barcha (zaruriyat bo`lganda guruh yaratish)"
+
+msgid "importgroupsexisting"
+msgstr "Faqat mavjud guruhlar uchun"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Yakunlandi"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Kun sozlamalari"
+
+msgid "about"
+msgstr "Dastur haqida"
+
+msgid "preferences"
+msgstr "Sozlamalar"
+
+msgid "userpreferences"
+msgstr "Foydalanuvchi sozlamalari"
+
+msgid "editpreferences"
+msgstr "Foydalanuvchi sozlamalarini tahrirlash"
+
+msgid "identities"
+msgstr "Profillar"
+
+msgid "manageidentities"
+msgstr "Profillarni boshqarish"
+
+msgid "newidentity"
+msgstr "Yangi profil yaratish"
+
+msgid "addidentity"
+msgstr "Profil qo`shish"
+
+msgid "editidentity"
+msgstr "Profilni o`zgartirish"
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "HTML ni afzal ko`rish"
+
+msgid "defaultcharset"
+msgstr "Dastlabki holdagi simvollar to`plami"
+
+msgid "htmlmessage"
+msgstr "HTML xat"
+
+msgid "messagepart"
+msgstr "Qismlar"
+
+msgid "digitalsig"
+msgstr "Raqamli imzo"
+
+msgid "dateformat"
+msgstr "Sana formati"
+
+msgid "timeformat"
+msgstr "Vaqt formati"
+
+msgid "prettydate"
+msgstr "Chiroyli sanalar"
+
+msgid "setdefault"
+msgstr "Dastlabki holatdagidek belgilash"
+
+msgid "autodetect"
+msgstr "Avtomatik aniqlash"
+
+msgid "language"
+msgstr "Til"
+
+msgid "timezone"
+msgstr "Vaqt mintaqasi"
+
+msgid "pagesize"
+msgstr "Sahifada qatorlar soni"
+
+msgid "signature"
+msgstr "Imzo"
+
+msgid "dstactive"
+msgstr "Yozgi vaqt"
+
+msgid "showinextwin"
+msgstr "Xatni yangi sahifada ochish"
+
+msgid "composeextwin"
+msgstr "Yangi oynada yaratish"
+
+msgid "htmleditor"
+msgstr "HTML da xat yaratish"
+
+msgid "htmlonreply"
+msgstr "HTML da faqat javob xati uchun"
+
+msgid "htmlonreplyandforward"
+msgstr "HTMLda xabarni qayta uzatish yoki javob berishda"
+
+msgid "htmlsignature"
+msgstr "HTML da imzo"
+
+msgid "showemail"
+msgstr "Elektron pochta manzili va manzil nomini ko`rsatish"
+
+msgid "previewpane"
+msgstr "Dastlabki tasvirlash panelini ko`rsatish"
+
+msgid "skin"
+msgstr "Dizayn uslubi"
+
+msgid "logoutclear"
+msgstr "Chiqishda savatni bo`shatish"
+
+msgid "logoutcompact"
+msgstr "Chiqishda kirish xatlarini siqish"
+
+msgid "uisettings"
+msgstr "Foydalanuvchi interfeysi"
+
+msgid "serversettings"
+msgstr "Server sozlamalari"
+
+msgid "mailboxview"
+msgstr "Pochta qutisi ko`rinishi"
+
+msgid "mdnrequests"
+msgstr "O`qilganligi haqida eslatma"
+
+msgid "askuser"
+msgstr "Jo`natishdan avval so`rash"
+
+msgid "autosend"
+msgstr "Avtomatik tarzda yuborish"
+
+msgid "autosendknown"
+msgstr "Manzil kitobidagi manzillarga eslatma jo`natish, aks holda so`rash"
+
+msgid "autosendknownignore"
+msgstr ""
+"Manzil kitobidagi manzillarga eslatma jo`natish, qolganlariga rad etish"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "So`rovni o`tkazib yuborish"
+
+msgid "readwhendeleted"
+msgstr "O`chirganda o`qilgan deb belgilash"
+
+msgid "flagfordeletion"
+msgstr "O`chirish o`rniga o`chiriladigan deb belgilash"
+
+msgid "skipdeleted"
+msgstr "O`chirilgan xatlarni ko`rsatmaslik"
+
+msgid "deletealways"
+msgstr "Agar savatga joylashtirish amalga oshmayotgan bo`lsa xatni o`chirish"
+
+msgid "deletejunk"
+msgstr "SPAM papkasidagi xatlarni Savatga yubormasdan o`chirish"
+
+msgid "showremoteimages"
+msgstr "Uzoqlashgan rasmlarni ko`rsatish"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "Ma`lum jo`natuvchidan"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "doim"
+
+msgid "alwaysbutplain"
+msgstr "doim, javob faqat matn ko`inishda bo`lgan holdan tashqari"
+
+msgid "showinlineimages"
+msgstr "Ilovadagi rasmlarni xatning ostki qismida ko`rsatish"
+
+msgid "autosavedraft"
+msgstr "Qoralamani avto saqlash"
+
+msgid "everynminutes"
+msgstr "Har $n daqiqada"
+
+msgid "refreshinterval"
+msgstr "Yangilash (Yangi xatlarni tekshirish va hkz.)"
+
+msgid "never"
+msgstr "hech qachon"
+
+msgid "immediately"
+msgstr "zudlik bilan"
+
+msgid "messagesdisplaying"
+msgstr "Xatlarni tasvirlash"
+
+msgid "messagescomposition"
+msgstr "Xat yaratish"
+
+msgid "mimeparamfolding"
+msgstr "Ilovalar nomlari"
+
+msgid "2231folding"
+msgstr "RFC 2231 (faqat yangi dasturlar uchun)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231  (ko`proq moslik)"
+
+msgid "2047folding"
+msgstr "RFC 2047  (eski dasturlar uchun)"
+
+msgid "force7bit"
+msgstr "8 bitli simvollar uchun MIME dan foydalanish"
+
+msgid "savelocalstorage"
+msgstr "Veb brauzerning lokal xotirasida saqlash (vaqtincha)"
+
+msgid "advancedoptions"
+msgstr "Qo`shimcha xossalar"
+
+msgid "toggleadvancedoptions"
+msgstr "Qo`shimcha xossalar"
+
+msgid "focusonnewmessage"
+msgstr "Yangi xatda brauzer oynasini fokuslantirish"
+
+msgid "checkallfolders"
+msgstr "Barcha papkalarda yangi xabarlarni tekshirish"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr " HTML xatda shrift"
+
+msgid "mainoptions"
+msgstr "Asosiy xossalar"
+
+msgid "browseroptions"
+msgstr "Brauzer sozlamalari"
+
+msgid "section"
+msgstr "Bo`lim"
+
+msgid "maintenance"
+msgstr "Xizmat ko`rsatish"
+
+msgid "newmessage"
+msgstr "Yangi xat"
+
+msgid "signatureoptions"
+msgstr "Imzo xossalari"
+
+msgid "whenreplying"
+msgstr "Javob berishda"
+
+msgid "replyempty"
+msgstr "Asl xatlarni izohlamaslik"
+
+msgid "replytopposting"
+msgstr "izohlanayotgandan xatdan avval yangi xatni boshlash"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+"Iqtibosdan yuqorida yangi xatni yozishni boshlang (ortiqcha bo'sh maydonsiz)"
+
+msgid "replybottomposting"
+msgstr "izohlanayotgandan xatdan keyin yangi xatni boshlash"
+
+msgid "replyremovesignature"
+msgstr "javob berishda imzoni yo`qotish"
+
+msgid "autoaddsignature"
+msgstr "Imzoni avtomatik qo`shish"
+
+msgid "newmessageonly"
+msgstr "faqat yangi xatlar uchun"
+
+msgid "replyandforwardonly"
+msgstr "faqat javob va qayta uzatishda"
+
+msgid "insertsignature"
+msgstr "Imzo qo`yish"
+
+msgid "sigbelow"
+msgstr "Izohlanayotgan xatdan so`ng imzo qo`yish"
+
+msgid "sigseparator"
+msgstr "Imzoga standart ajratuvchi qo`yish"
+
+msgid "automarkread"
+msgstr "Xabarlarni o‘qilgan sifatida belgilash"
+
+msgid "afternseconds"
+msgstr " $n sekunddan so`ng"
+
+msgid "reqmdn"
+msgstr "Doim yetkazilganligi haqida eslatmani so`rash"
+
+msgid "reqdsn"
+msgstr "Doim yetkazilganligi holati to`g`risida eslatmani so`rash"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "javob xatini original xat joylashgan joyga qo`yish"
+
+msgid "defaultabook"
+msgstr "Dastlabki holdagi Manzillar kitobi"
+
+msgid "autocompletesingle"
+msgstr "Avto to`ldirishda qo`shimcha manzillarni o`tkazib yuborish"
+
+msgid "listnamedisplay"
+msgstr "Kontaktlar ro`yxatini ko`rsatish"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Jo`natishdan avval orfografiyani tekshirish"
+
+msgid "spellcheckoptions"
+msgstr "Orfografiyani tekshirish parametri"
+
+msgid "spellcheckignoresyms"
+msgstr "Simvolli so`zlarni o`tkazib yuborish"
+
+msgid "spellcheckignorenums"
+msgstr "Raqamli so`zlarni o`tkazib yuborish"
+
+msgid "spellcheckignorecaps"
+msgstr "Katta harfdagi so`zlarni o`tkazib yuborish"
+
+msgid "addtodict"
+msgstr "Lug`atga qo`shish"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Bu ssilka uchun qayta ishlovchini ishga tushirish mailto:"
+
+msgid "standardwindows"
+msgstr "Popup oynalarini standart holda deb qarash"
+
+msgid "forwardmode"
+msgstr "xatni qayta uzatish"
+
+msgid "inline"
+msgstr "matnda"
+
+msgid "asattachment"
+msgstr "ilova ko`rinishida"
+
+msgid "replyallmode"
+msgstr "[Barchaga javob berish] tugmasining dastlabki holdagi vazifasi"
+
+msgid "replyalldefault"
+msgstr "Barchaga javob berish"
+
+msgid "replyalllist"
+msgstr "Rassilka ro`yxatiga javob berish (agar topilsa)"
+
+msgid "allmessages"
+msgstr ""
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Papka"
+
+msgid "folders"
+msgstr "Papkalar"
+
+msgid "foldername"
+msgstr "Papka nomi"
+
+msgid "subscribed"
+msgstr "Imzolangan"
+
+msgid "messagecount"
+msgstr "Xat"
+
+msgid "create"
+msgstr "Yaratish"
+
+msgid "createfolder"
+msgstr "Yangi papka yaratish"
+
+msgid "managefolders"
+msgstr "Papkalarni boshqarish"
+
+msgid "specialfolders"
+msgstr "Alohida papkalar"
+
+msgid "properties"
+msgstr "Xossalar"
+
+msgid "folderproperties"
+msgstr "Papka xossalari"
+
+msgid "parentfolder"
+msgstr "Asos papka"
+
+msgid "location"
+msgstr "Joylashgan o`rni"
+
+msgid "info"
+msgstr "Axborot"
+
+msgid "getfoldersize"
+msgstr "Papka o`lchamini ko`rsatish"
+
+msgid "changesubscription"
+msgstr "Obunani o`zgartirish"
+
+msgid "foldertype"
+msgstr "Katalog turi"
+
+msgid "personalfolder"
+msgstr "Shaxsiy katalog"
+
+msgid "otherfolder"
+msgstr "Boshqa foydalanuvchi katalogi"
+
+msgid "sharedfolder"
+msgstr "Birgalikdagi katalog"
+
+msgid "findfolders"
+msgstr "Papkalarni qidirish"
+
+msgid "findcontacts"
+msgstr "Kontaktlarni topish"
+
+msgid "findmail"
+msgstr "Xat xabarlarini topish"
+
+msgid "namespace.personal"
+msgstr "Shaxsiy"
+
+msgid "namespace.other"
+msgstr "Boshqa foydalanuvchilarniki"
+
+msgid "namespace.shared"
+msgstr "Umumiy"
+
+msgid "dualuselabel"
+msgstr "O'z ichiga olishi mumkin"
+
+msgid "dualusemail"
+msgstr "xatlar"
+
+msgid "dualusefolder"
+msgstr "papkalar"
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Saralash"
+
+msgid "sortasc"
+msgstr "O`sish tartibida"
+
+msgid "sortdesc"
+msgstr "Kamayish tartibida"
+
+msgid "undo"
+msgstr "Bekor qilish"
+
+msgid "installedplugins"
+msgstr "O`rnatilgan qo`shimcha paket(plugin)lar"
+
+msgid "plugin"
+msgstr "paketlar"
+
+msgid "version"
+msgstr "Versiya"
+
+msgid "source"
+msgstr "Manbaa"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Litsenziya"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Qo`lllab-quvvatlash"
+
+msgid "savedsearches"
+msgstr "Saqlangan izlashlar"
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unikod"
+
+msgid "english"
+msgstr "Inglizcha"
+
+msgid "westerneuropean"
+msgstr "G`arbiy Yevropa"
+
+msgid "easterneuropean"
+msgstr "Sharqiy Yevropa"
+
+msgid "southeasterneuropean"
+msgstr "janubi-sharqiy Yevropa"
+
+msgid "baltic"
+msgstr "Boltiqbo`yi"
+
+msgid "cyrillic"
+msgstr "Kirillcha"
+
+msgid "arabic"
+msgstr "Arabcha"
+
+msgid "greek"
+msgstr "Grekcha"
+
+msgid "hebrew"
+msgstr "Ibroniycha"
+
+msgid "turkish"
+msgstr "Turkcha"
+
+msgid "nordic"
+msgstr "Skandinavcha"
+
+msgid "thai"
+msgstr "Taylandcha"
+
+msgid "celtic"
+msgstr "Keltcha"
+
+msgid "vietnamese"
+msgstr "Vetnamcha"
+
+msgid "japanese"
+msgstr "Yaponcha"
+
+msgid "korean"
+msgstr "Koreyscha"
+
+msgid "chinese"
+msgstr "Xitoycha"
+
+msgid "arialabeltopnav"
+msgstr "Oynalarni boshqarish"
+
+msgid "arialabeltasknav"
+msgstr "Dastur vazifalari"
+
+msgid "arialabeltoolbar"
+msgstr "Dastur uskunalar paneli"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "Faol topshiriq"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Xatlar ro`yxati filtri"
+
+msgid "arialabelmailsearchform"
+msgstr "Xatda izlash formasi"
+
+msgid "arialabelcontactsearchform"
+msgstr "Kontaktlarni izlash formasi"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "El. pochta manzillarini qidirish so`rovini kiritish"
+
+msgid "arialabelquicksearchbox"
+msgstr "izlash so`rovi"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "papka ro`yxatini filtrlash"
+
+msgid "arialabelfoldersearchform"
+msgstr "Papkalarni izlash formasi"
+
+msgid "arialabelfolderlist"
+msgstr "ВEl. pochta papkalarini tanlash"
+
+msgid "arialabelmessagelist"
+msgstr "El. pochta xatlari ro`yxati"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Xatni dastlabki ko`rish"
+
+msgid "arialabelmailboxmenu"
+msgstr "Papka ustida ish bajarish menyusi"
+
+msgid "arialabellistselectmenu"
+msgstr "Ro`yxatni ajratish menyusi"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Muhokamalar ro`yxati menyusi"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Xatlar ro`yxati va saralashni tasvirlash parametrlari"
+
+msgid "arialabelmailimportdialog"
+msgstr "Xatni import qilish dialogi"
+
+msgid "arialabelmessagenav"
+msgstr "Xatlar bo`yicha navigatsiya"
+
+msgid "arialabelmessagebody"
+msgstr "Xat tarkibi"
+
+msgid "arialabelmessageactions"
+msgstr "Xat ustidan amallar"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Kontaktlarni qidirish formasi"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Kontakt qidirish so`rovini kiritish"
+
+msgid "arialabelmessageheaders"
+msgstr "Xat sarlavhasi"
+
+msgid "arialabelforwardingoptions"
+msgstr "Qayta uzatish xossalari"
+
+msgid "arialabelreplyalloptions"
+msgstr "Barchaga javob berish xossalari"
+
+msgid "arialabelmoremessageactions"
+msgstr "Xat ustida qo`shimcha amallar"
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Tanlangan xatlarga belgi qo`yish..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Yaratish sozlamalari"
+
+msgid "arialabelresponsesmenu"
+msgstr "Avval tayyorlangan javoblar menyusi"
+
+msgid "arialabelattachmentuploadform"
+msgstr "ilovalarni chiqarish formasi"
+
+msgid "arialabelattachmentmenu"
+msgstr "Ilova sozlamalari"
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "Ilovlalarni tasvirlash"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Qabul qiluvchi sifatida kontakt va guruhlarni tanlash"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Kontaktlarni eksport qilish xossalari"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Manzil kitobi/guruhi xossalari"
+
+msgid "arialabelpreferencesform"
+msgstr "Sozlamalar formasi"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Shaxsiy ma`lumotlarni thrirlash formasi"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Javobni tahrirlash formasi"
+
+msgid "arialabelsearchterms"
+msgstr "Izlash so`rovi"
+
+msgid "arialabeldropactionmenu"
+msgstr "Drag-n-Drop harakati menyusi"
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr "Ro`yxat bo`yicha navigatsiya tugmalari"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Tepa/Past strelkalari: Qatorlar/tanlanganlar bo`yicha fokusni o`zgartiradi.\n"
+"Probel: Fokus turgan qatorni belgilaydi.\n"
+"Shift + tepa/past: Qo`shimcha tepa/past qatorni belgilaydi.\n"
+"Ctrl + probel: Tanlanganlarda belgilanishlarni Qo`shadi/O`chiradi."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"O`ng/chap strelkalar: muhokama etilayotgan xatlarni yoyish/berkitish сообщения обсуждения.\n"
+"Enter: Tanlangan xatlarni ochish.\n"
+"Delete: Tanlangan xatni Savatga solish."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Tanlangan kontaktni ochish."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Xatolik yuzaga keldi!"
+
+msgid "messages.loginfailed"
+msgstr "Kirish amalga oshirilmadi."
+
+msgid "messages.cookiesdisabled"
+msgstr "Brauzeringiz kukilarni qabul qilmayapti."
+
+msgid "messages.sessionerror"
+msgstr "Sizning sessiyangizda xatolik mavjud yoki muddati tugagan."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "Xotira serveriga bog‘lanib bo‘lmadi."
+
+msgid "messages.servererror"
+msgstr "Serverda xatoliik!"
+
+msgid "messages.servererrormsg"
+msgstr "Serverda xatolik: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Kirishga urinishlar soni ko‘p bo‘ldi. Keyinroq urinib ko‘ring."
+
+msgid "messages.connerror"
+msgstr "Ulanishda xato (server bilan bog‘lanib bo‘lmadi)!"
+
+msgid "messages.dberror"
+msgstr "Ma’lumotlar ombori bilan xatolik yuz berdi!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Popup oynalar bloklangan!"
+
+msgid "messages.requesttimedout"
+msgstr "So‘rovni kutish vaqti tugadi"
+
+msgid "messages.errorreadonly"
+msgstr "Amal bajariimadi. Papka faqat o‘qish uchun."
+
+msgid "messages.errornoperm"
+msgstr "Amalni bajarib bo‘lmadi. Ruxsat berilmagan."
+
+msgid "messages.erroroverquota"
+msgstr "Amalni bajarib bo‘lmadi. Bo‘sh joy qolmagan."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Bo‘sh joy qolmagan. SHIFT+DEL ni bosib, xabarni o‘chirib tashlang."
+
+msgid "messages.invalidrequest"
+msgstr "Noto‘g‘ri so‘rov! Ma’lumot saqlanmadi."
+
+msgid "messages.invalidhost"
+msgstr "Server nomi noto‘g‘ri."
+
+msgid "messages.nomessagesfound"
+msgstr "Bu pochta qutisida xabarlar topilmadi."
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "Pochta qutisi bo‘sh"
+
+msgid "messages.nomessages"
+msgstr "Xabarlar yo‘q"
+
+msgid "messages.refreshing"
+msgstr "Yangilanmoqda..."
+
+msgid "messages.loading"
+msgstr "Iltimos, kuting…"
+
+msgid "messages.uploading"
+msgstr "Fayl yuklanmoqda..."
+
+msgid "messages.attaching"
+msgstr "Fayl ilova qilinmoqda..."
+
+msgid "messages.uploadingmany"
+msgstr "Fayllar yuklanmoqda..."
+
+msgid "messages.loadingdata"
+msgstr "Ma’lumotlar yuklanmoqda..."
+
+msgid "messages.checkingmail"
+msgstr "Yangi xatlar tekshirilmoqda..."
+
+msgid "messages.sendingmessage"
+msgstr "Xat yuborilmoqda…"
+
+msgid "messages.messagesent"
+msgstr "Xat muvaffaqiyatli yuborildi."
+
+msgid "messages.savingmessage"
+msgstr "Xat saqlanmoqda…"
+
+msgid "messages.messagesaved"
+msgstr "Xat Qoralamalarga saqlandi."
+
+msgid "messages.successfullysaved"
+msgstr "Muvaffaqiyatli saqlandi."
+
+msgid "messages.savingresponse"
+msgstr "Javob matni saqlanmoqda..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Siz rostdan ham bu javob xatini o‘chirmoqchimisiz?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Manzillar kitobiga kontakt qo‘shildi."
+
+msgid "messages.contactexists"
+msgstr "Bu e-mail manzilga ega kontakt mavjud."
+
+msgid "messages.contactnameexists"
+msgstr "Bu nomdagi kontakt mavjud."
+
+msgid "messages.blockedimages"
+msgstr "Xavfsizlik yuzasidan rasmlarni yuklash bloklangan."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr ""
+"Xat shifrlangan va ko‘rsatib bo`lmaydi. Server administratoriga murojaat "
+"eting."
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Bu shifrlangan xabar, uni brauzeringiz kengaytmasi orqali ochishingiz "
+"mumkin."
+
+msgid "messages.nopubkeyfor"
+msgstr "$email uchun amaldagi ochiq kalit topilmadi"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Sizning jo‘natuvchi ekanligingizni tasdiqlash uchun amaldagi ochiq kalit "
+"mavjud emas. Siz faqat qabul qiluvchilar uchun shifrlashni istaysizmi?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Yuklab bo‘lingan ilovalarni shifrlab bo‘lmaydi. Iltimos ularni shifrash "
+"tahrirlovchisiga qayta yuklang"
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"Mavjud bo‘lmagan kalitlar uchun ochiq kalitlar serverini qidirishni "
+"istaysizmi?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Quyidagi ochiq kalitlar topildi:"
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Kontaktlar topilmadi."
+
+msgid "messages.contactnotfound"
+msgstr "Kerakli kontakt topilmadi."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Xatni jo`natish amalga oshirilmadi."
+
+msgid "messages.senttooquickly"
+msgstr "Siz xat jo‘natishdan avval $sec sekund kutishingiz kerak."
+
+msgid "messages.errorsavingsent"
+msgstr "Jo‘natilayotgan xatni saqlashda xatolik yuz berdi."
+
+msgid "messages.errorsaving"
+msgstr "Saqlash jarayonida xatolik yuz berdi."
+
+msgid "messages.errormoving"
+msgstr "Xat(lar)ni ko‘chirishda xatolik yuz berdi."
+
+msgid "messages.errorcopying"
+msgstr "Xat(lar)dan nusxa olishda xatolik yuz berdi."
+
+msgid "messages.errordeleting"
+msgstr "Xat(lar)ni o‘chirishda xatolik yuz berdi."
+
+msgid "messages.errormarking"
+msgstr "Xat(lar)ni belgilashda xatolik yuz berdi."
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "Siz rostdan ham tanlangan kontakt(lar)ni o‘chirmoqchimisiz?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Siz rostdan ham tanlangan guruhni o‘chirmoqchimisiz?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Siz rostdan ham tanlangan xat(lar)ni o‘chirmoqchimisiz?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Siz rostdan ham bu papkani o‘chirmoqchimisiz?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Siz rostdan ham mazkur papkadagi barcha xatlarni o‘chirmoqchimisiz?"
+
+msgid "messages.contactdeleting"
+msgstr "Kontakt(lar) o‘chirilmoqda..."
+
+msgid "messages.groupdeleting"
+msgstr "Guruh o‘chirilmoqda..."
+
+msgid "messages.folderdeleting"
+msgstr "Papka o‘chirilmoqda..."
+
+msgid "messages.foldermoving"
+msgstr "Papka ko‘chirilmoqda..."
+
+msgid "messages.foldersubscribing"
+msgstr "Papkaga obuna bo‘lish"
+
+msgid "messages.folderunsubscribing"
+msgstr "Papkaga obunani bekor qilish"
+
+msgid "messages.formincomplete"
+msgstr "Forma to‘liq to‘ldirilmadi."
+
+msgid "messages.noemailwarning"
+msgstr "Iltimos, to‘g‘ri elektron pochta manzilini kiriting."
+
+msgid "messages.nonamewarning"
+msgstr "Iltimos, Ismni kiriting."
+
+msgid "messages.nopagesizewarning"
+msgstr "Iltimos, sahifa o‘lchamini kiriting."
+
+msgid "messages.nosenderwarning"
+msgstr "Iltimos, jo‘natuvchi elektron manzilini kirting."
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Iltimos, kamida bir dona qabul qiluvchini kiriting."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "Tashqi qabul qiluvchilar juda ko‘p."
+
+msgid "messages.nosubjectwarning"
+msgstr "\"Mavzu\" maydoni to‘ldirilmagan. Uni to‘ldirishni istaysizmi?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Mavzusiz"
+
+msgid "messages.nobodywarning"
+msgstr "Xatni matnsiz jo‘natmoqchimisiz?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Xat jo‘natilmadi va saqlanmagan o‘zgartirishlarga ega. Siz bu o‘zgarishlarni"
+" bekor qilishni istaysizmi?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Avval $date da yaratilgan biroq, jo‘natilmagan $subject\\n mavzudagi xat "
+"mavjud.Bu xatni qayta tiklashni istaysizmi?"
+
+msgid "messages.nosearchname"
+msgstr "Iltimos, Ism yoki elektron pochta manzilini kiriting."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Barcha ilovalar hali yuklanmadi, Iltimos kuting yoki yuklashni bekor qiling."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr ta xat topildi."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr ta kontaktlar topildi."
+
+msgid "messages.searchnomatch"
+msgstr "Hech narsa topilmadi."
+
+msgid "messages.searching"
+msgstr "Qidirilmoqda..."
+
+msgid "messages.checking"
+msgstr "Tekshirilmoqda..."
+
+msgid "messages.stillsearching"
+msgstr "Hali ham qidirilmoqda..."
+
+msgid "messages.nospellerrors"
+msgstr "Imlo xatolar topilmadi."
+
+msgid "messages.folderdeleted"
+msgstr "Papka muvaffaqqiyatli o‘chirildi."
+
+msgid "messages.foldersubscribed"
+msgstr "Papkaga obuna muvaffaqqiyatli o‘rnatildi."
+
+msgid "messages.folderunsubscribed"
+msgstr "Papkaga obuna bekor qilindi."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "O‘chirildi."
+
+msgid "messages.converting"
+msgstr "Formatlashni o‘chirish..."
+
+msgid "messages.messageopenerror"
+msgstr "Serverdan xatni yuklash amalga oshirilmadi."
+
+msgid "messages.filelinkerror"
+msgstr "Ilovani qo‘shish amalga oshirilmadi."
+
+msgid "messages.fileuploaderror"
+msgstr "Faylni yuklashda xatolik yuz berdi."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Yuklanayotgan fayl o‘lchami maksimal $size o‘lchamdan katta."
+
+msgid "messages.filecounterror"
+msgstr "Siz bir vaqtda $count ta fayl jo‘nata olasiz."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Faylni yuklash amalga oshirilmadi. Xating maksimal o‘lchami ($size) dan "
+"oshgan."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "$nr ta kontaktdan nusxa olish muvaffaqqiyatli amalga oshirildi."
+
+msgid "messages.movesuccess"
+msgstr "$nr ta kontakt muvaffaqqiyatli ko‘chirildi."
+
+msgid "messages.copyerror"
+msgstr "Kontaktlardan nusxa olinmadi."
+
+msgid "messages.moveerror"
+msgstr "Kontaktlar ko‘chirilmadi."
+
+msgid "messages.sourceisreadonly"
+msgstr "Mazkur manzillar manbaasi faqat o‘qish uchun."
+
+msgid "messages.errorsavingcontact"
+msgstr "Kontakt manzillari saqlanmadi,"
+
+msgid "messages.movingmessage"
+msgstr "Xat(lar)ni ko‘chirish..."
+
+msgid "messages.copyingmessage"
+msgstr "Xat(lar)dan nusxa olish..."
+
+msgid "messages.copyingcontact"
+msgstr "Kontakt(lar)dan nusxa olish ..."
+
+msgid "messages.movingcontact"
+msgstr "Kontakt(lar)ni ko‘chirish..."
+
+msgid "messages.deletingmessage"
+msgstr "Xat(lar)ni o‘chirish..."
+
+msgid "messages.markingmessage"
+msgstr "Xat(lar)ni belgilash...."
+
+msgid "messages.addingmember"
+msgstr "Kontakt(lar)ni guruhga qo‘shish..."
+
+msgid "messages.removingmember"
+msgstr "Kontakt(lar)ni guruhdan o‘chirish"
+
+msgid "messages.receiptsent"
+msgstr "O‘qilganlik haqida eslatma muvaffaqqiyatli jo‘natildi."
+
+msgid "messages.errorsendingreceipt"
+msgstr "O‘qilganlik haqida eslatma muvaffaqqiyatli jo‘natilmadi."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Siz rostdan ham buni o‘chirmoqchimisiz?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Siz buni o‘chira olmaysiz, bu sizdagi oxirgi profil."
+
+msgid "messages.forbiddencharacter"
+msgstr "Papka nomida ruxsat etilmagan simvol mavjud."
+
+msgid "messages.selectimportfile"
+msgstr "Yuklash uchun faylni tanlang."
+
+msgid "messages.addresswriterror"
+msgstr "Tanlangan manzillar kitobida yozish uchun imkon yo‘q."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Kontaktlar guruhga qo‘shildi."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontaktlar guruhdan o‘chirildi."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Guruhlar bo‘yicha taqsimlash o‘zgarmadi."
+
+msgid "messages.importwait"
+msgstr "Import qilinmoqda, iltimos kuting..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Import amalga oshmadi. Yuklanayotgan fayl no’malum ma’lumotlar formatiga "
+"ega."
+
+msgid "messages.importconfirm"
+msgstr "<b> $inserted kontaktlar import qilindi</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr ta xat import qilindi."
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Import muvaffaqqiyatsiz amalga oshdi. Yuklanayotgan fayl xat fayli yoki "
+"pochta qutisi fayli emas."
+
+msgid "messages.opnotpermitted"
+msgstr "Harakat ta’qiqlangan!"
+
+msgid "messages.nofromaddress"
+msgstr "Tanlangan profilda e-mail manzili yetishmayapti."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Tahrirchini almashtirishda matn farmatida yo‘qolishlar kuzatilishi mumkin. "
+"Davom ettirishni istaysizmi?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Serverda jiddiy xatolik kuzatildi. Zudlik bilan administratorga murojaat "
+"eting. <b>Sizning xatingizni jo‘natishning imkoni yo'q </b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP xatolik ($code): Serverga ulanish muvaffaqqiyatsiz."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP xatolik ($code): Autentifikatsiya muvaffaqqiyatsiz amalga oshdi."
+
+msgid "messages.smtpfromerror"
+msgstr ""
+"SMTP Xatolik($code): \"$from\" ($msg) jo‘natuvchini belgilash amalga "
+"oshmadi. "
+
+msgid "messages.smtptoerror"
+msgstr ""
+"SMTP Xatolik($code): \"$from\" ($msg) qabul qiluvchini belgilash amalga "
+"oshmadi. "
+
+msgid "messages.smtprecipientserror"
+msgstr "Qabul qiluvchilar ro‘yxatini qayta ishlash amalga oshirilmadi."
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP xatolik: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Noto‘g‘ri elektron manzil: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+"Qabul qiluvchilar soni ko‘p/ Qabul qiluvchilar sonini $max ga qadar "
+"kamaytiring."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Guruh a’zolari soni maksimal $max qiymatdan ortiq."
+
+msgid "messages.internalerror"
+msgstr "ichki xatolik kuzatildi. Iltimos, qaytadan urinib ko‘ring."
+
+msgid "messages.contactdelerror"
+msgstr "Kontakt(lar)ni o‘chirish amalga oshirilmadi."
+
+msgid "messages.contactdeleted"
+msgstr "Kontakt(lar) o‘chirildi."
+
+msgid "messages.contactrestoreerror"
+msgstr "O‘chirilgan kontakt(lar) qayta tiklanmadi."
+
+msgid "messages.contactrestored"
+msgstr "Kontakt(lar) qayta tiklandi."
+
+msgid "messages.groupdeleted"
+msgstr "Guruh o‘chirildi."
+
+msgid "messages.grouprenamed"
+msgstr "Guruh qayta nomlandi."
+
+msgid "messages.groupcreated"
+msgstr "Guruh yaratildi."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Saqlangan izlash so‘rovi o‘chirildi."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Saqlangan izlash so‘rovini o‘chirish amalga oshmadi."
+
+msgid "messages.savedsearchcreated"
+msgstr "Saqlangan izlash so‘rovi muvaffaqqiyatli yaratildi."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Saqlangan izlash so‘rovi yaratilmadi."
+
+msgid "messages.messagedeleted"
+msgstr "Xat(lar) o‘chirildi."
+
+msgid "messages.messagemoved"
+msgstr "Xat(lar) ko‘chirildi."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Xat(lar) savatga jo‘natildi."
+
+msgid "messages.messagecopied"
+msgstr "Xat(lar)dan nusxa olindi."
+
+msgid "messages.messagemarked"
+msgstr "Xat(lar)ga belgi qo‘yildi."
+
+msgid "messages.autocompletechars"
+msgstr "Avto to‘ldirish uchun kamida $min ta simvol kiriting."
+
+msgid "messages.autocompletemore"
+msgstr ""
+"Qidiruv so‘rovi ko'plab yozuvlarni topdi. Iltimos so‘rovni aniqlashtiring."
+
+msgid "messages.namecannotbeempty"
+msgstr "Nom bo‘sh bo‘lmasligi lozim."
+
+msgid "messages.nametoolong"
+msgstr "Nom juda uzun."
+
+msgid "messages.namedotforbidden"
+msgstr "Papka nomi nuqta bilan boshlanmasligi kerak."
+
+msgid "messages.folderupdated"
+msgstr "Papka yangilandi."
+
+msgid "messages.foldercreated"
+msgstr "Papka yaratildi."
+
+msgid "messages.invalidimageformat"
+msgstr "Rasm formati noto‘g‘ri"
+
+msgid "messages.mispellingsfound"
+msgstr "Xatda imlo xatolar mavjud."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Tanlangan asos papkada boshqa papka yaratish/ko‘chirishni imkoni yo‘q. "
+"Ruxsat berilmaganl"
+
+msgid "messages.messagetoobig"
+msgstr "Xat qismi qayta ishlash uchun juda katta."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"DIQQAT: Veb pochtaning mazkur xizmati javascriptni talab etadi. Uni "
+"ishlatish uchun brauzeringizda javascriptni qo‘llalb-quvvatlashni "
+"faollashtirishingiz lozim."
+
+msgid "messages.messageissent"
+msgstr ""
+"Xat jo‘natildi, biroq hali saqlanmadi. Uni hozir saqlashni istaysizmi?"
+
+msgid "messages.errnotfound"
+msgstr "Fayl topilmadi"
+
+msgid "messages.errnotfoundexplain"
+msgstr "So‘ralgan resurs topilmadi!"
+
+msgid "messages.errfailedrequest"
+msgstr "Muvaffaqqiyatsiz so‘rov"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Muvaffaqqiyatsiz avtorizatsiya"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Siz bu xizmatga kirish huquqiga ega ekanligingizni tekshirish amalga "
+"oshirilmadi."
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Tekshiruv so‘rovi muvaffaqiyatsiz"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Sizning xavfsizligingizni ta’minlash maqsadida bu resursga kirish CSRF dan himoyalangan.\n"
+" Agar siz buni ko‘rayotgan bo‘lsangiz, siz veb dasturdan chiqishdan avval tizimni tark etmadingiz,\n"
+"\n"
+" Davom ettirish uchun inson harakati talab etiladi."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Server administratoriga murojaat eting."
+
+msgid "messages.clicktoresumesession"
+msgstr "Avvalgi sessiyani davom ettirish uchn bu yerni bosing"
+
+msgid "messages.errcomposesession"
+msgstr "Xatni yozish seansida xatolik"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "So‘ralgan xatni yozish seansi topilmadi."
+
+msgid "messages.clicktocompose"
+msgstr "Yangi xat yozish uchun bu yerni bosing"
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

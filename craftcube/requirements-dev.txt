@@ -4,4 +4,3 @@
 pytest>=8.0
 ruff>=0.6
 PyYAML>=6.0
-ruamel.yaml>=0.18   # tools/i18n.py catalogue maintenance (order/comment-preserving)

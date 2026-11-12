@@ -1,0 +1,2910 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: eu_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Ongi etorri $product-ra"
+
+msgid "username"
+msgstr "Erabiltzaile-izena"
+
+msgid "password"
+msgstr "Pasahitza"
+
+msgid "server"
+msgstr "Zerbitzaria"
+
+msgid "login"
+msgstr "Saio hasiera"
+
+msgid "oauthlogin"
+msgstr "Hasi saioa &hornitzaile batekin"
+
+msgid "menu"
+msgstr "Menua"
+
+msgid "logout"
+msgstr "Amaitu saioa"
+
+msgid "mail"
+msgstr "E-posta"
+
+msgid "settings"
+msgstr "Ezarpenak"
+
+msgid "addressbook"
+msgstr "Helbide liburua"
+
+msgid "darkmode"
+msgstr "Modu iluna"
+
+msgid "lightmode"
+msgstr "Modu argia"
+
+msgid "inbox"
+msgstr "Sarrera ontzia"
+
+msgid "drafts"
+msgstr "Zirriborroak"
+
+msgid "sent"
+msgstr "Bidalitakoak"
+
+msgid "trash"
+msgstr "Zakarrontzia"
+
+msgid "junk"
+msgstr "Zabor-posta"
+
+msgid "show_real_foldernames"
+msgstr "Erakutsi karpeta berezien benetako izenak"
+
+msgid "subject"
+msgstr "Gaia"
+
+msgid "from"
+msgstr "Nork"
+
+msgid "sender"
+msgstr "Igorlea"
+
+msgid "to"
+msgstr "Nori"
+
+msgid "cc"
+msgstr "Kopia"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Erantzun honi"
+
+msgid "followupto"
+msgstr "Jarraipena honi"
+
+msgid "date"
+msgstr "Data"
+
+msgid "size"
+msgstr "Tamaina"
+
+msgid "priority"
+msgstr "Lehentasuna"
+
+msgid "organization"
+msgstr "Erakundea"
+
+msgid "readstatus"
+msgstr "Irakurri egoera"
+
+msgid "listoptions"
+msgstr "Zerrendatu aukerak..."
+
+msgid "listoptionstitle"
+msgstr "Zerrendatu aukerak"
+
+msgid "mailboxlist"
+msgstr "Karpetak"
+
+msgid "messagesfromto"
+msgstr "$from -tik $to -ra $count mezuetatik"
+
+msgid "threadsfromto"
+msgstr "$from -etik $to -rako hariak (guztira $count)"
+
+msgid "messagenrof"
+msgstr "$nr mezua $count -tik"
+
+msgid "fromtoshort"
+msgstr "$from - $to , guztira $count"
+
+msgid "copy"
+msgstr "Kopiatu"
+
+msgid "move"
+msgstr "Mugitu"
+
+msgid "moveto"
+msgstr "Mugitu hona..."
+
+msgid "copyto"
+msgstr "Kopiatu hona..."
+
+msgid "download"
+msgstr "Deskargatu"
+
+msgid "open"
+msgstr "Ireki"
+
+msgid "showattachment"
+msgstr "Erakutsi"
+
+msgid "showanyway"
+msgstr "Erakutsi edonola"
+
+msgid "filename"
+msgstr "Fitxategi-izena"
+
+msgid "filesize"
+msgstr "Fitxategi-tamaina"
+
+msgid "addtoaddressbook"
+msgstr "Gehitu helbide liburura"
+
+msgid "sun"
+msgstr "Ig"
+
+msgid "mon"
+msgstr "Al"
+
+msgid "tue"
+msgstr "As"
+
+msgid "wed"
+msgstr "Azt"
+
+msgid "thu"
+msgstr "Og"
+
+msgid "fri"
+msgstr "Or"
+
+msgid "sat"
+msgstr "Lar"
+
+msgid "sunday"
+msgstr "Igandea"
+
+msgid "monday"
+msgstr "Astelehena"
+
+msgid "tuesday"
+msgstr "Asteartea"
+
+msgid "wednesday"
+msgstr "Asteazkena"
+
+msgid "thursday"
+msgstr "Osteguna"
+
+msgid "friday"
+msgstr "Ostirala"
+
+msgid "saturday"
+msgstr "Larunbata"
+
+msgid "jan"
+msgstr "Urt"
+
+msgid "feb"
+msgstr "Ots"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Api"
+
+msgid "may"
+msgstr "Mai"
+
+msgid "jun"
+msgstr "Eka"
+
+msgid "jul"
+msgstr "Uzt"
+
+msgid "aug"
+msgstr "Abu"
+
+msgid "sep"
+msgstr "Ira"
+
+msgid "oct"
+msgstr "Urr"
+
+msgid "nov"
+msgstr "Aza"
+
+msgid "dec"
+msgstr "Abe"
+
+msgid "longjan"
+msgstr "Urtarrila"
+
+msgid "longfeb"
+msgstr "Otsaila"
+
+msgid "longmar"
+msgstr "Martxoa"
+
+msgid "longapr"
+msgstr "Apirila"
+
+msgid "longmay"
+msgstr "Maiatza"
+
+msgid "longjun"
+msgstr "Ekaina"
+
+msgid "longjul"
+msgstr "Uztaila"
+
+msgid "longaug"
+msgstr "Abuztua"
+
+msgid "longsep"
+msgstr "Iraila"
+
+msgid "longoct"
+msgstr "Urria"
+
+msgid "longnov"
+msgstr "Azaroa"
+
+msgid "longdec"
+msgstr "Abendua"
+
+msgid "today"
+msgstr "Gaur"
+
+msgid "refresh"
+msgstr "Freskatu"
+
+msgid "checkmail"
+msgstr "Arakatu mezu berrien bila"
+
+msgid "compose"
+msgstr "Idatzi mezu bat"
+
+msgid "writenewmessage"
+msgstr "Sortu mezu berri bat"
+
+msgid "reply"
+msgstr "Erantzun"
+
+msgid "replytomessage"
+msgstr "Mezuari erantzun"
+
+msgid "replytoallmessage"
+msgstr "Bidaltzaileari eta hartzaile guztiei erantzun"
+
+msgid "replyall"
+msgstr "Guztiei erantzun"
+
+msgid "replylist"
+msgstr "Erantzun zerrenda"
+
+msgid "forward"
+msgstr "Birbidali"
+
+msgid "forwardinline"
+msgstr "Birbidali barnean"
+
+msgid "forwardattachment"
+msgstr "Birbidali eranskin gisa"
+
+msgid "forwardmessage"
+msgstr "Birbidali mezua"
+
+msgid "bouncemsg"
+msgstr "Bidali berriro (errebotatu)"
+
+msgid "bounce"
+msgstr "Bidali berriro"
+
+msgid "deletemessage"
+msgstr "Ezabatu mezua"
+
+msgid "undeletemessage"
+msgstr "Berreskuratu mezua"
+
+msgid "movemessagetotrash"
+msgstr "Mugitu mezua zakarrontzira"
+
+msgid "printmessage"
+msgstr "Inprimatu mezu hau"
+
+msgid "previousmessage"
+msgstr "Erakutsi aurreko mezuak"
+
+msgid "firstmessage"
+msgstr "Erakutsi lehenengo mezua"
+
+msgid "nextmessage"
+msgstr "Erakutsi hurrengo mezua"
+
+msgid "lastmessage"
+msgstr "Erakutsi azken mezua"
+
+msgid "backtolist"
+msgstr "Mezu zerrendara itzuli"
+
+msgid "viewsource"
+msgstr "Erakutsi kodea"
+
+msgid "mark"
+msgstr "Markatu"
+
+msgid "markmessages"
+msgstr "Markatu mezuak"
+
+msgid "markread"
+msgstr "Irakurria bezala"
+
+msgid "markunread"
+msgstr "Ez-irakurria bezala"
+
+msgid "markflagged"
+msgstr "Markatua bezala"
+
+msgid "markunflagged"
+msgstr "Ez-markatua bezala"
+
+msgid "markundeleted"
+msgstr "Ezabatu gabe gisa"
+
+msgid "markasread"
+msgstr "Markatu irakurrita gisa"
+
+msgid "markasunread"
+msgstr "Markatu ez irakurrita gisa"
+
+msgid "markasflagged"
+msgstr "Markatu seinalatu gisa"
+
+msgid "markasunflagged"
+msgstr "Markatu ez seinalatu gisa"
+
+msgid "moreactions"
+msgstr "Ekintza gehiago..."
+
+msgid "markallread"
+msgstr "Markatu dena irakurrita bezala"
+
+msgid "folders-cur"
+msgstr "Hautatutako karpeta bakarrik"
+
+msgid "folders-sub"
+msgstr "Hautatutako karpeta eta haren azpikarpetak "
+
+msgid "folders-all"
+msgstr "Karpeta guztiak"
+
+msgid "more"
+msgstr "Gehiago"
+
+msgid "back"
+msgstr "Atzera"
+
+msgid "options"
+msgstr "Aukerak"
+
+msgid "composeoptions"
+msgstr "Konposatu aukerak"
+
+msgid "optionsandattachments"
+msgstr "Aukerak eta eranskinak"
+
+msgid "actions"
+msgstr "Ekintzak"
+
+msgid "first"
+msgstr "Lehenengoa"
+
+msgid "last"
+msgstr "Azkena"
+
+msgid "previous"
+msgstr "Aurrekoa"
+
+msgid "next"
+msgstr "Hurrengoa"
+
+msgid "select"
+msgstr "Hautatu"
+
+msgid "selection"
+msgstr "Hautapena"
+
+msgid "all"
+msgstr "Denak"
+
+msgid "none"
+msgstr "Bat ere ez"
+
+msgid "currpage"
+msgstr "Uneko orrialdea"
+
+msgid "isread"
+msgstr "Irakurri"
+
+msgid "unread"
+msgstr "Irakurri gabeak"
+
+msgid "flagged"
+msgstr "Banderaduna"
+
+msgid "unflagged"
+msgstr "Etiketatu gabe"
+
+msgid "unanswered"
+msgstr "Erantzun gabea"
+
+msgid "withattachment"
+msgstr "Eranskinarekin"
+
+msgid "deleted"
+msgstr "Ezabatuak"
+
+msgid "undeleted"
+msgstr "Ezabatu gabeak"
+
+msgid "replied"
+msgstr "Erantzunda"
+
+msgid "forwarded"
+msgstr "Birbidalita"
+
+msgid "invert"
+msgstr "Alderantzizkatu"
+
+msgid "filter"
+msgstr "Iragazkia"
+
+msgid "list"
+msgstr "Zerrenda"
+
+msgid "threads"
+msgstr "Hariak"
+
+msgid "expand-all"
+msgstr "Hedatu denak"
+
+msgid "expand-unread"
+msgstr "Ireki irakurri gabeak"
+
+msgid "collapse-all"
+msgstr "Tolestu guztiak"
+
+msgid "threaded"
+msgstr "Harian"
+
+msgid "showunread"
+msgstr "Erakutsi irakurri gabeko mezuak"
+
+msgid "autoexpand_threads"
+msgstr "Hedatu mezu hariak"
+
+msgid "do_expand"
+msgstr "hari guztiak"
+
+msgid "expand_only_unread"
+msgstr "soilik irakurri gabeko mezuak dituztenak"
+
+msgid "fromto"
+msgstr "Nork/Nori"
+
+msgid "flag"
+msgstr "Bandera"
+
+msgid "attachment"
+msgstr "Eranskina"
+
+msgid "nonesort"
+msgstr "Bat ere ez"
+
+msgid "sentdate"
+msgstr "Bidalketa data"
+
+msgid "arrival"
+msgstr "Jasotze data"
+
+msgid "asc"
+msgstr "gorantz"
+
+msgid "desc"
+msgstr "beheruntz"
+
+msgid "listcolumns"
+msgstr "Zerrenda-zutabeak"
+
+msgid "listsorting"
+msgstr "Zutabea ordenatzen"
+
+msgid "listorder"
+msgstr "Ordenatze irizpidea"
+
+msgid "listmode"
+msgstr "Zerrenda ikuspegiko modua"
+
+msgid "lmode"
+msgstr "Zerrenda modua"
+
+msgid "layout"
+msgstr "Diseinua"
+
+msgid "layoutwidescreen"
+msgstr "Panoramikoa"
+
+msgid "layoutdesktop"
+msgstr "Mahaigaina"
+
+msgid "layoutlist"
+msgstr "Zerrenda"
+
+msgid "layoutwidescreendesc"
+msgstr "Panoramikoa (3-zutabeko ikuspegia)"
+
+msgid "layoutdesktopdesc"
+msgstr "Mahaigaina (zerrenda zabalean eta postaren aurrebista behean)"
+
+msgid "layoutlistdesc"
+msgstr "Zerrenda (postaren aurrebistarik gabe)"
+
+msgid "folderactions"
+msgstr "Karpeta-ekintzak..."
+
+msgid "compact"
+msgstr "Trinkotu"
+
+msgid "empty"
+msgstr "Hustu"
+
+msgid "importmessages"
+msgstr "Inportatu mezuak"
+
+msgid "mailimportdesc"
+msgstr ""
+"Kargatu dezakezu mezua fitxategiak erabiliaz <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> edo <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> formatuetan."
+
+msgid "mailimportzip"
+msgstr "Hainbat fitxategi konprimatu daiteke zip fitxategietan."
+
+msgid "quota"
+msgstr "Disko erabilera"
+
+msgid "unknown"
+msgstr "ezezaguna"
+
+msgid "unlimited"
+msgstr "mugagabea"
+
+msgid "quotatype"
+msgstr "Kuota mota"
+
+msgid "quotatotal"
+msgstr "Muga"
+
+msgid "quotaused"
+msgstr "Erabilita"
+
+msgid "quotastorage"
+msgstr "Diskoko tokia"
+
+msgid "quotamessage"
+msgstr "Mezu kopurua"
+
+msgid "shortheaderdate"
+msgstr "$date egunean"
+
+msgid "shortheaderto"
+msgstr " $date -ko $to -etara"
+
+msgid "shortheaderfrom"
+msgstr "$date -ko $from -etatik"
+
+msgid "quicksearch"
+msgstr "Bilaketa azkarra"
+
+msgid "searchplaceholder"
+msgstr "Bilatu..."
+
+msgid "resetsearch"
+msgstr "Berrabiarazi bilaketa"
+
+msgid "searchmod"
+msgstr "Bilatu modifikadoreak"
+
+msgid "msgtext"
+msgstr "Mezu osoa"
+
+msgid "body"
+msgstr "Gorputza"
+
+msgid "type"
+msgstr "Mota"
+
+msgid "namex"
+msgstr "Izena"
+
+msgid "searchscope"
+msgstr "Esparrua"
+
+msgid "currentfolder"
+msgstr "Uneko karpeta"
+
+msgid "subfolders"
+msgstr "Hau eta azpikarpetak"
+
+msgid "allfolders"
+msgstr "Karpeta guztiak"
+
+msgid "searchinterval-1W"
+msgstr "astebete baino zaharragoak"
+
+msgid "searchinterval-1M"
+msgstr "hilabete baino zaharragoak"
+
+msgid "searchinterval-1Y"
+msgstr "urtebete baino zaharragoak"
+
+msgid "searchinterval1W"
+msgstr "astebetea baino berriagoak"
+
+msgid "searchinterval1M"
+msgstr "hilabetea baino berriagoak"
+
+msgid "searchinterval1Y"
+msgstr "urtebetea baino berriagoak"
+
+msgid "infolder"
+msgstr "Karpeta: $folder"
+
+msgid "currentaddressbook"
+msgstr "Egungo helbide-liburua"
+
+msgid "alladdressbooks"
+msgstr "Helbide liburu guztiak"
+
+msgid "openinextwin"
+msgstr "Ireki leiho berrian"
+
+msgid "emlsave"
+msgstr "Deskargatu (.eml)"
+
+msgid "changeformattext"
+msgstr "Bistaratu formaturik gabeko testuan"
+
+msgid "changeformathtml"
+msgstr "Bistaratu HTML formatuan"
+
+msgid "editasnew"
+msgstr "Editatu berri bezala"
+
+msgid "send"
+msgstr "Bidali"
+
+msgid "sendmessage"
+msgstr "Bidali mezua"
+
+msgid "savemessage"
+msgstr "Gorde zirriborro gisa"
+
+msgid "addattachment"
+msgstr "Erantsi fitxategia"
+
+msgid "charset"
+msgstr "Karaktere jokoa"
+
+msgid "editortype"
+msgstr "Editore mota"
+
+msgid "returnreceipt"
+msgstr "Bidali jasotze-agiria"
+
+msgid "dsn"
+msgstr "Entrega-egoeraren jakinarazpena"
+
+msgid "keepformatting"
+msgstr "Segi formateatzen"
+
+msgid "mailreplyintro"
+msgstr "$date egunean, $sender-(e)k idatzi du:"
+
+msgid "originalmessage"
+msgstr "Jatorrizko mezua"
+
+msgid "selectimage"
+msgstr "Hautatu irudia"
+
+msgid "addimage"
+msgstr "Gehitu irudia"
+
+msgid "selectmedia"
+msgstr "Hautatu bideoa"
+
+msgid "addmedia"
+msgstr "Gehitu bideoa"
+
+msgid "encrypt"
+msgstr "Zifratu"
+
+msgid "encryptmessage"
+msgstr "Zifratu mezua"
+
+msgid "encryptmessagemailvelope"
+msgstr "Zifratu mezua Mailvelope-ren bidez"
+
+msgid "importpubkeys"
+msgstr "Inportatu gako publikoak"
+
+msgid "encryptedsendialog"
+msgstr "Zifratutako mezua bidaltzen"
+
+msgid "encryptandsign"
+msgstr "Zifratu eta sinatu"
+
+msgid "keyid"
+msgstr "Gakoaren IDa"
+
+msgid "keylength"
+msgstr "Bitak"
+
+msgid "keyexpired"
+msgstr "Iraungita"
+
+msgid "keyrevoked"
+msgstr "Ukatua"
+
+msgid "bccinstead"
+msgstr "Erabili Bcc"
+
+msgid "addheader"
+msgstr "Gehitu eremua (Cc, Bcc, ...)"
+
+msgid "insert"
+msgstr "Txertatu"
+
+msgid "insertcontact"
+msgstr "Txertatu kontaktua(k)"
+
+msgid "recipient"
+msgstr "Hartzailea"
+
+msgid "recipientedit"
+msgstr "Hartzailearen edizioa"
+
+msgid "editidents"
+msgstr "Editatu identitateak"
+
+msgid "spellcheck"
+msgstr "Ortografia-egiaztatu"
+
+msgid "checkspelling"
+msgstr "Egiaztaketa ortografikoa"
+
+msgid "resumeediting"
+msgstr "Editatzen jarraitu"
+
+msgid "revertto"
+msgstr "Itzuli hona"
+
+msgid "restore"
+msgstr "Berrezarri"
+
+msgid "restoremessage"
+msgstr "Leheneratu mezua?"
+
+msgid "ignore"
+msgstr "Ezikusi"
+
+msgid "responses"
+msgstr "Erantzunak"
+
+msgid "insertresponse"
+msgstr "Txertatu erantzun bat"
+
+msgid "manageresponses"
+msgstr "Kudeatu erantzunak"
+
+msgid "newresponse"
+msgstr "Sortu erantzun berria"
+
+msgid "addresponse"
+msgstr "Gehitu erantzuna"
+
+msgid "editresponse"
+msgstr "Editatu erantzuna"
+
+msgid "editresponses"
+msgstr "Editatu erantzunak"
+
+msgid "responsename"
+msgstr "Izena"
+
+msgid "responsetext"
+msgstr "Erantzun testua"
+
+msgid "attach"
+msgstr "Erantsi"
+
+msgid "attachments"
+msgstr "Eranskinak"
+
+msgid "upload"
+msgstr "Kargatu"
+
+msgid "uploadprogress"
+msgstr "$percent ($total-etik $current)"
+
+msgid "close"
+msgstr "Itxi"
+
+msgid "messageoptions"
+msgstr "Mezu-aukerak..."
+
+msgid "togglecomposeoptions"
+msgstr "Aktibatu/desaktibatu konposizio aukerak"
+
+msgid "attachmentrename"
+msgstr "Berrizendatu eranskina"
+
+msgid "low"
+msgstr "Baxua"
+
+msgid "lowest"
+msgstr "Baxuena"
+
+msgid "normal"
+msgstr "Normala"
+
+msgid "high"
+msgstr "Altua"
+
+msgid "highest"
+msgstr "Altuena"
+
+msgid "nosubject"
+msgstr "(gairik gabea)"
+
+msgid "showimages"
+msgstr "Bistaratu irudiak"
+
+msgid "allow"
+msgstr "Baimendu"
+
+msgid "alwaysshow"
+msgstr "Beti ikusi $sender -en irudiak"
+
+msgid "alwaysallow"
+msgstr "Baimendu beti $sender -engandik"
+
+msgid "isdraft"
+msgstr "Hau zirriborro bat da"
+
+msgid "andnmore"
+msgstr "$nr gehiago..."
+
+msgid "details"
+msgstr "Zehaztasunak"
+
+msgid "summary"
+msgstr "Laburpena"
+
+msgid "headers"
+msgstr "Goiburuak"
+
+msgid "allheaders"
+msgstr "Goiburu guztiak..."
+
+msgid "togglemoreheaders"
+msgstr "Erakutsi mezu mezu-goiburu gehiago"
+
+msgid "togglefullheaders"
+msgstr "Erakutsi/Ezkutatu mezuen goiburuak"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Formaturik gabeko testua"
+
+msgid "savesentmessagein"
+msgstr "Gorde mezua hemen"
+
+msgid "dontsave"
+msgstr "ez gorde"
+
+msgid "maxuploadsize"
+msgstr "Baimendutako gehienezko fitxategi tamaina: $size"
+
+msgid "addcc"
+msgstr "Gehitu Cc (kopia)"
+
+msgid "addbcc"
+msgstr "Gehitu Bcc (kopia ezkutua)"
+
+msgid "addreplyto"
+msgstr "Gehitu erantzun-honi"
+
+msgid "addfollowupto"
+msgstr "Gehitu Jarraitu honi"
+
+msgid "sendreceipt"
+msgstr "Bidali irakurragiria?"
+
+msgid "mdnrequest"
+msgstr ""
+"Mezu honen bidaltzaileak mezua irakurtzen duzunean jakinaraztea eskatu du. "
+"Bidaltzailea ohartu nahi duzu?"
+
+msgid "receiptread"
+msgstr "Bidali jasotze-agiria (irakurria)"
+
+msgid "yourmessage"
+msgstr "Hau zure mezuaren jasotze-agiria da"
+
+msgid "receiptnote"
+msgstr ""
+"Oharra:  jasotze-agiri honek hartzailearen ordenagailuan mezua bistaratu "
+"dela adierazten du besterik gabe. Honek ez du esan nahi hartzaileak mezua "
+"irakurri edo/eta ulertu duenik:"
+
+msgid "sendalwaysto"
+msgstr "Bidali beti $email-ri"
+
+msgid "zoomin"
+msgstr "Handiagotu"
+
+msgid "zoomout"
+msgstr "Txikiagotu"
+
+msgid "rotate"
+msgstr "Biratu"
+
+msgid "increaseimage"
+msgstr "Handiagotu irudiaren tamaina"
+
+msgid "decreaseimage"
+msgstr "Txikiagotu irudiaren tamaina"
+
+msgid "rotateimage"
+msgstr "Biratu irudia"
+
+msgid "showtools"
+msgstr "Erakutsi irudi-tresnak"
+
+msgid "hidetools"
+msgstr "Ezkutatu irudi-tresnak"
+
+msgid "name"
+msgstr "Bistaratu izena"
+
+msgid "firstname"
+msgstr "Izena"
+
+msgid "surname"
+msgstr "Abizena"
+
+msgid "middlename"
+msgstr "Izenaren bigarren partea"
+
+msgid "nameprefix"
+msgstr "Aurrizkia"
+
+msgid "namesuffix"
+msgstr "Atzizkia"
+
+msgid "nickname"
+msgstr "Ezizena"
+
+msgid "jobtitle"
+msgstr "Lanpostua "
+
+msgid "department"
+msgstr "Departamentoa"
+
+msgid "gender"
+msgstr "Generoa"
+
+msgid "maidenname"
+msgstr "Ezkondu aurreko izena"
+
+msgid "email"
+msgstr "E-posta"
+
+msgid "phone"
+msgstr "Telefonoa"
+
+msgid "address"
+msgstr "Helbidea"
+
+msgid "street"
+msgstr "Kalea"
+
+msgid "locality"
+msgstr "Herria"
+
+msgid "zipcode"
+msgstr "Posta kodea"
+
+msgid "region"
+msgstr "Estatua/Probintzia"
+
+msgid "country"
+msgstr "Herrialdea"
+
+msgid "birthday"
+msgstr "Urtebetetze-eguna"
+
+msgid "anniversary"
+msgstr "Urteurren-eguna"
+
+msgid "website"
+msgstr "Webgunea"
+
+msgid "instantmessenger"
+msgstr "Txata"
+
+msgid "notes"
+msgstr "Oharrak"
+
+msgid "male"
+msgstr "gizon"
+
+msgid "female"
+msgstr "emakume"
+
+msgid "nonbinary"
+msgstr "ez binarioa"
+
+msgid "othergender"
+msgstr "bestelakoa"
+
+msgid "manager"
+msgstr "Kudeatzailea"
+
+msgid "assistant"
+msgstr "Laguntzailea"
+
+msgid "spouse"
+msgstr "Ezkontidea"
+
+msgid "allfields"
+msgstr "Eremu guztiak"
+
+msgid "search"
+msgstr "Bilatu"
+
+msgid "searchresult"
+msgstr "Bilaketaren emaitza"
+
+msgid "advsearch"
+msgstr "Bilaketa aurreratua"
+
+msgid "advanced"
+msgstr "Aurreratua"
+
+msgid "other"
+msgstr "Beste"
+
+msgid "printcontact"
+msgstr "Inprimatu kontaktua"
+
+msgid "qrcode"
+msgstr "QR kodea"
+
+msgid "typehome"
+msgstr "Etxekoa"
+
+msgid "typework"
+msgstr "Lanekoa"
+
+msgid "typeother"
+msgstr "Bestelakoa"
+
+msgid "typemobile"
+msgstr "Mugikorra"
+
+msgid "typemain"
+msgstr "Nagusia"
+
+msgid "typehomefax"
+msgstr "Etxeko faxa"
+
+msgid "typeworkfax"
+msgstr "Laneko faxa"
+
+msgid "typecar"
+msgstr "Autoa"
+
+msgid "typepager"
+msgstr "Pertsona bilagailua"
+
+msgid "typevideo"
+msgstr "Bideo"
+
+msgid "typeassistant"
+msgstr "Laguntzailea"
+
+msgid "typehomepage"
+msgstr "Etxeko orria"
+
+msgid "typeblog"
+msgstr "Bloga"
+
+msgid "typeprofile"
+msgstr "Profila"
+
+msgid "addfield"
+msgstr "Gehitu eremua..."
+
+msgid "addcontact"
+msgstr "Gehitu kontaktua"
+
+msgid "editcontact"
+msgstr "Editatu kontaktua"
+
+msgid "contacts"
+msgstr "Kontaktuak"
+
+msgid "contactproperties"
+msgstr "Kontaktuen ezaugarriak"
+
+msgid "contactnameandorg"
+msgstr "Izena eta erakundea"
+
+msgid "personalinfo"
+msgstr "Informazio pertsonala"
+
+msgid "personal"
+msgstr "Pertsonala"
+
+msgid "contactphoto"
+msgstr "Kontaktuaren argazkia"
+
+msgid "edit"
+msgstr "Editatu"
+
+msgid "cancel"
+msgstr "Utzi"
+
+msgid "save"
+msgstr "Gorde"
+
+msgid "delete"
+msgstr "Ezabatu"
+
+msgid "discard"
+msgstr "Baztertu"
+
+msgid "continue"
+msgstr "Jarraitu"
+
+msgid "ok"
+msgstr "Ados"
+
+msgid "rename"
+msgstr "Berrizendatu"
+
+msgid "addphoto"
+msgstr "Gehitu"
+
+msgid "replacephoto"
+msgstr "Ordeztu"
+
+msgid "uploadphoto"
+msgstr "Kargatu argazkia"
+
+msgid "choosefile"
+msgstr "Aukeratu fitxategia..."
+
+msgid "choosefiles"
+msgstr "Aukeratu fitxategiak..."
+
+msgid "browse"
+msgstr "Arakatu"
+
+msgid "newcontact"
+msgstr "Sortu kontaktu berria"
+
+msgid "deletecontact"
+msgstr "Ezabatu hautatutako kontaktuak"
+
+msgid "composeto"
+msgstr "Idatzi mezua honi:"
+
+msgid "contactsfromto"
+msgstr "$from -tik $to -ra $count kontaktuak"
+
+msgid "print"
+msgstr "Inprimatu"
+
+msgid "export"
+msgstr "Esportatu"
+
+msgid "exportall"
+msgstr "Esportatu dena"
+
+msgid "exportsel"
+msgstr "Esportatu hautaketa"
+
+msgid "exportvcards"
+msgstr "Esportatu kontaktuak vCard formatuan"
+
+msgid "newgroup"
+msgstr "Sortu talde berria"
+
+msgid "addgroup"
+msgstr "Gehitu taldea"
+
+msgid "grouprename"
+msgstr "Berrizendatu taldea"
+
+msgid "groupdelete"
+msgstr "Ezabatu taldea"
+
+msgid "groupassign"
+msgstr "Gehitu taldean..."
+
+msgid "groupremove"
+msgstr "Kendu taldetik"
+
+msgid "groupremoveselected"
+msgstr "Ezabatu taldetik hautatutako kontaktuak"
+
+msgid "uponelevel"
+msgstr "Igo maila bat"
+
+msgid "previouspage"
+msgstr "Erakutsi aurreko orria"
+
+msgid "firstpage"
+msgstr "Erakutsi lehenengo orria"
+
+msgid "nextpage"
+msgstr "Erakutsi hurrengo orria"
+
+msgid "lastpage"
+msgstr "Erakutsi azken orria"
+
+msgid "group"
+msgstr "Taldea"
+
+msgid "groups"
+msgstr "Taldeak"
+
+msgid "listgroup"
+msgstr "Zerrendatu taldeko partaideak"
+
+msgid "personaladrbook"
+msgstr "Helbide pertsonalak"
+
+msgid "searchsave"
+msgstr "Gorde bilaketa"
+
+msgid "searchdelete"
+msgstr "Ezabatu bilaketa"
+
+msgid "import"
+msgstr "Inportatu"
+
+msgid "importcontacts"
+msgstr "Inportatu kontaktuak"
+
+msgid "importfromfile"
+msgstr "Inportatu fitxategitik"
+
+msgid "importtarget"
+msgstr "Gehitu kontaktuak hona:"
+
+msgid "importreplace"
+msgstr "Ordezkatu helbide-liburu osoa"
+
+msgid "importgroups"
+msgstr "Inportatu talde-esleipenak"
+
+msgid "importgroupsall"
+msgstr "Dena (sortu taldeak behar izatekotan)"
+
+msgid "importgroupsexisting"
+msgstr "Existitzen diren taldeentzat soilik"
+
+msgid "importdesc"
+msgstr ""
+"Kargatu ditzakezu kontaktuak dagoen helbide liburu batetik.<br/>Une honetan "
+"onartzen dugu helbideen inportazioa <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> edo CSV (komaz "
+"bereizita) datu formatuetan."
+
+msgid "importmapdesc"
+msgstr ""
+"Baieztatu beheko eremuen mapen informazioa zuzena dela CSV (komaz bereizita)"
+" datuak inportatzen jarraitu aurretik."
+
+msgid "fieldnotmapped"
+msgstr "Eremua ez da mapatu (ez inportatu)"
+
+msgid "skipheader"
+msgstr "Ez inportatu lehenengo lerroa (goiburuak)"
+
+msgid "done"
+msgstr "Egina"
+
+msgid "birth_day"
+msgstr "Jaiotze eguna"
+
+msgid "birth_month"
+msgstr "Jaiotze hilabetea"
+
+msgid "birth_year"
+msgstr "Jaiotze urtea"
+
+msgid "settingsfor"
+msgstr "Honen ezarpenak:"
+
+msgid "about"
+msgstr "Honi buruz"
+
+msgid "preferences"
+msgstr "Hobespenak"
+
+msgid "userpreferences"
+msgstr "Erabiltzailearen hobespenak"
+
+msgid "editpreferences"
+msgstr "Editatu erabiltzailearen hobespenak"
+
+msgid "identities"
+msgstr "Identitateak"
+
+msgid "manageidentities"
+msgstr "Kudeatu identitateak"
+
+msgid "newidentity"
+msgstr "Sortu identitate berria"
+
+msgid "addidentity"
+msgstr "Gehitu identitatea"
+
+msgid "editidentity"
+msgstr "Editatu identitatea"
+
+msgid "identityencryption"
+msgstr "Zifraketa"
+
+msgid "preferhtml"
+msgstr "Bistaratu HTML"
+
+msgid "defaultcharset"
+msgstr "Lehenetsitako karaktere-jokoa"
+
+msgid "htmlmessage"
+msgstr "HTML mezua"
+
+msgid "messagepart"
+msgstr "Zatia"
+
+msgid "digitalsig"
+msgstr "Sinadura digitala"
+
+msgid "dateformat"
+msgstr "Data-formatua"
+
+msgid "timeformat"
+msgstr "Ordu-formatua"
+
+msgid "prettydate"
+msgstr "Data politak"
+
+msgid "setdefault"
+msgstr "Ezarri lehenetsia"
+
+msgid "autodetect"
+msgstr "Automatikoa"
+
+msgid "language"
+msgstr "Hizkuntza"
+
+msgid "timezone"
+msgstr "Ordu zonaldea"
+
+msgid "pagesize"
+msgstr "Lerro orrialdeko"
+
+msgid "signature"
+msgstr "Sinadura"
+
+msgid "dstactive"
+msgstr "Udako ordutegia"
+
+msgid "showinextwin"
+msgstr "Ireki mezua leiho berrian"
+
+msgid "composeextwin"
+msgstr "Idatzi leiho berrian"
+
+msgid "htmleditor"
+msgstr "Idatzi HTML mezuak"
+
+msgid "htmlonreply"
+msgstr "HTML mezua erantzuteko"
+
+msgid "htmlonreplyandforward"
+msgstr "HTML mezua erantzuteko edo birbidaltzeko"
+
+msgid "htmlsignature"
+msgstr "HTML sinadura"
+
+msgid "showemail"
+msgstr "Erakutsi helbide elektronikoa bere bistaratze izenarekin"
+
+msgid "previewpane"
+msgstr "Aurrebista panela ikusi"
+
+msgid "skin"
+msgstr "Azal-interfazea"
+
+msgid "logoutclear"
+msgstr "Garbitu Zakarronzia irtetean"
+
+msgid "logoutcompact"
+msgstr "Trinkotu Sarrera irtetean"
+
+msgid "uisettings"
+msgstr "Erabiltzaile-interfazea"
+
+msgid "serversettings"
+msgstr "Zerbitzariaren ezarpenak"
+
+msgid "mailboxview"
+msgstr "Posta-kutxatila ikuspegia"
+
+msgid "mdnrequests"
+msgstr "Bidaltzailearen jakinarazpena"
+
+msgid "askuser"
+msgstr "galdetu erabiltzaileari"
+
+msgid "autosend"
+msgstr "bidali irakurragiria"
+
+msgid "autosendknown"
+msgstr "bidali irakurragiria nire kontaktuei, bestela galdetu niri"
+
+msgid "autosendknownignore"
+msgstr "bidali irakurragiria nire kontaktuei, bestela ez ikusi egin"
+
+msgid "autosendtrusted"
+msgstr "bidali irakurragiria konfiantzazko igorleei, bestela galdetu iezadazu"
+
+msgid "autosendtrustedignore"
+msgstr "bidali irakurragiria konfiantzazko igorleei, bestela ezikusi"
+
+msgid "ignorerequest"
+msgstr "Ez ikusi eskaera"
+
+msgid "readwhendeleted"
+msgstr "Markatu mezua irakurrita bezala ezabatzerakoan"
+
+msgid "flagfordeletion"
+msgstr "Markatu mezua ezabatzeko ezabatu beharrean"
+
+msgid "skipdeleted"
+msgstr "Ez erakutsi ezabatutako mezuak"
+
+msgid "deletealways"
+msgstr "Zakarrontzira bidaltzeak huts egiten badu, ezabatu"
+
+msgid "deletejunk"
+msgstr ""
+"Ezabatu zuzenean \n"
+"zabor-mezuak"
+
+msgid "showremoteimages"
+msgstr "Erakutsi konektatutako urrutiko irudiak"
+
+msgid "allowremoteresources"
+msgstr "Baimendu urrutiko baliabideak (irudia, estiloak)"
+
+msgid "fromknownsenders"
+msgstr "bidaltzaile ezagunengandik"
+
+msgid "fromtrustedsenders"
+msgstr "konfiantzazko igorleengandik"
+
+msgid "frommycontacts"
+msgstr "nire kontaktuengandik"
+
+msgid "always"
+msgstr "beti"
+
+msgid "alwaysbutplain"
+msgstr "beti, testu lauari erantzutean izan ezik"
+
+msgid "showinlineimages"
+msgstr "Erakutsi erantzitako irudiak mezuaren azpian"
+
+msgid "autosavedraft"
+msgstr "Zirriborroa automatikoki gorde"
+
+msgid "everynminutes"
+msgstr "$n minuturo"
+
+msgid "refreshinterval"
+msgstr "Freskatu (bilatu mezu berriak eta abar)"
+
+msgid "never"
+msgstr "inoiz ez"
+
+msgid "immediately"
+msgstr "berehala"
+
+msgid "messagesdisplaying"
+msgstr "Mezuak bistaratzen"
+
+msgid "messagescomposition"
+msgstr "Mezuak idazten"
+
+msgid "mimeparamfolding"
+msgstr "Eranskinen izenak"
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (beste batzuk)"
+
+msgid "force7bit"
+msgstr "Erabili MIME kodeketa 8 bitekok karakterentzat"
+
+msgid "savelocalstorage"
+msgstr "Gorde nabigatzailearen biltegi lokalean (behin behinean)"
+
+msgid "advancedoptions"
+msgstr "Aukera aurreratuak"
+
+msgid "toggleadvancedoptions"
+msgstr "Toggle aukera aurreratuak"
+
+msgid "focusonnewmessage"
+msgstr "Fokatu leihoa mezu berrian"
+
+msgid "checkallfolders"
+msgstr "Egiaztatu karpeta guztiak mezu berrien bila"
+
+msgid "displaynext"
+msgstr "Bistaratu  zerrendako hurrengo sarrera ezabatu/lekuz aldatu ondoren"
+
+msgid "defaultfont"
+msgstr "Lehenetsitako letra-mota HTML mezuetarako"
+
+msgid "mainoptions"
+msgstr "Aukera nagusiak"
+
+msgid "browseroptions"
+msgstr "Nabigatze-aukerak"
+
+msgid "section"
+msgstr "Atala"
+
+msgid "maintenance"
+msgstr "Mantenua"
+
+msgid "newmessage"
+msgstr "Mezu berria"
+
+msgid "signatureoptions"
+msgstr "Sinadura-aukerak"
+
+msgid "whenreplying"
+msgstr "Erantzutean"
+
+msgid "replyempty"
+msgstr "ez aipatu jatorrizko mezua"
+
+msgid "replytopposting"
+msgstr "hasi mezu berria aipamenaren gainean"
+
+msgid "replytoppostingnoindent"
+msgstr "hasi mezu berria aipamenaren gainean (koskarik gabe)"
+
+msgid "replybottomposting"
+msgstr "hasi mezu berria aipamenaren azpian"
+
+msgid "replyremovesignature"
+msgstr "Erantzutean ezabatu mezuaren jatorrizko sinadura"
+
+msgid "autoaddsignature"
+msgstr "Gehitu sinadura automatikoki"
+
+msgid "newmessageonly"
+msgstr "bakarrik mezu berria"
+
+msgid "replyandforwardonly"
+msgstr "bakarri erantzun eta birbidalketak"
+
+msgid "insertsignature"
+msgstr "Txertatu sinadura"
+
+msgid "sigbelow"
+msgstr "Kokatu sinadura aipamenaren azpian"
+
+msgid "sigseparator"
+msgstr "Behartu banatzaile estandarra sinaduretan"
+
+msgid "automarkread"
+msgstr "Markatu mezuak irakurrita gisa"
+
+msgid "afternseconds"
+msgstr "$n segundo eta gero"
+
+msgid "reqmdn"
+msgstr "Eskatu beti irakurragiria"
+
+msgid "reqdsn"
+msgstr "Eskatu beti entrega-egoeraren jakinarazpena"
+
+msgid "alwayskeepformatting"
+msgstr "Mantendu beti jatorrizko testuaren formatua"
+
+msgid "replysamefolder"
+msgstr "Kokatu erantzunak erantzuten ari den mezuarenkarpeta berean"
+
+msgid "defaultabook"
+msgstr "Lehenetsitako helbide-liburua"
+
+msgid "autocompletesingle"
+msgstr "Saltatu helbide elektroniko alternatiboak  osatze automatikoan"
+
+msgid "listnamedisplay"
+msgstr "Zerrendatu kontaktuak honela"
+
+msgid "contactformmode"
+msgstr "Kontaktuen formulario modua"
+
+msgid "privatemode"
+msgstr "Pribatua (etxekoa)"
+
+msgid "businessmode"
+msgstr "Lanekoa"
+
+msgid "collectedaddresses"
+msgstr "Bildutako helbideak"
+
+msgid "collectedrecipients"
+msgstr "Bildutako hartzaileak"
+
+msgid "collectedrecipientsopt"
+msgstr "Gorde irteerako email hartzaileak hemen"
+
+msgid "collectedsendersopt"
+msgstr "Gorde konfiantzazko igorleak hemen"
+
+msgid "trustedsenders"
+msgstr "Konfiantzako igorleak"
+
+msgid "spellcheckbeforesend"
+msgstr "Egiaztatu ortografia mezua bidali aurretik"
+
+msgid "spellcheckoptions"
+msgstr "Ortografia-egiaztatzearen aukerak"
+
+msgid "spellcheckignoresyms"
+msgstr "Ez ikusi sinboloak dituzten hitzak"
+
+msgid "spellcheckignorenums"
+msgstr "Ez ikusi zenbakiak dituzten hitzak"
+
+msgid "spellcheckignorecaps"
+msgstr "Ez ikusi letra kapitalak dituzten hitzak"
+
+msgid "addtodict"
+msgstr "Gehitu hiztegira"
+
+msgid "editoroptions"
+msgstr "Editorearen aukerak"
+
+msgid "enableautolink"
+msgstr "Bihurtu automatikoki baliozko URLak hiperesteka"
+
+msgid "mailtoprotohandler"
+msgstr "Erregistratu mailto protokoloaren kudeatzailea:  estekak"
+
+msgid "standardwindows"
+msgstr "Tratatu popup leihoak leiho estandar gisa"
+
+msgid "forwardmode"
+msgstr "Mezuak birbidaltzen"
+
+msgid "inline"
+msgstr "Konektatua"
+
+msgid "asattachment"
+msgstr "eranskin moduan"
+
+msgid "replyallmode"
+msgstr "[Erantzun denei] botoiaren lehenetsitako ekintza"
+
+msgid "replyalldefault"
+msgstr "erantzun denei"
+
+msgid "replyalllist"
+msgstr "erantzun posta zerrendara soilik (aurkitzekotan)"
+
+msgid "allmessages"
+msgstr "mezu guztiak"
+
+msgid "olderxdays"
+msgstr "$x egun baino zaharrago"
+
+msgid "folder"
+msgstr "Karpeta"
+
+msgid "folders"
+msgstr "Karpetak"
+
+msgid "foldername"
+msgstr "Karpetaren izena"
+
+msgid "subscribed"
+msgstr "Harpideturik"
+
+msgid "messagecount"
+msgstr "Mezuak"
+
+msgid "create"
+msgstr "Sortu"
+
+msgid "createfolder"
+msgstr "Sortu karpeta berria"
+
+msgid "managefolders"
+msgstr "Kudeatu karpetak"
+
+msgid "specialfolders"
+msgstr "Karpeta bereziak"
+
+msgid "properties"
+msgstr "Ezaugarriak"
+
+msgid "folderproperties"
+msgstr "Karpeta-ezaugarriak"
+
+msgid "parentfolder"
+msgstr "Goragoko karpeta"
+
+msgid "location"
+msgstr "Kokalekua"
+
+msgid "info"
+msgstr "Informazioa"
+
+msgid "getfoldersize"
+msgstr "Klikatu ikusteko karpetaren tamaina"
+
+msgid "changesubscription"
+msgstr "Klikatu harpidetza aldatzeko"
+
+msgid "foldertype"
+msgstr "Karpeta mota"
+
+msgid "personalfolder"
+msgstr "Karpeta pribatua"
+
+msgid "otherfolder"
+msgstr "Beste erabiltzaileen karpetak"
+
+msgid "sharedfolder"
+msgstr "Karpeta publikoa"
+
+msgid "findfolders"
+msgstr "Bilatu karpetak"
+
+msgid "findcontacts"
+msgstr "Bilatu kontaktuak"
+
+msgid "findmail"
+msgstr "Bilatu posta mezuak"
+
+msgid "namespace.personal"
+msgstr "Pertsonala"
+
+msgid "namespace.other"
+msgstr "Beste erabiltzaileak"
+
+msgid "namespace.shared"
+msgstr "Partekatua"
+
+msgid "dualuselabel"
+msgstr "Bakarrik eduki dezake"
+
+msgid "dualusemail"
+msgstr "mezuak"
+
+msgid "dualusefolder"
+msgstr "karpetak"
+
+msgid "generate"
+msgstr "Sortu"
+
+msgid "encryptioncreatekey"
+msgstr "Sortu gako pare berria"
+
+msgid "openmailvelopesettings"
+msgstr "Ireki Mailvelope ezarpenak"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+" Badaukazu bat datozen $nr gako pribatu zure Mailvelope giltzarrian gordeta:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Bidaltzaile identitate honek jada ez dauka PGP gako pribaturik gordeta zure "
+"Mailvelope gehigarrian. Nahi al duzu bat sortzea mezuak zifratu ahal "
+"izateko?"
+
+msgid "encryption"
+msgstr "Zifraketa"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelope aukerak"
+
+msgid "mailvelopemainkeyring"
+msgstr "Erabili Mailvelope gako-sorta nagusia"
+
+msgid "mailvelopenotfound"
+msgstr "Mailvelope gehigarria ez dago gaituta/instalatuta zure nabigatzailean"
+
+msgid "mailvelopeenable"
+msgstr "Gaitu"
+
+msgid "sortby"
+msgstr "Honela ordenatu"
+
+msgid "sortasc"
+msgstr "Goraka ordenatu"
+
+msgid "sortdesc"
+msgstr "Ordenatu beherantz"
+
+msgid "undo"
+msgstr "Desegin"
+
+msgid "installedplugins"
+msgstr "Instalatutako plugin-ak"
+
+msgid "plugin"
+msgstr "Plugin"
+
+msgid "version"
+msgstr "Bertsioa"
+
+msgid "source"
+msgstr "Iturria"
+
+msgid "destination"
+msgstr "Helmuga"
+
+msgid "license"
+msgstr "Lizentzia"
+
+msgid "skinauthor"
+msgstr "$egilearen arabera"
+
+msgid "support"
+msgstr "Eskuratu laguntza"
+
+msgid "savedsearches"
+msgstr "Gordetako bilaketak"
+
+msgid "dateformatY"
+msgstr "UUUU"
+
+msgid "dateformaty"
+msgstr "UU"
+
+msgid "dateformatm"
+msgstr "HH"
+
+msgid "dateformatd"
+msgstr "EE"
+
+msgid "dateformatj"
+msgstr "E"
+
+msgid "dateformatn"
+msgstr "H"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Ingelesa"
+
+msgid "westerneuropean"
+msgstr "Mendebaldeko europearra"
+
+msgid "easterneuropean"
+msgstr "Ekialdeko europearra"
+
+msgid "southeasterneuropean"
+msgstr "Hego-ekialdeko europearra"
+
+msgid "baltic"
+msgstr "Baltikoa"
+
+msgid "cyrillic"
+msgstr "Zirilikoa"
+
+msgid "arabic"
+msgstr "Arabiarra"
+
+msgid "greek"
+msgstr "Grekoa"
+
+msgid "hebrew"
+msgstr "Hebrearra"
+
+msgid "turkish"
+msgstr "Turkiarra"
+
+msgid "nordic"
+msgstr "Nordikoa"
+
+msgid "thai"
+msgstr "Thai"
+
+msgid "celtic"
+msgstr "Zeltiar"
+
+msgid "vietnamese"
+msgstr "Vietnamdarra"
+
+msgid "japanese"
+msgstr "Japoniarra"
+
+msgid "korean"
+msgstr "Korearra"
+
+msgid "chinese"
+msgstr "Txinatarra"
+
+msgid "arialabeltopnav"
+msgstr "Leihoen kontrola"
+
+msgid "arialabeltasknav"
+msgstr "Aplikazioaren atazak"
+
+msgid "arialabeltoolbar"
+msgstr "Aplikazioaren tresna barra"
+
+msgid "arialabellistnav"
+msgstr "Zerrendako nabigazioa"
+
+msgid "arialabelactivetask"
+msgstr "Ataza aktiboa"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "E-posten zerrendako iragazkia"
+
+msgid "arialabelmailsearchform"
+msgstr "Mezu elektronikoak bilatzeko formularioa"
+
+msgid "arialabelcontactsearchform"
+msgstr "Kontaktuak bilatzeko formularioa"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "E-posta bilaketa sarrera"
+
+msgid "arialabelquicksearchbox"
+msgstr "Bilaketa sarrera"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Karpenten zerrendatze iragazkia"
+
+msgid "arialabelfoldersearchform"
+msgstr "Karpeten bilateta formularioa"
+
+msgid "arialabelfolderlist"
+msgstr "E-posta karpeta hautaketa"
+
+msgid "arialabelmessagelist"
+msgstr "E-posta mezuen zerrendatzea"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Mezuaren aurrebista"
+
+msgid "arialabelmailboxmenu"
+msgstr "Karpetako ekintzen menua"
+
+msgid "arialabellistselectmenu"
+msgstr "Zerrenda hautatzeko menua"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Hariak zerrendatzeko menua"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Mezuen zerrenda bistaratzeko eta ordenatzeko aukerak"
+
+msgid "arialabelmailimportdialog"
+msgstr "Mezuak inportatzeko elkarrizketa"
+
+msgid "arialabelmessagenav"
+msgstr "Mezu nabigazioa"
+
+msgid "arialabelmessagebody"
+msgstr "Mezuaren gorputza"
+
+msgid "arialabelmessageactions"
+msgstr "Mezuen ekintzak"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Kontaktuak bilatzeko formularioa"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Kontaktuak bilatzeko sarrera"
+
+msgid "arialabelmessageheaders"
+msgstr "Mezuen goiburuak"
+
+msgid "arialabelforwardingoptions"
+msgstr "Birbidaltzeko aukerak"
+
+msgid "arialabelreplyalloptions"
+msgstr "Guztiei erantzuteko aukerak"
+
+msgid "arialabelmoremessageactions"
+msgstr "Mezu ekintza gehiago"
+
+msgid "arialabelmorecontactactions"
+msgstr "Kontaktuen ekintza gehiago"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Markatu hautatutako mezua gisa honetara..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Konposizio aukerak"
+
+msgid "arialabelresponsesmenu"
+msgstr "Erantzun finkoen menua"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Eranskinak kargatzeko formularioa"
+
+msgid "arialabelattachmentmenu"
+msgstr "Eranskinaren aukerak"
+
+msgid "arialabelmailtomenu"
+msgstr "Helbide elektronikoaren aukerak"
+
+msgid "arialabelattachmentpreview"
+msgstr "Eranskinaren aurrebista"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Kontaktuak eta taldeak hartzaile gisa hautatzeko zerrenda"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Kontaktuak esportatzeko aukerak"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Kontaktu eta taldeen helbide-liburuaren aukerak"
+
+msgid "arialabelpreferencesform"
+msgstr "Hobespenen formularioa"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Identitatea editatzeko formularioa"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Erantzuna editatzeko formularioa"
+
+msgid "arialabelsearchterms"
+msgstr "Bilatu terminoak"
+
+msgid "arialabeldropactionmenu"
+msgstr "Arrastatu eta jaregin ekintzaren menua"
+
+msgid "arialabelheadersmenu"
+msgstr "Hartzailea (goiburua) menua gehituz"
+
+msgid "arialabelimagetools"
+msgstr "Irudi-tresnak"
+
+msgid "helplistnavigation"
+msgstr "Zerrendatu teklatuaren nabigazioa"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Gezia gora/behera: Mugitu ilararen fokua/hautaketa.\n"
+"Zuriunea: Hautatu fokatutako ilara.\n"
+"Maius + gora/behera: Hautatu beste ilara goian/behean.\n"
+"Ctrl + Zuriunea: Gehitu fokatutako ilara hautaketara/ezabatu hautaketatik."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Gezia eskuin/ezker: zabaldu/tolestu mezuaren haria (bakarrik haria moduan).\n"
+"Sartu: Ireki hautatutako/fokatutako mezua.\n"
+"Ezabatu: Eraman hautatutako mezuak zakarrontzira.\n"
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Sartu: Ireki hautatutako/fokatutako kontaktua."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Errore bat gertatu da!"
+
+msgid "messages.loginfailed"
+msgstr "Saio hasierak huts egin du."
+
+msgid "messages.cookiesdisabled"
+msgstr "Zure nabigatzaileak ez du cookie-rik onartzen."
+
+msgid "messages.sessionerror"
+msgstr "Zure saioa baliogabea da edo iraungita dago."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Cookieak ez datozela bat hauteman da. Garbitu zure nabigatzailearen "
+"cookieak."
+
+msgid "messages.storageerror"
+msgstr "Huts egin du biltegiratze-zerbitzarira konektatzean."
+
+msgid "messages.servererror"
+msgstr "Zerbitzari-errorea!"
+
+msgid "messages.servererrormsg"
+msgstr "Zerbitzari-errorea: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Sartzeko saio baliogabe gehiegi. Saiatu beranduago."
+
+msgid "messages.connerror"
+msgstr "Konexio errorea (zerbitzaria atzitzeak huts egin du)!"
+
+msgid "messages.dberror"
+msgstr "Datu-basearen errorea!"
+
+msgid "messages.dbconnerror"
+msgstr "Ezin izan da konektatu datu-basera"
+
+msgid "messages.windowopenerror"
+msgstr "Popup leihoa blokeatua"
+
+msgid "messages.requesttimedout"
+msgstr "Eskaera denboraz kanpo."
+
+msgid "messages.errorreadonly"
+msgstr "Ezin da ekintza burutu. Karpeta soilik irakurtzekoa da."
+
+msgid "messages.errornoperm"
+msgstr "Ezin da ekintza burutu. Baimena ukatua."
+
+msgid "messages.erroroverquota"
+msgstr "Ezin da ekintza burutu. Diskoan ez dago tokirik."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Diskoan ez dago tokirik. Erabili SHIFT+DEL mezua ezabatzeko."
+
+msgid "messages.invalidrequest"
+msgstr "Eskaera ez da baliozkoa! Datuak ez dira gorde."
+
+msgid "messages.invalidhost"
+msgstr "Zerbitzari-izena ez da baliozkoa."
+
+msgid "messages.nomessagesfound"
+msgstr "Ez da mezurik aurkitu postontzi honetan."
+
+msgid "messages.loggedout"
+msgstr "Itxi duzu saioa. Agur!"
+
+msgid "messages.mailboxempty"
+msgstr "Postontzia hutsik dago"
+
+msgid "messages.nomessages"
+msgstr "Ez dago mezurik"
+
+msgid "messages.refreshing"
+msgstr "Freskatzen..."
+
+msgid "messages.loading"
+msgstr "Kargatzen..."
+
+msgid "messages.uploading"
+msgstr "Fitxategia kargatzen..."
+
+msgid "messages.attaching"
+msgstr "Fitxategia eransten..."
+
+msgid "messages.uploadingmany"
+msgstr "Fitxategiak kargatzen..."
+
+msgid "messages.loadingdata"
+msgstr "Datuak kargatzen..."
+
+msgid "messages.checkingmail"
+msgstr "Mezu berrien bila arakatzen..."
+
+msgid "messages.sendingmessage"
+msgstr "Mezua bidaltzen..."
+
+msgid "messages.messagesent"
+msgstr "Mezua behar bezala bidali da."
+
+msgid "messages.savingmessage"
+msgstr "Mezua gordetzen..."
+
+msgid "messages.messagesaved"
+msgstr "Mezua zirriborroetan gorde da."
+
+msgid "messages.successfullysaved"
+msgstr "Behar bezala gorde da."
+
+msgid "messages.savingresponse"
+msgstr "Erantzun-testua gordetzen..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Seguru zaude erantzun-testu hau  ezabatu nahi duzula?"
+
+msgid "messages.nocontactselected"
+msgstr "Oraindik ez duzu kontakturik hautatu."
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontaktua behar bezala gehitu da helbide-liburura."
+
+msgid "messages.contactexists"
+msgstr "Badago kontaktu bat helbide elektroniko horrekin"
+
+msgid "messages.contactnameexists"
+msgstr "Lehendik badago izen hori duen kontaktua."
+
+msgid "messages.blockedimages"
+msgstr "Zure pribatutasuna babesteko urrutiko irudiak blokeatu egin dira."
+
+msgid "messages.blockedresources"
+msgstr "Zure pribatutasuna babesteko urrutiko baliabideak blokeatu egin dira."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Mezu honek iruzurrak izan daitezkeen helbide elektroniko susmagarriak ditu."
+
+msgid "messages.bccemail"
+msgstr "Birbidalitako mezuek hartzaile konfidentzialak dituzte (Bcc)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Mezua inolako aldaketarik gabe bidaliko da, hau da, jatorrizko gorputza, "
+"goiburuak eta hartzaileak erabiliz."
+
+msgid "messages.encryptedmessage"
+msgstr "Hau enkriptaturiko mezu bat da eta ezin da bistarazi. Barkatu!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Hau zifratutako mezua da eta zure nabigatzaileko gehigarri batekin "
+"deszifratu daiteke."
+
+msgid "messages.nopubkeyfor"
+msgstr "Ez da baliozko gako publikorik aurkitu $email-(e)rako"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Ez da baliozko gako publikorik aurkitu zure bidalketa identitaterako. Mezua "
+"jasotzaileentzat bakarrik zifratzea nahi duzu?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Dagoeneko kargatutako eranskinak ezin dira zifratu. Gehitu itzazu berriro "
+"zifratze editorera."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Falta diren gakoak gako publikoen zerbitzarietan bilatzea nahi duzu?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Hurrengo gako publikoak aurkitu dira:"
+
+msgid "messages.keyservererror"
+msgstr "Huts egin du gakoa gako-zerbitzaritik eskuratzen."
+
+msgid "messages.keyimportsuccess"
+msgstr "$key gako publikoa zure gako-sortan sartu da."
+
+msgid "messages.nocontactsfound"
+msgstr "Ez da kontakturik aurkitu."
+
+msgid "messages.contactnotfound"
+msgstr "Eskatutako kontaktua ez da aurkitu."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Bilaketa inprimaki bat erabili behar duzu hautatutako helbide-liburutik "
+"kontaktuak ikusteko."
+
+msgid "messages.sendingfailed"
+msgstr "Ezin izan da mezua bidali."
+
+msgid "messages.senttooquickly"
+msgstr "Itxaron $sec segundo mezua bidali aurretik, mesedez."
+
+msgid "messages.errorsavingsent"
+msgstr "Errore bat gertatu da bidalitako mezua gordetzean."
+
+msgid "messages.errorsaving"
+msgstr "Errore bat gertatu da gordetzean."
+
+msgid "messages.errormoving"
+msgstr "Ezin d(ir)a mezua(k) mugitu."
+
+msgid "messages.errorcopying"
+msgstr "Ezin d(ir)a kopiatu mezua(k)."
+
+msgid "messages.errordeleting"
+msgstr "Ezin da mezua ezabatu"
+
+msgid "messages.errormarking"
+msgstr "Ezin d(ir)a markatu mezua(k)."
+
+msgid "messages.alerttitle"
+msgstr "Kontuz"
+
+msgid "messages.confirmationtitle"
+msgstr "Ziur zaude..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Benetan hautaturiko kontaktuak ezabatu nahi dituzula?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Seguru zaude hautatutako taldea ezabatu nahi duzula?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Benetan hautaturiko mezuak ezabatu nahi dituzula?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Benetan Karpeta hau ezabatu nahi duzu?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Seguru zaude mugitu nahi duzula karpeta hori?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Benetan karpeta honetako mezu guziak ezabatu nahi dituzu?"
+
+msgid "messages.contactdeleting"
+msgstr "Kontaktua(k) ezabatzen..."
+
+msgid "messages.groupdeleting"
+msgstr "Taldea ezabatzen..."
+
+msgid "messages.folderdeleting"
+msgstr "Karpeta ezabatzen..."
+
+msgid "messages.foldermoving"
+msgstr "Karpeta mugitzen..."
+
+msgid "messages.foldersubscribing"
+msgstr "Karpeta harpidetzen..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Karpetaren harpidetza kentzen..."
+
+msgid "messages.formincomplete"
+msgstr "Inprimakia ez guztiz bete"
+
+msgid "messages.noemailwarning"
+msgstr "Idatzi baliozko helbide elektroniko bat"
+
+msgid "messages.nonamewarning"
+msgstr "Mesedez izen bat idatzi"
+
+msgid "messages.nopagesizewarning"
+msgstr "Mesedez paper tamaina idatzi"
+
+msgid "messages.nosenderwarning"
+msgstr "Idatzi bidaltzailearen helbide elektronikoa"
+
+msgid "messages.recipientsadded"
+msgstr "Hartzailea(k) gehitu d(ir)a."
+
+msgid "messages.norecipientwarning"
+msgstr "Sartu gutxienez hartzaile bat"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Hartzaile guztiek ikusiko dute beste hartzaileen posta helbideak. Hori "
+"eragozteko eta haien pribatutasuna babesteko erabili dezakezu Bcc -ezkutuko "
+"kopia- eremua."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Hartzaile publiko gehiegi"
+
+msgid "messages.nosubjectwarning"
+msgstr "\"Gaia\" eremua hutsik dago. Bat idatzi nahi al duzu?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Gairik ez"
+
+msgid "messages.nobodywarning"
+msgstr "Testu gabeko mezu hau bidali?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Mezua ez da bidali eta gorde gabeko aldaketak ditu. Nahi duzu zure aldaketak"
+" baztertu?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Lehendik idatzitako baina bidali gabeko mezu bat aurkitu "
+"da.\\n\\nGaia:$subject\\nGordeta:$date\\n\\nBerreskuratu nahi duzu mezu hau?"
+
+msgid "messages.nosearchname"
+msgstr "Idatzi kontaktu izen bat edo helbide elektroniko bat"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Oraindik ez dira kargatu eranskin guztiak. Itxaron edo ezeztatu karga."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr mezu aurkiturik"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr kontaktu aurkitu dira."
+
+msgid "messages.searchnomatch"
+msgstr "Bilaketak ez du emaitzarik itzuli"
+
+msgid "messages.searching"
+msgstr "Bilatzen..."
+
+msgid "messages.checking"
+msgstr "Arakatzen..."
+
+msgid "messages.stillsearching"
+msgstr "Oraindik bilatzen..."
+
+msgid "messages.nospellerrors"
+msgstr "Ez da ortografia errorerik aurkitu"
+
+msgid "messages.folderdeleted"
+msgstr "Karpeta behar bezala ezabatu da"
+
+msgid "messages.foldersubscribed"
+msgstr "Karpeta ongi harpidetu da."
+
+msgid "messages.folderunsubscribed"
+msgstr "Karpetaren harpidetza ongi kendu da."
+
+msgid "messages.folderpurged"
+msgstr "Karpeta behar bezala hustu da."
+
+msgid "messages.folderexpunged"
+msgstr "Karpeta behar bezala trinkotu da."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Behar bezala ezabatu da"
+
+msgid "messages.converting"
+msgstr "Mezuaren formatua ezabatzen"
+
+msgid "messages.messageopenerror"
+msgstr "Ezin da zerbitzaritik mezua kargatu"
+
+msgid "messages.filelinkerror"
+msgstr "Huts egin du fitxategia eransten."
+
+msgid "messages.fileuploaderror"
+msgstr "Huts fitxategia eransterakoan"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"Ez da onartzen eremu desberdinak dituzten CSV fitxategi anitzen inportazioa."
+
+msgid "messages.filesizeerror"
+msgstr "Erantsi nahi duzun fitxategian $size tamaina muga gainditzen du"
+
+msgid "messages.filecounterror"
+msgstr "Gehienez jota $count fitxategi kargatu daitezke aldi berean."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Huts egin du fitxategia eransten. Mezu baten gehienezko tamaina ($size) "
+"gainditu da."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Mezuaren gehienezko tamaina  ($size) gainditu da. $num mezu ez dira erantsi."
+
+msgid "messages.copysuccess"
+msgstr "$nr kontaktu ongi kopiatu dira."
+
+msgid "messages.movesuccess"
+msgstr "$nr kontaktu ongi mugitu dira."
+
+msgid "messages.copyerror"
+msgstr "Ezin da kontakturik kopiatu."
+
+msgid "messages.moveerror"
+msgstr "Ezin da kontakturik mugitu."
+
+msgid "messages.sourceisreadonly"
+msgstr "Helbide iturburua irakurtzeko soilik da"
+
+msgid "messages.errorsavingcontact"
+msgstr "Ezin da kontaktuaren helbidea gorde"
+
+msgid "messages.movingmessage"
+msgstr "Mezua mugitzen..."
+
+msgid "messages.copyingmessage"
+msgstr "Mezuak kopiatzen..."
+
+msgid "messages.copyingcontact"
+msgstr "Kontaktua(k) kopiatzen..."
+
+msgid "messages.movingcontact"
+msgstr "Kontaktua(k) mugitzen..."
+
+msgid "messages.deletingmessage"
+msgstr "Mezua(k) ezabatzen..."
+
+msgid "messages.markingmessage"
+msgstr "Mezua(k) markatzen..."
+
+msgid "messages.addingmember"
+msgstr "Kontaktua(k) taldera gehitzen..."
+
+msgid "messages.removingmember"
+msgstr "Kontaktua(k) taldetik ezabatzen..."
+
+msgid "messages.receiptsent"
+msgstr "Ondo bidalia irakurritako agiria"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Ezin da agiria bidali"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Seguru zaude identitate hau ezabatu nahi duzula?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Ezin da izaera hau ezabatu, zure bakarra da"
+
+msgid "messages.forbiddencharacter"
+msgstr "Karpeta izenak debekatutako karaktereak ditu"
+
+msgid "messages.selectimportfile"
+msgstr "Hautatu kargatzeko fitxategia."
+
+msgid "messages.addresswriterror"
+msgstr "Hautatutako helbide-liburua ezin da editatu."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Kontaktuak ongi gehitu dira taldera."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontaktuak ongi ezabatu dira taldetik."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Talde-esleipena ez da aldatu."
+
+msgid "messages.importwait"
+msgstr "Inportatzen, itxaron mesedez..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Huts egin du inportatzean. Kargatu duzun fitxategia ez da inportatzeko "
+"fitxategi baliozkoa."
+
+msgid "messages.importconfirm"
+msgstr "<b>Ongi inportatu dira $inserted kontaktu</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>Saltatu dira zeuden $skipped kontaktu</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>Saltatu dira baliogabeko $invalid contacts</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "<b>Huts egin du $errors baliozko kontaktuen inportazioak</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr mezu ongi inportatu dira."
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Inportazio akatsa! Kargatutako fitxategia ez da baliozko mezua edo "
+"postontzi-fitxategia"
+
+msgid "messages.opnotpermitted"
+msgstr "Ekintza ez baimendua!"
+
+msgid "messages.nofromaddress"
+msgstr "Hautatutako identitatearen helbide elektronikoa falta da."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Editore mota aldatzeak ekar dezake testuaren formatua galtzea. Jarraitu nahi"
+" duzu?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Ezarpen akats larria gertatu da. Jarri harremanetan zure "
+"administratzailearekin ahalik eta lasterren.  <b>Zure mezua ezin da "
+"bidali.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP errorea ($code): Zerbitzariarekiko konexioak huts egin du."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP errorea ($code): Egiaztapenak huts egin du."
+
+msgid "messages.smtpfromerror"
+msgstr ""
+"SMTP errorea ($code):  \"$from\" ($msg) bidaltzailearen ezartzeak huts egin "
+"du."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP errorea ($code):  \"$to\" ($msg) hartzailea  gehitzen huts egin du."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP errorea: Ezin da hartzaileen zerrenda analizatu."
+
+msgid "messages.smtputf8error"
+msgstr "SMTP errorea: Zerbitzariak ez du Unicode onartzen posta-helbidean."
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+"SMTP errorea: Mezuak zerbitzariak ezarritako muga ($limit) gainditu du."
+
+msgid "messages.smtperror"
+msgstr "SMTP errorea: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Helbide elektroniko baliogabea: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Hartzaile gehiegi. Txikitu hartzaile kopura hona $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Taldeko partaideen kopurua $max -ko maximoa gainditzen du:"
+
+msgid "messages.internalerror"
+msgstr "Barne akatsa. Saiatu berriz, mesedez."
+
+msgid "messages.contactdelerror"
+msgstr "Ezin d(ir)a kontaktua(k) ezabatu."
+
+msgid "messages.contactdeleted"
+msgstr "Kontaktua(k) ongi ezabatu dira."
+
+msgid "messages.contactrestoreerror"
+msgstr "Ezin d(ir)a ezabatutako kontaktua(k) leheneratu."
+
+msgid "messages.contactrestored"
+msgstr "Kontaktua(k) ongi leheneratu d(ir)a."
+
+msgid "messages.groupdeleted"
+msgstr "Taldea ongi ezabatu da."
+
+msgid "messages.grouprenamed"
+msgstr "Taldea ongi berrizendatu da."
+
+msgid "messages.groupcreated"
+msgstr "Taldea ongi sortu da."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Bilaketaren gordetzea ongi ezabatu da."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Ezin da ezabatu bilaketaren gordeketa."
+
+msgid "messages.savedsearchcreated"
+msgstr "Bilaketaren gordeketa ongi sortu da."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Ezin da sortu bilaketaren gordeketa."
+
+msgid "messages.messagedeleted"
+msgstr "Mezua(k) ongi ezabatu dira."
+
+msgid "messages.messagemoved"
+msgstr "Mezua(k) ongi mugitu d(ir)a."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Mezua(k) ongi eraman d(ir)a zakarrontzira"
+
+msgid "messages.messagecopied"
+msgstr "Mezua(k) ongi kopiatu d(ir)a"
+
+msgid "messages.messagemarked"
+msgstr "Mezua(k) ongi markatu d(ir)a"
+
+msgid "messages.autocompletechars"
+msgstr "Sartu gutxienez $min karaktere osatze automatikorako"
+
+msgid "messages.autocompletemore"
+msgstr "Bat datozen sarrera gehiago topatu dira. Idatzi karaktere gehiago."
+
+msgid "messages.namecannotbeempty"
+msgstr "Izena ezin da hutsik egon."
+
+msgid "messages.nametoolong"
+msgstr "Izena luzeegia da."
+
+msgid "messages.namedotforbidden"
+msgstr "Karpeta izenak ezin dira puntu batekin hasi."
+
+msgid "messages.folderupdated"
+msgstr "Karpeta ongi eguneratu da."
+
+msgid "messages.foldercreated"
+msgstr "Karpeta ongi  sortu da."
+
+msgid "messages.invalidimageformat"
+msgstr "Irudi formatua ez da baliozkoa."
+
+msgid "messages.mispellingsfound"
+msgstr "Ortografia akatsak detektatu dira mezuan."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Ezin da karpeta sortu/mugi hautatutako goragoko karpetan. Sartzeko baimenik "
+"ez."
+
+msgid "messages.messagetoobig"
+msgstr "Mezu-zatia handiegia da prozesatzeko."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Eranskina ez da fidagarria bere motak ez duelako bat egiten mezuan aitortzen"
+" duen motarekin. Ez baduzu konfiantza bidaltzailearekin ez zenuke ireki "
+"behar zeren eta kode maltzurra gorde dezake.<br/><br/><em>Iradokita: "
+"$expected; topatuta: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Kontuz: web-posta zerbitzu honek Javascript behar du! Erabili nahi baduzu "
+"gaitu Javascript zure nabigatzailearen ezarpenetan."
+
+msgid "messages.messageissent"
+msgstr "Mezua bidali da baina oraindik ez da gorde. Nahi duzu orain gorde?"
+
+msgid "messages.errnotfound"
+msgstr "Fitxategia ez da aurkitu"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Eskatutako baliabidea ez da aurkitu"
+
+msgid "messages.errfailedrequest"
+msgstr "Eskaerak huts egin du"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Baimentzeak hust egin du"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Ezin izan da egiaztatu zerbitzu hau erabiltzeko baimena duzula!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Eskaeraren egiaztapenak huts egin du"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Zu babestearren, baliabide honen sarbideak CSRF.\n"
+" motako erasoen kontrako babesa du. Mezu hau ikusten baduzu seguraski ez zara zerbitzutik atera web orria utzi aurretik.\n"
+"\n"
+"Giza ekintza bat behar da aurrera egiteko."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Jar zaitez sistemako administratzailearekin harrementan."
+
+msgid "messages.clicktoresumesession"
+msgstr "Egin klik hemen zure aurreko saioarekin jarraitzeko"
+
+msgid "messages.errcomposesession"
+msgstr "Idazketa sesioan errorea"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Eskatutako idazketa sesioa ez da aurkitu."
+
+msgid "messages.clicktocompose"
+msgstr "Klik egin hemen mezu berri bat idazteko"
+
+msgid "messages.nosupporterror"
+msgstr "Zure nabigatzaileak ez du eginbide hori onartzen."
+
+msgid "messages.siginserted"
+msgstr "Sinadura behar bezala txertatu da."
+
+msgid "messages.responseinserted"
+msgstr "Erantzuna behar bezala txertatu da."
+
+msgid "messages.noresponsesavailable"
+msgstr "Ez dago erantzunik"
+
+msgid "messages.listempty"
+msgstr "Zerrenda hutsik dago."
+
+msgid "messages.listusebutton"
+msgstr "Erabili Sortu botoia erregistro berri bat gehitzeko."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Gako pare berria behar bezala sortu da $identity-(r)entzat."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Eranskin hau hutsik dagoela dirudi. Mesedez, egiaztatu bidali duenarekin."
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth saioa hasteak huts egin du. Saiatu berriro."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Baimen eskaera baliogabea edo osatu gabea da."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Baimen zerbitzariak edo erabiltzaileak eskaera ukatu du."

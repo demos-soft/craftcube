@@ -1,0 +1,2909 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "$product غا خۇش كەلدىڭىز"
+
+msgid "username"
+msgstr "ئىشلەتكۈچى نامى"
+
+msgid "password"
+msgstr "مەخپىي نۇمۇر"
+
+msgid "server"
+msgstr "مۇلازىمېتىر"
+
+msgid "login"
+msgstr "كىرىش"
+
+msgid "oauthlogin"
+msgstr "$تەمىنلىگۈچى بىلەن كىرىش"
+
+msgid "menu"
+msgstr "تىزىملىك"
+
+msgid "logout"
+msgstr "چىكىنىش"
+
+msgid "mail"
+msgstr "خەت"
+
+msgid "settings"
+msgstr "تەڭشەك"
+
+msgid "addressbook"
+msgstr "ئادىرىس دەپتىرى"
+
+msgid "darkmode"
+msgstr "قاراڭغۇ ھالەت"
+
+msgid "lightmode"
+msgstr "يۇرۇق ھالەت"
+
+msgid "inbox"
+msgstr "كىلىش ساندۇقى"
+
+msgid "drafts"
+msgstr "قوليازمىلار"
+
+msgid "sent"
+msgstr "ئەۋەتىلگەن"
+
+msgid "trash"
+msgstr "ئەخلەت"
+
+msgid "junk"
+msgstr "ئەخلەت"
+
+msgid "show_real_foldernames"
+msgstr "ئالاھىدە قىسقۇچلارنىڭ ھەقىقىي ئىسمىنى كۆرسىتىڭ"
+
+msgid "subject"
+msgstr "تىما"
+
+msgid "from"
+msgstr "دىن"
+
+msgid "sender"
+msgstr "ئەۋەتكۈچى"
+
+msgid "to"
+msgstr "غا"
+
+msgid "cc"
+msgstr "قۇشۇمچە"
+
+msgid "bcc"
+msgstr "ب چ چ"
+
+msgid "replyto"
+msgstr "غا جاۋاپ قايتۇرۇش"
+
+msgid "followupto"
+msgstr "غا ئەگىشىش"
+
+msgid "date"
+msgstr "چېسلا"
+
+msgid "size"
+msgstr "چوڭلۇق"
+
+msgid "priority"
+msgstr "مۇھىملىق دەرىجىسى"
+
+msgid "organization"
+msgstr "ئورگان"
+
+msgid "readstatus"
+msgstr "ئۇقۇش ھالىتى"
+
+msgid "listoptions"
+msgstr "تاللانمىلارنى تىزىش..."
+
+msgid "listoptionstitle"
+msgstr "تاللانمىلارنى تىزىش"
+
+msgid "mailboxlist"
+msgstr "قىسقۇچلار"
+
+msgid "messagesfromto"
+msgstr "from$نىڭ to$گە ئەۋەتكەن count$-ئۇچۇرى"
+
+msgid "threadsfromto"
+msgstr "from$نىڭ to$گە ئەۋەتكەن count$-يىپى"
+
+msgid "messagenrof"
+msgstr "nr/$count$ خەت"
+
+msgid "fromtoshort"
+msgstr "to  - $from$ جەمئىي count$"
+
+msgid "copy"
+msgstr "كۆچۈرۈش"
+
+msgid "move"
+msgstr "يۆتكەش"
+
+msgid "moveto"
+msgstr "...غا يۆتكەش"
+
+msgid "copyto"
+msgstr "...غا كۆچۈرۈش"
+
+msgid "download"
+msgstr "چۈشۈرۈش"
+
+msgid "open"
+msgstr "ئېچىش"
+
+msgid "showattachment"
+msgstr "كۆرسىتىش"
+
+msgid "showanyway"
+msgstr "بەرىبىر ئۇنى كۆرسىتىڭ"
+
+msgid "filename"
+msgstr "ھۆججەت ئىسمى"
+
+msgid "filesize"
+msgstr "ھۆججەت چوڭلۇقى"
+
+msgid "addtoaddressbook"
+msgstr "ئادىرىس دەپتىرىگە قېتىش"
+
+msgid "sun"
+msgstr "يەكشەنبە"
+
+msgid "mon"
+msgstr "دۈشەنبە"
+
+msgid "tue"
+msgstr "سەيشەنبە"
+
+msgid "wed"
+msgstr "چارشەنبە"
+
+msgid "thu"
+msgstr "پەيشەنبە"
+
+msgid "fri"
+msgstr "جۈمە"
+
+msgid "sat"
+msgstr "شەنبە"
+
+msgid "sunday"
+msgstr "يەكشەنبە"
+
+msgid "monday"
+msgstr "دۈشەنبە"
+
+msgid "tuesday"
+msgstr "سەيشەنبە"
+
+msgid "wednesday"
+msgstr "چارشەنبە"
+
+msgid "thursday"
+msgstr "پەيشەنبە"
+
+msgid "friday"
+msgstr "جۈمە"
+
+msgid "saturday"
+msgstr "شەنبە"
+
+msgid "jan"
+msgstr "يانۋار"
+
+msgid "feb"
+msgstr "فېۋرال"
+
+msgid "mar"
+msgstr "مارت"
+
+msgid "apr"
+msgstr "ئاپرىل"
+
+msgid "may"
+msgstr "ماي"
+
+msgid "jun"
+msgstr "ئىيۇن"
+
+msgid "jul"
+msgstr "ئىيۇل"
+
+msgid "aug"
+msgstr "ئاۋغۇست"
+
+msgid "sep"
+msgstr "سىنتەبىر"
+
+msgid "oct"
+msgstr "ئۆكتەبىر"
+
+msgid "nov"
+msgstr "نويابىر"
+
+msgid "dec"
+msgstr "دېكابىر"
+
+msgid "longjan"
+msgstr "يانۋار"
+
+msgid "longfeb"
+msgstr "فېۋرال"
+
+msgid "longmar"
+msgstr "مارت"
+
+msgid "longapr"
+msgstr "ئاپرىل"
+
+msgid "longmay"
+msgstr "ماي"
+
+msgid "longjun"
+msgstr "ئىيۇن"
+
+msgid "longjul"
+msgstr "ئىيۇل"
+
+msgid "longaug"
+msgstr "ئاۋغۇست"
+
+msgid "longsep"
+msgstr "سىنتەبىر"
+
+msgid "longoct"
+msgstr "ئۆكتەبىر"
+
+msgid "longnov"
+msgstr "نويابىر"
+
+msgid "longdec"
+msgstr "دېكابىر"
+
+msgid "today"
+msgstr "بۈگۈن"
+
+msgid "refresh"
+msgstr "يېڭىلاش"
+
+msgid "checkmail"
+msgstr "يېڭى خەتلەرنى تەكشۈرۈش"
+
+msgid "compose"
+msgstr "يېزىش"
+
+msgid "writenewmessage"
+msgstr "يېڭى خەت يېزىش"
+
+msgid "reply"
+msgstr "جاۋاپ قايتۇرۇش"
+
+msgid "replytomessage"
+msgstr "ئەۋەتكۈچىگە جاۋاپ بېزىش"
+
+msgid "replytoallmessage"
+msgstr ""
+"تىزىملىككە ياكى ئەۋەتكۈچى بىلەن بارلىق تاپشۇرۋالغۇچىلارغا جاۋاپ قايتۇرۇش"
+
+msgid "replyall"
+msgstr "ھەممىسىگە جاۋاپ قايتۇرۇش"
+
+msgid "replylist"
+msgstr "تىزىملىككە جاۋاپ قايتۇرۇش"
+
+msgid "forward"
+msgstr "يوللاش"
+
+msgid "forwardinline"
+msgstr "يېڭى ھالەتتە يوللاش"
+
+msgid "forwardattachment"
+msgstr "قىستۇرما ھالەتتە يوللاش"
+
+msgid "forwardmessage"
+msgstr "بۇ خەتنى يوللاش"
+
+msgid "bouncemsg"
+msgstr "قايتا ئەۋەتىش(قاڭقىتىش)"
+
+msgid "bounce"
+msgstr "قايتا ئەۋەتىش"
+
+msgid "deletemessage"
+msgstr "خەتنى ئۆچۈرۈش"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "خەتنى ئەخلەت چېلىكىگە سېلىش"
+
+msgid "printmessage"
+msgstr "بۇ خەتنى بېسىپ چىقىرىش"
+
+msgid "previousmessage"
+msgstr "ئالدىنقى خەتنى كۆرسىتىش"
+
+msgid "firstmessage"
+msgstr "بىرىنچى خەتنى كۆرسىتىش"
+
+msgid "nextmessage"
+msgstr "كىيىنكى خەتنى كۆرسىتىش"
+
+msgid "lastmessage"
+msgstr "ئاخىرقى خەتنى كۆرسىتىش"
+
+msgid "backtolist"
+msgstr "خەت تىزىملىكىگە قايتىش"
+
+msgid "viewsource"
+msgstr "مەنبەسىنى كۆرسىتىش"
+
+msgid "mark"
+msgstr "بەلگە قۇيۇش"
+
+msgid "markmessages"
+msgstr "خەتكە بەلگە قۇيۇش"
+
+msgid "markread"
+msgstr "ئۇقۇغان"
+
+msgid "markunread"
+msgstr "ئۇقۇمىغان"
+
+msgid "markflagged"
+msgstr "بايراقلانغان"
+
+msgid "markunflagged"
+msgstr "بايراقسىزلانغان"
+
+msgid "markundeleted"
+msgstr "ئۆچۈرۈلمىگەن"
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "تېخىمۇ كۆپ ھەركەت"
+
+msgid "markallread"
+msgstr "ھەممىگە ئوقۇغان بەلگىسىنى قۇيۇش"
+
+msgid "folders-cur"
+msgstr "پەقەتلا تاللانغان قىسقۇچ"
+
+msgid "folders-sub"
+msgstr "تاللانغان قىسقۇچ ھەمدە ئۇنىڭ بالا-قىسقۇچلىرى"
+
+msgid "folders-all"
+msgstr "ھەممە قىسقۇچلار"
+
+msgid "more"
+msgstr "تېخىمۇ كۆپ"
+
+msgid "back"
+msgstr "قايتىش"
+
+msgid "options"
+msgstr "تاللانمىلار"
+
+msgid "composeoptions"
+msgstr "تاللانما قۇرۇش"
+
+msgid "optionsandattachments"
+msgstr "تاللانمىلار ھەمدە قىستۇرمىلار"
+
+msgid "actions"
+msgstr "ھەركەتلەر"
+
+msgid "first"
+msgstr "تۇنجى"
+
+msgid "last"
+msgstr "ئاخىرقى"
+
+msgid "previous"
+msgstr "ئالدىنقى"
+
+msgid "next"
+msgstr "كىيىنكى"
+
+msgid "select"
+msgstr "تاللاڭ"
+
+msgid "selection"
+msgstr "تاللاش"
+
+msgid "all"
+msgstr "ھەممە"
+
+msgid "none"
+msgstr "ھېچنىمە"
+
+msgid "currpage"
+msgstr "نۆۋەتتىكى بەت"
+
+msgid "isread"
+msgstr "ئۇقۇش"
+
+msgid "unread"
+msgstr "ئۇقۇماسلىق"
+
+msgid "flagged"
+msgstr "بايراقلانغان"
+
+msgid "unflagged"
+msgstr "بايراقلانمىغان"
+
+msgid "unanswered"
+msgstr "جاۋاپ قايتۇرمىغان"
+
+msgid "withattachment"
+msgstr "قىستۇرمىلىق"
+
+msgid "deleted"
+msgstr "ئۆچۈرۋەتكەن"
+
+msgid "undeleted"
+msgstr "ئۆچۈرۋەتمىگەن"
+
+msgid "replied"
+msgstr "جاۋاپ قايتۇرغان"
+
+msgid "forwarded"
+msgstr "يوللىغان"
+
+msgid "invert"
+msgstr "تەتۈرلەش"
+
+msgid "filter"
+msgstr "سۈزگۈچ"
+
+msgid "list"
+msgstr "تىزىملىك"
+
+msgid "threads"
+msgstr "يىپلار"
+
+msgid "expand-all"
+msgstr "ھەممىنى يېيىش"
+
+msgid "expand-unread"
+msgstr "ئوقۇلمىغاننى يېيىش"
+
+msgid "collapse-all"
+msgstr "ھەممىنى يېيىش"
+
+msgid "threaded"
+msgstr "يىپلانغان"
+
+msgid "showunread"
+msgstr "ئوقۇلمىغان خەتلەرنى كۆرسىتىش"
+
+msgid "autoexpand_threads"
+msgstr "خەت يىپلىرىنى كۆرسىتىش"
+
+msgid "do_expand"
+msgstr "ھەممە يىپلار"
+
+msgid "expand_only_unread"
+msgstr "پەقەتلا ئوقۇلمىغان خەتلەرنىڭ"
+
+msgid "fromto"
+msgstr "دىن/غا"
+
+msgid "flag"
+msgstr "بايراق"
+
+msgid "attachment"
+msgstr "قىستۇرما"
+
+msgid "nonesort"
+msgstr "ھېچنىمە"
+
+msgid "sentdate"
+msgstr "ئەۋەتىلگەن چېسلا"
+
+msgid "arrival"
+msgstr "كەلگەن چېسلا"
+
+msgid "asc"
+msgstr "چوڭايغان"
+
+msgid "desc"
+msgstr "كىچىكلىگەن"
+
+msgid "listcolumns"
+msgstr "قۇرلارنى تىزىش"
+
+msgid "listsorting"
+msgstr "قۇرلارنى رەتلەش"
+
+msgid "listorder"
+msgstr "رەتلەش تەرتىپى"
+
+msgid "listmode"
+msgstr "كۆرۈش ھالىتىنى تىزىش"
+
+msgid "lmode"
+msgstr "ھالەتنى تىزىش"
+
+msgid "layout"
+msgstr "قۇرۇلما"
+
+msgid "layoutwidescreen"
+msgstr "كەڭرى ئېكران"
+
+msgid "layoutdesktop"
+msgstr "ئۈستەل يۈزى"
+
+msgid "layoutlist"
+msgstr "تىزىملىك"
+
+msgid "layoutwidescreendesc"
+msgstr "كەڭ ئېكران(3-قۇرلۇق كۆرۈنۈش)"
+
+msgid "layoutdesktopdesc"
+msgstr "ئۈستەل يۈزى(كەڭرى تىزىملىك ھەمدە خەتنى تۆۋەندە ئالدىن كۆرسىتىش)"
+
+msgid "layoutlistdesc"
+msgstr "تىزىملىك (خەتنى ئالدىن كۆرسىتىش يوق)"
+
+msgid "folderactions"
+msgstr "قىسقۇچ ھەركەتلىرى..."
+
+msgid "compact"
+msgstr "ئىخچام"
+
+msgid "empty"
+msgstr "قۇرۇق"
+
+msgid "importmessages"
+msgstr "خەتلەرنى كىرگۈزۈش"
+
+msgid "mailimportdesc"
+msgstr ""
+"سىز خەتنى <a href=\"https://en.wikipedia.org/wiki/Email#Message_format\"> "
+"MIME </a> ياكى <a href=\"https://en.wikipedia.org/wiki/Mbox\"> Mbox </a> "
+"فورماتىدىكى ھۆججەتلەرنى ئىشلىتىپ چىقىرالايسىز."
+
+msgid "mailimportzip"
+msgstr "كۆپلىگەن ھۆججەتلەرنى زىپ ئارخىپىغا سىققىلى بۇلىدۇ."
+
+msgid "quota"
+msgstr "دىسكا ئىشلىتىشچانلىقى"
+
+msgid "unknown"
+msgstr "ناتۇنۇش"
+
+msgid "unlimited"
+msgstr "چەكسىز"
+
+msgid "quotatype"
+msgstr "بەلگىلەنگەن مىقدار تۈرى"
+
+msgid "quotatotal"
+msgstr "چەك"
+
+msgid "quotaused"
+msgstr "ئىشلەتكەن"
+
+msgid "quotastorage"
+msgstr "دىسكا بوشلۇقى"
+
+msgid "quotamessage"
+msgstr "خەت سانى"
+
+msgid "shortheaderdate"
+msgstr "$چېسلادا"
+
+msgid "shortheaderto"
+msgstr "to$ غا date$دا"
+
+msgid "shortheaderfrom"
+msgstr "from$ دىن date$ دا"
+
+msgid "quicksearch"
+msgstr "تېز ئىزدەش"
+
+msgid "searchplaceholder"
+msgstr "ئىزدەش..."
+
+msgid "resetsearch"
+msgstr "ئىزدەشنى ئەسلىگە قايتۇرۇش"
+
+msgid "searchmod"
+msgstr "ئىزدەش ئۆزگەرتكۈچلىرى"
+
+msgid "msgtext"
+msgstr "پۈتۈن خەت"
+
+msgid "body"
+msgstr "مەزمۇن"
+
+msgid "type"
+msgstr "تۈرى"
+
+msgid "namex"
+msgstr "ئىسمى"
+
+msgid "searchscope"
+msgstr "دائىرە"
+
+msgid "currentfolder"
+msgstr "نۆۋەتتىكى قىسقۇچ"
+
+msgid "subfolders"
+msgstr "بۇ ھەمدە بالا-قىسقۇچلار"
+
+msgid "allfolders"
+msgstr "ھەممە قىسقۇچلار"
+
+msgid "searchinterval-1W"
+msgstr "بىر ھەپتىدىن بۇرۇنقى"
+
+msgid "searchinterval-1M"
+msgstr "بىر ئايدىن بۇرۇنقى"
+
+msgid "searchinterval-1Y"
+msgstr "بىر يىلدىن بۇرۇنقى"
+
+msgid "searchinterval1W"
+msgstr "بىر ھەپتىن بۇيانقى"
+
+msgid "searchinterval1M"
+msgstr "بىر ئايدىن بۇيانقى"
+
+msgid "searchinterval1Y"
+msgstr "بىر يىلدىن بۇيانقى"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "يېڭى كۆزنەكتە ئېچىش"
+
+msgid "emlsave"
+msgstr "چۈشۈرۈش (.ئېلخەت)"
+
+msgid "changeformattext"
+msgstr "ئاددىي تېكىست ھالەتتە كۆرسىتىش"
+
+msgid "changeformathtml"
+msgstr "HTML ھالەتتە كۆرسىتىش"
+
+msgid "editasnew"
+msgstr "يېڭى ھالەتتە تەھرىرلەش"
+
+msgid "send"
+msgstr "ئەۋەتىش"
+
+msgid "sendmessage"
+msgstr "خەتنى ئەۋەتىش"
+
+msgid "savemessage"
+msgstr "قوليازما ھالەتتە ساقلاش"
+
+msgid "addattachment"
+msgstr "بىر ھۆججەت قىستۇرۇش"
+
+msgid "charset"
+msgstr "خەت بولىقى"
+
+msgid "editortype"
+msgstr "تەھرىرلەش تۈرى"
+
+msgid "returnreceipt"
+msgstr "تاپشۇرۋالغۇچىنى قايتۇرۇش"
+
+msgid "dsn"
+msgstr "يەتكۈزۈش ئەھۋالى ئۇقتۇرۇشى"
+
+msgid "keepformatting"
+msgstr "داۋاملىق فورماتلاش"
+
+msgid "mailreplyintro"
+msgstr "date$ دا، sender$ يازدى:"
+
+msgid "originalmessage"
+msgstr "ئەسلىي خەت"
+
+msgid "selectimage"
+msgstr "رەسىم تاللاش"
+
+msgid "addimage"
+msgstr "رەسىم قېتىش"
+
+msgid "selectmedia"
+msgstr "كىنو تاللاش"
+
+msgid "addmedia"
+msgstr "كىنو قېتىش"
+
+msgid "encrypt"
+msgstr "شىفىرلاش"
+
+msgid "encryptmessage"
+msgstr "خەتنى شىفىرلاش"
+
+msgid "encryptmessagemailvelope"
+msgstr "خەتنى Mailvelope بىلەن شىفىرلاش"
+
+msgid "importpubkeys"
+msgstr "ئاممىۋى ئاچقۇچلارنى كىرگۈزۈش"
+
+msgid "encryptedsendialog"
+msgstr "شىفىرلانغان ئۇچۇرنى يوللاۋاتىدۇ"
+
+msgid "encryptandsign"
+msgstr "شىفىرلاش ھەمدە ئىمزا قۇيۇش"
+
+msgid "keyid"
+msgstr "ئاچقۇچ نۇمۇرى"
+
+msgid "keylength"
+msgstr "بىتلار"
+
+msgid "keyexpired"
+msgstr "ۋاقتى ئۆتكەن"
+
+msgid "keyrevoked"
+msgstr "قايتۇرۋالغان"
+
+msgid "bccinstead"
+msgstr "ب چ چىنى ئىشلىتىش"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "كىرگۈزۈش"
+
+msgid "insertcontact"
+msgstr "تۇنۇش(لار) قېتىش"
+
+msgid "recipient"
+msgstr "تاپشۇرۋالغۇچى"
+
+msgid "recipientedit"
+msgstr "تاپشۇرۋالغۇچىنى تەھرىرلەش"
+
+msgid "editidents"
+msgstr "كىملىكلەرنى تەھرىرلەش"
+
+msgid "spellcheck"
+msgstr "ئىملا"
+
+msgid "checkspelling"
+msgstr "ئىملا تەكشۈرۈش"
+
+msgid "resumeediting"
+msgstr "تەھرىرلەشنى داۋاملاشتۇرۇش"
+
+msgid "revertto"
+msgstr "قايتۇرۇش"
+
+msgid "restore"
+msgstr "ئەسلىگە قايتۇرۇش"
+
+msgid "restoremessage"
+msgstr "ئۇچۇرنى ئەسلىگە قايتۇرامسىز؟"
+
+msgid "ignore"
+msgstr "كارىم يوق"
+
+msgid "responses"
+msgstr "ئىنكاسلار"
+
+msgid "insertresponse"
+msgstr "بىر ئىنكاس يېزىش"
+
+msgid "manageresponses"
+msgstr "ئىنكاسلارنى باشقۇرۇش"
+
+msgid "newresponse"
+msgstr "يېڭى ئىنكاس يېزىش"
+
+msgid "addresponse"
+msgstr "ئىنكاس قېتىش"
+
+msgid "editresponse"
+msgstr "ئىنكاسنى تەھرىرلەش"
+
+msgid "editresponses"
+msgstr "ئىنكاسلارنى تەھرىرلەش"
+
+msgid "responsename"
+msgstr "ئىسمى"
+
+msgid "responsetext"
+msgstr "ئىنكاس تېكىستى"
+
+msgid "attach"
+msgstr "قىستۇرۇش"
+
+msgid "attachments"
+msgstr "قىستۇرمىلار"
+
+msgid "upload"
+msgstr "چىقىرىش"
+
+msgid "uploadprogress"
+msgstr "percent$ (total$ نىڭ current$ )"
+
+msgid "close"
+msgstr "تاقاش"
+
+msgid "messageoptions"
+msgstr "خەت تاللانمىلىرى..."
+
+msgid "togglecomposeoptions"
+msgstr "يېزىش تاللانمىلىرىنى بار-يوق قىلىش"
+
+msgid "attachmentrename"
+msgstr "قىستۇرمىغا يېڭى ئىسىم قۇيۇش"
+
+msgid "low"
+msgstr "تۆۋەن"
+
+msgid "lowest"
+msgstr "ئەڭ تۆۋەن"
+
+msgid "normal"
+msgstr "نورمال"
+
+msgid "high"
+msgstr "يۇقىرى"
+
+msgid "highest"
+msgstr "ئەڭ يۇقىرى"
+
+msgid "nosubject"
+msgstr "(تېما يوق)"
+
+msgid "showimages"
+msgstr "رەسىملەرنى كۆرسىتىش"
+
+msgid "allow"
+msgstr "يول قۇيۇش"
+
+msgid "alwaysshow"
+msgstr "sender$ نىڭ رەسىملىرىنى دائىم كۆرسىتىش"
+
+msgid "alwaysallow"
+msgstr "sender$ دىن كەلسە دائىم يول قۇيۇش"
+
+msgid "isdraft"
+msgstr "بۇ يولسا بىر قوليازما خەت"
+
+msgid "andnmore"
+msgstr "nr$ تېخىمۇ كۆپ..."
+
+msgid "details"
+msgstr "تەپسىلاتلار"
+
+msgid "summary"
+msgstr "خۇلاسە"
+
+msgid "headers"
+msgstr "باشلانمىلار"
+
+msgid "allheaders"
+msgstr "بارلىق باشلانمىلار..."
+
+msgid "togglemoreheaders"
+msgstr "تېخىمۇ كۆپ خەت باشلانمىلىرىنى كۆرسىتىش"
+
+msgid "togglefullheaders"
+msgstr "خام ئۇچۇر باشلانمىلىرىنى بار-يوق قىلىش"
+
+msgid "htmltoggle"
+msgstr "خ ت م ل"
+
+msgid "plaintoggle"
+msgstr "ئاددىي تېكىست"
+
+msgid "savesentmessagein"
+msgstr "يوللىغان ئۇچۇرنى ساقلاش"
+
+msgid "dontsave"
+msgstr "ساقلىماسلىق"
+
+msgid "maxuploadsize"
+msgstr "يول قۇيۇلغان ئەڭ چوڭ ھۆججەت چوڭلۇقى بولسا size$"
+
+msgid "addcc"
+msgstr "قۇشۇمچە قېتىش"
+
+msgid "addbcc"
+msgstr "ب چ چ قېتىش"
+
+msgid "addreplyto"
+msgstr "جاۋاپ قايتۇرۇشنى قېتىش"
+
+msgid "addfollowupto"
+msgstr "داۋاملاشتۇرۇش قېتىش"
+
+msgid "sendreceipt"
+msgstr "ئۇقۇش تىلخېتىنى ئەۋەتەمسىز؟"
+
+msgid "mdnrequest"
+msgstr ""
+"بۇ خەتنى ئەۋەتكۈچى سىز خەتنى ئۇقۇغاندا ئۇقتۇرۇلۇشنى سورىدى. سىز ئەۋەتكۈچىگە "
+"ئۇقتۇرۇشنى خالامسىز؟"
+
+msgid "receiptread"
+msgstr "تېلىخەتنى قايتۇرۇش(ئۇقۇغان)"
+
+msgid "yourmessage"
+msgstr "بۇ بولسا ئۇچۇرىڭىزنىڭ قايتۇرما تېلىخېتى"
+
+msgid "receiptnote"
+msgstr ""
+"ئۇقتۇرۇش: بۇ تالون پەقەتلا خەتنىڭ تاپشۇرۋالغۇچىنىڭ كومپىيوتېرىدا "
+"كۆرسىتىلگەنلىكىنى ئېتراپ قىلىدۇ. تاپشۇرۋالغۇچىنىڭ خەتنى ئۇقۇغانلىقىنى ياكى "
+"خەت مەزمۇنىنى چۈشەنگەنلىكىگە كاپالەتلىك قىلمايدۇ."
+
+msgid "sendalwaysto"
+msgstr "دائىم email$ غا ئەۋەتىش"
+
+msgid "zoomin"
+msgstr "چوڭايتىش"
+
+msgid "zoomout"
+msgstr "كىچىكلەشتۈرۈش"
+
+msgid "rotate"
+msgstr "ئايلاندۇرۇش"
+
+msgid "increaseimage"
+msgstr "رەسىم چوڭلۇقىنى ئاشۇرۇش"
+
+msgid "decreaseimage"
+msgstr "رەسىم چوڭلۇقىنى كىچىكلىتىش"
+
+msgid "rotateimage"
+msgstr "رەسىمنى ئايلاندۇرۇش"
+
+msgid "showtools"
+msgstr "رەسىم قوراللىرىنى كۆرسىتىش"
+
+msgid "hidetools"
+msgstr "رەسىم قوراللىرىنى يۇشۇرۇش"
+
+msgid "name"
+msgstr "ئىسمىنى كۆرسىتىش"
+
+msgid "firstname"
+msgstr "ئىسمى"
+
+msgid "surname"
+msgstr "فامىلىسى"
+
+msgid "middlename"
+msgstr "ئوتتۇرانچى ئىسمى"
+
+msgid "nameprefix"
+msgstr "ئالدى قۇشۇمچە"
+
+msgid "namesuffix"
+msgstr "ئارقا قۇشۇمچە"
+
+msgid "nickname"
+msgstr "تەخەللۇس"
+
+msgid "jobtitle"
+msgstr "خىزمەت ئۇنىۋانى"
+
+msgid "department"
+msgstr "بۆلۈم"
+
+msgid "gender"
+msgstr "جىنسى"
+
+msgid "maidenname"
+msgstr "توي قىلىشتىن بۇرۇنقى فامىلىسى"
+
+msgid "email"
+msgstr "ئېلىخەت"
+
+msgid "phone"
+msgstr "تېلىفۇن"
+
+msgid "address"
+msgstr "ئادىرىس"
+
+msgid "street"
+msgstr "كوچا"
+
+msgid "locality"
+msgstr "شەھەر"
+
+msgid "zipcode"
+msgstr "پوچتا نۇمۇرى"
+
+msgid "region"
+msgstr "ۋىلايەت"
+
+msgid "country"
+msgstr "دۆلەت"
+
+msgid "birthday"
+msgstr "تۇغۇلغان كۈن"
+
+msgid "anniversary"
+msgstr "خاتىرە كۈن"
+
+msgid "website"
+msgstr "توربەت"
+
+msgid "instantmessenger"
+msgstr "ئى م"
+
+msgid "notes"
+msgstr "خاتىرە"
+
+msgid "male"
+msgstr "ئەر"
+
+msgid "female"
+msgstr "ئايال"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "دېرىكتور"
+
+msgid "assistant"
+msgstr "ياردەمچى"
+
+msgid "spouse"
+msgstr "جۈپتى"
+
+msgid "allfields"
+msgstr "بارلىق ئورۇنلار"
+
+msgid "search"
+msgstr "ئىزدەش"
+
+msgid "searchresult"
+msgstr "ئىزدەش نەتىنجىسى"
+
+msgid "advsearch"
+msgstr "ئالاھىدە ئىزدەش"
+
+msgid "advanced"
+msgstr "ئالاھىدە"
+
+msgid "other"
+msgstr "باشقا"
+
+msgid "printcontact"
+msgstr "تۇنۇشنى بېسىپ چىقىرىش"
+
+msgid "qrcode"
+msgstr "ئىككىلىك كود"
+
+msgid "typehome"
+msgstr "ئۆي"
+
+msgid "typework"
+msgstr "خىزمەت"
+
+msgid "typeother"
+msgstr "باشقا"
+
+msgid "typemobile"
+msgstr "كۆچمە"
+
+msgid "typemain"
+msgstr "ئاساسىي"
+
+msgid "typehomefax"
+msgstr "ئۆي فاكىس"
+
+msgid "typeworkfax"
+msgstr "خىزمەت فاكىسى"
+
+msgid "typecar"
+msgstr "ماشىنا"
+
+msgid "typepager"
+msgstr "بەتكۈچ"
+
+msgid "typevideo"
+msgstr "سىن"
+
+msgid "typeassistant"
+msgstr "ياردەمچى"
+
+msgid "typehomepage"
+msgstr "باشبەت"
+
+msgid "typeblog"
+msgstr "بىلوگ"
+
+msgid "typeprofile"
+msgstr "تەرجىمال"
+
+msgid "addfield"
+msgstr "ئورۇن قېتىش..."
+
+msgid "addcontact"
+msgstr "تونۇش قېتىش"
+
+msgid "editcontact"
+msgstr "تونۇشنى تەھرىرلەش"
+
+msgid "contacts"
+msgstr "تونۇشلار"
+
+msgid "contactproperties"
+msgstr "تونۇش خاسلىقلىرى"
+
+msgid "contactnameandorg"
+msgstr "ئىسم ۋە ئورگان"
+
+msgid "personalinfo"
+msgstr "شەخسىي ئۇچۇر"
+
+msgid "personal"
+msgstr "شەخسىي"
+
+msgid "contactphoto"
+msgstr "تونۇش رەسىمى"
+
+msgid "edit"
+msgstr "تەھرىرلەش"
+
+msgid "cancel"
+msgstr "ئەمەلدىن قالدۇرۇش"
+
+msgid "save"
+msgstr "ساقلاش"
+
+msgid "delete"
+msgstr "ئۆچۈرۈش"
+
+msgid "discard"
+msgstr "تاشلاش"
+
+msgid "continue"
+msgstr "داۋاملاشتۇرۇش"
+
+msgid "ok"
+msgstr "ھەئە"
+
+msgid "rename"
+msgstr "يېڭى ئىسىم قۇيۇش"
+
+msgid "addphoto"
+msgstr "قېتىش"
+
+msgid "replacephoto"
+msgstr "ئالماشتۇرۇش"
+
+msgid "uploadphoto"
+msgstr "رەسىم چىقىرىش"
+
+msgid "choosefile"
+msgstr "ھۆججەت تاللاش..."
+
+msgid "choosefiles"
+msgstr "ھۆججەتلەرنى تاللاش..."
+
+msgid "browse"
+msgstr "كۆز يۈرگۈزۈش"
+
+msgid "newcontact"
+msgstr "يېڭى تۇنۇش قۇرۇش"
+
+msgid "deletecontact"
+msgstr "تاللانغان تۇنۇشلارنى ئۆچۈرۈش"
+
+msgid "composeto"
+msgstr "غا خەت قۇرۇش"
+
+msgid "contactsfromto"
+msgstr "from$دىن to$غا جەمئىي count$ تۇنۇش"
+
+msgid "print"
+msgstr "بېسىش"
+
+msgid "export"
+msgstr "چىقىرىش"
+
+msgid "exportall"
+msgstr "ھەممىنى چىقىرىش"
+
+msgid "exportsel"
+msgstr "تاللانغاننى چىقىرىش"
+
+msgid "exportvcards"
+msgstr "تۇنۇشلارنى ۋكارتىسى فورماتىدا چىقىرىش"
+
+msgid "newgroup"
+msgstr "يېڭى توپ قۇرۇش"
+
+msgid "addgroup"
+msgstr "توپ قېتىش"
+
+msgid "grouprename"
+msgstr "توپ ئىسمىنى يېڭىلاش"
+
+msgid "groupdelete"
+msgstr "توپنى ئۆچۈرۈش"
+
+msgid "groupassign"
+msgstr "توپقا بەلگىلەش"
+
+msgid "groupremove"
+msgstr "توپتىن چىقىرىش"
+
+msgid "groupremoveselected"
+msgstr "تاللانغان تۇنۇشلارنى توپتىن چىقىرىش"
+
+msgid "uponelevel"
+msgstr "بىر دەرىجە ئۆستۈرۈش"
+
+msgid "previouspage"
+msgstr "ئالدىنقى بەتنى كۆرسىتىش"
+
+msgid "firstpage"
+msgstr "تۇنجى بەتنى كۆرسىتىش"
+
+msgid "nextpage"
+msgstr "كىيىنكى بەتنى كۆرسىتىش"
+
+msgid "lastpage"
+msgstr "ئاخىرقى بەتنى كۆرسىتىش"
+
+msgid "group"
+msgstr "توپ"
+
+msgid "groups"
+msgstr "توپلار"
+
+msgid "listgroup"
+msgstr "توپ ئەزالىرىنى تىزىش"
+
+msgid "personaladrbook"
+msgstr "شەخسىي ئادىرىسلار"
+
+msgid "searchsave"
+msgstr "ئىزدەشنى ساقلاش"
+
+msgid "searchdelete"
+msgstr "ئىزدەشنى ئۆچۈرۈش"
+
+msgid "import"
+msgstr "كىرگۈزۈش"
+
+msgid "importcontacts"
+msgstr "تۇنۇشلارنى كىرگۈزۈش"
+
+msgid "importfromfile"
+msgstr "ھۆججەتتىن كىرگۈزۈش"
+
+msgid "importtarget"
+msgstr "تۇنۇشلارنى قېتىش"
+
+msgid "importreplace"
+msgstr "پۈتۈن ئادرىس دەپتىرىنى ئالماشتۇرۇش"
+
+msgid "importgroups"
+msgstr "توپ تاپشۇرۇقلىرىنى كىرگۈزۈش"
+
+msgid "importgroupsall"
+msgstr "بارلىق (زۆرۆر تېپىلسا توپ قۇرۇش)"
+
+msgid "importgroupsexisting"
+msgstr "پەقەتلا مەۋجۇت توپلار ئۈچۈن"
+
+msgid "importdesc"
+msgstr ""
+"سىز مەۋجۇت ئادىرىس دەپتىرىدىن تۇنۇشلارنى چىقىرالايسىز. <br/>بىز نۆۋەتتە "
+"ئادىرىسلارنى <a href=\"https://en.wikipedia.org/wiki/VCard\"> ۋىكارتىسى </a>"
+" ياكى س ئەس ۋ (پەش بىلەن ئايرىلغان) ئۇچۇر فورماتىدا كىرگۈزۈشنى قوللايمىز."
+
+msgid "importmapdesc"
+msgstr ""
+"س ئەس ۋ (پەش بىلەن ئايرىلغان) ئۇچۇرىنى كىرگۈزۈشتىن بۇرۇن تۆۋەندىكى ئورۇن "
+"خەرىتىلەش ئۇچۇرىنىڭ توغىرلىقىنى جەزىملەشتۈرۈڭ."
+
+msgid "fieldnotmapped"
+msgstr "ئورۇن خەرىتىلەنمىدى (كىرگۈزمەڭ)"
+
+msgid "skipheader"
+msgstr "بىرىنچى قۇرنى كىرگۈزمەڭ (باشلانمىلار)"
+
+msgid "done"
+msgstr "پۈتتى"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "تەڭشىكى"
+
+msgid "about"
+msgstr "ھەققىدە"
+
+msgid "preferences"
+msgstr "مايىللىقلار"
+
+msgid "userpreferences"
+msgstr "ئىشلەتكۈچى مايىللىقلىرى"
+
+msgid "editpreferences"
+msgstr "ئىشلەتكۈچى مايىللىقلىرىنى تەھرىرلەش"
+
+msgid "identities"
+msgstr "كىملىكلەر"
+
+msgid "manageidentities"
+msgstr "كىملىكلەرنى باشقۇرۇش"
+
+msgid "newidentity"
+msgstr "يېڭى كىملىك قۇرۇش"
+
+msgid "addidentity"
+msgstr "كىملىك قۇشۇش"
+
+msgid "editidentity"
+msgstr "كىملىكنى تەھرىرلەش"
+
+msgid "identityencryption"
+msgstr "شىفىرلاش"
+
+msgid "preferhtml"
+msgstr "خ ت م ل نى كۆرسىتىش"
+
+msgid "defaultcharset"
+msgstr "ئەسلىدىكى يېزىق بولىقى"
+
+msgid "htmlmessage"
+msgstr "خ ت م ل ئۇچۇرى"
+
+msgid "messagepart"
+msgstr "بۆلەك"
+
+msgid "digitalsig"
+msgstr "رەقەملىك ئىمزا"
+
+msgid "dateformat"
+msgstr "چېسلا شەكلى"
+
+msgid "timeformat"
+msgstr "ۋاقىت شەكلى"
+
+msgid "prettydate"
+msgstr "ئۇماق چېسلالار"
+
+msgid "setdefault"
+msgstr "سۈكۈتنى بېكىتىش"
+
+msgid "autodetect"
+msgstr "ئاپتۇماتىك"
+
+msgid "language"
+msgstr "تىل"
+
+msgid "timezone"
+msgstr "ۋاقىت رايۇنى"
+
+msgid "pagesize"
+msgstr "بەت قۇرى"
+
+msgid "signature"
+msgstr "ئىمزا"
+
+msgid "dstactive"
+msgstr "يازلىق ۋاقىت قىسقىرىشى"
+
+msgid "showinextwin"
+msgstr "خەتنى يېڭى كۆزنەكتە ئېچىش"
+
+msgid "composeextwin"
+msgstr "يېڭى كۆزنەكتە يېزىش"
+
+msgid "htmleditor"
+msgstr "خ ت م ل ئۇچۇر يېزىش"
+
+msgid "htmlonreply"
+msgstr "خ ت م ل ئۇچۇرىغا جاۋاپ قايتۇرغاندا"
+
+msgid "htmlonreplyandforward"
+msgstr "خ ت م ل ئۇچۇرىغا جاۋاپ قايتۇرغاندا ياكى يەتكۈزگەندە"
+
+msgid "htmlsignature"
+msgstr "خ ت م ل ئىمزا"
+
+msgid "showemail"
+msgstr "ئېلىخەت ئادىرسىنى ئىسمى بىلەن كۆرسىتىش"
+
+msgid "previewpane"
+msgstr "ئالدىن كۆرۈش تاختىسىنى كۆرسىتىش"
+
+msgid "skin"
+msgstr "ئۇلىنىش ئېغىزى تېرىسى"
+
+msgid "logoutclear"
+msgstr "چېكىنگەندە ئەخلەت چېلىكىنى قۇرۇقداش"
+
+msgid "logoutcompact"
+msgstr "چېكىنگەندە كىلىش ساندۇقىنى ئىخچاملاش"
+
+msgid "uisettings"
+msgstr "ئىشلەتكۈچى ئۇلىنىش ئېغىزى"
+
+msgid "serversettings"
+msgstr "مۇلازىمېتىر تەڭشىكى"
+
+msgid "mailboxview"
+msgstr "خەت ساندۇقى كۆرۈنۈشى"
+
+msgid "mdnrequests"
+msgstr "تېلىخەت قايتۇرۇش تەلىپىگە بىنائەن"
+
+msgid "askuser"
+msgstr "مەندىن سوراڭ"
+
+msgid "autosend"
+msgstr "تېلخەت ئەۋەتىش"
+
+msgid "autosendknown"
+msgstr "تېلخەتنى مېنىڭ تۇنۇشلىرىمغا ئەۋەتىڭ، بولمىسا مەندىن سوراڭ"
+
+msgid "autosendknownignore"
+msgstr "تېلخەتنى مېنىڭ تۇنۇشلىرىمغا ئەۋەتىڭ، بولمىسا كارىڭىز بولمىسۇن"
+
+msgid "autosendtrusted"
+msgstr "تېلىخەتنى ئىشەنچلىك ئەۋەتكۈچىلەرگە ئەۋەتىڭ، بولمىسا مەندىن سوراڭ"
+
+msgid "autosendtrustedignore"
+msgstr "تېلخەتنى ئىشەنچلىك ئەۋەتكۈچىلەرگە ئەۋەتىڭ، بولمىسا كارىڭىز بولمىسۇن"
+
+msgid "ignorerequest"
+msgstr "تەلەپكە كارىڭىز بولمىسۇن"
+
+msgid "readwhendeleted"
+msgstr "خەتنى ئۆچۈرگەندە ئۇقۇغانلىق بەلگىسىنى قۇيۇش"
+
+msgid "flagfordeletion"
+msgstr "خەتنى ئۆچۈرۋەتكەندىن كۆرە ئۆچۈرۈلۈش بەلگىسىنى قۇيۇش"
+
+msgid "skipdeleted"
+msgstr "ئۆچۈرۋەتكەن ئۇچۇرلارنى كۆرسەتمەڭ"
+
+msgid "deletealways"
+msgstr "ئۇچۇرلارنى ئەخلەت چېلىكىگە يۆتكەش مەغلۇپ بولسا، ئۇلارنى ئۆچۈرۈڭ"
+
+msgid "deletejunk"
+msgstr "ئەخلەت چېلىكىدىكى ئۇچۇرلارنى بىۋاستە ئۆچۈرۋېتىڭ"
+
+msgid "showremoteimages"
+msgstr "يىراقتىكى ئەسكەرتىش رەسىملىرىنى كۆرسىتىش"
+
+msgid "allowremoteresources"
+msgstr "يىراقتىكى مەنبەلەرگە ئىجازەت بېرىش(رەسىم، ئۇسلۇب)"
+
+msgid "fromknownsenders"
+msgstr "تۇنۇش ئەۋەتكۈچىلەردىن"
+
+msgid "fromtrustedsenders"
+msgstr "ئىشەنچلىك ئەۋەتكۈچىلەردىن"
+
+msgid "frommycontacts"
+msgstr "تۇنۇشلىرىمدىن"
+
+msgid "always"
+msgstr "دائىم"
+
+msgid "alwaysbutplain"
+msgstr "دائىم، ئاددىي تېكىستقا جاۋاپ بەرگەندىن باشقا"
+
+msgid "showinlineimages"
+msgstr "خەتكە قىستۇرۇلغان رەسىملەرنى ئاستىدا كۆرسىتىڭ"
+
+msgid "autosavedraft"
+msgstr "قوليازمىنى ئاپتۇماتىك ساقلاڭ"
+
+msgid "everynminutes"
+msgstr "ھەر n$ مىنۇت(لار)دا"
+
+msgid "refreshinterval"
+msgstr "يېڭىلاش (يېڭى ئۇچۇرنى تەكشۈرۈش، قاتارلىق)"
+
+msgid "never"
+msgstr "ھەرگىز"
+
+msgid "immediately"
+msgstr "دەرھال"
+
+msgid "messagesdisplaying"
+msgstr "خەتلەرنى كۆرسىتىش"
+
+msgid "messagescomposition"
+msgstr "خەتلەرنى يېزىش"
+
+msgid "mimeparamfolding"
+msgstr "قىستۇرۇلغان ئىسىملار"
+
+msgid "2231folding"
+msgstr "پۈتۈن ر ف س 2231 (چاقماققۇش)"
+
+msgid "miscfolding"
+msgstr "ر ف س 2047/2231 (مىكروسوفىت Outlook)"
+
+msgid "2047folding"
+msgstr "پۈتۈن ر ف س 2047 (باشقا)"
+
+msgid "force7bit"
+msgstr "8-بىتلىق خەتلەرگە MIME شىفىرىنى ئىشلىتىڭ"
+
+msgid "savelocalstorage"
+msgstr "تور كۆرگۈچنىڭ يەرلىك بوشلۇقىغا ساقلاش (ۋاقىتلىق)"
+
+msgid "advancedoptions"
+msgstr "ئالاھىدە تاللانمىلار"
+
+msgid "toggleadvancedoptions"
+msgstr "ئالاھىدە تاللانمىلارنى بار-يوق قىلىش"
+
+msgid "focusonnewmessage"
+msgstr "تور كۆرگۈچنىڭ كۆزنىكىنى يېڭى خەتكە مەركەزلەشتۈرۈڭ"
+
+msgid "checkallfolders"
+msgstr "يېڭى ئۇچۇرنى ھەممە قىسقۇچلاردىن تەكشۈرۈش"
+
+msgid "displaynext"
+msgstr "ئۆچۈرۈش/چىقىرۋېتىشتىن كىيىن تىزىملىكنىڭ كىيىنكى قۇرىنى كۆرسىتىش"
+
+msgid "defaultfont"
+msgstr "خ ت م ل ئۇچۇرىنىڭ ئەسلىي خەت شەكلى"
+
+msgid "mainoptions"
+msgstr "ئاساسىي تاللانمىلار"
+
+msgid "browseroptions"
+msgstr "تور كۆرگۈچ تاللانمىلىرى"
+
+msgid "section"
+msgstr "بۆلەك"
+
+msgid "maintenance"
+msgstr "ئاسىراش"
+
+msgid "newmessage"
+msgstr "يېڭى خەت"
+
+msgid "signatureoptions"
+msgstr "ئىمزا تاللانمىلىرى"
+
+msgid "whenreplying"
+msgstr "جاۋاپ قايتۇرغاندا"
+
+msgid "replyempty"
+msgstr "ئەسلىدىكى خەتنى نەقىل كەلتۈرمەڭ"
+
+msgid "replytopposting"
+msgstr "نەقىلنىڭ ئۈستىدە يېڭى خەت يېزىش"
+
+msgid "replytoppostingnoindent"
+msgstr "نەقىلنىڭ ئۈستىدە يېڭى خەت يېزىش (بوش ئورۇن يوق)"
+
+msgid "replybottomposting"
+msgstr "نەقىلنىڭ ئاستىدا يېڭى خەت يېزىش"
+
+msgid "replyremovesignature"
+msgstr "جاۋاپ قايتۇرغاندا ئەسلىي ئىمزانى خەتتىن ئۆچۈرۋېتىش"
+
+msgid "autoaddsignature"
+msgstr "ئاپتۇماتىك ئىمزا قۇيۇش"
+
+msgid "newmessageonly"
+msgstr "يېڭى خەتكىلا"
+
+msgid "replyandforwardonly"
+msgstr "جاۋاپ قايتۇرۇش ۋە يەتكۈزۈشكىلا"
+
+msgid "insertsignature"
+msgstr "ئىمزا قۇيۇش"
+
+msgid "sigbelow"
+msgstr "ئىمزانى نەقىللىگەن ئۇچۇرنىڭ ئاستىغا قۇيۇش"
+
+msgid "sigseparator"
+msgstr "ئىمزالاردا ئۆلچەملىك ئايرىغۇچنى مەجبۇرى قۇيۇش"
+
+msgid "automarkread"
+msgstr "خەتكە ئۇقۇغان بەلگىسىنى قۇيۇش"
+
+msgid "afternseconds"
+msgstr "n$ سىكونتتىن كىيىن"
+
+msgid "reqmdn"
+msgstr "قايتۇرۇش تېلىخېتىنى دائىم تەلەپ قىلىش"
+
+msgid "reqdsn"
+msgstr "ئەۋەتىش ئەھۋالى ئۇقتۇرۇشىنى دائىم تەلەپ قىلىش"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "جاۋاپ خەتنى جاۋاپ قايتۇرۇلغان ئۇچۇر قىسقۇچىغا قۇيۇش"
+
+msgid "defaultabook"
+msgstr "سۈكۈتتىكى ئادىرىس دەپتىرى"
+
+msgid "autocompletesingle"
+msgstr "ئاپتۇماتىك پۈتكۈزۈشتە ئىككىنچى ئېلىخەت ئادىرىسلىرىنى تاشلاش"
+
+msgid "listnamedisplay"
+msgstr "تۇنۇشلارنى سۈپىتىدە تىزىش"
+
+msgid "contactformmode"
+msgstr "تۇنۇش جەدىۋېلى ھالىتى"
+
+msgid "privatemode"
+msgstr "شەخسىي (ئۆي)"
+
+msgid "businessmode"
+msgstr "سودا (خىزمەت)"
+
+msgid "collectedaddresses"
+msgstr "يىغىلغان ئادىرىسلار"
+
+msgid "collectedrecipients"
+msgstr "يىغىلغان تاپشۇرۋالغۇچىلار"
+
+msgid "collectedrecipientsopt"
+msgstr "ئەۋەتىلدىغان ئېلىخەتنىڭ تاپشۇرۋالغۇچىلىرىنى ساقلايدىغان ئورۇن"
+
+msgid "collectedsendersopt"
+msgstr "ئىشەنچلىك ئەۋەتكۈچىلەرنى ساقلاش"
+
+msgid "trustedsenders"
+msgstr "ئىشەنچلىك ئەۋەتكۈچىلەر"
+
+msgid "spellcheckbeforesend"
+msgstr "خەتنى ئەۋەتىشتىن بۇرۇن ئىملا تەكشۈرۈش"
+
+msgid "spellcheckoptions"
+msgstr "ئىملا تەكشۈرۈش تاللانمىلىرى"
+
+msgid "spellcheckignoresyms"
+msgstr "بەلگىلىك سۆزلەرنى ئۆتكۈزۋېتىش"
+
+msgid "spellcheckignorenums"
+msgstr "رەقەملىك سۆزلەرنى ئۆتكۈزۋېتىش"
+
+msgid "spellcheckignorecaps"
+msgstr "ھەممە ھەرىپ چوڭ يېزىلغان سۆزلەرنى ئۆتكۈزۋېتىش"
+
+msgid "addtodict"
+msgstr "لۇغەتكە قېتىش"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+"خەت ئەۋەتىش ئۈچۈن كىلىشىمنامە بىر-تەرەپ قىلغۇچنى تىزىملىتىش: ئۇلىنىشلار"
+
+msgid "standardwindows"
+msgstr "سەكرەلمىلەرنى ئۆلچەملىك كۆزنەك سۈپىتىدە بىر-تەرەپ قىلىش"
+
+msgid "forwardmode"
+msgstr "خەت يەتكۈزۈش"
+
+msgid "inline"
+msgstr "ئەسكەرتىش"
+
+msgid "asattachment"
+msgstr "قىستۇرما ھالەتتە"
+
+msgid "replyallmode"
+msgstr "[ھەممىگە جاۋاپ] كۇنۇپكىسىنىڭ سۈكۈتتىكى ھەركىتى"
+
+msgid "replyalldefault"
+msgstr "ھەممىگە جاۋاپ قايتۇرۇش"
+
+msgid "replyalllist"
+msgstr "خەت ئەۋەتىش تىزىملىكىگىلا جاۋاپ قايتۇرۇش (تېپىلسا)"
+
+msgid "allmessages"
+msgstr "بارلىق خەتلەر"
+
+msgid "olderxdays"
+msgstr "x$ كۈندىن چوڭ"
+
+msgid "folder"
+msgstr "قىسقۇچ"
+
+msgid "folders"
+msgstr "قىسقۇچلار"
+
+msgid "foldername"
+msgstr "قىسقۇچ نامى"
+
+msgid "subscribed"
+msgstr "مۇشتەرى بولغان"
+
+msgid "messagecount"
+msgstr "خەتلەر"
+
+msgid "create"
+msgstr "قۇرۇش"
+
+msgid "createfolder"
+msgstr "يېڭى قىسقۇچ قۇرۇش"
+
+msgid "managefolders"
+msgstr "قىسقۇچلارنى باشقۇرۇش"
+
+msgid "specialfolders"
+msgstr "ئالاھىدە قىسقۇچلار"
+
+msgid "properties"
+msgstr "خاسلىقلار"
+
+msgid "folderproperties"
+msgstr "قىسقۇچ خاسلىقلىرى"
+
+msgid "parentfolder"
+msgstr "ئانا قىسقۇچ"
+
+msgid "location"
+msgstr "ئورۇن"
+
+msgid "info"
+msgstr "ئۇچۇر"
+
+msgid "getfoldersize"
+msgstr "بېسىپ قىسقۇچ چوڭلۇقىنى كۆرۈش"
+
+msgid "changesubscription"
+msgstr "بېسىپ مۇشتەرىلىكنى ئۆزگەرتىش"
+
+msgid "foldertype"
+msgstr "قىسقۇچ تۈرى"
+
+msgid "personalfolder"
+msgstr "شەخسىي قىسقۇچ"
+
+msgid "otherfolder"
+msgstr "باشقا ئىشلەتكۈچىنىڭ قىسقۇچى"
+
+msgid "sharedfolder"
+msgstr "ئاممىۋى قىسقۇچ"
+
+msgid "findfolders"
+msgstr "قىسقۇچلارنى تېپىش"
+
+msgid "findcontacts"
+msgstr "تۇنۇشلارنى تېپىش"
+
+msgid "findmail"
+msgstr "ئېلىخەت ئۇچۇرلىرىنى تېپىش"
+
+msgid "namespace.personal"
+msgstr "شەخسىي"
+
+msgid "namespace.other"
+msgstr "باشقا ئىشلەتكۈچىلەر"
+
+msgid "namespace.shared"
+msgstr "ھەمبەھىرلىگەن"
+
+msgid "dualuselabel"
+msgstr "پەقەتلا ئۆز-ئىچىگە ئالىدۇ"
+
+msgid "dualusemail"
+msgstr "ئۇچۇرلار"
+
+msgid "dualusefolder"
+msgstr "قىسقۇچلار"
+
+msgid "generate"
+msgstr "ھاسىل قىلىش"
+
+msgid "encryptioncreatekey"
+msgstr "يېڭى ئاچقۇچ جۈپى ھاسىل قىلىش"
+
+msgid "openmailvelopesettings"
+msgstr "خەت لىپاپىسى تەڭشەكلىرىنى ئېچىش"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"سىزدە خەت لىپاپىسى ئاچقۇچ زەنجىرىدە ساقلانغان nr$ ماس كىلىدىغان شەخسىي "
+"ئاچقۇچلار بار:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"بۇ ئەۋەتكۈچىنىڭ سىزنىڭ خەت لىپاپىڭىزدا ساقلانغان PGP شەخسىي ئاچقۇچى يوق. "
+"شىفىرلانغان خەتنى قوزغىتىش ئۈچۈن بىرنى قۇرۇشنى خالامسىز؟"
+
+msgid "encryption"
+msgstr "شىفىرلاش"
+
+msgid "mailvelopeoptions"
+msgstr "خەت لىپاپىسى تاللانمىلىرى"
+
+msgid "mailvelopemainkeyring"
+msgstr "خەت لىپاپىسى ئاساسىي ئاچقۇچ زەنجىرىنى ئىشلىتىش"
+
+msgid "mailvelopenotfound"
+msgstr "خەت ئالاقىسى كېڭەيتمىسى تور كۆرگۈچىڭىزدە يوق/قاچىلانمىدى."
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "رەتكە تىزىش"
+
+msgid "sortasc"
+msgstr "چوڭايغان بۇيىچە رەتكە تىزىش"
+
+msgid "sortdesc"
+msgstr "كىچىكلىگەن بۇيىچە رەتكە تىزىش"
+
+msgid "undo"
+msgstr "يېنىۋېلىش"
+
+msgid "installedplugins"
+msgstr "قاچىلانغان قوراللار"
+
+msgid "plugin"
+msgstr "قورال"
+
+msgid "version"
+msgstr "نەشىرى"
+
+msgid "source"
+msgstr "مەنبە"
+
+msgid "destination"
+msgstr "مەنزىل"
+
+msgid "license"
+msgstr "كىنىشكا"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "ياردەمگە ئېرىشىڭ"
+
+msgid "savedsearches"
+msgstr "ساقلانغان ئىزدەشلەر"
+
+msgid "dateformatY"
+msgstr "ي ي ي ي"
+
+msgid "dateformaty"
+msgstr "ي ي"
+
+msgid "dateformatm"
+msgstr "ئا ئا"
+
+msgid "dateformatd"
+msgstr "ك ك"
+
+msgid "dateformatj"
+msgstr "ك"
+
+msgid "dateformatn"
+msgstr "ئا"
+
+msgid "B"
+msgstr "بايت"
+
+msgid "KB"
+msgstr "كىلوبايت"
+
+msgid "MB"
+msgstr "مېگابايىت"
+
+msgid "GB"
+msgstr "گىگابايىت"
+
+msgid "unicode"
+msgstr "ئۇنىكود"
+
+msgid "english"
+msgstr "ئىنگىلىزچە"
+
+msgid "westerneuropean"
+msgstr "غەربىي ياۋرۇپاچە"
+
+msgid "easterneuropean"
+msgstr "شەرقىي ياۋروپاچە"
+
+msgid "southeasterneuropean"
+msgstr "شەرقىي-جەنۇبىي ياۋرۇپاچە"
+
+msgid "baltic"
+msgstr "بالتىق"
+
+msgid "cyrillic"
+msgstr "قىرىلچە"
+
+msgid "arabic"
+msgstr "ئەرەپچە"
+
+msgid "greek"
+msgstr "گىرىكچە"
+
+msgid "hebrew"
+msgstr "ئىبرانىي"
+
+msgid "turkish"
+msgstr "تۈركچە"
+
+msgid "nordic"
+msgstr "شىمالىي ياۋرۇپاچە"
+
+msgid "thai"
+msgstr "تايلاندچە"
+
+msgid "celtic"
+msgstr "كېلتىك"
+
+msgid "vietnamese"
+msgstr "ۋېتنامچە"
+
+msgid "japanese"
+msgstr "ياپۇنچە"
+
+msgid "korean"
+msgstr "كورىيەچە"
+
+msgid "chinese"
+msgstr "خىتايچە"
+
+msgid "arialabeltopnav"
+msgstr "كۆزنەك باشقۇرۇش"
+
+msgid "arialabeltasknav"
+msgstr "ئەپ ۋەزىپىلىرى"
+
+msgid "arialabeltoolbar"
+msgstr "ئەپ قورال بالدىقى"
+
+msgid "arialabellistnav"
+msgstr "تىزىملىكنى كۆرسىتىش"
+
+msgid "arialabelactivetask"
+msgstr "جانلىق ۋەزىپە"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "ئېلىخەت تىزىش سۈزگۈچى"
+
+msgid "arialabelmailsearchform"
+msgstr "ئېلىخەت ئۇچۇر ئىزدەش جەدىۋېلى"
+
+msgid "arialabelcontactsearchform"
+msgstr "تۇنۇشلارنى ئىزدەش جەدىۋېلى"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "ئېلىخەت ئىزدەش كىرگۈزۈش"
+
+msgid "arialabelquicksearchbox"
+msgstr "ئىزدەش كىرگۈزگۈچ"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "قىسقۇچ تىزىش سۈزگۈچى"
+
+msgid "arialabelfoldersearchform"
+msgstr "قىسقۇچ ئىزدەش جەدىۋېلى"
+
+msgid "arialabelfolderlist"
+msgstr "ئېلىخەت قىسقۇچىنى تاللاش"
+
+msgid "arialabelmessagelist"
+msgstr "ئېلىخەت خەتلىرىنى تىزىش"
+
+msgid "arialabelmailpreviewframe"
+msgstr "خەت ئالدىن كۆرگۈزگۈچ"
+
+msgid "arialabelmailboxmenu"
+msgstr "قىسقۇچ ھەركەت تىزىملىكى"
+
+msgid "arialabellistselectmenu"
+msgstr "تاللاش تىزىملىكىنى كۆرسىتىش"
+
+msgid "arialabelthreadselectmenu"
+msgstr "يىپلارنى كۆرسىتىش تىزىملىكى"
+
+msgid "arialabelmessagelistoptions"
+msgstr "خەت تىزىملىكىنى كۆرسىتىش ھەمدە تۈرگە ئايرىش تاللانمىلىرى"
+
+msgid "arialabelmailimportdialog"
+msgstr "خەت كىرگۈزۈش دېئالوگى"
+
+msgid "arialabelmessagenav"
+msgstr "خەت يولباشلاش"
+
+msgid "arialabelmessagebody"
+msgstr "خەت مەزمۇنى"
+
+msgid "arialabelmessageactions"
+msgstr "خەت ھەركىتى"
+
+msgid "arialabelcontactquicksearch"
+msgstr "تۇنۇشلارنى ئىزدەش جەدىۋېلى"
+
+msgid "arialabelcontactsearchbox"
+msgstr "تۇنۇش ئىزدەش كىرگۈزگۈچ"
+
+msgid "arialabelmessageheaders"
+msgstr "خەت باشلانمىلىرى"
+
+msgid "arialabelforwardingoptions"
+msgstr "يەتكۈزۈش تاللانمىلىرى"
+
+msgid "arialabelreplyalloptions"
+msgstr "ھەممىگە جاۋاپ قايتۇرۇش تاللانمىلىرى"
+
+msgid "arialabelmoremessageactions"
+msgstr "تېخىمۇ كۆپ خەت ھەركەتلىرى"
+
+msgid "arialabelmorecontactactions"
+msgstr "تېخىمۇ كۆپ تۇنۇش ھەركەتلىرى"
+
+msgid "arialabelmarkmessagesas"
+msgstr "تاللانغان خەتكە بەلگىسىنى قۇيۇش..."
+
+msgid "arialabelcomposeoptions"
+msgstr "يېزىش تاللانمىلىرى"
+
+msgid "arialabelresponsesmenu"
+msgstr "قاتلانغان ئىنكاس تىزىملىكى"
+
+msgid "arialabelattachmentuploadform"
+msgstr "قىستۇرما چىقىرىش جەدىۋېلى"
+
+msgid "arialabelattachmentmenu"
+msgstr "قىستۇرما تاللانمىلىرى"
+
+msgid "arialabelmailtomenu"
+msgstr "ئېلىخەت ئادىرىس تاللانمىلىرى"
+
+msgid "arialabelattachmentpreview"
+msgstr "قىستۇرما ئالدىن كۆرگۈزگۈچ"
+
+msgid "ariasummarycomposecontacts"
+msgstr "تاپشۇرۋالغۇچىلارنى تاللايدىغان توپلارنى ۋە تۇنۇشلارنى تىزىش"
+
+msgid "arialabelcontactexportoptions"
+msgstr "تۇنۇشلارنى چىقىرىش تاللانمىلىرى"
+
+msgid "arialabelabookgroupoptions"
+msgstr "ئادرىس دەپتىرى/توپ تاللانمىلىرى"
+
+msgid "arialabelpreferencesform"
+msgstr "مايىللىق جەدىۋېلى"
+
+msgid "arialabelidentityeditfrom"
+msgstr "كىملىك تەھرىرلەش جەدىۋېلى"
+
+msgid "arialabelresponseeditfrom"
+msgstr "ئىنكاس تەھرىرلەش جەدىۋېلى"
+
+msgid "arialabelsearchterms"
+msgstr "ئىزدەش ئاتالغۇلىرى"
+
+msgid "arialabeldropactionmenu"
+msgstr "سۆرەش ۋە تاشلاش ھەركەت تىزىملىكى"
+
+msgid "arialabelheadersmenu"
+msgstr "تاپشۇرۋالغۇچى (باشلانما) قۇشۇش تىزىملىكى"
+
+msgid "arialabelimagetools"
+msgstr "رەسىم قوراللىرى"
+
+msgid "helplistnavigation"
+msgstr "كۇنۇپكا تاختىسى يولباشلىغۇچىنى تىزىش"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"يۇقىرى/تۆۋەن ئىستىرىلكا: قۇر يۆتكەشكە مەركەزلەشتۈرۈش/تاللاش\n"
+"بوشلۇق: مەركەزلەشكەن قۇرنى تاللاش.\n"
+"يۆتكەش+يۇقىرى/تۆۋەن: يۇقىرى/تۆۋەن قۇشۇمچە قۇرنى تاللاش.\n"
+"كونتىرول+بوشلۇق: مەركەزلەشكەن قۇرنى تاللاش ياكى تاللىماسلىق."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"ئىستىرىلكا ئوڭ/سول: خەت يىپىنى كېڭەيتىش/ئىخچاملاش (يىپ ھالىتىدە بولسا).\n"
+"كىرىش: تاللانغان/مەركەزلەشكەن خەتنى ئېچىش.\n"
+"ئۆچۈرۈش: تاللانغان خەتلەرنى ئەخلەت چېلىكىگە تاشلاش."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "كىرىش: تاللانغان/مەركەزلەنگەن تۇنۇشنى ئېچىش"
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "بىر خاتالىق كۆرۈلدى!"
+
+msgid "messages.loginfailed"
+msgstr "كىرىش مەغلۇپ بولدى."
+
+msgid "messages.cookiesdisabled"
+msgstr "سىزنىڭ تور كۆرگۈچىڭىز پىچىنىلەرنى قوللىمايدۇ."
+
+msgid "messages.sessionerror"
+msgstr "سىزنىڭ باسقۇچىڭىز ئىناۋەتسىز ياكى ۋاقتى ئۆتتى."
+
+msgid "messages.cookiesmismatch"
+msgstr "پىچىنە ماس كەلمەسلىك بايقالدى. تور كۆرگۈچىڭىزنىڭ پىچىنىلىرىنى تازلاڭ."
+
+msgid "messages.storageerror"
+msgstr "ساقلاش مۇلازىمېتىرىغا ئۇلىنىش مەغلۇپ بولدى."
+
+msgid "messages.servererror"
+msgstr "مۇلازىمېتىر خاتالىقى!"
+
+msgid "messages.servererrormsg"
+msgstr "مۇلازىمېتىر خاتالىقى: msg$"
+
+msgid "messages.accountlocked"
+msgstr "بەك كۆپ كىرىش مەغلۇبى. كىيىنرەك سىناپ بېقىڭ."
+
+msgid "messages.connerror"
+msgstr "ئۇلىنىش خاتالىقى (مۇلازىمېتىرغا يەتكىلى بولمىدى)!"
+
+msgid "messages.dberror"
+msgstr "سانلىق مەلۇمات ئامبىرى خاتالىقى!"
+
+msgid "messages.dbconnerror"
+msgstr "سانلىق مەلۇمات ئامبىرىغا ئۇلىغىلى بولمىدى!"
+
+msgid "messages.windowopenerror"
+msgstr "سەكرەپ چىقىش كۆزنىكى مەنئي قىلىندى!"
+
+msgid "messages.requesttimedout"
+msgstr "تەلەپ ۋاقتى ئۆتتى"
+
+msgid "messages.errorreadonly"
+msgstr "ۋەزىپىنى ئورۇندىغىلى بولمىدى. قىسقۇچ بولسا ئوقۇشقىلا-بولىدىغان."
+
+msgid "messages.errornoperm"
+msgstr "ۋەزىپىنى ئورۇندىغىلى بولمىدى. ئىجازەت بېرىلمىدى."
+
+msgid "messages.erroroverquota"
+msgstr "ۋەزىپىنى ئورۇندىغىلى بولمىدى. بىكار دىسكا بوشلۇقى يوق."
+
+msgid "messages.erroroverquotadelete"
+msgstr "بىكار دىسكا بوشلۇقى قالمىدى. SHIFT+DEL نى بېسىپ بىر خەتنى ئۆچۈرۈڭ."
+
+msgid "messages.invalidrequest"
+msgstr "ئىناۋەتسىز تەلەپ! ھېچقانداق ئۇچۇر ساقلانمىدى."
+
+msgid "messages.invalidhost"
+msgstr "ئىناۋەتسىز مۇلازىمېتىر نامى."
+
+msgid "messages.nomessagesfound"
+msgstr "بۇ ئېلىخەت ساندۇقىدا ھېچقانداق خەت يوق."
+
+msgid "messages.loggedout"
+msgstr "سىز بۇ باسقۇچنى مۇۋاپىقىيەتلىك ئاخىرلاشتۇردىڭىز. خەيىر-خوش!"
+
+msgid "messages.mailboxempty"
+msgstr "خەت ساندۇقى قۇرۇق"
+
+msgid "messages.nomessages"
+msgstr "ئۇچۇر يوق"
+
+msgid "messages.refreshing"
+msgstr "يېڭىلاۋاتىدۇ..."
+
+msgid "messages.loading"
+msgstr "يۈكلەۋاتىدۇ..."
+
+msgid "messages.uploading"
+msgstr "ھۆججەت چىقىرىۋاتىدۇ..."
+
+msgid "messages.attaching"
+msgstr "ھۆججەت قىستۇرۋاتىدۇ..."
+
+msgid "messages.uploadingmany"
+msgstr "ھۆججەتلەرنى چىقىرىۋاتىدۇ..."
+
+msgid "messages.loadingdata"
+msgstr "ئۇچۇرلارنى يۈكلەۋاتىدۇ..."
+
+msgid "messages.checkingmail"
+msgstr "يېڭى ئۇچۇرلارنى تەكشۈرىۋاتىدۇ..."
+
+msgid "messages.sendingmessage"
+msgstr "خەتنى ئەۋەتىۋاتىدۇ..."
+
+msgid "messages.messagesent"
+msgstr "خەت مۇۋاپىقىيەتلىك ئەۋەتىلدى"
+
+msgid "messages.savingmessage"
+msgstr "خەتنى ساقلاۋاتىدۇ..."
+
+msgid "messages.messagesaved"
+msgstr "خەت قوليازما قىسقۇچىغا ساقلاندى."
+
+msgid "messages.successfullysaved"
+msgstr "مۇۋاپىقىيەتلىك ساقلاندى."
+
+msgid "messages.savingresponse"
+msgstr "ئىنكاس تىكىستىنى ساقلاۋاتىدۇ..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "بۇ ئىنكاس تېكىستىنى راستىنلا ئۆچۈرەمسىز؟"
+
+msgid "messages.nocontactselected"
+msgstr "سىز تېخى بىرەر تۇنۇش تاللىمىدىڭىز."
+
+msgid "messages.addedsuccessfully"
+msgstr "تۇنۇش ئادىرىس دەپتىرىگە مۇۋاپىقىيەتلىك قېتىلدى."
+
+msgid "messages.contactexists"
+msgstr "ئوخشاش ئېلىخەت ئادىرىستىكى تۇنۇش مەۋجۇت."
+
+msgid "messages.contactnameexists"
+msgstr "ئوخشاش ئىسىملىك تۇنۇش مەۋجۇت."
+
+msgid "messages.blockedimages"
+msgstr ""
+"مەخپىيەتلىكىڭىزنى قوغداش ئۈچۈن، يىراق-مەنبەلىك رەسىملەر بۇ خەتتە مەنئىي "
+"قىلىندى."
+
+msgid "messages.blockedresources"
+msgstr "مەخپىيەتلىكىڭىزنى قوغداش ئۈچۈن يىراق مەنبەلەر مەنئىي قىلىندى."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"بۇ خەت ئالدامچىلىققا مۇناسىۋەتلىك گۇمانلىق ئېلخەت ئادىرسىنى ئۆز-ئىچىگە "
+"ئالغان."
+
+msgid "messages.bccemail"
+msgstr ""
+"يەتكۈزۈلگەن خەت(لەر) مەخپىي تاپشۇرۋالغۇچىلارنى ئۆز-ئىچىگە ئالىدۇ(ب چ چ)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"بۇ خەت ھېچقانداق ئۆزگەرتمەي ئەۋەتىلدۇ، مەسلەن: ئەسلىدىكى مەزمۇن، باشلانما "
+"ھەمدە تاپشۇرۋالغۇچىلار بىلەن."
+
+msgid "messages.encryptedmessage"
+msgstr "بۇ بىر شىفىرلانغان خەت شۇڭا كۆرسەتكىلى بولمايدۇ. كەچۈرۈڭ!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"بۇ بىر شىفىرلانغان خەت بۇلۇپ، تور كۆرگۈچنىڭ كېڭەيتىلمىسى بىلەن "
+"شىفىرسىزلىغىلى بۇلىدۇ."
+
+msgid "messages.nopubkeyfor"
+msgstr "بۇ email$ ئۈچۈن ئاممىۋىي ئاچقۇچ تېپىلمىدى"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"سىزنىڭ ئەۋەتكۈچى كىملىكىڭىزگە ماس ئاممىۋىي ئاچقۇچ تېپىلمىدى. سىز بۇ خەتنى "
+"تاپشۇرۋالغۇچىلار ئۈچۈنلا شىفىرلامسىز؟"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"ئاللىبۇرۇن چىقىرىلغان قىستۇرمىلارنى شىفىرلىغىلى بولمايدۇ. ئۇلارنى شىفىرلاش "
+"تەھرىرىدە قايتا قۇشۇڭ."
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"سىز بۇ كەم قالغان ئاچقۇچلار ئۈچۈن ئاممىۋىي ئاچقۇچ مۇلازىمېتىرلىرىنى "
+"ئىزدەمسىز؟"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "تۆۋەندىكى ئاممىۋىي ئاچقۇچ تېپىلدى:"
+
+msgid "messages.keyservererror"
+msgstr "ئاچقۇچ مۇلازىمېتىردىن ئاچقۇچقا ئېرىشكىلى بولمىدى."
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+"ئاممىۋىي ئاچقۇچ key$ سىزنىڭ ئاچقۇچ چەمبىرىكىڭىزگە مۇۋاپىقىيەتلىك كىرگۈزۈلدى."
+
+msgid "messages.nocontactsfound"
+msgstr "ھېچقانداق تۇنۇش تېپىلمىدى."
+
+msgid "messages.contactnotfound"
+msgstr "تەلەپ قىلىنغان تۇنۇش تېپىلمىدى."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"سىز تاللانغان ئادىرس دەپتىرىدىن تۇنۇشلارنى كۆرۈش ئۈچۈن ئىزدەش جەدىۋېلىنى "
+"ئىشلىتىشىڭىز لازىم."
+
+msgid "messages.sendingfailed"
+msgstr "خەتنى ئەۋەتىش مەغلۇپ بولدى."
+
+msgid "messages.senttooquickly"
+msgstr "بۇ خەتنى ئەۋەتىشتىن بۇرۇن sec$ سىكونت(لار) ساقلاڭ."
+
+msgid "messages.errorsavingsent"
+msgstr "ئەۋەتىلگەن خەتنى ساقلاۋاتقاندا بىر خاتالىق كۆرۈلدى."
+
+msgid "messages.errorsaving"
+msgstr "ساقلاۋاتقاندا بىر خاتالىق كۆرۈلدى."
+
+msgid "messages.errormoving"
+msgstr "بۇ خەت(لەر)نى يۆتكىگىلى بولمىدى."
+
+msgid "messages.errorcopying"
+msgstr "بۇ خەت(لەر)نى كۆچۈرگىلى بولمىدى."
+
+msgid "messages.errordeleting"
+msgstr "بۇ خەت(لەر)نى ئۆچۈرگىلى بولمىدى."
+
+msgid "messages.errormarking"
+msgstr "بۇ خەت(لەر)گە بەلگە قويغىلى بولمىدى."
+
+msgid "messages.alerttitle"
+msgstr "دىققەت"
+
+msgid "messages.confirmationtitle"
+msgstr "جەزىملەشتۈرەمسىز..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "سىز تاللانغان تۇنۇش(لار)نى راستىنلا ئۆچۈرمەكچىمۇ؟"
+
+msgid "messages.deletegroupconfirm"
+msgstr "سىز تاللانغان توپنى راستىنلا ئۆچۈرمەكچىمۇ؟"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "سىز تاللانغان خەت(لەر)نى راستىنلا ئۆچۈرمەكچىمۇ؟"
+
+msgid "messages.deletefolderconfirm"
+msgstr "بۇ قىسقۇچنى راستىنلا ئۆچۈرەمسىز؟"
+
+msgid "messages.movefolderconfirm"
+msgstr "سىز بۇ قىسقۇچنى راستىنلا يۆتكەمسىز؟"
+
+msgid "messages.purgefolderconfirm"
+msgstr "سىز بۇ قىسقۇچتىكى بارلىق خەتلەرنى راستىنلا ئۆچۈرمەكچىمۇ؟"
+
+msgid "messages.contactdeleting"
+msgstr "تۇنۇش(لار)نى ئۆچۈرىۋاتىدۇ..."
+
+msgid "messages.groupdeleting"
+msgstr "توپنى ئۆچۈرىۋاتىدۇ..."
+
+msgid "messages.folderdeleting"
+msgstr "قىسقۇچنى ئۆچۈرىۋاتىدۇ..."
+
+msgid "messages.foldermoving"
+msgstr "قىسقۇچنى يۆتكەۋاتىدۇ..."
+
+msgid "messages.foldersubscribing"
+msgstr "قىسقۇچقا مۇشتەرى بۇلىۋاتىدۇ..."
+
+msgid "messages.folderunsubscribing"
+msgstr "قىسقۇچقا مۇشتەرى بولمايۋاتىدۇ..."
+
+msgid "messages.formincomplete"
+msgstr "بۇ جەدىۋەل تۇلۇق تولدۇرۇلمىدى."
+
+msgid "messages.noemailwarning"
+msgstr "بىر ئىناۋەتلىك ئېلىخەت ئادىرسىنى كىرگۈزۈڭ."
+
+msgid "messages.nonamewarning"
+msgstr "بىر ئىسىم كىرگۈزۈڭ."
+
+msgid "messages.nopagesizewarning"
+msgstr "بەت چوڭلۇقىنى كىرگۈزۈڭ."
+
+msgid "messages.nosenderwarning"
+msgstr "ئەۋەتكۈچى ئېلىخەت ئادىرسىنى كىرگۈزۈڭ."
+
+msgid "messages.recipientsadded"
+msgstr "تاپشۇرۋالغۇچى(لار) مۇۋاپىقىيەتلىك قۇشۇلدى."
+
+msgid "messages.norecipientwarning"
+msgstr "ئەڭ كەمدە بىر تاپشۇرۋالغۇچى كىرگۈزۈڭ."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "بەك كۆپ ئاممىۋىي تاپشۇرۋالغۇچىلار"
+
+msgid "messages.nosubjectwarning"
+msgstr "\"تېما\" كاتەكچىسى قۇرۇق. بىرنى كىرگۈزۈشنى خالامسىز؟"
+
+msgid "messages.nosubjecttitle"
+msgstr "تېما يوق"
+
+msgid "messages.nobodywarning"
+msgstr "بۇ ئۇچۇرنى مەزمۇنسىز ئەۋەتەمسىز؟"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"بۇ خەت ئەۋەتىلمىدى ھەمدە ساقلانمىغان ئۆزگىرىشلەر بار. ئۆزگەرتىشلەرنى "
+"تاشلىۋېتەمسىز؟"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"بىر-پارچە ئىلگىرى يېزىلغان لىكىن ئەۋەتىلمىگەن خەت تېپىلدى. تېما: subject$ "
+"ساقلانغان: date$ سىز بۇ خەتنى ئەسلىگە قايتۇرامسىز؟"
+
+msgid "messages.nosearchname"
+msgstr "بىرەر تۇنۇش ئىسمى ياكى ئېلىخەت ئادىرسىنى كىرگۈزۈڭ."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"تېخى ھەممە قىستۇرمىلار چىقىرىپ بولۇنمىدى. ساقلاڭ ياكى چىقىرىشنى ئەمەلدىن "
+"قالدۇرۇڭ."
+
+msgid "messages.searchsuccessful"
+msgstr "nr$ خەتلەر تېپىلدى."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "nr$ تۇنۇشلار تېپىلدى."
+
+msgid "messages.searchnomatch"
+msgstr "ئىزدەشكە ھېچنىمە ماس كەلمىدى."
+
+msgid "messages.searching"
+msgstr "ئىزدەۋاتىدۇ..."
+
+msgid "messages.checking"
+msgstr "تەكشۈرۋاتىدۇ..."
+
+msgid "messages.stillsearching"
+msgstr "تېخىچە ئىزدەۋاتىدۇ..."
+
+msgid "messages.nospellerrors"
+msgstr "ھېچقانداق ئىملا خاتالىقى تېپىلمىدى."
+
+msgid "messages.folderdeleted"
+msgstr "قىسقۇچ مۇۋاپىقىيەتلىك ئۆچۈرۈلدى."
+
+msgid "messages.foldersubscribed"
+msgstr "قىسقۇچ مۇۋاپىقىيەتلىك مۇشتەرى بولۇندى."
+
+msgid "messages.folderunsubscribed"
+msgstr "قىسقۇچ مۇۋاپىقىيەتلىك مۇشتەرى بولۇنمىدى."
+
+msgid "messages.folderpurged"
+msgstr "قىسقۇچ مۇۋاپىقىيەتلىك قۇرۇقدالدى."
+
+msgid "messages.folderexpunged"
+msgstr "قىسقۇچ مۇۋاپىقىيەتلىك ئىخچاملاندى."
+
+msgid "messages.deletedsuccessfully"
+msgstr "مۇۋاپىقىيەتلىك ئۆچۈرۈلدى."
+
+msgid "messages.converting"
+msgstr "فورمات ئۆچۈرۈلۋاتىدۇ..."
+
+msgid "messages.messageopenerror"
+msgstr "خەتنى مۇلازىمېتىردىن يۈكلىيەلمىدى."
+
+msgid "messages.filelinkerror"
+msgstr "ھۆججەت قىستۇرۇش مەغلۇپ بولدى."
+
+msgid "messages.fileuploaderror"
+msgstr "ھۆججەت چىقىرىش مەغلۇپ بولدى."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"ئوخشىمىغان كاتەكچىلىك كۆپلىگەن CSV ھۆججىتىنى كىرگۈزۈش قۇبۇل قىلىنمايدۇ."
+
+msgid "messages.filesizeerror"
+msgstr "چىقارغان ھۆججەت چوڭلۇقى ئەڭ چوڭ بوشلۇق size$ دىن ئېشىپ كەتتى."
+
+msgid "messages.filecounterror"
+msgstr "سىز ئەڭ كۆپ بولغاندا count$ ھۆججەتلەرنى چىقىرالايسىز."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"ھۆججەت قىستۇرۇش مەغلۇپ بولدى. خەتنىڭ چوڭلۇقى ئەڭ يۇقىرى ئۆلچەمدىن( size$) "
+"ئېشىپ كەتتى."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"خەتنىڭ چوڭلۇقى ئۆلچەمدىن (size$) ئېشىپ كەتتى. num$ خەت(لەر) قىستۇرۇلمىدى."
+
+msgid "messages.copysuccess"
+msgstr "nr$ تۇنۇشلار مۇۋاپىقىيەتلىك كۆچۈرۈلدى."
+
+msgid "messages.movesuccess"
+msgstr "nr$ تۇنۇشلار مۇۋاپىقىيەتلىك يۆتكەلدى."
+
+msgid "messages.copyerror"
+msgstr "ھېچقانداق تۇنۇشنى كۆچۈرگىلى بولمىدى."
+
+msgid "messages.moveerror"
+msgstr "ھېچقانداق تۇنۇشنى يۆتكىگىلى بولمىدى."
+
+msgid "messages.sourceisreadonly"
+msgstr "بۇ ئادىرىس مەنبەسى بولسا ئۇقۇشقىلا-بولىدىغان."
+
+msgid "messages.errorsavingcontact"
+msgstr "بۇ تۇنۇش ئادىرسىنى ساقلىغىلى بولمىدى."
+
+msgid "messages.movingmessage"
+msgstr "خەت(لەر)نى يۆتكەۋاتىدۇ..."
+
+msgid "messages.copyingmessage"
+msgstr "خەت(لەر)نى كۆچۈرۈۋاتىدۇ..."
+
+msgid "messages.copyingcontact"
+msgstr "تۇنۇش(لار)نى كۆچۈرۈۋاتىدۇ..."
+
+msgid "messages.movingcontact"
+msgstr "تۇنۇش(لار)نى يۆتكەۋاتىدۇ..."
+
+msgid "messages.deletingmessage"
+msgstr "خەت(لەر)نى ئۆچۈرىۋاتىدۇ..."
+
+msgid "messages.markingmessage"
+msgstr "خەت(لەر)گە بەلگە قۇيىۋاتىدۇ..."
+
+msgid "messages.addingmember"
+msgstr "تۇنۇش(لار)نى بۇ توپقا قۇشۇۋاتىدۇ..."
+
+msgid "messages.removingmember"
+msgstr "تۇنۇش(لار)نى بۇ توپتىن چىقىرىۋاتىدۇ..."
+
+msgid "messages.receiptsent"
+msgstr "بىر ئۇقۇغانلىق تېلخېتى مۇۋاپىقىيەتلىك ئەۋەتىلدى."
+
+msgid "messages.errorsendingreceipt"
+msgstr "بۇ تېلىخەتنى ئەۋەتكىلى بولمىدى."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "سىز بۇ كىملىكنى راستىنلا ئۆچۈرمەكچىمۇ؟"
+
+msgid "messages.nodeletelastidentity"
+msgstr "سىز بۇ كىملىكنى ئۆچۈرسىڭىز بولمايدۇ، بۇ ئەڭ ئاخىرقىسى."
+
+msgid "messages.forbiddencharacter"
+msgstr "قىسقۇچ ئىسمى مەنئىي قىلىنغان ھەرىپنى ئۆز-ئىچىگە ئالىدۇ."
+
+msgid "messages.selectimportfile"
+msgstr "بىرەر ھۆججەتنى تاللاپ چىقىرىڭ."
+
+msgid "messages.addresswriterror"
+msgstr "تاللانغان ئادىرىس دەپتىرىگە يازغىلى بولمايدۇ."
+
+msgid "messages.contactaddedtogroup"
+msgstr "تۇنۇشلار بۇ توپقا مۇۋاپىقىيەتلىك قېتىلدى."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "تۇنۇشلار بۇ توپتىن مۇۋاپىقىيەتلىك چىقىرىلدى."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "ھېچقانداق توپ تاپشۇرۇقى ئۆزگەرتىلمىدى."
+
+msgid "messages.importwait"
+msgstr "كىرگۈزىۋاتىدۇ، بىردەم ساقلاڭ..."
+
+msgid "messages.importformaterror"
+msgstr "كىرگۈزۈش مەغلۇپ بولدى! چىقىرىلغان ھۆججەتنىڭ تىپى ئىناۋەتلىك ئەمەس."
+
+msgid "messages.importconfirm"
+msgstr "<b>inserted$ تۇنۇشلار مۇۋاپىقىيەتلىك كىرگۈزۈلدى </b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "nr$ خەتلەر مۇۋاپىقىيەتلىك كىرگۈزۈلدى"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"كىرگۈزۈش مەغلۇپ بولدى! چىقىرىلغان ھۆججەت ئىناۋەتلىك ئېلىخەت ياكى خەت ھۆججىتى"
+" ئەمەس."
+
+msgid "messages.opnotpermitted"
+msgstr "مەشخۇلاتقا ئىجازەت بېرىلمىدى!"
+
+msgid "messages.nofromaddress"
+msgstr "تاللانغان كىملىكنىڭ ئېلىخەت ئادىرسى يوق."
+
+msgid "messages.editorwarning"
+msgstr ""
+"تەھرىرلىگۈچ تۈرىنى ئۆزگەرتىش تېكىست فورماتىنىڭ يوقىلىشىنى كەلتۈرۈپ چىقىرىشى "
+"مۇمكىن. سىز داۋاملاشتۇرامسىز؟"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"بىر ئېغىر تەڭشەش خاتالىقى كۆرۈلدى. دەرھال باشقۇرغۇچىڭىز بىلەن ئالاقىلىشىڭ. "
+"<b>سىزنىڭ خېتىڭىزنى ئەۋەتكىلى بولمىدى. </b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP خاتالىقى (code$): مۇلازىمېتىرغا ئۇلىنىش مەغلۇپ بولدى."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP خاتالىقى (code$): كىملىكىنى دەلىللەش مەغلۇپ بولدى."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP خاتالىقى (code$): ئەۋەتكۈچىنى \"from$\" بېكىتىش مەغلۇپ بولدى (msg$)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP خاتالىقى (code$): تاپشۇرۋالغۇچىنى \"to$\" قېتىش مەغلۇپ بولدى (msg$)."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP خاتالىقى : تاپشۇرۋالغۇچىلار تىزىملىكىنى يىشىەلمىدى."
+
+msgid "messages.smtputf8error"
+msgstr "SMTP خاتالىقى: مۇلازىمېتىر ئېلىخەت ئادىرسىدا ئۇنىكودنى قوللىمايدۇ."
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+"SMTP خاتالىقى: خەتنىڭ چوڭلۇقى مۇلازىمېتىر چېكىدىن(limit$) ئېشىپ كەتتى."
+
+msgid "messages.smtperror"
+msgstr "SMTP خاتالىقى: msg$"
+
+msgid "messages.emailformaterror"
+msgstr "ئىناۋەتسىز ئېلىخەت ئادىرسى: email$"
+
+msgid "messages.toomanyrecipients"
+msgstr "تاپشۇرۋالغۇچىلار سانىنى max$ دىن تۆۋەنلىتىڭ."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "توپ ئەزالىرىنىڭ سانى ئەڭ يۇقىرى ئۆلچەم max$ دىن ئېشىپ كەتتى."
+
+msgid "messages.internalerror"
+msgstr "ئىچكى خاتالىق كۆرۈلدى. قايتا سىناپ بېقىڭ."
+
+msgid "messages.contactdelerror"
+msgstr "تۇنۇش(لار)نى ئۆچۈرگىلى بولمىدى."
+
+msgid "messages.contactdeleted"
+msgstr "تۇنۇش(لار) مۇۋاپىقىيەتلىك ئۆچۈرۈلدى."
+
+msgid "messages.contactrestoreerror"
+msgstr "ئۆچۈرۈلگەن تۇنۇش(لار)نى ئەسلىگە قايتۇرغىلى بولمىدى."
+
+msgid "messages.contactrestored"
+msgstr "تۇنۇش(لار) مۇۋاپىقىيەتلىك ئەسلىگە كەلدى."
+
+msgid "messages.groupdeleted"
+msgstr "توپ مۇۋاپىقىيەتلىك ئۆچۈرۈلدى."
+
+msgid "messages.grouprenamed"
+msgstr "توپقا مۇۋاپىقىيەتلىك يېڭى ئسىىم قۇيۇلدى."
+
+msgid "messages.groupcreated"
+msgstr "توپ مۇۋاپىقىيەتلىك قۇرۇلدى."
+
+msgid "messages.savedsearchdeleted"
+msgstr "ساقلانغان ئىزدەشلەر مۇۋاپىقىيەتلىك ئۆچۈرۈلدى."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "ساقلانغان ئىزدەشلەرنى ئۆچۈرگىلى بولمىدى."
+
+msgid "messages.savedsearchcreated"
+msgstr "ساقلانغان ئىزدەش مۇۋاپىقىيەتلىك قۇرۇلدى."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "ساقلانغان ئىزدەشنى قۇرغىلى بولمىدى."
+
+msgid "messages.messagedeleted"
+msgstr "خەت(لەر) مۇۋاپىقىيەتلىك ئۆچۈرۈلدى."
+
+msgid "messages.messagemoved"
+msgstr "خەت(لەر) مۇۋاپىقىيەتلىك يۆتكەلدى."
+
+msgid "messages.messagemovedtotrash"
+msgstr "خەت(لەر) ئەخلەت چېلىكىگە مۇۋاپىقىيەتلىك يۆتكەلدى."
+
+msgid "messages.messagecopied"
+msgstr "خەت(لەر) مۇۋاپىقىيەتلىك كۆچۈرۈلدى."
+
+msgid "messages.messagemarked"
+msgstr "خەت(لەر)گە مۇۋاپىقىيەتلىك بەلگە قۇيۇلدى."
+
+msgid "messages.autocompletechars"
+msgstr "ئاپتۇماتىك تولدۇرۇش ئۈچۈن ئەڭ كەم بولغاندا min$ ھەرىپ كىرگۈزۈڭ."
+
+msgid "messages.autocompletemore"
+msgstr "تېخىمۇ كۆپ ماس قۇرلار تېپىلدى. كۆپرەك ھەرىپلەرنى كىرگۈزۈڭ."
+
+msgid "messages.namecannotbeempty"
+msgstr "ئىسمى قۇرۇق بولسا بولمايدۇ."
+
+msgid "messages.nametoolong"
+msgstr "ئىسمى بەك ئۇزۇن."
+
+msgid "messages.namedotforbidden"
+msgstr "قىسقۇچ ئىسمى چىكىت بىلەن باشلانمايدۇ."
+
+msgid "messages.folderupdated"
+msgstr "قىسقۇچ مۇۋاپىقىيەتلىك يېڭىلاندى."
+
+msgid "messages.foldercreated"
+msgstr "قىسقۇچ مۇۋاپىقىيەتلىك قۇرۇلدى."
+
+msgid "messages.invalidimageformat"
+msgstr "ئىناۋەتلىك رەسىم فورماتى ئەمەس."
+
+msgid "messages.mispellingsfound"
+msgstr "خەتتە ئىملا خاتالىقى كۆرۈلدى."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"قىسقۇچنى تاللىغان ئانا قىسقۇچ ئىچىگە قۇرغىلى/يۆتكىگىلى بولمىدى. كىرىش ھوقوقى"
+" يوق."
+
+msgid "messages.messagetoobig"
+msgstr "ئۇچۇر قىسمى بىر-تەرەپ قىلىشقا بەك چوڭ."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"قىستۇرما گۇمانلىق چۈنكى ئۇنىڭ تىپى خەتتە دىيىلگەن تىپقا ماس كەلمەيدۇ. ئەگەر "
+"سىز بۇ ئەۋەتكۈچىگە ئىشەنمىسىڭىز، ئۇنى بۇ تور كۆرگۈچتە ئاچماسلىقىڭىز لازىم "
+"چۈنكى ئۇ بەلكىم يامان-نىيەتلىك مەزمۇنلارنى ئۆز-ئىچىگە ئېلىشى مۇمكىن. "
+"<br/><br/><em>كۈتۈلگەن: expected$؛ تېپىلغان: detected$</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"ئاگاھلاندۇرۇش: بۇ تورخەت مۇلازىمېتى Javascript نى تەلەپ قىلىدۇ. ئىشلىتىش "
+"ئۈچۈن تور كۆرگۈچىڭىزدە Javascript نى بار قىلىڭ."
+
+msgid "messages.messageissent"
+msgstr ""
+"بۇ خەت ئاللىبۇرۇن ئەۋەتىلدى، لىكىن تېخى ساقلانمىدى. سىز ئۇنى ھازىر "
+"ساقلامسىز؟"
+
+msgid "messages.errnotfound"
+msgstr "ھۆججەت تېپىلمىدى"
+
+msgid "messages.errnotfoundexplain"
+msgstr "تەلەپ قىلىنغان بايلىق تېپىلمىدى!"
+
+msgid "messages.errfailedrequest"
+msgstr "مەغلۇپ بولغان تەلەپ"
+
+msgid "messages.errauthorizationfailed"
+msgstr "كىملىكىنى دەلىللەش مەغلۇپ بولدى"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"سىزنىڭ بۇ مۇلازىمەتكە ئېرىشىش ھوقوقىڭىزنىڭ بار-يوقلىقىنى دەلىللىگىلى "
+"بولمىدى!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "تەلەپ تەكشۈرۈش مەغلۇپ بولدى"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"سىزنى قوغداش ئۈچۈن، بۇ بايلىقنى ئىشلىتىش CSRF كە قارشى قوغدالدى. سىزنىڭ بۇنى"
+" كۆرۈشىڭىزدىكى سەۋەب سىز بۇ تور ئېپىدىن ئايرىلىشتىن بۇرۇن تېخى ئۇنىڭدىن "
+"چېكىنمىدىڭىز. داۋاملاشتۇرۇش ئۈچۈن ئادەم بىلەن ماسلىشىش كېرەك بولدى. "
+
+msgid "messages.errcontactserveradmin"
+msgstr "سىزنىڭ مۇلازىمېتىر باشقۇرغۇچىڭىز بىلەن ئالاقىلىشىڭ."
+
+msgid "messages.clicktoresumesession"
+msgstr "بۇ يەرنى بېسىپ ئالدىنقى باسقۇچنى ئەسلىگە كەلتۈرۈڭ"
+
+msgid "messages.errcomposesession"
+msgstr "يېزىش باسقۇچى خاتالىقى"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "تەلەپ قىلىنغان يېزىش باسقۇچى تېپىلمىدى."
+
+msgid "messages.clicktocompose"
+msgstr "بۇ يەرنى بېسىپ يېڭى خەت قۇرۇڭ"
+
+msgid "messages.nosupporterror"
+msgstr "سىزنىڭ تور كۆرگۈچىڭىز بۇ ئالاھىدىلىكنى قوللىمايدۇ."
+
+msgid "messages.siginserted"
+msgstr "ئىمزا مۇۋاپىقىيەتلىك كىرگۈزۈلدى."
+
+msgid "messages.responseinserted"
+msgstr "ئىنكاس مۇۋاپىقىيەتلىك كىرگۈزۈلدى."
+
+msgid "messages.noresponsesavailable"
+msgstr "ھېچقانداق ئىنكاس يوق"
+
+msgid "messages.listempty"
+msgstr "بۇ تىزىملىك قۇرۇق"
+
+msgid "messages.listusebutton"
+msgstr "يېڭى خاتىرە قېتىش ئۈچۈن قۇرۇش كۇنۇپكىسىنى بېسىڭ."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "يېڭى ئاچقۇچ جۈپى identity$ ئۈچۈن مۇۋاپىقىيەتلىك قۇرۇلدى."
+
+msgid "messages.emptyattachment"
+msgstr "بۇ قىستۇرما قۇرۇقتەك قىلىدۇ. <br>بۇنى ئەۋەتكەن ئادەم بىلەن تەكشۈرۈڭ."
+
+msgid "messages.oauthloginfailed"
+msgstr "كىملىك دەلىللەش مەغلۇپ بولدى. قايتا سىناپ بېقىڭ."
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

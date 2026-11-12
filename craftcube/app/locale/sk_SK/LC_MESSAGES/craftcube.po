@@ -1,0 +1,2916 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Vitajte v $product"
+
+msgid "username"
+msgstr "Meno používateľa"
+
+msgid "password"
+msgstr "Heslo"
+
+msgid "server"
+msgstr "Server"
+
+msgid "login"
+msgstr "Prihlásiť"
+
+msgid "oauthlogin"
+msgstr "Prihlásenie cez $provider"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "logout"
+msgstr "Odhlásiť"
+
+msgid "mail"
+msgstr "E-mail"
+
+msgid "settings"
+msgstr "Nastavenia"
+
+msgid "addressbook"
+msgstr "Adresár kontaktov"
+
+msgid "darkmode"
+msgstr "Tmavý režim"
+
+msgid "lightmode"
+msgstr "Svetlý režim"
+
+msgid "inbox"
+msgstr "Doručená pošta"
+
+msgid "drafts"
+msgstr "Koncepty"
+
+msgid "sent"
+msgstr "Odoslané"
+
+msgid "trash"
+msgstr "Kôš"
+
+msgid "junk"
+msgstr "Nevyžiadaná pošta"
+
+msgid "show_real_foldernames"
+msgstr "Pri osobitných priečinkoch zobrazovať skutočné názvy"
+
+msgid "subject"
+msgstr "Predmet"
+
+msgid "from"
+msgstr "Od"
+
+msgid "sender"
+msgstr "Odosielateľ"
+
+msgid "to"
+msgstr "Komu"
+
+msgid "cc"
+msgstr "Kópia"
+
+msgid "bcc"
+msgstr "Skrytá kópia"
+
+msgid "replyto"
+msgstr "Odpovedať na"
+
+msgid "followupto"
+msgstr "Preposlať na"
+
+msgid "date"
+msgstr "Dátum"
+
+msgid "size"
+msgstr "Veľkosť"
+
+msgid "priority"
+msgstr "Priorita"
+
+msgid "organization"
+msgstr "Organizácia"
+
+msgid "readstatus"
+msgstr "Prečítať stav"
+
+msgid "listoptions"
+msgstr "Nastavenia zoznamu..."
+
+msgid "listoptionstitle"
+msgstr "Nastavenia zoznamu"
+
+msgid "mailboxlist"
+msgstr "Priečinky"
+
+msgid "messagesfromto"
+msgstr "Správy: $from – $to, z $count"
+
+msgid "threadsfromto"
+msgstr "Konverzácie: $from – $to, z $count"
+
+msgid "messagenrof"
+msgstr "Správa č. $nr z $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to z $count"
+
+msgid "copy"
+msgstr "Kopírovať"
+
+msgid "move"
+msgstr "Presunúť"
+
+msgid "moveto"
+msgstr "Presunúť do..."
+
+msgid "copyto"
+msgstr "Kopírovať do..."
+
+msgid "download"
+msgstr "Stiahnuť"
+
+msgid "open"
+msgstr "Otvoriť"
+
+msgid "showattachment"
+msgstr "Zobraziť"
+
+msgid "showanyway"
+msgstr "Zobraziť aj napriek tomu"
+
+msgid "filename"
+msgstr "Názov súboru"
+
+msgid "filesize"
+msgstr "Veľkosť súboru"
+
+msgid "addtoaddressbook"
+msgstr "Pridať do adresára"
+
+msgid "sun"
+msgstr "Ne"
+
+msgid "mon"
+msgstr "Po"
+
+msgid "tue"
+msgstr "Ut"
+
+msgid "wed"
+msgstr "St"
+
+msgid "thu"
+msgstr "Št"
+
+msgid "fri"
+msgstr "Pi"
+
+msgid "sat"
+msgstr "So"
+
+msgid "sunday"
+msgstr "Nedeľa"
+
+msgid "monday"
+msgstr "Pondelok"
+
+msgid "tuesday"
+msgstr "Utorok"
+
+msgid "wednesday"
+msgstr "Streda"
+
+msgid "thursday"
+msgstr "Štvrtok"
+
+msgid "friday"
+msgstr "Piatok"
+
+msgid "saturday"
+msgstr "Sobota"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "Máj"
+
+msgid "jun"
+msgstr "Jún"
+
+msgid "jul"
+msgstr "Júl"
+
+msgid "aug"
+msgstr "Aug"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Dec"
+
+msgid "longjan"
+msgstr "Január"
+
+msgid "longfeb"
+msgstr "Február"
+
+msgid "longmar"
+msgstr "Marec"
+
+msgid "longapr"
+msgstr "Apríl"
+
+msgid "longmay"
+msgstr "Máj"
+
+msgid "longjun"
+msgstr "Jún"
+
+msgid "longjul"
+msgstr "Júl"
+
+msgid "longaug"
+msgstr "August"
+
+msgid "longsep"
+msgstr "September"
+
+msgid "longoct"
+msgstr "Október"
+
+msgid "longnov"
+msgstr "November"
+
+msgid "longdec"
+msgstr "December"
+
+msgid "today"
+msgstr "Dnes"
+
+msgid "refresh"
+msgstr "Obnoviť"
+
+msgid "checkmail"
+msgstr "Skontrolovať nové správy"
+
+msgid "compose"
+msgstr "Vytvoriť správu"
+
+msgid "writenewmessage"
+msgstr "Vytvoriť novú správu"
+
+msgid "reply"
+msgstr "Odpovedať"
+
+msgid "replytomessage"
+msgstr "Odpovedať na správu"
+
+msgid "replytoallmessage"
+msgstr "Odpovedať do zoznamu alebo odosielateľovi a všetkým príjemcom"
+
+msgid "replyall"
+msgstr "Odpovedať všetkým"
+
+msgid "replylist"
+msgstr "Zoznam pre odpovedanie"
+
+msgid "forward"
+msgstr "Poslať ďalej"
+
+msgid "forwardinline"
+msgstr "Poslať ďalej v správe"
+
+msgid "forwardattachment"
+msgstr "Poslať ďalej ako prílohu"
+
+msgid "forwardmessage"
+msgstr "Poslať správu ďalej"
+
+msgid "bouncemsg"
+msgstr "Opätovne odoslať (odrazenie)"
+
+msgid "bounce"
+msgstr "Opätovne odoslať"
+
+msgid "deletemessage"
+msgstr "Vymazať správu"
+
+msgid "undeletemessage"
+msgstr "Zrušiť vymazanie správy"
+
+msgid "movemessagetotrash"
+msgstr "Presunúť správu do koša"
+
+msgid "printmessage"
+msgstr "Vytlačiť túto správu"
+
+msgid "previousmessage"
+msgstr "Zobraziť predchádzajúcu správu"
+
+msgid "firstmessage"
+msgstr "Zobraziť prvú správu"
+
+msgid "nextmessage"
+msgstr "Zobraziť ďalšiu správu"
+
+msgid "lastmessage"
+msgstr "Zobraziť poslednú správu"
+
+msgid "backtolist"
+msgstr "Naspäť na zoznam správ"
+
+msgid "viewsource"
+msgstr "Zobraziť zdrojový text"
+
+msgid "mark"
+msgstr "Označiť"
+
+msgid "markmessages"
+msgstr "Označiť správy"
+
+msgid "markread"
+msgstr "Ako prečítané"
+
+msgid "markunread"
+msgstr "Ako neprečítané"
+
+msgid "markflagged"
+msgstr "Ako označené príznakom"
+
+msgid "markunflagged"
+msgstr "Ako neoznačené príznakom"
+
+msgid "markundeleted"
+msgstr "Ako nevymazané"
+
+msgid "markasread"
+msgstr "Označiť ako prečítané"
+
+msgid "markasunread"
+msgstr "Označiť ako neprečítané"
+
+msgid "markasflagged"
+msgstr "Označiť ako označené príznakom"
+
+msgid "markasunflagged"
+msgstr "Označiť ako neoznačené príznakom"
+
+msgid "moreactions"
+msgstr "Viac akcií..."
+
+msgid "markallread"
+msgstr "Označiť všetko ako prečítané"
+
+msgid "folders-cur"
+msgstr "Vybraný len priečinok"
+
+msgid "folders-sub"
+msgstr "Vybraný priečinok a jeho podpriečinky"
+
+msgid "folders-all"
+msgstr "Všetky priečinky"
+
+msgid "more"
+msgstr "Viac"
+
+msgid "back"
+msgstr "Dozadu"
+
+msgid "options"
+msgstr "Možnosti"
+
+msgid "composeoptions"
+msgstr "Možnosti zostavovania"
+
+msgid "optionsandattachments"
+msgstr "Možnosti a prílohy"
+
+msgid "actions"
+msgstr "Akcie"
+
+msgid "first"
+msgstr "Prvá/prvý"
+
+msgid "last"
+msgstr "Posledná/-ý"
+
+msgid "previous"
+msgstr "Predchádzajúca/-i"
+
+msgid "next"
+msgstr "Ďalšia/-í"
+
+msgid "select"
+msgstr "Výber"
+
+msgid "selection"
+msgstr "Výber"
+
+msgid "all"
+msgstr "Všetko"
+
+msgid "none"
+msgstr "Nič"
+
+msgid "currpage"
+msgstr "Aktuálna stránka"
+
+msgid "isread"
+msgstr "Prečítané"
+
+msgid "unread"
+msgstr "Neprečítané"
+
+msgid "flagged"
+msgstr "Označené príznakom"
+
+msgid "unflagged"
+msgstr "Neoznačené príznakom"
+
+msgid "unanswered"
+msgstr "Bez odpovede"
+
+msgid "withattachment"
+msgstr "S prílohou"
+
+msgid "deleted"
+msgstr "Vymazané"
+
+msgid "undeleted"
+msgstr "Nevymazané"
+
+msgid "replied"
+msgstr "Odpovedané"
+
+msgid "forwarded"
+msgstr "Preposlané"
+
+msgid "invert"
+msgstr "Obrátiť"
+
+msgid "filter"
+msgstr "Filter"
+
+msgid "list"
+msgstr "Zoznam"
+
+msgid "threads"
+msgstr "Konverzácie"
+
+msgid "expand-all"
+msgstr "Rozbaliť všetko"
+
+msgid "expand-unread"
+msgstr "Rozbaliť neprečítané"
+
+msgid "collapse-all"
+msgstr "Zbaliť všetko"
+
+msgid "threaded"
+msgstr "Spojené do konverzácií"
+
+msgid "showunread"
+msgstr "Zobraziť neprečítané správy"
+
+msgid "autoexpand_threads"
+msgstr "Rozbaliť konverzácie"
+
+msgid "do_expand"
+msgstr "všetky"
+
+msgid "expand_only_unread"
+msgstr "len s neprečítanými správami"
+
+msgid "fromto"
+msgstr "Od/Komu"
+
+msgid "flag"
+msgstr "Značka"
+
+msgid "attachment"
+msgstr "Príloha"
+
+msgid "nonesort"
+msgstr "Žiadne"
+
+msgid "sentdate"
+msgstr "Dátum odoslania"
+
+msgid "arrival"
+msgstr "Dátum prijatia"
+
+msgid "asc"
+msgstr "vzostupne"
+
+msgid "desc"
+msgstr "zostupne"
+
+msgid "listcolumns"
+msgstr "Stĺpce"
+
+msgid "listsorting"
+msgstr "Zoraďovanie"
+
+msgid "listorder"
+msgstr "Systém zoraďovania"
+
+msgid "listmode"
+msgstr "Režim zobrazenia zoznamu"
+
+msgid "lmode"
+msgstr "Režim zoznamu"
+
+msgid "layout"
+msgstr "Rozloženie"
+
+msgid "layoutwidescreen"
+msgstr "Na šírku obrazovky"
+
+msgid "layoutdesktop"
+msgstr "Desktop"
+
+msgid "layoutlist"
+msgstr "Zoznam"
+
+msgid "layoutwidescreendesc"
+msgstr "Na šírku obrazovky (zobrazenie 3 stĺpcov)"
+
+msgid "layoutdesktopdesc"
+msgstr "Plocha (široký zoznam a dole náhľad na správu)"
+
+msgid "layoutlistdesc"
+msgstr "Zoznam (žiadny náhľad na správu)"
+
+msgid "folderactions"
+msgstr "Akcie pre priečinky..."
+
+msgid "compact"
+msgstr "Zhustiť"
+
+msgid "empty"
+msgstr "Vyprázdniť"
+
+msgid "importmessages"
+msgstr "Importovať správy"
+
+msgid "mailimportdesc"
+msgstr ""
+"E-mail môžete nahrať s použitím súborov vo formáte <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> alebo "
+"<a href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>."
+
+msgid "mailimportzip"
+msgstr "Viaceré súbory je možné skomprimovať do archívov ZIP."
+
+msgid "quota"
+msgstr "Úložné miesto"
+
+msgid "unknown"
+msgstr "neznáme"
+
+msgid "unlimited"
+msgstr "neobmedzené"
+
+msgid "quotatype"
+msgstr "Typ kvóty"
+
+msgid "quotatotal"
+msgstr "Limit"
+
+msgid "quotaused"
+msgstr "Použité"
+
+msgid "quotastorage"
+msgstr "Priestor na disku"
+
+msgid "quotamessage"
+msgstr "Počet správ"
+
+msgid "shortheaderdate"
+msgstr "Dňa: $date"
+
+msgid "shortheaderto"
+msgstr "Komu: $to dňa $date"
+
+msgid "shortheaderfrom"
+msgstr "Od: $from dňa $date"
+
+msgid "quicksearch"
+msgstr "Rýchle vyhľadávanie"
+
+msgid "searchplaceholder"
+msgstr "Vyhľadať..."
+
+msgid "resetsearch"
+msgstr "Reset vyhľadávania"
+
+msgid "searchmod"
+msgstr "Zmeniť kritériá vyhľadávania"
+
+msgid "msgtext"
+msgstr "Celá správa"
+
+msgid "body"
+msgstr "Telo (obsah)"
+
+msgid "type"
+msgstr "Typ"
+
+msgid "namex"
+msgstr "Meno"
+
+msgid "searchscope"
+msgstr "Rozsah"
+
+msgid "currentfolder"
+msgstr "Aktuálny priečinok"
+
+msgid "subfolders"
+msgstr "Tento a podpriečinky"
+
+msgid "allfolders"
+msgstr "Všetky priečinky"
+
+msgid "searchinterval-1W"
+msgstr "staršie ako týždeň"
+
+msgid "searchinterval-1M"
+msgstr "staršie ako mesiac"
+
+msgid "searchinterval-1Y"
+msgstr "staršie ako rok"
+
+msgid "searchinterval1W"
+msgstr "nie staršie ako týždeň"
+
+msgid "searchinterval1M"
+msgstr "nie staršie ako mesiac"
+
+msgid "searchinterval1Y"
+msgstr "nie staršie ako rok"
+
+msgid "infolder"
+msgstr "Priečinok: $folder"
+
+msgid "currentaddressbook"
+msgstr "Aktuálny adresár"
+
+msgid "alladdressbooks"
+msgstr "Všetky adresáre"
+
+msgid "openinextwin"
+msgstr "Otvoriť v novom okne"
+
+msgid "emlsave"
+msgstr "Stiahnuť (.eml)"
+
+msgid "changeformattext"
+msgstr "Zobraziť vo formáte čistého textu"
+
+msgid "changeformathtml"
+msgstr "Zobraziť vo formáte HTML"
+
+msgid "editasnew"
+msgstr "Upraviť ako novú správu"
+
+msgid "send"
+msgstr "Odoslať"
+
+msgid "sendmessage"
+msgstr "Odoslať správu"
+
+msgid "savemessage"
+msgstr "Uložiť správu ako koncept"
+
+msgid "addattachment"
+msgstr "Priložiť súbor"
+
+msgid "charset"
+msgstr "Znaková sada"
+
+msgid "editortype"
+msgstr "Typ editora"
+
+msgid "returnreceipt"
+msgstr "Potvrdenie o doručení"
+
+msgid "dsn"
+msgstr "Oznámenie o stave doručenia"
+
+msgid "keepformatting"
+msgstr "Zachovať formátovanie"
+
+msgid "mailreplyintro"
+msgstr "Dňa $date $sender napísal(a):"
+
+msgid "originalmessage"
+msgstr "Pôvodná správa"
+
+msgid "selectimage"
+msgstr "Vybrať obrázok"
+
+msgid "addimage"
+msgstr "Pridať obrázok"
+
+msgid "selectmedia"
+msgstr "Vybrať film"
+
+msgid "addmedia"
+msgstr "Pridať film"
+
+msgid "encrypt"
+msgstr "Zašifrovať"
+
+msgid "encryptmessage"
+msgstr "Zašifrovať správu"
+
+msgid "encryptmessagemailvelope"
+msgstr "Zašifrovať správu pomocou Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Importovať verejné kľúče"
+
+msgid "encryptedsendialog"
+msgstr "Odosielanie zašifrovanej správy"
+
+msgid "encryptandsign"
+msgstr "Zašifrovať a podpísať"
+
+msgid "keyid"
+msgstr "ID kľúča"
+
+msgid "keylength"
+msgstr "Bity"
+
+msgid "keyexpired"
+msgstr "Expirované"
+
+msgid "keyrevoked"
+msgstr "Odvolané"
+
+msgid "bccinstead"
+msgstr "Použiť skrytú kópiu"
+
+msgid "addheader"
+msgstr "Pridať pole (Kópia, Skrytá kópia...)"
+
+msgid "insert"
+msgstr "Vložiť"
+
+msgid "insertcontact"
+msgstr "Vložiť kontakt(y)"
+
+msgid "recipient"
+msgstr "Príjemca"
+
+msgid "recipientedit"
+msgstr "Úprava príjemcu"
+
+msgid "editidents"
+msgstr "Upraviť identitu odosielateľa"
+
+msgid "spellcheck"
+msgstr "Pravopis"
+
+msgid "checkspelling"
+msgstr "Skontrolovať pravopis"
+
+msgid "resumeediting"
+msgstr "Pokračovať v úpravách"
+
+msgid "revertto"
+msgstr "Vrátiť sa na"
+
+msgid "restore"
+msgstr "Obnoviť"
+
+msgid "restoremessage"
+msgstr "Obnoviť správu?"
+
+msgid "ignore"
+msgstr "Ignorovať"
+
+msgid "responses"
+msgstr "Odpovede"
+
+msgid "insertresponse"
+msgstr "Vložiť odpoveď"
+
+msgid "manageresponses"
+msgstr "Spravovať odpovede"
+
+msgid "newresponse"
+msgstr "Vytvoriť novú odpoveď"
+
+msgid "addresponse"
+msgstr "Pridať odpoveď"
+
+msgid "editresponse"
+msgstr "Upraviť odpoveď"
+
+msgid "editresponses"
+msgstr "Upraviť odpovede"
+
+msgid "responsename"
+msgstr "Meno"
+
+msgid "responsetext"
+msgstr "Text odpovede"
+
+msgid "attach"
+msgstr "Priložiť"
+
+msgid "attachments"
+msgstr "Prílohy"
+
+msgid "upload"
+msgstr "Nahrať"
+
+msgid "uploadprogress"
+msgstr "$percent ($current z $total)"
+
+msgid "close"
+msgstr "Zatvoriť"
+
+msgid "messageoptions"
+msgstr "Nastavenia správy..."
+
+msgid "togglecomposeoptions"
+msgstr "Prepnúť možnosti kompozície"
+
+msgid "attachmentrename"
+msgstr "Premenovať prílohu"
+
+msgid "low"
+msgstr "Nízka"
+
+msgid "lowest"
+msgstr "Najnižšia"
+
+msgid "normal"
+msgstr "Normálna"
+
+msgid "high"
+msgstr "Vysoká"
+
+msgid "highest"
+msgstr "Najvyššia"
+
+msgid "nosubject"
+msgstr "(bez predmetu)"
+
+msgid "showimages"
+msgstr "Zobraziť obrázky"
+
+msgid "allow"
+msgstr "Povoliť"
+
+msgid "alwaysshow"
+msgstr "Vždy zobraziť obrázky od odosielateľa $sender"
+
+msgid "alwaysallow"
+msgstr "Vždy povoliť od $sender"
+
+msgid "isdraft"
+msgstr "Toto je koncept"
+
+msgid "andnmore"
+msgstr "Počet ďalších: $nr..."
+
+msgid "details"
+msgstr "Podrobnosti"
+
+msgid "summary"
+msgstr "Zhrnutie"
+
+msgid "headers"
+msgstr "Hlavičky"
+
+msgid "allheaders"
+msgstr "Všetky hlavičky..."
+
+msgid "togglemoreheaders"
+msgstr "Zobraziť viac hlavičiek správ"
+
+msgid "togglefullheaders"
+msgstr "Prepnúť zobrazenie úplných hlavičiek správ"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Čistý text"
+
+msgid "savesentmessagein"
+msgstr "Uložiť odoslanú správu do"
+
+msgid "dontsave"
+msgstr "neukladať"
+
+msgid "maxuploadsize"
+msgstr "Maximálna povolená veľkosť súboru je $size"
+
+msgid "addcc"
+msgstr "Pridať kópiu"
+
+msgid "addbcc"
+msgstr "Pridať skrytú kopiu"
+
+msgid "addreplyto"
+msgstr "Pridať pole Odpovedať na"
+
+msgid "addfollowupto"
+msgstr "Pridať pole Preposlať na"
+
+msgid "sendreceipt"
+msgstr "Odoslať potvrdenie o prečítaní?"
+
+msgid "mdnrequest"
+msgstr ""
+"Odosielateľ tejto správy chce byť informovaný o tom, že ste túto správu "
+"čítali. Chcete mu potvrdiť prijatie správy?"
+
+msgid "receiptread"
+msgstr "Potvrdenie o doručení (a prečítaní) správy"
+
+msgid "yourmessage"
+msgstr "Toto je potvrdenie o doručení vašej správy"
+
+msgid "receiptnote"
+msgstr ""
+"Poznámka: Toto potvrdenie znamená len to, že správa sa zobrazila na počítači"
+" príjemcu. Nie je však zaručené, že príjemca správu čítal a porozumel jej "
+"obsahu."
+
+msgid "sendalwaysto"
+msgstr "Vždy odoslať na $email"
+
+msgid "zoomin"
+msgstr "Priblížiť"
+
+msgid "zoomout"
+msgstr "Oddialiť"
+
+msgid "rotate"
+msgstr "Otočiť"
+
+msgid "increaseimage"
+msgstr "Zväčšiť veľkosť obrázka"
+
+msgid "decreaseimage"
+msgstr "Zmenšiť veľkosť obrázka"
+
+msgid "rotateimage"
+msgstr "Otočiť obrázok"
+
+msgid "showtools"
+msgstr "Zobraziť nástroje pre obrázok"
+
+msgid "hidetools"
+msgstr "Skryť nástroje pre obrázok"
+
+msgid "name"
+msgstr "Zobrazované meno"
+
+msgid "firstname"
+msgstr "Meno"
+
+msgid "surname"
+msgstr "Priezvisko"
+
+msgid "middlename"
+msgstr "Stredná časť mena"
+
+msgid "nameprefix"
+msgstr "Titul"
+
+msgid "namesuffix"
+msgstr "Dodatok za menom"
+
+msgid "nickname"
+msgstr "Prezývka"
+
+msgid "jobtitle"
+msgstr "Označenie povolania"
+
+msgid "department"
+msgstr "Oddelenie/firma/zastúpenie"
+
+msgid "gender"
+msgstr "Pohlavie"
+
+msgid "maidenname"
+msgstr "Rodné priezvisko"
+
+msgid "email"
+msgstr "E-mail"
+
+msgid "phone"
+msgstr "Telefón"
+
+msgid "address"
+msgstr "Adresa"
+
+msgid "street"
+msgstr "Ulica"
+
+msgid "locality"
+msgstr "Mesto"
+
+msgid "zipcode"
+msgstr "PSČ"
+
+msgid "region"
+msgstr "Región"
+
+msgid "country"
+msgstr "Krajina"
+
+msgid "birthday"
+msgstr "Narodeniny"
+
+msgid "anniversary"
+msgstr "Výročie"
+
+msgid "website"
+msgstr "Internetová stránka"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Poznámky"
+
+msgid "male"
+msgstr "muž"
+
+msgid "female"
+msgstr "žena"
+
+msgid "nonbinary"
+msgstr "nebinárne"
+
+msgid "othergender"
+msgstr "iné"
+
+msgid "manager"
+msgstr "Manažér"
+
+msgid "assistant"
+msgstr "Asistent"
+
+msgid "spouse"
+msgstr "Partner/ka"
+
+msgid "allfields"
+msgstr "Všetky polia"
+
+msgid "search"
+msgstr "Hľadať"
+
+msgid "searchresult"
+msgstr "Výsledok vyhľadávania"
+
+msgid "advsearch"
+msgstr "Rozšírené vyhľadávanie"
+
+msgid "advanced"
+msgstr "Rozšírené"
+
+msgid "other"
+msgstr "Ostatné"
+
+msgid "printcontact"
+msgstr "Vytlačiť kontakt"
+
+msgid "qrcode"
+msgstr "QR kód"
+
+msgid "typehome"
+msgstr "Domov"
+
+msgid "typework"
+msgstr "Práca"
+
+msgid "typeother"
+msgstr "Iné"
+
+msgid "typemobile"
+msgstr "Mobilný telefón"
+
+msgid "typemain"
+msgstr "Hlavné číslo"
+
+msgid "typehomefax"
+msgstr "Fax - domov"
+
+msgid "typeworkfax"
+msgstr "Fax - práca"
+
+msgid "typecar"
+msgstr "Auto"
+
+msgid "typepager"
+msgstr "Pager"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Asistent"
+
+msgid "typehomepage"
+msgstr "Domovská stránka"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Pridať pole..."
+
+msgid "addcontact"
+msgstr "Pridať kontakt"
+
+msgid "editcontact"
+msgstr "Upraviť kontakt"
+
+msgid "contacts"
+msgstr "Kontakty"
+
+msgid "contactproperties"
+msgstr "Vlastnosti kontaktu"
+
+msgid "contactnameandorg"
+msgstr "Názov a organizácia"
+
+msgid "personalinfo"
+msgstr "Osobné informácie"
+
+msgid "personal"
+msgstr "Osobné"
+
+msgid "contactphoto"
+msgstr "Fotografia kontaktu"
+
+msgid "edit"
+msgstr "Upraviť"
+
+msgid "cancel"
+msgstr "Zrušiť"
+
+msgid "save"
+msgstr "Uložiť"
+
+msgid "delete"
+msgstr "Vymazať"
+
+msgid "discard"
+msgstr "Vyhodiť"
+
+msgid "continue"
+msgstr "Pokračovať"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Premenovať"
+
+msgid "addphoto"
+msgstr "Pridať fotografiu"
+
+msgid "replacephoto"
+msgstr "Nahradiť fotografiu"
+
+msgid "uploadphoto"
+msgstr "Nahrať fotografiu"
+
+msgid "choosefile"
+msgstr "Vybrať súbor..."
+
+msgid "choosefiles"
+msgstr "Vybrať súbory..."
+
+msgid "browse"
+msgstr "Prehľadávať"
+
+msgid "newcontact"
+msgstr "Vytvoriť nový kontakt"
+
+msgid "deletecontact"
+msgstr "Vymazať vybrané kontakty"
+
+msgid "composeto"
+msgstr "Vytvoriť správu pre"
+
+msgid "contactsfromto"
+msgstr "Kontakty: $from – $to, z $count"
+
+msgid "print"
+msgstr "Tlač"
+
+msgid "export"
+msgstr "Exportovať"
+
+msgid "exportall"
+msgstr "Exportovať všetko"
+
+msgid "exportsel"
+msgstr "Exportovať vybrané"
+
+msgid "exportvcards"
+msgstr "Exportovať kontakty vo formáte vCard"
+
+msgid "newgroup"
+msgstr "Vytvoriť novú skupinu"
+
+msgid "addgroup"
+msgstr "Pridať skupinu"
+
+msgid "grouprename"
+msgstr "Premenovať skupinu"
+
+msgid "groupdelete"
+msgstr "Vymazať skupinu"
+
+msgid "groupassign"
+msgstr "Prideliť k skupine..."
+
+msgid "groupremove"
+msgstr "Odstrániť zo skupiny"
+
+msgid "groupremoveselected"
+msgstr "Odstrániť vybrané kontakty zo skupiny"
+
+msgid "uponelevel"
+msgstr "O jednu úroveň nahor"
+
+msgid "previouspage"
+msgstr "Zobraziť predchádzajúcu stranu"
+
+msgid "firstpage"
+msgstr "Zobraziť prvú stranu"
+
+msgid "nextpage"
+msgstr "Zobraziť nasledujúcu stranu"
+
+msgid "lastpage"
+msgstr "Zobraziť poslednú stranu"
+
+msgid "group"
+msgstr "Skupina"
+
+msgid "groups"
+msgstr "Skupiny"
+
+msgid "listgroup"
+msgstr "Zoznam členov skupiny"
+
+msgid "personaladrbook"
+msgstr "Osobné adresy"
+
+msgid "searchsave"
+msgstr "Uložiť výsledky vyhľadávania"
+
+msgid "searchdelete"
+msgstr "Vymazať výsledky vyhľadávania"
+
+msgid "import"
+msgstr "Import"
+
+msgid "importcontacts"
+msgstr "Importovať kontakty"
+
+msgid "importfromfile"
+msgstr "Importovať zo súboru"
+
+msgid "importtarget"
+msgstr "Pridať kontakty do"
+
+msgid "importreplace"
+msgstr "Nahradiť celý adresár kontaktov"
+
+msgid "importgroups"
+msgstr "Importovať priradenia do skupín"
+
+msgid "importgroupsall"
+msgstr "Všetky (vytvoriť skupiny ak je to potrebné)"
+
+msgid "importgroupsexisting"
+msgstr "Len pre existujúce skupiny"
+
+msgid "importdesc"
+msgstr ""
+"Môžete nahrať kontakty z existujúceho adresára. <br/>Momentálne podporujeme "
+"import adries z formátu <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> alebo CSV (údaje "
+"oddeľované čiarkou)."
+
+msgid "importmapdesc"
+msgstr ""
+"Skôr než budete pokračovať v importovaní údajov vo formáte CSV (údaje "
+"oddeľované čiarkou), potvrďte správnosť informácie o priradení polí."
+
+msgid "fieldnotmapped"
+msgstr "Pole nie je priradené (neimportuje sa)"
+
+msgid "skipheader"
+msgstr "Neimportovať prvý riadok (hlavičky)"
+
+msgid "done"
+msgstr "Hotovo"
+
+msgid "birth_day"
+msgstr "Deň narodenia"
+
+msgid "birth_month"
+msgstr "Mesiac narodenia"
+
+msgid "birth_year"
+msgstr "Rok narodenia"
+
+msgid "settingsfor"
+msgstr "Nastavenia pre"
+
+msgid "about"
+msgstr "O systéme"
+
+msgid "preferences"
+msgstr "Nastavenia"
+
+msgid "userpreferences"
+msgstr "Používateľské nastavenia"
+
+msgid "editpreferences"
+msgstr "Upraviť používateľské nastavenia"
+
+msgid "identities"
+msgstr "Identity"
+
+msgid "manageidentities"
+msgstr "Spravovať identity"
+
+msgid "newidentity"
+msgstr "Vytvoriť novú identitu"
+
+msgid "addidentity"
+msgstr "Pridať identitu"
+
+msgid "editidentity"
+msgstr "Upraviť identitu"
+
+msgid "identityencryption"
+msgstr "Šifrovanie"
+
+msgid "preferhtml"
+msgstr "Zobraziť HTML"
+
+msgid "defaultcharset"
+msgstr "Predvolené kódovanie"
+
+msgid "htmlmessage"
+msgstr "HTML správa"
+
+msgid "messagepart"
+msgstr "Časť"
+
+msgid "digitalsig"
+msgstr "Digitálny podpis"
+
+msgid "dateformat"
+msgstr "Formát dátumu"
+
+msgid "timeformat"
+msgstr "Formát času"
+
+msgid "prettydate"
+msgstr "Krátke formáty dátumov"
+
+msgid "setdefault"
+msgstr "Nastaviť ako štandardné"
+
+msgid "autodetect"
+msgstr "Automaticky"
+
+msgid "language"
+msgstr "Jazyk"
+
+msgid "timezone"
+msgstr "Časová zóna"
+
+msgid "pagesize"
+msgstr "Počet záznamov na stránku"
+
+msgid "signature"
+msgstr "Podpis"
+
+msgid "dstactive"
+msgstr "Letný čas"
+
+msgid "showinextwin"
+msgstr "Otvoriť správu v novom okne"
+
+msgid "composeextwin"
+msgstr "Písať v novom okne"
+
+msgid "htmleditor"
+msgstr "Vytvárať HTML správy"
+
+msgid "htmlonreply"
+msgstr "len v odpovedi na HTML správu"
+
+msgid "htmlonreplyandforward"
+msgstr "pri odosielaní ďalej alebo pri odpovedi na HTML správu"
+
+msgid "htmlsignature"
+msgstr "HTML podpis"
+
+msgid "showemail"
+msgstr "Zobrazovať e-mailovú adresu so zobrazovaným menom"
+
+msgid "previewpane"
+msgstr "Zobraziť panel s náhľadom na správu"
+
+msgid "skin"
+msgstr "Vzhľad rozhrania"
+
+msgid "logoutclear"
+msgstr "Vyprázdniť kôš pri odhlásení"
+
+msgid "logoutcompact"
+msgstr "Zhustiť priečinok Doručená pošta pri odhlásení"
+
+msgid "uisettings"
+msgstr "Používateľské rozhranie"
+
+msgid "serversettings"
+msgstr "Nastavenia servera"
+
+msgid "mailboxview"
+msgstr "Zobrazenie schránky"
+
+msgid "mdnrequests"
+msgstr "Pri žiadosti o potvrdenie o doručení"
+
+msgid "askuser"
+msgstr "opýtať sa používateľa"
+
+msgid "autosend"
+msgstr "odoslať potvrdenie"
+
+msgid "autosendknown"
+msgstr "odoslať potvrdenie iba mojim kontaktom"
+
+msgid "autosendknownignore"
+msgstr "odoslať potvrdenie známym odosielateľom, inak ignorovať"
+
+msgid "autosendtrusted"
+msgstr "odoslať potvrdenie dôveryhodným odosielateľom, inak sa ma opýtať"
+
+msgid "autosendtrustedignore"
+msgstr "odoslať potvrdenie dôveryhodným odosielateľom, inak ignorovať"
+
+msgid "ignorerequest"
+msgstr "ignorovať požiadavku"
+
+msgid "readwhendeleted"
+msgstr "Označiť správu ako prečítanú pri jej vymazávaní"
+
+msgid "flagfordeletion"
+msgstr "Namiesto vymazania správy ju iba označiť ako vymazanú"
+
+msgid "skipdeleted"
+msgstr "Nezobrazovať vymazané správy"
+
+msgid "deletealways"
+msgstr "Vymazať správy, ak zlyhá ich presun do koša"
+
+msgid "deletejunk"
+msgstr "Hneď vymazávať správy v priečinku Nevyžiadaná pošta (spam)"
+
+msgid "showremoteimages"
+msgstr "Zobrazovať obrázky uložené mimo správy"
+
+msgid "allowremoteresources"
+msgstr "Povoliť vzdialené zdroje (obrázky, štýly)"
+
+msgid "fromknownsenders"
+msgstr "pri známych odosielateľoch"
+
+msgid "fromtrustedsenders"
+msgstr "od dôveryhodných odosielateľov"
+
+msgid "frommycontacts"
+msgstr "od mojich kontaktov"
+
+msgid "always"
+msgstr "vždy"
+
+msgid "alwaysbutplain"
+msgstr "vždy, okrem odpovedí na správy v čistom texte"
+
+msgid "showinlineimages"
+msgstr "Zobrazovať priložené obrázky pod správou"
+
+msgid "autosavedraft"
+msgstr "Automaticky uložiť koncept"
+
+msgid "everynminutes"
+msgstr "každých $n minút"
+
+msgid "refreshinterval"
+msgstr "Obnoviť (skontrolovať nové správy atď.)"
+
+msgid "never"
+msgstr "nikdy"
+
+msgid "immediately"
+msgstr "ihneď"
+
+msgid "messagesdisplaying"
+msgstr "Zobrazovanie správ"
+
+msgid "messagescomposition"
+msgstr "Vytváranie správ"
+
+msgid "mimeparamfolding"
+msgstr "Názvy príloh"
+
+msgid "2231folding"
+msgstr "Úplné RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Úplné RFC 2047 (iné)"
+
+msgid "force7bit"
+msgstr "Použiť kódovanie MIME pre 8-bitové znaky"
+
+msgid "savelocalstorage"
+msgstr "Uložiť v lokálnom úložisku prehliadača (dočasne)"
+
+msgid "advancedoptions"
+msgstr "Rozšírené nastavenia"
+
+msgid "toggleadvancedoptions"
+msgstr "Prepnúť pokročilé nastavenia"
+
+msgid "focusonnewmessage"
+msgstr "Aktivovať okno prehliadača pri novej správe"
+
+msgid "checkallfolders"
+msgstr "Kontrolovať nové správy vo všetkých priečinkoch"
+
+msgid "displaynext"
+msgstr "Po vymazaní/presune zobraziť ďalší záznam v zozname"
+
+msgid "defaultfont"
+msgstr "Predvolené písmo pre HTML správu"
+
+msgid "mainoptions"
+msgstr "Hlavné nastavenia"
+
+msgid "browseroptions"
+msgstr "Nastavenia prehliadania"
+
+msgid "section"
+msgstr "Sekcia"
+
+msgid "maintenance"
+msgstr "Údržba"
+
+msgid "newmessage"
+msgstr "Nová správa"
+
+msgid "signatureoptions"
+msgstr "Nastavenia podpísania"
+
+msgid "whenreplying"
+msgstr "Pri odpovedi"
+
+msgid "replyempty"
+msgstr "necitovať pôvodnú správu"
+
+msgid "replytopposting"
+msgstr "začať odpoveď nad citovanou správou"
+
+msgid "replytoppostingnoindent"
+msgstr "začať odpoveď nad citovanou správou (bez odsadenia)"
+
+msgid "replybottomposting"
+msgstr "začať odpoveď pod citovanou správou"
+
+msgid "replyremovesignature"
+msgstr "Pri odpovedaní odstrániť zo správy pôvodný podpis"
+
+msgid "autoaddsignature"
+msgstr "Automaticky pridať podpis"
+
+msgid "newmessageonly"
+msgstr "iba k novým správam"
+
+msgid "replyandforwardonly"
+msgstr "iba k odpovediam a preposielaným správam"
+
+msgid "insertsignature"
+msgstr "Vložiť podpis"
+
+msgid "sigbelow"
+msgstr "Podpis umiestniť pod citovanú správu"
+
+msgid "sigseparator"
+msgstr "Vynútiť si štandardné oddeľovače v podpisoch"
+
+msgid "automarkread"
+msgstr "Označiť správy ako prečítané"
+
+msgid "afternseconds"
+msgstr "po $n sekundách"
+
+msgid "reqmdn"
+msgstr "Vždy vyžadovať potvrdenie o doručení"
+
+msgid "reqdsn"
+msgstr "Vždy vyžadovať oznámenie o stave doručenia"
+
+msgid "alwayskeepformatting"
+msgstr "Vždy zachovať originálne formátovanie textu"
+
+msgid "replysamefolder"
+msgstr "Umiestňovať odpovede do rovnakého priečinka ako pôvodnú správu"
+
+msgid "defaultabook"
+msgstr "Predvolený adresár kontaktov"
+
+msgid "autocompletesingle"
+msgstr "Vynechať alternatívne e-mailové adresy pri automatickom dopĺňaní"
+
+msgid "listnamedisplay"
+msgstr "Zobraziť kontakty ako"
+
+msgid "contactformmode"
+msgstr "Režim kontaktného formulára"
+
+msgid "privatemode"
+msgstr "Súkromný (doma)"
+
+msgid "businessmode"
+msgstr "Biznisový (práca)"
+
+msgid "collectedaddresses"
+msgstr "Zozbierané adresy"
+
+msgid "collectedrecipients"
+msgstr "Zozbieraní príjemcovia"
+
+msgid "collectedrecipientsopt"
+msgstr "Ukladať príjemcov odchádzajúcich e-mailov do"
+
+msgid "collectedsendersopt"
+msgstr "Ukladať dôveryhodných odosielateľov do"
+
+msgid "trustedsenders"
+msgstr "Dôveryhodní odosielatelia"
+
+msgid "spellcheckbeforesend"
+msgstr "Skontrolovať pravopis pred odoslaním správy"
+
+msgid "spellcheckoptions"
+msgstr "Nastavenia kontroly pravopisu"
+
+msgid "spellcheckignoresyms"
+msgstr "Ignorovať slová so symbolmi"
+
+msgid "spellcheckignorenums"
+msgstr "Ignorovať slová s číslami"
+
+msgid "spellcheckignorecaps"
+msgstr "Ignorovať slová písané iba veľkými písmenami"
+
+msgid "addtodict"
+msgstr "Pridať do slovníka"
+
+msgid "editoroptions"
+msgstr "Vlastnosti editora"
+
+msgid "enableautolink"
+msgstr "Automaticky konvertovať platné adresy URL na odkazy"
+
+msgid "mailtoprotohandler"
+msgstr "Zaregistrovať priradenie pre odkazy typu „mailto:“"
+
+msgid "standardwindows"
+msgstr "S vyskakovacími oknami pracovať ako so štandardnými oknami"
+
+msgid "forwardmode"
+msgstr "Odosielanie správ ďalej"
+
+msgid "inline"
+msgstr "vo vnútri správy"
+
+msgid "asattachment"
+msgstr "ako príloha"
+
+msgid "replyallmode"
+msgstr "Predvolená akcia pre tlačidlo [Odpovedať všetkým]"
+
+msgid "replyalldefault"
+msgstr "odpovedať všetkým"
+
+msgid "replyalllist"
+msgstr "odpovedať len do mailing-listu (ak bol nájdený)"
+
+msgid "allmessages"
+msgstr "všetky správy"
+
+msgid "olderxdays"
+msgstr "staršie ako $x dní"
+
+msgid "folder"
+msgstr "Priečinok"
+
+msgid "folders"
+msgstr "Priečinky"
+
+msgid "foldername"
+msgstr "Názov priečinka"
+
+msgid "subscribed"
+msgstr "Odber aktívny"
+
+msgid "messagecount"
+msgstr "Správy"
+
+msgid "create"
+msgstr "Vytvoriť"
+
+msgid "createfolder"
+msgstr "Vytvoriť nový priečinok"
+
+msgid "managefolders"
+msgstr "Spravovať priečinky"
+
+msgid "specialfolders"
+msgstr "Špeciálne priečinky"
+
+msgid "properties"
+msgstr "Vlastnosti"
+
+msgid "folderproperties"
+msgstr "Vlastnosti priečinka"
+
+msgid "parentfolder"
+msgstr "Rodičovský priečinok"
+
+msgid "location"
+msgstr "Umiestnenie"
+
+msgid "info"
+msgstr "Informácia"
+
+msgid "getfoldersize"
+msgstr "Na zistenie veľkosti priečinka kliknite sem"
+
+msgid "changesubscription"
+msgstr "Na zmenu odberu kliknite sem"
+
+msgid "foldertype"
+msgstr "Typ priečinka"
+
+msgid "personalfolder"
+msgstr "Súkromný priečinok"
+
+msgid "otherfolder"
+msgstr "Iné priečinky používateľa"
+
+msgid "sharedfolder"
+msgstr "Verejný priečinok"
+
+msgid "findfolders"
+msgstr "Hľadať priečinky"
+
+msgid "findcontacts"
+msgstr "Nájsť kontakty"
+
+msgid "findmail"
+msgstr "Nájsť e-mailové správy"
+
+msgid "namespace.personal"
+msgstr "Osobné"
+
+msgid "namespace.other"
+msgstr "Iní používatelia"
+
+msgid "namespace.shared"
+msgstr "Zdieľané"
+
+msgid "dualuselabel"
+msgstr "Môže obsahovať len"
+
+msgid "dualusemail"
+msgstr "spr."
+
+msgid "dualusefolder"
+msgstr "prieč."
+
+msgid "generate"
+msgstr "Vygenerovať"
+
+msgid "encryptioncreatekey"
+msgstr "Vytvoriť nový pár kľúčov"
+
+msgid "openmailvelopesettings"
+msgstr "Otvoriť nastavenia Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Vo vašej súprave kľúčov Mailvelope máte uložených $nr zodpovedajúcich "
+"súkromných kľúčov."
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Pre túto identitu odosielateľa ešte nemáte v rozšírení Mailvelope uložený "
+"žiadny súkromný kľúč PGP. Chcete nejaký vytvoriť, aby bolo možné aktivovať "
+"posielanie zašifrovaných správ?"
+
+msgid "encryption"
+msgstr "Šifrovanie"
+
+msgid "mailvelopeoptions"
+msgstr "Možnosti Mailvelope"
+
+msgid "mailvelopemainkeyring"
+msgstr "Použiť hlavnú kľúčenku Mailvelope"
+
+msgid "mailvelopenotfound"
+msgstr ""
+"Vo vašom prehliadači nie je zapnuté/nainštalovať rozšírenie Mailvelope."
+
+msgid "mailvelopeenable"
+msgstr "Zapnúť"
+
+msgid "sortby"
+msgstr "Zoradiť podľa"
+
+msgid "sortasc"
+msgstr "Zoradiť vzostupne"
+
+msgid "sortdesc"
+msgstr "Zoradiť zostupne"
+
+msgid "undo"
+msgstr "Späť"
+
+msgid "installedplugins"
+msgstr "Nainštalované prídavné moduly"
+
+msgid "plugin"
+msgstr "Zásuvný modul"
+
+msgid "version"
+msgstr "Verzia"
+
+msgid "source"
+msgstr "Zdrojový kód"
+
+msgid "destination"
+msgstr "Cieľ"
+
+msgid "license"
+msgstr "Licencia"
+
+msgid "skinauthor"
+msgstr "od: $author"
+
+msgid "support"
+msgstr "Podpora"
+
+msgid "savedsearches"
+msgstr "Uložené vyhľadávania"
+
+msgid "dateformatY"
+msgstr "RRRR"
+
+msgid "dateformaty"
+msgstr "RR"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Angličtina"
+
+msgid "westerneuropean"
+msgstr "Západoeurópske"
+
+msgid "easterneuropean"
+msgstr "Východoeurópske"
+
+msgid "southeasterneuropean"
+msgstr "Juho-východná Európa"
+
+msgid "baltic"
+msgstr "Baltština"
+
+msgid "cyrillic"
+msgstr "Cyrilika"
+
+msgid "arabic"
+msgstr "Arabsky"
+
+msgid "greek"
+msgstr "Grécky"
+
+msgid "hebrew"
+msgstr "Hebrejsky"
+
+msgid "turkish"
+msgstr "Turecky"
+
+msgid "nordic"
+msgstr "Nórsky"
+
+msgid "thai"
+msgstr "Thajsky"
+
+msgid "celtic"
+msgstr "Keltština"
+
+msgid "vietnamese"
+msgstr "Vietnamčina"
+
+msgid "japanese"
+msgstr "Japonsky"
+
+msgid "korean"
+msgstr "Kórejsky"
+
+msgid "chinese"
+msgstr "Čínsky"
+
+msgid "arialabeltopnav"
+msgstr "Ovládanie okna"
+
+msgid "arialabeltasknav"
+msgstr "Úlohy aplikácie"
+
+msgid "arialabeltoolbar"
+msgstr "Panel nástrojov aplikácie"
+
+msgid "arialabellistnav"
+msgstr "Zoznam navigovania"
+
+msgid "arialabelactivetask"
+msgstr "Aktívna úloha"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Filter zoznamu e-mailov"
+
+msgid "arialabelmailsearchform"
+msgstr "Formulár pre vyhľadanie e-mailu"
+
+msgid "arialabelcontactsearchform"
+msgstr "Formulár pre vyhľadávanie kontaktov"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Vstup pre vyhľadávanie e-mailu"
+
+msgid "arialabelquicksearchbox"
+msgstr "Vstup pre vyhľadávanie"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Filter pre zoznam priečinkov"
+
+msgid "arialabelfoldersearchform"
+msgstr "Formulár pre vyhľadávanie priečinkov"
+
+msgid "arialabelfolderlist"
+msgstr "Výber priečinka s e-mailovými správami"
+
+msgid "arialabelmessagelist"
+msgstr "Zoznam e-mailových správ"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Náhľad správy"
+
+msgid "arialabelmailboxmenu"
+msgstr "Menu akcií pre priečinok"
+
+msgid "arialabellistselectmenu"
+msgstr "Menu pre výber zoznamu"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Menu pre zoznam vlákien"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Nastavenia zobrazenia a triedenia zoznamu správ"
+
+msgid "arialabelmailimportdialog"
+msgstr "Dialóg pre import správy"
+
+msgid "arialabelmessagenav"
+msgstr "Navigácia správy"
+
+msgid "arialabelmessagebody"
+msgstr "Telo správy"
+
+msgid "arialabelmessageactions"
+msgstr "Akcie správy"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Formulár pre vyhľadanie kontaktov"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Vstup pre vyhľadávanie kontaktov"
+
+msgid "arialabelmessageheaders"
+msgstr "Hlavičky správ"
+
+msgid "arialabelforwardingoptions"
+msgstr "Nastavenia preposielania"
+
+msgid "arialabelreplyalloptions"
+msgstr "Nastavenia pre „Odpovedať všetkým“"
+
+msgid "arialabelmoremessageactions"
+msgstr "Viac akcií so správou"
+
+msgid "arialabelmorecontactactions"
+msgstr "Viac akcií pre kontakt"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Označiť vybrané správy ako"
+
+msgid "arialabelcomposeoptions"
+msgstr "Nastavenia kompozície"
+
+msgid "arialabelresponsesmenu"
+msgstr "Menu pre preddefinované odpovede"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Formulár pre odoslanie prílohy"
+
+msgid "arialabelattachmentmenu"
+msgstr "Nastavenia prílohy"
+
+msgid "arialabelmailtomenu"
+msgstr "Možnosti pre e-mailovú adresu"
+
+msgid "arialabelattachmentpreview"
+msgstr "Náhľad prílohy"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Zoznam kontaktov a skupín pre výber príjemcov"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Nastavenia exportu kontaktov"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Nastavenia adresára/skupiny"
+
+msgid "arialabelpreferencesform"
+msgstr "Formulár s nastaveniami"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Formulár pre úpravu identity"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Formulár pre úpravu odpovede"
+
+msgid "arialabelsearchterms"
+msgstr "Vyhľadávanie položiek"
+
+msgid "arialabeldropactionmenu"
+msgstr "Menu akcií typu Ťahaj a pusť"
+
+msgid "arialabelheadersmenu"
+msgstr "Menu pre pridanie príjemcu (hlavičky)"
+
+msgid "arialabelimagetools"
+msgstr "Nástroje pre obrázok"
+
+msgid "helplistnavigation"
+msgstr "Zoznam navigovania pomocou klávesnice"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Šípky nahor/nadol: presunúť zvýraznenie/výber.\n"
+"Medzerník: vybrať zvýraznený riadok.\n"
+"Shift + nahor/nadol: vybrať ďalší riadok hore/dole.\n"
+"Ctrl + medzerník: pridať zvýraznený riadok do výberu/odstrániť ho z výberu."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Šípky doprava/doľava: rozbaliť/zbaliť vlákno správy (len v režime pre vlákna).\n"
+"Enter: otvoriť vybranú/zvýraznenú správu.\n"
+"Delete: presunúť vybrané správy do koša."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Otvoriť vybraný/zvýraznený kontakt."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Vyskytla sa chyba!"
+
+msgid "messages.loginfailed"
+msgstr "Prihlasovanie bolo neúspešné."
+
+msgid "messages.cookiesdisabled"
+msgstr ""
+"Váš internetový prehliadač nepodporuje cookies, ktoré sú potrebné na "
+"prihlásenie."
+
+msgid "messages.sessionerror"
+msgstr "Vaša relácia nie je platná alebo vypršala jej platnosť."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Bola zistená nezhoda cookie. Prosím vyčistite súbory cookies vo vašom "
+"prehliadači."
+
+msgid "messages.storageerror"
+msgstr "Nepodarilo sa spojiť s úložným serverom."
+
+msgid "messages.servererror"
+msgstr "Chyba servera!"
+
+msgid "messages.servererrormsg"
+msgstr "Chyba servera: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+"Bolo vykonaných príliš veľa neúspešných pokusov o prihlásenie. Skúste to "
+"prosím neskôr."
+
+msgid "messages.connerror"
+msgstr "Chyba pri pripájaní (nepodarilo sa spojiť so serverom)!"
+
+msgid "messages.dberror"
+msgstr "Chyba databázy!"
+
+msgid "messages.dbconnerror"
+msgstr "Nemožno sa pripojiť k databáze!"
+
+msgid "messages.windowopenerror"
+msgstr "Bolo zablokované vyskakovacie okno!"
+
+msgid "messages.requesttimedout"
+msgstr "Čas na vykonanie požiadavky uplynul"
+
+msgid "messages.errorreadonly"
+msgstr "Akciu nemožno vykonať. Priečinok je určený len na čítanie."
+
+msgid "messages.errornoperm"
+msgstr "Akciu nemožno vykonať. Prístup bol odmietnutý."
+
+msgid "messages.erroroverquota"
+msgstr "Akciu nemožno vykonať. Nie je dostatok voľného miesta."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Nie je dostatok voľného miesta. Vymažte nejakú správu pomocou klávesov "
+"SHIFT+DEL."
+
+msgid "messages.invalidrequest"
+msgstr "Neplatná požiadavka! Neuložili sa žiadne údaje."
+
+msgid "messages.invalidhost"
+msgstr "Neplatný názov servera."
+
+msgid "messages.nomessagesfound"
+msgstr "V tomto priečinku nie je žiadna správa."
+
+msgid "messages.loggedout"
+msgstr "Relácia bola úspešne prerušená. Dovidenia!"
+
+msgid "messages.mailboxempty"
+msgstr "Schránka je prázdna"
+
+msgid "messages.nomessages"
+msgstr "Žiadne správy"
+
+msgid "messages.refreshing"
+msgstr "Obnovuje sa..."
+
+msgid "messages.loading"
+msgstr "Načítava sa..."
+
+msgid "messages.uploading"
+msgstr "Nahráva sa súbor..."
+
+msgid "messages.attaching"
+msgstr "Prikladá sa súbor..."
+
+msgid "messages.uploadingmany"
+msgstr "Nahrávajú sa súbory..."
+
+msgid "messages.loadingdata"
+msgstr "Načítavajú sa údaje..."
+
+msgid "messages.checkingmail"
+msgstr "Kontrolujú sa nové správy..."
+
+msgid "messages.sendingmessage"
+msgstr "Správa sa odosiela..."
+
+msgid "messages.messagesent"
+msgstr "Správa bola úspešne odoslaná."
+
+msgid "messages.savingmessage"
+msgstr "Správa sa ukladá..."
+
+msgid "messages.messagesaved"
+msgstr "Správa bola uložená ako koncept."
+
+msgid "messages.successfullysaved"
+msgstr "Ukladanie bolo úspešne dokončené."
+
+msgid "messages.savingresponse"
+msgstr "Ukladanie textu odpovede..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Naozaj chcete vymazať text odpovede?"
+
+msgid "messages.nocontactselected"
+msgstr "Ešte ste nevybrali žiadny kontakt."
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontakt bol pridaný do adresára."
+
+msgid "messages.contactexists"
+msgstr "Kontakt s takouto e-mailovou adresou už existuje."
+
+msgid "messages.contactnameexists"
+msgstr "Kontakt s takýmto menom už existuje."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Kvôli ochrane vášho súkromia boli v tejto správe zablokované vzdialené "
+"obrázky."
+
+msgid "messages.blockedresources"
+msgstr ""
+"Kvôli ochrane vášho súkromia boli zablokované vzdialené zdroje údajov."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Táto správa obsahuje podozrivé e-mailové adresy, ktoré môžu byť podvodné."
+
+msgid "messages.bccemail"
+msgstr "Správy odoslané ďalej obsahujú utajených príjemcov (skrytú kópiu)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Správa sa odošle bez akýchkoľvek úprav, napríklad s použitím pôvodného tela,"
+" hlavičiek a príjemcov."
+
+msgid "messages.encryptedmessage"
+msgstr "Táto správa je zašifrovaná, a nie je možné ju zobraziť. Prepáčte!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Táto správa je zašifrovaná a dešifrovať ju môžete pomocou rozšírenia vášho "
+"prehliadača."
+
+msgid "messages.nopubkeyfor"
+msgstr "Pre $email sa nenašiel žiadny platný verejný kľúč"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Pre vašu identitu odosielateľa sa nenašiel žiadny platný verejný kľúč. "
+"Chcete správu iba zašifrovať pre príjemcov?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Prílohy, ktoré ste už uložili na server, nie je možné zašifrovať. Prosím "
+"pridajte ich znovu, v editore pre šifrovanie."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Chcete vyhľadať servery s verejným kľúčom pre chýbajúce kľúče?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Našli sa nasledujúce verejné kľúče:"
+
+msgid "messages.keyservererror"
+msgstr "Nepodarilo sa získať kľúč zo servera pre kľúče."
+
+msgid "messages.keyimportsuccess"
+msgstr "Verejný kľúč $key bol úspešne importovaný do okruhu vašich kľúčov."
+
+msgid "messages.nocontactsfound"
+msgstr "Nenašli sa žiadne kontakty."
+
+msgid "messages.contactnotfound"
+msgstr "Požadovaný kontakt sa nenašiel."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Ak chcete vidieť kontakty z vybraného adresára, musíte použiť vyhľadávací "
+"formulár."
+
+msgid "messages.sendingfailed"
+msgstr "Nepodarilo sa odoslať správu."
+
+msgid "messages.senttooquickly"
+msgstr "Počkajte $sec sekúnd pred odoslaním tejto správy."
+
+msgid "messages.errorsavingsent"
+msgstr "Počas ukladania odoslanej správy sa vyskytla chyba."
+
+msgid "messages.errorsaving"
+msgstr "Počas ukladania sa vyskytla chyba."
+
+msgid "messages.errormoving"
+msgstr "Správu/správy nemožno presunúť."
+
+msgid "messages.errorcopying"
+msgstr "Správu/správy nemožno skopírovať,"
+
+msgid "messages.errordeleting"
+msgstr "Správu/správy nemožno vymazať."
+
+msgid "messages.errormarking"
+msgstr "Nemožno označiť správu/správy."
+
+msgid "messages.alerttitle"
+msgstr "Pozor"
+
+msgid "messages.confirmationtitle"
+msgstr "Naozaj..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Naozaj chcete vymazať vybrané kontakty?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Naozaj chcete vymazať vybranú skupinu?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Naozaj chcete vymazať vybrané správy?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Naozaj chcete vymazať tento priečinok?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Naozaj chcete presunúť tento priečinok?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Naozaj chcete vyprázdniť tento priečinok?"
+
+msgid "messages.contactdeleting"
+msgstr "Vymazávajú sa kontakty..."
+
+msgid "messages.groupdeleting"
+msgstr "Vymazáva sa skupina..."
+
+msgid "messages.folderdeleting"
+msgstr "Vymazáva sa priečinok ..."
+
+msgid "messages.foldermoving"
+msgstr "Presúva sa priečinok..."
+
+msgid "messages.foldersubscribing"
+msgstr "Prebieha prihlasovanie k priečinku..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Prebieha odhlasovanie z priečinka..."
+
+msgid "messages.formincomplete"
+msgstr "Formulár nie je kompletne vyplnený."
+
+msgid "messages.noemailwarning"
+msgstr "Prosím zadajte platnú e-mailovú adresu."
+
+msgid "messages.nonamewarning"
+msgstr "Prosím zadajte meno."
+
+msgid "messages.nopagesizewarning"
+msgstr "Prosím zadajte počet záznamov na stranu."
+
+msgid "messages.nosenderwarning"
+msgstr "Prosím zadajte e-mailovú adresu odosielateľa."
+
+msgid "messages.recipientsadded"
+msgstr "Pridanie príjemcu/príjemcov bolo úspešné."
+
+msgid "messages.norecipientwarning"
+msgstr "Prosím zadajte aspoň jedného príjemcu."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Všetci príjemcovia uvidia e-mailové adresy ostatných príjemcov. Ak tomu "
+"chcete zabrániť, môžete použiť pole Skrytá kópia."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Priveľa verejných príjemcov"
+
+msgid "messages.nosubjectwarning"
+msgstr "\"Predmet\" správy je prázdny. Chcete ho teraz zadať?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Bez predmetu"
+
+msgid "messages.nobodywarning"
+msgstr "Chcete odoslať správu bez textu?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Správa nebola odoslaná a obsahuje neuložené zmeny. Chcete vykonané zmeny "
+"zrušiť?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Našla sa staršia správa, ktorú ste napísali ale neodoslali.\\n\\nPredmet: "
+"$subject\\nUložené: $date\\n\\nChcete túto správu obnoviť?"
+
+msgid "messages.nosearchname"
+msgstr "Prosím zadajte meno alebo e-mailovú adresu kontaktu."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Ešte neboli nahrané všetky súbory. Prosím čakajte alebo nahrávanie zrušte."
+
+msgid "messages.searchsuccessful"
+msgstr "Nájdené správy: $nr."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Nájdené kontakty: $nr."
+
+msgid "messages.searchnomatch"
+msgstr "Hľadaný výraz sa nenašiel."
+
+msgid "messages.searching"
+msgstr "Vyhľadáva sa..."
+
+msgid "messages.checking"
+msgstr "Kontroluje sa..."
+
+msgid "messages.stillsearching"
+msgstr "Vyhľadávanie stále prebieha..."
+
+msgid "messages.nospellerrors"
+msgstr "Pri kontrole pravopisu neboli nájdené chyby."
+
+msgid "messages.folderdeleted"
+msgstr "Priečinok bol úspešne vymazaný."
+
+msgid "messages.foldersubscribed"
+msgstr "Prihlásenie k priečinku bolo úspešné."
+
+msgid "messages.folderunsubscribed"
+msgstr "Odhlásenie z priečinka bolo úspešné."
+
+msgid "messages.folderpurged"
+msgstr "Priečinok bol úspešne vyprázdnený."
+
+msgid "messages.folderexpunged"
+msgstr "Priečinok bol úspešne skomprimovaný."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Vymazanie bolo úspešné."
+
+msgid "messages.converting"
+msgstr "Odstraňuje sa formátovanie..."
+
+msgid "messages.messageopenerror"
+msgstr "Správu nemožno načítať zo servera."
+
+msgid "messages.filelinkerror"
+msgstr "Nepodarilo sa priložiť súbor."
+
+msgid "messages.fileuploaderror"
+msgstr "Nahrávanie súboru bolo neúspešné."
+
+msgid "messages.csvfilemismatch"
+msgstr "Import viacerých súborov CSV s rôznymi poliami nie je podporovaný."
+
+msgid "messages.filesizeerror"
+msgstr "Nahraný súbor prekročil maximálnu veľkosť $size."
+
+msgid "messages.filecounterror"
+msgstr "Naraz je možné vykonať upload max. $count súborov."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Nepodarilo sa pripojiť súbor. Bola prekročená max. veľkosť správy ($size)."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Došlo k prekročeniu maximálnej veľkosti správy ($size). Počet správ, ktoré "
+"neboli pripojené: $num."
+
+msgid "messages.copysuccess"
+msgstr "Počet úspešne skopírovaných kontaktov: $nr."
+
+msgid "messages.movesuccess"
+msgstr "Počet úspešne presunutých kontaktov: $nr."
+
+msgid "messages.copyerror"
+msgstr "Kontakty nemožno kopírovať."
+
+msgid "messages.moveerror"
+msgstr "Kontakty nemožno presúvať."
+
+msgid "messages.sourceisreadonly"
+msgstr "Tento zdroj adries je určený len na čítanie."
+
+msgid "messages.errorsavingcontact"
+msgstr "Zmeny nebolo možné uložiť."
+
+msgid "messages.movingmessage"
+msgstr "Prebieha presúvanie správ(y)..."
+
+msgid "messages.copyingmessage"
+msgstr "Prebieha kopírovanie správ(y)..."
+
+msgid "messages.copyingcontact"
+msgstr "Prebieha kopírovanie kontaktov..."
+
+msgid "messages.movingcontact"
+msgstr "Presúvanie kontaktov..."
+
+msgid "messages.deletingmessage"
+msgstr "Prebieha vymazávanie správ(y)..."
+
+msgid "messages.markingmessage"
+msgstr "Prebieha označovanie správ(y)..."
+
+msgid "messages.addingmember"
+msgstr "Prebieha pridávanie kontaktov do skupiny..."
+
+msgid "messages.removingmember"
+msgstr "Prebieha odstraňovanie kontaktov zo skupiny..."
+
+msgid "messages.receiptsent"
+msgstr "Potvrdenie o prečítaní bolo odoslané."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Potvrdenie nemožno odoslať."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Naozaj chcete vymazať túto identitu?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Túto identitu nemožno vymazať, pretože je posledná."
+
+msgid "messages.forbiddencharacter"
+msgstr "Názov priečinka obsahuje nepovolený znak."
+
+msgid "messages.selectimportfile"
+msgstr "Zvoľte súbor, ktorý chcete importovať na server."
+
+msgid "messages.addresswriterror"
+msgstr "Do vybraného adresára nie je možné zapisovať údaje."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Kontakty boli úspešne pridané do tejto skupiny."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontakty boli úspešne odstránené z tejto skupiny."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Priradenia do skupín sa nezmenili."
+
+msgid "messages.importwait"
+msgstr "Prebieha importovanie, prosím čakajte..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Importovanie nebolo úspešné! Nahraný súbor nie je platným súborom údajov pre"
+" importovanie."
+
+msgid "messages.importconfirm"
+msgstr "<b>Počet úspešne naimportovaných kontaktov: $inserted</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>Počet preskočených existujúcich kontaktov: $skipped</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>Počet preskočených neplatných kontaktov: $invalid</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+"<b>Počet platných kontaktov, ktoré sa nepodarilo importovať: $errors</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "Počet úspešne naimportovaných správ: $nr"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Importovanie bolo neúspešné! Odoslaný súbor nie je platným súborom pre "
+"importovanie"
+
+msgid "messages.opnotpermitted"
+msgstr "Táto operácia nie je povolená!"
+
+msgid "messages.nofromaddress"
+msgstr "Vo vybranej identite chýba e-mailová adresa."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Prepnutie druhu editora môže spôsobiť stratu formátovania. Naozaj chcete "
+"pokračovať?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Vyskytla sa vážna chyba v konfigurácii. Ihneď kontaktujte administrátora. "
+"<b>Vašu správu nemožno odoslať.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Chyba SMTP ($code): Neúspešné pripojenie k serveru."
+
+msgid "messages.smtpautherror"
+msgstr "Chyba SMTP ($code): Neúspešná autentifikácia."
+
+msgid "messages.smtpfromerror"
+msgstr "Chyba SMTP ($code): Nemožno nastaviť odosielateľa \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "Chyba SMTP ($code): Nemožno pridať príjemcu \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "Chyba SMTP: Nemožno spracovať zoznam príjemcov."
+
+msgid "messages.smtputf8error"
+msgstr "Chyba SMTP: server nepodporuje Unicode v e-mailovej adrese."
+
+msgid "messages.smtpsizeerror"
+msgstr "Chyba SMTP: veľkosť správy presahuje limit servera ($limit)"
+
+msgid "messages.smtperror"
+msgstr "Chyba SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Neplatná e-mailová adresa: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Príliš veľa príjemcov. Zredukujte počet príjemcov na $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Počet členov skupiny prekračuje maximum: $max"
+
+msgid "messages.internalerror"
+msgstr "Došlo k internej chybe systému. Prosím skúste to ešte raz."
+
+msgid "messages.contactdelerror"
+msgstr "Nemožno vymazať kontakt(y)."
+
+msgid "messages.contactdeleted"
+msgstr "Kontakty boli úspešne vymazané."
+
+msgid "messages.contactrestoreerror"
+msgstr "Nemožno obnoviť vymazané kontakty."
+
+msgid "messages.contactrestored"
+msgstr "Kontakty boli úspešne obnovené."
+
+msgid "messages.groupdeleted"
+msgstr "Skupina bola úspešne vymazaná."
+
+msgid "messages.grouprenamed"
+msgstr "Skupina bola úspešne premenovaná."
+
+msgid "messages.groupcreated"
+msgstr "Skupina bola úspešne vytvorená."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Uložené výsledky vyhľadávania boli úspešne vymazané."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Nemožno vymazať uložené výsledky vyhľadávania."
+
+msgid "messages.savedsearchcreated"
+msgstr "Uložené výsledky vyhľadávania boli úspešne vytvorené."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Nemožno vytvoriť uložené výsledky vyhľadávania."
+
+msgid "messages.messagedeleted"
+msgstr "Vymazanie správ(y) bolo úspešné."
+
+msgid "messages.messagemoved"
+msgstr "Presunutie správ(y) bolo úspešné."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Presun správ(y) do koša bol úspešný."
+
+msgid "messages.messagecopied"
+msgstr "Kopírovanie správ(y) bolo úspešné."
+
+msgid "messages.messagemarked"
+msgstr "Označovanie správ(y) bolo úspešné."
+
+msgid "messages.autocompletechars"
+msgstr "Zadajte najmenej $min znakov pre automatické dopĺňanie."
+
+msgid "messages.autocompletemore"
+msgstr "Našlo sa viacero záznamov. Zadajte prosím viac znakov."
+
+msgid "messages.namecannotbeempty"
+msgstr "Meno nemôže byť prázdne."
+
+msgid "messages.nametoolong"
+msgstr "Meno je príliš dlhé."
+
+msgid "messages.namedotforbidden"
+msgstr "Názov priečinka nemôže začínať bodkou."
+
+msgid "messages.folderupdated"
+msgstr "Priečinok bol úspešne aktualizovaný."
+
+msgid "messages.foldercreated"
+msgstr "Priečinok bol úspešne vytvorený."
+
+msgid "messages.invalidimageformat"
+msgstr "Neplatný formát obrázka"
+
+msgid "messages.mispellingsfound"
+msgstr "V správe boli nájdené pravopisné chyby."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Nemožno vytvoriť/presunúť priečinok do vybraného rodičovského priečinka. "
+"Nemáte prístupové oprávnenia."
+
+msgid "messages.messagetoobig"
+msgstr "Časť správy je príliš veľká na spracovanie."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Táto príloha je podozrivá, pretože jej typ sa nezhoduje s typom deklarovaným"
+" v správe. Ak odosielateľovi nedôverujete, nemali by ste ju otvárať v "
+"prehliadači, pretože môže mať škodlivý obsah.<br/><br/><em>Očakávalo sa: "
+"$expected; našlo sa: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Upozornenie: Táto webmailová služba vyžaduje Javascript! Ak ju chcete "
+"používať, prosím aktivujte Javascript v nastaveniach svojho prehliadača."
+
+msgid "messages.messageissent"
+msgstr ""
+"Správa už bola odoslaná, ešte však nebola uložená. Chcete ju uložiť teraz?"
+
+msgid "messages.errnotfound"
+msgstr "Súbor sa nenašiel"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Požadovaný zdroj nebol nájdený!"
+
+msgid "messages.errfailedrequest"
+msgstr "Neúspešná požiadavka"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Autorizácia bola neúspešná"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Nebolo možné overiť vašu autorizáciu na prístup k tejto službe!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Kontrola požiadavky bola neúspešná"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Kvôli vašej bezpečnosti je prístup k tomuto zdroju zabezpečený proti útokom typu CSRF.\n"
+"Ak vidíte túto správu, pravdepodobne ste sa neodhlásili pred opustením webovej aplikácie.\n"
+"\n"
+"Pre pokračovanie je teraz potrebný zásah človeka."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Prosím kontaktujte administrátora servera."
+
+msgid "messages.clicktoresumesession"
+msgstr "Ak chcete pokračovať v predchádzajúcej relácii, prosím kliknite sem"
+
+msgid "messages.errcomposesession"
+msgstr "Chyba relácie pre vytváranie správy"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Požadovaná relácia pre vytvorenie správy sa nenašla"
+
+msgid "messages.clicktocompose"
+msgstr "Ak chcete vytvoriť novú správu, kliknite sem"
+
+msgid "messages.nosupporterror"
+msgstr "Táto funkcia nie je podporovaná vaším webovým prehliadačom."
+
+msgid "messages.siginserted"
+msgstr "Podpis bol úspešne vložený."
+
+msgid "messages.responseinserted"
+msgstr "Odpoveď bola úspešne vložená."
+
+msgid "messages.noresponsesavailable"
+msgstr "Nie sú dostupné žiadne odpovede"
+
+msgid "messages.listempty"
+msgstr "Zoznam je prázdny."
+
+msgid "messages.listusebutton"
+msgstr "Na pridanie nového záznamu použite tlačidlo Vytvoriť."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Pre identitu $identity bol úspešne vytvorený nový pár kľúčov."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Zdá sa, že táto príloha je prázdna.<br>Prosím overte to u osoby, ktorá ju "
+"odoslala."
+
+msgid "messages.oauthloginfailed"
+msgstr "Prihlásenie OAuth bolo neúspešné. Prosím skúste to znovu."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Požiadavka na autorizáciu bola neplatná alebo neúplná."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Autorizačný server alebo používateľ odmietol požiadavku."

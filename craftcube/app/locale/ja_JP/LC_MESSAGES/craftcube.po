@@ -1,0 +1,2853 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "$productにようこそ"
+
+msgid "username"
+msgstr "ユーザー名"
+
+msgid "password"
+msgstr "パスワード"
+
+msgid "server"
+msgstr "サーバー"
+
+msgid "login"
+msgstr "ログイン"
+
+msgid "oauthlogin"
+msgstr "$provider でログイン"
+
+msgid "menu"
+msgstr "メニュー"
+
+msgid "logout"
+msgstr "ログアウト"
+
+msgid "mail"
+msgstr "電子メール"
+
+msgid "settings"
+msgstr "設定"
+
+msgid "addressbook"
+msgstr "アドレス帳"
+
+msgid "darkmode"
+msgstr "ダークモード"
+
+msgid "lightmode"
+msgstr "ライトモード"
+
+msgid "inbox"
+msgstr "受信箱"
+
+msgid "drafts"
+msgstr "下書き"
+
+msgid "sent"
+msgstr "送信済み"
+
+msgid "trash"
+msgstr "ごみ箱"
+
+msgid "junk"
+msgstr "迷惑メール"
+
+msgid "show_real_foldernames"
+msgstr "特殊フォルダーの実際の名前を表示"
+
+msgid "subject"
+msgstr "件名"
+
+msgid "from"
+msgstr "発信者"
+
+msgid "sender"
+msgstr "送信者"
+
+msgid "to"
+msgstr "宛先"
+
+msgid "cc"
+msgstr "写し(Cc)"
+
+msgid "bcc"
+msgstr "隠した写し(Bcc)"
+
+msgid "replyto"
+msgstr "返信先"
+
+msgid "followupto"
+msgstr "Followup-To"
+
+msgid "date"
+msgstr "日付"
+
+msgid "size"
+msgstr "大きさ"
+
+msgid "priority"
+msgstr "優先度"
+
+msgid "organization"
+msgstr "企業名"
+
+msgid "readstatus"
+msgstr "閲覧の状態"
+
+msgid "listoptions"
+msgstr "一覧のオプション..."
+
+msgid "listoptionstitle"
+msgstr "一覧のオプション"
+
+msgid "mailboxlist"
+msgstr "フォルダー"
+
+msgid "messagesfromto"
+msgstr "$count通の$from通目から$to通目のメッセージ"
+
+msgid "threadsfromto"
+msgstr "$count通の$from通目から$to通目のスレッド"
+
+msgid "messagenrof"
+msgstr "$count通の$nr通目のメッセージ"
+
+msgid "fromtoshort"
+msgstr "$count通の$from通目から$to通目"
+
+msgid "copy"
+msgstr "コピー"
+
+msgid "move"
+msgstr "移動"
+
+msgid "moveto"
+msgstr "フォルダーに移動"
+
+msgid "copyto"
+msgstr "コピー..."
+
+msgid "download"
+msgstr "ダウンロード"
+
+msgid "open"
+msgstr "開く"
+
+msgid "showattachment"
+msgstr "表示"
+
+msgid "showanyway"
+msgstr "とにかく表示"
+
+msgid "filename"
+msgstr "ファイル名"
+
+msgid "filesize"
+msgstr "ファイルの大きさ"
+
+msgid "addtoaddressbook"
+msgstr "アドレス帳に追加"
+
+msgid "sun"
+msgstr "日"
+
+msgid "mon"
+msgstr "月"
+
+msgid "tue"
+msgstr "火"
+
+msgid "wed"
+msgstr "水"
+
+msgid "thu"
+msgstr "木"
+
+msgid "fri"
+msgstr "金"
+
+msgid "sat"
+msgstr "土"
+
+msgid "sunday"
+msgstr "日曜日"
+
+msgid "monday"
+msgstr "月曜日"
+
+msgid "tuesday"
+msgstr "火曜日"
+
+msgid "wednesday"
+msgstr "水曜日"
+
+msgid "thursday"
+msgstr "木曜日"
+
+msgid "friday"
+msgstr "金曜日"
+
+msgid "saturday"
+msgstr "土曜日"
+
+msgid "jan"
+msgstr "1月"
+
+msgid "feb"
+msgstr "2月"
+
+msgid "mar"
+msgstr "3月"
+
+msgid "apr"
+msgstr "4月"
+
+msgid "may"
+msgstr "5月"
+
+msgid "jun"
+msgstr "6月"
+
+msgid "jul"
+msgstr "7月"
+
+msgid "aug"
+msgstr "8月"
+
+msgid "sep"
+msgstr "9月"
+
+msgid "oct"
+msgstr "10月"
+
+msgid "nov"
+msgstr "11月"
+
+msgid "dec"
+msgstr "12月"
+
+msgid "longjan"
+msgstr "1月"
+
+msgid "longfeb"
+msgstr "2月"
+
+msgid "longmar"
+msgstr "3月"
+
+msgid "longapr"
+msgstr "4月"
+
+msgid "longmay"
+msgstr "5月"
+
+msgid "longjun"
+msgstr "6月"
+
+msgid "longjul"
+msgstr "7月"
+
+msgid "longaug"
+msgstr "8月"
+
+msgid "longsep"
+msgstr "9月"
+
+msgid "longoct"
+msgstr "10月"
+
+msgid "longnov"
+msgstr "11月"
+
+msgid "longdec"
+msgstr "12月"
+
+msgid "today"
+msgstr "今日"
+
+msgid "refresh"
+msgstr "再読込み"
+
+msgid "checkmail"
+msgstr "新しく届いたメッセージを確認"
+
+msgid "compose"
+msgstr "新規作成"
+
+msgid "writenewmessage"
+msgstr "新しいメッセージを作成"
+
+msgid "reply"
+msgstr "返信"
+
+msgid "replytomessage"
+msgstr "送信者に返信"
+
+msgid "replytoallmessage"
+msgstr "メーリングリスト、または送信者とすべての宛先に返信"
+
+msgid "replyall"
+msgstr "全員に返信"
+
+msgid "replylist"
+msgstr "メーリングリストに返信"
+
+msgid "forward"
+msgstr "転送"
+
+msgid "forwardinline"
+msgstr "本文に挿入して転送"
+
+msgid "forwardattachment"
+msgstr "添付ファイルとして転送"
+
+msgid "forwardmessage"
+msgstr "メッセージを転送"
+
+msgid "bouncemsg"
+msgstr "再送(送り直し)"
+
+msgid "bounce"
+msgstr "再送"
+
+msgid "deletemessage"
+msgstr "メッセージを削除"
+
+msgid "undeletemessage"
+msgstr "メッセージの削除を解除"
+
+msgid "movemessagetotrash"
+msgstr "ごみ箱に移動"
+
+msgid "printmessage"
+msgstr "メッセージを印刷"
+
+msgid "previousmessage"
+msgstr "前のメッセージを表示"
+
+msgid "firstmessage"
+msgstr "最初のメッセージを表示"
+
+msgid "nextmessage"
+msgstr "次のメッセージを表示"
+
+msgid "lastmessage"
+msgstr "最後のメッセージを表示"
+
+msgid "backtolist"
+msgstr "メッセージの一覧に戻る"
+
+msgid "viewsource"
+msgstr "ソースを表示"
+
+msgid "mark"
+msgstr "マーク"
+
+msgid "markmessages"
+msgstr "マークを付ける"
+
+msgid "markread"
+msgstr "既読に設定"
+
+msgid "markunread"
+msgstr "未読に設定"
+
+msgid "markflagged"
+msgstr "フラグを設定"
+
+msgid "markunflagged"
+msgstr "フラグを解除"
+
+msgid "markundeleted"
+msgstr "削除を解除"
+
+msgid "markasread"
+msgstr "既読に設定"
+
+msgid "markasunread"
+msgstr "未読に設定"
+
+msgid "markasflagged"
+msgstr "フラグを設定"
+
+msgid "markasunflagged"
+msgstr "フラグを解除"
+
+msgid "moreactions"
+msgstr "その他の操作..."
+
+msgid "markallread"
+msgstr "すべてを既読に設定"
+
+msgid "folders-cur"
+msgstr "選択したフォルダーだけ"
+
+msgid "folders-sub"
+msgstr "選択したフォルダーとその下位のフォルダー"
+
+msgid "folders-all"
+msgstr "すべてのフォルダー"
+
+msgid "more"
+msgstr "続く"
+
+msgid "back"
+msgstr "戻る"
+
+msgid "options"
+msgstr "オプション"
+
+msgid "composeoptions"
+msgstr "作成のオプション"
+
+msgid "optionsandattachments"
+msgstr "オプションと添付ファイル"
+
+msgid "actions"
+msgstr "動作"
+
+msgid "first"
+msgstr "最初"
+
+msgid "last"
+msgstr "最後"
+
+msgid "previous"
+msgstr "前"
+
+msgid "next"
+msgstr "次"
+
+msgid "select"
+msgstr "選択"
+
+msgid "selection"
+msgstr "選択範囲"
+
+msgid "all"
+msgstr "すべて"
+
+msgid "none"
+msgstr "なし"
+
+msgid "currpage"
+msgstr "現在のページ"
+
+msgid "isread"
+msgstr "既読"
+
+msgid "unread"
+msgstr "未読"
+
+msgid "flagged"
+msgstr "フラグ付き"
+
+msgid "unflagged"
+msgstr "フラッグなし"
+
+msgid "unanswered"
+msgstr "未返信"
+
+msgid "withattachment"
+msgstr "添付ファイルあり"
+
+msgid "deleted"
+msgstr "削除済み"
+
+msgid "undeleted"
+msgstr "削除済みでない"
+
+msgid "replied"
+msgstr "返信済み"
+
+msgid "forwarded"
+msgstr "転送済み"
+
+msgid "invert"
+msgstr "反転"
+
+msgid "filter"
+msgstr "フィルター"
+
+msgid "list"
+msgstr "一覧"
+
+msgid "threads"
+msgstr "スレッド"
+
+msgid "expand-all"
+msgstr "すべて展開"
+
+msgid "expand-unread"
+msgstr "未開封のメッセージを展開"
+
+msgid "collapse-all"
+msgstr "すべて折りたたむ"
+
+msgid "threaded"
+msgstr "スレッド化"
+
+msgid "showunread"
+msgstr "未読のメッセージを表示"
+
+msgid "autoexpand_threads"
+msgstr "メッセージのスレッドを展開"
+
+msgid "do_expand"
+msgstr "すべてのスレッド"
+
+msgid "expand_only_unread"
+msgstr "未読のメッセージだけ"
+
+msgid "fromto"
+msgstr "発信者/宛先"
+
+msgid "flag"
+msgstr "フラグ"
+
+msgid "attachment"
+msgstr "添付ファイル"
+
+msgid "nonesort"
+msgstr "なし"
+
+msgid "sentdate"
+msgstr "送信日"
+
+msgid "arrival"
+msgstr "受信日"
+
+msgid "asc"
+msgstr "昇順"
+
+msgid "desc"
+msgstr "降順"
+
+msgid "listcolumns"
+msgstr "列を一覧"
+
+msgid "listsorting"
+msgstr "並べ替える列"
+
+msgid "listorder"
+msgstr "並べ替える順序"
+
+msgid "listmode"
+msgstr "一覧表示モード"
+
+msgid "lmode"
+msgstr "一覧モード"
+
+msgid "layout"
+msgstr "配置"
+
+msgid "layoutwidescreen"
+msgstr "ワイド画面"
+
+msgid "layoutdesktop"
+msgstr "デスクトップ"
+
+msgid "layoutlist"
+msgstr "一覧"
+
+msgid "layoutwidescreendesc"
+msgstr "ワイドスクリーン (3列の表示)"
+
+msgid "layoutdesktopdesc"
+msgstr "デスクトップ (広いリストと下にメールのプレビュー)"
+
+msgid "layoutlistdesc"
+msgstr "一覧 (メールのプレビューなし)"
+
+msgid "folderactions"
+msgstr "フォルダーの操作..."
+
+msgid "compact"
+msgstr "圧縮"
+
+msgid "empty"
+msgstr "空"
+
+msgid "importmessages"
+msgstr "メッセージをインポート"
+
+msgid "mailimportdesc"
+msgstr ""
+"<a href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a>または<a"
+" href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>形式を使用してメールをアップロードできます。"
+
+msgid "mailimportzip"
+msgstr "複数のファイルをzipアーカイブに圧縮できます。"
+
+msgid "quota"
+msgstr "ディスクの使用状況"
+
+msgid "unknown"
+msgstr "不明"
+
+msgid "unlimited"
+msgstr "無制限"
+
+msgid "quotatype"
+msgstr "クォータの種類"
+
+msgid "quotatotal"
+msgstr "限度"
+
+msgid "quotaused"
+msgstr "使用"
+
+msgid "quotastorage"
+msgstr "ディスク容量"
+
+msgid "quotamessage"
+msgstr "メッセージ数"
+
+msgid "shortheaderdate"
+msgstr "$date"
+
+msgid "shortheaderto"
+msgstr "$date に $to 宛て"
+
+msgid "shortheaderfrom"
+msgstr "$date に $from から"
+
+msgid "quicksearch"
+msgstr "高速検索"
+
+msgid "searchplaceholder"
+msgstr "検索..."
+
+msgid "resetsearch"
+msgstr "検索を解除"
+
+msgid "searchmod"
+msgstr "検索の条件"
+
+msgid "msgtext"
+msgstr "メッセージ全体"
+
+msgid "body"
+msgstr "本文"
+
+msgid "type"
+msgstr "種類"
+
+msgid "namex"
+msgstr "名前"
+
+msgid "searchscope"
+msgstr "スコープ"
+
+msgid "currentfolder"
+msgstr "現在のフォルダー"
+
+msgid "subfolders"
+msgstr "このフォルダーと下位のフォルダー"
+
+msgid "allfolders"
+msgstr "すべてのフォルダー"
+
+msgid "searchinterval-1W"
+msgstr "1週間より前"
+
+msgid "searchinterval-1M"
+msgstr "1か月より前"
+
+msgid "searchinterval-1Y"
+msgstr "1年より前"
+
+msgid "searchinterval1W"
+msgstr "1週間以内"
+
+msgid "searchinterval1M"
+msgstr "1か月以内"
+
+msgid "searchinterval1Y"
+msgstr "1年以内"
+
+msgid "infolder"
+msgstr "フッター: $folder"
+
+msgid "currentaddressbook"
+msgstr "現在のアドレス帳"
+
+msgid "alladdressbooks"
+msgstr "すべてのアドレス帳"
+
+msgid "openinextwin"
+msgstr "新しいウィンドウで開く"
+
+msgid "emlsave"
+msgstr "ダウンロード(.eml形式)"
+
+msgid "changeformattext"
+msgstr "テキスト形式で表示"
+
+msgid "changeformathtml"
+msgstr "HTML形式で表示"
+
+msgid "editasnew"
+msgstr "新しいメッセージとして編集"
+
+msgid "send"
+msgstr "送信"
+
+msgid "sendmessage"
+msgstr "メッセージを送信"
+
+msgid "savemessage"
+msgstr "下書きとして保存"
+
+msgid "addattachment"
+msgstr "ファイルを添付"
+
+msgid "charset"
+msgstr "文字セット"
+
+msgid "editortype"
+msgstr "エディターの種類"
+
+msgid "returnreceipt"
+msgstr "開封確認"
+
+msgid "dsn"
+msgstr "配送状態通知"
+
+msgid "keepformatting"
+msgstr "書式設定を保持"
+
+msgid "mailreplyintro"
+msgstr "$date に $sender さんは書きました:"
+
+msgid "originalmessage"
+msgstr "元のメッセージ"
+
+msgid "selectimage"
+msgstr "画像を選択"
+
+msgid "addimage"
+msgstr "画像を追加"
+
+msgid "selectmedia"
+msgstr "動画を選択"
+
+msgid "addmedia"
+msgstr "動画を追加"
+
+msgid "encrypt"
+msgstr "暗号化"
+
+msgid "encryptmessage"
+msgstr "メッセージを暗号化"
+
+msgid "encryptmessagemailvelope"
+msgstr "Mailvelopeでメッセージを暗号化"
+
+msgid "importpubkeys"
+msgstr "公開鍵をインポート"
+
+msgid "encryptedsendialog"
+msgstr "暗号化したメッセージを送信中"
+
+msgid "encryptandsign"
+msgstr "暗号化と署名"
+
+msgid "keyid"
+msgstr "キーID"
+
+msgid "keylength"
+msgstr "ビット"
+
+msgid "keyexpired"
+msgstr "期限切れ"
+
+msgid "keyrevoked"
+msgstr "取り消し済み"
+
+msgid "bccinstead"
+msgstr "Bccを使用"
+
+msgid "addheader"
+msgstr "フィールド(Cc、Bccなど)を追加"
+
+msgid "insert"
+msgstr "挿入"
+
+msgid "insertcontact"
+msgstr "連絡先を挿入"
+
+msgid "recipient"
+msgstr "宛先"
+
+msgid "recipientedit"
+msgstr "宛先編集"
+
+msgid "editidents"
+msgstr "識別情報を編集"
+
+msgid "spellcheck"
+msgstr "スペル"
+
+msgid "checkspelling"
+msgstr "スペルチェック"
+
+msgid "resumeediting"
+msgstr "編集を再開"
+
+msgid "revertto"
+msgstr "元に戻す"
+
+msgid "restore"
+msgstr "回復"
+
+msgid "restoremessage"
+msgstr "メッセージを回復しますか?"
+
+msgid "ignore"
+msgstr "無視"
+
+msgid "responses"
+msgstr "回答"
+
+msgid "insertresponse"
+msgstr "回答を挿入"
+
+msgid "manageresponses"
+msgstr "回答を管理"
+
+msgid "newresponse"
+msgstr "新しい回答を作成"
+
+msgid "addresponse"
+msgstr "回答を追加"
+
+msgid "editresponse"
+msgstr "回答を編集"
+
+msgid "editresponses"
+msgstr "回答を編集"
+
+msgid "responsename"
+msgstr "名前"
+
+msgid "responsetext"
+msgstr "回答の文章"
+
+msgid "attach"
+msgstr "添付"
+
+msgid "attachments"
+msgstr "添付ファイル"
+
+msgid "upload"
+msgstr "アップロード"
+
+msgid "uploadprogress"
+msgstr "$percent ($totalの$current)"
+
+msgid "close"
+msgstr "閉じる"
+
+msgid "messageoptions"
+msgstr "メッセージのオプション..."
+
+msgid "togglecomposeoptions"
+msgstr "作成のオプションを切り替え"
+
+msgid "attachmentrename"
+msgstr "添付ファイルの名前を変更"
+
+msgid "low"
+msgstr "低"
+
+msgid "lowest"
+msgstr "最低"
+
+msgid "normal"
+msgstr "通常"
+
+msgid "high"
+msgstr "高"
+
+msgid "highest"
+msgstr "最高"
+
+msgid "nosubject"
+msgstr "(件名なし)"
+
+msgid "showimages"
+msgstr "画像を表示"
+
+msgid "allow"
+msgstr "許可"
+
+msgid "alwaysshow"
+msgstr "$sender から届いた画像は常に表示"
+
+msgid "alwaysallow"
+msgstr "$sender からは常に許可"
+
+msgid "isdraft"
+msgstr "これは下書きのメッセージです。"
+
+msgid "andnmore"
+msgstr "さらに$nr件..."
+
+msgid "details"
+msgstr "詳細"
+
+msgid "summary"
+msgstr "要約"
+
+msgid "headers"
+msgstr "ヘッダー"
+
+msgid "allheaders"
+msgstr "すべてのヘッダー..."
+
+msgid "togglemoreheaders"
+msgstr "さらにメッセージのヘッダーを表示"
+
+msgid "togglefullheaders"
+msgstr "メッセージヘッダーの生の表示と切り替え"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "テキスト"
+
+msgid "savesentmessagein"
+msgstr "送信したメッセージの保存先"
+
+msgid "dontsave"
+msgstr "保存しない"
+
+msgid "maxuploadsize"
+msgstr "添付可能なファイルは最大で$sizeです。"
+
+msgid "addcc"
+msgstr "写し(Cc)を追加"
+
+msgid "addbcc"
+msgstr "隠した写し(Bcc)を追加"
+
+msgid "addreplyto"
+msgstr "返信先(Reply-To)を追加"
+
+msgid "addfollowupto"
+msgstr "フォロー先(Followup-Toを追加"
+
+msgid "sendreceipt"
+msgstr "開封確認を送信しますか?"
+
+msgid "mdnrequest"
+msgstr "このメッセージを読んだときに、送信者が通知を受けたいと依頼しています。開封確認の通知を送信しますか?"
+
+msgid "receiptread"
+msgstr "開封確認(表示済み)"
+
+msgid "yourmessage"
+msgstr "これはあなたが送信したメッセージに対する開封確認です。"
+
+msgid "receiptnote"
+msgstr ""
+"注意: "
+"この開封確認は、メッセージが宛先のコンピューターで表示されたことだけを知らせるものです。受信者がメッセージを読んだり、内容を理解したと保証するものではありません。"
+
+msgid "sendalwaysto"
+msgstr "常に $emailに送信"
+
+msgid "zoomin"
+msgstr "ズームイン"
+
+msgid "zoomout"
+msgstr "ズームアウト"
+
+msgid "rotate"
+msgstr "回転"
+
+msgid "increaseimage"
+msgstr "画像のサイズを増やす"
+
+msgid "decreaseimage"
+msgstr "画像のサイズを減らす"
+
+msgid "rotateimage"
+msgstr "画像を回転"
+
+msgid "showtools"
+msgstr "画像ツールを表示"
+
+msgid "hidetools"
+msgstr "画像ツールを非表示"
+
+msgid "name"
+msgstr "表示名"
+
+msgid "firstname"
+msgstr "名"
+
+msgid "surname"
+msgstr "姓"
+
+msgid "middlename"
+msgstr "ミドルネーム"
+
+msgid "nameprefix"
+msgstr "敬称(名前の前)"
+
+msgid "namesuffix"
+msgstr "敬称(名前の後)"
+
+msgid "nickname"
+msgstr "ニックネーム"
+
+msgid "jobtitle"
+msgstr "職名"
+
+msgid "department"
+msgstr "部署名"
+
+msgid "gender"
+msgstr "性別"
+
+msgid "maidenname"
+msgstr "旧姓"
+
+msgid "email"
+msgstr "電子メール"
+
+msgid "phone"
+msgstr "電話番号"
+
+msgid "address"
+msgstr "住所"
+
+msgid "street"
+msgstr "住所"
+
+msgid "locality"
+msgstr "都市"
+
+msgid "zipcode"
+msgstr "郵便番号"
+
+msgid "region"
+msgstr "都道府県"
+
+msgid "country"
+msgstr "国"
+
+msgid "birthday"
+msgstr "誕生日"
+
+msgid "anniversary"
+msgstr "記念日"
+
+msgid "website"
+msgstr "ウェブサイト"
+
+msgid "instantmessenger"
+msgstr "インスタントメッセージ"
+
+msgid "notes"
+msgstr "注釈"
+
+msgid "male"
+msgstr "男性"
+
+msgid "female"
+msgstr "女性"
+
+msgid "nonbinary"
+msgstr "ノンバイナリー"
+
+msgid "othergender"
+msgstr "その他"
+
+msgid "manager"
+msgstr "管理者"
+
+msgid "assistant"
+msgstr "アシスタント"
+
+msgid "spouse"
+msgstr "配偶者"
+
+msgid "allfields"
+msgstr "すべての項目"
+
+msgid "search"
+msgstr "検索"
+
+msgid "searchresult"
+msgstr "検索の結果"
+
+msgid "advsearch"
+msgstr "高度な検索"
+
+msgid "advanced"
+msgstr "高度"
+
+msgid "other"
+msgstr "その他"
+
+msgid "printcontact"
+msgstr "連絡先を印刷"
+
+msgid "qrcode"
+msgstr "QRコード"
+
+msgid "typehome"
+msgstr "自宅"
+
+msgid "typework"
+msgstr "職場"
+
+msgid "typeother"
+msgstr "その他"
+
+msgid "typemobile"
+msgstr "モバイル"
+
+msgid "typemain"
+msgstr "主回線"
+
+msgid "typehomefax"
+msgstr "自宅ファクス"
+
+msgid "typeworkfax"
+msgstr "職場のFax"
+
+msgid "typecar"
+msgstr "車"
+
+msgid "typepager"
+msgstr "ページャー(ポケットベル)"
+
+msgid "typevideo"
+msgstr "動画"
+
+msgid "typeassistant"
+msgstr "アシスタント"
+
+msgid "typehomepage"
+msgstr "ホームページ"
+
+msgid "typeblog"
+msgstr "ブログ"
+
+msgid "typeprofile"
+msgstr "プロフィール"
+
+msgid "addfield"
+msgstr "項目を追加..."
+
+msgid "addcontact"
+msgstr "連絡先を追加"
+
+msgid "editcontact"
+msgstr "連絡先を編集"
+
+msgid "contacts"
+msgstr "連絡先"
+
+msgid "contactproperties"
+msgstr "連絡先の属性"
+
+msgid "contactnameandorg"
+msgstr "名前と組織"
+
+msgid "personalinfo"
+msgstr "個人情報"
+
+msgid "personal"
+msgstr "個人"
+
+msgid "contactphoto"
+msgstr "連絡先の写真"
+
+msgid "edit"
+msgstr "編集"
+
+msgid "cancel"
+msgstr "取り止め"
+
+msgid "save"
+msgstr "保存"
+
+msgid "delete"
+msgstr "削除"
+
+msgid "discard"
+msgstr "破棄"
+
+msgid "continue"
+msgstr "継続"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "名前を変更"
+
+msgid "addphoto"
+msgstr "追加"
+
+msgid "replacephoto"
+msgstr "置き換え"
+
+msgid "uploadphoto"
+msgstr "写真をアップロード"
+
+msgid "choosefile"
+msgstr "ファイルを選択..."
+
+msgid "choosefiles"
+msgstr "ファイルを選択..."
+
+msgid "browse"
+msgstr "閲覧"
+
+msgid "newcontact"
+msgstr "新しい連絡先を作成"
+
+msgid "deletecontact"
+msgstr "選択した連絡先を削除"
+
+msgid "composeto"
+msgstr "この連絡先宛にメッセージを作成"
+
+msgid "contactsfromto"
+msgstr "$count件の連絡先の$from件目から$to件目"
+
+msgid "print"
+msgstr "印刷"
+
+msgid "export"
+msgstr "エクスポート"
+
+msgid "exportall"
+msgstr "すべてエクスポート"
+
+msgid "exportsel"
+msgstr "選択した連絡先をエクスポート"
+
+msgid "exportvcards"
+msgstr "vCard形式でエクスポート"
+
+msgid "newgroup"
+msgstr "新しいグループを作成"
+
+msgid "addgroup"
+msgstr "グループを追加"
+
+msgid "grouprename"
+msgstr "グループ名を変更"
+
+msgid "groupdelete"
+msgstr "グループを削除"
+
+msgid "groupassign"
+msgstr "グループに割り当て..."
+
+msgid "groupremove"
+msgstr "グループから削除"
+
+msgid "groupremoveselected"
+msgstr "選択した連絡先をグループから削除"
+
+msgid "uponelevel"
+msgstr "1つ上のレベル"
+
+msgid "previouspage"
+msgstr "前のページを表示"
+
+msgid "firstpage"
+msgstr "最初のページを表示"
+
+msgid "nextpage"
+msgstr "次のページを表示"
+
+msgid "lastpage"
+msgstr "最後のページを表示"
+
+msgid "group"
+msgstr "グループ"
+
+msgid "groups"
+msgstr "グループ"
+
+msgid "listgroup"
+msgstr "グループのメンバーを一覧"
+
+msgid "personaladrbook"
+msgstr "個人の住所"
+
+msgid "searchsave"
+msgstr "検索情報を保存"
+
+msgid "searchdelete"
+msgstr "検索情報を削除"
+
+msgid "import"
+msgstr "インポート"
+
+msgid "importcontacts"
+msgstr "連絡先をインポート"
+
+msgid "importfromfile"
+msgstr "ファイルからインポート"
+
+msgid "importtarget"
+msgstr "次に連絡先を追加"
+
+msgid "importreplace"
+msgstr "アドレス帳全体と置き換え"
+
+msgid "importgroups"
+msgstr "グループの割り当てをインポート"
+
+msgid "importgroupsall"
+msgstr "すべて (必要ならグループを作成)"
+
+msgid "importgroupsexisting"
+msgstr "存在するグループだけ"
+
+msgid "importdesc"
+msgstr ""
+"既存のアドレス帳から連絡先をアップロードできます。<br/>現在、<a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a>またはCSV(コンマ区切り)のデータ形式からのアドレスの取り込みをサポートしています。"
+
+msgid "importmapdesc"
+msgstr "CSV(コンマ区切り)のデータのインポートを進める前に、以下の列の対応情報を確認してください。"
+
+msgid "fieldnotmapped"
+msgstr "列の対応なし(無視)"
+
+msgid "skipheader"
+msgstr "最初の行(ヘッダー)を無視"
+
+msgid "done"
+msgstr "完了"
+
+msgid "birth_day"
+msgstr "誕生日"
+
+msgid "birth_month"
+msgstr "誕生月"
+
+msgid "birth_year"
+msgstr "誕生年"
+
+msgid "settingsfor"
+msgstr "次の設定:"
+
+msgid "about"
+msgstr "このプログラムについて"
+
+msgid "preferences"
+msgstr "設定"
+
+msgid "userpreferences"
+msgstr "ユーザー設定"
+
+msgid "editpreferences"
+msgstr "ユーザー設定を変更"
+
+msgid "identities"
+msgstr "識別情報"
+
+msgid "manageidentities"
+msgstr "識別情報を管理"
+
+msgid "newidentity"
+msgstr "新しい識別情報を作成"
+
+msgid "addidentity"
+msgstr "識別情報を追加"
+
+msgid "editidentity"
+msgstr "識別情報を編集"
+
+msgid "identityencryption"
+msgstr "暗号化"
+
+msgid "preferhtml"
+msgstr "HTMLを表示"
+
+msgid "defaultcharset"
+msgstr "初期設定の文字セット"
+
+msgid "htmlmessage"
+msgstr "HTMLメッセージ"
+
+msgid "messagepart"
+msgstr "パート"
+
+msgid "digitalsig"
+msgstr "デジタル署名"
+
+msgid "dateformat"
+msgstr "日付の書式"
+
+msgid "timeformat"
+msgstr "時刻の書式"
+
+msgid "prettydate"
+msgstr "短い日付で表示"
+
+msgid "setdefault"
+msgstr "初期値を設定"
+
+msgid "autodetect"
+msgstr "自動識別"
+
+msgid "language"
+msgstr "言語"
+
+msgid "timezone"
+msgstr "タイムゾーン"
+
+msgid "pagesize"
+msgstr "1ページの表示件数"
+
+msgid "signature"
+msgstr "署名"
+
+msgid "dstactive"
+msgstr "サマータイムを適用"
+
+msgid "showinextwin"
+msgstr "新しいウィンドウでメッセージを表示"
+
+msgid "composeextwin"
+msgstr "新しいウィンドウでメッセージを作成"
+
+msgid "htmleditor"
+msgstr "作成時にHTMLメッセージを使用"
+
+msgid "htmlonreply"
+msgstr "返信時にHTMLメッセージを使用"
+
+msgid "htmlonreplyandforward"
+msgstr "転送またはHTMLメッセージへの返信"
+
+msgid "htmlsignature"
+msgstr "HTMLの署名"
+
+msgid "showemail"
+msgstr "電子メールアドレスを表示名と共に表示"
+
+msgid "previewpane"
+msgstr "プレビュー枠の表示"
+
+msgid "skin"
+msgstr "インターフェイスのスキン"
+
+msgid "logoutclear"
+msgstr "ログアウト時にごみ箱の内容を消去"
+
+msgid "logoutcompact"
+msgstr "ログアウト時にフォルダーを整理"
+
+msgid "uisettings"
+msgstr "ユーザーインターフェイス"
+
+msgid "serversettings"
+msgstr "サーバーの設定"
+
+msgid "mailboxview"
+msgstr "受信箱"
+
+msgid "mdnrequests"
+msgstr "開封確認の要求の処理"
+
+msgid "askuser"
+msgstr "開封確認の送信を確認"
+
+msgid "autosend"
+msgstr "開封確認を送信"
+
+msgid "autosendknown"
+msgstr "送信者が連絡先に登録されているなら開封確認を送信、そうでなければ確認"
+
+msgid "autosendknownignore"
+msgstr "送信者が連絡先に登録されているなら開封確認を送信、そうでなければ無視"
+
+msgid "autosendtrusted"
+msgstr "受信確認を信頼する送信者に送信、そうでなければ確認"
+
+msgid "autosendtrustedignore"
+msgstr "受信確認を信頼する送信者に送信、そうでなければ無視"
+
+msgid "ignorerequest"
+msgstr "要求を無視"
+
+msgid "readwhendeleted"
+msgstr "削除したメッセージを既読に設定"
+
+msgid "flagfordeletion"
+msgstr "削除する代わりに削除済みフラグを設定"
+
+msgid "skipdeleted"
+msgstr "削除済みのメッセージを表示しない"
+
+msgid "deletealways"
+msgstr "ごみ箱への移動できなかったメッセージは削除"
+
+msgid "deletejunk"
+msgstr "迷惑メールのメッセージを直接削除"
+
+msgid "showremoteimages"
+msgstr "外部のインライン画像を表示"
+
+msgid "allowremoteresources"
+msgstr "リモートのリソース(画像、スタイル)を許可"
+
+msgid "fromknownsenders"
+msgstr "送信者が知人の場合"
+
+msgid "fromtrustedsenders"
+msgstr "信頼した送信者から"
+
+msgid "frommycontacts"
+msgstr "連絡先のアドレスから"
+
+msgid "always"
+msgstr "常時"
+
+msgid "alwaysbutplain"
+msgstr "テキスト形式で返信するときを除いて常時"
+
+msgid "showinlineimages"
+msgstr "メッセージに添付された画像を下に表示"
+
+msgid "autosavedraft"
+msgstr "自動的に下書きを保存"
+
+msgid "everynminutes"
+msgstr "$n分毎"
+
+msgid "refreshinterval"
+msgstr "再表示 (新しいメッセージの確認等)"
+
+msgid "never"
+msgstr "しない"
+
+msgid "immediately"
+msgstr "即時"
+
+msgid "messagesdisplaying"
+msgstr "メッセージの表示"
+
+msgid "messagescomposition"
+msgstr "メッセージの作成"
+
+msgid "mimeparamfolding"
+msgstr "添付ファイルの名前"
+
+msgid "2231folding"
+msgstr "RFC 2231に完全準拠(Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231(MS Outlook)"
+
+msgid "2047folding"
+msgstr "RFC 2047に完全準拠(その他)"
+
+msgid "force7bit"
+msgstr "8ビット文字列にMIMEエンコーディングを使用"
+
+msgid "savelocalstorage"
+msgstr "ブラウザのローカルストレージに(一時的に)保存"
+
+msgid "advancedoptions"
+msgstr "高度な設定"
+
+msgid "toggleadvancedoptions"
+msgstr "詳細なオプションの表示を切り替え"
+
+msgid "focusonnewmessage"
+msgstr "新しいメッセージが届いたらブラウザーをアクティブ"
+
+msgid "checkallfolders"
+msgstr "すべてのフォルダーで新着メールを表示"
+
+msgid "displaynext"
+msgstr "削除・移動した後で次の項目を表示"
+
+msgid "defaultfont"
+msgstr "HTMLメッセージの初期フォント"
+
+msgid "mainoptions"
+msgstr "基本的な設定"
+
+msgid "browseroptions"
+msgstr "ブラウザーのオプション"
+
+msgid "section"
+msgstr "設定項目"
+
+msgid "maintenance"
+msgstr "保守"
+
+msgid "newmessage"
+msgstr "新しいメッセージ"
+
+msgid "signatureoptions"
+msgstr "署名の設定"
+
+msgid "whenreplying"
+msgstr "返信時の本文"
+
+msgid "replyempty"
+msgstr "元のメッセージを引用しない"
+
+msgid "replytopposting"
+msgstr "元のメッセージを引用した前に本文を作成"
+
+msgid "replytoppostingnoindent"
+msgstr "(字下げなしで)元のメッセージを引用した前に本文を作成"
+
+msgid "replybottomposting"
+msgstr "元のメッセージを引用した後に本文を作成"
+
+msgid "replyremovesignature"
+msgstr "返信時に元の署名をメッセージから削除"
+
+msgid "autoaddsignature"
+msgstr "自動的に署名を付加"
+
+msgid "newmessageonly"
+msgstr "新しいメッセージだけ"
+
+msgid "replyandforwardonly"
+msgstr "返信と転送だけ"
+
+msgid "insertsignature"
+msgstr "署名を挿入"
+
+msgid "sigbelow"
+msgstr "引用したメッセージの後に署名を置く"
+
+msgid "sigseparator"
+msgstr "強制的に署名に標準の分離記号を使用"
+
+msgid "automarkread"
+msgstr "メッセージを既読に設定"
+
+msgid "afternseconds"
+msgstr "$n秒後"
+
+msgid "reqmdn"
+msgstr "常に開封確認通知を要求"
+
+msgid "reqdsn"
+msgstr "常に配送状態通知を要求"
+
+msgid "alwayskeepformatting"
+msgstr "常に元のテキストの書式を保持"
+
+msgid "replysamefolder"
+msgstr "返信したメッセージを元のメールと同じフォルダに保存"
+
+msgid "defaultabook"
+msgstr "初期状態で使用するアドレス帳"
+
+msgid "autocompletesingle"
+msgstr "自動補完で代替のメールアドレスを飛ばして進める"
+
+msgid "listnamedisplay"
+msgstr "連絡先の一覧表示"
+
+msgid "contactformmode"
+msgstr "次の連絡先から:"
+
+msgid "privatemode"
+msgstr "私用(自宅)"
+
+msgid "businessmode"
+msgstr "業務(仕事)"
+
+msgid "collectedaddresses"
+msgstr "収集したアドレス"
+
+msgid "collectedrecipients"
+msgstr "収集した宛先"
+
+msgid "collectedrecipientsopt"
+msgstr "送信する電子メールの宛先の保存先"
+
+msgid "collectedsendersopt"
+msgstr "信頼する送信者の保存先"
+
+msgid "trustedsenders"
+msgstr "信頼する送信者"
+
+msgid "spellcheckbeforesend"
+msgstr "メッセージを送信する前にスペルチェック"
+
+msgid "spellcheckoptions"
+msgstr "スペルチェックのオプション"
+
+msgid "spellcheckignoresyms"
+msgstr "記号を含む単語を無視"
+
+msgid "spellcheckignorenums"
+msgstr "数字を含む単語を無視"
+
+msgid "spellcheckignorecaps"
+msgstr "すべて大文字の単語を無視"
+
+msgid "addtodict"
+msgstr "辞書に追加"
+
+msgid "editoroptions"
+msgstr "エディターのオプション"
+
+msgid "enableautolink"
+msgstr "有効なURLを自動的にハイパーリンクに変換"
+
+msgid "mailtoprotohandler"
+msgstr "mailto: のリンクを扱うプロトコル処理の登録"
+
+msgid "standardwindows"
+msgstr "ポップアップを通常のウィンドウとして処理"
+
+msgid "forwardmode"
+msgstr "メッセージの転送形式"
+
+msgid "inline"
+msgstr "インライン"
+
+msgid "asattachment"
+msgstr "添付ファイル"
+
+msgid "replyallmode"
+msgstr "「全員に返信」ボタンの既定の動作"
+
+msgid "replyalldefault"
+msgstr "全員に返信"
+
+msgid "replyalllist"
+msgstr "メーリングリスト(とわかれば)だけに返信"
+
+msgid "allmessages"
+msgstr "すべてのメッセージ"
+
+msgid "olderxdays"
+msgstr "$x日より前"
+
+msgid "folder"
+msgstr "フォルダー"
+
+msgid "folders"
+msgstr "フォルダー"
+
+msgid "foldername"
+msgstr "フォルダー名"
+
+msgid "subscribed"
+msgstr "購読済み"
+
+msgid "messagecount"
+msgstr "メッセージ"
+
+msgid "create"
+msgstr "作成"
+
+msgid "createfolder"
+msgstr "新しいフォルダーを作成"
+
+msgid "managefolders"
+msgstr "フォルダーを管理"
+
+msgid "specialfolders"
+msgstr "特殊なフォルダー"
+
+msgid "properties"
+msgstr "属性"
+
+msgid "folderproperties"
+msgstr "フォルダーの属性"
+
+msgid "parentfolder"
+msgstr "親のフォルダー"
+
+msgid "location"
+msgstr "場所"
+
+msgid "info"
+msgstr "情報"
+
+msgid "getfoldersize"
+msgstr "クリックしてフォルダーの大きさを取得"
+
+msgid "changesubscription"
+msgstr "クリックして購読状態を変更"
+
+msgid "foldertype"
+msgstr "フォルダーの種類"
+
+msgid "personalfolder"
+msgstr "個人フォルダー"
+
+msgid "otherfolder"
+msgstr "他のユーザーのフォルダー"
+
+msgid "sharedfolder"
+msgstr "公開フォルダー"
+
+msgid "findfolders"
+msgstr "フォルダーを探す"
+
+msgid "findcontacts"
+msgstr "連絡先を探す"
+
+msgid "findmail"
+msgstr "メールメッセージを探す"
+
+msgid "namespace.personal"
+msgstr "個人"
+
+msgid "namespace.other"
+msgstr "他のユーザー"
+
+msgid "namespace.shared"
+msgstr "共有した"
+
+msgid "dualuselabel"
+msgstr "これだけ含められる"
+
+msgid "dualusemail"
+msgstr "メッセージ"
+
+msgid "dualusefolder"
+msgstr "フォルダー"
+
+msgid "generate"
+msgstr "生成"
+
+msgid "encryptioncreatekey"
+msgstr "新しい鍵ペアを作成"
+
+msgid "openmailvelopesettings"
+msgstr "Mailvelopeの設定を表示"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr "Mailvelopeのキーリングに$nr個の一致する秘密鍵:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"この送信者の識別情報へのPGP秘密鍵がMailvelope拡張にまだありません。メッセージの暗号化を有効にするためにPGP秘密鍵を作成しますか?"
+
+msgid "encryption"
+msgstr "暗号化"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelopeのオプション"
+
+msgid "mailvelopemainkeyring"
+msgstr "Mailvelopeをメインのキーリングに使用"
+
+msgid "mailvelopenotfound"
+msgstr "ブラウザーでMailvelope拡張が無効またはインストールされていません。"
+
+msgid "mailvelopeenable"
+msgstr "有効化"
+
+msgid "sortby"
+msgstr "並べ替え"
+
+msgid "sortasc"
+msgstr "昇順で並べ替え"
+
+msgid "sortdesc"
+msgstr "降順で並べ替え"
+
+msgid "undo"
+msgstr "取り消し"
+
+msgid "installedplugins"
+msgstr "インストールしているプラグイン"
+
+msgid "plugin"
+msgstr "プラグイン"
+
+msgid "version"
+msgstr "バージョン"
+
+msgid "source"
+msgstr "ソース"
+
+msgid "destination"
+msgstr "宛先"
+
+msgid "license"
+msgstr "ライセンス"
+
+msgid "skinauthor"
+msgstr "作成者: $author"
+
+msgid "support"
+msgstr "サポートを依頼"
+
+msgid "savedsearches"
+msgstr "検索を保存"
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "バイト"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "英語"
+
+msgid "westerneuropean"
+msgstr "西ヨーロッパ言語"
+
+msgid "easterneuropean"
+msgstr "東ヨーロッパ言語"
+
+msgid "southeasterneuropean"
+msgstr "南東ヨーロッパ言語"
+
+msgid "baltic"
+msgstr "バルト諸語"
+
+msgid "cyrillic"
+msgstr "キリル文字"
+
+msgid "arabic"
+msgstr "アラビア語"
+
+msgid "greek"
+msgstr "ギリシャ語"
+
+msgid "hebrew"
+msgstr "ヘブライ語"
+
+msgid "turkish"
+msgstr "トルコ語"
+
+msgid "nordic"
+msgstr "北欧言語"
+
+msgid "thai"
+msgstr "タイ語"
+
+msgid "celtic"
+msgstr "ケルト語"
+
+msgid "vietnamese"
+msgstr "ベトナム語"
+
+msgid "japanese"
+msgstr "日本語"
+
+msgid "korean"
+msgstr "韓国語"
+
+msgid "chinese"
+msgstr "中国語"
+
+msgid "arialabeltopnav"
+msgstr "ウィンドウ制御"
+
+msgid "arialabeltasknav"
+msgstr "アプリケーションのタスク"
+
+msgid "arialabeltoolbar"
+msgstr "アプリケーションのツールバー"
+
+msgid "arialabellistnav"
+msgstr "ナビゲーションを一覧"
+
+msgid "arialabelactivetask"
+msgstr "活動中のタスク"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "電子メールの一覧のフィルター"
+
+msgid "arialabelmailsearchform"
+msgstr "電子メールの検索欄"
+
+msgid "arialabelcontactsearchform"
+msgstr "連絡先の検索欄"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "電子メールの検索を入力"
+
+msgid "arialabelquicksearchbox"
+msgstr "検索を入力"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "フォルダーの一覧のフィルター"
+
+msgid "arialabelfoldersearchform"
+msgstr "フォルダーの検索欄"
+
+msgid "arialabelfolderlist"
+msgstr "電子メールのフォルダーの選択"
+
+msgid "arialabelmessagelist"
+msgstr "電子メールのメッセージの一覧"
+
+msgid "arialabelmailpreviewframe"
+msgstr "メッセージのプレビュー"
+
+msgid "arialabelmailboxmenu"
+msgstr "フォルダーの操作メニュー"
+
+msgid "arialabellistselectmenu"
+msgstr "一覧の選択メニュー"
+
+msgid "arialabelthreadselectmenu"
+msgstr "スレッドの一覧メニュー"
+
+msgid "arialabelmessagelistoptions"
+msgstr "メッセージの一覧の表示と並べ替えのオプション"
+
+msgid "arialabelmailimportdialog"
+msgstr "メッセージを取り込むダイアログ"
+
+msgid "arialabelmessagenav"
+msgstr "メッセージのナビゲーション"
+
+msgid "arialabelmessagebody"
+msgstr "メッセージの本文"
+
+msgid "arialabelmessageactions"
+msgstr "メッセージの操作"
+
+msgid "arialabelcontactquicksearch"
+msgstr "連絡先の検索欄"
+
+msgid "arialabelcontactsearchbox"
+msgstr "連絡先を入力"
+
+msgid "arialabelmessageheaders"
+msgstr "メッセージのヘッダー"
+
+msgid "arialabelforwardingoptions"
+msgstr "転送のオプション"
+
+msgid "arialabelreplyalloptions"
+msgstr "全員に返信のオプション"
+
+msgid "arialabelmoremessageactions"
+msgstr "さらにメッセージを操作"
+
+msgid "arialabelmorecontactactions"
+msgstr "さらに連絡先を操作"
+
+msgid "arialabelmarkmessagesas"
+msgstr "選択したメッセージに次のマーク..."
+
+msgid "arialabelcomposeoptions"
+msgstr "作成のオプション"
+
+msgid "arialabelresponsesmenu"
+msgstr "回答テンプレートメニュー"
+
+msgid "arialabelattachmentuploadform"
+msgstr "添付ファイルのアップロードフォーム"
+
+msgid "arialabelattachmentmenu"
+msgstr "添付ファイルのオプション"
+
+msgid "arialabelmailtomenu"
+msgstr "電子メールアドレスのオプション"
+
+msgid "arialabelattachmentpreview"
+msgstr "添付ファイルのプレビュー"
+
+msgid "ariasummarycomposecontacts"
+msgstr "宛先として選択する連絡先とグループの一覧"
+
+msgid "arialabelcontactexportoptions"
+msgstr "連絡先のエクスポートのオプション"
+
+msgid "arialabelabookgroupoptions"
+msgstr "アドレス帳・グループのオプション"
+
+msgid "arialabelpreferencesform"
+msgstr "設定のフォーム"
+
+msgid "arialabelidentityeditfrom"
+msgstr "識別情報のフォーム"
+
+msgid "arialabelresponseeditfrom"
+msgstr "回答のフォームを編集"
+
+msgid "arialabelsearchterms"
+msgstr "検索語"
+
+msgid "arialabeldropactionmenu"
+msgstr "ドラッグ・アンド・ドロップの動作メニュー"
+
+msgid "arialabelheadersmenu"
+msgstr "宛先(ヘッダー)を追加するメニュー"
+
+msgid "arialabelimagetools"
+msgstr "画像ツール"
+
+msgid "helplistnavigation"
+msgstr "キーボードのナビゲーションの一覧"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"上矢印・下矢印: 選択する行を移動します。\n"
+"スペース: 現在の行を選択します。\n"
+"シフトキーを押しながら上矢印・下矢印: 上・下の行を選択に追加します。\n"
+"コントロールきーを押しながらスペース: 現在の行を選択に追加または削除します。"
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"右矢印・左矢印: メッセージのスレッドを展開・折り畳みします。(スレッドモードだけ)\n"
+"改行: 現在・選択しているメッセージを開きます。\n"
+"削除: 選択しているメッセージをゴミ箱に移動します。"
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "改行: 現在・選択中の連絡先を開きます。"
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "エラーが発生しました!"
+
+msgid "messages.loginfailed"
+msgstr "ログインできませんでした。"
+
+msgid "messages.cookiesdisabled"
+msgstr "ブラウザーがCookieを受け付けません。"
+
+msgid "messages.sessionerror"
+msgstr "セッションが正しくないか期限が切れています。"
+
+msgid "messages.cookiesmismatch"
+msgstr "クッキーの不一致を検出しました。ブラウザーのクッキを消去してください。"
+
+msgid "messages.storageerror"
+msgstr "IMAP サーバーへの接続に失敗しました。"
+
+msgid "messages.servererror"
+msgstr "サーバーでエラーです!"
+
+msgid "messages.servererrormsg"
+msgstr "サーバーエラー: $msg"
+
+msgid "messages.accountlocked"
+msgstr "ログインを失敗し過ぎです、後で再び試してください。"
+
+msgid "messages.connerror"
+msgstr "接続エラー(サーバーに到達できません)!"
+
+msgid "messages.dberror"
+msgstr "データベースのエラーです!"
+
+msgid "messages.dbconnerror"
+msgstr "データベースに接続できません!"
+
+msgid "messages.windowopenerror"
+msgstr "ポップアップウィンドウがブロックされました!"
+
+msgid "messages.requesttimedout"
+msgstr "リクエストのタイムアウト"
+
+msgid "messages.errorreadonly"
+msgstr "操作を実行できませんでした。フォルダーは読み込み専用です。"
+
+msgid "messages.errornoperm"
+msgstr "操作を実行できませんでした。権限がありません。"
+
+msgid "messages.erroroverquota"
+msgstr "操作を実行できませんでした。空きディスク容量がありません。"
+
+msgid "messages.erroroverquotadelete"
+msgstr "空きディスク容量がありません。メッセージを削除するには SHIFT+DEL を使用してください。"
+
+msgid "messages.invalidrequest"
+msgstr "不正なリクエストです!  データは保存していません。"
+
+msgid "messages.invalidhost"
+msgstr "正しくないサーバー名です。"
+
+msgid "messages.nomessagesfound"
+msgstr "このフォルダーにはメッセージはありません。"
+
+msgid "messages.loggedout"
+msgstr "セッションを正しく終了しました。さようなら!"
+
+msgid "messages.mailboxempty"
+msgstr "メールボックスは空です。"
+
+msgid "messages.nomessages"
+msgstr "メッセージなし"
+
+msgid "messages.refreshing"
+msgstr "再表示中..."
+
+msgid "messages.loading"
+msgstr "読み込み中..."
+
+msgid "messages.uploading"
+msgstr "ファイルをアップロード中..."
+
+msgid "messages.attaching"
+msgstr "ファイルを添付..."
+
+msgid "messages.uploadingmany"
+msgstr "ファイルをアップロード中..."
+
+msgid "messages.loadingdata"
+msgstr "データを読み込み中..."
+
+msgid "messages.checkingmail"
+msgstr "新しいメッセージを確認中..."
+
+msgid "messages.sendingmessage"
+msgstr "メッセージを送信中..."
+
+msgid "messages.messagesent"
+msgstr "メッセージを送信しました。"
+
+msgid "messages.savingmessage"
+msgstr "メッセージを保存中..."
+
+msgid "messages.messagesaved"
+msgstr "メッセージを下書きに保存しました。"
+
+msgid "messages.successfullysaved"
+msgstr "保存しました。"
+
+msgid "messages.savingresponse"
+msgstr "回答の文章を保存中..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "この回答の文章を本当に削除しますか?"
+
+msgid "messages.nocontactselected"
+msgstr "まだ連絡先を選択していません。"
+
+msgid "messages.addedsuccessfully"
+msgstr "連絡先をアドレス帳に追加しました。"
+
+msgid "messages.contactexists"
+msgstr "同じ電子メールアドレスの連絡先が既に存在します。"
+
+msgid "messages.contactnameexists"
+msgstr "同じ名前の連絡先が既に存在します。"
+
+msgid "messages.blockedimages"
+msgstr "あなたのプライバシーを守るため、このメッセージに含まれる外部画像を遮断しました。"
+
+msgid "messages.blockedresources"
+msgstr "あなたのプライバシーを守るためリモートのリソースを遮断しました。"
+
+msgid "messages.suspiciousemail"
+msgstr "このメッセージは詐欺等と思われる不審なメールアドレスを含んでいます。"
+
+msgid "messages.bccemail"
+msgstr "転送されたメッセージは機密の宛先(Bcc)を含んでいます。"
+
+msgid "messages.bouncehint"
+msgstr "メッセージを無修整で送信します、すなわち元の本文、ヘッダー、宛先を使用します。"
+
+msgid "messages.encryptedmessage"
+msgstr "このメッセージは暗号化されていて表示できません、ごめんなさい!"
+
+msgid "messages.externalmessagedecryption"
+msgstr "このメッセージは暗号化されていて、ブラウザーの拡張で復号できるでしょう。"
+
+msgid "messages.nopubkeyfor"
+msgstr "$email への有効な公開鍵がありません。"
+
+msgid "messages.nopubkeyforsender"
+msgstr "あなたの送信者としての有効な公開鍵がありません。メッセージを宛て先だけが復号できるように暗号化しますか?"
+
+msgid "messages.encryptnoattachments"
+msgstr "既にアップロードした添付ファイルは暗号化できません。暗号化のエディター内で再度追加してください。"
+
+msgid "messages.searchpubkeyservers"
+msgstr "欠けている鍵を公開なキーサーバーで検索しますか?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "以下のキーサーバーが見つかりました:"
+
+msgid "messages.keyservererror"
+msgstr "キーサーバーからキーを取得できませんでした。"
+
+msgid "messages.keyimportsuccess"
+msgstr "公開鍵: $keyをキーリングにインポートしました。"
+
+msgid "messages.nocontactsfound"
+msgstr "連絡先がありません。"
+
+msgid "messages.contactnotfound"
+msgstr "連絡先が見つかりません。"
+
+msgid "messages.contactsearchonly"
+msgstr "選択したアドレス帳の連絡先を見るには検索欄を使用しなければなりません。"
+
+msgid "messages.sendingfailed"
+msgstr "メッセージを送信できませんでした。"
+
+msgid "messages.senttooquickly"
+msgstr "このメッセージを送信するまで、$sec秒お待ちください。"
+
+msgid "messages.errorsavingsent"
+msgstr "送信したメッセージの保存中にエラーが発生しました。"
+
+msgid "messages.errorsaving"
+msgstr "保存中にエラーが発生しました。"
+
+msgid "messages.errormoving"
+msgstr "メッセージを移動できません。"
+
+msgid "messages.errorcopying"
+msgstr "メッセージをコピーできません。"
+
+msgid "messages.errordeleting"
+msgstr "メッセージを削除できません。"
+
+msgid "messages.errormarking"
+msgstr "メッセージにマークを設定できません。"
+
+msgid "messages.alerttitle"
+msgstr "注意"
+
+msgid "messages.confirmationtitle"
+msgstr "本当に..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "選択した連絡先を本当に削除しますか?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "このグループを本当に削除しますか?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "選択したメールを本当に削除しますか?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "このフォルダーを本当に削除しますか?"
+
+msgid "messages.movefolderconfirm"
+msgstr "このフォルダーを本当に移動しますか?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "このフォルダーのすべてのメールを本当に削除しますか?"
+
+msgid "messages.contactdeleting"
+msgstr "連絡先を削除中..."
+
+msgid "messages.groupdeleting"
+msgstr "グループを削除中..."
+
+msgid "messages.folderdeleting"
+msgstr "フォルダーを削除中..."
+
+msgid "messages.foldermoving"
+msgstr "フォルダーを移動中..."
+
+msgid "messages.foldersubscribing"
+msgstr "フォルダーを購読中..."
+
+msgid "messages.folderunsubscribing"
+msgstr "フォルダーの購読を解除中..."
+
+msgid "messages.formincomplete"
+msgstr "フォームに未記入の項目があります。"
+
+msgid "messages.noemailwarning"
+msgstr "正しい電子メールアドレスを入力してください。"
+
+msgid "messages.nonamewarning"
+msgstr "名前を入力してください。"
+
+msgid "messages.nopagesizewarning"
+msgstr "ページのサイズを入力してください。"
+
+msgid "messages.nosenderwarning"
+msgstr "送信者の電子メールアドレスを入力してください。"
+
+msgid "messages.recipientsadded"
+msgstr "宛先を追加しました。"
+
+msgid "messages.norecipientwarning"
+msgstr "少なくとも1つ宛先を入力してください。"
+
+msgid "messages.disclosedrecipwarning"
+msgstr "すべての宛て先は互いに他のメールアドレスを見ることになります。これを防いで、それぞれのプライバシーを守るにはBcc欄を使用します。"
+
+msgid "messages.disclosedreciptitle"
+msgstr "宛て先が多すぎます。"
+
+msgid "messages.nosubjectwarning"
+msgstr "件名(Subject)の欄が空です。今、入力しますか?"
+
+msgid "messages.nosubjecttitle"
+msgstr "件名なし"
+
+msgid "messages.nobodywarning"
+msgstr "本文の無いメッセージを送信しますか?"
+
+msgid "messages.notsentwarning"
+msgstr "まだメッセージを送信していなくて、保存していない変更もあります。変更した内容を破棄しますか?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr "以前に作成して未送信のメッセージがあります。\\n\\n件名: $subject\\n保存日: $date\\n\\nこのメッセージを回復しますか?"
+
+msgid "messages.nosearchname"
+msgstr "連絡先の名前か電子メールアドレスを入力してください。"
+
+msgid "messages.notuploadedwarning"
+msgstr "すべての添付ファイルのアップロードを完了していません。今しばらく待つか、取り消ししてください。"
+
+msgid "messages.searchsuccessful"
+msgstr "$nr通のメッセージが見つかりました。"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr件の連絡先が見つかりました。"
+
+msgid "messages.searchnomatch"
+msgstr "一致するものが見つかりませんでした。"
+
+msgid "messages.searching"
+msgstr "検索中..."
+
+msgid "messages.checking"
+msgstr "確認中..."
+
+msgid "messages.stillsearching"
+msgstr "さらに検索中..."
+
+msgid "messages.nospellerrors"
+msgstr "スペルミスは見つかりませんでした。"
+
+msgid "messages.folderdeleted"
+msgstr "フォルダーを削除しました。"
+
+msgid "messages.foldersubscribed"
+msgstr "フォルダーを購読しました。"
+
+msgid "messages.folderunsubscribed"
+msgstr "フォルダーの購読を解除しました。"
+
+msgid "messages.folderpurged"
+msgstr "フォルダーを空にしました。"
+
+msgid "messages.folderexpunged"
+msgstr "フォルダーの整理を完了しました。"
+
+msgid "messages.deletedsuccessfully"
+msgstr "削除しました。"
+
+msgid "messages.converting"
+msgstr "メールから書式を削除中..."
+
+msgid "messages.messageopenerror"
+msgstr "サーバーからメールを読み込めません。"
+
+msgid "messages.filelinkerror"
+msgstr "ファイルを添付できませんでした。"
+
+msgid "messages.fileuploaderror"
+msgstr "ファイルをアップロードできませんでした。"
+
+msgid "messages.csvfilemismatch"
+msgstr "列の異なる複数のCSVファイルのアップロードはサポートしていません。"
+
+msgid "messages.filesizeerror"
+msgstr "アップロードするファイルのサイズが上限($size)を超えました。"
+
+msgid "messages.filecounterror"
+msgstr "一度に最大で$count個のファイルをアップロードできます。"
+
+msgid "messages.msgsizeerror"
+msgstr "ファイルを添付できませんでした。メッセージの最大サイズ($size)を超えています。"
+
+msgid "messages.msgsizeerrorfwd"
+msgstr "メッセージの最大サイズ($size)を超過しました。$num個のメッセージを添付していません。"
+
+msgid "messages.copysuccess"
+msgstr "$nr個の連絡先をコピーしました。"
+
+msgid "messages.movesuccess"
+msgstr "$nr個の連絡先を移動しました。"
+
+msgid "messages.copyerror"
+msgstr "どの連絡先もコピーできませんでした。"
+
+msgid "messages.moveerror"
+msgstr "どの連絡先も移動できませんでした。"
+
+msgid "messages.sourceisreadonly"
+msgstr "このアドレスソースは読み込み専用です。"
+
+msgid "messages.errorsavingcontact"
+msgstr "連絡先のアドレスを保存できません。"
+
+msgid "messages.movingmessage"
+msgstr "メッセージを移動中..."
+
+msgid "messages.copyingmessage"
+msgstr "メッセージをコピー中..."
+
+msgid "messages.copyingcontact"
+msgstr "連絡先をコピー中..."
+
+msgid "messages.movingcontact"
+msgstr "Moving contact(s)..."
+
+msgid "messages.deletingmessage"
+msgstr "メッセージを削除中..."
+
+msgid "messages.markingmessage"
+msgstr "メッセージにマークを設定中..."
+
+msgid "messages.addingmember"
+msgstr "グループに連絡先をコピー中..."
+
+msgid "messages.removingmember"
+msgstr "グループから連絡先を削除中..."
+
+msgid "messages.receiptsent"
+msgstr "開封通知を送信しました。"
+
+msgid "messages.errorsendingreceipt"
+msgstr "開封通知を送信ができませんでした。"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "この識別情報を本当に削除しますか?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "この識別情報は最後の1つなので削除できません。"
+
+msgid "messages.forbiddencharacter"
+msgstr "フォルダー名に使用できない文字が含まれています。"
+
+msgid "messages.selectimportfile"
+msgstr "アップロードするファイルを選択してください。"
+
+msgid "messages.addresswriterror"
+msgstr "選択したアドレス帳は書き込みできないアドレス帳です。"
+
+msgid "messages.contactaddedtogroup"
+msgstr "このグループに連絡先を追加しました。"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "このグループから連絡先を削除しました。"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "グループの割り当てを変更しませんでした。"
+
+msgid "messages.importwait"
+msgstr "インポート中です。しばらくお待ちください..."
+
+msgid "messages.importformaterror"
+msgstr "インポートできませんでした!  アップロードしたファイルは正しいデータをインポートするファイルではありません。"
+
+msgid "messages.importconfirm"
+msgstr "<b>$inserted件の連絡先をインポートしました。</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>$skipped件の既存する連絡先を飛ばしました。</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>$invalid件の無効な連絡先を飛ばしました。</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "<b>$errors件の有効な連絡先のインポートに失敗しました。</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr件のメッセージをインポートしました。"
+
+msgid "messages.importmessageerror"
+msgstr "インポートできませんでした!  アップロードしたファイルは有効なメッセージやメールボックスのファイルではありません。"
+
+msgid "messages.opnotpermitted"
+msgstr "許可されていない操作です。"
+
+msgid "messages.nofromaddress"
+msgstr "選択した識別情報には電子メールアドレスがありません。"
+
+msgid "messages.editorwarning"
+msgstr "エディターの種類を切り替えるとテキストの書式を失うかもしれません。本当に続けますか?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr "致命的な設定エラーが発生しました。システム管理者に至急連絡してください。<b>メッセージを送信できません。</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTPエラー ($code): サーバーへの接続に失敗しました。"
+
+msgid "messages.smtpautherror"
+msgstr "SMTPエラー ($code): 認証に失敗しました。"
+
+msgid "messages.smtpfromerror"
+msgstr "SMTPエラー ($code): 差出人 \"$from\" を設定できません ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "SMTPエラー ($code): 宛先 \"$to\" を追加できません ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTPエラー: 宛先の一覧を解析できません。"
+
+msgid "messages.smtputf8error"
+msgstr "SMTPエラー: サーバーは電子メールアドレスにUnicodeをサポートしていません。"
+
+msgid "messages.smtpsizeerror"
+msgstr "SMTPエラー: メッセージの大きさがサーバーの制限($limit)を超過"
+
+msgid "messages.smtperror"
+msgstr "SMTP エラー: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "誤った電子メールアドレス: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "宛先が多すぎます。$max件以内にしてください。"
+
+msgid "messages.maxgroupmembersreached"
+msgstr "グループのメンバーが多すぎます。$max 件以内にしてください。"
+
+msgid "messages.internalerror"
+msgstr "内部エラーが発生しました。もう一度試してください。"
+
+msgid "messages.contactdelerror"
+msgstr "連絡先を削除できませんでした。"
+
+msgid "messages.contactdeleted"
+msgstr "連絡先を削除しました。"
+
+msgid "messages.contactrestoreerror"
+msgstr "削除した連絡先を復元できませんでした。"
+
+msgid "messages.contactrestored"
+msgstr "連絡先を復元しました。"
+
+msgid "messages.groupdeleted"
+msgstr "グループを削除しました。"
+
+msgid "messages.grouprenamed"
+msgstr "グループ名を変更しました．"
+
+msgid "messages.groupcreated"
+msgstr "グループを作成しました。"
+
+msgid "messages.savedsearchdeleted"
+msgstr "保存した検索情報を削除しました。"
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "保存した検索情報を削除できません。"
+
+msgid "messages.savedsearchcreated"
+msgstr "検索情報を作成しました。"
+
+msgid "messages.savedsearchcreateerror"
+msgstr "検索情報を削除できませんでした。"
+
+msgid "messages.messagedeleted"
+msgstr "メッセージを削除しました。"
+
+msgid "messages.messagemoved"
+msgstr "メッセージを移動しました。"
+
+msgid "messages.messagemovedtotrash"
+msgstr "メッセージをゴミ箱に移動しました。"
+
+msgid "messages.messagecopied"
+msgstr "メッセージをコピーしました。"
+
+msgid "messages.messagemarked"
+msgstr "メッセージにマークを設定しました。"
+
+msgid "messages.autocompletechars"
+msgstr "自動補完には少なくとも$min文字入力してください。"
+
+msgid "messages.autocompletemore"
+msgstr "多くのエントリーが見つかりました。もっと入力してください。"
+
+msgid "messages.namecannotbeempty"
+msgstr "名前は空にできません。"
+
+msgid "messages.nametoolong"
+msgstr "名前が長すぎます。"
+
+msgid "messages.namedotforbidden"
+msgstr "フォルダー名はドットで始められません。"
+
+msgid "messages.folderupdated"
+msgstr "フォルダーを更新しました。"
+
+msgid "messages.foldercreated"
+msgstr "フォルダーを作成しました。"
+
+msgid "messages.invalidimageformat"
+msgstr "画像の形式が正しくありません。"
+
+msgid "messages.mispellingsfound"
+msgstr "メッセージにスペルミスを見つけました。"
+
+msgid "messages.parentnotwritable"
+msgstr "選択した親フォルダーに作成または移動をできませんでした。アクセス権限がありません。"
+
+msgid "messages.messagetoobig"
+msgstr "その処理をするにはメッセージ部分が大きすぎます。"
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"ファイルの型とメッセージ中で宣言した型が一致していない、不審な添付ファイルです。送信者を信頼できない場合は、悪意のある内容を含んでいるかもしれないのでブラウザーで開くべきではありません。<br/><br/><em>Expected:"
+" $expected; found: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"警告: このウェブメールサービスにはJavascriptが必要です!  使用するにはJavascriptをブラウザーの設定で有効にしてください。"
+
+msgid "messages.messageissent"
+msgstr "既にメッセージを送信しましたが、まだ保存していません。今すぐ保存しますか?"
+
+msgid "messages.errnotfound"
+msgstr "ファイルが見つかりません"
+
+msgid "messages.errnotfoundexplain"
+msgstr "要求したリソースはみつかりませんでした!"
+
+msgid "messages.errfailedrequest"
+msgstr "リクエストに失敗"
+
+msgid "messages.errauthorizationfailed"
+msgstr "認証に失敗"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "このサーバーへのアクセスを認可されていることを検証できませんでした!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "リクエストの検査に失敗"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"安全確保のため、このリソースへのアクセスはCSRFに対して保護しています。\n"
+"このメッセージを見た場合は、おそらくウェブ・アプリケーションを終える前にログアウトしていなかったのでしょう。\n"
+"続けるには人的な対処が必要です。"
+
+msgid "messages.errcontactserveradmin"
+msgstr "システム管理者に連絡してください。"
+
+msgid "messages.clicktoresumesession"
+msgstr "ここをクリックすると以前のセッションを回復します。"
+
+msgid "messages.errcomposesession"
+msgstr "メッセージを作成するセッションのエラー"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "メッセージを作成するセッションが見つかりません。"
+
+msgid "messages.clicktocompose"
+msgstr "クリックして新しいメッセージを作成"
+
+msgid "messages.nosupporterror"
+msgstr "この機能を使用しているブラウザーはサポートしていません。"
+
+msgid "messages.siginserted"
+msgstr "署名を挿入しました。"
+
+msgid "messages.responseinserted"
+msgstr "応答を挿入しました。"
+
+msgid "messages.noresponsesavailable"
+msgstr "応答なし"
+
+msgid "messages.listempty"
+msgstr "このリストは空です。"
+
+msgid "messages.listusebutton"
+msgstr "新しいレコードを追加するには作成のボタンを使用してください。"
+
+msgid "messages.keypaircreatesuccess"
+msgstr "$identity用の新しい鍵ペアを作成しました。"
+
+msgid "messages.emptyattachment"
+msgstr "この添付ファイルは空の様です。<br>送信した方に確認をお願いします。"
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuthでログインできませんでした。もう一度試してください。"
+
+msgid "messages.oauthinvalidrequest"
+msgstr "認可要求が正しくないか不完全です。"
+
+msgid "messages.oauthaccessdenied"
+msgstr "認可サーバーまたはユーザーが要求を拒否しました。"

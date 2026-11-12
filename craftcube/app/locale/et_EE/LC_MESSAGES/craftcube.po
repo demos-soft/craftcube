@@ -1,0 +1,2876 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: et_EE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Tere tulemast! See on $product."
+
+msgid "username"
+msgstr "Kasutajanimi"
+
+msgid "password"
+msgstr "Parool"
+
+msgid "server"
+msgstr "Server"
+
+msgid "login"
+msgstr "Logi sisse"
+
+msgid "oauthlogin"
+msgstr "Logi sisse kasutades $provider"
+
+msgid "menu"
+msgstr "Menüü"
+
+msgid "logout"
+msgstr "Logi välja"
+
+msgid "mail"
+msgstr "Postkast"
+
+msgid "settings"
+msgstr "Seaded"
+
+msgid "addressbook"
+msgstr "Aadressiraamat"
+
+msgid "darkmode"
+msgstr "Tume režiim"
+
+msgid "lightmode"
+msgstr "Hele režiim"
+
+msgid "inbox"
+msgstr "Saabuvad"
+
+msgid "drafts"
+msgstr "Mustandid"
+
+msgid "sent"
+msgstr "Saadetud"
+
+msgid "trash"
+msgstr "Prügikast"
+
+msgid "junk"
+msgstr "Rämps"
+
+msgid "show_real_foldernames"
+msgstr "Näita eriliste kaustade päris nimesid"
+
+msgid "subject"
+msgstr "Pealkiri"
+
+msgid "from"
+msgstr "Saatja"
+
+msgid "sender"
+msgstr "Saatja"
+
+msgid "to"
+msgstr "Saaja"
+
+msgid "cc"
+msgstr "Koopia"
+
+msgid "bcc"
+msgstr "Pimekoopia"
+
+msgid "replyto"
+msgstr "Vastus aadressile"
+
+msgid "followupto"
+msgstr "Followup-To"
+
+msgid "date"
+msgstr "Kuupäev"
+
+msgid "size"
+msgstr "Suurus"
+
+msgid "priority"
+msgstr "Tähtsus"
+
+msgid "organization"
+msgstr "Organisatsioon"
+
+msgid "readstatus"
+msgstr "Lugemise staatus"
+
+msgid "listoptions"
+msgstr "Nimekirja valikud…"
+
+msgid "listoptionstitle"
+msgstr "Nimekirja valikud"
+
+msgid "mailboxlist"
+msgstr "Kaustad"
+
+msgid "messagesfromto"
+msgstr "Kirjed $from kuni $to, kokku $count"
+
+msgid "threadsfromto"
+msgstr "Lõimed $from kuni $to, kokku $count"
+
+msgid "messagenrof"
+msgstr "Kiri $nr, kokku $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to kokku $count"
+
+msgid "copy"
+msgstr "Kopeeri"
+
+msgid "move"
+msgstr "Liiguta"
+
+msgid "moveto"
+msgstr "liiguta kausta..."
+
+msgid "copyto"
+msgstr "Kopeeri..."
+
+msgid "download"
+msgstr "laadi arvutisse"
+
+msgid "open"
+msgstr "Ava"
+
+msgid "showattachment"
+msgstr "Näita"
+
+msgid "showanyway"
+msgstr "Näita ikka"
+
+msgid "filename"
+msgstr "Faili nimi"
+
+msgid "filesize"
+msgstr "Faili suurus"
+
+msgid "addtoaddressbook"
+msgstr "Lisa aadressiraamatusse"
+
+msgid "sun"
+msgstr "P"
+
+msgid "mon"
+msgstr "E"
+
+msgid "tue"
+msgstr "T"
+
+msgid "wed"
+msgstr "K"
+
+msgid "thu"
+msgstr "N"
+
+msgid "fri"
+msgstr "R"
+
+msgid "sat"
+msgstr "L"
+
+msgid "sunday"
+msgstr "Pühapäev"
+
+msgid "monday"
+msgstr "Esmaspäev"
+
+msgid "tuesday"
+msgstr "Teisipäev"
+
+msgid "wednesday"
+msgstr "Kolmapäev"
+
+msgid "thursday"
+msgstr "Neljapäev"
+
+msgid "friday"
+msgstr "Reede"
+
+msgid "saturday"
+msgstr "Laupäev"
+
+msgid "jan"
+msgstr "jaan"
+
+msgid "feb"
+msgstr "veebr"
+
+msgid "mar"
+msgstr "märts"
+
+msgid "apr"
+msgstr "apr"
+
+msgid "may"
+msgstr "Mai"
+
+msgid "jun"
+msgstr "juuni"
+
+msgid "jul"
+msgstr "juuli"
+
+msgid "aug"
+msgstr "aug"
+
+msgid "sep"
+msgstr "sept"
+
+msgid "oct"
+msgstr "okt"
+
+msgid "nov"
+msgstr "nov"
+
+msgid "dec"
+msgstr "dets"
+
+msgid "longjan"
+msgstr "Jaanuar"
+
+msgid "longfeb"
+msgstr "Veebruar"
+
+msgid "longmar"
+msgstr "Märts"
+
+msgid "longapr"
+msgstr "Aprill"
+
+msgid "longmay"
+msgstr "Mai"
+
+msgid "longjun"
+msgstr "Juuni"
+
+msgid "longjul"
+msgstr "Juuli"
+
+msgid "longaug"
+msgstr "August"
+
+msgid "longsep"
+msgstr "September"
+
+msgid "longoct"
+msgstr "Oktoober"
+
+msgid "longnov"
+msgstr "November"
+
+msgid "longdec"
+msgstr "Detsember"
+
+msgid "today"
+msgstr "Täna"
+
+msgid "refresh"
+msgstr "Värskenda"
+
+msgid "checkmail"
+msgstr "Kontrolli uusi kirju"
+
+msgid "compose"
+msgstr "Koosta kiri"
+
+msgid "writenewmessage"
+msgstr "Kirjuta uus kiri"
+
+msgid "reply"
+msgstr "Vasta"
+
+msgid "replytomessage"
+msgstr "Vasta kirjale"
+
+msgid "replytoallmessage"
+msgstr "Vasta saatjale ja teistele kirja saanutele"
+
+msgid "replyall"
+msgstr "Vasta kõigile"
+
+msgid "replylist"
+msgstr "Vasta meilinglisti"
+
+msgid "forward"
+msgstr "Edasta"
+
+msgid "forwardinline"
+msgstr "Edasta kirja sees"
+
+msgid "forwardattachment"
+msgstr "Edasta manusena"
+
+msgid "forwardmessage"
+msgstr "Edasta see kiri"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr "Saada uuesti"
+
+msgid "deletemessage"
+msgstr "Kustuta kiri"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Liiguta kiri prügikasti"
+
+msgid "printmessage"
+msgstr "Trüki kiri"
+
+msgid "previousmessage"
+msgstr "Näita eelmist kirja"
+
+msgid "firstmessage"
+msgstr "Näita esimest kirja"
+
+msgid "nextmessage"
+msgstr "Näita järgmist kirja"
+
+msgid "lastmessage"
+msgstr "Näita viimast kirja"
+
+msgid "backtolist"
+msgstr "Tagasi kirjade nimekirja"
+
+msgid "viewsource"
+msgstr "Näita lähtekoodi"
+
+msgid "mark"
+msgstr "Märgista"
+
+msgid "markmessages"
+msgstr "Märgi kirjad"
+
+msgid "markread"
+msgstr "Loetuks"
+
+msgid "markunread"
+msgstr "Mitte loetuks"
+
+msgid "markflagged"
+msgstr "Lisa lipik"
+
+msgid "markunflagged"
+msgstr "Eemalda lipik"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Muud toimingud..."
+
+msgid "markallread"
+msgstr "Märgi kõik loetuks"
+
+msgid "folders-cur"
+msgstr "Valitud kaustad ainult"
+
+msgid "folders-sub"
+msgstr "Valitud kaustad ja selle alamkaustad"
+
+msgid "folders-all"
+msgstr "Kõik kaustad"
+
+msgid "more"
+msgstr "Rohkem"
+
+msgid "back"
+msgstr "Tagasi"
+
+msgid "options"
+msgstr "Valikud"
+
+msgid "composeoptions"
+msgstr "Koostamise valikud"
+
+msgid "optionsandattachments"
+msgstr "Valikud ja manused"
+
+msgid "actions"
+msgstr "Tegevused"
+
+msgid "first"
+msgstr "Esimene"
+
+msgid "last"
+msgstr "Viimane"
+
+msgid "previous"
+msgstr "Eelmine"
+
+msgid "next"
+msgstr "Järgmine"
+
+msgid "select"
+msgstr "Vali"
+
+msgid "selection"
+msgstr "Valik"
+
+msgid "all"
+msgstr "kõik"
+
+msgid "none"
+msgstr "Puudub"
+
+msgid "currpage"
+msgstr "Praegune leht"
+
+msgid "isread"
+msgstr "Loe"
+
+msgid "unread"
+msgstr "Lugemata"
+
+msgid "flagged"
+msgstr "Märgistatud"
+
+msgid "unflagged"
+msgstr "Märgistamatta"
+
+msgid "unanswered"
+msgstr "Vastamata"
+
+msgid "withattachment"
+msgstr "Koos manusega"
+
+msgid "deleted"
+msgstr "Kustutatud"
+
+msgid "undeleted"
+msgstr "Pole kustutatud"
+
+msgid "replied"
+msgstr "Vastatud"
+
+msgid "forwarded"
+msgstr "Edastatud"
+
+msgid "invert"
+msgstr "Vaheta"
+
+msgid "filter"
+msgstr "Filtreeri"
+
+msgid "list"
+msgstr "Nimekiri"
+
+msgid "threads"
+msgstr "Lõimed"
+
+msgid "expand-all"
+msgstr "Laienda kõik"
+
+msgid "expand-unread"
+msgstr "Laienda lugemata"
+
+msgid "collapse-all"
+msgstr "Pane kõik kokku"
+
+msgid "threaded"
+msgstr "Lõimedena"
+
+msgid "showunread"
+msgstr "Näita lugemata sõnumeid"
+
+msgid "autoexpand_threads"
+msgstr "Laienda kirjade lõimed"
+
+msgid "do_expand"
+msgstr "kõik lõimed"
+
+msgid "expand_only_unread"
+msgstr "ainult lugemata kirjadega"
+
+msgid "fromto"
+msgstr "Saatja/saaja"
+
+msgid "flag"
+msgstr "Märgista"
+
+msgid "attachment"
+msgstr "Manus"
+
+msgid "nonesort"
+msgstr "Puudub"
+
+msgid "sentdate"
+msgstr "Saatmise kuupäev"
+
+msgid "arrival"
+msgstr "Saamise kuupäev"
+
+msgid "asc"
+msgstr "kasvavalt"
+
+msgid "desc"
+msgstr "kahanevalt"
+
+msgid "listcolumns"
+msgstr "Näita veerge"
+
+msgid "listsorting"
+msgstr "Järjestus veerg"
+
+msgid "listorder"
+msgstr "Järjestus suund"
+
+msgid "listmode"
+msgstr "Nimekirja vaatamise režiim"
+
+msgid "lmode"
+msgstr "Nimekirja režiim"
+
+msgid "layout"
+msgstr "Paigutus"
+
+msgid "layoutwidescreen"
+msgstr "Laiekraan"
+
+msgid "layoutdesktop"
+msgstr "Lauaarvuti"
+
+msgid "layoutlist"
+msgstr "Nimekiri"
+
+msgid "layoutwidescreendesc"
+msgstr "Laiekraan (3-paani vaade)"
+
+msgid "layoutdesktopdesc"
+msgstr "Töölaud (lai nimekiri ja kirja ülevaade allpool)"
+
+msgid "layoutlistdesc"
+msgstr "Nimekiri (kirja ülevaadet ei ole)"
+
+msgid "folderactions"
+msgstr "Kausta tegevused..."
+
+msgid "compact"
+msgstr "Tihenda"
+
+msgid "empty"
+msgstr "Tühjenda"
+
+msgid "importmessages"
+msgstr "Impordi kirju"
+
+msgid "mailimportdesc"
+msgstr ""
+"Saate ülesse laadida faile, mis on <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> või <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> formaadis."
+
+msgid "mailimportzip"
+msgstr "Mitut faili on võimalik kokku pakkida zip arhiiviks."
+
+msgid "quota"
+msgstr "Kettakasutus"
+
+msgid "unknown"
+msgstr "teadmata"
+
+msgid "unlimited"
+msgstr "piiramatu"
+
+msgid "quotatype"
+msgstr "Piirangu tüüp"
+
+msgid "quotatotal"
+msgstr "Limiit"
+
+msgid "quotaused"
+msgstr "Kasutatud"
+
+msgid "quotastorage"
+msgstr "Ketta ruum"
+
+msgid "quotamessage"
+msgstr "Kirjade arv"
+
+msgid "shortheaderdate"
+msgstr "Kuupäeval $date"
+
+msgid "shortheaderto"
+msgstr "Saajale $to päeval $date"
+
+msgid "shortheaderfrom"
+msgstr "Saatjalt $from päeval $date"
+
+msgid "quicksearch"
+msgstr "Kiirotsing"
+
+msgid "searchplaceholder"
+msgstr "Otsimine..."
+
+msgid "resetsearch"
+msgstr "Lähtesta otsing"
+
+msgid "searchmod"
+msgstr "Otsingu laiendid"
+
+msgid "msgtext"
+msgstr "Kogu kirjast"
+
+msgid "body"
+msgstr "Keha"
+
+msgid "type"
+msgstr "Tüüp"
+
+msgid "namex"
+msgstr "Nimi"
+
+msgid "searchscope"
+msgstr "Skoop"
+
+msgid "currentfolder"
+msgstr "Käesolev kaust"
+
+msgid "subfolders"
+msgstr "See ja alamkaust"
+
+msgid "allfolders"
+msgstr "Kõik kaustad"
+
+msgid "searchinterval-1W"
+msgstr "vanemad kui nädal"
+
+msgid "searchinterval-1M"
+msgstr "vanemad kui kuu"
+
+msgid "searchinterval-1Y"
+msgstr "vanemad kui aasta"
+
+msgid "searchinterval1W"
+msgstr "värskemad kui nädal"
+
+msgid "searchinterval1M"
+msgstr "värskemad kui kuu"
+
+msgid "searchinterval1Y"
+msgstr "värskemad kui aasta"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Ava uues aknas"
+
+msgid "emlsave"
+msgstr "Salvesta (.eml)"
+
+msgid "changeformattext"
+msgstr "Näita lihttekstina"
+
+msgid "changeformathtml"
+msgstr "Näita HTMLis"
+
+msgid "editasnew"
+msgstr "Kasuta uue kirja põhjana"
+
+msgid "send"
+msgstr "Saada"
+
+msgid "sendmessage"
+msgstr "Saada kiri kohe"
+
+msgid "savemessage"
+msgstr "Salvesta mustand"
+
+msgid "addattachment"
+msgstr "Lisa fail"
+
+msgid "charset"
+msgstr "Märgistik"
+
+msgid "editortype"
+msgstr "Redaktori tüüp"
+
+msgid "returnreceipt"
+msgstr "Kättesaamiskinnitus"
+
+msgid "dsn"
+msgstr "Kohalejõudmise teavitus"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "$date kirjutas $sender:"
+
+msgid "originalmessage"
+msgstr "Esialgne kiri"
+
+msgid "selectimage"
+msgstr "Vali pilt"
+
+msgid "addimage"
+msgstr "Lisa pilt"
+
+msgid "selectmedia"
+msgstr "Vali film"
+
+msgid "addmedia"
+msgstr "Lisa film"
+
+msgid "encrypt"
+msgstr "Krüpti"
+
+msgid "encryptmessage"
+msgstr "Krüpti kiri"
+
+msgid "encryptmessagemailvelope"
+msgstr "Krüpteeri kiri kasutades Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Impordi avalikud võtmed"
+
+msgid "encryptedsendialog"
+msgstr "Saadan krüptitud kirja"
+
+msgid "encryptandsign"
+msgstr "Krüpteeri ja allkirjasta"
+
+msgid "keyid"
+msgstr "Võtme ID"
+
+msgid "keylength"
+msgstr "Bitte"
+
+msgid "keyexpired"
+msgstr "Aegunud"
+
+msgid "keyrevoked"
+msgstr "Tühistatud"
+
+msgid "bccinstead"
+msgstr "Kasuta Pimekoopiat"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Lisa"
+
+msgid "insertcontact"
+msgstr "Lisa kontakt(id)"
+
+msgid "recipient"
+msgstr "Saaja"
+
+msgid "recipientedit"
+msgstr "Saaja muutmine"
+
+msgid "editidents"
+msgstr "Muuda Identiteete"
+
+msgid "spellcheck"
+msgstr "Õigekiri"
+
+msgid "checkspelling"
+msgstr "Kontrolli õigekirja"
+
+msgid "resumeediting"
+msgstr "Jätka muutmist"
+
+msgid "revertto"
+msgstr "Pööra tagasi"
+
+msgid "restore"
+msgstr "Taasta"
+
+msgid "restoremessage"
+msgstr "Taasta kiri?"
+
+msgid "ignore"
+msgstr "Igroneeri"
+
+msgid "responses"
+msgstr "Vastused"
+
+msgid "insertresponse"
+msgstr "Lisa vastus"
+
+msgid "manageresponses"
+msgstr "Halda vastuseid"
+
+msgid "newresponse"
+msgstr "Loo uus vastus"
+
+msgid "addresponse"
+msgstr "Lisa vastus"
+
+msgid "editresponse"
+msgstr "Muuda vastust"
+
+msgid "editresponses"
+msgstr "Muuda vastuseid"
+
+msgid "responsename"
+msgstr "Nimi"
+
+msgid "responsetext"
+msgstr "Vastuse sisu"
+
+msgid "attach"
+msgstr "Manusta"
+
+msgid "attachments"
+msgstr "Manused"
+
+msgid "upload"
+msgstr "Kinnita manus"
+
+msgid "uploadprogress"
+msgstr "$percent ($current / $total)"
+
+msgid "close"
+msgstr "Sulge"
+
+msgid "messageoptions"
+msgstr "Kirja valikud..."
+
+msgid "togglecomposeoptions"
+msgstr "Muuda koostamise valikuid"
+
+msgid "attachmentrename"
+msgstr "Nimeta manus ümber"
+
+msgid "low"
+msgstr "Madal"
+
+msgid "lowest"
+msgstr "Madalaim"
+
+msgid "normal"
+msgstr "Tavaline"
+
+msgid "high"
+msgstr "Kõrge"
+
+msgid "highest"
+msgstr "Kõrgeim"
+
+msgid "nosubject"
+msgstr "(teema puudub)"
+
+msgid "showimages"
+msgstr "Näita pilte"
+
+msgid "allow"
+msgstr "Luba"
+
+msgid "alwaysshow"
+msgstr "Näita alati $sender saadetud pilte"
+
+msgid "alwaysallow"
+msgstr "Alati luba $sender"
+
+msgid "isdraft"
+msgstr "See on mustand."
+
+msgid "andnmore"
+msgstr "$nr veel…"
+
+msgid "details"
+msgstr "Detailid"
+
+msgid "summary"
+msgstr "Kokkuvõte"
+
+msgid "headers"
+msgstr "Päised"
+
+msgid "allheaders"
+msgstr "Kõik päised..."
+
+msgid "togglemoreheaders"
+msgstr "Näita rohkem kirja päiseid"
+
+msgid "togglefullheaders"
+msgstr "Näita/peida algseid päiseid"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Lihttekst"
+
+msgid "savesentmessagein"
+msgstr "Salvesta saadetud kirjad kausta"
+
+msgid "dontsave"
+msgstr "ära salvesta"
+
+msgid "maxuploadsize"
+msgstr "Faili maksimaalne lubatud suurus on $size"
+
+msgid "addcc"
+msgstr "Lisa koopia"
+
+msgid "addbcc"
+msgstr "Lisa pimekoopia"
+
+msgid "addreplyto"
+msgstr "Lisa vastus aadressile"
+
+msgid "addfollowupto"
+msgstr "Lisa Followup-To"
+
+msgid "sendreceipt"
+msgstr "Kas saata lugemise kinnitus?"
+
+msgid "mdnrequest"
+msgstr ""
+"Selle kirja saatja soovib saada kinnitust kirja lugemise kohta. Kas soovid "
+"kinnituse saata?"
+
+msgid "receiptread"
+msgstr "Kättesaamiskinnitus (loetud)"
+
+msgid "yourmessage"
+msgstr "See on sinu saadetud kirja kättesaamiskinnitus"
+
+msgid "receiptnote"
+msgstr ""
+"Märkus: Kättesaamiskinnituse saamine tähendab ainult seda, et saaja on kirja"
+" avanud. Pole mingit garantiid, et ta kirja tegelikult luges ja selle sisust"
+" aru sai."
+
+msgid "sendalwaysto"
+msgstr "Saada alati e-postile $email"
+
+msgid "zoomin"
+msgstr "Suurenda"
+
+msgid "zoomout"
+msgstr "Vähenda"
+
+msgid "rotate"
+msgstr "Keera"
+
+msgid "increaseimage"
+msgstr "Suurenda pildi suurust"
+
+msgid "decreaseimage"
+msgstr "Vähenda pildi suurust"
+
+msgid "rotateimage"
+msgstr "Keera pilti"
+
+msgid "showtools"
+msgstr "Kuva pildi tööriistad"
+
+msgid "hidetools"
+msgstr "Peida pildi tööriistad"
+
+msgid "name"
+msgstr "Näidatav nimi"
+
+msgid "firstname"
+msgstr "Eesnimi"
+
+msgid "surname"
+msgstr "Perekonnanimi"
+
+msgid "middlename"
+msgstr "Keskmine nimi"
+
+msgid "nameprefix"
+msgstr "Eesliide"
+
+msgid "namesuffix"
+msgstr "Järelliide"
+
+msgid "nickname"
+msgstr "Hüüdnimi"
+
+msgid "jobtitle"
+msgstr "Töökoht"
+
+msgid "department"
+msgstr "Osakond"
+
+msgid "gender"
+msgstr "Sugu"
+
+msgid "maidenname"
+msgstr "Neiupõlve nimi"
+
+msgid "email"
+msgstr "E-post"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Aadress"
+
+msgid "street"
+msgstr "Tänav"
+
+msgid "locality"
+msgstr "Linn"
+
+msgid "zipcode"
+msgstr "Postiindeks"
+
+msgid "region"
+msgstr "Piirkond"
+
+msgid "country"
+msgstr "Riik"
+
+msgid "birthday"
+msgstr "Sünnipäev"
+
+msgid "anniversary"
+msgstr "Tähtpäev"
+
+msgid "website"
+msgstr "Veebileht"
+
+msgid "instantmessenger"
+msgstr "Kiirsuhtlus"
+
+msgid "notes"
+msgstr "Märkused"
+
+msgid "male"
+msgstr "mees"
+
+msgid "female"
+msgstr "naine"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Juht"
+
+msgid "assistant"
+msgstr "Assistent"
+
+msgid "spouse"
+msgstr "Abikaasa"
+
+msgid "allfields"
+msgstr "Kõik väljad"
+
+msgid "search"
+msgstr "Otsi"
+
+msgid "searchresult"
+msgstr "Otsingutulemused"
+
+msgid "advsearch"
+msgstr "Täpsem otsing"
+
+msgid "advanced"
+msgstr "Edasijõudnutele"
+
+msgid "other"
+msgstr "Muu"
+
+msgid "printcontact"
+msgstr "Prindi kontakt"
+
+msgid "qrcode"
+msgstr "QR kood"
+
+msgid "typehome"
+msgstr "Kodu"
+
+msgid "typework"
+msgstr "Töö"
+
+msgid "typeother"
+msgstr "Muu"
+
+msgid "typemobile"
+msgstr "Mobiil"
+
+msgid "typemain"
+msgstr "Peamine"
+
+msgid "typehomefax"
+msgstr "Kodune fax"
+
+msgid "typeworkfax"
+msgstr "Töö fax"
+
+msgid "typecar"
+msgstr "Auto"
+
+msgid "typepager"
+msgstr "Piipar"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Assistent"
+
+msgid "typehomepage"
+msgstr "Veebileht"
+
+msgid "typeblog"
+msgstr "Ajaveeb"
+
+msgid "typeprofile"
+msgstr "Profiil"
+
+msgid "addfield"
+msgstr "Lisa väli..."
+
+msgid "addcontact"
+msgstr "Lisa kontakt"
+
+msgid "editcontact"
+msgstr "Muuda kontakti"
+
+msgid "contacts"
+msgstr "Kontaktid"
+
+msgid "contactproperties"
+msgstr "Kontakti omadused"
+
+msgid "contactnameandorg"
+msgstr "Nimi ja Organisatsioon"
+
+msgid "personalinfo"
+msgstr "Isiklik info"
+
+msgid "personal"
+msgstr "Isiklik"
+
+msgid "contactphoto"
+msgstr "Kontakti pilt"
+
+msgid "edit"
+msgstr "Muuda"
+
+msgid "cancel"
+msgstr "Katkesta"
+
+msgid "save"
+msgstr "Salvesta"
+
+msgid "delete"
+msgstr "Kustuta"
+
+msgid "discard"
+msgstr "Loobu"
+
+msgid "continue"
+msgstr "Jätka"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Nimeta ümber"
+
+msgid "addphoto"
+msgstr "Lisa"
+
+msgid "replacephoto"
+msgstr "Asenda"
+
+msgid "uploadphoto"
+msgstr "Lisa foto"
+
+msgid "choosefile"
+msgstr "Vali fail..."
+
+msgid "choosefiles"
+msgstr "Vali failid..."
+
+msgid "browse"
+msgstr "Sirvi"
+
+msgid "newcontact"
+msgstr "Loo uus kontakt"
+
+msgid "deletecontact"
+msgstr "Kustuta märgistatud kontaktid"
+
+msgid "composeto"
+msgstr "Kirjuta kiri"
+
+msgid "contactsfromto"
+msgstr "Kirjed $from kuni $to, kokku $count"
+
+msgid "print"
+msgstr "Trüki"
+
+msgid "export"
+msgstr "Ekspordi"
+
+msgid "exportall"
+msgstr "Ekspordi kõik"
+
+msgid "exportsel"
+msgstr "Ekspordi valitud"
+
+msgid "exportvcards"
+msgstr "Ekspordi kontaktid vCardi formaadis"
+
+msgid "newgroup"
+msgstr "Loo uus grupp"
+
+msgid "addgroup"
+msgstr "Lisa grupp"
+
+msgid "grouprename"
+msgstr "Nimeta grupp ümber"
+
+msgid "groupdelete"
+msgstr "Kustuta grupp"
+
+msgid "groupassign"
+msgstr "Lisa gruppi"
+
+msgid "groupremove"
+msgstr "Eemalda grupist"
+
+msgid "groupremoveselected"
+msgstr "Eemalda valitud kontaktid grupist"
+
+msgid "uponelevel"
+msgstr "Üks tase kõrgemale"
+
+msgid "previouspage"
+msgstr "Näita eelmist lehte"
+
+msgid "firstpage"
+msgstr "Näita esimest komplekti"
+
+msgid "nextpage"
+msgstr "Näita järgmist lehte"
+
+msgid "lastpage"
+msgstr "Näita viimast komplekti"
+
+msgid "group"
+msgstr "Grupp"
+
+msgid "groups"
+msgstr "Grupid"
+
+msgid "listgroup"
+msgstr "Näita grupi liikmeid"
+
+msgid "personaladrbook"
+msgstr "Isiklikud aadressid"
+
+msgid "searchsave"
+msgstr "Salvesta otsing"
+
+msgid "searchdelete"
+msgstr "Kustuta otsing"
+
+msgid "import"
+msgstr "Impordi"
+
+msgid "importcontacts"
+msgstr "Impordi kontakte"
+
+msgid "importfromfile"
+msgstr "Impordi failist"
+
+msgid "importtarget"
+msgstr "Lisa kontaktid "
+
+msgid "importreplace"
+msgstr "Asenda kogu aadressiraamat"
+
+msgid "importgroups"
+msgstr "Impordi grupi ülessanded"
+
+msgid "importgroupsall"
+msgstr "Kõik (loo vajadusel grupid)"
+
+msgid "importgroupsexisting"
+msgstr "Ainult olemasolevatele gruppidele"
+
+msgid "importdesc"
+msgstr ""
+"Saate ülesse laadida kontakte olemasolevast aadressi raamatust. <br/>Hetkel "
+"on toetatud aadresside importimine <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a>või CSV(komaga "
+"eraldatud) andmete formaadis. "
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr "Väli pole seotud (ära impordi)"
+
+msgid "skipheader"
+msgstr "Ära impordi esimest rida (päis)"
+
+msgid "done"
+msgstr "Valmis"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Kasutajaeelistused kontole"
+
+msgid "about"
+msgstr "Programmist lähemalt"
+
+msgid "preferences"
+msgstr "Eelistused"
+
+msgid "userpreferences"
+msgstr "Kasutaja eelistused"
+
+msgid "editpreferences"
+msgstr "Muuda kasutaja eelistusi"
+
+msgid "identities"
+msgstr "Identiteedid"
+
+msgid "manageidentities"
+msgstr "Halda identiteete"
+
+msgid "newidentity"
+msgstr "Loo uus identiteet"
+
+msgid "addidentity"
+msgstr "Lisa identiteet"
+
+msgid "editidentity"
+msgstr "Muuda identiteeti"
+
+msgid "identityencryption"
+msgstr "Krüpteerimine"
+
+msgid "preferhtml"
+msgstr "Eelista HTMLi"
+
+msgid "defaultcharset"
+msgstr "Vaikimisi märgistik"
+
+msgid "htmlmessage"
+msgstr "HTML kirjad"
+
+msgid "messagepart"
+msgstr "Osa"
+
+msgid "digitalsig"
+msgstr "Digitaalne allkiri"
+
+msgid "dateformat"
+msgstr "Kuupäeva vorming"
+
+msgid "timeformat"
+msgstr "Aja vorming"
+
+msgid "prettydate"
+msgstr "Kenad kuupäevad"
+
+msgid "setdefault"
+msgstr "Muuda vaikeseadeks"
+
+msgid "autodetect"
+msgstr "Automaatne"
+
+msgid "language"
+msgstr "Keel"
+
+msgid "timezone"
+msgstr "Ajavöönd"
+
+msgid "pagesize"
+msgstr "Ridu lehe kohta"
+
+msgid "signature"
+msgstr "Allkiri"
+
+msgid "dstactive"
+msgstr "Suveaeg"
+
+msgid "showinextwin"
+msgstr "Ava kiri uues aknas"
+
+msgid "composeextwin"
+msgstr "Koosta uues aknas"
+
+msgid "htmleditor"
+msgstr "Kasuta HTML redaktorit"
+
+msgid "htmlonreply"
+msgstr "vaid HTML-vormingus kirjale vastamisel"
+
+msgid "htmlonreplyandforward"
+msgstr "edastamisel või HTML kirjale vastates"
+
+msgid "htmlsignature"
+msgstr "HTML allkiri"
+
+msgid "showemail"
+msgstr "Näita nime juures e-posti aadressi"
+
+msgid "previewpane"
+msgstr "Näita eelvaate akent"
+
+msgid "skin"
+msgstr "Kliendi välimus"
+
+msgid "logoutclear"
+msgstr "Tühjenda väljumisel prügikast"
+
+msgid "logoutcompact"
+msgstr "Tihenda väljumisel sissetulevate kaust"
+
+msgid "uisettings"
+msgstr "Kasutajaliides"
+
+msgid "serversettings"
+msgstr "Serveri seaded"
+
+msgid "mailboxview"
+msgstr "Postkasti vaade"
+
+msgid "mdnrequests"
+msgstr "Kättesaamiskinnitus"
+
+msgid "askuser"
+msgstr "küsi kasutajalt"
+
+msgid "autosend"
+msgstr "saada automaatselt"
+
+msgid "autosendknown"
+msgstr "saada automaatselt minu kontaktidele, teised küsi üle"
+
+msgid "autosendknownignore"
+msgstr "saada automaatselt minu kontaktidele, teisi ignoreeri"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "eira palvet"
+
+msgid "readwhendeleted"
+msgstr "Märgi kiri kustutamisel loetuks"
+
+msgid "flagfordeletion"
+msgstr "Kustutamise asemel märgi kiri kustutatavaks"
+
+msgid "skipdeleted"
+msgstr "Ära näita kustutatud kirju"
+
+msgid "deletealways"
+msgstr "Kui kirjade prügikasti liigutamine nurjub, siis kustuta need"
+
+msgid "deletejunk"
+msgstr "Kustuta Rämps kaustas olevad kirjad kohe"
+
+msgid "showremoteimages"
+msgstr "Näita kirjas kaugelt kaasatud pilte"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "tuntud saatjatelt"
+
+msgid "fromtrustedsenders"
+msgstr "usaldusväärsetelt saatjatelt"
+
+msgid "frommycontacts"
+msgstr "minu kontaktidelt"
+
+msgid "always"
+msgstr "alati"
+
+msgid "alwaysbutplain"
+msgstr "alati, välja arvatud lihttekstile vastates"
+
+msgid "showinlineimages"
+msgstr "Näita manustatud pilte kirja all"
+
+msgid "autosavedraft"
+msgstr "Salvesta mustandid automaatselt"
+
+msgid "everynminutes"
+msgstr "iga $n minuti tagant"
+
+msgid "refreshinterval"
+msgstr "Värskenda (kontrolli uusi kirju, jne.)"
+
+msgid "never"
+msgstr "mitte kunagi"
+
+msgid "immediately"
+msgstr "otsekohe"
+
+msgid "messagesdisplaying"
+msgstr "Kirjade näitamine"
+
+msgid "messagescomposition"
+msgstr "Kirja koostamine"
+
+msgid "mimeparamfolding"
+msgstr "Manuste nimed"
+
+msgid "2231folding"
+msgstr "Täielik RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Täielik RFC 2047 (muu)"
+
+msgid "force7bit"
+msgstr "8-bitiste märkide puhul kasuta MIME kodeerimist"
+
+msgid "savelocalstorage"
+msgstr "Salvesta veebilehitseja kohalikku hoidlasse (ajutiselt)"
+
+msgid "advancedoptions"
+msgstr "Lisaseadistused"
+
+msgid "toggleadvancedoptions"
+msgstr "Näita lisaseadistusi"
+
+msgid "focusonnewmessage"
+msgstr "Fookusta brauseri aken uue kirja korral"
+
+msgid "checkallfolders"
+msgstr "Kontrolli uusi kirju kõigist kaustadest"
+
+msgid "displaynext"
+msgstr ""
+"Näita pärast kustutamist või liigutamist järgmist sissekannet nimekirjas"
+
+msgid "defaultfont"
+msgstr "HTML kirjade vaikefont"
+
+msgid "mainoptions"
+msgstr "Peamised valikud"
+
+msgid "browseroptions"
+msgstr "Sirvimis valikud"
+
+msgid "section"
+msgstr "Osa"
+
+msgid "maintenance"
+msgstr "Hooldus"
+
+msgid "newmessage"
+msgstr "Uus kiri"
+
+msgid "signatureoptions"
+msgstr "Allkirja valikud"
+
+msgid "whenreplying"
+msgstr "Vastates"
+
+msgid "replyempty"
+msgstr "ära tsiteeri esialgset kirja"
+
+msgid "replytopposting"
+msgstr "alusta uue kirjaga esialgse kohal"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "alusta uue kirjaga esialgse all"
+
+msgid "replyremovesignature"
+msgstr "Vastates eemalda kirjast esialgne allkiri"
+
+msgid "autoaddsignature"
+msgstr "Lisa allkiri automaatselt"
+
+msgid "newmessageonly"
+msgstr "ainult uutele"
+
+msgid "replyandforwardonly"
+msgstr "ainult vastates ja edastades"
+
+msgid "insertsignature"
+msgstr "Sisesta allkiri"
+
+msgid "sigbelow"
+msgstr "Pane allkiri tsiteeritud kirja alla"
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr "Märgi sõnum loetuks"
+
+msgid "afternseconds"
+msgstr "$n sekundi pärast"
+
+msgid "reqmdn"
+msgstr "Nõua alati kättesaamiskinnitust"
+
+msgid "reqdsn"
+msgstr "Nõua alati kohalejõudmisteavitust"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Paiguta vastused samasse kausta, millele vastatakse"
+
+msgid "defaultabook"
+msgstr "Vaikimisi aadressiraamat"
+
+msgid "autocompletesingle"
+msgstr "Automaatlõpetuses jäta alternatiivne e-posti aadress vahele"
+
+msgid "listnamedisplay"
+msgstr "Näita kontakte kui"
+
+msgid "contactformmode"
+msgstr "Konktaktivormi režiim"
+
+msgid "privatemode"
+msgstr "Privaatne (kodu)"
+
+msgid "businessmode"
+msgstr "Töö (Kontor)"
+
+msgid "collectedaddresses"
+msgstr "Kogutud aadressid"
+
+msgid "collectedrecipients"
+msgstr "Kogutud saajad"
+
+msgid "collectedrecipientsopt"
+msgstr "Salvesta väljuvad kontaktid:"
+
+msgid "collectedsendersopt"
+msgstr "Salvesta usaldusväärsed saatjad:"
+
+msgid "trustedsenders"
+msgstr "Usaldusväärsed saatjad"
+
+msgid "spellcheckbeforesend"
+msgstr "Kontrolli õigekirja enne saatmist"
+
+msgid "spellcheckoptions"
+msgstr "Õigekirjakontrolli valikud"
+
+msgid "spellcheckignoresyms"
+msgstr "Ignoreeri sõnu, milles on sümbolid"
+
+msgid "spellcheckignorenums"
+msgstr "Ignoreeri sõnu, milles on numbreid"
+
+msgid "spellcheckignorecaps"
+msgstr "Ignoreeri suurte tähtedega kirjutatud sõnu"
+
+msgid "addtodict"
+msgstr "Lisa sõnastikku"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Kasuta mailto: linkide avamisel"
+
+msgid "standardwindows"
+msgstr "Käsitle hüpikaknaid tavaliste akendena"
+
+msgid "forwardmode"
+msgstr "Kirja edastamine"
+
+msgid "inline"
+msgstr "kirja sees"
+
+msgid "asattachment"
+msgstr "manusena"
+
+msgid "replyallmode"
+msgstr "Vaike käitumine [Vasta kõigile] nupul"
+
+msgid "replyalldefault"
+msgstr "Vasta kõigile"
+
+msgid "replyalllist"
+msgstr "vasta ainult postiloendile (juhul kui leitud)"
+
+msgid "allmessages"
+msgstr "kõik kirjad"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Kaust"
+
+msgid "folders"
+msgstr "Kaustad"
+
+msgid "foldername"
+msgstr "Kausta nimi"
+
+msgid "subscribed"
+msgstr "Näitan"
+
+msgid "messagecount"
+msgstr "Kirju"
+
+msgid "create"
+msgstr "Loo"
+
+msgid "createfolder"
+msgstr "Uue kausta loomine"
+
+msgid "managefolders"
+msgstr "Halda kaustu"
+
+msgid "specialfolders"
+msgstr "Erilised kaustad"
+
+msgid "properties"
+msgstr "Omadused"
+
+msgid "folderproperties"
+msgstr "Kausta omadused"
+
+msgid "parentfolder"
+msgstr "Ülemine kaust"
+
+msgid "location"
+msgstr "Asukoht"
+
+msgid "info"
+msgstr "Teave"
+
+msgid "getfoldersize"
+msgstr "Kliki kausta suuruse teadasaamiseks"
+
+msgid "changesubscription"
+msgstr "Kliki kausta tellimuste muutmiseks"
+
+msgid "foldertype"
+msgstr "Kausta tüüp"
+
+msgid "personalfolder"
+msgstr "Isiklik kaust"
+
+msgid "otherfolder"
+msgstr "Teiste kasutajate kaust"
+
+msgid "sharedfolder"
+msgstr "Avalik kaust"
+
+msgid "findfolders"
+msgstr "Otsi kaustasi"
+
+msgid "findcontacts"
+msgstr "Otsi kontakte"
+
+msgid "findmail"
+msgstr "Otsi maile"
+
+msgid "namespace.personal"
+msgstr "Isiklik"
+
+msgid "namespace.other"
+msgstr "Teised kasutajad"
+
+msgid "namespace.shared"
+msgstr "Jagatud"
+
+msgid "dualuselabel"
+msgstr "Võib sisaldada ainult"
+
+msgid "dualusemail"
+msgstr "sõnumid"
+
+msgid "dualusefolder"
+msgstr "Kataloogid"
+
+msgid "generate"
+msgstr "Genereeri"
+
+msgid "encryptioncreatekey"
+msgstr "Loo uus võtme paar"
+
+msgid "openmailvelopesettings"
+msgstr "Ava Mailvelope seaded"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "Krüpteerimine"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelope valikud"
+
+msgid "mailvelopemainkeyring"
+msgstr "Kasuta Mailvelope peamist võtmerõngast"
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Järjesta"
+
+msgid "sortasc"
+msgstr "Järjesta kasvavalt"
+
+msgid "sortdesc"
+msgstr "Järjesta kahanevalt"
+
+msgid "undo"
+msgstr "Võta tagasi"
+
+msgid "installedplugins"
+msgstr "Paigaldatud pluginad"
+
+msgid "plugin"
+msgstr "Plugin"
+
+msgid "version"
+msgstr "Versioon"
+
+msgid "source"
+msgstr "Allikas"
+
+msgid "destination"
+msgstr "Sihtkoht"
+
+msgid "license"
+msgstr "Litsents"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Küsi abi"
+
+msgid "savedsearches"
+msgstr "Salvestatud otsingud"
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KiB"
+
+msgid "MB"
+msgstr "MiB"
+
+msgid "GB"
+msgstr "GiB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "inglise"
+
+msgid "westerneuropean"
+msgstr "Lääne-Euroopa"
+
+msgid "easterneuropean"
+msgstr "Ida-Euroopa"
+
+msgid "southeasterneuropean"
+msgstr "Kagu-Euroopa"
+
+msgid "baltic"
+msgstr "balti"
+
+msgid "cyrillic"
+msgstr "kirillitsa"
+
+msgid "arabic"
+msgstr "araabia"
+
+msgid "greek"
+msgstr "kreeka"
+
+msgid "hebrew"
+msgstr "heebrea"
+
+msgid "turkish"
+msgstr "türgi"
+
+msgid "nordic"
+msgstr "põhjamaa"
+
+msgid "thai"
+msgstr "tai"
+
+msgid "celtic"
+msgstr "keldi"
+
+msgid "vietnamese"
+msgstr "vietnami"
+
+msgid "japanese"
+msgstr "jaapani"
+
+msgid "korean"
+msgstr "korea"
+
+msgid "chinese"
+msgstr "hiina"
+
+msgid "arialabeltopnav"
+msgstr "Akna kontroll"
+
+msgid "arialabeltasknav"
+msgstr "Rakenduse ülesanded"
+
+msgid "arialabeltoolbar"
+msgstr "Rakenduse tööriba"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "Aktiivne ülesanne"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "E-kirja näitamise filter"
+
+msgid "arialabelmailsearchform"
+msgstr "E-kirja otsimise vorm"
+
+msgid "arialabelcontactsearchform"
+msgstr "Kontakti otsimise vorm"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "E-kirja otsingu sisend"
+
+msgid "arialabelquicksearchbox"
+msgstr "Otsingu sisend"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Kausta näitamise filter"
+
+msgid "arialabelfoldersearchform"
+msgstr "Kausta otsimise vorm"
+
+msgid "arialabelfolderlist"
+msgstr "E-kirja kausta valik"
+
+msgid "arialabelmessagelist"
+msgstr "E-kirjade näitamine"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Kirja eelvaade"
+
+msgid "arialabelmailboxmenu"
+msgstr "Kausta tegevuste menüü"
+
+msgid "arialabellistselectmenu"
+msgstr "Nimekirja valiku menüü"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Lõimede näitamise menüü"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Kirjade näitamise ja sorteerimise võimalused"
+
+msgid "arialabelmailimportdialog"
+msgstr "Kirja importi dialoog"
+
+msgid "arialabelmessagenav"
+msgstr "Kirja navigatsioon"
+
+msgid "arialabelmessagebody"
+msgstr "Kirja sisu"
+
+msgid "arialabelmessageactions"
+msgstr "Kirja tegevus"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Kontakti otsingu vorm"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Kontakti otsingu sisend"
+
+msgid "arialabelmessageheaders"
+msgstr "Kirja päis"
+
+msgid "arialabelforwardingoptions"
+msgstr "Edasisuunamise valikud"
+
+msgid "arialabelreplyalloptions"
+msgstr "Vasta kõigile valikud"
+
+msgid "arialabelmoremessageactions"
+msgstr "Rohkem kirja tegevusi"
+
+msgid "arialabelmorecontactactions"
+msgstr "Veel kontakti tegevusi"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Märgi valitud kirjad"
+
+msgid "arialabelcomposeoptions"
+msgstr "Koostamise valikud"
+
+msgid "arialabelresponsesmenu"
+msgstr "Vastuse mallide menüü"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Manuse ülesselaadimise vorm"
+
+msgid "arialabelattachmentmenu"
+msgstr "Manuse valikud"
+
+msgid "arialabelmailtomenu"
+msgstr "Meiliaadressi valikud"
+
+msgid "arialabelattachmentpreview"
+msgstr "Manuse eelvaade"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Nimekiri kontaktidest ja gruppidest keda valida vastuvõtjateks"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Kontakti ekspordi võimalused"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Telefoniraamatu/grupi võimalused"
+
+msgid "arialabelpreferencesform"
+msgstr "Eelistuste vorm"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Identiteedi muutmis vorm"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Vastuse muutmis vorm"
+
+msgid "arialabelsearchterms"
+msgstr "Otsingusõnad"
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr "Pildi tööriistad"
+
+msgid "helplistnavigation"
+msgstr "Näita klaviatuuri navigatsiooni"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Nooled üles/alla: Muuda rida fokuseeri/vali\n"
+"Tühik: Vali fokuseeritud rida\n"
+"Shift + üles/alla: Vali lisaks rida alt/ülevalt\n"
+"Ctrl + Space: Lisa fokuseeritud rida valikusse/eemalda valikust"
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Nooled paremale/vasakule: laienda/peida kirjade lõimed\n"
+"Enter: Ava valitud/fokuseeritud kiri\n"
+"Delete: Liigutda valitud kiri prügikasti."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Ava valitud/fokuseeritud kontakt"
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Ilmnes tõrge!"
+
+msgid "messages.loginfailed"
+msgstr "Sisselogimine ebaõnnestus."
+
+msgid "messages.cookiesdisabled"
+msgstr "Sinu veebilehitseja ei võta präänikuid vastu"
+
+msgid "messages.sessionerror"
+msgstr "Sinu seanss on aegunud või vigane"
+
+msgid "messages.cookiesmismatch"
+msgstr "Tuvastatud küpsise sobimatus. Tühjenda oma brauseri küpsised."
+
+msgid "messages.storageerror"
+msgstr "Ei õnnestunud IMAP serveriga ühendust luua"
+
+msgid "messages.servererror"
+msgstr "Serveri tõrge!"
+
+msgid "messages.servererrormsg"
+msgstr "Serveri tõrge: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Liiga palju ebaõnnestunud sisselogimiskatseid. Proovi hiljem uuesti."
+
+msgid "messages.connerror"
+msgstr "Viga ühenduses (Ei suutnud luua ühendust serveriga)"
+
+msgid "messages.dberror"
+msgstr "Andmebaasi tõrge!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Hüpikaken blokeeriti!"
+
+msgid "messages.requesttimedout"
+msgstr "Päring aegus"
+
+msgid "messages.errorreadonly"
+msgstr "Operatsioon nurjus. Kaustale on vaid lugemisõigus"
+
+msgid "messages.errornoperm"
+msgstr "Operatsioon nurjus. Ligipääsu õigused puuduvad"
+
+msgid "messages.erroroverquota"
+msgstr "Operatsioon nurjus. Ketas on täis."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Ketas on täis. Kirja kustutamiseks vajuta SHIFT+DEL."
+
+msgid "messages.invalidrequest"
+msgstr "Lubamatu päring! Andmeid ei salvestatud."
+
+msgid "messages.invalidhost"
+msgstr "Lubamatu serveri nimi."
+
+msgid "messages.nomessagesfound"
+msgstr "Postkast paistab tühi olevat"
+
+msgid "messages.loggedout"
+msgstr "Oled sessiooni edukalt lõpetanud. Nägemist!"
+
+msgid "messages.mailboxempty"
+msgstr "Postkast on tühi"
+
+msgid "messages.nomessages"
+msgstr "Pole teateid"
+
+msgid "messages.refreshing"
+msgstr "Värskendamine…"
+
+msgid "messages.loading"
+msgstr "Laadin..."
+
+msgid "messages.uploading"
+msgstr "Laadin faili üles..."
+
+msgid "messages.attaching"
+msgstr "Lisan faili..."
+
+msgid "messages.uploadingmany"
+msgstr "Failide üleslaadimine..."
+
+msgid "messages.loadingdata"
+msgstr "Andmete laadimine..."
+
+msgid "messages.checkingmail"
+msgstr "Kontrollin uusi kirju..."
+
+msgid "messages.sendingmessage"
+msgstr "Saadan kirja..."
+
+msgid "messages.messagesent"
+msgstr "Kiri edukalt saadetud"
+
+msgid "messages.savingmessage"
+msgstr "Salvestan kirja..."
+
+msgid "messages.messagesaved"
+msgstr "Kiri salvestatud mustanditesse"
+
+msgid "messages.successfullysaved"
+msgstr "Edukalt salvestatud"
+
+msgid "messages.savingresponse"
+msgstr "Salvestan vastuse teksti..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Soovid valitud vastuse kustutada?"
+
+msgid "messages.nocontactselected"
+msgstr "Sa ei ole veel kontakti valinud"
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontakt lisati edukalt aadressiraamatusse"
+
+msgid "messages.contactexists"
+msgstr "Sama e-posti aadressiga kontakt on juba olemas."
+
+msgid "messages.contactnameexists"
+msgstr "Sama nimega kontakt on juba olemas."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Sinu privaatsuse kaitsmiseks on selles kirjas välised pildid blokeeritud."
+
+msgid "messages.blockedresources"
+msgstr "Sinu privaatsuse kaitsmiseks on kaugressursid blokeeritud."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr ""
+"See on krüpteeritud kiri ja kahjuks pole seda võimalik näidata. Andestust!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"See on krüptitud kiri ja selle saab teie brauserilaiendiga dekrüpteerida."
+
+msgid "messages.nopubkeyfor"
+msgstr "Ei leitud ühtegi kehtivat avalikku $email võtit"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Ei leitud ühtegi kontakti"
+
+msgid "messages.contactnotfound"
+msgstr "Otsitud kontakti ei leitud"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Valitud aadressiraamatus olevate kontaktide nägemiseks pead kasutama "
+"otsinguvormi."
+
+msgid "messages.sendingfailed"
+msgstr "Kirja saatmine ebaõnnestus"
+
+msgid "messages.senttooquickly"
+msgstr "Palun oota enne selle kirja saatmist $sec sekundit."
+
+msgid "messages.errorsavingsent"
+msgstr "Saadetud kirja salvestamisel ilmnes tõrge"
+
+msgid "messages.errorsaving"
+msgstr "Salvestamisel ilmnes tõrge."
+
+msgid "messages.errormoving"
+msgstr "Ei suutnud seda kirja liigutada"
+
+msgid "messages.errorcopying"
+msgstr "Kirju ei õnnestunud kopeerida"
+
+msgid "messages.errordeleting"
+msgstr "Ei suutnud seda kirja kustutada"
+
+msgid "messages.errormarking"
+msgstr "Kirja märkimine nurjus"
+
+msgid "messages.alerttitle"
+msgstr "Tähelepanu"
+
+msgid "messages.confirmationtitle"
+msgstr "Oled sa kindel..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Soovid valitud kontaktid kustutada?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Soovid valitud grupi kustutada?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Soovid valitud kirja(d) kustutada?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Soovid selle kataloogi kindlasti kustutada?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Kas soovid tõesti selle kausta teisaldada?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Soovid sellest kaustast kõik kirjad kustutada?"
+
+msgid "messages.contactdeleting"
+msgstr "Kontakti(de) kustutamine…"
+
+msgid "messages.groupdeleting"
+msgstr "Grupi kustutamine…"
+
+msgid "messages.folderdeleting"
+msgstr "Kustutan kausta..."
+
+msgid "messages.foldermoving"
+msgstr "Liigutan kausta..."
+
+msgid "messages.foldersubscribing"
+msgstr "Tellin kausta..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Peatan kausta tellimuse..."
+
+msgid "messages.formincomplete"
+msgstr "Vormi kõik väljad ei ole täidetud"
+
+msgid "messages.noemailwarning"
+msgstr "Palun sisesta toimiv e-posti aadress"
+
+msgid "messages.nonamewarning"
+msgstr "Palun sisesta nimi"
+
+msgid "messages.nopagesizewarning"
+msgstr "Palun sisesta lehekülje suurus"
+
+msgid "messages.nosenderwarning"
+msgstr "Sisesta saatja e-posti aadress."
+
+msgid "messages.recipientsadded"
+msgstr "Adressaat edukalt lisatud."
+
+msgid "messages.norecipientwarning"
+msgstr "Palun sisesta vähemalt üks adressaat"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "Liiga palju avalikke adressaate"
+
+msgid "messages.nosubjectwarning"
+msgstr "Väli „Pealkiri“ on tühi. Soovid selle ära täita?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Teema puudub"
+
+msgid "messages.nobodywarning"
+msgstr "Saadan selle kirja ilma tekstita?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Sõnumit ei ole saadetud ja selles on salvestamata muudatusi. Kas soovid "
+"muudatustest loobuda?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Eelnevalt loodud aga saatmatta kiri leiti.\\n\\nTeema: "
+"$subject\\nSalvestatud: $date\\n\\nKas sa soovid antud kirja taastada?"
+
+msgid "messages.nosearchname"
+msgstr "Palun sisesta kontakti nimi või e-posti aadress"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Kõiki manuseid ei ole veel üles laaditud. Palun oota või tühista "
+"üleslaadimine."
+
+msgid "messages.searchsuccessful"
+msgstr "Leiti $nr kirja"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Leiti $nr kontakti."
+
+msgid "messages.searchnomatch"
+msgstr "Otsingule vastavaid kirju ei leitud"
+
+msgid "messages.searching"
+msgstr "Otsin..."
+
+msgid "messages.checking"
+msgstr "Kontrollin..."
+
+msgid "messages.stillsearching"
+msgstr "Otsin...."
+
+msgid "messages.nospellerrors"
+msgstr "Õigekirjavigu ei leitud"
+
+msgid "messages.folderdeleted"
+msgstr "Kausta kustutamine õnnestus"
+
+msgid "messages.foldersubscribed"
+msgstr "Kausta tellimine õnnestus"
+
+msgid "messages.folderunsubscribed"
+msgstr "Kausta tellimise peatamine õnnestus"
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Edukalt kustutatud"
+
+msgid "messages.converting"
+msgstr "Eemaldan kirjast vormindust..."
+
+msgid "messages.messageopenerror"
+msgstr "Kirjade serverist laadimine ebaõnnestus"
+
+msgid "messages.filelinkerror"
+msgstr "Faili lisamine ebaõnnestus."
+
+msgid "messages.fileuploaderror"
+msgstr "Faili üleslaadimine ebaõnnestus"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Üleslaetava faili suurus ületab maksimaalse suuruse $size"
+
+msgid "messages.filecounterror"
+msgstr "Maksimaalselt saad lisada $count faili korraga."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Faili lisamine ebaõnnestus. Sõnumi maksimaalne suurus ($size) on ületatud."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Sõnumi maksimaalne suurus ($size) on ületatud. $num sõnumit pole lisatud."
+
+msgid "messages.copysuccess"
+msgstr "$nr kontakti edukalt kopeeritud."
+
+msgid "messages.movesuccess"
+msgstr "$nr kontakti edukalt liigutatud."
+
+msgid "messages.copyerror"
+msgstr "Ühegi kontakti kopeerimine ei õnnestunud."
+
+msgid "messages.moveerror"
+msgstr "Ühegi kontakti liigutamine ei õnnestunud."
+
+msgid "messages.sourceisreadonly"
+msgstr "Aadressi asukohas puuduvad kirjutusõigused"
+
+msgid "messages.errorsavingcontact"
+msgstr "Kontakti aadressi salvestamine ebaõnnestus"
+
+msgid "messages.movingmessage"
+msgstr "Liigutan kirja..."
+
+msgid "messages.copyingmessage"
+msgstr "Kopeerin kirja..."
+
+msgid "messages.copyingcontact"
+msgstr "Kontakti(de) kopeerimine…"
+
+msgid "messages.movingcontact"
+msgstr "Kontakti(de) liigutamine…"
+
+msgid "messages.deletingmessage"
+msgstr "Kustutan kirja..."
+
+msgid "messages.markingmessage"
+msgstr "Märgin kirja..."
+
+msgid "messages.addingmember"
+msgstr "Kontakti(de) gruppi lisamine…"
+
+msgid "messages.removingmember"
+msgstr "Kontakti(de) grupist eemaldamine…"
+
+msgid "messages.receiptsent"
+msgstr "Kättesaamiskinnitus saadetud"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Ei õnnestunud kättesaamiskinnitust saata"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Soovid selle identiteedi kustutada?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "See identiteet on viimane ja seda ei saa kustutada."
+
+msgid "messages.forbiddencharacter"
+msgstr "Kausta nimi sisaldab keelatud sümbolit"
+
+msgid "messages.selectimportfile"
+msgstr "Palun vali üleslaadimiseks fail"
+
+msgid "messages.addresswriterror"
+msgstr "Valitud aadressiraamat pole kirjutatav"
+
+msgid "messages.contactaddedtogroup"
+msgstr "Kontaktide lisamine gruppi õnnestus"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontaktide eemaldamine grupist õnnestus"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Gruppide ülesandeid ei muudetud"
+
+msgid "messages.importwait"
+msgstr "Impordin, palun oota..."
+
+msgid "messages.importformaterror"
+msgstr "Import nurjus! Laaditud fail ei sisalda sobilikke andmeid."
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>Edukalt imporditud $inserted kontakti, $skipped olemasolevat sissekannet "
+"vahele jäetud</b>:<p><em>$names</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr kirja edukalt imporditud"
+
+msgid "messages.importmessageerror"
+msgstr "Import nurjus! Laaditud fail ei ole kirja ega postkasti fail"
+
+msgid "messages.opnotpermitted"
+msgstr "Tegevus pole lubatud!"
+
+msgid "messages.nofromaddress"
+msgstr "Valitud identiteedis puudub e-posti aadress."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Klaarteksti redaktorile lülitamine kaotab kogu teksti vorminduse. Soovid "
+"jätkata?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Viga seadistustes. Võta kohe oma süsteemiadministraatoriga ühendust. <b>Sinu"
+" kirja polnud võimalik ära saata.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP tõrge ($code): serveriga ühendumine nurjus"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP tõrge ($code): autentimine nurjus"
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP tõrge ($code): \"$from\" saatjaks määramine nurjus ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "SMTP tõrge ($code): \"$to\" saajaks määramine nurjus ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP tõrge: saajate nimekirja parsimine nurjus"
+
+msgid "messages.smtputf8error"
+msgstr "SMTP Viga: Server ei toeta Unicode'i e-posti aadressi."
+
+msgid "messages.smtpsizeerror"
+msgstr "SMTP Viga: Kirja suurus ületab serveri limiiti ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP tõrge: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Vigane e-posti aadress: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Liiga palju adressaate. Vähenda kirja saajate hulka $max-ni."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Grupi liikmete arv ületab suurima lubatud $max"
+
+msgid "messages.internalerror"
+msgstr "Ilmnes sisemine tõrge. Palun proovi uuesti."
+
+msgid "messages.contactdelerror"
+msgstr "Kontaktide kustutamine nurjus"
+
+msgid "messages.contactdeleted"
+msgstr "Kontaktide kustutamine õnnestus"
+
+msgid "messages.contactrestoreerror"
+msgstr "Kustutatud kontakti(de) taastamine nurjus."
+
+msgid "messages.contactrestored"
+msgstr "Kontakt(id) edukalt taastatud."
+
+msgid "messages.groupdeleted"
+msgstr "Grupi kustutamine õnnestus"
+
+msgid "messages.grouprenamed"
+msgstr "Grupi ümbernimetamine õnnestus"
+
+msgid "messages.groupcreated"
+msgstr "Grupi loomine õnnestus"
+
+msgid "messages.savedsearchdeleted"
+msgstr "Salvestatud otsing edukalt kustutatud."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Salvestatud otsingu kustutamine nurjus."
+
+msgid "messages.savedsearchcreated"
+msgstr "Salvestatud otsing edukalt loodud."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Salvestatud otsingu loomine nurjus."
+
+msgid "messages.messagedeleted"
+msgstr "Kiri edukalt kustutatud"
+
+msgid "messages.messagemoved"
+msgstr "Kiri edukalt liigutatud"
+
+msgid "messages.messagemovedtotrash"
+msgstr "Kiri edukalt prügikasti teisaldatud."
+
+msgid "messages.messagecopied"
+msgstr "Kiri edukalt kopeeritud"
+
+msgid "messages.messagemarked"
+msgstr "Kiri edukalt märgitud"
+
+msgid "messages.autocompletechars"
+msgstr "Sisesta vähemalt $min märki autom. lõpetuseks"
+
+msgid "messages.autocompletemore"
+msgstr "Otsingule on liiga palju vasteid. Palun sisesta veel mõni märk."
+
+msgid "messages.namecannotbeempty"
+msgstr "Nimi ei saa olla tühi"
+
+msgid "messages.nametoolong"
+msgstr "Nimi liiga pikk"
+
+msgid "messages.namedotforbidden"
+msgstr "Kausta nimi ei tohi alata punktiga."
+
+msgid "messages.folderupdated"
+msgstr "Kaust uuendatud edukalt"
+
+msgid "messages.foldercreated"
+msgstr "Kaust loodud edukalt"
+
+msgid "messages.invalidimageformat"
+msgstr "Pole õige pildi formaat"
+
+msgid "messages.mispellingsfound"
+msgstr "Kiri sisaldab õigekirjavigu"
+
+msgid "messages.parentnotwritable"
+msgstr "Kasuta loomine/liigutamine valitud kausta nurjus. Pole õigusi."
+
+msgid "messages.messagetoobig"
+msgstr "Kiri on töötlemiseks liiga suur."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Hoiatus: see veebimaili teenus vajab Javascripti! Teenuse kasutamiseks luba "
+"Javascript oma brauseri seadetes."
+
+msgid "messages.messageissent"
+msgstr ""
+"Sõnum oli juba saadetud, kuid seda pole veel salvestatud. Kas soovid selle "
+"nüüd salvestada?"
+
+msgid "messages.errnotfound"
+msgstr "Faili ei leitud"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Päringu ressurssi ei leitud!"
+
+msgid "messages.errfailedrequest"
+msgstr "Päring nurjus"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Atoriseerimine ebaõnnestus"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Ei saanud kontrollida, kas sul on õigus seda teenust kasutada!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Päringu kontroll nurjus"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr "Palun pöördu oma serveri administraatori poole."
+
+msgid "messages.clicktoresumesession"
+msgstr "Eelmise seansi jätkamiseks klõpsa siin"
+
+msgid "messages.errcomposesession"
+msgstr "Uue sessiooni loomise tõrge"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Küsitud sessiooni ei leitud."
+
+msgid "messages.clicktocompose"
+msgstr "Uue sõnumi koostamiseks klõpsa siin"
+
+msgid "messages.nosupporterror"
+msgstr "Sinu veebibrauser seda funktsiooni ei toeta."
+
+msgid "messages.siginserted"
+msgstr "Allkiri on edukalt sisestatud."
+
+msgid "messages.responseinserted"
+msgstr "Vastus edukalt sisestatud."
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr "See nimekiri on tühi."
+
+msgid "messages.listusebutton"
+msgstr "Uue kirje lisamiseks kasuta nuppu Lisa."
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth sisselogimine ebaõnnestus. Palun proovi hiljem uuesti."
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

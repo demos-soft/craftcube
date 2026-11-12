@@ -1,0 +1,2840 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ms_MY\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Selamat datang ke $product"
+
+msgid "username"
+msgstr "Nama Pengguna"
+
+msgid "password"
+msgstr "Katalaluan"
+
+msgid "server"
+msgstr "Pelayan"
+
+msgid "login"
+msgstr "Log Masuk"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Log Keluar"
+
+msgid "mail"
+msgstr "Mel"
+
+msgid "settings"
+msgstr "Tetapan"
+
+msgid "addressbook"
+msgstr "Buku Alamat"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Peti Masuk"
+
+msgid "drafts"
+msgstr "Draf"
+
+msgid "sent"
+msgstr "Hantar"
+
+msgid "trash"
+msgstr "Tong Sampah"
+
+msgid "junk"
+msgstr "Junk"
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr "Subjek"
+
+msgid "from"
+msgstr "Daripada"
+
+msgid "sender"
+msgstr ""
+
+msgid "to"
+msgstr "Kepada"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Balasan Kepada"
+
+msgid "followupto"
+msgstr "Susulan Ke"
+
+msgid "date"
+msgstr "Tarikh"
+
+msgid "size"
+msgstr "Saiz"
+
+msgid "priority"
+msgstr "Prioriti"
+
+msgid "organization"
+msgstr "Organisasi"
+
+msgid "readstatus"
+msgstr "Status baca"
+
+msgid "listoptions"
+msgstr "Senarai pilihan"
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Folder"
+
+msgid "messagesfromto"
+msgstr "Mesej $from ke $to dari $count"
+
+msgid "threadsfromto"
+msgstr "Urutan $from ke $to dari $count"
+
+msgid "messagenrof"
+msgstr "Mesej $nr dari $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to dari $count"
+
+msgid "copy"
+msgstr "Salin"
+
+msgid "move"
+msgstr "Alih"
+
+msgid "moveto"
+msgstr "Alih ke..."
+
+msgid "copyto"
+msgstr ""
+
+msgid "download"
+msgstr "Muat Turun"
+
+msgid "open"
+msgstr ""
+
+msgid "showattachment"
+msgstr ""
+
+msgid "showanyway"
+msgstr ""
+
+msgid "filename"
+msgstr "Nama Fail"
+
+msgid "filesize"
+msgstr "Saiz Fail"
+
+msgid "addtoaddressbook"
+msgstr "Tambah ke buku alamat"
+
+msgid "sun"
+msgstr "Aha"
+
+msgid "mon"
+msgstr "Isn"
+
+msgid "tue"
+msgstr "Sel"
+
+msgid "wed"
+msgstr "Rab"
+
+msgid "thu"
+msgstr "Kha"
+
+msgid "fri"
+msgstr "Jum"
+
+msgid "sat"
+msgstr "Sab"
+
+msgid "sunday"
+msgstr "Ahad"
+
+msgid "monday"
+msgstr "Isnin"
+
+msgid "tuesday"
+msgstr "Selasa"
+
+msgid "wednesday"
+msgstr "Rabu"
+
+msgid "thursday"
+msgstr "Khamis"
+
+msgid "friday"
+msgstr "Jumaat"
+
+msgid "saturday"
+msgstr "Sabtu"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mac"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "Mei"
+
+msgid "jun"
+msgstr "Jun"
+
+msgid "jul"
+msgstr "Jul"
+
+msgid "aug"
+msgstr "Ogo"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Dis"
+
+msgid "longjan"
+msgstr "Januari"
+
+msgid "longfeb"
+msgstr "Februari"
+
+msgid "longmar"
+msgstr "March"
+
+msgid "longapr"
+msgstr "April"
+
+msgid "longmay"
+msgstr "Mei"
+
+msgid "longjun"
+msgstr "Jun"
+
+msgid "longjul"
+msgstr "Julai"
+
+msgid "longaug"
+msgstr "Ogos"
+
+msgid "longsep"
+msgstr "September"
+
+msgid "longoct"
+msgstr "Oktober"
+
+msgid "longnov"
+msgstr "November"
+
+msgid "longdec"
+msgstr "Disember"
+
+msgid "today"
+msgstr "Hari Ini"
+
+msgid "refresh"
+msgstr "Refresh"
+
+msgid "checkmail"
+msgstr "Semak mesej baru"
+
+msgid "compose"
+msgstr "Karang mesej"
+
+msgid "writenewmessage"
+msgstr "Cipta mesej baru"
+
+msgid "reply"
+msgstr "Balas"
+
+msgid "replytomessage"
+msgstr "Balas mesej"
+
+msgid "replytoallmessage"
+msgstr "Balas kepada penghantar dan semua penerima"
+
+msgid "replyall"
+msgstr "Balas semua"
+
+msgid "replylist"
+msgstr "Senarai balas"
+
+msgid "forward"
+msgstr "Majukan"
+
+msgid "forwardinline"
+msgstr "Majukan dalam mesej"
+
+msgid "forwardattachment"
+msgstr "Majukan sebagai lampiran"
+
+msgid "forwardmessage"
+msgstr "Marakan mesej"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Pindah mesej ke sampah"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Pindah mesej ke Tong Sampah"
+
+msgid "printmessage"
+msgstr "Cetak mesej ini"
+
+msgid "previousmessage"
+msgstr "Papar mesej sebelumnya"
+
+msgid "firstmessage"
+msgstr "Papar mesej pertama"
+
+msgid "nextmessage"
+msgstr "Papat mesej seterusnya"
+
+msgid "lastmessage"
+msgstr "Papat mesej terakhir"
+
+msgid "backtolist"
+msgstr "Kembali ke senarai mesej"
+
+msgid "viewsource"
+msgstr "Papar sumber"
+
+msgid "mark"
+msgstr "Tanda"
+
+msgid "markmessages"
+msgstr "Tanda mesej"
+
+msgid "markread"
+msgstr "Sebagai Dibaca"
+
+msgid "markunread"
+msgstr "Sebagai Tidak dibaca"
+
+msgid "markflagged"
+msgstr "Seperti  ditanda"
+
+msgid "markunflagged"
+msgstr "Seperti tidak ditanda"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Tindakan lanjut.."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr ""
+
+msgid "more"
+msgstr "Seterusnya"
+
+msgid "back"
+msgstr "Kembali"
+
+msgid "options"
+msgstr "Opsyen"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "next"
+msgstr ""
+
+msgid "select"
+msgstr "Pilih"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Semua"
+
+msgid "none"
+msgstr "Tiada"
+
+msgid "currpage"
+msgstr "Muka terkini"
+
+msgid "isread"
+msgstr ""
+
+msgid "unread"
+msgstr "Belum dibaca"
+
+msgid "flagged"
+msgstr "Ditanda"
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr "Belum dijawab"
+
+msgid "withattachment"
+msgstr ""
+
+msgid "deleted"
+msgstr "Telah dipadam"
+
+msgid "undeleted"
+msgstr ""
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr ""
+
+msgid "invert"
+msgstr "Songsangkan"
+
+msgid "filter"
+msgstr "Tapis"
+
+msgid "list"
+msgstr "Senarai"
+
+msgid "threads"
+msgstr "Urutan"
+
+msgid "expand-all"
+msgstr "Buka Semua"
+
+msgid "expand-unread"
+msgstr "Buka yang belum dibaca"
+
+msgid "collapse-all"
+msgstr "Tutup Semua"
+
+msgid "threaded"
+msgstr "Telah urutan"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Buka mesej mengikut urutan"
+
+msgid "do_expand"
+msgstr "Kesemua urutan"
+
+msgid "expand_only_unread"
+msgstr "hanya dengan mesej yang belum dibaca"
+
+msgid "fromto"
+msgstr "Daripada/Kepada"
+
+msgid "flag"
+msgstr "Tanda"
+
+msgid "attachment"
+msgstr "Lampiran"
+
+msgid "nonesort"
+msgstr "Tiada"
+
+msgid "sentdate"
+msgstr "Tarikh dihantar"
+
+msgid "arrival"
+msgstr "Tarikh terima"
+
+msgid "asc"
+msgstr "menaik"
+
+msgid "desc"
+msgstr "menurun"
+
+msgid "listcolumns"
+msgstr "Senarai ruang"
+
+msgid "listsorting"
+msgstr "pengisihan ruang"
+
+msgid "listorder"
+msgstr "Urutan pengisihan"
+
+msgid "listmode"
+msgstr "Mod senarai paparan"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Senarai"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Aksi folder"
+
+msgid "compact"
+msgstr "Kompak"
+
+msgid "empty"
+msgstr "Kosong"
+
+msgid "importmessages"
+msgstr ""
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Penggunaan cakera"
+
+msgid "unknown"
+msgstr "tidak diketahui"
+
+msgid "unlimited"
+msgstr "Tidak terhad"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr ""
+
+msgid "quotastorage"
+msgstr ""
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Carian pantas"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Set semula carian"
+
+msgid "searchmod"
+msgstr "Pengubah carian"
+
+msgid "msgtext"
+msgstr "Keseluruhan mesej"
+
+msgid "body"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "namex"
+msgstr ""
+
+msgid "searchscope"
+msgstr ""
+
+msgid "currentfolder"
+msgstr ""
+
+msgid "subfolders"
+msgstr ""
+
+msgid "allfolders"
+msgstr ""
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Buka dalam tetingkap baru"
+
+msgid "emlsave"
+msgstr "Muat-turun (.eml)"
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr "Ubah seperti baharu"
+
+msgid "send"
+msgstr ""
+
+msgid "sendmessage"
+msgstr "Hantar mesej"
+
+msgid "savemessage"
+msgstr "Simapan sebagai draf"
+
+msgid "addattachment"
+msgstr "Lampir fail"
+
+msgid "charset"
+msgstr "Set aksara"
+
+msgid "editortype"
+msgstr "Jenis Editor"
+
+msgid "returnreceipt"
+msgstr "Penerimaan semula"
+
+msgid "dsn"
+msgstr "Status pemberitahuan penghantaran"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "Pada $date, $sender menulis"
+
+msgid "originalmessage"
+msgstr "Mesej Asal"
+
+msgid "selectimage"
+msgstr ""
+
+msgid "addimage"
+msgstr ""
+
+msgid "selectmedia"
+msgstr ""
+
+msgid "addmedia"
+msgstr ""
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr ""
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Ubah identiti"
+
+msgid "spellcheck"
+msgstr "Eja"
+
+msgid "checkspelling"
+msgstr "Semak ejaan"
+
+msgid "resumeediting"
+msgstr "Sambung pengeditan"
+
+msgid "revertto"
+msgstr "Kembali kepada"
+
+msgid "restore"
+msgstr ""
+
+msgid "restoremessage"
+msgstr ""
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr ""
+
+msgid "insertresponse"
+msgstr ""
+
+msgid "manageresponses"
+msgstr ""
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr ""
+
+msgid "editresponse"
+msgstr ""
+
+msgid "editresponses"
+msgstr ""
+
+msgid "responsename"
+msgstr ""
+
+msgid "responsetext"
+msgstr ""
+
+msgid "attach"
+msgstr "Lampirkan"
+
+msgid "attachments"
+msgstr "Lampiran"
+
+msgid "upload"
+msgstr "Muat naik"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "Tutup"
+
+msgid "messageoptions"
+msgstr "Opsyen mesej"
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Rendah"
+
+msgid "lowest"
+msgstr "Paling Rendah"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "high"
+msgstr "Tinggi"
+
+msgid "highest"
+msgstr "Paling Tinggi"
+
+msgid "nosubject"
+msgstr "(tiada subjek)"
+
+msgid "showimages"
+msgstr "Papar imej"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "selalu paparkan imej dari $sender"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Ini adalah draf mesej"
+
+msgid "andnmore"
+msgstr ""
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr ""
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Teks kosong"
+
+msgid "savesentmessagein"
+msgstr "Simpan mesej yang telah dihantar dalam"
+
+msgid "dontsave"
+msgstr "Jangan simpan"
+
+msgid "maxuploadsize"
+msgstr "maksimum saiz fail yang dibenarkan ialah $size"
+
+msgid "addcc"
+msgstr "Tambah Cc"
+
+msgid "addbcc"
+msgstr "Tambah Bcc"
+
+msgid "addreplyto"
+msgstr "Tambah Reply-To"
+
+msgid "addfollowupto"
+msgstr "Tambah Followup-To"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Pengirim mesej ini mahu diberitahu apabila anda membaca mesej ini. Adakah "
+"anda ingin memberitahu pengirim?"
+
+msgid "receiptread"
+msgstr "Balas Resip (dibaca)"
+
+msgid "yourmessage"
+msgstr "Ini adalah Resip Balasan untuk mesej anda"
+
+msgid "receiptnote"
+msgstr ""
+"Perhatian: Resip ini hanya untuk memberitahu yang mesej ini telah dipaparkan"
+" di komputer penerima. Tidak ada jaminan yang penerima telah membaca atau "
+"memahami kandungan mesej."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Nama paparan"
+
+msgid "firstname"
+msgstr "Nama pertama"
+
+msgid "surname"
+msgstr "Nama akhir"
+
+msgid "middlename"
+msgstr ""
+
+msgid "nameprefix"
+msgstr ""
+
+msgid "namesuffix"
+msgstr ""
+
+msgid "nickname"
+msgstr ""
+
+msgid "jobtitle"
+msgstr ""
+
+msgid "department"
+msgstr ""
+
+msgid "gender"
+msgstr ""
+
+msgid "maidenname"
+msgstr ""
+
+msgid "email"
+msgstr "E-Mel"
+
+msgid "phone"
+msgstr ""
+
+msgid "address"
+msgstr ""
+
+msgid "street"
+msgstr ""
+
+msgid "locality"
+msgstr ""
+
+msgid "zipcode"
+msgstr ""
+
+msgid "region"
+msgstr ""
+
+msgid "country"
+msgstr ""
+
+msgid "birthday"
+msgstr ""
+
+msgid "anniversary"
+msgstr ""
+
+msgid "website"
+msgstr ""
+
+msgid "instantmessenger"
+msgstr ""
+
+msgid "notes"
+msgstr ""
+
+msgid "male"
+msgstr ""
+
+msgid "female"
+msgstr ""
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr ""
+
+msgid "assistant"
+msgstr ""
+
+msgid "spouse"
+msgstr ""
+
+msgid "allfields"
+msgstr ""
+
+msgid "search"
+msgstr ""
+
+msgid "searchresult"
+msgstr ""
+
+msgid "advsearch"
+msgstr ""
+
+msgid "advanced"
+msgstr ""
+
+msgid "other"
+msgstr ""
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr ""
+
+msgid "typework"
+msgstr ""
+
+msgid "typeother"
+msgstr ""
+
+msgid "typemobile"
+msgstr ""
+
+msgid "typemain"
+msgstr ""
+
+msgid "typehomefax"
+msgstr ""
+
+msgid "typeworkfax"
+msgstr ""
+
+msgid "typecar"
+msgstr ""
+
+msgid "typepager"
+msgstr ""
+
+msgid "typevideo"
+msgstr ""
+
+msgid "typeassistant"
+msgstr ""
+
+msgid "typehomepage"
+msgstr ""
+
+msgid "typeblog"
+msgstr ""
+
+msgid "typeprofile"
+msgstr ""
+
+msgid "addfield"
+msgstr ""
+
+msgid "addcontact"
+msgstr ""
+
+msgid "editcontact"
+msgstr "Ubahsuai Kontek"
+
+msgid "contacts"
+msgstr ""
+
+msgid "contactproperties"
+msgstr ""
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr ""
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr ""
+
+msgid "edit"
+msgstr "Sunting"
+
+msgid "cancel"
+msgstr "Batal"
+
+msgid "save"
+msgstr "Simpan"
+
+msgid "delete"
+msgstr "Padam"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr ""
+
+msgid "addphoto"
+msgstr ""
+
+msgid "replacephoto"
+msgstr ""
+
+msgid "uploadphoto"
+msgstr ""
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr "Hapus kontek yang dipilih"
+
+msgid "composeto"
+msgstr "Karang mel kepada"
+
+msgid "contactsfromto"
+msgstr "Kontek $from ke $to dari $count"
+
+msgid "print"
+msgstr "Cetak"
+
+msgid "export"
+msgstr "Eksport"
+
+msgid "exportall"
+msgstr ""
+
+msgid "exportsel"
+msgstr ""
+
+msgid "exportvcards"
+msgstr ""
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr ""
+
+msgid "groupdelete"
+msgstr ""
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr ""
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "Papar set sebelumnya"
+
+msgid "firstpage"
+msgstr "Papar set pertama"
+
+msgid "nextpage"
+msgstr "Papar set seterusnya"
+
+msgid "lastpage"
+msgstr "Papar set akhir"
+
+msgid "group"
+msgstr ""
+
+msgid "groups"
+msgstr "Kumpulan"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr "Alamat-alamat Peribadi"
+
+msgid "searchsave"
+msgstr ""
+
+msgid "searchdelete"
+msgstr ""
+
+msgid "import"
+msgstr ""
+
+msgid "importcontacts"
+msgstr ""
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr ""
+
+msgid "importreplace"
+msgstr ""
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr ""
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Tetapan bagi"
+
+msgid "about"
+msgstr ""
+
+msgid "preferences"
+msgstr "Keutamaan"
+
+msgid "userpreferences"
+msgstr "Keutamaan pengguna"
+
+msgid "editpreferences"
+msgstr "Sunting keutamaan pengguna"
+
+msgid "identities"
+msgstr "Identiti"
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "Papar HTML"
+
+msgid "defaultcharset"
+msgstr ""
+
+msgid "htmlmessage"
+msgstr "Mesej HTML"
+
+msgid "messagepart"
+msgstr ""
+
+msgid "digitalsig"
+msgstr ""
+
+msgid "dateformat"
+msgstr ""
+
+msgid "timeformat"
+msgstr ""
+
+msgid "prettydate"
+msgstr "Tarikh-tarikh cantik"
+
+msgid "setdefault"
+msgstr "Tetap asal"
+
+msgid "autodetect"
+msgstr ""
+
+msgid "language"
+msgstr "Bahasa"
+
+msgid "timezone"
+msgstr "Zon Masa"
+
+msgid "pagesize"
+msgstr "Baris setiap muka"
+
+msgid "signature"
+msgstr "Tandatangan"
+
+msgid "dstactive"
+msgstr "Simpanan siang hari"
+
+msgid "showinextwin"
+msgstr ""
+
+msgid "composeextwin"
+msgstr ""
+
+msgid "htmleditor"
+msgstr "Karang mesej HTML"
+
+msgid "htmlonreply"
+msgstr ""
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr "Tandatangan HTML"
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr "Pamer ruang previu"
+
+msgid "skin"
+msgstr ""
+
+msgid "logoutclear"
+msgstr "Kosongkan Tong sampah ketika keluar"
+
+msgid "logoutcompact"
+msgstr "Padatkan Inbox ketika keluar"
+
+msgid "uisettings"
+msgstr "Antaramuka Pengguna"
+
+msgid "serversettings"
+msgstr "Konfigurasi Pelayan"
+
+msgid "mailboxview"
+msgstr "Pandangan kotak Mel"
+
+msgid "mdnrequests"
+msgstr "Pemberitahuan Pengirim"
+
+msgid "askuser"
+msgstr "Tanya pengguna"
+
+msgid "autosend"
+msgstr "Hantar automatik"
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "Tanda mesej sebagai dibaca ketika hapus"
+
+msgid "flagfordeletion"
+msgstr "Tanda mesej untuk pembuangan (tidak delete terus)"
+
+msgid "skipdeleted"
+msgstr ""
+
+msgid "deletealways"
+msgstr ""
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr ""
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr ""
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr ""
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr ""
+
+msgid "autosavedraft"
+msgstr "Simpan draf dengan automatik"
+
+msgid "everynminutes"
+msgstr ""
+
+msgid "refreshinterval"
+msgstr ""
+
+msgid "never"
+msgstr "tidak pernah"
+
+msgid "immediately"
+msgstr ""
+
+msgid "messagesdisplaying"
+msgstr ""
+
+msgid "messagescomposition"
+msgstr ""
+
+msgid "mimeparamfolding"
+msgstr ""
+
+msgid "2231folding"
+msgstr ""
+
+msgid "miscfolding"
+msgstr ""
+
+msgid "2047folding"
+msgstr ""
+
+msgid "force7bit"
+msgstr ""
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr ""
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr ""
+
+msgid "checkallfolders"
+msgstr ""
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr ""
+
+msgid "browseroptions"
+msgstr ""
+
+msgid "section"
+msgstr ""
+
+msgid "maintenance"
+msgstr ""
+
+msgid "newmessage"
+msgstr ""
+
+msgid "signatureoptions"
+msgstr ""
+
+msgid "whenreplying"
+msgstr ""
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr ""
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr ""
+
+msgid "replyremovesignature"
+msgstr ""
+
+msgid "autoaddsignature"
+msgstr ""
+
+msgid "newmessageonly"
+msgstr ""
+
+msgid "replyandforwardonly"
+msgstr ""
+
+msgid "insertsignature"
+msgstr ""
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr ""
+
+msgid "reqmdn"
+msgstr ""
+
+msgid "reqdsn"
+msgstr ""
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr ""
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr ""
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr ""
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr ""
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr ""
+
+msgid "asattachment"
+msgstr ""
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr ""
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Kabinet Fail"
+
+msgid "folders"
+msgstr "Folder"
+
+msgid "foldername"
+msgstr "Nama Kabinet Fail"
+
+msgid "subscribed"
+msgstr "Dilanggan"
+
+msgid "messagecount"
+msgstr "Mesej-mesej"
+
+msgid "create"
+msgstr "Cipta"
+
+msgid "createfolder"
+msgstr "Cipta kabinet fail baru"
+
+msgid "managefolders"
+msgstr "Urus kabinet fail"
+
+msgid "specialfolders"
+msgstr ""
+
+msgid "properties"
+msgstr ""
+
+msgid "folderproperties"
+msgstr ""
+
+msgid "parentfolder"
+msgstr ""
+
+msgid "location"
+msgstr ""
+
+msgid "info"
+msgstr ""
+
+msgid "getfoldersize"
+msgstr ""
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr ""
+
+msgid "personalfolder"
+msgstr ""
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr ""
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Susun dengan"
+
+msgid "sortasc"
+msgstr "Susun menaik"
+
+msgid "sortdesc"
+msgstr "Susun menurun"
+
+msgid "undo"
+msgstr ""
+
+msgid "installedplugins"
+msgstr ""
+
+msgid "plugin"
+msgstr ""
+
+msgid "version"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr ""
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr ""
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr ""
+
+msgid "KB"
+msgstr ""
+
+msgid "MB"
+msgstr ""
+
+msgid "GB"
+msgstr ""
+
+msgid "unicode"
+msgstr ""
+
+msgid "english"
+msgstr ""
+
+msgid "westerneuropean"
+msgstr ""
+
+msgid "easterneuropean"
+msgstr ""
+
+msgid "southeasterneuropean"
+msgstr ""
+
+msgid "baltic"
+msgstr ""
+
+msgid "cyrillic"
+msgstr ""
+
+msgid "arabic"
+msgstr ""
+
+msgid "greek"
+msgstr ""
+
+msgid "hebrew"
+msgstr ""
+
+msgid "turkish"
+msgstr ""
+
+msgid "nordic"
+msgstr ""
+
+msgid "thai"
+msgstr ""
+
+msgid "celtic"
+msgstr ""
+
+msgid "vietnamese"
+msgstr ""
+
+msgid "japanese"
+msgstr ""
+
+msgid "korean"
+msgstr ""
+
+msgid "chinese"
+msgstr ""
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr ""
+
+msgid "messages.loginfailed"
+msgstr "Log masuk gagal"
+
+msgid "messages.cookiesdisabled"
+msgstr "Pelayar anda tidak menerima cookies"
+
+msgid "messages.sessionerror"
+msgstr "Sesi anda tidak sah atau telah tamat"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "Sambungan ke pelayan IMAP gagal"
+
+msgid "messages.servererror"
+msgstr ""
+
+msgid "messages.servererrormsg"
+msgstr ""
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr ""
+
+msgid "messages.dberror"
+msgstr ""
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr ""
+
+msgid "messages.errorreadonly"
+msgstr ""
+
+msgid "messages.errornoperm"
+msgstr ""
+
+msgid "messages.erroroverquota"
+msgstr ""
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+
+msgid "messages.invalidrequest"
+msgstr ""
+
+msgid "messages.invalidhost"
+msgstr ""
+
+msgid "messages.nomessagesfound"
+msgstr "Tiada mesej dijumpai dalam kotak mel ini"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr ""
+
+msgid "messages.nomessages"
+msgstr ""
+
+msgid "messages.refreshing"
+msgstr ""
+
+msgid "messages.loading"
+msgstr "Memuat..."
+
+msgid "messages.uploading"
+msgstr ""
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr ""
+
+msgid "messages.loadingdata"
+msgstr "Memuat data..."
+
+msgid "messages.checkingmail"
+msgstr "Menyemak mesej baru..."
+
+msgid "messages.sendingmessage"
+msgstr "Menghantar mesej..."
+
+msgid "messages.messagesent"
+msgstr "Mesej berjaya dihantar"
+
+msgid "messages.savingmessage"
+msgstr "Menyimpan mesej..."
+
+msgid "messages.messagesaved"
+msgstr "Mesej disimpan dalam Draf"
+
+msgid "messages.successfullysaved"
+msgstr "Berjaya disimpan"
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontek berjaya disimpan ke dalam buku alamat"
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr ""
+
+msgid "messages.blockedimages"
+msgstr ""
+"Untuk melindungi kebesasan peribadi anda, imej jauh dihalang dalam mesej "
+"ini."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Ini adalah mesej yang di'encrypted' dan tidak boleh dipamerkan. Maaf!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Tiada kontek dijumpai"
+
+msgid "messages.contactnotfound"
+msgstr "Kontek yang diminta tidak dijumpai"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Gagal menghantar mesej"
+
+msgid "messages.senttooquickly"
+msgstr ""
+
+msgid "messages.errorsavingsent"
+msgstr ""
+
+msgid "messages.errorsaving"
+msgstr ""
+
+msgid "messages.errormoving"
+msgstr "Tidak boleh pindah mesej"
+
+msgid "messages.errorcopying"
+msgstr ""
+
+msgid "messages.errordeleting"
+msgstr "Tidak boleh hapus mesej"
+
+msgid "messages.errormarking"
+msgstr ""
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "Adakah anda ingin hapuskan kontek yang dipilih?"
+
+msgid "messages.deletegroupconfirm"
+msgstr ""
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Adakah anda ingin hapuskan mesej yang dipilih?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Adakah anda ingin hapuskan kabinet fail ini?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Adakah anda ingin hapuskan semua mesej dalam kabinet fail ini?"
+
+msgid "messages.contactdeleting"
+msgstr ""
+
+msgid "messages.groupdeleting"
+msgstr ""
+
+msgid "messages.folderdeleting"
+msgstr ""
+
+msgid "messages.foldermoving"
+msgstr ""
+
+msgid "messages.foldersubscribing"
+msgstr ""
+
+msgid "messages.folderunsubscribing"
+msgstr ""
+
+msgid "messages.formincomplete"
+msgstr "Borang tidak diisi dengan lengkap"
+
+msgid "messages.noemailwarning"
+msgstr "Sila masukkan alamat emel yang sah"
+
+msgid "messages.nonamewarning"
+msgstr "Sila masukkan nama"
+
+msgid "messages.nopagesizewarning"
+msgstr "Sila masukkan saiz halaman"
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Sila masukkan sekurang-kurangnya satu penerima"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "Ruang \"Subjek\" kosong. Adakah anda ingin masukkannya sekarang?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "Hantar mesej ini tanpa teks?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr "Sila masukkan nama kontek atau alamat emel"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+
+msgid "messages.searchsuccessful"
+msgstr "$nr mesej dijumpai"
+
+msgid "messages.contactsearchsuccessful"
+msgstr ""
+
+msgid "messages.searchnomatch"
+msgstr "Carian tiada padanan"
+
+msgid "messages.searching"
+msgstr "Menggelintar..."
+
+msgid "messages.checking"
+msgstr "Menyemak..."
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr "Tiada kesalah ejaan dijumpai"
+
+msgid "messages.folderdeleted"
+msgstr "Kabinet fail berjaya dihapuskan"
+
+msgid "messages.foldersubscribed"
+msgstr ""
+
+msgid "messages.folderunsubscribed"
+msgstr ""
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Berjaya dihapuskan"
+
+msgid "messages.converting"
+msgstr "Singkir format dari mesej..."
+
+msgid "messages.messageopenerror"
+msgstr "Tidak boleh muat mesej dari server"
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "Muatnaik fail gagal"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Fail yang dimuatnaik melampaui saiz maksima $size"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr ""
+
+msgid "messages.moveerror"
+msgstr ""
+
+msgid "messages.sourceisreadonly"
+msgstr "Sumber alamat ini adalah untuk bacaan sahaja"
+
+msgid "messages.errorsavingcontact"
+msgstr "Tidak boleh simmpan alamat kontek"
+
+msgid "messages.movingmessage"
+msgstr "Memindah mesej..."
+
+msgid "messages.copyingmessage"
+msgstr ""
+
+msgid "messages.copyingcontact"
+msgstr ""
+
+msgid "messages.movingcontact"
+msgstr ""
+
+msgid "messages.deletingmessage"
+msgstr ""
+
+msgid "messages.markingmessage"
+msgstr ""
+
+msgid "messages.addingmember"
+msgstr ""
+
+msgid "messages.removingmember"
+msgstr ""
+
+msgid "messages.receiptsent"
+msgstr "Berjaya menghantar resip bacaan"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Tidak dapat menghantar resip"
+
+msgid "messages.deleteidentityconfirm"
+msgstr ""
+
+msgid "messages.nodeletelastidentity"
+msgstr "Anda tidak boleh membuang identiti ini, ia milik anda yang terakhir."
+
+msgid "messages.forbiddencharacter"
+msgstr ""
+
+msgid "messages.selectimportfile"
+msgstr ""
+
+msgid "messages.addresswriterror"
+msgstr ""
+
+msgid "messages.contactaddedtogroup"
+msgstr ""
+
+msgid "messages.contactremovedfromgroup"
+msgstr ""
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr ""
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr ""
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+
+msgid "messages.smtpconnerror"
+msgstr ""
+
+msgid "messages.smtpautherror"
+msgstr ""
+
+msgid "messages.smtpfromerror"
+msgstr ""
+
+msgid "messages.smtptoerror"
+msgstr ""
+
+msgid "messages.smtprecipientserror"
+msgstr ""
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr ""
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+
+msgid "messages.maxgroupmembersreached"
+msgstr ""
+
+msgid "messages.internalerror"
+msgstr ""
+
+msgid "messages.contactdelerror"
+msgstr ""
+
+msgid "messages.contactdeleted"
+msgstr ""
+
+msgid "messages.contactrestoreerror"
+msgstr ""
+
+msgid "messages.contactrestored"
+msgstr ""
+
+msgid "messages.groupdeleted"
+msgstr ""
+
+msgid "messages.grouprenamed"
+msgstr ""
+
+msgid "messages.groupcreated"
+msgstr ""
+
+msgid "messages.savedsearchdeleted"
+msgstr ""
+
+msgid "messages.savedsearchdeleteerror"
+msgstr ""
+
+msgid "messages.savedsearchcreated"
+msgstr ""
+
+msgid "messages.savedsearchcreateerror"
+msgstr ""
+
+msgid "messages.messagedeleted"
+msgstr ""
+
+msgid "messages.messagemoved"
+msgstr ""
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr ""
+
+msgid "messages.messagemarked"
+msgstr ""
+
+msgid "messages.autocompletechars"
+msgstr ""
+
+msgid "messages.autocompletemore"
+msgstr ""
+
+msgid "messages.namecannotbeempty"
+msgstr ""
+
+msgid "messages.nametoolong"
+msgstr ""
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr ""
+
+msgid "messages.foldercreated"
+msgstr ""
+
+msgid "messages.invalidimageformat"
+msgstr ""
+
+msgid "messages.mispellingsfound"
+msgstr ""
+
+msgid "messages.parentnotwritable"
+msgstr ""
+
+msgid "messages.messagetoobig"
+msgstr ""
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

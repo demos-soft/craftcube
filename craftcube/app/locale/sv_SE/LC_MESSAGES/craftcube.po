@@ -1,0 +1,2895 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Välkommen till $product"
+
+msgid "username"
+msgstr "Användarnamn"
+
+msgid "password"
+msgstr "Lösenord"
+
+msgid "server"
+msgstr "Server"
+
+msgid "login"
+msgstr "Logga in"
+
+msgid "oauthlogin"
+msgstr "Logga in med $provider"
+
+msgid "menu"
+msgstr "Meny"
+
+msgid "logout"
+msgstr "Logga ut"
+
+msgid "mail"
+msgstr "Meddelanden"
+
+msgid "settings"
+msgstr "Inställningar"
+
+msgid "addressbook"
+msgstr "Adressbok"
+
+msgid "darkmode"
+msgstr "Mörkt läge"
+
+msgid "lightmode"
+msgstr "Ljust läge"
+
+msgid "inbox"
+msgstr "Inkorg"
+
+msgid "drafts"
+msgstr "Utkast"
+
+msgid "sent"
+msgstr "Skickat"
+
+msgid "trash"
+msgstr "Papperskorg"
+
+msgid "junk"
+msgstr "Skräp"
+
+msgid "show_real_foldernames"
+msgstr "Visa verkliga namn på särskilda mappar"
+
+msgid "subject"
+msgstr "Ämne"
+
+msgid "from"
+msgstr "Från"
+
+msgid "sender"
+msgstr "Avsändare"
+
+msgid "to"
+msgstr "Mottagare"
+
+msgid "cc"
+msgstr "Kopia"
+
+msgid "bcc"
+msgstr "Dold kopia"
+
+msgid "replyto"
+msgstr "Svar till"
+
+msgid "followupto"
+msgstr "Uppföljning till"
+
+msgid "date"
+msgstr "Datum"
+
+msgid "size"
+msgstr "Storlek"
+
+msgid "priority"
+msgstr "Prioritet"
+
+msgid "organization"
+msgstr "Organisation"
+
+msgid "readstatus"
+msgstr "Lässtatus"
+
+msgid "listoptions"
+msgstr "Listalternativ..."
+
+msgid "listoptionstitle"
+msgstr "Listalternativ"
+
+msgid "mailboxlist"
+msgstr "Mappar"
+
+msgid "messagesfromto"
+msgstr "Meddelande $from till $to av $count"
+
+msgid "threadsfromto"
+msgstr "Tråd $from till $to av $count"
+
+msgid "messagenrof"
+msgstr "Meddelande $nr av $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to av $count"
+
+msgid "copy"
+msgstr "Kopiera"
+
+msgid "move"
+msgstr "Flytta"
+
+msgid "moveto"
+msgstr "Flytta till..."
+
+msgid "copyto"
+msgstr "Kopiera till..."
+
+msgid "download"
+msgstr "Hämta"
+
+msgid "open"
+msgstr "Öppna"
+
+msgid "showattachment"
+msgstr "Visa"
+
+msgid "showanyway"
+msgstr "Visa det ändå"
+
+msgid "filename"
+msgstr "Filnamn"
+
+msgid "filesize"
+msgstr "Filstorlek"
+
+msgid "addtoaddressbook"
+msgstr "Lägg till i adressbok"
+
+msgid "sun"
+msgstr "sön"
+
+msgid "mon"
+msgstr "mån"
+
+msgid "tue"
+msgstr "tis"
+
+msgid "wed"
+msgstr "ons"
+
+msgid "thu"
+msgstr "tor"
+
+msgid "fri"
+msgstr "fre"
+
+msgid "sat"
+msgstr "lör"
+
+msgid "sunday"
+msgstr "söndag"
+
+msgid "monday"
+msgstr "måndag"
+
+msgid "tuesday"
+msgstr "tisdag"
+
+msgid "wednesday"
+msgstr "onsdag"
+
+msgid "thursday"
+msgstr "torsdag"
+
+msgid "friday"
+msgstr "fredag"
+
+msgid "saturday"
+msgstr "lördag"
+
+msgid "jan"
+msgstr "jan"
+
+msgid "feb"
+msgstr "feb"
+
+msgid "mar"
+msgstr "mar"
+
+msgid "apr"
+msgstr "apr"
+
+msgid "may"
+msgstr "maj"
+
+msgid "jun"
+msgstr "jun"
+
+msgid "jul"
+msgstr "jul"
+
+msgid "aug"
+msgstr "aug"
+
+msgid "sep"
+msgstr "sep"
+
+msgid "oct"
+msgstr "okt"
+
+msgid "nov"
+msgstr "nov"
+
+msgid "dec"
+msgstr "dec"
+
+msgid "longjan"
+msgstr "januari"
+
+msgid "longfeb"
+msgstr "februari"
+
+msgid "longmar"
+msgstr "mars"
+
+msgid "longapr"
+msgstr "april"
+
+msgid "longmay"
+msgstr "maj"
+
+msgid "longjun"
+msgstr "juni"
+
+msgid "longjul"
+msgstr "juli"
+
+msgid "longaug"
+msgstr "augusti"
+
+msgid "longsep"
+msgstr "september"
+
+msgid "longoct"
+msgstr "oktober"
+
+msgid "longnov"
+msgstr "november"
+
+msgid "longdec"
+msgstr "december"
+
+msgid "today"
+msgstr "idag"
+
+msgid "refresh"
+msgstr "Uppdatera"
+
+msgid "checkmail"
+msgstr "Hämta nya meddelanden"
+
+msgid "compose"
+msgstr "Skriv"
+
+msgid "writenewmessage"
+msgstr "Skapa ett nytt meddelande"
+
+msgid "reply"
+msgstr "Svara"
+
+msgid "replytomessage"
+msgstr "Svara avsändaren"
+
+msgid "replytoallmessage"
+msgstr "Svara avsändaren och alla mottagare"
+
+msgid "replyall"
+msgstr "Svara alla"
+
+msgid "replylist"
+msgstr "Svara lista"
+
+msgid "forward"
+msgstr "Vidarebefordra"
+
+msgid "forwardinline"
+msgstr "Vidarebefordra infogat"
+
+msgid "forwardattachment"
+msgstr "Vidarebefordra som bilaga"
+
+msgid "forwardmessage"
+msgstr "Vidarebefordra meddelandet"
+
+msgid "bouncemsg"
+msgstr "Skicka igen (studsa)"
+
+msgid "bounce"
+msgstr "Skicka igen"
+
+msgid "deletemessage"
+msgstr "Ta bort meddelandet"
+
+msgid "undeletemessage"
+msgstr "Återställ meddelande"
+
+msgid "movemessagetotrash"
+msgstr "Flytta meddelandet till Papperskorg"
+
+msgid "printmessage"
+msgstr "Skriv ut det här meddelandet"
+
+msgid "previousmessage"
+msgstr "Visa föregående meddelande"
+
+msgid "firstmessage"
+msgstr "Visa första meddelandet"
+
+msgid "nextmessage"
+msgstr "Visa nästa meddelande"
+
+msgid "lastmessage"
+msgstr "Visa sista meddelandet"
+
+msgid "backtolist"
+msgstr "Bakåt till meddelandelistan"
+
+msgid "viewsource"
+msgstr "Visa källkod"
+
+msgid "mark"
+msgstr "Markera"
+
+msgid "markmessages"
+msgstr "Markera meddelanden"
+
+msgid "markread"
+msgstr "Läst"
+
+msgid "markunread"
+msgstr "Oläst"
+
+msgid "markflagged"
+msgstr "Flaggat"
+
+msgid "markunflagged"
+msgstr "Oflaggat"
+
+msgid "markundeleted"
+msgstr "Inte borttaget"
+
+msgid "markasread"
+msgstr "Markera som läst"
+
+msgid "markasunread"
+msgstr "Markera som oläst"
+
+msgid "markasflagged"
+msgstr "Markera som flaggat"
+
+msgid "markasunflagged"
+msgstr "Markera som oflaggat"
+
+msgid "moreactions"
+msgstr "Fler åtgärder..."
+
+msgid "markallread"
+msgstr "Markera alla som lästa"
+
+msgid "folders-cur"
+msgstr "Markerad mapp"
+
+msgid "folders-sub"
+msgstr "Markerad mapp med undermappar"
+
+msgid "folders-all"
+msgstr "Alla mappar"
+
+msgid "more"
+msgstr "Fler"
+
+msgid "back"
+msgstr "Bakåt"
+
+msgid "options"
+msgstr "Alternativ"
+
+msgid "composeoptions"
+msgstr "Skapandeinställningar"
+
+msgid "optionsandattachments"
+msgstr "Alternativ och bilagor"
+
+msgid "actions"
+msgstr "Funktioner"
+
+msgid "first"
+msgstr "Första"
+
+msgid "last"
+msgstr "Sista"
+
+msgid "previous"
+msgstr "Föregående"
+
+msgid "next"
+msgstr "Nästa"
+
+msgid "select"
+msgstr "Välj"
+
+msgid "selection"
+msgstr "Markering"
+
+msgid "all"
+msgstr "Alla"
+
+msgid "none"
+msgstr "Inga"
+
+msgid "currpage"
+msgstr "Aktuell sida"
+
+msgid "isread"
+msgstr "Läst"
+
+msgid "unread"
+msgstr "Olästa"
+
+msgid "flagged"
+msgstr "Flaggade"
+
+msgid "unflagged"
+msgstr "Inte flaggat"
+
+msgid "unanswered"
+msgstr "Obesvarade"
+
+msgid "withattachment"
+msgstr "Med bilaga"
+
+msgid "deleted"
+msgstr "Borttagna"
+
+msgid "undeleted"
+msgstr "Inte borttagna"
+
+msgid "replied"
+msgstr "Besvarat"
+
+msgid "forwarded"
+msgstr "Vidareskickat"
+
+msgid "invert"
+msgstr "Invertera"
+
+msgid "filter"
+msgstr "Filter"
+
+msgid "list"
+msgstr "Lista"
+
+msgid "threads"
+msgstr "Trådar"
+
+msgid "expand-all"
+msgstr "Visa alla"
+
+msgid "expand-unread"
+msgstr "Visa olästa"
+
+msgid "collapse-all"
+msgstr "Dölj alla"
+
+msgid "threaded"
+msgstr "Trådat"
+
+msgid "showunread"
+msgstr "Visa olästa meddelanden"
+
+msgid "autoexpand_threads"
+msgstr "Visa trådade meddelanden"
+
+msgid "do_expand"
+msgstr "Alla trådar"
+
+msgid "expand_only_unread"
+msgstr "Trådar med olästa meddelanden"
+
+msgid "fromto"
+msgstr "Från/Till"
+
+msgid "flag"
+msgstr "Flagga"
+
+msgid "attachment"
+msgstr "Bilaga"
+
+msgid "nonesort"
+msgstr "Ingen"
+
+msgid "sentdate"
+msgstr "Datum skickat"
+
+msgid "arrival"
+msgstr "Datum mottaget"
+
+msgid "asc"
+msgstr "Stigande"
+
+msgid "desc"
+msgstr "Fallande"
+
+msgid "listcolumns"
+msgstr "Kolumner"
+
+msgid "listsorting"
+msgstr "Sortering"
+
+msgid "listorder"
+msgstr "Ordning"
+
+msgid "listmode"
+msgstr "Visningsläge"
+
+msgid "lmode"
+msgstr "Listläge"
+
+msgid "layout"
+msgstr "Layout"
+
+msgid "layoutwidescreen"
+msgstr "Bred skärm"
+
+msgid "layoutdesktop"
+msgstr "Skrivbord"
+
+msgid "layoutlist"
+msgstr "Lista"
+
+msgid "layoutwidescreendesc"
+msgstr "Bred skärm (visning i 3 kolumner)"
+
+msgid "layoutdesktopdesc"
+msgstr "Skrivbord (bred lista med förhandsvisning nedanför)"
+
+msgid "layoutlistdesc"
+msgstr "Lista (utan förhandsvisning)"
+
+msgid "folderactions"
+msgstr "Mappåtgärder..."
+
+msgid "compact"
+msgstr "Packa"
+
+msgid "empty"
+msgstr "Töm"
+
+msgid "importmessages"
+msgstr "Importera meddelanden"
+
+msgid "mailimportdesc"
+msgstr ""
+"Meddelanden kan laddas upp från filer i formatet <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> eller "
+"formatet <a href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>."
+
+msgid "mailimportzip"
+msgstr "Flera filer kan komprimeras till zip-arkiv."
+
+msgid "quota"
+msgstr "Diskutrymme"
+
+msgid "unknown"
+msgstr "okänt"
+
+msgid "unlimited"
+msgstr "obegränsat"
+
+msgid "quotatype"
+msgstr "Typ av kvot"
+
+msgid "quotatotal"
+msgstr "Gräns"
+
+msgid "quotaused"
+msgstr "Utnyttjad"
+
+msgid "quotastorage"
+msgstr "Storlek"
+
+msgid "quotamessage"
+msgstr "Antal meddelanden"
+
+msgid "shortheaderdate"
+msgstr "På $date"
+
+msgid "shortheaderto"
+msgstr "Till $to på $date"
+
+msgid "shortheaderfrom"
+msgstr "Från $from på $date"
+
+msgid "quicksearch"
+msgstr "Snabbsök"
+
+msgid "searchplaceholder"
+msgstr "Sök..."
+
+msgid "resetsearch"
+msgstr "Återställ sökning"
+
+msgid "searchmod"
+msgstr "Sökalternativ"
+
+msgid "msgtext"
+msgstr "Hela meddelandet"
+
+msgid "body"
+msgstr "Innehåll"
+
+msgid "type"
+msgstr "Typ"
+
+msgid "namex"
+msgstr "Namn"
+
+msgid "searchscope"
+msgstr "Sökomfattning"
+
+msgid "currentfolder"
+msgstr "Aktuell mapp"
+
+msgid "subfolders"
+msgstr "Denna och undermappar"
+
+msgid "allfolders"
+msgstr "Alla mappar"
+
+msgid "searchinterval-1W"
+msgstr "äldre än en vecka"
+
+msgid "searchinterval-1M"
+msgstr "äldre än en månad"
+
+msgid "searchinterval-1Y"
+msgstr "äldre än ett år"
+
+msgid "searchinterval1W"
+msgstr "nyare än en vecka"
+
+msgid "searchinterval1M"
+msgstr "nyare än en månad"
+
+msgid "searchinterval1Y"
+msgstr "nyare än ett år"
+
+msgid "infolder"
+msgstr "Mapp: $folder"
+
+msgid "currentaddressbook"
+msgstr "Aktuell adressbok"
+
+msgid "alladdressbooks"
+msgstr "Alla adressböcker"
+
+msgid "openinextwin"
+msgstr "Öppna i nytt fönster"
+
+msgid "emlsave"
+msgstr "Hämta"
+
+msgid "changeformattext"
+msgstr "Visa i text-format"
+
+msgid "changeformathtml"
+msgstr "Visa i HTML-format"
+
+msgid "editasnew"
+msgstr "Redigera som nytt"
+
+msgid "send"
+msgstr "Skicka"
+
+msgid "sendmessage"
+msgstr "Skicka meddelande"
+
+msgid "savemessage"
+msgstr "Spara utkast"
+
+msgid "addattachment"
+msgstr "Bifoga fil"
+
+msgid "charset"
+msgstr "Teckenkodning"
+
+msgid "editortype"
+msgstr "Textredigerare"
+
+msgid "returnreceipt"
+msgstr "Mottagarkvitto"
+
+msgid "dsn"
+msgstr "Leveransstatusmeddelande"
+
+msgid "keepformatting"
+msgstr "Behåll formatering"
+
+msgid "mailreplyintro"
+msgstr "$date skrev $sender:"
+
+msgid "originalmessage"
+msgstr "Ursprungligt meddelande"
+
+msgid "selectimage"
+msgstr "Välj bild"
+
+msgid "addimage"
+msgstr "Lägg till bild"
+
+msgid "selectmedia"
+msgstr "Välj film"
+
+msgid "addmedia"
+msgstr "Lägg till film"
+
+msgid "encrypt"
+msgstr "Kryptera"
+
+msgid "encryptmessage"
+msgstr "Kryptera meddelande"
+
+msgid "encryptmessagemailvelope"
+msgstr "Kryptera meddelande med Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Importera offentliga nycklar"
+
+msgid "encryptedsendialog"
+msgstr "Skickar krypterat meddelande"
+
+msgid "encryptandsign"
+msgstr "Kryptera och signera"
+
+msgid "keyid"
+msgstr "Nyckel-ID"
+
+msgid "keylength"
+msgstr "Bitar"
+
+msgid "keyexpired"
+msgstr "Utgången"
+
+msgid "keyrevoked"
+msgstr "Upphävd"
+
+msgid "bccinstead"
+msgstr "Använd Dold kopia"
+
+msgid "addheader"
+msgstr "Lägg till fält (Cc, Bcc, ...)"
+
+msgid "insert"
+msgstr "Infoga"
+
+msgid "insertcontact"
+msgstr "Infoga kontakt(er)"
+
+msgid "recipient"
+msgstr "Mottagare"
+
+msgid "recipientedit"
+msgstr "Ändra mottagare"
+
+msgid "editidents"
+msgstr "Ändra identiteter"
+
+msgid "spellcheck"
+msgstr "Rättstava"
+
+msgid "checkspelling"
+msgstr "Kontrollera stavning"
+
+msgid "resumeediting"
+msgstr "Återuppta redigering"
+
+msgid "revertto"
+msgstr "Återgå till"
+
+msgid "restore"
+msgstr "Återskapa"
+
+msgid "restoremessage"
+msgstr "Återskapa meddelande?"
+
+msgid "ignore"
+msgstr "Ignorera"
+
+msgid "responses"
+msgstr "Responser"
+
+msgid "insertresponse"
+msgstr "Infoga respons"
+
+msgid "manageresponses"
+msgstr "Hantera responser"
+
+msgid "newresponse"
+msgstr "Ny respons"
+
+msgid "addresponse"
+msgstr "Lägg till respons"
+
+msgid "editresponse"
+msgstr "Ändra respons"
+
+msgid "editresponses"
+msgstr "Ändra responser"
+
+msgid "responsename"
+msgstr "Responsnamn"
+
+msgid "responsetext"
+msgstr "Responstext"
+
+msgid "attach"
+msgstr "Bifoga"
+
+msgid "attachments"
+msgstr "Bilagor"
+
+msgid "upload"
+msgstr "Bifoga"
+
+msgid "uploadprogress"
+msgstr "$percent ($current av $total)"
+
+msgid "close"
+msgstr "Stäng"
+
+msgid "messageoptions"
+msgstr "Meddelandealternativ..."
+
+msgid "togglecomposeoptions"
+msgstr "Växla skapandeinställningar"
+
+msgid "attachmentrename"
+msgstr "Ändra bilagans namn"
+
+msgid "low"
+msgstr "Låg"
+
+msgid "lowest"
+msgstr "Lägst"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "high"
+msgstr "Hög"
+
+msgid "highest"
+msgstr "Högst"
+
+msgid "nosubject"
+msgstr "(inget ämne)"
+
+msgid "showimages"
+msgstr "Visa bilder"
+
+msgid "allow"
+msgstr "Tillåt"
+
+msgid "alwaysshow"
+msgstr "Visa alltid bilder från $sender"
+
+msgid "alwaysallow"
+msgstr "Tillåt alltid från $sender"
+
+msgid "isdraft"
+msgstr "Detta meddelande är ett utkast."
+
+msgid "andnmore"
+msgstr "$nr fler..."
+
+msgid "details"
+msgstr "Detaljerad information"
+
+msgid "summary"
+msgstr "Sammanfattning"
+
+msgid "headers"
+msgstr "Meddelandeinfo"
+
+msgid "allheaders"
+msgstr "All meddelandeinfo..."
+
+msgid "togglemoreheaders"
+msgstr "Växla ytterligare meddelandeinfo"
+
+msgid "togglefullheaders"
+msgstr "Växla teknisk meddelandeinfo"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Oformatterad text"
+
+msgid "savesentmessagein"
+msgstr "Spara skickat meddelande i"
+
+msgid "dontsave"
+msgstr "Spara inte"
+
+msgid "maxuploadsize"
+msgstr "Tillåten filstorlek är $size"
+
+msgid "addcc"
+msgstr "Kopia"
+
+msgid "addbcc"
+msgstr "Dold kopia"
+
+msgid "addreplyto"
+msgstr "Svar till"
+
+msgid "addfollowupto"
+msgstr "Uppföljning till"
+
+msgid "sendreceipt"
+msgstr "Skicka läskvitto?"
+
+msgid "mdnrequest"
+msgstr ""
+"Avsändaren har begärt mottagarkvitto för det här meddelandet. Vill du skicka"
+" ett mottagarkvitto?"
+
+msgid "receiptread"
+msgstr "Mottagarkvitto (läst)"
+
+msgid "yourmessage"
+msgstr "Det här är ett mottagarkvitto för ditt meddelande"
+
+msgid "receiptnote"
+msgstr ""
+"Notera: Mottagarkvittot innebär bara att meddelandet visats på mottagarens "
+"dator. Därmed finns ingen garanti att mottagaren har läst och förstått "
+"meddelandet."
+
+msgid "sendalwaysto"
+msgstr "Skicka alltid till $email"
+
+msgid "zoomin"
+msgstr "Zooma in"
+
+msgid "zoomout"
+msgstr "Zooma ut"
+
+msgid "rotate"
+msgstr "Rotera"
+
+msgid "increaseimage"
+msgstr "Öka bildstorlek"
+
+msgid "decreaseimage"
+msgstr "Minska bildstorlek"
+
+msgid "rotateimage"
+msgstr "Rotera bild"
+
+msgid "showtools"
+msgstr "Visa bildverktyg"
+
+msgid "hidetools"
+msgstr "Göm bildverktyg"
+
+msgid "name"
+msgstr "Namn"
+
+msgid "firstname"
+msgstr "Förnamn"
+
+msgid "surname"
+msgstr "Efternamn"
+
+msgid "middlename"
+msgstr "Mellannamn"
+
+msgid "nameprefix"
+msgstr "Prefix"
+
+msgid "namesuffix"
+msgstr "Suffix"
+
+msgid "nickname"
+msgstr "Smeknamn"
+
+msgid "jobtitle"
+msgstr "Titel"
+
+msgid "department"
+msgstr "Avdelning"
+
+msgid "gender"
+msgstr "Kön"
+
+msgid "maidenname"
+msgstr "Flicknamn"
+
+msgid "email"
+msgstr "Mailadress"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Postadress"
+
+msgid "street"
+msgstr "Gata"
+
+msgid "locality"
+msgstr "Ort"
+
+msgid "zipcode"
+msgstr "Postnummer"
+
+msgid "region"
+msgstr "Region"
+
+msgid "country"
+msgstr "Land"
+
+msgid "birthday"
+msgstr "Födelsedag"
+
+msgid "anniversary"
+msgstr "Årsdag"
+
+msgid "website"
+msgstr "Webbplats"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Anteckningar"
+
+msgid "male"
+msgstr "Man"
+
+msgid "female"
+msgstr "Kvinna"
+
+msgid "nonbinary"
+msgstr "ickebinär"
+
+msgid "othergender"
+msgstr "annan"
+
+msgid "manager"
+msgstr "Chef"
+
+msgid "assistant"
+msgstr "Assistent"
+
+msgid "spouse"
+msgstr "Make/Maka"
+
+msgid "allfields"
+msgstr "Alla fält"
+
+msgid "search"
+msgstr "Sök"
+
+msgid "searchresult"
+msgstr "Sökresultat"
+
+msgid "advsearch"
+msgstr "Avancerad sökning"
+
+msgid "advanced"
+msgstr "Avancerad"
+
+msgid "other"
+msgstr "Annat"
+
+msgid "printcontact"
+msgstr "Skriv ut kontakt"
+
+msgid "qrcode"
+msgstr "QR-kod"
+
+msgid "typehome"
+msgstr "Hem"
+
+msgid "typework"
+msgstr "Arbete"
+
+msgid "typeother"
+msgstr "Annat"
+
+msgid "typemobile"
+msgstr "Mobil"
+
+msgid "typemain"
+msgstr "Huvudsakligt"
+
+msgid "typehomefax"
+msgstr "Fax hem"
+
+msgid "typeworkfax"
+msgstr "Fax arbete"
+
+msgid "typecar"
+msgstr "Bil"
+
+msgid "typepager"
+msgstr "Personsökare"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Assistent"
+
+msgid "typehomepage"
+msgstr "Webbplats"
+
+msgid "typeblog"
+msgstr "Blogg"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Lägg till fält..."
+
+msgid "addcontact"
+msgstr "Lägg till kontakt"
+
+msgid "editcontact"
+msgstr "Ändra kontakt"
+
+msgid "contacts"
+msgstr "Kontakter"
+
+msgid "contactproperties"
+msgstr "Kontaktegenskaper"
+
+msgid "contactnameandorg"
+msgstr "Namn och organisation"
+
+msgid "personalinfo"
+msgstr "Personlig information"
+
+msgid "personal"
+msgstr "Personliga"
+
+msgid "contactphoto"
+msgstr "Kontaktfoto"
+
+msgid "edit"
+msgstr "Redigera"
+
+msgid "cancel"
+msgstr "Avbryt"
+
+msgid "save"
+msgstr "Spara"
+
+msgid "delete"
+msgstr "Ta bort"
+
+msgid "discard"
+msgstr "Förkasta"
+
+msgid "continue"
+msgstr "Fortsätt"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Ändra namn"
+
+msgid "addphoto"
+msgstr "Lägg till"
+
+msgid "replacephoto"
+msgstr "Ersätt"
+
+msgid "uploadphoto"
+msgstr "Ladda upp foto"
+
+msgid "choosefile"
+msgstr "Välj fil..."
+
+msgid "choosefiles"
+msgstr "Välj filer..."
+
+msgid "browse"
+msgstr "Bläddra"
+
+msgid "newcontact"
+msgstr "Ny kontakt"
+
+msgid "deletecontact"
+msgstr "Ta bort vald kontakt"
+
+msgid "composeto"
+msgstr "Nytt meddelande till"
+
+msgid "contactsfromto"
+msgstr "Kontakt $from till $to av $count"
+
+msgid "print"
+msgstr "Skriv ut"
+
+msgid "export"
+msgstr "Exportera"
+
+msgid "exportall"
+msgstr "Exportera alla"
+
+msgid "exportsel"
+msgstr "Exportera markerade"
+
+msgid "exportvcards"
+msgstr "Exportera kontakter"
+
+msgid "newgroup"
+msgstr "Ny grupp"
+
+msgid "addgroup"
+msgstr "Lägg till grupp"
+
+msgid "grouprename"
+msgstr "Ändra gruppnamn"
+
+msgid "groupdelete"
+msgstr "Ta bort grupp"
+
+msgid "groupassign"
+msgstr "Lägg in i grupp..."
+
+msgid "groupremove"
+msgstr "Ta bort från grupp"
+
+msgid "groupremoveselected"
+msgstr "Ta bort markerade kontakter från gruppen"
+
+msgid "uponelevel"
+msgstr "Upp en nivå"
+
+msgid "previouspage"
+msgstr "Visa föregående sida"
+
+msgid "firstpage"
+msgstr "Visa första sidan"
+
+msgid "nextpage"
+msgstr "Visa nästa sida"
+
+msgid "lastpage"
+msgstr "Visa sista sidan"
+
+msgid "group"
+msgstr "Grupp"
+
+msgid "groups"
+msgstr "Kontaktgrupper"
+
+msgid "listgroup"
+msgstr "Visa gruppmedlemmar"
+
+msgid "personaladrbook"
+msgstr "Personliga adresser"
+
+msgid "searchsave"
+msgstr "Spara sökning"
+
+msgid "searchdelete"
+msgstr "Ta bort sökning"
+
+msgid "import"
+msgstr "Importera"
+
+msgid "importcontacts"
+msgstr "Importera kontakter"
+
+msgid "importfromfile"
+msgstr "Importera från fil"
+
+msgid "importtarget"
+msgstr "Lägg till kontakter i"
+
+msgid "importreplace"
+msgstr "Ersätt samtliga kontakter i adressboken"
+
+msgid "importgroups"
+msgstr "Importera grupptillhörigheter"
+
+msgid "importgroupsall"
+msgstr "Alla (skapa grupper om nödvändigt)"
+
+msgid "importgroupsexisting"
+msgstr "Endast till befintliga grupper"
+
+msgid "importdesc"
+msgstr ""
+"Kontakter kan importeras från en befintlig adressbok.<br/>Programmet stödjer"
+" inläsning av kontakter i formatet <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> eller formatet CSV "
+"(kommaseparerad data)."
+
+msgid "importmapdesc"
+msgstr ""
+"Bekräfta att fältkopplingarna nedan är korrekta innan du fortsätter med "
+"importen av CSV-filen."
+
+msgid "fieldnotmapped"
+msgstr "Fältet är inte kopplat (importeras inte)"
+
+msgid "skipheader"
+msgstr "Importera inte första raden (rubriker)"
+
+msgid "done"
+msgstr "Klart"
+
+msgid "birth_day"
+msgstr "Födelsedag"
+
+msgid "birth_month"
+msgstr "Födelsemånad"
+
+msgid "birth_year"
+msgstr "Födelseår"
+
+msgid "settingsfor"
+msgstr "Inställningar för"
+
+msgid "about"
+msgstr "Om"
+
+msgid "preferences"
+msgstr "Inställningar"
+
+msgid "userpreferences"
+msgstr "Användarinställningar"
+
+msgid "editpreferences"
+msgstr "Ändra användarinställningar"
+
+msgid "identities"
+msgstr "Identiteter"
+
+msgid "manageidentities"
+msgstr "Hantera identiteter"
+
+msgid "newidentity"
+msgstr "Ny identitet"
+
+msgid "addidentity"
+msgstr "Lägg till identitet"
+
+msgid "editidentity"
+msgstr "Ändra identitet"
+
+msgid "identityencryption"
+msgstr "Kryptering"
+
+msgid "preferhtml"
+msgstr "Visa meddelanden i HTML-format"
+
+msgid "defaultcharset"
+msgstr "Förvald teckenkodning"
+
+msgid "htmlmessage"
+msgstr "HTML-meddelande"
+
+msgid "messagepart"
+msgstr "Del"
+
+msgid "digitalsig"
+msgstr "Digital signatur"
+
+msgid "dateformat"
+msgstr "Datumformat"
+
+msgid "timeformat"
+msgstr "Tidformat"
+
+msgid "prettydate"
+msgstr "Fina datum"
+
+msgid "setdefault"
+msgstr "Sätt som förval"
+
+msgid "autodetect"
+msgstr "Automatiskt"
+
+msgid "language"
+msgstr "Språk"
+
+msgid "timezone"
+msgstr "Tidszon"
+
+msgid "pagesize"
+msgstr "Rader per sida"
+
+msgid "signature"
+msgstr "Signatur"
+
+msgid "dstactive"
+msgstr "Sommartid"
+
+msgid "showinextwin"
+msgstr "Öppna i nytt fönster"
+
+msgid "composeextwin"
+msgstr "Skriv i nytt fönster"
+
+msgid "htmleditor"
+msgstr "Skriv meddelanden i HTML-format"
+
+msgid "htmlonreply"
+msgstr "Endast vid svar på meddelande i HTML-format"
+
+msgid "htmlonreplyandforward"
+msgstr "Vid svar på eller vidareskickande av meddelande i HTML-format"
+
+msgid "htmlsignature"
+msgstr "HTML-signatur"
+
+msgid "showemail"
+msgstr "Visa namn och adress"
+
+msgid "previewpane"
+msgstr "Visa meddelandefältet"
+
+msgid "skin"
+msgstr "Stilmall för användargränssnitt"
+
+msgid "logoutclear"
+msgstr "Töm Papperskorg vid utloggning"
+
+msgid "logoutcompact"
+msgstr "Packa Inkorg vid utloggning"
+
+msgid "uisettings"
+msgstr "Användargränssnitt"
+
+msgid "serversettings"
+msgstr "Serverinställningar"
+
+msgid "mailboxview"
+msgstr "Hantering av meddelanden"
+
+msgid "mdnrequests"
+msgstr "Skicka mottagarkvitton"
+
+msgid "askuser"
+msgstr "Fråga"
+
+msgid "autosend"
+msgstr "Automatiskt"
+
+msgid "autosendknown"
+msgstr "Skicka kvitto till mina kontakter, fråga för övriga"
+
+msgid "autosendknownignore"
+msgstr "Skicka kvitto till mina kontakter, ignorera övriga"
+
+msgid "autosendtrusted"
+msgstr "skicka kvitto till betrodda avsändare, annars fråga mig"
+
+msgid "autosendtrustedignore"
+msgstr "skicka kvitto till betrodda avsändare, annars ignorera"
+
+msgid "ignorerequest"
+msgstr "ignorera begäran"
+
+msgid "readwhendeleted"
+msgstr "Markera meddelande som läst vid borttagning"
+
+msgid "flagfordeletion"
+msgstr "Flagga meddelande för borttagning istället för att ta bort direkt"
+
+msgid "skipdeleted"
+msgstr "Visa inte borttagna meddelanden"
+
+msgid "deletealways"
+msgstr "Ta bort meddelande om flyttning till Papperskorg misslyckas"
+
+msgid "deletejunk"
+msgstr "Radera meddelanden i Skräp direkt"
+
+msgid "showremoteimages"
+msgstr "Visa externt länkade bilder i meddelande"
+
+msgid "allowremoteresources"
+msgstr "Tillåt externt länkade resurser (bilder, stilmallar)"
+
+msgid "fromknownsenders"
+msgstr "Från kända avsändare"
+
+msgid "fromtrustedsenders"
+msgstr "från betrodda avsändare"
+
+msgid "frommycontacts"
+msgstr "från mina kontakter"
+
+msgid "always"
+msgstr "Alltid"
+
+msgid "alwaysbutplain"
+msgstr "alltid, utom vid svar på textmeddelande"
+
+msgid "showinlineimages"
+msgstr "Visa bifogade bilder efter meddelande"
+
+msgid "autosavedraft"
+msgstr "Spara utkast med automatiskt intervall"
+
+msgid "everynminutes"
+msgstr "$n min"
+
+msgid "refreshinterval"
+msgstr "Uppdatera (hämta nya meddelanden, o.s.v.)"
+
+msgid "never"
+msgstr "Aldrig"
+
+msgid "immediately"
+msgstr "Direkt"
+
+msgid "messagesdisplaying"
+msgstr "Visning av meddelanden"
+
+msgid "messagescomposition"
+msgstr "Redigering av meddelanden"
+
+msgid "mimeparamfolding"
+msgstr "Kodning av namn på bifogade filer"
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (övriga)"
+
+msgid "force7bit"
+msgstr "Använd MIME-kodning för tecken med 8-bitar"
+
+msgid "savelocalstorage"
+msgstr "Spara lokalt (tillfälligt)"
+
+msgid "advancedoptions"
+msgstr "Avancerade inställningar"
+
+msgid "toggleadvancedoptions"
+msgstr "Växla avancerade inställningar"
+
+msgid "focusonnewmessage"
+msgstr "Fokusera webbläsarens fönster vid nytt meddelande"
+
+msgid "checkallfolders"
+msgstr "Kontrollera alla mappar för nya meddelanden"
+
+msgid "displaynext"
+msgstr "Visa nästa i listan efter ta bort eller flytta"
+
+msgid "defaultfont"
+msgstr "Förvalt teckensnitt i HTML-meddelande"
+
+msgid "mainoptions"
+msgstr "Huvudalternativ"
+
+msgid "browseroptions"
+msgstr "Webbläsaralternativ"
+
+msgid "section"
+msgstr "Avdelning"
+
+msgid "maintenance"
+msgstr "Underhåll"
+
+msgid "newmessage"
+msgstr "Nytt meddelande"
+
+msgid "signatureoptions"
+msgstr "Signaturalternativ"
+
+msgid "whenreplying"
+msgstr "Vid svar"
+
+msgid "replyempty"
+msgstr "Inkludera inte ursprungligt meddelande"
+
+msgid "replytopposting"
+msgstr "Skriv nytt meddelande ovanför befintligt"
+
+msgid "replytoppostingnoindent"
+msgstr "Skriv nytt meddelande ovanför befintligt (utan indrag)"
+
+msgid "replybottomposting"
+msgstr "Skriv nytt meddelande nedanför befintligt"
+
+msgid "replyremovesignature"
+msgstr "Ta bort befintlig signatur från meddelandet vid svar"
+
+msgid "autoaddsignature"
+msgstr "Infoga signatur automatiskt"
+
+msgid "newmessageonly"
+msgstr "Vid nytt meddelande"
+
+msgid "replyandforwardonly"
+msgstr "Vid svar och vidareskickande"
+
+msgid "insertsignature"
+msgstr "Infoga signatur"
+
+msgid "sigbelow"
+msgstr "Placera signatur efter meddelandet"
+
+msgid "sigseparator"
+msgstr "Använd alltid avdelare enligt standard i signaturer"
+
+msgid "automarkread"
+msgstr "Markera meddelanden som lästa"
+
+msgid "afternseconds"
+msgstr "Efter $n sekunder"
+
+msgid "reqmdn"
+msgstr "Begär alltid mottagarkvitto"
+
+msgid "reqdsn"
+msgstr "Begär alltid leveransstatusmeddelande"
+
+msgid "alwayskeepformatting"
+msgstr "Behåll alltid ursprunglig textformatering "
+
+msgid "replysamefolder"
+msgstr "Placera svar i samma mapp som besvarat meddelande"
+
+msgid "defaultabook"
+msgstr "Förvald adressbok"
+
+msgid "autocompletesingle"
+msgstr "Hoppa över alternativa adresser vid automatisk komplettering"
+
+msgid "listnamedisplay"
+msgstr "Lista kontakter med"
+
+msgid "contactformmode"
+msgstr "Kontaktformulär-läge"
+
+msgid "privatemode"
+msgstr "Privat (hem)"
+
+msgid "businessmode"
+msgstr "Företag (arbete)"
+
+msgid "collectedaddresses"
+msgstr "Samlade adresser"
+
+msgid "collectedrecipients"
+msgstr "Samlade mottagare"
+
+msgid "collectedrecipientsopt"
+msgstr "Lagra utgående mottagare i"
+
+msgid "collectedsendersopt"
+msgstr "Lagra betrodda avsändare i"
+
+msgid "trustedsenders"
+msgstr "Betrodda avsändare"
+
+msgid "spellcheckbeforesend"
+msgstr "Kontrollera stavning innan meddelanden skickas"
+
+msgid "spellcheckoptions"
+msgstr "Rättstavningsalternativ"
+
+msgid "spellcheckignoresyms"
+msgstr "Ignorera ord med symboler"
+
+msgid "spellcheckignorenums"
+msgstr "Ignorera ord med siffror"
+
+msgid "spellcheckignorecaps"
+msgstr "Ignorera ord med enbart stora bokstäver"
+
+msgid "addtodict"
+msgstr "Lägg till i ordlista"
+
+msgid "editoroptions"
+msgstr "Redigeringsalternativ"
+
+msgid "enableautolink"
+msgstr "Konvertera giltiga länkar till aktiva länkar"
+
+msgid "mailtoprotohandler"
+msgstr "Ange program för hantering av mailto-länkar"
+
+msgid "standardwindows"
+msgstr "Hantera popup-rutor som standardfönster"
+
+msgid "forwardmode"
+msgstr "Skicka meddelande vidare"
+
+msgid "inline"
+msgstr "Infogat"
+
+msgid "asattachment"
+msgstr "Bilaga"
+
+msgid "replyallmode"
+msgstr "Standardfunktion för knappen Svara alla"
+
+msgid "replyalldefault"
+msgstr "Svara alla"
+
+msgid "replyalllist"
+msgstr "Svara endast lista (i förekommande fall)"
+
+msgid "allmessages"
+msgstr "alla meddelanden"
+
+msgid "olderxdays"
+msgstr "äldre än $x dagar"
+
+msgid "folder"
+msgstr "Mapp"
+
+msgid "folders"
+msgstr "Mappar"
+
+msgid "foldername"
+msgstr "Mappnamn"
+
+msgid "subscribed"
+msgstr "Prenumererad"
+
+msgid "messagecount"
+msgstr "Meddelanden"
+
+msgid "create"
+msgstr "Skapa"
+
+msgid "createfolder"
+msgstr "Ny mapp"
+
+msgid "managefolders"
+msgstr "Hantera mappar"
+
+msgid "specialfolders"
+msgstr "Speciella mappar"
+
+msgid "properties"
+msgstr "Egenskaper"
+
+msgid "folderproperties"
+msgstr "Mappegenskaper"
+
+msgid "parentfolder"
+msgstr "Överliggande mapp"
+
+msgid "location"
+msgstr "Plats"
+
+msgid "info"
+msgstr "Information"
+
+msgid "getfoldersize"
+msgstr "Klicka för att få mappstorlek"
+
+msgid "changesubscription"
+msgstr "Klicka för att ändra prenumeration"
+
+msgid "foldertype"
+msgstr "Mapptyp"
+
+msgid "personalfolder"
+msgstr "Privat mapp"
+
+msgid "otherfolder"
+msgstr "Annan användares mapp"
+
+msgid "sharedfolder"
+msgstr "Offentlig mapp"
+
+msgid "findfolders"
+msgstr "Hitta mappar"
+
+msgid "findcontacts"
+msgstr "Hitta kontakter"
+
+msgid "findmail"
+msgstr "Hitta meddelanden"
+
+msgid "namespace.personal"
+msgstr "Personliga"
+
+msgid "namespace.other"
+msgstr "Andra användares"
+
+msgid "namespace.shared"
+msgstr "Delade"
+
+msgid "dualuselabel"
+msgstr "Kan endast innehålla"
+
+msgid "dualusemail"
+msgstr "meddelanden"
+
+msgid "dualusefolder"
+msgstr "mappar"
+
+msgid "generate"
+msgstr "Skapa"
+
+msgid "encryptioncreatekey"
+msgstr "Nytt nyckelpar "
+
+msgid "openmailvelopesettings"
+msgstr "Öppna inställningar för Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr "Du har $nr passande privata nycklar i din Mailvelope-nyckelring:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Avsändaridentiteten har ännu ingen privat PGP-nyckel lagrad i Mailvelope-"
+"tillägget. Vill du skapa en för att kunna skicka krypterade meddelanden?"
+
+msgid "encryption"
+msgstr "Kryptering"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelope-alternativ"
+
+msgid "mailvelopemainkeyring"
+msgstr "Använd Mailvelopes huvudnyckelring"
+
+msgid "mailvelopenotfound"
+msgstr "Mailvelope-tillägg är inte aktiverat/installerat i din webbläsare."
+
+msgid "mailvelopeenable"
+msgstr "Aktivera"
+
+msgid "sortby"
+msgstr "Sortera på"
+
+msgid "sortasc"
+msgstr "Sortera stigande"
+
+msgid "sortdesc"
+msgstr "Sortera fallande"
+
+msgid "undo"
+msgstr "Ångra"
+
+msgid "installedplugins"
+msgstr "Installerade tillägg"
+
+msgid "plugin"
+msgstr "Tillägg"
+
+msgid "version"
+msgstr "Version"
+
+msgid "source"
+msgstr "Källkod"
+
+msgid "destination"
+msgstr "Destination"
+
+msgid "license"
+msgstr "Licens"
+
+msgid "skinauthor"
+msgstr "av $author"
+
+msgid "support"
+msgstr "Hjälp"
+
+msgid "savedsearches"
+msgstr "Sparade sökningar"
+
+msgid "dateformatY"
+msgstr "ÅÅÅÅ"
+
+msgid "dateformaty"
+msgstr "ÅÅ"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Engelsk"
+
+msgid "westerneuropean"
+msgstr "Västeuropeisk"
+
+msgid "easterneuropean"
+msgstr "Östeuropeisk"
+
+msgid "southeasterneuropean"
+msgstr "Sydösteuropeisk"
+
+msgid "baltic"
+msgstr "Baltisk"
+
+msgid "cyrillic"
+msgstr "Kyrillisk"
+
+msgid "arabic"
+msgstr "Arabisk"
+
+msgid "greek"
+msgstr "Grekisk"
+
+msgid "hebrew"
+msgstr "Hebreisk"
+
+msgid "turkish"
+msgstr "Turkisk"
+
+msgid "nordic"
+msgstr "Skandinavisk"
+
+msgid "thai"
+msgstr "Thailändsk"
+
+msgid "celtic"
+msgstr "Keltisk"
+
+msgid "vietnamese"
+msgstr "Vietnamesisk"
+
+msgid "japanese"
+msgstr "Japansk"
+
+msgid "korean"
+msgstr "Koreansk"
+
+msgid "chinese"
+msgstr "Kinesisk"
+
+msgid "arialabeltopnav"
+msgstr "Fönsterkontroll"
+
+msgid "arialabeltasknav"
+msgstr "Programuppgifter"
+
+msgid "arialabeltoolbar"
+msgstr "Programmets verktygslist"
+
+msgid "arialabellistnav"
+msgstr "Listnavigering"
+
+msgid "arialabelactivetask"
+msgstr "Aktiv uppgift"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Meddelandelistningsfilter"
+
+msgid "arialabelmailsearchform"
+msgstr "Sökformulär för meddelande"
+
+msgid "arialabelcontactsearchform"
+msgstr "Sökformulär för kontakter"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Meddelandesökfält"
+
+msgid "arialabelquicksearchbox"
+msgstr "Sökfält"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Mapplistningsfilter"
+
+msgid "arialabelfoldersearchform"
+msgstr "Sökformulär för mappar"
+
+msgid "arialabelfolderlist"
+msgstr "Markering av meddelandemapp"
+
+msgid "arialabelmessagelist"
+msgstr "Meddelandelistning"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Förhandsvisning av meddelande"
+
+msgid "arialabelmailboxmenu"
+msgstr "Mappåtgärdsmeny"
+
+msgid "arialabellistselectmenu"
+msgstr "Listmarkeringsmeny"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Trådlistningsmeny"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Alternativ för visning och sortering av meddelandelista"
+
+msgid "arialabelmailimportdialog"
+msgstr "Dialog för import av meddelande"
+
+msgid "arialabelmessagenav"
+msgstr "Meddelandenavigering"
+
+msgid "arialabelmessagebody"
+msgstr "Meddelandeinnehåll"
+
+msgid "arialabelmessageactions"
+msgstr "Meddelandehantering"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Sökformulär för kontakter"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Kontaktsökfält"
+
+msgid "arialabelmessageheaders"
+msgstr "Meddelandeinfo"
+
+msgid "arialabelforwardingoptions"
+msgstr "Alternativ för vidareskickande"
+
+msgid "arialabelreplyalloptions"
+msgstr "Alternativ för svara alla"
+
+msgid "arialabelmoremessageactions"
+msgstr "Ytterligare meddelandehantering"
+
+msgid "arialabelmorecontactactions"
+msgstr "Ytterligare kontakthantering"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Markera markerat meddelande som..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Skapandeinställningar"
+
+msgid "arialabelresponsesmenu"
+msgstr "Responsmeny"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Uppladdningsformulär för bilaga"
+
+msgid "arialabelattachmentmenu"
+msgstr "Alternativ för bilagor"
+
+msgid "arialabelmailtomenu"
+msgstr "Adressalternativ"
+
+msgid "arialabelattachmentpreview"
+msgstr "Förhandsvisning av bilaga"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Lista med kontakter och grupper att använda som mottagare"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Exportalternativ för kontakter"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Alternativ för adressbok/kontaktgrupp"
+
+msgid "arialabelpreferencesform"
+msgstr "Inställningsformulär"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Ändringsformulär för identitet"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Ändringsformulär för respons"
+
+msgid "arialabelsearchterms"
+msgstr "Sökord"
+
+msgid "arialabeldropactionmenu"
+msgstr "Dra-och-släpp-hanteringsmeny"
+
+msgid "arialabelheadersmenu"
+msgstr "Meny lägg till mottagare (meddelandeinfo)"
+
+msgid "arialabelimagetools"
+msgstr "Bildverktyg"
+
+msgid "helplistnavigation"
+msgstr "Listnavigering"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Piltangent upp/ner: Flytta radfokus/radmarkering.\n"
+"Mellanslag: Välj fokuserad rad.\n"
+"Shift + upp/ner: Välj ytterligare rad över/under.\n"
+"Ctrl + mellanslag: Lägg till/ta bort fokuserad rad i markering."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Piltangent höger/vänster: visa/göm meddelandetråd (endast i trådvisningsläge).\n"
+"Retur: Öppna markerat/fokuserat meddelande.\n"
+"Backsteg: Flytta markerat meddelande till Papperskorg."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Retur: Öppna markerad/fokuserad kontakt."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Ett fel uppstod!"
+
+msgid "messages.loginfailed"
+msgstr "Inloggningen misslyckades"
+
+msgid "messages.cookiesdisabled"
+msgstr "Webbläsaren accepterar inte cookies."
+
+msgid "messages.sessionerror"
+msgstr "Din inloggning är felaktig eller har gått ut"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Något är fel med webbläsarens cookie. Rensa bort den för att kunna "
+"fortsätta."
+
+msgid "messages.storageerror"
+msgstr "Anslutning till lagringsservern misslyckades."
+
+msgid "messages.servererror"
+msgstr "Serverfel!"
+
+msgid "messages.servererrormsg"
+msgstr "Serverfel: $msg"
+
+msgid "messages.accountlocked"
+msgstr "För många felaktiga inloggningar. Försök igen senare."
+
+msgid "messages.connerror"
+msgstr "Anslutningsfel (misslyckades att kontakta servern)!"
+
+msgid "messages.dberror"
+msgstr "Databasfel!"
+
+msgid "messages.dbconnerror"
+msgstr "Anslutning till serverns databas misslyckades!"
+
+msgid "messages.windowopenerror"
+msgstr "Popup-fönstret blockerades!"
+
+msgid "messages.requesttimedout"
+msgstr "Begäran tog för lång tid"
+
+msgid "messages.errorreadonly"
+msgstr "Åtgärden kunde inte utföras. Mappen är skrivskyddad."
+
+msgid "messages.errornoperm"
+msgstr "Åtgärden kunde inte utföras. Otillräcklig befogenhet."
+
+msgid "messages.erroroverquota"
+msgstr "Åtgärden kunde inte utföras. Otillräckligt lagringsutrymme."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Otillräckligt lagringsutrymme. Tryck på SHIFT och DEL för att ta bort ett "
+"meddelande."
+
+msgid "messages.invalidrequest"
+msgstr "Ogiltig begäran! Informationen sparades inte."
+
+msgid "messages.invalidhost"
+msgstr "Ogiltigt servernamn."
+
+msgid "messages.nomessagesfound"
+msgstr "Inga meddelanden."
+
+msgid "messages.loggedout"
+msgstr "Du är utloggad. Välkommen åter!"
+
+msgid "messages.mailboxempty"
+msgstr "Brevlådan är tom"
+
+msgid "messages.nomessages"
+msgstr "Inga meddelanden"
+
+msgid "messages.refreshing"
+msgstr "Uppdaterar..."
+
+msgid "messages.loading"
+msgstr "Läser in..."
+
+msgid "messages.uploading"
+msgstr "Överför fil..."
+
+msgid "messages.attaching"
+msgstr "Bifogar fil..."
+
+msgid "messages.uploadingmany"
+msgstr "Överför filer..."
+
+msgid "messages.loadingdata"
+msgstr "Läser in data..."
+
+msgid "messages.checkingmail"
+msgstr "Hämtar nya meddelanden..."
+
+msgid "messages.sendingmessage"
+msgstr "Skickar meddelande..."
+
+msgid "messages.messagesent"
+msgstr "Meddelandet har skickats."
+
+msgid "messages.savingmessage"
+msgstr "Sparar meddelande..."
+
+msgid "messages.messagesaved"
+msgstr "Meddelandet har sparats i Utkast"
+
+msgid "messages.successfullysaved"
+msgstr "Sparat."
+
+msgid "messages.savingresponse"
+msgstr "Sparar responstext..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Vill du verkligen ta bort denna responstext?"
+
+msgid "messages.nocontactselected"
+msgstr "Ingen kontakt är vald ännu."
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontakten har lagts till i adressboken."
+
+msgid "messages.contactexists"
+msgstr "En kontakt med den här adressen finns redan."
+
+msgid "messages.contactnameexists"
+msgstr "En kontakt med det här namnet finns redan."
+
+msgid "messages.blockedimages"
+msgstr "Externt länkade bilder i meddelandet har blockerats."
+
+msgid "messages.blockedresources"
+msgstr "Externt länkade resurser i meddelandet har blockerats."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Meddelandet innehåller mailadresser som kan vara försök till bedrägeri."
+
+msgid "messages.bccemail"
+msgstr "Vidarebefordrat meddelande innehåller dolda mottagare (Bcc)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Meddelandet kommer att skickas utan modifieringar, dvs med ursprungligt "
+"innehåll, meddelandehuvud och ursprungliga mottagare."
+
+msgid "messages.encryptedmessage"
+msgstr "Meddelandet är krypterat och kan tyvärr inte visas."
+
+msgid "messages.externalmessagedecryption"
+msgstr "Meddelandet är krypterat och kan visas med ett tillägg i webbläsaren."
+
+msgid "messages.nopubkeyfor"
+msgstr "Ingen giltig offentlig nyckel hittades för $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Ingen giltig offentlig nyckel hittades för din avsändaradress. Vill du "
+"kryptera meddelandet enbart för mottagaren?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Redan uppladdade bilagor kan inte krypteras. Lägg till bilagorna i "
+"krypteringsredigeraren istället."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Ska saknade nycklar sökas i offentliga nyckelservrar?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Följande offentliga nycklar hittades:"
+
+msgid "messages.keyservererror"
+msgstr "Nyckeln kunde inte hämtas från nyckelservern."
+
+msgid "messages.keyimportsuccess"
+msgstr "Offentlig nyckel $key är tillagd i din nyckelring."
+
+msgid "messages.nocontactsfound"
+msgstr "Inga kontakter hittades."
+
+msgid "messages.contactnotfound"
+msgstr "Efterfrågad kontakt hittades inte."
+
+msgid "messages.contactsearchonly"
+msgstr "Ange sökord för att hitta kontakter i vald adressbok."
+
+msgid "messages.sendingfailed"
+msgstr "Meddelandet kunde inte skickas."
+
+msgid "messages.senttooquickly"
+msgstr "Vänta ytterligare $sec sekunder med att skicka meddelandet."
+
+msgid "messages.errorsavingsent"
+msgstr "Det skickade meddelandet kunde inte sparas."
+
+msgid "messages.errorsaving"
+msgstr "Meddelandet kunde inte sparas."
+
+msgid "messages.errormoving"
+msgstr "Meddelandet kunde inte flyttas."
+
+msgid "messages.errorcopying"
+msgstr "Meddelandet kunde inte kopieras."
+
+msgid "messages.errordeleting"
+msgstr "Meddelandet kunde inte tas bort."
+
+msgid "messages.errormarking"
+msgstr "Meddelandet kunde inte markeras."
+
+msgid "messages.alerttitle"
+msgstr "Uppmärksamhet"
+
+msgid "messages.confirmationtitle"
+msgstr "Är du säker..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Vill du verkligen ta bort valda kontakter?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Vill du verkligen ta bort den valda gruppen?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Vill du verkligen ta bort valda meddelanden?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Vill du verkligen ta bort den här mappen?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Vill du verkligen flytta den här mappen?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Vill du verkligen ta bort alla meddelanden i den här mappen?"
+
+msgid "messages.contactdeleting"
+msgstr "Tar bort kontakt..."
+
+msgid "messages.groupdeleting"
+msgstr "Tar bort grupp..."
+
+msgid "messages.folderdeleting"
+msgstr "Tar bort mapp..."
+
+msgid "messages.foldermoving"
+msgstr "Flyttar mapp..."
+
+msgid "messages.foldersubscribing"
+msgstr "Startar prenumeration på mapp..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Avslutar prenumeration på mapp..."
+
+msgid "messages.formincomplete"
+msgstr "Formuläret var inte komplett ifyllt."
+
+msgid "messages.noemailwarning"
+msgstr "Ange en giltig adress."
+
+msgid "messages.nonamewarning"
+msgstr "Ange ett namn."
+
+msgid "messages.nopagesizewarning"
+msgstr "Ange en sidstorlek."
+
+msgid "messages.nosenderwarning"
+msgstr "Ange en avsändaradress."
+
+msgid "messages.recipientsadded"
+msgstr "Mottagare tillagda."
+
+msgid "messages.norecipientwarning"
+msgstr "Ange minst en mottagare."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Alla mottagare kan se varandras adresser. Undvik detta genom att ange "
+"adresserna i fältet för dolda mottagare (Bcc) istället."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Alltför många mottagaradresser"
+
+msgid "messages.nosubjectwarning"
+msgstr "Ämnesraden är tom. Vill du ange ett ämne nu?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Inget ämne"
+
+msgid "messages.nobodywarning"
+msgstr "Skicka det här meddelandet utan text?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Meddelandet har inte skickats ännu men har ändringar som inte är sparade. "
+"Vill du strunta i ändringarna?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Ett tidigare skrivet men inte skickat meddelande upptäcktes.\\n\\nÄmne: "
+"$subject\\nSparat: $date\\n\\nVill du återskapa meddelandet?"
+
+msgid "messages.nosearchname"
+msgstr "Ange ett kontaktnamn eller en adress."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Alla bilagor har inte överförts ännu. Vänta eller avbryt överföringen."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr meddelanden hittades."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr kontakter hittades."
+
+msgid "messages.searchnomatch"
+msgstr "Sökningen gav inget resultat."
+
+msgid "messages.searching"
+msgstr "Söker..."
+
+msgid "messages.checking"
+msgstr "Kontrollerar..."
+
+msgid "messages.stillsearching"
+msgstr "Söker fortfarande..."
+
+msgid "messages.nospellerrors"
+msgstr "Inget stavfel hittades."
+
+msgid "messages.folderdeleted"
+msgstr "Mappen togs bort."
+
+msgid "messages.foldersubscribed"
+msgstr "Prenumeration på mapp startad."
+
+msgid "messages.folderunsubscribed"
+msgstr "Prenumeration på mapp avslutad."
+
+msgid "messages.folderpurged"
+msgstr "Mappen är tömd."
+
+msgid "messages.folderexpunged"
+msgstr "Mappen är rensad."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Borttaget."
+
+msgid "messages.converting"
+msgstr "Tar bort formatering..."
+
+msgid "messages.messageopenerror"
+msgstr "Meddelandet kunde inte hämtas från servern."
+
+msgid "messages.filelinkerror"
+msgstr "Filen kunde inte bifogas."
+
+msgid "messages.fileuploaderror"
+msgstr "Filuppladdning misslyckades."
+
+msgid "messages.csvfilemismatch"
+msgstr "Import av flera CSV-filer med olika fält stöds inte."
+
+msgid "messages.filesizeerror"
+msgstr "Den uppladdade filens storlek överstiger högsta tillåtna $size."
+
+msgid "messages.filecounterror"
+msgstr "Högst $count filer kan laddas upp samtidigt."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Filen kunde inte bifogas. Största tillåtna storlek ($size) överskreds."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Tillåten storlek på meddelandet ($size) är överskriden. $num meddelanden har"
+" inte bifogats."
+
+msgid "messages.copysuccess"
+msgstr "$nr kontakter har kopierats."
+
+msgid "messages.movesuccess"
+msgstr "$nr kontakter har flyttats."
+
+msgid "messages.copyerror"
+msgstr "Några kontakter kunde inte kopieras."
+
+msgid "messages.moveerror"
+msgstr "Några kontakter kunde inte flyttas."
+
+msgid "messages.sourceisreadonly"
+msgstr "Denna adresskälla är skrivskyddad."
+
+msgid "messages.errorsavingcontact"
+msgstr "Kontaktadressen kunde inte sparas."
+
+msgid "messages.movingmessage"
+msgstr "Flyttar meddelande..."
+
+msgid "messages.copyingmessage"
+msgstr "Kopierar meddelande..."
+
+msgid "messages.copyingcontact"
+msgstr "Kopierar kontakter..."
+
+msgid "messages.movingcontact"
+msgstr "Flyttar kontakter..."
+
+msgid "messages.deletingmessage"
+msgstr "Tar bort meddelande..."
+
+msgid "messages.markingmessage"
+msgstr "Markerar meddelande..."
+
+msgid "messages.addingmember"
+msgstr "Lägger till kontakter i gruppen..."
+
+msgid "messages.removingmember"
+msgstr "Tar bort kontakter från gruppen..."
+
+msgid "messages.receiptsent"
+msgstr "Mottagarkvitto har skickats."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Mottagarkvitto kunde inte skickas."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Vill du verkligen ta bort denna identitet?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Du kan inte ta bort identiteten, den är din sista."
+
+msgid "messages.forbiddencharacter"
+msgstr "Mappnamnet innehåller otillåtna tecken."
+
+msgid "messages.selectimportfile"
+msgstr "Välj en fil att ladda upp."
+
+msgid "messages.addresswriterror"
+msgstr "Markerad adressbok är skrivskyddad."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Kontakterna har lagts till i gruppen."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontakterna har tagits bort från gruppen."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Ingen grupptillhörighet ändrades."
+
+msgid "messages.importwait"
+msgstr "Importerar, var god vänta..."
+
+msgid "messages.importformaterror"
+msgstr "Importen misslyckades! Filen har inte korrekt dataformat."
+
+msgid "messages.importconfirm"
+msgstr "<b>Lyckad import av $inserted kontakter</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>Hoppade över $skipped befintliga kontakter</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>Hoppade över $invalid ogiltiga kontakter</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "<b>Kunde inte läsa in $errors giltiga kontakter</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr meddelanden har importerats"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Importen misslyckades! Filen är inte ett giltigt meddelande eller en "
+"brevlåda"
+
+msgid "messages.opnotpermitted"
+msgstr "Otillåten operation!"
+
+msgid "messages.nofromaddress"
+msgstr "Vald identitet saknar adress."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Genom att byta textredigerare kan formateringen av texten gå förlorad. Vill "
+"du fortsätta?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Ett irreparabelt fel har uppstått. Kontakta administratören omgående. "
+"<b>Meddelandet kan inte skickas.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP-fel ($code): Anslutning till servern misslyckades."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP-fel ($code): Inloggningen misslyckades."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP-fel ($code): Kan inte sätta avsändaradress till \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP-fel ($code): Kan inte lägga till mottagaradress \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP-fel: Felaktigt formaterad lista med mottagaradresser."
+
+msgid "messages.smtputf8error"
+msgstr "SMTP-fel: Servern klarar inte mailadresser med Unicode."
+
+msgid "messages.smtpsizeerror"
+msgstr "SMTP-fel: Meddelandet är för stort ($limit)."
+
+msgid "messages.smtperror"
+msgstr "SMTP-fel: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Ogiltig adress: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Förmånga mottagare. Minska antalet till högst $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Antalet gruppmedlemmar får inte överstiga $max."
+
+msgid "messages.internalerror"
+msgstr "Ett internt fel uppstod. Försök igen."
+
+msgid "messages.contactdelerror"
+msgstr "Kontakt kunde inte tas bort."
+
+msgid "messages.contactdeleted"
+msgstr "Kontakt borttagen."
+
+msgid "messages.contactrestoreerror"
+msgstr "Borttagna kontakter kunde inte återskapas."
+
+msgid "messages.contactrestored"
+msgstr "Kontakter återskapade."
+
+msgid "messages.groupdeleted"
+msgstr "Grupp borttagen."
+
+msgid "messages.grouprenamed"
+msgstr "Gruppnamn ändrat."
+
+msgid "messages.groupcreated"
+msgstr "Grupp skapad."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Sparad sökning borttagen."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Kunde inte ta bort sparad sökning."
+
+msgid "messages.savedsearchcreated"
+msgstr "Sparad sökning tillagd."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Kunde inte lägga till sparad sökning."
+
+msgid "messages.messagedeleted"
+msgstr "Meddelande borttaget."
+
+msgid "messages.messagemoved"
+msgstr "Meddelande flyttat."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Meddelanden flyttade till Papperskorg."
+
+msgid "messages.messagecopied"
+msgstr "Meddelande kopierat."
+
+msgid "messages.messagemarked"
+msgstr "Meddelande markerat."
+
+msgid "messages.autocompletechars"
+msgstr "Ange minst $min tecken för automatisk komplettering."
+
+msgid "messages.autocompletemore"
+msgstr "Ytterligare passande poster funna. Skriv fler tecken."
+
+msgid "messages.namecannotbeempty"
+msgstr "Namnet får inte vara tomt."
+
+msgid "messages.nametoolong"
+msgstr "Namnet är för långt."
+
+msgid "messages.namedotforbidden"
+msgstr "Mappnamnet kan inte inledas med en punkt."
+
+msgid "messages.folderupdated"
+msgstr "Mappen är uppdaterad."
+
+msgid "messages.foldercreated"
+msgstr "Mappen är skapad."
+
+msgid "messages.invalidimageformat"
+msgstr "Ogiltigt bildfilsformat."
+
+msgid "messages.mispellingsfound"
+msgstr "Stavfel hittades i meddelandet."
+
+msgid "messages.parentnotwritable"
+msgstr "Mappen kunde inte skapas eller flyttas. Åtkomsträttighet saknas."
+
+msgid "messages.messagetoobig"
+msgstr "Meddelandet är alltför stort att behandla."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Den här bilagan är misstänkt eftersom dess typ inte överensstämmer med typen"
+" som anges i meddelandet. Om du inte litar på avsändaren ska du inte öppna "
+"bilagan i webbläsaren eftersom innehållet kan vara "
+"skadligt.<br/><br/><em>Förväntad: $expected; Funnen: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Varning: Denna webbmailtjänst fungerar inte utan Javascript! Aktivera "
+"Javascript i webbläsarens inställningar."
+
+msgid "messages.messageissent"
+msgstr ""
+"Meddelandet är skickat men har inte sparats ännu. Vill du spara meddelandet "
+"nu?"
+
+msgid "messages.errnotfound"
+msgstr "Filen hittades inte"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Efterfrågad resurs hittades inte!"
+
+msgid "messages.errfailedrequest"
+msgstr "Begäran misslyckades"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Autentiseringen misslyckades"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Din behörighet till den här tjänsten kunde inte bekräftas!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Kontroll av begäran misslyckades"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Åtkomst till den här resursen är skyddad mot CSRF.\n"
+"Detta visas därför att utloggning från tjänsten inte gjordes korrekt.\n"
+"\n"
+"En aktiv handling krävs nu för att fortsätta."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Kontakta administratören."
+
+msgid "messages.clicktoresumesession"
+msgstr "Klicka här för att återuppta föregående session"
+
+msgid "messages.errcomposesession"
+msgstr "Fel i påbörjat meddelande"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Det påbörjade meddelandet hittades inte."
+
+msgid "messages.clicktocompose"
+msgstr "Klicka här för att skriva ett nytt meddelande"
+
+msgid "messages.nosupporterror"
+msgstr "Funktionen finns inte i webbläsaren."
+
+msgid "messages.siginserted"
+msgstr "Signatur infogad."
+
+msgid "messages.responseinserted"
+msgstr "Respons infogad."
+
+msgid "messages.noresponsesavailable"
+msgstr "Ingen respons tillgänglig"
+
+msgid "messages.listempty"
+msgstr "Listan är tom."
+
+msgid "messages.listusebutton"
+msgstr "Använd Skapa-knappen för att lägga till information."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Ett nytt nyckelpar har skapats för $identity."
+
+msgid "messages.emptyattachment"
+msgstr "Bilagan verkar vara tom.<br>Kontakta avsändaren."
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth-inloggningen misslyckades. Vänligen försök igen."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Autentiseringsbegäran var ogiltig eller inkomplett."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Autentiseringsbegäran nekades av servern eller användaren."

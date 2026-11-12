@@ -1,0 +1,2918 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Benvenite a $product"
+
+msgid "username"
+msgstr "Nomine de usator"
+
+msgid "password"
+msgstr "Contrasigno"
+
+msgid "server"
+msgstr "Servitor"
+
+msgid "login"
+msgstr "Aperir session"
+
+msgid "oauthlogin"
+msgstr "Aperir session con $provider"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "logout"
+msgstr "Clauder session"
+
+msgid "mail"
+msgstr "E-mail"
+
+msgid "settings"
+msgstr "Parametros"
+
+msgid "addressbook"
+msgstr "Adressario"
+
+msgid "darkmode"
+msgstr "Modo obscur"
+
+msgid "lightmode"
+msgstr "Modo clar"
+
+msgid "inbox"
+msgstr "Cassa de entrata"
+
+msgid "drafts"
+msgstr "Versiones provisori"
+
+msgid "sent"
+msgstr "Inviate"
+
+msgid "trash"
+msgstr "Corbe a papiro"
+
+msgid "junk"
+msgstr "Posta indesirate"
+
+msgid "show_real_foldernames"
+msgstr "Monstrar nomines real pro le dossiers special"
+
+msgid "subject"
+msgstr "Subjecto"
+
+msgid "from"
+msgstr "De"
+
+msgid "sender"
+msgstr "Expeditor"
+
+msgid "to"
+msgstr "A"
+
+msgid "cc"
+msgstr "Copia"
+
+msgid "bcc"
+msgstr "Copia occultate"
+
+msgid "replyto"
+msgstr "Responder a"
+
+msgid "followupto"
+msgstr "Continuar discussion in"
+
+msgid "date"
+msgstr "Data"
+
+msgid "size"
+msgstr "Dimension"
+
+msgid "priority"
+msgstr "Prioritate"
+
+msgid "organization"
+msgstr "Organisation"
+
+msgid "readstatus"
+msgstr "Stato de lectura"
+
+msgid "listoptions"
+msgstr "Optiones de lista…"
+
+msgid "listoptionstitle"
+msgstr "Optiones de lista"
+
+msgid "mailboxlist"
+msgstr "Dossiers"
+
+msgid "messagesfromto"
+msgstr "Messages $from a $to de $count"
+
+msgid "threadsfromto"
+msgstr "Topicos $from a $to de $count"
+
+msgid "messagenrof"
+msgstr "Message $nr de $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to de $count"
+
+msgid "copy"
+msgstr "Copiar"
+
+msgid "move"
+msgstr "Displaciar"
+
+msgid "moveto"
+msgstr "Displaciar a…"
+
+msgid "copyto"
+msgstr "Copiar a…"
+
+msgid "download"
+msgstr "Discargar"
+
+msgid "open"
+msgstr "Aperir"
+
+msgid "showattachment"
+msgstr "Monstrar"
+
+msgid "showanyway"
+msgstr "Monstrar lo in omne caso"
+
+msgid "filename"
+msgstr "Nomine de file"
+
+msgid "filesize"
+msgstr "Dimension del file"
+
+msgid "addtoaddressbook"
+msgstr "Adder al adressario"
+
+msgid "sun"
+msgstr "dom"
+
+msgid "mon"
+msgstr "lun"
+
+msgid "tue"
+msgstr "mar"
+
+msgid "wed"
+msgstr "mer"
+
+msgid "thu"
+msgstr "jov"
+
+msgid "fri"
+msgstr "ven"
+
+msgid "sat"
+msgstr "sab"
+
+msgid "sunday"
+msgstr "dominica"
+
+msgid "monday"
+msgstr "lunedi"
+
+msgid "tuesday"
+msgstr "martedi"
+
+msgid "wednesday"
+msgstr "mercuridi"
+
+msgid "thursday"
+msgstr "jovedi"
+
+msgid "friday"
+msgstr "venerdi"
+
+msgid "saturday"
+msgstr "sabbato"
+
+msgid "jan"
+msgstr "jan"
+
+msgid "feb"
+msgstr "feb"
+
+msgid "mar"
+msgstr "mar"
+
+msgid "apr"
+msgstr "apr"
+
+msgid "may"
+msgstr "mai"
+
+msgid "jun"
+msgstr "jun"
+
+msgid "jul"
+msgstr "jul"
+
+msgid "aug"
+msgstr "aug"
+
+msgid "sep"
+msgstr "sep"
+
+msgid "oct"
+msgstr "oct"
+
+msgid "nov"
+msgstr "nov"
+
+msgid "dec"
+msgstr "dec"
+
+msgid "longjan"
+msgstr "januario"
+
+msgid "longfeb"
+msgstr "februario"
+
+msgid "longmar"
+msgstr "martio"
+
+msgid "longapr"
+msgstr "april"
+
+msgid "longmay"
+msgstr "mai"
+
+msgid "longjun"
+msgstr "junio"
+
+msgid "longjul"
+msgstr "julio"
+
+msgid "longaug"
+msgstr "augusto"
+
+msgid "longsep"
+msgstr "septembre"
+
+msgid "longoct"
+msgstr "octobre"
+
+msgid "longnov"
+msgstr "novembre"
+
+msgid "longdec"
+msgstr "decembre"
+
+msgid "today"
+msgstr "hodie"
+
+msgid "refresh"
+msgstr "Refrescar"
+
+msgid "checkmail"
+msgstr "Verificar si il ha nove messages"
+
+msgid "compose"
+msgstr "Componer"
+
+msgid "writenewmessage"
+msgstr "Crear un nove message"
+
+msgid "reply"
+msgstr "Responder"
+
+msgid "replytomessage"
+msgstr "Responder al expeditor"
+
+msgid "replytoallmessage"
+msgstr "Responder al lista o al expeditor e tote le destinatarios"
+
+msgid "replyall"
+msgstr "Responder a totes"
+
+msgid "replylist"
+msgstr "Responder al lista"
+
+msgid "forward"
+msgstr "Retransmitter"
+
+msgid "forwardinline"
+msgstr "Retransmitter in le texto del message"
+
+msgid "forwardattachment"
+msgstr "Retransmitter como annexo"
+
+msgid "forwardmessage"
+msgstr "Retransmitter le message"
+
+msgid "bouncemsg"
+msgstr "Retransmitter (message retrosaltate)"
+
+msgid "bounce"
+msgstr "Retransmitter"
+
+msgid "deletemessage"
+msgstr "Deler messsage"
+
+msgid "undeletemessage"
+msgstr "Restaurar message"
+
+msgid "movemessagetotrash"
+msgstr "Jectar message in corbe"
+
+msgid "printmessage"
+msgstr "Imprimer iste message"
+
+msgid "previousmessage"
+msgstr "Monstrar previe message"
+
+msgid "firstmessage"
+msgstr "Monstrar prime message"
+
+msgid "nextmessage"
+msgstr "Monstrar proxime message"
+
+msgid "lastmessage"
+msgstr "Monstrar ultime message"
+
+msgid "backtolist"
+msgstr "Retornar al lista de messages"
+
+msgid "viewsource"
+msgstr "Monstrar fonte"
+
+msgid "mark"
+msgstr "Marcar"
+
+msgid "markmessages"
+msgstr "Marcar messages"
+
+msgid "markread"
+msgstr "Como legite"
+
+msgid "markunread"
+msgstr "Como non legite"
+
+msgid "markflagged"
+msgstr "Como signalate"
+
+msgid "markunflagged"
+msgstr "Como non signalate"
+
+msgid "markundeleted"
+msgstr "Como non delite"
+
+msgid "markasread"
+msgstr "Marcar como legite"
+
+msgid "markasunread"
+msgstr "Marcar como non legite"
+
+msgid "markasflagged"
+msgstr "Marcar como signalate"
+
+msgid "markasunflagged"
+msgstr "Marcar como non signalate"
+
+msgid "moreactions"
+msgstr "Altere actiones…"
+
+msgid "markallread"
+msgstr "Marcar tote messages como legite"
+
+msgid "folders-cur"
+msgstr "Solmente le dossier seligite"
+
+msgid "folders-sub"
+msgstr "Le dossier seligite e su subdossieres"
+
+msgid "folders-all"
+msgstr "Tote le dossieres"
+
+msgid "more"
+msgstr "Plus"
+
+msgid "back"
+msgstr "Retornar"
+
+msgid "options"
+msgstr "Optiones"
+
+msgid "composeoptions"
+msgstr "Optiones de composition"
+
+msgid "optionsandattachments"
+msgstr "Optiones e annexos"
+
+msgid "actions"
+msgstr "Actiones"
+
+msgid "first"
+msgstr "Prime"
+
+msgid "last"
+msgstr "Ultime"
+
+msgid "previous"
+msgstr "Previe"
+
+msgid "next"
+msgstr "Proxime"
+
+msgid "select"
+msgstr "Seliger"
+
+msgid "selection"
+msgstr "Selection"
+
+msgid "all"
+msgstr "Totes"
+
+msgid "none"
+msgstr "Nulle"
+
+msgid "currpage"
+msgstr "Pagina actual"
+
+msgid "isread"
+msgstr "Legite"
+
+msgid "unread"
+msgstr "Non legite"
+
+msgid "flagged"
+msgstr "Signalate"
+
+msgid "unflagged"
+msgstr "Non signalate"
+
+msgid "unanswered"
+msgstr "Non respondite"
+
+msgid "withattachment"
+msgstr "Con annexo"
+
+msgid "deleted"
+msgstr "Delite"
+
+msgid "undeleted"
+msgstr "Non delite"
+
+msgid "replied"
+msgstr "Respondite"
+
+msgid "forwarded"
+msgstr "Reinviate"
+
+msgid "invert"
+msgstr "Inverter"
+
+msgid "filter"
+msgstr "Filtro"
+
+msgid "list"
+msgstr "Lista"
+
+msgid "threads"
+msgstr "Topicos"
+
+msgid "expand-all"
+msgstr "Displicar totes"
+
+msgid "expand-unread"
+msgstr "Displicar non legite"
+
+msgid "collapse-all"
+msgstr "Plicar totes"
+
+msgid "threaded"
+msgstr "Vista arborescente"
+
+msgid "showunread"
+msgstr "Monstrar messages non legite"
+
+msgid "autoexpand_threads"
+msgstr "Displicar topicos de messages"
+
+msgid "do_expand"
+msgstr "tote le topicos"
+
+msgid "expand_only_unread"
+msgstr "solmente con messages non legite"
+
+msgid "fromto"
+msgstr "De/A"
+
+msgid "flag"
+msgstr "Signalar"
+
+msgid "attachment"
+msgstr "Annexo"
+
+msgid "nonesort"
+msgstr "Nulle"
+
+msgid "sentdate"
+msgstr "Data de invio"
+
+msgid "arrival"
+msgstr "Data de arrivata"
+
+msgid "asc"
+msgstr "ascendente"
+
+msgid "desc"
+msgstr "descendente"
+
+msgid "listcolumns"
+msgstr "Columnas de lista"
+
+msgid "listsorting"
+msgstr "Columna clave"
+
+msgid "listorder"
+msgstr "Ordinamento"
+
+msgid "listmode"
+msgstr "Visualisation de lista"
+
+msgid "lmode"
+msgstr "Modo de lista"
+
+msgid "layout"
+msgstr "Disposition"
+
+msgid "layoutwidescreen"
+msgstr "Schermo large"
+
+msgid "layoutdesktop"
+msgstr "Scriptorio"
+
+msgid "layoutlist"
+msgstr "Lista"
+
+msgid "layoutwidescreendesc"
+msgstr "Schermo large (3 columnas)"
+
+msgid "layoutdesktopdesc"
+msgstr "Scriptorio (lista large e previsualisation de posta sub illo)"
+
+msgid "layoutlistdesc"
+msgstr "Lista (sin previsualisation de posta)"
+
+msgid "folderactions"
+msgstr "Actiones de dossier…"
+
+msgid "compact"
+msgstr "Compacte"
+
+msgid "empty"
+msgstr "Vacue"
+
+msgid "importmessages"
+msgstr "Importar messages"
+
+msgid "mailimportdesc"
+msgstr ""
+"Files de posta pote esser incargate in formato <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> o <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> ."
+
+msgid "mailimportzip"
+msgstr "Plure files pote esser comprimite in archivos zip."
+
+msgid "quota"
+msgstr "Spatio occupate"
+
+msgid "unknown"
+msgstr "incognite"
+
+msgid "unlimited"
+msgstr "sin limite"
+
+msgid "quotatype"
+msgstr "Typo de quota"
+
+msgid "quotatotal"
+msgstr "Limite"
+
+msgid "quotaused"
+msgstr "Usate"
+
+msgid "quotastorage"
+msgstr "Spatio de immagazinage"
+
+msgid "quotamessage"
+msgstr "Numero de messages"
+
+msgid "shortheaderdate"
+msgstr "Le $date"
+
+msgid "shortheaderto"
+msgstr "A $to le $date"
+
+msgid "shortheaderfrom"
+msgstr "De $from le $date"
+
+msgid "quicksearch"
+msgstr "Recerca rapide"
+
+msgid "searchplaceholder"
+msgstr "Cercar…"
+
+msgid "resetsearch"
+msgstr "Reinitialisar recerca"
+
+msgid "searchmod"
+msgstr "Modificatores de recerca"
+
+msgid "msgtext"
+msgstr "Message complete"
+
+msgid "body"
+msgstr "Texto"
+
+msgid "type"
+msgstr "Typo"
+
+msgid "namex"
+msgstr "Nomine"
+
+msgid "searchscope"
+msgstr "Ambito"
+
+msgid "currentfolder"
+msgstr "Dossier actual"
+
+msgid "subfolders"
+msgstr "Iste e subdossiers"
+
+msgid "allfolders"
+msgstr "Tote le dossiers"
+
+msgid "searchinterval-1W"
+msgstr "plus ancian que un septimana"
+
+msgid "searchinterval-1M"
+msgstr "plus ancian que un mense"
+
+msgid "searchinterval-1Y"
+msgstr "plus ancian que un anno"
+
+msgid "searchinterval1W"
+msgstr "plus juvene que un septimana"
+
+msgid "searchinterval1M"
+msgstr "plus ancian que un mense"
+
+msgid "searchinterval1Y"
+msgstr "plus juvene que un anno"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Aperir in nove fenestra"
+
+msgid "emlsave"
+msgstr "Discargar (.eml)"
+
+msgid "changeformattext"
+msgstr "Monstrar in formato de texto simple"
+
+msgid "changeformathtml"
+msgstr "Monstrar in formato HTML"
+
+msgid "editasnew"
+msgstr "Modificar como nove"
+
+msgid "send"
+msgstr "Inviar"
+
+msgid "sendmessage"
+msgstr "Inviar message"
+
+msgid "savemessage"
+msgstr "Salveguardar como version provisori"
+
+msgid "addattachment"
+msgstr "Annexar un file"
+
+msgid "charset"
+msgstr "Codification de characteres"
+
+msgid "editortype"
+msgstr "Typo de editor"
+
+msgid "returnreceipt"
+msgstr "Confirmation de reception"
+
+msgid "dsn"
+msgstr "Notification de stato de livration"
+
+msgid "keepformatting"
+msgstr "Mantener formatation"
+
+msgid "mailreplyintro"
+msgstr "Le $date, $sender ha scribite:"
+
+msgid "originalmessage"
+msgstr "Message original"
+
+msgid "selectimage"
+msgstr "Seliger imagine"
+
+msgid "addimage"
+msgstr "Adder imagine"
+
+msgid "selectmedia"
+msgstr "Seliger film"
+
+msgid "addmedia"
+msgstr "Adder film"
+
+msgid "encrypt"
+msgstr "Cryptar"
+
+msgid "encryptmessage"
+msgstr "Cryptar message"
+
+msgid "encryptmessagemailvelope"
+msgstr "Cryptar message con Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Importar claves public"
+
+msgid "encryptedsendialog"
+msgstr "A inviar message cryptate"
+
+msgid "encryptandsign"
+msgstr "Cryptar e signar"
+
+msgid "keyid"
+msgstr "ID del clave"
+
+msgid "keylength"
+msgstr "Bits"
+
+msgid "keyexpired"
+msgstr "Expirate"
+
+msgid "keyrevoked"
+msgstr "Revocate"
+
+msgid "bccinstead"
+msgstr "Usar \"Copia occultate\""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Inserer"
+
+msgid "insertcontact"
+msgstr "Inserer contacto(s)"
+
+msgid "recipient"
+msgstr "Destinatario"
+
+msgid "recipientedit"
+msgstr "Modificar destinatario"
+
+msgid "editidents"
+msgstr "Modificar identitates"
+
+msgid "spellcheck"
+msgstr "Orthographia"
+
+msgid "checkspelling"
+msgstr "Verificar orthographia"
+
+msgid "resumeediting"
+msgstr "Continuar le modification"
+
+msgid "revertto"
+msgstr "Reverter a"
+
+msgid "restore"
+msgstr "Restaurar"
+
+msgid "restoremessage"
+msgstr "Restaurar le message?"
+
+msgid "ignore"
+msgstr "Ignorar"
+
+msgid "responses"
+msgstr "Responsas"
+
+msgid "insertresponse"
+msgstr "Inserer un responsa"
+
+msgid "manageresponses"
+msgstr "Gerer responsas"
+
+msgid "newresponse"
+msgstr "Crear nove responsa"
+
+msgid "addresponse"
+msgstr "Adder responsa"
+
+msgid "editresponse"
+msgstr "Modificar responsa"
+
+msgid "editresponses"
+msgstr "Modificar responsas"
+
+msgid "responsename"
+msgstr "Nomine"
+
+msgid "responsetext"
+msgstr "Texto del responsa"
+
+msgid "attach"
+msgstr "Annexar"
+
+msgid "attachments"
+msgstr "Annexos"
+
+msgid "upload"
+msgstr "Incargar"
+
+msgid "uploadprogress"
+msgstr "$percent ($current de $total)"
+
+msgid "close"
+msgstr "Clauder"
+
+msgid "messageoptions"
+msgstr "Optiones de message…"
+
+msgid "togglecomposeoptions"
+msgstr "Alternar optiones de composition"
+
+msgid "attachmentrename"
+msgstr "Renominar annexo"
+
+msgid "low"
+msgstr "Basse"
+
+msgid "lowest"
+msgstr "Minimal"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "high"
+msgstr "Alte"
+
+msgid "highest"
+msgstr "Maximal"
+
+msgid "nosubject"
+msgstr "(sin subjecto)"
+
+msgid "showimages"
+msgstr "Monstrar imagines"
+
+msgid "allow"
+msgstr "Permitter"
+
+msgid "alwaysshow"
+msgstr "Sempre monstrar imagines de $sender"
+
+msgid "alwaysallow"
+msgstr "Sempre permitter de $sender"
+
+msgid "isdraft"
+msgstr "Iste es un message provisori."
+
+msgid "andnmore"
+msgstr "$nr alteres…"
+
+msgid "details"
+msgstr "Detalios"
+
+msgid "summary"
+msgstr "Summario"
+
+msgid "headers"
+msgstr "Capites"
+
+msgid "allheaders"
+msgstr "Tote le capites…"
+
+msgid "togglemoreheaders"
+msgstr "Monstrar plus capites de message"
+
+msgid "togglefullheaders"
+msgstr "Monstrar/celar capites crude"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Texto simple"
+
+msgid "savesentmessagein"
+msgstr "Salveguardar message inviate in"
+
+msgid "dontsave"
+msgstr "non salveguardar"
+
+msgid "maxuploadsize"
+msgstr "Le dimension maximal de iste file es $size"
+
+msgid "addcc"
+msgstr "Adder \"Copia\""
+
+msgid "addbcc"
+msgstr "Adder \"Copia occultate\""
+
+msgid "addreplyto"
+msgstr "Adder \"Responder a:\""
+
+msgid "addfollowupto"
+msgstr "Adder \"Continuar discussion in:\""
+
+msgid "sendreceipt"
+msgstr "Inviar recepta de lectura?"
+
+msgid "mdnrequest"
+msgstr ""
+"Le expeditor de iste message ha demandate de reciper un notification quando "
+"tu lege iste message. Vole tu notificar le expeditor?"
+
+msgid "receiptread"
+msgstr "Confirmation de reception (legite)"
+
+msgid "yourmessage"
+msgstr "Isto es un confirmation del reception de tu message"
+
+msgid "receiptnote"
+msgstr ""
+"Nota ben: Iste recepta solmente confirma que le message ha essite "
+"visualisate sur le computator del destinatario. Il non ha garantia que le "
+"destinatario ha legite o comprendite le contento del message."
+
+msgid "sendalwaysto"
+msgstr "Sempre inviar a $email"
+
+msgid "zoomin"
+msgstr "Zoom avante"
+
+msgid "zoomout"
+msgstr "Zoom retro"
+
+msgid "rotate"
+msgstr "otar"
+
+msgid "increaseimage"
+msgstr "Augmentar le dimension del imagine"
+
+msgid "decreaseimage"
+msgstr "Diminuer le dimension del imagine"
+
+msgid "rotateimage"
+msgstr "Rotar imagine"
+
+msgid "showtools"
+msgstr "Monstrar instrumentos de imagines"
+
+msgid "hidetools"
+msgstr "Celar instrumentos de imagines"
+
+msgid "name"
+msgstr "Nomine de presentation"
+
+msgid "firstname"
+msgstr "Prenomine"
+
+msgid "surname"
+msgstr "Nomine de familia"
+
+msgid "middlename"
+msgstr "Secunde nomine"
+
+msgid "nameprefix"
+msgstr "Prefixo"
+
+msgid "namesuffix"
+msgstr "Suffixo"
+
+msgid "nickname"
+msgstr "Pseudonymo"
+
+msgid "jobtitle"
+msgstr "Titulo professional"
+
+msgid "department"
+msgstr "Departimento"
+
+msgid "gender"
+msgstr "Sexo"
+
+msgid "maidenname"
+msgstr "Nomine de puera"
+
+msgid "email"
+msgstr "E-mail"
+
+msgid "phone"
+msgstr "Telephono"
+
+msgid "address"
+msgstr "Adresse"
+
+msgid "street"
+msgstr "Strata"
+
+msgid "locality"
+msgstr "Citate"
+
+msgid "zipcode"
+msgstr "Codice postal"
+
+msgid "region"
+msgstr "Provincia o stato"
+
+msgid "country"
+msgstr "Pais"
+
+msgid "birthday"
+msgstr "Data de nascentia"
+
+msgid "anniversary"
+msgstr "Anniversario"
+
+msgid "website"
+msgstr "Sito web"
+
+msgid "instantmessenger"
+msgstr "MI"
+
+msgid "notes"
+msgstr "Notas"
+
+msgid "male"
+msgstr "masculin"
+
+msgid "female"
+msgstr "feminin"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Gerente"
+
+msgid "assistant"
+msgstr "Assistente"
+
+msgid "spouse"
+msgstr "Sposo/a"
+
+msgid "allfields"
+msgstr "Omne campos"
+
+msgid "search"
+msgstr "Cercar"
+
+msgid "searchresult"
+msgstr "Resultato del recerca"
+
+msgid "advsearch"
+msgstr "Recerca avantiate"
+
+msgid "advanced"
+msgstr "Avantiate"
+
+msgid "other"
+msgstr "Altere"
+
+msgid "printcontact"
+msgstr "Imprimer contacto"
+
+msgid "qrcode"
+msgstr "Codice QR"
+
+msgid "typehome"
+msgstr "Domicilio"
+
+msgid "typework"
+msgstr "Labor"
+
+msgid "typeother"
+msgstr "Altere"
+
+msgid "typemobile"
+msgstr "Mobile"
+
+msgid "typemain"
+msgstr "Principal"
+
+msgid "typehomefax"
+msgstr "Fax a domicilio"
+
+msgid "typeworkfax"
+msgstr "Fax a labor"
+
+msgid "typecar"
+msgstr "Auto"
+
+msgid "typepager"
+msgstr "Pager"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Assistente"
+
+msgid "typehomepage"
+msgstr "Pagina principal"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profilo"
+
+msgid "addfield"
+msgstr "Adder campo…"
+
+msgid "addcontact"
+msgstr "Adder contacto"
+
+msgid "editcontact"
+msgstr "Modificar contacto"
+
+msgid "contacts"
+msgstr "Contactos"
+
+msgid "contactproperties"
+msgstr "Proprietates de contacto"
+
+msgid "contactnameandorg"
+msgstr "Nomine e organisation"
+
+msgid "personalinfo"
+msgstr "Information personal"
+
+msgid "personal"
+msgstr "Personal"
+
+msgid "contactphoto"
+msgstr "Photo del contacto"
+
+msgid "edit"
+msgstr "Modificar"
+
+msgid "cancel"
+msgstr "Cancellar"
+
+msgid "save"
+msgstr "Salveguardar"
+
+msgid "delete"
+msgstr "Deler"
+
+msgid "discard"
+msgstr "Abandonar"
+
+msgid "continue"
+msgstr "Continuar"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Renominar"
+
+msgid "addphoto"
+msgstr "Adder"
+
+msgid "replacephoto"
+msgstr "Reimplaciar"
+
+msgid "uploadphoto"
+msgstr "Incargar photo"
+
+msgid "choosefile"
+msgstr "Eliger file…"
+
+msgid "choosefiles"
+msgstr "Eliger files…"
+
+msgid "browse"
+msgstr "Navigar"
+
+msgid "newcontact"
+msgstr "Crear nove contacto"
+
+msgid "deletecontact"
+msgstr "Deler contactos seligite"
+
+msgid "composeto"
+msgstr "Componer message a"
+
+msgid "contactsfromto"
+msgstr "Contacts $from a $to de $count"
+
+msgid "print"
+msgstr "Imprimer"
+
+msgid "export"
+msgstr "Exportar"
+
+msgid "exportall"
+msgstr "Exportar totes"
+
+msgid "exportsel"
+msgstr "Exportar seligite"
+
+msgid "exportvcards"
+msgstr "Exportar contactos in formato vCard"
+
+msgid "newgroup"
+msgstr "Crear nove gruppo"
+
+msgid "addgroup"
+msgstr "Adder gruppo"
+
+msgid "grouprename"
+msgstr "Renominar gruppo"
+
+msgid "groupdelete"
+msgstr "Deler gruppo"
+
+msgid "groupassign"
+msgstr "Assignar a gruppo…"
+
+msgid "groupremove"
+msgstr "Remover del gruppo"
+
+msgid "groupremoveselected"
+msgstr "Remover contactos seligite del gruppo"
+
+msgid "uponelevel"
+msgstr "Un nivello in alto"
+
+msgid "previouspage"
+msgstr "Monstrar previe pagina"
+
+msgid "firstpage"
+msgstr "Monstrar prime pagina"
+
+msgid "nextpage"
+msgstr "Monstrar proxime pagina"
+
+msgid "lastpage"
+msgstr "Monstrar ultime pagina"
+
+msgid "group"
+msgstr "Gruppo"
+
+msgid "groups"
+msgstr "Gruppos"
+
+msgid "listgroup"
+msgstr "Listar membros del gruppo"
+
+msgid "personaladrbook"
+msgstr "Adresses personal"
+
+msgid "searchsave"
+msgstr "Salveguardar recerca"
+
+msgid "searchdelete"
+msgstr "Deler recerca"
+
+msgid "import"
+msgstr "Importar"
+
+msgid "importcontacts"
+msgstr "Importar contactos"
+
+msgid "importfromfile"
+msgstr "Importar ab file"
+
+msgid "importtarget"
+msgstr "Adder contactos a"
+
+msgid "importreplace"
+msgstr "Reimplaciar tote le adressario"
+
+msgid "importgroups"
+msgstr "Importar assignationes de gruppo"
+
+msgid "importgroupsall"
+msgstr "Totes (crear gruppos si necessari)"
+
+msgid "importgroupsexisting"
+msgstr "Solmente pro gruppos existente"
+
+msgid "importdesc"
+msgstr ""
+"Tu pote incargar le contactos de un adressario existente.<br/>Il es "
+"actualmente possibile importar adresses in formato <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> o CSV (datos separate"
+" per commas)."
+
+msgid "importmapdesc"
+msgstr ""
+"Per favor confirma que le arrangiamento de campos monstrate hic infra es "
+"correcte ante de continuar con le importation de datos CSV (valores separate"
+" per commas)."
+
+msgid "fieldnotmapped"
+msgstr "Campo non assignate (non importar)"
+
+msgid "skipheader"
+msgstr "Non importar le prime linea (capites)"
+
+msgid "done"
+msgstr "Facite"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Configurationes pro"
+
+msgid "about"
+msgstr "A proposito"
+
+msgid "preferences"
+msgstr "Preferentias"
+
+msgid "userpreferences"
+msgstr "Preferentias de usator"
+
+msgid "editpreferences"
+msgstr "Modificar preferentias de usator"
+
+msgid "identities"
+msgstr "Identitates"
+
+msgid "manageidentities"
+msgstr "Gerer identitates"
+
+msgid "newidentity"
+msgstr "Crear nove identitate"
+
+msgid "addidentity"
+msgstr "Adder identitate"
+
+msgid "editidentity"
+msgstr "Modifiar identitate"
+
+msgid "identityencryption"
+msgstr "Cryptographia"
+
+msgid "preferhtml"
+msgstr "Monstrar HTML"
+
+msgid "defaultcharset"
+msgstr "Codification de characteres predefinite"
+
+msgid "htmlmessage"
+msgstr "Message HTML"
+
+msgid "messagepart"
+msgstr "Parte"
+
+msgid "digitalsig"
+msgstr "Signatura digital"
+
+msgid "dateformat"
+msgstr "Formato de data"
+
+msgid "timeformat"
+msgstr "Formato de hora"
+
+msgid "prettydate"
+msgstr "Imbellir datas"
+
+msgid "setdefault"
+msgstr "Fixar como predefinite"
+
+msgid "autodetect"
+msgstr "Auto"
+
+msgid "language"
+msgstr "Lingua"
+
+msgid "timezone"
+msgstr "Fuso horari"
+
+msgid "pagesize"
+msgstr "Lineas per pagina"
+
+msgid "signature"
+msgstr "Signatura"
+
+msgid "dstactive"
+msgstr "Hora estive"
+
+msgid "showinextwin"
+msgstr "Aperir message in nove fenestra"
+
+msgid "composeextwin"
+msgstr "Componer in un nove fenestra"
+
+msgid "htmleditor"
+msgstr "Componer messages in HTML"
+
+msgid "htmlonreply"
+msgstr "quando responder a un message HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "quando reinviar o responder a un message HTML"
+
+msgid "htmlsignature"
+msgstr "Signatura HTML"
+
+msgid "showemail"
+msgstr "Monstrar adresse de e-mail con nomine de presentation"
+
+msgid "previewpane"
+msgstr "Monstrar quadro de previsualisation"
+
+msgid "skin"
+msgstr "Apparentia de interfacie"
+
+msgid "logoutclear"
+msgstr "Vacuar le corbe a papiro al clausura de session"
+
+msgid "logoutcompact"
+msgstr "Compactar le cassa de entrata al clausura de session"
+
+msgid "uisettings"
+msgstr "Interfacie de usator"
+
+msgid "serversettings"
+msgstr "Configurationes de servitor"
+
+msgid "mailboxview"
+msgstr "Vista de cassa postal"
+
+msgid "mdnrequests"
+msgstr "Quando on requesta un confirmation de reception"
+
+msgid "askuser"
+msgstr "demanda me lo"
+
+msgid "autosend"
+msgstr "invia un recepta"
+
+msgid "autosendknown"
+msgstr "invia un recepta a mi contactos, alteremente demanda me lo"
+
+msgid "autosendknownignore"
+msgstr "invia un recepta a mi contactos, alteremente ignora lo"
+
+msgid "autosendtrusted"
+msgstr "inviar recepta a expeditores de confidentia, si non, demandar me lo"
+
+msgid "autosendtrustedignore"
+msgstr "inviar recepta a expeditores de confidentia, si non, ignorar"
+
+msgid "ignorerequest"
+msgstr "ignora le requesta"
+
+msgid "readwhendeleted"
+msgstr "Marcar le message como legite al deletion"
+
+msgid "flagfordeletion"
+msgstr "Marcar le message pro deletion in vice de deler lo"
+
+msgid "skipdeleted"
+msgstr "Non monstrar messages delite"
+
+msgid "deletealways"
+msgstr ""
+"Si le displaciamento de messages al corbe a papiro non succede, deler los"
+
+msgid "deletejunk"
+msgstr "Directemente deler le messages indesirate"
+
+msgid "showremoteimages"
+msgstr "Visualisar imagines incorporate a distantia"
+
+msgid "allowremoteresources"
+msgstr "Permitter ressources (imagines, stilos) distante"
+
+msgid "fromknownsenders"
+msgstr "de expeditores cognite"
+
+msgid "fromtrustedsenders"
+msgstr "de expeditores de confidentia"
+
+msgid "frommycontacts"
+msgstr "de mi contactos"
+
+msgid "always"
+msgstr "sempre"
+
+msgid "alwaysbutplain"
+msgstr "sempre, excepte quando responder a texto simple"
+
+msgid "showinlineimages"
+msgstr "Monstrar le imagines annexate sub le message"
+
+msgid "autosavedraft"
+msgstr "Automaticamente salveguardar version provisori"
+
+msgid "everynminutes"
+msgstr "cata $n minuta(s)"
+
+msgid "refreshinterval"
+msgstr "Refrescar (verificar si il ha nove messages, etc.)"
+
+msgid "never"
+msgstr "nunquam"
+
+msgid "immediately"
+msgstr "immediatemente"
+
+msgid "messagesdisplaying"
+msgstr "Presentation de messages"
+
+msgid "messagescomposition"
+msgstr "Composition de messages"
+
+msgid "mimeparamfolding"
+msgstr "Nomines de annexo"
+
+msgid "2231folding"
+msgstr "RFC 2231 complete (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "RFC 2047 complete (altere)"
+
+msgid "force7bit"
+msgstr "Usar le codification MIME pro characteres a 8 bits"
+
+msgid "savelocalstorage"
+msgstr "Salveguardar in le immagazinage local del navigator (temporarimente)"
+
+msgid "advancedoptions"
+msgstr "Optiones avantiate"
+
+msgid "toggleadvancedoptions"
+msgstr "Monstrar/celar optiones avantiate"
+
+msgid "focusonnewmessage"
+msgstr "Focalisar le fenestra del navigator sur le nove message"
+
+msgid "checkallfolders"
+msgstr "Verificar in tote le dossieres si il ha nove messages"
+
+msgid "displaynext"
+msgstr "Monstrar le proxime entrata del lista post deler/displaciar"
+
+msgid "defaultfont"
+msgstr "Typo de litteras predefinite pro messages HTML"
+
+msgid "mainoptions"
+msgstr "Optiones principal"
+
+msgid "browseroptions"
+msgstr "Optiones de navigator"
+
+msgid "section"
+msgstr "Section"
+
+msgid "maintenance"
+msgstr "Mantenimento"
+
+msgid "newmessage"
+msgstr "Nove message"
+
+msgid "signatureoptions"
+msgstr "Optiones de signatura"
+
+msgid "whenreplying"
+msgstr "Quando responder"
+
+msgid "replyempty"
+msgstr "non citar le message original"
+
+msgid "replytopposting"
+msgstr "comenciar le nove message super le citation"
+
+msgid "replytoppostingnoindent"
+msgstr "comenciar un nove message ante le citation (sin indentation)"
+
+msgid "replybottomposting"
+msgstr "comenciar le nove message sub le citation"
+
+msgid "replyremovesignature"
+msgstr "Quando responder, remover le signatura del citation"
+
+msgid "autoaddsignature"
+msgstr "Automaticamente inserta signatura"
+
+msgid "newmessageonly"
+msgstr "nove message solmente"
+
+msgid "replyandforwardonly"
+msgstr "responsas e reinvios solmente"
+
+msgid "insertsignature"
+msgstr "Insertar signatura"
+
+msgid "sigbelow"
+msgstr "Mitter signatura post le message citate"
+
+msgid "sigseparator"
+msgstr "Fortiar le separator standard in signatura"
+
+msgid "automarkread"
+msgstr "Marcar messages como legite"
+
+msgid "afternseconds"
+msgstr "post $n secundas"
+
+msgid "reqmdn"
+msgstr "Sempre requestar un confirmation de reception"
+
+msgid "reqdsn"
+msgstr "Sempre requestar un notification de stato de livration"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Placiar responsas in le dossier del message respondite"
+
+msgid "defaultabook"
+msgstr "Adressario predefinite"
+
+msgid "autocompletesingle"
+msgstr "Saltar adresses de e-mail altenrative in autocompletion"
+
+msgid "listnamedisplay"
+msgstr "Listar contactos como"
+
+msgid "contactformmode"
+msgstr "Modo de formulario de contacto"
+
+msgid "privatemode"
+msgstr "Private (a casa)"
+
+msgid "businessmode"
+msgstr "Interprisa (labor)"
+
+msgid "collectedaddresses"
+msgstr "Adresses colligite"
+
+msgid "collectedrecipients"
+msgstr "Destinatarios colligite"
+
+msgid "collectedrecipientsopt"
+msgstr "Immagazinar destinatarios de e-posta sortiente in"
+
+msgid "collectedsendersopt"
+msgstr "Immagazinar expeditores de confidentia in"
+
+msgid "trustedsenders"
+msgstr "Expeditores de confidentia"
+
+msgid "spellcheckbeforesend"
+msgstr "Verificar orthographia ante inviar un message"
+
+msgid "spellcheckoptions"
+msgstr "Optiones de verification orthographic"
+
+msgid "spellcheckignoresyms"
+msgstr "Ignorar parolas con symbolos"
+
+msgid "spellcheckignorenums"
+msgstr "Ignorar parolas con numeros"
+
+msgid "spellcheckignorecaps"
+msgstr "Ignorar parolas toto in majusculas"
+
+msgid "addtodict"
+msgstr "Adder al dictionario"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Registrar un gestor de protocollo pro ligamines mailto:"
+
+msgid "standardwindows"
+msgstr "Gerer pop-ups como fenestras normal"
+
+msgid "forwardmode"
+msgstr "Reinvio de messages"
+
+msgid "inline"
+msgstr "in texto"
+
+msgid "asattachment"
+msgstr "como annexo"
+
+msgid "replyallmode"
+msgstr "Action predefinite del button [Responder a totes]"
+
+msgid "replyalldefault"
+msgstr "responder a totes"
+
+msgid "replyalllist"
+msgstr "responder solmente al lista de diffusion (si trovate)"
+
+msgid "allmessages"
+msgstr "tote le messages"
+
+msgid "olderxdays"
+msgstr "plus ancian que $x dies"
+
+msgid "folder"
+msgstr "Dossier"
+
+msgid "folders"
+msgstr "Dossieres"
+
+msgid "foldername"
+msgstr "Nomine de dossier"
+
+msgid "subscribed"
+msgstr "Subscribite"
+
+msgid "messagecount"
+msgstr "Messages"
+
+msgid "create"
+msgstr "Crear"
+
+msgid "createfolder"
+msgstr "Crear un nove dossier"
+
+msgid "managefolders"
+msgstr "Gerer le dossieres"
+
+msgid "specialfolders"
+msgstr "Dossieres special"
+
+msgid "properties"
+msgstr "Proprietates"
+
+msgid "folderproperties"
+msgstr "Proprietates de dossier"
+
+msgid "parentfolder"
+msgstr "Dossier genitor"
+
+msgid "location"
+msgstr "Location"
+
+msgid "info"
+msgstr "Information"
+
+msgid "getfoldersize"
+msgstr "Clicca pro obtener le dimension del dossier"
+
+msgid "changesubscription"
+msgstr "Clicca pro cambiar le subscription"
+
+msgid "foldertype"
+msgstr "Typo de dossier"
+
+msgid "personalfolder"
+msgstr "Dossier private"
+
+msgid "otherfolder"
+msgstr "Dossier de altere usator"
+
+msgid "sharedfolder"
+msgstr "Dossier public"
+
+msgid "findfolders"
+msgstr "Cercar dossieres"
+
+msgid "findcontacts"
+msgstr "Cercar contactos"
+
+msgid "findmail"
+msgstr "Cercar messages de posta"
+
+msgid "namespace.personal"
+msgstr "Personal"
+
+msgid "namespace.other"
+msgstr "Altere usatores"
+
+msgid "namespace.shared"
+msgstr "Commun"
+
+msgid "dualuselabel"
+msgstr "Pote continer solmente"
+
+msgid "dualusemail"
+msgstr "messages"
+
+msgid "dualusefolder"
+msgstr "dossieres"
+
+msgid "generate"
+msgstr "Generar"
+
+msgid "encryptioncreatekey"
+msgstr "Crear un nove par de claves"
+
+msgid "openmailvelopesettings"
+msgstr "Aperir le parametros de Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Tu ha $nr claves private correspondente immagazinate in tu portaclaves de "
+"Mailvelope:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Iste identitate de expeditor non ha ancora un clave PGP private immagazinate"
+" in tu extension Mailvelope. Vole tu crear un, a fin de permitter le "
+"messageria cryptate?"
+
+msgid "encryption"
+msgstr "Cryptographia"
+
+msgid "mailvelopeoptions"
+msgstr "Optiones de Mailvelope"
+
+msgid "mailvelopemainkeyring"
+msgstr "Usar le portaclaves principal de Mailvelope"
+
+msgid "mailvelopenotfound"
+msgstr ""
+"Le extension Mailvelope non ha essite activate/installate in tu navigator."
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Ordinar per"
+
+msgid "sortasc"
+msgstr "Mitter in ordine ascendente"
+
+msgid "sortdesc"
+msgstr "Mitter in ordine descendente"
+
+msgid "undo"
+msgstr "Disfacer"
+
+msgid "installedplugins"
+msgstr "Plug-ins installate"
+
+msgid "plugin"
+msgstr "Plug-in"
+
+msgid "version"
+msgstr "Version"
+
+msgid "source"
+msgstr "Fonte"
+
+msgid "destination"
+msgstr "Destination"
+
+msgid "license"
+msgstr "Licentia"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Obtener supporto"
+
+msgid "savedsearches"
+msgstr "Recercas salveguardate"
+
+msgid "dateformatY"
+msgstr "AAAA"
+
+msgid "dateformaty"
+msgstr "AA"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Anglese"
+
+msgid "westerneuropean"
+msgstr "Europa del west"
+
+msgid "easterneuropean"
+msgstr "Europa del est"
+
+msgid "southeasterneuropean"
+msgstr "Europa del sud-est"
+
+msgid "baltic"
+msgstr "Baltic"
+
+msgid "cyrillic"
+msgstr "Cyrillic"
+
+msgid "arabic"
+msgstr "Arabe"
+
+msgid "greek"
+msgstr "Grec"
+
+msgid "hebrew"
+msgstr "Hebraic"
+
+msgid "turkish"
+msgstr "Turc"
+
+msgid "nordic"
+msgstr "Nordic"
+
+msgid "thai"
+msgstr "Thai"
+
+msgid "celtic"
+msgstr "Celtic"
+
+msgid "vietnamese"
+msgstr "Vietnamese"
+
+msgid "japanese"
+msgstr "Japonese"
+
+msgid "korean"
+msgstr "Coreano"
+
+msgid "chinese"
+msgstr "Chinese"
+
+msgid "arialabeltopnav"
+msgstr "Controlo de fenestras"
+
+msgid "arialabeltasknav"
+msgstr "Cargas de application"
+
+msgid "arialabeltoolbar"
+msgstr "Instrumentario de application"
+
+msgid "arialabellistnav"
+msgstr "Navigation de lista"
+
+msgid "arialabelactivetask"
+msgstr "Carga active"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Filtro de lista de e-mail"
+
+msgid "arialabelmailsearchform"
+msgstr "Formulario de recerca de message de e-mail"
+
+msgid "arialabelcontactsearchform"
+msgstr "Formulario de recerca de contactos"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Entrata de recerca de e-mail"
+
+msgid "arialabelquicksearchbox"
+msgstr "Entrata de recerca"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Filtro de lista de dossieres"
+
+msgid "arialabelfoldersearchform"
+msgstr "Formulario de recerca de dossieres"
+
+msgid "arialabelfolderlist"
+msgstr "Selection de dossier de e-mail"
+
+msgid "arialabelmessagelist"
+msgstr "Lista de messages de e-mail"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Previsualisation de message"
+
+msgid "arialabelmailboxmenu"
+msgstr "Menu de actiones de dossier"
+
+msgid "arialabellistselectmenu"
+msgstr "Menu de selection de lista"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Menu de listas de topicos"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Optiones de visualisation e ordinamento de lista de messages"
+
+msgid "arialabelmailimportdialog"
+msgstr "Dialogo de importation de messages"
+
+msgid "arialabelmessagenav"
+msgstr "Navigation inter messages"
+
+msgid "arialabelmessagebody"
+msgstr "Texto de message"
+
+msgid "arialabelmessageactions"
+msgstr "Actiones de message"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Formulario de recerca de contactos"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Entrata de recerca de contactos"
+
+msgid "arialabelmessageheaders"
+msgstr "Capites de message"
+
+msgid "arialabelforwardingoptions"
+msgstr "Optiones de reinvio"
+
+msgid "arialabelreplyalloptions"
+msgstr "Optiones pro responder a totes"
+
+msgid "arialabelmoremessageactions"
+msgstr "Altere actiones de message"
+
+msgid "arialabelmorecontactactions"
+msgstr "Plus actiones de contacto"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Marcar le messages seligite como…"
+
+msgid "arialabelcomposeoptions"
+msgstr "Optiones de composition"
+
+msgid "arialabelresponsesmenu"
+msgstr "Menu de responsas prefabricate"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Formulario de incargamento de annexos"
+
+msgid "arialabelattachmentmenu"
+msgstr "Optiones de annexos"
+
+msgid "arialabelmailtomenu"
+msgstr "Optiones de adresse de e-mail"
+
+msgid "arialabelattachmentpreview"
+msgstr "Previsualisation del annexo"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Lista de contactos e gruppos a seliger como destinatarios"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Optiones de exportation de contactos"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Optiones de adressario/gruppo"
+
+msgid "arialabelpreferencesform"
+msgstr "Formulario de preferentias"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Formulario de modification de identitate"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Formulario de modification de responsa"
+
+msgid "arialabelsearchterms"
+msgstr "Terminos de recerca"
+
+msgid "arialabeldropactionmenu"
+msgstr "Menu de actiones traher-e-deponer"
+
+msgid "arialabelheadersmenu"
+msgstr "Menu de addition de destinatario (capite)"
+
+msgid "arialabelimagetools"
+msgstr "Instrumentos de imagine"
+
+msgid "helplistnavigation"
+msgstr "Lista de claves de navigation"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Flechas in alto/basso: Focalisar un altere linea.\n"
+"Barra de spatio: Seliger le linea focalisate.\n"
+"Shift + alto/basso: Seliger un linea additional supra/infra.\n"
+"Ctrl + barra de spatio: Adder/subtraher le linea focalisate al selection."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Flechas a dextra/sinistra: Displicar/plicar un topico de messages (solmente in vista arborescente).\n"
+"Enter: Aperir le message seligite/focalisate.\n"
+"Delete: Jectar le messages seligite in le corbe a papiro."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Aperir le contacto seligite/focalisate."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Un error ha occurrite."
+
+msgid "messages.loginfailed"
+msgstr "Apertura de session fallite."
+
+msgid "messages.cookiesdisabled"
+msgstr "Tu navigator non accepta cookies."
+
+msgid "messages.sessionerror"
+msgstr "Le session es invalide o ha expirate."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Cookie incorrecte detegite. Per favor rade le cookies de tu navigator."
+
+msgid "messages.storageerror"
+msgstr "Le connexion al servitor de immagazinage ha fallite."
+
+msgid "messages.servererror"
+msgstr "Error de servitor."
+
+msgid "messages.servererrormsg"
+msgstr "Error de sevitor: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Troppo de tentativas fallite de authentication. Reproba plus tarde."
+
+msgid "messages.connerror"
+msgstr "Error de connexion (impossibile attinger le servitor)."
+
+msgid "messages.dberror"
+msgstr "Error de base de datos."
+
+msgid "messages.dbconnerror"
+msgstr "Non pote connecter al base de datos!"
+
+msgid "messages.windowopenerror"
+msgstr "Le fenestra pop-up ha essite blocate."
+
+msgid "messages.requesttimedout"
+msgstr "Requesta expirate"
+
+msgid "messages.errorreadonly"
+msgstr "Impossibile exequer le operation. Le dossier es in modo lectura sol."
+
+msgid "messages.errornoperm"
+msgstr "Impossibile exequer le operation. Permission refusate."
+
+msgid "messages.erroroverquota"
+msgstr "Impossibile exequer le operation. Nulle spatio libere sur disco."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Nulle spatio libere sur disco. Preme SHIFT+DEL pro deler un message."
+
+msgid "messages.invalidrequest"
+msgstr "Requesta non valide. Le datos non ha essite salveguardate."
+
+msgid "messages.invalidhost"
+msgstr "Nomine de servitor non valide."
+
+msgid "messages.nomessagesfound"
+msgstr "Nulle message trovate in iste cassa postal."
+
+msgid "messages.loggedout"
+msgstr "Tu ha correctemente terminate le session. A revider!"
+
+msgid "messages.mailboxempty"
+msgstr "Le cassa postal es vacue"
+
+msgid "messages.nomessages"
+msgstr "Nulle message"
+
+msgid "messages.refreshing"
+msgstr "Refrescante…"
+
+msgid "messages.loading"
+msgstr "Cargante…"
+
+msgid "messages.uploading"
+msgstr "Incargante un file…"
+
+msgid "messages.attaching"
+msgstr "Annexa file…"
+
+msgid "messages.uploadingmany"
+msgstr "Incargante files…"
+
+msgid "messages.loadingdata"
+msgstr "Cargante datos…"
+
+msgid "messages.checkingmail"
+msgstr "Verificante si il ha nove messages…"
+
+msgid "messages.sendingmessage"
+msgstr "Inviante le message…"
+
+msgid "messages.messagesent"
+msgstr "Message inviate con successo."
+
+msgid "messages.savingmessage"
+msgstr "Salveguardante le message…"
+
+msgid "messages.messagesaved"
+msgstr "Message salveguardate in \"Versiones provisori\"."
+
+msgid "messages.successfullysaved"
+msgstr "Salveguardate con successo."
+
+msgid "messages.savingresponse"
+msgstr "Salveguardante le texto del responsa…"
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Es tu secur de voler deler iste texto de responsa?"
+
+msgid "messages.nocontactselected"
+msgstr "Tu non ha ancora seligite un contacto."
+
+msgid "messages.addedsuccessfully"
+msgstr "Le contacto ha essite addite al adressario."
+
+msgid "messages.contactexists"
+msgstr "Un contacto con le mesme adresse de e-mail jam existe."
+
+msgid "messages.contactnameexists"
+msgstr "Un contacto con le mesme nomine jam existe."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Pro proteger tu vita private, le imagines a distantia es blocate in iste "
+"message."
+
+msgid "messages.blockedresources"
+msgstr ""
+"Pro proteger tu vita private, le ressources distante ha essite blocate."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Iste message contine adresses de e-posta suspecte de esser fraudulente."
+
+msgid "messages.bccemail"
+msgstr "Le sequente message(s) contine destinatarios confidential (Bcc)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Le message essera inviate sin modificationes, i.e., usante le texto, capites"
+" e destinatarios del original."
+
+msgid "messages.encryptedmessage"
+msgstr "Iste message ha essite cryptate e non pote esser monstrate."
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Isto es un message cryptate e pote esser decryptate con tu extension de "
+"navigator."
+
+msgid "messages.nopubkeyfor"
+msgstr "Nulle clave public valide trovate pro $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Nulle clave public valide ha essite trovate pro tu identitate de expeditor. "
+"Vole tu cryptar le message pro le destinatarios solmente?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Le annexos ja incargate non pote esser cryptate. Per favor re-adde los in le"
+" editor cryptographic."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Vole tu cercar le claves mancante in le servitores de claves public?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Le sequente claves public ha essite trovate:"
+
+msgid "messages.keyservererror"
+msgstr "Fallimento de obtener clave ab servitor de claves."
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+"Le clave public $key ha essite correctemente importate in tu portaclaves."
+
+msgid "messages.nocontactsfound"
+msgstr "Nulle contacto trovate."
+
+msgid "messages.contactnotfound"
+msgstr "Le contacto requestate non ha essite trovate."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Es necessari usar un formulario de recerca pro vider le contactos del "
+"adressario seligite."
+
+msgid "messages.sendingfailed"
+msgstr "Le invio del message ha fallite."
+
+msgid "messages.senttooquickly"
+msgstr "Per favor, attende $sec secunda(s) ante inviar iste message."
+
+msgid "messages.errorsavingsent"
+msgstr "Un error ha occurrite durante le salveguarda del message inviate."
+
+msgid "messages.errorsaving"
+msgstr "Un error ha occurrite durante le salveguarda."
+
+msgid "messages.errormoving"
+msgstr "Impossibile displaciar le message(s)."
+
+msgid "messages.errorcopying"
+msgstr "Impossibile copiar le message(s)."
+
+msgid "messages.errordeleting"
+msgstr "Impossibile deler le message(s)."
+
+msgid "messages.errormarking"
+msgstr "Impossibile marcar le message(s)."
+
+msgid "messages.alerttitle"
+msgstr "Attention"
+
+msgid "messages.confirmationtitle"
+msgstr "Es tu secur…"
+
+msgid "messages.deletecontactconfirm"
+msgstr "Es tu secur de voler deler le contacto(s) seligite?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Es tu secur de voler deler le gruppo seligite?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Es tu secur de voler deler le message(s) seligite?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Es tu secur de voler deler le dossier seligite?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Es tu secur de voler displaciar iste dossier?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Es tu secur de voler deler tote le messages in iste dossier?"
+
+msgid "messages.contactdeleting"
+msgstr "Delente contacto(s)…"
+
+msgid "messages.groupdeleting"
+msgstr "Delente le gruppo…"
+
+msgid "messages.folderdeleting"
+msgstr "Delente le dossier…"
+
+msgid "messages.foldermoving"
+msgstr "Displaciante le dossier…"
+
+msgid "messages.foldersubscribing"
+msgstr "Subscribente se al dossier…"
+
+msgid "messages.folderunsubscribing"
+msgstr "Cancellante le subscription al dossier…"
+
+msgid "messages.formincomplete"
+msgstr "Le formulario non ha essite totalmente completate."
+
+msgid "messages.noemailwarning"
+msgstr "Per favor, specifica un adresse de e-mail valide."
+
+msgid "messages.nonamewarning"
+msgstr "Per favor, specifica un nomine."
+
+msgid "messages.nopagesizewarning"
+msgstr "Per favor, specifica un dimension de pagina."
+
+msgid "messages.nosenderwarning"
+msgstr "Per favor, specifica le adresse de e-mail del expeditor."
+
+msgid "messages.recipientsadded"
+msgstr "Destinatario(s) correctemente addite."
+
+msgid "messages.norecipientwarning"
+msgstr "Per favor, specifica al minus un destinatario."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Tote le destinatarios videra le adresses de e-mail le unes del alteres. Pro "
+"evitar isto e proteger lor confidentialitate, usa le campo Bcc."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Il ha troppo de destinatarios public"
+
+msgid "messages.nosubjectwarning"
+msgstr "Le campo \"Subjecto\" es vacue. Vole tu specificar un subjecto ora?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Sin subjecto"
+
+msgid "messages.nobodywarning"
+msgstr "Inviar iste message sin texto?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Le message non ha essite inviate e ha modificationes non salveguardate. "
+"Abandonar le modificationes?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Un message anteriormente componite ma non inviate ha essite "
+"trovate.\\n\\nSubjecto: $subject\\nSalveguardate: $date\\n\\nVole tu "
+"restaurar iste message?"
+
+msgid "messages.nosearchname"
+msgstr "Per favor, specifica le nomine o adresse de e-mail de un contacto."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Non tote le annexos ha ancora essite incargate. Per favor, attende o "
+"cancella le incargamento."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr messages trovate."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr contactos trovate."
+
+msgid "messages.searchnomatch"
+msgstr "Le recerca non ha producite resultatos."
+
+msgid "messages.searching"
+msgstr "Cercante…"
+
+msgid "messages.checking"
+msgstr "Verificante…"
+
+msgid "messages.stillsearching"
+msgstr "Continuante le recerca…"
+
+msgid "messages.nospellerrors"
+msgstr "Nulle error de orthographia trovate."
+
+msgid "messages.folderdeleted"
+msgstr "Le dossier ha essite delite."
+
+msgid "messages.foldersubscribed"
+msgstr "Le subscription al dossier ha succedite."
+
+msgid "messages.folderunsubscribed"
+msgstr "Le subscription al dossier ha essite cancellate."
+
+msgid "messages.folderpurged"
+msgstr "Le dossier ha essite vacuate."
+
+msgid "messages.folderexpunged"
+msgstr "Le dossier ha essite compactate."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Delite con successo."
+
+msgid "messages.converting"
+msgstr "Removente le formatation…"
+
+msgid "messages.messageopenerror"
+msgstr "Impossibile cargar le message ab le servitor."
+
+msgid "messages.filelinkerror"
+msgstr "Le annexation del file ha fallite."
+
+msgid "messages.fileuploaderror"
+msgstr "Incargamento de file falleva."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"Le importation de plure files CSV con differente campos non es supportate."
+
+msgid "messages.filesizeerror"
+msgstr "Le file incargate excede le dimension maxime de $size."
+
+msgid "messages.filecounterror"
+msgstr "Tu pote incargar al maximo $count files insimul."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Le annexation de un file ha fallite. Le dimension maxime de un message "
+"($size) ha essite excedite."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Le dimension maxime de un message ($size) ha essite excedite. $num "
+"message(s) non ha essite annexate."
+
+msgid "messages.copysuccess"
+msgstr "$nr contactos ha essite copiate."
+
+msgid "messages.movesuccess"
+msgstr "$nr contactos ha essite displaciate."
+
+msgid "messages.copyerror"
+msgstr "Impossibile copiar le contactos."
+
+msgid "messages.moveerror"
+msgstr "Impossibile displaciar le contactos."
+
+msgid "messages.sourceisreadonly"
+msgstr "Iste fonte de adresses es pro lectura solmente."
+
+msgid "messages.errorsavingcontact"
+msgstr "Impossibile salveguardar le adresse del contacto."
+
+msgid "messages.movingmessage"
+msgstr "Displaciante le message(s)…"
+
+msgid "messages.copyingmessage"
+msgstr "Copiante le message(s)…"
+
+msgid "messages.copyingcontact"
+msgstr "Copiante le contacto(s)…"
+
+msgid "messages.movingcontact"
+msgstr "Displaciante le contacto(s)…"
+
+msgid "messages.deletingmessage"
+msgstr "Delente le message(s)…"
+
+msgid "messages.markingmessage"
+msgstr "Marcante le message(s)…"
+
+msgid "messages.addingmember"
+msgstr "Addente contacto(s) al gruppo…"
+
+msgid "messages.removingmember"
+msgstr "Removente contacto(s) del gruppo…"
+
+msgid "messages.receiptsent"
+msgstr "Un confirmation de lectura ha essite inviate."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Impossibile inviar le confirmation."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Es tu secur de voler deler iste identitate?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Non es possibile deler iste identitate; illo es tu ultime."
+
+msgid "messages.forbiddencharacter"
+msgstr "Le nomine del dossier contine un character interdicte."
+
+msgid "messages.selectimportfile"
+msgstr "Per favor tu selige le file a incargar."
+
+msgid "messages.addresswriterror"
+msgstr "Le adressario seligite non permitte le scriptura."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Le contactos ha essite addite a iste gruppo."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Le contactos ha essite removite de iste gruppo."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Nulle assignation de gruppo ha essite cambiate."
+
+msgid "messages.importwait"
+msgstr "Importation in curso, un momento…"
+
+msgid "messages.importformaterror"
+msgstr ""
+"Importation fallite. Le file incargate non es un file de datos de "
+"importation valide."
+
+msgid "messages.importconfirm"
+msgstr "<b>$inserted contactos ha essite importate</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr messages ha essite importate"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Importation fallite. Le file incargate non es un file de cassa postal o "
+"message valide."
+
+msgid "messages.opnotpermitted"
+msgstr "Operation non permittite."
+
+msgid "messages.nofromaddress"
+msgstr "Le adresse de e-mail manca in le identitate seligite."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Si tu cambia de typo de editor, le formato del texto pote esser perdite. "
+"Vole tu continuar?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Un error fatal de configuration ha occurrite. Contacta immediatemente tu "
+"administrator.<b>Non es possibile inviar tu message.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Error SMTP ($code): Le connexion al servitor ha fallite."
+
+msgid "messages.smtpautherror"
+msgstr "Error SMTP ($code): Authentication fallite."
+
+msgid "messages.smtpfromerror"
+msgstr "Error SMTP ($code): Impossibile fixar le expeditor \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "Error SMTP ($code): Impossibile adder le destinatario \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "Error SMTP: Impossibile interpretar le lista de destinatarios."
+
+msgid "messages.smtputf8error"
+msgstr ""
+"Error de SMTP: Le servitor non supporta Unicode in le adresse de e-mail."
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+"Error de SMTP: Le grandor del message excede le limite del servitor ($limit)"
+
+msgid "messages.smtperror"
+msgstr "Error SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Adresse de e-mail invalide: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Troppo de destinatarios. Reduce le numero de destinatarios a $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Le numero de membros del gruppo excede le maximo de $max."
+
+msgid "messages.internalerror"
+msgstr "Un error interne ha occurrite. Per favor, essaya lo de novo."
+
+msgid "messages.contactdelerror"
+msgstr "Impossibile deler le contacto(s)."
+
+msgid "messages.contactdeleted"
+msgstr "Le contacto(s) ha essite delite."
+
+msgid "messages.contactrestoreerror"
+msgstr "Impossibile restaurar le contacto(s) delite."
+
+msgid "messages.contactrestored"
+msgstr "Le contacto(s) ha essite restaurate."
+
+msgid "messages.groupdeleted"
+msgstr "Le gruppo ha essite delite."
+
+msgid "messages.grouprenamed"
+msgstr "Le gruppo ha essite renominate."
+
+msgid "messages.groupcreated"
+msgstr "Le gruppo ha essite create."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Le recerca salveguardate ha essite delite."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Impossibile deler le recerca salveguardate."
+
+msgid "messages.savedsearchcreated"
+msgstr "Le recerca salveguardate ha essite create."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Impossibile crear le recerca salveguardate."
+
+msgid "messages.messagedeleted"
+msgstr "Le message(s) ha essite delite."
+
+msgid "messages.messagemoved"
+msgstr "Le message(s) ha essite displaciate."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Le message(s) ha essite displaciate al corbe a papiro con successo."
+
+msgid "messages.messagecopied"
+msgstr "Le message(s) ha essite copiate."
+
+msgid "messages.messagemarked"
+msgstr "Le message(s) ha essite marcate."
+
+msgid "messages.autocompletechars"
+msgstr "Specifica al minus $min characteres pro autocompletion."
+
+msgid "messages.autocompletemore"
+msgstr "Plure entratas corresponde. Per favor, specifica plus characteres."
+
+msgid "messages.namecannotbeempty"
+msgstr "Le nomine non pote esser vacue."
+
+msgid "messages.nametoolong"
+msgstr "Le nomine es troppo longe."
+
+msgid "messages.namedotforbidden"
+msgstr "Le nomine del dossier non pote comenciar per un puncto."
+
+msgid "messages.folderupdated"
+msgstr "Le dossier ha essite actualisate."
+
+msgid "messages.foldercreated"
+msgstr "Le dossier ha essite create."
+
+msgid "messages.invalidimageformat"
+msgstr "Non es un formato de imagine valide."
+
+msgid "messages.mispellingsfound"
+msgstr "Errores de orthographia ha essite detegite in le message."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Impossibile crear/displaciar le dossier in le dossier genitor seligite. "
+"Nulle permission de accesso."
+
+msgid "messages.messagetoobig"
+msgstr "Le parte del message es troppo grande pro tractar lo."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Iste annexo es suspecte perque su typo non corresponde al typo declarate in "
+"le message. Si tu non ha confidentia in le expeditor, tu non deberea aperir "
+"lo in le navigator perque illo pote haber contento "
+"nocive.<br/><br/><em>Expectate: $expected; trovate: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Attention: Iste servicio webmail require JavaScript. Pro usar lo, per favor "
+"activa JavaScript in le configuration de tu navigator."
+
+msgid "messages.messageissent"
+msgstr ""
+"Le message ha jam essite inviate ma non ancora salveguardate. Vole tu "
+"salveguardar lo ora?"
+
+msgid "messages.errnotfound"
+msgstr "File non trovate"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Le ressource requestate non ha essite trovate."
+
+msgid "messages.errfailedrequest"
+msgstr "Requesta fallite"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Autorisation fallite"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Non poteva verificar que tu es autorisate a acceder a iste servicio."
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Verification del requesta fallite"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Pro tu protection, le accesso a iste ressource ha essite securisate contra le falsification de requestas inter sitos (CSRF).\n"
+"Si tu vide isto, tu probabilemente non ha claudite session ante de quitar le application web.\n"
+"\n"
+"Ora, un interaction human es necessari pro continuar."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Per favor contacta le administrator de tu servitor."
+
+msgid "messages.clicktoresumesession"
+msgstr "Clicca hic pro continuar tu session anterior"
+
+msgid "messages.errcomposesession"
+msgstr "Error del session de composition"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Session de composition requestate non ha essite trovate."
+
+msgid "messages.clicktocompose"
+msgstr "Clicca hic pro componer un nove message"
+
+msgid "messages.nosupporterror"
+msgstr "Iste function non es supportate per tu navigator web."
+
+msgid "messages.siginserted"
+msgstr "Signatura inserite con successo."
+
+msgid "messages.responseinserted"
+msgstr "Responsa inserite con successo."
+
+msgid "messages.noresponsesavailable"
+msgstr "Necun responsa disponibile"
+
+msgid "messages.listempty"
+msgstr "Le lista es vacue."
+
+msgid "messages.listusebutton"
+msgstr "Usa le button Crear pro adder un nove entrata."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Un nove par de claves ha essite create pro $identity."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Iste annexo pare esser vacue.<br>Per favor, verifica lo presso le expeditor."
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+"Le apertura de session con OAuth ha fallite. Per favor tenta lo de novo."
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

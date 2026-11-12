@@ -1,0 +1,2861 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: nl_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Welkom bij $product"
+
+msgid "username"
+msgstr "Gebruikersnaam"
+
+msgid "password"
+msgstr "Wachtwoord"
+
+msgid "server"
+msgstr "Server"
+
+msgid "login"
+msgstr "Aanmelden"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Afmelden"
+
+msgid "mail"
+msgstr "Berichten"
+
+msgid "settings"
+msgstr "Instellingen"
+
+msgid "addressbook"
+msgstr "Contactpersonen"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Postvak IN"
+
+msgid "drafts"
+msgstr "Concepten"
+
+msgid "sent"
+msgstr "Verzonden berichten"
+
+msgid "trash"
+msgstr "Prullenbak"
+
+msgid "junk"
+msgstr "Spam"
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr "Onderwerp"
+
+msgid "from"
+msgstr "Van"
+
+msgid "sender"
+msgstr "Afzender"
+
+msgid "to"
+msgstr "Aan"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Antwoorden aan"
+
+msgid "followupto"
+msgstr "Followup aan"
+
+msgid "date"
+msgstr "Datum"
+
+msgid "size"
+msgstr "Grootte"
+
+msgid "priority"
+msgstr "Prioriteit"
+
+msgid "organization"
+msgstr "Organisatie"
+
+msgid "readstatus"
+msgstr "Gelezen?"
+
+msgid "listoptions"
+msgstr "Lijstopties..."
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Mappen"
+
+msgid "messagesfromto"
+msgstr "Berichten $from - $to van $count"
+
+msgid "threadsfromto"
+msgstr "Conversaties $from - $to van $count"
+
+msgid "messagenrof"
+msgstr "Bericht $nr van $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to van $count"
+
+msgid "copy"
+msgstr "Kopieer"
+
+msgid "move"
+msgstr "Verplaats"
+
+msgid "moveto"
+msgstr "Verplaats naar..."
+
+msgid "copyto"
+msgstr ""
+
+msgid "download"
+msgstr "Downloaden"
+
+msgid "open"
+msgstr ""
+
+msgid "showattachment"
+msgstr "Weergeven"
+
+msgid "showanyway"
+msgstr "Toch weergeven"
+
+msgid "filename"
+msgstr "Bestandsnaam"
+
+msgid "filesize"
+msgstr "Bestandsgrootte"
+
+msgid "addtoaddressbook"
+msgstr "Voeg toe aan lijst met contactpersonen"
+
+msgid "sun"
+msgstr "Zo"
+
+msgid "mon"
+msgstr "Ma"
+
+msgid "tue"
+msgstr "Di"
+
+msgid "wed"
+msgstr "Wo"
+
+msgid "thu"
+msgstr "Do"
+
+msgid "fri"
+msgstr "Vr"
+
+msgid "sat"
+msgstr "Za"
+
+msgid "sunday"
+msgstr "Zondag"
+
+msgid "monday"
+msgstr "Maandag"
+
+msgid "tuesday"
+msgstr "Dinsdag"
+
+msgid "wednesday"
+msgstr "Woensdag"
+
+msgid "thursday"
+msgstr "Donderdag"
+
+msgid "friday"
+msgstr "Vrijdag"
+
+msgid "saturday"
+msgstr "Zaterdag"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mrt"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "Mei"
+
+msgid "jun"
+msgstr "Jun"
+
+msgid "jul"
+msgstr "Jul"
+
+msgid "aug"
+msgstr "Aug"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Dec"
+
+msgid "longjan"
+msgstr "Januari"
+
+msgid "longfeb"
+msgstr "Februari"
+
+msgid "longmar"
+msgstr "Maart"
+
+msgid "longapr"
+msgstr "April"
+
+msgid "longmay"
+msgstr "Mei"
+
+msgid "longjun"
+msgstr "Juni"
+
+msgid "longjul"
+msgstr "Juli"
+
+msgid "longaug"
+msgstr "Augustus"
+
+msgid "longsep"
+msgstr "September"
+
+msgid "longoct"
+msgstr "Oktober"
+
+msgid "longnov"
+msgstr "November"
+
+msgid "longdec"
+msgstr "December"
+
+msgid "today"
+msgstr "Vandaag"
+
+msgid "refresh"
+msgstr "Vernieuwen"
+
+msgid "checkmail"
+msgstr "Controleer op nieuwe berichten"
+
+msgid "compose"
+msgstr "Nieuw bericht opstellen"
+
+msgid "writenewmessage"
+msgstr "Nieuw bericht"
+
+msgid "reply"
+msgstr "Beantwoorden"
+
+msgid "replytomessage"
+msgstr "Beantwoorden aan afzender"
+
+msgid "replytoallmessage"
+msgstr "Antwoorden naar lijst of naar afzender en alle ontvangers"
+
+msgid "replyall"
+msgstr "Allen beantwoorden"
+
+msgid "replylist"
+msgstr "Lijst beantwoorden"
+
+msgid "forward"
+msgstr "Doorsturen"
+
+msgid "forwardinline"
+msgstr "Voorwaarts in lijn"
+
+msgid "forwardattachment"
+msgstr "Doorsturen als bijlage"
+
+msgid "forwardmessage"
+msgstr "Bericht doorsturen"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Dit bericht verwijderen"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Verplaats bericht naar verwijderde items"
+
+msgid "printmessage"
+msgstr "Afdrukken"
+
+msgid "previousmessage"
+msgstr "Vorig bericht"
+
+msgid "firstmessage"
+msgstr "Eerste bericht"
+
+msgid "nextmessage"
+msgstr "Volgende bericht"
+
+msgid "lastmessage"
+msgstr "Laatste bericht"
+
+msgid "backtolist"
+msgstr "Terug naar berichtenlijst"
+
+msgid "viewsource"
+msgstr "Broncode bericht weergeven"
+
+msgid "mark"
+msgstr "Markeren"
+
+msgid "markmessages"
+msgstr "Markeer berichten"
+
+msgid "markread"
+msgstr "Als gelezen"
+
+msgid "markunread"
+msgstr "Als ongelezen"
+
+msgid "markflagged"
+msgstr "Selecteren"
+
+msgid "markunflagged"
+msgstr "Niet Selecteren"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Meer acties..."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr ""
+
+msgid "more"
+msgstr "Meer"
+
+msgid "back"
+msgstr "Terug"
+
+msgid "options"
+msgstr "Opties"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr "Acties"
+
+msgid "first"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "next"
+msgstr ""
+
+msgid "select"
+msgstr "Selecteren"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Alle"
+
+msgid "none"
+msgstr "Geen"
+
+msgid "currpage"
+msgstr "Huidige pagina"
+
+msgid "isread"
+msgstr "Lees"
+
+msgid "unread"
+msgstr "Ongelezen"
+
+msgid "flagged"
+msgstr "Geselecteerd"
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr "Onbeantwoord"
+
+msgid "withattachment"
+msgstr ""
+
+msgid "deleted"
+msgstr "Verwijderd"
+
+msgid "undeleted"
+msgstr "Niet verwijderd"
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr ""
+
+msgid "invert"
+msgstr "Selectie omkeren"
+
+msgid "filter"
+msgstr "Filter"
+
+msgid "list"
+msgstr "Lijst"
+
+msgid "threads"
+msgstr "Conversaties"
+
+msgid "expand-all"
+msgstr "Alles uitklappen"
+
+msgid "expand-unread"
+msgstr "Ongelezen uitklappen"
+
+msgid "collapse-all"
+msgstr "Alles inklappen"
+
+msgid "threaded"
+msgstr "Conversaties"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Klap alle conversaties uit"
+
+msgid "do_expand"
+msgstr "alle conversaties"
+
+msgid "expand_only_unread"
+msgstr "alleen met ongelezen berichten"
+
+msgid "fromto"
+msgstr "Afzender/Ontvanger"
+
+msgid "flag"
+msgstr "Markeer"
+
+msgid "attachment"
+msgstr "Bijlage"
+
+msgid "nonesort"
+msgstr "Geen"
+
+msgid "sentdate"
+msgstr "Verzenddatum"
+
+msgid "arrival"
+msgstr "Ontvangstdatum"
+
+msgid "asc"
+msgstr "oplopend"
+
+msgid "desc"
+msgstr "aflopend"
+
+msgid "listcolumns"
+msgstr "Kolommen"
+
+msgid "listsorting"
+msgstr "Sorteerkolom"
+
+msgid "listorder"
+msgstr "Sorteervolgorde"
+
+msgid "listmode"
+msgstr "Lijstweergave mode"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Lijst"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Acties voor map..."
+
+msgid "compact"
+msgstr "Comprimeren"
+
+msgid "empty"
+msgstr "Legen"
+
+msgid "importmessages"
+msgstr ""
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Gebruikte schijfruimte"
+
+msgid "unknown"
+msgstr "onbekend"
+
+msgid "unlimited"
+msgstr "onbeperkt"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr ""
+
+msgid "quotastorage"
+msgstr "Schijfruimte"
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Snelzoeken"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Zoek opnieuw"
+
+msgid "searchmod"
+msgstr "Zoekopties"
+
+msgid "msgtext"
+msgstr "Volledig bericht"
+
+msgid "body"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "namex"
+msgstr "Naam"
+
+msgid "searchscope"
+msgstr "Bereik"
+
+msgid "currentfolder"
+msgstr "Huidige map"
+
+msgid "subfolders"
+msgstr ""
+
+msgid "allfolders"
+msgstr ""
+
+msgid "searchinterval-1W"
+msgstr "ouder dan een week"
+
+msgid "searchinterval-1M"
+msgstr "ouder dan een maand"
+
+msgid "searchinterval-1Y"
+msgstr "ouder dan een jaar"
+
+msgid "searchinterval1W"
+msgstr "jonger dan een week"
+
+msgid "searchinterval1M"
+msgstr "jonger dan een maand"
+
+msgid "searchinterval1Y"
+msgstr "jonger dan een jaar"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Openen in een nieuw venster"
+
+msgid "emlsave"
+msgstr "Opslaan (.eml)"
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr "Als nieuw bewerken"
+
+msgid "send"
+msgstr "Verzenden"
+
+msgid "sendmessage"
+msgstr "Bericht verzenden"
+
+msgid "savemessage"
+msgstr "Bewaar als concept"
+
+msgid "addattachment"
+msgstr "Bestand toevoegen als bijlage"
+
+msgid "charset"
+msgstr "Karakterset"
+
+msgid "editortype"
+msgstr "Opmaak"
+
+msgid "returnreceipt"
+msgstr "Ontvangstbevestiging"
+
+msgid "dsn"
+msgstr "Delivery Status Notification"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "Op $date, schreef $sender:"
+
+msgid "originalmessage"
+msgstr "Orgineel bericht"
+
+msgid "selectimage"
+msgstr "Selecteer beeld"
+
+msgid "addimage"
+msgstr "Voeg beeld toe"
+
+msgid "selectmedia"
+msgstr "Selecteer film"
+
+msgid "addmedia"
+msgstr "Voeg film toe"
+
+msgid "encrypt"
+msgstr "Versleutel"
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr "Sleutel-ID"
+
+msgid "keylength"
+msgstr "Bits"
+
+msgid "keyexpired"
+msgstr "Verlopen"
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Voeg in"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "Ontvanger"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Bewerk identiteiten"
+
+msgid "spellcheck"
+msgstr "Spellen"
+
+msgid "checkspelling"
+msgstr "Controleer spelling"
+
+msgid "resumeediting"
+msgstr "Hervat bewerken"
+
+msgid "revertto"
+msgstr "Ongedaan maken"
+
+msgid "restore"
+msgstr ""
+
+msgid "restoremessage"
+msgstr ""
+
+msgid "ignore"
+msgstr "Negeer"
+
+msgid "responses"
+msgstr "Antwoorden"
+
+msgid "insertresponse"
+msgstr "Antwoord invoegen"
+
+msgid "manageresponses"
+msgstr "Antwoorden beheren"
+
+msgid "newresponse"
+msgstr "Nieuw antwoord"
+
+msgid "addresponse"
+msgstr "Antwoord invoegen"
+
+msgid "editresponse"
+msgstr "Antwoord bewerken"
+
+msgid "editresponses"
+msgstr "Antwoorden bewerken"
+
+msgid "responsename"
+msgstr "Naam"
+
+msgid "responsetext"
+msgstr ""
+
+msgid "attach"
+msgstr "Bijvoegen"
+
+msgid "attachments"
+msgstr "Bijlagen"
+
+msgid "upload"
+msgstr "Uploaden"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "Sluiten"
+
+msgid "messageoptions"
+msgstr "Opties voor bericht..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Laag"
+
+msgid "lowest"
+msgstr "Laagste"
+
+msgid "normal"
+msgstr "Normaal"
+
+msgid "high"
+msgstr "Hoog"
+
+msgid "highest"
+msgstr "Hoogste"
+
+msgid "nosubject"
+msgstr "(geen onderwerp)"
+
+msgid "showimages"
+msgstr "Toon afbeeldingen"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "Afbeeldingen van $sender altijd tonen"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Dit is een concept bericht."
+
+msgid "andnmore"
+msgstr "$nr meer..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Toon meer berichthoofden"
+
+msgid "togglefullheaders"
+msgstr "Schakelen tussen naakte berichtkoppen"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Platte tekst"
+
+msgid "savesentmessagein"
+msgstr "Bewaar verzonden bericht in"
+
+msgid "dontsave"
+msgstr "niet bewaren"
+
+msgid "maxuploadsize"
+msgstr "Maximum toegestane bestandsgrootte is $size"
+
+msgid "addcc"
+msgstr "Cc toevoegen"
+
+msgid "addbcc"
+msgstr "Bcc toevoegen"
+
+msgid "addreplyto"
+msgstr "Antwoorden aan toevoegen"
+
+msgid "addfollowupto"
+msgstr "Followup aan toevoegen"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"De afzender heeft een ontvangstbevestiging gevraagd. Wilt u deze versturen?"
+
+msgid "receiptread"
+msgstr "Ontvangstbevestiging (gelezen)"
+
+msgid "yourmessage"
+msgstr "Dir is een onvangstbevestiging voor uw bericht"
+
+msgid "receiptnote"
+msgstr ""
+"Opmerking: deze ontvangstbevestiging houdt enkel in dat het bericht was "
+"weergegeven bij de ontvanger. Er is geen garantie dat de ontvanger het "
+"bericht daadwerkelijk heeft gelezen en/of begrepen."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Naam"
+
+msgid "firstname"
+msgstr "Voornaam"
+
+msgid "surname"
+msgstr "Achternaam"
+
+msgid "middlename"
+msgstr "Middelnaam"
+
+msgid "nameprefix"
+msgstr "Prefix"
+
+msgid "namesuffix"
+msgstr "Suffix"
+
+msgid "nickname"
+msgstr "Roepnaam"
+
+msgid "jobtitle"
+msgstr "Job titel"
+
+msgid "department"
+msgstr "Afdeling"
+
+msgid "gender"
+msgstr "Geslacht"
+
+msgid "maidenname"
+msgstr "Meisjesnaam"
+
+msgid "email"
+msgstr "E-mailadres"
+
+msgid "phone"
+msgstr "Telefoonnummer"
+
+msgid "address"
+msgstr "Adres"
+
+msgid "street"
+msgstr "Straat"
+
+msgid "locality"
+msgstr "Stad"
+
+msgid "zipcode"
+msgstr "Postcode"
+
+msgid "region"
+msgstr "Staat/Provincie"
+
+msgid "country"
+msgstr "Land"
+
+msgid "birthday"
+msgstr "Verjaardag"
+
+msgid "anniversary"
+msgstr "Verjaardag"
+
+msgid "website"
+msgstr "Website"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Opmerkingen"
+
+msgid "male"
+msgstr "man"
+
+msgid "female"
+msgstr "vrouw"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Manager"
+
+msgid "assistant"
+msgstr "Assistent"
+
+msgid "spouse"
+msgstr "Echtgenoot"
+
+msgid "allfields"
+msgstr "Alle velden"
+
+msgid "search"
+msgstr "Zoek"
+
+msgid "searchresult"
+msgstr "Zoekresultaat"
+
+msgid "advsearch"
+msgstr "Uitgebreid zoeken"
+
+msgid "advanced"
+msgstr "Geavanceerd"
+
+msgid "other"
+msgstr "Anders"
+
+msgid "printcontact"
+msgstr "Contactpersoon afdrukken"
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "Thuis"
+
+msgid "typework"
+msgstr "Werk"
+
+msgid "typeother"
+msgstr "Anders"
+
+msgid "typemobile"
+msgstr "Mobiel"
+
+msgid "typemain"
+msgstr "Hoofd"
+
+msgid "typehomefax"
+msgstr "Thuis fax"
+
+msgid "typeworkfax"
+msgstr "Werk fax"
+
+msgid "typecar"
+msgstr "Auto"
+
+msgid "typepager"
+msgstr "Pager"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Assistent"
+
+msgid "typehomepage"
+msgstr "Home page"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profiel"
+
+msgid "addfield"
+msgstr "Veld toevoegen..."
+
+msgid "addcontact"
+msgstr "Contactpersoon toevoegen"
+
+msgid "editcontact"
+msgstr "Contactpersoon bewerken"
+
+msgid "contacts"
+msgstr "Contactpersonen"
+
+msgid "contactproperties"
+msgstr "Eigenschappen van contactpersoon"
+
+msgid "contactnameandorg"
+msgstr "Naam en organisatie"
+
+msgid "personalinfo"
+msgstr "Persoonlijke informatie"
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr "Contact foto"
+
+msgid "edit"
+msgstr "Bewerken"
+
+msgid "cancel"
+msgstr "Annuleren"
+
+msgid "save"
+msgstr "Opslaan"
+
+msgid "delete"
+msgstr "Verwijderen"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Hernoemen"
+
+msgid "addphoto"
+msgstr "Toevoegen"
+
+msgid "replacephoto"
+msgstr "Vervangen"
+
+msgid "uploadphoto"
+msgstr "Foto  uploaden"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "Nieuw contact"
+
+msgid "deletecontact"
+msgstr "Verwijder geselecteerde contactpersonen"
+
+msgid "composeto"
+msgstr "Mail sturen aan"
+
+msgid "contactsfromto"
+msgstr "Contactpersonen $from - $to van $count"
+
+msgid "print"
+msgstr "Afdrukken"
+
+msgid "export"
+msgstr "Exporteren"
+
+msgid "exportall"
+msgstr "Exporteer alle"
+
+msgid "exportsel"
+msgstr "Exporteer geslecteerden"
+
+msgid "exportvcards"
+msgstr "Exporteer contactpersonen in vCard formaat"
+
+msgid "newgroup"
+msgstr "Maak een nieuwe groep"
+
+msgid "addgroup"
+msgstr "Groep toevoegen"
+
+msgid "grouprename"
+msgstr "Groep hernoemen"
+
+msgid "groupdelete"
+msgstr "Groep verwijderen"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Geselecteerde contacten uit de groep verwijderen"
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "Toon vorige"
+
+msgid "firstpage"
+msgstr "Toon eerste"
+
+msgid "nextpage"
+msgstr "Toon volgende"
+
+msgid "lastpage"
+msgstr "Toon laatste"
+
+msgid "group"
+msgstr "Groep"
+
+msgid "groups"
+msgstr "Groepen"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr "Personlijke adressen"
+
+msgid "searchsave"
+msgstr "Zoekopdracht opslaan"
+
+msgid "searchdelete"
+msgstr "Zoekopdracht wissen"
+
+msgid "import"
+msgstr "Importeer"
+
+msgid "importcontacts"
+msgstr "Contactpersonen importeren"
+
+msgid "importfromfile"
+msgstr "Importeren uit bestand"
+
+msgid "importtarget"
+msgstr "Contacten toevoegen aan"
+
+msgid "importreplace"
+msgstr "Vervang het complete adresboek"
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+"U kunt contacten uploaden vanuit een bestaand adresboek.<br/>We ondersteunen"
+" momenteel het importeren van adressen uit <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> of CSV (door komma's "
+"gescheiden) gegevensformaat."
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Klaar"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Instellingen voor"
+
+msgid "about"
+msgstr "Over"
+
+msgid "preferences"
+msgstr "Voorkeuren"
+
+msgid "userpreferences"
+msgstr "Gebruikersvoorkeuren"
+
+msgid "editpreferences"
+msgstr "Gebruikersvoorkeuren bewerken"
+
+msgid "identities"
+msgstr "Identiteiten"
+
+msgid "manageidentities"
+msgstr "Identiteiten beheren"
+
+msgid "newidentity"
+msgstr "Nieuwe identiteit maken"
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr "Versleuteling"
+
+msgid "preferhtml"
+msgstr "Gebruik HTML-opmaak"
+
+msgid "defaultcharset"
+msgstr "Standaard karakterset"
+
+msgid "htmlmessage"
+msgstr "HTML-bericht"
+
+msgid "messagepart"
+msgstr ""
+
+msgid "digitalsig"
+msgstr ""
+
+msgid "dateformat"
+msgstr "Datum formaat"
+
+msgid "timeformat"
+msgstr "Tijdformaat"
+
+msgid "prettydate"
+msgstr "Uitgebreide datumweergave"
+
+msgid "setdefault"
+msgstr "Als standaard instellen"
+
+msgid "autodetect"
+msgstr "Automatisch"
+
+msgid "language"
+msgstr "Taal"
+
+msgid "timezone"
+msgstr "Tijdzone"
+
+msgid "pagesize"
+msgstr "Berichten per pagina"
+
+msgid "signature"
+msgstr "Handtekening"
+
+msgid "dstactive"
+msgstr "Zomer/wintertijd"
+
+msgid "showinextwin"
+msgstr "Bericht openen in een nieuw venster"
+
+msgid "composeextwin"
+msgstr "Samenstellen in een nieuw venster"
+
+msgid "htmleditor"
+msgstr "HTML berichten opmaken"
+
+msgid "htmlonreply"
+msgstr "enkel bij beantwoorden van een HTML bericht"
+
+msgid "htmlonreplyandforward"
+msgstr "bij het doorsturen of beantwoorden van een HTML-bericht"
+
+msgid "htmlsignature"
+msgstr "HTML handtekening"
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr "Toon voorbeeldvenster"
+
+msgid "skin"
+msgstr "Opmaakprofiel"
+
+msgid "logoutclear"
+msgstr "Prullenbak legen bij uitloggen"
+
+msgid "logoutcompact"
+msgstr "Postvak IN opschonen bij uitloggen"
+
+msgid "uisettings"
+msgstr "Gebruikersinterface"
+
+msgid "serversettings"
+msgstr "Serverinstellingen"
+
+msgid "mailboxview"
+msgstr "Opmaak Mailbox"
+
+msgid "mdnrequests"
+msgstr "Ontvangstmeldingen"
+
+msgid "askuser"
+msgstr "vraag de gebruiker"
+
+msgid "autosend"
+msgstr "stuur automatisch"
+
+msgid "autosendknown"
+msgstr ""
+"stuur ontvangstbevestiging naar mijn contactpersonen, anders vraag mij"
+
+msgid "autosendknownignore"
+msgstr "stuur ontvangstbevestiging naar mijn contactpersonen, anders negeer"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "negeer verzoek"
+
+msgid "readwhendeleted"
+msgstr "Bericht na verwijderen als gelezen markeren"
+
+msgid "flagfordeletion"
+msgstr "Bericht niet verwijderen maar als verwijderd markeren"
+
+msgid "skipdeleted"
+msgstr "Verwijderde berichten niet tonen"
+
+msgid "deletealways"
+msgstr "Verwijder bericht wanneer verplaatsen naar Prullenbak mislukt"
+
+msgid "deletejunk"
+msgstr "Berichten direct verwijderen in Ongewenst"
+
+msgid "showremoteimages"
+msgstr "Geef externe toegevoegde berichten weer"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "Van bekende afzenders"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "altijd"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "Toon bijgevoegde afbeeldingen onder het bericht"
+
+msgid "autosavedraft"
+msgstr "Automatisch als concept opslaan"
+
+msgid "everynminutes"
+msgstr "elke $n minuten"
+
+msgid "refreshinterval"
+msgstr "Vernieuwen (controleren op nieuwe berichten, enz.)"
+
+msgid "never"
+msgstr "nooit"
+
+msgid "immediately"
+msgstr "onmiddellijk"
+
+msgid "messagesdisplaying"
+msgstr "Berichten weergave"
+
+msgid "messagescomposition"
+msgstr "Berichten aanmaken"
+
+msgid "mimeparamfolding"
+msgstr "Namen van bijlagen"
+
+msgid "2231folding"
+msgstr "Volledig RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Volledig RFC 2047 (andere)"
+
+msgid "force7bit"
+msgstr "Gebruik MIME codering voor 8-bit karakters"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Geavanceerde opties"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "Focus browserscherm bij nieuw bericht"
+
+msgid "checkallfolders"
+msgstr "Controleer alle mappen op nieuwe berichten"
+
+msgid "displaynext"
+msgstr "Volgend lijst-item weergeven na wissen/verplaatsen"
+
+msgid "defaultfont"
+msgstr "Standaard lettertype van HTML-bericht"
+
+msgid "mainoptions"
+msgstr "Hoofdopties"
+
+msgid "browseroptions"
+msgstr "Browseropties"
+
+msgid "section"
+msgstr "Sectie"
+
+msgid "maintenance"
+msgstr "Onderhoud"
+
+msgid "newmessage"
+msgstr "Nieuw bericht"
+
+msgid "signatureoptions"
+msgstr "Opties voor handtekening"
+
+msgid "whenreplying"
+msgstr "Bij beantwoorden"
+
+msgid "replyempty"
+msgstr "het originele bericht niet vermelden"
+
+msgid "replytopposting"
+msgstr "begin bericht boven het origineel"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "begin bericht onder het origineel"
+
+msgid "replyremovesignature"
+msgstr "Verwijder handtekening uit het origneel bij beantwoorden"
+
+msgid "autoaddsignature"
+msgstr "Handtekening automatisch toevoegen"
+
+msgid "newmessageonly"
+msgstr "alleen bij nieuwe berichten"
+
+msgid "replyandforwardonly"
+msgstr "alleen bij beantwoorden en doorsturen"
+
+msgid "insertsignature"
+msgstr "Handtekening invoegen"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "Na $n seconden"
+
+msgid "reqmdn"
+msgstr "Vraag altijd een ontvangstbevestiging"
+
+msgid "reqdsn"
+msgstr "Vraag altijd een Delivery Status Notification"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Plaats antwoorden in de map van het beantwoorde bericht"
+
+msgid "defaultabook"
+msgstr "Standaard adresboek"
+
+msgid "autocompletesingle"
+msgstr "Alternatieve e-mailadressen in autoaanvulling overslaan"
+
+msgid "listnamedisplay"
+msgstr "Lijst contacten als"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Controleer de spelling voordat u een bericht verstuurt"
+
+msgid "spellcheckoptions"
+msgstr "Opties voor spellingcontrole"
+
+msgid "spellcheckignoresyms"
+msgstr "Negeer woorden met symbolen"
+
+msgid "spellcheckignorenums"
+msgstr "Negeer woorden met getallen"
+
+msgid "spellcheckignorecaps"
+msgstr "Negeer woorden met allemaal hoofdletters"
+
+msgid "addtodict"
+msgstr "Toevoegen aan woordenboek"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Registreer protocol handler voor mailto: links"
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr "Berichten doorsturen"
+
+msgid "inline"
+msgstr "inline"
+
+msgid "asattachment"
+msgstr ""
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "alle berichten"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Map"
+
+msgid "folders"
+msgstr "Mappen"
+
+msgid "foldername"
+msgstr "Naam"
+
+msgid "subscribed"
+msgstr "Geabonneerd"
+
+msgid "messagecount"
+msgstr "Berichten"
+
+msgid "create"
+msgstr "Aanmaken"
+
+msgid "createfolder"
+msgstr "Nieuwe map aanmaken"
+
+msgid "managefolders"
+msgstr "Mappen beheren"
+
+msgid "specialfolders"
+msgstr "Speciale mappen"
+
+msgid "properties"
+msgstr "Eigenschappen"
+
+msgid "folderproperties"
+msgstr "Eigenschappen van map"
+
+msgid "parentfolder"
+msgstr "Bovenliggende map"
+
+msgid "location"
+msgstr "Locatie"
+
+msgid "info"
+msgstr "Informatie"
+
+msgid "getfoldersize"
+msgstr "Klik voor de grootte van de map"
+
+msgid "changesubscription"
+msgstr "Klik voor abonnement te wijzigen"
+
+msgid "foldertype"
+msgstr ""
+
+msgid "personalfolder"
+msgstr ""
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr ""
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr "Maak een nieuw sleutelpaar aan"
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "Versleuteling"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Sorteren op"
+
+msgid "sortasc"
+msgstr "Oplopend sorteren"
+
+msgid "sortdesc"
+msgstr "Aflopend sorteren"
+
+msgid "undo"
+msgstr ""
+
+msgid "installedplugins"
+msgstr ""
+
+msgid "plugin"
+msgstr ""
+
+msgid "version"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Licentie"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr ""
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Engels"
+
+msgid "westerneuropean"
+msgstr "West-Europees"
+
+msgid "easterneuropean"
+msgstr "Oost-Europees"
+
+msgid "southeasterneuropean"
+msgstr "Zuidoost Europees"
+
+msgid "baltic"
+msgstr "Baltisch"
+
+msgid "cyrillic"
+msgstr "Cyrillisch"
+
+msgid "arabic"
+msgstr "Arabisch"
+
+msgid "greek"
+msgstr "Grieks"
+
+msgid "hebrew"
+msgstr "Hebreeuws"
+
+msgid "turkish"
+msgstr "Turks"
+
+msgid "nordic"
+msgstr "Noord-Germaans"
+
+msgid "thai"
+msgstr "Thais"
+
+msgid "celtic"
+msgstr "Keltisch"
+
+msgid "vietnamese"
+msgstr "Vietnamees"
+
+msgid "japanese"
+msgstr "Japans"
+
+msgid "korean"
+msgstr "Koreaans"
+
+msgid "chinese"
+msgstr "Chinees"
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Er is een fout opgetreden!"
+
+msgid "messages.loginfailed"
+msgstr "Aanmelden mislukt."
+
+msgid "messages.cookiesdisabled"
+msgstr "Uw browser accepteert geen cookies."
+
+msgid "messages.sessionerror"
+msgstr "Sessie is reeds beëindigd of is ongeldig."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "Kon geen verbinding maken met de IMAP server..."
+
+msgid "messages.servererror"
+msgstr "Server fout!"
+
+msgid "messages.servererrormsg"
+msgstr "Server fout: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Te veel mislukte inlogpogingen. Probeer het later opnieuw."
+
+msgid "messages.connerror"
+msgstr "Verbindingsfout (Mislukt om de server te bereiken)!"
+
+msgid "messages.dberror"
+msgstr "Database Fout!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Het popup venster werd geblokkeerd!"
+
+msgid "messages.requesttimedout"
+msgstr "Aanvraag verlopen"
+
+msgid "messages.errorreadonly"
+msgstr "Kon opdracht niet uitvoeren. Map is alleen-lezen."
+
+msgid "messages.errornoperm"
+msgstr "Kon opdracht niet uitvoeren. Toegang geweigerd."
+
+msgid "messages.erroroverquota"
+msgstr "Kon opdracht niet uitvoeren. Geen vrije schijfruimte."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Geen vrije schijfruimte. Gebruik SHIFT+DEL om een bericht te verwijderen."
+
+msgid "messages.invalidrequest"
+msgstr "Ongeldige aanvraag! Er zijn geen gegevens opgeslagen."
+
+msgid "messages.invalidhost"
+msgstr "Ongeldige server."
+
+msgid "messages.nomessagesfound"
+msgstr "Er zijn geen berichten in deze map..."
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "Mailbox is leeg"
+
+msgid "messages.nomessages"
+msgstr "Geen berichten"
+
+msgid "messages.refreshing"
+msgstr "Bezig met vernieuwen..."
+
+msgid "messages.loading"
+msgstr "Bezig met ophalen gegevens..."
+
+msgid "messages.uploading"
+msgstr "Bezig met uploaden..."
+
+msgid "messages.attaching"
+msgstr "Bestand aan het toevoegen..."
+
+msgid "messages.uploadingmany"
+msgstr "Bestanden worden geüpload..."
+
+msgid "messages.loadingdata"
+msgstr "Bezig met gegevens ophalen..."
+
+msgid "messages.checkingmail"
+msgstr "Controleer op nieuwe berichten..."
+
+msgid "messages.sendingmessage"
+msgstr "Bericht wordt verstuurd..."
+
+msgid "messages.messagesent"
+msgstr "Het bericht is verzonden."
+
+msgid "messages.savingmessage"
+msgstr "Bericht wordt bewaard..."
+
+msgid "messages.messagesaved"
+msgstr "Bericht bewaard in Concepten."
+
+msgid "messages.successfullysaved"
+msgstr "Succesvol opgeslagen..."
+
+msgid "messages.savingresponse"
+msgstr "Respons tekst wordt bewaard..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Bent u zeker dat u deze respons tekst wilt verwijderen?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Contactpersoon is toegevoegd."
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "Er bestaat al een contactpersoon met deze naam."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Om uw privacy te beschermen worden de afbeeldingen in dit bericht niet "
+"getoond."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Dit bericht is geëncrypteerd en kan niet worden weergegeven, sorry!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Dit bericht is geëncrypteerd en kan niet worden gedecodeerd met uw browser "
+"extensie, sorry!"
+
+msgid "messages.nopubkeyfor"
+msgstr "Geen geldige publieke sleutel gevonden voor $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr "De volgende publieke sleutels werden gevonden:"
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Geen contactpersonen gevonden."
+
+msgid "messages.contactnotfound"
+msgstr "De gevraagde contactpersoon was niet gevonden."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Kon het bericht niet versturen."
+
+msgid "messages.senttooquickly"
+msgstr "U moet $sec second(en) wachten om het bericht te versturen."
+
+msgid "messages.errorsavingsent"
+msgstr ""
+"Er is een fout opgetreden tijdens het opslaan van het verzonden bericht."
+
+msgid "messages.errorsaving"
+msgstr "Er is een fout opgetreden tijdens het opslaan."
+
+msgid "messages.errormoving"
+msgstr "Kon de bericht(en) niet verplaatsen."
+
+msgid "messages.errorcopying"
+msgstr "Kon de bericht(en) niet kopiëren"
+
+msgid "messages.errordeleting"
+msgstr "Kon de bericht(en) niet verwijderen."
+
+msgid "messages.errormarking"
+msgstr "Kon de bericht(en) niet markeren."
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr ""
+"Bent u zeker dat u de geselecteerde contactpers(o)on(en) wilt verwijderen?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Weet u zeker dat u de geselecteerde groep wilt verwijderen?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Bent u zeker dat u de geselecteerde bericht(en) wilt verwijderen?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Weet u zeker dat u deze map wilt verwijderen?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Bent u zeker dat u alle berichten in deze map wilt verwijderen?"
+
+msgid "messages.contactdeleting"
+msgstr "Bezig met verwijderen één of meer contactpersonen..."
+
+msgid "messages.groupdeleting"
+msgstr "Groep wordt verwijderd..."
+
+msgid "messages.folderdeleting"
+msgstr "Map verwijderen..."
+
+msgid "messages.foldermoving"
+msgstr "Map verplaatsen..."
+
+msgid "messages.foldersubscribing"
+msgstr "Bezig met abonneren op map..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Abonnement op map wordt opgezegd..."
+
+msgid "messages.formincomplete"
+msgstr "Het formulier is niet volledig ingevuld."
+
+msgid "messages.noemailwarning"
+msgstr "Geef een geldig e-mailadres op."
+
+msgid "messages.nonamewarning"
+msgstr "Geef een naam op."
+
+msgid "messages.nopagesizewarning"
+msgstr "Geef een geldig aantal berichten per pagina op."
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Geef minstens één bestemmeling op."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "Geen onderwerp opgegeven. Wenst u alsnog een onderwerp te geven?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "Wilt u dit lege bericht versturen?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr "Geen een contacpersoon of e-mailadres op."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Nog niet alle bijlagen zijn geüpload. Wacht even of annuleer de upload."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr berichten gevonden."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr contactpersonen gevonden."
+
+msgid "messages.searchnomatch"
+msgstr "Zoekopdracht leverde geen resultaten."
+
+msgid "messages.searching"
+msgstr "Bezig met zoeken..."
+
+msgid "messages.checking"
+msgstr "Bezig met controleren..."
+
+msgid "messages.stillsearching"
+msgstr "Nog steeds aan het zoeken..."
+
+msgid "messages.nospellerrors"
+msgstr "Geen spelfouten gevonden."
+
+msgid "messages.folderdeleted"
+msgstr "Map met succes verwijderd."
+
+msgid "messages.foldersubscribed"
+msgstr "Folder succesvol geabonneerd."
+
+msgid "messages.folderunsubscribed"
+msgstr "Folder succesvol uitgeschreven."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Succesvol verwijderd."
+
+msgid "messages.converting"
+msgstr "Opmaak van het bericht wordt gewist..."
+
+msgid "messages.messageopenerror"
+msgstr "Kon het bericht niet ophalen van de server."
+
+msgid "messages.filelinkerror"
+msgstr "Toevoegen van het bestand mislukt."
+
+msgid "messages.fileuploaderror"
+msgstr "Bestandsupload mislukt."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Het bestand overschrijdt de maximum grootte van $size."
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "$nr contactpersonen succesvol gekopieerd."
+
+msgid "messages.movesuccess"
+msgstr "$nr contactpersonen succesvol verplaatst."
+
+msgid "messages.copyerror"
+msgstr "Kon contactpersoon niet kopiëren."
+
+msgid "messages.moveerror"
+msgstr "Kon contactpersoon niet verplaatsen."
+
+msgid "messages.sourceisreadonly"
+msgstr "Het adres kan niet worden opgeslagen."
+
+msgid "messages.errorsavingcontact"
+msgstr "Kon de contactpersoon niet bewaren."
+
+msgid "messages.movingmessage"
+msgstr "Bericht wordt verplaatst..."
+
+msgid "messages.copyingmessage"
+msgstr "Bericht wordt gekopieerd..."
+
+msgid "messages.copyingcontact"
+msgstr "Kopiëren contactpersonen..."
+
+msgid "messages.movingcontact"
+msgstr "Verplaatsen contactperso(o)n(en)..."
+
+msgid "messages.deletingmessage"
+msgstr "Bericht wordt verwijderd..."
+
+msgid "messages.markingmessage"
+msgstr "Bericht wordt gemarkeerd..."
+
+msgid "messages.addingmember"
+msgstr "Contactpersonen worden toegevoegd aan de groep..."
+
+msgid "messages.removingmember"
+msgstr "Contactpersonen worden verwijderd uit de groep..."
+
+msgid "messages.receiptsent"
+msgstr "Ontvangstbevestiging verstuurd."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Kon de ontvangstbevestigign niet versturen."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Bent u zeker dat u deze identiteit wilt verwijderen?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "U kunt dit laatste afzendadres niet verwijderen."
+
+msgid "messages.forbiddencharacter"
+msgstr "De naam van de map bevat een karakter dat niet is toegestaan."
+
+msgid "messages.selectimportfile"
+msgstr "Selecteer een bestand om te uploaden."
+
+msgid "messages.addresswriterror"
+msgstr "Het geselecteerde adresboek is alleen-lezen."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Contact(en) met succes toegevoegd aan de groep."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Contact(en) met succes verwijderd aan de groep."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Geen groepslidmaatschap gewijzigd."
+
+msgid "messages.importwait"
+msgstr "Bezig met importeren, even geduld..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Importeren mislukt! Het geüploade bestand is geen importeerbaar bestand."
+
+msgid "messages.importconfirm"
+msgstr "<b>Er zijn $inserted contactpersonen succesvol geïmporteerd</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr adressen met succes geïmporteerd."
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Importeren mislukt! Het geüploade bestand is geen geldig bericht of mailbox "
+"bestand."
+
+msgid "messages.opnotpermitted"
+msgstr "Deze actie is niet toegestaan!"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Er is een fatale fout opgetreden. Neem direct contact op met uw "
+"systeembeheerder. <b>Uw bericht kon niet worden verzonden.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP Fout ($code): Verbinding met server mislukt."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP Fout ($code): Authenticatie mislukt."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP Fout ($code): Kon afzender \"$from\" niet instellen ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP Fout ($code): Kon ontvanger \"$to\" niet toevoegen ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP Fout: Kon lijst van ontvangers niet verwerken."
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP Fout: $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+"Te veel geadresseerden. Verminder de hoeveelheid geadresseerden tot $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Het aantal leden van de groep groter is dan de maximale van $max."
+
+msgid "messages.internalerror"
+msgstr "Er is een interne fout opgetreden. Probeer het later opnieuw."
+
+msgid "messages.contactdelerror"
+msgstr "Kon contactpersoon niet verwijderen."
+
+msgid "messages.contactdeleted"
+msgstr "Contactpersoon succesvol verwijderd."
+
+msgid "messages.contactrestoreerror"
+msgstr "Verwijderde contactpersonen konden niet hersteld worden."
+
+msgid "messages.contactrestored"
+msgstr "Contactpersonen succesvol hersteld."
+
+msgid "messages.groupdeleted"
+msgstr "Groep succesvol verwijderd."
+
+msgid "messages.grouprenamed"
+msgstr "Groep succesvol hernoemd."
+
+msgid "messages.groupcreated"
+msgstr "Groep succesvol aangemaakt."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Opgeslagen zoekopdracht successvol verwijderd."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Opgeslagen zoekopdracht kon niet worden verwijderd."
+
+msgid "messages.savedsearchcreated"
+msgstr "Zoekopdracht successvol opgeslagen."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Zoekopdracht kon niet worden opgeslagen."
+
+msgid "messages.messagedeleted"
+msgstr "Bericht(en) succesvol verwijderd."
+
+msgid "messages.messagemoved"
+msgstr "Bericht(en) succesvol verplaatst."
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "Bericht(en) succesvol gekopieerd."
+
+msgid "messages.messagemarked"
+msgstr "Bericht(en) succesvol gemarkeerd."
+
+msgid "messages.autocompletechars"
+msgstr "Geef ten minste $min karakters voor auto-aanvullen."
+
+msgid "messages.autocompletemore"
+msgstr "Meerdere resultaten gevonden. Verfijn uw zoekopdracht."
+
+msgid "messages.namecannotbeempty"
+msgstr "Naam kan niet leeg zijn."
+
+msgid "messages.nametoolong"
+msgstr "Naam is te lang."
+
+msgid "messages.namedotforbidden"
+msgstr "Mapnaam kan niet met een punt starten."
+
+msgid "messages.folderupdated"
+msgstr "Map succesvol bijgewerkt."
+
+msgid "messages.foldercreated"
+msgstr "Map succesvol aangemaakt."
+
+msgid "messages.invalidimageformat"
+msgstr "Geen geldig afbeeldingsformaat."
+
+msgid "messages.mispellingsfound"
+msgstr "Spellingsfouten gedetecteerd in bericht."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"U heeft niet voldoende rechten een map te maken / verplaatsen in deze map."
+
+msgid "messages.messagetoobig"
+msgstr "Dit deel van uw bericht is te groot om het te verwerken."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Opgelet: deze webmail service vereist JavaScript! Om deze service te kunnen "
+"gebruiken dient u JavaScript toe te staan in de instellingen van uw browser."
+
+msgid "messages.messageissent"
+msgstr ""
+"Het bericht werd reeds verzonden, maar nog niet  bewaard. Wil je het nu "
+"bewaren?"
+
+msgid "messages.errnotfound"
+msgstr "Bestand niet gevonden"
+
+msgid "messages.errnotfoundexplain"
+msgstr "De gevraagde hulpbron werd niet gevonden."
+
+msgid "messages.errfailedrequest"
+msgstr "Mislukt verzoek"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Autorisatie mislukt"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Verzoek mislukt"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr "Klik hier om uw vorige sessie te hernemen."
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

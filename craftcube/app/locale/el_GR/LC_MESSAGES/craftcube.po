@@ -1,0 +1,2948 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Καλώς ήρθατε στο $product"
+
+msgid "username"
+msgstr "Όνομα Χρήστη"
+
+msgid "password"
+msgstr "Κωδικός Πρόσβασης"
+
+msgid "server"
+msgstr "Εξυπηρετητής"
+
+msgid "login"
+msgstr "Σύνδεση"
+
+msgid "oauthlogin"
+msgstr "Σύνδεση μέσω $provider"
+
+msgid "menu"
+msgstr "Μενού"
+
+msgid "logout"
+msgstr "Αποσύνδεση"
+
+msgid "mail"
+msgstr "E-Mail"
+
+msgid "settings"
+msgstr "Ρυθμίσεις"
+
+msgid "addressbook"
+msgstr "Επαφές"
+
+msgid "darkmode"
+msgstr "Σκοτεινή λειτουργία"
+
+msgid "lightmode"
+msgstr "Φωτεινή λειτουργία"
+
+msgid "inbox"
+msgstr "Εισερχόμενα"
+
+msgid "drafts"
+msgstr "Πρόχειρα"
+
+msgid "sent"
+msgstr "Απεσταλμένα"
+
+msgid "trash"
+msgstr "Κάδος Απορριμάτων"
+
+msgid "junk"
+msgstr "Ανεπιθύμητα"
+
+msgid "show_real_foldernames"
+msgstr "Εμφάνιση πραγματικών ονομάτων για ειδικούς φακέλους"
+
+msgid "subject"
+msgstr "Θέμα"
+
+msgid "from"
+msgstr "Αποστολέας"
+
+msgid "sender"
+msgstr "Αποστολέας"
+
+msgid "to"
+msgstr "Παραλήπτης"
+
+msgid "cc"
+msgstr "Κοινοποίηση"
+
+msgid "bcc"
+msgstr "Κρυφή κοινοποίηση"
+
+msgid "replyto"
+msgstr "Απάντηση στο"
+
+msgid "followupto"
+msgstr "Σε συνέχεια"
+
+msgid "date"
+msgstr "Ημερομηνία"
+
+msgid "size"
+msgstr "Μέγεθος"
+
+msgid "priority"
+msgstr "Πρoτεραιότητα"
+
+msgid "organization"
+msgstr "Οργανισμός"
+
+msgid "readstatus"
+msgstr "Κατάσταση ανάγνωσης"
+
+msgid "listoptions"
+msgstr "Κατάλογος επιλογών"
+
+msgid "listoptionstitle"
+msgstr "Λίστα επιλογών"
+
+msgid "mailboxlist"
+msgstr "Φάκελοι"
+
+msgid "messagesfromto"
+msgstr "Μηνύματα $from από $to έως $count"
+
+msgid "threadsfromto"
+msgstr "Θέματα $from έως $to από $count"
+
+msgid "messagenrof"
+msgstr "Μήνυμα $nr από $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to από $count"
+
+msgid "copy"
+msgstr "Αντιγραφή"
+
+msgid "move"
+msgstr "Μετακίνηση"
+
+msgid "moveto"
+msgstr "Μετακίνηση σε..."
+
+msgid "copyto"
+msgstr "Αντιγραφή σε..."
+
+msgid "download"
+msgstr "Λήψη"
+
+msgid "open"
+msgstr "Ανοιγμα"
+
+msgid "showattachment"
+msgstr "Εμφάνιση"
+
+msgid "showanyway"
+msgstr "Εμφάνιση"
+
+msgid "filename"
+msgstr "Όνομα αρχείου"
+
+msgid "filesize"
+msgstr "Μέγεθος αρχείου"
+
+msgid "addtoaddressbook"
+msgstr "Προσθήκη στο βιβλίο διευθύνσεων"
+
+msgid "sun"
+msgstr "Κυρ"
+
+msgid "mon"
+msgstr "Δευτ"
+
+msgid "tue"
+msgstr "Τρι"
+
+msgid "wed"
+msgstr "Τετ"
+
+msgid "thu"
+msgstr "Πεμπ"
+
+msgid "fri"
+msgstr "Παρ"
+
+msgid "sat"
+msgstr "Σαβ"
+
+msgid "sunday"
+msgstr "Κυριακή"
+
+msgid "monday"
+msgstr "Δευτέρα"
+
+msgid "tuesday"
+msgstr "Τρίτη"
+
+msgid "wednesday"
+msgstr "Τετάρτη"
+
+msgid "thursday"
+msgstr "Πέμπτη"
+
+msgid "friday"
+msgstr "Παρασκευή"
+
+msgid "saturday"
+msgstr "Σάββατο"
+
+msgid "jan"
+msgstr "Ιαν"
+
+msgid "feb"
+msgstr "Φεβ"
+
+msgid "mar"
+msgstr "Μαρ"
+
+msgid "apr"
+msgstr "Απρ"
+
+msgid "may"
+msgstr "Μαι"
+
+msgid "jun"
+msgstr "Ιουν"
+
+msgid "jul"
+msgstr "Ιουλ"
+
+msgid "aug"
+msgstr "Αυγ"
+
+msgid "sep"
+msgstr "Σεπ"
+
+msgid "oct"
+msgstr "Οκτ"
+
+msgid "nov"
+msgstr "Νοε"
+
+msgid "dec"
+msgstr "Δεκ"
+
+msgid "longjan"
+msgstr "Ιανουάριος"
+
+msgid "longfeb"
+msgstr "Φεβρουάριος"
+
+msgid "longmar"
+msgstr "Μάρτιος"
+
+msgid "longapr"
+msgstr "Απρίλιος"
+
+msgid "longmay"
+msgstr "Μαι"
+
+msgid "longjun"
+msgstr "Ιούνιος"
+
+msgid "longjul"
+msgstr "Ιούλιος"
+
+msgid "longaug"
+msgstr "Αύγουστος"
+
+msgid "longsep"
+msgstr "Σεπτέμβριος"
+
+msgid "longoct"
+msgstr "Οκτώβριος"
+
+msgid "longnov"
+msgstr "Νοέμβριος"
+
+msgid "longdec"
+msgstr "Δεκέμβριος"
+
+msgid "today"
+msgstr "Σήμερα"
+
+msgid "refresh"
+msgstr "Ανανέωση"
+
+msgid "checkmail"
+msgstr "Έλεγχος για νέα μηνύματα"
+
+msgid "compose"
+msgstr "Δημιουργία μηνύματος"
+
+msgid "writenewmessage"
+msgstr "Δημιουργία νέου μηνύματος"
+
+msgid "reply"
+msgstr "Απάντηση"
+
+msgid "replytomessage"
+msgstr "Απάντηση στον αποστολέα"
+
+msgid "replytoallmessage"
+msgstr "Απάντηση στη λίστα ή στον αποστολέα και όλους τους παραλήπτες"
+
+msgid "replyall"
+msgstr "Απάντηση όλων"
+
+msgid "replylist"
+msgstr "Λίστα παραληπτών απάντησης"
+
+msgid "forward"
+msgstr "Προώθηση"
+
+msgid "forwardinline"
+msgstr "Προώθηση με ενσωμάτωση"
+
+msgid "forwardattachment"
+msgstr "Προώθηση σαν συνημμένο"
+
+msgid "forwardmessage"
+msgstr "Προώθηση μηνύματος"
+
+msgid "bouncemsg"
+msgstr "Επαναποστολή (απαραδότου)"
+
+msgid "bounce"
+msgstr "Επαναποστολή"
+
+msgid "deletemessage"
+msgstr "Διαγραφή μηνύματος"
+
+msgid "undeletemessage"
+msgstr "Αναίρεση διαγραφής"
+
+msgid "movemessagetotrash"
+msgstr "Διαγραφή μηνύματος"
+
+msgid "printmessage"
+msgstr "Εκτύπωση μηνύματος"
+
+msgid "previousmessage"
+msgstr "Εμφάνιση του προηγούμενου μηνύματος"
+
+msgid "firstmessage"
+msgstr "Εμφάνιση του πρώτου μηνύματος"
+
+msgid "nextmessage"
+msgstr "Εμφάνιση του επόμενου μηνύματος"
+
+msgid "lastmessage"
+msgstr "Εμφάνιση του τελευταίου μηνύματος"
+
+msgid "backtolist"
+msgstr "Επιστροφή στη λίστα μηνυμάτων"
+
+msgid "viewsource"
+msgstr "Προβολή πηγαίου κώδικα"
+
+msgid "mark"
+msgstr "Μαρκάρισμα"
+
+msgid "markmessages"
+msgstr "Μαρκάρισμα μηνυμάτων"
+
+msgid "markread"
+msgstr "Ως αναγνωσμένα"
+
+msgid "markunread"
+msgstr "Ως μη-αναγνωσμένα"
+
+msgid "markflagged"
+msgstr "Ως με σήμανση"
+
+msgid "markunflagged"
+msgstr "Ως χωρίς σήμανση"
+
+msgid "markundeleted"
+msgstr "Ως μη διεγραμμένο"
+
+msgid "markasread"
+msgstr "Επισήμανση ως διαβασμένο"
+
+msgid "markasunread"
+msgstr "Επισήμανση ως μη διαβασμένο"
+
+msgid "markasflagged"
+msgstr "Προσθήκη σημαίας"
+
+msgid "markasunflagged"
+msgstr "Αφαίρεση σημαίας"
+
+msgid "moreactions"
+msgstr "Περισσότερες ενέργειες..."
+
+msgid "markallread"
+msgstr "Σημείωση όλων ως αναγνωσμένων"
+
+msgid "folders-cur"
+msgstr "Μόνο αυτός ο φάκελος"
+
+msgid "folders-sub"
+msgstr "Αυτός ο φάκελος και όλοι οι υποφάκελοι"
+
+msgid "folders-all"
+msgstr "Όλοι οι φάκελοι"
+
+msgid "more"
+msgstr "Περισσότερα"
+
+msgid "back"
+msgstr "Επιστροφή"
+
+msgid "options"
+msgstr "Επιλογές"
+
+msgid "composeoptions"
+msgstr "Επιλογές σύνταξης"
+
+msgid "optionsandattachments"
+msgstr "Επιλογές και συνημμένα"
+
+msgid "actions"
+msgstr "Ενέργειες"
+
+msgid "first"
+msgstr "Πρώτο"
+
+msgid "last"
+msgstr "Τελευταίο"
+
+msgid "previous"
+msgstr "Προηγούμενο"
+
+msgid "next"
+msgstr "Επόμενο"
+
+msgid "select"
+msgstr "Επιλέξτε"
+
+msgid "selection"
+msgstr "Επιλογή"
+
+msgid "all"
+msgstr "Όλα"
+
+msgid "none"
+msgstr "Κανένα"
+
+msgid "currpage"
+msgstr "Τρέχουσα σελίδα"
+
+msgid "isread"
+msgstr "Αναγνωσμένο"
+
+msgid "unread"
+msgstr "Μη αναγνωσμένο"
+
+msgid "flagged"
+msgstr "Σημειωμένο"
+
+msgid "unflagged"
+msgstr "Μη σημειωμένο"
+
+msgid "unanswered"
+msgstr "Αναπάντητο"
+
+msgid "withattachment"
+msgstr "Με επισύναψη"
+
+msgid "deleted"
+msgstr "Διεγραμμένο"
+
+msgid "undeleted"
+msgstr "Μη διεγραμμένο"
+
+msgid "replied"
+msgstr "Απαντημένο"
+
+msgid "forwarded"
+msgstr "Προωθημένο"
+
+msgid "invert"
+msgstr "Αναστροφή"
+
+msgid "filter"
+msgstr "Φίλτρο"
+
+msgid "list"
+msgstr "Λίστα"
+
+msgid "threads"
+msgstr "Θέματα"
+
+msgid "expand-all"
+msgstr "Ανάπτυξη όλων"
+
+msgid "expand-unread"
+msgstr "Ανάπτυξη των μη αναγνωσμένων"
+
+msgid "collapse-all"
+msgstr "Σύμπτυξη όλων"
+
+msgid "threaded"
+msgstr "Θεματοποιημένα"
+
+msgid "showunread"
+msgstr "Εμφάνιση αδιάβαστων μηνυμάτων"
+
+msgid "autoexpand_threads"
+msgstr "Ανάπτυξη θεματοποιημένων μηνυμάτων"
+
+msgid "do_expand"
+msgstr "όλα τα θέματα"
+
+msgid "expand_only_unread"
+msgstr "μόνο με τα μη αναγνωσμένα μηνύματα"
+
+msgid "fromto"
+msgstr "Από/Προς"
+
+msgid "flag"
+msgstr "Επισήμανση"
+
+msgid "attachment"
+msgstr "Συνημμένο αρχείο"
+
+msgid "nonesort"
+msgstr "Κανένα"
+
+msgid "sentdate"
+msgstr "Ημερ. Αποστολής"
+
+msgid "arrival"
+msgstr "Ημερ. Λήψης"
+
+msgid "asc"
+msgstr "αύξουσα"
+
+msgid "desc"
+msgstr "φθίνουσα"
+
+msgid "listcolumns"
+msgstr "Στήλες"
+
+msgid "listsorting"
+msgstr "Ταξινόμηση στηλών"
+
+msgid "listorder"
+msgstr "Σειρά ταξινόμησης"
+
+msgid "listmode"
+msgstr "Προβολή σε λίστα"
+
+msgid "lmode"
+msgstr "Λειτουργία λίστας"
+
+msgid "layout"
+msgstr "Διάταξη"
+
+msgid "layoutwidescreen"
+msgstr "Ευρεία οθόνη"
+
+msgid "layoutdesktop"
+msgstr "Επιφάνεια εργασίας"
+
+msgid "layoutlist"
+msgstr "Λίστα"
+
+msgid "layoutwidescreendesc"
+msgstr "Ευρεία οθόνη (3 στήλες)"
+
+msgid "layoutdesktopdesc"
+msgstr "Επιφάνεια εργασίας (ευρεία λίστα και προεπισκόπηση mail παρακάτω)"
+
+msgid "layoutlistdesc"
+msgstr "Λίστα (χωρίς προεπισκόπηση)"
+
+msgid "folderactions"
+msgstr "Ενέργειες στους φακέλους"
+
+msgid "compact"
+msgstr "Συμπίεση"
+
+msgid "empty"
+msgstr "Άδειασμα"
+
+msgid "importmessages"
+msgstr "Εισαγωγή μηνυμάτων"
+
+msgid "mailimportdesc"
+msgstr ""
+"Μπορείτε να μεταφορτώσετε αλληλογραφία χρησιμοποιώντας αρχεία <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> ή <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>."
+
+msgid "mailimportzip"
+msgstr "Τα πολλαπλά αρχεία δύνανται να συμπιεστούν σε αρχεία zip"
+
+msgid "quota"
+msgstr "Χρήση δίσκου"
+
+msgid "unknown"
+msgstr "άγνωστο"
+
+msgid "unlimited"
+msgstr "απεριόριστο"
+
+msgid "quotatype"
+msgstr "Είδος περιορισμού"
+
+msgid "quotatotal"
+msgstr "Όριο"
+
+msgid "quotaused"
+msgstr "Χρησιμοποιημένα"
+
+msgid "quotastorage"
+msgstr "Χώρος στο δίσκο"
+
+msgid "quotamessage"
+msgstr "Πλήθος μηνυμάτων"
+
+msgid "shortheaderdate"
+msgstr "Στις $date"
+
+msgid "shortheaderto"
+msgstr "Προς τον/ην $to στις $date"
+
+msgid "shortheaderfrom"
+msgstr "Από τον/ην $from στις $date"
+
+msgid "quicksearch"
+msgstr "Γρήγορη Αναζήτηση"
+
+msgid "searchplaceholder"
+msgstr "Αναζήτηση..."
+
+msgid "resetsearch"
+msgstr "Επαναφορά Αναζήτησης"
+
+msgid "searchmod"
+msgstr "Aλλαγή αναζήτησης"
+
+msgid "msgtext"
+msgstr "Σε όλο το μήνυμα"
+
+msgid "body"
+msgstr "Σώμα"
+
+msgid "type"
+msgstr "Τυπος"
+
+msgid "namex"
+msgstr "όνομα"
+
+msgid "searchscope"
+msgstr "Εύρος"
+
+msgid "currentfolder"
+msgstr "Τρέχων φάκελος"
+
+msgid "subfolders"
+msgstr "Αυτός και υποφάκελοι"
+
+msgid "allfolders"
+msgstr "Όλοι οι φάκελοι"
+
+msgid "searchinterval-1W"
+msgstr "παλιότερο από μια εβδομάδα"
+
+msgid "searchinterval-1M"
+msgstr "παλιότερο από ενα μήνα"
+
+msgid "searchinterval-1Y"
+msgstr "παλιότερο από ένα έτος"
+
+msgid "searchinterval1W"
+msgstr "νεότερο από μια εβδομάδα"
+
+msgid "searchinterval1M"
+msgstr "νεότερο από ένα μήνα"
+
+msgid "searchinterval1Y"
+msgstr "νεότερο από ένα έτος"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Άνοιγμα σε νέο παράθυρο"
+
+msgid "emlsave"
+msgstr "Λήψη αρχείου (.eml)"
+
+msgid "changeformattext"
+msgstr "Εμφάνιση σε μορφή απλού κειμένου"
+
+msgid "changeformathtml"
+msgstr "Εμφάνιση σε μορφή HTML"
+
+msgid "editasnew"
+msgstr "Επεξεργασία σαν νέο"
+
+msgid "send"
+msgstr "Αποστολή"
+
+msgid "sendmessage"
+msgstr "Αποστολή μηνύματος"
+
+msgid "savemessage"
+msgstr "Αποθήκευση ως πρόχειρο"
+
+msgid "addattachment"
+msgstr "Επισύναψη αρχείου"
+
+msgid "charset"
+msgstr "Κωδικοποίηση χαρακτήρων"
+
+msgid "editortype"
+msgstr "Είδος επεξεργαστή κειμένου"
+
+msgid "returnreceipt"
+msgstr "Αναφορά Παράδοσης"
+
+msgid "dsn"
+msgstr "Κατάσταση αναφοράς παράδοσης"
+
+msgid "keepformatting"
+msgstr "Διατήρηση μορφοποίησης"
+
+msgid "mailreplyintro"
+msgstr "Στις $date, $sender έγραψε:"
+
+msgid "originalmessage"
+msgstr "Αρχικό μήνυμα"
+
+msgid "selectimage"
+msgstr "Επιλογή εικόνας"
+
+msgid "addimage"
+msgstr "Προσθήκη εικόνας"
+
+msgid "selectmedia"
+msgstr "Επιλογή ταινίας"
+
+msgid "addmedia"
+msgstr "Προσθήκη ταινίας"
+
+msgid "encrypt"
+msgstr "Κρυπτογράφηση"
+
+msgid "encryptmessage"
+msgstr "Κρυπτογράφηση μηνύματος"
+
+msgid "encryptmessagemailvelope"
+msgstr "Κρυπτογράφηση μηνύματος με το Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Εισαγωγή δημόσιων κλειδιών"
+
+msgid "encryptedsendialog"
+msgstr "Αποστέλλεται κρυπτογραφημένο μήνυμα"
+
+msgid "encryptandsign"
+msgstr "Κρυπτογράφηση και υπογραφή"
+
+msgid "keyid"
+msgstr "Ταυτότητα κλειδιού"
+
+msgid "keylength"
+msgstr "Bits"
+
+msgid "keyexpired"
+msgstr "Έχει λήξει"
+
+msgid "keyrevoked"
+msgstr "Έχει αποσυρθεί"
+
+msgid "bccinstead"
+msgstr "Χρήση Bcc"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Εισαγωγή"
+
+msgid "insertcontact"
+msgstr "Προσθήκη επαφής(-ων)"
+
+msgid "recipient"
+msgstr "Παραλήπτης"
+
+msgid "recipientedit"
+msgstr "Επεξεργασία παραληπτών"
+
+msgid "editidents"
+msgstr "Επεξεργασία ταυτοτήτων"
+
+msgid "spellcheck"
+msgstr "Συλλαβισμός"
+
+msgid "checkspelling"
+msgstr "Έλεγχος ορθογραφίας"
+
+msgid "resumeediting"
+msgstr "Συνέχεια επεξεργασίας"
+
+msgid "revertto"
+msgstr "Επαναφορά στο"
+
+msgid "restore"
+msgstr "Επαναφορά"
+
+msgid "restoremessage"
+msgstr "Επαναφορά μηνύματος;"
+
+msgid "ignore"
+msgstr "Παράβλεψη"
+
+msgid "responses"
+msgstr "Απαντήσεις"
+
+msgid "insertresponse"
+msgstr "Εισάγετε μια απάντηση"
+
+msgid "manageresponses"
+msgstr "Διαχείριση απαντήσεων"
+
+msgid "newresponse"
+msgstr "Δημιουργία νέας απάντησης"
+
+msgid "addresponse"
+msgstr "Προσθήκη απάντησης"
+
+msgid "editresponse"
+msgstr "Μεταβολή απάντησης"
+
+msgid "editresponses"
+msgstr "Μεταβολή απαντήσεων"
+
+msgid "responsename"
+msgstr "Όνομα"
+
+msgid "responsetext"
+msgstr "Κείμενο απάντησης"
+
+msgid "attach"
+msgstr "Επισύναψη"
+
+msgid "attachments"
+msgstr "Συνημμένα"
+
+msgid "upload"
+msgstr "Φόρτωση"
+
+msgid "uploadprogress"
+msgstr "$percent ($current από $total)"
+
+msgid "close"
+msgstr "Κλείσιμο"
+
+msgid "messageoptions"
+msgstr "Επιλογές μηνύματος"
+
+msgid "togglecomposeoptions"
+msgstr "Εναλλαγή επιλογών σύνθεσης"
+
+msgid "attachmentrename"
+msgstr "Μετονομασία συνημμένου"
+
+msgid "low"
+msgstr "Χαμηλή"
+
+msgid "lowest"
+msgstr "Χαμηλότερη"
+
+msgid "normal"
+msgstr "Κανονική"
+
+msgid "high"
+msgstr "Υψηλή"
+
+msgid "highest"
+msgstr "Μέγιστη δυνατή"
+
+msgid "nosubject"
+msgstr "(χωρίς θέμα)"
+
+msgid "showimages"
+msgstr "Προβολή εικόνων"
+
+msgid "allow"
+msgstr "Να επιτρέπεται"
+
+msgid "alwaysshow"
+msgstr "Να προβάλλονται πάντα οι εικόνες που αποστέλλονται από τον $sender"
+
+msgid "alwaysallow"
+msgstr "Να επιτρέπεται πάντα από τον/την $sender"
+
+msgid "isdraft"
+msgstr "Αυτό το μήνυμα έχει σημανθεί σαν πρόχειρο"
+
+msgid "andnmore"
+msgstr "$nr περισσότερα..."
+
+msgid "details"
+msgstr "Λεπτομέρειες"
+
+msgid "summary"
+msgstr "Συνοπτικά"
+
+msgid "headers"
+msgstr "Κεφαλίδες"
+
+msgid "allheaders"
+msgstr "Όλες οι κεφαλίδες..."
+
+msgid "togglemoreheaders"
+msgstr "Εμφάνιση περισσότερων κεφαλίδων"
+
+msgid "togglefullheaders"
+msgstr "Εμφάνιση ακατέργαστων κεφαλίδων μηνύματος"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Απλό κείμενο"
+
+msgid "savesentmessagein"
+msgstr "Αποθήκευση απεσταλμένου στο φάκελο"
+
+msgid "dontsave"
+msgstr "να μην αποθηκευθεί"
+
+msgid "maxuploadsize"
+msgstr "Το μέγιστο επιτρεπόμενο μέγεθος αρχείου είναι $size"
+
+msgid "addcc"
+msgstr "Προσθήκη Παραλήπτη Κοινοποίησης"
+
+msgid "addbcc"
+msgstr "Προσθήκη Παραλήπτη Κρυφής Κοινοποίησης"
+
+msgid "addreplyto"
+msgstr "Προσθήκη Απάντησης-Στο"
+
+msgid "addfollowupto"
+msgstr "Προσθήκη Σε συνέχεια του"
+
+msgid "sendreceipt"
+msgstr "Αποστολή αποδεικτικού ανάγνωσης;"
+
+msgid "mdnrequest"
+msgstr ""
+"Ο αποστολέας αυτού του μηνύματος, έχει ζητήσει να ειδοποιηθεί όταν θα το "
+"διαβάσετε. Θέλετε να επιτρέψετε την ενημέρωσή του;"
+
+msgid "receiptread"
+msgstr "Αναφορά παράδοσης (διαβάστε την)"
+
+msgid "yourmessage"
+msgstr "Αυτό είναι μια αναφορά παράδοσης για το μήνυμά σας"
+
+msgid "receiptnote"
+msgstr ""
+"Σημείωση: Αυτή η αναφορά επιβεβαιώνει μόνο ότι το μήνυμά σας εμφανίστηκε "
+"στον υπολογιστή του παραλήπτη. Δεν επιβεβαιώνει ότι ο παραλήπτης έχει "
+"διαβάσει ή έχει κατανοήσει το περιεχόμενό του."
+
+msgid "sendalwaysto"
+msgstr "Να αποστέλλεται πάντα στον/στην $email"
+
+msgid "zoomin"
+msgstr "Μεγέθυνση"
+
+msgid "zoomout"
+msgstr "Σμίκρυνση"
+
+msgid "rotate"
+msgstr "Περιστροφή"
+
+msgid "increaseimage"
+msgstr "Αύξηση μεγέθους εικόνας"
+
+msgid "decreaseimage"
+msgstr "Σμίκρυνση μεγέθους εικόνας"
+
+msgid "rotateimage"
+msgstr "Περιστροφή εικόνας"
+
+msgid "showtools"
+msgstr "Εμφάνιση εργαλείων εικόνας"
+
+msgid "hidetools"
+msgstr "Απόκρυψη εργαλείων εικόνας"
+
+msgid "name"
+msgstr "Εμφανιζόμενο όνομα"
+
+msgid "firstname"
+msgstr "Όνομα"
+
+msgid "surname"
+msgstr "Επώνυμο"
+
+msgid "middlename"
+msgstr "Πατρώνυμο"
+
+msgid "nameprefix"
+msgstr "Πρόθεμα"
+
+msgid "namesuffix"
+msgstr "Κατάληξη"
+
+msgid "nickname"
+msgstr "Ψευδώνυμο"
+
+msgid "jobtitle"
+msgstr "Τίτλος εργασίας"
+
+msgid "department"
+msgstr "Τμήμα"
+
+msgid "gender"
+msgstr "Φύλο"
+
+msgid "maidenname"
+msgstr "Πατρώνυμο"
+
+msgid "email"
+msgstr "E-Mail"
+
+msgid "phone"
+msgstr "Τηλέφωνο"
+
+msgid "address"
+msgstr "Διεύθυνση"
+
+msgid "street"
+msgstr "Οδός"
+
+msgid "locality"
+msgstr "Πόλη"
+
+msgid "zipcode"
+msgstr "ΤΚ"
+
+msgid "region"
+msgstr "Νομός"
+
+msgid "country"
+msgstr "Χώρα"
+
+msgid "birthday"
+msgstr "Ημερ/νία Γέννησης"
+
+msgid "anniversary"
+msgstr "Επέτειος"
+
+msgid "website"
+msgstr "Ιστοσελίδα"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Σημειώσεις"
+
+msgid "male"
+msgstr "άνδρας"
+
+msgid "female"
+msgstr "γυναίκα"
+
+msgid "nonbinary"
+msgstr "μη δυαδικό"
+
+msgid "othergender"
+msgstr "άλλο"
+
+msgid "manager"
+msgstr "Υπεύθυνος"
+
+msgid "assistant"
+msgstr "Υπάλληλος"
+
+msgid "spouse"
+msgstr "Σύζυγος"
+
+msgid "allfields"
+msgstr "Όλα τα πεδία"
+
+msgid "search"
+msgstr "Αναζήτηση"
+
+msgid "searchresult"
+msgstr "Αποτελέσματα αναζήτησης"
+
+msgid "advsearch"
+msgstr "Προηγμένη Αναζήτηση"
+
+msgid "advanced"
+msgstr "Προχωρημένες ρυθμίσεις"
+
+msgid "other"
+msgstr "Άλλα"
+
+msgid "printcontact"
+msgstr "Εκτύπωση επαφής"
+
+msgid "qrcode"
+msgstr "QR Code"
+
+msgid "typehome"
+msgstr "Οικία"
+
+msgid "typework"
+msgstr "Εργασία"
+
+msgid "typeother"
+msgstr "Άλλα"
+
+msgid "typemobile"
+msgstr "Κινητό"
+
+msgid "typemain"
+msgstr "Κύρια"
+
+msgid "typehomefax"
+msgstr "Φαξ οικίας"
+
+msgid "typeworkfax"
+msgstr "Φαξ εργασίας"
+
+msgid "typecar"
+msgstr "Αυτοκίνητο"
+
+msgid "typepager"
+msgstr "Βομβητής"
+
+msgid "typevideo"
+msgstr "Βίντεο"
+
+msgid "typeassistant"
+msgstr "Υπάλληλος"
+
+msgid "typehomepage"
+msgstr "Αρχική Σελίδα"
+
+msgid "typeblog"
+msgstr "Ιστολόγιο"
+
+msgid "typeprofile"
+msgstr "Προφίλ"
+
+msgid "addfield"
+msgstr "Προσθήκη πεδίου..."
+
+msgid "addcontact"
+msgstr "Προσθήκη επαφής"
+
+msgid "editcontact"
+msgstr "Επεξεργασία επαφής"
+
+msgid "contacts"
+msgstr "Επαφές"
+
+msgid "contactproperties"
+msgstr "Ιδιότητες επαφών"
+
+msgid "contactnameandorg"
+msgstr "Όνομα και οργανισμός"
+
+msgid "personalinfo"
+msgstr "Προσωπικές πληροφορίες"
+
+msgid "personal"
+msgstr "Προσωπικά"
+
+msgid "contactphoto"
+msgstr "Φωτογραφία επαφής"
+
+msgid "edit"
+msgstr "Επεξεργασία"
+
+msgid "cancel"
+msgstr "Ακύρωση"
+
+msgid "save"
+msgstr "Αποθήκευση"
+
+msgid "delete"
+msgstr "Διαγραφή"
+
+msgid "discard"
+msgstr "Διαγραφή"
+
+msgid "continue"
+msgstr "Συνέχεια"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Μετονομασία"
+
+msgid "addphoto"
+msgstr "Προσθήκη"
+
+msgid "replacephoto"
+msgstr "Αντικατάσταση"
+
+msgid "uploadphoto"
+msgstr "Φόρτωση εικόνας"
+
+msgid "choosefile"
+msgstr "Επιλέξτε αρχείο..."
+
+msgid "choosefiles"
+msgstr "Επιλέξτε αρχεία..."
+
+msgid "browse"
+msgstr "Περιήγηση"
+
+msgid "newcontact"
+msgstr "Δημιουργία νέας επαφής"
+
+msgid "deletecontact"
+msgstr "Διαγραφή επιλεγμένων επαφών"
+
+msgid "composeto"
+msgstr "Σύνθεση μηνύματος προς"
+
+msgid "contactsfromto"
+msgstr "Επαφή $from από $to έως $count"
+
+msgid "print"
+msgstr "Εκτύπωση"
+
+msgid "export"
+msgstr "Εξαγωγή"
+
+msgid "exportall"
+msgstr "Εξαγωγή όλων"
+
+msgid "exportsel"
+msgstr "Εξαγωγή επιλεγμένων"
+
+msgid "exportvcards"
+msgstr "Εξαγωγή επαφών σε vCard"
+
+msgid "newgroup"
+msgstr "Δημιουργία νέας ομάδας"
+
+msgid "addgroup"
+msgstr "Προσθήκη ομάδας"
+
+msgid "grouprename"
+msgstr "Μετονομασία ομάδας"
+
+msgid "groupdelete"
+msgstr "Διαγραφή ομάδας"
+
+msgid "groupassign"
+msgstr "Εκχώρηση στην ομάδα..."
+
+msgid "groupremove"
+msgstr "Κατάργηση από την ομάδα..."
+
+msgid "groupremoveselected"
+msgstr "Αφαίρεση επιλεγμένων επαφών από την ομάδα"
+
+msgid "uponelevel"
+msgstr "Πάνω ένα επίπεδο"
+
+msgid "previouspage"
+msgstr "Εμφάνιση προηγούμενης σελίδας"
+
+msgid "firstpage"
+msgstr "Εμφάνιση της πρώτης σελίδας"
+
+msgid "nextpage"
+msgstr "Εμφάνιση επόμενης σελίδας"
+
+msgid "lastpage"
+msgstr "Εμφάνιση της τελευταίας σελίδας"
+
+msgid "group"
+msgstr "Ομάδα"
+
+msgid "groups"
+msgstr "Ομάδες"
+
+msgid "listgroup"
+msgstr "Μέλη της ομάδας λίστας"
+
+msgid "personaladrbook"
+msgstr "Προσωπικές Διευθύνσεις"
+
+msgid "searchsave"
+msgstr "Αποθήκευση αναζήτησης"
+
+msgid "searchdelete"
+msgstr "Διαγραφή αποθηκευμένης αναζήτησης"
+
+msgid "import"
+msgstr "Εισαγωγή"
+
+msgid "importcontacts"
+msgstr "Εισαγωγή επαφών"
+
+msgid "importfromfile"
+msgstr "Εισαγωγή από αρχείο"
+
+msgid "importtarget"
+msgstr "Προσθήκη επαφών σε"
+
+msgid "importreplace"
+msgstr "Αντικατάσταση όλου του βιβλίου διευθύνσεων"
+
+msgid "importgroups"
+msgstr "Εισαγωγή αναθέσεων ομάδων"
+
+msgid "importgroupsall"
+msgstr "Όλα (δημιουργία ομάδων αν είναι απαραίτητο)"
+
+msgid "importgroupsexisting"
+msgstr "Μόνο για υπάρχουσες ομάδες"
+
+msgid "importdesc"
+msgstr ""
+"Μπορείτε να μεταφορτώσετε επαφές από ένα υπάρχον ευρετήριο.<br/>Προς το "
+"παρόν υποστηρίζουμε την εισαγωγή διευθύνσεων με μορφή <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> ή CSV (διαχωρισμένες "
+"με κόμμα)."
+
+msgid "importmapdesc"
+msgstr ""
+"Επιβεβαιώστε ότι οι παρακάτω πληροφορίες αντιστοίχισης πεδίων είναι σωστές "
+"πριν προχωρήσετε στην εισαγωγή δεδομένων CSV (διαχωρισμένα με κόμμα)."
+
+msgid "fieldnotmapped"
+msgstr "Πεδίο χωρίς αντιστοίχιση (να μην εισαχθεί)"
+
+msgid "skipheader"
+msgstr "Να μην εισαχθεί η πρώτη γραμμή (κεφαλίδα)"
+
+msgid "done"
+msgstr "Ολοκληρώθηκε"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Ρυθμίσεις για"
+
+msgid "about"
+msgstr "Σχετικά"
+
+msgid "preferences"
+msgstr "Προτιμήσεις"
+
+msgid "userpreferences"
+msgstr "Προτιμήσεις χρήστη"
+
+msgid "editpreferences"
+msgstr "Επεξεργασία προτιμήσεων χρήστη"
+
+msgid "identities"
+msgstr "Ταυτότητες"
+
+msgid "manageidentities"
+msgstr "Διαχείριση ταυτοτήτων"
+
+msgid "newidentity"
+msgstr "Δημιουργία νέας ταυτότητας"
+
+msgid "addidentity"
+msgstr "Προσθήκη ταυτότητας"
+
+msgid "editidentity"
+msgstr "Επεξεργασία ταυτότητας"
+
+msgid "identityencryption"
+msgstr "Κρυπτογράφηση"
+
+msgid "preferhtml"
+msgstr "Προβολή σε HTML"
+
+msgid "defaultcharset"
+msgstr "Προεπιλεγμένη κωδικοποίηση χαρακτήρων"
+
+msgid "htmlmessage"
+msgstr "Μήνυμα σε μορφή HTML"
+
+msgid "messagepart"
+msgstr "Μέρος"
+
+msgid "digitalsig"
+msgstr "Ψηφιακή Υπογραφή"
+
+msgid "dateformat"
+msgstr "Μορφή ημερομηνίας"
+
+msgid "timeformat"
+msgstr "Μορφή ώρας"
+
+msgid "prettydate"
+msgstr "Κομψή ημερ/νία"
+
+msgid "setdefault"
+msgstr "Ορισμός ως προεπιλογή"
+
+msgid "autodetect"
+msgstr "Αυτόματα"
+
+msgid "language"
+msgstr "Γλώσσα"
+
+msgid "timezone"
+msgstr "Ζώνη Ώρας"
+
+msgid "pagesize"
+msgstr "Γραμμές ανά σελίδα"
+
+msgid "signature"
+msgstr "Υπογραφή"
+
+msgid "dstactive"
+msgstr "Θερινή ώρα"
+
+msgid "showinextwin"
+msgstr "Άνοιγμα μηνύματος σε νέο παράθυρο"
+
+msgid "composeextwin"
+msgstr "Σύνθεση μηνύματος σε νέο παράθυρο"
+
+msgid "htmleditor"
+msgstr "Δημιουργία μηνύματος σε μορφή HTML"
+
+msgid "htmlonreply"
+msgstr "μόνο σε απάντηση μηνύματος μορφής HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "σε προώθηση ή σε απάντηση σε HTML μήνυμα"
+
+msgid "htmlsignature"
+msgstr "Υπογραφή HTML"
+
+msgid "showemail"
+msgstr "Εμφάνιση διεύθυνσης e-mail με το εμφανιζόμενο όνομα"
+
+msgid "previewpane"
+msgstr "Εμφάνιση προεπισκόπησης"
+
+msgid "skin"
+msgstr "Θέμα εμφάνισης"
+
+msgid "logoutclear"
+msgstr "Άδειασμα του κάδου στην έξοδο"
+
+msgid "logoutcompact"
+msgstr "Συμπίεση φακέλου εισερχομένων στην έξοδο"
+
+msgid "uisettings"
+msgstr "Περιβάλλον χρήστη"
+
+msgid "serversettings"
+msgstr "Ρυθμίσεις διακομιστή"
+
+msgid "mailboxview"
+msgstr "Προβολή Μηνυμάτων"
+
+msgid "mdnrequests"
+msgstr "Όταν ο αποστολέας έχει ζητήσει αναφορά παράδοσης"
+
+msgid "askuser"
+msgstr "ρώτησέ με"
+
+msgid "autosend"
+msgstr "στείλε αυτόματα την απόδειξη παραλαβής"
+
+msgid "autosendknown"
+msgstr ""
+"στείλε αυτόματα αποδείξεις παραλαβής σε όσους έχω στις επαφές, για τους "
+"άλλους ρώτα με"
+
+msgid "autosendknownignore"
+msgstr ""
+"στείλε αυτόματα αποδείξεις παραλαβής σε όσους έχω στις επαφές, για τους "
+"άλλους καμιά ενέργεια"
+
+msgid "autosendtrusted"
+msgstr "αποστολή απόδειξης σε έμπιστους αποστολείς, αλλιώς να ερωτηθώ"
+
+msgid "autosendtrustedignore"
+msgstr "αποστολή απόδειξης σε έμπιστους αποστολείς, αλλιώς να αγνοηθεί"
+
+msgid "ignorerequest"
+msgstr "παράβλεψη αιτήματος"
+
+msgid "readwhendeleted"
+msgstr "Κατά τη διαγραφή του μηνύματος, μαρκάρισέ το σαν αναγνωσμένο"
+
+msgid "flagfordeletion"
+msgstr "Αντί να το διαγράψεις, απλά και μόνο σημείωσέ το"
+
+msgid "skipdeleted"
+msgstr "Να μην εμφανίζονται τα διαγραμμένα μηνύματα"
+
+msgid "deletealways"
+msgstr "αν η μετακίνηση στον κάδο αποτύχει, διέγραψέ τα"
+
+msgid "deletejunk"
+msgstr "Άμεση διαγραφή μηνυμάτων στα Ανεπιθύμητα"
+
+msgid "showremoteimages"
+msgstr "Να εμφανίζονται οι εικόνες που έχουν αποσταλεί σε συνδέσμους"
+
+msgid "allowremoteresources"
+msgstr "Να επιτρέπονται οι απομακρυσμένοι πόροι (εικόνες, ύφος)"
+
+msgid "fromknownsenders"
+msgstr "από γνωστούς αποστολείς"
+
+msgid "fromtrustedsenders"
+msgstr "από έμπιστους αποστολείς"
+
+msgid "frommycontacts"
+msgstr "από τις επαφές μου"
+
+msgid "always"
+msgstr "πάντα"
+
+msgid "alwaysbutplain"
+msgstr "πάντα, εκτός όταν απαντάω σε απλό κείμενο"
+
+msgid "showinlineimages"
+msgstr "Οι συνημμένες εικόνες να προβάλλονται στο τέλος του μηνήματος"
+
+msgid "autosavedraft"
+msgstr "Να γίνεται αυτόματη αποθήκευση σαν πρόχειρο"
+
+msgid "everynminutes"
+msgstr "κάθε $n λεπτό/α"
+
+msgid "refreshinterval"
+msgstr "Επαναφόρτωση (έλεγχος για νέα μηνύματα, κλπ.)"
+
+msgid "never"
+msgstr "ποτέ"
+
+msgid "immediately"
+msgstr "άμεσα"
+
+msgid "messagesdisplaying"
+msgstr "Προβολή Μηνυμάτων"
+
+msgid "messagescomposition"
+msgstr "Δημιουργία Μηνυμάτων"
+
+msgid "mimeparamfolding"
+msgstr "Ονόματα συνημμένων αρχείων"
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (μορφή Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (μορφή MS Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (άλλη μορφή)"
+
+msgid "force7bit"
+msgstr "Να γίνεται χρήση της κωδικοποίησης MIME για τους χαρακτήρες 8-bit"
+
+msgid "savelocalstorage"
+msgstr "Προσωρινή αποθήκευση στην τοπική αποθήκη του περιηγητή"
+
+msgid "advancedoptions"
+msgstr "Προχωρημένες επιλογές"
+
+msgid "toggleadvancedoptions"
+msgstr "Εναλλαγή προχωρημένων επιλογών"
+
+msgid "focusonnewmessage"
+msgstr "Τα νέα μηνύματα να επιλέγονται αυτόματα"
+
+msgid "checkallfolders"
+msgstr "Να γίνεται έλεγχος σε όλους τους φακέλους για νέα μηνύματα"
+
+msgid "displaynext"
+msgstr "Εμφάνιση της επόμενης καταχώρησης μετά τη διαγραφή/μετακίνηση"
+
+msgid "defaultfont"
+msgstr "Προεπιλεγμένη γραμματοσειρά για τα μηνύματα μορφής HTML"
+
+msgid "mainoptions"
+msgstr "Βασικές επιλογές"
+
+msgid "browseroptions"
+msgstr "Επιλογές περιηγητή"
+
+msgid "section"
+msgstr "Ενότητα"
+
+msgid "maintenance"
+msgstr "Συντήρηση"
+
+msgid "newmessage"
+msgstr "Νέο Μήνυμα"
+
+msgid "signatureoptions"
+msgstr "Επιλογές υπογραφής"
+
+msgid "whenreplying"
+msgstr "Στις απαντήσεις"
+
+msgid "replyempty"
+msgstr "χωρίς παράθεση του αρχικού μηνύματος"
+
+msgid "replytopposting"
+msgstr "το νέο μήνυμα να είναι πάνω από το αρχικό"
+
+msgid "replytoppostingnoindent"
+msgstr "εμφάνιση του νέου μηνύματος πάνω από το αρχικό (χωρίς εσοχή)"
+
+msgid "replybottomposting"
+msgstr "το νέο μήνυμα να είναι κάτω από το αρχικό"
+
+msgid "replyremovesignature"
+msgstr ""
+"Όταν το μήνυμα είναι απάντηση, να αφαιρείται η υπογραφή του αρχικού "
+"μηνύματος"
+
+msgid "autoaddsignature"
+msgstr "Η υπογραφή να προστίθεται αυτόματα"
+
+msgid "newmessageonly"
+msgstr "μόνο στα νέα μηνύματα"
+
+msgid "replyandforwardonly"
+msgstr "μόνο στις απαντήσεις και προωθήσεις"
+
+msgid "insertsignature"
+msgstr "Προσθήκη υπογραφής"
+
+msgid "sigbelow"
+msgstr "Τοποθέτηση υπογραφής κάτω από το παρατιθέν μήνυμα"
+
+msgid "sigseparator"
+msgstr "Εξαναγκασμός προκαθορισμένου διαχωριστικού στις υπογραφές"
+
+msgid "automarkread"
+msgstr "Επισήμανση ως αναγνωσμένα"
+
+msgid "afternseconds"
+msgstr "μετά από $n δευτερόλεπτα"
+
+msgid "reqmdn"
+msgstr "Να γίνεται πάντα αίτηση για αναφορά απάντησης"
+
+msgid "reqdsn"
+msgstr "Να γίνεται πάντα αίτηση για αναφορά παράδοσης"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Τα μηνύματα που είναι απαντήσεις να τοποθετούνται σε ξεχωριστό φάκελο"
+
+msgid "defaultabook"
+msgstr "Προκαθορισμένο βιβλίο διευθύνσεων"
+
+msgid "autocompletesingle"
+msgstr ""
+"Να μην χρησιμοποιούνται οι εναλλακτικές διευθύνσεις κατά την αυτόματη "
+"συμπλήρωση"
+
+msgid "listnamedisplay"
+msgstr "Εμφάνιση επαφών ως"
+
+msgid "contactformmode"
+msgstr "Μορφή φόρμας επικοινωνίας"
+
+msgid "privatemode"
+msgstr "Προσωπικό (Οικίας)"
+
+msgid "businessmode"
+msgstr "Επαγγελματικό (Εργασίας)"
+
+msgid "collectedaddresses"
+msgstr "Συλλεχθείσες διευθύνσεις"
+
+msgid "collectedrecipients"
+msgstr "Συλλεγέντες Παραλήπτες"
+
+msgid "collectedrecipientsopt"
+msgstr "Αποθήκευση παραληπτών εξερχομένων email σε"
+
+msgid "collectedsendersopt"
+msgstr "Αποθήκευση έμπιστων αποστολέων σε"
+
+msgid "trustedsenders"
+msgstr "Έμπιστοι Αποστολείς"
+
+msgid "spellcheckbeforesend"
+msgstr "Να γίνεται πάντα έλεγχος ορθογραφίας πριν την αποστολή του μηνύματος"
+
+msgid "spellcheckoptions"
+msgstr "Επιλογές Ορθογραφικού ελέγχου"
+
+msgid "spellcheckignoresyms"
+msgstr "Οι λέξεις που περιέχουν σύμβολα να αγνοούνται"
+
+msgid "spellcheckignorenums"
+msgstr "Οι λέξεις που περιέχουν αριθμούς να αγνοούνται"
+
+msgid "spellcheckignorecaps"
+msgstr "Οι λέξεις γραμμένες με ΚΕΦΑΛΑΙΑ να αγνοούνται"
+
+msgid "addtodict"
+msgstr "Προσθήκη στο λεξικό"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Καταχώρηση διαχείρισης πρωτοκόλλου δεσμών mailto:"
+
+msgid "standardwindows"
+msgstr "Χειριστείτε τα αναδυόμενα παράθυρα ως πρότυπο των Windows"
+
+msgid "forwardmode"
+msgstr "Προώθηση μηνυμάτων"
+
+msgid "inline"
+msgstr "με ενσωμάτωση"
+
+msgid "asattachment"
+msgstr "σαν επισύναψη"
+
+msgid "replyallmode"
+msgstr "Προεπιλεγμένη ενέργεια του κουμπιού [Απάντηση σε όλους]"
+
+msgid "replyalldefault"
+msgstr "απάντηση σε όλους"
+
+msgid "replyalllist"
+msgstr "Απάντηση μόνο σε λίστα e-mail (αν υπάρχει)"
+
+msgid "allmessages"
+msgstr "όλα τα μηνύματα"
+
+msgid "olderxdays"
+msgstr "άνω των $x ημερών"
+
+msgid "folder"
+msgstr "Φάκελος"
+
+msgid "folders"
+msgstr "Φάκελοι"
+
+msgid "foldername"
+msgstr "Όνομα φακέλου"
+
+msgid "subscribed"
+msgstr "Εγγεγραμμένος"
+
+msgid "messagecount"
+msgstr "Μηνύματα"
+
+msgid "create"
+msgstr "Δημιουργία"
+
+msgid "createfolder"
+msgstr "Δημιουργία νέου φακέλου"
+
+msgid "managefolders"
+msgstr "Διαχείριση φακέλων"
+
+msgid "specialfolders"
+msgstr "Ειδικοί Φάκελοι"
+
+msgid "properties"
+msgstr "Ιδιότητες"
+
+msgid "folderproperties"
+msgstr "Ιδιότητες φακέλου"
+
+msgid "parentfolder"
+msgstr "Γονικός φάκελος"
+
+msgid "location"
+msgstr "Τοποθεσία"
+
+msgid "info"
+msgstr "Πληροφορίες"
+
+msgid "getfoldersize"
+msgstr "Κάντε κλικ εδώ για να δείτε το μέγεθος του φακέλου"
+
+msgid "changesubscription"
+msgstr "Κάντε κλικ εδώ για να αλλάξετε τη συνδρομή σας"
+
+msgid "foldertype"
+msgstr "Τύπος φακέλου"
+
+msgid "personalfolder"
+msgstr "Προσωπικός φάκελος"
+
+msgid "otherfolder"
+msgstr "Φάκελοι άλλων χρηστών"
+
+msgid "sharedfolder"
+msgstr "Κοινόχρηστος φάκελος"
+
+msgid "findfolders"
+msgstr "Εύρεση φακέλων"
+
+msgid "findcontacts"
+msgstr "Εύρεση επαφών"
+
+msgid "findmail"
+msgstr "Εύρεση αλληλογραφίας"
+
+msgid "namespace.personal"
+msgstr "Προσωπικά"
+
+msgid "namespace.other"
+msgstr "Άλλοι χρήστες"
+
+msgid "namespace.shared"
+msgstr "Διαμοιρασμένος"
+
+msgid "dualuselabel"
+msgstr "Δύναται να περιέχει μόνο"
+
+msgid "dualusemail"
+msgstr "μηνύματα"
+
+msgid "dualusefolder"
+msgstr "φάκελοι"
+
+msgid "generate"
+msgstr "Δημιουργία"
+
+msgid "encryptioncreatekey"
+msgstr "Δημιουργία νέου ζεύγους κλειδιού"
+
+msgid "openmailvelopesettings"
+msgstr "Άνοιγμα Ρυθμίσεων Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Έχετε $nr παρόμοια ιδιωτικά κλειδιά αποθηκευμένα στην κλειδοθήκη Mailvelope:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Ο παρών αποστολέας δεν έχει ακόμη ιδιωτικό κλειδί PGP αποθηκευμένο στην "
+"επέκταση Mailvelope σας. Θα θέλατε να δημιουργήσετε ένα ώστε ενεργοποιήσετε "
+"την κρυπτογραφημένη ανταλλαγή μηνυμάτων;"
+
+msgid "encryption"
+msgstr "Κρυπτογράφηση"
+
+msgid "mailvelopeoptions"
+msgstr "Ρυθμίσεις Mailvelope"
+
+msgid "mailvelopemainkeyring"
+msgstr "Χρήση κύριας κλειδοθήκης Mailvelope"
+
+msgid "mailvelopenotfound"
+msgstr ""
+"Η επέκταση Mailvelope δεν είναι ενεργοποιημένη/εγκατεστημένη στον browser "
+"σας."
+
+msgid "mailvelopeenable"
+msgstr "Ενεργοποίηση"
+
+msgid "sortby"
+msgstr "Ταξινόμηση κατά"
+
+msgid "sortasc"
+msgstr "Αύξουσα ταξινόμηση"
+
+msgid "sortdesc"
+msgstr "Φθίνουσα ταξινόμηση"
+
+msgid "undo"
+msgstr "Αναίρεση"
+
+msgid "installedplugins"
+msgstr "Εγκατεστημένα πρόσθετα"
+
+msgid "plugin"
+msgstr "Πρόσθετο"
+
+msgid "version"
+msgstr "Έκδοση"
+
+msgid "source"
+msgstr "Προέλευση"
+
+msgid "destination"
+msgstr "Προορισμός"
+
+msgid "license"
+msgstr "Άδεια χρήσης"
+
+msgid "skinauthor"
+msgstr "με βάση το $author"
+
+msgid "support"
+msgstr "Υποστήριξη"
+
+msgid "savedsearches"
+msgstr "Αποθηκευμένες αναζητήσεις"
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Αγγλικά"
+
+msgid "westerneuropean"
+msgstr "Δυτικής Ευρώπης"
+
+msgid "easterneuropean"
+msgstr "Ανατολικής Ευρώπης"
+
+msgid "southeasterneuropean"
+msgstr "Νοτιο-Ανατολικής Ευρώπης"
+
+msgid "baltic"
+msgstr "Βαλτικής"
+
+msgid "cyrillic"
+msgstr "Κυριλλικά"
+
+msgid "arabic"
+msgstr "Αραβικά"
+
+msgid "greek"
+msgstr "Ελληνικά"
+
+msgid "hebrew"
+msgstr "Εβραϊκά"
+
+msgid "turkish"
+msgstr "Τουρκικά"
+
+msgid "nordic"
+msgstr "Σκανδιναβικά"
+
+msgid "thai"
+msgstr "Ταϊλανδέζικα"
+
+msgid "celtic"
+msgstr "Κελτικά"
+
+msgid "vietnamese"
+msgstr "Βιετναμέζικα"
+
+msgid "japanese"
+msgstr "Ιαπωνικά"
+
+msgid "korean"
+msgstr "Κορεατικά"
+
+msgid "chinese"
+msgstr "Κινεζικά"
+
+msgid "arialabeltopnav"
+msgstr "Έλεγχος παραθύρου"
+
+msgid "arialabeltasknav"
+msgstr "Εργασίες εφαρμογής"
+
+msgid "arialabeltoolbar"
+msgstr "Μπάρα εργαλείων εφαρμογής"
+
+msgid "arialabellistnav"
+msgstr "Πλοήγηση λίστας"
+
+msgid "arialabelactivetask"
+msgstr "Ενεργή εργασία"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Φίλτρο λίστας αλληλογραφίας"
+
+msgid "arialabelmailsearchform"
+msgstr "Φόρμα αναζήτησης μηνύματος e-mail"
+
+msgid "arialabelcontactsearchform"
+msgstr "Φόρμα αναζήτησης επαφών"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Πεδίο αναζήτησης e-mail"
+
+msgid "arialabelquicksearchbox"
+msgstr "Αναζήτηση εισόδου"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Φίλτρο λίστας φακέλων"
+
+msgid "arialabelfoldersearchform"
+msgstr "Φόρμα αναζήτησης φακέλων"
+
+msgid "arialabelfolderlist"
+msgstr "Επιλογή καταλόγου e-mail"
+
+msgid "arialabelmessagelist"
+msgstr "Λίστα μηνυμάτων e-mail"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Προεπισκόπηση μηνύματος"
+
+msgid "arialabelmailboxmenu"
+msgstr "Μενού ενεργειών φακέλων"
+
+msgid "arialabellistselectmenu"
+msgstr "Μενού επιλογής λίστας"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Μενού λίστας θεμάτων"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Εμφάνιση λίστας μηνυμάτων και επιλογές ταξινόμησης"
+
+msgid "arialabelmailimportdialog"
+msgstr "Διάλογος εισαγωγής μηνύματος"
+
+msgid "arialabelmessagenav"
+msgstr "Πλοήγηση μηνύματος"
+
+msgid "arialabelmessagebody"
+msgstr "Σώμα μηνύματος"
+
+msgid "arialabelmessageactions"
+msgstr "Ενέργειες μηνύματος"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Φόρμα αναζήτησης επαφών"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Πεδίο αναζήτησης επαφής"
+
+msgid "arialabelmessageheaders"
+msgstr "Κεφαλίδες μηνυμάτων"
+
+msgid "arialabelforwardingoptions"
+msgstr "Επιλογές προώθησης"
+
+msgid "arialabelreplyalloptions"
+msgstr "Επιλογές απάντησης προς όλους"
+
+msgid "arialabelmoremessageactions"
+msgstr "Περισσότερες ενέργειες μηνύματος"
+
+msgid "arialabelmorecontactactions"
+msgstr "Περισσότερες ενέργειες επαφών"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Σήμανση επιλεγμένων μηνυμάτων ως..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Επιλογές σύνθεσης"
+
+msgid "arialabelresponsesmenu"
+msgstr "Μενού έτοιμων απαντήσεων"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Φόρμα μεταφόρτωσης συνημμένων"
+
+msgid "arialabelattachmentmenu"
+msgstr "Επιλογές συνημμένων"
+
+msgid "arialabelmailtomenu"
+msgstr "Επιλογές διεύθυνσης email"
+
+msgid "arialabelattachmentpreview"
+msgstr "Προεπισκόπηση συνημμένων"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Επιλογή ως παραλήπτες από λίστα επαφών και ομάδων"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Επιλογές εξαγωγής επαφών"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Επιλογές βιβλίου διευθύνσεων/ομάδων"
+
+msgid "arialabelpreferencesform"
+msgstr "Φόρμα προτιμήσεων"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Φόρμα επεξεργασίας ταυτότητας"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Φόρμα επεξεργασίας απάντησης"
+
+msgid "arialabelsearchterms"
+msgstr "Όροι αναζήτησης"
+
+msgid "arialabeldropactionmenu"
+msgstr "Drag-n-Drop μενού ενεργειών"
+
+msgid "arialabelheadersmenu"
+msgstr "Μενού προσθήκης παραληπτών (κεφαλίδα)"
+
+msgid "arialabelimagetools"
+msgstr "Εργαλεία εικόνας"
+
+msgid "helplistnavigation"
+msgstr "Εμφάνιση πλοήγησης πληκτρολογίου"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Βέλη πάνω/κάτω: Μετακίνηση εστίασης/επιλογής γραμμής.\n"
+"Διάστημα: Επιλογή εστιασμένης γραμμής.\n"
+"Shift + Βέλος πάνω/κάτω: Επιλογή επιπλέον γραμμής πάνω/κάτω.\n"
+"Ctrl + Διάστημα: Προσθήκη/αφαίρεση εστιασμένης γραμμής στα επιλεγμένα."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Βέλη αριστερά/δεξιά: εμφάνιση/απόκρυψη νήματος μηνυμάτων (μόνο στη λειτουργία νήματος).\n"
+"Enter: Άνοιγμα επιλεγμένου/εστιασμένου μηνύματος.\n"
+"Διαγραφή: Μετακίνηση επιλεγμένων μηνυμάτων στα Διεγραμμένα."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Άνοιγμα της επιλεγμένης/εστιασμένης επαφής."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Έχει προκύψει κάποιο σφάλμα!"
+
+msgid "messages.loginfailed"
+msgstr "Η είσοδος απέτυχε."
+
+msgid "messages.cookiesdisabled"
+msgstr "Ο περιηγητής σας (browser) δεν αποδέχεται cookies."
+
+msgid "messages.sessionerror"
+msgstr "Η συνεδρία σας είναι άκυρη ή έχει λήξει."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Εντοπίστηκε αναντιστοιχία στα cookies. Παρακαλούμε καθαρίστε τα cookies του "
+"περιηγητή σας."
+
+msgid "messages.storageerror"
+msgstr "Η σύνδεση με το διακομιστή αποθήκευσης απέτυχε."
+
+msgid "messages.servererror"
+msgstr "Σφάλμα του εξυπηρετητή!"
+
+msgid "messages.servererrormsg"
+msgstr "Σφάλμα εξυπηρετητή: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+"Πάρα πολλές αποτυχημένες προσπάθειες σύνδεσης. Δοκιμάστε ξανά αργότερα."
+
+msgid "messages.connerror"
+msgstr "Σφάλμα σύνδεσης (Αποτυχία πρόσβασης στον διακομιστή)!"
+
+msgid "messages.dberror"
+msgstr "Σφάλμα βάσης δεδομένων!"
+
+msgid "messages.dbconnerror"
+msgstr "Αδυναμία σύνδεσης με τη βάση δεδομένων!"
+
+msgid "messages.windowopenerror"
+msgstr "Το αναδυόμενο παράθυρο αποκλείστηκε!"
+
+msgid "messages.requesttimedout"
+msgstr "Το αίτημα εξέπνευσε χρονικά"
+
+msgid "messages.errorreadonly"
+msgstr ""
+"Η διαδικασία δεν μπορεί να ολοκληρωθεί. Ο φάκελος είναι μόνο για ανάγνωση."
+
+msgid "messages.errornoperm"
+msgstr "Η διαδικασία δεν μπορεί να ολοκληρωθεί. Άρνηση πρόσβασης."
+
+msgid "messages.erroroverquota"
+msgstr ""
+"Δεν είναι δυνατή η εκτέλεση της λειτουργίας. Δεν υπάρχει ελεύθερος χώρος στο"
+" δίσκο."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Δεν υπάρχει ελεύθερος χώρος στο δίσκο. Χρησιμοποιήστε το συνδυασμό πλήκτρων "
+"SHIFT+DEL για να διαγράψετε μηνύματα."
+
+msgid "messages.invalidrequest"
+msgstr "Λανθασμένο αίτημα! Δεν αποθηκεύτηκαν δεδομένα."
+
+msgid "messages.invalidhost"
+msgstr "Άκυρο όνομα εξυπηρετητή."
+
+msgid "messages.nomessagesfound"
+msgstr "Δεν βρέθηκαν μηνύματα σε αυτή τη θυρίδα."
+
+msgid "messages.loggedout"
+msgstr "Έχετε αποσυνδεθεί επιτυχώς. Καλή συνέχεια!"
+
+msgid "messages.mailboxempty"
+msgstr "Η θυρίδα είναι άδεια"
+
+msgid "messages.nomessages"
+msgstr "Δεν υπάρχουν μηνύματα"
+
+msgid "messages.refreshing"
+msgstr "Ανανέωση...."
+
+msgid "messages.loading"
+msgstr "Φόρτωση..."
+
+msgid "messages.uploading"
+msgstr "Το αρχείο φορτώνεται..."
+
+msgid "messages.attaching"
+msgstr "Το αρχείο επισυνάπτεται..."
+
+msgid "messages.uploadingmany"
+msgstr "Φόρτωση αρχείων..."
+
+msgid "messages.loadingdata"
+msgstr "Φόρτωση δεδομένων..."
+
+msgid "messages.checkingmail"
+msgstr "Έλεγχος για νέα μηνύματα..."
+
+msgid "messages.sendingmessage"
+msgstr "Αποστολή μηνύματος..."
+
+msgid "messages.messagesent"
+msgstr "Μήνυμα εστάλη επιτυχώς."
+
+msgid "messages.savingmessage"
+msgstr "Αποθήκευση μηνύματος..."
+
+msgid "messages.messagesaved"
+msgstr "Το μήνυμα αποθηκεύτηκε στα Πρόχειρα."
+
+msgid "messages.successfullysaved"
+msgstr "Αποθηκεύτηκε επιτυχώς."
+
+msgid "messages.savingresponse"
+msgstr "Αποθήκευση του κειμένου απάντησης..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το κείμενο απάντησης;"
+
+msgid "messages.nocontactselected"
+msgstr "Δεν έχετε επιλέξει κάποια επαφή ακόμα."
+
+msgid "messages.addedsuccessfully"
+msgstr "Η επαφή προστέθηκε επιτυχώς στο βιβλίο επαφών."
+
+msgid "messages.contactexists"
+msgstr ""
+"Υπάρχει ήδη μια επαφή με την ίδια διεύθυνση ηλεκτρονικού ταχυδρομείου."
+
+msgid "messages.contactnameexists"
+msgstr "Υπάρχει ήδη μια επαφή με το ίδιο όνομα."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Για να προστατευτεί το απόρρητο σας, οι απομακρυσμένες εικόνες έχουν "
+"απενεργοποιηθεί σε αυτό το μήνυμα."
+
+msgid "messages.blockedresources"
+msgstr ""
+"Για την προστασία της ιδιωτικότητάς σας, κάποιοι απομακρυσμένοι πόροι έχουν "
+"μπλοκαριστεί."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Το παρόν μήνυμα περιέχει ύποπτες διευθύνσεις email που μπορεί να είναι "
+"κακόβουλες."
+
+msgid "messages.bccemail"
+msgstr ""
+"Το(τα) προωθούμενο(-α) μήνυμα(-τα) περιέχει(-ουν) κρυφούς παραλήπτες (Bcc)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Το μήνυμα θα αποσταλεί χωρίς καμία τροποποίηση, δηλ. με το αρχικό σώμα, τις "
+"αρχικές επικεφαλίδες και τους αρχικους παραλήπτες."
+
+msgid "messages.encryptedmessage"
+msgstr ""
+"Αυτό το μήνυμα είναι κρυπτογραφημένο και δε μπορεί να προβληθεί. Συγγνώμη!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Αυτό είναι ένα κρυπτογραφημένο μήνυμα και μπορεί να αποκρυπτογραφηθεί με την"
+" επέκταση του προγράμματος περιήγησης σας."
+
+msgid "messages.nopubkeyfor"
+msgstr "Δε βρέθηκε έγκυρο δημόσιο κλειδί για το $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Δεν βρέθηκε ισχύον δημόσιο κλειδί  για την ταυτότητα αποστολέα σας. Θέλετε "
+"να κρυπτογραφήσετε το μήνυμα μόνο για τους αποδέκτες;"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Τα ήδη ανεβασμένα συνημμένα δεν μπορούν να κρυπτογραφηθούν. Παρακαλώ "
+"προσθέστε τα ξανά στον επεξεργαστή κρυπτογράφησης."
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"Θέλετε να αναζητήσετε τους διακομιστές δημόσιου κλειδιού για τα κλειδιά που "
+"λείπουν;"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Βρέθηκαν τα ακόλουθα δημόσια κλειδιά:"
+
+msgid "messages.keyservererror"
+msgstr "Αποτυχία λήψης κλειδιού από τον διακομιστή κλειδιών."
+
+msgid "messages.keyimportsuccess"
+msgstr "Το δημόσιο κλειδί $key εισήχθη επιτυχώς στη λίστα κλειδιών σας."
+
+msgid "messages.nocontactsfound"
+msgstr "Δε βρέθηκαν επαφές."
+
+msgid "messages.contactnotfound"
+msgstr "Η ζητούμενη επαφή δεν βρέθηκε."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Πρέπει να χρησιμοποιήσετε μια φόρμα αναζήτησης για να δείτε επαφές από την "
+"επιλεγμένη λίστα διευθύνσεων."
+
+msgid "messages.sendingfailed"
+msgstr "Η αποστολή του μηνύματος απέτυχε."
+
+msgid "messages.senttooquickly"
+msgstr "Παρακαλώ περιμένετε $sec δευτερόλεπτα πριν στείλετε το μήνυμα."
+
+msgid "messages.errorsavingsent"
+msgstr "Προέκυψε σφάλμα κατά την αποθήκευση αποσταλμένου μηνύματος."
+
+msgid "messages.errorsaving"
+msgstr "Προέκυψε σφάλμα κατά την αποθήκευση."
+
+msgid "messages.errormoving"
+msgstr "Τα μηνύματα δεν ήταν δυνατό να μετακινηθούν."
+
+msgid "messages.errorcopying"
+msgstr "Δεν ήταν δυνατή η αντιγραφή του μηνύματος/των."
+
+msgid "messages.errordeleting"
+msgstr "Το μήνυμα δεν ήταν δυνατό να διαγραφεί."
+
+msgid "messages.errormarking"
+msgstr "Δεν έγινε επισήμανση στο μήνυμα."
+
+msgid "messages.alerttitle"
+msgstr "Προσοχή"
+
+msgid "messages.confirmationtitle"
+msgstr "Είστε βέβαιος/η..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Θέλετε να διαγράψετε τη συγκεκριμένη επαφή/ές;"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Είστε βέβαιοι πως θέλετε να διαγράψετε την επιλεγμένη ομάδα;"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Θέλετε να διαγράψετε το συγκεκριμένο μήνυμα/τα;"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Θέλετε να διαγράψετε τον συγκεκριμένο φάκελο;"
+
+msgid "messages.movefolderconfirm"
+msgstr "Είστε σίγουροι ότι θέλετε να μετακινήσετε αυτόν το φάκελο?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Θέλετε να διαγράψετε όλα τα μηνύματα στον συγκεκριμένο φάκελο;"
+
+msgid "messages.contactdeleting"
+msgstr "Διαγραφή επαφών..."
+
+msgid "messages.groupdeleting"
+msgstr "Διαγραφή ομάδας..."
+
+msgid "messages.folderdeleting"
+msgstr "Διαγραφή φακέλου..."
+
+msgid "messages.foldermoving"
+msgstr "Μεταφορά φακέλου..."
+
+msgid "messages.foldersubscribing"
+msgstr "Εγγραφή φακέλου..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Απεγγραφή φακέλου..."
+
+msgid "messages.formincomplete"
+msgstr "Η φόρμα δεν έχει συμπληρωθεί πλήρως."
+
+msgid "messages.noemailwarning"
+msgstr "Παρακαλώ εισάγετε έγκυρη διεύθυνση email."
+
+msgid "messages.nonamewarning"
+msgstr "Παρακαλώ εισάγετε όνομα."
+
+msgid "messages.nopagesizewarning"
+msgstr "Παρακαλώ εισάγετε μέγεθος σελίδας."
+
+msgid "messages.nosenderwarning"
+msgstr "Παρακαλώ εισάγετε τη διεύθυνση email του αποστολέα."
+
+msgid "messages.recipientsadded"
+msgstr "Επιτυχής προσθήκη παραλήπτη(ών)."
+
+msgid "messages.norecipientwarning"
+msgstr "Παρακαλώ εισάγετε τουλάχιστο έναν παραλήπτη."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Κάθε αποδέκτης μπορεί να δει τις ηλεκτρονικές διευθύνσεις των υπόλοιπων. Αν "
+"αυτό δεν είναι επιθυμητό, δηλαδή αν θέλουμε να προστατευθεί η ιδιωτικότητα "
+"των αποδεκτών, τότε πρέπει να χρησιμοποιηθεί το πεδίου της κρυφής "
+"κοινοποίησης αντί της απλής. "
+
+msgid "messages.disclosedreciptitle"
+msgstr "Υπέρβαση μέγιστου αριθμού παραληπτών"
+
+msgid "messages.nosubjectwarning"
+msgstr "Το πεδίο \"Θέμα\" είναι άδειο. Θέλετε να εισάγετε ένα τώρα;"
+
+msgid "messages.nosubjecttitle"
+msgstr "Κανένα θέμα"
+
+msgid "messages.nobodywarning"
+msgstr "Αποστολή μηνύματος χωρίς κείμενο;"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Αυτό το μήνυμα δεν έχει αποσταλεί και έχει αλλαγές που δεν έχουν "
+"αποθηκευτεί. Θέλετε να αναιρεθούν οι αλλαγές σας?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Υπάρχει ένα προηγούμενο πρόχειρο μήνυμα το οποίο δεν έχει σταλεί.\\n\\nΘέμα:"
+" $subject\\Αποθηκεύτηκε: $date\\n\\nΘέλετε να το ανακτήσετε;"
+
+msgid "messages.nosearchname"
+msgstr "Παρακαλώ εισάγετε όνομα επαφής ή διεύθυνση e-mail."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Δεν έχουν φορτωθεί ακόμα όλα τα συνημμένα. Παρακαλώ περιμένετε ή ακυρώστε το"
+" ανέβασμα."
+
+msgid "messages.searchsuccessful"
+msgstr "Βρέθηκαν $nr μηνύματα."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Βρέθηκαν $nr επαφές."
+
+msgid "messages.searchnomatch"
+msgstr "Η αναζήτηση δεν επέστρεψε αποτελέσματα."
+
+msgid "messages.searching"
+msgstr "Αναζήτηση..."
+
+msgid "messages.checking"
+msgstr "Έλεγχος..."
+
+msgid "messages.stillsearching"
+msgstr "Αναζήτηση..."
+
+msgid "messages.nospellerrors"
+msgstr "Δεν βρέθηκαν ορθογραφικά λάθη."
+
+msgid "messages.folderdeleted"
+msgstr "Ο φάκελος διαγράφηκε επιτυχώς."
+
+msgid "messages.foldersubscribed"
+msgstr "Ο φάκελος εχει εγγραφεί με επιτυχία."
+
+msgid "messages.folderunsubscribed"
+msgstr "Ο φάκελος απεγγράφηκε επιτυχώς."
+
+msgid "messages.folderpurged"
+msgstr "Ο φάκελος εκκενώθηκε επιτυχώς."
+
+msgid "messages.folderexpunged"
+msgstr "Ο φάκελος συμπιέστηκε επιτυχώς."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Επιτυχής διαγραφή."
+
+msgid "messages.converting"
+msgstr "Κατάργηση διαμορφώσεων κειμένου..."
+
+msgid "messages.messageopenerror"
+msgstr "Η φόρτωση μηνυμάτων από τον διακομιστή απέτυχε."
+
+msgid "messages.filelinkerror"
+msgstr "Η επισύναψη του αρχείου απέτυχε."
+
+msgid "messages.fileuploaderror"
+msgstr "Το ανέβασμα του αρχείου απέτυχε."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"Δεν υποστηρίζεται η εισαγωγή πολλαπλών αρχείων CSV με διαφορετικά πεδία."
+
+msgid "messages.filesizeerror"
+msgstr "Το ανεβασμένο αρχείο ξεπερνάει το μέγιστο μέγεθος των $size."
+
+msgid "messages.filecounterror"
+msgstr "Μπορείτε να ανεβάσετε το πολύ $count αρχεία ταυτόχρονα."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Αποτυχία επισύναψης αρχείου. Έχετε υπερβεί το μέγιστο μέγεθος ενός μηνύματος"
+" ($size)."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Έχετε υπερβεί το μέγιστο επιτρεπόμενο μέγεθος μηνύματος ($size). $num "
+"μήνυμα(τα) δεν έχει(ουν) επισυναφθεί."
+
+msgid "messages.copysuccess"
+msgstr "Επιτυχής αντιγραφή $nr επαφών."
+
+msgid "messages.movesuccess"
+msgstr "Μεταφέρθηκαν με επιτυχία $nr επαφές."
+
+msgid "messages.copyerror"
+msgstr "Αποτυχία αντιγραφής επαφών."
+
+msgid "messages.moveerror"
+msgstr "Η μετακίνηση επαφών ήταν αδύνατη."
+
+msgid "messages.sourceisreadonly"
+msgstr "Το πεδίο διεύθυνσης είναι μόνο για ανάγνωση."
+
+msgid "messages.errorsavingcontact"
+msgstr "Η αποθήκευση της διεύθυνσης επαφής απέτυχε."
+
+msgid "messages.movingmessage"
+msgstr "Μετακίνηση μηνύματος/των..."
+
+msgid "messages.copyingmessage"
+msgstr "Αντιγραφή μηνυμάτων..."
+
+msgid "messages.copyingcontact"
+msgstr "Αντιγραφή επαφών..."
+
+msgid "messages.movingcontact"
+msgstr "Μετακίνηση επαφής(ών)..."
+
+msgid "messages.deletingmessage"
+msgstr "Διαγραφή μηνυμάτων..."
+
+msgid "messages.markingmessage"
+msgstr "Σήμανση μηνυμάτων..."
+
+msgid "messages.addingmember"
+msgstr "Προσθήκη επαφών στην ομάδα..."
+
+msgid "messages.removingmember"
+msgstr "Αφαίρεση επαφών από την ομάδα..."
+
+msgid "messages.receiptsent"
+msgstr "Επιτυχής αποστολή αναφοράς ανάγνωσης."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Αποστολή αναφοράς απέτυχε."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Είστε βέβαιοι πως θέλετε να διαγράψετε αυτή την ταυτότητα;"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Δε μπορείτε να διαγράψετε αυτήν την ταυτότητα, είναι η τελευταία."
+
+msgid "messages.forbiddencharacter"
+msgstr "Η ονομασία φακέλου περιέχει μη επιτρεπτό χαρακτήρα."
+
+msgid "messages.selectimportfile"
+msgstr "Επιλέξτε αρχείο για ανέβασμα."
+
+msgid "messages.addresswriterror"
+msgstr "Το επιλεγμένο βιβλίο διευθύνσεων δεν είναι εγγράψιμο."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Οι επαφές προστέθηκαν στην ομάδα με επιτυχία."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Οι επαφές αφαιρέθηκαν από την ομάδα με επιτυχία."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Δεν αλλαξαν οι αναθεσεις της ομαδας."
+
+msgid "messages.importwait"
+msgstr "Εισαγωγή, παρακαλώ περιμένετε..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Η εισαγωγή απέτυχε! Το ανεβασμένο αρχείο δεν είναι έγκυρο αρχείο εισαγωγής "
+"δεδομένων."
+
+msgid "messages.importconfirm"
+msgstr "<b>Εισήχθησαν $inserted επαφές με επιτυχία</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Επιτυχής εισαγωγή $nr μηνυμάτων"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Η εισαγωγή απέτυχε! Το ανεβασμένο αρχείο δεν είναι έγκυρο αρχείο μηνύματος ή"
+" φακέλου μηνυμάτων."
+
+msgid "messages.opnotpermitted"
+msgstr "Η λειτουργία δεν επιτρέπεται!"
+
+msgid "messages.nofromaddress"
+msgstr "Λείπει η διεύθυνση email στην επιλεγμένη ταυτότητα."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Η αλλαγή του τύπου επεξεργασίας μπορεί να προκαλέσει απώλεια της "
+"μορφοποίησης κειμένου. Είστε βέβαιοι πως θέλετε να συνεχίσετε;"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Ανεπανόρθωτο σφάλμα. Επικοινωνήστε με το διαχειριστή του εξυπηρετητή. <b>Το "
+"μήνυμά σας δεν στάλθηκε.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Σφάλμα SMTP ($code): Απέτυχε η σύνδεση με τον εξυπηρετητή."
+
+msgid "messages.smtpautherror"
+msgstr "Σφάλμα SMTP ($code): Σφάλμα ταυτοποίησης."
+
+msgid "messages.smtpfromerror"
+msgstr "Σφάλμα SMTP ($code): Αποτυχία ορισμού αποστολέα \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "Σφάλμα SMTP ($code): Αποτυχία προσθήκης παραλήπτη \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "Σφάλμα SMTP: Αδύνατο να προσπελαστεί η λίστα παραληπτών."
+
+msgid "messages.smtputf8error"
+msgstr ""
+"Σφάλμα SMTP: Ο διακομιστής δεν υποστηρίζει Unicode σε διευθύνσεις email."
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+"Σφάλμα SMTP: Το μέγεθος του μηνύματος υπερβαίνει το όριο του διακομιστή "
+"($limit)"
+
+msgid "messages.smtperror"
+msgstr "Σφάλμα SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Μη έγκυρη διεύθυνση e-mail: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+"Υπερβολικά μεγάλο πλήθος αποδεκτών. Μειώστε τον αριθμό των αποδεκτών σε "
+"$max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Ο αριθμός των μελών της ομάδας υπερβαίνει τον μέγιστο των $max μελών."
+
+msgid "messages.internalerror"
+msgstr "Προέκυψε εσωτερικό σφάλμα. Παρακαλώ δοκιμάστε ξανά."
+
+msgid "messages.contactdelerror"
+msgstr "Δεν είναι δυνατή η διαγραφή της επαφής/ων."
+
+msgid "messages.contactdeleted"
+msgstr "Η επαφή/ές διαγράφηκαν με επιτυχία."
+
+msgid "messages.contactrestoreerror"
+msgstr "Η διαγραμμένη επαφή(ές) δεν είναι δυνατό να επαναφερθεί."
+
+msgid "messages.contactrestored"
+msgstr "Η επαφή(ές) επαναφέρθηκε."
+
+msgid "messages.groupdeleted"
+msgstr "Η ομαδα διαγράφηκε επιτυχώς."
+
+msgid "messages.grouprenamed"
+msgstr "Η ομάδα μετονομάστηκε επιτυχώς."
+
+msgid "messages.groupcreated"
+msgstr "Η ομάδα δημιουργήθηκε επιτυχώς."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Η αποθηκευμένη αναζήτηση διαγράφηκε επιτυχώς. "
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Δεν ήταν δυνατή η διαγραφή της αποθηκευμένης αναζήτησης."
+
+msgid "messages.savedsearchcreated"
+msgstr "Η αποθηκευμένη αναζητήση δημιουργήθηκε με επιτυχία."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Δεν ήταν δυνατό να δημιουργηθεί η αποθηκευμένη αναζήτηση."
+
+msgid "messages.messagedeleted"
+msgstr "Το μήνυμα(τα) διαγράφηκε επιτυχώς."
+
+msgid "messages.messagemoved"
+msgstr "Το μήνυμα(τα) μετακινήθηκε επιτυχώς."
+
+msgid "messages.messagemovedtotrash"
+msgstr " Το μήνυμα(τα) μετακινήθηκε επιτυχώς στα Διεγραμμένα."
+
+msgid "messages.messagecopied"
+msgstr "Το μήνυμα(τα) αντιγράφηκε επιτυχώς."
+
+msgid "messages.messagemarked"
+msgstr "Το μήνημα(τα) σημάνθηκε επιτυχώς."
+
+msgid "messages.autocompletechars"
+msgstr "Εισάγετε τουλάχιστον $min χαρακτήρες για αυτόματη συμπλήρωση."
+
+msgid "messages.autocompletemore"
+msgstr ""
+"Βρέθηκαν περισσότερες καταχωρήσεις που ταιριάζουν. Παρακαλώ πληκτρολογήστε "
+"περισσότερους χαρακτήρες."
+
+msgid "messages.namecannotbeempty"
+msgstr "Το όνομα δεν μπορεί να είναι κενό."
+
+msgid "messages.nametoolong"
+msgstr "Το όνομα είναι πολύ μεγάλο."
+
+msgid "messages.namedotforbidden"
+msgstr "Το όνομα του φακέλου δεν μπορεί να αρχίζει με τελεία."
+
+msgid "messages.folderupdated"
+msgstr "Ο φάκελος ανανεώθηκε επιτυχώς."
+
+msgid "messages.foldercreated"
+msgstr "Ο φάκελος δημιουργήθηκε επιτυχώς."
+
+msgid "messages.invalidimageformat"
+msgstr "Μη έγκυρη μορφή εικόνας."
+
+msgid "messages.mispellingsfound"
+msgstr "Εντοπίστηκαν ορθογραφικά λάθη στο μήνυμα. "
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Δεν είναι δυνατή η δημιουργία/μετακινήση φάκελου στον επιλεγμένο φάκελο "
+"γονέα. Δεν υπάρχει δικαίωμα πρόσβασης. "
+
+msgid "messages.messagetoobig"
+msgstr "Το τμήμα μηνύματος είναι πολύ μεγάλο για επεξεργασία."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Αυτό το συνημμένο είναι ύποπτο επειδή ο τύπος του δεν συμφωνεί με τον τύπο "
+"που δηλώνεται στο μήνυμα. Εάν δεν εμπιστεύεστε τον αποστολέα, μην το "
+"ανοίξετε στο πρόγραμμα περιήγησης καθώς μπορεί να περιέχει κακόβουλα "
+"περιεχόμενα.<br/><br/><em>Expected: $expected; found: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Προσοχή: Αυτή η υπηρεσία webmail απαιτεί Javascript! Για να την "
+"χρησιμοποιήσετε ενεργοποιήστε το JavaScript στις ρυθμίσεις του περιηγητή "
+"σας. "
+
+msgid "messages.messageissent"
+msgstr ""
+"Το μήνυμα έχει ήδη αποσταλεί, αλλά δεν έχει ακόμη αποθηκευτεί. Θέλετε να το "
+"αποθηκεύσετε τώρα;"
+
+msgid "messages.errnotfound"
+msgstr "Δεν βρέθηκε το αρχείο"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Ο πόρος που ζητήθηκε δε βρέθηκε!"
+
+msgid "messages.errfailedrequest"
+msgstr "Αποτυχία αιτήματος"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Απέτυχε η πιστοποίηση"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Δεν μπορέσαμε να βεβαιωθούμε ότι είστε εξουσιοδοτημένος να έχετε πρόσβαση σε"
+" αυτή την υπηρεσία!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Ο έλεγχος του αιτήματος απέτυχε"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Για την προστασία σας, η πρόσβαση σε αυτόν τον πόρο είναι εξασφαλισμένη έναντι CSRF.\n"
+"Αν βλέπετε αυτό, το μήνυμα τότε μάλλον δεν αποσυνδεθήκατε πριν φύγετε από τη web εφαρμογή.\n"
+"\n"
+"Για να συνεχίσετε απαιτείται πλέον ανθρώπινη αλληλεπίδραση."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Παρακαλείστε να επικοινωνήσετε με το διαχειριστή του εξυπηρετητή σας."
+
+msgid "messages.clicktoresumesession"
+msgstr "Κάντε κλικ εδώ για να συνεχίσετε την προηγούμενη συνεδρία σας"
+
+msgid "messages.errcomposesession"
+msgstr "Σφάλμα στη συνεδρία σύνταξης μηνύματος"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Η συνεδρία σύνταξης μηνύματος δε βρέθηκε."
+
+msgid "messages.clicktocompose"
+msgstr "Πατήστε εδώ για να συντάξετε ένα νέο μήνυμα"
+
+msgid "messages.nosupporterror"
+msgstr "Αυτή η δυνατότητα δεν υποστηρίζεται από τον περιηγητή σας."
+
+msgid "messages.siginserted"
+msgstr "Η υπογραφή εισήχθη επιτυχώς."
+
+msgid "messages.responseinserted"
+msgstr "Η απάντηση εισήχθη επιτυχώς."
+
+msgid "messages.noresponsesavailable"
+msgstr "Δεν υπάρχουν διαθέσιμες απαντήσεις"
+
+msgid "messages.listempty"
+msgstr "Η λίστα είναι κενή."
+
+msgid "messages.listusebutton"
+msgstr ""
+"Χρησιμοποιήστε το κουμπί Δημιουργία για να προσθέσετε μια νέα καταχώρηση."
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+"Ένα νέο ζεύγος κλειδιών δημιουργήθηκε επιτυχώς για την ταυτότητα $identity."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Το συννημένο αρχείο φαίνεται να είναι κενό<br>Παρακαλούμε να επικοινωνήσετε "
+"με τον αποστολέα του."
+
+msgid "messages.oauthloginfailed"
+msgstr "Η σύνδεση OAuth απέτυχε. Παρακαλούμε δοκιμάστε αργότερα."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Το αίτημα εξουσιοδότησης ήταν άκυρο ή ελλιπές."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Ο διακομιστής εξουσιοδότησης ή ο χρήστης απέρριψε το αίτημα."

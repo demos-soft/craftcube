@@ -1,0 +1,2923 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: lv_LV\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Esiet laipni lūgti $product"
+
+msgid "username"
+msgstr "Lietotājvārds"
+
+msgid "password"
+msgstr "Parole"
+
+msgid "server"
+msgstr "Serveris"
+
+msgid "login"
+msgstr "Autorizēties"
+
+msgid "oauthlogin"
+msgstr "Autorizēties ar $provider"
+
+msgid "menu"
+msgstr "Izvēlne"
+
+msgid "logout"
+msgstr "Iziet"
+
+msgid "mail"
+msgstr "E-pasts"
+
+msgid "settings"
+msgstr "Iestatījumi"
+
+msgid "addressbook"
+msgstr "Adrešu grāmata"
+
+msgid "darkmode"
+msgstr "Tumšais režīms"
+
+msgid "lightmode"
+msgstr "Gaišais režīms"
+
+msgid "inbox"
+msgstr "Ienākošās"
+
+msgid "drafts"
+msgstr "Uzmetumi"
+
+msgid "sent"
+msgstr "Nosūtītās"
+
+msgid "trash"
+msgstr "Papīrgrozs"
+
+msgid "junk"
+msgstr "Mēstules"
+
+msgid "show_real_foldernames"
+msgstr "Sistēmas mapēm rādīt īstos nosaukumus"
+
+msgid "subject"
+msgstr "Temats"
+
+msgid "from"
+msgstr "No"
+
+msgid "sender"
+msgstr "Sūtītājs"
+
+msgid "to"
+msgstr "Kam"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Atbildēt-Uz"
+
+msgid "followupto"
+msgstr "Sekot-Uz"
+
+msgid "date"
+msgstr "Datums"
+
+msgid "size"
+msgstr "Izmērs"
+
+msgid "priority"
+msgstr "Prioritāte"
+
+msgid "organization"
+msgstr "Uzņēmums"
+
+msgid "readstatus"
+msgstr "Izlasīšanas statuss"
+
+msgid "listoptions"
+msgstr "Vēstuļu saraksta attēlošanas iestatījumi..."
+
+msgid "listoptionstitle"
+msgstr "Saraksta parametri"
+
+msgid "mailboxlist"
+msgstr "Mapes"
+
+msgid "messagesfromto"
+msgstr "Vēstules $from līdz $to no $count"
+
+msgid "threadsfromto"
+msgstr "Vijumi $from līdz $to no $count"
+
+msgid "messagenrof"
+msgstr "$nr. vēstule no $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to no $count"
+
+msgid "copy"
+msgstr "Kopēt"
+
+msgid "move"
+msgstr "Pārvietot"
+
+msgid "moveto"
+msgstr "Pārvietot uz..."
+
+msgid "copyto"
+msgstr "Kopēt uz ..."
+
+msgid "download"
+msgstr "lejupielādēt"
+
+msgid "open"
+msgstr "Atvērt"
+
+msgid "showattachment"
+msgstr "Rādīt"
+
+msgid "showanyway"
+msgstr "Vienalga rādīt"
+
+msgid "filename"
+msgstr "Faila nosaukums"
+
+msgid "filesize"
+msgstr "Faila izmērs"
+
+msgid "addtoaddressbook"
+msgstr "Pievienot adrešu grāmatai"
+
+msgid "sun"
+msgstr "Sv"
+
+msgid "mon"
+msgstr "P"
+
+msgid "tue"
+msgstr "O"
+
+msgid "wed"
+msgstr "T"
+
+msgid "thu"
+msgstr "C"
+
+msgid "fri"
+msgstr "P"
+
+msgid "sat"
+msgstr "Se"
+
+msgid "sunday"
+msgstr "Svētdiena"
+
+msgid "monday"
+msgstr "Pirmdiena"
+
+msgid "tuesday"
+msgstr "Otrdiena"
+
+msgid "wednesday"
+msgstr "Trešdiena"
+
+msgid "thursday"
+msgstr "Ceturtdiena"
+
+msgid "friday"
+msgstr "Piektdiena"
+
+msgid "saturday"
+msgstr "Sestdiena"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "Maijs"
+
+msgid "jun"
+msgstr "Jūn"
+
+msgid "jul"
+msgstr "Jūl"
+
+msgid "aug"
+msgstr "Aug"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Dec"
+
+msgid "longjan"
+msgstr "Janvāris"
+
+msgid "longfeb"
+msgstr "Februāris"
+
+msgid "longmar"
+msgstr "Marts"
+
+msgid "longapr"
+msgstr "Aprīlis"
+
+msgid "longmay"
+msgstr "Maijs"
+
+msgid "longjun"
+msgstr "Jūnijs"
+
+msgid "longjul"
+msgstr "Jūlijs"
+
+msgid "longaug"
+msgstr "Augusts"
+
+msgid "longsep"
+msgstr "Septembris"
+
+msgid "longoct"
+msgstr "Oktobris"
+
+msgid "longnov"
+msgstr "Novembris"
+
+msgid "longdec"
+msgstr "Decembris"
+
+msgid "today"
+msgstr "Šodien"
+
+msgid "refresh"
+msgstr "Atjaunot"
+
+msgid "checkmail"
+msgstr "Pārbaudīt e-pastu"
+
+msgid "compose"
+msgstr "Rakstīt vēstuli"
+
+msgid "writenewmessage"
+msgstr "Rakstīt jaunu vēstuli"
+
+msgid "reply"
+msgstr "Atbildēt"
+
+msgid "replytomessage"
+msgstr "Atbildēt sūtītājam"
+
+msgid "replytoallmessage"
+msgstr "Atbildēt sūtītājam vai listei un visiem adresātiem"
+
+msgid "replyall"
+msgstr "Atbildēt visiem"
+
+msgid "replylist"
+msgstr "Atbildēt listei"
+
+msgid "forward"
+msgstr "Pārsūtīt"
+
+msgid "forwardinline"
+msgstr "Pārsūtīt iekļaujot vēstulē"
+
+msgid "forwardattachment"
+msgstr "Pārsūtīt kā pielikumu"
+
+msgid "forwardmessage"
+msgstr "Pārsūtīt vēstuli"
+
+msgid "bouncemsg"
+msgstr "Sūtīt atkārtoti (bounce)"
+
+msgid "bounce"
+msgstr "Sūtīt atkārtoti"
+
+msgid "deletemessage"
+msgstr "Dzēst vēstuli"
+
+msgid "undeletemessage"
+msgstr "Atjaunot vēstuli"
+
+msgid "movemessagetotrash"
+msgstr "Pārvietot vēstuli uz papīrgrozu"
+
+msgid "printmessage"
+msgstr "Izdrukāt šo vēstuli"
+
+msgid "previousmessage"
+msgstr "Parādīt iepriekšējo vēstuli"
+
+msgid "firstmessage"
+msgstr "Parādīt pirmo vēstuli"
+
+msgid "nextmessage"
+msgstr "Parādīt nākamo vēstuli"
+
+msgid "lastmessage"
+msgstr "Parādīt pēdējo vēstuli"
+
+msgid "backtolist"
+msgstr "Atpakaļ uz vēstuļu sarakstu"
+
+msgid "viewsource"
+msgstr "Parādīt pirmtekstu"
+
+msgid "mark"
+msgstr "Atzīmēt"
+
+msgid "markmessages"
+msgstr "Atzīmēt vēstules:"
+
+msgid "markread"
+msgstr "kā lasītas"
+
+msgid "markunread"
+msgstr "kā nelasītas"
+
+msgid "markflagged"
+msgstr "kā atzīmētas"
+
+msgid "markunflagged"
+msgstr "kā neatzīmētas"
+
+msgid "markundeleted"
+msgstr "Tā kā nav izdzēstas"
+
+msgid "markasread"
+msgstr "Atzīmēt kā lasītu"
+
+msgid "markasunread"
+msgstr "Atzīmēt kā nelasītu"
+
+msgid "markasflagged"
+msgstr "Atzīmēt kā marķētu"
+
+msgid "markasunflagged"
+msgstr "Atzīmēt kā nemarķētu"
+
+msgid "moreactions"
+msgstr "Papildus darbības..."
+
+msgid "markallread"
+msgstr "Atzīmēt visus kā izlasītus"
+
+msgid "folders-cur"
+msgstr "Tikai atzīmēto mapi"
+
+msgid "folders-sub"
+msgstr "Atzīmēt mapi un tās apakšmapes"
+
+msgid "folders-all"
+msgstr "Visas mapes"
+
+msgid "more"
+msgstr "Vairāk"
+
+msgid "back"
+msgstr "Atpakaļ"
+
+msgid "options"
+msgstr "Opcijas"
+
+msgid "composeoptions"
+msgstr "Rakstīšanas iestatījumi"
+
+msgid "optionsandattachments"
+msgstr "Opcijas un pielikumi"
+
+msgid "actions"
+msgstr "Darbību saraksts"
+
+msgid "first"
+msgstr "Pirmā"
+
+msgid "last"
+msgstr "Pēdējā"
+
+msgid "previous"
+msgstr "Iepriekšējā"
+
+msgid "next"
+msgstr "Nākošā"
+
+msgid "select"
+msgstr "Atzīmēt"
+
+msgid "selection"
+msgstr "Atlase"
+
+msgid "all"
+msgstr "Visas"
+
+msgid "none"
+msgstr "Nevienu"
+
+msgid "currpage"
+msgstr "Pašreizējā lapa"
+
+msgid "isread"
+msgstr "Lasīt"
+
+msgid "unread"
+msgstr "Nelasītās"
+
+msgid "flagged"
+msgstr "Atzīmētās"
+
+msgid "unflagged"
+msgstr "Nav atzīmēta"
+
+msgid "unanswered"
+msgstr "Neatbildētās"
+
+msgid "withattachment"
+msgstr "Ar pielikumu"
+
+msgid "deleted"
+msgstr "Dzēstās"
+
+msgid "undeleted"
+msgstr "Nav izdzēstas"
+
+msgid "replied"
+msgstr "Atbildēta"
+
+msgid "forwarded"
+msgstr "Pārsūtīta"
+
+msgid "invert"
+msgstr "Pretēji"
+
+msgid "filter"
+msgstr "Filtrēt"
+
+msgid "list"
+msgstr "Rādīt kā sarakstu"
+
+msgid "threads"
+msgstr "Rādīt kā vijumus"
+
+msgid "expand-all"
+msgstr "Izvērst visus"
+
+msgid "expand-unread"
+msgstr "Izvērst neizlasītās"
+
+msgid "collapse-all"
+msgstr "Sakļaut visas"
+
+msgid "threaded"
+msgstr "Rādīt vijumus"
+
+msgid "showunread"
+msgstr "Parādīt neizlasītās vēstules"
+
+msgid "autoexpand_threads"
+msgstr "Izvērst vēstuļu vijumus"
+
+msgid "do_expand"
+msgstr "visus vijumus"
+
+msgid "expand_only_unread"
+msgstr "tikai ar neizlasītām vēstulēm"
+
+msgid "fromto"
+msgstr "No/Kam"
+
+msgid "flag"
+msgstr "Atzīmēt"
+
+msgid "attachment"
+msgstr "Pielikums"
+
+msgid "nonesort"
+msgstr "Neviena"
+
+msgid "sentdate"
+msgstr "Nosūtīšanas datums"
+
+msgid "arrival"
+msgstr "Pienākšanas datums"
+
+msgid "asc"
+msgstr "augoša"
+
+msgid "desc"
+msgstr "dilstoša"
+
+msgid "listcolumns"
+msgstr "Saraksta kolonnas"
+
+msgid "listsorting"
+msgstr "Kārtošanas kolonnas"
+
+msgid "listorder"
+msgstr "Kārtošanas secība"
+
+msgid "listmode"
+msgstr "Attēlošanas veids"
+
+msgid "lmode"
+msgstr "Attēlošanas veids"
+
+msgid "layout"
+msgstr "Izklājums"
+
+msgid "layoutwidescreen"
+msgstr "Platekrāns"
+
+msgid "layoutdesktop"
+msgstr "Darba virsma"
+
+msgid "layoutlist"
+msgstr "Saraksts"
+
+msgid "layoutwidescreendesc"
+msgstr "Platekrāna (3 kolonnu skats)"
+
+msgid "layoutdesktopdesc"
+msgstr "Datorskats (plats skats ar e-pasta priekšskatījumu apakšā)"
+
+msgid "layoutlistdesc"
+msgstr "Saraksts (bez e-pasta prieksškatīšanas)"
+
+msgid "folderactions"
+msgstr "Darbības ar mapēm..."
+
+msgid "compact"
+msgstr "Saspiest"
+
+msgid "empty"
+msgstr "Iztukšot"
+
+msgid "importmessages"
+msgstr "Importēt vēstules"
+
+msgid "mailimportdesc"
+msgstr ""
+"Jūs varat augšupielādēt e-pastu izmantojot <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> vai <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> formāta failus."
+
+msgid "mailimportzip"
+msgstr "Vairāki faili var tikt sakompresēti zip arhīvos."
+
+msgid "quota"
+msgstr "Kvota"
+
+msgid "unknown"
+msgstr "nezināms"
+
+msgid "unlimited"
+msgstr "neierobežots"
+
+msgid "quotatype"
+msgstr "Kvotas tips"
+
+msgid "quotatotal"
+msgstr "Limits"
+
+msgid "quotaused"
+msgstr "Izlietots"
+
+msgid "quotastorage"
+msgstr "Kvota"
+
+msgid "quotamessage"
+msgstr "Vēstuļu skaits"
+
+msgid "shortheaderdate"
+msgstr "Datums $date"
+
+msgid "shortheaderto"
+msgstr "Adresāts $to datumā $date"
+
+msgid "shortheaderfrom"
+msgstr "No $from datumā $date"
+
+msgid "quicksearch"
+msgstr "Ārtā meklēšana"
+
+msgid "searchplaceholder"
+msgstr "Meklēt..."
+
+msgid "resetsearch"
+msgstr "Atstatīt meklēšanu"
+
+msgid "searchmod"
+msgstr "Meklēšanas modifikatori:"
+
+msgid "msgtext"
+msgstr "Visā vēstulē"
+
+msgid "body"
+msgstr "Pamatteksts"
+
+msgid "type"
+msgstr "Tips"
+
+msgid "namex"
+msgstr "Vārds"
+
+msgid "searchscope"
+msgstr "Kur meklēt"
+
+msgid "currentfolder"
+msgstr "Pašreizējā mape"
+
+msgid "subfolders"
+msgstr "Šī un apakšmapes"
+
+msgid "allfolders"
+msgstr "Visas mapes"
+
+msgid "searchinterval-1W"
+msgstr "vecākas par nedēļu"
+
+msgid "searchinterval-1M"
+msgstr "vecākas par mēnesi"
+
+msgid "searchinterval-1Y"
+msgstr "vecākas par gadu"
+
+msgid "searchinterval1W"
+msgstr "nedēļu vecas"
+
+msgid "searchinterval1M"
+msgstr "mēnesi vecas"
+
+msgid "searchinterval1Y"
+msgstr "gadu vecas"
+
+msgid "infolder"
+msgstr "Mape: $folder"
+
+msgid "currentaddressbook"
+msgstr "Adrešu grāmata"
+
+msgid "alladdressbooks"
+msgstr "Visas adrešu grāmatas"
+
+msgid "openinextwin"
+msgstr "Atvērt jaunā logā"
+
+msgid "emlsave"
+msgstr "lejupielādēt (.eml)"
+
+msgid "changeformattext"
+msgstr "Rādīt kā neformatētu tekstu"
+
+msgid "changeformathtml"
+msgstr "Rādīt kā HTML formatētu"
+
+msgid "editasnew"
+msgstr "Rediģēt kā jaunu"
+
+msgid "send"
+msgstr "Sūtīt"
+
+msgid "sendmessage"
+msgstr "Sūtīt vēstuli"
+
+msgid "savemessage"
+msgstr "Saglabāt kā uzmetumu"
+
+msgid "addattachment"
+msgstr "Pievienot failu"
+
+msgid "charset"
+msgstr "Rakstzīmju kopa"
+
+msgid "editortype"
+msgstr "Redaktora tips"
+
+msgid "returnreceipt"
+msgstr "Saņemšanas apstiprinājums"
+
+msgid "dsn"
+msgstr "Piegādes atskaite"
+
+msgid "keepformatting"
+msgstr "Saglabāt formatēšanu"
+
+msgid "mailreplyintro"
+msgstr "$sender @ $date rakstīja:"
+
+msgid "originalmessage"
+msgstr "Sākotnējā vēstule"
+
+msgid "selectimage"
+msgstr "Atzīmēt attēlu"
+
+msgid "addimage"
+msgstr "Pievienot attēlu"
+
+msgid "selectmedia"
+msgstr "Atzīmēt video"
+
+msgid "addmedia"
+msgstr "Pievienot video"
+
+msgid "encrypt"
+msgstr "Šifrēt"
+
+msgid "encryptmessage"
+msgstr "Šifrēt vēstuli"
+
+msgid "encryptmessagemailvelope"
+msgstr "Šifrēt vēstuli ar \"Mailenvelope\""
+
+msgid "importpubkeys"
+msgstr "Importēt publiskās atslēgas"
+
+msgid "encryptedsendialog"
+msgstr "Sūta šifrēto vēstuli"
+
+msgid "encryptandsign"
+msgstr "Šifrēt un parakstīt"
+
+msgid "keyid"
+msgstr "Atslēgas ID"
+
+msgid "keylength"
+msgstr "Biti"
+
+msgid "keyexpired"
+msgstr "Beidzies termiņš"
+
+msgid "keyrevoked"
+msgstr "Atsaukta"
+
+msgid "bccinstead"
+msgstr "Lietot Bcc"
+
+msgid "addheader"
+msgstr "Pievienot lauku (Cc, Bcc, ...)"
+
+msgid "insert"
+msgstr "Ievietot"
+
+msgid "insertcontact"
+msgstr "Pievienot kontaktu(s)"
+
+msgid "recipient"
+msgstr "Saņēmējs"
+
+msgid "recipientedit"
+msgstr "Rediģēt saņēmēju"
+
+msgid "editidents"
+msgstr "Rediģēt identitātes"
+
+msgid "spellcheck"
+msgstr "Izrunāt"
+
+msgid "checkspelling"
+msgstr "Pārbaudīt pareizrakstību"
+
+msgid "resumeediting"
+msgstr "Turpināt rediģēšanu"
+
+msgid "revertto"
+msgstr "Atgriezt uz"
+
+msgid "restore"
+msgstr "Atjaunot"
+
+msgid "restoremessage"
+msgstr "Atjaunot vēstuli?"
+
+msgid "ignore"
+msgstr "Ignorēt"
+
+msgid "responses"
+msgstr "Atbildes"
+
+msgid "insertresponse"
+msgstr "Ievietot atbildi"
+
+msgid "manageresponses"
+msgstr "Pārvaldīt atbildes"
+
+msgid "newresponse"
+msgstr "Izveidot jaunu atbildi"
+
+msgid "addresponse"
+msgstr "Pievienot atbildi"
+
+msgid "editresponse"
+msgstr "Rediģēt atbildi"
+
+msgid "editresponses"
+msgstr "Rediģēt atbildes"
+
+msgid "responsename"
+msgstr "Vārds"
+
+msgid "responsetext"
+msgstr "Atbildes teksts"
+
+msgid "attach"
+msgstr "Pievienot"
+
+msgid "attachments"
+msgstr "Pielikumi"
+
+msgid "upload"
+msgstr "Augšupielādēt"
+
+msgid "uploadprogress"
+msgstr "$percent ($current no $total)"
+
+msgid "close"
+msgstr "Aizvērt"
+
+msgid "messageoptions"
+msgstr "Vēstuļu iestatījumi..."
+
+msgid "togglecomposeoptions"
+msgstr "Parādīt rakstīšanas iestatījumus"
+
+msgid "attachmentrename"
+msgstr "Pārsaukt pielikumu"
+
+msgid "low"
+msgstr "Zema"
+
+msgid "lowest"
+msgstr "Zemākā"
+
+msgid "normal"
+msgstr "Normāla"
+
+msgid "high"
+msgstr "Augsta"
+
+msgid "highest"
+msgstr "Augstākā"
+
+msgid "nosubject"
+msgstr "(bez tēmas)"
+
+msgid "showimages"
+msgstr "Rādīt attēlus"
+
+msgid "allow"
+msgstr "Atļaut"
+
+msgid "alwaysshow"
+msgstr "Vienmēr rādīt attēlus vēstulēs, kuras sūtījis $sender"
+
+msgid "alwaysallow"
+msgstr "Vienmēr atļaut no sūtītāja $sender"
+
+msgid "isdraft"
+msgstr "Šis ir melnraksts."
+
+msgid "andnmore"
+msgstr "$nr vairāk..."
+
+msgid "details"
+msgstr "Detaļas"
+
+msgid "summary"
+msgstr "Kopsavilkums"
+
+msgid "headers"
+msgstr "Galvene"
+
+msgid "allheaders"
+msgstr "Visas galvenes"
+
+msgid "togglemoreheaders"
+msgstr "Rādīt galvenes papildus informāciju"
+
+msgid "togglefullheaders"
+msgstr "Slēpt galvenes papildus informāciju"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Vienkāršs teksts"
+
+msgid "savesentmessagein"
+msgstr "Saglabāt nosūtīto vēstuli mapē"
+
+msgid "dontsave"
+msgstr "nesaglabāt"
+
+msgid "maxuploadsize"
+msgstr "Maksimālais atļautais faila izmērs ir $size"
+
+msgid "addcc"
+msgstr "Pievienot Cc"
+
+msgid "addbcc"
+msgstr "Pievienot Bcc"
+
+msgid "addreplyto"
+msgstr "Pievienot Atbildēt-Uz"
+
+msgid "addfollowupto"
+msgstr "Pievienot Followup-To"
+
+msgid "sendreceipt"
+msgstr "Vai nosūtīt izlasīšanas paziņojumu?"
+
+msgid "mdnrequest"
+msgstr ""
+"Šīs vēstules sūtītājs vēlas redzēt vēstules saņemšanas apstiprinājumu. Vai "
+"Jūs vēlaties nosūtīt šo apstiprinājumu?"
+
+msgid "receiptread"
+msgstr "Saņemšanas apstiprinājums"
+
+msgid "yourmessage"
+msgstr "Šis ir Jūsu nosūtītās vēstules saņemšanas apstiprinājums"
+
+msgid "receiptnote"
+msgstr ""
+"Piezīme: Šis apsiprinājums nozīmē tikai to, ka vēstule tika parādīta uz "
+"saņēmāja datora. Tas nenozīmē, ka saņēmējs ir izlasījis vai sapratis "
+"vēstules saturu."
+
+msgid "sendalwaysto"
+msgstr "Vienmēr sūtīt uz $email"
+
+msgid "zoomin"
+msgstr "Pietuvināt"
+
+msgid "zoomout"
+msgstr "Attālināt"
+
+msgid "rotate"
+msgstr "Pagriezt"
+
+msgid "increaseimage"
+msgstr "Palielināt attēla izmēru"
+
+msgid "decreaseimage"
+msgstr "Samazināt attēla izmēru"
+
+msgid "rotateimage"
+msgstr "Pagriezt attēlu"
+
+msgid "showtools"
+msgstr "Rādīt attēla rīkus"
+
+msgid "hidetools"
+msgstr "Paslēpt attēla rīkus"
+
+msgid "name"
+msgstr "Uzrādītais vārds"
+
+msgid "firstname"
+msgstr "Vārds"
+
+msgid "surname"
+msgstr "Uzvārds"
+
+msgid "middlename"
+msgstr "Otrais vārds"
+
+msgid "nameprefix"
+msgstr "Prefikss"
+
+msgid "namesuffix"
+msgstr "Sufikss"
+
+msgid "nickname"
+msgstr "Segvārds"
+
+msgid "jobtitle"
+msgstr "Amats"
+
+msgid "department"
+msgstr "Nodaļa"
+
+msgid "gender"
+msgstr "Dzimums"
+
+msgid "maidenname"
+msgstr "Pirmslaulības uzvārds"
+
+msgid "email"
+msgstr "E-pasts"
+
+msgid "phone"
+msgstr "Tālrunis"
+
+msgid "address"
+msgstr "Adrese"
+
+msgid "street"
+msgstr "Iela"
+
+msgid "locality"
+msgstr "Pilsēta"
+
+msgid "zipcode"
+msgstr "Pasta indekss"
+
+msgid "region"
+msgstr "Novads"
+
+msgid "country"
+msgstr "Pilsēta"
+
+msgid "birthday"
+msgstr "Dzimšanas diena"
+
+msgid "anniversary"
+msgstr "Gadadiena"
+
+msgid "website"
+msgstr "Mājaslapa"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Piezīmes"
+
+msgid "male"
+msgstr "vīrietis"
+
+msgid "female"
+msgstr "sieviete"
+
+msgid "nonbinary"
+msgstr "nebinārs"
+
+msgid "othergender"
+msgstr "cits"
+
+msgid "manager"
+msgstr "Menedžeris"
+
+msgid "assistant"
+msgstr "Asistents"
+
+msgid "spouse"
+msgstr "Laulātais"
+
+msgid "allfields"
+msgstr "Visi lauki"
+
+msgid "search"
+msgstr "Meklēt"
+
+msgid "searchresult"
+msgstr "Meklēšanas rezultāts"
+
+msgid "advsearch"
+msgstr "Paplašinātā meklēšana"
+
+msgid "advanced"
+msgstr "Paplašinātie iestatījumi"
+
+msgid "other"
+msgstr "Cits"
+
+msgid "printcontact"
+msgstr "Drukāt kontaktu"
+
+msgid "qrcode"
+msgstr "QR kods"
+
+msgid "typehome"
+msgstr "Mājas"
+
+msgid "typework"
+msgstr "Darbs"
+
+msgid "typeother"
+msgstr "Cits"
+
+msgid "typemobile"
+msgstr "Mobilais tālrunis"
+
+msgid "typemain"
+msgstr "Galvenais"
+
+msgid "typehomefax"
+msgstr "Fakss mājās"
+
+msgid "typeworkfax"
+msgstr "Fakss darbā"
+
+msgid "typecar"
+msgstr "Auto"
+
+msgid "typepager"
+msgstr "Peidžeris"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Asistents"
+
+msgid "typehomepage"
+msgstr "Mājaslapa"
+
+msgid "typeblog"
+msgstr "Blogs"
+
+msgid "typeprofile"
+msgstr "Profils"
+
+msgid "addfield"
+msgstr "Pievienot lauku..."
+
+msgid "addcontact"
+msgstr "Pievienot kontaktu"
+
+msgid "editcontact"
+msgstr "Rediģēt kontaktu"
+
+msgid "contacts"
+msgstr "Kontakti"
+
+msgid "contactproperties"
+msgstr "Kontakta īpašības"
+
+msgid "contactnameandorg"
+msgstr "Vārds un organizācija"
+
+msgid "personalinfo"
+msgstr "Personīgā informācija"
+
+msgid "personal"
+msgstr "Personīgās"
+
+msgid "contactphoto"
+msgstr "Kontakta attēls"
+
+msgid "edit"
+msgstr "Rediģēt"
+
+msgid "cancel"
+msgstr "Atcelt"
+
+msgid "save"
+msgstr "Saglabāt"
+
+msgid "delete"
+msgstr "Dzēst"
+
+msgid "discard"
+msgstr "Nesaglabāt"
+
+msgid "continue"
+msgstr "Turpināt"
+
+msgid "ok"
+msgstr "LABI"
+
+msgid "rename"
+msgstr "Pārdēvēt"
+
+msgid "addphoto"
+msgstr "Pievienot"
+
+msgid "replacephoto"
+msgstr "Aizvietot"
+
+msgid "uploadphoto"
+msgstr "Augšupielādēt fotogrāfiju"
+
+msgid "choosefile"
+msgstr "Norādīt failu..."
+
+msgid "choosefiles"
+msgstr "Norādīt failus..."
+
+msgid "browse"
+msgstr "Pārlūkot"
+
+msgid "newcontact"
+msgstr "Izveidot jaunu kontaktu"
+
+msgid "deletecontact"
+msgstr "Dzēst atzīmētos kontaktus"
+
+msgid "composeto"
+msgstr "Rakstīt vēstuli"
+
+msgid "contactsfromto"
+msgstr "Ieraksti no $from līdz $to - kopā $count"
+
+msgid "print"
+msgstr "Drukāt"
+
+msgid "export"
+msgstr "Eksportēt"
+
+msgid "exportall"
+msgstr "Eksportēt visu"
+
+msgid "exportsel"
+msgstr "Eksportēt atzīmēto"
+
+msgid "exportvcards"
+msgstr "Eksportēt kontaktus vCard formātā"
+
+msgid "newgroup"
+msgstr "Izveidot jaunu grupu"
+
+msgid "addgroup"
+msgstr "Pievienot grupu"
+
+msgid "grouprename"
+msgstr "Pārdēvēt grupu"
+
+msgid "groupdelete"
+msgstr "Izdzēst grupu"
+
+msgid "groupassign"
+msgstr "Pievienot grupai..."
+
+msgid "groupremove"
+msgstr "Dzēst no grupas..."
+
+msgid "groupremoveselected"
+msgstr "Dzēst atzīmētos kontaktus no grupas"
+
+msgid "uponelevel"
+msgstr "Vienu līmeni uz augšu"
+
+msgid "previouspage"
+msgstr "Parādīt iepriekšējo lapu"
+
+msgid "firstpage"
+msgstr "Parādīt pirmo lapu"
+
+msgid "nextpage"
+msgstr "Parādīt nākamo lapu"
+
+msgid "lastpage"
+msgstr "Parādīt pēdējo lapu"
+
+msgid "group"
+msgstr "Grupa"
+
+msgid "groups"
+msgstr "Grupas"
+
+msgid "listgroup"
+msgstr "Rādīt grupas kontaktus"
+
+msgid "personaladrbook"
+msgstr "Personīgās adreses"
+
+msgid "searchsave"
+msgstr "Saglabāt meklēšanas pieprasījumu"
+
+msgid "searchdelete"
+msgstr "Dzēst saglabāto meklēšanas pieprasījumu"
+
+msgid "import"
+msgstr "Importēt"
+
+msgid "importcontacts"
+msgstr "Importēt kontaktus"
+
+msgid "importfromfile"
+msgstr "Importēt no faila"
+
+msgid "importtarget"
+msgstr "Kontaktus pievienot"
+
+msgid "importreplace"
+msgstr "Aizvietot visu adrešu grāmatu"
+
+msgid "importgroups"
+msgstr "Importēt grupu piesaistes"
+
+msgid "importgroupsall"
+msgstr "Visus (ja nepieciešams, izveidojiet grupas)"
+
+msgid "importgroupsexisting"
+msgstr "Tikai esošām grupām"
+
+msgid "importdesc"
+msgstr ""
+"Jūs varat augšupielādēt kontaktus no jau esošas adrešu grāmatas.<br/>Tiek "
+"atbalstīta adrešu importēšana no <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> or CSV (ar komatu-"
+"dalīta) datu formāta."
+
+msgid "importmapdesc"
+msgstr ""
+"Pirms turpināt CSV (komatiem atdalītu) datu importēšanu, pārliecinieties, ka"
+" zemāk esošā lauku kartēšanas informācija ir pareiza."
+
+msgid "fieldnotmapped"
+msgstr "Lauks nav kartēts (neimportēt)"
+
+msgid "skipheader"
+msgstr "Neimportēt pirmo rindu (galvenes)"
+
+msgid "done"
+msgstr "Pabeigts"
+
+msgid "birth_day"
+msgstr "Dzimšanas diena"
+
+msgid "birth_month"
+msgstr "Dzimšanas mēnesis"
+
+msgid "birth_year"
+msgstr "Dzimšanas gads"
+
+msgid "settingsfor"
+msgstr "Iestatījumi"
+
+msgid "about"
+msgstr "Par"
+
+msgid "preferences"
+msgstr "Iestatījumi"
+
+msgid "userpreferences"
+msgstr "Lietotāja iestatījumi"
+
+msgid "editpreferences"
+msgstr "Rediģēt iestatījumus"
+
+msgid "identities"
+msgstr "Identitātes"
+
+msgid "manageidentities"
+msgstr "Rediģēt identitātes"
+
+msgid "newidentity"
+msgstr "Izveidot jaunu identitāti"
+
+msgid "addidentity"
+msgstr "Pievienot identitāti"
+
+msgid "editidentity"
+msgstr "Rediģēt identitāti"
+
+msgid "identityencryption"
+msgstr "Šifrēšana"
+
+msgid "preferhtml"
+msgstr "Rādīt HTML formatētās vēstules"
+
+msgid "defaultcharset"
+msgstr "Noklusētā rakstzīmju kopa"
+
+msgid "htmlmessage"
+msgstr "HTML formatēta vēstule"
+
+msgid "messagepart"
+msgstr "Daļa"
+
+msgid "digitalsig"
+msgstr "Digitālais paraksts"
+
+msgid "dateformat"
+msgstr "Datuma formāts"
+
+msgid "timeformat"
+msgstr "Laika formāts"
+
+msgid "prettydate"
+msgstr "Rādīt īsos datumus"
+
+msgid "setdefault"
+msgstr "Uzlikt kā noklusēto"
+
+msgid "autodetect"
+msgstr "Automātiska"
+
+msgid "language"
+msgstr "Valoda"
+
+msgid "timezone"
+msgstr "Laika zona"
+
+msgid "pagesize"
+msgstr "Rindas lapā"
+
+msgid "signature"
+msgstr "Paraksts"
+
+msgid "dstactive"
+msgstr "Vasaras/ziemas laiks"
+
+msgid "showinextwin"
+msgstr "Vēstules atvērt jaunā logā"
+
+msgid "composeextwin"
+msgstr "Vēstuli rakstīt jaunā logā"
+
+msgid "htmleditor"
+msgstr "Rakstīt HTML formatētas vēstules"
+
+msgid "htmlonreply"
+msgstr "tikai atbildot uz HTML formatētām vēstulēm"
+
+msgid "htmlonreplyandforward"
+msgstr "tikai pārsūtot vai atbildot uz HTML formatētu vēstuli"
+
+msgid "htmlsignature"
+msgstr "HTML formatēts paraksts"
+
+msgid "showemail"
+msgstr "Pie vārda rādīt arī e-pasta adresi"
+
+msgid "previewpane"
+msgstr "Rādīt priekšskatījuma paneli"
+
+msgid "skin"
+msgstr "Saskarnes izskats"
+
+msgid "logoutclear"
+msgstr "Izejot no e-pasta, iztīrīt papīrgrozu"
+
+msgid "logoutcompact"
+msgstr "Izejot no e-pasta, saspiest iesūtni"
+
+msgid "uisettings"
+msgstr "Lietotāja saskarne"
+
+msgid "serversettings"
+msgstr "Servera iestatījumi"
+
+msgid "mailboxview"
+msgstr "Pastkastes skats"
+
+msgid "mdnrequests"
+msgstr "Vēstules izlasīšanas atskaites sūtīšana"
+
+msgid "askuser"
+msgstr "jautāt man vai sūtīt"
+
+msgid "autosend"
+msgstr "sūtīt automātiski"
+
+msgid "autosendknown"
+msgstr ""
+"automātiski sūtīt ja pieprasītājs ir manos kontaktos, par citiem jautāt"
+
+msgid "autosendknownignore"
+msgstr ""
+"automātiski sūtīt ja pieprasītājs ir manos kontaktos, citiem ignorēt un "
+"nesūtīt"
+
+msgid "autosendtrusted"
+msgstr ""
+"sūtīt saņemšanas apstiprinājumu uzticamiem sūtītājiem, pretējā gadījumā "
+"jautāt man"
+
+msgid "autosendtrustedignore"
+msgstr ""
+"sūtīt saņemšanas apstiprinājumu uzticamajiem sūtītājiem, pretējā gadījumā "
+"ignorēt"
+
+msgid "ignorerequest"
+msgstr "ignorēt pieprasījumu"
+
+msgid "readwhendeleted"
+msgstr "Dzēšot vēstules tās atzīmēt kā izlasītas"
+
+msgid "flagfordeletion"
+msgstr "Dzēšot vēstules tās nedzēst, bet marķēt kā dzēšamas"
+
+msgid "skipdeleted"
+msgstr "Nerādīt dzēstās vēstules"
+
+msgid "deletealways"
+msgstr "Izdzēst vēstules, ja tās neizdodas pārvietot uz papīrgrozu"
+
+msgid "deletejunk"
+msgstr "Automātiski dzēst vēstules no mēstuļu mapītes"
+
+msgid "showremoteimages"
+msgstr "Rādīt vēstulēs attēlus, kuri atrodas uz cita servera"
+
+msgid "allowremoteresources"
+msgstr "Atļaut ārējus resursus (attēli, stili)"
+
+msgid "fromknownsenders"
+msgstr "tikai no zināmiem sūtītājiem"
+
+msgid "fromtrustedsenders"
+msgstr "no uzticamajiem sūtītājiem"
+
+msgid "frommycontacts"
+msgstr "no maniem kontaktiem"
+
+msgid "always"
+msgstr "vienmēr"
+
+msgid "alwaysbutplain"
+msgstr ""
+"vienmēr, izņemot gadījumus, kad tiek atbildēts \"parastā teksta\" vēstulēm"
+
+msgid "showinlineimages"
+msgstr "Rādīt pielikuma attēlus zem vēstules"
+
+msgid "autosavedraft"
+msgstr "Automātiski saglabāt vēstules uzmetumu"
+
+msgid "everynminutes"
+msgstr "ik pēc $n minūtes(ēm)"
+
+msgid "refreshinterval"
+msgstr "Pārbaudīt jaunās vēstules"
+
+msgid "never"
+msgstr "nekad"
+
+msgid "immediately"
+msgstr "nekavējoties"
+
+msgid "messagesdisplaying"
+msgstr "Vēstuļu attēlošana"
+
+msgid "messagescomposition"
+msgstr "Vēstuļu rakstīšana"
+
+msgid "mimeparamfolding"
+msgstr "Pielikumu nosaukumi"
+
+msgid "2231folding"
+msgstr "Pilns RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Pilns RFC 2047 (citi)"
+
+msgid "force7bit"
+msgstr "Izmantot MIME kodējumu 8-bitu simboliem"
+
+msgid "savelocalstorage"
+msgstr "Saglabāt pārlūka atmiņā (pagaidu)"
+
+msgid "advancedoptions"
+msgstr "Paplašinātie iestatījumi"
+
+msgid "toggleadvancedoptions"
+msgstr "Parādīt paplašinātos iestatījumus"
+
+msgid "focusonnewmessage"
+msgstr "Uzstādīt pārlūka fokusu uz jaunu vēstuli"
+
+msgid "checkallfolders"
+msgstr "Meklēt visās mapēs jaunās vēstules"
+
+msgid "displaynext"
+msgstr "Pēc vēstules dzēšanas/pārvietošanas rādīt nākamo vēstuli"
+
+msgid "defaultfont"
+msgstr "Noklusētais fonts vēstulēm HTML formātā"
+
+msgid "mainoptions"
+msgstr "Galvenie iestatījumi"
+
+msgid "browseroptions"
+msgstr "Pārlūka iestatījumi"
+
+msgid "section"
+msgstr "Sadaļa"
+
+msgid "maintenance"
+msgstr "Uzturēšana"
+
+msgid "newmessage"
+msgstr "Vēstuļu pienākšana"
+
+msgid "signatureoptions"
+msgstr "Paraksta iestatījumi"
+
+msgid "whenreplying"
+msgstr "Atbildot"
+
+msgid "replyempty"
+msgstr "neiekļaut vēstules sākotnējo tekstu"
+
+msgid "replytopposting"
+msgstr "sākt jaunu vēstuli virs oriģināla"
+
+msgid "replytoppostingnoindent"
+msgstr "sākt jaunu ziņu virs citēšanas (bez identācijas)"
+
+msgid "replybottomposting"
+msgstr "sākt jaunu vēstuli zem oriģināla"
+
+msgid "replyremovesignature"
+msgstr "Atbildot izņemt oriģinālo parakstu no vēstules"
+
+msgid "autoaddsignature"
+msgstr "Automātiski pievienot parakstu"
+
+msgid "newmessageonly"
+msgstr "tikai jaunām vēstulēm"
+
+msgid "replyandforwardonly"
+msgstr "tikai atbildēm un pārsūtījumiem"
+
+msgid "insertsignature"
+msgstr "Ievietot parakstu"
+
+msgid "sigbelow"
+msgstr "Parakstu novietot zem sūtītās vēstules oriģinālā"
+
+msgid "sigseparator"
+msgstr "Parakstam obligāti izmantot standarta dalītāju"
+
+msgid "automarkread"
+msgstr "Atzīmēt vēstules kā lasītas"
+
+msgid "afternseconds"
+msgstr "pēc $n sekundēm"
+
+msgid "reqmdn"
+msgstr "Vienmēr pieprasīt saņemšanas apstiprinājumu"
+
+msgid "reqdsn"
+msgstr "Vienmēr pieprasīt atskati par piegādi"
+
+msgid "alwayskeepformatting"
+msgstr "Vienmēr lietot oriģinālo teksta formatējumu"
+
+msgid "replysamefolder"
+msgstr ""
+"Glabāt atbildes tajā pašā mapē, kurā ir vēstule, uz kuru tika atbildēts"
+
+msgid "defaultabook"
+msgstr "Noklusētā adrešu grāmata"
+
+msgid "autocompletesingle"
+msgstr "Automātiski aizpildot, nerādīt alternatīvās e-pasta adreses"
+
+msgid "listnamedisplay"
+msgstr "Rādīt kontaktus kā"
+
+msgid "contactformmode"
+msgstr "Kontaktu formas režīms"
+
+msgid "privatemode"
+msgstr "Privāts (Mājas)"
+
+msgid "businessmode"
+msgstr "Biznesa (Darba)"
+
+msgid "collectedaddresses"
+msgstr "Uzkrātās adreses"
+
+msgid "collectedrecipients"
+msgstr "Uzkrātie saņēmēji"
+
+msgid "collectedrecipientsopt"
+msgstr "Uzkrāt izejošo e-pastu adresātus iekš"
+
+msgid "collectedsendersopt"
+msgstr "Uzkrāt uzticamos sūtītājus iekš"
+
+msgid "trustedsenders"
+msgstr "Uzticamie sūtītāji"
+
+msgid "spellcheckbeforesend"
+msgstr "Pirms vēstules nosūtīšanas pārbaudīt pareizrakstību"
+
+msgid "spellcheckoptions"
+msgstr "Pareizrakstības iestatījumi"
+
+msgid "spellcheckignoresyms"
+msgstr "Ignorēt vārdus, kuri satur simbolus"
+
+msgid "spellcheckignorenums"
+msgstr "Ignorēt vārdus, kuri satur skaitļus"
+
+msgid "spellcheckignorecaps"
+msgstr "Ignorēt vārdus, kuri rakstīti ar lielajiem burtiem"
+
+msgid "addtodict"
+msgstr "Pievienot vārdnīcai"
+
+msgid "editoroptions"
+msgstr "Redaktora iestatījumi"
+
+msgid "enableautolink"
+msgstr "Automātiski konvertēt korektus URL uz hipersaitēm"
+
+msgid "mailtoprotohandler"
+msgstr "Atverot mailto: saites, lietot šo e-pasta programmu"
+
+msgid "standardwindows"
+msgstr "Izlēcošie logi kā parasti logi"
+
+msgid "forwardmode"
+msgstr "Vēstuļu pārsūtīšana"
+
+msgid "inline"
+msgstr "iekļaujot"
+
+msgid "asattachment"
+msgstr "kā pielikumu"
+
+msgid "replyallmode"
+msgstr "[Atbildēt visiem] pogas noklusētā darbība"
+
+msgid "replyalldefault"
+msgstr "atbildēt visiem"
+
+msgid "replyalllist"
+msgstr "atbildēt tikai sarakstei (ja tāda tiek atrasta)"
+
+msgid "allmessages"
+msgstr "visām vēstulēm"
+
+msgid "olderxdays"
+msgstr "vecākas par $x dienām"
+
+msgid "folder"
+msgstr "Mapi"
+
+msgid "folders"
+msgstr "Mapes"
+
+msgid "foldername"
+msgstr "Mapes nosaukums"
+
+msgid "subscribed"
+msgstr "Abonēta"
+
+msgid "messagecount"
+msgstr "Vēstules"
+
+msgid "create"
+msgstr "Izveidot"
+
+msgid "createfolder"
+msgstr "Izveidot jaunu mapi"
+
+msgid "managefolders"
+msgstr "Rediģēt mapes"
+
+msgid "specialfolders"
+msgstr "Īpašās mapes"
+
+msgid "properties"
+msgstr "Īpašības"
+
+msgid "folderproperties"
+msgstr "Mapes īpašības"
+
+msgid "parentfolder"
+msgstr "Virsmape"
+
+msgid "location"
+msgstr "Atrašanās vieta"
+
+msgid "info"
+msgstr "Informācija"
+
+msgid "getfoldersize"
+msgstr "Uzklikšķiniet, lai uzzinātu mapes izmēru"
+
+msgid "changesubscription"
+msgstr "Uzklikšķiniet, lai mainītu abonēšanas iestatījumus"
+
+msgid "foldertype"
+msgstr "Mapes tips"
+
+msgid "personalfolder"
+msgstr "Privāta mape"
+
+msgid "otherfolder"
+msgstr "Cita lietotāja mape"
+
+msgid "sharedfolder"
+msgstr "Publiska mape"
+
+msgid "findfolders"
+msgstr "Meklēt mapes"
+
+msgid "findcontacts"
+msgstr "Atrast kontaktus"
+
+msgid "findmail"
+msgstr "Atrast epastus"
+
+msgid "namespace.personal"
+msgstr "Personīgās"
+
+msgid "namespace.other"
+msgstr "Citi lietotāji"
+
+msgid "namespace.shared"
+msgstr "Koplietota"
+
+msgid "dualuselabel"
+msgstr "Drīkst saturēt tikai"
+
+msgid "dualusemail"
+msgstr "vēstules"
+
+msgid "dualusefolder"
+msgstr "mapes"
+
+msgid "generate"
+msgstr "Ģenerēt"
+
+msgid "encryptioncreatekey"
+msgstr "Izveidot jaunu atslēgu pāri"
+
+msgid "openmailvelopesettings"
+msgstr "Parādīt \"Mailvelope\" iestatījumus"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Jūsu Mailvelope keyringā ir saglabātas $nr atbilstošas privātās atslēgas:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Šai sūtītāja identitātei vēl nav saglabāta PGP privātā atslēga jūsu "
+"Mailvelope paplašinājumā. Vai vēlaties izveidot jaunu, lai ieslēgtu šifrētu "
+"saziņu?"
+
+msgid "encryption"
+msgstr "Šifrēšana"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelope opcijas"
+
+msgid "mailvelopemainkeyring"
+msgstr "Izmantojiet Mailvelope galveno \"keyring\""
+
+msgid "mailvelopenotfound"
+msgstr ""
+"Mailvelope paplašinājums Jūsu interneta pārlūkā nav iespējots/uzinstalēts."
+
+msgid "mailvelopeenable"
+msgstr "Ieslēgt"
+
+msgid "sortby"
+msgstr "Kārtot pēc"
+
+msgid "sortasc"
+msgstr "Kārtot augošā secībā"
+
+msgid "sortdesc"
+msgstr "Kārtot dilstošā secībā"
+
+msgid "undo"
+msgstr "Atsaukt"
+
+msgid "installedplugins"
+msgstr "Uzstādītie spraudņi"
+
+msgid "plugin"
+msgstr "Spraudnis"
+
+msgid "version"
+msgstr "Versija"
+
+msgid "source"
+msgstr "Oriģināls"
+
+msgid "destination"
+msgstr "Galamērķis"
+
+msgid "license"
+msgstr "Licence"
+
+msgid "skinauthor"
+msgstr "no $author"
+
+msgid "support"
+msgstr "Atbalsts"
+
+msgid "savedsearches"
+msgstr "Saglabātie mekkējumi"
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "kB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unikods"
+
+msgid "english"
+msgstr "Angļu"
+
+msgid "westerneuropean"
+msgstr "Rietumeiropas"
+
+msgid "easterneuropean"
+msgstr "Austrumeiropas"
+
+msgid "southeasterneuropean"
+msgstr "Dienvidaustrumu Eiropas"
+
+msgid "baltic"
+msgstr "Baltijas"
+
+msgid "cyrillic"
+msgstr "Kirilicas"
+
+msgid "arabic"
+msgstr "Arābu"
+
+msgid "greek"
+msgstr "Grieķu"
+
+msgid "hebrew"
+msgstr "Ebreju"
+
+msgid "turkish"
+msgstr "Turku"
+
+msgid "nordic"
+msgstr "Ziemeļvalstu"
+
+msgid "thai"
+msgstr "Taizemes"
+
+msgid "celtic"
+msgstr "Ķeltu"
+
+msgid "vietnamese"
+msgstr "Vjetnamiešu"
+
+msgid "japanese"
+msgstr "Japāņu"
+
+msgid "korean"
+msgstr "Korejiešu"
+
+msgid "chinese"
+msgstr "Ķīniešu"
+
+msgid "arialabeltopnav"
+msgstr "Loga kontorle"
+
+msgid "arialabeltasknav"
+msgstr "Programmas uzdevumi"
+
+msgid "arialabeltoolbar"
+msgstr "Programmas rīkjosla"
+
+msgid "arialabellistnav"
+msgstr "Saraksta navigācija"
+
+msgid "arialabelactivetask"
+msgstr "Aktīvā darbība"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Epastu saraksta filtrs"
+
+msgid "arialabelmailsearchform"
+msgstr "Epastu meklēšanas forma"
+
+msgid "arialabelcontactsearchform"
+msgstr "Kontaktu meklēšanas forma"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Epastu meklēšanas ievadlauks"
+
+msgid "arialabelquicksearchbox"
+msgstr "Meklēšanas ievadlauks"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Mapju saraksta filtrs"
+
+msgid "arialabelfoldersearchform"
+msgstr "Mapju meklēšanas forma"
+
+msgid "arialabelfolderlist"
+msgstr "Epastu mapju atzīmēšana"
+
+msgid "arialabelmessagelist"
+msgstr "Epastu saraksts"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Ziņojuma priekšskats"
+
+msgid "arialabelmailboxmenu"
+msgstr "Izvēlne darbībām ar mapēm"
+
+msgid "arialabellistselectmenu"
+msgstr "Izvēlne sarakstu atzīmēšanai"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Vēstuļu vijumu saraksta izvēlne"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Vēstuļu attēlošanas un šķirošanas iestatījumi"
+
+msgid "arialabelmailimportdialog"
+msgstr "Vēstuļu importēšanas dialogs"
+
+msgid "arialabelmessagenav"
+msgstr "Vēstuļu navigācija"
+
+msgid "arialabelmessagebody"
+msgstr "Vēstules teksts"
+
+msgid "arialabelmessageactions"
+msgstr "Darbības ar vēstuli"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Kontaktu meklēšanas forma"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Kontaktu meklēšanas ievadlauks"
+
+msgid "arialabelmessageheaders"
+msgstr "Ziņojuma galvenes"
+
+msgid "arialabelforwardingoptions"
+msgstr "Pārsūtīšanas iestatījumi"
+
+msgid "arialabelreplyalloptions"
+msgstr "Atbildēt-visiem iestatījumi"
+
+msgid "arialabelmoremessageactions"
+msgstr "Citas darbības ar vēstulēm"
+
+msgid "arialabelmorecontactactions"
+msgstr "Citas darbības ar kontaktiem"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Atzīmēt norādītās vēstules kā ..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Rakstīšanas iestatījumi"
+
+msgid "arialabelresponsesmenu"
+msgstr "Gatavo atbilžu izvēlne"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Pielikuma augšupielādes forma"
+
+msgid "arialabelattachmentmenu"
+msgstr "Pielikuma parametri"
+
+msgid "arialabelmailtomenu"
+msgstr "E-pasta adreses opcijas"
+
+msgid "arialabelattachmentpreview"
+msgstr "Pielikuma priekšskats"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Kontaktu un grupu saraksts ko norādīt kā saņēmējus"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Kontaktu eksportēšanas iestatījumi"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Adrešu grāmatas/grupas iestatījumi"
+
+msgid "arialabelpreferencesform"
+msgstr "Iestatījumu forma"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Identitātes rediģēšanas forma"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Atbildes rediģēšanas forma"
+
+msgid "arialabelsearchterms"
+msgstr "Meklēšanas termini"
+
+msgid "arialabeldropactionmenu"
+msgstr "\"Velc un Noliec\" darbības izvēlne"
+
+msgid "arialabelheadersmenu"
+msgstr "Adresāta (galvenē) pievienošanas izvēlne"
+
+msgid "arialabelimagetools"
+msgstr "Attēla rīki"
+
+msgid "helplistnavigation"
+msgstr "Parādīt klaviatūras īsos taustiņus"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Bultiņas augšup/lejup: Mainīt rindas izsgaismošanu/atzīmēšanu.\n"
+"Garais taustiņš: Atzīmēt izgaismoto rindu.\n"
+"Shift + augšup/lejup: Atzīmēt papildus rindas augšup/lejup.\n"
+"Ctrl + Garais taustiņš: Pievienot vai noņemt izgaismoto rindu no atzīmēto saraksta."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Bultiņas pa labi/kreisi: atvērt vai aizvērt vēstules vijumu (tikai vijumu režīmā)\n"
+"Enter: Atvērt atzīmēto/izgaismoto vēstuli.\n"
+"Dzēst: Pārvietot atzīmēto vēstuli uz papīrgrozu."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: atvērt iezīmētos/izgaismotos kontaktus."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Radās kļūda!"
+
+msgid "messages.loginfailed"
+msgstr "Pieslēgties neizdevās"
+
+msgid "messages.cookiesdisabled"
+msgstr "Jūsu pārlūkprogramma neatbalsta sīkdatnes (cookies)"
+
+msgid "messages.sessionerror"
+msgstr "Jūsu sesija ir beigusies."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Konstatēta sīkfailu neatbilstība. Lūdzu, notīriet Jūsu interneta "
+"pārlūkprogrammas sīkfailus."
+
+msgid "messages.storageerror"
+msgstr "Neizdevās pieslēgties IMAP serverim"
+
+msgid "messages.servererror"
+msgstr "Servera kļūda!"
+
+msgid "messages.servererrormsg"
+msgstr "Servera kļūda: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+"Pārāk daudz neveiksmīgu autorizēšanās mēģinājumu. Mēģiniet atkārtoti vēlāk."
+
+msgid "messages.connerror"
+msgstr "Savienojuma kļūda - nav iespējams pieslēgties serverim!"
+
+msgid "messages.dberror"
+msgstr "Datubāzes kļūda!"
+
+msgid "messages.dbconnerror"
+msgstr "Neizdevās pieslēgties datubāzei!"
+
+msgid "messages.windowopenerror"
+msgstr "Izlēcošais logs tika bloķēts!"
+
+msgid "messages.requesttimedout"
+msgstr "Pieprasījumam iestājās noilgums"
+
+msgid "messages.errorreadonly"
+msgstr "Neizdevās veikt darbību: mape ir tikai lasāma (read only)"
+
+msgid "messages.errornoperm"
+msgstr "Neizdevās veikt darbību: piekļuve liegta"
+
+msgid "messages.erroroverquota"
+msgstr "Operāciju veikt nav iespējams. Uz diska nav brīvas veitas."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Uz diska nav brīvas vietas. Lai dzēstu vēstuli, lietojiet SHIFT+DEL."
+
+msgid "messages.invalidrequest"
+msgstr "Nederīgs pieprasījums! Dati netika saglabāti ..."
+
+msgid "messages.invalidhost"
+msgstr "Nederīgs servera nosaukums"
+
+msgid "messages.nomessagesfound"
+msgstr "Šajā pastkastē nav vēstuļu"
+
+msgid "messages.loggedout"
+msgstr "Jūs veiksmīgi pārtraucāt sesiju. Uz redzēšanos!"
+
+msgid "messages.mailboxempty"
+msgstr "Pastkaste ir tukša"
+
+msgid "messages.nomessages"
+msgstr "Nav nevienas vēstules"
+
+msgid "messages.refreshing"
+msgstr "Atjauno..."
+
+msgid "messages.loading"
+msgstr "Notiek ielāde..."
+
+msgid "messages.uploading"
+msgstr "Augšupielāde failu..."
+
+msgid "messages.attaching"
+msgstr "Pievieno failu..."
+
+msgid "messages.uploadingmany"
+msgstr "Augšupielādē failus..."
+
+msgid "messages.loadingdata"
+msgstr "Ielādē datus..."
+
+msgid "messages.checkingmail"
+msgstr "Notiek pasta pārbaude ..."
+
+msgid "messages.sendingmessage"
+msgstr "Tiek sūtīta vēstule ..."
+
+msgid "messages.messagesent"
+msgstr "Vēstule nosūtīta veiksmīgi"
+
+msgid "messages.savingmessage"
+msgstr "Vēstule tiek saglabāta ..."
+
+msgid "messages.messagesaved"
+msgstr "Vēstule saglabāta Uzmetumos"
+
+msgid "messages.successfullysaved"
+msgstr "Veiksmīgi saglabāts."
+
+msgid "messages.savingresponse"
+msgstr "Tiek saglabāts atbildes teksts ..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Vai Jūs tiešām gribat dzēst šo atbildes tekstu?"
+
+msgid "messages.nocontactselected"
+msgstr "Jūs vēl neesat norādījuši nevienu kontaktu."
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontakts veiksmīgi pievienots adrešu grāmatai"
+
+msgid "messages.contactexists"
+msgstr "Kontakts ar šādu e-pasta adresi jau eksistē"
+
+msgid "messages.contactnameexists"
+msgstr "Kontakts ar šādu vārdu jau eksistē."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Drošības nolūkos attēli, kuri tiek ielādēti no cita servera, šajā vēstulē ir"
+" bloķēti"
+
+msgid "messages.blockedresources"
+msgstr "Lai aizsargātu Jūsu privātumu, attālinātie reursi tika nobloķēti."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Šajā e-pasta ziņojumā ir aizdomīgas e-pasta adreses, kuras, iespējams, ir "
+"krāpnieciskas."
+
+msgid "messages.bccemail"
+msgstr "Pārsūtītajā (-os) ziņojumā (-os) ir konfidenciāli saņēmēji (BCC)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Ziņojums tiks nosūtīts bez jebkādām izmaiņām, t.i., izmantojot sākotnējo "
+"pamattekstu, galvenes un adresātus."
+
+msgid "messages.encryptedmessage"
+msgstr ""
+"Atvainojiet - šī ir šifrēta vēstule un diemžēl nevar tikt parādīta ..."
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Šis e-pasts ir šifrēts un var tikt atšifrēts izmantojot interneta pārlūka "
+"paplašinājumu."
+
+msgid "messages.nopubkeyfor"
+msgstr "E-pastam $email netika atrasta neviena publiskā atslēga"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Jūsu sūtīšanas identitātei nav iespējams atrast publisko atslēgu. Vai "
+"e-pastu šifrēt tikai saņēmējiem?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Jau augšupielādētu pielikumu nav iespējams nošifrēt. Lūdzu pievienojiet to "
+"atkārtoti, izmantojot šifrēšanas redakrotu."
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"Vai Jūs gribat lai trūkstošās atslēgas tiek sameklēt publiskajos atslēgu "
+"serveros?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Tika atrastas sekojošās publiskās atslēgas:"
+
+msgid "messages.keyservererror"
+msgstr "Neizdevās iegūt atslēgu no atslēgu servera."
+
+msgid "messages.keyimportsuccess"
+msgstr "Publiskā atslēga $key veiksmīgi ieimportēta Jūsu atslēgu sarakstā."
+
+msgid "messages.nocontactsfound"
+msgstr "Kontakti netika atrasti"
+
+msgid "messages.contactnotfound"
+msgstr "Pieprasītais kontakts nav atrasts"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Lai atrastu kontaktus no atzīmētās adrešu grāmatas, Jums ir jāizmanto "
+"meklēšanas forma."
+
+msgid "messages.sendingfailed"
+msgstr "Vēstule netika nosūtīta"
+
+msgid "messages.senttooquickly"
+msgstr "Lūdzu uzgaidiet $sec sekundi(-es) pirms sūtiet šo vēstuli"
+
+msgid "messages.errorsavingsent"
+msgstr "Saglabājot nosūtīto vēstuli notika kļūda - vēstule netika saglabāta"
+
+msgid "messages.errorsaving"
+msgstr "Saglabājot vēstuli notika kļūda - vēstule netika saglabāta"
+
+msgid "messages.errormoving"
+msgstr "Vēstule(s) netika pārvietota(s)"
+
+msgid "messages.errorcopying"
+msgstr "Vēstules pārkopēt neizdevās"
+
+msgid "messages.errordeleting"
+msgstr "Vēstules izdzēst neizdevās"
+
+msgid "messages.errormarking"
+msgstr "Iezīmēt vēstules nebija iespējams"
+
+msgid "messages.alerttitle"
+msgstr "Uzmanību"
+
+msgid "messages.confirmationtitle"
+msgstr "Vai Jūs esat pārliecināts..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Vai tiešām vēlaties dzēst iezīmētās kontaktpersonas?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Vai tiešām vēlaties dzēst atzīmēto grupu?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Vai tiešām vēlaties dzēst iezīmētās vēstules?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Vai tiešām vēlaties dzēst šo mapi?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Vai Jūs tiešām gribat pārvietot šo mapi?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Vai tiešām vēlaties dzēst visas vēstules, kuras atrodas šajā mapē?"
+
+msgid "messages.contactdeleting"
+msgstr "Dzēš kontaktus..."
+
+msgid "messages.groupdeleting"
+msgstr "Dzēš grupu..."
+
+msgid "messages.folderdeleting"
+msgstr "Dzēš mapi..."
+
+msgid "messages.foldermoving"
+msgstr "Pārvieto mapi..."
+
+msgid "messages.foldersubscribing"
+msgstr "Pieslēdz mapi..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Atslēdz mapi..."
+
+msgid "messages.formincomplete"
+msgstr "Forma nav pilnībā aizpildīta"
+
+msgid "messages.noemailwarning"
+msgstr "Lūdzu ievadiet korektu e-pasta adresi"
+
+msgid "messages.nonamewarning"
+msgstr "Lūdzu ievadiet vārdu"
+
+msgid "messages.nopagesizewarning"
+msgstr "Lūdzu ievadiet lapas izmēru"
+
+msgid "messages.nosenderwarning"
+msgstr "Lūdzu ievadiet sūtītāja e-pasta adresi"
+
+msgid "messages.recipientsadded"
+msgstr "Adresāti pievienoti veiksmīgi."
+
+msgid "messages.norecipientwarning"
+msgstr "Lūdzu ievadiet vismaz vienu saņēmēju"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Katrs adresāts redzēs pārējo adresātu e-pasta adreses. Lai to novērstu un "
+"nodrošinātu adresātu privātumu, Jūs varat izmantot Bcc lauku."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Pārāk daudz publisku adresātu"
+
+msgid "messages.nosubjectwarning"
+msgstr "Lauks \"temats\" ir tukšs. Vai vēlaties to aizpildīt tagad?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Bez tēmas"
+
+msgid "messages.nobodywarning"
+msgstr "Sūtīt vēstuli bez teksta?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Vēstule netika nosūtīta un tā satur nesaglabātas izmaiņas. Vai gribat atcelt"
+" šīs izmaiņas?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Ir atrasta pirms kāda laika uzrakstīta, bet nenosūtīta vēstule.\\n\\nTēma: "
+"$subject\\nSaglabāta:$date\\n\\nVai atjaunot šo vēstuli?"
+
+msgid "messages.nosearchname"
+msgstr "Lūdzu ievadiet kontaktpersonas vārdu vai e-pasta adresi"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Visi pielikumi vēl nav augšupielādēti - lūdzu uzgaidiet vai atceļiet "
+"augšupielādi"
+
+msgid "messages.searchsuccessful"
+msgstr "Atrastas $nr vēstules"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Atrasti $nr kontakti"
+
+msgid "messages.searchnomatch"
+msgstr "Meklējot nekas netika atrasts"
+
+msgid "messages.searching"
+msgstr "Meklē..."
+
+msgid "messages.checking"
+msgstr "Pārbauda..."
+
+msgid "messages.stillsearching"
+msgstr "Joprojām meklē ..."
+
+msgid "messages.nospellerrors"
+msgstr "Pareizrakstības kļūdas netika atrastas"
+
+msgid "messages.folderdeleted"
+msgstr "Mape veiksmīgi izdzēsta"
+
+msgid "messages.foldersubscribed"
+msgstr "Mape veiksmīgi pieslēgta."
+
+msgid "messages.folderunsubscribed"
+msgstr "Mape veiksmīgi atslēgta."
+
+msgid "messages.folderpurged"
+msgstr "Mape veiksmīgi iztukšota."
+
+msgid "messages.folderexpunged"
+msgstr "Mape veiksmīgi saspiesta."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Veiksmīgi izdzēsts"
+
+msgid "messages.converting"
+msgstr "Tiek noņemts vēstules formatējums..."
+
+msgid "messages.messageopenerror"
+msgstr "Nevarēja ielādēt vēstuli no servera"
+
+msgid "messages.filelinkerror"
+msgstr "Neizdevās faila pievienošana."
+
+msgid "messages.fileuploaderror"
+msgstr "Faila augšupielāde neveiksmīga"
+
+msgid "messages.csvfilemismatch"
+msgstr "Vairāku CSV failu importēšana ar dažādiem datu laukiem nav iespējama."
+
+msgid "messages.filesizeerror"
+msgstr "Augšupielādētais fails pārsniedz pieļaujamo $size izmēru."
+
+msgid "messages.filecounterror"
+msgstr "Vienā reizē Jūs varat augšupielādēt maksimums $count failus."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Neizdevās pievienot failu. Vēstules izmērs nedrīkst pārsniegt maksimālo "
+"pieļaujamo - $size ."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Pārsniegts maksimālais ziņojuma izmērs ($size). $num ziņojumi netika "
+"pievienoti.."
+
+msgid "messages.copysuccess"
+msgstr "$nr kontakti tika veiksmīgi pārkopēti."
+
+msgid "messages.movesuccess"
+msgstr "$nr kontakti tika veiksmīgi pārvietoti."
+
+msgid "messages.copyerror"
+msgstr "Kontaktus pārkopēt neizdevās."
+
+msgid "messages.moveerror"
+msgstr "Kontaktus pārvietot neizdevās."
+
+msgid "messages.sourceisreadonly"
+msgstr "Adreses avots ir lasīšanas režīmā tikai"
+
+msgid "messages.errorsavingcontact"
+msgstr "Kontakta adresi nevarēja saglabāt."
+
+msgid "messages.movingmessage"
+msgstr "Pārvieto vēstules..."
+
+msgid "messages.copyingmessage"
+msgstr "Kopē vēstules..."
+
+msgid "messages.copyingcontact"
+msgstr "Kopē kontaktus..."
+
+msgid "messages.movingcontact"
+msgstr "Pārvieto kontaktu(s)..."
+
+msgid "messages.deletingmessage"
+msgstr "Dzēš vēstules..."
+
+msgid "messages.markingmessage"
+msgstr "Atzīmē vēstules..."
+
+msgid "messages.addingmember"
+msgstr "Kontaktus pievieno grupai..."
+
+msgid "messages.removingmember"
+msgstr "Kontaktus atvieno no grupas..."
+
+msgid "messages.receiptsent"
+msgstr "Saņemšanas apstiprinājums nosūtīts veiksmīgi."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Neizdevās nosūtīt saņemšanas apstiprinājumu."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Vai Jūs tiešām vēlaties dzēst šo identitāti?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Šo identitāti nav iespējams izdzēst, jo tā ir pati pēdējā."
+
+msgid "messages.forbiddencharacter"
+msgstr "Mapes nosaukums satur aizliegtus simbolus."
+
+msgid "messages.selectimportfile"
+msgstr "Lūdzu norādiet failu, kuru vēlaties augšupielādēt."
+
+msgid "messages.addresswriterror"
+msgstr "Izvēlētās adrešu grāmatas datus nav iespējams rediģēt."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Kontakti tika veiksmīgi pievienoti šai grupai."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontakti tika veiksmīgi atvienoti no šīs grupas."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Grupā nekas netika mainīts."
+
+msgid "messages.importwait"
+msgstr "Importēju, lūdzu uzgaidiet..."
+
+msgid "messages.importformaterror"
+msgstr "Imports neizdevās! Augšupielādētais fails nav derīgs importam."
+
+msgid "messages.importconfirm"
+msgstr "<b>Veiksmīgi ieimportēti $inserted kontakti</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>Izlaida $skipped jau eksistējošus kontaktus</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>Izlaida $invalid nederīgus kontaktus </b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "<b>Neizdevās ieimportēt $errors derīgus kontaktus</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "Veiksmīgi ieimportētas $nr vēstules"
+
+msgid "messages.importmessageerror"
+msgstr "Importēšanas kļūda! Augšupielādētā datne satur nekorektus datus"
+
+msgid "messages.opnotpermitted"
+msgstr "Darbība nav atļauta!"
+
+msgid "messages.nofromaddress"
+msgstr "Izvēlētajai identitātei nav norādīta e-pasta adrese."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Pārslēdzot redaktora veidus var tikt pazaudēts teksta formatējums. Vai "
+"turpināt?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Notika kritiska kļūme. Lūdzu nekavējoties sazinieties ar Jūsu "
+"administratoru. <b>Jūsu vēstuli nosūtīt nav iespējams.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP kļūme ($code): Neizdevās pieslēgties serverim"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP kļūda ($code): Neizdevās autorizēties."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP kļūda ($code): Neizdevās iestatīt sūtītāju \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP kļūda ($code): Neizdevās pievienot saņēmēju \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP kļūda: Nav iespējams aptrādāt saņēmēju sarakstu."
+
+msgid "messages.smtputf8error"
+msgstr "SMTP kļūda: serveris neatbalsta unikodu epasta adresē."
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+"SMTP kļūda: Vēstules izmērs pārsniedz serverī noteikto limitu ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP kļūda: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Nepareiza e-pasta adrese: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Pārāk daudz saņēmēju. Samaziniet skaitu līdz $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Grupas dalībnieku skaits pārsniedz limitu $max."
+
+msgid "messages.internalerror"
+msgstr "Atgadījās servera iekšējā kļūda. Lūdzu mēģiniet vēlreiz."
+
+msgid "messages.contactdelerror"
+msgstr "Kontaktus izdzēst neizdevās."
+
+msgid "messages.contactdeleted"
+msgstr "Kontakti izdzēsti veiksmīgi."
+
+msgid "messages.contactrestoreerror"
+msgstr "Izdzēstos kontaktus atjaunot neizdevās."
+
+msgid "messages.contactrestored"
+msgstr "Kontakti atjaunoti veiksmīgi."
+
+msgid "messages.groupdeleted"
+msgstr "Grupa izdzēsta veiksmīgi."
+
+msgid "messages.grouprenamed"
+msgstr "Grupa pārdēvēta veiksmīgi."
+
+msgid "messages.groupcreated"
+msgstr "Grupa izveidota veiksmīgi."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Saglabātais meklēšanas pieprasījums izdzēsts veiksmīgi."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Saglabāto meklēšanas pieprasījumu izdzēst neizdevās."
+
+msgid "messages.savedsearchcreated"
+msgstr "Saglabātais meklēšanas pieprasījums saglabāts veiksmīgi."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Meklēšanas pieprasījumu izveidot neizdevās."
+
+msgid "messages.messagedeleted"
+msgstr "Vēstule(s) veiksmīgi izdzēsta(s)."
+
+msgid "messages.messagemoved"
+msgstr "Vēstule(s) veiksmīgi pārvietota(s)."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Vēstule(s) veiksmīgi iemesta(s) papīrgrozā."
+
+msgid "messages.messagecopied"
+msgstr "Vēstule(s) veiksmīgi pārkopēta(s)."
+
+msgid "messages.messagemarked"
+msgstr "Vēstule(s) veiksmīgi atzīmēta(s)."
+
+msgid "messages.autocompletechars"
+msgstr "Lai automātiski meklētu, ievadiet vismaz $min burtus."
+
+msgid "messages.autocompletemore"
+msgstr ""
+"Atrasti vairāki ieraksti. Papildiniet meklēšanas kritēriju ar vairāk "
+"burtiem."
+
+msgid "messages.namecannotbeempty"
+msgstr "Lūdzu ievadiet vārdu."
+
+msgid "messages.nametoolong"
+msgstr "Vārds ir pārāk garš."
+
+msgid "messages.namedotforbidden"
+msgstr "Mapes nosaukums nedrīkst sākties ar punktu."
+
+msgid "messages.folderupdated"
+msgstr "Mape vieksmīgi atjaunota."
+
+msgid "messages.foldercreated"
+msgstr "Mape veiksmīgi izveidota."
+
+msgid "messages.invalidimageformat"
+msgstr "Nederīgs attēla formāts."
+
+msgid "messages.mispellingsfound"
+msgstr "Vēstulē atrastas pareizrakstības kļūdas."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Neizdevās izveidot/pārvietot mapi atzīmētajā virsmapē. Nav piekļuves "
+"tiesību."
+
+msgid "messages.messagetoobig"
+msgstr "Vēstule daļa ir pārāk liela, lai to varētu apstrādāt."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Šis e-pasta pielikums ir aizdomīgs, jo tā tips neatbilst tam, kurš norādīts "
+"pašā epasta ziņojumā. Ja Jūs neuzticaties sūtītājam, vai tas ir nepazīstams,"
+" Jums labāk nevērt vaļā šo e-pasta pielikumu, jo tas var saturēt ļaundabīgu "
+"kodu. <br/><br/><em>Norādīts: $expected; Atrasts: $detected3</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Uzmanību: lai lasītu e-pastus, Jūsu pārlūkprogrammā jābūt ieslēgtiem "
+"JavaScript."
+
+msgid "messages.messageissent"
+msgstr ""
+"E-pasts jau ir nosūtīts, bet nav saglabāts. Vai Jūs vēlaties to tagad "
+"saglabāt?"
+
+msgid "messages.errnotfound"
+msgstr "Fails netika atrasts"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Pieprasītais avots netika atrasts!"
+
+msgid "messages.errfailedrequest"
+msgstr "Pieprasījums neizdevās"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Neveiksmīga autorizācija"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Nevar pārbaudīt vai Jūs esat autorizēts izmantot šo servisu!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Pieprasījuma pārbaude neizdevās."
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Jūsu drošībai pieeja šim resursam ir aizsargāta pret vairāku vietņu pieprasījuma viltošanu (CSRF ).\n"
+"Ja Jūs redzat šo ziņojumu, iespējams Jūs iepriekš nebijāt izgājuši ārā no šī e-pasta pārlūka.\n"
+"\n"
+"Lai turpinātu, ir nepieciešams veikt lietotāja darbības."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Lūdzu kontaktējieties ar servera administratoru."
+
+msgid "messages.clicktoresumesession"
+msgstr "Lai atjaunotu Jūsu iepriekšējo sesiju, spiest šeit."
+
+msgid "messages.errcomposesession"
+msgstr "Rakstot vēstuli radās autorizācijas sesijas kļūda"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Pieprasītā sesija, vēstules rakstīšanai, netika atrasta."
+
+msgid "messages.clicktocompose"
+msgstr "Lai rakstītu jaunu vēstuli, spiest šeit"
+
+msgid "messages.nosupporterror"
+msgstr "Šī iespēja Jūsu interneta pārlūkā nav atbalstīta."
+
+msgid "messages.siginserted"
+msgstr "Paraksts ievietots veiksmīgi."
+
+msgid "messages.responseinserted"
+msgstr "Atbilde ievietota veiksmīgi."
+
+msgid "messages.noresponsesavailable"
+msgstr "Nav pieejama neviena atbilde."
+
+msgid "messages.listempty"
+msgstr "Saraksts ir tukšs."
+
+msgid "messages.listusebutton"
+msgstr "Lai pievienotu jaunu ierakstu, izmantojiet pogu \"Izveidot\"."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Jauns atslēgu pāris identitātei $identity tika veiksmīgi izveidots."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Izskatās, ka šis pielikums ir tukšs.<br>Lūdzu, sazinaties ar personu, kura "
+"to nosūtīja."
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth autorizācija neizdevās. Lūdzu mēģiniet vēlreiz."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Autorizācijas pieprasījums bija kļūdains vai nepabeigts."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Autorizācijas serveris vai lietotājs noraidīja pieprasījumu."

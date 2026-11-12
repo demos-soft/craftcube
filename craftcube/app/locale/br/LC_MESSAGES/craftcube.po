@@ -1,0 +1,2887 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: br\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Degemer mat war $product"
+
+msgid "username"
+msgstr "Anv an arveriad"
+
+msgid "password"
+msgstr "Ger-Tremen"
+
+msgid "server"
+msgstr "Dafariad"
+
+msgid "login"
+msgstr "Kennaskañ"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Digennaskañ"
+
+msgid "mail"
+msgstr "Postel elektronek"
+
+msgid "settings"
+msgstr "Arventennoù"
+
+msgid "addressbook"
+msgstr "Karned chomlec'hioù"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Boest degemer"
+
+msgid "drafts"
+msgstr "Brouilhedoù"
+
+msgid "sent"
+msgstr "Kaset"
+
+msgid "trash"
+msgstr "Pod-lastez"
+
+msgid "junk"
+msgstr "Stroboù"
+
+msgid "show_real_foldernames"
+msgstr "Diskouez anvioù gwir teuliadoù arbennik"
+
+msgid "subject"
+msgstr "Sujed"
+
+msgid "from"
+msgstr "Eus"
+
+msgid "sender"
+msgstr "Kaser"
+
+msgid "to"
+msgstr "Da"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Cci"
+
+msgid "replyto"
+msgstr "Respont-da"
+
+msgid "followupto"
+msgstr "Treuskas da"
+
+msgid "date"
+msgstr "Deiz"
+
+msgid "size"
+msgstr "Ment"
+
+msgid "priority"
+msgstr "Kentwir"
+
+msgid "organization"
+msgstr "Aozadur"
+
+msgid "readstatus"
+msgstr "Stad al lenn"
+
+msgid "listoptions"
+msgstr "Dibarzhioù ar roll..."
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Teuliadoù"
+
+msgid "messagesfromto"
+msgstr "Kemennadoù eus $from da $to war $count"
+
+msgid "threadsfromto"
+msgstr "Sujedoù $from da $to war $count"
+
+msgid "messagenrof"
+msgstr "Kemennad $nr war $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to war $count"
+
+msgid "copy"
+msgstr "Eilañ"
+
+msgid "move"
+msgstr "Dilec'hiañ"
+
+msgid "moveto"
+msgstr "Dilec'hiañ da..."
+
+msgid "copyto"
+msgstr "Eilañ da…"
+
+msgid "download"
+msgstr "Pellgargañ"
+
+msgid "open"
+msgstr "Digeriñ"
+
+msgid "showattachment"
+msgstr "Diskouez"
+
+msgid "showanyway"
+msgstr "Diskouez anezhañ memestra"
+
+msgid "filename"
+msgstr "Anv ar restr"
+
+msgid "filesize"
+msgstr "Ment ar restr"
+
+msgid "addtoaddressbook"
+msgstr "Ouzhpennañ er c'harned chomlec'hioù"
+
+msgid "sun"
+msgstr "Sul"
+
+msgid "mon"
+msgstr "Lun"
+
+msgid "tue"
+msgstr "Meu"
+
+msgid "wed"
+msgstr "Mer"
+
+msgid "thu"
+msgstr "Yao"
+
+msgid "fri"
+msgstr "Gwe"
+
+msgid "sat"
+msgstr "Sad"
+
+msgid "sunday"
+msgstr "Sul"
+
+msgid "monday"
+msgstr "Lun"
+
+msgid "tuesday"
+msgstr "Meurzh"
+
+msgid "wednesday"
+msgstr "Merc'her"
+
+msgid "thursday"
+msgstr "Yaou"
+
+msgid "friday"
+msgstr "Gwener"
+
+msgid "saturday"
+msgstr "Sadorn"
+
+msgid "jan"
+msgstr "Gen"
+
+msgid "feb"
+msgstr "C'hwe"
+
+msgid "mar"
+msgstr "Meu"
+
+msgid "apr"
+msgstr "Ebr"
+
+msgid "may"
+msgstr "Mae"
+
+msgid "jun"
+msgstr "Mez"
+
+msgid "jul"
+msgstr "Gou"
+
+msgid "aug"
+msgstr "Eos"
+
+msgid "sep"
+msgstr "Gwe"
+
+msgid "oct"
+msgstr "Her"
+
+msgid "nov"
+msgstr "Du"
+
+msgid "dec"
+msgstr "Ker"
+
+msgid "longjan"
+msgstr "Genver"
+
+msgid "longfeb"
+msgstr "C'hwevrer"
+
+msgid "longmar"
+msgstr "Meurzh"
+
+msgid "longapr"
+msgstr "Ebrel"
+
+msgid "longmay"
+msgstr "Mae"
+
+msgid "longjun"
+msgstr "Mezheven"
+
+msgid "longjul"
+msgstr "Gouere"
+
+msgid "longaug"
+msgstr "Eost"
+
+msgid "longsep"
+msgstr "Gwengolo"
+
+msgid "longoct"
+msgstr "Here"
+
+msgid "longnov"
+msgstr "Du"
+
+msgid "longdec"
+msgstr "Kerzu"
+
+msgid "today"
+msgstr "Hiziv"
+
+msgid "refresh"
+msgstr "Azgrenaat"
+
+msgid "checkmail"
+msgstr "Gwiriañ kemennadoù nevez"
+
+msgid "compose"
+msgstr "Skrivañ ur c'hemennad nevez"
+
+msgid "writenewmessage"
+msgstr "Skrivañ ur c'hemennad nevez"
+
+msgid "reply"
+msgstr "Respont"
+
+msgid "replytomessage"
+msgstr "Respont d'ar kaser"
+
+msgid "replytoallmessage"
+msgstr "Respont d'an holl"
+
+msgid "replyall"
+msgstr "Respont d'an holl"
+
+msgid "replylist"
+msgstr "Respont d'ar roll"
+
+msgid "forward"
+msgstr "Treuzkas"
+
+msgid "forwardinline"
+msgstr "Treuzkas er gemennadenn"
+
+msgid "forwardattachment"
+msgstr "Treuskas evel pezh stag"
+
+msgid "forwardmessage"
+msgstr "Treuzkas ar c'hemennad"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Dilec'hiañ ar c'hemennad er pod-lastez"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "lakit er pod lastez"
+
+msgid "printmessage"
+msgstr "Moulañ ar c'hemennad-se"
+
+msgid "previousmessage"
+msgstr "Gwelout ar c\"hemennad a-raok"
+
+msgid "firstmessage"
+msgstr "Gwelout ar c'hemennad kentañ"
+
+msgid "nextmessage"
+msgstr "Gwelout ar c'hemennad da heul"
+
+msgid "lastmessage"
+msgstr "Gwelout ar c'hemennad diwezhañ"
+
+msgid "backtolist"
+msgstr "Distreiñ el listenn kemennadoù"
+
+msgid "viewsource"
+msgstr "Gwelout an tarzh"
+
+msgid "mark"
+msgstr "merkañ"
+
+msgid "markmessages"
+msgstr "Merkañ ar c'hemennad"
+
+msgid "markread"
+msgstr "E-giz lennet"
+
+msgid "markunread"
+msgstr "E-giz anlennet"
+
+msgid "markflagged"
+msgstr "spilhennet"
+
+msgid "markunflagged"
+msgstr "n'eo ket bet spilhennet"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "muioc'h a dibab"
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr "Holl teuliadoù"
+
+msgid "more"
+msgstr "muioc'h"
+
+msgid "back"
+msgstr "distro"
+
+msgid "options"
+msgstr "Dibarzhioù"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr "Kentañ"
+
+msgid "last"
+msgstr "Diwezhañ"
+
+msgid "previous"
+msgstr "Kent"
+
+msgid "next"
+msgstr "War-Lerc'h"
+
+msgid "select"
+msgstr "Diuzañ"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "An holl"
+
+msgid "none"
+msgstr "Ebet"
+
+msgid "currpage"
+msgstr "Pajenn"
+
+msgid "isread"
+msgstr "Lennet"
+
+msgid "unread"
+msgstr "Na lennet"
+
+msgid "flagged"
+msgstr "Merket"
+
+msgid "unflagged"
+msgstr "N'eo ket merket"
+
+msgid "unanswered"
+msgstr "Respontet ebet"
+
+msgid "withattachment"
+msgstr "Gant restroù staget"
+
+msgid "deleted"
+msgstr "Dilammet"
+
+msgid "undeleted"
+msgstr "N'eo ket bet dilammet"
+
+msgid "replied"
+msgstr "Respontet"
+
+msgid "forwarded"
+msgstr "Treuzkaset"
+
+msgid "invert"
+msgstr "Tuginañ"
+
+msgid "filter"
+msgstr "Sil"
+
+msgid "list"
+msgstr "Listennañ"
+
+msgid "threads"
+msgstr "Neudennadoù"
+
+msgid "expand-all"
+msgstr "Diskouez an holl"
+
+msgid "expand-unread"
+msgstr "Diskouez ar re anlennet"
+
+msgid "collapse-all"
+msgstr "Serriñ an holl"
+
+msgid "threaded"
+msgstr "Dre neudennadoù"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Diskouez an neudennadoù ar gemennadenn"
+
+msgid "do_expand"
+msgstr "an holl steudadoù"
+
+msgid "expand_only_unread"
+msgstr "Gant kemennadennoù anlennet nemetken"
+
+msgid "fromto"
+msgstr "Eus/ Da"
+
+msgid "flag"
+msgstr "Merket"
+
+msgid "attachment"
+msgstr "Restroù staget"
+
+msgid "nonesort"
+msgstr "Ebet"
+
+msgid "sentdate"
+msgstr "Deiz kas"
+
+msgid "arrival"
+msgstr "Deiz erruet"
+
+msgid "asc"
+msgstr "War-grec'h"
+
+msgid "desc"
+msgstr "war ziskenn"
+
+msgid "listcolumns"
+msgstr "Roll bannoù"
+
+msgid "listsorting"
+msgstr "Bann rummañ"
+
+msgid "listorder"
+msgstr "Urzh ar rummañ"
+
+msgid "listmode"
+msgstr "Mod roll"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Listennañ"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Gweredoù an teuliad..."
+
+msgid "compact"
+msgstr "Koazhet"
+
+msgid "empty"
+msgstr "Goulo"
+
+msgid "importmessages"
+msgstr "Enporzhiañ kemennadennoù"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Arver ar gantenn"
+
+msgid "unknown"
+msgstr "Dianav"
+
+msgid "unlimited"
+msgstr "didermen"
+
+msgid "quotatype"
+msgstr "Doare "
+
+msgid "quotatotal"
+msgstr "Bevenn"
+
+msgid "quotaused"
+msgstr "Arveret"
+
+msgid "quotastorage"
+msgstr "Egor kantenn"
+
+msgid "quotamessage"
+msgstr "Niver a gemenadennoù"
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Klask prim"
+
+msgid "searchplaceholder"
+msgstr "Klask..."
+
+msgid "resetsearch"
+msgstr "Aderaouekaat ar c'hlask"
+
+msgid "searchmod"
+msgstr "Kemmer klask"
+
+msgid "msgtext"
+msgstr "Kemennadenn a-bezh"
+
+msgid "body"
+msgstr "Korf"
+
+msgid "type"
+msgstr "Doare"
+
+msgid "namex"
+msgstr "Anv"
+
+msgid "searchscope"
+msgstr "Ledennad"
+
+msgid "currentfolder"
+msgstr "Teuliad bremanel"
+
+msgid "subfolders"
+msgstr "An hini-mañ hag an isteuliadoù"
+
+msgid "allfolders"
+msgstr "Holl teuliadoù"
+
+msgid "searchinterval-1W"
+msgstr "kozhoc'h eget ur sizhun"
+
+msgid "searchinterval-1M"
+msgstr "kozhoc'h eget ur miz"
+
+msgid "searchinterval-1Y"
+msgstr "kozhoc'h eget ur bloaz"
+
+msgid "searchinterval1W"
+msgstr "nevesoc'h eget ur sizhun"
+
+msgid "searchinterval1M"
+msgstr "nevezoc'h eget ur miz"
+
+msgid "searchinterval1Y"
+msgstr "nevezoc'h eget ur bloaz"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Digeriñ en ur prenestr nevez"
+
+msgid "emlsave"
+msgstr "Pellgargañ (.eml)"
+
+msgid "changeformattext"
+msgstr "Skrammañ e mentrezh testenn blaen"
+
+msgid "changeformathtml"
+msgstr "Skrammañ e mentrezh HTML"
+
+msgid "editasnew"
+msgstr "Embann evel unan nevez"
+
+msgid "send"
+msgstr "Kas"
+
+msgid "sendmessage"
+msgstr "Kas ar c'hemennad diouzhtu"
+
+msgid "savemessage"
+msgstr "Gwarediñ ar brouilhed-se"
+
+msgid "addattachment"
+msgstr "Stagañ ur restr"
+
+msgid "charset"
+msgstr "Engodadur"
+
+msgid "editortype"
+msgstr "Furmad aozer"
+
+msgid "returnreceipt"
+msgstr "Testeni degemer"
+
+msgid "dsn"
+msgstr "Rebuziñ stad an treuzkas"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "D'an/ar $date eo bet skrivet gant $sender:"
+
+msgid "originalmessage"
+msgstr "Kemennadenn orin"
+
+msgid "selectimage"
+msgstr "Diuzañ ur skeudenn"
+
+msgid "addimage"
+msgstr "Ouzhpennañ ur skeudenn"
+
+msgid "selectmedia"
+msgstr "Diuzañ ur film"
+
+msgid "addmedia"
+msgstr "Ouzhpennañ ur film"
+
+msgid "encrypt"
+msgstr "Enringegañ"
+
+msgid "encryptmessage"
+msgstr "Enrinegañ ar gemennadenn"
+
+msgid "encryptmessagemailvelope"
+msgstr "Enrinegañ ar gemennadenn gant Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Enporzhiañ an alc'hwezioù foran"
+
+msgid "encryptedsendialog"
+msgstr "O kas ur gemennadenn enrineget"
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr "Naoudi an alc'hwez"
+
+msgid "keylength"
+msgstr "a vitoù"
+
+msgid "keyexpired"
+msgstr "Diamzeret"
+
+msgid "keyrevoked"
+msgstr "Dizorniet"
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Enlakaat"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "Degemerer"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Embann ar pivelezhioù"
+
+msgid "spellcheck"
+msgstr "Skrivañ"
+
+msgid "checkspelling"
+msgstr "Gwiriañ ar reizhskrivadur"
+
+msgid "resumeediting"
+msgstr "Distreiñ en aozer"
+
+msgid "revertto"
+msgstr "Distreiñ en/r"
+
+msgid "restore"
+msgstr "Assav"
+
+msgid "restoremessage"
+msgstr "Assav ar gemennadenn"
+
+msgid "ignore"
+msgstr "Leuskel"
+
+msgid "responses"
+msgstr "Respontoù"
+
+msgid "insertresponse"
+msgstr "Enlakaat ur respont"
+
+msgid "manageresponses"
+msgstr "Ardeiñ ar respontoù"
+
+msgid "newresponse"
+msgstr "Krouiñ ur respont nevez"
+
+msgid "addresponse"
+msgstr "Ouzhpennañ ur respont"
+
+msgid "editresponse"
+msgstr "Kemmañ ar respont"
+
+msgid "editresponses"
+msgstr "Embann respontoù"
+
+msgid "responsename"
+msgstr "Anv"
+
+msgid "responsetext"
+msgstr "Testenn ar respont"
+
+msgid "attach"
+msgstr "Kenstagañ"
+
+msgid "attachments"
+msgstr "Restroù staget"
+
+msgid "upload"
+msgstr "Pellgas"
+
+msgid "uploadprogress"
+msgstr "$percent ($current war $total)"
+
+msgid "close"
+msgstr "Serriñ"
+
+msgid "messageoptions"
+msgstr "Dibarzhioù ar gemennadenn..."
+
+msgid "togglecomposeoptions"
+msgstr "Trec'haoliñ dibarzhioù kenaozañ"
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Izel"
+
+msgid "lowest"
+msgstr "An izelañ"
+
+msgid "normal"
+msgstr "Reizh"
+
+msgid "high"
+msgstr "Uhel"
+
+msgid "highest"
+msgstr "An uhelañ"
+
+msgid "nosubject"
+msgstr "(danvez ebet)"
+
+msgid "showimages"
+msgstr "Diskouez ar skeudennoù"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "Atav diskouez skeudennoù a-berzh $sender"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Ur brouilhed eo."
+
+msgid "andnmore"
+msgstr "$nr muioc'h..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Diskouez muioc'h a dalbennoù kemennadenn"
+
+msgid "togglefullheaders"
+msgstr "Trec'haoliñ talbennoù kemennadenn diaoz"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "testenn kriz"
+
+msgid "savesentmessagein"
+msgstr "Enrollañ ar gemennadenn kaset e"
+
+msgid "dontsave"
+msgstr "Na enrollañ"
+
+msgid "maxuploadsize"
+msgstr "Ar vent vrasañ aotreet eo $size"
+
+msgid "addcc"
+msgstr "Ouzhpennañ Cc"
+
+msgid "addbcc"
+msgstr "Ouzhpennañ Bcc"
+
+msgid "addreplyto"
+msgstr "Ouzhpennañ Respont-da"
+
+msgid "addfollowupto"
+msgstr "Ouzhpennañ Kas-en-dro-da"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Goulennet eo bet gant kaser ar gemennadenn bezañ rebuzet ur wech lennet ar "
+"gemennadenn ganeoc'h. Fallout a ra deoc'h rebuziñ ar c'haser?"
+
+msgid "receiptread"
+msgstr "Testeni-degemer (lenn)"
+
+msgid "yourmessage"
+msgstr "Un testeni-degemer evit ho kemennadenn eo"
+
+msgid "receiptnote"
+msgstr ""
+"Evezhiadenn: An testeni-se a dalv eo bet skrammet ar gemennadenn war "
+"urzhiataer an degemerer. N'eus gwarant ebet eo bet lennet pe komprenet "
+"endalc'had ar gemennadenn."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Anv da ziskouez"
+
+msgid "firstname"
+msgstr "Raganv"
+
+msgid "surname"
+msgstr "Anv"
+
+msgid "middlename"
+msgstr "Anv kreiz"
+
+msgid "nameprefix"
+msgstr "Rakger"
+
+msgid "namesuffix"
+msgstr "Lostger"
+
+msgid "nickname"
+msgstr "Lesanv"
+
+msgid "jobtitle"
+msgstr "Titl labour"
+
+msgid "department"
+msgstr "Departamant"
+
+msgid "gender"
+msgstr "Rev"
+
+msgid "maidenname"
+msgstr "Anv orin"
+
+msgid "email"
+msgstr "Postel"
+
+msgid "phone"
+msgstr "Pellgomz"
+
+msgid "address"
+msgstr "Chomlec'h"
+
+msgid "street"
+msgstr "Straed"
+
+msgid "locality"
+msgstr "Kêr"
+
+msgid "zipcode"
+msgstr "Kod Post"
+
+msgid "region"
+msgstr "Stad/Proviñs"
+
+msgid "country"
+msgstr "Bro"
+
+msgid "birthday"
+msgstr "Deiz ha bloaz"
+
+msgid "anniversary"
+msgstr "Deiz ha bloaz"
+
+msgid "website"
+msgstr "Lec'hienn"
+
+msgid "instantmessenger"
+msgstr "Postelerezh prim"
+
+msgid "notes"
+msgstr "Notennoù"
+
+msgid "male"
+msgstr "paotr"
+
+msgid "female"
+msgstr "plac'h"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Merour"
+
+msgid "assistant"
+msgstr "Skoazeller"
+
+msgid "spouse"
+msgstr "Pried"
+
+msgid "allfields"
+msgstr "An holl vaeziennoù"
+
+msgid "search"
+msgstr "Klask"
+
+msgid "searchresult"
+msgstr "Disoc'hoù an enklask"
+
+msgid "advsearch"
+msgstr "Klask kempleshoc'h"
+
+msgid "advanced"
+msgstr "Araokaet"
+
+msgid "other"
+msgstr "All"
+
+msgid "printcontact"
+msgstr "Moullañ an darempred"
+
+msgid "qrcode"
+msgstr "KR Kod"
+
+msgid "typehome"
+msgstr "Degemer"
+
+msgid "typework"
+msgstr "Labour"
+
+msgid "typeother"
+msgstr "All"
+
+msgid "typemobile"
+msgstr "Hezoug"
+
+msgid "typemain"
+msgstr "Pennañ"
+
+msgid "typehomefax"
+msgstr "Faks ar gêr"
+
+msgid "typeworkfax"
+msgstr "Faks al labour"
+
+msgid "typecar"
+msgstr "Gwetur"
+
+msgid "typepager"
+msgstr "Pajenner"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Skoazeller"
+
+msgid "typehomepage"
+msgstr "Pajenn degemer"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Ouzhpennañ ur vaezienn..."
+
+msgid "addcontact"
+msgstr "Ouzhpennañ un darempred"
+
+msgid "editcontact"
+msgstr "Cheñch an darempred"
+
+msgid "contacts"
+msgstr "darempred"
+
+msgid "contactproperties"
+msgstr "Perzhioù an darempred"
+
+msgid "contactnameandorg"
+msgstr "Anv hag aozadur"
+
+msgid "personalinfo"
+msgstr "Titouroù personel"
+
+msgid "personal"
+msgstr "Personel"
+
+msgid "contactphoto"
+msgstr "Skeudenn darempred"
+
+msgid "edit"
+msgstr "Embann"
+
+msgid "cancel"
+msgstr "Nullañ"
+
+msgid "save"
+msgstr "Enrollañ"
+
+msgid "delete"
+msgstr "Dilemel"
+
+msgid "discard"
+msgstr "Dilezel"
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr "Mat eo"
+
+msgid "rename"
+msgstr "Adenvel"
+
+msgid "addphoto"
+msgstr "Ouzhpennañ"
+
+msgid "replacephoto"
+msgstr "Amsaviñ"
+
+msgid "uploadphoto"
+msgstr "Pellgas ur skeudenn"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "Krouiñ un darempred nevez"
+
+msgid "deletecontact"
+msgstr "Dilemel an darempredoù diuzet"
+
+msgid "composeto"
+msgstr "Skrivañ ur gemennadenn da"
+
+msgid "contactsfromto"
+msgstr "Darempredoù eus $from ouzh $to war $count"
+
+msgid "print"
+msgstr "Moullañ"
+
+msgid "export"
+msgstr "Ezporzhiañ"
+
+msgid "exportall"
+msgstr "Ezporzhiañ an holl"
+
+msgid "exportsel"
+msgstr "Ezporzhiañ ar re diuzet"
+
+msgid "exportvcards"
+msgstr "Ezporzhiañ an darempredoù er mentrezh vCard"
+
+msgid "newgroup"
+msgstr "Krouiñ ur strollad nevez"
+
+msgid "addgroup"
+msgstr "Ouzhpennañ ur strollad"
+
+msgid "grouprename"
+msgstr "Adeñvel ar strollad"
+
+msgid "groupdelete"
+msgstr "Dilemel ar strollad"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Dilemel an darempredoù diuzet eus ar strollad"
+
+msgid "uponelevel"
+msgstr "Pignat eus ul live"
+
+msgid "previouspage"
+msgstr "Diskouez ar bajenn gent"
+
+msgid "firstpage"
+msgstr "Diskouez ar bajenn gentañ"
+
+msgid "nextpage"
+msgstr "Diskouez ar pajenn da heul"
+
+msgid "lastpage"
+msgstr "Gwelout ar bajenn ziwezhañ"
+
+msgid "group"
+msgstr "Strollad"
+
+msgid "groups"
+msgstr "Strolladoù"
+
+msgid "listgroup"
+msgstr "Roll izili ar strollad"
+
+msgid "personaladrbook"
+msgstr "Chomlec'h personel"
+
+msgid "searchsave"
+msgstr "enrollane an enklask"
+
+msgid "searchdelete"
+msgstr "dilemel an enklask"
+
+msgid "import"
+msgstr "enporzhiañ"
+
+msgid "importcontacts"
+msgstr "Enporzhiañ darempredoù"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Ouzhpennañ an darempredoù da"
+
+msgid "importreplace"
+msgstr "Amsaviñ ar c'harned chomlec'hioù a-bezh"
+
+msgid "importgroups"
+msgstr "Enporzhiañ deverkadurioù strolladoù"
+
+msgid "importgroupsall"
+msgstr "An holl (krouiñ strolladoù m'eo ret)"
+
+msgid "importgroupsexisting"
+msgstr "Evit ar strolladoù ma zo diouto hepken"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Graet eo"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Arventennoù evit"
+
+msgid "about"
+msgstr "Diwar-benn"
+
+msgid "preferences"
+msgstr "Gwellvezioù"
+
+msgid "userpreferences"
+msgstr "Gwellvezioù an arveriad"
+
+msgid "editpreferences"
+msgstr "Embann gwellvezioù an arveriad"
+
+msgid "identities"
+msgstr "Pivelezhioù"
+
+msgid "manageidentities"
+msgstr "Ardeiñ ar pivelezhioù"
+
+msgid "newidentity"
+msgstr "Krouiñ ur pivelezh nevez"
+
+msgid "addidentity"
+msgstr "Ouzhpennañ ur pivelezh"
+
+msgid "editidentity"
+msgstr "Embann ur pivelezh"
+
+msgid "identityencryption"
+msgstr "Enrinegañ"
+
+msgid "preferhtml"
+msgstr "Diskouez en HTML"
+
+msgid "defaultcharset"
+msgstr "Spletad arouezennoù dre ziouer"
+
+msgid "htmlmessage"
+msgstr "Kemennadenn HTML"
+
+msgid "messagepart"
+msgstr "Lodenn"
+
+msgid "digitalsig"
+msgstr "Sinadur niverel"
+
+msgid "dateformat"
+msgstr "Mentrezh an deiziad"
+
+msgid "timeformat"
+msgstr "Mentrezh an eur"
+
+msgid "prettydate"
+msgstr "Deiziadoù kaer"
+
+msgid "setdefault"
+msgstr "Arventennoù dre ziouer"
+
+msgid "autodetect"
+msgstr "Emgefre"
+
+msgid "language"
+msgstr "Yezh"
+
+msgid "timezone"
+msgstr "Gwerzhid-eur"
+
+msgid "pagesize"
+msgstr "Niver a linenn dre bajenn"
+
+msgid "signature"
+msgstr "Sinadur"
+
+msgid "dstactive"
+msgstr "Eur an hañv"
+
+msgid "showinextwin"
+msgstr "Digeriñ ar gemennadenn e-barzh ur prenestr nevez"
+
+msgid "composeextwin"
+msgstr "Skrivañ e-barzh ur prenestr nevez"
+
+msgid "htmleditor"
+msgstr "Skrivañ ur gemennadenn er mentrezh HTML"
+
+msgid "htmlonreply"
+msgstr "en ur respont d'ur gemennadenn HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "en un dreuzkas pe en ur respont d'ur gemennadenn HTML "
+
+msgid "htmlsignature"
+msgstr "Sinadur HTML"
+
+msgid "showemail"
+msgstr "Diskouez ar chomlec'h postel gant an anv skrammañ"
+
+msgid "previewpane"
+msgstr "Diskouez panel alberz"
+
+msgid "skin"
+msgstr "Neuze an etrefas"
+
+msgid "logoutclear"
+msgstr "Skarzhañ ar c'hest en ur zigennaskañ"
+
+msgid "logoutcompact"
+msgstr "Boest degemer koazhet en ur zigennaskañ"
+
+msgid "uisettings"
+msgstr "Ketal arveriad"
+
+msgid "serversettings"
+msgstr "Arventennoù an dafariad"
+
+msgid "mailboxview"
+msgstr "Gwel boest posteloù"
+
+msgid "mdnrequests"
+msgstr "War c'houlenn evit an testeni-degemer"
+
+msgid "askuser"
+msgstr "goulenn ganin"
+
+msgid "autosend"
+msgstr "Kas un testeni degemer"
+
+msgid "autosendknown"
+msgstr "kas un testeni degemer d'am darempredoù, goulenn ganin e mod all"
+
+msgid "autosendknownignore"
+msgstr "kas un testeni degemer d'am darempredoù, leuskel e mod all"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "leuskel ar goulenn"
+
+msgid "readwhendeleted"
+msgstr "Merkañ ar gemennadenn evel lennet p'eo lamet kuit"
+
+msgid "flagfordeletion"
+msgstr "Merkañ ar gemennadenn da vezañ lamet kuit e plas lemel kuit"
+
+msgid "skipdeleted"
+msgstr "Chom hep skrammañ kemennadennoù dilamet"
+
+msgid "deletealways"
+msgstr ""
+"Ma c'hwit dilec'hiañ ar c'hemennadennoù d'ar c'hest, lemel anezho kuit"
+
+msgid "deletejunk"
+msgstr "Lemel kuit ar c'hemennadennoù el lastez war-eeun"
+
+msgid "showremoteimages"
+msgstr "Lemel kuit ar skeudennoù enkorfet a-bell"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "a-berzh kaserien anavezet"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "atav"
+
+msgid "alwaysbutplain"
+msgstr "atav, war-bouez pa vez respontet d'un destenn blaen"
+
+msgid "showinlineimages"
+msgstr "Skrammañ ar skeudennoù kenstaget dindan ar gemennadenn"
+
+msgid "autosavedraft"
+msgstr "Enrollan ar brouilhedoù ent emgefreek"
+
+msgid "everynminutes"
+msgstr "Bep $n a vunutennoù"
+
+msgid "refreshinterval"
+msgstr "Azgrenaat (gwiriañ posteloù nevez, hag all.)"
+
+msgid "never"
+msgstr "morse"
+
+msgid "immediately"
+msgstr "diouzhtu"
+
+msgid "messagesdisplaying"
+msgstr "O skrammañ kemennadennoù"
+
+msgid "messagescomposition"
+msgstr "O skrivañ kemennadennoù"
+
+msgid "mimeparamfolding"
+msgstr "Anvioù ar c'henstagadurioù"
+
+msgid "2231folding"
+msgstr "RFC 2231 a-bezh (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "RFC 2047 a-bezh (ar re all)"
+
+msgid "force7bit"
+msgstr "Arverañ an enbonegañ MIME evit an arouezennoù 8-bit"
+
+msgid "savelocalstorage"
+msgstr "Enrollañ e kadaviñ lec'hel ar merdeer (padennek)"
+
+msgid "advancedoptions"
+msgstr "Dibarzhioù araokaet"
+
+msgid "toggleadvancedoptions"
+msgstr "Trec'haoliñ an dibarzhioù araoket"
+
+msgid "focusonnewmessage"
+msgstr "Stiañ prenestr ar merdeer pa 'z eus ur gemennadenn nevez"
+
+msgid "checkallfolders"
+msgstr "Gwiriañ an holl deuliadoù evit kemennadennoù nevez"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "Nodrezh dre ziouer ar c'hemennadennoù HTML"
+
+msgid "mainoptions"
+msgstr "Dibarzhioù dre ziouer"
+
+msgid "browseroptions"
+msgstr "Dibarzhioù ar merdeer"
+
+msgid "section"
+msgstr "Rann"
+
+msgid "maintenance"
+msgstr "Trezlac'h"
+
+msgid "newmessage"
+msgstr "Kemennadenn nevez"
+
+msgid "signatureoptions"
+msgstr "Dibarzhioù sinadur"
+
+msgid "whenreplying"
+msgstr "Pa vez respontet"
+
+msgid "replyempty"
+msgstr "Chom hep menegiñ ar gemennadenn orin"
+
+msgid "replytopposting"
+msgstr "kregiñ ar gemennadenn nevez a-us d'ar meneg"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "kregiñ ar gemennadenn nevez dindan ar meneg"
+
+msgid "replyremovesignature"
+msgstr "Pa vez respontet, dilemel ar sinadur orin eus ar gemennadenn "
+
+msgid "autoaddsignature"
+msgstr "Ouzhpennañ ar sinadur ent emgefreek"
+
+msgid "newmessageonly"
+msgstr "evit ar c'hemennadennoù nevez hepken"
+
+msgid "replyandforwardonly"
+msgstr "evit ar respontoù hag an treuzkasoù hepken"
+
+msgid "insertsignature"
+msgstr "Enlakaat ar sinadur"
+
+msgid "sigbelow"
+msgstr "Lakaat ar sinadur a-us d'ar gemennadenn veneget"
+
+msgid "sigseparator"
+msgstr "Rediañ an disranner skoueriek er sinadurioù"
+
+msgid "automarkread"
+msgstr "Merkañ ar c'hemennadennoù evel lennet"
+
+msgid "afternseconds"
+msgstr "goude $n eilenn"
+
+msgid "reqmdn"
+msgstr "Atav goulenn un testeni degemer"
+
+msgid "reqdsn"
+msgstr "Atav goulenn ur rebuziñ stad ar c'has"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Lakaat ar respontoù en teuliad lec'h m'emañ ar gemennadenn orin"
+
+msgid "defaultabook"
+msgstr "Karned chomlec'hioù dre ziouer"
+
+msgid "autocompletesingle"
+msgstr "Tremen ar chomlec'hioù postel dazeilel er c'hlokadur emgefreek "
+
+msgid "listnamedisplay"
+msgstr "Rollañ an darempredoù evel"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Gwiriekaat ar reizhskrivañ a-raok kas ur gemennadenn"
+
+msgid "spellcheckoptions"
+msgstr "Dibarzhioù reizhskrivañ"
+
+msgid "spellcheckignoresyms"
+msgstr "Leuskel ar gerioù gant arouezennoù"
+
+msgid "spellcheckignorenums"
+msgstr "Leuskel ar gerioù gant niverennoù"
+
+msgid "spellcheckignorecaps"
+msgstr "Leuskel ar gerioù gant pennlizherennoù hepken"
+
+msgid "addtodict"
+msgstr "Ouzhpennañ d'ar geriadur"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Dornataour komenad marilhañ  evit mailto: ereoù"
+
+msgid "standardwindows"
+msgstr "Dornata prenestroù diflugell evel prenestroù skoueriek"
+
+msgid "forwardmode"
+msgstr "Treuzkas posteloù"
+
+msgid "inline"
+msgstr "enkorfet"
+
+msgid "asattachment"
+msgstr "kenstaget"
+
+msgid "replyallmode"
+msgstr "Gwered dre ziouer an afell [Respont d'an holl]"
+
+msgid "replyalldefault"
+msgstr "respont d'an holl"
+
+msgid "replyalllist"
+msgstr "respont d'ar roll posteloù hepken (m'eo kavet)"
+
+msgid "allmessages"
+msgstr "An holl posteloù"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Teuliad"
+
+msgid "folders"
+msgstr "Teuliadoù"
+
+msgid "foldername"
+msgstr "Anv an teuliad"
+
+msgid "subscribed"
+msgstr "Koumananter"
+
+msgid "messagecount"
+msgstr "Kemennadennoù"
+
+msgid "create"
+msgstr "Krouiñ"
+
+msgid "createfolder"
+msgstr "Krouiñ un teuliad nevez"
+
+msgid "managefolders"
+msgstr "Ardeiñ an teuliadoù"
+
+msgid "specialfolders"
+msgstr "Teuliadoù arbennik"
+
+msgid "properties"
+msgstr "Perzhioù"
+
+msgid "folderproperties"
+msgstr "Perzhioù an teuliad"
+
+msgid "parentfolder"
+msgstr "Teuliad kar"
+
+msgid "location"
+msgstr "Lec'hiadur"
+
+msgid "info"
+msgstr "Titouroù"
+
+msgid "getfoldersize"
+msgstr "Klikit da gaout ment an teuliad"
+
+msgid "changesubscription"
+msgstr "Klikit da gemmañ ar c'houmanant"
+
+msgid "foldertype"
+msgstr "Rizh an teuliad"
+
+msgid "personalfolder"
+msgstr "Teuliad prevez"
+
+msgid "otherfolder"
+msgstr "Teuliad an arveriaded all"
+
+msgid "sharedfolder"
+msgstr "Teuliad foran"
+
+msgid "findfolders"
+msgstr "Kavout teuliadoù"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr "Personel"
+
+msgid "namespace.other"
+msgstr "Arveriaded all"
+
+msgid "namespace.shared"
+msgstr "Rannet"
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr "kemennadennoù"
+
+msgid "dualusefolder"
+msgstr "teuliadoù"
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr "Krouiñ un daouad alc'hwezioù nevez"
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "Enrinegañ"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Rummañ dre"
+
+msgid "sortasc"
+msgstr "Rumm diagentad"
+
+msgid "sortdesc"
+msgstr "Rumm diskennad"
+
+msgid "undo"
+msgstr "Dizober"
+
+msgid "installedplugins"
+msgstr "Enlugelladoù staliet"
+
+msgid "plugin"
+msgstr "Enlugellad"
+
+msgid "version"
+msgstr "Handelv"
+
+msgid "source"
+msgstr "Tarzh"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Lañvaz"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Skoazell"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "Eizhbit"
+
+msgid "KB"
+msgstr "KE"
+
+msgid "MB"
+msgstr "ME"
+
+msgid "GB"
+msgstr "GE"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Saozneg"
+
+msgid "westerneuropean"
+msgstr "Kornôg Europa"
+
+msgid "easterneuropean"
+msgstr "Reter Europa"
+
+msgid "southeasterneuropean"
+msgstr "Gevred Europa"
+
+msgid "baltic"
+msgstr "Baltek"
+
+msgid "cyrillic"
+msgstr "Kirillek"
+
+msgid "arabic"
+msgstr "Arabeg"
+
+msgid "greek"
+msgstr "Gresianeg"
+
+msgid "hebrew"
+msgstr "Hebraek"
+
+msgid "turkish"
+msgstr "Turkeg"
+
+msgid "nordic"
+msgstr "Nordeg"
+
+msgid "thai"
+msgstr "Thai"
+
+msgid "celtic"
+msgstr "Keltieg"
+
+msgid "vietnamese"
+msgstr "Vietnameg"
+
+msgid "japanese"
+msgstr "Japaneg"
+
+msgid "korean"
+msgstr "Koreaneg"
+
+msgid "chinese"
+msgstr "Sinaeg"
+
+msgid "arialabeltopnav"
+msgstr "Reoliadur ar prenestr"
+
+msgid "arialabeltasknav"
+msgstr "Trevelloù arload"
+
+msgid "arialabeltoolbar"
+msgstr "Barrenn ostilhoù arload"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "Trevell oberiant"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Sil roll kemennadennoù"
+
+msgid "arialabelmailsearchform"
+msgstr "Furmad klask kemennadennoù"
+
+msgid "arialabelcontactsearchform"
+msgstr "Furmskrid klask darempredoù"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Enankad klask posteloù"
+
+msgid "arialabelquicksearchbox"
+msgstr "Enankad klask"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Sil roll teuliadoù"
+
+msgid "arialabelfoldersearchform"
+msgstr "Furmskrid klask teuliadoù"
+
+msgid "arialabelfolderlist"
+msgstr "Diuzad teuliadoù posteloù"
+
+msgid "arialabelmessagelist"
+msgstr "Roll kemennadennoù"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Alberzh kemennadennoù"
+
+msgid "arialabelmailboxmenu"
+msgstr "Lañser gweredoù an teuliad"
+
+msgid "arialabellistselectmenu"
+msgstr "Lañser roll an diuzad"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Lañser roll an neudennoù"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Skrammañ roll ar c'hemennadennoù ha dibarzhioù rummañ"
+
+msgid "arialabelmailimportdialog"
+msgstr "Boestad emziviz enporzhiañ ur gemennadenn"
+
+msgid "arialabelmessagenav"
+msgstr "Merdeiñ kemennadennoù"
+
+msgid "arialabelmessagebody"
+msgstr "Korf ar gemennadenn"
+
+msgid "arialabelmessageactions"
+msgstr "Gwerdeoù ar gemennadenn"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Furmskrid klask darempredoù"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Enankad klask darempredoù"
+
+msgid "arialabelmessageheaders"
+msgstr "Talbennoù ar gemennadenn"
+
+msgid "arialabelforwardingoptions"
+msgstr "Dibarzhioù treuzkas"
+
+msgid "arialabelreplyalloptions"
+msgstr "Dibarzhioù respont d'an holl"
+
+msgid "arialabelmoremessageactions"
+msgstr "Dibarzhioù kemennadenn ouzhpenn"
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Merkañ ar c'hemennadennoù diuzet evel..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Dibarzhioù skrivañ"
+
+msgid "arialabelresponsesmenu"
+msgstr "Lañser respontoù er voest"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Furmskrid pellgas stagadennoù"
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "Alberz ar stagadennoù"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Roll an darempredoù ha strolladoù da ziuzañ evel degemererien"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Dibarzhioù ezporzhiañ darempredoù"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Dibarzhioù karned chomlec'h/strolladoù"
+
+msgid "arialabelpreferencesform"
+msgstr "Gwellvezioù a-berzh"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Furmskrid embann ar pivelezh"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Furmskrid embann ar respont"
+
+msgid "arialabelsearchterms"
+msgstr "Termennoù enklask"
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr "Rollañ merdeiñ ar c'hlavier"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Biroù a-us/en-traoñ: Dilec'hiañ linenn stiet/diuzet\n"
+"Esaouiñ: stiañ al linenn\n"
+"Pennlizh. + a-us/en-traoñ: diuzañ linennoù ouzhpenn a-us/e traoñ\n"
+"Reol + esaouiñ: Ouzhpennañ linennoù stiet d'an diuzad/Dilemel eus an diuzad"
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Biroù kleiz/dehou: astenn/diskar neudennoù kemennadennoù (e mod neudenn hepken)\n"
+"Enankañ: Digeriñ ar gemennadenn stiet/diuzet.\n"
+"Dilemel: Dilec'hiañ ar c'hemennadennoù diuzet d'ar c'hest."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enankañ: Digeriñ an darempred stiet/diuzet."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Degouezhet ez eus bet ur fazi !"
+
+msgid "messages.loginfailed"
+msgstr "Kennaskañ c'hwitet"
+
+msgid "messages.cookiesdisabled"
+msgstr "Nac'h a ra ho merdeer an toupinoù"
+
+msgid "messages.sessionerror"
+msgstr "Didalvoudek pe echuet eo hoc'h estez."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "C'hwitadenn war kennaskañ ouzh an dafariad mirout"
+
+msgid "messages.servererror"
+msgstr "Fazi dafariad !"
+
+msgid "messages.servererrormsg"
+msgstr "Fazi dafariad : $msg"
+
+msgid "messages.accountlocked"
+msgstr "Re a glaskoù kennaskañ c'hwitet. Klaskot en-dro diwezhatoc'h."
+
+msgid "messages.connerror"
+msgstr "Fazi kennaskañ (N'haller ket tizhout an dafariad)!"
+
+msgid "messages.dberror"
+msgstr "Fazi stlennvon!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Stanket eo bet ar prenestr diflugell!"
+
+msgid "messages.requesttimedout"
+msgstr "Diamzeret he deus an azgoulenn"
+
+msgid "messages.errorreadonly"
+msgstr ""
+"N'haller ket seveniñ ar gwezhiadur. E mod lenn nemetken eo an teuliad."
+
+msgid "messages.errornoperm"
+msgstr "N'haller ket seveniñ ar gwezhiadur. Aotre nac'het."
+
+msgid "messages.erroroverquota"
+msgstr "N'haller ket seveniñ ar gwezhiadur. Egor dieub ebet er gantenn."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Egor dieub ebet er gantenn. Grit Pennlizh.+Dilemel evit dilemel ur "
+"gemennadenn."
+
+msgid "messages.invalidrequest"
+msgstr "Azgoulenn didalvoudek! N'ez eus bet enrollet roadenn ebet."
+
+msgid "messages.invalidhost"
+msgstr "Anv dafariad didalvoudek"
+
+msgid "messages.nomessagesfound"
+msgstr "Kemennadenn ebet er voest lizhiri"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "Goulo eo ar voest lizhiri"
+
+msgid "messages.nomessages"
+msgstr "Kemennadenn ebet"
+
+msgid "messages.refreshing"
+msgstr "Oc'h azgrenaat..."
+
+msgid "messages.loading"
+msgstr "O kargañ..."
+
+msgid "messages.uploading"
+msgstr "O pellgas ar restr..."
+
+msgid "messages.attaching"
+msgstr "O stagañ ar restr..."
+
+msgid "messages.uploadingmany"
+msgstr "O pellgas ar restroù..."
+
+msgid "messages.loadingdata"
+msgstr "O kargañ roadennoù..."
+
+msgid "messages.checkingmail"
+msgstr "O wiriañ kemennadoù nevez..."
+
+msgid "messages.sendingmessage"
+msgstr "O kas ar gemennadenn..."
+
+msgid "messages.messagesent"
+msgstr "Kaset eo mat ho kemennadenn"
+
+msgid "messages.savingmessage"
+msgstr "Oc'h enrollañ ar gemennadenn..."
+
+msgid "messages.messagesaved"
+msgstr "Kemennadenn enrollet er brouilhedoù"
+
+msgid "messages.successfullysaved"
+msgstr "Enrollet gant berzh."
+
+msgid "messages.savingresponse"
+msgstr "Oc'h enrollañ testenn ar respont..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Fellout a ra deoc'h dilemel testenn ar respont-mañ?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Darempred ouzhpennet er c'harned chomlec'hioù"
+
+msgid "messages.contactexists"
+msgstr "Un darempred gant an hevelep chomlec'h postel a zo endeo"
+
+msgid "messages.contactnameexists"
+msgstr "Un darempred gant an hevelep anv a zo endeo"
+
+msgid "messages.blockedimages"
+msgstr ""
+"Evit gwareziñ ho puhez prevez eo bet stanket skeudennoù a-bell er "
+"gemennadenn-se."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr ""
+"Enrineget eo ar gemennadenn ha ne c'hall ket bezañ skrammet. Digarezit!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Ur gemennadenn enrineget an hini eo ha gallout a ra bezañ ezrineget gant ho "
+"askouezh merdeer."
+
+msgid "messages.nopubkeyfor"
+msgstr "N'ez eus bet kavet alc'hwez foran ebet evit $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"N'ez eus bet kavet alc'hwez foran talvoudek ebet evit pivelezh ho kaser. "
+"Fellout a ra deoc'h enrinegañ ar gemennadenn evit an degemererien hepken?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Ar c'henstagadurioù pellgaset endeo n'hallont ket bezañ enrineget. "
+"Ouzhpennit anezho en-dro en embanner enrinegañ."
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"Fellout a ra deoc'h klask war lec'h an alc'hwezioù a vank en dafariadoù "
+"alc'hwezioù foran?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "N'eo ket bet kavet an alc'hwezioù foran da-heul:"
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "N'eo ket bet kavet darempred ebet"
+
+msgid "messages.contactnotfound"
+msgstr "N'eo ket bet kavet an darempred goulennet"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "C'hwitadenn en ur gas ar gemennadenn"
+
+msgid "messages.senttooquickly"
+msgstr "Gortozit $sec eilenn a-raok kas ar gemennadenn-mañ."
+
+msgid "messages.errorsavingsent"
+msgstr "Ur fazi a zo c'hoarvezet en ur enrollañ ar gemennadenn kaset."
+
+msgid "messages.errorsaving"
+msgstr "Ur fazi a zo c'hoarvezet en ur enrollañ."
+
+msgid "messages.errormoving"
+msgstr "N'haller ket dilec'hiañ ar g(c'h)emennadenn(où)"
+
+msgid "messages.errorcopying"
+msgstr "N'haller ket eilañ ar g(c'h)emennadenn(où)"
+
+msgid "messages.errordeleting"
+msgstr "N'haller ket dilemel ar g(c'h)emennadenn(où)"
+
+msgid "messages.errormarking"
+msgstr "N'haller ket merkañ ar g(c'h)emennadenn(où)"
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "C'hoant hoc'h eus da zilemel an darempred(où) diuzet?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Fellout a ra deoc'h dilemel ar strollad diuzet?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "C'hoant hoc'h eus da zilemel ar g(c'h)emennadenn(où) diuzet ?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "C'hoant hoc'h eus da skarzhañ an teuliad-se ?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr ""
+"C'hoant hoc'h eus da skarzhañ an holl gemennadennoù eus an teuliad-se ?"
+
+msgid "messages.contactdeleting"
+msgstr "O lemel darempredoù kuit..."
+
+msgid "messages.groupdeleting"
+msgstr "O lemel ar strollad kuit..."
+
+msgid "messages.folderdeleting"
+msgstr "O lemel an teuliad kuit..."
+
+msgid "messages.foldermoving"
+msgstr "O tilec'hiañ an teuliad..."
+
+msgid "messages.foldersubscribing"
+msgstr "O koumanantiñ an teuliad..."
+
+msgid "messages.folderunsubscribing"
+msgstr "O tigoumanantiñ an teuliad..."
+
+msgid "messages.formincomplete"
+msgstr "N'eo ket leuniet ar furmskrid penn-da-benn"
+
+msgid "messages.noemailwarning"
+msgstr "Termenit ur postel elektronek mat mar plij ganeoc'h"
+
+msgid "messages.nonamewarning"
+msgstr "Termenit un anv mar plij ganeoc'h"
+
+msgid "messages.nopagesizewarning"
+msgstr "Termenit ur ment pajenn mar plij ganeoc'h"
+
+msgid "messages.nosenderwarning"
+msgstr "Enankit chomlec'h postel ar c'haser."
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Ouzhpennit ur resever da nebeutañ mar plij ganeoc'h"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr ""
+"Dileun eo ar maezienn « Sujed » . C'hoant hoc'h eus da leuniañ anezhiñ "
+"diouzhtu ?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "Kas ar c'hemennad hep testenn ?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Kavet ez eus bet ur gemennadenn skrivet ha n'eo ket bet kaset.\\n\\nDanvez: "
+"$subject\\nEnrollet: $date\\n\\nFellout a ra deoc'h assav ar gemennadenn-"
+"mañ?"
+
+msgid "messages.nosearchname"
+msgstr "Skrivit un anv darempred pe ur postel elektronek"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"N'eo ket bet pellgaset an holl genstagadennoù c'hoazh. Gortozit pe nullit ar"
+" pellgas."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr kemennad kavet"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Kavet ez eus bet $nr a zarempredoù."
+
+msgid "messages.searchnomatch"
+msgstr "Disoc'h ebet gant ar glask"
+
+msgid "messages.searching"
+msgstr "O klask..."
+
+msgid "messages.checking"
+msgstr "O gwiriañ..."
+
+msgid "messages.stillsearching"
+msgstr "O klask c'hoazh..."
+
+msgid "messages.nospellerrors"
+msgstr "Fazi ebet kavet"
+
+msgid "messages.folderdeleted"
+msgstr "Renkell skarzhet"
+
+msgid "messages.foldersubscribed"
+msgstr "Koumanantet an teuliad gant berzh."
+
+msgid "messages.folderunsubscribed"
+msgstr "Digoumanantet an teuliad gant berzh."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Dilemet mat"
+
+msgid "messages.converting"
+msgstr "O tilemel furmaozañ..."
+
+msgid "messages.messageopenerror"
+msgstr "N'us ket tu da gargañ ar c'hemennad adalek ar servijer"
+
+msgid "messages.filelinkerror"
+msgstr "C'hwitadenn war stagadenn ar restr."
+
+msgid "messages.fileuploaderror"
+msgstr "Fazi o treuzkas ar restr"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Re vras eo ar restr treuzkaset $size"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "Eilet $nr a zarempredù gant berzh."
+
+msgid "messages.movesuccess"
+msgstr "Dilec'hiet $nr a zarempredoù gant berzh."
+
+msgid "messages.copyerror"
+msgstr "N'haller eilañ darempred ebet."
+
+msgid "messages.moveerror"
+msgstr "N'haller dilec'hiañ darempred ebet."
+
+msgid "messages.sourceisreadonly"
+msgstr "Lenn hepken eo an tarzh chomlec'h se"
+
+msgid "messages.errorsavingcontact"
+msgstr "Ne c'haller ket gwarediñ chomlec'h darempred"
+
+msgid "messages.movingmessage"
+msgstr "O tilec'hiañ kemennadennoù..."
+
+msgid "messages.copyingmessage"
+msgstr "Oc'h eilañ kemennadennoù..."
+
+msgid "messages.copyingcontact"
+msgstr "Oc'h eilañ darempredoù..."
+
+msgid "messages.movingcontact"
+msgstr "O fiñval an darempred(où)"
+
+msgid "messages.deletingmessage"
+msgstr "O tilemel kemennadennoù..."
+
+msgid "messages.markingmessage"
+msgstr "O verkañ darempredoù..."
+
+msgid "messages.addingmember"
+msgstr "Oc'h ouzhpennañ darempredoù d'ar strollad..."
+
+msgid "messages.removingmember"
+msgstr "O tilemel darempredoù eus ar strollad..."
+
+msgid "messages.receiptsent"
+msgstr "Kaset eo bet un testeni degemer gant berzh."
+
+msgid "messages.errorsendingreceipt"
+msgstr "N'haller ket kas an testeni degemer."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Fellout a ra deoc'h dilemel ar pivelezh-mañ?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "N'hallit ket dilemel ar pivelezh-mañ, ho hini diwezhañ eo."
+
+msgid "messages.forbiddencharacter"
+msgstr "Un arouezenn difennet a zo e anv an teuliad."
+
+msgid "messages.selectimportfile"
+msgstr "Dibabit ur restr da bellgas."
+
+msgid "messages.addresswriterror"
+msgstr "Ar c'harned chomlec'h diuzet n'haller ket skrivañ warnañ."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Ouzhpennet eo bet an darempredoù er strollad gant berzh."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Dilamet eo bet an darempredoù eus ar strollad gant berzh."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "N'eo bet kemmet deverkadur strollad ebet."
+
+msgid "messages.importwait"
+msgstr "Oc'h enporzhiañ, gortozit..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"C'hwitadenn war an enporzhiañ! N'eo ket ur restr roadennoù enporzhiañ "
+"talvoudek an hini a zo bet pellgaset."
+
+msgid "messages.importconfirm"
+msgstr "<b>Enporzhiet eo bet $inserted a zarempredoù gant berzh</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Enporzhiet $nr a gemennadennoù gant berzh"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"C'hwitadenn war an enporzhiañ! Ar restr pellgaset n'eo ket ur restr "
+"kemennadenn talvoudek peur restr boest lizhiri"
+
+msgid "messages.opnotpermitted"
+msgstr "N'eo ket aotreet ar gwezhiadur!"
+
+msgid "messages.nofromaddress"
+msgstr "Mankout a ra ar chomlec'h postel er pivelezh dibabet."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Kemmañ embanner a c'hell sevel kudennoù e mentrezhañ an destenn. Fellout a "
+"ra deoc'h kenderc'hel?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Ur fazi kefluniadur lazhus a zo c'hoarvezet. Kit e darempred gant ho merour "
+"war eeun. <b>N'haller ket kas ho postel</b> "
+
+msgid "messages.smtpconnerror"
+msgstr "Fazi SMTP ($code): c'hwitadenn en ur gennaskañ d'an dafariad."
+
+msgid "messages.smtpautherror"
+msgstr "Fazi SMTP ($code): c'hwitadenn war an naoudi."
+
+msgid "messages.smtpfromerror"
+msgstr "Fazi SMTP ($code): C'hwitadenn evit lakaat ar c'haser \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr ""
+"Fazi SMTP ($code): C'hwitadenn war ouzhpennadenn an degemerer \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "Fazi SMTP: N'haller ket dezrannañ roll an degemererien"
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "Fazi SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Chomlec'h postel didalvoudek: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Re a zegemererien. Digreskit an niver a zegemererien da $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr ""
+"An niver a izili er strollad a zo ouzhpenn ar c'hementad aotreet $max."
+
+msgid "messages.internalerror"
+msgstr "Ur fazi diabarzh a zo c'hoarvezet. Klaskit en-dro."
+
+msgid "messages.contactdelerror"
+msgstr "N'eus ket bet gellet dilemel an darempred(où)"
+
+msgid "messages.contactdeleted"
+msgstr "Dilamet eo bet an darempred(où) gant berzh."
+
+msgid "messages.contactrestoreerror"
+msgstr "N'haller ket assav an darempred(où) dilamet."
+
+msgid "messages.contactrestored"
+msgstr "Darempred(où) dilamet gant berzh."
+
+msgid "messages.groupdeleted"
+msgstr "Dilamet eo bet ar strollad gant berzh."
+
+msgid "messages.grouprenamed"
+msgstr "Adanvet eo bet ar strollad gant berzh."
+
+msgid "messages.groupcreated"
+msgstr "Krouet eo bet ar strollad gant berzh."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Dilamet eo bet ar c'hlask enrollet gant berzh."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "N'haller ket dilemel ar c'hlask enrollet."
+
+msgid "messages.savedsearchcreated"
+msgstr "Krouet eo bet ar c'hlask enrollet gant berzh."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "N'haller ket krouiñ ar c'hlask enrollet."
+
+msgid "messages.messagedeleted"
+msgstr "Dilamet eo bet ar c'hemennadennoù gant berzh."
+
+msgid "messages.messagemoved"
+msgstr "Kemennadennoù dilec'hiet gant berzh."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Kemennadennoù dilec'hiet er c'hest gant berzh."
+
+msgid "messages.messagecopied"
+msgstr "Kemennadennoù eilet gant berzh. "
+
+msgid "messages.messagemarked"
+msgstr "Kemennadennoù merket gant berzh."
+
+msgid "messages.autocompletechars"
+msgstr "Enankit $min arouezenn d'an nebeutañ evit ar c'hlokadur emgefreek"
+
+msgid "messages.autocompletemore"
+msgstr "Elfennoù kenglotus ouzhpenn kavet. Biziatait muioc'h a arouezennoù."
+
+msgid "messages.namecannotbeempty"
+msgstr "N'hall ket an anv bezañ goullo."
+
+msgid "messages.nametoolong"
+msgstr "Re hir eo an anv."
+
+msgid "messages.namedotforbidden"
+msgstr "N'hall ket anv un teuliad kregiñ ur poent."
+
+msgid "messages.folderupdated"
+msgstr "Teuliad hizivaet gant berzh."
+
+msgid "messages.foldercreated"
+msgstr "Teuliad krouet gant berzh."
+
+msgid "messages.invalidimageformat"
+msgstr "N'eo ket ur mentrezh skeudenn talvoudek."
+
+msgid "messages.mispellingsfound"
+msgstr "Dinoet ez eus bet fazioù reizhskrivañ er gemennadenn."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"N'haller ket krouiñ/dilec'hiañ an teuliad en teuliad kar dibabet. N'ho peus "
+"ket an aotre haeziñ."
+
+msgid "messages.messagetoobig"
+msgstr "Re vras eo al lodenn gemennadenn evit he c'heweriañ."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Diwallit: Javascript a zo azgoulennet gant ar gwazerezh posteloù-mañ! Evit e"
+" arverañ, gweredekait Javascript e arventennoù ho merdeer."
+
+msgid "messages.messageissent"
+msgstr ""
+"Kaset eo bet ar gemennadenn endeo, met n'eo ket bet enrollet. Fellout a ra "
+"deoc'h he enrollañ bremañ?"
+
+msgid "messages.errnotfound"
+msgstr "Restr ebet kavet"
+
+msgid "messages.errnotfoundexplain"
+msgstr "N'eo ket bet kavet al loaz azgoulennet!"
+
+msgid "messages.errfailedrequest"
+msgstr "Azgoulenn c'hwitet"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Aotre c'hwitet"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "N'haller ket gwiriañ hoc'h aotreet da haeziñ ar gwazerezh-mañ!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Gwiriañ an azgoulenn c'hwitet"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Evit ho kwarez eo diogelet an haeziñ d'al loaz-mañ gant CSRF.\n"
+"Ma welit-se n'hoc'h ket digennasket a-raok kuitaat an arload web.\n"
+"Un etrewezhiadur denel a zo azgoulennet evit kenderc'hel.  "
+
+msgid "messages.errcontactserveradmin"
+msgstr "Kit e darempred gant ardoer ho tafariad."
+
+msgid "messages.clicktoresumesession"
+msgstr "Klikit aze evit kenderc'hel gant ho estez kent."
+
+msgid "messages.errcomposesession"
+msgstr "Fazi e savidigezh an estez"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "N'eo ket bet kavet an estez azgoulennet"
+
+msgid "messages.clicktocompose"
+msgstr "Klikit aze evit skrivañ ur gemennadenn nevez"
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr "Goullo eo ar roll."
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

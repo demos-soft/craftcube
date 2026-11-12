@@ -1,0 +1,2874 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ga_IE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Fáilte go $product"
+
+msgid "username"
+msgstr "Úsáideoir"
+
+msgid "password"
+msgstr "Pasfhocal"
+
+msgid "server"
+msgstr "Freastalaí"
+
+msgid "login"
+msgstr "Logáil isteach"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr "Roghchlár"
+
+msgid "logout"
+msgstr "Scoir"
+
+msgid "mail"
+msgstr "Postas"
+
+msgid "settings"
+msgstr "Socruithe Pearsanta"
+
+msgid "addressbook"
+msgstr "Leabhair Seoltaí"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Isteach"
+
+msgid "drafts"
+msgstr "Dréachtaí"
+
+msgid "sent"
+msgstr "Amach"
+
+msgid "trash"
+msgstr "Bosca bruscair"
+
+msgid "junk"
+msgstr "Dramhaíl"
+
+msgid "show_real_foldernames"
+msgstr "Taispeáin fíorainmneacha i gcomhair fillteáin faoi leith"
+
+msgid "subject"
+msgstr "Ábhair"
+
+msgid "from"
+msgstr "Seolaí"
+
+msgid "sender"
+msgstr "Seoltóir"
+
+msgid "to"
+msgstr "Chuig"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Cóip cheilte"
+
+msgid "replyto"
+msgstr "Freagair go"
+
+msgid "followupto"
+msgstr ""
+
+msgid "date"
+msgstr "Dáta"
+
+msgid "size"
+msgstr "Méid"
+
+msgid "priority"
+msgstr "Tosaíocht"
+
+msgid "organization"
+msgstr "Eagraíocht"
+
+msgid "readstatus"
+msgstr ""
+
+msgid "listoptions"
+msgstr ""
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Fillteán"
+
+msgid "messagesfromto"
+msgstr "Teachtaireachta as $from go $to as $count"
+
+msgid "threadsfromto"
+msgstr ""
+
+msgid "messagenrof"
+msgstr "Teachtaireacht $nr as $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to as $count"
+
+msgid "copy"
+msgstr "Macasamhlaigh"
+
+msgid "move"
+msgstr "Bog"
+
+msgid "moveto"
+msgstr "Bog chuig..."
+
+msgid "copyto"
+msgstr "Macasamhlaigh chuig..."
+
+msgid "download"
+msgstr "Íosluchtú"
+
+msgid "open"
+msgstr "Oscail"
+
+msgid "showattachment"
+msgstr "Taispeáin"
+
+msgid "showanyway"
+msgstr "Taispeáin é ar aon nós"
+
+msgid "filename"
+msgstr "Ainm an chomhaid"
+
+msgid "filesize"
+msgstr "Toirt"
+
+msgid "addtoaddressbook"
+msgstr "Sábháil i mo leabhair seoltaí"
+
+msgid "sun"
+msgstr "Do"
+
+msgid "mon"
+msgstr "Lu"
+
+msgid "tue"
+msgstr "Má"
+
+msgid "wed"
+msgstr "Cé"
+
+msgid "thu"
+msgstr "Dé"
+
+msgid "fri"
+msgstr "Ao"
+
+msgid "sat"
+msgstr "Sa"
+
+msgid "sunday"
+msgstr "Domhnach"
+
+msgid "monday"
+msgstr "An Luan"
+
+msgid "tuesday"
+msgstr "An Mháirt"
+
+msgid "wednesday"
+msgstr "An Chéadaoin"
+
+msgid "thursday"
+msgstr "An Déardaoin"
+
+msgid "friday"
+msgstr "Aoine"
+
+msgid "saturday"
+msgstr "An Satharn"
+
+msgid "jan"
+msgstr "Ean"
+
+msgid "feb"
+msgstr "Fea"
+
+msgid "mar"
+msgstr "Már"
+
+msgid "apr"
+msgstr "Aib"
+
+msgid "may"
+msgstr "Bea"
+
+msgid "jun"
+msgstr "Mei"
+
+msgid "jul"
+msgstr "Iúi"
+
+msgid "aug"
+msgstr "Lún"
+
+msgid "sep"
+msgstr "MFó"
+
+msgid "oct"
+msgstr "DFó"
+
+msgid "nov"
+msgstr "Sam"
+
+msgid "dec"
+msgstr "Nol"
+
+msgid "longjan"
+msgstr "Eanáir"
+
+msgid "longfeb"
+msgstr "Feabhra"
+
+msgid "longmar"
+msgstr "Márta"
+
+msgid "longapr"
+msgstr "Aibreán"
+
+msgid "longmay"
+msgstr "Bealtaine"
+
+msgid "longjun"
+msgstr "Meitheamh"
+
+msgid "longjul"
+msgstr "Iúil"
+
+msgid "longaug"
+msgstr "Lúnasa"
+
+msgid "longsep"
+msgstr "Meán Fómhair"
+
+msgid "longoct"
+msgstr "Deireadh Fómhair"
+
+msgid "longnov"
+msgstr "Samhain"
+
+msgid "longdec"
+msgstr "Nollaig"
+
+msgid "today"
+msgstr "Inniu"
+
+msgid "refresh"
+msgstr "Athnuaigh"
+
+msgid "checkmail"
+msgstr "Seiceáil chun teachtaireacht nua"
+
+msgid "compose"
+msgstr "Scríobh teachtaireacht"
+
+msgid "writenewmessage"
+msgstr "Scríobh teachtaireacht nua"
+
+msgid "reply"
+msgstr "Freagair"
+
+msgid "replytomessage"
+msgstr "Scríobh freagra chun an seolaí"
+
+msgid "replytoallmessage"
+msgstr "Scríobh freagra chun an seolaí agus na faighteoir"
+
+msgid "replyall"
+msgstr "Freagra gach"
+
+msgid "replylist"
+msgstr ""
+
+msgid "forward"
+msgstr "Cur ar aghaidh"
+
+msgid "forwardinline"
+msgstr ""
+
+msgid "forwardattachment"
+msgstr "Seol ar aghaidh mar cheangaltán é"
+
+msgid "forwardmessage"
+msgstr "Seol ar aghaidh an teachtaireacht"
+
+msgid "bouncemsg"
+msgstr "Athsheol"
+
+msgid "bounce"
+msgstr "Athsheol"
+
+msgid "deletemessage"
+msgstr "Scrois an teachtaireacht"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Bog an teachtaireacht chuig an bosca bruscair"
+
+msgid "printmessage"
+msgstr "Clóbhuail an teachtaireacht seo"
+
+msgid "previousmessage"
+msgstr "Taispeáin an teachtaireacht roimhe seo"
+
+msgid "firstmessage"
+msgstr "Taispeáin an chéad teachtaireacht eile"
+
+msgid "nextmessage"
+msgstr "Taispeáin an teachtaireacht ina dhiaidh sin"
+
+msgid "lastmessage"
+msgstr "Taispeáin an teachtaireacht deireanach"
+
+msgid "backtolist"
+msgstr "Téigh ar ais go dtí an liosta teachtaireachta"
+
+msgid "viewsource"
+msgstr "Éiriú bunchód"
+
+msgid "mark"
+msgstr "Rianaigh"
+
+msgid "markmessages"
+msgstr "Rianaigh teachtaireachtaí"
+
+msgid "markread"
+msgstr "Léite"
+
+msgid "markunread"
+msgstr "Mar neamhléite"
+
+msgid "markflagged"
+msgstr ""
+
+msgid "markunflagged"
+msgstr ""
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Tuilleadh gníomhartha..."
+
+msgid "markallread"
+msgstr "Rianaigh uile mar léite"
+
+msgid "folders-cur"
+msgstr "An fillteán roghnaithe amháin"
+
+msgid "folders-sub"
+msgstr "An fillteán roghnaithe agus a fhofhillteáin"
+
+msgid "folders-all"
+msgstr "Gach fillteán"
+
+msgid "more"
+msgstr "Tuilleadh"
+
+msgid "back"
+msgstr "Siar"
+
+msgid "options"
+msgstr "Roghanna"
+
+msgid "composeoptions"
+msgstr "Roghanna cumadóireachta"
+
+msgid "optionsandattachments"
+msgstr "Roghanna agus ceangaltáin"
+
+msgid "actions"
+msgstr "Gníomhartha"
+
+msgid "first"
+msgstr "Céad"
+
+msgid "last"
+msgstr "Deireanach"
+
+msgid "previous"
+msgstr "Roimhe"
+
+msgid "next"
+msgstr "Ar aghaidh"
+
+msgid "select"
+msgstr "Roghnaigh"
+
+msgid "selection"
+msgstr "Roghnúchán"
+
+msgid "all"
+msgstr "Uile"
+
+msgid "none"
+msgstr "Dada"
+
+msgid "currpage"
+msgstr "An leathanach reatha"
+
+msgid "isread"
+msgstr "Léite"
+
+msgid "unread"
+msgstr "Neamhléite"
+
+msgid "flagged"
+msgstr "Bratach curtha leis"
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr "Gan fhreagra"
+
+msgid "withattachment"
+msgstr "Le ceangaltán"
+
+msgid "deleted"
+msgstr "Scriosta"
+
+msgid "undeleted"
+msgstr "Nach bhfuil scriosta"
+
+msgid "replied"
+msgstr "Freagartha"
+
+msgid "forwarded"
+msgstr "Curtha ar aghaidh"
+
+msgid "invert"
+msgstr "Aisiompaigh"
+
+msgid "filter"
+msgstr "Scag"
+
+msgid "list"
+msgstr "Liosta"
+
+msgid "threads"
+msgstr "Snáitheanna"
+
+msgid "expand-all"
+msgstr "Fairsingigh Uile"
+
+msgid "expand-unread"
+msgstr "Fairsingigh na cinn neamhléite"
+
+msgid "collapse-all"
+msgstr "Leacaigh uile"
+
+msgid "threaded"
+msgstr "Snáithithe"
+
+msgid "showunread"
+msgstr "Taispeáin teachtaireachtaí neamhéite"
+
+msgid "autoexpand_threads"
+msgstr ""
+
+msgid "do_expand"
+msgstr "gach snáithe"
+
+msgid "expand_only_unread"
+msgstr "le teachtaireachtaí neamhléite amháin"
+
+msgid "fromto"
+msgstr "Ó/Chuig"
+
+msgid "flag"
+msgstr "Cuir Bratach Air"
+
+msgid "attachment"
+msgstr "Ceangaltáin"
+
+msgid "nonesort"
+msgstr "Aon cheann"
+
+msgid "sentdate"
+msgstr "An dáta ar a seoladh é"
+
+msgid "arrival"
+msgstr "An dáta ar a shroich sé "
+
+msgid "asc"
+msgstr "ag dul suas"
+
+msgid "desc"
+msgstr "ag dul síos"
+
+msgid "listcolumns"
+msgstr ""
+
+msgid "listsorting"
+msgstr ""
+
+msgid "listorder"
+msgstr ""
+
+msgid "listmode"
+msgstr ""
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr "Leagan amach"
+
+msgid "layoutwidescreen"
+msgstr "Scáileán leathan"
+
+msgid "layoutdesktop"
+msgstr "Ríomhaire ar an gcrinlín"
+
+msgid "layoutlist"
+msgstr "Liosta"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Gníomhartha do na fillteáin..."
+
+msgid "compact"
+msgstr "Comhbhrúigh"
+
+msgid "empty"
+msgstr "Folmhaigh"
+
+msgid "importmessages"
+msgstr "Tabhair teachtaireachtaí isteach"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Toilleadh diosca atá athláimhe"
+
+msgid "unknown"
+msgstr "gan aithne"
+
+msgid "unlimited"
+msgstr "gan teorainn"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr "Teorainn"
+
+msgid "quotaused"
+msgstr "Úsáidte"
+
+msgid "quotastorage"
+msgstr "Slí ar an diosca"
+
+msgid "quotamessage"
+msgstr "Líon na dteachtaireachtaí"
+
+msgid "shortheaderdate"
+msgstr "Ar $date"
+
+msgid "shortheaderto"
+msgstr "Chuig $to ar $date"
+
+msgid "shortheaderfrom"
+msgstr "Ó $from ar an $date"
+
+msgid "quicksearch"
+msgstr "Mearcuardaigh"
+
+msgid "searchplaceholder"
+msgstr "Cuardaigh..."
+
+msgid "resetsearch"
+msgstr "Athshocraigh an cuardach"
+
+msgid "searchmod"
+msgstr ""
+
+msgid "msgtext"
+msgstr "An teachtaireacht ar fad"
+
+msgid "body"
+msgstr "Colainn"
+
+msgid "type"
+msgstr "Cineál"
+
+msgid "namex"
+msgstr "Ainm"
+
+msgid "searchscope"
+msgstr "Cuimse"
+
+msgid "currentfolder"
+msgstr "An fillteán reatha"
+
+msgid "subfolders"
+msgstr "An ceann seo agus fofhillteáin"
+
+msgid "allfolders"
+msgstr "Gach fillteán"
+
+msgid "searchinterval-1W"
+msgstr "níos sine ná seachtain"
+
+msgid "searchinterval-1M"
+msgstr "níos sine ná mí"
+
+msgid "searchinterval-1Y"
+msgstr "níos sine ná bliain"
+
+msgid "searchinterval1W"
+msgstr "níos úire na seachtain"
+
+msgid "searchinterval1M"
+msgstr "níos úire ná mí"
+
+msgid "searchinterval1Y"
+msgstr "níos úire ná bliain"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Oscail i bhfuinneog nua"
+
+msgid "emlsave"
+msgstr "Íosluchtú (.eml)"
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr "Cuir in eagar mar cheann nua"
+
+msgid "send"
+msgstr "Seol"
+
+msgid "sendmessage"
+msgstr "Seol mo teachtaireacht láithreach bonn"
+
+msgid "savemessage"
+msgstr "Sábháil an dréachta seo"
+
+msgid "addattachment"
+msgstr "Suimigh Iatán"
+
+msgid "charset"
+msgstr "Foireann carachtar"
+
+msgid "editortype"
+msgstr "Sort eagarthóir"
+
+msgid "returnreceipt"
+msgstr "Admháil léite"
+
+msgid "dsn"
+msgstr ""
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "Ar an $date, scríobh $sender:"
+
+msgid "originalmessage"
+msgstr "An teachtaireacht bhunaidh"
+
+msgid "selectimage"
+msgstr "Roghnaigh íomhá"
+
+msgid "addimage"
+msgstr "Cuir íomhá leis"
+
+msgid "selectmedia"
+msgstr "Roghnaigh scannán"
+
+msgid "addmedia"
+msgstr "Cuir scannán leis"
+
+msgid "encrypt"
+msgstr "Criptigh"
+
+msgid "encryptmessage"
+msgstr "Criptigh an teachtaireacht"
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr "Criptigh agus sínigh"
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr "Bearta"
+
+msgid "keyexpired"
+msgstr "Éagtha"
+
+msgid "keyrevoked"
+msgstr "Aisghairmthe"
+
+msgid "bccinstead"
+msgstr "Bain feidhm as Bcc"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Ionsáigh"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "Faighteoir"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr ""
+
+msgid "spellcheck"
+msgstr "Litrigh"
+
+msgid "checkspelling"
+msgstr "Fiosrú ar mo litriú"
+
+msgid "resumeediting"
+msgstr "Athdhúisigh eagarthóireacht"
+
+msgid "revertto"
+msgstr "Filleadh ar"
+
+msgid "restore"
+msgstr "Cuir ar ais"
+
+msgid "restoremessage"
+msgstr "Cuir an teachtaireacht ar ais?"
+
+msgid "ignore"
+msgstr "Ná bac leis"
+
+msgid "responses"
+msgstr "Freagraí"
+
+msgid "insertresponse"
+msgstr "Cuir isteach freagra"
+
+msgid "manageresponses"
+msgstr ""
+
+msgid "newresponse"
+msgstr "Cruthaigh freagra nua"
+
+msgid "addresponse"
+msgstr "Cuir freagra leis"
+
+msgid "editresponse"
+msgstr "Cuir an freagra in eagar"
+
+msgid "editresponses"
+msgstr "Cuir na freagraí in eagar"
+
+msgid "responsename"
+msgstr "Ainm"
+
+msgid "responsetext"
+msgstr "Téacs an fhreagra"
+
+msgid "attach"
+msgstr "Ceangail"
+
+msgid "attachments"
+msgstr "Iatání"
+
+msgid "upload"
+msgstr "Aistriú suas"
+
+msgid "uploadprogress"
+msgstr "$percent ($current as $total)"
+
+msgid "close"
+msgstr "Dún"
+
+msgid "messageoptions"
+msgstr "Roghanna teachtaireachtaí..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr "Athainmnigh an ceangaltán"
+
+msgid "low"
+msgstr "Íseal"
+
+msgid "lowest"
+msgstr "Is Ísle"
+
+msgid "normal"
+msgstr "Gnách"
+
+msgid "high"
+msgstr "Ard"
+
+msgid "highest"
+msgstr "Is Airde"
+
+msgid "nosubject"
+msgstr "(Níl aon Ábhair)"
+
+msgid "showimages"
+msgstr "Taispeáin na híomhánna"
+
+msgid "allow"
+msgstr "Ceadaigh"
+
+msgid "alwaysshow"
+msgstr "Taispeáin íomhánna ó $sender i gcónaí"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Seo dréachttheachtaireacht."
+
+msgid "andnmore"
+msgstr "$nr eile..."
+
+msgid "details"
+msgstr "Mionsonraí"
+
+msgid "summary"
+msgstr "Achoimre"
+
+msgid "headers"
+msgstr "Ceannteidil"
+
+msgid "allheaders"
+msgstr "Gach ceannteideal..."
+
+msgid "togglemoreheaders"
+msgstr "Taispeáin tuilleadh ceannteidil theachtaireachtaí"
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Téacs amháin"
+
+msgid "savesentmessagein"
+msgstr "Coimeád an teachtaireacht seolta i"
+
+msgid "dontsave"
+msgstr "ná coimeád é"
+
+msgid "maxuploadsize"
+msgstr ""
+
+msgid "addcc"
+msgstr "Cuir Cc leis"
+
+msgid "addbcc"
+msgstr "Cuir Bcc leis"
+
+msgid "addreplyto"
+msgstr ""
+
+msgid "addfollowupto"
+msgstr ""
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+
+msgid "receiptread"
+msgstr "Admháil fillte (léite)"
+
+msgid "yourmessage"
+msgstr ""
+
+msgid "receiptnote"
+msgstr ""
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr "Gluais Isteach"
+
+msgid "zoomout"
+msgstr "Gluais Amach"
+
+msgid "rotate"
+msgstr "Rothlaigh"
+
+msgid "increaseimage"
+msgstr "Méadaigh méid na híomhá"
+
+msgid "decreaseimage"
+msgstr "Laghdaigh méid na híomhá"
+
+msgid "rotateimage"
+msgstr "Rothlaigh an íomhá"
+
+msgid "showtools"
+msgstr "Taispeáin uirlisí don íomhánna"
+
+msgid "hidetools"
+msgstr "Folaigh uirlisí don íomhá"
+
+msgid "name"
+msgstr "Leasainm"
+
+msgid "firstname"
+msgstr "Ainm baiste"
+
+msgid "surname"
+msgstr "Sloinne"
+
+msgid "middlename"
+msgstr "An Dara hAinm"
+
+msgid "nameprefix"
+msgstr "Réimír"
+
+msgid "namesuffix"
+msgstr "Iarmhír"
+
+msgid "nickname"
+msgstr "Leasainm"
+
+msgid "jobtitle"
+msgstr "Teideal oibre"
+
+msgid "department"
+msgstr "Rannóg"
+
+msgid "gender"
+msgstr "Gnéas"
+
+msgid "maidenname"
+msgstr "Sloinne roimh phósadh"
+
+msgid "email"
+msgstr "Ríomhphost"
+
+msgid "phone"
+msgstr "Uimhir ghutháin"
+
+msgid "address"
+msgstr "Seoladh"
+
+msgid "street"
+msgstr "Sráid"
+
+msgid "locality"
+msgstr "Cathair"
+
+msgid "zipcode"
+msgstr "Cód Poist"
+
+msgid "region"
+msgstr "Stát/Cúige"
+
+msgid "country"
+msgstr "Tír"
+
+msgid "birthday"
+msgstr "Lá breithe"
+
+msgid "anniversary"
+msgstr "Cothrom lae"
+
+msgid "website"
+msgstr "Suíomh gréasáin"
+
+msgid "instantmessenger"
+msgstr "TM"
+
+msgid "notes"
+msgstr "Nótaí"
+
+msgid "male"
+msgstr "fireann"
+
+msgid "female"
+msgstr "baineann"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Bainisteoir"
+
+msgid "assistant"
+msgstr "Cúntóir"
+
+msgid "spouse"
+msgstr "Céile"
+
+msgid "allfields"
+msgstr "Gach réimse"
+
+msgid "search"
+msgstr "Cuardaigh"
+
+msgid "searchresult"
+msgstr "Toradh an chuardaigh"
+
+msgid "advsearch"
+msgstr "Cuardach casta"
+
+msgid "advanced"
+msgstr "Ardroghanna"
+
+msgid "other"
+msgstr "Eile"
+
+msgid "printcontact"
+msgstr "Cuir an teagmháil i gcló"
+
+msgid "qrcode"
+msgstr "Cód QR"
+
+msgid "typehome"
+msgstr "Baile"
+
+msgid "typework"
+msgstr "Obair"
+
+msgid "typeother"
+msgstr "Eile"
+
+msgid "typemobile"
+msgstr "Soghluaiste"
+
+msgid "typemain"
+msgstr "Príomh"
+
+msgid "typehomefax"
+msgstr "Faics baile"
+
+msgid "typeworkfax"
+msgstr "Faics oibre"
+
+msgid "typecar"
+msgstr "Gluaisteán"
+
+msgid "typepager"
+msgstr "Glaoire"
+
+msgid "typevideo"
+msgstr "Físeán"
+
+msgid "typeassistant"
+msgstr "Cúntóir"
+
+msgid "typehomepage"
+msgstr "Leathanach baile"
+
+msgid "typeblog"
+msgstr "Blag"
+
+msgid "typeprofile"
+msgstr "Beathaisnéisín"
+
+msgid "addfield"
+msgstr "Cuir réimse leis..."
+
+msgid "addcontact"
+msgstr "Cuir teagmháil leis"
+
+msgid "editcontact"
+msgstr "Chuir chara in eagar"
+
+msgid "contacts"
+msgstr "Teagmhálacha"
+
+msgid "contactproperties"
+msgstr "Airíonna na teagmhálaí"
+
+msgid "contactnameandorg"
+msgstr "Ainm agus Eagraíocht"
+
+msgid "personalinfo"
+msgstr "Faisnéis phearsanta"
+
+msgid "personal"
+msgstr "Pearsanta"
+
+msgid "contactphoto"
+msgstr "Grianghraf den teagmhálaí"
+
+msgid "edit"
+msgstr "Athraigh"
+
+msgid "cancel"
+msgstr "Cealaigh"
+
+msgid "save"
+msgstr "Sábháil"
+
+msgid "delete"
+msgstr "Scrios"
+
+msgid "discard"
+msgstr "Cuileáil"
+
+msgid "continue"
+msgstr "Lean ar aghaidh"
+
+msgid "ok"
+msgstr "Tá go maith"
+
+msgid "rename"
+msgstr "Athainmnigh"
+
+msgid "addphoto"
+msgstr "Cuir leis"
+
+msgid "replacephoto"
+msgstr "Ionadaigh"
+
+msgid "uploadphoto"
+msgstr "Uasluchtaigh grianghraf"
+
+msgid "choosefile"
+msgstr "Roghnaigh comhad..."
+
+msgid "choosefiles"
+msgstr "Roghnaigh comhaid..."
+
+msgid "browse"
+msgstr "Siortaigh"
+
+msgid "newcontact"
+msgstr "Cruthaigh teagmháil nua"
+
+msgid "deletecontact"
+msgstr "Scrios na daoine seo"
+
+msgid "composeto"
+msgstr "Scríobh teachtaireacht go"
+
+msgid "contactsfromto"
+msgstr "Daoine as $from to $to as $count"
+
+msgid "print"
+msgstr "Priontáil"
+
+msgid "export"
+msgstr "Easportáil"
+
+msgid "exportall"
+msgstr "Tabhair amach uile"
+
+msgid "exportsel"
+msgstr "Bain amach an ní roghnaithe"
+
+msgid "exportvcards"
+msgstr ""
+
+msgid "newgroup"
+msgstr "Cruthaigh baicle nua"
+
+msgid "addgroup"
+msgstr "Cuir baicle leis"
+
+msgid "grouprename"
+msgstr "Athainmnigh an bhaicle"
+
+msgid "groupdelete"
+msgstr "Scrios an bhaicle"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr ""
+
+msgid "uponelevel"
+msgstr "Suas"
+
+msgid "previouspage"
+msgstr "Taispeáin an foireann roimhe seo"
+
+msgid "firstpage"
+msgstr "Taispeáin an céad foireann"
+
+msgid "nextpage"
+msgstr "Taispeáin an foireann ina dhiaidh sin"
+
+msgid "lastpage"
+msgstr "Taispeáin an foireann deireanach"
+
+msgid "group"
+msgstr "Baicle"
+
+msgid "groups"
+msgstr "Grúpaí"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr "Seoltaí Pearsanta"
+
+msgid "searchsave"
+msgstr ""
+
+msgid "searchdelete"
+msgstr "Scrios an cuardach"
+
+msgid "import"
+msgstr "Tabhair isteach"
+
+msgid "importcontacts"
+msgstr ""
+
+msgid "importfromfile"
+msgstr "Tabhair isteach ó chomhad"
+
+msgid "importtarget"
+msgstr "Cuir teagmhálaithe le"
+
+msgid "importreplace"
+msgstr "Ionadaigh an leabhar seoltaí iomlán"
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Déanta"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Socruithe chun"
+
+msgid "about"
+msgstr "Maidir le"
+
+msgid "preferences"
+msgstr "Tosaíocht"
+
+msgid "userpreferences"
+msgstr "Tosaíocht Pearsanta"
+
+msgid "editpreferences"
+msgstr "Athraigh tosaíocht pearsanta"
+
+msgid "identities"
+msgstr "Céannachtaí"
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr "Cuir céannacht leis"
+
+msgid "editidentity"
+msgstr "Cuir céannacht in eagar"
+
+msgid "identityencryption"
+msgstr "Criptiúchán"
+
+msgid "preferhtml"
+msgstr "Taispeáin an HTML"
+
+msgid "defaultcharset"
+msgstr ""
+
+msgid "htmlmessage"
+msgstr "Teachtaireacht HTML"
+
+msgid "messagepart"
+msgstr "Cuid"
+
+msgid "digitalsig"
+msgstr "Síniú Digiteach"
+
+msgid "dateformat"
+msgstr "Leagan amach an dáta"
+
+msgid "timeformat"
+msgstr "Leagan amach an am"
+
+msgid "prettydate"
+msgstr "Dátaí Dheas"
+
+msgid "setdefault"
+msgstr "Socraigh an réamhshocraithe"
+
+msgid "autodetect"
+msgstr "Uathoibríoch"
+
+msgid "language"
+msgstr "Teanga"
+
+msgid "timezone"
+msgstr "Crios ama"
+
+msgid "pagesize"
+msgstr "Rónna in aghaidh gach leathanach"
+
+msgid "signature"
+msgstr "Mana clabhsúir"
+
+msgid "dstactive"
+msgstr "Laethúil um shamhradh"
+
+msgid "showinextwin"
+msgstr "Oscail an teachtaireacht i bhfuinneog nua"
+
+msgid "composeextwin"
+msgstr "Cum i bhfuinneog nua"
+
+msgid "htmleditor"
+msgstr "Scríobh teachtaireachta HTML"
+
+msgid "htmlonreply"
+msgstr ""
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr "Mana clabhsúir HTML"
+
+msgid "showemail"
+msgstr "Taispeáin an seoladh ríomhphoist leis an ainm taispeána"
+
+msgid "previewpane"
+msgstr "Taispeáin an pána réamhamharc"
+
+msgid "skin"
+msgstr "Craiceann an comhéadain"
+
+msgid "logoutclear"
+msgstr "Glan Bruscar nuair a scoirtear"
+
+msgid "logoutcompact"
+msgstr "Comhbhrúigh an Bosca Isteach nuair a scoirtear"
+
+msgid "uisettings"
+msgstr "Comhéadan"
+
+msgid "serversettings"
+msgstr "Socruithe an Fhreastalaithe"
+
+msgid "mailboxview"
+msgstr "Amharc Bosca Poist"
+
+msgid "mdnrequests"
+msgstr ""
+
+msgid "askuser"
+msgstr "iarr orm"
+
+msgid "autosend"
+msgstr "seol admháil"
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "Ná bac leis an iarratas"
+
+msgid "readwhendeleted"
+msgstr "Rianaigh an teachtaireacht mar léite nuair a scriostar í"
+
+msgid "flagfordeletion"
+msgstr ""
+
+msgid "skipdeleted"
+msgstr "Ná taispeáin teachtaireachtaí scriosta"
+
+msgid "deletealways"
+msgstr ""
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr ""
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "ó sheoltóirí a bhfuil aithne orthu"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "riamh"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "Taispeáin na híomhánna ceangailte faoin teachtaireacht"
+
+msgid "autosavedraft"
+msgstr "Sábháil dréachta go huathoibríoch"
+
+msgid "everynminutes"
+msgstr "gach $n nóiméad"
+
+msgid "refreshinterval"
+msgstr "Athnuaigh (lorg teachtaireachtaí nua, agus araile)"
+
+msgid "never"
+msgstr "riamh"
+
+msgid "immediately"
+msgstr "láithreach"
+
+msgid "messagesdisplaying"
+msgstr "Ag taispeáint na teachtaireachtaí"
+
+msgid "messagescomposition"
+msgstr "Ag cumadh na teachtaireachtaí"
+
+msgid "mimeparamfolding"
+msgstr ""
+
+msgid "2231folding"
+msgstr "RFC 2231 iomlán (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "RFC 2047 iomlán (eile)"
+
+msgid "force7bit"
+msgstr ""
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Ardroghanna"
+
+msgid "toggleadvancedoptions"
+msgstr "Scoránaigh na hardroghanna"
+
+msgid "focusonnewmessage"
+msgstr "Dírigh fuinneog an líonléitheora ar theachtaireacht nua"
+
+msgid "checkallfolders"
+msgstr "Dearbháil gach fillteán do theachtaireachtaí nua"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr "Príomhroghanna"
+
+msgid "browseroptions"
+msgstr "Roghanna líonléitheora"
+
+msgid "section"
+msgstr "Roinn"
+
+msgid "maintenance"
+msgstr "Cothabháil"
+
+msgid "newmessage"
+msgstr "Teachtaireacht Nua"
+
+msgid "signatureoptions"
+msgstr "Roghanna don Síniú"
+
+msgid "whenreplying"
+msgstr "Nuair atá freagra á thabhairt"
+
+msgid "replyempty"
+msgstr "ná luaigh an teachtaireacht bhunaidh"
+
+msgid "replytopposting"
+msgstr "tosaigh an teachtaireacht nua os cionn an lua"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "tosaigh an teachtaireacht nua faoin lua"
+
+msgid "replyremovesignature"
+msgstr ""
+
+msgid "autoaddsignature"
+msgstr ""
+
+msgid "newmessageonly"
+msgstr "teachtaireacht nua amháin"
+
+msgid "replyandforwardonly"
+msgstr "freagraí agus teachtaireachtaí curtha ar aghaidh amháin"
+
+msgid "insertsignature"
+msgstr "Ionsáigh an síniú"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr "Rianaigh teachtaireachtaí mar léite"
+
+msgid "afternseconds"
+msgstr "tar éis $n soicindí"
+
+msgid "reqmdn"
+msgstr ""
+
+msgid "reqdsn"
+msgstr ""
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr "An leabhar seoltaí réamhshocraithe"
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr "Príobháideach (Baile)"
+
+msgid "businessmode"
+msgstr "Gnó (Obair)"
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr "Roghanna litreora"
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr ""
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr "Cuir leis an bhfoclóir é"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr "i líne"
+
+msgid "asattachment"
+msgstr "mar cheangaltán"
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr "freagair uile"
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "gach teachtaireacht"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Fillteán"
+
+msgid "folders"
+msgstr "Fillteán"
+
+msgid "foldername"
+msgstr "Ainm fillteán"
+
+msgid "subscribed"
+msgstr "Síntiú"
+
+msgid "messagecount"
+msgstr "Teachtaireachtaí"
+
+msgid "create"
+msgstr "Cruthaigh"
+
+msgid "createfolder"
+msgstr "Cruthaigh fillteán nua"
+
+msgid "managefolders"
+msgstr "Stiúir na fillteán"
+
+msgid "specialfolders"
+msgstr "Sainfhillteáin"
+
+msgid "properties"
+msgstr "Airíonna"
+
+msgid "folderproperties"
+msgstr "Airíonna an fhillteáin"
+
+msgid "parentfolder"
+msgstr "An máthairfhillteán"
+
+msgid "location"
+msgstr "Suíomh"
+
+msgid "info"
+msgstr "Faisnéis"
+
+msgid "getfoldersize"
+msgstr "Brúigh chun méid an fhillteáin a fháil"
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr "An cineál fillteán"
+
+msgid "personalfolder"
+msgstr "Fillteán príobháideach"
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr "Fillteán poiblí"
+
+msgid "findfolders"
+msgstr "Aimsigh fillteáin"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr "Aimsigh teachtaireachtaí poist"
+
+msgid "namespace.personal"
+msgstr "Pearsanta"
+
+msgid "namespace.other"
+msgstr "Daoine eile"
+
+msgid "namespace.shared"
+msgstr "Comhroinnte"
+
+msgid "dualuselabel"
+msgstr "Ina bhfuil amháin"
+
+msgid "dualusemail"
+msgstr "teachtaireachtaí"
+
+msgid "dualusefolder"
+msgstr "fillteáin"
+
+msgid "generate"
+msgstr "Cruthaigh"
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr "Oscail Socruithe Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "Criptiúchán"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Sórtáil trí"
+
+msgid "sortasc"
+msgstr "Sórtáil in ord méadaitheach"
+
+msgid "sortdesc"
+msgstr "Sórtáil in ord neartaitheach"
+
+msgid "undo"
+msgstr "Cealaigh"
+
+msgid "installedplugins"
+msgstr "Breiseáin suiteáilte"
+
+msgid "plugin"
+msgstr "Breiseán"
+
+msgid "version"
+msgstr "Leagan"
+
+msgid "source"
+msgstr "Foinse"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Ceadúnas"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Faigh tacaíocht"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr "BBBB"
+
+msgid "dateformaty"
+msgstr "BB"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "LL"
+
+msgid "dateformatj"
+msgstr "L"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Béarla"
+
+msgid "westerneuropean"
+msgstr "Iarthar na hEorpach"
+
+msgid "easterneuropean"
+msgstr "Oirthear na hEorpa"
+
+msgid "southeasterneuropean"
+msgstr ""
+
+msgid "baltic"
+msgstr ""
+
+msgid "cyrillic"
+msgstr ""
+
+msgid "arabic"
+msgstr ""
+
+msgid "greek"
+msgstr ""
+
+msgid "hebrew"
+msgstr "Eabhrais"
+
+msgid "turkish"
+msgstr "Tuircis"
+
+msgid "nordic"
+msgstr ""
+
+msgid "thai"
+msgstr ""
+
+msgid "celtic"
+msgstr "Ceilteach"
+
+msgid "vietnamese"
+msgstr ""
+
+msgid "japanese"
+msgstr ""
+
+msgid "korean"
+msgstr ""
+
+msgid "chinese"
+msgstr "Síneach"
+
+msgid "arialabeltopnav"
+msgstr "Rialtán fuinneoige"
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr "Réamhamharc ar an teachtaireacht"
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr "Corp na Teachtaireachta"
+
+msgid "arialabelmessageactions"
+msgstr "Gníomhartha na teachtaireachta"
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr "Ceanntáisc na teachtaireachta"
+
+msgid "arialabelforwardingoptions"
+msgstr "Roghanna cur ar aghaidh"
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Rianaigh na teachtaireachtaí roghnaithe mar..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Roghanna do chumadh teachtaireachta"
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr "Roghanna do cheangaltáin"
+
+msgid "arialabelmailtomenu"
+msgstr "Roghanna do sheoltaí ríomhphoist"
+
+msgid "arialabelattachmentpreview"
+msgstr "Réamhamharc ar cheangaltáin"
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr "Téarmaí cuardaigh"
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr "Uirlisí don íomhá"
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Tharla botún!"
+
+msgid "messages.loginfailed"
+msgstr "Níor éirigh leis an síniú isteach."
+
+msgid "messages.cookiesdisabled"
+msgstr "Ní ghlacann do líonléitheoir le fianáin."
+
+msgid "messages.sessionerror"
+msgstr "Tá an seisiúin neamhbhailí nó as feidhm."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr ""
+"Theip ar an iarracht chun nasc leis an bhfreastalaí Prótacal Rochtana "
+"Teachtaireachtaí Idirlín (IMAP)"
+
+msgid "messages.servererror"
+msgstr "Botún ar an bhfreastalaí!"
+
+msgid "messages.servererrormsg"
+msgstr "Botún freastalaithe: %msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+"Bhí an iomarca iarrachtaí chun síniú isteach nár éirigh leo. Déan iarracht "
+"arís níos déanaí."
+
+msgid "messages.connerror"
+msgstr "Botún nasctha (Theip air an freastalaí a aimsiú)!"
+
+msgid "messages.dberror"
+msgstr "Botún sa bhunachar sonraí!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Cuireadh bac ar an bhfuinneog aníos!"
+
+msgid "messages.requesttimedout"
+msgstr "D'imigh an t-iarratas thar am"
+
+msgid "messages.errorreadonly"
+msgstr "Ní féidir an oibríocht sin a dhéanamh. Tá an fillteán inléite amháin."
+
+msgid "messages.errornoperm"
+msgstr "Ní féidir an oibríocht sin a dhéanamh. Diúltaíodh cead duit."
+
+msgid "messages.erroroverquota"
+msgstr ""
+"Ní féidir an oibríocht sin a dhéanamh. Níl aon slí saor fágtha ar an ndiosc."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Níl aon slí saor fágtha ar an ndiosca. Brúigh SHIFT+DEL chun teachtaireacht "
+"a scriosadh."
+
+msgid "messages.invalidrequest"
+msgstr "Iarratas neamhbhailí! Níor cuireadh sonraí i dtaisce."
+
+msgid "messages.invalidhost"
+msgstr "Ainm freastalaithe neamhbhailí."
+
+msgid "messages.nomessagesfound"
+msgstr "Níor aimsíodh aon teachtaireacht sa bhosca poist seo."
+
+msgid "messages.loggedout"
+msgstr "Chuir tú deireadh leis an dreas seo. Slán leat!"
+
+msgid "messages.mailboxempty"
+msgstr "Tá an bosca poist folamh"
+
+msgid "messages.nomessages"
+msgstr "Níl teachtaireachtaí ann"
+
+msgid "messages.refreshing"
+msgstr "Ag athnuaigh..."
+
+msgid "messages.loading"
+msgstr "Ag luchtú..."
+
+msgid "messages.uploading"
+msgstr "Ag luchtú an chomhaid..."
+
+msgid "messages.attaching"
+msgstr "Ag ceangail an chomhaid..."
+
+msgid "messages.uploadingmany"
+msgstr "Ag uasluchtú comhaid..."
+
+msgid "messages.loadingdata"
+msgstr "Ag luchtú sonraí..."
+
+msgid "messages.checkingmail"
+msgstr "Ag dearbháil an bhfuil teachtaireachtaí nua ann..."
+
+msgid "messages.sendingmessage"
+msgstr "Ag seoladh na teachtaireachta..."
+
+msgid "messages.messagesent"
+msgstr "Seoladh an teachtaireacht go rathúil."
+
+msgid "messages.savingmessage"
+msgstr "Ag cur an teachtaireacht i dtaisce..."
+
+msgid "messages.messagesaved"
+msgstr "Cuireadh an teachtaireacht i dtaisce sna Dréachtaí."
+
+msgid "messages.successfullysaved"
+msgstr "Cuireadh i dtaisce go rathúil é."
+
+msgid "messages.savingresponse"
+msgstr "Ag cur i dtaisce an téacs freagartha..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+"An bhfuil tú cinnte gur mian leat an téacs freagartha seo a scriosadh?"
+
+msgid "messages.nocontactselected"
+msgstr "Níl teagmhálaí roghnaithe agat fós."
+
+msgid "messages.addedsuccessfully"
+msgstr "Cuireadh an teagmhálaí go rathúil sa leabhar seoltaí."
+
+msgid "messages.contactexists"
+msgstr "Tá teagmhálaí leis an seoladh ríomhphoist céanna ann cheana féin."
+
+msgid "messages.contactnameexists"
+msgstr "Tá teagmhálaí leis an ainm céanna ann cheana féin."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Ar mhaithe le do phríobháideachas a chosaint, tá bac ar íomhánna cianda sa "
+"teachtaireacht seo."
+
+msgid "messages.blockedresources"
+msgstr ""
+"Ar mhaithe le do phríobháideachas a chosaint, tá bac ar acmhainní cianda."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr ""
+"Is teachtaireacht chriptithe í seo agus ní féidir í a thaispeáint. Is dona "
+"linn sin!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Is teachtaireacht chriptithe í seo agus is féidir í a dhíchriptiú le "
+"breiseán ar do líonléitheoir."
+
+msgid "messages.nopubkeyfor"
+msgstr "Níor aimsíodh eochair phoiblí bhailí i gcomhair $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Aimsíodh na heochracha poiblí seo a leanas:"
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Níor aimsíodh aon duine sa leabhar seoltaí."
+
+msgid "messages.contactnotfound"
+msgstr "Níor aimsíodh an teagmhálaí atá á lorg agat."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Theip ar sheoladh na teachtaireachta."
+
+msgid "messages.senttooquickly"
+msgstr "Fan $sec soic(indí) sula sheolann tú an teachtaireacht seo."
+
+msgid "messages.errorsavingsent"
+msgstr ""
+"Tharla botún fad is a bhí an teachteachtaireacht a sheoladh á cur i dtaisce."
+
+msgid "messages.errorsaving"
+msgstr "Tharla botún fad is a bhí sí á cur i dtaisce."
+
+msgid "messages.errormoving"
+msgstr "Níorbh fhéidir na teachtaireachtaí a bhogadh."
+
+msgid "messages.errorcopying"
+msgstr "Níorbh fhéidir na teachtaireachtaí a mhacasamhlú."
+
+msgid "messages.errordeleting"
+msgstr "Níorbh fhéidir na teachtaireachtaí a scriosadh."
+
+msgid "messages.errormarking"
+msgstr "Níorbh fhéidir rian a chur ar na teachtaireachtaí"
+
+msgid "messages.alerttitle"
+msgstr "Aire"
+
+msgid "messages.confirmationtitle"
+msgstr "An bhfuil tú cinnte..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "An bhfuil tú cinnte gur mian leat an daoine roghnaithe a scriosadh?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "An bhfuil tú cinnte gur mian leat an bhaicle roghnaithe a scriosadh?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr ""
+"An bhfuil tú cinnte gur mian leat na teachtaireachtaí roghnaithe a "
+"scriosadh?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "An bhfuil tú cinnte gur mian leat an fillteán seo a scriosadh?"
+
+msgid "messages.movefolderconfirm"
+msgstr "An mian leat dáiríre an fillteán sin a bhogadh?"
+
+msgid "messages.purgefolderconfirm"
+msgstr ""
+"Ar bhfuil tú cinnte gur mian leat gach teachtaireacht sa bhfillteán seo a "
+"scriosadh?"
+
+msgid "messages.contactdeleting"
+msgstr "Ag scriosadh na teagmhálacha..."
+
+msgid "messages.groupdeleting"
+msgstr "Ag scriosadh na baicle..."
+
+msgid "messages.folderdeleting"
+msgstr "Ag scriosadh an fhillteáin..."
+
+msgid "messages.foldermoving"
+msgstr "Ag bogadh an fhillteáin..."
+
+msgid "messages.foldersubscribing"
+msgstr "Ag cur síntiús leis an bhfillteán..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Ag baint síntiús den bhfillteán..."
+
+msgid "messages.formincomplete"
+msgstr "Níor líon tú an fhoirm go hiomlán."
+
+msgid "messages.noemailwarning"
+msgstr "Cuir isteach seoladh ríomhphoist bailí le do thoil."
+
+msgid "messages.nonamewarning"
+msgstr "Cuir isteach ainm le do thoil."
+
+msgid "messages.nopagesizewarning"
+msgstr "Cuir isteach méid leathanaigh le do thoil."
+
+msgid "messages.nosenderwarning"
+msgstr "Cuir isteach seoladh ríomhphoist an tseoltóra."
+
+msgid "messages.recipientsadded"
+msgstr "Cuireadh faighteoir(í) go rathúil leis."
+
+msgid "messages.norecipientwarning"
+msgstr "Abair liom faighteoir amhain ar a laghad"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "An iomarca faighteoirí poiblí"
+
+msgid "messages.nosubjectwarning"
+msgstr "Níl aon ábhair ar an teachtaireacht, ba mhaith tú déarfaidh mé ábair?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Gan ábhar"
+
+msgid "messages.nobodywarning"
+msgstr ""
+"Níl aon teacs san teachtaireacht, ba mhaith tú déarfaidh mé teachtaireacht "
+"ar bith?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Níor seoladh an teachtaireacht seo agus tá athruithe nach cuireadh i dtaisce"
+" inti. An mian leat do chuid athruithe a chuileáil?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Aimsíodh teachtaireacht a chumadh ach nár seoladh.\\n\\nÁbhar: "
+"$subject\\nTaiscthe: $date\\n\\nAr mhaith leat an teachtaireacht seo a chur "
+"ar ais?"
+
+msgid "messages.nosearchname"
+msgstr "Abair liom ainm duine nó seoladh ríomhphost"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Níl gach ceangaltán uasluchtaithe fós. Fan le do thoil nó cealaigh an "
+"t-uasluchtú."
+
+msgid "messages.searchsuccessful"
+msgstr "Fuair mé $n teachtaireacht"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Aimsíodh $nr dteagmhálaí."
+
+msgid "messages.searchnomatch"
+msgstr "Níor aimsigh an cuardach aon rud."
+
+msgid "messages.searching"
+msgstr "Ag cuardach..."
+
+msgid "messages.checking"
+msgstr "Ag dearbháil..."
+
+msgid "messages.stillsearching"
+msgstr "Fós ag cuardach..."
+
+msgid "messages.nospellerrors"
+msgstr "Níor aimsíodh aon bhotún litrithe."
+
+msgid "messages.folderdeleted"
+msgstr "Scriosadh an fillteán."
+
+msgid "messages.foldersubscribed"
+msgstr ""
+
+msgid "messages.folderunsubscribed"
+msgstr ""
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "D'éirigh mé, Scrios mé"
+
+msgid "messages.converting"
+msgstr "Scrios mé formáidithe as an teachtaireacht seo"
+
+msgid "messages.messageopenerror"
+msgstr "Níorbh fhéidir an teachtaireacht a luchtú ón bhfreastalaí."
+
+msgid "messages.filelinkerror"
+msgstr "Níor éirigh leis an gcomhad a cheangail."
+
+msgid "messages.fileuploaderror"
+msgstr "Theip ar uasluchtú an chomhaid."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Beigh an comhad ró-mhor. Is ea $size uas-saghas chun admháil léite"
+
+msgid "messages.filecounterror"
+msgstr "Is féidir suas go dtí $count gcomhad a uasluchtú in aon dreas amháin."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Theip air comhad a cheangail. Sáraíodh uasmhéid teachtaireachta ($size)."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr "Níorbh fhéidir aon teagmháil a mhacasamhlú."
+
+msgid "messages.moveerror"
+msgstr "Níorbh fhéidir aon teagmháil a bhogadh..."
+
+msgid "messages.sourceisreadonly"
+msgstr "Tá an foinse seolaigh seo inléite amháin"
+
+msgid "messages.errorsavingcontact"
+msgstr "Theip mé, Níl an cumas agam an seolagh seo a sábháil"
+
+msgid "messages.movingmessage"
+msgstr "Ag bogadh na teachtaireachtaí..."
+
+msgid "messages.copyingmessage"
+msgstr "Ag macasamhlú na teachtaireachtaí..."
+
+msgid "messages.copyingcontact"
+msgstr "Ag macasamhlú teagmhálach(a)..."
+
+msgid "messages.movingcontact"
+msgstr "Ag bogadh teachtaireacht(aí)"
+
+msgid "messages.deletingmessage"
+msgstr "Ag scriosadh teachtaireacht(aí)..."
+
+msgid "messages.markingmessage"
+msgstr "Ag cur rian ar theachtaireacht(aí)..."
+
+msgid "messages.addingmember"
+msgstr "Ag cur teagmhálacha leis an mbaicle..."
+
+msgid "messages.removingmember"
+msgstr "Ag baint teagmhálaí (teagmhálaithe) ón mbaicle..."
+
+msgid "messages.receiptsent"
+msgstr "Seoladh admháil léite go rathúil."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Níorbh fhéidir an admháil a sheoladh."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "An bhfuil tú cinnte gur mian leat an t-aitheantas seo a scriosadh?"
+
+msgid "messages.nodeletelastidentity"
+msgstr ""
+"Ní féidir leat an t-aitheantas seo a scriosadh. Is é an ceann deireanach atá"
+" agat."
+
+msgid "messages.forbiddencharacter"
+msgstr "Tá carachtar neamhcheadaithe in ainm an fhillteáin."
+
+msgid "messages.selectimportfile"
+msgstr "Roghnaigh comhad le huasluchtú."
+
+msgid "messages.addresswriterror"
+msgstr "Ní féidir scríobh sa leabhar seoltaí roghnaithe."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Cuireadh na teagmhálacha go rathúil leis an mbaicle seo."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Baineadh teagmhálaithe go rathúil on mbaicle."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr "Á tabhairt isteach, fan le do thoil..."
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Tugadh $nr teachtaireacht isteach go rathúil"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Theip ar an tabhairt isteach! Ní comhad teachtaireachta nó comhad bosca "
+"poist bailí é an comhad uasluchtaithe "
+
+msgid "messages.opnotpermitted"
+msgstr "Níl cead sin a dhéanamh!"
+
+msgid "messages.nofromaddress"
+msgstr "Tá seoladh ríomhphoist ar iarraidh san aitheantas roghnaithe. "
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+
+msgid "messages.smtpconnerror"
+msgstr "Botún SMTP ($code): Theip ar an nasc leis an bhfreastalaí."
+
+msgid "messages.smtpautherror"
+msgstr "Botún SMTP ($code): Theip ar an bhfíordheimhniú."
+
+msgid "messages.smtpfromerror"
+msgstr ""
+
+msgid "messages.smtptoerror"
+msgstr ""
+
+msgid "messages.smtprecipientserror"
+msgstr ""
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "Botún SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Seoladh ríomhphoist neamhbhailí: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+"Tá an iomarca faighteoirí ann. Laghdaigh líon na bhfaighteoir chuig $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr ""
+
+msgid "messages.internalerror"
+msgstr "Tharla botún inmheánach. Déan iarracht eile arís le do thoil."
+
+msgid "messages.contactdelerror"
+msgstr "Níorbh fhéidir na teagmhálaithe a scriosadh."
+
+msgid "messages.contactdeleted"
+msgstr "Scriosadh na teagmhálaithe go rathúil."
+
+msgid "messages.contactrestoreerror"
+msgstr "Níorbh fhéidir na teagmhálacha a scriosadh a chur ar ais."
+
+msgid "messages.contactrestored"
+msgstr "Cuireadh teagmhálaí(ithe) ar ais go rathúil."
+
+msgid "messages.groupdeleted"
+msgstr "Scriosadh an bhaicle."
+
+msgid "messages.grouprenamed"
+msgstr "Athainmníodh an bhaicle."
+
+msgid "messages.groupcreated"
+msgstr "Cruthaíodh an bhaicle."
+
+msgid "messages.savedsearchdeleted"
+msgstr ""
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Níorbh fhéidir an cuardach atá i dtaisce a scriosadh."
+
+msgid "messages.savedsearchcreated"
+msgstr ""
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Níorbh fhéidir cuardach i dtaisce a chruthú."
+
+msgid "messages.messagedeleted"
+msgstr "Scriosadh na teachtaireachtaí."
+
+msgid "messages.messagemoved"
+msgstr "Bogadh na teachtaireachtaí go rathúil."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Bogadh na teachtaireachtaí go dtí Bruscar."
+
+msgid "messages.messagecopied"
+msgstr "Macasamhlaíodh na teachtaireachtaí."
+
+msgid "messages.messagemarked"
+msgstr "Cuireadh rian ar na teachtaireachtaí."
+
+msgid "messages.autocompletechars"
+msgstr ""
+
+msgid "messages.autocompletemore"
+msgstr ""
+
+msgid "messages.namecannotbeempty"
+msgstr "Ní féidir leis a bheith gan ainm."
+
+msgid "messages.nametoolong"
+msgstr "Tá an t-ainm rófhada."
+
+msgid "messages.namedotforbidden"
+msgstr "Ní féidir lanstád a bheith ag tús ainm an fhillteáin."
+
+msgid "messages.folderupdated"
+msgstr "Nuashonraíodh an fillteán."
+
+msgid "messages.foldercreated"
+msgstr "Cruthaíodh an fillteán."
+
+msgid "messages.invalidimageformat"
+msgstr "Ní formáid íomhá bailí í sin."
+
+msgid "messages.mispellingsfound"
+msgstr "Aimsíodh botúin litrithe san teachtaireacht."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+
+msgid "messages.messagetoobig"
+msgstr "Tá an teachtaireacht rómhór le gur féidir obair léi."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Rabhadh: Tá Javascript de dhíth ar an gcóras ríomhphoist ghréasáin. Chun "
+"feidhm a bhaint as cumasaigh Javascript sna socruithe i líonléitheoir."
+
+msgid "messages.messageissent"
+msgstr ""
+"Seoladh an teachtaireacht seo cheana, ach níor cuireadh i dtaisce fós í. An "
+"mian leat í a chur i dtaisce?"
+
+msgid "messages.errnotfound"
+msgstr "Níor Aimsíodh an Comhad"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Níor aimsíodh an acmhainn a lorgadh!"
+
+msgid "messages.errfailedrequest"
+msgstr "Iarratas ar theip air"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Theip ar an bhfíordheimhniú"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Níorbh fhéidir a fhíordheimhniú go bhfuil cead agat rochtain a fháil ar an "
+"seirbhís seo!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr "Déan teagmháil le riarthóir d'fhreastalaí."
+
+msgid "messages.clicktoresumesession"
+msgstr "Brúigh anseo chun leanúint ar aghaidh le do dhreas roimhe"
+
+msgid "messages.errcomposesession"
+msgstr "Botún i gcum teachtaireacht"
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr "Brúigh anseo chun teachtaireacht nua a chumadh"
+
+msgid "messages.nosupporterror"
+msgstr "Ní thacaíonn do líonléitheoir leis an ngné sin."
+
+msgid "messages.siginserted"
+msgstr "Cuireadh an síniú isteach go rathúil."
+
+msgid "messages.responseinserted"
+msgstr "Cuireadh an freagra isteach go rathúil."
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr "Tá an liosta folamh."
+
+msgid "messages.listusebutton"
+msgstr "Bain feidhm as an gcnaipe Cruthaigh chun taifead nua a chur leis."
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

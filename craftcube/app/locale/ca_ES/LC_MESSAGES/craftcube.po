@@ -1,0 +1,2930 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ca_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Benvingut a $product"
+
+msgid "username"
+msgstr "Nom d'usuari"
+
+msgid "password"
+msgstr "Contrasenya"
+
+msgid "server"
+msgstr "Servidor"
+
+msgid "login"
+msgstr "Inicia la sessió"
+
+msgid "oauthlogin"
+msgstr "Inicia la sessió amb $provider"
+
+msgid "menu"
+msgstr "Menú"
+
+msgid "logout"
+msgstr "Tanca sessió"
+
+msgid "mail"
+msgstr "Correu"
+
+msgid "settings"
+msgstr "Configuració"
+
+msgid "addressbook"
+msgstr "Contactes"
+
+msgid "darkmode"
+msgstr "Mode fosc"
+
+msgid "lightmode"
+msgstr "Mode clar"
+
+msgid "inbox"
+msgstr "Safata d'entrada"
+
+msgid "drafts"
+msgstr "Esborranys"
+
+msgid "sent"
+msgstr "Enviats"
+
+msgid "trash"
+msgstr "Paperera"
+
+msgid "junk"
+msgstr "Correu brossa"
+
+msgid "show_real_foldernames"
+msgstr "Mostra els noms reals a les carpetes especials"
+
+msgid "subject"
+msgstr "Assumpte"
+
+msgid "from"
+msgstr "Remitent"
+
+msgid "sender"
+msgstr "Remitent"
+
+msgid "to"
+msgstr "Destinatari"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Respon a"
+
+msgid "followupto"
+msgstr "Seguiment-A"
+
+msgid "date"
+msgstr "Data"
+
+msgid "size"
+msgstr "Mida"
+
+msgid "priority"
+msgstr "Prioritat"
+
+msgid "organization"
+msgstr "Organització"
+
+msgid "readstatus"
+msgstr "Estat de lectura"
+
+msgid "listoptions"
+msgstr "Llista d'opcions..."
+
+msgid "listoptionstitle"
+msgstr "Opcions de llista"
+
+msgid "mailboxlist"
+msgstr "Carpetes"
+
+msgid "messagesfromto"
+msgstr "Missatges $from a $to de $count"
+
+msgid "threadsfromto"
+msgstr "Fils $from a $to de $count"
+
+msgid "messagenrof"
+msgstr "Missatge $nr de $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to de $count"
+
+msgid "copy"
+msgstr "Copia"
+
+msgid "move"
+msgstr "Mou"
+
+msgid "moveto"
+msgstr "Mou a..."
+
+msgid "copyto"
+msgstr "Copia a..."
+
+msgid "download"
+msgstr "Descarrega"
+
+msgid "open"
+msgstr "Obre"
+
+msgid "showattachment"
+msgstr "Mostra"
+
+msgid "showanyway"
+msgstr "Mostra-ho de totes maneres"
+
+msgid "filename"
+msgstr "Nom del fitxer"
+
+msgid "filesize"
+msgstr "Mida del fitxer"
+
+msgid "addtoaddressbook"
+msgstr "Afegeix a contactes"
+
+msgid "sun"
+msgstr "dg"
+
+msgid "mon"
+msgstr "dl"
+
+msgid "tue"
+msgstr "dm"
+
+msgid "wed"
+msgstr "dc"
+
+msgid "thu"
+msgstr "dj"
+
+msgid "fri"
+msgstr "dv"
+
+msgid "sat"
+msgstr "ds"
+
+msgid "sunday"
+msgstr "Diumenge"
+
+msgid "monday"
+msgstr "Dilluns"
+
+msgid "tuesday"
+msgstr "Dimarts"
+
+msgid "wednesday"
+msgstr "Dimecres"
+
+msgid "thursday"
+msgstr "Dijous"
+
+msgid "friday"
+msgstr "Divendres"
+
+msgid "saturday"
+msgstr "Dissabte"
+
+msgid "jan"
+msgstr "gen"
+
+msgid "feb"
+msgstr "feb"
+
+msgid "mar"
+msgstr "mar"
+
+msgid "apr"
+msgstr "abr"
+
+msgid "may"
+msgstr "mai"
+
+msgid "jun"
+msgstr "jun"
+
+msgid "jul"
+msgstr "jul"
+
+msgid "aug"
+msgstr "ago"
+
+msgid "sep"
+msgstr "set"
+
+msgid "oct"
+msgstr "oct"
+
+msgid "nov"
+msgstr "nov"
+
+msgid "dec"
+msgstr "des"
+
+msgid "longjan"
+msgstr "gener"
+
+msgid "longfeb"
+msgstr "febrer"
+
+msgid "longmar"
+msgstr "març"
+
+msgid "longapr"
+msgstr "abril"
+
+msgid "longmay"
+msgstr "maig"
+
+msgid "longjun"
+msgstr "juny"
+
+msgid "longjul"
+msgstr "juliol"
+
+msgid "longaug"
+msgstr "agost"
+
+msgid "longsep"
+msgstr "setembre"
+
+msgid "longoct"
+msgstr "octubre"
+
+msgid "longnov"
+msgstr "novembre"
+
+msgid "longdec"
+msgstr "desembre"
+
+msgid "today"
+msgstr "Avui"
+
+msgid "refresh"
+msgstr "Actualitza"
+
+msgid "checkmail"
+msgstr "Comprova si hi ha missatges nous"
+
+msgid "compose"
+msgstr "Escriu un missatge"
+
+msgid "writenewmessage"
+msgstr "Crea un nou missatge"
+
+msgid "reply"
+msgstr "Respon"
+
+msgid "replytomessage"
+msgstr "Respon al remitent"
+
+msgid "replytoallmessage"
+msgstr "Respon a la llista o al remitent i a tots els destinataris"
+
+msgid "replyall"
+msgstr "Respon a tots"
+
+msgid "replylist"
+msgstr "Respon a la llista"
+
+msgid "forward"
+msgstr "Reenvia"
+
+msgid "forwardinline"
+msgstr "Reenvia com en línia"
+
+msgid "forwardattachment"
+msgstr "Reenvia com a adjunt"
+
+msgid "forwardmessage"
+msgstr "Reenvia el missatge"
+
+msgid "bouncemsg"
+msgstr "Torna a enviar (rebot)"
+
+msgid "bounce"
+msgstr "Torna a enviar"
+
+msgid "deletemessage"
+msgstr "Suprimeix el missatge"
+
+msgid "undeletemessage"
+msgstr "Recupera el missatge"
+
+msgid "movemessagetotrash"
+msgstr "Mou el missatge a la paperera"
+
+msgid "printmessage"
+msgstr "Imprimeix aquest missatge"
+
+msgid "previousmessage"
+msgstr "Mostra el missatge anterior"
+
+msgid "firstmessage"
+msgstr "Mostra el primer missatge"
+
+msgid "nextmessage"
+msgstr "Mostra el missatge següent"
+
+msgid "lastmessage"
+msgstr "Mostra el darrer missatge"
+
+msgid "backtolist"
+msgstr "Torna a la llista de missatges"
+
+msgid "viewsource"
+msgstr "Mostra el codi font"
+
+msgid "mark"
+msgstr "Marca"
+
+msgid "markmessages"
+msgstr "Marca missatges"
+
+msgid "markread"
+msgstr "Com a llegit"
+
+msgid "markunread"
+msgstr "Com a no llegit"
+
+msgid "markflagged"
+msgstr "Com a marcat"
+
+msgid "markunflagged"
+msgstr "Com a no marcat"
+
+msgid "markundeleted"
+msgstr "Com a no suprimit(s)"
+
+msgid "markasread"
+msgstr "Marca-ho com a llegit"
+
+msgid "markasunread"
+msgstr "Marca-ho com a no llegit"
+
+msgid "markasflagged"
+msgstr "Marca-ho com a senyalat"
+
+msgid "markasunflagged"
+msgstr "Marca-ho com a no senyalat"
+
+msgid "moreactions"
+msgstr "Més accions..."
+
+msgid "markallread"
+msgstr "Marca-ho tot com a llegit"
+
+msgid "folders-cur"
+msgstr "Només la carpeta seleccionada"
+
+msgid "folders-sub"
+msgstr "Selecciona la carpeta i les seves subcarpetes"
+
+msgid "folders-all"
+msgstr "Totes les carpetes"
+
+msgid "more"
+msgstr "Més"
+
+msgid "back"
+msgstr "Torna"
+
+msgid "options"
+msgstr "Opcions"
+
+msgid "composeoptions"
+msgstr "Opcions de redacció"
+
+msgid "optionsandattachments"
+msgstr "Opcions i fitxers adjunts"
+
+msgid "actions"
+msgstr "Accions"
+
+msgid "first"
+msgstr "Primer"
+
+msgid "last"
+msgstr "Darrer"
+
+msgid "previous"
+msgstr "Anterior"
+
+msgid "next"
+msgstr "Següent"
+
+msgid "select"
+msgstr "Selecciona"
+
+msgid "selection"
+msgstr "Selecció"
+
+msgid "all"
+msgstr "Tots"
+
+msgid "none"
+msgstr "Cap"
+
+msgid "currpage"
+msgstr "Pàgina actual"
+
+msgid "isread"
+msgstr "Llegeix"
+
+msgid "unread"
+msgstr "No llegit"
+
+msgid "flagged"
+msgstr "Marcat"
+
+msgid "unflagged"
+msgstr "No marcat"
+
+msgid "unanswered"
+msgstr "No respost"
+
+msgid "withattachment"
+msgstr "Amb fitxer adjunt"
+
+msgid "deleted"
+msgstr "Suprimit"
+
+msgid "undeleted"
+msgstr "No s'ha suprimit"
+
+msgid "replied"
+msgstr "Respost"
+
+msgid "forwarded"
+msgstr "Reenviat"
+
+msgid "invert"
+msgstr "Inverteix"
+
+msgid "filter"
+msgstr "Filtre"
+
+msgid "list"
+msgstr "Llista"
+
+msgid "threads"
+msgstr "Fils de discussió"
+
+msgid "expand-all"
+msgstr "Expandeix-ho tot"
+
+msgid "expand-unread"
+msgstr "Expandeix no llegits"
+
+msgid "collapse-all"
+msgstr "Redueix-ho tot"
+
+msgid "threaded"
+msgstr "Encadenat"
+
+msgid "showunread"
+msgstr "Mostra els missatges no llegits"
+
+msgid "autoexpand_threads"
+msgstr "Expandeix els missatges encadenats"
+
+msgid "do_expand"
+msgstr "tots els fils de discussió"
+
+msgid "expand_only_unread"
+msgstr "només amb missatges no llegits"
+
+msgid "fromto"
+msgstr "Remitent/Destinatari"
+
+msgid "flag"
+msgstr "Marca"
+
+msgid "attachment"
+msgstr "Adjunt"
+
+msgid "nonesort"
+msgstr "Cap"
+
+msgid "sentdate"
+msgstr "Data d'enviament"
+
+msgid "arrival"
+msgstr "Data d'arribada"
+
+msgid "asc"
+msgstr "ascendent"
+
+msgid "desc"
+msgstr "descendent"
+
+msgid "listcolumns"
+msgstr "Llista les columnes"
+
+msgid "listsorting"
+msgstr "Columna d'ordenació"
+
+msgid "listorder"
+msgstr "Ordre d'ordenació"
+
+msgid "listmode"
+msgstr "Mode de vista de llista"
+
+msgid "lmode"
+msgstr "Mode de llista"
+
+msgid "layout"
+msgstr "Disposició"
+
+msgid "layoutwidescreen"
+msgstr "Pantalla panoràmica"
+
+msgid "layoutdesktop"
+msgstr "Escriptori"
+
+msgid "layoutlist"
+msgstr "Llista"
+
+msgid "layoutwidescreendesc"
+msgstr "Pantalla panoràmica (vista de 3 columnes)"
+
+msgid "layoutdesktopdesc"
+msgstr ""
+"Escriptori (llista de bat a bat amb la previsualització del missatge a sota)"
+
+msgid "layoutlistdesc"
+msgstr "Llista (sense previsualització del missatge)"
+
+msgid "folderactions"
+msgstr "Accions de carpeta..."
+
+msgid "compact"
+msgstr "Compacta"
+
+msgid "empty"
+msgstr "Buida"
+
+msgid "importmessages"
+msgstr "Importa missatges"
+
+msgid "mailimportdesc"
+msgstr ""
+"Podeu carregar correu mitjançant fitxers en format <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> o <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>."
+
+msgid "mailimportzip"
+msgstr "Es poden comprimir diversos fitxers en arxius zip."
+
+msgid "quota"
+msgstr "Ús del disc"
+
+msgid "unknown"
+msgstr "desconegut"
+
+msgid "unlimited"
+msgstr "il·limitat"
+
+msgid "quotatype"
+msgstr "Tipus de quota"
+
+msgid "quotatotal"
+msgstr "Límit"
+
+msgid "quotaused"
+msgstr "Utilitzat"
+
+msgid "quotastorage"
+msgstr "Espai de disc"
+
+msgid "quotamessage"
+msgstr "Comptador de missatges"
+
+msgid "shortheaderdate"
+msgstr "El $date"
+
+msgid "shortheaderto"
+msgstr "A $to el $date"
+
+msgid "shortheaderfrom"
+msgstr "De $from el $date"
+
+msgid "quicksearch"
+msgstr "Cerca ràpida"
+
+msgid "searchplaceholder"
+msgstr "Cerca..."
+
+msgid "resetsearch"
+msgstr "Neteja cerca"
+
+msgid "searchmod"
+msgstr "Cerca modificadors"
+
+msgid "msgtext"
+msgstr "Missatge sencer"
+
+msgid "body"
+msgstr "Cos"
+
+msgid "type"
+msgstr "Tipus"
+
+msgid "namex"
+msgstr "Nom"
+
+msgid "searchscope"
+msgstr "Abast"
+
+msgid "currentfolder"
+msgstr "Carpeta actual"
+
+msgid "subfolders"
+msgstr "Aquesta i les seves subcarpetes"
+
+msgid "allfolders"
+msgstr "Totes les carpetes"
+
+msgid "searchinterval-1W"
+msgstr "Més antic d'una setmana"
+
+msgid "searchinterval-1M"
+msgstr "Més antic d'un mes"
+
+msgid "searchinterval-1Y"
+msgstr "Més antic d'un any"
+
+msgid "searchinterval1W"
+msgstr "Menor d'una setmana"
+
+msgid "searchinterval1M"
+msgstr "Menor d'un mes"
+
+msgid "searchinterval1Y"
+msgstr "Menor d'un any"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Obre a una nova finestra"
+
+msgid "emlsave"
+msgstr "Descarrega (.eml)"
+
+msgid "changeformattext"
+msgstr "Mostra en format de text net"
+
+msgid "changeformathtml"
+msgstr "Mostra en format HTML"
+
+msgid "editasnew"
+msgstr "Edita com a nou"
+
+msgid "send"
+msgstr "Envia"
+
+msgid "sendmessage"
+msgstr "Envia el missatge"
+
+msgid "savemessage"
+msgstr "Desa com a esborrany"
+
+msgid "addattachment"
+msgstr "Adjunta un fitxer"
+
+msgid "charset"
+msgstr "Codificació de caràcters"
+
+msgid "editortype"
+msgstr "Tipus d'editor"
+
+msgid "returnreceipt"
+msgstr "Confirmació de recepció"
+
+msgid "dsn"
+msgstr "Notificació d'estat de lliurament"
+
+msgid "keepformatting"
+msgstr "Conserva la formatació"
+
+msgid "mailreplyintro"
+msgstr "El $date, $sender va escriure:"
+
+msgid "originalmessage"
+msgstr "Missatge Original"
+
+msgid "selectimage"
+msgstr "Selecciona una imatge"
+
+msgid "addimage"
+msgstr "Afegeix una imatge"
+
+msgid "selectmedia"
+msgstr "Selecciona una pel·lícula"
+
+msgid "addmedia"
+msgstr "Afegeix una pel·lícula"
+
+msgid "encrypt"
+msgstr "Xifra"
+
+msgid "encryptmessage"
+msgstr "Xifra el missatge"
+
+msgid "encryptmessagemailvelope"
+msgstr "Xifra el missatge amb Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Importa claus públiques"
+
+msgid "encryptedsendialog"
+msgstr "Envia el missatge xifrat"
+
+msgid "encryptandsign"
+msgstr "Xifra i signa"
+
+msgid "keyid"
+msgstr "ID de la clau"
+
+msgid "keylength"
+msgstr "Bits"
+
+msgid "keyexpired"
+msgstr "Caducat"
+
+msgid "keyrevoked"
+msgstr "Revocat"
+
+msgid "bccinstead"
+msgstr "Fes servir Bcc"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Insereix"
+
+msgid "insertcontact"
+msgstr "Insereix contacte(s)"
+
+msgid "recipient"
+msgstr "Destinatari"
+
+msgid "recipientedit"
+msgstr "Edita el destinatari"
+
+msgid "editidents"
+msgstr "Edita identitats"
+
+msgid "spellcheck"
+msgstr "Ortografia"
+
+msgid "checkspelling"
+msgstr "Comprova l'ortografia"
+
+msgid "resumeediting"
+msgstr "Reprèn l'edició"
+
+msgid "revertto"
+msgstr "Torna a"
+
+msgid "restore"
+msgstr "Recupera"
+
+msgid "restoremessage"
+msgstr "Voleu restaurar el missatge?"
+
+msgid "ignore"
+msgstr "Ignora"
+
+msgid "responses"
+msgstr "Respostes"
+
+msgid "insertresponse"
+msgstr "Introduïu una resposta"
+
+msgid "manageresponses"
+msgstr "Gestiona respostes"
+
+msgid "newresponse"
+msgstr "Crea una nova resposta"
+
+msgid "addresponse"
+msgstr "Afegeix una resposta"
+
+msgid "editresponse"
+msgstr "Edita la resposta"
+
+msgid "editresponses"
+msgstr "Edita respostes"
+
+msgid "responsename"
+msgstr "Nom"
+
+msgid "responsetext"
+msgstr "Text de la resposta"
+
+msgid "attach"
+msgstr "Adjunta"
+
+msgid "attachments"
+msgstr "Adjunts"
+
+msgid "upload"
+msgstr "Afegeix"
+
+msgid "uploadprogress"
+msgstr "$percent ($current de $total)"
+
+msgid "close"
+msgstr "Tanca"
+
+msgid "messageoptions"
+msgstr "Opcions de missatge..."
+
+msgid "togglecomposeoptions"
+msgstr "Commuta les opcions de composició"
+
+msgid "attachmentrename"
+msgstr "Reanomena el fitxer adjunt"
+
+msgid "low"
+msgstr "Baixa"
+
+msgid "lowest"
+msgstr "La més baixa"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "high"
+msgstr "Alta"
+
+msgid "highest"
+msgstr "La més alta"
+
+msgid "nosubject"
+msgstr "(sense assumpte)"
+
+msgid "showimages"
+msgstr "Mostra les imatges"
+
+msgid "allow"
+msgstr "Permet"
+
+msgid "alwaysshow"
+msgstr "Mostra sempre les imatges de $sender"
+
+msgid "alwaysallow"
+msgstr "Permet-ho sempre de $sender"
+
+msgid "isdraft"
+msgstr "Aquest és un missatge esborrany."
+
+msgid "andnmore"
+msgstr "$nr més..."
+
+msgid "details"
+msgstr "Detalls"
+
+msgid "summary"
+msgstr "Resum"
+
+msgid "headers"
+msgstr "Capçaleres"
+
+msgid "allheaders"
+msgstr "Totes les capçaleres..."
+
+msgid "togglemoreheaders"
+msgstr "Mostra més capçaleres del missatge"
+
+msgid "togglefullheaders"
+msgstr "Commuta les capçaleres del missatge en brut"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Text net"
+
+msgid "savesentmessagein"
+msgstr "Desa el missatge enviat a"
+
+msgid "dontsave"
+msgstr "no ho desis"
+
+msgid "maxuploadsize"
+msgstr "La mida màxima permesa del fitxer és $size"
+
+msgid "addcc"
+msgstr "Afegeix Cc"
+
+msgid "addbcc"
+msgstr "Afegeix Bcc"
+
+msgid "addreplyto"
+msgstr "Afegeix Respon-A"
+
+msgid "addfollowupto"
+msgstr "Afegeix Seguiment-A"
+
+msgid "sendreceipt"
+msgstr "Voleu enviar el rebut de lectura?"
+
+msgid "mdnrequest"
+msgstr ""
+"El remitent d'aquest missatge ha demanat ser notificat quan llegiu aquest "
+"missatge. Voleu notificar al remitent?"
+
+msgid "receiptread"
+msgstr "Confirmació de recepció (llegit)"
+
+msgid "yourmessage"
+msgstr "Això és una confirmació de recepció per al vostre missatge"
+
+msgid "receiptnote"
+msgstr ""
+"Nota: Aquesta confirmació només indica que el missatge ha estat mostrat a "
+"l'ordinador del destinatari. No hi ha garantia que el destinatari hagi "
+"llegit o entès el contingut del missatge."
+
+msgid "sendalwaysto"
+msgstr "Envia-ho sempre a $email"
+
+msgid "zoomin"
+msgstr "Apropa-ho"
+
+msgid "zoomout"
+msgstr "Allunya-ho"
+
+msgid "rotate"
+msgstr "Gira-ho"
+
+msgid "increaseimage"
+msgstr "Augmenta la mida de la imatge"
+
+msgid "decreaseimage"
+msgstr "Disminueix la mida de la imatge"
+
+msgid "rotateimage"
+msgstr "Gira la imatge"
+
+msgid "showtools"
+msgstr "Mostra eines d'imatge"
+
+msgid "hidetools"
+msgstr "Amaga eines d'imatge"
+
+msgid "name"
+msgstr "Nom visible"
+
+msgid "firstname"
+msgstr "Nom"
+
+msgid "surname"
+msgstr "Cognom"
+
+msgid "middlename"
+msgstr "Segon Nom"
+
+msgid "nameprefix"
+msgstr "Prefix"
+
+msgid "namesuffix"
+msgstr "Sufix"
+
+msgid "nickname"
+msgstr "Àlies"
+
+msgid "jobtitle"
+msgstr "Càrrec"
+
+msgid "department"
+msgstr "Departament"
+
+msgid "gender"
+msgstr "Sexe"
+
+msgid "maidenname"
+msgstr "Cognom de Solter/a"
+
+msgid "email"
+msgstr "Correu electrònic"
+
+msgid "phone"
+msgstr "Telèfon"
+
+msgid "address"
+msgstr "Adreça"
+
+msgid "street"
+msgstr "Carrer"
+
+msgid "locality"
+msgstr "Ciutat"
+
+msgid "zipcode"
+msgstr "Codi postal"
+
+msgid "region"
+msgstr "Estat/Província"
+
+msgid "country"
+msgstr "País"
+
+msgid "birthday"
+msgstr "Data de naixement"
+
+msgid "anniversary"
+msgstr "Aniversari"
+
+msgid "website"
+msgstr "Pàgina web"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Notes"
+
+msgid "male"
+msgstr "home"
+
+msgid "female"
+msgstr "dona"
+
+msgid "nonbinary"
+msgstr "no-binari"
+
+msgid "othergender"
+msgstr "un altre"
+
+msgid "manager"
+msgstr "Gerent"
+
+msgid "assistant"
+msgstr "Assistent"
+
+msgid "spouse"
+msgstr "Cònjuge"
+
+msgid "allfields"
+msgstr "Tots els camps"
+
+msgid "search"
+msgstr "Cerca"
+
+msgid "searchresult"
+msgstr "Resultat de la cerca"
+
+msgid "advsearch"
+msgstr "Cerca Avançada"
+
+msgid "advanced"
+msgstr "Paràmetres avançats"
+
+msgid "other"
+msgstr "Un altre"
+
+msgid "printcontact"
+msgstr "Imprimeix el contacte"
+
+msgid "qrcode"
+msgstr "Codi QR"
+
+msgid "typehome"
+msgstr "Casa"
+
+msgid "typework"
+msgstr "Feina"
+
+msgid "typeother"
+msgstr "Un altre"
+
+msgid "typemobile"
+msgstr "Mòbil"
+
+msgid "typemain"
+msgstr "Principal"
+
+msgid "typehomefax"
+msgstr "Fax particular"
+
+msgid "typeworkfax"
+msgstr "Fax de la feina"
+
+msgid "typecar"
+msgstr "Cotxe"
+
+msgid "typepager"
+msgstr "Cercapersones"
+
+msgid "typevideo"
+msgstr "Vídeo"
+
+msgid "typeassistant"
+msgstr "Assistent"
+
+msgid "typehomepage"
+msgstr "Pàgina web personal"
+
+msgid "typeblog"
+msgstr "Bloc"
+
+msgid "typeprofile"
+msgstr "Perfil"
+
+msgid "addfield"
+msgstr "Afegeix camp..."
+
+msgid "addcontact"
+msgstr "Afegeix un contacte"
+
+msgid "editcontact"
+msgstr "Edita el contacte"
+
+msgid "contacts"
+msgstr "Contactes"
+
+msgid "contactproperties"
+msgstr "Propietats del contacte"
+
+msgid "contactnameandorg"
+msgstr "Nom i Organització"
+
+msgid "personalinfo"
+msgstr "Informació personal"
+
+msgid "personal"
+msgstr "Personal"
+
+msgid "contactphoto"
+msgstr "Foto de contacte"
+
+msgid "edit"
+msgstr "Edita"
+
+msgid "cancel"
+msgstr "Cancel·la"
+
+msgid "save"
+msgstr "Desa"
+
+msgid "delete"
+msgstr "Suprimeix"
+
+msgid "discard"
+msgstr "Descarta"
+
+msgid "continue"
+msgstr "Continua"
+
+msgid "ok"
+msgstr "D'acord"
+
+msgid "rename"
+msgstr "Reanomena"
+
+msgid "addphoto"
+msgstr "Afegeix"
+
+msgid "replacephoto"
+msgstr "Reemplaça"
+
+msgid "uploadphoto"
+msgstr "Afegeix una fotografia"
+
+msgid "choosefile"
+msgstr "Tria un fitxer..."
+
+msgid "choosefiles"
+msgstr "Tria fitxers..."
+
+msgid "browse"
+msgstr "Navega"
+
+msgid "newcontact"
+msgstr "Crea un nou contacte"
+
+msgid "deletecontact"
+msgstr "Suprimeix els contactes seleccionats"
+
+msgid "composeto"
+msgstr "Redacta un correu per a"
+
+msgid "contactsfromto"
+msgstr "Contactes $from a $to de $count"
+
+msgid "print"
+msgstr "Imprimeix"
+
+msgid "export"
+msgstr "Exporta"
+
+msgid "exportall"
+msgstr "Exporta'ls tots"
+
+msgid "exportsel"
+msgstr "Exporta els seleccionats"
+
+msgid "exportvcards"
+msgstr "Exporta contactes en format vCard"
+
+msgid "newgroup"
+msgstr "Crea un grup nou"
+
+msgid "addgroup"
+msgstr "Afegeix un grup"
+
+msgid "grouprename"
+msgstr "Reanomena el grup"
+
+msgid "groupdelete"
+msgstr "Suprimeix el grup"
+
+msgid "groupassign"
+msgstr "Assigna al grup..."
+
+msgid "groupremove"
+msgstr "Suprimeix del grup"
+
+msgid "groupremoveselected"
+msgstr "Suprimeix els contactes seleccionats del grup"
+
+msgid "uponelevel"
+msgstr "Un nivell amunt"
+
+msgid "previouspage"
+msgstr "Mostra la pàgina anterior"
+
+msgid "firstpage"
+msgstr "Mostra la primera pàgina"
+
+msgid "nextpage"
+msgstr "Mostra la pàgina següent"
+
+msgid "lastpage"
+msgstr "Mostra la darrera pàgina"
+
+msgid "group"
+msgstr "Grup"
+
+msgid "groups"
+msgstr "Grups"
+
+msgid "listgroup"
+msgstr "Llista els membres del grup"
+
+msgid "personaladrbook"
+msgstr "Llibreta d'adreces personals"
+
+msgid "searchsave"
+msgstr "Desa la cerca"
+
+msgid "searchdelete"
+msgstr "Suprimeix la cerca"
+
+msgid "import"
+msgstr "Importa"
+
+msgid "importcontacts"
+msgstr "Importa contactes"
+
+msgid "importfromfile"
+msgstr "Importa des de fitxer"
+
+msgid "importtarget"
+msgstr "Afegeix contactes a"
+
+msgid "importreplace"
+msgstr "Substitueix la llibreta d'adreces sencera"
+
+msgid "importgroups"
+msgstr "Importa assignacions de grup"
+
+msgid "importgroupsall"
+msgstr "Tot (crea grups si és necessari)"
+
+msgid "importgroupsexisting"
+msgstr "Només per a grups existents"
+
+msgid "importdesc"
+msgstr ""
+"Podeu importar contactes des d'una llibreta d'adreces existent. "
+"<br/>Actualment es permet la importació d'adreces des d'una <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> o en format de dades "
+"CSV (dades separades per coma)."
+
+msgid "importmapdesc"
+msgstr ""
+"Confirmeu que la informació de mapatge de camps següent és correcta abans de"
+" continuar amb la importació de dades CSV (separades per comes)."
+
+msgid "fieldnotmapped"
+msgstr "Camp no mapat (no ho importeu)"
+
+msgid "skipheader"
+msgstr "No importis la primera línia (capçaleres)"
+
+msgid "done"
+msgstr "Fet"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Configuració per a"
+
+msgid "about"
+msgstr "Quant a"
+
+msgid "preferences"
+msgstr "Preferències"
+
+msgid "userpreferences"
+msgstr "Preferències de l'usuari"
+
+msgid "editpreferences"
+msgstr "Edita les preferències de l'usuari"
+
+msgid "identities"
+msgstr "Identitats"
+
+msgid "manageidentities"
+msgstr "Gestiona les identitats"
+
+msgid "newidentity"
+msgstr "Crea una nova identitat"
+
+msgid "addidentity"
+msgstr "Afegeix una identitat"
+
+msgid "editidentity"
+msgstr "Edita la identitat"
+
+msgid "identityencryption"
+msgstr "Encriptació"
+
+msgid "preferhtml"
+msgstr "Mostra HTML"
+
+msgid "defaultcharset"
+msgstr "Joc de caràcters per defecte"
+
+msgid "htmlmessage"
+msgstr "Missatge HTML"
+
+msgid "messagepart"
+msgstr "Part"
+
+msgid "digitalsig"
+msgstr "Signatura digital"
+
+msgid "dateformat"
+msgstr "Format de la data"
+
+msgid "timeformat"
+msgstr "Format horari"
+
+msgid "prettydate"
+msgstr "Dates curtes"
+
+msgid "setdefault"
+msgstr "Posa-ho per defecte"
+
+msgid "autodetect"
+msgstr "Auto"
+
+msgid "language"
+msgstr "Idioma"
+
+msgid "timezone"
+msgstr "Fus horari"
+
+msgid "pagesize"
+msgstr "Files per pàgina"
+
+msgid "signature"
+msgstr "Signatura"
+
+msgid "dstactive"
+msgstr "Horari d'estiu"
+
+msgid "showinextwin"
+msgstr "Obre el missatge en una nova finestra"
+
+msgid "composeextwin"
+msgstr "Redacta en una nova finestra"
+
+msgid "htmleditor"
+msgstr "Escriu missatges en HTML"
+
+msgid "htmlonreply"
+msgstr "només en resposta a missatges en HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "quan es reenviï o es respongui un missatge en HTML"
+
+msgid "htmlsignature"
+msgstr "Signatura en HTML"
+
+msgid "showemail"
+msgstr "Mostra l'adreça electrònica amb el nom"
+
+msgid "previewpane"
+msgstr "Mostra el panell de previsualització"
+
+msgid "skin"
+msgstr "Aparença de la interfície"
+
+msgid "logoutclear"
+msgstr "Buida la paperera quan es tanqui la sessió"
+
+msgid "logoutcompact"
+msgstr "Compacta la safata d'entrada quan es tanqui la sessió"
+
+msgid "uisettings"
+msgstr "Interfície de l'usuari"
+
+msgid "serversettings"
+msgstr "Configuració del servidor"
+
+msgid "mailboxview"
+msgstr "Vista de la bústia"
+
+msgid "mdnrequests"
+msgstr "Quan es demani confirmació de recepció"
+
+msgid "askuser"
+msgstr "demana'm què vull fer"
+
+msgid "autosend"
+msgstr "envia la confirmació de recepció"
+
+msgid "autosendknown"
+msgstr ""
+"envia la confirmació de recepció als meus contactes, pels demés demana-m'ho"
+
+msgid "autosendknownignore"
+msgstr "envia la confirmació als meus contactes, pels demés ignora-ho"
+
+msgid "autosendtrusted"
+msgstr ""
+"envia el rebut als remitents de confiança; en cas contrari, pregunta-m'ho"
+
+msgid "autosendtrustedignore"
+msgstr ""
+"envieu el rebut als remitents de confiança; en cas contrari, ignora-ho"
+
+msgid "ignorerequest"
+msgstr "Ignora la petició"
+
+msgid "readwhendeleted"
+msgstr "Marca el missatge com a llegit quan se suprimeixi"
+
+msgid "flagfordeletion"
+msgstr "Marca el missatge com a suprimit en comptes de suprimir-lo"
+
+msgid "skipdeleted"
+msgstr "No mostris els missatges suprimits"
+
+msgid "deletealways"
+msgstr ""
+"Si falla quan es mou un missatge a la Paperera, aleshores suprimeix-lo"
+
+msgid "deletejunk"
+msgstr "Suprimeix directament els missatges de correu brossa"
+
+msgid "showremoteimages"
+msgstr "Mostra les imatges remotes del missatge"
+
+msgid "allowremoteresources"
+msgstr "Permet recursos remots (imatges, estils)"
+
+msgid "fromknownsenders"
+msgstr "de remitents coneguts"
+
+msgid "fromtrustedsenders"
+msgstr "de remitents de confiança"
+
+msgid "frommycontacts"
+msgstr "dels meus contactes"
+
+msgid "always"
+msgstr "sempre"
+
+msgid "alwaysbutplain"
+msgstr "sempre, excepte quan es respon en text net"
+
+msgid "showinlineimages"
+msgstr "Mostra les imatges adjuntes sota el missatge"
+
+msgid "autosavedraft"
+msgstr "Desa l'esborrany automàticament"
+
+msgid "everynminutes"
+msgstr "cada $n minut(s)"
+
+msgid "refreshinterval"
+msgstr "Actualitza (comprova nous missatges, etc.)"
+
+msgid "never"
+msgstr "mai"
+
+msgid "immediately"
+msgstr "immediatament"
+
+msgid "messagesdisplaying"
+msgstr "Vista de missatges"
+
+msgid "messagescomposition"
+msgstr "Composició de missatges"
+
+msgid "mimeparamfolding"
+msgstr "Noms dels adjunts"
+
+msgid "2231folding"
+msgstr "Compleix RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Compleix RFC 2047 (un altre)"
+
+msgid "force7bit"
+msgstr "Fes servir la codificació MIME per a caràcters de 8-bits"
+
+msgid "savelocalstorage"
+msgstr "Desa-ho (temporalment) a l'espai local del navegador"
+
+msgid "advancedoptions"
+msgstr "Opcions avançades"
+
+msgid "toggleadvancedoptions"
+msgstr "Commuta les opcions avançades"
+
+msgid "focusonnewmessage"
+msgstr "Activa la finestra del navegador quan hi hagi un nou missatge"
+
+msgid "checkallfolders"
+msgstr "Comprova totes les carpetes per missatges nous"
+
+msgid "displaynext"
+msgstr "Mostra la següent entrada de la llista després de suprimir/moure"
+
+msgid "defaultfont"
+msgstr "Font de lletra per defecte del missatge en HTML"
+
+msgid "mainoptions"
+msgstr "Opcions principals"
+
+msgid "browseroptions"
+msgstr "Opcions del navegador"
+
+msgid "section"
+msgstr "Secció"
+
+msgid "maintenance"
+msgstr "Manteniment"
+
+msgid "newmessage"
+msgstr "Missatge nou"
+
+msgid "signatureoptions"
+msgstr "Opcions de signatura"
+
+msgid "whenreplying"
+msgstr "Quan es respongui"
+
+msgid "replyempty"
+msgstr "no citis el missatge original"
+
+msgid "replytopposting"
+msgstr "comença el missatge nou a sobre de l'original"
+
+msgid "replytoppostingnoindent"
+msgstr "comença el missatge nou a sobre de l'original (sense sagnat)"
+
+msgid "replybottomposting"
+msgstr "comença el missatge nou per sota de l'original"
+
+msgid "replyremovesignature"
+msgstr "Quan es respongui suprimeix la signatura original del missatge"
+
+msgid "autoaddsignature"
+msgstr "Afegeix la signatura automàticament"
+
+msgid "newmessageonly"
+msgstr "només si és un missatge nou"
+
+msgid "replyandforwardonly"
+msgstr "només a respostes i reenviaments"
+
+msgid "insertsignature"
+msgstr "Inclou la signatura"
+
+msgid "sigbelow"
+msgstr "Posa la signatura a sota del missatge que es respon"
+
+msgid "sigseparator"
+msgstr "Força el separador estàndard de signatures"
+
+msgid "automarkread"
+msgstr "Marca els missatges com a llegits"
+
+msgid "afternseconds"
+msgstr "després de $n segons"
+
+msgid "reqmdn"
+msgstr "Demana sempre la confirmació de recepció"
+
+msgid "reqdsn"
+msgstr "Demana sempre una notificació d'estat de lliurament"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Posa les respostes a la carpeta del missatge que es respon"
+
+msgid "defaultabook"
+msgstr "Llibreta d'adreces per defecte"
+
+msgid "autocompletesingle"
+msgstr "Omet adreces alternatives quan s'autocompleti"
+
+msgid "listnamedisplay"
+msgstr "Llista contactes com a"
+
+msgid "contactformmode"
+msgstr "Mode de formulari de contacte"
+
+msgid "privatemode"
+msgstr "Privat (casa)"
+
+msgid "businessmode"
+msgstr "Empresa (feina)"
+
+msgid "collectedaddresses"
+msgstr "Adreces recollides"
+
+msgid "collectedrecipients"
+msgstr "Destinataris recollits"
+
+msgid "collectedrecipientsopt"
+msgstr "Emmagatzema els destinataris de correu electrònic de sortida a"
+
+msgid "collectedsendersopt"
+msgstr "Emmagatzema els remitents de confiança a"
+
+msgid "trustedsenders"
+msgstr "Remitents de Confiança"
+
+msgid "spellcheckbeforesend"
+msgstr "Comprova l'ortografia abans d'enviar un missatge"
+
+msgid "spellcheckoptions"
+msgstr "Opcions del corrector ortogràfic"
+
+msgid "spellcheckignoresyms"
+msgstr "Ignora paraules amb símbols"
+
+msgid "spellcheckignorenums"
+msgstr "Ignora paraules amb números"
+
+msgid "spellcheckignorecaps"
+msgstr "Ignora paraules amb lletres capitalitzades"
+
+msgid "addtodict"
+msgstr "Afegeix al diccionari"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Registra controlador de protocol pels enllaços mailto:"
+
+msgid "standardwindows"
+msgstr "Gestiona les finestres emergents com si fossin finestres normals"
+
+msgid "forwardmode"
+msgstr "Reenviament de missatges"
+
+msgid "inline"
+msgstr "en línia"
+
+msgid "asattachment"
+msgstr "com un adjunt"
+
+msgid "replyallmode"
+msgstr "Acció per defecte del botó [Respon a tots]"
+
+msgid "replyalldefault"
+msgstr "respon a tots"
+
+msgid "replyalllist"
+msgstr "respon només a la llista de missatges (si n'hi ha cap)"
+
+msgid "allmessages"
+msgstr "tots els missatges"
+
+msgid "olderxdays"
+msgstr "més antic de $x dies"
+
+msgid "folder"
+msgstr "Carpeta"
+
+msgid "folders"
+msgstr "Carpetes"
+
+msgid "foldername"
+msgstr "Nom de la carpeta"
+
+msgid "subscribed"
+msgstr "Subscrit"
+
+msgid "messagecount"
+msgstr "Missatges"
+
+msgid "create"
+msgstr "Crea"
+
+msgid "createfolder"
+msgstr "Crea una carpeta nova"
+
+msgid "managefolders"
+msgstr "Gestiona carpetes"
+
+msgid "specialfolders"
+msgstr "Carpetes especials"
+
+msgid "properties"
+msgstr "Propietats"
+
+msgid "folderproperties"
+msgstr "Propietats de la carpeta"
+
+msgid "parentfolder"
+msgstr "Carpeta superior"
+
+msgid "location"
+msgstr "Ubicació"
+
+msgid "info"
+msgstr "Informació"
+
+msgid "getfoldersize"
+msgstr "Feu clic per veure la mida de la carpeta"
+
+msgid "changesubscription"
+msgstr "Feu clic per canviar la subscripció"
+
+msgid "foldertype"
+msgstr "Tipus de Carpeta"
+
+msgid "personalfolder"
+msgstr "Carpeta privada"
+
+msgid "otherfolder"
+msgstr "Carpeta d'un altre usuari"
+
+msgid "sharedfolder"
+msgstr "Carpeta pública"
+
+msgid "findfolders"
+msgstr "Cerca carpetes"
+
+msgid "findcontacts"
+msgstr "Cerca contactes"
+
+msgid "findmail"
+msgstr "Cerqueu missatges de correu electrònic"
+
+msgid "namespace.personal"
+msgstr "Personal"
+
+msgid "namespace.other"
+msgstr "Altres usuaris"
+
+msgid "namespace.shared"
+msgstr "Compartit"
+
+msgid "dualuselabel"
+msgstr "Només pot contenir"
+
+msgid "dualusemail"
+msgstr "missatges"
+
+msgid "dualusefolder"
+msgstr "carpetes"
+
+msgid "generate"
+msgstr "Genera"
+
+msgid "encryptioncreatekey"
+msgstr "Crea un nou parell de claus"
+
+msgid "openmailvelopesettings"
+msgstr "Obre la configuració de Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Teniu $nr claus privades coincidents emmagatzemades al vostre anell de claus"
+" de Mailvelope:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Aquesta identitat del remitent encara no té cap clau privada PGP "
+"emmagatzemada a la vostra extensió Mailvelope. Voleu crear-ne una per "
+"activar la missatgeria xifrada?"
+
+msgid "encryption"
+msgstr "Encriptació"
+
+msgid "mailvelopeoptions"
+msgstr "Opcions de Mailvelope"
+
+msgid "mailvelopemainkeyring"
+msgstr "Fes servir l’anell de claus principal de Mailvelope"
+
+msgid "mailvelopenotfound"
+msgstr ""
+"L'extensió Mailvelope no està activada/instal·lada al vostre navegador."
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Ordena per"
+
+msgid "sortasc"
+msgstr "Ordena ascendentment"
+
+msgid "sortdesc"
+msgstr "Ordena descendentment"
+
+msgid "undo"
+msgstr "Desfés"
+
+msgid "installedplugins"
+msgstr "Complements instal·lats"
+
+msgid "plugin"
+msgstr "Complement"
+
+msgid "version"
+msgstr "Versió"
+
+msgid "source"
+msgstr "Font"
+
+msgid "destination"
+msgstr "Destinació"
+
+msgid "license"
+msgstr "Llicència"
+
+msgid "skinauthor"
+msgstr "per $author"
+
+msgid "support"
+msgstr "Obtingueu ajuda"
+
+msgid "savedsearches"
+msgstr "Cerques desades"
+
+msgid "dateformatY"
+msgstr "AAAA"
+
+msgid "dateformaty"
+msgstr "AA"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Anglès"
+
+msgid "westerneuropean"
+msgstr "Europeu occidental"
+
+msgid "easterneuropean"
+msgstr "Europeu oriental"
+
+msgid "southeasterneuropean"
+msgstr "Europeu Sud-Oriental"
+
+msgid "baltic"
+msgstr "Bàltic"
+
+msgid "cyrillic"
+msgstr "Ciríl·lic"
+
+msgid "arabic"
+msgstr "Àrab"
+
+msgid "greek"
+msgstr "Grec"
+
+msgid "hebrew"
+msgstr "Hebreu"
+
+msgid "turkish"
+msgstr "Turc"
+
+msgid "nordic"
+msgstr "Nòrdic"
+
+msgid "thai"
+msgstr "Tailandès"
+
+msgid "celtic"
+msgstr "Cèltic"
+
+msgid "vietnamese"
+msgstr "Vietnamita"
+
+msgid "japanese"
+msgstr "Japonès"
+
+msgid "korean"
+msgstr "Coreà"
+
+msgid "chinese"
+msgstr "Xinès"
+
+msgid "arialabeltopnav"
+msgstr "Finestra de control"
+
+msgid "arialabeltasknav"
+msgstr "Aplicació de tasques"
+
+msgid "arialabeltoolbar"
+msgstr "Aplicació de barra d'eines"
+
+msgid "arialabellistnav"
+msgstr "Navegació per llistes"
+
+msgid "arialabelactivetask"
+msgstr "Tasca activa"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Filtre de llistat de correus electrònics"
+
+msgid "arialabelmailsearchform"
+msgstr "Formulari de cerca de correus electrònics"
+
+msgid "arialabelcontactsearchform"
+msgstr "Formulari de cerca de contactes"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Entrada per la cerca de correus electrònics"
+
+msgid "arialabelquicksearchbox"
+msgstr "Entrada de cerca"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Filtre de llistat de carpetes"
+
+msgid "arialabelfoldersearchform"
+msgstr "Formulari de cerca de carpetes"
+
+msgid "arialabelfolderlist"
+msgstr "Selecció de carpeta de correu electrònic"
+
+msgid "arialabelmessagelist"
+msgstr "Llistat de missatges de correu electrònic"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Previsualitza el missatge"
+
+msgid "arialabelmailboxmenu"
+msgstr "Menú d'accions de carpeta"
+
+msgid "arialabellistselectmenu"
+msgstr "Menú de seleccions de la llista"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Menú de llistat de fils"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Opcions de visualització de llista de missatges i ordenació"
+
+msgid "arialabelmailimportdialog"
+msgstr "Diàleg per importar missatges"
+
+msgid "arialabelmessagenav"
+msgstr "Missatge de navegació"
+
+msgid "arialabelmessagebody"
+msgstr "Cos del missatge"
+
+msgid "arialabelmessageactions"
+msgstr "Accions del missatge"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Formulari per la cerca de contactes"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Entrada per la cerca de contactes"
+
+msgid "arialabelmessageheaders"
+msgstr "Capçaleres del missatge"
+
+msgid "arialabelforwardingoptions"
+msgstr "Opcions de re-enviament"
+
+msgid "arialabelreplyalloptions"
+msgstr "Opcions per respondre a tots"
+
+msgid "arialabelmoremessageactions"
+msgstr "Més accions de missatge"
+
+msgid "arialabelmorecontactactions"
+msgstr "Més accions de contacte"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Marca els missatges seleccionats com a..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Opcions de composició"
+
+msgid "arialabelresponsesmenu"
+msgstr "Menú de respostes 'enllaunades' o establertes"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Formulari per pujar adjunts"
+
+msgid "arialabelattachmentmenu"
+msgstr "Opcions de fitxers adjunts"
+
+msgid "arialabelmailtomenu"
+msgstr "Opcions d’adreça de correu electrònic"
+
+msgid "arialabelattachmentpreview"
+msgstr "Previsualitza l'adjunt"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Llista de contactes i grups per seleccionar com a destinataris"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Opcions per exportar contactes"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Opcions de llibreta d'adreces/grup"
+
+msgid "arialabelpreferencesform"
+msgstr "Formulari de preferències"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Formulari d'edició d'identitats"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Formulari d'edició de respostes"
+
+msgid "arialabelsearchterms"
+msgstr "Cerca termes"
+
+msgid "arialabeldropactionmenu"
+msgstr "Menú d'accions d'Arrossega i Deixa anar"
+
+msgid "arialabelheadersmenu"
+msgstr "Menú per afegir el destinatari (capçalera)"
+
+msgid "arialabelimagetools"
+msgstr "Eines d'imatge"
+
+msgid "helplistnavigation"
+msgstr "Llista la navegació per teclat"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Fletxes amunt/avall: Mou la fila seleccionada/activa.\n"
+"Espai: Selecciona la fila activa.\n"
+"Majús + amunt/avall: Selecciona una fila addicional de sobre/sota.\n"
+"Ctrl + Espai: Afegeix la fila activa a la selecció/suprimeix de la selecció."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Fletxes dreta/esquerra: expandeix/contrau fils del missatge (només en mode fils).\n"
+"Retorn: Obre el missatge seleccionat/actiu.\n"
+"Suprimeix: Mou els missatges seleccionats a la Paperera."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Retorn: Obre el contacte seleccionat/actiu"
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Hi ha hagut un error!"
+
+msgid "messages.loginfailed"
+msgstr "L'accés ha fallat."
+
+msgid "messages.cookiesdisabled"
+msgstr "El vostre navegador no accepta galetes."
+
+msgid "messages.sessionerror"
+msgstr "La vostra sessió no existeix o ha caducat."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"S'ha detectat un desajust de galetes. Si us plau, netegeu les galetes del "
+"vostre navegador."
+
+msgid "messages.storageerror"
+msgstr "Ha fallat la connexió amb el servidor d'emmagatzematge."
+
+msgid "messages.servererror"
+msgstr "Error del Servidor!"
+
+msgid "messages.servererrormsg"
+msgstr "Error del Servidor: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+"Hi ha hagut masses intents erronis d'inici de sessió. Torneu a provar-ho més"
+" tard."
+
+msgid "messages.connerror"
+msgstr ""
+"Error de connexió (no s'ha pogut establir la connexió amb el servidor)!"
+
+msgid "messages.dberror"
+msgstr "Error a la Base de Dades!"
+
+msgid "messages.dbconnerror"
+msgstr "No s'ha pogut connectar a la base de dades!"
+
+msgid "messages.windowopenerror"
+msgstr "La finestra emergent ha estat blocada!"
+
+msgid "messages.requesttimedout"
+msgstr "S'ha exhaurit el temps de la sol·licitud"
+
+msgid "messages.errorreadonly"
+msgstr ""
+"No s'ha pogut de realitzar l'operació. La carpeta és de només lectura."
+
+msgid "messages.errornoperm"
+msgstr "No s'ha pogut realitzar l'operació. Permís denegat."
+
+msgid "messages.erroroverquota"
+msgstr ""
+"No s'ha pogut completar l'operació. No hi ha prou espai lliure al disc dur."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"No hi ha prou espai lliure al disc. Feu servir MAJÚS+SUPR per suprimir el "
+"missatge."
+
+msgid "messages.invalidrequest"
+msgstr "Petició no vàlida! No s'han desat les dades."
+
+msgid "messages.invalidhost"
+msgstr "Nom de servidor no vàlid."
+
+msgid "messages.nomessagesfound"
+msgstr "No s'han trobat missatges en aquesta bústia."
+
+msgid "messages.loggedout"
+msgstr "Heu finalitzat correctament la sessió. A reveure!"
+
+msgid "messages.mailboxempty"
+msgstr "La bústia és buida"
+
+msgid "messages.nomessages"
+msgstr "No hi ha missatges"
+
+msgid "messages.refreshing"
+msgstr "S'està actualitzant..."
+
+msgid "messages.loading"
+msgstr "S'està carregant…"
+
+msgid "messages.uploading"
+msgstr "S'està pujant el fitxer..."
+
+msgid "messages.attaching"
+msgstr "S'està adjuntant el fitxer..."
+
+msgid "messages.uploadingmany"
+msgstr "S'estan pujant els fitxers..."
+
+msgid "messages.loadingdata"
+msgstr "S'estan carregant les dades..."
+
+msgid "messages.checkingmail"
+msgstr "S’està comprovant si hi ha missatges nous…"
+
+msgid "messages.sendingmessage"
+msgstr "S’està enviant el missatge…"
+
+msgid "messages.messagesent"
+msgstr "Missatge enviat correctament."
+
+msgid "messages.savingmessage"
+msgstr "S'està desant el missatge..."
+
+msgid "messages.messagesaved"
+msgstr "Missatge desat a Esborranys."
+
+msgid "messages.successfullysaved"
+msgstr "Desat correctament."
+
+msgid "messages.savingresponse"
+msgstr "S'està desant el text de resposta..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Esteu segur de voler suprimir aquest text de resposta?"
+
+msgid "messages.nocontactselected"
+msgstr "Encara no heu seleccionat un contacte."
+
+msgid "messages.addedsuccessfully"
+msgstr "Contacte afegit correctament a la llibreta d'adreces."
+
+msgid "messages.contactexists"
+msgstr "Ja existeix un contacte amb la mateixa adreça de correu electrònic."
+
+msgid "messages.contactnameexists"
+msgstr "Ja existeix un contacte amb el mateix nom."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Per protegir la vostra privadesa, les imatges remotes han estat blocades en "
+"aquest missatge."
+
+msgid "messages.blockedresources"
+msgstr "Per protegir la vostra privacitat s'han blocat els recursos remots."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Aquest missatge conté adreces de correu electrònic sospitoses que poden ser "
+"fraudulentes."
+
+msgid "messages.bccemail"
+msgstr "Els missatges reenviats contenen destinataris confidencials (Cco)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"El missatge s’enviarà sense cap modificació, és a dir, fent servir el cos "
+"original, les capçaleres i els destinataris."
+
+msgid "messages.encryptedmessage"
+msgstr "Aquest és un missatge xifrat i no pot ser mostrat. Ho sento!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Aquest és un missatge xifrat i pot ser desxifrat amb un complement del "
+"vostre navegador."
+
+msgid "messages.nopubkeyfor"
+msgstr "No s'ha trobat una clau pública vàlida per $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"No s'ha trobat una clau pública vàlida per la identitat del vostre remitent."
+" Voleu xifrar el missatge només pels destinataris?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"No s'han pogut encriptar els adjunts ja carregats. Si us plau, afegiu-los de"
+" nou a l'editor d'encriptació."
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"Voleu cercar en servidors de claus públiques les vostres claus no trobades?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "S'han trobat les següents claus públiques:"
+
+msgid "messages.keyservererror"
+msgstr "No s'ha pogut obtenir la clau del servidor de claus."
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+"La clau pública $key s'ha importat correctament al vostre anell de claus."
+
+msgid "messages.nocontactsfound"
+msgstr "No s'ha trobat cap contacte."
+
+msgid "messages.contactnotfound"
+msgstr "No s'ha trobat el contacte sol·licitat."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Heu de fer servir un formulari de cerca per veure els contactes de la "
+"llibreta d’adreces seleccionada."
+
+msgid "messages.sendingfailed"
+msgstr "Error mentre s'enviava el missatge."
+
+msgid "messages.senttooquickly"
+msgstr "Si us plau, espereu $sec segon(s) abans d'enviar aquest missatge."
+
+msgid "messages.errorsavingsent"
+msgstr "S'ha produït un error mentre es desava el missatge enviat."
+
+msgid "messages.errorsaving"
+msgstr "S'ha produït un error mentre es desava."
+
+msgid "messages.errormoving"
+msgstr "No s'ha pogut moure el(s) missatge(s)."
+
+msgid "messages.errorcopying"
+msgstr "No s'ha pogut copiar el(s) missatge(s)."
+
+msgid "messages.errordeleting"
+msgstr "No s'ha pogut suprimir el(s) missatge(s)."
+
+msgid "messages.errormarking"
+msgstr "No s'ha pogut marcar el(s) missatge(s)."
+
+msgid "messages.alerttitle"
+msgstr "Atenció"
+
+msgid "messages.confirmationtitle"
+msgstr "Esteu segur..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Esteu segur de voler suprimir el(s) contacte(s) seleccionat(s)?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Esteu segur de voler suprimir el grup seleccionat?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Esteu segur de voler suprimir el(s) missatge(s) seleccionat(s)?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Esteu segur de voler suprimir aquesta carpeta?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Realment voleu moure aquesta carpeta?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Esteu segur de voler suprimir tots els missatges d'aquesta carpeta?"
+
+msgid "messages.contactdeleting"
+msgstr "S'està suprimint els contacte(s)..."
+
+msgid "messages.groupdeleting"
+msgstr "S'està suprimint el grup..."
+
+msgid "messages.folderdeleting"
+msgstr "S'està suprimint la carpeta..."
+
+msgid "messages.foldermoving"
+msgstr "S'està movent la carpeta..."
+
+msgid "messages.foldersubscribing"
+msgstr "S'està subscrivint la carpeta..."
+
+msgid "messages.folderunsubscribing"
+msgstr "S'està cancel·lant la subscripció de la carpeta..."
+
+msgid "messages.formincomplete"
+msgstr "El formulari no ha estat emplenat completament."
+
+msgid "messages.noemailwarning"
+msgstr "Si us plau, introduïu una adreça de correu electrònic vàlida."
+
+msgid "messages.nonamewarning"
+msgstr "Si us plau, introduïu un nom."
+
+msgid "messages.nopagesizewarning"
+msgstr "Si us plau, introduïu una mida de pàgina."
+
+msgid "messages.nosenderwarning"
+msgstr "Si us plau, introduïu l'adreça de correu electrònic del remitent."
+
+msgid "messages.recipientsadded"
+msgstr "S'ha(n) afegit el(s) destinatari(s) correctament."
+
+msgid "messages.norecipientwarning"
+msgstr "Si us plau, introduïu com a mínim un destinatari."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Tots els destinataris veuran les adreces de correu electrònic dels altres. "
+"Per evitar-ho i protegir la seva privadesa podeu fer servir el camp Cco."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Hi ha masses destinataris públics"
+
+msgid "messages.nosubjectwarning"
+msgstr "El camp \"Assumpte\" és buit. Voleu introduir-ne un ara?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Sense assumpte"
+
+msgid "messages.nobodywarning"
+msgstr "Voleu enviar aquest missatge sense text?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"El missatge no s'ha pogut enviar i té canvis no desats. Voleu descartar "
+"aquests canvis?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"S'ha trobat un missatge començat però que no ha estat enviat.\\n\\nAssumpte:"
+" $subject\\nDesat: $date\\n\\nVoleu recuperar aquest missatge?"
+
+msgid "messages.nosearchname"
+msgstr "Si us plau, introduïu un nom de contacte o una adreça de correu."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Encara no s'han pujat tots els adjunts. Si us plau, espereu o cancel·leu la "
+"pujada."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr missatges trobats."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr contactes trobats."
+
+msgid "messages.searchnomatch"
+msgstr "No s'ha trobat cap coincidència."
+
+msgid "messages.searching"
+msgstr "S'està cercant..."
+
+msgid "messages.checking"
+msgstr "S'està comprovant..."
+
+msgid "messages.stillsearching"
+msgstr "Encara s'està cercant..."
+
+msgid "messages.nospellerrors"
+msgstr "No s'han trobat errors d'ortografia."
+
+msgid "messages.folderdeleted"
+msgstr "Carpeta suprimida correctament."
+
+msgid "messages.foldersubscribed"
+msgstr "Carpeta subscrita correctament."
+
+msgid "messages.folderunsubscribed"
+msgstr "S'ha cancel·lat correctament la subscripció de la carpeta."
+
+msgid "messages.folderpurged"
+msgstr "La carpeta s'ha buidat correctament."
+
+msgid "messages.folderexpunged"
+msgstr "La carpeta s'ha compactat correctament."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Suprimit correctament."
+
+msgid "messages.converting"
+msgstr "S'està traient el format del missatge..."
+
+msgid "messages.messageopenerror"
+msgstr "No s'ha pogut carregar el missatge del servidor."
+
+msgid "messages.filelinkerror"
+msgstr "No s'ha pogut adjuntar el fitxer."
+
+msgid "messages.fileuploaderror"
+msgstr "La càrrega del fitxer ha fallat."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"No es permet la importació de diversos fitxers CSV amb camps diferents."
+
+msgid "messages.filesizeerror"
+msgstr "El fitxer carregat excedeix la mida màxima de $size."
+
+msgid "messages.filecounterror"
+msgstr "Podeu carregar un màxim de $count fitxers alhora."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"No s'ha pogut adjuntar el fitxer. S'ha sobrepassat la mida màxima del "
+"missatge ($size)."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"S'ha superat la mida màxima d'un missatge ($size). No s'han adjuntat $num "
+"missatge(s)."
+
+msgid "messages.copysuccess"
+msgstr "S'han copiat $nr contactes correctament."
+
+msgid "messages.movesuccess"
+msgstr "S'han mogut $nr contactes correctament."
+
+msgid "messages.copyerror"
+msgstr "No s'ha pogut copiar cap contacte."
+
+msgid "messages.moveerror"
+msgstr "No s'ha pogut moure cap contacte."
+
+msgid "messages.sourceisreadonly"
+msgstr "Aquesta adreça és només de lectura."
+
+msgid "messages.errorsavingcontact"
+msgstr "No s'ha pogut desar l'adreça de contacte."
+
+msgid "messages.movingmessage"
+msgstr "S'està movent missatge(s)..."
+
+msgid "messages.copyingmessage"
+msgstr "S'està copiant missatge(s)..."
+
+msgid "messages.copyingcontact"
+msgstr "S'està copiant contacte(s)..."
+
+msgid "messages.movingcontact"
+msgstr "S'estan movent els contacte(s)..."
+
+msgid "messages.deletingmessage"
+msgstr "S'està suprimint missatge(s)..."
+
+msgid "messages.markingmessage"
+msgstr "S'està marcant missatge(s)..."
+
+msgid "messages.addingmember"
+msgstr "S'està afegint contacte(s) al grup..."
+
+msgid "messages.removingmember"
+msgstr "S'està suprimint contacte(s) del grup..."
+
+msgid "messages.receiptsent"
+msgstr "Confirmació de lectura enviada correctament."
+
+msgid "messages.errorsendingreceipt"
+msgstr "No s'ha pogut enviar la confirmació."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Esteu segur de voler suprimir aquesta identitat?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "No podeu suprimir aquesta identitat, és l'última."
+
+msgid "messages.forbiddencharacter"
+msgstr "El nom de carpeta conté un caràcter no permès."
+
+msgid "messages.selectimportfile"
+msgstr "Si us plau, seleccioneu un fitxer per carregar."
+
+msgid "messages.addresswriterror"
+msgstr "La llibreta d'adreces seleccionada no és modificable."
+
+msgid "messages.contactaddedtogroup"
+msgstr "S'han afegit correctament els contactes a aquest grup."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "S'han suprimit correctament els contactes d'aquest grup."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "No s'ha canviat cap assignació de grup."
+
+msgid "messages.importwait"
+msgstr "S'està important, espereu si us plau..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"La importació ha fallat. El fitxer carregat no és un fitxer de dades vàlid."
+
+msgid "messages.importconfirm"
+msgstr "<b>S'han importat $inserted contactes correctament</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "<b>S'han importat $nr missatges correctament</b>"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"La importació ha fallat. El fitxer que heu carregat no és un fitxer de "
+"missatges vàlid o no és un fitxer de bústia."
+
+msgid "messages.opnotpermitted"
+msgstr "Operació no permesa!"
+
+msgid "messages.nofromaddress"
+msgstr ""
+"No s'ha trobat l'adreça de correu electrònic a la identitat seleccionada."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Si canvieu el tipus d'editor pot ser que perdreu tot el format del text. "
+"Voleu continuar?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Hi ha hagut un error fatal de configuració. Contacteu amb el vostre "
+"administrador immediatament. <b>El vostre missatge no pot ser enviat.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Error SMTP ($code): La connexió al servidor ha fallat."
+
+msgid "messages.smtpautherror"
+msgstr "Error SMTP ($code): La identificació ha fallat."
+
+msgid "messages.smtpfromerror"
+msgstr "Error SMTP ($code): No s'ha pogut posar \"$from\" com a remitent ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "Error SMTP ($code): No s'ha pogut posar \"$to\" com a destinatari ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "Error SMTP: No s'ha pogut analitzar la llista de destinataris."
+
+msgid "messages.smtputf8error"
+msgstr ""
+"Error SMTP: El servidor no admet caràcters Unicode a l'adreça de correu."
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+"Error SMTP: La mida del missatge supera el límit del servidor ($limit)."
+
+msgid "messages.smtperror"
+msgstr "Error SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Adreça de correu electrònic no vàlida: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Hi ha masses destinataris. Reduïu el nombre de destinataris a $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "El nombre de membres del grup supera el màxim de $max."
+
+msgid "messages.internalerror"
+msgstr "S'ha produït un error intern. Si us plau torneu-ho a provar."
+
+msgid "messages.contactdelerror"
+msgstr "No s'han pogut suprimir el(s) contacte(s)."
+
+msgid "messages.contactdeleted"
+msgstr "Contacte(s) suprimit(s) correctament."
+
+msgid "messages.contactrestoreerror"
+msgstr "No s'ha pogut restaurar el(s) contacte(s) suprimit(s)."
+
+msgid "messages.contactrestored"
+msgstr "Contacte(s) restaurat(s) correctament."
+
+msgid "messages.groupdeleted"
+msgstr "Grup suprimit correctament."
+
+msgid "messages.grouprenamed"
+msgstr "Grup reanomenat correctament."
+
+msgid "messages.groupcreated"
+msgstr "Grup creat correctament."
+
+msgid "messages.savedsearchdeleted"
+msgstr "S'ha suprimit correctament la cerca desada."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "No s'ha pogut suprimir la cerca desada."
+
+msgid "messages.savedsearchcreated"
+msgstr "S'ha creat correctament la cerca desada."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "No s'ha pogut crear la cerca desada."
+
+msgid "messages.messagedeleted"
+msgstr "Missatge(s) suprimit(s) correctament."
+
+msgid "messages.messagemoved"
+msgstr "Missatge(s) mogut(s) correctament."
+
+msgid "messages.messagemovedtotrash"
+msgstr "El(s) missatge(s) s'ha(n) mogut correctament a la Paperera."
+
+msgid "messages.messagecopied"
+msgstr "Missatge(s) copiat(s) correctament."
+
+msgid "messages.messagemarked"
+msgstr "Missatge(s) marcat(s) correctament."
+
+msgid "messages.autocompletechars"
+msgstr "Introduïu com a mínim $min caràcters per l'autocompleció."
+
+msgid "messages.autocompletemore"
+msgstr ""
+"S'han trobat més entrades coincidents. Si us plau, introduïu més caràcters."
+
+msgid "messages.namecannotbeempty"
+msgstr "El nom no pot estar buit."
+
+msgid "messages.nametoolong"
+msgstr "El nom és massa llarg."
+
+msgid "messages.namedotforbidden"
+msgstr "El nom de carpeta no pot començar amb un punt."
+
+msgid "messages.folderupdated"
+msgstr "La carpeta ha estat actualitzada correctament."
+
+msgid "messages.foldercreated"
+msgstr "La carpeta ha estat creada correctament."
+
+msgid "messages.invalidimageformat"
+msgstr "No és un format d'imatge vàlid."
+
+msgid "messages.mispellingsfound"
+msgstr "S'han detectat errors d'ortografia al missatge."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"No s'ha pogut crear/moure la carpeta dins de la carpeta ascendent "
+"seleccionada. No hi ha permisos d'escriptura."
+
+msgid "messages.messagetoobig"
+msgstr "La part del missatge és massa gran per processar-la."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Aquest adjunt és sospitós per què el seu tipus no coincideix amb el tipus "
+"declarat en el missatge. Si no us en refieu del remitent, no hauríeu d'obrir"
+" aquest missatge en el navegador perquè pot tenir contingut maliciós. "
+"<br/><br/><em>S'esperava: $expected; s'ha trobat: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Atenció: Aquest client de correu necessita Javascript! Per a poder-lo fer "
+"servir heu d'activar Javascript a les opcions del navegador."
+
+msgid "messages.messageissent"
+msgstr ""
+"El missatge ja ha estat enviat, però encara no s'ha desat. Voleu desar-lo "
+"ara?"
+
+msgid "messages.errnotfound"
+msgstr "No s'ha trobat el fitxer"
+
+msgid "messages.errnotfoundexplain"
+msgstr "No s'ha trobat el recurs sol·licitat!"
+
+msgid "messages.errfailedrequest"
+msgstr "La petició ha fallat"
+
+msgid "messages.errauthorizationfailed"
+msgstr "L'autorització ha fallat"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "No s'ha pogut verificar que tingueu accés autoritzat a aquest servei!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Ha fallat la verificació de la petició"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Per a la vostra protecció, l'accés a aquest recurs està protegit contra CSRF.\n"
+"Si veieu això, és probable que no hàgiu tancat la sessió abans de sortir de l'aplicació web.\n"
+"\n"
+"En aquest moment cal una intervenció manual per poder continuar."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Si us plau, contacteu amb el vostre administrador de sistemes."
+
+msgid "messages.clicktoresumesession"
+msgstr "Feu clic aquí per reprendre la vostre sessió anterior"
+
+msgid "messages.errcomposesession"
+msgstr "Error de sessió de redacció"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "No s'ha trobat la sessió de redacció sol·licitada."
+
+msgid "messages.clicktocompose"
+msgstr "Feu clic aquí per editar un nou missatge"
+
+msgid "messages.nosupporterror"
+msgstr "Aquesta característica no està suportada pel vostre navegador."
+
+msgid "messages.siginserted"
+msgstr "Signatura inserida correctament."
+
+msgid "messages.responseinserted"
+msgstr "Resposta inserida correctament."
+
+msgid "messages.noresponsesavailable"
+msgstr "No hi ha respostes disponibles"
+
+msgid "messages.listempty"
+msgstr "La llista és buida."
+
+msgid "messages.listusebutton"
+msgstr "Feu servir el botó 'Crea' per afegir un nou registre."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "S'ha creat un nou parell de claus per $identity."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Sembla ser que aquest fitxer adjunt és buit.<br>Si us plau, consulteu amb la"
+" persona que l’ha enviat."
+
+msgid "messages.oauthloginfailed"
+msgstr "Ha fallat l'inici de sessió d'OAuth. Si us plau, torneu-ho a provar."
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

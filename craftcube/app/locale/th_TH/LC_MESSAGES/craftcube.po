@@ -1,0 +1,2837 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: th_TH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "ยินดีต้อนรับสู่ $product"
+
+msgid "username"
+msgstr "บัญชีผู้ใช้"
+
+msgid "password"
+msgstr "รหัสผ่าน"
+
+msgid "server"
+msgstr "เซิร์ฟเวอร์"
+
+msgid "login"
+msgstr "เข้าสู่ระบบ"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr "เมนู"
+
+msgid "logout"
+msgstr "ออกจากระบบ"
+
+msgid "mail"
+msgstr "อีเมล์"
+
+msgid "settings"
+msgstr "ปรับแต่งค่าส่วนตัว"
+
+msgid "addressbook"
+msgstr "สมุดรายชื่อ"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "กล่องขาเข้า"
+
+msgid "drafts"
+msgstr "กล่องจดหมายร่าง"
+
+msgid "sent"
+msgstr "กล่องขาออก"
+
+msgid "trash"
+msgstr "ถังขยะ"
+
+msgid "junk"
+msgstr "กล่องจดหมายขยะ"
+
+msgid "show_real_foldernames"
+msgstr "แสดงชื่อจริงสำหรับโฟลเดอร์พิเศษ"
+
+msgid "subject"
+msgstr "หัวจดหมาย"
+
+msgid "from"
+msgstr "ผู้ส่ง"
+
+msgid "sender"
+msgstr "ผู้ส่ง"
+
+msgid "to"
+msgstr "ผู้รับ"
+
+msgid "cc"
+msgstr "คัดลอก"
+
+msgid "bcc"
+msgstr "แอบสำเนาถึง"
+
+msgid "replyto"
+msgstr "ตอบกลับ"
+
+msgid "followupto"
+msgstr "ส่งต่อ"
+
+msgid "date"
+msgstr "วันที่"
+
+msgid "size"
+msgstr "ขนาด"
+
+msgid "priority"
+msgstr "ระดับความสำคัญ"
+
+msgid "organization"
+msgstr "องค์กร"
+
+msgid "readstatus"
+msgstr "สถานะการเปิดอ่าน"
+
+msgid "listoptions"
+msgstr "ตัวเลือกการแสดงรายการ"
+
+msgid "listoptionstitle"
+msgstr "รายการตั้งค่า"
+
+msgid "mailboxlist"
+msgstr "กล่องจดหมาย"
+
+msgid "messagesfromto"
+msgstr "จดหมายจาก $from ถึง $to จำนวน $count ฉบับ"
+
+msgid "threadsfromto"
+msgstr ""
+
+msgid "messagenrof"
+msgstr "จดหมายฉบับที่ $nr จาก $count ฉบับ"
+
+msgid "fromtoshort"
+msgstr ""
+
+msgid "copy"
+msgstr "คัดลอก"
+
+msgid "move"
+msgstr "ย้าย"
+
+msgid "moveto"
+msgstr "ย้ายไป..."
+
+msgid "copyto"
+msgstr "คัดลอกไป..."
+
+msgid "download"
+msgstr "ดาวน์โหลด"
+
+msgid "open"
+msgstr "เปิด"
+
+msgid "showattachment"
+msgstr "แสดง"
+
+msgid "showanyway"
+msgstr "แสดงตลอด"
+
+msgid "filename"
+msgstr "ชื่อไฟล์"
+
+msgid "filesize"
+msgstr "ขนาดไฟล์"
+
+msgid "addtoaddressbook"
+msgstr "บันทึกในสมุดรายชื่อ"
+
+msgid "sun"
+msgstr "อา"
+
+msgid "mon"
+msgstr "จ"
+
+msgid "tue"
+msgstr "อ"
+
+msgid "wed"
+msgstr "พ"
+
+msgid "thu"
+msgstr "พฤ"
+
+msgid "fri"
+msgstr "ศ"
+
+msgid "sat"
+msgstr "ส"
+
+msgid "sunday"
+msgstr "วันอาทิตย์"
+
+msgid "monday"
+msgstr "วันจันทร์"
+
+msgid "tuesday"
+msgstr "วันอังคาร"
+
+msgid "wednesday"
+msgstr "วันพุธ"
+
+msgid "thursday"
+msgstr "วันพฤหัสบดี"
+
+msgid "friday"
+msgstr "วันศุกร์"
+
+msgid "saturday"
+msgstr "วันเสาร์"
+
+msgid "jan"
+msgstr "ม.ค."
+
+msgid "feb"
+msgstr "ก.พ."
+
+msgid "mar"
+msgstr "มี.ค."
+
+msgid "apr"
+msgstr "เม.ย."
+
+msgid "may"
+msgstr "พ.ค."
+
+msgid "jun"
+msgstr "มิ.ย."
+
+msgid "jul"
+msgstr "ก.ค."
+
+msgid "aug"
+msgstr "ส.ค."
+
+msgid "sep"
+msgstr "ก.ย."
+
+msgid "oct"
+msgstr "ต.ค."
+
+msgid "nov"
+msgstr "พ.ย."
+
+msgid "dec"
+msgstr "ธ.ค."
+
+msgid "longjan"
+msgstr "มกราคม"
+
+msgid "longfeb"
+msgstr "กุมภาพันธ์"
+
+msgid "longmar"
+msgstr "มีนาคม"
+
+msgid "longapr"
+msgstr "เมษายน"
+
+msgid "longmay"
+msgstr "พ.ค."
+
+msgid "longjun"
+msgstr "มิถุนายน"
+
+msgid "longjul"
+msgstr "กรกฎาคม"
+
+msgid "longaug"
+msgstr "สิงหาคม"
+
+msgid "longsep"
+msgstr "กันยายน"
+
+msgid "longoct"
+msgstr "ตุลาคม"
+
+msgid "longnov"
+msgstr "พฤศจิกายน"
+
+msgid "longdec"
+msgstr "ธันวาคม"
+
+msgid "today"
+msgstr "วันนี้"
+
+msgid "refresh"
+msgstr "รีเฟรช"
+
+msgid "checkmail"
+msgstr "ตรวจสอบจดหมายใหม่"
+
+msgid "compose"
+msgstr "เขียนจดหมายใหม่"
+
+msgid "writenewmessage"
+msgstr "สร้างจดหมายใหม่"
+
+msgid "reply"
+msgstr "ตอบกลับ"
+
+msgid "replytomessage"
+msgstr "ตอบกลับจดหมาย"
+
+msgid "replytoallmessage"
+msgstr "ตอบกลับถึงทุกคนในจดหมาย"
+
+msgid "replyall"
+msgstr "ตอบกลับทั้งหมด"
+
+msgid "replylist"
+msgstr "รายชื่อตอบกลับ"
+
+msgid "forward"
+msgstr "ส่งต่อ"
+
+msgid "forwardinline"
+msgstr "ส่งต่อในบรรทัด"
+
+msgid "forwardattachment"
+msgstr "ส่งต่อเป็นไฟล์แนบ"
+
+msgid "forwardmessage"
+msgstr "ส่งต่อจดหมาย"
+
+msgid "bouncemsg"
+msgstr "ส่งอีกครั้ง (ตีกลับ)"
+
+msgid "bounce"
+msgstr "ส่งอีกครั้ง"
+
+msgid "deletemessage"
+msgstr "ลบจดหมาย"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "ย้ายข้อความไปไว้ในถังขยะ"
+
+msgid "printmessage"
+msgstr "พิมพ์จดหมาย"
+
+msgid "previousmessage"
+msgstr "แสดงจดหมายฉบับที่แล้ว"
+
+msgid "firstmessage"
+msgstr "แสดงจดหมายฉบับแรก"
+
+msgid "nextmessage"
+msgstr "แสดงจดหมายฉบับต่อไป"
+
+msgid "lastmessage"
+msgstr "แสดงจดหมายฉบับล่าสุด"
+
+msgid "backtolist"
+msgstr "กลับไปยังรายการจดหมาย"
+
+msgid "viewsource"
+msgstr "แสดง source"
+
+msgid "mark"
+msgstr "ทำเครื่องหมาย"
+
+msgid "markmessages"
+msgstr "ทำเครื่องหมายข้อความ"
+
+msgid "markread"
+msgstr "ว่าอ่านแล้ว"
+
+msgid "markunread"
+msgstr "ว่ายังไม่ได้อ่าน"
+
+msgid "markflagged"
+msgstr "ถูกตั้งค่าสถานะ"
+
+msgid "markunflagged"
+msgstr "ไม่ถูกตั้งค่าสถานะ"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "การกระทำเพิ่มเติม..."
+
+msgid "markallread"
+msgstr "ทำว่าอ่านแล้ว"
+
+msgid "folders-cur"
+msgstr "เลือกเฉพาะโฟเดอร์"
+
+msgid "folders-sub"
+msgstr "เลือกโฟเดอร์และโฟเดอร์ย่อย"
+
+msgid "folders-all"
+msgstr "ทุกโฟเดอร์"
+
+msgid "more"
+msgstr "เพิ่มเติม"
+
+msgid "back"
+msgstr "ย้อนกลับ"
+
+msgid "options"
+msgstr "ตัวเลือก"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr "แรก"
+
+msgid "last"
+msgstr "ล่าสุด"
+
+msgid "previous"
+msgstr "ก่อนหน้า"
+
+msgid "next"
+msgstr "ถัดไป"
+
+msgid "select"
+msgstr "เลือก"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "ทั้งหมด"
+
+msgid "none"
+msgstr "ไม่เลือก"
+
+msgid "currpage"
+msgstr "หน้าปัจจุบัน"
+
+msgid "isread"
+msgstr "อ่าน"
+
+msgid "unread"
+msgstr "จดหมายที่ไม่ได้อ่าน"
+
+msgid "flagged"
+msgstr "ปักธง"
+
+msgid "unflagged"
+msgstr "ไม่ปักธง"
+
+msgid "unanswered"
+msgstr "ยังไม่ได้ตอบ"
+
+msgid "withattachment"
+msgstr "พร้อมแนบ"
+
+msgid "deleted"
+msgstr "ลบแล้ว"
+
+msgid "undeleted"
+msgstr "ยังไม่ได้ลบ"
+
+msgid "replied"
+msgstr "ตอบกลับ"
+
+msgid "forwarded"
+msgstr "ส่งต่อแล้ว"
+
+msgid "invert"
+msgstr "กลับกัน"
+
+msgid "filter"
+msgstr "ตัวกรองข้อมูล"
+
+msgid "list"
+msgstr "รายการ"
+
+msgid "threads"
+msgstr "หัวข้อ"
+
+msgid "expand-all"
+msgstr "แสดงทั้งหมด"
+
+msgid "expand-unread"
+msgstr "แสดงเฉพาะที่ยังไม่ได้อ่าน"
+
+msgid "collapse-all"
+msgstr "ปิดทั้งหมด"
+
+msgid "threaded"
+msgstr ""
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "ขยายเธรดข้อความ"
+
+msgid "do_expand"
+msgstr "หัวข้อทั้งหมด"
+
+msgid "expand_only_unread"
+msgstr "เฉพาะกับข้อความที่ยังไม่ได้อ่าน"
+
+msgid "fromto"
+msgstr "จาก/ถึง"
+
+msgid "flag"
+msgstr "ปักธง"
+
+msgid "attachment"
+msgstr "ไฟล์แนบ"
+
+msgid "nonesort"
+msgstr "ไม่เลือก"
+
+msgid "sentdate"
+msgstr "วันที่ส่ง"
+
+msgid "arrival"
+msgstr "วันที่มาถึง"
+
+msgid "asc"
+msgstr "เรียงจากน้อยมามาก"
+
+msgid "desc"
+msgstr "เรีียงจากมากไปน้อย"
+
+msgid "listcolumns"
+msgstr "แสดงคอลัมน์"
+
+msgid "listsorting"
+msgstr "จัดเรียงคอลัมน์"
+
+msgid "listorder"
+msgstr "เรียงลำดับ"
+
+msgid "listmode"
+msgstr "โหมดดูรายการ"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr "แบบ"
+
+msgid "layoutwidescreen"
+msgstr "Widescreen"
+
+msgid "layoutdesktop"
+msgstr "เดสก์ทอป"
+
+msgid "layoutlist"
+msgstr "รายการ"
+
+msgid "layoutwidescreendesc"
+msgstr "Widescreen (3-column view)"
+
+msgid "layoutdesktopdesc"
+msgstr "เดสก์ท็อป (รายการแบบกว้าง ๆ และตัวอย่างอีเมลด้านล่าง)"
+
+msgid "layoutlistdesc"
+msgstr "รายการ (ไม่มีตัวอย่างจดหมาย)"
+
+msgid "folderactions"
+msgstr "การทำงานของโฟลเดอร์ ..."
+
+msgid "compact"
+msgstr "แบบย่อ"
+
+msgid "empty"
+msgstr "ว่างเปล่า"
+
+msgid "importmessages"
+msgstr "นำเข้าข้อความ"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "พื้นที่ใช้งาน"
+
+msgid "unknown"
+msgstr "ไม่ทราบ"
+
+msgid "unlimited"
+msgstr "ไม่จำกัด"
+
+msgid "quotatype"
+msgstr "ประเภทโควต้า"
+
+msgid "quotatotal"
+msgstr "จำกัด"
+
+msgid "quotaused"
+msgstr "ใช้"
+
+msgid "quotastorage"
+msgstr "พื้นที่ว่าง"
+
+msgid "quotamessage"
+msgstr "จำนวนข้อความ"
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "ค้นหาแบบด่วน"
+
+msgid "searchplaceholder"
+msgstr "ค้นหา..."
+
+msgid "resetsearch"
+msgstr "ล้างการค้นหา"
+
+msgid "searchmod"
+msgstr "แก้ไขการค้นหา"
+
+msgid "msgtext"
+msgstr "ทั้งข้อความ"
+
+msgid "body"
+msgstr "เนื้อหา"
+
+msgid "type"
+msgstr "ชนิด"
+
+msgid "namex"
+msgstr "ชื่อ"
+
+msgid "searchscope"
+msgstr "ขอบเขต"
+
+msgid "currentfolder"
+msgstr "โฟลเดอร์ปัจจุบัน"
+
+msgid "subfolders"
+msgstr "โฟลเดอร์นี้และโฟลเดอร์ย่อย"
+
+msgid "allfolders"
+msgstr "ทุกโฟลเดอร์"
+
+msgid "searchinterval-1W"
+msgstr "เก่ากว่าหนึ่งสัปดาห์"
+
+msgid "searchinterval-1M"
+msgstr "เก่ากว่าหนึ่งเดือน"
+
+msgid "searchinterval-1Y"
+msgstr "เก่ากว่าหนึ่งปี"
+
+msgid "searchinterval1W"
+msgstr "น้อยกว่าหนึ่งสัปดาห์"
+
+msgid "searchinterval1M"
+msgstr "น้อยกว่าหนึ่งเดือน"
+
+msgid "searchinterval1Y"
+msgstr "น้อยกว่าหนึ่งปี"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "เปิดไปหน้าต่างใหม่"
+
+msgid "emlsave"
+msgstr "ดาวน์โหลด (.eml)"
+
+msgid "changeformattext"
+msgstr "แสดงแบบข้อความธรรมดา"
+
+msgid "changeformathtml"
+msgstr "แสดงแบบ HTML"
+
+msgid "editasnew"
+msgstr "แก้ไขใหม่"
+
+msgid "send"
+msgstr "ส่ง"
+
+msgid "sendmessage"
+msgstr "ส่งจดหมาย"
+
+msgid "savemessage"
+msgstr "บันทึกฉบับร่าง"
+
+msgid "addattachment"
+msgstr "แนบไฟล์"
+
+msgid "charset"
+msgstr "Charset"
+
+msgid "editortype"
+msgstr "ประเภทตัวแก้ไข"
+
+msgid "returnreceipt"
+msgstr "ตอบกลับผู้รับ"
+
+msgid "dsn"
+msgstr "การแจ้งเตือนสถานะการจัดส่ง"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "On $date, $sender wrote:"
+
+msgid "originalmessage"
+msgstr "ข้อความเดิม"
+
+msgid "selectimage"
+msgstr "เลือกรูป"
+
+msgid "addimage"
+msgstr "เพิ่มรูป"
+
+msgid "selectmedia"
+msgstr "เลือกวีดีโอ"
+
+msgid "addmedia"
+msgstr "เพิ่มวีดีโอ"
+
+msgid "encrypt"
+msgstr "เข้ารหัส"
+
+msgid "encryptmessage"
+msgstr "เข้ารหัสข้อความ"
+
+msgid "encryptmessagemailvelope"
+msgstr "เข้ารหัสข้อความด้วย Mailvelope"
+
+msgid "importpubkeys"
+msgstr "นำเข้าคีย์สาธารณะ"
+
+msgid "encryptedsendialog"
+msgstr "กำลังส่งข้อความที่เข้ารหัส"
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr "คีย์ไอดี"
+
+msgid "keylength"
+msgstr "บิต"
+
+msgid "keyexpired"
+msgstr "หมดอายุ"
+
+msgid "keyrevoked"
+msgstr "ยกเลิก"
+
+msgid "bccinstead"
+msgstr "ใช้สำเนาลับ"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "แทรก"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "ผู้รับ"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "แก้ไขข้อมูลประจำตัว"
+
+msgid "spellcheck"
+msgstr "สะกด"
+
+msgid "checkspelling"
+msgstr "ตรวจสอบคำผิด"
+
+msgid "resumeediting"
+msgstr "แก้ไขต่อ"
+
+msgid "revertto"
+msgstr "ย้นกลับไปยัง"
+
+msgid "restore"
+msgstr "กู้คืน"
+
+msgid "restoremessage"
+msgstr "กู้คืนข้อความ?"
+
+msgid "ignore"
+msgstr "ไม่สนใจ"
+
+msgid "responses"
+msgstr "การตอบกลับ"
+
+msgid "insertresponse"
+msgstr "แทรกการตอบกลับ"
+
+msgid "manageresponses"
+msgstr "จัดการตอบกลับ"
+
+msgid "newresponse"
+msgstr "สร้างการตอบกลับใหม่"
+
+msgid "addresponse"
+msgstr "เพิ่มการตอบกลับ"
+
+msgid "editresponse"
+msgstr "แก้ไขการตอบกลับ"
+
+msgid "editresponses"
+msgstr "แก้ไขการตอบกลับ"
+
+msgid "responsename"
+msgstr "ชื่อ"
+
+msgid "responsetext"
+msgstr "ข้อความตอบกลับ"
+
+msgid "attach"
+msgstr "ไฟลแนบ"
+
+msgid "attachments"
+msgstr "ไฟล์แนบ"
+
+msgid "upload"
+msgstr "อัพโหลด"
+
+msgid "uploadprogress"
+msgstr "$percent ($current of $total)"
+
+msgid "close"
+msgstr "ปิด"
+
+msgid "messageoptions"
+msgstr "ตั้งค่าข้อความ..."
+
+msgid "togglecomposeoptions"
+msgstr "สลับตัวเลือกองค์ประกอบ"
+
+msgid "attachmentrename"
+msgstr "เปลี่ยนชื่อไฟล์แนบ"
+
+msgid "low"
+msgstr "ต่ำ"
+
+msgid "lowest"
+msgstr "ต่ำสุด"
+
+msgid "normal"
+msgstr "ปกติ"
+
+msgid "high"
+msgstr "สูง"
+
+msgid "highest"
+msgstr "สูงสุด"
+
+msgid "nosubject"
+msgstr "(ไม่มีหัวข้อ)"
+
+msgid "showimages"
+msgstr "แสดงรูป"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "โชว์รูปจาก $sender เสมอ"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "นี้คือจดหมายร่าง"
+
+msgid "andnmore"
+msgstr "$nr อื่น..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "โชว์หัวจดหมายเพิ่มเติม"
+
+msgid "togglefullheaders"
+msgstr "Toggle raw message headers"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Plain text"
+
+msgid "savesentmessagein"
+msgstr "บันทึกจดหมายขาออกที่"
+
+msgid "dontsave"
+msgstr "ไม่บันทึก"
+
+msgid "maxuploadsize"
+msgstr "ขนาดไฟล์สูงสุดที่อนุญาตคือ $size"
+
+msgid "addcc"
+msgstr "เพิ่ม สำเนาถึง"
+
+msgid "addbcc"
+msgstr "เพิ่มสำเนาลับ"
+
+msgid "addreplyto"
+msgstr "เพิ่ม ตอบกลับ ถึง"
+
+msgid "addfollowupto"
+msgstr "เพิ่ม ส่งต่อ ถึง"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"ผู้ส่งข้อความนี้ได้ขอให้คุณได้รับแจ้งเมื่อคุณอ่านข้อความนี้ "
+"คุณต้องการแจ้งผู้ส่งหรือไม่?"
+
+msgid "receiptread"
+msgstr "ยืนยันการอ่าน"
+
+msgid "yourmessage"
+msgstr "นี่คือการตอบรับการอ่าน สำหรับข้อความของคุณ"
+
+msgid "receiptnote"
+msgstr ""
+"หมายเหตุ: ข้อความของคุณถูกเปิดอ่าน "
+"ไม่มีการรับประกันว่าผู้รับได้อ่านหรือเข้าใจเนื้อหาของข้อความแล้ว"
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "ชื่อแสดง"
+
+msgid "firstname"
+msgstr "ชื่อ"
+
+msgid "surname"
+msgstr "สกุล"
+
+msgid "middlename"
+msgstr "ชื่อกลาง"
+
+msgid "nameprefix"
+msgstr "คำนำหน้า"
+
+msgid "namesuffix"
+msgstr "คำต่อท้ายชื่อ"
+
+msgid "nickname"
+msgstr "ชื่อเล่น"
+
+msgid "jobtitle"
+msgstr "ตำแหน่งงาน"
+
+msgid "department"
+msgstr "แผนก"
+
+msgid "gender"
+msgstr "เพศ"
+
+msgid "maidenname"
+msgstr "นามสกุลเดิม"
+
+msgid "email"
+msgstr "อีเมล์"
+
+msgid "phone"
+msgstr "โทรศัพท์"
+
+msgid "address"
+msgstr "ที่อยู่"
+
+msgid "street"
+msgstr "ถนน"
+
+msgid "locality"
+msgstr "เมือง"
+
+msgid "zipcode"
+msgstr "รหัสไปรษณีย์"
+
+msgid "region"
+msgstr "รัฐ/จังหวัด"
+
+msgid "country"
+msgstr "ประเทศ"
+
+msgid "birthday"
+msgstr "วันเกิด"
+
+msgid "anniversary"
+msgstr "ครบรอบ"
+
+msgid "website"
+msgstr "เว็บไซต์"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "หมายเหตุ"
+
+msgid "male"
+msgstr "ชาย"
+
+msgid "female"
+msgstr "หญิง"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "ผู้จัดการ"
+
+msgid "assistant"
+msgstr "ผู้ช่วย"
+
+msgid "spouse"
+msgstr "คู่สมรส"
+
+msgid "allfields"
+msgstr "ช่องข้อมูลทั้่งหมด"
+
+msgid "search"
+msgstr "ค้นหา"
+
+msgid "searchresult"
+msgstr "ผลการค้นหา"
+
+msgid "advsearch"
+msgstr "ค้นหาขั้นสูง"
+
+msgid "advanced"
+msgstr "ขั้นสูง"
+
+msgid "other"
+msgstr "อื่นๆ"
+
+msgid "printcontact"
+msgstr "พิมพ์รายชื่อติดต่อ"
+
+msgid "qrcode"
+msgstr "QR Code"
+
+msgid "typehome"
+msgstr "บ้าน"
+
+msgid "typework"
+msgstr "สถานที่ทำงาน"
+
+msgid "typeother"
+msgstr "อื่นๆ"
+
+msgid "typemobile"
+msgstr "มือถือ"
+
+msgid "typemain"
+msgstr "หลัก"
+
+msgid "typehomefax"
+msgstr "โทรสารที่บ้าน"
+
+msgid "typeworkfax"
+msgstr "โทรสารที่ทำงาน"
+
+msgid "typecar"
+msgstr "รถ"
+
+msgid "typepager"
+msgstr "เพจเจอร์"
+
+msgid "typevideo"
+msgstr "วีดีโอ"
+
+msgid "typeassistant"
+msgstr "ผู้ช่วย"
+
+msgid "typehomepage"
+msgstr "โฮมเพจ"
+
+msgid "typeblog"
+msgstr "บล็อก"
+
+msgid "typeprofile"
+msgstr "โปรไฟล์"
+
+msgid "addfield"
+msgstr "เพิ่มช่องข้อมูล..."
+
+msgid "addcontact"
+msgstr "เพิ่มผู้ติดต่อ"
+
+msgid "editcontact"
+msgstr "แก้ไขรายชื่อ"
+
+msgid "contacts"
+msgstr "ผู้ติดต่อ"
+
+msgid "contactproperties"
+msgstr "คุณสมบัติการติดต่อ"
+
+msgid "contactnameandorg"
+msgstr "ชื่อและองค์กร"
+
+msgid "personalinfo"
+msgstr "ข้อมูลส่วนบุคคล"
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr "รูปผู้ติดต่อ"
+
+msgid "edit"
+msgstr "แก้ไข"
+
+msgid "cancel"
+msgstr "ยกเลิก"
+
+msgid "save"
+msgstr "บันทึก"
+
+msgid "delete"
+msgstr "ลบ"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "เปลี่ยนชื่อ"
+
+msgid "addphoto"
+msgstr "เพิ่ม"
+
+msgid "replacephoto"
+msgstr "แทนที่"
+
+msgid "uploadphoto"
+msgstr "อัพโหลดรูป"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "สร้างผู้ติดต่อใหม่"
+
+msgid "deletecontact"
+msgstr "ลบรายชื่อที่เลือก"
+
+msgid "composeto"
+msgstr "เขียนจดหมายถึง"
+
+msgid "contactsfromto"
+msgstr "รายชื่อ $from ถึง $to จำนวน $count"
+
+msgid "print"
+msgstr "พิมพ์"
+
+msgid "export"
+msgstr "ส่งออก"
+
+msgid "exportall"
+msgstr "ส่งออกทั้งหมด"
+
+msgid "exportsel"
+msgstr "ส่งออกเฉพาะที่เลือก"
+
+msgid "exportvcards"
+msgstr "นำออกรายชื่อผู้ติดต่อ (vCard)"
+
+msgid "newgroup"
+msgstr "สร้างกลุ่มใหม่"
+
+msgid "addgroup"
+msgstr "เพิ่มกลุ่ม"
+
+msgid "grouprename"
+msgstr "เปลี่ยนชื่อกลุ่ม"
+
+msgid "groupdelete"
+msgstr "ลบกลุ่ม"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "ลบรายชื่อผู้ติดต่อที่เลือกจากกลุ่ม"
+
+msgid "uponelevel"
+msgstr "ขยับขึ้นหนึ่งระดับ"
+
+msgid "previouspage"
+msgstr "หน้าที่แล้ว"
+
+msgid "firstpage"
+msgstr "แสดงหน้าแรก"
+
+msgid "nextpage"
+msgstr "หน้าถัดไป"
+
+msgid "lastpage"
+msgstr "แสดงหน้าสุดท้าย"
+
+msgid "group"
+msgstr "กลุ่ม"
+
+msgid "groups"
+msgstr "กลุ่ม"
+
+msgid "listgroup"
+msgstr "แสดงสมาชิกกลุ่ม"
+
+msgid "personaladrbook"
+msgstr "สมุดรายชื่อส่วนตัว"
+
+msgid "searchsave"
+msgstr "บันทึกการค้นหา"
+
+msgid "searchdelete"
+msgstr "ลบการค้นหา"
+
+msgid "import"
+msgstr "นำเข้า"
+
+msgid "importcontacts"
+msgstr "นำเข้าผู้ติดต่อ"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "เพิ่มผู้ติดต่อถึง"
+
+msgid "importreplace"
+msgstr "แทนที่ทั้งหมดในสมุดรายชื่อ"
+
+msgid "importgroups"
+msgstr "นำเข้ากลุ่มที่ได้รับมอบหมาย"
+
+msgid "importgroupsall"
+msgstr "ทั้งหมด (สร้างกลุ่มหากจำเป็น)"
+
+msgid "importgroupsexisting"
+msgstr "เฉพาะสำหรับกลุ่มที่มีอยู่เท่านั้น"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "สำเร็จ"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "ตั้งค่าสำหรับ"
+
+msgid "about"
+msgstr "เกี่ยวกับ"
+
+msgid "preferences"
+msgstr "ปรับแต่ง"
+
+msgid "userpreferences"
+msgstr "ข้อมูลส่วนตัว"
+
+msgid "editpreferences"
+msgstr "แก้ไขข้อมูลส่วนตัว"
+
+msgid "identities"
+msgstr "ชื่อแสดงตัว"
+
+msgid "manageidentities"
+msgstr "จัดการข้อมูลประจำตัว"
+
+msgid "newidentity"
+msgstr "สร้างข้อมูลประจำตัวใหม่"
+
+msgid "addidentity"
+msgstr "เพิ่มข้อมูลประจำตัว"
+
+msgid "editidentity"
+msgstr "แก้ไขข้อมูลประจำตัว"
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "อ่านแบบ HTML"
+
+msgid "defaultcharset"
+msgstr "ชุดอักขระเริ่มต้น"
+
+msgid "htmlmessage"
+msgstr "จดหมาย HTML"
+
+msgid "messagepart"
+msgstr "ส่วนหนึ่ง"
+
+msgid "digitalsig"
+msgstr "ลายเซ็นดิจิตอล"
+
+msgid "dateformat"
+msgstr "รูปแบบวันที่"
+
+msgid "timeformat"
+msgstr "รูปแบบเวลา"
+
+msgid "prettydate"
+msgstr "แสดงวันที่แบบย่อ"
+
+msgid "setdefault"
+msgstr "ตั้งเป็นค่าใช้งาน"
+
+msgid "autodetect"
+msgstr "อัตโนมัติ"
+
+msgid "language"
+msgstr "ภาษา"
+
+msgid "timezone"
+msgstr "เขตเวลา"
+
+msgid "pagesize"
+msgstr "จำนวนจดหมายต่อหน้า"
+
+msgid "signature"
+msgstr "ลายมือชื่อ"
+
+msgid "dstactive"
+msgstr "Daylight savings"
+
+msgid "showinextwin"
+msgstr "เปิดข้อความไปที่หน้าต่างใหม่"
+
+msgid "composeextwin"
+msgstr "เขียนในหน้าต่างใหม่"
+
+msgid "htmleditor"
+msgstr "เขียนจดหมายแบบ HTML"
+
+msgid "htmlonreply"
+msgstr "ตอบกลับในแบบ HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "ส่งต่อ หรือ ตอบกลับ ในแบบ HTML"
+
+msgid "htmlsignature"
+msgstr "ลายมือชื่อแบบ HTML"
+
+msgid "showemail"
+msgstr "แสดงที่อยู่อีเมลที่ชื่อ"
+
+msgid "previewpane"
+msgstr "แสดงหน้าต่างตัวอย่างแสดงผล"
+
+msgid "skin"
+msgstr "Interface skin"
+
+msgid "logoutclear"
+msgstr "ลบเมล์ในถึงขยะเมื่อออกจากระบบ"
+
+msgid "logoutcompact"
+msgstr "กระชับกล่องจดหมายเข้าเมื่อออกจากระบบ"
+
+msgid "uisettings"
+msgstr "หน้าจอผู้ใช้"
+
+msgid "serversettings"
+msgstr "Server Settings"
+
+msgid "mailboxview"
+msgstr "มุมมองกล่องจดหมาย"
+
+msgid "mdnrequests"
+msgstr "ร้องขอการยืนยันการอ่าน"
+
+msgid "askuser"
+msgstr "ถามฉัน"
+
+msgid "autosend"
+msgstr "ส่ง ตอบรับ"
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr ""
+
+msgid "flagfordeletion"
+msgstr ""
+
+msgid "skipdeleted"
+msgstr ""
+
+msgid "deletealways"
+msgstr ""
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr ""
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr ""
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr ""
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr ""
+
+msgid "autosavedraft"
+msgstr "บันทึกเป็นจดหมายร่างอัตโนมัติ"
+
+msgid "everynminutes"
+msgstr ""
+
+msgid "refreshinterval"
+msgstr ""
+
+msgid "never"
+msgstr "ไม่ใช้"
+
+msgid "immediately"
+msgstr ""
+
+msgid "messagesdisplaying"
+msgstr ""
+
+msgid "messagescomposition"
+msgstr ""
+
+msgid "mimeparamfolding"
+msgstr ""
+
+msgid "2231folding"
+msgstr ""
+
+msgid "miscfolding"
+msgstr ""
+
+msgid "2047folding"
+msgstr ""
+
+msgid "force7bit"
+msgstr ""
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "ตัวเลือกขั้นสูง"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr ""
+
+msgid "checkallfolders"
+msgstr ""
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr ""
+
+msgid "browseroptions"
+msgstr ""
+
+msgid "section"
+msgstr ""
+
+msgid "maintenance"
+msgstr ""
+
+msgid "newmessage"
+msgstr "ข้อความใหม่"
+
+msgid "signatureoptions"
+msgstr "ตัวเลือกสำหรับลายเซ็็นต์"
+
+msgid "whenreplying"
+msgstr "เมื่อตอบกลับ"
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr ""
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr ""
+
+msgid "replyremovesignature"
+msgstr ""
+
+msgid "autoaddsignature"
+msgstr "เพิ่มลายเซ็นต์เข้าไปอัตโนมัติ"
+
+msgid "newmessageonly"
+msgstr "เฉพาะข้อความใหม่เท่านั้น"
+
+msgid "replyandforwardonly"
+msgstr "ตอบกลับและส่งต่อเท่านั้น"
+
+msgid "insertsignature"
+msgstr "แทรกลายเซ็นต์"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr ""
+
+msgid "reqmdn"
+msgstr ""
+
+msgid "reqdsn"
+msgstr ""
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr ""
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr ""
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr ""
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr ""
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr ""
+
+msgid "asattachment"
+msgstr "เป็นไฟล์แนบ"
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "ข้อความทั้งหมด"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "กล่องจดหมาย"
+
+msgid "folders"
+msgstr "กล่องจดหมาย"
+
+msgid "foldername"
+msgstr "ชื่อกล่องจดหมาย"
+
+msgid "subscribed"
+msgstr "ลงชื่อ"
+
+msgid "messagecount"
+msgstr "ข้อความ"
+
+msgid "create"
+msgstr "สร้าง"
+
+msgid "createfolder"
+msgstr "สร้างกล่องจดหมาย"
+
+msgid "managefolders"
+msgstr "จัดการกล่องจดหมาย"
+
+msgid "specialfolders"
+msgstr "โฟลเดอร์พิเศษ"
+
+msgid "properties"
+msgstr "คุณสมบัติ"
+
+msgid "folderproperties"
+msgstr "คุณสมบัติเกี่ยวกับโฟลเดอร์"
+
+msgid "parentfolder"
+msgstr "โฟลเดอร์แม่"
+
+msgid "location"
+msgstr ""
+
+msgid "info"
+msgstr "ข้อมูล"
+
+msgid "getfoldersize"
+msgstr ""
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr "ประเภทโฟลเดอร์"
+
+msgid "personalfolder"
+msgstr "โฟลเดอร์ส่วนตัว"
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr "โฟลเดอร์สาธารณะ"
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "เรียงตาม"
+
+msgid "sortasc"
+msgstr "เรียงจากหน้าไปหลัง"
+
+msgid "sortdesc"
+msgstr "เรียงจากหลังไปหน้า"
+
+msgid "undo"
+msgstr "เลิกทำ"
+
+msgid "installedplugins"
+msgstr "ปลั๊กอินที่ติดตั้ง"
+
+msgid "plugin"
+msgstr "ปลั๊กอิน"
+
+msgid "version"
+msgstr "รุ่น"
+
+msgid "source"
+msgstr ""
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "สัญญาอนุญาต"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr ""
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr ""
+
+msgid "westerneuropean"
+msgstr ""
+
+msgid "easterneuropean"
+msgstr ""
+
+msgid "southeasterneuropean"
+msgstr ""
+
+msgid "baltic"
+msgstr ""
+
+msgid "cyrillic"
+msgstr ""
+
+msgid "arabic"
+msgstr ""
+
+msgid "greek"
+msgstr ""
+
+msgid "hebrew"
+msgstr ""
+
+msgid "turkish"
+msgstr ""
+
+msgid "nordic"
+msgstr ""
+
+msgid "thai"
+msgstr ""
+
+msgid "celtic"
+msgstr ""
+
+msgid "vietnamese"
+msgstr ""
+
+msgid "japanese"
+msgstr ""
+
+msgid "korean"
+msgstr ""
+
+msgid "chinese"
+msgstr ""
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "เกิดข้อผิดพลาดบางประการ!"
+
+msgid "messages.loginfailed"
+msgstr "ไม่สามารถเข้าสู่ระบบได้"
+
+msgid "messages.cookiesdisabled"
+msgstr "Browser ของคุณไม่ได้เปิดการใช้งาน Cookie ไว้"
+
+msgid "messages.sessionerror"
+msgstr "Your session is invalid or expired"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "ไม่สามารถติดต่อ IMAP Server ได้"
+
+msgid "messages.servererror"
+msgstr "เกิดข้อผิดพลาดเกี่ยวกับเซิร์ฟเวอร์"
+
+msgid "messages.servererrormsg"
+msgstr ""
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr ""
+
+msgid "messages.dberror"
+msgstr "เกิดข้อผิดพลาดเกี่ยวกับฐานข้อมูล"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr ""
+
+msgid "messages.errorreadonly"
+msgstr ""
+
+msgid "messages.errornoperm"
+msgstr ""
+
+msgid "messages.erroroverquota"
+msgstr ""
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+
+msgid "messages.invalidrequest"
+msgstr ""
+
+msgid "messages.invalidhost"
+msgstr "ชื่อเซิร์ฟเวอร์ไม่ถูกต้อง"
+
+msgid "messages.nomessagesfound"
+msgstr "ไม่มีจดหมายในกล่องจดหมายนี้"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr ""
+
+msgid "messages.nomessages"
+msgstr ""
+
+msgid "messages.refreshing"
+msgstr "กำลังรีเฟรช..."
+
+msgid "messages.loading"
+msgstr "Loading..."
+
+msgid "messages.uploading"
+msgstr "กำลังอัพโหลดไฟล์..."
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr "กำลังอัพโหลดไฟล์..."
+
+msgid "messages.loadingdata"
+msgstr "กำลังโหลดข้อมูล..."
+
+msgid "messages.checkingmail"
+msgstr "กำลังเช็คจดหมายใหม่..."
+
+msgid "messages.sendingmessage"
+msgstr "กำลังส่งจดหมาย..."
+
+msgid "messages.messagesent"
+msgstr "จดหมายถูกส่งเรียบร้อยแล้ว"
+
+msgid "messages.savingmessage"
+msgstr "กำลังบันทึกจดหมาย..."
+
+msgid "messages.messagesaved"
+msgstr "จดหมายถูกบันทึกเป็นจดหมายร่าง"
+
+msgid "messages.successfullysaved"
+msgstr "บันทึกเรียบร้อยแล้ว"
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "รายชื่อถูกบันทึกเรียบร้อยแล้ว"
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr ""
+
+msgid "messages.blockedimages"
+msgstr "เพื่อปกป้องความส่วนตัว รูปจากภายนอกในจดหมายนี้จะถูกปิดบังไว้"
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "จดหมายถูกเข้ารหัสไม่สามารถแสดงผลได้"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "ไม่พบรายชื่อที่ค้นหา"
+
+msgid "messages.contactnotfound"
+msgstr "ไม่พบรายชื่อที่ค้นหา"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "การส่งจดหมายล้มเหลว"
+
+msgid "messages.senttooquickly"
+msgstr ""
+
+msgid "messages.errorsavingsent"
+msgstr ""
+
+msgid "messages.errorsaving"
+msgstr ""
+
+msgid "messages.errormoving"
+msgstr "ไม่สามารถย้ายจดหมายได้"
+
+msgid "messages.errorcopying"
+msgstr ""
+
+msgid "messages.errordeleting"
+msgstr "ไม่สามารถลบจดหมายได้"
+
+msgid "messages.errormarking"
+msgstr ""
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "คุณมั่นใจที่ต้องการลบรายชื่อที่เลือกใช่หรือไม่?"
+
+msgid "messages.deletegroupconfirm"
+msgstr ""
+
+msgid "messages.deletemessagesconfirm"
+msgstr "คุณมั่นใจที่ต้องการลบจดหมายที่เลือกใช่หรือไม่?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "คุณมั่นใจที่ต้องการลบแฟ้มนี้หรือไม่?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "คุณมั่นใจที่ต้องการลบจดหมายทั้งหมดในแฟ้มนี้ใช่หรือไม่?"
+
+msgid "messages.contactdeleting"
+msgstr "กำลังลบรายชื่อผู้ติดต่อ..."
+
+msgid "messages.groupdeleting"
+msgstr "กำลังลบกลุ่ม..."
+
+msgid "messages.folderdeleting"
+msgstr "กำลังลบโฟลเดอร์..."
+
+msgid "messages.foldermoving"
+msgstr "กำลังย้ายโฟลเดอร์..."
+
+msgid "messages.foldersubscribing"
+msgstr ""
+
+msgid "messages.folderunsubscribing"
+msgstr ""
+
+msgid "messages.formincomplete"
+msgstr "ฟอร์มยังไม่ครบถ้วนสมบูรณ์"
+
+msgid "messages.noemailwarning"
+msgstr "โปรดใส่อีเมล์ให้ถูกต้อง"
+
+msgid "messages.nonamewarning"
+msgstr "โปรดใส่ชื่อ"
+
+msgid "messages.nopagesizewarning"
+msgstr "โปรดใส่จำนวนหน้า"
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "โปรดใส่ผู้รับอย่างน้อย 1 ชื่อ"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "หัวจดหมายว่างเปล่า คุณต้องการใส่หัวจดหมายเดี๋ยวนี้หรือไม่?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "คุณต้องการส่งจดหมายโดยไม่มีข้อความใช่หรือไม่?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr "โปรดใสชื่อหรืออีเมล์"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+
+msgid "messages.searchsuccessful"
+msgstr "พบจดหมายจำนวน $nr ฉบับ"
+
+msgid "messages.contactsearchsuccessful"
+msgstr ""
+
+msgid "messages.searchnomatch"
+msgstr "การค้นหาไม่พบ"
+
+msgid "messages.searching"
+msgstr "กำลังค้นหา..."
+
+msgid "messages.checking"
+msgstr "กำลังตรวจสอบ..."
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr "ไม่พบคำที่สะกดผิด"
+
+msgid "messages.folderdeleted"
+msgstr "ลบแฟ้มเสร็จสมบูรณ์"
+
+msgid "messages.foldersubscribed"
+msgstr ""
+
+msgid "messages.folderunsubscribed"
+msgstr ""
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "ลบเสร็จสมบูรณ์"
+
+msgid "messages.converting"
+msgstr "นำเอาหารจัดรูปแบบในจดหมายออก..."
+
+msgid "messages.messageopenerror"
+msgstr "ไม่สามารถอ่านจดหมายจาก Server ได้"
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "การอัพโหลดล้มเหลว"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "ไฟล์มีขนาดใหญ่เกิน $size"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr ""
+
+msgid "messages.moveerror"
+msgstr ""
+
+msgid "messages.sourceisreadonly"
+msgstr "จดหมายนี้เป็นแบบอ่านอย่างเดียว"
+
+msgid "messages.errorsavingcontact"
+msgstr "ไม่สามารถบันทึกรายชื่อได้"
+
+msgid "messages.movingmessage"
+msgstr "กำลังย้ายข้อความ..."
+
+msgid "messages.copyingmessage"
+msgstr "กำลังคัดลอกข้อความ..."
+
+msgid "messages.copyingcontact"
+msgstr "กำลังคัดลอกรายชื่อผู้ติดต่อ..."
+
+msgid "messages.movingcontact"
+msgstr ""
+
+msgid "messages.deletingmessage"
+msgstr "กำลังลบข้อความ..."
+
+msgid "messages.markingmessage"
+msgstr ""
+
+msgid "messages.addingmember"
+msgstr ""
+
+msgid "messages.removingmember"
+msgstr ""
+
+msgid "messages.receiptsent"
+msgstr ""
+
+msgid "messages.errorsendingreceipt"
+msgstr ""
+
+msgid "messages.deleteidentityconfirm"
+msgstr ""
+
+msgid "messages.nodeletelastidentity"
+msgstr ""
+
+msgid "messages.forbiddencharacter"
+msgstr ""
+
+msgid "messages.selectimportfile"
+msgstr ""
+
+msgid "messages.addresswriterror"
+msgstr ""
+
+msgid "messages.contactaddedtogroup"
+msgstr ""
+
+msgid "messages.contactremovedfromgroup"
+msgstr ""
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr "กำลังนำเข้าข้อมูล, โปรดรอสักครู่"
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr ""
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+
+msgid "messages.smtpconnerror"
+msgstr ""
+
+msgid "messages.smtpautherror"
+msgstr ""
+
+msgid "messages.smtpfromerror"
+msgstr ""
+
+msgid "messages.smtptoerror"
+msgstr ""
+
+msgid "messages.smtprecipientserror"
+msgstr ""
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr ""
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+
+msgid "messages.maxgroupmembersreached"
+msgstr ""
+
+msgid "messages.internalerror"
+msgstr ""
+
+msgid "messages.contactdelerror"
+msgstr ""
+
+msgid "messages.contactdeleted"
+msgstr ""
+
+msgid "messages.contactrestoreerror"
+msgstr ""
+
+msgid "messages.contactrestored"
+msgstr ""
+
+msgid "messages.groupdeleted"
+msgstr ""
+
+msgid "messages.grouprenamed"
+msgstr ""
+
+msgid "messages.groupcreated"
+msgstr ""
+
+msgid "messages.savedsearchdeleted"
+msgstr ""
+
+msgid "messages.savedsearchdeleteerror"
+msgstr ""
+
+msgid "messages.savedsearchcreated"
+msgstr ""
+
+msgid "messages.savedsearchcreateerror"
+msgstr ""
+
+msgid "messages.messagedeleted"
+msgstr ""
+
+msgid "messages.messagemoved"
+msgstr ""
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr ""
+
+msgid "messages.messagemarked"
+msgstr ""
+
+msgid "messages.autocompletechars"
+msgstr ""
+
+msgid "messages.autocompletemore"
+msgstr ""
+
+msgid "messages.namecannotbeempty"
+msgstr ""
+
+msgid "messages.nametoolong"
+msgstr ""
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr ""
+
+msgid "messages.foldercreated"
+msgstr ""
+
+msgid "messages.invalidimageformat"
+msgstr ""
+
+msgid "messages.mispellingsfound"
+msgstr ""
+
+msgid "messages.parentnotwritable"
+msgstr ""
+
+msgid "messages.messagetoobig"
+msgstr ""
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

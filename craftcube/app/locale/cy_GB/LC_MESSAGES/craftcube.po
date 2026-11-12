@@ -1,0 +1,2909 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: cy_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Croeso i $product"
+
+msgid "username"
+msgstr "Enw defnyddiwr"
+
+msgid "password"
+msgstr "Cyfrinair"
+
+msgid "server"
+msgstr "Gweinydd"
+
+msgid "login"
+msgstr "Mewngofnodi"
+
+msgid "oauthlogin"
+msgstr "Mewngofnodi gyda $provider"
+
+msgid "menu"
+msgstr "Bwydlen"
+
+msgid "logout"
+msgstr "Allgofnodi"
+
+msgid "mail"
+msgstr "E-bost"
+
+msgid "settings"
+msgstr "Gosodiadau Personol"
+
+msgid "addressbook"
+msgstr "Llyfr Cyfeiriadau"
+
+msgid "darkmode"
+msgstr "Modd tywyll"
+
+msgid "lightmode"
+msgstr "Modd golau"
+
+msgid "inbox"
+msgstr "Mewnflwch"
+
+msgid "drafts"
+msgstr "Drafftiau"
+
+msgid "sent"
+msgstr "Danfonwyd"
+
+msgid "trash"
+msgstr "Sbwriel"
+
+msgid "junk"
+msgstr "Sothach"
+
+msgid "show_real_foldernames"
+msgstr "Dangos enwau go-iawn ar gyfer ffolderi arbennig"
+
+msgid "subject"
+msgstr "Pwnc"
+
+msgid "from"
+msgstr "Oddi wrth"
+
+msgid "sender"
+msgstr "Anfonwr"
+
+msgid "to"
+msgstr "Derbyniwr"
+
+msgid "cc"
+msgstr "Copi"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Ateb-I"
+
+msgid "followupto"
+msgstr "Followup-To"
+
+msgid "date"
+msgstr "Dyddiad"
+
+msgid "size"
+msgstr "Maint"
+
+msgid "priority"
+msgstr "Blaenoriaeth"
+
+msgid "organization"
+msgstr "Enw'r Sefydliad"
+
+msgid "readstatus"
+msgstr "Statws darllen"
+
+msgid "listoptions"
+msgstr "Dewisiadau rhestr..."
+
+msgid "listoptionstitle"
+msgstr "Dewisiadau rhestr"
+
+msgid "mailboxlist"
+msgstr "Ffolderi"
+
+msgid "messagesfromto"
+msgstr "Negeseuon $from i $to o $count"
+
+msgid "threadsfromto"
+msgstr "Edefau $from i $to o $count"
+
+msgid "messagenrof"
+msgstr "Neges $nr o $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to o $count"
+
+msgid "copy"
+msgstr "Copio"
+
+msgid "move"
+msgstr "Symud"
+
+msgid "moveto"
+msgstr "Symud i..."
+
+msgid "copyto"
+msgstr "Copio i..."
+
+msgid "download"
+msgstr "Lawrlwytho"
+
+msgid "open"
+msgstr "Agor"
+
+msgid "showattachment"
+msgstr "Dangos"
+
+msgid "showanyway"
+msgstr "Dangos beth bynnag"
+
+msgid "filename"
+msgstr "Enw ffeil"
+
+msgid "filesize"
+msgstr "Maint ffeil"
+
+msgid "addtoaddressbook"
+msgstr "Ychwanegu i'r llyfr cyfeiriadau"
+
+msgid "sun"
+msgstr "Sul"
+
+msgid "mon"
+msgstr "Llun"
+
+msgid "tue"
+msgstr "Maw"
+
+msgid "wed"
+msgstr "Mer"
+
+msgid "thu"
+msgstr "Iau"
+
+msgid "fri"
+msgstr "Gwe"
+
+msgid "sat"
+msgstr "Sad"
+
+msgid "sunday"
+msgstr "Dydd Sul"
+
+msgid "monday"
+msgstr "Dydd Llun"
+
+msgid "tuesday"
+msgstr "Dydd Mawrth"
+
+msgid "wednesday"
+msgstr "Dydd Mercher"
+
+msgid "thursday"
+msgstr "Dydd Iau"
+
+msgid "friday"
+msgstr "Dydd Gwener"
+
+msgid "saturday"
+msgstr "Dydd Sadwrn"
+
+msgid "jan"
+msgstr "Ion"
+
+msgid "feb"
+msgstr "Chwe"
+
+msgid "mar"
+msgstr "Maw"
+
+msgid "apr"
+msgstr "Ebr"
+
+msgid "may"
+msgstr "Mai"
+
+msgid "jun"
+msgstr "Meh"
+
+msgid "jul"
+msgstr "Gor"
+
+msgid "aug"
+msgstr "Aws"
+
+msgid "sep"
+msgstr "Med"
+
+msgid "oct"
+msgstr "Hyd"
+
+msgid "nov"
+msgstr "Tach"
+
+msgid "dec"
+msgstr "Rhag"
+
+msgid "longjan"
+msgstr "Ionawr"
+
+msgid "longfeb"
+msgstr "Chwefror"
+
+msgid "longmar"
+msgstr "Mawrth"
+
+msgid "longapr"
+msgstr "Ebrill"
+
+msgid "longmay"
+msgstr "Mai"
+
+msgid "longjun"
+msgstr "Mehefin"
+
+msgid "longjul"
+msgstr "Gorffennaf"
+
+msgid "longaug"
+msgstr "Awst"
+
+msgid "longsep"
+msgstr "Medi"
+
+msgid "longoct"
+msgstr "Hydref"
+
+msgid "longnov"
+msgstr "Tachwedd"
+
+msgid "longdec"
+msgstr "Rhagfyr"
+
+msgid "today"
+msgstr "Heddiw"
+
+msgid "refresh"
+msgstr "Ail-ofyn"
+
+msgid "checkmail"
+msgstr "Edrych am negeseuon newydd"
+
+msgid "compose"
+msgstr "Ysgrifennu neges"
+
+msgid "writenewmessage"
+msgstr "Creu neges newydd"
+
+msgid "reply"
+msgstr "Ymateb"
+
+msgid "replytomessage"
+msgstr "Ymateb i'r anfonwr"
+
+msgid "replytoallmessage"
+msgstr "Ymateb i'r anfonwr a phob derbyniwr"
+
+msgid "replyall"
+msgstr "Ymateb i bawb"
+
+msgid "replylist"
+msgstr "Ymateb i'r rhestr"
+
+msgid "forward"
+msgstr "Anfon ymlaen"
+
+msgid "forwardinline"
+msgstr "Anfon ymlaen o fewn y neges"
+
+msgid "forwardattachment"
+msgstr "Anfon ymlaen fel atodiad"
+
+msgid "forwardmessage"
+msgstr "Danfon y neges ymlaen"
+
+msgid "bouncemsg"
+msgstr "Ail-anfon (bowns)"
+
+msgid "bounce"
+msgstr "Ail-anfon"
+
+msgid "deletemessage"
+msgstr "Dileu'r neges"
+
+msgid "undeletemessage"
+msgstr "Dad-ddileu neges"
+
+msgid "movemessagetotrash"
+msgstr "Symud y neges i'r sbwriel"
+
+msgid "printmessage"
+msgstr "Argraffu'r neges"
+
+msgid "previousmessage"
+msgstr "Dangos y neges flaenorol"
+
+msgid "firstmessage"
+msgstr "Dangos y neges gyntaf"
+
+msgid "nextmessage"
+msgstr "Dangos y neges nesaf"
+
+msgid "lastmessage"
+msgstr "Dangos y neges olaf"
+
+msgid "backtolist"
+msgstr "Nôl i'r rhestr o negeseuon"
+
+msgid "viewsource"
+msgstr "Edrych ar y ffynhonnell"
+
+msgid "mark"
+msgstr "Nodi"
+
+msgid "markmessages"
+msgstr "Nodi'r negeseuon"
+
+msgid "markread"
+msgstr "Wedi eu darllen"
+
+msgid "markunread"
+msgstr "Heb eu darllen"
+
+msgid "markflagged"
+msgstr "Wedi eu fflagio"
+
+msgid "markunflagged"
+msgstr "Heb eu fflagio"
+
+msgid "markundeleted"
+msgstr "Fel heb ei ddileu"
+
+msgid "markasread"
+msgstr "Nodi fel darllenwyd"
+
+msgid "markasunread"
+msgstr "Nodi fel heb ei ddarllen"
+
+msgid "markasflagged"
+msgstr "Nodi fel fflagio"
+
+msgid "markasunflagged"
+msgstr "Nodi fel heb ei fflagio"
+
+msgid "moreactions"
+msgstr "Mwy o weithredoedd..."
+
+msgid "markallread"
+msgstr "Nodi pob un wedi ei ddarllen"
+
+msgid "folders-cur"
+msgstr "Ffolder dewiswyd yn unig"
+
+msgid "folders-sub"
+msgstr "Ffolder dewiswyd a'i isffolderi"
+
+msgid "folders-all"
+msgstr "Pob ffolder"
+
+msgid "more"
+msgstr "Mwy"
+
+msgid "back"
+msgstr "Yn ôl"
+
+msgid "options"
+msgstr "Dewisiadau"
+
+msgid "composeoptions"
+msgstr "Dewisiadau ysgrifennu"
+
+msgid "optionsandattachments"
+msgstr "Dewisiadau ac atodiadau"
+
+msgid "actions"
+msgstr "Gweithredoedd"
+
+msgid "first"
+msgstr "Cyntaf"
+
+msgid "last"
+msgstr "Olaf"
+
+msgid "previous"
+msgstr "Blaenorol"
+
+msgid "next"
+msgstr "Nesaf"
+
+msgid "select"
+msgstr "Dewis"
+
+msgid "selection"
+msgstr "Dewis"
+
+msgid "all"
+msgstr "Popeth"
+
+msgid "none"
+msgstr "Dim"
+
+msgid "currpage"
+msgstr "Tudalen gyfredol"
+
+msgid "isread"
+msgstr "Darllenwyd"
+
+msgid "unread"
+msgstr "Heb eu darllen"
+
+msgid "flagged"
+msgstr "Nodwyd"
+
+msgid "unflagged"
+msgstr "Heb eu Fflagio"
+
+msgid "unanswered"
+msgstr "Heb ei ateb"
+
+msgid "withattachment"
+msgstr "Gyda atodiad"
+
+msgid "deleted"
+msgstr "Dilewyd"
+
+msgid "undeleted"
+msgstr "Heb ei ddileu"
+
+msgid "replied"
+msgstr "Ymatebwyd"
+
+msgid "forwarded"
+msgstr "Anfonwyd ymlaen"
+
+msgid "invert"
+msgstr "Gwrth-droi"
+
+msgid "filter"
+msgstr "Hidlo"
+
+msgid "list"
+msgstr "Rhestr"
+
+msgid "threads"
+msgstr "Edafedd"
+
+msgid "expand-all"
+msgstr "Ehangu Popeth"
+
+msgid "expand-unread"
+msgstr "Ehangu Negeseuon Heb eu darllen"
+
+msgid "collapse-all"
+msgstr "Crebachu Popeth"
+
+msgid "threaded"
+msgstr "Edafedd"
+
+msgid "showunread"
+msgstr "Dangos negeseuon heb eu darllen"
+
+msgid "autoexpand_threads"
+msgstr "Ehangu edefau neges"
+
+msgid "do_expand"
+msgstr "pob edefyn"
+
+msgid "expand_only_unread"
+msgstr "dim ond gyda negeseuon heb eu darllen"
+
+msgid "fromto"
+msgstr "Danfonwr/Derbynnydd"
+
+msgid "flag"
+msgstr "Fflag"
+
+msgid "attachment"
+msgstr "Atodiad"
+
+msgid "nonesort"
+msgstr "Dim"
+
+msgid "sentdate"
+msgstr "Dyddiad danfon"
+
+msgid "arrival"
+msgstr "Dyddiad derbyn"
+
+msgid "asc"
+msgstr "esgynnol"
+
+msgid "desc"
+msgstr "disgynnol"
+
+msgid "listcolumns"
+msgstr "Rhestr colofnau"
+
+msgid "listsorting"
+msgstr "Colofn trefnu"
+
+msgid "listorder"
+msgstr "Trefn didoli"
+
+msgid "listmode"
+msgstr "Golwg rhestr"
+
+msgid "lmode"
+msgstr "Golwg rhestr"
+
+msgid "layout"
+msgstr "Cynllun"
+
+msgid "layoutwidescreen"
+msgstr "Sgrîn lydan"
+
+msgid "layoutdesktop"
+msgstr "Pen bwrdd"
+
+msgid "layoutlist"
+msgstr "Rhestr"
+
+msgid "layoutwidescreendesc"
+msgstr "Sgrîn lydan (golwg 3 colofn)"
+
+msgid "layoutdesktopdesc"
+msgstr "Pen-bwrdd (rhestr lydan a rhagolwg isod)"
+
+msgid "layoutlistdesc"
+msgstr "Rhestr (dim rhagolwg)"
+
+msgid "folderactions"
+msgstr "Gweithredoedd ffolder..."
+
+msgid "compact"
+msgstr "Crynhoi"
+
+msgid "empty"
+msgstr "Gwagio"
+
+msgid "importmessages"
+msgstr "Mewnforio negeseuon"
+
+msgid "mailimportdesc"
+msgstr ""
+"Fe allwch chi lwytho fyny ffeiliau ebost mewn fformat <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> neu <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>"
+
+msgid "mailimportzip"
+msgstr "Gellir cywasgu nifer o ffeiliau mewn i archif zip."
+
+msgid "quota"
+msgstr "Defnydd"
+
+msgid "unknown"
+msgstr "anhysbys"
+
+msgid "unlimited"
+msgstr "diderfyn"
+
+msgid "quotatype"
+msgstr "Math Cwota"
+
+msgid "quotatotal"
+msgstr "Cyfyngiad"
+
+msgid "quotaused"
+msgstr "Defnyddiwyd"
+
+msgid "quotastorage"
+msgstr "Gofod disg"
+
+msgid "quotamessage"
+msgstr "Nifer negeseuon"
+
+msgid "shortheaderdate"
+msgstr "Ar $date"
+
+msgid "shortheaderto"
+msgstr "I $to ar $date"
+
+msgid "shortheaderfrom"
+msgstr "O $from i $date"
+
+msgid "quicksearch"
+msgstr "Chwiliad cyflym"
+
+msgid "searchplaceholder"
+msgstr "Chwilio..."
+
+msgid "resetsearch"
+msgstr "Ail-osod chwiliad"
+
+msgid "searchmod"
+msgstr "Addasyddion chwilio"
+
+msgid "msgtext"
+msgstr "Y neges yn llawn"
+
+msgid "body"
+msgstr "Corff"
+
+msgid "type"
+msgstr "Math"
+
+msgid "namex"
+msgstr "Enw"
+
+msgid "searchscope"
+msgstr "Amrediad"
+
+msgid "currentfolder"
+msgstr "Ffolder cyfredol"
+
+msgid "subfolders"
+msgstr "Hwn a is-ffolderi"
+
+msgid "allfolders"
+msgstr "Pob ffolder"
+
+msgid "searchinterval-1W"
+msgstr "hynach na wythnos"
+
+msgid "searchinterval-1M"
+msgstr "hynach na mis"
+
+msgid "searchinterval-1Y"
+msgstr "hynach na blwyddyn"
+
+msgid "searchinterval1W"
+msgstr "ifancach na wythnos"
+
+msgid "searchinterval1M"
+msgstr "ifancach na mis"
+
+msgid "searchinterval1Y"
+msgstr "ifancach na blwyddyn"
+
+msgid "infolder"
+msgstr "Ffolder: $folder"
+
+msgid "currentaddressbook"
+msgstr "Llyfr cyfeiriadau cyfredol"
+
+msgid "alladdressbooks"
+msgstr "Pob llyfr cyfeiriadau"
+
+msgid "openinextwin"
+msgstr "Agor mewn ffenest newydd"
+
+msgid "emlsave"
+msgstr "Lawrlwytho (.eml)"
+
+msgid "changeformattext"
+msgstr "Dangos mewn fformat testun plaen"
+
+msgid "changeformathtml"
+msgstr "Dangos mewn fformat HTML"
+
+msgid "editasnew"
+msgstr "Golygu fel neges newydd"
+
+msgid "send"
+msgstr "Anfon"
+
+msgid "sendmessage"
+msgstr "Anfon nawr"
+
+msgid "savemessage"
+msgstr "Cadw'r drafft hwn"
+
+msgid "addattachment"
+msgstr "Atodi ffeil"
+
+msgid "charset"
+msgstr "Set nodiau"
+
+msgid "editortype"
+msgstr "Math golygydd"
+
+msgid "returnreceipt"
+msgstr "Cadarnhau derbyn"
+
+msgid "dsn"
+msgstr "Hysbysiad statws danfon"
+
+msgid "keepformatting"
+msgstr "Cadw'r fformatio"
+
+msgid "mailreplyintro"
+msgstr "Ar $date, ysgrifennodd $sender:"
+
+msgid "originalmessage"
+msgstr "Neges Wreiddiol"
+
+msgid "selectimage"
+msgstr "Dewiswch lun"
+
+msgid "addimage"
+msgstr "Ychwanegwch lun"
+
+msgid "selectmedia"
+msgstr "Dewiswch fideo"
+
+msgid "addmedia"
+msgstr "Ychwanegwch fideo"
+
+msgid "encrypt"
+msgstr "Amgryptio"
+
+msgid "encryptmessage"
+msgstr "Amgryptio neges"
+
+msgid "encryptmessagemailvelope"
+msgstr "Amgryption neges gyda Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Mewnforio allweddi cyhoeddus"
+
+msgid "encryptedsendialog"
+msgstr "Anfon neges wedi amgryptio"
+
+msgid "encryptandsign"
+msgstr "Amgodi ac arwyddo"
+
+msgid "keyid"
+msgstr "ID Allwedd"
+
+msgid "keylength"
+msgstr "Didiau"
+
+msgid "keyexpired"
+msgstr "Wedi darfod"
+
+msgid "keyrevoked"
+msgstr "Wedi dirymu"
+
+msgid "bccinstead"
+msgstr "Defnyddio Bcc"
+
+msgid "addheader"
+msgstr "Ychwanegu maes (Cc, Bcc, ...)"
+
+msgid "insert"
+msgstr "Mewnosod"
+
+msgid "insertcontact"
+msgstr "Mewnosod cyswllt/cysylltiadau"
+
+msgid "recipient"
+msgstr "Derbynnwr"
+
+msgid "recipientedit"
+msgstr "Golygu derbynnydd"
+
+msgid "editidents"
+msgstr "Golygu personoliaethau"
+
+msgid "spellcheck"
+msgstr "Sillafu"
+
+msgid "checkspelling"
+msgstr "Gwirio sillafu"
+
+msgid "resumeediting"
+msgstr "Ail-ddechrau golygu"
+
+msgid "revertto"
+msgstr "Dychwelyd i"
+
+msgid "restore"
+msgstr "Adfer"
+
+msgid "restoremessage"
+msgstr "Adfer neges?"
+
+msgid "ignore"
+msgstr "Anwybyddu"
+
+msgid "responses"
+msgstr "Ymatebion"
+
+msgid "insertresponse"
+msgstr "Mewnosod ymateb"
+
+msgid "manageresponses"
+msgstr "Rheoli ymatebion"
+
+msgid "newresponse"
+msgstr "Cadw ymateb newydd"
+
+msgid "addresponse"
+msgstr "Ychwanegu ymateb"
+
+msgid "editresponse"
+msgstr "Golygu ymateb"
+
+msgid "editresponses"
+msgstr "Golygu ymatebion"
+
+msgid "responsename"
+msgstr "Enw"
+
+msgid "responsetext"
+msgstr "Testun Ymateb"
+
+msgid "attach"
+msgstr "Atodi"
+
+msgid "attachments"
+msgstr "Atodiadau"
+
+msgid "upload"
+msgstr "Lanlwytho"
+
+msgid "uploadprogress"
+msgstr "$percent ($current o $total)"
+
+msgid "close"
+msgstr "Cau"
+
+msgid "messageoptions"
+msgstr "Dewisiadau neges..."
+
+msgid "togglecomposeoptions"
+msgstr "Newid dewisiadau ysgrifennu"
+
+msgid "attachmentrename"
+msgstr "Ailenwi atodiad"
+
+msgid "low"
+msgstr "Isel"
+
+msgid "lowest"
+msgstr "Isaf"
+
+msgid "normal"
+msgstr "Cyffredin"
+
+msgid "high"
+msgstr "Uchel"
+
+msgid "highest"
+msgstr "Uchaf"
+
+msgid "nosubject"
+msgstr "(dim pwnc)"
+
+msgid "showimages"
+msgstr "Dangos lluniau"
+
+msgid "allow"
+msgstr "Caniatau"
+
+msgid "alwaysshow"
+msgstr "Dangos lluniau bob amser o $sender"
+
+msgid "alwaysallow"
+msgstr "Caniatau bob amser o $sender"
+
+msgid "isdraft"
+msgstr "Mae hwn yn neges ddrafft"
+
+msgid "andnmore"
+msgstr "$nr mwy..."
+
+msgid "details"
+msgstr "Manylion"
+
+msgid "summary"
+msgstr "Crynodeb"
+
+msgid "headers"
+msgstr "Penawdau"
+
+msgid "allheaders"
+msgstr "Pob pennawd..."
+
+msgid "togglemoreheaders"
+msgstr "Dangos fwy o benynnau'r neges"
+
+msgid "togglefullheaders"
+msgstr "Toglo penawdau llawn y neges"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Testun plaen"
+
+msgid "savesentmessagein"
+msgstr "Cadw negeseuon a ddanfonir yn"
+
+msgid "dontsave"
+msgstr "peidio cadw"
+
+msgid "maxuploadsize"
+msgstr "Y maint ffeil uchaf a ganiateir yw $size"
+
+msgid "addcc"
+msgstr "Ychwanegu Cc"
+
+msgid "addbcc"
+msgstr "Ychwanegu Bcc"
+
+msgid "addreplyto"
+msgstr "Ychwanegu Ateb-I"
+
+msgid "addfollowupto"
+msgstr "Ychwanegu Followup-To"
+
+msgid "sendreceipt"
+msgstr "Danfon hysbysiad derbyn?"
+
+msgid "mdnrequest"
+msgstr ""
+"Mae anfonwr y neges hwn wedi gofyn am hysbysiad eich bod wedi darllen y "
+"neges. Hoffech chi hysbysu'r anfonwr?"
+
+msgid "receiptread"
+msgstr "Cadarnhad Derbyn (darllenwyd)"
+
+msgid "yourmessage"
+msgstr "Mae hwn yn gadarnhad o dderbyn eich neges"
+
+msgid "receiptnote"
+msgstr ""
+"Nodyn: Mae'r cadarnhad hwn yn cydnabod fod y neges wedi ei ddangos ar "
+"gyfrifiadur y derbynnydd. 'Does dim sicrwydd fod y derbynydd wedi darllen "
+"neu ddeall cynnwys y neges."
+
+msgid "sendalwaysto"
+msgstr "Danfon bob amser i $email"
+
+msgid "zoomin"
+msgstr "Chwyddo Mewn"
+
+msgid "zoomout"
+msgstr "Chwyddo Allan"
+
+msgid "rotate"
+msgstr "Cylchdroi"
+
+msgid "increaseimage"
+msgstr "Cynyddu maint delwedd"
+
+msgid "decreaseimage"
+msgstr "Lleihau maint delwedd"
+
+msgid "rotateimage"
+msgstr "Cylchdroi delwedd"
+
+msgid "showtools"
+msgstr "Dangos teclynnau delwedd"
+
+msgid "hidetools"
+msgstr "Cuddio teclynnau delwedd"
+
+msgid "name"
+msgstr "Enw ddangosir"
+
+msgid "firstname"
+msgstr "Enw cyntaf"
+
+msgid "surname"
+msgstr "Enw olaf"
+
+msgid "middlename"
+msgstr "Enw Canol"
+
+msgid "nameprefix"
+msgstr "Rhagddodiad"
+
+msgid "namesuffix"
+msgstr "Olddodiad"
+
+msgid "nickname"
+msgstr "Llysenw"
+
+msgid "jobtitle"
+msgstr "Teitl Swydd"
+
+msgid "department"
+msgstr "Adran"
+
+msgid "gender"
+msgstr "Rhyw"
+
+msgid "maidenname"
+msgstr "Enw cyn priodi"
+
+msgid "email"
+msgstr "E-bost"
+
+msgid "phone"
+msgstr "Ffôn"
+
+msgid "address"
+msgstr "Cyfeiriad"
+
+msgid "street"
+msgstr "Stryd"
+
+msgid "locality"
+msgstr "Tref/Dinas"
+
+msgid "zipcode"
+msgstr "Côd Post/ZIP"
+
+msgid "region"
+msgstr "Sîr/Talaith"
+
+msgid "country"
+msgstr "Gwlad"
+
+msgid "birthday"
+msgstr "Penblwydd"
+
+msgid "anniversary"
+msgstr "Cylchwyl"
+
+msgid "website"
+msgstr "Gwefan"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Nodiadau"
+
+msgid "male"
+msgstr "gwryw"
+
+msgid "female"
+msgstr "benyw"
+
+msgid "nonbinary"
+msgstr "anneuol"
+
+msgid "othergender"
+msgstr "arall"
+
+msgid "manager"
+msgstr "Rheolwr"
+
+msgid "assistant"
+msgstr "Cynorthwyydd"
+
+msgid "spouse"
+msgstr "Cymar"
+
+msgid "allfields"
+msgstr "Pob maes"
+
+msgid "search"
+msgstr "Chwilio"
+
+msgid "searchresult"
+msgstr "Canlyniadau chwilio"
+
+msgid "advsearch"
+msgstr "Chwilio Uwch"
+
+msgid "advanced"
+msgstr "Uwch"
+
+msgid "other"
+msgstr "Arall"
+
+msgid "printcontact"
+msgstr "Cyswllt argraffu"
+
+msgid "qrcode"
+msgstr "Cod QR"
+
+msgid "typehome"
+msgstr "Cartref"
+
+msgid "typework"
+msgstr "Gwaith"
+
+msgid "typeother"
+msgstr "Arall"
+
+msgid "typemobile"
+msgstr "Symudol"
+
+msgid "typemain"
+msgstr "Prif"
+
+msgid "typehomefax"
+msgstr "Ffacs Adref"
+
+msgid "typeworkfax"
+msgstr "Ffacs Gwaith"
+
+msgid "typecar"
+msgstr "Car"
+
+msgid "typepager"
+msgstr "Peiriant Galw"
+
+msgid "typevideo"
+msgstr "Fideo"
+
+msgid "typeassistant"
+msgstr "Cynorthwyydd"
+
+msgid "typehomepage"
+msgstr "Gwefan"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Proffil"
+
+msgid "addfield"
+msgstr "Ychwanegu maes..."
+
+msgid "addcontact"
+msgstr "Ychwanegu cyswllt"
+
+msgid "editcontact"
+msgstr "Golygu cyswllt"
+
+msgid "contacts"
+msgstr "Cysylltiadau"
+
+msgid "contactproperties"
+msgstr "Nodweddion cyswllt"
+
+msgid "contactnameandorg"
+msgstr "Enw a Corff"
+
+msgid "personalinfo"
+msgstr "Gwybodaeth bersonol"
+
+msgid "personal"
+msgstr "Persono"
+
+msgid "contactphoto"
+msgstr "Llun cyswllt"
+
+msgid "edit"
+msgstr "Golygu"
+
+msgid "cancel"
+msgstr "Canslo"
+
+msgid "save"
+msgstr "Cadw"
+
+msgid "delete"
+msgstr "Dileu"
+
+msgid "discard"
+msgstr "Gwaredu"
+
+msgid "continue"
+msgstr "Parhau"
+
+msgid "ok"
+msgstr "Iawn"
+
+msgid "rename"
+msgstr "Ail-enwi"
+
+msgid "addphoto"
+msgstr "Ychwanegu"
+
+msgid "replacephoto"
+msgstr "Amnewid"
+
+msgid "uploadphoto"
+msgstr "Lanlwytho llun"
+
+msgid "choosefile"
+msgstr "Dewis ffeil..."
+
+msgid "choosefiles"
+msgstr "Dewis ffeiliau..."
+
+msgid "browse"
+msgstr "Pori"
+
+msgid "newcontact"
+msgstr "Creu cyswllt newydd"
+
+msgid "deletecontact"
+msgstr "Dileu y cysylltiadau a ddewiswyd"
+
+msgid "composeto"
+msgstr "Ysgrifennu neges at"
+
+msgid "contactsfromto"
+msgstr "Cysylltiadau $from i $to o $count"
+
+msgid "print"
+msgstr "Argraffu"
+
+msgid "export"
+msgstr "Allforio"
+
+msgid "exportall"
+msgstr "Allforio popeth"
+
+msgid "exportsel"
+msgstr "Allforio dewiswyd"
+
+msgid "exportvcards"
+msgstr "Allforio cysylltiadau mewn fformat vCard"
+
+msgid "newgroup"
+msgstr "Creu grŵp newydd"
+
+msgid "addgroup"
+msgstr "Ychwanegu grŵp"
+
+msgid "grouprename"
+msgstr "Ail-enwi grŵp"
+
+msgid "groupdelete"
+msgstr "Dileu grŵp"
+
+msgid "groupassign"
+msgstr "Ychwanegu i'r grŵp..."
+
+msgid "groupremove"
+msgstr "Tynnu o'r grŵp"
+
+msgid "groupremoveselected"
+msgstr "Dileu y cysylltiadau dewiswyd o'r grŵp"
+
+msgid "uponelevel"
+msgstr "Fyny un lefel"
+
+msgid "previouspage"
+msgstr "Dangos y set flaenorol"
+
+msgid "firstpage"
+msgstr "Dangos y set gyntaf"
+
+msgid "nextpage"
+msgstr "Dangos y set nesaf"
+
+msgid "lastpage"
+msgstr "Dangos y set olaf"
+
+msgid "group"
+msgstr "Grŵp"
+
+msgid "groups"
+msgstr "Grwpiau"
+
+msgid "listgroup"
+msgstr "Rhestru aelodau'r grŵp"
+
+msgid "personaladrbook"
+msgstr "Cyfeiriadau Personol"
+
+msgid "searchsave"
+msgstr "Cadw chwiliad"
+
+msgid "searchdelete"
+msgstr "Dileu chwiliad"
+
+msgid "import"
+msgstr "Mewnforio"
+
+msgid "importcontacts"
+msgstr "Mewnforio cysylltiadau"
+
+msgid "importfromfile"
+msgstr "Mewnforio o ffeil"
+
+msgid "importtarget"
+msgstr "Ychwanegu cysylltiadau i"
+
+msgid "importreplace"
+msgstr "Dileu y llyfr cyfeiriadau cyfan wrth lwytho"
+
+msgid "importgroups"
+msgstr "Mewnforio penodiadau grŵp"
+
+msgid "importgroupsall"
+msgstr "Holl (creu grwpiau os oes angen)"
+
+msgid "importgroupsexisting"
+msgstr "Dim ond ar gyfer grwpiau sy'n bodoli"
+
+msgid "importdesc"
+msgstr ""
+"Gallwch lwytho fyny cysylltiadau o lyfr cyfeiriadau blaenorol. <br/>Ar hyn o"
+" bryd rydym yn cefnogi mewnforio cyfeiriadau o'r fformatau data <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> neu CSV (comma-"
+"separated)"
+
+msgid "importmapdesc"
+msgstr ""
+"Cadarnhewch fod y wybodaeth mapio meysydd isod yn gywir cyn parhau gyda "
+"mewnforio data CSV."
+
+msgid "fieldnotmapped"
+msgstr "Ni fapiwyd y maes (peidio mewnforio)"
+
+msgid "skipheader"
+msgstr "Peidio mewnforio'r llinell gyntaf (pennawdau)"
+
+msgid "done"
+msgstr "Wedi gorffen"
+
+msgid "birth_day"
+msgstr "Dydd Geni"
+
+msgid "birth_month"
+msgstr "Mis Geni"
+
+msgid "birth_year"
+msgstr "Blwyddyn Geni"
+
+msgid "settingsfor"
+msgstr "Gosodiadau ar gyfer"
+
+msgid "about"
+msgstr "Amdan"
+
+msgid "preferences"
+msgstr "Dewisiadau"
+
+msgid "userpreferences"
+msgstr "Dewisiadau'r defnyddiwr"
+
+msgid "editpreferences"
+msgstr "Golygu dewisiadau'r defnyddiwr"
+
+msgid "identities"
+msgstr "Personoliaethau"
+
+msgid "manageidentities"
+msgstr "Rheoli personoliaethau"
+
+msgid "newidentity"
+msgstr "Creu personoliaeth newydd"
+
+msgid "addidentity"
+msgstr "Ychwanegu personoliaeth"
+
+msgid "editidentity"
+msgstr "Golygu personoliaeth"
+
+msgid "identityencryption"
+msgstr "Amgryptiad"
+
+msgid "preferhtml"
+msgstr "Dangos HTML"
+
+msgid "defaultcharset"
+msgstr "Set Nodau Diofyn"
+
+msgid "htmlmessage"
+msgstr "Neges HTML"
+
+msgid "messagepart"
+msgstr "Rhan"
+
+msgid "digitalsig"
+msgstr "Llofnod Digidol"
+
+msgid "dateformat"
+msgstr "Fformat dyddiad"
+
+msgid "timeformat"
+msgstr "Fformat amser"
+
+msgid "prettydate"
+msgstr "Dyddiadau pert"
+
+msgid "setdefault"
+msgstr "Rhagosod"
+
+msgid "autodetect"
+msgstr "Awto"
+
+msgid "language"
+msgstr "Iaith"
+
+msgid "timezone"
+msgstr "Parth amser"
+
+msgid "pagesize"
+msgstr "Rhesi ar bob tudalen"
+
+msgid "signature"
+msgstr "Llofnod"
+
+msgid "dstactive"
+msgstr "Amser arbed golau ddydd"
+
+msgid "showinextwin"
+msgstr "Agor neges mewn ffenest newydd"
+
+msgid "composeextwin"
+msgstr "Ysgrifennu mewn ffenest newydd"
+
+msgid "htmleditor"
+msgstr "Ysgrifennu negeseuon HTML"
+
+msgid "htmlonreply"
+msgstr "wrth ateb i neges HTML yn unig"
+
+msgid "htmlonreplyandforward"
+msgstr "wrth ddanfon ymlaen neu ymateb i neges HTML"
+
+msgid "htmlsignature"
+msgstr "Llofnod HTML"
+
+msgid "showemail"
+msgstr "Dangos cyfeiriad ebost gyda'r enw gweledig"
+
+msgid "previewpane"
+msgstr "Dangos ffenest rhagolwg"
+
+msgid "skin"
+msgstr "Croen rhyngwyneb"
+
+msgid "logoutclear"
+msgstr "Clirio'r Sbwriel wrth allgofnodi"
+
+msgid "logoutcompact"
+msgstr "Crynhoi'r Mewnflwch wrth allgofnodi"
+
+msgid "uisettings"
+msgstr "Rhyngwyneb Defnyddiwr"
+
+msgid "serversettings"
+msgstr "Gosodiadau Gweinydd"
+
+msgid "mailboxview"
+msgstr "Ymddangosiad y Blychau"
+
+msgid "mdnrequests"
+msgstr "Hysbysiadau anfonwr"
+
+msgid "askuser"
+msgstr "gofyn i'r defnyddiwr"
+
+msgid "autosend"
+msgstr "anfon yn awtomatig"
+
+msgid "autosendknown"
+msgstr "anfon derbynneb i fy nghysylltiadau, gofyn i mi fel arall"
+
+msgid "autosendknownignore"
+msgstr "anfon derbynneb i fy nghysylltiadau, anwybyddu fel arall"
+
+msgid "autosendtrusted"
+msgstr "danfon hysbysiad derbyn i bob danfonwr ymddiriedig, fel arall gofyn"
+
+msgid "autosendtrustedignore"
+msgstr ""
+"danfon hysbysiad derbyn i bob danfonwr ymddiriedig, fel arall anwybyddu"
+
+msgid "ignorerequest"
+msgstr "anwybyddu'r cais"
+
+msgid "readwhendeleted"
+msgstr "Nodi'r neges fel darllenwyd wrth ddileu"
+
+msgid "flagfordeletion"
+msgstr "Fflagio'r neges i'w ddileu yn hytrach na dileu yn syth"
+
+msgid "skipdeleted"
+msgstr "Peidio dangos negesuon wedi ei dileu"
+
+msgid "deletealways"
+msgstr "Pan fod symud negeseuon i'r Sbwriel yn methu, dileu nhw"
+
+msgid "deletejunk"
+msgstr "Dileu negeseuon yn uniongyrchol yn Sbwriel"
+
+msgid "showremoteimages"
+msgstr "Dangos lluniau o wefannau allanol"
+
+msgid "allowremoteresources"
+msgstr "Caniatau adnoddau pell (delweddau, arddulliau)"
+
+msgid "fromknownsenders"
+msgstr "o anfonwyr hysbys"
+
+msgid "fromtrustedsenders"
+msgstr "o ddanfonwyr ymddiriedig"
+
+msgid "frommycontacts"
+msgstr "o fy nghysylltiadau"
+
+msgid "always"
+msgstr "bob amser"
+
+msgid "alwaysbutplain"
+msgstr "bob amser, heblaw pan yn ymateb i destun plaen"
+
+msgid "showinlineimages"
+msgstr "Dangos lluniau atodol islaw'r neges"
+
+msgid "autosavedraft"
+msgstr "Cadw drafft yn awtomatig"
+
+msgid "everynminutes"
+msgstr "bob $n munud"
+
+msgid "refreshinterval"
+msgstr "Ail-lwytho (edrych am negeseuon newydd ayyb)"
+
+msgid "never"
+msgstr "byth"
+
+msgid "immediately"
+msgstr "ar unwaith"
+
+msgid "messagesdisplaying"
+msgstr "Dangos Negeseuon"
+
+msgid "messagescomposition"
+msgstr "Ysgrifennu Negeseuon"
+
+msgid "mimeparamfolding"
+msgstr "Enw atodiadau"
+
+msgid "2231folding"
+msgstr "RFC 2231 llawn (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "RFC 2047 llawn (arall)"
+
+msgid "force7bit"
+msgstr "Defnyddio amgodi MIME ar gyfer llythrennau 8-did"
+
+msgid "savelocalstorage"
+msgstr "Cadw yn storfa leol y porwr (dros dro)"
+
+msgid "advancedoptions"
+msgstr "Dewisiadau uwch"
+
+msgid "toggleadvancedoptions"
+msgstr "Newid dewisiadau uwch"
+
+msgid "focusonnewmessage"
+msgstr "Ffocysu'r porwr ar y neges newydd"
+
+msgid "checkallfolders"
+msgstr "Chwilio pob ffolder am negeseuon newydd"
+
+msgid "displaynext"
+msgstr "Dangos cofnod rhestr nesaf ar ôl dileu/symud"
+
+msgid "defaultfont"
+msgstr "Ffont arferol ar gyfer negeseuon HTML"
+
+msgid "mainoptions"
+msgstr "Prif Ddewisiadau"
+
+msgid "browseroptions"
+msgstr "Dewisiadau Porwr"
+
+msgid "section"
+msgstr "Adran"
+
+msgid "maintenance"
+msgstr "Gwaith cynnal a chadw"
+
+msgid "newmessage"
+msgstr "Neges Newydd"
+
+msgid "signatureoptions"
+msgstr "Dewisiadau Llofnod"
+
+msgid "whenreplying"
+msgstr "Wrth ateb"
+
+msgid "replyempty"
+msgstr "peidio dyfynnu'r neges wreiddiol"
+
+msgid "replytopposting"
+msgstr "dechrau'r neges newydd uwchben y neges wreiddiol"
+
+msgid "replytoppostingnoindent"
+msgstr "dechrau neges newydd uwchben y dyfyniad (dim cilosodiad)"
+
+msgid "replybottomposting"
+msgstr "dechrau'r neges newydd o dan y neges wreiddiol"
+
+msgid "replyremovesignature"
+msgstr "Wrth ateb, dileu'r llofnod gwreiddiol o'r neges"
+
+msgid "autoaddsignature"
+msgstr "Ychwanegu llofnod yn awtomatig"
+
+msgid "newmessageonly"
+msgstr "negeseuon newydd yn unig"
+
+msgid "replyandforwardonly"
+msgstr "atebion a danfon ymlaen yn unig"
+
+msgid "insertsignature"
+msgstr "Mewnosod llofnod"
+
+msgid "sigbelow"
+msgstr "Rhowch y llofnod o dan y neges wedi wreiddiol"
+
+msgid "sigseparator"
+msgstr "Gorfodi gwahanwr safonol yn y llofnodion"
+
+msgid "automarkread"
+msgstr "Nodi'r negeseuon fel darllenwyd"
+
+msgid "afternseconds"
+msgstr "ar ôl $n eiliad"
+
+msgid "reqmdn"
+msgstr "Bob amser gofyn am dderbynneb danfon"
+
+msgid "reqdsn"
+msgstr "Gofyn am hysbysiad statws danfon bob amser"
+
+msgid "alwayskeepformatting"
+msgstr "Cadw fformat y testun gwreiddiol, bob amser"
+
+msgid "replysamefolder"
+msgstr "Rhoi atebion yn yr un ffolder i'r neges sy'n cael ei ateb"
+
+msgid "defaultabook"
+msgstr "Llyfr cyfeiriadau diofyn"
+
+msgid "autocompletesingle"
+msgstr "Hepgor cyfeiriadau ebost amgen wrth awto-gwblhau"
+
+msgid "listnamedisplay"
+msgstr "Rhestru cysylltiadau fel"
+
+msgid "contactformmode"
+msgstr "Modd ffurflen gyswllt"
+
+msgid "privatemode"
+msgstr "Preifat (Gartref)"
+
+msgid "businessmode"
+msgstr "Busnes (Gwaith)"
+
+msgid "collectedaddresses"
+msgstr "Cyfeiriadau a gasglwyd"
+
+msgid "collectedrecipients"
+msgstr "Derbynwyr a gasglwyd"
+
+msgid "collectedrecipientsopt"
+msgstr "Storio derbynwyr ebost allanol yn"
+
+msgid "collectedsendersopt"
+msgstr "Storio anfonwyr ymddiriedig yn"
+
+msgid "trustedsenders"
+msgstr "Anfonwyr Ymddiredig"
+
+msgid "spellcheckbeforesend"
+msgstr "Gwirio sillafu cyn anfon neges"
+
+msgid "spellcheckoptions"
+msgstr "Dewisiadau gwirio sillafu"
+
+msgid "spellcheckignoresyms"
+msgstr "Anwybyddu geiriau gyda symbolau"
+
+msgid "spellcheckignorenums"
+msgstr "Anwybyddu geiriau gyda rhifau"
+
+msgid "spellcheckignorecaps"
+msgstr "Anwybyddu geiriau sy'n briflythrennau yn gyfangwbl"
+
+msgid "addtodict"
+msgstr "Ychwanegu i'r geiriadur"
+
+msgid "editoroptions"
+msgstr "Dewisiadau Golygydd"
+
+msgid "enableautolink"
+msgstr "Trosi URLs dilys i ddolenni yn awtomatig"
+
+msgid "mailtoprotohandler"
+msgstr "Cofrestru trafodwr protocol ar gyfer dolenni mailto:"
+
+msgid "standardwindows"
+msgstr "Trin ffenestri naid fel ffenestri arferol"
+
+msgid "forwardmode"
+msgstr "Danfon neges ymlaen"
+
+msgid "inline"
+msgstr "mewnlin"
+
+msgid "asattachment"
+msgstr "fel atodiad"
+
+msgid "replyallmode"
+msgstr "Gweithred diofyn botwm [Ymateb i bawb]"
+
+msgid "replyalldefault"
+msgstr "ymateb i bawb"
+
+msgid "replyalllist"
+msgstr "ymateb i'r rhestr trafod yn unig (os canfuwyd)"
+
+msgid "allmessages"
+msgstr "pob neges"
+
+msgid "olderxdays"
+msgstr "hynach na $x diwrnod"
+
+msgid "folder"
+msgstr "Ffolder"
+
+msgid "folders"
+msgstr "Ffolderi"
+
+msgid "foldername"
+msgstr "Enw ffolder"
+
+msgid "subscribed"
+msgstr "Tanysgrifwyd"
+
+msgid "messagecount"
+msgstr "Negeseuon"
+
+msgid "create"
+msgstr "Creu"
+
+msgid "createfolder"
+msgstr "Creu ffolder newydd"
+
+msgid "managefolders"
+msgstr "Rheoli ffolderi"
+
+msgid "specialfolders"
+msgstr "Ffolderi arbennig"
+
+msgid "properties"
+msgstr "Nodweddion"
+
+msgid "folderproperties"
+msgstr "Ffolder nodweddion"
+
+msgid "parentfolder"
+msgstr "Ffolder uwchben"
+
+msgid "location"
+msgstr "Lleoliad"
+
+msgid "info"
+msgstr "Gwybodaeth"
+
+msgid "getfoldersize"
+msgstr "Cliciwch i gael maint ffolder"
+
+msgid "changesubscription"
+msgstr "Cliciwch i newid y tanysgrifiad"
+
+msgid "foldertype"
+msgstr "Math Ffolder"
+
+msgid "personalfolder"
+msgstr "Ffolder Preifat"
+
+msgid "otherfolder"
+msgstr "Ffolder Defnyddiwr Arall"
+
+msgid "sharedfolder"
+msgstr "Ffolder Cyhoeddus"
+
+msgid "findfolders"
+msgstr "Canfod ffolderi"
+
+msgid "findcontacts"
+msgstr "Canfod cysylltiadau"
+
+msgid "findmail"
+msgstr "Canfod negeseuon ebost"
+
+msgid "namespace.personal"
+msgstr "Persono"
+
+msgid "namespace.other"
+msgstr "Defnyddwyr arall"
+
+msgid "namespace.shared"
+msgstr "Rhannwyd"
+
+msgid "dualuselabel"
+msgstr "Gall gynnwys yn unig"
+
+msgid "dualusemail"
+msgstr "negeseuon"
+
+msgid "dualusefolder"
+msgstr "ffolder"
+
+msgid "generate"
+msgstr "Cynhyrchu"
+
+msgid "encryptioncreatekey"
+msgstr "Creu pâr allweddi newydd"
+
+msgid "openmailvelopesettings"
+msgstr "Agor Gosodiadau Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Mae gennych $nr allwedd preifat cyfatebol wedi eu storio yn eich cylch "
+"allwedd Mailvelope:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Nid oes gan y anfonwr hwn allwedd preifat PGP wedi ei storio yn eich "
+"estyniad Mailvelope. Hoffech chi greu un er mwyn ei ddefnyddio i anfon "
+"negeseuon wedi eu amgryptio?"
+
+msgid "encryption"
+msgstr "Amgryptiad"
+
+msgid "mailvelopeoptions"
+msgstr "Dewisiadau Mailvelope"
+
+msgid "mailvelopemainkeyring"
+msgstr "Defnyddio prif gylch allweddi Mailvelope"
+
+msgid "mailvelopenotfound"
+msgstr "Nid yw'r estyniad Mailvelope ar gael/wedi ei osod yn eich porwr"
+
+msgid "mailvelopeenable"
+msgstr "Galluogi"
+
+msgid "sortby"
+msgstr "Trefnu yn ôl"
+
+msgid "sortasc"
+msgstr "Trefn esgynnol"
+
+msgid "sortdesc"
+msgstr "Trefn ddisgynnol"
+
+msgid "undo"
+msgstr "Dad-wneud"
+
+msgid "installedplugins"
+msgstr "Ategynnau wedi eu gosod"
+
+msgid "plugin"
+msgstr "Ategyn"
+
+msgid "version"
+msgstr "Fersiwn"
+
+msgid "source"
+msgstr "Ffynhonnell"
+
+msgid "destination"
+msgstr "Cyrchfan"
+
+msgid "license"
+msgstr "Trwydded"
+
+msgid "skinauthor"
+msgstr "gan $author"
+
+msgid "support"
+msgstr "Gofyn am gymorth"
+
+msgid "savedsearches"
+msgstr "Chwiliadau wedi cadw"
+
+msgid "dateformatY"
+msgstr "BBBB"
+
+msgid "dateformaty"
+msgstr "BB"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Saesneg"
+
+msgid "westerneuropean"
+msgstr "Gorllewin Ewropeaidd"
+
+msgid "easterneuropean"
+msgstr "Dwyrain Ewropeaidd"
+
+msgid "southeasterneuropean"
+msgstr "De-Ddwyrain Ewropeaidd"
+
+msgid "baltic"
+msgstr "Baltig"
+
+msgid "cyrillic"
+msgstr "Cyrilig"
+
+msgid "arabic"
+msgstr "Arabeg"
+
+msgid "greek"
+msgstr "Groegaidd"
+
+msgid "hebrew"
+msgstr "Hebraeg"
+
+msgid "turkish"
+msgstr "Twrceg"
+
+msgid "nordic"
+msgstr "Nordeg"
+
+msgid "thai"
+msgstr "Thai"
+
+msgid "celtic"
+msgstr "Celtaidd"
+
+msgid "vietnamese"
+msgstr "Fietnamaidd"
+
+msgid "japanese"
+msgstr "Japaneaidd"
+
+msgid "korean"
+msgstr "Corëeg"
+
+msgid "chinese"
+msgstr "Tsieineaidd"
+
+msgid "arialabeltopnav"
+msgstr "Rheolaeth ffenest"
+
+msgid "arialabeltasknav"
+msgstr "Tasgiau rhaglen"
+
+msgid "arialabeltoolbar"
+msgstr "Bar offer y rhaglen"
+
+msgid "arialabellistnav"
+msgstr "Llywio rhestr"
+
+msgid "arialabelactivetask"
+msgstr "Tasg gweithredol"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Hidlydd rhestr ebost"
+
+msgid "arialabelmailsearchform"
+msgstr "Ffurflen chwilio neges ebost"
+
+msgid "arialabelcontactsearchform"
+msgstr "Ffurflen chwilio cysylltiadau"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Mewnbwn chwilio ebost"
+
+msgid "arialabelquicksearchbox"
+msgstr "Mewnbwn chwilio"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Hidlydd rhestr ffolderi"
+
+msgid "arialabelfoldersearchform"
+msgstr "Ffurflen chwilio ffolderi"
+
+msgid "arialabelfolderlist"
+msgstr "Dewis ffolderi ebost"
+
+msgid "arialabelmessagelist"
+msgstr "Rhestr Negeseuon Ebost"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Rhagolwg neges"
+
+msgid "arialabelmailboxmenu"
+msgstr "Bwydlen gweithrediadau ffolder"
+
+msgid "arialabellistselectmenu"
+msgstr "Bwydlen dewis rhestr"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Bwydlen rhestr edefynnau"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Dewisiadau dangos a trefnu rhestr negeseuon"
+
+msgid "arialabelmailimportdialog"
+msgstr "Deialog mewnforio negeseuon"
+
+msgid "arialabelmessagenav"
+msgstr "Llywio neges"
+
+msgid "arialabelmessagebody"
+msgstr "Corff Neges"
+
+msgid "arialabelmessageactions"
+msgstr "Gweithrediadau neges"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Ffurflen chwilio cysylltiadau"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Mewnbwn chwilio cyswllt"
+
+msgid "arialabelmessageheaders"
+msgstr "Pennynau neges"
+
+msgid "arialabelforwardingoptions"
+msgstr "Dewisiadau anfon ymlaen"
+
+msgid "arialabelreplyalloptions"
+msgstr "Dewisiadau ymateb i bawb"
+
+msgid "arialabelmoremessageactions"
+msgstr "Mwy o weithrediadau neges"
+
+msgid "arialabelmorecontactactions"
+msgstr "Mwy o weithreoedd cyswllt"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Nodi y negeseuon dewiswyd fel..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Dewisiadau ysgrifennu"
+
+msgid "arialabelresponsesmenu"
+msgstr "Bwydlen ymatebion parod"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Ffurflen lanlwytho atodiad"
+
+msgid "arialabelattachmentmenu"
+msgstr "Dewisiadau atodiad"
+
+msgid "arialabelmailtomenu"
+msgstr "Dewisiadau cyfeiriad ebost"
+
+msgid "arialabelattachmentpreview"
+msgstr "Rhagolwg atodiad"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Rhestr o gysylltiadau a grwpiau i ddewis fel derbynwyr"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Dewisiadau allforio cysylltiadau"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Dewisiadau grŵp/llyfr cyfeiriadau"
+
+msgid "arialabelpreferencesform"
+msgstr "Ffurflen dewisiadau"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Ffurflen golygu personoliaeth"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Ffurflen golygu ymateb"
+
+msgid "arialabelsearchterms"
+msgstr "Chwilio termau"
+
+msgid "arialabeldropactionmenu"
+msgstr "Bwydlen Llusgo-a-Gollwng"
+
+msgid "arialabelheadersmenu"
+msgstr "Bwydlen ychwanegu derbynnydd (pennawd)"
+
+msgid "arialabelimagetools"
+msgstr "Teclynnau delwedd"
+
+msgid "helplistnavigation"
+msgstr "Rhestru llywio bysellfwrdd"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Saeth fyny/lawr: Symud dewis/ffocws dan sylw.\n"
+"Bwlch: Dewis rhes dan sylw.\n"
+"Shift + fyny/lawr; Dewis rhes ychwanegol uwchben/islaw.\n"
+"Ctrl + Bwlch: Ychwanegu rhes dan sylw i'r dewis/dileu o'r dewis."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Saeth dde/chwith: ehangu/crebachu edefyn neges (yn modd edefynnau yn unig).\n"
+"Enter: Agor y neges dewiswyd/dan sylw.\n"
+"Delete: Symud y negeseuon dewiswyd i'r Sbwriel."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Agor y cyswllt dewiswyd/dan sylw."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Cafwyd gwall!"
+
+msgid "messages.loginfailed"
+msgstr "Methwyd mewngofnodi."
+
+msgid "messages.cookiesdisabled"
+msgstr "Nid yw eich porwr yn derbyn cwcis."
+
+msgid "messages.sessionerror"
+msgstr "Mae'r sesiwn yn anghywir neu wedi dod i ben."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Gwelwyd camgymhariad cwci. Cliriwch y cwcis yn eich porwr os gwelwch yn dda."
+
+msgid "messages.storageerror"
+msgstr "Methwyd cysylltu a'r gweinydd storfa."
+
+msgid "messages.servererror"
+msgstr "Gwall Gweinydd!"
+
+msgid "messages.servererrormsg"
+msgstr "Gwall Gweinydd: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Gormod o geisiadau i fewngofnodi wedi methu. Triwch eto nes ymlaen."
+
+msgid "messages.connerror"
+msgstr "Gwall Cysylltiad (Methwyd cysylltu a'r gweinydd)!"
+
+msgid "messages.dberror"
+msgstr "Gwall Cronfa Ddata!"
+
+msgid "messages.dbconnerror"
+msgstr "Methwyd cysylltu a'r gronfa ddata\""
+
+msgid "messages.windowopenerror"
+msgstr "Fe ataliwyd y ffenest naid!"
+
+msgid "messages.requesttimedout"
+msgstr "Cais wedi dod i derfyn amser"
+
+msgid "messages.errorreadonly"
+msgstr "Methwyd gweithredu. Mae'r ffolder yn darllen-yn-unig"
+
+msgid "messages.errornoperm"
+msgstr "Methwyd gweithredu. Gwrthodwyd caniatad"
+
+msgid "messages.erroroverquota"
+msgstr "Methwyd gweithredu. Nid oes gofod gwag ar y disg."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Dim gofod gwag ar y disg. Defnyddiwch SHIFT+DEL i ddileu neges."
+
+msgid "messages.invalidrequest"
+msgstr "Cais annilys! Ni chadwyd unrhyw wybodaeth."
+
+msgid "messages.invalidhost"
+msgstr "Enw gweinydd annilys."
+
+msgid "messages.nomessagesfound"
+msgstr "Dim negeseuon wedi eu canfod yn y blwch hwn"
+
+msgid "messages.loggedout"
+msgstr "Rydych wedi cau'r sesiwn yn llwyddiannus. Hwyl fawr!"
+
+msgid "messages.mailboxempty"
+msgstr "Mae'r blwch yn wag"
+
+msgid "messages.nomessages"
+msgstr "Dim negeseuon"
+
+msgid "messages.refreshing"
+msgstr "Yn adnewyddu..."
+
+msgid "messages.loading"
+msgstr "Yn llwytho..."
+
+msgid "messages.uploading"
+msgstr "Yn llwytho ffeil i fyny..."
+
+msgid "messages.attaching"
+msgstr "Yn atodi ffeil..."
+
+msgid "messages.uploadingmany"
+msgstr "Yn llwytho fyny ffeiliau..."
+
+msgid "messages.loadingdata"
+msgstr "Yn llwytho data..."
+
+msgid "messages.checkingmail"
+msgstr "Yn edrych am negeseuon newydd..."
+
+msgid "messages.sendingmessage"
+msgstr "Yn danfon neges..."
+
+msgid "messages.messagesent"
+msgstr "Danfonwyd y neges yn llwyddiannus"
+
+msgid "messages.savingmessage"
+msgstr "Yn cadw neges..."
+
+msgid "messages.messagesaved"
+msgstr "Cadwyd neges i'r Drafftiau"
+
+msgid "messages.successfullysaved"
+msgstr "Cadwyd yn llwyddiannus"
+
+msgid "messages.savingresponse"
+msgstr "Yn cadw testun ymateb..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Ydych chi wir am ddileu y testun ymateb hwn?"
+
+msgid "messages.nocontactselected"
+msgstr "Nid ydych wedi dewis cyswllt eto."
+
+msgid "messages.addedsuccessfully"
+msgstr "Cyswllt wedi ei ychwanegu i'r llyfr cyfeiriadau yn llwyddiannus"
+
+msgid "messages.contactexists"
+msgstr "Mae cyswllt gyda'r cyfeiriad e-bost yma yn bodoli'n barod"
+
+msgid "messages.contactnameexists"
+msgstr "Mae cyswllt gyda'r un enw yn bodoli yn barod."
+
+msgid "messages.blockedimages"
+msgstr ""
+"I amddiffyn eich preifatrwydd, fe ataliwyd lluniau allanol yn y neges yma."
+
+msgid "messages.blockedresources"
+msgstr "I amddiffyn eich preifatrwydd, mae adnoddau allanol wedi eu atal."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Mae'r neges hwn yn cynnwys cyfeiriadau ebost amheus a allai fod yn "
+"dwyllodrus."
+
+msgid "messages.bccemail"
+msgstr ""
+"Mae'r neges(euon) anfonwyd ymlaen yn cynnwys derbynnwyr cyfrinachol (Bcc)"
+
+msgid "messages.bouncehint"
+msgstr ""
+"Anfonir y neges hwn heb newidiadau, h.y. yn defnyddio corff y neges "
+"wreiddiol, penawdau a derbynnwyr."
+
+msgid "messages.encryptedmessage"
+msgstr "Mae hon yn neges amgryptedig a felly ni ellir ei ddangos. Flin iawn!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Mae hon yn neges amgryptedig a gall ei ddadgryptio gyda estyniad eich porwr."
+
+msgid "messages.nopubkeyfor"
+msgstr "Ni chafwyd hyd i allwedd cyhoeddus dilys ar gyfer $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Ni chafwyd hyd i allwedd cyhoeddus dilys ar gyfer eich personoliaeth anfon. "
+"Ydych am amgryptio y neges ar gyfer y derbynwyr yn unig?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Nid yw'n bosib amgryptio atodiadau wedi uwchlwytho yn barod. Ychwanegwch nhw"
+" eto yn y golygydd amgryptio."
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"Hoffech chi chwilio y gweinyddwyr allweddi cyhoeddus ar gyfer yr allweddi sy"
+" ar goll?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Cafwyd hyd i'r allweddi cyhoeddus canlynol:"
+
+msgid "messages.keyservererror"
+msgstr "Methwyd cael yr allwedd o'r gweinydd allweddi."
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+"Mewnforiwyd yr allwedd cyhoeddus $key i'ch cylch allweddi yn llwyddiannus"
+
+msgid "messages.nocontactsfound"
+msgstr "Ni gafwyd hyd i unrhyw gysylltiadau"
+
+msgid "messages.contactnotfound"
+msgstr "Ni gafwyd hyd i'r cysylltiad gofynnwyd amdano"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Rhaid i chi ddefnyddio'r ffurflen chwilio i weld cysylltiadau o'ch llyfr "
+"cyfeiriadau dewisol."
+
+msgid "messages.sendingfailed"
+msgstr "Methwyd danfon y neges"
+
+msgid "messages.senttooquickly"
+msgstr "Arhoswch $sec eiliad cyn danfon y neges"
+
+msgid "messages.errorsavingsent"
+msgstr "Fe gafwyd gwall wrth gadw'r neges ddanfonwyd."
+
+msgid "messages.errorsaving"
+msgstr "Fe gafwyd gwall wrth gadw"
+
+msgid "messages.errormoving"
+msgstr "Methwyd symud y neges"
+
+msgid "messages.errorcopying"
+msgstr "Methwyd copïo'r neges(euon)"
+
+msgid "messages.errordeleting"
+msgstr "Methwyd dileu y neges"
+
+msgid "messages.errormarking"
+msgstr "Methwyd nodi y neges"
+
+msgid "messages.alerttitle"
+msgstr "Rhybudd"
+
+msgid "messages.confirmationtitle"
+msgstr "Ydych chi'n siwr..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Ydych chi wir am ddileu y cysylltiadau ddewiswyd?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Ydych chi wir am ddileu'r grŵp dewiswyd?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Ydych chi wir am ddileu y neges(euon) ddewiswyd?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Ydych chi wir am ddileu y ffolder yma?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Ydych chi wir am symud y ffolder hwn?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Ydych chi wir am ddileu yr holl negeseuon yn y ffolder yma?"
+
+msgid "messages.contactdeleting"
+msgstr "Dileu cyswllt/cysylltiadau..."
+
+msgid "messages.groupdeleting"
+msgstr "Yn dileu grŵp..."
+
+msgid "messages.folderdeleting"
+msgstr "Yn dileu ffolder..."
+
+msgid "messages.foldermoving"
+msgstr "Yn symud ffolder..."
+
+msgid "messages.foldersubscribing"
+msgstr "Yn tanysgrifio i'r ffolder..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Yn dad-danysgrifio i'r ffolder..."
+
+msgid "messages.formincomplete"
+msgstr "Nid oedd y ffurflen wedi ei gwblhau yn llawn"
+
+msgid "messages.noemailwarning"
+msgstr "Rhowch gyfeiriad e-bost dilys"
+
+msgid "messages.nonamewarning"
+msgstr "Rhowch enw"
+
+msgid "messages.nopagesizewarning"
+msgstr "Rhowch maint tudalen"
+
+msgid "messages.nosenderwarning"
+msgstr "Rhowch gyfeiriad e-bost y danfonwr"
+
+msgid "messages.recipientsadded"
+msgstr "Ychwanegwyd derbynnydd/wyr yn llwyddiannus."
+
+msgid "messages.norecipientwarning"
+msgstr "Rhowch o leiaf un derbynnydd"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Fe fydd pob derbynnydd yn gweld cyfeiriadau ebost pawb arall. I atal hyn ac "
+"amddiffyn eu preifatrwydd mae'n bosib defnyddio'r maes Bcc."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Gormod o dderbynnwyr cyhoeddus"
+
+msgid "messages.nosubjectwarning"
+msgstr "Mae'r pennawd \"Pwnc\" yn wag. Hoffech chi roi un fewn nawr?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Dim pwnc"
+
+msgid "messages.nobodywarning"
+msgstr "Danfon y neges hwn heb destun?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Nid yw'r neges wedi ei ddanfon a mae ganddo newidiadau heb ei gadw. Hoffech "
+"chi gael gwared a'r newidiadau?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Cafwyd hyd i neges wedi ei ysgrifennu o'r blaen ond heb ei "
+"ddanfon.\\n\\nPwnc: $subject\\nCadwyd: $date\\n\\nYdych chi am adfer y "
+"neges?"
+
+msgid "messages.nosearchname"
+msgstr "Rhowch enw cyswllt neu gyfeiriad e-bost"
+
+msgid "messages.notuploadedwarning"
+msgstr "Nid yw pob atodiad wedi eu llwytho i fyny eto. Triwch eto neu canslo."
+
+msgid "messages.searchsuccessful"
+msgstr "Cafwyd hyd i $nr neges"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Canfuwyd $nr cyswllt."
+
+msgid "messages.searchnomatch"
+msgstr "Ni gafwyd hyd i unrhyw ganlyniadau chwilio"
+
+msgid "messages.searching"
+msgstr "Yn chwilio..."
+
+msgid "messages.checking"
+msgstr "Yn gofyn..."
+
+msgid "messages.stillsearching"
+msgstr "Dal i chwilio..."
+
+msgid "messages.nospellerrors"
+msgstr "Ni gafwyd hyd i unrhyw wallau gwirio"
+
+msgid "messages.folderdeleted"
+msgstr "Dilëwyd y ffolder yn llwyddiannus"
+
+msgid "messages.foldersubscribed"
+msgstr "Ffolder wedi ei danysgrifio yn llwyddiannus"
+
+msgid "messages.folderunsubscribed"
+msgstr "Ffolder wedi ei ddad-danysgrifio yn llwyddiannus"
+
+msgid "messages.folderpurged"
+msgstr "Gwagiwyd y ffolder yn llwyddiannus."
+
+msgid "messages.folderexpunged"
+msgstr "Cywasgwyd y ffolder yn llwyddiannus."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Dilëwyd yn llwyddiannus"
+
+msgid "messages.converting"
+msgstr "Yn cael gwared a'r fformatio..."
+
+msgid "messages.messageopenerror"
+msgstr "Methwyd llwytho'r neges o'r gweinydd"
+
+msgid "messages.filelinkerror"
+msgstr "Methwyd atodi'r ffeil."
+
+msgid "messages.fileuploaderror"
+msgstr "Methwyd llwytho'r ffeil i fyny"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"Nid oes cefnogaeth i fewnforio nifer o ffeiliau CSV gyda meysydd gwahanol."
+
+msgid "messages.filesizeerror"
+msgstr "Mae'r ffeil a lwythyd fyny yn fwy na'r maint uchaf ganiateir o $size"
+
+msgid "messages.filecounterror"
+msgstr "Cewch chi ddim ond llwytho fyny $count files ar unwaith."
+
+msgid "messages.msgsizeerror"
+msgstr "Methwyd atodi ffeil. Roedd maint y neges ($size) yn rhy fawr."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Mae maint y neges wedi mynd yn fyw na'r uchafswm ($size). Nid yw $num "
+"neges(euon) wedi ei atodi."
+
+msgid "messages.copysuccess"
+msgstr "Copïwyd $nr cyswllt yn llwyddiannus"
+
+msgid "messages.movesuccess"
+msgstr "Symudwyd $nr cyswllt yn llwyddiannus."
+
+msgid "messages.copyerror"
+msgstr "Methwyd copïo unrhyw gysylltiadau."
+
+msgid "messages.moveerror"
+msgstr "Methwyd symud unrhyw gysylltiadau."
+
+msgid "messages.sourceisreadonly"
+msgstr "Mae ffynhonnell y cyfeiriadau i'w ddarllen yn unig"
+
+msgid "messages.errorsavingcontact"
+msgstr "Methwyd cadw cyfeiriad y cyswllt"
+
+msgid "messages.movingmessage"
+msgstr "Yn symud neges..."
+
+msgid "messages.copyingmessage"
+msgstr "Yn copïo'r neges"
+
+msgid "messages.copyingcontact"
+msgstr "Yn copïo cyswllt/cysylltiadau..."
+
+msgid "messages.movingcontact"
+msgstr "Yn symud cyswllt/cysylltiadau..."
+
+msgid "messages.deletingmessage"
+msgstr "Yn dileu neges(euon)..."
+
+msgid "messages.markingmessage"
+msgstr "Yn marcio neges(euon)..."
+
+msgid "messages.addingmember"
+msgstr "Yn ychwanegu cyswllt/cysylltiadau i'r grŵp..."
+
+msgid "messages.removingmember"
+msgstr "Yn dileu cyswllt/cysylltiadau o'r grŵp..."
+
+msgid "messages.receiptsent"
+msgstr "Danfonwyd cadarnhad derbyn yn llwyddiannus"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Methwyd danfon cadarnhad derbyn"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Ydych chi wir am ddileu'r personoliaeth hwn?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Allwch chi ddim dileu'r personoliaeth yma, hwn yw'r un olaf."
+
+msgid "messages.forbiddencharacter"
+msgstr "Mae enw'r ffolder yn cynnwys llythyren annerbynniol"
+
+msgid "messages.selectimportfile"
+msgstr "Dewiswch ffeil i'w lwytho fyny"
+
+msgid "messages.addresswriterror"
+msgstr "Nid yw'n bosib ysgrifennu i'r llyfr cyfeiriadau"
+
+msgid "messages.contactaddedtogroup"
+msgstr "Ychwanegwyd y cysylltiadau i'r grŵp yma yn llwyddiannus"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Dilëwyd y cysylltiadau o'r grŵp yma yn llwyddiannus"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Ni newidwyd aseiniadiau grŵp."
+
+msgid "messages.importwait"
+msgstr "Yn mewnforio, arhoswch os gwelwch yn dda..."
+
+msgid "messages.importformaterror"
+msgstr "Methwyd mewnforio! Nid yw'r ffeil a lwythwyd yn ffeil ddata dilys."
+
+msgid "messages.importconfirm"
+msgstr "<b>Fe mewnforiwyd $inserted cyswllt yn llwyddiannus</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>Neidiwyd $skipped cyswllt oedd yn bodoli</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>Neidiwyd $skipped cyswllt annilys</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "<b>Methwyd mewnforio $errors cyswllt annilys</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "Mewnforiwyd $nr neges yn llwyddiannus"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Methwyd mewnforio! Nid yw'r ffeil a lwythwyd yn ffeil neges neu blwch ebost "
+"dilys"
+
+msgid "messages.opnotpermitted"
+msgstr "Ni chaniateir y weithred!"
+
+msgid "messages.nofromaddress"
+msgstr "Cyfeiriad e-bost ar goll yn y personoliaeth a ddewiswyd"
+
+msgid "messages.editorwarning"
+msgstr ""
+"Fe allai newid math y golygydd testun olygu byddwch yn colli unrhyw "
+"arddulliau yn eich testun? Hoffech chi barhau?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Fe gafwyd gwall angheuol yn y ffurfweddiad. Cysylltwch â'ch gweinyddwr ar "
+"unwaith. <b>Nid oedd yn bosib dangos eich neges.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Gwall SMTP ($code): Methwyd cysylltu a'r gweinydd"
+
+msgid "messages.smtpautherror"
+msgstr "Gwall SMTP ($code): Methwyd dilysu'r cyfrif"
+
+msgid "messages.smtpfromerror"
+msgstr "Gwall SMTP ($code): Methwyd gosod y danfonwr \"$from\" ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "Gwall SMTP ($code): Methwyd ychwanegu derbynwr \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "Gwall SMTP: Nid oedd yn bosib darllen y rhestr o dderbynnwyr"
+
+msgid "messages.smtputf8error"
+msgstr ""
+"Gwall SMTP: Nid yw'r gweinydd yn cefnogi Unicode mewn cyfeiriadau ebost."
+
+msgid "messages.smtpsizeerror"
+msgstr "Gwall SMTP: Mae maint y neges yn fwy na cyfyngiad y gweinydd ($limit)"
+
+msgid "messages.smtperror"
+msgstr "Gwall SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Cyfeiriad e-bost anghywir: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Gormod o dderbynnwyr. Lleihawch y nifer i $max"
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Mae nifer o aelodau'r grŵp yn fwy na'r uchafswm o $max"
+
+msgid "messages.internalerror"
+msgstr "Fe gafwyd gwall mewnol. Rhowch gynnig arni eto."
+
+msgid "messages.contactdelerror"
+msgstr "Methwyd dileu cyswllt"
+
+msgid "messages.contactdeleted"
+msgstr "Cyswllt wedi ei ddileu yn llwyddiannus"
+
+msgid "messages.contactrestoreerror"
+msgstr "Methwyd adfer y cyswllt/cysylltiadau a ddilëwyd"
+
+msgid "messages.contactrestored"
+msgstr "Adferwyd y cyswllt/cysylltiadau"
+
+msgid "messages.groupdeleted"
+msgstr "Grŵp wedi ei ddileu yn llwyddiannus"
+
+msgid "messages.grouprenamed"
+msgstr "Grŵp wedi ei ailenwi yn llwyddiannus"
+
+msgid "messages.groupcreated"
+msgstr "Grŵp wedi ei greu yn llwyddiannus"
+
+msgid "messages.savedsearchdeleted"
+msgstr "Dilëwyd y chwiliad yn llwyddiannus."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Methwyd dileu y chwiliad."
+
+msgid "messages.savedsearchcreated"
+msgstr "Crëwyd y chwiliad yn llwyddiannus."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Methwyd creu y chwiliad."
+
+msgid "messages.messagedeleted"
+msgstr "Neges(euon) wedi eu dileu yn llwyddiannus"
+
+msgid "messages.messagemoved"
+msgstr "Neges(euon) wedi eu symud yn llwyddiannus"
+
+msgid "messages.messagemovedtotrash"
+msgstr "Neges(euon) wedi eu symud i'r Sbwriel yn llwyddiannus"
+
+msgid "messages.messagecopied"
+msgstr "Neges(euon) wedi eu copïo yn llwyddiannus"
+
+msgid "messages.messagemarked"
+msgstr "Neges(euon) wedi eu marcio yn llwyddiannus"
+
+msgid "messages.autocompletechars"
+msgstr "Rhowch o leia $min llythyren ar gyfer awto-gwblhau"
+
+msgid "messages.autocompletemore"
+msgstr "Canfuwyd mwy o gofnodion sy'n cyfateb. Teipiwch fwy o lythrennau."
+
+msgid "messages.namecannotbeempty"
+msgstr "Ni all yr enw fod yn wag"
+
+msgid "messages.nametoolong"
+msgstr "Mae'r enw yn rhy hir"
+
+msgid "messages.namedotforbidden"
+msgstr "Ni all enw ffolder gychwyn gyda dot."
+
+msgid "messages.folderupdated"
+msgstr "Diweddarwyd y ffolder yn llwyddiannus"
+
+msgid "messages.foldercreated"
+msgstr "Crëwyd y ffolder yn llwyddiannus"
+
+msgid "messages.invalidimageformat"
+msgstr "Ddim yn fformat llun dilys."
+
+msgid "messages.mispellingsfound"
+msgstr "Gwelwyd camsillafu yn y neges."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Methwyd creu/symud ffolder i'r ffolder rhiant ddewiswyd. Dim hawl mynediad."
+
+msgid "messages.messagetoobig"
+msgstr "Mae darn y neges yn rhy fawr i'w brosesu."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Mae'r atodiad yn amheus am nad yw ei fath yn cyfateb i'r math a ddatganir yn"
+" y neges. Os nad ydych chi'n ymddiried yn y danfonwr, ni ddylech chi agor "
+"hwn yn eich porwr - galla'i fod cynnwys maleisus "
+"ynddo.<br/><br/><em>Disgwylid: $expected; canfuwyd: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Rhybudd: Mae'r gwasanaeth gwebost angen Javascript i weithio! Er mwyn ei "
+"ddefnyddio, galluogwch Javascript yng ngosodiadau eich porwr."
+
+msgid "messages.messageissent"
+msgstr ""
+"Mae'r neges wedi ei anfon, ond heb ei gadw eto. Hoffech chi ei gadw nawr?"
+
+msgid "messages.errnotfound"
+msgstr "Ni Ganfuwyd y Ffeil"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Ni gafwyd hyd i'r adnodd ofynnwyd amdano"
+
+msgid "messages.errfailedrequest"
+msgstr "Methodd y cais"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Methiant Awdurdodi"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Methwyd gwirio eich bod wedi'ch awdurdodi i gael mynediad i'r gwasanaeth!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Methiant Gwiriad Cais"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Er eich diogelwch, mae mynediad i'r adnodd hwn wedi ei ddiogelu yn erbyn CSRF.\n"
+"Os ydych yn gweld hwn, mae'n debyg na wnaethoch chi allgofnodi cyn gadael yr ap gwe.\n"
+"\n"
+"Mae'n rhaid gwirio nawr cyn parhau."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Cysylltwch a rheolwr eich gweinydd."
+
+msgid "messages.clicktoresumesession"
+msgstr "Cliciwch yma i ail-ddechrau eich sesiwn blaenorol"
+
+msgid "messages.errcomposesession"
+msgstr "Gwall sesiwn ysgrifennu"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Ni gafwyd hyd i'r sesiwn ysgrifennu gofynnwyd amdano"
+
+msgid "messages.clicktocompose"
+msgstr "Cliciwch yma i ysgrifennu neges newydd"
+
+msgid "messages.nosupporterror"
+msgstr "Nid yw'r nodwedd hwn wedi eu gefnogi gan eich porwr gwe."
+
+msgid "messages.siginserted"
+msgstr "Mewnosodwyd y llofnod yn llwyddiannus."
+
+msgid "messages.responseinserted"
+msgstr "Mewnosodwyd yr ymateb yn llwyddiannus."
+
+msgid "messages.noresponsesavailable"
+msgstr "Dim ymatebion ar gael"
+
+msgid "messages.listempty"
+msgstr "Mae'r rhestr yn wag."
+
+msgid "messages.listusebutton"
+msgstr "Defnyddiwch y botwm Creu i ychwanegu cofnod newydd."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Creuwyd pâr allwedd newydd yn llwyddiannus ar gyfer $identity."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Mae'n ymddangos fod yr atodiad hwn yn wag.<br>Gwiriwch hwn gyda'r person a "
+"ddanfonodd y neges."
+
+msgid "messages.oauthloginfailed"
+msgstr "Methwyd mewngofnodi OAuth. Rhowch gynnig arall arni."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Roedd y cais awdurdodi yn annilys neu'n anghyflawn"
+
+msgid "messages.oauthaccessdenied"
+msgstr "Gwaharddwyd y cais gan y gweinydd neu ddefnyddiwr awdurdodi"

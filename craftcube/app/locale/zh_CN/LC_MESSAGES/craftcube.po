@@ -1,0 +1,2846 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "欢迎使用 $product"
+
+msgid "username"
+msgstr "用户名"
+
+msgid "password"
+msgstr "密码"
+
+msgid "server"
+msgstr "服务器"
+
+msgid "login"
+msgstr "登录"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr "菜单"
+
+msgid "logout"
+msgstr "注销"
+
+msgid "mail"
+msgstr "邮件"
+
+msgid "settings"
+msgstr "设置"
+
+msgid "addressbook"
+msgstr "通讯录"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "收件箱"
+
+msgid "drafts"
+msgstr "草稿箱"
+
+msgid "sent"
+msgstr "已发送邮件"
+
+msgid "trash"
+msgstr "已删除邮件"
+
+msgid "junk"
+msgstr "垃圾邮件"
+
+msgid "show_real_foldernames"
+msgstr "显示特殊文件夹的名字"
+
+msgid "subject"
+msgstr "主题"
+
+msgid "from"
+msgstr "发件人"
+
+msgid "sender"
+msgstr "发件人"
+
+msgid "to"
+msgstr "收件人"
+
+msgid "cc"
+msgstr "抄送"
+
+msgid "bcc"
+msgstr "密送"
+
+msgid "replyto"
+msgstr "回复至"
+
+msgid "followupto"
+msgstr "投递组"
+
+msgid "date"
+msgstr "日期"
+
+msgid "size"
+msgstr "大小"
+
+msgid "priority"
+msgstr "优先级"
+
+msgid "organization"
+msgstr "组织"
+
+msgid "readstatus"
+msgstr "阅读状态"
+
+msgid "listoptions"
+msgstr "列表选项"
+
+msgid "listoptionstitle"
+msgstr "列表选项"
+
+msgid "mailboxlist"
+msgstr "邮件夹"
+
+msgid "messagesfromto"
+msgstr "从 $from 到 $to，共计 $count 封邮件"
+
+msgid "threadsfromto"
+msgstr "从 $from 到 $to，共计 $count 个主题"
+
+msgid "messagenrof"
+msgstr "第 $nr 封邮件，共计 $count 封"
+
+msgid "fromtoshort"
+msgstr "$from – $to 共计 $count 个"
+
+msgid "copy"
+msgstr "复制"
+
+msgid "move"
+msgstr "移动"
+
+msgid "moveto"
+msgstr "移至..."
+
+msgid "copyto"
+msgstr "复制至"
+
+msgid "download"
+msgstr "下载"
+
+msgid "open"
+msgstr "打开"
+
+msgid "showattachment"
+msgstr "显示"
+
+msgid "showanyway"
+msgstr "总是显示"
+
+msgid "filename"
+msgstr "文件名"
+
+msgid "filesize"
+msgstr "文件大小"
+
+msgid "addtoaddressbook"
+msgstr "添加至通讯录"
+
+msgid "sun"
+msgstr "星期日"
+
+msgid "mon"
+msgstr "星期一"
+
+msgid "tue"
+msgstr "星期二"
+
+msgid "wed"
+msgstr "星期三"
+
+msgid "thu"
+msgstr "星期四"
+
+msgid "fri"
+msgstr "星期五"
+
+msgid "sat"
+msgstr "星期六"
+
+msgid "sunday"
+msgstr "星期日"
+
+msgid "monday"
+msgstr "星期一"
+
+msgid "tuesday"
+msgstr "星期二"
+
+msgid "wednesday"
+msgstr "星期三"
+
+msgid "thursday"
+msgstr "星期四"
+
+msgid "friday"
+msgstr "星期五"
+
+msgid "saturday"
+msgstr "星期六"
+
+msgid "jan"
+msgstr "一月"
+
+msgid "feb"
+msgstr "二月"
+
+msgid "mar"
+msgstr "三月"
+
+msgid "apr"
+msgstr "四月"
+
+msgid "may"
+msgstr "五月"
+
+msgid "jun"
+msgstr "六月"
+
+msgid "jul"
+msgstr "七月"
+
+msgid "aug"
+msgstr "八月"
+
+msgid "sep"
+msgstr "九月"
+
+msgid "oct"
+msgstr "十月"
+
+msgid "nov"
+msgstr "十一月"
+
+msgid "dec"
+msgstr "十二月"
+
+msgid "longjan"
+msgstr "一月"
+
+msgid "longfeb"
+msgstr "二月"
+
+msgid "longmar"
+msgstr "三月"
+
+msgid "longapr"
+msgstr "四月"
+
+msgid "longmay"
+msgstr "五月"
+
+msgid "longjun"
+msgstr "六月"
+
+msgid "longjul"
+msgstr "七月"
+
+msgid "longaug"
+msgstr "八月"
+
+msgid "longsep"
+msgstr "九月"
+
+msgid "longoct"
+msgstr "十月"
+
+msgid "longnov"
+msgstr "十一月"
+
+msgid "longdec"
+msgstr "十二月"
+
+msgid "today"
+msgstr "今天"
+
+msgid "refresh"
+msgstr "刷新"
+
+msgid "checkmail"
+msgstr "检查新邮件"
+
+msgid "compose"
+msgstr "撰写新邮件"
+
+msgid "writenewmessage"
+msgstr "写邮件"
+
+msgid "reply"
+msgstr "回复"
+
+msgid "replytomessage"
+msgstr "回复发件人"
+
+msgid "replytoallmessage"
+msgstr "回复所有"
+
+msgid "replyall"
+msgstr "回复全部"
+
+msgid "replylist"
+msgstr "回复列表"
+
+msgid "forward"
+msgstr "转发"
+
+msgid "forwardinline"
+msgstr "直接转发"
+
+msgid "forwardattachment"
+msgstr "以附件转发"
+
+msgid "forwardmessage"
+msgstr "转发邮件"
+
+msgid "bouncemsg"
+msgstr "重发 (回弹)"
+
+msgid "bounce"
+msgstr "重发"
+
+msgid "deletemessage"
+msgstr "删除邮件"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "移至已删除邮件"
+
+msgid "printmessage"
+msgstr "打印邮件"
+
+msgid "previousmessage"
+msgstr "显示上一封邮件"
+
+msgid "firstmessage"
+msgstr "显示第一封邮件"
+
+msgid "nextmessage"
+msgstr "下一封"
+
+msgid "lastmessage"
+msgstr "最后一封"
+
+msgid "backtolist"
+msgstr "返回邮件列表"
+
+msgid "viewsource"
+msgstr "显示来源"
+
+msgid "mark"
+msgstr "标记为"
+
+msgid "markmessages"
+msgstr "标记选中的邮件为"
+
+msgid "markread"
+msgstr "已读"
+
+msgid "markunread"
+msgstr "未读"
+
+msgid "markflagged"
+msgstr "重要"
+
+msgid "markunflagged"
+msgstr " 不重要"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "更多操作..."
+
+msgid "markallread"
+msgstr "全部标为已读"
+
+msgid "folders-cur"
+msgstr "仅选定的文件夹"
+
+msgid "folders-sub"
+msgstr "选定的文件夹及其子文件夹"
+
+msgid "folders-all"
+msgstr "所有文件夹"
+
+msgid "more"
+msgstr "更多"
+
+msgid "back"
+msgstr "返回"
+
+msgid "options"
+msgstr "个人选项"
+
+msgid "composeoptions"
+msgstr "撰写选项"
+
+msgid "optionsandattachments"
+msgstr "选项和附件"
+
+msgid "actions"
+msgstr "动作"
+
+msgid "first"
+msgstr "首"
+
+msgid "last"
+msgstr "尾"
+
+msgid "previous"
+msgstr "前一"
+
+msgid "next"
+msgstr "后一"
+
+msgid "select"
+msgstr "选择"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "全部"
+
+msgid "none"
+msgstr "无"
+
+msgid "currpage"
+msgstr "当前页"
+
+msgid "isread"
+msgstr "读"
+
+msgid "unread"
+msgstr "未读邮件"
+
+msgid "flagged"
+msgstr "已标记邮件"
+
+msgid "unflagged"
+msgstr "未标记"
+
+msgid "unanswered"
+msgstr "未回复邮件"
+
+msgid "withattachment"
+msgstr "包含附件"
+
+msgid "deleted"
+msgstr "已删除邮件"
+
+msgid "undeleted"
+msgstr "未删除邮件"
+
+msgid "replied"
+msgstr "已回复"
+
+msgid "forwarded"
+msgstr "已转发"
+
+msgid "invert"
+msgstr "反选"
+
+msgid "filter"
+msgstr "过滤"
+
+msgid "list"
+msgstr "列表"
+
+msgid "threads"
+msgstr "主题"
+
+msgid "expand-all"
+msgstr "展开全部"
+
+msgid "expand-unread"
+msgstr "展开未读"
+
+msgid "collapse-all"
+msgstr "收起全部"
+
+msgid "threaded"
+msgstr "所有邮件"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "展开消息主题"
+
+msgid "do_expand"
+msgstr "所有主题"
+
+msgid "expand_only_unread"
+msgstr "仅未读消息"
+
+msgid "fromto"
+msgstr "发件人/收件人"
+
+msgid "flag"
+msgstr "标志"
+
+msgid "attachment"
+msgstr "附件"
+
+msgid "nonesort"
+msgstr "无"
+
+msgid "sentdate"
+msgstr "发送日期"
+
+msgid "arrival"
+msgstr "到达日期"
+
+msgid "asc"
+msgstr "升序"
+
+msgid "desc"
+msgstr "降序"
+
+msgid "listcolumns"
+msgstr "列表列"
+
+msgid "listsorting"
+msgstr "排序列"
+
+msgid "listorder"
+msgstr "排序"
+
+msgid "listmode"
+msgstr "列表视图样式"
+
+msgid "lmode"
+msgstr "列表模式"
+
+msgid "layout"
+msgstr "布局"
+
+msgid "layoutwidescreen"
+msgstr "宽屏"
+
+msgid "layoutdesktop"
+msgstr "桌面"
+
+msgid "layoutlist"
+msgstr "列表"
+
+msgid "layoutwidescreendesc"
+msgstr "宽屏 (3栏)"
+
+msgid "layoutdesktopdesc"
+msgstr "桌面 (很宽的列表，邮件预览在下方)"
+
+msgid "layoutlistdesc"
+msgstr "纯列表 (无邮件预览)"
+
+msgid "folderactions"
+msgstr "文件夹操作..."
+
+msgid "compact"
+msgstr "压缩"
+
+msgid "empty"
+msgstr "清空"
+
+msgid "importmessages"
+msgstr "导入邮件"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "邮箱容量"
+
+msgid "unknown"
+msgstr "未知"
+
+msgid "unlimited"
+msgstr "无限制"
+
+msgid "quotatype"
+msgstr "容量类型"
+
+msgid "quotatotal"
+msgstr "限额"
+
+msgid "quotaused"
+msgstr "已用"
+
+msgid "quotastorage"
+msgstr "存储空间"
+
+msgid "quotamessage"
+msgstr "邮件数统计"
+
+msgid "shortheaderdate"
+msgstr "在 $date"
+
+msgid "shortheaderto"
+msgstr "在 $date 发给 $to"
+
+msgid "shortheaderfrom"
+msgstr "在 $date 来自 $from"
+
+msgid "quicksearch"
+msgstr "快速查找"
+
+msgid "searchplaceholder"
+msgstr "搜索"
+
+msgid "resetsearch"
+msgstr "清空"
+
+msgid "searchmod"
+msgstr "修改搜索"
+
+msgid "msgtext"
+msgstr "整封邮件"
+
+msgid "body"
+msgstr "正文"
+
+msgid "type"
+msgstr "类型："
+
+msgid "namex"
+msgstr "姓名"
+
+msgid "searchscope"
+msgstr "范围"
+
+msgid "currentfolder"
+msgstr "当前文件夹"
+
+msgid "subfolders"
+msgstr "当前文件夹及其子文件夹"
+
+msgid "allfolders"
+msgstr "所有文件夹"
+
+msgid "searchinterval-1W"
+msgstr "早于一周"
+
+msgid "searchinterval-1M"
+msgstr "早于一个月"
+
+msgid "searchinterval-1Y"
+msgstr "早于一年"
+
+msgid "searchinterval1W"
+msgstr "不到一周"
+
+msgid "searchinterval1M"
+msgstr "不到一个月"
+
+msgid "searchinterval1Y"
+msgstr "不到一年"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "在新窗口中打开"
+
+msgid "emlsave"
+msgstr "下载(.eml)"
+
+msgid "changeformattext"
+msgstr "以文本格式显示"
+
+msgid "changeformathtml"
+msgstr "以 HTML 格式显示"
+
+msgid "editasnew"
+msgstr "以新邮件编辑"
+
+msgid "send"
+msgstr "发送"
+
+msgid "sendmessage"
+msgstr "立即发送"
+
+msgid "savemessage"
+msgstr "保存为草稿"
+
+msgid "addattachment"
+msgstr "添加附件"
+
+msgid "charset"
+msgstr "字符集"
+
+msgid "editortype"
+msgstr "编辑器类型"
+
+msgid "returnreceipt"
+msgstr "需要已读回执"
+
+msgid "dsn"
+msgstr "投递状态通知"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "在 $date，$sender 写道："
+
+msgid "originalmessage"
+msgstr "原始邮件"
+
+msgid "selectimage"
+msgstr "选择图片"
+
+msgid "addimage"
+msgstr "添加图片"
+
+msgid "selectmedia"
+msgstr "选择影片"
+
+msgid "addmedia"
+msgstr "添加影片"
+
+msgid "encrypt"
+msgstr "加密"
+
+msgid "encryptmessage"
+msgstr "加密邮件"
+
+msgid "encryptmessagemailvelope"
+msgstr "用 Mailvelope 加密邮件"
+
+msgid "importpubkeys"
+msgstr "导入公钥"
+
+msgid "encryptedsendialog"
+msgstr "正在发送加密的邮件"
+
+msgid "encryptandsign"
+msgstr "加密并签名"
+
+msgid "keyid"
+msgstr "密钥 ID"
+
+msgid "keylength"
+msgstr "位"
+
+msgid "keyexpired"
+msgstr "已过期"
+
+msgid "keyrevoked"
+msgstr "已废除"
+
+msgid "bccinstead"
+msgstr "使用密送"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "插入"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "收件人"
+
+msgid "recipientedit"
+msgstr "编辑收件人"
+
+msgid "editidents"
+msgstr "编辑身份"
+
+msgid "spellcheck"
+msgstr "拼写"
+
+msgid "checkspelling"
+msgstr "拼写检查"
+
+msgid "resumeediting"
+msgstr "继续编辑"
+
+msgid "revertto"
+msgstr "恢复至"
+
+msgid "restore"
+msgstr "恢复信息"
+
+msgid "restoremessage"
+msgstr "是否恢复信息？"
+
+msgid "ignore"
+msgstr "忽略"
+
+msgid "responses"
+msgstr "回复"
+
+msgid "insertresponse"
+msgstr "插入回复"
+
+msgid "manageresponses"
+msgstr "管理回复"
+
+msgid "newresponse"
+msgstr "创建新回复"
+
+msgid "addresponse"
+msgstr "添加回复"
+
+msgid "editresponse"
+msgstr "编辑回复"
+
+msgid "editresponses"
+msgstr "编辑回复"
+
+msgid "responsename"
+msgstr "姓名"
+
+msgid "responsetext"
+msgstr "以文本形式回复"
+
+msgid "attach"
+msgstr "附加"
+
+msgid "attachments"
+msgstr "附件"
+
+msgid "upload"
+msgstr "上传"
+
+msgid "uploadprogress"
+msgstr "$percent ($current of $total)"
+
+msgid "close"
+msgstr "关闭"
+
+msgid "messageoptions"
+msgstr "邮件选项..."
+
+msgid "togglecomposeoptions"
+msgstr "切换布局选项"
+
+msgid "attachmentrename"
+msgstr "重命名附件"
+
+msgid "low"
+msgstr "低"
+
+msgid "lowest"
+msgstr "最低"
+
+msgid "normal"
+msgstr "普通"
+
+msgid "high"
+msgstr "高"
+
+msgid "highest"
+msgstr "最高"
+
+msgid "nosubject"
+msgstr "(无主题)"
+
+msgid "showimages"
+msgstr "显示图片"
+
+msgid "allow"
+msgstr "允许"
+
+msgid "alwaysshow"
+msgstr "总是显示来自 $sender 的图片"
+
+msgid "alwaysallow"
+msgstr "总是允许来自 $sender 的信件"
+
+msgid "isdraft"
+msgstr "这是一封草稿"
+
+msgid "andnmore"
+msgstr "第 $nr 封或更多..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr "信头"
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "显示更多消息头"
+
+msgid "togglefullheaders"
+msgstr "切换至原始消息头"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "纯文本"
+
+msgid "savesentmessagein"
+msgstr "保存已发送邮件至"
+
+msgid "dontsave"
+msgstr "不保存"
+
+msgid "maxuploadsize"
+msgstr "上传附件最大不超过 $size"
+
+msgid "addcc"
+msgstr "添加抄送"
+
+msgid "addbcc"
+msgstr "添加密送"
+
+msgid "addreplyto"
+msgstr "添加回复"
+
+msgid "addfollowupto"
+msgstr "添加投递组"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr "发件人要求在您阅读这封邮件时发送已读通知。您是否希望通知发件人？"
+
+msgid "receiptread"
+msgstr "发送回执(已读)"
+
+msgid "yourmessage"
+msgstr "这是您的邮件回执"
+
+msgid "receiptnote"
+msgstr "注意：回执只表示邮件在收件人的电脑上被打开过，不表示收件人已经阅读或了解邮件内容。"
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr "放大"
+
+msgid "zoomout"
+msgstr "缩小"
+
+msgid "rotate"
+msgstr "旋转"
+
+msgid "increaseimage"
+msgstr "增加图片大小"
+
+msgid "decreaseimage"
+msgstr "减小图片大小"
+
+msgid "rotateimage"
+msgstr "旋转图片"
+
+msgid "showtools"
+msgstr "显示图像工具"
+
+msgid "hidetools"
+msgstr "隐藏图像工具"
+
+msgid "name"
+msgstr "显示名称"
+
+msgid "firstname"
+msgstr "名字"
+
+msgid "surname"
+msgstr "姓氏"
+
+msgid "middlename"
+msgstr "中名"
+
+msgid "nameprefix"
+msgstr "前缀"
+
+msgid "namesuffix"
+msgstr "后缀"
+
+msgid "nickname"
+msgstr "昵称"
+
+msgid "jobtitle"
+msgstr "职位"
+
+msgid "department"
+msgstr "部门"
+
+msgid "gender"
+msgstr "性别"
+
+msgid "maidenname"
+msgstr "娘家姓"
+
+msgid "email"
+msgstr "邮件地址"
+
+msgid "phone"
+msgstr "电话"
+
+msgid "address"
+msgstr "地址"
+
+msgid "street"
+msgstr "街道"
+
+msgid "locality"
+msgstr "城市"
+
+msgid "zipcode"
+msgstr "邮编"
+
+msgid "region"
+msgstr "省份"
+
+msgid "country"
+msgstr "国家"
+
+msgid "birthday"
+msgstr "生日"
+
+msgid "anniversary"
+msgstr "纪念日"
+
+msgid "website"
+msgstr "主页"
+
+msgid "instantmessenger"
+msgstr "即时通讯"
+
+msgid "notes"
+msgstr "备注"
+
+msgid "male"
+msgstr "男"
+
+msgid "female"
+msgstr "女"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "经理"
+
+msgid "assistant"
+msgstr "助理"
+
+msgid "spouse"
+msgstr "配偶"
+
+msgid "allfields"
+msgstr "所有栏目"
+
+msgid "search"
+msgstr "查询"
+
+msgid "searchresult"
+msgstr "查找结果"
+
+msgid "advsearch"
+msgstr "高级查询"
+
+msgid "advanced"
+msgstr "高级选项"
+
+msgid "other"
+msgstr "其他"
+
+msgid "printcontact"
+msgstr "打印联系人"
+
+msgid "qrcode"
+msgstr "二维码"
+
+msgid "typehome"
+msgstr "家庭"
+
+msgid "typework"
+msgstr "工作"
+
+msgid "typeother"
+msgstr "其他"
+
+msgid "typemobile"
+msgstr "手机"
+
+msgid "typemain"
+msgstr "主要"
+
+msgid "typehomefax"
+msgstr "家庭传真"
+
+msgid "typeworkfax"
+msgstr "工作传真"
+
+msgid "typecar"
+msgstr "车牌"
+
+msgid "typepager"
+msgstr "呼机"
+
+msgid "typevideo"
+msgstr "视频"
+
+msgid "typeassistant"
+msgstr "助理"
+
+msgid "typehomepage"
+msgstr "主页"
+
+msgid "typeblog"
+msgstr "博客"
+
+msgid "typeprofile"
+msgstr "资料"
+
+msgid "addfield"
+msgstr "新增条目..."
+
+msgid "addcontact"
+msgstr "添加联系人"
+
+msgid "editcontact"
+msgstr "编辑联系人"
+
+msgid "contacts"
+msgstr "联系人"
+
+msgid "contactproperties"
+msgstr "联系人信息"
+
+msgid "contactnameandorg"
+msgstr "姓名和公司"
+
+msgid "personalinfo"
+msgstr "个人信息"
+
+msgid "personal"
+msgstr "个人"
+
+msgid "contactphoto"
+msgstr "联系人照片"
+
+msgid "edit"
+msgstr "编辑"
+
+msgid "cancel"
+msgstr "取消"
+
+msgid "save"
+msgstr "保存"
+
+msgid "delete"
+msgstr "删除"
+
+msgid "discard"
+msgstr "丢弃"
+
+msgid "continue"
+msgstr "继续"
+
+msgid "ok"
+msgstr "确定"
+
+msgid "rename"
+msgstr "重命名"
+
+msgid "addphoto"
+msgstr "上传"
+
+msgid "replacephoto"
+msgstr "替换照片"
+
+msgid "uploadphoto"
+msgstr "上传照片"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "新建联系人"
+
+msgid "deletecontact"
+msgstr "删除选中的联系人"
+
+msgid "composeto"
+msgstr "写信至选中的联系人"
+
+msgid "contactsfromto"
+msgstr "第 $from 到 $to 个联系人，共 $count 个"
+
+msgid "print"
+msgstr "打印"
+
+msgid "export"
+msgstr "导出"
+
+msgid "exportall"
+msgstr "导出全部"
+
+msgid "exportsel"
+msgstr "导出选中"
+
+msgid "exportvcards"
+msgstr "导出联系人为 vCard 格式"
+
+msgid "newgroup"
+msgstr "创建新组"
+
+msgid "addgroup"
+msgstr "新建组"
+
+msgid "grouprename"
+msgstr "重命名群组"
+
+msgid "groupdelete"
+msgstr "删除群组"
+
+msgid "groupassign"
+msgstr "分配到分组…"
+
+msgid "groupremove"
+msgstr "从分组中移除"
+
+msgid "groupremoveselected"
+msgstr "删除选中"
+
+msgid "uponelevel"
+msgstr "升一级"
+
+msgid "previouspage"
+msgstr "上一页"
+
+msgid "firstpage"
+msgstr "首页"
+
+msgid "nextpage"
+msgstr "下一页"
+
+msgid "lastpage"
+msgstr "末页"
+
+msgid "group"
+msgstr "分组"
+
+msgid "groups"
+msgstr "分组"
+
+msgid "listgroup"
+msgstr "列出联系人名单"
+
+msgid "personaladrbook"
+msgstr "个人通讯录"
+
+msgid "searchsave"
+msgstr "保存搜索"
+
+msgid "searchdelete"
+msgstr "删除搜索"
+
+msgid "import"
+msgstr "导入"
+
+msgid "importcontacts"
+msgstr "导入通讯录"
+
+msgid "importfromfile"
+msgstr "从文件导入"
+
+msgid "importtarget"
+msgstr "添加联系人至"
+
+msgid "importreplace"
+msgstr "替换全部通讯录"
+
+msgid "importgroups"
+msgstr "导入群组任务"
+
+msgid "importgroupsall"
+msgstr "全部(如果需要则创建新的群组)"
+
+msgid "importgroupsexisting"
+msgstr "仅限于已有群组"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "完成"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "设置"
+
+msgid "about"
+msgstr "关于"
+
+msgid "preferences"
+msgstr "选项"
+
+msgid "userpreferences"
+msgstr "个人选项"
+
+msgid "editpreferences"
+msgstr "修改个人选项"
+
+msgid "identities"
+msgstr "发件人身份"
+
+msgid "manageidentities"
+msgstr "管理身份"
+
+msgid "newidentity"
+msgstr "创建新身份"
+
+msgid "addidentity"
+msgstr "添加身份"
+
+msgid "editidentity"
+msgstr "编辑身份"
+
+msgid "identityencryption"
+msgstr "加密"
+
+msgid "preferhtml"
+msgstr "以 HTML 格式显示"
+
+msgid "defaultcharset"
+msgstr "默认字符集"
+
+msgid "htmlmessage"
+msgstr "HTML 邮件"
+
+msgid "messagepart"
+msgstr "部分"
+
+msgid "digitalsig"
+msgstr "数字签名"
+
+msgid "dateformat"
+msgstr "日期格式"
+
+msgid "timeformat"
+msgstr "时间格式"
+
+msgid "prettydate"
+msgstr "短日期格式"
+
+msgid "setdefault"
+msgstr "设为默认"
+
+msgid "autodetect"
+msgstr "自动"
+
+msgid "language"
+msgstr "语言"
+
+msgid "timezone"
+msgstr "时区"
+
+msgid "pagesize"
+msgstr "每页显示的邮件数量"
+
+msgid "signature"
+msgstr "签名"
+
+msgid "dstactive"
+msgstr "夏令时"
+
+msgid "showinextwin"
+msgstr "在新窗口中打开"
+
+msgid "composeextwin"
+msgstr "在新窗口中撰写"
+
+msgid "htmleditor"
+msgstr "使用 HTML 编辑器"
+
+msgid "htmlonreply"
+msgstr "仅当回复 HTML 邮件时"
+
+msgid "htmlonreplyandforward"
+msgstr "仅当回复或转发 HTML 邮件时"
+
+msgid "htmlsignature"
+msgstr "使用 HTML 签名"
+
+msgid "showemail"
+msgstr "显示邮件地址时显示名字"
+
+msgid "previewpane"
+msgstr "显示预览窗口"
+
+msgid "skin"
+msgstr "界面皮肤"
+
+msgid "logoutclear"
+msgstr "退出时清空回收站"
+
+msgid "logoutcompact"
+msgstr "退出时压缩收件箱"
+
+msgid "uisettings"
+msgstr "用户界面"
+
+msgid "serversettings"
+msgstr "服务端设置"
+
+msgid "mailboxview"
+msgstr "显示邮件"
+
+msgid "mdnrequests"
+msgstr "发件人请求回执"
+
+msgid "askuser"
+msgstr "询问用户"
+
+msgid "autosend"
+msgstr "自动发送"
+
+msgid "autosendknown"
+msgstr "对我的联系人发送回执，否则询问"
+
+msgid "autosendknownignore"
+msgstr "对我的联系人发送回执，否则忽略"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "忽略请求"
+
+msgid "readwhendeleted"
+msgstr "删除后标记为已读"
+
+msgid "flagfordeletion"
+msgstr "标记邮件为已删除而不是实际删除"
+
+msgid "skipdeleted"
+msgstr "不显示标记为已删除的邮件"
+
+msgid "deletealways"
+msgstr "如果移动邮件到回收站失败，则删除"
+
+msgid "deletejunk"
+msgstr "直接删除垃圾邮箱中的邮件"
+
+msgid "showremoteimages"
+msgstr "显示内嵌的图片"
+
+msgid "allowremoteresources"
+msgstr "允许远程资源 (图片和样式表)"
+
+msgid "fromknownsenders"
+msgstr "来自已知发件人"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "总是"
+
+msgid "alwaysbutplain"
+msgstr "始终，除了回复纯文本"
+
+msgid "showinlineimages"
+msgstr "在邮件下方显示附件中的图片"
+
+msgid "autosavedraft"
+msgstr "自动保存到草稿箱"
+
+msgid "everynminutes"
+msgstr "每隔 $n 分钟"
+
+msgid "refreshinterval"
+msgstr "刷新间隔"
+
+msgid "never"
+msgstr "从不"
+
+msgid "immediately"
+msgstr "立即"
+
+msgid "messagesdisplaying"
+msgstr "显示参数"
+
+msgid "messagescomposition"
+msgstr "撰写邮件"
+
+msgid "mimeparamfolding"
+msgstr "附件名"
+
+msgid "2231folding"
+msgstr "完整的 RFC 2231（Thunderbird）"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2232（MS Outlook）"
+
+msgid "2047folding"
+msgstr "完整的 RFC 2047（其它）"
+
+msgid "force7bit"
+msgstr "对 8 位字符使用 MIME 编码"
+
+msgid "savelocalstorage"
+msgstr "保存到浏览器的本地存储（临时）"
+
+msgid "advancedoptions"
+msgstr "高级选项"
+
+msgid "toggleadvancedoptions"
+msgstr "切换高级选项"
+
+msgid "focusonnewmessage"
+msgstr "新邮件到达时将窗口提升为焦点窗口"
+
+msgid "checkallfolders"
+msgstr "检查所有邮件夹里的新邮件"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "默认的 HTML 格式字体"
+
+msgid "mainoptions"
+msgstr "主要选项"
+
+msgid "browseroptions"
+msgstr "浏览器选项"
+
+msgid "section"
+msgstr "项目"
+
+msgid "maintenance"
+msgstr "维护"
+
+msgid "newmessage"
+msgstr "新邮件"
+
+msgid "signatureoptions"
+msgstr "签名选项"
+
+msgid "whenreplying"
+msgstr "当回复时"
+
+msgid "replyempty"
+msgstr "不要引用原始邮件"
+
+msgid "replytopposting"
+msgstr "在原文上面开始新邮件"
+
+msgid "replytoppostingnoindent"
+msgstr "在引用上方开始写新的消息 (不要使用缩进)"
+
+msgid "replybottomposting"
+msgstr "在原文下面开始新邮件"
+
+msgid "replyremovesignature"
+msgstr "当回复时从邮件移除原始签名"
+
+msgid "autoaddsignature"
+msgstr "自动插入签名"
+
+msgid "newmessageonly"
+msgstr "仅新邮件"
+
+msgid "replyandforwardonly"
+msgstr "仅回复和转发邮件"
+
+msgid "insertsignature"
+msgstr "插入签名"
+
+msgid "sigbelow"
+msgstr "在引文的下方放置签名"
+
+msgid "sigseparator"
+msgstr "强制标准的签名分隔符"
+
+msgid "automarkread"
+msgstr "标记为已读"
+
+msgid "afternseconds"
+msgstr "$n 秒之后"
+
+msgid "reqmdn"
+msgstr "总是要求回执"
+
+msgid "reqdsn"
+msgstr "总是要求投递状态通知"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "保存回复邮件到邮件相同的文件夹"
+
+msgid "defaultabook"
+msgstr "默认地址薄"
+
+msgid "autocompletesingle"
+msgstr "跳过自动完成的电子邮件地址"
+
+msgid "listnamedisplay"
+msgstr "列出联系人为"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "发邮件前进行拼写检查"
+
+msgid "spellcheckoptions"
+msgstr "拼写检查选项"
+
+msgid "spellcheckignoresyms"
+msgstr "忽略带符号的单词"
+
+msgid "spellcheckignorenums"
+msgstr "忽略带数字的单词"
+
+msgid "spellcheckignorecaps"
+msgstr "忽略所有大写字母的单词"
+
+msgid "addtodict"
+msgstr "添加到字典中"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "注册为处理 mailto 链接的程序"
+
+msgid "standardwindows"
+msgstr "以标准窗口的形式弹出窗口"
+
+msgid "forwardmode"
+msgstr "邮件转发方式"
+
+msgid "inline"
+msgstr "内嵌"
+
+msgid "asattachment"
+msgstr "作为附件"
+
+msgid "replyallmode"
+msgstr "[回复所有]按钮的默认动作"
+
+msgid "replyalldefault"
+msgstr "回复全部"
+
+msgid "replyalllist"
+msgstr "只回复邮件列表中的联系人(找到的)"
+
+msgid "allmessages"
+msgstr "所有邮件"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "文件夹管理"
+
+msgid "folders"
+msgstr "文件夹管理"
+
+msgid "foldername"
+msgstr "邮件夹名称"
+
+msgid "subscribed"
+msgstr "已订阅"
+
+msgid "messagecount"
+msgstr "邮件数量"
+
+msgid "create"
+msgstr "建立"
+
+msgid "createfolder"
+msgstr "建立新邮件夹"
+
+msgid "managefolders"
+msgstr "管理邮件夹"
+
+msgid "specialfolders"
+msgstr "自定义邮件夹"
+
+msgid "properties"
+msgstr "属性"
+
+msgid "folderproperties"
+msgstr "文件夹属性"
+
+msgid "parentfolder"
+msgstr "父文件夹"
+
+msgid "location"
+msgstr "位置"
+
+msgid "info"
+msgstr "信息"
+
+msgid "getfoldersize"
+msgstr "获得文件夹容量"
+
+msgid "changesubscription"
+msgstr "更改订阅"
+
+msgid "foldertype"
+msgstr "文件夹类型"
+
+msgid "personalfolder"
+msgstr "私有文件夹"
+
+msgid "otherfolder"
+msgstr "他人文件夹"
+
+msgid "sharedfolder"
+msgstr "共享文件夹"
+
+msgid "findfolders"
+msgstr "查找文件夹"
+
+msgid "findcontacts"
+msgstr "查找联系人"
+
+msgid "findmail"
+msgstr "查找邮件"
+
+msgid "namespace.personal"
+msgstr "个人"
+
+msgid "namespace.other"
+msgstr "其他用户"
+
+msgid "namespace.shared"
+msgstr "已共享"
+
+msgid "dualuselabel"
+msgstr "只能包含"
+
+msgid "dualusemail"
+msgstr "消息"
+
+msgid "dualusefolder"
+msgstr "文件夹"
+
+msgid "generate"
+msgstr "生成"
+
+msgid "encryptioncreatekey"
+msgstr "创建新密钥对"
+
+msgid "openmailvelopesettings"
+msgstr "打开 Mailvelope 设置"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr "你的 Mailvelope 钥匙环中有 $nr 项符合条件的 PGP 私钥："
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr "你的 Mailvelope 插件钥匙环中没有符合此发件人身份的 PGP 私钥。你想要生成一个以启用加密消息吗？"
+
+msgid "encryption"
+msgstr "加密"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "排序"
+
+msgid "sortasc"
+msgstr "递增排序"
+
+msgid "sortdesc"
+msgstr "递减排序"
+
+msgid "undo"
+msgstr "撤销"
+
+msgid "installedplugins"
+msgstr "已安装插件"
+
+msgid "plugin"
+msgstr "插件"
+
+msgid "version"
+msgstr "版本"
+
+msgid "source"
+msgstr "源代码"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "许可协议"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "支持"
+
+msgid "savedsearches"
+msgstr "已保存的搜索"
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "英语"
+
+msgid "westerneuropean"
+msgstr "西欧"
+
+msgid "easterneuropean"
+msgstr "东欧"
+
+msgid "southeasterneuropean"
+msgstr "东南欧"
+
+msgid "baltic"
+msgstr "波罗的语"
+
+msgid "cyrillic"
+msgstr "西里尔语"
+
+msgid "arabic"
+msgstr "阿拉伯语"
+
+msgid "greek"
+msgstr "希腊语"
+
+msgid "hebrew"
+msgstr "希伯来语"
+
+msgid "turkish"
+msgstr "土耳其语"
+
+msgid "nordic"
+msgstr "北欧"
+
+msgid "thai"
+msgstr "泰语"
+
+msgid "celtic"
+msgstr "塞尔特语"
+
+msgid "vietnamese"
+msgstr "越南语"
+
+msgid "japanese"
+msgstr "日文"
+
+msgid "korean"
+msgstr "韩语"
+
+msgid "chinese"
+msgstr "中文"
+
+msgid "arialabeltopnav"
+msgstr "窗口控制"
+
+msgid "arialabeltasknav"
+msgstr "应用事务"
+
+msgid "arialabeltoolbar"
+msgstr "应用工具栏"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "活动事务"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "邮件列表过滤器"
+
+msgid "arialabelmailsearchform"
+msgstr "邮件信息查询表单"
+
+msgid "arialabelcontactsearchform"
+msgstr "联系人查询表单"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "邮件查询条件"
+
+msgid "arialabelquicksearchbox"
+msgstr "查询条件"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "文件夹列出过滤器"
+
+msgid "arialabelfoldersearchform"
+msgstr "文件夹搜索自"
+
+msgid "arialabelfolderlist"
+msgstr "邮件文件夹选择"
+
+msgid "arialabelmessagelist"
+msgstr "邮件信息列表"
+
+msgid "arialabelmailpreviewframe"
+msgstr "邮件预览"
+
+msgid "arialabelmailboxmenu"
+msgstr "文件夹操作菜单"
+
+msgid "arialabellistselectmenu"
+msgstr "列表选择菜单"
+
+msgid "arialabelthreadselectmenu"
+msgstr "线程列表菜单"
+
+msgid "arialabelmessagelistoptions"
+msgstr "邮件列表显示和排序选项"
+
+msgid "arialabelmailimportdialog"
+msgstr "邮件导入对话框"
+
+msgid "arialabelmessagenav"
+msgstr "邮件导航"
+
+msgid "arialabelmessagebody"
+msgstr "邮件正文"
+
+msgid "arialabelmessageactions"
+msgstr "邮件动作"
+
+msgid "arialabelcontactquicksearch"
+msgstr "联系人查询表单"
+
+msgid "arialabelcontactsearchbox"
+msgstr "联系人查询条件"
+
+msgid "arialabelmessageheaders"
+msgstr "邮件头"
+
+msgid "arialabelforwardingoptions"
+msgstr "转发选项"
+
+msgid "arialabelreplyalloptions"
+msgstr "回复全部选项"
+
+msgid "arialabelmoremessageactions"
+msgstr "更多邮件选项"
+
+msgid "arialabelmorecontactactions"
+msgstr "更多联系人操作"
+
+msgid "arialabelmarkmessagesas"
+msgstr "标记选中邮件为..."
+
+msgid "arialabelcomposeoptions"
+msgstr "布局选项"
+
+msgid "arialabelresponsesmenu"
+msgstr "预设回复菜单"
+
+msgid "arialabelattachmentuploadform"
+msgstr "附件上传表单"
+
+msgid "arialabelattachmentmenu"
+msgstr "附件选项"
+
+msgid "arialabelmailtomenu"
+msgstr "邮件地址选项"
+
+msgid "arialabelattachmentpreview"
+msgstr "附件预览"
+
+msgid "ariasummarycomposecontacts"
+msgstr "选择联系人或组作为收件人"
+
+msgid "arialabelcontactexportoptions"
+msgstr "联系人导出选项"
+
+msgid "arialabelabookgroupoptions"
+msgstr "地址簿/组选项"
+
+msgid "arialabelpreferencesform"
+msgstr "偏好设置表单"
+
+msgid "arialabelidentityeditfrom"
+msgstr "标识编辑表单"
+
+msgid "arialabelresponseeditfrom"
+msgstr "回复编辑表单"
+
+msgid "arialabelsearchterms"
+msgstr "搜索关键词"
+
+msgid "arialabeldropactionmenu"
+msgstr "拖拽选项菜单"
+
+msgid "arialabelheadersmenu"
+msgstr "收件人 (信头) 添加菜单"
+
+msgid "arialabelimagetools"
+msgstr "图片工具"
+
+msgid "helplistnavigation"
+msgstr "列表键盘导航"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"方向键上/下：移动选中/焦点所在行。\n"
+"空格键：选中焦点所在行。\n"
+"Shift + 上/下：再选中上方/下方的行。\n"
+"Ctrl + 空格键：将焦点所在行添加/移除选中。"
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"方向键左/右：展开/折叠消息话题（仅话题模式下）\n"
+"回车键：打开选中/焦点所在消息。\n"
+"删除键：移动选中消息到垃圾箱。"
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "回车：打开选中的联系人"
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "发生错误！"
+
+msgid "messages.loginfailed"
+msgstr "登录失败。"
+
+msgid "messages.cookiesdisabled"
+msgstr "您的浏览器不支持 Cookies。"
+
+msgid "messages.sessionerror"
+msgstr "会话无效或已过期。"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "连接至 IMAP 服务器失败。"
+
+msgid "messages.servererror"
+msgstr "服务器错误！"
+
+msgid "messages.servererrormsg"
+msgstr "服务器错误：$msg"
+
+msgid "messages.accountlocked"
+msgstr "登录失败太多次。请稍后再试。"
+
+msgid "messages.connerror"
+msgstr "连接错误(连接服务器失败)！"
+
+msgid "messages.dberror"
+msgstr "数据库错误！"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "弹出窗口被屏蔽！"
+
+msgid "messages.requesttimedout"
+msgstr "请求超时"
+
+msgid "messages.errorreadonly"
+msgstr "无法完成操作。文件夹为只读。"
+
+msgid "messages.errornoperm"
+msgstr "无法完成操作。没有权限。"
+
+msgid "messages.erroroverquota"
+msgstr "无法完成操作。没有足够的磁盘空间。"
+
+msgid "messages.erroroverquotadelete"
+msgstr "没有足够的磁盘空间。请使用 SHIFT+DEL 删除一部分邮件。"
+
+msgid "messages.invalidrequest"
+msgstr "请求无效！未保存数据。"
+
+msgid "messages.invalidhost"
+msgstr "无效的主机名。"
+
+msgid "messages.nomessagesfound"
+msgstr "此邮件夹内无邮件。"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "邮箱为空"
+
+msgid "messages.nomessages"
+msgstr "无邮件"
+
+msgid "messages.refreshing"
+msgstr "正在刷新..."
+
+msgid "messages.loading"
+msgstr "正在载入..."
+
+msgid "messages.uploading"
+msgstr "正在上传文件..."
+
+msgid "messages.attaching"
+msgstr "正在附加文件..."
+
+msgid "messages.uploadingmany"
+msgstr "正在上传文件..."
+
+msgid "messages.loadingdata"
+msgstr "正在载入数据..."
+
+msgid "messages.checkingmail"
+msgstr "正在检查新邮件..."
+
+msgid "messages.sendingmessage"
+msgstr "正在发送..."
+
+msgid "messages.messagesent"
+msgstr "邮件已发送。"
+
+msgid "messages.savingmessage"
+msgstr "正在保存邮件..."
+
+msgid "messages.messagesaved"
+msgstr "邮件已暂存至草稿箱。"
+
+msgid "messages.successfullysaved"
+msgstr "保存成功。"
+
+msgid "messages.savingresponse"
+msgstr "正在保存响应文本..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "是否确认删除响应文本?"
+
+msgid "messages.nocontactselected"
+msgstr "你还没有选择联系人"
+
+msgid "messages.addedsuccessfully"
+msgstr "联系人已添加。"
+
+msgid "messages.contactexists"
+msgstr "已经具有此电子邮件地址的联系人已经存在。"
+
+msgid "messages.contactnameexists"
+msgstr "已存在同名联系人。"
+
+msgid "messages.blockedimages"
+msgstr "由于保护隐私，此邮件中的远程图片未予显示。"
+
+msgid "messages.blockedresources"
+msgstr "为了保护您的隐私，远程资源已被屏蔽。"
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "抱歉！该邮件已被加密，无法显示。"
+
+msgid "messages.externalmessagedecryption"
+msgstr "这是一封已加密的邮件，并且不能用您的浏览器扩展解密。"
+
+msgid "messages.nopubkeyfor"
+msgstr "没有找到 $email 的有效公钥"
+
+msgid "messages.nopubkeyforsender"
+msgstr "在您的发件人身份中没有找到有效公钥。您想只对收件人加密此邮件吗？"
+
+msgid "messages.encryptnoattachments"
+msgstr "已经上传的附件不能加密。请在加密编辑器中重新添加它们。"
+
+msgid "messages.searchpubkeyservers"
+msgstr "您想在公钥服务器搜索缺失的密钥吗？"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "下列公钥已被找到："
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "未找到联系人。"
+
+msgid "messages.contactnotfound"
+msgstr "未找到指定的联系人。"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "发送失败。"
+
+msgid "messages.senttooquickly"
+msgstr "您需要等待$sec秒才能发送邮件。"
+
+msgid "messages.errorsavingsent"
+msgstr "保存已发送邮件时发生错误。"
+
+msgid "messages.errorsaving"
+msgstr "保存时发生错误。"
+
+msgid "messages.errormoving"
+msgstr "无法移动邮件。"
+
+msgid "messages.errorcopying"
+msgstr "无法复制邮件。"
+
+msgid "messages.errordeleting"
+msgstr "无法删除邮件。"
+
+msgid "messages.errormarking"
+msgstr "无法标记邮件。"
+
+msgid "messages.alerttitle"
+msgstr "注意"
+
+msgid "messages.confirmationtitle"
+msgstr "您确定……"
+
+msgid "messages.deletecontactconfirm"
+msgstr "是否删除选中的联系人？"
+
+msgid "messages.deletegroupconfirm"
+msgstr "是否删除选中的群组?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "是否删除选中的邮件？"
+
+msgid "messages.deletefolderconfirm"
+msgstr "是否删除选中的邮件夹？"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "是否删除当前邮件夹中的全部邮件？"
+
+msgid "messages.contactdeleting"
+msgstr "正在删除联系人..."
+
+msgid "messages.groupdeleting"
+msgstr "正在删除群组..."
+
+msgid "messages.folderdeleting"
+msgstr "正在删除文件夹..."
+
+msgid "messages.foldermoving"
+msgstr "正在移动文件夹..."
+
+msgid "messages.foldersubscribing"
+msgstr "订阅文件夹中..."
+
+msgid "messages.folderunsubscribing"
+msgstr "退订中..."
+
+msgid "messages.formincomplete"
+msgstr "表单未填写完整。"
+
+msgid "messages.noemailwarning"
+msgstr "请输入一个有效的邮件地址。"
+
+msgid "messages.nonamewarning"
+msgstr "请输入名称。"
+
+msgid "messages.nopagesizewarning"
+msgstr "请输入每页显示的邮件数量。"
+
+msgid "messages.nosenderwarning"
+msgstr "请输入发件人的电子邮件地址。"
+
+msgid "messages.recipientsadded"
+msgstr "联系人添加成功"
+
+msgid "messages.norecipientwarning"
+msgstr "至少输入一个收件人。"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "太多公共收件人"
+
+msgid "messages.nosubjectwarning"
+msgstr "主题为空。您要输入一个主题吗？"
+
+msgid "messages.nosubjecttitle"
+msgstr "无主题"
+
+msgid "messages.nobodywarning"
+msgstr "要发送没有正文的邮件吗？"
+
+msgid "messages.notsentwarning"
+msgstr "此消息已发送并且有未保存的更改。您是否要放弃您的更改？"
+
+msgid "messages.restoresavedcomposedata"
+msgstr "您有一封邮件尚未发送.\\n\\nSubject: $subject\\nSaved: $date\\n\\n您是否要恢复这封邮件？"
+
+msgid "messages.nosearchname"
+msgstr "请输入联系人姓名或电子邮件地址。"
+
+msgid "messages.notuploadedwarning"
+msgstr "附件尚未全部上传，请耐心等待或者取消上传。"
+
+msgid "messages.searchsuccessful"
+msgstr "共找到 $nr 封邮件。"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "共找到 $nr 位联系人。"
+
+msgid "messages.searchnomatch"
+msgstr "未找到任何符合条件的邮件。"
+
+msgid "messages.searching"
+msgstr "正在搜索..."
+
+msgid "messages.checking"
+msgstr "正在检查..."
+
+msgid "messages.stillsearching"
+msgstr "仍在搜索中……"
+
+msgid "messages.nospellerrors"
+msgstr "未发现拼写错误。"
+
+msgid "messages.folderdeleted"
+msgstr "删除文件夹成功。"
+
+msgid "messages.foldersubscribed"
+msgstr "订阅文件夹成功。"
+
+msgid "messages.folderunsubscribed"
+msgstr "退订文件夹成功。"
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "删除成功。"
+
+msgid "messages.converting"
+msgstr "格式转换中..."
+
+msgid "messages.messageopenerror"
+msgstr "无法从服务器加载邮件内容。"
+
+msgid "messages.filelinkerror"
+msgstr "附加文件失败。"
+
+msgid "messages.fileuploaderror"
+msgstr "文件上传失败。"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "上传的文件超过了 $size 的大小限制。"
+
+msgid "messages.filecounterror"
+msgstr "您一次最多可以上传 $count 个文件。"
+
+msgid "messages.msgsizeerror"
+msgstr "附加文件失败。邮件超出最大大小 ($size)。"
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "成功复制 $nr 个联系人。"
+
+msgid "messages.movesuccess"
+msgstr "成功移动 $nr 个联系人。"
+
+msgid "messages.copyerror"
+msgstr "无法复制联系人。"
+
+msgid "messages.moveerror"
+msgstr "无法移动联系人。"
+
+msgid "messages.sourceisreadonly"
+msgstr "源地址为只读。"
+
+msgid "messages.errorsavingcontact"
+msgstr "无法保存联系人地址。"
+
+msgid "messages.movingmessage"
+msgstr "正在移动邮件..."
+
+msgid "messages.copyingmessage"
+msgstr "正在复制邮件..."
+
+msgid "messages.copyingcontact"
+msgstr "正在复制联系人..."
+
+msgid "messages.movingcontact"
+msgstr "移动联系人..."
+
+msgid "messages.deletingmessage"
+msgstr "正在删除邮件..."
+
+msgid "messages.markingmessage"
+msgstr "正在标记邮件..."
+
+msgid "messages.addingmember"
+msgstr "正在添加联系人至群组..."
+
+msgid "messages.removingmember"
+msgstr "正在从群组中删除联系人..."
+
+msgid "messages.receiptsent"
+msgstr "成功发送一个已读回执。"
+
+msgid "messages.errorsendingreceipt"
+msgstr "无法发送已读回执。"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "是否删除该身份？"
+
+msgid "messages.nodeletelastidentity"
+msgstr "无法删除该身份，这是最后一个。"
+
+msgid "messages.forbiddencharacter"
+msgstr "文件夹名包含禁止字符。"
+
+msgid "messages.selectimportfile"
+msgstr "请选择要上传的文件。"
+
+msgid "messages.addresswriterror"
+msgstr "选中的通讯录不可写。"
+
+msgid "messages.contactaddedtogroup"
+msgstr "添加联系人至该群组成功。"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "从该群组移除联系人成功。"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "群组资料没有变更。"
+
+msgid "messages.importwait"
+msgstr "正在导入，请稍后..."
+
+msgid "messages.importformaterror"
+msgstr "导入失败！文件无效。"
+
+msgid "messages.importconfirm"
+msgstr "<b>成功导入 $inserted 联系人</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "成功导入 $nr 条信息"
+
+msgid "messages.importmessageerror"
+msgstr "导入失败！文件无效"
+
+msgid "messages.opnotpermitted"
+msgstr "不允许的操作!"
+
+msgid "messages.nofromaddress"
+msgstr "选定身份中缺少电子邮件地址。"
+
+msgid "messages.editorwarning"
+msgstr "切换编辑模式可能导致文本格式丢失。是否继续？"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr "<b>您的邮件无法发送</b>，因为发生了一个严重的配置错误，请立即联系管理员。"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP 错误 ($code):连接服务器失败。"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP 错误 ($code): 认证失败。"
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP 错误 ($code):添加发件人失败 \"$from\" ($msg)。"
+
+msgid "messages.smtptoerror"
+msgstr "SMTP 错误 ($code): 添加收件人失败 \"$to\" ($msg)。"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP 错误: 无法解析收件人列表。"
+
+msgid "messages.smtputf8error"
+msgstr "SMTP 错误：服务器不支持带 Unicode 字符的邮件地址"
+
+msgid "messages.smtpsizeerror"
+msgstr "SMTP 错误：消息长度超过服务器能接受的长度 ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP 错误: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "无效的电子邮件地址：$email"
+
+msgid "messages.toomanyrecipients"
+msgstr "收件人太多，请减少人数至 $max。"
+
+msgid "messages.maxgroupmembersreached"
+msgstr "组员数量超过最大值 $max。"
+
+msgid "messages.internalerror"
+msgstr "遇到一个内部错误，请重试。"
+
+msgid "messages.contactdelerror"
+msgstr "无法删除联系人。"
+
+msgid "messages.contactdeleted"
+msgstr "删除联系人成功。"
+
+msgid "messages.contactrestoreerror"
+msgstr "无法恢复已删除的联系人。"
+
+msgid "messages.contactrestored"
+msgstr "联系人恢复成功。"
+
+msgid "messages.groupdeleted"
+msgstr "删除群组成功。"
+
+msgid "messages.grouprenamed"
+msgstr "群组改名成功。"
+
+msgid "messages.groupcreated"
+msgstr "成功创建群组"
+
+msgid "messages.savedsearchdeleted"
+msgstr "成功删除保存的搜索"
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "无法删除保存的搜索"
+
+msgid "messages.savedsearchcreated"
+msgstr "成功创建保存的搜索"
+
+msgid "messages.savedsearchcreateerror"
+msgstr "无法创建保存的搜索。"
+
+msgid "messages.messagedeleted"
+msgstr "删除邮件成功。"
+
+msgid "messages.messagemoved"
+msgstr "移动邮件成功。"
+
+msgid "messages.messagemovedtotrash"
+msgstr "邮件已成功移动到已删除邮件。"
+
+msgid "messages.messagecopied"
+msgstr "复制邮件成功"
+
+msgid "messages.messagemarked"
+msgstr "标记邮件成功"
+
+msgid "messages.autocompletechars"
+msgstr "至少需要输入 $min 个字符"
+
+msgid "messages.autocompletemore"
+msgstr "找到太多的结果。请输入更多字符。"
+
+msgid "messages.namecannotbeempty"
+msgstr "必须输入名字"
+
+msgid "messages.nametoolong"
+msgstr "名字太长"
+
+msgid "messages.namedotforbidden"
+msgstr "文件夹名称不能以“点”开头。"
+
+msgid "messages.folderupdated"
+msgstr "成功更新文件夹"
+
+msgid "messages.foldercreated"
+msgstr "成功创建文件夹"
+
+msgid "messages.invalidimageformat"
+msgstr "非法的图像类型。"
+
+msgid "messages.mispellingsfound"
+msgstr "检查到拼写错误。"
+
+msgid "messages.parentnotwritable"
+msgstr "无法创建/转移文件夹至指定的上级文件夹，没有权限。"
+
+msgid "messages.messagetoobig"
+msgstr "邮件过大无法处理。"
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"这个附件很可疑：因为它的真正类型和在消息中声明的类型不一致。如果您不是很信任发件人，请不要打开此附件，因为里面可能包含恶意内容或者病毒。<br/><br/><em>声明类型："
+" $expected ；检测到的类型： $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr "警告：本程序需要 Javascript 支持！请在浏览器设置中启用 Javascript。"
+
+msgid "messages.messageissent"
+msgstr "邮件已发送，但尚未保存。是否现在保存？"
+
+msgid "messages.errnotfound"
+msgstr "文件未找到"
+
+msgid "messages.errnotfoundexplain"
+msgstr "请求资源未找到！"
+
+msgid "messages.errfailedrequest"
+msgstr "请求失败"
+
+msgid "messages.errauthorizationfailed"
+msgstr "授权失败"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "无法验证访问此服务的授权！"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "请求检查失败"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"访问此资源是保护你避免被CSRF攻击。\n"
+"lf 看到此信息，你可能在关闭web应用程序时并未登出服务。\n"
+"\n"
+"现在需要人机交互才能继续。"
+
+msgid "messages.errcontactserveradmin"
+msgstr "请联系你的服务器管理员。"
+
+msgid "messages.clicktoresumesession"
+msgstr "点击此处恢复你之前的会话"
+
+msgid "messages.errcomposesession"
+msgstr "撰写会话错误"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "请求的撰写会话未找到。"
+
+msgid "messages.clicktocompose"
+msgstr "点击这里撰写新邮件"
+
+msgid "messages.nosupporterror"
+msgstr "你的网页浏览器不支持此功能"
+
+msgid "messages.siginserted"
+msgstr "签名插入成功"
+
+msgid "messages.responseinserted"
+msgstr "回复插入成功"
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr "列表为空"
+
+msgid "messages.listusebutton"
+msgstr "请使用 添加 按钮添加新的记录"
+
+msgid "messages.keypaircreatesuccess"
+msgstr "已为 $identity 添加了新的钥匙对"
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

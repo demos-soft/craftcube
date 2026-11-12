@@ -1,0 +1,2832 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr ""
+
+msgid "username"
+msgstr ""
+
+msgid "password"
+msgstr ""
+
+msgid "server"
+msgstr ""
+
+msgid "login"
+msgstr ""
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr ""
+
+msgid "mail"
+msgstr ""
+
+msgid "settings"
+msgstr ""
+
+msgid "addressbook"
+msgstr ""
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr ""
+
+msgid "drafts"
+msgstr ""
+
+msgid "sent"
+msgstr ""
+
+msgid "trash"
+msgstr ""
+
+msgid "junk"
+msgstr ""
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr ""
+
+msgid "from"
+msgstr ""
+
+msgid "sender"
+msgstr ""
+
+msgid "to"
+msgstr ""
+
+msgid "cc"
+msgstr ""
+
+msgid "bcc"
+msgstr ""
+
+msgid "replyto"
+msgstr ""
+
+msgid "followupto"
+msgstr ""
+
+msgid "date"
+msgstr ""
+
+msgid "size"
+msgstr ""
+
+msgid "priority"
+msgstr ""
+
+msgid "organization"
+msgstr ""
+
+msgid "readstatus"
+msgstr ""
+
+msgid "listoptions"
+msgstr ""
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr ""
+
+msgid "messagesfromto"
+msgstr ""
+
+msgid "threadsfromto"
+msgstr ""
+
+msgid "messagenrof"
+msgstr ""
+
+msgid "fromtoshort"
+msgstr ""
+
+msgid "copy"
+msgstr ""
+
+msgid "move"
+msgstr ""
+
+msgid "moveto"
+msgstr ""
+
+msgid "copyto"
+msgstr ""
+
+msgid "download"
+msgstr ""
+
+msgid "open"
+msgstr ""
+
+msgid "showattachment"
+msgstr ""
+
+msgid "showanyway"
+msgstr ""
+
+msgid "filename"
+msgstr ""
+
+msgid "filesize"
+msgstr ""
+
+msgid "addtoaddressbook"
+msgstr ""
+
+msgid "sun"
+msgstr ""
+
+msgid "mon"
+msgstr ""
+
+msgid "tue"
+msgstr ""
+
+msgid "wed"
+msgstr ""
+
+msgid "thu"
+msgstr ""
+
+msgid "fri"
+msgstr ""
+
+msgid "sat"
+msgstr ""
+
+msgid "sunday"
+msgstr ""
+
+msgid "monday"
+msgstr ""
+
+msgid "tuesday"
+msgstr ""
+
+msgid "wednesday"
+msgstr ""
+
+msgid "thursday"
+msgstr ""
+
+msgid "friday"
+msgstr ""
+
+msgid "saturday"
+msgstr ""
+
+msgid "jan"
+msgstr ""
+
+msgid "feb"
+msgstr ""
+
+msgid "mar"
+msgstr ""
+
+msgid "apr"
+msgstr ""
+
+msgid "may"
+msgstr ""
+
+msgid "jun"
+msgstr ""
+
+msgid "jul"
+msgstr ""
+
+msgid "aug"
+msgstr ""
+
+msgid "sep"
+msgstr ""
+
+msgid "oct"
+msgstr ""
+
+msgid "nov"
+msgstr ""
+
+msgid "dec"
+msgstr ""
+
+msgid "longjan"
+msgstr ""
+
+msgid "longfeb"
+msgstr ""
+
+msgid "longmar"
+msgstr ""
+
+msgid "longapr"
+msgstr ""
+
+msgid "longmay"
+msgstr ""
+
+msgid "longjun"
+msgstr ""
+
+msgid "longjul"
+msgstr ""
+
+msgid "longaug"
+msgstr ""
+
+msgid "longsep"
+msgstr ""
+
+msgid "longoct"
+msgstr ""
+
+msgid "longnov"
+msgstr ""
+
+msgid "longdec"
+msgstr ""
+
+msgid "today"
+msgstr ""
+
+msgid "refresh"
+msgstr ""
+
+msgid "checkmail"
+msgstr ""
+
+msgid "compose"
+msgstr ""
+
+msgid "writenewmessage"
+msgstr ""
+
+msgid "reply"
+msgstr ""
+
+msgid "replytomessage"
+msgstr ""
+
+msgid "replytoallmessage"
+msgstr ""
+
+msgid "replyall"
+msgstr ""
+
+msgid "replylist"
+msgstr ""
+
+msgid "forward"
+msgstr ""
+
+msgid "forwardinline"
+msgstr ""
+
+msgid "forwardattachment"
+msgstr ""
+
+msgid "forwardmessage"
+msgstr ""
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr ""
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr ""
+
+msgid "printmessage"
+msgstr ""
+
+msgid "previousmessage"
+msgstr ""
+
+msgid "firstmessage"
+msgstr ""
+
+msgid "nextmessage"
+msgstr ""
+
+msgid "lastmessage"
+msgstr ""
+
+msgid "backtolist"
+msgstr ""
+
+msgid "viewsource"
+msgstr ""
+
+msgid "mark"
+msgstr ""
+
+msgid "markmessages"
+msgstr ""
+
+msgid "markread"
+msgstr ""
+
+msgid "markunread"
+msgstr ""
+
+msgid "markflagged"
+msgstr ""
+
+msgid "markunflagged"
+msgstr ""
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr ""
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr ""
+
+msgid "more"
+msgstr ""
+
+msgid "back"
+msgstr ""
+
+msgid "options"
+msgstr ""
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "next"
+msgstr ""
+
+msgid "select"
+msgstr ""
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr ""
+
+msgid "none"
+msgstr ""
+
+msgid "currpage"
+msgstr ""
+
+msgid "isread"
+msgstr ""
+
+msgid "unread"
+msgstr ""
+
+msgid "flagged"
+msgstr ""
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr ""
+
+msgid "withattachment"
+msgstr ""
+
+msgid "deleted"
+msgstr ""
+
+msgid "undeleted"
+msgstr ""
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr ""
+
+msgid "invert"
+msgstr ""
+
+msgid "filter"
+msgstr ""
+
+msgid "list"
+msgstr ""
+
+msgid "threads"
+msgstr ""
+
+msgid "expand-all"
+msgstr ""
+
+msgid "expand-unread"
+msgstr ""
+
+msgid "collapse-all"
+msgstr ""
+
+msgid "threaded"
+msgstr ""
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr ""
+
+msgid "do_expand"
+msgstr ""
+
+msgid "expand_only_unread"
+msgstr ""
+
+msgid "fromto"
+msgstr ""
+
+msgid "flag"
+msgstr ""
+
+msgid "attachment"
+msgstr ""
+
+msgid "nonesort"
+msgstr ""
+
+msgid "sentdate"
+msgstr ""
+
+msgid "arrival"
+msgstr ""
+
+msgid "asc"
+msgstr ""
+
+msgid "desc"
+msgstr ""
+
+msgid "listcolumns"
+msgstr ""
+
+msgid "listsorting"
+msgstr ""
+
+msgid "listorder"
+msgstr ""
+
+msgid "listmode"
+msgstr ""
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr ""
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr ""
+
+msgid "compact"
+msgstr ""
+
+msgid "empty"
+msgstr ""
+
+msgid "importmessages"
+msgstr ""
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr ""
+
+msgid "unknown"
+msgstr ""
+
+msgid "unlimited"
+msgstr ""
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr ""
+
+msgid "quotastorage"
+msgstr ""
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr ""
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr ""
+
+msgid "searchmod"
+msgstr ""
+
+msgid "msgtext"
+msgstr ""
+
+msgid "body"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "namex"
+msgstr ""
+
+msgid "searchscope"
+msgstr ""
+
+msgid "currentfolder"
+msgstr ""
+
+msgid "subfolders"
+msgstr ""
+
+msgid "allfolders"
+msgstr ""
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr ""
+
+msgid "emlsave"
+msgstr ""
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr ""
+
+msgid "send"
+msgstr ""
+
+msgid "sendmessage"
+msgstr ""
+
+msgid "savemessage"
+msgstr ""
+
+msgid "addattachment"
+msgstr ""
+
+msgid "charset"
+msgstr ""
+
+msgid "editortype"
+msgstr ""
+
+msgid "returnreceipt"
+msgstr ""
+
+msgid "dsn"
+msgstr ""
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr ""
+
+msgid "originalmessage"
+msgstr ""
+
+msgid "selectimage"
+msgstr ""
+
+msgid "addimage"
+msgstr ""
+
+msgid "selectmedia"
+msgstr ""
+
+msgid "addmedia"
+msgstr ""
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr ""
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr ""
+
+msgid "spellcheck"
+msgstr ""
+
+msgid "checkspelling"
+msgstr ""
+
+msgid "resumeediting"
+msgstr ""
+
+msgid "revertto"
+msgstr ""
+
+msgid "restore"
+msgstr ""
+
+msgid "restoremessage"
+msgstr ""
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr ""
+
+msgid "insertresponse"
+msgstr ""
+
+msgid "manageresponses"
+msgstr ""
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr ""
+
+msgid "editresponse"
+msgstr ""
+
+msgid "editresponses"
+msgstr ""
+
+msgid "responsename"
+msgstr ""
+
+msgid "responsetext"
+msgstr ""
+
+msgid "attach"
+msgstr ""
+
+msgid "attachments"
+msgstr ""
+
+msgid "upload"
+msgstr ""
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr ""
+
+msgid "messageoptions"
+msgstr ""
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr ""
+
+msgid "lowest"
+msgstr ""
+
+msgid "normal"
+msgstr ""
+
+msgid "high"
+msgstr ""
+
+msgid "highest"
+msgstr ""
+
+msgid "nosubject"
+msgstr ""
+
+msgid "showimages"
+msgstr ""
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr ""
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr ""
+
+msgid "andnmore"
+msgstr ""
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr ""
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr ""
+
+msgid "plaintoggle"
+msgstr ""
+
+msgid "savesentmessagein"
+msgstr ""
+
+msgid "dontsave"
+msgstr ""
+
+msgid "maxuploadsize"
+msgstr ""
+
+msgid "addcc"
+msgstr ""
+
+msgid "addbcc"
+msgstr ""
+
+msgid "addreplyto"
+msgstr ""
+
+msgid "addfollowupto"
+msgstr ""
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+
+msgid "receiptread"
+msgstr ""
+
+msgid "yourmessage"
+msgstr ""
+
+msgid "receiptnote"
+msgstr ""
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr ""
+
+msgid "firstname"
+msgstr ""
+
+msgid "surname"
+msgstr ""
+
+msgid "middlename"
+msgstr ""
+
+msgid "nameprefix"
+msgstr ""
+
+msgid "namesuffix"
+msgstr ""
+
+msgid "nickname"
+msgstr ""
+
+msgid "jobtitle"
+msgstr ""
+
+msgid "department"
+msgstr ""
+
+msgid "gender"
+msgstr ""
+
+msgid "maidenname"
+msgstr ""
+
+msgid "email"
+msgstr ""
+
+msgid "phone"
+msgstr ""
+
+msgid "address"
+msgstr ""
+
+msgid "street"
+msgstr ""
+
+msgid "locality"
+msgstr ""
+
+msgid "zipcode"
+msgstr ""
+
+msgid "region"
+msgstr ""
+
+msgid "country"
+msgstr ""
+
+msgid "birthday"
+msgstr ""
+
+msgid "anniversary"
+msgstr ""
+
+msgid "website"
+msgstr ""
+
+msgid "instantmessenger"
+msgstr ""
+
+msgid "notes"
+msgstr ""
+
+msgid "male"
+msgstr ""
+
+msgid "female"
+msgstr ""
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr ""
+
+msgid "assistant"
+msgstr ""
+
+msgid "spouse"
+msgstr ""
+
+msgid "allfields"
+msgstr ""
+
+msgid "search"
+msgstr ""
+
+msgid "searchresult"
+msgstr ""
+
+msgid "advsearch"
+msgstr ""
+
+msgid "advanced"
+msgstr ""
+
+msgid "other"
+msgstr ""
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr ""
+
+msgid "typework"
+msgstr ""
+
+msgid "typeother"
+msgstr ""
+
+msgid "typemobile"
+msgstr ""
+
+msgid "typemain"
+msgstr ""
+
+msgid "typehomefax"
+msgstr ""
+
+msgid "typeworkfax"
+msgstr ""
+
+msgid "typecar"
+msgstr ""
+
+msgid "typepager"
+msgstr ""
+
+msgid "typevideo"
+msgstr ""
+
+msgid "typeassistant"
+msgstr ""
+
+msgid "typehomepage"
+msgstr ""
+
+msgid "typeblog"
+msgstr ""
+
+msgid "typeprofile"
+msgstr ""
+
+msgid "addfield"
+msgstr ""
+
+msgid "addcontact"
+msgstr ""
+
+msgid "editcontact"
+msgstr ""
+
+msgid "contacts"
+msgstr ""
+
+msgid "contactproperties"
+msgstr ""
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr ""
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr ""
+
+msgid "edit"
+msgstr ""
+
+msgid "cancel"
+msgstr ""
+
+msgid "save"
+msgstr ""
+
+msgid "delete"
+msgstr ""
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr ""
+
+msgid "addphoto"
+msgstr ""
+
+msgid "replacephoto"
+msgstr ""
+
+msgid "uploadphoto"
+msgstr ""
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr ""
+
+msgid "composeto"
+msgstr ""
+
+msgid "contactsfromto"
+msgstr ""
+
+msgid "print"
+msgstr ""
+
+msgid "export"
+msgstr ""
+
+msgid "exportall"
+msgstr ""
+
+msgid "exportsel"
+msgstr ""
+
+msgid "exportvcards"
+msgstr ""
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr ""
+
+msgid "groupdelete"
+msgstr ""
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr ""
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr ""
+
+msgid "firstpage"
+msgstr ""
+
+msgid "nextpage"
+msgstr ""
+
+msgid "lastpage"
+msgstr ""
+
+msgid "group"
+msgstr ""
+
+msgid "groups"
+msgstr ""
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr ""
+
+msgid "searchsave"
+msgstr ""
+
+msgid "searchdelete"
+msgstr ""
+
+msgid "import"
+msgstr ""
+
+msgid "importcontacts"
+msgstr ""
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr ""
+
+msgid "importreplace"
+msgstr ""
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr ""
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr ""
+
+msgid "about"
+msgstr ""
+
+msgid "preferences"
+msgstr ""
+
+msgid "userpreferences"
+msgstr ""
+
+msgid "editpreferences"
+msgstr ""
+
+msgid "identities"
+msgstr ""
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr ""
+
+msgid "defaultcharset"
+msgstr ""
+
+msgid "htmlmessage"
+msgstr ""
+
+msgid "messagepart"
+msgstr ""
+
+msgid "digitalsig"
+msgstr ""
+
+msgid "dateformat"
+msgstr ""
+
+msgid "timeformat"
+msgstr ""
+
+msgid "prettydate"
+msgstr ""
+
+msgid "setdefault"
+msgstr ""
+
+msgid "autodetect"
+msgstr ""
+
+msgid "language"
+msgstr ""
+
+msgid "timezone"
+msgstr ""
+
+msgid "pagesize"
+msgstr ""
+
+msgid "signature"
+msgstr ""
+
+msgid "dstactive"
+msgstr ""
+
+msgid "showinextwin"
+msgstr ""
+
+msgid "composeextwin"
+msgstr ""
+
+msgid "htmleditor"
+msgstr ""
+
+msgid "htmlonreply"
+msgstr ""
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr ""
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr ""
+
+msgid "skin"
+msgstr ""
+
+msgid "logoutclear"
+msgstr ""
+
+msgid "logoutcompact"
+msgstr ""
+
+msgid "uisettings"
+msgstr ""
+
+msgid "serversettings"
+msgstr ""
+
+msgid "mailboxview"
+msgstr ""
+
+msgid "mdnrequests"
+msgstr ""
+
+msgid "askuser"
+msgstr ""
+
+msgid "autosend"
+msgstr ""
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr ""
+
+msgid "flagfordeletion"
+msgstr ""
+
+msgid "skipdeleted"
+msgstr ""
+
+msgid "deletealways"
+msgstr ""
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr ""
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr ""
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr ""
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr ""
+
+msgid "autosavedraft"
+msgstr ""
+
+msgid "everynminutes"
+msgstr ""
+
+msgid "refreshinterval"
+msgstr ""
+
+msgid "never"
+msgstr ""
+
+msgid "immediately"
+msgstr ""
+
+msgid "messagesdisplaying"
+msgstr ""
+
+msgid "messagescomposition"
+msgstr ""
+
+msgid "mimeparamfolding"
+msgstr ""
+
+msgid "2231folding"
+msgstr ""
+
+msgid "miscfolding"
+msgstr ""
+
+msgid "2047folding"
+msgstr ""
+
+msgid "force7bit"
+msgstr ""
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr ""
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr ""
+
+msgid "checkallfolders"
+msgstr ""
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr ""
+
+msgid "browseroptions"
+msgstr ""
+
+msgid "section"
+msgstr ""
+
+msgid "maintenance"
+msgstr ""
+
+msgid "newmessage"
+msgstr ""
+
+msgid "signatureoptions"
+msgstr ""
+
+msgid "whenreplying"
+msgstr ""
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr ""
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr ""
+
+msgid "replyremovesignature"
+msgstr ""
+
+msgid "autoaddsignature"
+msgstr ""
+
+msgid "newmessageonly"
+msgstr ""
+
+msgid "replyandforwardonly"
+msgstr ""
+
+msgid "insertsignature"
+msgstr ""
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr ""
+
+msgid "reqmdn"
+msgstr ""
+
+msgid "reqdsn"
+msgstr ""
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr ""
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr ""
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr ""
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr ""
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr ""
+
+msgid "asattachment"
+msgstr ""
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr ""
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr ""
+
+msgid "folders"
+msgstr ""
+
+msgid "foldername"
+msgstr ""
+
+msgid "subscribed"
+msgstr ""
+
+msgid "messagecount"
+msgstr ""
+
+msgid "create"
+msgstr ""
+
+msgid "createfolder"
+msgstr ""
+
+msgid "managefolders"
+msgstr ""
+
+msgid "specialfolders"
+msgstr ""
+
+msgid "properties"
+msgstr ""
+
+msgid "folderproperties"
+msgstr ""
+
+msgid "parentfolder"
+msgstr ""
+
+msgid "location"
+msgstr ""
+
+msgid "info"
+msgstr ""
+
+msgid "getfoldersize"
+msgstr ""
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr ""
+
+msgid "personalfolder"
+msgstr ""
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr ""
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr ""
+
+msgid "sortasc"
+msgstr ""
+
+msgid "sortdesc"
+msgstr ""
+
+msgid "undo"
+msgstr ""
+
+msgid "installedplugins"
+msgstr ""
+
+msgid "plugin"
+msgstr ""
+
+msgid "version"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr ""
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr ""
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr ""
+
+msgid "KB"
+msgstr ""
+
+msgid "MB"
+msgstr ""
+
+msgid "GB"
+msgstr ""
+
+msgid "unicode"
+msgstr ""
+
+msgid "english"
+msgstr ""
+
+msgid "westerneuropean"
+msgstr ""
+
+msgid "easterneuropean"
+msgstr ""
+
+msgid "southeasterneuropean"
+msgstr ""
+
+msgid "baltic"
+msgstr ""
+
+msgid "cyrillic"
+msgstr ""
+
+msgid "arabic"
+msgstr ""
+
+msgid "greek"
+msgstr ""
+
+msgid "hebrew"
+msgstr ""
+
+msgid "turkish"
+msgstr ""
+
+msgid "nordic"
+msgstr ""
+
+msgid "thai"
+msgstr ""
+
+msgid "celtic"
+msgstr ""
+
+msgid "vietnamese"
+msgstr ""
+
+msgid "japanese"
+msgstr ""
+
+msgid "korean"
+msgstr ""
+
+msgid "chinese"
+msgstr ""
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr ""
+
+msgid "messages.loginfailed"
+msgstr ""
+
+msgid "messages.cookiesdisabled"
+msgstr ""
+
+msgid "messages.sessionerror"
+msgstr ""
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr ""
+
+msgid "messages.servererror"
+msgstr ""
+
+msgid "messages.servererrormsg"
+msgstr ""
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr ""
+
+msgid "messages.dberror"
+msgstr ""
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr ""
+
+msgid "messages.errorreadonly"
+msgstr ""
+
+msgid "messages.errornoperm"
+msgstr ""
+
+msgid "messages.erroroverquota"
+msgstr ""
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+
+msgid "messages.invalidrequest"
+msgstr ""
+
+msgid "messages.invalidhost"
+msgstr ""
+
+msgid "messages.nomessagesfound"
+msgstr ""
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr ""
+
+msgid "messages.nomessages"
+msgstr ""
+
+msgid "messages.refreshing"
+msgstr ""
+
+msgid "messages.loading"
+msgstr ""
+
+msgid "messages.uploading"
+msgstr ""
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr ""
+
+msgid "messages.loadingdata"
+msgstr ""
+
+msgid "messages.checkingmail"
+msgstr ""
+
+msgid "messages.sendingmessage"
+msgstr ""
+
+msgid "messages.messagesent"
+msgstr ""
+
+msgid "messages.savingmessage"
+msgstr ""
+
+msgid "messages.messagesaved"
+msgstr ""
+
+msgid "messages.successfullysaved"
+msgstr ""
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr ""
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr ""
+
+msgid "messages.blockedimages"
+msgstr ""
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr ""
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr ""
+
+msgid "messages.contactnotfound"
+msgstr ""
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr ""
+
+msgid "messages.senttooquickly"
+msgstr ""
+
+msgid "messages.errorsavingsent"
+msgstr ""
+
+msgid "messages.errorsaving"
+msgstr ""
+
+msgid "messages.errormoving"
+msgstr ""
+
+msgid "messages.errorcopying"
+msgstr ""
+
+msgid "messages.errordeleting"
+msgstr ""
+
+msgid "messages.errormarking"
+msgstr ""
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr ""
+
+msgid "messages.deletegroupconfirm"
+msgstr ""
+
+msgid "messages.deletemessagesconfirm"
+msgstr ""
+
+msgid "messages.deletefolderconfirm"
+msgstr ""
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr ""
+
+msgid "messages.contactdeleting"
+msgstr ""
+
+msgid "messages.groupdeleting"
+msgstr ""
+
+msgid "messages.folderdeleting"
+msgstr ""
+
+msgid "messages.foldermoving"
+msgstr ""
+
+msgid "messages.foldersubscribing"
+msgstr ""
+
+msgid "messages.folderunsubscribing"
+msgstr ""
+
+msgid "messages.formincomplete"
+msgstr ""
+
+msgid "messages.noemailwarning"
+msgstr ""
+
+msgid "messages.nonamewarning"
+msgstr ""
+
+msgid "messages.nopagesizewarning"
+msgstr ""
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr ""
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr ""
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr ""
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr ""
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+
+msgid "messages.searchsuccessful"
+msgstr ""
+
+msgid "messages.contactsearchsuccessful"
+msgstr ""
+
+msgid "messages.searchnomatch"
+msgstr ""
+
+msgid "messages.searching"
+msgstr ""
+
+msgid "messages.checking"
+msgstr ""
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr ""
+
+msgid "messages.folderdeleted"
+msgstr ""
+
+msgid "messages.foldersubscribed"
+msgstr ""
+
+msgid "messages.folderunsubscribed"
+msgstr ""
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr ""
+
+msgid "messages.converting"
+msgstr ""
+
+msgid "messages.messageopenerror"
+msgstr ""
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr ""
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr ""
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr ""
+
+msgid "messages.moveerror"
+msgstr ""
+
+msgid "messages.sourceisreadonly"
+msgstr ""
+
+msgid "messages.errorsavingcontact"
+msgstr ""
+
+msgid "messages.movingmessage"
+msgstr ""
+
+msgid "messages.copyingmessage"
+msgstr ""
+
+msgid "messages.copyingcontact"
+msgstr ""
+
+msgid "messages.movingcontact"
+msgstr ""
+
+msgid "messages.deletingmessage"
+msgstr ""
+
+msgid "messages.markingmessage"
+msgstr ""
+
+msgid "messages.addingmember"
+msgstr ""
+
+msgid "messages.removingmember"
+msgstr ""
+
+msgid "messages.receiptsent"
+msgstr ""
+
+msgid "messages.errorsendingreceipt"
+msgstr ""
+
+msgid "messages.deleteidentityconfirm"
+msgstr ""
+
+msgid "messages.nodeletelastidentity"
+msgstr ""
+
+msgid "messages.forbiddencharacter"
+msgstr ""
+
+msgid "messages.selectimportfile"
+msgstr ""
+
+msgid "messages.addresswriterror"
+msgstr ""
+
+msgid "messages.contactaddedtogroup"
+msgstr ""
+
+msgid "messages.contactremovedfromgroup"
+msgstr ""
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr ""
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr ""
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+
+msgid "messages.smtpconnerror"
+msgstr ""
+
+msgid "messages.smtpautherror"
+msgstr ""
+
+msgid "messages.smtpfromerror"
+msgstr ""
+
+msgid "messages.smtptoerror"
+msgstr ""
+
+msgid "messages.smtprecipientserror"
+msgstr ""
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr ""
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+
+msgid "messages.maxgroupmembersreached"
+msgstr ""
+
+msgid "messages.internalerror"
+msgstr ""
+
+msgid "messages.contactdelerror"
+msgstr ""
+
+msgid "messages.contactdeleted"
+msgstr ""
+
+msgid "messages.contactrestoreerror"
+msgstr ""
+
+msgid "messages.contactrestored"
+msgstr ""
+
+msgid "messages.groupdeleted"
+msgstr ""
+
+msgid "messages.grouprenamed"
+msgstr ""
+
+msgid "messages.groupcreated"
+msgstr ""
+
+msgid "messages.savedsearchdeleted"
+msgstr ""
+
+msgid "messages.savedsearchdeleteerror"
+msgstr ""
+
+msgid "messages.savedsearchcreated"
+msgstr ""
+
+msgid "messages.savedsearchcreateerror"
+msgstr ""
+
+msgid "messages.messagedeleted"
+msgstr ""
+
+msgid "messages.messagemoved"
+msgstr ""
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr ""
+
+msgid "messages.messagemarked"
+msgstr ""
+
+msgid "messages.autocompletechars"
+msgstr ""
+
+msgid "messages.autocompletemore"
+msgstr ""
+
+msgid "messages.namecannotbeempty"
+msgstr ""
+
+msgid "messages.nametoolong"
+msgstr ""
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr ""
+
+msgid "messages.foldercreated"
+msgstr ""
+
+msgid "messages.invalidimageformat"
+msgstr ""
+
+msgid "messages.mispellingsfound"
+msgstr ""
+
+msgid "messages.parentnotwritable"
+msgstr ""
+
+msgid "messages.messagetoobig"
+msgstr ""
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

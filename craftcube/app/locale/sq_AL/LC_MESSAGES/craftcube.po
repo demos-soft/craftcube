@@ -1,0 +1,2913 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: sq_AL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Mirë se vini në $product"
+
+msgid "username"
+msgstr "Emër përdoruesi"
+
+msgid "password"
+msgstr "Fjalëkalimi"
+
+msgid "server"
+msgstr "Shërbyes"
+
+msgid "login"
+msgstr "Hyrje"
+
+msgid "oauthlogin"
+msgstr "Hyrje me $provider"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "logout"
+msgstr "Dalje"
+
+msgid "mail"
+msgstr "Postë"
+
+msgid "settings"
+msgstr "Rregullime"
+
+msgid "addressbook"
+msgstr "Libër Adresash"
+
+msgid "darkmode"
+msgstr "Mënyrë e Errët"
+
+msgid "lightmode"
+msgstr "Mënyra e Çelët"
+
+msgid "inbox"
+msgstr "Të marrë"
+
+msgid "drafts"
+msgstr "Skica"
+
+msgid "sent"
+msgstr "Të dërguar"
+
+msgid "trash"
+msgstr "Hedhurina"
+
+msgid "junk"
+msgstr "Të pavlerë"
+
+msgid "show_real_foldernames"
+msgstr "Shfaqi emrat realë për dosjet speciale"
+
+msgid "subject"
+msgstr "Subjekt"
+
+msgid "from"
+msgstr "Nga"
+
+msgid "sender"
+msgstr "Dërguesi"
+
+msgid "to"
+msgstr "Për"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Përgjigjuni-Te"
+
+msgid "followupto"
+msgstr "Ndiqeni-Te"
+
+msgid "date"
+msgstr "Datë"
+
+msgid "size"
+msgstr "Madhësi"
+
+msgid "priority"
+msgstr "Përparësi"
+
+msgid "organization"
+msgstr "Ent"
+
+msgid "readstatus"
+msgstr "Gjendje leximi"
+
+msgid "listoptions"
+msgstr "Mundësi liste…"
+
+msgid "listoptionstitle"
+msgstr "Mundësi liste"
+
+msgid "mailboxlist"
+msgstr "Dosje"
+
+msgid "messagesfromto"
+msgstr "Mesazhet nga $from deri në $to nga $count gjithsej"
+
+msgid "threadsfromto"
+msgstr "Rrjedhat nga $from deri në $to nga $count gjithsej"
+
+msgid "messagenrof"
+msgstr "Mesazhi $nr nga $count gjithsej"
+
+msgid "fromtoshort"
+msgstr "$from – $to nga $count gjithsej"
+
+msgid "copy"
+msgstr "Kopjoje"
+
+msgid "move"
+msgstr "Lëvize"
+
+msgid "moveto"
+msgstr "Shpjere te..."
+
+msgid "copyto"
+msgstr "Kopjoje te..."
+
+msgid "download"
+msgstr "Shkarkoje"
+
+msgid "open"
+msgstr "Hape"
+
+msgid "showattachment"
+msgstr "Shfaqe"
+
+msgid "showanyway"
+msgstr "Shfaqe sido qoftë"
+
+msgid "filename"
+msgstr "Emër kartele"
+
+msgid "filesize"
+msgstr "Madhësi kartele"
+
+msgid "addtoaddressbook"
+msgstr "Shtoje në librin e adresave"
+
+msgid "sun"
+msgstr "Die"
+
+msgid "mon"
+msgstr "Hën"
+
+msgid "tue"
+msgstr "Mar"
+
+msgid "wed"
+msgstr "Mër"
+
+msgid "thu"
+msgstr "Enj"
+
+msgid "fri"
+msgstr "Pre"
+
+msgid "sat"
+msgstr "Sht"
+
+msgid "sunday"
+msgstr "e Dielë"
+
+msgid "monday"
+msgstr "e Hënë"
+
+msgid "tuesday"
+msgstr "e Martë"
+
+msgid "wednesday"
+msgstr "e Mërkurë"
+
+msgid "thursday"
+msgstr "e Enjte"
+
+msgid "friday"
+msgstr "e Premte"
+
+msgid "saturday"
+msgstr "e Shtunë"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Shk"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Pri"
+
+msgid "may"
+msgstr "Maj"
+
+msgid "jun"
+msgstr "Qer"
+
+msgid "jul"
+msgstr "Kor"
+
+msgid "aug"
+msgstr "Gus"
+
+msgid "sep"
+msgstr "Sht"
+
+msgid "oct"
+msgstr "Tet"
+
+msgid "nov"
+msgstr "Nën"
+
+msgid "dec"
+msgstr "Dhj"
+
+msgid "longjan"
+msgstr "Janar"
+
+msgid "longfeb"
+msgstr "Shkurt"
+
+msgid "longmar"
+msgstr "Mars"
+
+msgid "longapr"
+msgstr "Prill"
+
+msgid "longmay"
+msgstr "Maj"
+
+msgid "longjun"
+msgstr "Qershor"
+
+msgid "longjul"
+msgstr "Korrik"
+
+msgid "longaug"
+msgstr "Gusht"
+
+msgid "longsep"
+msgstr "Shtator"
+
+msgid "longoct"
+msgstr "Tetor"
+
+msgid "longnov"
+msgstr "Nëntor"
+
+msgid "longdec"
+msgstr "Dhjetor"
+
+msgid "today"
+msgstr "Sot"
+
+msgid "refresh"
+msgstr "Rifreskoje"
+
+msgid "checkmail"
+msgstr "Kontrollo për mesazhe të reja"
+
+msgid "compose"
+msgstr "Hartoni"
+
+msgid "writenewmessage"
+msgstr "Krijoni një mesazh të ri"
+
+msgid "reply"
+msgstr "Përgjigju"
+
+msgid "replytomessage"
+msgstr "Përgjigjiu dërguesit"
+
+msgid "replytoallmessage"
+msgstr "Përgjigju te lista ose dërguesit dhe të gjithë marrësve"
+
+msgid "replyall"
+msgstr "Përgjigju të gjithëve"
+
+msgid "replylist"
+msgstr "Përgjigju listës"
+
+msgid "forward"
+msgstr "Përcille"
+
+msgid "forwardinline"
+msgstr "Përcille brendazi"
+
+msgid "forwardattachment"
+msgstr "Përcille si bashkëngjitje"
+
+msgid "forwardmessage"
+msgstr "Përcille mesazhin"
+
+msgid "bouncemsg"
+msgstr "Përpunim marrësi"
+
+msgid "bounce"
+msgstr "Ridërgoje"
+
+msgid "deletemessage"
+msgstr "Fshije mesazhin"
+
+msgid "undeletemessage"
+msgstr "Zhbëje fshirjen e mesazhit"
+
+msgid "movemessagetotrash"
+msgstr "Hidhe mesazhin në kosh"
+
+msgid "printmessage"
+msgstr "Shtype këtë mesazh"
+
+msgid "previousmessage"
+msgstr "Shfaq mesazhin e mëparshëm"
+
+msgid "firstmessage"
+msgstr "Shfaq mesazhin e parë"
+
+msgid "nextmessage"
+msgstr "Shfaq mesazhin pasardhës"
+
+msgid "lastmessage"
+msgstr "Shfaq mesazhin e fundit"
+
+msgid "backtolist"
+msgstr "Kthehu te lista e mesazheve"
+
+msgid "viewsource"
+msgstr "Shfaqi burimin"
+
+msgid "mark"
+msgstr "Vëri shenjë"
+
+msgid "markmessages"
+msgstr "Vëru shenjë mesazheve"
+
+msgid "markread"
+msgstr "Si të lexuara"
+
+msgid "markunread"
+msgstr "Si të palexuara"
+
+msgid "markflagged"
+msgstr "Si me shenjë"
+
+msgid "markunflagged"
+msgstr "Si me shenjë të hequr"
+
+msgid "markundeleted"
+msgstr "Si i pafshirë"
+
+msgid "markasread"
+msgstr "Vëri shenjë si i lexuar"
+
+msgid "markasunread"
+msgstr "Hiqi shenjën si i lexuar"
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Më tepër veprime…"
+
+msgid "markallread"
+msgstr "Vëru shenjë të tërëve si të lexuar"
+
+msgid "folders-cur"
+msgstr "Vetëm dosjes së përzgjedhur"
+
+msgid "folders-sub"
+msgstr "Dosjes së përzgjedhur dhe nëndosjeve të saj"
+
+msgid "folders-all"
+msgstr "Krejt dosjet"
+
+msgid "more"
+msgstr "Më tepër"
+
+msgid "back"
+msgstr "Mbrapsht"
+
+msgid "options"
+msgstr "Opsione"
+
+msgid "composeoptions"
+msgstr "Mundësi hartimi"
+
+msgid "optionsandattachments"
+msgstr "Mundësi dhe bashkëngjitje"
+
+msgid "actions"
+msgstr "Veprime"
+
+msgid "first"
+msgstr "I pari"
+
+msgid "last"
+msgstr "I fundit"
+
+msgid "previous"
+msgstr "I mëparshmi"
+
+msgid "next"
+msgstr "Pasuesi"
+
+msgid "select"
+msgstr "Përzgjidhni"
+
+msgid "selection"
+msgstr "Përzgjdhje"
+
+msgid "all"
+msgstr "Krejt"
+
+msgid "none"
+msgstr "Asnjë"
+
+msgid "currpage"
+msgstr "Faqja e tanishme"
+
+msgid "isread"
+msgstr "Të lexuar"
+
+msgid "unread"
+msgstr "Të palexuar"
+
+msgid "flagged"
+msgstr "Me Shenjë"
+
+msgid "unflagged"
+msgstr "Pa Shenjë"
+
+msgid "unanswered"
+msgstr "Pa përgjigje"
+
+msgid "withattachment"
+msgstr "Me bashkëngjitje"
+
+msgid "deleted"
+msgstr "Të fshirë"
+
+msgid "undeleted"
+msgstr "Të pafshirë"
+
+msgid "replied"
+msgstr "Me përgjigje"
+
+msgid "forwarded"
+msgstr "Të përcjellë"
+
+msgid "invert"
+msgstr "Përmbyse"
+
+msgid "filter"
+msgstr "Filtër"
+
+msgid "list"
+msgstr "Listë"
+
+msgid "threads"
+msgstr "Rrjedha"
+
+msgid "expand-all"
+msgstr "Zgjeroji Krejt"
+
+msgid "expand-unread"
+msgstr "Zgjero të Palexuarit"
+
+msgid "collapse-all"
+msgstr "Tkurri Krejt"
+
+msgid "threaded"
+msgstr "Me rrjedhë"
+
+msgid "showunread"
+msgstr "Shfaq mesazhe të palexuar"
+
+msgid "autoexpand_threads"
+msgstr "Zgjero rrjedha mesazhesh"
+
+msgid "do_expand"
+msgstr "krejt rrjedhat"
+
+msgid "expand_only_unread"
+msgstr "vetëm ato me mesazhe të palexuar"
+
+msgid "fromto"
+msgstr "Nga/Për"
+
+msgid "flag"
+msgstr "Shenjë"
+
+msgid "attachment"
+msgstr "Bashkëngjitje"
+
+msgid "nonesort"
+msgstr "Asnjë"
+
+msgid "sentdate"
+msgstr "Datë dërgimi"
+
+msgid "arrival"
+msgstr "Datë mbërritje"
+
+msgid "asc"
+msgstr "në rend rritës"
+
+msgid "desc"
+msgstr "në rend zbritës"
+
+msgid "listcolumns"
+msgstr "Paraqit shtylla"
+
+msgid "listsorting"
+msgstr "Shtyllë renditjeje"
+
+msgid "listorder"
+msgstr "Rend renditjeje"
+
+msgid "listmode"
+msgstr "Mënyra parje si listë"
+
+msgid "lmode"
+msgstr "Mënyra listë"
+
+msgid "layout"
+msgstr "Skemë"
+
+msgid "layoutwidescreen"
+msgstr "Me ekran të gjerë"
+
+msgid "layoutdesktop"
+msgstr "Desktop"
+
+msgid "layoutlist"
+msgstr "Listë"
+
+msgid "layoutwidescreendesc"
+msgstr "Me ekran të gjerë (pamje 3 shtylla)"
+
+msgid "layoutdesktopdesc"
+msgstr "Desktop (listë e gjerë dhe paraparje nën të )"
+
+msgid "layoutlistdesc"
+msgstr "Listë (pa paraparje poste)"
+
+msgid "folderactions"
+msgstr "Veprime mbi dosje…"
+
+msgid "compact"
+msgstr "Ngjeshe"
+
+msgid "empty"
+msgstr "Zbraze"
+
+msgid "importmessages"
+msgstr "Importo mesazhe"
+
+msgid "mailimportdesc"
+msgstr ""
+"Mund të ngarkoni postë duke përdorur kartela në formatin <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> ose <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>."
+
+msgid "mailimportzip"
+msgstr "Një grup kartelash mund të ngjeshen në arkiva zip."
+
+msgid "quota"
+msgstr "Përdorim disku"
+
+msgid "unknown"
+msgstr "i panjohur"
+
+msgid "unlimited"
+msgstr "i pakufizuar"
+
+msgid "quotatype"
+msgstr "Lloj thonjëzash"
+
+msgid "quotatotal"
+msgstr "Kufi"
+
+msgid "quotaused"
+msgstr "E përdorur"
+
+msgid "quotastorage"
+msgstr "Hapësirë disku"
+
+msgid "quotamessage"
+msgstr "Numër mesazhesh"
+
+msgid "shortheaderdate"
+msgstr "Më $date"
+
+msgid "shortheaderto"
+msgstr "Për $to më $date"
+
+msgid "shortheaderfrom"
+msgstr "Nga $from më $date"
+
+msgid "quicksearch"
+msgstr "Kërkim i shpejtë"
+
+msgid "searchplaceholder"
+msgstr "Kërkoni…"
+
+msgid "resetsearch"
+msgstr "Kërkim nga e para"
+
+msgid "searchmod"
+msgstr "Modifikues kërkimi"
+
+msgid "msgtext"
+msgstr "Krejt mesazhin"
+
+msgid "body"
+msgstr "Lëndë"
+
+msgid "type"
+msgstr "Lloj"
+
+msgid "namex"
+msgstr "Emër"
+
+msgid "searchscope"
+msgstr "Shtrirje"
+
+msgid "currentfolder"
+msgstr "Dosja e tanishme"
+
+msgid "subfolders"
+msgstr "Kjo dhe nëndosjet"
+
+msgid "allfolders"
+msgstr "Krejt dosjet"
+
+msgid "searchinterval-1W"
+msgstr "më të vjetër se një javë"
+
+msgid "searchinterval-1M"
+msgstr "më të vjetër se një muaj"
+
+msgid "searchinterval-1Y"
+msgstr "më të vjetër se një vit"
+
+msgid "searchinterval1W"
+msgstr "më të rinj se një javë"
+
+msgid "searchinterval1M"
+msgstr "më të rinj se një muaj"
+
+msgid "searchinterval1Y"
+msgstr "më të rinj se një vit"
+
+msgid "infolder"
+msgstr "Dosje: $folder"
+
+msgid "currentaddressbook"
+msgstr "Libër i tanishëm adresash"
+
+msgid "alladdressbooks"
+msgstr "Krejt librat e adresave"
+
+msgid "openinextwin"
+msgstr "Hape në dritare të re"
+
+msgid "emlsave"
+msgstr "Shkarkoje (.eml)"
+
+msgid "changeformattext"
+msgstr "Shfaqe në format tekst të thjeshtë"
+
+msgid "changeformathtml"
+msgstr "Shfaqe në format HTML"
+
+msgid "editasnew"
+msgstr "Përpunojeni si të ri"
+
+msgid "send"
+msgstr "Dërgoje"
+
+msgid "sendmessage"
+msgstr "Dërgoje mesazhin"
+
+msgid "savemessage"
+msgstr "Ruaje si skicë"
+
+msgid "addattachment"
+msgstr "Bashkëngjitni një kartelë"
+
+msgid "charset"
+msgstr "Bashkësi shkronjash"
+
+msgid "editortype"
+msgstr "Lloj përpunuesi"
+
+msgid "returnreceipt"
+msgstr "Dëftesë kthimi"
+
+msgid "dsn"
+msgstr "Njoftim gjendjeje dërgimi"
+
+msgid "keepformatting"
+msgstr "Mbaje formatimin"
+
+msgid "mailreplyintro"
+msgstr "Më $date, $sender shkroi:"
+
+msgid "originalmessage"
+msgstr "Mesazhi Origjinal"
+
+msgid "selectimage"
+msgstr "Përzgjidhni figurë"
+
+msgid "addimage"
+msgstr "Shtoni figurë"
+
+msgid "selectmedia"
+msgstr "Përzgjidhni film"
+
+msgid "addmedia"
+msgstr "Shtoni film"
+
+msgid "encrypt"
+msgstr "Fshehtëzoje"
+
+msgid "encryptmessage"
+msgstr "Fshehtëzoje mesazhin"
+
+msgid "encryptmessagemailvelope"
+msgstr "Fshehtëzoje mesazhin me Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Importo kyçe publikë"
+
+msgid "encryptedsendialog"
+msgstr "Po dërgohet mesazh i fshehtëzuar"
+
+msgid "encryptandsign"
+msgstr "Fshehtëzoje dhe nënshkruaje"
+
+msgid "keyid"
+msgstr "ID Kyçi"
+
+msgid "keylength"
+msgstr "Bite"
+
+msgid "keyexpired"
+msgstr "I skaduar"
+
+msgid "keyrevoked"
+msgstr "I shfuqizuar"
+
+msgid "bccinstead"
+msgstr "Përdor Bcc"
+
+msgid "addheader"
+msgstr "Shtoni fushë (Cc, Bcc, …)"
+
+msgid "insert"
+msgstr "Fut"
+
+msgid "insertcontact"
+msgstr "Futni kontakt(e)"
+
+msgid "recipient"
+msgstr "Marrës"
+
+msgid "recipientedit"
+msgstr "Përpunim marrësi"
+
+msgid "editidents"
+msgstr "Përpunoni identitete"
+
+msgid "spellcheck"
+msgstr "Drejtshkrim"
+
+msgid "checkspelling"
+msgstr "Kontrolloji drejtshkrimin"
+
+msgid "resumeediting"
+msgstr "Rikthejuni përpunimit"
+
+msgid "revertto"
+msgstr "Riktheje te"
+
+msgid "restore"
+msgstr "Rimerre"
+
+msgid "restoremessage"
+msgstr "Të rimerret mesazhi?"
+
+msgid "ignore"
+msgstr "Shpërfille"
+
+msgid "responses"
+msgstr "Përgjigje"
+
+msgid "insertresponse"
+msgstr "Futni një përgjigje"
+
+msgid "manageresponses"
+msgstr "Administroni përgjigje"
+
+msgid "newresponse"
+msgstr "Krijoni përgjigje të re"
+
+msgid "addresponse"
+msgstr "Shtoni përgjigje"
+
+msgid "editresponse"
+msgstr "Përpunoni përgjigje"
+
+msgid "editresponses"
+msgstr "Përpunoni përgjigje"
+
+msgid "responsename"
+msgstr "Emër"
+
+msgid "responsetext"
+msgstr "Tekst Përgjigjeje"
+
+msgid "attach"
+msgstr "Bashkëngjite"
+
+msgid "attachments"
+msgstr "Bashkëngjitje"
+
+msgid "upload"
+msgstr "Ngarko"
+
+msgid "uploadprogress"
+msgstr "$percent ($current nga $total gjithsej)"
+
+msgid "close"
+msgstr "Mbylle"
+
+msgid "messageoptions"
+msgstr "Mundësi mesazhesh…"
+
+msgid "togglecomposeoptions"
+msgstr "Shfaq/fshih mundësi hartimi"
+
+msgid "attachmentrename"
+msgstr "Riemërtoni bashkëngjitjet"
+
+msgid "low"
+msgstr "E ulët"
+
+msgid "lowest"
+msgstr "Më e ulëta"
+
+msgid "normal"
+msgstr "Normale"
+
+msgid "high"
+msgstr "E lartë"
+
+msgid "highest"
+msgstr "Më e larta"
+
+msgid "nosubject"
+msgstr "(pa subjekt)"
+
+msgid "showimages"
+msgstr "Shfaq figura"
+
+msgid "allow"
+msgstr "Lejoje"
+
+msgid "alwaysshow"
+msgstr "Shfaqi përherë figurat nga $sender"
+
+msgid "alwaysallow"
+msgstr "Lejo përherë nga $sender"
+
+msgid "isdraft"
+msgstr "Kjo është një skicë mesazhi."
+
+msgid "andnmore"
+msgstr "$nr të tjerë..."
+
+msgid "details"
+msgstr "Hollësi"
+
+msgid "summary"
+msgstr "Përmbledhje"
+
+msgid "headers"
+msgstr "Krye"
+
+msgid "allheaders"
+msgstr "Krejt kryet…"
+
+msgid "togglemoreheaders"
+msgstr "Shfaq më tepër krye mesazhi"
+
+msgid "togglefullheaders"
+msgstr "Shfaq/fshih krye të papërpunuar mesazhi"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Tekst i thjeshtë"
+
+msgid "savesentmessagein"
+msgstr "Ruaje mesazhin e dërguar te"
+
+msgid "dontsave"
+msgstr "mos e ruaj"
+
+msgid "maxuploadsize"
+msgstr "Maksimumi i lejuar për madhësi kartelash është $size"
+
+msgid "addcc"
+msgstr "Shto Cc"
+
+msgid "addbcc"
+msgstr "Shto Bcc"
+
+msgid "addreplyto"
+msgstr "Shtoni Përgjigjuni-Te"
+
+msgid "addfollowupto"
+msgstr "Shto Vazhdojeni-Te"
+
+msgid "sendreceipt"
+msgstr "Të dërgohet dëftesë leximi?"
+
+msgid "mdnrequest"
+msgstr ""
+"Dërguesi i këtij mesazhi ka kërkuar që të njoftohet kur të lexoni këtë "
+"mesazh. Dëshironi të njoftohet dërguesi?"
+
+msgid "receiptread"
+msgstr "Dëftesë Kthimi (u lexua)"
+
+msgid "yourmessage"
+msgstr "Kjo është një Dëftesë Kthimi për mesazhin tuaj"
+
+msgid "receiptnote"
+msgstr ""
+"Shënim: Kjo dëftesë dëshmon vetëm se mesazhi u shfaq në kompjuterin e "
+"marrësit. Nuk ka garanci se marrësi e ka lexuar ose e ka kuptuar përmbajtjen"
+" e mesazhit."
+
+msgid "sendalwaysto"
+msgstr "Dërgoje përherë te $email"
+
+msgid "zoomin"
+msgstr "Zmadhim"
+
+msgid "zoomout"
+msgstr "Zvogëlim"
+
+msgid "rotate"
+msgstr "Rrotulloje"
+
+msgid "increaseimage"
+msgstr "Zmadhoni madhësi figure"
+
+msgid "decreaseimage"
+msgstr "Zvogëloni madhësi figure"
+
+msgid "rotateimage"
+msgstr "Rrotullojeni figurën"
+
+msgid "showtools"
+msgstr "Shfaq mjete figure"
+
+msgid "hidetools"
+msgstr "Fshihi mjetet e figurës"
+
+msgid "name"
+msgstr "Emër Në Ekran"
+
+msgid "firstname"
+msgstr "Emër"
+
+msgid "surname"
+msgstr "Mbiemër"
+
+msgid "middlename"
+msgstr "Emër i Dytë"
+
+msgid "nameprefix"
+msgstr "Parashtesë"
+
+msgid "namesuffix"
+msgstr "Prapashtesë"
+
+msgid "nickname"
+msgstr "Nofkë"
+
+msgid "jobtitle"
+msgstr "Pozicion"
+
+msgid "department"
+msgstr "Degë"
+
+msgid "gender"
+msgstr "Gjini"
+
+msgid "maidenname"
+msgstr "Emër në Vajzëri"
+
+msgid "email"
+msgstr "Email"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Adresë"
+
+msgid "street"
+msgstr "Rrugë"
+
+msgid "locality"
+msgstr "Qytet"
+
+msgid "zipcode"
+msgstr "Kod ZIP"
+
+msgid "region"
+msgstr "Shtet/Provincë"
+
+msgid "country"
+msgstr "Vend"
+
+msgid "birthday"
+msgstr "Datëlindje"
+
+msgid "anniversary"
+msgstr "Përvjetor"
+
+msgid "website"
+msgstr "Sajt"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Shënime"
+
+msgid "male"
+msgstr "mashkull"
+
+msgid "female"
+msgstr "femër"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr "tjetër"
+
+msgid "manager"
+msgstr "Përgjegjës"
+
+msgid "assistant"
+msgstr "Asistent"
+
+msgid "spouse"
+msgstr "Bashkëshort"
+
+msgid "allfields"
+msgstr "Krejt fushat"
+
+msgid "search"
+msgstr "Kërkoni"
+
+msgid "searchresult"
+msgstr "Përfundime kërkimi"
+
+msgid "advsearch"
+msgstr "Kërkim i Thelluar"
+
+msgid "advanced"
+msgstr "I thelluar"
+
+msgid "other"
+msgstr "Tjetër"
+
+msgid "printcontact"
+msgstr "Shtype kontaktin"
+
+msgid "qrcode"
+msgstr "Kod QR"
+
+msgid "typehome"
+msgstr "Shtëpie"
+
+msgid "typework"
+msgstr "Pune"
+
+msgid "typeother"
+msgstr "Tjetër"
+
+msgid "typemobile"
+msgstr "Celular"
+
+msgid "typemain"
+msgstr "Kryesore"
+
+msgid "typehomefax"
+msgstr "Faks Shtëpie"
+
+msgid "typeworkfax"
+msgstr "Faks Pune"
+
+msgid "typecar"
+msgstr "Automjet"
+
+msgid "typepager"
+msgstr "Faques"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Asistent"
+
+msgid "typehomepage"
+msgstr "Faqe Hyrëse"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Shtoni fushë…"
+
+msgid "addcontact"
+msgstr "Shtoni kontakt"
+
+msgid "editcontact"
+msgstr "Përpunoni kontakt"
+
+msgid "contacts"
+msgstr "Kontakte"
+
+msgid "contactproperties"
+msgstr "Veti kontaktesh"
+
+msgid "contactnameandorg"
+msgstr "Emër dhe Ent"
+
+msgid "personalinfo"
+msgstr "Të dhëna personale"
+
+msgid "personal"
+msgstr "Personale"
+
+msgid "contactphoto"
+msgstr "Foto kontakti"
+
+msgid "edit"
+msgstr "Përpunoni"
+
+msgid "cancel"
+msgstr "Anuloje"
+
+msgid "save"
+msgstr "Ruaje"
+
+msgid "delete"
+msgstr "Fshije"
+
+msgid "discard"
+msgstr "Hidhe tej"
+
+msgid "continue"
+msgstr "Vazhdo"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Riemërtojeni"
+
+msgid "addphoto"
+msgstr "Shtoni"
+
+msgid "replacephoto"
+msgstr "Zëvendësoje"
+
+msgid "uploadphoto"
+msgstr "Ngarkoni foto"
+
+msgid "choosefile"
+msgstr "Zgjidhni kartelë…"
+
+msgid "choosefiles"
+msgstr "Zgjidhni kartela…"
+
+msgid "browse"
+msgstr "Shfletoni"
+
+msgid "newcontact"
+msgstr "Krijoni kontakt të ri"
+
+msgid "deletecontact"
+msgstr "Fshiji kontaktet e përzgjedhur"
+
+msgid "composeto"
+msgstr "Hartoni email për"
+
+msgid "contactsfromto"
+msgstr "Kontaktet nga $from deri në $to nga $count gjithsej"
+
+msgid "print"
+msgstr "Shtype"
+
+msgid "export"
+msgstr "Eksporto"
+
+msgid "exportall"
+msgstr "Eksportoji krejt"
+
+msgid "exportsel"
+msgstr "Eksporto të përzgjedhurat"
+
+msgid "exportvcards"
+msgstr "Eksportoji kontaktet në format vCard"
+
+msgid "newgroup"
+msgstr "Krijoni grup të ri"
+
+msgid "addgroup"
+msgstr "Shtoni grup"
+
+msgid "grouprename"
+msgstr "Riemërtojeni grupin"
+
+msgid "groupdelete"
+msgstr "Fshije grupin"
+
+msgid "groupassign"
+msgstr "Caktojani një grupi…"
+
+msgid "groupremove"
+msgstr "Hiqeni prej grupi"
+
+msgid "groupremoveselected"
+msgstr "Hiqi nga grupi kontaktet e përzgjedhur"
+
+msgid "uponelevel"
+msgstr "Një nivel më sipër"
+
+msgid "previouspage"
+msgstr "Shfaq faqen e mëparshme"
+
+msgid "firstpage"
+msgstr "Shfaq faqen e parë"
+
+msgid "nextpage"
+msgstr "Shfaq faqen pasuese"
+
+msgid "lastpage"
+msgstr "Shfaq faqen e fundit"
+
+msgid "group"
+msgstr "Grup"
+
+msgid "groups"
+msgstr "Grupe"
+
+msgid "listgroup"
+msgstr "Paraqit anëtarë grupi"
+
+msgid "personaladrbook"
+msgstr "Adresa Personale"
+
+msgid "searchsave"
+msgstr "Ruaje kërkimin"
+
+msgid "searchdelete"
+msgstr "Fshije kërkimin"
+
+msgid "import"
+msgstr "Importo"
+
+msgid "importcontacts"
+msgstr "Importo kontaktet"
+
+msgid "importfromfile"
+msgstr "Importo prej kartele"
+
+msgid "importtarget"
+msgstr "Shtoni kontakte te"
+
+msgid "importreplace"
+msgstr "Zëvendëso krejt librin e adresave"
+
+msgid "importgroups"
+msgstr "Importo përshoqërime grupi"
+
+msgid "importgroupsall"
+msgstr "Krejt (krijo grupe, në u dashtë)"
+
+msgid "importgroupsexisting"
+msgstr "Vetëm për grupe ekzistues"
+
+msgid "importdesc"
+msgstr ""
+"Mund të ngarkoni kontakte nga një libër ekzistues adresash.<br/>Deri këtu "
+"mbulojmë importim adresash prej formati <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> ose CSV (comma-"
+"separated) të dhënash."
+
+msgid "importmapdesc"
+msgstr ""
+"Përpara se të ecet më tej me importim të dhënash CSV (ndarë me presje), "
+"ripohoni më poshtë të dhënat mbi përshoqërim fushash."
+
+msgid "fieldnotmapped"
+msgstr "Fushë e papërshoqëruar (mos e importo)"
+
+msgid "skipheader"
+msgstr "Mos importo rreshtin e parë (kryet)"
+
+msgid "done"
+msgstr "U bë"
+
+msgid "birth_day"
+msgstr "Ditë Lindjeje"
+
+msgid "birth_month"
+msgstr "Muaj Lindjeje"
+
+msgid "birth_year"
+msgstr "Vit Lindjeje"
+
+msgid "settingsfor"
+msgstr "Rregullime për"
+
+msgid "about"
+msgstr "Rreth"
+
+msgid "preferences"
+msgstr "Parapëlqime"
+
+msgid "userpreferences"
+msgstr "Parapëlqime përdoruesi"
+
+msgid "editpreferences"
+msgstr "Përpunoni parapëlqime përdoruesi"
+
+msgid "identities"
+msgstr "Identitete"
+
+msgid "manageidentities"
+msgstr "Administroni identitete"
+
+msgid "newidentity"
+msgstr "Krijoni identitet të ri"
+
+msgid "addidentity"
+msgstr "Shtoni identitet"
+
+msgid "editidentity"
+msgstr "Përpunoni identitet"
+
+msgid "identityencryption"
+msgstr "Fshehtëzim"
+
+msgid "preferhtml"
+msgstr "Shfaq HTML"
+
+msgid "defaultcharset"
+msgstr "Shkronja Parazgjedhje"
+
+msgid "htmlmessage"
+msgstr "Mesazh HTML"
+
+msgid "messagepart"
+msgstr "Pjesë"
+
+msgid "digitalsig"
+msgstr "Nënshkrim Dixhital"
+
+msgid "dateformat"
+msgstr "Format të dhënash"
+
+msgid "timeformat"
+msgstr "Format kohe"
+
+msgid "prettydate"
+msgstr "Data të hijshme"
+
+msgid "setdefault"
+msgstr "Caktoje si parazgjedhje"
+
+msgid "autodetect"
+msgstr "Auto"
+
+msgid "language"
+msgstr "Gjuhë"
+
+msgid "timezone"
+msgstr "Brez orar"
+
+msgid "pagesize"
+msgstr "Rreshta për faqe"
+
+msgid "signature"
+msgstr "Nënshkrim"
+
+msgid "dstactive"
+msgstr "Ndryshim ore"
+
+msgid "showinextwin"
+msgstr "Hape mesazhin në dritare të re"
+
+msgid "composeextwin"
+msgstr "Për hartim mesazhesh hap dritare të re"
+
+msgid "htmleditor"
+msgstr "Harto mesazhe HTML"
+
+msgid "htmlonreply"
+msgstr "kur i përgjigjeni mesazheve HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "kur i përgjigjeni ose përcillni mesazh HTML"
+
+msgid "htmlsignature"
+msgstr "Nënshkrimi HTML"
+
+msgid "showemail"
+msgstr "Adresën email shfaqe me emrin për në ekran"
+
+msgid "previewpane"
+msgstr "Shfaq panel paraparjeje"
+
+msgid "skin"
+msgstr "Temë grafike për ndërfaqen"
+
+msgid "logoutclear"
+msgstr "Pastroji Hedhurinat gjatë daljes"
+
+msgid "logoutcompact"
+msgstr "Ngjeshi Të marrët në dalje e sipër"
+
+msgid "uisettings"
+msgstr "Ndërfaqe Përdoruesi"
+
+msgid "serversettings"
+msgstr "Rregullime Shërbyesi"
+
+msgid "mailboxview"
+msgstr "Shfaqje e Kutisë Postare"
+
+msgid "mdnrequests"
+msgstr "Kur kërkohet dëftesë kthimi"
+
+msgid "askuser"
+msgstr "pyetmë"
+
+msgid "autosend"
+msgstr "dërgo dëftesë"
+
+msgid "autosendknown"
+msgstr "dërgoju dëftesë kontakteve të mi, përndryshe pyetmë"
+
+msgid "autosendknownignore"
+msgstr "dërgoju dëftesë kontakteve të mi, përndryshe shpërfille"
+
+msgid "autosendtrusted"
+msgstr "dërgo dëftesë te dërgues të besuar, përndryshe pyetmë"
+
+msgid "autosendtrustedignore"
+msgstr "dërgoju dëftesë dërguesve të besuar, përndryshe shpërfille"
+
+msgid "ignorerequest"
+msgstr "shpërfille kërkesën"
+
+msgid "readwhendeleted"
+msgstr "Gjatë fshirjes shënoje mesazhin si të lexuar"
+
+msgid "flagfordeletion"
+msgstr "Vëri shenjë mesazhit për fshirje, në vend se ta fshish"
+
+msgid "skipdeleted"
+msgstr "Mos shfaq mesazhe të fshirë"
+
+msgid "deletealways"
+msgstr "Nëse shpënia te Hedhurinat dështon, fshiji"
+
+msgid "deletejunk"
+msgstr "Mesazhet te Të pavlerat fshiji drejtpërsëdrejti"
+
+msgid "showremoteimages"
+msgstr "Shfaqi figurat e largëta të trupëzuara në mesazh"
+
+msgid "allowremoteresources"
+msgstr "Lejo burime të largëta (figura, stile)"
+
+msgid "fromknownsenders"
+msgstr "prej dërguesish të njohur"
+
+msgid "fromtrustedsenders"
+msgstr "prej dërguesish të besuar"
+
+msgid "frommycontacts"
+msgstr "prej kontakteve të mi"
+
+msgid "always"
+msgstr "përherë"
+
+msgid "alwaysbutplain"
+msgstr "përherë, hiq rastin kur i përgjigjem teksti të thjeshtë"
+
+msgid "showinlineimages"
+msgstr "Figurat e bashkëngjitura shfaqi nën mesazh"
+
+msgid "autosavedraft"
+msgstr "Ruaje automatikisht si skicë"
+
+msgid "everynminutes"
+msgstr "çdo $n minutë(a)"
+
+msgid "refreshinterval"
+msgstr "Rifreskoje (kontrollo për mesazhe të rinj, etj)"
+
+msgid "never"
+msgstr "kurrë"
+
+msgid "immediately"
+msgstr "menjëherë"
+
+msgid "messagesdisplaying"
+msgstr "Shfaqje Mesazhesh"
+
+msgid "messagescomposition"
+msgstr "Hartim Mesazhesh"
+
+msgid "mimeparamfolding"
+msgstr "Emra bashkëngjitjesh"
+
+msgid "2231folding"
+msgstr "RFC 2231 i Plotë (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "RFC 2047 i Plotë (tjetër)"
+
+msgid "force7bit"
+msgstr "Për shenja 8-bitëshe përdor kodim MIME"
+
+msgid "savelocalstorage"
+msgstr "Ruaji te depoja vendore e shfletuesit (përkohësisht)"
+
+msgid "advancedoptions"
+msgstr "Mundësi të mëtejshme"
+
+msgid "toggleadvancedoptions"
+msgstr "Shfaq/fshih mundësi të mëtejshme"
+
+msgid "focusonnewmessage"
+msgstr "Për mesazhe të rinj kaloje fokusin te dritarja e shfletuesit"
+
+msgid "checkallfolders"
+msgstr "Kontrollo krejt dosjet për mesazhe të rinj"
+
+msgid "displaynext"
+msgstr "Pas fshirjesh/lëvizjesh, shfaq zërin pasues në listë"
+
+msgid "defaultfont"
+msgstr "Shkronja parazgjedhje për mesazhe HTML"
+
+msgid "mainoptions"
+msgstr "Mundësitë Kryesore"
+
+msgid "browseroptions"
+msgstr "Mundësi Shfletuesi"
+
+msgid "section"
+msgstr "Seksion"
+
+msgid "maintenance"
+msgstr "Mirëmbajtje"
+
+msgid "newmessage"
+msgstr "Mesazh i Ri"
+
+msgid "signatureoptions"
+msgstr "Mundësi Nënshkrimesh"
+
+msgid "whenreplying"
+msgstr "Kur përgjigjem"
+
+msgid "replyempty"
+msgstr "mos e cito mesazhin origjinal"
+
+msgid "replytopposting"
+msgstr "filloje mesazhin e ri sipër citimit"
+
+msgid "replytoppostingnoindent"
+msgstr "nise mesazhin e ri sipër citimit (pa shmangie)"
+
+msgid "replybottomposting"
+msgstr "filloje mesazhin e ri poshtë citimit"
+
+msgid "replyremovesignature"
+msgstr "Kur përgjigjem, hiqe prej mesazhit nënshkrimin origjinal"
+
+msgid "autoaddsignature"
+msgstr "Nënshkrimin shtoje vetvetiu"
+
+msgid "newmessageonly"
+msgstr "vetëm për mesazh të ri"
+
+msgid "replyandforwardonly"
+msgstr "vetëm për përgjigje dhe përcjellje"
+
+msgid "insertsignature"
+msgstr "Fut nënshkrim"
+
+msgid "sigbelow"
+msgstr "Nënshkrimin vendose nën mesazhin e cituar"
+
+msgid "sigseparator"
+msgstr "Në nënshkrime përdor detyrimisht ndarës standard"
+
+msgid "automarkread"
+msgstr "Vëru shenjë mesazheve si të lexuar"
+
+msgid "afternseconds"
+msgstr "pas $n sekondash"
+
+msgid "reqmdn"
+msgstr "Kërko përherë dëftesë kthimi"
+
+msgid "reqdsn"
+msgstr "Kërko përherë njoftim mbi gjendje dërgimi"
+
+msgid "alwayskeepformatting"
+msgstr "Mbaj përherë formatimin origjinal të tekstit"
+
+msgid "replysamefolder"
+msgstr "Vendosi përgjigjet te dosja e mesazheve të cilit po i përgjigjeni"
+
+msgid "defaultabook"
+msgstr "Libër parazgjedhje adresash"
+
+msgid "autocompletesingle"
+msgstr "Gjatë vetëplotësimit anashkalo adresa email alternative"
+
+msgid "listnamedisplay"
+msgstr "Kontaktet paraqiti si"
+
+msgid "contactformmode"
+msgstr "Mënyrë formulari kontaktesh"
+
+msgid "privatemode"
+msgstr "Privat (Shtëpie)"
+
+msgid "businessmode"
+msgstr "Biznes (Pune)"
+
+msgid "collectedaddresses"
+msgstr "Adresa të grumbulluara"
+
+msgid "collectedrecipients"
+msgstr "Marrës të Grumbulluar"
+
+msgid "collectedrecipientsopt"
+msgstr "Marrës email-esh të dërguar depozitoji në"
+
+msgid "collectedsendersopt"
+msgstr "Dërguesit e besuar depozitoji në"
+
+msgid "trustedsenders"
+msgstr "Dërgues të Besuar"
+
+msgid "spellcheckbeforesend"
+msgstr "Kontrollo drejtshkrimin para dërgimit të një mesazhi"
+
+msgid "spellcheckoptions"
+msgstr "Mundësi Kontrolli Drejtshkrimi"
+
+msgid "spellcheckignoresyms"
+msgstr "Shpërfilli fjalët me simbole"
+
+msgid "spellcheckignorenums"
+msgstr "Shpërfilli fjalët me numra"
+
+msgid "spellcheckignorecaps"
+msgstr "Shpërfilli fjalët me krejt shkronjat me të madhe"
+
+msgid "addtodict"
+msgstr "Shtoje në fjalor"
+
+msgid "editoroptions"
+msgstr "Mundësi Përpunuesi"
+
+msgid "enableautolink"
+msgstr "Shndërro automatikisht URL të vlefshme në tejlidhje"
+
+msgid "mailtoprotohandler"
+msgstr "Regjistro trajtues protokolli për lidhje mailto:"
+
+msgid "standardwindows"
+msgstr "Flluskat trajtoji si dritare standarde"
+
+msgid "forwardmode"
+msgstr "Përcjellje mesazhesh"
+
+msgid "inline"
+msgstr "brendazi"
+
+msgid "asattachment"
+msgstr "si bashkëngjitje"
+
+msgid "replyallmode"
+msgstr "Veprim parazgjedhje për butonin [Përgjigju krejt]"
+
+msgid "replyalldefault"
+msgstr "përgjigju të tërëve"
+
+msgid "replyalllist"
+msgstr "përgjigju vetëm te listë postimesh (nëse gjendet e tillë)"
+
+msgid "allmessages"
+msgstr "krejt mesazhet"
+
+msgid "olderxdays"
+msgstr "më i vjetër se $x ditë"
+
+msgid "folder"
+msgstr "Dosje"
+
+msgid "folders"
+msgstr "Dosje"
+
+msgid "foldername"
+msgstr "Emër dosjeje"
+
+msgid "subscribed"
+msgstr "Regjistruar"
+
+msgid "messagecount"
+msgstr "Mesazhe"
+
+msgid "create"
+msgstr "Krijoje"
+
+msgid "createfolder"
+msgstr "Krijo dosje të re"
+
+msgid "managefolders"
+msgstr "Administroni dosje"
+
+msgid "specialfolders"
+msgstr "Dosje Speciale"
+
+msgid "properties"
+msgstr "Veti"
+
+msgid "folderproperties"
+msgstr "Veti dosjeje"
+
+msgid "parentfolder"
+msgstr "Dosje mëmë"
+
+msgid "location"
+msgstr "Vendndodhje"
+
+msgid "info"
+msgstr "Informacion"
+
+msgid "getfoldersize"
+msgstr "Klikoni që të kini madhësinë e dosjes"
+
+msgid "changesubscription"
+msgstr "Klikoni që të ndryshoni pajtimin"
+
+msgid "foldertype"
+msgstr "Lloj Dosjeje"
+
+msgid "personalfolder"
+msgstr "Dosje Private"
+
+msgid "otherfolder"
+msgstr "Dosje Përdoruesi Tjetër"
+
+msgid "sharedfolder"
+msgstr "Dosje Publike"
+
+msgid "findfolders"
+msgstr "Gjeni dosje"
+
+msgid "findcontacts"
+msgstr "Gjej kontakte"
+
+msgid "findmail"
+msgstr "Gjej mesazhe poste"
+
+msgid "namespace.personal"
+msgstr "Personale"
+
+msgid "namespace.other"
+msgstr "Përdorues të tjerë"
+
+msgid "namespace.shared"
+msgstr "E përbashkët"
+
+msgid "dualuselabel"
+msgstr "Mund të përmbajë vetëm"
+
+msgid "dualusemail"
+msgstr "mesazhe"
+
+msgid "dualusefolder"
+msgstr "dosje"
+
+msgid "generate"
+msgstr "Prodhoje"
+
+msgid "encryptioncreatekey"
+msgstr "Krijoni një çift të ri kyçesh"
+
+msgid "openmailvelopesettings"
+msgstr "Hapni Rregullime për Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Keni $nr kyçe privatë me përputhje të depozituar në vargun tuaj të kyçeve "
+"Mailvelope:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Identiteti i këtij dërguesi ende s’ka ndonjë kyç privat PGP të depozituar në"
+" zgjerimin tuaj Mailvelope. Do të donit të krijoni një që të mund të "
+"aktivizohet shkëmbim mesazhesh të fshehtëzuar?"
+
+msgid "encryption"
+msgstr "Fshehtëzim"
+
+msgid "mailvelopeoptions"
+msgstr "Mundësi Mailvelope"
+
+msgid "mailvelopemainkeyring"
+msgstr "Përdor varg kyçesh kryesor Mailvelope"
+
+msgid "mailvelopenotfound"
+msgstr "Zgjerimi Mailvelope s’është aktivizuar/instaluar në shfletuesin tuaj."
+
+msgid "mailvelopeenable"
+msgstr "Aktivizoje"
+
+msgid "sortby"
+msgstr "Renditi sipas"
+
+msgid "sortasc"
+msgstr "Në rend rritës"
+
+msgid "sortdesc"
+msgstr "Në rend zbritës"
+
+msgid "undo"
+msgstr "Zhbëje"
+
+msgid "installedplugins"
+msgstr "Shtojca të instaluara"
+
+msgid "plugin"
+msgstr "Shtojcë"
+
+msgid "version"
+msgstr "Version"
+
+msgid "source"
+msgstr "Burim"
+
+msgid "destination"
+msgstr "Vendmbërritje"
+
+msgid "license"
+msgstr "Licencë"
+
+msgid "skinauthor"
+msgstr "nga $author"
+
+msgid "support"
+msgstr "Merrni asistencë"
+
+msgid "savedsearches"
+msgstr "Kërkime të ruajtura"
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unikod"
+
+msgid "english"
+msgstr "Anglisht"
+
+msgid "westerneuropean"
+msgstr "Europiano-perëndimore"
+
+msgid "easterneuropean"
+msgstr "Europiano-lindore"
+
+msgid "southeasterneuropean"
+msgstr "Europiano-juglindore"
+
+msgid "baltic"
+msgstr "Baltike"
+
+msgid "cyrillic"
+msgstr "Cirilike"
+
+msgid "arabic"
+msgstr "Arabike"
+
+msgid "greek"
+msgstr "Greke"
+
+msgid "hebrew"
+msgstr "Hebraike"
+
+msgid "turkish"
+msgstr "Turke"
+
+msgid "nordic"
+msgstr "Nordike"
+
+msgid "thai"
+msgstr "Tajlandeze"
+
+msgid "celtic"
+msgstr "Celtike"
+
+msgid "vietnamese"
+msgstr "Vietnameze"
+
+msgid "japanese"
+msgstr "Japoneze"
+
+msgid "korean"
+msgstr "Koreane"
+
+msgid "chinese"
+msgstr "Kineze"
+
+msgid "arialabeltopnav"
+msgstr "Kontroll dritareje"
+
+msgid "arialabeltasknav"
+msgstr "Akte aplikacioni"
+
+msgid "arialabeltoolbar"
+msgstr "Panel aplikacioni"
+
+msgid "arialabellistnav"
+msgstr "Lëvizje në listë"
+
+msgid "arialabelactivetask"
+msgstr "Akte aktive"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Filtër mënyre paraqitjeje email-esh"
+
+msgid "arialabelmailsearchform"
+msgstr "Formular kërkimi mesazhi email"
+
+msgid "arialabelcontactsearchform"
+msgstr "Formular kërkimi kontaktesh"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Fushë kërkimi email-i"
+
+msgid "arialabelquicksearchbox"
+msgstr "Fushë kërkimi"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Filtër lënde dosjeje"
+
+msgid "arialabelfoldersearchform"
+msgstr "Formular kërkimi dosjesh"
+
+msgid "arialabelfolderlist"
+msgstr "Përzgjedhje dosje email"
+
+msgid "arialabelmessagelist"
+msgstr "Shfaqje Mesazhesh Email"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Paraparje mesazhi"
+
+msgid "arialabelmailboxmenu"
+msgstr "Menu veprimesh mbi dosje"
+
+msgid "arialabellistselectmenu"
+msgstr "Menu përzgjedhjeje liste"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Menu paraqitje rrjedhash"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Mundësi mbi shfaqje dhe renditje listash mesazhesh"
+
+msgid "arialabelmailimportdialog"
+msgstr "Dialog importimi mesazhesh"
+
+msgid "arialabelmessagenav"
+msgstr "Lëvizje te mesazhi"
+
+msgid "arialabelmessagebody"
+msgstr "Lëndë Mesazhi"
+
+msgid "arialabelmessageactions"
+msgstr "Veprime mbi mesazhe"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Formular kërkimi kontaktesh"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Fushë kërkimi kontaktesh"
+
+msgid "arialabelmessageheaders"
+msgstr "Krye mesazhi"
+
+msgid "arialabelforwardingoptions"
+msgstr "Mundësi përcjelljesh"
+
+msgid "arialabelreplyalloptions"
+msgstr "Mundësi për Përgjigju-krejt"
+
+msgid "arialabelmoremessageactions"
+msgstr "Më tepër veprime mbi mesazhe"
+
+msgid "arialabelmorecontactactions"
+msgstr "Më tepër veprime mbi kontakte"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Mesazheve të përzgjedhur vëru shenjë si…"
+
+msgid "arialabelcomposeoptions"
+msgstr "Mundësi hartimi"
+
+msgid "arialabelresponsesmenu"
+msgstr "Menu përgjigjesh të parapërgatitura"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Formular ngarkimi bashkëngjitjesh"
+
+msgid "arialabelattachmentmenu"
+msgstr "Mundësi bashkëngjitjesh"
+
+msgid "arialabelmailtomenu"
+msgstr "Mundësi adresash email"
+
+msgid "arialabelattachmentpreview"
+msgstr "Paraparje bashkëngjitjesh"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Listë kontaktesh dhe grupesh për t’u përzgjedhur si marrës"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Mundësi eksportimi kontaktesh"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Mundësi libri adresash/grupi"
+
+msgid "arialabelpreferencesform"
+msgstr "Formular parapëlqimesh"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Formular përpunimi identitetesh"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Formular përpunimi përgjigjesh"
+
+msgid "arialabelsearchterms"
+msgstr "Terma kërkimi"
+
+msgid "arialabeldropactionmenu"
+msgstr "Menu veprimi Merr-dhe-Vër"
+
+msgid "arialabelheadersmenu"
+msgstr "Menu shtimi marrësi (krye)"
+
+msgid "arialabelimagetools"
+msgstr "Mjete figure"
+
+msgid "helplistnavigation"
+msgstr "Lëvizje me tastierë në lista"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Shigjeta sipër/poshtë: Zhvendosni fokusin/përzgjedhjen në rreshta.\n"
+"Space: Përzgjidhni rreshtin që ka fokusin.\n"
+"Shift + up/down: Përzgjidhni rreshta shtesë sipër/poshtë.\n"
+"Ctrl + Space: Shtojeni rreshtin që ka fokusin te përzgjedhja/heqja nga përzgjedhja."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Shigjetat majtas/djathtas: zgjeroni/tkurrni rrjedhë mesazhesh (e vlefshme vetëm nën mënyrën rrjedhë).\n"
+"Enter: Hapni mesazhin e përzgjedhur/atë që ka fokusin.\n"
+"Delete: Shpjereni mesazhin e përzgjedhur te Hedhurinat."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Hapni kontaktin e përzgjedhur/atë që ka fokusin."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Ndodhi një gabim!"
+
+msgid "messages.loginfailed"
+msgstr "Hyrja dështoi."
+
+msgid "messages.cookiesdisabled"
+msgstr "Shfletuesi juaj s’i pranon cookie-t."
+
+msgid "messages.sessionerror"
+msgstr "Sesioni juaj është i pavlefshëm ose ka skaduar."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"U pikas ngatërrim cookie-sh. Ju lutemi, pastroni cookie-t prej shfletuesit "
+"tuaj."
+
+msgid "messages.storageerror"
+msgstr "Lidhja me shërbyesin e depozitimit dështoi."
+
+msgid "messages.servererror"
+msgstr "Gabim Shërbyesi!"
+
+msgid "messages.servererrormsg"
+msgstr "Gabim Shërbyesi: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Numër i madh përpjekjesh të dështuara për hyrje. Riprovoni më vonë."
+
+msgid "messages.connerror"
+msgstr "Gabim Lidhjeje (S’u arrit të kapej shërbyesi)!"
+
+msgid "messages.dberror"
+msgstr "Gabim Baze të Dhënash!"
+
+msgid "messages.dbconnerror"
+msgstr "S’arrihet të lidhet me bazën e të dhënave!"
+
+msgid "messages.windowopenerror"
+msgstr "Dritarja flluskë u bllokua!"
+
+msgid "messages.requesttimedout"
+msgstr "Kërkesës i mbaroi koha"
+
+msgid "messages.errorreadonly"
+msgstr "S’arrihet të kryhet veprimi. Dosja është vetëm për lexim."
+
+msgid "messages.errornoperm"
+msgstr "S’arrihet të kryhet veprimi. Leje të mohuara."
+
+msgid "messages.erroroverquota"
+msgstr "S’arrihet të kryhet veprimi. S’ka hapësirë të lirë në disk."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"S’ka hapësirë të lirë në disk. Përdorni SHIFT+DEL që të fshini një mesazh."
+
+msgid "messages.invalidrequest"
+msgstr "Kërkesë e pavlefshme! S’u ruajt ndonjë e dhënë."
+
+msgid "messages.invalidhost"
+msgstr "Emër i pavlefshëm shërbyesi."
+
+msgid "messages.nomessagesfound"
+msgstr "S’u gjetën mesazhe në këtë kuti postare."
+
+msgid "messages.loggedout"
+msgstr "E përfunduat me sukses sesionin. Mirupafshim!"
+
+msgid "messages.mailboxempty"
+msgstr "Kutia postare është e zbrazët"
+
+msgid "messages.nomessages"
+msgstr "S’ka mesazhe"
+
+msgid "messages.refreshing"
+msgstr "Po rifreskohet…"
+
+msgid "messages.loading"
+msgstr "Po ngarkohet..."
+
+msgid "messages.uploading"
+msgstr "Po ngarkohet kartelë…"
+
+msgid "messages.attaching"
+msgstr "Po bashkëngjitet kartelë…"
+
+msgid "messages.uploadingmany"
+msgstr "Po ngarkohen kartela…"
+
+msgid "messages.loadingdata"
+msgstr "Po ngarkohen të dhëna..."
+
+msgid "messages.checkingmail"
+msgstr "Po kontrollohet për mesazhe të rinj..."
+
+msgid "messages.sendingmessage"
+msgstr "Po dërgohet mesazhi..."
+
+msgid "messages.messagesent"
+msgstr "Mesazhi u dërgua me sukses."
+
+msgid "messages.savingmessage"
+msgstr "Po ruhet mesazhi..."
+
+msgid "messages.messagesaved"
+msgstr "Mesazhi u ruajt te Skicat."
+
+msgid "messages.successfullysaved"
+msgstr "U ruajt me sukses."
+
+msgid "messages.savingresponse"
+msgstr "Po ruhet tekst përgjigjeje…"
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Doni vërtet të fshihet ky tekst përgjigjeje?"
+
+msgid "messages.nocontactselected"
+msgstr "S’keni përzgjedhur ende ndonjë kontakt."
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontakti u shtua me sukses në librin e adresave."
+
+msgid "messages.contactexists"
+msgstr "Ka tashmë një kontakt me të njëjtën adresë email."
+
+msgid "messages.contactnameexists"
+msgstr "Ka tashmë një kontakt me të njëjtin emër."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Që të mbrohet privatësia juaj, figurat e largëta të këtij mesazhi janë "
+"bllokuar."
+
+msgid "messages.blockedresources"
+msgstr "Për mbrojtjen e privatësisë tuaj janë bllokuar burime të largët."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Ky mesazh përmban adresa email të dyshimta që mund të jenë të rrejshme."
+
+msgid "messages.bccemail"
+msgstr "Mesazhi(et) e përcjella përmbajnë marrës të fshehtë (Bcc)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Mesazhi do të dërgohet pa ndonjë ndryshim, d.m.th. duke përdorur lëndën, "
+"kryet dhe marrësit origjinalë."
+
+msgid "messages.encryptedmessage"
+msgstr "Ky është një mesazh i fshehtëzuar dhe s’mund të shfaqet. Na ndjeni!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Ky është një mesazh i fshehtëzuar dhe mund të shfshehtëzohet me zgjerimin e "
+"shfletuesit tuaj."
+
+msgid "messages.nopubkeyfor"
+msgstr "S’u gjet kyç i vlefshëm publik për $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"S’u gjet kyç i vlefshëm publik për identitetin e dërguesit tuaj. Doni të "
+"fshehtëzohet mesazhi vetëm për marrësit?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Bashkëngjitjet tashmë të ngarkuara s’mund të fshehtëzohen. Ju lutemi, "
+"rishtojini te përpunuesi i fshehtëzimeve."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Doni të kërkohet në shërbyes publikë kyçesh për kyçin që mungon?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "U gjetën kyçet publikë vijues:"
+
+msgid "messages.keyservererror"
+msgstr "S'u arrit të merret kyç që nga shërbyesi i kyçeve."
+
+msgid "messages.keyimportsuccess"
+msgstr "Kyçi publik $key u importua me sukses te vargu juaj i kyçeve."
+
+msgid "messages.nocontactsfound"
+msgstr "S’u gjetën kontakte."
+
+msgid "messages.contactnotfound"
+msgstr "S’u gjet kontakti i kërkuar."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Duhet të përdorni një formular kërkimi që të shihni kontakte prej librit të "
+"përzgjedhur të adresave."
+
+msgid "messages.sendingfailed"
+msgstr "Dërgimi i mesazhit dështoi."
+
+msgid "messages.senttooquickly"
+msgstr "Ju lutemi, pritni $sec sekondë(a) përpara se të dërgohet ky mesazh."
+
+msgid "messages.errorsavingsent"
+msgstr "Ndodhi një gabim teksa ruhej mesazhi i dërguar."
+
+msgid "messages.errorsaving"
+msgstr "Ndodhi një gabim gjatë ruajtjes."
+
+msgid "messages.errormoving"
+msgstr "S’u lëviz dot mesazhi(et)."
+
+msgid "messages.errorcopying"
+msgstr "S’u kopjua dot mesazhi(et)."
+
+msgid "messages.errordeleting"
+msgstr "S’u fshi dot mesazhi(et)."
+
+msgid "messages.errormarking"
+msgstr "S’iu vu dot shenjë mesazhit(eve)."
+
+msgid "messages.alerttitle"
+msgstr "Kujdes"
+
+msgid "messages.confirmationtitle"
+msgstr "Jeni i sigurt se…"
+
+msgid "messages.deletecontactconfirm"
+msgstr "Doni vërtet të fshihet kontakti(et) i përzgjedhur?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Doni vërtet të fshihet grupi i përzgjedhur?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Doni vërtet të fshihet mesazhi(et) i përzgjedhur?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Doni vërtet të fshihet kjo dosje?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Doni vërtet të lëvizet kjo dosje?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Doni vërtet të fshihen krejt mesazhet në këtë dosje?"
+
+msgid "messages.contactdeleting"
+msgstr "Po fshihet kontakti(et)…"
+
+msgid "messages.groupdeleting"
+msgstr "Po fshihet grupi…"
+
+msgid "messages.folderdeleting"
+msgstr "Po fshihet dosja…"
+
+msgid "messages.foldermoving"
+msgstr "Po lëvizet dosja…"
+
+msgid "messages.foldersubscribing"
+msgstr "Po bëhet pajtimi te dosja…"
+
+msgid "messages.folderunsubscribing"
+msgstr "Po hiqet pajtimi te dosja…"
+
+msgid "messages.formincomplete"
+msgstr "Formulari s’u plotësua i tëri."
+
+msgid "messages.noemailwarning"
+msgstr "Ju lutemi, jepni një adresë email të vlefshme."
+
+msgid "messages.nonamewarning"
+msgstr "Ju lutemi, jepni një emër."
+
+msgid "messages.nopagesizewarning"
+msgstr "Ju lutemi, jepni një madhësi faqeje."
+
+msgid "messages.nosenderwarning"
+msgstr "Ju lutemi, jepni adresë email të dërguesit."
+
+msgid "messages.recipientsadded"
+msgstr "Marrësi(at) u shtuan me sukses."
+
+msgid "messages.norecipientwarning"
+msgstr "Ju lutemi, jepni të paktën një marrës."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Krejt pjesëmarrësit do të shohin adresat email të njëri-tjetrit. Për të "
+"parandaluar  këtë dhe mbrojtur privatësinë e tyre, mund të përdorni fushën "
+"Bcc."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Shumë pjesëmarrës publikë"
+
+msgid "messages.nosubjectwarning"
+msgstr "Fusha \"Subjekt\" është e zbrazët. Do të donit të jepnit një tani?"
+
+msgid "messages.nosubjecttitle"
+msgstr "S’ka subjekt"
+
+msgid "messages.nobodywarning"
+msgstr "Të dërgohet mesazhi pa tekst?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Mesazhi s’është dërguar dhe ka ndryshime të paruajtura. Doni të hidhen tej "
+"ndryshimet tuaja?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"U gjet një mesazh i hartuar më parë, por i padërguar.\\n\\nSubjekt: "
+"$subject\\nRuajtur më: $date\\n\\nDoni të rimerret ky mesazh?"
+
+msgid "messages.nosearchname"
+msgstr "Ju lutemi, jepni emër kontakti ose adresë email."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"S’janë ngarkuar ende krejt bashkëngjitjet. Ju lutemi, prisni ose anulojeni "
+"ngarkimin."
+
+msgid "messages.searchsuccessful"
+msgstr "U gjetën $nr mesazhe."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "U gjetën $nr kontakte."
+
+msgid "messages.searchnomatch"
+msgstr "Kërkimi s’ktheu përputhje."
+
+msgid "messages.searching"
+msgstr "Po kërkohet…"
+
+msgid "messages.checking"
+msgstr "Po kontrollohet…"
+
+msgid "messages.stillsearching"
+msgstr "Ende në kërkim…"
+
+msgid "messages.nospellerrors"
+msgstr "S’u gjetën gabime drejtshkrimi."
+
+msgid "messages.folderdeleted"
+msgstr "Dosja u fshi me sukses."
+
+msgid "messages.foldersubscribed"
+msgstr "Pajtimi te dosja u krye me sukses."
+
+msgid "messages.folderunsubscribed"
+msgstr "Pajtimi te dosja u hoq me sukses."
+
+msgid "messages.folderpurged"
+msgstr "Dosja u zbraz me sukses."
+
+msgid "messages.folderexpunged"
+msgstr "Dosja u ngjesh me sukses."
+
+msgid "messages.deletedsuccessfully"
+msgstr "U fshi me sukses."
+
+msgid "messages.converting"
+msgstr "Po i hiqet formatimi…"
+
+msgid "messages.messageopenerror"
+msgstr "S’u ngarkuan dot mesazhe që nga shërbyesi."
+
+msgid "messages.filelinkerror"
+msgstr "Dështoi bashkëngjitja e kartelës."
+
+msgid "messages.fileuploaderror"
+msgstr "Dështoi ngarkimi i kartelës."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"Nuk mbulohet importimi njëherësh i shumë kartelave CSV me fusha të ndryshme."
+
+msgid "messages.filesizeerror"
+msgstr "Kartela e ngarkuar e tejkalon madhësinë maksimum prej $size."
+
+msgid "messages.filecounterror"
+msgstr "Mund të ngarkoni e shumta $count kartela njëherësh."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Dështoi bashkëngjitja e një kartele. Tejkalohej madhësi maksimum e një "
+"mesazhi ($size)."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"U tejkalua madhësia maksimum për mesazhet ($size). S’u bashkëngjit(ën) $num "
+"mesazh(e)."
+
+msgid "messages.copysuccess"
+msgstr "U kopjuan me sukses $nr kontakte."
+
+msgid "messages.movesuccess"
+msgstr "U lëvizën me sukses $nr kontakte."
+
+msgid "messages.copyerror"
+msgstr "S’u kopjua dot ndonjë kontakt."
+
+msgid "messages.moveerror"
+msgstr "S’u lëviz dot ndonjë kontakt."
+
+msgid "messages.sourceisreadonly"
+msgstr "Ky burim adrese është vetëm i lexueshëm."
+
+msgid "messages.errorsavingcontact"
+msgstr "S’u ruajt dot adresa e kontaktit."
+
+msgid "messages.movingmessage"
+msgstr "Po lëvizet mesazhi(et)..."
+
+msgid "messages.copyingmessage"
+msgstr "Po kopjohet mesazhi(et)…"
+
+msgid "messages.copyingcontact"
+msgstr "Po kopjohet kontakti(et)…"
+
+msgid "messages.movingcontact"
+msgstr "Po lëvizet kontakti(et)…"
+
+msgid "messages.deletingmessage"
+msgstr "Po fshihet mesazhi(et)…"
+
+msgid "messages.markingmessage"
+msgstr "Po i vihet shenjë mesazhit(et)…"
+
+msgid "messages.addingmember"
+msgstr "Po shtohet kontakti(et) te grupi…"
+
+msgid "messages.removingmember"
+msgstr "Po hiqet kontakti(et) nga grupi…"
+
+msgid "messages.receiptsent"
+msgstr "U dërgua me sukses dëftesë leximi."
+
+msgid "messages.errorsendingreceipt"
+msgstr "S’u dërgua dot dëftesa."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Doni vërtet të fshihet ky identitet?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Këtë identitet s’mund ta fshini, është i fundit i juaji."
+
+msgid "messages.forbiddencharacter"
+msgstr "Emri i dosjes përmban një shenjë të ndaluar."
+
+msgid "messages.selectimportfile"
+msgstr "Ju lutemi, përzgjidhni kartelë për ngarkim."
+
+msgid "messages.addresswriterror"
+msgstr "Libri i adresave i përzgjedhur s’është i shkrueshëm."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Kontaktet u shtuan me sukses te ky grup."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontaktet u hoqën me sukses nga ky grup."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "S’pati ndryshime në përshoqërime grupi."
+
+msgid "messages.importwait"
+msgstr "Po importohet, ju lutemi, prisni…"
+
+msgid "messages.importformaterror"
+msgstr ""
+"Importimi dështoi! Kartela e ngarkuar s’është kartelë e vlefshme të dhënash "
+"importimi."
+
+msgid "messages.importconfirm"
+msgstr "<b>U importuan me sukses $inserted kontakte</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>U anashkaluan $skipped kontakte ekzistuese</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>U anashkaluan $invalid kontakte të pavlefshme</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "<b>S’u arrit të importohen $errors kontakte të vlefshme</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "U importuan me sukses $nr mesazhe"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Importimi dështoi! Kartela e ngarkuar s’është kartelë e vlefshme mesazhi apo"
+" kutie postare"
+
+msgid "messages.opnotpermitted"
+msgstr "Veprim i palejuar!"
+
+msgid "messages.nofromaddress"
+msgstr "Në identitetin e përzgjedhur mungon adresë email."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Këmbimi i llojit të përpunuesit mund të shkaktojë humbjen e formatimit të "
+"tekstit. Doni të vazhdohet?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Ndodhi një gabim fatal formësimi. Lidhuni menjëherë me përgjegjësin tuaj. "
+"<b>Mesazhi juaj s’u dërgua dot.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Gabim SMTP ($code): Lidhja me shërbyesin dështoi."
+
+msgid "messages.smtpautherror"
+msgstr "Gabim SMTP ($code): Mirëfilltësimi dështoi."
+
+msgid "messages.smtpfromerror"
+msgstr "Gabim SMTP ($code): Dështoi rregullimi i dërguesit \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "Gabim SMTP ($code): Dështoi shtimi i marrësit \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "Gabim SMTP: S’arrihet të përtypet lista e marrësve."
+
+msgid "messages.smtputf8error"
+msgstr "Gabim SMTP: Shërbyesi nuk mbulon kodim Unikod në adresa email."
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+"Gabim SMTP: Madhësia e mesazhit e tejkalon kufirin e shërbyesit ($limit)"
+
+msgid "messages.smtperror"
+msgstr "Gabim SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Adresë email e pavlefshme: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Shumë marrës. Zvogëloni numrin e marrësve deri në $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Numri i anëtarëve të grupit e tejkalon maksimumin prej $max."
+
+msgid "messages.internalerror"
+msgstr "Ndodhi një gabim i brendshëm. Ju lutemi, riprovoni."
+
+msgid "messages.contactdelerror"
+msgstr "S’u fshi dot kontakti(et)."
+
+msgid "messages.contactdeleted"
+msgstr "Kontakti(et) u fshi me sukses."
+
+msgid "messages.contactrestoreerror"
+msgstr "S’u rikthye dot kontakti(et) i fshirë."
+
+msgid "messages.contactrestored"
+msgstr "Kontakti(et) u rikthye me sukses."
+
+msgid "messages.groupdeleted"
+msgstr "Grupi u fshi me sukses."
+
+msgid "messages.grouprenamed"
+msgstr "Grupi u riemërtua me sukses."
+
+msgid "messages.groupcreated"
+msgstr "Grupi u krijua me sukses."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Kërkimi i ruajtur u fshi me sukses."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "S’u fshi dot kërkimi i ruajtur."
+
+msgid "messages.savedsearchcreated"
+msgstr "Kërkimi i ruajtur u krijua me sukses."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "S’u krijua dot kërkimi i ruajtur."
+
+msgid "messages.messagedeleted"
+msgstr "Mesazhi(et) u fshi me sukses."
+
+msgid "messages.messagemoved"
+msgstr "Mesazhi(et) u lëviz me sukses."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Mesazhi(et) u shpunë me sukses te Hedhurinat."
+
+msgid "messages.messagecopied"
+msgstr "Mesazhi(et) u kopjua me sukses."
+
+msgid "messages.messagemarked"
+msgstr "Mesazhi(et) iu vu shenjë me sukses."
+
+msgid "messages.autocompletechars"
+msgstr "Për vetëplotësim jepni të paktën $min shenjë."
+
+msgid "messages.autocompletemore"
+msgstr ""
+"U gjetën më tepër zëra me përputhje. Ju lutemi, shtypni më tepër shenja."
+
+msgid "messages.namecannotbeempty"
+msgstr "Emri s’mund të jetë i zbrazët."
+
+msgid "messages.nametoolong"
+msgstr "Emri është shumë i gjatë."
+
+msgid "messages.namedotforbidden"
+msgstr "Emri i dosjes s’mund të fillojë me një pikë."
+
+msgid "messages.folderupdated"
+msgstr "Dosja u përditësua me sukses."
+
+msgid "messages.foldercreated"
+msgstr "Dosja u krijua me sukses."
+
+msgid "messages.invalidimageformat"
+msgstr "Format i pavlefshëm figure."
+
+msgid "messages.mispellingsfound"
+msgstr "U pikasën gabime drejtshkrimi te mesazhi."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"S’arrihet të krijohet/lëvizet dosje te dosja mëmë e përzgjedhur. Pa të "
+"drejta hyrjeje."
+
+msgid "messages.messagetoobig"
+msgstr "Pjesa e mesazhit është shumë e madhe për ta përpunuar."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Kjo bashkëngjite është e dyshimtë, ngaqë nuk përputhet me llojin e deklaruar"
+" në mesazh. Nëse nuk e besoni dërguesin, s’duhet ta hapni në shfletues, "
+"ngaqë mund të përmbajë lëndë dashakeqe.<br/><br/><em>Pritej: $expected; u "
+"gjet: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Kujdes: Ky shërbyes webmail lyp Javascript! Që të mund ta përdorni, ju "
+"lutemi, aktivizoni Javascript-in te rregullimet e shfletuesit tuaj."
+
+msgid "messages.messageissent"
+msgstr "Mesazhi qe dërguar tashmë, por s’qe ruajtur ende. Doni ta ruani tani?"
+
+msgid "messages.errnotfound"
+msgstr "Kartelë Që S’gjendet"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Burimi i kërkuar nuk u gjet!"
+
+msgid "messages.errfailedrequest"
+msgstr "Kërkesë e dështuar"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Mirëfilltësimi Dështoi"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "S’u verifikua dot se jeni i autorizuar të hyni në këtë shërbim!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Dështoi Kontrolli i Kërkesës"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Për hir të mbrojtjes tuaj, hyrja në këtë burim është e siguruar kundrejt CSRF-së.\n"
+"Nëse e shihni këtë sinjalizim, ka gjasa që s’bëtë daljen para se të dilnit nga aplikacioni web.\n"
+"\n"
+"Që të vazhdohet, tani lypset ndërveprim nga qenie njerëzore."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Ju lutemi, lidhuni me përgjegjësin e shërbyesit tuaj."
+
+msgid "messages.clicktoresumesession"
+msgstr "Klikoni këtu që të të rimerret sesioni juaj i mëparshëm"
+
+msgid "messages.errcomposesession"
+msgstr "Gabim sesioni hartimi"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "S’u gjet sesioni i kërkuar i hartimit."
+
+msgid "messages.clicktocompose"
+msgstr "Klikoni këtu që të hartoni një mesazh të ri"
+
+msgid "messages.nosupporterror"
+msgstr "Kjo veçori nuk mbulohet nga shfletuesi juaj."
+
+msgid "messages.siginserted"
+msgstr "Nënshkrimi u fut me sukses."
+
+msgid "messages.responseinserted"
+msgstr "Përgjigja u fut me sukses."
+
+msgid "messages.noresponsesavailable"
+msgstr "S’ka përgjigje"
+
+msgid "messages.listempty"
+msgstr "Lista është e zbrazët."
+
+msgid "messages.listusebutton"
+msgstr "Përdorni butonin Krijoje që të shtoni një zë të ri."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Për $identity u krijua me sukses një dyshe e re kyçesh."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Kjo bashkëngjitje duket të jetë e zbrazët. <br>Ju lutemi, kontrolloni duke u"
+" lidhur me personin që e dërgoi."
+
+msgid "messages.oauthloginfailed"
+msgstr "Hyrja me OAuth dështoi. Ju lutemi, riprovoni."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Kërkesa për autorizim qe e pavlefshme, ose jo e plotë."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Shërbyesi i autorizimit, ose përdoruesi nuk pranuan kërkesën."

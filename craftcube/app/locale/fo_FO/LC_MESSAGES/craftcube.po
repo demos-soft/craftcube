@@ -1,0 +1,2869 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: fo_FO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Vælkomin til $product"
+
+msgid "username"
+msgstr "Brúkaranavn"
+
+msgid "password"
+msgstr "Loyniorð"
+
+msgid "server"
+msgstr "Ambætari"
+
+msgid "login"
+msgstr "Rita inn"
+
+msgid "oauthlogin"
+msgstr "Rita inn við $provider"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "logout"
+msgstr "Rita út"
+
+msgid "mail"
+msgstr "Teldupostur"
+
+msgid "settings"
+msgstr "Stillingar"
+
+msgid "addressbook"
+msgstr "Búðstaðarsavn"
+
+msgid "darkmode"
+msgstr "Myrkt snið"
+
+msgid "lightmode"
+msgstr "Ljóst snið"
+
+msgid "inbox"
+msgstr "Postur"
+
+msgid "drafts"
+msgstr "Skitsur"
+
+msgid "sent"
+msgstr "Sent"
+
+msgid "trash"
+msgstr "Skrell"
+
+msgid "junk"
+msgstr "Møsn"
+
+msgid "show_real_foldernames"
+msgstr "Vís verulig nøvn til serligar mappur"
+
+msgid "subject"
+msgstr "Evni"
+
+msgid "from"
+msgstr "Frá"
+
+msgid "sender"
+msgstr "Sendari"
+
+msgid "to"
+msgstr "Til"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Svara-til"
+
+msgid "followupto"
+msgstr "Fylg við-til"
+
+msgid "date"
+msgstr "Tann"
+
+msgid "size"
+msgstr "Stødd"
+
+msgid "priority"
+msgstr "Raðfesting"
+
+msgid "organization"
+msgstr "Fyritøka"
+
+msgid "readstatus"
+msgstr "Lesistøða"
+
+msgid "listoptions"
+msgstr "Lýs valmøguleikar..."
+
+msgid "listoptionstitle"
+msgstr "Finn boð"
+
+msgid "mailboxlist"
+msgstr "Mappur"
+
+msgid "messagesfromto"
+msgstr "Boðini frá $from til $to ið tilsamans eru $count"
+
+msgid "threadsfromto"
+msgstr "Tráðirnir frá $from til $to ið eru $count"
+
+msgid "messagenrof"
+msgstr "Boð nummar $nr, av $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to ið eru $count"
+
+msgid "copy"
+msgstr "Avrita"
+
+msgid "move"
+msgstr "Flyt"
+
+msgid "moveto"
+msgstr "Flyt til..."
+
+msgid "copyto"
+msgstr "Avrita til..."
+
+msgid "download"
+msgstr "Tak niður"
+
+msgid "open"
+msgstr "Lat upp"
+
+msgid "showattachment"
+msgstr "Vís"
+
+msgid "showanyway"
+msgstr "Vís tað avlíkavæl"
+
+msgid "filename"
+msgstr "Fílu navn"
+
+msgid "filesize"
+msgstr "Fílu stødd"
+
+msgid "addtoaddressbook"
+msgstr "Legg aftrat búðstaðar bók"
+
+msgid "sun"
+msgstr "Sun"
+
+msgid "mon"
+msgstr "Mán"
+
+msgid "tue"
+msgstr "Týs"
+
+msgid "wed"
+msgstr "Mik"
+
+msgid "thu"
+msgstr "Hós"
+
+msgid "fri"
+msgstr "Frí"
+
+msgid "sat"
+msgstr "Ley"
+
+msgid "sunday"
+msgstr "Sunnudagur"
+
+msgid "monday"
+msgstr "Mánadagur"
+
+msgid "tuesday"
+msgstr "Týsdagur"
+
+msgid "wednesday"
+msgstr "Mikudagur"
+
+msgid "thursday"
+msgstr "Hósdagur"
+
+msgid "friday"
+msgstr "Fríggjardagur"
+
+msgid "saturday"
+msgstr "Leygardagur"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "Maj"
+
+msgid "jun"
+msgstr "Jun"
+
+msgid "jul"
+msgstr "Jul"
+
+msgid "aug"
+msgstr "Aug"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Des"
+
+msgid "longjan"
+msgstr "Januar"
+
+msgid "longfeb"
+msgstr "Februar"
+
+msgid "longmar"
+msgstr "Mars"
+
+msgid "longapr"
+msgstr "Apríl"
+
+msgid "longmay"
+msgstr "Maj"
+
+msgid "longjun"
+msgstr "Juni"
+
+msgid "longjul"
+msgstr "July"
+
+msgid "longaug"
+msgstr "August"
+
+msgid "longsep"
+msgstr "Septembur"
+
+msgid "longoct"
+msgstr "Oktobur"
+
+msgid "longnov"
+msgstr "Novembur"
+
+msgid "longdec"
+msgstr "Desembur"
+
+msgid "today"
+msgstr "Í dag"
+
+msgid "refresh"
+msgstr "Endur innles"
+
+msgid "checkmail"
+msgstr "Kanna fyri nýggj boð."
+
+msgid "compose"
+msgstr "Stovna"
+
+msgid "writenewmessage"
+msgstr "Stovna nýggj boð"
+
+msgid "reply"
+msgstr "Svara"
+
+msgid "replytomessage"
+msgstr "Svara sendara"
+
+msgid "replytoallmessage"
+msgstr "Svara listanum ella sendaranum og øllum móttakarunum"
+
+msgid "replyall"
+msgstr "Svara øllum"
+
+msgid "replylist"
+msgstr "Svara lista"
+
+msgid "forward"
+msgstr "Send víðari"
+
+msgid "forwardinline"
+msgstr "Svara víðari, við gomlum teksti"
+
+msgid "forwardattachment"
+msgstr "Send víðari sum viðhefting"
+
+msgid "forwardmessage"
+msgstr "Send hesi boð víðari"
+
+msgid "bouncemsg"
+msgstr "Send umaftur (bounce)"
+
+msgid "bounce"
+msgstr "Send umaftur"
+
+msgid "deletemessage"
+msgstr "Strika boð"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Koyr boð í skrell"
+
+msgid "printmessage"
+msgstr "Útskriva hesi boð"
+
+msgid "previousmessage"
+msgstr "Vís seinastu boð"
+
+msgid "firstmessage"
+msgstr "Vís fyrstu boð"
+
+msgid "nextmessage"
+msgstr "Vís næstu boð"
+
+msgid "lastmessage"
+msgstr "Vís seinastu boð"
+
+msgid "backtolist"
+msgstr "Aftur til boð lista"
+
+msgid "viewsource"
+msgstr "Vís keldu"
+
+msgid "mark"
+msgstr "Merk"
+
+msgid "markmessages"
+msgstr "Merk boð"
+
+msgid "markread"
+msgstr "Sum lisin"
+
+msgid "markunread"
+msgstr "Sum ólisin"
+
+msgid "markflagged"
+msgstr "Sum viðmerkt"
+
+msgid "markunflagged"
+msgstr "Sum óviðmerkt"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Fleiri gerir..."
+
+msgid "markallread"
+msgstr "Merk alt sum lisið"
+
+msgid "folders-cur"
+msgstr "Einans vald mappa"
+
+msgid "folders-sub"
+msgstr "Einans vald mappa og undirmappa"
+
+msgid "folders-all"
+msgstr "Allar mappur"
+
+msgid "more"
+msgstr "Meira"
+
+msgid "back"
+msgstr "Aftur"
+
+msgid "options"
+msgstr "Valmøguleikar"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr "Gerðir"
+
+msgid "first"
+msgstr "Fyrst"
+
+msgid "last"
+msgstr "Síðst"
+
+msgid "previous"
+msgstr "Fyrra"
+
+msgid "next"
+msgstr "Seinna"
+
+msgid "select"
+msgstr "Vel"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Alt"
+
+msgid "none"
+msgstr "Einki"
+
+msgid "currpage"
+msgstr "Hesa síðu"
+
+msgid "isread"
+msgstr "Les"
+
+msgid "unread"
+msgstr "Ólisið"
+
+msgid "flagged"
+msgstr "Viðmerkt"
+
+msgid "unflagged"
+msgstr "Ikk merkt"
+
+msgid "unanswered"
+msgstr "Ikki svara"
+
+msgid "withattachment"
+msgstr "Við viðhefting"
+
+msgid "deleted"
+msgstr "Strika"
+
+msgid "undeleted"
+msgstr "Ikki strika"
+
+msgid "replied"
+msgstr "Svara"
+
+msgid "forwarded"
+msgstr "Víðari sent"
+
+msgid "invert"
+msgstr "Vend við"
+
+msgid "filter"
+msgstr "Síla"
+
+msgid "list"
+msgstr "Listið"
+
+msgid "threads"
+msgstr "Tráðir"
+
+msgid "expand-all"
+msgstr "Spreið alt"
+
+msgid "expand-unread"
+msgstr "Spreið ólisið"
+
+msgid "collapse-all"
+msgstr "Sett saman alt"
+
+msgid "threaded"
+msgstr "Tráða"
+
+msgid "showunread"
+msgstr "Vís ólisin boð"
+
+msgid "autoexpand_threads"
+msgstr "Spreið boð tráðir"
+
+msgid "do_expand"
+msgstr "Allir tráðir"
+
+msgid "expand_only_unread"
+msgstr "einans við ólisin boð"
+
+msgid "fromto"
+msgstr "Frá/Til"
+
+msgid "flag"
+msgstr "Viðmerk"
+
+msgid "attachment"
+msgstr "Viðhefting"
+
+msgid "nonesort"
+msgstr "Einki"
+
+msgid "sentdate"
+msgstr "Sent dato"
+
+msgid "arrival"
+msgstr "Móttikið dato"
+
+msgid "asc"
+msgstr "hækkandi"
+
+msgid "desc"
+msgstr "lækkandi"
+
+msgid "listcolumns"
+msgstr "List teigar"
+
+msgid "listsorting"
+msgstr "Sorterar teiga"
+
+msgid "listorder"
+msgstr "Sorterar rekkjufylgju"
+
+msgid "listmode"
+msgstr "Lista vísing"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr "Snið"
+
+msgid "layoutwidescreen"
+msgstr "Breiðan skíggja"
+
+msgid "layoutdesktop"
+msgstr "Skriviborð"
+
+msgid "layoutlist"
+msgstr "Listið"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Mappu gerir..."
+
+msgid "compact"
+msgstr "Trýst saman"
+
+msgid "empty"
+msgstr "Tøm"
+
+msgid "importmessages"
+msgstr "Innflyt boð"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Disk nýtsla"
+
+msgid "unknown"
+msgstr "ókent"
+
+msgid "unlimited"
+msgstr "óavmarka"
+
+msgid "quotatype"
+msgstr "Kvotu slag"
+
+msgid "quotatotal"
+msgstr "Mark"
+
+msgid "quotaused"
+msgstr "Brúkt"
+
+msgid "quotastorage"
+msgstr "Disk pláss"
+
+msgid "quotamessage"
+msgstr "Tal av boðum"
+
+msgid "shortheaderdate"
+msgstr "Tann $date"
+
+msgid "shortheaderto"
+msgstr "Til $to tann $date"
+
+msgid "shortheaderfrom"
+msgstr "Frá $to tann $date"
+
+msgid "quicksearch"
+msgstr "Skjót leiting"
+
+msgid "searchplaceholder"
+msgstr "Leita..."
+
+msgid "resetsearch"
+msgstr "Nulstilla leiting"
+
+msgid "searchmod"
+msgstr "Leiti minkarir"
+
+msgid "msgtext"
+msgstr "Øll boðini"
+
+msgid "body"
+msgstr "Breyðteksti"
+
+msgid "type"
+msgstr "Slag"
+
+msgid "namex"
+msgstr "Navn"
+
+msgid "searchscope"
+msgstr "Leita frá"
+
+msgid "currentfolder"
+msgstr "Verandi mappa"
+
+msgid "subfolders"
+msgstr "Hendan og mappur undir hesari"
+
+msgid "allfolders"
+msgstr "Allar mappur"
+
+msgid "searchinterval-1W"
+msgstr "eldri enn eina viku"
+
+msgid "searchinterval-1M"
+msgstr "eldri enn ein mána"
+
+msgid "searchinterval-1Y"
+msgstr "eldri enn eitt ár"
+
+msgid "searchinterval1W"
+msgstr "yngri enn ein vika"
+
+msgid "searchinterval1M"
+msgstr "yngri enn ein mána"
+
+msgid "searchinterval1Y"
+msgstr "yngri enn eitt ár"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Lat upp í nýggjum vindeyga"
+
+msgid "emlsave"
+msgstr "Tak niður (.eml)"
+
+msgid "changeformattext"
+msgstr "Vís í reinun teksti formati"
+
+msgid "changeformathtml"
+msgstr "Vís í HTML formati"
+
+msgid "editasnew"
+msgstr "Broyt sum nýtt"
+
+msgid "send"
+msgstr "Send"
+
+msgid "sendmessage"
+msgstr "Send boð"
+
+msgid "savemessage"
+msgstr "Goym sum skitsa"
+
+msgid "addattachment"
+msgstr "Viðheft fíl"
+
+msgid "charset"
+msgstr "Stavusett"
+
+msgid "editortype"
+msgstr "Útgevara slag"
+
+msgid "returnreceipt"
+msgstr "Lat aftur kvittan"
+
+msgid "dsn"
+msgstr "Útflýggja støðu kunngerð"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "Tann $date, skrivaði $sender:"
+
+msgid "originalmessage"
+msgstr "Uppruna boð"
+
+msgid "selectimage"
+msgstr "Vel mynd"
+
+msgid "addimage"
+msgstr "Legg mynd afturat"
+
+msgid "selectmedia"
+msgstr "Vel film"
+
+msgid "addmedia"
+msgstr "Legg film afturat"
+
+msgid "encrypt"
+msgstr "Brongla"
+
+msgid "encryptmessage"
+msgstr "Brongla boð"
+
+msgid "encryptmessagemailvelope"
+msgstr "Brongla boð við Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Innflyt allmennar lyklar"
+
+msgid "encryptedsendialog"
+msgstr "Sendur brongla boð"
+
+msgid "encryptandsign"
+msgstr "Brongla og undirrita"
+
+msgid "keyid"
+msgstr "Lykla ID"
+
+msgid "keylength"
+msgstr "Bit"
+
+msgid "keyexpired"
+msgstr "Útgingin"
+
+msgid "keyrevoked"
+msgstr "Sagdur úr gildi"
+
+msgid "bccinstead"
+msgstr "Nýt Bcc"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Legg inn"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "Móttakari"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Broyt samleikar"
+
+msgid "spellcheck"
+msgstr "Stava"
+
+msgid "checkspelling"
+msgstr "Kanna staving"
+
+msgid "resumeediting"
+msgstr "Taka uppaftur skriving"
+
+msgid "revertto"
+msgstr "Vend aftur til"
+
+msgid "restore"
+msgstr "Endurstovna"
+
+msgid "restoremessage"
+msgstr "Endurstovna boð?"
+
+msgid "ignore"
+msgstr "Skúgva til viks"
+
+msgid "responses"
+msgstr "Svør"
+
+msgid "insertresponse"
+msgstr "Innset eitt svar"
+
+msgid "manageresponses"
+msgstr "Umsit svør"
+
+msgid "newresponse"
+msgstr "Stovna nýtt svar"
+
+msgid "addresponse"
+msgstr "Svara"
+
+msgid "editresponse"
+msgstr "Broyt svar"
+
+msgid "editresponses"
+msgstr "Broyt svør"
+
+msgid "responsename"
+msgstr "Navn"
+
+msgid "responsetext"
+msgstr "Svar tekstur"
+
+msgid "attach"
+msgstr "Viðheft"
+
+msgid "attachments"
+msgstr "Viðheftingar"
+
+msgid "upload"
+msgstr "Uppsend"
+
+msgid "uploadprogress"
+msgstr "$percent ($current av $total)"
+
+msgid "close"
+msgstr "Lat aftur"
+
+msgid "messageoptions"
+msgstr "Boð valmøguleikar..."
+
+msgid "togglecomposeoptions"
+msgstr "Skift stovningar møguleikar"
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Lágt"
+
+msgid "lowest"
+msgstr "Lægst"
+
+msgid "normal"
+msgstr "Vanligt"
+
+msgid "high"
+msgstr "Høgt"
+
+msgid "highest"
+msgstr "Hægst"
+
+msgid "nosubject"
+msgstr "(einki evni)"
+
+msgid "showimages"
+msgstr "Vís myndir"
+
+msgid "allow"
+msgstr "Loyv"
+
+msgid "alwaysshow"
+msgstr "Vís altíð myndir frá $sender"
+
+msgid "alwaysallow"
+msgstr "Loyv altíð frá $sender"
+
+msgid "isdraft"
+msgstr "Hetta er eini skitsu boð."
+
+msgid "andnmore"
+msgstr "$nr afturat..."
+
+msgid "details"
+msgstr "Upplýsingar"
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Vís meiri boð teksthøvd "
+
+msgid "togglefullheaders"
+msgstr "Vel ráðan boð teksthøvd"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Reiður tekstur"
+
+msgid "savesentmessagein"
+msgstr "Goym boð í "
+
+msgid "dontsave"
+msgstr "goym ikki"
+
+msgid "maxuploadsize"
+msgstr "Stórsta loyvda fílu stødd er $size"
+
+msgid "addcc"
+msgstr "Legg Cc afturat"
+
+msgid "addbcc"
+msgstr "Legg Bcc afturat"
+
+msgid "addreplyto"
+msgstr "Legg aftrat Svara-til"
+
+msgid "addfollowupto"
+msgstr "Legg aftrat Fylg við-til"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Sendarin av hesum boðunum umbiður at verða fráboðaður tá ið tú lesur hesið "
+"boð. Ynskir tú at fráboða sendaranum?"
+
+msgid "receiptread"
+msgstr "Svara móttakara (les)"
+
+msgid "yourmessage"
+msgstr "Hetta er ein afturvend kvittan av tíni boð"
+
+msgid "receiptnote"
+msgstr ""
+"Gev gætur: Kvittanin vísir einans á at boðini vóru sýnd á teldu mótakarans. "
+"Vissa er ikki fyri at móttakarin hevur lisið ella skilt boðini."
+
+msgid "sendalwaysto"
+msgstr "Send altíð til $email"
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Fult navn"
+
+msgid "firstname"
+msgstr "Fornavn"
+
+msgid "surname"
+msgstr "Eftirnavn"
+
+msgid "middlename"
+msgstr "Millunnavn"
+
+msgid "nameprefix"
+msgstr "Forskoyti"
+
+msgid "namesuffix"
+msgstr "Eftirskoyti"
+
+msgid "nickname"
+msgstr "Eyknevni"
+
+msgid "jobtitle"
+msgstr "Starvsheiti"
+
+msgid "department"
+msgstr "Deild"
+
+msgid "gender"
+msgstr "Kyn"
+
+msgid "maidenname"
+msgstr "Gentunavn"
+
+msgid "email"
+msgstr "Teldupostur"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Búðstaður"
+
+msgid "street"
+msgstr "Gøta"
+
+msgid "locality"
+msgstr "Býur"
+
+msgid "zipcode"
+msgstr "Postnummar"
+
+msgid "region"
+msgstr "Kommuna"
+
+msgid "country"
+msgstr "Land"
+
+msgid "birthday"
+msgstr "Føðingardagur"
+
+msgid "anniversary"
+msgstr "Ársdagur"
+
+msgid "website"
+msgstr "Heimasíða"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Notatir"
+
+msgid "male"
+msgstr "maður"
+
+msgid "female"
+msgstr "kona"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr "annað"
+
+msgid "manager"
+msgstr "Leiðari"
+
+msgid "assistant"
+msgstr "Hjálparfólk"
+
+msgid "spouse"
+msgstr "Hjúnafelagi"
+
+msgid "allfields"
+msgstr "Allir teigar"
+
+msgid "search"
+msgstr "Leita"
+
+msgid "searchresult"
+msgstr "Leiti úrslit"
+
+msgid "advsearch"
+msgstr "Víðkað leiting"
+
+msgid "advanced"
+msgstr "Vìkað"
+
+msgid "other"
+msgstr "Annað"
+
+msgid "printcontact"
+msgstr "Útskriva persón"
+
+msgid "qrcode"
+msgstr "QR kota"
+
+msgid "typehome"
+msgstr "Heim"
+
+msgid "typework"
+msgstr "Arbeiði"
+
+msgid "typeother"
+msgstr "Annað"
+
+msgid "typemobile"
+msgstr "Fartelefon"
+
+msgid "typemain"
+msgstr "Høvuðs"
+
+msgid "typehomefax"
+msgstr "Heima faks"
+
+msgid "typeworkfax"
+msgstr "Arbeiðis faks"
+
+msgid "typecar"
+msgstr "Bilur"
+
+msgid "typepager"
+msgstr "Persónleitari"
+
+msgid "typevideo"
+msgstr "Sjónband"
+
+msgid "typeassistant"
+msgstr "Hjálparfólk"
+
+msgid "typehomepage"
+msgstr "Heimasíða"
+
+msgid "typeblog"
+msgstr "Bloggur"
+
+msgid "typeprofile"
+msgstr "Umhvarv "
+
+msgid "addfield"
+msgstr "Legg teig afturat..."
+
+msgid "addcontact"
+msgstr "Stovna persón"
+
+msgid "editcontact"
+msgstr "Broyt persón"
+
+msgid "contacts"
+msgstr "Persónar"
+
+msgid "contactproperties"
+msgstr "Persóna eginleikar"
+
+msgid "contactnameandorg"
+msgstr "Navn og felag"
+
+msgid "personalinfo"
+msgstr "Persónligir upplýsingar"
+
+msgid "personal"
+msgstr "Persónlig"
+
+msgid "contactphoto"
+msgstr "Mynd av persóni"
+
+msgid "edit"
+msgstr "Broyt"
+
+msgid "cancel"
+msgstr "Ógilda"
+
+msgid "save"
+msgstr "Goym"
+
+msgid "delete"
+msgstr "Strika"
+
+msgid "discard"
+msgstr "Strika"
+
+msgid "continue"
+msgstr "Víðari"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Nýnevn"
+
+msgid "addphoto"
+msgstr "Legg aftrat"
+
+msgid "replacephoto"
+msgstr "Skift út"
+
+msgid "uploadphoto"
+msgstr "Uppsend mynd"
+
+msgid "choosefile"
+msgstr "Vel fíl..."
+
+msgid "choosefiles"
+msgstr "Vel fílar..."
+
+msgid "browse"
+msgstr "Kaga"
+
+msgid "newcontact"
+msgstr "Stovna nýggjan persón"
+
+msgid "deletecontact"
+msgstr "Strika valdar persónar"
+
+msgid "composeto"
+msgstr "Skriva boð til"
+
+msgid "contactsfromto"
+msgstr "Persónar frá $from til $to ið eru $count"
+
+msgid "print"
+msgstr "Skriva út"
+
+msgid "export"
+msgstr "Tak út"
+
+msgid "exportall"
+msgstr "Tak alt út"
+
+msgid "exportsel"
+msgstr "Tak valdar út"
+
+msgid "exportvcards"
+msgstr "Tak persónar út í vCard slagið"
+
+msgid "newgroup"
+msgstr "Stovna nýggjan bólk"
+
+msgid "addgroup"
+msgstr "Stovna bólk"
+
+msgid "grouprename"
+msgstr "Nýnevn bólk"
+
+msgid "groupdelete"
+msgstr "Strika bólk"
+
+msgid "groupassign"
+msgstr "Legg afturat bólki..."
+
+msgid "groupremove"
+msgstr "Strika frá bólkið"
+
+msgid "groupremoveselected"
+msgstr "Strika valdar persónar úr bólki"
+
+msgid "uponelevel"
+msgstr "Upp eitt stig"
+
+msgid "previouspage"
+msgstr "Vís undanfarnu síðu"
+
+msgid "firstpage"
+msgstr "Vís fyrstu síðu"
+
+msgid "nextpage"
+msgstr "Vís næstu síðu"
+
+msgid "lastpage"
+msgstr "Vís seinastu síðu"
+
+msgid "group"
+msgstr "Bólkur"
+
+msgid "groups"
+msgstr "Bólkar"
+
+msgid "listgroup"
+msgstr "Vís bólka limir"
+
+msgid "personaladrbook"
+msgstr "Persónligir búðstaðir"
+
+msgid "searchsave"
+msgstr "Goym leiting"
+
+msgid "searchdelete"
+msgstr "Strika leiting"
+
+msgid "import"
+msgstr "Innles"
+
+msgid "importcontacts"
+msgstr "Innles persónar"
+
+msgid "importfromfile"
+msgstr "Innles frá fílu"
+
+msgid "importtarget"
+msgstr "Legg persón afturat"
+
+msgid "importreplace"
+msgstr "Skift út alt búðstaðarsavni"
+
+msgid "importgroups"
+msgstr "Innles bólka ásetan"
+
+msgid "importgroupsall"
+msgstr "Øll (stovna bólkar um neyðugt)"
+
+msgid "importgroupsexisting"
+msgstr "Einans fyri verandi bólkar"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Liðugt"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Stillingar til"
+
+msgid "about"
+msgstr "Um"
+
+msgid "preferences"
+msgstr "Vælmøguleikar"
+
+msgid "userpreferences"
+msgstr "Brúkara vælmøguleikar"
+
+msgid "editpreferences"
+msgstr "Broyt brúkara framíhjárættindi"
+
+msgid "identities"
+msgstr "Samleikar"
+
+msgid "manageidentities"
+msgstr "Umsit samleikar"
+
+msgid "newidentity"
+msgstr "Stovna nýggjan samleika"
+
+msgid "addidentity"
+msgstr "Stovna samleika"
+
+msgid "editidentity"
+msgstr "Broyt samleika"
+
+msgid "identityencryption"
+msgstr "Bronglan"
+
+msgid "preferhtml"
+msgstr "Vís HTML"
+
+msgid "defaultcharset"
+msgstr "Sjálvset tekin set"
+
+msgid "htmlmessage"
+msgstr "HTML boð"
+
+msgid "messagepart"
+msgstr "Deilur"
+
+msgid "digitalsig"
+msgstr "Talgild undirskrift"
+
+msgid "dateformat"
+msgstr "Dato format"
+
+msgid "timeformat"
+msgstr "Tíðs format"
+
+msgid "prettydate"
+msgstr "Pen dato"
+
+msgid "setdefault"
+msgstr "Set vanligt"
+
+msgid "autodetect"
+msgstr "Sjálvirki"
+
+msgid "language"
+msgstr "Mál"
+
+msgid "timezone"
+msgstr "Tíðarsona"
+
+msgid "pagesize"
+msgstr "Rekkjur per síðu"
+
+msgid "signature"
+msgstr "Undirskrift"
+
+msgid "dstactive"
+msgstr "Summartíð"
+
+msgid "showinextwin"
+msgstr "Lat boðið upp í nýggjun vindeyga"
+
+msgid "composeextwin"
+msgstr "Stovna í nýggjum vindeyga"
+
+msgid "htmleditor"
+msgstr "Stovna HTML boð"
+
+msgid "htmlonreply"
+msgstr "til svar til HTML boð"
+
+msgid "htmlonreplyandforward"
+msgstr "til víðari sending ella svar til HTML boð"
+
+msgid "htmlsignature"
+msgstr "HTML undirskrift"
+
+msgid "showemail"
+msgstr "Vís teldupostar búðstað við fullum navni"
+
+msgid "previewpane"
+msgstr "Vís undansýningar rút"
+
+msgid "skin"
+msgstr "Markamóts snið"
+
+msgid "logoutclear"
+msgstr "Strika Skrell tá ið tú ritar út"
+
+msgid "logoutcompact"
+msgstr "Trýst saman postkassa tá ið tú ritar út"
+
+msgid "uisettings"
+msgstr "Nýtaramarkamót"
+
+msgid "serversettings"
+msgstr "Ambætara stillingar"
+
+msgid "mailboxview"
+msgstr "Postkassa sýni"
+
+msgid "mdnrequests"
+msgstr "Bið um kvittan"
+
+msgid "askuser"
+msgstr "spyr meg"
+
+msgid "autosend"
+msgstr "send kvittan"
+
+msgid "autosendknown"
+msgstr "send kvittan til mínir persónar, annars spyr meg"
+
+msgid "autosendknownignore"
+msgstr "send kvittan til mínir persónar, annars skúgv til viks"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "skúgva umbøn til viks"
+
+msgid "readwhendeleted"
+msgstr "Merk boði sum lisið á striking"
+
+msgid "flagfordeletion"
+msgstr "Viðmerk boði til strikingar ístaðin fyri at strika"
+
+msgid "skipdeleted"
+msgstr "Vís ikki strika boð"
+
+msgid "deletealways"
+msgstr "Um flyting av boðum til Skrell ikki riggar, strika tey so"
+
+msgid "deletejunk"
+msgstr "Strika boð beinleiðis í Møsn"
+
+msgid "showremoteimages"
+msgstr "Vís regluligar fjarmyndir"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "frá ókendum sendarum"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "altíð"
+
+msgid "alwaysbutplain"
+msgstr "altíð. Fyri uftan tá svara verður reinun teksti"
+
+msgid "showinlineimages"
+msgstr "Vís viðheftar myndir niðanfyri boðini"
+
+msgid "autosavedraft"
+msgstr "Goym skitsu sjálvirkandi"
+
+msgid "everynminutes"
+msgstr "hvønn $n minutt(ir)"
+
+msgid "refreshinterval"
+msgstr "Endur innles (kannað fyri nýggjum boðum, o.s.fv.)"
+
+msgid "never"
+msgstr "aldrin"
+
+msgid "immediately"
+msgstr "í stundini"
+
+msgid "messagesdisplaying"
+msgstr "Vísir boð"
+
+msgid "messagescomposition"
+msgstr "Stovnar boð"
+
+msgid "mimeparamfolding"
+msgstr "Viðheftingar nøvn"
+
+msgid "2231folding"
+msgstr "Fult RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Fult RFC 2047 (other)"
+
+msgid "force7bit"
+msgstr "Nýt MIME kodingar til 8-bit tekin"
+
+msgid "savelocalstorage"
+msgstr "Goym í lokal goymslu á kaga (fyribils)"
+
+msgid "advancedoptions"
+msgstr "Víðkaðir valmøguleikar"
+
+msgid "toggleadvancedoptions"
+msgstr "Skift víðkaðar møguleikar"
+
+msgid "focusonnewmessage"
+msgstr "Legg dent á kaga vindeyga tá ið nýtt boð verður stovna"
+
+msgid "checkallfolders"
+msgstr "Kannað allar mappur fyri nýggj boð"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "Forsett stavsnið í HTML boðum"
+
+msgid "mainoptions"
+msgstr "Høvuðs Vælmøguleikar"
+
+msgid "browseroptions"
+msgstr "Kaga Valmøguleikar"
+
+msgid "section"
+msgstr "Partur"
+
+msgid "maintenance"
+msgstr "Umsiting"
+
+msgid "newmessage"
+msgstr "Nýggj boð"
+
+msgid "signatureoptions"
+msgstr "Undirskrift vælmøguleikar"
+
+msgid "whenreplying"
+msgstr "Tá ið skriving verður framd"
+
+msgid "replyempty"
+msgstr "sitera ikki uppruna boðini"
+
+msgid "replytopposting"
+msgstr "byrja eini nýggj boð uppiyvir sitatinum"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "byrja eini nýggj boð undir sitatinum"
+
+msgid "replyremovesignature"
+msgstr "Tá ið svaring verðurframd, strika so uppruna sitati frá boðinum"
+
+msgid "autoaddsignature"
+msgstr "Legg undirskrift á sjálvirkandi"
+
+msgid "newmessageonly"
+msgstr "Nýggj boð einans"
+
+msgid "replyandforwardonly"
+msgstr "svar og víðarsendingar einans"
+
+msgid "insertsignature"
+msgstr "Innset undirskrift"
+
+msgid "sigbelow"
+msgstr "Set undirskrift undir tey siteraðu boðini"
+
+msgid "sigseparator"
+msgstr "Tvinga vanliga hvørviskilju í undirskriftum"
+
+msgid "automarkread"
+msgstr "Merk boð sum lisin"
+
+msgid "afternseconds"
+msgstr "eftir $n sekund"
+
+msgid "reqmdn"
+msgstr "Bið altíð um eina kvittan"
+
+msgid "reqdsn"
+msgstr "Bið altíð um status kunngerð"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Koyr svar í somu mappuna ið boðini komu frá"
+
+msgid "defaultabook"
+msgstr "Sjálvset búðstaðar bók"
+
+msgid "autocompletesingle"
+msgstr "Leyp um aðrar teldupost búðstaðar í sjálvirkandi skrivingini"
+
+msgid "listnamedisplay"
+msgstr "Vís persónar sum "
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Kannað stavuvillur áðrenn boðini verða send"
+
+msgid "spellcheckoptions"
+msgstr "Stavuvilli kanningar vælmøguleikar"
+
+msgid "spellcheckignoresyms"
+msgstr "Leyp um orð við teknum"
+
+msgid "spellcheckignorenums"
+msgstr "Leyp um orð við tølum"
+
+msgid "spellcheckignorecaps"
+msgstr "Leyp um øll orð við øll bókstavum í stórum"
+
+msgid "addtodict"
+msgstr "Legg aftrat orðabók"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Skráset samskiftisreglur handfara til mailto: leinki"
+
+msgid "standardwindows"
+msgstr "Handfar upplatingarvindeygu sum vanlig vindeygu"
+
+msgid "forwardmode"
+msgstr "Víðarsending av boðum"
+
+msgid "inline"
+msgstr "innanreglis"
+
+msgid "asattachment"
+msgstr "sum viðhefting"
+
+msgid "replyallmode"
+msgstr "Sjálvset gerð til [Reply all] knap"
+
+msgid "replyalldefault"
+msgstr "Svara øllum"
+
+msgid "replyalllist"
+msgstr "svara til teldupostalista einans (um funnin)"
+
+msgid "allmessages"
+msgstr "øll boð"
+
+msgid "olderxdays"
+msgstr "eldri enn $x dagar"
+
+msgid "folder"
+msgstr "Mappa"
+
+msgid "folders"
+msgstr "Mappur"
+
+msgid "foldername"
+msgstr "Mappu navn"
+
+msgid "subscribed"
+msgstr "Teknaður til"
+
+msgid "messagecount"
+msgstr "Boð"
+
+msgid "create"
+msgstr "Stovna"
+
+msgid "createfolder"
+msgstr "Stovna nýggja mappu"
+
+msgid "managefolders"
+msgstr "Umsit mappur"
+
+msgid "specialfolders"
+msgstr "Serligar Mappur"
+
+msgid "properties"
+msgstr "Vælmøguleikar"
+
+msgid "folderproperties"
+msgstr "Mappu vælmøguleikar"
+
+msgid "parentfolder"
+msgstr "Foreldra mappu"
+
+msgid "location"
+msgstr "Stað"
+
+msgid "info"
+msgstr "Upplýsing"
+
+msgid "getfoldersize"
+msgstr "Trýst fyri at seta mappu stødd"
+
+msgid "changesubscription"
+msgstr "Trýst fyri at broyta tekning"
+
+msgid "foldertype"
+msgstr "Mappu slag"
+
+msgid "personalfolder"
+msgstr "Einskild Mappa"
+
+msgid "otherfolder"
+msgstr "Mappur hjá ørðum brúkarum"
+
+msgid "sharedfolder"
+msgstr "Almennar mappur"
+
+msgid "findfolders"
+msgstr "Finn mappur"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr "Finn boð"
+
+msgid "namespace.personal"
+msgstr "Persónlig"
+
+msgid "namespace.other"
+msgstr "Aðrir brúkarir"
+
+msgid "namespace.shared"
+msgstr "Deilt"
+
+msgid "dualuselabel"
+msgstr "Kann bert innihalda"
+
+msgid "dualusemail"
+msgstr "boð"
+
+msgid "dualusefolder"
+msgstr "mappur"
+
+msgid "generate"
+msgstr "Framleið"
+
+msgid "encryptioncreatekey"
+msgstr "Skapa nýtt lykla par"
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "Bronglan"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr "Virkja"
+
+msgid "sortby"
+msgstr "Sortera eftir"
+
+msgid "sortasc"
+msgstr "Sortera hækkandi"
+
+msgid "sortdesc"
+msgstr "Sortera lækkandi"
+
+msgid "undo"
+msgstr "Angra"
+
+msgid "installedplugins"
+msgstr "Innløgd ískoyti"
+
+msgid "plugin"
+msgstr "Ískoyti"
+
+msgid "version"
+msgstr "Útgáva"
+
+msgid "source"
+msgstr "Kelda"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Heimildarskjal"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Fá hjálp"
+
+msgid "savedsearches"
+msgstr "Goymdar leitanir"
+
+msgid "dateformatY"
+msgstr "ÁÁÁÁ"
+
+msgid "dateformaty"
+msgstr "ÁÁ"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Eingilst"
+
+msgid "westerneuropean"
+msgstr "Vestur Evoropeist"
+
+msgid "easterneuropean"
+msgstr "Estur Everopeist"
+
+msgid "southeasterneuropean"
+msgstr "Útsynnings Everopeist"
+
+msgid "baltic"
+msgstr "Eystursjógvurin"
+
+msgid "cyrillic"
+msgstr "Cyrillic"
+
+msgid "arabic"
+msgstr "Arabist"
+
+msgid "greek"
+msgstr "Grekst"
+
+msgid "hebrew"
+msgstr "Hebraiskt"
+
+msgid "turkish"
+msgstr "Turkist"
+
+msgid "nordic"
+msgstr "Norðurlengst"
+
+msgid "thai"
+msgstr "Tailenskt"
+
+msgid "celtic"
+msgstr "Keltiskt"
+
+msgid "vietnamese"
+msgstr "Vietmanesiskt"
+
+msgid "japanese"
+msgstr "Japanskt"
+
+msgid "korean"
+msgstr "Koreanskt"
+
+msgid "chinese"
+msgstr "Kinesiskt"
+
+msgid "arialabeltopnav"
+msgstr "Vindeyga kontro"
+
+msgid "arialabeltasknav"
+msgstr "Uppgávur forrits"
+
+msgid "arialabeltoolbar"
+msgstr "Amboðsbjálki"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "Tendra uppgáva"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Telduposta skráinga filtur"
+
+msgid "arialabelmailsearchform"
+msgstr "Teldupost boð leiti frymil"
+
+msgid "arialabelcontactsearchform"
+msgstr "Persóna leiti felt"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Teldupost leiti felt"
+
+msgid "arialabelquicksearchbox"
+msgstr "Leitiorð"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Mappu skráingingar filtur"
+
+msgid "arialabelfoldersearchform"
+msgstr "Mappu leiti frymil"
+
+msgid "arialabelfolderlist"
+msgstr "Teldupost mappu val"
+
+msgid "arialabelmessagelist"
+msgstr "Telduposta boð skráing"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Brot av boðið"
+
+msgid "arialabelmailboxmenu"
+msgstr "Mappu gerða valmynd"
+
+msgid "arialabellistselectmenu"
+msgstr "Vís valdu menu"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Tráa skráingar valmynd"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Boð skrá vísnáður og sorteringa valmøguleikar"
+
+msgid "arialabelmailimportdialog"
+msgstr "Influttning av boð dialogur"
+
+msgid "arialabelmessagenav"
+msgstr "Boð navigering"
+
+msgid "arialabelmessagebody"
+msgstr "Breyðtekstur"
+
+msgid "arialabelmessageactions"
+msgstr "Boð gerðir"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Persóna leiti felt"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Persón leiti orð"
+
+msgid "arialabelmessageheaders"
+msgstr "Teksthøvd av boð"
+
+msgid "arialabelforwardingoptions"
+msgstr "Víðarisend møguleikar"
+
+msgid "arialabelreplyalloptions"
+msgstr "Valmøguleikar til at svara øllum"
+
+msgid "arialabelmoremessageactions"
+msgstr "Meiri valmøguleikar til boð gerðir"
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Merk valdu boð sum..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Stovningar møguleikar"
+
+msgid "arialabelresponsesmenu"
+msgstr "Skapilón svar valmynd"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Viðheftingar uppsendingar frymil"
+
+msgid "arialabelattachmentmenu"
+msgstr "Viðheftingar valmøguleikar"
+
+msgid "arialabelmailtomenu"
+msgstr "Teldupost búðstaðar valmøguleikar"
+
+msgid "arialabelattachmentpreview"
+msgstr "Brot av víðheftingum"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Listi av persónum og bólkum at velja sum móttakarar"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Valmøguleikar fyri persóna útflytan"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Bústaðarsavn/bólka valmøguleikar"
+
+msgid "arialabelpreferencesform"
+msgstr "Stillinga frymil"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Samleika broytingar formur"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Svar broytingar frymil"
+
+msgid "arialabelsearchterms"
+msgstr "Leiti orð"
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr "Mynda tól"
+
+msgid "helplistnavigation"
+msgstr "Vís knappaborð sniðvegir"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Pílar upp/niður: Flyt rekkju\n"
+"Millumglopp: Vel verandi rekkju\n"
+"Shift + upp/niður: Vel fleiri rekkjur uppi yvir/niðri undir\n"
+"Ctrl + millumglopp: Legg verandi rekkju aftrat/tak frá "
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Pílar vinstru/høgru: vaksa/minka boð trá (í tráar hátt einans)\n"
+"Enter: Opna valdu boð\n"
+"Delete: Flyt valdu boð til skrelluspann."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Opna verandi persón"
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Ein feilur kom fyri!"
+
+msgid "messages.loginfailed"
+msgstr "Feilur í innriting."
+
+msgid "messages.cookiesdisabled"
+msgstr "Kagi tín noktar cookies."
+
+msgid "messages.sessionerror"
+msgstr "Seta tín er ógildig ella útgingin."
+
+msgid "messages.cookiesmismatch"
+msgstr "Tú hevur nú rita út. Farvæl!"
+
+msgid "messages.storageerror"
+msgstr "Feilur í samand til goymslu ambatara."
+
+msgid "messages.servererror"
+msgstr "Ambatara Feilur!"
+
+msgid "messages.servererrormsg"
+msgstr "Ambatara Feilur: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Ov nógvar innritingar royndir. Royn aftur seinni."
+
+msgid "messages.connerror"
+msgstr "Ambætarasambindingar feilur (Einki samband við abmætaran)!"
+
+msgid "messages.dberror"
+msgstr "Dátugrun Feilur"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Popup vindeyga var forða!"
+
+msgid "messages.requesttimedout"
+msgstr "Umbøn gekk út"
+
+msgid "messages.errorreadonly"
+msgstr "Kann ikki fremja ger. Mappan kann einans lesast."
+
+msgid "messages.errornoperm"
+msgstr "Kann ikki fremja ger. Atgongd noktað."
+
+msgid "messages.erroroverquota"
+msgstr "Kann ikki fremja ger. Einki tøkt pláss á diski."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Einki tøkt pláss á diski. Brúka SHIFT+DEL fyri at strika boð."
+
+msgid "messages.invalidrequest"
+msgstr "Ógildig umbøn! Ongar dátur vóru goymdar."
+
+msgid "messages.invalidhost"
+msgstr "Ógildugt ambatara navn."
+
+msgid "messages.nomessagesfound"
+msgstr "Eingi boð funnin í postkassanum."
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "Postkassin er tómur"
+
+msgid "messages.nomessages"
+msgstr "Eingi boð"
+
+msgid "messages.refreshing"
+msgstr "Endur-innlesur..."
+
+msgid "messages.loading"
+msgstr "Innlesur..."
+
+msgid "messages.uploading"
+msgstr "Leggur fílu út..."
+
+msgid "messages.attaching"
+msgstr "Viðheftur fíl..."
+
+msgid "messages.uploadingmany"
+msgstr "Leggur fílur út..."
+
+msgid "messages.loadingdata"
+msgstr "Innlesur dátur..."
+
+msgid "messages.checkingmail"
+msgstr "Kannar fyri nýggj boð..."
+
+msgid "messages.sendingmessage"
+msgstr "Sendur boð..."
+
+msgid "messages.messagesent"
+msgstr "Boðini vóru send."
+
+msgid "messages.savingmessage"
+msgstr "Goymur boðini."
+
+msgid "messages.messagesaved"
+msgstr "Boðini goymd í Skitsur."
+
+msgid "messages.successfullysaved"
+msgstr "Goymt."
+
+msgid "messages.savingresponse"
+msgstr "Goymur svar tekst..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Ynskir tú at strika hendan svar tekstin?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Persónur lagdur afturat búðstaðarsavninum."
+
+msgid "messages.contactexists"
+msgstr "Ein persónur við sama telduposti er longu til."
+
+msgid "messages.contactnameexists"
+msgstr "Ein persónur við sama navn er longu til."
+
+msgid "messages.blockedimages"
+msgstr "Vegnað dátuvernd eru fjarmyndir sperraðar í hesum boði."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Hetta er eitt broglað boð og kann ikki sýnast. Tíverri!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Hetta eru eini brongla boð. Boðini kunnu óbronglast við einum \"browser "
+"extension\""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+"Eingin gildur almennur lykil, eisini kalla \"public key\", var funnin, fyri "
+"teldupost bústaðin $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Eingin gildur almenna lykil var funnin fyri tín sendara samleika. Vilt tú "
+"brongla boðini fyri mótakaran einans?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Tær longu viðheftu fílirnir, kunnu ikki bronglast. Vinarliga set teir inn av"
+" nýggjum."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Vilt tú leita í almennum datagrunnum eftir manglandi lyklum?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Teir fylgjandi almennalyklar vóru funnir:"
+
+msgid "messages.keyservererror"
+msgstr "Feilur at heinta lykil frá lyklaambætara"
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Eingin persónur funnin."
+
+msgid "messages.contactnotfound"
+msgstr "Umbindni persónurin varð ikki funnin."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Miseydnaðist at senda boð."
+
+msgid "messages.senttooquickly"
+msgstr "Vinarliga bíða $sec sekund(ir) áðrenn tú sendur hetta boð."
+
+msgid "messages.errorsavingsent"
+msgstr "Ein feilur kom fyri tá ið roynt var at goyma send boð."
+
+msgid "messages.errorsaving"
+msgstr "Ein feilur kom fyri tá ið goymt var."
+
+msgid "messages.errormoving"
+msgstr "Kundi ikki flyta boð(ini)."
+
+msgid "messages.errorcopying"
+msgstr "Kundi ikki avrita boð(ini)."
+
+msgid "messages.errordeleting"
+msgstr "Kundi ikki strika boð(ini)."
+
+msgid "messages.errormarking"
+msgstr "Kundi ikki merkja boð(ini)."
+
+msgid "messages.alerttitle"
+msgstr "Gev gætur"
+
+msgid "messages.confirmationtitle"
+msgstr "Ert tú vís/ur"
+
+msgid "messages.deletecontactconfirm"
+msgstr "Ert tú vísur í at tú vilt strika merkt(ar) persónar?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Ynskir tú at strika valda bólkin?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Ynskir tú at strika valdu boð(ini)?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Ynskir tú at strika hesa mappu?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Ynskir tú at flyta hesa mappu?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Ynskir tú at strika øll boð í hesu mappu?"
+
+msgid "messages.contactdeleting"
+msgstr "Strikar persón(ar)..."
+
+msgid "messages.groupdeleting"
+msgstr "Strikar bólk..."
+
+msgid "messages.folderdeleting"
+msgstr "Strikar mappu..."
+
+msgid "messages.foldermoving"
+msgstr "Flytur mappu..."
+
+msgid "messages.foldersubscribing"
+msgstr "Tegnar til mappu..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Ógyldar tekning til mappu..."
+
+msgid "messages.formincomplete"
+msgstr "Allir teigirnir vóru ikki fyltir út."
+
+msgid "messages.noemailwarning"
+msgstr "Vinarliga skriva ein galdandi teldupost."
+
+msgid "messages.nonamewarning"
+msgstr "Vinarliga skriva eitt navn."
+
+msgid "messages.nopagesizewarning"
+msgstr "Vinarliga skriva síðu stødd."
+
+msgid "messages.nosenderwarning"
+msgstr "Vinarliga skriva sendara teldupost búðstað."
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Vinarliga skriva minst ein móttakara."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "Evna teigurin er tómur. Vilt tú skriva nakað í hann?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Einki evni"
+
+msgid "messages.nobodywarning"
+msgstr "Send hesi boð uttan tekst?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Eitt fyrrverandi skriva boð, men ósent, boð var funni.\\n\\nEvni: "
+"$subject\\nGoymt: $date\\n\\nVilt tú endur stovna hetta boð?"
+
+msgid "messages.nosearchname"
+msgstr "Vinarliga skriva eitt persón navn ella teldupost búðstað,"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Ikki allar viðheftingar eru uppsendar enn. Vinarliga bíða ella angra "
+"uppsendingina."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr boð funnin."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr persónar funnir."
+
+msgid "messages.searchnomatch"
+msgstr "Leiting gav eingin úrslit."
+
+msgid "messages.searching"
+msgstr "Leitar..."
+
+msgid "messages.checking"
+msgstr "Kannar..."
+
+msgid "messages.stillsearching"
+msgstr "Leitar enn..."
+
+msgid "messages.nospellerrors"
+msgstr "Eingin stavifeilur funnin."
+
+msgid "messages.folderdeleted"
+msgstr "Mappa sletta."
+
+msgid "messages.foldersubscribed"
+msgstr "Mappa tekna til."
+
+msgid "messages.folderunsubscribed"
+msgstr "Ógylt tekning til mappu."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Strika uftan feilir."
+
+msgid "messages.converting"
+msgstr "Tekur burt forsniðing..."
+
+msgid "messages.messageopenerror"
+msgstr "Kundi ikki lesa inn boð frá servara."
+
+msgid "messages.filelinkerror"
+msgstr "Feilur kom í, tá roynt var at viðhefta fíl."
+
+msgid "messages.fileuploaderror"
+msgstr "Fíla uppsending riggaði ikk."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Uppsendi fílur er stórri enn grensan ið er $size."
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "Avrita $nr persónar."
+
+msgid "messages.movesuccess"
+msgstr "Flutt $nr persónar."
+
+msgid "messages.copyerror"
+msgstr "Kundi ikki avrita persónar."
+
+msgid "messages.moveerror"
+msgstr "Kundi ikki flyta persónar."
+
+msgid "messages.sourceisreadonly"
+msgstr "Hendan búðstaðar keldan er einans lesandi."
+
+msgid "messages.errorsavingcontact"
+msgstr "Kann ikki goyma addressuna hjá persóni."
+
+msgid "messages.movingmessage"
+msgstr "Flytur boð(ini)..."
+
+msgid "messages.copyingmessage"
+msgstr "Flytur boð(ini)..."
+
+msgid "messages.copyingcontact"
+msgstr "Avritar persón(ar)..."
+
+msgid "messages.movingcontact"
+msgstr "Flytur persón(ar)..."
+
+msgid "messages.deletingmessage"
+msgstr "Strikar boð(ini)..."
+
+msgid "messages.markingmessage"
+msgstr "Merkjur boð(ini)..."
+
+msgid "messages.addingmember"
+msgstr "Leggur persón(ar) aftrat bólk..."
+
+msgid "messages.removingmember"
+msgstr "Strikar persón(ar) frá bólkið..."
+
+msgid "messages.receiptsent"
+msgstr "Kvittan er send."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Kundi ikki senda kvittan."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Ynskir tú at strika hendan samleikan?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Tú kanst ikki strika tann einasta samleikan."
+
+msgid "messages.forbiddencharacter"
+msgstr "Mappu navn inniheldur óloyvd tekin."
+
+msgid "messages.selectimportfile"
+msgstr "Vinarliga vel eina fílu"
+
+msgid "messages.addresswriterror"
+msgstr "Valda búðstaðar bók kann ikki skrivast í."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Persónar vóru lagdir aftrat bólki."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Persónar vóru strikaðir frá bólki"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Eingin bólka tilluting broytt."
+
+msgid "messages.importwait"
+msgstr "Flytur inn, vinarliga bíða..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Innflyting riggaði ikki! Tann uppsendi fílurin var ikki gyldigur dátu fílur."
+
+msgid "messages.importconfirm"
+msgstr "<b>$inserted Persónar innfluttir</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Innflutt $nr boð."
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Innflyting bar ikki til! Tann uppsendi fílurin er ikki gyldigur boð ella "
+"postkassa fílur"
+
+msgid "messages.opnotpermitted"
+msgstr "Ger ikki loyvd!"
+
+msgid "messages.nofromaddress"
+msgstr "Manglar teldupostur í valda samleika."
+
+msgid "messages.editorwarning"
+msgstr ""
+"At broyta rættara, eisini kallað \"editor\", kann gera at tín tekst "
+"formaterring verður burtur. Vilt tú halda á fram?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Ein oyðandi samansetings feilur uppstóð. Vinarliga set teg í samband við "
+"umsitaran beinanvegin. <b>Tíni boð kundu ikki sendast.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP Feilur ($code): Samband til ambatara riggaði ikki."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP Feilur ($code): Atgongd nokta."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP feilur ($code): Til bar ikki at seta sendarin til \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP feilur ($code): Til bar ikki at nýta móttakarin \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP feilur: Til bar ikki at greina móttakara listan."
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP feilur: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Ógildigur teldupostbúðstaður: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Ov nógvir móttakarir. Fækka um móttakararnar til $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Nummarið av limum í bólkinum gongur framvið hægsta mark ið er $max."
+
+msgid "messages.internalerror"
+msgstr "Ein innanhýsis feilur kom fyri. Vinarliga royn aftur."
+
+msgid "messages.contactdelerror"
+msgstr "Kann ikki strika persón(ar)."
+
+msgid "messages.contactdeleted"
+msgstr "Persón(ar) strikaðir."
+
+msgid "messages.contactrestoreerror"
+msgstr "Kann ikki endurstovna persón(ar)."
+
+msgid "messages.contactrestored"
+msgstr "Persónur(ar) endurstovnaðir."
+
+msgid "messages.groupdeleted"
+msgstr "Bólkur strikaður."
+
+msgid "messages.grouprenamed"
+msgstr "Bólkur umdoyptur."
+
+msgid "messages.groupcreated"
+msgstr "Bólkur stovnaður"
+
+msgid "messages.savedsearchdeleted"
+msgstr "Goymdar leitingar strikaðar"
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Kundi ikki strika goymdar leitingar."
+
+msgid "messages.savedsearchcreated"
+msgstr "Goymdar leitingar stovnaðar."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Kundi ikki stovna goymdar leitingar."
+
+msgid "messages.messagedeleted"
+msgstr "Boð(ini) strikaði."
+
+msgid "messages.messagemoved"
+msgstr "Boð(ini) flutt."
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "Boð(ini) avrita."
+
+msgid "messages.messagemarked"
+msgstr "Boð(ini) merkt."
+
+msgid "messages.autocompletechars"
+msgstr "Skriva minst $min tekin fyri sjálvvirkin útfylling riggar."
+
+msgid "messages.autocompletemore"
+msgstr "Fleiri úrslit funnin. Vinarliga skriva fleiri tekin."
+
+msgid "messages.namecannotbeempty"
+msgstr "Navn kann ikki verða tómt."
+
+msgid "messages.nametoolong"
+msgstr "Navnið er ov langt."
+
+msgid "messages.namedotforbidden"
+msgstr "Navni á einari mappu, kann ikki byrja við punktum."
+
+msgid "messages.folderupdated"
+msgstr "Mappa dagført."
+
+msgid "messages.foldercreated"
+msgstr "Mappa stovna."
+
+msgid "messages.invalidimageformat"
+msgstr "Ikki eitt gildigt mynda slag."
+
+msgid "messages.mispellingsfound"
+msgstr "Stavuvillur funnar í tínum boði."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Kann ikki flyta/avrita mappu til valda mappu. Eingin atgongu-rættindi."
+
+msgid "messages.messagetoobig"
+msgstr "Boðini eru ov stór til at handfara."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Ávaring: Hendan webmail tænastan krevur Javascript! Um tú vilt nýta hana, so"
+" vinarliga tendra Javascript í tínum kaga."
+
+msgid "messages.messageissent"
+msgstr "Boðini vóru longu send, men ikki goymd enn. Vilt tú goyma tey nú?"
+
+msgid "messages.errnotfound"
+msgstr "Fílan var ikki funnin"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Tann valda hjálpartól var ikki funnið!"
+
+msgid "messages.errfailedrequest"
+msgstr "Umbønin miseydnaðist"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Góðkenning miseydnaðist"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Tað bar ikki til at vátta at tú hevur heimild til hesa tænastu!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Umbøn kanning ógildig"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Fyri tína egnu verju, so er atgongdin til hetta hjálpartól tryggja ímóti CSRF.\n"
+"Um tú sært hetta. so ritaði tú nokk ikki út áðrenn tú fór frá farritinum.\n"
+"Menniskja ávirkan er nú kravd fyri at halda áfram."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Vinarliga set teg í samband við tín ambætara umsitara"
+
+msgid "messages.clicktoresumesession"
+msgstr "Trýst her fyri at forseta tína fyrrverandi setu"
+
+msgid "messages.errcomposesession"
+msgstr "Stovning av setan riggaði ikki"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Umbiðna setanin var ikki funnin"
+
+msgid "messages.clicktocompose"
+msgstr "Trýst her fyri at stovna nýggj boð"
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

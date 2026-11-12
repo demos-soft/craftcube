@@ -70,9 +70,11 @@ The first login of an unknown user auto-creates the user row (Roundcube-style
   toggle (cookie `colorMode`), responsive layout classes
 * Product named **CraftCube** everywhere (logo/title); skin assets are the
   Elastic skin's own CSS/fonts (Roundcube, © The Roundcube Authors, GPL-2.0)
-* Translations: pure YAML catalogues (no PHP) — `app/locale/<lang>/{labels,
-  messages}.yaml` + `languages.yaml` index, en_US baseline with per-language
-  overlay (empty rows fall back to English). Dev tool `tools/i18n.py`
+* Translations: gettext PO/POT files (no PHP, no compiled .mo) —
+  `app/locale/<lang>/LC_MESSAGES/craftcube.po` + `craftcube.pot` template,
+  editable with Poedit; `languages.yaml` holds names/aliases. en_US is the
+  baseline (empty/fuzzy entries fall back to English), `$var` placeholders
+  follow the legacy style. Dev tool `tools/i18n.py`
   (verify/extract/add/remove/sync/list) keeps all languages in sync;
   see `docs/LANGUAGE.md` for how to add a language or a string.
 

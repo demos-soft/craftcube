@@ -1,0 +1,2839 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "مرحباً بكم في $product"
+
+msgid "username"
+msgstr "اسم المستخدم"
+
+msgid "password"
+msgstr "كلمة المرور"
+
+msgid "server"
+msgstr "الخادم"
+
+msgid "login"
+msgstr "تسجيل الدخول"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr "القائمة"
+
+msgid "logout"
+msgstr "تسجيل الخروج"
+
+msgid "mail"
+msgstr "البريد"
+
+msgid "settings"
+msgstr "الإعدادات"
+
+msgid "addressbook"
+msgstr "دفتر العناوين"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "البريد الوارد"
+
+msgid "drafts"
+msgstr "المسودات"
+
+msgid "sent"
+msgstr "البريد المرسل"
+
+msgid "trash"
+msgstr "المهملات"
+
+msgid "junk"
+msgstr "الرسائل غير المرغوب فيها"
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr "الموضوع"
+
+msgid "from"
+msgstr "المرسل"
+
+msgid "sender"
+msgstr "المُرسِل"
+
+msgid "to"
+msgstr "المستقبل"
+
+msgid "cc"
+msgstr "نسخة إلي"
+
+msgid "bcc"
+msgstr "نسخة مخفية الوجهة"
+
+msgid "replyto"
+msgstr "الرد إلى"
+
+msgid "followupto"
+msgstr "Mail-Followup-To"
+
+msgid "date"
+msgstr "التاريخ"
+
+msgid "size"
+msgstr "الحجم"
+
+msgid "priority"
+msgstr "الأولوية"
+
+msgid "organization"
+msgstr "المنظمة"
+
+msgid "readstatus"
+msgstr "حالة القراءة"
+
+msgid "listoptions"
+msgstr ""
+
+msgid "listoptionstitle"
+msgstr "خيارات القائمة"
+
+msgid "mailboxlist"
+msgstr "مجلدات"
+
+msgid "messagesfromto"
+msgstr "الرسالة $from إلى $to من مجموع $count"
+
+msgid "threadsfromto"
+msgstr "جهات الإتصال $from إلى $to من مجموع $count"
+
+msgid "messagenrof"
+msgstr "الرسالة $nr من $count"
+
+msgid "fromtoshort"
+msgstr ""
+
+msgid "copy"
+msgstr "نسخ"
+
+msgid "move"
+msgstr "نقل"
+
+msgid "moveto"
+msgstr "نقل إلى..."
+
+msgid "copyto"
+msgstr "النسخ إلى …"
+
+msgid "download"
+msgstr "تنزيل"
+
+msgid "open"
+msgstr "فتح"
+
+msgid "showattachment"
+msgstr "إظهار"
+
+msgid "showanyway"
+msgstr "إظهار ذلك على أي حال"
+
+msgid "filename"
+msgstr "اسم الملف"
+
+msgid "filesize"
+msgstr "حجم الملف"
+
+msgid "addtoaddressbook"
+msgstr "إضافة إلى دفتر العناوين"
+
+msgid "sun"
+msgstr "أحد"
+
+msgid "mon"
+msgstr "إثنين"
+
+msgid "tue"
+msgstr "ثلاثاء"
+
+msgid "wed"
+msgstr "أربعاء"
+
+msgid "thu"
+msgstr "خميس"
+
+msgid "fri"
+msgstr "جمعة"
+
+msgid "sat"
+msgstr "سبت"
+
+msgid "sunday"
+msgstr "الأحد"
+
+msgid "monday"
+msgstr "الإثنين"
+
+msgid "tuesday"
+msgstr "الثلاثاء"
+
+msgid "wednesday"
+msgstr "الأربعاء"
+
+msgid "thursday"
+msgstr "الخميس"
+
+msgid "friday"
+msgstr "الجمعة"
+
+msgid "saturday"
+msgstr "السبت"
+
+msgid "jan"
+msgstr "يناير"
+
+msgid "feb"
+msgstr "فبراير"
+
+msgid "mar"
+msgstr "مارس"
+
+msgid "apr"
+msgstr "أبريل"
+
+msgid "may"
+msgstr "مايو"
+
+msgid "jun"
+msgstr "يونيو"
+
+msgid "jul"
+msgstr "يوليو"
+
+msgid "aug"
+msgstr "أغسطس"
+
+msgid "sep"
+msgstr "سبتمبر"
+
+msgid "oct"
+msgstr "أكتوبر"
+
+msgid "nov"
+msgstr "نوفمبر"
+
+msgid "dec"
+msgstr "ديسمبر"
+
+msgid "longjan"
+msgstr "يناير"
+
+msgid "longfeb"
+msgstr "فبراير"
+
+msgid "longmar"
+msgstr "مارس"
+
+msgid "longapr"
+msgstr "أبريل"
+
+msgid "longmay"
+msgstr "مايو"
+
+msgid "longjun"
+msgstr "يونيو"
+
+msgid "longjul"
+msgstr "يوليو"
+
+msgid "longaug"
+msgstr "أغسطس"
+
+msgid "longsep"
+msgstr "سبتمبر"
+
+msgid "longoct"
+msgstr "أكتوبر"
+
+msgid "longnov"
+msgstr "نوفمبر"
+
+msgid "longdec"
+msgstr "ديسمبر"
+
+msgid "today"
+msgstr "اليوم"
+
+msgid "refresh"
+msgstr "تحديث"
+
+msgid "checkmail"
+msgstr "التحقق من وجود رسائل جديدة"
+
+msgid "compose"
+msgstr "إنشاء"
+
+msgid "writenewmessage"
+msgstr "إنشاء رسالة جديدة"
+
+msgid "reply"
+msgstr "رد"
+
+msgid "replytomessage"
+msgstr "الرد على المرسل"
+
+msgid "replytoallmessage"
+msgstr "الرد على قائمة أو إلى المرسل وجميع المستلمين"
+
+msgid "replyall"
+msgstr "الرد على الجميع"
+
+msgid "replylist"
+msgstr "الرد على القائمة"
+
+msgid "forward"
+msgstr "إعادة توجيه"
+
+msgid "forwardinline"
+msgstr "تمرير الرسالة ضمنياً"
+
+msgid "forwardattachment"
+msgstr "تمرير الرسالة كمرفق"
+
+msgid "forwardmessage"
+msgstr "تمرير الرسالة"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr "إعادة الإرسال"
+
+msgid "deletemessage"
+msgstr "حذف الرسالة"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "انقل الرسالة إلى سلة المهملات"
+
+msgid "printmessage"
+msgstr "أطبع هذه الرسالة"
+
+msgid "previousmessage"
+msgstr "عرض الرسالة السابقة"
+
+msgid "firstmessage"
+msgstr "عرض الرسالة الأولى"
+
+msgid "nextmessage"
+msgstr "عرض الرسالة التالية"
+
+msgid "lastmessage"
+msgstr "عرض الرسالة الأخيرة"
+
+msgid "backtolist"
+msgstr "العودة إلى قائمة الرسائل"
+
+msgid "viewsource"
+msgstr "إظهار المصدر"
+
+msgid "mark"
+msgstr "علامة"
+
+msgid "markmessages"
+msgstr "وسم الرسالة"
+
+msgid "markread"
+msgstr "مقروءة"
+
+msgid "markunread"
+msgstr "غير مقروءة"
+
+msgid "markflagged"
+msgstr "كموْسومة"
+
+msgid "markunflagged"
+msgstr "كغير موْسومة"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "إجراءات إضافية..."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr "كافة المجلدات"
+
+msgid "more"
+msgstr "المزيد"
+
+msgid "back"
+msgstr "العودة"
+
+msgid "options"
+msgstr "خيارات"
+
+msgid "composeoptions"
+msgstr "خيارات الكتابة"
+
+msgid "optionsandattachments"
+msgstr "الخيارات والمرفقات"
+
+msgid "actions"
+msgstr "الإجراءات"
+
+msgid "first"
+msgstr "الأول"
+
+msgid "last"
+msgstr "الأخير"
+
+msgid "previous"
+msgstr "السابق"
+
+msgid "next"
+msgstr "التالي"
+
+msgid "select"
+msgstr "تحديد"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "الكل"
+
+msgid "none"
+msgstr "لاشيء"
+
+msgid "currpage"
+msgstr "الصفحة الحالية"
+
+msgid "isread"
+msgstr ""
+
+msgid "unread"
+msgstr "غير مقروءة"
+
+msgid "flagged"
+msgstr "موسوم"
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr "بلا رد"
+
+msgid "withattachment"
+msgstr ""
+
+msgid "deleted"
+msgstr "محذوف"
+
+msgid "undeleted"
+msgstr "غير محذوفة"
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr "المُعاد توجيهها"
+
+msgid "invert"
+msgstr "عكس"
+
+msgid "filter"
+msgstr "تصفية"
+
+msgid "list"
+msgstr "قائمة"
+
+msgid "threads"
+msgstr "تتابعات"
+
+msgid "expand-all"
+msgstr "إظهار الكل"
+
+msgid "expand-unread"
+msgstr "إظهار الغير مقروءة"
+
+msgid "collapse-all"
+msgstr "ضمّ الكل"
+
+msgid "threaded"
+msgstr "متتابع"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "إظهار تتابعات الرسائل"
+
+msgid "do_expand"
+msgstr "جميع التتابعات"
+
+msgid "expand_only_unread"
+msgstr "فقط مع الرسائل الغير مقروءة"
+
+msgid "fromto"
+msgstr "المرسل/المستلم"
+
+msgid "flag"
+msgstr "وسم"
+
+msgid "attachment"
+msgstr "مرفق"
+
+msgid "nonesort"
+msgstr "لاشيء"
+
+msgid "sentdate"
+msgstr "تاريخ إرسالها"
+
+msgid "arrival"
+msgstr "تاريخ وصولها"
+
+msgid "asc"
+msgstr "تصاعدي"
+
+msgid "desc"
+msgstr "تنازلي"
+
+msgid "listcolumns"
+msgstr "أعمدة السرد"
+
+msgid "listsorting"
+msgstr "أعمدة الترتيب"
+
+msgid "listorder"
+msgstr "طريقة الترتيب"
+
+msgid "listmode"
+msgstr "وضع طريقة السرد"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "قائمة"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "إجراءات المجلد..."
+
+msgid "compact"
+msgstr "ضغط"
+
+msgid "empty"
+msgstr "تفريغ"
+
+msgid "importmessages"
+msgstr "إستيراد رسائل"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "المساحة المستخدمة"
+
+msgid "unknown"
+msgstr "مجهول"
+
+msgid "unlimited"
+msgstr "غير محدود"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr "المساحة المُستعمَلة"
+
+msgid "quotastorage"
+msgstr "مساحة التخزين"
+
+msgid "quotamessage"
+msgstr "تعداد الرسائل"
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "البحث السريع"
+
+msgid "searchplaceholder"
+msgstr "بحث …"
+
+msgid "resetsearch"
+msgstr "استعادة البحث للافتراضي"
+
+msgid "searchmod"
+msgstr "أماكن البحث"
+
+msgid "msgtext"
+msgstr "كامل الرسالة"
+
+msgid "body"
+msgstr "هيكل الرسالة"
+
+msgid "type"
+msgstr "النوع"
+
+msgid "namex"
+msgstr "الإسم"
+
+msgid "searchscope"
+msgstr "المجال"
+
+msgid "currentfolder"
+msgstr "المجلد الحالي"
+
+msgid "subfolders"
+msgstr ""
+
+msgid "allfolders"
+msgstr "كافة المجلدات"
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "افتح في نافذة جديدة"
+
+msgid "emlsave"
+msgstr "تنزيل (.eml)"
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr "تعديل كجديد"
+
+msgid "send"
+msgstr "ارسل"
+
+msgid "sendmessage"
+msgstr "إرسال الرسالة الآن"
+
+msgid "savemessage"
+msgstr "حفظ هذه المسودة"
+
+msgid "addattachment"
+msgstr "إرفاق ملف"
+
+msgid "charset"
+msgstr "مجموعة المحارف"
+
+msgid "editortype"
+msgstr "نوع المُحرّر"
+
+msgid "returnreceipt"
+msgstr "ايصال استلام"
+
+msgid "dsn"
+msgstr "تنويه حالة التوصيل"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "كتب $sender في $date:"
+
+msgid "originalmessage"
+msgstr "الرسالة الأساسية"
+
+msgid "selectimage"
+msgstr "إختيار صورة"
+
+msgid "addimage"
+msgstr "إضافة صورة"
+
+msgid "selectmedia"
+msgstr "إختيار فيديو"
+
+msgid "addmedia"
+msgstr "إضافة فيديو"
+
+msgid "encrypt"
+msgstr "تعمية"
+
+msgid "encryptmessage"
+msgstr "تعمية الرسالة"
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr "إستيراد مفاتيح عمومية"
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr "تعمية و توقيع"
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr ""
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "المتلقَّي"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "تعديل الهويات"
+
+msgid "spellcheck"
+msgstr "التدقيق اﻹملائى"
+
+msgid "checkspelling"
+msgstr "التدقيق الإملائي"
+
+msgid "resumeediting"
+msgstr "متابعة التحرير"
+
+msgid "revertto"
+msgstr "استعادة إلى"
+
+msgid "restore"
+msgstr "إسترجاع"
+
+msgid "restoremessage"
+msgstr "هل تود إسترجاع الرسالة ؟"
+
+msgid "ignore"
+msgstr "تجاهل"
+
+msgid "responses"
+msgstr "الردود"
+
+msgid "insertresponse"
+msgstr ""
+
+msgid "manageresponses"
+msgstr "إدارة الردود"
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr ""
+
+msgid "editresponse"
+msgstr ""
+
+msgid "editresponses"
+msgstr "تعديل الردود"
+
+msgid "responsename"
+msgstr "الإسم"
+
+msgid "responsetext"
+msgstr ""
+
+msgid "attach"
+msgstr "إرفاق"
+
+msgid "attachments"
+msgstr "مرفقات"
+
+msgid "upload"
+msgstr "تحميل"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "إغلاق"
+
+msgid "messageoptions"
+msgstr "خيارات الرسائل..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "منخض"
+
+msgid "lowest"
+msgstr "الأقل"
+
+msgid "normal"
+msgstr "عادي"
+
+msgid "high"
+msgstr "مرتفع"
+
+msgid "highest"
+msgstr "الأعلى"
+
+msgid "nosubject"
+msgstr "(دون موضوع)"
+
+msgid "showimages"
+msgstr "إظهار الصور"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "دائماً أظهر الصّور القادمة من $sender"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "هذه مسودّة رسالة"
+
+msgid "andnmore"
+msgstr "$nr المزيد ..."
+
+msgid "details"
+msgstr "التفاصيل"
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr "الرأسيات"
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr ""
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "نص مجرد"
+
+msgid "savesentmessagein"
+msgstr "احفظ الرسالة المُرسلة في"
+
+msgid "dontsave"
+msgstr "لا تحفظها"
+
+msgid "maxuploadsize"
+msgstr "أقصى حجم للملف هو $size"
+
+msgid "addcc"
+msgstr "أضف CC"
+
+msgid "addbcc"
+msgstr "أضف BCC"
+
+msgid "addreplyto"
+msgstr "أضيف Reply-To"
+
+msgid "addfollowupto"
+msgstr "إضافة Mail-Followup-To"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr "طلب المرسل إعلامه عند قراءتك لرسالته. هل تود إعلام المرسل؟"
+
+msgid "receiptread"
+msgstr "إيصال الاستلام )بالقراءة)"
+
+msgid "yourmessage"
+msgstr "هذا إيصال بقراءة رسالتك"
+
+msgid "receiptnote"
+msgstr ""
+"ملاحظة: يُعلمك هذا الإيصال بأن رسالتك قد ظهرت على جهاز المستقبِل. ليست هناك "
+"أية ضمانات أن المستقبل قد قرأ أو فهم محتويات الرسالة."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr "تقريب"
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr "تدوير"
+
+msgid "increaseimage"
+msgstr "تكبير حجم الصورة"
+
+msgid "decreaseimage"
+msgstr "تصغير حجم الصورة"
+
+msgid "rotateimage"
+msgstr "تدوير الصورة"
+
+msgid "showtools"
+msgstr "إظهار أدوات الصور"
+
+msgid "hidetools"
+msgstr "إخفاء أدوات الصور"
+
+msgid "name"
+msgstr "اسم العرض"
+
+msgid "firstname"
+msgstr "الإسم الأول"
+
+msgid "surname"
+msgstr "الإسم الأخير"
+
+msgid "middlename"
+msgstr "الاسم الثاني"
+
+msgid "nameprefix"
+msgstr "السابقة"
+
+msgid "namesuffix"
+msgstr "اللاحقة"
+
+msgid "nickname"
+msgstr "اللقب"
+
+msgid "jobtitle"
+msgstr "المسمى الوظيفي"
+
+msgid "department"
+msgstr "الإدارة"
+
+msgid "gender"
+msgstr "الجنس"
+
+msgid "maidenname"
+msgstr "إسم الزواج"
+
+msgid "email"
+msgstr "البريد الإلكتروني"
+
+msgid "phone"
+msgstr "الهاتف"
+
+msgid "address"
+msgstr "العنوان"
+
+msgid "street"
+msgstr "الشارع"
+
+msgid "locality"
+msgstr "المدينة"
+
+msgid "zipcode"
+msgstr "الرمز البريدي"
+
+msgid "region"
+msgstr "المنطقة"
+
+msgid "country"
+msgstr "الدولة"
+
+msgid "birthday"
+msgstr "تاريخ الميلاد"
+
+msgid "anniversary"
+msgstr "المناسبة السنوية"
+
+msgid "website"
+msgstr "الموقع"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "ملاحظات"
+
+msgid "male"
+msgstr "ذكر"
+
+msgid "female"
+msgstr "أنثى"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "مدير"
+
+msgid "assistant"
+msgstr "المساعد"
+
+msgid "spouse"
+msgstr "زوجة"
+
+msgid "allfields"
+msgstr "جميع الحقول"
+
+msgid "search"
+msgstr "بحث"
+
+msgid "searchresult"
+msgstr "نتيجة البحث"
+
+msgid "advsearch"
+msgstr "بحث متقدم"
+
+msgid "advanced"
+msgstr "مُتقدم"
+
+msgid "other"
+msgstr "آخر"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "المنزل"
+
+msgid "typework"
+msgstr "العمل"
+
+msgid "typeother"
+msgstr "آخر"
+
+msgid "typemobile"
+msgstr "المحمول"
+
+msgid "typemain"
+msgstr "الرئيسي"
+
+msgid "typehomefax"
+msgstr "فاكس المنزل"
+
+msgid "typeworkfax"
+msgstr "فاكس العمل"
+
+msgid "typecar"
+msgstr "السيارة"
+
+msgid "typepager"
+msgstr "الرنان"
+
+msgid "typevideo"
+msgstr "الفيديو"
+
+msgid "typeassistant"
+msgstr "المساعد"
+
+msgid "typehomepage"
+msgstr "الرئيسية"
+
+msgid "typeblog"
+msgstr "المدوّنة"
+
+msgid "typeprofile"
+msgstr "الملف الشخصي"
+
+msgid "addfield"
+msgstr "إضافة حقل..."
+
+msgid "addcontact"
+msgstr "إضافة مراسل"
+
+msgid "editcontact"
+msgstr "تحرير بيانات المراسل"
+
+msgid "contacts"
+msgstr "المراسلين"
+
+msgid "contactproperties"
+msgstr "خواص جهة الإتصال"
+
+msgid "contactnameandorg"
+msgstr "الإسم و المنظمة"
+
+msgid "personalinfo"
+msgstr "المعلومات الشخصية"
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr "صورة المُراسِل"
+
+msgid "edit"
+msgstr "تحرير"
+
+msgid "cancel"
+msgstr "إلغاء"
+
+msgid "save"
+msgstr "حفظ"
+
+msgid "delete"
+msgstr "حذف"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr "المواصلة"
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "إعادة التسمية"
+
+msgid "addphoto"
+msgstr "إضافة"
+
+msgid "replacephoto"
+msgstr "استبدال"
+
+msgid "uploadphoto"
+msgstr "ارفع صورة"
+
+msgid "choosefile"
+msgstr "اختر ملفا..."
+
+msgid "choosefiles"
+msgstr "اختر ملفات..."
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "إنشاء مراسل جديد"
+
+msgid "deletecontact"
+msgstr "حذف المراسلين المحددين"
+
+msgid "composeto"
+msgstr "إنشاء رسالة إليه"
+
+msgid "contactsfromto"
+msgstr "المراسلون $from إلى $to من $count"
+
+msgid "print"
+msgstr "طباعة"
+
+msgid "export"
+msgstr "تصدير"
+
+msgid "exportall"
+msgstr ""
+
+msgid "exportsel"
+msgstr ""
+
+msgid "exportvcards"
+msgstr "صدّر المراسلين بنسق vCard"
+
+msgid "newgroup"
+msgstr "إنشاء فريق جديد"
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr "تغيير اسم المجموعة"
+
+msgid "groupdelete"
+msgstr "حذف المجموعة"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "حذف العنوان المختار من المجموعة"
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "عرض المجموعة السابقة"
+
+msgid "firstpage"
+msgstr "عرض المجموعة الأولى"
+
+msgid "nextpage"
+msgstr "عرض المجموعة التالية"
+
+msgid "lastpage"
+msgstr "عرض المجموعة الأخيرة"
+
+msgid "group"
+msgstr "مجموعة"
+
+msgid "groups"
+msgstr "المجموعات"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr "العناوين الشخصية"
+
+msgid "searchsave"
+msgstr "حفظ البحث"
+
+msgid "searchdelete"
+msgstr "حذف البحث"
+
+msgid "import"
+msgstr "استورد"
+
+msgid "importcontacts"
+msgstr "استورد المراسلين"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr ""
+
+msgid "importreplace"
+msgstr "استبدل دفتر العناوين بأكمله"
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "تم"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "إعدادات"
+
+msgid "about"
+msgstr "نبذة"
+
+msgid "preferences"
+msgstr "التفضيلات"
+
+msgid "userpreferences"
+msgstr "تفضيلات المستخدم"
+
+msgid "editpreferences"
+msgstr "تحرير تفضيلات المستخدم"
+
+msgid "identities"
+msgstr "الهويات"
+
+msgid "manageidentities"
+msgstr "إدارة الهويات"
+
+msgid "newidentity"
+msgstr "إضافة هوية جديدة"
+
+msgid "addidentity"
+msgstr "إضافة هوية"
+
+msgid "editidentity"
+msgstr "تعديل الهوية"
+
+msgid "identityencryption"
+msgstr "التشفير"
+
+msgid "preferhtml"
+msgstr "تفضيل صيغة HTML"
+
+msgid "defaultcharset"
+msgstr "ترميز المحارف الافتراضي"
+
+msgid "htmlmessage"
+msgstr "رسالة بنسق HTML"
+
+msgid "messagepart"
+msgstr ""
+
+msgid "digitalsig"
+msgstr "التوقيع الرقمي"
+
+msgid "dateformat"
+msgstr "نسق التاريخ"
+
+msgid "timeformat"
+msgstr "نسق الوقت"
+
+msgid "prettydate"
+msgstr "تواريخ منمقة"
+
+msgid "setdefault"
+msgstr "تعيين كإفتراضي"
+
+msgid "autodetect"
+msgstr "آلي"
+
+msgid "language"
+msgstr "اللغة"
+
+msgid "timezone"
+msgstr "المنطقة الزمنية"
+
+msgid "pagesize"
+msgstr "عدد الرسائل في الصفحة"
+
+msgid "signature"
+msgstr "التوقيع"
+
+msgid "dstactive"
+msgstr "التوقيت الصيفي"
+
+msgid "showinextwin"
+msgstr "فتح الرسالة فى نافذة جديدة"
+
+msgid "composeextwin"
+msgstr "أرسال عن طريق نافذة جديدة"
+
+msgid "htmleditor"
+msgstr "إنشاء رسائل بنسق HTML"
+
+msgid "htmlonreply"
+msgstr "حال الرد على الرسائل بصيغة HTML فقط"
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr "توقيع HTML"
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr "إظهار قسم المعاينة"
+
+msgid "skin"
+msgstr "شكل الواجهة"
+
+msgid "logoutclear"
+msgstr "إفراغ سلة المحذوفات عند الخروج"
+
+msgid "logoutcompact"
+msgstr "ضغط صندوق الوارد عن الخروج"
+
+msgid "uisettings"
+msgstr "واجهة المستخدم"
+
+msgid "serversettings"
+msgstr "إعدادات الخادم"
+
+msgid "mailboxview"
+msgstr "مظهر صندوق البريد"
+
+msgid "mdnrequests"
+msgstr "عند طلب إشعار استلام"
+
+msgid "askuser"
+msgstr "اسأل المستخدم"
+
+msgid "autosend"
+msgstr "أرسلها تلقائياً"
+
+msgid "autosendknown"
+msgstr "أرسل إشعار استلام إلى جهات اتصالي، وإلااسألني"
+
+msgid "autosendknownignore"
+msgstr "أرسل إشعار استلام إلى جهات اتصالي، وإلاتجاهل الأمر"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "تجاهُل الطلب"
+
+msgid "readwhendeleted"
+msgstr "تحديد الرسالة كمقروءة عند حذفها"
+
+msgid "flagfordeletion"
+msgstr "وضع علامة على الرسالة لحذفها بدلاً منحذفها"
+
+msgid "skipdeleted"
+msgstr "لا تظهر الرسائل المحذوفة"
+
+msgid "deletealways"
+msgstr "حذف الرسائل مباشرة، إن تعذر نقلها إلىالمهملات"
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr "إظهار الصور الخارجية المدمجة"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "للمرسلين المعلومين"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "دائماً"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "إظهار الصّور المرفقة أسفل الرسالة"
+
+msgid "autosavedraft"
+msgstr "حفظ المسودة تلقائياً"
+
+msgid "everynminutes"
+msgstr "كل $n دقيقة"
+
+msgid "refreshinterval"
+msgstr ""
+
+msgid "never"
+msgstr "أبداً"
+
+msgid "immediately"
+msgstr "حالاً"
+
+msgid "messagesdisplaying"
+msgstr "إظهار الرسائل"
+
+msgid "messagescomposition"
+msgstr "إنشاء الرسائل"
+
+msgid "mimeparamfolding"
+msgstr "أسماء الملفات المرفقة"
+
+msgid "2231folding"
+msgstr "RFC 2231 بأكملها (ثندربيرد)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (ميكروسوفت آوتلوك)"
+
+msgid "2047folding"
+msgstr "RFC 2047 بأكملها (غيرها)"
+
+msgid "force7bit"
+msgstr "استخدام ترميز MIME للحروف ذات الثمانيةبتّات"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "خيارات متقدّمة"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "التركيز على نافذة المتصفح عند وجود رسالةجديدة"
+
+msgid "checkallfolders"
+msgstr "التحقق من وجود رسائل جديدة في جميعالمجلدات"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr "الخيارات الأساسية"
+
+msgid "browseroptions"
+msgstr "خيارات المتصفح"
+
+msgid "section"
+msgstr "قسم"
+
+msgid "maintenance"
+msgstr "الصيانة"
+
+msgid "newmessage"
+msgstr "رسالة جديدة"
+
+msgid "signatureoptions"
+msgstr "خيارات التوقيع"
+
+msgid "whenreplying"
+msgstr "عند الرد"
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr "بدء رسالة جديدة ووضع النص أعلى الأصلية"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "بدء رسالة جديدة ووضع النص أسفل الأصلية"
+
+msgid "replyremovesignature"
+msgstr "إزالة التوقيع من الرسالة عند الرد"
+
+msgid "autoaddsignature"
+msgstr "إضافة التوقيع آلياً"
+
+msgid "newmessageonly"
+msgstr "الرسالة الجديدة فقط"
+
+msgid "replyandforwardonly"
+msgstr "الردود والتمريرات فقط"
+
+msgid "insertsignature"
+msgstr "إضافة التوقيع"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "بعد $n ثواني"
+
+msgid "reqmdn"
+msgstr "طلب إشعار استلام دائماً"
+
+msgid "reqdsn"
+msgstr "طلب تنويه لحالة التوصيل دائماً"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "وضع الردود في المجلد الذي يحوي الرسالةالمردود عليها"
+
+msgid "defaultabook"
+msgstr "دفتر العناوين الافتراضي"
+
+msgid "autocompletesingle"
+msgstr "تجاهل عنوان البريد الإلكتروني البديل فيالتكملة التلقائية"
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "تحقق من الإملاء قبل إرسال الرسائل"
+
+msgid "spellcheckoptions"
+msgstr "خيارات التدقيق الإملاءي"
+
+msgid "spellcheckignoresyms"
+msgstr "تجاهل الكلمات التي تحتوي رموز"
+
+msgid "spellcheckignorenums"
+msgstr "تجاهل الكلمات التي تحتوي أرقام"
+
+msgid "spellcheckignorecaps"
+msgstr "تجاهل الكلمات التي بها أحرف كبيرة"
+
+msgid "addtodict"
+msgstr "إضافة إلى القامس"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr ""
+
+msgid "asattachment"
+msgstr "كـ مرفق "
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "كافة الرسائل"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "مجلد"
+
+msgid "folders"
+msgstr "مجلدات"
+
+msgid "foldername"
+msgstr "اسم المجلد"
+
+msgid "subscribed"
+msgstr "مشترك"
+
+msgid "messagecount"
+msgstr "الرسائل"
+
+msgid "create"
+msgstr "أنشئ"
+
+msgid "createfolder"
+msgstr "أنشئ مجلد جديد"
+
+msgid "managefolders"
+msgstr "إدارة المجلدات"
+
+msgid "specialfolders"
+msgstr "المجلّدات المُميّزة"
+
+msgid "properties"
+msgstr "الخواص"
+
+msgid "folderproperties"
+msgstr "خواص المجلد"
+
+msgid "parentfolder"
+msgstr "المجلد الحاوي"
+
+msgid "location"
+msgstr "الموضع"
+
+msgid "info"
+msgstr "معلومات"
+
+msgid "getfoldersize"
+msgstr "اضغط لمعرفة حجم المجلد"
+
+msgid "changesubscription"
+msgstr "اضغط لتغيير حالة الإشتراك"
+
+msgid "foldertype"
+msgstr "نوع المجلد"
+
+msgid "personalfolder"
+msgstr "مجلد خاص"
+
+msgid "otherfolder"
+msgstr "مجلد مستخدم آخر"
+
+msgid "sharedfolder"
+msgstr "مجلد عام"
+
+msgid "findfolders"
+msgstr "البحث عن مجلدات"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr "البحث عن رسائل إلكترونية"
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr "المستخدِمون الآخرون"
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr "الرسائل"
+
+msgid "dualusefolder"
+msgstr "المجلدات"
+
+msgid "generate"
+msgstr "توليد"
+
+msgid "encryptioncreatekey"
+msgstr "إنشاء زوج مِن المفاتيح"
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "التشفير"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "ترتيب بحسب"
+
+msgid "sortasc"
+msgstr "ترتيب تصاعدي"
+
+msgid "sortdesc"
+msgstr "ترتيب تنازلي"
+
+msgid "undo"
+msgstr "تراجع"
+
+msgid "installedplugins"
+msgstr "الإضافات المثبّتة"
+
+msgid "plugin"
+msgstr "إضافة"
+
+msgid "version"
+msgstr "النسخة"
+
+msgid "source"
+msgstr "المصدر"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "الترخيص"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "احصل على الدعم الفني"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "ب"
+
+msgid "KB"
+msgstr "ك.ب"
+
+msgid "MB"
+msgstr "م.ب"
+
+msgid "GB"
+msgstr "ج.ب"
+
+msgid "unicode"
+msgstr "يونيكود"
+
+msgid "english"
+msgstr "الإنجليزية"
+
+msgid "westerneuropean"
+msgstr "الغرب أوروبية"
+
+msgid "easterneuropean"
+msgstr "الشرق أوروبية"
+
+msgid "southeasterneuropean"
+msgstr "الجنوب شرق أوروبية"
+
+msgid "baltic"
+msgstr "البلطيقية"
+
+msgid "cyrillic"
+msgstr "الكيريلية"
+
+msgid "arabic"
+msgstr "العربية"
+
+msgid "greek"
+msgstr "اليونانية"
+
+msgid "hebrew"
+msgstr "العبرية"
+
+msgid "turkish"
+msgstr "التركية"
+
+msgid "nordic"
+msgstr "النرويجية"
+
+msgid "thai"
+msgstr "التايلندية"
+
+msgid "celtic"
+msgstr "الكلتية"
+
+msgid "vietnamese"
+msgstr "الفيتنامية"
+
+msgid "japanese"
+msgstr "اليابانية"
+
+msgid "korean"
+msgstr "الكورية"
+
+msgid "chinese"
+msgstr "الصينية"
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr "معاينة الرسالة"
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr "عرض الرسالة"
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr "رأسيات الرسالة"
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr "خيارات عنوان البريد الإلكتروني"
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr "الأدوات الخاصة بالصُوَر"
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "طرأ هناك خطأ !"
+
+msgid "messages.loginfailed"
+msgstr "فشل تسجيل الدخول"
+
+msgid "messages.cookiesdisabled"
+msgstr "المتصفح الخاص بك لا يقبل الكوكيز"
+
+msgid "messages.sessionerror"
+msgstr "انتهت صلاحية الجلسة الحالية أو أنها غيرصالحة"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "فشل الاتصال بخادم IMAP"
+
+msgid "messages.servererror"
+msgstr "خطأ في الخادم!"
+
+msgid "messages.servererrormsg"
+msgstr "خطأ خادم: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr ""
+
+msgid "messages.dberror"
+msgstr "خطأ في قاعدة البيانات!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr ""
+
+msgid "messages.errorreadonly"
+msgstr "تعذر تنفيذ العملية. المجلد للقراءة فقط."
+
+msgid "messages.errornoperm"
+msgstr "تعذر تنفيذ العملية. ليست لديك الصلاحية."
+
+msgid "messages.erroroverquota"
+msgstr ""
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+
+msgid "messages.invalidrequest"
+msgstr "طلب غير صالح! لم تحفظ أية بيانات."
+
+msgid "messages.invalidhost"
+msgstr "إسم الخادوم خاطئ."
+
+msgid "messages.nomessagesfound"
+msgstr "لم يعثر على أية رسائل في صندوق البريد هذا"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "علبة البريد فارغة"
+
+msgid "messages.nomessages"
+msgstr "ليس هناك أية رسالة"
+
+msgid "messages.refreshing"
+msgstr "عملية التحديث جارية …"
+
+msgid "messages.loading"
+msgstr "جاري العمل..."
+
+msgid "messages.uploading"
+msgstr "جاري رفع الملف..."
+
+msgid "messages.attaching"
+msgstr "عملية إرفاق الملف جارية …"
+
+msgid "messages.uploadingmany"
+msgstr "جاري تحميل الملفات..."
+
+msgid "messages.loadingdata"
+msgstr "تحميل البيانات..."
+
+msgid "messages.checkingmail"
+msgstr "التحقق من وجود رسائل جديدة..."
+
+msgid "messages.sendingmessage"
+msgstr "إرسال الرسالة..."
+
+msgid "messages.messagesent"
+msgstr "تم إرسال الرسالة بنجاح"
+
+msgid "messages.savingmessage"
+msgstr "حفظ الرسالة..."
+
+msgid "messages.messagesaved"
+msgstr "تم حفظ الرسالة في المسودات"
+
+msgid "messages.successfullysaved"
+msgstr "تم الحفظ بنجاح"
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "تمت إضافة المراسل إلى دفتر العناوينبنجاح"
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "هناك مُرسال له نفس الإسم موجود مسبقاً."
+
+msgid "messages.blockedimages"
+msgstr "لحماية خصوصيتك، تم حجب الصور الغير مضمنة(البعيدة) في هذه الرسالة."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "هذه الرسالة مشفرة ولا يمكن عرضها. عذراً!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "لم يعثر على أي مراسل"
+
+msgid "messages.contactnotfound"
+msgstr "تعذر العثور على المراسل المطلوب"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "فشل إرسال الرسالة"
+
+msgid "messages.senttooquickly"
+msgstr "رجاء انتظر $sec ثوان قبل إرسال هذه الرسالة"
+
+msgid "messages.errorsavingsent"
+msgstr ""
+
+msgid "messages.errorsaving"
+msgstr ""
+
+msgid "messages.errormoving"
+msgstr "تعذر نقل هذه الرسالة"
+
+msgid "messages.errorcopying"
+msgstr "تعذر نسخ الرسائل"
+
+msgid "messages.errordeleting"
+msgstr "تعذر حذف هذه الرسالة"
+
+msgid "messages.errormarking"
+msgstr "تعذر تحديد الرسائل"
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr "هل أنت متأكد …"
+
+msgid "messages.deletecontactconfirm"
+msgstr "هل تريد حقاً حذف المراسلـ(ين) المحدد(ين)؟"
+
+msgid "messages.deletegroupconfirm"
+msgstr "هل تريد فعلاً حذف المجموعة المحددة؟"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "هل تريد حذف الرسائل المحددة؟"
+
+msgid "messages.deletefolderconfirm"
+msgstr "هل تريد حقاً حذف هذا المجلد؟"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "هل تريد حقاً حذف جميع الرسائل في هذاالمجلد؟"
+
+msgid "messages.contactdeleting"
+msgstr "جاري حذف المُراسلين..."
+
+msgid "messages.groupdeleting"
+msgstr "جاري حذف المجموعة..."
+
+msgid "messages.folderdeleting"
+msgstr "جاري حذف المجلد..."
+
+msgid "messages.foldermoving"
+msgstr "جاري نقل المجلد..."
+
+msgid "messages.foldersubscribing"
+msgstr "الإشتراك في المجلد..."
+
+msgid "messages.folderunsubscribing"
+msgstr "إلغاء الإشتراك في المجد..."
+
+msgid "messages.formincomplete"
+msgstr "لم يتم تعبئة بيانات الاستمارة بالكامل"
+
+msgid "messages.noemailwarning"
+msgstr "الرجاء إدخال عنوان بريد إلكتروني صالح"
+
+msgid "messages.nonamewarning"
+msgstr "الرجاء إدخال اسم"
+
+msgid "messages.nopagesizewarning"
+msgstr "الرجاء إدخال حجم الصفحة"
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "الرجاء إدخال اسم مستقبل واحد على الأقل"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "حقل \"الموضوع\" فارغ. هل تريد كتابة موضوعللرسالة؟"
+
+msgid "messages.nosubjecttitle"
+msgstr "بدون موضوع"
+
+msgid "messages.nobodywarning"
+msgstr "إرسال هذه الرسالة دون نص؟"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr "الرجاء إدخال اسم مراسل أو عنوان بريدإلكتروني"
+
+msgid "messages.notuploadedwarning"
+msgstr "لم يتم رفع جميع المرفقات بعد. رجاءً الانتظار أو إلغاء عملية الرفع."
+
+msgid "messages.searchsuccessful"
+msgstr "عثر على $nr رسائل"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "عُثر على $nr مُراسَل"
+
+msgid "messages.searchnomatch"
+msgstr "لم يعثر على شيء"
+
+msgid "messages.searching"
+msgstr "جاري البحث..."
+
+msgid "messages.checking"
+msgstr "جاري التحقق..."
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr "لم يعثر على أية أخطاء إملائية"
+
+msgid "messages.folderdeleted"
+msgstr "تم حذف المجلد بنجاح"
+
+msgid "messages.foldersubscribed"
+msgstr "تم الإشتراك في المجلد بنجاح"
+
+msgid "messages.folderunsubscribed"
+msgstr "تم إلغاء الإشتراك في المجلد بنجاح"
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "تم الحذف بنجاح"
+
+msgid "messages.converting"
+msgstr "إزالة التنسيق من الرسالة..."
+
+msgid "messages.messageopenerror"
+msgstr "تعذرت قراءة الرسالة من الخادم"
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "فشل رفع الملف"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "حجم الملف الذي تحاول رفعه أكبر من الحجمالأقصى $size"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr ""
+
+msgid "messages.moveerror"
+msgstr ""
+
+msgid "messages.sourceisreadonly"
+msgstr "لا يمكن تعديل مصدر العنوان هذا"
+
+msgid "messages.errorsavingcontact"
+msgstr "تعذر حفظ عنوان المراسل"
+
+msgid "messages.movingmessage"
+msgstr "جاري نقل الرسالة..."
+
+msgid "messages.copyingmessage"
+msgstr "جاري نسخ الرسالة..."
+
+msgid "messages.copyingcontact"
+msgstr "جاري نسخ المُراسلين..."
+
+msgid "messages.movingcontact"
+msgstr ""
+
+msgid "messages.deletingmessage"
+msgstr "جاري حذف الرسائل..."
+
+msgid "messages.markingmessage"
+msgstr "جاري تحديد الرسائل..."
+
+msgid "messages.addingmember"
+msgstr "جاري إضافة المُراسلين إلى المجموعة..."
+
+msgid "messages.removingmember"
+msgstr "جاري إزالة المراسلين من المجموعة..."
+
+msgid "messages.receiptsent"
+msgstr "أرسل إيصال الاستلام بنجاح"
+
+msgid "messages.errorsendingreceipt"
+msgstr "تعذر إرسال إيصال الاستلام"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "هل تريد حقا حذف هذه الهوية ؟"
+
+msgid "messages.nodeletelastidentity"
+msgstr "لا يمكن حذف هذا السجل حيث أنه الوحيدالمتبقي."
+
+msgid "messages.forbiddencharacter"
+msgstr "اسم المجلّد يحتوي حروفاً ممنوعة"
+
+msgid "messages.selectimportfile"
+msgstr "رجاء اختر ملفاً لرفعه"
+
+msgid "messages.addresswriterror"
+msgstr "دفتر العناوين المحدد غير قابل للكتابة"
+
+msgid "messages.contactaddedtogroup"
+msgstr "تمت إضافة المراسلين إلى هذه المجموعةبنجاح"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "تمت إزالة المراسلين من هذه المجموعةبنجاح"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr "جاري الاستيراد، رجاء انتظر..."
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>تم استيراد $inserted مراسلين بنجاح، وتجاهل$skipped موجودين "
+"مسبقاً</b>:<p><em>$names</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr "العملية ممنوعة!"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"حدث خطأ جسيم في التهيئة. رجاءً اتصال بمدير الخادم حالاً. <b>لا يمكن إرسال "
+"بريدك.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "خطأ SMTP ($code): تعذر الاتصال بالخادم"
+
+msgid "messages.smtpautherror"
+msgstr "خطأ SMTP ($code): تعذر التحقق من هويتك"
+
+msgid "messages.smtpfromerror"
+msgstr "خطأ SMTP ($code): تعذر تحديد المرسل \"$from\" ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "خطأ SMTP ($code): تعذرت إضافة المستلم \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "خطأ SMTP: تعذرت قراءة قائمة المرسل إليهم"
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "خطأ SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr "عدد المرسل إليهم كبير. قلص العدد إلى $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "عدد أعضاء المجموعة أكثر من $max"
+
+msgid "messages.internalerror"
+msgstr ""
+
+msgid "messages.contactdelerror"
+msgstr "تعذر حذف أسماء جهات الإتصال"
+
+msgid "messages.contactdeleted"
+msgstr "تم حذف أسماء جهات الإتصال بنجاح"
+
+msgid "messages.contactrestoreerror"
+msgstr "تعذر استعادة المُراسل المحذوف."
+
+msgid "messages.contactrestored"
+msgstr "تم استعادة المُراسل بنجاح."
+
+msgid "messages.groupdeleted"
+msgstr "تم حذف المجموعة بنجاح"
+
+msgid "messages.grouprenamed"
+msgstr "تم تغيير إسم المجموعة بنجاح"
+
+msgid "messages.groupcreated"
+msgstr "تم إنشاء المجموعة بنجاح"
+
+msgid "messages.savedsearchdeleted"
+msgstr "تم بنجاح حذف البحث المحفوظ."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "تعذر حذف البحث المحفوظ"
+
+msgid "messages.savedsearchcreated"
+msgstr "تم بنجاح إنشاء البحث المحفوظ."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "تعذر إنشاء بحث محفوظ."
+
+msgid "messages.messagedeleted"
+msgstr "تم حذف الرسائل بنجاح"
+
+msgid "messages.messagemoved"
+msgstr "تم نقل الرسائل بنجاح"
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "تم نسخ الرسائل بنجاح"
+
+msgid "messages.messagemarked"
+msgstr "تم تحديد الرسائل بنجاح"
+
+msgid "messages.autocompletechars"
+msgstr "إكتب $min أحرف على الأقل للحصول على التكملةالتلقائية"
+
+msgid "messages.autocompletemore"
+msgstr "هناك المزيد من النتائج المطابقة. رجاءاكتب كلمات بحث أكثر."
+
+msgid "messages.namecannotbeempty"
+msgstr "لا يمكن ترك الإسم فارغاً"
+
+msgid "messages.nametoolong"
+msgstr "الإسم طويل جداً"
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr "تم تحديث المجلد بنجاح"
+
+msgid "messages.foldercreated"
+msgstr "تم إنشاء المجلد بنجاح"
+
+msgid "messages.invalidimageformat"
+msgstr "ليست صيغة صورة صحيحة"
+
+msgid "messages.mispellingsfound"
+msgstr "عُثر على أخطاء إملائية في الرسالة"
+
+msgid "messages.parentnotwritable"
+msgstr "تعذر إنشاء/نقل المجلد إلى المجلد المحدد.ليست لديك الصلاحية."
+
+msgid "messages.messagetoobig"
+msgstr "جزء الرسالة أكبر بكثير مما يمكن معالجته."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr "فَشِل الطلب"
+
+msgid "messages.errauthorizationfailed"
+msgstr "فَشِلت عملية المُصادقة"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr "يُرجى الإتصال بمدير الخادوم."
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr "إنّ القائمة فارغة."
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

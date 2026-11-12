@@ -1,0 +1,2861 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ku\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Bi xêr hatî $product"
+
+msgid "username"
+msgstr "Navê bikarhêner"
+
+msgid "password"
+msgstr "Borînpeyv"
+
+msgid "server"
+msgstr "Rajegir"
+
+msgid "login"
+msgstr "Têkevê"
+
+msgid "oauthlogin"
+msgstr "Bi $provider re têkeve"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "logout"
+msgstr "Derkeve"
+
+msgid "mail"
+msgstr "Ename"
+
+msgid "settings"
+msgstr "Sazkarî"
+
+msgid "addressbook"
+msgstr "Pirtûka navnîşanê"
+
+msgid "darkmode"
+msgstr "Awayê tarî"
+
+msgid "lightmode"
+msgstr "Awayê ronî"
+
+msgid "inbox"
+msgstr "Hatî"
+
+msgid "drafts"
+msgstr "Reşnivîs"
+
+msgid "sent"
+msgstr "Şandî"
+
+msgid "trash"
+msgstr "Jêbirdank"
+
+msgid "junk"
+msgstr "Spam"
+
+msgid "show_real_foldernames"
+msgstr "Ji bo peldankên taybet navên rast nîşan bide"
+
+msgid "subject"
+msgstr "Mijar"
+
+msgid "from"
+msgstr "Ji"
+
+msgid "sender"
+msgstr "Şander"
+
+msgid "to"
+msgstr "Bo"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Bersivê bide"
+
+msgid "followupto"
+msgstr ""
+
+msgid "date"
+msgstr "Dîrok"
+
+msgid "size"
+msgstr "Mezinahî"
+
+msgid "priority"
+msgstr "Girîngî"
+
+msgid "organization"
+msgstr "Sazî"
+
+msgid "readstatus"
+msgstr "Rewşê bixwîne"
+
+msgid "listoptions"
+msgstr "Vebijêrkên rêzê..."
+
+msgid "listoptionstitle"
+msgstr "Vebijêrkên rêzê"
+
+msgid "mailboxlist"
+msgstr "Peldank"
+
+msgid "messagesfromto"
+msgstr "Peyam $ji bo $to ji $count"
+
+msgid "threadsfromto"
+msgstr "Mijar $ji bo $to ji $coun"
+
+msgid "messagenrof"
+msgstr "$nr peyam ji $count"
+
+msgid "fromtoshort"
+msgstr "$ji – $bo ji $count"
+
+msgid "copy"
+msgstr "Jê bigire"
+
+msgid "move"
+msgstr "Bilivîne"
+
+msgid "moveto"
+msgstr "Bilivîne bo..."
+
+msgid "copyto"
+msgstr "Jê bigire bo ..."
+
+msgid "download"
+msgstr "Daxîne"
+
+msgid "open"
+msgstr "Veke"
+
+msgid "showattachment"
+msgstr "Nîşan bide"
+
+msgid "showanyway"
+msgstr "Her çawa be nîşan bide"
+
+msgid "filename"
+msgstr "Navê pelê"
+
+msgid "filesize"
+msgstr "Mezinahiya pelê"
+
+msgid "addtoaddressbook"
+msgstr "Têxe lênûska navnîşanan"
+
+msgid "sun"
+msgstr "Yek"
+
+msgid "mon"
+msgstr "Duş"
+
+msgid "tue"
+msgstr "Sêş"
+
+msgid "wed"
+msgstr "Çar"
+
+msgid "thu"
+msgstr "Pên"
+
+msgid "fri"
+msgstr "Înî"
+
+msgid "sat"
+msgstr "Şem"
+
+msgid "sunday"
+msgstr "Yekşem"
+
+msgid "monday"
+msgstr "Duşem"
+
+msgid "tuesday"
+msgstr "Sêşem"
+
+msgid "wednesday"
+msgstr "Çarşem"
+
+msgid "thursday"
+msgstr "Pêncşem"
+
+msgid "friday"
+msgstr "Înî"
+
+msgid "saturday"
+msgstr "Şemî"
+
+msgid "jan"
+msgstr "Çil"
+
+msgid "feb"
+msgstr "Reş"
+
+msgid "mar"
+msgstr "Ada"
+
+msgid "apr"
+msgstr "Avr"
+
+msgid "may"
+msgstr "Gul"
+
+msgid "jun"
+msgstr "Pûş"
+
+msgid "jul"
+msgstr "Tîr"
+
+msgid "aug"
+msgstr "Teb"
+
+msgid "sep"
+msgstr "Îlo"
+
+msgid "oct"
+msgstr "Cot"
+
+msgid "nov"
+msgstr "Mij"
+
+msgid "dec"
+msgstr "Ber"
+
+msgid "longjan"
+msgstr "Çile"
+
+msgid "longfeb"
+msgstr "Reşemî"
+
+msgid "longmar"
+msgstr "Adar"
+
+msgid "longapr"
+msgstr "Avrêl"
+
+msgid "longmay"
+msgstr "Gulan"
+
+msgid "longjun"
+msgstr "Pûşper"
+
+msgid "longjul"
+msgstr "Tîrmeh"
+
+msgid "longaug"
+msgstr "Tebax"
+
+msgid "longsep"
+msgstr "Îlon"
+
+msgid "longoct"
+msgstr "Cotmeh"
+
+msgid "longnov"
+msgstr "Mijdar"
+
+msgid "longdec"
+msgstr "Berfanbar"
+
+msgid "today"
+msgstr "Îro"
+
+msgid "refresh"
+msgstr "Rojane bike"
+
+msgid "checkmail"
+msgstr "Ji bo peyamên nû kontrol bike"
+
+msgid "compose"
+msgstr "Peyamekê biafirîne"
+
+msgid "writenewmessage"
+msgstr "Peyameke nû biafirîne"
+
+msgid "reply"
+msgstr "Bersivê bide"
+
+msgid "replytomessage"
+msgstr "Bersivê şander bide "
+
+msgid "replytoallmessage"
+msgstr "Bersivê ji bo hemû kesên ku ev peyan standine bişîne"
+
+msgid "replyall"
+msgstr "Bersivê hemûyan bide"
+
+msgid "replylist"
+msgstr "Lîsteyê bibersivîne"
+
+msgid "forward"
+msgstr "Beralî bike"
+
+msgid "forwardinline"
+msgstr ""
+
+msgid "forwardattachment"
+msgstr ""
+
+msgid "forwardmessage"
+msgstr "Bersivê bide peyamê"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr "Ji nû ve bişîne"
+
+msgid "deletemessage"
+msgstr "Peyamê jê bibe"
+
+msgid "undeletemessage"
+msgstr "Pêyamê jê nebe"
+
+msgid "movemessagetotrash"
+msgstr "Peyamê bilivîne jêbirdankê"
+
+msgid "printmessage"
+msgstr "Vê peyamê çap bike"
+
+msgid "previousmessage"
+msgstr "Peyama berê nîşan bide"
+
+msgid "firstmessage"
+msgstr "Peyama yekemîn nîşan bide"
+
+msgid "nextmessage"
+msgstr "Peyama di pêş de nîşan bide"
+
+msgid "lastmessage"
+msgstr "Peyama dawî nîşan bide"
+
+msgid "backtolist"
+msgstr "Vegere rêza peyaman"
+
+msgid "viewsource"
+msgstr "Çavkaniyê nîşan bide"
+
+msgid "mark"
+msgstr "Nîşan bike"
+
+msgid "markmessages"
+msgstr "Peyamê nîşan bike"
+
+msgid "markread"
+msgstr "Wekî xwendî"
+
+msgid "markunread"
+msgstr "Wekî nexwendî"
+
+msgid "markflagged"
+msgstr "Wekî nîşankirî"
+
+msgid "markunflagged"
+msgstr "Wekî nenişankirî"
+
+msgid "markundeleted"
+msgstr "Wekî ku nejêbirî"
+
+msgid "markasread"
+msgstr "Wekî xwendî nîşan bide"
+
+msgid "markasunread"
+msgstr "Wekî nexwendî nîşan bide"
+
+msgid "markasflagged"
+msgstr "Wekî nîşankirî nîşan bide"
+
+msgid "markasunflagged"
+msgstr "Wekî nenîşankirî nîşan bide"
+
+msgid "moreactions"
+msgstr "Bêtir çalakî..."
+
+msgid "markallread"
+msgstr "Hemûyan wekî xwendî nîşan bike"
+
+msgid "folders-cur"
+msgstr "Tenê peldanka hilbijartî"
+
+msgid "folders-sub"
+msgstr "Peldanka hilbijartî û binpeldankên wê"
+
+msgid "folders-all"
+msgstr "Hemû peldank"
+
+msgid "more"
+msgstr "Bêtir"
+
+msgid "back"
+msgstr "Paş"
+
+msgid "options"
+msgstr "Vebijêrk"
+
+msgid "composeoptions"
+msgstr "Vebijêrkên nivîsandinê"
+
+msgid "optionsandattachments"
+msgstr "Vebijêrk û pêvek"
+
+msgid "actions"
+msgstr "Çalakî"
+
+msgid "first"
+msgstr "Pêşîn"
+
+msgid "last"
+msgstr "Dawîn"
+
+msgid "previous"
+msgstr "Pêşde"
+
+msgid "next"
+msgstr "Piştde"
+
+msgid "select"
+msgstr "Hilbijêre"
+
+msgid "selection"
+msgstr "Hilbijartin"
+
+msgid "all"
+msgstr "Hemû"
+
+msgid "none"
+msgstr "Ne yek jî"
+
+msgid "currpage"
+msgstr "Rûpela niha"
+
+msgid "isread"
+msgstr "Bixwîne"
+
+msgid "unread"
+msgstr "Nexwendî"
+
+msgid "flagged"
+msgstr "Nîşankirî"
+
+msgid "unflagged"
+msgstr "Ne nîşankirî"
+
+msgid "unanswered"
+msgstr "Bersivnedayî"
+
+msgid "withattachment"
+msgstr "Bi pêvek"
+
+msgid "deleted"
+msgstr "Jêbirî"
+
+msgid "undeleted"
+msgstr "Nê jêbirî"
+
+msgid "replied"
+msgstr "Bersivdayî"
+
+msgid "forwarded"
+msgstr "Beralî bike"
+
+msgid "invert"
+msgstr ""
+
+msgid "filter"
+msgstr "Parzûn"
+
+msgid "list"
+msgstr "Lîste"
+
+msgid "threads"
+msgstr "Mijar"
+
+msgid "expand-all"
+msgstr "Hemûyan fereh bike"
+
+msgid "expand-unread"
+msgstr "Ên nexwendî veke"
+
+msgid "collapse-all"
+msgstr "Hemûyan hilweşîne"
+
+msgid "threaded"
+msgstr ""
+
+msgid "showunread"
+msgstr "Peyamên nexwendî nîşan bide"
+
+msgid "autoexpand_threads"
+msgstr ""
+
+msgid "do_expand"
+msgstr ""
+
+msgid "expand_only_unread"
+msgstr "tenê bi peyamên nexwendî"
+
+msgid "fromto"
+msgstr "Ji/Jê re"
+
+msgid "flag"
+msgstr "Al"
+
+msgid "attachment"
+msgstr "Pêvek"
+
+msgid "nonesort"
+msgstr "Ne yek jî"
+
+msgid "sentdate"
+msgstr "Dema şandinê"
+
+msgid "arrival"
+msgstr "Dema hatinê"
+
+msgid "asc"
+msgstr "ber bi jor ve"
+
+msgid "desc"
+msgstr "ber bi jêr ve"
+
+msgid "listcolumns"
+msgstr "Stûnan lîste bike"
+
+msgid "listsorting"
+msgstr "Stûna parzûnkirinê"
+
+msgid "listorder"
+msgstr "Rêza parzûnkirinê"
+
+msgid "listmode"
+msgstr "Moda dîtina lîsteyê"
+
+msgid "lmode"
+msgstr "Moda lîsteyê"
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Lîste"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Tevgerên dosyeyê..."
+
+msgid "compact"
+msgstr "Kompakt"
+
+msgid "empty"
+msgstr "Vala bike"
+
+msgid "importmessages"
+msgstr ""
+
+msgid "mailimportdesc"
+msgstr ""
+"Tu dikare nameyê bi riya barkirina pelan di formatên <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> an<a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> de bike."
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Bikaranîna dîskê"
+
+msgid "unknown"
+msgstr "nenas"
+
+msgid "unlimited"
+msgstr "bêsînor"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr "Sînor"
+
+msgid "quotaused"
+msgstr "Bikarhatî"
+
+msgid "quotastorage"
+msgstr "Valahiya dîskê"
+
+msgid "quotamessage"
+msgstr "Hejmara peyaman"
+
+msgid "shortheaderdate"
+msgstr "Di $date de"
+
+msgid "shortheaderto"
+msgstr "Bo $to di $date de"
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Lêgerîna bilez"
+
+msgid "searchplaceholder"
+msgstr "Bigere"
+
+msgid "resetsearch"
+msgstr "Lêgerînê ji nû ve saz bike"
+
+msgid "searchmod"
+msgstr ""
+
+msgid "msgtext"
+msgstr "Hemû peyam"
+
+msgid "body"
+msgstr ""
+
+msgid "type"
+msgstr "Cûre"
+
+msgid "namex"
+msgstr "Nav"
+
+msgid "searchscope"
+msgstr ""
+
+msgid "currentfolder"
+msgstr "Peldanka heyî"
+
+msgid "subfolders"
+msgstr "Ev û bindosye"
+
+msgid "allfolders"
+msgstr "Hemû dosye"
+
+msgid "searchinterval-1W"
+msgstr "ji hefteyekê kevntir"
+
+msgid "searchinterval-1M"
+msgstr "ji mehekê kevntir"
+
+msgid "searchinterval-1Y"
+msgstr "ji salekê kevntir"
+
+msgid "searchinterval1W"
+msgstr "ji hefteyekê biçûktir"
+
+msgid "searchinterval1M"
+msgstr "ji mehekê biçûktir"
+
+msgid "searchinterval1Y"
+msgstr "ji salekê biçûktir"
+
+msgid "infolder"
+msgstr "Peldank: $folder"
+
+msgid "currentaddressbook"
+msgstr "Pirtûka navnîşanên heyî"
+
+msgid "alladdressbooks"
+msgstr "Hemû pirtûkên navnîşanan"
+
+msgid "openinextwin"
+msgstr "Di pencereyeke nû de veke"
+
+msgid "emlsave"
+msgstr "Daxîne (.eml)"
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr "Di forma HTMLê de nîşan bide"
+
+msgid "editasnew"
+msgstr "Wek nû sererast bike"
+
+msgid "send"
+msgstr "Bişîne"
+
+msgid "sendmessage"
+msgstr "Peyamê niha bişîne"
+
+msgid "savemessage"
+msgstr "Wekî reşnivîs tomar bike"
+
+msgid "addattachment"
+msgstr "Pelekê lê zêde bike"
+
+msgid "charset"
+msgstr "Curetîp"
+
+msgid "editortype"
+msgstr "Cureyê serastkat"
+
+msgid "returnreceipt"
+msgstr "Rapora Vegerînê"
+
+msgid "dsn"
+msgstr ""
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "Di $date de, şandyar nivîsî:"
+
+msgid "originalmessage"
+msgstr "Peyama orîjînal"
+
+msgid "selectimage"
+msgstr "Wêne bibijêre"
+
+msgid "addimage"
+msgstr "Wêne tev bike"
+
+msgid "selectmedia"
+msgstr "Fîlmekê bibijêre"
+
+msgid "addmedia"
+msgstr "Fîlmekê tev bike"
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr "ID a kilîtê"
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr "Bcc bi kar bîne"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Tev bike"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr ""
+
+msgid "spellcheck"
+msgstr "Bilêvkirin"
+
+msgid "checkspelling"
+msgstr "Kontrola rastnivîsê"
+
+msgid "resumeediting"
+msgstr "Serastkirinê bidomîne"
+
+msgid "revertto"
+msgstr "Şûnde bîne"
+
+msgid "restore"
+msgstr "Vegerîne"
+
+msgid "restoremessage"
+msgstr "Peyamê vegerîne?"
+
+msgid "ignore"
+msgstr "Paşguh bike"
+
+msgid "responses"
+msgstr "Bersiv"
+
+msgid "insertresponse"
+msgstr "Bersivekê têxînê"
+
+msgid "manageresponses"
+msgstr "Bersivan bi rê ve bibe"
+
+msgid "newresponse"
+msgstr "Bersiveke nê biafirîne"
+
+msgid "addresponse"
+msgstr "Bersivê tevlî bike"
+
+msgid "editresponse"
+msgstr "Bersivê biguherîne"
+
+msgid "editresponses"
+msgstr "Bersivan biguherîne"
+
+msgid "responsename"
+msgstr "Nav"
+
+msgid "responsetext"
+msgstr "Nivîsa bersivê"
+
+msgid "attach"
+msgstr "Pêvek"
+
+msgid "attachments"
+msgstr "Pêvek"
+
+msgid "upload"
+msgstr "Bar bike"
+
+msgid "uploadprogress"
+msgstr "$percent ($current ji $total)"
+
+msgid "close"
+msgstr "Bigire"
+
+msgid "messageoptions"
+msgstr "Vebijêrkên peyamê..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Nizm"
+
+msgid "lowest"
+msgstr "Nizmtirîn"
+
+msgid "normal"
+msgstr "Asayî"
+
+msgid "high"
+msgstr "Bilind"
+
+msgid "highest"
+msgstr "Bilintirîn"
+
+msgid "nosubject"
+msgstr "(bê mijar)"
+
+msgid "showimages"
+msgstr "Nîşandana wêneyan"
+
+msgid "allow"
+msgstr "Bihêle"
+
+msgid "alwaysshow"
+msgstr "Her tim dîmenên ji $sender nîşan bide"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr ""
+
+msgid "andnmore"
+msgstr "$nr bêtir..."
+
+msgid "details"
+msgstr "Hûrgulî"
+
+msgid "summary"
+msgstr "Kurte"
+
+msgid "headers"
+msgstr "Sernav"
+
+msgid "allheaders"
+msgstr "Hemû sernav"
+
+msgid "togglemoreheaders"
+msgstr "Bêtir sernavên peyaman nîşan bide"
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Deqa tazî"
+
+msgid "savesentmessagein"
+msgstr "Peyama şandî tomar bike di "
+
+msgid "dontsave"
+msgstr "tomar neke"
+
+msgid "maxuploadsize"
+msgstr ""
+
+msgid "addcc"
+msgstr "Cc Têxê"
+
+msgid "addbcc"
+msgstr "Bcc Têxê"
+
+msgid "addreplyto"
+msgstr "Bibersivîne têxê"
+
+msgid "addfollowupto"
+msgstr ""
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Şandyarê/a vê peyamê xwest dema ku tu vê peyamê bixwînî ew were "
+"agahdarkirin. Tu dixwazî wî/ê agahdar bikî?"
+
+msgid "receiptread"
+msgstr "Rapora Vegerînê (xwendî)"
+
+msgid "yourmessage"
+msgstr "Ev rapora vegerîna peyama te ye"
+
+msgid "receiptnote"
+msgstr ""
+"Nîşe: Ev dide zanîn ka peyama te şand hat xwendin an na. Naveroka peyamê bi "
+"mîgogerî nayê zanîn."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr "Mezin bike"
+
+msgid "zoomout"
+msgstr "Biçûk bike"
+
+msgid "rotate"
+msgstr "Bizivirîne"
+
+msgid "increaseimage"
+msgstr "Wêneyê mezin bike"
+
+msgid "decreaseimage"
+msgstr "Wêneyê biçûk bike"
+
+msgid "rotateimage"
+msgstr "Wêneyê bizivirîn"
+
+msgid "showtools"
+msgstr "Alavên wêneyê nîşan bide"
+
+msgid "hidetools"
+msgstr "Alavên wêneyê veşêre"
+
+msgid "name"
+msgstr "Navê xuya dibe"
+
+msgid "firstname"
+msgstr "Nav"
+
+msgid "surname"
+msgstr "Paşnav"
+
+msgid "middlename"
+msgstr "Navê navîn"
+
+msgid "nameprefix"
+msgstr "Pêşgir"
+
+msgid "namesuffix"
+msgstr "Paşgir"
+
+msgid "nickname"
+msgstr "Nûçik"
+
+msgid "jobtitle"
+msgstr "Şana Kar"
+
+msgid "department"
+msgstr "Beş"
+
+msgid "gender"
+msgstr "Zayend"
+
+msgid "maidenname"
+msgstr ""
+
+msgid "email"
+msgstr "E-Peyam"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Navnîşan"
+
+msgid "street"
+msgstr "Kolan"
+
+msgid "locality"
+msgstr "Bajar"
+
+msgid "zipcode"
+msgstr "ZIP Code"
+
+msgid "region"
+msgstr "Parêzgeh"
+
+msgid "country"
+msgstr "Welat"
+
+msgid "birthday"
+msgstr "Rojbûn"
+
+msgid "anniversary"
+msgstr "Sersal"
+
+msgid "website"
+msgstr "Website"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Nîşegel"
+
+msgid "male"
+msgstr "mêr"
+
+msgid "female"
+msgstr "jin"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr "ên din"
+
+msgid "manager"
+msgstr "Birêvebir"
+
+msgid "assistant"
+msgstr "Alîkar"
+
+msgid "spouse"
+msgstr "Hevjîn"
+
+msgid "allfields"
+msgstr "Hemû qad"
+
+msgid "search"
+msgstr "Bigere"
+
+msgid "searchresult"
+msgstr "Encama lêgerînê"
+
+msgid "advsearch"
+msgstr "Lêgerîna pêşketî"
+
+msgid "advanced"
+msgstr "Pêşketî"
+
+msgid "other"
+msgstr "Ên din"
+
+msgid "printcontact"
+msgstr "Têkiliyê çap bike"
+
+msgid "qrcode"
+msgstr "Koda QR"
+
+msgid "typehome"
+msgstr "Mal"
+
+msgid "typework"
+msgstr "Kar"
+
+msgid "typeother"
+msgstr "Ên din"
+
+msgid "typemobile"
+msgstr "Mobîl"
+
+msgid "typemain"
+msgstr "Sereke"
+
+msgid "typehomefax"
+msgstr "Faksa Malê"
+
+msgid "typeworkfax"
+msgstr "Faksa Kar"
+
+msgid "typecar"
+msgstr "Otomobîl"
+
+msgid "typepager"
+msgstr ""
+
+msgid "typevideo"
+msgstr "Bînûdeng"
+
+msgid "typeassistant"
+msgstr "Alîkar"
+
+msgid "typehomepage"
+msgstr "Malper"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Berg"
+
+msgid "addfield"
+msgstr "Qadekî zêde bike"
+
+msgid "addcontact"
+msgstr "Kesekî zêde bike"
+
+msgid "editcontact"
+msgstr "Têkiliyê serast bike"
+
+msgid "contacts"
+msgstr "Têkîlî"
+
+msgid "contactproperties"
+msgstr "Taybetmendiyên Kesan"
+
+msgid "contactnameandorg"
+msgstr "Nav û rêxistin"
+
+msgid "personalinfo"
+msgstr "Agahiyên kesane"
+
+msgid "personal"
+msgstr "Kesane"
+
+msgid "contactphoto"
+msgstr "Wêneyê Kes"
+
+msgid "edit"
+msgstr "Serast bike"
+
+msgid "cancel"
+msgstr "Betal"
+
+msgid "save"
+msgstr "Tomar bike"
+
+msgid "delete"
+msgstr "Jê bibe"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr "Bidomîne"
+
+msgid "ok"
+msgstr "Baş e"
+
+msgid "rename"
+msgstr "Navê biguherîne"
+
+msgid "addphoto"
+msgstr "Tevlî bike"
+
+msgid "replacephoto"
+msgstr "Dîsa bi cih bike"
+
+msgid "uploadphoto"
+msgstr "Wêneyê bar bike"
+
+msgid "choosefile"
+msgstr "Pelê hilbijêre..."
+
+msgid "choosefiles"
+msgstr "Pelekê hilbijêre...."
+
+msgid "browse"
+msgstr "Bigere"
+
+msgid "newcontact"
+msgstr "Kesekî nû biafirîne"
+
+msgid "deletecontact"
+msgstr "Têkiliyên hilbijartî jê bibe"
+
+msgid "composeto"
+msgstr "Ji têkiliya hilbijartî re peyam bişîne"
+
+msgid "contactsfromto"
+msgstr "Têkiliyên $count ên di navbera $from - $to de"
+
+msgid "print"
+msgstr "Çap bike"
+
+msgid "export"
+msgstr "Derxe"
+
+msgid "exportall"
+msgstr "Hemûyan derxe"
+
+msgid "exportsel"
+msgstr "A bijartî derxe"
+
+msgid "exportvcards"
+msgstr ""
+
+msgid "newgroup"
+msgstr "Komeke nû çêke"
+
+msgid "addgroup"
+msgstr "Komek tev bike"
+
+msgid "grouprename"
+msgstr "Dîsa navekî li komê bike"
+
+msgid "groupdelete"
+msgstr "Komê jê bibe"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr "Ji komê rake"
+
+msgid "groupremoveselected"
+msgstr ""
+
+msgid "uponelevel"
+msgstr "Astek jor"
+
+msgid "previouspage"
+msgstr "Seta berê nîşan bide"
+
+msgid "firstpage"
+msgstr "Seta yekemîn nîşan bide"
+
+msgid "nextpage"
+msgstr "Seta di rêzê de nîşan bide"
+
+msgid "lastpage"
+msgstr "Seta dawî nîşan bide"
+
+msgid "group"
+msgstr "Kom"
+
+msgid "groups"
+msgstr "Kom"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr "Navnîşanên Takekesî"
+
+msgid "searchsave"
+msgstr "Lêgerînê tomar bike"
+
+msgid "searchdelete"
+msgstr "Lêgerînê jê bibe"
+
+msgid "import"
+msgstr "Derxe"
+
+msgid "importcontacts"
+msgstr ""
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr ""
+
+msgid "importreplace"
+msgstr ""
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Qediya"
+
+msgid "birth_day"
+msgstr "Rojbûn"
+
+msgid "birth_month"
+msgstr "Meha rojbûnê"
+
+msgid "birth_year"
+msgstr "Sala rojbûnê"
+
+msgid "settingsfor"
+msgstr "Sazkarî ji bo"
+
+msgid "about"
+msgstr "Derbar"
+
+msgid "preferences"
+msgstr "Vebijêrk"
+
+msgid "userpreferences"
+msgstr "Vebijêrkên bikarhêner"
+
+msgid "editpreferences"
+msgstr "Vebijêrkên bikarhêner serast bike"
+
+msgid "identities"
+msgstr "Nasname"
+
+msgid "manageidentities"
+msgstr "Nasnameyan bi rê ve bibe"
+
+msgid "newidentity"
+msgstr "Nasnameya nû biafirîne"
+
+msgid "addidentity"
+msgstr "Nasnameyê tevlî bike"
+
+msgid "editidentity"
+msgstr "Nasnameyê biguherîne"
+
+msgid "identityencryption"
+msgstr "Şîfrekirin"
+
+msgid "preferhtml"
+msgstr "Wekî HTML nîşan bide"
+
+msgid "defaultcharset"
+msgstr ""
+
+msgid "htmlmessage"
+msgstr "Peyama HTML"
+
+msgid "messagepart"
+msgstr "Parçe"
+
+msgid "digitalsig"
+msgstr "Îmzeya Dîjîtal"
+
+msgid "dateformat"
+msgstr "Formata dîrokê"
+
+msgid "timeformat"
+msgstr "Formata demê"
+
+msgid "prettydate"
+msgstr "Kurtenivîsa Dîrokê"
+
+msgid "setdefault"
+msgstr "Wekî standard tomar bike"
+
+msgid "autodetect"
+msgstr "Xweber"
+
+msgid "language"
+msgstr "Ziman"
+
+msgid "timezone"
+msgstr "Herêma demê"
+
+msgid "pagesize"
+msgstr "Hejmara peyamên her rûpelekê"
+
+msgid "signature"
+msgstr "Şanenav"
+
+msgid "dstactive"
+msgstr "Demjimêra havînî"
+
+msgid "showinextwin"
+msgstr "Peyamê di çarçoveyeke nû de veke"
+
+msgid "composeextwin"
+msgstr "Di çarçoveyeke nû de binivîse"
+
+msgid "htmleditor"
+msgstr "Peyameke HTML biafirîne"
+
+msgid "htmlonreply"
+msgstr ""
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr "Şanenava HTML"
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr "Panela berê nîşan bide"
+
+msgid "skin"
+msgstr "Rûkara navrûyê"
+
+msgid "logoutclear"
+msgstr ""
+
+msgid "logoutcompact"
+msgstr ""
+
+msgid "uisettings"
+msgstr "Navrûya bikarhêner"
+
+msgid "serversettings"
+msgstr "Sazkariyên rajegir"
+
+msgid "mailboxview"
+msgstr ""
+
+msgid "mdnrequests"
+msgstr ""
+
+msgid "askuser"
+msgstr "bipirse min"
+
+msgid "autosend"
+msgstr ""
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "Di dema jêbirinê peyamê de wekî xwendî nîşan bike"
+
+msgid "flagfordeletion"
+msgstr ""
+
+msgid "skipdeleted"
+msgstr "Peyamên jêbirî nîşan nede"
+
+msgid "deletealways"
+msgstr ""
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr ""
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "ji şanderên nas"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr "ji têkiliyên min"
+
+msgid "always"
+msgstr "Her dem"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr ""
+
+msgid "autosavedraft"
+msgstr "Xweber hilîne"
+
+msgid "everynminutes"
+msgstr "Her $n xulek"
+
+msgid "refreshinterval"
+msgstr ""
+
+msgid "never"
+msgstr "qet"
+
+msgid "immediately"
+msgstr "a niha"
+
+msgid "messagesdisplaying"
+msgstr ""
+
+msgid "messagescomposition"
+msgstr ""
+
+msgid "mimeparamfolding"
+msgstr ""
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (ên din)"
+
+msgid "force7bit"
+msgstr ""
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Vebijêrkên pêşketî"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr ""
+
+msgid "checkallfolders"
+msgstr ""
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr "Vebijêrkên sereke"
+
+msgid "browseroptions"
+msgstr "Vebijêrkên gerokê"
+
+msgid "section"
+msgstr "Beş"
+
+msgid "maintenance"
+msgstr ""
+
+msgid "newmessage"
+msgstr "Peyama nû"
+
+msgid "signatureoptions"
+msgstr ""
+
+msgid "whenreplying"
+msgstr ""
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr ""
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr ""
+
+msgid "replyremovesignature"
+msgstr ""
+
+msgid "autoaddsignature"
+msgstr ""
+
+msgid "newmessageonly"
+msgstr "tenê peyamên nû"
+
+msgid "replyandforwardonly"
+msgstr ""
+
+msgid "insertsignature"
+msgstr ""
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr "Peyaman wekî xwendî nîşan bike"
+
+msgid "afternseconds"
+msgstr "Piştî  $n çirke"
+
+msgid "reqmdn"
+msgstr ""
+
+msgid "reqdsn"
+msgstr ""
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr ""
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr "Taybet (Mal)"
+
+msgid "businessmode"
+msgstr "Karsazî (Kar)"
+
+msgid "collectedaddresses"
+msgstr "Navnîşanên komkirî"
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr ""
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr ""
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr ""
+
+msgid "editoroptions"
+msgstr "Vebijêrkên edîtorê"
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr ""
+
+msgid "asattachment"
+msgstr "wekî pêvek"
+
+msgid "replyallmode"
+msgstr "Çalakiya berdest a bişkoka [Bersiva hemûyan bide]"
+
+msgid "replyalldefault"
+msgstr "bersiva hemûyan bide"
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "hemû peyam"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Peldank"
+
+msgid "folders"
+msgstr "Peldank"
+
+msgid "foldername"
+msgstr "Navê peldankê"
+
+msgid "subscribed"
+msgstr "Ni şanenav"
+
+msgid "messagecount"
+msgstr "Peyam"
+
+msgid "create"
+msgstr "Biafirîne"
+
+msgid "createfolder"
+msgstr "Peldankeke nû biafirîne"
+
+msgid "managefolders"
+msgstr "Rêveberiya peldankan"
+
+msgid "specialfolders"
+msgstr ""
+
+msgid "properties"
+msgstr "Taybetmendî"
+
+msgid "folderproperties"
+msgstr ""
+
+msgid "parentfolder"
+msgstr ""
+
+msgid "location"
+msgstr "Cih"
+
+msgid "info"
+msgstr "Zanyarî"
+
+msgid "getfoldersize"
+msgstr ""
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr "Cûreya peldankê"
+
+msgid "personalfolder"
+msgstr "Peldanka taybet"
+
+msgid "otherfolder"
+msgstr "Peldanka bikarhênerê din"
+
+msgid "sharedfolder"
+msgstr "Peldanka giştî"
+
+msgid "findfolders"
+msgstr "Peldankan bigere"
+
+msgid "findcontacts"
+msgstr "Têkiliyan bigere"
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr "Kesane"
+
+msgid "namespace.other"
+msgstr "Bikarhênerên din"
+
+msgid "namespace.shared"
+msgstr "Parvekirî"
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr "Peyam"
+
+msgid "dualusefolder"
+msgstr "Peldank"
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr "Sazkariyên Mailvelope veke"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "Şîfrekirin"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr "Çalak bike"
+
+msgid "sortby"
+msgstr "Şêweyê rêzkirinê"
+
+msgid "sortasc"
+msgstr "Wekî zêde dibe"
+
+msgid "sortdesc"
+msgstr "Wekî kêm dibe"
+
+msgid "undo"
+msgstr "Vegere"
+
+msgid "installedplugins"
+msgstr ""
+
+msgid "plugin"
+msgstr "Pêvek"
+
+msgid "version"
+msgstr "Guherto"
+
+msgid "source"
+msgstr "Çavkanî"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Lîsans"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Piştgiriyê bistîne"
+
+msgid "savedsearches"
+msgstr "Lêgerînên tomarkirî"
+
+msgid "dateformatY"
+msgstr "SSSS"
+
+msgid "dateformaty"
+msgstr "SS"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "RR"
+
+msgid "dateformatj"
+msgstr "R"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Îngilîzî"
+
+msgid "westerneuropean"
+msgstr ""
+
+msgid "easterneuropean"
+msgstr ""
+
+msgid "southeasterneuropean"
+msgstr ""
+
+msgid "baltic"
+msgstr ""
+
+msgid "cyrillic"
+msgstr ""
+
+msgid "arabic"
+msgstr "Erebî"
+
+msgid "greek"
+msgstr "Yunanî"
+
+msgid "hebrew"
+msgstr ""
+
+msgid "turkish"
+msgstr "Tirkî"
+
+msgid "nordic"
+msgstr ""
+
+msgid "thai"
+msgstr ""
+
+msgid "celtic"
+msgstr ""
+
+msgid "vietnamese"
+msgstr ""
+
+msgid "japanese"
+msgstr ""
+
+msgid "korean"
+msgstr ""
+
+msgid "chinese"
+msgstr "Çînî"
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr "Vebijarkên bersivdana hemûyan"
+
+msgid "arialabelmoremessageactions"
+msgstr "Bêtir çalakiyên peyaman"
+
+msgid "arialabelmorecontactactions"
+msgstr "Bêtir çalakiyên têkiliyê"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Peyamên hilbijartî nîşan bike wekî..."
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr "Menuya bersivên amadekirî"
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr "Forma guhertina bersivê"
+
+msgid "arialabelsearchterms"
+msgstr "Mercên lêgerîne"
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr "Alavên wêneyê"
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Şaşetiyek pêk hat!"
+
+msgid "messages.loginfailed"
+msgstr "Têketin têk çû."
+
+msgid "messages.cookiesdisabled"
+msgstr "Geroka te mafê nade kiloran"
+
+msgid "messages.sessionerror"
+msgstr "Danişîna te nederbasdar e an jî dema wê qediyaye."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Nelihevhatina kiloran hat dîtin. Ji kerema xwe, kilorên geroka xwe pak bike."
+
+msgid "messages.storageerror"
+msgstr "Girêdana bo bîrdanka rajekarê têk çû."
+
+msgid "messages.servererror"
+msgstr "Şaşetiya rajekarê!"
+
+msgid "messages.servererrormsg"
+msgstr "Şaşetiya rajekarê: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Gelek hewldanên têketinê yên têkçûyî. Paşê dîsa hewl bide."
+
+msgid "messages.connerror"
+msgstr "Şaşetiya dirêdanê (Gihîştina rajekar têk çû)!"
+
+msgid "messages.dberror"
+msgstr "Şaşetiya danegehê!"
+
+msgid "messages.dbconnerror"
+msgstr "Nikare bi danegehê re girêdanê pêk bîne!"
+
+msgid "messages.windowopenerror"
+msgstr "Çarçoveya hilpekok hat astengkirin!"
+
+msgid "messages.requesttimedout"
+msgstr "Dema xwestinê hat derbaskirin"
+
+msgid "messages.errorreadonly"
+msgstr "Ev kar pêk nehat. Peldankê tenê bo xwendinê ye."
+
+msgid "messages.errornoperm"
+msgstr "Ev kar pêk nehat. Destûr nehat dayîn."
+
+msgid "messages.erroroverquota"
+msgstr "Ev kara pêk nehat. Di dîskê de cihê vala nîn e."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Di dîskê de cihê vala nîn e. SHIFT+DELê bi kar bîne da ku peyamekê jê bibî."
+
+msgid "messages.invalidrequest"
+msgstr "Dawxaza nederbasdar! Tu dane nehat tomarkirin."
+
+msgid "messages.invalidhost"
+msgstr "Navê pêşkêş ê nederbasdar."
+
+msgid "messages.nomessagesfound"
+msgstr "Di vê peyamdankê de tu peyam nehat dîtin"
+
+msgid "messages.loggedout"
+msgstr "Te danaşîn bi serkeftî bi dawî kir. Bi xatirê te!"
+
+msgid "messages.mailboxempty"
+msgstr "Peyamdank vala ye"
+
+msgid "messages.nomessages"
+msgstr "Peyam tune ne"
+
+msgid "messages.refreshing"
+msgstr "Tê rojanekirin..."
+
+msgid "messages.loading"
+msgstr "Tê barkirin..."
+
+msgid "messages.uploading"
+msgstr "Pel tê barkirin..."
+
+msgid "messages.attaching"
+msgstr "Pelê tê pêvekirin..."
+
+msgid "messages.uploadingmany"
+msgstr "Pel tên barkirin..."
+
+msgid "messages.loadingdata"
+msgstr "Dane tên barkirin..."
+
+msgid "messages.checkingmail"
+msgstr "Li peyamên nû digere..."
+
+msgid "messages.sendingmessage"
+msgstr "Peyamê tê şandin..."
+
+msgid "messages.messagesent"
+msgstr "Peyam hat şandin"
+
+msgid "messages.savingmessage"
+msgstr "Peyam tê tomarkirin..."
+
+msgid "messages.messagesaved"
+msgstr "Peyam di reşnivîsê de hat tomarkirin"
+
+msgid "messages.successfullysaved"
+msgstr "Bi serkeftî hat tomarkirin."
+
+msgid "messages.savingresponse"
+msgstr "Nivîsa bersivê tê tomarkirin..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Tu bi rastî dixwazî vê nivîsa bersivê jê bibî?"
+
+msgid "messages.nocontactselected"
+msgstr "Te hîn têkîliyeke hilnebijartiye."
+
+msgid "messages.addedsuccessfully"
+msgstr "Têkilî li navnîşanan hat tevlîkirin"
+
+msgid "messages.contactexists"
+msgstr "Têkîliyek bi heman navnîşana e-nameyê jixwe heye."
+
+msgid "messages.contactnameexists"
+msgstr "Têkîliyek bi heman nav jixwe heye."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Ji bo parastina taybetiya te, wêneyên ji dûr ve di vê peyamê de hatin "
+"astengkirin."
+
+msgid "messages.blockedresources"
+msgstr ""
+"Ji bo parastina taybetiya te, çavkaniyên ji dûr ve di vê peyamê de hatin "
+"astengkirin."
+
+msgid "messages.suspiciousemail"
+msgstr "Ev e-peyam gumanbar e!"
+
+msgid "messages.bccemail"
+msgstr "Navnîşana Bcc nederbasdar e."
+
+msgid "messages.bouncehint"
+msgstr "Ev kar dê peyamê wekî peyameke vegeriyayî ji nû ve bişîne."
+
+msgid "messages.encryptedmessage"
+msgstr "Ev peyamenek şîfrekirî ye, bibore, nayê vekirin!"
+
+msgid "messages.externalmessagedecryption"
+msgstr "Şîfrekirina dervayî tê meşandin..."
+
+msgid "messages.nopubkeyfor"
+msgstr "Ji bo $email tu mifteya giştî nehat dîtin."
+
+msgid "messages.nopubkeyforsender"
+msgstr "Ji bo şanderî tu mifteya giştî nehat dîtin."
+
+msgid "messages.encryptnoattachments"
+msgstr "Pelên pêvekirî nikarin werin şîfrekirin."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Li mifteyên giştî yên li ser rajekaran tê gerandin..."
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Mifteyên giştî hatin dîtin û tomarkirin."
+
+msgid "messages.keyservererror"
+msgstr "Girêdana bi rajekara mifteyan re têk çû."
+
+msgid "messages.keyimportsuccess"
+msgstr "Mifte bi serkeftî hat hawîrdakirin."
+
+msgid "messages.nocontactsfound"
+msgstr "Tu têkiliyek nehat dîtin"
+
+msgid "messages.contactnotfound"
+msgstr "Têkiliya dihat xwestin nehat dîtin"
+
+msgid "messages.contactsearchonly"
+msgstr "Ji bo lêgerîna têkiliyan tenê qadên diyarkirî bi kar bîne."
+
+msgid "messages.sendingfailed"
+msgstr "Peyam nehat şandin"
+
+msgid "messages.senttooquickly"
+msgstr ""
+"Ji kerema xwe, bo $ saniyek saniye(yan) bisekine beriya şandina vê peyamê."
+
+msgid "messages.errorsavingsent"
+msgstr "Dema ku peyama şandî hat tomarkirin çewtiyek pêk hat."
+
+msgid "messages.errorsaving"
+msgstr "Wextê tomarkirinê çewtiyek çêbû. "
+
+msgid "messages.errormoving"
+msgstr "Ciyê peyamê nehat guherandin"
+
+msgid "messages.errorcopying"
+msgstr "Peyam(gel) nehat(in) hemankirin. "
+
+msgid "messages.errordeleting"
+msgstr "Peyam nehat jêbirin"
+
+msgid "messages.errormarking"
+msgstr "Nîşankirina peyamê têk çû."
+
+msgid "messages.alerttitle"
+msgstr "Hişyarî"
+
+msgid "messages.confirmationtitle"
+msgstr "Tu bawer î?"
+
+msgid "messages.deletecontactconfirm"
+msgstr "Ji dil dixwazî têkiliya/ên nîşankirî jê bibî?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Tu bi rastî dixwazî vê komê jê bibî?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Ji dil dixwazî peya/ên nîşankirî jê bibî?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Ji dil dixwazî vê peldankê jê bibî?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Tu dixwazî vê peldankê bilivînî?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Ji dil dixwazî hemû peyamên di vê peldankê de jê bibî?"
+
+msgid "messages.contactdeleting"
+msgstr "Têkîlî(yan) tên jêbirin..."
+
+msgid "messages.groupdeleting"
+msgstr "Kom tê rakirin..."
+
+msgid "messages.folderdeleting"
+msgstr "Peldank tê jêbirin..."
+
+msgid "messages.foldermoving"
+msgstr "Peldank tê livandin..."
+
+msgid "messages.foldersubscribing"
+msgstr "Abonebûna peldankê pêk tê..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Betalkirina aboneyê pêk tê..."
+
+msgid "messages.formincomplete"
+msgstr "Form bi temamî nehat tijekirin"
+
+msgid "messages.noemailwarning"
+msgstr "Tika ye, navnîşaneke rast têkevê"
+
+msgid "messages.nonamewarning"
+msgstr "Tika ye, navekî têkevê"
+
+msgid "messages.nopagesizewarning"
+msgstr "Tika ye, mezinahiyeke pelê têkevê"
+
+msgid "messages.nosenderwarning"
+msgstr "Tika navnîşana enameya şander têxe"
+
+msgid "messages.recipientsadded"
+msgstr "Wergir bi serkeftî hatin tevlîkirin."
+
+msgid "messages.norecipientwarning"
+msgstr "Tika ye, herî kêm standyarekê têkevê"
+
+msgid "messages.disclosedrecipwarning"
+msgstr "Haydar be! Hemû wergir dê navnîşanên hev bibînin."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Wergirên eşkere"
+
+msgid "messages.nosubjectwarning"
+msgstr "Qada \"Mijar\"ê vala ye. Dixwazî niha tiştekî lê binivîsî?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Mijar tune ye"
+
+msgid "messages.nobodywarning"
+msgstr "Peyamê bê nivîs bişeyînî?"
+
+msgid "messages.notsentwarning"
+msgstr "Peyam nehat şandin. Tu dixwazî reşnivîsê biparêzî?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr "Çavkaniya peyama dawî hat dîtin. Tu dixwazî daneyan vegerînî?"
+
+msgid "messages.nosearchname"
+msgstr "Tika ye, naveke têkiliyê yan jî navnîşaneke enameyê têxîne."
+
+msgid "messages.notuploadedwarning"
+msgstr "Hîn hemû pel nehatine barkirin. Ji kerema xwe bisekine."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr peyam hatin dîtin."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr têkîlî hatin dîtin."
+
+msgid "messages.searchnomatch"
+msgstr "Di lêgerînê de tu tişt nehat dîtin"
+
+msgid "messages.searching"
+msgstr "Digere..."
+
+msgid "messages.checking"
+msgstr "Tê kontrolkirin..."
+
+msgid "messages.stillsearching"
+msgstr "Hîn lêgerin didome..."
+
+msgid "messages.nospellerrors"
+msgstr "Tu şaşiyeke rastnivîsê nehat dîtin"
+
+msgid "messages.folderdeleted"
+msgstr "Peldank bi serkeftî hat jêbirin."
+
+msgid "messages.foldersubscribed"
+msgstr "Abonebûn bi serkeftî pêk hat."
+
+msgid "messages.folderunsubscribed"
+msgstr "Abonebûn bi serkeftî hat betalkirin."
+
+msgid "messages.folderpurged"
+msgstr "Peldank bi serkeftî hat valakirirn."
+
+msgid "messages.folderexpunged"
+msgstr "Peldank bi serkeftî hat paqijdirin."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Bi serkeftî hat jêbirin."
+
+msgid "messages.converting"
+msgstr "Formatkirin ji peyamê tê birin..."
+
+msgid "messages.messageopenerror"
+msgstr "Peyam ji pêşkêşkar nehat barkirin"
+
+msgid "messages.filelinkerror"
+msgstr "Lînkandina pelê bi ser neket."
+
+msgid "messages.fileuploaderror"
+msgstr "Barkirina pelê têk çû"
+
+msgid "messages.csvfilemismatch"
+msgstr "Lihevhatina strukturên pelê CSV tune ye."
+
+msgid "messages.filesizeerror"
+msgstr "Pel pir mezin e. Herî zêde divê $size be"
+
+msgid "messages.filecounterror"
+msgstr "Hejmara pelên hatî barkirin pir zêde ye."
+
+msgid "messages.msgsizeerror"
+msgstr "Mezinahiya peyamê ji sînorê herî zêde derbas dibe ($size)."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Mezinahiya peyama ku tê şandin ji sînorê herî zêde derbas dibe ($size)."
+
+msgid "messages.copysuccess"
+msgstr "Bi serkeftî hat jêgirtin."
+
+msgid "messages.movesuccess"
+msgstr "Bi serkeftî hat livandin."
+
+msgid "messages.copyerror"
+msgstr "Têkilî nehatin jêgirtin."
+
+msgid "messages.moveerror"
+msgstr "Têkilî nehatin livandin."
+
+msgid "messages.sourceisreadonly"
+msgstr "Çavkaniya vê navnîşanê tenê-xwendin e"
+
+msgid "messages.errorsavingcontact"
+msgstr "Navnîşana têkiliyê nehat barkirin"
+
+msgid "messages.movingmessage"
+msgstr "Ciyê peyamê tê guhertin..."
+
+msgid "messages.copyingmessage"
+msgstr "Peyam templates jêgirtin... "
+
+msgid "messages.copyingcontact"
+msgstr "Têkilî tên jêgirtin.."
+
+msgid "messages.movingcontact"
+msgstr "Têkilî tên livandin.."
+
+msgid "messages.deletingmessage"
+msgstr "Peyam  tên jêbirin..."
+
+msgid "messages.markingmessage"
+msgstr "Peyam tên nîşankirin.."
+
+msgid "messages.addingmember"
+msgstr "Têkilî bo komê templates tevlîkirin.."
+
+msgid "messages.removingmember"
+msgstr "Têkilî ji komê templates rakirin.."
+
+msgid "messages.receiptsent"
+msgstr "Rapora şandina serkeftî"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Rapor nehat şandin"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Tu bi rastî dixwazî vê nasnameyê jê bibî?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Nikarî vê nasnameyê jê bibî. Ew ya dawî ye."
+
+msgid "messages.forbiddencharacter"
+msgstr "Di navê peldankê de tîpên qedexekirî hene."
+
+msgid "messages.selectimportfile"
+msgstr "Ji kerema xwe pelê ku dê were hawîrdakirin hilbijêre."
+
+msgid "messages.addresswriterror"
+msgstr "Pelê navnîşanan tenê ji bo xwendinê ye, nayê guhertin."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Têkilî bi serkeftî li vê komê hat tevlîkirin."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Têkilî bi serkeftî ji vê komê hat rakirin."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Tu guhartin di endamtiya komê de çênenû."
+
+msgid "messages.importwait"
+msgstr "Hawîrdakirin didome, ji kerema xwe bisekine..."
+
+msgid "messages.importformaterror"
+msgstr "Formata pelê hawîrdakirinê nederbasdar e."
+
+msgid "messages.importconfirm"
+msgstr "Tu bi rastî dixwazî van daneyan hawîr bikî?"
+
+msgid "messages.importconfirmskipped"
+msgstr "Dûbarekirin hatin dîtin û jê hatin derbaskirin."
+
+msgid "messages.importconfirminvalid"
+msgstr "Daneyên nederbasdar nehatin girtin."
+
+msgid "messages.importconfirmerrors"
+msgstr "Di dema hawîrdakirinê de şaşetî çêbûn."
+
+msgid "messages.importmessagesuccess"
+msgstr "Peyam bi serkeftî hatin hawîrdakirin."
+
+msgid "messages.importmessageerror"
+msgstr "Hawîrdakirina peyaman bi ser neket."
+
+msgid "messages.opnotpermitted"
+msgstr "Ev kar nayê qebûlkirin!"
+
+msgid "messages.nofromaddress"
+msgstr "Di nasnameya hilbijartî de navnîşana e-peyamê tune ye."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Guhertina formata edîtorê dibe ku bibe sedema windabûna hinek nivîsan."
+
+msgid "messages.httpreceivedencrypterror"
+msgstr "Şaşetiyeke şîfrekirinê ya ewlehiyê çêbû."
+
+msgid "messages.smtpconnerror"
+msgstr "Şaşetiya girêdana SMTP ($code): Girêdan bi rajekar re çênenû."
+
+msgid "messages.smtpautherror"
+msgstr "Şaşetiya pejirandina SMTP ($code): Têketin bi ser neket."
+
+msgid "messages.smtpfromerror"
+msgstr ""
+"Şaşetiya şanderê SMTP ($code): Navnîşana şander nehat qebûlkirin ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr ""
+"Şaşetiya wergirê SMTP ($code): Navnîşana wergir nehat qebûlkirin ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "Şaşetiya SMTP: Nikarî lîsteya wergiran bixwîne."
+
+msgid "messages.smtputf8error"
+msgstr "Rajekarê SMTP piştgiriya navnîşanên UTF-8 nake."
+
+msgid "messages.smtpsizeerror"
+msgstr "Mezinahiya peyamê ji sînorê SMTP derbas dibe ($size)."
+
+msgid "messages.smtperror"
+msgstr "Şaşetiya SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Navnîşana e-peyamê ya nederbasdar: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+"Gelek wergir hene. Herî zêde her e-peyam dikare bibe xwediyê $max wergiran."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Hejmara endamên komê gihîşt sînorê herî zêde ($max)."
+
+msgid "messages.internalerror"
+msgstr "Şaşetiya navxweyî pêk hat. Ji nû ve biceribîne."
+
+msgid "messages.contactdelerror"
+msgstr "Jêbirina têkiliyan bi ser neket."
+
+msgid "messages.contactdeleted"
+msgstr "Têkilî bi serkeftî hatin jêbirin."
+
+msgid "messages.contactrestoreerror"
+msgstr "Vegerandina têkiliyên jêbirî bi ser neket."
+
+msgid "messages.contactrestored"
+msgstr "Têkilî bi serkeftî hatin vegerandin."
+
+msgid "messages.groupdeleted"
+msgstr "Kom bi serkeftî hat jêbirin."
+
+msgid "messages.grouprenamed"
+msgstr "Navê komê bi serkeftî hat guhertin"
+
+msgid "messages.groupcreated"
+msgstr "Kom bi serkeftin hat afirandin."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Lêgerîna tomarkirî bi serkeftî hat jêbirin."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Jêbirina lêgerîna tomarkirî bi ser neket."
+
+msgid "messages.savedsearchcreated"
+msgstr "Lêgerîna tomarkirî bi serkeftî hat afirandin."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Afirandina lêgerîna tomarkirî bi ser neket."
+
+msgid "messages.messagedeleted"
+msgstr "Peyam bi serkeftî hatin jêbirin."
+
+msgid "messages.messagemoved"
+msgstr "Peyam bi serkeftî hatin livandin."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Peyam bi serkeftî bo jêbiranedakê hatin livandin."
+
+msgid "messages.messagecopied"
+msgstr "Peyam bi serkeftî hatin jêgirtin."
+
+msgid "messages.messagemarked"
+msgstr "Peyam bi serkeftî hatin nîşankirin."
+
+msgid "messages.autocompletechars"
+msgstr "Herî kêm $min tîpan têkeve ji bo temamkirina otomatîk."
+
+msgid "messages.autocompletemore"
+msgstr "Gelek encamên dîtî hene, ji kerema xwe tîpên din têkeve."
+
+msgid "messages.namecannotbeempty"
+msgstr "Nav nabe ku vala be."
+
+msgid "messages.nametoolong"
+msgstr "Nav pir dirêj e."
+
+msgid "messages.namedotforbidden"
+msgstr "Navî peldankê bi xalekê nayê destpêkkirin."
+
+msgid "messages.folderupdated"
+msgstr "Peldank bi serkeftî hat rojanekirin."
+
+msgid "messages.foldercreated"
+msgstr "Peldank bi serkeftî hat afirandin."
+
+msgid "messages.invalidimageformat"
+msgstr "Formata wêneyê nederbasdar e."
+
+msgid "messages.mispellingsfound"
+msgstr "Di metnê de çewtiyên rastnivîsê hatin dîtin."
+
+msgid "messages.parentnotwritable"
+msgstr "Nikarî di bin vê peldankê de tiştekî biafirînî, destûr nîn e."
+
+msgid "messages.messagetoobig"
+msgstr "Mezinahiya peyamê ji bo barkirinê pir zêde ye."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Hişyarî: Ji bo bikaranîna rajekarê vê webmailê, pêdivî bi çalakkirina "
+"Javascript heye. Tika ye Javascriptê di sazkariyên gerokê xwe de çalak bike."
+
+msgid "messages.messageissent"
+msgstr ""
+"Peyam jixwe hatibû şandin, lê hîn nehatiye tomarkirin. Dixwazî ​​niha tomar "
+"bikî?"
+
+msgid "messages.errnotfound"
+msgstr "Pel nehat dîtin"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Çavkaniya daxwazkirî nehat dîtin"
+
+msgid "messages.errfailedrequest"
+msgstr "Daxwaza têkçûyî"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Rastandin têk çû"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Nekare piştrast bike ku tu mafê te heye ku bigihêjî vê rajekarê!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Kontrolkirina daxwazê têk çû"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Ji bo parastina te, gihîştina vê çavkaniyê li dijî CSRFê hatiye parastin.\n"
+"Ku tu vê yekê bibînî, dibe ku tu berî berdana ji sepana tevnê derneketine.\n"
+"\n"
+"Niha ji bo domandina têkiliya mirovan pêdivî ye."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Tika ye bi rêvebirê rajekarê xwe re têkeve têkiliyê."
+
+msgid "messages.clicktoresumesession"
+msgstr "Ji bo domandina danişîna xwe ya berê li vir bitikîne"
+
+msgid "messages.errcomposesession"
+msgstr "Şaşetiiya danişîna nivîsandinê"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Danişîna nivîsandinê ya daxwazkirî nehat dîtin."
+
+msgid "messages.clicktocompose"
+msgstr "Ji bo nivîsandina e-nameyeke nû li vir bitikîne."
+
+msgid "messages.nosupporterror"
+msgstr "Ev taybetmendî ji aliyê geroka te ya tevnê ve nayê piştgirîkirin."
+
+msgid "messages.siginserted"
+msgstr "Îmze bi serkeftî hate têxistin."
+
+msgid "messages.responseinserted"
+msgstr "Bersîv bi serkeftî hate têxistin."
+
+msgid "messages.noresponsesavailable"
+msgstr "Ti bersiv tine ne"
+
+msgid "messages.listempty"
+msgstr "Lîste vala ye"
+
+msgid "messages.listusebutton"
+msgstr "Ji bo tevlîkirina tomareke nû, bişkoka bifarîne bi kar bîne."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Cotek kilîtên nû bi serkeftî ji bo $identity hate afirandin."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Ev pêvek vala xuya dike. <br>Tika ye bi kesê ku ev şandiye re kontrol bike."
+
+msgid "messages.oauthloginfailed"
+msgstr "Têketina OAuth têk çû.Tika ye dîsa hewl bide."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Daxwaza rastandinê nederbasdar an kêm bû."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Rajekarê rastandinê yan jî bikarhêner daxwaz nepejirand."

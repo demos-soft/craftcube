@@ -1,0 +1,2850 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: hy_AM\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Բարի գալուստ $product"
+
+msgid "username"
+msgstr "Օգտվող"
+
+msgid "password"
+msgstr "Գաղտնաբառ"
+
+msgid "server"
+msgstr "Սերվեր"
+
+msgid "login"
+msgstr "Մուտք"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Ելք"
+
+msgid "mail"
+msgstr "Էլ–փոստ"
+
+msgid "settings"
+msgstr "Նախասիրություններ"
+
+msgid "addressbook"
+msgstr "Հասցեներ"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Փոստարկղ"
+
+msgid "drafts"
+msgstr "Սևագրեր"
+
+msgid "sent"
+msgstr "Ուղարկված"
+
+msgid "trash"
+msgstr "Աղբարկղ"
+
+msgid "junk"
+msgstr "Թափոն"
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr "Վերնագիր"
+
+msgid "from"
+msgstr "Ուղարկող"
+
+msgid "sender"
+msgstr "Ուղարկող"
+
+msgid "to"
+msgstr "Ստացող"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Reply-To"
+
+msgid "followupto"
+msgstr "Ի հավելում"
+
+msgid "date"
+msgstr "Ամսաթիվ"
+
+msgid "size"
+msgstr "Չափ"
+
+msgid "priority"
+msgstr "Առավելություն"
+
+msgid "organization"
+msgstr "Կազմակերպություն"
+
+msgid "readstatus"
+msgstr "Ընթերցման կարգավիճակ"
+
+msgid "listoptions"
+msgstr "Ցուցակի ընտրանքներ…"
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Դարակներ"
+
+msgid "messagesfromto"
+msgstr "Նամակներ $from–ից $to–ը եղած $count–ից"
+
+msgid "threadsfromto"
+msgstr "Թեմաներ $from-ից $to ընդհանուր $count-ից"
+
+msgid "messagenrof"
+msgstr "Նամակ $nr եղած $count–ից"
+
+msgid "fromtoshort"
+msgstr "$from-ից $to ընդհանուր $count-ից"
+
+msgid "copy"
+msgstr "Cc"
+
+msgid "move"
+msgstr "Տեղափոխել"
+
+msgid "moveto"
+msgstr "Տեղափոխել..."
+
+msgid "copyto"
+msgstr ""
+
+msgid "download"
+msgstr "Ներբեռնել"
+
+msgid "open"
+msgstr "Բաց"
+
+msgid "showattachment"
+msgstr "Ցուցադրել"
+
+msgid "showanyway"
+msgstr "Ամեն դեպքում ցուցադրել"
+
+msgid "filename"
+msgstr "Ֆայլի անուն"
+
+msgid "filesize"
+msgstr "Ֆայլի չափ"
+
+msgid "addtoaddressbook"
+msgstr "Հիշել հասցեն"
+
+msgid "sun"
+msgstr "Կիր"
+
+msgid "mon"
+msgstr "Երկ"
+
+msgid "tue"
+msgstr "Երք"
+
+msgid "wed"
+msgstr "Չրք"
+
+msgid "thu"
+msgstr "Հնգ"
+
+msgid "fri"
+msgstr "Ուրբ"
+
+msgid "sat"
+msgstr "Շբթ"
+
+msgid "sunday"
+msgstr "Կիրակի"
+
+msgid "monday"
+msgstr "Երկուշաբթի"
+
+msgid "tuesday"
+msgstr "Երեքշաբթի"
+
+msgid "wednesday"
+msgstr "Չորեքշաբթի"
+
+msgid "thursday"
+msgstr "Հինգշաբթի"
+
+msgid "friday"
+msgstr "Ուրբաթ"
+
+msgid "saturday"
+msgstr "Շաբաթ"
+
+msgid "jan"
+msgstr "Հնվ"
+
+msgid "feb"
+msgstr "Փետ"
+
+msgid "mar"
+msgstr "Մար"
+
+msgid "apr"
+msgstr "Ապր"
+
+msgid "may"
+msgstr "Մայիս"
+
+msgid "jun"
+msgstr "Հուս"
+
+msgid "jul"
+msgstr "Հուլ"
+
+msgid "aug"
+msgstr "Օգս"
+
+msgid "sep"
+msgstr "Սեպ"
+
+msgid "oct"
+msgstr "Հոկ"
+
+msgid "nov"
+msgstr "Նոյ"
+
+msgid "dec"
+msgstr "Դեկ"
+
+msgid "longjan"
+msgstr "Հունվար"
+
+msgid "longfeb"
+msgstr "Փետրվար"
+
+msgid "longmar"
+msgstr "Մարտ"
+
+msgid "longapr"
+msgstr "Ապրիլ"
+
+msgid "longmay"
+msgstr "Մայիս"
+
+msgid "longjun"
+msgstr "Հունիս"
+
+msgid "longjul"
+msgstr "Հուլիս"
+
+msgid "longaug"
+msgstr "Օգոստոս"
+
+msgid "longsep"
+msgstr "Սեպտեմբեր"
+
+msgid "longoct"
+msgstr "Հոկտեմբեր"
+
+msgid "longnov"
+msgstr "Նոյեմբեր"
+
+msgid "longdec"
+msgstr "Դեկտեմբեր"
+
+msgid "today"
+msgstr "Այսօր"
+
+msgid "refresh"
+msgstr "Թարմացնել"
+
+msgid "checkmail"
+msgstr "Ստուգել նոր նամակները"
+
+msgid "compose"
+msgstr "Գրել նամակ"
+
+msgid "writenewmessage"
+msgstr "Նոր նամակ"
+
+msgid "reply"
+msgstr "Պատասխանել"
+
+msgid "replytomessage"
+msgstr "Պատասխանել նամակին"
+
+msgid "replytoallmessage"
+msgstr "Պատասխանել բոլորին"
+
+msgid "replyall"
+msgstr "Պատասխանել բոլորին"
+
+msgid "replylist"
+msgstr "Պատասխանել ցուցակին"
+
+msgid "forward"
+msgstr "Փոխանցել"
+
+msgid "forwardinline"
+msgstr "Փոխանցել նամակի մեջ"
+
+msgid "forwardattachment"
+msgstr "Փոխանցել կցված"
+
+msgid "forwardmessage"
+msgstr "Փոխանցել նամակը"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Ջնջել նամակը"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Գցել աղբարկղը"
+
+msgid "printmessage"
+msgstr "Տպել"
+
+msgid "previousmessage"
+msgstr "Ցուցադրել նախորդ նամակը"
+
+msgid "firstmessage"
+msgstr "Ցուցադրել առաջին նամակը"
+
+msgid "nextmessage"
+msgstr "Ցուցադրել հաջորդ նամակը"
+
+msgid "lastmessage"
+msgstr "Ցուցադրել վերջին նամակը"
+
+msgid "backtolist"
+msgstr "Վերադառնալ նամակների ցուցակ"
+
+msgid "viewsource"
+msgstr "Ցուցադրել նամակի կոդը"
+
+msgid "mark"
+msgstr "Նշել"
+
+msgid "markmessages"
+msgstr "Նշել նամակները"
+
+msgid "markread"
+msgstr "որպես կարդացած"
+
+msgid "markunread"
+msgstr "որպես չկարդացած"
+
+msgid "markflagged"
+msgstr "որպես նշված"
+
+msgid "markunflagged"
+msgstr "որպես չնշված"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Հավելյալ գործողություններ…"
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr ""
+
+msgid "more"
+msgstr "Ավելին"
+
+msgid "back"
+msgstr "Ետ"
+
+msgid "options"
+msgstr "Ընտրանքներ"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "next"
+msgstr ""
+
+msgid "select"
+msgstr "Նշել"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Բոլորը"
+
+msgid "none"
+msgstr "Չնշել"
+
+msgid "currpage"
+msgstr "Առկա էջ"
+
+msgid "isread"
+msgstr "Ընթերցված"
+
+msgid "unread"
+msgstr "Չկարդացածը"
+
+msgid "flagged"
+msgstr "Նշված"
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr "Անպատասխան"
+
+msgid "withattachment"
+msgstr ""
+
+msgid "deleted"
+msgstr "Ջնջված"
+
+msgid "undeleted"
+msgstr "Ջնջված չէ"
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr "Փոխանցված"
+
+msgid "invert"
+msgstr "Փոխատեղել"
+
+msgid "filter"
+msgstr "Զտիչ"
+
+msgid "list"
+msgstr "Ցուցակ"
+
+msgid "threads"
+msgstr "Թեմաներ"
+
+msgid "expand-all"
+msgstr "Ընդլայնել բոլորը"
+
+msgid "expand-unread"
+msgstr "Ընդլայնել չկարդացվածը"
+
+msgid "collapse-all"
+msgstr "Փլչել բոլորը"
+
+msgid "threaded"
+msgstr "Թեմավորված"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Բաց անել թեմաները"
+
+msgid "do_expand"
+msgstr "բոլոր թեմաները"
+
+msgid "expand_only_unread"
+msgstr "միայն չկարդացված հաղորդագրություններով"
+
+msgid "fromto"
+msgstr "Ումից/Ում"
+
+msgid "flag"
+msgstr "Նշան"
+
+msgid "attachment"
+msgstr "Կցորդ"
+
+msgid "nonesort"
+msgstr "Չնշել"
+
+msgid "sentdate"
+msgstr "Ուղարկման ամսաթիվ"
+
+msgid "arrival"
+msgstr "Ստացման Ամսաթիվ"
+
+msgid "asc"
+msgstr "ըստ աճման"
+
+msgid "desc"
+msgstr "ըստ նվազման"
+
+msgid "listcolumns"
+msgstr "Ցուցակի սյունյակներ"
+
+msgid "listsorting"
+msgstr "Տեսակավորման սյունյակ"
+
+msgid "listorder"
+msgstr "Տեսակավորման կարգը"
+
+msgid "listmode"
+msgstr "Ցուցակով տեսքի տարբերակը"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Ցուցակ"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Պանակի գործողություններ…"
+
+msgid "compact"
+msgstr "Սեղմել"
+
+msgid "empty"
+msgstr "Դատարկել"
+
+msgid "importmessages"
+msgstr ""
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Դիսկային տարածք"
+
+msgid "unknown"
+msgstr "անհայտ"
+
+msgid "unlimited"
+msgstr "անսահմանափակ"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr ""
+
+msgid "quotastorage"
+msgstr ""
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Արագ որոնում"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Վերսկսել որոնումը"
+
+msgid "searchmod"
+msgstr "Որոնման փոփոխիչներ"
+
+msgid "msgtext"
+msgstr "Ողջ հաղորդագրությունը"
+
+msgid "body"
+msgstr "Մարմին"
+
+msgid "type"
+msgstr "Ձև"
+
+msgid "namex"
+msgstr "Անվանում"
+
+msgid "searchscope"
+msgstr ""
+
+msgid "currentfolder"
+msgstr ""
+
+msgid "subfolders"
+msgstr ""
+
+msgid "allfolders"
+msgstr ""
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Բացել նոր պատուհանում"
+
+msgid "emlsave"
+msgstr "Ներբեռնել (.eml)"
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr "Խմբագրել որպես նոր"
+
+msgid "send"
+msgstr "Ուղարկել"
+
+msgid "sendmessage"
+msgstr "Ուղարկել"
+
+msgid "savemessage"
+msgstr "Հիշել որպես սևագիր"
+
+msgid "addattachment"
+msgstr "Կցել ֆայլ"
+
+msgid "charset"
+msgstr "Տառաշար"
+
+msgid "editortype"
+msgstr "Խմբագրի տիպը"
+
+msgid "returnreceipt"
+msgstr "Ստացման հավաստագիր"
+
+msgid "dsn"
+msgstr "Առաքման կարգավիճակի ծանուցում"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "$date-ին, $sender-ը գրեց."
+
+msgid "originalmessage"
+msgstr "Առաջին հաղորդագրությունը"
+
+msgid "selectimage"
+msgstr ""
+
+msgid "addimage"
+msgstr ""
+
+msgid "selectmedia"
+msgstr ""
+
+msgid "addmedia"
+msgstr ""
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Ներդնել"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "Ստացող"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Խմբագրել ինքնությունները"
+
+msgid "spellcheck"
+msgstr "Տառասխալներ"
+
+msgid "checkspelling"
+msgstr "Ստուգել ուղագրությունը"
+
+msgid "resumeediting"
+msgstr "Շարունակել խմբագրումը"
+
+msgid "revertto"
+msgstr "Վերականգնել"
+
+msgid "restore"
+msgstr ""
+
+msgid "restoremessage"
+msgstr ""
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr ""
+
+msgid "insertresponse"
+msgstr ""
+
+msgid "manageresponses"
+msgstr ""
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr ""
+
+msgid "editresponse"
+msgstr ""
+
+msgid "editresponses"
+msgstr ""
+
+msgid "responsename"
+msgstr "Անվանում"
+
+msgid "responsetext"
+msgstr ""
+
+msgid "attach"
+msgstr "Կցել"
+
+msgid "attachments"
+msgstr "Կցումներ"
+
+msgid "upload"
+msgstr "Բեռնել"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "Փակել"
+
+msgid "messageoptions"
+msgstr "Հաղորդագրության ընտրանքներ…"
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Ցածր"
+
+msgid "lowest"
+msgstr "Նվազագույն"
+
+msgid "normal"
+msgstr "Նորմալ"
+
+msgid "high"
+msgstr "Կարևոր"
+
+msgid "highest"
+msgstr "Կարևորագույն"
+
+msgid "nosubject"
+msgstr "(առանց վերնագրի)"
+
+msgid "showimages"
+msgstr "Ցուցադրել նկարները"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "Միշտ ցուցադրել պատկերները $sender–ից"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Սա հաղորդագրության սևագիր է"
+
+msgid "andnmore"
+msgstr "$nr այլ..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Ցուցադրել բոլոր գլխագրերը"
+
+msgid "togglefullheaders"
+msgstr "Փոխել գլխագրերը"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Պարզ տեքստ"
+
+msgid "savesentmessagein"
+msgstr "Գրանցել ուղարկված նամակը"
+
+msgid "dontsave"
+msgstr "Չ՛գրանցել"
+
+msgid "maxuploadsize"
+msgstr "Առավելագույն թույլատրելի ֆայլի չափը $size է"
+
+msgid "addcc"
+msgstr "Ավելացնել Cc"
+
+msgid "addbcc"
+msgstr "Ավելացնել Bcc"
+
+msgid "addreplyto"
+msgstr "Ավելացնել Reply-To"
+
+msgid "addfollowupto"
+msgstr "Ավելացնել հավելում"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Նամակի հեղինակը խնդրել է նամակը կարդալուն պես տեղեկացնել իրեն։ Ցանկանում էք "
+"Տեղեկացնե՞լ։"
+
+msgid "receiptread"
+msgstr "Նամակի ընթերցման ծանուցագիր"
+
+msgid "yourmessage"
+msgstr "Սա Ձեր նամակի ընթերցման ծանուցագիրն է"
+
+msgid "receiptnote"
+msgstr ""
+"Նշում՝ Այս ծանուցագիրը ընդամենը տեղեկացնում է, որ նամակը ցուցադրվել է "
+"հասցեատիրոջ համակարչով։ Չկա որևիցե երաշխիք, որ հասցեատերը իսկապես կարդացել է"
+" նամակը։"
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Մականուն"
+
+msgid "firstname"
+msgstr "Անուն"
+
+msgid "surname"
+msgstr "Ազգանուն"
+
+msgid "middlename"
+msgstr "Միջին անուն"
+
+msgid "nameprefix"
+msgstr "Նախածանց"
+
+msgid "namesuffix"
+msgstr "Վերջածանց"
+
+msgid "nickname"
+msgstr "Մականուն"
+
+msgid "jobtitle"
+msgstr "Պաշտոն"
+
+msgid "department"
+msgstr "Բաժանմունք"
+
+msgid "gender"
+msgstr "Սեռ"
+
+msgid "maidenname"
+msgstr "Մինչամուսնական ազգանուն"
+
+msgid "email"
+msgstr "Էկ–փոստ"
+
+msgid "phone"
+msgstr "Հեռախոս"
+
+msgid "address"
+msgstr "Հասցե"
+
+msgid "street"
+msgstr "Փողոց"
+
+msgid "locality"
+msgstr "Քաղաք"
+
+msgid "zipcode"
+msgstr "Փոստային կոդ"
+
+msgid "region"
+msgstr "Մարզ"
+
+msgid "country"
+msgstr "Երկիր"
+
+msgid "birthday"
+msgstr "Ծննդյան օր"
+
+msgid "anniversary"
+msgstr "Տարեդարձ"
+
+msgid "website"
+msgstr "Կայք"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Նշումներ"
+
+msgid "male"
+msgstr "արական"
+
+msgid "female"
+msgstr "իգական"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Մենեջեր"
+
+msgid "assistant"
+msgstr "Օգնական"
+
+msgid "spouse"
+msgstr "ամուսին"
+
+msgid "allfields"
+msgstr "Բոլոր դաշտերը"
+
+msgid "search"
+msgstr "Որոնում"
+
+msgid "searchresult"
+msgstr ""
+
+msgid "advsearch"
+msgstr "Խորացված որոնում"
+
+msgid "advanced"
+msgstr "Խորացված"
+
+msgid "other"
+msgstr "Այլ"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "Տուն"
+
+msgid "typework"
+msgstr "Աշխատանք"
+
+msgid "typeother"
+msgstr "Այլ"
+
+msgid "typemobile"
+msgstr "Բջջային"
+
+msgid "typemain"
+msgstr "Գլխավոր"
+
+msgid "typehomefax"
+msgstr "Տան ֆաքս"
+
+msgid "typeworkfax"
+msgstr "Աշտանանքային ֆաքս"
+
+msgid "typecar"
+msgstr "Մեքենա"
+
+msgid "typepager"
+msgstr "Փեյջեր"
+
+msgid "typevideo"
+msgstr "Տեսանյութ"
+
+msgid "typeassistant"
+msgstr "Օգնական"
+
+msgid "typehomepage"
+msgstr "Սկիզբ"
+
+msgid "typeblog"
+msgstr "Բլոգ"
+
+msgid "typeprofile"
+msgstr "Պրոֆայլ"
+
+msgid "addfield"
+msgstr "Ավելացնել դաշտ…"
+
+msgid "addcontact"
+msgstr ""
+
+msgid "editcontact"
+msgstr "Խմբագրել հասցեն"
+
+msgid "contacts"
+msgstr "Կապորդներ"
+
+msgid "contactproperties"
+msgstr "Կապորդի հատկանիշներ"
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr "Անձնական տվյալներ"
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr ""
+
+msgid "edit"
+msgstr "Խմբագրել"
+
+msgid "cancel"
+msgstr "Չեղարկել"
+
+msgid "save"
+msgstr "Հիշել"
+
+msgid "delete"
+msgstr "Ջնջել"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Վերանվանել"
+
+msgid "addphoto"
+msgstr "Ավելացնել"
+
+msgid "replacephoto"
+msgstr "Փոխարինել"
+
+msgid "uploadphoto"
+msgstr "Վերբեռնել լուսանկար"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr "Ջնջել նշած նամակները"
+
+msgid "composeto"
+msgstr "Գրել նամակ"
+
+msgid "contactsfromto"
+msgstr "Հասցեներ $from–ից $to–ը եղած $count–ից"
+
+msgid "print"
+msgstr "Տպել"
+
+msgid "export"
+msgstr "Արտահանել"
+
+msgid "exportall"
+msgstr "Արտահանել բոլորը"
+
+msgid "exportsel"
+msgstr "Արտահանել նշվածները"
+
+msgid "exportvcards"
+msgstr "Արտահանել հասցեները vCard չափաձևով"
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr "Վերանվանել խումբը"
+
+msgid "groupdelete"
+msgstr "Ջնջել խումբը"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Հեռացնել նշված անձանց խմբից"
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "Ցուցադրել նախորդ էջը"
+
+msgid "firstpage"
+msgstr "Ցուցադրել առաջին էջը"
+
+msgid "nextpage"
+msgstr "Ցուցադրել հաջորդ էջը"
+
+msgid "lastpage"
+msgstr "Ցուցադրել վերջին էջը"
+
+msgid "group"
+msgstr "Խումբ"
+
+msgid "groups"
+msgstr "Խմբեր"
+
+msgid "listgroup"
+msgstr "Խմբի անդամների ցանկ"
+
+msgid "personaladrbook"
+msgstr "Անձնական հասցեներ"
+
+msgid "searchsave"
+msgstr "Պահպանել որոնումը"
+
+msgid "searchdelete"
+msgstr "Ջնջել որոնումը"
+
+msgid "import"
+msgstr "Ներկրել"
+
+msgid "importcontacts"
+msgstr "Ներկրել հասցեներ"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Ավելացնել կապորդները"
+
+msgid "importreplace"
+msgstr "Փոխել ողջ հասցեագիրքը"
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Ավարտված է"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Նախասիրություններ"
+
+msgid "about"
+msgstr "Նկարագիր"
+
+msgid "preferences"
+msgstr "Նախընտրանքներ"
+
+msgid "userpreferences"
+msgstr "Օգտվողի նախընտրանքներ"
+
+msgid "editpreferences"
+msgstr "Խմբագրել օգտվողի նախընտրանքները"
+
+msgid "identities"
+msgstr "Անձիք"
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "Գերադասել HTML"
+
+msgid "defaultcharset"
+msgstr "Լռելյալ տառաշար"
+
+msgid "htmlmessage"
+msgstr "HTML նամակ"
+
+msgid "messagepart"
+msgstr "մաս"
+
+msgid "digitalsig"
+msgstr "Թվային ստորագրություն"
+
+msgid "dateformat"
+msgstr "Ամսաթվի ձևաչափ"
+
+msgid "timeformat"
+msgstr "Ժամանակի ձևաչափ"
+
+msgid "prettydate"
+msgstr "Պարզ ամսաթվեր"
+
+msgid "setdefault"
+msgstr "Հիմնական"
+
+msgid "autodetect"
+msgstr "Ավտո"
+
+msgid "language"
+msgstr "Լեզուն"
+
+msgid "timezone"
+msgstr "Ժամային գոտի"
+
+msgid "pagesize"
+msgstr "Տողեր առ էջ"
+
+msgid "signature"
+msgstr "Ստորագրություն"
+
+msgid "dstactive"
+msgstr "Ամառային ժամանակ"
+
+msgid "showinextwin"
+msgstr "Բացել հաղորդագրությունը նոր պատուհանում"
+
+msgid "composeextwin"
+msgstr "Կազմել նոր պատուհանում"
+
+msgid "htmleditor"
+msgstr "Ստեղծել HTML նամակներ"
+
+msgid "htmlonreply"
+msgstr "միայն HTML հաղորդագրությանը պատասխանելիս"
+
+msgid "htmlonreplyandforward"
+msgstr "միայն HTML հաղորդագրությանը պատասխանելիս կամ վերահասցեավորելիս"
+
+msgid "htmlsignature"
+msgstr "HTML ստորագրություն"
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr "Ցուցադրել պատուհանը"
+
+msgid "skin"
+msgstr "Տեսքի տարբերակ"
+
+msgid "logoutclear"
+msgstr "Դուրս գալուց դատարկել աղբարկղը"
+
+msgid "logoutcompact"
+msgstr "Դուրս գալուց կարգի բերել փոստարկղը"
+
+msgid "uisettings"
+msgstr "Տեսք"
+
+msgid "serversettings"
+msgstr "Սերվերի կարգավորումներ"
+
+msgid "mailboxview"
+msgstr "Փոստարկղի տեսք"
+
+msgid "mdnrequests"
+msgstr "Տեղեկացումներ"
+
+msgid "askuser"
+msgstr "Հարցնել օգտվողին"
+
+msgid "autosend"
+msgstr "ուղարկել ավտոմատ"
+
+msgid "autosendknown"
+msgstr "ուղարկել ստացական իմ կապորդներին, մնացած դեպքերում` հարցնել ինձ"
+
+msgid "autosendknownignore"
+msgstr "ուղարկել ստացական իմ կապորդներին, մնացած դեպքերում` անտեսել"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "Ջնջելուց նշել նամակը որպես կարդացած"
+
+msgid "flagfordeletion"
+msgstr "Ջնջելու փոխարեն նշել որպես ենթակա ջնջման"
+
+msgid "skipdeleted"
+msgstr "Ցույց չ՛տալ ջնջված նամակները"
+
+msgid "deletealways"
+msgstr ""
+"Հաղորդագրությունները աղբարկղ տեղափոխելիս ձախողման դեպքում ջնջել դրանք։"
+
+msgid "deletejunk"
+msgstr "Միանգամից ջնջել Թափոն հաղորդագրությունները"
+
+msgid "showremoteimages"
+msgstr "Ցույց տալ հեռակա պատկերները"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "հայտնի հասցեատերերից"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "միշտ"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "Ցուցադրել կցված պատկերները հաղորդագրության տակ"
+
+msgid "autosavedraft"
+msgstr "Սևագրի ավտոմատ գրանցում"
+
+msgid "everynminutes"
+msgstr "ամեն $n րոպեն"
+
+msgid "refreshinterval"
+msgstr "Թարմացնել (ստուգել նոր հաղորդագրությունները և այլն)"
+
+msgid "never"
+msgstr "երբեք"
+
+msgid "immediately"
+msgstr "անմիջապես"
+
+msgid "messagesdisplaying"
+msgstr "նամակները ցուցադրելիս"
+
+msgid "messagescomposition"
+msgstr "նամակ գրելիս"
+
+msgid "mimeparamfolding"
+msgstr "Կցորդների անուններ"
+
+msgid "2231folding"
+msgstr "Կատարյալ RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Կատարյալ RFC 2047 (այլ)"
+
+msgid "force7bit"
+msgstr "օգտագործել MIME գրանշում 8 բիթանոց նիշերի համար"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Հավելյալ կարգավորումներ"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "Առաջ բերել պատուհանը նոր նամակ ստանալիս"
+
+msgid "checkallfolders"
+msgstr "Ստուգել բոլոր դարակները նոր նամակների համար"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "HTML հաղորդագրության լռելյալ տառատեսակ"
+
+msgid "mainoptions"
+msgstr "Գլխավոր ընտրանքներ"
+
+msgid "browseroptions"
+msgstr "Զննարկչի ընտրանքներ"
+
+msgid "section"
+msgstr "Բաժին"
+
+msgid "maintenance"
+msgstr "Սպասարկում"
+
+msgid "newmessage"
+msgstr "Նոր հաղորդագրություն"
+
+msgid "signatureoptions"
+msgstr "Ստորագրության ընտրանքներ"
+
+msgid "whenreplying"
+msgstr "Պատասխանելիս"
+
+msgid "replyempty"
+msgstr "մի քաղվածեքառաջին հաղորդագրությունը"
+
+msgid "replytopposting"
+msgstr "սկսել նոր հաղորդագրությունը վերևից"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "սկսել նոր հաղորդագրությունը ներքևից"
+
+msgid "replyremovesignature"
+msgstr "Պատասխանելիս հեռացնել հաղորդագրությունից նախորդ ստորագրությունը"
+
+msgid "autoaddsignature"
+msgstr "Ավելացնել ստորագրություն"
+
+msgid "newmessageonly"
+msgstr "միայն նոր հաղորդագրություններում"
+
+msgid "replyandforwardonly"
+msgstr "պատասխաններում և փոխանցումներում"
+
+msgid "insertsignature"
+msgstr "Ներդնել ստորագրությունը"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "$n վարկյան հետո"
+
+msgid "reqmdn"
+msgstr "Միշտ պատվիրել ստացական"
+
+msgid "reqdsn"
+msgstr "Միշտ պատվիրել առաքման կարգավիճակի ծանուցում"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Հաղորդագրության պատասխանները պահել նույն պանակում"
+
+msgid "defaultabook"
+msgstr "Հիմնական հասցեագիրքը"
+
+msgid "autocompletesingle"
+msgstr "Ավտոլրացման ժամանակ բացառել այլընտրանքային էլփոստի հասցեները"
+
+msgid "listnamedisplay"
+msgstr "Ցուցադրել կապորդները որպես"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Ստուգել տառասխալները հաղորդագրությունը ուղարկելուց առաջ"
+
+msgid "spellcheckoptions"
+msgstr "Սրբագրման ընտրանքներ"
+
+msgid "spellcheckignoresyms"
+msgstr "Անտեսել նշաններով բառերը"
+
+msgid "spellcheckignorenums"
+msgstr "Անտեսել թվերով բառերը"
+
+msgid "spellcheckignorecaps"
+msgstr "Անտեսել լրիվ մեծատառ բառերը"
+
+msgid "addtodict"
+msgstr "Ավելացնել բառարանում"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "mailto: հղումների սպասարկող"
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr "Հաղորդագրությունների վերահասցեավորում"
+
+msgid "inline"
+msgstr "մեջը"
+
+msgid "asattachment"
+msgstr "որպես կցորդ"
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "բոլոր հաղորդագրությունները"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Դարակ"
+
+msgid "folders"
+msgstr "Դարակներ"
+
+msgid "foldername"
+msgstr "Դարակի անուն"
+
+msgid "subscribed"
+msgstr "Բաժանորդագրված"
+
+msgid "messagecount"
+msgstr "Նամակներ"
+
+msgid "create"
+msgstr "Ստեղծել"
+
+msgid "createfolder"
+msgstr "Բացել նոր դարակ"
+
+msgid "managefolders"
+msgstr "Կարգավորել դարակները"
+
+msgid "specialfolders"
+msgstr "Հատուկ դարակներ"
+
+msgid "properties"
+msgstr "Հատկանիշներ"
+
+msgid "folderproperties"
+msgstr "Պանակի հատկանիշներ"
+
+msgid "parentfolder"
+msgstr "Ծնող պանակ"
+
+msgid "location"
+msgstr "Վայր"
+
+msgid "info"
+msgstr "Տեղեկություն"
+
+msgid "getfoldersize"
+msgstr "Հպել պանակի չափը իմանալու համար"
+
+msgid "changesubscription"
+msgstr "Հպել բաժանորդագրությունը փոխելու համար"
+
+msgid "foldertype"
+msgstr "Պանակի տեսակ"
+
+msgid "personalfolder"
+msgstr "Անձնական պանակ"
+
+msgid "otherfolder"
+msgstr "Այլ օգտվողի պանակ"
+
+msgid "sharedfolder"
+msgstr "Հանրային պանակ"
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Դասավորել"
+
+msgid "sortasc"
+msgstr "ըստ աճման"
+
+msgid "sortdesc"
+msgstr "ըստ նվազման"
+
+msgid "undo"
+msgstr "Ետարկել"
+
+msgid "installedplugins"
+msgstr "Տեղակայված հավելումները"
+
+msgid "plugin"
+msgstr "Խրիչ"
+
+msgid "version"
+msgstr "Տարբերակ"
+
+msgid "source"
+msgstr "Աղբյուր"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Արտոնագիր"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Ստանալ օգնություն"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "Բ"
+
+msgid "KB"
+msgstr "ԿԲ"
+
+msgid "MB"
+msgstr "ՄԲ"
+
+msgid "GB"
+msgstr "ԳԲ"
+
+msgid "unicode"
+msgstr "Յունիկոդ"
+
+msgid "english"
+msgstr "Անգլերեն"
+
+msgid "westerneuropean"
+msgstr "Արևմտա-Եվրոպական"
+
+msgid "easterneuropean"
+msgstr "Արևելա-Եվրոպական"
+
+msgid "southeasterneuropean"
+msgstr "Հարավ-արևելաեվրոպական"
+
+msgid "baltic"
+msgstr "Բալթիկ"
+
+msgid "cyrillic"
+msgstr "Կիրիլլիկ"
+
+msgid "arabic"
+msgstr "Արաբական"
+
+msgid "greek"
+msgstr "Հունական"
+
+msgid "hebrew"
+msgstr "Հրեական"
+
+msgid "turkish"
+msgstr "Թուրքական"
+
+msgid "nordic"
+msgstr "Նորդիկ"
+
+msgid "thai"
+msgstr "Թայլանդական"
+
+msgid "celtic"
+msgstr "Կելտական"
+
+msgid "vietnamese"
+msgstr "Վիետնամական"
+
+msgid "japanese"
+msgstr "Ճապոնական"
+
+msgid "korean"
+msgstr "Կորեական"
+
+msgid "chinese"
+msgstr "Չինական"
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr "Փոխանցելու ընտրանքներ"
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Սխա՛լ"
+
+msgid "messages.loginfailed"
+msgstr "Մուտքը ձախողվեց"
+
+msgid "messages.cookiesdisabled"
+msgstr "Сookies–ների ապահովվումը բացակայում է"
+
+msgid "messages.sessionerror"
+msgstr "Անվավեր կամ ժամկետանց սեսիա"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "IMAP սերվերի հետ կապը ձախողվեց"
+
+msgid "messages.servererror"
+msgstr "Սերվերի սխա՛լ"
+
+msgid "messages.servererrormsg"
+msgstr "Սերվերի սխալ` $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr ""
+
+msgid "messages.dberror"
+msgstr "Տվյալների շտեմարանի սխա՛լ"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr "Հարցման թույլատրելի ժամանակը սպառվեց"
+
+msgid "messages.errorreadonly"
+msgstr "Գործողությունը անհնար է։ Պանակը միայն ընթերցման համար է։"
+
+msgid "messages.errornoperm"
+msgstr "Գործողության կատարման իրավունքը մերժված է։"
+
+msgid "messages.erroroverquota"
+msgstr ""
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+
+msgid "messages.invalidrequest"
+msgstr "Սխալ հարցում, ապարդյուն։"
+
+msgid "messages.invalidhost"
+msgstr ""
+
+msgid "messages.nomessagesfound"
+msgstr "Այս փոստարկղում նամակներ չկան"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr ""
+
+msgid "messages.nomessages"
+msgstr ""
+
+msgid "messages.refreshing"
+msgstr ""
+
+msgid "messages.loading"
+msgstr "Բեռնում..."
+
+msgid "messages.uploading"
+msgstr "Ֆայլի վերբեռնում…"
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr "Վերբեռնվում են ֆայլերը…"
+
+msgid "messages.loadingdata"
+msgstr "Տվյալների բեռնավորում…"
+
+msgid "messages.checkingmail"
+msgstr "Նոր նամակների ստուգում…"
+
+msgid "messages.sendingmessage"
+msgstr "Նամակի ուղարկում…"
+
+msgid "messages.messagesent"
+msgstr "Նամակն ուղարկված է"
+
+msgid "messages.savingmessage"
+msgstr "Նամակի գրանցում…"
+
+msgid "messages.messagesaved"
+msgstr "Նամակը գրանցվեց որպես սևագիր"
+
+msgid "messages.successfullysaved"
+msgstr "Գրանցված է"
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Հասցեն ավելացված է"
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "Նույն անունով արդեն անձ գոյություն ունի։"
+
+msgid "messages.blockedimages"
+msgstr "Ձեր անվտանգության համար, այս նամակի արտաքին նկարներն բեռնված չեն"
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Ներողություն, այս նամակը կոդավորված է"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Հասցեներ չկան"
+
+msgid "messages.contactnotfound"
+msgstr "Որոնվող հասցեն չգտնվեց"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Նամակի ուղարկումը ձախողվեց"
+
+msgid "messages.senttooquickly"
+msgstr "Խնդրում ենք սպասել $sec վարկյան մինչ այս նամակն ուղարկելը"
+
+msgid "messages.errorsavingsent"
+msgstr ""
+
+msgid "messages.errorsaving"
+msgstr ""
+
+msgid "messages.errormoving"
+msgstr "Նամակի տեղափոխման ձախողում"
+
+msgid "messages.errorcopying"
+msgstr "Հաղորդագրության պատճենումը ձախողվեց։"
+
+msgid "messages.errordeleting"
+msgstr "Նամակի ջնջման ձախողում"
+
+msgid "messages.errormarking"
+msgstr "Հաղորդագրության նշումը ձախողվեց։"
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "Ուզու՞մ էք ջնջել նշված անձերին"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Դուք իսկապե՞ս ուզում եք ջնջել նշված խումբը։"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Ուզու՞մ էք ջնջել նշված նամակները"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Ուզու՞մ էք ջնջել այս դարակը"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Ուզու՞մ էք ջնջել այս դարակի բոլոր նամակները"
+
+msgid "messages.contactdeleting"
+msgstr "Անձի ջնջում…"
+
+msgid "messages.groupdeleting"
+msgstr "Խմբի ջնջում…"
+
+msgid "messages.folderdeleting"
+msgstr "Դարակը ջնջվում է…"
+
+msgid "messages.foldermoving"
+msgstr "Դարակը տեղափոխվում է…"
+
+msgid "messages.foldersubscribing"
+msgstr "Պանակի բաժանորդագրում…"
+
+msgid "messages.folderunsubscribing"
+msgstr "Պանակի ապաբաժանորդագրում…"
+
+msgid "messages.formincomplete"
+msgstr "Ձևը թերի է լրացված"
+
+msgid "messages.noemailwarning"
+msgstr "Մուտքագրեք ճիշտ էլ. հասցե"
+
+msgid "messages.nonamewarning"
+msgstr "Մուտքագրեք անուն"
+
+msgid "messages.nopagesizewarning"
+msgstr "Մուտքագրեք էջի չափս"
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Մուտքագրեք նվազագույնը մեկ հասցեատեր"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "Վերնագիր բացակայում է, ցանկանո՞ւմ եք լրացնել"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "Ուղարկե՞լ այս նամակը դատարկ"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr "Մուտքագրեք հասցեատեր կամ էլ. հասցե"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Ոչ բոլոր կցված նյութերն են վերբեռնվել։ Սպասեք կամ ընդհատեք վերբեռնումը։"
+
+msgid "messages.searchsuccessful"
+msgstr "Գտնվեց $nr նամակ"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Գտնվել է $nr անձ։"
+
+msgid "messages.searchnomatch"
+msgstr "Համապատասխան նամակներ չգտնվեցին"
+
+msgid "messages.searching"
+msgstr "Որոնում..."
+
+msgid "messages.checking"
+msgstr "Ստուգում…"
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr "Ուղագրական սխալներ չկան"
+
+msgid "messages.folderdeleted"
+msgstr "Դարակը ջնջվեց"
+
+msgid "messages.foldersubscribed"
+msgstr "Պանակին բաժանորդագրումը հաջողվեց։"
+
+msgid "messages.folderunsubscribed"
+msgstr "Պանակից ապաբաժանորդագրումը հաջողվեց։"
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Ջնջված է"
+
+msgid "messages.converting"
+msgstr "Նամակի ձևավորման հեռացում…"
+
+msgid "messages.messageopenerror"
+msgstr "Նամակի բեռնվումը սերվերից ձախողվեց"
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "Ֆայլի կցումն ձախողվեց"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Ֆայլի չափը գերազանցում է մաքսիմալը՝ $size"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr ""
+
+msgid "messages.moveerror"
+msgstr ""
+
+msgid "messages.sourceisreadonly"
+msgstr "Այս հասցեն պաշտպանված է"
+
+msgid "messages.errorsavingcontact"
+msgstr "Հասցեի գրանցումն ձախողվեց"
+
+msgid "messages.movingmessage"
+msgstr "Նամակը տեղափոխվում է…"
+
+msgid "messages.copyingmessage"
+msgstr "Հաղորդագրությունների պատճենում…"
+
+msgid "messages.copyingcontact"
+msgstr "Անձանց պատճենում…"
+
+msgid "messages.movingcontact"
+msgstr ""
+
+msgid "messages.deletingmessage"
+msgstr "Հաղորդագրությունների ջնջում…"
+
+msgid "messages.markingmessage"
+msgstr "Հաղորդագրությունների նշում…"
+
+msgid "messages.addingmember"
+msgstr "Անձանց ավելացում խմբին…"
+
+msgid "messages.removingmember"
+msgstr "Անձանց հեռացում խմբից…"
+
+msgid "messages.receiptsent"
+msgstr "Նամակի ընթերցման ծանուցագիրն ուղարկված է"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Ծանուցագրի ուղարկումը ձախողվեց"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Դուք իսկապե՞ս ուզում եք ջնջել այս ինքնությունը։"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Անհնար է ջնջել վերջին տարբերակը"
+
+msgid "messages.forbiddencharacter"
+msgstr "Դարակի անունը պարունակում է անթույլատրելի նշան"
+
+msgid "messages.selectimportfile"
+msgstr "Ընտրեք ուղարկվող ֆայլը"
+
+msgid "messages.addresswriterror"
+msgstr "Ընտրված հասցեագիրքը ենթակա չէ փոփոխման"
+
+msgid "messages.contactaddedtogroup"
+msgstr "Անձինք բարեհաջող ավելացվեցին խմբին։"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Անձինք բարեհաջող հանվեցին խմբից։"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr "Ներկրումն ընթացքի մեջ է..."
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+"$inserted նոր ներկրված հասցեներ, $skipped արդեն առկա հասցեներ՝ "
+"<p><em>$names</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr "Գործողությունը անթույլատրելի է։"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Համակարգի լարքի սխալ։ Դիմեք համակարգը սպասարկող անձնակազմին։ <b>Ձեր նամակը "
+"ուղարկված չէ։</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP սխալ ($code)` Սերվերի հետ կապը ձախողվեց։"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP սխալ ($code)` Նույնականացումը ձախողվեց։"
+
+msgid "messages.smtpfromerror"
+msgstr ""
+"SMTP սխալ ($code)` Որպես \"$from\" ($msg) հաղորդագրությունը ուղարկելը "
+"ձախողվեց։"
+
+msgid "messages.smtptoerror"
+msgstr ""
+"SMTP սխալ ($code)` Հաղորդագրության ստացող \"$to\"-ին ($msg) ավելացնելը "
+"ձախողվեց։"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP սխալ` ստացողների ցուցակի ընթերցման ձախողում։"
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP սխալ` $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr "Ստացողների քանակը չափազանց մեծ է։ Նվազեցրեք մինչև $max-ը։"
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Խմբի անդամների քանաքը գերազանցում է թույլատրելի $max-ը։"
+
+msgid "messages.internalerror"
+msgstr ""
+
+msgid "messages.contactdelerror"
+msgstr "Անձանց ջնջումը ձախողվեց։"
+
+msgid "messages.contactdeleted"
+msgstr "Անձանց ջնջումը հաջողվեց։"
+
+msgid "messages.contactrestoreerror"
+msgstr "Ջնջված անձանց վերականգնումը ձախողվեց։"
+
+msgid "messages.contactrestored"
+msgstr "Ջնջված անձանց վերականգնումը հաջողվեց։"
+
+msgid "messages.groupdeleted"
+msgstr "Խումբը ջնջվեց։"
+
+msgid "messages.grouprenamed"
+msgstr "Խումբը վերանվանվեց։"
+
+msgid "messages.groupcreated"
+msgstr "Խումբը ստեղծվեց։"
+
+msgid "messages.savedsearchdeleted"
+msgstr "Պահպանված որոնումը ջնջվեց։"
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Պահպանված որոնման ջնջումը ձախողվեց։"
+
+msgid "messages.savedsearchcreated"
+msgstr "Որոնումը պահպանվեց։"
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Պահպանված որոնման ստեղծումը ձախողվեց։"
+
+msgid "messages.messagedeleted"
+msgstr "Հաղորդագրությունները ջնջվեցին։"
+
+msgid "messages.messagemoved"
+msgstr "Հաղորդագրությունները տեղափոխվեցին։"
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "Հաղորդագրությունները պատճենվեցին։"
+
+msgid "messages.messagemarked"
+msgstr "Հաղորդագրությունները նշվեցին։"
+
+msgid "messages.autocompletechars"
+msgstr "Ավտոլրացման համար ներմուծեք առնվազն $min նիշ։"
+
+msgid "messages.autocompletemore"
+msgstr "Գտնված են համապատասխանող գրառումներ, ներմուծեք հավելյալ նիշեր։"
+
+msgid "messages.namecannotbeempty"
+msgstr "Անունը դատարկ չի կարող լինել։"
+
+msgid "messages.nametoolong"
+msgstr "Անունը չափազանց երկար է։"
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr "Պանակը թարմացվեց։"
+
+msgid "messages.foldercreated"
+msgstr "Պանակը ստեղծվեց։"
+
+msgid "messages.invalidimageformat"
+msgstr "Պատկերի սխալ ձևաչափ։"
+
+msgid "messages.mispellingsfound"
+msgstr "Հաղորդագրության մեջ կան տառասխալներ։"
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Նշված պանակի մեջ պանակի ստեղծումը կամ տեղափոխումը անհնար է անբավարար "
+"իրավունքների պատճառով։"
+
+msgid "messages.messagetoobig"
+msgstr "Հաղորդագրության մասը չափազանց մեծ է սպասարկման համար։"
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

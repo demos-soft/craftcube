@@ -1,0 +1,2873 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: lb_LU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Wëllkomm bei $product"
+
+msgid "username"
+msgstr "Benotzernumm"
+
+msgid "password"
+msgstr "Passwuert"
+
+msgid "server"
+msgstr "Server"
+
+msgid "login"
+msgstr "Aloggen"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Ausloggen"
+
+msgid "mail"
+msgstr "Mailen"
+
+msgid "settings"
+msgstr "Astellungen"
+
+msgid "addressbook"
+msgstr "Adressbuch"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Mailbox"
+
+msgid "drafts"
+msgstr "Brouillonen"
+
+msgid "sent"
+msgstr "Verschéckt"
+
+msgid "trash"
+msgstr "Poubelle"
+
+msgid "junk"
+msgstr "Spam"
+
+msgid "show_real_foldernames"
+msgstr "Richteg Nimm vu de speziellen Dossieren uweisen"
+
+msgid "subject"
+msgstr "Sujet"
+
+msgid "from"
+msgstr "Vun"
+
+msgid "sender"
+msgstr "Geschéckt vun"
+
+msgid "to"
+msgstr "Un"
+
+msgid "cc"
+msgstr "CC"
+
+msgid "bcc"
+msgstr "BCC"
+
+msgid "replyto"
+msgstr "Äntwert un"
+
+msgid "followupto"
+msgstr "Noverfollgung un"
+
+msgid "date"
+msgstr "Datum"
+
+msgid "size"
+msgstr "Gréisst"
+
+msgid "priority"
+msgstr "Prioritéit"
+
+msgid "organization"
+msgstr "Organisatioun"
+
+msgid "readstatus"
+msgstr "Lies-Status"
+
+msgid "listoptions"
+msgstr "Optiounen oplëschten"
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Dossieren"
+
+msgid "messagesfromto"
+msgstr "Messagen $from bis $to vun $count"
+
+msgid "threadsfromto"
+msgstr "Diskussiounen $from bis $to vun $count"
+
+msgid "messagenrof"
+msgstr "Message $nr vun $count"
+
+msgid "fromtoshort"
+msgstr "$from bis $to vun $count"
+
+msgid "copy"
+msgstr "Kopéieren"
+
+msgid "move"
+msgstr "Réckelen"
+
+msgid "moveto"
+msgstr "Réckelen an..."
+
+msgid "copyto"
+msgstr "Kopéieren op..."
+
+msgid "download"
+msgstr "Eroflueden"
+
+msgid "open"
+msgstr "Opmaachen"
+
+msgid "showattachment"
+msgstr "Weisen"
+
+msgid "showanyway"
+msgstr "Trotzdeem weisen"
+
+msgid "filename"
+msgstr "Numm vum Fichier"
+
+msgid "filesize"
+msgstr "Gréisst vum Fichier"
+
+msgid "addtoaddressbook"
+msgstr "An d'Adressbuch setzen"
+
+msgid "sun"
+msgstr "Son"
+
+msgid "mon"
+msgstr "Méi"
+
+msgid "tue"
+msgstr "Dën"
+
+msgid "wed"
+msgstr "Mët"
+
+msgid "thu"
+msgstr "Don"
+
+msgid "fri"
+msgstr "Fre"
+
+msgid "sat"
+msgstr "Sam"
+
+msgid "sunday"
+msgstr "Sonndeg"
+
+msgid "monday"
+msgstr "Méindeg"
+
+msgid "tuesday"
+msgstr "Dënschdeg"
+
+msgid "wednesday"
+msgstr "Mëttwoch"
+
+msgid "thursday"
+msgstr "Donneschdeg"
+
+msgid "friday"
+msgstr "Freideg"
+
+msgid "saturday"
+msgstr "Samschdeg"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mäe"
+
+msgid "apr"
+msgstr "Abr"
+
+msgid "may"
+msgstr "Mee"
+
+msgid "jun"
+msgstr "Jun"
+
+msgid "jul"
+msgstr "Jul"
+
+msgid "aug"
+msgstr "Aug"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Dez"
+
+msgid "longjan"
+msgstr "Januar"
+
+msgid "longfeb"
+msgstr "Februar"
+
+msgid "longmar"
+msgstr "Mäerz"
+
+msgid "longapr"
+msgstr "Abrëll"
+
+msgid "longmay"
+msgstr "Mee"
+
+msgid "longjun"
+msgstr "Juni"
+
+msgid "longjul"
+msgstr "Juli"
+
+msgid "longaug"
+msgstr "August"
+
+msgid "longsep"
+msgstr "September"
+
+msgid "longoct"
+msgstr "Oktober"
+
+msgid "longnov"
+msgstr "November"
+
+msgid "longdec"
+msgstr "Dezember"
+
+msgid "today"
+msgstr "Haut"
+
+msgid "refresh"
+msgstr "Nei lueden"
+
+msgid "checkmail"
+msgstr "Nei Messagen ofruffen"
+
+msgid "compose"
+msgstr "Schreiwen"
+
+msgid "writenewmessage"
+msgstr "Neie Message schreiwen"
+
+msgid "reply"
+msgstr "Äntweren"
+
+msgid "replytomessage"
+msgstr "Dem Ofsender äntweren"
+
+msgid "replytoallmessage"
+msgstr "Dem Ofsender an allen Empfänger äntweren"
+
+msgid "replyall"
+msgstr "U jiddwereen äntweren"
+
+msgid "replylist"
+msgstr "Äntwert-Lëscht"
+
+msgid "forward"
+msgstr "Weiderleeden"
+
+msgid "forwardinline"
+msgstr "Am Message weiderleeden"
+
+msgid "forwardattachment"
+msgstr "Als Unhank weiderleeden"
+
+msgid "forwardmessage"
+msgstr "De Message weiderleeden"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Message läschen"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Message an d'Poubelle réckelen"
+
+msgid "printmessage"
+msgstr "Dëse Message drécken"
+
+msgid "previousmessage"
+msgstr "Message virdru weisen"
+
+msgid "firstmessage"
+msgstr "Éischte Message weisen"
+
+msgid "nextmessage"
+msgstr "Nächste Message weisen"
+
+msgid "lastmessage"
+msgstr "Leschte Message weisen"
+
+msgid "backtolist"
+msgstr "Zréck bei d'Lëscht vun de Messagen"
+
+msgid "viewsource"
+msgstr "Source weisen"
+
+msgid "mark"
+msgstr "Markéieren"
+
+msgid "markmessages"
+msgstr "Messagë markéieren"
+
+msgid "markread"
+msgstr "Als gelies"
+
+msgid "markunread"
+msgstr "Als ongelies"
+
+msgid "markflagged"
+msgstr "Mat Fändel"
+
+msgid "markunflagged"
+msgstr "Ouni Fändel"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Mei Aktiounen..."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr "All d'Dossieren"
+
+msgid "more"
+msgstr "Méi"
+
+msgid "back"
+msgstr "Zréck"
+
+msgid "options"
+msgstr "Optiounen"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr "Éischt"
+
+msgid "last"
+msgstr "Lescht"
+
+msgid "previous"
+msgstr "Viregt"
+
+msgid "next"
+msgstr "Nächst"
+
+msgid "select"
+msgstr "Auswielen"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "All"
+
+msgid "none"
+msgstr "Keng"
+
+msgid "currpage"
+msgstr "Aktuell Säit"
+
+msgid "isread"
+msgstr "Gelies"
+
+msgid "unread"
+msgstr "Ongelies"
+
+msgid "flagged"
+msgstr "Mat Fändel"
+
+msgid "unflagged"
+msgstr "Net markéiert"
+
+msgid "unanswered"
+msgstr "Net beäntwert"
+
+msgid "withattachment"
+msgstr "Mat Unhank"
+
+msgid "deleted"
+msgstr "Geläscht"
+
+msgid "undeleted"
+msgstr "Net geläscht"
+
+msgid "replied"
+msgstr "Beäntwert"
+
+msgid "forwarded"
+msgstr "Weidergeleet"
+
+msgid "invert"
+msgstr "Ëmdréinen"
+
+msgid "filter"
+msgstr "Filter"
+
+msgid "list"
+msgstr "Lëscht"
+
+msgid "threads"
+msgstr "Diskussiounen"
+
+msgid "expand-all"
+msgstr "All opfächeren"
+
+msgid "expand-unread"
+msgstr "Ongelies opfächeren"
+
+msgid "collapse-all"
+msgstr "All zesummefächeren"
+
+msgid "threaded"
+msgstr "Diskussiounen zesummefaassen"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Diskussiounen auserneefächeren"
+
+msgid "do_expand"
+msgstr "All d'Diskussiounen"
+
+msgid "expand_only_unread"
+msgstr "just ongeliese Messagen"
+
+msgid "fromto"
+msgstr "Vun/Un"
+
+msgid "flag"
+msgstr "Fändel"
+
+msgid "attachment"
+msgstr "Unhank"
+
+msgid "nonesort"
+msgstr "Keng"
+
+msgid "sentdate"
+msgstr "Verschéckt"
+
+msgid "arrival"
+msgstr "Ukomm"
+
+msgid "asc"
+msgstr "opsteigend"
+
+msgid "desc"
+msgstr "ofsteigend"
+
+msgid "listcolumns"
+msgstr "Kolonnen oplëschten"
+
+msgid "listsorting"
+msgstr "Kolonne sortéieren"
+
+msgid "listorder"
+msgstr "Sortéier-Reiefolleg"
+
+msgid "listmode"
+msgstr "Oplëschtungs-Modus"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Lëscht"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Dossiers-Aktiounen..."
+
+msgid "compact"
+msgstr "Kompaktéieren"
+
+msgid "empty"
+msgstr "Eidel maachen"
+
+msgid "importmessages"
+msgstr "Messagen importéieren"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Plazverbrauch"
+
+msgid "unknown"
+msgstr "onbekannt"
+
+msgid "unlimited"
+msgstr "onlimitéiert"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr ""
+
+msgid "quotastorage"
+msgstr ""
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Séier Sich"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Sich zerécksetzen"
+
+msgid "searchmod"
+msgstr "Sich-Parameter"
+
+msgid "msgtext"
+msgstr "Ganze Message"
+
+msgid "body"
+msgstr "Kierper"
+
+msgid "type"
+msgstr "Typ"
+
+msgid "namex"
+msgstr "Numm"
+
+msgid "searchscope"
+msgstr "Ëmfang"
+
+msgid "currentfolder"
+msgstr "Aktuellen Dossier"
+
+msgid "subfolders"
+msgstr "Dësen an d'Ënnerdossieren"
+
+msgid "allfolders"
+msgstr "All d'Dossieren"
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "An enger neier Fënster opmaachen"
+
+msgid "emlsave"
+msgstr "Eroflueden (.eml)"
+
+msgid "changeformattext"
+msgstr "Als Text ouni Formatéierungen uweisen"
+
+msgid "changeformathtml"
+msgstr "Als formatéierten Text uweisen"
+
+msgid "editasnew"
+msgstr "Als nei editéieren"
+
+msgid "send"
+msgstr "Schécken"
+
+msgid "sendmessage"
+msgstr "Message schécken"
+
+msgid "savemessage"
+msgstr "Als Brouillon späicheren"
+
+msgid "addattachment"
+msgstr "E Fichier drunhänken"
+
+msgid "charset"
+msgstr "Zeechesaz"
+
+msgid "editortype"
+msgstr "Editor-Typ"
+
+msgid "returnreceipt"
+msgstr "Empfanksbestätegung"
+
+msgid "dsn"
+msgstr "Empfanks-Status-Meldung"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "Den $date, $sender schreift:"
+
+msgid "originalmessage"
+msgstr "Original-Message"
+
+msgid "selectimage"
+msgstr "Bild auswielen"
+
+msgid "addimage"
+msgstr "Bild dobäisetzen"
+
+msgid "selectmedia"
+msgstr "Film auswielen"
+
+msgid "addmedia"
+msgstr "Film dobäisetzen"
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Drasetze"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "Empfänger"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Identitéiten editéieren"
+
+msgid "spellcheck"
+msgstr "Orthographie"
+
+msgid "checkspelling"
+msgstr "Orthographie kontrolléieren"
+
+msgid "resumeediting"
+msgstr "Weider editéieren"
+
+msgid "revertto"
+msgstr "Zréck bei"
+
+msgid "restore"
+msgstr "Erëmhirstellen"
+
+msgid "restoremessage"
+msgstr "Message erëmhirstellen"
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr "Äntwerten"
+
+msgid "insertresponse"
+msgstr "Äntwert afügen"
+
+msgid "manageresponses"
+msgstr "Äntwerte geréieren"
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr ""
+
+msgid "editresponse"
+msgstr "Äntwert editéieren"
+
+msgid "editresponses"
+msgstr "Äntwerten Editéieren"
+
+msgid "responsename"
+msgstr "Numm"
+
+msgid "responsetext"
+msgstr "Äntwert-Text"
+
+msgid "attach"
+msgstr "Drunhänken"
+
+msgid "attachments"
+msgstr "Unhäng"
+
+msgid "upload"
+msgstr "Eroplueden"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "Zoumaachen"
+
+msgid "messageoptions"
+msgstr "Message-Optiounen..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Niddreg"
+
+msgid "lowest"
+msgstr "Am niddregsten"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "high"
+msgstr "Héich"
+
+msgid "highest"
+msgstr "Am héchsten"
+
+msgid "nosubject"
+msgstr "(kee Sujet)"
+
+msgid "showimages"
+msgstr "Biller uweisen"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "Biller vun $sender ëmmer uweisen"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Dëst ass e Brouillon."
+
+msgid "andnmore"
+msgstr "$nr more..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Méi Message-Headeren uweisen"
+
+msgid "togglefullheaders"
+msgstr "Réi Message-Headeren an-/ausblenden"
+
+msgid "htmltoggle"
+msgstr "Text mat Formatéierungen"
+
+msgid "plaintoggle"
+msgstr "Text ouni Formatéierungen"
+
+msgid "savesentmessagein"
+msgstr "Dee verschéckte Message späicheren an"
+
+msgid "dontsave"
+msgstr "net späicheren"
+
+msgid "maxuploadsize"
+msgstr "Déi maximal erlaabte Fichiers-Gréisst ass $size"
+
+msgid "addcc"
+msgstr "CC dobäisetzen"
+
+msgid "addbcc"
+msgstr "BCC dobäisetzen"
+
+msgid "addreplyto"
+msgstr "\"Äntwert un\" dobäisetzen"
+
+msgid "addfollowupto"
+msgstr "\"Noverfollgung un\" dobäisetzen"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"De Sender vun dësem Message huet gefrot fir informéiert ze gi wann de "
+"Message gelies gëtt. Wëlls du de Sender informéieren?"
+
+msgid "receiptread"
+msgstr "Empfanksbestätegung (gelies)"
+
+msgid "yourmessage"
+msgstr "Dëst ass eng Empfanksbestätegung fir Äre Message."
+
+msgid "receiptnote"
+msgstr ""
+"Bemierkung: Dës Bestätegung bezeit just datt de Message beim Empfänger "
+"ugewise ginn ass. Et gëtt keng Garantie dass den Empfänger den Inhalt vum "
+"Message gelies oder verstanen huet."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Ganzen Numm"
+
+msgid "firstname"
+msgstr "Virnumm"
+
+msgid "surname"
+msgstr "Nonumm"
+
+msgid "middlename"
+msgstr "Mëttelnumm"
+
+msgid "nameprefix"
+msgstr "Präfix"
+
+msgid "namesuffix"
+msgstr "Suffix"
+
+msgid "nickname"
+msgstr "Spëtznumm"
+
+msgid "jobtitle"
+msgstr "Job-Titel"
+
+msgid "department"
+msgstr "Departement"
+
+msgid "gender"
+msgstr "Geschlecht"
+
+msgid "maidenname"
+msgstr "Meedechersnumm"
+
+msgid "email"
+msgstr "E-Mail"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Adress"
+
+msgid "street"
+msgstr "Strooss"
+
+msgid "locality"
+msgstr "Uertschaft"
+
+msgid "zipcode"
+msgstr "Postleitzuel"
+
+msgid "region"
+msgstr "Staat"
+
+msgid "country"
+msgstr "Land"
+
+msgid "birthday"
+msgstr "Gebuertsdatum"
+
+msgid "anniversary"
+msgstr "Anniversaire"
+
+msgid "website"
+msgstr "Websäit"
+
+msgid "instantmessenger"
+msgstr "Instant-Messenger"
+
+msgid "notes"
+msgstr "Notizen"
+
+msgid "male"
+msgstr "männlech"
+
+msgid "female"
+msgstr "weiblech"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Manager"
+
+msgid "assistant"
+msgstr "Assistent"
+
+msgid "spouse"
+msgstr "Liewenspartner"
+
+msgid "allfields"
+msgstr "All d'Felder"
+
+msgid "search"
+msgstr "Sichen"
+
+msgid "searchresult"
+msgstr ""
+
+msgid "advsearch"
+msgstr "Avancéiert Sich"
+
+msgid "advanced"
+msgstr "Avancéiert"
+
+msgid "other"
+msgstr "Aneres"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "Doheem"
+
+msgid "typework"
+msgstr "Aarbecht"
+
+msgid "typeother"
+msgstr "Aneres"
+
+msgid "typemobile"
+msgstr "Mobil"
+
+msgid "typemain"
+msgstr "Haapt"
+
+msgid "typehomefax"
+msgstr "Fax Doheem"
+
+msgid "typeworkfax"
+msgstr "Fax Aarbecht"
+
+msgid "typecar"
+msgstr "Auto"
+
+msgid "typepager"
+msgstr "Pager"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Assistent"
+
+msgid "typehomepage"
+msgstr "Websäit"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Feld dobäisetzen..."
+
+msgid "addcontact"
+msgstr ""
+
+msgid "editcontact"
+msgstr "Kontakt editéieren"
+
+msgid "contacts"
+msgstr "Kontakter"
+
+msgid "contactproperties"
+msgstr "Kontakt-Eegeschaften"
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr "Perséinlech Informatioun"
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr ""
+
+msgid "edit"
+msgstr "Änneren"
+
+msgid "cancel"
+msgstr "Ofbriechen"
+
+msgid "save"
+msgstr "Späicheren"
+
+msgid "delete"
+msgstr "Läschen"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Ëmbenennen"
+
+msgid "addphoto"
+msgstr "Dobäisetzen"
+
+msgid "replacephoto"
+msgstr "Ersetzen"
+
+msgid "uploadphoto"
+msgstr "Foto eroplueden"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr "Déi ausgewielte Kontakter läschen"
+
+msgid "composeto"
+msgstr "Mail schreiwen un"
+
+msgid "contactsfromto"
+msgstr "Kontakter $from bis $to vun $count"
+
+msgid "print"
+msgstr "Drécke"
+
+msgid "export"
+msgstr "Exportéieren"
+
+msgid "exportall"
+msgstr "All exportéieren"
+
+msgid "exportsel"
+msgstr "Déi ausgewielten exportéieren"
+
+msgid "exportvcards"
+msgstr "Kontakter am vCard-Format exportéieren"
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr "Grupp ëmbenennen"
+
+msgid "groupdelete"
+msgstr "Grupp läschen"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Ausgewielte Kontakter aus Grupp eraushuele"
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "Säit virdru weisen"
+
+msgid "firstpage"
+msgstr "Éischt Säit weisen"
+
+msgid "nextpage"
+msgstr "Nächst Säit weisen"
+
+msgid "lastpage"
+msgstr "Lescht Säit weisen"
+
+msgid "group"
+msgstr "Grup"
+
+msgid "groups"
+msgstr "Gruppen"
+
+msgid "listgroup"
+msgstr "Gruppe-Memberen oplëschten"
+
+msgid "personaladrbook"
+msgstr "Perséinlech Adressen"
+
+msgid "searchsave"
+msgstr "Sich späicheren"
+
+msgid "searchdelete"
+msgstr "Sich läschen"
+
+msgid "import"
+msgstr "Importéieren"
+
+msgid "importcontacts"
+msgstr "Kontakter importéieren"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Kontakter dobäisetze bei"
+
+msgid "importreplace"
+msgstr "Dat ganzt Adressbuch ersetzen"
+
+msgid "importgroups"
+msgstr "Gruppen-Zouweisung importéieren"
+
+msgid "importgroupsall"
+msgstr "All (nei Gruppen uleeën falls néideg)"
+
+msgid "importgroupsexisting"
+msgstr "Just fir Gruppen déi schon existéieren"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Erleedegt"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Astellunge fir"
+
+msgid "about"
+msgstr "Iwwert"
+
+msgid "preferences"
+msgstr "Astellungen"
+
+msgid "userpreferences"
+msgstr "Benotzer-Astellungen"
+
+msgid "editpreferences"
+msgstr "Benotzer-Astellungen änneren"
+
+msgid "identities"
+msgstr "Identitéiten"
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "HTML uweisen"
+
+msgid "defaultcharset"
+msgstr "Standard Zeechesaz"
+
+msgid "htmlmessage"
+msgstr "HTML-Message"
+
+msgid "messagepart"
+msgstr "Deel"
+
+msgid "digitalsig"
+msgstr "Digital Signatur"
+
+msgid "dateformat"
+msgstr "Datums-Format"
+
+msgid "timeformat"
+msgstr "Zäit-Format"
+
+msgid "prettydate"
+msgstr "Schéin Daten"
+
+msgid "setdefault"
+msgstr "Als standard definéieren"
+
+msgid "autodetect"
+msgstr "Automatesch"
+
+msgid "language"
+msgstr "Sprooch"
+
+msgid "timezone"
+msgstr "Zäitzon"
+
+msgid "pagesize"
+msgstr "Reie pro Säit"
+
+msgid "signature"
+msgstr "Ënnerschrëft"
+
+msgid "dstactive"
+msgstr "Summerzäit"
+
+msgid "showinextwin"
+msgstr "Message an neier Fënster opmaache"
+
+msgid "composeextwin"
+msgstr "An enger neier Fënster schreiwen"
+
+msgid "htmleditor"
+msgstr "HTML-Messagë schreiwen"
+
+msgid "htmlonreply"
+msgstr "bei Äntwert op e Message mat Formatéierungen"
+
+msgid "htmlonreplyandforward"
+msgstr "bei Weiderleedung oder Äntwert op e Message mat Formatéierungen"
+
+msgid "htmlsignature"
+msgstr "Formatéiert Ënnerschrëft"
+
+msgid "showemail"
+msgstr "Email-Adress mat ganzem Numm uweisen"
+
+msgid "previewpane"
+msgstr "Virschau-Panneau uweisen"
+
+msgid "skin"
+msgstr "Opmaachung vum Interface"
+
+msgid "logoutclear"
+msgstr "Poubelle beim Logout eidelmaachen"
+
+msgid "logoutcompact"
+msgstr "Mailbox beim Logout eidelmaachen"
+
+msgid "uisettings"
+msgstr "Benotzer-Interface"
+
+msgid "serversettings"
+msgstr "Server-Astellungen"
+
+msgid "mailboxview"
+msgstr "Mailbox-Usiicht"
+
+msgid "mdnrequests"
+msgstr "Bei Ufro no Empfanksbestätegung"
+
+msgid "askuser"
+msgstr "mech froen"
+
+msgid "autosend"
+msgstr "Bestätegung schécken"
+
+msgid "autosendknown"
+msgstr "Bestätegung u meng Kontakter schécken, anerefalls nofroen"
+
+msgid "autosendknownignore"
+msgstr "Bestätegung u meng Kontakter schécken, anerefalls ignoréieren"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "Beim Läschen de Message als gelies markéieren"
+
+msgid "flagfordeletion"
+msgstr "De Message als \"läschbar\" markéieren amplaz en ze läschen"
+
+msgid "skipdeleted"
+msgstr "Geläschte Messagen net uweisen"
+
+msgid "deletealways"
+msgstr "Falls Messagen net an d'Poubelle kënne geréckelt ginn, läsch se"
+
+msgid "deletejunk"
+msgstr "Messagen am Spam-Dossier direkt läschen"
+
+msgid "showremoteimages"
+msgstr "Biller an de Maile vun externe Serveren nolueden"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "vu bekannte Senderen"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "ëmmer"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "Biller déi drunhänken ënnert dem Message uweisen"
+
+msgid "autosavedraft"
+msgstr "Brouillon automatesch späicheren"
+
+msgid "everynminutes"
+msgstr "all $n Minutt(en)"
+
+msgid "refreshinterval"
+msgstr "Frësch lueden (nei Messagen ofruffen, etc.)"
+
+msgid "never"
+msgstr "ni"
+
+msgid "immediately"
+msgstr "direkt"
+
+msgid "messagesdisplaying"
+msgstr "Messagen uweisen"
+
+msgid "messagescomposition"
+msgstr "Messagë schreiwen"
+
+msgid "mimeparamfolding"
+msgstr "Nimm vun den Unhäng"
+
+msgid "2231folding"
+msgstr "Kompletten RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (Microsoft Outlook)"
+
+msgid "2047folding"
+msgstr "Kompletten RFC 2047 (anerer)"
+
+msgid "force7bit"
+msgstr "MIME-Kodéierung fir 8-Bit-Zeeche benotzen"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Avancéiert Optiounen"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "Browser-Fënster fokusséiere wann en neie Message ukënnt"
+
+msgid "checkallfolders"
+msgstr "Nei Messagen an allen Dossieren opruffen"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "Standard-Schrëft fir e Message mat Formatéierungen"
+
+msgid "mainoptions"
+msgstr "Haapt-Optiounen"
+
+msgid "browseroptions"
+msgstr "Browser-Optiounen"
+
+msgid "section"
+msgstr "Beräich"
+
+msgid "maintenance"
+msgstr "Maintenance"
+
+msgid "newmessage"
+msgstr "Neie Message"
+
+msgid "signatureoptions"
+msgstr "Optioune vun der Ënnerschrëft"
+
+msgid "whenreplying"
+msgstr "Bei enger Äntwert"
+
+msgid "replyempty"
+msgstr "den Original-Message net zitéieren"
+
+msgid "replytopposting"
+msgstr "neie Message iwwert dem Zitat ufänken"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "neie Message ënnert dem Zitat ufänken"
+
+msgid "replyremovesignature"
+msgstr "Bei enger Äntwert d'Original-Ënnerschrëft aus dem Message huelen"
+
+msgid "autoaddsignature"
+msgstr "Ënnerschrëft automatesch drasetzen"
+
+msgid "newmessageonly"
+msgstr "just bei neie Messagen"
+
+msgid "replyandforwardonly"
+msgstr "just bei Äntwerten a Weiderleedungen"
+
+msgid "insertsignature"
+msgstr "Ënnerschrëft drasetzen"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "no $n Sekonnen"
+
+msgid "reqmdn"
+msgstr "Ëmmer eng Empfanksbestätegung ufroen"
+
+msgid "reqdsn"
+msgstr "Ëmmer eng Empfanks-Status-Meldung ufroen"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+"Äntwert an de selweschten Dossier setze wéi de Message op dee geäntwert gëtt"
+
+msgid "defaultabook"
+msgstr "Standard Adress-Buch"
+
+msgid "autocompletesingle"
+msgstr ""
+"Alternativ Email-Adressen bei der automatescher Vervollstänneung "
+"iwwersprangen"
+
+msgid "listnamedisplay"
+msgstr "Kontakter oplëschten als"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Orthographie kontrolléieren bevir de Message verschéckt gëtt"
+
+msgid "spellcheckoptions"
+msgstr "Orthographie-Korrektur-Optiounen"
+
+msgid "spellcheckignoresyms"
+msgstr "Wierder mat Symboler ignoréieren"
+
+msgid "spellcheckignorenums"
+msgstr "Wierder mat Zuelen ignoréieren"
+
+msgid "spellcheckignorecaps"
+msgstr "Wierder mat just Groussbuschtawen ignoréieren"
+
+msgid "addtodict"
+msgstr "An den Dictionnaire setzen"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Protokoll-Handhaber fir \"mailto:\"-Links registréieren"
+
+msgid "standardwindows"
+msgstr "Popup-Fënstere wéi normal Fënstere behandelen"
+
+msgid "forwardmode"
+msgstr "Messagë-Weiderleedung"
+
+msgid "inline"
+msgstr "am Message"
+
+msgid "asattachment"
+msgstr "als Unhank"
+
+msgid "replyallmode"
+msgstr "Standard-Aktioun vum [U jiddwereen äntweren]-Knäppchen"
+
+msgid "replyalldefault"
+msgstr "u jiddwereen äntweren"
+
+msgid "replyalllist"
+msgstr "just der Mailinglëscht äntweren (wann eng fonnt gëtt) "
+
+msgid "allmessages"
+msgstr "all d'Messagen"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Dossier"
+
+msgid "folders"
+msgstr "Dossieren"
+
+msgid "foldername"
+msgstr "Dossiersnumm"
+
+msgid "subscribed"
+msgstr "Abonnéiert"
+
+msgid "messagecount"
+msgstr "Messagen"
+
+msgid "create"
+msgstr "Erstellen"
+
+msgid "createfolder"
+msgstr "Neien Dossier erstellen"
+
+msgid "managefolders"
+msgstr "Dossieren geréieren"
+
+msgid "specialfolders"
+msgstr "Speziell Dossieren"
+
+msgid "properties"
+msgstr "Astellungen"
+
+msgid "folderproperties"
+msgstr "Dossiers-Astellungen"
+
+msgid "parentfolder"
+msgstr "Elteren-Dossier"
+
+msgid "location"
+msgstr "Plaz"
+
+msgid "info"
+msgstr "Informatioun"
+
+msgid "getfoldersize"
+msgstr "Klick fir d'Dossiers-Gréisst ze kréien"
+
+msgid "changesubscription"
+msgstr "Klick fir den Abonnement ze änneren"
+
+msgid "foldertype"
+msgstr "Dossiers-Typ"
+
+msgid "personalfolder"
+msgstr "Privaten Dossier"
+
+msgid "otherfolder"
+msgstr "Dossier vun anerem Benotzer"
+
+msgid "sharedfolder"
+msgstr "Ëffentlechen Dossier"
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Sortéieren no"
+
+msgid "sortasc"
+msgstr "Opsteigend sortéieren"
+
+msgid "sortdesc"
+msgstr "Ofsteigend sortéieren"
+
+msgid "undo"
+msgstr "Réckgängeg maachen"
+
+msgid "installedplugins"
+msgstr "Installéiert Plugins"
+
+msgid "plugin"
+msgstr "Plugin"
+
+msgid "version"
+msgstr "Versioun"
+
+msgid "source"
+msgstr "Source"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Lizenz"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Support ufroen"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "kB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Englesch"
+
+msgid "westerneuropean"
+msgstr "West-Europäesch"
+
+msgid "easterneuropean"
+msgstr "Ost-Europäesch"
+
+msgid "southeasterneuropean"
+msgstr "Süd-Ost-Europäesch"
+
+msgid "baltic"
+msgstr "Baltesch"
+
+msgid "cyrillic"
+msgstr "Kyrilesch"
+
+msgid "arabic"
+msgstr "Arabesch"
+
+msgid "greek"
+msgstr "Griechesch"
+
+msgid "hebrew"
+msgstr "Häbräesch"
+
+msgid "turkish"
+msgstr "Türkesch"
+
+msgid "nordic"
+msgstr "Nordesch"
+
+msgid "thai"
+msgstr "Thai"
+
+msgid "celtic"
+msgstr "Keltesch"
+
+msgid "vietnamese"
+msgstr "Vietnamesesch"
+
+msgid "japanese"
+msgstr "Japanesch"
+
+msgid "korean"
+msgstr "Koreanesch"
+
+msgid "chinese"
+msgstr "Chinesesch"
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Ee Feeler ass opgetrueden!"
+
+msgid "messages.loginfailed"
+msgstr "Login feelgeschloen."
+
+msgid "messages.cookiesdisabled"
+msgstr "Däi Browser acceptéiert keng Cookien."
+
+msgid "messages.sessionerror"
+msgstr "Deng Sessioun ass ongëlteg oder verfall."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "D'Verbindung mam Späicher-Server ass feelgeschloen."
+
+msgid "messages.servererror"
+msgstr "Server-Feeler!"
+
+msgid "messages.servererrormsg"
+msgstr "Server-Feeler: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr "Connectiouns-Feeler (De Server konnt net erreecht ginn)!"
+
+msgid "messages.dberror"
+msgstr "Datebank-Feeler!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "D'Popup-Fënster gouf blockéiert!"
+
+msgid "messages.requesttimedout"
+msgstr "D'Ufro huet ze laang gedauert"
+
+msgid "messages.errorreadonly"
+msgstr ""
+"D'Operatioun kann net ofgeschloss ginn. Den Dossier ass schreifgeschützt."
+
+msgid "messages.errornoperm"
+msgstr "D'Operatioun kann net ofgeschloss ginn. Zougrëff verweigert."
+
+msgid "messages.erroroverquota"
+msgstr ""
+"D'Operatioun konnt net ausgefouert ginn. Et ass net méi genuch Plaz um Disk."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Et ass net méi genuch Plaz um Disk. Benotz Shift+Delete fir e message ze "
+"läschen."
+
+msgid "messages.invalidrequest"
+msgstr "Ongëlteg Ufro! Et goufe keng Date gespäichert."
+
+msgid "messages.invalidhost"
+msgstr "Ongëltege Server-Numm."
+
+msgid "messages.nomessagesfound"
+msgstr "Keng Messagen an der Mailbox fonnt."
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "D'Mailbox ass eidel"
+
+msgid "messages.nomessages"
+msgstr "Keng Messagen"
+
+msgid "messages.refreshing"
+msgstr "Lueden nei..."
+
+msgid "messages.loading"
+msgstr "Lueden..."
+
+msgid "messages.uploading"
+msgstr "Fichier gëtt eropgelueden..."
+
+msgid "messages.attaching"
+msgstr "Fichier drunhänken..."
+
+msgid "messages.uploadingmany"
+msgstr "Fichiere ginn eropgelueden..."
+
+msgid "messages.loadingdata"
+msgstr "Date gi gelueden.."
+
+msgid "messages.checkingmail"
+msgstr "Nei Messagë ginn ofgeruff..."
+
+msgid "messages.sendingmessage"
+msgstr "Message gëtt geschéckt..."
+
+msgid "messages.messagesent"
+msgstr "Message erfollegräich verschéckt."
+
+msgid "messages.savingmessage"
+msgstr "Message gëtt gespäichert..."
+
+msgid "messages.messagesaved"
+msgstr "Message als Brouillon gespäichert."
+
+msgid "messages.successfullysaved"
+msgstr "Erfollegräich gespäichert."
+
+msgid "messages.savingresponse"
+msgstr "Äntwert-Text gëtt gespäichert..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Wëlls du dësen Äntwert-Text wierklech läschen?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontakt erfollegräich an d'Adressbuch gesat."
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "Et existéiert schon e Kontakt mam selweschten Numm."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Fir deng Privatsphär ze schütze, gi Biller vun externe Serveren an dësem "
+"Message net gelueden."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr ""
+"Dëst ass e verschlësselte Message a kann net ugewise ginn. Et deet eis Leed!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Keng Kontakter fonnt."
+
+msgid "messages.contactnotfound"
+msgstr "Den ugefrotene Kontakt gouf net fonnt."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "De Message konnt net verschéckt ginn."
+
+msgid "messages.senttooquickly"
+msgstr ""
+"Waart wann ech gelift $sec Sekonn(en) bevir s du de Message verschécks. "
+
+msgid "messages.errorsavingsent"
+msgstr "Beim Späichere vum geschéckte Message ass e Feeler opgetruden."
+
+msgid "messages.errorsaving"
+msgstr "Beim Späicheren ass e Feeler opgetrueden."
+
+msgid "messages.errormoving"
+msgstr "D'Messagë konnten net verréckelt ginn."
+
+msgid "messages.errorcopying"
+msgstr "D'Messagë konnten net kopéiert ginn."
+
+msgid "messages.errordeleting"
+msgstr "D'Messagë konnten net geläscht ginn."
+
+msgid "messages.errormarking"
+msgstr "D'Messagë konnten net markéiert ginn."
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr "Bass du sécher..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Wëlls du wierklech déi ausgewielte Kontakter läschen?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Wëlls du wierklech déi ausgewielte Gruppe läschen?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Wëlls du wierklech déi ausgewielte Messagë läschen?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Wëlls du dësen Dossier wierklech läschen?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Wëlls du wierklech all d'Messagen an dësem Dossier läschen?"
+
+msgid "messages.contactdeleting"
+msgstr "Kontakter gi geläscht..."
+
+msgid "messages.groupdeleting"
+msgstr "Grupp gëtt geläscht..."
+
+msgid "messages.folderdeleting"
+msgstr "Dossier gëtt geläscht..."
+
+msgid "messages.foldermoving"
+msgstr "Dossier gëtt geréckelt..."
+
+msgid "messages.foldersubscribing"
+msgstr "Dossier gëtt abonnéiert..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Dossier gëtt desabonnéiert..."
+
+msgid "messages.formincomplete"
+msgstr "De Formular war net komplett ausgefëlt."
+
+msgid "messages.noemailwarning"
+msgstr "Gëff w.e.gl eng gëlteg Email-Adress an."
+
+msgid "messages.nonamewarning"
+msgstr "Gëff w.e.gl en Numm an."
+
+msgid "messages.nopagesizewarning"
+msgstr "Gëff w.e.gl eng Säitegréisst an."
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Gëff w.e.gl op mannst een Empfänger an."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "D'Feld \"Sujet\" ass eidel. Wëlls du elo eent uginn?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Kee Sujet"
+
+msgid "messages.nobodywarning"
+msgstr "Soll dëse Message ouni Text verschéckt ginn?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Et gouf e Message fonnt dee scho geschriwwen awer nach net verschéckt ginn "
+"ass.\\n\\nSujet: $subject\\nGespäichert: $date\\n\\nSoll de Message "
+"recuperéiert ginn?"
+
+msgid "messages.nosearchname"
+msgstr "Gëff w.e.gl en Numm oder eng E-Mail-Adress fir de Kontakt an."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Net all d'Unhäng goufen eropgelueden. Waart w.e.gl e Moment oder briech den "
+"Upload of."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr Messagë fonnt."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr Kontakter fonnt."
+
+msgid "messages.searchnomatch"
+msgstr "D'Sich huet keng Treffer bruecht."
+
+msgid "messages.searching"
+msgstr "Sichen..."
+
+msgid "messages.checking"
+msgstr "Kontrolléieren..."
+
+msgid "messages.stillsearching"
+msgstr "D'Sich leeft nach..."
+
+msgid "messages.nospellerrors"
+msgstr "Et goufe keng Schreiffeeler fonnt."
+
+msgid "messages.folderdeleted"
+msgstr "Dossier erfollegräich geläscht."
+
+msgid "messages.foldersubscribed"
+msgstr "Dossier erfollegräich abonnéiert."
+
+msgid "messages.folderunsubscribed"
+msgstr "Dossier erfollegräich desabonnéiert."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Erfollegräich geläscht."
+
+msgid "messages.converting"
+msgstr "Formatéierunge gi geläscht..."
+
+msgid "messages.messageopenerror"
+msgstr "Message konnt net vum Server geluede ginn."
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "Upload vum Fichier feelgeschloen."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr ""
+"Den eropgeluedene Fichier ass méi grouss wéi déi maximal erlaabte Gréisst "
+"vun $size."
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "Et goufen erfollegräich $nr Kontakter kopéiert."
+
+msgid "messages.movesuccess"
+msgstr "Et goufen erfollegräich $nr Kontakter geréckelt."
+
+msgid "messages.copyerror"
+msgstr "Konnt d'Kontakter net kopéieren"
+
+msgid "messages.moveerror"
+msgstr "Konnt d'Kontakter net réckelen."
+
+msgid "messages.sourceisreadonly"
+msgstr "D'Adresse-Quell ass schreifgeschützt."
+
+msgid "messages.errorsavingcontact"
+msgstr "D'Kontakt-Adress konnt net gespäichert ginn."
+
+msgid "messages.movingmessage"
+msgstr "Messagë gi geréckelt..."
+
+msgid "messages.copyingmessage"
+msgstr "Messagë gi kopéiert..."
+
+msgid "messages.copyingcontact"
+msgstr "Kontakter gi kopéiert..."
+
+msgid "messages.movingcontact"
+msgstr "Kontakter gi geréckelt..."
+
+msgid "messages.deletingmessage"
+msgstr "Messagë gi geläscht..."
+
+msgid "messages.markingmessage"
+msgstr "Messagë gi markéiert..."
+
+msgid "messages.addingmember"
+msgstr "Kontakter ginn an d'grupp gesat..."
+
+msgid "messages.removingmember"
+msgstr "Kontakter ginn aus der Grupp erausgeholl..."
+
+msgid "messages.receiptsent"
+msgstr "Empfanksbestätegung erfollegräich verschéckt."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Konnt d'Bestätegung net verschécken."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Wëlls du dës Identitéit wierklech läschen?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Du kanns dës Identitéit net läschen, well et deng lescht ass."
+
+msgid "messages.forbiddencharacter"
+msgstr "Den Numm vum Dossier enthält verbueden Zeechen."
+
+msgid "messages.selectimportfile"
+msgstr "Wuel w.e.gl e Fichier aus fir eropzelueden."
+
+msgid "messages.addresswriterror"
+msgstr "Dat ausgewieltent Adressbucht ass schreifgeschützt."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Kontakter erfollegräich an d'Grupp gesat."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontakter erfollegräich aus der Grupp erausgeholl."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Keng Gruppen-Zouuerdnung geännert."
+
+msgid "messages.importwait"
+msgstr "Import leeft, ee Moment w.e.gl..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Import feelgeschloen! Den eropgeluedene Fichier ass kee gëltegen Date-"
+"Fichier."
+
+msgid "messages.importconfirm"
+msgstr "<b>$inserted Kontakter erfollegräich importéiert</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Erfollegräich $nr Messagen importéiert"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Import feelgeschloen! Den eropgeluedene Fichier ass kee gëltege Message oder"
+" kee Mailbox-Fichier."
+
+msgid "messages.opnotpermitted"
+msgstr "Operatioun net zougelooss!"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+"Den Editor-Typ ze wiessele kann de Verloscht vun Textformatéierunge "
+"verursaachen. Wëlls du weidermaachen?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"E fatale Konfiguratiouns-Feeler ass opgetrueden. Kontaktéier w.e.gl. den "
+"Administrator esou séier ewéi méiglech. <b>Däi Message kann net geschéckt "
+"ginn.</b> "
+
+msgid "messages.smtpconnerror"
+msgstr ""
+"SMTP-Feeler ($code): Et konnt keng Verbindung mam Server hirgestallt ginn."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP-Feeler ($code): Authentifizéierung feelgeschloen."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP-Feeler ($code): Den Ofsender \"$from\" konnt net gesat ginn ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr ""
+"SMTP-Feeler ($code): Den Empfänger \"$to\" konnt net dobäigesat ginn ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP-Feeler: D'Empfänger-Lëscht kann net verschafft ginn."
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP-Feeler: $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr "Zevill Empfänger. Reduzéier d'Zuel vun den Empfänger op $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "D'Unzuel vu Gruppememberen iwwersteigt de Maximum vun $max."
+
+msgid "messages.internalerror"
+msgstr "En interne Feeler ass opgetrueden. Probéier w.e.gl nach eng Kéier."
+
+msgid "messages.contactdelerror"
+msgstr "Kontakter konnten net geläscht ginn."
+
+msgid "messages.contactdeleted"
+msgstr "Kontakter erfollegräich geläscht."
+
+msgid "messages.contactrestoreerror"
+msgstr "Déi geläschte Kontakter konnten net recuperéiert ginn."
+
+msgid "messages.contactrestored"
+msgstr "Kontakter erfollegräich recuperéiert."
+
+msgid "messages.groupdeleted"
+msgstr "Grupp erfollegräich geläscht."
+
+msgid "messages.grouprenamed"
+msgstr "Grupp erfollegräich ëmbenannt."
+
+msgid "messages.groupcreated"
+msgstr "Grupp erfollegräich creéiert."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Déi gespäicherte Sich gouf erfollegräich geläscht."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Déi gespäicherte Sich konnt net geläscht ginn."
+
+msgid "messages.savedsearchcreated"
+msgstr "Déi gespäicherte Sich gouf erfollegräich erstallt."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Déi gespäicherte Sich konnt net erstallt ginn."
+
+msgid "messages.messagedeleted"
+msgstr "Messagen erfollegräich geläscht."
+
+msgid "messages.messagemoved"
+msgstr "Messagen erfollegräich geréckelt."
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "Messagen erfollegräich kopéiert."
+
+msgid "messages.messagemarked"
+msgstr "Messagen erfollegräich markéiert."
+
+msgid "messages.autocompletechars"
+msgstr ""
+"Gëff e mimumum vun $min Zeechen u fir déi automatesch Vervollstänegung."
+
+msgid "messages.autocompletemore"
+msgstr ""
+"Et goufe méi passend Treffer fonnt. Tipp w.e.gl. nach e puer Buschtawe méi."
+
+msgid "messages.namecannotbeempty"
+msgstr "Den Numm kann net eidel sinn."
+
+msgid "messages.nametoolong"
+msgstr "Den Numm ass ze laang."
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr "Dossier erfollegräich aktualiséiert."
+
+msgid "messages.foldercreated"
+msgstr "Dossier erfollegräich ugeluecht."
+
+msgid "messages.invalidimageformat"
+msgstr "Kee gëltegt Bild-Format"
+
+msgid "messages.mispellingsfound"
+msgstr "Et goufe Schreiffeeler am Message fonnt."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Den Dossier konnt net am ausgewielten Dossier erstallt oder an den Dossier "
+"erageréckelt ginn. Keng Zougrëffsrechter."
+
+msgid "messages.messagetoobig"
+msgstr "Den Messagen-Deel ass ze grouss fir verschafft ze ginn."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Warnung: Dëse Webmail brauch JavaScript! Fir de Service benotzen ze kënnen, "
+"aktivéier w.e.gl JavaScript an denge Browser-Astellungen."
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

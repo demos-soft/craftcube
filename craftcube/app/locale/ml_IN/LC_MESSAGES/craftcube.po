@@ -1,0 +1,2833 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ml_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "$product ലേയ്ക്ക് സ്വാഗതം"
+
+msgid "username"
+msgstr "ഉപയോക്തൃനാമം"
+
+msgid "password"
+msgstr "രഹസ്യവാക്ക്"
+
+msgid "server"
+msgstr "സേവകന്‍"
+
+msgid "login"
+msgstr "പ്രവേശിക്കുക"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "പുറത്ത് കടക്കുക"
+
+msgid "mail"
+msgstr "തപാല്‍"
+
+msgid "settings"
+msgstr "ക്രമീകരണങ്ങള്‍"
+
+msgid "addressbook"
+msgstr "വിലാസ പുസ്തകം"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "ഇന്‍ബോക്സ്"
+
+msgid "drafts"
+msgstr "പൂര്‍ത്തിയാകാത്തവ"
+
+msgid "sent"
+msgstr "അയച്ചവ"
+
+msgid "trash"
+msgstr "ചവറ്റുകുട്ട"
+
+msgid "junk"
+msgstr "ആവശ്യമില്ലാത്തവ"
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr "വിഷയം"
+
+msgid "from"
+msgstr "പ്രേഷിതന്‍"
+
+msgid "sender"
+msgstr "അയചയാള്‍"
+
+msgid "to"
+msgstr "സ്വീകര്‍ത്താവ്"
+
+msgid "cc"
+msgstr ""
+
+msgid "bcc"
+msgstr ""
+
+msgid "replyto"
+msgstr ""
+
+msgid "followupto"
+msgstr ""
+
+msgid "date"
+msgstr "തീയതി"
+
+msgid "size"
+msgstr "വലിപ്പം"
+
+msgid "priority"
+msgstr "മുന്‍ഗണന"
+
+msgid "organization"
+msgstr ""
+
+msgid "readstatus"
+msgstr "അവസ്ഥ വായിക്കുക"
+
+msgid "listoptions"
+msgstr ""
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "ഫോള്‍ഡറുകള്‍"
+
+msgid "messagesfromto"
+msgstr ""
+
+msgid "threadsfromto"
+msgstr ""
+
+msgid "messagenrof"
+msgstr ""
+
+msgid "fromtoshort"
+msgstr ""
+
+msgid "copy"
+msgstr "പകര്‍ത്തുക"
+
+msgid "move"
+msgstr "നീക്കുക"
+
+msgid "moveto"
+msgstr ""
+
+msgid "copyto"
+msgstr ""
+
+msgid "download"
+msgstr "ഡൗണ്‍ലോഡ്"
+
+msgid "open"
+msgstr ""
+
+msgid "showattachment"
+msgstr "പ്രദർശിപ്പിക്കുക"
+
+msgid "showanyway"
+msgstr ""
+
+msgid "filename"
+msgstr "ഫയല്‍ നാമം"
+
+msgid "filesize"
+msgstr "ഫയലിന്റെ വലിപ്പം"
+
+msgid "addtoaddressbook"
+msgstr "മേല്‍വിലാസങ്ങളില്‍ ചേര്‍ക്കുക."
+
+msgid "sun"
+msgstr "ഞാ"
+
+msgid "mon"
+msgstr "തി"
+
+msgid "tue"
+msgstr "ചൊ"
+
+msgid "wed"
+msgstr "ബു"
+
+msgid "thu"
+msgstr "വ്യാ"
+
+msgid "fri"
+msgstr "വെ"
+
+msgid "sat"
+msgstr "ശ"
+
+msgid "sunday"
+msgstr "ഞായര്‍"
+
+msgid "monday"
+msgstr "തിങ്കള്‍"
+
+msgid "tuesday"
+msgstr "ചൊവ്വ"
+
+msgid "wednesday"
+msgstr "ബുധന്‍"
+
+msgid "thursday"
+msgstr "വ്യാഴം"
+
+msgid "friday"
+msgstr "വെള്ളി"
+
+msgid "saturday"
+msgstr "ശനി"
+
+msgid "jan"
+msgstr "ജനു"
+
+msgid "feb"
+msgstr "ഫെബ്"
+
+msgid "mar"
+msgstr "മാര്‍"
+
+msgid "apr"
+msgstr "ഏപ്ര"
+
+msgid "may"
+msgstr "മെ"
+
+msgid "jun"
+msgstr "ജൂണ്‍"
+
+msgid "jul"
+msgstr "ജൂലൈ"
+
+msgid "aug"
+msgstr "ആഗസ്റ്റ്"
+
+msgid "sep"
+msgstr "സെപ്റ്റംബര്‍"
+
+msgid "oct"
+msgstr "ഒക്ടോബര്‍"
+
+msgid "nov"
+msgstr "നവംബര്‍"
+
+msgid "dec"
+msgstr "ഡിസംബര്‍"
+
+msgid "longjan"
+msgstr "ജനുവരി"
+
+msgid "longfeb"
+msgstr "ഫെബ്രുവരി"
+
+msgid "longmar"
+msgstr "മാര്‍ച്ച്"
+
+msgid "longapr"
+msgstr "ഏപ്രില്‍"
+
+msgid "longmay"
+msgstr "മെ"
+
+msgid "longjun"
+msgstr "ജൂണ്‍"
+
+msgid "longjul"
+msgstr "ജൂലൈ"
+
+msgid "longaug"
+msgstr "ആഗസ്റ്റ്"
+
+msgid "longsep"
+msgstr "സെപ്തംബ‌ര്‍"
+
+msgid "longoct"
+msgstr "ഒക്ടോബര്‍"
+
+msgid "longnov"
+msgstr "നവംബ‌ര്‍"
+
+msgid "longdec"
+msgstr "ഡിസംബ‌ര്‍"
+
+msgid "today"
+msgstr "ഇന്ന്"
+
+msgid "refresh"
+msgstr "പുതുക്കുക"
+
+msgid "checkmail"
+msgstr "പുതിയ സന്ദേശത്തിനായി തിരയുക"
+
+msgid "compose"
+msgstr "രചന"
+
+msgid "writenewmessage"
+msgstr ""
+
+msgid "reply"
+msgstr "മറുപടി"
+
+msgid "replytomessage"
+msgstr ""
+
+msgid "replytoallmessage"
+msgstr ""
+
+msgid "replyall"
+msgstr ""
+
+msgid "replylist"
+msgstr ""
+
+msgid "forward"
+msgstr "കൈമാറുക"
+
+msgid "forwardinline"
+msgstr ""
+
+msgid "forwardattachment"
+msgstr ""
+
+msgid "forwardmessage"
+msgstr "സന്ദേശം കൈമാറുക"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "സന്ദേശം മായ്ക്കുക"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "സന്ദേശം ചവറ്റുകുട്ടയിലേക്ക് നീക്കുക"
+
+msgid "printmessage"
+msgstr "ഈ സന്ദേശം അച്ചടിക്കുക"
+
+msgid "previousmessage"
+msgstr "മുന്‍പുളള സന്ദേശം കാണിക്കുക."
+
+msgid "firstmessage"
+msgstr "ആദ്യത്തെ സന്ദേശം കാണിക്കുക."
+
+msgid "nextmessage"
+msgstr "അടുത്ത സന്ദേശം കാണിക്കുക."
+
+msgid "lastmessage"
+msgstr "അവസാനത്തെ സന്ദേശം കാണിക്കുക."
+
+msgid "backtolist"
+msgstr ""
+
+msgid "viewsource"
+msgstr "ഉറവിടം കാണിക്കുക."
+
+msgid "mark"
+msgstr "അടയാളപ്പെടുത്തു"
+
+msgid "markmessages"
+msgstr "സന്തേശങ്ങള്‍ അടയാളപ്പെടുത്തു"
+
+msgid "markread"
+msgstr "വായിച്ചതായി"
+
+msgid "markunread"
+msgstr "വായിക്കാത്തതായി"
+
+msgid "markflagged"
+msgstr ""
+
+msgid "markunflagged"
+msgstr ""
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "കൂടുതല്‍ ചെയ്തികള്‍..."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr ""
+
+msgid "more"
+msgstr "കൂടുതല്‍"
+
+msgid "back"
+msgstr "പിന്നോട്ട്"
+
+msgid "options"
+msgstr "ഐച്ഛികങ്ങള്‍‌"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "next"
+msgstr ""
+
+msgid "select"
+msgstr "തെരഞ്ഞെടുക്കുക"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "എല്ലാം"
+
+msgid "none"
+msgstr "ഒന്നുമില്ല"
+
+msgid "currpage"
+msgstr "നിലവിലുളള പേജ്"
+
+msgid "isread"
+msgstr "വായിച്ചവ"
+
+msgid "unread"
+msgstr "വായിക്കാത്തത്"
+
+msgid "flagged"
+msgstr "അടയാളപ്പെടുത്തിയവ"
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr "മറുപടി കൊടുക്കാത്ത"
+
+msgid "withattachment"
+msgstr ""
+
+msgid "deleted"
+msgstr "മായ്ച്ചവ"
+
+msgid "undeleted"
+msgstr ""
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr ""
+
+msgid "invert"
+msgstr "തലതിരിക്കുക"
+
+msgid "filter"
+msgstr "അരിപ്പ"
+
+msgid "list"
+msgstr "പട്ടിക"
+
+msgid "threads"
+msgstr ""
+
+msgid "expand-all"
+msgstr "എല്ലാം വികസിപ്പിക്കുക"
+
+msgid "expand-unread"
+msgstr "വായിക്കാത്തവ വികസിപ്പിക്കുക"
+
+msgid "collapse-all"
+msgstr "എല്ലാം അടയ്ക്കുക"
+
+msgid "threaded"
+msgstr ""
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr ""
+
+msgid "do_expand"
+msgstr ""
+
+msgid "expand_only_unread"
+msgstr ""
+
+msgid "fromto"
+msgstr "എവിടുന്ന് /എങ്ങൊട്ടു"
+
+msgid "flag"
+msgstr ""
+
+msgid "attachment"
+msgstr ""
+
+msgid "nonesort"
+msgstr "ഒന്നുമില്ല"
+
+msgid "sentdate"
+msgstr "അയച്ച തീയതി"
+
+msgid "arrival"
+msgstr "വന്ന തീയതി"
+
+msgid "asc"
+msgstr "ആരോഹണം"
+
+msgid "desc"
+msgstr "അവരോഹണം"
+
+msgid "listcolumns"
+msgstr ""
+
+msgid "listsorting"
+msgstr ""
+
+msgid "listorder"
+msgstr "തരംതിരിക്കണ്ട രീതി"
+
+msgid "listmode"
+msgstr ""
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "പട്ടിക"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr ""
+
+msgid "compact"
+msgstr "ചുരുക്കു"
+
+msgid "empty"
+msgstr "ശൂന്യം"
+
+msgid "importmessages"
+msgstr ""
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "ഡിസ്ക്ക് ഉപയോഗം"
+
+msgid "unknown"
+msgstr "അറിയാത്ത"
+
+msgid "unlimited"
+msgstr "പരിമിതികളില്ലാത്ത"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr ""
+
+msgid "quotastorage"
+msgstr ""
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "പെട്ടെന്ന് തെരയു"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr ""
+
+msgid "searchmod"
+msgstr ""
+
+msgid "msgtext"
+msgstr "മുഴുവന്‍ സന്ദേശവും"
+
+msgid "body"
+msgstr "ഉള്ളടക്കം"
+
+msgid "type"
+msgstr ""
+
+msgid "namex"
+msgstr ""
+
+msgid "searchscope"
+msgstr ""
+
+msgid "currentfolder"
+msgstr ""
+
+msgid "subfolders"
+msgstr ""
+
+msgid "allfolders"
+msgstr ""
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "പുതിയ വിന്‍ഡോയില്‍ തുറക്കുക"
+
+msgid "emlsave"
+msgstr ""
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr "പുതിയതായി തിരുത്തുക"
+
+msgid "send"
+msgstr ""
+
+msgid "sendmessage"
+msgstr "സന്ദേശം അയയ്ക്കുക"
+
+msgid "savemessage"
+msgstr "പൂര്‍ത്തിയാകാത്തവ ആയി സൂക്ഷിക്കുക"
+
+msgid "addattachment"
+msgstr "ഒരു ഫയല്‍ മെയിലിനൊപ്പം ചേര്‍ക്കുക"
+
+msgid "charset"
+msgstr ""
+
+msgid "editortype"
+msgstr "തിരുത്തല്‍ രീതി"
+
+msgid "returnreceipt"
+msgstr ""
+
+msgid "dsn"
+msgstr ""
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr ""
+
+msgid "originalmessage"
+msgstr "യഥാര്‍ഥ സന്ദേശം"
+
+msgid "selectimage"
+msgstr ""
+
+msgid "addimage"
+msgstr ""
+
+msgid "selectmedia"
+msgstr ""
+
+msgid "addmedia"
+msgstr ""
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr ""
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "സ്വീകര്‍ത്താവ്"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr ""
+
+msgid "spellcheck"
+msgstr ""
+
+msgid "checkspelling"
+msgstr "അക്ഷരത്തെറ്റു് പരിശോധിക്കുക"
+
+msgid "resumeediting"
+msgstr "തിരുത്തല്‍ തുടരുക"
+
+msgid "revertto"
+msgstr ""
+
+msgid "restore"
+msgstr ""
+
+msgid "restoremessage"
+msgstr ""
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr ""
+
+msgid "insertresponse"
+msgstr ""
+
+msgid "manageresponses"
+msgstr ""
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr ""
+
+msgid "editresponse"
+msgstr ""
+
+msgid "editresponses"
+msgstr ""
+
+msgid "responsename"
+msgstr ""
+
+msgid "responsetext"
+msgstr ""
+
+msgid "attach"
+msgstr "സംയോജിപ്പിക്കു"
+
+msgid "attachments"
+msgstr "അറ്റാച്ച്മെന്റുകള്‍"
+
+msgid "upload"
+msgstr "അപ്‌ലോഡ് ചെയ്യുക"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "അടയ്ക്കുക"
+
+msgid "messageoptions"
+msgstr "സന്ദേശ ​ഐച്ഛികങ്ങള്‍..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "കുറഞ്ഞ"
+
+msgid "lowest"
+msgstr "ഏറ്റവും കുറഞ്ഞ"
+
+msgid "normal"
+msgstr "സാധാരണ"
+
+msgid "high"
+msgstr "കൂടിയ"
+
+msgid "highest"
+msgstr "ഏറ്റവും കൂടിയത്"
+
+msgid "nosubject"
+msgstr "(വിഷയം ഇല്ല)"
+
+msgid "showimages"
+msgstr "ചിത്രങ്ങള്‍ കാണിക്കുക"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr ""
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "ഇതൊരു കരടുരൂപമാണ്."
+
+msgid "andnmore"
+msgstr ""
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr ""
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr ""
+
+msgid "savesentmessagein"
+msgstr ""
+
+msgid "dontsave"
+msgstr "സുക്ഷിക്കരുത്"
+
+msgid "maxuploadsize"
+msgstr "$size ആണ് പരമാവധി  ഫയല്‍ വലിപ്പം"
+
+msgid "addcc"
+msgstr ""
+
+msgid "addbcc"
+msgstr ""
+
+msgid "addreplyto"
+msgstr ""
+
+msgid "addfollowupto"
+msgstr ""
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+
+msgid "receiptread"
+msgstr ""
+
+msgid "yourmessage"
+msgstr ""
+
+msgid "receiptnote"
+msgstr ""
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr ""
+
+msgid "firstname"
+msgstr "ആദ്യ നാമം"
+
+msgid "surname"
+msgstr "അവസാന നാമം"
+
+msgid "middlename"
+msgstr ""
+
+msgid "nameprefix"
+msgstr ""
+
+msgid "namesuffix"
+msgstr ""
+
+msgid "nickname"
+msgstr "ചെല്ലപേര്"
+
+msgid "jobtitle"
+msgstr "ജോലിയുടെ പേര്"
+
+msgid "department"
+msgstr "വകുപ്പ്"
+
+msgid "gender"
+msgstr "ലിംഗം"
+
+msgid "maidenname"
+msgstr "കന്യകാനാമം"
+
+msgid "email"
+msgstr "ഇമെയില്‍"
+
+msgid "phone"
+msgstr "ഫോണ്‍"
+
+msgid "address"
+msgstr "മേല്‍വിലാസം"
+
+msgid "street"
+msgstr "തെരുവ്"
+
+msgid "locality"
+msgstr "നഗരം"
+
+msgid "zipcode"
+msgstr "പിന്‍ കോഡ്"
+
+msgid "region"
+msgstr "സംസ്ഥാനം / പ്രദേശം"
+
+msgid "country"
+msgstr "രാജ്യം"
+
+msgid "birthday"
+msgstr "പിറന്നാള്‍"
+
+msgid "anniversary"
+msgstr "വാര്‍ഷികം"
+
+msgid "website"
+msgstr "വെബ്സൈറ്റ്"
+
+msgid "instantmessenger"
+msgstr ""
+
+msgid "notes"
+msgstr "കുറിപ്പുകള്‍"
+
+msgid "male"
+msgstr "പുരുഷന്‍"
+
+msgid "female"
+msgstr "സ്‌ത്രീ"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "പരിപാലകന്‍"
+
+msgid "assistant"
+msgstr "സഹായി"
+
+msgid "spouse"
+msgstr "ഭാര്യ/ഭര്‍ത്താവ്"
+
+msgid "allfields"
+msgstr ""
+
+msgid "search"
+msgstr "തെരയുക"
+
+msgid "searchresult"
+msgstr ""
+
+msgid "advsearch"
+msgstr "വിപുലമായ തിരച്ചില്‍"
+
+msgid "advanced"
+msgstr "സങ്കീര്‍ണ്ണം"
+
+msgid "other"
+msgstr "മറ്റുള്ളത്"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "ആസ്ഥാനം"
+
+msgid "typework"
+msgstr "ജോലി"
+
+msgid "typeother"
+msgstr "മറ്റുള്ളത്"
+
+msgid "typemobile"
+msgstr "മോബൈല്‍"
+
+msgid "typemain"
+msgstr "പ്രധാനപ്പെട്ട"
+
+msgid "typehomefax"
+msgstr "വീട്ടിലെ ഫാക്സ്"
+
+msgid "typeworkfax"
+msgstr "കാര്യാലയത്തിലെ ഫാക്സ്"
+
+msgid "typecar"
+msgstr "കാര്‍"
+
+msgid "typepager"
+msgstr "പേജര്‍"
+
+msgid "typevideo"
+msgstr "ചലച്ചിത്രം"
+
+msgid "typeassistant"
+msgstr "സഹായി"
+
+msgid "typehomepage"
+msgstr "ഹോം പേജ്"
+
+msgid "typeblog"
+msgstr "ബ്ലോഗ്"
+
+msgid "typeprofile"
+msgstr "പ്രൊഫൈല്‍"
+
+msgid "addfield"
+msgstr ""
+
+msgid "addcontact"
+msgstr ""
+
+msgid "editcontact"
+msgstr ""
+
+msgid "contacts"
+msgstr ""
+
+msgid "contactproperties"
+msgstr ""
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr "സ്വകാര്യ വിവരങ്ങള്‍"
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr ""
+
+msgid "edit"
+msgstr "തിരുത്തുക"
+
+msgid "cancel"
+msgstr "റദ്ദാക്കുക"
+
+msgid "save"
+msgstr "സൂക്ഷിക്കുക"
+
+msgid "delete"
+msgstr "നീക്കം ചെയ്യുക"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "പേരുമാറ്റുക"
+
+msgid "addphoto"
+msgstr "ചേര്‍ക്കുക"
+
+msgid "replacephoto"
+msgstr "പകരം വയ്ക്കുക"
+
+msgid "uploadphoto"
+msgstr ""
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr ""
+
+msgid "composeto"
+msgstr ""
+
+msgid "contactsfromto"
+msgstr ""
+
+msgid "print"
+msgstr "അച്ചടി"
+
+msgid "export"
+msgstr "പുറത്തെടുക്കുക"
+
+msgid "exportall"
+msgstr ""
+
+msgid "exportsel"
+msgstr ""
+
+msgid "exportvcards"
+msgstr ""
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr "കുട്ടത്തിന്റെ പേര് മാറ്റുക"
+
+msgid "groupdelete"
+msgstr "കൂട്ടം മായ്ക്കുക"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr ""
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "മുമ്പുളള താള്‍ കാണിയ്ക്കുക"
+
+msgid "firstpage"
+msgstr ""
+
+msgid "nextpage"
+msgstr ""
+
+msgid "lastpage"
+msgstr ""
+
+msgid "group"
+msgstr "കൂട്ടം"
+
+msgid "groups"
+msgstr "കൂട്ടങ്ങള്‍"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr "സ്വകാര്യ വിലാസങ്ങള്‍"
+
+msgid "searchsave"
+msgstr "തിരയല്‍ സൂക്ഷിക്കുക"
+
+msgid "searchdelete"
+msgstr "തിരയല്‍ നീക്കംചെയ്യുക"
+
+msgid "import"
+msgstr "പ്രോഗ്രമ്മിലേക്ക് എടുക്കുക"
+
+msgid "importcontacts"
+msgstr ""
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr ""
+
+msgid "importreplace"
+msgstr ""
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "പൂര്‍ത്തീകരിച്ചു"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr ""
+
+msgid "about"
+msgstr "വിവരം"
+
+msgid "preferences"
+msgstr ""
+
+msgid "userpreferences"
+msgstr "ഉപയൊക്ത മുന്‍ഗണനകള്‍"
+
+msgid "editpreferences"
+msgstr ""
+
+msgid "identities"
+msgstr ""
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "HTML കാണിക്കുക"
+
+msgid "defaultcharset"
+msgstr ""
+
+msgid "htmlmessage"
+msgstr ""
+
+msgid "messagepart"
+msgstr ""
+
+msgid "digitalsig"
+msgstr ""
+
+msgid "dateformat"
+msgstr ""
+
+msgid "timeformat"
+msgstr ""
+
+msgid "prettydate"
+msgstr ""
+
+msgid "setdefault"
+msgstr ""
+
+msgid "autodetect"
+msgstr ""
+
+msgid "language"
+msgstr "ഭാഷ"
+
+msgid "timezone"
+msgstr "സമയ മേഖല"
+
+msgid "pagesize"
+msgstr "ഒരു താളിലെ വരികള്‍"
+
+msgid "signature"
+msgstr "ഒപ്പ്"
+
+msgid "dstactive"
+msgstr ""
+
+msgid "showinextwin"
+msgstr ""
+
+msgid "composeextwin"
+msgstr ""
+
+msgid "htmleditor"
+msgstr "HTML സന്ദേശങ്ങള്‍ രചിക്കുക"
+
+msgid "htmlonreply"
+msgstr ""
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr ""
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr ""
+
+msgid "skin"
+msgstr ""
+
+msgid "logoutclear"
+msgstr ""
+
+msgid "logoutcompact"
+msgstr ""
+
+msgid "uisettings"
+msgstr ""
+
+msgid "serversettings"
+msgstr "സേവകന്റെ ക്രമീകരണങ്ങള്‍"
+
+msgid "mailboxview"
+msgstr ""
+
+msgid "mdnrequests"
+msgstr ""
+
+msgid "askuser"
+msgstr "എന്നൊടു ചോദിക്കുക"
+
+msgid "autosend"
+msgstr ""
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr ""
+
+msgid "flagfordeletion"
+msgstr ""
+
+msgid "skipdeleted"
+msgstr ""
+
+msgid "deletealways"
+msgstr ""
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr ""
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr ""
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "എപ്പോഴും"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr ""
+
+msgid "autosavedraft"
+msgstr ""
+
+msgid "everynminutes"
+msgstr ""
+
+msgid "refreshinterval"
+msgstr ""
+
+msgid "never"
+msgstr "ഒരിക്കലുമില്ല"
+
+msgid "immediately"
+msgstr "ഉടനടി"
+
+msgid "messagesdisplaying"
+msgstr ""
+
+msgid "messagescomposition"
+msgstr ""
+
+msgid "mimeparamfolding"
+msgstr ""
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (തണ്ടര്‍ബേട് )"
+
+msgid "miscfolding"
+msgstr "Full RFC 2231 ( മൈക്രൊസൊഫ്റ്റ് ഔട്ട്ലൂക്കു് )"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (മറ്റുള്ളവ)"
+
+msgid "force7bit"
+msgstr "8-bit അക്ഷരങ്ങള്‍ക്കു \"MIME encoding\" ഉപയോഗിക്കുക"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "വിപുലീക്രിതമായ ക്രമീകരണങ്ങള്‍"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr ""
+
+msgid "checkallfolders"
+msgstr ""
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "HTML സന്ദേശത്തിന്റെ തനതായ ലിപി"
+
+msgid "mainoptions"
+msgstr ""
+
+msgid "browseroptions"
+msgstr ""
+
+msgid "section"
+msgstr "വിഭാഗം"
+
+msgid "maintenance"
+msgstr ""
+
+msgid "newmessage"
+msgstr "പുതിയ സന്ദേശം"
+
+msgid "signatureoptions"
+msgstr ""
+
+msgid "whenreplying"
+msgstr ""
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr ""
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr ""
+
+msgid "replyremovesignature"
+msgstr ""
+
+msgid "autoaddsignature"
+msgstr ""
+
+msgid "newmessageonly"
+msgstr "പുതിയ സന്ദേശം മാത്രം"
+
+msgid "replyandforwardonly"
+msgstr ""
+
+msgid "insertsignature"
+msgstr ""
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "$n നിമിഷങ്ങള്‍ കഴിഞ്ഞു്"
+
+msgid "reqmdn"
+msgstr ""
+
+msgid "reqdsn"
+msgstr ""
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr ""
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr ""
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr "അക്കങ്ങള്‍ ഉള്ള വാക്കുകളെ അവഗണിക്കുക"
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr "നിഘണ്ടുവില്‍ ചേര്‍ക്കുക"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr ""
+
+msgid "asattachment"
+msgstr ""
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "എല്ലാ സന്ദേശങ്ങളും"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr ""
+
+msgid "folders"
+msgstr "ഫോള്‍ഡറുകള്‍"
+
+msgid "foldername"
+msgstr ""
+
+msgid "subscribed"
+msgstr ""
+
+msgid "messagecount"
+msgstr ""
+
+msgid "create"
+msgstr ""
+
+msgid "createfolder"
+msgstr ""
+
+msgid "managefolders"
+msgstr ""
+
+msgid "specialfolders"
+msgstr ""
+
+msgid "properties"
+msgstr "സവിശേഷതകള്‍"
+
+msgid "folderproperties"
+msgstr ""
+
+msgid "parentfolder"
+msgstr ""
+
+msgid "location"
+msgstr ""
+
+msgid "info"
+msgstr "വിവരം"
+
+msgid "getfoldersize"
+msgstr "അറയുടെ വലുപ്പം അരിയാന്‍ ക്ലിക്ക് ചെയ്യുക"
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr ""
+
+msgid "personalfolder"
+msgstr "സ്വകാര്യ അറ"
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr "പൊതു - അറ"
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr ""
+
+msgid "sortasc"
+msgstr ""
+
+msgid "sortdesc"
+msgstr ""
+
+msgid "undo"
+msgstr ""
+
+msgid "installedplugins"
+msgstr ""
+
+msgid "plugin"
+msgstr ""
+
+msgid "version"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "അനുമതി"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "സഹായം തേടുക"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr ""
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "യൂണിക്കോഡ്"
+
+msgid "english"
+msgstr "ഇംഗ്ലീഷ്"
+
+msgid "westerneuropean"
+msgstr "പടിഞ്ഞാറന്‍ യൂറോപ്യന്‍"
+
+msgid "easterneuropean"
+msgstr "കിഴക്കന്‍ യൂറോപ്യന്‍"
+
+msgid "southeasterneuropean"
+msgstr ""
+
+msgid "baltic"
+msgstr "ബാള്‍ട്ടിക്ക്"
+
+msgid "cyrillic"
+msgstr "സിറില്ലിക്ക്"
+
+msgid "arabic"
+msgstr "അറബിക്ക്"
+
+msgid "greek"
+msgstr "ഗ്രീക്ക്"
+
+msgid "hebrew"
+msgstr "ഹീബ്രു"
+
+msgid "turkish"
+msgstr "ടര്‍ക്കിഷ്"
+
+msgid "nordic"
+msgstr "നോര്‍ഡിക്ക്"
+
+msgid "thai"
+msgstr "തായ്"
+
+msgid "celtic"
+msgstr "സെല്‍റ്റിക്ക്"
+
+msgid "vietnamese"
+msgstr "വിയറ്റ്നാമീസ്"
+
+msgid "japanese"
+msgstr "ജാപ്പനീസ്"
+
+msgid "korean"
+msgstr "കൊറിയന്‍"
+
+msgid "chinese"
+msgstr "ചൈനീസ്‌"
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "ഒരു പിഴവ് സംഭവിച്ചിരിക്കുന്നു"
+
+msgid "messages.loginfailed"
+msgstr "പ്രവേശനം പരാജയപ്പെട്ടിയിക്കുന്നു"
+
+msgid "messages.cookiesdisabled"
+msgstr "താങ്കളുടെ ബ്രൗസർ കുക്കികൾ സ്വീകരിക്കുന്നതല്ല"
+
+msgid "messages.sessionerror"
+msgstr "താങ്കളുടെ സെഷൻ അസാധുവാണ് അല്ലെങ്കിൽ കാലഹരണപ്പെട്ടിരിക്കുന്നു"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "സൂക്ഷിക്കുന്നതിനുള്ള സെർവറുമായി ബന്ധിപ്പിക്കാൻ സാധിച്ചില്ല"
+
+msgid "messages.servererror"
+msgstr "സെർവർ പിഴവ്!"
+
+msgid "messages.servererrormsg"
+msgstr "സെർവർ പിഴവ്: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr "ബന്ധിപ്പിക്കുന്നതിൽ പിഴവ് (സെർവറിൽ എത്താനായില്ല)!"
+
+msgid "messages.dberror"
+msgstr "ഡാറ്റാബേസ് പിഴവ്"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "പോപ്പപ്പ് ജാലകം തടയപ്പെട്ടിരുന്നു"
+
+msgid "messages.requesttimedout"
+msgstr "അപേക്ഷയുടെ കാലാവധി കഴിഞ്ഞു"
+
+msgid "messages.errorreadonly"
+msgstr "പ്രവൃത്തി നടത്താനായില്ല. ഫോൾഡർ വായിക്കാൻ മാത്രമുള്ളതാണ്"
+
+msgid "messages.errornoperm"
+msgstr "പ്രവര്‍ത്തനം നടത്താനായില്ല . അനുമതി നിഷേധിക്കപെട്ടിരിക്കുന്നു."
+
+msgid "messages.erroroverquota"
+msgstr "പ്രവര്‍ത്തനം നടത്താനായില്ല . ഡിസ്കിൽ സ്ഥലമില്ല."
+
+msgid "messages.erroroverquotadelete"
+msgstr "ഡിസ്കിൽ സ്ഥലമില്ല. ഒരു സന്ദേശം നീക്കം ചെയ്യാൻ SHIFT+DEL ഉപയോഗിക്കുക"
+
+msgid "messages.invalidrequest"
+msgstr "അസാധുവായ അപേക്ഷ ! ഒരു ഡാറ്റയും സൂക്ഷിച്ചിട്ടില്ല."
+
+msgid "messages.invalidhost"
+msgstr "അസാധുവായ സെർവർ നാമം"
+
+msgid "messages.nomessagesfound"
+msgstr "ഈ മെയിൽബോക്സിൽ സന്ദേശമൊന്നും കണ്ടെത്തിയില്ല"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr ""
+
+msgid "messages.nomessages"
+msgstr ""
+
+msgid "messages.refreshing"
+msgstr ""
+
+msgid "messages.loading"
+msgstr "തുറക്കുന്നു..."
+
+msgid "messages.uploading"
+msgstr ""
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr ""
+
+msgid "messages.loadingdata"
+msgstr ""
+
+msgid "messages.checkingmail"
+msgstr "പുതിയ സന്ദേസങ്ങള്‍കുവേണ്ടി തിരയുന്നു..."
+
+msgid "messages.sendingmessage"
+msgstr "സന്ദേശം അയക്കുന്നു..."
+
+msgid "messages.messagesent"
+msgstr ""
+
+msgid "messages.savingmessage"
+msgstr ""
+
+msgid "messages.messagesaved"
+msgstr ""
+
+msgid "messages.successfullysaved"
+msgstr ""
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr ""
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr ""
+
+msgid "messages.blockedimages"
+msgstr ""
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr ""
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr ""
+
+msgid "messages.contactnotfound"
+msgstr ""
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "സന്ദേശം അയക്കാന്‍ സാധിച്ചില്ല."
+
+msgid "messages.senttooquickly"
+msgstr "സന്ദേശം അയക്കുന്നതിനു മുന്പു ദയവായ്  $sec കാത്തിരിക്കൂ"
+
+msgid "messages.errorsavingsent"
+msgstr ""
+
+msgid "messages.errorsaving"
+msgstr ""
+
+msgid "messages.errormoving"
+msgstr ""
+
+msgid "messages.errorcopying"
+msgstr ""
+
+msgid "messages.errordeleting"
+msgstr ""
+
+msgid "messages.errormarking"
+msgstr ""
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr ""
+
+msgid "messages.deletegroupconfirm"
+msgstr ""
+
+msgid "messages.deletemessagesconfirm"
+msgstr ""
+
+msgid "messages.deletefolderconfirm"
+msgstr ""
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr ""
+
+msgid "messages.contactdeleting"
+msgstr ""
+
+msgid "messages.groupdeleting"
+msgstr ""
+
+msgid "messages.folderdeleting"
+msgstr ""
+
+msgid "messages.foldermoving"
+msgstr ""
+
+msgid "messages.foldersubscribing"
+msgstr ""
+
+msgid "messages.folderunsubscribing"
+msgstr ""
+
+msgid "messages.formincomplete"
+msgstr ""
+
+msgid "messages.noemailwarning"
+msgstr ""
+
+msgid "messages.nonamewarning"
+msgstr ""
+
+msgid "messages.nopagesizewarning"
+msgstr ""
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr ""
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr ""
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr ""
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr ""
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+
+msgid "messages.searchsuccessful"
+msgstr ""
+
+msgid "messages.contactsearchsuccessful"
+msgstr ""
+
+msgid "messages.searchnomatch"
+msgstr ""
+
+msgid "messages.searching"
+msgstr ""
+
+msgid "messages.checking"
+msgstr ""
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr ""
+
+msgid "messages.folderdeleted"
+msgstr ""
+
+msgid "messages.foldersubscribed"
+msgstr ""
+
+msgid "messages.folderunsubscribed"
+msgstr ""
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr ""
+
+msgid "messages.converting"
+msgstr ""
+
+msgid "messages.messageopenerror"
+msgstr ""
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr ""
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr ""
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr ""
+
+msgid "messages.moveerror"
+msgstr ""
+
+msgid "messages.sourceisreadonly"
+msgstr ""
+
+msgid "messages.errorsavingcontact"
+msgstr ""
+
+msgid "messages.movingmessage"
+msgstr ""
+
+msgid "messages.copyingmessage"
+msgstr ""
+
+msgid "messages.copyingcontact"
+msgstr ""
+
+msgid "messages.movingcontact"
+msgstr ""
+
+msgid "messages.deletingmessage"
+msgstr ""
+
+msgid "messages.markingmessage"
+msgstr ""
+
+msgid "messages.addingmember"
+msgstr ""
+
+msgid "messages.removingmember"
+msgstr ""
+
+msgid "messages.receiptsent"
+msgstr ""
+
+msgid "messages.errorsendingreceipt"
+msgstr ""
+
+msgid "messages.deleteidentityconfirm"
+msgstr ""
+
+msgid "messages.nodeletelastidentity"
+msgstr ""
+
+msgid "messages.forbiddencharacter"
+msgstr ""
+
+msgid "messages.selectimportfile"
+msgstr ""
+
+msgid "messages.addresswriterror"
+msgstr ""
+
+msgid "messages.contactaddedtogroup"
+msgstr ""
+
+msgid "messages.contactremovedfromgroup"
+msgstr ""
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr ""
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr ""
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+
+msgid "messages.smtpconnerror"
+msgstr ""
+
+msgid "messages.smtpautherror"
+msgstr ""
+
+msgid "messages.smtpfromerror"
+msgstr ""
+
+msgid "messages.smtptoerror"
+msgstr ""
+
+msgid "messages.smtprecipientserror"
+msgstr ""
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr ""
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+
+msgid "messages.maxgroupmembersreached"
+msgstr ""
+
+msgid "messages.internalerror"
+msgstr ""
+
+msgid "messages.contactdelerror"
+msgstr ""
+
+msgid "messages.contactdeleted"
+msgstr ""
+
+msgid "messages.contactrestoreerror"
+msgstr ""
+
+msgid "messages.contactrestored"
+msgstr ""
+
+msgid "messages.groupdeleted"
+msgstr ""
+
+msgid "messages.grouprenamed"
+msgstr ""
+
+msgid "messages.groupcreated"
+msgstr ""
+
+msgid "messages.savedsearchdeleted"
+msgstr ""
+
+msgid "messages.savedsearchdeleteerror"
+msgstr ""
+
+msgid "messages.savedsearchcreated"
+msgstr ""
+
+msgid "messages.savedsearchcreateerror"
+msgstr ""
+
+msgid "messages.messagedeleted"
+msgstr ""
+
+msgid "messages.messagemoved"
+msgstr ""
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr ""
+
+msgid "messages.messagemarked"
+msgstr ""
+
+msgid "messages.autocompletechars"
+msgstr ""
+
+msgid "messages.autocompletemore"
+msgstr ""
+
+msgid "messages.namecannotbeempty"
+msgstr ""
+
+msgid "messages.nametoolong"
+msgstr ""
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr ""
+
+msgid "messages.foldercreated"
+msgstr ""
+
+msgid "messages.invalidimageformat"
+msgstr ""
+
+msgid "messages.mispellingsfound"
+msgstr ""
+
+msgid "messages.parentnotwritable"
+msgstr ""
+
+msgid "messages.messagetoobig"
+msgstr ""
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

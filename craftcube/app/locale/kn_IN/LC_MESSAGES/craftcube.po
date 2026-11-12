@@ -1,0 +1,2833 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: kn_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "$product ಗೆ ಸ್ವಾಗತ "
+
+msgid "username"
+msgstr ""
+
+msgid "password"
+msgstr "ರಹಸ್ಯ ಪದ"
+
+msgid "server"
+msgstr ""
+
+msgid "login"
+msgstr ""
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr ""
+
+msgid "mail"
+msgstr ""
+
+msgid "settings"
+msgstr ""
+
+msgid "addressbook"
+msgstr "ವಿಳಾಸ ಪುಸ್ತಕ"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr ""
+
+msgid "drafts"
+msgstr ""
+
+msgid "sent"
+msgstr ""
+
+msgid "trash"
+msgstr ""
+
+msgid "junk"
+msgstr ""
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr "ವಿಷಯ"
+
+msgid "from"
+msgstr "ಇಂದ"
+
+msgid "sender"
+msgstr ""
+
+msgid "to"
+msgstr "ಗೆ"
+
+msgid "cc"
+msgstr ""
+
+msgid "bcc"
+msgstr ""
+
+msgid "replyto"
+msgstr ""
+
+msgid "followupto"
+msgstr ""
+
+msgid "date"
+msgstr "ದಿನಾಂಕ "
+
+msgid "size"
+msgstr "ಗಾತ್ರ"
+
+msgid "priority"
+msgstr "ಆದ್ಯತೆ"
+
+msgid "organization"
+msgstr "ಸಂಘಟನೆ"
+
+msgid "readstatus"
+msgstr ""
+
+msgid "listoptions"
+msgstr ""
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr ""
+
+msgid "messagesfromto"
+msgstr ""
+
+msgid "threadsfromto"
+msgstr ""
+
+msgid "messagenrof"
+msgstr ""
+
+msgid "fromtoshort"
+msgstr ""
+
+msgid "copy"
+msgstr ""
+
+msgid "move"
+msgstr ""
+
+msgid "moveto"
+msgstr ""
+
+msgid "copyto"
+msgstr ""
+
+msgid "download"
+msgstr ""
+
+msgid "open"
+msgstr ""
+
+msgid "showattachment"
+msgstr "ತೋರಿಸು"
+
+msgid "showanyway"
+msgstr ""
+
+msgid "filename"
+msgstr "ಫೈಲ್ ಹೆಸರು"
+
+msgid "filesize"
+msgstr "ಫೈಲ್ ಗಾತ್ರ"
+
+msgid "addtoaddressbook"
+msgstr "ಪುಸ್ತಕ ವಿಳಾಸ ಸೇರಿಸು "
+
+msgid "sun"
+msgstr "ಭಾನು "
+
+msgid "mon"
+msgstr "ಸೋಮ"
+
+msgid "tue"
+msgstr "ಮಂಗಳ"
+
+msgid "wed"
+msgstr "ಬುಧ"
+
+msgid "thu"
+msgstr "ಗುರು"
+
+msgid "fri"
+msgstr "ಶುಕ್ರ"
+
+msgid "sat"
+msgstr "ಶನಿ"
+
+msgid "sunday"
+msgstr "ಭಾನುವಾರ"
+
+msgid "monday"
+msgstr "ಸೋಮವಾರ"
+
+msgid "tuesday"
+msgstr "ಮಂಗಳವಾರ"
+
+msgid "wednesday"
+msgstr "ಬುಧವಾರ"
+
+msgid "thursday"
+msgstr "ಗುರುವಾರ"
+
+msgid "friday"
+msgstr "ಶುಕ್ರವಾರ"
+
+msgid "saturday"
+msgstr "ಶನಿವಾರ"
+
+msgid "jan"
+msgstr ""
+
+msgid "feb"
+msgstr ""
+
+msgid "mar"
+msgstr ""
+
+msgid "apr"
+msgstr ""
+
+msgid "may"
+msgstr "ಮೇ"
+
+msgid "jun"
+msgstr ""
+
+msgid "jul"
+msgstr ""
+
+msgid "aug"
+msgstr ""
+
+msgid "sep"
+msgstr ""
+
+msgid "oct"
+msgstr ""
+
+msgid "nov"
+msgstr ""
+
+msgid "dec"
+msgstr ""
+
+msgid "longjan"
+msgstr "ಜನವರಿ"
+
+msgid "longfeb"
+msgstr "ಫೆಬ್ರುವರಿ"
+
+msgid "longmar"
+msgstr "ಮಾರ್ಚ್"
+
+msgid "longapr"
+msgstr "ಏಪ್ರಿಲ್"
+
+msgid "longmay"
+msgstr "ಮೇ"
+
+msgid "longjun"
+msgstr "ಜೂನ್"
+
+msgid "longjul"
+msgstr "ಜೂಲೈ"
+
+msgid "longaug"
+msgstr "ಆಗಸ್ಟ್ "
+
+msgid "longsep"
+msgstr "ಸೆಪ್ಟೆಂಬರ"
+
+msgid "longoct"
+msgstr "ಅಕ್ಟೋಬರ"
+
+msgid "longnov"
+msgstr "ನವೆಂಬರ"
+
+msgid "longdec"
+msgstr "ಡಿಸೆಂಬರ"
+
+msgid "today"
+msgstr "ಇಂದು"
+
+msgid "refresh"
+msgstr ""
+
+msgid "checkmail"
+msgstr "ಹೊಸ ಸಂದೇಶಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸು"
+
+msgid "compose"
+msgstr ""
+
+msgid "writenewmessage"
+msgstr "ಒಂದು ಹೊಸ ಸಂದೇಶವನ್ನು ರಚಿಸು"
+
+msgid "reply"
+msgstr "ಉತ್ತರಕೊಡು"
+
+msgid "replytomessage"
+msgstr ""
+
+msgid "replytoallmessage"
+msgstr ""
+
+msgid "replyall"
+msgstr ""
+
+msgid "replylist"
+msgstr ""
+
+msgid "forward"
+msgstr ""
+
+msgid "forwardinline"
+msgstr ""
+
+msgid "forwardattachment"
+msgstr ""
+
+msgid "forwardmessage"
+msgstr ""
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "ಸಂದೇಶ ಅಳಿಸು"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr ""
+
+msgid "printmessage"
+msgstr "ಈ ಸಂದೇಶವನ್ನು ಮುದ್ರಿಸು"
+
+msgid "previousmessage"
+msgstr "ಹಿಂದಿನ ಸಂದೇಶವನ್ನು ತೋರಿಸು"
+
+msgid "firstmessage"
+msgstr "ಮೊದಲ ಸಂದೇಶವನ್ನು ತೋರಿಸು"
+
+msgid "nextmessage"
+msgstr "ಮುಂದಿನ ಸಂದೇಶವನ್ನು ತೋರಿಸು"
+
+msgid "lastmessage"
+msgstr "ಕೊನೆಯ ಸಂದೇಶವನ್ನು ತೋರಿಸು"
+
+msgid "backtolist"
+msgstr ""
+
+msgid "viewsource"
+msgstr ""
+
+msgid "mark"
+msgstr ""
+
+msgid "markmessages"
+msgstr ""
+
+msgid "markread"
+msgstr ""
+
+msgid "markunread"
+msgstr ""
+
+msgid "markflagged"
+msgstr ""
+
+msgid "markunflagged"
+msgstr ""
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr ""
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr ""
+
+msgid "more"
+msgstr ""
+
+msgid "back"
+msgstr ""
+
+msgid "options"
+msgstr ""
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "next"
+msgstr ""
+
+msgid "select"
+msgstr ""
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr ""
+
+msgid "none"
+msgstr ""
+
+msgid "currpage"
+msgstr ""
+
+msgid "isread"
+msgstr ""
+
+msgid "unread"
+msgstr ""
+
+msgid "flagged"
+msgstr ""
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr ""
+
+msgid "withattachment"
+msgstr ""
+
+msgid "deleted"
+msgstr ""
+
+msgid "undeleted"
+msgstr ""
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr ""
+
+msgid "invert"
+msgstr ""
+
+msgid "filter"
+msgstr ""
+
+msgid "list"
+msgstr ""
+
+msgid "threads"
+msgstr ""
+
+msgid "expand-all"
+msgstr ""
+
+msgid "expand-unread"
+msgstr ""
+
+msgid "collapse-all"
+msgstr ""
+
+msgid "threaded"
+msgstr ""
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr ""
+
+msgid "do_expand"
+msgstr ""
+
+msgid "expand_only_unread"
+msgstr ""
+
+msgid "fromto"
+msgstr ""
+
+msgid "flag"
+msgstr ""
+
+msgid "attachment"
+msgstr ""
+
+msgid "nonesort"
+msgstr ""
+
+msgid "sentdate"
+msgstr ""
+
+msgid "arrival"
+msgstr ""
+
+msgid "asc"
+msgstr ""
+
+msgid "desc"
+msgstr ""
+
+msgid "listcolumns"
+msgstr ""
+
+msgid "listsorting"
+msgstr ""
+
+msgid "listorder"
+msgstr ""
+
+msgid "listmode"
+msgstr ""
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr ""
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr ""
+
+msgid "compact"
+msgstr ""
+
+msgid "empty"
+msgstr ""
+
+msgid "importmessages"
+msgstr ""
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr ""
+
+msgid "unknown"
+msgstr ""
+
+msgid "unlimited"
+msgstr "ಅನಿಯಮಿತ"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr ""
+
+msgid "quotastorage"
+msgstr ""
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr ""
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr ""
+
+msgid "searchmod"
+msgstr ""
+
+msgid "msgtext"
+msgstr ""
+
+msgid "body"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "namex"
+msgstr "ಹೆಸರು"
+
+msgid "searchscope"
+msgstr ""
+
+msgid "currentfolder"
+msgstr ""
+
+msgid "subfolders"
+msgstr ""
+
+msgid "allfolders"
+msgstr ""
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr ""
+
+msgid "emlsave"
+msgstr ""
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr ""
+
+msgid "send"
+msgstr "ಕಳುಹಿಸು"
+
+msgid "sendmessage"
+msgstr "ಸಂದೇಶ ಕಳುಹಿಸು"
+
+msgid "savemessage"
+msgstr "ಡ್ರಾಫ್ಟ್ ಆಗಿ ಉಳಿಸಿ"
+
+msgid "addattachment"
+msgstr ""
+
+msgid "charset"
+msgstr ""
+
+msgid "editortype"
+msgstr ""
+
+msgid "returnreceipt"
+msgstr ""
+
+msgid "dsn"
+msgstr ""
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr ""
+
+msgid "originalmessage"
+msgstr "ಮೂಲ ಸಂದೇಶ"
+
+msgid "selectimage"
+msgstr ""
+
+msgid "addimage"
+msgstr ""
+
+msgid "selectmedia"
+msgstr ""
+
+msgid "addmedia"
+msgstr ""
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr ""
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr ""
+
+msgid "spellcheck"
+msgstr ""
+
+msgid "checkspelling"
+msgstr ""
+
+msgid "resumeediting"
+msgstr ""
+
+msgid "revertto"
+msgstr ""
+
+msgid "restore"
+msgstr ""
+
+msgid "restoremessage"
+msgstr ""
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr ""
+
+msgid "insertresponse"
+msgstr ""
+
+msgid "manageresponses"
+msgstr ""
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr ""
+
+msgid "editresponse"
+msgstr ""
+
+msgid "editresponses"
+msgstr ""
+
+msgid "responsename"
+msgstr "ಹೆಸರು"
+
+msgid "responsetext"
+msgstr ""
+
+msgid "attach"
+msgstr ""
+
+msgid "attachments"
+msgstr ""
+
+msgid "upload"
+msgstr ""
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "ಮುಚ್ಚು"
+
+msgid "messageoptions"
+msgstr "ಸಂದೇಶ ಆಯ್ಕೆಗಳು"
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "ಕಡಿಮೆ"
+
+msgid "lowest"
+msgstr "ಅತಿ ಕಡಿಮೆ"
+
+msgid "normal"
+msgstr "ಸಾಧಾರಣ"
+
+msgid "high"
+msgstr "ಜಾಸ್ತಿ"
+
+msgid "highest"
+msgstr "ಅತಿ ಜಾಸ್ತಿ "
+
+msgid "nosubject"
+msgstr "(ವಿಷಯ ಇಲ್ಲ)"
+
+msgid "showimages"
+msgstr "ಚಿತ್ರಗಳನ್ನು ತೋರಿಸು"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "$sender ಇಂದ ಯಾವಾಗಲೂ ಚಿತ್ರಗಳನ್ನು ತೋರಿಸು"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr ""
+
+msgid "andnmore"
+msgstr ""
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr ""
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr ""
+
+msgid "savesentmessagein"
+msgstr ""
+
+msgid "dontsave"
+msgstr "ಉಳಿಸಬೇಡ"
+
+msgid "maxuploadsize"
+msgstr ""
+
+msgid "addcc"
+msgstr ""
+
+msgid "addbcc"
+msgstr ""
+
+msgid "addreplyto"
+msgstr ""
+
+msgid "addfollowupto"
+msgstr ""
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+
+msgid "receiptread"
+msgstr ""
+
+msgid "yourmessage"
+msgstr ""
+
+msgid "receiptnote"
+msgstr ""
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr ""
+
+msgid "firstname"
+msgstr ""
+
+msgid "surname"
+msgstr ""
+
+msgid "middlename"
+msgstr ""
+
+msgid "nameprefix"
+msgstr ""
+
+msgid "namesuffix"
+msgstr ""
+
+msgid "nickname"
+msgstr ""
+
+msgid "jobtitle"
+msgstr ""
+
+msgid "department"
+msgstr "ವಿಭಾಗ"
+
+msgid "gender"
+msgstr "ಲಿಂಗ"
+
+msgid "maidenname"
+msgstr ""
+
+msgid "email"
+msgstr "ಇಮೇಲ್"
+
+msgid "phone"
+msgstr "ದೂರವಾಣಿ"
+
+msgid "address"
+msgstr "ವಿಳಾಸ"
+
+msgid "street"
+msgstr "ರಸ್ತೆ"
+
+msgid "locality"
+msgstr "ನಗರ"
+
+msgid "zipcode"
+msgstr ""
+
+msgid "region"
+msgstr ""
+
+msgid "country"
+msgstr "ದೇಶ"
+
+msgid "birthday"
+msgstr "ಜನ್ಮದಿನ"
+
+msgid "anniversary"
+msgstr ""
+
+msgid "website"
+msgstr ""
+
+msgid "instantmessenger"
+msgstr ""
+
+msgid "notes"
+msgstr ""
+
+msgid "male"
+msgstr ""
+
+msgid "female"
+msgstr ""
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "ವ್ಯವಸ್ಥಾಪಕ"
+
+msgid "assistant"
+msgstr "ಸಹಾಯಕ"
+
+msgid "spouse"
+msgstr ""
+
+msgid "allfields"
+msgstr ""
+
+msgid "search"
+msgstr "ಹುಡುಕು"
+
+msgid "searchresult"
+msgstr ""
+
+msgid "advsearch"
+msgstr ""
+
+msgid "advanced"
+msgstr ""
+
+msgid "other"
+msgstr ""
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "ಮನೆ"
+
+msgid "typework"
+msgstr "ಕೆಲಸ"
+
+msgid "typeother"
+msgstr ""
+
+msgid "typemobile"
+msgstr ""
+
+msgid "typemain"
+msgstr ""
+
+msgid "typehomefax"
+msgstr ""
+
+msgid "typeworkfax"
+msgstr ""
+
+msgid "typecar"
+msgstr "ಕಾರು"
+
+msgid "typepager"
+msgstr ""
+
+msgid "typevideo"
+msgstr ""
+
+msgid "typeassistant"
+msgstr "ಸಹಾಯಕ"
+
+msgid "typehomepage"
+msgstr ""
+
+msgid "typeblog"
+msgstr ""
+
+msgid "typeprofile"
+msgstr ""
+
+msgid "addfield"
+msgstr ""
+
+msgid "addcontact"
+msgstr ""
+
+msgid "editcontact"
+msgstr "ಸಂಪರ್ಕ ತಿದ್ದು"
+
+msgid "contacts"
+msgstr "ಸಂಪರ್ಕಗಳು"
+
+msgid "contactproperties"
+msgstr ""
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr ""
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr ""
+
+msgid "edit"
+msgstr "ತಿದ್ದು"
+
+msgid "cancel"
+msgstr ""
+
+msgid "save"
+msgstr ""
+
+msgid "delete"
+msgstr ""
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr ""
+
+msgid "addphoto"
+msgstr "ಸೇರಿಸು"
+
+msgid "replacephoto"
+msgstr "ಬದಲಾಯಿಸು"
+
+msgid "uploadphoto"
+msgstr "ಫೋಟೋ ಅಪ್ಲೋಡ್ ಮಾಡು"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr "ಆಯ್ಕೆಮಾಡಿದ ಸಂಪರ್ಕಗಳನ್ನು ಅಳಿಸು"
+
+msgid "composeto"
+msgstr ""
+
+msgid "contactsfromto"
+msgstr ""
+
+msgid "print"
+msgstr "ಮುದ್ರಿಸು"
+
+msgid "export"
+msgstr ""
+
+msgid "exportall"
+msgstr ""
+
+msgid "exportsel"
+msgstr ""
+
+msgid "exportvcards"
+msgstr ""
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr ""
+
+msgid "groupdelete"
+msgstr ""
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr ""
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "ಹಿಂದಿನ ಪುಟವನ್ನು ತೋರಿಸು"
+
+msgid "firstpage"
+msgstr "ಮೊದಲ ಪುಟ ತೋರಿಸು"
+
+msgid "nextpage"
+msgstr "ಮುಂದಿನ ಪುಟ ತೋರಿಸು"
+
+msgid "lastpage"
+msgstr "ಕೊನೆಯ ಪುಟ ತೋರಿಸು"
+
+msgid "group"
+msgstr "ಗುಂಪು"
+
+msgid "groups"
+msgstr "ಗುಂಪುಗಳು"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr ""
+
+msgid "searchsave"
+msgstr ""
+
+msgid "searchdelete"
+msgstr ""
+
+msgid "import"
+msgstr ""
+
+msgid "importcontacts"
+msgstr ""
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr ""
+
+msgid "importreplace"
+msgstr ""
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr ""
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr ""
+
+msgid "about"
+msgstr ""
+
+msgid "preferences"
+msgstr "ಆಯ್ಕೆಗಳು"
+
+msgid "userpreferences"
+msgstr "ಬಳಕೆದಾರ ಆಯ್ಕೆಗಳು"
+
+msgid "editpreferences"
+msgstr "ಬಳಕೆದಾರನ  ಆಯ್ಕೆಗಳನನ್ನು ತಿದ್ದಿ"
+
+msgid "identities"
+msgstr ""
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "HTML  ತೋರಿಸು"
+
+msgid "defaultcharset"
+msgstr ""
+
+msgid "htmlmessage"
+msgstr "HTML ಸಂದೇಶ"
+
+msgid "messagepart"
+msgstr ""
+
+msgid "digitalsig"
+msgstr "ಡಿಜಿಟಲ್ ಸಹಿ"
+
+msgid "dateformat"
+msgstr "ದಿನಾಂಕ ಸ್ವರೂಪ"
+
+msgid "timeformat"
+msgstr "ಸಮಯ ಸ್ವರೂಪ"
+
+msgid "prettydate"
+msgstr ""
+
+msgid "setdefault"
+msgstr ""
+
+msgid "autodetect"
+msgstr ""
+
+msgid "language"
+msgstr "ಭಾಷೆ"
+
+msgid "timezone"
+msgstr "ಸಮಯ ವಲಯ"
+
+msgid "pagesize"
+msgstr "ಪ್ರತಿ ಪುಟಕ್ಕೆ ಸಾಲುಗಳು"
+
+msgid "signature"
+msgstr "ಸಹಿ"
+
+msgid "dstactive"
+msgstr ""
+
+msgid "showinextwin"
+msgstr "ಹೊಸ ವಿಂಡೋದಲ್ಲಿ ಸಂದೇಶ ತೆರೆಯಿರಿ"
+
+msgid "composeextwin"
+msgstr "ಹೊಸ ವಿಂಡೋದಲ್ಲಿ ರಚಿಸು"
+
+msgid "htmleditor"
+msgstr "HTML ಸಂದೇಶಗಳನ್ನು ರಚಿಸು"
+
+msgid "htmlonreply"
+msgstr ""
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr "HTML ಸಹಿ"
+
+msgid "showemail"
+msgstr " ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಹೆಸರಿನೊಂದಿಗೆ ತೋರಿಸು"
+
+msgid "previewpane"
+msgstr ""
+
+msgid "skin"
+msgstr ""
+
+msgid "logoutclear"
+msgstr ""
+
+msgid "logoutcompact"
+msgstr ""
+
+msgid "uisettings"
+msgstr ""
+
+msgid "serversettings"
+msgstr ""
+
+msgid "mailboxview"
+msgstr ""
+
+msgid "mdnrequests"
+msgstr ""
+
+msgid "askuser"
+msgstr "ನನನ್ನು  ಕೇಳು"
+
+msgid "autosend"
+msgstr "ರಸಿಟನ್ನು  ಕಳಿಸು"
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr ""
+
+msgid "flagfordeletion"
+msgstr ""
+
+msgid "skipdeleted"
+msgstr "ಅಳಿಸಲಾಗಿರುವ  ಸಂದೇಶಗಳನ್ನು ತೋರಿಸಬೇಡ"
+
+msgid "deletealways"
+msgstr ""
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr ""
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr ""
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "ಯಾವಾಗಲೂ"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr ""
+
+msgid "autosavedraft"
+msgstr ""
+
+msgid "everynminutes"
+msgstr "ಪ್ರತಿ $n ನಿಮಿಷ (ಗಳು)"
+
+msgid "refreshinterval"
+msgstr "ರಿಫ್ರೆಶ್ (ಹೊಸ ಸಂದೇಶಗಳನ್ನು, ಇತ್ಯಾದಿಗಳನ್ನು ಪರಿಶೀಲಿಸು)"
+
+msgid "never"
+msgstr ""
+
+msgid "immediately"
+msgstr "ತತ್ಕ್ಷಣ "
+
+msgid "messagesdisplaying"
+msgstr ""
+
+msgid "messagescomposition"
+msgstr ""
+
+msgid "mimeparamfolding"
+msgstr ""
+
+msgid "2231folding"
+msgstr ""
+
+msgid "miscfolding"
+msgstr ""
+
+msgid "2047folding"
+msgstr ""
+
+msgid "force7bit"
+msgstr ""
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr ""
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr ""
+
+msgid "checkallfolders"
+msgstr ""
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr "ಮುಖ್ಯ ಆಯ್ಕೆಗಳು"
+
+msgid "browseroptions"
+msgstr ""
+
+msgid "section"
+msgstr "ವಿಭಾಗ"
+
+msgid "maintenance"
+msgstr ""
+
+msgid "newmessage"
+msgstr "ಹೊಸ ಸಂದೇಶ"
+
+msgid "signatureoptions"
+msgstr "ಸಹಿ ಆಯ್ಕೆಗಳು"
+
+msgid "whenreplying"
+msgstr "ಪ್ರತ್ಯುತ್ತರ ನೀಡುವಾಗ"
+
+msgid "replyempty"
+msgstr "ಮೂಲ ಸಂದೇಶವನ್ನು ಉಲ್ಲೇಖಿಸಬೇಡ"
+
+msgid "replytopposting"
+msgstr ""
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr ""
+
+msgid "replyremovesignature"
+msgstr " ಪ್ರತ್ಯುತ್ತರ ನೀಡುವಾಗ ಸಂದೇಶದಿಂದ ಮೂಲಸಹಿಯನ್ನು ತೆಗೆದು ಹಾಕು"
+
+msgid "autoaddsignature"
+msgstr ""
+
+msgid "newmessageonly"
+msgstr "ಹೊಸ ಸಂದೇಶ ಮಾತ್ರ    "
+
+msgid "replyandforwardonly"
+msgstr ""
+
+msgid "insertsignature"
+msgstr "ಸಹಿ ಸೇರಿಸು"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "$n ಸೆಕೆಂಡುಗಳ ನಂತರ"
+
+msgid "reqmdn"
+msgstr ""
+
+msgid "reqdsn"
+msgstr ""
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr ""
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr ""
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr ""
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr "ನಿಘಂಟಿಗೆ ಸೇರಿಸು"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr ""
+
+msgid "asattachment"
+msgstr ""
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr ""
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr ""
+
+msgid "folders"
+msgstr ""
+
+msgid "foldername"
+msgstr ""
+
+msgid "subscribed"
+msgstr ""
+
+msgid "messagecount"
+msgstr "ಸಂದೇಶಗಳು"
+
+msgid "create"
+msgstr "ರಚಿಸು"
+
+msgid "createfolder"
+msgstr ""
+
+msgid "managefolders"
+msgstr ""
+
+msgid "specialfolders"
+msgstr ""
+
+msgid "properties"
+msgstr "ಗುಣಲಕ್ಷಣಗಳು"
+
+msgid "folderproperties"
+msgstr ""
+
+msgid "parentfolder"
+msgstr ""
+
+msgid "location"
+msgstr "ಸ್ಥಳ"
+
+msgid "info"
+msgstr "ಮಾಹಿತಿ"
+
+msgid "getfoldersize"
+msgstr ""
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr ""
+
+msgid "personalfolder"
+msgstr ""
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr ""
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr ""
+
+msgid "sortasc"
+msgstr ""
+
+msgid "sortdesc"
+msgstr ""
+
+msgid "undo"
+msgstr ""
+
+msgid "installedplugins"
+msgstr ""
+
+msgid "plugin"
+msgstr ""
+
+msgid "version"
+msgstr ""
+
+msgid "source"
+msgstr "ಮೂಲ"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "ಪರವಾನಗಿ"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr ""
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr ""
+
+msgid "english"
+msgstr "ಇಂಗ್ಲೀಷ್"
+
+msgid "westerneuropean"
+msgstr "ಪಾಶ್ಚಾತ್ಯ ಯುರೋಪಿಯನ್"
+
+msgid "easterneuropean"
+msgstr "ಪೂರ್ವ ಯುರೋಪಿಯನ್"
+
+msgid "southeasterneuropean"
+msgstr ""
+
+msgid "baltic"
+msgstr ""
+
+msgid "cyrillic"
+msgstr ""
+
+msgid "arabic"
+msgstr ""
+
+msgid "greek"
+msgstr ""
+
+msgid "hebrew"
+msgstr ""
+
+msgid "turkish"
+msgstr ""
+
+msgid "nordic"
+msgstr ""
+
+msgid "thai"
+msgstr ""
+
+msgid "celtic"
+msgstr ""
+
+msgid "vietnamese"
+msgstr ""
+
+msgid "japanese"
+msgstr ""
+
+msgid "korean"
+msgstr ""
+
+msgid "chinese"
+msgstr ""
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr ""
+
+msgid "messages.loginfailed"
+msgstr ""
+
+msgid "messages.cookiesdisabled"
+msgstr ""
+
+msgid "messages.sessionerror"
+msgstr ""
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr ""
+
+msgid "messages.servererror"
+msgstr ""
+
+msgid "messages.servererrormsg"
+msgstr ""
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr ""
+
+msgid "messages.dberror"
+msgstr ""
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr "ವಿನಂತಿ ಸಮಯ ಮೀರಿತು"
+
+msgid "messages.errorreadonly"
+msgstr ""
+
+msgid "messages.errornoperm"
+msgstr ""
+
+msgid "messages.erroroverquota"
+msgstr ""
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+
+msgid "messages.invalidrequest"
+msgstr ""
+
+msgid "messages.invalidhost"
+msgstr ""
+
+msgid "messages.nomessagesfound"
+msgstr ""
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr ""
+
+msgid "messages.nomessages"
+msgstr ""
+
+msgid "messages.refreshing"
+msgstr ""
+
+msgid "messages.loading"
+msgstr ""
+
+msgid "messages.uploading"
+msgstr ""
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr ""
+
+msgid "messages.loadingdata"
+msgstr ""
+
+msgid "messages.checkingmail"
+msgstr "ಹೊಸ ಸಂದೇಶಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ..."
+
+msgid "messages.sendingmessage"
+msgstr "ಸಂದೇಶ ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ..."
+
+msgid "messages.messagesent"
+msgstr "ಸಂದೇಶ ಯಶಸ್ವಿಯಾಗಿ ಕಳುಹಿಸಲಾಗಿದೆ."
+
+msgid "messages.savingmessage"
+msgstr "ಸಂದೇಶ ಉಳಿಸಲಾಗುತ್ತಿದೆ..."
+
+msgid "messages.messagesaved"
+msgstr ""
+
+msgid "messages.successfullysaved"
+msgstr "ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ."
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr ""
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "ಅದೇ ಹೆಸರಿನ ಸಂಪರ್ಕ ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ."
+
+msgid "messages.blockedimages"
+msgstr ""
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr ""
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "ಯಾವುದೇ ಸಂಪರ್ಕಗಳು ಕಂಡುಬಂದಿಲ್ಲ."
+
+msgid "messages.contactnotfound"
+msgstr "ವಿನಂತಿಸಿದ ಸಂಪರ್ಕ ಕಂಡುಬಂದಿಲ್ಲ."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಲು ವಿಫಲವಾಗಿದೆ."
+
+msgid "messages.senttooquickly"
+msgstr "ಈ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸುವ ಮೊದಲು, $sec ಸೆಕೆಂಡು (ಗಳು) ನಿರೀಕ್ಷಿಸಿ"
+
+msgid "messages.errorsavingsent"
+msgstr ""
+
+msgid "messages.errorsaving"
+msgstr ""
+
+msgid "messages.errormoving"
+msgstr ""
+
+msgid "messages.errorcopying"
+msgstr ""
+
+msgid "messages.errordeleting"
+msgstr ""
+
+msgid "messages.errormarking"
+msgstr ""
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "ನೀವು ನಿಜವಾಗಿಯೂ ಆಯ್ಕೆ ಸಂಪರ್ಕ (ಗಳನ್ನು) ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "ನೀವು ನಿಜವಾಗಿಯೂ ಆಯ್ಕೆ ಗುಂಪು ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "ನೀವು ನಿಜವಾಗಿಯೂ ಆಯ್ದ ಸಂದೇಶ (ಗಳು ) ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?"
+
+msgid "messages.deletefolderconfirm"
+msgstr ""
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr ""
+
+msgid "messages.contactdeleting"
+msgstr "ಸಂಪರ್ಕ(ಗಳು ) ಅಳಿಸಲಾಗುತ್ತಿದೆ ..."
+
+msgid "messages.groupdeleting"
+msgstr ""
+
+msgid "messages.folderdeleting"
+msgstr ""
+
+msgid "messages.foldermoving"
+msgstr ""
+
+msgid "messages.foldersubscribing"
+msgstr ""
+
+msgid "messages.folderunsubscribing"
+msgstr ""
+
+msgid "messages.formincomplete"
+msgstr ""
+
+msgid "messages.noemailwarning"
+msgstr ""
+
+msgid "messages.nonamewarning"
+msgstr "ದಯವಿಟ್ಟು ಒಂದು ಹೆಸರನ್ನು ನಮೂದಿಸಿ."
+
+msgid "messages.nopagesizewarning"
+msgstr "ದಯವಿಟ್ಟು ಒಂದು ಪುಟದ ಗಾತ್ರ ನಮೂದಿಸಿ."
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "ದಯವಿಟ್ಟು ಕನಿಷ್ಠ ಒಬ್ಬ ಸ್ವೀಕರಿಸುವವರನ್ನು  ನಮೂದಿಸಿ."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "\"ವಿಷಯ\" ಕ್ಷೇತ್ರ ಖಾಲಿಯಾಗಿದೆ. ನೀವು ಈಗ ಒಂದು ದಾಖಲಿಸಲು ಇಚ್ಛಿಸುವಿರ?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr ""
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr "ದಯವಿಟ್ಟು ಸಂಪರ್ಕ ಹೆಸರು ಅಥವಾ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+
+msgid "messages.searchsuccessful"
+msgstr ""
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr ಸಂಪರ್ಕಗಳು ಸಿಕ್ಕಿವೆ."
+
+msgid "messages.searchnomatch"
+msgstr ""
+
+msgid "messages.searching"
+msgstr "ಹುಡುಕಲಾಗುತ್ತಿದೆ..."
+
+msgid "messages.checking"
+msgstr "ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ..."
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr "ಕಾಗುಣಿತ ದೋಷಗಳನ್ನು ಕಂಡುಬಂದಿಲ್ಲ."
+
+msgid "messages.folderdeleted"
+msgstr ""
+
+msgid "messages.foldersubscribed"
+msgstr ""
+
+msgid "messages.folderunsubscribed"
+msgstr ""
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ."
+
+msgid "messages.converting"
+msgstr ""
+
+msgid "messages.messageopenerror"
+msgstr ""
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "ಫೈಲ್ ಅಪ್ಲೋಡ್ ವಿಫಲವಾಗಿದೆ."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "ಅಪ್ಲೋಡ್ ಮಾಡಿದ ಫೈಲ್ $size ಗರಿಷ್ಠ ಗಾತ್ರವನ್ನು ಮೀರಿದೆ"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr ""
+
+msgid "messages.moveerror"
+msgstr ""
+
+msgid "messages.sourceisreadonly"
+msgstr ""
+
+msgid "messages.errorsavingcontact"
+msgstr "ಸಂಪರ್ಕ ವಿಳಾಸ ಉಳಿಸಲಾಗಲಿಲ್ಲ."
+
+msgid "messages.movingmessage"
+msgstr ""
+
+msgid "messages.copyingmessage"
+msgstr ""
+
+msgid "messages.copyingcontact"
+msgstr ""
+
+msgid "messages.movingcontact"
+msgstr ""
+
+msgid "messages.deletingmessage"
+msgstr ""
+
+msgid "messages.markingmessage"
+msgstr ""
+
+msgid "messages.addingmember"
+msgstr ""
+
+msgid "messages.removingmember"
+msgstr ""
+
+msgid "messages.receiptsent"
+msgstr ""
+
+msgid "messages.errorsendingreceipt"
+msgstr ""
+
+msgid "messages.deleteidentityconfirm"
+msgstr ""
+
+msgid "messages.nodeletelastidentity"
+msgstr ""
+
+msgid "messages.forbiddencharacter"
+msgstr ""
+
+msgid "messages.selectimportfile"
+msgstr "ಅಪ್ಲೋಡ್ ಮಾಡಲು ಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿ."
+
+msgid "messages.addresswriterror"
+msgstr ""
+
+msgid "messages.contactaddedtogroup"
+msgstr ""
+
+msgid "messages.contactremovedfromgroup"
+msgstr ""
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr ""
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr ""
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+
+msgid "messages.smtpconnerror"
+msgstr ""
+
+msgid "messages.smtpautherror"
+msgstr ""
+
+msgid "messages.smtpfromerror"
+msgstr ""
+
+msgid "messages.smtptoerror"
+msgstr ""
+
+msgid "messages.smtprecipientserror"
+msgstr ""
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr ""
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+
+msgid "messages.maxgroupmembersreached"
+msgstr ""
+
+msgid "messages.internalerror"
+msgstr ""
+
+msgid "messages.contactdelerror"
+msgstr ""
+
+msgid "messages.contactdeleted"
+msgstr ""
+
+msgid "messages.contactrestoreerror"
+msgstr ""
+
+msgid "messages.contactrestored"
+msgstr ""
+
+msgid "messages.groupdeleted"
+msgstr ""
+
+msgid "messages.grouprenamed"
+msgstr ""
+
+msgid "messages.groupcreated"
+msgstr ""
+
+msgid "messages.savedsearchdeleted"
+msgstr ""
+
+msgid "messages.savedsearchdeleteerror"
+msgstr ""
+
+msgid "messages.savedsearchcreated"
+msgstr ""
+
+msgid "messages.savedsearchcreateerror"
+msgstr ""
+
+msgid "messages.messagedeleted"
+msgstr ""
+
+msgid "messages.messagemoved"
+msgstr ""
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr ""
+
+msgid "messages.messagemarked"
+msgstr ""
+
+msgid "messages.autocompletechars"
+msgstr "ಸ್ವಯಂಪೂರ್ಣಗೊಳಿಸುವಿಕೆ ಕನಿಷ್ಠ $min ಅಕ್ಷರಗಳನ್ನು ನಮೂದಿಸಿ."
+
+msgid "messages.autocompletemore"
+msgstr ""
+
+msgid "messages.namecannotbeempty"
+msgstr "ಹೆಸರು ಖಾಲಿ ಇರುವಂತಿಲ್ಲ."
+
+msgid "messages.nametoolong"
+msgstr "ಹೆಸರು ತುಂಬಾ ಉದ್ದವಾಗಿದೆ."
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr ""
+
+msgid "messages.foldercreated"
+msgstr ""
+
+msgid "messages.invalidimageformat"
+msgstr ""
+
+msgid "messages.mispellingsfound"
+msgstr "ಸಂದೇಶದಲ್ಲಿ ಕಾಗುಣಿತ ದೋಷಗಳು ಪತ್ತೆಯಾಗಿವೆ."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+
+msgid "messages.messagetoobig"
+msgstr ""
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

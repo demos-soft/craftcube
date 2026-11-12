@@ -1,0 +1,2844 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ka_GE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "მოგესალმებათ $product"
+
+msgid "username"
+msgstr "მომხმარებელი"
+
+msgid "password"
+msgstr "პაროლი"
+
+msgid "server"
+msgstr "სერვერი"
+
+msgid "login"
+msgstr "შესვლა"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr "მენიუ"
+
+msgid "logout"
+msgstr "გამოსვლა"
+
+msgid "mail"
+msgstr "ელფოსტა"
+
+msgid "settings"
+msgstr "პარამეტრები"
+
+msgid "addressbook"
+msgstr "მისამართები"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "მიღებული"
+
+msgid "drafts"
+msgstr "დროებითი"
+
+msgid "sent"
+msgstr "გაგზავნილი"
+
+msgid "trash"
+msgstr "წაშლილი"
+
+msgid "junk"
+msgstr "სპამი"
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr "სათაური"
+
+msgid "from"
+msgstr "გამგზავნი"
+
+msgid "sender"
+msgstr "გამგზავნელი"
+
+msgid "to"
+msgstr "ვის"
+
+msgid "cc"
+msgstr "ასლი"
+
+msgid "bcc"
+msgstr "ფარული"
+
+msgid "replyto"
+msgstr "პასუხი"
+
+msgid "followupto"
+msgstr "მიმდევარი"
+
+msgid "date"
+msgstr "თარიღი"
+
+msgid "size"
+msgstr "ზომა"
+
+msgid "priority"
+msgstr "პრიორიტეტი"
+
+msgid "organization"
+msgstr "ორგანიზაცია"
+
+msgid "readstatus"
+msgstr "წაკითხულის სტატუსი"
+
+msgid "listoptions"
+msgstr "სიის ოფციები..."
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "საქაღალდეები"
+
+msgid "messagesfromto"
+msgstr "შეტყობინება $from-სგან $to-ს სულ $count' ცალი"
+
+msgid "threadsfromto"
+msgstr ""
+
+msgid "messagenrof"
+msgstr "შეტყობინება $nr დან $count"
+
+msgid "fromtoshort"
+msgstr ""
+
+msgid "copy"
+msgstr "ასლი"
+
+msgid "move"
+msgstr "გადატანა"
+
+msgid "moveto"
+msgstr "გადატანა..."
+
+msgid "copyto"
+msgstr "კოპირება სად..."
+
+msgid "download"
+msgstr "გადმოწერა"
+
+msgid "open"
+msgstr "გახსნა"
+
+msgid "showattachment"
+msgstr "ჩვენება"
+
+msgid "showanyway"
+msgstr ""
+
+msgid "filename"
+msgstr "ფაილის სახელი"
+
+msgid "filesize"
+msgstr "ფაილის ზომა"
+
+msgid "addtoaddressbook"
+msgstr "მისამართებში დამატება"
+
+msgid "sun"
+msgstr "კვი"
+
+msgid "mon"
+msgstr "ორშ"
+
+msgid "tue"
+msgstr "სამ"
+
+msgid "wed"
+msgstr "ოთხ"
+
+msgid "thu"
+msgstr "ხუთ"
+
+msgid "fri"
+msgstr "პარ"
+
+msgid "sat"
+msgstr "შაბ"
+
+msgid "sunday"
+msgstr "კვირა"
+
+msgid "monday"
+msgstr "ორშაბათი"
+
+msgid "tuesday"
+msgstr "სამშაბათი"
+
+msgid "wednesday"
+msgstr "ოთხშაბათი"
+
+msgid "thursday"
+msgstr "ხუთშაბათი"
+
+msgid "friday"
+msgstr "პარასკევი"
+
+msgid "saturday"
+msgstr "შაბათი"
+
+msgid "jan"
+msgstr "იან"
+
+msgid "feb"
+msgstr "თებ"
+
+msgid "mar"
+msgstr "მარ"
+
+msgid "apr"
+msgstr "აპრ"
+
+msgid "may"
+msgstr "მაისი"
+
+msgid "jun"
+msgstr "ივნ"
+
+msgid "jul"
+msgstr "ივლ"
+
+msgid "aug"
+msgstr "აგვ"
+
+msgid "sep"
+msgstr "სექ"
+
+msgid "oct"
+msgstr "ოქტ"
+
+msgid "nov"
+msgstr "ნოე"
+
+msgid "dec"
+msgstr "დეკ"
+
+msgid "longjan"
+msgstr "იანვარი"
+
+msgid "longfeb"
+msgstr "თებერვალი"
+
+msgid "longmar"
+msgstr "მარტი"
+
+msgid "longapr"
+msgstr "აპრილი"
+
+msgid "longmay"
+msgstr "მაისი"
+
+msgid "longjun"
+msgstr "ივნისი"
+
+msgid "longjul"
+msgstr "ივლისი"
+
+msgid "longaug"
+msgstr "აგვისტო"
+
+msgid "longsep"
+msgstr "სექტემბერი"
+
+msgid "longoct"
+msgstr "ოქტომბერი"
+
+msgid "longnov"
+msgstr "ნოემბერი"
+
+msgid "longdec"
+msgstr "დეკემბერი"
+
+msgid "today"
+msgstr "დღეს"
+
+msgid "refresh"
+msgstr "განახლება"
+
+msgid "checkmail"
+msgstr "შემოწმება ახალ შეტყობინებაზე"
+
+msgid "compose"
+msgstr "შეტყობინების დაწერა"
+
+msgid "writenewmessage"
+msgstr "ახალი შეტყობინება"
+
+msgid "reply"
+msgstr "პასუხის გაცემა"
+
+msgid "replytomessage"
+msgstr "პასუხი"
+
+msgid "replytoallmessage"
+msgstr "პასუხი ყველას"
+
+msgid "replyall"
+msgstr "პასუხის გაცემა ყველას"
+
+msgid "replylist"
+msgstr "პასუხის გაცემა სიით"
+
+msgid "forward"
+msgstr "გადაგზავნა"
+
+msgid "forwardinline"
+msgstr "გადაგზავნა ხაზშივე"
+
+msgid "forwardattachment"
+msgstr ""
+
+msgid "forwardmessage"
+msgstr "გადაგზავნა"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr "თავიდან გაგზავნა"
+
+msgid "deletemessage"
+msgstr "წაშლა"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "შეტყობინების წაშლილებში გადატანა"
+
+msgid "printmessage"
+msgstr "შეტყობინების ამობეჭვდა"
+
+msgid "previousmessage"
+msgstr "წინა შეტყობინების ნახვა"
+
+msgid "firstmessage"
+msgstr "პირველი შეტყობინების ნახვა"
+
+msgid "nextmessage"
+msgstr "შემდეგი შეტყობინების ნახვა"
+
+msgid "lastmessage"
+msgstr "ბოლო შეტყობინების ნახვა"
+
+msgid "backtolist"
+msgstr "უკან ჩამონათვალში"
+
+msgid "viewsource"
+msgstr "შიგთავსი"
+
+msgid "mark"
+msgstr "მონიშვნა"
+
+msgid "markmessages"
+msgstr "მონიშნეთ შეტყობინებები"
+
+msgid "markread"
+msgstr "როგორც წაკითხული"
+
+msgid "markunread"
+msgstr "როგორც წაუკითხავი"
+
+msgid "markflagged"
+msgstr "როგორც მონიშნული"
+
+msgid "markunflagged"
+msgstr "როგორც მოუნიშნავი"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "მეტი მოქმედება..."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr "ყველა საქაღალდე"
+
+msgid "more"
+msgstr "მეტი"
+
+msgid "back"
+msgstr "უკან"
+
+msgid "options"
+msgstr "მორგება"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr "ქმედებები"
+
+msgid "first"
+msgstr "პირველი"
+
+msgid "last"
+msgstr "ბოლო"
+
+msgid "previous"
+msgstr "წინა"
+
+msgid "next"
+msgstr "შემდეგი"
+
+msgid "select"
+msgstr "მონიშვნა"
+
+msgid "selection"
+msgstr "მონიშნული"
+
+msgid "all"
+msgstr "ყველა"
+
+msgid "none"
+msgstr "არცერთი"
+
+msgid "currpage"
+msgstr "მიმდინარე გვერდი"
+
+msgid "isread"
+msgstr "წაკითხვა"
+
+msgid "unread"
+msgstr "წაუკითხავი"
+
+msgid "flagged"
+msgstr "მონიშნული"
+
+msgid "unflagged"
+msgstr "მოუნიშნავი"
+
+msgid "unanswered"
+msgstr "უპასუხო"
+
+msgid "withattachment"
+msgstr "მიმაგრებული ფაილით"
+
+msgid "deleted"
+msgstr "წაშლილი"
+
+msgid "undeleted"
+msgstr "წაუშლელი"
+
+msgid "replied"
+msgstr "პასუხგაცემული"
+
+msgid "forwarded"
+msgstr "გადაგზავნილი"
+
+msgid "invert"
+msgstr "შებრუნებული"
+
+msgid "filter"
+msgstr "ფილტრი"
+
+msgid "list"
+msgstr "სია"
+
+msgid "threads"
+msgstr "ნაკადები"
+
+msgid "expand-all"
+msgstr "ყველას გაშლა"
+
+msgid "expand-unread"
+msgstr "წაუკითხავის გაშლა"
+
+msgid "collapse-all"
+msgstr "ყველას დაკეცვა"
+
+msgid "threaded"
+msgstr "ნაკადებით"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr ""
+
+msgid "do_expand"
+msgstr "ყველა ნაკადი"
+
+msgid "expand_only_unread"
+msgstr "მარტო წაუკითხავი შეტყობინებები"
+
+msgid "fromto"
+msgstr "ვისგან/ვის"
+
+msgid "flag"
+msgstr "დროშა"
+
+msgid "attachment"
+msgstr "მიმაგრებული ფაილი"
+
+msgid "nonesort"
+msgstr "არცერთი"
+
+msgid "sentdate"
+msgstr "გაგზავნის თარიღი"
+
+msgid "arrival"
+msgstr "მოსვლის თარიღი"
+
+msgid "asc"
+msgstr "ზრდადობით"
+
+msgid "desc"
+msgstr "კლებადობით"
+
+msgid "listcolumns"
+msgstr "სვეტების სია"
+
+msgid "listsorting"
+msgstr "სვეტების დალაგება"
+
+msgid "listorder"
+msgstr "დალაგება"
+
+msgid "listmode"
+msgstr ""
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr "განლაგება"
+
+msgid "layoutwidescreen"
+msgstr "ფართო ეკრანი"
+
+msgid "layoutdesktop"
+msgstr "სამუშაო მაგიდა"
+
+msgid "layoutlist"
+msgstr "სია"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "საქაღალდეზე მოქმედება.."
+
+msgid "compact"
+msgstr "შეკუმშვა"
+
+msgid "empty"
+msgstr "გაცარიელება"
+
+msgid "importmessages"
+msgstr "შეტყობინებების შემოტანა"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "შეზღუდვა"
+
+msgid "unknown"
+msgstr "უცნობი"
+
+msgid "unlimited"
+msgstr "შეუზღუდავი"
+
+msgid "quotatype"
+msgstr "კვოტის ტიპი"
+
+msgid "quotatotal"
+msgstr "ლიმიტი"
+
+msgid "quotaused"
+msgstr "გამოყენებული"
+
+msgid "quotastorage"
+msgstr "ადგილი დისკზე"
+
+msgid "quotamessage"
+msgstr "შეტყობინებების რაოდენობა"
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "სწრაფი ძიება"
+
+msgid "searchplaceholder"
+msgstr "ძებნა..."
+
+msgid "resetsearch"
+msgstr "ძიების გასუფთავება"
+
+msgid "searchmod"
+msgstr "ძებნის ვარიანტები"
+
+msgid "msgtext"
+msgstr "ყველა შეტყობინება"
+
+msgid "body"
+msgstr "შეტყობინების ტექსტი"
+
+msgid "type"
+msgstr "ტიპი"
+
+msgid "namex"
+msgstr "სახელი"
+
+msgid "searchscope"
+msgstr "შუალედი"
+
+msgid "currentfolder"
+msgstr "მიმდინარე საქაღალდე"
+
+msgid "subfolders"
+msgstr "ეს და ქვესაქაღალდეები"
+
+msgid "allfolders"
+msgstr "ყველა საქაღალდე"
+
+msgid "searchinterval-1W"
+msgstr "ერთ კვირაზე ძველი"
+
+msgid "searchinterval-1M"
+msgstr "ერთ წელზე ძველი"
+
+msgid "searchinterval-1Y"
+msgstr "ერთ თვეზე ძველი"
+
+msgid "searchinterval1W"
+msgstr "ერთ კვირაზე ახალი"
+
+msgid "searchinterval1M"
+msgstr "ერთ თვეზე ახალი"
+
+msgid "searchinterval1Y"
+msgstr "ერთ წელზე ახალი"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "გახსნა ახალ ფანჯარაში"
+
+msgid "emlsave"
+msgstr "გადმოწერა (.eml)"
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr "რედაქტირება როგორც ახლის"
+
+msgid "send"
+msgstr "გაგზავნა"
+
+msgid "sendmessage"
+msgstr "შეტყობინების გაგზავნა"
+
+msgid "savemessage"
+msgstr "დროებით შენახვა"
+
+msgid "addattachment"
+msgstr "ფაილის ატვირთვა"
+
+msgid "charset"
+msgstr "კოდირება"
+
+msgid "editortype"
+msgstr "რედაქტორი"
+
+msgid "returnreceipt"
+msgstr "პასუხის მოთხოვნა"
+
+msgid "dsn"
+msgstr ""
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "$date-ში, $sender დაწერა:"
+
+msgid "originalmessage"
+msgstr "ორიგინალი შეტყობინება"
+
+msgid "selectimage"
+msgstr "სურათის არჩევა"
+
+msgid "addimage"
+msgstr "სურათის დამატება"
+
+msgid "selectmedia"
+msgstr "ფილმის არჩევა"
+
+msgid "addmedia"
+msgstr "ფილმის დამატება"
+
+msgid "encrypt"
+msgstr "დაშიფვრა"
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr "ბიტი"
+
+msgid "keyexpired"
+msgstr "ვადაგასული"
+
+msgid "keyrevoked"
+msgstr "გაუქმებულია"
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "ჩასმა"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "მიმღები"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "იდენტიფიკატორების ჩასწორება"
+
+msgid "spellcheck"
+msgstr "გრამატიკა"
+
+msgid "checkspelling"
+msgstr "ორთოგრაფიული შემოწმება"
+
+msgid "resumeediting"
+msgstr "რედაქტირების გაგრძელება"
+
+msgid "revertto"
+msgstr "გაუქმება"
+
+msgid "restore"
+msgstr "აღდგენა"
+
+msgid "restoremessage"
+msgstr "აღვადგინო შეტყობინება?"
+
+msgid "ignore"
+msgstr "იგნორირება"
+
+msgid "responses"
+msgstr "პასუხები"
+
+msgid "insertresponse"
+msgstr "პასუხის ჩასმა"
+
+msgid "manageresponses"
+msgstr "პასუხების მართვა"
+
+msgid "newresponse"
+msgstr "ახალი პასუხის შექმნა"
+
+msgid "addresponse"
+msgstr "პასუხის დამატება"
+
+msgid "editresponse"
+msgstr "პასუხის რედაქტირება"
+
+msgid "editresponses"
+msgstr "პასუხების რედაქტირება"
+
+msgid "responsename"
+msgstr "სახელი"
+
+msgid "responsetext"
+msgstr "პასუხის ტექსტი"
+
+msgid "attach"
+msgstr "მიბმა"
+
+msgid "attachments"
+msgstr "გზავნილები"
+
+msgid "upload"
+msgstr "ატვირთვა"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "დახურვა"
+
+msgid "messageoptions"
+msgstr "შეტყობინების ოფციები..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "დაბალი"
+
+msgid "lowest"
+msgstr "უდაბლესი"
+
+msgid "normal"
+msgstr "საშუალო"
+
+msgid "high"
+msgstr "მაღალი"
+
+msgid "highest"
+msgstr "უმაღლესი"
+
+msgid "nosubject"
+msgstr "(უსათაურო)"
+
+msgid "showimages"
+msgstr "გამოსახულების ჩვენება"
+
+msgid "allow"
+msgstr "დაშვება"
+
+msgid "alwaysshow"
+msgstr "ყოველთვის გამოაჩინე სურათები $sender –გან"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr ""
+
+msgid "andnmore"
+msgstr "კიდევ $nr..."
+
+msgid "details"
+msgstr "დეტალები"
+
+msgid "summary"
+msgstr "შეჯამება"
+
+msgid "headers"
+msgstr "თავსართები"
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr ""
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "ტექსტური"
+
+msgid "savesentmessagein"
+msgstr "შეინახე შეტყობინება"
+
+msgid "dontsave"
+msgstr "არ შეინახო"
+
+msgid "maxuploadsize"
+msgstr "მაქსიმალური დაშვებული ფაილის ზომა $size"
+
+msgid "addcc"
+msgstr "დაამატე კოპიო"
+
+msgid "addbcc"
+msgstr "დაამატე ფარული კოპიო"
+
+msgid "addreplyto"
+msgstr "დაამატე გამომგზავნი"
+
+msgid "addfollowupto"
+msgstr "მიყოლის დამატება"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"გამომგზავნს სურს შეიტყოს წერილის მიღება. გსურთ შეატყობინოთ გამომგზავნს?"
+
+msgid "receiptread"
+msgstr "გზავნილის დაბრუნება"
+
+msgid "yourmessage"
+msgstr "ეს არის მიღების დასტური თქვენს შეტყობინებაზე"
+
+msgid "receiptnote"
+msgstr ""
+"განმარტება: ეს ნიშნავს რომ ადრესატმა მიიღო შეტყობინება. მაგრამ, არ ნიშნავს "
+"რომ წაიკითხა ან გაიგო ტექსტი"
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr "შებრუნება"
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "სრული სახელი"
+
+msgid "firstname"
+msgstr "სახელი"
+
+msgid "surname"
+msgstr "გვარი"
+
+msgid "middlename"
+msgstr "შუა სახელი"
+
+msgid "nameprefix"
+msgstr "პრეფიქსი"
+
+msgid "namesuffix"
+msgstr "სუფიქსი"
+
+msgid "nickname"
+msgstr "მეტსახელი"
+
+msgid "jobtitle"
+msgstr "თანამდებობა"
+
+msgid "department"
+msgstr "დეპარტამენტი"
+
+msgid "gender"
+msgstr "სქესი"
+
+msgid "maidenname"
+msgstr "ქალიშვილობის სახელი"
+
+msgid "email"
+msgstr "ელ–ფოსტა"
+
+msgid "phone"
+msgstr "ტელეფონი"
+
+msgid "address"
+msgstr "მისამართი"
+
+msgid "street"
+msgstr "ქუჩა"
+
+msgid "locality"
+msgstr "ქალაქი"
+
+msgid "zipcode"
+msgstr "ZIP კოდი"
+
+msgid "region"
+msgstr "შტატი/პროვინცია"
+
+msgid "country"
+msgstr "ქვეყანა"
+
+msgid "birthday"
+msgstr "დაბადების დღე"
+
+msgid "anniversary"
+msgstr "იუბილე"
+
+msgid "website"
+msgstr "ვებგვერდი"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "შენიშვნები"
+
+msgid "male"
+msgstr "მამრობითი"
+
+msgid "female"
+msgstr "მდედრობით"
+
+msgid "nonbinary"
+msgstr "არა-ბინარული"
+
+msgid "othergender"
+msgstr "სხვა"
+
+msgid "manager"
+msgstr "მენეჯერი"
+
+msgid "assistant"
+msgstr "დამხმარე"
+
+msgid "spouse"
+msgstr "მეუღლე"
+
+msgid "allfields"
+msgstr "ყველა ველი"
+
+msgid "search"
+msgstr "ძებნა"
+
+msgid "searchresult"
+msgstr "ძებნის რეზულტატი"
+
+msgid "advsearch"
+msgstr "გაფართოებული ძებნა"
+
+msgid "advanced"
+msgstr "დამატებითი"
+
+msgid "other"
+msgstr "სხვა"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "სახლი"
+
+msgid "typework"
+msgstr "სამსახური"
+
+msgid "typeother"
+msgstr "სხვა"
+
+msgid "typemobile"
+msgstr "მობილური"
+
+msgid "typemain"
+msgstr "ძირითადი"
+
+msgid "typehomefax"
+msgstr "სახლის ფაქსი"
+
+msgid "typeworkfax"
+msgstr "სამსახურის ფაქსი"
+
+msgid "typecar"
+msgstr "მანქანა"
+
+msgid "typepager"
+msgstr "პეიჯერი"
+
+msgid "typevideo"
+msgstr "ვიდეო"
+
+msgid "typeassistant"
+msgstr "დამხმარე"
+
+msgid "typehomepage"
+msgstr "საწყისი გვერდი"
+
+msgid "typeblog"
+msgstr "ბლოგი"
+
+msgid "typeprofile"
+msgstr "პროფილი"
+
+msgid "addfield"
+msgstr "ველის დამატება..."
+
+msgid "addcontact"
+msgstr "კონტაქტის დამატება"
+
+msgid "editcontact"
+msgstr "კონტაქტის რედაქტირება"
+
+msgid "contacts"
+msgstr "კონტაქტები"
+
+msgid "contactproperties"
+msgstr "კონტაქტის თვისებები"
+
+msgid "contactnameandorg"
+msgstr "სახელი და ორგანიზაცია"
+
+msgid "personalinfo"
+msgstr "პირადი ინფორმაცია"
+
+msgid "personal"
+msgstr "პირადი"
+
+msgid "contactphoto"
+msgstr "კონტაქტის ფოტო"
+
+msgid "edit"
+msgstr "რედაქტირება"
+
+msgid "cancel"
+msgstr "გაუქმება"
+
+msgid "save"
+msgstr "შენახვა"
+
+msgid "delete"
+msgstr "წაშლა"
+
+msgid "discard"
+msgstr "მოცილება"
+
+msgid "continue"
+msgstr "გაგრძელება"
+
+msgid "ok"
+msgstr "დიახ"
+
+msgid "rename"
+msgstr "გადარქმევა"
+
+msgid "addphoto"
+msgstr "დამატება"
+
+msgid "replacephoto"
+msgstr "გამოცვლა"
+
+msgid "uploadphoto"
+msgstr "სურათის ატვირთვა"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr "დათვალიერება"
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr "მონიშნელი კონტაქტის წაშლა"
+
+msgid "composeto"
+msgstr "ფოსტის გაგზავნა შერჩეულ ადრესატებთან"
+
+msgid "contactsfromto"
+msgstr "კონტაქტები $from დან $to ში $count"
+
+msgid "print"
+msgstr "დაბეჭვდა"
+
+msgid "export"
+msgstr "ექსპორტი"
+
+msgid "exportall"
+msgstr "ყველას გატანა"
+
+msgid "exportsel"
+msgstr "მონიშნულების გატანა"
+
+msgid "exportvcards"
+msgstr "კონტაქტების ექსპორტი vCard ფორმატში"
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr "ჯგუფის სახელის შეცვლა"
+
+msgid "groupdelete"
+msgstr "ჯგუფის წაშლა"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr ""
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "წინას ჩვენება"
+
+msgid "firstpage"
+msgstr "პირველის ჩვენება"
+
+msgid "nextpage"
+msgstr "შემდეგის ჩვენება"
+
+msgid "lastpage"
+msgstr "ბოლოს ჩვენება"
+
+msgid "group"
+msgstr "ჯგუფი"
+
+msgid "groups"
+msgstr "ჯგუფები"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr "პერსონალური მისამართები"
+
+msgid "searchsave"
+msgstr "ძებნის შენახვა"
+
+msgid "searchdelete"
+msgstr "ძებნის წაშლა"
+
+msgid "import"
+msgstr "შემოტანა"
+
+msgid "importcontacts"
+msgstr "კონტაქტების შემოტანა"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr ""
+
+msgid "importreplace"
+msgstr "ჩაანაცვლეთ არსებული მისამართები"
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "დასრულებულია"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "პარამეტრები"
+
+msgid "about"
+msgstr "შესახებ"
+
+msgid "preferences"
+msgstr "პარამეტრები"
+
+msgid "userpreferences"
+msgstr "მომხმარებლის პარამეტრები"
+
+msgid "editpreferences"
+msgstr "მომხმარებლის პარამეტრების რედაქტირება"
+
+msgid "identities"
+msgstr "პროფილები"
+
+msgid "manageidentities"
+msgstr "იდენტიფიკატორების მართვა"
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr "იდენტიფიკატორის დამატება"
+
+msgid "editidentity"
+msgstr "იდენტიფიკატორის ჩასწორება"
+
+msgid "identityencryption"
+msgstr "დაშიფვრა"
+
+msgid "preferhtml"
+msgstr "როგორც HTML"
+
+msgid "defaultcharset"
+msgstr "ნაგულისხმები სიმბოლოთა ნაკრები"
+
+msgid "htmlmessage"
+msgstr "HTML შეტყობინება"
+
+msgid "messagepart"
+msgstr "ნაწილი"
+
+msgid "digitalsig"
+msgstr "ციფრული ხელმოწერა"
+
+msgid "dateformat"
+msgstr "თარიღის ფორმატი"
+
+msgid "timeformat"
+msgstr "დროის ფორმატი"
+
+msgid "prettydate"
+msgstr "კარგი თარიღები"
+
+msgid "setdefault"
+msgstr "როგორც ზოგაგად"
+
+msgid "autodetect"
+msgstr "ავტომატური"
+
+msgid "language"
+msgstr "ენა"
+
+msgid "timezone"
+msgstr "დროითი ზონა"
+
+msgid "pagesize"
+msgstr "სტრიქონი გვერდზე"
+
+msgid "signature"
+msgstr "ხელმოწერა"
+
+msgid "dstactive"
+msgstr "დროის გადაყვანა"
+
+msgid "showinextwin"
+msgstr ""
+
+msgid "composeextwin"
+msgstr ""
+
+msgid "htmleditor"
+msgstr "შეტყობინების შექმნა HTML –ში"
+
+msgid "htmlonreply"
+msgstr ""
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr "HTML ხელმოწერა"
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr "ჩვენება"
+
+msgid "skin"
+msgstr "ინტერფეისი"
+
+msgid "logoutclear"
+msgstr "წაშლილების გასუფთავება გამოსვლისას"
+
+msgid "logoutcompact"
+msgstr "მიღებულების შეკუმშვა გამოსვლისას"
+
+msgid "uisettings"
+msgstr "მომხმარებლის ინტერფეისი"
+
+msgid "serversettings"
+msgstr "სერვერის პარამეტრები"
+
+msgid "mailboxview"
+msgstr "საფოსტო ყუთის ჩვენება"
+
+msgid "mdnrequests"
+msgstr "მგზავნელის შეტყობინებები"
+
+msgid "askuser"
+msgstr "ჰკითხე მომხმარებელს"
+
+msgid "autosend"
+msgstr "გაგზავნე ავტომატურად"
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "მონიშნე გზავნილი წაკითხულად წაშლის დროს"
+
+msgid "flagfordeletion"
+msgstr "აღნიშნეთ გზავნილები როგორც წასაშლელი წაშლის ნაცვლად"
+
+msgid "skipdeleted"
+msgstr "არ გამოაჩინო წაშლილი გზავნილები"
+
+msgid "deletealways"
+msgstr ""
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr "გამოაჩინე მოშორებული სურათები"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "ნაცნობი მგზავნელებისგან"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "ყოველთვის"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "ატვირთული სურათები გამოაჩინე გზავნილის ქვემოთ"
+
+msgid "autosavedraft"
+msgstr "ავტომატური შენახვა"
+
+msgid "everynminutes"
+msgstr "ყოველ $n წუთში"
+
+msgid "refreshinterval"
+msgstr ""
+
+msgid "never"
+msgstr "არასდროს"
+
+msgid "immediately"
+msgstr "დაუყონებლივ"
+
+msgid "messagesdisplaying"
+msgstr "გამოაჩინე შეტყობინებები"
+
+msgid "messagescomposition"
+msgstr "შეტყობინებების შექმნა"
+
+msgid "mimeparamfolding"
+msgstr "ბმულის სახელები"
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (other)"
+
+msgid "force7bit"
+msgstr "MIME კოდირების გამოყენება 8 ბიტიანი სიმბოლოებისთვის"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "დამატებითი პარამეტრები"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "ფოკუსირება ახალ შეტყობინებებზე"
+
+msgid "checkallfolders"
+msgstr "შეამოწმე ყველა საქაღალდე ახალ შეტყობინებაზე"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr "ძირითადი პარამეტრები"
+
+msgid "browseroptions"
+msgstr "ბრაუზერის პარამეტრები"
+
+msgid "section"
+msgstr "განყოფილება"
+
+msgid "maintenance"
+msgstr "მომსახურება"
+
+msgid "newmessage"
+msgstr "ახალი შეტყობინება"
+
+msgid "signatureoptions"
+msgstr "ხელმოწერის ოფციები"
+
+msgid "whenreplying"
+msgstr "პასუხის შემთხვევაში"
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr "დაიწყოს ახალი შეტყობინება ორიგინალის ზემოთ"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "დაიწყოს ახალი შეტყობინება ორიგინალის ქვემოთ"
+
+msgid "replyremovesignature"
+msgstr "წაიშალოს ხელმოწერა პასუხის შემთხვევაში"
+
+msgid "autoaddsignature"
+msgstr "ავტომატურად დაემატოს ხელმოწერა"
+
+msgid "newmessageonly"
+msgstr "მხოლოდ ახალი შეტყობინება"
+
+msgid "replyandforwardonly"
+msgstr "მხოლოდ გადაგზავნის და პასუხის შემთხვევაში"
+
+msgid "insertsignature"
+msgstr "ხელმოცერის ჩასმა"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "$n წამის შემდეგ"
+
+msgid "reqmdn"
+msgstr ""
+
+msgid "reqdsn"
+msgstr ""
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr ""
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr "მართლწერის მორგება"
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr ""
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr "ლექსიკონში დამატება"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr "შეტყობინებების გადაგზავნა"
+
+msgid "inline"
+msgstr "ხაზშივე"
+
+msgid "asattachment"
+msgstr "მიმაგრებული ფაილის სახით"
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "ყველა შეტყობინება"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "საქაღალდე"
+
+msgid "folders"
+msgstr "საქაღალდეები"
+
+msgid "foldername"
+msgstr "საქაღალდის დასახელება"
+
+msgid "subscribed"
+msgstr "გამოწერილია"
+
+msgid "messagecount"
+msgstr "შეტყობინებები"
+
+msgid "create"
+msgstr "შექმნა"
+
+msgid "createfolder"
+msgstr "საქაღალდის შექმნა"
+
+msgid "managefolders"
+msgstr "საქაღალდეების მართვა"
+
+msgid "specialfolders"
+msgstr "სპეციალური საქაღალდე"
+
+msgid "properties"
+msgstr "თვისებები"
+
+msgid "folderproperties"
+msgstr "საქაღალდის თვისებები"
+
+msgid "parentfolder"
+msgstr "მშობელი საქაღალდე"
+
+msgid "location"
+msgstr "მდებარეობა"
+
+msgid "info"
+msgstr "ინფორმაცია"
+
+msgid "getfoldersize"
+msgstr ""
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr "დასტის ტიპი"
+
+msgid "personalfolder"
+msgstr "კერძო დასტა"
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr "საჯარო დასტა"
+
+msgid "findfolders"
+msgstr "საქაღალდეების პოვნა"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr "პირადი"
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr "გაზიარებული"
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr "სეტყობინება"
+
+msgid "dualusefolder"
+msgstr "ქაღალდე"
+
+msgid "generate"
+msgstr "გენერაცია"
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "დაშიფვრა"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr "ჩართვა"
+
+msgid "sortby"
+msgstr "დალაგება"
+
+msgid "sortasc"
+msgstr "დალაგება ზრდადობით"
+
+msgid "sortdesc"
+msgstr "დალაგება კლებადობით"
+
+msgid "undo"
+msgstr "დაბრუნება"
+
+msgid "installedplugins"
+msgstr "დაყენებული მოდულები"
+
+msgid "plugin"
+msgstr "მოდული"
+
+msgid "version"
+msgstr "ვერსია"
+
+msgid "source"
+msgstr "წყარო"
+
+msgid "destination"
+msgstr "სამიზნე"
+
+msgid "license"
+msgstr "ლიცენზია"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "მხარდაჭერის მიღება"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr "წწწწ"
+
+msgid "dateformaty"
+msgstr "წწ"
+
+msgid "dateformatm"
+msgstr "თთ"
+
+msgid "dateformatd"
+msgstr "დდ"
+
+msgid "dateformatj"
+msgstr "დ"
+
+msgid "dateformatn"
+msgstr "თ"
+
+msgid "B"
+msgstr "ბტ"
+
+msgid "KB"
+msgstr "კბტ"
+
+msgid "MB"
+msgstr "მბტ"
+
+msgid "GB"
+msgstr "გბტ"
+
+msgid "unicode"
+msgstr "უნიკოდი"
+
+msgid "english"
+msgstr "ინსგლისური"
+
+msgid "westerneuropean"
+msgstr "დასავლურევროპული"
+
+msgid "easterneuropean"
+msgstr "აღმოსავლეთევროპული"
+
+msgid "southeasterneuropean"
+msgstr "სამხრეთაღმოსავლეთევროპული"
+
+msgid "baltic"
+msgstr "ბალტიური"
+
+msgid "cyrillic"
+msgstr "კირილიცა"
+
+msgid "arabic"
+msgstr "არაბული"
+
+msgid "greek"
+msgstr "ბერძნული"
+
+msgid "hebrew"
+msgstr "ებრაული"
+
+msgid "turkish"
+msgstr "თურქული"
+
+msgid "nordic"
+msgstr "სკანდინავიელი"
+
+msgid "thai"
+msgstr "ტაი"
+
+msgid "celtic"
+msgstr "კელტური"
+
+msgid "vietnamese"
+msgstr "ვიეტნამური"
+
+msgid "japanese"
+msgstr "იაპონური"
+
+msgid "korean"
+msgstr "კორეული"
+
+msgid "chinese"
+msgstr "ჩინური"
+
+msgid "arialabeltopnav"
+msgstr "ფანჯრის მართვა"
+
+msgid "arialabeltasknav"
+msgstr "აპლიკაციის ამოცანები"
+
+msgid "arialabeltoolbar"
+msgstr "აპლიკაციის პანელი"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "აქტიური ამოცანა"
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr "ძებნის ველი"
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr "შეტყობინების მინიატურა"
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr "შეტყობინების ნავიგაცია"
+
+msgid "arialabelmessagebody"
+msgstr "შეტყობინების სხეული"
+
+msgid "arialabelmessageactions"
+msgstr "შეტყობინების ქმედებები"
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr "შეტყობინების თავსართები"
+
+msgid "arialabelforwardingoptions"
+msgstr "გადაგზავნის მორგება"
+
+msgid "arialabelreplyalloptions"
+msgstr "ყველასთვის პასუხის მორგება"
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr "შედგენის პარამეტრები"
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "მიმაგრებული ფაილის მინიატურა"
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr "მისამართების წიგნის/ჯგუფის პარამეტრები"
+
+msgid "arialabelpreferencesform"
+msgstr "მორგების ფანჯრის ფორმა"
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "დაფიქსირდა შეცდომა!"
+
+msgid "messages.loginfailed"
+msgstr "შესვლა შეუძლებელია"
+
+msgid "messages.cookiesdisabled"
+msgstr "თქვენი ბროუზერი კუკიებს არ პასუხობს"
+
+msgid "messages.sessionerror"
+msgstr "თქვენი სესია არის მცდარი ან ვადაგასული"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "IMAP სერვერთან დაკავშირება შეუძლებელია"
+
+msgid "messages.servererror"
+msgstr "შეცდომა სერვერზე!"
+
+msgid "messages.servererrormsg"
+msgstr "სერვერის შეცდომა: $msg"
+
+msgid "messages.accountlocked"
+msgstr "ძალიან ბევრი წარუმატებელი შესვლის მცდელობა. მოგვიანებით სცადეთ."
+
+msgid "messages.connerror"
+msgstr "კავშირის შეცდომა (სერვერთან კავშირი შეუძლებელია)!"
+
+msgid "messages.dberror"
+msgstr "მონაცემთა ბაზის შეცდომა!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr "მოთხოვნას ვადა გაუვიდა"
+
+msgid "messages.errorreadonly"
+msgstr ""
+"ოპერაციის შესრულება შეუძლებელია. საქაღალდე არის მხოლოდ წაწკითხვის რეჟიმში."
+
+msgid "messages.errornoperm"
+msgstr "მოქმედების შესრულება შეუძლებალია. წვდომა აკრძალულია."
+
+msgid "messages.erroroverquota"
+msgstr "მოქმედების შესრულება შეუძლებალია. დისკზე არ დარჩა თავისუფალი ადგილი."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"დისკზე არ დარჩა თავისუფალი ადგილი. გამოიყენეთ SHIFT+DEL შეტყობინების "
+"წასასშლელად."
+
+msgid "messages.invalidrequest"
+msgstr "არასწორი მოთხოვნა! მონაცემების შენახვა არ მოხერხდა."
+
+msgid "messages.invalidhost"
+msgstr "არასწორი სერვერის სახელი"
+
+msgid "messages.nomessagesfound"
+msgstr "არ არის ახალი შეტყობინება"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "საფოსტო ყუთი ცარიელია"
+
+msgid "messages.nomessages"
+msgstr "არ არის შეტყობინებები"
+
+msgid "messages.refreshing"
+msgstr "განახლება..."
+
+msgid "messages.loading"
+msgstr "იტვირთება..."
+
+msgid "messages.uploading"
+msgstr "ფაილი იტვირთება..."
+
+msgid "messages.attaching"
+msgstr "ფაილის მიმაგრება..."
+
+msgid "messages.uploadingmany"
+msgstr "ფაილების ატვირთვა..."
+
+msgid "messages.loadingdata"
+msgstr "მონაცემების ჩატვირთვა..."
+
+msgid "messages.checkingmail"
+msgstr "ახალი შეტყობინების ნახვა"
+
+msgid "messages.sendingmessage"
+msgstr "შეტყობინების გაგზავნა"
+
+msgid "messages.messagesent"
+msgstr "შეტყობინება გაიგზავნა წარმატებით"
+
+msgid "messages.savingmessage"
+msgstr "შეტყობინების შენახვა..."
+
+msgid "messages.messagesaved"
+msgstr "შეტყობინების დროებით შენახვა"
+
+msgid "messages.successfullysaved"
+msgstr "წარმატებით შეინახა"
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "კონტაქტი წარმატებით დაემატა მისამართებში"
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "კონტაქტი იგივე სახელით უკვე არსებობს."
+
+msgid "messages.blockedimages"
+msgstr "უსაფრთხოების მიზნით სურათების ჩვენება შეზღუდულია"
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "შეტყობინება დაშიფრულია და სამწუხაროდ ჩვენება შეუძლებელია"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "კონტაქტი ვერ მოიძებნა"
+
+msgid "messages.contactnotfound"
+msgstr "მოთხოვნილი კონტაქტი ვერ მოიძებნა"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "შეტყობინება ვერ გაიგზავნა"
+
+msgid "messages.senttooquickly"
+msgstr "გთხოვთ მოიცადოთ $sec წამი. სანამ იგზავნება შეტყობინება"
+
+msgid "messages.errorsavingsent"
+msgstr "გაგზავნილი შეტყობინების შენახვის დროს მოხდა შეცდომა."
+
+msgid "messages.errorsaving"
+msgstr "შეტყობინების შენახვის დროს მოხდა შეცდომა"
+
+msgid "messages.errormoving"
+msgstr "შეტყობინების გადატანა შეუძლებელია"
+
+msgid "messages.errorcopying"
+msgstr "შეტყობინების კოპირება შეუძლებელია."
+
+msgid "messages.errordeleting"
+msgstr "შეტყობინების წაშლა შეუძლებელია"
+
+msgid "messages.errormarking"
+msgstr "შეტყობინების მონიშვნა შეუძლებელია"
+
+msgid "messages.alerttitle"
+msgstr "ყურადღება"
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "ნამდვილად გსურთ მონიშნული კონტაქტების წაშლა?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "ნამდვილად გსურთ მონიშნული ჯგუფის წაშლა?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "ნამდვილად გსურთ მონიშნული შეტყობინებების წაშლა?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "ნამდვილად გსურთ ამ საქაღალდის წაშლა?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "ნამდვილად გსურთ ყველა შეტყობინების წაშლა აღნიშნულ საქაღალდეში?"
+
+msgid "messages.contactdeleting"
+msgstr "კონტაქტის წაშლა..."
+
+msgid "messages.groupdeleting"
+msgstr "ჯგუფის წაშლა..."
+
+msgid "messages.folderdeleting"
+msgstr "საქაღალდის წაშლა..."
+
+msgid "messages.foldermoving"
+msgstr "საქაღალდის გადატანა..."
+
+msgid "messages.foldersubscribing"
+msgstr "საქაღალდის გამოწერა..."
+
+msgid "messages.folderunsubscribing"
+msgstr "საქაღალდის გამოწერაის გაუქმება..."
+
+msgid "messages.formincomplete"
+msgstr "ყველა ველი არ არის შევსებული"
+
+msgid "messages.noemailwarning"
+msgstr "მიუთითეთ სწორი ელ–ფოსტის მისამართი"
+
+msgid "messages.nonamewarning"
+msgstr "მიუთითეთ სახელი"
+
+msgid "messages.nopagesizewarning"
+msgstr "მიუთითეთ ფურცლის ზომა"
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "მიუთითეთ მიმღები"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "გსურთ თუ არა შეტყობინების გაგზავნა უსათაუროდ?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "გსურთ თუ არა შეტყობინების გაგზავნა უტექსტოდ?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr "მიუთითეთ სახელი ან ელ–ფოსტის მისამართი"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"ჯერ არ ატვირთულა ყველა მიმაგრებული ფაილი. დაელოდეთ ან გააუქმეთ ატვირთვა."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr შეტყობინეა მოიძებნა"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "ნაპოვნია $nr კონტაქტი"
+
+msgid "messages.searchnomatch"
+msgstr "შეტყობინება ვერ მოიძებნა"
+
+msgid "messages.searching"
+msgstr "ძიება..."
+
+msgid "messages.checking"
+msgstr "შემოწმება..."
+
+msgid "messages.stillsearching"
+msgstr "ჯერ კიდევ ეძებს ..."
+
+msgid "messages.nospellerrors"
+msgstr "ორთოგრაფიული შეცდომა არ არის"
+
+msgid "messages.folderdeleted"
+msgstr "საქაღალდე წარმატებით წაიშალა"
+
+msgid "messages.foldersubscribed"
+msgstr "საქაღალდე წარმატებით გამოწერილია."
+
+msgid "messages.folderunsubscribed"
+msgstr "საქაღალდის გამოწერა წარმატებით გაუქმებულია."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "წარმატებით წაიშალა"
+
+msgid "messages.converting"
+msgstr "შეტყობინების ფორმატირების გაუქმება..."
+
+msgid "messages.messageopenerror"
+msgstr "შეტყობინება ვერ ჩაიტვირთა სერვერიდან"
+
+msgid "messages.filelinkerror"
+msgstr "ფაილის მიმაგრება ვერ მოხდა."
+
+msgid "messages.fileuploaderror"
+msgstr "ფაილი ვერ აიტვირთა"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "ატვირთული ფაილის ზომა მეტია დასაშვებ ფაილის მაქსიმალურ ზომაზე ($size)"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "წარმატებულად დაკოპირდა $nr კონტაქტი."
+
+msgid "messages.movesuccess"
+msgstr "წარმატებულად გადატანილია $nr კონტაქტი."
+
+msgid "messages.copyerror"
+msgstr "ვერცერთი კონტაქტის კოპირება ვერ მოხერხდა."
+
+msgid "messages.moveerror"
+msgstr "ვერცერთი კონტაქტის გადატანა ვერ მოხერხდა."
+
+msgid "messages.sourceisreadonly"
+msgstr "აღნიშნული მისამართის მხოლოდ წაკითხვაა შესაძლებელი"
+
+msgid "messages.errorsavingcontact"
+msgstr "საკონტაქტო მისამართის შენახვა შეუძლებელია"
+
+msgid "messages.movingmessage"
+msgstr "შეტყობინების გადატანა..."
+
+msgid "messages.copyingmessage"
+msgstr "შეტყობინების კოპოირება..."
+
+msgid "messages.copyingcontact"
+msgstr "კონტაქტის კოპირება..."
+
+msgid "messages.movingcontact"
+msgstr "კონტაქტის გადატანა..."
+
+msgid "messages.deletingmessage"
+msgstr "შეტყობინების წაშლა..."
+
+msgid "messages.markingmessage"
+msgstr "შეტყობინების მონიშვნა..."
+
+msgid "messages.addingmember"
+msgstr "კონტაქტების დამატება ჯგუფში..."
+
+msgid "messages.removingmember"
+msgstr "კონტაქტების წაშლა ჯგუფიდან..."
+
+msgid "messages.receiptsent"
+msgstr "წარმატებით გაიგზავნა"
+
+msgid "messages.errorsendingreceipt"
+msgstr "არ გაიგზავნა"
+
+msgid "messages.deleteidentityconfirm"
+msgstr ""
+
+msgid "messages.nodeletelastidentity"
+msgstr "წაშლა შეუძლებელია, ის თქვენთვის ერთადერთია"
+
+msgid "messages.forbiddencharacter"
+msgstr "საქაღალდის სახელი შეიცავს აკრძალულ სიმბოლოებს"
+
+msgid "messages.selectimportfile"
+msgstr "გთხოვთ მონიშნოთ ფაილი ასატვირთად"
+
+msgid "messages.addresswriterror"
+msgstr "მონიშნულ მისამართებში ჩაწერა შეუძლებელია"
+
+msgid "messages.contactaddedtogroup"
+msgstr "წარმატებულად დაემატა კონტაქტები ჯგუფში."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "წარმატებულად წაიშალა კონტაქტები ჯგუფიდან."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "ჯგუფების მიმაგრება არ შეცვლილა."
+
+msgid "messages.importwait"
+msgstr "გთხოვთ მოიცადოთ, მიმდინარეობს შემოტანა"
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>წარმატებით დასრულდა $inserted კონტაქტების შემოტანა, $skipped არსებულის "
+"გამოტოვება</b>:<p><em>$names</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr "ოპერაცია შეზღუდულია"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"სერვერზე მოხდა შეცდომა. დაუყონებლივ დაუკავშირდით ადმინისტრატორს. <b>თქვენი "
+"შეტყობინება შესაძლოა ვერ გაიგზავნა.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP Error ($code): სერვერთან დაკავშირება ვერ მოხერხდა"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP Error ($code): ავტორიზაციის შეცდომა"
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP Error ($code): ვერ მიეთითა გამგზავნი \"$from\" ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "SMTP Error ($code): ვერ დაემატა მიმღები \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP Error: მიმღებთა ჩამონათვალის დამუშავება ვერ მოხერხდა"
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP Error: $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+
+msgid "messages.maxgroupmembersreached"
+msgstr "ჯგუფის წევრების რაოდენობა მეტია დასაშვებ ($size)-ზე"
+
+msgid "messages.internalerror"
+msgstr "დაფიქსირდა შეცდომა. გთხოვთ სცადოთ მოგვიანებით."
+
+msgid "messages.contactdelerror"
+msgstr "კონტაქტის წაშლა არ მოხერხდა."
+
+msgid "messages.contactdeleted"
+msgstr "კონტაქტ(ებ)ი წარმატებით წაიშალა."
+
+msgid "messages.contactrestoreerror"
+msgstr "წაშლილი კონტაქტების აღდგენა არ მოხერხდა."
+
+msgid "messages.contactrestored"
+msgstr "კონრაქტ(ებ)ი წარმატებით აღდგა,"
+
+msgid "messages.groupdeleted"
+msgstr "ჯგუფი წარმატებით წაიშალა."
+
+msgid "messages.grouprenamed"
+msgstr "ჯგუფს წარმატებულად გადაერქვა სახელი."
+
+msgid "messages.groupcreated"
+msgstr "ჯგუფი წარმატებით შეიქმნა."
+
+msgid "messages.savedsearchdeleted"
+msgstr "შენახული ძიება წარმატებულად წაშლილია."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "შენახული ძიების წაშლა ვერ მოხერხდა."
+
+msgid "messages.savedsearchcreated"
+msgstr "შენახული ძიების შექმნილია წარმატებულად."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "შენახული ძიების შექმნა ვერ მოხერხდა."
+
+msgid "messages.messagedeleted"
+msgstr "შეტყობინებები წარმატებით წაიშალა."
+
+msgid "messages.messagemoved"
+msgstr "შეტყობინებები გადატანილია წარმატებით."
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "შეტყობინება დაკოპირებულია წარმატებით."
+
+msgid "messages.messagemarked"
+msgstr "შეტყობინებები წარმატებით მოინიშნა."
+
+msgid "messages.autocompletechars"
+msgstr "შეიყვანეთ მინიმუმ $min სიმბოლო ავტომატური დაბოლოებისათვის."
+
+msgid "messages.autocompletemore"
+msgstr "დამთხვევა ვერ მოხერხდა. გთხოვთ კიდევ შეიყვანოთ სიმბოლოები.  "
+
+msgid "messages.namecannotbeempty"
+msgstr "სახელი არ შეიძლება იყოს ცარიელი."
+
+msgid "messages.nametoolong"
+msgstr "სახელი ძალიან მოკლეა."
+
+msgid "messages.namedotforbidden"
+msgstr "საქაღალდის სახელი არ შეიძლება იწყებოდეს წერტილით."
+
+msgid "messages.folderupdated"
+msgstr "დასტა წარმატებით განახლდა."
+
+msgid "messages.foldercreated"
+msgstr "დასტა წარმატებით შეიქმნა."
+
+msgid "messages.invalidimageformat"
+msgstr "გამოსახულების ფორმატი არასწორია."
+
+msgid "messages.mispellingsfound"
+msgstr "გრამატიკული შეცდომები დაფიქსირდა შეტყობინებაში."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+
+msgid "messages.messagetoobig"
+msgstr ""
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr "ფაილი არ მოიძებნა."
+
+msgid "messages.errnotfoundexplain"
+msgstr "მოთხოვნილი რესურსი ვერ მოიძებნა!"
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr "გთხოვთ დაუკავშირდეთ სერვერის ადმინისტრატორს."
+
+msgid "messages.clicktoresumesession"
+msgstr "დააჭირეთ აქ რომ განაგრძოთ წინა სესია."
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr "დააჭირეთ აქ რომ შექმნათ ახალი შეტყობინება."
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

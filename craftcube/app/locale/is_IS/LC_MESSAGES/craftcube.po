@@ -1,0 +1,2908 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: is_IS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Velkomin í $product"
+
+msgid "username"
+msgstr "Netfang"
+
+msgid "password"
+msgstr "Lykilorð"
+
+msgid "server"
+msgstr "Póstþjónn"
+
+msgid "login"
+msgstr "Innskrá"
+
+msgid "oauthlogin"
+msgstr "Skrá inn með $provider"
+
+msgid "menu"
+msgstr "Valmynd"
+
+msgid "logout"
+msgstr "Útskrá"
+
+msgid "mail"
+msgstr "Tölvupóstur"
+
+msgid "settings"
+msgstr "Stillingar"
+
+msgid "addressbook"
+msgstr "Nafnaskrá"
+
+msgid "darkmode"
+msgstr "Dökkur hamur"
+
+msgid "lightmode"
+msgstr "Ljós hamur"
+
+msgid "inbox"
+msgstr "Innhólf"
+
+msgid "drafts"
+msgstr "Drög"
+
+msgid "sent"
+msgstr "Sent"
+
+msgid "trash"
+msgstr "Rusl"
+
+msgid "junk"
+msgstr "Ruslpóstur"
+
+msgid "show_real_foldernames"
+msgstr "Birta raunveruleg heiti á sérmöppum"
+
+msgid "subject"
+msgstr "Titill"
+
+msgid "from"
+msgstr "Frá"
+
+msgid "sender"
+msgstr "Sendandi"
+
+msgid "to"
+msgstr "Til"
+
+msgid "cc"
+msgstr "Afrit"
+
+msgid "bcc"
+msgstr "Falið afrit"
+
+msgid "replyto"
+msgstr "Svar til"
+
+msgid "followupto"
+msgstr "Svar við"
+
+msgid "date"
+msgstr "Dagsetning"
+
+msgid "size"
+msgstr "Stærð"
+
+msgid "priority"
+msgstr "Forgangur"
+
+msgid "organization"
+msgstr "Stofnun"
+
+msgid "readstatus"
+msgstr "Lesmerking"
+
+msgid "listoptions"
+msgstr "Telja upp valkosti..."
+
+msgid "listoptionstitle"
+msgstr "Valkostir lista"
+
+msgid "mailboxlist"
+msgstr "Möppur"
+
+msgid "messagesfromto"
+msgstr "Skilaboð $from til $to af $count"
+
+msgid "threadsfromto"
+msgstr "Skilaboðaþræðir $from til $to af $count"
+
+msgid "messagenrof"
+msgstr "Skilaboð $nr af $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to af $count"
+
+msgid "copy"
+msgstr "Afrit"
+
+msgid "move"
+msgstr "Færa"
+
+msgid "moveto"
+msgstr "Færa í..."
+
+msgid "copyto"
+msgstr "Afrita í..."
+
+msgid "download"
+msgstr "Sækja"
+
+msgid "open"
+msgstr "Opna"
+
+msgid "showattachment"
+msgstr "Birta"
+
+msgid "showanyway"
+msgstr "Birta það samt"
+
+msgid "filename"
+msgstr "Skráarheiti"
+
+msgid "filesize"
+msgstr "Skráarstærð"
+
+msgid "addtoaddressbook"
+msgstr "Bæta í nafnaskrá"
+
+msgid "sun"
+msgstr "sun."
+
+msgid "mon"
+msgstr "mán."
+
+msgid "tue"
+msgstr "þri."
+
+msgid "wed"
+msgstr "mið."
+
+msgid "thu"
+msgstr "fim."
+
+msgid "fri"
+msgstr "fös."
+
+msgid "sat"
+msgstr "lau."
+
+msgid "sunday"
+msgstr "sunnudagur"
+
+msgid "monday"
+msgstr "mánudagur"
+
+msgid "tuesday"
+msgstr "þriðjudagur"
+
+msgid "wednesday"
+msgstr "miðvikudagur"
+
+msgid "thursday"
+msgstr "fimmtudagur"
+
+msgid "friday"
+msgstr "föstudagur"
+
+msgid "saturday"
+msgstr "laugardagur"
+
+msgid "jan"
+msgstr "jan"
+
+msgid "feb"
+msgstr "feb"
+
+msgid "mar"
+msgstr "mar"
+
+msgid "apr"
+msgstr "apr"
+
+msgid "may"
+msgstr "maí"
+
+msgid "jun"
+msgstr "jún"
+
+msgid "jul"
+msgstr "júl"
+
+msgid "aug"
+msgstr "ágú"
+
+msgid "sep"
+msgstr "sep"
+
+msgid "oct"
+msgstr "okt"
+
+msgid "nov"
+msgstr "nóv"
+
+msgid "dec"
+msgstr "des"
+
+msgid "longjan"
+msgstr "janúar"
+
+msgid "longfeb"
+msgstr "febrúar"
+
+msgid "longmar"
+msgstr "mars"
+
+msgid "longapr"
+msgstr "apríl"
+
+msgid "longmay"
+msgstr "maí"
+
+msgid "longjun"
+msgstr "júní"
+
+msgid "longjul"
+msgstr "júlí"
+
+msgid "longaug"
+msgstr "ágúst"
+
+msgid "longsep"
+msgstr "september"
+
+msgid "longoct"
+msgstr "október"
+
+msgid "longnov"
+msgstr "nóvember"
+
+msgid "longdec"
+msgstr "desember"
+
+msgid "today"
+msgstr "Í dag"
+
+msgid "refresh"
+msgstr "Endurhlaða"
+
+msgid "checkmail"
+msgstr "Athuga með ný skilaboð"
+
+msgid "compose"
+msgstr "Semja skilaboð"
+
+msgid "writenewmessage"
+msgstr "Búa til ný skilaboð"
+
+msgid "reply"
+msgstr "Svara"
+
+msgid "replytomessage"
+msgstr "Svara skilaboðum"
+
+msgid "replytoallmessage"
+msgstr "Svar til lista eða sendanda og allra viðtakenda"
+
+msgid "replyall"
+msgstr "Svara öllum"
+
+msgid "replylist"
+msgstr "Svar til lista"
+
+msgid "forward"
+msgstr "Áframsenda"
+
+msgid "forwardinline"
+msgstr "Áframsenda innan skilaboða"
+
+msgid "forwardattachment"
+msgstr "Áframsenda sem viðhengi"
+
+msgid "forwardmessage"
+msgstr "Áframsenda skilaboðin"
+
+msgid "bouncemsg"
+msgstr "Endursenda (bounce)"
+
+msgid "bounce"
+msgstr "Endursenda"
+
+msgid "deletemessage"
+msgstr "Eyða skilaboðum"
+
+msgid "undeletemessage"
+msgstr "Afturkalla eyðingu skilaboða"
+
+msgid "movemessagetotrash"
+msgstr "Færa skilaboð í ruslið"
+
+msgid "printmessage"
+msgstr "Prenta þessi skilaboð"
+
+msgid "previousmessage"
+msgstr "Birta fyrri skilaboð"
+
+msgid "firstmessage"
+msgstr "Birta fyrstu skilaboð"
+
+msgid "nextmessage"
+msgstr "Birta næstu skilaboð"
+
+msgid "lastmessage"
+msgstr "Birta síðustu skilaboðin"
+
+msgid "backtolist"
+msgstr "Til baka í skilaboðalista"
+
+msgid "viewsource"
+msgstr "Skoða kóða"
+
+msgid "mark"
+msgstr "Merki"
+
+msgid "markmessages"
+msgstr "Merkja skilaboð"
+
+msgid "markread"
+msgstr "Sem lesið"
+
+msgid "markunread"
+msgstr "Sem ólesið"
+
+msgid "markflagged"
+msgstr "Sem flaggað"
+
+msgid "markunflagged"
+msgstr "Sem óflaggað"
+
+msgid "markundeleted"
+msgstr "Sem ekki eytt"
+
+msgid "markasread"
+msgstr "Merkja sem lesið"
+
+msgid "markasunread"
+msgstr "Merkja sem ólesið"
+
+msgid "markasflagged"
+msgstr "Merkja sem flaggað"
+
+msgid "markasunflagged"
+msgstr "Merkja sem óflaggað"
+
+msgid "moreactions"
+msgstr "Fleiri aðgerðir..."
+
+msgid "markallread"
+msgstr "Merkja allt sem lesið"
+
+msgid "folders-cur"
+msgstr "Aðeins valin mappa"
+
+msgid "folders-sub"
+msgstr "Valin mappa og undirmöppur hennar"
+
+msgid "folders-all"
+msgstr "Allar möppur"
+
+msgid "more"
+msgstr "Meira"
+
+msgid "back"
+msgstr "Til baka"
+
+msgid "options"
+msgstr "Valkostir"
+
+msgid "composeoptions"
+msgstr "Valkostir við samningu skilaboða"
+
+msgid "optionsandattachments"
+msgstr "Valkostir og viðhengi"
+
+msgid "actions"
+msgstr "Aðgerðir"
+
+msgid "first"
+msgstr "Fyrsta"
+
+msgid "last"
+msgstr "Síðasta"
+
+msgid "previous"
+msgstr "Fyrra"
+
+msgid "next"
+msgstr "Næsta"
+
+msgid "select"
+msgstr "Velja"
+
+msgid "selection"
+msgstr "Val"
+
+msgid "all"
+msgstr "Allt"
+
+msgid "none"
+msgstr "Ekkert"
+
+msgid "currpage"
+msgstr "Núverandi síða"
+
+msgid "isread"
+msgstr "Lesið"
+
+msgid "unread"
+msgstr "Ólesið"
+
+msgid "flagged"
+msgstr "Flaggað"
+
+msgid "unflagged"
+msgstr "Óflaggað"
+
+msgid "unanswered"
+msgstr "Ósvarað"
+
+msgid "withattachment"
+msgstr "Með viðhengi"
+
+msgid "deleted"
+msgstr "Eytt"
+
+msgid "undeleted"
+msgstr "Ekki eytt"
+
+msgid "replied"
+msgstr "Svarað"
+
+msgid "forwarded"
+msgstr "Áframsent"
+
+msgid "invert"
+msgstr "Umhverfa"
+
+msgid "filter"
+msgstr "Sía"
+
+msgid "list"
+msgstr "Listi"
+
+msgid "threads"
+msgstr "Þræðir"
+
+msgid "expand-all"
+msgstr "Þenja allt út"
+
+msgid "expand-unread"
+msgstr "Þenja ólesið"
+
+msgid "collapse-all"
+msgstr "Fella allt saman"
+
+msgid "threaded"
+msgstr "Þrætt"
+
+msgid "showunread"
+msgstr "Birta ólesin skilaboð"
+
+msgid "autoexpand_threads"
+msgstr "Þenja skilaboðaþræði út"
+
+msgid "do_expand"
+msgstr "allir þræðir"
+
+msgid "expand_only_unread"
+msgstr "aðeins ólesin skilaboð"
+
+msgid "fromto"
+msgstr "Frá/Til"
+
+msgid "flag"
+msgstr "Flagg"
+
+msgid "attachment"
+msgstr "Viðhengi"
+
+msgid "nonesort"
+msgstr "Ekkert"
+
+msgid "sentdate"
+msgstr "Sendingardagur"
+
+msgid "arrival"
+msgstr "Komudagur"
+
+msgid "asc"
+msgstr "hækkandi"
+
+msgid "desc"
+msgstr "lækkandi"
+
+msgid "listcolumns"
+msgstr "Listadálkar"
+
+msgid "listsorting"
+msgstr "Röðunardálkur"
+
+msgid "listorder"
+msgstr "Röðun"
+
+msgid "listmode"
+msgstr "Listayfirlit"
+
+msgid "lmode"
+msgstr "Listahamur"
+
+msgid "layout"
+msgstr "Framsetning"
+
+msgid "layoutwidescreen"
+msgstr "Breiðskjár"
+
+msgid "layoutdesktop"
+msgstr "Skjáborð"
+
+msgid "layoutlist"
+msgstr "Listi"
+
+msgid "layoutwidescreendesc"
+msgstr "Breiðskjár (3-dálka sýn)"
+
+msgid "layoutdesktopdesc"
+msgstr "Skjáborð (breiður listi með forskoðun fyrir neðan)"
+
+msgid "layoutlistdesc"
+msgstr "Listi (engin forskoðun á pósti)"
+
+msgid "folderactions"
+msgstr "Möppuaðgerðir..."
+
+msgid "compact"
+msgstr "Pakka"
+
+msgid "empty"
+msgstr "Tæma"
+
+msgid "importmessages"
+msgstr "Flytja inn skilaboð"
+
+msgid "mailimportdesc"
+msgstr ""
+"Þú getur sent inn póst með því að nota skrár með <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> eða <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> sniði."
+
+msgid "mailimportzip"
+msgstr "Hægt er að þjappa mörgum skrám í ZIP-safnskrár."
+
+msgid "quota"
+msgstr "Gagnamagn"
+
+msgid "unknown"
+msgstr "óþekkt"
+
+msgid "unlimited"
+msgstr "ótakmarkað"
+
+msgid "quotatype"
+msgstr "Tegund kvóta"
+
+msgid "quotatotal"
+msgstr "Takmarkað"
+
+msgid "quotaused"
+msgstr "Notað"
+
+msgid "quotastorage"
+msgstr "Diskpláss"
+
+msgid "quotamessage"
+msgstr "Fjöldi skilaboða"
+
+msgid "shortheaderdate"
+msgstr "Þann $date"
+
+msgid "shortheaderto"
+msgstr "Til $from þann $date"
+
+msgid "shortheaderfrom"
+msgstr "Frá $from þann $date"
+
+msgid "quicksearch"
+msgstr "Flýtileit"
+
+msgid "searchplaceholder"
+msgstr "Leita..."
+
+msgid "resetsearch"
+msgstr "Tæma leit"
+
+msgid "searchmod"
+msgstr "Leitarskilyrði"
+
+msgid "msgtext"
+msgstr "Öll skilaboðin"
+
+msgid "body"
+msgstr "Meginmál"
+
+msgid "type"
+msgstr "Tegund"
+
+msgid "namex"
+msgstr "Heiti"
+
+msgid "searchscope"
+msgstr "Umfang"
+
+msgid "currentfolder"
+msgstr "Núverandi mappa"
+
+msgid "subfolders"
+msgstr "Þessi og undirmöppur"
+
+msgid "allfolders"
+msgstr "Allar möppur"
+
+msgid "searchinterval-1W"
+msgstr "eldri en vikugömul"
+
+msgid "searchinterval-1M"
+msgstr "eldri en mánaðargömul"
+
+msgid "searchinterval-1Y"
+msgstr "eldri en ársgömul"
+
+msgid "searchinterval1W"
+msgstr "yngri en vikugömul"
+
+msgid "searchinterval1M"
+msgstr "yngri en mánaðargömul"
+
+msgid "searchinterval1Y"
+msgstr "yngri en ársgömul"
+
+msgid "infolder"
+msgstr "Mappa: $folder"
+
+msgid "currentaddressbook"
+msgstr "Fyrirliggjandi nafnaskrá"
+
+msgid "alladdressbooks"
+msgstr "Allar nafnaskrár"
+
+msgid "openinextwin"
+msgstr "Opna í nýjum glugga"
+
+msgid "emlsave"
+msgstr "Sækja (.eml)"
+
+msgid "changeformattext"
+msgstr "Birta sem hreinan texta"
+
+msgid "changeformathtml"
+msgstr "Birta á HTML-sniði"
+
+msgid "editasnew"
+msgstr "Breyta sem nýju"
+
+msgid "send"
+msgstr "Senda"
+
+msgid "sendmessage"
+msgstr "Senda skilaboðin núna"
+
+msgid "savemessage"
+msgstr "Vista drög"
+
+msgid "addattachment"
+msgstr "Hengja við"
+
+msgid "charset"
+msgstr "Stafatafla"
+
+msgid "editortype"
+msgstr "Gerð ritils"
+
+msgid "returnreceipt"
+msgstr "Kvittun við lestur"
+
+msgid "dsn"
+msgstr "Afhendingarstaða"
+
+msgid "keepformatting"
+msgstr "Halda sniðum"
+
+msgid "mailreplyintro"
+msgstr "Þann $date, skrifaði $sender:"
+
+msgid "originalmessage"
+msgstr "Upprunaleg skilaboð"
+
+msgid "selectimage"
+msgstr "Veldu mynd"
+
+msgid "addimage"
+msgstr "Bæta við mynd"
+
+msgid "selectmedia"
+msgstr "Veldu myndskeið"
+
+msgid "addmedia"
+msgstr "Bæta við myndskeiði"
+
+msgid "encrypt"
+msgstr "Dulrita"
+
+msgid "encryptmessage"
+msgstr "Dulrita skilaboð"
+
+msgid "encryptmessagemailvelope"
+msgstr "Dulrita skilaboð með Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Flytja inn dreifilykla"
+
+msgid "encryptedsendialog"
+msgstr "Sendi dulrituð skilaboð"
+
+msgid "encryptandsign"
+msgstr "Dulrita og undirrita"
+
+msgid "keyid"
+msgstr "Auðkenni lykils"
+
+msgid "keylength"
+msgstr "Bitar"
+
+msgid "keyexpired"
+msgstr "Útrunninn"
+
+msgid "keyrevoked"
+msgstr "Afturkallaður"
+
+msgid "bccinstead"
+msgstr "Nota BCC"
+
+msgid "addheader"
+msgstr "Bæta við svæði (Afrit, Falið afrit, ...)"
+
+msgid "insert"
+msgstr "Setja inn"
+
+msgid "insertcontact"
+msgstr "Setja inn tengiliði"
+
+msgid "recipient"
+msgstr "Viðtakandi"
+
+msgid "recipientedit"
+msgstr "Breyting á viðtakanda"
+
+msgid "editidents"
+msgstr "Breyta persónuauðkennum"
+
+msgid "spellcheck"
+msgstr "Stafsetning"
+
+msgid "checkspelling"
+msgstr "Athuga stafsetningu"
+
+msgid "resumeediting"
+msgstr "Aftur í ritham"
+
+msgid "revertto"
+msgstr "Hverfa aftur til"
+
+msgid "restore"
+msgstr "Endurheimta"
+
+msgid "restoremessage"
+msgstr "Endurheimta skilaboð?"
+
+msgid "ignore"
+msgstr "Hunsa"
+
+msgid "responses"
+msgstr "Svör"
+
+msgid "insertresponse"
+msgstr "Setja inn svar"
+
+msgid "manageresponses"
+msgstr "Sýsla með svör"
+
+msgid "newresponse"
+msgstr "Búa til nýtt svar"
+
+msgid "addresponse"
+msgstr "Bæta við svari"
+
+msgid "editresponse"
+msgstr "Breyta svari"
+
+msgid "editresponses"
+msgstr "Breyta svörum"
+
+msgid "responsename"
+msgstr "Nafn"
+
+msgid "responsetext"
+msgstr "Texti svars"
+
+msgid "attach"
+msgstr "Viðhengi"
+
+msgid "attachments"
+msgstr "Viðhengi"
+
+msgid "upload"
+msgstr "Hlaða upp"
+
+msgid "uploadprogress"
+msgstr "$percent ($current af $total)"
+
+msgid "close"
+msgstr "Loka"
+
+msgid "messageoptions"
+msgstr "Valkostir skilaboða..."
+
+msgid "togglecomposeoptions"
+msgstr "Víxla valkostum samningar af/á"
+
+msgid "attachmentrename"
+msgstr "Endurnefna viðhengi"
+
+msgid "low"
+msgstr "Lágt"
+
+msgid "lowest"
+msgstr "Lægst"
+
+msgid "normal"
+msgstr "Venjulegt"
+
+msgid "high"
+msgstr "Hátt"
+
+msgid "highest"
+msgstr "Hæst"
+
+msgid "nosubject"
+msgstr "(án titils)"
+
+msgid "showimages"
+msgstr "Birta myndir"
+
+msgid "allow"
+msgstr "Leyfa"
+
+msgid "alwaysshow"
+msgstr "Alltaf birta myndir frá $sender"
+
+msgid "alwaysallow"
+msgstr "Alltaf leyfa frá $sender"
+
+msgid "isdraft"
+msgstr "Þetta eru drög að skilaboðum."
+
+msgid "andnmore"
+msgstr "$nr í viðbót..."
+
+msgid "details"
+msgstr "Nánar"
+
+msgid "summary"
+msgstr "Samantekt"
+
+msgid "headers"
+msgstr "Hausar"
+
+msgid "allheaders"
+msgstr "Allir hausar..."
+
+msgid "togglemoreheaders"
+msgstr "Birta fleiri skilaboðahausa"
+
+msgid "togglefullheaders"
+msgstr "Víxla hráum skilaboðahausum af/á"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Hreinn texti"
+
+msgid "savesentmessagein"
+msgstr "Vista send skilaboð í"
+
+msgid "dontsave"
+msgstr "ekki vista"
+
+msgid "maxuploadsize"
+msgstr "Leyfileg hámarksstærð skjals er $size"
+
+msgid "addcc"
+msgstr "Bæta við Cc"
+
+msgid "addbcc"
+msgstr "Bæta við Bcc"
+
+msgid "addreplyto"
+msgstr "Bæta við Reply-To"
+
+msgid "addfollowupto"
+msgstr "Nýtt svar við"
+
+msgid "sendreceipt"
+msgstr "Senda leskvittun?"
+
+msgid "mdnrequest"
+msgstr ""
+"Sendandi þessara skilaboða hefur óskað þess að þú látir vita að þú hafir "
+"lesið skilaboðin. Viltu láta hann vita?"
+
+msgid "receiptread"
+msgstr "Kvittun (lesa)"
+
+msgid "yourmessage"
+msgstr "Þetta er kvittun fyrir skilaboðin þín"
+
+msgid "receiptnote"
+msgstr ""
+"ATH: Þessi kvittun segir aðeins til um að skilaboðin komu upp á skjánum hjá "
+"viðtakanda. Það er engin sönnun um að hann hafi lesið þau eða skilið efni "
+"þeirra."
+
+msgid "sendalwaysto"
+msgstr "Alltaf senda til $email"
+
+msgid "zoomin"
+msgstr "Renna að"
+
+msgid "zoomout"
+msgstr "Renna frá"
+
+msgid "rotate"
+msgstr "Snúa"
+
+msgid "increaseimage"
+msgstr "Auka stærð myndar"
+
+msgid "decreaseimage"
+msgstr "Minnka stærð myndar"
+
+msgid "rotateimage"
+msgstr "Snúa mynd"
+
+msgid "showtools"
+msgstr "Birta myndaverkfæri"
+
+msgid "hidetools"
+msgstr "Fela myndaverkfæri"
+
+msgid "name"
+msgstr "Skjánafn"
+
+msgid "firstname"
+msgstr "Eiginnafn"
+
+msgid "surname"
+msgstr "Eftirnafn"
+
+msgid "middlename"
+msgstr "Millinafn"
+
+msgid "nameprefix"
+msgstr "Forskeyti"
+
+msgid "namesuffix"
+msgstr "Viðskeyti"
+
+msgid "nickname"
+msgstr "Stuttnefni"
+
+msgid "jobtitle"
+msgstr "Starfstitill"
+
+msgid "department"
+msgstr "Deild"
+
+msgid "gender"
+msgstr "Kyn"
+
+msgid "maidenname"
+msgstr "Ættarnafn móður"
+
+msgid "email"
+msgstr "Netfang"
+
+msgid "phone"
+msgstr "Sími"
+
+msgid "address"
+msgstr "Heimilisfang"
+
+msgid "street"
+msgstr "Götuheiti"
+
+msgid "locality"
+msgstr "Staður"
+
+msgid "zipcode"
+msgstr "Póstnúmer"
+
+msgid "region"
+msgstr "Ríki/Fylki"
+
+msgid "country"
+msgstr "Land"
+
+msgid "birthday"
+msgstr "Afmælisdagur"
+
+msgid "anniversary"
+msgstr "Afmæli"
+
+msgid "website"
+msgstr "Vefur"
+
+msgid "instantmessenger"
+msgstr "IM-spjall"
+
+msgid "notes"
+msgstr "Glósur"
+
+msgid "male"
+msgstr "karlkyns"
+
+msgid "female"
+msgstr "kvenkyns"
+
+msgid "nonbinary"
+msgstr "kynsegin"
+
+msgid "othergender"
+msgstr "annað"
+
+msgid "manager"
+msgstr "Stjórnandi"
+
+msgid "assistant"
+msgstr "Aðstoðarmaður"
+
+msgid "spouse"
+msgstr "Maki"
+
+msgid "allfields"
+msgstr "Öll svæði"
+
+msgid "search"
+msgstr "Leit"
+
+msgid "searchresult"
+msgstr "Leitarniðurstöður"
+
+msgid "advsearch"
+msgstr "Ítarleg leit"
+
+msgid "advanced"
+msgstr "Nánar"
+
+msgid "other"
+msgstr "Annað"
+
+msgid "printcontact"
+msgstr "Prenta tengilið"
+
+msgid "qrcode"
+msgstr "QR-kóði"
+
+msgid "typehome"
+msgstr "Heimasími"
+
+msgid "typework"
+msgstr "Vinnusími"
+
+msgid "typeother"
+msgstr "Annað"
+
+msgid "typemobile"
+msgstr "Farsími"
+
+msgid "typemain"
+msgstr "Aðalstillingar"
+
+msgid "typehomefax"
+msgstr "Heimafax"
+
+msgid "typeworkfax"
+msgstr "Vinnufax"
+
+msgid "typecar"
+msgstr "Bílsími"
+
+msgid "typepager"
+msgstr "Friðþjófur"
+
+msgid "typevideo"
+msgstr "Myndband"
+
+msgid "typeassistant"
+msgstr "Aðstoðarmaður"
+
+msgid "typehomepage"
+msgstr "Heimasíða"
+
+msgid "typeblog"
+msgstr "Blogg"
+
+msgid "typeprofile"
+msgstr "Mannlýsing"
+
+msgid "addfield"
+msgstr "Bæta við svæði..."
+
+msgid "addcontact"
+msgstr "Bæta við tengilið"
+
+msgid "editcontact"
+msgstr "Breyta tengilið"
+
+msgid "contacts"
+msgstr "Tengiliðir"
+
+msgid "contactproperties"
+msgstr "Eiginleikar tengiliðar"
+
+msgid "contactnameandorg"
+msgstr "Nafn og fyrirtæki/stofnun"
+
+msgid "personalinfo"
+msgstr "Persónulegar upplýsingar"
+
+msgid "personal"
+msgstr "Einka"
+
+msgid "contactphoto"
+msgstr "Mynd af tengilið"
+
+msgid "edit"
+msgstr "Breyta"
+
+msgid "cancel"
+msgstr "Hætta við"
+
+msgid "save"
+msgstr "Vista"
+
+msgid "delete"
+msgstr "Eyða"
+
+msgid "discard"
+msgstr "Henda"
+
+msgid "continue"
+msgstr "Halda áfram"
+
+msgid "ok"
+msgstr "Í lagi"
+
+msgid "rename"
+msgstr "Endurnefna"
+
+msgid "addphoto"
+msgstr "Bæta við"
+
+msgid "replacephoto"
+msgstr "Skipta út"
+
+msgid "uploadphoto"
+msgstr "Senda inn mynd"
+
+msgid "choosefile"
+msgstr "Veldu skrá..."
+
+msgid "choosefiles"
+msgstr "Veldu skrár..."
+
+msgid "browse"
+msgstr "Flakka"
+
+msgid "newcontact"
+msgstr "Búa til nýjan tengilið"
+
+msgid "deletecontact"
+msgstr "Eyða völdum tengiliðum"
+
+msgid "composeto"
+msgstr "Skrifa tölvupóst til"
+
+msgid "contactsfromto"
+msgstr "Tengiliðir $from til $to af $count"
+
+msgid "print"
+msgstr "Prenta"
+
+msgid "export"
+msgstr "Flytja út"
+
+msgid "exportall"
+msgstr "Flytja allt út"
+
+msgid "exportsel"
+msgstr "Flytja út valið"
+
+msgid "exportvcards"
+msgstr "Flytja út nafnspjöld á vCard formi"
+
+msgid "newgroup"
+msgstr "Búa til nýjan hóp"
+
+msgid "addgroup"
+msgstr "Bæta við hópi"
+
+msgid "grouprename"
+msgstr "Breyta nafni hóps"
+
+msgid "groupdelete"
+msgstr "Fjarlægja hóp"
+
+msgid "groupassign"
+msgstr "Úthluta í hóp..."
+
+msgid "groupremove"
+msgstr "Fjarlægja úr hópi"
+
+msgid "groupremoveselected"
+msgstr "Fjarlægja valda tengiliði úr hópi"
+
+msgid "uponelevel"
+msgstr "Upp um eitt stig"
+
+msgid "previouspage"
+msgstr "Birta fyrri síðu"
+
+msgid "firstpage"
+msgstr "Birta fyrstu síðu"
+
+msgid "nextpage"
+msgstr "Birta næstu síðu"
+
+msgid "lastpage"
+msgstr "Birta síðustu síðu"
+
+msgid "group"
+msgstr "Hópur"
+
+msgid "groups"
+msgstr "Hópar"
+
+msgid "listgroup"
+msgstr "Telja upp meðlimi hóps"
+
+msgid "personaladrbook"
+msgstr "Persónuleg heimilisföng"
+
+msgid "searchsave"
+msgstr "Vista leit"
+
+msgid "searchdelete"
+msgstr "Eyða leit"
+
+msgid "import"
+msgstr "Flytja inn"
+
+msgid "importcontacts"
+msgstr "Flytja inn nafnspjöld"
+
+msgid "importfromfile"
+msgstr "Flytja inn úr skrá"
+
+msgid "importtarget"
+msgstr "Bæta tengiliðum í"
+
+msgid "importreplace"
+msgstr "Skipta út allri netfangaskránni"
+
+msgid "importgroups"
+msgstr "Flytja inn verkefni hóps"
+
+msgid "importgroupsall"
+msgstr "Allt (búa til hópa ef þess þarf)"
+
+msgid "importgroupsexisting"
+msgstr "Aðeins fyrirliggjandi hópar"
+
+msgid "importdesc"
+msgstr ""
+"Þú getur sent inn tengiliði úr fyrirliggjandi nafnaskrá.<br/>Núna er "
+"stuðningur við innflutning vistfanga úr <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> eða CSV (kommu-"
+"aðgreind) gagnasniðum."
+
+msgid "importmapdesc"
+msgstr ""
+"Staðfestu að upplýsingarnar hér fyrir neðan um vensl gagnasviða séu réttar "
+"áður en haldið er áfram með innflutning á CSV-sniði (kommu-aðgreint)."
+
+msgid "fieldnotmapped"
+msgstr "Gagnasvið ekki venslað (ekki flytja inn)"
+
+msgid "skipheader"
+msgstr "Ekki flytja inn fyrstu línuna (fyrirsagnir)"
+
+msgid "done"
+msgstr "Búið"
+
+msgid "birth_day"
+msgstr "Fæðingardagur"
+
+msgid "birth_month"
+msgstr "Fæðingarmánuður"
+
+msgid "birth_year"
+msgstr "Fæðingarár"
+
+msgid "settingsfor"
+msgstr "Stillingar fyrir"
+
+msgid "about"
+msgstr "Um forritið"
+
+msgid "preferences"
+msgstr "Stillingar"
+
+msgid "userpreferences"
+msgstr "Notendastillingar"
+
+msgid "editpreferences"
+msgstr "Breyta notendastillingum"
+
+msgid "identities"
+msgstr "Auðkenni"
+
+msgid "manageidentities"
+msgstr "Sýsla með auðkenni"
+
+msgid "newidentity"
+msgstr "Búa til nýtt auðkenni"
+
+msgid "addidentity"
+msgstr "Bæta við auðkenni"
+
+msgid "editidentity"
+msgstr "Breyta auðkenni"
+
+msgid "identityencryption"
+msgstr "Dulritun"
+
+msgid "preferhtml"
+msgstr "Birta HTML"
+
+msgid "defaultcharset"
+msgstr "Sjálfgefin stafatafla"
+
+msgid "htmlmessage"
+msgstr "HTML-skilaboð"
+
+msgid "messagepart"
+msgstr "Partur"
+
+msgid "digitalsig"
+msgstr "Stafræn undirritun"
+
+msgid "dateformat"
+msgstr "Snið dagsetningar"
+
+msgid "timeformat"
+msgstr "Tímasnið"
+
+msgid "prettydate"
+msgstr "Fallegar dagsetningar"
+
+msgid "setdefault"
+msgstr "Gera sjálfgilt"
+
+msgid "autodetect"
+msgstr "Sjálfvirkt"
+
+msgid "language"
+msgstr "Tungumál"
+
+msgid "timezone"
+msgstr "Tímabelti"
+
+msgid "pagesize"
+msgstr "Línur á síðu"
+
+msgid "signature"
+msgstr "Undirskrift"
+
+msgid "dstactive"
+msgstr "Sumar-/vetratími"
+
+msgid "showinextwin"
+msgstr "Opna skilaboð í nýjum glugga"
+
+msgid "composeextwin"
+msgstr "Semja í nýjum glugga"
+
+msgid "htmleditor"
+msgstr "Skrifa HTML-skilaboð"
+
+msgid "htmlonreply"
+msgstr "sem svar við HTML-skilaboðum"
+
+msgid "htmlonreplyandforward"
+msgstr "við áframsendingu eða svar við HTML-skilaboðum"
+
+msgid "htmlsignature"
+msgstr "HTML-undirskrift"
+
+msgid "showemail"
+msgstr "Birta tölvupóstföng með skjánafni"
+
+msgid "previewpane"
+msgstr "Birta forskoðunarglugga"
+
+msgid "skin"
+msgstr "Skinn á viðmóti"
+
+msgid "logoutclear"
+msgstr "Tæma rusl við útskráningu"
+
+msgid "logoutcompact"
+msgstr "Þjappa innhólf við útskráningu"
+
+msgid "uisettings"
+msgstr "Notandaviðmót"
+
+msgid "serversettings"
+msgstr "Stillingar þjóns"
+
+msgid "mailboxview"
+msgstr "Útlit pósthólfs"
+
+msgid "mdnrequests"
+msgstr "Við beiðni um kvittun skilaboða"
+
+msgid "askuser"
+msgstr "spyrja notanda"
+
+msgid "autosend"
+msgstr "senda kvittun"
+
+msgid "autosendknown"
+msgstr "senda kvittun til tengiliða minna, annars spyrja mig"
+
+msgid "autosendknownignore"
+msgstr "senda kvittun til tengiliða minna, annars hunsa"
+
+msgid "autosendtrusted"
+msgstr "senda kvittun til treystra tengiliða, annars spyrja mig"
+
+msgid "autosendtrustedignore"
+msgstr "senda kvittun til treystra tengiliða, annars hunsa"
+
+msgid "ignorerequest"
+msgstr "hunsa beiðni"
+
+msgid "readwhendeleted"
+msgstr "Merkja skilaboðin sem lesin þegar þeim er hent"
+
+msgid "flagfordeletion"
+msgstr "Merkja skilaboð til eyðingar í stað þess að eyða þeim"
+
+msgid "skipdeleted"
+msgstr "Ekki birta eydd skilaboð"
+
+msgid "deletealways"
+msgstr "Ef ekki er hægt að setja skilaboð í ruslafötuna, henda þeim"
+
+msgid "deletejunk"
+msgstr "Eyða skilaboðum beint úr ruslpóstmöppu"
+
+msgid "showremoteimages"
+msgstr "Birta fjartengdar innbyggðar myndir"
+
+msgid "allowremoteresources"
+msgstr "Leyfa fjartengd tilföng (myndir, stílar)"
+
+msgid "fromknownsenders"
+msgstr "frá þekktum sendendum"
+
+msgid "fromtrustedsenders"
+msgstr "frá treystum sendendum"
+
+msgid "frommycontacts"
+msgstr "frá tengiliðunum mínum"
+
+msgid "always"
+msgstr "alltaf"
+
+msgid "alwaysbutplain"
+msgstr "alltaf, nema þegar svarað er skilaboðum með hreinum texta"
+
+msgid "showinlineimages"
+msgstr "Birta viðhangandi myndir fyrir neðan skilaboðin"
+
+msgid "autosavedraft"
+msgstr "Vista sjálfkrafa sem drög"
+
+msgid "everynminutes"
+msgstr "á $n mínútna fresti"
+
+msgid "refreshinterval"
+msgstr "Endurhlaða (athuga með ný skilaboð, o.s.frv.)"
+
+msgid "never"
+msgstr "aldrei"
+
+msgid "immediately"
+msgstr "samstundis"
+
+msgid "messagesdisplaying"
+msgstr "Birting skilaboða"
+
+msgid "messagescomposition"
+msgstr "Semja skilaboð"
+
+msgid "mimeparamfolding"
+msgstr "Nöfn á viðhengjum"
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (annað)"
+
+msgid "force7bit"
+msgstr "Nota MIME kóðun fyrir 8-bita stafi"
+
+msgid "savelocalstorage"
+msgstr "Vista (tímabundið) í staðværri geymslu vafrans"
+
+msgid "advancedoptions"
+msgstr "Ítarlegir valkostir"
+
+msgid "toggleadvancedoptions"
+msgstr "Víxla ítarlegum valkostum af/á"
+
+msgid "focusonnewmessage"
+msgstr "Láta vafraglugga vera virkan á nýjum skilaboðum"
+
+msgid "checkallfolders"
+msgstr "Athuga með ný skilaboð í öllum möppum"
+
+msgid "displaynext"
+msgstr "Birta næstu færslu í lista eftir að skilaboðum er eytt/færð"
+
+msgid "defaultfont"
+msgstr "Sjálfgefið letur HTML-skilaboða"
+
+msgid "mainoptions"
+msgstr "Aðalstillingar"
+
+msgid "browseroptions"
+msgstr "Valkostir vafra"
+
+msgid "section"
+msgstr "Hluti"
+
+msgid "maintenance"
+msgstr "Viðhald"
+
+msgid "newmessage"
+msgstr "Ný skilaboð"
+
+msgid "signatureoptions"
+msgstr "Valkostir undirskriftar"
+
+msgid "whenreplying"
+msgstr "Þegar svarað"
+
+msgid "replyempty"
+msgstr "ekki taka tilvitnun úr upprunalegum skilaboðum"
+
+msgid "replytopposting"
+msgstr "hefja ný skilaboð fyrir ofan tilvitnun"
+
+msgid "replytoppostingnoindent"
+msgstr "hefja ný skilaboð fyrir ofan tilvitnun (enginn inndráttur)"
+
+msgid "replybottomposting"
+msgstr "hefja ný skilaboð fyrir neðan tilvitnun"
+
+msgid "replyremovesignature"
+msgstr "Þegar er svarað skal fjarlægja upphaflega undirskrift úr skilaboðum"
+
+msgid "autoaddsignature"
+msgstr "Bæta undirskrift við sjálfkrafa"
+
+msgid "newmessageonly"
+msgstr "eingöngu ný skilaboð"
+
+msgid "replyandforwardonly"
+msgstr "svör og áframsendingar eingöngu"
+
+msgid "insertsignature"
+msgstr "Bæta undirskrift við"
+
+msgid "sigbelow"
+msgstr "Setja undirskrift fyrir neðan tilvitnuð skilaboð"
+
+msgid "sigseparator"
+msgstr "Þvinga staðlaðan aðgreini í undirskriftum"
+
+msgid "automarkread"
+msgstr "Merkja skilaboð sem lesin"
+
+msgid "afternseconds"
+msgstr "eftir $n sekúndur"
+
+msgid "reqmdn"
+msgstr "Biðja ávallt um kvittun"
+
+msgid "reqdsn"
+msgstr "Biðja ávallt um sendingarstöðu"
+
+msgid "alwayskeepformatting"
+msgstr "Alltaf halda upprunalegu sniði texta"
+
+msgid "replysamefolder"
+msgstr "Setja svarskilaboð í möppuna þar sem upphafleg skilaboð eru"
+
+msgid "defaultabook"
+msgstr "Sjálfgefin nafnaskrá"
+
+msgid "autocompletesingle"
+msgstr "Sleppa aukanetföngum í sjálfklárun"
+
+msgid "listnamedisplay"
+msgstr "Lista tengiliði sem"
+
+msgid "contactformmode"
+msgstr "Hamur tengiliðaforms"
+
+msgid "privatemode"
+msgstr "Einka (Heima)"
+
+msgid "businessmode"
+msgstr "Vinna"
+
+msgid "collectedaddresses"
+msgstr "Söfnuð póstföng"
+
+msgid "collectedrecipients"
+msgstr "Safnaðir viðtakendur"
+
+msgid "collectedrecipientsopt"
+msgstr "Geyma viðtakendur útsends pósts í"
+
+msgid "collectedsendersopt"
+msgstr "Geyma treysta sendendur í"
+
+msgid "trustedsenders"
+msgstr "Treystir sendendur"
+
+msgid "spellcheckbeforesend"
+msgstr "Athuga stafsetningu áður en skilaboð eru send"
+
+msgid "spellcheckoptions"
+msgstr "Stafsetningarvalkostir"
+
+msgid "spellcheckignoresyms"
+msgstr "Hunsa orð með táknum"
+
+msgid "spellcheckignorenums"
+msgstr "Hunsa orð með tölum"
+
+msgid "spellcheckignorecaps"
+msgstr "Hunsa orð sem eru í hástöfum"
+
+msgid "addtodict"
+msgstr "Bæta við orðalista"
+
+msgid "editoroptions"
+msgstr "Valkostir ritils"
+
+msgid "enableautolink"
+msgstr "Umbreyta gildum slóðum sjálfkrafa í vefslóðir"
+
+msgid "mailtoprotohandler"
+msgstr "Skrá fyrir meðhöndlun mailto: links samskiptamáta"
+
+msgid "standardwindows"
+msgstr "Meðhöndla sprettglugga sem venjulega glugga"
+
+msgid "forwardmode"
+msgstr "Áframsending skilaboða"
+
+msgid "inline"
+msgstr "innfellt"
+
+msgid "asattachment"
+msgstr "sem viðhengi"
+
+msgid "replyallmode"
+msgstr "Sjálfgefin aðgerð [Svara öllum] hnappsins"
+
+msgid "replyalldefault"
+msgstr "svara öllum"
+
+msgid "replyalllist"
+msgstr "einungis svara póstlista (ef hann finnst)"
+
+msgid "allmessages"
+msgstr "öll skilaboð"
+
+msgid "olderxdays"
+msgstr "eldri en $x daga"
+
+msgid "folder"
+msgstr "Mappa"
+
+msgid "folders"
+msgstr "Möppur"
+
+msgid "foldername"
+msgstr "Nafn möppu"
+
+msgid "subscribed"
+msgstr "Valin"
+
+msgid "messagecount"
+msgstr "Skilaboð"
+
+msgid "create"
+msgstr "Búa til"
+
+msgid "createfolder"
+msgstr "Búa til nýja möppu"
+
+msgid "managefolders"
+msgstr "Sýsla með möppur"
+
+msgid "specialfolders"
+msgstr "Sérstakar möppur"
+
+msgid "properties"
+msgstr "Eiginleikar"
+
+msgid "folderproperties"
+msgstr "Eiginleikar möppu"
+
+msgid "parentfolder"
+msgstr "Yfirmappa"
+
+msgid "location"
+msgstr "Staðsetning"
+
+msgid "info"
+msgstr "Upplýsingar"
+
+msgid "getfoldersize"
+msgstr "Smelltu til að sjá stærð möppu"
+
+msgid "changesubscription"
+msgstr "Smelltu til að breyta áskrift"
+
+msgid "foldertype"
+msgstr "Möpputegund"
+
+msgid "personalfolder"
+msgstr "Einkamappa"
+
+msgid "otherfolder"
+msgstr "Möppur annara notenda"
+
+msgid "sharedfolder"
+msgstr "Opinber mappa"
+
+msgid "findfolders"
+msgstr "Finna möppur"
+
+msgid "findcontacts"
+msgstr "Finna tengiliði"
+
+msgid "findmail"
+msgstr "Finna póstskilaboð"
+
+msgid "namespace.personal"
+msgstr "Einka"
+
+msgid "namespace.other"
+msgstr "Annara notenda"
+
+msgid "namespace.shared"
+msgstr "Sameiginlegar"
+
+msgid "dualuselabel"
+msgstr "Getur aðeins innihaldið"
+
+msgid "dualusemail"
+msgstr "skilaboð"
+
+msgid "dualusefolder"
+msgstr "möppur"
+
+msgid "generate"
+msgstr "Útbúa"
+
+msgid "encryptioncreatekey"
+msgstr "Búa til nýtt lyklapar"
+
+msgid "openmailvelopesettings"
+msgstr "Opna stillingar Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Þú ert með $nr samsvarandi einkalykla sem geymdir eru í Mailvelope "
+"lyklageymslunni þinni:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Auðkenni þessa sendanda er ekki ennþá með PGP-einkalykil geymdan í "
+"Mailvelope-viðbótinni. Mydirðu vilja útbúa einn slíkann til að virkja "
+"dulritun skilaboða?"
+
+msgid "encryption"
+msgstr "Dulritun"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelope-valkostir"
+
+msgid "mailvelopemainkeyring"
+msgstr "Nota aðallyklakippu Mailvelope"
+
+msgid "mailvelopenotfound"
+msgstr "Mailvelope-viðbótin er ekki virk/uppsett í vafranum þínum."
+
+msgid "mailvelopeenable"
+msgstr "Virkja"
+
+msgid "sortby"
+msgstr "Raða eftir"
+
+msgid "sortasc"
+msgstr "Raða vaxandi"
+
+msgid "sortdesc"
+msgstr "Raða minnkandi"
+
+msgid "undo"
+msgstr "Taka til baka"
+
+msgid "installedplugins"
+msgstr "Uppsettar viðbætur"
+
+msgid "plugin"
+msgstr "Viðbætur"
+
+msgid "version"
+msgstr "Útgáfa"
+
+msgid "source"
+msgstr "Uppruni"
+
+msgid "destination"
+msgstr "Áfangastaður"
+
+msgid "license"
+msgstr "Notkunarleyfi"
+
+msgid "skinauthor"
+msgstr "frá $author"
+
+msgid "support"
+msgstr "Fá aðstoð"
+
+msgid "savedsearches"
+msgstr "Vistaðar leitir"
+
+msgid "dateformatY"
+msgstr "ÁÁÁÁ"
+
+msgid "dateformaty"
+msgstr "ÁÁ"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Enska"
+
+msgid "westerneuropean"
+msgstr "Vesturevrópskt"
+
+msgid "easterneuropean"
+msgstr "Austurevrópskt"
+
+msgid "southeasterneuropean"
+msgstr "Suðausturevrópskt"
+
+msgid "baltic"
+msgstr "Eystrasalts"
+
+msgid "cyrillic"
+msgstr "Kýrílískt"
+
+msgid "arabic"
+msgstr "Arabískt"
+
+msgid "greek"
+msgstr "Grískt"
+
+msgid "hebrew"
+msgstr "Hebreskt"
+
+msgid "turkish"
+msgstr "Tyrkneskt"
+
+msgid "nordic"
+msgstr "Norrænt"
+
+msgid "thai"
+msgstr "Tælenskt"
+
+msgid "celtic"
+msgstr "Keltneskt"
+
+msgid "vietnamese"
+msgstr "Víetnamskt"
+
+msgid "japanese"
+msgstr "Japanskt"
+
+msgid "korean"
+msgstr "Kóreskt"
+
+msgid "chinese"
+msgstr "Kínverskt"
+
+msgid "arialabeltopnav"
+msgstr "Gluggastýring"
+
+msgid "arialabeltasknav"
+msgstr "Verkefni forrits"
+
+msgid "arialabeltoolbar"
+msgstr "Verkfærastika forrits"
+
+msgid "arialabellistnav"
+msgstr "Rötun um lista"
+
+msgid "arialabelactivetask"
+msgstr "Virkt verkefni"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Sía fyrir upptalningu tölvupósta"
+
+msgid "arialabelmailsearchform"
+msgstr "Leitargluggi fyrir tölvupósta"
+
+msgid "arialabelcontactsearchform"
+msgstr "Leitargluggi fyrir tengiliði"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Leitarinntak fyrir tölvupósta"
+
+msgid "arialabelquicksearchbox"
+msgstr "Leitarinntak"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Sía fyrir upptalningu á möppum"
+
+msgid "arialabelfoldersearchform"
+msgstr "Leitargluggi fyrir möppur"
+
+msgid "arialabelfolderlist"
+msgstr "Val á póstmöppum"
+
+msgid "arialabelmessagelist"
+msgstr "Upptalning á tölvupóstum"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Forskoðun skilaboða"
+
+msgid "arialabelmailboxmenu"
+msgstr "Valmynd möppuaðgerða"
+
+msgid "arialabellistselectmenu"
+msgstr "Valmynd vallista"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Valmynd fyrir upptalningu skilaboðaþráða"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Birting póstskilaboða og valkostir við röðun"
+
+msgid "arialabelmailimportdialog"
+msgstr "Innflutningsgluggi skilaboða"
+
+msgid "arialabelmessagenav"
+msgstr "Rötun um skilaboð"
+
+msgid "arialabelmessagebody"
+msgstr "Meginmál skilaboða"
+
+msgid "arialabelmessageactions"
+msgstr "Aðgerðir skilaboða"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Leitargluggi fyrir tengiliði"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Leitarinntak fyrir tengiliði"
+
+msgid "arialabelmessageheaders"
+msgstr "Skilaboðahausar"
+
+msgid "arialabelforwardingoptions"
+msgstr "Valkostir áframsendinga"
+
+msgid "arialabelreplyalloptions"
+msgstr "Valkostir við að svara-öllum"
+
+msgid "arialabelmoremessageactions"
+msgstr "Fleiri aðgerðir skilaboða"
+
+msgid "arialabelmorecontactactions"
+msgstr "Fleiri aðgerðir tengiliða"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Merka valin skilaboð sem..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Valkostir við samningu skilaboða"
+
+msgid "arialabelresponsesmenu"
+msgstr "Valmynd fyrir stöðluð svör"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Gluggi fyrir innsendingu viðhengja"
+
+msgid "arialabelattachmentmenu"
+msgstr "Valkostir viðhengja"
+
+msgid "arialabelmailtomenu"
+msgstr "Valkostir tölvupóstfanga"
+
+msgid "arialabelattachmentpreview"
+msgstr "Forskoðun viðhengis"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Listi yfir tengiliði og hópa sem velja má sem viðtakendur"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Valkostir við útflutning tengiliða"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Valkostir nafnaskrár/hópa"
+
+msgid "arialabelpreferencesform"
+msgstr "Kjörstillingagluggi"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Gluggi til stillinga auðkenna"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Gluggi fyrir breytingar á svari"
+
+msgid "arialabelsearchterms"
+msgstr "Leitarstrengir"
+
+msgid "arialabeldropactionmenu"
+msgstr "Aðgerðavalmynd fyrir draga-sleppa"
+
+msgid "arialabelheadersmenu"
+msgstr "Valmynd til að bæta við viðtakanda (haus)"
+
+msgid "arialabelimagetools"
+msgstr "Myndaverkfæri"
+
+msgid "helplistnavigation"
+msgstr "Listi yfir rötun um skilaboð með lyklaborði"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Örvar upp/niður: Flytja virkni/val um röð.\n"
+"Bil: Velja virka röð.\n"
+"Shift + upp/niður: Velja röð til viðbótar fyrir ofan/neðan.\n"
+"Ctrl + Bil: Bæta virkri röð við val/fjarlægja úr vali."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Örvar hægri/vinstri: Þenja/fella saman skilaboðaþræði (einungis í samskiptaþráðaham).\n"
+"Enter: Opna valin/virk skilaboð.\n"
+"Del/Eyða: Færa valin skilaboð í ruslið."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Opna valinn/virkan tengilið."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Villa kom upp!"
+
+msgid "messages.loginfailed"
+msgstr "Innskráning mistókst."
+
+msgid "messages.cookiesdisabled"
+msgstr "Vafrinn þinn samþykkir ekki vefkökur."
+
+msgid "messages.sessionerror"
+msgstr "Innskráningin þín er ógild eða útrunnin."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Fann misræmi í vefkökum. Endilega hreinsaðu skyndiminni vafrans af vefkökum."
+
+msgid "messages.storageerror"
+msgstr "Tenging við geymsluþjón mistókst."
+
+msgid "messages.servererror"
+msgstr "Villa í þjóni!"
+
+msgid "messages.servererrormsg"
+msgstr "Villa í þjóni: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Of margar tilraunir til innskráningar. Reyndu aftur síðar."
+
+msgid "messages.connerror"
+msgstr "Villa í tengingu (mistókst að ná í þjóninn)!"
+
+msgid "messages.dberror"
+msgstr "Villa í gagnagrunni!"
+
+msgid "messages.dbconnerror"
+msgstr "Tókst ekki að tengjast gagnagrunninum!"
+
+msgid "messages.windowopenerror"
+msgstr "Lokað var á sprettgluggann!"
+
+msgid "messages.requesttimedout"
+msgstr "Fyrirspurn féll á tíma"
+
+msgid "messages.errorreadonly"
+msgstr "Tókst ekki að framkvæma aðgerð. Mappa er skrifvarin."
+
+msgid "messages.errornoperm"
+msgstr "Tókst ekki að framkvæma aðgerð. Heimild var hafnað."
+
+msgid "messages.erroroverquota"
+msgstr "Tókst ekki að framkvæma aðgerð. Ekkert laust diskpláss."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Ekki nægt laust diskpláss. Notaðu SHIFT+DEL til að eyða skilaboðum."
+
+msgid "messages.invalidrequest"
+msgstr "Ógild fyrirspurn! Engin gögn voru vistuð."
+
+msgid "messages.invalidhost"
+msgstr "Ógilt heiti á þjóni."
+
+msgid "messages.nomessagesfound"
+msgstr "Engin skilaboð fundust í þessu pósthólfi."
+
+msgid "messages.loggedout"
+msgstr "Þú hefur lokað setunni. Bless í bili!"
+
+msgid "messages.mailboxempty"
+msgstr "Pósthólf er tómt"
+
+msgid "messages.nomessages"
+msgstr "Engin skilaboð"
+
+msgid "messages.refreshing"
+msgstr "Endurles..."
+
+msgid "messages.loading"
+msgstr "Hleð..."
+
+msgid "messages.uploading"
+msgstr "Sendi inn skrá..."
+
+msgid "messages.attaching"
+msgstr "Hengi við skrá..."
+
+msgid "messages.uploadingmany"
+msgstr "Sendi inn skrár..."
+
+msgid "messages.loadingdata"
+msgstr "Hleð inn gögnum..."
+
+msgid "messages.checkingmail"
+msgstr "Athuga með ný skilaboð..."
+
+msgid "messages.sendingmessage"
+msgstr "Sendi skilaboð..."
+
+msgid "messages.messagesent"
+msgstr "Skilaboðin voru send."
+
+msgid "messages.savingmessage"
+msgstr "Vista skilaboð..."
+
+msgid "messages.messagesaved"
+msgstr "Skilaboð vistuð í Drög."
+
+msgid "messages.successfullysaved"
+msgstr "Vistun heppnaðist!"
+
+msgid "messages.savingresponse"
+msgstr "Vista texta svars..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Ertu viss um að þú viljir eyða þessum svartexta?"
+
+msgid "messages.nocontactselected"
+msgstr "Þú hefur ekki enn valið tengilið."
+
+msgid "messages.addedsuccessfully"
+msgstr "Netfangi var bætt í netfangaskrá."
+
+msgid "messages.contactexists"
+msgstr "Tengiliður með sama nafn er þegar skráður í netfangaskrána."
+
+msgid "messages.contactnameexists"
+msgstr "Tengiliður með sama nafn er þegar skráður í netfangaskrána."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Til verndar hefur verið lokað á allar fjartengdar myndir í þessum "
+"skilaboðum."
+
+msgid "messages.blockedresources"
+msgstr "Til verndar hefur verið lokað á öll fjartengd tilföng."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Þessi skilaboð innihalda grunsamleg tölvupóstföng sem gætu verið tilraun til"
+" svika."
+
+msgid "messages.bccemail"
+msgstr "Áframsendu skilaboðin innihalda leynilega viðtakendur (Bcc)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Þessi skilaboð verða send án nokkurra breytinga, þ.e.a.s. með upprunalegu "
+"meginmáli, haus og viðtakendum."
+
+msgid "messages.encryptedmessage"
+msgstr "Þetta eru dulrituð skilaboð og því er ekki hægt að birta þau!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Þetta eru dulrituð skilaboð og er hægt að afkóða þau með vafraviðbótinni."
+
+msgid "messages.nopubkeyfor"
+msgstr "Enginn gildur dreifilykill fannst fyrir $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Enginn gildur dreifilykill fannst fyrir sendandaauðkennið þitt. Viltu "
+"dulrita skilaboðin einungis fyrir viðtakendurna?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Viðhengi sem þegar er búið að senda inn er ekki hægt að dulrita. Bættu þeim "
+"við aftur í dulritunarritlinum."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Viltu leita að þeim lyklum sem vantar á opinberum lyklaþjónum?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Eftirfarandi dreifilyklar fundust:"
+
+msgid "messages.keyservererror"
+msgstr "Mistókst að nálgast lykil á lyklaþjóni."
+
+msgid "messages.keyimportsuccess"
+msgstr "Það tókst að flytja $key dreifilykilinn inn í lyklakippuna þína."
+
+msgid "messages.nocontactsfound"
+msgstr "Engir tengiliðir fundust."
+
+msgid "messages.contactnotfound"
+msgstr "Umbeðinn tengiliður fannst ekki."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Þú verður að nota leitarform til að sjá tengiliði úr völdu nafnaskránni."
+
+msgid "messages.sendingfailed"
+msgstr "Sending skilaboðanna misheppnaðist."
+
+msgid "messages.senttooquickly"
+msgstr "Bíða í $sec sekúndu(r) áður en þessi skilaboð eru send."
+
+msgid "messages.errorsavingsent"
+msgstr "Villa kom upp við vistun sendra skilaboða."
+
+msgid "messages.errorsaving"
+msgstr "Villa kom upp við vistun."
+
+msgid "messages.errormoving"
+msgstr "Gat ekki fært skilaboðin."
+
+msgid "messages.errorcopying"
+msgstr "Gat ekki afritað skilaboð."
+
+msgid "messages.errordeleting"
+msgstr "Gat ekki eytt skilaboðum."
+
+msgid "messages.errormarking"
+msgstr "Gat ekki merkt skilaboð."
+
+msgid "messages.alerttitle"
+msgstr "Varúð"
+
+msgid "messages.confirmationtitle"
+msgstr "Ertu viss..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Ertu viss um að þú viljir eyða völdum tengiliðum?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Ertu viss um að þú viljir eyða völdum hópi?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Ertu viss um að þú viljir eyða völdum skilaboðum?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Ertu viss um að vilja eyða þessari möppu?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Ertu viss um að vilja færa þessa möppu?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Ertu viss um að þú viljir eyða öllum skilaboðum í þessari möppu?"
+
+msgid "messages.contactdeleting"
+msgstr "Eyði tengilið(um)..."
+
+msgid "messages.groupdeleting"
+msgstr "Eyði hóp..."
+
+msgid "messages.folderdeleting"
+msgstr "Eyði möppu..."
+
+msgid "messages.foldermoving"
+msgstr "Færi möppu..."
+
+msgid "messages.foldersubscribing"
+msgstr "Tek möppu í áskrift..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Segi upp áskrift að möppu..."
+
+msgid "messages.formincomplete"
+msgstr "Formið var ekki fyllt út að fullu"
+
+msgid "messages.noemailwarning"
+msgstr "Sláðu inn gildt netfang"
+
+msgid "messages.nonamewarning"
+msgstr "Sláðu inn nafn"
+
+msgid "messages.nopagesizewarning"
+msgstr "Sláðu inn síðustærð"
+
+msgid "messages.nosenderwarning"
+msgstr "Settu inn tölvupóstfang sendanda."
+
+msgid "messages.recipientsadded"
+msgstr "Tókst að bæta við tengilið(um)."
+
+msgid "messages.norecipientwarning"
+msgstr "Í það minnsta einn viðtakandi verður að vera"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Allir viðtakendur munu sjá tölvupóstföng hvers annars. Til að komast hjá "
+"þessu og vernda persónuauðkenni viðtakenda geturði notað BCC (falið afrit) "
+"reitinn."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Of margir opinberir viðtakendur"
+
+msgid "messages.nosubjectwarning"
+msgstr "Efnislínan er tóm. Viltu slá eitthvað inn í hana?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Án titils"
+
+msgid "messages.nobodywarning"
+msgstr "Viltu senda þessi skilaboð án texta?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Þessi skilaboð hafa ekki verið send og eru þau með óvistaðar breytingar. "
+"Viltu henda þessum breytingum?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Áður skrifuð en ósend skilaboð fundust.\\n\\nEfni: $subject\\nVistað: "
+"$date\\n\\nViltu endurheimta þessi skilaboð?"
+
+msgid "messages.nosearchname"
+msgstr "Sláðu inn nafn eða netfang"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Ekki er búið að senda inn öll viðhengi. Bíddu aðeins eða hættu við "
+"innsendinguna."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr skilaboð fundust."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr tengiliðir fundust."
+
+msgid "messages.searchnomatch"
+msgstr "Leit skilaði engu"
+
+msgid "messages.searching"
+msgstr "Leita..."
+
+msgid "messages.checking"
+msgstr "Gái..."
+
+msgid "messages.stillsearching"
+msgstr "Enn að leita..."
+
+msgid "messages.nospellerrors"
+msgstr "Engar innsláttarvillur fundust"
+
+msgid "messages.folderdeleted"
+msgstr "Möppu var eytt"
+
+msgid "messages.foldersubscribed"
+msgstr "Tókst að setja möppu í áskrift."
+
+msgid "messages.folderunsubscribed"
+msgstr "Tókst að taka möppu úr áskrift."
+
+msgid "messages.folderpurged"
+msgstr "Tókst að tæma möppu."
+
+msgid "messages.folderexpunged"
+msgstr "Tókst að þjappa möppu."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Tókst að eyða."
+
+msgid "messages.converting"
+msgstr "Fjarlægi snið..."
+
+msgid "messages.messageopenerror"
+msgstr "Gat ekki hlaðið skilaboðum inn af póstþjóni."
+
+msgid "messages.filelinkerror"
+msgstr "Mistókst að hengja við skrá."
+
+msgid "messages.fileuploaderror"
+msgstr "Innsending skráar mistókst."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"Innflutningur á mörgum CSV-skrám með mismunandi gagnasviðum er ekki studdur."
+
+msgid "messages.filesizeerror"
+msgstr "Innsenda skráin er yfir $size leyfilegri stærð."
+
+msgid "messages.filecounterror"
+msgstr "Þú getur í mesta lagi sent inn $count skrár í einu."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Mistókst að hengja við skrá. Fór yfir leyfilega hámarksstærð ($size) "
+"skilaboða."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Hámarksstærð skilaboða ($size) náð. $num skilaboð hafa ekki verið hengd við."
+
+msgid "messages.copysuccess"
+msgstr "Tókst að afrita $nr tengiliði"
+
+msgid "messages.movesuccess"
+msgstr "Tókst að færa $nr tengiliði"
+
+msgid "messages.copyerror"
+msgstr "Gat ekki afritað neina tengiliði."
+
+msgid "messages.moveerror"
+msgstr "Gat ekki fært neina tengiliði."
+
+msgid "messages.sourceisreadonly"
+msgstr "Þessi nafnaskrárgjafi er skrifvarinn."
+
+msgid "messages.errorsavingcontact"
+msgstr "Gat ekki vistað vistfang tengiliðar."
+
+msgid "messages.movingmessage"
+msgstr "Færi skilaboð..."
+
+msgid "messages.copyingmessage"
+msgstr "Afrita skilaboð..."
+
+msgid "messages.copyingcontact"
+msgstr "Afrita tengiliði..."
+
+msgid "messages.movingcontact"
+msgstr "Færi tengiliði..."
+
+msgid "messages.deletingmessage"
+msgstr "Eyði skilaboðum..."
+
+msgid "messages.markingmessage"
+msgstr "Merki skilaboð..."
+
+msgid "messages.addingmember"
+msgstr "Bæti tengiliðum í hópinn..."
+
+msgid "messages.removingmember"
+msgstr "Fjarlægi tengiliði úr hópi..."
+
+msgid "messages.receiptsent"
+msgstr "Tókst að senda leskvittun."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Gat ekki sent leskvittunina."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Ertu viss um að vilja eyða þessu auðkenni?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Þú getur ekki eytt þessu auðkenni, þetta er það síðasta sem er eftir."
+
+msgid "messages.forbiddencharacter"
+msgstr "Heiti möppu inniheldur óleyfilegan staf."
+
+msgid "messages.selectimportfile"
+msgstr "Veldu skrá til að senda inn."
+
+msgid "messages.addresswriterror"
+msgstr "Valin nafnaskrá er ekki ritanleg."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Tókst að bæta tengiliðunum í þennan hóp."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Tókst að fjarlægja tengiliði úr þessum hóp."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Engin breyting á úthlutun hópa."
+
+msgid "messages.importwait"
+msgstr "Flyt inn, bíddu aðeins..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Innflutningur mistókst! Innsenda skráin er ekki gild gagnainnflutningsskrá"
+
+msgid "messages.importconfirm"
+msgstr "<b>Tókst að flytja inn $inserted tengiliði</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>Sleppti $skipped fyrirliggjandi tengiliðum</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>Sleppti $skipped ógildum tengiliðum</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "Mistókst að flytja inn $skipped gilda tengiliði</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "Tókst að flytja inn $nr skilaboð"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Innflutningur mistókst! Innsenda skráin er ekki gild skilaboða- eða "
+"pósthólfsskrá"
+
+msgid "messages.opnotpermitted"
+msgstr "Aðgerð ekki leyfð!"
+
+msgid "messages.nofromaddress"
+msgstr "Vantar tölvupóstfang í völdu auðkenni."
+
+msgid "messages.editorwarning"
+msgstr "Ef skipt er um ritil getur snið texta tapast. Viltu halda áfram?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Alvarleg villa kom upp í uppsetningu. Hafðu strax samband við kerfisstjórann"
+" þinn. <b>Ekki var hægt að senda skilaboðin.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP-villa ($code): Tenging við póstþjón mistókst."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP-villa ($code): Auðkenning mistókst."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP-villa ($code): Mistókst að setja sendanda \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP-villa ($code): Mistókst að bæta við viðtakandanum \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP-villa: Mistókst að þátta lista yfir viðtakendur."
+
+msgid "messages.smtputf8error"
+msgstr "SMTP-villa: Vefþjónn styður ekki Unicode í tölvupóstföngum."
+
+msgid "messages.smtpsizeerror"
+msgstr "SMTP-villa: Stærð skilaboða yfir takmörkum vefþjóns ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP villa: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Ógilt tölvupóstfang: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Of margir viðtakendur. Fækkaðu þeim í $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Fjöldi meðlima í hópnum fer fram úr hámarksfjöldanum $max."
+
+msgid "messages.internalerror"
+msgstr "Innri villa kom upp. Prófaðu aftur."
+
+msgid "messages.contactdelerror"
+msgstr "Gat ekki eytt tengilið(um)."
+
+msgid "messages.contactdeleted"
+msgstr "Tókst að eyða tengilið(um)."
+
+msgid "messages.contactrestoreerror"
+msgstr "Gat ekki endurheimt eydda tengiliði."
+
+msgid "messages.contactrestored"
+msgstr "Tókst að endurheimta tengilið(i)."
+
+msgid "messages.groupdeleted"
+msgstr "Tókst að eyða hópi."
+
+msgid "messages.grouprenamed"
+msgstr "Tókst að endurnefna hóp."
+
+msgid "messages.groupcreated"
+msgstr "Tókst að búa til hóp."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Tókst að eyða vistaðri leit."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Gat ekki eytt vistaðri leit."
+
+msgid "messages.savedsearchcreated"
+msgstr "Tókst að búa til vistaða leit."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Gat ekki búið til vistaða leit."
+
+msgid "messages.messagedeleted"
+msgstr "Tókst að eyða skilaboðum."
+
+msgid "messages.messagemoved"
+msgstr "Tókst að færa skilaboð."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Tókst að færa skilaboð í rusl."
+
+msgid "messages.messagecopied"
+msgstr "Tókst að afrita skilaboð."
+
+msgid "messages.messagemarked"
+msgstr "Tókst að merkja skilaboð."
+
+msgid "messages.autocompletechars"
+msgstr "Settu inn a.m.k. $min stafi fyrir orðaklárun."
+
+msgid "messages.autocompletemore"
+msgstr "Fleiri samsvarandi færslur fundust. Sláðu inn fleiri stafi."
+
+msgid "messages.namecannotbeempty"
+msgstr "Nafn má ekki vera autt."
+
+msgid "messages.nametoolong"
+msgstr "Nafn er of langt."
+
+msgid "messages.namedotforbidden"
+msgstr "Heiti möppu má ekki byrja á punkti."
+
+msgid "messages.folderupdated"
+msgstr "Tókst að uppfæra möppu"
+
+msgid "messages.foldercreated"
+msgstr "Tókst að búa til möppu."
+
+msgid "messages.invalidimageformat"
+msgstr "Ekki gilt myndasnið."
+
+msgid "messages.mispellingsfound"
+msgstr "Stafsetningarvillur fundust í skilaboðunum."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Tókst ekki að útbúa möppu eða færa inn í valda yfirmöppu. Það vantar "
+"aðgangsheimildir."
+
+msgid "messages.messagetoobig"
+msgstr ""
+"Efnishluti skilaboðanna er of stór til að hægt sé að meðhöndla skilaboðin."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Þetta viðhengi er grunsamlegt þar sem tegund þess samsvarar ekki tegundinni "
+"sem gefin er upp í skilaboðunum. Ef þú treystir ekki sendandanum, ættirðu "
+"ekki að opna það í vafranum því það gæti innihaldið "
+"óværur.<br/><br/><em>Átti von á: $expected; fann: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Aðvörun: Þessi vefpóstþjónusta þarfnast JavaScript! Til að nota hana þarftu "
+"að virkja JavaScript í stillingum vafrans."
+
+msgid "messages.messageissent"
+msgstr ""
+"Þessi skilaboð hafa þegar verið send, en hafa ekki verið vistuð. Viltu vista"
+" þau núna?"
+
+msgid "messages.errnotfound"
+msgstr "Skrá fannst ekki"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Umbeðið tilfang fannst ekki!"
+
+msgid "messages.errfailedrequest"
+msgstr "Beiðni misfórst"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Auðkenning mistókst"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Gat ekki gengið úr skugga um að þú hafir heimild til að nota þessa þjónustu!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Athugun á beiðni mistókst"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Til að verja þig er aðgangur að þessu tilfang gerður öruggur á móti CSRF.\n"
+"Ef þú sérð þetta er líklegast að þú hafir ekki skráð þig út áður en þú hættir í vefviðmótinu.\n"
+"\n"
+"Nú þarftu að grípa til aðgerða til að geta haldið áfram."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Hafðu samband við kerfisstjóra þjónsins þíns"
+
+msgid "messages.clicktoresumesession"
+msgstr "Smelltu hér til að halda áfram með fyrri setu"
+
+msgid "messages.errcomposesession"
+msgstr "Villa í samningarsetu"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Umbeðin samningarseta fannst ekki."
+
+msgid "messages.clicktocompose"
+msgstr "Smelltu hér til að búa til ný skilaboð"
+
+msgid "messages.nosupporterror"
+msgstr "Þessi eiginleiki er ekki studdur af vafranum þínum."
+
+msgid "messages.siginserted"
+msgstr "Tókst að setja inn undirskrift."
+
+msgid "messages.responseinserted"
+msgstr "Tókst að setja inn svar."
+
+msgid "messages.noresponsesavailable"
+msgstr "Engin svör tiltæk"
+
+msgid "messages.listempty"
+msgstr "Listinn er tómur."
+
+msgid "messages.listusebutton"
+msgstr "Notaðu 'Búa til' hnappinn til að bæta við færslu."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Tókst að útbúa nýtt lyklapar fyrir $identity."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Þetta viðhengi lítur út fyrir að vera tómt. <br>Hafðu samband við þann sem "
+"sendi þetta."
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth-innskráning mistókst. Reyndu aftur."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Auðkenningarbeiðni var ógild eða ófullgerð."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Auðkenningarþjónn eða notandi höfnuðu beiðninni."

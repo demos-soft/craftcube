@@ -1,0 +1,2907 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Tervetuloa $product -käyttäjäksi"
+
+msgid "username"
+msgstr "Käyttäjätunnus"
+
+msgid "password"
+msgstr "Salasana"
+
+msgid "server"
+msgstr "Palvelin"
+
+msgid "login"
+msgstr "Kirjaudu"
+
+msgid "oauthlogin"
+msgstr "Kirjaudu palveluntarjoajan $provider avulla"
+
+msgid "menu"
+msgstr "Valikko"
+
+msgid "logout"
+msgstr "Kirjaudu ulos"
+
+msgid "mail"
+msgstr "Sähköposti"
+
+msgid "settings"
+msgstr "Asetukset"
+
+msgid "addressbook"
+msgstr "Osoitekirja"
+
+msgid "darkmode"
+msgstr "Tumma tila"
+
+msgid "lightmode"
+msgstr "Vaalea tila"
+
+msgid "inbox"
+msgstr "Saapuneet"
+
+msgid "drafts"
+msgstr "Luonnokset"
+
+msgid "sent"
+msgstr "Lähetetyt"
+
+msgid "trash"
+msgstr "Roskakori"
+
+msgid "junk"
+msgstr "Roskaposti"
+
+msgid "show_real_foldernames"
+msgstr "Näytä erikoiskansioiden oikeat nimet"
+
+msgid "subject"
+msgstr "Aihe"
+
+msgid "from"
+msgstr "Lähettäjä"
+
+msgid "sender"
+msgstr "Lähettäjä"
+
+msgid "to"
+msgstr "Vastaanottaja"
+
+msgid "cc"
+msgstr "Kopio"
+
+msgid "bcc"
+msgstr "Piilokopio"
+
+msgid "replyto"
+msgstr "Vastaus osoitteeseen"
+
+msgid "followupto"
+msgstr "Keskustelunsiirto"
+
+msgid "date"
+msgstr "Päiväys"
+
+msgid "size"
+msgstr "Koko"
+
+msgid "priority"
+msgstr "Tärkeys"
+
+msgid "organization"
+msgstr "Organisaatio"
+
+msgid "readstatus"
+msgstr "Luettu"
+
+msgid "listoptions"
+msgstr "Listaa valinnat..."
+
+msgid "listoptionstitle"
+msgstr "Listavalinnat"
+
+msgid "mailboxlist"
+msgstr "Kansiot"
+
+msgid "messagesfromto"
+msgstr "Viestit $from-$to/$count"
+
+msgid "threadsfromto"
+msgstr "Viestiketjut $from-$to/$count"
+
+msgid "messagenrof"
+msgstr "Viesti $nr/$count"
+
+msgid "fromtoshort"
+msgstr "$from - $to (yhteensä $count)"
+
+msgid "copy"
+msgstr "Kopioi"
+
+msgid "move"
+msgstr "Siirrä"
+
+msgid "moveto"
+msgstr "siirrä kansioon..."
+
+msgid "copyto"
+msgstr "Kopioi..."
+
+msgid "download"
+msgstr "lataa"
+
+msgid "open"
+msgstr "Avaa"
+
+msgid "showattachment"
+msgstr "Näytä"
+
+msgid "showanyway"
+msgstr "Näytä silti"
+
+msgid "filename"
+msgstr "Tiedoston nimi"
+
+msgid "filesize"
+msgstr "Tiedoston koko"
+
+msgid "addtoaddressbook"
+msgstr "Lisää osoitekirjaan"
+
+msgid "sun"
+msgstr "Su"
+
+msgid "mon"
+msgstr "Ma"
+
+msgid "tue"
+msgstr "Ti"
+
+msgid "wed"
+msgstr "Ke"
+
+msgid "thu"
+msgstr "To"
+
+msgid "fri"
+msgstr "Pe"
+
+msgid "sat"
+msgstr "La"
+
+msgid "sunday"
+msgstr "Sunnuntai"
+
+msgid "monday"
+msgstr "Maanantai"
+
+msgid "tuesday"
+msgstr "Tiistai"
+
+msgid "wednesday"
+msgstr "Keskiviikko"
+
+msgid "thursday"
+msgstr "Torstai"
+
+msgid "friday"
+msgstr "Perjantai"
+
+msgid "saturday"
+msgstr "Lauantai"
+
+msgid "jan"
+msgstr "Tammi"
+
+msgid "feb"
+msgstr "Helmi"
+
+msgid "mar"
+msgstr "Maalis"
+
+msgid "apr"
+msgstr "Huhti"
+
+msgid "may"
+msgstr "Touko"
+
+msgid "jun"
+msgstr "Kesä"
+
+msgid "jul"
+msgstr "Heinä"
+
+msgid "aug"
+msgstr "Elo"
+
+msgid "sep"
+msgstr "Syys"
+
+msgid "oct"
+msgstr "Loka"
+
+msgid "nov"
+msgstr "Marras"
+
+msgid "dec"
+msgstr "Joulu"
+
+msgid "longjan"
+msgstr "Tammikuu"
+
+msgid "longfeb"
+msgstr "Helmikuu"
+
+msgid "longmar"
+msgstr "Maaliskuu"
+
+msgid "longapr"
+msgstr "Huhtikuu"
+
+msgid "longmay"
+msgstr "Touko"
+
+msgid "longjun"
+msgstr "Kesäkuu"
+
+msgid "longjul"
+msgstr "Heinäkuu"
+
+msgid "longaug"
+msgstr "Elokuu"
+
+msgid "longsep"
+msgstr "Syyskuu"
+
+msgid "longoct"
+msgstr "Lokakuu"
+
+msgid "longnov"
+msgstr "Marraskuu"
+
+msgid "longdec"
+msgstr "Joulukuu"
+
+msgid "today"
+msgstr "Tänään"
+
+msgid "refresh"
+msgstr "Päivitä"
+
+msgid "checkmail"
+msgstr "Tarkista saapuneet viestit"
+
+msgid "compose"
+msgstr "Viestin kirjoitus"
+
+msgid "writenewmessage"
+msgstr "Kirjoita uusi viesti"
+
+msgid "reply"
+msgstr "Vastaa"
+
+msgid "replytomessage"
+msgstr "Vastaa viestiin"
+
+msgid "replytoallmessage"
+msgstr "Vastaa kaikille"
+
+msgid "replyall"
+msgstr "Vastaa kaikille"
+
+msgid "replylist"
+msgstr "Vastaa listalle"
+
+msgid "forward"
+msgstr "Välitä eteenpäin"
+
+msgid "forwardinline"
+msgstr "Välitä viesti"
+
+msgid "forwardattachment"
+msgstr "Välitä viesti liitteenä"
+
+msgid "forwardmessage"
+msgstr "Välitä viesti"
+
+msgid "bouncemsg"
+msgstr "Lähetä edelleen (bounce)"
+
+msgid "bounce"
+msgstr "Lähetä edelleen"
+
+msgid "deletemessage"
+msgstr "Poista viesti"
+
+msgid "undeletemessage"
+msgstr "Kumoa viestin poisto"
+
+msgid "movemessagetotrash"
+msgstr "Siirrä viesti roskakoriin"
+
+msgid "printmessage"
+msgstr "Tulosta viesti"
+
+msgid "previousmessage"
+msgstr "Näytä edellinen viesti"
+
+msgid "firstmessage"
+msgstr "Näytä ensimmäinen viesti"
+
+msgid "nextmessage"
+msgstr "Näytä edellinen viesti"
+
+msgid "lastmessage"
+msgstr "Näytä viimeinen viesti"
+
+msgid "backtolist"
+msgstr "Takaisin viesteihin"
+
+msgid "viewsource"
+msgstr "Näytä lähdekoodi"
+
+msgid "mark"
+msgstr "Merkitse"
+
+msgid "markmessages"
+msgstr "Merkitse viestit"
+
+msgid "markread"
+msgstr "Luetuksi"
+
+msgid "markunread"
+msgstr "Lukemattomaksi"
+
+msgid "markflagged"
+msgstr "Korostetuksi"
+
+msgid "markunflagged"
+msgstr "Korostamattomaksi"
+
+msgid "markundeleted"
+msgstr "Poistamattomaksi"
+
+msgid "markasread"
+msgstr "Merkitse luetuksi"
+
+msgid "markasunread"
+msgstr "Merkitse lukemattomaksi"
+
+msgid "markasflagged"
+msgstr "Merkitse korostetuksi"
+
+msgid "markasunflagged"
+msgstr "Merkitse korostamattomaksi"
+
+msgid "moreactions"
+msgstr "Lisää toimintoja..."
+
+msgid "markallread"
+msgstr "Merkitse kaikki luetuiksi"
+
+msgid "folders-cur"
+msgstr "Vain valittu kansio"
+
+msgid "folders-sub"
+msgstr "Valittu kansio ja alikansiot"
+
+msgid "folders-all"
+msgstr "Kaikki kansiot"
+
+msgid "more"
+msgstr "Lisää"
+
+msgid "back"
+msgstr "Takaisin"
+
+msgid "options"
+msgstr "Asetukset"
+
+msgid "composeoptions"
+msgstr "Kirjoitusasetukset"
+
+msgid "optionsandattachments"
+msgstr "Asetukset ja liitteet"
+
+msgid "actions"
+msgstr "Toiminnot"
+
+msgid "first"
+msgstr "Ensimmäinen"
+
+msgid "last"
+msgstr "Viimeinen"
+
+msgid "previous"
+msgstr "Edellinen"
+
+msgid "next"
+msgstr "Seuraava"
+
+msgid "select"
+msgstr "Valitse"
+
+msgid "selection"
+msgstr "Valinta"
+
+msgid "all"
+msgstr "Kaikki"
+
+msgid "none"
+msgstr "Ei mikään"
+
+msgid "currpage"
+msgstr "Nykyinen sivu"
+
+msgid "isread"
+msgstr "Luettu"
+
+msgid "unread"
+msgstr "Lukemattomat"
+
+msgid "flagged"
+msgstr "Korostettu"
+
+msgid "unflagged"
+msgstr "Ei merkitty"
+
+msgid "unanswered"
+msgstr "Vastaamaton"
+
+msgid "withattachment"
+msgstr "Liitteen kera"
+
+msgid "deleted"
+msgstr "Poistettu"
+
+msgid "undeleted"
+msgstr "Ei poistettu"
+
+msgid "replied"
+msgstr "Vastattu"
+
+msgid "forwarded"
+msgstr "Välitetty"
+
+msgid "invert"
+msgstr "Käännä"
+
+msgid "filter"
+msgstr "Suodin"
+
+msgid "list"
+msgstr "Listaus"
+
+msgid "threads"
+msgstr "Viestiketjut"
+
+msgid "expand-all"
+msgstr "Laajenna kaikki"
+
+msgid "expand-unread"
+msgstr "Laajenna lukemattomat"
+
+msgid "collapse-all"
+msgstr "Kutista kaikki"
+
+msgid "threaded"
+msgstr "Säikeet"
+
+msgid "showunread"
+msgstr "Näytä lukemattomat viestit"
+
+msgid "autoexpand_threads"
+msgstr "Laajenna viestiketjut automaattisesti"
+
+msgid "do_expand"
+msgstr "kaikki viestiketjut"
+
+msgid "expand_only_unread"
+msgstr "vain ne joissa lukemattomia viestejä"
+
+msgid "fromto"
+msgstr "Lähettäjä/Vastaanottaja"
+
+msgid "flag"
+msgstr "Merkitse"
+
+msgid "attachment"
+msgstr "Liite"
+
+msgid "nonesort"
+msgstr "Ei mikään"
+
+msgid "sentdate"
+msgstr "Lähetysaika"
+
+msgid "arrival"
+msgstr "Saapumisaika"
+
+msgid "asc"
+msgstr "nouseva"
+
+msgid "desc"
+msgstr "laskeva"
+
+msgid "listcolumns"
+msgstr "Näkyvät kentät"
+
+msgid "listsorting"
+msgstr "Lajittelu kenttä"
+
+msgid "listorder"
+msgstr "Lajittelu järjestys"
+
+msgid "listmode"
+msgstr "Listausnäkymä"
+
+msgid "lmode"
+msgstr "Listaustapa"
+
+msgid "layout"
+msgstr "Asettelu"
+
+msgid "layoutwidescreen"
+msgstr "Laajakuva"
+
+msgid "layoutdesktop"
+msgstr "Työpöytä"
+
+msgid "layoutlist"
+msgstr "Listaus"
+
+msgid "layoutwidescreendesc"
+msgstr "Laajakuva (3 kolumnin näkymä)"
+
+msgid "layoutdesktopdesc"
+msgstr "Työpöytä (laaja lista ja esikatselu)"
+
+msgid "layoutlistdesc"
+msgstr "Lista (ei esikatselua)"
+
+msgid "folderactions"
+msgstr "Kansiotoiminnot..."
+
+msgid "compact"
+msgstr "Tiivistä"
+
+msgid "empty"
+msgstr "Tyhjennä"
+
+msgid "importmessages"
+msgstr "Tuo viestejä"
+
+msgid "mailimportdesc"
+msgstr ""
+"Voit lisätä sähköpostia tiedostoissa käyttäen <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a>- tai <a"
+" href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>-muotoa."
+
+msgid "mailimportzip"
+msgstr "Useat tiedostot on mahdollista pakata zip-arkistoihin."
+
+msgid "quota"
+msgstr "Levytila"
+
+msgid "unknown"
+msgstr "tuntematon"
+
+msgid "unlimited"
+msgstr "rajoittamaton"
+
+msgid "quotatype"
+msgstr "Kiintiön tyyppi"
+
+msgid "quotatotal"
+msgstr "Raja"
+
+msgid "quotaused"
+msgstr "Käytetty"
+
+msgid "quotastorage"
+msgstr "Levytila"
+
+msgid "quotamessage"
+msgstr "Viestien määrä"
+
+msgid "shortheaderdate"
+msgstr "$date"
+
+msgid "shortheaderto"
+msgstr "Vastaanottajalle $to, $date"
+
+msgid "shortheaderfrom"
+msgstr "Lähettäjältä $from, $date"
+
+msgid "quicksearch"
+msgstr "Pikahaku"
+
+msgid "searchplaceholder"
+msgstr "Hae..."
+
+msgid "resetsearch"
+msgstr "Nollaa haku"
+
+msgid "searchmod"
+msgstr "Hakukriteerit"
+
+msgid "msgtext"
+msgstr "Koko viesti"
+
+msgid "body"
+msgstr "Runko"
+
+msgid "type"
+msgstr "Tyyppi"
+
+msgid "namex"
+msgstr "Nimi"
+
+msgid "searchscope"
+msgstr "Rajaus"
+
+msgid "currentfolder"
+msgstr "Nykyinen kansio"
+
+msgid "subfolders"
+msgstr "Nykyinen kansio ja sen alikansiot"
+
+msgid "allfolders"
+msgstr "Kaikki kansiot"
+
+msgid "searchinterval-1W"
+msgstr "viikkoa vanhempi"
+
+msgid "searchinterval-1M"
+msgstr "kuukautta vanhempi"
+
+msgid "searchinterval-1Y"
+msgstr "vuotta vanhempi"
+
+msgid "searchinterval1W"
+msgstr "viikkoa uudempi"
+
+msgid "searchinterval1M"
+msgstr "kuukautta uudempi"
+
+msgid "searchinterval1Y"
+msgstr "vuotta uudempi"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Avaa uudessa ikkunassa"
+
+msgid "emlsave"
+msgstr "Tallenna (.eml)"
+
+msgid "changeformattext"
+msgstr "Näytä raakatekstimuodossa"
+
+msgid "changeformathtml"
+msgstr "Näytä HTML-muodossa"
+
+msgid "editasnew"
+msgstr "Muokkaa uutena"
+
+msgid "send"
+msgstr "Lähetä"
+
+msgid "sendmessage"
+msgstr "Lähetä viesti"
+
+msgid "savemessage"
+msgstr "Tallenna tämä luonnos"
+
+msgid "addattachment"
+msgstr "Liitetiedosto"
+
+msgid "charset"
+msgstr "Merkistö"
+
+msgid "editortype"
+msgstr "Editorin tyyppi"
+
+msgid "returnreceipt"
+msgstr "Perillesaapumisilmoitus"
+
+msgid "dsn"
+msgstr "Toimituksen tilailmoitus"
+
+msgid "keepformatting"
+msgstr "Säilytä muotoilu"
+
+msgid "mailreplyintro"
+msgstr "$sender kirjoitti $date:"
+
+msgid "originalmessage"
+msgstr "Alkuperäinen viesti"
+
+msgid "selectimage"
+msgstr "Valitse kuva"
+
+msgid "addimage"
+msgstr "Lisää kuva"
+
+msgid "selectmedia"
+msgstr "Valitse elokuva"
+
+msgid "addmedia"
+msgstr "Lisää elokuva"
+
+msgid "encrypt"
+msgstr "Salaa"
+
+msgid "encryptmessage"
+msgstr "Salaa viesti"
+
+msgid "encryptmessagemailvelope"
+msgstr "Salaa viesti Mailvelopella"
+
+msgid "importpubkeys"
+msgstr "Tuo julkiset avaimet"
+
+msgid "encryptedsendialog"
+msgstr "Lähetetään salattua viestiä"
+
+msgid "encryptandsign"
+msgstr "Salaa ja allekirjoita"
+
+msgid "keyid"
+msgstr "Avaimen tunniste"
+
+msgid "keylength"
+msgstr "Bittiä"
+
+msgid "keyexpired"
+msgstr "Vanhentunut"
+
+msgid "keyrevoked"
+msgstr "Kumottu"
+
+msgid "bccinstead"
+msgstr "Käytä Piilokopiota"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Lisää"
+
+msgid "insertcontact"
+msgstr "Lisää yhteystieto(ja)"
+
+msgid "recipient"
+msgstr "Vastaanottaja"
+
+msgid "recipientedit"
+msgstr "Vastaanottajan muokkaus"
+
+msgid "editidents"
+msgstr "Muokkaa identiteettejä"
+
+msgid "spellcheck"
+msgstr "Oikeinkirjoitus"
+
+msgid "checkspelling"
+msgstr "Tarkista oikeinkirjoitus"
+
+msgid "resumeediting"
+msgstr "Jatka muokkausta"
+
+msgid "revertto"
+msgstr "Muuta takaisin"
+
+msgid "restore"
+msgstr "Palauta"
+
+msgid "restoremessage"
+msgstr "Palautetaanko viesti?"
+
+msgid "ignore"
+msgstr "Jätä huomiotta"
+
+msgid "responses"
+msgstr "Vastaukset"
+
+msgid "insertresponse"
+msgstr "Lisää vastaus"
+
+msgid "manageresponses"
+msgstr "Hallitse vastauksia"
+
+msgid "newresponse"
+msgstr "Luo uusi vastaus"
+
+msgid "addresponse"
+msgstr "Lisää vastaus"
+
+msgid "editresponse"
+msgstr "Muokkaa vastausta"
+
+msgid "editresponses"
+msgstr "Muokkaa vastauksia"
+
+msgid "responsename"
+msgstr "Nimi"
+
+msgid "responsetext"
+msgstr "Vastausteksti"
+
+msgid "attach"
+msgstr "Liitä"
+
+msgid "attachments"
+msgstr "Liitetiedostot"
+
+msgid "upload"
+msgstr "Lisää"
+
+msgid "uploadprogress"
+msgstr "$percent ($current/$total)"
+
+msgid "close"
+msgstr "Sulje"
+
+msgid "messageoptions"
+msgstr "Viestin asetukset..."
+
+msgid "togglecomposeoptions"
+msgstr "Vaihda kirjoitusvalintoja"
+
+msgid "attachmentrename"
+msgstr "Nimeä liite uudelleen"
+
+msgid "low"
+msgstr "Matala"
+
+msgid "lowest"
+msgstr "Matalin"
+
+msgid "normal"
+msgstr "Normaali"
+
+msgid "high"
+msgstr "Korkea"
+
+msgid "highest"
+msgstr "Korkein"
+
+msgid "nosubject"
+msgstr "(ei aihetta)"
+
+msgid "showimages"
+msgstr "Näytä kuvat"
+
+msgid "allow"
+msgstr "Salli"
+
+msgid "alwaysshow"
+msgstr "Näytä aina lähettäjältä $sender saapuneet kuvat"
+
+msgid "alwaysallow"
+msgstr "Salli aina lähettäjältä $sender"
+
+msgid "isdraft"
+msgstr "Tämä on luonnosviesti."
+
+msgid "andnmore"
+msgstr "$nr lisää..."
+
+msgid "details"
+msgstr "Tiedot"
+
+msgid "summary"
+msgstr "Yhteenveto"
+
+msgid "headers"
+msgstr "Otsakkeet"
+
+msgid "allheaders"
+msgstr "Kaikki otsakkeet..."
+
+msgid "togglemoreheaders"
+msgstr "Näytä lisää viestiotsakkeita"
+
+msgid "togglefullheaders"
+msgstr "Viestin otsakkeet päällä/pois"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Tavallinen teksti"
+
+msgid "savesentmessagein"
+msgstr "Tallenna lähetetty viesti kansioon"
+
+msgid "dontsave"
+msgstr "Älä tallenna"
+
+msgid "maxuploadsize"
+msgstr "Suurin sallittu tiedostokoko on $size"
+
+msgid "addcc"
+msgstr "Lisää kopio"
+
+msgid "addbcc"
+msgstr "Lisää piilokopio"
+
+msgid "addreplyto"
+msgstr "Lisää vastausosoite"
+
+msgid "addfollowupto"
+msgstr "Lisää keskustelunsiirto"
+
+msgid "sendreceipt"
+msgstr "Lähetä lukukuittaus?"
+
+msgid "mdnrequest"
+msgstr ""
+"Viestin lähettäjä on pyytänyt kuittauksen siitä että olet lukenut viestin. "
+"Haluatko lähettää kuittauksen?"
+
+msgid "receiptread"
+msgstr "Lukukuittaus"
+
+msgid "yourmessage"
+msgstr "Tämä viesti on kuittaus lähettämällesi viestille"
+
+msgid "receiptnote"
+msgstr ""
+"Huom! Kuittaus tarkoittaa vain sitä, että viesti on avattu vastaanottajan "
+"tietokoneella. Se ei tarkoita että vastaanottaja on myös lukenut tai "
+"ymmärtänyt viestin."
+
+msgid "sendalwaysto"
+msgstr "Lähetä aina lähettäjälle $email"
+
+msgid "zoomin"
+msgstr "Lähennä"
+
+msgid "zoomout"
+msgstr "Loitonna"
+
+msgid "rotate"
+msgstr "Käännä"
+
+msgid "increaseimage"
+msgstr "Suurenna kuvaa"
+
+msgid "decreaseimage"
+msgstr "Pienennä kuvaa"
+
+msgid "rotateimage"
+msgstr "Käännä kuvaa"
+
+msgid "showtools"
+msgstr "Näytä kuvatyökalut"
+
+msgid "hidetools"
+msgstr "Piilota kuvatyökalut"
+
+msgid "name"
+msgstr "Näkyvä nimi"
+
+msgid "firstname"
+msgstr "Etunimi"
+
+msgid "surname"
+msgstr "Sukunimi"
+
+msgid "middlename"
+msgstr "Toinen nimi"
+
+msgid "nameprefix"
+msgstr "Etuliite"
+
+msgid "namesuffix"
+msgstr "Jälkiliite"
+
+msgid "nickname"
+msgstr "Lempinimi"
+
+msgid "jobtitle"
+msgstr "Titteli"
+
+msgid "department"
+msgstr "Osasto"
+
+msgid "gender"
+msgstr "Sukupuoli"
+
+msgid "maidenname"
+msgstr "Tyttönimi"
+
+msgid "email"
+msgstr "Sähköposti"
+
+msgid "phone"
+msgstr "Puhelin"
+
+msgid "address"
+msgstr "Osoite"
+
+msgid "street"
+msgstr "Katu"
+
+msgid "locality"
+msgstr "Kaupunki"
+
+msgid "zipcode"
+msgstr "Postinumero"
+
+msgid "region"
+msgstr "Osavaltio tai lääni"
+
+msgid "country"
+msgstr "Maa"
+
+msgid "birthday"
+msgstr "Syntymäpäivä"
+
+msgid "anniversary"
+msgstr "Vuosipäivä"
+
+msgid "website"
+msgstr "Verkkosivu"
+
+msgid "instantmessenger"
+msgstr "Pikaviestin"
+
+msgid "notes"
+msgstr "Muistiinpanot"
+
+msgid "male"
+msgstr "mies"
+
+msgid "female"
+msgstr "nainen"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Päällikkö"
+
+msgid "assistant"
+msgstr "Avustaja"
+
+msgid "spouse"
+msgstr "Puoliso"
+
+msgid "allfields"
+msgstr "Kaikki kentät"
+
+msgid "search"
+msgstr "Haku"
+
+msgid "searchresult"
+msgstr "Haun tulos"
+
+msgid "advsearch"
+msgstr "Tarkennettu haku"
+
+msgid "advanced"
+msgstr "Lisäasetukset"
+
+msgid "other"
+msgstr "Muu"
+
+msgid "printcontact"
+msgstr "Tulosta yhteystieto"
+
+msgid "qrcode"
+msgstr "QR-koodi"
+
+msgid "typehome"
+msgstr "Koti"
+
+msgid "typework"
+msgstr "Työ"
+
+msgid "typeother"
+msgstr "Muu"
+
+msgid "typemobile"
+msgstr "Matkapuhelin"
+
+msgid "typemain"
+msgstr "Oma"
+
+msgid "typehomefax"
+msgstr "Kotifaksi"
+
+msgid "typeworkfax"
+msgstr "Työfaksi"
+
+msgid "typecar"
+msgstr "Auto"
+
+msgid "typepager"
+msgstr "Hakulaite"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Avustaja"
+
+msgid "typehomepage"
+msgstr "Kotisivu"
+
+msgid "typeblog"
+msgstr "Blogi"
+
+msgid "typeprofile"
+msgstr "Profiili"
+
+msgid "addfield"
+msgstr "Lisää kenttä..."
+
+msgid "addcontact"
+msgstr "Lisää yhteystieto"
+
+msgid "editcontact"
+msgstr "Muokkaa yhteystietoa"
+
+msgid "contacts"
+msgstr "Yhteystiedot"
+
+msgid "contactproperties"
+msgstr "Yhteystiedon ominaisuudet"
+
+msgid "contactnameandorg"
+msgstr "Nimi ja organisaatio"
+
+msgid "personalinfo"
+msgstr "Henkilökohtaiset tiedot"
+
+msgid "personal"
+msgstr "Henkilökohtainen"
+
+msgid "contactphoto"
+msgstr "Yhteyshenkilön kuva"
+
+msgid "edit"
+msgstr "Muokkaa"
+
+msgid "cancel"
+msgstr "Peruuta"
+
+msgid "save"
+msgstr "Tallenna"
+
+msgid "delete"
+msgstr "Poista"
+
+msgid "discard"
+msgstr "Hylkää"
+
+msgid "continue"
+msgstr "Jatka"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Nimeä uudelleen"
+
+msgid "addphoto"
+msgstr "Lisää"
+
+msgid "replacephoto"
+msgstr "Korvaa"
+
+msgid "uploadphoto"
+msgstr "Lähetä kuva"
+
+msgid "choosefile"
+msgstr "Valitse tiedosto..."
+
+msgid "choosefiles"
+msgstr "Valitse tiedostot..."
+
+msgid "browse"
+msgstr "Selaa"
+
+msgid "newcontact"
+msgstr "Luo uusi yhteystieto"
+
+msgid "deletecontact"
+msgstr "Poista valitut yhteystiedot"
+
+msgid "composeto"
+msgstr "Kirjoita viesti yhteystiedolle"
+
+msgid "contactsfromto"
+msgstr "Yhteystiedot $from-$to/$count"
+
+msgid "print"
+msgstr "Tulosta"
+
+msgid "export"
+msgstr "Vie"
+
+msgid "exportall"
+msgstr "Vie kaikki"
+
+msgid "exportsel"
+msgstr "Vie valitut"
+
+msgid "exportvcards"
+msgstr "Vie yhteystiedot vCard-muodossa"
+
+msgid "newgroup"
+msgstr "Luo uusi ryhmä"
+
+msgid "addgroup"
+msgstr "Lisää ryhmä"
+
+msgid "grouprename"
+msgstr "Nimeä ryhmä uudelleen"
+
+msgid "groupdelete"
+msgstr "Poista ryhmä"
+
+msgid "groupassign"
+msgstr "Aseta ryhmään..."
+
+msgid "groupremove"
+msgstr "Poista ryhmästä"
+
+msgid "groupremoveselected"
+msgstr "Poista valitut yhteystiedot ryhmästä"
+
+msgid "uponelevel"
+msgstr "Yksi taso ylös"
+
+msgid "previouspage"
+msgstr "Näytä edellinen luettelo"
+
+msgid "firstpage"
+msgstr "Näytä ensimmäinen luettelo"
+
+msgid "nextpage"
+msgstr "Näytä seuraava luettelo"
+
+msgid "lastpage"
+msgstr "Näytä viimeinen luettelo"
+
+msgid "group"
+msgstr "Ryhmä"
+
+msgid "groups"
+msgstr "Ryhmät"
+
+msgid "listgroup"
+msgstr "Listaa ryhmän jäsenet"
+
+msgid "personaladrbook"
+msgstr "Henkilökohtaiset osoitteet"
+
+msgid "searchsave"
+msgstr "Tallenna haku"
+
+msgid "searchdelete"
+msgstr "Poista haku"
+
+msgid "import"
+msgstr "Tuo"
+
+msgid "importcontacts"
+msgstr "Tuo yhteystiedot"
+
+msgid "importfromfile"
+msgstr "Tuo tiedostosta"
+
+msgid "importtarget"
+msgstr "Lisää yhteystiedot kohteeseen"
+
+msgid "importreplace"
+msgstr "Korvaa koko osoitekirja"
+
+msgid "importgroups"
+msgstr "Tuo ryhmämääritykset"
+
+msgid "importgroupsall"
+msgstr "Kaikki (luo ryhmät tarvittaessa)"
+
+msgid "importgroupsexisting"
+msgstr "Vain olemassa oleville ryhmille"
+
+msgid "importdesc"
+msgstr ""
+"Voit tuoda yhteystietoja olemassa olevasta osoitekirjasta.<br/>Tuetut muodot"
+" ovat <a href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> tai CSV."
+
+msgid "importmapdesc"
+msgstr ""
+"Vahvista että kenttien kohdennus alla on oikein ennen CSV-materiaalin "
+"tuontia."
+
+msgid "fieldnotmapped"
+msgstr "Kenttää ei kohdennettu (älä tuo)"
+
+msgid "skipheader"
+msgstr "Älä tuo ensimmäistä riviä (otsakkeet)"
+
+msgid "done"
+msgstr "Valmis"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Asetukset"
+
+msgid "about"
+msgstr "Tietoja"
+
+msgid "preferences"
+msgstr "Asetukset"
+
+msgid "userpreferences"
+msgstr "Käyttäjän asetukset"
+
+msgid "editpreferences"
+msgstr "Muokkaa käyttäjän asetuksia"
+
+msgid "identities"
+msgstr "Identiteetit"
+
+msgid "manageidentities"
+msgstr "Hallitse henkilöyksiä"
+
+msgid "newidentity"
+msgstr "Luo uusi henkilöys"
+
+msgid "addidentity"
+msgstr "Lisää henkilöys"
+
+msgid "editidentity"
+msgstr "Muokkaa henkilöyttä"
+
+msgid "identityencryption"
+msgstr "Salaus"
+
+msgid "preferhtml"
+msgstr "Käytä HTML:aa"
+
+msgid "defaultcharset"
+msgstr "Oletusmerkistökoodaus"
+
+msgid "htmlmessage"
+msgstr "HTML-viesti"
+
+msgid "messagepart"
+msgstr "Osa"
+
+msgid "digitalsig"
+msgstr "Digitaalinen allekirjoitus"
+
+msgid "dateformat"
+msgstr "Päiväyksen muoto"
+
+msgid "timeformat"
+msgstr "Ajan muoto"
+
+msgid "prettydate"
+msgstr "Nätit päiväykset"
+
+msgid "setdefault"
+msgstr "Aseta vakioksi"
+
+msgid "autodetect"
+msgstr "Automaattinen"
+
+msgid "language"
+msgstr "Kieli"
+
+msgid "timezone"
+msgstr "Aikavyöhyke"
+
+msgid "pagesize"
+msgstr "Rivejä sivulla"
+
+msgid "signature"
+msgstr "Allekirjoitus"
+
+msgid "dstactive"
+msgstr "Kesäaika"
+
+msgid "showinextwin"
+msgstr "Avaa viesti uudessa ikkunassa"
+
+msgid "composeextwin"
+msgstr "Lähetä viesti uudessa ikkunassa"
+
+msgid "htmleditor"
+msgstr "Kirjoita HTML-muodossa"
+
+msgid "htmlonreply"
+msgstr "Vain vastatessa HTML-viesteihin"
+
+msgid "htmlonreplyandforward"
+msgstr "välittäessä tai vastatessa HTML-viestiin"
+
+msgid "htmlsignature"
+msgstr "HTML-allekirjoitus"
+
+msgid "showemail"
+msgstr "Näytä sähköpostiosoite näyttönimen kanssa"
+
+msgid "previewpane"
+msgstr "Näytä esikatselulehti"
+
+msgid "skin"
+msgstr "Käyttöliittymän teema"
+
+msgid "logoutclear"
+msgstr "Tyhjennä roskakori kirjautuessa ulos"
+
+msgid "logoutcompact"
+msgstr "Tiivistä kansiot kirjautuessa ulos"
+
+msgid "uisettings"
+msgstr "Käyttöliittymä"
+
+msgid "serversettings"
+msgstr "Palvelinasetukset"
+
+msgid "mailboxview"
+msgstr "Postilaatikkonäkymä"
+
+msgid "mdnrequests"
+msgstr "Lähettäjän kuittaukset"
+
+msgid "askuser"
+msgstr "kysy käyttäjältä"
+
+msgid "autosend"
+msgstr "lähetä automaattisesti"
+
+msgid "autosendknown"
+msgstr "Lähetä kuittaus kontaktilistassa oleville, kysy muulloin"
+
+msgid "autosendknownignore"
+msgstr "Lähetä kuittaus vain kontaktilistassa oleville"
+
+msgid "autosendtrusted"
+msgstr "lähetä kuittaus luotetuille lähettäjille, kysy minulta muulloin"
+
+msgid "autosendtrustedignore"
+msgstr "lähetä kuittaus luotetuille lähettäjille, jätä muulloin huomiotta"
+
+msgid "ignorerequest"
+msgstr "Hylkää pyyntö"
+
+msgid "readwhendeleted"
+msgstr "Merkitse poistettavat viestit luetuiksi"
+
+msgid "flagfordeletion"
+msgstr "Poistamisen sijaan merkitse viestit poistettavaksi"
+
+msgid "skipdeleted"
+msgstr "Älä näytä poistettuja viestejä"
+
+msgid "deletealways"
+msgstr "Poista viestit, joiden siirtäminen roskakoriin epäonnistuu"
+
+msgid "deletejunk"
+msgstr "Poista roskapostiviestit suoraan"
+
+msgid "showremoteimages"
+msgstr "Näytä ulkopuoliset kuvat viestissä"
+
+msgid "allowremoteresources"
+msgstr "Salli ulkoiset lähteet (kuvat, tyylitiedostot)"
+
+msgid "fromknownsenders"
+msgstr "tunnetuilta lähettäjiltä"
+
+msgid "fromtrustedsenders"
+msgstr "tunnetuista lähettäjistä"
+
+msgid "frommycontacts"
+msgstr "yhteystiedoistani"
+
+msgid "always"
+msgstr "aina"
+
+msgid "alwaysbutplain"
+msgstr "aina, paitsi vastatessa \"vain teksti\"-viesteihin"
+
+msgid "showinlineimages"
+msgstr "Näytä liitekuvat viestin jälkeen"
+
+msgid "autosavedraft"
+msgstr "Tallenna luonnos automaattisesti"
+
+msgid "everynminutes"
+msgstr "joka $n. minuutti"
+
+msgid "refreshinterval"
+msgstr "Päivitä (tarkista uudet viestit jne.)"
+
+msgid "never"
+msgstr "ei koskaan"
+
+msgid "immediately"
+msgstr "välittömästi"
+
+msgid "messagesdisplaying"
+msgstr "Viestien näyttäminen"
+
+msgid "messagescomposition"
+msgstr "Viestien kirjoittaminen"
+
+msgid "mimeparamfolding"
+msgstr "Liitetiedostojen nimet"
+
+msgid "2231folding"
+msgstr "Täysin RFC 2231:n mukainen (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231:n mukainen (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Täysin RFC 2047:n mukainen (muut)"
+
+msgid "force7bit"
+msgstr "Käytä MIME-koodausta 8-bittisille merkeille"
+
+msgid "savelocalstorage"
+msgstr "Tallenna selaimen paikalliseen tallennustilaan (väliaikaisesti)"
+
+msgid "advancedoptions"
+msgstr "Lisäasetukset"
+
+msgid "toggleadvancedoptions"
+msgstr "Vaihda edistyneemmät valinnat"
+
+msgid "focusonnewmessage"
+msgstr "Tarkenna selainikkuna uuteen viestiin"
+
+msgid "checkallfolders"
+msgstr "Tarkista kaikki kansiot uusien viestien varalta"
+
+msgid "displaynext"
+msgstr "Näytä listalta seuraava poiston/siirron jälkeen"
+
+msgid "defaultfont"
+msgstr "HTML-viestin oletuskirjasin"
+
+msgid "mainoptions"
+msgstr "Pääasetukset"
+
+msgid "browseroptions"
+msgstr "Selainasetukset"
+
+msgid "section"
+msgstr "Kohta"
+
+msgid "maintenance"
+msgstr "Huolto"
+
+msgid "newmessage"
+msgstr "Uusi viesti"
+
+msgid "signatureoptions"
+msgstr "Allekirjoituksen asetukset"
+
+msgid "whenreplying"
+msgstr "Vastattaessa"
+
+msgid "replyempty"
+msgstr "älä lainaa alkuperäistä viestiä"
+
+msgid "replytopposting"
+msgstr "aloita uusi viesti alkuperäisen yläpuolelle"
+
+msgid "replytoppostingnoindent"
+msgstr "aloita uusi viesti lainauksen yläpuolella (ei sisennystä)"
+
+msgid "replybottomposting"
+msgstr "aloita uusi viesti alkuperäisen alapuolelle"
+
+msgid "replyremovesignature"
+msgstr "Vastattaessa poista alkuperäinen allekirjoitus viestistä"
+
+msgid "autoaddsignature"
+msgstr "Lisää allekirjoitus automaattisesti"
+
+msgid "newmessageonly"
+msgstr "vain uuteen viestiin"
+
+msgid "replyandforwardonly"
+msgstr "vain vastauksiin ja välityksiin"
+
+msgid "insertsignature"
+msgstr "Lisää allekirjoitus"
+
+msgid "sigbelow"
+msgstr "Aseta allekirjoitus lainatun viestin alapuolelle"
+
+msgid "sigseparator"
+msgstr "Pakota standardi erotin allekirjoituksissa"
+
+msgid "automarkread"
+msgstr "Merkitse viestit luetuiksi"
+
+msgid "afternseconds"
+msgstr "$n sekunnin jälkeen"
+
+msgid "reqmdn"
+msgstr "Pyydä aina kuittausviestiä"
+
+msgid "reqdsn"
+msgstr "Pyydä aina toimituksen tilailmoitus"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Laita vastaukseni samaan hakemistoon alkuperäisen viestin kanssa"
+
+msgid "defaultabook"
+msgstr "Oletusarvoinen osoitekirja"
+
+msgid "autocompletesingle"
+msgstr ""
+"Älä huomioi vaihtoehtoisia sähköpostiosoitteita automaattisessa "
+"täydennyksessä"
+
+msgid "listnamedisplay"
+msgstr "Listaa yhteystiedot"
+
+msgid "contactformmode"
+msgstr "Yhteydenottolomaketila"
+
+msgid "privatemode"
+msgstr "Yksityinen (Koti)"
+
+msgid "businessmode"
+msgstr "Työ"
+
+msgid "collectedaddresses"
+msgstr "Kerätyt osoitteet"
+
+msgid "collectedrecipients"
+msgstr "Kerätyt vastaanottajat"
+
+msgid "collectedrecipientsopt"
+msgstr "Säilytä lähtevien sähköpostien vastaanottajat"
+
+msgid "collectedsendersopt"
+msgstr "Säilytä luotetut lähettäjät"
+
+msgid "trustedsenders"
+msgstr "Luotetut lähettäjät"
+
+msgid "spellcheckbeforesend"
+msgstr "Tarkista oikeinkirjoitus ennen viestin lähetystä"
+
+msgid "spellcheckoptions"
+msgstr "Oikuluvun asetukset"
+
+msgid "spellcheckignoresyms"
+msgstr "Jätä huomiotta sanat, joissa on symboleja"
+
+msgid "spellcheckignorenums"
+msgstr "Jätä huomiotta sanat, joissa on numeroita"
+
+msgid "spellcheckignorecaps"
+msgstr "Jätä huomiotta sanat, joissa kaikki kirjaimet on isoja"
+
+msgid "addtodict"
+msgstr "Lisää sanakirjaan"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Rekisteröi mailto:-linkkien protokollakäsitteljä"
+
+msgid "standardwindows"
+msgstr "Käsittele popup-ikkunoita tavallisina ikkunoina"
+
+msgid "forwardmode"
+msgstr "Viestin välitys"
+
+msgid "inline"
+msgstr "rivissä"
+
+msgid "asattachment"
+msgstr "liitteenä"
+
+msgid "replyallmode"
+msgstr "Oletustoiminto [Vastaa kaikille]-painikkeelle"
+
+msgid "replyalldefault"
+msgstr "vastaa kaikille"
+
+msgid "replyalllist"
+msgstr "vastaa pelkälle postituslistalle (jos havaittu)"
+
+msgid "allmessages"
+msgstr "Kaikki viestit"
+
+msgid "olderxdays"
+msgstr "vanhempi kuin $x päivää"
+
+msgid "folder"
+msgstr "Kansio"
+
+msgid "folders"
+msgstr "Kansiot"
+
+msgid "foldername"
+msgstr "Kansion nimi"
+
+msgid "subscribed"
+msgstr "Näytetään"
+
+msgid "messagecount"
+msgstr "Viestejä"
+
+msgid "create"
+msgstr "Luo uusi"
+
+msgid "createfolder"
+msgstr "Luo uusi kansio"
+
+msgid "managefolders"
+msgstr "Kansioiden hallinta"
+
+msgid "specialfolders"
+msgstr "Erikoiskansiot"
+
+msgid "properties"
+msgstr "Ominaisuudet"
+
+msgid "folderproperties"
+msgstr "Kansion ominaisuudet"
+
+msgid "parentfolder"
+msgstr "Yläkansio"
+
+msgid "location"
+msgstr "Sijanti"
+
+msgid "info"
+msgstr "Tietoja"
+
+msgid "getfoldersize"
+msgstr "Napsauta saadaksesi kansion koon"
+
+msgid "changesubscription"
+msgstr "Klikkaa muuttaaksesi tilausta"
+
+msgid "foldertype"
+msgstr "Kansion tyyppi"
+
+msgid "personalfolder"
+msgstr "Yksityinen kansio"
+
+msgid "otherfolder"
+msgstr "Toisen käyttäjän kansio"
+
+msgid "sharedfolder"
+msgstr "Julkinen kansio"
+
+msgid "findfolders"
+msgstr "Etsi kansioita"
+
+msgid "findcontacts"
+msgstr "Etsi yhteystiedot"
+
+msgid "findmail"
+msgstr "Etsi viestit"
+
+msgid "namespace.personal"
+msgstr "Henkilökohtainen"
+
+msgid "namespace.other"
+msgstr "Muut käyttäjät"
+
+msgid "namespace.shared"
+msgstr "Jaettu"
+
+msgid "dualuselabel"
+msgstr "Voi sisältää vain"
+
+msgid "dualusemail"
+msgstr "viestit"
+
+msgid "dualusefolder"
+msgstr "kansiot"
+
+msgid "generate"
+msgstr "Luo"
+
+msgid "encryptioncreatekey"
+msgstr "Luo uusi avainpari"
+
+msgid "openmailvelopesettings"
+msgstr "Avaa Mailvelopen asetukset"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Sinulla on $nr täsmäävää yksityistä avainta tallennettuna Mailvelope-"
+"avainketjuusi:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Tällä lähettäjäidentiteetillä ei vielä ole yksityistä PGP-avainta "
+"tallennettuna Mailvelope-laajennukseesi. Haluatko luoda avaimen "
+"mahdollistaaksesi salatun viestinnän?"
+
+msgid "encryption"
+msgstr "Salaus"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelopen valinnat"
+
+msgid "mailvelopemainkeyring"
+msgstr "Käytä Mailvelopen pääavainnippua"
+
+msgid "mailvelopenotfound"
+msgstr ""
+"Mailvelope-laajennusta ei ole otettu käyttöön tai asennettu selaimeesi."
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Järjestä"
+
+msgid "sortasc"
+msgstr "Järjestä nousevasti (a-ö)"
+
+msgid "sortdesc"
+msgstr "Järjestä laskevasti (ö-a)"
+
+msgid "undo"
+msgstr "Kumoa"
+
+msgid "installedplugins"
+msgstr "Asennetut lisäosat"
+
+msgid "plugin"
+msgstr "Liitännäinen"
+
+msgid "version"
+msgstr "Versio"
+
+msgid "source"
+msgstr "Lähde"
+
+msgid "destination"
+msgstr "Kohde"
+
+msgid "license"
+msgstr "Lisenssi"
+
+msgid "skinauthor"
+msgstr "Tekijältä $author"
+
+msgid "support"
+msgstr "Hanki tukea"
+
+msgid "savedsearches"
+msgstr "Tallennetut haut"
+
+msgid "dateformatY"
+msgstr "VVVV"
+
+msgid "dateformaty"
+msgstr "VV"
+
+msgid "dateformatm"
+msgstr "KK"
+
+msgid "dateformatd"
+msgstr "PP"
+
+msgid "dateformatj"
+msgstr "P"
+
+msgid "dateformatn"
+msgstr "K"
+
+msgid "B"
+msgstr "t"
+
+msgid "KB"
+msgstr "Kt"
+
+msgid "MB"
+msgstr "Mt"
+
+msgid "GB"
+msgstr "Gt"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Englantilainen"
+
+msgid "westerneuropean"
+msgstr "Länsieurooppalainen"
+
+msgid "easterneuropean"
+msgstr "Itäeurooppalainen"
+
+msgid "southeasterneuropean"
+msgstr "Eteläeurooppalainen"
+
+msgid "baltic"
+msgstr "Balttilainen"
+
+msgid "cyrillic"
+msgstr "Kyrillinen"
+
+msgid "arabic"
+msgstr "Arabialainen"
+
+msgid "greek"
+msgstr "Kreikkalainen"
+
+msgid "hebrew"
+msgstr "Heprealainen"
+
+msgid "turkish"
+msgstr "Turkkilainen"
+
+msgid "nordic"
+msgstr "Pohjoismaalainen"
+
+msgid "thai"
+msgstr "Thaimaalainen"
+
+msgid "celtic"
+msgstr "Kelttiläinen"
+
+msgid "vietnamese"
+msgstr "Vietnamilainen"
+
+msgid "japanese"
+msgstr "Japanilainen"
+
+msgid "korean"
+msgstr "Korealainen"
+
+msgid "chinese"
+msgstr "Kiinalainen"
+
+msgid "arialabeltopnav"
+msgstr "Ikkunan hallinta"
+
+msgid "arialabeltasknav"
+msgstr "Sovelluksen tehtävät"
+
+msgid "arialabeltoolbar"
+msgstr "Sovelluksen työkalupalkki"
+
+msgid "arialabellistnav"
+msgstr "Listan navigointi"
+
+msgid "arialabelactivetask"
+msgstr "Aktiivinen tehtävä"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Sähköpostin listaussuodatin"
+
+msgid "arialabelmailsearchform"
+msgstr "Sähköpostiviestin hakulomake"
+
+msgid "arialabelcontactsearchform"
+msgstr "Yhteyshenkilöiden hakulomake"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Sähköpostihaun syöttö"
+
+msgid "arialabelquicksearchbox"
+msgstr "Haun syöttö"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Kansion listaussuodatin"
+
+msgid "arialabelfoldersearchform"
+msgstr "Kansion hakulomake"
+
+msgid "arialabelfolderlist"
+msgstr "Sähköpostin kansion valinta"
+
+msgid "arialabelmessagelist"
+msgstr "Sähköpostiviestien listaus"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Viestin esikatselu"
+
+msgid "arialabelmailboxmenu"
+msgstr "Kansion toimintovalikko"
+
+msgid "arialabellistselectmenu"
+msgstr "Listaa valintavalikko"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Keskusteluiden listausvalikko"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Viestilista ja järjestelyvalinnat"
+
+msgid "arialabelmailimportdialog"
+msgstr "Viestintuonti"
+
+msgid "arialabelmessagenav"
+msgstr "Viestien navigointi"
+
+msgid "arialabelmessagebody"
+msgstr "Viestin runko"
+
+msgid "arialabelmessageactions"
+msgstr "Viestitoiminnot"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Yhteyshenkilöiden hakulomake"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Yhteyshenkilön hakusyöte"
+
+msgid "arialabelmessageheaders"
+msgstr "Viestin otsakkeet"
+
+msgid "arialabelforwardingoptions"
+msgstr "Uudelleenohjausvalinnat"
+
+msgid "arialabelreplyalloptions"
+msgstr "Vastaa kaikille -valinnat"
+
+msgid "arialabelmoremessageactions"
+msgstr "Lisää viestitoimintoja"
+
+msgid "arialabelmorecontactactions"
+msgstr "Lisää yhteystietotoimintoja"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Merkitse valitut viestit..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Kirjoitusvalinnat"
+
+msgid "arialabelresponsesmenu"
+msgstr "Valmiit vastaukset -valikko"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Liitteen lähetyslomake"
+
+msgid "arialabelattachmentmenu"
+msgstr "Liitteiden asetukset"
+
+msgid "arialabelmailtomenu"
+msgstr "Sähköpostiosoitteen asetukset"
+
+msgid "arialabelattachmentpreview"
+msgstr "Liitteen esikatselu"
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+"Luettelo yhteyshenkilöistä ja ryhmistä, jotka voi valita vastaanottajaksi"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Yhteyshenkilön vientivalinnat"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Osoitekirjan/ryhmän valinnat"
+
+msgid "arialabelpreferencesform"
+msgstr "Asetukset -lomake"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Henkilöyden muokkauslomake"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Vastauksen muokkauslomake"
+
+msgid "arialabelsearchterms"
+msgstr "Hakuehdot"
+
+msgid "arialabeldropactionmenu"
+msgstr "Raahaa ja pudota toimintovalikko"
+
+msgid "arialabelheadersmenu"
+msgstr "Vastaanottajaotsakkeen lisäysvalikko"
+
+msgid "arialabelimagetools"
+msgstr "Kuvatyökalut"
+
+msgid "helplistnavigation"
+msgstr "Luetteloi näppäimistönavigointi"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Nuolet ylös/alas: Siirrä kohdistettua riviä/valintaa.\n"
+"Välilyönti: Valitse kohdistettu rivi.\n"
+"Shift + ylös/alas: Valitse lisää rivejä yläpuolelta/alapuolelta.\n"
+"Ctrl + välilyönti: Lisää kohdistettu rivi valintaan/poista valinnasta."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Nuolinäppäimet oikealle/vasemmalle: Laajenna/kutista viestikeskustelut (vain keskustelu-tilassa).\n"
+"Entteri/rivinvaihto: Avaa valittu/kohdistettu viesti.\n"
+"Delete/poista: Siirrä valitut viestit roskakoriin."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: avaa valittu/kohdistettu yhteystieto."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Virhe havaittu."
+
+msgid "messages.loginfailed"
+msgstr "Sisäänkirjautuminen epäonnistui"
+
+msgid "messages.cookiesdisabled"
+msgstr "Selaimesi ei hyväksy evästeitä"
+
+msgid "messages.sessionerror"
+msgstr "Sessio ei kelpaa tai ei ole enää voimassa"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Evästeiden yhteensopimattomuus havaittu. Tyhjennä selaimessasi olevat "
+"evästeet."
+
+msgid "messages.storageerror"
+msgstr "Yhteys IMAP-palvelimeen epäonnistui"
+
+msgid "messages.servererror"
+msgstr "Palvelinvirhe!"
+
+msgid "messages.servererrormsg"
+msgstr "Palvelinvirhe: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+"Liian monta epäonnistunutta kirjautumisyritystä. Yritä myöhemmin uudelleen."
+
+msgid "messages.connerror"
+msgstr "Yhteysvirhe, ei yhteyttä palvelimeen!"
+
+msgid "messages.dberror"
+msgstr "Tietokantavirhe!"
+
+msgid "messages.dbconnerror"
+msgstr "Tietokantaan ei voitu yhdistää!"
+
+msgid "messages.windowopenerror"
+msgstr "Ponnahdusikkuna estettiin!"
+
+msgid "messages.requesttimedout"
+msgstr "Pyyntö aikakatkaistiin"
+
+msgid "messages.errorreadonly"
+msgstr "Toiminnon suoritus ei onnistu, koska hakemisto on vain lukutilassa."
+
+msgid "messages.errornoperm"
+msgstr "Toimintoa ei voitu suorittaa. Ei oikeuksia."
+
+msgid "messages.erroroverquota"
+msgstr "Toiminnon suoritus epäonnistui. Levytila on loppu."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Levytila on loppu. Paina SHIFT+DEL poistaaksesi viestin."
+
+msgid "messages.invalidrequest"
+msgstr "Virheellinen pyyntö! Tietoa ei tallennettu."
+
+msgid "messages.invalidhost"
+msgstr "Virheellinen palvelinnimi."
+
+msgid "messages.nomessagesfound"
+msgstr "Kansiossa ei ole sähköpostiviestejä"
+
+msgid "messages.loggedout"
+msgstr "Lopetit istunnon onnistuneesti. Näkemiin!"
+
+msgid "messages.mailboxempty"
+msgstr "Postilaatikko on tyhjä"
+
+msgid "messages.nomessages"
+msgstr "Ei viestejä"
+
+msgid "messages.refreshing"
+msgstr "Päivitetään..."
+
+msgid "messages.loading"
+msgstr "Ladataan..."
+
+msgid "messages.uploading"
+msgstr "Ladataan tiedostoa palvelimelle..."
+
+msgid "messages.attaching"
+msgstr "Liitetään tiedostoa..."
+
+msgid "messages.uploadingmany"
+msgstr "Ladataan tiedostoja..."
+
+msgid "messages.loadingdata"
+msgstr "Ladataan tietoja..."
+
+msgid "messages.checkingmail"
+msgstr "Tarkistetaan saapuneita viestejä..."
+
+msgid "messages.sendingmessage"
+msgstr "Lähetetään viestiä..."
+
+msgid "messages.messagesent"
+msgstr "Viesti lähetetty"
+
+msgid "messages.savingmessage"
+msgstr "Tallennetaan viestiä..."
+
+msgid "messages.messagesaved"
+msgstr "Viesti tallennettu \"Luonnokset\"-kansioon"
+
+msgid "messages.successfullysaved"
+msgstr "Tallennus onnistui"
+
+msgid "messages.savingresponse"
+msgstr "Tallennetaan vastaustekstiä..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Haluatko varmasti poistaa tämän vastaustekstin?"
+
+msgid "messages.nocontactselected"
+msgstr "Et ole vielä valinnut yhteystietoja."
+
+msgid "messages.addedsuccessfully"
+msgstr "Yhteystieto lisätty osoitekirjaan"
+
+msgid "messages.contactexists"
+msgstr "Yhteystieto samalla sähköpostiosoitteella on jo olemassa."
+
+msgid "messages.contactnameexists"
+msgstr "Yhteystieto samalla nimellä on jo olemassa"
+
+msgid "messages.blockedimages"
+msgstr "Turvallisuussyistä viestin kuvia ei näytetty."
+
+msgid "messages.blockedresources"
+msgstr "Turvallisuussyistä viestin ulkoisia lähteitä ei näytetty."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Viesti sisältää epäilyttäviä sähköpostiosoitteita, jotka voivat olla "
+"vilpillisiä."
+
+msgid "messages.bccemail"
+msgstr "Välitetyt viestit sisältävät luottamuksellisia vastaanottajia (Bcc)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Viesti lähetetään muutoksitta, eli viestin runko, otsakkeet ja "
+"vastaanottajat pysyvät samana."
+
+msgid "messages.encryptedmessage"
+msgstr "Viesti on salattu, eikä sitä voida näyttää."
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Tämä on salattu viesti. Viestin salaus on mahdollista purkaa selaimesi "
+"laajennuksella."
+
+msgid "messages.nopubkeyfor"
+msgstr "Sähköpostille $email ei löytynyt kelvollista julkista avainta"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Lähettäjäidentiteetillesi ei löytynyt kelvollista julkista avainta. Haluatko"
+" salata viestin vain vastaanottajille?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Entuudestaan määritettyjä liitteitä ei voi salata. Lisää liitteet uudelleen "
+"salausmuokkaimen kautta."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Haluatko etsiä puuttuvia avaimia julkisten avainten palvelimilta?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Seuraavat avaimet löydettiin:"
+
+msgid "messages.keyservererror"
+msgstr "Avaimen noutaminen avainpalvelimelta epäonnistui."
+
+msgid "messages.keyimportsuccess"
+msgstr "Julkinen avain $key tuotiin onnistuneesti avainnippuusi."
+
+msgid "messages.nocontactsfound"
+msgstr "Yhteystietoja ei löytynyt."
+
+msgid "messages.contactnotfound"
+msgstr "Pyydettyä yhteystietoa ei löytynyt"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Sinun on käytettävä hakulomaketta nähdäksesi yhteystiedot valitusta "
+"osoitekirjasta."
+
+msgid "messages.sendingfailed"
+msgstr "Viestin lähetys epäonnistui"
+
+msgid "messages.senttooquickly"
+msgstr "Odota $sec sekunti(a) ennen viestin lähettämistä"
+
+msgid "messages.errorsavingsent"
+msgstr "Virhe tallennettaessa lähetettyä viestiä."
+
+msgid "messages.errorsaving"
+msgstr "Virhe tallennettaessa."
+
+msgid "messages.errormoving"
+msgstr "Viestiä ei voitu siirtää"
+
+msgid "messages.errorcopying"
+msgstr "Viestiä ei voitu kopioida"
+
+msgid "messages.errordeleting"
+msgstr "Viestiä ei voitu poistaa"
+
+msgid "messages.errormarking"
+msgstr "Viestiä ei voitu merkiä"
+
+msgid "messages.alerttitle"
+msgstr "Huomio"
+
+msgid "messages.confirmationtitle"
+msgstr "Oletko varma..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Haluatko varmasti poistaa valitut yhteystiedot?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Haluatko varmasti poistaa valitun ryhmän?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Haluatko varmasti poistaa valitut viestit?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Haluatko varmasti poistaa kansion?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Haluatko varmasti siirtää tämän kansion?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Haluatko varmasti poistaa kaikki viestit kansiosta?"
+
+msgid "messages.contactdeleting"
+msgstr "Poistetaan yhteystietoja..."
+
+msgid "messages.groupdeleting"
+msgstr "Poistetaan ryhmää..."
+
+msgid "messages.folderdeleting"
+msgstr "Poistetaan kansiota..."
+
+msgid "messages.foldermoving"
+msgstr "Siirretään kansiota..."
+
+msgid "messages.foldersubscribing"
+msgstr "Tilataan kansio..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Perutaan kansio tilaus..."
+
+msgid "messages.formincomplete"
+msgstr "Lomakkeen tiedot olivat puutteelliset"
+
+msgid "messages.noemailwarning"
+msgstr "Anna sähköpostiosoite"
+
+msgid "messages.nonamewarning"
+msgstr "Anna nimi"
+
+msgid "messages.nopagesizewarning"
+msgstr "Anna sivukoko"
+
+msgid "messages.nosenderwarning"
+msgstr "Anna lähettäjän sähköpostiosoite."
+
+msgid "messages.recipientsadded"
+msgstr "Vastaanottaja(t) lisätty onnistuneesti."
+
+msgid "messages.norecipientwarning"
+msgstr "Anna ainakin yksi vastaanottaja"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "Liian monta julkista vastaanottajaa"
+
+msgid "messages.nosubjectwarning"
+msgstr "\"Aihe\"-kenttä on tyhjä. Haluatko kirjoittaa viestillesi aiheen?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Ei aihetta"
+
+msgid "messages.nobodywarning"
+msgstr "Lähetetäänkö viesti ilman tekstiä?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Viestiä ei lähetetty ja se sisältää tallentamattomia muutoksia. Haluatko "
+"hylätä muutoksesi?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Löydettiin aiemmin luotu, mutta lähettämätön viesti.\\n\\nAihe: "
+"$subject\\nTallennettu: $date\\n\\nHaluatko palauttaa tämän viestin?"
+
+msgid "messages.nosearchname"
+msgstr "Anna yhteystiedon nimi tai sähköpostiosoite"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Kaikkia liitteitä ei ole vielä ladattu palvelimelle. Odota tai peruuta "
+"lataus."
+
+msgid "messages.searchsuccessful"
+msgstr "Löydetty $nr viestiä"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Löydetty $nr yhteystietoa"
+
+msgid "messages.searchnomatch"
+msgstr "Haku ei tuottanut tuloksia"
+
+msgid "messages.searching"
+msgstr "Etsitään..."
+
+msgid "messages.checking"
+msgstr "Tarkistetaan..."
+
+msgid "messages.stillsearching"
+msgstr "Etsitään edelleen..."
+
+msgid "messages.nospellerrors"
+msgstr "Kirjoitusvirheitä ei löytynyt."
+
+msgid "messages.folderdeleted"
+msgstr "Kansio poistettu onnistuneesti"
+
+msgid "messages.foldersubscribed"
+msgstr "Kansio tilattu onnistuneesti."
+
+msgid "messages.folderunsubscribed"
+msgstr "Kansion tilaus poistettu onnistuneesti."
+
+msgid "messages.folderpurged"
+msgstr "Kansio tyhjennettiin onnistuneesti."
+
+msgid "messages.folderexpunged"
+msgstr "Kansio tiivistettiin onnistuneesti."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Poistettu onnistuneesti"
+
+msgid "messages.converting"
+msgstr "Poistetaan asettelu viestistä..."
+
+msgid "messages.messageopenerror"
+msgstr "Virhe kopioitaessa viestiä palvelimelta"
+
+msgid "messages.filelinkerror"
+msgstr "TIedoston liittäminen epäonnistui."
+
+msgid "messages.fileuploaderror"
+msgstr "Tiedoston lähettäminen epäonnistui"
+
+msgid "messages.csvfilemismatch"
+msgstr "Useiden CSV-tiedostojen tuontia erilaisilla kentillä ei tueta."
+
+msgid "messages.filesizeerror"
+msgstr "Lähetettävä tiedosto ylittää sallitun enimmäiskoon $size"
+
+msgid "messages.filecounterror"
+msgstr "Voit lähettää maksimissaan $count tiedostoa kerralla."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Tiedoston liittäminen epäonnistui. Viestin enimmäiskoko ($size) ylitettiin."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Viestin suurin sallittu koko ($size) ylittyi. $num viesti(ä) jätettiin "
+"liittämättä."
+
+msgid "messages.copysuccess"
+msgstr "$nr yhteystietoa kopioitiin onnistuneesti."
+
+msgid "messages.movesuccess"
+msgstr "$nr yhteystietoa siirrettiin onnistuneesti."
+
+msgid "messages.copyerror"
+msgstr "Yhdenkään yhteystiedon kopiointi ei onnistunut."
+
+msgid "messages.moveerror"
+msgstr "Minkään yhteystiedon siirto ei onnistunut."
+
+msgid "messages.sourceisreadonly"
+msgstr "Tämän osoitteen lähde on kirjoitussuojattu"
+
+msgid "messages.errorsavingcontact"
+msgstr "Yhteystietoa ei voitu tallentaa"
+
+msgid "messages.movingmessage"
+msgstr "Siirretään viestiä..."
+
+msgid "messages.copyingmessage"
+msgstr "Kopioidaan viestiä..."
+
+msgid "messages.copyingcontact"
+msgstr "Kopioidaan yhteystietoja..."
+
+msgid "messages.movingcontact"
+msgstr "Siirretään yhteystieto(j)a..."
+
+msgid "messages.deletingmessage"
+msgstr "Poistetaan viestejä..."
+
+msgid "messages.markingmessage"
+msgstr "Merkitään viestejä..."
+
+msgid "messages.addingmember"
+msgstr "Lisätään yhteystietoja ryhmään..."
+
+msgid "messages.removingmember"
+msgstr "Poistetaan yhteystietoja ryhmästä..."
+
+msgid "messages.receiptsent"
+msgstr "Lukukuittaus lähetetty onnistuneesti"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Lukukuittausta ei voitu lähettää"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Haluatko varmasti poistaa identiteetin?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Et voi poistaa tätä identiteettiä, koska se on ainoa jäljelläoleva"
+
+msgid "messages.forbiddencharacter"
+msgstr "Kansion nimessä on kiellettyjä merkkejä"
+
+msgid "messages.selectimportfile"
+msgstr "Valitse lähetettävä tiedosto"
+
+msgid "messages.addresswriterror"
+msgstr "Valittuun osoitekirjaan ei voi kirjoittaa"
+
+msgid "messages.contactaddedtogroup"
+msgstr "Yhteystiedot lisätty ryhmään"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Yhteystiedot poistettu ryhmästä"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Ryhmämäärityksiä ei muutettu."
+
+msgid "messages.importwait"
+msgstr "Tuodaan, odota..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Tuonti epäonnistui! Lähetetty tiedosto ei ole kelvollinen tuontitiedosto."
+
+msgid "messages.importconfirm"
+msgstr "<b>$inserted yhteystietoa tuotu onnistuneesti</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr viestiä tuotiin onnistuneesti"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Tuonti epäonnistui! Lähetetty tiedosto ei ole kelvollinen viesti tai "
+"mailbox-tiedosto"
+
+msgid "messages.opnotpermitted"
+msgstr "Toiminto ei ole sallittu!"
+
+msgid "messages.nofromaddress"
+msgstr "Valitusta identiteetistä puuttuu sähköpostiosoite."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Muokkaintyypin vaihtaminen saattaa aiheuttaa tekstin muotoilun katoamisen. "
+"Haluatko jatkaa?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Vakava virhe asetuksissa. Ota välittömästi yhteys ylläpitoon. <b>Viestiäsi "
+"ei voida lähettää.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP-virhe ($code): Palvelimelle yhdistäminen epäonnistui"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP-virhe ($code): Tunnistus epäonnistui"
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP-virhe ($code): Lähettäjän \"$from\" asettaminen epäonnistui ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "SMTP-virhe ($code): Vastaanottajan \"$to\" lisääminen epäonnistui ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP-virhe: Ei voida jäsentää vastaanottajien listaa."
+
+msgid "messages.smtputf8error"
+msgstr "SMTP-virhe: Palvelin ei tue Unicodea sähköpostiosoitteessa."
+
+msgid "messages.smtpsizeerror"
+msgstr "SMTP-virhe: Viestin koko ylittää palvleimen rajoituksen ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP-virhe: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Virheellinen sähköpostiosoite: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Liikaa vastaanottajia. Vähennä vastaanottajien määrä maksimiin $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Ryhmän jäsenten määrä ylittää maksimin $max"
+
+msgid "messages.internalerror"
+msgstr "Sisäinen virhe. Yritä uudelleen."
+
+msgid "messages.contactdelerror"
+msgstr "Yhteystietoja ei voitu poistaa."
+
+msgid "messages.contactdeleted"
+msgstr "Yhteystiedot poistettu onnistuneesti."
+
+msgid "messages.contactrestoreerror"
+msgstr "Poistettujen yhteystietojen palautus epäonnistui."
+
+msgid "messages.contactrestored"
+msgstr "Yhteystiedot palautettu onnistuneesti."
+
+msgid "messages.groupdeleted"
+msgstr "Ryhmä poistettu onnistuneesti."
+
+msgid "messages.grouprenamed"
+msgstr "Ryhmä nimetty uudelleen onnistuneesti."
+
+msgid "messages.groupcreated"
+msgstr "Ryhmä luotu onnistuneesti."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Tallennettu haku poistettu onnistuneesti."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Tallennetun haun poisto epäonnistui."
+
+msgid "messages.savedsearchcreated"
+msgstr "Tallennettu haku luotu onnistuneesti."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Tallennetun haun tallennus epäonnistui."
+
+msgid "messages.messagedeleted"
+msgstr "Viestit poistettu onnistuneesti."
+
+msgid "messages.messagemoved"
+msgstr "Viestit siirretty onnistuneesti."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Yksi tai useampi viesti siirrettiin roskakoriin onnistuneesti."
+
+msgid "messages.messagecopied"
+msgstr "Viestit kopioitu onnistuneesti."
+
+msgid "messages.messagemarked"
+msgstr "Viestit merkitty onnistuneesti."
+
+msgid "messages.autocompletechars"
+msgstr "Kirjoita vähintään $min merkkiä  ennen automaattista täydennystä."
+
+msgid "messages.autocompletemore"
+msgstr "Täsmääviä kohteita löytyi enemmän. Syötä lisää merkkejä."
+
+msgid "messages.namecannotbeempty"
+msgstr "Nimi ei voi olla tyhjä."
+
+msgid "messages.nametoolong"
+msgstr "Nimi on liian pitkä."
+
+msgid "messages.namedotforbidden"
+msgstr "Kansion nimi ei voi alkaa pisteellä."
+
+msgid "messages.folderupdated"
+msgstr "Kansio päivitetty onnistuneesti."
+
+msgid "messages.foldercreated"
+msgstr "Kansio luotu onnistuneesti."
+
+msgid "messages.invalidimageformat"
+msgstr "Virheellinen kuvamuoto."
+
+msgid "messages.mispellingsfound"
+msgstr "Viestissä havaittiin kielioppivirheitä."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Kansiota ei voitu siirtää tai luoda valittuun yläkansioon. Ei "
+"käyttöoikeutta."
+
+msgid "messages.messagetoobig"
+msgstr "Viestiosa on liian suuri prosessoitavaksi."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Liitetiedosto on epäilyttävä, koska sen tyyppi ei ole sama kuin viestissä "
+"määritetty. Jos et luota lähettäjään, tiedostoa ei tulisi avata selaimessa, "
+"koska se voi sisältää haitallista sisältöä.<br/><br/><em>Odotettu: "
+"$expected; löytynyt: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Varoitus: Tämä verkkopohjainen sähköpostipalvelu vaatii Javascriptin "
+"toimiakseen. Ota Javascript käyttöön selaimesi asetuksista."
+
+msgid "messages.messageissent"
+msgstr ""
+"Viesti lähetettiin jo, mutta sitä ei vielä tallennettu. Haluatko tallentaa "
+"sen nyt?"
+
+msgid "messages.errnotfound"
+msgstr "Tiedostoa ei löytynyt"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Pyydettyä resurssia ei löytynyt!"
+
+msgid "messages.errfailedrequest"
+msgstr "Pyyntö epäonnistui"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Valtuutus epäonnistui"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Tämän palvelun käyttöön vaadittavan valtuutuksen tarkistaminen epäonnistui!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Pyyntötarkistus epäonnistui"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Turvallisuutesi vuoksi tämän resurssin käyttö on suojattu CSRF:ää vastaan.\n"
+"Jos näet tämän viestin, et luultavasti kirjautunut ulos, ennen kuin poistuit verkkosovelluksesta.\n"
+"\n"
+"Vuorovaikutustasi tarvitaan nyt, jotta voit jatkaa."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Ota yhteys palvelimen ylläpitäjään."
+
+msgid "messages.clicktoresumesession"
+msgstr "Napsauta tästä palauttaaksesi edellisen istuntosi"
+
+msgid "messages.errcomposesession"
+msgstr "Kirjoitusistunnon virhe"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Pyydettyä kirjoitusistuntoa ei löytynyt."
+
+msgid "messages.clicktocompose"
+msgstr "Napsauta tästä kirjoittaaksesi uuden viestin"
+
+msgid "messages.nosupporterror"
+msgstr "Selaimesi ei tue tätä ominaisuutta."
+
+msgid "messages.siginserted"
+msgstr "Allekirjoitus lisätty onnistuneesti."
+
+msgid "messages.responseinserted"
+msgstr "Vastaus lisätty onnistuneesti."
+
+msgid "messages.noresponsesavailable"
+msgstr "Vastauksia ei ole saatavilla"
+
+msgid "messages.listempty"
+msgstr "Lista on tyhjä."
+
+msgid "messages.listusebutton"
+msgstr "Lisää uusi tietue Luo uusi -painikkeella."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Luotiin uusi pari onnistuneesti identiteetille $identity."
+
+msgid "messages.emptyattachment"
+msgstr "Liitetiedosto on tyhjä.<br>Tarkista asia lähettäjältä."
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth-kirjautuminen epäonnistui. Yritä myöhemmin uudelleen."
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

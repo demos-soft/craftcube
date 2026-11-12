@@ -1,0 +1,2863 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "ברוך בואך אל $product"
+
+msgid "username"
+msgstr "שם משתמש"
+
+msgid "password"
+msgstr "סיסמה"
+
+msgid "server"
+msgstr "שרת"
+
+msgid "login"
+msgstr "כניסה"
+
+msgid "oauthlogin"
+msgstr "כניסה עם provider$"
+
+msgid "menu"
+msgstr "תפריט"
+
+msgid "logout"
+msgstr "יציאה"
+
+msgid "mail"
+msgstr "רשימת הודעות"
+
+msgid "settings"
+msgstr "הגדרות אישיות"
+
+msgid "addressbook"
+msgstr "פנקס כתובות"
+
+msgid "darkmode"
+msgstr "רקע כהה"
+
+msgid "lightmode"
+msgstr "רקע בהיר"
+
+msgid "inbox"
+msgstr "נכנס"
+
+msgid "drafts"
+msgstr "טיוטות"
+
+msgid "sent"
+msgstr "נשלח"
+
+msgid "trash"
+msgstr "אשפה"
+
+msgid "junk"
+msgstr "זבל"
+
+msgid "show_real_foldernames"
+msgstr "הצגת שמות אמיתיים של תיקיות מיוחדות"
+
+msgid "subject"
+msgstr "נושא"
+
+msgid "from"
+msgstr "מאת"
+
+msgid "sender"
+msgstr "השולח"
+
+msgid "to"
+msgstr "אל"
+
+msgid "cc"
+msgstr "לידיעה"
+
+msgid "bcc"
+msgstr "מכותב מוסתר"
+
+msgid "replyto"
+msgstr "כתובת למענה"
+
+msgid "followupto"
+msgstr "כתובת להעברת הודעה"
+
+msgid "date"
+msgstr "תאריך"
+
+msgid "size"
+msgstr "גודל"
+
+msgid "priority"
+msgstr "עדיפות"
+
+msgid "organization"
+msgstr "ארגון"
+
+msgid "readstatus"
+msgstr "נקרא"
+
+msgid "listoptions"
+msgstr "הצגת אפשרויות..."
+
+msgid "listoptionstitle"
+msgstr "רשימת אפשרויות"
+
+msgid "mailboxlist"
+msgstr "תיקיות"
+
+msgid "messagesfromto"
+msgstr "הודעות $from עד $to מתוך $count"
+
+msgid "threadsfromto"
+msgstr "שרשור $from עד $to מתוך $count"
+
+msgid "messagenrof"
+msgstr "הודעה $nr מתוך $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to מתוך $count"
+
+msgid "copy"
+msgstr "העתק"
+
+msgid "move"
+msgstr "העבר"
+
+msgid "moveto"
+msgstr "תיוק ב..."
+
+msgid "copyto"
+msgstr "העתקה אל..."
+
+msgid "download"
+msgstr "הורדה"
+
+msgid "open"
+msgstr "לפתוח"
+
+msgid "showattachment"
+msgstr "הצגה"
+
+msgid "showanyway"
+msgstr "להציג בכל מקרה"
+
+msgid "filename"
+msgstr "שם קובץ"
+
+msgid "filesize"
+msgstr "גודל קובץ"
+
+msgid "addtoaddressbook"
+msgstr "הוספה לפנקס כתובות"
+
+msgid "sun"
+msgstr "יום א"
+
+msgid "mon"
+msgstr "יום ב"
+
+msgid "tue"
+msgstr "יום ג"
+
+msgid "wed"
+msgstr "יום ד"
+
+msgid "thu"
+msgstr "יום ה"
+
+msgid "fri"
+msgstr "יום ו"
+
+msgid "sat"
+msgstr "יום ש"
+
+msgid "sunday"
+msgstr "ראשון"
+
+msgid "monday"
+msgstr "שני"
+
+msgid "tuesday"
+msgstr "שלישי"
+
+msgid "wednesday"
+msgstr "רביעי"
+
+msgid "thursday"
+msgstr "חמישי"
+
+msgid "friday"
+msgstr "ששי"
+
+msgid "saturday"
+msgstr "שבת"
+
+msgid "jan"
+msgstr "ינו"
+
+msgid "feb"
+msgstr "פבר"
+
+msgid "mar"
+msgstr "מרץ"
+
+msgid "apr"
+msgstr "אפר"
+
+msgid "may"
+msgstr "מאי"
+
+msgid "jun"
+msgstr "יונ"
+
+msgid "jul"
+msgstr "יול"
+
+msgid "aug"
+msgstr "אוג"
+
+msgid "sep"
+msgstr "ספט"
+
+msgid "oct"
+msgstr "אוק"
+
+msgid "nov"
+msgstr "נוב"
+
+msgid "dec"
+msgstr "דצמ"
+
+msgid "longjan"
+msgstr "ינואר"
+
+msgid "longfeb"
+msgstr "פברואר"
+
+msgid "longmar"
+msgstr "מרץ"
+
+msgid "longapr"
+msgstr "אפריל"
+
+msgid "longmay"
+msgstr "מאי"
+
+msgid "longjun"
+msgstr "יוני"
+
+msgid "longjul"
+msgstr "יולי"
+
+msgid "longaug"
+msgstr "אוגוסט"
+
+msgid "longsep"
+msgstr "ספטמבר"
+
+msgid "longoct"
+msgstr "אוקטובר"
+
+msgid "longnov"
+msgstr "נובמבר"
+
+msgid "longdec"
+msgstr "דצמבר"
+
+msgid "today"
+msgstr "היום"
+
+msgid "refresh"
+msgstr "רענון"
+
+msgid "checkmail"
+msgstr "משיכת הודעות חדשות"
+
+msgid "compose"
+msgstr "כתיבת הודעה"
+
+msgid "writenewmessage"
+msgstr "יצירת הודעה חדשה"
+
+msgid "reply"
+msgstr "תגובה"
+
+msgid "replytomessage"
+msgstr "מענה לשולח"
+
+msgid "replytoallmessage"
+msgstr "מענה לשולח ולכל הנמענים"
+
+msgid "replyall"
+msgstr "מענה לכולם"
+
+msgid "replylist"
+msgstr "מענה לרשימת תפוצה"
+
+msgid "forward"
+msgstr "העברה"
+
+msgid "forwardinline"
+msgstr "העבר בגוף ההודעה"
+
+msgid "forwardattachment"
+msgstr "העבר כצרופה"
+
+msgid "forwardmessage"
+msgstr "העבר הודעה"
+
+msgid "bouncemsg"
+msgstr "שליחה מחדש (כי המערכת החזירה את המשלוח)"
+
+msgid "bounce"
+msgstr "שליחה מחדש"
+
+msgid "deletemessage"
+msgstr "מחיקה"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "השלכה לאשפה"
+
+msgid "printmessage"
+msgstr "הדפסה"
+
+msgid "previousmessage"
+msgstr "הצגת הודעה קודמת"
+
+msgid "firstmessage"
+msgstr "הצגת ההודעה הראשונה"
+
+msgid "nextmessage"
+msgstr "הצגת ההודעה הבאה"
+
+msgid "lastmessage"
+msgstr "הצגת ההודעה האחרונה"
+
+msgid "backtolist"
+msgstr "חזרה אל רשימת ההודעות"
+
+msgid "viewsource"
+msgstr "הצגת קוד מקור"
+
+msgid "mark"
+msgstr "סימון"
+
+msgid "markmessages"
+msgstr "סימון הודעות"
+
+msgid "markread"
+msgstr "כנקראו"
+
+msgid "markunread"
+msgstr "כלא נקראו"
+
+msgid "markflagged"
+msgstr "כמסומן"
+
+msgid "markunflagged"
+msgstr "כלא מסומן"
+
+msgid "markundeleted"
+msgstr "כמי שלא נמחקו"
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "פעולות נוספות..."
+
+msgid "markallread"
+msgstr "סימון כל ההודעות כאילו נקראו"
+
+msgid "folders-cur"
+msgstr "רק התיקיה שנבחרה"
+
+msgid "folders-sub"
+msgstr "רק התיקיה שנבחרה ותת התיקיות שלה"
+
+msgid "folders-all"
+msgstr "כל התיקיות"
+
+msgid "more"
+msgstr "עוד"
+
+msgid "back"
+msgstr "חזרה"
+
+msgid "options"
+msgstr "אפשרויות"
+
+msgid "composeoptions"
+msgstr "אפשרויות יצירת הודעה"
+
+msgid "optionsandattachments"
+msgstr "אפשרויות וצרופות"
+
+msgid "actions"
+msgstr "פעולות"
+
+msgid "first"
+msgstr "ראשונה"
+
+msgid "last"
+msgstr "אחרונה"
+
+msgid "previous"
+msgstr "הקודמת"
+
+msgid "next"
+msgstr "הבאה"
+
+msgid "select"
+msgstr "בחירה"
+
+msgid "selection"
+msgstr "בחירה"
+
+msgid "all"
+msgstr "הכל"
+
+msgid "none"
+msgstr "כלום"
+
+msgid "currpage"
+msgstr "דף נוכחי"
+
+msgid "isread"
+msgstr "קריאה"
+
+msgid "unread"
+msgstr "לא נקראו"
+
+msgid "flagged"
+msgstr "מסומן"
+
+msgid "unflagged"
+msgstr "לא מדוגלת"
+
+msgid "unanswered"
+msgstr "לא נענה"
+
+msgid "withattachment"
+msgstr "עם צרופה"
+
+msgid "deleted"
+msgstr "נמחק"
+
+msgid "undeleted"
+msgstr "לא נמחק"
+
+msgid "replied"
+msgstr "נענתה"
+
+msgid "forwarded"
+msgstr "קודמה"
+
+msgid "invert"
+msgstr "היפוך הסימון"
+
+msgid "filter"
+msgstr "סינון"
+
+msgid "list"
+msgstr "רשימה"
+
+msgid "threads"
+msgstr "שרשור"
+
+msgid "expand-all"
+msgstr "הרחבה כלית"
+
+msgid "expand-unread"
+msgstr "הרחבה טרם נקרא"
+
+msgid "collapse-all"
+msgstr "כינוס כללי"
+
+msgid "threaded"
+msgstr "משורשר"
+
+msgid "showunread"
+msgstr "הצגת הודעות שלא נקראו"
+
+msgid "autoexpand_threads"
+msgstr "הרחבת הודעות משורשרות"
+
+msgid "do_expand"
+msgstr "כל השרשורים"
+
+msgid "expand_only_unread"
+msgstr "רק עם הודעות שטרם נקראו"
+
+msgid "fromto"
+msgstr "שולח/נמען"
+
+msgid "flag"
+msgstr "דגל"
+
+msgid "attachment"
+msgstr "צרופה"
+
+msgid "nonesort"
+msgstr "כלום"
+
+msgid "sentdate"
+msgstr "תאריך משלוח"
+
+msgid "arrival"
+msgstr "תאריך הגעה"
+
+msgid "asc"
+msgstr "בסדר עולה"
+
+msgid "desc"
+msgstr "בסדר יורד"
+
+msgid "listcolumns"
+msgstr "רשימת עמודות"
+
+msgid "listsorting"
+msgstr "המיון לפי העמודה"
+
+msgid "listorder"
+msgstr "סדר מיון"
+
+msgid "listmode"
+msgstr "אופן הצגת רשימה"
+
+msgid "lmode"
+msgstr "מצב רשימה"
+
+msgid "layout"
+msgstr "מערך"
+
+msgid "layoutwidescreen"
+msgstr "מסך רחב"
+
+msgid "layoutdesktop"
+msgstr "מחשב שולחני"
+
+msgid "layoutlist"
+msgstr "רשימה"
+
+msgid "layoutwidescreendesc"
+msgstr "פריסה רחבה (3 טורים)"
+
+msgid "layoutdesktopdesc"
+msgstr "שולחן עבודה (פריסה רחבה והצגת ההודעה למטה)"
+
+msgid "layoutlistdesc"
+msgstr "רשימה (ללא הצגת ההודעה)"
+
+msgid "folderactions"
+msgstr "פעולות על תיקיות"
+
+msgid "compact"
+msgstr "פינוי שטח לא מנוצל"
+
+msgid "empty"
+msgstr "ריקון"
+
+msgid "importmessages"
+msgstr "ייבוא הודעות"
+
+msgid "mailimportdesc"
+msgstr "ניתן להעלות דוא\"ל באמצעות קבצים המקודדים כ MIME או MBOX"
+
+msgid "mailimportzip"
+msgstr "ניתן לדחוס מספר קבצים לתוך ארכיון ZIP"
+
+msgid "quota"
+msgstr "ניצול קיבולת"
+
+msgid "unknown"
+msgstr "לא ידוע"
+
+msgid "unlimited"
+msgstr "ללא הגבלה"
+
+msgid "quotatype"
+msgstr "טיפוס קווטה"
+
+msgid "quotatotal"
+msgstr "הגבלה"
+
+msgid "quotaused"
+msgstr "בשימוש"
+
+msgid "quotastorage"
+msgstr "נפח כונן"
+
+msgid "quotamessage"
+msgstr "ספירת הודעות"
+
+msgid "shortheaderdate"
+msgstr "ביום $date"
+
+msgid "shortheaderto"
+msgstr "עד $to ביום $date"
+
+msgid "shortheaderfrom"
+msgstr "מ- $from בתאריך $date"
+
+msgid "quicksearch"
+msgstr "חיפוש מהיר"
+
+msgid "searchplaceholder"
+msgstr "חיפוש..."
+
+msgid "resetsearch"
+msgstr "ניקוי תיבת החיפוש"
+
+msgid "searchmod"
+msgstr "מאפייני חיפוש"
+
+msgid "msgtext"
+msgstr "כל ההודעה"
+
+msgid "body"
+msgstr "גוף ההודעה"
+
+msgid "type"
+msgstr "סוג"
+
+msgid "namex"
+msgstr "שם"
+
+msgid "searchscope"
+msgstr "היקף"
+
+msgid "currentfolder"
+msgstr "תיקיה נוכחית"
+
+msgid "subfolders"
+msgstr "תיקיה זו ותת תיקיות"
+
+msgid "allfolders"
+msgstr "כל התיקיות"
+
+msgid "searchinterval-1W"
+msgstr "יותר משבוע"
+
+msgid "searchinterval-1M"
+msgstr "יותר מחודש"
+
+msgid "searchinterval-1Y"
+msgstr "יותר משנה"
+
+msgid "searchinterval1W"
+msgstr "פחות משבוע"
+
+msgid "searchinterval1M"
+msgstr "פחות מחודש"
+
+msgid "searchinterval1Y"
+msgstr "פחות משנה"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "פתיחה בחלון חדש"
+
+msgid "emlsave"
+msgstr "הורדת הודעה בפורמט  EML"
+
+msgid "changeformattext"
+msgstr "הצגה בפורמט לא מעוצב"
+
+msgid "changeformathtml"
+msgstr "הצגה בפורמט HTML"
+
+msgid "editasnew"
+msgstr "עריכת ההודעה כחדשה"
+
+msgid "send"
+msgstr "שלח"
+
+msgid "sendmessage"
+msgstr "משלוח מיידי"
+
+msgid "savemessage"
+msgstr "שמירת טיוטה"
+
+msgid "addattachment"
+msgstr "צירוף קובץ"
+
+msgid "charset"
+msgstr "קידוד"
+
+msgid "editortype"
+msgstr "סוג עורך"
+
+msgid "returnreceipt"
+msgstr "אישור קבלה"
+
+msgid "dsn"
+msgstr "הודעה על מצב המסירה"
+
+msgid "keepformatting"
+msgstr "המשך עריכה"
+
+msgid "mailreplyintro"
+msgstr ":כתב $sender, $date בתאריך"
+
+msgid "originalmessage"
+msgstr "הודעה מקורית"
+
+msgid "selectimage"
+msgstr "בחר תמונה"
+
+msgid "addimage"
+msgstr "הוסף תמונה"
+
+msgid "selectmedia"
+msgstr "בחר סרטון"
+
+msgid "addmedia"
+msgstr "הוסף סרטון"
+
+msgid "encrypt"
+msgstr "הצפנה"
+
+msgid "encryptmessage"
+msgstr "הצפנת הודעה"
+
+msgid "encryptmessagemailvelope"
+msgstr "הצפנה באמצעות Mailvelope"
+
+msgid "importpubkeys"
+msgstr "ייבוא מפתחות ציבוריים"
+
+msgid "encryptedsendialog"
+msgstr "נשלחת הודעה מוצפנת"
+
+msgid "encryptandsign"
+msgstr "להצפין ולחתום"
+
+msgid "keyid"
+msgstr "קוד זיהוי מפתח"
+
+msgid "keylength"
+msgstr "סיביות"
+
+msgid "keyexpired"
+msgstr "פג תוקף"
+
+msgid "keyrevoked"
+msgstr "נשלל"
+
+msgid "bccinstead"
+msgstr "שימוש במכותבים נסתרים"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "הוספה בין ערכים"
+
+msgid "insertcontact"
+msgstr "פה יש להוסיף איש קשר"
+
+msgid "recipient"
+msgstr "הנמען"
+
+msgid "recipientedit"
+msgstr "עריכת נמענים"
+
+msgid "editidents"
+msgstr "עריכת זהויות"
+
+msgid "spellcheck"
+msgstr "איות"
+
+msgid "checkspelling"
+msgstr "בדיקת איות"
+
+msgid "resumeediting"
+msgstr "המשך עריכה"
+
+msgid "revertto"
+msgstr "חזור למצב קודם"
+
+msgid "restore"
+msgstr "שיחזור"
+
+msgid "restoremessage"
+msgstr "לשחזר הודעה?"
+
+msgid "ignore"
+msgstr "להתעלם"
+
+msgid "responses"
+msgstr "תגובות"
+
+msgid "insertresponse"
+msgstr "הכנסת תגובה"
+
+msgid "manageresponses"
+msgstr "ניהול תגובות"
+
+msgid "newresponse"
+msgstr "צור מענה חדש"
+
+msgid "addresponse"
+msgstr "הוסף מענה"
+
+msgid "editresponse"
+msgstr "עריכת תגובה"
+
+msgid "editresponses"
+msgstr "עריכת תגובות"
+
+msgid "responsename"
+msgstr "שם"
+
+msgid "responsetext"
+msgstr "גוף התגובה"
+
+msgid "attach"
+msgstr "צירוף"
+
+msgid "attachments"
+msgstr "צרופות"
+
+msgid "upload"
+msgstr "העלאה"
+
+msgid "uploadprogress"
+msgstr "$percent ($current מתוך $total)"
+
+msgid "close"
+msgstr "סגירה"
+
+msgid "messageoptions"
+msgstr "אפשרויות הודעה..."
+
+msgid "togglecomposeoptions"
+msgstr "בחירה בין הגדרות בסיסיות או מתקדמות של יצירת הודעה"
+
+msgid "attachmentrename"
+msgstr "שינוי שם הצרופה"
+
+msgid "low"
+msgstr "נמוך"
+
+msgid "lowest"
+msgstr "נמוך ביותר"
+
+msgid "normal"
+msgstr "רגיל"
+
+msgid "high"
+msgstr "גבוה"
+
+msgid "highest"
+msgstr "גבוה ביותר"
+
+msgid "nosubject"
+msgstr "(ללא נושא)"
+
+msgid "showimages"
+msgstr "הצגת תמונות"
+
+msgid "allow"
+msgstr "הרשאה"
+
+msgid "alwaysshow"
+msgstr "$sender תמיד להציג תמונות מאת"
+
+msgid "alwaysallow"
+msgstr "תמיד לקבל מ- $sender"
+
+msgid "isdraft"
+msgstr "זו טיוטה של הודעה"
+
+msgid "andnmore"
+msgstr "עוד  $nr"
+
+msgid "details"
+msgstr "פרטים"
+
+msgid "summary"
+msgstr "סיכום"
+
+msgid "headers"
+msgstr "כותרות"
+
+msgid "allheaders"
+msgstr "כל הכותרות"
+
+msgid "togglemoreheaders"
+msgstr "הראה נתוני מערכת נוספים של ההודעה"
+
+msgid "togglefullheaders"
+msgstr "הראה / בטל צפיה בנתוני מערכת של ההודעה"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "ללא עיצוב"
+
+msgid "savesentmessagein"
+msgstr "היכן לשמור ההודעה?"
+
+msgid "dontsave"
+msgstr "ללא שמירה"
+
+msgid "maxuploadsize"
+msgstr "גודל מקסימלי לקובץ הוא  $size"
+
+msgid "addcc"
+msgstr "הוספת מכותב לידיעה"
+
+msgid "addbcc"
+msgstr "הוספת מכותב נסתר"
+
+msgid "addreplyto"
+msgstr "הוספת כתובת למענה"
+
+msgid "addfollowupto"
+msgstr "הוספת כתובת להעברת הודעה"
+
+msgid "sendreceipt"
+msgstr "לשלוח אישור קבלה?"
+
+msgid "mdnrequest"
+msgstr "השולח ביקש לדעת אם ההודעה נקראה. האם להודיע לשולח?"
+
+msgid "receiptread"
+msgstr "אישור קבלה (נקרא)"
+
+msgid "yourmessage"
+msgstr "אישור קבלה להודעתך"
+
+msgid "receiptnote"
+msgstr "הערה: האישור אינו מבטיח שהנמען קרא או הבין את תוכן ההודעה."
+
+msgid "sendalwaysto"
+msgstr "לשלוח תמיד אל email$"
+
+msgid "zoomin"
+msgstr "מבט עמוק יותר לפרטים"
+
+msgid "zoomout"
+msgstr "מבט רחוק יותר מהפרטים"
+
+msgid "rotate"
+msgstr "לסובב"
+
+msgid "increaseimage"
+msgstr "להגדיל תמונה"
+
+msgid "decreaseimage"
+msgstr "להקטין תמונה"
+
+msgid "rotateimage"
+msgstr "לסובב תמונה"
+
+msgid "showtools"
+msgstr "הצגת כלים לעיבוד תמונה"
+
+msgid "hidetools"
+msgstr "הסתרת כלים לעיבוד תמונה"
+
+msgid "name"
+msgstr "שם להצגה"
+
+msgid "firstname"
+msgstr "שם פרטי"
+
+msgid "surname"
+msgstr "שם משפחה"
+
+msgid "middlename"
+msgstr "שם אמצעי"
+
+msgid "nameprefix"
+msgstr "קידומת"
+
+msgid "namesuffix"
+msgstr "סיומת"
+
+msgid "nickname"
+msgstr "שם חיבה"
+
+msgid "jobtitle"
+msgstr "תפקיד באירגון"
+
+msgid "department"
+msgstr "מחלקה"
+
+msgid "gender"
+msgstr "מגדר"
+
+msgid "maidenname"
+msgstr "שם משפחה לפני נישואין"
+
+msgid "email"
+msgstr "כתובת דוא\"ל"
+
+msgid "phone"
+msgstr "מספר טלפון"
+
+msgid "address"
+msgstr "כתובת"
+
+msgid "street"
+msgstr "רחוב"
+
+msgid "locality"
+msgstr "עיר"
+
+msgid "zipcode"
+msgstr "מיקוד"
+
+msgid "region"
+msgstr "אישור"
+
+msgid "country"
+msgstr "מדינה"
+
+msgid "birthday"
+msgstr "יום הולדת"
+
+msgid "anniversary"
+msgstr "יום נישואין"
+
+msgid "website"
+msgstr "אתר אינטרנט"
+
+msgid "instantmessenger"
+msgstr "כינוי בצ'ט"
+
+msgid "notes"
+msgstr "הערות"
+
+msgid "male"
+msgstr "זכר"
+
+msgid "female"
+msgstr "נקבה"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "מנהל/ת"
+
+msgid "assistant"
+msgstr "עוזר/ת"
+
+msgid "spouse"
+msgstr "בן/בת זוג"
+
+msgid "allfields"
+msgstr "כל השדות"
+
+msgid "search"
+msgstr "חיפוש"
+
+msgid "searchresult"
+msgstr "תוצאת חיפוש"
+
+msgid "advsearch"
+msgstr "חיםוש מתקדם"
+
+msgid "advanced"
+msgstr "מתקדם"
+
+msgid "other"
+msgstr "אחר"
+
+msgid "printcontact"
+msgstr "הדפסת נתונים של איש קשר"
+
+msgid "qrcode"
+msgstr "קוד QR"
+
+msgid "typehome"
+msgstr "בית"
+
+msgid "typework"
+msgstr "עבודה"
+
+msgid "typeother"
+msgstr "אחר"
+
+msgid "typemobile"
+msgstr "נייד"
+
+msgid "typemain"
+msgstr "עיקרי"
+
+msgid "typehomefax"
+msgstr "פקס בית"
+
+msgid "typeworkfax"
+msgstr "פקס עבודה"
+
+msgid "typecar"
+msgstr "מכונית"
+
+msgid "typepager"
+msgstr "זימונית"
+
+msgid "typevideo"
+msgstr "וידאו"
+
+msgid "typeassistant"
+msgstr "עוזר/ת"
+
+msgid "typehomepage"
+msgstr "דף הבית"
+
+msgid "typeblog"
+msgstr "יומן רשת"
+
+msgid "typeprofile"
+msgstr "פרופיל"
+
+msgid "addfield"
+msgstr "הוסף שדה"
+
+msgid "addcontact"
+msgstr "הוסף איש קשר"
+
+msgid "editcontact"
+msgstr "עריכת איש קשר"
+
+msgid "contacts"
+msgstr "אנשי קשר"
+
+msgid "contactproperties"
+msgstr "מאפייני איש קשר"
+
+msgid "contactnameandorg"
+msgstr "שם וארגון"
+
+msgid "personalinfo"
+msgstr "מידע אישי"
+
+msgid "personal"
+msgstr "אישי"
+
+msgid "contactphoto"
+msgstr "תצלום איש קשר"
+
+msgid "edit"
+msgstr "עריכה"
+
+msgid "cancel"
+msgstr "ביטול"
+
+msgid "save"
+msgstr "שמירה"
+
+msgid "delete"
+msgstr "מחיקה"
+
+msgid "discard"
+msgstr "להפטר"
+
+msgid "continue"
+msgstr "המשך"
+
+msgid "ok"
+msgstr "אשר/י"
+
+msgid "rename"
+msgstr "שינוי שם"
+
+msgid "addphoto"
+msgstr "הוספה"
+
+msgid "replacephoto"
+msgstr "החלפה"
+
+msgid "uploadphoto"
+msgstr "העלאת תמונה"
+
+msgid "choosefile"
+msgstr "יש לבחור קובץ..."
+
+msgid "choosefiles"
+msgstr "יש לבחור קבצים..."
+
+msgid "browse"
+msgstr "דפדוף"
+
+msgid "newcontact"
+msgstr "צור איש קשר חדש"
+
+msgid "deletecontact"
+msgstr "מחיקת אנשי קשר מסומנים"
+
+msgid "composeto"
+msgstr "יצירת הודעה אל"
+
+msgid "contactsfromto"
+msgstr "אנשי קשר $from עד $to מתוך $count"
+
+msgid "print"
+msgstr "הדפסה"
+
+msgid "export"
+msgstr "ייצוא"
+
+msgid "exportall"
+msgstr "יצוא של כל הרשומות"
+
+msgid "exportsel"
+msgstr "צוא של רשומות נבחרות"
+
+msgid "exportvcards"
+msgstr "ייצוא אנשי קשר בפורמט vCard"
+
+msgid "newgroup"
+msgstr "הוסף קבוצה חדשה"
+
+msgid "addgroup"
+msgstr "הוספת קבוצה"
+
+msgid "grouprename"
+msgstr "שינוי שם קבוצה"
+
+msgid "groupdelete"
+msgstr "מחיקת קבוצה"
+
+msgid "groupassign"
+msgstr "שיוך לקבוצה..."
+
+msgid "groupremove"
+msgstr "הסרה מקבוצה"
+
+msgid "groupremoveselected"
+msgstr "אנשי הקשר שנבחרו יוסרו מהקבוצה"
+
+msgid "uponelevel"
+msgstr "רמה אחת מעלה"
+
+msgid "previouspage"
+msgstr "הצגת הקבוצה הקודמת"
+
+msgid "firstpage"
+msgstr "הצגת הקבוצה הראשונה"
+
+msgid "nextpage"
+msgstr "הצגת הקבוצה הבאה"
+
+msgid "lastpage"
+msgstr "הצגת הקבוצה האחרונה"
+
+msgid "group"
+msgstr "קבוצה"
+
+msgid "groups"
+msgstr "קבוצות"
+
+msgid "listgroup"
+msgstr "רשימה של חברי קבוצה"
+
+msgid "personaladrbook"
+msgstr "כתובות פרטיות"
+
+msgid "searchsave"
+msgstr "שמירת החיפוש"
+
+msgid "searchdelete"
+msgstr "מחיקת החיפוש"
+
+msgid "import"
+msgstr "ייבוא"
+
+msgid "importcontacts"
+msgstr "ייבוא אנשי קשר"
+
+msgid "importfromfile"
+msgstr "ייבוא מקובץ"
+
+msgid "importtarget"
+msgstr "הוספת אנשי קשר אל "
+
+msgid "importreplace"
+msgstr "החלפת כל פנקס הכתובות"
+
+msgid "importgroups"
+msgstr "ייבוא הגדרות קבוצה"
+
+msgid "importgroupsall"
+msgstr "הכל (יש להקים קבוצות אם צריך)"
+
+msgid "importgroupsexisting"
+msgstr "רק עבור קבוצות קיימות"
+
+msgid "importdesc"
+msgstr ""
+"ניתן להעלות אנשי קשר מפנקס כתובות קיים.  כרגע יש תמיכה ביבוא רשומות הערוכות "
+"בצורת vCard או CSV (מופרד פסיקים)"
+
+msgid "importmapdesc"
+msgstr ""
+"נא לאשר את מיפוי השדות שלהלן לפני שנמשיך עם יבוא קובץ נתונים מסוג CSV "
+"(מופרדים ע\"י פסיקים)"
+
+msgid "fieldnotmapped"
+msgstr "השדה ללא מיפוי (לא לייבא)"
+
+msgid "skipheader"
+msgstr "לא לייבא שורה ראשונה (כותרות)"
+
+msgid "done"
+msgstr "בוצע"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "הגדרות עבור"
+
+msgid "about"
+msgstr "אודות"
+
+msgid "preferences"
+msgstr "העדפות"
+
+msgid "userpreferences"
+msgstr "העדפות משתמש"
+
+msgid "editpreferences"
+msgstr "עריכה של העדפות משתמש"
+
+msgid "identities"
+msgstr "זהויות"
+
+msgid "manageidentities"
+msgstr "נהל זהויות"
+
+msgid "newidentity"
+msgstr "צור זהות חדשה"
+
+msgid "addidentity"
+msgstr "הוסף זהות"
+
+msgid "editidentity"
+msgstr "ערוך זהות"
+
+msgid "identityencryption"
+msgstr "הצפנה"
+
+msgid "preferhtml"
+msgstr "הצגת HTML"
+
+msgid "defaultcharset"
+msgstr "ברירת מחדל של תווים"
+
+msgid "htmlmessage"
+msgstr "תוכן HTML"
+
+msgid "messagepart"
+msgstr "גוף ההודעה"
+
+msgid "digitalsig"
+msgstr "חתימה דיגיטלית"
+
+msgid "dateformat"
+msgstr "פורמט התאריך"
+
+msgid "timeformat"
+msgstr "פורמט השעה"
+
+msgid "prettydate"
+msgstr "תאריכים מעוצבים"
+
+msgid "setdefault"
+msgstr "קביעה כברירת מחדל"
+
+msgid "autodetect"
+msgstr "אוטומטי"
+
+msgid "language"
+msgstr "שפה"
+
+msgid "timezone"
+msgstr "איזור זמן"
+
+msgid "pagesize"
+msgstr "מספר שורות בדף"
+
+msgid "signature"
+msgstr "חתימה"
+
+msgid "dstactive"
+msgstr "שעון קיץ"
+
+msgid "showinextwin"
+msgstr "צפיה בהודעה בחלון חדש"
+
+msgid "composeextwin"
+msgstr "יצירת הודעה בחלון חדש"
+
+msgid "htmleditor"
+msgstr "יצירת הודעה מעוצבת"
+
+msgid "htmlonreply"
+msgstr "רק במענה להודעת HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "להעביר או להשיב להודעה שהגיעה בפורמט HTML"
+
+msgid "htmlsignature"
+msgstr "חתימה מעוצבת"
+
+msgid "showemail"
+msgstr "הצגת כתובת דוא\"ל עם שם השולח"
+
+msgid "previewpane"
+msgstr "תצוגה מוקדמת"
+
+msgid "skin"
+msgstr "ערכת מראה"
+
+msgid "logoutclear"
+msgstr "ריקון סל אשפה ביציאה"
+
+msgid "logoutcompact"
+msgstr "פינוי שטח לא מנוצל ביציאה"
+
+msgid "uisettings"
+msgstr "ממשק משתמש"
+
+msgid "serversettings"
+msgstr "הגדרות שרת"
+
+msgid "mailboxview"
+msgstr "הצגת תיבת ההודעות"
+
+msgid "mdnrequests"
+msgstr "משלוח אישור מסירה"
+
+msgid "askuser"
+msgstr "שאל את המשתמש"
+
+msgid "autosend"
+msgstr "שליחה אוטומטית"
+
+msgid "autosendknown"
+msgstr "משלוח אישור קבלה רק לאנשי הקשר שלי"
+
+msgid "autosendknownignore"
+msgstr "משלוח אישור קבלה לאנשי הקשר שלי בלבד ולהתעלם מאחרים"
+
+msgid "autosendtrusted"
+msgstr "לשלוח אישור קבלה לשולחים מוכרים, בכל מקרה אחר לבקש אישור"
+
+msgid "autosendtrustedignore"
+msgstr "לשלוח אישור קבלה לשולחים מוכרים, אחרת להתעלם"
+
+msgid "ignorerequest"
+msgstr "להתעלם מהבקשה"
+
+msgid "readwhendeleted"
+msgstr "סימון הודעה כנקראה לאחר מחיקה"
+
+msgid "flagfordeletion"
+msgstr "סימון הודעה כמחוקה במקום מחיקה"
+
+msgid "skipdeleted"
+msgstr "הסתרת הודעות שנמחקו"
+
+msgid "deletealways"
+msgstr "אם העברה לתיקית מחיקה נכשלת יש למחוק לתמיד"
+
+msgid "deletejunk"
+msgstr "מחיקה ישירה של הודעות זבל"
+
+msgid "showremoteimages"
+msgstr "הצגת תמונות משרת מרוחק בגוף ההודעה"
+
+msgid "allowremoteresources"
+msgstr "אישור שימוש במשאבים מרוחקים (תמונות, סגנונות)"
+
+msgid "fromknownsenders"
+msgstr "משולחים מוכרים"
+
+msgid "fromtrustedsenders"
+msgstr "התקבל משולחים מוכרים"
+
+msgid "frommycontacts"
+msgstr "מאנשי הקשר שלי"
+
+msgid "always"
+msgstr "תמיד"
+
+msgid "alwaysbutplain"
+msgstr "תמיד, למעט בעת מענה לטקסט פשוט"
+
+msgid "showinlineimages"
+msgstr "הצגת תמונות מצורפות בתחתית ההודעה"
+
+msgid "autosavedraft"
+msgstr "שמירה אוטומטית של טיוטה"
+
+msgid "everynminutes"
+msgstr "כל $n דקות"
+
+msgid "refreshinterval"
+msgstr "רענון ההתצוגה לשם בדיקת קיום של הודעות חדשות וכדומה"
+
+msgid "never"
+msgstr "אף פעם"
+
+msgid "immediately"
+msgstr "מיידית"
+
+msgid "messagesdisplaying"
+msgstr "הצגת הודעות"
+
+msgid "messagescomposition"
+msgstr "כתיבת הודעות"
+
+msgid "mimeparamfolding"
+msgstr "שמות קבצים מצורפים"
+
+msgid "2231folding"
+msgstr "תאימות מלאה 2231 תאנדרבירד"
+
+msgid "miscfolding"
+msgstr "תאימות 2047/2231 אאוטלוק"
+
+msgid "2047folding"
+msgstr "תאימות מלאה 2047 אחרים"
+
+msgid "force7bit"
+msgstr "קידוד MIME עבור תווים בעלי 8 ביטים"
+
+msgid "savelocalstorage"
+msgstr "שמירה באיחסון מקומי של הדפדפן (ארעית)"
+
+msgid "advancedoptions"
+msgstr "הגדרות נוספות"
+
+msgid "toggleadvancedoptions"
+msgstr "בחירה בין הגדרות בסיסיות או מתקדמות"
+
+msgid "focusonnewmessage"
+msgstr "מיקוד הסמן על החלון עם ההודעה החדשה"
+
+msgid "checkallfolders"
+msgstr "בדיקת הודעות חדשות בכל התיקיות"
+
+msgid "displaynext"
+msgstr "הצגת הרשומה הבאה לאחר מחיקה/העברה"
+
+msgid "defaultfont"
+msgstr "גופן ברירת מחדל להודעה בפורמט HTML"
+
+msgid "mainoptions"
+msgstr "אפשרויות עיקריות"
+
+msgid "browseroptions"
+msgstr "אפשרויות דפדפן"
+
+msgid "section"
+msgstr "קטע"
+
+msgid "maintenance"
+msgstr "תחזוקה"
+
+msgid "newmessage"
+msgstr "הודעה חדשה"
+
+msgid "signatureoptions"
+msgstr "אפשרויות לשיבוץ חתימה"
+
+msgid "whenreplying"
+msgstr "כאשר עונים"
+
+msgid "replyempty"
+msgstr "לא לצטט הודעה מקורית"
+
+msgid "replytopposting"
+msgstr "הודעה חדשה תתחיל מעל ההודעה המקורית"
+
+msgid "replytoppostingnoindent"
+msgstr "הודעה תתחיל מעל הקטע המצוטט (ללא נסיגה)"
+
+msgid "replybottomposting"
+msgstr "הודעה חדשה תתחיל מתחת להודעה המקורית"
+
+msgid "replyremovesignature"
+msgstr "החתימה תוסר מההודעה המקורית במענה להודעה"
+
+msgid "autoaddsignature"
+msgstr "הוספה אוטומטית של חתימה"
+
+msgid "newmessageonly"
+msgstr "הודעה חדשה בלבד"
+
+msgid "replyandforwardonly"
+msgstr "מענה והעברת הודעה בלבד"
+
+msgid "insertsignature"
+msgstr "שיבוץ חתימה"
+
+msgid "sigbelow"
+msgstr "למקם חתימה מתחת להודעת המצוטטת"
+
+msgid "sigseparator"
+msgstr "חובת שימוש במפריד תקני בחתימה"
+
+msgid "automarkread"
+msgstr "סימון הודעה כנקראה"
+
+msgid "afternseconds"
+msgstr "לאחר $n שניות"
+
+msgid "reqmdn"
+msgstr "תמיד יש לדרוש אישור קבלה"
+
+msgid "reqdsn"
+msgstr "תמיד לבקש הודעה על מצב המסירה"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "המענה ישמר בתיקיה של ההודעה המקורית"
+
+msgid "defaultabook"
+msgstr "ברירת המחדל של רשימת כתובות"
+
+msgid "autocompletesingle"
+msgstr "לדלג על כתובת דואר חילופית בעת שימוש בהשלמה אוטומטית של הקלדה"
+
+msgid "listnamedisplay"
+msgstr "הצגת איש הקשר בתור"
+
+msgid "contactformmode"
+msgstr "הצגה של טופס איש קשר"
+
+msgid "privatemode"
+msgstr "פרטי (בית)"
+
+msgid "businessmode"
+msgstr "עיסקי (עבודה)"
+
+msgid "collectedaddresses"
+msgstr "כתובות שלוקטו"
+
+msgid "collectedrecipients"
+msgstr "נמענים שלוקטו"
+
+msgid "collectedrecipientsopt"
+msgstr "לשמור כתובות נמענים של דואר יוצא ב-"
+
+msgid "collectedsendersopt"
+msgstr "לשמור שולחים מוכרים ב-"
+
+msgid "trustedsenders"
+msgstr "שולחים מוכרים"
+
+msgid "spellcheckbeforesend"
+msgstr "בדיקת איות לפני המשלוח"
+
+msgid "spellcheckoptions"
+msgstr "אפשריות בדיקת איות"
+
+msgid "spellcheckignoresyms"
+msgstr "התעלמות ממילים המכילות סמלים"
+
+msgid "spellcheckignorenums"
+msgstr "התעלמות ממילים המכילות מספרים"
+
+msgid "spellcheckignorecaps"
+msgstr "התעלמות ממילים עם אותציות ראשיות"
+
+msgid "addtodict"
+msgstr "הוספה למילון"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "קביעת הפרוטוקול לטיפול בקישור מסוג  mailto:links"
+
+msgid "standardwindows"
+msgstr "חלונות קופצים יטופלו כחלונות רגילים"
+
+msgid "forwardmode"
+msgstr "הפנית הודעות"
+
+msgid "inline"
+msgstr "חלק מההודעה"
+
+msgid "asattachment"
+msgstr "כצרופה"
+
+msgid "replyallmode"
+msgstr "ברירת המחדל של כפתור [מענה לכולם]"
+
+msgid "replyalldefault"
+msgstr "מענה לכולם"
+
+msgid "replyalllist"
+msgstr "מענה לרשימת תפוצה בלבד (אם קיימת)"
+
+msgid "allmessages"
+msgstr "כל ההודעות"
+
+msgid "olderxdays"
+msgstr "לפני יותר מ- x$ ימים"
+
+msgid "folder"
+msgstr "תיקיה"
+
+msgid "folders"
+msgstr "תיקיות"
+
+msgid "foldername"
+msgstr "שם תיקיה"
+
+msgid "subscribed"
+msgstr "מנוי"
+
+msgid "messagecount"
+msgstr "הודעות"
+
+msgid "create"
+msgstr "יצירה"
+
+msgid "createfolder"
+msgstr "יצירת תיקיה חדשה"
+
+msgid "managefolders"
+msgstr "ניהול תיקיות"
+
+msgid "specialfolders"
+msgstr "תיקיות מיוחדות"
+
+msgid "properties"
+msgstr "מאפיינים"
+
+msgid "folderproperties"
+msgstr "מאפייני תיקיה"
+
+msgid "parentfolder"
+msgstr "תיקית אב"
+
+msgid "location"
+msgstr "מיקום"
+
+msgid "info"
+msgstr "מידע"
+
+msgid "getfoldersize"
+msgstr "הקשה להצגה של גודל תיקיה"
+
+msgid "changesubscription"
+msgstr "הקשה לשינוי הרשמה"
+
+msgid "foldertype"
+msgstr "סוג תיקיה"
+
+msgid "personalfolder"
+msgstr "תיקיה פרטית"
+
+msgid "otherfolder"
+msgstr "תיקית משתמש נוספת"
+
+msgid "sharedfolder"
+msgstr "תיקיה ציבורית"
+
+msgid "findfolders"
+msgstr "חיפוש תיקיות"
+
+msgid "findcontacts"
+msgstr "חיפוש אנשי קשר"
+
+msgid "findmail"
+msgstr "חפש הודעות דואר"
+
+msgid "namespace.personal"
+msgstr "אישי"
+
+msgid "namespace.other"
+msgstr "משתמשים אחרים"
+
+msgid "namespace.shared"
+msgstr "משותף"
+
+msgid "dualuselabel"
+msgstr "יכול רק להכיל"
+
+msgid "dualusemail"
+msgstr "הודעות"
+
+msgid "dualusefolder"
+msgstr "תיקיות"
+
+msgid "generate"
+msgstr "לחולל"
+
+msgid "encryptioncreatekey"
+msgstr "יצירה של צמד מפתחות"
+
+msgid "openmailvelopesettings"
+msgstr "הצגת אפשרויות לתוכנת ההצפנה"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr "קיימים $nr מפתחות פרטיים תואמים ברשימת המפתחות שלך בתוכנת ההצפנה"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"לזהות השולחת אין עדיין מפתח הצפנה פרטי השמור בתוכנת ההצפנה שלך. האם ליצור כזה\n"
+"כדי לאפשר הצפנת הודעות?"
+
+msgid "encryption"
+msgstr "הצפנה"
+
+msgid "mailvelopeoptions"
+msgstr "אפשרויות למעטפת ההודעה"
+
+msgid "mailvelopemainkeyring"
+msgstr "השתמש/י בטבעצ מפתחות עיקרית של מעטפת ההודעה"
+
+msgid "mailvelopenotfound"
+msgstr "ההרחבה העוסקת במעטפת ההודעה אינה מותקנת או מופעלת בדפדפן"
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "מיון לפי"
+
+msgid "sortasc"
+msgstr "מיון בסדר עולה"
+
+msgid "sortdesc"
+msgstr "מיון בסדר יורד"
+
+msgid "undo"
+msgstr "ביטול שינוי"
+
+msgid "installedplugins"
+msgstr "תוספים מותקנים"
+
+msgid "plugin"
+msgstr "תוסף תוכנה"
+
+msgid "version"
+msgstr "גירסה"
+
+msgid "source"
+msgstr "מקור"
+
+msgid "destination"
+msgstr "יעד"
+
+msgid "license"
+msgstr "רשיון"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "קבלת תמיכה"
+
+msgid "savedsearches"
+msgstr "חיפושים שנשמרו"
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "בייט"
+
+msgid "KB"
+msgstr "ק\"ב"
+
+msgid "MB"
+msgstr "מ\"ב"
+
+msgid "GB"
+msgstr "ג\"ב"
+
+msgid "unicode"
+msgstr "יוניקוד"
+
+msgid "english"
+msgstr "אנגלית"
+
+msgid "westerneuropean"
+msgstr "מערב אירופי"
+
+msgid "easterneuropean"
+msgstr "מזרח אירופי"
+
+msgid "southeasterneuropean"
+msgstr "דרום מזרח אירופה"
+
+msgid "baltic"
+msgstr "בלטי"
+
+msgid "cyrillic"
+msgstr "קירילי"
+
+msgid "arabic"
+msgstr "ערבי"
+
+msgid "greek"
+msgstr "יווני"
+
+msgid "hebrew"
+msgstr "עברי"
+
+msgid "turkish"
+msgstr "טורקי"
+
+msgid "nordic"
+msgstr "נורדי"
+
+msgid "thai"
+msgstr "תאי"
+
+msgid "celtic"
+msgstr "קלטי"
+
+msgid "vietnamese"
+msgstr "וויטנאמי"
+
+msgid "japanese"
+msgstr "יפני"
+
+msgid "korean"
+msgstr "קוריאני"
+
+msgid "chinese"
+msgstr "סיני"
+
+msgid "arialabeltopnav"
+msgstr "בקרת חלון"
+
+msgid "arialabeltasknav"
+msgstr "משימות יישום"
+
+msgid "arialabeltoolbar"
+msgstr "סרגל כלים יישום"
+
+msgid "arialabellistnav"
+msgstr "רשימת ניווט"
+
+msgid "arialabelactivetask"
+msgstr "משימה פעילה"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "מסנן של רשימת ההודעות"
+
+msgid "arialabelmailsearchform"
+msgstr "טופס חיפוש בתוך הודעות"
+
+msgid "arialabelcontactsearchform"
+msgstr "תבנית חיפוש אנשי קשר"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "הקשת מילות חיפוש"
+
+msgid "arialabelquicksearchbox"
+msgstr "קלט חיפוש"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "מסנן רשימת תיקיות"
+
+msgid "arialabelfoldersearchform"
+msgstr "מסך חיפוש תיקייה"
+
+msgid "arialabelfolderlist"
+msgstr "בחירה של תיקית הודעות"
+
+msgid "arialabelmessagelist"
+msgstr "רשימת הודעות"
+
+msgid "arialabelmailpreviewframe"
+msgstr "תצוגה מקדמית של הודעה"
+
+msgid "arialabelmailboxmenu"
+msgstr "תפריט פעולות תפריט"
+
+msgid "arialabellistselectmenu"
+msgstr "רשימת פריטים לבחירה"
+
+msgid "arialabelthreadselectmenu"
+msgstr "בחירת פתילים של הודעות מתוך רשימה"
+
+msgid "arialabelmessagelistoptions"
+msgstr "אפשרויות להצגת הודעות ומיונן"
+
+msgid "arialabelmailimportdialog"
+msgstr "תהליך ייבוא הודעות"
+
+msgid "arialabelmessagenav"
+msgstr "ניווט הודעה"
+
+msgid "arialabelmessagebody"
+msgstr "גוף הודעה"
+
+msgid "arialabelmessageactions"
+msgstr "פעולות הודעה"
+
+msgid "arialabelcontactquicksearch"
+msgstr "תבנית חיפוש אנשי קשר"
+
+msgid "arialabelcontactsearchbox"
+msgstr "קלט חיפוש איש קשר"
+
+msgid "arialabelmessageheaders"
+msgstr "תקורות הודעה"
+
+msgid "arialabelforwardingoptions"
+msgstr "אפשרויות העברה"
+
+msgid "arialabelreplyalloptions"
+msgstr "אפשרויות מענה לכולם"
+
+msgid "arialabelmoremessageactions"
+msgstr "עוד פעולות הודעה"
+
+msgid "arialabelmorecontactactions"
+msgstr "פעולות נוספות על אנשי קשר"
+
+msgid "arialabelmarkmessagesas"
+msgstr "סימון הודעות נבחרות בתור..."
+
+msgid "arialabelcomposeoptions"
+msgstr "אפשרויות הלחנה"
+
+msgid "arialabelresponsesmenu"
+msgstr "תפריט של תגובות מוכנות מראש"
+
+msgid "arialabelattachmentuploadform"
+msgstr "תבנית העלאת צרופה"
+
+msgid "arialabelattachmentmenu"
+msgstr "אפשרויות צרופה"
+
+msgid "arialabelmailtomenu"
+msgstr "אפשרויות כתובת דואר"
+
+msgid "arialabelattachmentpreview"
+msgstr "תצוגה מקדמית של צרופה"
+
+msgid "ariasummarycomposecontacts"
+msgstr "רשימה של אנשי קשר וקבוצות שיבחרו כנמענים"
+
+msgid "arialabelcontactexportoptions"
+msgstr "אפשרויות ייצוא איש קשר"
+
+msgid "arialabelabookgroupoptions"
+msgstr "אפשרויות קבוצה/פנקס כתובות"
+
+msgid "arialabelpreferencesform"
+msgstr "תבנית העדפות"
+
+msgid "arialabelidentityeditfrom"
+msgstr "טופס עריכת זהות"
+
+msgid "arialabelresponseeditfrom"
+msgstr "טופס עריכת מענה"
+
+msgid "arialabelsearchterms"
+msgstr "מילות חיםוש"
+
+msgid "arialabeldropactionmenu"
+msgstr "תפריט גרירה"
+
+msgid "arialabelheadersmenu"
+msgstr "תפריט הוספת (כותרת) נמען"
+
+msgid "arialabelimagetools"
+msgstr "כלים לעיבוד תמונה"
+
+msgid "helplistnavigation"
+msgstr "ניווט ברשימה באמצעות לוח המקשים"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"חיצים למלעלה/למטה: בחירת שורה/מיקוד בשורה\n"
+"מקש רווח: בחירה בשורת המיקוד\n"
+"מקש SHIFT+חץ למעלה/למטה: בחירה בשורות נוספות מעל/מתחת לשורה הנוכחית\n"
+"מקש CTRL+רווח: הוספה/הסרה של שורה מהקבוצה שנבחרה"
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"חץ ימין/שמאל: הרחבה/צימצום של פתיל ההודעות (במצב של הצגת פתילים בלבד)\n"
+"ENTER: פתיחה של ההודעה שנבחרה\n"
+"DELETE: העברה של ההודעה שנבחרה לפח האשפה"
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "ENTER: פתיחה של איש הקשר שסומן "
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "אירעה שגיאה !"
+
+msgid "messages.loginfailed"
+msgstr "הכניסה נכשלה"
+
+msgid "messages.cookiesdisabled"
+msgstr "הדפדפן אינו מקבל עוגיות"
+
+msgid "messages.sessionerror"
+msgstr "כניסתך למערכת אינה חוקית או שפג תוקפה"
+
+msgid "messages.cookiesmismatch"
+msgstr "קיימת אי התאמה בין בעוגיות. יש לנקות עוגיות השמורות בדפדפן"
+
+msgid "messages.storageerror"
+msgstr "הקשר לשרת הדואר נכשל"
+
+msgid "messages.servererror"
+msgstr "! שגיאת שרת"
+
+msgid "messages.servererrormsg"
+msgstr "$msg  שגיאת שרת"
+
+msgid "messages.accountlocked"
+msgstr "יותר מדיי ניסיונות כניסה כושלים. נסה שנית מאוחר יותר."
+
+msgid "messages.connerror"
+msgstr "שגיאת תקשורת עם השרת."
+
+msgid "messages.dberror"
+msgstr "! שגיאה במסד הנתונים"
+
+msgid "messages.dbconnerror"
+msgstr "לא ניתן ליצור קשר עם מסד הנתוים"
+
+msgid "messages.windowopenerror"
+msgstr "החלון הקופץ נחסם!"
+
+msgid "messages.requesttimedout"
+msgstr "תם הזמן המוקצב לבקשה"
+
+msgid "messages.errorreadonly"
+msgstr "לא ניתן לבצע הפעולה כי התיקייה במצב קריאה בלבד"
+
+msgid "messages.errornoperm"
+msgstr "לא ניתן לבצע הפעולה כי אין הרשאה לבצעה"
+
+msgid "messages.erroroverquota"
+msgstr "לא ניתן לבצע את הפעולה.אין מקום פנוי על הדיסק"
+
+msgid "messages.erroroverquotadelete"
+msgstr "אין מקום פנוי על הדיסק. יש להשתמש ב SHIFT+DELETE כדי למחוק ההודעה"
+
+msgid "messages.invalidrequest"
+msgstr "בקשה לא חוקית. המידע לא נשמר"
+
+msgid "messages.invalidhost"
+msgstr "שם שרת לא חוקי"
+
+msgid "messages.nomessagesfound"
+msgstr "לא נמצאו הודעות בתיבה זו"
+
+msgid "messages.loggedout"
+msgstr "הפעילות הסתיימה בהצלחה.  להתראות."
+
+msgid "messages.mailboxempty"
+msgstr "רשימת ההודעות ריקה"
+
+msgid "messages.nomessages"
+msgstr "אין הודעות"
+
+msgid "messages.refreshing"
+msgstr "מרענן..."
+
+msgid "messages.loading"
+msgstr "טעינה..."
+
+msgid "messages.uploading"
+msgstr "קובץ עולה..."
+
+msgid "messages.attaching"
+msgstr "הוספת צרופה..."
+
+msgid "messages.uploadingmany"
+msgstr "מעלה קבצים..."
+
+msgid "messages.loadingdata"
+msgstr "טעינת מידע..."
+
+msgid "messages.checkingmail"
+msgstr "בדיקת קיום הודעות חדשות..."
+
+msgid "messages.sendingmessage"
+msgstr "ההודעה נשלחת..."
+
+msgid "messages.messagesent"
+msgstr "ההודעה נשלחה בהצלחה"
+
+msgid "messages.savingmessage"
+msgstr "שמירת הודעה..."
+
+msgid "messages.messagesaved"
+msgstr "ההודעה נשמרה כטיוטה"
+
+msgid "messages.successfullysaved"
+msgstr "נשמרה בהצלחה"
+
+msgid "messages.savingresponse"
+msgstr "שמירת תגובה..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "האם למחוק את התגובה?"
+
+msgid "messages.nocontactselected"
+msgstr "עדיין לא נבחר איש קשר"
+
+msgid "messages.addedsuccessfully"
+msgstr "איש הקשר נוסף לפנקס בהצלחה"
+
+msgid "messages.contactexists"
+msgstr "קים איש קשר בעל כתובת דוא\"ל זהה"
+
+msgid "messages.contactnameexists"
+msgstr "קיים כבר איש קשר בעל אותו שם"
+
+msgid "messages.blockedimages"
+msgstr "תמונות משרת אחר נחסמו כדי לשמור על הפרטיות"
+
+msgid "messages.blockedresources"
+msgstr "משאבים מרוחקים נחסמו כדי לשמור על פרטיות"
+
+msgid "messages.suspiciousemail"
+msgstr "ההודעה מכילה כתובות דוא\"ל חשודות כנסיון מרמה"
+
+msgid "messages.bccemail"
+msgstr "ההודעה/ות שהועברו מכילה/ות נמענים נסתרים BCC"
+
+msgid "messages.bouncehint"
+msgstr "ההודעה תישלח ללא שינוי, כלומר עם גוף ההודעה,כותרות ונמענים מקוריים."
+
+msgid "messages.encryptedmessage"
+msgstr "זו הודעת מוצפנת ולא ניתן להציגה"
+
+msgid "messages.externalmessagedecryption"
+msgstr "זו הודעה מוצפנת שניתן לפענחה באמצעות תוסף לדפדפן"
+
+msgid "messages.nopubkeyfor"
+msgstr "לא נמצא מפתח ציבורי עבור email$"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"לא נמצא מפתח ציבורי תקין לשולח זה. האם ברצונך להצפין את ההודעה לנמענים בלבד?"
+
+msgid "messages.encryptnoattachments"
+msgstr "לא ניתן להצפין צרופות שכבר הועלו. נא להוסיפן מחדש בעורך ההצפנה."
+
+msgid "messages.searchpubkeyservers"
+msgstr "האם ברצונך לחפש בשרתים של מפתחות ציבוריים אחר המפתחות החסרים?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "נמצאו המפתחות הציבוריים שלהלן"
+
+msgid "messages.keyservererror"
+msgstr "שליפת מפתח מהשרת נכשלה"
+
+msgid "messages.keyimportsuccess"
+msgstr "מפתח ציבורי $key יובא בהצלחה לצרור המפתחות שלך"
+
+msgid "messages.nocontactsfound"
+msgstr "לא נמצאו אנשי קשר"
+
+msgid "messages.contactnotfound"
+msgstr "איש הקשר המבוקש לא נמצא"
+
+msgid "messages.contactsearchonly"
+msgstr "יש להתשמש במסך חיפוש כדי לראות אנשי קשר מספר הכתובות"
+
+msgid "messages.sendingfailed"
+msgstr "שליחת ההודעה נכשלה"
+
+msgid "messages.senttooquickly"
+msgstr "נא להמתין $sec שניות לפני מסירת הודעה זו"
+
+msgid "messages.errorsavingsent"
+msgstr "אירעה שגיאה בזמן שמירת ההודעה שנשלחה"
+
+msgid "messages.errorsaving"
+msgstr "אירעה שגיאה בזמן השמירה"
+
+msgid "messages.errormoving"
+msgstr "העברת ההודעה(ות) נכשלה"
+
+msgid "messages.errorcopying"
+msgstr "העתקת ההודעות נכשלה"
+
+msgid "messages.errordeleting"
+msgstr "לא ניתן למחוק את ההודעה"
+
+msgid "messages.errormarking"
+msgstr "לא ניתן לסמן ההודעה"
+
+msgid "messages.alerttitle"
+msgstr "שימ/י לב"
+
+msgid "messages.confirmationtitle"
+msgstr "האם את/ה בטוח/ה?...."
+
+msgid "messages.deletecontactconfirm"
+msgstr "האם למחוק את איש הקשר?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "האם אכן ברצונך למחוק את הקבוצה שנבחרה?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "האם למחוק את ההודעות המסומנות?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "האם למחוק תיקייה זו?"
+
+msgid "messages.movefolderconfirm"
+msgstr "האם אכן ברצונך להעביר את התיקייה?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "האם למחוק את כל ההודעות בתיקייה זו?"
+
+msgid "messages.contactdeleting"
+msgstr "אנשי קשר נמחקים..."
+
+msgid "messages.groupdeleting"
+msgstr "מחיקת קבוצה..."
+
+msgid "messages.folderdeleting"
+msgstr "התיקיה נמחקת..."
+
+msgid "messages.foldermoving"
+msgstr "העברת תיקיה..."
+
+msgid "messages.foldersubscribing"
+msgstr "התיקייה נרשמה..."
+
+msgid "messages.folderunsubscribing"
+msgstr "רישום התיקיה בוטל..."
+
+msgid "messages.formincomplete"
+msgstr "לא הוזנו כל השדות בטופס זה"
+
+msgid "messages.noemailwarning"
+msgstr "נא להוסיף כתובת דוא\"ל חוקית"
+
+msgid "messages.nonamewarning"
+msgstr "נא להוסיף שם"
+
+msgid "messages.nopagesizewarning"
+msgstr "נא להוסיף גודל דף"
+
+msgid "messages.nosenderwarning"
+msgstr "נא להקיש כתובת דוא\"ל של השולח"
+
+msgid "messages.recipientsadded"
+msgstr "הנמען התוסף בהצלחה"
+
+msgid "messages.norecipientwarning"
+msgstr "נא להוסיף לפחות נמען אחד"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "יותר מדי מכותבים גלויים"
+
+msgid "messages.nosubjectwarning"
+msgstr "שורת הנושא ריקה. האם ברצונך להוסיף נושא כעת?"
+
+msgid "messages.nosubjecttitle"
+msgstr "אין נושא"
+
+msgid "messages.nobodywarning"
+msgstr "האם לשלוח הודעה ללא תוכן?"
+
+msgid "messages.notsentwarning"
+msgstr "ההודעה טרם נשלחה ויש בה שינויים שלא נשמרו. האם לוותר על כל השינויים?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"נמצאה הודעה שנערכה אך לא נשלחה. \\n\\nSubject: $subject\\nנשמרה:  "
+"$date\\n\\nהאם לשחזר את ההודעה?"
+
+msgid "messages.nosearchname"
+msgstr "נא להוסיף איש קשר או כתובת דוא\"ל"
+
+msgid "messages.notuploadedwarning"
+msgstr "עדיין לא הועלו כל הקבצים. נא לחכות או לבטל הפעולה."
+
+msgid "messages.searchsuccessful"
+msgstr "נמצאו $nr הודעות"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "נמצאו $nr אנשי קשר"
+
+msgid "messages.searchnomatch"
+msgstr "תוצאת החיפוש ריקה"
+
+msgid "messages.searching"
+msgstr "חיפוש..."
+
+msgid "messages.checking"
+msgstr "בדיקה..."
+
+msgid "messages.stillsearching"
+msgstr "עדיין בחיפוש..."
+
+msgid "messages.nospellerrors"
+msgstr "לא נמצאו שגיאות כתיב"
+
+msgid "messages.folderdeleted"
+msgstr "התיקייה נמחקה בהצלחה"
+
+msgid "messages.foldersubscribed"
+msgstr "התיקייה נרשמה בהצלחה"
+
+msgid "messages.folderunsubscribed"
+msgstr "ביטול רישום התיקייה הצליח"
+
+msgid "messages.folderpurged"
+msgstr "התיקייה רוקנה בהצלחה"
+
+msgid "messages.folderexpunged"
+msgstr "התיקייה צומצמה בהצלחה"
+
+msgid "messages.deletedsuccessfully"
+msgstr "המחיקה הסתיימה בהצלחה"
+
+msgid "messages.converting"
+msgstr "הסרת העיצוב מההודעה"
+
+msgid "messages.messageopenerror"
+msgstr "לא ניתן לטעון ההודעה מהשרת"
+
+msgid "messages.filelinkerror"
+msgstr "הצמדת הצרופה נכשלה"
+
+msgid "messages.fileuploaderror"
+msgstr "העלאת הקובץ נכשלה"
+
+msgid "messages.csvfilemismatch"
+msgstr "יבוא של מספר קבצים מסוג CVS בעלי שדות שונים זה מזה אינו נתמך."
+
+msgid "messages.filesizeerror"
+msgstr "הקובץ לטעינה גדול מהגודל המקסימלי שהוא $size"
+
+msgid "messages.filecounterror"
+msgstr "ניתן להעלות לכל היותר count$ קבצים בעת ובעונה אחת"
+
+msgid "messages.msgsizeerror"
+msgstr "הוספת צרופה נכשלה. גודלה יותר מהגודל (size$) המותר."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"גודל ההודעה (size$) דול מהמקסימום המותר. \n"
+"num$ הודעות לא צורפו."
+
+msgid "messages.copysuccess"
+msgstr "$nr אנשי קשר הועתקו בהצלחה"
+
+msgid "messages.movesuccess"
+msgstr "$nr אנשי קשר הועברו בהצלחה"
+
+msgid "messages.copyerror"
+msgstr "לא ניתן היה להעתיק אנשי קשר כלשהם"
+
+msgid "messages.moveerror"
+msgstr "לא ניתן היה להעביר אנשי קשר כלשהם"
+
+msgid "messages.sourceisreadonly"
+msgstr "המקור לכתובת הוא לקריאה בלבד"
+
+msgid "messages.errorsavingcontact"
+msgstr "לא ניתן לשמור את כתובת איש הקשר"
+
+msgid "messages.movingmessage"
+msgstr "העברת הודעה(ות)..."
+
+msgid "messages.copyingmessage"
+msgstr "העתקת הודעה(ות)..."
+
+msgid "messages.copyingcontact"
+msgstr "העתקת אנשי קשר..."
+
+msgid "messages.movingcontact"
+msgstr "העברת אנשי קשר..."
+
+msgid "messages.deletingmessage"
+msgstr "מחיקת הודעה(ות)..."
+
+msgid "messages.markingmessage"
+msgstr "סימון ההודעה בתהליך..."
+
+msgid "messages.addingmember"
+msgstr "הוספת אנשי קשר לקבוצה..."
+
+msgid "messages.removingmember"
+msgstr "הסרת אנשי קשר מהקבוצה..."
+
+msgid "messages.receiptsent"
+msgstr "אישור הקבלה נשלח בהצלחה"
+
+msgid "messages.errorsendingreceipt"
+msgstr "לא ניתן לשלוח אישור קבלה"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "האם אכן ברצונך למחוק זהות זאת?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "זו הזהות האחרונה ולכן לא ניתן לבטלה"
+
+msgid "messages.forbiddencharacter"
+msgstr "שם התיקיה מכיל תוים אסורים"
+
+msgid "messages.selectimportfile"
+msgstr "נא לבחור קובץ להעלאה"
+
+msgid "messages.addresswriterror"
+msgstr "פנקס הכתובות שנבחר אינו ניתן לכתיבה"
+
+msgid "messages.contactaddedtogroup"
+msgstr "אנשי הקשר נוספו בהצלחה לקבוצה"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "אנשי הקשר הוסרו בהצלחה מהקבוצה"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "לא השתנו הגדרות קבוצה"
+
+msgid "messages.importwait"
+msgstr "ייבוא, נא להמתין.."
+
+msgid "messages.importformaterror"
+msgstr "היבוא נכשל ! הקובץ שהועלה אינו מתאים."
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>יובאו $inserted אנשי קשר, $skipped היו קיימים </b>:<p><em>$names</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "יובאו בהצלחה $nr הודעות "
+
+msgid "messages.importmessageerror"
+msgstr "היבוא נכשל ! הקובץ שהועלה אינו הודעה או קובץ הודעות במבנה מתאים"
+
+msgid "messages.opnotpermitted"
+msgstr "פעולה אסורה!"
+
+msgid "messages.nofromaddress"
+msgstr "חסרה כתובת דוא\"ל בזהות שנבחרה"
+
+msgid "messages.editorwarning"
+msgstr "החלפת סוג העורך עלולה לגרום לאבדן עיצוב טקסט. האם ברצונך להמשיך?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"ארעה שגיאת תצורה חמורה. נא להודיע מייד למנהל/ת המערכת. <B> הודעתך לא תשלח "
+"<B>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP ($code): אבד הקשר לשרת"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP ($code): ההזדהות נכשלה"
+
+msgid "messages.smtpfromerror"
+msgstr "($msg) SMTP ($code): \"$from\" לא נרשמה כתובת השולח"
+
+msgid "messages.smtptoerror"
+msgstr "($msg) SMTP ($code): \"$to\" לא נרשמה כתובת המקבל"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP : לא ניתן לפענח רשימת נמענים"
+
+msgid "messages.smtputf8error"
+msgstr "שגיאת SMTP: שרת הדואר לא תומך כתובת דואר אלקטרוני מקודדת ביוניקוד."
+
+msgid "messages.smtpsizeerror"
+msgstr "גודל ההודעה עולה על הגודל המותר בשרת  limit ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "כתבות דוא\"ל לא תקינה: email$"
+
+msgid "messages.toomanyrecipients"
+msgstr "יותר מדי נמענים. יש להקטין מספרם ל - $max"
+
+msgid "messages.maxgroupmembersreached"
+msgstr "מספרם של חברי הקבוצה אינו יכול לעבור $max"
+
+msgid "messages.internalerror"
+msgstr "שגיאת מערכת. נא לנסות שנית."
+
+msgid "messages.contactdelerror"
+msgstr "לא ניתן למחוק איש קשר"
+
+msgid "messages.contactdeleted"
+msgstr "איש הקשר נמחק"
+
+msgid "messages.contactrestoreerror"
+msgstr "לא ניתן לשחזר איש קשר שנמחק"
+
+msgid "messages.contactrestored"
+msgstr "איש הקשר שוחזר בהצלחה"
+
+msgid "messages.groupdeleted"
+msgstr "הקבוצה נמחקה בהצלחה"
+
+msgid "messages.grouprenamed"
+msgstr "שם הקבוצה שונה בהצלחה"
+
+msgid "messages.groupcreated"
+msgstr "הקבוצה נוצרה בהצלחה"
+
+msgid "messages.savedsearchdeleted"
+msgstr "נמחק החיפוש שנשמר"
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "לא ניתן למחוק החיפוש שנשמר"
+
+msgid "messages.savedsearchcreated"
+msgstr "החיפוש נשמר בהצלחה"
+
+msgid "messages.savedsearchcreateerror"
+msgstr "לא ניתן לשמור את החיפוש"
+
+msgid "messages.messagedeleted"
+msgstr "ההודעה נמחקה בהצלחה"
+
+msgid "messages.messagemoved"
+msgstr "ההודעה הועברה בהצלחה"
+
+msgid "messages.messagemovedtotrash"
+msgstr "ההודעה(ות) הועברו לסל המיחזור"
+
+msgid "messages.messagecopied"
+msgstr "ההודעה הועתקה בהצלחה"
+
+msgid "messages.messagemarked"
+msgstr "ההודעה סומנה בהצלחה"
+
+msgid "messages.autocompletechars"
+msgstr "יש להקיש לפחות $min תווים להשלמה אוטומטית של המחרוזת"
+
+msgid "messages.autocompletemore"
+msgstr "נמצאו רשומות נוספות. נא להקיש תווים נוספים."
+
+msgid "messages.namecannotbeempty"
+msgstr "השם אינו יכול להיות ריק"
+
+msgid "messages.nametoolong"
+msgstr "השם ארוך מדי"
+
+msgid "messages.namedotforbidden"
+msgstr "שם תיקיה אינו יכול להתחיל בנקודה"
+
+msgid "messages.folderupdated"
+msgstr "התיקייה עודכנה בהצלחה"
+
+msgid "messages.foldercreated"
+msgstr "התיקייה נוצרה בהצלחה"
+
+msgid "messages.invalidimageformat"
+msgstr "פורמט תמונה לא חוקי"
+
+msgid "messages.mispellingsfound"
+msgstr "התגלו שגיאות כתיב בהודעה"
+
+msgid "messages.parentnotwritable"
+msgstr "לא ניתן ליצור/להעביר תיקיה לתוך תיקית האב שנבחרה. אין הרשאה לגישה."
+
+msgid "messages.messagetoobig"
+msgstr "ההודעה גדולה מעבר ליכולת העיבוד של התוכנה"
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"הצרופה הזו חשודה כי הסוג שלה לא תואם את הסוג שהוכרז בהודעה. אם אינך בוטח/ת\n"
+"בשולח/ת, לא לפתוח אותה בדפדפן כי היא עלולה להכיל נוזקה.\n"
+"הסוג שהוכרז:  $expected, הסוג שנמצא:  $detected"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"זהירות! תוכנה זו דורשת שימוש בג'אווהסקריפט! כדי להשתמש בכלי, יש לבחור "
+"באפשרות זו בהגדרות הדפדפן."
+
+msgid "messages.messageissent"
+msgstr "ההודעה נשלחה אבל לא נשמרה עדיין. האם לשמור אותה כעת?"
+
+msgid "messages.errnotfound"
+msgstr "הקובץ לא נמצא"
+
+msgid "messages.errnotfoundexplain"
+msgstr "המשאב המבוקש לא נמצא!"
+
+msgid "messages.errfailedrequest"
+msgstr "הבקשה נכשלה"
+
+msgid "messages.errauthorizationfailed"
+msgstr "הרשאה נכשלה"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "לא ניתו לאשר את הרשאתך לגישה לשירות זה"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "בדיקת הבקשה נכשלה"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"להגנתך, הגישה למשאב זה מאובטחת כנגד CRSF.\n"
+"אם הודעה זו מופיעה, זה משום שקרוב לודאי לא היתה יציאה מסודרת לפני\n"
+"סגירת היישום בדפדפן. \n"
+"כעת נדרשת פעולה ידנית כדי להמשיך."
+
+msgid "messages.errcontactserveradmin"
+msgstr "נא לפנות למנהל השרת"
+
+msgid "messages.clicktoresumesession"
+msgstr "יש ללחוץ כאן כדי להמשיך מהמצב הקודם"
+
+msgid "messages.errcomposesession"
+msgstr "שגיאה במהלך יצירת ההודעה"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "תהליך יצירת ההודעה לא אותר"
+
+msgid "messages.clicktocompose"
+msgstr "יש להקיש כאן כדי ליצור הודעה חדשה"
+
+msgid "messages.nosupporterror"
+msgstr "התכונה הזו אינה נתמכת על ידי הדפדפן שלך"
+
+msgid "messages.siginserted"
+msgstr "החתימה התווספה בהצלחה"
+
+msgid "messages.responseinserted"
+msgstr "התגובה התווספה בהצלחה"
+
+msgid "messages.noresponsesavailable"
+msgstr "לא נמצאו תגובות"
+
+msgid "messages.listempty"
+msgstr "הרשימה ריקה"
+
+msgid "messages.listusebutton"
+msgstr "יש להשתמש בכפתור יצירה כדי להוסיף רשומה חדשה"
+
+msgid "messages.keypaircreatesuccess"
+msgstr "הצליחה יצירת מפתח חדש ל identity$"
+
+msgid "messages.emptyattachment"
+msgstr "צרופה זו נראית כריקה. יש לבדוק עם השולח"
+
+msgid "messages.oauthloginfailed"
+msgstr "נכשל נסיון כניסה באמצעות OAUTH. נא לנסות שנית."
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

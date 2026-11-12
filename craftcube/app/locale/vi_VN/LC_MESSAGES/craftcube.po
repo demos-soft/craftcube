@@ -1,0 +1,2861 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Chào mừng bạn đã sử dụng $product"
+
+msgid "username"
+msgstr "Tên đăng nhập"
+
+msgid "password"
+msgstr "Mật khẩu"
+
+msgid "server"
+msgstr "Máy chủ"
+
+msgid "login"
+msgstr "Đăng nhập"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Thoát"
+
+msgid "mail"
+msgstr "Thư"
+
+msgid "settings"
+msgstr "Thiết lập cấu hình"
+
+msgid "addressbook"
+msgstr "Sổ địa chỉ"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Hộp thư"
+
+msgid "drafts"
+msgstr "Thư nháp"
+
+msgid "sent"
+msgstr "Đã gửi"
+
+msgid "trash"
+msgstr "Thùng rác"
+
+msgid "junk"
+msgstr "Thư rác"
+
+msgid "show_real_foldernames"
+msgstr "Hiển thị tên thật cho các thư mục đặc biệt"
+
+msgid "subject"
+msgstr "Tiêu đề"
+
+msgid "from"
+msgstr "Gửi từ"
+
+msgid "sender"
+msgstr "Người gửi"
+
+msgid "to"
+msgstr "Người nhận"
+
+msgid "cc"
+msgstr "Đồng kính gửi"
+
+msgid "bcc"
+msgstr ""
+"Người đồng nhận (người nhận không thấy email của người khác cùng được nhận "
+"thư)"
+
+msgid "replyto"
+msgstr "Trả lời cho"
+
+msgid "followupto"
+msgstr "Đánh dấu thư cần theo dõi"
+
+msgid "date"
+msgstr "Ngày"
+
+msgid "size"
+msgstr "Dung lượng"
+
+msgid "priority"
+msgstr "Độ ưu tiên"
+
+msgid "organization"
+msgstr "Tổ chức"
+
+msgid "readstatus"
+msgstr "Trạng thái của thư"
+
+msgid "listoptions"
+msgstr "Danh sách lựa chọn"
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Các thư mục"
+
+msgid "messagesfromto"
+msgstr "Thư từ $from đến $to trong tổng số $count"
+
+msgid "threadsfromto"
+msgstr "Dòng thư từ $from đến $to của tổng số $count"
+
+msgid "messagenrof"
+msgstr "Thư thứ $nr trong tổng số $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to của $count"
+
+msgid "copy"
+msgstr "Sao chép"
+
+msgid "move"
+msgstr "Di Chuyển"
+
+msgid "moveto"
+msgstr "Di chuyển tới..."
+
+msgid "copyto"
+msgstr "Sao dữ liệu đến..."
+
+msgid "download"
+msgstr "Tải về"
+
+msgid "open"
+msgstr "Mở"
+
+msgid "showattachment"
+msgstr "Hiển thị"
+
+msgid "showanyway"
+msgstr "Tiếp tục hiển thị"
+
+msgid "filename"
+msgstr "Tên tập tin"
+
+msgid "filesize"
+msgstr "Kích cỡ tập tin"
+
+msgid "addtoaddressbook"
+msgstr "Thêm vào danh bạ"
+
+msgid "sun"
+msgstr "Chủ Nhật"
+
+msgid "mon"
+msgstr "Thứ Hai"
+
+msgid "tue"
+msgstr "Thứ Ba"
+
+msgid "wed"
+msgstr "Thứ Tư"
+
+msgid "thu"
+msgstr "Thứ Năm"
+
+msgid "fri"
+msgstr "Thứ Sáu"
+
+msgid "sat"
+msgstr "Thứ Bảy"
+
+msgid "sunday"
+msgstr "Chủ Nhật"
+
+msgid "monday"
+msgstr "Thứ Hai"
+
+msgid "tuesday"
+msgstr "Thứ Ba"
+
+msgid "wednesday"
+msgstr "Thứ Tư"
+
+msgid "thursday"
+msgstr "Thứ Năm"
+
+msgid "friday"
+msgstr "Thứ Sáu"
+
+msgid "saturday"
+msgstr "Thứ Bảy"
+
+msgid "jan"
+msgstr "Tháng Một"
+
+msgid "feb"
+msgstr "Tháng Hai"
+
+msgid "mar"
+msgstr "Tháng Ba"
+
+msgid "apr"
+msgstr "Tháng Tư"
+
+msgid "may"
+msgstr "Tháng Năm"
+
+msgid "jun"
+msgstr "Tháng Sáu"
+
+msgid "jul"
+msgstr "Tháng Bảy"
+
+msgid "aug"
+msgstr "Tháng Tám"
+
+msgid "sep"
+msgstr "Tháng Chín"
+
+msgid "oct"
+msgstr "Tháng Mười"
+
+msgid "nov"
+msgstr "Tháng Mười Một"
+
+msgid "dec"
+msgstr "Tháng Mười Hai"
+
+msgid "longjan"
+msgstr "Tháng Một"
+
+msgid "longfeb"
+msgstr "Tháng Hai"
+
+msgid "longmar"
+msgstr "Tháng Ba"
+
+msgid "longapr"
+msgstr "Tháng Tư"
+
+msgid "longmay"
+msgstr "Tháng Năm"
+
+msgid "longjun"
+msgstr "Tháng Sáu"
+
+msgid "longjul"
+msgstr "Tháng Bảy"
+
+msgid "longaug"
+msgstr "Tháng Tám"
+
+msgid "longsep"
+msgstr "Tháng Chín"
+
+msgid "longoct"
+msgstr "Tháng Mười"
+
+msgid "longnov"
+msgstr "Tháng Mười Một"
+
+msgid "longdec"
+msgstr "Tháng Mười Hai"
+
+msgid "today"
+msgstr "Hôm nay"
+
+msgid "refresh"
+msgstr "Nạp lại"
+
+msgid "checkmail"
+msgstr "Kiểm tra thư mới"
+
+msgid "compose"
+msgstr "Soạn thư"
+
+msgid "writenewmessage"
+msgstr "Viết thư mới"
+
+msgid "reply"
+msgstr "Trả lời thư"
+
+msgid "replytomessage"
+msgstr "Trả lời thư người gửi"
+
+msgid "replytoallmessage"
+msgstr ""
+"Trả lời lại danh sách hoặc tới tất cả người gửi và người nhận của thư này"
+
+msgid "replyall"
+msgstr "Trả lời tất cả"
+
+msgid "replylist"
+msgstr "Danh sách trả lời"
+
+msgid "forward"
+msgstr "Chuyển tiếp"
+
+msgid "forwardinline"
+msgstr "Chuyển tiếp thư"
+
+msgid "forwardattachment"
+msgstr "Chuyển tiếp theo phương cách đính kèm"
+
+msgid "forwardmessage"
+msgstr "Chuyển tiếp thư"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Xóa thư"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Chuyển thư vào thùng rác"
+
+msgid "printmessage"
+msgstr "In thư này"
+
+msgid "previousmessage"
+msgstr "Hiển thị thư trước đó"
+
+msgid "firstmessage"
+msgstr "Hiển thị thư đầu tiên"
+
+msgid "nextmessage"
+msgstr "Hiển thị thư tiếp theo"
+
+msgid "lastmessage"
+msgstr "Hiển thị thư cuối"
+
+msgid "backtolist"
+msgstr "Quay lại danh sách thư"
+
+msgid "viewsource"
+msgstr "Hiển thị nguồn"
+
+msgid "mark"
+msgstr "Đánh dấu"
+
+msgid "markmessages"
+msgstr "Đánh dấu các thư"
+
+msgid "markread"
+msgstr "Là đã đọc"
+
+msgid "markunread"
+msgstr "Là chưa đọc"
+
+msgid "markflagged"
+msgstr "Là quan trọng"
+
+msgid "markunflagged"
+msgstr "Là không quan trọng"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Thêm hành động..."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr "Tất cả các thư mục"
+
+msgid "more"
+msgstr "Thêm"
+
+msgid "back"
+msgstr "Quay lại"
+
+msgid "options"
+msgstr "Tuỳ chọn"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr "Đầu"
+
+msgid "last"
+msgstr "Cuối"
+
+msgid "previous"
+msgstr "Trước"
+
+msgid "next"
+msgstr "Sau"
+
+msgid "select"
+msgstr "Lựa chọn"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Tất cả"
+
+msgid "none"
+msgstr "Không có"
+
+msgid "currpage"
+msgstr "Trang hiện tại"
+
+msgid "isread"
+msgstr "Đọc"
+
+msgid "unread"
+msgstr "Chưa đọc"
+
+msgid "flagged"
+msgstr "Đã đánh dấu"
+
+msgid "unflagged"
+msgstr "Không đánh dấu"
+
+msgid "unanswered"
+msgstr "Chưa trả lời"
+
+msgid "withattachment"
+msgstr "Có tệp tin đính kèm"
+
+msgid "deleted"
+msgstr "Đã xóa"
+
+msgid "undeleted"
+msgstr "Chưa xóa được"
+
+msgid "replied"
+msgstr "Đã trả lời"
+
+msgid "forwarded"
+msgstr "Đã chuyển tiếp"
+
+msgid "invert"
+msgstr "Đảo ngược"
+
+msgid "filter"
+msgstr "Soạn lọc"
+
+msgid "list"
+msgstr "Danh sách"
+
+msgid "threads"
+msgstr "Chủ đề thư"
+
+msgid "expand-all"
+msgstr "Mở rộng tất cả"
+
+msgid "expand-unread"
+msgstr "Mở rộng thư chưa đọc"
+
+msgid "collapse-all"
+msgstr "Đóng hết"
+
+msgid "threaded"
+msgstr "Đã nhóm theo chủ đề thư"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Mở rộng các chủ đề thư"
+
+msgid "do_expand"
+msgstr "Tất cả các chủ đề thư"
+
+msgid "expand_only_unread"
+msgstr "Chỉ với những thư chưa đọc"
+
+msgid "fromto"
+msgstr "Từ/Đến"
+
+msgid "flag"
+msgstr "Đánh dấu"
+
+msgid "attachment"
+msgstr "Đính kèm"
+
+msgid "nonesort"
+msgstr "Không có"
+
+msgid "sentdate"
+msgstr "Ngày đã gửi"
+
+msgid "arrival"
+msgstr "Ngày đến"
+
+msgid "asc"
+msgstr "Tăng dần"
+
+msgid "desc"
+msgstr "Giảm dần"
+
+msgid "listcolumns"
+msgstr "Các cột danh sách"
+
+msgid "listsorting"
+msgstr "Cột sắp xếp"
+
+msgid "listorder"
+msgstr "Thứ tự sắp xếp"
+
+msgid "listmode"
+msgstr "Xem dạng danh sách"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Danh sách"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Thao tác với thư mục"
+
+msgid "compact"
+msgstr "Nén"
+
+msgid "empty"
+msgstr "Trống"
+
+msgid "importmessages"
+msgstr "Nhập thư"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Lượng đĩa sử dụng"
+
+msgid "unknown"
+msgstr "Không rõ"
+
+msgid "unlimited"
+msgstr "không giới hạn"
+
+msgid "quotatype"
+msgstr "Kiểu hạn ngạch"
+
+msgid "quotatotal"
+msgstr "Giới hạn"
+
+msgid "quotaused"
+msgstr "Đã dùng"
+
+msgid "quotastorage"
+msgstr "Dung lượng đĩa cứng"
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Tìm nhanh"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Thiết lập lại tìm kiếm"
+
+msgid "searchmod"
+msgstr "Tìm kiếm với từ khóa và ký tự đặc biệt [() : \" - ]"
+
+msgid "msgtext"
+msgstr "Toàn bộ thư"
+
+msgid "body"
+msgstr "Nội dung thư"
+
+msgid "type"
+msgstr "Định dạng"
+
+msgid "namex"
+msgstr "Họ tên"
+
+msgid "searchscope"
+msgstr "Phạm vi"
+
+msgid "currentfolder"
+msgstr "Thư mục hiện tại"
+
+msgid "subfolders"
+msgstr "Thư mục hiện tại và các thư mục con"
+
+msgid "allfolders"
+msgstr "Tất cả các thư mục"
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Mở trong khung cửa mới"
+
+msgid "emlsave"
+msgstr "Tải về theo định dạng .eml"
+
+msgid "changeformattext"
+msgstr "Hiển thị ở chế độ text"
+
+msgid "changeformathtml"
+msgstr "Hiển thị ở chế độ HTML"
+
+msgid "editasnew"
+msgstr "Sửa như một email mới"
+
+msgid "send"
+msgstr "Gửi"
+
+msgid "sendmessage"
+msgstr "Gửi thư"
+
+msgid "savemessage"
+msgstr "Lưu dạng nháp"
+
+msgid "addattachment"
+msgstr "Kèm theo tập tin"
+
+msgid "charset"
+msgstr "Bộ ký tự"
+
+msgid "editortype"
+msgstr "Loại trình soạn thảo"
+
+msgid "returnreceipt"
+msgstr "Báo nhận"
+
+msgid "dsn"
+msgstr "Thông báo trạng thái gửi thư"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "Vào ngày $date, $sender viết:"
+
+msgid "originalmessage"
+msgstr "Thư gốc"
+
+msgid "selectimage"
+msgstr "Chọn ảnh"
+
+msgid "addimage"
+msgstr "Thêm ảnh"
+
+msgid "selectmedia"
+msgstr "Chọn phim"
+
+msgid "addmedia"
+msgstr "Thêm phim"
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Chèn"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "Người nhận"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Chỉnh sửa nhận diện"
+
+msgid "spellcheck"
+msgstr "Đánh vần"
+
+msgid "checkspelling"
+msgstr "Kiểm tra chính tả"
+
+msgid "resumeediting"
+msgstr "Tiếp tục soạn thảo"
+
+msgid "revertto"
+msgstr "Trở lại với"
+
+msgid "restore"
+msgstr "Khôi phục"
+
+msgid "restoremessage"
+msgstr "Khôi phục thư?"
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr "Các phản hồi"
+
+msgid "insertresponse"
+msgstr "Thêm một phản hồi"
+
+msgid "manageresponses"
+msgstr "Quản lý các phản hồi"
+
+msgid "newresponse"
+msgstr "Tạo phản hồi mới"
+
+msgid "addresponse"
+msgstr "Thêm phản hồi"
+
+msgid "editresponse"
+msgstr "Sửa phản hồi"
+
+msgid "editresponses"
+msgstr "Sửa các phản hồi"
+
+msgid "responsename"
+msgstr "Tên"
+
+msgid "responsetext"
+msgstr "Thông tin phản hồi"
+
+msgid "attach"
+msgstr "Đính kèm"
+
+msgid "attachments"
+msgstr "Các đính kèm"
+
+msgid "upload"
+msgstr "Tải lên"
+
+msgid "uploadprogress"
+msgstr "$percent ($current của $total)\n"
+
+msgid "close"
+msgstr "Đóng"
+
+msgid "messageoptions"
+msgstr "Tùy chọn cho thư..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Thấp"
+
+msgid "lowest"
+msgstr "Thấp nhất"
+
+msgid "normal"
+msgstr "Bình thường"
+
+msgid "high"
+msgstr "Cao"
+
+msgid "highest"
+msgstr "Cao nhất"
+
+msgid "nosubject"
+msgstr "(Không có chủ đề)"
+
+msgid "showimages"
+msgstr "Hiển thị ảnh"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "Luôn luôn hiển thị ảnh từ $sender"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Đây là thư nháp"
+
+msgid "andnmore"
+msgstr "Thêm $nr"
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Hiển thị chi tiết thông tin thư"
+
+msgid "togglefullheaders"
+msgstr "Mở/đóng chi tiết thông tin thư"
+
+msgid "htmltoggle"
+msgstr "Mã HTML"
+
+msgid "plaintoggle"
+msgstr "Văn bản thô"
+
+msgid "savesentmessagein"
+msgstr "Lưu thư đã gửi trong"
+
+msgid "dontsave"
+msgstr "Không lưu"
+
+msgid "maxuploadsize"
+msgstr "Dung lượng tập tin tối đa cho phép là $size"
+
+msgid "addcc"
+msgstr "Thêm Cc"
+
+msgid "addbcc"
+msgstr "Thêm Bcc"
+
+msgid "addreplyto"
+msgstr "Thêm trả lời tới"
+
+msgid "addfollowupto"
+msgstr "Thêm sự theo dõi tới"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Người gửi thư này muốn nhận được thông báo khi bạn đọc thư. Bạn có muốn cho "
+"người gửi biết thông báo này không?"
+
+msgid "receiptread"
+msgstr "Biên nhận (đã đọc)"
+
+msgid "yourmessage"
+msgstr "Đây là sự trả lại xác nhận cho thư của bạn"
+
+msgid "receiptnote"
+msgstr ""
+"Lưu ý: Biên nhận này chỉ báo rằng thư đã được hiển thị trên máy tính của "
+"người nhận. Không bảo đảm rằng người nhận đó đã có đọc hoặc hiểu nội dung "
+"thư."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Tên hiển thị"
+
+msgid "firstname"
+msgstr "Tên Gọi"
+
+msgid "surname"
+msgstr "Tên Họ"
+
+msgid "middlename"
+msgstr "Tên đệm"
+
+msgid "nameprefix"
+msgstr "Tiền tố"
+
+msgid "namesuffix"
+msgstr "Hậu tố"
+
+msgid "nickname"
+msgstr "Biệt danh"
+
+msgid "jobtitle"
+msgstr "Chức danh Công việc"
+
+msgid "department"
+msgstr "Khoa/Ban"
+
+msgid "gender"
+msgstr "Giới tính"
+
+msgid "maidenname"
+msgstr "Tên thời con gái"
+
+msgid "email"
+msgstr "Thư điện tử"
+
+msgid "phone"
+msgstr "Điện thoại"
+
+msgid "address"
+msgstr "Địa chỉ"
+
+msgid "street"
+msgstr "Đường"
+
+msgid "locality"
+msgstr "Thành phố"
+
+msgid "zipcode"
+msgstr "Mã bưu điện"
+
+msgid "region"
+msgstr "Bang/Tỉnh"
+
+msgid "country"
+msgstr "Quốc gia"
+
+msgid "birthday"
+msgstr "Ngày sinh"
+
+msgid "anniversary"
+msgstr "Kỷ niệm"
+
+msgid "website"
+msgstr "Trang Web"
+
+msgid "instantmessenger"
+msgstr "Tin nhắn nhanh"
+
+msgid "notes"
+msgstr "Các ghi chú"
+
+msgid "male"
+msgstr "Nam"
+
+msgid "female"
+msgstr "Nữ"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Người quản lý"
+
+msgid "assistant"
+msgstr "Trợ lý"
+
+msgid "spouse"
+msgstr "Vợ/Chồng"
+
+msgid "allfields"
+msgstr "Tất cả các lĩnh vực"
+
+msgid "search"
+msgstr "Tìm kiếm"
+
+msgid "searchresult"
+msgstr "Kết quả tìm kiếm"
+
+msgid "advsearch"
+msgstr "Tìm kiếm chi tiết"
+
+msgid "advanced"
+msgstr "Nâng cao"
+
+msgid "other"
+msgstr "Loại khác"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "Thư mục chính"
+
+msgid "typework"
+msgstr "Cơ quan"
+
+msgid "typeother"
+msgstr "Loại khác"
+
+msgid "typemobile"
+msgstr "Số di động"
+
+msgid "typemain"
+msgstr "Chính"
+
+msgid "typehomefax"
+msgstr "Điện thư ở Nhà"
+
+msgid "typeworkfax"
+msgstr "Điện thư cơ quan"
+
+msgid "typecar"
+msgstr "Xe"
+
+msgid "typepager"
+msgstr "Máy nhắn tin"
+
+msgid "typevideo"
+msgstr "Phim"
+
+msgid "typeassistant"
+msgstr "Trợ lý"
+
+msgid "typehomepage"
+msgstr "Trang nhà"
+
+msgid "typeblog"
+msgstr "Trang nhật ký"
+
+msgid "typeprofile"
+msgstr "Lý lịch"
+
+msgid "addfield"
+msgstr "Thêm lĩnh vực..."
+
+msgid "addcontact"
+msgstr "Thêm liên hệ"
+
+msgid "editcontact"
+msgstr "Sửa liên lạc"
+
+msgid "contacts"
+msgstr "Danh bạ"
+
+msgid "contactproperties"
+msgstr "Tính chất của liên hệ"
+
+msgid "contactnameandorg"
+msgstr "Tên và tổ chức"
+
+msgid "personalinfo"
+msgstr "Thông tin cá nhân"
+
+msgid "personal"
+msgstr "Cá nhân"
+
+msgid "contactphoto"
+msgstr "Ảnh của người liên hệ"
+
+msgid "edit"
+msgstr "Chỉnh sửa"
+
+msgid "cancel"
+msgstr "Huỷ"
+
+msgid "save"
+msgstr "Lưu"
+
+msgid "delete"
+msgstr "Xóa"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Đổi tên"
+
+msgid "addphoto"
+msgstr "Thêm"
+
+msgid "replacephoto"
+msgstr "Thay thế"
+
+msgid "uploadphoto"
+msgstr "Tải ảnh lên"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "Tạo liên hệ mới"
+
+msgid "deletecontact"
+msgstr "Xoá các liên lạc đã chọn"
+
+msgid "composeto"
+msgstr "Soạn thư cho"
+
+msgid "contactsfromto"
+msgstr "Liên hệ từ $from - $to / $count"
+
+msgid "print"
+msgstr "In ra"
+
+msgid "export"
+msgstr "Trích xuất"
+
+msgid "exportall"
+msgstr "Xuất tất cả"
+
+msgid "exportsel"
+msgstr "Xuất mục chọn"
+
+msgid "exportvcards"
+msgstr "Tải dữ liệu máy theo định dạng vCard"
+
+msgid "newgroup"
+msgstr "Tạo nhóm mới"
+
+msgid "addgroup"
+msgstr "Thêm nhóm"
+
+msgid "grouprename"
+msgstr "Đổi tên nhóm"
+
+msgid "groupdelete"
+msgstr "Xóa nhóm"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Xóa bỏ các liên lạc được chọn từ nhóm"
+
+msgid "uponelevel"
+msgstr "Lên một mức"
+
+msgid "previouspage"
+msgstr "Hiển thị trang trước"
+
+msgid "firstpage"
+msgstr "Hiển thị trang đầu tiên"
+
+msgid "nextpage"
+msgstr "Hiển thị trang kế tiếp"
+
+msgid "lastpage"
+msgstr "Hiển thị trang cuối"
+
+msgid "group"
+msgstr "Nhóm"
+
+msgid "groups"
+msgstr "Các nhóm"
+
+msgid "listgroup"
+msgstr "Danh sách các thành viên nhóm"
+
+msgid "personaladrbook"
+msgstr "Các địa chỉ cá nhân"
+
+msgid "searchsave"
+msgstr "Lưu tìm kiếm"
+
+msgid "searchdelete"
+msgstr "Xóa tìm kiếm"
+
+msgid "import"
+msgstr "Nhập"
+
+msgid "importcontacts"
+msgstr "Nhập liên lạc"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Thêm các địa chỉ liên hệ vào"
+
+msgid "importreplace"
+msgstr "Thay thế toàn bộ sổ địa chỉ"
+
+msgid "importgroups"
+msgstr "Nhập nhóm"
+
+msgid "importgroupsall"
+msgstr "Tất cả (tạo nhóm nếu cần thiết)"
+
+msgid "importgroupsexisting"
+msgstr "Chỉ dành cho các nhóm đang tồn tại"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Hoàn tất"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Thiết lập cho"
+
+msgid "about"
+msgstr "Lời ngõ"
+
+msgid "preferences"
+msgstr "Sở thích"
+
+msgid "userpreferences"
+msgstr "Sở thích người dùng"
+
+msgid "editpreferences"
+msgstr "Chỉnh sửa sở thích"
+
+msgid "identities"
+msgstr "Các nhận diện"
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "Hiển thị HTML"
+
+msgid "defaultcharset"
+msgstr "Bộ ký tự mặc định"
+
+msgid "htmlmessage"
+msgstr "Thư theo định dạng HTML"
+
+msgid "messagepart"
+msgstr "Một phần"
+
+msgid "digitalsig"
+msgstr "Chữ ký điện tử"
+
+msgid "dateformat"
+msgstr "Định dạng ngày tháng"
+
+msgid "timeformat"
+msgstr "Định dạng thời gian"
+
+msgid "prettydate"
+msgstr "Ngày tháng đầy đủ"
+
+msgid "setdefault"
+msgstr "Thiết lập mặc định"
+
+msgid "autodetect"
+msgstr "Tự động"
+
+msgid "language"
+msgstr "Ngôn ngữ"
+
+msgid "timezone"
+msgstr "Múi giờ"
+
+msgid "pagesize"
+msgstr "Số dòng trên trang"
+
+msgid "signature"
+msgstr "Chữ ký"
+
+msgid "dstactive"
+msgstr "Giờ mùa hè"
+
+msgid "showinextwin"
+msgstr "Mở thư trong khung mới"
+
+msgid "composeextwin"
+msgstr "Soạn thư trong khung mới"
+
+msgid "htmleditor"
+msgstr "Soạn thư dạng HTML"
+
+msgid "htmlonreply"
+msgstr "Chỉ trả lời lại bằng thư HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "Khi chuyển tiếp hoặc trả lời thư theo định dạng HTML"
+
+msgid "htmlsignature"
+msgstr "Chữ ký HTML"
+
+msgid "showemail"
+msgstr "Hiển thị địa chỉ email kèm theo tên "
+
+msgid "previewpane"
+msgstr "Hiển thị ô Xem thử"
+
+msgid "skin"
+msgstr "Bề mặt giao diện"
+
+msgid "logoutclear"
+msgstr "Xóa sạch rác khi thoát"
+
+msgid "logoutcompact"
+msgstr "Nén gọn hộp thư lại khi thoát"
+
+msgid "uisettings"
+msgstr "Giao diện người dùng"
+
+msgid "serversettings"
+msgstr "Thiết lập máy chủ"
+
+msgid "mailboxview"
+msgstr "Trình cảnh hộp thư"
+
+msgid "mdnrequests"
+msgstr "Yêu cầu gửi lại biên nhận"
+
+msgid "askuser"
+msgstr "Hỏi tôi"
+
+msgid "autosend"
+msgstr "Gửi biên nhận"
+
+msgid "autosendknown"
+msgstr "Gửi biên nhận tới liên lạc của tôi, nếu không thì hỏi tôi"
+
+msgid "autosendknownignore"
+msgstr "Gửi biên nhận tới liên lạc của tôi, nếu không thì bỏ qua"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "Đánh dấu thư là đã đọc khi xóa"
+
+msgid "flagfordeletion"
+msgstr "Đánh dấu thư để xóa thay vì xóa liền"
+
+msgid "skipdeleted"
+msgstr "Không hiển thị thư đã xóa"
+
+msgid "deletealways"
+msgstr "Nếu việc chuyển thư vào thùng rác bị lỗi thì xóa luôn."
+
+msgid "deletejunk"
+msgstr "Trực tiếp xóa các thư rác trong thùng Junk"
+
+msgid "showremoteimages"
+msgstr "Hiển thị ảnh nội tuyến từ xa"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "Từ người gửi đã biết"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "luôn luôn"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "Hiển thị ảnh đính kèm phía dưới thư"
+
+msgid "autosavedraft"
+msgstr "Tự động lưu bản nháp"
+
+msgid "everynminutes"
+msgstr "$n phút một lần"
+
+msgid "refreshinterval"
+msgstr "Tải dữ liệu mới (ví dụ: kiểm tra thư mới)"
+
+msgid "never"
+msgstr "không bao giờ"
+
+msgid "immediately"
+msgstr "ngay lập tức"
+
+msgid "messagesdisplaying"
+msgstr "Đang hiển thị thư"
+
+msgid "messagescomposition"
+msgstr "Đang viết thư"
+
+msgid "mimeparamfolding"
+msgstr "Tên đính kèm"
+
+msgid "2231folding"
+msgstr "RFC 2231 đầy đủ (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "RFC 2047 đầy đủ (khác)"
+
+msgid "force7bit"
+msgstr "Sử dụng MIME mã hóa cho ký tự 8-bit"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Tùy chọn tính năng cao hơn"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "Tập trung khung cửa trình duyệt vào thư mới"
+
+msgid "checkallfolders"
+msgstr "Kiểm tra thư mới trong tất cả thư mục"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "Phông chữ mặc định của thư có mã HTML"
+
+msgid "mainoptions"
+msgstr "Tùy chọn chính"
+
+msgid "browseroptions"
+msgstr "Tùy chọn Trình duyệt"
+
+msgid "section"
+msgstr "Phần"
+
+msgid "maintenance"
+msgstr "Bảo trì"
+
+msgid "newmessage"
+msgstr "Thư mới"
+
+msgid "signatureoptions"
+msgstr "Tuỳ chọn chữ ký"
+
+msgid "whenreplying"
+msgstr "Khi trả lời"
+
+msgid "replyempty"
+msgstr "Không mở/đóng ngoạc nội dung bản thư gốc"
+
+msgid "replytopposting"
+msgstr "Viết nội dung thư mới bên trên nội dung thư cũ"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "Viết nội dung thư mới bên dưới nội dung thư cũ"
+
+msgid "replyremovesignature"
+msgstr "Khi trả lời bỏ chữ ký cũ khỏi nội dung thư"
+
+msgid "autoaddsignature"
+msgstr "Tự động thêm chữ ký"
+
+msgid "newmessageonly"
+msgstr "chỉ thư mới"
+
+msgid "replyandforwardonly"
+msgstr "chỉ trả lời và chuyển tiếp thư"
+
+msgid "insertsignature"
+msgstr "Chèn chữ ký"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "sau $n giây"
+
+msgid "reqmdn"
+msgstr "Luôn luôn yêu cầu biên nhận khi gửi thư"
+
+msgid "reqdsn"
+msgstr "Luôn yêu cầu xác nhận trạng thái thư cho người gửi"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Đưa các thư phản hồi  vào cùng thư mục của thư đang trả lời"
+
+msgid "defaultabook"
+msgstr "Sổ địa chỉ mặc định"
+
+msgid "autocompletesingle"
+msgstr "Bỏ qua địa chỉ email thay thế trong năng tự động gõ"
+
+msgid "listnamedisplay"
+msgstr "Hiện thị danh sách liên lạc như là"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Kiểm tra chính tả trước khi gửi thư"
+
+msgid "spellcheckoptions"
+msgstr "Tùy chọn kiểm tra chính tả"
+
+msgid "spellcheckignoresyms"
+msgstr "Bỏ qua từ kèm biểu tượng"
+
+msgid "spellcheckignorenums"
+msgstr "Bỏ qua các từ kèm số"
+
+msgid "spellcheckignorecaps"
+msgstr "Bỏ qua các từ được viết hoa"
+
+msgid "addtodict"
+msgstr "Thêm vào từ điển"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Xác định cách xử lý giao thức mailto: liên kết"
+
+msgid "standardwindows"
+msgstr "Mở các popup như là các cửa sổ thông thường"
+
+msgid "forwardmode"
+msgstr "Chuyển tiếp thư"
+
+msgid "inline"
+msgstr "nội tuyến"
+
+msgid "asattachment"
+msgstr "dạng gửi kèm"
+
+msgid "replyallmode"
+msgstr "Thao tác mặc định cho nút [Trả lời tất cả]"
+
+msgid "replyalldefault"
+msgstr "Trả lời tất cả"
+
+msgid "replyalllist"
+msgstr "Chỉ gửi trả lời đến danh sách thư (nếu có tồn tại)"
+
+msgid "allmessages"
+msgstr "Tất cả tin nhắn"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Thư mục"
+
+msgid "folders"
+msgstr "Các thư mục"
+
+msgid "foldername"
+msgstr "Tên thư mục"
+
+msgid "subscribed"
+msgstr "Đã đăng ký"
+
+msgid "messagecount"
+msgstr "Các tin nhắn"
+
+msgid "create"
+msgstr "Tạo"
+
+msgid "createfolder"
+msgstr "Tạo thư mục mới"
+
+msgid "managefolders"
+msgstr "Quản lý các thư mục"
+
+msgid "specialfolders"
+msgstr "Thư mục đặc biệt"
+
+msgid "properties"
+msgstr "Các thuộc tính"
+
+msgid "folderproperties"
+msgstr "Thuộc tính thư mục"
+
+msgid "parentfolder"
+msgstr "Thư mục cha"
+
+msgid "location"
+msgstr "Địa điểm"
+
+msgid "info"
+msgstr "Thông tin"
+
+msgid "getfoldersize"
+msgstr "Nhấp chuột để xem kích thước thư mục"
+
+msgid "changesubscription"
+msgstr "Nhấp chuột để đổi cách đóng góp"
+
+msgid "foldertype"
+msgstr "Kiểu thư mục"
+
+msgid "personalfolder"
+msgstr "Thư mục cá nhân"
+
+msgid "otherfolder"
+msgstr "Thư mục khác của Người dùng"
+
+msgid "sharedfolder"
+msgstr "Thư mục công khai"
+
+msgid "findfolders"
+msgstr "Tìm các thư mục"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr "Cá nhân"
+
+msgid "namespace.other"
+msgstr "Các người dùng khác"
+
+msgid "namespace.shared"
+msgstr "Đã chia sẻ"
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Soạn theo"
+
+msgid "sortasc"
+msgstr "Soạn tăng dần"
+
+msgid "sortdesc"
+msgstr "Soạn giảm dần"
+
+msgid "undo"
+msgstr "Hoàn lại"
+
+msgid "installedplugins"
+msgstr "Các chương trình phụ trợ đã được cài đặt"
+
+msgid "plugin"
+msgstr "Phần bổ sung"
+
+msgid "version"
+msgstr "Phiên bản"
+
+msgid "source"
+msgstr "Nguồn"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Bản quyền"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Yêu cầu hỗ trợ"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Tiếng Anh"
+
+msgid "westerneuropean"
+msgstr "Tiếng Tây Âu"
+
+msgid "easterneuropean"
+msgstr "Tiếng Đông Âu"
+
+msgid "southeasterneuropean"
+msgstr "Tiếng Đông-Nam Âu"
+
+msgid "baltic"
+msgstr "Tiếng Ban-tích (Ấn-Âu)"
+
+msgid "cyrillic"
+msgstr "Tiếng Ki-rin"
+
+msgid "arabic"
+msgstr "Tiếng Ả Rập"
+
+msgid "greek"
+msgstr "Tiếng Hy Lạp"
+
+msgid "hebrew"
+msgstr "Tiếng Do Thái"
+
+msgid "turkish"
+msgstr "Tiếng Thổ Nhĩ Kỳ"
+
+msgid "nordic"
+msgstr "Tiếng Bắc Âu"
+
+msgid "thai"
+msgstr "Tiếng Thái Lan"
+
+msgid "celtic"
+msgstr "Tiếng Xen-tơ"
+
+msgid "vietnamese"
+msgstr "Tiếng Việt"
+
+msgid "japanese"
+msgstr "Tiếng Nhật"
+
+msgid "korean"
+msgstr "Tiếng Hàn"
+
+msgid "chinese"
+msgstr "Tiếng Hoa"
+
+msgid "arialabeltopnav"
+msgstr "Điều khiển cửa sổ"
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr "Xem trước thư"
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr "Nội dung thư"
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr "Các lựa chọn chuyển tiếp thư"
+
+msgid "arialabelreplyalloptions"
+msgstr "Các lựa chọn trả lời tất cả"
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Đánh dấu thư đã chọn như..."
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "Xem trước tệp tin đính kèm"
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Có lỗi xảy ra."
+
+msgid "messages.loginfailed"
+msgstr "Không đăng nhập được"
+
+msgid "messages.cookiesdisabled"
+msgstr "Trình duyệt không hỗ trợ cookies"
+
+msgid "messages.sessionerror"
+msgstr "Phiên làm việc không hợp lệ hoặc đã hết hạn"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "Không kết nối được với máy chủ."
+
+msgid "messages.servererror"
+msgstr "Lỗi máy chủ"
+
+msgid "messages.servererrormsg"
+msgstr "Lỗi máy chủ: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr "Lỗi kết nối (không kết nối được đến máy chủ)"
+
+msgid "messages.dberror"
+msgstr "Lỗi cơ sở dữ liệu"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Cửa sổ thông tin bật lên bị chặn"
+
+msgid "messages.requesttimedout"
+msgstr "Yêu cầu hết  hạn"
+
+msgid "messages.errorreadonly"
+msgstr "Không thể thực hiện thao tác. Thư mục chỉ cho phép đọc."
+
+msgid "messages.errornoperm"
+msgstr "Bạn không đủ quyền hạn để thực hiện thao tác này."
+
+msgid "messages.erroroverquota"
+msgstr "Không thể thực hiện thao tác do không còn đủ chỗ trống trên ổ đĩa."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Không còn dư chỗ trống trên ổ đĩa. Sử dụng tổ hợp phím SHIFT+DEL để xoá thư."
+
+msgid "messages.invalidrequest"
+msgstr "Yêu cầu không hợp lệ! Không có dữ liệu nào được lưu."
+
+msgid "messages.invalidhost"
+msgstr "Sai thông tin tên máy chủ"
+
+msgid "messages.nomessagesfound"
+msgstr "Không thấy có thư nào trong hộp thư này."
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "Hộp thư rỗng"
+
+msgid "messages.nomessages"
+msgstr "Không có thư nào"
+
+msgid "messages.refreshing"
+msgstr "Nạp lại dữ liệu..."
+
+msgid "messages.loading"
+msgstr "Đang tải..."
+
+msgid "messages.uploading"
+msgstr "Đang tải tập tin lên..."
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr "Đang tải các tập tin lên..."
+
+msgid "messages.loadingdata"
+msgstr "Đang nạp dữ liệu..."
+
+msgid "messages.checkingmail"
+msgstr "Kiểm tra thư mới..."
+
+msgid "messages.sendingmessage"
+msgstr "Đang gửi thư..."
+
+msgid "messages.messagesent"
+msgstr "Thư đã được gửi thành công."
+
+msgid "messages.savingmessage"
+msgstr "Đang lưu thư..."
+
+msgid "messages.messagesaved"
+msgstr "Thư đã được lưu lại vào hộp thư Nháp."
+
+msgid "messages.successfullysaved"
+msgstr "Đã lưu thành công"
+
+msgid "messages.savingresponse"
+msgstr "Đang lưu thông tin..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Bạn có thực sự muốn xoá thông tin này?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Liên hệ đã được thêm vào sổ địa chỉ thành công."
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "Đã có một liên hệ có tên như thế này."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Để bảo vệ tính riêng tư, chức năng hiện ảnh từ xa bị cấm trong thư này."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Thư này được mã hóa, không thể xem. Rất tiếc!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Không tìm thấy liên hệ."
+
+msgid "messages.contactnotfound"
+msgstr "Không tìm thấy liên lạc được yêu cầu"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Không gửi được thư"
+
+msgid "messages.senttooquickly"
+msgstr "Xin đợi vài giây trước khi gửi thư này"
+
+msgid "messages.errorsavingsent"
+msgstr "Có lỗi xảy ra khi lưu lại thư đã gửi."
+
+msgid "messages.errorsaving"
+msgstr "Lỗi trong quá trình lưu."
+
+msgid "messages.errormoving"
+msgstr "Không thể chuyển được thư"
+
+msgid "messages.errorcopying"
+msgstr "Không thể sao chép thư"
+
+msgid "messages.errordeleting"
+msgstr "Không thể xóa được thư"
+
+msgid "messages.errormarking"
+msgstr "Không thể đánh dấu (các) thư"
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "Bạn có thực sự muốn xoá liên hệ đã chọn?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Bạn có thực sự muốn xóa nhóm đã chọn?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Bạn thực sự có muốn xóa (các) thư đã chọn?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Bạn có thực sự muốn xóa giữ liệu này?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Bạn có thực sự muốn xóa toàn bộ thư trong giữ liệu này?"
+
+msgid "messages.contactdeleting"
+msgstr "Đang xóa (các) liên lạc..."
+
+msgid "messages.groupdeleting"
+msgstr "Đang xóa nhóm..."
+
+msgid "messages.folderdeleting"
+msgstr "Đang xóa thư mục dữ liệu..."
+
+msgid "messages.foldermoving"
+msgstr "Đang chuyển thư mục dữ liệu.."
+
+msgid "messages.foldersubscribing"
+msgstr "Đăng ký vào thư mục..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Bỏ đăng ký thư mục..."
+
+msgid "messages.formincomplete"
+msgstr "Mẫu đơn chưa được hoàn toàn điền xong."
+
+msgid "messages.noemailwarning"
+msgstr "Xin nhập địa chỉ email hợp lệ."
+
+msgid "messages.nonamewarning"
+msgstr "Xin nhập tên."
+
+msgid "messages.nopagesizewarning"
+msgstr "Xin nhập kích cỡ của trang."
+
+msgid "messages.nosenderwarning"
+msgstr "Vui lòng nhập địa chỉ email của người gửi"
+
+msgid "messages.recipientsadded"
+msgstr "Thông tin người nhận đã được thêm thành công"
+
+msgid "messages.norecipientwarning"
+msgstr "Vui lòng nhập ít nhất 1 người nhận."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Tất cả người nhận sẽ nhìn được địa chỉ email của người khác. Để tránh việc "
+"này, bạn có thể dùng trường địa chỉ Bcc."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Có quá nhiều người nhận"
+
+msgid "messages.nosubjectwarning"
+msgstr "Mục \"Tiêu đề\" vẫn còn trống. Bạn có muốn nhập tiêu đề bây giờ không?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Không có tiêu đề"
+
+msgid "messages.nobodywarning"
+msgstr "Gửi thư không có nội dung?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Tìm thấy một thư đã được soạn trước nhưng chưa gửi.\\n\\nTiêu đề: "
+"$subject\\nLưu ngày: $date\\n\\nBạn có muốn khôi phục lại thư này?"
+
+msgid "messages.nosearchname"
+msgstr "Nhập liên hệ hoặc địa chỉ email."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Tất cả các đính kèm vẫn chưa được tải lên hết. Xin đợi hoặc hủy việc tải "
+"lên."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr thư đã tìm được."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr liên hệ đã tìm được."
+
+msgid "messages.searchnomatch"
+msgstr "Không tìm thấy sự trùng hợp nào."
+
+msgid "messages.searching"
+msgstr "Đang tìm kiếm..."
+
+msgid "messages.checking"
+msgstr "Đang kiểm tra..."
+
+msgid "messages.stillsearching"
+msgstr "Đang tiếp tục tìm kiếm..."
+
+msgid "messages.nospellerrors"
+msgstr "Không tìm thấy lỗi chính tả."
+
+msgid "messages.folderdeleted"
+msgstr "Giữ liệu đã được xóa thành công."
+
+msgid "messages.foldersubscribed"
+msgstr "Giữ liệu được nhập vào thành công."
+
+msgid "messages.folderunsubscribed"
+msgstr "Giữ liệu không nhập vào thành công."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Đã xóa thành công"
+
+msgid "messages.converting"
+msgstr "Loại bỏ định dạng..."
+
+msgid "messages.messageopenerror"
+msgstr "Không thể tải thư từ máy chủ"
+
+msgid "messages.filelinkerror"
+msgstr "Đính kèm file bị lỗi."
+
+msgid "messages.fileuploaderror"
+msgstr "Tải tập tin lên thất bại"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Tập tin được tải lên vượt quá dung lượng tối đa...."
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "Sao chép thành công $nr địa chỉ."
+
+msgid "messages.movesuccess"
+msgstr "Đã chuyển thành công $nr địa chỉ liên hệ."
+
+msgid "messages.copyerror"
+msgstr "Không thể sao chép địa chỉ liên hệ nào."
+
+msgid "messages.moveerror"
+msgstr "Không thể chuyển địa chỉ liên hệ nào."
+
+msgid "messages.sourceisreadonly"
+msgstr "Nguồn địa chỉ này chỉ cho đọc"
+
+msgid "messages.errorsavingcontact"
+msgstr "Không thể lưu địa chỉ liên lạc"
+
+msgid "messages.movingmessage"
+msgstr "Đang chuyển thư..."
+
+msgid "messages.copyingmessage"
+msgstr "Đang sao chép thư..."
+
+msgid "messages.copyingcontact"
+msgstr "Đang sao chép liên lạc..."
+
+msgid "messages.movingcontact"
+msgstr "Đang chuyển (các) địa chỉ liên hệ..."
+
+msgid "messages.deletingmessage"
+msgstr "Đang xóa thư..."
+
+msgid "messages.markingmessage"
+msgstr "Đánh dấu thư..."
+
+msgid "messages.addingmember"
+msgstr "Đang thêm liên lạc vào nhóm..."
+
+msgid "messages.removingmember"
+msgstr "Đang xóa liên lạc từ nhóm..."
+
+msgid "messages.receiptsent"
+msgstr "Biên nhận đọc đã được gửi thành công."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Không thể gửi ghi nhận"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Bạn có thực sự muốn xóa nhận diện này?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Bạn không thể xóa nhận diện này, đó là cái cuối cùng của bạn."
+
+msgid "messages.forbiddencharacter"
+msgstr "Tên giữ liệu chứa một ký tự bị cấm."
+
+msgid "messages.selectimportfile"
+msgstr "Xin chọn hồ sơ để tải lên."
+
+msgid "messages.addresswriterror"
+msgstr "Sổ địa chỉ đã chọn không thể viết lại được"
+
+msgid "messages.contactaddedtogroup"
+msgstr "Thêm liên lạc vào nhóm này thành công"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Xóa liên lạc khỏi nhóm này thành công"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Không quy nhóm nào đả được thay đổi"
+
+msgid "messages.importwait"
+msgstr "Đang nhập, xin chờ..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Nhập dữ liệu lỗi. Tệp tin vừa tải lên không phải tệp dữ liệu chính xác."
+
+msgid "messages.importconfirm"
+msgstr "Đã nhập $inserted liên hệ đã chèn vào thành công."
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Đã nhập thành công $nr thư."
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Nhập dữ liệu bị lỗi. Tệp tin vừa tải lên không có định dạng chính xác của "
+"tệp cấu hình hòm thư hoặc một thư đơn lẻ."
+
+msgid "messages.opnotpermitted"
+msgstr "Thao tác không được cho phép!"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+"Việc chuyển công cụ soạn thảo có thể làm mất định dạng dữ liệu. Bạn có muốn "
+"tiếp tục không?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Xuất hiện một lỗi cấu hình  tai hại. Hãy liên hệ với người quản trị ngay. "
+"<b> Thư của bạn không thể gửi được </b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Lỗi SMTP ($code): Kết nỗi tới máy chủ bị lỗi."
+
+msgid "messages.smtpautherror"
+msgstr "Lỗi SMTP ($code): Xác thực thất bại."
+
+msgid "messages.smtpfromerror"
+msgstr "Lỗi SMTP ($code):  Không thể bố trí người gửi \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "Lỗi SMTP ($code):  Không thể bố trí người nhận \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "Lỗi SMTP: không thể phân loại danh sách người nhận"
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "Lỗi SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+"Quá nhiều người nhận. Hãy giảm số lượng người nhận xuống tối đa là $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Số lượng thành viên trong nhóm vượt quá mức tối đa là $max."
+
+msgid "messages.internalerror"
+msgstr "Xuất hiện một lỗi nội bộ. Xin hãy thử lại"
+
+msgid "messages.contactdelerror"
+msgstr "Không thể xóa liên lạc"
+
+msgid "messages.contactdeleted"
+msgstr "Liên lạc được xóa thành công"
+
+msgid "messages.contactrestoreerror"
+msgstr "Không thể khôi phục liên lạc đã xóa"
+
+msgid "messages.contactrestored"
+msgstr "Liên lạc được khôi phục thành công"
+
+msgid "messages.groupdeleted"
+msgstr "Nhóm được xóa thành công"
+
+msgid "messages.grouprenamed"
+msgstr "Nhóm được đặt tên lại thành công"
+
+msgid "messages.groupcreated"
+msgstr "Nhóm được tạo thành công"
+
+msgid "messages.savedsearchdeleted"
+msgstr "Tìm kiếm đã lưu được xóa thành công"
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Không thể xóa tìm kiếm đã lưu"
+
+msgid "messages.savedsearchcreated"
+msgstr "Tìm kiếm đã lưu được tạo thành công"
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Không thể tạo tìm kiếm đã lưu"
+
+msgid "messages.messagedeleted"
+msgstr "Thư được xóa thành công"
+
+msgid "messages.messagemoved"
+msgstr "Thư được chuyển đi thành công"
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "Thư được sao chép thành công"
+
+msgid "messages.messagemarked"
+msgstr "Thư được đánh dấu thành công"
+
+msgid "messages.autocompletechars"
+msgstr "Phải nhập ít nhất $min ký tự để năng tự động gõ"
+
+msgid "messages.autocompletemore"
+msgstr "Nhiều dữ liệu phù hợp hơn được tìm thấy. Hãy gõ thêm  ký tự."
+
+msgid "messages.namecannotbeempty"
+msgstr "Tên không được để trống"
+
+msgid "messages.nametoolong"
+msgstr "Tên quá dài"
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr "Giữ liệu được cập nhật thành công"
+
+msgid "messages.foldercreated"
+msgstr "Giữ liệu được tạo thành công"
+
+msgid "messages.invalidimageformat"
+msgstr "Không phải là định dạng ảnh hợp lệ."
+
+msgid "messages.mispellingsfound"
+msgstr "Lỗi chính tả được phát hiện trong thư"
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Không thể tạo/chuyển folder vào folder gốc đã chọn. Không có quyền truy cập."
+
+msgid "messages.messagetoobig"
+msgstr "Một phần thư quá lớn để xử lý nó."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Cảnh báo: Dịch vụ webmail này yêu cầu sử dụng Javascript. Để sử dụng, bạn "
+"cần kích hoạt hỗ trợ Javascript trong cấu hình trình duyệt Internet đang sử "
+"dụng."
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

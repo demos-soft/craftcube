@@ -1,0 +1,2850 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: az_AZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "$product-a xoş gəldiniz!"
+
+msgid "username"
+msgstr "İstifadəçi adı"
+
+msgid "password"
+msgstr "Şifrə"
+
+msgid "server"
+msgstr "Server"
+
+msgid "login"
+msgstr "Giriş"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Çıx"
+
+msgid "mail"
+msgstr "Poçt"
+
+msgid "settings"
+msgstr "Nizamlamalar"
+
+msgid "addressbook"
+msgstr "Ünvanlar"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Gələnlər"
+
+msgid "drafts"
+msgstr "Qaralamalar"
+
+msgid "sent"
+msgstr "Göndərilənlər"
+
+msgid "trash"
+msgstr "Səbət"
+
+msgid "junk"
+msgstr "Spam"
+
+msgid "show_real_foldernames"
+msgstr "Xüsusi qovluqlar üçün real adları göstər"
+
+msgid "subject"
+msgstr "Mövzu"
+
+msgid "from"
+msgstr "Kimdən"
+
+msgid "sender"
+msgstr "Göndərən"
+
+msgid "to"
+msgstr "Kimə"
+
+msgid "cc"
+msgstr "Nüsxə"
+
+msgid "bcc"
+msgstr "Gizli"
+
+msgid "replyto"
+msgstr "Cavabla"
+
+msgid "followupto"
+msgstr "İzlə"
+
+msgid "date"
+msgstr "Tarix"
+
+msgid "size"
+msgstr "Ölçü"
+
+msgid "priority"
+msgstr "Vaciblik"
+
+msgid "organization"
+msgstr "Təşkilat"
+
+msgid "readstatus"
+msgstr "Statusu oxu"
+
+msgid "listoptions"
+msgstr "Siyahı ayarları..."
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Qovluqlar"
+
+msgid "messagesfromto"
+msgstr "$count mesajdan $from - $to arası mesajlar"
+
+msgid "threadsfromto"
+msgstr "Müzakirə: $from - $to Toplam: $count"
+
+msgid "messagenrof"
+msgstr "Məktub: $nr / $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to-dan $count"
+
+msgid "copy"
+msgstr "Kopyala"
+
+msgid "move"
+msgstr "Köçür"
+
+msgid "moveto"
+msgstr "Burada köçür..."
+
+msgid "copyto"
+msgstr "Bura kopyala..."
+
+msgid "download"
+msgstr "Endir"
+
+msgid "open"
+msgstr "Aç"
+
+msgid "showattachment"
+msgstr "Göstər"
+
+msgid "showanyway"
+msgstr "İstənilən halda göstər"
+
+msgid "filename"
+msgstr "Faylın adı"
+
+msgid "filesize"
+msgstr "Faylın ölçüsü"
+
+msgid "addtoaddressbook"
+msgstr "Ünvanlara əlavə et"
+
+msgid "sun"
+msgstr "B"
+
+msgid "mon"
+msgstr "Be"
+
+msgid "tue"
+msgstr "Ç"
+
+msgid "wed"
+msgstr "Ça"
+
+msgid "thu"
+msgstr "C"
+
+msgid "fri"
+msgstr "Ca"
+
+msgid "sat"
+msgstr "Ş"
+
+msgid "sunday"
+msgstr "Bazar"
+
+msgid "monday"
+msgstr "Bazar ertəsi"
+
+msgid "tuesday"
+msgstr "Çərçənbə"
+
+msgid "wednesday"
+msgstr "Çərşənbə axşamı"
+
+msgid "thursday"
+msgstr "Cümə"
+
+msgid "friday"
+msgstr "Cümə axşamı"
+
+msgid "saturday"
+msgstr "Şənbə"
+
+msgid "jan"
+msgstr "Yan"
+
+msgid "feb"
+msgstr "Fev"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "May"
+
+msgid "jun"
+msgstr "İyn"
+
+msgid "jul"
+msgstr "İyl"
+
+msgid "aug"
+msgstr "Avq"
+
+msgid "sep"
+msgstr "Sen"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Noy"
+
+msgid "dec"
+msgstr "Dek"
+
+msgid "longjan"
+msgstr "Yanvar"
+
+msgid "longfeb"
+msgstr "Fevral"
+
+msgid "longmar"
+msgstr "Mart"
+
+msgid "longapr"
+msgstr "Aprel"
+
+msgid "longmay"
+msgstr "May"
+
+msgid "longjun"
+msgstr "İyun"
+
+msgid "longjul"
+msgstr "İyul"
+
+msgid "longaug"
+msgstr "Avqust"
+
+msgid "longsep"
+msgstr "Sentyabr"
+
+msgid "longoct"
+msgstr "Oktyabr"
+
+msgid "longnov"
+msgstr "Noyabr"
+
+msgid "longdec"
+msgstr "Dekabr"
+
+msgid "today"
+msgstr "Bu gün"
+
+msgid "refresh"
+msgstr "Yenilə"
+
+msgid "checkmail"
+msgstr "Gələnləri yoxla"
+
+msgid "compose"
+msgstr "Məktub yaz"
+
+msgid "writenewmessage"
+msgstr "Yeni məktub"
+
+msgid "reply"
+msgstr "Cavabla"
+
+msgid "replytomessage"
+msgstr "Göndərənə cavabla"
+
+msgid "replytoallmessage"
+msgstr "Hamıya cavabla"
+
+msgid "replyall"
+msgstr "Hamıya cavab"
+
+msgid "replylist"
+msgstr "Cavab siyahısı"
+
+msgid "forward"
+msgstr "Ötür"
+
+msgid "forwardinline"
+msgstr "Məktubda ötür"
+
+msgid "forwardattachment"
+msgstr "Əlavə kimi ötür"
+
+msgid "forwardmessage"
+msgstr "Yönəlt"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Sil"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Məktubu səbətə köçür"
+
+msgid "printmessage"
+msgstr "Çap et"
+
+msgid "previousmessage"
+msgstr "Əvvəlki məktubu göstər"
+
+msgid "firstmessage"
+msgstr "Birinci məktubu göstər"
+
+msgid "nextmessage"
+msgstr "Sonrakı məktubu göstər"
+
+msgid "lastmessage"
+msgstr "Sonuncu məktubu göstər"
+
+msgid "backtolist"
+msgstr "Məktublar siyahısına qayıt"
+
+msgid "viewsource"
+msgstr "Mənbəni göstər"
+
+msgid "mark"
+msgstr "İşarələ"
+
+msgid "markmessages"
+msgstr "Məktubları işarələ"
+
+msgid "markread"
+msgstr "Oxunmuş"
+
+msgid "markunread"
+msgstr "Oxunmamış"
+
+msgid "markflagged"
+msgstr "Qeyd et"
+
+msgid "markunflagged"
+msgstr "Qeydi çıxar"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Daha çox seçim..."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr "Bütün qovluqlar"
+
+msgid "more"
+msgstr "Daha çox"
+
+msgid "back"
+msgstr "Geri"
+
+msgid "options"
+msgstr "Ayarlar"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr "İlk"
+
+msgid "last"
+msgstr "Son"
+
+msgid "previous"
+msgstr "Əvvəlki"
+
+msgid "next"
+msgstr "Sonrakı"
+
+msgid "select"
+msgstr "Seçin"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Hamısı"
+
+msgid "none"
+msgstr "Heç biri"
+
+msgid "currpage"
+msgstr "Hazırki səhifəni"
+
+msgid "isread"
+msgstr "Oxu"
+
+msgid "unread"
+msgstr "Oxunmamışları"
+
+msgid "flagged"
+msgstr "İşarəliləri"
+
+msgid "unflagged"
+msgstr "İşarətlənməyib"
+
+msgid "unanswered"
+msgstr "Cavabsızları"
+
+msgid "withattachment"
+msgstr "Qoşma ilə"
+
+msgid "deleted"
+msgstr "Silinmişləri"
+
+msgid "undeleted"
+msgstr "Silinməyib"
+
+msgid "replied"
+msgstr "Cavablanıb"
+
+msgid "forwarded"
+msgstr "Yönləndirilib"
+
+msgid "invert"
+msgstr "İnvertliləri"
+
+msgid "filter"
+msgstr "Süzgəc"
+
+msgid "list"
+msgstr "Siyahı"
+
+msgid "threads"
+msgstr "Müzakirələr"
+
+msgid "expand-all"
+msgstr "Hamısını aç"
+
+msgid "expand-unread"
+msgstr "Oxunmamışları aç"
+
+msgid "collapse-all"
+msgstr "Hamısını bük"
+
+msgid "threaded"
+msgstr "Müzakirə"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Müzakirəni aç"
+
+msgid "do_expand"
+msgstr "bütün müzakirələr"
+
+msgid "expand_only_unread"
+msgstr "yalnız oxunmamış məktublarla"
+
+msgid "fromto"
+msgstr "Göndərən/Qəbul edən"
+
+msgid "flag"
+msgstr "Bayrağ"
+
+msgid "attachment"
+msgstr "Əlavə"
+
+msgid "nonesort"
+msgstr "Heç biri"
+
+msgid "sentdate"
+msgstr "Göndərilmə tarixi"
+
+msgid "arrival"
+msgstr "Çatdırılma tarixi"
+
+msgid "asc"
+msgstr "Çoxalan"
+
+msgid "desc"
+msgstr "Azalan"
+
+msgid "listcolumns"
+msgstr "Sütunlar"
+
+msgid "listsorting"
+msgstr "Sütunları çeşidlə"
+
+msgid "listorder"
+msgstr "Çeşidləmə qaydası"
+
+msgid "listmode"
+msgstr "Görünüş rejimi"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Siyahı"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Qovluq işləri..."
+
+msgid "compact"
+msgstr "Sıx"
+
+msgid "empty"
+msgstr "Boşalt"
+
+msgid "importmessages"
+msgstr "Mesajların idxalı"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Disk istifadəsi"
+
+msgid "unknown"
+msgstr "naməlum"
+
+msgid "unlimited"
+msgstr "limitsiz"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr "Limit"
+
+msgid "quotaused"
+msgstr "İşlədilib"
+
+msgid "quotastorage"
+msgstr "Disk həcmi"
+
+msgid "quotamessage"
+msgstr "Mesaj sayı"
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Sürətli axtarış"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Axtarışı yenilə"
+
+msgid "searchmod"
+msgstr "Axtarış variantları"
+
+msgid "msgtext"
+msgstr "Bütün məktub"
+
+msgid "body"
+msgstr "Mətn"
+
+msgid "type"
+msgstr "Növ"
+
+msgid "namex"
+msgstr "Ad"
+
+msgid "searchscope"
+msgstr ""
+
+msgid "currentfolder"
+msgstr "Hazırki qovluq"
+
+msgid "subfolders"
+msgstr "Bu və alt qovluqlar"
+
+msgid "allfolders"
+msgstr "Bütün qovluqlar"
+
+msgid "searchinterval-1W"
+msgstr "bir həftədən köhnə"
+
+msgid "searchinterval-1M"
+msgstr "bir aydan əvvəl"
+
+msgid "searchinterval-1Y"
+msgstr "bir ildən əvvəl"
+
+msgid "searchinterval1W"
+msgstr "bir həftədən cavan"
+
+msgid "searchinterval1M"
+msgstr "bir aydan cavan"
+
+msgid "searchinterval1Y"
+msgstr "bir ildən cavan"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Yeni pəncərədə aç"
+
+msgid "emlsave"
+msgstr "Saxla (.eml)"
+
+msgid "changeformattext"
+msgstr "Sadə mətn formatında göstər"
+
+msgid "changeformathtml"
+msgstr "HTML formatında göstər"
+
+msgid "editasnew"
+msgstr "Yeni kimi redaktə et"
+
+msgid "send"
+msgstr "Göndər"
+
+msgid "sendmessage"
+msgstr "İndi göndər"
+
+msgid "savemessage"
+msgstr "Qaralama saxla"
+
+msgid "addattachment"
+msgstr "Fayl əlavə et"
+
+msgid "charset"
+msgstr "Kodlaşdırma"
+
+msgid "editortype"
+msgstr "Redaktor"
+
+msgid "returnreceipt"
+msgstr "Cavab sorğusu"
+
+msgid "dsn"
+msgstr "Çatdırılma statusu haqda bildiriş"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "$date tarixdə, $sender yazıb:"
+
+msgid "originalmessage"
+msgstr "Orijinal məktub"
+
+msgid "selectimage"
+msgstr "Şəkli seç"
+
+msgid "addimage"
+msgstr "Şəkil əlavə et"
+
+msgid "selectmedia"
+msgstr ""
+
+msgid "addmedia"
+msgstr ""
+
+msgid "encrypt"
+msgstr "Şifrələ"
+
+msgid "encryptmessage"
+msgstr "Mesajı şifrələ"
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr "İctimai açarları idxal et"
+
+msgid "encryptedsendialog"
+msgstr "Şifrəli mesaj göndərilir"
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr "Açar ID"
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr "Vaxtı keçib"
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Yerləşdir"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "Qəbul edən"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "İdentifikasiyanı dəyiş"
+
+msgid "spellcheck"
+msgstr "Orfoqrafiya"
+
+msgid "checkspelling"
+msgstr "Orfoqrafiyanı yoxla"
+
+msgid "resumeediting"
+msgstr "Redaktəni davam et"
+
+msgid "revertto"
+msgstr "Dəyişiklikləri ləğv et"
+
+msgid "restore"
+msgstr "Bərpa"
+
+msgid "restoremessage"
+msgstr "Məktub bərpa edilsin?"
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr "Cavablar"
+
+msgid "insertresponse"
+msgstr "Cavab daxil et"
+
+msgid "manageresponses"
+msgstr "Cavabların idarə edilməsi"
+
+msgid "newresponse"
+msgstr "Yeni cavab yarat"
+
+msgid "addresponse"
+msgstr "Cavab əlavə et"
+
+msgid "editresponse"
+msgstr "Cavabı redaktə et"
+
+msgid "editresponses"
+msgstr "Cavabları redaktə et"
+
+msgid "responsename"
+msgstr "Ad"
+
+msgid "responsetext"
+msgstr "Cavab mətni"
+
+msgid "attach"
+msgstr "Fayl əlavə et"
+
+msgid "attachments"
+msgstr "Bərkidilmiş Fayllar"
+
+msgid "upload"
+msgstr "Yüklə"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "Bağla"
+
+msgid "messageoptions"
+msgstr "Məktub xüsusiyyətləri..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Alçaq"
+
+msgid "lowest"
+msgstr "Çox alçaq"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "high"
+msgstr "Yüksək"
+
+msgid "highest"
+msgstr "Çox yüksək"
+
+msgid "nosubject"
+msgstr "(mövzu yoxdur)"
+
+msgid "showimages"
+msgstr "Şəkilləri göstər"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "$sender-dən olan məktublarda həmişə şəkilləri göstər"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Bu qaralama məktubudur."
+
+msgid "andnmore"
+msgstr "Daha çox $nr more..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Daha çox məktub"
+
+msgid "togglefullheaders"
+msgstr "Məktubun çiy başlıqlarını keçir"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Mətn"
+
+msgid "savesentmessagein"
+msgstr "Məktubu saxla..."
+
+msgid "dontsave"
+msgstr "saxlama"
+
+msgid "maxuploadsize"
+msgstr "Faylın maksimal ölçüsü: $size"
+
+msgid "addcc"
+msgstr "Kopya əlavə et"
+
+msgid "addbcc"
+msgstr "Gizli kopya əlavə et"
+
+msgid "addreplyto"
+msgstr "Yönəltmə əlavə et"
+
+msgid "addfollowupto"
+msgstr "\"İzlə\" əlavə et"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Məktubu göndərən onu oxuduğunuz haqda sorğu almaq istəyir. Göndərilsin?"
+
+msgid "receiptread"
+msgstr "Oxunulma haqda soğru"
+
+msgid "yourmessage"
+msgstr "Bu məktubunuzun oxunulduğu haqda sorğudur"
+
+msgid "receiptnote"
+msgstr ""
+"Bu sorğu yalnız qəbul edilən tərəfindən məktubun açıldığına göstərir. Onun "
+"oxunulduğuna zəmanət vermir."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Göstərilən ad"
+
+msgid "firstname"
+msgstr "Adı"
+
+msgid "surname"
+msgstr "Soyadı"
+
+msgid "middlename"
+msgstr "Orta adı"
+
+msgid "nameprefix"
+msgstr "Prefiks"
+
+msgid "namesuffix"
+msgstr "Suffiks"
+
+msgid "nickname"
+msgstr "Ləqəb"
+
+msgid "jobtitle"
+msgstr "Vəzifə"
+
+msgid "department"
+msgstr "Departament"
+
+msgid "gender"
+msgstr "Cins"
+
+msgid "maidenname"
+msgstr "Qız adı"
+
+msgid "email"
+msgstr "E-Poçt"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Ünvan"
+
+msgid "street"
+msgstr "Küçə"
+
+msgid "locality"
+msgstr "Şəhər"
+
+msgid "zipcode"
+msgstr "ZIP kod"
+
+msgid "region"
+msgstr "Region"
+
+msgid "country"
+msgstr "Ölkə"
+
+msgid "birthday"
+msgstr "Ad günü"
+
+msgid "anniversary"
+msgstr "İldönümü"
+
+msgid "website"
+msgstr "Vebsayt"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Qeydlər"
+
+msgid "male"
+msgstr "kişi"
+
+msgid "female"
+msgstr "qadın"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Menecer"
+
+msgid "assistant"
+msgstr "Köməkçi"
+
+msgid "spouse"
+msgstr "Ər-arvad"
+
+msgid "allfields"
+msgstr "Bütün sahələr"
+
+msgid "search"
+msgstr "Axtar"
+
+msgid "searchresult"
+msgstr "Axtarış nəticəsi"
+
+msgid "advsearch"
+msgstr "Ətraflı axtarış"
+
+msgid "advanced"
+msgstr "Əlavə"
+
+msgid "other"
+msgstr "Başqa"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "Ev"
+
+msgid "typework"
+msgstr "İş"
+
+msgid "typeother"
+msgstr "Başqa"
+
+msgid "typemobile"
+msgstr "Mobil"
+
+msgid "typemain"
+msgstr "Əsas"
+
+msgid "typehomefax"
+msgstr "Ev faksı"
+
+msgid "typeworkfax"
+msgstr "İş faksı"
+
+msgid "typecar"
+msgstr "Maşın"
+
+msgid "typepager"
+msgstr "Peycer"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Köməkçi"
+
+msgid "typehomepage"
+msgstr "Ana səhifə"
+
+msgid "typeblog"
+msgstr "Bloq"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Sahə əlavə et"
+
+msgid "addcontact"
+msgstr "Əlaqə əlavə et"
+
+msgid "editcontact"
+msgstr "Ünvanı redaktə et"
+
+msgid "contacts"
+msgstr "Əlaqələr"
+
+msgid "contactproperties"
+msgstr "Kontakt xüsusiyyətləri"
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr "Şəxsi məlumat"
+
+msgid "personal"
+msgstr "Şəxsi"
+
+msgid "contactphoto"
+msgstr ""
+
+msgid "edit"
+msgstr "Redaktə et"
+
+msgid "cancel"
+msgstr "Ləğv et"
+
+msgid "save"
+msgstr "Saxla"
+
+msgid "delete"
+msgstr "Sil"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Adlandır"
+
+msgid "addphoto"
+msgstr "Əlavə et"
+
+msgid "replacephoto"
+msgstr "Adı dəyiş"
+
+msgid "uploadphoto"
+msgstr "Şəkil yüklə"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr "Seçilmiş ünvanları sil"
+
+msgid "composeto"
+msgstr "Seçilmiş ünvanlara məktub yaz"
+
+msgid "contactsfromto"
+msgstr "$count ünvanının $from - $to arası"
+
+msgid "print"
+msgstr "Çap et"
+
+msgid "export"
+msgstr "İxrac et"
+
+msgid "exportall"
+msgstr "Hamısını İxrac et"
+
+msgid "exportsel"
+msgstr "Seçilmişləri İxrac et"
+
+msgid "exportvcards"
+msgstr "Ünvanları vCards formatında ixrac et"
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr "Qrup əlavə et"
+
+msgid "grouprename"
+msgstr "Qruğun adını dəyişdir"
+
+msgid "groupdelete"
+msgstr "Qrupu sil"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Qrupdan seçilmiş kontaktları sil"
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "Əvvəlkini göstər"
+
+msgid "firstpage"
+msgstr "Birincini göstər"
+
+msgid "nextpage"
+msgstr "Sonrakını göstər"
+
+msgid "lastpage"
+msgstr "Sonuncunu göstər"
+
+msgid "group"
+msgstr "Qrup"
+
+msgid "groups"
+msgstr "Qruplar"
+
+msgid "listgroup"
+msgstr "Qrup üzvlərinin siyahısı"
+
+msgid "personaladrbook"
+msgstr "Şəxsi ünvanlar"
+
+msgid "searchsave"
+msgstr "Sorğunu saxla"
+
+msgid "searchdelete"
+msgstr "Sorğunu sil"
+
+msgid "import"
+msgstr "İdxal"
+
+msgid "importcontacts"
+msgstr "Ünvanların idxalı"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Kontaktları əlavə et"
+
+msgid "importreplace"
+msgstr "Ünvan kitabçasını dəyiş"
+
+msgid "importgroups"
+msgstr "Qrup idxalı tapşırığı"
+
+msgid "importgroupsall"
+msgstr "Hamısı (əgər lazımdırsa qrupun yaradılması)"
+
+msgid "importgroupsexisting"
+msgstr "Yalnız mövcud qruplar üçün"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Bitdi"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Nizamlamaları"
+
+msgid "about"
+msgstr "Haqqında"
+
+msgid "preferences"
+msgstr "Nizamlamalar"
+
+msgid "userpreferences"
+msgstr "İstifadəçi nizamlamaları"
+
+msgid "editpreferences"
+msgstr "İstifadəçi nizamlamalarını redaktə et"
+
+msgid "identities"
+msgstr "Kimliklər"
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "HTML-də göstər"
+
+msgid "defaultcharset"
+msgstr "İlkin vəziyyətdəki kodlaşdırma"
+
+msgid "htmlmessage"
+msgstr "HTML məktub"
+
+msgid "messagepart"
+msgstr "Hissə"
+
+msgid "digitalsig"
+msgstr "Rəqəmsal imza"
+
+msgid "dateformat"
+msgstr "Tarix formatı"
+
+msgid "timeformat"
+msgstr "Vaxt formatı"
+
+msgid "prettydate"
+msgstr "Qəşəng tarixlər"
+
+msgid "setdefault"
+msgstr "İlkin vəziyyətə qaytar"
+
+msgid "autodetect"
+msgstr "Avto"
+
+msgid "language"
+msgstr "Dil"
+
+msgid "timezone"
+msgstr "Saat qurşağı"
+
+msgid "pagesize"
+msgstr "Səhifədə sətrlər"
+
+msgid "signature"
+msgstr "İmza"
+
+msgid "dstactive"
+msgstr "Yay vaxtı"
+
+msgid "showinextwin"
+msgstr "Məktubu yeni pəncərədə aç"
+
+msgid "composeextwin"
+msgstr "Yeni pəncərədə yarat"
+
+msgid "htmleditor"
+msgstr "HTML-də mesaj yaz"
+
+msgid "htmlonreply"
+msgstr "yalnız HTML mesajlar ilə cavab"
+
+msgid "htmlonreplyandforward"
+msgstr "HTML məktuba cavab və yönəltmə zamanı"
+
+msgid "htmlsignature"
+msgstr "HTML imza"
+
+msgid "showemail"
+msgstr "E-poçt ünvanları displey adları ilə göstər"
+
+msgid "previewpane"
+msgstr "Prevyu paneli göstər"
+
+msgid "skin"
+msgstr "İnterfeys stili"
+
+msgid "logoutclear"
+msgstr "Poçtdan çıxan zaman səbəti təmizlə"
+
+msgid "logoutcompact"
+msgstr "Poçtdan çıxan zaman gələnləri sıx"
+
+msgid "uisettings"
+msgstr "İstifadəçi interfeysi"
+
+msgid "serversettings"
+msgstr "Server nizamlamaları"
+
+msgid "mailboxview"
+msgstr "Poçt qutusunun görünüşü"
+
+msgid "mdnrequests"
+msgstr "Göndərilmə bildirişi"
+
+msgid "askuser"
+msgstr "göndərilmə zamanı istifadəçidən soruş"
+
+msgid "autosend"
+msgstr "avtomatik göndər"
+
+msgid "autosendknown"
+msgstr "kontaktlarıma qəbz yolla. Əks halda soruş"
+
+msgid "autosendknownignore"
+msgstr "kontaktlarıma qəbz yolla. Əks halda iqnor et"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "Məktubu siləndə oxunmuş kimi qeyd et"
+
+msgid "flagfordeletion"
+msgstr "Silmə əvəzi silinmə işarəsilə qeyd et"
+
+msgid "skipdeleted"
+msgstr "Silinmiş məktubları göstərmə"
+
+msgid "deletealways"
+msgstr "Məktubu səbətə köçürmək alınmırsa, silinsin"
+
+msgid "deletejunk"
+msgstr "SPAM-dakı məktubları səbətə yollamadan sil"
+
+msgid "showremoteimages"
+msgstr "Silinmiç şəkilləri göstər"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "məlum göndərənlərdən"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "hər zaman"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "Əlavə olunmuş şəkili məktubun aşağısında göstər"
+
+msgid "autosavedraft"
+msgstr "Qaralamanı avtomatik saxla"
+
+msgid "everynminutes"
+msgstr "hər $n dəqiqə(lər)"
+
+msgid "refreshinterval"
+msgstr "Yenilə (yeni məktubları yoxla v.s.)"
+
+msgid "never"
+msgstr "heç vaxt"
+
+msgid "immediately"
+msgstr "dərhal"
+
+msgid "messagesdisplaying"
+msgstr "Məktubların göstərilməsi"
+
+msgid "messagescomposition"
+msgstr "Məktubların yazılması"
+
+msgid "mimeparamfolding"
+msgstr "Bərkidilənlərin adları"
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (başqa)"
+
+msgid "force7bit"
+msgstr "8-bitli simvollar üçün MIME istifadə et"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Ətraflı nizamlama"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "Yeni məktub zamanı brauzerin pəncərəsini fokusla"
+
+msgid "checkallfolders"
+msgstr "Bütün qovluqlarda yeni məktubları yoxla"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "HTML məktubun default şrifti"
+
+msgid "mainoptions"
+msgstr "Əsas nizamlamalar"
+
+msgid "browseroptions"
+msgstr "Brauzer ayarları"
+
+msgid "section"
+msgstr "Bölmə"
+
+msgid "maintenance"
+msgstr "Xidmət"
+
+msgid "newmessage"
+msgstr "Yeni məktub"
+
+msgid "signatureoptions"
+msgstr "İmzanın nizamlamaları"
+
+msgid "whenreplying"
+msgstr "Cavab zamanı"
+
+msgid "replyempty"
+msgstr "orijinal məktubu sitat gətirmə"
+
+msgid "replytopposting"
+msgstr "orijinaldan əvvəl yeni məktub yaz"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "orijinaldan sonra yeni məktub yaz"
+
+msgid "replyremovesignature"
+msgstr "Cavab zamanı imzanı sil"
+
+msgid "autoaddsignature"
+msgstr "İmzanı avtomatik əlavə et"
+
+msgid "newmessageonly"
+msgstr "yalnız yeni məktublarda"
+
+msgid "replyandforwardonly"
+msgstr "Yalnız cavab və yönəldilənlərdə"
+
+msgid "insertsignature"
+msgstr "İmza əlavə et"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "$n saniyədən sonra"
+
+msgid "reqmdn"
+msgstr "Hər zaman çatdırılma bildirişini istə"
+
+msgid "reqdsn"
+msgstr "Hər zaman çatıdrılma haqda statusu istə"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Cavab mesajları üçün saxlanılan yer"
+
+msgid "defaultabook"
+msgstr "Öz qurğulu ünvan kitabçası"
+
+msgid "autocompletesingle"
+msgstr "Avtobitmədə əlavə ünvanları burax"
+
+msgid "listnamedisplay"
+msgstr "Kontaklar siyahısı bu cür göstər"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Göndərməzdən əvvəl orfoqrafiyanı yoxla"
+
+msgid "spellcheckoptions"
+msgstr "Orfoqrafiya yoxlanışının ayarları"
+
+msgid "spellcheckignoresyms"
+msgstr "Simvollar ilə sözləri burax"
+
+msgid "spellcheckignorenums"
+msgstr "Rəqəmlər ilə sözləri keç"
+
+msgid "spellcheckignorecaps"
+msgstr "Böyük hərfləri olan sözlərdən keç"
+
+msgid "addtodict"
+msgstr "Lüğətə əlavə et"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "mailto: keçid üçün protokol qeyd et"
+
+msgid "standardwindows"
+msgstr "Handle popapsı standart pəncərələr kimi"
+
+msgid "forwardmode"
+msgstr "Məktubların yönəldilməsi"
+
+msgid "inline"
+msgstr "mətndə"
+
+msgid "asattachment"
+msgstr "fayl kimi"
+
+msgid "replyallmode"
+msgstr "[Hamıya cavab] düyməsinin susmaya görə hərəkəti"
+
+msgid "replyalldefault"
+msgstr "hamıya cavab"
+
+msgid "replyalllist"
+msgstr "yalnız poçt siyahısına (əgər tapılıbsa) cavab "
+
+msgid "allmessages"
+msgstr "bütün məktublar"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Qovluq"
+
+msgid "folders"
+msgstr "Qovluqlar"
+
+msgid "foldername"
+msgstr "Qovluq adı"
+
+msgid "subscribed"
+msgstr "İmzalanıb"
+
+msgid "messagecount"
+msgstr "Məktublar"
+
+msgid "create"
+msgstr "Yarad"
+
+msgid "createfolder"
+msgstr "Yeni qovluq yarad"
+
+msgid "managefolders"
+msgstr "Qovluqlarla iş"
+
+msgid "specialfolders"
+msgstr "Xüsusi qovluqlar"
+
+msgid "properties"
+msgstr "Xüsusiyyətlər"
+
+msgid "folderproperties"
+msgstr "Qovluq xüsusiyyətləri"
+
+msgid "parentfolder"
+msgstr "Ana qovluq"
+
+msgid "location"
+msgstr "Yerləşmə"
+
+msgid "info"
+msgstr "Məlumat"
+
+msgid "getfoldersize"
+msgstr "Qovluq ölçüsünü öyrənmək üçün vur"
+
+msgid "changesubscription"
+msgstr "Abunəni dəyişmək üçün vurun"
+
+msgid "foldertype"
+msgstr "Qovluq növü"
+
+msgid "personalfolder"
+msgstr "Gizli qovluq"
+
+msgid "otherfolder"
+msgstr "Başqa istifadəçilərin qovluğu"
+
+msgid "sharedfolder"
+msgstr "İctimai qovluq"
+
+msgid "findfolders"
+msgstr "Qovluqları tap"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr "Şəxsi"
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr "Paylaşılıb"
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Çeşidlə"
+
+msgid "sortasc"
+msgstr "Azdan çoxa"
+
+msgid "sortdesc"
+msgstr "Çoxdan aza"
+
+msgid "undo"
+msgstr "Ləğv et"
+
+msgid "installedplugins"
+msgstr "Yazılmış qoşmalar"
+
+msgid "plugin"
+msgstr "Qoşma"
+
+msgid "version"
+msgstr "Versiya"
+
+msgid "source"
+msgstr "Mənbə"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Lisenziya"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Dəstək"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "İngilis dili"
+
+msgid "westerneuropean"
+msgstr "Qərbi Avropa"
+
+msgid "easterneuropean"
+msgstr "Şərqi Avropa"
+
+msgid "southeasterneuropean"
+msgstr "Cənub-Şərqi Avropa"
+
+msgid "baltic"
+msgstr "Baltik"
+
+msgid "cyrillic"
+msgstr "Kirillə"
+
+msgid "arabic"
+msgstr "Ərəbcə"
+
+msgid "greek"
+msgstr "Yunanca"
+
+msgid "hebrew"
+msgstr "Yəhudicə"
+
+msgid "turkish"
+msgstr "Türkcə"
+
+msgid "nordic"
+msgstr "Skandinav"
+
+msgid "thai"
+msgstr "Tayca"
+
+msgid "celtic"
+msgstr "Keltcə"
+
+msgid "vietnamese"
+msgstr "Vyetnamca"
+
+msgid "japanese"
+msgstr "Yaponca"
+
+msgid "korean"
+msgstr "Koreya"
+
+msgid "chinese"
+msgstr "Çincə"
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Xəta baş verdi!"
+
+msgid "messages.loginfailed"
+msgstr "Giriş uğursuz oldu."
+
+msgid "messages.cookiesdisabled"
+msgstr "Sizin brauzer kukiləri qəbul etmir."
+
+msgid "messages.sessionerror"
+msgstr "Sizin sessiya köhnəlib."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "IMAP serverlə bağlantı alınmadı."
+
+msgid "messages.servererror"
+msgstr "Server Xətası!"
+
+msgid "messages.servererrormsg"
+msgstr "Server Xətası: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr ""
+
+msgid "messages.dberror"
+msgstr "Məlumatlar Bazasında Xəta!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr "Sorğunun gözləmə müddəti bitdi"
+
+msgid "messages.errorreadonly"
+msgstr "Əməliyyatı icra etmək mümkün deyil. Qovluq yalnız oxunuş üçündür."
+
+msgid "messages.errornoperm"
+msgstr "Əməliyyatı etmək mümkün deyil. Giriş qadağandır."
+
+msgid "messages.erroroverquota"
+msgstr "Əməliyyat icra edilə bilinmir. Boş disk həcmi yoxdur."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Boş disk həcmi yoxdur. Məktubu silmək üçün SHIFT+DEL düyməsini istifadə "
+"edin."
+
+msgid "messages.invalidrequest"
+msgstr "Səhv sorğu! Məlumat yaddaşda qalmadı."
+
+msgid "messages.invalidhost"
+msgstr "Səhv server adı."
+
+msgid "messages.nomessagesfound"
+msgstr "Poçt qutusunda məktub tapılmadı."
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "Poçt boşdur"
+
+msgid "messages.nomessages"
+msgstr "Məktub yoxdur"
+
+msgid "messages.refreshing"
+msgstr "Yenilənmə..."
+
+msgid "messages.loading"
+msgstr "Yüklənir..."
+
+msgid "messages.uploading"
+msgstr "Fayl yüklənir..."
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr "Fayllar yüklənir..."
+
+msgid "messages.loadingdata"
+msgstr "Məlumatlar yüklənir..."
+
+msgid "messages.checkingmail"
+msgstr "Yeni məktubları yoxla..."
+
+msgid "messages.sendingmessage"
+msgstr "Məktub göndərilir..."
+
+msgid "messages.messagesent"
+msgstr "Məktub uğurla göndərildi"
+
+msgid "messages.savingmessage"
+msgstr "Məktubu saxla..."
+
+msgid "messages.messagesaved"
+msgstr "Məktub qaralamada saxlandı"
+
+msgid "messages.successfullysaved"
+msgstr "Yaddaşa yazıldı"
+
+msgid "messages.savingresponse"
+msgstr "Cavab mətninin saxlanılması..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Siz cavab mətnini silmək istəyirsiniz?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Əlaqə ünvan kitabçasına əlavə olundu"
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "Bu adda kontakt artıq mövcuddur."
+
+msgid "messages.blockedimages"
+msgstr "Təhlükəsizlik məqsədi ilə şəkillərin yüklənməsi bloklanıb."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr ""
+"Məktub şifrələnib və göstərilə bilməz. Server inzibatçısına müraciət edin."
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Ünvanlar tapılmadı"
+
+msgid "messages.contactnotfound"
+msgstr "Tələb olunan ünvan tapılmadı"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Məktub göndərilmədi"
+
+msgid "messages.senttooquickly"
+msgstr "Məktub göndərmək üçün $sec saniyə gözləmək gərəkir"
+
+msgid "messages.errorsavingsent"
+msgstr "Göndərilən məktubun saxlanılması zamanı xəta baş verdi."
+
+msgid "messages.errorsaving"
+msgstr "Saxlanılma zamanı xəta baş verdi."
+
+msgid "messages.errormoving"
+msgstr "Məktubu (məktubları) köçürmək alnmadı"
+
+msgid "messages.errorcopying"
+msgstr "Məktubu (məktubları) kopyalamaq alınmadı"
+
+msgid "messages.errordeleting"
+msgstr "Məktubu (məktubları) silmək alınmadı"
+
+msgid "messages.errormarking"
+msgstr "Məktubu (məktubları) işarələmək mümkün deyil"
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "Seçilən ünvanı (ünvanları) silməyə əminsiniz?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Qrupu silməkdə əminsiniz?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Seçilən məktubu (məktubları) silməyə əminsiniz?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Bu qovluğu silməyə əminsiniz?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Bu qovluqdakı bütün məktubları silməyə əminsiniz?"
+
+msgid "messages.contactdeleting"
+msgstr "Kontak(lar)ın silinməsi..."
+
+msgid "messages.groupdeleting"
+msgstr "Qrupun silinməsi..."
+
+msgid "messages.folderdeleting"
+msgstr "Qovluğ silinir..."
+
+msgid "messages.foldermoving"
+msgstr "Qovluq köçürülür..."
+
+msgid "messages.foldersubscribing"
+msgstr "Qovluğa abunə..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Qovluğa abunədən çıx..."
+
+msgid "messages.formincomplete"
+msgstr "Bütün sətrlər doldurulmayıb"
+
+msgid "messages.noemailwarning"
+msgstr "Lütfən, düzgün e-poçt ünvanı daxil edin"
+
+msgid "messages.nonamewarning"
+msgstr "Lütfən, ad daxil edin"
+
+msgid "messages.nopagesizewarning"
+msgstr "Lütfən, səhifənin ölçüsünü daxil edin"
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Lütfən, qəbul edənin ünvanını daxil edin"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "\"Mövzu\" sahəsi boşdur. Mövzu daxil etmək istəyirsiniz?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "Məktub boş göndərilsin?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Əvvəlki göndərildi, ancaq göndərilməyən məktub da tapıldı.\\n\\nSubject: "
+"$subject\\nSaved: $date\\n\\nSiz bu məktubu bərpa etmək istəyirsiniz?"
+
+msgid "messages.nosearchname"
+msgstr "Lütfən, ad və ya e-poçt əlavə edin"
+
+msgid "messages.notuploadedwarning"
+msgstr "Əlavələr tam yüklənilməyib. Gözləyin və ya yükləməni ləğv edin."
+
+msgid "messages.searchsuccessful"
+msgstr "Tapılan məktublar: $nr"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr kontakt tapılıb."
+
+msgid "messages.searchnomatch"
+msgstr "Məktub tapılmadı"
+
+msgid "messages.searching"
+msgstr "Axtarılır..."
+
+msgid "messages.checking"
+msgstr "Yoxlanılır..."
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr "Orfoqrafik səhvlət tapılmadı"
+
+msgid "messages.folderdeleted"
+msgstr "Qovluq uğurla silindi"
+
+msgid "messages.foldersubscribed"
+msgstr "Qovluq uğurla abunə oldu"
+
+msgid "messages.folderunsubscribed"
+msgstr "Qovluq uğurla abunədən çıxdı"
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Silindi"
+
+msgid "messages.converting"
+msgstr "Məktubun formatlaşması silinir..."
+
+msgid "messages.messageopenerror"
+msgstr "Məktubu serverdən yükləmək alınmır"
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "Fayl yüklənilmədi"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Yüklənilən fayl maksimal ölçüdən çoxdur - $size"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "$nr kontaktlar uğurlar kopyalanmışdır."
+
+msgid "messages.movesuccess"
+msgstr "$nr kontaktlar uğurla köçürülmüşdür."
+
+msgid "messages.copyerror"
+msgstr "Heç bir kontaktı kopyalamaq olmur."
+
+msgid "messages.moveerror"
+msgstr "Heç bir kontaktı köçürmək alınmır."
+
+msgid "messages.sourceisreadonly"
+msgstr "Verilən ünvanlar mənbəyi yalnız oxunmaq üçün"
+
+msgid "messages.errorsavingcontact"
+msgstr "Əlaqəni ünvanda saxlamaq mümkün deyil"
+
+msgid "messages.movingmessage"
+msgstr "Məktub köçürülür..."
+
+msgid "messages.copyingmessage"
+msgstr "Məktub kopyalanır..."
+
+msgid "messages.copyingcontact"
+msgstr "Kontakt(lar)ın kopyalanması..."
+
+msgid "messages.movingcontact"
+msgstr "Kontak(lar)ın köçürülməsi..."
+
+msgid "messages.deletingmessage"
+msgstr "Məktub(lar) silinir..."
+
+msgid "messages.markingmessage"
+msgstr "Məktub(lar) işarələnir..."
+
+msgid "messages.addingmember"
+msgstr "Kontakt(lar)ın qrupa əlavə edilməsi..."
+
+msgid "messages.removingmember"
+msgstr "Kontakt(lar)ın qrupdan silinməsi..."
+
+msgid "messages.receiptsent"
+msgstr "Oxunulma haqda bildiriş göndərildi"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Oxunulma haqda bildiriş göndərilmədi"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "İdentifikasiyanı silməkdə əminsiniz?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Siz bu kimliyi silə bilməzsiniz. Bu axırıncıdır."
+
+msgid "messages.forbiddencharacter"
+msgstr "Qovlu adı qadağan olunmuş simvollar təşkil edir"
+
+msgid "messages.selectimportfile"
+msgstr "Yüklənilən faylı seçin"
+
+msgid "messages.addresswriterror"
+msgstr "Seçilmiş ünvan kitabçası yaddaşa yazıla bilməz"
+
+msgid "messages.contactaddedtogroup"
+msgstr "Ünvanlar qrupa əlavə edildi"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Ünvanlar qrupdan silindi"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Qruplar arası bölgü dəyişməyib."
+
+msgid "messages.importwait"
+msgstr "İdxal gedir, lütfən gözləyin..."
+
+msgid "messages.importformaterror"
+msgstr "İdxal xətası. Yüklənilən fayl naməlum məlumat formatına malikdir."
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>$inserted ünvanlar müvəffəqiyyətlə idxal edildi, mövcud $skipped "
+"buraxılıb</b>:<p><em>$names</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr məktublar uğurla idxal edildi"
+
+msgid "messages.importmessageerror"
+msgstr "İdxal alınmadı! Yüklənilmiş fayl düzgün məktub və ya poçt faylı deyil"
+
+msgid "messages.opnotpermitted"
+msgstr "Əməliyyat qadağandır!"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Serverdə qaçıımaz xəta baş verib. Təcili öz inzibatçınız ilə əlaqə qurun. "
+"<b>Sizin məktub göndərilməyə bilər.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP Error ($code): Serverlə bağlantı alınmadı"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP Error ($code): İdentifikasiya xətası"
+
+msgid "messages.smtpfromerror"
+msgstr ""
+"SMTP Error ($code): Göndərəni səlavə etmək mümkün deyil - \"$from\" ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "SMTP Error ($code): Qəbul edəni əlavə etmək mümkün deyil - \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr ""
+"SMTP Error ($code): Qəbul edənlərin siyahısını emal etmək mümkün deyil"
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP Error ($code): $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr "Qəbul edənlər həddindən artıq çoxdur. Lütfən, $max qədər azaldın."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Qrupun ölçüsü imkan verilən maksimumdan artıqdır - $max"
+
+msgid "messages.internalerror"
+msgstr "Daxili xəta. Lütfən bir daha cəhd edin."
+
+msgid "messages.contactdelerror"
+msgstr "Kontak(lar)ı silmək alınmadı"
+
+msgid "messages.contactdeleted"
+msgstr "Kontak(lar) uğurla silindi"
+
+msgid "messages.contactrestoreerror"
+msgstr "Silinmiş kontakt(lar)ın bərpası alınmadı"
+
+msgid "messages.contactrestored"
+msgstr "Kontakt(lar) bərpa edildi."
+
+msgid "messages.groupdeleted"
+msgstr "Qrup silindi"
+
+msgid "messages.grouprenamed"
+msgstr "Qrupun adı dəyişdirildi"
+
+msgid "messages.groupcreated"
+msgstr "Qrup yaradıldı"
+
+msgid "messages.savedsearchdeleted"
+msgstr "Saxlanılmış sorğu silindi."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Saxlanılmış sorğunu silmək alınmadı."
+
+msgid "messages.savedsearchcreated"
+msgstr "Saxlanılmış sorğu yaradıldı."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Saxlanılmış sorğunu yaratmaq alınmadı"
+
+msgid "messages.messagedeleted"
+msgstr "Məktub(lar) uğurla silindi"
+
+msgid "messages.messagemoved"
+msgstr "Məktub(lar) uğurla köçürüldü"
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "Məktub(lar) uğurla kopyalandı"
+
+msgid "messages.messagemarked"
+msgstr "Məktub(lar) uğurla işarələndi"
+
+msgid "messages.autocompletechars"
+msgstr "Avtokomplektasiya üçün $min işarə daxil edin"
+
+msgid "messages.autocompletemore"
+msgstr "Axtarış çox nəticə çıxardı. Lütfən, dəqiqləşdirin."
+
+msgid "messages.namecannotbeempty"
+msgstr "Ad boş ola bilməz"
+
+msgid "messages.nametoolong"
+msgstr "Ad çox uzundur"
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr "Qovluq yeniləndi"
+
+msgid "messages.foldercreated"
+msgstr "Qovluq yaradıldı"
+
+msgid "messages.invalidimageformat"
+msgstr "Şəkil formatı düzgün deyil"
+
+msgid "messages.mispellingsfound"
+msgstr "Məktubda orfoqrafik səhvlər tapılıb"
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Qovluğu seçilmiş ana qovluğa köçürmək/yaratmaq alınmır. Giriş hüququ yoxdur."
+
+msgid "messages.messagetoobig"
+msgstr "Məktubun bir hissəsi emal üçün böyükdür."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Xəbərdarlıq: Bu vebmeyl xidməti Javascript tələb edir! Funksiyanı istifadə "
+"etmək üçün lütfən, brauzerinizin ayarlarında Javascript-i yandırın."
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

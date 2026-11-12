@@ -1,0 +1,2855 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ast\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Bienllegáu a $product"
+
+msgid "username"
+msgstr "Usuariu"
+
+msgid "password"
+msgstr "Contraseña"
+
+msgid "server"
+msgstr "Sirvidor"
+
+msgid "login"
+msgstr "Aniciar sesión"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Zarrar sesión"
+
+msgid "mail"
+msgstr "Corréu"
+
+msgid "settings"
+msgstr "Axustes"
+
+msgid "addressbook"
+msgstr "Llibreta de direiciones"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Bandexa d'entrada"
+
+msgid "drafts"
+msgstr "Borradores"
+
+msgid "sent"
+msgstr "Unviaos"
+
+msgid "trash"
+msgstr "Papelera"
+
+msgid "junk"
+msgstr "Puxarra"
+
+msgid "show_real_foldernames"
+msgstr "Amosar nomes reales pa carpetes especiales"
+
+msgid "subject"
+msgstr "Asuntu"
+
+msgid "from"
+msgstr "De"
+
+msgid "sender"
+msgstr "Remitente"
+
+msgid "to"
+msgstr "Pa"
+
+msgid "cc"
+msgstr "Copia"
+
+msgid "bcc"
+msgstr "Cct"
+
+msgid "replyto"
+msgstr "Contestar a"
+
+msgid "followupto"
+msgstr "Responder-a"
+
+msgid "date"
+msgstr "Data"
+
+msgid "size"
+msgstr "Tamañu"
+
+msgid "priority"
+msgstr "Prioridá"
+
+msgid "organization"
+msgstr "Organización"
+
+msgid "readstatus"
+msgstr "Lleer estáu"
+
+msgid "listoptions"
+msgstr "Llista d'opciones..."
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Carpetes"
+
+msgid "messagesfromto"
+msgstr "Mensaxes $from a $to de $count"
+
+msgid "threadsfromto"
+msgstr "Filos $from a $to de $count"
+
+msgid "messagenrof"
+msgstr "Mensaxe $nr de $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to de $count"
+
+msgid "copy"
+msgstr "Copia"
+
+msgid "move"
+msgstr "Mover"
+
+msgid "moveto"
+msgstr "mover a..."
+
+msgid "copyto"
+msgstr "Copiar a..."
+
+msgid "download"
+msgstr "Descargar"
+
+msgid "open"
+msgstr "Abrir"
+
+msgid "showattachment"
+msgstr "Amosar"
+
+msgid "showanyway"
+msgstr "Amosar de toes formes"
+
+msgid "filename"
+msgstr "Nome del ficheru"
+
+msgid "filesize"
+msgstr "Tamañu del ficheru"
+
+msgid "addtoaddressbook"
+msgstr "Amestar a la llibreta de direiciones"
+
+msgid "sun"
+msgstr "Dom"
+
+msgid "mon"
+msgstr "Llu"
+
+msgid "tue"
+msgstr "Mar"
+
+msgid "wed"
+msgstr "Mie"
+
+msgid "thu"
+msgstr "Xue"
+
+msgid "fri"
+msgstr "Vie"
+
+msgid "sat"
+msgstr "Sab"
+
+msgid "sunday"
+msgstr "Domingu"
+
+msgid "monday"
+msgstr "Llunes"
+
+msgid "tuesday"
+msgstr "Martes"
+
+msgid "wednesday"
+msgstr "Miércoles"
+
+msgid "thursday"
+msgstr "Xueves"
+
+msgid "friday"
+msgstr "Vienres"
+
+msgid "saturday"
+msgstr "Sábadu"
+
+msgid "jan"
+msgstr "Xin"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Abr"
+
+msgid "may"
+msgstr "Mayu"
+
+msgid "jun"
+msgstr "Xun"
+
+msgid "jul"
+msgstr "Xnt"
+
+msgid "aug"
+msgstr "Ago"
+
+msgid "sep"
+msgstr "Set"
+
+msgid "oct"
+msgstr "Och"
+
+msgid "nov"
+msgstr "Pay"
+
+msgid "dec"
+msgstr "Avi"
+
+msgid "longjan"
+msgstr "Xineru"
+
+msgid "longfeb"
+msgstr "Febreru"
+
+msgid "longmar"
+msgstr "Marzu"
+
+msgid "longapr"
+msgstr "Abril"
+
+msgid "longmay"
+msgstr "Mayu"
+
+msgid "longjun"
+msgstr "Xunu"
+
+msgid "longjul"
+msgstr "Xunetu"
+
+msgid "longaug"
+msgstr "Agostu"
+
+msgid "longsep"
+msgstr "Setiembre"
+
+msgid "longoct"
+msgstr "Ochobre"
+
+msgid "longnov"
+msgstr "Payares"
+
+msgid "longdec"
+msgstr "Avientu"
+
+msgid "today"
+msgstr "Güei"
+
+msgid "refresh"
+msgstr "Refrescar"
+
+msgid "checkmail"
+msgstr "Comprobar mensaxes nuevos"
+
+msgid "compose"
+msgstr "Redactar"
+
+msgid "writenewmessage"
+msgstr "Redactar un mensaxe nuevu"
+
+msgid "reply"
+msgstr "Responder"
+
+msgid "replytomessage"
+msgstr "Responder al remitente"
+
+msgid "replytoallmessage"
+msgstr "Responder a la llista o al remitente y tolos destinatarios"
+
+msgid "replyall"
+msgstr "Responder a toos"
+
+msgid "replylist"
+msgstr "Responder a la llista"
+
+msgid "forward"
+msgstr "Reunviar"
+
+msgid "forwardinline"
+msgstr "Reunviar direutamente"
+
+msgid "forwardattachment"
+msgstr "Reunviar como axuntu"
+
+msgid "forwardmessage"
+msgstr "Reunviar el mensaxe"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Desaniciar mensaxe"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Mover mensaxe a la papelera"
+
+msgid "printmessage"
+msgstr "Imprentar esti mensaxe"
+
+msgid "previousmessage"
+msgstr "Amosar el mensaxe anterior"
+
+msgid "firstmessage"
+msgstr "Amosar primer mensaxe"
+
+msgid "nextmessage"
+msgstr "Amosar mensaxe siguiente"
+
+msgid "lastmessage"
+msgstr "Amosar mensaxe caberu"
+
+msgid "backtolist"
+msgstr "Tornar a la llista de mensaxes"
+
+msgid "viewsource"
+msgstr "Amosar fonte"
+
+msgid "mark"
+msgstr "Conseñar"
+
+msgid "markmessages"
+msgstr "Conseñar mensaxes"
+
+msgid "markread"
+msgstr "Como lleíu"
+
+msgid "markunread"
+msgstr "Como non lleíu"
+
+msgid "markflagged"
+msgstr "Como etiquetáu"
+
+msgid "markunflagged"
+msgstr "Como non etiquetáu"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Más aiciones..."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr "Toles carpetes"
+
+msgid "more"
+msgstr "Más"
+
+msgid "back"
+msgstr "Tornar"
+
+msgid "options"
+msgstr "Opciones"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr "Primeru"
+
+msgid "last"
+msgstr "Caberu"
+
+msgid "previous"
+msgstr "Postreru"
+
+msgid "next"
+msgstr "Siguiente"
+
+msgid "select"
+msgstr "Esbillar"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Toos"
+
+msgid "none"
+msgstr "Dengún"
+
+msgid "currpage"
+msgstr "Páxina actual"
+
+msgid "isread"
+msgstr "Lleer"
+
+msgid "unread"
+msgstr "Ensin lleer"
+
+msgid "flagged"
+msgstr "Etiquetaos"
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr "Ensin contestar"
+
+msgid "withattachment"
+msgstr "Con axuntu"
+
+msgid "deleted"
+msgstr "Desaniciáu"
+
+msgid "undeleted"
+msgstr "Non desaniciáu"
+
+msgid "replied"
+msgstr "Respondíu"
+
+msgid "forwarded"
+msgstr "Reunviáu"
+
+msgid "invert"
+msgstr "Invertir"
+
+msgid "filter"
+msgstr "Filtru"
+
+msgid "list"
+msgstr "Llista"
+
+msgid "threads"
+msgstr "Filos"
+
+msgid "expand-all"
+msgstr "Espander toos"
+
+msgid "expand-unread"
+msgstr "Espander non lleíos"
+
+msgid "collapse-all"
+msgstr "Contrayer toos"
+
+msgid "threaded"
+msgstr "Encadenaos"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Espander filos de mensaxes"
+
+msgid "do_expand"
+msgstr "tolos filos"
+
+msgid "expand_only_unread"
+msgstr "namái con mensaxes non lleíos"
+
+msgid "fromto"
+msgstr "De/a"
+
+msgid "flag"
+msgstr "Bandera"
+
+msgid "attachment"
+msgstr "Axuntu"
+
+msgid "nonesort"
+msgstr "Dengún"
+
+msgid "sentdate"
+msgstr "Data d'unviu"
+
+msgid "arrival"
+msgstr "Data de llegada"
+
+msgid "asc"
+msgstr "ascendente"
+
+msgid "desc"
+msgstr "descendente"
+
+msgid "listcolumns"
+msgstr "Llistar columnes"
+
+msgid "listsorting"
+msgstr "Columna de llistáu"
+
+msgid "listorder"
+msgstr "Orde de llistáu"
+
+msgid "listmode"
+msgstr "Mou de vista de llista"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Llista"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Aiciones de carpeta..."
+
+msgid "compact"
+msgstr "Compautar"
+
+msgid "empty"
+msgstr "Vaciar"
+
+msgid "importmessages"
+msgstr "Importar mensaxes"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Usu de discu"
+
+msgid "unknown"
+msgstr "desconocíu"
+
+msgid "unlimited"
+msgstr "ensin llende"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr "Llímite"
+
+msgid "quotaused"
+msgstr "Usáu"
+
+msgid "quotastorage"
+msgstr "Espaciu en discu"
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Gueta rápida"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Reaniciar la gueta"
+
+msgid "searchmod"
+msgstr "Guetar modificadores"
+
+msgid "msgtext"
+msgstr "Mensaxe enteru"
+
+msgid "body"
+msgstr "Cuerpu"
+
+msgid "type"
+msgstr "Triba"
+
+msgid "namex"
+msgstr "Nome"
+
+msgid "searchscope"
+msgstr "Algame"
+
+msgid "currentfolder"
+msgstr "Carpeta actual"
+
+msgid "subfolders"
+msgstr "Esta y les subcarpetes"
+
+msgid "allfolders"
+msgstr "Toles carpetes"
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Abrir nuna ventana nueva"
+
+msgid "emlsave"
+msgstr "Descargar (.eml)"
+
+msgid "changeformattext"
+msgstr "Amosar en formatu de testu planu"
+
+msgid "changeformathtml"
+msgstr "Amosar en formatu HTML"
+
+msgid "editasnew"
+msgstr "Editar como nuevu"
+
+msgid "send"
+msgstr "Unviar"
+
+msgid "sendmessage"
+msgstr "Unviar el mensaxe yá"
+
+msgid "savemessage"
+msgstr "Guardar como borrador"
+
+msgid "addattachment"
+msgstr "Axuntar un ficheru"
+
+msgid "charset"
+msgstr "Codificación"
+
+msgid "editortype"
+msgstr "Triba d'editor"
+
+msgid "returnreceipt"
+msgstr "Devolver avisu de recibu"
+
+msgid "dsn"
+msgstr "Notificación d'estáu d'entrega"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "El $date, $sender escribió:"
+
+msgid "originalmessage"
+msgstr "Mensaxe orixinal"
+
+msgid "selectimage"
+msgstr "Esbillar imaxe"
+
+msgid "addimage"
+msgstr "Amestar imaxe"
+
+msgid "selectmedia"
+msgstr "Esbillar película"
+
+msgid "addmedia"
+msgstr "Amestar película"
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Inxertar"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Editar identidaes"
+
+msgid "spellcheck"
+msgstr "Correutor ortográficu"
+
+msgid "checkspelling"
+msgstr "Revisar ortografía"
+
+msgid "resumeediting"
+msgstr "Siguir cola edición"
+
+msgid "revertto"
+msgstr "Revertir a"
+
+msgid "restore"
+msgstr "Restaurar"
+
+msgid "restoremessage"
+msgstr "¿Restaurar mensaxe?"
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr "Rempuestes"
+
+msgid "insertresponse"
+msgstr "Inxertar una rempuesta"
+
+msgid "manageresponses"
+msgstr "Alministrar rempuestes"
+
+msgid "newresponse"
+msgstr "Crear resmpuesta nueva"
+
+msgid "addresponse"
+msgstr "Amestar rempuesta"
+
+msgid "editresponse"
+msgstr "Editar rempuesta"
+
+msgid "editresponses"
+msgstr "Editar rempuestes"
+
+msgid "responsename"
+msgstr "Nome"
+
+msgid "responsetext"
+msgstr "Testu de la rempuesta"
+
+msgid "attach"
+msgstr "Axuntar"
+
+msgid "attachments"
+msgstr "Axuntos"
+
+msgid "upload"
+msgstr "Xubir"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "Zarrar"
+
+msgid "messageoptions"
+msgstr "Opciones de mensaxe..."
+
+msgid "togglecomposeoptions"
+msgstr "Camudar opciones de composición"
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Baxu"
+
+msgid "lowest"
+msgstr "Mui baxu"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "high"
+msgstr "Altu"
+
+msgid "highest"
+msgstr "Mui altu"
+
+msgid "nosubject"
+msgstr "(ensin asuntu)"
+
+msgid "showimages"
+msgstr "Amosar imáxenes"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "Amosar siempres les imáxenes de $sender"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Esti mensaxe ye un borrador."
+
+msgid "andnmore"
+msgstr "$nr más..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Amosar más testeres del mensaxe"
+
+msgid "togglefullheaders"
+msgstr "Amosar o anubrir testeres de mensaxes"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Testu planu"
+
+msgid "savesentmessagein"
+msgstr "Guardar mensaxe unviáu en"
+
+msgid "dontsave"
+msgstr "nun guardar"
+
+msgid "maxuploadsize"
+msgstr "El tamañu másimu pa un ficheru ye $size"
+
+msgid "addcc"
+msgstr "Amestar Cc"
+
+msgid "addbcc"
+msgstr "Amestar Cct"
+
+msgid "addreplyto"
+msgstr "Amestar Rempuesta pa"
+
+msgid "addfollowupto"
+msgstr "Amestar Siguir a"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"El remitente d'esti mensaxe entrugó pa ser notificáu cuando lleas esti "
+"mensaxe. ¿Deseyes notificá-ylo al remitente?"
+
+msgid "receiptread"
+msgstr "Devolver avisu de recibu (lleíu)"
+
+msgid "yourmessage"
+msgstr "Esto ye una devolución del avisu de recibu pal to mensaxe"
+
+msgid "receiptnote"
+msgstr ""
+"Nota: Esti avisu de recibu namái reconoz que'l mensaxe amosóse nel ordenador"
+" del destinatariu. Nun hai garantía de que'l destinatariu lleera o "
+"entendiera'l conteníu del mensaxe."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Nome completu"
+
+msgid "firstname"
+msgstr "Nome"
+
+msgid "surname"
+msgstr "Apellíu"
+
+msgid "middlename"
+msgstr "Segundu nome"
+
+msgid "nameprefix"
+msgstr "Prefixu"
+
+msgid "namesuffix"
+msgstr "Sufixu"
+
+msgid "nickname"
+msgstr "Nomatu"
+
+msgid "jobtitle"
+msgstr "Tratamientu"
+
+msgid "department"
+msgstr "Departamentu"
+
+msgid "gender"
+msgstr "Xéneru"
+
+msgid "maidenname"
+msgstr "Apellíu de soltera"
+
+msgid "email"
+msgstr "Corréu"
+
+msgid "phone"
+msgstr "Teléfonu"
+
+msgid "address"
+msgstr "Direición"
+
+msgid "street"
+msgstr "Cai"
+
+msgid "locality"
+msgstr "Ciudá"
+
+msgid "zipcode"
+msgstr "Códigu postal"
+
+msgid "region"
+msgstr "Estáu/Provincia"
+
+msgid "country"
+msgstr "País"
+
+msgid "birthday"
+msgstr "Cumpleaños"
+
+msgid "anniversary"
+msgstr "Aniversariu"
+
+msgid "website"
+msgstr "Páxina web"
+
+msgid "instantmessenger"
+msgstr "Mensaxería nel intre"
+
+msgid "notes"
+msgstr "Notes"
+
+msgid "male"
+msgstr "home"
+
+msgid "female"
+msgstr "muyer"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Alministrador"
+
+msgid "assistant"
+msgstr "Auxiliar"
+
+msgid "spouse"
+msgstr "Casáu con"
+
+msgid "allfields"
+msgstr "Tolos campos"
+
+msgid "search"
+msgstr "Guetar"
+
+msgid "searchresult"
+msgstr ""
+
+msgid "advsearch"
+msgstr "Gueta avanzada"
+
+msgid "advanced"
+msgstr "Avanzáu"
+
+msgid "other"
+msgstr "Otru"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "Casa"
+
+msgid "typework"
+msgstr "Trabayu"
+
+msgid "typeother"
+msgstr "Otru"
+
+msgid "typemobile"
+msgstr "Móvil"
+
+msgid "typemain"
+msgstr "Principal"
+
+msgid "typehomefax"
+msgstr "Fax de casa"
+
+msgid "typeworkfax"
+msgstr "Fax del trabayu"
+
+msgid "typecar"
+msgstr "Coche"
+
+msgid "typepager"
+msgstr "Buscapersones"
+
+msgid "typevideo"
+msgstr "Videu"
+
+msgid "typeassistant"
+msgstr "Auxiliar"
+
+msgid "typehomepage"
+msgstr "Páxina d'aniciu"
+
+msgid "typeblog"
+msgstr "Blogue"
+
+msgid "typeprofile"
+msgstr "Perfil"
+
+msgid "addfield"
+msgstr "Amestar campu..."
+
+msgid "addcontact"
+msgstr "Amestar contautu"
+
+msgid "editcontact"
+msgstr "Editar contautu"
+
+msgid "contacts"
+msgstr "Contautos"
+
+msgid "contactproperties"
+msgstr "Propiedaes del contautu"
+
+msgid "contactnameandorg"
+msgstr "Nome y organización"
+
+msgid "personalinfo"
+msgstr "Información personal"
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr "Semeya de contautu"
+
+msgid "edit"
+msgstr "Editar"
+
+msgid "cancel"
+msgstr "Encaboxar"
+
+msgid "save"
+msgstr "Guardar"
+
+msgid "delete"
+msgstr "Desaniciar"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Renomar"
+
+msgid "addphoto"
+msgstr "Amestar"
+
+msgid "replacephoto"
+msgstr "Trocar"
+
+msgid "uploadphoto"
+msgstr "Xubir semeya"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "Crear contautu nuevu"
+
+msgid "deletecontact"
+msgstr "Desaniciar los contautos esbillaos"
+
+msgid "composeto"
+msgstr "Redactar mensaxe a"
+
+msgid "contactsfromto"
+msgstr "Contautos $from a $to de $count"
+
+msgid "print"
+msgstr "Imprentar"
+
+msgid "export"
+msgstr "Esportar"
+
+msgid "exportall"
+msgstr "Esportar too"
+
+msgid "exportsel"
+msgstr "Esportar lo esbillao"
+
+msgid "exportvcards"
+msgstr "Esportar contautos en formatu vCard"
+
+msgid "newgroup"
+msgstr "Crear grupu nuevu"
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr "Renomar grupu"
+
+msgid "groupdelete"
+msgstr "Desaniciar grupu"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Desaniciar los contautos esbillaos del grupu"
+
+msgid "uponelevel"
+msgstr "Xunir un nivel"
+
+msgid "previouspage"
+msgstr "Amosar páxina postrera"
+
+msgid "firstpage"
+msgstr "Amosar primer páxina"
+
+msgid "nextpage"
+msgstr "Amosar páxina siguiente"
+
+msgid "lastpage"
+msgstr "Amosar páxina cabera"
+
+msgid "group"
+msgstr "Grupu"
+
+msgid "groups"
+msgstr "Grupos"
+
+msgid "listgroup"
+msgstr "Llistar miembros del grupu"
+
+msgid "personaladrbook"
+msgstr "Direiciones personales"
+
+msgid "searchsave"
+msgstr "Guardar gueta"
+
+msgid "searchdelete"
+msgstr "Desaniciar gueta"
+
+msgid "import"
+msgstr "Importar"
+
+msgid "importcontacts"
+msgstr "Importar contautos"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Amestar contautos a"
+
+msgid "importreplace"
+msgstr "Trocar el llibru de direiciones enteru"
+
+msgid "importgroups"
+msgstr "Importar asignaciones de grupu"
+
+msgid "importgroupsall"
+msgstr "Toos (crear grupos si ye necesario)"
+
+msgid "importgroupsexisting"
+msgstr "Namái pa los grupos esistentes"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Fecho"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Axustes pa"
+
+msgid "about"
+msgstr "Tocante a"
+
+msgid "preferences"
+msgstr "Preferencies"
+
+msgid "userpreferences"
+msgstr "Preferencies d'usuariu"
+
+msgid "editpreferences"
+msgstr "Editar preferencies d'usuariu"
+
+msgid "identities"
+msgstr "Identidaes"
+
+msgid "manageidentities"
+msgstr "Almisnitrar identidaes"
+
+msgid "newidentity"
+msgstr "Crear identidá nueva"
+
+msgid "addidentity"
+msgstr "Amestar identidça"
+
+msgid "editidentity"
+msgstr "Editar identidá"
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "Amosar HTML"
+
+msgid "defaultcharset"
+msgstr "Xuegu de caráuteres predetermináu"
+
+msgid "htmlmessage"
+msgstr "Mensaxe HTML"
+
+msgid "messagepart"
+msgstr "Parte"
+
+msgid "digitalsig"
+msgstr "Robla dixital"
+
+msgid "dateformat"
+msgstr "Formatu de data"
+
+msgid "timeformat"
+msgstr "Formatu d'hora"
+
+msgid "prettydate"
+msgstr "Dates prestoses"
+
+msgid "setdefault"
+msgstr "Reafitar"
+
+msgid "autodetect"
+msgstr "Auto"
+
+msgid "language"
+msgstr "Llingua"
+
+msgid "timezone"
+msgstr "Estaya horaria"
+
+msgid "pagesize"
+msgstr "Fileres per páxina"
+
+msgid "signature"
+msgstr "Robla"
+
+msgid "dstactive"
+msgstr "Cambéu horariu"
+
+msgid "showinextwin"
+msgstr "Abrir mensaxe nuna ventana nueva"
+
+msgid "composeextwin"
+msgstr "Redactar nuna ventana nueva"
+
+msgid "htmleditor"
+msgstr "Redactar el mensaxe en HTML"
+
+msgid "htmlonreply"
+msgstr "en rempuesta a mensaxe HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "en reunviu o rempuesta al mensaxe HTML"
+
+msgid "htmlsignature"
+msgstr "Robla HTML"
+
+msgid "showemail"
+msgstr "Amosar direición de corréu-e al amosar el nome"
+
+msgid "previewpane"
+msgstr "Amosar panel de previsualización"
+
+msgid "skin"
+msgstr "Tema de la interfaz"
+
+msgid "logoutclear"
+msgstr "Vaciar la papelera al zarrar la sesión"
+
+msgid "logoutcompact"
+msgstr "Compautar la bandexa d'entrada al zarrar la sesión"
+
+msgid "uisettings"
+msgstr "Interfaz d'usuariu"
+
+msgid "serversettings"
+msgstr "Axustes del sirvidor"
+
+msgid "mailboxview"
+msgstr "Vista del buzón"
+
+msgid "mdnrequests"
+msgstr "En petición de devolución del recibíu"
+
+msgid "askuser"
+msgstr "entrúgame"
+
+msgid "autosend"
+msgstr "unviar recibu"
+
+msgid "autosendknown"
+msgstr "unviar recibu a los mios contautos, d'otramiente entrúgame"
+
+msgid "autosendknownignore"
+msgstr "unviar recibu a los mios contautos, d'otramiente inorar"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "Conseñar el mensaxe como lleíu al desanicialu"
+
+msgid "flagfordeletion"
+msgstr "Conseñar el mensaxe pal desaniu en cuantes de desanicialu"
+
+msgid "skipdeleted"
+msgstr "Nun amosar los mensaxes desaniciaos"
+
+msgid "deletealways"
+msgstr "Si falla'l treslláu de los mensaxes a la Papelera, desanicialos"
+
+msgid "deletejunk"
+msgstr "Desaniciar direutamente el correú en Puxarra"
+
+msgid "showremoteimages"
+msgstr "Amosar imáxenes en llinia remotes"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "de remitentes conocíos"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "siempres"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "Amosar les imáxenes axuntaes embaxo'l mensaxe"
+
+msgid "autosavedraft"
+msgstr "Guardar borrador automáticamente"
+
+msgid "everynminutes"
+msgstr "cada $n minutu/os"
+
+msgid "refreshinterval"
+msgstr "Refrescar (comprobación de mensaxes nuevos, etc.)"
+
+msgid "never"
+msgstr "nunca"
+
+msgid "immediately"
+msgstr "de secute"
+
+msgid "messagesdisplaying"
+msgstr "Vista de mensaxes"
+
+msgid "messagescomposition"
+msgstr "Redaición de mensaxes"
+
+msgid "mimeparamfolding"
+msgstr "Nomes d'axuntos"
+
+msgid "2231folding"
+msgstr "RFC 2231 completu (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "RFC 2047 completu (otros)"
+
+msgid "force7bit"
+msgstr "Usar codificación MIME pa caráuteres de 8 bits"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "Opciones avanzaes"
+
+msgid "toggleadvancedoptions"
+msgstr "Camudar opciones avanzaes"
+
+msgid "focusonnewmessage"
+msgstr "Enfocar la ventana de restolación en mensaxes nuevos"
+
+msgid "checkallfolders"
+msgstr "Comprobar en toles carpetes mensaxes nuevos"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "Triba de fonte por defeutu del mensaxe HTML"
+
+msgid "mainoptions"
+msgstr "Opciones principales"
+
+msgid "browseroptions"
+msgstr "Opciones del restolador"
+
+msgid "section"
+msgstr "Seición"
+
+msgid "maintenance"
+msgstr "Caltenimientu"
+
+msgid "newmessage"
+msgstr "Mensaxe nuevu"
+
+msgid "signatureoptions"
+msgstr "Opciones de robla"
+
+msgid "whenreplying"
+msgstr "Cuando se respuenda"
+
+msgid "replyempty"
+msgstr "nun citar el mensaxe orixinal"
+
+msgid "replytopposting"
+msgstr "aniciar un mensaxe nuevu enriba l'orixinal"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "aniciar un mensaxe nuevu embaxo l'orixinal"
+
+msgid "replyremovesignature"
+msgstr "Desaniciar la robla orixinal del mensaxe cuando se respuenda"
+
+msgid "autoaddsignature"
+msgstr "Amestar robla automáticamente"
+
+msgid "newmessageonly"
+msgstr "namái mensaxe nuevu"
+
+msgid "replyandforwardonly"
+msgstr "namái rempuestes y reunvios"
+
+msgid "insertsignature"
+msgstr "Inxertar robla"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "dempués de $n segundos"
+
+msgid "reqmdn"
+msgstr "Solicitar siempres un recibu"
+
+msgid "reqdsn"
+msgstr "Solicitar siempres la notificación d'estáu d'entrega"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Allugar les rempuestes na carpeta del mensaxe que tea respondiéndose"
+
+msgid "defaultabook"
+msgstr "Llibreta de direiciones por defeutu"
+
+msgid "autocompletesingle"
+msgstr "Saltar direiciones de corréu alternatives nel autocompletáu"
+
+msgid "listnamedisplay"
+msgstr "Llistar contautos como"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Comprobar ortografía enantes d'unviar un mensaxe"
+
+msgid "spellcheckoptions"
+msgstr "Opciones d'ortografía"
+
+msgid "spellcheckignoresyms"
+msgstr "Inorar pallabres con símbolos"
+
+msgid "spellcheckignorenums"
+msgstr "Inorar pallabres con númberos"
+
+msgid "spellcheckignorecaps"
+msgstr "Inorar pallabres con too mayúscules"
+
+msgid "addtodict"
+msgstr "Amestar al diccionariu"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Rexistrar xestor de protocolu pa enllaces 'mailto:'"
+
+msgid "standardwindows"
+msgstr "Remanar ventanos emerxentes como ventanes estándar"
+
+msgid "forwardmode"
+msgstr "Reunviu de mensaxes"
+
+msgid "inline"
+msgstr "en llinia"
+
+msgid "asattachment"
+msgstr "como axuntu"
+
+msgid "replyallmode"
+msgstr "Aición por defeutu del botón [Responder too]"
+
+msgid "replyalldefault"
+msgstr "responder a toos"
+
+msgid "replyalllist"
+msgstr "responder namái a la llista de Corréu (si s'alcuentra)"
+
+msgid "allmessages"
+msgstr "tolos mensaxes"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Carpeta"
+
+msgid "folders"
+msgstr "Carpetes"
+
+msgid "foldername"
+msgstr "Nome de carpeta"
+
+msgid "subscribed"
+msgstr "Soscrita"
+
+msgid "messagecount"
+msgstr "Mensaxes"
+
+msgid "create"
+msgstr "Crear"
+
+msgid "createfolder"
+msgstr "Crear una carpeta nueva"
+
+msgid "managefolders"
+msgstr "Alministrar carpetes"
+
+msgid "specialfolders"
+msgstr "Carpetes especiales"
+
+msgid "properties"
+msgstr "Propiedaes"
+
+msgid "folderproperties"
+msgstr "Propiedaes de la carpeta"
+
+msgid "parentfolder"
+msgstr "Carpeta pá"
+
+msgid "location"
+msgstr "Llocalización"
+
+msgid "info"
+msgstr "Información"
+
+msgid "getfoldersize"
+msgstr "Primi pa saber el tamañu de la carpeta"
+
+msgid "changesubscription"
+msgstr "Primi pa camudar la soscripción"
+
+msgid "foldertype"
+msgstr "Triba de carpeta"
+
+msgid "personalfolder"
+msgstr "Carpeta privada"
+
+msgid "otherfolder"
+msgstr "Carpeta d'otru usuariu"
+
+msgid "sharedfolder"
+msgstr "Carpeta pública"
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Ordenar per"
+
+msgid "sortasc"
+msgstr "Orde ascendente"
+
+msgid "sortdesc"
+msgstr "Orde descendente"
+
+msgid "undo"
+msgstr "Desfacer"
+
+msgid "installedplugins"
+msgstr "Complementos instalaos"
+
+msgid "plugin"
+msgstr "Complementu"
+
+msgid "version"
+msgstr "Versión"
+
+msgid "source"
+msgstr "Fonte"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Llicencia"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Consiguir sofitu"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Inglés"
+
+msgid "westerneuropean"
+msgstr "Européu occidental"
+
+msgid "easterneuropean"
+msgstr "Européu oriental"
+
+msgid "southeasterneuropean"
+msgstr "Européu suroriental"
+
+msgid "baltic"
+msgstr "Bálticu"
+
+msgid "cyrillic"
+msgstr "Cirílicu"
+
+msgid "arabic"
+msgstr "Árabe"
+
+msgid "greek"
+msgstr "Griegu"
+
+msgid "hebrew"
+msgstr "Hebréu"
+
+msgid "turkish"
+msgstr "Turcu"
+
+msgid "nordic"
+msgstr "Nórdicu"
+
+msgid "thai"
+msgstr "Tailandés"
+
+msgid "celtic"
+msgstr "Celta"
+
+msgid "vietnamese"
+msgstr "Vietnamita"
+
+msgid "japanese"
+msgstr "Xaponés"
+
+msgid "korean"
+msgstr "Coreanu"
+
+msgid "chinese"
+msgstr "Chinu"
+
+msgid "arialabeltopnav"
+msgstr "Control de ventana"
+
+msgid "arialabeltasknav"
+msgstr "Xeres d'aplicación"
+
+msgid "arialabeltoolbar"
+msgstr "Barra de ferramientes d'aplicación"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "Xera activa"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Flitru de llistáy de correos"
+
+msgid "arialabelmailsearchform"
+msgstr "Formulariu de gueta de mensaxe de corréu"
+
+msgid "arialabelcontactsearchform"
+msgstr "Formulariu de gueta de contautos"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Entrada de gueta de correos"
+
+msgid "arialabelquicksearchbox"
+msgstr "Entrada de gueta"
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr "Esbilla de carpeta de corréu"
+
+msgid "arialabelmessagelist"
+msgstr "Llistáu de mensaxes de corréu"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Vista previa de mensaxe"
+
+msgid "arialabelmailboxmenu"
+msgstr "Menú d'aiciones de carpeta"
+
+msgid "arialabellistselectmenu"
+msgstr "Menú d'esbilla de llista"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Menú de llistáu de filos"
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr "Diálogu d'impotación de mensaxe"
+
+msgid "arialabelmessagenav"
+msgstr "Restolación de mensaxe"
+
+msgid "arialabelmessagebody"
+msgstr "Cuerpu de mensaxe"
+
+msgid "arialabelmessageactions"
+msgstr "Aiciones de mensaxe"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Formulariu de gueta de contautos"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Entrada de gueta de contautu"
+
+msgid "arialabelmessageheaders"
+msgstr "Testeres de mensaxe"
+
+msgid "arialabelforwardingoptions"
+msgstr "Opciones de reunviu"
+
+msgid "arialabelreplyalloptions"
+msgstr "Opciones de responder a toos"
+
+msgid "arialabelmoremessageactions"
+msgstr "Aiciones de más mensaxes"
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Conseñar los mensaxes esbillaos como..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Opciones de redaición"
+
+msgid "arialabelresponsesmenu"
+msgstr "Menú de rempuestes conservaes"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Formulariu de xuba d'axuntu"
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "Vista previa d'axuntu"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Llista de contutos y grupos pa esbillar como destinatarios"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Opciones d'esportación de contautu"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Opciones de llibru de direiciones/grupu"
+
+msgid "arialabelpreferencesform"
+msgstr "Formulariu de preferencies"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Formulariu d'edición d'identidá"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Formulariu d'edición de rempuesta"
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr "Restolación de tecláu de llista"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Abrir el contautu esbilláu/enfocáu."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "¡Hebo un fallu!"
+
+msgid "messages.loginfailed"
+msgstr "Contraseña o nome d'usuariu incorreutu."
+
+msgid "messages.cookiesdisabled"
+msgstr "El to restolador nun aceuta cookies."
+
+msgid "messages.sessionerror"
+msgstr "La to sesión nun val o caducó."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "Fallu de conexón col sirvidor IMAP"
+
+msgid "messages.servererror"
+msgstr "¡Fallu del sirvidor!"
+
+msgid "messages.servererrormsg"
+msgstr "Fallu de sirvidor: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr "¡Fallu de conexón (Fallu al algamar el sirvidor)!"
+
+msgid "messages.dberror"
+msgstr "¡Fallu na base de datos!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "¡Bloquióse'l ventanu emerxente!"
+
+msgid "messages.requesttimedout"
+msgstr "Caducó'l tiempu de rempuesta."
+
+msgid "messages.errorreadonly"
+msgstr "Imposible facer la operación. La bandexa ye de namái-llectura."
+
+msgid "messages.errornoperm"
+msgstr "Imposible facer la operación. Denegóse'l permisu."
+
+msgid "messages.erroroverquota"
+msgstr "Nun pudo completase la operación. Nun queda espaciu nel discu."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Nun queda espaciu nel discu. Usa Shift+Supr pa desaniciar un mensaxe."
+
+msgid "messages.invalidrequest"
+msgstr "Fallu de la solicitú. Nun se guardaron datos."
+
+msgid "messages.invalidhost"
+msgstr "Nome de sirvidor inválidu."
+
+msgid "messages.nomessagesfound"
+msgstr "Nun s'atoparon mensaxes na bandexa"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "La bandexa de corréu ta balera"
+
+msgid "messages.nomessages"
+msgstr "Nun hai mensaxes"
+
+msgid "messages.refreshing"
+msgstr "Anovando..."
+
+msgid "messages.loading"
+msgstr "Cargando..."
+
+msgid "messages.uploading"
+msgstr "Xubiendo ficheru"
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr "Xubiendo ficheros..."
+
+msgid "messages.loadingdata"
+msgstr "Cargando datos..."
+
+msgid "messages.checkingmail"
+msgstr "A la gueta de mensaxes nuevos..."
+
+msgid "messages.sendingmessage"
+msgstr "Unviando mensaxe..."
+
+msgid "messages.messagesent"
+msgstr "Unvióse'l mensaxe."
+
+msgid "messages.savingmessage"
+msgstr "Guardar mensaxe..."
+
+msgid "messages.messagesaved"
+msgstr "El mensaxe guardóse en borradores"
+
+msgid "messages.successfullysaved"
+msgstr "Guardóse correchamente"
+
+msgid "messages.savingresponse"
+msgstr "Guardando mensaxe de rempuesta..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "¿De xuru quies desaniciar esti testu de rempuesta?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "El contautu amestóse correchamente a la llibreta de direiciones"
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "Yá esiste un contautu col mesmu nome."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Pa protexer la to privacidá, torgáronse les imáxenes esternes nesti mensaxe."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Esti ye un mensaxe cifráu y nun soi a amosalu. ¡Sentímoslo!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Nun doi con dengún contautu"
+
+msgid "messages.contactnotfound"
+msgstr "Nun s'atopa'l contautu solicitáu."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Falló l'unviu del mensaxe"
+
+msgid "messages.senttooquickly"
+msgstr "Por favor espera $sec segundu/os enantes d'unviar esti mensaxe."
+
+msgid "messages.errorsavingsent"
+msgstr "Hebo un fallu al guardar el mensaxe unviáu."
+
+msgid "messages.errorsaving"
+msgstr "Hebo un fallu al guardar."
+
+msgid "messages.errormoving"
+msgstr "Nun pudo movese el/los mensaxe(s)."
+
+msgid "messages.errorcopying"
+msgstr "Nun pudo copiase el/los mensaxe(s)."
+
+msgid "messages.errordeleting"
+msgstr "Nun pudo desaniciase el/los mensaxe(s)"
+
+msgid "messages.errormarking"
+msgstr "Nun pudo marcase el/los mensaxe(s)"
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "¿Daveres que quies desaniciar el contautu(os) seleicionáu(os)?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "¿Daveres que quies desaniciar el grupu seleicionáu?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "¿Tas seguru de desaniciar los mensaxes que marcaste?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "¿Daveres que quies desaniciar esta bandexa?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "¿Daveres que quies desaniciar tolos mensaxes d'esta bandexa?"
+
+msgid "messages.contactdeleting"
+msgstr "Desaniciando contautu(os)..."
+
+msgid "messages.groupdeleting"
+msgstr "Desaniciando grupu..."
+
+msgid "messages.folderdeleting"
+msgstr "Desaniciando la bandexa..."
+
+msgid "messages.foldermoving"
+msgstr "Moviendo la bandexa..."
+
+msgid "messages.foldersubscribing"
+msgstr "Soscribiendo bandexa..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Desoscribiendo bandexa..."
+
+msgid "messages.formincomplete"
+msgstr "Tienes de rellenar tolos campos del formulariu."
+
+msgid "messages.noemailwarning"
+msgstr "Por favor, introduz un corréu válidu."
+
+msgid "messages.nonamewarning"
+msgstr "Por favor, introduz un nome."
+
+msgid "messages.nopagesizewarning"
+msgstr "Por favor, introduz un tamañu de páxina."
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Por favor, introduz polo menos un destinatariu"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "El campo \"Asuntu\" ta vacíu. ¿Quies rellenalu agora?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "¿Quies unviar esti mensaxe ensin testu?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Alcontróse un mensaxe redactáu anterior ensin unviar.n\\nAsuntu: "
+"$subject\\nGuardáu: $date\\n\\n¿Quies restaurar esti mensaxe?"
+
+msgid "messages.nosearchname"
+msgstr "Por favor, introduz un nome o una direición de corréu-e."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Entá nun se xubieron tolos axuntos. Por favor, espera o encaboxa la xuba."
+
+msgid "messages.searchsuccessful"
+msgstr "Atopáronse $nr mensaxes."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Atopáronse $nr contautos."
+
+msgid "messages.searchnomatch"
+msgstr "Nun s'atopó dengún resultáu"
+
+msgid "messages.searching"
+msgstr "A la gueta..."
+
+msgid "messages.checking"
+msgstr "Comprobando..."
+
+msgid "messages.stillsearching"
+msgstr "Guetando entá..."
+
+msgid "messages.nospellerrors"
+msgstr "Nun s'atoparon errores ortográficos"
+
+msgid "messages.folderdeleted"
+msgstr "Desanicióse la bandexa correchamente"
+
+msgid "messages.foldersubscribed"
+msgstr "Soscritu a bandexa correchamente."
+
+msgid "messages.folderunsubscribed"
+msgstr "Soscripción a bandexa anulada correchamente."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Desanicióse correchamente"
+
+msgid "messages.converting"
+msgstr "Desaniciando'l formatu del mensaxe..."
+
+msgid "messages.messageopenerror"
+msgstr "Nun pue descargase'l mensaxe del sirvidor."
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "Fallu al xubir ficheros."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "El ficheru ye más grande de lo permitío ($size)"
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "$nr contautos copiaos correchamente."
+
+msgid "messages.movesuccess"
+msgstr "$nr contautos movíos correchamente."
+
+msgid "messages.copyerror"
+msgstr "Nun pudo copiase dengún contautu."
+
+msgid "messages.moveerror"
+msgstr "Nun pudo movese dengún contautu."
+
+msgid "messages.sourceisreadonly"
+msgstr "Esta direición ye de namái-llectura"
+
+msgid "messages.errorsavingcontact"
+msgstr "Nun pudo guardase la direición del contautu"
+
+msgid "messages.movingmessage"
+msgstr "Moviendo mensaxe(s)..."
+
+msgid "messages.copyingmessage"
+msgstr "Copiando mensaxe(s)..."
+
+msgid "messages.copyingcontact"
+msgstr "Copiando contautu(os)..."
+
+msgid "messages.movingcontact"
+msgstr "Moviendo contautu(os)..."
+
+msgid "messages.deletingmessage"
+msgstr "Desaniciando mensaxe(s)..."
+
+msgid "messages.markingmessage"
+msgstr "Marcando mensaxe(s)..."
+
+msgid "messages.addingmember"
+msgstr "Amestando contautu(os) al grupu..."
+
+msgid "messages.removingmember"
+msgstr "Quitando contautu(os) del grupu..."
+
+msgid "messages.receiptsent"
+msgstr "Unvióse correchamente l'avisu de llectura."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Nun pudo unviase l'avisu de llectura."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "¿Daveres que quies desaniciar esta identidá?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Nun pue desaniciase esa identidá porque ye la última."
+
+msgid "messages.forbiddencharacter"
+msgstr "El nome de la bandexa tien un caráuter non validu."
+
+msgid "messages.selectimportfile"
+msgstr "Por favor escueyi'l ficheru que quies xubir"
+
+msgid "messages.addresswriterror"
+msgstr "Nun pue escribise na llibreta de direiciones seleicionada."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Amestáronse correutamente los contautos a esti grupu."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Desaniciáronse correutamente los contautos a esti grupu."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Nun hai cambeos n'asignación de grupos."
+
+msgid "messages.importwait"
+msgstr "Importando, dame un minutín..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"¡La importación falló! El ficheru unviáu nun ye un ficheru válidu "
+"d'importación."
+
+msgid "messages.importconfirm"
+msgstr "<b>Importáronse correchamente $inserted contautos</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr mensaxes importaos con éxitu"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"¡Falló la importación! El ficheru xubíu nun ye un ficheru válidu de mensaxe "
+"o buzón de corréu"
+
+msgid "messages.opnotpermitted"
+msgstr "¡Nun tienes permisu pa facelo!"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+"Cambear la triba d'editor pue causar perda del formatu del testu. ¿Deseyes "
+"continuar?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Hai un fallu grave de configuración. Contauta col alministrador de secute. "
+"<b>Nun pue unviase'l mensaxe</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Fallu SMTP ($code): Fallu de conexón col sirvidor"
+
+msgid "messages.smtpautherror"
+msgstr "Fallu SMTP ($code): Fallu d'autorización"
+
+msgid "messages.smtpfromerror"
+msgstr "Fallu SMTP ($code): Fallu al afitar l'emisor \"$from\" ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "Fallu SMTP ($code): Fallu al amestar el destinatariu \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "Fallu SMTP: Nun pue amosase la llista de destinatarios."
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "Fallu SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+"Hai munchos destinatarios. Amenorga'l númberu de destinatarios a $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "El númberu de miembros del grupu perpasa'l máximu de $max."
+
+msgid "messages.internalerror"
+msgstr "Hebo un fallu internu. Por favor, vuelvi intentalo."
+
+msgid "messages.contactdelerror"
+msgstr "Nun pudo desaniciase el/los contautu(os)."
+
+msgid "messages.contactdeleted"
+msgstr "Contautu(os) desaniciáu(os) correchamente."
+
+msgid "messages.contactrestoreerror"
+msgstr "Nun pudieron restaurase los contautos desaniciaos."
+
+msgid "messages.contactrestored"
+msgstr "Los contautos restauráronse con éxitu."
+
+msgid "messages.groupdeleted"
+msgstr "Grupu desaniciáu correchamente."
+
+msgid "messages.grouprenamed"
+msgstr "Grupu renomáu correchamente."
+
+msgid "messages.groupcreated"
+msgstr "Grupu creáu correchamente."
+
+msgid "messages.savedsearchdeleted"
+msgstr "La busca guardada, desanicióse con éxitu."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Nun pudo desaniciase la busca guardada."
+
+msgid "messages.savedsearchcreated"
+msgstr "Guardóse correchamente la busca."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Nun pudo guardase la busca."
+
+msgid "messages.messagedeleted"
+msgstr "Mensaxe(s) desaniciaos correchamente."
+
+msgid "messages.messagemoved"
+msgstr "Mensaxe(s) movíos correchamente."
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "Mensaxe(s) copiaos correchamente."
+
+msgid "messages.messagemarked"
+msgstr "Mensaxe(s) marcaos correchamente."
+
+msgid "messages.autocompletechars"
+msgstr "Introduz a lo menso $min caráuteres p'autocompletar."
+
+msgid "messages.autocompletemore"
+msgstr "Atopáronse más coincidencies. Por favor, escribi más caráuteres."
+
+msgid "messages.namecannotbeempty"
+msgstr "Hai que poner el nome."
+
+msgid "messages.nametoolong"
+msgstr "El nome ye abondo llargu."
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr "Bandexa anovada correchamente."
+
+msgid "messages.foldercreated"
+msgstr "Bandexa creada correchamente."
+
+msgid "messages.invalidimageformat"
+msgstr "Nun ye un formatu d'imaxe válidu."
+
+msgid "messages.mispellingsfound"
+msgstr "Deteutáronse fallos ortográficos nel mensaxe."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Nun puede crease/movese la carpeta a la carpeta superior elexida. Nun tienes"
+" permisos d'accesu."
+
+msgid "messages.messagetoobig"
+msgstr "Esta parte del mensaxe ye enforma grande pa procesala"
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Avisu: ¡esti serviciu de webmail necesita Javascript! Pa poder usalu, "
+"habilita'l soporte de Javascript nel to navegador, por favor."
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

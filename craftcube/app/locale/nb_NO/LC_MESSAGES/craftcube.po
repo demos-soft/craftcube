@@ -1,0 +1,2903 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Velkommen til $product"
+
+msgid "username"
+msgstr "Brukernavn"
+
+msgid "password"
+msgstr "Passord"
+
+msgid "server"
+msgstr "Tjener"
+
+msgid "login"
+msgstr "Logg inn"
+
+msgid "oauthlogin"
+msgstr "Logg inn med $provider"
+
+msgid "menu"
+msgstr "Meny"
+
+msgid "logout"
+msgstr "Logg ut"
+
+msgid "mail"
+msgstr "E-post"
+
+msgid "settings"
+msgstr "Innstillinger"
+
+msgid "addressbook"
+msgstr "Adressebok"
+
+msgid "darkmode"
+msgstr "Mørkt modus"
+
+msgid "lightmode"
+msgstr "Lyst modus"
+
+msgid "inbox"
+msgstr "Innboks"
+
+msgid "drafts"
+msgstr "Kladd"
+
+msgid "sent"
+msgstr "Sendt"
+
+msgid "trash"
+msgstr "Slettet"
+
+msgid "junk"
+msgstr "Spam"
+
+msgid "show_real_foldernames"
+msgstr "Vis orginale navn for spesielle mapper"
+
+msgid "subject"
+msgstr "Emne"
+
+msgid "from"
+msgstr "Avsender"
+
+msgid "sender"
+msgstr "Avsender"
+
+msgid "to"
+msgstr "Mottaker"
+
+msgid "cc"
+msgstr "Kopi til"
+
+msgid "bcc"
+msgstr "Blindkopi til"
+
+msgid "replyto"
+msgstr "Svar til"
+
+msgid "followupto"
+msgstr "Oppfølging til"
+
+msgid "date"
+msgstr "Dato"
+
+msgid "size"
+msgstr "Størrelse"
+
+msgid "priority"
+msgstr "Prioritet"
+
+msgid "organization"
+msgstr "Organisasjon"
+
+msgid "readstatus"
+msgstr "Lese status"
+
+msgid "listoptions"
+msgstr "List muligheter"
+
+msgid "listoptionstitle"
+msgstr "Listealternativer"
+
+msgid "mailboxlist"
+msgstr "Mapper"
+
+msgid "messagesfromto"
+msgstr "Meldinger $from til $to av $count"
+
+msgid "threadsfromto"
+msgstr "Tråder $from til $to av $count"
+
+msgid "messagenrof"
+msgstr "Melding $nr av $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to av $count"
+
+msgid "copy"
+msgstr "Kopier"
+
+msgid "move"
+msgstr "Flytt"
+
+msgid "moveto"
+msgstr "Flytt til..."
+
+msgid "copyto"
+msgstr "Kopier til..."
+
+msgid "download"
+msgstr "Last ned"
+
+msgid "open"
+msgstr "Åpen"
+
+msgid "showattachment"
+msgstr "Vis"
+
+msgid "showanyway"
+msgstr "Vis likevel"
+
+msgid "filename"
+msgstr "Filnavn"
+
+msgid "filesize"
+msgstr "Filstørrelse"
+
+msgid "addtoaddressbook"
+msgstr "Legg til i adressebok"
+
+msgid "sun"
+msgstr "Søn"
+
+msgid "mon"
+msgstr "Man"
+
+msgid "tue"
+msgstr "Tir"
+
+msgid "wed"
+msgstr "Ons"
+
+msgid "thu"
+msgstr "Tor"
+
+msgid "fri"
+msgstr "Fre"
+
+msgid "sat"
+msgstr "Lør"
+
+msgid "sunday"
+msgstr "Søndag"
+
+msgid "monday"
+msgstr "Mandag"
+
+msgid "tuesday"
+msgstr "Tirsdag"
+
+msgid "wednesday"
+msgstr "Onsdag"
+
+msgid "thursday"
+msgstr "Torsdag"
+
+msgid "friday"
+msgstr "Fredag"
+
+msgid "saturday"
+msgstr "Lørdag"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "Mai"
+
+msgid "jun"
+msgstr "Jun"
+
+msgid "jul"
+msgstr "Jul"
+
+msgid "aug"
+msgstr "Aug"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Des"
+
+msgid "longjan"
+msgstr "Januar"
+
+msgid "longfeb"
+msgstr "Februar"
+
+msgid "longmar"
+msgstr "Mars"
+
+msgid "longapr"
+msgstr "April"
+
+msgid "longmay"
+msgstr "Mai"
+
+msgid "longjun"
+msgstr "Juni"
+
+msgid "longjul"
+msgstr "Juli"
+
+msgid "longaug"
+msgstr "August"
+
+msgid "longsep"
+msgstr "September"
+
+msgid "longoct"
+msgstr "Oktober"
+
+msgid "longnov"
+msgstr "November"
+
+msgid "longdec"
+msgstr "Desember"
+
+msgid "today"
+msgstr "I dag"
+
+msgid "refresh"
+msgstr "Oppdater"
+
+msgid "checkmail"
+msgstr "Se etter nye meldinger"
+
+msgid "compose"
+msgstr "Skriv ny e-post"
+
+msgid "writenewmessage"
+msgstr "Opprett ny e-post"
+
+msgid "reply"
+msgstr "Svar"
+
+msgid "replytomessage"
+msgstr "Svar på denne e-posten"
+
+msgid "replytoallmessage"
+msgstr "Svar til alle mottakere"
+
+msgid "replyall"
+msgstr "Svar alle"
+
+msgid "replylist"
+msgstr "Svarliste"
+
+msgid "forward"
+msgstr "Videresend"
+
+msgid "forwardinline"
+msgstr "Videresend i melding"
+
+msgid "forwardattachment"
+msgstr "Vidresend som vedlegg"
+
+msgid "forwardmessage"
+msgstr "Videresend denne e-posten"
+
+msgid "bouncemsg"
+msgstr "Send på nytt (bounce)"
+
+msgid "bounce"
+msgstr "Send på nytt"
+
+msgid "deletemessage"
+msgstr "Slett e-posten"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Flytt e-posten til søppel"
+
+msgid "printmessage"
+msgstr "Skriv ut denne e-posten"
+
+msgid "previousmessage"
+msgstr "Vis forrige melding"
+
+msgid "firstmessage"
+msgstr "Vis første melding"
+
+msgid "nextmessage"
+msgstr "Vis neste melding"
+
+msgid "lastmessage"
+msgstr "Vis siste melding"
+
+msgid "backtolist"
+msgstr "Tilbake til e-postlisten"
+
+msgid "viewsource"
+msgstr "Vis kilde"
+
+msgid "mark"
+msgstr "Merke"
+
+msgid "markmessages"
+msgstr "Merk meldinger"
+
+msgid "markread"
+msgstr "Som lest"
+
+msgid "markunread"
+msgstr "Som ulest"
+
+msgid "markflagged"
+msgstr "Som flagget"
+
+msgid "markunflagged"
+msgstr "Som uflagget"
+
+msgid "markundeleted"
+msgstr "Som ikke slettet"
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Flere handlinger..."
+
+msgid "markallread"
+msgstr "Merk alle som lest"
+
+msgid "folders-cur"
+msgstr "Kun markert mappe"
+
+msgid "folders-sub"
+msgstr "Markert mappe og dens undermapper"
+
+msgid "folders-all"
+msgstr "Alle mapper"
+
+msgid "more"
+msgstr "Mer"
+
+msgid "back"
+msgstr "Tilbake"
+
+msgid "options"
+msgstr "Alternativer"
+
+msgid "composeoptions"
+msgstr "Skrivealternativer"
+
+msgid "optionsandattachments"
+msgstr "Alternativer og vedlegg"
+
+msgid "actions"
+msgstr "Handlinger"
+
+msgid "first"
+msgstr "Første"
+
+msgid "last"
+msgstr "Siste"
+
+msgid "previous"
+msgstr "Forrige"
+
+msgid "next"
+msgstr "Neste"
+
+msgid "select"
+msgstr "Velg"
+
+msgid "selection"
+msgstr "Valg"
+
+msgid "all"
+msgstr "Alle"
+
+msgid "none"
+msgstr "Ingen"
+
+msgid "currpage"
+msgstr "Gjeldende side"
+
+msgid "isread"
+msgstr "Lese"
+
+msgid "unread"
+msgstr "Uleste"
+
+msgid "flagged"
+msgstr "Flagget"
+
+msgid "unflagged"
+msgstr "Ikke flagget"
+
+msgid "unanswered"
+msgstr "Ubesvarte"
+
+msgid "withattachment"
+msgstr "Med vedlegg"
+
+msgid "deleted"
+msgstr "Slettet"
+
+msgid "undeleted"
+msgstr "Ikke slettet"
+
+msgid "replied"
+msgstr "Besvart"
+
+msgid "forwarded"
+msgstr "Videresendt"
+
+msgid "invert"
+msgstr "Inverter"
+
+msgid "filter"
+msgstr "Filter"
+
+msgid "list"
+msgstr "Liste"
+
+msgid "threads"
+msgstr "Tråder"
+
+msgid "expand-all"
+msgstr "Utvid alle"
+
+msgid "expand-unread"
+msgstr "Utvid uleste"
+
+msgid "collapse-all"
+msgstr "Skjul alle"
+
+msgid "threaded"
+msgstr "Trådet"
+
+msgid "showunread"
+msgstr "Vis uleste meldinger"
+
+msgid "autoexpand_threads"
+msgstr "Utvid tråder"
+
+msgid "do_expand"
+msgstr "alle tråder"
+
+msgid "expand_only_unread"
+msgstr "kun med uleste meldinger"
+
+msgid "fromto"
+msgstr "Avsender/Mottaker"
+
+msgid "flag"
+msgstr "Flagg"
+
+msgid "attachment"
+msgstr "Vedlegg"
+
+msgid "nonesort"
+msgstr "Ingen"
+
+msgid "sentdate"
+msgstr "Dato sendt"
+
+msgid "arrival"
+msgstr "Dato mottatt"
+
+msgid "asc"
+msgstr "stigende"
+
+msgid "desc"
+msgstr "synkende"
+
+msgid "listcolumns"
+msgstr "Listekolonner"
+
+msgid "listsorting"
+msgstr "Sorteringskolonne"
+
+msgid "listorder"
+msgstr "Sorteringsrekkefølge"
+
+msgid "listmode"
+msgstr "Listevisningsmodus"
+
+msgid "lmode"
+msgstr "Listemodus"
+
+msgid "layout"
+msgstr "Oppsett"
+
+msgid "layoutwidescreen"
+msgstr "Bredskjerm"
+
+msgid "layoutdesktop"
+msgstr "Skrivebord"
+
+msgid "layoutlist"
+msgstr "Liste"
+
+msgid "layoutwidescreendesc"
+msgstr "Bredskjerm (3 kolonner)"
+
+msgid "layoutdesktopdesc"
+msgstr "Skrivebord (bred liste og forhåndsvisning av melding under)"
+
+msgid "layoutlistdesc"
+msgstr "Liste (ingen epost forhåndsvisning)"
+
+msgid "folderactions"
+msgstr "Mappehandlinger..."
+
+msgid "compact"
+msgstr "Rydd opp"
+
+msgid "empty"
+msgstr "Tøm"
+
+msgid "importmessages"
+msgstr "Importer meldinger"
+
+msgid "mailimportdesc"
+msgstr ""
+"Du kan laste opp epost som filer i <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> eller "
+"<a href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> format."
+
+msgid "mailimportzip"
+msgstr "Flere filer kan komprimeres til et zip-arkiv."
+
+msgid "quota"
+msgstr "Plassforbruk"
+
+msgid "unknown"
+msgstr "ukjent"
+
+msgid "unlimited"
+msgstr "ubegrenset"
+
+msgid "quotatype"
+msgstr "Kvotetype"
+
+msgid "quotatotal"
+msgstr "Grense"
+
+msgid "quotaused"
+msgstr "Benyttet"
+
+msgid "quotastorage"
+msgstr "Lagringsplass"
+
+msgid "quotamessage"
+msgstr "Antall meldinger"
+
+msgid "shortheaderdate"
+msgstr "På den $date"
+
+msgid "shortheaderto"
+msgstr "Til $to på den $date"
+
+msgid "shortheaderfrom"
+msgstr "Fra $from på den $date"
+
+msgid "quicksearch"
+msgstr "Hurtigsøk"
+
+msgid "searchplaceholder"
+msgstr "Søk..."
+
+msgid "resetsearch"
+msgstr "Nullstill søk"
+
+msgid "searchmod"
+msgstr "Søke felt"
+
+msgid "msgtext"
+msgstr "Hele meldingen"
+
+msgid "body"
+msgstr "Meldingstekst"
+
+msgid "type"
+msgstr "Type"
+
+msgid "namex"
+msgstr "Navn"
+
+msgid "searchscope"
+msgstr "Omfanget"
+
+msgid "currentfolder"
+msgstr "Den nåværende mappen"
+
+msgid "subfolders"
+msgstr "Dette og undermappene"
+
+msgid "allfolders"
+msgstr "Alle mapper"
+
+msgid "searchinterval-1W"
+msgstr "eldre enn en uke"
+
+msgid "searchinterval-1M"
+msgstr "eldre enn en måned"
+
+msgid "searchinterval-1Y"
+msgstr "eldre enn ett år"
+
+msgid "searchinterval1W"
+msgstr "yngre enn en uke"
+
+msgid "searchinterval1M"
+msgstr "yngre enn en måned"
+
+msgid "searchinterval1Y"
+msgstr "yngre enn ett år"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Åpne i nytt vindu"
+
+msgid "emlsave"
+msgstr "Last ned (.eml)"
+
+msgid "changeformattext"
+msgstr "Vis i ren tekst"
+
+msgid "changeformathtml"
+msgstr "Vis i HTML"
+
+msgid "editasnew"
+msgstr "Rediger som ny"
+
+msgid "send"
+msgstr "Send."
+
+msgid "sendmessage"
+msgstr "Send e-posten"
+
+msgid "savemessage"
+msgstr "Lagre kladd"
+
+msgid "addattachment"
+msgstr "Vedlegg"
+
+msgid "charset"
+msgstr "Tegnsett"
+
+msgid "editortype"
+msgstr "Format"
+
+msgid "returnreceipt"
+msgstr "Be om kvittering"
+
+msgid "dsn"
+msgstr "Leveringsstatus varsling"
+
+msgid "keepformatting"
+msgstr "Beholde formateringen"
+
+msgid "mailreplyintro"
+msgstr "Den $date, skrev $sender:"
+
+msgid "originalmessage"
+msgstr "Opprinnelig melding"
+
+msgid "selectimage"
+msgstr "Velg bilde"
+
+msgid "addimage"
+msgstr "Legg til bilde"
+
+msgid "selectmedia"
+msgstr "Velg film"
+
+msgid "addmedia"
+msgstr "Legg til film"
+
+msgid "encrypt"
+msgstr "Krypter"
+
+msgid "encryptmessage"
+msgstr "Krypter melding"
+
+msgid "encryptmessagemailvelope"
+msgstr "Krypter melding med Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Importer offentlige nøkler"
+
+msgid "encryptedsendialog"
+msgstr "Sender kryptert melding"
+
+msgid "encryptandsign"
+msgstr "Krypter og signer"
+
+msgid "keyid"
+msgstr "Nøkkel ID"
+
+msgid "keylength"
+msgstr "Bits"
+
+msgid "keyexpired"
+msgstr "Utløpt"
+
+msgid "keyrevoked"
+msgstr "Tilbakekalt"
+
+msgid "bccinstead"
+msgstr "Bruk blindkopi"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Sett inn"
+
+msgid "insertcontact"
+msgstr "Sett inn kontakt(er)"
+
+msgid "recipient"
+msgstr "Mottaker"
+
+msgid "recipientedit"
+msgstr "Rediger mottaker"
+
+msgid "editidents"
+msgstr "Endre identiteter"
+
+msgid "spellcheck"
+msgstr "Stavekontroll"
+
+msgid "checkspelling"
+msgstr "Stavekontroll"
+
+msgid "resumeediting"
+msgstr "Fortsett redigering"
+
+msgid "revertto"
+msgstr "Tilbake til"
+
+msgid "restore"
+msgstr "Gjenopprett"
+
+msgid "restoremessage"
+msgstr "Gjenopprett melding?"
+
+msgid "ignore"
+msgstr "Ignorer"
+
+msgid "responses"
+msgstr "Svar"
+
+msgid "insertresponse"
+msgstr "Sett inn et svar"
+
+msgid "manageresponses"
+msgstr "Rediger svar"
+
+msgid "newresponse"
+msgstr "Opprett nytt svar"
+
+msgid "addresponse"
+msgstr "Legg til svar"
+
+msgid "editresponse"
+msgstr "Rediger svar"
+
+msgid "editresponses"
+msgstr "Rediger svar"
+
+msgid "responsename"
+msgstr "Navn"
+
+msgid "responsetext"
+msgstr "Svar tekst"
+
+msgid "attach"
+msgstr "Legg ved"
+
+msgid "attachments"
+msgstr "Vedlegg"
+
+msgid "upload"
+msgstr "Last opp"
+
+msgid "uploadprogress"
+msgstr "$percent ($current fra $total)"
+
+msgid "close"
+msgstr "Lukk"
+
+msgid "messageoptions"
+msgstr "Meldingsalternativer..."
+
+msgid "togglecomposeoptions"
+msgstr "Veksle visning av skrivealternativer"
+
+msgid "attachmentrename"
+msgstr "Endre navn på vedlegg"
+
+msgid "low"
+msgstr "Lav"
+
+msgid "lowest"
+msgstr "Lavest"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "high"
+msgstr "Høy"
+
+msgid "highest"
+msgstr "Høyest"
+
+msgid "nosubject"
+msgstr "(intet emne)"
+
+msgid "showimages"
+msgstr "Vis bilder"
+
+msgid "allow"
+msgstr "Tillat"
+
+msgid "alwaysshow"
+msgstr "Vis alltid bilder fra $sender"
+
+msgid "alwaysallow"
+msgstr "Tillat alltid fra $sender"
+
+msgid "isdraft"
+msgstr "Dette er en kladd."
+
+msgid "andnmore"
+msgstr "$nr flere ..."
+
+msgid "details"
+msgstr "Detaljer"
+
+msgid "summary"
+msgstr "Oppsummering"
+
+msgid "headers"
+msgstr "Hoder"
+
+msgid "allheaders"
+msgstr "Alle hoder..."
+
+msgid "togglemoreheaders"
+msgstr "Vis flere meldings-headere"
+
+msgid "togglefullheaders"
+msgstr "Veksle visning av meldingens headere i råformat"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Ren tekst"
+
+msgid "savesentmessagein"
+msgstr "Lagre sendt melding i"
+
+msgid "dontsave"
+msgstr "ikke lagre"
+
+msgid "maxuploadsize"
+msgstr "Maksimalt tillatt filstørrelse er $size"
+
+msgid "addcc"
+msgstr "Legg til kopiadressat (Cc)"
+
+msgid "addbcc"
+msgstr "Legg til blindkopiadressat (Bcc)"
+
+msgid "addreplyto"
+msgstr "Legg til svar til (Reply-To)"
+
+msgid "addfollowupto"
+msgstr "Legg til oppfølging"
+
+msgid "sendreceipt"
+msgstr "Sende lesebekreftelse?"
+
+msgid "mdnrequest"
+msgstr ""
+"Senderen av denne meldingen har bedt om å bli gjort oppmerksom på at denne "
+"meldingen er lest. Ønsker du å sende denne bekreftelsen?"
+
+msgid "receiptread"
+msgstr "Kvittering (lest)"
+
+msgid "yourmessage"
+msgstr "Dette er en kvittering for at din e-post er mottatt"
+
+msgid "receiptnote"
+msgstr ""
+"Merknad: Denne kvitteringen bekrefter bare at e-posten ble vist hos "
+"mottakeren. Det er ingen garanti for at mottakeren har lest eller forstått "
+"innholdet i e-posten."
+
+msgid "sendalwaysto"
+msgstr "Send alltid til $email"
+
+msgid "zoomin"
+msgstr "Zoom Inn"
+
+msgid "zoomout"
+msgstr "Zoom Ut"
+
+msgid "rotate"
+msgstr "Roter"
+
+msgid "increaseimage"
+msgstr "Forstørre bilde"
+
+msgid "decreaseimage"
+msgstr "Forminske bilde"
+
+msgid "rotateimage"
+msgstr "Roter bilde"
+
+msgid "showtools"
+msgstr "Vis bildeverktøy"
+
+msgid "hidetools"
+msgstr "Skjul bildeverktøy"
+
+msgid "name"
+msgstr "Visningsnavn"
+
+msgid "firstname"
+msgstr "Fornavn"
+
+msgid "surname"
+msgstr "Etternavn"
+
+msgid "middlename"
+msgstr "Mellom Navn"
+
+msgid "nameprefix"
+msgstr "Prefiks"
+
+msgid "namesuffix"
+msgstr "Suffiks"
+
+msgid "nickname"
+msgstr "Kallenavn"
+
+msgid "jobtitle"
+msgstr "Jobb Tittel"
+
+msgid "department"
+msgstr "Avdeling"
+
+msgid "gender"
+msgstr "Kjønn"
+
+msgid "maidenname"
+msgstr "Pikenavn"
+
+msgid "email"
+msgstr "E-post"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Adresse"
+
+msgid "street"
+msgstr "Gate"
+
+msgid "locality"
+msgstr "Sted"
+
+msgid "zipcode"
+msgstr "Postkode"
+
+msgid "region"
+msgstr "Stat/provins"
+
+msgid "country"
+msgstr "Land"
+
+msgid "birthday"
+msgstr "Fødselsdag"
+
+msgid "anniversary"
+msgstr "Merkedag"
+
+msgid "website"
+msgstr "Nettsted"
+
+msgid "instantmessenger"
+msgstr "Lynmelding"
+
+msgid "notes"
+msgstr "Notater"
+
+msgid "male"
+msgstr "Mann"
+
+msgid "female"
+msgstr "Kvinne"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Leder"
+
+msgid "assistant"
+msgstr "Assistent"
+
+msgid "spouse"
+msgstr "Ektefelle"
+
+msgid "allfields"
+msgstr "Alle felter"
+
+msgid "search"
+msgstr "Søk"
+
+msgid "searchresult"
+msgstr "Søkeresultat"
+
+msgid "advsearch"
+msgstr "Avansert søk"
+
+msgid "advanced"
+msgstr "Avansert"
+
+msgid "other"
+msgstr "Annet"
+
+msgid "printcontact"
+msgstr "Skriv ut kontakt"
+
+msgid "qrcode"
+msgstr "QR Kode"
+
+msgid "typehome"
+msgstr "Hjem"
+
+msgid "typework"
+msgstr "Jobb"
+
+msgid "typeother"
+msgstr "Annet"
+
+msgid "typemobile"
+msgstr "Mobil"
+
+msgid "typemain"
+msgstr "Hoved"
+
+msgid "typehomefax"
+msgstr "Hjemmefaks"
+
+msgid "typeworkfax"
+msgstr "Faks på arbeid"
+
+msgid "typecar"
+msgstr "Bil"
+
+msgid "typepager"
+msgstr "Personsøker"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Assistent"
+
+msgid "typehomepage"
+msgstr "Hjemmeside"
+
+msgid "typeblog"
+msgstr "Blogg"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Legg til felt ..."
+
+msgid "addcontact"
+msgstr "Legg til kontakt"
+
+msgid "editcontact"
+msgstr "Rediger kontakt"
+
+msgid "contacts"
+msgstr "Kontakter"
+
+msgid "contactproperties"
+msgstr "Egenskaper"
+
+msgid "contactnameandorg"
+msgstr "Navn og Organisasjon"
+
+msgid "personalinfo"
+msgstr "Personlig informasjon"
+
+msgid "personal"
+msgstr "Personlig"
+
+msgid "contactphoto"
+msgstr "Kontakt bilde"
+
+msgid "edit"
+msgstr "Rediger"
+
+msgid "cancel"
+msgstr "Avbryt"
+
+msgid "save"
+msgstr "Lagre"
+
+msgid "delete"
+msgstr "Slett"
+
+msgid "discard"
+msgstr "Forkast"
+
+msgid "continue"
+msgstr "Fortsett"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Gi nytt navn"
+
+msgid "addphoto"
+msgstr "Legg til"
+
+msgid "replacephoto"
+msgstr "Erstatt"
+
+msgid "uploadphoto"
+msgstr "Last opp bilde"
+
+msgid "choosefile"
+msgstr "Velg fil..."
+
+msgid "choosefiles"
+msgstr "Velg filer..."
+
+msgid "browse"
+msgstr "Bla gjennom"
+
+msgid "newcontact"
+msgstr "Opprett ny kontakt"
+
+msgid "deletecontact"
+msgstr "Slett valgte kontakter"
+
+msgid "composeto"
+msgstr "Skriv e-post til"
+
+msgid "contactsfromto"
+msgstr "Kontakter $from til $to av $count"
+
+msgid "print"
+msgstr "Skriv ut"
+
+msgid "export"
+msgstr "Eksporter"
+
+msgid "exportall"
+msgstr "Eksporter alle"
+
+msgid "exportsel"
+msgstr "Eksporter valgte"
+
+msgid "exportvcards"
+msgstr "Eksporter kontakter i vCard-format"
+
+msgid "newgroup"
+msgstr "Opprett ny gruppe"
+
+msgid "addgroup"
+msgstr "Legg til gruppe"
+
+msgid "grouprename"
+msgstr "Endre navn på gruppe"
+
+msgid "groupdelete"
+msgstr "Slett gruppe"
+
+msgid "groupassign"
+msgstr "Tildel gruppe..."
+
+msgid "groupremove"
+msgstr "Fjern fra gruppe"
+
+msgid "groupremoveselected"
+msgstr "Fjern valgte kontakter fra gruppe"
+
+msgid "uponelevel"
+msgstr "Opp ett nivå"
+
+msgid "previouspage"
+msgstr "Vis forrige sett"
+
+msgid "firstpage"
+msgstr "Vis første sett"
+
+msgid "nextpage"
+msgstr "Vis neste sett"
+
+msgid "lastpage"
+msgstr "Vis siste sett"
+
+msgid "group"
+msgstr "Gruppe"
+
+msgid "groups"
+msgstr "Grupper"
+
+msgid "listgroup"
+msgstr "Vis gruppemedlemmer"
+
+msgid "personaladrbook"
+msgstr "Egne adresser"
+
+msgid "searchsave"
+msgstr "Lagre søk"
+
+msgid "searchdelete"
+msgstr "Slett søk"
+
+msgid "import"
+msgstr "Importer"
+
+msgid "importcontacts"
+msgstr "Importer kontakter"
+
+msgid "importfromfile"
+msgstr "Importer fra fil"
+
+msgid "importtarget"
+msgstr "Legg kontakter til"
+
+msgid "importreplace"
+msgstr "Erstatt hele adresseboken"
+
+msgid "importgroups"
+msgstr "Importer gruppetilordninger"
+
+msgid "importgroupsall"
+msgstr "Alle (opprett grupper hvis nødvendig)"
+
+msgid "importgroupsexisting"
+msgstr "Bare for eksisterende grupper"
+
+msgid "importdesc"
+msgstr ""
+"Du kan laste opp kontakter fra en eksisterende konktaktliste.<br/>Vi støtter"
+" foreløbig importen av kontakter under <a "
+"href=\"https://nb.wikipedia.org/wiki/VCard\">vCard</a> eller CSV "
+"(kommaseparert fil) formatene."
+
+msgid "importmapdesc"
+msgstr ""
+"Vennligst bekreft at feltene under er fordelt riktig, før du går videre med "
+"å importere CSV (comma-separated) data."
+
+msgid "fieldnotmapped"
+msgstr "Felt er ubrukt (ikke importer)"
+
+msgid "skipheader"
+msgstr "Ikke importer første linje (overskrifter)"
+
+msgid "done"
+msgstr "Fullført"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Innstillinger for"
+
+msgid "about"
+msgstr "Om"
+
+msgid "preferences"
+msgstr "Oppsett"
+
+msgid "userpreferences"
+msgstr "Brukeroppsett"
+
+msgid "editpreferences"
+msgstr "Rediger brukeroppsett"
+
+msgid "identities"
+msgstr "Identiteter"
+
+msgid "manageidentities"
+msgstr "Behandle identiteter"
+
+msgid "newidentity"
+msgstr "Opprett ny identitet"
+
+msgid "addidentity"
+msgstr "Legg til identitet"
+
+msgid "editidentity"
+msgstr "Rediger identitet"
+
+msgid "identityencryption"
+msgstr "Kryptering"
+
+msgid "preferhtml"
+msgstr "Foretrekk HTML"
+
+msgid "defaultcharset"
+msgstr "Standard tegnsett"
+
+msgid "htmlmessage"
+msgstr "HTML-melding"
+
+msgid "messagepart"
+msgstr "Del"
+
+msgid "digitalsig"
+msgstr "Digital signatur"
+
+msgid "dateformat"
+msgstr "Datoformat"
+
+msgid "timeformat"
+msgstr "Tidsformat"
+
+msgid "prettydate"
+msgstr "Pen datovisning"
+
+msgid "setdefault"
+msgstr "Sett som standard"
+
+msgid "autodetect"
+msgstr "Auto"
+
+msgid "language"
+msgstr "Språk"
+
+msgid "timezone"
+msgstr "Tidssone"
+
+msgid "pagesize"
+msgstr "Linjer per side"
+
+msgid "signature"
+msgstr "Signatur"
+
+msgid "dstactive"
+msgstr "Sommertid"
+
+msgid "showinextwin"
+msgstr "Åpne melding i nytt vindu"
+
+msgid "composeextwin"
+msgstr "Skriv i nytt vindu"
+
+msgid "htmleditor"
+msgstr "Bruk HTML-editor"
+
+msgid "htmlonreply"
+msgstr "ved svar på HTML-melding"
+
+msgid "htmlonreplyandforward"
+msgstr "ved videresending av eller svar på HTML-melding"
+
+msgid "htmlsignature"
+msgstr "HTML-signatur"
+
+msgid "showemail"
+msgstr "Vis e-postadresse sammen med visningsnavn"
+
+msgid "previewpane"
+msgstr "Forhåndsvisning"
+
+msgid "skin"
+msgstr "Utseende"
+
+msgid "logoutclear"
+msgstr "Tøm søppel ved utlogging"
+
+msgid "logoutcompact"
+msgstr "Kompakt innboksen ved utlogging"
+
+msgid "uisettings"
+msgstr "Brukergrensesnitt"
+
+msgid "serversettings"
+msgstr "Serverinnstillinger"
+
+msgid "mailboxview"
+msgstr "E-postvisning"
+
+msgid "mdnrequests"
+msgstr "Tilbakemelding til avsender"
+
+msgid "askuser"
+msgstr "spør hver gang"
+
+msgid "autosend"
+msgstr "send automatisk"
+
+msgid "autosendknown"
+msgstr "send kvittering til kontaktene mine, ellers spør meg"
+
+msgid "autosendknownignore"
+msgstr "send kvittering til kontaktene mine, ellers ignorer"
+
+msgid "autosendtrusted"
+msgstr "send kvittering til mine pålitelige kontakter, ellers spør meg"
+
+msgid "autosendtrustedignore"
+msgstr "send kvittering til mine pålitelige kontakter, ellers ignorer"
+
+msgid "ignorerequest"
+msgstr "Ignorer forespørsel"
+
+msgid "readwhendeleted"
+msgstr "Merk melding som lest ved sletting"
+
+msgid "flagfordeletion"
+msgstr "Flagg meldingen for sletting i stedet for å slette"
+
+msgid "skipdeleted"
+msgstr "Ikke vis slettede meldinger"
+
+msgid "deletealways"
+msgstr "Hvis en melding ikke kan flyttes til Slettet, slett den"
+
+msgid "deletejunk"
+msgstr "Slett meldinger i spam direkte"
+
+msgid "showremoteimages"
+msgstr "Vis bilder fra eksterne servere i meldinger"
+
+msgid "allowremoteresources"
+msgstr "Tillatt ekstrerne ressurser (bilder, stiler)"
+
+msgid "fromknownsenders"
+msgstr "fra kjente avsendere"
+
+msgid "fromtrustedsenders"
+msgstr "fra pålitelige avsendere"
+
+msgid "frommycontacts"
+msgstr "fra mine kontakter"
+
+msgid "always"
+msgstr "alltid"
+
+msgid "alwaysbutplain"
+msgstr "Alltid, untatt når man svarer på ren tekst"
+
+msgid "showinlineimages"
+msgstr "Vis vedlagte bilder nedenfor meldingen"
+
+msgid "autosavedraft"
+msgstr "Autolagring av utkast"
+
+msgid "everynminutes"
+msgstr "hvert $n minutt"
+
+msgid "refreshinterval"
+msgstr "Oppdater (sjekk for nye meldinger etc.)"
+
+msgid "never"
+msgstr "Aldri"
+
+msgid "immediately"
+msgstr "umiddelbart"
+
+msgid "messagesdisplaying"
+msgstr "Visning av meldinger"
+
+msgid "messagescomposition"
+msgstr "Skriving av meldinger"
+
+msgid "mimeparamfolding"
+msgstr "Vedleggsnavn"
+
+msgid "2231folding"
+msgstr "Fullstendig RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Fullstendig RFC 2047 (andre)"
+
+msgid "force7bit"
+msgstr "Bruk MIME-koding for 8-bit-tegn"
+
+msgid "savelocalstorage"
+msgstr "Lagre i nettleserens lokale minne (midlertidig)"
+
+msgid "advancedoptions"
+msgstr "Avanserte alternativer"
+
+msgid "toggleadvancedoptions"
+msgstr "Veksle visning av avanserte alternativer"
+
+msgid "focusonnewmessage"
+msgstr "Gi nettleservindu fokus ved nye meldinger"
+
+msgid "checkallfolders"
+msgstr "Kontroller alle mapper for nye meldinger"
+
+msgid "displaynext"
+msgstr "Vis neste element i liste etter sletting/flytting"
+
+msgid "defaultfont"
+msgstr "Standard skrifttype i HTML-melding"
+
+msgid "mainoptions"
+msgstr "Hovedinnstillinger"
+
+msgid "browseroptions"
+msgstr "Alternativer for nettleser"
+
+msgid "section"
+msgstr "Kategori"
+
+msgid "maintenance"
+msgstr "Vedlikehold"
+
+msgid "newmessage"
+msgstr "Ny melding"
+
+msgid "signatureoptions"
+msgstr "Innstillinger for signatur"
+
+msgid "whenreplying"
+msgstr "Ved svar på e-post"
+
+msgid "replyempty"
+msgstr "Ikke siter den originale meldingen"
+
+msgid "replytopposting"
+msgstr "start den nye meldingen over orginalmeldingen"
+
+msgid "replytoppostingnoindent"
+msgstr "start den nye meldingen over orginalmeldingen (ingen indentering)"
+
+msgid "replybottomposting"
+msgstr "start den nye meldingen under orginalmeldingen"
+
+msgid "replyremovesignature"
+msgstr "Fjern orginalsignaturen i svar på melding"
+
+msgid "autoaddsignature"
+msgstr "Legg til signatur"
+
+msgid "newmessageonly"
+msgstr "kun på nye meldinger"
+
+msgid "replyandforwardonly"
+msgstr "kun i svar og videresendinger"
+
+msgid "insertsignature"
+msgstr "Sett inn signatur"
+
+msgid "sigbelow"
+msgstr "Plasser signaturen under den siterte meldingen"
+
+msgid "sigseparator"
+msgstr "Tving standard skille i signaturer"
+
+msgid "automarkread"
+msgstr "Merk meldinger som lest"
+
+msgid "afternseconds"
+msgstr "etter $n sekunder"
+
+msgid "reqmdn"
+msgstr "Alltid be om svarkvittering"
+
+msgid "reqdsn"
+msgstr "Alltid be om leveringsstatus"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Legg svar i mappen til meldingen det svares på"
+
+msgid "defaultabook"
+msgstr "Standard adressebok"
+
+msgid "autocompletesingle"
+msgstr "Hopp over alternative e-postadresser i autofullføring"
+
+msgid "listnamedisplay"
+msgstr "Vis kontakter som"
+
+msgid "contactformmode"
+msgstr "Kontaktskjemamodus"
+
+msgid "privatemode"
+msgstr "Privat (Hjem)"
+
+msgid "businessmode"
+msgstr "Arbeid"
+
+msgid "collectedaddresses"
+msgstr "Innsamlede adresser"
+
+msgid "collectedrecipients"
+msgstr "Innsamlede mottakere"
+
+msgid "collectedrecipientsopt"
+msgstr "Lagre utgående epost mottakere i"
+
+msgid "collectedsendersopt"
+msgstr "Lagre pålitelige avsendere i"
+
+msgid "trustedsenders"
+msgstr "Pålitelige avsendere"
+
+msgid "spellcheckbeforesend"
+msgstr "Kontroller staving før en melding sendes"
+
+msgid "spellcheckoptions"
+msgstr "Alternativer for stavekontroll"
+
+msgid "spellcheckignoresyms"
+msgstr "Ignorer ord med symboler"
+
+msgid "spellcheckignorenums"
+msgstr "Ignorer ord med tall"
+
+msgid "spellcheckignorecaps"
+msgstr "Ignorer ord med kun store bokstaver"
+
+msgid "addtodict"
+msgstr "Legg til i ordbok"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Registrer protokollhåndtering for mailto-lenker"
+
+msgid "standardwindows"
+msgstr "Håndter sprettoppvinduer som vanlige vinduer"
+
+msgid "forwardmode"
+msgstr "Meldinger videresendes"
+
+msgid "inline"
+msgstr "i teksten"
+
+msgid "asattachment"
+msgstr "som vedlegg"
+
+msgid "replyallmode"
+msgstr "Standard valg for [Svar alle] knapp"
+
+msgid "replyalldefault"
+msgstr "svar til alle"
+
+msgid "replyalllist"
+msgstr "svar kun til epostliste (hvis funnet)"
+
+msgid "allmessages"
+msgstr "alle meldinger"
+
+msgid "olderxdays"
+msgstr "eldre enn $x dager"
+
+msgid "folder"
+msgstr "Mappe"
+
+msgid "folders"
+msgstr "Mapper"
+
+msgid "foldername"
+msgstr "Mappenavn"
+
+msgid "subscribed"
+msgstr "Abonnere"
+
+msgid "messagecount"
+msgstr "Meldinger"
+
+msgid "create"
+msgstr "Opprett"
+
+msgid "createfolder"
+msgstr "Lag ny mappe"
+
+msgid "managefolders"
+msgstr "Rediger mapper"
+
+msgid "specialfolders"
+msgstr "Spesielle mapper"
+
+msgid "properties"
+msgstr "Egenskaper"
+
+msgid "folderproperties"
+msgstr "Egenskaper for mappe"
+
+msgid "parentfolder"
+msgstr "Overordnet mappe"
+
+msgid "location"
+msgstr "Sted"
+
+msgid "info"
+msgstr "Informasjon"
+
+msgid "getfoldersize"
+msgstr "Klikk for å få mappestørrelse"
+
+msgid "changesubscription"
+msgstr "Klikk for å endre abonnement"
+
+msgid "foldertype"
+msgstr "Mappetype"
+
+msgid "personalfolder"
+msgstr "Privat mappe"
+
+msgid "otherfolder"
+msgstr "Annen brukers mappe"
+
+msgid "sharedfolder"
+msgstr "Offentlig mappe"
+
+msgid "findfolders"
+msgstr "Finn mapper"
+
+msgid "findcontacts"
+msgstr "Finn kontakter"
+
+msgid "findmail"
+msgstr "Finn epostmeldinger"
+
+msgid "namespace.personal"
+msgstr "Personlig"
+
+msgid "namespace.other"
+msgstr "Andre brukere"
+
+msgid "namespace.shared"
+msgstr "Delt"
+
+msgid "dualuselabel"
+msgstr "Kan kun inneholde"
+
+msgid "dualusemail"
+msgstr "meldinger"
+
+msgid "dualusefolder"
+msgstr "mapper"
+
+msgid "generate"
+msgstr "Generer"
+
+msgid "encryptioncreatekey"
+msgstr "Lag et nytt nøkkelpar"
+
+msgid "openmailvelopesettings"
+msgstr "Åpne Mailvelope Innstillinger"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Du har $nr treff på private nøkler lagret i din Mailvelope nøkkelring:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Denne senderidentiteteten har ingen privat PGP nøkkel i din Mailvelope "
+"utvidelse. Ønsker du å opprette én nå, for å kunne sende krypterte "
+"meldinger?"
+
+msgid "encryption"
+msgstr "Kryptering"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelope innstillinger"
+
+msgid "mailvelopemainkeyring"
+msgstr "Bruke Mailvelope hovednøkkelring"
+
+msgid "mailvelopenotfound"
+msgstr "Mailvelope utvidelsen er ikke installert/aktivert i din nettleser."
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Sorter etter"
+
+msgid "sortasc"
+msgstr "Eldste først"
+
+msgid "sortdesc"
+msgstr "Nyeste først"
+
+msgid "undo"
+msgstr "Angre"
+
+msgid "installedplugins"
+msgstr "Installerte tillegg"
+
+msgid "plugin"
+msgstr "Tilleggsmodul"
+
+msgid "version"
+msgstr "Versjon"
+
+msgid "source"
+msgstr "Kildekode"
+
+msgid "destination"
+msgstr "Destinasjon"
+
+msgid "license"
+msgstr "Lisensvilkår"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Få hjelp"
+
+msgid "savedsearches"
+msgstr "Lagrede søk"
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Engelsk"
+
+msgid "westerneuropean"
+msgstr "Vesteuropeisk"
+
+msgid "easterneuropean"
+msgstr "Østeuropeisk"
+
+msgid "southeasterneuropean"
+msgstr "Sørøsteuropeisk"
+
+msgid "baltic"
+msgstr "Baltisk"
+
+msgid "cyrillic"
+msgstr "Cyrillisk"
+
+msgid "arabic"
+msgstr "Arabisk"
+
+msgid "greek"
+msgstr "Gresk"
+
+msgid "hebrew"
+msgstr "Hebraisk"
+
+msgid "turkish"
+msgstr "Tyrkisk"
+
+msgid "nordic"
+msgstr "Nordisk"
+
+msgid "thai"
+msgstr "Thailandsk"
+
+msgid "celtic"
+msgstr "Keltisk"
+
+msgid "vietnamese"
+msgstr "Vietnamesisk"
+
+msgid "japanese"
+msgstr "Japansk"
+
+msgid "korean"
+msgstr "Koreansk"
+
+msgid "chinese"
+msgstr "Kinesisk"
+
+msgid "arialabeltopnav"
+msgstr "Vinduskontroll"
+
+msgid "arialabeltasknav"
+msgstr "Applikasjonsoppgave"
+
+msgid "arialabeltoolbar"
+msgstr "Applikasjonsverktøylinje"
+
+msgid "arialabellistnav"
+msgstr "Vis navigering"
+
+msgid "arialabelactivetask"
+msgstr "Aktiv oppgave"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Epostlistefilter"
+
+msgid "arialabelmailsearchform"
+msgstr "Epostmelding søkeskjema"
+
+msgid "arialabelcontactsearchform"
+msgstr "Kontakt søkeskjema"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Epost søkeinntast"
+
+msgid "arialabelquicksearchbox"
+msgstr "Søkeinntast"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Mappelistefilter"
+
+msgid "arialabelfoldersearchform"
+msgstr "Mappe søkeskjema"
+
+msgid "arialabelfolderlist"
+msgstr "Valg av epostmappe"
+
+msgid "arialabelmessagelist"
+msgstr "Epostmelding liste"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Meldingsforhåndsvisning"
+
+msgid "arialabelmailboxmenu"
+msgstr "Mappehåndtering meny"
+
+msgid "arialabellistselectmenu"
+msgstr "Vis valgmeny"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Trådliste meny"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Visning av meldingsliste og sorteringsalternativer"
+
+msgid "arialabelmailimportdialog"
+msgstr "Meldingsimport"
+
+msgid "arialabelmessagenav"
+msgstr "Meldingsnavigering"
+
+msgid "arialabelmessagebody"
+msgstr "Meldingskropp"
+
+msgid "arialabelmessageactions"
+msgstr "Meldingshåndtering"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Kontakt søkeskjema"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Kontakt søkeinntast"
+
+msgid "arialabelmessageheaders"
+msgstr "Meldingshoder"
+
+msgid "arialabelforwardingoptions"
+msgstr "Videresendingsalternativer"
+
+msgid "arialabelreplyalloptions"
+msgstr "\"Svar til alle\"-alternativer"
+
+msgid "arialabelmoremessageactions"
+msgstr "Flere meldingshåndtering"
+
+msgid "arialabelmorecontactactions"
+msgstr "Flere kontaktshåndtering"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Merk markerte medlinger som..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Skrivealternativer"
+
+msgid "arialabelresponsesmenu"
+msgstr "Minimisert svaremeny"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Vedlegg opplastingsskjema"
+
+msgid "arialabelattachmentmenu"
+msgstr "Vedleggsalternativer"
+
+msgid "arialabelmailtomenu"
+msgstr "Epostadressealternativer"
+
+msgid "arialabelattachmentpreview"
+msgstr "Forhåndsvisning av vedlegg"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Vis kontakter og grupper for å velge som mottakere"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Kontakteksport alternativer"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Kontaktliste/gruååe alternativer"
+
+msgid "arialabelpreferencesform"
+msgstr "Preferanseskjema"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Identitet redigeringsskjema"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Svar redigeringsskjema"
+
+msgid "arialabelsearchterms"
+msgstr "Søketermer"
+
+msgid "arialabeldropactionmenu"
+msgstr "Dra-og-slipp håndteringsmeny"
+
+msgid "arialabelheadersmenu"
+msgstr "Mottakerinnlegging (hode) meny"
+
+msgid "arialabelimagetools"
+msgstr "Bildeverktøy"
+
+msgid "helplistnavigation"
+msgstr "Vis tastatursnarveier"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Pil opp/ned: Flytt linje i fokus.\n"
+"Mellomrom: Velg linjen i fokus.\n"
+"Shift + opp/ned: Legg linjen opp eller ned til valget.\n"
+"Ctrl + Mellomrom: Legg eller fjern linjen i fokus fra valget."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Høyre/venstre pil: Utvid/bryt sammen meldingstråden (bare i trådmodus).\n"
+"Enter: Åpne valgt melding.\n"
+"Delete: Flytt valgt melding til mappen \"Slettet\"."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Åpne valgt kontakt."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Det oppsto en feil!"
+
+msgid "messages.loginfailed"
+msgstr "Pålogging mislyktes"
+
+msgid "messages.cookiesdisabled"
+msgstr "Nettleseren din tillater ikke informasjonskapsler (cookies)"
+
+msgid "messages.sessionerror"
+msgstr "Din nettlesertilkobling er ugyldig eller utløpt"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Uoverensstemmelse mellom informasjonskapseler oppdaget. Vennligst fjern "
+"informasjonskapseler fra din nettleser."
+
+msgid "messages.storageerror"
+msgstr "Tilkobling til IMAP-tjener mislyktes."
+
+msgid "messages.servererror"
+msgstr "Tjenerfeil!"
+
+msgid "messages.servererrormsg"
+msgstr "Tjenerfeil: $msg"
+
+msgid "messages.accountlocked"
+msgstr "For mange feilede innloggingsforsøk. Prøv igjen senere."
+
+msgid "messages.connerror"
+msgstr "Tilkoblingsfeil (Kunne ikke nå server)!"
+
+msgid "messages.dberror"
+msgstr "Databasefeil!"
+
+msgid "messages.dbconnerror"
+msgstr "Tilkoblingsfeil (Kunne ikke nå databasen)!"
+
+msgid "messages.windowopenerror"
+msgstr "Popup-vinduet ble blokkert!"
+
+msgid "messages.requesttimedout"
+msgstr "Forespørselen har fått et tidsavbrudd"
+
+msgid "messages.errorreadonly"
+msgstr "Kunne ikke utføre handlingen. Mappen kan kun leses."
+
+msgid "messages.errornoperm"
+msgstr "Kan ikke utføre operasjon. Nektet tilgang."
+
+msgid "messages.erroroverquota"
+msgstr "Kunne ikke utføre handlingen, tomt for diskplass."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Ingen ledig plass på disk. Bruk SHIFT+DEL for å slette en melding."
+
+msgid "messages.invalidrequest"
+msgstr "Ugyldig forespørsel! Ingen data ble lagret."
+
+msgid "messages.invalidhost"
+msgstr "Ugyldig servernavn."
+
+msgid "messages.nomessagesfound"
+msgstr "Det ble ikke funnet noen meldinger i denne mappen"
+
+msgid "messages.loggedout"
+msgstr "Du er logget ut."
+
+msgid "messages.mailboxempty"
+msgstr "Mappen er tom"
+
+msgid "messages.nomessages"
+msgstr "Ingen meldinger"
+
+msgid "messages.refreshing"
+msgstr "Oppdaterer..."
+
+msgid "messages.loading"
+msgstr "Laster..."
+
+msgid "messages.uploading"
+msgstr "Laster opp fil..."
+
+msgid "messages.attaching"
+msgstr "Legger til vedlegg..."
+
+msgid "messages.uploadingmany"
+msgstr "Laster opp filer ..."
+
+msgid "messages.loadingdata"
+msgstr "Laster data..."
+
+msgid "messages.checkingmail"
+msgstr "Sjekker for nye meldinger..."
+
+msgid "messages.sendingmessage"
+msgstr "Sender melding..."
+
+msgid "messages.messagesent"
+msgstr "Meldingen ble sendt"
+
+msgid "messages.savingmessage"
+msgstr "Lagrer melding..."
+
+msgid "messages.messagesaved"
+msgstr "Melding er lagret som kladd"
+
+msgid "messages.successfullysaved"
+msgstr "Lagret"
+
+msgid "messages.savingresponse"
+msgstr "Lagrer svartekst..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Vil du virkelig å slette denne svarteksten?"
+
+msgid "messages.nocontactselected"
+msgstr "Du har ennå ikke markert en kontakt."
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontakten ble lagt til i adresseboken"
+
+msgid "messages.contactexists"
+msgstr "Det finnes allerede en kontakt med denne epostadressen"
+
+msgid "messages.contactnameexists"
+msgstr "Det finnes allerede en kontakt med dette navnet"
+
+msgid "messages.blockedimages"
+msgstr ""
+"Av sikkerhetsgrunner er bilder lagret på eksterne servere blokkert fra denne"
+" e-postmeldingen"
+
+msgid "messages.blockedresources"
+msgstr "Eksterne ressurser ble sperret for å beskytte ditt privatliv."
+
+msgid "messages.suspiciousemail"
+msgstr "Denne meldingen inneholder mistenkelige epostadresser."
+
+msgid "messages.bccemail"
+msgstr ""
+"De(n) videresendte meldingen(e) inneholder konfidensielle mottakere (Bcc)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Meldingen blir sendt uten endringer, det vil si at de originale kropp, hode "
+"og mottakere blir brukt."
+
+msgid "messages.encryptedmessage"
+msgstr "Dette er en kryptert melding som ikke kan vises. Beklager!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Denne meldingen er kryptert og kan bli dekryptert ved hjelp av din "
+"nettleserutvidelse."
+
+msgid "messages.nopubkeyfor"
+msgstr "Ingen gyldig offentlig nøkkel ble funnet for $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Ingen gyldig offentlig nøkkel ble funnet for din senderidentitet. Ønsker du "
+"å kryptere meldingen for mottakerne alene?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Vedlegg som allerede har blitt lastet opp kan ikke krypteres. Vennligst legg"
+" dem til på nytt i redigeringen av den krypterte meldingen."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Ønsker du å søke den savnede nøkkelen i nøkkeldatabasen?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Følgende offentlige nøkler har blitt funnet:"
+
+msgid "messages.keyservererror"
+msgstr "Kunne ikke hente nøkkelen fra databasen."
+
+msgid "messages.keyimportsuccess"
+msgstr "Den offentlig nøkkel $key har blitt importert til din nøkkelring."
+
+msgid "messages.nocontactsfound"
+msgstr "Ingen kontakter ble funnet"
+
+msgid "messages.contactnotfound"
+msgstr "Den ønskede kontakten ble ikke funnet"
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Du må bruke et søkefelt for å se kontakter fra den valgte kontaktlisten ."
+
+msgid "messages.sendingfailed"
+msgstr "Kunne ikke sende e-posten"
+
+msgid "messages.senttooquickly"
+msgstr "Vennligst vent $sec sekund(er) før du sender denne meldingen"
+
+msgid "messages.errorsavingsent"
+msgstr "En feil oppsto under lagring av sendt melding."
+
+msgid "messages.errorsaving"
+msgstr "En feil oppsto under lagring."
+
+msgid "messages.errormoving"
+msgstr "Kunne ikke flytte meldingen(e)"
+
+msgid "messages.errorcopying"
+msgstr "Kunne ikke kopiere meldingen(e)"
+
+msgid "messages.errordeleting"
+msgstr "Kunne ikke slette meldingen(e)"
+
+msgid "messages.errormarking"
+msgstr "Kunne ikke markere meldingen(e)"
+
+msgid "messages.alerttitle"
+msgstr "Advarsel"
+
+msgid "messages.confirmationtitle"
+msgstr "Er du sikker..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Vil du virkelig slette valgte kontakt(er)?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Vil du virkelig slette den valgte gruppa?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Vil du virkelig slette de(n) valgte meldingen(e)?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Vil du virkelig slette denne mappen?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Vil du virkelig flytte denne mappen?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Vil du virkelig slette alle meldingene i denne mappen?"
+
+msgid "messages.contactdeleting"
+msgstr "Sletter kontakt(er) ..."
+
+msgid "messages.groupdeleting"
+msgstr "Sletter gruppe ..."
+
+msgid "messages.folderdeleting"
+msgstr "Sletter mappe..."
+
+msgid "messages.foldermoving"
+msgstr "Flytter mappe..."
+
+msgid "messages.foldersubscribing"
+msgstr "Abonnerer på mappe ..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Avslutter mappeabonnement ..."
+
+msgid "messages.formincomplete"
+msgstr "Skjemaet var ikke fullstendig fylt ut"
+
+msgid "messages.noemailwarning"
+msgstr "Vennligst oppgi en gyldig epostadresse."
+
+msgid "messages.nonamewarning"
+msgstr "Angi et navn"
+
+msgid "messages.nopagesizewarning"
+msgstr "Angi sidestørrelsen"
+
+msgid "messages.nosenderwarning"
+msgstr "Angi avsenderadressen"
+
+msgid "messages.recipientsadded"
+msgstr "Mottake(e) har blitt lagt til"
+
+msgid "messages.norecipientwarning"
+msgstr "Skriv inn minst én mottaker"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "For mange offentlige mottakere"
+
+msgid "messages.nosubjectwarning"
+msgstr "Emnefeltet er tomt. Vil du skrive det inn nå?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Intet emne"
+
+msgid "messages.nobodywarning"
+msgstr "Send denne meldingen uten tekst?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Meldingen har ikke blitt sendt og har ulagrede endringer. Ønsker du å "
+"forkaste dine endringer?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Et tidligere usendt svar ble funnet.\\n\\nEmne: $subject\\nLagret: "
+"$date\\n\\nVil du gjenopprette denne meldingen?"
+
+msgid "messages.nosearchname"
+msgstr "Venligst skriv inn kontaktens navn eller e-postadresse"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Ikke alle vedlegg er ferdig opplastet. Vennligst vent eller avbryt "
+"opplastingen."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr meldinger funnet"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr kontakter funnet."
+
+msgid "messages.searchnomatch"
+msgstr "Søket ga ingen resultater"
+
+msgid "messages.searching"
+msgstr "Søker..."
+
+msgid "messages.checking"
+msgstr "Sjekker..."
+
+msgid "messages.stillsearching"
+msgstr "Søker fortsatt..."
+
+msgid "messages.nospellerrors"
+msgstr "Fant ingen skrivefeil."
+
+msgid "messages.folderdeleted"
+msgstr "Mappe slettet."
+
+msgid "messages.foldersubscribed"
+msgstr "Abonnerte på mappen."
+
+msgid "messages.folderunsubscribed"
+msgstr "Avsluttet mappeabonnement."
+
+msgid "messages.folderpurged"
+msgstr "Mappe tømt."
+
+msgid "messages.folderexpunged"
+msgstr "Mappen ble komprimert."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Slettet"
+
+msgid "messages.converting"
+msgstr "Fjerner formatering fra meldingen ..."
+
+msgid "messages.messageopenerror"
+msgstr "Kunne ikke hente meldingen fra server"
+
+msgid "messages.filelinkerror"
+msgstr "Feil under opplasting av vedlegget."
+
+msgid "messages.fileuploaderror"
+msgstr "Feil under opplastning."
+
+msgid "messages.csvfilemismatch"
+msgstr "Import av flere CSV-filer med ulike felter er ikke støttet."
+
+msgid "messages.filesizeerror"
+msgstr "Filen overstiger maksimum tillatt filstørrelse ($size)"
+
+msgid "messages.filecounterror"
+msgstr "Det er ikke mulig å laste opp flere enn $count filer på én gang."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Feil under lagring av vedlegg. Maksimal størrelse for en melding ($size) ble"
+" overskredet."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Maksimal størrelse for en fil ($size) overskredet. $num melding(er) har ikke"
+" blitt lagret."
+
+msgid "messages.copysuccess"
+msgstr "Kopierte $nr kontakter."
+
+msgid "messages.movesuccess"
+msgstr "Flyttet $nr kontakter."
+
+msgid "messages.copyerror"
+msgstr "Kunne ikke kopiere noen kontakter."
+
+msgid "messages.moveerror"
+msgstr "Kunne ikke flytte noen kontakter."
+
+msgid "messages.sourceisreadonly"
+msgstr "Denne adressekilden er skrivebeskyttet"
+
+msgid "messages.errorsavingcontact"
+msgstr "Kunne ikke lagre kontaktadressen."
+
+msgid "messages.movingmessage"
+msgstr "Flytter e-post ..."
+
+msgid "messages.copyingmessage"
+msgstr "Kopierer e-post..."
+
+msgid "messages.copyingcontact"
+msgstr "Kopierer kontakt(er)..."
+
+msgid "messages.movingcontact"
+msgstr "Flytter kontakt(er)..."
+
+msgid "messages.deletingmessage"
+msgstr "Sletter melding(er)..."
+
+msgid "messages.markingmessage"
+msgstr "Markerer melding(er) ..."
+
+msgid "messages.addingmember"
+msgstr "Legger til kontakt(er) i gruppa ..."
+
+msgid "messages.removingmember"
+msgstr "Fjerner kontakt(er) fra gruppa ..."
+
+msgid "messages.receiptsent"
+msgstr "Kvittering er sent"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Kunne ikke sende til mottaker"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Vil du virkelig å slette denne identiteten?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Du kan ikke slette den siste identiteten din."
+
+msgid "messages.forbiddencharacter"
+msgstr "Mappenavnet inneholder tegn som ikke er tillatt"
+
+msgid "messages.selectimportfile"
+msgstr "Vennligst velg en fil for opplasting"
+
+msgid "messages.addresswriterror"
+msgstr "Den valgte adresseboken er ikke skrivbar"
+
+msgid "messages.contactaddedtogroup"
+msgstr "Lagt til kontakter til denne gruppen."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontaktene ble vellykket fjernet fra denne gruppen"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Ingen gruppetilordninger ble endret."
+
+msgid "messages.importwait"
+msgstr "Importerer, vennligst vent..."
+
+msgid "messages.importformaterror"
+msgstr "Import feilet! Den opplastede filen er i feil format."
+
+msgid "messages.importconfirm"
+msgstr "<b>Importerte $inserted kontakter</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Kopierte $nr meldinger"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Importeringen var mislykket! Den opplastede filen er ikke en gyldig melding,"
+" eller er ikke kompatibel med meldingssystemet."
+
+msgid "messages.opnotpermitted"
+msgstr "Handling ikke tillatt!"
+
+msgid "messages.nofromaddress"
+msgstr "Valgt identitet mangler en epostadresse."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Veksling av redigeringstype kan medføre tap i formateringen. Ønsker du å "
+"fortsette?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"En uopprettelig feil oppsto. Vennligst kontakt systemansvarlig umiddelbart. "
+"<b>Din melding kunne ikke sendes.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP-feil ($code): Klarte ikke koble til server"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP-feil ($code): Pålogging feilet"
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP-feil ($code): Kunne ikke sette avsender \"$from\" ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr "SMTP-feil ($code): Kunne ikke legge til mottaker \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP-feil ($code): Kunne ikke lese mottakerliste"
+
+msgid "messages.smtputf8error"
+msgstr "SMTP-feil: Serveren støtter ikke Unicode i epostadressen."
+
+msgid "messages.smtpsizeerror"
+msgstr "SMTP-feil: Meldingsstørrelse overskreder servererens grense ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP-feil ($code): $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Ugyldig epostadresse: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "For mange mottakere. Reduser antall mottakere til $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Antall gruppemedlemmer overskrider maksgrensen på $max"
+
+msgid "messages.internalerror"
+msgstr "En intern feil har oppstått, prøv igjen senere."
+
+msgid "messages.contactdelerror"
+msgstr "Kunne ikke slette kontakt(er)"
+
+msgid "messages.contactdeleted"
+msgstr "Kontakt(er) slettet uten feil."
+
+msgid "messages.contactrestoreerror"
+msgstr "Kunne ikke gjenopprette kontakt(er)."
+
+msgid "messages.contactrestored"
+msgstr "Kontakten(e) gjennomrettet uten feil."
+
+msgid "messages.groupdeleted"
+msgstr "Gruppen er slettet."
+
+msgid "messages.grouprenamed"
+msgstr "Gruppen er omdøpt uten feil."
+
+msgid "messages.groupcreated"
+msgstr "Gruppen er opprettet"
+
+msgid "messages.savedsearchdeleted"
+msgstr "Lagrede søk er slettet."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Kunne ikke slette lagrede søk."
+
+msgid "messages.savedsearchcreated"
+msgstr "Lagret søk har blitt opprettet."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Kunne ikke opprette lagret søk."
+
+msgid "messages.messagedeleted"
+msgstr "Meldingen(e) er slettet."
+
+msgid "messages.messagemoved"
+msgstr "Meldingen(e) er  flyttet."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Meldingen(e) er flyttet til Slettet."
+
+msgid "messages.messagecopied"
+msgstr "Meldingen(e) er kopiert."
+
+msgid "messages.messagemarked"
+msgstr "Meldingen(e) er markert."
+
+msgid "messages.autocompletechars"
+msgstr "Skriv inn minst $min tegn for autofullføring."
+
+msgid "messages.autocompletemore"
+msgstr "Flere like oppføring funnet. Vennligst skriv flere tegn."
+
+msgid "messages.namecannotbeempty"
+msgstr "Navn kan ikke være tomt."
+
+msgid "messages.nametoolong"
+msgstr "Navnet er for langt."
+
+msgid "messages.namedotforbidden"
+msgstr "Mappenavn kan ikke starte med punktum."
+
+msgid "messages.folderupdated"
+msgstr "Mappen er oppdatert."
+
+msgid "messages.foldercreated"
+msgstr "Mappe opprettet."
+
+msgid "messages.invalidimageformat"
+msgstr "Ikke et gyldig bildeformat."
+
+msgid "messages.mispellingsfound"
+msgstr "Fant stavefeil i meldingen."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Kunne ikke opprette/flytte mappen i valgt overordnet mappe. Ingen "
+"tilgangsrettigheter."
+
+msgid "messages.messagetoobig"
+msgstr "Meldingsdelen er for stor til at den kan prosesseres."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Vedlegget er mistenkelig fordi filtypen samsvarer ikke med det som er "
+"oppgitt i meldingen. Dersom du ikke stoler på avsenderen, bør du ikke åpne "
+"den i nettleseren, fordi den kan være farlig.<br/><br/><em>Forventet: "
+"$expected; funnet: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"NB: Denne webmail-klienten krever Javascript! Skru på Javascript i "
+"nettleseren din for å kunne bruke den."
+
+msgid "messages.messageissent"
+msgstr ""
+"Meldingen var allerede sendt, men ikke lagret. Ønsker du å lagre den nå?"
+
+msgid "messages.errnotfound"
+msgstr "Filen ble ikke funnet"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Den forespurte ressursen ble ikke funnet!"
+
+msgid "messages.errfailedrequest"
+msgstr "Forespørselen feilet"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Autorisasjon feilet"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Kunne ikke verifisere om du har tillatelse til å bruke denne tjenesten!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Verifisering av forespørselen feilet"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"For din sikkerhet, er tilgangen til ressursen beskyttet mot CSRF.\n"
+"Om du ser denne meldingen, har du kanskje glemt å logge ut før du forlot webmailen.\n"
+"\n"
+"Menneskelig samspill er nå nødvendig for å fortsette."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Vennligst kontakt serveradministratoren."
+
+msgid "messages.clicktoresumesession"
+msgstr "Klikk her for å fortsette med din forrige sesjon."
+
+msgid "messages.errcomposesession"
+msgstr "Feil med redigeringssessjon"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Forespurt redigeringssessjon ble ikke funnet."
+
+msgid "messages.clicktocompose"
+msgstr "Klikk her for å skrive en ny melding"
+
+msgid "messages.nosupporterror"
+msgstr "Denne funksjonen støttes ikke av din nettleser."
+
+msgid "messages.siginserted"
+msgstr "Signaturen ble lagt til meldingen."
+
+msgid "messages.responseinserted"
+msgstr "Svaret ble lagt til meldingen."
+
+msgid "messages.noresponsesavailable"
+msgstr "Ingen tilgjengelig svar"
+
+msgid "messages.listempty"
+msgstr "Listen er tom."
+
+msgid "messages.listusebutton"
+msgstr "Bruk \"Opprett\" knappen for å opprette et element."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Et nytt nøkkelpar har blitt opprettet for $identity."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Vedlegget virker til å være tomt.<br>Vennligst ta kontakt med avsenderen."
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth-innlogging feilet. Vennligst prøv på nytt."
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

@@ -1,0 +1,2924 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: bg_BG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Добре дошли в $product"
+
+msgid "username"
+msgstr "Потребител"
+
+msgid "password"
+msgstr "Парола"
+
+msgid "server"
+msgstr "Сървър"
+
+msgid "login"
+msgstr "Вход"
+
+msgid "oauthlogin"
+msgstr "Вход с $provider"
+
+msgid "menu"
+msgstr "Меню"
+
+msgid "logout"
+msgstr "Изход"
+
+msgid "mail"
+msgstr "Поща"
+
+msgid "settings"
+msgstr "Настройки"
+
+msgid "addressbook"
+msgstr "Адресна книга"
+
+msgid "darkmode"
+msgstr "Тъмен режим"
+
+msgid "lightmode"
+msgstr "Светъл режим"
+
+msgid "inbox"
+msgstr "Входящи"
+
+msgid "drafts"
+msgstr "Чернови"
+
+msgid "sent"
+msgstr "Изпратени"
+
+msgid "trash"
+msgstr "Кошче"
+
+msgid "junk"
+msgstr "Спам"
+
+msgid "show_real_foldernames"
+msgstr "Показва истинските имена на служебните папки"
+
+msgid "subject"
+msgstr "Заглавие"
+
+msgid "from"
+msgstr "От"
+
+msgid "sender"
+msgstr "Подател"
+
+msgid "to"
+msgstr "До"
+
+msgid "cc"
+msgstr "Копие до"
+
+msgid "bcc"
+msgstr "Скрито копие до"
+
+msgid "replyto"
+msgstr "Отговор до"
+
+msgid "followupto"
+msgstr "Препращане към"
+
+msgid "date"
+msgstr "Дата"
+
+msgid "size"
+msgstr "Размер"
+
+msgid "priority"
+msgstr "Приоритет"
+
+msgid "organization"
+msgstr "Организация"
+
+msgid "readstatus"
+msgstr "Статус (прочетено/ново)"
+
+msgid "listoptions"
+msgstr "Настройки на списък..."
+
+msgid "listoptionstitle"
+msgstr "Настройки на списък"
+
+msgid "mailboxlist"
+msgstr "Папки"
+
+msgid "messagesfromto"
+msgstr "Писма $from до $to от $count"
+
+msgid "threadsfromto"
+msgstr "Кореспонденции $from до $to от $count"
+
+msgid "messagenrof"
+msgstr "Писмо $nr от $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to от $count"
+
+msgid "copy"
+msgstr "Копиране"
+
+msgid "move"
+msgstr "Преместване"
+
+msgid "moveto"
+msgstr "Премести във..."
+
+msgid "copyto"
+msgstr "Копирай във..."
+
+msgid "download"
+msgstr "Изтегли"
+
+msgid "open"
+msgstr "Отвори"
+
+msgid "showattachment"
+msgstr "Покажи"
+
+msgid "showanyway"
+msgstr "Показване въпреки това"
+
+msgid "filename"
+msgstr "Име на файла"
+
+msgid "filesize"
+msgstr "Размер на файла"
+
+msgid "addtoaddressbook"
+msgstr "Добави в адресната книга"
+
+msgid "sun"
+msgstr "Нед"
+
+msgid "mon"
+msgstr "Пон"
+
+msgid "tue"
+msgstr "Вто"
+
+msgid "wed"
+msgstr "Сря"
+
+msgid "thu"
+msgstr "Чет"
+
+msgid "fri"
+msgstr "Пет"
+
+msgid "sat"
+msgstr "Съб"
+
+msgid "sunday"
+msgstr "Неделя"
+
+msgid "monday"
+msgstr "Понеделник"
+
+msgid "tuesday"
+msgstr "Вторник"
+
+msgid "wednesday"
+msgstr "Сряда"
+
+msgid "thursday"
+msgstr "Четвъртък"
+
+msgid "friday"
+msgstr "Петък"
+
+msgid "saturday"
+msgstr "Събота"
+
+msgid "jan"
+msgstr "Яну"
+
+msgid "feb"
+msgstr "Фев"
+
+msgid "mar"
+msgstr "Мар"
+
+msgid "apr"
+msgstr "Апр"
+
+msgid "may"
+msgstr "Май"
+
+msgid "jun"
+msgstr "Юни"
+
+msgid "jul"
+msgstr "Юли"
+
+msgid "aug"
+msgstr "Авг"
+
+msgid "sep"
+msgstr "Сеп"
+
+msgid "oct"
+msgstr "Окт"
+
+msgid "nov"
+msgstr "Ное"
+
+msgid "dec"
+msgstr "Дек"
+
+msgid "longjan"
+msgstr "Януари"
+
+msgid "longfeb"
+msgstr "Февруари"
+
+msgid "longmar"
+msgstr "Март"
+
+msgid "longapr"
+msgstr "Април"
+
+msgid "longmay"
+msgstr "Май"
+
+msgid "longjun"
+msgstr "Юни"
+
+msgid "longjul"
+msgstr "Юли"
+
+msgid "longaug"
+msgstr "Август"
+
+msgid "longsep"
+msgstr "Септември"
+
+msgid "longoct"
+msgstr "Октомври"
+
+msgid "longnov"
+msgstr "Ноември"
+
+msgid "longdec"
+msgstr "Декември"
+
+msgid "today"
+msgstr "Днес"
+
+msgid "refresh"
+msgstr "Обнови"
+
+msgid "checkmail"
+msgstr "Провери за нова поща"
+
+msgid "compose"
+msgstr "Напиши"
+
+msgid "writenewmessage"
+msgstr "Създай ново писмо"
+
+msgid "reply"
+msgstr "Отговор"
+
+msgid "replytomessage"
+msgstr "Отговори на подателя"
+
+msgid "replytoallmessage"
+msgstr "Отговори на списъка или на подателя и всички получатели"
+
+msgid "replyall"
+msgstr "Отговор на всички"
+
+msgid "replylist"
+msgstr "Отговор на списък"
+
+msgid "forward"
+msgstr "Препрати"
+
+msgid "forwardinline"
+msgstr "Препрати като цитат в писмото"
+
+msgid "forwardattachment"
+msgstr "Препрати като прикачен файл"
+
+msgid "forwardmessage"
+msgstr "Препрати писмото"
+
+msgid "bouncemsg"
+msgstr "Повторно изпращане (bounce)"
+
+msgid "bounce"
+msgstr "Повторно изпращане"
+
+msgid "deletemessage"
+msgstr "Изтрий писмото"
+
+msgid "undeletemessage"
+msgstr "Възстанови писмото"
+
+msgid "movemessagetotrash"
+msgstr "Премести писмото в Кошче"
+
+msgid "printmessage"
+msgstr "Печат на писмото"
+
+msgid "previousmessage"
+msgstr "Предишно писмо"
+
+msgid "firstmessage"
+msgstr "Първо писмо"
+
+msgid "nextmessage"
+msgstr "Следващо писмо"
+
+msgid "lastmessage"
+msgstr "Последно писмо"
+
+msgid "backtolist"
+msgstr "Обратно към списъка"
+
+msgid "viewsource"
+msgstr "Покажи изходния код"
+
+msgid "mark"
+msgstr "Маркирай"
+
+msgid "markmessages"
+msgstr "Маркирай писмата"
+
+msgid "markread"
+msgstr "Като прочетени"
+
+msgid "markunread"
+msgstr "Като нови"
+
+msgid "markflagged"
+msgstr "Като отбелязани"
+
+msgid "markunflagged"
+msgstr "Като неотбелязани"
+
+msgid "markundeleted"
+msgstr "Като неизтрити"
+
+msgid "markasread"
+msgstr "Маркирай като прочетено"
+
+msgid "markasunread"
+msgstr "Маркирай като непрочетено"
+
+msgid "markasflagged"
+msgstr "Маркирай като отбелязано"
+
+msgid "markasunflagged"
+msgstr "Маркирай като неотбелязано"
+
+msgid "moreactions"
+msgstr "Допълнителни действия..."
+
+msgid "markallread"
+msgstr "Маркирай всички като прочетени"
+
+msgid "folders-cur"
+msgstr "Само за избраната папка"
+
+msgid "folders-sub"
+msgstr "Избраната папка и всички подпапки"
+
+msgid "folders-all"
+msgstr "Всички папки"
+
+msgid "more"
+msgstr "Още"
+
+msgid "back"
+msgstr "Назад"
+
+msgid "options"
+msgstr "Настройки"
+
+msgid "composeoptions"
+msgstr "Настройки за писане"
+
+msgid "optionsandattachments"
+msgstr "Настройки и прикачени файлове"
+
+msgid "actions"
+msgstr "Действия"
+
+msgid "first"
+msgstr "Първо"
+
+msgid "last"
+msgstr "Последно"
+
+msgid "previous"
+msgstr "Предишно"
+
+msgid "next"
+msgstr "Следващо"
+
+msgid "select"
+msgstr "Избери"
+
+msgid "selection"
+msgstr "Селекция"
+
+msgid "all"
+msgstr "Всички"
+
+msgid "none"
+msgstr "Остави без избор"
+
+msgid "currpage"
+msgstr "Всички на страницата"
+
+msgid "isread"
+msgstr "Прочетено"
+
+msgid "unread"
+msgstr "Нови"
+
+msgid "flagged"
+msgstr "Отбелязани"
+
+msgid "unflagged"
+msgstr "Без флаг"
+
+msgid "unanswered"
+msgstr "Без отговор"
+
+msgid "withattachment"
+msgstr "С прикачен файл"
+
+msgid "deleted"
+msgstr "Всички изтрити"
+
+msgid "undeleted"
+msgstr "Които не са изтрити"
+
+msgid "replied"
+msgstr "Отговорено"
+
+msgid "forwarded"
+msgstr "Препратено"
+
+msgid "invert"
+msgstr "Които не са избрани"
+
+msgid "filter"
+msgstr "Филтър"
+
+msgid "list"
+msgstr "Списък"
+
+msgid "threads"
+msgstr "Кореспонденции"
+
+msgid "expand-all"
+msgstr "Разгъни всички"
+
+msgid "expand-unread"
+msgstr "Разгъни непрочетените"
+
+msgid "collapse-all"
+msgstr "Сгъни всички"
+
+msgid "threaded"
+msgstr "Групирани по кореспонденции"
+
+msgid "showunread"
+msgstr "Покажи непрочетените писма"
+
+msgid "autoexpand_threads"
+msgstr "Разгъни кореспонденции"
+
+msgid "do_expand"
+msgstr "всички кореспонденции"
+
+msgid "expand_only_unread"
+msgstr "само с непрочетени писма"
+
+msgid "fromto"
+msgstr "От/До"
+
+msgid "flag"
+msgstr "Отбелязано"
+
+msgid "attachment"
+msgstr "Прикачен файл"
+
+msgid "nonesort"
+msgstr "Няма"
+
+msgid "sentdate"
+msgstr "Дата на изпращане"
+
+msgid "arrival"
+msgstr "Дата на получаване"
+
+msgid "asc"
+msgstr "нарастваща"
+
+msgid "desc"
+msgstr "намаляваща"
+
+msgid "listcolumns"
+msgstr "Колони на списък"
+
+msgid "listsorting"
+msgstr "Подреди по колона"
+
+msgid "listorder"
+msgstr "Посока на подреждане"
+
+msgid "listmode"
+msgstr "Изглед на списък"
+
+msgid "lmode"
+msgstr "Режим на списък"
+
+msgid "layout"
+msgstr "Оформление"
+
+msgid "layoutwidescreen"
+msgstr "Широк екран"
+
+msgid "layoutdesktop"
+msgstr "Настолен екран"
+
+msgid "layoutlist"
+msgstr "Списък"
+
+msgid "layoutwidescreendesc"
+msgstr "Широк екран (изглед с 3 колони)"
+
+msgid "layoutdesktopdesc"
+msgstr "Настолен екран (широк списък и преглед на пощата по-долу)"
+
+msgid "layoutlistdesc"
+msgstr "Списък (без преглед на пощата)"
+
+msgid "folderactions"
+msgstr "Действия за папки..."
+
+msgid "compact"
+msgstr "Уплътни данни"
+
+msgid "empty"
+msgstr "Изпразни"
+
+msgid "importmessages"
+msgstr "Импорт на писма"
+
+msgid "mailimportdesc"
+msgstr ""
+"Можете да качвате поща като използвате файлове във формат <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> или <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>."
+
+msgid "mailimportzip"
+msgstr "Няколко файла могат да бъдат компресирани в zip архиви."
+
+msgid "quota"
+msgstr "Използвано място"
+
+msgid "unknown"
+msgstr "няма информация"
+
+msgid "unlimited"
+msgstr "без ограничение"
+
+msgid "quotatype"
+msgstr "Тип квота"
+
+msgid "quotatotal"
+msgstr "Лимит"
+
+msgid "quotaused"
+msgstr "Използвано"
+
+msgid "quotastorage"
+msgstr "Дисково пространство"
+
+msgid "quotamessage"
+msgstr "Брой писма"
+
+msgid "shortheaderdate"
+msgstr "На $date"
+
+msgid "shortheaderto"
+msgstr "До $to на $date"
+
+msgid "shortheaderfrom"
+msgstr "От $from на $date"
+
+msgid "quicksearch"
+msgstr "Бързо търсене"
+
+msgid "searchplaceholder"
+msgstr "Търсене..."
+
+msgid "resetsearch"
+msgstr "Изчисти филтър и покажи всичко"
+
+msgid "searchmod"
+msgstr "Филтър по"
+
+msgid "msgtext"
+msgstr "Цялото писмо"
+
+msgid "body"
+msgstr "Основен текст"
+
+msgid "type"
+msgstr "Тип"
+
+msgid "namex"
+msgstr "Име"
+
+msgid "searchscope"
+msgstr "Обхват"
+
+msgid "currentfolder"
+msgstr "Текуща папка"
+
+msgid "subfolders"
+msgstr "Тази и подпапките"
+
+msgid "allfolders"
+msgstr "Всички папки"
+
+msgid "searchinterval-1W"
+msgstr "по-стари от седмица"
+
+msgid "searchinterval-1M"
+msgstr "по-стари от месец"
+
+msgid "searchinterval-1Y"
+msgstr "по-стари от година"
+
+msgid "searchinterval1W"
+msgstr "по-нови от седмица"
+
+msgid "searchinterval1M"
+msgstr "по-нови от месец"
+
+msgid "searchinterval1Y"
+msgstr "по-нови от година"
+
+msgid "infolder"
+msgstr "Папка: $folder"
+
+msgid "currentaddressbook"
+msgstr "Текуща адресна книга"
+
+msgid "alladdressbooks"
+msgstr "Всички адресни книги"
+
+msgid "openinextwin"
+msgstr "Отвори в нов прозорец"
+
+msgid "emlsave"
+msgstr "Изтегли (.eml)"
+
+msgid "changeformattext"
+msgstr "Покажи в текстов формат"
+
+msgid "changeformathtml"
+msgstr "Покажи в HTML формат"
+
+msgid "editasnew"
+msgstr "Редактирай като ново"
+
+msgid "send"
+msgstr "Изпрати"
+
+msgid "sendmessage"
+msgstr "Изпрати писмото"
+
+msgid "savemessage"
+msgstr "Запиши като чернова"
+
+msgid "addattachment"
+msgstr "Прикачване на файл"
+
+msgid "charset"
+msgstr "Кодова таблица"
+
+msgid "editortype"
+msgstr "Вид редактор"
+
+msgid "returnreceipt"
+msgstr "Обратна разписка"
+
+msgid "dsn"
+msgstr "Нотификация при доставка"
+
+msgid "keepformatting"
+msgstr "Запази форматирането"
+
+msgid "mailreplyintro"
+msgstr "На $date, $sender написа:"
+
+msgid "originalmessage"
+msgstr "Оригинално писмо"
+
+msgid "selectimage"
+msgstr "Избери изображение"
+
+msgid "addimage"
+msgstr "Добави изображение"
+
+msgid "selectmedia"
+msgstr "Избери клип"
+
+msgid "addmedia"
+msgstr "Добави клип"
+
+msgid "encrypt"
+msgstr "Криптиране"
+
+msgid "encryptmessage"
+msgstr "Криптирай писмо"
+
+msgid "encryptmessagemailvelope"
+msgstr "Криптирай писмо с Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Внасяне на публични ключове"
+
+msgid "encryptedsendialog"
+msgstr "Изпращане на криптирано писмо"
+
+msgid "encryptandsign"
+msgstr "Криптиране и подписване"
+
+msgid "keyid"
+msgstr "ИН на ключ"
+
+msgid "keylength"
+msgstr "Бита"
+
+msgid "keyexpired"
+msgstr "Изтекъл"
+
+msgid "keyrevoked"
+msgstr "Отменен"
+
+msgid "bccinstead"
+msgstr "Използвай Скрито копие до"
+
+msgid "addheader"
+msgstr "Добави получател (Cc, Bcc, ...)"
+
+msgid "insert"
+msgstr "Вмъкване"
+
+msgid "insertcontact"
+msgstr "Вмъкване на контакт(и)"
+
+msgid "recipient"
+msgstr "Получател"
+
+msgid "recipientedit"
+msgstr "Редактиране на получател"
+
+msgid "editidents"
+msgstr "Промени самоличности"
+
+msgid "spellcheck"
+msgstr "Правопис"
+
+msgid "checkspelling"
+msgstr "Проверка на правописа"
+
+msgid "resumeediting"
+msgstr "Продължи черновата"
+
+msgid "revertto"
+msgstr "Върни се към"
+
+msgid "restore"
+msgstr "Възстанови"
+
+msgid "restoremessage"
+msgstr "Възстановяване на съобщението?"
+
+msgid "ignore"
+msgstr "Игнорирай"
+
+msgid "responses"
+msgstr "Отговори"
+
+msgid "insertresponse"
+msgstr "Вмъкване на отговор"
+
+msgid "manageresponses"
+msgstr "Настройка на отговори"
+
+msgid "newresponse"
+msgstr "Създай нов отговор"
+
+msgid "addresponse"
+msgstr "Добавяне на отговор"
+
+msgid "editresponse"
+msgstr "Редакция на отговор"
+
+msgid "editresponses"
+msgstr "Редакция на отговори"
+
+msgid "responsename"
+msgstr "Име"
+
+msgid "responsetext"
+msgstr "Текст на отговор"
+
+msgid "attach"
+msgstr "Прикачи"
+
+msgid "attachments"
+msgstr "Прикачени файлове"
+
+msgid "upload"
+msgstr "Качи"
+
+msgid "uploadprogress"
+msgstr "$percent ($current от $total)"
+
+msgid "close"
+msgstr "Затвори"
+
+msgid "messageoptions"
+msgstr "Настройки на писма..."
+
+msgid "togglecomposeoptions"
+msgstr "Превключване опции за създаване"
+
+msgid "attachmentrename"
+msgstr "Преименуване на прикачен файл"
+
+msgid "low"
+msgstr "Нисък"
+
+msgid "lowest"
+msgstr "Най-нисък"
+
+msgid "normal"
+msgstr "Нормален"
+
+msgid "high"
+msgstr "Висок"
+
+msgid "highest"
+msgstr "Най-висок"
+
+msgid "nosubject"
+msgstr "(няма заглавие)"
+
+msgid "showimages"
+msgstr "Показвай изображения"
+
+msgid "allow"
+msgstr "Разреши"
+
+msgid "alwaysshow"
+msgstr "Винаги показвай изображения от $sender"
+
+msgid "alwaysallow"
+msgstr "Винаги разрешавай от $sender"
+
+msgid "isdraft"
+msgstr "Това писмо е чернова."
+
+msgid "andnmore"
+msgstr "още $nr..."
+
+msgid "details"
+msgstr "Детайли"
+
+msgid "summary"
+msgstr "Резюме"
+
+msgid "headers"
+msgstr "Заглавни блокове"
+
+msgid "allheaders"
+msgstr "Всички заглавни блокове"
+
+msgid "togglemoreheaders"
+msgstr "Покажи още заглавни блокове"
+
+msgid "togglefullheaders"
+msgstr "Изходни заглавни блокове"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Текстово"
+
+msgid "savesentmessagein"
+msgstr "Запази изпратеното писмо в"
+
+msgid "dontsave"
+msgstr "не запазвай"
+
+msgid "maxuploadsize"
+msgstr "Максимален размер на файл е $size"
+
+msgid "addcc"
+msgstr "Добави Копие до"
+
+msgid "addbcc"
+msgstr "Добави Скрито копие до"
+
+msgid "addreplyto"
+msgstr "Добави Отговор до"
+
+msgid "addfollowupto"
+msgstr "Добави Препращане към"
+
+msgid "sendreceipt"
+msgstr "Да се ​​изпрати ли обратна разписка?"
+
+msgid "mdnrequest"
+msgstr ""
+"Подателят е поискал да бъде уведомен, че сте прочели това писмо. Желаете ли "
+"да изпратите обратна разписка?"
+
+msgid "receiptread"
+msgstr "Обратна разписка (прочетено)"
+
+msgid "yourmessage"
+msgstr "Това е обратна разписка относно писмото Ви"
+
+msgid "receiptnote"
+msgstr ""
+"Забележка: Тази разписка потвърждава само, че писмото е било визуализирано "
+"на екрана на получателят. Няма никаква гаранция, че той е разбрал и/или дори"
+" прочел неговото съдържание."
+
+msgid "sendalwaysto"
+msgstr "Винаги изпращай до $email"
+
+msgid "zoomin"
+msgstr "Увеличаване"
+
+msgid "zoomout"
+msgstr "Намаляване"
+
+msgid "rotate"
+msgstr "Завъртане"
+
+msgid "increaseimage"
+msgstr "Увеличаване размера на изображението"
+
+msgid "decreaseimage"
+msgstr "Намаляване размера на изображението"
+
+msgid "rotateimage"
+msgstr "Завъртане на изображението"
+
+msgid "showtools"
+msgstr "Показване на инструменти за изображения"
+
+msgid "hidetools"
+msgstr "Скриване на инструменти за изображения"
+
+msgid "name"
+msgstr "Екранно име"
+
+msgid "firstname"
+msgstr "Име"
+
+msgid "surname"
+msgstr "Фамилия"
+
+msgid "middlename"
+msgstr "Презиме"
+
+msgid "nameprefix"
+msgstr "Титла"
+
+msgid "namesuffix"
+msgstr "Наставка"
+
+msgid "nickname"
+msgstr "Псевдоним"
+
+msgid "jobtitle"
+msgstr "Длъжност"
+
+msgid "department"
+msgstr "Отдел"
+
+msgid "gender"
+msgstr "Пол"
+
+msgid "maidenname"
+msgstr "Моминско име"
+
+msgid "email"
+msgstr "Ел. поща"
+
+msgid "phone"
+msgstr "Телефон"
+
+msgid "address"
+msgstr "Адрес"
+
+msgid "street"
+msgstr "Улица"
+
+msgid "locality"
+msgstr "Град"
+
+msgid "zipcode"
+msgstr "Пощенски код"
+
+msgid "region"
+msgstr "Област"
+
+msgid "country"
+msgstr "Държава"
+
+msgid "birthday"
+msgstr "Рожден ден"
+
+msgid "anniversary"
+msgstr "Дата годишнина"
+
+msgid "website"
+msgstr "Сайт"
+
+msgid "instantmessenger"
+msgstr "Месинджър"
+
+msgid "notes"
+msgstr "Бележки"
+
+msgid "male"
+msgstr "мъж"
+
+msgid "female"
+msgstr "жена"
+
+msgid "nonbinary"
+msgstr "небинарен"
+
+msgid "othergender"
+msgstr "друг"
+
+msgid "manager"
+msgstr "Мениджър"
+
+msgid "assistant"
+msgstr "Асистент"
+
+msgid "spouse"
+msgstr "Съпруг(а)"
+
+msgid "allfields"
+msgstr "Всички полета"
+
+msgid "search"
+msgstr "Търсене"
+
+msgid "searchresult"
+msgstr "Резултат от търсене"
+
+msgid "advsearch"
+msgstr "Разширено търсене"
+
+msgid "advanced"
+msgstr "Търси"
+
+msgid "other"
+msgstr "Други"
+
+msgid "printcontact"
+msgstr "Печат на контакт"
+
+msgid "qrcode"
+msgstr "QR Код"
+
+msgid "typehome"
+msgstr "Домашен"
+
+msgid "typework"
+msgstr "Служебен"
+
+msgid "typeother"
+msgstr "Друг"
+
+msgid "typemobile"
+msgstr "Мобилен"
+
+msgid "typemain"
+msgstr "Основен"
+
+msgid "typehomefax"
+msgstr "Домашен факс"
+
+msgid "typeworkfax"
+msgstr "Служебен факс"
+
+msgid "typecar"
+msgstr "В колата"
+
+msgid "typepager"
+msgstr "Пейджър"
+
+msgid "typevideo"
+msgstr "Със видео"
+
+msgid "typeassistant"
+msgstr "На асистент"
+
+msgid "typehomepage"
+msgstr "Личен"
+
+msgid "typeblog"
+msgstr "Блог"
+
+msgid "typeprofile"
+msgstr "Профил"
+
+msgid "addfield"
+msgstr "Добави поле..."
+
+msgid "addcontact"
+msgstr "Добави контакт"
+
+msgid "editcontact"
+msgstr "Редактирай контакт"
+
+msgid "contacts"
+msgstr "Контакти"
+
+msgid "contactproperties"
+msgstr "Данни на контакт"
+
+msgid "contactnameandorg"
+msgstr "Име и Организация"
+
+msgid "personalinfo"
+msgstr "Лична информация"
+
+msgid "personal"
+msgstr "Лична"
+
+msgid "contactphoto"
+msgstr "Снимка на контакт"
+
+msgid "edit"
+msgstr "Редактирай"
+
+msgid "cancel"
+msgstr "Отказ"
+
+msgid "save"
+msgstr "Запис"
+
+msgid "delete"
+msgstr "Изтрий"
+
+msgid "discard"
+msgstr "Изхвърли"
+
+msgid "continue"
+msgstr "Продължи"
+
+msgid "ok"
+msgstr "ОК"
+
+msgid "rename"
+msgstr "Преименувай"
+
+msgid "addphoto"
+msgstr "Добави"
+
+msgid "replacephoto"
+msgstr "Замени"
+
+msgid "uploadphoto"
+msgstr "Качване на снимка"
+
+msgid "choosefile"
+msgstr "Изберете файл..."
+
+msgid "choosefiles"
+msgstr "Изберете файлове..."
+
+msgid "browse"
+msgstr "Преглед"
+
+msgid "newcontact"
+msgstr "Създай нов контакт"
+
+msgid "deletecontact"
+msgstr "Изтрий избраните контакти"
+
+msgid "composeto"
+msgstr "Напиши писмо до"
+
+msgid "contactsfromto"
+msgstr "Контакти $from до $to от $count"
+
+msgid "print"
+msgstr "Печат"
+
+msgid "export"
+msgstr "Експорт"
+
+msgid "exportall"
+msgstr "Експортиране на всичко"
+
+msgid "exportsel"
+msgstr "Експортиране на избраното"
+
+msgid "exportvcards"
+msgstr "Експорт във vCard формат"
+
+msgid "newgroup"
+msgstr "Създай нова група"
+
+msgid "addgroup"
+msgstr "Добави група"
+
+msgid "grouprename"
+msgstr "Преименувай групата"
+
+msgid "groupdelete"
+msgstr "Изтрий групата"
+
+msgid "groupassign"
+msgstr "Добави към група..."
+
+msgid "groupremove"
+msgstr "Премахни от групата"
+
+msgid "groupremoveselected"
+msgstr "Премахни избраните контакти от групата"
+
+msgid "uponelevel"
+msgstr "Нагоре едно ниво"
+
+msgid "previouspage"
+msgstr "Предишна страница"
+
+msgid "firstpage"
+msgstr "Първа страница"
+
+msgid "nextpage"
+msgstr "Следваща страница"
+
+msgid "lastpage"
+msgstr "Последна страница"
+
+msgid "group"
+msgstr "Група"
+
+msgid "groups"
+msgstr "Групи"
+
+msgid "listgroup"
+msgstr "Покажи членове на групата"
+
+msgid "personaladrbook"
+msgstr "Лични адреси"
+
+msgid "searchsave"
+msgstr "Запази филтър"
+
+msgid "searchdelete"
+msgstr "Изтрий филтър"
+
+msgid "import"
+msgstr "Импорт"
+
+msgid "importcontacts"
+msgstr "Импортиране на контакти"
+
+msgid "importfromfile"
+msgstr "Импорт от файл"
+
+msgid "importtarget"
+msgstr "Добави контакти към"
+
+msgid "importreplace"
+msgstr "Замени цялата адресна книга"
+
+msgid "importgroups"
+msgstr "Импорт на задачи на група"
+
+msgid "importgroupsall"
+msgstr "Всички (създава групи ако е необходимо)"
+
+msgid "importgroupsexisting"
+msgstr "Само за съществуващите групи"
+
+msgid "importdesc"
+msgstr ""
+"Можете да качвате контакти от съществуваща адресна книга.<br/>В момента "
+"поддържаме импорт на адреси от формати <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> или CSV (comma-"
+"separated)."
+
+msgid "importmapdesc"
+msgstr ""
+"Уверете се, че информацията за свързване на полето по-долу е вярна, преди да"
+" продължите с импортирането на CSV (разделени със запетая) данни"
+
+msgid "fieldnotmapped"
+msgstr "Полето не е свързано (не импортирай)"
+
+msgid "skipheader"
+msgstr "Не импортирай първия ред (заглавки)"
+
+msgid "done"
+msgstr "Готово"
+
+msgid "birth_day"
+msgstr "Ден на раждане"
+
+msgid "birth_month"
+msgstr "Месец на раждане"
+
+msgid "birth_year"
+msgstr "Година на раждане"
+
+msgid "settingsfor"
+msgstr "Настройки за"
+
+msgid "about"
+msgstr "Относно"
+
+msgid "preferences"
+msgstr "Настройки"
+
+msgid "userpreferences"
+msgstr "Потребителски настройки"
+
+msgid "editpreferences"
+msgstr "Редактирай потребителските настройки"
+
+msgid "identities"
+msgstr "Самоличности"
+
+msgid "manageidentities"
+msgstr "Управление самоличности"
+
+msgid "newidentity"
+msgstr "Създай нова самоличност"
+
+msgid "addidentity"
+msgstr "Добави самоличност"
+
+msgid "editidentity"
+msgstr "Редактирай самоличност"
+
+msgid "identityencryption"
+msgstr "Криптиране"
+
+msgid "preferhtml"
+msgstr "Покажи първо HTML версия"
+
+msgid "defaultcharset"
+msgstr "Кодова таблица по подразбиране"
+
+msgid "htmlmessage"
+msgstr "HTML писмо"
+
+msgid "messagepart"
+msgstr "Част"
+
+msgid "digitalsig"
+msgstr "Електронен Подпис"
+
+msgid "dateformat"
+msgstr "Формат на дати"
+
+msgid "timeformat"
+msgstr "Формат на време"
+
+msgid "prettydate"
+msgstr "Удобни дати"
+
+msgid "setdefault"
+msgstr "По подразбиране"
+
+msgid "autodetect"
+msgstr "Автоматично"
+
+msgid "language"
+msgstr "Език"
+
+msgid "timezone"
+msgstr "Часова зона"
+
+msgid "pagesize"
+msgstr "Редове на страница"
+
+msgid "signature"
+msgstr "Подпис"
+
+msgid "dstactive"
+msgstr "Маркирай при лятно време"
+
+msgid "showinextwin"
+msgstr "Отваряй писмата в отделен прозорец"
+
+msgid "composeextwin"
+msgstr "Писане на ново писмо в отделен прозорец"
+
+msgid "htmleditor"
+msgstr "Писане на ново писмо като HTML"
+
+msgid "htmlonreply"
+msgstr "само при отговор на HTML писмо"
+
+msgid "htmlonreplyandforward"
+msgstr "само при препращане или отговор на HTML писмо"
+
+msgid "htmlsignature"
+msgstr "HTML подпис"
+
+msgid "showemail"
+msgstr "Показва адрес на ел. поща с екранното име"
+
+msgid "previewpane"
+msgstr "Показване на панел за преглед"
+
+msgid "skin"
+msgstr "Изглед на потребителски интерфейс"
+
+msgid "logoutclear"
+msgstr "Изпразни Кошчето при изход"
+
+msgid "logoutcompact"
+msgstr "Уплътни данни във Входящи при изход"
+
+msgid "uisettings"
+msgstr "Потребителски интерфейс"
+
+msgid "serversettings"
+msgstr "Настройки на сървъра"
+
+msgid "mailboxview"
+msgstr "Изглед на пощенска кутия"
+
+msgid "mdnrequests"
+msgstr "При искане за обратна разписка"
+
+msgid "askuser"
+msgstr "задай въпрос"
+
+msgid "autosend"
+msgstr "изпрати автоматично винаги"
+
+msgid "autosendknown"
+msgstr "изпрати автоматично само на моите контакти, иначе задай въпрос"
+
+msgid "autosendknownignore"
+msgstr "изпрати автоматично само на моите контакти, иначе отхвърли"
+
+msgid "autosendtrusted"
+msgstr ""
+"изпращай разписка на доверените податели, в противен случай ме попитай"
+
+msgid "autosendtrustedignore"
+msgstr "изпращай разписка на доверените податели, в противен случай игнорирай"
+
+msgid "ignorerequest"
+msgstr "игнорирай искането"
+
+msgid "readwhendeleted"
+msgstr "Маркирай писмото като прочетено при изтриване"
+
+msgid "flagfordeletion"
+msgstr "Отбележи писмото за изтриване"
+
+msgid "skipdeleted"
+msgstr "Не показвай изтритите писма"
+
+msgid "deletealways"
+msgstr "При неуспешно местене на писмо в Кошче, изтрий директно"
+
+msgid "deletejunk"
+msgstr "В папка Спам изтривай писмата без местене в Кошче"
+
+msgid "showremoteimages"
+msgstr "Покажи вградени изображения"
+
+msgid "allowremoteresources"
+msgstr "Разрешаване на отдалечени ресурси (изображения, стилове)"
+
+msgid "fromknownsenders"
+msgstr "от познати податели"
+
+msgid "fromtrustedsenders"
+msgstr "от доверени податели"
+
+msgid "frommycontacts"
+msgstr "от моите контакти"
+
+msgid "always"
+msgstr "винаги"
+
+msgid "alwaysbutplain"
+msgstr "винаги, освен когато е отговор на текстов формат"
+
+msgid "showinlineimages"
+msgstr "Покажи прикачените изображения след писмото"
+
+msgid "autosavedraft"
+msgstr "Автоматично записвай чернова"
+
+msgid "everynminutes"
+msgstr "през $n минути"
+
+msgid "refreshinterval"
+msgstr "Проверявай за нова поща"
+
+msgid "never"
+msgstr "никога"
+
+msgid "immediately"
+msgstr "веднага"
+
+msgid "messagesdisplaying"
+msgstr "Показване на писма"
+
+msgid "messagescomposition"
+msgstr "Писане на писма"
+
+msgid "mimeparamfolding"
+msgstr "Имена на прикачени файлове"
+
+msgid "2231folding"
+msgstr "Според RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Според RFC 2047 (други)"
+
+msgid "force7bit"
+msgstr "Използване на MIME кодиране за 8-битови символи"
+
+msgid "savelocalstorage"
+msgstr "Запазване в локално хранилище на баузъра (временно)"
+
+msgid "advancedoptions"
+msgstr "Разширени настройки"
+
+msgid "toggleadvancedoptions"
+msgstr "Превключване на разширени опции"
+
+msgid "focusonnewmessage"
+msgstr "Премигване на прозореца при ново писмо"
+
+msgid "checkallfolders"
+msgstr "Проверка за нови писма във всички папки "
+
+msgid "displaynext"
+msgstr "Покажи следващия запис от списъка след изтриване/преместване"
+
+msgid "defaultfont"
+msgstr "Шрифт по подразбиране за HTML писма"
+
+msgid "mainoptions"
+msgstr "Основни настройки"
+
+msgid "browseroptions"
+msgstr "Настройки на текущ браузър"
+
+msgid "section"
+msgstr "Секция"
+
+msgid "maintenance"
+msgstr "Поддръжка папки"
+
+msgid "newmessage"
+msgstr "Ново писмо"
+
+msgid "signatureoptions"
+msgstr "Настройки на подпис"
+
+msgid "whenreplying"
+msgstr "При отговор на писмо"
+
+msgid "replyempty"
+msgstr "не цитирай оригиналното писмо"
+
+msgid "replytopposting"
+msgstr "започни новото писмо над цитата"
+
+msgid "replytoppostingnoindent"
+msgstr "започни новото писмо над цитата (no indentation)"
+
+msgid "replybottomposting"
+msgstr "започни новото писмо след цитата"
+
+msgid "replyremovesignature"
+msgstr "При отговор на писмо премахни предишния подпис"
+
+msgid "autoaddsignature"
+msgstr "Автоматично добавяй подпис"
+
+msgid "newmessageonly"
+msgstr "само на нови писма"
+
+msgid "replyandforwardonly"
+msgstr "само на отговори и препратени"
+
+msgid "insertsignature"
+msgstr "Вмъкване на подпис"
+
+msgid "sigbelow"
+msgstr "Постави подписа след цитираното съобщение"
+
+msgid "sigseparator"
+msgstr "Използвай стандартен разделител в подписите"
+
+msgid "automarkread"
+msgstr "Маркиране на писмата като прочетени"
+
+msgid "afternseconds"
+msgstr "след $n секунди"
+
+msgid "reqmdn"
+msgstr "Винаги изисквай обратна разписка"
+
+msgid "reqdsn"
+msgstr "Винаги изисквай статус доставка на писмото"
+
+msgid "alwayskeepformatting"
+msgstr "Винаги съхранявай оригиналното форматиране на текста"
+
+msgid "replysamefolder"
+msgstr "Постави отговор в папка на писмото, на което се отговаря"
+
+msgid "defaultabook"
+msgstr "Адресна книга по подразбиране"
+
+msgid "autocompletesingle"
+msgstr "Пропусни алтернативни адреси на ел. поща при автоматично попълване"
+
+msgid "listnamedisplay"
+msgstr "Форматирай списък с контакти като"
+
+msgid "contactformmode"
+msgstr "Режим на форма за контакт"
+
+msgid "privatemode"
+msgstr "Личен (Домашен)"
+
+msgid "businessmode"
+msgstr "Бизнес (Служебен)"
+
+msgid "collectedaddresses"
+msgstr "Събрани адреси"
+
+msgid "collectedrecipients"
+msgstr "Събрани Получатели"
+
+msgid "collectedrecipientsopt"
+msgstr "Съхранявай получателите на изходящи писма в"
+
+msgid "collectedsendersopt"
+msgstr "Съхранявай доверените податели в"
+
+msgid "trustedsenders"
+msgstr "Доверени Податели"
+
+msgid "spellcheckbeforesend"
+msgstr "Провери за правописни грешки преди изпращане на писмото"
+
+msgid "spellcheckoptions"
+msgstr "Настройки на проверката за правопис"
+
+msgid "spellcheckignoresyms"
+msgstr "Игнорирай думи съдържащи символи"
+
+msgid "spellcheckignorenums"
+msgstr "Игнорирай думи съдържащи числа"
+
+msgid "spellcheckignorecaps"
+msgstr "Игнорирай думи съдържащи единствено главни букви"
+
+msgid "addtodict"
+msgstr "Добави в речника"
+
+msgid "editoroptions"
+msgstr "Опции на редактора"
+
+msgid "enableautolink"
+msgstr "Автоматично конвертиране на валидни адреси в хиперлинкове"
+
+msgid "mailtoprotohandler"
+msgstr ""
+"Регистрирай RoundCube като интернет приложение, което обработва mailto: "
+"връзките в браузъра"
+
+msgid "standardwindows"
+msgstr "Обработва изскачащи прозорци като стандартни прозорци"
+
+msgid "forwardmode"
+msgstr "Препращай писмата"
+
+msgid "inline"
+msgstr "цитирани в писмото"
+
+msgid "asattachment"
+msgstr "като прикачен файл"
+
+msgid "replyallmode"
+msgstr "Действие по подразбиране на бутон [Отговор на всички]"
+
+msgid "replyalldefault"
+msgstr "отговори на всички"
+
+msgid "replyalllist"
+msgstr "отговори само на пощенския списък (ако има)"
+
+msgid "allmessages"
+msgstr "за всички писма"
+
+msgid "olderxdays"
+msgstr "по-стари от $x дни"
+
+msgid "folder"
+msgstr "Папка"
+
+msgid "folders"
+msgstr "Папки"
+
+msgid "foldername"
+msgstr "Име на папката"
+
+msgid "subscribed"
+msgstr "Абониран"
+
+msgid "messagecount"
+msgstr "Писма"
+
+msgid "create"
+msgstr "Създай"
+
+msgid "createfolder"
+msgstr "Нова папка"
+
+msgid "managefolders"
+msgstr "Управление на папките"
+
+msgid "specialfolders"
+msgstr "Служебни папки"
+
+msgid "properties"
+msgstr "Данни"
+
+msgid "folderproperties"
+msgstr "Свойства на папката"
+
+msgid "parentfolder"
+msgstr "Основна папка"
+
+msgid "location"
+msgstr "Местоположение"
+
+msgid "info"
+msgstr "Информация"
+
+msgid "getfoldersize"
+msgstr "Щракни за размер на папката"
+
+msgid "changesubscription"
+msgstr "Щракни за промяна на абонамент"
+
+msgid "foldertype"
+msgstr "Вид на папката"
+
+msgid "personalfolder"
+msgstr "Лична папка"
+
+msgid "otherfolder"
+msgstr "Папка на друг потребител"
+
+msgid "sharedfolder"
+msgstr "Публична папка"
+
+msgid "findfolders"
+msgstr "Търсене на папки"
+
+msgid "findcontacts"
+msgstr "Търсене на контакти"
+
+msgid "findmail"
+msgstr "Търсене на писма"
+
+msgid "namespace.personal"
+msgstr "Лична"
+
+msgid "namespace.other"
+msgstr "Други потребители"
+
+msgid "namespace.shared"
+msgstr "Споделена"
+
+msgid "dualuselabel"
+msgstr "Може да съдържа само"
+
+msgid "dualusemail"
+msgstr "писма"
+
+msgid "dualusefolder"
+msgstr "папки"
+
+msgid "generate"
+msgstr "Генериране"
+
+msgid "encryptioncreatekey"
+msgstr "Създай нова ключова двойка"
+
+msgid "openmailvelopesettings"
+msgstr "Отвори настройки на Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Имате $nr съвпадащи частни ключа, съхранени във вашия Mailvelope "
+"ключодържател:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Тази самоличност на подателя все още няма частен PGP ключ, съхраняван във "
+"вашето Mailvelope разширение. Искате ли да създадете такъв, за да използвате"
+" криптирани писма?"
+
+msgid "encryption"
+msgstr "Криптиране"
+
+msgid "mailvelopeoptions"
+msgstr "Настройки на Mailvelope"
+
+msgid "mailvelopemainkeyring"
+msgstr "Използвай основния ключодържател на Mailvelope"
+
+msgid "mailvelopenotfound"
+msgstr ""
+"Разширението Mailvelope не е активирано/инсталирано във вашия браузър."
+
+msgid "mailvelopeenable"
+msgstr "Разреши"
+
+msgid "sortby"
+msgstr "Сортирай по"
+
+msgid "sortasc"
+msgstr "Сортирай нарастващо"
+
+msgid "sortdesc"
+msgstr "Сортирай намаляващо"
+
+msgid "undo"
+msgstr "Отмени"
+
+msgid "installedplugins"
+msgstr "Инсталирани добавки"
+
+msgid "plugin"
+msgstr "Добавка"
+
+msgid "version"
+msgstr "Версия"
+
+msgid "source"
+msgstr "Източник"
+
+msgid "destination"
+msgstr "Цел"
+
+msgid "license"
+msgstr "Лиценз"
+
+msgid "skinauthor"
+msgstr "по $author"
+
+msgid "support"
+msgstr "Поддръжка"
+
+msgid "savedsearches"
+msgstr "Запазени търсения"
+
+msgid "dateformatY"
+msgstr "ГГГГ"
+
+msgid "dateformaty"
+msgstr "ГГ"
+
+msgid "dateformatm"
+msgstr "ММ"
+
+msgid "dateformatd"
+msgstr "ДД"
+
+msgid "dateformatj"
+msgstr "Д"
+
+msgid "dateformatn"
+msgstr "М"
+
+msgid "B"
+msgstr "Б"
+
+msgid "KB"
+msgstr "КБ"
+
+msgid "MB"
+msgstr "МБ"
+
+msgid "GB"
+msgstr "ГБ"
+
+msgid "unicode"
+msgstr "Уникод"
+
+msgid "english"
+msgstr "Английски"
+
+msgid "westerneuropean"
+msgstr "Западна Европа"
+
+msgid "easterneuropean"
+msgstr "Източна Европа"
+
+msgid "southeasterneuropean"
+msgstr "Югоизточна Европа"
+
+msgid "baltic"
+msgstr "Балтийски"
+
+msgid "cyrillic"
+msgstr "Кирилица"
+
+msgid "arabic"
+msgstr "Арабски"
+
+msgid "greek"
+msgstr "Гръцки"
+
+msgid "hebrew"
+msgstr "Иврит"
+
+msgid "turkish"
+msgstr "Турски"
+
+msgid "nordic"
+msgstr "Скандинавски"
+
+msgid "thai"
+msgstr "Тайландски"
+
+msgid "celtic"
+msgstr "Келтски"
+
+msgid "vietnamese"
+msgstr "Виетнамски"
+
+msgid "japanese"
+msgstr "Японски"
+
+msgid "korean"
+msgstr "Корейски"
+
+msgid "chinese"
+msgstr "Китайски"
+
+msgid "arialabeltopnav"
+msgstr "Контрол на прозорците"
+
+msgid "arialabeltasknav"
+msgstr "Задачи на приложението"
+
+msgid "arialabeltoolbar"
+msgstr "Ленти с инструменти"
+
+msgid "arialabellistnav"
+msgstr "Навигация на cписък"
+
+msgid "arialabelactivetask"
+msgstr "Активна задача"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Филтър на списък с писма"
+
+msgid "arialabelmailsearchform"
+msgstr "Форма за търсене на писма"
+
+msgid "arialabelcontactsearchform"
+msgstr "Форма за търсене на контакти"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Поле за търсене на писма"
+
+msgid "arialabelquicksearchbox"
+msgstr "Поле за търсене"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Филтър за списък папки"
+
+msgid "arialabelfoldersearchform"
+msgstr "Форма за търсене в папки"
+
+msgid "arialabelfolderlist"
+msgstr "Избор на папка с писма"
+
+msgid "arialabelmessagelist"
+msgstr "Списък с писма"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Преглед на писмо"
+
+msgid "arialabelmailboxmenu"
+msgstr "Меню с действия върху папка"
+
+msgid "arialabellistselectmenu"
+msgstr "Меню за избор в списък"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Меню за списък с кореспонденции"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Опции за преглед и сортиране на списък с писма"
+
+msgid "arialabelmailimportdialog"
+msgstr "Диалог за импорт на писма"
+
+msgid "arialabelmessagenav"
+msgstr "Навигация на писма"
+
+msgid "arialabelmessagebody"
+msgstr "Текст на писмо"
+
+msgid "arialabelmessageactions"
+msgstr "Действия за писмо"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Форма за търсене на контакти"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Поле за търсене на контакт"
+
+msgid "arialabelmessageheaders"
+msgstr "Заглавни блокове на писмо"
+
+msgid "arialabelforwardingoptions"
+msgstr "Настройки за препращане"
+
+msgid "arialabelreplyalloptions"
+msgstr "Настройки за отговор към всички"
+
+msgid "arialabelmoremessageactions"
+msgstr "Още действия с писмо"
+
+msgid "arialabelmorecontactactions"
+msgstr "Още действия с контакт"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Маркирай избраните писма като..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Настройки за създаване"
+
+msgid "arialabelresponsesmenu"
+msgstr "Меню с готови отговори"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Форма за качване на прикачени файлове"
+
+msgid "arialabelattachmentmenu"
+msgstr "Настройки на прикачени файлове"
+
+msgid "arialabelmailtomenu"
+msgstr "Настройки на адреса на ел. поща"
+
+msgid "arialabelattachmentpreview"
+msgstr "Преглед на прикачени файлове"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Списък с контакти и групи за избор като получатели"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Настройки за експорт на контакти"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Настройки на адресна книга/групи"
+
+msgid "arialabelpreferencesform"
+msgstr "Форма с предпочитания"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Форма редакция на самоличност"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Форма редакция на отговор"
+
+msgid "arialabelsearchterms"
+msgstr "Търсене за"
+
+msgid "arialabeldropactionmenu"
+msgstr "Меню за действие Drag-n-Drop"
+
+msgid "arialabelheadersmenu"
+msgstr "Меню за Добавяне получател (заглавен блок)"
+
+msgid "arialabelimagetools"
+msgstr "Инструменти за изображения"
+
+msgid "helplistnavigation"
+msgstr "Списък за клавиатурна навигация"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Стрелки нагоре/надолу: Премества фокус/избран ред.\n"
+"Интервал: Избор на фокусиран ред.\n"
+"Shift + нагоре/надолу: Добавяне към избраните на реда отгоре/отдолу.\n"
+"Ctrl + Интервал: Добавяне на фокусирания ред към избраните/премахване от избраните."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Стрелки надясно/наляво: Разпъване/сгъване на писмата на кореспонденцията (само в изглед по кореспонденции).\n"
+"Enter: Отваряне на избраното/фокусираното писмо.\n"
+"Delete: Премества избраните писва в Кошче."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Отваряне на избрания/фокусирания контакт."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Възникна грешка!"
+
+msgid "messages.loginfailed"
+msgstr "Неуспешно установяване на самоличност."
+
+msgid "messages.cookiesdisabled"
+msgstr "Вашият браузър не приема cookies."
+
+msgid "messages.sessionerror"
+msgstr "Невалидна или изтекла сесия."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Открито е несъответствие с „бисквитките“. Моля, изчистете „бисквитките“ на "
+"браузъра си."
+
+msgid "messages.storageerror"
+msgstr "Неуспешно свързване към сървър с данни."
+
+msgid "messages.servererror"
+msgstr "Сървърна грешка!"
+
+msgid "messages.servererrormsg"
+msgstr "Сървърна грешка: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+"Твърде много неуспешни опити за установяване на самоличност. Моля изчакайте "
+"временното заключване на профила Ви преди да опитате отново."
+
+msgid "messages.connerror"
+msgstr "Неуспешно свързване (Сървърът не е намерен)"
+
+msgid "messages.dberror"
+msgstr "Грешка в база данни!"
+
+msgid "messages.dbconnerror"
+msgstr "Неуспешно свързване с базата данни!"
+
+msgid "messages.windowopenerror"
+msgstr "Изскачащият прозорец беше блокиран!"
+
+msgid "messages.requesttimedout"
+msgstr "Изтекло време за изпълнение на заявката"
+
+msgid "messages.errorreadonly"
+msgstr ""
+"Невъзможно изпълнение на операцията. Папката е с права само за четене."
+
+msgid "messages.errornoperm"
+msgstr "Невъзможно изпълнение на операцията. Отказани права за достъп."
+
+msgid "messages.erroroverquota"
+msgstr ""
+"Невъзможно извършване на операцията. Няма достатъчно свободно дисково "
+"пространство."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Няма достатъчно свободно дисково пространство. Ползвайте Shift+Del за да "
+"изтриете писма."
+
+msgid "messages.invalidrequest"
+msgstr "Невалидна заявка! Данните не са съхранени."
+
+msgid "messages.invalidhost"
+msgstr "Невалидно име на сървър."
+
+msgid "messages.nomessagesfound"
+msgstr "Няма намерени писма в тази папка."
+
+msgid "messages.loggedout"
+msgstr "Сесията е прекратена успешно. Довиждане!"
+
+msgid "messages.mailboxempty"
+msgstr "Пощенската кутия е празна"
+
+msgid "messages.nomessages"
+msgstr "Няма писма"
+
+msgid "messages.refreshing"
+msgstr "Обновяване..."
+
+msgid "messages.loading"
+msgstr "Зареждане..."
+
+msgid "messages.uploading"
+msgstr "Качване на файл..."
+
+msgid "messages.attaching"
+msgstr "Качване на прикачен на файл..."
+
+msgid "messages.uploadingmany"
+msgstr "Качване на файлове..."
+
+msgid "messages.loadingdata"
+msgstr "Зареждане на данни..."
+
+msgid "messages.checkingmail"
+msgstr "Проверка за нови писма..."
+
+msgid "messages.sendingmessage"
+msgstr "Изпращане на писмо..."
+
+msgid "messages.messagesent"
+msgstr "Писмото е изпратено успешно."
+
+msgid "messages.savingmessage"
+msgstr "Записване на писмо..."
+
+msgid "messages.messagesaved"
+msgstr "Писмото е записано в Чернови."
+
+msgid "messages.successfullysaved"
+msgstr "Успешен запис."
+
+msgid "messages.savingresponse"
+msgstr "Записване текст на отговор..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Желаете ли да изтриете текст за отговор?"
+
+msgid "messages.nocontactselected"
+msgstr "Все още не сте избрали контакт."
+
+msgid "messages.addedsuccessfully"
+msgstr "Контактът е добавен в адресната книга."
+
+msgid "messages.contactexists"
+msgstr "Вече съществува контакт с този адрес на ел. поща."
+
+msgid "messages.contactnameexists"
+msgstr "Вече съществува контакт с това име."
+
+msgid "messages.blockedimages"
+msgstr "С оглед на Вашата сигурност, изображенията в това писмо са блокирани."
+
+msgid "messages.blockedresources"
+msgstr "С оглед на Вашата сигурност, отдалечените ресурси са блокирани."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Това писмо съдържа подозрителни имейл адреси, които може да са подправени."
+
+msgid "messages.bccemail"
+msgstr "Препратените писма съдържат поверителни получатели (Ск)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Писмото ще бъде изпратено без никакви модификации, т.е. използвайки "
+"оригиналните тяло, заглавки и получатели."
+
+msgid "messages.encryptedmessage"
+msgstr "Това е кодирано писмо и не може да бъде показано. Съжаляваме!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Това е кодирано писмо и може да бъде декодирано с разширение на браузъра."
+
+msgid "messages.nopubkeyfor"
+msgstr "Не е намерен валиден публичен ключ за $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Не е намерен валиден публичен ключ за самоличността на подателя. Желаете ли "
+"да кодирате писмото само за получателите?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Невъзможно кодиране на вече прикачени файлове. Моля качете ги отново през "
+"редактора за кодиране."
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+"Желаете ли да потърсите на сървъри за публични ключове за липсващите "
+"ключове?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Следващите публични ключове са намерени:"
+
+msgid "messages.keyservererror"
+msgstr "Невъзможно получаване на ключ от сървъра."
+
+msgid "messages.keyimportsuccess"
+msgstr "Публичният ключ $key е импортиран във Вашия ключодържател успешно."
+
+msgid "messages.nocontactsfound"
+msgstr "Няма намерени контакти."
+
+msgid "messages.contactnotfound"
+msgstr "Търсеният контакт не е намерен."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Трябва да използвате формата за търсене, за да видите контактите от "
+"избраната адресна книга."
+
+msgid "messages.sendingfailed"
+msgstr "Неуспешно изпращане на писмо."
+
+msgid "messages.senttooquickly"
+msgstr "Моля изчакайте $sec секунди преди да изпратите писмото."
+
+msgid "messages.errorsavingsent"
+msgstr "Възникна грешка при записване на изпратеното писмо."
+
+msgid "messages.errorsaving"
+msgstr "Възникна грешка при записването."
+
+msgid "messages.errormoving"
+msgstr "Писмото не може да бъде преместено."
+
+msgid "messages.errorcopying"
+msgstr "Писмото не може да бъде копирано."
+
+msgid "messages.errordeleting"
+msgstr "Писмото не може да бъде изтрито."
+
+msgid "messages.errormarking"
+msgstr "Писмото не може да бъде маркирано."
+
+msgid "messages.alerttitle"
+msgstr "Внимание"
+
+msgid "messages.confirmationtitle"
+msgstr "Сигурни ли сте..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Желаете ли да изтриете маркираните контакти?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Желаете ли да изтриете избраната група?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Желаете ли да изтриете маркираните писма?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Желаете ли да изтриете тази папка?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Желаете ли да преместите тази папка?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Желаете ли да изтриете всички писма в тази папка?"
+
+msgid "messages.contactdeleting"
+msgstr "Изтриване на контакти..."
+
+msgid "messages.groupdeleting"
+msgstr "Изтриване на група..."
+
+msgid "messages.folderdeleting"
+msgstr "Изтриване на папка..."
+
+msgid "messages.foldermoving"
+msgstr "Преместване на папка..."
+
+msgid "messages.foldersubscribing"
+msgstr "Абониране за папка..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Отписване от папка..."
+
+msgid "messages.formincomplete"
+msgstr "Не сте попълнили всички полета."
+
+msgid "messages.noemailwarning"
+msgstr "Моля въведете валиден адрес на ел. поща."
+
+msgid "messages.nonamewarning"
+msgstr "Моля въведете име."
+
+msgid "messages.nopagesizewarning"
+msgstr "Въведете брой редове на страница."
+
+msgid "messages.nosenderwarning"
+msgstr "Моля въведете валиден адрес на ел. поща на подателя."
+
+msgid "messages.recipientsadded"
+msgstr "Получателят е добавен успешно."
+
+msgid "messages.norecipientwarning"
+msgstr "Моля въведете поне един получател."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Всички получатели ще виждат взаимно имейл адресите си. За да предотвратите "
+"това и да защитите тяхната поверителност, можете да използвате полето Скрито"
+" копие до."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Твърде много публични получатели"
+
+msgid "messages.nosubjectwarning"
+msgstr "Полето \"Заглавие\" е празно. Желаете ли да въведете заглавие сега?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Няма Заглавие"
+
+msgid "messages.nobodywarning"
+msgstr "Изпрати това писмо без текст?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Писмото не е изпратено и съдържа незапазени промени. Желаете ли да бъде "
+"унищожено?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Намерено е неизпратено писмо, което е било в процес на "
+"създаване.\\n\\nОтносно: $subject\\nЗапазено на: $date\\n\\nЖелаете ли да "
+"възстановите писмото?"
+
+msgid "messages.nosearchname"
+msgstr "Моля въведете име на контакта или адрес на ел. поща."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Все още не са качени всички прикачени файлове. Моля изчакайте или откажете "
+"качването."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr писма намерени."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr контакта намерени."
+
+msgid "messages.searchnomatch"
+msgstr "Няма съвпадения от търсенето."
+
+msgid "messages.searching"
+msgstr "Търсене..."
+
+msgid "messages.checking"
+msgstr "Проверка..."
+
+msgid "messages.stillsearching"
+msgstr "Търсенето продължава..."
+
+msgid "messages.nospellerrors"
+msgstr "Не са открити правописни грешки."
+
+msgid "messages.folderdeleted"
+msgstr "Папката е изтрита успешно."
+
+msgid "messages.foldersubscribed"
+msgstr "Абонирането за папката е успешно."
+
+msgid "messages.folderunsubscribed"
+msgstr "Отписването от папката е успешно."
+
+msgid "messages.folderpurged"
+msgstr "Папката е изпразнена успешно."
+
+msgid "messages.folderexpunged"
+msgstr "Папката е уплътнена успешно."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Изтриването е успешно."
+
+msgid "messages.converting"
+msgstr "Премахване форматиране на писмото..."
+
+msgid "messages.messageopenerror"
+msgstr "Невъзможно зареждане на писмото от сървъра."
+
+msgid "messages.filelinkerror"
+msgstr "Грешка при качване на файл."
+
+msgid "messages.fileuploaderror"
+msgstr "Грешка при качване на файл."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"Импортирането на множество CSV файлове с различни полета не се поддържа."
+
+msgid "messages.filesizeerror"
+msgstr "Прикаченият файл надвишава лимита от $size."
+
+msgid "messages.filecounterror"
+msgstr "Можете да качите не повече от $count файла едновременно"
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Грешка при качване на прикачен файл. Макс. допустим размер на писмо от "
+"($size) e надвишен."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Максималният размер на писмо ($size) е превишен. $num писма не са прикачени."
+
+msgid "messages.copysuccess"
+msgstr "Успешно копирани $nr контакта."
+
+msgid "messages.movesuccess"
+msgstr "Успешно преместени $nr контакта."
+
+msgid "messages.copyerror"
+msgstr "Невъзможно копиране на контакти."
+
+msgid "messages.moveerror"
+msgstr "Невъзможно преместване на контакти."
+
+msgid "messages.sourceisreadonly"
+msgstr "Този източник на адреси е само за четене."
+
+msgid "messages.errorsavingcontact"
+msgstr "Грешка при записване на адреса."
+
+msgid "messages.movingmessage"
+msgstr "Преместване на писма..."
+
+msgid "messages.copyingmessage"
+msgstr "Копиране на писма..."
+
+msgid "messages.copyingcontact"
+msgstr "Копиране на контакти..."
+
+msgid "messages.movingcontact"
+msgstr "Преместване на контакти..."
+
+msgid "messages.deletingmessage"
+msgstr "Изтриване на писма..."
+
+msgid "messages.markingmessage"
+msgstr "Маркиране на писма..."
+
+msgid "messages.addingmember"
+msgstr "Добавяне на контакти в групата..."
+
+msgid "messages.removingmember"
+msgstr "Премахване на контакти от групата..."
+
+msgid "messages.receiptsent"
+msgstr "Обратната разписка е изпратена успешно."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Невъзможно изпращането на обратна разписка."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Наистина ли желаете да изтриете тази самоличност?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Невъзможно изтриване на тази самоличност, трябва да имате поне една."
+
+msgid "messages.forbiddencharacter"
+msgstr "Името на папка съдържа непозволени символи."
+
+msgid "messages.selectimportfile"
+msgstr "Моля изберете файл за качване."
+
+msgid "messages.addresswriterror"
+msgstr "Избраната адресна книга не може да бъде модифицирана."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Контактите бяха добавени към групата успешно."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Контактите бяха премахнати от групата успешно."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Няма променени групови задачи."
+
+msgid "messages.importwait"
+msgstr "Импортиране, моля изчакайте..."
+
+msgid "messages.importformaterror"
+msgstr "Неуспешен импорт! Данните в каченият файл не са във валиден формат."
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>Успешно са импортирани $inserted контакта, вече съществуващите $skipped "
+"контакта са пропуснати</b>:<p><em>$names</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>Пропуснати са $skipped съществуващи записи</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>Пропуснати са $skipped невалидни записи</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "<b>Невъзмоно импортиране на $errors валидни записи</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "Успешно импортирани $nr писма"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Неуспешен импорт! Каченият файл не е валиден файл на писма или пощенска "
+"кутия"
+
+msgid "messages.opnotpermitted"
+msgstr "Непозволена операция!"
+
+msgid "messages.nofromaddress"
+msgstr "Липсва адрес на ел. поща за избраната самоличност."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Превключване на типа на редактора може да доведе до загуба на форматиране на"
+" текста. Желаете ли да продължите?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Фатална конфигурационна грешка. Моля свържете се с Вашия администратор. "
+"<b>Писмото не може да бъде изпратено.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP грешка ($code): Няма връзка със сървъра."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP грешка ($code): Грешни потребител/парола."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP грешка ($code): Не може да бъде изпратено писмо от \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP грешка ($code): Не може да бъде изпратено писмо до \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP грешка: Не може да бъде обработен списъка с получатели."
+
+msgid "messages.smtputf8error"
+msgstr "SMTP грешка: Сървърът не поддържа Unicode в имейл адреса."
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+"SMTP грешка: Размерът на писмото надвишава ограничението на сървъра ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP грешка: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Невалиден адрес на ел. поща: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Прекалено много адреси за изпращане (максимум: $max)."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Броят на членовете на групата е повече от максималния: $max."
+
+msgid "messages.internalerror"
+msgstr "Възникна вътрешна грешка. Моля опитайте отново."
+
+msgid "messages.contactdelerror"
+msgstr "Невъзможно изтриване на контакти."
+
+msgid "messages.contactdeleted"
+msgstr "Контактът беше изтрит успешно."
+
+msgid "messages.contactrestoreerror"
+msgstr "Неуспешно възстановяване на изтритите контакти."
+
+msgid "messages.contactrestored"
+msgstr "Контактът е възстановен успешно."
+
+msgid "messages.groupdeleted"
+msgstr "Групата беше изтрита успешно."
+
+msgid "messages.grouprenamed"
+msgstr "Групата беше преименувана успешно."
+
+msgid "messages.groupcreated"
+msgstr "Групата беше създадена успешно."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Запазените филтри са изтрити успешно."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Невъзможно изтриване на запазените филтри."
+
+msgid "messages.savedsearchcreated"
+msgstr "Запазените филтри са създадени успешно."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Невъзможно създаване на запазен филтър."
+
+msgid "messages.messagedeleted"
+msgstr "Писмото е изтрито успешно."
+
+msgid "messages.messagemoved"
+msgstr "Писмото е преместено успешно."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Писмото е преместено в Кошчето успешно."
+
+msgid "messages.messagecopied"
+msgstr "Писмото е копирано успешно."
+
+msgid "messages.messagemarked"
+msgstr "Писмото е маркирано успешно."
+
+msgid "messages.autocompletechars"
+msgstr "Въведете минимум $min знака, за да започне автоматичното попълване."
+
+msgid "messages.autocompletemore"
+msgstr "Намерените съвпадения са прекалено много. Моля въведете повече текст."
+
+msgid "messages.namecannotbeempty"
+msgstr "Полето за име не може да бъде празно."
+
+msgid "messages.nametoolong"
+msgstr "Името е прекалено дълго."
+
+msgid "messages.namedotforbidden"
+msgstr "Името на папката не може да започва с точка"
+
+msgid "messages.folderupdated"
+msgstr "Папката е модифицирана успешно."
+
+msgid "messages.foldercreated"
+msgstr "Папката е създадена успешно."
+
+msgid "messages.invalidimageformat"
+msgstr "Невалиден формат на изображението."
+
+msgid "messages.mispellingsfound"
+msgstr "В писмото са намерени правописни грешки."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Неуспешно създаването/преместването на папка в избраната основна папка. Няма"
+" права за достъп."
+
+msgid "messages.messagetoobig"
+msgstr "Писмото е прекалено голямо, за да бъде обработено."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Прикаченият файл е подозрителен, защото типът му не съвпада с този, който е "
+"деклариран в писмото. Ако не се доверявате на подателя, не трябва да го "
+"отваряте в браузъра, защото може да съдържа зловредно "
+"съдържание.<br/><br/><em>Очакван тип: $expected; открит тип: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"ВНИМАНИЕ! Тази пощенска услуга изисква JavaScript за да функционира "
+"коректно. Моля включете поддръжката на JavaScript в настройките на текущия "
+"браузър."
+
+msgid "messages.messageissent"
+msgstr ""
+"Писмото беше изпратено, но все още не е запазено. Желаете ли да го запазите "
+"сега?"
+
+msgid "messages.errnotfound"
+msgstr "Файлът не е намерен"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Търсеният ресурс не е намерен"
+
+msgid "messages.errfailedrequest"
+msgstr "Грешка при обръщение"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Грешка при установяване на права"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Невъзможно установяване на права за достъп до тази услуга!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Грешка при проверка на заявка"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"С цел повишаване нивото на сигурност достъпът да този ресурс е защитен против CSRF.\n"
+"Ако виждате това съобщение, значи вероятно не сте излезли от системата преди да напуснете страницата на самото приложение.\n"
+"\n"
+"За да продължите по-нататък се изисква човешка намеса."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Моля свържете се с администратор на сървъра."
+
+msgid "messages.clicktoresumesession"
+msgstr "Щракнете тук за да възстановите предишната си сесия."
+
+msgid "messages.errcomposesession"
+msgstr "Грешка при сесията за писане"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Заявената сесия за писане не е намерена."
+
+msgid "messages.clicktocompose"
+msgstr "Натисни тук, за да започнеш ново писмо"
+
+msgid "messages.nosupporterror"
+msgstr "Тази функция не се поддържа от уеб браузъра ви."
+
+msgid "messages.siginserted"
+msgstr "Подписът е вмъкнат успешно."
+
+msgid "messages.responseinserted"
+msgstr "Отговорът е вмъкнат успешно."
+
+msgid "messages.noresponsesavailable"
+msgstr "Няма налични отговори"
+
+msgid "messages.listempty"
+msgstr "Списъкът е празен."
+
+msgid "messages.listusebutton"
+msgstr "Използвайте бутона Създай, за да добавите нов запис."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Успешно е създадена нова двойка ключове за $identity."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Изглежда, че този прикачен файл е празен.<br>Моля, консултирайте се с "
+"лицето, което го е изпратило."
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth автентикацията не бе успешна. Моля опитайте отново."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Заявката за оторизация е невалидна или непълна"
+
+msgid "messages.oauthaccessdenied"
+msgstr "Оторизационният сървър или потребителят отказаха заявката"

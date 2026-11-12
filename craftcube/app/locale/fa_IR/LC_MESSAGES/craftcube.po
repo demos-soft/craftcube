@@ -1,0 +1,2848 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "به $product خوش آمدید"
+
+msgid "username"
+msgstr "نام‌کاربری"
+
+msgid "password"
+msgstr "گذرواژه"
+
+msgid "server"
+msgstr "سرور"
+
+msgid "login"
+msgstr "ورود"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr "فهرست"
+
+msgid "logout"
+msgstr "خروج"
+
+msgid "mail"
+msgstr "پست"
+
+msgid "settings"
+msgstr "تنظیمات"
+
+msgid "addressbook"
+msgstr "دفتر نشانی"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "صندوق ورودی"
+
+msgid "drafts"
+msgstr "پیش‌نویس‌ها"
+
+msgid "sent"
+msgstr "ارسال شده"
+
+msgid "trash"
+msgstr "زباله‌دان"
+
+msgid "junk"
+msgstr "بنجل"
+
+msgid "show_real_foldernames"
+msgstr "نمایش نام‌های واقعی برای پوشه‌های ویژه"
+
+msgid "subject"
+msgstr "موضوع"
+
+msgid "from"
+msgstr "از"
+
+msgid "sender"
+msgstr "فرستنده"
+
+msgid "to"
+msgstr "به"
+
+msgid "cc"
+msgstr "رونوشت"
+
+msgid "bcc"
+msgstr "رونوشت مخفی"
+
+msgid "replyto"
+msgstr "پاسخ-به"
+
+msgid "followupto"
+msgstr "پیگیری-در"
+
+msgid "date"
+msgstr "تاریخ"
+
+msgid "size"
+msgstr "اندازه"
+
+msgid "priority"
+msgstr "اولویت"
+
+msgid "organization"
+msgstr "سازمان"
+
+msgid "readstatus"
+msgstr "وضعیت خوانده شدن"
+
+msgid "listoptions"
+msgstr "فهرست گزینه‌ها..."
+
+msgid "listoptionstitle"
+msgstr "گزینه‌های لیست"
+
+msgid "mailboxlist"
+msgstr "پوشه‌ها"
+
+msgid "messagesfromto"
+msgstr "پیغام‌های $from تا $to از $count"
+
+msgid "threadsfromto"
+msgstr "رشته‌های $from تا $to از $count"
+
+msgid "messagenrof"
+msgstr "پیغام $nr از $count"
+
+msgid "fromtoshort"
+msgstr "$from - $to از $count"
+
+msgid "copy"
+msgstr "رونوشت"
+
+msgid "move"
+msgstr "انتقال"
+
+msgid "moveto"
+msgstr "انتقال به..."
+
+msgid "copyto"
+msgstr "رونوشت به..."
+
+msgid "download"
+msgstr "بارگیری"
+
+msgid "open"
+msgstr "باز کردن"
+
+msgid "showattachment"
+msgstr "نمایش"
+
+msgid "showanyway"
+msgstr "نمایش آن در هر صورت"
+
+msgid "filename"
+msgstr "نام پرونده"
+
+msgid "filesize"
+msgstr "اندازه پرونده"
+
+msgid "addtoaddressbook"
+msgstr "افزودن به دفتر نشانی‌ها"
+
+msgid "sun"
+msgstr "یک‌شنبه"
+
+msgid "mon"
+msgstr "دوشنبه"
+
+msgid "tue"
+msgstr "سه‌شنبه"
+
+msgid "wed"
+msgstr "چهارشنبه"
+
+msgid "thu"
+msgstr "پنج‌شنبه"
+
+msgid "fri"
+msgstr "جمعه"
+
+msgid "sat"
+msgstr "شنبه"
+
+msgid "sunday"
+msgstr "یک‌شنبه"
+
+msgid "monday"
+msgstr "دوشنبه"
+
+msgid "tuesday"
+msgstr "سه‌شنبه"
+
+msgid "wednesday"
+msgstr "چهارشنبه"
+
+msgid "thursday"
+msgstr "پنج‌شنبه"
+
+msgid "friday"
+msgstr "جمعه"
+
+msgid "saturday"
+msgstr "شنبه"
+
+msgid "jan"
+msgstr "ژان"
+
+msgid "feb"
+msgstr "فور"
+
+msgid "mar"
+msgstr "مار"
+
+msgid "apr"
+msgstr "آور"
+
+msgid "may"
+msgstr "مه"
+
+msgid "jun"
+msgstr "ژون"
+
+msgid "jul"
+msgstr "ژوی"
+
+msgid "aug"
+msgstr "اوت"
+
+msgid "sep"
+msgstr "سپت"
+
+msgid "oct"
+msgstr "اُکت"
+
+msgid "nov"
+msgstr "نوا"
+
+msgid "dec"
+msgstr "دسا"
+
+msgid "longjan"
+msgstr "ژانویه"
+
+msgid "longfeb"
+msgstr "فوریه"
+
+msgid "longmar"
+msgstr "مارس"
+
+msgid "longapr"
+msgstr "آوریل"
+
+msgid "longmay"
+msgstr "می"
+
+msgid "longjun"
+msgstr "ژوئن"
+
+msgid "longjul"
+msgstr "جولای"
+
+msgid "longaug"
+msgstr "آگوست"
+
+msgid "longsep"
+msgstr "سپتامبر"
+
+msgid "longoct"
+msgstr "اکتبر"
+
+msgid "longnov"
+msgstr "نوامبر"
+
+msgid "longdec"
+msgstr "دسامبر"
+
+msgid "today"
+msgstr "امروز"
+
+msgid "refresh"
+msgstr "نوسازی"
+
+msgid "checkmail"
+msgstr "بررسی برای پیام‌های جدید"
+
+msgid "compose"
+msgstr "نوشتن پیام"
+
+msgid "writenewmessage"
+msgstr "ایجاد پیام جدید"
+
+msgid "reply"
+msgstr "پاسخ"
+
+msgid "replytomessage"
+msgstr "پاسخ به فرستنده"
+
+msgid "replytoallmessage"
+msgstr "پاسخ به فهرست یا به فرستنده و تمام گیرنده‌ها"
+
+msgid "replyall"
+msgstr "پاسخ به همه"
+
+msgid "replylist"
+msgstr "پاسخ به فهرست"
+
+msgid "forward"
+msgstr "ارجاع"
+
+msgid "forwardinline"
+msgstr "ارجاع خطی"
+
+msgid "forwardattachment"
+msgstr "ارجاع به صورت پیوست"
+
+msgid "forwardmessage"
+msgstr "ارجاع پیام"
+
+msgid "bouncemsg"
+msgstr "ارسال مجدد (پرش)"
+
+msgid "bounce"
+msgstr "ارسال مجدد"
+
+msgid "deletemessage"
+msgstr "حذف پیغام"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "انتقال پیغام به زباله‌دان"
+
+msgid "printmessage"
+msgstr "چاپ این پیغام"
+
+msgid "previousmessage"
+msgstr "نمایش پیغام قبلی"
+
+msgid "firstmessage"
+msgstr "نمایش پیغام اول"
+
+msgid "nextmessage"
+msgstr "نمایش پیغام بعدی"
+
+msgid "lastmessage"
+msgstr "نمایش پیغام آخر"
+
+msgid "backtolist"
+msgstr "بازگشت به فهرست پیغام"
+
+msgid "viewsource"
+msgstr "نمایش منبع"
+
+msgid "mark"
+msgstr "نشانه‌گذاری"
+
+msgid "markmessages"
+msgstr "نشانه‌گذاری پیغام‌ها"
+
+msgid "markread"
+msgstr "به عنوان خوانده‌شده"
+
+msgid "markunread"
+msgstr "به عنوان خوانده‌نشده"
+
+msgid "markflagged"
+msgstr "به عنوان پرچم‌دار"
+
+msgid "markunflagged"
+msgstr "به عنوان بدون پرچم"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "کارهای دیگر..."
+
+msgid "markallread"
+msgstr "علامت‌گذاری همه به عنوان خوانده‌شده"
+
+msgid "folders-cur"
+msgstr "فقط پوشه‌های انتخاب‌شده"
+
+msgid "folders-sub"
+msgstr "پوشه‌ی انتخاب‌شده و زیرپوشه‌های‌ آن"
+
+msgid "folders-all"
+msgstr "همه پوشه‌ها"
+
+msgid "more"
+msgstr "بيشتر"
+
+msgid "back"
+msgstr "بازگشت"
+
+msgid "options"
+msgstr "گزینه‌ها"
+
+msgid "composeoptions"
+msgstr "تنظیمات نوشتن"
+
+msgid "optionsandattachments"
+msgstr "گزینه‌ها و پیوست‌ها"
+
+msgid "actions"
+msgstr "اقدام‌ها"
+
+msgid "first"
+msgstr "اول"
+
+msgid "last"
+msgstr "آخر"
+
+msgid "previous"
+msgstr "قبل"
+
+msgid "next"
+msgstr "بعد"
+
+msgid "select"
+msgstr "انتخاب"
+
+msgid "selection"
+msgstr "انتخاب"
+
+msgid "all"
+msgstr "همه"
+
+msgid "none"
+msgstr "هیچ‌کدام"
+
+msgid "currpage"
+msgstr "صفحه جاری"
+
+msgid "isread"
+msgstr "خوانده شده"
+
+msgid "unread"
+msgstr "خوانده‌نشده"
+
+msgid "flagged"
+msgstr "پرچم‌دار"
+
+msgid "unflagged"
+msgstr "بدون پرچم"
+
+msgid "unanswered"
+msgstr "پاسخ داده نشده"
+
+msgid "withattachment"
+msgstr "با پیوست"
+
+msgid "deleted"
+msgstr "حذف شده"
+
+msgid "undeleted"
+msgstr "حذف نشده"
+
+msgid "replied"
+msgstr "پاسخ داده شده"
+
+msgid "forwarded"
+msgstr "ارجاع داده شده"
+
+msgid "invert"
+msgstr "وارونه"
+
+msgid "filter"
+msgstr "صافی"
+
+msgid "list"
+msgstr "فهرست"
+
+msgid "threads"
+msgstr "رشته‌ها"
+
+msgid "expand-all"
+msgstr "باز کردن همه"
+
+msgid "expand-unread"
+msgstr "بازکردن خوانده نشده‌ها"
+
+msgid "collapse-all"
+msgstr "جمع کردن همه"
+
+msgid "threaded"
+msgstr "رشته شده"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "باز کردن رشته‌های پیام"
+
+msgid "do_expand"
+msgstr "همه رشته‌ها"
+
+msgid "expand_only_unread"
+msgstr "فقط با پیام‌های خوانده نشده"
+
+msgid "fromto"
+msgstr "از/به"
+
+msgid "flag"
+msgstr "پرچم"
+
+msgid "attachment"
+msgstr "پیوست"
+
+msgid "nonesort"
+msgstr "هیچ‌کدام"
+
+msgid "sentdate"
+msgstr "تاریخ ارسال"
+
+msgid "arrival"
+msgstr "تاریخ ورود"
+
+msgid "asc"
+msgstr "صعودی"
+
+msgid "desc"
+msgstr "نزولی"
+
+msgid "listcolumns"
+msgstr "ستون‌های فهرست"
+
+msgid "listsorting"
+msgstr "ستون مرتب‌سازی"
+
+msgid "listorder"
+msgstr "ترتیب مرتب‌سازی"
+
+msgid "listmode"
+msgstr "نوع مشاهده فهرست"
+
+msgid "lmode"
+msgstr "حالت لیست"
+
+msgid "layout"
+msgstr "چیدمان"
+
+msgid "layoutwidescreen"
+msgstr "عریض"
+
+msgid "layoutdesktop"
+msgstr "رومیزی"
+
+msgid "layoutlist"
+msgstr "لیست"
+
+msgid "layoutwidescreendesc"
+msgstr "صفحه‌ی عریض (نمایش ۳ ستونی)"
+
+msgid "layoutdesktopdesc"
+msgstr "رومیزی (لیست عریض و پیش‌نمایش ایمیل در زیر)"
+
+msgid "layoutlistdesc"
+msgstr "لیست (بدون پیش‌نمایش ایمیل)"
+
+msgid "folderactions"
+msgstr "اعمال پوشه..."
+
+msgid "compact"
+msgstr "فشرده"
+
+msgid "empty"
+msgstr "خالی"
+
+msgid "importmessages"
+msgstr "وارد کردن پیام‌ها"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "فضای استفاده شده"
+
+msgid "unknown"
+msgstr "ناشناخته"
+
+msgid "unlimited"
+msgstr "نامحدود"
+
+msgid "quotatype"
+msgstr "نوع سهمیه"
+
+msgid "quotatotal"
+msgstr "محدود کردن"
+
+msgid "quotaused"
+msgstr "استفاده شده"
+
+msgid "quotastorage"
+msgstr "فضای دیسک"
+
+msgid "quotamessage"
+msgstr "تعداد پیغام‌ها"
+
+msgid "shortheaderdate"
+msgstr "در $date"
+
+msgid "shortheaderto"
+msgstr "به $to در $date"
+
+msgid "shortheaderfrom"
+msgstr "از $from در $date"
+
+msgid "quicksearch"
+msgstr "جستجوی سریع"
+
+msgid "searchplaceholder"
+msgstr "جستجو..."
+
+msgid "resetsearch"
+msgstr "جستجوی دوباره"
+
+msgid "searchmod"
+msgstr "اصلاحات جستجو"
+
+msgid "msgtext"
+msgstr "کل پیام"
+
+msgid "body"
+msgstr "بدنه"
+
+msgid "type"
+msgstr "نوع"
+
+msgid "namex"
+msgstr "نام"
+
+msgid "searchscope"
+msgstr "حوزه"
+
+msgid "currentfolder"
+msgstr "پوشه جاری"
+
+msgid "subfolders"
+msgstr "این و زیرپوشه‌ها"
+
+msgid "allfolders"
+msgstr "همه پوشه‌ها"
+
+msgid "searchinterval-1W"
+msgstr "قدیمی‌تر از یک هفته"
+
+msgid "searchinterval-1M"
+msgstr "قدیمی‌تر از یک ماه"
+
+msgid "searchinterval-1Y"
+msgstr "قدیمی‌تر از یک سال"
+
+msgid "searchinterval1W"
+msgstr "جدیدتر از یک هفته"
+
+msgid "searchinterval1M"
+msgstr "جدیدتر از یک ماه"
+
+msgid "searchinterval1Y"
+msgstr "جدیدتر از یک سال"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "باز کردن در پنجره‌ی جدید"
+
+msgid "emlsave"
+msgstr "بارگیری (.eml)"
+
+msgid "changeformattext"
+msgstr "نمایش در قالب متنی"
+
+msgid "changeformathtml"
+msgstr "نمایش در قالب اچ‌تی‌ام‌ال"
+
+msgid "editasnew"
+msgstr "ویرایش به عنوان جدید"
+
+msgid "send"
+msgstr "ارسال"
+
+msgid "sendmessage"
+msgstr "ارسال پیغام"
+
+msgid "savemessage"
+msgstr "ذخیره پیش‌نویس"
+
+msgid "addattachment"
+msgstr "پیوست کردن یک پرونده"
+
+msgid "charset"
+msgstr "مجموعه‌نمایه"
+
+msgid "editortype"
+msgstr "نوع ویرایش‌گر"
+
+msgid "returnreceipt"
+msgstr "رسید دریافت"
+
+msgid "dsn"
+msgstr "اعلام وضعیت دریافت"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "در $date، $sender نوشته است:"
+
+msgid "originalmessage"
+msgstr "پیام اصلی"
+
+msgid "selectimage"
+msgstr "انتخاب تصویر"
+
+msgid "addimage"
+msgstr "افزودن تصویر"
+
+msgid "selectmedia"
+msgstr "انتخاب فیلم"
+
+msgid "addmedia"
+msgstr "افزودن رسانه"
+
+msgid "encrypt"
+msgstr "رمزگذاری"
+
+msgid "encryptmessage"
+msgstr "رمزگذاری پیغام"
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr "کلید شناسه"
+
+msgid "keylength"
+msgstr "بیت‌ها"
+
+msgid "keyexpired"
+msgstr "منقضی شده"
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "جاگذارى"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "گیرنده"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "ویرایش شناسه‌ها"
+
+msgid "spellcheck"
+msgstr "املاء"
+
+msgid "checkspelling"
+msgstr "بررسی املایی"
+
+msgid "resumeediting"
+msgstr "ادامه‌ی ویرایش"
+
+msgid "revertto"
+msgstr "برگرداندن به"
+
+msgid "restore"
+msgstr "بازیابی"
+
+msgid "restoremessage"
+msgstr "بازیابی پیام؟"
+
+msgid "ignore"
+msgstr "نادیده گرفتن"
+
+msgid "responses"
+msgstr "پاسخ‌ها"
+
+msgid "insertresponse"
+msgstr "درج پاسخ"
+
+msgid "manageresponses"
+msgstr "مدیریت پاسخ‌ها"
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr "افزودن پاسخ"
+
+msgid "editresponse"
+msgstr "ویرایش پاسخ"
+
+msgid "editresponses"
+msgstr "ویرایش پاسخ‌ها"
+
+msgid "responsename"
+msgstr "نام"
+
+msgid "responsetext"
+msgstr "متن پاسخ"
+
+msgid "attach"
+msgstr "پیوست کردن"
+
+msgid "attachments"
+msgstr "پیوست‌ها"
+
+msgid "upload"
+msgstr "بارگذاری"
+
+msgid "uploadprogress"
+msgstr "$percent ($current از $total)"
+
+msgid "close"
+msgstr "بستن"
+
+msgid "messageoptions"
+msgstr "گزینه‌های پیام..."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "کم"
+
+msgid "lowest"
+msgstr "کم‌ترین"
+
+msgid "normal"
+msgstr "معمولی"
+
+msgid "high"
+msgstr "زیاد"
+
+msgid "highest"
+msgstr "بیش‌ترین"
+
+msgid "nosubject"
+msgstr "(بدون موضوع)"
+
+msgid "showimages"
+msgstr "نمایش عکس‌ها"
+
+msgid "allow"
+msgstr "اجازه دادن"
+
+msgid "alwaysshow"
+msgstr "همیشه عکس‌های دریافتی از $sender را نمایش داده شود"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "این یک پیغام پیش‌نویس است."
+
+msgid "andnmore"
+msgstr "$nr بیشتر..."
+
+msgid "details"
+msgstr "جزییات"
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr "سربرگ‌ها"
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "نمایش سربرگ‌های بیشتر پیام"
+
+msgid "togglefullheaders"
+msgstr "تعویض سربرگ‌های پیام خام"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "متن ساده"
+
+msgid "savesentmessagein"
+msgstr "ذخیره پیام ارسالی در"
+
+msgid "dontsave"
+msgstr "ذخیره نکن"
+
+msgid "maxuploadsize"
+msgstr "حجم پرونده حداکثر تا میزان $size می‌باشد"
+
+msgid "addcc"
+msgstr "افزودن رونوشت"
+
+msgid "addbcc"
+msgstr "افزودن رونوشت مخفی"
+
+msgid "addreplyto"
+msgstr "افزودن پاسخ-به"
+
+msgid "addfollowupto"
+msgstr "افزودن پیگیری-به"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"فرستنده‌ی این پیام خواسته است که وقتی شما این پیام را می‌خوانید، آگاه شود. "
+"آیا مایلید فرستنده را آگاه سازید؟"
+
+msgid "receiptread"
+msgstr "رسید دریافت (خواندن)"
+
+msgid "yourmessage"
+msgstr "این یک رسید دریافت برای پیام شماست"
+
+msgid "receiptnote"
+msgstr ""
+"تذکر: این رسید فقط تصدیق می‌کند که پیام، روی رایانه گیرنده نمایش داده شده "
+"است. هیچ تضمینی نیست که گیرنده، محتوای پیام را خوانده یا فهمیده باشد."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr "بزرگنمایی"
+
+msgid "zoomout"
+msgstr "کوچکنمایی"
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "نمایش نام"
+
+msgid "firstname"
+msgstr "نام"
+
+msgid "surname"
+msgstr "نام خانوادگی"
+
+msgid "middlename"
+msgstr "نام وسط"
+
+msgid "nameprefix"
+msgstr "پیشوند"
+
+msgid "namesuffix"
+msgstr "پسوند"
+
+msgid "nickname"
+msgstr "نام مستعار"
+
+msgid "jobtitle"
+msgstr "عنوان شغل"
+
+msgid "department"
+msgstr "بخش"
+
+msgid "gender"
+msgstr "جنسیت"
+
+msgid "maidenname"
+msgstr "نام خانوادگی زن قبل از ازدواج"
+
+msgid "email"
+msgstr "پست‌الکترونیک"
+
+msgid "phone"
+msgstr "تلفن"
+
+msgid "address"
+msgstr "نشانی"
+
+msgid "street"
+msgstr "خیابان"
+
+msgid "locality"
+msgstr "شهر"
+
+msgid "zipcode"
+msgstr "کدپستی"
+
+msgid "region"
+msgstr "ایالت/استان"
+
+msgid "country"
+msgstr "کشور"
+
+msgid "birthday"
+msgstr "زادروز"
+
+msgid "anniversary"
+msgstr "سالگرد"
+
+msgid "website"
+msgstr "وب‌سایت"
+
+msgid "instantmessenger"
+msgstr "پیام‌رسان"
+
+msgid "notes"
+msgstr "یادداشت‌ها"
+
+msgid "male"
+msgstr "مرد"
+
+msgid "female"
+msgstr "زن"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "مدیر"
+
+msgid "assistant"
+msgstr "دستیار"
+
+msgid "spouse"
+msgstr "همسر"
+
+msgid "allfields"
+msgstr "همه زمینه‌ها"
+
+msgid "search"
+msgstr "جستجو"
+
+msgid "searchresult"
+msgstr "نتیجه جستجو"
+
+msgid "advsearch"
+msgstr "جستجوی پیشرفته"
+
+msgid "advanced"
+msgstr "پیشرفته"
+
+msgid "other"
+msgstr "سایر"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr "کد کیوآر"
+
+msgid "typehome"
+msgstr "خانه"
+
+msgid "typework"
+msgstr "کار"
+
+msgid "typeother"
+msgstr "سایر"
+
+msgid "typemobile"
+msgstr "تلفن همراه"
+
+msgid "typemain"
+msgstr "اصلی"
+
+msgid "typehomefax"
+msgstr "فاکس خانگی"
+
+msgid "typeworkfax"
+msgstr "فاکس کاری"
+
+msgid "typecar"
+msgstr "اتومبیل"
+
+msgid "typepager"
+msgstr "پیجر"
+
+msgid "typevideo"
+msgstr "ویدئو"
+
+msgid "typeassistant"
+msgstr "دستیار"
+
+msgid "typehomepage"
+msgstr "صفحه خانگی"
+
+msgid "typeblog"
+msgstr "بلاگ"
+
+msgid "typeprofile"
+msgstr "نمایه"
+
+msgid "addfield"
+msgstr "افزودن زمینه..."
+
+msgid "addcontact"
+msgstr "افزودن تماس"
+
+msgid "editcontact"
+msgstr "ویرایش تماس"
+
+msgid "contacts"
+msgstr "تماس‌ها"
+
+msgid "contactproperties"
+msgstr "خصوصیات تماس"
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr "اطلاعات شخصی"
+
+msgid "personal"
+msgstr "شخصی"
+
+msgid "contactphoto"
+msgstr "تصویر تماس"
+
+msgid "edit"
+msgstr "ویرایش"
+
+msgid "cancel"
+msgstr "لغو"
+
+msgid "save"
+msgstr "ذخیره"
+
+msgid "delete"
+msgstr "حذف"
+
+msgid "discard"
+msgstr "دور انداختن"
+
+msgid "continue"
+msgstr "ادامه"
+
+msgid "ok"
+msgstr "بسیارخوب"
+
+msgid "rename"
+msgstr "تغییر نام"
+
+msgid "addphoto"
+msgstr "افزودن"
+
+msgid "replacephoto"
+msgstr "جایگزینی"
+
+msgid "uploadphoto"
+msgstr "بارگذاری تصویر"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr "مرور"
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr "حذف تماس‌های انتخاب شده"
+
+msgid "composeto"
+msgstr "نوشتن پست به"
+
+msgid "contactsfromto"
+msgstr "تماس‌های $from تا $to از $count"
+
+msgid "print"
+msgstr "چاپ"
+
+msgid "export"
+msgstr "صدور"
+
+msgid "exportall"
+msgstr "خارج کردن همه"
+
+msgid "exportsel"
+msgstr "خارج کردن انتخاب شده‌ها"
+
+msgid "exportvcards"
+msgstr "صدور اطلاعات تماس‌ها با فرمت vCard"
+
+msgid "newgroup"
+msgstr "ایجاد گروه جدید"
+
+msgid "addgroup"
+msgstr "افزودن گروه"
+
+msgid "grouprename"
+msgstr "تغییر نام گروه"
+
+msgid "groupdelete"
+msgstr "حذف گروه"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "حذف نشانی‌های انتخاب شده از گروه"
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "نمایش صفحه قبلی"
+
+msgid "firstpage"
+msgstr "نمایش صفحه اول"
+
+msgid "nextpage"
+msgstr "نمایش صفحه بعدی"
+
+msgid "lastpage"
+msgstr "نمایش صفحه آخر"
+
+msgid "group"
+msgstr "گروه"
+
+msgid "groups"
+msgstr "گروه‌ها"
+
+msgid "listgroup"
+msgstr "فهرست اعضاء گروه"
+
+msgid "personaladrbook"
+msgstr "نشانی‌های شخصی"
+
+msgid "searchsave"
+msgstr "ذخیره جستجو"
+
+msgid "searchdelete"
+msgstr "حذف جستجو"
+
+msgid "import"
+msgstr "وارد کردن"
+
+msgid "importcontacts"
+msgstr "وارد کردن تماس‌ها"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "افزودن تماس‌ها به"
+
+msgid "importreplace"
+msgstr "جایگیزینی کامل دفتر نشانی"
+
+msgid "importgroups"
+msgstr "وارد کردن وظایف گروه"
+
+msgid "importgroupsall"
+msgstr "همه (ایجاد گروه‌ها در صورت نیاز)"
+
+msgid "importgroupsexisting"
+msgstr "فقط برای گروه‌های موجود"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "انجام شد"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "تنظیمات برای"
+
+msgid "about"
+msgstr "درباره"
+
+msgid "preferences"
+msgstr "ترجیحات"
+
+msgid "userpreferences"
+msgstr "ترجیحات کاربر"
+
+msgid "editpreferences"
+msgstr "ویرایش ترجیحات کاربر"
+
+msgid "identities"
+msgstr "شناسه‌ها"
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr "افزودن هویت"
+
+msgid "editidentity"
+msgstr "ویرایش شناسه"
+
+msgid "identityencryption"
+msgstr "رمزگذاری"
+
+msgid "preferhtml"
+msgstr "HTML نمایش"
+
+msgid "defaultcharset"
+msgstr "مجموعه نمایه پیش‌فرض"
+
+msgid "htmlmessage"
+msgstr "پیغام HTML"
+
+msgid "messagepart"
+msgstr "قسمت"
+
+msgid "digitalsig"
+msgstr "امضای دیجیتال"
+
+msgid "dateformat"
+msgstr "قالب تاریخ"
+
+msgid "timeformat"
+msgstr "قالب زمان"
+
+msgid "prettydate"
+msgstr "تاریخ‌های زیبا"
+
+msgid "setdefault"
+msgstr "پیش‌فرض کن"
+
+msgid "autodetect"
+msgstr "خودکار"
+
+msgid "language"
+msgstr "زبان"
+
+msgid "timezone"
+msgstr "محدوده‌ی زمانی"
+
+msgid "pagesize"
+msgstr "سطر در صفحه"
+
+msgid "signature"
+msgstr "امضاء"
+
+msgid "dstactive"
+msgstr "ساعت تابستانی"
+
+msgid "showinextwin"
+msgstr "نمایش پیام در پنجره جدید"
+
+msgid "composeextwin"
+msgstr "نوشتن پیام  در پنجره جدید"
+
+msgid "htmleditor"
+msgstr "نوشتن پیام‌های HTML"
+
+msgid "htmlonreply"
+msgstr "فقط در پاسخ به پیام HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "در بازگردانی یا پاسخ به پیام‌های HTML"
+
+msgid "htmlsignature"
+msgstr "امضای HTML"
+
+msgid "showemail"
+msgstr "نمایش نشانی رایانامه با نام نمایشی"
+
+msgid "previewpane"
+msgstr "نمایش قاب پیش‌نمایش"
+
+msgid "skin"
+msgstr "پوسته ظاهری"
+
+msgid "logoutclear"
+msgstr "تمیز کردن زباله دان هنگام برون‌رفت"
+
+msgid "logoutcompact"
+msgstr "فشرده‌سازی صندوق در هنگام خروچ"
+
+msgid "uisettings"
+msgstr "محیط کاربری"
+
+msgid "serversettings"
+msgstr "تنظیمات سرور"
+
+msgid "mailboxview"
+msgstr "نمای صندوق پستی"
+
+msgid "mdnrequests"
+msgstr "تاییدهای فرستنده"
+
+msgid "askuser"
+msgstr "پرسش از کاربر"
+
+msgid "autosend"
+msgstr "ارسال رسید"
+
+msgid "autosendknown"
+msgstr "ارسال رسید به تماس‌های من، در غیر این صورت سوال کن"
+
+msgid "autosendknownignore"
+msgstr "ارسال رسید به تماس‌های من، درغیر این صورت چشم‌پوشی کن"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "در هنگام پاک کردن، پیام را به عنوان خوانده شده علامت بزن"
+
+msgid "flagfordeletion"
+msgstr "پیام را به جای پاک کردن، با پرچم نشانه‌گذاری کن"
+
+msgid "skipdeleted"
+msgstr "پیام‌های حذف شده را نمایش نده"
+
+msgid "deletealways"
+msgstr "اگر انتقال پیام به زباله‌دان ناموفق بود، آن‌ها را حذف کن"
+
+msgid "deletejunk"
+msgstr "حذف مستقیم پیام‌های زباله"
+
+msgid "showremoteimages"
+msgstr "تصاویر پیوند شده را نمایش بده"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "از فرستنده شناس"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "همواره"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "نمایش عکس‌های پیوست شده در پایین پیام"
+
+msgid "autosavedraft"
+msgstr "ذخیره‌ی خودکار پیش‌نویس"
+
+msgid "everynminutes"
+msgstr "در هر $n دقیقه"
+
+msgid "refreshinterval"
+msgstr "تازه کردن (بررسی برای پیام‌های جدید، مثلا)"
+
+msgid "never"
+msgstr "هرگز"
+
+msgid "immediately"
+msgstr "بلافاصله"
+
+msgid "messagesdisplaying"
+msgstr "نمای پیام‌ها"
+
+msgid "messagescomposition"
+msgstr "نوشتن پیام‌ها"
+
+msgid "mimeparamfolding"
+msgstr "عناوین پیوستی"
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (سایر)"
+
+msgid "force7bit"
+msgstr "از MIME encoding برای کارکترهای ۸-بیتی استفاده کن"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "گزینه‌های پیشرفته"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "مشخص نمودن پیام جدید"
+
+msgid "checkallfolders"
+msgstr "همه پوشه‌ها را برای مشاهده پیام‌های جدید بررسی کن"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "فونت پیش فرض برای پیام HTML"
+
+msgid "mainoptions"
+msgstr "گزینه‌های اصلی"
+
+msgid "browseroptions"
+msgstr "گزینه‌‌های مرورگر"
+
+msgid "section"
+msgstr "بخش"
+
+msgid "maintenance"
+msgstr "نگهداشت"
+
+msgid "newmessage"
+msgstr "پیام جدید"
+
+msgid "signatureoptions"
+msgstr "گزینه‌های امضاء"
+
+msgid "whenreplying"
+msgstr "هنگام پاسخ"
+
+msgid "replyempty"
+msgstr "نقل قول نکردن پیام اصلی"
+
+msgid "replytopposting"
+msgstr "شروع پیام جدید بالای اصلی"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "شروع پیام جدید پایین اصلی"
+
+msgid "replyremovesignature"
+msgstr "هنگام پاسخ امضاء اصلی را از پیام پاک کن"
+
+msgid "autoaddsignature"
+msgstr "اضافه کردن خودکار امضاء"
+
+msgid "newmessageonly"
+msgstr "فقط پیام جدید"
+
+msgid "replyandforwardonly"
+msgstr "فقط پاسخ‌ها و ارجاع‌ها"
+
+msgid "insertsignature"
+msgstr "درج امضاء"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "بعد از $s ثانیه"
+
+msgid "reqmdn"
+msgstr "درخواست همیشگی رسید برگشت"
+
+msgid "reqdsn"
+msgstr "درخواست همیشگی تذکر وضعیت تحویل"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "پاسخ‌ها را در پوشه‌ای پیام‌هایی که باید پاسخ داده شود گرفته بده."
+
+msgid "defaultabook"
+msgstr "دفترچه نشانی پیش‌فرض"
+
+msgid "autocompletesingle"
+msgstr "رد کردن نشانی‌های رایانامه دیگر در تکمیل خودکار"
+
+msgid "listnamedisplay"
+msgstr "فهرست تماس‌ها به عنوان"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "بررسی املایی قبل از ارسال پیام"
+
+msgid "spellcheckoptions"
+msgstr "گزینه‌های بررسی املاء"
+
+msgid "spellcheckignoresyms"
+msgstr "نادیده گرفتن کلمات دارای نماد"
+
+msgid "spellcheckignorenums"
+msgstr "نادیده گرفتن کلمات دارای عدد"
+
+msgid "spellcheckignorecaps"
+msgstr "نادیده گرفتن کلمات با حروف بزرگ"
+
+msgid "addtodict"
+msgstr "اضافه کردن به واژه‌نامه"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "ثبت نگه‌دارنده پروتوکل برای mailto: پیوندها"
+
+msgid "standardwindows"
+msgstr "بکار بردن پاپ‌آپ‌ها به صورت پنجره‌ی استاندارد"
+
+msgid "forwardmode"
+msgstr "بازگردانی پیام"
+
+msgid "inline"
+msgstr "خطی"
+
+msgid "asattachment"
+msgstr "به عنوان پیوست"
+
+msgid "replyallmode"
+msgstr "عمل پیش‌فرض برای دکمه [پاسخ به همه]"
+
+msgid "replyalldefault"
+msgstr "پاسخ به همه"
+
+msgid "replyalllist"
+msgstr "پاسخ به فقط لیست پستی (در صورت یافتن)"
+
+msgid "allmessages"
+msgstr "همه پیام ها"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "پوشه"
+
+msgid "folders"
+msgstr "پوشه‌ها"
+
+msgid "foldername"
+msgstr "نام پوشه"
+
+msgid "subscribed"
+msgstr "مشترک شد"
+
+msgid "messagecount"
+msgstr "پیام‌ها"
+
+msgid "create"
+msgstr "ایجاد"
+
+msgid "createfolder"
+msgstr "ایجاد پوشه‌ی جدید"
+
+msgid "managefolders"
+msgstr "مدیریت پوشه‌ها"
+
+msgid "specialfolders"
+msgstr "پوشه‌های ویژه"
+
+msgid "properties"
+msgstr "خصوصیات"
+
+msgid "folderproperties"
+msgstr "خصوصیات پوشه"
+
+msgid "parentfolder"
+msgstr "پوشه والد"
+
+msgid "location"
+msgstr "موقعیت"
+
+msgid "info"
+msgstr "اطلاعات"
+
+msgid "getfoldersize"
+msgstr "برای فهمیدن حجم پوشه کلیک کنید"
+
+msgid "changesubscription"
+msgstr "برای تغییر اشتراک کلیک کنید"
+
+msgid "foldertype"
+msgstr "نوع پوشه"
+
+msgid "personalfolder"
+msgstr "پوشه خصوصی"
+
+msgid "otherfolder"
+msgstr "پوشه کاربران دیگر"
+
+msgid "sharedfolder"
+msgstr "پوشه عمومی"
+
+msgid "findfolders"
+msgstr "پیدا کردن پوشه"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr "شخصی"
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr "پیغام‌ها"
+
+msgid "dualusefolder"
+msgstr "پوشه‌ها"
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr "رمزگذاری"
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "مرتب‌سازی بر اساس"
+
+msgid "sortasc"
+msgstr "مرتب‌سازی صعودی"
+
+msgid "sortdesc"
+msgstr "مرتب‌سازی نزولی"
+
+msgid "undo"
+msgstr "برگردان"
+
+msgid "installedplugins"
+msgstr "افزونه‌های نصب شده"
+
+msgid "plugin"
+msgstr "افزونه"
+
+msgid "version"
+msgstr "نسخه"
+
+msgid "source"
+msgstr "منبع"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "گواهینامه"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "پشتیبانی"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "یونیکد"
+
+msgid "english"
+msgstr "انگلیسی"
+
+msgid "westerneuropean"
+msgstr "اروپای غربی"
+
+msgid "easterneuropean"
+msgstr "اروپای شرقی"
+
+msgid "southeasterneuropean"
+msgstr "اروپای جنوب شرقی"
+
+msgid "baltic"
+msgstr "بالتیک"
+
+msgid "cyrillic"
+msgstr "سیریلیک"
+
+msgid "arabic"
+msgstr "عربی"
+
+msgid "greek"
+msgstr "یونانی"
+
+msgid "hebrew"
+msgstr "عبری"
+
+msgid "turkish"
+msgstr "ترکی استانبولی"
+
+msgid "nordic"
+msgstr "شمالی"
+
+msgid "thai"
+msgstr "تایلندی"
+
+msgid "celtic"
+msgstr "سلتی"
+
+msgid "vietnamese"
+msgstr "ویتنامی"
+
+msgid "japanese"
+msgstr "ژاپنی"
+
+msgid "korean"
+msgstr "کره‌ای"
+
+msgid "chinese"
+msgstr "چینی"
+
+msgid "arialabeltopnav"
+msgstr "کنترل پنجره"
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "وظیفه فعال"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "پالایه فهرست‌گیری رایانامه"
+
+msgid "arialabelmailsearchform"
+msgstr "فرم جستجوی پیام رایانامه"
+
+msgid "arialabelcontactsearchform"
+msgstr "فرم جستجوی تماس‌ها"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "ورودی جستجوی رایانامه"
+
+msgid "arialabelquicksearchbox"
+msgstr "وردوی جستجو"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "پالایه فهرست‌گیری پوشه"
+
+msgid "arialabelfoldersearchform"
+msgstr "فرم جستجوی پوشه"
+
+msgid "arialabelfolderlist"
+msgstr "انتخاب پوشه رایانامه"
+
+msgid "arialabelmessagelist"
+msgstr "فهرست‌گیری پیام‌های رایانامه"
+
+msgid "arialabelmailpreviewframe"
+msgstr "پیش‌نمایش پیام"
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr "ناوبری پیام"
+
+msgid "arialabelmessagebody"
+msgstr "بدنه پیام"
+
+msgid "arialabelmessageactions"
+msgstr "کنش‌های پیام"
+
+msgid "arialabelcontactquicksearch"
+msgstr "فرم جستجوی تماس‌ها"
+
+msgid "arialabelcontactsearchbox"
+msgstr "ورودی جستجوی تماس"
+
+msgid "arialabelmessageheaders"
+msgstr "سربرگ‌های پیام"
+
+msgid "arialabelforwardingoptions"
+msgstr "گزینه‌های بازگردانی"
+
+msgid "arialabelreplyalloptions"
+msgstr "گزینه‌های پاسخ به همه"
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr "گزینه‌های انشاء"
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr "فرم بارگذاری پیوست"
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "پیش‌نمایش پیوست"
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr "گزینه‌های دفترنشانی/گروه"
+
+msgid "arialabelpreferencesform"
+msgstr "فرم تنظیمات"
+
+msgid "arialabelidentityeditfrom"
+msgstr "فرم ویرایش هویت"
+
+msgid "arialabelresponseeditfrom"
+msgstr "فرم ویرایش واکنش‌گرا"
+
+msgid "arialabelsearchterms"
+msgstr "شرایط جستجو"
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr "ابزار تصویر"
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "خطایی رخ داد!"
+
+msgid "messages.loginfailed"
+msgstr "ورود ناموفق بود."
+
+msgid "messages.cookiesdisabled"
+msgstr "مرورگر شما کوکی‌ها را قبول نمی‌کند."
+
+msgid "messages.sessionerror"
+msgstr "نشست شما معتبر نیست، یا منقضی شده است."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "اتصال به سرور مخزن ناموفق بود."
+
+msgid "messages.servererror"
+msgstr "خطای سرور!"
+
+msgid "messages.servererrormsg"
+msgstr "خطای سرور: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr "خطای ارتباط (عدم دسترسی به سرور)!"
+
+msgid "messages.dberror"
+msgstr "خطای پایگاه داده!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "پنجره پاپ‌آپ مسدود شده است!"
+
+msgid "messages.requesttimedout"
+msgstr "زمان درخواست تمام شد"
+
+msgid "messages.errorreadonly"
+msgstr " عمل مورد نظر انجام نشد. پوشه فقط خواندنی است."
+
+msgid "messages.errornoperm"
+msgstr " عمل مورد نظر انجام نشد. دسترسی وجود ندارد."
+
+msgid "messages.erroroverquota"
+msgstr "عملیات انجام نشد. دیسک فضای خالی ندارد."
+
+msgid "messages.erroroverquotadelete"
+msgstr "دیسک فضای خالی ندارد. برای حذف پیام از SHIFT+DEL استفاده کنید."
+
+msgid "messages.invalidrequest"
+msgstr "درخواست نامعتبر! هیچ داده‌ای ذخیره نشد."
+
+msgid "messages.invalidhost"
+msgstr "نام سرور غیرمعتبر."
+
+msgid "messages.nomessagesfound"
+msgstr "هیچ پیغامی در این صندوق‌پستی پیدا نشد."
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "صندوق پستی خالی است"
+
+msgid "messages.nomessages"
+msgstr "بدون پیام"
+
+msgid "messages.refreshing"
+msgstr "نوسازی..."
+
+msgid "messages.loading"
+msgstr "بارگذاری..."
+
+msgid "messages.uploading"
+msgstr "بارگذاری پرونده..."
+
+msgid "messages.attaching"
+msgstr "پیوست کردن پرونده..."
+
+msgid "messages.uploadingmany"
+msgstr "بارگذاری پرونده‌ها..."
+
+msgid "messages.loadingdata"
+msgstr "بارگذاری داده‌ها..."
+
+msgid "messages.checkingmail"
+msgstr "بررسی برای پیام‌های جدید..."
+
+msgid "messages.sendingmessage"
+msgstr "ارسال پیغام..."
+
+msgid "messages.messagesent"
+msgstr "پیغام با موفقیت فرستاده شد."
+
+msgid "messages.savingmessage"
+msgstr "ذخیره‌ی پیام..."
+
+msgid "messages.messagesaved"
+msgstr "پیغام در پیش‌نویس‌ها ذخیره شد."
+
+msgid "messages.successfullysaved"
+msgstr "با موفقیت ذخیره شد."
+
+msgid "messages.savingresponse"
+msgstr "ذخیره متن پاسخ..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "آیا واقعا می‌خواهید این متن پاسخ را حذف نمایید؟"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "مخاطب با موفقیت به دفتر نشانی‌ها اضافه شد."
+
+msgid "messages.contactexists"
+msgstr "مخاطبی با آدرس ایمیل مشابه وجود دارد."
+
+msgid "messages.contactnameexists"
+msgstr "در حال حاضر مخاطبی با نام یکسان وجود دارد."
+
+msgid "messages.blockedimages"
+msgstr "برای حفاظت از حریم شخصی شما، عکس‌های خارجی در این پیام مسدود شده‌اند."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "این یک پیام رمزنگاری شده است و قابل نمایش نیست. با عرض پوزش!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "مخاطبی پیدا نشد."
+
+msgid "messages.contactnotfound"
+msgstr "مخاطب درخواست شده پیدا نشد."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "ارسال پیغام ناموفق بود."
+
+msgid "messages.senttooquickly"
+msgstr "لطفا قبل از ارسال این پیام $sec ثانیه صبر کنید."
+
+msgid "messages.errorsavingsent"
+msgstr "خطایی رخ داده است پیام ارسالی ذخیره می گردد."
+
+msgid "messages.errorsaving"
+msgstr "خطایی در ذخیره کردن رخ داده است."
+
+msgid "messages.errormoving"
+msgstr "پیام(ها) منتقل نشدند."
+
+msgid "messages.errorcopying"
+msgstr "پیام(ها) کپی نشدند."
+
+msgid "messages.errordeleting"
+msgstr "پیام(ها) حذف نشدند."
+
+msgid "messages.errormarking"
+msgstr "پیام(ها) نشانه‌گذاری نشدند."
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "آیا واقعاً می‌خواهید مخاطب(های) انتخاب شده را حذف کنید؟"
+
+msgid "messages.deletegroupconfirm"
+msgstr "آیا واقعا می‌خواهید گروه انتخاب شده را حذف کنید؟"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "آیا واقعاً می‌خواهید پیام(های) انتخاب شده را حذف کنید؟"
+
+msgid "messages.deletefolderconfirm"
+msgstr "آیا واقعاً می‌خواهید این پوشه را حذف کنید؟"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "آیا واقعاً می‌خواهید همه‌ی پیام‌های داخل این پوشه را حذف کنید؟"
+
+msgid "messages.contactdeleting"
+msgstr "حذف مخاطب(ها)..."
+
+msgid "messages.groupdeleting"
+msgstr "حذف گروه..."
+
+msgid "messages.folderdeleting"
+msgstr "حذف پوشه..."
+
+msgid "messages.foldermoving"
+msgstr "جابجایی پوشه..."
+
+msgid "messages.foldersubscribing"
+msgstr "اشتراک پوشه..."
+
+msgid "messages.folderunsubscribing"
+msgstr "لغو اشتراک پوشه..."
+
+msgid "messages.formincomplete"
+msgstr "فرم کامل پر نشده بود."
+
+msgid "messages.noemailwarning"
+msgstr "لطفا یک نشانی رایانامه معتبر وارد کنید."
+
+msgid "messages.nonamewarning"
+msgstr "لطفا یک نام وارد کنید."
+
+msgid "messages.nopagesizewarning"
+msgstr "لطفا اندازه‌ی صفحه را وارد کنید."
+
+msgid "messages.nosenderwarning"
+msgstr "لطفا آدرس ایمیل فرستنده را وارد کنید."
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "لطفاً حداقل یک گیرنده وارد کنید."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "قسمت \"موضوع\" خالی است. می‌خواهید اکنون وارد کنید؟"
+
+msgid "messages.nosubjecttitle"
+msgstr "بدون موضوع"
+
+msgid "messages.nobodywarning"
+msgstr "این پیام بدون متن ارسال شود؟"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"نامه قبلا نوشته و نفرستاده یافت شد.\\n\\nموضوع: $subject\\n\n"
+"ذخیره شده: $date\\n\\nآیا می‌خواهید این پیام را بازیابی نمایید؟"
+
+msgid "messages.nosearchname"
+msgstr "لطفا یک نام مخاطب یا نشانی رایانامه وارد نمایید."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"همه پیوست ها هنوز بارگذاری نشده‌اند. لطفا صبر کرده یا بارگذاری را لغو کنید."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr پیام پیدا شد."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr مخاطب ییدا شد."
+
+msgid "messages.searchnomatch"
+msgstr "جست‌و‌جو هیچ نتیجه‌ای نداشت."
+
+msgid "messages.searching"
+msgstr "در حال جست‌و‌جو..."
+
+msgid "messages.checking"
+msgstr "در حال بررسی..."
+
+msgid "messages.stillsearching"
+msgstr "هنور در حال جستجو..."
+
+msgid "messages.nospellerrors"
+msgstr "هیچ اشکال املایی پیدا نشد."
+
+msgid "messages.folderdeleted"
+msgstr "پوشه با کام‌یابی حذف شد."
+
+msgid "messages.foldersubscribed"
+msgstr "اشتراک پوشه با کام‌یابی انجام شد."
+
+msgid "messages.folderunsubscribed"
+msgstr "اشتراک پوشه با کام‌یابی لغو شد."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "با کام‌یابی حذف شد."
+
+msgid "messages.converting"
+msgstr "در حال حذف قالب‌بندی..."
+
+msgid "messages.messageopenerror"
+msgstr "بارگذاری پیام از روی سرور انجام نشد."
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "بارگذاری پرونده ناموفق بود."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "اندازه‌ی پرونده‌ی بارگذاری شده از بیشینه اندازه‌ی $size بیشتر است."
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "$nr مخاطب با کام‌یابی کپی شد."
+
+msgid "messages.movesuccess"
+msgstr "$nr مخاطب با کام‌یابی جابجا شد."
+
+msgid "messages.copyerror"
+msgstr "مخاطب‌ها کپی نشدند."
+
+msgid "messages.moveerror"
+msgstr "مخاطب‌ها جابجا نشدند."
+
+msgid "messages.sourceisreadonly"
+msgstr "این منبع نشانی فقط خواندنی است."
+
+msgid "messages.errorsavingcontact"
+msgstr "ذخیره‌ی نشانی مخاطب ناموفق بود."
+
+msgid "messages.movingmessage"
+msgstr "در حال انتقال پیام(ها)..."
+
+msgid "messages.copyingmessage"
+msgstr "در حال کپی‌برداری از پیام(ها)..."
+
+msgid "messages.copyingcontact"
+msgstr "در حال کپی‌برداری مخاطب(ها)..."
+
+msgid "messages.movingcontact"
+msgstr "در حال جابجایی مخاطب(ها)..."
+
+msgid "messages.deletingmessage"
+msgstr "در حال حذف پیام(ها)..."
+
+msgid "messages.markingmessage"
+msgstr "در حال نشانه‌گذاری پیام(ها)..."
+
+msgid "messages.addingmember"
+msgstr "در حال افزودن مخاطب(ها) به گروه..."
+
+msgid "messages.removingmember"
+msgstr "در حال حذف مخاطب(ها) از گروه..."
+
+msgid "messages.receiptsent"
+msgstr "رسید خواندن با کام‌یابی ارسال شد."
+
+msgid "messages.errorsendingreceipt"
+msgstr "ارسال رسید انجام نشد."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "آیا از حذف این شناسه مطمئن هستید؟"
+
+msgid "messages.nodeletelastidentity"
+msgstr "این شناسه را نمی‌توانید حذف کنید، زیرا آخرین شناسه شما است."
+
+msgid "messages.forbiddencharacter"
+msgstr "نام پوشه شامل یک کاراکتر غیر مجاز است."
+
+msgid "messages.selectimportfile"
+msgstr "لطفاً پرونده‌ای را برای بارگذاری انتخاب کنید."
+
+msgid "messages.addresswriterror"
+msgstr "دفترچه نشانی انتخابی قابل نوشتن نیست."
+
+msgid "messages.contactaddedtogroup"
+msgstr "مخاطب‌ها با کام‌یابی به این گروه اضافه شدند."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "مخاطب‌ها با کام‌یابی از این گروه حذف شدند."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "هیچ تکلیف گروهی تغییر نکرده است."
+
+msgid "messages.importwait"
+msgstr "در حال وارد کردن، لطفا صبر کنید..."
+
+msgid "messages.importformaterror"
+msgstr "وارد کردن ناموفق! فایل بارگذاری شده یک فایل اطلاعات معتبر نیست."
+
+msgid "messages.importconfirm"
+msgstr "<b>$inserted مخاطب با کام‌یابی وارد شدند</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "با کام‌یابی $nr پیام وارد شد."
+
+msgid "messages.importmessageerror"
+msgstr "وارد کردن ناموفق! فایل بارگذاری شده یک پیام یا صندوق‌پستی معتبر نیست."
+
+msgid "messages.opnotpermitted"
+msgstr "عملیات مجاز نیست!"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+"تعویض به ویرایشگر متن ساده باعث از دست رفتن قالب‌بندی همه متن‌ها می‌شود، آیا"
+" می‌خواهید عملیات را ادامه بدهید؟"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"یک خطای پیکربندی خطرناک رخ داده است. سریعا با سرپرست یا مسئول خود تماس "
+"بگیرید. <b>امکان ارسال  پیام شما وجود ندارد.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "خطای SMTP ($code): اتصال به سرور ناموفق بود."
+
+msgid "messages.smtpautherror"
+msgstr "خطای SMTP ($code): تصدیق هویت ناموفق بود."
+
+msgid "messages.smtpfromerror"
+msgstr "خطای SMTP ($code): ناموفق در تنظیم فرستنده \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "خطای SMTP ($code): نام موفق در افزودن گیرنده \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "خطای SMTP: ناتوان در تجزیه فهرست گیرنده‌ها."
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "خطای SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr "گیرنده‌های بیش از اندازه: تعداد گیرنده ها را به $max کاهش دهید."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "تعداد اعضای گروه بیشتر از $max است."
+
+msgid "messages.internalerror"
+msgstr "یک خطای داخلی رخ داده است. لطفا دوباره سعی کنید."
+
+msgid "messages.contactdelerror"
+msgstr "حذف مخاطب(ها) انجام شد."
+
+msgid "messages.contactdeleted"
+msgstr "مخاطب(ها) با کام‌یابی حذف شدند."
+
+msgid "messages.contactrestoreerror"
+msgstr "مخاطب(های) حذف شده بازگردانی نخواهند شد."
+
+msgid "messages.contactrestored"
+msgstr "مخاطب(ها) با کام‌یابی بازگردانده شدند."
+
+msgid "messages.groupdeleted"
+msgstr "گروه با کام‌یابی حذف شد."
+
+msgid "messages.grouprenamed"
+msgstr "نام گروه با کام‌یابی تغییر داده شد."
+
+msgid "messages.groupcreated"
+msgstr "گروه با کام‌یابی ایجاد شد."
+
+msgid "messages.savedsearchdeleted"
+msgstr "جستجوی ذخیره شده با کام‌یابی حذف شد."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "حذف جستجوی ذخیره شده انجام نشد."
+
+msgid "messages.savedsearchcreated"
+msgstr "جستجوی حذف شده با کام‌یابی ایجاد شد."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "ساخت جستجوی ذخیره شده انجام نشد."
+
+msgid "messages.messagedeleted"
+msgstr "پیام(ها) با کام‌یابی حذف شدند."
+
+msgid "messages.messagemoved"
+msgstr "پیام(ها) با کام‌یابی منتقل شدند."
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "پیام(ها) با کام‌یابی کپی شدند."
+
+msgid "messages.messagemarked"
+msgstr "پیام(ها) با کام‌یابی نشانه‌گذاری شدند."
+
+msgid "messages.autocompletechars"
+msgstr "حداقل $min حرف برای تکمیل خودکار وارد نمایید."
+
+msgid "messages.autocompletemore"
+msgstr "نتایج زیادی یافت شد. لطفا حروف بیشتری وارد نمایید."
+
+msgid "messages.namecannotbeempty"
+msgstr "نام نمی‌تواند خالی باشد."
+
+msgid "messages.nametoolong"
+msgstr "نام خیلی طولانی است."
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr "پوشه با کام‌یابی به‌روز شد."
+
+msgid "messages.foldercreated"
+msgstr "پوشه با کام‌یابی افزوده شد."
+
+msgid "messages.invalidimageformat"
+msgstr "فرمت تصویر نامعتبر است."
+
+msgid "messages.mispellingsfound"
+msgstr "خطای املایی در پیام شناسایی شد."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"به دلیل نداشتن حق دسترسی، ایجاد/انتقال پوشه به پوشه والد انتخاب شده، انجام "
+"نشد."
+
+msgid "messages.messagetoobig"
+msgstr "بخش پیام برای پردازش آن خیلی بزرگ است."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"هشدار: این برنامه به جاوااسکریپت نیاز دارد! برای استفاده از این برنامه لطفا "
+"جاوااسکریپت را در تنظیمات مرورگر خود فعال نمایید."
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr "پرونده پیدا نشد"
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

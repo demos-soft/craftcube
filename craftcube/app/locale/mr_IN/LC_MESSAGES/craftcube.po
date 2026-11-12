@@ -1,0 +1,2850 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: mr_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "$product वरती स्वागत आहे"
+
+msgid "username"
+msgstr "वापरकर्त्याचे नाव(तुमचे इमेल)"
+
+msgid "password"
+msgstr "परवलीचा शब्द"
+
+msgid "server"
+msgstr "सर्व्हर"
+
+msgid "login"
+msgstr "प्रवेश"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "बाहेर जा"
+
+msgid "mail"
+msgstr "इ-मेल"
+
+msgid "settings"
+msgstr "तुमची पसंती"
+
+msgid "addressbook"
+msgstr "पत्ता नोंदवही"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "आलेले संदेश"
+
+msgid "drafts"
+msgstr "मसुदा"
+
+msgid "sent"
+msgstr "पाठवलेले"
+
+msgid "trash"
+msgstr "कचरा पेटी"
+
+msgid "junk"
+msgstr "नको असलेले कचरा संदेश"
+
+msgid "show_real_foldernames"
+msgstr ""
+
+msgid "subject"
+msgstr "विषय"
+
+msgid "from"
+msgstr "प्रेषक"
+
+msgid "sender"
+msgstr "प्रेषक"
+
+msgid "to"
+msgstr "प्रती"
+
+msgid "cc"
+msgstr "प्रत"
+
+msgid "bcc"
+msgstr "गुप्त प्रत"
+
+msgid "replyto"
+msgstr "यास उत्तर द्या"
+
+msgid "followupto"
+msgstr ""
+
+msgid "date"
+msgstr "दिनांक"
+
+msgid "size"
+msgstr "आकार"
+
+msgid "priority"
+msgstr "प्राधान्य"
+
+msgid "organization"
+msgstr "संस्था"
+
+msgid "readstatus"
+msgstr "वाचन स्थिती"
+
+msgid "listoptions"
+msgstr "विकल्प सूची"
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "फोल्डर्स"
+
+msgid "messagesfromto"
+msgstr "संदेश $from कडून $to साठी $count वा"
+
+msgid "threadsfromto"
+msgstr "धागे $from कडून $to साठी $count वा"
+
+msgid "messagenrof"
+msgstr "Message $nr of $count"
+
+msgid "fromtoshort"
+msgstr ""
+
+msgid "copy"
+msgstr "नक्‍कल"
+
+msgid "move"
+msgstr "हलवा"
+
+msgid "moveto"
+msgstr "या फोल्डरमधे ठेवा"
+
+msgid "copyto"
+msgstr ""
+
+msgid "download"
+msgstr "उतरवून घ्या"
+
+msgid "open"
+msgstr ""
+
+msgid "showattachment"
+msgstr ""
+
+msgid "showanyway"
+msgstr ""
+
+msgid "filename"
+msgstr "फाईलचे नाव"
+
+msgid "filesize"
+msgstr "फाईलचा आकार"
+
+msgid "addtoaddressbook"
+msgstr "पत्ता नोंदवहीत नोंदवा"
+
+msgid "sun"
+msgstr "रवी"
+
+msgid "mon"
+msgstr "सोम"
+
+msgid "tue"
+msgstr "मंगळ"
+
+msgid "wed"
+msgstr "बुध"
+
+msgid "thu"
+msgstr "गुरु"
+
+msgid "fri"
+msgstr "शुक्र"
+
+msgid "sat"
+msgstr "शनी"
+
+msgid "sunday"
+msgstr "रविवार"
+
+msgid "monday"
+msgstr "सोमवार"
+
+msgid "tuesday"
+msgstr "मंगळवार"
+
+msgid "wednesday"
+msgstr "बुधवार"
+
+msgid "thursday"
+msgstr "गुरुवार"
+
+msgid "friday"
+msgstr "शुक्रवार"
+
+msgid "saturday"
+msgstr "शनीवार"
+
+msgid "jan"
+msgstr "जाने"
+
+msgid "feb"
+msgstr "फेब्"
+
+msgid "mar"
+msgstr "मार्च"
+
+msgid "apr"
+msgstr "एप्रिल"
+
+msgid "may"
+msgstr "मे"
+
+msgid "jun"
+msgstr "जून"
+
+msgid "jul"
+msgstr "जुलै"
+
+msgid "aug"
+msgstr "ऑगस्ट"
+
+msgid "sep"
+msgstr "सप्टें"
+
+msgid "oct"
+msgstr "ऑक्टो"
+
+msgid "nov"
+msgstr "नोव्हें"
+
+msgid "dec"
+msgstr "डिसें"
+
+msgid "longjan"
+msgstr "जानेवारी"
+
+msgid "longfeb"
+msgstr "फेब्रूवारी"
+
+msgid "longmar"
+msgstr "मार्च"
+
+msgid "longapr"
+msgstr "एप्रिल"
+
+msgid "longmay"
+msgstr "मे"
+
+msgid "longjun"
+msgstr "जून"
+
+msgid "longjul"
+msgstr "जुलै"
+
+msgid "longaug"
+msgstr "ऑगस्ट"
+
+msgid "longsep"
+msgstr "सप्टेंबर"
+
+msgid "longoct"
+msgstr "ऑक्टोबर"
+
+msgid "longnov"
+msgstr "नोव्हेंबर"
+
+msgid "longdec"
+msgstr "डिसेंबर"
+
+msgid "today"
+msgstr "आज"
+
+msgid "refresh"
+msgstr "अद्ययावत करा"
+
+msgid "checkmail"
+msgstr "नवीन संदेश आले आहेत का पहा"
+
+msgid "compose"
+msgstr "नवीन संदेश तयार करा"
+
+msgid "writenewmessage"
+msgstr "नवीन संदेश तयार करा"
+
+msgid "reply"
+msgstr "उत्तर दया"
+
+msgid "replytomessage"
+msgstr "पाठवणार्‍याला उत्तर द्या"
+
+msgid "replytoallmessage"
+msgstr "पाठवणार्‍याला आणि प्रत केलेल्या सर्वांना संदेश पाठवा"
+
+msgid "replyall"
+msgstr "सर्वांना उत्तर दया"
+
+msgid "replylist"
+msgstr ""
+
+msgid "forward"
+msgstr ""
+
+msgid "forwardinline"
+msgstr ""
+
+msgid "forwardattachment"
+msgstr ""
+
+msgid "forwardmessage"
+msgstr "हा संदेश पुढे पाठवा"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "संदेश काढून टाका"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "संदेश कचरापेटीत टाका"
+
+msgid "printmessage"
+msgstr "हा संदेश छापा"
+
+msgid "previousmessage"
+msgstr "आधिचा संदेश दाखवा"
+
+msgid "firstmessage"
+msgstr "पहिला संदेश दाखवा"
+
+msgid "nextmessage"
+msgstr "नंतरचा संदेश दाखवा"
+
+msgid "lastmessage"
+msgstr "शेवटचा संदेश दाखवा"
+
+msgid "backtolist"
+msgstr "संदेशांच्या यादीकडे परत चला"
+
+msgid "viewsource"
+msgstr "मूळ संदेशाचा प्रोग्राम कोड दाखवा"
+
+msgid "mark"
+msgstr "खूण"
+
+msgid "markmessages"
+msgstr "संदेशांना खूण करा"
+
+msgid "markread"
+msgstr "वाचलेला म्हणून खूण करा"
+
+msgid "markunread"
+msgstr "न वाचलेला म्हणून खूण करा"
+
+msgid "markflagged"
+msgstr "खूण लावलेला म्हणून खूण करा"
+
+msgid "markunflagged"
+msgstr "खूण काढलेला म्हणून खूण करा"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "अधिक कृती.."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr ""
+
+msgid "more"
+msgstr "अधिक"
+
+msgid "back"
+msgstr "मागे"
+
+msgid "options"
+msgstr "पर्याय"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr ""
+
+msgid "last"
+msgstr ""
+
+msgid "previous"
+msgstr ""
+
+msgid "next"
+msgstr ""
+
+msgid "select"
+msgstr "निवडा"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "सर्व"
+
+msgid "none"
+msgstr "कोणताही नाही"
+
+msgid "currpage"
+msgstr "सध्‍याचे पान"
+
+msgid "isread"
+msgstr ""
+
+msgid "unread"
+msgstr "न वाचलेले"
+
+msgid "flagged"
+msgstr "खूण लावलेले"
+
+msgid "unflagged"
+msgstr ""
+
+msgid "unanswered"
+msgstr "उत्तर न दिलेले"
+
+msgid "withattachment"
+msgstr ""
+
+msgid "deleted"
+msgstr "काढून टाकलेला(ले)"
+
+msgid "undeleted"
+msgstr ""
+
+msgid "replied"
+msgstr ""
+
+msgid "forwarded"
+msgstr ""
+
+msgid "invert"
+msgstr "उलट करा"
+
+msgid "filter"
+msgstr "गाळणी"
+
+msgid "list"
+msgstr "यादी"
+
+msgid "threads"
+msgstr "धागे"
+
+msgid "expand-all"
+msgstr "सर्व विस्‍तारीत करा"
+
+msgid "expand-unread"
+msgstr "न वाचलेला विस्‍तारा"
+
+msgid "collapse-all"
+msgstr "सर्व मिटवा"
+
+msgid "threaded"
+msgstr "धागा लावलेला"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "संदेश धागे विस्‍तारा"
+
+msgid "do_expand"
+msgstr "सर्व धागे"
+
+msgid "expand_only_unread"
+msgstr "फक्‍त न वाचलेल्‍या संदेशांबददल"
+
+msgid "fromto"
+msgstr "पाठवणारा/प्रती"
+
+msgid "flag"
+msgstr "खूण"
+
+msgid "attachment"
+msgstr "जोड"
+
+msgid "nonesort"
+msgstr "कोणताही नाही"
+
+msgid "sentdate"
+msgstr "पाठवणी दिनांक"
+
+msgid "arrival"
+msgstr "आगमन दिनांक"
+
+msgid "asc"
+msgstr "चढत्‍या क्रमाने"
+
+msgid "desc"
+msgstr "उतरत्‍या क्रमाने"
+
+msgid "listcolumns"
+msgstr "सुची स्‍तंभ"
+
+msgid "listsorting"
+msgstr "स्‍तंभ वर्गीकरण"
+
+msgid "listorder"
+msgstr "वर्गीकरण क्रम"
+
+msgid "listmode"
+msgstr "यादी दर्शक पध्‍दत"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "यादी"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "फोल्डर कृती.."
+
+msgid "compact"
+msgstr "छोटा"
+
+msgid "empty"
+msgstr "रिकामा"
+
+msgid "importmessages"
+msgstr ""
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "डिस्कचा वापर"
+
+msgid "unknown"
+msgstr "माहित नसलेला"
+
+msgid "unlimited"
+msgstr "अमर्याद"
+
+msgid "quotatype"
+msgstr ""
+
+msgid "quotatotal"
+msgstr ""
+
+msgid "quotaused"
+msgstr ""
+
+msgid "quotastorage"
+msgstr ""
+
+msgid "quotamessage"
+msgstr ""
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "चटकन शोध"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "परत शोध"
+
+msgid "searchmod"
+msgstr "बदलकर्त्‍यांना शोधा"
+
+msgid "msgtext"
+msgstr "संपूर्ण संदेश"
+
+msgid "body"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "namex"
+msgstr ""
+
+msgid "searchscope"
+msgstr ""
+
+msgid "currentfolder"
+msgstr ""
+
+msgid "subfolders"
+msgstr ""
+
+msgid "allfolders"
+msgstr ""
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "नवीन खिडकी उघडा"
+
+msgid "emlsave"
+msgstr "इएमएल स्‍वरूपात उतरवून घ्या"
+
+msgid "changeformattext"
+msgstr ""
+
+msgid "changeformathtml"
+msgstr ""
+
+msgid "editasnew"
+msgstr "नवीन आहे असा संपादित करा"
+
+msgid "send"
+msgstr ""
+
+msgid "sendmessage"
+msgstr "आत्ता पाठवा"
+
+msgid "savemessage"
+msgstr "हा मसूदा साठवून ठेवा"
+
+msgid "addattachment"
+msgstr "फाईल सोबत जोडा"
+
+msgid "charset"
+msgstr "कॅरेक्टर सेट"
+
+msgid "editortype"
+msgstr "संपादकाचा प्रकार"
+
+msgid "returnreceipt"
+msgstr "पोच पावती"
+
+msgid "dsn"
+msgstr "पोच स्थिती निर्देशक"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "$date या दिवशी $sender ने लिहीले :"
+
+msgid "originalmessage"
+msgstr "खरा संदेश"
+
+msgid "selectimage"
+msgstr ""
+
+msgid "addimage"
+msgstr ""
+
+msgid "selectmedia"
+msgstr ""
+
+msgid "addmedia"
+msgstr ""
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr ""
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr ""
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "ओळख संपादित करा"
+
+msgid "spellcheck"
+msgstr "लिखाण"
+
+msgid "checkspelling"
+msgstr "शुध्द लेखन"
+
+msgid "resumeediting"
+msgstr "परत संदेश संपादित करा"
+
+msgid "revertto"
+msgstr "परत जा"
+
+msgid "restore"
+msgstr ""
+
+msgid "restoremessage"
+msgstr ""
+
+msgid "ignore"
+msgstr ""
+
+msgid "responses"
+msgstr ""
+
+msgid "insertresponse"
+msgstr ""
+
+msgid "manageresponses"
+msgstr ""
+
+msgid "newresponse"
+msgstr ""
+
+msgid "addresponse"
+msgstr ""
+
+msgid "editresponse"
+msgstr ""
+
+msgid "editresponses"
+msgstr ""
+
+msgid "responsename"
+msgstr ""
+
+msgid "responsetext"
+msgstr ""
+
+msgid "attach"
+msgstr "जोडा"
+
+msgid "attachments"
+msgstr "जोडलेल्या"
+
+msgid "upload"
+msgstr "चढवा"
+
+msgid "uploadprogress"
+msgstr ""
+
+msgid "close"
+msgstr "बंद"
+
+msgid "messageoptions"
+msgstr "संदेश पर्याय.."
+
+msgid "togglecomposeoptions"
+msgstr ""
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "कमी"
+
+msgid "lowest"
+msgstr "कमित कमी"
+
+msgid "normal"
+msgstr "नेहमी प्रमाणे"
+
+msgid "high"
+msgstr "तातडीचे"
+
+msgid "highest"
+msgstr "अतिशय तातडीचे"
+
+msgid "nosubject"
+msgstr "(विषय नाही)"
+
+msgid "showimages"
+msgstr "चित्र दाखवा"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "$sender कडून आलेल्या संदेशातील चित्रे नेहमी दाखवा"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "हा मसुदा संदेश आहे"
+
+msgid "andnmore"
+msgstr ""
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr ""
+
+msgid "togglefullheaders"
+msgstr ""
+
+msgid "htmltoggle"
+msgstr "एच टी एम एल"
+
+msgid "plaintoggle"
+msgstr "साधे लिखाण"
+
+msgid "savesentmessagein"
+msgstr "पाठवलेला संदेश या फोल्डरमधे ठेवा"
+
+msgid "dontsave"
+msgstr "संदेश साठवू नका"
+
+msgid "maxuploadsize"
+msgstr "जास्‍तीत जास्‍त फाइलचा आकार $size असू शकतो"
+
+msgid "addcc"
+msgstr "प्रत करा"
+
+msgid "addbcc"
+msgstr "गुप्त प्रत करा"
+
+msgid "addreplyto"
+msgstr "आणखी लोकांना संदेश पाठवा"
+
+msgid "addfollowupto"
+msgstr ""
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"हा संदेश पाठवणार्‍याने हा संदेश तुम्ही वाचल्यावर कळवावयाला सांगितले आहे. "
+"तुम्हाला असे कळवणे चालेल ना?"
+
+msgid "receiptread"
+msgstr "पोच पावती (संदेश वाचला)"
+
+msgid "yourmessage"
+msgstr "ही तुमच्या संदेशाची पोच पावती आहे."
+
+msgid "receiptnote"
+msgstr ""
+"सूचना: ही पोच पावती तुम्ही ज्यांना  संदेश पाठवला त्यांच्या संगणकावर दिसला "
+"एवढेच सांगते. तुम्ही ज्यांना हा संदेश पाठवला, त्यांनी तो वाचला, आणि त्यांना "
+"तो नक्की समजला हे मात्र सांगत नाही."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "टोपणनाव"
+
+msgid "firstname"
+msgstr "नाव"
+
+msgid "surname"
+msgstr "आडनाव"
+
+msgid "middlename"
+msgstr "मधले नाव"
+
+msgid "nameprefix"
+msgstr ""
+
+msgid "namesuffix"
+msgstr ""
+
+msgid "nickname"
+msgstr "टोपणनाव"
+
+msgid "jobtitle"
+msgstr "कामाचे शिर्षक"
+
+msgid "department"
+msgstr "विभाग"
+
+msgid "gender"
+msgstr "लिंग"
+
+msgid "maidenname"
+msgstr ""
+
+msgid "email"
+msgstr "इ-मेल्"
+
+msgid "phone"
+msgstr "दूरध्वनी"
+
+msgid "address"
+msgstr "पत्ता"
+
+msgid "street"
+msgstr "रस्ता"
+
+msgid "locality"
+msgstr "शहर"
+
+msgid "zipcode"
+msgstr ""
+
+msgid "region"
+msgstr "राज्य / संस्थान"
+
+msgid "country"
+msgstr "देश"
+
+msgid "birthday"
+msgstr "वाढदिवस"
+
+msgid "anniversary"
+msgstr ""
+
+msgid "website"
+msgstr "संकेतस्थळ"
+
+msgid "instantmessenger"
+msgstr ""
+
+msgid "notes"
+msgstr "टिपा"
+
+msgid "male"
+msgstr "पुरूष"
+
+msgid "female"
+msgstr "स्त्री"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "व्यवस्थापक"
+
+msgid "assistant"
+msgstr "सहाय्यक"
+
+msgid "spouse"
+msgstr ""
+
+msgid "allfields"
+msgstr ""
+
+msgid "search"
+msgstr "शोध"
+
+msgid "searchresult"
+msgstr ""
+
+msgid "advsearch"
+msgstr "प्रगत शोध"
+
+msgid "advanced"
+msgstr "आधुनिक"
+
+msgid "other"
+msgstr "इतर"
+
+msgid "printcontact"
+msgstr ""
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "मुख्यपृष्ठ"
+
+msgid "typework"
+msgstr "काम"
+
+msgid "typeother"
+msgstr "इतर"
+
+msgid "typemobile"
+msgstr "भ्रमणध्वनी"
+
+msgid "typemain"
+msgstr "मुख्य"
+
+msgid "typehomefax"
+msgstr ""
+
+msgid "typeworkfax"
+msgstr ""
+
+msgid "typecar"
+msgstr ""
+
+msgid "typepager"
+msgstr ""
+
+msgid "typevideo"
+msgstr "चलचित्र"
+
+msgid "typeassistant"
+msgstr "सहाय्यक"
+
+msgid "typehomepage"
+msgstr "मुख्य पृष्ठ"
+
+msgid "typeblog"
+msgstr ""
+
+msgid "typeprofile"
+msgstr ""
+
+msgid "addfield"
+msgstr ""
+
+msgid "addcontact"
+msgstr ""
+
+msgid "editcontact"
+msgstr "नोंदवहीतील पत्ता सुधारा"
+
+msgid "contacts"
+msgstr "संपर्क"
+
+msgid "contactproperties"
+msgstr ""
+
+msgid "contactnameandorg"
+msgstr ""
+
+msgid "personalinfo"
+msgstr "वैयक्तिक माहिती"
+
+msgid "personal"
+msgstr ""
+
+msgid "contactphoto"
+msgstr ""
+
+msgid "edit"
+msgstr "संदेश तयार करा"
+
+msgid "cancel"
+msgstr "रद्द करा"
+
+msgid "save"
+msgstr "ठेवून द्या"
+
+msgid "delete"
+msgstr "काढून टाका"
+
+msgid "discard"
+msgstr ""
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "दूसरे नाव द्या"
+
+msgid "addphoto"
+msgstr "समावेश करा"
+
+msgid "replacephoto"
+msgstr "बदला"
+
+msgid "uploadphoto"
+msgstr ""
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr ""
+
+msgid "deletecontact"
+msgstr "खूण केलेले सर्व संपर्काचे पत्ते काढून टाका"
+
+msgid "composeto"
+msgstr "साठी नवीन संदेश तयार करा"
+
+msgid "contactsfromto"
+msgstr "$from पासून ते $to पर्यंत $count पैकी"
+
+msgid "print"
+msgstr "छापा"
+
+msgid "export"
+msgstr "निर्यात करा"
+
+msgid "exportall"
+msgstr ""
+
+msgid "exportsel"
+msgstr ""
+
+msgid "exportvcards"
+msgstr "व्ही कार्ड स्वरुपात पत्ते निर्यात करा"
+
+msgid "newgroup"
+msgstr ""
+
+msgid "addgroup"
+msgstr ""
+
+msgid "grouprename"
+msgstr ""
+
+msgid "groupdelete"
+msgstr "गट नष्ट करा"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr ""
+
+msgid "uponelevel"
+msgstr ""
+
+msgid "previouspage"
+msgstr "आधिचा संच दाखवा"
+
+msgid "firstpage"
+msgstr "पहिला संच दाखवा"
+
+msgid "nextpage"
+msgstr "नंतरचा संच दाखवा"
+
+msgid "lastpage"
+msgstr "शेवटचा संच दाखवा"
+
+msgid "group"
+msgstr "गट"
+
+msgid "groups"
+msgstr "अनेक गट"
+
+msgid "listgroup"
+msgstr ""
+
+msgid "personaladrbook"
+msgstr "वैयक्तिक पत्ते"
+
+msgid "searchsave"
+msgstr "शोध जतन करा"
+
+msgid "searchdelete"
+msgstr "शोध नष्ट करा"
+
+msgid "import"
+msgstr "आयात करा"
+
+msgid "importcontacts"
+msgstr "पत्ते आयात करा"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr ""
+
+msgid "importreplace"
+msgstr "संपूर्ण पत्ता नोंदवही बदला"
+
+msgid "importgroups"
+msgstr ""
+
+msgid "importgroupsall"
+msgstr ""
+
+msgid "importgroupsexisting"
+msgstr ""
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "झाले"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "साठी सेटिंग्ज"
+
+msgid "about"
+msgstr "च्या विषयी"
+
+msgid "preferences"
+msgstr "तुमची पसंती"
+
+msgid "userpreferences"
+msgstr "वापरकर्त्याची पसंती"
+
+msgid "editpreferences"
+msgstr "वापरकर्त्याची पसंती सुधारा"
+
+msgid "identities"
+msgstr "ओळख"
+
+msgid "manageidentities"
+msgstr ""
+
+msgid "newidentity"
+msgstr ""
+
+msgid "addidentity"
+msgstr ""
+
+msgid "editidentity"
+msgstr ""
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "एच टी एम एल दाखवा"
+
+msgid "defaultcharset"
+msgstr "नेहमीचा अक्षर संच"
+
+msgid "htmlmessage"
+msgstr "एच टी एम एल संदेश"
+
+msgid "messagepart"
+msgstr ""
+
+msgid "digitalsig"
+msgstr ""
+
+msgid "dateformat"
+msgstr ""
+
+msgid "timeformat"
+msgstr ""
+
+msgid "prettydate"
+msgstr "विशेष दिवस"
+
+msgid "setdefault"
+msgstr "हा नेहमीसाठी वापरा"
+
+msgid "autodetect"
+msgstr "स्वयंचलित"
+
+msgid "language"
+msgstr "भाषा"
+
+msgid "timezone"
+msgstr "वेळ  क्षेत्र"
+
+msgid "pagesize"
+msgstr "प्रत्येक पानावरील ओळी"
+
+msgid "signature"
+msgstr "सही"
+
+msgid "dstactive"
+msgstr "दिवसाची वेळ"
+
+msgid "showinextwin"
+msgstr ""
+
+msgid "composeextwin"
+msgstr ""
+
+msgid "htmleditor"
+msgstr "एच टी एम एल संदेश तयारा करा"
+
+msgid "htmlonreply"
+msgstr ""
+
+msgid "htmlonreplyandforward"
+msgstr ""
+
+msgid "htmlsignature"
+msgstr "एच टी एम एल सही"
+
+msgid "showemail"
+msgstr ""
+
+msgid "previewpane"
+msgstr "प्रक्रियापूर्व तावदान दाखवा"
+
+msgid "skin"
+msgstr "दृष्य गोष्टी"
+
+msgid "logoutclear"
+msgstr "खात्यातून बाहेर पडतांना कचरा पेटी साफ करा"
+
+msgid "logoutcompact"
+msgstr "खात्यातून बाहेर पडतांना आलेल्या संदेशांना छोटे आणि व्यवस्थित करा"
+
+msgid "uisettings"
+msgstr "वापरकर्त्यासाठीचा इंटरफेस"
+
+msgid "serversettings"
+msgstr "सर्व्हरची सेटिंग्ज"
+
+msgid "mailboxview"
+msgstr "टपालपेटी पहाणे"
+
+msgid "mdnrequests"
+msgstr "पाठवणार्‍याच्या सूचना"
+
+msgid "askuser"
+msgstr "वापरकर्त्याला विचारा"
+
+msgid "autosend"
+msgstr "स्वयंचलित (आपोआप पाठवणे)"
+
+msgid "autosendknown"
+msgstr ""
+
+msgid "autosendknownignore"
+msgstr ""
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr ""
+
+msgid "readwhendeleted"
+msgstr "काढून टाकल्यावर संदेश वाचला असे दाखवा"
+
+msgid "flagfordeletion"
+msgstr "संदेश काढून टाकण्या ऎवजी संदेश काढून टाकण्यासाठी आहे अशी खूण करा"
+
+msgid "skipdeleted"
+msgstr "काढून टाकलेले संदेश दाखवू नका"
+
+msgid "deletealways"
+msgstr "जर संदेश कचरापेटीत गेले नाहीत तर काढून टाका"
+
+msgid "deletejunk"
+msgstr ""
+
+msgid "showremoteimages"
+msgstr "संदेशातील चित्रे दाखवा"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "माहितीतील पाठवणार्‍याकडून संदेश"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "नेहमी"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "सोबत जोडलेली चित्रे संदेशाच्या खाली दाखवा"
+
+msgid "autosavedraft"
+msgstr "मसूदा आपोआप जतन करा"
+
+msgid "everynminutes"
+msgstr "प्रत्येक $n मिनिटांनी"
+
+msgid "refreshinterval"
+msgstr ""
+
+msgid "never"
+msgstr "कधीच नाही"
+
+msgid "immediately"
+msgstr "ताबडतोब"
+
+msgid "messagesdisplaying"
+msgstr "संदेश दाखवा"
+
+msgid "messagescomposition"
+msgstr "संदेश तयार करा"
+
+msgid "mimeparamfolding"
+msgstr "सोबत दिलेल्या फाईल्सची नावे"
+
+msgid "2231folding"
+msgstr "संपूर्ण आर एफ सी 2231(थंडरबर्ड)"
+
+msgid "miscfolding"
+msgstr "आर एफ सी  2047/2231 (मायक्रोसॉफ़्ट आऊटलूक)"
+
+msgid "2047folding"
+msgstr "संपूर्ण आर एफ सी 2047(ईतर)"
+
+msgid "force7bit"
+msgstr "8 अक्षरी एमआयएमई संक्षिप्‍तरूप वापरा"
+
+msgid "savelocalstorage"
+msgstr ""
+
+msgid "advancedoptions"
+msgstr "अधिक पर्याय"
+
+msgid "toggleadvancedoptions"
+msgstr ""
+
+msgid "focusonnewmessage"
+msgstr "ब्राऊझर खिडकी नवीन संदेशावर केंद्रित करा"
+
+msgid "checkallfolders"
+msgstr "सर्व फोल्डरमधे नवीन संदेश शोधा"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr ""
+
+msgid "mainoptions"
+msgstr "मुख्‍य पर्याय"
+
+msgid "browseroptions"
+msgstr ""
+
+msgid "section"
+msgstr "भाग"
+
+msgid "maintenance"
+msgstr "देखभाल"
+
+msgid "newmessage"
+msgstr "नवीन संदेश"
+
+msgid "signatureoptions"
+msgstr "सही पर्याय"
+
+msgid "whenreplying"
+msgstr "उत्‍तर देताना"
+
+msgid "replyempty"
+msgstr ""
+
+msgid "replytopposting"
+msgstr "नवीन संदेश मुळ संदेशाच्‍या वर चालू करा"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "नवीन संदेश मुळ संदेशाच्‍या खाली चालू करा"
+
+msgid "replyremovesignature"
+msgstr "उत्‍तर देताना मुळ सही संदेशातून काढून टाका"
+
+msgid "autoaddsignature"
+msgstr "आपोआप सही करा"
+
+msgid "newmessageonly"
+msgstr "फक्‍त नवीन संदेश"
+
+msgid "replyandforwardonly"
+msgstr "फक्‍त उत्‍तरे आ‍णी पुढे पाठवलेले संदेश"
+
+msgid "insertsignature"
+msgstr "सही मध्‍ये टाका"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "$n क्षणानंतर"
+
+msgid "reqmdn"
+msgstr "नेहमी पोचपावतीची विनंती करा"
+
+msgid "reqdsn"
+msgstr "नेहमी पोचपावती स्थिती निर्देशाची विनंती करा"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr ""
+
+msgid "defaultabook"
+msgstr ""
+
+msgid "autocompletesingle"
+msgstr ""
+
+msgid "listnamedisplay"
+msgstr ""
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr ""
+
+msgid "spellcheckoptions"
+msgstr ""
+
+msgid "spellcheckignoresyms"
+msgstr ""
+
+msgid "spellcheckignorenums"
+msgstr ""
+
+msgid "spellcheckignorecaps"
+msgstr ""
+
+msgid "addtodict"
+msgstr ""
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr ""
+
+msgid "standardwindows"
+msgstr ""
+
+msgid "forwardmode"
+msgstr ""
+
+msgid "inline"
+msgstr ""
+
+msgid "asattachment"
+msgstr ""
+
+msgid "replyallmode"
+msgstr ""
+
+msgid "replyalldefault"
+msgstr ""
+
+msgid "replyalllist"
+msgstr ""
+
+msgid "allmessages"
+msgstr "सर्व संदेश"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "फोल्डर"
+
+msgid "folders"
+msgstr "फोल्डर्स"
+
+msgid "foldername"
+msgstr "फोल्डरचे नाव"
+
+msgid "subscribed"
+msgstr "वर्गणिदार होणे"
+
+msgid "messagecount"
+msgstr "संदेश"
+
+msgid "create"
+msgstr "तयार करा"
+
+msgid "createfolder"
+msgstr "नवीन फोल्डर तयार करा"
+
+msgid "managefolders"
+msgstr "फोल्डर्सचे नियोजन करा"
+
+msgid "specialfolders"
+msgstr "विषेश फोल्डर"
+
+msgid "properties"
+msgstr ""
+
+msgid "folderproperties"
+msgstr ""
+
+msgid "parentfolder"
+msgstr ""
+
+msgid "location"
+msgstr ""
+
+msgid "info"
+msgstr ""
+
+msgid "getfoldersize"
+msgstr ""
+
+msgid "changesubscription"
+msgstr ""
+
+msgid "foldertype"
+msgstr ""
+
+msgid "personalfolder"
+msgstr ""
+
+msgid "otherfolder"
+msgstr ""
+
+msgid "sharedfolder"
+msgstr ""
+
+msgid "findfolders"
+msgstr ""
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr ""
+
+msgid "namespace.other"
+msgstr ""
+
+msgid "namespace.shared"
+msgstr ""
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "ने वर्गवारी करा"
+
+msgid "sortasc"
+msgstr "चढत्या क्रमाने"
+
+msgid "sortdesc"
+msgstr "उतरत्या क्रमाने"
+
+msgid "undo"
+msgstr ""
+
+msgid "installedplugins"
+msgstr ""
+
+msgid "plugin"
+msgstr ""
+
+msgid "version"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr ""
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr ""
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "बाइट"
+
+msgid "KB"
+msgstr "केबी"
+
+msgid "MB"
+msgstr "एमबी"
+
+msgid "GB"
+msgstr "जीबी"
+
+msgid "unicode"
+msgstr "युनिकोड"
+
+msgid "english"
+msgstr "इंग्रजी"
+
+msgid "westerneuropean"
+msgstr "पश्चिम युरोपियन"
+
+msgid "easterneuropean"
+msgstr "पूर्व युरोपियन"
+
+msgid "southeasterneuropean"
+msgstr "दक्षिणपूर्व युरोपियन"
+
+msgid "baltic"
+msgstr "बाल्‍टीक"
+
+msgid "cyrillic"
+msgstr "सिरीलिक"
+
+msgid "arabic"
+msgstr "अरेबिक"
+
+msgid "greek"
+msgstr "ग्रीक"
+
+msgid "hebrew"
+msgstr "हिब्रु"
+
+msgid "turkish"
+msgstr "तुर्कि"
+
+msgid "nordic"
+msgstr "नॉर्डिक"
+
+msgid "thai"
+msgstr "थाइ"
+
+msgid "celtic"
+msgstr "सेल्टिक"
+
+msgid "vietnamese"
+msgstr "व्हिएतनामी"
+
+msgid "japanese"
+msgstr "जपानी"
+
+msgid "korean"
+msgstr "कोरियन"
+
+msgid "chinese"
+msgstr "चिनी"
+
+msgid "arialabeltopnav"
+msgstr ""
+
+msgid "arialabeltasknav"
+msgstr ""
+
+msgid "arialabeltoolbar"
+msgstr ""
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr ""
+
+msgid "arialabelmessagessearchfilter"
+msgstr ""
+
+msgid "arialabelmailsearchform"
+msgstr ""
+
+msgid "arialabelcontactsearchform"
+msgstr ""
+
+msgid "arialabelmailquicksearchbox"
+msgstr ""
+
+msgid "arialabelquicksearchbox"
+msgstr ""
+
+msgid "arialabelfoldersearchfilter"
+msgstr ""
+
+msgid "arialabelfoldersearchform"
+msgstr ""
+
+msgid "arialabelfolderlist"
+msgstr ""
+
+msgid "arialabelmessagelist"
+msgstr ""
+
+msgid "arialabelmailpreviewframe"
+msgstr ""
+
+msgid "arialabelmailboxmenu"
+msgstr ""
+
+msgid "arialabellistselectmenu"
+msgstr ""
+
+msgid "arialabelthreadselectmenu"
+msgstr ""
+
+msgid "arialabelmessagelistoptions"
+msgstr ""
+
+msgid "arialabelmailimportdialog"
+msgstr ""
+
+msgid "arialabelmessagenav"
+msgstr ""
+
+msgid "arialabelmessagebody"
+msgstr ""
+
+msgid "arialabelmessageactions"
+msgstr ""
+
+msgid "arialabelcontactquicksearch"
+msgstr ""
+
+msgid "arialabelcontactsearchbox"
+msgstr ""
+
+msgid "arialabelmessageheaders"
+msgstr ""
+
+msgid "arialabelforwardingoptions"
+msgstr ""
+
+msgid "arialabelreplyalloptions"
+msgstr ""
+
+msgid "arialabelmoremessageactions"
+msgstr ""
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr ""
+
+msgid "arialabelcomposeoptions"
+msgstr ""
+
+msgid "arialabelresponsesmenu"
+msgstr ""
+
+msgid "arialabelattachmentuploadform"
+msgstr ""
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr ""
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+
+msgid "arialabelcontactexportoptions"
+msgstr ""
+
+msgid "arialabelabookgroupoptions"
+msgstr ""
+
+msgid "arialabelpreferencesform"
+msgstr ""
+
+msgid "arialabelidentityeditfrom"
+msgstr ""
+
+msgid "arialabelresponseeditfrom"
+msgstr ""
+
+msgid "arialabelsearchterms"
+msgstr ""
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+
+msgid "helplistkeyboardnavcontacts"
+msgstr ""
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "काहीतरी चूक झाली"
+
+msgid "messages.loginfailed"
+msgstr "प्रवेश करता आला नाही"
+
+msgid "messages.cookiesdisabled"
+msgstr "तुमचा ब्राऊझर कुकीज घेऊ शकत नाही"
+
+msgid "messages.sessionerror"
+msgstr ""
+"तुम्ही प्रवेश केल्यानंतर बराच वेळ काही न करता गेला म्हणून तुमचा कालावधी "
+"संपला किंवा तुमच्या कालावधीच्या नोंदेत काही चूक झाली आहे."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "आयमॅप सर्व्हरशी संपर्क होवू शकला नाही."
+
+msgid "messages.servererror"
+msgstr "सर्व्‍हर चूक !"
+
+msgid "messages.servererrormsg"
+msgstr "सर्व्हर चूक : $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr ""
+
+msgid "messages.dberror"
+msgstr "माहितीसाठा चूक !"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr ""
+
+msgid "messages.requesttimedout"
+msgstr ""
+
+msgid "messages.errorreadonly"
+msgstr "कृती करण्यास असमर्थ, फोल्डर फक्त बघण्यासाठी"
+
+msgid "messages.errornoperm"
+msgstr "कृती करण्यास असमर्थ, परवानगी अमान्य"
+
+msgid "messages.erroroverquota"
+msgstr ""
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+
+msgid "messages.invalidrequest"
+msgstr "अवैध विनंती! माहिती साठवलेली नाही."
+
+msgid "messages.invalidhost"
+msgstr ""
+
+msgid "messages.nomessagesfound"
+msgstr "या खात्यामधे कोणताही संदेश आलेला नाही"
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr ""
+
+msgid "messages.nomessages"
+msgstr ""
+
+msgid "messages.refreshing"
+msgstr ""
+
+msgid "messages.loading"
+msgstr "संदेश आणत आहे"
+
+msgid "messages.uploading"
+msgstr "फाईल चढवली जात आहे..."
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr ""
+
+msgid "messages.loadingdata"
+msgstr "माहिती आणत आहे"
+
+msgid "messages.checkingmail"
+msgstr "नवीन संदेश आले आहेत का हे पहात आहे"
+
+msgid "messages.sendingmessage"
+msgstr "संदेश पाठवत आहे"
+
+msgid "messages.messagesent"
+msgstr "संदेश यशस्वीरित्या पाठवण्यात आला आहे"
+
+msgid "messages.savingmessage"
+msgstr "संदेश जतन करुन ठेवत आहे"
+
+msgid "messages.messagesaved"
+msgstr "संदेश मसुदा फोल्डरमधे ठेवत आहे"
+
+msgid "messages.successfullysaved"
+msgstr "यशस्वीरित्या ठेवला"
+
+msgid "messages.savingresponse"
+msgstr ""
+
+msgid "messages.deleteresponseconfirm"
+msgstr ""
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "नवीन नाव पत्तां नोंदवहीत व्यवस्थित ठेवला"
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "सारख्या नावाची नोंद आधीच आहे"
+
+msgid "messages.blockedimages"
+msgstr ""
+"तुमची गोपनीयता पाळण्यासाठी या संदेशातील दुसर्‍या सर्व्हरवरील चित्रे दिसणे "
+"थांबवले आहे."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "हा गुप्त व सांकेतिक संदेश आहे. तो तुम्हाला असा दाखवता येणार नाही."
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "कोणताच पत्ता नोंदवहीत नाही."
+
+msgid "messages.contactnotfound"
+msgstr "या नावाचा कोणताच पत्ता नोंदवहीत नाही."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "संदेश पाठवता आला नाही."
+
+msgid "messages.senttooquickly"
+msgstr "कृपया हा संदेश पाठवण्यापूर्वी $sec थांबा"
+
+msgid "messages.errorsavingsent"
+msgstr ""
+
+msgid "messages.errorsaving"
+msgstr ""
+
+msgid "messages.errormoving"
+msgstr "संदेश तेथे ठेवता आला नाही."
+
+msgid "messages.errorcopying"
+msgstr "संदेशांची नक्‍कल करता आली नाही"
+
+msgid "messages.errordeleting"
+msgstr "संदेश काढून टाकता आला नाही."
+
+msgid "messages.errormarking"
+msgstr "संदेशांवर खूण करता आली नाही."
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "खूण केलेले सर्व पत्ते खरोखरच तुम्हाला काढून टाकायचे आहेत का?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "निवडलेला गट तुम्हाला नक्की नष्ट करायचा आहे का?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "खूण केलेले सर्व संदेश खरोखरच तुम्हाला काढून टाकायचे आहेत का?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "हा फोल्डर खरोखरच तुम्हाला काढून टाकायचा आहेत का?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "या फोल्डरमधिल सर्व संदेश खरोखरच तुम्हाला काढून टाकायचे आहेत का?"
+
+msgid "messages.contactdeleting"
+msgstr ""
+
+msgid "messages.groupdeleting"
+msgstr ""
+
+msgid "messages.folderdeleting"
+msgstr "फोल्डर काढून टाकत आहे"
+
+msgid "messages.foldermoving"
+msgstr "फोल्डर हलवत आहे."
+
+msgid "messages.foldersubscribing"
+msgstr ""
+
+msgid "messages.folderunsubscribing"
+msgstr ""
+
+msgid "messages.formincomplete"
+msgstr "फॉर्म पूर्णपणे भरलेला  नाही."
+
+msgid "messages.noemailwarning"
+msgstr "योग्य, बरोबर, आणि वैध इमेल पत्ता द्या."
+
+msgid "messages.nonamewarning"
+msgstr "नाव द्या"
+
+msgid "messages.nopagesizewarning"
+msgstr "पानाचा आकार द्या"
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "किमान एकतरी पत्ता द्या ज्यांना तुम्हाला संदेश पाठवावयाचा आहे."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "विषय दिलेला नाही. तुम्हाला विषय द्यायचा आहे का?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "संदेशामधे कोणताही मजकूर नाही. तुम्हाला तसाच संदेश पाठवावयाचा आहे का?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+
+msgid "messages.nosearchname"
+msgstr ""
+"कृपया ज्यांना तुम्हाला संदेश पाठवावयाचा आहे त्यांचे नाव किंवा इमेल पत्ता "
+"द्या."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"सर्व फाईल अजून चढवल्‍या गेलेल्‍या नाहीत. कृपया वाट पहा किंवा मागे फिरा"
+
+msgid "messages.searchsuccessful"
+msgstr "$nr संदेष मिळाले."
+
+msgid "messages.contactsearchsuccessful"
+msgstr ""
+
+msgid "messages.searchnomatch"
+msgstr "शोध घेतल्यानंतर एकही संदेश मिळाला नाही"
+
+msgid "messages.searching"
+msgstr "शोधत आहे......"
+
+msgid "messages.checking"
+msgstr "तपासत आहे....."
+
+msgid "messages.stillsearching"
+msgstr ""
+
+msgid "messages.nospellerrors"
+msgstr "शुध्दलेखनाची चूक सापडली नाही"
+
+msgid "messages.folderdeleted"
+msgstr "फोल्डर यशस्वी रित्या काढून टाकण्यात आला आहे."
+
+msgid "messages.foldersubscribed"
+msgstr ""
+
+msgid "messages.folderunsubscribed"
+msgstr ""
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "यशस्वी रित्या काढून टाकण्यात आला आहे."
+
+msgid "messages.converting"
+msgstr "दृष्य स्वरुप काढून टाकण्यात येत आहे."
+
+msgid "messages.messageopenerror"
+msgstr "सर्व्हरवरुन संदेश आणता आला नाही."
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "फाईल चढवता आली नाही"
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "तुम्ही चढवलेली फाईल क्षमतेपेक्षा जास्त मोठी आहे."
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr ""
+
+msgid "messages.movesuccess"
+msgstr ""
+
+msgid "messages.copyerror"
+msgstr ""
+
+msgid "messages.moveerror"
+msgstr ""
+
+msgid "messages.sourceisreadonly"
+msgstr "पत्ता फक्त वाचण्यासाठी आहे."
+
+msgid "messages.errorsavingcontact"
+msgstr "पत्ता नोंदवहीत ठेवता आला नाही."
+
+msgid "messages.movingmessage"
+msgstr "संदेश हलवत आहे.."
+
+msgid "messages.copyingmessage"
+msgstr "संदेशाची नक्‍कल करत आहे..."
+
+msgid "messages.copyingcontact"
+msgstr ""
+
+msgid "messages.movingcontact"
+msgstr ""
+
+msgid "messages.deletingmessage"
+msgstr ""
+
+msgid "messages.markingmessage"
+msgstr ""
+
+msgid "messages.addingmember"
+msgstr ""
+
+msgid "messages.removingmember"
+msgstr ""
+
+msgid "messages.receiptsent"
+msgstr "पोचपावती यशस्वीरित्या पाठवण्यात आली आहे."
+
+msgid "messages.errorsendingreceipt"
+msgstr "पोचपावती पाठवता आली नाही."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "तुम्हाला ही ओळख नक्की नष्ट करायची आहे का?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "तुम्ही हे खाते काढून टाकू शकत नाही कारण हे तुमचे शेवटचे खाते आहे."
+
+msgid "messages.forbiddencharacter"
+msgstr "फोल्डरच्या नावात न चालणारी अक्षरे किंवा खूणा आहेत."
+
+msgid "messages.selectimportfile"
+msgstr "चढवण्यासाठी फाईल निवडा"
+
+msgid "messages.addresswriterror"
+msgstr "निवडलेल्या पत्ता नोंदवहीत नोंद करता येत नाही."
+
+msgid "messages.contactaddedtogroup"
+msgstr "पत्‍ते यशस्‍वीरित्‍या हया गटात वाढवण्‍यात आले."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "पत्‍ते यशस्‍वीरित्‍या हया गटातून काढून टाकले."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr ""
+
+msgid "messages.importwait"
+msgstr "आयात करत आहे, कृपया वाट पहा....."
+
+msgid "messages.importformaterror"
+msgstr ""
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>$inserted पत्ते यशस्वीरित्या आयात केल, $skipped आधिच असलेल्या नोंदी "
+"केल्या नाहीत</b>:<p><em>$names</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr ""
+
+msgid "messages.importmessageerror"
+msgstr ""
+
+msgid "messages.opnotpermitted"
+msgstr "ही क्रिया करण्यास परवानगी नाही."
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"हानीकारक चूक झाली. व्‍यवस्‍थापकाशी तात्‍काळ संपर्क साधा. <b> तुमचा संदेश "
+"पाठवला नाही </b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP चूक ($code): सर्व्‍हरशी संपर्क साधता येत नाही"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP चूक ($code): ओळख पटवता येत नाही"
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP चूक ($code): \"$from\" पाठवणार्‍याचे नाव टाकता आले नाही"
+
+msgid "messages.smtptoerror"
+msgstr "SMTP चूक ($code): प्राप्‍तकर्ता \"$to\" टाकता आला नाही"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP चूक : प्राप्‍तकर्त्‍यांची यादी चालू करता आली नाही"
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP चूक : $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+"खूप जास्‍त प्राप्‍तकर्ते. प्राप्‍तकर्त्‍यांची संख्‍या $max पर्यंत कमी करा"
+
+msgid "messages.maxgroupmembersreached"
+msgstr "गट सभासद संख्‍या $max पेक्षा जास्‍त झाली आहे"
+
+msgid "messages.internalerror"
+msgstr ""
+
+msgid "messages.contactdelerror"
+msgstr ""
+
+msgid "messages.contactdeleted"
+msgstr ""
+
+msgid "messages.contactrestoreerror"
+msgstr ""
+
+msgid "messages.contactrestored"
+msgstr ""
+
+msgid "messages.groupdeleted"
+msgstr ""
+
+msgid "messages.grouprenamed"
+msgstr ""
+
+msgid "messages.groupcreated"
+msgstr ""
+
+msgid "messages.savedsearchdeleted"
+msgstr ""
+
+msgid "messages.savedsearchdeleteerror"
+msgstr ""
+
+msgid "messages.savedsearchcreated"
+msgstr ""
+
+msgid "messages.savedsearchcreateerror"
+msgstr ""
+
+msgid "messages.messagedeleted"
+msgstr ""
+
+msgid "messages.messagemoved"
+msgstr ""
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr ""
+
+msgid "messages.messagemarked"
+msgstr ""
+
+msgid "messages.autocompletechars"
+msgstr ""
+
+msgid "messages.autocompletemore"
+msgstr ""
+
+msgid "messages.namecannotbeempty"
+msgstr ""
+
+msgid "messages.nametoolong"
+msgstr ""
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr ""
+
+msgid "messages.foldercreated"
+msgstr ""
+
+msgid "messages.invalidimageformat"
+msgstr ""
+
+msgid "messages.mispellingsfound"
+msgstr ""
+
+msgid "messages.parentnotwritable"
+msgstr ""
+
+msgid "messages.messagetoobig"
+msgstr ""
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+
+msgid "messages.messageissent"
+msgstr ""
+
+msgid "messages.errnotfound"
+msgstr ""
+
+msgid "messages.errnotfoundexplain"
+msgstr ""
+
+msgid "messages.errfailedrequest"
+msgstr ""
+
+msgid "messages.errauthorizationfailed"
+msgstr ""
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+
+msgid "messages.errrequestcheckfailed"
+msgstr ""
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+
+msgid "messages.errcontactserveradmin"
+msgstr ""
+
+msgid "messages.clicktoresumesession"
+msgstr ""
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

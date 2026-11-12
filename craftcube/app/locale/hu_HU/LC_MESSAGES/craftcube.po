@@ -1,0 +1,2920 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Üdvözli a $product"
+
+msgid "username"
+msgstr "Felhasználónév"
+
+msgid "password"
+msgstr "Jelszó"
+
+msgid "server"
+msgstr "Szerver"
+
+msgid "login"
+msgstr "Bejelentkezés"
+
+msgid "oauthlogin"
+msgstr "Bejelentkezni a következővel $provider"
+
+msgid "menu"
+msgstr "Menü"
+
+msgid "logout"
+msgstr "Kijelentkezés"
+
+msgid "mail"
+msgstr "E-mail"
+
+msgid "settings"
+msgstr "Beállítások"
+
+msgid "addressbook"
+msgstr "Címjegyzék"
+
+msgid "darkmode"
+msgstr "Sötét mód"
+
+msgid "lightmode"
+msgstr "Világos mód"
+
+msgid "inbox"
+msgstr "Érkezettek"
+
+msgid "drafts"
+msgstr "Piszkozatok"
+
+msgid "sent"
+msgstr "Küldöttek"
+
+msgid "trash"
+msgstr "Kuka"
+
+msgid "junk"
+msgstr "Kéretlen"
+
+msgid "show_real_foldernames"
+msgstr "Valódi nevek megjelenítése a speciális mappáknál"
+
+msgid "subject"
+msgstr "Tárgy"
+
+msgid "from"
+msgstr "Feladó"
+
+msgid "sender"
+msgstr "Feladó"
+
+msgid "to"
+msgstr "Címzett"
+
+msgid "cc"
+msgstr "Másolat"
+
+msgid "bcc"
+msgstr "Titkos másolat"
+
+msgid "replyto"
+msgstr "Válaszcím"
+
+msgid "followupto"
+msgstr "Hírcsoport válasz"
+
+msgid "date"
+msgstr "Dátum"
+
+msgid "size"
+msgstr "Méret"
+
+msgid "priority"
+msgstr "Sürgősség"
+
+msgid "organization"
+msgstr "Szervezet"
+
+msgid "readstatus"
+msgstr "Olvasott"
+
+msgid "listoptions"
+msgstr "Üzenetlista beállítások..."
+
+msgid "listoptionstitle"
+msgstr "Üzenetlista beállítások"
+
+msgid "mailboxlist"
+msgstr "Mappák"
+
+msgid "messagesfromto"
+msgstr "Üzenetek: $from - $to / $count"
+
+msgid "threadsfromto"
+msgstr "Témák: $from - $to / $count"
+
+msgid "messagenrof"
+msgstr "$nr / $count üzenet"
+
+msgid "fromtoshort"
+msgstr "$from – $to / $count"
+
+msgid "copy"
+msgstr "Másolás"
+
+msgid "move"
+msgstr "Áthelyezés"
+
+msgid "moveto"
+msgstr "Áthelyezés..."
+
+msgid "copyto"
+msgstr "Másolás.."
+
+msgid "download"
+msgstr "Letöltés"
+
+msgid "open"
+msgstr "Megnyitás"
+
+msgid "showattachment"
+msgstr "Megjelenítés"
+
+msgid "showanyway"
+msgstr "Megjelenítés mindenképpen"
+
+msgid "filename"
+msgstr "Fájl neve"
+
+msgid "filesize"
+msgstr "Fájl mérete"
+
+msgid "addtoaddressbook"
+msgstr "Hozzáadás a címjegyzékhez"
+
+msgid "sun"
+msgstr "Vas"
+
+msgid "mon"
+msgstr "Hét"
+
+msgid "tue"
+msgstr "Kedd"
+
+msgid "wed"
+msgstr "Szer"
+
+msgid "thu"
+msgstr "Csüt"
+
+msgid "fri"
+msgstr "Pén"
+
+msgid "sat"
+msgstr "Szom"
+
+msgid "sunday"
+msgstr "Vasárnap"
+
+msgid "monday"
+msgstr "Hétfő"
+
+msgid "tuesday"
+msgstr "Kedd"
+
+msgid "wednesday"
+msgstr "Szerda"
+
+msgid "thursday"
+msgstr "Csütörtök"
+
+msgid "friday"
+msgstr "Péntek"
+
+msgid "saturday"
+msgstr "Szombat"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Febr"
+
+msgid "mar"
+msgstr "Márc"
+
+msgid "apr"
+msgstr "Ápr"
+
+msgid "may"
+msgstr "Máj"
+
+msgid "jun"
+msgstr "Jún"
+
+msgid "jul"
+msgstr "Júl"
+
+msgid "aug"
+msgstr "Aug"
+
+msgid "sep"
+msgstr "Szept"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Dec"
+
+msgid "longjan"
+msgstr "Január"
+
+msgid "longfeb"
+msgstr "Február"
+
+msgid "longmar"
+msgstr "Március"
+
+msgid "longapr"
+msgstr "Április"
+
+msgid "longmay"
+msgstr "Május"
+
+msgid "longjun"
+msgstr "Június"
+
+msgid "longjul"
+msgstr "Július"
+
+msgid "longaug"
+msgstr "Augusztus"
+
+msgid "longsep"
+msgstr "Szeptember"
+
+msgid "longoct"
+msgstr "Október"
+
+msgid "longnov"
+msgstr "November"
+
+msgid "longdec"
+msgstr "December"
+
+msgid "today"
+msgstr "Ma"
+
+msgid "refresh"
+msgstr "Frissítés"
+
+msgid "checkmail"
+msgstr "Új üzenetek ellenőrzése"
+
+msgid "compose"
+msgstr "Új üzenet"
+
+msgid "writenewmessage"
+msgstr "Új üzenet"
+
+msgid "reply"
+msgstr "Válasz"
+
+msgid "replytomessage"
+msgstr "Válasz"
+
+msgid "replytoallmessage"
+msgstr "Válasz a listának vagy a feladónak és az összes címzettnek"
+
+msgid "replyall"
+msgstr "Válasz mindenkinek"
+
+msgid "replylist"
+msgstr "Válasz a listának"
+
+msgid "forward"
+msgstr "Továbbítás"
+
+msgid "forwardinline"
+msgstr "Továbbítás beágyazva"
+
+msgid "forwardattachment"
+msgstr "Továbbítás csatolmányként"
+
+msgid "forwardmessage"
+msgstr "Továbbítás"
+
+msgid "bouncemsg"
+msgstr "Újraküldés (visszapattanás)"
+
+msgid "bounce"
+msgstr "Újraküldés"
+
+msgid "deletemessage"
+msgstr "Törlés"
+
+msgid "undeletemessage"
+msgstr "Üzenet törlésének visszavonása"
+
+msgid "movemessagetotrash"
+msgstr "Üzenet törlése"
+
+msgid "printmessage"
+msgstr "Nyomtatás"
+
+msgid "previousmessage"
+msgstr "Előző levél mutatása"
+
+msgid "firstmessage"
+msgstr "Első levél mutatása"
+
+msgid "nextmessage"
+msgstr "Következő levél mutatása"
+
+msgid "lastmessage"
+msgstr "Utolsó levél mutatása"
+
+msgid "backtolist"
+msgstr "Vissza az üzenetekhez"
+
+msgid "viewsource"
+msgstr "Forrás megtekintése"
+
+msgid "mark"
+msgstr "Jelölés"
+
+msgid "markmessages"
+msgstr "Üzenetek megjelölése"
+
+msgid "markread"
+msgstr "Olvasottként"
+
+msgid "markunread"
+msgstr "Olvasatlanként"
+
+msgid "markflagged"
+msgstr "Jelöltként"
+
+msgid "markunflagged"
+msgstr "Jelöletlenként"
+
+msgid "markundeleted"
+msgstr "Nem töröltre jelöl"
+
+msgid "markasread"
+msgstr "Olvasottnak jelölés"
+
+msgid "markasunread"
+msgstr "Olvasatlannak jelölés"
+
+msgid "markasflagged"
+msgstr "Jelöltnek jelölés"
+
+msgid "markasunflagged"
+msgstr "Jelöletlennek jelölés"
+
+msgid "moreactions"
+msgstr "További műveletek..."
+
+msgid "markallread"
+msgstr "Mind megjelölése olvasottként"
+
+msgid "folders-cur"
+msgstr "Csak a kiválasztott mappa"
+
+msgid "folders-sub"
+msgstr "Kiválasztott mappák és almappák"
+
+msgid "folders-all"
+msgstr "Összes mappa"
+
+msgid "more"
+msgstr "Még..."
+
+msgid "back"
+msgstr "Vissza"
+
+msgid "options"
+msgstr "Beállítások"
+
+msgid "composeoptions"
+msgstr "Levélírás opciói"
+
+msgid "optionsandattachments"
+msgstr "Opciók és csatolmányok"
+
+msgid "actions"
+msgstr "Műveletek"
+
+msgid "first"
+msgstr "Első"
+
+msgid "last"
+msgstr "Utolsó"
+
+msgid "previous"
+msgstr "Előző"
+
+msgid "next"
+msgstr "Következő"
+
+msgid "select"
+msgstr "Kijelölés"
+
+msgid "selection"
+msgstr "Kijelölés"
+
+msgid "all"
+msgstr "Összes"
+
+msgid "none"
+msgstr "Nincs"
+
+msgid "currpage"
+msgstr "Aktuális oldal"
+
+msgid "isread"
+msgstr "Olvasás"
+
+msgid "unread"
+msgstr "Olvasatlan"
+
+msgid "flagged"
+msgstr "Megjelölt"
+
+msgid "unflagged"
+msgstr "Nem megjelölt"
+
+msgid "unanswered"
+msgstr "Megválaszolatlan"
+
+msgid "withattachment"
+msgstr "Csatolmánnyal"
+
+msgid "deleted"
+msgstr "Törölt"
+
+msgid "undeleted"
+msgstr "Nem lett törölve"
+
+msgid "replied"
+msgstr "Megválaszolva"
+
+msgid "forwarded"
+msgstr "Továbbítva"
+
+msgid "invert"
+msgstr "Invertálás"
+
+msgid "filter"
+msgstr "Szűrés"
+
+msgid "list"
+msgstr "Lista"
+
+msgid "threads"
+msgstr "Téma csoportok"
+
+msgid "expand-all"
+msgstr "Összes kibontása"
+
+msgid "expand-unread"
+msgstr "Olvasatlanok kibontása"
+
+msgid "collapse-all"
+msgstr "Összes összecsukása"
+
+msgid "threaded"
+msgstr "Témák szerinti csoportosítás"
+
+msgid "showunread"
+msgstr "Olvasatlan üzenetek megjelenítése"
+
+msgid "autoexpand_threads"
+msgstr "Témacsoportok kibontása"
+
+msgid "do_expand"
+msgstr "minden téma"
+
+msgid "expand_only_unread"
+msgstr "csak ahol van olvasatlan üzenet"
+
+msgid "fromto"
+msgstr "Feladó/Címzett"
+
+msgid "flag"
+msgstr "Megjelölés"
+
+msgid "attachment"
+msgstr "Csatolmány"
+
+msgid "nonesort"
+msgstr "Nincs"
+
+msgid "sentdate"
+msgstr "Feladva"
+
+msgid "arrival"
+msgstr "Kézbesítve"
+
+msgid "asc"
+msgstr "Emelkedő"
+
+msgid "desc"
+msgstr "Csökkenő"
+
+msgid "listcolumns"
+msgstr "Oszlopok listája"
+
+msgid "listsorting"
+msgstr "Rendezés oszlopa"
+
+msgid "listorder"
+msgstr "Rendezés sorrendje"
+
+msgid "listmode"
+msgstr "Megjelenítési mód"
+
+msgid "lmode"
+msgstr "Megjelenítési mód"
+
+msgid "layout"
+msgstr "Elrendezés"
+
+msgid "layoutwidescreen"
+msgstr "Szélesképernyő"
+
+msgid "layoutdesktop"
+msgstr "Asztal"
+
+msgid "layoutlist"
+msgstr "Lista"
+
+msgid "layoutwidescreendesc"
+msgstr "Szélesvásznú (3-oszlopos nézet)"
+
+msgid "layoutdesktopdesc"
+msgstr "Asztali ( széles üzenetlista és alatta betekintő a levélbe)"
+
+msgid "layoutlistdesc"
+msgstr "Lista (nincs a levélbe betekintő)"
+
+msgid "folderactions"
+msgstr "Mappaműveletek..."
+
+msgid "compact"
+msgstr "Tömörítés"
+
+msgid "empty"
+msgstr "Kiürítés"
+
+msgid "importmessages"
+msgstr "Üzenetek importálása"
+
+msgid "mailimportdesc"
+msgstr ""
+"Feltölthetsz leveleket <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> vagy <a"
+" href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> formátumban."
+
+msgid "mailimportzip"
+msgstr "Több fájlt össze lehet tömöríteni egy zip fájlba."
+
+msgid "quota"
+msgstr "Helyfoglalás"
+
+msgid "unknown"
+msgstr "ismeretlen"
+
+msgid "unlimited"
+msgstr "korlátlan"
+
+msgid "quotatype"
+msgstr "Kvóta típus"
+
+msgid "quotatotal"
+msgstr "Limit"
+
+msgid "quotaused"
+msgstr "Használt"
+
+msgid "quotastorage"
+msgstr "Lemez méret"
+
+msgid "quotamessage"
+msgstr "Üzenet darab"
+
+msgid "shortheaderdate"
+msgstr "$date"
+
+msgid "shortheaderto"
+msgstr "$to címzettnek $date"
+
+msgid "shortheaderfrom"
+msgstr "$from küldőtől $date"
+
+msgid "quicksearch"
+msgstr "Gyorskeresés"
+
+msgid "searchplaceholder"
+msgstr "Keresés..."
+
+msgid "resetsearch"
+msgstr "Alapállapot"
+
+msgid "searchmod"
+msgstr "Keresési opciók"
+
+msgid "msgtext"
+msgstr "Teljes üzenet"
+
+msgid "body"
+msgstr "Törzs"
+
+msgid "type"
+msgstr "Típus"
+
+msgid "namex"
+msgstr "Név"
+
+msgid "searchscope"
+msgstr "Hatókör"
+
+msgid "currentfolder"
+msgstr "Aktuális mappa"
+
+msgid "subfolders"
+msgstr "Ez és az almappák"
+
+msgid "allfolders"
+msgstr "Minden mappa"
+
+msgid "searchinterval-1W"
+msgstr "egy hétnél régebbi"
+
+msgid "searchinterval-1M"
+msgstr "egy hónapnál régebbi"
+
+msgid "searchinterval-1Y"
+msgstr "egy évnél régebbi"
+
+msgid "searchinterval1W"
+msgstr "egy hétnél újabb"
+
+msgid "searchinterval1M"
+msgstr "egy hónapnál újabb"
+
+msgid "searchinterval1Y"
+msgstr "egy évnél újabb"
+
+msgid "infolder"
+msgstr "Mappa: $folder"
+
+msgid "currentaddressbook"
+msgstr "Jelenlegi címjegyzék"
+
+msgid "alladdressbooks"
+msgstr "Összes címjegyzék"
+
+msgid "openinextwin"
+msgstr "Megnyitás új ablakban"
+
+msgid "emlsave"
+msgstr "Letöltés (.eml)"
+
+msgid "changeformattext"
+msgstr "Megjelenítés sima szöveges formátumban"
+
+msgid "changeformathtml"
+msgstr "Megjelenítés HTML formátumban"
+
+msgid "editasnew"
+msgstr "Szerkesztés újként"
+
+msgid "send"
+msgstr "Küldés"
+
+msgid "sendmessage"
+msgstr "Üzenet küldése"
+
+msgid "savemessage"
+msgstr "Vázlat mentése"
+
+msgid "addattachment"
+msgstr "Fájl csatolása"
+
+msgid "charset"
+msgstr "Karakterkészlet"
+
+msgid "editortype"
+msgstr "Szerkesztő típusa"
+
+msgid "returnreceipt"
+msgstr "Olvasási visszaigazolás"
+
+msgid "dsn"
+msgstr "Kézbesítési visszaigazolás"
+
+msgid "keepformatting"
+msgstr "Formázás megtartása "
+
+msgid "mailreplyintro"
+msgstr "$date időpontban $sender ezt írta:"
+
+msgid "originalmessage"
+msgstr "Eredeti üzenet"
+
+msgid "selectimage"
+msgstr "Kép kijelölés"
+
+msgid "addimage"
+msgstr "Kép hozzáadás"
+
+msgid "selectmedia"
+msgstr "Film kijelölés"
+
+msgid "addmedia"
+msgstr "Film hozzáadás"
+
+msgid "encrypt"
+msgstr "Titkosítás"
+
+msgid "encryptmessage"
+msgstr "Üzenet titkosítása"
+
+msgid "encryptmessagemailvelope"
+msgstr "Üzenet titkosítása Mailvelope-vel"
+
+msgid "importpubkeys"
+msgstr "Nyilvános kulcsok importálása"
+
+msgid "encryptedsendialog"
+msgstr "Titkosított üzenet küldése"
+
+msgid "encryptandsign"
+msgstr "Titkosítás és aláírás"
+
+msgid "keyid"
+msgstr "Kulcs ID"
+
+msgid "keylength"
+msgstr "Bitek"
+
+msgid "keyexpired"
+msgstr "Lejárt"
+
+msgid "keyrevoked"
+msgstr "Visszavont"
+
+msgid "bccinstead"
+msgstr "Titkos másolat használata"
+
+msgid "addheader"
+msgstr "Mező hozzáadása (Cc, Bcc, ...)"
+
+msgid "insert"
+msgstr "Beszúrás"
+
+msgid "insertcontact"
+msgstr "Kapcsolat(ok) beszúrása"
+
+msgid "recipient"
+msgstr "Címzett"
+
+msgid "recipientedit"
+msgstr "A címzett szerkesztése"
+
+msgid "editidents"
+msgstr "Azonosítók szerkesztése"
+
+msgid "spellcheck"
+msgstr "Helyesírás-ellenőrzés"
+
+msgid "checkspelling"
+msgstr "Helyesírás-ellenőrzés"
+
+msgid "resumeediting"
+msgstr "Helyesírás-ellenőrzés vége"
+
+msgid "revertto"
+msgstr "Visszaállítás erre"
+
+msgid "restore"
+msgstr "Visszaállítás"
+
+msgid "restoremessage"
+msgstr "Üzenet visszaállítás"
+
+msgid "ignore"
+msgstr "figyelmen kívül hagy"
+
+msgid "responses"
+msgstr "Válaszok"
+
+msgid "insertresponse"
+msgstr "Egy válasz beillesztése"
+
+msgid "manageresponses"
+msgstr "Válaszok kezelése"
+
+msgid "newresponse"
+msgstr "Új válasz létrehozása"
+
+msgid "addresponse"
+msgstr "Válasz hozzáadása"
+
+msgid "editresponse"
+msgstr "Válasz szerkesztése"
+
+msgid "editresponses"
+msgstr "Válaszok szerkesztése"
+
+msgid "responsename"
+msgstr "Név"
+
+msgid "responsetext"
+msgstr "Válasz szöveg"
+
+msgid "attach"
+msgstr "Csatolás"
+
+msgid "attachments"
+msgstr "Csatolmányok"
+
+msgid "upload"
+msgstr "Feltöltés"
+
+msgid "uploadprogress"
+msgstr "$percent ($current / $total)"
+
+msgid "close"
+msgstr "Bezárás"
+
+msgid "messageoptions"
+msgstr "Üzenetbeállítások..."
+
+msgid "togglecomposeoptions"
+msgstr "Levélírás beállítások kapcsolása"
+
+msgid "attachmentrename"
+msgstr "Csatolmány átnevezése"
+
+msgid "low"
+msgstr "Alacsony"
+
+msgid "lowest"
+msgstr "Legalacsonyabb"
+
+msgid "normal"
+msgstr "Normál"
+
+msgid "high"
+msgstr "Magas"
+
+msgid "highest"
+msgstr "Legmagasabb"
+
+msgid "nosubject"
+msgstr "(nincs tárgy)"
+
+msgid "showimages"
+msgstr "Képek megjelenítése"
+
+msgid "allow"
+msgstr "Engedélyezve"
+
+msgid "alwaysshow"
+msgstr "Képek megjelenítése mindig, ha a feladó $sender"
+
+msgid "alwaysallow"
+msgstr "Mindig engedélyezve, ha a feladó $sender "
+
+msgid "isdraft"
+msgstr "Ez egy piszkozat."
+
+msgid "andnmore"
+msgstr "további $nr..."
+
+msgid "details"
+msgstr "Részletek"
+
+msgid "summary"
+msgstr "Összegzés"
+
+msgid "headers"
+msgstr "Fejlécek"
+
+msgid "allheaders"
+msgstr "Fejlécek..."
+
+msgid "togglemoreheaders"
+msgstr "Több üzenet fejléc (header) megjelenítése"
+
+msgid "togglefullheaders"
+msgstr "Nyers üzenet fejléc megjelenítés/elrejtés"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Egyszerű szöveg"
+
+msgid "savesentmessagein"
+msgstr "Elküldött üzenet mentése ide"
+
+msgid "dontsave"
+msgstr "nincs mentés"
+
+msgid "maxuploadsize"
+msgstr "A maximális feltölthető fájl mérete $size"
+
+msgid "addcc"
+msgstr "Cc (Másolati cím) hozzáadása"
+
+msgid "addbcc"
+msgstr "Bcc (titkos másolati cím) hozzáadása"
+
+msgid "addreplyto"
+msgstr "Válaszcím hozzáadása"
+
+msgid "addfollowupto"
+msgstr "Hírcsoport válasz hozzáadása"
+
+msgid "sendreceipt"
+msgstr "Elküldi az olvasási visszaigazolást?"
+
+msgid "mdnrequest"
+msgstr ""
+"Az üzenet küldője értesítést kér arról, hogy elolvasta a levelet. El legyen "
+"küldve az olvasási visszaigazolás?"
+
+msgid "receiptread"
+msgstr "Olvasási visszaigazolás (olvasott)"
+
+msgid "yourmessage"
+msgstr "Ez az üzenete olvasási visszaigazolása"
+
+msgid "receiptnote"
+msgstr ""
+"Megjegyzés: Ez az olvasási visszaigazolás csak azt igazolja, hogy az üzenet "
+"megjelenítésre került a címzett számítógépén. Nincs rá garancia, hogy a "
+"címzett elolvasta volna az üzenetet, illetve megértette volna annak "
+"tartalmát."
+
+msgid "sendalwaysto"
+msgstr "Mindig küldjön ide $email"
+
+msgid "zoomin"
+msgstr "Nagyítás"
+
+msgid "zoomout"
+msgstr "Kicsinyítés"
+
+msgid "rotate"
+msgstr "Elforgatás"
+
+msgid "increaseimage"
+msgstr "Kép méretének növelése"
+
+msgid "decreaseimage"
+msgstr "Kép méretének csökkentése"
+
+msgid "rotateimage"
+msgstr "Kép elforgatás"
+
+msgid "showtools"
+msgstr "Kép eszközök megjelenítése"
+
+msgid "hidetools"
+msgstr "Kép eszközök elrejtése"
+
+msgid "name"
+msgstr "Megjelenített név"
+
+msgid "firstname"
+msgstr "Keresztnév"
+
+msgid "surname"
+msgstr "Vezetéknév"
+
+msgid "middlename"
+msgstr "Második keresztnév"
+
+msgid "nameprefix"
+msgstr "Név-előtag"
+
+msgid "namesuffix"
+msgstr "Név-utótag"
+
+msgid "nickname"
+msgstr "Becenév"
+
+msgid "jobtitle"
+msgstr "Beosztás"
+
+msgid "department"
+msgstr "Részleg"
+
+msgid "gender"
+msgstr "Nem"
+
+msgid "maidenname"
+msgstr "Leánykori név"
+
+msgid "email"
+msgstr "E-mail cím"
+
+msgid "phone"
+msgstr "Telefonszám"
+
+msgid "address"
+msgstr "Lakcím"
+
+msgid "street"
+msgstr "Utca"
+
+msgid "locality"
+msgstr "Város"
+
+msgid "zipcode"
+msgstr "Irányítószám"
+
+msgid "region"
+msgstr "Régió"
+
+msgid "country"
+msgstr "Ország"
+
+msgid "birthday"
+msgstr "Születésnap"
+
+msgid "anniversary"
+msgstr "Évforduló"
+
+msgid "website"
+msgstr "Weboldal"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Megjegyzések"
+
+msgid "male"
+msgstr "férfi"
+
+msgid "female"
+msgstr "nő"
+
+msgid "nonbinary"
+msgstr "nem bináris"
+
+msgid "othergender"
+msgstr "egyéb"
+
+msgid "manager"
+msgstr "Menedzser"
+
+msgid "assistant"
+msgstr "Asszisztens"
+
+msgid "spouse"
+msgstr "Házastárs"
+
+msgid "allfields"
+msgstr "Összes mező"
+
+msgid "search"
+msgstr "Keresés"
+
+msgid "searchresult"
+msgstr "Keresés eredménye"
+
+msgid "advsearch"
+msgstr "Részletes keresés"
+
+msgid "advanced"
+msgstr "Haladó"
+
+msgid "other"
+msgstr "Egyéb"
+
+msgid "printcontact"
+msgstr "A kapcsolat nyomtatása"
+
+msgid "qrcode"
+msgstr "QR Kód"
+
+msgid "typehome"
+msgstr "Otthon"
+
+msgid "typework"
+msgstr "Munkahely"
+
+msgid "typeother"
+msgstr "Egyéb"
+
+msgid "typemobile"
+msgstr "Mobil"
+
+msgid "typemain"
+msgstr "Vezetékes"
+
+msgid "typehomefax"
+msgstr "Otthoni fax"
+
+msgid "typeworkfax"
+msgstr "Munkahelyi fax"
+
+msgid "typecar"
+msgstr "Gépkocsi"
+
+msgid "typepager"
+msgstr "Személyhívó"
+
+msgid "typevideo"
+msgstr "Videó"
+
+msgid "typeassistant"
+msgstr "Asszisztens"
+
+msgid "typehomepage"
+msgstr "Weboldal"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Új mező hozzáadása..."
+
+msgid "addcontact"
+msgstr "Kapcsolat hozzáadása"
+
+msgid "editcontact"
+msgstr "Kapcsolat szerkesztése"
+
+msgid "contacts"
+msgstr "Kapcsolatok"
+
+msgid "contactproperties"
+msgstr "Kapcsolat tulajdonságai"
+
+msgid "contactnameandorg"
+msgstr "Név és szervezet"
+
+msgid "personalinfo"
+msgstr "Személyes adatok"
+
+msgid "personal"
+msgstr "Személyes"
+
+msgid "contactphoto"
+msgstr "Kapcsolat fotója"
+
+msgid "edit"
+msgstr "Szerkesztés"
+
+msgid "cancel"
+msgstr "Mégsem"
+
+msgid "save"
+msgstr "Mentés"
+
+msgid "delete"
+msgstr "Törlés"
+
+msgid "discard"
+msgstr "Érvénytelenít"
+
+msgid "continue"
+msgstr "Tovább"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "rename"
+msgstr "Átnevezés"
+
+msgid "addphoto"
+msgstr "Kép hozzáadása"
+
+msgid "replacephoto"
+msgstr "Kép cseréje"
+
+msgid "uploadphoto"
+msgstr "Fotó feltöltése"
+
+msgid "choosefile"
+msgstr "Fájl kiválasztása..."
+
+msgid "choosefiles"
+msgstr "Fájlok kiválasztása..."
+
+msgid "browse"
+msgstr "Böngészés"
+
+msgid "newcontact"
+msgstr "Új kapcsolat létrehozása"
+
+msgid "deletecontact"
+msgstr "Kijelölt kapcsolatok törlése"
+
+msgid "composeto"
+msgstr "E-mail küldése erre a címre"
+
+msgid "contactsfromto"
+msgstr "Kapcsolatok: $from - $to / $count"
+
+msgid "print"
+msgstr "Nyomtatás"
+
+msgid "export"
+msgstr "Exportálás"
+
+msgid "exportall"
+msgstr "Összes exportálása"
+
+msgid "exportsel"
+msgstr "Kijelöltek exportálása"
+
+msgid "exportvcards"
+msgstr "Kapcsolatok exportálása vCard formátumban"
+
+msgid "newgroup"
+msgstr "Új csoport létrehozása"
+
+msgid "addgroup"
+msgstr "Csoport hozzáadása"
+
+msgid "grouprename"
+msgstr "Csoport átnevezése"
+
+msgid "groupdelete"
+msgstr "Csoport törlése"
+
+msgid "groupassign"
+msgstr "Csoporthoz rendelés..."
+
+msgid "groupremove"
+msgstr "Csoportból eltávolítás"
+
+msgid "groupremoveselected"
+msgstr "A kijelölt partnerek törlése a csoportból"
+
+msgid "uponelevel"
+msgstr "Egy szinttel feljebb"
+
+msgid "previouspage"
+msgstr "Előző oldal"
+
+msgid "firstpage"
+msgstr "Első oldal"
+
+msgid "nextpage"
+msgstr "Következő oldal"
+
+msgid "lastpage"
+msgstr "Utolsó oldal"
+
+msgid "group"
+msgstr "Csoport"
+
+msgid "groups"
+msgstr "Csoportok"
+
+msgid "listgroup"
+msgstr "Csoport tagjainak listája"
+
+msgid "personaladrbook"
+msgstr "Személyes címjegyzék"
+
+msgid "searchsave"
+msgstr "Keresés mentése"
+
+msgid "searchdelete"
+msgstr "Keresés törlése"
+
+msgid "import"
+msgstr "Importálás"
+
+msgid "importcontacts"
+msgstr "Kapcsolatok importálása"
+
+msgid "importfromfile"
+msgstr "Importálás fájlból"
+
+msgid "importtarget"
+msgstr "Kapcsolatok hozzáadása "
+
+msgid "importreplace"
+msgstr "A teljes címjegyzék cseréje"
+
+msgid "importgroups"
+msgstr "Csoport hozzárendelések importálása"
+
+msgid "importgroupsall"
+msgstr "Mind (csoport létrehozása, amennyiben szükséges)"
+
+msgid "importgroupsexisting"
+msgstr "Csak már létező csoportoknak"
+
+msgid "importdesc"
+msgstr ""
+"Feltölthetsz partnereket már létező címjegyzékből.<br/>Jelenleg a címeket "
+"importálni vagy <a href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> "
+"vagy CSV (vesszővel-tagolt) formátumból lehet."
+
+msgid "importmapdesc"
+msgstr ""
+"Erősítse meg, hogy a mező megfeleltetések megfelelőek, mielőtt folytatnánk a"
+" CSV (vesszővel elválasztott) adatok importálását."
+
+msgid "fieldnotmapped"
+msgstr "A mező nem hozzárendelt (nem importálandó)"
+
+msgid "skipheader"
+msgstr "Nem importálja az első sort (fejlécek)"
+
+msgid "done"
+msgstr "Kész"
+
+msgid "birth_day"
+msgstr "Születés napja"
+
+msgid "birth_month"
+msgstr "Születés hónapja"
+
+msgid "birth_year"
+msgstr "Születés éve"
+
+msgid "settingsfor"
+msgstr "Beállítás"
+
+msgid "about"
+msgstr "Névjegy"
+
+msgid "preferences"
+msgstr "Beállítások"
+
+msgid "userpreferences"
+msgstr "Felhasználói beállítások"
+
+msgid "editpreferences"
+msgstr "Felhasználói beállítások szerkesztése"
+
+msgid "identities"
+msgstr "Azonosítók"
+
+msgid "manageidentities"
+msgstr "Azonosítók kezelése"
+
+msgid "newidentity"
+msgstr "Új azonosító létrehozása"
+
+msgid "addidentity"
+msgstr "Azonosító hozzáadása"
+
+msgid "editidentity"
+msgstr "Azonosító szerkesztése"
+
+msgid "identityencryption"
+msgstr "Titkosítás"
+
+msgid "preferhtml"
+msgstr "HTML megjelenítés"
+
+msgid "defaultcharset"
+msgstr "Alapértelmezett karakterkódolás"
+
+msgid "htmlmessage"
+msgstr "HTML üzenet"
+
+msgid "messagepart"
+msgstr "Rész"
+
+msgid "digitalsig"
+msgstr "Digitális aláírás"
+
+msgid "dateformat"
+msgstr "Dátumformátum"
+
+msgid "timeformat"
+msgstr "Időformátum"
+
+msgid "prettydate"
+msgstr "Rövid dátumok"
+
+msgid "setdefault"
+msgstr "Beállítás alapértelmezettnek"
+
+msgid "autodetect"
+msgstr "Automatikus"
+
+msgid "language"
+msgstr "Nyelv"
+
+msgid "timezone"
+msgstr "Időzóna"
+
+msgid "pagesize"
+msgstr "Sorok száma egy oldalon"
+
+msgid "signature"
+msgstr "Aláírás"
+
+msgid "dstactive"
+msgstr "Nyári időszámítás"
+
+msgid "showinextwin"
+msgstr "Az üzenet megnyitása egy új ablakban"
+
+msgid "composeextwin"
+msgstr "Üzenet írása új ablakban"
+
+msgid "htmleditor"
+msgstr "HTML üzenet írása"
+
+msgid "htmlonreply"
+msgstr "csak HTML üzenetre válaszolva"
+
+msgid "htmlonreplyandforward"
+msgstr "HTML üzenet továbbításakor vagy az arra való válaszoláskor"
+
+msgid "htmlsignature"
+msgstr "HTML aláírás"
+
+msgid "showemail"
+msgstr "Az e-mail címek megjelenítése a partner nevével"
+
+msgid "previewpane"
+msgstr "Előnézeti kép"
+
+msgid "skin"
+msgstr "Kinézet"
+
+msgid "logoutclear"
+msgstr "Törölt elemek mappa ürítése kilépéskor"
+
+msgid "logoutcompact"
+msgstr "Beérkezett üzenetek mappa tömörítése kilépéskor"
+
+msgid "uisettings"
+msgstr "Felhasználói felület"
+
+msgid "serversettings"
+msgstr "Szerverbeállítások"
+
+msgid "mailboxview"
+msgstr "Postafiók nézet"
+
+msgid "mdnrequests"
+msgstr "Olvasási visszaigazolás küldése"
+
+msgid "askuser"
+msgstr "kérdezzen rá"
+
+msgid "autosend"
+msgstr "automatikus küldés"
+
+msgid "autosendknown"
+msgstr ""
+"küldés csak a címjegyzékben lévő kapcsolataimnak, egyéb esetben kérdezzen rá"
+
+msgid "autosendknownignore"
+msgstr "küldés csak a címjegyzékben lévő kapcsolataimnak, egyéb esetben nem"
+
+msgid "autosendtrusted"
+msgstr ""
+"küldjön visszaigazolást a megbízható feladóknak, máskülönben kérdezzen rá"
+
+msgid "autosendtrustedignore"
+msgstr ""
+"küldjön visszaigazolást a megbízható feladóknak, máskülönben hagyja "
+"figyelmen kívül"
+
+msgid "ignorerequest"
+msgstr "a kérés figyelmen kívül hagyása"
+
+msgid "readwhendeleted"
+msgstr "Üzenet olvasottként jelölése törléskor"
+
+msgid "flagfordeletion"
+msgstr "Üzenet törlendőnek jelölése törlés helyett"
+
+msgid "skipdeleted"
+msgstr "Törölt üzenetek ne legyenek megjelenítve"
+
+msgid "deletealways"
+msgstr "Üzenet törlése, ha nem sikerül áthelyezni a törölt elemek mappába"
+
+msgid "deletejunk"
+msgstr "Üzenetek közvetlen törlése a levélszemét mappából"
+
+msgid "showremoteimages"
+msgstr "Távoli beágyazott képek megjelenítése"
+
+msgid "allowremoteresources"
+msgstr "Távoli erőforrások engedélyezve (képek, stílusok)"
+
+msgid "fromknownsenders"
+msgstr "csak ismert feladóktól"
+
+msgid "fromtrustedsenders"
+msgstr "a megbízható feladóktól"
+
+msgid "frommycontacts"
+msgstr "a partnereimtől"
+
+msgid "always"
+msgstr "mindig"
+
+msgid "alwaysbutplain"
+msgstr "mindig, kivéve, ha sima szöveges levélre válaszolunk"
+
+msgid "showinlineimages"
+msgstr "Csatolt képek megjelenítése az üzenet alatt"
+
+msgid "autosavedraft"
+msgstr "Piszkozat automatikus mentése"
+
+msgid "everynminutes"
+msgstr "minden $n percben"
+
+msgid "refreshinterval"
+msgstr "Frissítés ( új üzenetek keresése, stb )"
+
+msgid "never"
+msgstr "soha"
+
+msgid "immediately"
+msgstr "azonnal"
+
+msgid "messagesdisplaying"
+msgstr "Üzenetek megjelenítése"
+
+msgid "messagescomposition"
+msgstr "Üzenetek írása"
+
+msgid "mimeparamfolding"
+msgstr "Csatolt állományok nevei"
+
+msgid "2231folding"
+msgstr "Teljes RFC 2231 ( pl. Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (egyéb)"
+
+msgid "force7bit"
+msgstr "MIME kódolás használata 8 bites karakterekhez"
+
+msgid "savelocalstorage"
+msgstr "Mentse a böngésző helyi adattárolójába (ideiglenesen)"
+
+msgid "advancedoptions"
+msgstr "Haladó beállítások"
+
+msgid "toggleadvancedoptions"
+msgstr "Haladó beállítások kapcsolása"
+
+msgid "focusonnewmessage"
+msgstr "Beérkező új üzenet ablakának fókuszba hozása"
+
+msgid "checkallfolders"
+msgstr "Új üzenetek ellenőrzése minden mappában"
+
+msgid "displaynext"
+msgstr "A következő elem megjelenítése törlés/áthelyezés után"
+
+msgid "defaultfont"
+msgstr "HTML üzenet alap betűtípusa"
+
+msgid "mainoptions"
+msgstr "Általános beállítások"
+
+msgid "browseroptions"
+msgstr "Böngésző beállításai"
+
+msgid "section"
+msgstr "Beállítások"
+
+msgid "maintenance"
+msgstr "Karbantartás"
+
+msgid "newmessage"
+msgstr "Új üzenet"
+
+msgid "signatureoptions"
+msgstr "Aláírás beállításai"
+
+msgid "whenreplying"
+msgstr "Válasznál"
+
+msgid "replyempty"
+msgstr "ne idézze az eredeti üzenetet"
+
+msgid "replytopposting"
+msgstr "üzenet írása az eredeti felett"
+
+msgid "replytoppostingnoindent"
+msgstr "üzenet írása az eredeti felett (behúzások nélkül)"
+
+msgid "replybottomposting"
+msgstr "üzenet írása az eredeti alatt"
+
+msgid "replyremovesignature"
+msgstr "Válasznál az eredeti aláírás eltávolítása"
+
+msgid "autoaddsignature"
+msgstr "Aláírás automatikus hozzáadása"
+
+msgid "newmessageonly"
+msgstr "csak új üzenetnél"
+
+msgid "replyandforwardonly"
+msgstr "válasznál és továbbításnál"
+
+msgid "insertsignature"
+msgstr "Aláírás beillesztése"
+
+msgid "sigbelow"
+msgstr "Az aláírás az idézett üzenet alatt"
+
+msgid "sigseparator"
+msgstr "Az aláírásokban a szabványos elválasztók használatának kényszerítése"
+
+msgid "automarkread"
+msgstr "Üzenetek megjelölése olvasottként"
+
+msgid "afternseconds"
+msgstr "$n másodperc elteltével"
+
+msgid "reqmdn"
+msgstr "Olvasási visszaigazolás megkövetelése"
+
+msgid "reqdsn"
+msgstr "Kézbesítési visszaigazolás megkövetelése"
+
+msgid "alwayskeepformatting"
+msgstr "Mindig tartsa meg az eredeti formázást"
+
+msgid "replysamefolder"
+msgstr "Válaszok azonos mappába helyezése"
+
+msgid "defaultabook"
+msgstr "Alapértelmezett címjegyzék"
+
+msgid "autocompletesingle"
+msgstr "Alternatív e-mail címek kihagyása automatikus kiegészítéskor"
+
+msgid "listnamedisplay"
+msgstr "Névjegyek listázása"
+
+msgid "contactformmode"
+msgstr "Kapcsolat űrlap mód"
+
+msgid "privatemode"
+msgstr "Magán (Otthoni)"
+
+msgid "businessmode"
+msgstr "Üzleti (Munkahely)"
+
+msgid "collectedaddresses"
+msgstr "Begyűjtött címek"
+
+msgid "collectedrecipients"
+msgstr "Begyűjtött címzettek"
+
+msgid "collectedrecipientsopt"
+msgstr "Kimenő e-mailek címzettjeinek tárolása a következőben"
+
+msgid "collectedsendersopt"
+msgstr "Megbízható feladók tárolása a következőben"
+
+msgid "trustedsenders"
+msgstr "Megbízható feladók"
+
+msgid "spellcheckbeforesend"
+msgstr "Helyesírás-ellenőrzés az üzenet elküldése előtt"
+
+msgid "spellcheckoptions"
+msgstr "Helyesírás-ellenőrzés opciók"
+
+msgid "spellcheckignoresyms"
+msgstr "Speciális karaktereket tartalmazó szavak kihagyása"
+
+msgid "spellcheckignorenums"
+msgstr "Számot tartalmazó szavak kihagyása"
+
+msgid "spellcheckignorecaps"
+msgstr "Csak nagybetűkből álló szavak kihagyása"
+
+msgid "addtodict"
+msgstr "Hozzáadás a szótárhoz"
+
+msgid "editoroptions"
+msgstr "Szerkesztő beállításai"
+
+msgid "enableautolink"
+msgstr "Az érvényes URL-ek automatikus átalakítása hiperlinkekké"
+
+msgid "mailtoprotohandler"
+msgstr "Beállítás a mailto: linkek kezelőjeként"
+
+msgid "standardwindows"
+msgstr "A felugró ablakok használata szokásos ablakként"
+
+msgid "forwardmode"
+msgstr "Üzenet továbbítás"
+
+msgid "inline"
+msgstr "beágyazott"
+
+msgid "asattachment"
+msgstr "csatolmányként"
+
+msgid "replyallmode"
+msgstr "A [Válasz mindenkinek] gomb alapértelemezett művelete"
+
+msgid "replyalldefault"
+msgstr "válasz mindenkinek"
+
+msgid "replyalllist"
+msgstr "válasz csak a levelezőlistára (ha levelezőlista)"
+
+msgid "allmessages"
+msgstr "Minden üzenet illeszkedjen"
+
+msgid "olderxdays"
+msgstr "$x napnál régebbi"
+
+msgid "folder"
+msgstr "Mappa"
+
+msgid "folders"
+msgstr "Mappák"
+
+msgid "foldername"
+msgstr "Mappa neve"
+
+msgid "subscribed"
+msgstr "Feliratkozva"
+
+msgid "messagecount"
+msgstr "Üzenet"
+
+msgid "create"
+msgstr "Létrehozás"
+
+msgid "createfolder"
+msgstr "Új mappa létrehozása"
+
+msgid "managefolders"
+msgstr "Mappák kezelése"
+
+msgid "specialfolders"
+msgstr "Különleges mappák"
+
+msgid "properties"
+msgstr "Tulajdonságok"
+
+msgid "folderproperties"
+msgstr "Mappa tulajdonságai"
+
+msgid "parentfolder"
+msgstr "Szülőmappa"
+
+msgid "location"
+msgstr "Hely"
+
+msgid "info"
+msgstr "Információk"
+
+msgid "getfoldersize"
+msgstr "Mappa mérete"
+
+msgid "changesubscription"
+msgstr "Feliratkozás megváltoztatása"
+
+msgid "foldertype"
+msgstr "Mappa típusa"
+
+msgid "personalfolder"
+msgstr "Privát mappa"
+
+msgid "otherfolder"
+msgstr "Más felhasználó(k) mappája"
+
+msgid "sharedfolder"
+msgstr "Megosztott mappa"
+
+msgid "findfolders"
+msgstr "Mappa keresése"
+
+msgid "findcontacts"
+msgstr "Kapcsolat keresés"
+
+msgid "findmail"
+msgstr "Levél keresés"
+
+msgid "namespace.personal"
+msgstr "Személyes"
+
+msgid "namespace.other"
+msgstr "Más felhasználók"
+
+msgid "namespace.shared"
+msgstr "Megosztva"
+
+msgid "dualuselabel"
+msgstr "Csak a következőt tartalmazhatja"
+
+msgid "dualusemail"
+msgstr "üzenetek"
+
+msgid "dualusefolder"
+msgstr "mappák"
+
+msgid "generate"
+msgstr "Generálás"
+
+msgid "encryptioncreatekey"
+msgstr "Új kulcspár létrehozása"
+
+msgid "openmailvelopesettings"
+msgstr "Open Mailvelope Beállítások"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr "$nr egyező privát kulcs van a Mailvelope kulcskarikádon: "
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Ennek küldőnek még nincs meg a PGP privát kulcsa a Mailvelope "
+"kiterjesztésedben. Szeretnél létrehozni egyet, hogy engedélyezd a "
+"titkosított üzenetváltást?"
+
+msgid "encryption"
+msgstr "Titkosítás"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelope opciók"
+
+msgid "mailvelopemainkeyring"
+msgstr "Mailvelope fő kulcskarikájának használata"
+
+msgid "mailvelopenotfound"
+msgstr "A Mailvelope bővítmény nincs engedélyezve/telepítve a böngésződben."
+
+msgid "mailvelopeenable"
+msgstr "Engedélyezés"
+
+msgid "sortby"
+msgstr "Rendezés"
+
+msgid "sortasc"
+msgstr "növekvő"
+
+msgid "sortdesc"
+msgstr "csökkenő"
+
+msgid "undo"
+msgstr "Visszavonás"
+
+msgid "installedplugins"
+msgstr "Telepített bővítmények"
+
+msgid "plugin"
+msgstr "Bővítmény"
+
+msgid "version"
+msgstr "Verzió"
+
+msgid "source"
+msgstr "Forrás"
+
+msgid "destination"
+msgstr "Cél"
+
+msgid "license"
+msgstr "Licensz"
+
+msgid "skinauthor"
+msgstr "$author által"
+
+msgid "support"
+msgstr "Támogatás"
+
+msgid "savedsearches"
+msgstr "Elmentett keresések"
+
+msgid "dateformatY"
+msgstr "ÉÉÉÉ"
+
+msgid "dateformaty"
+msgstr "ÉÉ"
+
+msgid "dateformatm"
+msgstr "HH"
+
+msgid "dateformatd"
+msgstr "NN"
+
+msgid "dateformatj"
+msgstr "N"
+
+msgid "dateformatn"
+msgstr "H"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unicode"
+
+msgid "english"
+msgstr "Angol"
+
+msgid "westerneuropean"
+msgstr "Nyugat-európai"
+
+msgid "easterneuropean"
+msgstr "Kelet-európai"
+
+msgid "southeasterneuropean"
+msgstr "Délkelet-európai"
+
+msgid "baltic"
+msgstr "Balti"
+
+msgid "cyrillic"
+msgstr "Cirill"
+
+msgid "arabic"
+msgstr "Arab"
+
+msgid "greek"
+msgstr "Görög"
+
+msgid "hebrew"
+msgstr "Héber"
+
+msgid "turkish"
+msgstr "Török"
+
+msgid "nordic"
+msgstr "Skandináv"
+
+msgid "thai"
+msgstr "Thai"
+
+msgid "celtic"
+msgstr "Kelta"
+
+msgid "vietnamese"
+msgstr "Vietnámi"
+
+msgid "japanese"
+msgstr "Japán"
+
+msgid "korean"
+msgstr "Koreai"
+
+msgid "chinese"
+msgstr "Kínai"
+
+msgid "arialabeltopnav"
+msgstr "Ablak beállítás"
+
+msgid "arialabeltasknav"
+msgstr "Alkalmazás feladatok"
+
+msgid "arialabeltoolbar"
+msgstr "Alkalmazás eszközsor"
+
+msgid "arialabellistnav"
+msgstr "Lista navigáció"
+
+msgid "arialabelactivetask"
+msgstr "Aktív feladat"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "E-mail lista szűrő"
+
+msgid "arialabelmailsearchform"
+msgstr "E-mail üzenet kereső űrlap"
+
+msgid "arialabelcontactsearchform"
+msgstr "Kapcsolat kereső űrlap"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "E-mail kereső mező"
+
+msgid "arialabelquicksearchbox"
+msgstr "Kereső mező"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Mappa lista szűrő"
+
+msgid "arialabelfoldersearchform"
+msgstr "Mappa kereső űrlap"
+
+msgid "arialabelfolderlist"
+msgstr "E-mail mappa kiválasztás"
+
+msgid "arialabelmessagelist"
+msgstr "E-mail üzenetek listázása"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Üzenet betekintő"
+
+msgid "arialabelmailboxmenu"
+msgstr "Mappa műveletek menü"
+
+msgid "arialabellistselectmenu"
+msgstr "Lista választék menü"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Témák szerinti listázás menü"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Üzenetlista megjelenítési és rendezési opciók"
+
+msgid "arialabelmailimportdialog"
+msgstr "Üzenet importáls"
+
+msgid "arialabelmessagenav"
+msgstr "Üzenet navigálás"
+
+msgid "arialabelmessagebody"
+msgstr "Üzenet főrész"
+
+msgid "arialabelmessageactions"
+msgstr "Üzenet műveletek"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Kapcsolat kereső űrlap"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Kapcsolat kereső beviteli mező"
+
+msgid "arialabelmessageheaders"
+msgstr "Üzenet fejlécek"
+
+msgid "arialabelforwardingoptions"
+msgstr "Továbbítási beállítások"
+
+msgid "arialabelreplyalloptions"
+msgstr "Válasz mindenkinek beállítások"
+
+msgid "arialabelmoremessageactions"
+msgstr "További műveletek az üzenettel..."
+
+msgid "arialabelmorecontactactions"
+msgstr "További műveletek a kapcsolatokkal..."
+
+msgid "arialabelmarkmessagesas"
+msgstr "A kiválasztott üzenetek megjelölése mint..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Levélírás opciók"
+
+msgid "arialabelresponsesmenu"
+msgstr "Sablon válaszok menü"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Csatolmány feltöltő űrlap"
+
+msgid "arialabelattachmentmenu"
+msgstr "Csatolmány beállítások"
+
+msgid "arialabelmailtomenu"
+msgstr "E-mail cím beállítások"
+
+msgid "arialabelattachmentpreview"
+msgstr "Csatolmány előnézet"
+
+msgid "ariasummarycomposecontacts"
+msgstr ""
+"A kapcsolatoknak és csoportoknak a listája a címzettek kiválasztásához"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Kapcsolat exportálásának opciói"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Címjegyzék/csoportjegyzék opciói"
+
+msgid "arialabelpreferencesform"
+msgstr "Beállítások űrlap"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Identitás szerkesztő űrlap"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Válasz szerkesztő űrlap"
+
+msgid "arialabelsearchterms"
+msgstr "Kereső kifejezések"
+
+msgid "arialabeldropactionmenu"
+msgstr "Drag-n-Drop műveletek menü"
+
+msgid "arialabelheadersmenu"
+msgstr "Címzett (fejléc) hozzáadása menühöz"
+
+msgid "arialabelimagetools"
+msgstr "Kép eszközök"
+
+msgid "helplistnavigation"
+msgstr "A navigálásra használt billentyűk listája"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Nyilak fel/le: A sor fókusz/kiválasztás mozgatása.\n"
+"Szóköz: A fókuszban lévő sor kiválasztása.\n"
+"Shift + fel/le: Több sor kiválasztása az aktuális sor alatt/felett.\n"
+"Ctrl + Szóköz: A fókuszban levő sor hozzáadása vagy törlése a kiválasztásból."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Jobbra/Balra nyilak: kibontja/becsukja az üzenet szálakat (csak a beszélgető/szálas módban).\n"
+"Enter: Kinyitja a kiválasztott/fókuszban levő üzenetet.\n"
+"Delete: A kiválaszott üzenet áthelyezése a Kukába."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Megnyitja a kiválasztott/fókuszban levő kapcsolatot."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Hiba történt!"
+
+msgid "messages.loginfailed"
+msgstr "Sikertelen bejelentkezés."
+
+msgid "messages.cookiesdisabled"
+msgstr "A böngésző nem támogatja a sütik használatát"
+
+msgid "messages.sessionerror"
+msgstr "Érvénytelen vagy lejárt munkamenet"
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"A cookie-k nem egyeznek meg. Kérjük, töröljed a böngészőből a cookie-kat."
+
+msgid "messages.storageerror"
+msgstr "Nem sikerült csatlakozni az IMAP szerverhez"
+
+msgid "messages.servererror"
+msgstr "Szerverhiba!"
+
+msgid "messages.servererrormsg"
+msgstr "Szerverhiba: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Túl sok sikertelen belépési kísérlet történt. Próbálja később."
+
+msgid "messages.connerror"
+msgstr "Kapcsolódási hiba (a kiszolgáló elérése sikertelen)!"
+
+msgid "messages.dberror"
+msgstr "Adatbázishiba!"
+
+msgid "messages.dbconnerror"
+msgstr "Nem sikerült kapcsolódni az adatbázishoz!"
+
+msgid "messages.windowopenerror"
+msgstr "A felugró ablak blokkolva lett!"
+
+msgid "messages.requesttimedout"
+msgstr "A kérés túllépte az időkorlátot"
+
+msgid "messages.errorreadonly"
+msgstr "A műveletet nem sikerült végrehajtani. A mappa írásvédett."
+
+msgid "messages.errornoperm"
+msgstr "A műveletet nem sikerült végrehajtani. Hozzáférés megtagadva."
+
+msgid "messages.erroroverquota"
+msgstr ""
+"A műveletet nem lehetett végrehajtani, mivel nincs elég szabad tárhely."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Elfogyott a tárhely. A SHIFT+DEL billentyű kombinációval lehet üzeneteket "
+"törölni."
+
+msgid "messages.invalidrequest"
+msgstr "Érvénytelen kérés! Az adatok nem lettek elmentve."
+
+msgid "messages.invalidhost"
+msgstr "Hibás szerver hoszt név"
+
+msgid "messages.nomessagesfound"
+msgstr "A mappa nem tartalmaz üzeneteket"
+
+msgid "messages.loggedout"
+msgstr "Sikeresen lezáródott a munkamenet. Viszontlátásra!"
+
+msgid "messages.mailboxempty"
+msgstr "A postaláda üres"
+
+msgid "messages.nomessages"
+msgstr "Nincsenek üzenetek"
+
+msgid "messages.refreshing"
+msgstr "Frissítés..."
+
+msgid "messages.loading"
+msgstr "Betöltés..."
+
+msgid "messages.uploading"
+msgstr "Fájl feltöltése..."
+
+msgid "messages.attaching"
+msgstr "Fájl csatolása..."
+
+msgid "messages.uploadingmany"
+msgstr "Fájlok feltöltése..."
+
+msgid "messages.loadingdata"
+msgstr "Az adatok betöltése..."
+
+msgid "messages.checkingmail"
+msgstr "Új üzenetek keresése..."
+
+msgid "messages.sendingmessage"
+msgstr "Az üzenet küldése..."
+
+msgid "messages.messagesent"
+msgstr "Az üzenet elküldve"
+
+msgid "messages.savingmessage"
+msgstr "Az üzenet mentése..."
+
+msgid "messages.messagesaved"
+msgstr "Az üzenet elmentve a Piszkozatokhoz"
+
+msgid "messages.successfullysaved"
+msgstr "A mentés sikerült"
+
+msgid "messages.savingresponse"
+msgstr "A válasz szövegének mentése..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Biztosan törli ezt a válasz szöveget?"
+
+msgid "messages.nocontactselected"
+msgstr "Nincs kiválasztva még partner."
+
+msgid "messages.addedsuccessfully"
+msgstr "A kapcsolat hozzáadása a címjegyzékhez megtörtént."
+
+msgid "messages.contactexists"
+msgstr "Egy kapcsolat ugyanezzel az e-mail címmel már létezik."
+
+msgid "messages.contactnameexists"
+msgstr "Ezzel a névvel már létezik kapcsolat."
+
+msgid "messages.blockedimages"
+msgstr "Biztonsági okokból a távoli képek letöltése tiltott."
+
+msgid "messages.blockedresources"
+msgstr "A személyes adatok védelmében a távoli erőforrások blokkolva vannak."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Ez az üzenet gyanús e-mail címeket tartalmaz, amelyek átveréseknél "
+"játszhatnak szerepet."
+
+msgid "messages.bccemail"
+msgstr "A továbbított üzenet(ek) titkos címzetteket tartalmaz(nak) (Bcc)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Az üzenet módosítások nélkül, azaz az eredeti szöveg, fejlécek és címzettek "
+"felhasználásával kerül elküldésre."
+
+msgid "messages.encryptedmessage"
+msgstr "Az üzenet titkosított, ezért nem megjeleníthető"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Ez egy titkosított üzenet, amit vissza tudsz fejteni a böngésződ "
+"bővitményével."
+
+msgid "messages.nopubkeyfor"
+msgstr "Nem található érvényes publikus kulcs ehhez az e-mailhez: $email"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Nem található érvényes publikus kulcs a küldő indentitásodhoz. Szeretnéd "
+"titkosítani az üzenetet csak a címzetteknek?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"A már feltöltött csatolmányokat nem lehet titkosítani. Kérlek, csatold újra "
+"azokat a titkosító szerkesztőben."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Szeretnéd megkeresni a hiányzó kulcsokat publikus kulcs szervereken?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "A következő publikus kulcs lett megtalálva:"
+
+msgid "messages.keyservererror"
+msgstr "Nem sikerült kulcsot kapni a kulcskiszolgálóról."
+
+msgid "messages.keyimportsuccess"
+msgstr "A nyilvános kulcsot $key sikeresen importálva a kulcstartódba."
+
+msgid "messages.nocontactsfound"
+msgstr "Nem találhatóak kapcsolatok."
+
+msgid "messages.contactnotfound"
+msgstr "A kiválasztott kapcsolat nem található."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"A keresési űrlapot kell használni a partnerek megjelenítéséhez a "
+"kiválasztott címjegyzékből."
+
+msgid "messages.sendingfailed"
+msgstr "Az üzenet elküldése nem sikerült"
+
+msgid "messages.senttooquickly"
+msgstr "Kérem, várjon még $sec másodpercet az üzenet elküldése előtt."
+
+msgid "messages.errorsavingsent"
+msgstr "Hiba történt az elküldött üzenet mentése közben."
+
+msgid "messages.errorsaving"
+msgstr "A mentés során hiba lépett fel"
+
+msgid "messages.errormoving"
+msgstr "Az üzenet(ek)et nem sikerült áthelyezni"
+
+msgid "messages.errorcopying"
+msgstr "Az üzenet(ek)et nem sikerült másolni"
+
+msgid "messages.errordeleting"
+msgstr "Az üzenet(ek)et nem sikerült törölni"
+
+msgid "messages.errormarking"
+msgstr "Az üzenet(ek)et nem sikerült megjelölni"
+
+msgid "messages.alerttitle"
+msgstr "Figyelem"
+
+msgid "messages.confirmationtitle"
+msgstr "Biztosan..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Biztos, hogy törölni szeretné a kijelölt kapcsolato(ka)t?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Biztos, hogy törölni szeretné a kijelölt csoportot?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Biztos, hogy törölni szeretné a kijelölt üzenet(ek)et?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Biztos, hogy törölni szeretné ezt a mappát?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Biztos, hogy át szeretné mozgatni ezt a mappát?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Biztos benne, hogy az összes üzenet törölhető?"
+
+msgid "messages.contactdeleting"
+msgstr "Kapcsolat(ok) törlése..."
+
+msgid "messages.groupdeleting"
+msgstr "Csoport törlése..."
+
+msgid "messages.folderdeleting"
+msgstr "Mappa törlése..."
+
+msgid "messages.foldermoving"
+msgstr "Mappa áthelyezése..."
+
+msgid "messages.foldersubscribing"
+msgstr "Feliratkozás a mappára..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Leiratkozás a mappáról..."
+
+msgid "messages.formincomplete"
+msgstr "Az űrlap hiányosan lett kitöltve"
+
+msgid "messages.noemailwarning"
+msgstr "Adjon meg egy valós e-mail címet"
+
+msgid "messages.nonamewarning"
+msgstr "Adjon meg egy nevet"
+
+msgid "messages.nopagesizewarning"
+msgstr "Adja meg a papír méretét"
+
+msgid "messages.nosenderwarning"
+msgstr "Írd be a küldő e-mail címét."
+
+msgid "messages.recipientsadded"
+msgstr "A címzett(ek) sikeresen hozzáadva."
+
+msgid "messages.norecipientwarning"
+msgstr "Legalább egy címzettet adjon meg"
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"Minden címzett látni fogja az összes többi címzett e-mail címét. Ezt "
+"megelőzendő és a személyes adatok biztonságának megőrzése érdekében "
+"használhatod a Titkos másolat/Bcc/ mezőt."
+
+msgid "messages.disclosedreciptitle"
+msgstr "Túl sok címzett"
+
+msgid "messages.nosubjectwarning"
+msgstr "A Tárgy mező üres. Szeretné most kitölteni?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Nincs tárgy"
+
+msgid "messages.nobodywarning"
+msgstr "Elküldi az üzenetet üresen?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Az üzenet nem lett még elküldve és vannak benne nem mentett változások. "
+"Biztos elveted a módosításaidat?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Egy elkezdett, de el nem küldött üzenetet talált a program.\\n\\Tárgy: "
+"$subject\\nMentve: $date\\n\\nSzeretnéd visszaállítani és folytatni ez az "
+"üzenetet?"
+
+msgid "messages.nosearchname"
+msgstr "Adja meg a kapcsolat nevét vagy e-mail címét"
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Még nem került feltöltésre minden csatolmány. Kérem, várjon, vagy állítsa le"
+" a feltöltést!"
+
+msgid "messages.searchsuccessful"
+msgstr "$nr üzenet található"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr találat"
+
+msgid "messages.searchnomatch"
+msgstr "Nincs találat"
+
+msgid "messages.searching"
+msgstr "Keresés..."
+
+msgid "messages.checking"
+msgstr "Ellenőrzés..."
+
+msgid "messages.stillsearching"
+msgstr "Keresés folyamatban..."
+
+msgid "messages.nospellerrors"
+msgstr "Nem található helyesírási hiba"
+
+msgid "messages.folderdeleted"
+msgstr "A mappa sikeresen törölve"
+
+msgid "messages.foldersubscribed"
+msgstr "Sikerült a mappára feliratkozni"
+
+msgid "messages.folderunsubscribed"
+msgstr "Sikerült a mappáról leiratkozni"
+
+msgid "messages.folderpurged"
+msgstr "Mappa sikeresen kiürítve"
+
+msgid "messages.folderexpunged"
+msgstr "Mappa sikeresen tömörítve."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Törölve"
+
+msgid "messages.converting"
+msgstr "Formázás eltávolítása az üzenetből..."
+
+msgid "messages.messageopenerror"
+msgstr "A levelek a szerverről nem tölthetők le"
+
+msgid "messages.filelinkerror"
+msgstr "A fájl csatolása sikertelen."
+
+msgid "messages.fileuploaderror"
+msgstr "Feltöltés sikertelen"
+
+msgid "messages.csvfilemismatch"
+msgstr "Több CSV fájl importálása különböző mezőkkel nem támogatott."
+
+msgid "messages.filesizeerror"
+msgstr "A feltöltött fájl mérete meghaladja a maximális $size méretet"
+
+msgid "messages.filecounterror"
+msgstr "Egyszerre csak $count db fájlt tölthetsz fel."
+
+msgid "messages.msgsizeerror"
+msgstr "Túl nagy a csatolmány mérete. Egy üzenet maximális mérete: ($size)."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Az üzenet elérte a maximális méretet($size). $num üzenet nem lett csatolva."
+
+msgid "messages.copysuccess"
+msgstr "Sikeresen átmásolva $nr kapcsolat."
+
+msgid "messages.movesuccess"
+msgstr "$nr kapcsolat sikeresen áthelyezve."
+
+msgid "messages.copyerror"
+msgstr "Nem lehet másolni a kapcsolatokat."
+
+msgid "messages.moveerror"
+msgstr "Nem lehet áthelyezni a kapcsolatokat."
+
+msgid "messages.sourceisreadonly"
+msgstr "Ez a címforrás csak olvasható"
+
+msgid "messages.errorsavingcontact"
+msgstr "A kapcsolat címe nem menthető"
+
+msgid "messages.movingmessage"
+msgstr "Üzenet(ek) áthelyezése..."
+
+msgid "messages.copyingmessage"
+msgstr "Üzenet(ek) másolása..."
+
+msgid "messages.copyingcontact"
+msgstr "Kapcsolat(ok) másolása..."
+
+msgid "messages.movingcontact"
+msgstr "Kapcsolat(ok) áthelyezése..."
+
+msgid "messages.deletingmessage"
+msgstr "Üzenet(ek) törlése...."
+
+msgid "messages.markingmessage"
+msgstr "Üzenet(ek) megjelölése..."
+
+msgid "messages.addingmember"
+msgstr "Kapcsolat(ok) hozzáadása a csoporthoz..."
+
+msgid "messages.removingmember"
+msgstr "Kapcsolat(ok) törlése a csoportból..."
+
+msgid "messages.receiptsent"
+msgstr "Az olvasási visszaigazolás el lett küldve"
+
+msgid "messages.errorsendingreceipt"
+msgstr "Az olvasási visszaigazolást nem sikerült elküldeni"
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Biztosan törli ezt az azonosítót?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Az azonosító nem törölhető, lennie kell legalább egy azonosítónak!"
+
+msgid "messages.forbiddencharacter"
+msgstr "A mappa neve tiltott karaktert tartalmaz"
+
+msgid "messages.selectimportfile"
+msgstr "Kérjük, válassza ki a feltölteni kívánt fájlt"
+
+msgid "messages.addresswriterror"
+msgstr "A kiválasztott címjegyzék nem írható"
+
+msgid "messages.contactaddedtogroup"
+msgstr "A kapcsolat hozzáadása a csoporthoz sikeresen megtörtént"
+
+msgid "messages.contactremovedfromgroup"
+msgstr "A kapcsolat törlése a csoportból sikeresen megtörtént"
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "A csoport hozzárendelések nem változtak."
+
+msgid "messages.importwait"
+msgstr "Importálás folyamatban, kérem, várjon..."
+
+msgid "messages.importformaterror"
+msgstr "Az importálás sikertelen! A feltöltött fájl ismeretlen formátumú."
+
+msgid "messages.importconfirm"
+msgstr ""
+"<b>Sikeresen importálásra került $inserted kapcsolat, kihagyva $skipped már "
+"létező bejegyzés</b>:<p><em>$names</em></p>"
+
+msgid "messages.importconfirmskipped"
+msgstr "<b>Kihagyva $skipped már létező kapcsolat</b>"
+
+msgid "messages.importconfirminvalid"
+msgstr "<b>Kihagyva $invalid hibás kapcsolat</b>"
+
+msgid "messages.importconfirmerrors"
+msgstr "<b>Nem sikerült importálni $errors érvényes kapcsolatot</b>"
+
+msgid "messages.importmessagesuccess"
+msgstr "Sikeresen importálva $nr üzenet"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Sikertelen az importálás. A feltöltött fájl nem értelmezhető üzenetként vagy"
+" postafiók (mailbox) fájlként."
+
+msgid "messages.opnotpermitted"
+msgstr "A művelet nem megengedett!"
+
+msgid "messages.nofromaddress"
+msgstr "Hiányzik az e-mail cím a kiválasztott identitásban."
+
+msgid "messages.editorwarning"
+msgstr ""
+"A szerkesztő típusok közötti váltás a szöveg formázásának elvesztésével "
+"járhat. Biztos szeretnéd folytatni?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Végzetes konfigurációs hiba történt, azonnal lépjen kapcsolatba az "
+"üzemeltetővel. <b>Az üzenet nem küldhető el.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP hiba ($code): Sikertelen kapcsolódás a szerverhez"
+
+msgid "messages.smtpautherror"
+msgstr "SMTP hiba ($code): Sikertelen bejelentkezés"
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP hiba ($code): Nem sikerült a feladó beállítása: \"$from\" ($msg)"
+
+msgid "messages.smtptoerror"
+msgstr ""
+"SMTP hiba ($code): Nem sikerült a következő címzett hozzáadása: \"$to\" "
+"($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP hiba ($code): A címzettlista feldolgozása sikertelen"
+
+msgid "messages.smtputf8error"
+msgstr ""
+"SMTP hiba: A kiszolgáló nem támogatja a Unicode karaktereket az e-mail "
+"címben."
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+"SMTP hiba: Az üzenet mérete elérte a kiszolgáló által engedélyzett maximális"
+" méretet ($limit)"
+
+msgid "messages.smtperror"
+msgstr "SMTP hiba ($code): $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Érvénytelen e-mail cím: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "Túl sok a címzett. Csökkentse a címzettek számát maximum $max címre!"
+
+msgid "messages.maxgroupmembersreached"
+msgstr "A csoport létszáma meghaladja a maximum $max főt"
+
+msgid "messages.internalerror"
+msgstr "Belső hiba történt. Kérjük, próbálja újra!"
+
+msgid "messages.contactdelerror"
+msgstr "Hiba a kapcsolat(ok) törlésekor"
+
+msgid "messages.contactdeleted"
+msgstr "Kapcsolat(ok) sikeresen törölve"
+
+msgid "messages.contactrestoreerror"
+msgstr "Nem sikerült a törölt kapcsolat(ok) helyreállítása"
+
+msgid "messages.contactrestored"
+msgstr "Kapcsolat(ok) sikeresen helyreállítva"
+
+msgid "messages.groupdeleted"
+msgstr "Csoport sikeresen törölve"
+
+msgid "messages.grouprenamed"
+msgstr "Csoport sikeresen átnevezve"
+
+msgid "messages.groupcreated"
+msgstr "Csoport sikeresen létrehozva"
+
+msgid "messages.savedsearchdeleted"
+msgstr "Mentett keresés sikeresen törölve"
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Nem sikerült törölni a mentett keresést"
+
+msgid "messages.savedsearchcreated"
+msgstr "Keresés sikeresen mentve"
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Nem sikerült létrehozni mentett keresést"
+
+msgid "messages.messagedeleted"
+msgstr "Üzenet(ek) sikeresen törölve"
+
+msgid "messages.messagemoved"
+msgstr "Üzenet(ek) sikeresen áthelyezve."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Üzenet(ek) sikeresen áthelyezve a kukába."
+
+msgid "messages.messagecopied"
+msgstr "Üzenet(ek) sikeresen másolva"
+
+msgid "messages.messagemarked"
+msgstr "Üzenet(ek) sikeresen megjelölve"
+
+msgid "messages.autocompletechars"
+msgstr "Az automatikus kiegészítéshez legalább $min karakter szükséges"
+
+msgid "messages.autocompletemore"
+msgstr "Több egyezés található. Kérem, adjon meg további karaktereket!"
+
+msgid "messages.namecannotbeempty"
+msgstr "A név nem lehet üres"
+
+msgid "messages.nametoolong"
+msgstr "A név túl hosszú"
+
+msgid "messages.namedotforbidden"
+msgstr "A mappa neve nem kezdődhet ponttal."
+
+msgid "messages.folderupdated"
+msgstr "Mappa sikeresen frissítve"
+
+msgid "messages.foldercreated"
+msgstr "Mappa sikeresen létrehozva"
+
+msgid "messages.invalidimageformat"
+msgstr "Érvénytelen képformátum"
+
+msgid "messages.mispellingsfound"
+msgstr "Az üzenetben helyesírási hibák találhatók"
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Nem sikerült a mappa létrehozása/áthelyezése a kijelölt főmappába. Nincs "
+"jogosultsága a művelethez!"
+
+msgid "messages.messagetoobig"
+msgstr "Az üzenetrész túl nagy a feldolgozáshoz."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"FIGYELEM! A csatolmány veszélyes lehet, mert a típusa nem egyezik az "
+"üzenetben beállított típussal. Amennyiben nem megbízható az üzenet küldője, "
+"ne nyissa meg a csatolmányt a böngészőben, mert ártalmas lehet a "
+"tartalma.<br/><br/><em>Üzenetben beállított típus: $expected; az érzékelt "
+"típus: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"FIGYELEM: Ez a webmail szolgáltatás igényli a Javascript futtatásának a "
+"lehetőségét! Amennyiben használni szeretné, engedélyezze a JavaScript "
+"futtatását a böngészője beállításaiban."
+
+msgid "messages.messageissent"
+msgstr ""
+"Az üzenet már el lett küldve, de még nincs elmentve. El akarod menteni most?"
+
+msgid "messages.errnotfound"
+msgstr "Fájl nem található"
+
+msgid "messages.errnotfoundexplain"
+msgstr "A kért erőforrás nem található!"
+
+msgid "messages.errfailedrequest"
+msgstr "Hibás kérés"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Azonosítás sikertelen"
+
+msgid "messages.errunauthorizedexplain"
+msgstr ""
+"Nem sikerült ellenőrizni, hogy a szolgáltatás használata engdélyezett-e "
+"számodra"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Kérés Ellenörzés Sikertlelen"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Az Ön védelme érdekében az ehhez az erőforráshoz történő hozzáférés CSRF védelemmel lett ellátva. \n"
+"Ha ezt látja, akkor valószínűleg nem jelentkezett ki, mielőtt elhagyta a webes alkalmazást. \n"
+"\n"
+"Emberi közbeavatkozás szükség most ahhoz, hogy folytassa."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Vedd fel a kapcsolatot a rendszergazdával."
+
+msgid "messages.clicktoresumesession"
+msgstr "Kattints ide az előző munkamenet folytatásához"
+
+msgid "messages.errcomposesession"
+msgstr "Levélírás munkamenet hiba"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "A kért levélírás munkamenet nem található."
+
+msgid "messages.clicktocompose"
+msgstr "Kattints ide új üzenet létrehozásához"
+
+msgid "messages.nosupporterror"
+msgstr "Ezt a funkciót a webböngésző nem támogatja."
+
+msgid "messages.siginserted"
+msgstr "Az aláírás sikeresen beillesztve."
+
+msgid "messages.responseinserted"
+msgstr "A válasz sikeresen beillesztve."
+
+msgid "messages.noresponsesavailable"
+msgstr "Nincs érvényes válasz "
+
+msgid "messages.listempty"
+msgstr "A lista üres."
+
+msgid "messages.listusebutton"
+msgstr "Használd a Létrehozás gombot, hogy hozzáadj egy új rekordot."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Az új kulcspár sikeresen létre lett hozva a következőnek: $identity"
+
+msgid "messages.emptyattachment"
+msgstr "Ez a csatolmány üresnek tűnik.<br>Érdeklődj annál, aki ezt küldte."
+
+msgid "messages.oauthloginfailed"
+msgstr "Az OAUTH bejelentkezés meghiúsult. Próbáld újra."
+
+msgid "messages.oauthinvalidrequest"
+msgstr "Az engedélyezési kérelem érvénytelen vagy hiányos volt."
+
+msgid "messages.oauthaccessdenied"
+msgstr "Az engedélyező kiszolgáló vagy a felhasználó elutasította a kérelmet."

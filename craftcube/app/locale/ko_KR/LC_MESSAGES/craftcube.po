@@ -1,0 +1,2861 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "$product에 오신 것을 환영합니다"
+
+msgid "username"
+msgstr "사용자명"
+
+msgid "password"
+msgstr "암호"
+
+msgid "server"
+msgstr "서버"
+
+msgid "login"
+msgstr "로그인"
+
+msgid "oauthlogin"
+msgstr "$provider(으)로 로그인"
+
+msgid "menu"
+msgstr "메뉴"
+
+msgid "logout"
+msgstr "로그아웃"
+
+msgid "mail"
+msgstr "메일"
+
+msgid "settings"
+msgstr "설정"
+
+msgid "addressbook"
+msgstr "주소록"
+
+msgid "darkmode"
+msgstr "다크 모드"
+
+msgid "lightmode"
+msgstr "라이트 모드"
+
+msgid "inbox"
+msgstr "받은 편지함"
+
+msgid "drafts"
+msgstr "임시 보관함"
+
+msgid "sent"
+msgstr "보낸 편지함"
+
+msgid "trash"
+msgstr "지운 편지함"
+
+msgid "junk"
+msgstr "스팸 편지함"
+
+msgid "show_real_foldernames"
+msgstr "특수 폴더에서 실제 명칭 표시"
+
+msgid "subject"
+msgstr "제목"
+
+msgid "from"
+msgstr "보낸 사람"
+
+msgid "sender"
+msgstr "보내는 사람"
+
+msgid "to"
+msgstr "받는 사람"
+
+msgid "cc"
+msgstr "참조"
+
+msgid "bcc"
+msgstr "숨은 참조"
+
+msgid "replyto"
+msgstr "회신 주소"
+
+msgid "followupto"
+msgstr "전달"
+
+msgid "date"
+msgstr "날짜"
+
+msgid "size"
+msgstr "크기"
+
+msgid "priority"
+msgstr "우선 순위"
+
+msgid "organization"
+msgstr "조직"
+
+msgid "readstatus"
+msgstr "읽음 상태"
+
+msgid "listoptions"
+msgstr "목록 옵션..."
+
+msgid "listoptionstitle"
+msgstr "목록 옵션"
+
+msgid "mailboxlist"
+msgstr "폴더"
+
+msgid "messagesfromto"
+msgstr "총 $count개 중 $from 번째부터 $to 번째까지의 메시지"
+
+msgid "threadsfromto"
+msgstr "총 $count개 중 $from 번째부터 $to 번째까지의 대화"
+
+msgid "messagenrof"
+msgstr "총 $count개 중  $nr 번째 메시지"
+
+msgid "fromtoshort"
+msgstr "총 $count개 중 $from 번째 - $to 번째"
+
+msgid "copy"
+msgstr "복사"
+
+msgid "move"
+msgstr "이동"
+
+msgid "moveto"
+msgstr "다음 위치로 이동..."
+
+msgid "copyto"
+msgstr "다음 위치로 복사..."
+
+msgid "download"
+msgstr "다운로드"
+
+msgid "open"
+msgstr "열기"
+
+msgid "showattachment"
+msgstr "보기"
+
+msgid "showanyway"
+msgstr "그래도 표시"
+
+msgid "filename"
+msgstr "파일명"
+
+msgid "filesize"
+msgstr "파일 크기"
+
+msgid "addtoaddressbook"
+msgstr "주소록에 추가"
+
+msgid "sun"
+msgstr "일"
+
+msgid "mon"
+msgstr "월"
+
+msgid "tue"
+msgstr "화"
+
+msgid "wed"
+msgstr "수"
+
+msgid "thu"
+msgstr "목"
+
+msgid "fri"
+msgstr "금"
+
+msgid "sat"
+msgstr "토"
+
+msgid "sunday"
+msgstr "일요일"
+
+msgid "monday"
+msgstr "월요일"
+
+msgid "tuesday"
+msgstr "화요일"
+
+msgid "wednesday"
+msgstr "수요일"
+
+msgid "thursday"
+msgstr "목요일"
+
+msgid "friday"
+msgstr "금요일"
+
+msgid "saturday"
+msgstr "토요일"
+
+msgid "jan"
+msgstr "1월"
+
+msgid "feb"
+msgstr "2월"
+
+msgid "mar"
+msgstr "3월"
+
+msgid "apr"
+msgstr "4월"
+
+msgid "may"
+msgstr "5월"
+
+msgid "jun"
+msgstr "6월"
+
+msgid "jul"
+msgstr "7월"
+
+msgid "aug"
+msgstr "8월"
+
+msgid "sep"
+msgstr "9월"
+
+msgid "oct"
+msgstr "10월"
+
+msgid "nov"
+msgstr "11월"
+
+msgid "dec"
+msgstr "12월"
+
+msgid "longjan"
+msgstr "1월"
+
+msgid "longfeb"
+msgstr "2월"
+
+msgid "longmar"
+msgstr "3월"
+
+msgid "longapr"
+msgstr "4월"
+
+msgid "longmay"
+msgstr "5월"
+
+msgid "longjun"
+msgstr "6월"
+
+msgid "longjul"
+msgstr "7월"
+
+msgid "longaug"
+msgstr "8월"
+
+msgid "longsep"
+msgstr "9월"
+
+msgid "longoct"
+msgstr "10월"
+
+msgid "longnov"
+msgstr "11월"
+
+msgid "longdec"
+msgstr "12월"
+
+msgid "today"
+msgstr "오늘"
+
+msgid "refresh"
+msgstr "새로고침"
+
+msgid "checkmail"
+msgstr "새 메시지 확인"
+
+msgid "compose"
+msgstr "쓰기"
+
+msgid "writenewmessage"
+msgstr "새 메시지 만들기"
+
+msgid "reply"
+msgstr "회신"
+
+msgid "replytomessage"
+msgstr "보낸 사람에게 회신"
+
+msgid "replytoallmessage"
+msgstr "목록 또는 보낸 사람 및 모든 받는 사람에게 회신"
+
+msgid "replyall"
+msgstr "전체 회신"
+
+msgid "replylist"
+msgstr "회신 목록"
+
+msgid "forward"
+msgstr "전달"
+
+msgid "forwardinline"
+msgstr "본문 내용으로 전달"
+
+msgid "forwardattachment"
+msgstr "첨부파일로 전달"
+
+msgid "forwardmessage"
+msgstr "메시지 전달"
+
+msgid "bouncemsg"
+msgstr "재전송 (반송)"
+
+msgid "bounce"
+msgstr "재전송"
+
+msgid "deletemessage"
+msgstr "메시지 삭제"
+
+msgid "undeletemessage"
+msgstr "메시지 삭제 취소"
+
+msgid "movemessagetotrash"
+msgstr "메시지를 지운 편지함으로 이동"
+
+msgid "printmessage"
+msgstr "이 메시지 인쇄"
+
+msgid "previousmessage"
+msgstr "이전 메시지 표시"
+
+msgid "firstmessage"
+msgstr "처음 메시지 표시"
+
+msgid "nextmessage"
+msgstr "다음 메시지 표시"
+
+msgid "lastmessage"
+msgstr "마지막 메시지 표시"
+
+msgid "backtolist"
+msgstr "메시지 목록으로 돌아가기"
+
+msgid "viewsource"
+msgstr "소스 표시"
+
+msgid "mark"
+msgstr "표시"
+
+msgid "markmessages"
+msgstr "메시지 표시"
+
+msgid "markread"
+msgstr "읽은 상태로 표시"
+
+msgid "markunread"
+msgstr "읽지 않은 상태로 표시"
+
+msgid "markflagged"
+msgstr "플래그 추가 상태"
+
+msgid "markunflagged"
+msgstr "플래그 제거 상태"
+
+msgid "markundeleted"
+msgstr "삭제안함으로"
+
+msgid "markasread"
+msgstr "읽은 상태로 표시"
+
+msgid "markasunread"
+msgstr "읽지 않은 상태로 표시"
+
+msgid "markasflagged"
+msgstr "플래그 지정으로 표시"
+
+msgid "markasunflagged"
+msgstr "플래그 미지정으로 표시"
+
+msgid "moreactions"
+msgstr "추가 동작..."
+
+msgid "markallread"
+msgstr "모두 읽은 상태로 표시"
+
+msgid "folders-cur"
+msgstr "선택한 폴더에만 적용"
+
+msgid "folders-sub"
+msgstr "선택한 폴더 및 하위 폴더에만 적용"
+
+msgid "folders-all"
+msgstr "모든 폴더에 적용"
+
+msgid "more"
+msgstr "더 보기"
+
+msgid "back"
+msgstr "뒤로"
+
+msgid "options"
+msgstr "옵션"
+
+msgid "composeoptions"
+msgstr "쓰기 옵션"
+
+msgid "optionsandattachments"
+msgstr "옵션 및 첨부파일"
+
+msgid "actions"
+msgstr "동작"
+
+msgid "first"
+msgstr "처음"
+
+msgid "last"
+msgstr "마지막"
+
+msgid "previous"
+msgstr "이전"
+
+msgid "next"
+msgstr "다음"
+
+msgid "select"
+msgstr "선택"
+
+msgid "selection"
+msgstr "선택"
+
+msgid "all"
+msgstr "모두"
+
+msgid "none"
+msgstr "없음"
+
+msgid "currpage"
+msgstr "현재 페이지"
+
+msgid "isread"
+msgstr "읽음"
+
+msgid "unread"
+msgstr "읽지 않음"
+
+msgid "flagged"
+msgstr "플래그 지정"
+
+msgid "unflagged"
+msgstr "플래그 없음"
+
+msgid "unanswered"
+msgstr "답변하지 않음"
+
+msgid "withattachment"
+msgstr "첨부파일을 포함"
+
+msgid "deleted"
+msgstr "삭제됨"
+
+msgid "undeleted"
+msgstr "삭제되지 않음"
+
+msgid "replied"
+msgstr "회신함"
+
+msgid "forwarded"
+msgstr "전달함"
+
+msgid "invert"
+msgstr "반전"
+
+msgid "filter"
+msgstr "필터"
+
+msgid "list"
+msgstr "목록"
+
+msgid "threads"
+msgstr "대화"
+
+msgid "expand-all"
+msgstr "모두 펼치기"
+
+msgid "expand-unread"
+msgstr "읽지 않은 상태의 메시지 펼치기"
+
+msgid "collapse-all"
+msgstr "모두 접기"
+
+msgid "threaded"
+msgstr "대화형"
+
+msgid "showunread"
+msgstr "읽지 않은 메시지 표시"
+
+msgid "autoexpand_threads"
+msgstr "메시지 대화 펼치기"
+
+msgid "do_expand"
+msgstr "모든 대화"
+
+msgid "expand_only_unread"
+msgstr "읽지 않은 상태의 메시지에만 적용"
+
+msgid "fromto"
+msgstr "보내는 사람/받는 사람"
+
+msgid "flag"
+msgstr "플래그 있음"
+
+msgid "attachment"
+msgstr "첨부파일"
+
+msgid "nonesort"
+msgstr "없음"
+
+msgid "sentdate"
+msgstr "보낸 날짜"
+
+msgid "arrival"
+msgstr "받은 날짜"
+
+msgid "asc"
+msgstr "오름차순"
+
+msgid "desc"
+msgstr "내림차순"
+
+msgid "listcolumns"
+msgstr "열 목록 표시"
+
+msgid "listsorting"
+msgstr "열 정렬 기준"
+
+msgid "listorder"
+msgstr "정렬 순서"
+
+msgid "listmode"
+msgstr "목록 화면 모드 "
+
+msgid "lmode"
+msgstr "목록 모드"
+
+msgid "layout"
+msgstr "레이아웃"
+
+msgid "layoutwidescreen"
+msgstr "와이드스크린"
+
+msgid "layoutdesktop"
+msgstr "데스크탑"
+
+msgid "layoutlist"
+msgstr "목록"
+
+msgid "layoutwidescreendesc"
+msgstr "와이드스크린 (3열 화면)"
+
+msgid "layoutdesktopdesc"
+msgstr "데스크탑 (와이드 목록 및 하단 메일 미리보기)"
+
+msgid "layoutlistdesc"
+msgstr "목록 (메일 미리보기 없음)"
+
+msgid "folderactions"
+msgstr "폴더 동작..."
+
+msgid "compact"
+msgstr "압축"
+
+msgid "empty"
+msgstr "비우기"
+
+msgid "importmessages"
+msgstr "메시지 가져오기"
+
+msgid "mailimportdesc"
+msgstr ""
+"<a href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> 또는 "
+"<a href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a> 형식의 파일로 메일을 업로드할 수 "
+"있습니다."
+
+msgid "mailimportzip"
+msgstr "여러 개 파일을 ZIP 압축 파일로 압축할 수 있습니다."
+
+msgid "quota"
+msgstr "디스크 사용량"
+
+msgid "unknown"
+msgstr "알 수 없음"
+
+msgid "unlimited"
+msgstr "무제한"
+
+msgid "quotatype"
+msgstr "용량 제한 유형"
+
+msgid "quotatotal"
+msgstr "제한 용량"
+
+msgid "quotaused"
+msgstr "사용 용량"
+
+msgid "quotastorage"
+msgstr "디스크 공간"
+
+msgid "quotamessage"
+msgstr "메시지 개수"
+
+msgid "shortheaderdate"
+msgstr "날짜: $date"
+
+msgid "shortheaderto"
+msgstr "받는 사람: $to, 날짜: $date"
+
+msgid "shortheaderfrom"
+msgstr "보낸 사람: $from, 날짜: $date"
+
+msgid "quicksearch"
+msgstr "빠른 검색"
+
+msgid "searchplaceholder"
+msgstr "검색..."
+
+msgid "resetsearch"
+msgstr "검색 초기화"
+
+msgid "searchmod"
+msgstr "수정자 검색"
+
+msgid "msgtext"
+msgstr "전체 메시지"
+
+msgid "body"
+msgstr "본문"
+
+msgid "type"
+msgstr "유형"
+
+msgid "namex"
+msgstr "이름"
+
+msgid "searchscope"
+msgstr "범위"
+
+msgid "currentfolder"
+msgstr "현재 폴더"
+
+msgid "subfolders"
+msgstr "이 폴더 및 하위 폴더"
+
+msgid "allfolders"
+msgstr "모든 폴더"
+
+msgid "searchinterval-1W"
+msgstr "일주일 이전"
+
+msgid "searchinterval-1M"
+msgstr "한 달 이전"
+
+msgid "searchinterval-1Y"
+msgstr "일 년 이전"
+
+msgid "searchinterval1W"
+msgstr "일주일 이후"
+
+msgid "searchinterval1M"
+msgstr "한 달 이후"
+
+msgid "searchinterval1Y"
+msgstr "일 년 이후"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "새 창에서 열기"
+
+msgid "emlsave"
+msgstr "다운로드 (.eml)"
+
+msgid "changeformattext"
+msgstr "메시지를 평문 형식으로 표시"
+
+msgid "changeformathtml"
+msgstr "HTML 형식으로 표시"
+
+msgid "editasnew"
+msgstr "새 메시지로 편집"
+
+msgid "send"
+msgstr "보내기"
+
+msgid "sendmessage"
+msgstr "메일 보내기"
+
+msgid "savemessage"
+msgstr "임시 보관함에 저장"
+
+msgid "addattachment"
+msgstr "파일 첨부"
+
+msgid "charset"
+msgstr "인코딩"
+
+msgid "editortype"
+msgstr "편집기 유형"
+
+msgid "returnreceipt"
+msgstr "읽음 확인"
+
+msgid "dsn"
+msgstr "전송 상태 알림"
+
+msgid "keepformatting"
+msgstr "계속 편집하기"
+
+msgid "mailreplyintro"
+msgstr "$date에 $sender이(가) 쓴 내용:"
+
+msgid "originalmessage"
+msgstr "원본 메시지"
+
+msgid "selectimage"
+msgstr "이미지 선택"
+
+msgid "addimage"
+msgstr "이미지 추가"
+
+msgid "selectmedia"
+msgstr "동영상 선택"
+
+msgid "addmedia"
+msgstr "동영상 추가"
+
+msgid "encrypt"
+msgstr "암호화"
+
+msgid "encryptmessage"
+msgstr "메시지 암호화"
+
+msgid "encryptmessagemailvelope"
+msgstr "Mailvelope으로 메시지 암호화"
+
+msgid "importpubkeys"
+msgstr "공개 키 가져오기"
+
+msgid "encryptedsendialog"
+msgstr "암호화 메시지 보내기"
+
+msgid "encryptandsign"
+msgstr "암호화 및 서명"
+
+msgid "keyid"
+msgstr "키 ID"
+
+msgid "keylength"
+msgstr "비트"
+
+msgid "keyexpired"
+msgstr "만료됨"
+
+msgid "keyrevoked"
+msgstr "해지됨"
+
+msgid "bccinstead"
+msgstr "Bcc 사용"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "삽입"
+
+msgid "insertcontact"
+msgstr "연락처 삽입"
+
+msgid "recipient"
+msgstr "받는 사람"
+
+msgid "recipientedit"
+msgstr "받는 사람 편집"
+
+msgid "editidents"
+msgstr "신원 편집"
+
+msgid "spellcheck"
+msgstr "맞춤법"
+
+msgid "checkspelling"
+msgstr "맞춤법 검사"
+
+msgid "resumeediting"
+msgstr "이어서 편집"
+
+msgid "revertto"
+msgstr "돌아가기"
+
+msgid "restore"
+msgstr "복구"
+
+msgid "restoremessage"
+msgstr "메시지를 복구할까요?"
+
+msgid "ignore"
+msgstr "무시"
+
+msgid "responses"
+msgstr "응답"
+
+msgid "insertresponse"
+msgstr "응답 삽입"
+
+msgid "manageresponses"
+msgstr "응답 관리"
+
+msgid "newresponse"
+msgstr "새 응답 만들기"
+
+msgid "addresponse"
+msgstr "응답 추가"
+
+msgid "editresponse"
+msgstr "응답 편집"
+
+msgid "editresponses"
+msgstr "응답 편집"
+
+msgid "responsename"
+msgstr "이름"
+
+msgid "responsetext"
+msgstr "응답 문구"
+
+msgid "attach"
+msgstr "첨부"
+
+msgid "attachments"
+msgstr "첨부파일"
+
+msgid "upload"
+msgstr "업로드"
+
+msgid "uploadprogress"
+msgstr "$percent ($total 중 $current)"
+
+msgid "close"
+msgstr "닫기"
+
+msgid "messageoptions"
+msgstr "메시지 옵션..."
+
+msgid "togglecomposeoptions"
+msgstr "구성 옵션 표시/숨기기"
+
+msgid "attachmentrename"
+msgstr "첨부파일명 바꾸기"
+
+msgid "low"
+msgstr "낮음"
+
+msgid "lowest"
+msgstr "가장 낮음"
+
+msgid "normal"
+msgstr "보통"
+
+msgid "high"
+msgstr "높음"
+
+msgid "highest"
+msgstr "가장 높음"
+
+msgid "nosubject"
+msgstr "(제목 없음)"
+
+msgid "showimages"
+msgstr "이미지 표시"
+
+msgid "allow"
+msgstr "허용"
+
+msgid "alwaysshow"
+msgstr "$sender이(가) 보낸 이미지 항상 표시"
+
+msgid "alwaysallow"
+msgstr "$sender이(가) 보낸 메시지 항상 허용"
+
+msgid "isdraft"
+msgstr "이것은 작성 중인 메시지입니다."
+
+msgid "andnmore"
+msgstr "$nr 더 보기..."
+
+msgid "details"
+msgstr "세부사항"
+
+msgid "summary"
+msgstr "요약"
+
+msgid "headers"
+msgstr "헤더"
+
+msgid "allheaders"
+msgstr "전체 헤더..."
+
+msgid "togglemoreheaders"
+msgstr "메시지 헤더 더 보기"
+
+msgid "togglefullheaders"
+msgstr "원본 메시지 헤더 표시/숨기기"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "평문"
+
+msgid "savesentmessagein"
+msgstr "보낸 메시지를 다음 위치에 저장"
+
+msgid "dontsave"
+msgstr "저장하지 않음"
+
+msgid "maxuploadsize"
+msgstr "최대 허용 파일 크기는 $size 입니다"
+
+msgid "addcc"
+msgstr "참조 추가"
+
+msgid "addbcc"
+msgstr "숨은 참조 추가"
+
+msgid "addreplyto"
+msgstr "회신 주소 추가"
+
+msgid "addfollowupto"
+msgstr "전달 추가"
+
+msgid "sendreceipt"
+msgstr "읽음 확인 요청을 보낼까요?"
+
+msgid "mdnrequest"
+msgstr "이 메시지를 보낸 사람이 사용자가 이 메시지를 읽었을 때 읽음 확인을 요청했습니다. 보낸 사람에게 알리시겠습니까?"
+
+msgid "receiptread"
+msgstr "읽음 확인 (수신)"
+
+msgid "yourmessage"
+msgstr "이것은 사용자의 메시지에 대한 읽음 확인입니다."
+
+msgid "receiptnote"
+msgstr ""
+"참고: 이 읽음 확인은 이 메시지가 받는 사람의 컴퓨터에 표시되었다는 것만을 의미합니다. 받는 사람이 해당 메시지 내용을 읽었거나 "
+"이해했다는 보장은 없습니다."
+
+msgid "sendalwaysto"
+msgstr "항상 $email(으)로 보내기"
+
+msgid "zoomin"
+msgstr "확대"
+
+msgid "zoomout"
+msgstr "축소"
+
+msgid "rotate"
+msgstr "회전"
+
+msgid "increaseimage"
+msgstr "이미지 크기 증가"
+
+msgid "decreaseimage"
+msgstr "이미지 크기 감소"
+
+msgid "rotateimage"
+msgstr "이미지 회전"
+
+msgid "showtools"
+msgstr "이미지 도구 표시"
+
+msgid "hidetools"
+msgstr "이미지 도구 숨기기"
+
+msgid "name"
+msgstr "표시명"
+
+msgid "firstname"
+msgstr "이름"
+
+msgid "surname"
+msgstr "성"
+
+msgid "middlename"
+msgstr "중간 이름"
+
+msgid "nameprefix"
+msgstr "접두사"
+
+msgid "namesuffix"
+msgstr "접미사"
+
+msgid "nickname"
+msgstr "별칭"
+
+msgid "jobtitle"
+msgstr "직책"
+
+msgid "department"
+msgstr "부서"
+
+msgid "gender"
+msgstr "성별"
+
+msgid "maidenname"
+msgstr "결혼 전의 성"
+
+msgid "email"
+msgstr "이메일"
+
+msgid "phone"
+msgstr "전화"
+
+msgid "address"
+msgstr "주소"
+
+msgid "street"
+msgstr "도로명"
+
+msgid "locality"
+msgstr "시/구/군"
+
+msgid "zipcode"
+msgstr "우편번호"
+
+msgid "region"
+msgstr "시/도"
+
+msgid "country"
+msgstr "국가"
+
+msgid "birthday"
+msgstr "생년월일"
+
+msgid "anniversary"
+msgstr "기념일"
+
+msgid "website"
+msgstr "웹사이트"
+
+msgid "instantmessenger"
+msgstr "인스턴트 메신저"
+
+msgid "notes"
+msgstr "메모"
+
+msgid "male"
+msgstr "남성"
+
+msgid "female"
+msgstr "여성"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "상사"
+
+msgid "assistant"
+msgstr "비서"
+
+msgid "spouse"
+msgstr "배우자"
+
+msgid "allfields"
+msgstr "모든 필드"
+
+msgid "search"
+msgstr "검색"
+
+msgid "searchresult"
+msgstr "검색 결과"
+
+msgid "advsearch"
+msgstr "고급 검색"
+
+msgid "advanced"
+msgstr "고급"
+
+msgid "other"
+msgstr "기타"
+
+msgid "printcontact"
+msgstr "연락처 인쇄"
+
+msgid "qrcode"
+msgstr "QR 코드"
+
+msgid "typehome"
+msgstr "자택"
+
+msgid "typework"
+msgstr "직장"
+
+msgid "typeother"
+msgstr "기타"
+
+msgid "typemobile"
+msgstr "휴대전화"
+
+msgid "typemain"
+msgstr "기본"
+
+msgid "typehomefax"
+msgstr "자택 팩스"
+
+msgid "typeworkfax"
+msgstr "직장 팩스"
+
+msgid "typecar"
+msgstr "차량"
+
+msgid "typepager"
+msgstr "호출기"
+
+msgid "typevideo"
+msgstr "동영상"
+
+msgid "typeassistant"
+msgstr "비서"
+
+msgid "typehomepage"
+msgstr "홈페이지"
+
+msgid "typeblog"
+msgstr "블로그"
+
+msgid "typeprofile"
+msgstr "자기소개"
+
+msgid "addfield"
+msgstr "필드 추가.."
+
+msgid "addcontact"
+msgstr "연락처 추가"
+
+msgid "editcontact"
+msgstr "연락처 편집"
+
+msgid "contacts"
+msgstr "연락처"
+
+msgid "contactproperties"
+msgstr "연락처 속성"
+
+msgid "contactnameandorg"
+msgstr "상호 및 조직"
+
+msgid "personalinfo"
+msgstr "개인 정보"
+
+msgid "personal"
+msgstr "개인"
+
+msgid "contactphoto"
+msgstr "연락처 사진"
+
+msgid "edit"
+msgstr "편집"
+
+msgid "cancel"
+msgstr "취소"
+
+msgid "save"
+msgstr "저장"
+
+msgid "delete"
+msgstr "삭제"
+
+msgid "discard"
+msgstr "폐기"
+
+msgid "continue"
+msgstr "계속"
+
+msgid "ok"
+msgstr "확인"
+
+msgid "rename"
+msgstr "이름 바꾸기"
+
+msgid "addphoto"
+msgstr "추가"
+
+msgid "replacephoto"
+msgstr "변경"
+
+msgid "uploadphoto"
+msgstr "사진 업로드"
+
+msgid "choosefile"
+msgstr "파일 선택..."
+
+msgid "choosefiles"
+msgstr "파일 선택..."
+
+msgid "browse"
+msgstr "찾아보기"
+
+msgid "newcontact"
+msgstr "새 연락처 만들기"
+
+msgid "deletecontact"
+msgstr "선택한 연락처 삭제"
+
+msgid "composeto"
+msgstr "메일 쓰기 대상"
+
+msgid "contactsfromto"
+msgstr "총 $count개의 연락처 중 $from 번째부터 $to 번째 까지"
+
+msgid "print"
+msgstr "인쇄"
+
+msgid "export"
+msgstr "내보내기"
+
+msgid "exportall"
+msgstr "모두 내보내기"
+
+msgid "exportsel"
+msgstr "선택한 항목 내보내기"
+
+msgid "exportvcards"
+msgstr "연락처를 vCard 형식으로 내보내기"
+
+msgid "newgroup"
+msgstr "새 그룹 만들기"
+
+msgid "addgroup"
+msgstr "그룹 추가"
+
+msgid "grouprename"
+msgstr "그룹명 바꾸기"
+
+msgid "groupdelete"
+msgstr "그룹 삭제"
+
+msgid "groupassign"
+msgstr "그룹 지정..."
+
+msgid "groupremove"
+msgstr "그룹에서 제거"
+
+msgid "groupremoveselected"
+msgstr "선택한 연락처를 그룹에서 제거"
+
+msgid "uponelevel"
+msgstr "한 단계 상위 이동"
+
+msgid "previouspage"
+msgstr "이전 페이지 보기"
+
+msgid "firstpage"
+msgstr "처음 페이지 보기"
+
+msgid "nextpage"
+msgstr "다음 페이지 보기"
+
+msgid "lastpage"
+msgstr "마지막 페이지 보기"
+
+msgid "group"
+msgstr "그룹"
+
+msgid "groups"
+msgstr "그룹"
+
+msgid "listgroup"
+msgstr "그룹 구성원 목록 표시"
+
+msgid "personaladrbook"
+msgstr "개인 주소"
+
+msgid "searchsave"
+msgstr "검색 저장"
+
+msgid "searchdelete"
+msgstr "검색 삭제"
+
+msgid "import"
+msgstr "가져오기"
+
+msgid "importcontacts"
+msgstr "연락처 가져오기"
+
+msgid "importfromfile"
+msgstr "파일에서 가져오기"
+
+msgid "importtarget"
+msgstr "연락처를 추가할 위치"
+
+msgid "importreplace"
+msgstr "전체 주소록을 바꾸기"
+
+msgid "importgroups"
+msgstr "그룹 할당 가져오기"
+
+msgid "importgroupsall"
+msgstr "전체 (필요에 따라 그룹 생성)"
+
+msgid "importgroupsexisting"
+msgstr "기존 그룹에만 해당"
+
+msgid "importdesc"
+msgstr ""
+"기존 주소록에서 연락처를 가져올 수 있습니다.<br/> 현재 <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> 및 CSV (콤마-구분) 데이터 "
+"형식에서 주소 가져오기를 지원합니다."
+
+msgid "importmapdesc"
+msgstr "CSV(쉼표 구분) 데이터를 가져오기를 진행하기 전에 아래 필드 맵핑 정보가 정확한지 확인하십시오."
+
+msgid "fieldnotmapped"
+msgstr "필드가 매핑되지 않음 (가져오지 않음)"
+
+msgid "skipheader"
+msgstr "첫 번째 행 (헤더) 가져오지 않음"
+
+msgid "done"
+msgstr "완료"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "설정"
+
+msgid "about"
+msgstr "정보..."
+
+msgid "preferences"
+msgstr "환경설정"
+
+msgid "userpreferences"
+msgstr "사용자 환경설정"
+
+msgid "editpreferences"
+msgstr "사용자 환경설정 편집"
+
+msgid "identities"
+msgstr "신원"
+
+msgid "manageidentities"
+msgstr "신원 관리"
+
+msgid "newidentity"
+msgstr "새 신원 만들기"
+
+msgid "addidentity"
+msgstr "신원 추가"
+
+msgid "editidentity"
+msgstr "신원 편집"
+
+msgid "identityencryption"
+msgstr "암호화"
+
+msgid "preferhtml"
+msgstr "HTML 표시"
+
+msgid "defaultcharset"
+msgstr "기본 인코딩"
+
+msgid "htmlmessage"
+msgstr "HTML 메시지"
+
+msgid "messagepart"
+msgstr "부분"
+
+msgid "digitalsig"
+msgstr "디지털 서명"
+
+msgid "dateformat"
+msgstr "날짜 형식"
+
+msgid "timeformat"
+msgstr "시간 형식"
+
+msgid "prettydate"
+msgstr "요일 및 시간으로 날짜 표시"
+
+msgid "setdefault"
+msgstr "기본 값으로 설정"
+
+msgid "autodetect"
+msgstr "자동"
+
+msgid "language"
+msgstr "언어"
+
+msgid "timezone"
+msgstr "시간대"
+
+msgid "pagesize"
+msgstr "페이지당 행 개수"
+
+msgid "signature"
+msgstr "서명"
+
+msgid "dstactive"
+msgstr "일광 절약 시간"
+
+msgid "showinextwin"
+msgstr "메시지를 새 창에서 열기"
+
+msgid "composeextwin"
+msgstr "새 창에서 쓰기"
+
+msgid "htmleditor"
+msgstr "HTML 메시지 쓰기"
+
+msgid "htmlonreply"
+msgstr "HTML 메시지 회신 시"
+
+msgid "htmlonreplyandforward"
+msgstr "전달 또는 HTML 메시지 회신 시"
+
+msgid "htmlsignature"
+msgstr "HTML 서명"
+
+msgid "showemail"
+msgstr "이메일 주소를 표시명과 함께 표시"
+
+msgid "previewpane"
+msgstr "미리보기 창 표시"
+
+msgid "skin"
+msgstr "인터페이스 스킨"
+
+msgid "logoutclear"
+msgstr "로그아웃 할 때 지운 편지함 비우기"
+
+msgid "logoutcompact"
+msgstr "로그아웃 할 때 받은 편지함 압축"
+
+msgid "uisettings"
+msgstr "사용자 인터페이스"
+
+msgid "serversettings"
+msgstr "서버 설정"
+
+msgid "mailboxview"
+msgstr "편지함 화면"
+
+msgid "mdnrequests"
+msgstr "읽음 확인 요청 시"
+
+msgid "askuser"
+msgstr "사용자에게 물음"
+
+msgid "autosend"
+msgstr "읽음 확인 요청"
+
+msgid "autosendknown"
+msgstr "내 연락처에 읽음 확인을 요청하고, 내 연락처가 아닐 경우 물어봄"
+
+msgid "autosendknownignore"
+msgstr "내 연락처에 읽음 확인을 요청하고, 내 연락처가 아닐 경우 무시함"
+
+msgid "autosendtrusted"
+msgstr "읽음 확인 요청을 신뢰하는 연락처에게 보내기, 아닐 경우 묻기"
+
+msgid "autosendtrustedignore"
+msgstr "읽음 확인 요청을 신뢰하는 연락처에게 보내기, 아닐 경우 무시하기"
+
+msgid "ignorerequest"
+msgstr "요청 무시"
+
+msgid "readwhendeleted"
+msgstr "삭제 시 메시지를 읽은 상태로 표시"
+
+msgid "flagfordeletion"
+msgstr "삭제 대신 삭제 대상 메시지에 플래그 추가"
+
+msgid "skipdeleted"
+msgstr "삭제된 메시지를 표시하지 않음"
+
+msgid "deletealways"
+msgstr "지운 편지함으로 메시지 이동이 실패할 경우 삭제"
+
+msgid "deletejunk"
+msgstr "스팸 메일함에 있는 메시지를 직접 삭제"
+
+msgid "showremoteimages"
+msgstr "본문에 원격 이미지 표시"
+
+msgid "allowremoteresources"
+msgstr "외부 리소스 허용 (이미지, 스타일)"
+
+msgid "fromknownsenders"
+msgstr "알려진 사람으로부터 받은 메시지만"
+
+msgid "fromtrustedsenders"
+msgstr "신뢰하는 연락처로부터"
+
+msgid "frommycontacts"
+msgstr "내 연락처에서"
+
+msgid "always"
+msgstr "항상"
+
+msgid "alwaysbutplain"
+msgstr "항상, 단 평문으로 회신할 때는 예외"
+
+msgid "showinlineimages"
+msgstr "메시지 하단에 첨부 이미지 표시"
+
+msgid "autosavedraft"
+msgstr "작성 중인 메시지 자동 저장"
+
+msgid "everynminutes"
+msgstr "$n분 마다"
+
+msgid "refreshinterval"
+msgstr "새로고침 (새 메시지 확인 등)"
+
+msgid "never"
+msgstr "하지 않음"
+
+msgid "immediately"
+msgstr "즉시"
+
+msgid "messagesdisplaying"
+msgstr "메시지 표시"
+
+msgid "messagescomposition"
+msgstr "메시지 작성"
+
+msgid "mimeparamfolding"
+msgstr "첨부파일명"
+
+msgid "2231folding"
+msgstr "Full RFC 2231 (썬더버드)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS 아웃룩)"
+
+msgid "2047folding"
+msgstr "Full RFC 2047 (기타)"
+
+msgid "force7bit"
+msgstr "8-bit 문자에 MIME 인코딩 사용"
+
+msgid "savelocalstorage"
+msgstr "브라우저의 로컬 저장소에 저장 (임시)"
+
+msgid "advancedoptions"
+msgstr "고급 옵션"
+
+msgid "toggleadvancedoptions"
+msgstr "고급 옵션 표시/숨기기"
+
+msgid "focusonnewmessage"
+msgstr "새 메시지가 있을 경우 브라우저 창으로 포커스 이동"
+
+msgid "checkallfolders"
+msgstr "모든 폴더에서 새 메시지 확인"
+
+msgid "displaynext"
+msgstr "삭제/이동 후 다음 항목 표시"
+
+msgid "defaultfont"
+msgstr "HTML 메시지의 기본 글꼴"
+
+msgid "mainoptions"
+msgstr "기본 옵션"
+
+msgid "browseroptions"
+msgstr "브라우저 옵션"
+
+msgid "section"
+msgstr "섹션"
+
+msgid "maintenance"
+msgstr "유지관리"
+
+msgid "newmessage"
+msgstr "새 메시지"
+
+msgid "signatureoptions"
+msgstr "서명 옵션"
+
+msgid "whenreplying"
+msgstr "회신 시"
+
+msgid "replyempty"
+msgstr "원문 메시지를 인용하지 않음"
+
+msgid "replytopposting"
+msgstr "새 메시지를 인용문 상단에서 시작"
+
+msgid "replytoppostingnoindent"
+msgstr "새 메시지를 인용문 상단에서 시작 (들여쓰기 없음)"
+
+msgid "replybottomposting"
+msgstr "새 메시지를 인용문 하단에서 시작"
+
+msgid "replyremovesignature"
+msgstr "회신 시 메시지에서 원문 서명을 제거"
+
+msgid "autoaddsignature"
+msgstr "서명 자동 추가"
+
+msgid "newmessageonly"
+msgstr "새 메시지에만"
+
+msgid "replyandforwardonly"
+msgstr "회신 및 전달 메시지에만"
+
+msgid "insertsignature"
+msgstr "서명 삽입"
+
+msgid "sigbelow"
+msgstr "인용한 메시지 아래에 서명 표시"
+
+msgid "sigseparator"
+msgstr "서명에 표준 분리자 강제 적용"
+
+msgid "automarkread"
+msgstr "메시지를 읽은 상태로 표시"
+
+msgid "afternseconds"
+msgstr "$n초 후"
+
+msgid "reqmdn"
+msgstr "읽음 확인을 항상 요청"
+
+msgid "reqdsn"
+msgstr "전송 상태 알림을 항상 요청"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr " 회신 메시지를 회신 대상 메시지의 폴더로 이동"
+
+msgid "defaultabook"
+msgstr "기본 주소록"
+
+msgid "autocompletesingle"
+msgstr "자동 완성에서 대체 이메일 주소를 건너뜀"
+
+msgid "listnamedisplay"
+msgstr "연락처 정렬 방식"
+
+msgid "contactformmode"
+msgstr "연락처 양식 모드"
+
+msgid "privatemode"
+msgstr "개인 (집)"
+
+msgid "businessmode"
+msgstr "직장 (회사)"
+
+msgid "collectedaddresses"
+msgstr "수집된 주소"
+
+msgid "collectedrecipients"
+msgstr "수집된 수신자"
+
+msgid "collectedrecipientsopt"
+msgstr "발송 이메일의 수신인을 저장할 위치"
+
+msgid "collectedsendersopt"
+msgstr "신뢰하는 연락처 저장 위치"
+
+msgid "trustedsenders"
+msgstr "신뢰하는 연락처"
+
+msgid "spellcheckbeforesend"
+msgstr "메시지를 보내기 전에 맞춤법 검사"
+
+msgid "spellcheckoptions"
+msgstr "맞춤법 검사 옵션"
+
+msgid "spellcheckignoresyms"
+msgstr "기호가 포함된 단어 무시"
+
+msgid "spellcheckignorenums"
+msgstr "숫자가 포함된 단어 무시"
+
+msgid "spellcheckignorecaps"
+msgstr "모두 대문자로 표기된 단어 무시"
+
+msgid "addtodict"
+msgstr "사전에 추가"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "mailto: 링크의 프로토콜 처리자 등록"
+
+msgid "standardwindows"
+msgstr "팝업을 일반 창같이 취급"
+
+msgid "forwardmode"
+msgstr "메시지 전달 방식"
+
+msgid "inline"
+msgstr "본문 내용"
+
+msgid "asattachment"
+msgstr "첨부파일"
+
+msgid "replyallmode"
+msgstr "[전체 회신] 버튼의 기본 동작"
+
+msgid "replyalldefault"
+msgstr "전체 회신"
+
+msgid "replyalllist"
+msgstr "발송 목록에만 회신 (찾았을 경우)"
+
+msgid "allmessages"
+msgstr "모든 메시지"
+
+msgid "olderxdays"
+msgstr "$x일 이전"
+
+msgid "folder"
+msgstr "폴더"
+
+msgid "folders"
+msgstr "폴더"
+
+msgid "foldername"
+msgstr "폴더명"
+
+msgid "subscribed"
+msgstr "구독함"
+
+msgid "messagecount"
+msgstr "메시지"
+
+msgid "create"
+msgstr "추가"
+
+msgid "createfolder"
+msgstr "새 폴더 만들기"
+
+msgid "managefolders"
+msgstr "폴더 관리"
+
+msgid "specialfolders"
+msgstr "특수 폴더"
+
+msgid "properties"
+msgstr "속성"
+
+msgid "folderproperties"
+msgstr "폴더 속성"
+
+msgid "parentfolder"
+msgstr "상위 폴더"
+
+msgid "location"
+msgstr "위치"
+
+msgid "info"
+msgstr "정보"
+
+msgid "getfoldersize"
+msgstr "폴더 크기를 확인하려면 클릭"
+
+msgid "changesubscription"
+msgstr "구독을 변경하려면 클릭"
+
+msgid "foldertype"
+msgstr "폴더 유형"
+
+msgid "personalfolder"
+msgstr "개인 폴더"
+
+msgid "otherfolder"
+msgstr "다른 사용자의 폴더"
+
+msgid "sharedfolder"
+msgstr "공개 폴더"
+
+msgid "findfolders"
+msgstr "폴더 찾기"
+
+msgid "findcontacts"
+msgstr "연락처 검색"
+
+msgid "findmail"
+msgstr "메일 메시지 검색"
+
+msgid "namespace.personal"
+msgstr "개인"
+
+msgid "namespace.other"
+msgstr "기타 사용자"
+
+msgid "namespace.shared"
+msgstr "공유됨"
+
+msgid "dualuselabel"
+msgstr "다음 항목만 담기:"
+
+msgid "dualusemail"
+msgstr "메시지"
+
+msgid "dualusefolder"
+msgstr "폴더"
+
+msgid "generate"
+msgstr "생성"
+
+msgid "encryptioncreatekey"
+msgstr "새 키 페어 만들기"
+
+msgid "openmailvelopesettings"
+msgstr "Mailvelope 설정 열기"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr "Mailvelope 열쇠고리에 저장된 개인 키 중 $nr개의 일치하는 키가 있습니다:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"현재 보내는 사람 신원에는 Mailvelope 확장에 보관된 PGP 개인 키가 없습니다. 암호화된 메시지를 사용하기 위해 키를 하나 "
+"만드시겠습니까?"
+
+msgid "encryption"
+msgstr "암호화"
+
+msgid "mailvelopeoptions"
+msgstr "Mailvelope 옵션"
+
+msgid "mailvelopemainkeyring"
+msgstr "Mailvelope 기본 키링 사용"
+
+msgid "mailvelopenotfound"
+msgstr "Mailvelope 확장기능이 브라우저에(서) 활성화/설치되지 않았습니다."
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "정렬 "
+
+msgid "sortasc"
+msgstr "오름차순으로 정렬"
+
+msgid "sortdesc"
+msgstr "내림차순으로 정렬"
+
+msgid "undo"
+msgstr "실행 취소"
+
+msgid "installedplugins"
+msgstr "설치된 플러그인"
+
+msgid "plugin"
+msgstr "플러그인"
+
+msgid "version"
+msgstr "버전"
+
+msgid "source"
+msgstr "원본"
+
+msgid "destination"
+msgstr "대상"
+
+msgid "license"
+msgstr "라이선스"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "지원 요청"
+
+msgid "savedsearches"
+msgstr "저장된 검색"
+
+msgid "dateformatY"
+msgstr "YYYY"
+
+msgid "dateformaty"
+msgstr "YY"
+
+msgid "dateformatm"
+msgstr "MM"
+
+msgid "dateformatd"
+msgstr "DD"
+
+msgid "dateformatj"
+msgstr "D"
+
+msgid "dateformatn"
+msgstr "M"
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "유니코드"
+
+msgid "english"
+msgstr "영어"
+
+msgid "westerneuropean"
+msgstr "서유럽어"
+
+msgid "easterneuropean"
+msgstr "동유럽어"
+
+msgid "southeasterneuropean"
+msgstr "남동유럽어"
+
+msgid "baltic"
+msgstr "발트어"
+
+msgid "cyrillic"
+msgstr "키릴어"
+
+msgid "arabic"
+msgstr "아랍어"
+
+msgid "greek"
+msgstr "그리스어"
+
+msgid "hebrew"
+msgstr "히브리어"
+
+msgid "turkish"
+msgstr "터키어"
+
+msgid "nordic"
+msgstr "북유럽어"
+
+msgid "thai"
+msgstr "태국어"
+
+msgid "celtic"
+msgstr "켈트어"
+
+msgid "vietnamese"
+msgstr "베트남어"
+
+msgid "japanese"
+msgstr "일본어"
+
+msgid "korean"
+msgstr "한국어"
+
+msgid "chinese"
+msgstr "중국어"
+
+msgid "arialabeltopnav"
+msgstr "창 제어"
+
+msgid "arialabeltasknav"
+msgstr "앱 작업"
+
+msgid "arialabeltoolbar"
+msgstr "앱 도구 표시줄"
+
+msgid "arialabellistnav"
+msgstr "목록 탐색"
+
+msgid "arialabelactivetask"
+msgstr "활성화된 작업"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "이메일 목록 필터"
+
+msgid "arialabelmailsearchform"
+msgstr "이메일 메시지 검색 양식"
+
+msgid "arialabelcontactsearchform"
+msgstr "연락처 검색 양식"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "이메일 검색 입력"
+
+msgid "arialabelquicksearchbox"
+msgstr "검색 입력"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "폴더 목록 표시 필터"
+
+msgid "arialabelfoldersearchform"
+msgstr "폴터 검색 양식"
+
+msgid "arialabelfolderlist"
+msgstr "이메일 폴더 선택"
+
+msgid "arialabelmessagelist"
+msgstr "이메일 메시지 목록"
+
+msgid "arialabelmailpreviewframe"
+msgstr "메시지 미리보기"
+
+msgid "arialabelmailboxmenu"
+msgstr "폴더 동작 메뉴"
+
+msgid "arialabellistselectmenu"
+msgstr "목록 선택 메뉴"
+
+msgid "arialabelthreadselectmenu"
+msgstr "대화 목록 메뉴"
+
+msgid "arialabelmessagelistoptions"
+msgstr "메시지 목록 표시 및 정렬 옵션"
+
+msgid "arialabelmailimportdialog"
+msgstr "메시지 가져오기 대화"
+
+msgid "arialabelmessagenav"
+msgstr "메시지 탐색"
+
+msgid "arialabelmessagebody"
+msgstr "메시지 본문"
+
+msgid "arialabelmessageactions"
+msgstr "메시지 동작"
+
+msgid "arialabelcontactquicksearch"
+msgstr "연락처 검색 양식"
+
+msgid "arialabelcontactsearchbox"
+msgstr "연락처 검색 입력"
+
+msgid "arialabelmessageheaders"
+msgstr "메시지 헤더"
+
+msgid "arialabelforwardingoptions"
+msgstr "전달 옵션"
+
+msgid "arialabelreplyalloptions"
+msgstr "전체 회신 옵션"
+
+msgid "arialabelmoremessageactions"
+msgstr "더 많은 메시지 동작"
+
+msgid "arialabelmorecontactactions"
+msgstr "더 많은 연락처 동작"
+
+msgid "arialabelmarkmessagesas"
+msgstr "선택한 메시지를 다음으로 표시.."
+
+msgid "arialabelcomposeoptions"
+msgstr "작성 옵션"
+
+msgid "arialabelresponsesmenu"
+msgstr "저장된 응답 메뉴"
+
+msgid "arialabelattachmentuploadform"
+msgstr "첨부파일 업로드 양식"
+
+msgid "arialabelattachmentmenu"
+msgstr "첨부파일 옵션"
+
+msgid "arialabelmailtomenu"
+msgstr "이메일 주소 옵션"
+
+msgid "arialabelattachmentpreview"
+msgstr "첨부파일 미리보기"
+
+msgid "ariasummarycomposecontacts"
+msgstr "받는 사람으로 선택할 연락처 및 그룹 목록"
+
+msgid "arialabelcontactexportoptions"
+msgstr "연락처 내보내기 옵션"
+
+msgid "arialabelabookgroupoptions"
+msgstr "주소록/그룹 옵션"
+
+msgid "arialabelpreferencesform"
+msgstr "환경 설정 양식"
+
+msgid "arialabelidentityeditfrom"
+msgstr "신원 편집 양식"
+
+msgid "arialabelresponseeditfrom"
+msgstr "응답 편집 양식"
+
+msgid "arialabelsearchterms"
+msgstr "용어 검색"
+
+msgid "arialabeldropactionmenu"
+msgstr "끌어서 놓기 동작 메뉴"
+
+msgid "arialabelheadersmenu"
+msgstr "받는 사람 (헤더) 추가 메뉴"
+
+msgid "arialabelimagetools"
+msgstr "이미지 도구"
+
+msgid "helplistnavigation"
+msgstr "키보드 탐색 목록 표시"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"상/하 화살표: 행 포커스/선택 이동\n"
+"Space: 포커스된 행 선택\n"
+"Shift + 상/하 화살표: 위/아래 행을 추가적으로 선택\n"
+"Ctrl + Space: 포커스된 행을 선택/제거 대상 선택에서 추가"
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"상/하 화살표: 메시지 대화 펼치기/접기(오직 대화 모드에서)\n"
+"Enter: 선택한/포커스된 메시지 열기\n"
+"Delete: 선택한 메시지를 지운 편지함으로 이동"
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: 선택한/포커스된 연락처 열기"
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "오류가 발생했습니다!"
+
+msgid "messages.loginfailed"
+msgstr "로그인이 실패했습니다."
+
+msgid "messages.cookiesdisabled"
+msgstr "브라우저가 쿠키를 허용하지 않습니다."
+
+msgid "messages.sessionerror"
+msgstr "세션이 유효하지 않거나 만료되었습니다."
+
+msgid "messages.cookiesmismatch"
+msgstr "쿠키 불일치를 감지했습니다. 브라우저 쿠키를 지워주세요."
+
+msgid "messages.storageerror"
+msgstr "저장소 서버에 연결을 실패했습니다."
+
+msgid "messages.servererror"
+msgstr "서버 오류!"
+
+msgid "messages.servererrormsg"
+msgstr "서버 오류: $msg"
+
+msgid "messages.accountlocked"
+msgstr "로그인 시도 횟수를 초과함. 나중에 다시 시도하세요."
+
+msgid "messages.connerror"
+msgstr "연결 오류 (서버 접속 실패)!"
+
+msgid "messages.dberror"
+msgstr "데이터베이스 오류!"
+
+msgid "messages.dbconnerror"
+msgstr "데이터베이스에 연결할 수 없습니다."
+
+msgid "messages.windowopenerror"
+msgstr "팝업 창이 차단되었습니다!"
+
+msgid "messages.requesttimedout"
+msgstr "요청 시간 초과"
+
+msgid "messages.errorreadonly"
+msgstr "작업을 수행할 수 없습니다. 읽기 전용 폴더입니다."
+
+msgid "messages.errornoperm"
+msgstr "작업을 수행할 수 없습니다. 권한이 거부되었습니다."
+
+msgid "messages.erroroverquota"
+msgstr "작업을 수행할 수 없습니다. 여유 디스크 공간이 없습니다."
+
+msgid "messages.erroroverquotadelete"
+msgstr "여유 디스크 공간이 없습니다. SHIF+DEL로 메시지를 삭제하세요."
+
+msgid "messages.invalidrequest"
+msgstr "잘못된 요청! 데이터가 저장되지 않았습니다."
+
+msgid "messages.invalidhost"
+msgstr "잘못된 서버 이름입니다."
+
+msgid "messages.nomessagesfound"
+msgstr "이 편지함에서 메시지를 발견하지 못했습니다."
+
+msgid "messages.loggedout"
+msgstr "세션을 성공적으로 종료했습니다. 안녕히 가세요!"
+
+msgid "messages.mailboxempty"
+msgstr "편지함이 비어있음"
+
+msgid "messages.nomessages"
+msgstr "메시지 없음"
+
+msgid "messages.refreshing"
+msgstr "새로고침 중..."
+
+msgid "messages.loading"
+msgstr "로딩 중..."
+
+msgid "messages.uploading"
+msgstr "파일 업로드 중..."
+
+msgid "messages.attaching"
+msgstr "파일 첨부 중..."
+
+msgid "messages.uploadingmany"
+msgstr "파일 업로드 중..."
+
+msgid "messages.loadingdata"
+msgstr "데이터 로딩 중..."
+
+msgid "messages.checkingmail"
+msgstr "새 메시지 확인 중..."
+
+msgid "messages.sendingmessage"
+msgstr "메시지 발송 중..."
+
+msgid "messages.messagesent"
+msgstr "메시지를 성공적으로 보냈습니다."
+
+msgid "messages.savingmessage"
+msgstr "메시지 저장 중..."
+
+msgid "messages.messagesaved"
+msgstr "메시지가 임시 보관함에 저장되었습니다."
+
+msgid "messages.successfullysaved"
+msgstr "성공적으로 저장함."
+
+msgid "messages.savingresponse"
+msgstr "응답 문구 저장 중..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "정말로 이 응답 문구를 삭제하시겠습니까?"
+
+msgid "messages.nocontactselected"
+msgstr "아직 연락처를 선택하지 않으셨습니다."
+
+msgid "messages.addedsuccessfully"
+msgstr "연락처가 주소록에 성공적으로 추가되었습니다."
+
+msgid "messages.contactexists"
+msgstr "동일한 이메일 주소의 연락처가 이미 존재합니다."
+
+msgid "messages.contactnameexists"
+msgstr "연락처에 동일한 이름이 이미 존재합니다."
+
+msgid "messages.blockedimages"
+msgstr "개인 정보 보호를 위해, 이 메시지의 외부 이미지를 차단했습니다."
+
+msgid "messages.blockedresources"
+msgstr "개인정보 보호를 위해 외부 리소스를 차단했습니다."
+
+msgid "messages.suspiciousemail"
+msgstr "이 메시지에 사기가 의심되는 수상한 이메일 주소가 포함되어 있습니다."
+
+msgid "messages.bccemail"
+msgstr "전달된 메시지에 비밀 수신자(Bcc)가 포함되어 있습니다."
+
+msgid "messages.bouncehint"
+msgstr "메시지를 수정 없이 보냅니다. 예: 본문, 헤더 및 수신자를 원본 그대로 사용."
+
+msgid "messages.encryptedmessage"
+msgstr "이것은 암호화된 메시지며 표시할 수 없습니다. 죄송합니다!"
+
+msgid "messages.externalmessagedecryption"
+msgstr "이것은 암호화된 메시지이며 브라우저 확장 기능으로 해독할 수 있습니다."
+
+msgid "messages.nopubkeyfor"
+msgstr "$email에 대한 올바른 공개 키를 찾지 못함"
+
+msgid "messages.nopubkeyforsender"
+msgstr "발신자 신원에 대한 올바른 공개 키를 찾지 못했습니다. 받는 사람에 대한 메시지만 암호화하시겠습니까?"
+
+msgid "messages.encryptnoattachments"
+msgstr "이미 첨부파일을 업로드하여 암호화할 수 없음. 암호화 편집기에 다시 추가해주세요."
+
+msgid "messages.searchpubkeyservers"
+msgstr "분실한 키에 대한 공개 키 서버를 검색하시겠습니까?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "다음 공개 키가 발견되었습니다:"
+
+msgid "messages.keyservererror"
+msgstr "키 서버로부터 키를 가져오지 못했습니다"
+
+msgid "messages.keyimportsuccess"
+msgstr "공개 키 $key 하나를 열쇠고리에 성공적으로 가져왔습니다."
+
+msgid "messages.nocontactsfound"
+msgstr "연락처를 발견하지 못했습니다."
+
+msgid "messages.contactnotfound"
+msgstr "요청한 연락처를 찾을 수 없습니다."
+
+msgid "messages.contactsearchonly"
+msgstr "선택한 주소록에서 연락처를 보려면 검색 상자를 이용하세요."
+
+msgid "messages.sendingfailed"
+msgstr "메시지 발송을 실패했습니다."
+
+msgid "messages.senttooquickly"
+msgstr "이 메시지를 보내기 전에 $sec초 동안 기다려주세요."
+
+msgid "messages.errorsavingsent"
+msgstr "보낸 메시지를 저장하는 도중 오류가 발생했습니다."
+
+msgid "messages.errorsaving"
+msgstr "저장하는 동안 오류가 발생했습니다."
+
+msgid "messages.errormoving"
+msgstr "메시지를 이동할 수 없었습니다."
+
+msgid "messages.errorcopying"
+msgstr "메시지를 복사할 수 없었습니다."
+
+msgid "messages.errordeleting"
+msgstr "메시지를 삭제할 수 없었습니다."
+
+msgid "messages.errormarking"
+msgstr "메시지를 표시할 수 없었습니다."
+
+msgid "messages.alerttitle"
+msgstr "주목"
+
+msgid "messages.confirmationtitle"
+msgstr "정말..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "정말로 선택한 연락처를 삭제하시겠습니까?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "정말로 선택한 그룹을 삭제하시겠습니까?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "정말로 선택한 메시지를 삭제하시겠습니까?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "정말로 이 폴더를 삭제하시겠습니까?"
+
+msgid "messages.movefolderconfirm"
+msgstr "정말로 이 폴더를 이동하시겠습니까?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "정말로 이 폴더의 모든 메시지를 삭제하시겠습니까?"
+
+msgid "messages.contactdeleting"
+msgstr "연락처 삭제 중..."
+
+msgid "messages.groupdeleting"
+msgstr "그룹 삭제 중..."
+
+msgid "messages.folderdeleting"
+msgstr "폴더 삭제 중..."
+
+msgid "messages.foldermoving"
+msgstr "폴더 이동 중..."
+
+msgid "messages.foldersubscribing"
+msgstr "폴더 구독 중..."
+
+msgid "messages.folderunsubscribing"
+msgstr "폴더 구독 취소 중..."
+
+msgid "messages.formincomplete"
+msgstr "양식이 완전히 작성되지 않았습니다."
+
+msgid "messages.noemailwarning"
+msgstr "유효한 이메일 주소를 입력해주세요."
+
+msgid "messages.nonamewarning"
+msgstr "이름을 입력해주세요."
+
+msgid "messages.nopagesizewarning"
+msgstr "페이지 크기를 입력해주세요."
+
+msgid "messages.nosenderwarning"
+msgstr "보내는 사람의 이메일 주소를 입력해주세요."
+
+msgid "messages.recipientsadded"
+msgstr "받는 사람을 성공적으로 추가했습니다."
+
+msgid "messages.norecipientwarning"
+msgstr "최소 하나의 수신자를 입력해주세요."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+"모든 수신자가 서로의 이메일 주소를 볼 수 있습니다. 이것을 방지하고 개인 정보를 보호하려면 Bcc 필드를 사용할 수 있습니다."
+
+msgid "messages.disclosedreciptitle"
+msgstr "너무 많은 공개 수신자"
+
+msgid "messages.nosubjectwarning"
+msgstr "\"제목\" 필드가 비어있습니다. 지금 입력하시겠습니까?"
+
+msgid "messages.nosubjecttitle"
+msgstr "제목 없음"
+
+msgid "messages.nobodywarning"
+msgstr "내용 없는 메시지를 보내시겠습니까?"
+
+msgid "messages.notsentwarning"
+msgstr "메시지가 발신되지 않았으며 저장되지 않은 변경사항이 있습니다. 변경사항을 폐기하시겠습니까?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"이전에 작성했지만 보내지 않은 메시지가 발견되었습니다.\\n\\nSubject: $subject\\nSaved: $date\\n\\n이 "
+"메시지를 복구하시겠습니까?"
+
+msgid "messages.nosearchname"
+msgstr "연락처명이나 이메일 주소를 입력해주세요."
+
+msgid "messages.notuploadedwarning"
+msgstr "아직 모든 첨부가 업로드되지 않았습니다. 기다리거나 업로드를 취소해주세요."
+
+msgid "messages.searchsuccessful"
+msgstr "$nr개의 메시지를 찾았습니다."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr개의 연락처를 찾았습니다."
+
+msgid "messages.searchnomatch"
+msgstr "검색이 일치하는 항목을 발견하지 못했습니다."
+
+msgid "messages.searching"
+msgstr "검색 중..."
+
+msgid "messages.checking"
+msgstr "확인 중..."
+
+msgid "messages.stillsearching"
+msgstr "아직 검색 중..."
+
+msgid "messages.nospellerrors"
+msgstr "맞춤법 오류가 발견되지 않았습니다."
+
+msgid "messages.folderdeleted"
+msgstr "폴더가 성공적으로 삭제되었습니다."
+
+msgid "messages.foldersubscribed"
+msgstr "폴더를 성공적으로 구독했습니다."
+
+msgid "messages.folderunsubscribed"
+msgstr "폴더 구독을 성공적으로 취소했습니다."
+
+msgid "messages.folderpurged"
+msgstr "폴더를 성공적으로 비웠습니다."
+
+msgid "messages.folderexpunged"
+msgstr "폴더를 성공적으로 압축했습니다."
+
+msgid "messages.deletedsuccessfully"
+msgstr "성공적으로 삭제되었습니다."
+
+msgid "messages.converting"
+msgstr "서식 설정 삭제 중..."
+
+msgid "messages.messageopenerror"
+msgstr "서버에서 메시지를 불러올 수 없었습니다."
+
+msgid "messages.filelinkerror"
+msgstr "파일 첨부를 실패함."
+
+msgid "messages.fileuploaderror"
+msgstr "파일 업로드를 실패했습니다."
+
+msgid "messages.csvfilemismatch"
+msgstr "다른 필드를 포함한 다중 CSV 파일 가져오기는 지원하지 않습니다."
+
+msgid "messages.filesizeerror"
+msgstr "업로드한 파일이 최대 크기인 $size를 초과했습니다."
+
+msgid "messages.filecounterror"
+msgstr "한 번에 최대 $count개의 파일을 업로드 할 수 있습니다."
+
+msgid "messages.msgsizeerror"
+msgstr "파일 첨부에 실패했습니다. 메시지의 최대 크기($size)를 초과했습니다."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr "메시지 최대 크기 제한을 ($size) 넘었습니다. $num개 메시지를 첨부할 수 없습니다."
+
+msgid "messages.copysuccess"
+msgstr "$nr개의 연락처를 성공적으로 복사함"
+
+msgid "messages.movesuccess"
+msgstr "$nr개의 연락처를 성공적으로 이동되었습니다."
+
+msgid "messages.copyerror"
+msgstr "모든 연락처를 복사할 수 없었습니다."
+
+msgid "messages.moveerror"
+msgstr "모든 연락처를 이동할 수 없었습니다."
+
+msgid "messages.sourceisreadonly"
+msgstr "이 주소 소스는 읽기 전용입니다."
+
+msgid "messages.errorsavingcontact"
+msgstr "연락처 주소를 저장할 수 없었습니다."
+
+msgid "messages.movingmessage"
+msgstr "메시지 이동 중..."
+
+msgid "messages.copyingmessage"
+msgstr "메시지 복사 중..."
+
+msgid "messages.copyingcontact"
+msgstr "연락처 복사 중..."
+
+msgid "messages.movingcontact"
+msgstr "연락처 이동 중..."
+
+msgid "messages.deletingmessage"
+msgstr "메시지 삭제 중..."
+
+msgid "messages.markingmessage"
+msgstr "메시지 표시 중..."
+
+msgid "messages.addingmember"
+msgstr "연락처를 그룹에 추가 중..."
+
+msgid "messages.removingmember"
+msgstr "연락처를 그룹에서 삭제 중..."
+
+msgid "messages.receiptsent"
+msgstr "읽음 확인을 성공적으로 보냈습니다."
+
+msgid "messages.errorsendingreceipt"
+msgstr "읽음 확인을 보낼 수 없었습니다."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "이 항목을 정말로 삭제하시겠습니까?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "이 신원 밖에 남지 않아 삭제할 수 없습니다."
+
+msgid "messages.forbiddencharacter"
+msgstr "폴더명에 금지된 문자가 포함되어 있습니다."
+
+msgid "messages.selectimportfile"
+msgstr "업로드할 파일을 선택해주세요."
+
+msgid "messages.addresswriterror"
+msgstr "선택한 주소록은 쓰기가 불가능합니다."
+
+msgid "messages.contactaddedtogroup"
+msgstr "연락처가 이 그룹에 성공적으로 추가되었습니다."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "연락처가 이 그룹에서 성공적으로 제거되었습니다."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "그룹 할당이 변경되지 않았습니다."
+
+msgid "messages.importwait"
+msgstr "가져오는 중, 잠시만 기다려주세요..."
+
+msgid "messages.importformaterror"
+msgstr "가져오기를 실패했습니다! 업로드한 파일은 잘못된 가져오기 데이터 파일입니다."
+
+msgid "messages.importconfirm"
+msgstr "<b>$inserted개의 연락처를 성공적으로 가져옴<b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "$nr개의 메시지를 성공적으로 가져옴"
+
+msgid "messages.importmessageerror"
+msgstr "가져오기를 실패했습니다! 업로드한 파일은 잘못된 메시지 또는 메일함 파일입니다."
+
+msgid "messages.opnotpermitted"
+msgstr "작업이 허용되지 않습니다!"
+
+msgid "messages.nofromaddress"
+msgstr "선택한 신원의 이메일 주소가 누락되었습니다."
+
+msgid "messages.editorwarning"
+msgstr "편집기 유형을 전환하면 텍스트 서식을 잃게 될 수도 있습니다. 계속하시겠습니까?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"치명적인 구성 오류가 발생했습니다. 즉시 관리자에게 연락하세요.\n"
+"<b>메시지를 보낼 수 없습니다.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP 오류 ($code): 서버와의 연결을 실패했습니다."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP 오류 ($code): 인증을 실패했습니다."
+
+msgid "messages.smtpfromerror"
+msgstr "SMTP 오류 ($code): 보내는사람 \"$from\" ($msg) (으)로 설정하는데 실패했습니다."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP 오류 ($code): 수신자를 \"$to\" ($msg)에 추가하는데 실패했습니다."
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP 오류: 수신자 목록을 구문 분석할 수 없습니다."
+
+msgid "messages.smtputf8error"
+msgstr "SMTP 오류: 서버가 유니코드 이메일 주소를 지원하지 않습니다."
+
+msgid "messages.smtpsizeerror"
+msgstr "SMTP 오류: 메시지 크기가 서버 제한을 ($limit) 넘었습니다."
+
+msgid "messages.smtperror"
+msgstr "SMTP 오류: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "유효하지 않은 이메일 주소: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr "받는 사람이 너무 많음. 수신자 인원을 $max명으로 줄이세요."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "그룹 구성원이 최대 인원인 $max명을 초과합니다."
+
+msgid "messages.internalerror"
+msgstr "내부 오류가 발생했습니다. 다시 시도해주세요."
+
+msgid "messages.contactdelerror"
+msgstr "연락처를 삭제할 수 없었습니다."
+
+msgid "messages.contactdeleted"
+msgstr "연락처가 성공적으로 삭제되었습니다."
+
+msgid "messages.contactrestoreerror"
+msgstr "삭제된 연락처를 복구할 수 없었습니다."
+
+msgid "messages.contactrestored"
+msgstr "연락처가 성공적으로 복구되었습니다."
+
+msgid "messages.groupdeleted"
+msgstr "그룹이 성공적으로 삭제되었습니다."
+
+msgid "messages.grouprenamed"
+msgstr "그룹명이 성공적으로 변경되었습니다."
+
+msgid "messages.groupcreated"
+msgstr "그룹이 성공적으로 생성되었습니다."
+
+msgid "messages.savedsearchdeleted"
+msgstr "저장된 검색이 성공적으로 삭제되었습니다."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "저장된 검색을 삭제할 수 없었습니다."
+
+msgid "messages.savedsearchcreated"
+msgstr "저장된 검색이 성공적으로 생성되었습니다."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "저장된 검색을 생성할 수 없었습니다."
+
+msgid "messages.messagedeleted"
+msgstr "메시지가 성공적으로 삭제되었습니다."
+
+msgid "messages.messagemoved"
+msgstr "메시지가 성공적으로 이동되었습니다."
+
+msgid "messages.messagemovedtotrash"
+msgstr "메시지를 성공적으로 지운 편지함으로 이동했습니다."
+
+msgid "messages.messagecopied"
+msgstr "메시지가 성공적으로 복사되었습니다."
+
+msgid "messages.messagemarked"
+msgstr "메시지가 성공적으로 선택되었습니다."
+
+msgid "messages.autocompletechars"
+msgstr "자동 완성을 위해 $min개 이상의 문자를 입력하세요."
+
+msgid "messages.autocompletemore"
+msgstr "더 많은 일치하는 입력내용을 찾았습니다. 더 많은 문자를 입력해주세요."
+
+msgid "messages.namecannotbeempty"
+msgstr "이름을 비워둘 수 없습니다."
+
+msgid "messages.nametoolong"
+msgstr "이름이 너무 깁니다."
+
+msgid "messages.namedotforbidden"
+msgstr "폴더명은 마침표로 시작할 수 없습니다."
+
+msgid "messages.folderupdated"
+msgstr "폴더가 성공적으로 업데이트 되었습니다."
+
+msgid "messages.foldercreated"
+msgstr "폴더를 성공적으로 생성함."
+
+msgid "messages.invalidimageformat"
+msgstr "올바른 이미지 형식이 아닙니다."
+
+msgid "messages.mispellingsfound"
+msgstr "메시지에서 맞춤법 오류가 감지되었습니다."
+
+msgid "messages.parentnotwritable"
+msgstr "선택한 상위 폴더로 폴더를 생성/이동할 수 없습니다. 접근 권한이 없습니다."
+
+msgid "messages.messagetoobig"
+msgstr "메시지 부분이 처리하기에는 너무 큽니다."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"이 첨부파일은 메시지에 선언된 유형과 일치하지 않아서 의심스럽습니다. 보낸 사람을 신뢰하지 않는다면, 악의적인 내용이 포함되었을 수 "
+"있으므로 브라우저에서 열지 말아야 합니다.<br/><br/><em>예상: $expected, 실제: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr "경고: 이 웹메일 서비스는 자바스크립트가 필요합니다! 이 기능을 사용하려면 브라우저 설정에서 자바스크립트를 활성화해주세요."
+
+msgid "messages.messageissent"
+msgstr "메시지를 이미 보냈으나, 아직 저장되지 않았습니다. 지금 저장하시겠습니까?"
+
+msgid "messages.errnotfound"
+msgstr "파일을 찾을 수 없음"
+
+msgid "messages.errnotfoundexplain"
+msgstr "요청한 리소스를 찾을 수 없습니다!"
+
+msgid "messages.errfailedrequest"
+msgstr "실패한 요청"
+
+msgid "messages.errauthorizationfailed"
+msgstr "인증을 실패함"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "이 서비스에 액세스 할 수있는 권한이 있는지 확인할 수 없었습니다!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "확인 요청을 실패함"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"보안을 위해 이 리소스에 대한 접근은 CSRF로부터 보호되었습니다.\n"
+" 이것이 표시된다면 웹 어플리케이션에서 나가기 전에 로그아웃을 하지 않았을 것입니다.\n"
+"\n"
+"계속하려면 이제 사용자와의 상호작용이 필요합니다."
+
+msgid "messages.errcontactserveradmin"
+msgstr "서버 관리자에게 문의해주세요."
+
+msgid "messages.clicktoresumesession"
+msgstr "이전 세션을 다시 시작하려면 여기를 클릭하세요."
+
+msgid "messages.errcomposesession"
+msgstr "쓰기 세션 오류"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "요청한 쓰기 세션을 찾을 수 없습니다."
+
+msgid "messages.clicktocompose"
+msgstr "새 메시지를 작성하려면 여기를 클릭하세요."
+
+msgid "messages.nosupporterror"
+msgstr "이 기능은 사용자의 웹브라우저에서 지원되지 않습니다."
+
+msgid "messages.siginserted"
+msgstr "서명을 성공적으로 삽입했습니다."
+
+msgid "messages.responseinserted"
+msgstr "응답을 성공적으로 삽입했습니다."
+
+msgid "messages.noresponsesavailable"
+msgstr "사용할 응답이 없음"
+
+msgid "messages.listempty"
+msgstr "목록이 비어있습니다."
+
+msgid "messages.listusebutton"
+msgstr "새 문구를 만드려면 추가 버튼을 누르세요."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "$identy 신원에 대한 키 페어를 성공적으로 만들었습니다."
+
+msgid "messages.emptyattachment"
+msgstr "첨부파일이 비어있는 것으로 보입니다.<br>이 이메일의 발송인과 확인해주십시오."
+
+msgid "messages.oauthloginfailed"
+msgstr "OAuth 로그인에 실패했습니다. 다시 시도해주십시오."
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

@@ -1,0 +1,2909 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: be_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Вітаем у $product"
+
+msgid "username"
+msgstr "Імя карыстальніка"
+
+msgid "password"
+msgstr "Пароль"
+
+msgid "server"
+msgstr "Сервер"
+
+msgid "login"
+msgstr "Увайсці"
+
+msgid "oauthlogin"
+msgstr "Увайсці з дапамогай $provider"
+
+msgid "menu"
+msgstr "Меню"
+
+msgid "logout"
+msgstr "Выйсці"
+
+msgid "mail"
+msgstr "Пошта"
+
+msgid "settings"
+msgstr "Налады"
+
+msgid "addressbook"
+msgstr "Адрасная кніга"
+
+msgid "darkmode"
+msgstr "Цёмны рэжым"
+
+msgid "lightmode"
+msgstr "Сціслы рэжым"
+
+msgid "inbox"
+msgstr "Атрыманыя"
+
+msgid "drafts"
+msgstr "Чарнавікі"
+
+msgid "sent"
+msgstr "Адпраўленыя"
+
+msgid "trash"
+msgstr "Сметніца"
+
+msgid "junk"
+msgstr "Спам"
+
+msgid "show_real_foldernames"
+msgstr "Паказваць арыгінальныя назвы адмысловых каталогаў"
+
+msgid "subject"
+msgstr "Тэма"
+
+msgid "from"
+msgstr "Ад"
+
+msgid "sender"
+msgstr "Адпраўнік"
+
+msgid "to"
+msgstr "Каму"
+
+msgid "cc"
+msgstr "Копія"
+
+msgid "bcc"
+msgstr "Схаваная копія"
+
+msgid "replyto"
+msgstr "Адказаць-на"
+
+msgid "followupto"
+msgstr "Групавы-адказ-на"
+
+msgid "date"
+msgstr "Дата"
+
+msgid "size"
+msgstr "Памер"
+
+msgid "priority"
+msgstr "Прыярытэт"
+
+msgid "organization"
+msgstr "Кампанія"
+
+msgid "readstatus"
+msgstr "Прачытана"
+
+msgid "listoptions"
+msgstr "Параметры спіса..."
+
+msgid "listoptionstitle"
+msgstr "Параметры спіса"
+
+msgid "mailboxlist"
+msgstr "Каталогі"
+
+msgid "messagesfromto"
+msgstr "Паведамленні $from—$to з $count"
+
+msgid "threadsfromto"
+msgstr "Абмеркаванні $from—$to з $count"
+
+msgid "messagenrof"
+msgstr "Паведамленне $nr з $count"
+
+msgid "fromtoshort"
+msgstr "$from—$to з $count"
+
+msgid "copy"
+msgstr "Капіяваць"
+
+msgid "move"
+msgstr "Перамясціць"
+
+msgid "moveto"
+msgstr "Перамясціць у..."
+
+msgid "copyto"
+msgstr "Скапіяваць у..."
+
+msgid "download"
+msgstr "Спампаваць"
+
+msgid "open"
+msgstr "Адкрыць"
+
+msgid "showattachment"
+msgstr "Паказаць"
+
+msgid "showanyway"
+msgstr "Усё адно паказваць"
+
+msgid "filename"
+msgstr "Назва файла"
+
+msgid "filesize"
+msgstr "Памер файла"
+
+msgid "addtoaddressbook"
+msgstr "Дадаць у адрасную кнігу"
+
+msgid "sun"
+msgstr "Ндз"
+
+msgid "mon"
+msgstr "Пн"
+
+msgid "tue"
+msgstr "Аў"
+
+msgid "wed"
+msgstr "Ср"
+
+msgid "thu"
+msgstr "Чц"
+
+msgid "fri"
+msgstr "Пт"
+
+msgid "sat"
+msgstr "Сб"
+
+msgid "sunday"
+msgstr "Нядзеля"
+
+msgid "monday"
+msgstr "Панядзелак"
+
+msgid "tuesday"
+msgstr "Аўторак"
+
+msgid "wednesday"
+msgstr "Серада"
+
+msgid "thursday"
+msgstr "Чацвер"
+
+msgid "friday"
+msgstr "Пятніца"
+
+msgid "saturday"
+msgstr "Субота"
+
+msgid "jan"
+msgstr "Сту"
+
+msgid "feb"
+msgstr "Лют"
+
+msgid "mar"
+msgstr "Сак"
+
+msgid "apr"
+msgstr "Кра"
+
+msgid "may"
+msgstr "Травень"
+
+msgid "jun"
+msgstr "Чэр"
+
+msgid "jul"
+msgstr "Ліп"
+
+msgid "aug"
+msgstr "Жні"
+
+msgid "sep"
+msgstr "Вер"
+
+msgid "oct"
+msgstr "Кас"
+
+msgid "nov"
+msgstr "Ліс"
+
+msgid "dec"
+msgstr "Сне"
+
+msgid "longjan"
+msgstr "Студзень"
+
+msgid "longfeb"
+msgstr "Люты"
+
+msgid "longmar"
+msgstr "Сакавік"
+
+msgid "longapr"
+msgstr "Красавік"
+
+msgid "longmay"
+msgstr "Травень"
+
+msgid "longjun"
+msgstr "Чэрвень"
+
+msgid "longjul"
+msgstr "Ліпень"
+
+msgid "longaug"
+msgstr "Жнівень"
+
+msgid "longsep"
+msgstr "Верасень"
+
+msgid "longoct"
+msgstr "Кастрычнік"
+
+msgid "longnov"
+msgstr "Лістапад"
+
+msgid "longdec"
+msgstr "Снежань"
+
+msgid "today"
+msgstr "Сёння"
+
+msgid "refresh"
+msgstr "Абнавіць"
+
+msgid "checkmail"
+msgstr "Праверыць наяўнасць новых лістоў"
+
+msgid "compose"
+msgstr "Напісаць"
+
+msgid "writenewmessage"
+msgstr "Стварыць новы ліст"
+
+msgid "reply"
+msgstr "Адказаць"
+
+msgid "replytomessage"
+msgstr "Адказаць адпраўніку"
+
+msgid "replytoallmessage"
+msgstr "Адказаць па спісе альбо адпраўніку і ўсім атрымальнікам"
+
+msgid "replyall"
+msgstr "Адказаць усім"
+
+msgid "replylist"
+msgstr "Адказаць па спісе"
+
+msgid "forward"
+msgstr "Пераслаць"
+
+msgid "forwardinline"
+msgstr "Пераслаць унутры ліста"
+
+msgid "forwardattachment"
+msgstr "Пераслаць як далучаны файл"
+
+msgid "forwardmessage"
+msgstr "Пераслаць гэты ліст"
+
+msgid "bouncemsg"
+msgstr "Адправіць паўторна"
+
+msgid "bounce"
+msgstr "Адправіць паўторна"
+
+msgid "deletemessage"
+msgstr "Выдаліць ліст"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Перамясціць ліст у сметніцу"
+
+msgid "printmessage"
+msgstr "Надрукаваць гэты ліст"
+
+msgid "previousmessage"
+msgstr "Паказаць папярэдні ліст"
+
+msgid "firstmessage"
+msgstr "Паказаць першы ліст"
+
+msgid "nextmessage"
+msgstr "Паказаць наступны ліст"
+
+msgid "lastmessage"
+msgstr "Паказаць апошні ліст"
+
+msgid "backtolist"
+msgstr "Назад да спіса"
+
+msgid "viewsource"
+msgstr "Зыходны тэкст"
+
+msgid "mark"
+msgstr "Пазначыць"
+
+msgid "markmessages"
+msgstr "Пазначыць лісты"
+
+msgid "markread"
+msgstr "Як прачытаныя"
+
+msgid "markunread"
+msgstr "Як непрачытаныя"
+
+msgid "markflagged"
+msgstr "Пазначыць сцягам"
+
+msgid "markunflagged"
+msgstr "Прыбраць сцяг"
+
+msgid "markundeleted"
+msgstr "Не выдаленыя"
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Больш дзеянняў..."
+
+msgid "markallread"
+msgstr "Пазначыць усё як прачытанае"
+
+msgid "folders-cur"
+msgstr "Толькі абраныя каталогі"
+
+msgid "folders-sub"
+msgstr "Абраныя каталогі і каталогі ў іх"
+
+msgid "folders-all"
+msgstr "Усе каталогі"
+
+msgid "more"
+msgstr "Яшчэ"
+
+msgid "back"
+msgstr "Назад"
+
+msgid "options"
+msgstr "Параметры"
+
+msgid "composeoptions"
+msgstr "Параметры стварэння"
+
+msgid "optionsandattachments"
+msgstr "Параметры і далучаныя файлы"
+
+msgid "actions"
+msgstr "Дзеянні"
+
+msgid "first"
+msgstr "У пачатак"
+
+msgid "last"
+msgstr "У канец"
+
+msgid "previous"
+msgstr "Назад"
+
+msgid "next"
+msgstr "Далей"
+
+msgid "select"
+msgstr "Абраць"
+
+msgid "selection"
+msgstr "Вылучэнне"
+
+msgid "all"
+msgstr "Усе"
+
+msgid "none"
+msgstr "Нічога"
+
+msgid "currpage"
+msgstr "Бягучая старонка"
+
+msgid "isread"
+msgstr "Прачытаныя"
+
+msgid "unread"
+msgstr "Непрачытаныя"
+
+msgid "flagged"
+msgstr "Са сцягам"
+
+msgid "unflagged"
+msgstr "Без сцяга"
+
+msgid "unanswered"
+msgstr "Не было адказу"
+
+msgid "withattachment"
+msgstr "З далучанымі файламі"
+
+msgid "deleted"
+msgstr "Выдаленыя"
+
+msgid "undeleted"
+msgstr "Не выдаленыя"
+
+msgid "replied"
+msgstr "Быў адказ"
+
+msgid "forwarded"
+msgstr "Перасланыя"
+
+msgid "invert"
+msgstr "Інвертаваць"
+
+msgid "filter"
+msgstr "Фільтр"
+
+msgid "list"
+msgstr "Спіс"
+
+msgid "threads"
+msgstr "Ліставанні"
+
+msgid "expand-all"
+msgstr "Разгарнуць усё"
+
+msgid "expand-unread"
+msgstr "Разгарнуць непрачытаныя"
+
+msgid "collapse-all"
+msgstr "Згарнуць усё"
+
+msgid "threaded"
+msgstr "Threaded"
+
+msgid "showunread"
+msgstr "Паказваць непрачытаныя лісты"
+
+msgid "autoexpand_threads"
+msgstr "Разгортванне ліставанняў"
+
+msgid "do_expand"
+msgstr "усе ліставанні"
+
+msgid "expand_only_unread"
+msgstr "толькі з непрачытанымі лістамі"
+
+msgid "fromto"
+msgstr "Ад/Да"
+
+msgid "flag"
+msgstr "Сцяг"
+
+msgid "attachment"
+msgstr "Далучаныя файлы"
+
+msgid "nonesort"
+msgstr "Няма"
+
+msgid "sentdate"
+msgstr "Дата адпраўлення"
+
+msgid "arrival"
+msgstr "Дата атрымання"
+
+msgid "asc"
+msgstr "па павелічэнні"
+
+msgid "desc"
+msgstr "па памяншэнні"
+
+msgid "listcolumns"
+msgstr "Слупкі"
+
+msgid "listsorting"
+msgstr "Сартаванне паводле"
+
+msgid "listorder"
+msgstr "Парадак сартавання"
+
+msgid "listmode"
+msgstr "Рэжым спіса"
+
+msgid "lmode"
+msgstr "Рэжым спіса"
+
+msgid "layout"
+msgstr "Размяшчэнне"
+
+msgid "layoutwidescreen"
+msgstr "16:9"
+
+msgid "layoutdesktop"
+msgstr "Працоўны стол"
+
+msgid "layoutlist"
+msgstr "Спіс"
+
+msgid "layoutwidescreendesc"
+msgstr "Шырокаэкранны (3 слупкі)"
+
+msgid "layoutdesktopdesc"
+msgstr "Для камп'ютара (шырокі спіс і папярэдні прагляд ліста ніжэй спіса)"
+
+msgid "layoutlistdesc"
+msgstr "Спіс (без папярэдняга прагляду)"
+
+msgid "folderactions"
+msgstr "Дзеянні з каталогам..."
+
+msgid "compact"
+msgstr "Сціснуць"
+
+msgid "empty"
+msgstr "Ачысціць"
+
+msgid "importmessages"
+msgstr "Імпартаваць лісты"
+
+msgid "mailimportdesc"
+msgstr ""
+"Вы можаце запампаваць лісты ў фарматах <a "
+"href=\"https://en.wikipedia.org/wiki/Email#Message_format\">MIME</a> або <a "
+"href=\"https://en.wikipedia.org/wiki/Mbox\">Mbox</a>."
+
+msgid "mailimportzip"
+msgstr "Некалькі файлаў можна сціснуць у zip-архівы."
+
+msgid "quota"
+msgstr "Выкарыстанне сховішча"
+
+msgid "unknown"
+msgstr "невядома"
+
+msgid "unlimited"
+msgstr "без абмежаванняў"
+
+msgid "quotatype"
+msgstr "Тып ліміту"
+
+msgid "quotatotal"
+msgstr "Ліміт"
+
+msgid "quotaused"
+msgstr "Выкарыстоўваецца"
+
+msgid "quotastorage"
+msgstr "Месца на дыску"
+
+msgid "quotamessage"
+msgstr "Колькасць лістоў"
+
+msgid "shortheaderdate"
+msgstr "$date"
+
+msgid "shortheaderto"
+msgstr "Да $to $date"
+
+msgid "shortheaderfrom"
+msgstr "Ад $from $date"
+
+msgid "quicksearch"
+msgstr "Хуткі пошук"
+
+msgid "searchplaceholder"
+msgstr "Пошук..."
+
+msgid "resetsearch"
+msgstr "Скінуць пошук"
+
+msgid "searchmod"
+msgstr "Мадыфікатары пошуку"
+
+msgid "msgtext"
+msgstr "Entire message"
+
+msgid "body"
+msgstr "Цела"
+
+msgid "type"
+msgstr "Тып"
+
+msgid "namex"
+msgstr "Імя"
+
+msgid "searchscope"
+msgstr "Размяшчэнне"
+
+msgid "currentfolder"
+msgstr "Бягучы каталог"
+
+msgid "subfolders"
+msgstr "Гэты і ўкладзеныя каталогі"
+
+msgid "allfolders"
+msgstr "Усе каталогі"
+
+msgid "searchinterval-1W"
+msgstr "больш за тыдзень"
+
+msgid "searchinterval-1M"
+msgstr "больш за месяц"
+
+msgid "searchinterval-1Y"
+msgstr "больш за год"
+
+msgid "searchinterval1W"
+msgstr "менш за тыдзень"
+
+msgid "searchinterval1M"
+msgstr "менш за месяц"
+
+msgid "searchinterval1Y"
+msgstr "менш за год"
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Адкрыць у новым акне"
+
+msgid "emlsave"
+msgstr "Спампаваць (.eml)"
+
+msgid "changeformattext"
+msgstr "Паказаць як просты тэкст"
+
+msgid "changeformathtml"
+msgstr "Паказаць як HTML"
+
+msgid "editasnew"
+msgstr "Рэдагаваць як новы ліст"
+
+msgid "send"
+msgstr "Адправіць"
+
+msgid "sendmessage"
+msgstr "Адправіць зараз"
+
+msgid "savemessage"
+msgstr "Захаваць як чарнавік"
+
+msgid "addattachment"
+msgstr "Далучыць файл"
+
+msgid "charset"
+msgstr "Кадаванне"
+
+msgid "editortype"
+msgstr "Тып рэдактара"
+
+msgid "returnreceipt"
+msgstr "Апавяшчэнне пра прачытанне"
+
+msgid "dsn"
+msgstr "Апавяшчэнне пра атрыманне"
+
+msgid "keepformatting"
+msgstr "Захоўваць фарматаванне"
+
+msgid "mailreplyintro"
+msgstr "$sender напісаў $date:"
+
+msgid "originalmessage"
+msgstr "Арыгінальнае паведамленне"
+
+msgid "selectimage"
+msgstr "Абраць выяву"
+
+msgid "addimage"
+msgstr "Дадаць выяву"
+
+msgid "selectmedia"
+msgstr "Абраць відэа"
+
+msgid "addmedia"
+msgstr "Дадаць відэа"
+
+msgid "encrypt"
+msgstr "Зашыфраваць"
+
+msgid "encryptmessage"
+msgstr "Зашыфраваць ліст"
+
+msgid "encryptmessagemailvelope"
+msgstr "Зашыфраваць ліст з дапамогай Mailvelope"
+
+msgid "importpubkeys"
+msgstr "Імпартаваць публічны ключ"
+
+msgid "encryptedsendialog"
+msgstr "Адпраўленне зашыфраванага ліста"
+
+msgid "encryptandsign"
+msgstr "Зашыфраваць і падпісаць"
+
+msgid "keyid"
+msgstr "ID ключа"
+
+msgid "keylength"
+msgstr "Біты"
+
+msgid "keyexpired"
+msgstr "Састарэлы"
+
+msgid "keyrevoked"
+msgstr "Адкліканы"
+
+msgid "bccinstead"
+msgstr "Выкарыстоўваць схаваную копію"
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Уставіць"
+
+msgid "insertcontact"
+msgstr "Уставіць кантакт(ы)"
+
+msgid "recipient"
+msgstr "Атрымальнік"
+
+msgid "recipientedit"
+msgstr "Рэдагаванне атрымальніка"
+
+msgid "editidents"
+msgstr "Рэдагаваць асабовыя звесткі"
+
+msgid "spellcheck"
+msgstr "Правапіс"
+
+msgid "checkspelling"
+msgstr "Праверыць правапіс"
+
+msgid "resumeediting"
+msgstr "Працягнуць рэдагаванне"
+
+msgid "revertto"
+msgstr "Вярнуцца да"
+
+msgid "restore"
+msgstr "Аднавіць"
+
+msgid "restoremessage"
+msgstr "Аднавіць ліст?"
+
+msgid "ignore"
+msgstr "Не зважаць"
+
+msgid "responses"
+msgstr "Адказы"
+
+msgid "insertresponse"
+msgstr "Уставіць адказ"
+
+msgid "manageresponses"
+msgstr "Кіраванне адказамі"
+
+msgid "newresponse"
+msgstr "Стварыць новы адказ"
+
+msgid "addresponse"
+msgstr "Дадаць адказ"
+
+msgid "editresponse"
+msgstr "Рэдагаваць адказ"
+
+msgid "editresponses"
+msgstr "Рэдагаваць адказы"
+
+msgid "responsename"
+msgstr "Назва"
+
+msgid "responsetext"
+msgstr "Тэкст адказу"
+
+msgid "attach"
+msgstr "Далучыць"
+
+msgid "attachments"
+msgstr "Далучаныя файлы"
+
+msgid "upload"
+msgstr "Запампаваць"
+
+msgid "uploadprogress"
+msgstr "$percent ($current з $total)"
+
+msgid "close"
+msgstr "Закрыць"
+
+msgid "messageoptions"
+msgstr "Параметры ліста..."
+
+msgid "togglecomposeoptions"
+msgstr "Пераключыць параметры стварэння"
+
+msgid "attachmentrename"
+msgstr "Змяніць назву далучанага файла"
+
+msgid "low"
+msgstr "Нізкі"
+
+msgid "lowest"
+msgstr "Найніжэйшы"
+
+msgid "normal"
+msgstr "Звычайны"
+
+msgid "high"
+msgstr "Высокі"
+
+msgid "highest"
+msgstr "Найвышэйшы"
+
+msgid "nosubject"
+msgstr "(без тэмы)"
+
+msgid "showimages"
+msgstr "Паказваць выявы"
+
+msgid "allow"
+msgstr "Дазволіць"
+
+msgid "alwaysshow"
+msgstr "Заўсёды паказваць выявы ад $sender"
+
+msgid "alwaysallow"
+msgstr "Заўсёды дазваляць ад $sender"
+
+msgid "isdraft"
+msgstr "Гэта чарнавік."
+
+msgid "andnmore"
+msgstr "яшчэ $nr..."
+
+msgid "details"
+msgstr "Падрабязнасці"
+
+msgid "summary"
+msgstr "Агулам"
+
+msgid "headers"
+msgstr "Загалоўкі"
+
+msgid "allheaders"
+msgstr "Усе загалоўкі..."
+
+msgid "togglemoreheaders"
+msgstr "Паказаць больш загалоўкаў"
+
+msgid "togglefullheaders"
+msgstr "Паказаць неапрацаваныя загалоўкі"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Звычайны тэкст"
+
+msgid "savesentmessagein"
+msgstr "Захаваць ліст у"
+
+msgid "dontsave"
+msgstr "не захоўваць"
+
+msgid "maxuploadsize"
+msgstr "Максімальны памер файла — $size"
+
+msgid "addcc"
+msgstr "Копія"
+
+msgid "addbcc"
+msgstr "Схаваная копія"
+
+msgid "addreplyto"
+msgstr "Адказ-на"
+
+msgid "addfollowupto"
+msgstr "Групавы-адказ-на"
+
+msgid "sendreceipt"
+msgstr "Адправіць апавяшчэнне пра прачытанне?"
+
+msgid "mdnrequest"
+msgstr ""
+"Адпраўнік хоча даведацца пра прачытанне гэтага ліста. Апавясціць адпраўніка?"
+
+msgid "receiptread"
+msgstr "Пацвярджэнне атрымання (прачытання)"
+
+msgid "yourmessage"
+msgstr "Гэта пацвярджэнне атрымання вашага ліста"
+
+msgid "receiptnote"
+msgstr ""
+"Заўвага: гэтае пацвярджэнне азначае, што ліст быў адлюстраваны на экране "
+"камп'ютара адрасата. Няма гарантыі, што атрымальнік прачытаў альбо зразумеў "
+"змесціва ліста."
+
+msgid "sendalwaysto"
+msgstr "Заўсёды адпраўляць $email"
+
+msgid "zoomin"
+msgstr "Наблізіць"
+
+msgid "zoomout"
+msgstr "Аддаліць"
+
+msgid "rotate"
+msgstr "Павярнуць"
+
+msgid "increaseimage"
+msgstr "Павялічыць памер выявы"
+
+msgid "decreaseimage"
+msgstr "Паменшыць памер выявы"
+
+msgid "rotateimage"
+msgstr "Павярнуць выяву"
+
+msgid "showtools"
+msgstr "Паказаць інструменты для працы з выявамі"
+
+msgid "hidetools"
+msgstr "Схаваць інструменты для працы з выявамі"
+
+msgid "name"
+msgstr "Імя кантакта"
+
+msgid "firstname"
+msgstr "Імя"
+
+msgid "surname"
+msgstr "Прозвішча"
+
+msgid "middlename"
+msgstr "Імя па бацьку (другое імя)"
+
+msgid "nameprefix"
+msgstr "Назва"
+
+msgid "namesuffix"
+msgstr "Суфікс"
+
+msgid "nickname"
+msgstr "Мянушка"
+
+msgid "jobtitle"
+msgstr "Пасада"
+
+msgid "department"
+msgstr "Аддзел"
+
+msgid "gender"
+msgstr "Пол"
+
+msgid "maidenname"
+msgstr "Дзявоцкае прозвішча"
+
+msgid "email"
+msgstr "Эл. пошта"
+
+msgid "phone"
+msgstr "Тэлефон"
+
+msgid "address"
+msgstr "Адрас"
+
+msgid "street"
+msgstr "Вуліца"
+
+msgid "locality"
+msgstr "Горад"
+
+msgid "zipcode"
+msgstr "Індэкс"
+
+msgid "region"
+msgstr "Вобласць / Правінцыя"
+
+msgid "country"
+msgstr "Краіна"
+
+msgid "birthday"
+msgstr "Дзень народзінаў"
+
+msgid "anniversary"
+msgstr "Юбілей"
+
+msgid "website"
+msgstr "Вэб-сайт"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Нататкі"
+
+msgid "male"
+msgstr "мужчына"
+
+msgid "female"
+msgstr "жанчына"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Кіраўнік"
+
+msgid "assistant"
+msgstr "Асістэнт"
+
+msgid "spouse"
+msgstr "Жонка"
+
+msgid "allfields"
+msgstr "Усе палі"
+
+msgid "search"
+msgstr "Пошук"
+
+msgid "searchresult"
+msgstr "Вынік пошуку"
+
+msgid "advsearch"
+msgstr "Пашыраны пошук"
+
+msgid "advanced"
+msgstr "Дадаткова"
+
+msgid "other"
+msgstr "Іншае"
+
+msgid "printcontact"
+msgstr "Надрукаваць кантакт"
+
+msgid "qrcode"
+msgstr "QR-код"
+
+msgid "typehome"
+msgstr "Дом"
+
+msgid "typework"
+msgstr "Праца"
+
+msgid "typeother"
+msgstr "Іншае"
+
+msgid "typemobile"
+msgstr "Мабільны"
+
+msgid "typemain"
+msgstr "Асноўны"
+
+msgid "typehomefax"
+msgstr "Хатні факс"
+
+msgid "typeworkfax"
+msgstr "Працоўны факс"
+
+msgid "typecar"
+msgstr "Аўтамабіль"
+
+msgid "typepager"
+msgstr "Пэйджар"
+
+msgid "typevideo"
+msgstr "Відэа"
+
+msgid "typeassistant"
+msgstr "Асістэнт"
+
+msgid "typehomepage"
+msgstr "Хатняя старонка"
+
+msgid "typeblog"
+msgstr "Блог"
+
+msgid "typeprofile"
+msgstr "Профіль"
+
+msgid "addfield"
+msgstr "Дадаць поле..."
+
+msgid "addcontact"
+msgstr "Дадаць кантакт"
+
+msgid "editcontact"
+msgstr "Рэдагаваць кантакт"
+
+msgid "contacts"
+msgstr "Кантакты"
+
+msgid "contactproperties"
+msgstr "Уласцівасці кантакта"
+
+msgid "contactnameandorg"
+msgstr "Імя і арганізацыя"
+
+msgid "personalinfo"
+msgstr "Асабістыя звесткі"
+
+msgid "personal"
+msgstr "Асабістыя"
+
+msgid "contactphoto"
+msgstr "Асабістае фота"
+
+msgid "edit"
+msgstr "Рэдагаваць"
+
+msgid "cancel"
+msgstr "Скасаваць"
+
+msgid "save"
+msgstr "Захаваць"
+
+msgid "delete"
+msgstr "Выдаліць"
+
+msgid "discard"
+msgstr "Адкінуць"
+
+msgid "continue"
+msgstr "Працягнуць"
+
+msgid "ok"
+msgstr "Добра"
+
+msgid "rename"
+msgstr "Змяніць назву"
+
+msgid "addphoto"
+msgstr "Дадаць"
+
+msgid "replacephoto"
+msgstr "Замяніць"
+
+msgid "uploadphoto"
+msgstr "Запампаваць фота"
+
+msgid "choosefile"
+msgstr "Абраць файл..."
+
+msgid "choosefiles"
+msgstr "Абраць файлы..."
+
+msgid "browse"
+msgstr "Агляд"
+
+msgid "newcontact"
+msgstr "Стварыць новы кантакт"
+
+msgid "deletecontact"
+msgstr "Выдаліць абраныя кантакты"
+
+msgid "composeto"
+msgstr "Напісаць ліст"
+
+msgid "contactsfromto"
+msgstr "Кантакты $from—$to з $count"
+
+msgid "print"
+msgstr "Друкаваць"
+
+msgid "export"
+msgstr "Экспарт"
+
+msgid "exportall"
+msgstr "Экспартаваць усё"
+
+msgid "exportsel"
+msgstr "Экспартаваць абранае"
+
+msgid "exportvcards"
+msgstr "Экспартаваць кантакты ў фармаце vCard"
+
+msgid "newgroup"
+msgstr "Стварыць новую групу"
+
+msgid "addgroup"
+msgstr "Дадаць групу"
+
+msgid "grouprename"
+msgstr "Змяніць назву групы"
+
+msgid "groupdelete"
+msgstr "Выдаліць групу"
+
+msgid "groupassign"
+msgstr "Прызначыць у групу..."
+
+msgid "groupremove"
+msgstr "Выдаліць з групы"
+
+msgid "groupremoveselected"
+msgstr "Выдаліць абраныя кантакты з групы"
+
+msgid "uponelevel"
+msgstr "На адзін узровень уверх"
+
+msgid "previouspage"
+msgstr "Папярэдняя старонка"
+
+msgid "firstpage"
+msgstr "Першая старонка"
+
+msgid "nextpage"
+msgstr "Наступная старонка"
+
+msgid "lastpage"
+msgstr "Апошняя старонка"
+
+msgid "group"
+msgstr "Група"
+
+msgid "groups"
+msgstr "Групы"
+
+msgid "listgroup"
+msgstr "Паказаць кантакты групы"
+
+msgid "personaladrbook"
+msgstr "Асабістыя адрасы"
+
+msgid "searchsave"
+msgstr "Захаваць запыт"
+
+msgid "searchdelete"
+msgstr "Выдаліць запыт"
+
+msgid "import"
+msgstr "Імпарт"
+
+msgid "importcontacts"
+msgstr "Імпартаваць кантакты"
+
+msgid "importfromfile"
+msgstr "Імпартаваць з файла"
+
+msgid "importtarget"
+msgstr "Дадаць канакты ў"
+
+msgid "importreplace"
+msgstr "Замяніць адрасную кнігу цалкам"
+
+msgid "importgroups"
+msgstr "Імпартаваць прызначэнні групы"
+
+msgid "importgroupsall"
+msgstr "Усе (стварыць групы пры неабходнасці)"
+
+msgid "importgroupsexisting"
+msgstr "Толькі для існых групаў"
+
+msgid "importdesc"
+msgstr ""
+"Вы можаце запампаваць кантакты з наяўнай адраснай кнігі.<br/>Цяпер мы "
+"падтрымліваем імпарт з файлаў фарматаў <a "
+"href=\"https://en.wikipedia.org/wiki/VCard\">vCard</a> і CSV (comma-"
+"separated)."
+
+msgid "importmapdesc"
+msgstr ""
+"Перш чым пачаць імпартаванне даных з файла фармату CSV (comma-separated), "
+"пераканайцеся, што палі ніжэй паказваюцца правільна."
+
+msgid "fieldnotmapped"
+msgstr "Поле не паказана (не імпартаваць)"
+
+msgid "skipheader"
+msgstr "Не імпартаваць першы радок (загалоўкі)"
+
+msgid "done"
+msgstr "Завершана"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Налады для"
+
+msgid "about"
+msgstr "Інфармацыя"
+
+msgid "preferences"
+msgstr "Налады"
+
+msgid "userpreferences"
+msgstr "Налады карыстальніка"
+
+msgid "editpreferences"
+msgstr "Рэдагаваць налады карыстальніка"
+
+msgid "identities"
+msgstr "Асабовыя звесткі"
+
+msgid "manageidentities"
+msgstr "Кіраванне асабовымі звесткамі"
+
+msgid "newidentity"
+msgstr "Стварыць новыя асабовыя звесткі"
+
+msgid "addidentity"
+msgstr "Дадаць асабовыя звесткі"
+
+msgid "editidentity"
+msgstr "Рэдагаванне асабовых звестак"
+
+msgid "identityencryption"
+msgstr "Шыфраванне"
+
+msgid "preferhtml"
+msgstr "Паказаць HTML"
+
+msgid "defaultcharset"
+msgstr "Прадвызначанае кадаванне"
+
+msgid "htmlmessage"
+msgstr "Ліст ў фармаце HTML"
+
+msgid "messagepart"
+msgstr "Частка"
+
+msgid "digitalsig"
+msgstr "Электронны подпіс"
+
+msgid "dateformat"
+msgstr "Фармат даты"
+
+msgid "timeformat"
+msgstr "Фармат часу"
+
+msgid "prettydate"
+msgstr "Даты ў зручным фармаце"
+
+msgid "setdefault"
+msgstr "Зрабіць прадвызначаным"
+
+msgid "autodetect"
+msgstr "Аўтаматычна"
+
+msgid "language"
+msgstr "Мова"
+
+msgid "timezone"
+msgstr "Часавы пояс"
+
+msgid "pagesize"
+msgstr "Радкоў на старонцы"
+
+msgid "signature"
+msgstr "Подпіс"
+
+msgid "dstactive"
+msgstr "Летні/зімовы час"
+
+msgid "showinextwin"
+msgstr "Адкрываць лісты ў новым акне"
+
+msgid "composeextwin"
+msgstr "Ствараць лісты ў новым акне"
+
+msgid "htmleditor"
+msgstr "Ствараць лісты ў фармаце HTML"
+
+msgid "htmlonreply"
+msgstr "толькі ў адказ на лісты ў фармаце HTML"
+
+msgid "htmlonreplyandforward"
+msgstr "пры перасылцы альбо ў адказ на лісты ў фармаце HTML"
+
+msgid "htmlsignature"
+msgstr "Подпіс у HTML"
+
+msgid "showemail"
+msgstr "Паказваць адрас электроннай пошты разам з імем кантакта"
+
+msgid "previewpane"
+msgstr "Панэль прагляду"
+
+msgid "skin"
+msgstr "Абалонка інтэрфейсу"
+
+msgid "logoutclear"
+msgstr "Ачышчаць сметніцу пры выхадзе"
+
+msgid "logoutcompact"
+msgstr "Сціскаць атрыманыя пры выхадзе"
+
+msgid "uisettings"
+msgstr "Інтэрфейс карыстальніка"
+
+msgid "serversettings"
+msgstr "Налады сервера"
+
+msgid "mailboxview"
+msgstr "Выгляд скрыні"
+
+msgid "mdnrequests"
+msgstr "Пры запытванні пацвярджэння пра атрыманне"
+
+msgid "askuser"
+msgstr "пытацца мяне"
+
+msgid "autosend"
+msgstr "адпраўляць пацвярджэнне"
+
+msgid "autosendknown"
+msgstr "адпраўляць пацвярджэнне маім кантактам, інакш спытаць"
+
+msgid "autosendknownignore"
+msgstr "адпраўляць пацвярджэнне маім кантактам, інакш ігнараваць"
+
+msgid "autosendtrusted"
+msgstr "адпраўляць пацвярджэнне давераным адпраўнікам, інакш спытаць"
+
+msgid "autosendtrustedignore"
+msgstr "адпраўляць пацвярджэнне давераным адпраўнікам, інакш ігнараваць"
+
+msgid "ignorerequest"
+msgstr "ігнараваць запыт"
+
+msgid "readwhendeleted"
+msgstr "Пазначаць ліст як прачытаны пры выдаленні"
+
+msgid "flagfordeletion"
+msgstr "Пазначаць ліст для выдалення, не выдаляць"
+
+msgid "skipdeleted"
+msgstr "Не паказваць выдаленыя паведамленні"
+
+msgid "deletealways"
+msgstr "Калі не ўдалося перамясціць лісты ў сметніцу, выдаліць іх"
+
+msgid "deletejunk"
+msgstr "Назаўсёды выдаляць лісты ў каталозе спаму"
+
+msgid "showremoteimages"
+msgstr "Паказ адлеглых выяў"
+
+msgid "allowremoteresources"
+msgstr "Дазволіць адлеглыя рэсурсы (выявы, стылі)"
+
+msgid "fromknownsenders"
+msgstr "ад вядомых адпраўнікоў"
+
+msgid "fromtrustedsenders"
+msgstr "ад давераных адпраўнікоў"
+
+msgid "frommycontacts"
+msgstr "ад маіх кантактаў"
+
+msgid "always"
+msgstr "заўсёды"
+
+msgid "alwaysbutplain"
+msgstr "заўсёды, за выключэннем адказаў на просты тэкст"
+
+msgid "showinlineimages"
+msgstr "Паказваць далучаныя выявы пад лістом"
+
+msgid "autosavedraft"
+msgstr "Аўтаматычна захоўваць чарнавікі"
+
+msgid "everynminutes"
+msgstr "кожныя $n хвілін(ы)"
+
+msgid "refreshinterval"
+msgstr "Абнаўленне (праверка новых лістоў і г. д.)"
+
+msgid "never"
+msgstr "ніколі"
+
+msgid "immediately"
+msgstr "неадкладна"
+
+msgid "messagesdisplaying"
+msgstr "Адлюстраванне лістоў"
+
+msgid "messagescomposition"
+msgstr "Напісанне лістоў"
+
+msgid "mimeparamfolding"
+msgstr "Назвы далучаных файлаў"
+
+msgid "2231folding"
+msgstr "Поўныя RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Поўныя RFC 2047 (інш.)"
+
+msgid "force7bit"
+msgstr "Выкарыстоўваць MIME-кадаванне для 8-бітных знакаў"
+
+msgid "savelocalstorage"
+msgstr "Захоўваць у лакальным сховішчы браўзера (часова)"
+
+msgid "advancedoptions"
+msgstr "Дадатковыя параметры"
+
+msgid "toggleadvancedoptions"
+msgstr "Паказаць/Схаваць дадатковыя параметры"
+
+msgid "focusonnewmessage"
+msgstr "Актываваць акно браўзера пры атрыманні новага ліста"
+
+msgid "checkallfolders"
+msgstr "Правяраць усе каталогі на наяўнасць новых лістоў"
+
+msgid "displaynext"
+msgstr "Паказваць наступны запіс у спісе пасля выдалення/перамяшчэння"
+
+msgid "defaultfont"
+msgstr "Прадвызначаны шрыфт лістоў у фармаце HTML"
+
+msgid "mainoptions"
+msgstr "Асноўныя параметры"
+
+msgid "browseroptions"
+msgstr "Параметры браўзера"
+
+msgid "section"
+msgstr "Раздзел"
+
+msgid "maintenance"
+msgstr "Абслугоўванне"
+
+msgid "newmessage"
+msgstr "Новы ліст"
+
+msgid "signatureoptions"
+msgstr "Параметры подпісу"
+
+msgid "whenreplying"
+msgstr "Пры адказе"
+
+msgid "replyempty"
+msgstr "не цытаваць зыходны ліст"
+
+msgid "replytopposting"
+msgstr "пачынаць новы ліст над цытаваным"
+
+msgid "replytoppostingnoindent"
+msgstr "пачынаць новы ліст над цытаваным (без водступу)"
+
+msgid "replybottomposting"
+msgstr "пачынаць новы ліст пад цытаваным"
+
+msgid "replyremovesignature"
+msgstr "Адказваючы, выдаліць стары подпіс"
+
+msgid "autoaddsignature"
+msgstr "Аўтаматычна дадаваць подпіс"
+
+msgid "newmessageonly"
+msgstr "толькі ў новых лістах"
+
+msgid "replyandforwardonly"
+msgstr "толькі ў адказах і перасланых"
+
+msgid "insertsignature"
+msgstr "Уставіць подпіс"
+
+msgid "sigbelow"
+msgstr "Размяшчаць подпіс пад цытаваным лістом"
+
+msgid "sigseparator"
+msgstr "Прымусова выкарыстоўваць стандартны падзяляльнік ў подпісах"
+
+msgid "automarkread"
+msgstr "Пазначыць прачытаным"
+
+msgid "afternseconds"
+msgstr "пасля $n секунд"
+
+msgid "reqmdn"
+msgstr "Заўсёды запытваць пацвярджэнне атрымання"
+
+msgid "reqdsn"
+msgstr "Заўсёды запытваць апавяшчэнне пра дастаўку"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Размяшчаць адказы ў каталог зыходнага ліста"
+
+msgid "defaultabook"
+msgstr "Прадвызначаная адрасная кніга"
+
+msgid "autocompletesingle"
+msgstr "Прапускаць альтэрнатыўныя адрасы пры аўтаматычным дапаўненні"
+
+msgid "listnamedisplay"
+msgstr "Паказваць спіс кантактаў як"
+
+msgid "contactformmode"
+msgstr "Рэжым формы кантакта"
+
+msgid "privatemode"
+msgstr "Прыватны"
+
+msgid "businessmode"
+msgstr "Працоўны"
+
+msgid "collectedaddresses"
+msgstr "Сабраныя адрасы"
+
+msgid "collectedrecipients"
+msgstr "Сабраныя атрымальнікі"
+
+msgid "collectedrecipientsopt"
+msgstr "Захоўвайць атрымальнікаў выходных лістоў у"
+
+msgid "collectedsendersopt"
+msgstr "Захоўваць давераных адпраўнікоў у"
+
+msgid "trustedsenders"
+msgstr "Давераныя адпраўнікі"
+
+msgid "spellcheckbeforesend"
+msgstr "Правяраць правапіс перад адпраўленнем"
+
+msgid "spellcheckoptions"
+msgstr "Параметры праверкі правапісу"
+
+msgid "spellcheckignoresyms"
+msgstr "Ігнараваць словы з сімваламі"
+
+msgid "spellcheckignorenums"
+msgstr "Ігнараваць словы з лікамі"
+
+msgid "spellcheckignorecaps"
+msgstr "Ігнараваць словы з усімі літарамі ў верхнім рэгістры"
+
+msgid "addtodict"
+msgstr "Дадаць у слоўнік"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Зарэгістраваць пратакол апрацоўвання для спасылак mailto"
+
+msgid "standardwindows"
+msgstr "Апрацоўваць выплыўныя вокны як звычайныя вокны"
+
+msgid "forwardmode"
+msgstr "Перасылка лістоў"
+
+msgid "inline"
+msgstr "у тэксце"
+
+msgid "asattachment"
+msgstr "як далучаны файл"
+
+msgid "replyallmode"
+msgstr "Прадвызначанае дзеянне кнопкі [Адказаць усім]"
+
+msgid "replyalldefault"
+msgstr "адказаць усім"
+
+msgid "replyalllist"
+msgstr "адказаць толькі ў спіс рассылкі (калі знойдзены)"
+
+msgid "allmessages"
+msgstr "усе паведамленні"
+
+msgid "olderxdays"
+msgstr "больш за $x дзён"
+
+msgid "folder"
+msgstr "Каталог"
+
+msgid "folders"
+msgstr "Каталогі"
+
+msgid "foldername"
+msgstr "Назва каталога"
+
+msgid "subscribed"
+msgstr "Subscribed"
+
+msgid "messagecount"
+msgstr "Лісты"
+
+msgid "create"
+msgstr "Стварыць"
+
+msgid "createfolder"
+msgstr "Стварыць новы каталог"
+
+msgid "managefolders"
+msgstr "Кіраванне каталогамі"
+
+msgid "specialfolders"
+msgstr "Адмысловыя каталогі"
+
+msgid "properties"
+msgstr "Уласцівасці"
+
+msgid "folderproperties"
+msgstr "Уласцівасці каталога"
+
+msgid "parentfolder"
+msgstr "Бацькоўскі каталог"
+
+msgid "location"
+msgstr "Размяшчэнне"
+
+msgid "info"
+msgstr "Звесткі"
+
+msgid "getfoldersize"
+msgstr "Пстрыкніце, каб даведацца памер каталога"
+
+msgid "changesubscription"
+msgstr "Пстрыкніце, каб змяніць падпіску"
+
+msgid "foldertype"
+msgstr "Тып каталога"
+
+msgid "personalfolder"
+msgstr "Асабісты каталог"
+
+msgid "otherfolder"
+msgstr "Каталог іншага карыстальніка"
+
+msgid "sharedfolder"
+msgstr "Публічны каталог"
+
+msgid "findfolders"
+msgstr "Пошук каталогаў"
+
+msgid "findcontacts"
+msgstr "Пошук кантактаў"
+
+msgid "findmail"
+msgstr "Пошук лістоў"
+
+msgid "namespace.personal"
+msgstr "Асабістыя"
+
+msgid "namespace.other"
+msgstr "Iншыя карыстальнікi"
+
+msgid "namespace.shared"
+msgstr "Адпраўлена"
+
+msgid "dualuselabel"
+msgstr "Могуць змяшчаць толькі"
+
+msgid "dualusemail"
+msgstr "лісты"
+
+msgid "dualusefolder"
+msgstr "каталогі"
+
+msgid "generate"
+msgstr "Згенераваць"
+
+msgid "encryptioncreatekey"
+msgstr "Стварыць новую пару ключоў"
+
+msgid "openmailvelopesettings"
+msgstr "Адкрыць налады Mailvelope"
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+"Вы маеце $nr адпаведных прыватных ключоў, якія захоўваюцца ў вашай вязцы "
+"Mailvelope:"
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+"Гэтыя асабовыя звесткі адпраўніка яшчэ не маюць прыватнага ключа PGP, "
+"захаванага ў пашырэнні Mailvelope. Хоочаце стварыць яго, каб уключыць "
+"зашыфраванае ліставанне?"
+
+msgid "encryption"
+msgstr "Шыфраванне"
+
+msgid "mailvelopeoptions"
+msgstr "Параметры Mailvelope"
+
+msgid "mailvelopemainkeyring"
+msgstr "Выкарыстоўваць галоўную вязку Mailvelope"
+
+msgid "mailvelopenotfound"
+msgstr ""
+"Пашырэнне Mailvelope не ўсталявана (або не ўключана) у вашым браўзеры."
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Сартаваць па"
+
+msgid "sortasc"
+msgstr "Па павелічэнні"
+
+msgid "sortdesc"
+msgstr "Па памяншэнні"
+
+msgid "undo"
+msgstr "Адрабіць"
+
+msgid "installedplugins"
+msgstr "Усталяваныя убудовы"
+
+msgid "plugin"
+msgstr "Убудова"
+
+msgid "version"
+msgstr "Версія"
+
+msgid "source"
+msgstr "Крыніца"
+
+msgid "destination"
+msgstr "Прызначэнне"
+
+msgid "license"
+msgstr "Ліцэнзія"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Падтрымка"
+
+msgid "savedsearches"
+msgstr "Захаваныя запыты пошуку"
+
+msgid "dateformatY"
+msgstr "ГГГГ"
+
+msgid "dateformaty"
+msgstr "ГГ"
+
+msgid "dateformatm"
+msgstr "ММ"
+
+msgid "dateformatd"
+msgstr "ДзДз"
+
+msgid "dateformatj"
+msgstr "Д"
+
+msgid "dateformatn"
+msgstr "М"
+
+msgid "B"
+msgstr "Б"
+
+msgid "KB"
+msgstr "КБ"
+
+msgid "MB"
+msgstr "МБ"
+
+msgid "GB"
+msgstr "ГБ"
+
+msgid "unicode"
+msgstr "Юнікод"
+
+msgid "english"
+msgstr "Англійскае"
+
+msgid "westerneuropean"
+msgstr "Заходне-Еўрапейскае"
+
+msgid "easterneuropean"
+msgstr "Усходне-Еўрапейскае"
+
+msgid "southeasterneuropean"
+msgstr "Паўднёва-Еўрапейскае"
+
+msgid "baltic"
+msgstr "Балтыйскае"
+
+msgid "cyrillic"
+msgstr "Кірыліца"
+
+msgid "arabic"
+msgstr "Арабскае"
+
+msgid "greek"
+msgstr "Грэчаскае"
+
+msgid "hebrew"
+msgstr "Іўрыт"
+
+msgid "turkish"
+msgstr "Турэцкае"
+
+msgid "nordic"
+msgstr "Скандынаўскае"
+
+msgid "thai"
+msgstr "Тайскае"
+
+msgid "celtic"
+msgstr "Кельцкае"
+
+msgid "vietnamese"
+msgstr "В'етнамскае"
+
+msgid "japanese"
+msgstr "Японскае"
+
+msgid "korean"
+msgstr "Карэйскае"
+
+msgid "chinese"
+msgstr "Кітайскае"
+
+msgid "arialabeltopnav"
+msgstr "Кіраванне акном"
+
+msgid "arialabeltasknav"
+msgstr "Задачы праграмы"
+
+msgid "arialabeltoolbar"
+msgstr "Панэль інструментаў праграмы"
+
+msgid "arialabellistnav"
+msgstr "Навігацыя па спісах"
+
+msgid "arialabelactivetask"
+msgstr "Актыўная задача"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Фільтр спіса пошты"
+
+msgid "arialabelmailsearchform"
+msgstr "Форма пошуку лістоў"
+
+msgid "arialabelcontactsearchform"
+msgstr "Форма пошуку кантактаў"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Увод для пошуку лістоў"
+
+msgid "arialabelquicksearchbox"
+msgstr "Увод для пошуку"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Фільтр спіса каталогаў"
+
+msgid "arialabelfoldersearchform"
+msgstr "Форма пошуку каталогаў"
+
+msgid "arialabelfolderlist"
+msgstr "Выбар каталогаў"
+
+msgid "arialabelmessagelist"
+msgstr "Спіс лістоў"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Папярэдні прагляд лістоў"
+
+msgid "arialabelmailboxmenu"
+msgstr "Меню дзеянняў з каталогам"
+
+msgid "arialabellistselectmenu"
+msgstr "Меню выбару спіса"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Меню спіса ліставанняў"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Параметры паказу і сартавання лістоў"
+
+msgid "arialabelmailimportdialog"
+msgstr "Дыялог імпартавання лістоў"
+
+msgid "arialabelmessagenav"
+msgstr "Навігацыя па лістах"
+
+msgid "arialabelmessagebody"
+msgstr "Цела ліста"
+
+msgid "arialabelmessageactions"
+msgstr "Дзеянні для лістоў"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Форма пошуку кантактаў"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Увод для пошуку кантактаў"
+
+msgid "arialabelmessageheaders"
+msgstr "Загалоўкі лістоў"
+
+msgid "arialabelforwardingoptions"
+msgstr "Параметры перасылання"
+
+msgid "arialabelreplyalloptions"
+msgstr "Параметры адказу ўсім"
+
+msgid "arialabelmoremessageactions"
+msgstr "Дадатковыя дзеянні для лістоў"
+
+msgid "arialabelmorecontactactions"
+msgstr "Дадатковыя дзеянні для кантактаў"
+
+msgid "arialabelmarkmessagesas"
+msgstr "Пазначыць абраныя лісты як..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Параметры стварэння"
+
+msgid "arialabelresponsesmenu"
+msgstr "Меню падрыхтаваных адказаў"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Форма запампоўвання далучаных файлаў"
+
+msgid "arialabelattachmentmenu"
+msgstr "Параметры далучэння файлаў"
+
+msgid "arialabelmailtomenu"
+msgstr "Параметры адрасоў электроннай пошты"
+
+msgid "arialabelattachmentpreview"
+msgstr "Папярэдні прагляд далучаных файлаў"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Спіс кантактаў і групаў для выбару атрымальнікаў"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Параметры экспартавання кантактаў"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Параметры адраснай кнігі і групаў"
+
+msgid "arialabelpreferencesform"
+msgstr "Форма налад"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Форма рэдагавання асабовых звестак"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Форма рэдагавання адказу"
+
+msgid "arialabelsearchterms"
+msgstr "Пошук тэрмінаў"
+
+msgid "arialabeldropactionmenu"
+msgstr "Меню дзеянняў выплыўнога меню"
+
+msgid "arialabelheadersmenu"
+msgstr "Меню дадання атрымальніка (загаловак)"
+
+msgid "arialabelimagetools"
+msgstr "Інструменты для працы з выявамі"
+
+msgid "helplistnavigation"
+msgstr "Навігацыя клавіятурай па спісе"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Стрэлкі ўверх/уніз: перамясціць фокус/вылучэнне радка.\n"
+"Прагал: абраць радок у фокусе.\n"
+"Shift + уверх/уніз: абраць дадатковы радок ніжэй/вышэй.\n"
+"Ctrl + прагал: дадаць/прыбраць радок у фокусе з абранага."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Стрэлкі ўправа/улева: разгарнуць/згарнуць ліставанне (толькі ў рэжыме ліставання).\n"
+"Enter: адкрыць абраны ліст/ліст у фокусе.\n"
+"Delete: перамясціць абраныя лісты ў кошык."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: адкрыць абраны кантакт / кантакт у фокусе."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Адбылася памылка."
+
+msgid "messages.loginfailed"
+msgstr "Не ўдалося ўвайсці."
+
+msgid "messages.cookiesdisabled"
+msgstr "Ваш браўзер не падтрымлівае cookie."
+
+msgid "messages.sessionerror"
+msgstr "Ваш сеанс хібны або яго тэрмін дзеяння скончыўся."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+"Выяўлена неадпаведнасць файлаў cookie. Ачысціце файлы cookie вашага "
+"браўзера."
+
+msgid "messages.storageerror"
+msgstr "Не атрымалася злучыцца з серверам IMAP."
+
+msgid "messages.servererror"
+msgstr "Памылка сервера!"
+
+msgid "messages.servererrormsg"
+msgstr "Памылка сервера: $msg"
+
+msgid "messages.accountlocked"
+msgstr "Было занадта шмат няўдалых спробаў увайсці. Паспрабуйце пазней."
+
+msgid "messages.connerror"
+msgstr "Памылка злучэння (не атрымалася злучыцца з серверам)!"
+
+msgid "messages.dberror"
+msgstr "Памылка базы даных!"
+
+msgid "messages.dbconnerror"
+msgstr "Немагчыма падлучыцца да базы даных!"
+
+msgid "messages.windowopenerror"
+msgstr "Выплыўное акно было заблакавана!"
+
+msgid "messages.requesttimedout"
+msgstr "Час чакання адказу скончыўся"
+
+msgid "messages.errorreadonly"
+msgstr "Не атрымалася выканаць аперацыю. Каталог даступны толькі для чытання."
+
+msgid "messages.errornoperm"
+msgstr "Не атрымалася выканаць аперацыю. Адмоўлена ў доступе."
+
+msgid "messages.erroroverquota"
+msgstr "Не атрымалася выканаць аперацыю. Не стае вольнага месца на дыску."
+
+msgid "messages.erroroverquotadelete"
+msgstr ""
+"Не стае вольнага месца на дыску. Націсніце SHIFT+DEL, каб выдаліць ліст."
+
+msgid "messages.invalidrequest"
+msgstr "Хібны запыт! Даныя не захаваныя."
+
+msgid "messages.invalidhost"
+msgstr "Хібная назва сервера."
+
+msgid "messages.nomessagesfound"
+msgstr "У гэтай скрыні няма паведамленняў."
+
+msgid "messages.loggedout"
+msgstr "Вы паспяхова спынілі сеанс. Да пабачэння!"
+
+msgid "messages.mailboxempty"
+msgstr "Скрыня пустая"
+
+msgid "messages.nomessages"
+msgstr "Няма лістоў"
+
+msgid "messages.refreshing"
+msgstr "Абнаўленне..."
+
+msgid "messages.loading"
+msgstr "Загрузка..."
+
+msgid "messages.uploading"
+msgstr "Запампоўванне файла..."
+
+msgid "messages.attaching"
+msgstr "Далучэнне файла..."
+
+msgid "messages.uploadingmany"
+msgstr "Запампоўванне файлаў..."
+
+msgid "messages.loadingdata"
+msgstr "Загрузка даных..."
+
+msgid "messages.checkingmail"
+msgstr "Праверка наяўнасці новых лістоў..."
+
+msgid "messages.sendingmessage"
+msgstr "Адпраўленне ліста..."
+
+msgid "messages.messagesent"
+msgstr "Ліст паспяхова адпраўлены."
+
+msgid "messages.savingmessage"
+msgstr "Захаванне ліста..."
+
+msgid "messages.messagesaved"
+msgstr "Ліст захаваны ў чарнавікі."
+
+msgid "messages.successfullysaved"
+msgstr "Паспяхова захавана."
+
+msgid "messages.savingresponse"
+msgstr "Захаванне тэксту адказу..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Сапраўды выдаліць тэкст адказу?"
+
+msgid "messages.nocontactselected"
+msgstr "Вы яшчэ не абралі кантакт."
+
+msgid "messages.addedsuccessfully"
+msgstr "Кантакт паспяхова дададзены ў адрасную кнігу."
+
+msgid "messages.contactexists"
+msgstr "Кантакт з такім адрасам электроннай пошты ўжо існуе."
+
+msgid "messages.contactnameexists"
+msgstr "Кантакт з такім самым імем ужо існуе."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Каб абараніць вашу прыватнасць, адлеглыя выявы ў гэтым лісце заблакаваныя."
+
+msgid "messages.blockedresources"
+msgstr "У мэтах бяспекі адлеглыя рэсурсы былі заблакаваныя."
+
+msgid "messages.suspiciousemail"
+msgstr ""
+"Гэты ліст змяшчае падазроныя адрасы электроннай пошты, якія могуць належаць "
+"ашуканцам."
+
+msgid "messages.bccemail"
+msgstr ""
+"Перасланы(ыя) ліст(ы) змяшчае(юць) канфідэнцыйных атрымальнікаў (схаваная "
+"копія)."
+
+msgid "messages.bouncehint"
+msgstr ""
+"Ліст будзе адпраўлены без зменаў, г.зн. з зыходным целам, загалоўкамі і "
+"атрымальнікамі."
+
+msgid "messages.encryptedmessage"
+msgstr "Гэта зашыфраваны ліст. Яго немагчыма паказаць. Выбачайце!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+"Гэта зашыфраваны ліст, яго можна расшыфраваць з дапамогай пашырэння вашага "
+"браўзера."
+
+msgid "messages.nopubkeyfor"
+msgstr "Для $email не знойдзена прыдатнага публічнага ключа"
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+"Для вашых асобовых звестак не знойдзена прыдатнага публічнага ключа. Хочаце "
+"зашыфраваць ліст толькі для атрымальнікаў?"
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+"Ужо запампаваныя далучаныя файлы немагчыма зашыфраваць. Дадайце іх нанова ў "
+"рэдактары шыфравання."
+
+msgid "messages.searchpubkeyservers"
+msgstr "Хочаце пашукаць адсутныя ключы на ​​серверах публічных ключоў?"
+
+msgid "messages.encryptpubkeysfound"
+msgstr "Знойдзены наступныя публічныя ключы:"
+
+msgid "messages.keyservererror"
+msgstr "Не ўдалося атрымаць ключы з сервера."
+
+msgid "messages.keyimportsuccess"
+msgstr "Публічны ключ $key паспяхова імпартаваны ў вашую вязку ключоў."
+
+msgid "messages.nocontactsfound"
+msgstr "Кантактаў не знойдзена."
+
+msgid "messages.contactnotfound"
+msgstr "Запытаны кантакт не знойдзены."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+"Каб убачыць кантакты з гэтай адраснай кнігі, неабходна выкарыстаць форму "
+"пошуку."
+
+msgid "messages.sendingfailed"
+msgstr "Не атрымалася адправіць ліст."
+
+msgid "messages.senttooquickly"
+msgstr "Пачакайце $sec секунд(ы) перад адпраўленнем гэтага ліста."
+
+msgid "messages.errorsavingsent"
+msgstr "Не атрымалася захаваць адпраўлены ліст."
+
+msgid "messages.errorsaving"
+msgstr "Не атрымалася захаваць."
+
+msgid "messages.errormoving"
+msgstr "Не атрымалася перамясціць ліст(ы)."
+
+msgid "messages.errorcopying"
+msgstr "Не атрымалася скапіяваць ліст(ы)."
+
+msgid "messages.errordeleting"
+msgstr "Не атрымалася выдаліць ліст(ы)."
+
+msgid "messages.errormarking"
+msgstr "Не атрымалася пазначыць ліст(ы)."
+
+msgid "messages.alerttitle"
+msgstr "Увага"
+
+msgid "messages.confirmationtitle"
+msgstr "Сапраўды..."
+
+msgid "messages.deletecontactconfirm"
+msgstr "Сапраўды выдаліць абраны(я) кантакт(ы)?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Сапраўды выдаліць абраную групу?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Сапраўды выдаліць абраны(я) ліст(ы)?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Сапраўды выдаліць гэты каталог?"
+
+msgid "messages.movefolderconfirm"
+msgstr "Сапраўды перамясціць гэты каталог?"
+
+msgid "messages.purgefolderconfirm"
+msgstr "Сапраўды выдаліць усе лісты з гэтага каталога?"
+
+msgid "messages.contactdeleting"
+msgstr "Выдаленне кантакта(аў)..."
+
+msgid "messages.groupdeleting"
+msgstr "Выдаленне групы..."
+
+msgid "messages.folderdeleting"
+msgstr "Выдаленне каталога..."
+
+msgid "messages.foldermoving"
+msgstr "Перамяшчэнне каталога..."
+
+msgid "messages.foldersubscribing"
+msgstr "Падпісанне на каталог..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Адпісванне ад каталога..."
+
+msgid "messages.formincomplete"
+msgstr "Форма запоўненая не поўнасцю."
+
+msgid "messages.noemailwarning"
+msgstr "Увядзіце прыдатны адрас электроннай пошты."
+
+msgid "messages.nonamewarning"
+msgstr "Увядзіце назву."
+
+msgid "messages.nopagesizewarning"
+msgstr "Увядзіце памер старонкі."
+
+msgid "messages.nosenderwarning"
+msgstr "Увядзіце адрас электроннай пошты адпраўніка."
+
+msgid "messages.recipientsadded"
+msgstr "Атрымальнік(і) паспяхова дададзены(ыя)."
+
+msgid "messages.norecipientwarning"
+msgstr "Увядзіце прынамсі аднаго атрымальніка."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr "Занадта шмат публічных атрымальнікаў"
+
+msgid "messages.nosubjectwarning"
+msgstr "Тэма ліста пустая. Хочаце ўвесці?"
+
+msgid "messages.nosubjecttitle"
+msgstr "Няма тэмы"
+
+msgid "messages.nobodywarning"
+msgstr "Адправіць ліст без тэксту?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+"Ліст не быў адпраўлены і мае незахаваныя змены. Хочаце адкінуць змены?"
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Быў знойдзены створаны, але не адпраўлены ліст.\\n\\nТэма: "
+"$subject\\nЗахавана: $date\\n\\nХочаце аднавіць яго?"
+
+msgid "messages.nosearchname"
+msgstr "Увядзіце імя кантакта альбо адрас электроннай пошты."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Яшчэ не запампаваліся ўсе далучаныя файлы. Пачакайце альбо скасуйце "
+"аперацыю."
+
+msgid "messages.searchsuccessful"
+msgstr "Знойдзена $nr лістоў."
+
+msgid "messages.contactsearchsuccessful"
+msgstr "Знойдзена $nr кантактаў."
+
+msgid "messages.searchnomatch"
+msgstr "Пошук не даў выніку."
+
+msgid "messages.searching"
+msgstr "Пошук..."
+
+msgid "messages.checking"
+msgstr "Праверка..."
+
+msgid "messages.stillsearching"
+msgstr "Усё яшчэ выконваецца пошук..."
+
+msgid "messages.nospellerrors"
+msgstr "Памылак не выяўлена."
+
+msgid "messages.folderdeleted"
+msgstr "Каталог паспяхова выдалены."
+
+msgid "messages.foldersubscribed"
+msgstr "Паспяхова падпісана на каталог."
+
+msgid "messages.folderunsubscribed"
+msgstr "Паспяхова адпісана ад каталога."
+
+msgid "messages.folderpurged"
+msgstr "Каталог паспяхова ачышчаны."
+
+msgid "messages.folderexpunged"
+msgstr "Каталог паспяхова сціснуты."
+
+msgid "messages.deletedsuccessfully"
+msgstr "Паспяхова выдалена."
+
+msgid "messages.converting"
+msgstr "Выдаленне фарматавання..."
+
+msgid "messages.messageopenerror"
+msgstr "Не атрымалася загрузіць ліст з сервера."
+
+msgid "messages.filelinkerror"
+msgstr "Не атрымалася далучыць файл."
+
+msgid "messages.fileuploaderror"
+msgstr "Не атрымалася запампаваць файл."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+"Імпартаванне некалькіх файлаў CSV з адрознымі палямі не падтрымліваецца."
+
+msgid "messages.filesizeerror"
+msgstr "Запампаваны файл перавышае максімальна дазволены памер $size."
+
+msgid "messages.filecounterror"
+msgstr "Вы можаце запампаваць не больш за $count файлаў запар."
+
+msgid "messages.msgsizeerror"
+msgstr ""
+"Не атрымалася далучыць файл. Перавышаны максімальны памер ліста ($size)."
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+"Перавышаны максімальны памер ліста ($size). $num ліст(оў) не было далучана."
+
+msgid "messages.copysuccess"
+msgstr "Паспяхова скапіявана $nr кантактаў."
+
+msgid "messages.movesuccess"
+msgstr "Паспяхова перамешчана $nr кантактаў."
+
+msgid "messages.copyerror"
+msgstr "Не атрымалася скапіяваць ніводнага кантакта."
+
+msgid "messages.moveerror"
+msgstr "Не атрымалася перамясціць ніводнага кантакта."
+
+msgid "messages.sourceisreadonly"
+msgstr "Гэтая адрасная кніга даступная толькі для чытання."
+
+msgid "messages.errorsavingcontact"
+msgstr "Не атрымалася захаваць адрас кантакта."
+
+msgid "messages.movingmessage"
+msgstr "Выдаленне ліста(оў)..."
+
+msgid "messages.copyingmessage"
+msgstr "Капіяванне ліста(оў)..."
+
+msgid "messages.copyingcontact"
+msgstr "Капіяванне кантакта(аў)..."
+
+msgid "messages.movingcontact"
+msgstr "Перамяшчэнне кантакта(аў)..."
+
+msgid "messages.deletingmessage"
+msgstr "Выдаленне ліста(оў)..."
+
+msgid "messages.markingmessage"
+msgstr "Пазначэнне ліста(оў)..."
+
+msgid "messages.addingmember"
+msgstr "Даданне кантакта(аў) у групу..."
+
+msgid "messages.removingmember"
+msgstr "Выдаленне кантакта(аў) з групы..."
+
+msgid "messages.receiptsent"
+msgstr "Пацвярджэнне аб прачытанні паспяхова адпраўлена."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Не атрымалася адправіць пацвярджэнне."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Сапраўды выдаліць гэтыя асабовыя звесткі?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Вы не можаце выдаліць гэтыя асабовыя звесткі, бо яны апошняя."
+
+msgid "messages.forbiddencharacter"
+msgstr "Назва каталога змяшчае забаронены сімвал."
+
+msgid "messages.selectimportfile"
+msgstr "Абярыце файл, які хочаце запампаваць."
+
+msgid "messages.addresswriterror"
+msgstr "Абраная адрасная кніга даступная толькі для чытання."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Кантакты паспяхова дададзеныя ў групу."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Кантакты паспяхова выдаленыя з групы."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Усе прызначэнні групы засталіся без зменаў."
+
+msgid "messages.importwait"
+msgstr "Імпартаванне..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Не атрымалася імпартаваць! Запампаваны файл не змяшчае прыдатных даных."
+
+msgid "messages.importconfirm"
+msgstr "<b>Паспяхова імпартаваны(а) $inserted кантакт(аў)</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Паспяхова імпартавана $nr лістоў"
+
+msgid "messages.importmessageerror"
+msgstr ""
+"Не атрымалася імпартаваць! Загружаны файл не ёсць прыдатным лістом альбо "
+"файлам паштовай скрыні"
+
+msgid "messages.opnotpermitted"
+msgstr "Аперацыя забароненая!"
+
+msgid "messages.nofromaddress"
+msgstr "У абраных асабовых звестках няма адраса электроннай пошты."
+
+msgid "messages.editorwarning"
+msgstr ""
+"Змена тыпу рэдактара можа прывесці да страты фарматавання. Працягнуць?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Крытычная памылка ў канфігурацыі. Неадкладна звяжыцеся з адміністратарам. "
+"<b>Ліст немагчыма адправіць.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "Памылка SMTP ($code): Не атрымалася злучыцца з серверам."
+
+msgid "messages.smtpautherror"
+msgstr "Памылка SMTP ($code): не атрымалася выканаць аўтэнтыфікацыю."
+
+msgid "messages.smtpfromerror"
+msgstr ""
+"Памылка SMTP ($code): не атрымалася пазначыць адпраўніка \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr ""
+"Памылка STMP ($code): не атрымалася пазначыць атрымальніка \"$to\" ($msg)."
+
+msgid "messages.smtprecipientserror"
+msgstr "Памылка STMP: не атрымалася прачытаць спіс атрымальнікаў."
+
+msgid "messages.smtputf8error"
+msgstr ""
+"Памылка SMTP: сервер не падтрымлівае Юнікод у адрасах электроннай пошты."
+
+msgid "messages.smtpsizeerror"
+msgstr "Памылка STMP: памер ліста перавышае ліміт сервера ($limit)"
+
+msgid "messages.smtperror"
+msgstr "Памылка SMTP: $msg"
+
+msgid "messages.emailformaterror"
+msgstr "Хібны адрас электроннай пошты: $email"
+
+msgid "messages.toomanyrecipients"
+msgstr ""
+"Занадта шмат атрымальнікаў. Паменшыце колькасць атрымальнікаў да $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Колькасць удзельнікаў групы перавышае максімум — $max."
+
+msgid "messages.internalerror"
+msgstr "Унутраная памылка. Паспрабуйце яшчэ раз."
+
+msgid "messages.contactdelerror"
+msgstr "Не атрымалася выдаліць кантакт(ы)."
+
+msgid "messages.contactdeleted"
+msgstr "Кантакт(ы) выдалены(ыя)."
+
+msgid "messages.contactrestoreerror"
+msgstr "Не атрымалася аднавіць выдалены(ыя) кантакт(ы)."
+
+msgid "messages.contactrestored"
+msgstr "Кантакт(ы) адноўлены(ыя)."
+
+msgid "messages.groupdeleted"
+msgstr "Група паспяхова выдаленая."
+
+msgid "messages.grouprenamed"
+msgstr "Назва групы паспяхова змененая."
+
+msgid "messages.groupcreated"
+msgstr "Група паспяхова створаная."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Захаваны запыт паспяхова выдалены."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Не атрымалася выдаліць захаваны запыт пошуку."
+
+msgid "messages.savedsearchcreated"
+msgstr "Захаваны запыт пошуку паспяхова створаны."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Не атрымалася стварыць захаваны запыт."
+
+msgid "messages.messagedeleted"
+msgstr "Ліст(ы) паспяхова выдалены(ыя)."
+
+msgid "messages.messagemoved"
+msgstr "Ліст(ы) паспяхова перамешчаны(ыя)."
+
+msgid "messages.messagemovedtotrash"
+msgstr "Ліст(ы) паспяхова перамешчаны(ыя) у сметніцу."
+
+msgid "messages.messagecopied"
+msgstr "Ліст(ы) паспяхова скапіяваны(ыя)."
+
+msgid "messages.messagemarked"
+msgstr "Ліст(ы) паспяхова пазначаны(ыя)."
+
+msgid "messages.autocompletechars"
+msgstr "Увядзіце прынамсі $min знакаў для аўтадапаўнення."
+
+msgid "messages.autocompletemore"
+msgstr "Знойдзена занадта шмат адпаведных запісаў. Увядзіце больш знакаў."
+
+msgid "messages.namecannotbeempty"
+msgstr "Назва не можа быць пустой."
+
+msgid "messages.nametoolong"
+msgstr "Назва занадта доўгая."
+
+msgid "messages.namedotforbidden"
+msgstr "Назва каталога не можа пачынацца з кропкі."
+
+msgid "messages.folderupdated"
+msgstr "Каталог паспяхова абноўлены."
+
+msgid "messages.foldercreated"
+msgstr "Каталог паспяхова створаны."
+
+msgid "messages.invalidimageformat"
+msgstr "Няслушны фармат выявы."
+
+msgid "messages.mispellingsfound"
+msgstr "У лісце выяўленыя граматычныя памылкі."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Не атрымалася стварыць/перамясціць каталог ў абраным бацькоўскім каталозе. "
+"Няма правоў доступу."
+
+msgid "messages.messagetoobig"
+msgstr "Гэтая частка ліста занадта вялікая, каб яе апрацаваць."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+"Гэты далучаны файл выглядае падазроным, бо яго тып не супадае з тыпам, "
+"пададзеным у лісце. Калі вы не давяраеце адпраўніку, вам не варта адкрываць "
+"яго ў браўзеры, бо ён можа змяшчаць шкоднае змесціва.<br/><br/><em>Чакаецца:"
+" $expected; знойдзена: $detected</em>"
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Увага: паштовай службе патрэбны Javascript! Каб карыстацца ёй, у наладах "
+"браўзера трэба ўключыць Javascript."
+
+msgid "messages.messageissent"
+msgstr "Ліст ўжо адпраўлены, але яшчэ не захавана. Хочаце захаваць?"
+
+msgid "messages.errnotfound"
+msgstr "Файл не знойдзены"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Запытаны рэсурс не знойдзены."
+
+msgid "messages.errfailedrequest"
+msgstr "Не атрымалася выканаць запыт"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Не атрымалася выканаць аўтарызацыю"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Не ўдалося пацвердзіць, што вы маеце права на доступ да гэтай службы."
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Не атрымалася праверыць запыт"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Каб абараніць вас, доступ да гэтага рэсурсу абаронены ад CSRF.\n"
+"Калі вы бачыце гэтае паведамленне, верагодна, вы не выходзілі з сістэмы, перш чым выйсці з вэб-праграмы.\n"
+"\n"
+"Зараз патрэбна ўзаемадзеянне з чалавекам."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Звярніцеся да адміністратара сервера."
+
+msgid "messages.clicktoresumesession"
+msgstr "Націсніце сюды, каб аднавіць папярэдні сеанс"
+
+msgid "messages.errcomposesession"
+msgstr "Не атрымалася пачаць сеанс"
+
+msgid "messages.errcomposesessionexplain"
+msgstr "Запытаны сеанс стварэння не знойдзены."
+
+msgid "messages.clicktocompose"
+msgstr "Націсніце сюды, каб стварыць новы ліст"
+
+msgid "messages.nosupporterror"
+msgstr "Гэтая функцыя не падтрымліваецца ў вэб-браўзера."
+
+msgid "messages.siginserted"
+msgstr "Подпіс паспяхова ўстаўлены."
+
+msgid "messages.responseinserted"
+msgstr "Адказ паспяхова ўстаўлены."
+
+msgid "messages.noresponsesavailable"
+msgstr "Няма даступных адказаў"
+
+msgid "messages.listempty"
+msgstr "Спіс пусты."
+
+msgid "messages.listusebutton"
+msgstr "Каб дадаць новы запіс, скарыстайцеся кнопкай \"Стварыць\"."
+
+msgid "messages.keypaircreatesuccess"
+msgstr "Новая пара ключоў паспяхова створаная для $identity."
+
+msgid "messages.emptyattachment"
+msgstr ""
+"Здаецца, гэты ліст пусты.<br> Магчыма, змесціва было выдалена "
+"антывіруснымі/антыспамавымі службамі. Удакладніце ў адпраўніка."
+
+msgid "messages.oauthloginfailed"
+msgstr "Не атрымалася ўвайсці з дапамогай OAuth. Паспрабуйце пазней."
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""

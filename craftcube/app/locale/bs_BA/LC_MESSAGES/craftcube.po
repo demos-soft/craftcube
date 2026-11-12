@@ -1,0 +1,2868 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CraftCube\n"
+"Language: bs_BA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-CraftCube-Note: Edit with Poedit or tools/i18n.py; empty entries fall back to en_US; run tools/i18n.py verify after updating.\n"
+
+msgid "welcome"
+msgstr "Dobrodošli u $product"
+
+msgid "username"
+msgstr "Korisnik"
+
+msgid "password"
+msgstr "Šifra"
+
+msgid "server"
+msgstr "Server"
+
+msgid "login"
+msgstr "Prijava"
+
+msgid "oauthlogin"
+msgstr ""
+
+msgid "menu"
+msgstr ""
+
+msgid "logout"
+msgstr "Odjava"
+
+msgid "mail"
+msgstr "Email"
+
+msgid "settings"
+msgstr "Podešavanja"
+
+msgid "addressbook"
+msgstr "Adresar"
+
+msgid "darkmode"
+msgstr ""
+
+msgid "lightmode"
+msgstr ""
+
+msgid "inbox"
+msgstr "Sanduče"
+
+msgid "drafts"
+msgstr "Skice"
+
+msgid "sent"
+msgstr "Poslano"
+
+msgid "trash"
+msgstr "Smeće"
+
+msgid "junk"
+msgstr "Spam"
+
+msgid "show_real_foldernames"
+msgstr "Prikaži prava imena specijalnih foldera"
+
+msgid "subject"
+msgstr "Naslov"
+
+msgid "from"
+msgstr "Od"
+
+msgid "sender"
+msgstr "Pošiljalac"
+
+msgid "to"
+msgstr "Za"
+
+msgid "cc"
+msgstr "Cc"
+
+msgid "bcc"
+msgstr "Bcc"
+
+msgid "replyto"
+msgstr "Reply-To adresa"
+
+msgid "followupto"
+msgstr "Prati"
+
+msgid "date"
+msgstr "Datum"
+
+msgid "size"
+msgstr "Veličina"
+
+msgid "priority"
+msgstr "Prioritet"
+
+msgid "organization"
+msgstr "Organizacija"
+
+msgid "readstatus"
+msgstr "Status poruke"
+
+msgid "listoptions"
+msgstr "Izlistaj opcije..."
+
+msgid "listoptionstitle"
+msgstr ""
+
+msgid "mailboxlist"
+msgstr "Folderi"
+
+msgid "messagesfromto"
+msgstr "Poruke od $from do $to od ukupno $count"
+
+msgid "threadsfromto"
+msgstr "Teme od $from do $to od ukupno $count"
+
+msgid "messagenrof"
+msgstr "Poruka broj $nr od $count"
+
+msgid "fromtoshort"
+msgstr "$from – $to od ukupno $count"
+
+msgid "copy"
+msgstr "Kopiraj"
+
+msgid "move"
+msgstr "Premjesti"
+
+msgid "moveto"
+msgstr "Premjesti u..."
+
+msgid "copyto"
+msgstr "Kopiraj u..."
+
+msgid "download"
+msgstr "Preuzmi"
+
+msgid "open"
+msgstr "Otvori"
+
+msgid "showattachment"
+msgstr "Prikaži"
+
+msgid "showanyway"
+msgstr "Ipak prikaži"
+
+msgid "filename"
+msgstr "Ime datoteke"
+
+msgid "filesize"
+msgstr "Veličina datoteke"
+
+msgid "addtoaddressbook"
+msgstr "Dodaj u adresar"
+
+msgid "sun"
+msgstr "Ned"
+
+msgid "mon"
+msgstr "Pon"
+
+msgid "tue"
+msgstr "Uto"
+
+msgid "wed"
+msgstr "Sri"
+
+msgid "thu"
+msgstr "Čet"
+
+msgid "fri"
+msgstr "Pet"
+
+msgid "sat"
+msgstr "Sub"
+
+msgid "sunday"
+msgstr "Nedjelja"
+
+msgid "monday"
+msgstr "Ponedjeljak"
+
+msgid "tuesday"
+msgstr "Utorak"
+
+msgid "wednesday"
+msgstr "Srijeda"
+
+msgid "thursday"
+msgstr "Četvrtak"
+
+msgid "friday"
+msgstr "Petak"
+
+msgid "saturday"
+msgstr "Subota"
+
+msgid "jan"
+msgstr "Jan"
+
+msgid "feb"
+msgstr "Feb"
+
+msgid "mar"
+msgstr "Mar"
+
+msgid "apr"
+msgstr "Apr"
+
+msgid "may"
+msgstr "Maj"
+
+msgid "jun"
+msgstr "Jun"
+
+msgid "jul"
+msgstr "Jul"
+
+msgid "aug"
+msgstr "Avg"
+
+msgid "sep"
+msgstr "Sep"
+
+msgid "oct"
+msgstr "Okt"
+
+msgid "nov"
+msgstr "Nov"
+
+msgid "dec"
+msgstr "Dec"
+
+msgid "longjan"
+msgstr "Januar"
+
+msgid "longfeb"
+msgstr "Februar"
+
+msgid "longmar"
+msgstr "Mart"
+
+msgid "longapr"
+msgstr "April"
+
+msgid "longmay"
+msgstr "Maj"
+
+msgid "longjun"
+msgstr "Juni"
+
+msgid "longjul"
+msgstr "Juli"
+
+msgid "longaug"
+msgstr "Avgust"
+
+msgid "longsep"
+msgstr "Septembar"
+
+msgid "longoct"
+msgstr "Oktobar"
+
+msgid "longnov"
+msgstr "Novembar"
+
+msgid "longdec"
+msgstr "Decembar"
+
+msgid "today"
+msgstr "Danas"
+
+msgid "refresh"
+msgstr "Osvježi"
+
+msgid "checkmail"
+msgstr "Provjeri ima li novih poruka"
+
+msgid "compose"
+msgstr "Nova poruka"
+
+msgid "writenewmessage"
+msgstr "Kreiraj novu poruku"
+
+msgid "reply"
+msgstr "Odgovori"
+
+msgid "replytomessage"
+msgstr "Odgovori pošiljaocu"
+
+msgid "replytoallmessage"
+msgstr "Odgovori listi osoba ili pošiljaocu i svim primaocima"
+
+msgid "replyall"
+msgstr "Odgovori svima"
+
+msgid "replylist"
+msgstr "Odgovori listi"
+
+msgid "forward"
+msgstr "Proslijedi"
+
+msgid "forwardinline"
+msgstr "Proslijedi odmah"
+
+msgid "forwardattachment"
+msgstr "Proslijedi kao prilog"
+
+msgid "forwardmessage"
+msgstr "Proslijedi poruku"
+
+msgid "bouncemsg"
+msgstr ""
+
+msgid "bounce"
+msgstr ""
+
+msgid "deletemessage"
+msgstr "Obriši poruku"
+
+msgid "undeletemessage"
+msgstr ""
+
+msgid "movemessagetotrash"
+msgstr "Prebaci poruku u smeće"
+
+msgid "printmessage"
+msgstr "Odštampaj poruku"
+
+msgid "previousmessage"
+msgstr "Prikaži prethodnu poruku"
+
+msgid "firstmessage"
+msgstr "Prikaži prvu poruku"
+
+msgid "nextmessage"
+msgstr "Prikaži sljedeću poruku"
+
+msgid "lastmessage"
+msgstr "Prikaži zadnju poruku"
+
+msgid "backtolist"
+msgstr "Nazad na listu poruka"
+
+msgid "viewsource"
+msgstr "Prikaži izvornu poruku"
+
+msgid "mark"
+msgstr "Označi"
+
+msgid "markmessages"
+msgstr "Označi poruke"
+
+msgid "markread"
+msgstr "Kao pročitane"
+
+msgid "markunread"
+msgstr "Kao nepročitane"
+
+msgid "markflagged"
+msgstr "Kao važne"
+
+msgid "markunflagged"
+msgstr "Kao nevažne"
+
+msgid "markundeleted"
+msgstr ""
+
+msgid "markasread"
+msgstr ""
+
+msgid "markasunread"
+msgstr ""
+
+msgid "markasflagged"
+msgstr ""
+
+msgid "markasunflagged"
+msgstr ""
+
+msgid "moreactions"
+msgstr "Više akcija..."
+
+msgid "markallread"
+msgstr ""
+
+msgid "folders-cur"
+msgstr ""
+
+msgid "folders-sub"
+msgstr ""
+
+msgid "folders-all"
+msgstr "Svi folder"
+
+msgid "more"
+msgstr "Više"
+
+msgid "back"
+msgstr "Nazad"
+
+msgid "options"
+msgstr "Opcije"
+
+msgid "composeoptions"
+msgstr ""
+
+msgid "optionsandattachments"
+msgstr ""
+
+msgid "actions"
+msgstr ""
+
+msgid "first"
+msgstr "Prva"
+
+msgid "last"
+msgstr "Zadnja"
+
+msgid "previous"
+msgstr "Prethodno"
+
+msgid "next"
+msgstr "Sljedeće"
+
+msgid "select"
+msgstr "Odaberi"
+
+msgid "selection"
+msgstr ""
+
+msgid "all"
+msgstr "Sve"
+
+msgid "none"
+msgstr "Ništa"
+
+msgid "currpage"
+msgstr "Trenutna stranica"
+
+msgid "isread"
+msgstr "Pročitano"
+
+msgid "unread"
+msgstr "Nepročitano"
+
+msgid "flagged"
+msgstr "Važno"
+
+msgid "unflagged"
+msgstr "Nije označeno"
+
+msgid "unanswered"
+msgstr "Neodgovoreno"
+
+msgid "withattachment"
+msgstr "Sa prilogom"
+
+msgid "deleted"
+msgstr "Obrisano"
+
+msgid "undeleted"
+msgstr "Nije obrisano"
+
+msgid "replied"
+msgstr "Odgovoreno"
+
+msgid "forwarded"
+msgstr "Proslijeđeno"
+
+msgid "invert"
+msgstr "Izokreni"
+
+msgid "filter"
+msgstr "Filter"
+
+msgid "list"
+msgstr "Lista"
+
+msgid "threads"
+msgstr "Teme"
+
+msgid "expand-all"
+msgstr "Proširi sve"
+
+msgid "expand-unread"
+msgstr "Proširi nepročitane"
+
+msgid "collapse-all"
+msgstr "Zatvori sve"
+
+msgid "threaded"
+msgstr "Teme"
+
+msgid "showunread"
+msgstr ""
+
+msgid "autoexpand_threads"
+msgstr "Proširi teme poruka"
+
+msgid "do_expand"
+msgstr "sve teme"
+
+msgid "expand_only_unread"
+msgstr "samo sa nepročitanim porukama"
+
+msgid "fromto"
+msgstr "Od/Za"
+
+msgid "flag"
+msgstr "Oznaka"
+
+msgid "attachment"
+msgstr "Prilog"
+
+msgid "nonesort"
+msgstr "Ništa"
+
+msgid "sentdate"
+msgstr "Datum slanja"
+
+msgid "arrival"
+msgstr "Datum primanja"
+
+msgid "asc"
+msgstr "rastući"
+
+msgid "desc"
+msgstr "opadajući"
+
+msgid "listcolumns"
+msgstr "Lista kolona"
+
+msgid "listsorting"
+msgstr "Sortiranje kolona"
+
+msgid "listorder"
+msgstr "Raspored sortiranja"
+
+msgid "listmode"
+msgstr "Način prikaza liste"
+
+msgid "lmode"
+msgstr ""
+
+msgid "layout"
+msgstr ""
+
+msgid "layoutwidescreen"
+msgstr ""
+
+msgid "layoutdesktop"
+msgstr ""
+
+msgid "layoutlist"
+msgstr "Lista"
+
+msgid "layoutwidescreendesc"
+msgstr ""
+
+msgid "layoutdesktopdesc"
+msgstr ""
+
+msgid "layoutlistdesc"
+msgstr ""
+
+msgid "folderactions"
+msgstr "Akcije za foldere..."
+
+msgid "compact"
+msgstr "Optimiziraj"
+
+msgid "empty"
+msgstr "Isprazni"
+
+msgid "importmessages"
+msgstr "Uvezi poruke"
+
+msgid "mailimportdesc"
+msgstr ""
+
+msgid "mailimportzip"
+msgstr ""
+
+msgid "quota"
+msgstr "Zauzeće diska"
+
+msgid "unknown"
+msgstr "nepoznato"
+
+msgid "unlimited"
+msgstr "neograničeno"
+
+msgid "quotatype"
+msgstr "Vrsta kvote"
+
+msgid "quotatotal"
+msgstr "Limit"
+
+msgid "quotaused"
+msgstr "Iskorišteno"
+
+msgid "quotastorage"
+msgstr "Prostor na disku"
+
+msgid "quotamessage"
+msgstr "Broj poruka"
+
+msgid "shortheaderdate"
+msgstr ""
+
+msgid "shortheaderto"
+msgstr ""
+
+msgid "shortheaderfrom"
+msgstr ""
+
+msgid "quicksearch"
+msgstr "Brza pretraga"
+
+msgid "searchplaceholder"
+msgstr ""
+
+msgid "resetsearch"
+msgstr "Resetuj pretragu"
+
+msgid "searchmod"
+msgstr "Modifikacija pretrage"
+
+msgid "msgtext"
+msgstr "Cijela poruka"
+
+msgid "body"
+msgstr "Tijelo"
+
+msgid "type"
+msgstr "Vrsta"
+
+msgid "namex"
+msgstr "Ime"
+
+msgid "searchscope"
+msgstr "Opseg"
+
+msgid "currentfolder"
+msgstr "Trenutni folder"
+
+msgid "subfolders"
+msgstr "Ovo i podfolderi"
+
+msgid "allfolders"
+msgstr "Svi folder"
+
+msgid "searchinterval-1W"
+msgstr ""
+
+msgid "searchinterval-1M"
+msgstr ""
+
+msgid "searchinterval-1Y"
+msgstr ""
+
+msgid "searchinterval1W"
+msgstr ""
+
+msgid "searchinterval1M"
+msgstr ""
+
+msgid "searchinterval1Y"
+msgstr ""
+
+msgid "infolder"
+msgstr ""
+
+msgid "currentaddressbook"
+msgstr ""
+
+msgid "alladdressbooks"
+msgstr ""
+
+msgid "openinextwin"
+msgstr "Otvori u novom prozoru"
+
+msgid "emlsave"
+msgstr "Preuzmi (.eml)"
+
+msgid "changeformattext"
+msgstr "Prikaži kao obični tekst"
+
+msgid "changeformathtml"
+msgstr "Prikaži kao HTML"
+
+msgid "editasnew"
+msgstr "Uredi kao novo"
+
+msgid "send"
+msgstr "Pošalji"
+
+msgid "sendmessage"
+msgstr "Pošalji poruku"
+
+msgid "savemessage"
+msgstr "Sačuvaj skicu"
+
+msgid "addattachment"
+msgstr "Priloži datoteku"
+
+msgid "charset"
+msgstr "Skup znakova"
+
+msgid "editortype"
+msgstr "Vrsta urednika"
+
+msgid "returnreceipt"
+msgstr "Potvrda o prispijeću poruke"
+
+msgid "dsn"
+msgstr "Obavještenje o statusu dostave"
+
+msgid "keepformatting"
+msgstr ""
+
+msgid "mailreplyintro"
+msgstr "$date, $sender je napisao/la:"
+
+msgid "originalmessage"
+msgstr "Originalna poruka"
+
+msgid "selectimage"
+msgstr "Odaberi sliku"
+
+msgid "addimage"
+msgstr "Dodaj sliku"
+
+msgid "selectmedia"
+msgstr "Odaberi film"
+
+msgid "addmedia"
+msgstr "Dodaj film"
+
+msgid "encrypt"
+msgstr ""
+
+msgid "encryptmessage"
+msgstr ""
+
+msgid "encryptmessagemailvelope"
+msgstr ""
+
+msgid "importpubkeys"
+msgstr ""
+
+msgid "encryptedsendialog"
+msgstr ""
+
+msgid "encryptandsign"
+msgstr ""
+
+msgid "keyid"
+msgstr ""
+
+msgid "keylength"
+msgstr ""
+
+msgid "keyexpired"
+msgstr ""
+
+msgid "keyrevoked"
+msgstr ""
+
+msgid "bccinstead"
+msgstr ""
+
+msgid "addheader"
+msgstr ""
+
+msgid "insert"
+msgstr "Umetni"
+
+msgid "insertcontact"
+msgstr ""
+
+msgid "recipient"
+msgstr "Primaoc"
+
+msgid "recipientedit"
+msgstr ""
+
+msgid "editidents"
+msgstr "Uredi identitete"
+
+msgid "spellcheck"
+msgstr "Pravopis"
+
+msgid "checkspelling"
+msgstr "Provjera pravopisa"
+
+msgid "resumeediting"
+msgstr "Nastavi uređivanje"
+
+msgid "revertto"
+msgstr "Vrati na"
+
+msgid "restore"
+msgstr "Vrati"
+
+msgid "restoremessage"
+msgstr "Vratiti poruku?"
+
+msgid "ignore"
+msgstr "Zanemari"
+
+msgid "responses"
+msgstr "Odgovori"
+
+msgid "insertresponse"
+msgstr "Umetni odgovor"
+
+msgid "manageresponses"
+msgstr "Upravljaj odgovorima"
+
+msgid "newresponse"
+msgstr "Kreiraj novi odgovor"
+
+msgid "addresponse"
+msgstr "Dodaj odgovor"
+
+msgid "editresponse"
+msgstr "Uredi odgovor"
+
+msgid "editresponses"
+msgstr "Uredi odgovore"
+
+msgid "responsename"
+msgstr "Ime"
+
+msgid "responsetext"
+msgstr "Tekst odgovora"
+
+msgid "attach"
+msgstr "Priloži"
+
+msgid "attachments"
+msgstr "Prilozi"
+
+msgid "upload"
+msgstr "Dodaj"
+
+msgid "uploadprogress"
+msgstr "$percent ($current od $total)"
+
+msgid "close"
+msgstr "Zatvori"
+
+msgid "messageoptions"
+msgstr "Opcije poruke..."
+
+msgid "togglecomposeoptions"
+msgstr "(De)aktivacija opcija pisanja"
+
+msgid "attachmentrename"
+msgstr ""
+
+msgid "low"
+msgstr "Nizak"
+
+msgid "lowest"
+msgstr "Najniži"
+
+msgid "normal"
+msgstr "Normalan"
+
+msgid "high"
+msgstr "Visok"
+
+msgid "highest"
+msgstr "Najveći"
+
+msgid "nosubject"
+msgstr "(bez naslova)"
+
+msgid "showimages"
+msgstr "Prikaži slike"
+
+msgid "allow"
+msgstr ""
+
+msgid "alwaysshow"
+msgstr "Uvijek prikaži slike od $sender"
+
+msgid "alwaysallow"
+msgstr ""
+
+msgid "isdraft"
+msgstr "Ovo je skica."
+
+msgid "andnmore"
+msgstr "još $nr..."
+
+msgid "details"
+msgstr ""
+
+msgid "summary"
+msgstr ""
+
+msgid "headers"
+msgstr ""
+
+msgid "allheaders"
+msgstr ""
+
+msgid "togglemoreheaders"
+msgstr "Prikaži još zaglavlja poruka"
+
+msgid "togglefullheaders"
+msgstr "Aktiviranje izvornih zaglavlja poruka"
+
+msgid "htmltoggle"
+msgstr "HTML"
+
+msgid "plaintoggle"
+msgstr "Obični tekst"
+
+msgid "savesentmessagein"
+msgstr "Sačuvaj poslane poruke u"
+
+msgid "dontsave"
+msgstr "ne snimaj"
+
+msgid "maxuploadsize"
+msgstr "Maksimalna dozvoljena veličina datoteke je $size"
+
+msgid "addcc"
+msgstr "Dodaj Cc"
+
+msgid "addbcc"
+msgstr "Dodaj Bcc"
+
+msgid "addreplyto"
+msgstr "Dodaj odgovor na"
+
+msgid "addfollowupto"
+msgstr "Dodaj praćenje za"
+
+msgid "sendreceipt"
+msgstr ""
+
+msgid "mdnrequest"
+msgstr ""
+"Pošiljaoc ove poruke je tražio da bude obaviješten kada pročitate ovu "
+"poruku. Želite li obavijestiti pošiljaoca?"
+
+msgid "receiptread"
+msgstr "Povratnica (pročitano)"
+
+msgid "yourmessage"
+msgstr "Ovo je povratnica vaše poruke"
+
+msgid "receiptnote"
+msgstr ""
+"Napomena: Ova povratnica samo potvrđuje da je poruka bila prikazana na "
+"računaru primaoca. Nema garancija da je primaoc pročitao ili razumio sadržaj"
+" poruke."
+
+msgid "sendalwaysto"
+msgstr ""
+
+msgid "zoomin"
+msgstr ""
+
+msgid "zoomout"
+msgstr ""
+
+msgid "rotate"
+msgstr ""
+
+msgid "increaseimage"
+msgstr ""
+
+msgid "decreaseimage"
+msgstr ""
+
+msgid "rotateimage"
+msgstr ""
+
+msgid "showtools"
+msgstr ""
+
+msgid "hidetools"
+msgstr ""
+
+msgid "name"
+msgstr "Ime za prikaz"
+
+msgid "firstname"
+msgstr "Ime"
+
+msgid "surname"
+msgstr "Prezime"
+
+msgid "middlename"
+msgstr "Srednje ime"
+
+msgid "nameprefix"
+msgstr "Prefiks"
+
+msgid "namesuffix"
+msgstr "Sufiks"
+
+msgid "nickname"
+msgstr "Nadimak"
+
+msgid "jobtitle"
+msgstr "Titula"
+
+msgid "department"
+msgstr "Odjel"
+
+msgid "gender"
+msgstr "Spol"
+
+msgid "maidenname"
+msgstr "Djevojačko ime"
+
+msgid "email"
+msgstr "Email"
+
+msgid "phone"
+msgstr "Telefon"
+
+msgid "address"
+msgstr "Adresa"
+
+msgid "street"
+msgstr "Ulica"
+
+msgid "locality"
+msgstr "Grad"
+
+msgid "zipcode"
+msgstr "Poštanski broj"
+
+msgid "region"
+msgstr "Oblast"
+
+msgid "country"
+msgstr "Zemlja"
+
+msgid "birthday"
+msgstr "Rođendan"
+
+msgid "anniversary"
+msgstr "Godišnjica"
+
+msgid "website"
+msgstr "Web stranica"
+
+msgid "instantmessenger"
+msgstr "IM"
+
+msgid "notes"
+msgstr "Napomene"
+
+msgid "male"
+msgstr "Muško"
+
+msgid "female"
+msgstr "Žensko"
+
+msgid "nonbinary"
+msgstr ""
+
+msgid "othergender"
+msgstr ""
+
+msgid "manager"
+msgstr "Menadžer"
+
+msgid "assistant"
+msgstr "Pomoćnik"
+
+msgid "spouse"
+msgstr "Supružnik"
+
+msgid "allfields"
+msgstr "Sva polja"
+
+msgid "search"
+msgstr "Pretraga"
+
+msgid "searchresult"
+msgstr "Rezultati pretrage"
+
+msgid "advsearch"
+msgstr "Napredna pretraga"
+
+msgid "advanced"
+msgstr "Napredno"
+
+msgid "other"
+msgstr "Ostalo"
+
+msgid "printcontact"
+msgstr "Štampaj kontakt"
+
+msgid "qrcode"
+msgstr ""
+
+msgid "typehome"
+msgstr "Kućni broj"
+
+msgid "typework"
+msgstr "Poslovni broj"
+
+msgid "typeother"
+msgstr "Ostalo"
+
+msgid "typemobile"
+msgstr "Mobilni broj"
+
+msgid "typemain"
+msgstr "Glavni broj"
+
+msgid "typehomefax"
+msgstr "Fax kuća"
+
+msgid "typeworkfax"
+msgstr "Fax posao"
+
+msgid "typecar"
+msgstr "Automobil"
+
+msgid "typepager"
+msgstr "Pejdžer"
+
+msgid "typevideo"
+msgstr "Video"
+
+msgid "typeassistant"
+msgstr "Pomoćnik"
+
+msgid "typehomepage"
+msgstr "Početna stranica"
+
+msgid "typeblog"
+msgstr "Blog"
+
+msgid "typeprofile"
+msgstr "Profil"
+
+msgid "addfield"
+msgstr "Dodaj polje..."
+
+msgid "addcontact"
+msgstr "Dodaj kontakt"
+
+msgid "editcontact"
+msgstr "Uredi kontakt"
+
+msgid "contacts"
+msgstr "Kontakti"
+
+msgid "contactproperties"
+msgstr "Svojstva kontakta"
+
+msgid "contactnameandorg"
+msgstr "Ime i organizacija"
+
+msgid "personalinfo"
+msgstr "Lični podaci"
+
+msgid "personal"
+msgstr "Lično"
+
+msgid "contactphoto"
+msgstr "Kontakt fotografija"
+
+msgid "edit"
+msgstr "Uredi"
+
+msgid "cancel"
+msgstr "Otkaži"
+
+msgid "save"
+msgstr "Sačuvaj"
+
+msgid "delete"
+msgstr "Obriši"
+
+msgid "discard"
+msgstr "Odbaci"
+
+msgid "continue"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "rename"
+msgstr "Preimenuj"
+
+msgid "addphoto"
+msgstr "Dodaj"
+
+msgid "replacephoto"
+msgstr "Zamijeni"
+
+msgid "uploadphoto"
+msgstr "Dodaj fotografiju"
+
+msgid "choosefile"
+msgstr ""
+
+msgid "choosefiles"
+msgstr ""
+
+msgid "browse"
+msgstr ""
+
+msgid "newcontact"
+msgstr "Kreiraj novi kontakt"
+
+msgid "deletecontact"
+msgstr "Obriši odabrane kontakte"
+
+msgid "composeto"
+msgstr "Napiši email za"
+
+msgid "contactsfromto"
+msgstr "Kontakti od $from do $to od ukupno $count"
+
+msgid "print"
+msgstr "Štampaj"
+
+msgid "export"
+msgstr "Izvoz"
+
+msgid "exportall"
+msgstr "Izvezi sve"
+
+msgid "exportsel"
+msgstr "Izvezi označeno"
+
+msgid "exportvcards"
+msgstr "Izvezi kontakte u vCard formatu"
+
+msgid "newgroup"
+msgstr "Kreiraj novu grupu"
+
+msgid "addgroup"
+msgstr "Dodaj grupu"
+
+msgid "grouprename"
+msgstr "Preimenuj grupu"
+
+msgid "groupdelete"
+msgstr "Obriši grupu"
+
+msgid "groupassign"
+msgstr ""
+
+msgid "groupremove"
+msgstr ""
+
+msgid "groupremoveselected"
+msgstr "Ukloni odabrane kontakte iz grupe"
+
+msgid "uponelevel"
+msgstr "Nazad jedan nivo"
+
+msgid "previouspage"
+msgstr "Prikaži prethodnu stranicu"
+
+msgid "firstpage"
+msgstr "Prikaži prvu stranicu"
+
+msgid "nextpage"
+msgstr "Prikaži sljedeću stranicu"
+
+msgid "lastpage"
+msgstr "Prikaži zadnju stranicu"
+
+msgid "group"
+msgstr "Grupa"
+
+msgid "groups"
+msgstr "Grupe"
+
+msgid "listgroup"
+msgstr "Izlistaj članove grupe"
+
+msgid "personaladrbook"
+msgstr "Lične adrese"
+
+msgid "searchsave"
+msgstr "Sačuvaj pretragu"
+
+msgid "searchdelete"
+msgstr "Obriši pretragu"
+
+msgid "import"
+msgstr "Uvoz"
+
+msgid "importcontacts"
+msgstr "Uvoz kontakata"
+
+msgid "importfromfile"
+msgstr ""
+
+msgid "importtarget"
+msgstr "Dodaj kontakte u"
+
+msgid "importreplace"
+msgstr "Zamijeni cijeli adresar"
+
+msgid "importgroups"
+msgstr "Uvezi grupne zadatke"
+
+msgid "importgroupsall"
+msgstr "Sve (kreiraj grupe ako je potrebno)"
+
+msgid "importgroupsexisting"
+msgstr "Samo za postojeće grupe"
+
+msgid "importdesc"
+msgstr ""
+
+msgid "importmapdesc"
+msgstr ""
+
+msgid "fieldnotmapped"
+msgstr ""
+
+msgid "skipheader"
+msgstr ""
+
+msgid "done"
+msgstr "Završeno"
+
+msgid "birth_day"
+msgstr ""
+
+msgid "birth_month"
+msgstr ""
+
+msgid "birth_year"
+msgstr ""
+
+msgid "settingsfor"
+msgstr "Podešavanja za"
+
+msgid "about"
+msgstr "Informacije"
+
+msgid "preferences"
+msgstr "Podešavanja"
+
+msgid "userpreferences"
+msgstr "Korisničke opcije"
+
+msgid "editpreferences"
+msgstr "Uredi korisničke opcije"
+
+msgid "identities"
+msgstr "Identiteti"
+
+msgid "manageidentities"
+msgstr "Upravljanje identitetima"
+
+msgid "newidentity"
+msgstr "Kreiraj novi identitet"
+
+msgid "addidentity"
+msgstr "Dodaj identitet"
+
+msgid "editidentity"
+msgstr "Uredi identitet"
+
+msgid "identityencryption"
+msgstr ""
+
+msgid "preferhtml"
+msgstr "Prikaži HTML"
+
+msgid "defaultcharset"
+msgstr "Glavni skup znakova"
+
+msgid "htmlmessage"
+msgstr "HTML poruke"
+
+msgid "messagepart"
+msgstr "Dio"
+
+msgid "digitalsig"
+msgstr "Digitalni potpis"
+
+msgid "dateformat"
+msgstr "Format datuma"
+
+msgid "timeformat"
+msgstr "Format vremena"
+
+msgid "prettydate"
+msgstr "Formatirani datum"
+
+msgid "setdefault"
+msgstr "Postavi kao glavno"
+
+msgid "autodetect"
+msgstr "Automatski"
+
+msgid "language"
+msgstr "Jezik"
+
+msgid "timezone"
+msgstr "Vremenska zona"
+
+msgid "pagesize"
+msgstr "Redova po stranici"
+
+msgid "signature"
+msgstr "Potpis"
+
+msgid "dstactive"
+msgstr "Ljetno računanje vremena"
+
+msgid "showinextwin"
+msgstr "Otvori poruku u novom prozoru"
+
+msgid "composeextwin"
+msgstr "Napiši u novom prozor"
+
+msgid "htmleditor"
+msgstr "Piši HTML poruke"
+
+msgid "htmlonreply"
+msgstr "samo kao odgovor na HTML poruke"
+
+msgid "htmlonreplyandforward"
+msgstr "prilikom prosljeđivanja ili odgovaranja na HTML poruku"
+
+msgid "htmlsignature"
+msgstr "HTML potpis"
+
+msgid "showemail"
+msgstr "Prikaži email adresu sa imenom"
+
+msgid "previewpane"
+msgstr "Prikaži pregled poruke"
+
+msgid "skin"
+msgstr "Skin interfejsa"
+
+msgid "logoutclear"
+msgstr "Očisti smeće prilikom odjavljivanja"
+
+msgid "logoutcompact"
+msgstr "Optimiziraj sanduče prilikom odjavljivanja"
+
+msgid "uisettings"
+msgstr "Korisnički interfejs"
+
+msgid "serversettings"
+msgstr "Postavke servera"
+
+msgid "mailboxview"
+msgstr "Pregled emaila"
+
+msgid "mdnrequests"
+msgstr "Prilikom zahtjeva za povratnicu"
+
+msgid "askuser"
+msgstr "pitaj korisnika"
+
+msgid "autosend"
+msgstr "pošalji povratnicu"
+
+msgid "autosendknown"
+msgstr "pošalji povratnicu mojim kontaktima, u suprotnom me pitaj"
+
+msgid "autosendknownignore"
+msgstr "pošalji povratnicu mojim kontaktima, u suprotnom zanemari"
+
+msgid "autosendtrusted"
+msgstr ""
+
+msgid "autosendtrustedignore"
+msgstr ""
+
+msgid "ignorerequest"
+msgstr "Zanemari zahtjev"
+
+msgid "readwhendeleted"
+msgstr "Označi poruku kao pročitanu pri brisanju"
+
+msgid "flagfordeletion"
+msgstr "Označi poruku za brisanje umjesto brisanja"
+
+msgid "skipdeleted"
+msgstr "Ne prikazuj obrisane poruke"
+
+msgid "deletealways"
+msgstr "Ako premještanje poruka u smeće ne uspije, odmah ih obriši"
+
+msgid "deletejunk"
+msgstr "Direktno obriši poruke u smeću"
+
+msgid "showremoteimages"
+msgstr "Prikaži vanjske slike u porukama"
+
+msgid "allowremoteresources"
+msgstr ""
+
+msgid "fromknownsenders"
+msgstr "od poznatih pošiljatelja"
+
+msgid "fromtrustedsenders"
+msgstr ""
+
+msgid "frommycontacts"
+msgstr ""
+
+msgid "always"
+msgstr "uvijek"
+
+msgid "alwaysbutplain"
+msgstr ""
+
+msgid "showinlineimages"
+msgstr "Prikaži priložene slike ispod poruke"
+
+msgid "autosavedraft"
+msgstr "Automatski sačuvaj skicu"
+
+msgid "everynminutes"
+msgstr "svakih $n minuta"
+
+msgid "refreshinterval"
+msgstr "Osvježi (provjeri ima li novih poruka itd.)"
+
+msgid "never"
+msgstr "nikad"
+
+msgid "immediately"
+msgstr "odmah"
+
+msgid "messagesdisplaying"
+msgstr "Prikaz poruka"
+
+msgid "messagescomposition"
+msgstr "Pisanje poruka"
+
+msgid "mimeparamfolding"
+msgstr "Nazivi priloga"
+
+msgid "2231folding"
+msgstr "Puni RFC 2231 (Thunderbird)"
+
+msgid "miscfolding"
+msgstr "RFC 2047/2231 (MS Outlook)"
+
+msgid "2047folding"
+msgstr "Puni RFC 2047 (ostalo)"
+
+msgid "force7bit"
+msgstr "Koristi MIME kodiranje za 8-bitne znakove"
+
+msgid "savelocalstorage"
+msgstr "Sačuvaj u lokalno skladište browsera (privremeno)"
+
+msgid "advancedoptions"
+msgstr "Napredne opcije"
+
+msgid "toggleadvancedoptions"
+msgstr "(De)aktivacija naprednih opcija"
+
+msgid "focusonnewmessage"
+msgstr "Fokusiraj prozor preglednika na novu poruku"
+
+msgid "checkallfolders"
+msgstr "Provjeri ima li novih poruka u svim folderima"
+
+msgid "displaynext"
+msgstr ""
+
+msgid "defaultfont"
+msgstr "Osnovni font za HTML poruke"
+
+msgid "mainoptions"
+msgstr "Glavne opcije"
+
+msgid "browseroptions"
+msgstr "Opcije preglednika"
+
+msgid "section"
+msgstr "Sekcija"
+
+msgid "maintenance"
+msgstr "Održavanje"
+
+msgid "newmessage"
+msgstr "Nova poruka"
+
+msgid "signatureoptions"
+msgstr "Opcija potpisa"
+
+msgid "whenreplying"
+msgstr "Prilikom odgovora"
+
+msgid "replyempty"
+msgstr "ne citiraj originalnu poruku"
+
+msgid "replytopposting"
+msgstr "započni novu poruku iznad originala"
+
+msgid "replytoppostingnoindent"
+msgstr ""
+
+msgid "replybottomposting"
+msgstr "započni novu poruku ispod originala"
+
+msgid "replyremovesignature"
+msgstr "Prilikom odgovaranja na poruku, ukloni originalni potpis iz poruke"
+
+msgid "autoaddsignature"
+msgstr "Automatski dodaj potpis"
+
+msgid "newmessageonly"
+msgstr "samo za nove poruke"
+
+msgid "replyandforwardonly"
+msgstr "samo za odgovore i prosljeđivanja"
+
+msgid "insertsignature"
+msgstr "Umetni potpis"
+
+msgid "sigbelow"
+msgstr ""
+
+msgid "sigseparator"
+msgstr ""
+
+msgid "automarkread"
+msgstr ""
+
+msgid "afternseconds"
+msgstr "nakon $n sekundi"
+
+msgid "reqmdn"
+msgstr "Uvijek zahtjevaj povratnicu"
+
+msgid "reqdsn"
+msgstr "Uvijek zahtjevaj obavijest o statusu dostave"
+
+msgid "alwayskeepformatting"
+msgstr ""
+
+msgid "replysamefolder"
+msgstr "Sačuvaj odgovore u folder poruke na osnovu koje se piše odgovor"
+
+msgid "defaultabook"
+msgstr "Osnovni adresar"
+
+msgid "autocompletesingle"
+msgstr "Preskoči alternativne email adrese prilikom automatskog popunjavanja"
+
+msgid "listnamedisplay"
+msgstr "Izlistaj kontakte kao"
+
+msgid "contactformmode"
+msgstr ""
+
+msgid "privatemode"
+msgstr ""
+
+msgid "businessmode"
+msgstr ""
+
+msgid "collectedaddresses"
+msgstr ""
+
+msgid "collectedrecipients"
+msgstr ""
+
+msgid "collectedrecipientsopt"
+msgstr ""
+
+msgid "collectedsendersopt"
+msgstr ""
+
+msgid "trustedsenders"
+msgstr ""
+
+msgid "spellcheckbeforesend"
+msgstr "Provjeri pravopis prije slanja poruke"
+
+msgid "spellcheckoptions"
+msgstr "Opcije provjere pravopisa"
+
+msgid "spellcheckignoresyms"
+msgstr "Zanemari riječi sa simbolima"
+
+msgid "spellcheckignorenums"
+msgstr "Zanemari riječi sa brojevima"
+
+msgid "spellcheckignorecaps"
+msgstr "Zanemari riječi napisane velikim slovima"
+
+msgid "addtodict"
+msgstr "Dodaj u rječnik"
+
+msgid "editoroptions"
+msgstr ""
+
+msgid "enableautolink"
+msgstr ""
+
+msgid "mailtoprotohandler"
+msgstr "Registruj upravljač protokola za mailto: linkovi"
+
+msgid "standardwindows"
+msgstr "Tretiraj popup-ove kao standardne prozore"
+
+msgid "forwardmode"
+msgstr "Prosljeđivanje poruka"
+
+msgid "inline"
+msgstr "u istom redu"
+
+msgid "asattachment"
+msgstr "kao prilog"
+
+msgid "replyallmode"
+msgstr "Zadana radnja za [Odgovori svima] dugme"
+
+msgid "replyalldefault"
+msgstr "odgovori svima"
+
+msgid "replyalllist"
+msgstr "odgovori samo listi mailova (ukoliko je pronađena)"
+
+msgid "allmessages"
+msgstr "sve poruke"
+
+msgid "olderxdays"
+msgstr ""
+
+msgid "folder"
+msgstr "Folder"
+
+msgid "folders"
+msgstr "Folderi"
+
+msgid "foldername"
+msgstr "Naziv foldera"
+
+msgid "subscribed"
+msgstr "Pretplaćen"
+
+msgid "messagecount"
+msgstr "Poruke"
+
+msgid "create"
+msgstr "Kreiraj"
+
+msgid "createfolder"
+msgstr "Kreiraj novi folder"
+
+msgid "managefolders"
+msgstr "Upravljanje folderima"
+
+msgid "specialfolders"
+msgstr "Specijalni folder"
+
+msgid "properties"
+msgstr "Svojstva"
+
+msgid "folderproperties"
+msgstr "Svojstva foldera"
+
+msgid "parentfolder"
+msgstr "Matični folder"
+
+msgid "location"
+msgstr "Lokacija"
+
+msgid "info"
+msgstr "Informacije"
+
+msgid "getfoldersize"
+msgstr "Kliknite da biste dobili informaciju o veličini foldera"
+
+msgid "changesubscription"
+msgstr "Kliknite da promijenite pretplatu"
+
+msgid "foldertype"
+msgstr "Vrsta foldera"
+
+msgid "personalfolder"
+msgstr "Privatni folder"
+
+msgid "otherfolder"
+msgstr "Folder drugog korisnika"
+
+msgid "sharedfolder"
+msgstr "Javni folder"
+
+msgid "findfolders"
+msgstr "Pronađi foldere"
+
+msgid "findcontacts"
+msgstr ""
+
+msgid "findmail"
+msgstr ""
+
+msgid "namespace.personal"
+msgstr "Lično"
+
+msgid "namespace.other"
+msgstr "Ostali korisnici"
+
+msgid "namespace.shared"
+msgstr "Dijeljeno"
+
+msgid "dualuselabel"
+msgstr ""
+
+msgid "dualusemail"
+msgstr ""
+
+msgid "dualusefolder"
+msgstr ""
+
+msgid "generate"
+msgstr ""
+
+msgid "encryptioncreatekey"
+msgstr ""
+
+msgid "openmailvelopesettings"
+msgstr ""
+
+msgid "encryptionprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryptionnoprivkeysinmailvelope"
+msgstr ""
+
+msgid "encryption"
+msgstr ""
+
+msgid "mailvelopeoptions"
+msgstr ""
+
+msgid "mailvelopemainkeyring"
+msgstr ""
+
+msgid "mailvelopenotfound"
+msgstr ""
+
+msgid "mailvelopeenable"
+msgstr ""
+
+msgid "sortby"
+msgstr "Sortiraj po"
+
+msgid "sortasc"
+msgstr "Sortiraj uzlazno"
+
+msgid "sortdesc"
+msgstr "Sortiraj silazno"
+
+msgid "undo"
+msgstr "Nazad"
+
+msgid "installedplugins"
+msgstr "Instalirani plugini"
+
+msgid "plugin"
+msgstr "Plugin"
+
+msgid "version"
+msgstr "Verzija"
+
+msgid "source"
+msgstr "Izvorni kod"
+
+msgid "destination"
+msgstr ""
+
+msgid "license"
+msgstr "Licenca"
+
+msgid "skinauthor"
+msgstr ""
+
+msgid "support"
+msgstr "Podrška"
+
+msgid "savedsearches"
+msgstr ""
+
+msgid "dateformatY"
+msgstr ""
+
+msgid "dateformaty"
+msgstr ""
+
+msgid "dateformatm"
+msgstr ""
+
+msgid "dateformatd"
+msgstr ""
+
+msgid "dateformatj"
+msgstr ""
+
+msgid "dateformatn"
+msgstr ""
+
+msgid "B"
+msgstr "B"
+
+msgid "KB"
+msgstr "KB"
+
+msgid "MB"
+msgstr "MB"
+
+msgid "GB"
+msgstr "GB"
+
+msgid "unicode"
+msgstr "Unikod"
+
+msgid "english"
+msgstr "engleski"
+
+msgid "westerneuropean"
+msgstr "Zapadna Evropa"
+
+msgid "easterneuropean"
+msgstr "Istočna Evropa"
+
+msgid "southeasterneuropean"
+msgstr "Jugoistočna Evropa"
+
+msgid "baltic"
+msgstr "Baltički"
+
+msgid "cyrillic"
+msgstr "ćirilični"
+
+msgid "arabic"
+msgstr "arapski"
+
+msgid "greek"
+msgstr "grčki"
+
+msgid "hebrew"
+msgstr "hebrejski"
+
+msgid "turkish"
+msgstr "turski"
+
+msgid "nordic"
+msgstr "Nordijski"
+
+msgid "thai"
+msgstr "tajlandski"
+
+msgid "celtic"
+msgstr "keltski"
+
+msgid "vietnamese"
+msgstr "vijetnamski"
+
+msgid "japanese"
+msgstr "japanski"
+
+msgid "korean"
+msgstr "korejski"
+
+msgid "chinese"
+msgstr "kineski"
+
+msgid "arialabeltopnav"
+msgstr "Kontrola prozora"
+
+msgid "arialabeltasknav"
+msgstr "Zadaci aplikacije"
+
+msgid "arialabeltoolbar"
+msgstr "Alatna traka aplikacije"
+
+msgid "arialabellistnav"
+msgstr ""
+
+msgid "arialabelactivetask"
+msgstr "Aktivni zadatak"
+
+msgid "arialabelmessagessearchfilter"
+msgstr "Filter listinga emaila"
+
+msgid "arialabelmailsearchform"
+msgstr "Obrazac za pretragu email poruka"
+
+msgid "arialabelcontactsearchform"
+msgstr "Obrazac za pretragu kontakata"
+
+msgid "arialabelmailquicksearchbox"
+msgstr "Unos za email pretragu"
+
+msgid "arialabelquicksearchbox"
+msgstr "Unos za pretragu"
+
+msgid "arialabelfoldersearchfilter"
+msgstr "Fitr listi foldera"
+
+msgid "arialabelfoldersearchform"
+msgstr "Obrazac za pretragu foldera"
+
+msgid "arialabelfolderlist"
+msgstr "Odabir email foldera"
+
+msgid "arialabelmessagelist"
+msgstr "Listing email poruka"
+
+msgid "arialabelmailpreviewframe"
+msgstr "Pregled poruke"
+
+msgid "arialabelmailboxmenu"
+msgstr "Meni sa akcijama za foldere"
+
+msgid "arialabellistselectmenu"
+msgstr "Meni za odabir listinga"
+
+msgid "arialabelthreadselectmenu"
+msgstr "Meni za listing tema"
+
+msgid "arialabelmessagelistoptions"
+msgstr "Prikaz listi poruka i opcije sortiranja"
+
+msgid "arialabelmailimportdialog"
+msgstr "Dijalog za uvoz poruke"
+
+msgid "arialabelmessagenav"
+msgstr "Navigacija za poruku"
+
+msgid "arialabelmessagebody"
+msgstr "Tijelo poruke"
+
+msgid "arialabelmessageactions"
+msgstr "Akcije poruke"
+
+msgid "arialabelcontactquicksearch"
+msgstr "Obrazac za pretragu kontakata"
+
+msgid "arialabelcontactsearchbox"
+msgstr "Unos za pretragu kontakata"
+
+msgid "arialabelmessageheaders"
+msgstr "Zaglavlja poruke"
+
+msgid "arialabelforwardingoptions"
+msgstr "Opcije prosljeđivanja"
+
+msgid "arialabelreplyalloptions"
+msgstr "Opcije odgovora svima"
+
+msgid "arialabelmoremessageactions"
+msgstr "Više akcija za poruke"
+
+msgid "arialabelmorecontactactions"
+msgstr ""
+
+msgid "arialabelmarkmessagesas"
+msgstr "Označi odabrane poruke kao..."
+
+msgid "arialabelcomposeoptions"
+msgstr "Opcije pisanja"
+
+msgid "arialabelresponsesmenu"
+msgstr "Meni za odbačene odgovore"
+
+msgid "arialabelattachmentuploadform"
+msgstr "Obrazac za dodavanje priloga"
+
+msgid "arialabelattachmentmenu"
+msgstr ""
+
+msgid "arialabelmailtomenu"
+msgstr ""
+
+msgid "arialabelattachmentpreview"
+msgstr "Pregled priloga"
+
+msgid "ariasummarycomposecontacts"
+msgstr "Lista kontakata i grupi za primaoce"
+
+msgid "arialabelcontactexportoptions"
+msgstr "Opcije izvoza kontakata"
+
+msgid "arialabelabookgroupoptions"
+msgstr "Opcije adresara/grupe"
+
+msgid "arialabelpreferencesform"
+msgstr "Obrazac podešavanja"
+
+msgid "arialabelidentityeditfrom"
+msgstr "Obrazac za uređivanje identiteta"
+
+msgid "arialabelresponseeditfrom"
+msgstr "Obrazac za uređivanje odgovora"
+
+msgid "arialabelsearchterms"
+msgstr "Pojam za pretragu"
+
+msgid "arialabeldropactionmenu"
+msgstr ""
+
+msgid "arialabelheadersmenu"
+msgstr ""
+
+msgid "arialabelimagetools"
+msgstr ""
+
+msgid "helplistnavigation"
+msgstr "Lista navigacije pomoću tastature"
+
+msgid "helplistkeyboardnavigation"
+msgstr ""
+"Strelice gore/dole: Pomjeri fokusirani red/selekciju.\n"
+"Razmak: Odaberi fokusirani red.\n"
+"Shift + gore/dole: Odaberi dodatni red iznad/ispod.\n"
+"Ctrl + razmak: Dodaj fokusirani red u selekciju/ukloni iz selekcije."
+
+msgid "helplistkeyboardnavmessages"
+msgstr ""
+"Strelice desno/lijevo: proširi/zatvori temu temu emaila (samo u modu za teme).\n"
+"Enter: Otvori odabranu/fokusiranu poruku.\n"
+"Delete: Premjesti odabranu poruku u Smeće."
+
+msgid "helplistkeyboardnavcontacts"
+msgstr "Enter: Otvora odabrani/fokusirani kontakt."
+
+msgid "archivefolder"
+msgstr ""
+
+msgid "settingstitle"
+msgstr ""
+
+msgid "archivetype"
+msgstr ""
+
+msgid "archivetypeyear"
+msgstr ""
+
+msgid "archivetypemonth"
+msgstr ""
+
+msgid "archivetypetbmonth"
+msgstr ""
+
+msgid "archivetypefolder"
+msgstr ""
+
+msgid "archivetypefolderyear"
+msgstr ""
+
+msgid "archivetypefoldermonth"
+msgstr ""
+
+msgid "archivetypesender"
+msgstr ""
+
+msgid "readonarchive"
+msgstr ""
+
+msgid "messages.errortitle"
+msgstr "Desila se greška!"
+
+msgid "messages.loginfailed"
+msgstr "Prijava nije uspjela."
+
+msgid "messages.cookiesdisabled"
+msgstr "Vaš preglednik ne prihvata kolačiće."
+
+msgid "messages.sessionerror"
+msgstr "Vaša sesija je neispravna ili je istekla."
+
+msgid "messages.cookiesmismatch"
+msgstr ""
+
+msgid "messages.storageerror"
+msgstr "Neuspješna konekcija na IMAP server"
+
+msgid "messages.servererror"
+msgstr "Serverska greška!"
+
+msgid "messages.servererrormsg"
+msgstr "Serverska greška: $msg"
+
+msgid "messages.accountlocked"
+msgstr ""
+
+msgid "messages.connerror"
+msgstr "Greška u povezivanju (Nije moguće kontaktirati server)!"
+
+msgid "messages.dberror"
+msgstr "Greška u bazi podataka!"
+
+msgid "messages.dbconnerror"
+msgstr ""
+
+msgid "messages.windowopenerror"
+msgstr "Popup prozor je blokiran!"
+
+msgid "messages.requesttimedout"
+msgstr "Zahtjev je istekao"
+
+msgid "messages.errorreadonly"
+msgstr "Nije moguće izvršiti operaciju. Folder je samo za čitanje."
+
+msgid "messages.errornoperm"
+msgstr "Nije moguće izvršiti operaciju. Pristup je odbijen."
+
+msgid "messages.erroroverquota"
+msgstr "Nije moguće izvršiti operaciju. Nema slobodnog prostora."
+
+msgid "messages.erroroverquotadelete"
+msgstr "Nema slobodnog prostora. Pritisnite SHIFT+DEL da obrišete poruku."
+
+msgid "messages.invalidrequest"
+msgstr "Neispravan zahtjev! Podaci nisu sačuvani."
+
+msgid "messages.invalidhost"
+msgstr "Neispravno ime servera."
+
+msgid "messages.nomessagesfound"
+msgstr "Nema poruka u ovom sandučetu."
+
+msgid "messages.loggedout"
+msgstr ""
+
+msgid "messages.mailboxempty"
+msgstr "Sanduče je prazno"
+
+msgid "messages.nomessages"
+msgstr "Nema poruka"
+
+msgid "messages.refreshing"
+msgstr "Osvježavam..."
+
+msgid "messages.loading"
+msgstr "Učitavanje..."
+
+msgid "messages.uploading"
+msgstr "Dodajem datoteku..."
+
+msgid "messages.attaching"
+msgstr ""
+
+msgid "messages.uploadingmany"
+msgstr "Dodajem datoteke..."
+
+msgid "messages.loadingdata"
+msgstr "Učitavanje podataka..."
+
+msgid "messages.checkingmail"
+msgstr "Provjeram ima li novih poruka..."
+
+msgid "messages.sendingmessage"
+msgstr "Šaljem poruku..."
+
+msgid "messages.messagesent"
+msgstr "Poruka je uspješno poslana."
+
+msgid "messages.savingmessage"
+msgstr "Poruka se snima..."
+
+msgid "messages.messagesaved"
+msgstr "Poruka je uspješno sačuvana u skicama."
+
+msgid "messages.successfullysaved"
+msgstr "Uspješno sačuvano."
+
+msgid "messages.savingresponse"
+msgstr "Snimam teksta odgovora..."
+
+msgid "messages.deleteresponseconfirm"
+msgstr "Da li zaista želite obrisati tekst ovog odgovora?"
+
+msgid "messages.nocontactselected"
+msgstr ""
+
+msgid "messages.addedsuccessfully"
+msgstr "Kontakt uspješno dodan u adresar."
+
+msgid "messages.contactexists"
+msgstr ""
+
+msgid "messages.contactnameexists"
+msgstr "Kontakt s tim imenom već postoji."
+
+msgid "messages.blockedimages"
+msgstr ""
+"Zbog zaštite privatnosti, slike sa drugih servera su blokirane u ovoj "
+"poruci."
+
+msgid "messages.blockedresources"
+msgstr ""
+
+msgid "messages.suspiciousemail"
+msgstr ""
+
+msgid "messages.bccemail"
+msgstr ""
+
+msgid "messages.bouncehint"
+msgstr ""
+
+msgid "messages.encryptedmessage"
+msgstr "Ova poruka je šifrirana i nije je moguće prikazati. Žao nam je!"
+
+msgid "messages.externalmessagedecryption"
+msgstr ""
+
+msgid "messages.nopubkeyfor"
+msgstr ""
+
+msgid "messages.nopubkeyforsender"
+msgstr ""
+
+msgid "messages.encryptnoattachments"
+msgstr ""
+
+msgid "messages.searchpubkeyservers"
+msgstr ""
+
+msgid "messages.encryptpubkeysfound"
+msgstr ""
+
+msgid "messages.keyservererror"
+msgstr ""
+
+msgid "messages.keyimportsuccess"
+msgstr ""
+
+msgid "messages.nocontactsfound"
+msgstr "Adresar je prazan."
+
+msgid "messages.contactnotfound"
+msgstr "Traženi kontakt nije pronađen."
+
+msgid "messages.contactsearchonly"
+msgstr ""
+
+msgid "messages.sendingfailed"
+msgstr "Greška pri slanju poruke."
+
+msgid "messages.senttooquickly"
+msgstr "Molimo sačekajte $sec sekundi prije slanja ove poruke."
+
+msgid "messages.errorsavingsent"
+msgstr "Desila se greška pri snimanju poslane poruke."
+
+msgid "messages.errorsaving"
+msgstr "Desila se greška pri snimanju."
+
+msgid "messages.errormoving"
+msgstr "Nije moguće premjestiti poruke."
+
+msgid "messages.errorcopying"
+msgstr "Nije moguće kopirati poruke."
+
+msgid "messages.errordeleting"
+msgstr "Nije moguće obrisati poruke."
+
+msgid "messages.errormarking"
+msgstr "Nije moguće označiti poruke."
+
+msgid "messages.alerttitle"
+msgstr ""
+
+msgid "messages.confirmationtitle"
+msgstr ""
+
+msgid "messages.deletecontactconfirm"
+msgstr "Da li zaista želite obrisati označene kontakte?"
+
+msgid "messages.deletegroupconfirm"
+msgstr "Da li zaista želite obrisati označenu grupu?"
+
+msgid "messages.deletemessagesconfirm"
+msgstr "Da li zaista želite obrisati označene poruke?"
+
+msgid "messages.deletefolderconfirm"
+msgstr "Da li zaista želite obrisati ovaj folder?"
+
+msgid "messages.movefolderconfirm"
+msgstr ""
+
+msgid "messages.purgefolderconfirm"
+msgstr "Da li zaista želite obrisati sve poruke u ovom folderu?"
+
+msgid "messages.contactdeleting"
+msgstr "Brišem kontakte..."
+
+msgid "messages.groupdeleting"
+msgstr "Brišem grupu..."
+
+msgid "messages.folderdeleting"
+msgstr "Brišem folder..."
+
+msgid "messages.foldermoving"
+msgstr "Premještam folder..."
+
+msgid "messages.foldersubscribing"
+msgstr "Pretplaćujem se na folder..."
+
+msgid "messages.folderunsubscribing"
+msgstr "Uklanjam pretplatu za folder..."
+
+msgid "messages.formincomplete"
+msgstr "Obrazac nije popunjen u cjelosti."
+
+msgid "messages.noemailwarning"
+msgstr "Molimo vas da upišete ispravnu email adresu."
+
+msgid "messages.nonamewarning"
+msgstr "Molimo vas da upišete ime."
+
+msgid "messages.nopagesizewarning"
+msgstr "Molimo vas da upišete veličinu stranice."
+
+msgid "messages.nosenderwarning"
+msgstr ""
+
+msgid "messages.recipientsadded"
+msgstr ""
+
+msgid "messages.norecipientwarning"
+msgstr "Molimo vas da upišete barem jednog primaoca."
+
+msgid "messages.disclosedrecipwarning"
+msgstr ""
+
+msgid "messages.disclosedreciptitle"
+msgstr ""
+
+msgid "messages.nosubjectwarning"
+msgstr "Polje 'Naslov' je prazno. Želite li unijeti naslov?"
+
+msgid "messages.nosubjecttitle"
+msgstr ""
+
+msgid "messages.nobodywarning"
+msgstr "Želite li poslati poruku bez teksta?"
+
+msgid "messages.notsentwarning"
+msgstr ""
+
+msgid "messages.restoresavedcomposedata"
+msgstr ""
+"Pronađena je prethodno napisana poruka koja nije "
+"poslana..\\n\\nTema:$subject\\nSnimljeno: $date\\n\\nŽelite li vratiti ovu "
+"poruku?"
+
+msgid "messages.nosearchname"
+msgstr "Molimo vas da upišete ime kontakta ili email adresu."
+
+msgid "messages.notuploadedwarning"
+msgstr ""
+"Neki od priloga još nisu dodani na server. Molimo vas da sačekate ili da "
+"otkažete dodavanje."
+
+msgid "messages.searchsuccessful"
+msgstr "Broj pronađenih poruka: $nr"
+
+msgid "messages.contactsearchsuccessful"
+msgstr "$nr kontakata je pronađeno."
+
+msgid "messages.searchnomatch"
+msgstr "Traženi pojam nije pronađen ni u jednoj poruci."
+
+msgid "messages.searching"
+msgstr "Pretražujem..."
+
+msgid "messages.checking"
+msgstr "Provjeravam..."
+
+msgid "messages.stillsearching"
+msgstr "I dalje pretražujem..."
+
+msgid "messages.nospellerrors"
+msgstr "Pravopisne greške nisu pronađene."
+
+msgid "messages.folderdeleted"
+msgstr "Folder je uspješno obrisan."
+
+msgid "messages.foldersubscribed"
+msgstr "Uspješno ste pretplaćeni na folder."
+
+msgid "messages.folderunsubscribed"
+msgstr "Pretplata na folder je uspješno ukinuta."
+
+msgid "messages.folderpurged"
+msgstr ""
+
+msgid "messages.folderexpunged"
+msgstr ""
+
+msgid "messages.deletedsuccessfully"
+msgstr "Brisanje uspješno."
+
+msgid "messages.converting"
+msgstr "Uklanjam formatiranje..."
+
+msgid "messages.messageopenerror"
+msgstr "Nije moguće učitati poruku sa servera."
+
+msgid "messages.filelinkerror"
+msgstr ""
+
+msgid "messages.fileuploaderror"
+msgstr "Dodavanje datoteke nije uspjelo."
+
+msgid "messages.csvfilemismatch"
+msgstr ""
+
+msgid "messages.filesizeerror"
+msgstr "Datoteka je prevelika. Maksimalna veličina je $size."
+
+msgid "messages.filecounterror"
+msgstr ""
+
+msgid "messages.msgsizeerror"
+msgstr ""
+
+msgid "messages.msgsizeerrorfwd"
+msgstr ""
+
+msgid "messages.copysuccess"
+msgstr "Uspješno kopirano $nr kontakata."
+
+msgid "messages.movesuccess"
+msgstr "Uspješno premješteno $nr kontakata."
+
+msgid "messages.copyerror"
+msgstr "Nije moguće kopirati kontakte."
+
+msgid "messages.moveerror"
+msgstr "Nije moguće premjestiti kontakte."
+
+msgid "messages.sourceisreadonly"
+msgstr "Ovaj izvor adresa je samo za čitanje."
+
+msgid "messages.errorsavingcontact"
+msgstr "Nije moguće sačuvati kontakt adresu."
+
+msgid "messages.movingmessage"
+msgstr "Premještam poruke..."
+
+msgid "messages.copyingmessage"
+msgstr "Kopiram poruke..."
+
+msgid "messages.copyingcontact"
+msgstr "Kopiram kontakte..."
+
+msgid "messages.movingcontact"
+msgstr "Premještam kontakte..."
+
+msgid "messages.deletingmessage"
+msgstr "Brišem poruke..."
+
+msgid "messages.markingmessage"
+msgstr "Označavam poruke..."
+
+msgid "messages.addingmember"
+msgstr "Dodajem kontakte u grupu..."
+
+msgid "messages.removingmember"
+msgstr "Uklanjam kontakte iz grupe..."
+
+msgid "messages.receiptsent"
+msgstr "Potvrda o primitku je uspješno poslana."
+
+msgid "messages.errorsendingreceipt"
+msgstr "Nije moguće poslati potvrdu."
+
+msgid "messages.deleteidentityconfirm"
+msgstr "Da li zaista želite obrisati ovaj identitet?"
+
+msgid "messages.nodeletelastidentity"
+msgstr "Ne možete obrisati jedini identitet."
+
+msgid "messages.forbiddencharacter"
+msgstr "Naziv foldera sadrži nedozvoljeni znak."
+
+msgid "messages.selectimportfile"
+msgstr "Molimo vas da odaberete datoteku za dodavanje."
+
+msgid "messages.addresswriterror"
+msgstr "U odabrani adresar nije moguće zapisivati."
+
+msgid "messages.contactaddedtogroup"
+msgstr "Kontakti su uspješno dodani u ovu grupu."
+
+msgid "messages.contactremovedfromgroup"
+msgstr "Kontakti su uspješno uklonjeni iz ove grupe."
+
+msgid "messages.nogroupassignmentschanged"
+msgstr "Grupni zadaci nisu mijenjani."
+
+msgid "messages.importwait"
+msgstr "Uvoz u toku, molimo sačekajte..."
+
+msgid "messages.importformaterror"
+msgstr ""
+"Uvoz nije uspio! Dodana datoteka nije u ispravnom formatu za uvoz podataka."
+
+msgid "messages.importconfirm"
+msgstr "<b>Uspješno je uvezeno $inserted kontakata</b>"
+
+msgid "messages.importconfirmskipped"
+msgstr ""
+
+msgid "messages.importconfirminvalid"
+msgstr ""
+
+msgid "messages.importconfirmerrors"
+msgstr ""
+
+msgid "messages.importmessagesuccess"
+msgstr "Uspješno uvezeno $nr poruka"
+
+msgid "messages.importmessageerror"
+msgstr "Uvoz nije uspio! Dodana datoteke nije ispravna datoteka sa porukama"
+
+msgid "messages.opnotpermitted"
+msgstr "Operacija nije dozvoljena!"
+
+msgid "messages.nofromaddress"
+msgstr ""
+
+msgid "messages.editorwarning"
+msgstr ""
+"Promjenom uređivača biste mogli izgubiti formatiranje teksta. Želite li "
+"nastaviti?"
+
+msgid "messages.httpreceivedencrypterror"
+msgstr ""
+"Dogodila se fatalna konfiguracijska greška. Odmah kontaktirajte "
+"administratora. <b>Vaša poruka se ne poslati.</b>"
+
+msgid "messages.smtpconnerror"
+msgstr "SMTP greška ($code): Veza sa serverom nije uspostavljena."
+
+msgid "messages.smtpautherror"
+msgstr "SMTP greška ($code): Autentifikacija nije uspjela."
+
+msgid "messages.smtpfromerror"
+msgstr ""
+"SMTP greška ($code): Nije uspjelo postavljanje pošiljaoca \"$from\" ($msg)."
+
+msgid "messages.smtptoerror"
+msgstr "SMTP greška ($code): Nije uspjelo dodavanje primaoca \"$to\" ($msg)"
+
+msgid "messages.smtprecipientserror"
+msgstr "SMTP greška: Nije moguće pročitati listu primaoca."
+
+msgid "messages.smtputf8error"
+msgstr ""
+
+msgid "messages.smtpsizeerror"
+msgstr ""
+
+msgid "messages.smtperror"
+msgstr "SMTP greška: $msg"
+
+msgid "messages.emailformaterror"
+msgstr ""
+
+msgid "messages.toomanyrecipients"
+msgstr "Previše primaoca. Smanjite broj primaoca na $max."
+
+msgid "messages.maxgroupmembersreached"
+msgstr "Broj članova grupe prelazi maksimum od $max."
+
+msgid "messages.internalerror"
+msgstr "Dogodila se interna greška. Molimo vas da pokušate ponovo."
+
+msgid "messages.contactdelerror"
+msgstr "Kontakti ne mogu biti obrisani."
+
+msgid "messages.contactdeleted"
+msgstr "Kontakti su uspješno obrisani."
+
+msgid "messages.contactrestoreerror"
+msgstr "Nije moguće vratiti obrisane kontakte."
+
+msgid "messages.contactrestored"
+msgstr "Kontakti su uspješno vraćeni."
+
+msgid "messages.groupdeleted"
+msgstr "Grupa je uspješno obrisana."
+
+msgid "messages.grouprenamed"
+msgstr "Grupa je uspješno preimenovana."
+
+msgid "messages.groupcreated"
+msgstr "Grupa je uspješno kreirana."
+
+msgid "messages.savedsearchdeleted"
+msgstr "Sačuvana pretraga je uspješno obrisana."
+
+msgid "messages.savedsearchdeleteerror"
+msgstr "Nije moguće obrisati sačuvanu pretragu."
+
+msgid "messages.savedsearchcreated"
+msgstr "Uspješno ste sačuvali rezultate pretrage."
+
+msgid "messages.savedsearchcreateerror"
+msgstr "Nije moguće sačuvati pretragu."
+
+msgid "messages.messagedeleted"
+msgstr "Poruke su uspješno obrisane."
+
+msgid "messages.messagemoved"
+msgstr "Poruke su uspješno premještene."
+
+msgid "messages.messagemovedtotrash"
+msgstr ""
+
+msgid "messages.messagecopied"
+msgstr "Poruke uspješno kopirane."
+
+msgid "messages.messagemarked"
+msgstr "Poruke uspješno označene."
+
+msgid "messages.autocompletechars"
+msgstr "Unesite barem $min znakova za automatsko popunjavanje."
+
+msgid "messages.autocompletemore"
+msgstr "Pronađeno je još rezultata. Molimo vas da upišete još znakova."
+
+msgid "messages.namecannotbeempty"
+msgstr "Polje za ime ne može biti prazno."
+
+msgid "messages.nametoolong"
+msgstr "Ime je predugo."
+
+msgid "messages.namedotforbidden"
+msgstr ""
+
+msgid "messages.folderupdated"
+msgstr "Folder je uspješno ažuriran."
+
+msgid "messages.foldercreated"
+msgstr "Folder je uspješno kreiran."
+
+msgid "messages.invalidimageformat"
+msgstr "Format slike nije ispravan."
+
+msgid "messages.mispellingsfound"
+msgstr "Pronađene su pravopisne greške u ovoj poruci."
+
+msgid "messages.parentnotwritable"
+msgstr ""
+"Nije moguće kreirati/premjestiti folder u odabrani matični folder. Nemate "
+"prava pristupa."
+
+msgid "messages.messagetoobig"
+msgstr "Dio poruke je prevelik za procesiranje."
+
+msgid "messages.attachmentvalidationerror"
+msgstr ""
+
+msgid "messages.noscriptwarning"
+msgstr ""
+"Upozorenje! Ovom webmail servisu je potreban Javascript! Da biste ga mogli "
+"koristiti, prvo je potrebno da omogućite Javascript u postavkama vašeg "
+"browsera."
+
+msgid "messages.messageissent"
+msgstr ""
+"Poruka je već poslana, ali nije sačuvana. Želite li sada da je sačuvate?"
+
+msgid "messages.errnotfound"
+msgstr "Fajl nije pronađen"
+
+msgid "messages.errnotfoundexplain"
+msgstr "Traženi resurs nije pronađen!"
+
+msgid "messages.errfailedrequest"
+msgstr "Neuspjeli zahtjev"
+
+msgid "messages.errauthorizationfailed"
+msgstr "Autorizacija neuspjela"
+
+msgid "messages.errunauthorizedexplain"
+msgstr "Nije moguće verificirani vašu dozvolu pristupa za ovaj servis!"
+
+msgid "messages.errrequestcheckfailed"
+msgstr "Provjera zahtjeva nije uspjela"
+
+msgid "messages.errcsrfprotectionexplain"
+msgstr ""
+"Radi vaše zaštite, pristup ovom resursu je osiguran pomoću CSRF-a.\n"
+"Ako vam je prikazana ova poruku, najvjerovatnije se niste odjavili prije napuštanja web aplikacije\n"
+"\n"
+"Vaša akcija je sada neophodna za nastavak rada."
+
+msgid "messages.errcontactserveradmin"
+msgstr "Molimo vas da kontaktirate administratora servera."
+
+msgid "messages.clicktoresumesession"
+msgstr "Kliknite ovdje da nastavite rad u vašoj prethodnoj sesiji"
+
+msgid "messages.errcomposesession"
+msgstr ""
+
+msgid "messages.errcomposesessionexplain"
+msgstr ""
+
+msgid "messages.clicktocompose"
+msgstr ""
+
+msgid "messages.nosupporterror"
+msgstr ""
+
+msgid "messages.siginserted"
+msgstr ""
+
+msgid "messages.responseinserted"
+msgstr ""
+
+msgid "messages.noresponsesavailable"
+msgstr ""
+
+msgid "messages.listempty"
+msgstr ""
+
+msgid "messages.listusebutton"
+msgstr ""
+
+msgid "messages.keypaircreatesuccess"
+msgstr ""
+
+msgid "messages.emptyattachment"
+msgstr ""
+
+msgid "messages.oauthloginfailed"
+msgstr ""
+
+msgid "messages.oauthinvalidrequest"
+msgstr ""
+
+msgid "messages.oauthaccessdenied"
+msgstr ""
