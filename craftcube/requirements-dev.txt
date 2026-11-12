@@ -1,0 +1,6 @@
+# Development-only tooling (not installed in the container image).
+# Backend:  pip install -r requirements-dev.txt && pytest && ruff check app
+# Frontend: npm ci && npx eslint app/static
+pytest>=8.0
+ruff>=0.6
+PyYAML>=6.0

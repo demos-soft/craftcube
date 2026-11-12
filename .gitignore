@@ -5,5 +5,8 @@ __pycache__/
 data/
 .pytest_cache/
 
+# Node dev tooling (ESLint) — dev-only, never shipped
+craftcube/node_modules/
+
 # Vendored Roundcube sources — reference only, has its own upstream repo
 roundcubemail/
