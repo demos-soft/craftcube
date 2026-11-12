@@ -393,3 +393,22 @@ def test_addressbook_name_listing_and_sort_col(client, store, user):
                                 "addressbook_name_listing": "0"})
     h = client.get("/contacts?_dialog=1").get_data(as_text=True)
     assert h.index("Alice") < h.index("Bob")
+
+def test_layout_and_compose_prefs_attributes(client, store, user, make_box):
+    store.set_user_prefs(user, {
+        "autoexpand_threads": "2",
+        "standard_windows": 1,
+        "compose_extwin": 1,
+        "refresh_interval": "5",
+        "draft_autosave": "60",
+    })
+    make_box.prefs = dict(store.get_user_prefs(user))
+
+    mail = client.get("/mail?_mbox=INBOX").get_data(as_text=True)
+    assert 'data-autoexpand-threads="2"' in mail
+    assert 'data-standard-windows="1"' in mail
+    assert 'data-compose-extwin="1"' in mail
+    assert 'data-refresh-interval="5"' in mail
+
+    compose = client.get("/compose").get_data(as_text=True)
+    assert "draft_autosave: 60" in compose
