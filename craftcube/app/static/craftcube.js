@@ -600,6 +600,132 @@
     if (el) el.textContent = label;
   };
 
+  // ------------------------------------------------- recipient-input widgets
+  // ui.js recipient_input(): To/Cc/Bcc/Reply-To/Followup-To render as a chip
+  // list; the original input/textarea is hidden and keeps the posted value
+  // ("Name <a@b>, <c@d>, "). Enter/comma/blur commits, Backspace removes the
+  // last chip, clicks on a chip's x remove it.
+  (function () {
+    window.cc_recipient_add = {};
+    var SELS = ['#compose_to textarea[name="_to"]', '#compose_cc textarea[name="_cc"]',
+                '#compose_bcc textarea[name="_bcc"]',
+                '#compose_replyto input[name="_reply_to"]',
+                '#compose_followupto input[name="_followup_to"]'];
+    function split_addr(v) {
+      var out = [], depth = 0, cur = '';
+      for (var i = 0; i < v.length; i++) {
+        var ch = v[i];
+        if (ch === '<') depth++;
+        if (ch === '>') depth--;
+        if (ch === ',' && depth === 0) { out.push(cur); cur = ''; }
+        else cur += ch;
+      }
+      out.push(cur);
+      return out.map(function (s) { return s.trim(); }).filter(Boolean);
+    }
+    function fmt(a) {
+      var m = a.match(/^(.*?)<([^>]+)>\s*$/);
+      if (m) return { name: m[1].trim().replace(/^"|"$/g, ''), email: m[2].trim(), full: true };
+      return { name: a, email: '', full: false };
+    }
+    SELS.forEach(function (sel) {
+      var field = document.querySelector(sel);
+      if (!field || field.hasAttribute('data-recipient-input-done')) return;
+      field.setAttribute('data-recipient-input', 'true');
+      field.setAttribute('data-recipient-input-done', '1');
+      field.style.cssText = 'position: absolute; opacity: 0; left: -5000px; width: 10px;';
+      var input_group = field.closest('.input-group');
+      var ul = document.createElement('ul');
+      ul.className = 'form-control recipient-input ac-input rounded-left ui-sortable';
+      ul.setAttribute('role', 'listbox');
+      ul.innerHTML = '<li class="input"><input type="text" tabindex="' +
+        (field.getAttribute('tabindex') || '1') + '" autocomplete="off" aria-autocomplete="list" aria-expanded="false" role="combobox"></li>';
+      field.parentNode.insertBefore(ul, field.nextSibling);
+      var inp = ul.querySelector('li.input input');
+      function add(a, seed) {
+        a = a.trim().replace(/,+$/, '');
+        if (!a) return;
+        var f = fmt(a);
+        var li = document.createElement('li');
+        li.className = 'recipient';
+        if (f.full) li.setAttribute('title', a);
+        li.innerHTML = '<span class="name"></span><span class="email"></span>' +
+          '<a class="button icon remove"></a>';
+        li.querySelector('.name').textContent = f.name;
+        li.querySelector('.email').textContent = f.full ? ' <' + f.email + '>,' : ',';
+        li.querySelector('a').addEventListener('click', function (e) {
+          e.preventDefault(); li.remove(); rebuild();
+        });
+        li.addEventListener('click', function (e) {
+          // ui.js: click a chip to edit it back into the input
+          if (e.target.tagName === 'A') return;
+          inp.value = chip_addr(li);
+          li.remove(); rebuild(); inp.focus();
+        });
+        ul.insertBefore(li, ul.querySelector('li.input'));
+        if (!seed) rebuild();
+        inp.value = '';
+      }
+      function chip_addr(li) {
+        var name = li.querySelector('.name').textContent;
+        var email = li.querySelector('.email').textContent.replace(/,+$/, '').trim();
+        if (email.charAt(0) === '<' && email.charAt(email.length - 1) === '>') {
+          email = email.slice(1, -1).trim();
+        }
+        if (email && name && name !== email) return name + ' <' + email + '>';
+        return name || email;
+      }
+      function rebuild() {
+        // re-derive the textarea value from the remaining chips
+        // (reference: "Name <a@b>," + "<c@d>," with no separator space)
+        var parts = [];
+        ul.querySelectorAll('li.recipient').forEach(function (li) {
+          parts.push(chip_addr(li) + ',');
+        });
+        field.value = parts.join('');
+      }
+      // initial chips from prefilled value, then normalize the value
+      split_addr(field.value).forEach(function (a) { add(a, true); });
+      rebuild();
+      window.cc_recipient_add[field.name] = add;
+      window.cc_recipient_add[field.id] = add;
+      inp.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ',') {
+          e.preventDefault();
+          if (inp.value.trim()) add(inp.value);
+        } else if (e.key === 'Backspace' && !inp.value) {
+          var chips = ul.querySelectorAll('li.recipient');
+          if (chips.length) { chips[chips.length - 1].remove(); rebuild(); }
+        }
+      });
+      inp.addEventListener('blur', function () {
+        if (inp.value.trim()) add(inp.value);
+      });
+      input_group.addEventListener('mousedown', function (e) {
+        if (!e.target.closest('a')) setTimeout(function () { inp.focus(); ul.classList.add('focus'); }, 0);
+      });
+      inp.addEventListener('focus', function () { ul.classList.add('focus'); });
+      inp.addEventListener('blur', function () { ul.classList.remove('focus'); });
+      if (field.autofocus) inp.focus();
+      // keep the textarea authoritative when the form posts
+      field.form && field.form.addEventListener('submit', rebuild);
+    });
+  })();
+
+  // ------------------------------------------------- page jumper (ui.js goto)
+  // Enter in the pager input navigates to the typed page number.
+  document.querySelectorAll('input.rcpagejumper').forEach(function (inp) {
+    inp.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter') return;
+      e.preventDefault();
+      var page = parseInt(inp.value, 10);
+      if (!page) return;
+      var url = new URL(window.location.href);
+      url.searchParams.set('_page', page);
+      window.location.href = url.toString();
+    });
+  });
+
   // ----------------------------------------------- listing rows with data-href
   // (Elastic navigates list rows via JS; e.g. Settings > Preferences sections)
   document.querySelectorAll('tr[data-href], li[data-href]').forEach(function (row) {
@@ -654,16 +780,17 @@
       ]
     });
     window.cc_recipient_done = function (list) {
+      var add = window.cc_recipient_add && window.cc_recipient_add[field];
       var ta = document.getElementById(field);
-      if (ta && list.length) {
-        var cur = ta.value.trim();
-        var add = list.map(function (r) {
-          return r.name && r.name !== r.email ? r.name + ' <' + r.email + '>' : r.email;
+      if (list && list.length) {
+        list.forEach(function (r) {
+          var a = r.name && r.name !== r.email ? r.name + ' <' + r.email + '>' : r.email;
+          if (add) add(a);
+          else if (ta) {
+            var have = ta.value.trim() ? ta.value.trim().split(/\s*,\s*/) : [];
+            if (have.indexOf(a) < 0) ta.value = (ta.value.trim() ? ta.value.trim() + ', ' : '') + a;
+          }
         });
-        var have = cur ? cur.split(/\s*,\s*/) : [];
-        add.forEach(function (a) { if (have.indexOf(a) < 0) have.push(a); });
-        ta.value = have.join(', ');
-        ta.focus();
       }
       d.close();
     };

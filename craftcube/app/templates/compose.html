@@ -171,7 +171,8 @@
               <label for="_to" class="col-2 col-form-label">To</label>
               <div class="col-10">
                 <div class="input-group">
-                  <textarea name="_to" id="_to" class="form-control" tabindex="1" aria-required="true" rows="1" autofocus>{{ prefill.to }}</textarea>
+                  <textarea name="_to" spellcheck="false" id="_to" tabindex="1" aria-required="true"
+                            data-recipient-input="true" autofocus>{{ prefill.to }}</textarea>
                   <span class="input-group-append">
                     <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_to" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_to') : true"><span class="inner">Add contact</span></a>
                   </span>
