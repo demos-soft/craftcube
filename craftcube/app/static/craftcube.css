@@ -37,6 +37,14 @@ table.messagelist.selection td.selection { display: table-cell !important; }
   border-radius: .3rem; box-shadow: 0 6px 24px rgba(0,0,0,.18); min-width: 16rem;
   max-height: 80vh; overflow: auto; padding: .3rem 0; position: absolute; z-index: 100; }
 .popupmenu.open { display: block; }
+/* inside a modal dialog the cloned menu flows as plain dialog content, like
+   the reference's .ui-dialog-content>.popupmenu (no float chrome, no
+   absolute positioning, natural height) */
+.ui-dialog .ui-dialog-content > .popupmenu {
+  position: static; background: transparent; border: 0; box-shadow: none;
+  min-width: 180px; max-height: none; overflow: hidden; padding: 0;
+  height: 100%;
+}
 /* inside a popover drawer the menu sits bare in .popover-body (reference:
    .popover-body>.popupmenu{display:block!important}, no float chrome) */
 .popover-body .popupmenu { position: static; background: transparent; border: 0;
@@ -220,3 +228,14 @@ html.dark-mode ul.nav-tabs .nav-link.active { background: #21292c;
 
 /* formbuttons moved into the parent frame header (reference behaviour) */
 .formbuttons.cc-cloned { display: none; }
+
+/* The reference loads the jqueryui plugin's Elastic jQuery-UI theme, whose
+   base rule pads non-iframe dialog content (computed 14px/14px/7px); the
+   .iframe counterpart lives in the vendored styles.css */
+.ui-dialog .ui-dialog-content { position: relative; border: 0; box-sizing: border-box;
+  padding: 14px 14px 7px 14px; background: 0 0; overflow: auto; }
+/* jqueryui Elastic theme button pane (reference computed: right-aligned
+   group inset 1.5rem, 4rem tall, buttons margin-left .5rem) */
+.ui-dialog .ui-dialog-buttonpane { text-align: right; white-space: nowrap;
+  background-image: none; padding: 0 1.5rem; height: 4rem; }
+.ui-dialog .ui-dialog-buttonpane button { margin: .65rem 0 .65rem .5rem; }

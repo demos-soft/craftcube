@@ -45,7 +45,7 @@
               title="{{ 'Select'|lc }}" aria-haspopup="true" aria-expanded="false" aria-owns="listselect-menu"><span class="inner">{{ 'Select'|lc }}</span></a></li>
           <li role="menuitem"><a href="#threads" class="threads disabled" data-popup="threadselect-menu"
               title="{{ 'Threads'|lc }}" aria-haspopup="true" aria-expanded="false" aria-owns="threadselect-menu"><span class="inner">{{ 'Threads'|lc }}</span></a></li>
-          <li role="menuitem"><a href="#list-options" class="options active" id="listmenulink" data-popup="listoptions-menu"
+          <li role="menuitem"><a href="#list-options" class="options active" id="listmenulink" onclick="return cc_listoptions_dialog(this, event)"
               title="{{ 'Options'|lc }}" tabindex="0"><span class="inner">{{ 'Options'|lc }}</span></a></li>
         </ul>
         <a href="{{ url_for('views.mail', _mbox=folder, _sort=sort, _sort_order=order) }}"
@@ -283,7 +283,7 @@
       <div class="form-group row">
         <label for="listoptions-sortcol" class="col-form-label col-sm-4">{{ 'Sorting column'|lc }}</label>
         <div class="col-sm-8">
-          <select id="listoptions-sortcol" name="sort_col" onchange="cc_apply_list_options()">
+          <select id="listoptions-sortcol" name="sort_col">
             <option value=""{{ ' selected' if sort == '' }}>{{ 'None'|lc }}</option>
             <option value="arrival"{{ ' selected' if sort == 'arrival' }}>{{ 'Arrival date'|lc }}</option>
             <option value="date"{{ ' selected' if sort == 'date' }}>{{ 'Sent date'|lc }}</option>
@@ -299,7 +299,7 @@
       <div class="form-group row">
         <label for="listoptions-sortord" class="col-form-label col-sm-4">{{ 'Sorting order'|lc }}</label>
         <div class="col-sm-8">
-          <select id="listoptions-sortord" name="sort_ord" onchange="cc_apply_list_options()">
+          <select id="listoptions-sortord" name="sort_ord">
             <option value="ASC"{{ ' selected' if order == 'asc' }}>ascending</option>
             <option value="DESC"{{ ' selected' if order == 'desc' }}>descending</option>
           </select>
@@ -308,7 +308,7 @@
       <div class="form-group row">
         <label for="listoptions-threads" class="col-form-label col-sm-4">{{ 'List mode'|lc }}</label>
         <div class="col-sm-8">
-          <select id="listoptions-threads" name="mode" onchange="cc_apply_list_options()">
+          <select id="listoptions-threads" name="mode">
             <option value="list"{{ ' selected' if list_mode != 'threads' }}>{{ 'List'|lc }}</option>
             <option value="threads"{{ ' selected' if list_mode == 'threads' }}>{{ 'Threads'|lc }}</option>
           </select>

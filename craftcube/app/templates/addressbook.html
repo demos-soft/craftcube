@@ -356,16 +356,18 @@
   if (del) del.addEventListener('click', function (e) {
     e.preventDefault();
     if (del.classList.contains('disabled') || !checkedVals().length) return;
-    if (!confirm('{{ _('deletecontactconfirm') }}')) return;
-    var form = document.getElementById('contactact');
-    form.querySelectorAll('input.submit-uids').forEach(function (x) { x.remove(); });
-    checkedRows().forEach(function (r) {
-      var cb = r.querySelector('td.selection input');
-      var h = document.createElement('input');
-      h.type = 'hidden'; h.name = '_uids[]'; h.value = cb.value; h.className = 'submit-uids';
-      form.appendChild(h);
+    // app.js delete_contact(): confirm_dialog, never window.confirm
+    cc_confirm_dialog('{{ _('deletecontactconfirm') }}', 'delete', function () {
+      var form = document.getElementById('contactact');
+      form.querySelectorAll('input.submit-uids').forEach(function (x) { x.remove(); });
+      checkedRows().forEach(function (r) {
+        var cb = r.querySelector('td.selection input');
+        var h = document.createElement('input');
+        h.type = 'hidden'; h.name = '_uids[]'; h.value = cb.value; h.className = 'submit-uids';
+        form.appendChild(h);
+      });
+      form.submit();
     });
-    form.submit();
   });
 
   // export selected
@@ -452,12 +454,14 @@
   if (gdl) gdl.addEventListener('click', function (e) {
     e.preventDefault();
     if (gdl.classList.contains('disabled')) return;
-    if (!confirm('{{ _('deletegroupconfirm') }}')) return;
-    var f = document.createElement('form');
-    f.method = 'post';
-    f.action = '/contactgroup/' + gdl.getAttribute('data-groupid') + '/delete';
-    document.body.appendChild(f);
-    f.submit();
+    // app.js delete_contactgroup(): confirm_dialog
+    cc_confirm_dialog('{{ _('deletegroupconfirm') }}', 'delete', function () {
+      var f = document.createElement('form');
+      f.method = 'post';
+      f.action = '/contactgroup/' + gdl.getAttribute('data-groupid') + '/delete';
+      document.body.appendChild(f);
+      f.submit();
+    });
   });
 
   updateToolbar();

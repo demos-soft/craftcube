@@ -41,11 +41,11 @@
              href="{{ url_for('views.identities', _edit='new', _framed='1' if framed_page|default(false) else None) }}"><span class="inner">{{ 'Create'|lc }}</span></a>
           {% if edit_row %}
           <a class="delete" title="{{ 'Delete'|lc }}" role="button" data-delete-base="{{ url_for("views.identity_delete", iid=1)[:-9] }}"
-             data-confirm="Delete this identity?"
-             href="#" onclick="if (confirm('Delete this identity?')) document.getElementById('identity-delete-form').submit(); return false"><span class="inner">{{ 'Delete'|lc }}</span></a>
+             data-confirm="{{ _('deleteidentityconfirm') }}"
+             href="#" onclick="cc_confirm_dialog('{{ _('deleteidentityconfirm') }}', 'delete', function () { document.getElementById('identity-delete-form').submit(); }); return false"><span class="inner">{{ 'Delete'|lc }}</span></a>
           {% else %}
           <a class="delete disabled" title="{{ 'Delete'|lc }}" role="button" tabindex="-1" aria-disabled="true"
-             data-delete-base="{{ url_for("views.identity_delete", iid=1)[:-9] }}" data-confirm="Delete this identity?"
+             data-delete-base="{{ url_for("views.identity_delete", iid=1)[:-9] }}" data-confirm="{{ _('deleteidentityconfirm') }}"
              href="#"><span class="inner">{{ 'Delete'|lc }}</span></a>
           {% endif %}
         </div>

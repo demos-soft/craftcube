@@ -555,10 +555,30 @@
   // + simple_dialog; jQuery-UI dialog DOM with Elastic's bootstrap_style)
   function ccDialog(content, title, opts) {
     opts = opts || {};
+    // app.js simple_dialog: a string message is wrapped in a content div;
+    // spacing comes from the dialog content box padding (1em/1em/.5em)
+    if (typeof content === 'string') {
+      var txt = document.createElement('div');
+      txt.className = 'cc-dialog-text';
+      txt.textContent = content;
+      content = txt;
+    }
     var isIframe = content.tagName === 'IFRAME';
     var popup = document.createElement('div');
-    popup.className = 'popup' + (isIframe ? ' iframe' : '');
+    // jQuery-UI puts the dialog content inside .popup.ui-dialog-content
+    // .ui-widget-content; the skin styles (padding, >.popupmenu display
+    // override, .iframe reset) key off those classes
+    popup.className = 'popup ui-dialog-content ui-widget-content'
+      + (isIframe ? ' iframe' : '');
     popup.appendChild(content);
+    if (!isIframe) {
+      // elastic bootstrap_style() for a dialog context: consistent control
+      // classes on the (possibly cloned) form fields
+      var supported = 'input:not(.button,.no-bs,[type=button],[type=radio],[type=checkbox],[type=file]),textarea';
+      popup.querySelectorAll(supported).forEach(function (el) { el.classList.add('form-control'); });
+      popup.querySelectorAll('[type=checkbox]').forEach(function (el) { el.classList.add('form-check-input'); });
+      popup.querySelectorAll('select').forEach(function (el) { el.classList.add('form-control', 'custom-select'); });
+    }
 
     var overlay = document.createElement('div');
     overlay.className = 'ui-widget-overlay ui-front';
@@ -641,7 +661,18 @@
     var h = Math.min(opts.height || 400, window.innerHeight - 40 - chrome);
     var w = Math.min(opts.width || 500, window.innerWidth - 20);
     dlg.style.width = w + 'px';
-    if (isIframe) { popup.style.height = h + 'px'; }
+    if (isIframe) {
+      popup.style.height = h + 'px';
+    } else if (opts.height) {
+      // opts.height pins the reference's measured content-box height (the
+      // cloned .popupmenu needs a definite parent box for height:100%)
+      popup.style.flex = '0 0 auto';
+      popup.style.height = Math.min(opts.height, window.innerHeight - 40 - chrome) + 'px';
+    } else {
+      // simple_dialog()/confirm_dialog() pass noresize: the content box
+      // takes its natural height (reference confirm popup measures 42px)
+      popup.style.flex = '0 0 auto';
+    }
     if (window.innerWidth <= 480) {
       dlg.style.width = '100%'; dlg.style.height = '100%';
       dlg.style.left = '0'; dlg.style.top = '0';
@@ -656,6 +687,25 @@
     return { dlg: dlg, popup: popup, close: close };
   }
   window.cc_simple_dialog = ccDialog;
+
+  // ------------------------------------------------- confirm_dialog (app.js:8796)
+  // confirm_dialog(content, button_label, action): simple_dialog with title
+  // 'confirmationtitle' ("Are you sure..."), the action button carrying the
+  // command class (elastic styles .delete as btn-danger) and a Cancel
+  // button. Reference measurement: 502x158, message sits directly in .popup.
+  window.cc_confirm_dialog = function (message, button_label, action_fn) {
+    var label = button_label || 'delete';
+    var dlg = ccDialog(message, cc_get_label('confirmationtitle'), {
+      width: 500, // reference show_popup_dialog default (dialog 502 incl. border)
+      buttons: [
+        { label: cc_get_label(label), cls: 'mainaction ' + label + ' btn-danger',
+          click: function () { dlg.close(); action_fn(); } },
+        { label: cc_get_label('cancel'), cls: 'cancel',
+          click: function () { dlg.close(); } },
+      ],
+    });
+    return dlg;
+  };
 
   // ------------------------------------------------- mdn_request_dialog (app.js:4630)
   // "Send read receipt?" dialog: Send / Ignore and, when the pref asks to
@@ -696,7 +746,6 @@
       });
     }
     var body = document.createElement('div');
-    body.style.cssText = 'padding:1rem';
     body.textContent = cc_get_label('mdnrequest');
     var dlg = ccDialog(body, cc_get_label('sendreceipt'), {
       height: 200, buttons: buttons, onclose: closeAndPost,
@@ -708,8 +757,11 @@
     var f = document.createElement('iframe');
     f.src = src;
     f.style.cssText = 'width:100%;height:100%;border:0';
-    var d = ccDialog(f, title, { height: height || 400, buttons: opts.buttons,
-                                 buttons_previous: opts.buttons_previous, onclose: opts.onclose });
+    var d = ccDialog(f, title, { height: height || 400,
+                                 width: opts.width || 604,
+                                 buttons: opts.buttons,
+                                 buttons_previous: opts.buttons_previous,
+                                 onclose: opts.onclose });
     d.iframe = f;
     return d;
   };
@@ -970,12 +1022,17 @@
         if (a.classList.contains('disabled')) return;
         var cmd = a.getAttribute('data-act');
         if (cmd === 'empty') {
-          if (confirm(cc_get_label('purgefolderconfirm'))) act('empty', [], {});
+          // purge_mailbox(): confirm_dialog(purgefolderconfirm, 'delete')
+          cc_confirm_dialog(cc_get_label('purgefolderconfirm'), 'delete',
+            function () { act('empty', [], {}); });
         } else if (cmd === 'markallread') {
           act('markallread', [], {});
         } else if (cmd === 'delete') {
+          // delete_message(): with a trash defined this is a silent
+          // move-to-trash; only shift+delete confirms (permanent). The
+          // server decides trash vs permanent, so no confirmation here.
           var uids = toolbarContext();
-          if (uids.length && confirm(cc_get_label('deletemessagesconfirm'))) {
+          if (uids.length) {
             var extra = {};
             var sel = document.querySelector('#messagelist tr.selected');
             if (sel) extra._return_uid = sel.getAttribute('data-uid') || '';
@@ -1019,17 +1076,59 @@
       actForm.submit();
     }
 
-    // list-options popup applies sort/order/list-mode
-    window.cc_apply_list_options = function () {
-      var col = document.getElementById('listoptions-sortcol').value;
-      var ord = document.getElementById('listoptions-sortord').value.toLowerCase();
-      var modeSel = document.getElementById('listoptions-threads');
+    // list-options dialog applies sort/order/list-mode (ui.js
+    // menu_messagelist save_func -> rcmail.set_list_options); reads the
+    // dialog's cloned selects when a root is given, else the page menu
+    window.cc_apply_list_options = function (root) {
+      root = root || document.getElementById('listoptions-menu');
+      if (!root) return;
+      var sels = root.querySelectorAll('select');
+      if (sels.length < 3) return;
+      var col = sels[0].value;
+      var ord = sels[1].value.toLowerCase();
+      var mode = sels[2].value;
       var url = new URL(location.href);
       url.searchParams.set('_sort', col);
       url.searchParams.set('_sort_order', ord);
-      if (modeSel) url.searchParams.set('_mode', modeSel.value);
+      url.searchParams.set('_mode', mode);
       url.searchParams.delete('_page');
       location.href = url.toString();
+    };
+
+    // ui.js menu_messagelist(): the Options link opens a modal dialog with
+    // a clone of #listoptions-menu (ids/labels suffixed -clone), applied on
+    // Save; it is not an inline popup menu
+    window.cc_listoptions_dialog = function (elem, event) {
+      if (event) event.preventDefault();
+      var src = document.getElementById('listoptions-menu');
+      if (!src) return false;
+      var clone = src.cloneNode(true);
+      clone.removeAttribute('id');
+      clone.removeAttribute('style');
+      // reference keeps the popupmenu classes (the skin has a
+      // .ui-dialog-content>.popupmenu display override); only a stale
+      // open/inactive state from the old inline popup must go
+      clone.classList.remove('open', 'inactive');
+      clone.querySelectorAll('select').forEach(function (s) {
+        s.id = s.id + '-clone';
+      });
+      clone.querySelectorAll('label').forEach(function (l) {
+        if (l.getAttribute('for')) l.setAttribute('for', l.getAttribute('for') + '-clone');
+      });
+      clone.querySelectorAll('select').forEach(function (s) {
+        s.removeAttribute('onchange');
+      });
+      var dlg = ccDialog(clone, cc_get_label('listoptionstitle'), {
+        width: 528,   // reference dialog measured 530 incl. border
+        height: 198,  // reference popup content box measured 198 (dialog 314)
+        buttons: [
+          { label: cc_get_label('save'), cls: 'mainaction save',
+            click: function () { cc_apply_list_options(clone); } },
+          { label: cc_get_label('cancel'), cls: 'cancel',
+            click: function () { dlg.close(); } },
+        ],
+      });
+      return false;
     };
 
     // search-modifier sublists (Sender/Recipient expand to fine-grained fields)
@@ -1157,9 +1256,9 @@
       var cmd = a.getAttribute('data-act') || a.getAttribute('data-mode');
       e.preventDefault();
       if (cmd === 'delete') {
-        if (confirm(cc_get_label('deletemessagesconfirm'))) {
-          post({ _mbox: box, _uids: uid, _act: 'delete' });
-        }
+        // delete_message(): silent move-to-trash (see toolbar handler); the
+        // server decides trash vs permanent
+        post({ _mbox: box, _uids: uid, _act: 'delete' });
       } else if (cmd === 'archive' || cmd === 'read' || cmd === 'unread' ||
                  cmd === 'flag' || cmd === 'unflag' ||
                  cmd === 'move' || cmd === 'copy') {
@@ -1453,12 +1552,18 @@
     del.setAttribute('aria-disabled', 'false');
     del.onclick = function (e) {
       e.preventDefault();
-      if (!window.confirm(del.getAttribute('data-confirm') || 'Delete?')) return false;
-      var f = document.createElement('form');
-      f.method = 'post';
-      f.action = del.getAttribute('data-delete-base') + '/' + rid + '/delete';
-      document.body.appendChild(f);
-      f.submit();
+      // RC settings deletes go through confirm_dialog() (styled
+      // 'Are you sure...' dialog), never the native window.confirm
+      cc_confirm_dialog(
+        del.getAttribute('data-confirm') || 'Delete?',
+        'delete',
+        function () {
+          var f = document.createElement('form');
+          f.method = 'post';
+          f.action = del.getAttribute('data-delete-base') + '/' + rid + '/delete';
+          document.body.appendChild(f);
+          f.submit();
+        });
       return false;
     };
   }

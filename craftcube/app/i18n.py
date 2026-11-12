@@ -149,7 +149,10 @@ def translate_en(text, lang):
 JS_LABEL_KEYS = [
     "ok", "cancel", "close", "send", "ignore", "restore", "delete", "discard",
     "sendreceipt", "sendalwaysto", "mdnrequest", "windowopenerror", "insertcontact",
-    "deletemessagesconfirm", "purgefolderconfirm", "deletecontactconfirm",
+    "listoptionstitle", "save", "download",
+    "deletemessagesconfirm", "purgefolderconfirm", "deletefolderconfirm",
+    "confirmationtitle",
+    "deletecontactconfirm",
     "deleteidentityconfirm", "deleteresponseconfirm",
     "restoremessage", "restoresavedcomposedata", "notsentwarning",
 ]

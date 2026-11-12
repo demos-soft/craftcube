@@ -7,9 +7,9 @@
         <span class="header-title">{{ row.name or row.email }}</span>
         <div class="toolbar menu" role="toolbar">
           <a class="btn btn-link compose" href="{{ url_for('views.compose', _to=row.email) }}" title="{{ 'Compose'|lc }}"><span class="inner">{{ 'Compose'|lc }}</span></a>
-          <form method="post" action="{{ url_for('views.contact_delete', cid=row.contact_id) }}" class="d-inline"
-                onsubmit="return confirm('{{ _('deletecontactconfirm') }}')">
-            <button type="submit" class="btn btn-link delete" title="{{ 'Delete'|lc }}"><span class="inner">{{ 'Delete'|lc }}</span></button>
+          <form method="post" action="{{ url_for('views.contact_delete', cid=row.contact_id) }}" class="d-inline" id="cc-contact-delete">
+            <button type="button" class="btn btn-link delete" title="{{ 'Delete'|lc }}"
+                    onclick="cc_confirm_dialog('{{ _('deletecontactconfirm') }}', 'delete', function () { document.getElementById('cc-contact-delete').submit(); })"><span class="inner">{{ 'Delete'|lc }}</span></button>
           </form>
         </div>
       </div>
