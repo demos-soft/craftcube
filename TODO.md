@@ -19,3 +19,25 @@
 - [x] Bug: In Settings view, some settings do not get saved. Ensure every User setting is saved and honored by the code. All default setting shall match roundcubes default settings. (7676d1f + spellcheck/autosave/extwin/MDN batches 3d1aa3e, 8b8a368, fd6a60f — save round-trip 0 problems; read_when_deleted default fixed; prefs honored incl. pretty_date, skip_deleted, show_images, inline_images, reply_same_folder, logout purge/expunge, spellcheck ignores + before-send, draft autosave/localstorage, extwin popups, mdn_requests (ask/autosend/known/trusted/ignore), message_show_email, default_charset, force_7bit; remaining unhonored prefs only guard features CraftCube has no counterpart for — autocomplete dropdown, multiple addressbook sources, mailvelope, background recent-check, RFC2231 folding, contact sub-type order)
 - [x] Bug: In Settings view, some Settings are hidden (collapsed) by default in Roundcube, but not Craftcube (e322f31 — fieldset.advanced rendered as div.collapse with closed legend; visible/hidden parity across all 8 sections, framed diff 0.51%)
 - [x] Bug: In Settings view, List of selectable languages does not match roundcube. Language switch not working. (9623fa0 vendored the reference catalogues; language pref now drives html lang, task rail, folder names, page titles, settings, toolbar tooltips, JS dialogs and flash messages via rcube-style gettext/language_prop/get_label)
+
+## Staging parity sweep (uncommitted; verified on k8s3 CraftCube:30090 vs reference Roundcube:30091)
+- [x] Search parity incl. search_mods persistence — UID-set A/B audit (craftcube-sweep/audit_search4.py) green across subject/from/to/body/headerless/scope cases
+- [x] Contact edit/show vCard parity — byte-exact stored vCards vs live RC oracle (test_vcard live byte-parity test), RC subtype typemaps/order, add-field menus, display-name composition
+- [x] Contact show labels/order — RC locale labels (Mobile/Home Fax/Home Page/Other), RC personal row order, no source row; live text diff vs RC framed show = identical
+- [x] Addressbook group tree caret — div.treetoggle + aria tree states, pixel-identical geometry
+- [x] Mail list toolbar Threads button — always rendered (Select|Threads|Options), was wrongly hidden in preview mode
+- [x] Standalone message reader — /message renders dedicated reader (no redirect), Print/prev/next toolbar, top-boundary prev disabled
+- [x] Plain-text body rendering — text2html filter (div.pre + nl2br + quotes + sig + linkify) matches RC; shell preview & reader, vision 98/PASS
+- [x] Login button visibility — skip .formbuttons clone when no .header target; geometry identical
+- [x] Preferences bulk save — SQLite WAL + set_user_prefs bulk write; liveness starvation fixed (stress p95 35ms); unchecked checkbox clearing needs hidden _section
+- [x] Visual verdicts (visual-verdict skill): login 96, mail 94, message 98, addressbook 93, reader ~90 — all pass threshold
+- [x] Unit suite 156 tests pass (reader, contact form/show, vcards, typemaps, tree, converters)
+- [x] Fresh full prefs_matrix rerun after WAL deploy (out8 exit 0 — matrix green, 0 fails)
+- [x] Framed identity/response editors — bare `_framed=1` contract, form id=form Save buttons, pretty switches, propform beautification, parent-list row upsert (`cc_settings_row_upsert`, `_saved=insert|update`); visual 93 / 95, settings General section 98
+- [x] IMAP socket timeout (30s) — stalled synchronous reads no longer wedge gunicorn workers; pod memory 1Gi
+- [x] Bare framed contact editor — shared include + `action-edit/add` body class, full-page re-render dict-row guards, hidden `_cid` replay fallback
+- [x] Contact editor JS overlays — fieldset.propform row + grouped input-group decoration, image-upload delete overlay + smart-upload hidden form, drag/drop `droptarget`, Save dirty-state; live-verified incl. byte-exact drop→save→/contact/N/photo roundtrip
+- [x] Contact photo upload — `_upload=1` immediate upload for existing contacts (fields untouched), DataTransfer staging into main form for new contacts
+- [x] Contact editor visual parity — 96/PASS after 21px in-flow `#ff_photo_file` line-box fix + `addfield select fit-content` CSS; element-chain geometry pixel-identical (header y 14, tabs y 433 both sides)
+- [x] Full suite 165 tests; working tree re-baked into registry `:stage` (Docker+OCI manifests), rollout verified pod==tree md5
+- [ ] Working tree is large and intentionally UNCOMMITTED — awaiting explicit user approval to commit
