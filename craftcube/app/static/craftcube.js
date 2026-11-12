@@ -157,6 +157,7 @@
     function updateToolbar() {
       var ctx = toolbarContext();
       enabled('#tb-delete', ctx.length > 0);
+      enabled('#tb-archive', ctx.length > 0);
       enabled('#markmessagemenulink', ctx.length > 0);
       enabled('#messagemenulink', ctx.length > 0);
       enabled('#tb-reply', ctx.length === 1);
@@ -289,7 +290,7 @@
 
     function act(command, uids, extra) {
       if (!actForm) return;
-      if (!uids.length && ['empty', 'markallread'].indexOf(command) < 0) return;
+      if (!uids.length && ['empty', 'markallread', 'compact'].indexOf(command) < 0) return;
       actForm.querySelectorAll('.act-field').forEach(function (x) { x.remove(); });
       function field(name, value) {
         if (value === undefined || value === null || value === '') return;

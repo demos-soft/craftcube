@@ -163,7 +163,9 @@ def mail():
     box = imap_box()
     folder = request.args.get("_mbox") or "INBOX"
     page = int(request.args.get("_page", 1) or 1)
-    sort = request.args.get("_sort") or "date"
+    sort = request.args.get("_sort")
+    if sort is None:
+        sort = "date"
     order = request.args.get("_sort_order") or "desc"
     search = request.args.get("_q") or ""
     mods = []
@@ -383,7 +385,7 @@ def mail_act():
         for b, us in grouped.items():
             _run_mail_action(box, command, b, us)
         return redirect(request.form.get("_return") or url_for("views.mail", _mbox=folder))
-    if uids or command in ("empty", "markallread"):
+    if uids or command in ("empty", "markallread", "compact"):
         try:
             _run_mail_action(box, command, folder, uids,
                              dest=request.form.get("_dest"))
@@ -410,6 +412,12 @@ def _run_mail_action(box, command, folder, uids, dest=None):
         elif command == "delete":
             box.delete(folder, uids)
             flash(f"{len(uids)} message(s) deleted.", "confirmation")
+        elif command == "archive":
+            target = box.archive(folder, uids)
+            flash(f"Archived to {target}.", "confirmation")
+        elif command == "compact":
+            box.compact(folder)
+            flash(f"Folder {folder} compacted.", "confirmation")
         elif command == "empty":
             box.empty_folder(folder)
             flash(f"Folder {folder} emptied.", "confirmation")

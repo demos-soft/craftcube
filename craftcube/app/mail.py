@@ -18,6 +18,7 @@ from .util import parse_header_date, format_address
 FETCH_ITEMS = "(FLAGS INTERNALDATE RFC822.SIZE ENVELOPE BODYSTRUCTURE)"
 
 SORTS = {
+    "": (lambda m: m["uid"] or 0, True),          # no sorting (arrival order)
     "arrival": (lambda m: m["uid"] or 0, True),
     "date": (lambda m: m["date"].timestamp() if m.get("date") else 0, True),
     "subject": (lambda m: (m.get("subject") or "").lower(), False),
@@ -330,8 +331,12 @@ class Mailbox:
         return res
 
     def special(self, kind):
-        conf = self.conf({"drafts": "DRAFTS_FOLDER", "sent": "SENT_FOLDER",
-                          "trash": "TRASH_FOLDER"}[kind])
+        try:
+            conf = self.conf({"drafts": "DRAFTS_FOLDER", "sent": "SENT_FOLDER",
+                              "trash": "TRASH_FOLDER", "archive": "ARCHIVE_FOLDER",
+                              "junk": "JUNK_FOLDER"}[kind])
+        except KeyError:
+            conf = None
         for f in self.imap.list_folders():
             if f["special"] == kind:
                 return f["name"]
@@ -377,25 +382,30 @@ class Mailbox:
             mods = mods or ["subject", "from", "to", "body"]
             fields = {"subject": "SUBJECT", "from": "FROM", "to": "TO",
                       "cc": "CC", "body": "BODY", "text": "TEXT"}
+            # header-based modifiers: HEADER "<name>" (Elastic offers all of these)
+            headers = {"replyto": "Reply-To", "followupto": "Followup-To",
+                       "bcc": "Bcc", "sender": "Sender"}
             terms = []
             for mod in mods:
+                if mod in headers:
+                    terms.append(["HEADER", _q(headers[mod]), _q(search)])
+                    continue
                 f = fields.get(mod)
-                if f and f not in terms:
-                    terms += [f, _q(search)]
+                if f and [f, _q(search)] not in terms:
+                    terms.append([f, _q(search)])
             if not terms:
-                terms = ["TEXT", _q(search)]
+                terms = [["TEXT", _q(search)]]
             # interleaved right-associated OR chain:
             # OR SUBJECT "x" OR FROM "x" OR TO "x" BODY "x"
-            if len(terms) > 2:
-                pairs = [terms[i:i + 2] for i in range(0, len(terms), 2)]
+            if len(terms) > 1:
                 chain = []
-                for idx, pair in enumerate(pairs):
-                    if idx < len(pairs) - 1:
+                for idx, pair in enumerate(terms):
+                    if idx < len(terms) - 1:
                         chain.append("OR")
                     chain += pair
                 crit += chain
             else:
-                crit += terms
+                crit += terms[0]
         return crit or ["ALL"]
 
     def _list_one(self, folder, page_size, search=None, mods=None,
@@ -565,6 +575,28 @@ class Mailbox:
         if uids:
             self.imap.set_flags(uids, ["\\Seen"], mode="add")
         return len(uids)
+
+    def compact(self, folder):
+        """EXPUNGE the folder (Elastic 'Compact' action)."""
+        self.imap.select(folder)
+        self.imap.expunge()
+
+    def archive(self, folder, uids):
+        target = self.special("archive")
+        if not target or target == folder:
+            raise MailError("No archive folder configured")
+        self.imap.select(folder)
+        self.imap.copy(uids, target)
+        self.imap.set_flags(uids, ["\\Deleted"], mode="add")
+        self.imap.expunge()
+        return target
+
+    def unread_count(self, folder):
+        try:
+            total, unseen = self.imap.status(folder)
+            return unseen
+        except Exception:
+            return 0
 
     def quota_usage(self):
         """Return (used_bytes, quota_kb) or (0, 0) when unsupported."""
