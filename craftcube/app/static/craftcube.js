@@ -8,20 +8,32 @@
 
   // ------------------------------------------------------------ layout classes
   function layoutClass() {
+    // Elastic breakpoints (ui.js screen_mode): phone <=480, small <=768,
+    // normal <=1200, large >1200. `touch` mode is set at <=1024.
     var w = window.innerWidth;
-    if (w <= 480) return 'layout-phone';
-    if (w <= 768) return 'layout-small';
-    if (w <= 1024) return 'layout-normal';
-    return 'layout-large';
+    var mode = w <= 480 ? 'phone' : w <= 768 ? 'small' : w <= 1200 ? 'normal' : 'large';
+    return 'layout-' + mode;
   }
   function applyLayout() {
     var c = layoutClass();
     var cls = document.documentElement.className
       .replace(/ ?layout-(phone|small|normal|large)/g, '');
+    if (window.innerWidth <= 1024) { if (cls.indexOf('touch') < 0) cls += ' touch'; }
+    else cls = cls.replace(/ ?touch/g, '');
     document.documentElement.className = (cls + ' ' + c).trim();
   }
   document.addEventListener('DOMContentLoaded', applyLayout);
   window.addEventListener('resize', applyLayout);
+
+  // ui.js: buttons that should be hidden on small screen devices —
+  // data-hidden="big|small|phone|large|lbs" becomes hidden-<mode> class
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-hidden]').forEach(function (el) {
+      var v = el.getAttribute('data-hidden'), re = /(large|big|small|phone|lbs)/g, m,
+        parent = el.parentElement && el.parentElement.tagName === 'LI' ? el.parentElement : el;
+      while ((m = re.exec(v))) parent.classList.add('hidden-' + m[1]);
+    });
+  });
 
   // ------------------------------------------------------------ column nav
   var cols = ['layout-menu', 'layout-sidebar', 'layout-list', 'layout-content'];
