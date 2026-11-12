@@ -164,12 +164,14 @@ class Store:
             c = self._conn()
             if failed:
                 c.execute(
-                    "UPDATE users SET failed_login = ?, failed_login_counter = COALESCE(failed_login_counter,0)+1 WHERE user_id = ?",
+                    "UPDATE users SET failed_login = ?, failed_login_counter ="
+                    " COALESCE(failed_login_counter,0)+1 WHERE user_id = ?",
                     (now(), user_id),
                 )
             else:
                 c.execute(
-                    "UPDATE users SET last_login = ?, failed_login = NULL, failed_login_counter = NULL WHERE user_id = ?",
+                    "UPDATE users SET last_login = ?, failed_login = NULL,"
+                    " failed_login_counter = NULL WHERE user_id = ?",
                     (now(), user_id),
                 )
             c.commit()
@@ -253,7 +255,8 @@ class Store:
                     """UPDATE identities SET name=?, organization=?, email=?, "reply-to"=?, bcc=?,
                        signature=?, html_signature=?, standard=?, changed=? WHERE user_id=? AND identity_id=?""",
                     (data["name"], data["organization"], data["email"], data["reply_to"], data["bcc"],
-                     data["signature"], int(data["html_signature"]), int(data["standard"]), now(), user_id, identity_id),
+                     data["signature"], int(data["html_signature"]), int(data["standard"]),
+                     now(), user_id, identity_id),
                 )
             else:
                 c.execute(
@@ -266,7 +269,7 @@ class Store:
             if int(data.get("standard", 0)):
                 col = "identity_id" if identity_id else "last_insert_rowid()"
                 c.execute(
-                    f"UPDATE identities SET standard = 0 WHERE user_id = ? AND del = 0 AND {col} != ?",
+                    f"UPDATE identities SET standard = 0 WHERE user_id = ? AND del = 0 AND {col} != ?",  # noqa: S608 - col is one of two column-name literals
                     (user_id, identity_id or c.execute("SELECT last_insert_rowid()").fetchone()[0]),
                 )
             c.commit()
@@ -362,8 +365,8 @@ class Store:
         with _lock:
             c = self._conn()
             q = ",".join("?" * len(contact_ids))
-            c.execute(f"UPDATE contacts SET del = 1, changed = ? WHERE user_id = ? AND contact_id IN ({q})",
-                      [now(), user_id] + list(contact_ids))
+            c.execute(f"UPDATE contacts SET del = 1, changed = ? WHERE user_id = ? AND contact_id IN ({q})",  # noqa: S608 - q is a sequence of '?' bind placeholders
+                      [now(), user_id, *list(contact_ids)])
             c.commit()
 
     def contactgroups(self, user_id):
@@ -397,15 +400,17 @@ class Store:
         with _lock:
             c = self._conn()
             for cid in contact_ids:
-                c.execute("INSERT OR IGNORE INTO contactgroupmembers (contactgroup_id, contact_id, created) VALUES (?,?,?)",
-                          (group_id, cid, now()))
+                c.execute(
+                    "INSERT OR IGNORE INTO contactgroupmembers (contactgroup_id, contact_id, created) VALUES (?,?,?)",
+                    (group_id, cid, now()))
             c.commit()
 
     def contactgroup_remove(self, group_id, contact_ids):
         with _lock:
             c = self._conn()
             for cid in contact_ids:
-                c.execute("DELETE FROM contactgroupmembers WHERE contactgroup_id = ? AND contact_id = ?", (group_id, cid))
+                c.execute("DELETE FROM contactgroupmembers WHERE contactgroup_id = ? AND contact_id = ?",
+                          (group_id, cid))
             c.commit()
 
     # ------------------------------------------------- collected / trusted
@@ -434,6 +439,6 @@ class Store:
         with _lock:
             c = self._conn()
             q = ",".join("?" * len(emails))
-            c.execute(f'DELETE FROM collected_addresses WHERE user_id = ? AND "type" = ? AND email IN ({q})',
-                      [user_id, atype] + list(emails))
+            c.execute(f'DELETE FROM collected_addresses WHERE user_id = ? AND "type" = ? AND email IN ({q})',  # noqa: S608 - q is a sequence of '?' bind placeholders
+                      [user_id, atype, *list(emails)])
             c.commit()

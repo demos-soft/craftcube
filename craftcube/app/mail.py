@@ -3,16 +3,16 @@
 One IMAP connection per request (flask.g); credentials come from the login
 form (or the configured admin account when per-user passwords are disabled).
 """
+import contextlib
 import email
 import email.utils
 import imaplib
 import smtplib
 import ssl as _ssl
 from email.message import EmailMessage
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+from email.utils import parsedate_to_datetime
 
-from .util import parse_header_date, format_address
+from .util import format_address, parse_header_date
 
 # fetched envelope: uid, flags, size, date, from, to, subject, reply-to, in-reply-to, message-id, attachments hint
 FETCH_ITEMS = "(FLAGS INTERNALDATE RFC822.SIZE ENVELOPE BODYSTRUCTURE)"
@@ -61,20 +61,18 @@ class Imap:
                 self.conn = imaplib.IMAP4_SSL(host, port, ssl_context=_ssl.create_default_context())
             else:
                 self.conn = imaplib.IMAP4(host, port)
-                try:
+                with contextlib.suppress(imaplib.IMAP4.error):
+                    # server without STARTTLS (local dev)
                     self.conn.starttls()
-                except imaplib.IMAP4.error:
-                    pass  # server without STARTTLS (local dev)
             self.conn.login(user, password)
         except (imaplib.IMAP4.error, OSError) as e:
-            raise MailError(str(e))
+            raise MailError(str(e)) from e
         self.selected = None
 
     def logout(self):
-        try:
+        with contextlib.suppress(Exception):
+            # best-effort teardown; nothing to act on
             self.conn.logout()
-        except Exception:
-            pass
 
     # ------------------------------------------------------------ folders
 
@@ -198,7 +196,7 @@ class Imap:
         return email.message_from_bytes(raw)
 
     def fetch_part(self, uid, section):
-        typ, data = self.conn.uid("FETCH", str(uid), f"(BODY.PEEK[{section}])")
+        _typ, data = self.conn.uid("FETCH", str(uid), f"(BODY.PEEK[{section}])")
         for item in _iter_fetch(data):
             if isinstance(item, tuple) and len(item) > 1 and item[1]:
                 return item[1]
@@ -227,9 +225,10 @@ class Imap:
 
     def quota(self):
         try:
-            typ, data = self.conn.quota("root", "")
+            _typ, data = self.conn.quota("root", "")
             return data
         except Exception:
+            # server without QUOTA extension (RFC 2087)
             return None
 
 
@@ -277,13 +276,10 @@ def _parse_envelope(meta):
            "in_reply_to": "", "message_id": ""}
     m = re.search(r"INTERNALDATE \"([^\"]+)\"", meta)
     if m:
-        try:
-            from email.utils import parsedate_to_datetime
+        with contextlib.suppress(ValueError, TypeError):
             dt = parsedate_to_datetime(m.group(1))
             out["date"] = dt
             out["date_str"] = m.group(1)
-        except Exception:
-            pass
     return out
 
 
@@ -345,7 +341,7 @@ def thread_messages(msgs):
         groups.setdefault(find(i), []).append(i)
     out = []
     # thread rank = best (first) position of any of its messages in the sorted list
-    for root, idxs in sorted(groups.items(), key=lambda kv: min(kv[1])):
+    for _root, idxs in sorted(groups.items(), key=lambda kv: min(kv[1])):
         idxs.sort(key=lambda i: msgs[i]["date"].timestamp() if msgs[i].get("date") else 0)
         for depth, i in enumerate(idxs):
             msgs[i]["depth"] = depth
@@ -519,7 +515,8 @@ class Mailbox:
         seq = ",".join(str(u) for u in uids)
         typ, data = self.imap.conn.uid(
             "FETCH", seq,
-            "(FLAGS INTERNALDATE RFC822.SIZE BODYSTRUCTURE BODY.PEEK[HEADER.FIELDS (FROM TO CC SUBJECT DATE MESSAGE-ID IN-REPLY-TO REFERENCES CONTENT-TYPE)])")
+            "(FLAGS INTERNALDATE RFC822.SIZE BODYSTRUCTURE"
+            " BODY.PEEK[HEADER.FIELDS (FROM TO CC SUBJECT DATE MESSAGE-ID IN-REPLY-TO REFERENCES CONTENT-TYPE)])")
         out = []
         if typ != "OK":
             return out
@@ -677,10 +674,10 @@ class Mailbox:
                 sub = {"year": y, "month": f"{y}/{m}",
                        "tbmonth": f"{y}/{y}-{m}"}[atype]
                 target = f"{target}/{sub}"
-                try:
+                with contextlib.suppress(Exception):
+                    # folder tree already exists (or connection hiccup; the
+                    # copy below still surfaces real failures)
                     self.imap.create_folder(target)
-                except Exception:
-                    pass
         self.imap.select(folder)
         self.imap.copy(uids, target)
         if prefs.get("read_on_archive"):
@@ -691,9 +688,10 @@ class Mailbox:
 
     def unread_count(self, folder):
         try:
-            total, unseen = self.imap.status(folder)
+            _total, unseen = self.imap.status(folder)
             return unseen
         except Exception:
+            # folder missing or STATUS unsupported
             return 0
 
     def quota_usage(self):
@@ -760,7 +758,7 @@ class Mailbox:
             s.sendmail(msg.get("From", smtp_user or ""), rcpts, msg.as_string())
             s.quit()
         except (smtplib.SMTPException, OSError) as e:
-            raise MailError(str(e))
+            raise MailError(str(e)) from e
         if store_target == "":
             return
         sent = store_target or self.special("sent")

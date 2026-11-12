@@ -1,11 +1,14 @@
 """CraftCube configuration (env-overridable)."""
 import os
 
+
 class Config:
     SECRET_KEY = os.environ.get("CRAFTCUBE_SECRET", "craftcube-dev-secret-change-me")
 
     # SQLite database (roundcubemail-derived schema: users, contacts, identities, ...)
-    DB_PATH = os.environ.get("CRAFTCUBE_DB", os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "craftcube.sqlite"))
+    DB_PATH = os.environ.get(
+        "CRAFTCUBE_DB",
+        os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "craftcube.sqlite"))
 
     # IMAP / SMTP
     IMAP_HOST = os.environ.get("CRAFTCUBE_IMAP_HOST", "localhost")

@@ -1,16 +1,12 @@
 """CraftCube — a Python re-implementation of the Roundcube Webmail UI."""
-import functools
 import os
 import re
 
-from flask import (Flask, abort, flash, g, redirect, render_template,
-                   request, session, url_for)
+from flask import Flask, g, render_template
 
-from .auth import hash_password, verify_password
-from .config import Config
-from .mail import Imap, MailError, Mailbox
-from .store import Store
 from . import util
+from .config import Config
+from .store import Store
 
 
 def create_app(config_overrides=None):

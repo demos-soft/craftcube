@@ -1,20 +1,30 @@
 """All HTTP views: login, mail, compose, addressbook, settings."""
+import contextlib
 import email
 import functools
 import io
 import json
 import re
+from datetime import UTC
 from html import unescape
 
-from flask import (Blueprint, Response, abort, current_app, flash, g,
-                   redirect, render_template, request, session, url_for,
-                   make_response)
+from flask import (
+    Blueprint,
+    Response,
+    abort,
+    current_app,
+    flash,
+    g,
+    redirect,
+    render_template,
+    request,
+    session,
+    url_for,
+)
 
+from . import prefs_data, prefs_sections, util
 from .auth import hash_password, verify_password
-from .mail import Imap, MailError, Mailbox, build_message, _decode_header
-from . import util
-from . import prefs_sections
-from . import prefs_data
+from .mail import Imap, Mailbox, MailError, _decode_header, build_message
 
 PREF_SECTIONS = prefs_sections.sections
 
@@ -243,11 +253,10 @@ def mail():
         flash(str(e), "error")
         listing = {"items": [], "page": 1, "pages": 1, "total": 0, "first": 0, "last": 0, "uids": []}
     uid = request.args.get("_uid")
-    quota_used, quota_kb = (0, 0)
-    try:
+    quota_used = quota_kb = 0
+    with contextlib.suppress(Exception):
+        # server without QUOTA support -> zeros
         quota_used, quota_kb = box.quota_usage()
-    except Exception:
-        pass
     return render("mail", "mail.html", folder=folder,
                   folder_title=folder_label(folder, getattr(box, "prefs", None) or g.get("prefs") or {}),
                   listing=listing,
@@ -340,13 +349,13 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
         next_uid = uids[i - 1] if i > 0 else None
     except (ValueError, IndexError):
         pass
-    return dict(folder=folder, uid=uid, msg=msg,
-                subject=_hdr(msg, "Subject") or "(no subject)",
-                headers=headers, parts=rendered, attachments=attachments,
-                sender=util.header_addresses(msg, "From")[:1],
-                sender_domain=sender_domain,
-                remote_blocked=remote_blocked,
-                date=_msg_date(msg), prev_uid=prev_uid, next_uid=next_uid)
+    return {"folder": folder, "uid": uid, "msg": msg,
+            "subject": _hdr(msg, "Subject") or "(no subject)",
+            "headers": headers, "parts": rendered, "attachments": attachments,
+            "sender": util.header_addresses(msg, "From")[:1],
+            "sender_domain": sender_domain,
+            "remote_blocked": remote_blocked,
+            "date": _msg_date(msg), "prev_uid": prev_uid, "next_uid": next_uid}
 
 
 @bp.route("/message")
@@ -390,15 +399,14 @@ def message_view():
     # prev/next navigation within the folder (same order as the message list)
     prev_uid = next_uid = None
     if not framed:
-        try:
+        with contextlib.suppress(Exception):
+            # navigation is best-effort: a list fetch hiccup just hides prev/next
             order_uids = [str(u) for u in box.message_list(folder, page=1, page_size=100000,
                                      sort="", order="desc")["uids"]]
             if uid in order_uids:
                 idx = order_uids.index(uid)
                 prev_uid = order_uids[idx + 1] if idx + 1 < len(order_uids) else None
                 next_uid = order_uids[idx - 1] if idx > 0 else None
-        except Exception:
-            pass
     ctx["prev_uid"] = prev_uid
     ctx["next_uid"] = next_uid
     if request.args.get("_headers") == "1":
@@ -497,7 +505,6 @@ def message_export():
         })
 
     from email.utils import parseaddr
-    from datetime import timezone as _tz
     buf = _io.BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
         if fmt == "mbox":
@@ -506,7 +513,7 @@ def message_export():
                 raw = raw_for(u)
                 frm = parseaddr(str(raw.get("From", "")))[1] or "MAILER-DAEMON"
                 frm = _re.sub(r"\s", "-", frm)
-                d = _msg_date(raw) or util.to_local(__import__("datetime").datetime.now(_tz.utc))
+                d = _msg_date(raw) or util.to_local(__import__("datetime").datetime.now(UTC))
                 # RFC4155 "From " separator line + escaped in-body separators
                 body += (
                     f"From {frm} {d.strftime('%a %b %d %H:%M:%S %Y')}\r\n".encode()
@@ -592,7 +599,7 @@ def message_import():
             flash(f"Successfully imported {count} messages", "confirmation")
         else:
             flash("Import failed! The uploaded file is not a valid message or mailbox file", "error")
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         flash(f"Import failed! The uploaded file is not a valid message or mailbox file ({e})", "error")
     return redirect(url_for("views.mail", _mbox=folder))
 
@@ -719,14 +726,12 @@ def _run_mail_action(box, command, folder, uids, dest=None):
         elif command == "markallread":
             n = box.mark_all_read(folder)
             flash(f"{n} message(s) marked as read.", "confirmation")
-        elif command == "move":
-            if dest:
-                box.move(folder, uids, dest)
-                flash(f"Moved to {dest}.", "confirmation")
-        elif command == "copy":
-            if dest:
-                box.copy(folder, uids, dest)
-                flash(f"Copied to {dest}.", "confirmation")
+        elif command == "move" and dest:
+            box.move(folder, uids, dest)
+            flash(f"Moved to {dest}.", "confirmation")
+        elif command == "copy" and dest:
+            box.copy(folder, uids, dest)
+            flash(f"Copied to {dest}.", "confirmation")
     except MailError as e:
         flash(str(e), "error")
 
@@ -748,26 +753,26 @@ def _quote(msg, header=True):
         for p in (msg.walk() if msg.is_multipart() else [msg]):
             if p.get_content_type() == "text/html":
                 try:
-                    raw = (p.get_payload(decode=True) or b"").decode(p.get_content_charset() or "utf-8", errors="replace")
+                    charset = p.get_content_charset() or "utf-8"
+                    raw = (p.get_payload(decode=True) or b"").decode(charset, errors="replace")
                     body = util.sanitize_html(raw)
                 except Exception:
                     body = ""
                 break
     if header:
         body = f"\n\nOn {util.fmt_datetime(dt)}, {frm} wrote:\n" + \
-               "\n".join("> " + l for l in body.splitlines())
+               "\n".join("> " + line for line in body.splitlines())
     return body
 
 
 def _msg_has_html(msg):
     # rcube_message::has_html_part(): a text/html part that isn't an attachment
-    try:
+    with contextlib.suppress(Exception):
+        # malformed MIME structure -> treat as plain text
         for p in (msg.walk() if msg.is_multipart() else [msg]):
             if p.get_content_type() == "text/html" and not p.get_filename() \
                and p.get_content_disposition() != "attachment":
                 return True
-    except Exception:
-        pass
     return False
 
 
@@ -990,12 +995,11 @@ def compose():
         for p in source_msg.walk():
             if p.get_content_type() == "text/html" and not p.get_filename() \
                and p.get_content_disposition() != "attachment":
-                try:
-                    raw = (p.get_payload(decode=True) or b"").decode(
-                        p.get_content_charset() or "utf-8", errors="replace")
+                with contextlib.suppress(Exception):
+                    # undecodable part -> leave the pre-filled body empty
+                    charset = p.get_content_charset() or "utf-8"
+                    raw = (p.get_payload(decode=True) or b"").decode(charset, errors="replace")
                     prefill["body"] = util.sanitize_html(raw)
-                except Exception:
-                    pass
                 break
 
     if request.method == "POST":
@@ -1044,7 +1048,8 @@ def compose():
                 box.delete_draft(draft_uid)
             # 'Collected addresses' prefs: store recipients (type 1) and the
             # replied-to sender as a trusted sender (type 2), like Roundcube.
-            try:
+            with contextlib.suppress(Exception):
+                # never fail a send over address bookkeeping
                 up = getattr(box, "prefs", None) or {}
                 cr = str(up.get("collected_recipients", "1"))
                 if cr == "1":
@@ -1061,8 +1066,6 @@ def compose():
                     nm, addr = _decode_header(frm), _eu.parseaddr(frm)[1]
                     if addr and str(up.get("collected_senders", "2")) == "2":
                         store.collected_upsert(session["user_id"], 2, nm or addr, addr)
-            except Exception:
-                pass  # never fail a send over address bookkeeping
             flash("Message sent successfully.", "confirmation")
             if store_target == "":  # "don't save"
                 return redirect(url_for("views.mail", _mbox=box.special("drafts") or "INBOX"))
@@ -1215,7 +1218,8 @@ def contact_edit(cid):
             "addresses": [tuple(a) for a in zip(
                 form.getlist("_atype[]"), form.getlist("_astreet[]"),
                 form.getlist("_alocality[]"), form.getlist("_azip[]"),
-                form.getlist("_aregion[]"), form.getlist("_acountry[]"))
+                form.getlist("_aregion[]"), form.getlist("_acountry[]"),
+                strict=False)  # parallel form lists; trailing empties are dropped below
                 if any(x.strip() for x in a)],
         }
         name = form.get("name", "").strip()

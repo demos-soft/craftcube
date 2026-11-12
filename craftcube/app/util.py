@@ -3,14 +3,14 @@ import email
 import email.utils
 import html as _html
 import re
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from html.parser import HTMLParser
 
 # ---------------------------------------------------------------- dates/sizes
 
 def to_local(dt):
     if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
+        dt = dt.replace(tzinfo=UTC)
     return dt.astimezone()
 
 def fmt_date(dt):
@@ -72,7 +72,9 @@ def php_strftime(fmt, dt):
     while i < len(fmt):
         c = fmt[i]
         if c == "\\" and i + 1 < len(fmt):
-            out.append(fmt[i + 1]); i += 2; continue
+            out.append(fmt[i + 1])
+            i += 2
+            continue
         out.append(_PHP_TO_STRFTIME.get(c, c))
         i += 1
     try:
@@ -88,10 +90,11 @@ def to_local_tz(dt, tzname=None):
         try:
             from zoneinfo import ZoneInfo
             if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=timezone.utc)
+                dt = dt.replace(tzinfo=UTC)
             return dt.astimezone(ZoneInfo(tzname))
         except Exception:
-            pass
+            # unknown/invalid timezone pref -> local fallback
+            return to_local(dt)
     return to_local(dt)
 
 def fmt_pref_time(dt, prefs):
@@ -100,11 +103,10 @@ def fmt_pref_time(dt, prefs):
     prefs = prefs or {}
     tf = prefs.get("time_format", "H")
     # reference stores PHP formats ('H:i'); legacy CraftCube used 'H'/'h'
-    fmt = php_strftime(tf, to_local_tz(dt, prefs.get("timezone"))) \
-        if ":" in tf else \
-        to_local_tz(dt, prefs.get("timezone")).strftime(
-            "%H:%M" if tf == "H" else "%I:%M %p")
-    return fmt
+    if ":" in tf:
+        return php_strftime(tf, to_local_tz(dt, prefs.get("timezone")))
+    return to_local_tz(dt, prefs.get("timezone")).strftime(
+        "%H:%M" if tf == "H" else "%I:%M %p")
 
 def fmt_pref_date(dt, prefs):
     """Message view date honouring date_format/time_format prefs.
@@ -129,7 +131,7 @@ def list_pref_date(dt, prefs):
         return ""
     prefs = prefs or {}
     dt = to_local_tz(dt, prefs.get("timezone"))
-    now = to_local_tz(datetime.now(timezone.utc), prefs.get("timezone"))
+    now = to_local_tz(datetime.now(UTC), prefs.get("timezone"))
     tf = prefs.get("time_format", "H")
     tfmt = php_strftime(tf, dt) if ":" in tf else ("%H:%M" if tf == "H" else "%I:%M %p")
     if dt.date() == now.date():
@@ -195,7 +197,8 @@ _ALLOWED_TAGS = {
     "tr", "tt", "u", "ul", "var", "wbr",
 }
 _DROP_CONTENT = {"script", "style", "head", "title", "iframe", "object", "embed"}
-_ALLOWED_ATTR_RE = re.compile(r"^(href|src|alt|title|width|height|colspan|rowspan|align|valign|border|bgcolor|color|size|face|class|id|style)$")
+_ALLOWED_ATTR_RE = re.compile(
+    r"^(href|src|alt|title|width|height|colspan|rowspan|align|valign|border|bgcolor|color|size|face|class|id|style)$")
 _SAFE_URL_RE = re.compile(r"^\s*(https?:|mailto:|cid:|#|/)", re.I)
 
 
@@ -288,8 +291,8 @@ def vcard_encode(f):
     def esc(v):
         return (v or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
     lines.append("FN:" + esc(f.get("name")))
-    lines.append("N:%s;%s;%s;%s;%s" % tuple(esc(f.get(k)) for k in
-                 ("surname", "firstname", "middlename", "prefix", "suffix")))
+    n = ";".join(esc(f.get(k)) for k in ("surname", "firstname", "middlename", "prefix", "suffix"))
+    lines.append(f"N:{n}")
     if f.get("nickname"):
         lines.append("NICKNAME:" + esc(f["nickname"]))
     if f.get("organization"):
@@ -300,16 +303,16 @@ def vcard_encode(f):
         lines.append("TITLE:" + esc(f["jobtitle"]))
     for typ, val in f.get("emails") or []:
         if val:
-            lines.append("EMAIL;TYPE=%s:%s" % (typ or "work", esc(val)))
+            lines.append(f"EMAIL;TYPE={typ or 'work'}:{esc(val)}")
     for typ, val in f.get("phones") or []:
         if val:
-            lines.append("TEL;TYPE=%s:%s" % (typ or "work", esc(val)))
+            lines.append(f"TEL;TYPE={typ or 'work'}:{esc(val)}")
     for addr in f.get("addresses") or []:
         typ, street, locality, zipcode, region, country = (list(addr) + [""] * 6)[:6]
         if any((street, locality, zipcode, region, country)):
-            lines.append("ADR;TYPE=%s:;;%s;%s;%s;%s;%s" % (
-                typ or "home", esc(street), esc(locality), esc(region),
-                esc(zipcode), esc(country)))
+            lines.append(
+                f"ADR;TYPE={typ or 'home'}:;;{esc(street)};{esc(locality)};"
+                f"{esc(region)};{esc(zipcode)};{esc(country)}")
     if f.get("gender"):
         lines.append("GENDER:" + esc(f["gender"]))
     if f.get("birthday"):

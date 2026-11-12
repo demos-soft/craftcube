@@ -14,7 +14,8 @@ _ENGINES = ("hunspell", "aspell")
 
 
 def _run(cmd, data):
-    p = subprocess.run(cmd, input=data.encode("utf-8"),
+    # argv form, fixed executables; never shell=True
+    p = subprocess.run(cmd, input=data.encode("utf-8"),  # noqa: S603
                        capture_output=True, timeout=30)
     return p.stdout.decode("utf-8", errors="replace")
 
@@ -59,14 +60,13 @@ def check(text, lang):
                 continue
             word = parts[0].strip("&")
             sugg = [s for s in parts[1:] if not s.startswith("*")
-                    and not s[0] in "+-?@"]
+                    and s[0] not in "+-?@"]
             words[word] = sugg
         return words
     # aspell
     d = lang.split("_")[0]
     out = _run(["aspell", "--lang=" + d, "list"], text)
-    words = {w: [] for w in out.split() if w.strip()}
-    return words
+    return {w: [] for w in out.split() if w.strip()}
 
 
 def add_word(word):

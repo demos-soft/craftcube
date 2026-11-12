@@ -3,7 +3,8 @@ rcube_html2text so the compose editor's html<->plain toggle converts content
 exactly like the reference (?_task=utils&_action=text2html|html2text)."""
 
 import re
-from html import escape as _escape, unescape
+from html import escape as _escape
+from html import unescape
 
 # rcube_text2html defaults ('wrap' => true, as used by the text2html action)
 _NBSP = "\u00a0"
@@ -67,7 +68,7 @@ class _LinkReplacer:
 
     def _store(self, html):
         self.tokens.append(html)
-        return "\x00%d\x01" % (len(self.tokens) - 1)
+        return f"\x00{len(self.tokens) - 1}\x01"
 
     def replace(self, text):
         # the reference protects URLs/addresses BEFORE html-escaping the lines
@@ -82,14 +83,14 @@ class _LinkReplacer:
                 break
             if m_url and (not m_mail or m_url.start() <= m_mail.start()):
                 url = m_url.group(0)
-                html = ('<a rel="noreferrer" target="_blank" href="%s">%s</a>'
-                        % (_escape(url, quote=True), _escape(url, quote=False)))
+                html = (f'<a rel="noreferrer" target="_blank" href="{_escape(url, quote=True)}">'
+                        f"{_escape(url, quote=False)}</a>")
                 pieces.append(text[pos:m_url.start()])
                 pieces.append(self._store(html))
                 pos = m_url.end()
             else:
                 addr = m_mail.group(0)
-                html = '<a href="mailto:%s">%s</a>' % (addr, addr)
+                html = f'<a href="mailto:{addr}">{addr}</a>'
                 pieces.append(text[pos:m_mail.start()])
                 pieces.append(self._store(html))
                 pos = m_mail.end()
@@ -163,7 +164,7 @@ def text2html(text):
         lines[last] += "</blockquote>" * quote_level
 
     # PHP unset() removes the row so implode skips it entirely
-    text = "\n".join(l for l in lines if l is not None)
+    text = "\n".join(line for line in lines if line is not None)
 
     # (c) signature colorization: last standalone '--\u00a0\n' within
     # sig_max_lines(15) of the end wraps the tail in <span class="sig">
@@ -316,7 +317,7 @@ def _replace_links(text, links_mode, width, link_list):
             else:
                 index = len(link_list)
                 link_list.append(url)
-            return display + " [%d]" % (index + 1)
+            return f"{display} [{index + 1}]"
         return _handle_link(url, display, links_mode, width)
     return re.sub(r"<a [^>]*href=([\"'])(.*?)\1[^>]*>(.*?)</a>",
                   lambda m: cb_type(m, links_mode, width, link_list),
@@ -333,7 +334,7 @@ def cb_type(m, links_mode, width, link_list):
         else:
             index = len(link_list)
             link_list.append(url)
-        return display + " [%d]" % (index + 1)
+        return f"{display} [{index + 1}]"
     return _handle_link(url, display, links_mode, width)
 
 
@@ -343,10 +344,9 @@ def _callback_passes(text, links_mode, width, link_list):
     text = re.sub(r"<(h)[123456]( [^>]*)?>(.*?)</h[123456]>",
                   lambda m: _toupper("\n\n" + m.group(3) + "\n\n"),
                   text, flags=re.I | re.S)
-    text = re.sub(r"<(th)( [^>]*)?>(.*?)</th>",
+    return re.sub(r"<(th)( [^>]*)?>(.*?)</th>",
                   lambda m: _toupper("\t\t" + m.group(3) + "\n"),
                   text, flags=re.I | re.S)
-    return text
 
 
 def _convert_pre(text, links_mode, width, link_list):
@@ -404,5 +404,5 @@ def html2text(html, links=False, width=75, _inner=False):
     if _converter.link_list:
         text += "\n\nLinks:\n------\n"
         for i, url in enumerate(_converter.link_list):
-            text += "[%d] %s\n" % (i + 1, url)
+            text += f"[{i + 1}] {url}\n"
     return text.rstrip()
