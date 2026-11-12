@@ -1,0 +1,13 @@
+{
+  "name": "craftcube-dev",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dev tooling for CraftCube (linting). Not shipped in the image.",
+  "scripts": {
+    "lint": "eslint app/static"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0"
+  }
+}
