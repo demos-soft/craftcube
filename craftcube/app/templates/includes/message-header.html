@@ -11,7 +11,7 @@
                  alt="Contact photo" class="contactphoto">
             <div class="header-content">
               <div class="header-summary"><span>From <span class="adr"><a href="mailto:{{ sender[0][1] if sender else '' }}"
-                    class="rcmContactAddress" title="{{ sender[0][1] if sender else '' }}">{{ sender[0][0] if sender and sender[0][0] else (sender[0][1] if sender else '') }}</a></span> on <span class="text-nowrap">{{ date|summarydate }}</span></span></div>
+                    class="rcmContactAddress" title="{{ sender[0][1] if sender else '' }}">{% set se = (g.prefs or {}).get('message_show_email') %}{{ (sender[0][0] ~ ' <' ~ sender[0][1] ~ '>') if se and sender and sender[0][0] and sender[0][1] and sender[0][0] != sender[0][1] else (sender[0][0] if sender and sender[0][0] else (sender[0][1] if sender else '')) }}</a></span> on <span class="text-nowrap">{{ date|summarydate }}</span></span></div>
               <table class="header-headers"><tbody>
                 {% for h, v in headers if h not in ('Subject',) %}
                 <tr><td class="header-title">{{ h }}</td><td class="header {{ h|lower|replace('-','') }}">{{ v }}</td></tr>

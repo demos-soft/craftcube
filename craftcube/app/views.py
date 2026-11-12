@@ -485,10 +485,13 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
             allowed = get_store().contact_email_known(session["user_id"], fm, kind)
     rendered = []
     remote_blocked = False
+    # text parts without a declared charset decode with default_charset
+    # (rcube_message.php:351; reference default ISO-8859-1)
+    dcharset = prefs.get("default_charset") or "ISO-8859-1"
     for p in parts:
         try:
             payload = p.get_payload(decode=True) or b""
-            charset = p.get_content_charset() or "utf-8"
+            charset = p.get_content_charset() or dcharset
             text = payload.decode(charset, errors="replace")
         except Exception:
             text, charset = "", "utf-8"
@@ -1482,6 +1485,7 @@ def compose():
             followup_to=request.form.get("_followupto") or None,
             priority=request.form.get("_priority") or None,
             mdn=bool(request.form.get("_mdn")),
+            force_7bit=bool(prefs.get("force_7bit")),
         )
         act = request.form.get("_action", "send")
         if act == "save" and request.form.get("_ajax"):

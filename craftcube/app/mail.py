@@ -871,7 +871,7 @@ class Mailbox:
 
 def build_message(from_addr, from_name, to, cc, bcc, subject, body, html=False,
                   attachments=None, in_reply_to=None, references=None, reply_to=None,
-                  priority=None, mdn=False, followup_to=None):
+                  priority=None, mdn=False, followup_to=None, force_7bit=False):
     """Compose an RFC2822 message. attachments: [(filename, ctype, bytes)]."""
     msg = EmailMessage()
     frm = format_address(from_name, from_addr) if from_name else from_addr
@@ -902,7 +902,12 @@ def build_message(from_addr, from_name, to, cc, bcc, subject, body, html=False,
 
     if attachments:
         # EmailMessage builds multipart/mixed with the body part itself
-        msg.set_content(body or "", subtype="html" if html else "plain")
+        try:
+            (body or "").encode("ascii")
+            msg.set_content(body or "", subtype="html" if html else "plain")
+        except UnicodeEncodeError:
+            cte = "quoted-printable" if (force_7bit or html) else "8bit"
+            msg.set_content(body or "", subtype="html" if html else "plain", cte=cte)
         for fname, ctype, data in attachments:
             maintype, _, subtype = (ctype or "application/octet-stream").partition("/")
             msg.add_attachment(data, maintype=maintype or "application",
@@ -911,5 +916,12 @@ def build_message(from_addr, from_name, to, cc, bcc, subject, body, html=False,
     if html:
         msg.set_content(body or "", subtype="html", cte="quoted-printable")
     else:
-        msg.set_content(body or "")
+        # rcmail_sendmail.php:292 - plain bodies with non-ASCII content use
+        # quoted-printable when force_7bit is on, otherwise 8bit; pure-ASCII
+        # bodies stay 7bit (set_content's own fallback)
+        try:
+            (body or "").encode("ascii")
+            msg.set_content(body or "")
+        except UnicodeEncodeError:
+            msg.set_content(body or "", cte="quoted-printable" if force_7bit else "8bit")
     return msg
