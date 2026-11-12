@@ -30,9 +30,9 @@
      data-popup="message-menu"><span class="inner">More</span></a>
   {% if message_view %}
   <span class="spacer"></span>
-  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=prev_uid, _framed=framed) if prev_uid else '#' }}"
+  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=prev_uid, _framed=framed, _extwin=1 if extwin else none) if prev_uid else '#' }}"
      class="prev{{ ' disabled' if not prev_uid }}" id="tb-prev" title="Previous message"><span class="inner">Previous</span></a>
-  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=next_uid, _framed=framed) if next_uid else '#' }}"
+  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=next_uid, _framed=framed, _extwin=1 if extwin else none) if next_uid else '#' }}"
      class="next{{ ' disabled' if not next_uid }}" id="tb-next" title="Next message"><span class="inner">Next</span></a>
   {% endif %}
 </div>
@@ -86,7 +86,7 @@
     <li role="menuitem"><a class="copy disabled" id="tb-copy" href="#copy"
         data-popup="copyto-menu"><span>Copy to...</span></a></li>
     <li role="menuitem"><a class="extwin disabled" id="tb-extwin"
-        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid) if message_view else '#' }}"
+        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _extwin=1) if message_view else '#' }}"
         target="_blank"><span>Open in new window</span></a></li>
   </ul>
 </div>

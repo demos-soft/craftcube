@@ -357,6 +357,13 @@ def message_view():
         raw = box.raw_message(folder, uid)
         return Response(raw.as_string(), mimetype="text/plain; charset=utf-8")
     framed = request.args.get("_framed") == "1"
+    # Reference behavior: a plain (non-framed, non-extwin, non-print) message
+    # URL renders the mail shell with the preview iframe, never a bare pane —
+    # redirect into /mail?_uid= which loads the framed preview. extwin/print/
+    # framed/source/headers keep their standalone pages.
+    if not framed and not request.args.get("_print") and not request.args.get("_extwin"):
+        return redirect(url_for("views.mail", _mbox=folder, _uid=uid,
+                                _noseen=request.args.get("_noseen")))
     ctx = build_message_ctx(box, folder, uid,
                             mark_seen=request.args.get("_noseen") != "1",
                             allow_remote=True if request.args.get("_load") == "remote" else None)
@@ -368,6 +375,7 @@ def message_view():
         ctx = build_message_ctx(box, folder, uid, mark_seen=False, allow_remote=True)
         ctx["remote_blocked"] = False
     ctx["framed"] = framed
+    ctx["extwin"] = request.args.get("_extwin") == "1"
     ctx["subject_title"] = ctx.get("subject")
     ctx["print"] = request.args.get("_print") == "1"
     # prev/next navigation within the folder (same order as the message list)

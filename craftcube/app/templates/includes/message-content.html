@@ -19,7 +19,7 @@
               {% if remote_blocked %}
               <div id="remote-objects-message" class="notice">
                 <span>To protect your privacy remote resources have been blocked.</span>&nbsp;<span class="boxbuttons"><a
-                  href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}">Allow</a></span>
+                  href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}{{ '&_extwin=1' if extwin else '' }}">Allow</a></span>
               </div>
               {% endif %}
             </div>

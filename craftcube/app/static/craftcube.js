@@ -642,7 +642,7 @@
         var extwin = document.querySelector('#tb-extwin');
         if (extwin) {
           var base = (extwin.getAttribute('href') || '#').split('?')[0];
-          if (base === '#') extwin.setAttribute('href', '/message?' + q);
+          if (base === '#') extwin.setAttribute('href', '/message?' + q + '&_extwin=1');
         }
       }
     }

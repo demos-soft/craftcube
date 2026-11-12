@@ -2,7 +2,7 @@
           <h2 class="subject">
             <span class="voice">Subject: </span>{{ subject }}
             <a class="extwin" title="Open in new window" target="_blank"
-               href="{{ url_for('views.message_view', _mbox=folder, _uid=uid) }}"><span class="inner">Open in new window</span></a>
+               href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _extwin=1) }}"><span class="inner">Open in new window</span></a>
           </h2>
           <div class="header">
             <img src="{{ url_for('static', filename='images/contactpic.svg') }}"
@@ -20,7 +20,7 @@
                 <a href="#all-headers" class="headers-all" id="hdr-all">Headers</a>
                 <span class="voice">Message headers</span>
                 {% if remote_blocked %}
-                <a class="remote-allow" href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}">Allow remote content</a>
+                <a class="remote-allow" href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}{{ '&_extwin=1' if extwin else '' }}">Allow remote content</a>
                 {% endif %}
               </div>
             </div>
