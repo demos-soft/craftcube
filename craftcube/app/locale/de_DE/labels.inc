@@ -726,3 +726,13 @@ $labels['helplistkeyboardnavmessages'] = "Pfeil rechts/links: Nachricht im Threa
 Enter: Öffne die ausgewählte/fokussierte Nachricht
 Rücktaste: Verschiebe gewählte Nachricht in den Mülleimer";
 $labels['helplistkeyboardnavcontacts'] = "Enter: Ausgewählten Kontakt öffnen.";
+$labels['archivefolder'] = 'Archiv';
+$labels['settingstitle'] = 'Archiv';
+$labels['archivetype'] = 'Archiv aufteilen nach';
+$labels['archivetypeyear'] = 'Jahr (z.B. Archiv/2012)';
+$labels['archivetypemonth'] = 'Monat (z.B. Archiv/2012/06)';
+$labels['archivetypetbmonth'] = 'Monat - Thunderbird-kompatibel (z.B. Archiv/2012/2012-06)';
+$labels['archivetypefolder'] = 'Originalordner';
+$labels['archivetypefolderyear'] = 'Jahr und der Originalordner (z.B. Archiv/2012/...)';
+$labels['archivetypefoldermonth'] = 'Jahr, Monat und der Originalordner (z.B. Archiv/2012/06/...)';
+$labels['archivetypesender'] = 'Absender-E-Mail';

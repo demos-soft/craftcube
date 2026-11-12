@@ -796,3 +796,13 @@ $labels['helplistkeyboardnavmessages'] = "Arrows right/left: expand/collapse mes
 Enter: Open the selected/focused message.
 Delete: Move selected messages to Trash.";
 $labels['helplistkeyboardnavcontacts'] = "Enter: Open the selected/focused contact.";
+$labels['archivefolder'] = 'Archive';
+$labels['settingstitle'] = 'Archive';
+$labels['archivetype'] = 'Divide archive by';
+$labels['archivetypeyear'] = 'Year (e.g. Archive/2012)';
+$labels['archivetypemonth'] = 'Month (e.g. Archive/2012/06)';
+$labels['archivetypetbmonth'] = 'Month - Thunderbird compatible (e.g. Archive/2012/2012-06)';
+$labels['archivetypefolder'] = 'Original folder';
+$labels['archivetypefolderyear'] = 'Year and the original folder (e.g. Archive/2012/...)';
+$labels['archivetypefoldermonth'] = 'Year, month and the original folder (e.g. Archive/2012/06/...)';
+$labels['archivetypesender'] = 'Sender email';

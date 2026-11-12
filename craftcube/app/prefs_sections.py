@@ -294,6 +294,10 @@ def sections(prefs, folders):
                 _folder("junk", "Junk", p, folders),
                 _folder("trash", "Trash", p, folders),
                 _folder("archive", "Archive", p, folders),
+            ]),
+            # reference renders 'Divide archive by' in its own
+            # fieldset.archive with legend 'Archive'
+            ("archive", "Archive", [
                 _sel("archive_type", "Divide archive by", p),
             ]),
         ]},

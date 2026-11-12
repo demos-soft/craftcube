@@ -717,3 +717,13 @@ $labels['helplistkeyboardnavmessages'] = "Flechas izquierda/derecha: expandir/re
 Retorno: Abrir el mensaje seleccionado/enfocado.
 Borrar: Mover los mensajes seleccionado a la Papelera.";
 $labels['helplistkeyboardnavcontacts'] = "Retorno: Abrir el contacto seleccionado";
+$labels['archivefolder'] = 'Archivo';
+$labels['settingstitle'] = 'Archivo';
+$labels['archivetype'] = 'Dividir el archivo por';
+$labels['archivetypeyear'] = 'Año (p.ej. Archivo/2012)';
+$labels['archivetypemonth'] = 'Mes (p.ej. Archivo/2012/06)';
+$labels['archivetypetbmonth'] = 'Mes - Compatible con Thunderbird (ej. Archive/2012/2012-06)';
+$labels['archivetypefolder'] = 'Bandeja original';
+$labels['archivetypefolderyear'] = 'Año y la carpeta original (p.ej. Archivo/2012/...)';
+$labels['archivetypefoldermonth'] = 'Año, mes y la carpeta original (p.ej. Archivo/2012/06/...)';
+$labels['archivetypesender'] = 'Correo electrónico del remitente';

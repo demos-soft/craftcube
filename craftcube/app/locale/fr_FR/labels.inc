@@ -728,3 +728,13 @@ $labels['helplistkeyboardnavmessages'] = "Flèche droite/gauche : déplier/repl
 Entrée : ouvrir le courriel sélectionné/cible.
 Suppr : déplacer les courriels sélectionnés vers la corbeille.";
 $labels['helplistkeyboardnavcontacts'] = "Entrée : ouvrir le contact sélectionné/cible.";
+$labels['archivefolder'] = 'Archives';
+$labels['settingstitle'] = 'Archives';
+$labels['archivetype'] = 'Diviser l’archive par';
+$labels['archivetypeyear'] = 'Année (p. ex. Archives/2012)';
+$labels['archivetypemonth'] = 'Mois (p. ex. Archives/2012/06)';
+$labels['archivetypetbmonth'] = 'Mois – compatible avec Thunderbird (p.ex. Archive/2012/2012-06)';
+$labels['archivetypefolder'] = 'Dossier original';
+$labels['archivetypefolderyear'] = 'Année et le dossier original (p. ex. Archive/2012/…)';
+$labels['archivetypefoldermonth'] = 'Année, mois et le dossier original (p. ex. Archive/2012/06/…)';
+$labels['archivetypesender'] = 'Courriel de l’expéditeur';

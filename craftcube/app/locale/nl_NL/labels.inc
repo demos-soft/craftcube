@@ -698,3 +698,13 @@ $labels['helplistkeyboardnavmessages'] = "Pijl links/rechts: conversaties in- of
 Enter: Open geselecteerd of actief bericht.
 Delete: Verwijder geselecteerde berichten naar Prullenbak.";
 $labels['helplistkeyboardnavcontacts'] = "Enter: Open geselecteerd of actief contact.";
+$labels['archivefolder'] = 'Archief';
+$labels['settingstitle'] = 'Archiveren';
+$labels['archivetype'] = 'Archief opdelen in';
+$labels['archivetypeyear'] = 'Jaar (bijv. Archief/2012)';
+$labels['archivetypemonth'] = 'Maand (bijv. Archief/2012/06)';
+$labels['archivetypetbmonth'] = 'Maand - Thunderbird compatibel (bijv. Archief/2012/06)';
+$labels['archivetypefolder'] = 'Originele map';
+$labels['archivetypefolderyear'] = 'Jaar en de oorspronkelijke map (bv. Archief/2012/...)';
+$labels['archivetypefoldermonth'] = 'Jaar, maand en de oorspronkelijke map (bv. Archief/2012/06/...)';
+$labels['archivetypesender'] = 'Afzender e-mail';

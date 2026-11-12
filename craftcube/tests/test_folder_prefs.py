@@ -43,11 +43,15 @@ class TestFolderSelectorParity:
         assert opts == ["", "INBOX", "INBOX/Drafts", "Drafts", "Sent"]
 
     def test_archive_rows_exist(self, client, monkeypatch):
-        # the reference folders section ends with Archive + 'Divide archive by'
+        # the reference folders section ends with Archive + 'Divide
+        # archive by'; 'Divide archive by' sits in its own
+        # fieldset.archive with legend 'Archive' (elastic template)
         h = self._section(client, monkeypatch)
         assert 'name="_archive_mbox"' in h
         assert 'name="_archive_type"' in h
         assert "tbmonth" in h  # Thunderbird-compatible sub-option present
+        assert '<fieldset class="archive">' in h
+        assert '<legend>Archive</legend>' in h
 
     def test_defaults_are_full_keys_like_rc(self):
         # defaults.inc.php ships every special folder as '' (shown '---')

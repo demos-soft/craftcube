@@ -708,3 +708,13 @@ $labels['helplistkeyboardnavmessages'] = "Frecce destra/sinistra: espande/compri
 Invio: apre il contatto selezionato.
 Canc: sposta il messaggio selezionato nel cestino.";
 $labels['helplistkeyboardnavcontacts'] = "Invio: Aprire il contatto selezionato";
+$labels['archivefolder'] = 'Archivio';
+$labels['settingstitle'] = 'Archivio';
+$labels['archivetype'] = 'Dividi archivio per';
+$labels['archivetypeyear'] = 'Anno (es. Archivio/2012)';
+$labels['archivetypemonth'] = 'Mese (es. Archivio/2012/06)';
+$labels['archivetypetbmonth'] = 'Mese - compatibile con Thunderbird (es Archivio/2012/2012-06)';
+$labels['archivetypefolder'] = 'Cartella di origine';
+$labels['archivetypefolderyear'] = 'Anno e la cartella originale (p.e. Archivio/2012/...)';
+$labels['archivetypefoldermonth'] = 'Anno, mese e la cartella originale (p.e. Archivio/2012/06/...)';
+$labels['archivetypesender'] = 'Mittente email';
