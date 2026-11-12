@@ -2789,8 +2789,8 @@ def folders_view():
         allf = [f for f in allf if not f["special"] and f["name"].upper() != "INBOX"]
     for f in allf:
         f["display_name"] = folder_label(f["name"])
-        f["subscribed"] = f["name"].upper() == "INBOX" or \
-            "\\Subscribed" in (f.get("flags") or [])
+        # LSUB-derived per-folder subscription (see Imap.list_folders)
+        f["subscribed"] = bool(f.get("subscribed"))
     edit = request.args.get("_edit")
     parent_of = ""
     if edit and edit != "new" and "/" in edit:

@@ -315,30 +315,29 @@ class Imap:
 
     def list_folders(self, subscribed_only=False):
         typ, data = self.conn.list()
-        subscribed = None
-        if subscribed_only:
-            # the reference's mail tree lists subscribed folders only
-            # (rcube_imap::listfolders()). PHP's LIST RETURN (SUBSCRIBED)
-            # is rejected by this Dovecot, so intersect LIST with LSUB —
-            # the fallback the reference itself falls back to.
-            subscribed = set()
-            try:
-                styp, sdata = self.conn.lsub('""', '"*"')
-            except imaplib.IMAP4.error:
-                styp, sdata = "NO", None
-            if styp == "OK":
-                import re as _re
-                for line in sdata or []:
-                    s = line.decode(errors="replace") if isinstance(
-                        line, bytes) else str(line)
-                    mm = _re.match(
-                        r"^\((?P<flags>[^)]*)\)\s+(?:\".\"|NIL)\s+(?P<name>.*)$",
-                        s)
-                    if mm:
-                        nm = mm.group("name").strip()
-                        if nm.startswith('"') and nm.endswith('"'):
-                            nm = nm[1:-1]
-                        subscribed.add(nm)
+        # the reference's mail tree lists subscribed folders only
+        # (rcube_imap::listfolders()). PHP's LIST RETURN (SUBSCRIBED) is
+        # rejected by this Dovecot, so intersect LIST with LSUB — the
+        # fallback the reference itself falls back to. LSUB is always
+        # fetched: the folder manager needs per-folder \Subscribed state.
+        subscribed = set()
+        try:
+            styp, sdata = self.conn.lsub('""', '"*"')
+        except imaplib.IMAP4.error:
+            styp, sdata = "NO", None
+        if styp == "OK":
+            import re as _re
+            for line in sdata or []:
+                s = line.decode(errors="replace") if isinstance(
+                    line, bytes) else str(line)
+                mm = _re.match(
+                    r"^\((?P<flags>[^)]*)\)\s+(?:\".\"|NIL)\s+(?P<name>.*)$",
+                    s)
+                if mm:
+                    nm = mm.group("name").strip()
+                    if nm.startswith('"') and nm.endswith('"'):
+                        nm = nm[1:-1]
+                    subscribed.add(nm)
         out = []
         if typ != "OK":
             return out
@@ -368,11 +367,12 @@ class Imap:
                 elif low in ("junk", "spam", "junk e-mail"):
                     special = "junk"
             out.append({"name": name, "flags": flags, "special": special,
-                        "inferior": "\\Noselect" in flags})
-        if subscribed is not None:
+                        "inferior": "\\Noselect" in flags,
+                        "subscribed": name in subscribed
+                        or name.upper() == "INBOX"})
+        if subscribed_only:
             # intersect with LSUB; INBOX is implicitly subscribed
-            out = [f for f in out
-                   if f["name"] in subscribed or f["name"].upper() == "INBOX"]
+            out = [f for f in out if f["subscribed"]]
         # Roundcube's list_sorted(): INBOX first, then special mail folders in
         # config mail_folders order (Drafts, Sent, Junk, Trash, Archive), then
         # remaining folders alphabetically.
@@ -712,8 +712,9 @@ class Mailbox:
         return res
 
     def special(self, kind):
-        # user preference (Settings > Special Folders) wins over config defaults
-        user_pref = (getattr(self, "prefs", None) or {}).get(kind)
+        # user preference (Settings > Special Folders, stored under the
+        # reference's full '<kind>_mbox' key) wins over config defaults
+        user_pref = (getattr(self, "prefs", None) or {}).get(kind + "_mbox")
         if user_pref:
             return user_pref
         try:

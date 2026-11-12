@@ -29,8 +29,10 @@ DEFAULTS = {
     "addressbook_pagesize": "50", "contact_form_mode": "private",
     "autocomplete_single": 0, "collected_recipients": "1",
     "collected_senders": "2",
-    "show_real_foldernames": 0, "drafts": "Drafts", "sent": "Sent",
-    "junk": "", "trash": "", "archive": "", "archive_type": "",
+    "show_real_foldernames": 0, "drafts_mbox": "", "sent_mbox": "",
+    # reference default values: every special folder starts as '' / '---'
+    # (defaults.inc.php); resolution happens via SPECIAL-USE flags at runtime
+    "junk_mbox": "", "trash_mbox": "", "archive_mbox": "", "archive_type": "",
     # reference default is true (defaults.inc.php:1431)
     "read_when_deleted": 1, "flag_for_deletion": 0, "skip_deleted": 0,
     "delete_junk": 0, "read_on_archive": 0,
@@ -160,17 +162,36 @@ def _txt(key, title, prefs):
             "size": TEXTS[key]}
 
 
+def _folder_tree(folders):
+    """Order folders the way the reference folder_selector does: folder tree
+    flattened depth-first (parent immediately followed by its children),
+    INBOX first, siblings alphabetically (case-insensitive)."""
+    tree = {}
+    for f in folders:
+        node = tree
+        for part in f.split("/"):
+            node = node.setdefault(part + "/", {})
+    def emit(prefix, node, out):
+        for name in sorted(node, key=lambda k: (k != "INBOX/", k.lower())):
+            out.append(prefix + name.rstrip("/"))
+            emit(prefix + name, node[name], out)
+    out = []
+    emit("", tree, out)
+    return out
+
+
 def _folder(key, title, prefs, folders):
     # rcmail_action::folder_selector(noselection '---', folder_filter mail,
     # folder_rights w) over SUBSCRIBED folders; INBOX implicitly included.
     # All selectors but _sent_mbox carry the "no INBOX as special" guard
     # (index.php #1486114, #1488279, #1489219).
-    opts = [("", "---")] + [(f, f) for f in folders]
+    opts = [("", "---")] + [(f, f) for f in _folder_tree(folders)]
     onchange = ("if ($(this).val() == 'INBOX') $(this).val('')"
                 if key != "sent" else "")
-    return {"type": "select", "key": key, "name": "_" + key + "_mbox",
-            "id": _id(key + "_mbox"), "title": title, "options": opts,
-            "value": str(prefs.get(key, DEFAULTS.get(key, ""))),
+    pk = key + "_mbox"
+    return {"type": "select", "key": pk, "name": "_" + pk,
+            "id": _id(pk), "title": title, "options": opts,
+            "value": str(prefs.get(pk, DEFAULTS.get(pk, ""))),
             "attrs": (("onchange=\"" + onchange + "\"") if onchange else "")}
 
 
@@ -272,6 +293,8 @@ def sections(prefs, folders):
                 _folder("sent", "Sent", p, folders),
                 _folder("junk", "Junk", p, folders),
                 _folder("trash", "Trash", p, folders),
+                _folder("archive", "Archive", p, folders),
+                _sel("archive_type", "Divide archive by", p),
             ]),
         ]},
         "server": {"label": "Server Settings", "blocks": [
@@ -315,10 +338,12 @@ def apply_form(prefs, form):
             continue
         key = name[1:]
         if key.endswith("_mbox") and key[:-5] in FOLDERS:
-            key = key[:-5]
-        if key in CHECKBOXES:
+            # Roundcube stores the full key (trash_mbox), verified live via
+            # the reference DB (archive_mbox => 'Archive'); do NOT strip it
+            prefs[key] = form[name].strip()
+        elif key in CHECKBOXES:
             prefs[key] = 1 if form[name] == "1" else 0
-        elif key in SELECTS or key in FOLDERS or key in TEXTS \
+        elif key in SELECTS or key in TEXTS \
                 or key == "default_addressbook":
             prefs[key] = form[name].strip()
     # unchecked boxes are omitted by the browser: clear the section's boxes
