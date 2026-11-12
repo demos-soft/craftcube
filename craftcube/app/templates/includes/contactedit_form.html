@@ -32,9 +32,9 @@
       </div>
       <div class="displayname row"{% if not ext.name_explicit %} style="display:none"{% endif %}><label for="ff_name">{{ 'Display Name'|lc }}</label><div><input size="40" maxlength="50" type="text" id="ff_name" name="_name" class="ff_name" value="{{ ext.name }}"></div></div>
       <div class="nickname row"{% if not ext.nickname %} style="display:none"{% endif %}><label for="ff_nickname">{{ 'Nickname'|lc }}</label><div><input size="40" maxlength="50" type="text" id="ff_nickname" name="_nickname" class="ff_nickname" value="{{ ext.nickname }}"></div></div>
-      <div class="organization row"{% if not ext.organization %} style="display:none"{% endif %}><label for="ff_organization">{{ 'Organization'|lc }}</label><div><input size="40" maxlength="128" type="text" id="ff_organization" name="_organization" class="ff_organization" value="{{ ext.organization }}"></div></div>
-      <div class="department row"{% if not ext.department %} style="display:none"{% endif %}><label for="ff_department">{{ 'Department'|lc }}</label><div><input size="40" maxlength="128" type="text" id="ff_department" name="_department" class="ff_department" value="{{ ext.department }}"></div></div>
-      <div class="jobtitle row"{% if not ext.jobtitle %} style="display:none"{% endif %}><label for="ff_jobtitle">{{ 'Job Title'|lc }}</label><div><input size="40" maxlength="128" type="text" id="ff_jobtitle" name="_jobtitle" class="ff_jobtitle" value="{{ ext.jobtitle }}"></div></div>
+      <div class="organization row"{% if not (business_mode or ext.organization) %} style="display:none"{% endif %}><label for="ff_organization">{{ 'Organization'|lc }}</label><div><input size="40" maxlength="128" type="text" id="ff_organization" name="_organization" class="ff_organization" value="{{ ext.organization }}"></div></div>
+      <div class="department row"{% if not (business_mode or ext.department) %} style="display:none"{% endif %}><label for="ff_department">{{ 'Department'|lc }}</label><div><input size="40" maxlength="128" type="text" id="ff_department" name="_department" class="ff_department" value="{{ ext.department }}"></div></div>
+      <div class="jobtitle row"{% if not (business_mode or ext.jobtitle) %} style="display:none"{% endif %}><label for="ff_jobtitle">{{ 'Job Title'|lc }}</label><div><input size="40" maxlength="128" type="text" id="ff_jobtitle" name="_jobtitle" class="ff_jobtitle" value="{{ ext.jobtitle }}"></div></div>
       <p class="addfield"><select class="addfieldmenu custom-select" rel="head">
         <option value="">{{ 'Add field...'|lc }}</option>
         {% if not ext.prefix %}<option value="prefix">{{ 'Prefix'|lc }}</option>{% endif %}
@@ -42,9 +42,9 @@
         {% if not ext.suffix %}<option value="suffix">{{ 'Suffix'|lc }}</option>{% endif %}
         {% if not ext.name_explicit %}<option value="name">{{ 'Display Name'|lc }}</option>{% endif %}
         {% if not ext.nickname %}<option value="nickname">{{ 'Nickname'|lc }}</option>{% endif %}
-        {% if not ext.organization %}<option value="organization">{{ 'Organization'|lc }}</option>{% endif %}
-        {% if not ext.department %}<option value="department">{{ 'Department'|lc }}</option>{% endif %}
-        {% if not ext.jobtitle %}<option value="jobtitle">{{ 'Job Title'|lc }}</option>{% endif %}
+        {% if not ext.organization and not business_mode %}<option value="organization">{{ 'Organization'|lc }}</option>{% endif %}
+        {% if not ext.department and not business_mode %}<option value="department">{{ 'Department'|lc }}</option>{% endif %}
+        {% if not ext.jobtitle and not business_mode %}<option value="jobtitle">{{ 'Job Title'|lc }}</option>{% endif %}
       </select></p>
     </fieldset>
   </div>

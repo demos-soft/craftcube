@@ -7,19 +7,21 @@ render only when the record has values; gender/birthday are 'visible'
 coltypes and always render; the notes add-field menu renders hidden) and
 program/js/app.js insert_edit_field/delete_edit_field.
 """
+
 import io
 import re
 
 import pytest
 
 from app import util
-from app.views import _compose_display_name, _contact_head_props, folders_for_menu
+from app.views import _compose_display_name, _contact_head_props
 
 
 @pytest.fixture(autouse=True)
 def _no_imap(monkeypatch):
     # the sidebar menu renders IMAP folders; not what these tests are about
     from app import views
+
     monkeypatch.setattr(views, "folders_for_menu", lambda: [])
     yield
 
@@ -29,16 +31,21 @@ def _cid(rv):
 
 
 def _head_menu(html):
-    m = re.search(r'class="addfieldmenu custom-select" rel="head">(.*?)</select>',
-                  html, re.S)
+    m = re.search(r'class="addfieldmenu custom-select" rel="head">(.*?)</select>', html, re.S)
     assert m, "addfieldmenu rel=head missing"
     return re.findall(r'<option value="([^"]*)"', m.group(1))
 
 
 class TestComposeDisplayName:
     def test_name_parts_order(self):
-        ext = {"prefix": "Right", "firstname": "Ada", "middlename": "King",
-               "surname": "Lovelace", "suffix": "Hon", "emails": []}
+        ext = {
+            "prefix": "Right",
+            "firstname": "Ada",
+            "middlename": "King",
+            "surname": "Lovelace",
+            "suffix": "Hon",
+            "emails": [],
+        }
         # array_intersect_key() preserves record order (CONTACT_COLTYPES:
         # firstname, surname, then middlename/prefix/suffix) -- verified by
         # two live RC saves: "Ada Lovelace King Right Hon" and
@@ -59,8 +66,15 @@ class TestComposeDisplayName:
     def test_head_props_hide_composed_name(self):
         # save.php stored the composed name; the edit form hides the row
         # and offers 'name' in the head menu (index.php:886-890)
-        ext = {"name": "Ada Lovelace", "firstname": "Ada", "surname": "Lovelace",
-               "prefix": "", "middlename": "", "suffix": "", "emails": []}
+        ext = {
+            "name": "Ada Lovelace",
+            "firstname": "Ada",
+            "surname": "Lovelace",
+            "prefix": "",
+            "middlename": "",
+            "suffix": "",
+            "emails": [],
+        }
         _contact_head_props(ext)
         assert ext["name_explicit"] is False
         ext["name"] = "The Countess"
@@ -72,24 +86,30 @@ class TestNewContactForm:
     def test_head_rows_and_menu(self, client):
         html = client.get("/contact/new").get_data(as_text=True)
         # empty head rows render hidden
-        for ff in ("prefix", "middlename", "suffix", "name", "nickname",
-                   "organization", "department", "jobtitle"):
-            m = re.search(r'<div class="[^"]*"[^>]*><label for="ff_%s">' % ff, html)
+        for ff in ("prefix", "middlename", "suffix", "name", "nickname", "organization", "department", "jobtitle"):
+            m = re.search(rf'<div class="[^"]*"[^>]*><label for="ff_{ff}">', html)
             assert m and 'style="display:none"' in m.group(0), f"{ff} row should be hidden"
         # firstname/surname always visible
         for ff in ("firstname", "surname"):
-            m = re.search(r'<div class="[^"]*"[^>]*><label for="ff_%s">' % ff, html)
+            m = re.search(rf'<div class="[^"]*"[^>]*><label for="ff_{ff}">', html)
             assert m and 'style="display:none"' not in m.group(0), f"{ff} row should be visible"
-        assert _head_menu(html) == ["", "prefix", "middlename", "suffix", "name",
-                                    "nickname", "organization", "department",
-                                    "jobtitle"]
+        assert _head_menu(html) == [
+            "",
+            "prefix",
+            "middlename",
+            "suffix",
+            "name",
+            "nickname",
+            "organization",
+            "department",
+            "jobtitle",
+        ]
 
     def test_group_menus_and_sections(self, client):
         html = client.get("/contact/new").get_data(as_text=True)
         # one blank row each for the always-visible multi groups
         for kind in ("email", "phone"):
-            rows = re.findall(r'contactcontroller%s".*?</fieldset>' % kind,
-                              html.split("<template")[0], re.S)
+            rows = re.findall(rf'contactcontroller{kind}".*?</fieldset>', html.split("<template")[0], re.S)
             assert len(rows) == 1 and rows[0].count("<div class=" + chr(34) + "row") == 1
         # website/IM groups do not render when empty, only as menu options
         sec = html.split('id="contactsectioncontact"')[1].split("</div>\n    </fieldset>")[0]
@@ -97,29 +117,43 @@ class TestNewContactForm:
         assert "contactcontrollerwebsite" not in sec
         assert "contactcontrollerim" not in sec
         menu = re.search(r'rel="contact"[^>]*>(.*?)</select>', html, re.S).group(1)
-        assert re.findall(r'<option value="([^"]*)"', menu) == [
-            "", "email", "phone", "address", "website", "im"]
+        assert re.findall(r'<option value="([^"]*)"', menu) == ["", "email", "phone", "address", "website", "im"]
         # personal: gender + birthday render always, others as menu options
         assert 'class="contactfieldgroup contactcontrollergender"' in sec + html
-        assert 'contactcontrollergender' in html
-        assert 'contactcontrollerbirthday' in html
+        assert "contactcontrollergender" in html
+        assert "contactcontrollerbirthday" in html
         pm = re.search(r'rel="personal"[^>]*>(.*?)</select>', html, re.S).group(1)
         assert re.findall(r'<option value="([^"]*)"', pm) == [
-            "", "maidenname", "anniversary", "manager", "assistant", "spouse"]
+            "",
+            "maidenname",
+            "anniversary",
+            "manager",
+            "assistant",
+            "spouse",
+        ]
         # notes menu renders with no options and hidden (elastic contract)
         nm = re.search(r'<select class="addfieldmenu custom-select" rel="notes"[^>]*>', html)
         assert nm and 'style="display:none"' in nm.group(0)
 
     def test_save_generates_display_name_and_v3_vcard(self, client, store, user):
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_firstname": "Grace", "_surname": "Hopper",
-            "_subtype_email[]": "work", "_email[]": "grace@navy.example",
-            "_website[]": "https://hopper.example.org",
-            "_subtype_website[]": "homepage",
-            "_im[]": "ghopper", "_subtype_im[]": "jabber",
-            "_maidenname": "Bachman", "_gender": "female",
-            "_notes": "compiler pioneer",
-        }, follow_redirects=False)
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_firstname": "Grace",
+                "_surname": "Hopper",
+                "_subtype_email[]": "work",
+                "_email[]": "grace@navy.example",
+                "_website[]": "https://hopper.example.org",
+                "_subtype_website[]": "homepage",
+                "_im[]": "ghopper",
+                "_subtype_im[]": "jabber",
+                "_maidenname": "Bachman",
+                "_gender": "female",
+                "_notes": "compiler pioneer",
+            },
+            follow_redirects=False,
+        )
         cid = _cid(rv)
         row = store.contact(user, cid)
         assert row["name"] == "Grace Hopper"  # composed at save (save.php:287)
@@ -131,9 +165,14 @@ class TestNewContactForm:
         assert "X-GENDER:female\r\n" in vcard
 
     def test_name_reset_when_equal_to_email(self, client, store, user):
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_email[]": "solo@x.org", "_subtype_email[]": "work",
-        })
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_email[]": "solo@x.org",
+                "_subtype_email[]": "work",
+            },
+        )
         assert rv.status_code == 302
         row = store.contact(user, _cid(rv))
         # save.php:290-292 resets the composed-equals-email name...
@@ -145,10 +184,17 @@ class TestNewContactForm:
         # RC task-settings/addressbook body classes: edit -> action-edit,
         # add -> action-add (visible to CSS selectors in the elastic port)
         import re as _re
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_firstname": "Body", "_surname": "Class",
-            "_email[]": "b@c.example", "_subtype_email[]": "work",
-        })
+
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_firstname": "Body",
+                "_surname": "Class",
+                "_email[]": "b@c.example",
+                "_subtype_email[]": "work",
+            },
+        )
         m = _re.search(r"/contact/(\d+)", rv.headers["Location"])
         cid = m.group(1)
         html = client.get(f"/contact/edit/{cid}?_framed=1").get_data(as_text=True)
@@ -160,18 +206,24 @@ class TestNewContactForm:
         # reference edit-contact frame (_level=2) renders bare: html.iframe,
         # h1.voice, form#contact-details.formcontent, sibling .formbuttons —
         # and NO app shell (menu/logo/#layout-content/header)
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_firstname": "Bare", "_surname": "Page",
-            "_email[]": "bare@p.example", "_subtype_email[]": "work",
-        }, follow_redirects=False)
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_firstname": "Bare",
+                "_surname": "Page",
+                "_email[]": "bare@p.example",
+                "_subtype_email[]": "work",
+            },
+            follow_redirects=False,
+        )
         cid = _cid(rv)
         html = client.get(f"/contact/edit/{cid}?_framed=1").get_data(as_text=True)
         assert 'class="iframe"' in html
         assert '<h1 class="voice">Edit contact</h1>' in html
         assert 'id="contact-details" class="formcontent"' in html
         assert '<div class="formbuttons">' in html
-        for shell in ('id="taskmenu"', 'id="logo"', 'id="layout-content"',
-                      'back-content-button', 'includes/menu'):
+        for shell in ('id="taskmenu"', 'id="logo"', 'id="layout-content"', "back-content-button", "includes/menu"):
             assert shell not in html, shell
         assert 'id="contacttabs"' in html
         # standalone (non-framed) keeps the full shell
@@ -182,10 +234,17 @@ class TestNewContactForm:
         # elastic image_upload_input: hidden smart-upload form + hidden
         # marker inputs only (no visible native file input), Save starts
         # disabled until the form changes (rcmail check_stack)
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_firstname": "Photo", "_surname": "Widget",
-            "_email[]": "pw@p.example", "_subtype_email[]": "work",
-        }, follow_redirects=False)
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_firstname": "Photo",
+                "_surname": "Widget",
+                "_email[]": "pw@p.example",
+                "_subtype_email[]": "work",
+            },
+            follow_redirects=False,
+        )
         cid = _cid(rv)
         html = client.get(f"/contact/edit/{cid}?_framed=1").get_data(as_text=True)
         assert 'id="upload-formFrm"' in html
@@ -200,11 +259,18 @@ class TestNewContactForm:
         png = bytes.fromhex(
             "89504e470d0a1a0a0000000d494844520000000100000001080600"
             "00001f15c4890000000a49444154789c63000100000500010d0a2db4"
-            "0000000049454e44ae426082")
-        rv = client.post(f"/contact/edit/{cid}?_framed=1", data={
-            "_upload": "1", "_cid": str(cid),
-            "_photo": (io.BytesIO(png), "p.png"),
-        }, content_type="multipart/form-data", follow_redirects=False)
+            "0000000049454e44ae426082"
+        )
+        rv = client.post(
+            f"/contact/edit/{cid}?_framed=1",
+            data={
+                "_upload": "1",
+                "_cid": str(cid),
+                "_photo": (io.BytesIO(png), "p.png"),
+            },
+            content_type="multipart/form-data",
+            follow_redirects=False,
+        )
         assert rv.status_code == 302 and f"/contact/edit/{cid}" in rv.headers["Location"]
         assert store.contact_photo(user, cid) == png
         row = store.contact(user, cid)
@@ -214,23 +280,38 @@ class TestNewContactForm:
         assert 'name="_photo" id="ff_photo" value=""' in html
         assert f"/contact/{cid}/photo" in html
         # '-del-' marker on the main save deletes (save.php:62-72)
-        client.post(f"/contact/edit/{cid}", data={
-            "_cid": str(cid), "_firstname": "Photo", "_surname": "Widget",
-            "_email[]": "pw@p.example", "_subtype_email[]": "work",
-            "_photo": "-del-",
-        }, follow_redirects=False)
+        client.post(
+            f"/contact/edit/{cid}",
+            data={
+                "_cid": str(cid),
+                "_firstname": "Photo",
+                "_surname": "Widget",
+                "_email[]": "pw@p.example",
+                "_subtype_email[]": "work",
+                "_photo": "-del-",
+            },
+            follow_redirects=False,
+        )
         assert store.contact_photo(user, cid) is None
         # validation re-render (nonamewarning) replays with Save enabled
         bad = client.post("/contact/new", data={"_cid": "", "_photo": "-del-"})
         bad_html = bad.get_data(as_text=True)
-        assert "value=\"Save\"" in bad_html and "value=\"Save\" disabled" not in bad_html
+        assert 'value="Save"' in bad_html and 'value="Save" disabled' not in bad_html
 
     def test_edit_shows_value_rows_and_no_present_options(self, client, store):
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_firstname": "Alan", "_surname": "Turing",
-            "_nickname": "Al", "_email[]": "a@turing.example",
-            "_subtype_email[]": "work", "_manager": "Max",
-        }, follow_redirects=False)
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_firstname": "Alan",
+                "_surname": "Turing",
+                "_nickname": "Al",
+                "_email[]": "a@turing.example",
+                "_subtype_email[]": "work",
+                "_manager": "Max",
+            },
+            follow_redirects=False,
+        )
         cid = _cid(rv)
         html = client.get(f"/contact/edit/{cid}").get_data(as_text=True)
         # nickname has a value -> row visible, absent from head menu
@@ -238,7 +319,7 @@ class TestNewContactForm:
         assert m and 'style="display:none"' not in m.group(0)
         assert "nickname" not in _head_menu(html)
         # manager renders as a personal fieldset and drops from the menu
-        assert 'contactcontrollermanager' in html
+        assert "contactcontrollermanager" in html
         pm = re.search(r'rel="personal"[^>]*>(.*?)</select>', html, re.S).group(1)
         assert "manager" not in re.findall(r'<option value="([^"]*)"', pm)
         # display name equals composed -> hidden with 'name' option
@@ -248,37 +329,54 @@ class TestNewContactForm:
 
     def test_save_full_post_matches_reference_vcard(self, client, store, user):
         # same record as the reference staging DB contact, via the form
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_prefix": "Right", "_firstname": "Ada",
-            "_middlename": "King", "_surname": "Lovelace", "_suffix": "Hon",
-            "_name": "Ada Lovelace King Right Hon", "_nickname": "countess",
-            "_organization": "Analytical Engine Ltd", "_department": "Engines",
-            "_jobtitle": "Chief Programmer", "_gender": "female",
-            "_birthday": "1815-12-10",
-            "_subtype_email[]": ["work", "home"],
-            "_email[]": ["ada@example.org", "ada.lovelace@analytical.example"],
-            "_subtype_phone[]": ["home", "mobile"],
-            "_phone[]": ["+44 20 7946 0000", "+44 7700 900000"],
-            "_subtype_address[]": ["work"], "_street[]": ["12 Byron Row"],
-            "_locality[]": ["London"], "_zipcode[]": ["SW1"],
-            "_region[]": [""], "_country[]": ["United Kingdom"],
-            "_notes": "first programmer; enbows arrows",
-        }, follow_redirects=False)
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_prefix": "Right",
+                "_firstname": "Ada",
+                "_middlename": "King",
+                "_surname": "Lovelace",
+                "_suffix": "Hon",
+                "_name": "Ada Lovelace King Right Hon",
+                "_nickname": "countess",
+                "_organization": "Analytical Engine Ltd",
+                "_department": "Engines",
+                "_jobtitle": "Chief Programmer",
+                "_gender": "female",
+                "_birthday": "1815-12-10",
+                "_subtype_email[]": ["work", "home"],
+                "_email[]": ["ada@example.org", "ada.lovelace@analytical.example"],
+                "_subtype_phone[]": ["home", "mobile"],
+                "_phone[]": ["+44 20 7946 0000", "+44 7700 900000"],
+                "_subtype_address[]": ["work"],
+                "_street[]": ["12 Byron Row"],
+                "_locality[]": ["London"],
+                "_zipcode[]": ["SW1"],
+                "_region[]": [""],
+                "_country[]": ["United Kingdom"],
+                "_notes": "first programmer; enbows arrows",
+            },
+            follow_redirects=False,
+        )
         cid = _cid(rv)
         row = store.contact(user, cid)
-        expected = util.vcard_encode(util.vcard_parse(
-            "BEGIN:VCARD\r\nVERSION:3.0\r\n"
-            "N:Lovelace;Ada;King;Right;Hon\r\n"
-            "FN:Ada Lovelace King Right Hon\r\n"
-            "EMAIL;TYPE=work:ada@example.org\r\n"
-            "EMAIL;TYPE=home:ada.lovelace@analytical.example\r\n"
-            "NICKNAME:countess\r\nTITLE:Chief Programmer\r\n"
-            "ORG:Analytical Engine Ltd\r\nX-DEPARTMENT:Engines\r\n"
-            "X-GENDER:female\r\nTEL;TYPE=home:+44 20 7946 0000\r\n"
-            "TEL;TYPE=cell:+44 7700 900000\r\n"
-            "ADR;TYPE=work:;;12 Byron Row;London;;SW1;United Kingdom\r\n"
-            "BDAY;VALUE=date:1815-12-10\r\n"
-            "NOTE:first programmer\\; enbows arrows\r\nEND:VCARD\r\n"))
+        expected = util.vcard_encode(
+            util.vcard_parse(
+                "BEGIN:VCARD\r\nVERSION:3.0\r\n"
+                "N:Lovelace;Ada;King;Right;Hon\r\n"
+                "FN:Ada Lovelace King Right Hon\r\n"
+                "EMAIL;TYPE=work:ada@example.org\r\n"
+                "EMAIL;TYPE=home:ada.lovelace@analytical.example\r\n"
+                "NICKNAME:countess\r\nTITLE:Chief Programmer\r\n"
+                "ORG:Analytical Engine Ltd\r\nX-DEPARTMENT:Engines\r\n"
+                "X-GENDER:female\r\nTEL;TYPE=home:+44 20 7946 0000\r\n"
+                "TEL;TYPE=cell:+44 7700 900000\r\n"
+                "ADR;TYPE=work:;;12 Byron Row;London;;SW1;United Kingdom\r\n"
+                "BDAY;VALUE=date:1815-12-10\r\n"
+                "NOTE:first programmer\\; enbows arrows\r\nEND:VCARD\r\n"
+            )
+        )
         assert row["vcard"] == expected
 
 
@@ -310,24 +408,36 @@ class TestVcardTypeMaps:
         # redundant, remove these"
         assert util._vc_typ("other") == ""
         assert util._vc_typ("other,fax") == ";TYPE=fax"
-        f = {"name": "X", "firstname": "X", "surname": "",
-             "emails": [("other", "x@y.z")], "phones": [], "addresses": []}
+        f = {
+            "name": "X",
+            "firstname": "X",
+            "surname": "",
+            "emails": [("other", "x@y.z")],
+            "phones": [],
+            "addresses": [],
+        }
         v = util.vcard_encode(f)
         assert "EMAIL:x@y.z\r\n" in v
 
     def test_stored_cell_roundtrips_as_mobile(self):
-        raw = ("BEGIN:VCARD\r\nVERSION:3.0\r\nN:;;;;\r\nFN:T T\r\n"
-               "TEL;TYPE=cell:123\r\nEND:VCARD\r\n")
+        raw = "BEGIN:VCARD\r\nVERSION:3.0\r\nN:;;;;\r\nFN:T T\r\nTEL;TYPE=cell:123\r\nEND:VCARD\r\n"
         ext = util.vcard_parse(raw)
         assert ext["phones"] == [("mobile", "123")]
         assert util.vcard_export(ext) == raw
 
     def test_form_post_mobile_stores_cell(self, client, store, user):
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_firstname": "Mob", "_surname": "Ile",
-            "_subtype_phone[]": "mobile", "_phone[]": "+49 170 000000",
-            "_subtype_im[]": "jabber", "_im[]": "mobster",
-        })
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_firstname": "Mob",
+                "_surname": "Ile",
+                "_subtype_phone[]": "mobile",
+                "_phone[]": "+49 170 000000",
+                "_subtype_im[]": "jabber",
+                "_im[]": "mobster",
+            },
+        )
         assert rv.status_code == 302
         cid = _cid(rv)
         row = store.contact(user, cid)
@@ -344,27 +454,36 @@ class TestGroupRowOrder:
 
     def test_email_rows_sorted_by_subtype(self, client, store, user):
         from app import views as v
-        ext = {"emails": [("work", "w@x.y"), ("home", "h@x.y"), ("zz", "z@x.y")],
-               "phones": [("homefax", "1"), ("mobile", "2")],
-               "websites": [("other", "o"), ("homepage", "p")],
-               "name": "", "firstname": "", "surname": ""}
+
+        ext = {
+            "emails": [("work", "w@x.y"), ("home", "h@x.y"), ("zz", "z@x.y")],
+            "phones": [("homefax", "1"), ("mobile", "2")],
+            "websites": [("other", "o"), ("homepage", "p")],
+            "name": "",
+            "firstname": "",
+            "surname": "",
+        }
         v._contact_head_props(ext)
         assert [t for t, _ in ext["emails"]] == ["home", "work", "zz"]
         assert [t for t, _ in ext["phones"]] == ["mobile", "homefax"]
         assert [t for t, _ in ext["websites"]] == ["homepage", "other"]
 
     def test_edit_form_shows_home_email_first(self, client, store, user):
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_firstname": "Ord", "_surname": "Ered",
-            "_subtype_email[]": ["work", "home"],
-            "_email[]": ["w@x.y", "h@x.y"],
-        })
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_firstname": "Ord",
+                "_surname": "Ered",
+                "_subtype_email[]": ["work", "home"],
+                "_email[]": ["w@x.y", "h@x.y"],
+            },
+        )
         cid = _cid(rv)
         html = client.get(f"/contact/edit/{cid}").get_data(as_text=True)
         html = html.split("<template")[0]  # drop inert JS row-templates
         subs = re.findall(r'name="_subtype_email\[\]"[^>]*>(.*?)</select>', html, re.S)
-        order = [re.search(r'<option value="([^"]*)"[^>]*selected', m).group(1)
-                 for m in subs]
+        order = [re.search(r'<option value="([^"]*)"[^>]*selected', m).group(1) for m in subs]
         assert order == ["home", "work"]
 
 
@@ -373,30 +492,42 @@ class TestContactShow:
     # row order, no Address-Book source row (reference omits it entirely)
 
     def _grace(self, client):
-        rv = client.post("/contact/new", data={
-            "_cid": "", "_prefix": "Right", "_firstname": "Grace",
-            "_middlename": "Murray", "_surname": "Hopper", "_suffix": "RADM",
-            "_nickname": "amazing grace", "_organization": "Navy",
-            "_subtype_email[]": ["home", "work"],
-            "_email[]": ["gmhopper@cobol.example", "grace@navy.example"],
-            "_subtype_phone[]": ["mobile", "homefax"],
-            "_phone[]": ["+1 555 0100", "+1 555 0111"],
-            "_subtype_website[]": ["homepage", "other"],
-            "_website[]": ["https://grace.example.org", "https://alt.example.net"],
-            "_gender": "female", "_birthday": "1906-12-09",
-            "_maidenname": "Bachman", "_anniversary": "1930-08-15",
-            "_manager": "Boss", "_assistant": "Helper", "_spouse": "Amaral",
-            "_notes": "compiler pioneer",
-        })
+        rv = client.post(
+            "/contact/new",
+            data={
+                "_cid": "",
+                "_prefix": "Right",
+                "_firstname": "Grace",
+                "_middlename": "Murray",
+                "_surname": "Hopper",
+                "_suffix": "RADM",
+                "_nickname": "amazing grace",
+                "_organization": "Navy",
+                "_subtype_email[]": ["home", "work"],
+                "_email[]": ["gmhopper@cobol.example", "grace@navy.example"],
+                "_subtype_phone[]": ["mobile", "homefax"],
+                "_phone[]": ["+1 555 0100", "+1 555 0111"],
+                "_subtype_website[]": ["homepage", "other"],
+                "_website[]": ["https://grace.example.org", "https://alt.example.net"],
+                "_gender": "female",
+                "_birthday": "1906-12-09",
+                "_maidenname": "Bachman",
+                "_anniversary": "1930-08-15",
+                "_manager": "Boss",
+                "_assistant": "Helper",
+                "_spouse": "Amaral",
+                "_notes": "compiler pioneer",
+            },
+        )
         return _cid(rv)
 
     def test_subtype_labels(self, client):
         cid = self._grace(client)
         html = client.get(f"/contact/{cid}").get_data(as_text=True)
         labels = re.findall(r'class="contactfieldlabel label">([^<]*)<', html)
-        assert "Mobile" in labels      # stored cell -> form mobile -> label
-        assert "Home Fax" in labels    # not 'Fax'/'Homefax'
-        assert "Home Page" in labels   # not 'Homepage'
+        assert "Mobile" in labels  # stored cell -> form mobile -> label
+        assert "Home Fax" in labels  # not 'Fax'/'Homefax'
+        assert "Home Page" in labels  # not 'Homepage'
 
     def test_no_source_row(self, client):
         cid = self._grace(client)
@@ -407,11 +538,12 @@ class TestContactShow:
     def test_personal_row_order(self, client):
         cid = self._grace(client)
         html = client.get(f"/contact/{cid}").get_data(as_text=True)
-        order = [l for l in re.findall(r'class="contactfieldlabel label">([^<]*)<', html)
-                 if l in ("Gender", "Maiden Name", "Birthday", "Anniversary",
-                          "Manager", "Assistant", "Spouse")]
-        assert order == ["Gender", "Maiden Name", "Birthday", "Anniversary",
-                         "Manager", "Assistant", "Spouse"]
+        order = [
+            label
+            for label in re.findall(r'class="contactfieldlabel label">([^<]*)<', html)
+            if label in ("Gender", "Maiden Name", "Birthday", "Anniversary", "Manager", "Assistant", "Spouse")
+        ]
+        assert order == ["Gender", "Maiden Name", "Birthday", "Anniversary", "Manager", "Assistant", "Spouse"]
 
 
 class TestDirectoryTree:
@@ -434,6 +566,34 @@ class TestDirectoryTree:
         assert 'class="addressbook selected"' in html
 
 
+class TestContactFormMode:
+    def _opts(self, html, name):
+        m = re.search(rf'name="{re.escape(name)}\[?\]?"[^>]*>(.*?)</select>', html, re.S)
+        assert m, name
+        return [re.sub(r"<[^>]+>", "", v).strip() for v in re.findall(r"<option[^>]*>(.*?)</option>", m.group(1), re.S)]
+
+    def test_business_mode_shows_organization_rows(self, client, store, user):
+        store.set_user_prefs(user, {"contact_form_mode": "business"})
+        html = client.get("/contact/new").get_data(as_text=True)
+        for ff in ("organization", "department", "jobtitle"):
+            m = re.search(rf'<div class="[^"]*"[^>]*><label for="ff_{ff}">', html)
+            assert m and 'style="display:none"' not in m.group(0), f"{ff} should be visible"
+
+    def test_business_mode_orders_work_subtypes_first(self, client, store, user):
+        store.set_user_prefs(user, {"contact_form_mode": "business"})
+        html = client.get("/contact/new").get_data(as_text=True)
+        assert self._opts(html, "_subtype_email[]")[:3] == ["Work", "Home", "Other"]
+        assert self._opts(html, "_subtype_phone[]")[:3] == ["Work", "Work 2", "Work Fax"]
+
+    def test_private_mode_hides_organization_and_orders_home_first(self, client, store, user):
+        store.set_user_prefs(user, {"contact_form_mode": "private"})
+        html = client.get("/contact/new").get_data(as_text=True)
+        for ff in ("organization", "department", "jobtitle"):
+            m = re.search(rf'<div class="[^"]*"[^>]*><label for="ff_{ff}">', html)
+            assert m and 'style="display:none"' in m.group(0), f"{ff} should be hidden"
+        assert self._opts(html, "_subtype_email[]")[:3] == ["Home", "Work", "Other"]
+
+
 class TestSettingsFrameEditors:
     # RC loads edit-identity/edit-response as a bare propform page into
     # #preferences-frame: html.iframe, no task rail/sidebar/back button,
@@ -442,16 +602,25 @@ class TestSettingsFrameEditors:
 
     @staticmethod
     def _mk_identity(store, user):
-        return store.identity_save(user, {
-            "name": "Unit User", "organization": "", "email": "unit@example.org",
-            "reply_to": "", "bcc": "", "signature": "", "html_signature": 0,
-            "standard": 1})
+        return store.identity_save(
+            user,
+            {
+                "name": "Unit User",
+                "organization": "",
+                "email": "unit@example.org",
+                "reply_to": "",
+                "bcc": "",
+                "signature": "",
+                "html_signature": 0,
+                "standard": 1,
+            },
+        )
 
     def test_identity_edit_framed(self, client, store, user):
         iid = self._mk_identity(store, user)
         html = client.get(f"/settings/identity/edit/{iid}?_framed=1").get_data(as_text=True)
         assert '<html lang="en" class="iframe">' in html
-        assert 'action-edit-identity' in html
+        assert "action-edit-identity" in html
         assert 'id="rcmfd_name"' in html
         assert "Display Name" in html and "Set default" in html
         assert "Encryption" in html and "identityImageUpload" in html
@@ -477,9 +646,14 @@ class TestSettingsFrameEditors:
 
     def test_identity_save_keeps_record_open(self, client, store, user):
         iid = self._mk_identity(store, user)
-        rv = client.post(f"/settings/identity/edit/{iid}?_framed=1", data={
-            "_iid": str(iid), "_name": "Renamed", "_email": "unit@example.org",
-        })
+        rv = client.post(
+            f"/settings/identity/edit/{iid}?_framed=1",
+            data={
+                "_iid": str(iid),
+                "_name": "Renamed",
+                "_email": "unit@example.org",
+            },
+        )
         assert rv.status_code == 302
         assert f"/settings/identity/edit/{iid}" in rv.headers["Location"]
         assert "_framed=1" in rv.headers["Location"]
@@ -489,14 +663,25 @@ class TestSettingsFrameEditors:
     def test_new_records_redirect_with_saved_insert(self, client, store, user):
         # app.js update_*_row(id, name, add=true): insert+select in parent
         self._mk_identity(store, user)  # a baseline identity exists
-        rv = client.post("/settings/identity/new?_framed=1", data={
-            "_iid": "", "_name": "Fresh", "_email": "fresh@example.org",
-        })
+        rv = client.post(
+            "/settings/identity/new?_framed=1",
+            data={
+                "_iid": "",
+                "_name": "Fresh",
+                "_email": "fresh@example.org",
+            },
+        )
         assert rv.status_code == 302
         assert "_saved=insert" in rv.headers["Location"]
-        rv = client.post("/settings/response/new?_framed=1", data={
-            "_id": "", "_name": "Fresh sig", "_text": "Bye", "_is_html": "0",
-        })
+        rv = client.post(
+            "/settings/response/new?_framed=1",
+            data={
+                "_id": "",
+                "_name": "Fresh sig",
+                "_text": "Bye",
+                "_is_html": "0",
+            },
+        )
         assert rv.status_code == 302
         assert "_saved=insert" in rv.headers["Location"]
         new_rid = rv.headers["Location"].split("/edit/")[1].split("?")[0]

@@ -2579,33 +2579,29 @@ def contact_edit(cid):
 def _contactedit_out(row, ext, cid, replay=False):
     # reference edit-contact renders bare (html.iframe, no shell) inside the
     # addressbook #contentframe when _framed=1; standalone keeps the full page
+    business_mode = str((getattr(g, "prefs", {}) or {}).get("contact_form_mode", "private")) == "business"
+
+    def _subtypes(types):
+        if not business_mode:
+            return list(types)
+        work = [t for t in types if "work" in t]
+        return work + [t for t in types if t not in work]
+
+    ctx = {
+        "row": row,
+        "ext": ext,
+        "cid": cid,
+        "replay": replay,
+        "action": "edit" if cid else "add",
+        "business_mode": business_mode,
+        "contact_types": _subtypes(util.CONTACT_TYPES),
+        "contact_phone_types": _subtypes(util.CONTACT_PHONE_TYPES),
+        "contact_website_types": _subtypes(util.CONTACT_WEBSITE_TYPES),
+        "contact_im_types": list(util.CONTACT_IM_TYPES),
+    }
     if request.args.get("_framed") == "1":
-        return render_template(
-            "contactedit_framed.html",
-            task="addressbook",
-            row=row,
-            ext=ext,
-            cid=cid,
-            replay=replay,
-            action="edit" if cid else "add",
-            contact_types=util.CONTACT_TYPES,
-            contact_phone_types=util.CONTACT_PHONE_TYPES,
-            contact_website_types=util.CONTACT_WEBSITE_TYPES,
-            contact_im_types=util.CONTACT_IM_TYPES,
-        )
-    return render(
-        "addressbook",
-        "contactedit.html",
-        row=row,
-        ext=ext,
-        cid=cid,
-        action="edit" if cid else "add",
-        replay=replay,
-        contact_types=util.CONTACT_TYPES,
-        contact_phone_types=util.CONTACT_PHONE_TYPES,
-        contact_website_types=util.CONTACT_WEBSITE_TYPES,
-        contact_im_types=util.CONTACT_IM_TYPES,
-    )
+        return render_template("contactedit_framed.html", task="addressbook", **ctx)
+    return render("addressbook", "contactedit.html", **ctx)
 
 
 @bp.post("/contact/<int:cid>/delete")
