@@ -633,6 +633,36 @@
     }, mins * 60000);
   }
 
+  // --------------------------------------------- recipient_selector (ui.js):
+  // "Add contact" opens the contacts list in a dialog; Insert appends the
+  // selected addresses to the recipient field, comma-separated
+  window.cc_recipient_dialog = function (field) {
+    var d = cc_iframe_dialog('/contacts?_dialog=1&_source=0', 'Insert contact(s)', 600, {
+      buttons: [
+        { label: 'Insert', cls: 'insert recipient mainaction',
+          click: function () {
+            try { d.iframe.contentWindow.cc_recipient_insert(); } catch (e) {}
+          } },
+        { label: 'Cancel', cls: 'cancel', click: function () { d.close(); } }
+      ]
+    });
+    window.cc_recipient_done = function (list) {
+      var ta = document.getElementById(field);
+      if (ta && list.length) {
+        var cur = ta.value.trim();
+        var add = list.map(function (r) {
+          return r.name && r.name !== r.email ? r.name + ' <' + r.email + '>' : r.email;
+        });
+        var have = cur ? cur.split(/\s*,\s*/) : [];
+        add.forEach(function (a) { if (have.indexOf(a) < 0) have.push(a); });
+        ta.value = have.join(', ');
+        ta.focus();
+      }
+      d.close();
+    };
+    return false;
+  };
+
   // ------------------------------------------------------------ message stack
   function initStack() {
     var stack = document.getElementById('messagestack');

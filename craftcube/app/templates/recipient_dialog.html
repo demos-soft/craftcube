@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert contact(s)</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+<style>
+  /* dialog iframe page: listbox fills the frame (reference .listbox flex) */
+  html, body { height: 100%; margin: 0; }
+  #recipient-dialog-content { display: flex; flex-direction: column; height: 100%; }
+  #recipient-dialog-content .searchbar { flex: 0 0 auto; }
+  #recipient-dialog-content .scroller { flex: 1 1 auto; overflow: auto; }
+  #recipient-dialog-content .pagenav { flex: 0 0 auto; }
+</style>
+</head>
+<body class="task-settings act-mail">
+<div id="recipient-dialog-content" class="listbox" role="region" aria-labelledby="aria-label-composecontacts">
+  <h2 id="aria-label-composecontacts" class="voice">Compose contacts</h2>
+  <div role="search" aria-labelledby="aria-label-contactsearchform" class="searchbar menu">
+    <h2 id="aria-label-contactsearchform" class="voice">Contacts search form</h2>
+    <form id="rd-search" method="get">
+      <label for="searchform" class="voice">Search terms</label>
+      <input name="_q" id="searchform" class="no-bs" placeholder="Search..." type="text" value="{{ q }}">
+      <input type="hidden" name="_dialog" value="1">
+    </form>
+    <a class="button reset" href="{{ url_for('views.contacts', _source=source, _dialog=1) }}"
+       title="Reset search" tabindex="0" role="button"><span class="inner">Reset search</span></a>
+    <a href="#" class="button search" title="Find contacts" tabindex="0" role="button"
+       onclick="document.getElementById('rd-search').submit(); return false;"><span class="inner">Find contacts</span></a>
+  </div>
+  <div class="scroller" tabindex="-1">
+    <ul id="directorylist" class="treelist listing iconized">
+      {% for key, name in [('0', 'Personal Addresses'), ('1', 'Collected Recipients'), ('2', 'Trusted Senders')] %}
+      <li id="rcmli{{ ['MA', 'MQ', 'Mg'][loop.index0] }}" class="addressbook{{ ' selected' if source == key }}">
+        <a href="#" rel="{{ key }}" onclick="document.getElementById('rd-source').value='{{ key }}';document.getElementById('rd-search').submit(); return false;">{{ name }}</a>
+      </li>
+      {% endfor %}
+      <input type="hidden" id="rd-source" name="_source" form="rd-search" value="{{ source }}">
+    </ul>
+    <table id="contacts-table" class="listing iconized contactlist" role="listbox" data-label-msg="No contacts found.">
+      <tbody>
+        {% for c in rows %}
+        <tr class="contact" id="rcmrow{{ c.contact_id if not readonly else c.address_id }}" role="option"
+            tabindex="0"
+            data-display="{{ c.name or c.email }}"
+            data-email="{{ c.email }}"
+            {% if not readonly %}data-contactid="{{ c.contact_id }}"{% endif %}>
+          <td class="selection"><input type="checkbox" tabindex="-1"
+              value="{{ c.email if readonly else c.contact_id }}"></td>
+          <td class="name">{{ c.name or c.email }}</td>
+        </tr>
+        {% else %}
+        <tr class="listempty"><td colspan="2">No contacts found.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="pagenav menu footer small" role="toolbar" aria-label="List navigation">
+    <a class="firstpage{{ ' disabled' if page <= 1 }}" href="{{ url_for('views.contacts', _source=source, _dialog=1, _q=q, _page=1) }}"
+       title="Show first page" role="button" href tabindex="{{ -1 if page <= 1 else 0 }}"
+       {% if page <= 1 %}aria-disabled="true"{% endif %}><span class="inner">First</span></a>
+    <a class="prevpage{{ ' disabled' if page <= 1 }}" href="{{ url_for('views.contacts', _source=source, _dialog=1, _q=q, _page=page - 1) }}"
+       title="Show previous page" role="button" tabindex="{{ -1 if page <= 1 else 0 }}"
+       {% if page <= 1 %}aria-disabled="true"{% endif %}><span class="inner">Previous</span></a>
+    <span class="pagenav-text" aria-live="polite" aria-relevant="text">{{ total }}</span>
+    <a class="nextpage{{ ' disabled' if not more }}" href="{{ url_for('views.contacts', _source=source, _dialog=1, _q=q, _page=page + 1) }}"
+       title="Show next page" role="button" tabindex="{{ -1 if not more else 0 }}"
+       {% if not more %}aria-disabled="true"{% endif %}><span class="inner">Next</span></a>
+    <a class="lastpage{{ ' disabled' if not more }}" href="{{ url_for('views.contacts', _source=source, _dialog=1, _q=q, _page=pages) }}"
+       title="Show last page" role="button" tabindex="{{ -1 if not more else 0 }}"
+       {% if not more %}aria-disabled="true"{% endif %}><span class="inner">Last</span></a>
+  </div>
+</div>
+<script>
+  // single click selects (reference list widget), double-click inserts
+  (function () {
+    var sel = {};
+    function toggle(row) {
+      var box = row.querySelector('input[type=checkbox]');
+      box.checked = !box.checked;
+      row.classList.toggle('selected', box.checked);
+      row.setAttribute('aria-selected', box.checked ? 'true' : 'false');
+    }
+    document.querySelectorAll('#contacts-table tr.contact').forEach(function (row) {
+      row.addEventListener('click', function () { toggle(row); });
+      row.addEventListener('dblclick', function () {
+        if (!row.classList.contains('selected')) toggle(row);
+        parent.cc_recipient_insert();
+      });
+    });
+    window.cc_recipient_insert = function () {
+      var out = [];
+      document.querySelectorAll('#contacts-table tr.contact.selected').forEach(function (row) {
+        out.push({ name: row.dataset.display, email: row.dataset.email, contactid: row.dataset.contactid || '' });
+      });
+      parent.cc_recipient_done(out);
+    };
+  })();
+</script>
+</body>
+</html>

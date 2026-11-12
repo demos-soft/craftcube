@@ -19,7 +19,7 @@
           </div>
           <ul class="attachmentslist" id="attachment-list">
             {% for a in attachments_kept %}
-            <li class="attachment-input"><span class="filename">{{ a.filename }}</span><span class="size">{{ a.size|size }}</span></li>
+            <li class="attachment-input"><a href="#">{{ a.filename }}</a><span class="size">{{ a.size|size }}</span></li>
             {% endfor %}
           </ul>
         </div>
@@ -85,6 +85,19 @@
       </div>
 
       <div id="compose-content" class="formcontainer content">
+      <!-- attachment options popup (compose.html #attachmentmenu) -->
+      <div id="attachmentmenu" class="popupmenu">
+        <h3 id="aria-label-attachmentmenu" class="voice">Attachment options</h3>
+        <ul class="menu listing" role="menu" aria-labelledby="aria-label-attachmentmenu">
+          <li role="menuitem"><a class="extwin disabled" id="attachmenuopen" role="button" tabindex="-1"
+              aria-disabled="true" href="#"><span>Open</span></a></li>
+          <li role="menuitem"><a class="download disabled" id="attachmenudownload" role="button" tabindex="-1"
+              aria-disabled="true" href="#"><span>Download</span></a></li>
+          <li role="menuitem"><a class="rename disabled" id="attachmenurename" role="button" tabindex="-1"
+              aria-disabled="true" href="#"><span>Rename</span></a></li>
+        </ul>
+      </div>
+
       <div id="spell-menu" class="popupmenu">
         <ul class="selectable listing iconized" role="menu">
           <li role="menuitem"><a href="#en_US" tabindex="0" class="active" data-lang="en_US">English (US)</a></li>
@@ -93,14 +106,20 @@
         </ul>
       </div>
       <div id="responses-menu" class="popupmenu">
-        <h3 class="voice">Insert response</h3>
-        <ul class="menu listing" role="menu">
-          {% for r in responses %}
-          <li role="menuitem"><a class="insertresponse" href="#" data-response="{{ r.response_id }}"
-              data-name="{{ r.name }}">{{ r.name }}</a></li>
-          {% else %}
-          <li role="menuitem" class="disabled"><a href="#"><span>No responses defined</span></a></li>
-          {% endfor %}
+        <h3 id="aria-label-responsesmenu" class="voice">Canned responses menu</h3>
+        <ul class="menu listing" role="menu" aria-labelledby="aria-label-responsesmenu">
+          <li role="separator" class="separator"><label>Insert a response</label></li>
+          <ul id="responseslist" class="rounded-0">
+            {% for r in responses %}
+            <li role="menuitem"><a class="insertresponse active" href="#" data-response="{{ r.response_id }}"
+                data-name="{{ r.name }}">{{ r.name }}</a></li>
+            {% else %}
+            <li role="menuitem" class="disabled"><a href="#"><span>No responses available</span></a></li>
+            {% endfor %}
+          </ul>
+          <li role="separator" class="separator"><label>Manage responses</label></li>
+          <li role="menuitem"><a class="edit responses active" title="Edit responses"
+              href="{{ url_for('views.responses') }}"><span>Edit responses</span></a></li>
         </ul>
       </div>
         <form id="composeform" method="post" enctype="multipart/form-data" class="formcontent scroller" action="">
@@ -133,10 +152,10 @@
                 <div class="input-group">
                   <textarea name="_to" id="_to" class="form-control" tabindex="1" aria-required="true" rows="1">{{ prefill.to }}</textarea>
                   <span class="input-group-append">
-                    <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_to"><span class="inner">Add contact</span></a>
+                    <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_to" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_to') : true"><span class="inner">Add contact</span></a>
                   </span>
                   <span class="input-group-append">
-                    <a href="#add-header" class="input-group-text icon add" title="Add field (Cc, Bcc, ...)" tabindex="1" data-popup="headers-menu"><span class="inner">Add field (Cc, Bcc, ...)</span></a>
+                    <a href="#add-header" class="input-group-text icon add" title="Add recipient (header)" tabindex="1" data-popup="headers-menu"><span class="inner">Add recipient (header)</span></a>
                   </span>
                 </div>
               </div>
@@ -147,7 +166,7 @@
                 <div class="input-group">
                   <textarea name="_cc" id="_cc" class="form-control" tabindex="1" rows="1">{{ prefill.cc }}</textarea>
                   <span class="input-group-append">
-                    <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_cc"><span class="inner">Add contact</span></a>
+                    <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_cc" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_cc') : true"><span class="inner">Add contact</span></a>
                   </span>
                   <span class="input-group-append">
                     <a href="#delete" class="input-group-text icon delete" title="Delete" tabindex="1" data-reset-header="_cc"><span class="inner">Delete</span></a>
@@ -161,7 +180,7 @@
                 <div class="input-group">
                   <textarea name="_bcc" id="_bcc" class="form-control" tabindex="1" rows="1">{{ prefill.bcc }}</textarea>
                   <span class="input-group-append">
-                    <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_bcc"><span class="inner">Add contact</span></a>
+                    <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_bcc" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_bcc') : true"><span class="inner">Add contact</span></a>
                   </span>
                   <span class="input-group-append">
                     <a href="#delete" class="input-group-text icon delete" title="Delete" tabindex="1" data-reset-header="_bcc"><span class="inner">Delete</span></a>
@@ -200,7 +219,7 @@
           </div>
           <!-- message compose body -->
           <div id="composebodycontainer">
-            <label for="composebody" class="voice">Message body</label>
+            <label for="composebody" class="voice">Message Body</label>
             <div class="html-editor">
               <div class="editor-toolbar">
                 <a href="#" class="mce-i-html icon" id="format-toggle" title="Toggle HTML/Plain text"></a>
@@ -219,7 +238,7 @@
     </div>
 
 <div id="headers-menu" class="popupmenu">
-  <h3 id="aria-label-headersmenu" class="voice">Add field (Cc, Bcc, ...)</h3>
+  <h3 id="aria-label-headersmenu" class="voice">Recipient (header) adding menu</h3>
   <ul class="menu listing" role="menu" aria-labelledby="aria-label-headersmenu">
     <li role="menuitem"><a data-target="cc" href="#" role="button" tabindex="-1" class="recipient active">Cc</a></li>
     <li role="menuitem"><a data-target="bcc" href="#" role="button" tabindex="-1" class="recipient active">Bcc</a></li>
@@ -269,13 +288,34 @@
   })();
 </script>
 <script>
-  // show selected files in the attachment list
+  // show selected files in the attachment list (Elastic markup:
+  // <li><a>name</a><a class="cancelupload icon"></a></li>; clicking a row
+  // opens the #attachmentmenu popup, like UI.attachmentmenu())
   document.getElementById('compose-file').addEventListener('change', function () {
     var ul = document.getElementById('attachment-list');
     ul.innerHTML = '';
     for (var i = 0; i < this.files.length; i++) {
       var li = document.createElement('li');
-      li.textContent = this.files[i].name + ' (' + this.files[i].size + ' B)';
+      li.className = 'attachment-input';
+      var name = document.createElement('a');
+      name.href = '#';
+      name.textContent = this.files[i].name;
+      name.addEventListener('click', function (e) {
+        e.preventDefault();
+        var menu = document.getElementById('attachmentmenu');
+        if (!menu) return;
+        var r = li.getBoundingClientRect();
+        menu.classList.add('open');
+        menu.style.position = 'fixed';
+        menu.style.top = (r.bottom + 4) + 'px';
+        menu.style.left = Math.max(4, Math.min(r.left, window.innerWidth - menu.offsetWidth - 8)) + 'px';
+        menu.style.zIndex = 200;
+      });
+      li.appendChild(name);
+      var sz = document.createElement('span');
+      sz.className = 'size';
+      sz.textContent = this.files[i].size + ' B';
+      li.appendChild(sz);
       ul.appendChild(li);
     }
   });

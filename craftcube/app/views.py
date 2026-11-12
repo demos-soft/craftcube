@@ -925,6 +925,10 @@ def contacts():
     page = max(1, min(page, pages))
     rows = allrows[(page - 1) * size: page * size]
     more = page < pages
+    if request.args.get("_dialog") == "1":
+        # Elastic recipient_selector(): the contacts list inside a dialog iframe
+        return render_template("recipient_dialog.html", rows=rows, q=q, source=source,
+                               readonly=readonly, page=page, more=more, total=total, pages=pages)
     groups = store.contactgroups(session["user_id"])
     return render("addressbook", "addressbook.html", rows=rows, q=q, group=group,
                   source=source, sources=SOURCES, readonly=readonly,
