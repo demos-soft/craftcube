@@ -101,6 +101,40 @@ def test_unchecked_checkboxes_clear_only_their_section(client, store, user):
             assert prefs.get(key) == 1, f"{section}:{key} touched"
 
 
+def test_all_checkbox_subsets_per_section(client, store, user):
+    # Every on/off combination of every checkbox in each section. Omitted
+    # boxes are cleared by the browser form, present boxes are stored as 1.
+    for section in SECTIONS:
+        names = [n[1:] for n in prefs_sections.section_field_names(section) if n[1:] in prefs_sections.CHECKBOXES]
+        for mask in range(1 << len(names)):
+            prefs = dict(prefs_sections.DEFAULTS)
+            form = {"_section": section}
+            for i, key in enumerate(names):
+                if mask & (1 << i):
+                    form["_" + key] = "1"
+            out = prefs_sections.apply_form(prefs, form)
+            for i, key in enumerate(names):
+                assert out[key] == (1 if mask & (1 << i) else 0), (section, key)
+
+
+def test_every_select_option_round_trips(client, store, user):
+    spec = prefs_sections.sections(prefs_sections.DEFAULTS, FOLDERS)
+    for section in SECTIONS:
+        for _cls, _legend, fields in spec[section]["blocks"]:
+            for field in fields:
+                if field["type"] != "select":
+                    continue
+                key = field["name"][1:]
+                for value, _label in field["options"]:
+                    form = {"_section": section, field["name"]: value}
+                    # mailview coupling: keep prefer_html on unless it is the
+                    # field under test, so show_images values are accepted
+                    if section == "mailview" and key != "prefer_html":
+                        form["_prefer_html"] = "1"
+                    out = prefs_sections.apply_form(dict(prefs_sections.DEFAULTS), form)
+                    assert out[key] == value, (section, key, value)
+
+
 def test_mailview_prefer_html_show_images_coupling(client, store, user):
     prefs = {"prefer_html": 1, "show_images": "2"}
     out = prefs_sections.apply_form(
