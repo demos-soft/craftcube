@@ -135,5 +135,8 @@
     <li role="menuitem"><a class="unread{{ dis }}" href="#" data-act="unread"><span>{{ 'As unread'|lc }}</span></a></li>
     <li role="menuitem"><a class="flag{{ dis }}" href="#" data-act="flag"><span>{{ 'As flagged'|lc }}</span></a></li>
     <li role="menuitem"><a class="unflag{{ dis }}" href="#" data-act="unflag"><span>{{ 'As unflagged'|lc }}</span></a></li>
+    {% if (g.prefs or {}).get('flag_for_deletion') and not (g.prefs or {}).get('skip_deleted') %}
+    <li role="menuitem"><a class="undo{{ dis }}" href="#" data-act="undelete"><span>{{ 'As not deleted'|lc }}</span></a></li>
+    {% endif %}
   </ul>
 </div>

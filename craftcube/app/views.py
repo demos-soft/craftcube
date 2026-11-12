@@ -1148,6 +1148,10 @@ def _run_mail_action(box, command, folder, uids, dest=None):
                 box.set_flags(folder, uids, ["\\Flagged"], "add")
         elif command == "unflag":
             box.set_flags(folder, uids, ["\\Flagged"], "remove")
+        elif command == "undelete":
+            # rcmail webmail.js toggle_delete_status('_flag=undelete'):
+            # clears \Deleted so flag_for_deletion-marked messages survive
+            box.set_flags(folder, uids, ["\\Deleted"], "remove")
         elif command == "delete":
             box.delete(folder, uids)
             flash(i18n.gettext("messagedeleted", g.lang, domain="messages"), "confirmation")
