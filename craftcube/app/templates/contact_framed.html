@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="iframe">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  <script>
+  try {
+    if (document.cookie.indexOf('colorMode=dark') > -1
+      || (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.className += ' dark-mode';
+    }
+  } catch (e) { }
+  </script>
+</head>
+<body class="task-addressbook action-contact">
+  <div id="layout">
+    <div id="layout-content" class="selected">
+      <div class="header"><span class="header-title">{{ row.name }}</span></div>
+      <div class="content frame-content" role="main">
+        <div class="contact-header">
+          <div class="contact-photo"><img id="contactpic" src="{{ url_for('static', filename='images/contactpic.svg') }}" alt=""></div>
+          <div class="contact-head">
+            <div id="contacthead" class="readonly">
+              <div class="names"><span class="namefield">{{ row.name }}</span></div>
+              <div class="email">{{ row.email }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="formbuttons">
+          <a class="btn btn-secondary icon edit" href="{{ url_for('views.contact_edit', cid=row.contact_id) }}">Edit</a>
+          <a class="btn btn-secondary icon write" href="{{ url_for('views.compose', _to=row.email) }}">Compose</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% include "includes/layout.html" %}
+{% include "includes/menu.html" %}
+
+    <h1 class="voice">About</h1>
+
+    <div id="layout-content" class="selected no-navbar" role="main">
+      <div class="header">
+        <a class="button icon close" href="{{ url_for('views.mail') }}" style="position:absolute;right:.5rem;top:0"><span class="inner">Close</span></a>
+        <span class="header-title">About</span>
+      </div>
+      <div class="content frame-content" role="main" style="text-align:center">
+        <img src="{{ url_for('static', filename='images/logo.svg') }}" id="aboutlogo" style="max-height:96px;margin:1rem auto">
+        <h2 style="font-weight:700">{{ product_name }}</h2>
+        <p>Version {{ version }}</p>
+        <p>A webmail client reverse-engineered from Roundcube Webmail,<br>
+           re-implemented in Python (Flask) with the Elastic skin look &amp; feel.</p>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}

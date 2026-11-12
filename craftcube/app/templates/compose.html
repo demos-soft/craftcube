@@ -1,0 +1,123 @@
+{% include "includes/layout.html" %}
+{% include "includes/menu.html" %}
+
+    <h1 class="voice">Compose</h1>
+
+    <!-- compose options and attachments -->
+    <div id="layout-sidebar" class="listbox sidebar-right">
+      <div class="header">
+        <a class="button icon back-content-button" href="#content" data-hidden="big"><span class="inner">Back</span></a>
+        <span class="header-title all-sizes">Options and attachments</span>
+      </div>
+      <div class="scroller">
+        <div id="compose-attachments" class="file-upload" role="region">
+          <h2 class="voice">Attachments</h2>
+          <div class="upload-form">
+            <input type="file" name="_file" id="compose-file" multiple style="display:none">
+            <button type="button" class="btn btn-secondary attach" onclick="document.getElementById('compose-file').click()">Add attachment</button>
+          </div>
+          <ul class="attachmentslist" id="attachment-list"></ul>
+          <div class="hint">Drop files here or click the button to attach.</div>
+        </div>
+        <div id="compose-options" class="formcontent" role="region">
+          <h2 class="voice">Compose options</h2>
+          <div class="form-group row">
+            <label for="compose-store-target" class="col-form-label col-6">Save sent message in</label>
+            <div class="col-6">
+              <select id="compose-store-target" class="custom-select" disabled>
+                <option>Sent</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="layout-content" class="listbox selected" role="main">
+      <h2 id="aria-label-toolbar" class="voice">Toolbar</h2>
+      <div class="header">
+        <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
+        <span class="header-title">Compose</span>
+        <div id="messagetoolbar" class="toolbar menu" role="toolbar">
+          <a class="options" href="#options" onclick="document.getElementById('layout-sidebar').classList.add('selected')" data-hidden="big">
+            <span class="inner">Options and attachments</span>
+          </a>
+          <button type="submit" form="composeform" name="_action" value="save" class="btn btn-link save draft" title="Save message">
+            <span class="inner">Save</span>
+          </button>
+          <span class="spacer"></span>
+          <button type="button" class="btn btn-link attach" title="Add attachment"
+                  onclick="document.getElementById('compose-file').click()"><span class="inner">Attach</span></button>
+        </div>
+      </div>
+
+      <div id="compose-content" class="formcontainer content">
+        <form id="composeform" method="post" enctype="multipart/form-data" class="formcontent scroller" action="">
+          <input type="hidden" name="_uid" value="{{ uid_of or '' }}">
+          <input type="hidden" name="_mode" value="{{ mode or '' }}">
+          <input type="hidden" name="_draft" value="{{ request.values.get('_draft') or '' }}">
+          <input type="hidden" name="_mbox" value="{{ request.values.get('_mbox') or '' }}">
+          <input type="hidden" name="_format" id="composeformat" value="{{ 'html' if prefill.html else 'plain' }}">
+          <input type="hidden" name="_in_reply_to" value="{{ prefill.in_reply_to }}">
+          <input type="hidden" name="_references" value="{{ prefill.references }}">
+          <table class="layout">
+            <tbody>
+              <tr class="from">
+                <td class="title"><label for="identities">From</label></td>
+                <td class="field">
+                  <select name="_ident" id="identities" class="custom-select">
+                    {% for i in identities %}
+                    <option value="{{ i.identity_id }}">{{ i.name }} &lt;{{ i.email }}&gt;{{ ' (default)' if i.standard }}</option>
+                    {% endfor %}
+                  </select>
+                </td>
+              </tr>
+              <tr class="to">
+                <td class="title"><label for="rcpTo">To</label></td>
+                <td class="field"><input type="text" name="_to" id="rcpTo" value="{{ prefill.to }}" class="form-control" tabindex="1" required></td>
+              </tr>
+              <tr class="cc">
+                <td class="title"><label for="rcpCc">Cc</label></td>
+                <td class="field"><input type="text" name="_cc" id="rcpCc" value="{{ prefill.cc }}" class="form-control" tabindex="2"></td>
+              </tr>
+              <tr class="bcc">
+                <td class="title"><label for="rcpBcc">Bcc</label></td>
+                <td class="field"><input type="text" name="_bcc" id="rcpBcc" value="{{ prefill.bcc }}" class="form-control" tabindex="3"></td>
+              </tr>
+              <tr class="subject">
+                <td class="title"><label for="rcpSubject">Subject</label></td>
+                <td class="field"><input type="text" name="_subject" id="rcpSubject" value="{{ prefill.subject }}" class="form-control" tabindex="4"></td>
+              </tr>
+              <tr class="message">
+                <td class="title" style="vertical-align:top"><label for="composebody">Message</label></td>
+                <td class="field">
+                  <div class="html-editor">
+                    <div class="editor-toolbar">
+                      <a href="#" class="mce-i-html icon" id="format-toggle" title="Toggle HTML/Plain text"></a>
+                    </div>
+                    <textarea name="_body" id="composebody" class="form-control" rows="16" tabindex="5">{{ prefill.body }}</textarea>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="formbuttons">
+            <button type="submit" name="_action" value="send" class="btn btn-primary icon send" id="sendbtn" tabindex="6">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}
+<script>
+  // show selected files in the attachment list
+  document.getElementById('compose-file').addEventListener('change', function () {
+    var ul = document.getElementById('attachment-list');
+    ul.innerHTML = '';
+    for (var i = 0; i < this.files.length; i++) {
+      var li = document.createElement('li');
+      li.textContent = this.files[i].name + ' (' + this.files[i].size + ' B)';
+      ul.appendChild(li);
+    }
+  });
+</script>

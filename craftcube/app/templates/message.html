@@ -1,0 +1,77 @@
+{% include "includes/layout.html" %}
+{% include "includes/menu.html" %}
+
+    <h1 class="voice">Message</h1>
+
+    <div id="layout-content" class="selected">
+      <h2 id="aria-label-toolbar" class="voice">Toolbar</h2>
+      <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
+        <a class="button icon back-list-button" href="{{ url_for('views.mail', _mbox=folder) }}"><span class="inner">Back</span></a>
+        <span class="header-title"></span>
+        {% include "includes/mail-menu.html" %}
+      </div>
+      <div class="content frame-content" role="main">
+        <div id="message-header">
+          <h2 class="subject">
+            <span class="voice">Subject: </span>{{ subject }}
+          </h2>
+          <div class="header">
+            <img src="{{ url_for('static', filename='images/contactpic.svg') }}" class="contactphoto" alt="">
+            <div class="header-content">
+              <div class="header-summary">
+                <span><strong>From:</strong> {{ headers|selectattr(0, 'equalto', 'From')|map(attribute=1)|join }}</span><br>
+                <span><strong>To:</strong> {{ headers|selectattr(0, 'equalto', 'To')|map(attribute=1)|join }}</span><br>
+                <span><strong>Date:</strong> {{ headers|selectattr(0, 'equalto', 'Date')|map(attribute=1)|join }}</span>
+              </div>
+              <div class="header-headers">
+                <table class="headers-table">
+                  {% for h, v in headers %}
+                  <tr><td class="header-title">{{ h }}</td><td>{{ v }}</td></tr>
+                  {% endfor %}
+                </table>
+              </div>
+              <div class="header-links">
+                <a href="#headers" class="headers-details" id="hdr-toggle">Details</a>
+                <a href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=0, _inline=1) }}" class="source" target="_blank">View source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="message-content">
+          <div class="leftcol" role="region">
+            <h2 id="aria-label-messageattachments" class="voice">Attachments</h2>
+            <ul class="attachmentslist" id="attachment-list">
+              {% for a in attachments %}
+              <li class="message-attachment aria">
+                <a class="name" href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part) }}">{{ a.filename }}</a>
+                <span class="size">{{ a.size|size }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="rightcol" role="region">
+            <h2 id="aria-label-messagebody" class="voice">Body</h2>
+            <div id="messagebody">
+              {% for kind, body in parts %}
+                {% if kind == 'html' %}
+                <div class="message-htmlpart"><div class="rcmBody">{{ body|safe }}</div></div>
+                {% else %}
+                <div class="message-part"><div class="rcmBody"><pre class="pre">{{ body }}</pre></div></div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}
+<script>
+  document.getElementById('hdr-toggle')?.addEventListener('click', function (e) {
+    e.preventDefault();
+    var el = document.querySelector('.header-headers');
+    var show = el.style.display !== 'table' && el.style.display !== 'block';
+    el.style.display = show ? 'block' : 'none';
+    this.textContent = show ? 'Summary' : 'Details';
+  });
+</script>

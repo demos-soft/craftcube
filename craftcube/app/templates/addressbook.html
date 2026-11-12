@@ -1,0 +1,89 @@
+{% include "includes/layout.html" %}
+{% include "includes/menu.html" %}
+
+    <h1 class="voice">Address book</h1>
+
+    <!-- contacts list -->
+    <div id="layout-sidebar" class="listbox" role="navigation">
+      <div class="header">
+        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <span class="header-title username">{{ current_user.username }}</span>
+      </div>
+      <div class="scroller">
+        <ul id="contactlist" class="treelist listing contactlist">
+          <li class="mailbox contactgroup{{ ' selected' if not group }}">
+            <a href="{{ url_for('views.contacts') }}">All</a>
+          </li>
+          {% for g in groups %}
+          <li class="mailbox contactgroup{{ ' selected' if group == g.contactgroup_id }}">
+            <a href="{{ url_for('views.contacts', _group=g.contactgroup_id) }}">{{ g.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <form method="post" action="{{ url_for('views.contactgroup_add') }}" style="padding:.5rem">
+          <div class="input-group">
+            <input type="text" name="name" class="form-control" placeholder="New list" size="16">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-secondary icon add" title="Create list">Add</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- contact list -->
+    <div id="layout-list" class="listbox selected">
+      <div class="header">
+        <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
+        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Lists</span></a>
+        <span class="header-title">Contacts</span>
+        <div class="toolbar menu" role="toolbar">
+          <a class="btn btn-link create" href="{{ url_for('views.contact_edit', cid=None) }}" title="Create new contact"><span class="inner">New</span></a>
+          {% if group %}
+          <form method="post" action="{{ url_for('views.contactgroup_delete', gid=group) }}" class="d-inline"
+                onsubmit="return confirm('Delete this list?')">
+            <button type="submit" class="btn btn-link delete" title="Delete list"><span class="inner">Delete list</span></button>
+          </form>
+          {% endif %}
+        </div>
+      </div>
+      <div class="searchbar menu">
+        <form action="{{ url_for('views.contacts') }}" method="get">
+          {% if group %}<input type="hidden" name="_group" value="{{ group }}">{% endif %}
+          <input type="text" class="form-control" name="_q" value="{{ q }}" placeholder="Search…" autocomplete="off">
+          <button type="submit" class="button icon search" title="Search"><span class="inner">Search</span></button>
+          {% if q %}<a class="button icon close" href="{{ url_for('views.contacts') }}"><span class="inner">Reset</span></a>{% endif %}
+        </form>
+      </div>
+      <div class="scroller">
+        <table class="listing contactlist" id="contacttable">
+          <thead>
+            <tr><th class="name">Name</th><th class="email">Email</th></tr>
+          </thead>
+          <tbody>
+            {% for c in rows %}
+            <tr>
+              <td class="name"><a href="{{ url_for('views.contact_view', cid=c.contact_id, _framed=1) }}" target="contentframe">{{ c.name or c.firstname }}</a></td>
+              <td class="email"><a>{{ c.email }}</a></td>
+            </tr>
+            {% else %}
+            <tr class="listempty"><td colspan="2">No contacts found.</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div class="pagenav menu footer small">
+        <a href="{{ url_for('views.contacts', _q=q, _group=group, _page=page-1) }}" class="prevpage{{ ' disabled' if page <= 1 }}"><span class="inner">Prev</span></a>
+        <span class="pagenav-text">{% if rows %}{{ (page-1)*20+1 }}-{% endif %}</span>
+        <a href="{{ url_for('views.contacts', _q=q, _group=group, _page=page+1) }}" class="nextpage{{ ' disabled' if not more }}"><span class="inner">Next</span></a>
+      </div>
+    </div>
+
+    <div id="layout-content">
+      <div class="header"><span class="header-title"></span></div>
+      <div class="iframe-wrapper">
+        <iframe id="contentframe" name="contentframe" title="Contact preview" src="about:blank"></iframe>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}

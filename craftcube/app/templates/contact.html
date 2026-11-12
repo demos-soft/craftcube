@@ -1,0 +1,53 @@
+{% include "includes/layout.html" %}
+{% if not request.args.get('_framed') %}{% include "includes/menu.html" %}{% endif %}
+
+    <div id="layout-content" class="selected">
+      <div class="header">
+        <a class="button icon back-list-button" href="{{ url_for('views.contacts') }}#back"><span class="inner">Back</span></a>
+        <span class="header-title">Contact</span>
+        <div class="toolbar menu" role="toolbar">
+          <a class="btn btn-link edit" href="{{ url_for('views.contact_edit', cid=row.contact_id) }}" title="Edit contact"><span class="inner">Edit</span></a>
+          <a class="btn btn-link compose" href="{{ url_for('views.compose', _to=row.email) }}" title="Write email"><span class="inner">Compose</span></a>
+          <form method="post" action="{{ url_for('views.contact_delete', cid=row.contact_id) }}" class="d-inline"
+                onsubmit="return confirm('Delete this contact?')">
+            <button type="submit" class="btn btn-link delete" title="Delete contact"><span class="inner">Delete</span></button>
+          </form>
+        </div>
+      </div>
+      <div class="content frame-content" role="main">
+        <fieldset class="contact-head">
+          <div class="contact-header">
+            <div class="contact-photo"><img id="contactpic" src="{{ url_for('static', filename='images/contactpic.svg') }}" alt=""></div>
+            <div class="contact-head">
+              <legend>Contact</legend>
+              <div id="contacthead" class="readonly">
+                <div class="names"><span class="namefield">{{ row.name }}</span></div>
+                <div class="email">{{ row.email }}</div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="contactgrouplist">
+          <legend>Contact lists</legend>
+          <ul class="proplist contactgrouplist listing">
+            {% for g in groups %}
+            <li class="contactgroup{{ ' selected' if g.contactgroup_id in member_of }}">
+              {% if g.contactgroup_id in member_of %}
+                <form method="post" action="{{ url_for('views.contact_group_remove', cid=row.contact_id, gid=g.contactgroup_id) }}" class="d-inline">
+                  <button type="submit" class="btn btn-link">{{ g.name }} (remove)</button>
+                </form>
+              {% else %}
+                <form method="post" action="{{ url_for('views.contact_group_add', cid=row.contact_id, gid=g.contactgroup_id) }}" class="d-inline">
+                  <button type="submit" class="btn btn-link">{{ g.name }} (add)</button>
+                </form>
+              {% endif %}
+            </li>
+            {% else %}
+            <li class="listitem">No contact lists.</li>
+            {% endfor %}
+          </ul>
+        </fieldset>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}

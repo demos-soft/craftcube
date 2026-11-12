@@ -1,0 +1,28 @@
+<div id="layout-menu">
+  <h2 id="aria-label-tasknav" class="voice">Task navigation</h2>
+  <div class="popover-header">
+    <img src="{{ url_for('static', filename='images/logo.svg') }}" id="logo" alt="Logo">
+    <a class="button icon cancel"><span class="inner">Close</span></a>
+  </div>
+  <div id="taskmenu" class="menu toolbar" role="navigation" aria-labelledby="aria-label-tasknav">
+      <span class="action-buttons">
+        {% if task == 'mail' and action == 'compose' %}
+          <a class="btn compose selected" href="{{ url_for('views.compose') }}"><span class="inner">Compose</span></a>
+        {% else %}
+          <a class="btn compose" href="{{ url_for('views.compose') }}" data-fab="true" data-fab-task="mail" data-fab-action="none"><span class="inner">Compose</span></a>
+        {% endif %}
+      </span>
+      {% if action == 'compose' and task == 'mail' %}
+        <a class="btn mail" href="{{ url_for('views.mail') }}"><span class="inner">Mail</span></a>
+      {% else %}
+        <a class="btn mail{{ ' selected' if task == 'mail' }}" href="{{ url_for('views.mail') }}"><span class="inner">Mail</span></a>
+      {% endif %}
+      <a class="btn contacts{{ ' selected' if task == 'addressbook' }}" href="{{ url_for('views.contacts') }}"><span class="inner">Contacts</span></a>
+      <a class="btn settings{{ ' selected' if task == 'settings' }}" href="{{ url_for('views.settings') }}"><span class="inner">Settings</span></a>
+      <span class="special-buttons">
+        <a class="btn theme dark" href="#" id="darktoggle"><span class="inner">Dark</span></a>
+        <a class="btn about" href="{{ url_for('views.about') }}"><span class="inner">About</span></a>
+        <a class="btn logout" href="{{ url_for('views.logout') }}"><span class="inner">Logout</span></a>
+      </span>
+  </div>
+</div>

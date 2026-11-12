@@ -1,0 +1,11 @@
+{%- with messages = get_flashed_messages(with_categories=true) %}
+  {%- if messages %}
+  <div id="messagestack">
+    {%- for cat, msg in messages %}
+    <div class="alert alert-{{ 'danger' if cat == 'error' else 'success' if cat == 'confirmation' else 'info' }}">
+      <span>{{ msg }}</span>
+    </div>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+{%- endwith %}

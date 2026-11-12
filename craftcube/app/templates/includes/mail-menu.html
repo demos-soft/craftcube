@@ -1,0 +1,10 @@
+<div id="mailtoolbar" class="toolbar menu" role="toolbar">
+  <a href="{{ url_for('views.compose') }}" class="reply disabled" id="tb-reply" title="Reply to message"><span class="inner">Reply</span></a>
+  <a href="{{ url_for('views.compose', _mode='replyall') }}" class="reply-all disabled" id="tb-replyall" title="Reply to all"><span class="inner">Reply all</span></a>
+  <a href="{{ url_for('views.compose', _mode='forward') }}" class="forward disabled" id="tb-forward" title="Forward message"><span class="inner">Forward</span></a>
+  <span class="spacer"></span>
+  <a href="#" class="delete disabled" id="tb-delete" title="Delete message"><span class="inner">Delete</span></a>
+  <a href="#" class="markmessage disabled" id="tb-markread" title="Mark as read" data-act="read"><span class="inner">Read</span></a>
+  <a href="#" class="unread disabled" id="tb-markunread" title="Mark as unread" data-act="unread"><span class="inner">Unread</span></a>
+  <a href="#" class="flag disabled" id="tb-flag" title="Flag message" data-act="flag"><span class="inner">Flag</span></a>
+</div>

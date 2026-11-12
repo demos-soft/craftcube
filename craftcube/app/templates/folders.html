@@ -1,0 +1,62 @@
+{% include "includes/layout.html" %}
+{% include "includes/menu.html" %}
+
+    <h1 class="voice">Folders</h1>
+
+    <div id="layout-sidebar" class="listbox" role="navigation">
+      <div class="header">
+        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <span class="header-title username">{{ current_user.username }}</span>
+      </div>
+      <div class="scroller">
+        <ul class="listing settings-table treelist">
+          <li><a href="{{ url_for('views.settings') }}">User settings</a></li>
+          <li><a href="{{ url_for('views.identities') }}">Identities</a></li>
+          <li class="selected"><a href="{{ url_for('views.folders_view') }}">Folders</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="layout-content" class="selected">
+      <div class="header"><span class="header-title">Folders</span></div>
+      <div class="content">
+        <table class="listing table" id="foldertable">
+          <thead><tr><th>Name</th><th>Messages</th><th>Unread</th><th></th></tr></thead>
+          <tbody>
+            {% for f in all_folders %}
+            <tr>
+              <td class="mailbox">{{ f.name }}{{ ' [' + f.special + ']' if f.special }}</td>
+              <td>{{ f.total }}</td>
+              <td>{{ f.unseen }}</td>
+              <td class="action">
+                {% if f.name != 'INBOX' %}
+                <form method="post" action="{{ url_for('views.folders_view') }}" class="d-inline">
+                  <input type="hidden" name="_act" value="empty"><input type="hidden" name="folder" value="{{ f.name }}">
+                  <button type="submit" class="btn btn-link" title="Empty folder"><span class="inner">Empty</span></button>
+                </form>
+                <form method="post" action="{{ url_for('views.folders_view') }}" class="d-inline" onsubmit="return confirm('Delete folder {{ f.name }}?')">
+                  <input type="hidden" name="_act" value="delete"><input type="hidden" name="folder" value="{{ f.name }}">
+                  <button type="submit" class="btn btn-link delete"><span class="inner">Delete</span></button>
+                </form>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <fieldset class="settings-group">
+          <legend>Create folder</legend>
+          <form method="post" action="{{ url_for('views.folders_view') }}">
+            <input type="hidden" name="_act" value="create">
+            <div class="input-group">
+              <input type="text" name="name" class="form-control" placeholder="Folder name" required>
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary icon create">Create</button>
+              </div>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}

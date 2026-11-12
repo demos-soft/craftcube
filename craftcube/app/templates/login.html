@@ -1,0 +1,37 @@
+{% include "includes/layout.html" %}
+
+    <h1 class="voice">{{ product_name }} Login</h1>
+
+    <div id="layout-content" class="selected no-navbar" role="main">
+      <img src="{{ url_for('static', filename='images/logo.svg') }}" id="logo" alt="Logo">
+      <form id="login-form" method="post" class="propform">
+        <div class="form-group row">
+          <div class="col">
+            <input type="text" id="rcmloginsuser" name="_user" value="" size="40"
+                   class="form-control input-md" tabindex="1" placeholder="Username" autocapitalize="none" autocomplete="username" required autofocus>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col">
+            <input type="password" id="rcmloginpass" name="_pass" size="40" class="form-control input-md"
+                   tabindex="2" placeholder="Password" autocomplete="current-password" required>
+          </div>
+        </div>
+        {% if error %}
+        <div class="text-danger mb-2">{{ error }}</div>
+        {% endif %}
+        <div class="formbuttons">
+          <button type="submit" class="btn btn-primary icon login" id="rcmloginsubmit" tabindex="3">Login</button>
+        </div>
+        <div id="login-footer" role="contentinfo">
+          {{ product_name }}
+          &nbsp;&bull;&nbsp; {{ version }}
+        </div>
+      </form>
+    </div>
+
+    <noscript>
+      <p class="noscriptwarning">JavaScript is disabled. Some functionality may not work.</p>
+    </noscript>
+
+{% include "includes/footer.html" %}

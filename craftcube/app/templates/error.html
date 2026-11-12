@@ -1,0 +1,12 @@
+{% include "includes/layout.html" %}
+
+    <div id="layout-content" class="selected no-navbar" role="main">
+      <div class="header"><span class="header-title">Error</span></div>
+      <div class="content frame-content" role="main" style="text-align:center">
+        <h1 style="margin-top:3rem;font-weight:700">{{ code }}</h1>
+        <p>{{ message }}</p>
+        <a class="btn btn-primary" href="{{ url_for('views.index') }}">Back to {{ product_name }}</a>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}

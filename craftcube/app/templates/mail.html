@@ -1,0 +1,125 @@
+{% include "includes/layout.html" %}
+{% include "includes/menu.html" %}
+
+    <h1 class="voice">Mail</h1>
+
+    <!-- folders list -->
+    <div id="layout-sidebar" class="listbox" role="navigation" aria-labelledby="aria-label-folderlist">
+      <div class="header">
+        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <span class="header-title username">{{ current_user.username }}</span>
+        <a href="{{ url_for('views.folders_view') }}" class="button icon folders" title="Manage folders"><span class="inner">Folders</span></a>
+      </div>
+      <h2 id="aria-label-folderlist" class="voice">Folder list</h2>
+      <div id="folderlist-content" class="scroller">
+        <ul id="mailboxlist" class="treelist listing folderlist">
+          {% for f in folders %}
+          <li class="mailbox{{ ' selected' if f.name == folder }}{{ ' special-' + f.special if f.special }}"
+              data-name="{{ f.name }}">
+            <a href="{{ url_for('views.mail', _mbox=f.name) }}{{ ('&_search=' ~ search) if search else '' }}">
+              {{ f.name if '/' not in f.name else f.name.split('/')|last }}
+              {% if f.unseen and f.name != folder %}<span class="unreadcount">{{ f.unseen }}</span>{% endif %}
+            </a>
+            {% if f.special == 'trash' %}
+            <form method="post" action="{{ url_for('views.mail_act') }}" class="d-inline">
+              <input type="hidden" name="_act" value="emptytrash"><input type="hidden" name="_mbox" value="{{ f.name }}">
+            </form>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="footer small">
+        <span style="padding:0 1rem;color:#737677;">{{ listing.total }} message(s)</span>
+      </div>
+    </div>
+
+    <!-- messages list -->
+    <div id="layout-list" class="listbox selected">
+      <div id="messagelist-header" class="header">
+        <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
+        <a class="button icon back-sidebar-button folders" href="#sidebar"><span class="inner">Folders</span></a>
+        <span class="header-title">{{ folder }}</span>
+        <div class="toolbar menu" role="toolbar">
+          <a href="#select" class="select active" id="list-toggle-button" title="Select"><span class="inner">Select</span></a>
+        </div>
+        <a href="{{ url_for('views.mail', _mbox=folder, _sort=sort, _search=search, _page=listing.page) }}"
+           class="button icon toolbar-button refresh" title="Refresh"><span class="inner">Refresh</span></a>
+        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
+      </div>
+
+      <div class="searchbar menu">
+        <form action="{{ url_for('views.mail') }}" method="get" role="search">
+          <input type="hidden" name="_mbox" value="{{ folder }}">
+          <input type="hidden" name="_sort" value="{{ sort }}">
+          <input type="text" class="form-control" name="_search" value="{{ search }}"
+                 placeholder="Search messages…" size="30" autocomplete="off">
+          <button type="submit" class="button icon search" title="Find mail"><span class="inner">Search</span></button>
+          {% if search %}<a class="button icon close" href="{{ url_for('views.mail', _mbox=folder) }}"><span class="inner">Reset</span></a>{% endif %}
+        </form>
+      </div>
+
+      <div id="messagelist-content" class="scroller" tabindex="-1">
+        <h2 id="aria-label-messagelist" class="voice">Message list</h2>
+        <form method="post" action="{{ url_for('views.mail_act') }}" id="mailact">
+          <input type="hidden" name="_mbox" value="{{ folder }}">
+          <input type="hidden" name="_return" value="{{ request.full_path }}">
+          <table class="listing messagelist sortheader fixedheader" id="messagelist">
+            <thead>
+              <tr>
+                <th class="checkbox-cell"><input type="checkbox" id="checkall" title="Select all"></th>
+                <th class="subject{% if sort == 'subject' %} sorted desc{% endif %}"><a href="{{ url_for('views.mail', _mbox=folder, _sort='subject', _search=search) }}">Subject</a></th>
+                <th class="fromto{% if sort == 'from' %} sorted desc{% endif %}"><a href="{{ url_for('views.mail', _mbox=folder, _sort='from', _search=search) }}">From</a></th>
+                <th class="date{% if sort == 'date' %} sorted desc{% endif %}"><a href="{{ url_for('views.mail', _mbox=folder, _sort='date', _search=search) }}">Date</a></th>
+                <th class="size{% if sort == 'size' %} sorted desc{% endif %}"><a href="{{ url_for('views.mail', _mbox=folder, _sort='size', _search=search) }}">Size</a></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for m in listing['items'] %}
+              <tr class="message{{ ' selected' if preview_uid == m.uid|string }}{{ ' unread' if not m.seen }}{{ ' flagged' if m.flagged }}{{ ' deleted' if m.deleted }}" data-uid="{{ m.uid }}">
+                <td class="checkbox-cell"><input type="checkbox" name="_uids[]" value="{{ m.uid }}"></td>
+                <td class="subject">
+                  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=m.uid, _page=listing.page, _sort=sort, _search=search) }}">
+                    <span class="msgicon status{{ '' if m.seen else ' unread' }}"></span>
+                    <span class="subject">{{ m.subject }}</span>
+                    {% if m.attachments %}<span class="attachment"><span></span></span>{% endif %}
+                  </a>
+                </td>
+                <td class="fromto"><a>{{ m['from'] }}</a></td>
+                <td class="date">{{ m.date|rcdate }}</td>
+                <td class="size">{{ m.size|size }}</td>
+              </tr>
+              {% else %}
+              <tr class="listempty"><td colspan="5">No messages found in this folder.</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <div class="pagenav menu footer small" role="toolbar">
+        <a href="{{ url_for('views.mail', _mbox=folder, _page=1, _sort=sort, _search=search) }}" class="firstpage{{ ' disabled' if listing.page <= 1 }}" title="First page"><span class="inner">First</span></a>
+        <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.page-1, _sort=sort, _search=search) }}" class="prevpage{{ ' disabled' if listing.page <= 1 }}" title="Previous page"><span class="inner">Prev</span></a>
+        <span class="pagenav-text" aria-live="polite">
+          {%- if listing.total %}{{ listing.first }}-{% if listing.total > 20 %}{{ listing.last }} of {% endif %}{{ listing.total }}{% else %}&nbsp;{% endif -%}
+        </span>
+        <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.page+1, _sort=sort, _search=search) }}" class="nextpage{{ ' disabled' if listing.page >= listing.pages }}" title="Next page"><span class="inner">Next</span></a>
+        <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.pages, _sort=sort, _search=search) }}" class="lastpage{{ ' disabled' if listing.page >= listing.pages }}" title="Last page"><span class="inner">Last</span></a>
+      </div>
+    </div>
+
+    <!-- message preview -->
+    <div id="layout-content"{{ ' class="selected"' if preview_uid }}>
+      <h2 id="aria-label-toolbar" class="voice">Toolbar</h2>
+      <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
+        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <span class="header-title"></span>
+        {% include "includes/mail-menu.html" %}
+      </div>
+      <h2 id="aria-label-mailpreviewframe" class="voice">Preview</h2>
+      <div class="iframe-wrapper">
+        <iframe id="messagecontframe" name="messagecontframe" title="Preview"
+                src="{{ url_for('views.message_view', _mbox=folder, _uid=preview_uid, _framed=1) if preview_uid else 'about:blank' }}"></iframe>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}

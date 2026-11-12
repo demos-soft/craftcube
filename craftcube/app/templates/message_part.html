@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="iframe">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  <script>
+  try {
+    if (document.cookie.indexOf('colorMode=dark') > -1
+      || (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.className += ' dark-mode';
+    }
+  } catch (e) { }
+  </script>
+</head>
+<body class="task-mail action-show">
+  <div id="layout">
+    <div id="layout-content" class="selected">
+      <div class="content frame-content" role="main">
+        <div id="message-header">
+          <h2 class="subject">{{ subject }}</h2>
+          <div class="header">
+            <img src="{{ url_for('static', filename='images/contactpic.svg') }}" class="contactphoto" alt="">
+            <div class="header-content">
+              <div class="header-summary">
+                <span><strong>From:</strong> {{ headers|selectattr(0, 'equalto', 'From')|map(attribute=1)|join }}</span><br>
+                <span><strong>To:</strong> {{ headers|selectattr(0, 'equalto', 'To')|map(attribute=1)|join }}</span><br>
+                <span><strong>Date:</strong> {{ headers|selectattr(0, 'equalto', 'Date')|map(attribute=1)|join }}</span>
+              </div>
+              <div class="header-headers">
+                <table class="headers-table">
+                  {% for h, v in headers %}
+                  <tr><td class="header-title">{{ h }}</td><td>{{ v }}</td></tr>
+                  {% endfor %}
+                </table>
+              </div>
+              <div class="header-links">
+                <a href="#headers" class="headers-details" id="hdr-toggle">Details</a>
+                <a class="reply" href="{{ url_for('views.compose', _mode='reply', _mbox=folder, _uid=uid) }}">Reply</a>
+                <a class="reply all" href="{{ url_for('views.compose', _mode='replyall', _mbox=folder, _uid=uid) }}">Reply all</a>
+                <a class="forward" href="{{ url_for('views.compose', _mode='forward', _mbox=folder, _uid=uid) }}">Forward</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="message-content">
+          <div class="leftcol" role="region">
+            <ul class="attachmentslist" id="attachment-list">
+              {% for a in attachments %}
+              <li class="message-attachment">
+                <a class="name" href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part) }}">{{ a.filename }}</a>
+                <span class="size">{{ a.size|size }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="rightcol" role="region">
+            <div id="messagebody">
+              {% for kind, body in parts %}
+                {% if kind == 'html' %}
+                <div class="message-htmlpart"><div class="rcmBody">{{ body|safe }}</div></div>
+                {% else %}
+                <div class="message-part"><div class="rcmBody"><pre class="pre">{{ body }}</pre></div></div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('hdr-toggle')?.addEventListener('click', function (e) {
+      e.preventDefault();
+      var el = document.querySelector('.header-headers');
+      var show = el.style.display !== 'block';
+      el.style.display = show ? 'block' : 'none';
+      this.textContent = show ? 'Summary' : 'Details';
+    });
+  </script>
+</body>
+</html>

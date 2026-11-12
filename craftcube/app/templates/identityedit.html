@@ -1,0 +1,44 @@
+{% include "includes/layout.html" %}
+{% include "includes/menu.html" %}
+
+    <h1 class="voice">{{ 'Edit identity' if row else 'New identity' }}</h1>
+
+    <div id="layout-content" class="selected">
+      <div class="header">
+        <a class="button icon back-content-button" href="{{ url_for('views.identities') }}"><span class="inner">Cancel</span></a>
+        <span class="header-title">{{ 'Edit' if row else 'Create' }} identity</span>
+      </div>
+      <div class="formcontainer content">
+        <form method="post" class="formcontent propform">
+          <fieldset>
+            <legend>Identity</legend>
+            <table class="layout">
+              <tbody>
+                <tr><td class="title"><label for="inputname">Display name</label></td>
+                    <td><input type="text" name="name" id="inputname" value="{{ row['name'] if row else '' }}" class="form-control"></td></tr>
+                <tr><td class="title"><label for="inputemail">E-mail</label></td>
+                    <td><input type="text" name="email" id="inputemail" value="{{ row.email if row else '' }}" class="form-control" required></td></tr>
+                <tr><td class="title"><label for="inputorg">Organization</label></td>
+                    <td><input type="text" name="organization" id="inputorg" value="{{ row.organization if row else '' }}" class="form-control"></td></tr>
+                <tr><td class="title"><label for="inputreply">Reply-To</label></td>
+                    <td><input type="text" name="reply_to" id="inputreply" value="{{ row['reply-to'] if row else '' }}" class="form-control"></td></tr>
+                <tr><td class="title"><label for="inputbcc">Bcc</label></td>
+                    <td><input type="text" name="bcc" id="inputbcc" value="{{ row.bcc if row else '' }}" class="form-control"></td></tr>
+                <tr><td class="title"><label for="inputsig">Signature</label></td>
+                    <td><textarea name="signature" id="inputsig" rows="6" class="form-control">{{ row.signature if row else '' }}</textarea></td></tr>
+                <tr><td class="title">Options</td>
+                    <td>
+                      <label><input type="checkbox" name="standard" value="1" {{ 'checked' if row and row.standard or not row }}> Set as default</label>
+                    </td></tr>
+              </tbody>
+            </table>
+          </fieldset>
+          <div class="formbuttons">
+            <button type="submit" class="btn btn-primary icon save">Save</button>
+            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.identities') }}">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+{% include "includes/footer.html" %}
