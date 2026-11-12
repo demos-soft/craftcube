@@ -1,116 +1,36 @@
-/* CraftCube supplemental styles — icon content + inner-label rules that the
-   elastic skin carries in ui.css, matching Roundcube Elastic behaviour. */
+/* CraftCube supplemental styles.
 
-/* task menu: icons with labels below, matching Elastic's 78px rail.
-   Icons + colours mirror skins/elastic styles/widgets/menu.less exactly. */
-#taskmenu a.compose:before { content: "\f044"; }
-#taskmenu a.mail:before { content: "\f0e0"; }
-#taskmenu a.contacts:before { content: "\f0c0"; }
-#taskmenu a.settings:before { content: "\f013"; }
-#taskmenu a.logout:before { content: "\f011"; }
-#taskmenu a.about:before { content: "\f128"; }
-#taskmenu a.theme.dark:before { content: "\f186"; }
-#taskmenu a.theme.light:before { content: "\f185"; }
-#taskmenu span.inner { font-size: 90%; }
-@media screen and (min-width:481px) {
-  #taskmenu a { color: #fff; padding: .45rem 0; text-align: center; }
-  #taskmenu a.selected, #taskmenu a.selected:hover, #taskmenu a:hover { color: #fff; background: #45555c; }
-  #taskmenu .special-buttons { position: absolute; bottom: 0; left: 0; background-color: #2f3a3f; width: 100%; }
-  #taskmenu .action-buttons a { color: #37beff; background: 0 0; }
-  #taskmenu .action-buttons a:hover { color: #37beff; background: #45555c; }
-  #taskmenu a.logout, #taskmenu a.logout:hover { color: #ff5552 !important; }
-}
-@media screen and (min-width:481px) and (max-width:1024px) {
-  #taskmenu a { width: 42px; height: 42px; font-size: 1.2rem; padding: 0; }
-  #taskmenu a:before { line-height: 42px; }
-  #taskmenu span.inner { display: none; }
-}
-@media screen and (min-width:1025px) {
-  #taskmenu a { width: 78px; font-size: 1rem; }
-  #taskmenu a:before { float: none; margin: 0 auto; }
-  #taskmenu a:focus { background-color: #45555c; }
-  #taskmenu span.inner { padding: 0 .1em; }
-}
-
-/* settings sidebar icons (elastic: listing.iconized) */
-.listing.iconized li.preferences > a:before { content: "\f1de"; }
-.listing.iconized li.folders > a:before { content: "\f07b"; }
-.listing.iconized li.identities > a:before { content: "\f2c2"; }
-.listing.iconized li.responses > a:before { content: "\f075"; }
-
-/* header buttons: elastic uses .button.icon, not .btn */
-.header a.btn:before { display: inline !important; float: none !important; vertical-align: middle; margin-right: 0 !important; }
-.header a.btn .inner { display: none; }
-a.btn.folders:before { content: "\f07b"; }
-a.btn.refresh:before { content: "\f021"; }
-a.btn.create:before { content: "\f0fe"; }
-a.btn.delete:before { content: "\f2ed"; font-weight: 400; }
-a.btn.edit:before { content: "\f303"; }
-a.btn.compose:before { content: "\f055"; }
-a.btn.reply:before { content: "\f3e5"; }
-a.btn.forward:before { content: "\f120"; }
-a.btn.search:before { content: "\f002"; }
-a.btn.add:before { content: "\f067"; }
-
-/* list toolbar buttons in the list header (Select etc.) */
-#messagelist-header .toolbar a.select:before { content: "\f14a"; font-weight: 400; display: block; float: left; margin-right: .25rem; width: 1.18em; font-family: Icons; font-size: 1.25em; }
-#messagelist-header .toolbar a.select .inner { display: none; }
-
-/* taskmenu compose button should look flat like a task, not a bootstrap btn */
-#taskmenu .action-buttons a.compose { background: transparent; color: #37beff; border: 0; border-radius: 0; }
-#taskmenu .action-buttons a.compose.selected { color: #41b849; }
-#taskmenu .special-buttons a { background: transparent; border: 0; }
+   styles.css and bootstrap.min.css are vendored byte-for-byte from the
+   reference container (skins/elastic/styles/styles.min.css,
+   deps/bootstrap.min.css). This file only adds:
+     - CSS stand-ins for behaviours the reference implements in ui.js
+       (popovers, selection mode, search-options panel);
+   It must NOT restyle anything the vendored CSS already covers — the stock
+   skin already ships the task-rail icons (.menu a.mail:before etc.),
+   folder icons (.folderlist li.inbox>a:before etc.) and rail geometry
+   (#taskmenu a at 481px/1025px breakpoints). */
 
 /* login page logo placement (elastic) */
 body.task-login #layout-content { text-align: center; width: 100%; display: block; }
 #login-form table, #login-form tbody { display: block; }
 
-/* dark toggle label swap */
-html.dark-mode #taskmenu a.theme:before { content: "\f185"; }
-
-/* message list column layout (elastic puts these in ui.css) */
+/* ---- message list: server-rendered bits the reference emits via JS ---- */
 table.messagelist { table-layout: auto; width: 100%; }
-.messagelist td.subject, .messagelist th.subject { width: 100%; }
 .messagelist td.subject > a { display: flex; align-items: center; text-decoration: none; }
 .messagelist td.subject span.subject { flex: 2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.messagelist td.fromto, .messagelist th.fromto,
-.messagelist td.date, .messagelist th.date,
-.messagelist td.size, .messagelist th.size { white-space: nowrap; text-align: left; }
-.messagelist td.fromto a { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 9em; display: inline-block; vertical-align: bottom; }
-.messagelist td.size, .messagelist th.size { text-align: right; }
-.messagelist td.date, .messagelist th.date { width: 6.5em; }
-.messagelist td.size, .messagelist th.size { width: 4.5em; padding-right: .5rem; }
 .messagelist td.subject span.msgicon { float: none; display: inline-block; }
-.messagelist td.subject span.msgicon.status:before { content: "\f0e0"; font-weight: 400; }
-.messagelist td.subject span.msgicon.status.unread:before { content: "\f0e0"; font-weight: 900; }
-.messagelist tr.unread td.subject span.subject,
-.messagelist tr.unread td.subject span.msgicon.status { font-weight: 700; }
 .messagelist td.subject span.subject:empty:before { content: "(no subject)"; font-style: italic; }
-.messagelist th.sorted:after { content: " ▾"; font-size: .8em; }
 
-/* folder icons in the folder list */
-.folderlist li.mailbox a:before { content: "\f07b"; font-family: Icons; font-size: 1.25em; display: block; float: left; margin: 0 .25rem 0 0; width: 1.18em; font-weight: 400; }
-.folderlist li.mailbox.inbox > a:before { content: "\f01c"; }
-.folderlist li.mailbox.trash > a:before { content: "\f1f8"; }
-.folderlist li.mailbox.sent > a:before { content: "\f1d8"; }
-.folderlist li.mailbox.drafts > a:before { content: "\f303"; }
-.folderlist li.mailbox.junk > a:before { content: "\f1f8"; }
-.folderlist li.mailbox > a { display: flex; align-items: center; }
-.folderlist li.mailbox .unreadcount { margin-left: auto; }
-
-/* sortable header links without bootstrap button look */
-.messagelist thead th a { color: inherit; text-decoration: none; }
-.messagelist thead th a:hover { text-decoration: underline; }
-
-/* the elastic skin hides listing <thead> (it renders headers via JS); we render server-side */
+/* the stock skin hides .messagelist>thead (sorting lives in the list
+   Options popup); other server-rendered listings keep their headers */
 table.listing thead { display: table-header-group; }
+table.messagelist > thead { display: none; }
 table.listing thead th { background-color: #fff; font-weight: 700; text-align: left; padding: .4rem .25rem; border-bottom: 1px solid #d4dbde; white-space: nowrap; }
 table.listing thead th.checkbox-cell:before { content: ""; }
+table.listing thead th a { color: inherit; text-decoration: none; }
+table.listing thead th a:hover { text-decoration: underline; }
 
-/* preview iframe should fill its wrapper */
-.iframe-wrapper iframe { width: 100%; height: 100%; border: 0; display: block; }
-
-/* ---- CraftCube supplement: behaviors stock CSS delegates to JS ---- */
+/* ---- behaviours the reference implements in ui.js ---- */
 
 /* message-list selection mode (toggled by JS via .selection on the table) */
 table.messagelist.selection td.selection { display: table-cell !important; }
@@ -118,18 +38,23 @@ table.messagelist.selection td.selection { display: table-cell !important; }
 /* popup menus (stock uses a popover library; we toggle .open in JS) */
 .popupmenu { display: none; background: #fff; border: 1px solid rgba(0,0,0,.15);
   border-radius: .3rem; box-shadow: 0 6px 24px rgba(0,0,0,.18); min-width: 16rem;
-  max-height: 80vh; overflow: auto; padding: .3rem 0; }
+  max-height: 80vh; overflow: auto; padding: .3rem 0; position: absolute; z-index: 100; }
 .popupmenu.open { display: block; }
-html.dark-mode .popupmenu { background: #22252a; border-color: #3a3e45; color: #d8dae0; }
+html.dark-mode .popupmenu { background: #161b1d; border-color: #8b9fa7; color: #c5d1d3;
+  box-shadow: none; }
 .popupmenu ul { list-style: none; margin: 0; padding: 0; }
 .popupmenu li a { display: flex; align-items: center; gap: .5rem;
   padding: .45rem 1rem; color: inherit; text-decoration: none; white-space: nowrap; }
 .popupmenu li a:hover { background: #eef6fb; }
-html.dark-mode .popupmenu li a:hover { background: #2d3238; }
-.popupmenu li a.disabled { opacity: .4; pointer-events: none; }
+html.dark-mode .popupmenu li a:hover { background: #374549; }
+.popupmenu li a.disabled { pointer-events: none; }
 .popupmenu li.separator { border-top: 1px solid rgba(0,0,0,.1); margin: .3rem 0; padding: 0; }
-html.dark-mode .popupmenu li.separator { border-color: #3a3e45; }
+html.dark-mode .popupmenu li.separator { border-color: #2c373a; }
 .popupmenu li.label { padding: .2rem 1rem; font-weight: 700; opacity: .7; font-size: .85rem; }
+/* iconized popup entries (stock: .popupmenu .listing li>a hover = solid blue) */
+.popupmenu .listing li > a:not(.disabled):hover { color: #fff; background-color: #37beff; }
+html.dark-mode .popupmenu .listing li > a:not(.disabled):hover { color: #fff; background-color: #37beff; }
+.popupmenu .listing li.selected { color: #fff; background-color: #37beff; }
 .popupmenu li.checkbox a::before, .popupmenu li.form-control label::before { display: none !important; content: none !important; }
 .popupmenu li.checkbox a { position: relative; }
 .popupmenu li.checkbox a::after { content: "\2610"; margin-left: auto; padding-left: 1rem; }
@@ -143,34 +68,16 @@ html.dark-mode .popupmenu li.separator { border-color: #3a3e45; }
 /* generic hidden (stock skin defines .hidden in a layer we didn't vendor) */
 .hidden { display: none !important; }
 
-/* quota widget: stock styles the box and .value fill; ensure it shows filled */
-.quota-widget .bar { position: relative; display: inline-block; vertical-align: middle;
-  width: 5rem; height: 1rem; border: 1px solid #aab; border-radius: .2rem;
-  overflow: hidden; background: #e9ecef; }
-.quota-widget .bar .value { background-color: #37beff; }
-.quota-widget.limited .bar .value, .quota-widget .bar .value.warning { background-color: #ff5552; }
+/* search-options panel: the reference expands .searchoptions in place */
+.searchbar a.options.active { color: #41b849; }
 
-/* searchbar extras */
-.searchbar a.search { display: inline-flex; }
-.searchbar a.options.active { color: #4db2e5; }
-.searchbar input[type=search] { flex: 1; border: 0; background: transparent; outline: none;
-  color: inherit; padding: 0 .4rem; min-width: 6rem; }
-#searchoptions { margin-top: .4rem; }
-#searchoptions .search-field, #searchoptions .search-filter { display: flex; gap: .5rem;
-  flex-wrap: wrap; margin-bottom: .4rem; align-items: center; }
-#searchoptions .form-control { flex: 1; min-width: 5rem; }
-#searchoptions input[type=text], #searchoptions input[type=date] { border: 1px solid rgba(0,0,0,.2);
-  border-radius: .25rem; background: #fff; color: inherit; padding: .2rem .35rem; }
-html.dark-mode #searchoptions input[type=text], html.dark-mode #searchoptions input[type=date] { background: #22252a; border-color: #3a3e45; }
+/* quota widget fill */
+.quota-widget .bar .value { display: block; height: 100%; }
 
-/* toolbar: popup triggers get a caret, disabled links dim */
-.toolbar a[href^="#"]::after { content: "\25BE"; margin-left: .35em; font-size: .7em; opacity: .7; }
-.toolbar a.disabled, .sidebar-footer a.disabled, #sortablelist a.disabled { pointer-events: none; opacity: .4; }
+/* toolbar buttons that open popups show no caret in the reference; drop the
+   caret the old skin hack added so icons+labels match 1:1 */
 
-/* message list: cross-folder search result label */
-.subject-cells .folder-label { color: #8a8f98; font-size: .92em; }
-
-/* message preview frame */
+/* preview iframe fills its wrapper */
 #messagecontframe { width: 100%; height: 100%; border: 0; display: block; }
 
 /* message header details table (shared by page + framed part) */
@@ -187,12 +94,6 @@ html.dark-mode #message-header .remote-notice { background: #33301e; border-colo
 body.iframe { background: #fff; }
 html.dark-mode body.iframe { background: #1c1e21; }
 body.iframe #message-content { padding: .75rem; }
-#attachment-list { list-style: none; margin: 0; padding: 0; }
-#attachment-list li.attachment { border: 1px solid rgba(0,0,0,.1); border-radius: .3rem;
-  padding: .4rem .6rem; margin-bottom: .4rem; font-size: .92rem; }
-html.dark-mode #attachment-list li.attachment { border-color: #3a3e45; }
-#attachment-list li.attachment a { display: flex; align-items: center; gap: .4rem; }
-.iconAttachment:before { content: "\1F4CE"; display: inline-block; margin-right: .35rem; }
 
 /* compose: attachment chips */
 #attachment-list .attachment .filename { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

@@ -8,10 +8,10 @@
       <div class="header">
         <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
         <span class="header-title username">{{ current_user.username }}</span>
-        <a href="#folder-actions" class="button icon sidebar-menu" title="Folder actions"
+        <a href="#folder-actions" class="button icon sidebar-menu" title="Folder actions..."
            data-popup="mailboxoptions-menu"><span class="inner">Actions</span></a>
       </div>
-      <h2 id="aria-label-folderlist" class="voice">Folder list</h2>
+      <h2 id="aria-label-folderlist" class="voice">Email folder selection</h2>
       <div id="folderlist-content" class="scroller">
         <ul id="mailboxlist" class="treelist listing folderlist notree" role="tree">
           {% for f in folders %}
@@ -30,8 +30,6 @@
           <div class="bar"><span class="value" style="width: {{ [100, (quota_used * 100) // (quota_kb * 1024)]|min }}%"></span></div>
           <span class="count">{{ quota_used|size }} / {{ (quota_kb * 1024)|size }}</span>
         </div>
-        {% else %}
-        <span style="padding:0 1rem;color:#737677;">{{ message_count }} message(s)</span>
         {% endif %}
       </div>
     </div>
@@ -42,18 +40,19 @@
         <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
         <a class="button icon back-sidebar-button folders" href="#sidebar"><span class="inner">Folders</span></a>
         <span class="header-title">{{ folder_title }}</span>
-        <div class="toolbar menu" role="toolbar">
-          <a href="#select" class="select{{ ' disabled' if not listing.items }}" title="Select"
-             data-popup="listselect-menu"><span class="inner">Select</span></a>
-          <a href="#threads" class="threads{{ ' disabled' if not listing.items }}" title="Threads"
-             data-popup="threadselect-menu"><span class="inner">Threads</span></a>
-          <a href="#list-options" class="options active" title="Options"
-             data-popup="listoptions-menu"><span class="inner">Options</span></a>
-        </div>
+        <ul class="menu toolbar listing iconized" id="toolbar-list-menu">
+          <li role="menuitem"><a href="#select" class="select{{ ' active' }}" data-popup="listselect-menu"
+              title="Select" aria-haspopup="true" aria-expanded="false" aria-owns="listselect-menu"><span class="inner">Select</span></a></li>
+          <li role="menuitem"><a href="#threads" class="threads{{ ' disabled' if not listing.items }}" data-popup="threadselect-menu"
+              title="Threads" aria-haspopup="true" aria-expanded="false" aria-owns="threadselect-menu"><span class="inner">Threads</span></a></li>
+          <li role="menuitem"><a href="#list-options" class="options active" id="listmenulink" data-popup="listoptions-menu"
+              title="Options" tabindex="0"><span class="inner">Options</span></a></li>
+        </ul>
         <a href="{{ url_for('views.mail', _mbox=folder, _sort=sort, _sort_order=order) }}"
-           class="button icon toolbar-button refresh" title="Refresh"><span class="inner">Refresh</span></a>
-        <a class="button icon toolbar-menu-button" href="#list-menu" data-popup="list-menu"
-           title="Menu"><span class="inner">Menu</span></a>
+           class="button icon toolbar-button refresh" title="Check for new messages"><span class="inner">Refresh</span></a>
+        <a class="button icon toolbar-menu-button" href="#list-menu" data-popup="list-menu"><span class="inner">Menu</span></a>
+        <a class="button icon toolbar-list-button active" href="#list-menu" data-popup="toolbar-list-menu"
+           title="" aria-haspopup="true" aria-expanded="false" aria-owns="toolbar-list-menu"></a>
       </div>
 
       <!-- search -->
@@ -64,11 +63,15 @@
           <label for="mailsearchform" class="voice">Search terms</label>
           <input name="_q" id="mailsearchform" class="no-bs" placeholder="Search..." type="text"
                  autocomplete="off" value="{{ search }}">
-          <a href="#" class="button icon search" onclick="this.form.submit(); return false"
-             title="Find mail"><span class="inner">Search</span></a>
-          <a href="#" class="button icon options{{ ' active' if searching }}"
-             title="Search modifiers" data-popup="searchmenu"><span class="inner">Options</span></a>
         </form>
+        <a class="button reset{{ ' hidden' if not search }}" href="#" title="Reset search"
+           role="button"><span class="inner">Reset search</span></a>
+        <a class="button unread{{ ' selected' if search_filter == 'unread' }}" href="#" role="button"
+           title="Show unread messages" data-toggle-unread></a>
+        <a href="#search-filter" class="button options{{ ' selected' if searching }}" title="Options"
+           role="button" data-popup="searchmenu"><span class="inner">Options</span></a>
+        <a href="#search" class="button search" title="Find mail messages" role="button"
+           onclick="document.getElementById('rcmqsearchform').submit(); return false"><span class="inner">Find mail messages</span></a>
       </div>
 
       <!-- search options -->
