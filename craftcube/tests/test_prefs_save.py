@@ -53,3 +53,14 @@ class TestLanguageSwitchApplies:
         for url in ("/settings", "/settings/preferences/general?_framed=1"):
             h = client.get(url).get_data(as_text=True)
             assert 'lang="de"' in h, url
+
+    def test_mailvelope_warning_banner_is_elastic_alert(self, client):
+        # the reference renders the extension-missing notice as an elastic
+        # 'alert alert-warning' banner with an icon column, shown without
+        # jQuery (CraftCube has no $; a $() call left the banner invisible)
+        h = client.get("/settings/preferences/encryption?_framed=1").get_data(as_text=True)
+        assert 'id="mailvelope-warning"' in h
+        assert 'class="boxwarning ui alert alert-warning"' in h
+        assert '<i class="icon"></i>' in h
+        assert "$('#mailvelope-warning')" not in h
+        assert "document.getElementById('mailvelope-warning')" in h

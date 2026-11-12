@@ -1852,7 +1852,13 @@
     return m.call(el, SUPPORTED);
   }
   // ui.js "Make propforms bootstrap-like": rows get form-group row, title
-  // cells col-sm-4, control cells col-sm-8, inputs form-control
+  // cells col-sm-4, control cells col-sm-8, inputs form-control — but cells
+  // that already carry a col-sm-* class (e.g. the encryption section's
+  // cols-sm-6-6 rows, where the classes come from the template like in RC)
+  // are left alone; double classes made the td 2/3 wide and overflowed.
+  function has_col(el) {
+    return /\bcol-sm-\d\b/.test(el.className);
+  }
   function beautifyPropform(table) {
     var rows = table.querySelectorAll(':scope > tbody > tr, :scope > tr');
     var text_rows = 0, form_rows = 0;
@@ -1862,8 +1868,8 @@
         var first = cells[0], last = cells[1];
         var lab = first.querySelector('label');
         if (lab) { lab.classList.add('col-form-label'); }
-        first.classList.add('col-sm-4');
-        last.classList.add('col-sm-8');
+        if (!has_col(first)) { first.classList.add('col-sm-4'); }
+        if (!has_col(last)) { last.classList.add('col-sm-8'); }
         row.classList.add('form-group', 'row');
         var inputs = last.querySelectorAll('input:not([type=hidden]),textarea,select');
         if (last.querySelectorAll('input[type=checkbox]').length === 1 &&

@@ -30,13 +30,15 @@
         <table class="propform cols-sm-6-6"><tbody>
           {% if class == 'mailvelope' %}
           {# index.php encryption section: boxwarning + Enable when the
-             browser has no Mailvelope extension (checked in the frame's parent) #}
-          <tr><td colspan="2"><div style="display:none" class="boxwarning" id="mailvelope-warning"><a href="https://www.mailvelope.com" target="_blank" rel="noopener">Mailvelope</a> extension is not enabled/installed in your browser.<script type="text/javascript">
+             browser has no Mailvelope extension (checked in the frame's
+             parent); elastic renders it as an alert-warning banner with an
+             icon column, shown by an inline script (no jQuery here) #}
+          <tr><td colspan="2" style="width: 100%;"><div style="display:none" class="boxwarning ui alert alert-warning" id="mailvelope-warning"><i class="icon"></i><span><a href="https://www.mailvelope.com" target="_blank" rel="noopener">Mailvelope</a> extension is not enabled/installed in your browser.<script type="text/javascript">
 /* <![CDATA[ */
-if (!parent.mailvelope) $('#mailvelope-warning').show()
+if (!parent.mailvelope) document.getElementById('mailvelope-warning').style.display = '';
 /* ]]> */
 </script>
-<button type="button" class="btn btn-secondary" onclick="if (window.cc_display) cc_display('Mailvelope extension is not enabled/installed in your browser.', 'error')">Enable</button></div></td></tr>
+<button type="button" class="btn btn-secondary" onclick="if (window.cc_display) cc_display('Mailvelope extension is not enabled/installed in your browser.', 'error')">Enable</button></span></div></td></tr>
           {% endif %}
           {% for f in fields %}
           {% if f.type == 'mailto' %}
