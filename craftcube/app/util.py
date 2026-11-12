@@ -126,7 +126,8 @@ def fmt_pref_date(dt, prefs):
 
 def list_pref_date(dt, prefs):
     """Message-list date honouring timezone + time/date format prefs,
-    following rcmail::format_date(): Today / D H:i / date_long."""
+    following rcmail::format_date(): Today / D H:i / date_long. With
+    prettydate off the default format is plain date_long (rcmail.php:1653)."""
     if dt is None:
         return ""
     prefs = prefs or {}
@@ -134,13 +135,14 @@ def list_pref_date(dt, prefs):
     now = to_local_tz(datetime.now(UTC), prefs.get("timezone"))
     tf = prefs.get("time_format", "H")
     tfmt = php_strftime(tf, dt) if ":" in tf else ("%H:%M" if tf == "H" else "%I:%M %p")
-    if dt.date() == now.date():
-        return "Today " + dt.strftime(tfmt)
-    week_limit = (now - timedelta(days=6)).replace(hour=0, minute=0,
-                                                   second=0, microsecond=0)
-    if dt > week_limit:
-        return dt.strftime("%a ") + dt.strftime(tfmt)
     df = prefs.get("date_format", "Y-m-d")
+    if prefs.get("pretty_date", 1):
+        if dt.date() == now.date():
+            return "Today " + dt.strftime(tfmt)
+        week_limit = (now - timedelta(days=6)).replace(hour=0, minute=0,
+                                                       second=0, microsecond=0)
+        if dt > week_limit:
+            return dt.strftime("%a ") + dt.strftime(tfmt)
     return php_strftime(df, dt) + " " + dt.strftime(tfmt)
 
 def fmt_datetime(dt):

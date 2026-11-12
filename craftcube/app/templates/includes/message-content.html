@@ -31,6 +31,27 @@
                 <div class="message-part"><div class="pre">{{ body }}</div></div>
                 {% endif %}
               {% endfor %}
+              {# reference (show.php:714): image attachments as thumbnails
+                 below the body while inline_images is on #}
+              {% for a in image_attachments %}
+              <p class="image-attachment">
+                <a class="image-link" href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part) }}"
+                   onclick="window.open(this.href); return false;" title="{{ a.filename }}">
+                  <img class="image-thumbnail"
+                       src="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part, _inline=1) }}"
+                       title="{{ a.filename }}" alt="{{ a.filename }}"
+                       style="max-width:240px; max-height:240px">
+                </a>
+                <span class="image-filename">{{ a.filename }}</span>
+                <span class="image-filesize">~{{ a.size|size }}</span>
+                <span class="attachment-links"><a class="open"
+                    href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part, _inline=1) }}"
+                    onclick="window.open(this.href); return false;" title="Show">Show</a>&nbsp;<a class="download"
+                    href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part) }}"
+                    title="Download">Download</a></span>
+                <br style="clear:both">
+              </p>
+              {% endfor %}
             </div>
           </div>
         </div>

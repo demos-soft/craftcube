@@ -209,6 +209,10 @@ def login():
 @bp.route("/logout")
 @login_required
 def logout():
+    # rcmail::logout_actions(): purge Trash / expunge INBOX per prefs
+    box = imap_box()
+    with contextlib.suppress(MailError):
+        box.logout_actions()
     session.clear()
     return redirect(url_for("views.login"))
 
@@ -299,11 +303,21 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
     if "@" in fm:
         sender_domain = fm.rsplit("@", 1)[1].lower()
     # remote-content protection (Elastic: "To protect your privacy remote
-    # resources have been blocked." + Allow button, allowed per sender)
+    # resources have been blocked." + Allow button, allowed per sender).
+    # The show_images pref decides the baseline (actions/mail/index.php:877
+    # check_safe + show.php:269): 0 block always, 1 allow for known contacts,
+    # 2 allow always, 3 allow for trusted senders.
+    prefs = get_store().get_user_prefs(session["user_id"])
     allowed = allow_remote
     if allowed is None:
-        allowed = sender_domain in (get_store().get_user_prefs(
-            session["user_id"]).get("remote_senders") or [])
+        allowed = sender_domain in (prefs.get("remote_senders") or [])
+    if allowed is None or not allowed:
+        show_images = str(prefs.get("show_images", "0") or "0")
+        if show_images == "2":
+            allowed = True
+        elif show_images in ("1", "3"):
+            kind = "contacts" if show_images == "1" else "trusted"
+            allowed = get_store().contact_email_known(session["user_id"], fm, kind)
     rendered = []
     remote_blocked = False
     for p in parts:
@@ -328,16 +342,29 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
         if v:
             headers.append((h, v))
     attachments = []
+    image_attachments = []
     if msg.is_multipart():
+        # cid: references in the rendered HTML keep their part out of the
+        # thumbnails (rcube_message::is_referred_attachment, show.php:725)
+        referred = set(re.findall(r'cid:([^"\'\s>]+)', " ".join(
+            b for k, b in rendered if k == "html")) or [])
         for i, p in enumerate(msg.walk()):
             fn = p.get_filename()
             if fn or p.get_content_disposition() == "attachment":
-                attachments.append({
+                entry = {
                     "part": str(i),
                     "filename": fn or f"part{i}.bin",
                     "ctype": p.get_content_type(),
                     "size": len(p.get_payload(decode=True) or b""),
-                })
+                }
+                attachments.append(entry)
+                # inline image thumbnails below the body (show.php:714,
+                # inline_images pref default true)
+                cid = (p.get("Content-ID") or "").strip("<> ")
+                if (entry["ctype"].startswith("image/")
+                        and prefs.get("inline_images", 1)
+                        and cid not in referred):
+                    image_attachments.append(entry)
     # prev/next within the folder (arrival order; matches date-desc listings)
     prev_uid = next_uid = None
     try:
@@ -353,6 +380,7 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
     return {"folder": folder, "uid": uid, "msg": msg,
             "subject": _hdr(msg, "Subject") or "(no subject)",
             "headers": headers, "parts": rendered, "attachments": attachments,
+            "image_attachments": image_attachments,
             "sender": util.header_addresses(msg, "From")[:1],
             "sender_domain": sender_domain,
             # reference 'ml' flag -- enables the Reply list menu item
@@ -1028,6 +1056,7 @@ def compose():
     attachments_kept = []
     attach_original = None   # (filename, bytes) for forward-as-attachment
     source_msg = None
+    src_folder = ""
     if uid_of:
         src_folder = request.values.get("_mbox") or "INBOX"
         try:
@@ -1207,6 +1236,13 @@ def compose():
             # smtplib needs the combined recipient list (incl. Bcc); the
             # transmitted header block and the Sent copy must not carry Bcc
             store_target = request.form.get("_store_target")
+            # reply_same_folder (compose.php:241): when the user did not
+            # choose an explicit save folder, a reply's copy goes into the
+            # folder of the replied-to message
+            if (store_target in (None, "") and prefs.get("reply_same_folder")
+                    and mode in ("reply", "replyall", "replylist")
+                    and uid_of and src_folder):
+                store_target = src_folder
             box.send(msg, msg.as_bytes(),
                      store_target=store_target if store_target is not None else None)
             if draft_uid:

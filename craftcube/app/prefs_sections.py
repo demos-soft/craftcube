@@ -30,7 +30,8 @@ DEFAULTS = {
     "collected_senders": "2",
     "show_real_foldernames": 0, "drafts": "Drafts", "sent": "Sent",
     "junk": "", "trash": "", "archive": "", "archive_type": "",
-    "read_when_deleted": 0, "flag_for_deletion": 0, "skip_deleted": 0,
+    # reference default is true (defaults.inc.php:1431)
+    "read_when_deleted": 1, "flag_for_deletion": 0, "skip_deleted": 0,
     "delete_junk": 0, "read_on_archive": 0,
     "logout_purge": "never", "logout_expunge": 0,
     "mailvelope_main_keyring": 0,

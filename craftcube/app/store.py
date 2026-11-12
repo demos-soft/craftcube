@@ -429,6 +429,33 @@ class Store:
         sql += " ORDER BY COALESCE(NULLIF(name,''), email) COLLATE NOCASE"
         return self._conn().execute(sql, args).fetchall()
 
+    def contact_email_known(self, user_id, email, kind="contacts"):
+        """True when the address is known to the user.
+
+        kind='contacts' matches address-book entries (reference
+        contact_exists with TYPE_RECIPIENT|TYPE_WRITEABLE, show_images=1);
+        kind='trusted' matches the collected trusted-sender table (type 2,
+        TYPE_TRUSTED_SENDER, show_images=3)."""
+        if not email:
+            return False
+        email = email.lower()
+        c = self._conn()
+        if kind == "trusted":
+            row = c.execute(
+                'SELECT 1 FROM collected_addresses WHERE user_id = ? AND "type" = 2 '
+                "AND lower(email) = ? LIMIT 1", (user_id, email)).fetchone()
+        else:
+            row = c.execute(
+                "SELECT 1 FROM contacts WHERE user_id = ? AND del = 0 "
+                "AND lower(email) = ? LIMIT 1", (user_id, email)).fetchone()
+            if row is None:
+                # contacts can carry several addresses in the email column
+                row = c.execute(
+                    "SELECT 1 FROM contacts WHERE user_id = ? AND del = 0 "
+                    "AND lower(email) LIKE ? LIMIT 1",
+                    (user_id, f"%{email}%")).fetchone()
+        return row is not None
+
     def collected_upsert(self, user_id, atype, name, email):
         with _lock:
             c = self._conn()

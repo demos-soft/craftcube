@@ -115,6 +115,11 @@
               <option value="flagged"{{ ' selected' if search_filter == 'flagged' }}>Flagged</option>
               <option value="answered"{{ ' selected' if search_filter == 'answered' }}>Answered</option>
               <option value="unanswered"{{ ' selected' if search_filter == 'unanswered' }}>Unanswered</option>
+              {# reference: deleted/undeleted only when skip_deleted is off #}
+              {% if not (g.prefs or {}).get('skip_deleted') %}
+              <option value="deleted"{{ ' selected' if search_filter == 'deleted' }}>Deleted</option>
+              <option value="undeleted"{{ ' selected' if search_filter == 'undeleted' }}>Undeleted</option>
+              {% endif %}
             </select>
           </div>
           <div class="input-group">

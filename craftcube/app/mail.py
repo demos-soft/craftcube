@@ -38,6 +38,10 @@ SEARCH_FILTERS = {
     "flagged": ["FLAGGED"],
     "answered": ["ANSWERED"],
     "unanswered": ["UNANSWERED"],
+    # reference offers these two when skip_deleted is off
+    # (actions/mail/index.php:1551)
+    "deleted": ["DELETED"],
+    "undeleted": ["UNDELETED"],
 }
 
 SEARCH_INTERVALS = {
@@ -440,6 +444,11 @@ class Mailbox:
         crit = []
         if search_filter and search_filter != "all":
             crit += SEARCH_FILTERS.get(search_filter) or []
+        elif (getattr(self, "prefs", None) or {}).get("skip_deleted") \
+                and not search_filter:
+            # rcube_imap::search adds UNDELETED to every listing when the
+            # skip_deleted pref is on (rcube_imap.php:1500)
+            crit += ["UNDELETED"]
         if search_interval and search_interval != "all":
             import datetime
             today = datetime.date.today()
@@ -668,6 +677,38 @@ class Mailbox:
         if uids:
             self.imap.set_flags(uids, ["\\Deleted"], mode="add")
             self.imap.expunge()
+
+    def logout_actions(self):
+        """rcmail::logout_actions() (rcmail.php:1020): purge the Trash
+        (logout_purge: 'all' or N days) and expunge INBOX (logout_expunge)."""
+        from datetime import datetime, timedelta
+        prefs = getattr(self, "prefs", None) or {}
+        purge = str(prefs.get("logout_purge", "never") or "never")
+        trash = self.special("trash")
+        if purge not in ("never", "", "0", "None") and trash:
+            def purge_folder(f):
+                try:
+                    self.imap.select(f)
+                except MailError:
+                    return
+                uids = []
+                if purge == "all":
+                    uids = self.imap.uid_search(["ALL"])
+                else:
+                    with contextlib.suppress(ValueError):
+                        days = int(purge)
+                        before = (datetime.now() - timedelta(days=days)).strftime("%d-%b-%Y")
+                        uids = self.imap.uid_search(["BEFORE", before])
+                if uids:
+                    self.imap.set_flags(uids, ["\\Deleted"], mode="add")
+                    self.imap.expunge()
+            purge_folder(trash)
+        if prefs.get("logout_expunge"):
+            try:
+                self.imap.select("INBOX")
+                self.imap.expunge()
+            except MailError:
+                pass
 
     def mark_all_read(self, folder):
         self.imap.select(folder)
