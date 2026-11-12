@@ -137,15 +137,58 @@ spacing, selected-row highlight class.
   `1b8c5fe` (tzdata), `ad6ccfd` (row markup, autofocus, info-box DOM,
   identity seed).
 
+## Plugin infrastructure round (2026-11-04)
+
+- Engine port (`app/plugins.py`): `rcube_plugin_api`/`rcube_plugin` equivalents —
+  plugins at `plugins/<name>/<name>.py` (class `<name>`), enabled list via
+  `CRAFTCUBE_PLUGINS` (default `zipdownload`), per-request registration state,
+  `exec_hook` with abort/break/dynamic-handler semantics, `register_action`
+  with `plugin.` prefixing and task-qualified keys, template containers and
+  objects, `include_script`/`include_stylesheet`/`add_label`, generic
+  `/plugin/<name>/<action>` dispatch route (login required, unknown 404),
+  `/plugins/<name>/<file>` static asset route. Core hook call sites wired:
+  `ready`, `login_after`, `render_page`, `folders_list`, `message_before_send`,
+  `loginform_content`, `listcontrols`/`mailboxoptions` containers and more.
+  `tests/test_plugins.py` covers the contract (124 tests total).
+- `zipdownload` port — corrected against the live 1.7.5 reference (the earlier
+  `_uids[]` reading was wrong; the reference reads `get_uids()`, i.e. **`_uid`**
+  POST array / comma list with `uid-MBOX` multifolder tokens):
+  - messages: `<folder>.zip` (or `messages.zip` for multi-folder), mbox mode →
+    one `<name>.mbox` entry with RFC4155 `From ` lines from INTERNALDATE
+    (`D M d H:i:s Y`, UTC), `^>*From ` body quoting, blank line between
+    messages; eml/maildir modes → identical `<uid> <subject16>.eml` entries
+    (subject via `_filename_from_subject` + `_convert_filename` basename +
+    zipdownload_charset), multi-folder entries prefixed `<mbox>/`.
+  - attachments: zip named from the sanitized **message subject**
+    (`ATTACH-PROBE-1.zip`), entry names basename+charset, duplicate suffix
+    `file(1).txt` (not `file 2.txt`).
+  - Reference no-ops: a plain GET of the plugin action renders the mail UI
+    (JS never GETs it; single-message download is the core `viewsource`
+    action with `_save=1`).
+- `viewsource _save=1` port on `/message` (`app/views.py`): raw stored bytes,
+  `Content-Type: text/plain;charset=<declared, us-ascii/missing → UTF-8>` (RC
+  normalizes us-ascii away), `Content-Disposition: attachment;
+  filename="<subject-sanitized-128>.eml"` — filename rule from
+  `viewsource::filename_from_subject`.
+- `additional_message_headers` port: `message_before_send` hook, `%u/%l/%d`
+  expansion; enabled on both stacks with an `X-Staging-Probe` header.
+- Live A/B on k8s3 (2026-11-04): export suite 0 diffs — mbox single/two,
+  maildir/eml single, multi-folder `messages.zip` — zip entry names, per-entry
+  SHA256 and Content-Disposition all equal; viewsource `.eml` body SHA +
+  headers equal; attachments zip name + contents equal; send-hook header
+  `X-Staging-Probe: via test at example.org` stored identically by PHP plugin
+  and Python port. The reference pod was instrumented temporarily for the
+  contract discovery and fully restored (`php -l` clean, no debug residue).
+
 ## Quality gates
-- pytest: 108 passed · ruff: all checks passed · eslint: clean (config warning only)
+- pytest: 124 passed · ruff: all checks passed · eslint: clean (config warning only)
 - Cluster: craftcube / craftcube-dovecot / craftcube-mailpit / roundcube-reference
   all 1/1 ready; both web UIs HTTP 200.
 
 ## Not (yet) reverse-engineered
-Roundcube-style plugin infrastructure (requested next), thread
+Thread
 expand/collapse UI (SORT=REFERENCES-style grouping + depth indentation
 implemented and live-verified per folder), caching layer, Sieve, spell
 check, PGP, autolink behavior, `mailto_handler` behavior.
-(Message import/export and the zipdownload export formats are done — see
-the export/import parity section.)
+(Message import/export, the zipdownload export formats and the Roundcube-style
+plugin infrastructure are done — see the plugin infrastructure round.)
