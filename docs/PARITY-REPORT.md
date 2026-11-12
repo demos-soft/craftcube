@@ -60,6 +60,13 @@ oracles were executed inside the reference pod and locked into the test suite.
   instantly (shared Dovecot).
 - New: `undelete` ported (clears \Deleted; the Mark → "As not deleted"
   popup item shown iff `flag_for_deletion && !skip_deleted`, per elastic).
+- Export (zipdownload plugin, enabled on the reference): all formats × 1/2
+  messages byte-equal including Content-Disposition — eml/maildir = zip
+  `<mbox>.zip` of `<uid> <subject16>.eml`, mbox = zip of `<mbox>.mbox` with
+  UTC RFC4155 From_-lines and \r\n padding; exports stream stored bytes
+  (no synthesized Date). The reference has no raw single-eml mode.
+- Message import A/B green: eml→1, mbox→n, combined multi-file exact
+  counts; zip unpack path mirrored from import.php.
 
 ## Views — visual verdict (light + dark)
 Geometry + computed-style diff (taskmenu, toolbar, list, tabs, search form,
