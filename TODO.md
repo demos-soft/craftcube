@@ -50,3 +50,10 @@
 - [x] Archive group fieldset + plugin labels — reference renders 'Divide archive by' in `fieldset.archive` (legend 'Archive', archive plugin domain); ported the plugin's settings labels verbatim into 6 locales, legend/options translate (de Archiv/Archiv aufteilen nach, live-verified); geometry gap 53px == RC; visual verdict 96 PASS (0c082b9)
 - [x] Staging pod restart loop — 1s liveness on `/` behind 2 sync gunicorn workers starved by slow IMAP renders; added IMAP-free `/healthz`, probes -> /healthz timeout 3s, gthread 4w x 8 threads; 40-req load: p95 0.15s, 0 restarts (c80e5b0)
 - [x] Full suite 176 tests; both defect flows re-verified in real browser against the re-baked image; staging restored (en_US, no special-folder prefs, Trash unsubscribed, test message in INBOX)
+
+## Settings section visual+control sweep (completed; commits 9dd5c8a, 2f92371; baked image ed62c09bfb79)
+- [x] Control-name audit vs reference across all 8 framed sections — zero RC-only and zero CC-only form controls; every section field-count delta explained (chrome/meta names only)
+- [x] Server section — added archive-plugin 'Mark the message as read on archive' row (between Junk-delete and Maintenance) + localized `readonarchive` labels in 6 locales; final side-by-side screenshots are byte-identical (md5 match)
+- [x] Encryption section — Mailvelope notice now the elastic `alert alert-warning` banner with icon column, shown via plain DOM JS (jQuery `$` copy never ran, banner was invisible); beautifyPropform no longer stacks col-sm-4/8 onto cells that already carry col-sm-* (the double class made cols 2/3-wide and caused horizontal overflow). Toggle geometry 626@640 and banner link color now identical; visual verdict 92 PASS (2f92371)
+- [x] Remaining section visual verdicts: Mailbox 95, Message View 98, Compose options 96, Address Book 98 — all PASS (accepted minor: transient focus rings; RC framed-page hairline frame)
+- [x] Full suite 178; staging DB verified clean after rollout (user prefs: all special folders '', language en_US, read_on_archive 0); no restart loop regression
