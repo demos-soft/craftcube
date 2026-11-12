@@ -5,7 +5,7 @@ import email.message
 
 import pytest
 
-from app import views
+from app import util, views
 
 
 class FakeBox:
@@ -208,6 +208,34 @@ def test_check_all_folders_controls_check_recent(client, store, user, monkeypatc
     box.status_calls = []
     client.get("/mail/check-recent?_mbox=Sent")
     assert set(box.status_calls) == {"INBOX", "Sent", "Junk"}
+
+
+def test_autocomplete_single_limits_multiple_addresses(client, store, user):
+    ext = {
+        "firstname": "Grace",
+        "surname": "Hopper",
+        "emails": [("home", "grace@navy.example"), ("work", "ghopper@navy.example")],
+    }
+    store.contact_save(
+        user,
+        {
+            "name": "Grace Hopper",
+            "email": "grace@navy.example, ghopper@navy.example",
+            "firstname": "Grace",
+            "surname": "Hopper",
+            "vcard": util.vcard_encode(ext),
+        },
+    )
+
+    store.set_user_prefs(user, {"autocomplete_single": 0})
+    r = client.get("/mail/autocomplete?_search=grace&_reqid=x")
+    text = r.get_data(as_text=True)
+    assert text.count("ghopper@navy.example") == 2
+
+    store.set_user_prefs(user, {"autocomplete_single": 1})
+    r = client.get("/mail/autocomplete?_search=grace&_reqid=x")
+    text = r.get_data(as_text=True)
+    assert text.count("ghopper@navy.example") == 0
 
 
 def test_display_next_after_delete(client, store, user, make_box):

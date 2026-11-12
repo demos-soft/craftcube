@@ -2709,6 +2709,8 @@ def mail_autocomplete():
     maxnum = int(current_app.config.get("AUTOCOMPLETE_MAX", 15))
     store = get_store()
     contacts, sort_keys = {}, {}
+    prefs = getattr(g, "prefs", {}) or {}
+    single = bool(prefs.get("autocomplete_single"))
     if term:
         term_lc = term.lower()
         for row in store.contacts(session["user_id"], query=term):
@@ -2735,6 +2737,8 @@ def mail_autocomplete():
                 }
                 sort_keys[contact] = f"{disp} {idx:03d}"
                 idx += 1
+                if single:
+                    break
                 if len(contacts) >= maxnum:
                     break
             if len(contacts) >= maxnum:
