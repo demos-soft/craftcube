@@ -31,8 +31,12 @@ oracles were executed inside the reference pod and locked into the test suite.
   select lists (email/address 3, phone 13) and gender values match Elastic.
 
 ## Settings — parity
-- All settings sections/controls present; 64-control persistence matrix:
-  MATRIX FAILS: NONE (live POST → DB → re-render verification).
+- All settings sections/controls present; 66-control persistence matrix
+  (incl. the two editor prefs): MATRIX FAILS: NONE (live POST → DB →
+  re-render verification; baseline restored, 66 keys in users.preferences).
+- Per-folder view mode live-verified: folder pref `threads` renders
+  SORT=REFERENCES-style thread roots/children (seeded reply chains
+  correctly), explicit `?_mode=list` overrides, restore to `list` clean.
 - Live application verified for pagesize, skip_deleted, date_format, prefer_html,
   message_show_email, reply_mode, forward_attachment, name listing, view modes.
 - `enable_autolink` / `keep_formatting_default` added (persisted; autolink has no
@@ -77,5 +81,7 @@ spacing, selected-row highlight class.
   all 1/1 ready; both web UIs HTTP 200.
 
 ## Not (yet) reverse-engineered
-Threads view, caching layer, plugins, Sieve, spell check, PGP, message
+Thread expand/collapse UI (SORT=REFERENCES-style grouping + depth
+indentation implemented and live-verified per folder), caching layer, plugins,
+Sieve, spell check, PGP, message
 import/export, autolink behavior, `mailto_handler` behavior.

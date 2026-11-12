@@ -88,5 +88,6 @@ The first login of an unknown user auto-creates the user row (Roundcube-style
 
 ## Not (yet) reverse-engineered
 
-Threads view, caching layer, plugins, Sieve filters, spell checking,
+Thread collapse/expand UI (grouping + indentation are implemented), caching
+layer, plugins, Sieve filters, spell checking,
 message import/export, identities signature auto-insert toggle, PGP.
