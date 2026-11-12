@@ -309,6 +309,7 @@
 
     initPopups();
     initList();
+    initStandaloneMessage();
     initStack();
     initRefresh();
     initFabs();
@@ -878,6 +879,46 @@
     scheduleRead();
 
     updateToolbar();
+  }
+
+  // Standalone message pages (extwin/print) have no list: the toolbar acts
+  // on the uid the server rendered into #mailtoolbar's data attrs. Commands
+  // post to /mail/act like the list does, then land on the shell.
+  function initStandaloneMessage() {
+    var tb = document.getElementById('mailtoolbar');
+    if (!tb || document.getElementById('messagelist')) return;   // shell handles itself
+    var uid = tb.getAttribute('data-uid'), box = tb.getAttribute('data-box');
+    if (!uid) return;
+    document.body.classList.add('has-selection');
+
+    function post(fields) {
+      var f = document.createElement('form');
+      f.method = 'post'; f.action = '/mail/act'; f.style.display = 'none';
+      Object.keys(fields).forEach(function (k) {
+        var i = document.createElement('input');
+        i.type = 'hidden'; i.name = k; i.value = fields[k];
+        f.appendChild(i);
+      });
+      document.body.appendChild(f); f.submit();
+    }
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[data-act], #message-menu a[data-mode]');
+      if (!a || a.classList.contains('disabled')) return;
+      var cmd = a.getAttribute('data-act') || a.getAttribute('data-mode');
+      e.preventDefault();
+      if (cmd === 'delete') {
+        if (confirm('Really delete the message?'))
+          post({ _mbox: box, _uids: uid, _act: 'delete' });
+      } else if (cmd === 'archive' || cmd === 'read' || cmd === 'unread' ||
+                 cmd === 'flag' || cmd === 'unflag' ||
+                 cmd === 'move' || cmd === 'copy') {
+        post({ _mbox: box, _uids: uid, _act: cmd,
+               _dest: a.getAttribute('data-dest') || '' });
+      } else if (cmd === 'edit') {
+        location.href = '/compose?_mode=edit&_mbox=' +
+          encodeURIComponent(box) + '&_uid=' + uid;
+      }
+    });
   }
 
   // summary/details label relayed from the preview iframe to the parent

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ product_name }} :: {{ subject }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+</head>
+<body class="task-mail action-print">
+  <div id="print-layout">
+    {# reference: logo-match="template" — no logo_url_print is configured,
+       so the logo object renders nothing on this page #}
+    <div class="print-content" role="main">
+      <div id="message-header">
+        <h2 class="subject"><span class="voice">Subject: </span>{{ subject }}</h2>
+        <div class="header">
+          <img src="{{ url_for('static', filename='images/contactpic.svg') }}" alt="Contact photo" class="contactphoto">
+          <div class="header-content details-view">
+            <table class="header-headers"><tbody>
+              {% for h, v in headers if h not in ('Subject',) %}
+              <tr><td class="header-title">{{ h }}</td><td class="header {{ h|lower|replace('-','') }}">{{ v }}</td></tr>
+              {% endfor %}
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+      <div id="message-content">
+        <div role="region">
+          {% if attachments %}
+          <ul class="attachmentslist" id="attachment-list">
+            {% for a in attachments %}
+            <li><span class="attachment-size">{{ a.size }}</span><span class="attachment-name">{{ a.filename }}</span></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+        <div role="region">{% include "includes/message-content.html" %}</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

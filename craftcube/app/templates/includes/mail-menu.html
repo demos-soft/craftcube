@@ -1,135 +1,137 @@
-<div id="mailtoolbar" class="toolbar menu" role="toolbar">
-  <a href="{{ url_for('views.compose') }}" class="compose hidden" title="Create a new message"><span class="inner">Compose</span></a>
-  <a href="{{ url_for('views.compose', _mode='reply') }}" class="reply disabled" id="tb-reply"
-     title="Reply to sender" data-content-button="true"><span class="inner">Reply</span></a>
-  <span class="dropbutton">
-    <a href="{{ url_for('views.compose', _mode='replyall') }}" class="reply-all disabled" id="tb-replyall"
-       title="Reply to list or to sender and all recipients"><span class="inner">Reply all</span></a>
-    <a href="#reply-all" id="replyallmenulink" class="dropdown" data-popup="replyall-menu" tabindex="0">
-      <span class="inner">Reply-all options</span>
-    </a>
-  </span>
-  <span class="dropbutton">
-    <a href="{{ url_for('views.compose', _mode='forward') }}" class="forward disabled" id="tb-forward"
-       title="Forward the message"><span class="inner">Forward</span></a>
-    <a href="#forward" id="forwardmenulink" class="dropdown" data-popup="forward-menu" tabindex="0">
-      <span class="inner">Forwarding options</span>
-    </a>
-  </span>
-  <span class="spacer"></span>
-  <a href="#" class="delete disabled" id="tb-delete" data-act="delete" title="Delete message"><span class="inner">Delete</span></a>
-  {% if message_view %}
-  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
-     class="print disabled" id="tb-print-direct" title="Print message" target="_blank"
-     data-hidden="small"><span class="inner">Print</span></a>
-  {% endif %}
-  <a href="#" class="archive disabled" id="tb-archive" data-act="archive" title="Move to the archive folder"><span class="inner">Archive</span></a>
-  <a href="#mark" id="markmessagemenulink" class="markmessage" title="Mark messages"
-     data-popup="markmessage-menu"><span class="inner">Mark</span></a>
-  <a href="#more" id="messagemenulink" class="more" title="More actions..."
-     data-popup="message-menu"><span class="inner">More</span></a>
-  {% if message_view %}
-  <span class="spacer"></span>
-  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=prev_uid, _framed=framed, _extwin=1 if extwin else none) if prev_uid else '#' }}"
-     class="prev{{ ' disabled' if not prev_uid }}" id="tb-prev" title="Previous message"><span class="inner">Previous</span></a>
-  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=next_uid, _framed=framed, _extwin=1 if extwin else none) if next_uid else '#' }}"
-     class="next{{ ' disabled' if not next_uid }}" id="tb-next" title="Next message"><span class="inner">Next</span></a>
-  {% endif %}
-</div>
-
-<div id="forward-menu" class="popupmenu">
-  <h3 id="aria-label-forward-menu" class="voice">Forwarding options</h3>
-  <ul class="menu listing" role="menu" aria-labelledby="aria-label-forward-menu">
-    <li role="menuitem"><a class="forward inline disabled" data-mode="forward"
-        href="{{ url_for('views.compose', _mode='forward') }}"><span>Forward inline</span></a></li>
-    <li role="menuitem"><a class="forward attachment disabled" data-mode="forward-attachment"
-        href="{{ url_for('views.compose', _mode='forward-attachment') }}"><span>Forward as attachment</span></a></li>
-    <li role="menuitem"><a class="forward bounce disabled" data-mode="bounce"
-        href="{{ url_for('views.compose', _mode='bounce') }}"><span>Resend (bounce)</span></a></li>
-  </ul>
-</div>
-
-<div id="replyall-menu" class="popupmenu">
-  <h3 id="aria-label-replyall-menu" class="voice">Reply-all options</h3>
-  <ul class="menu listing" role="menu" aria-labelledby="aria-label-replyall-menu">
-    <li role="menuitem"><a class="reply all disabled" data-mode="replyall"
-        href="{{ url_for('views.compose', _mode='replyall') }}"><span>Reply all</span></a></li>
-    <li role="menuitem"><a class="reply list disabled" data-mode="replylist"
-        href="{{ url_for('views.compose', _mode='replylist') }}"><span>Reply list</span></a></li>
-  </ul>
-</div>
-
-<div id="message-menu" class="popupmenu">
-  <h3 id="aria-label-message-menu" class="voice">More message actions</h3>
-  <ul class="menu listing" role="menu" aria-labelledby="aria-label-message-menu">
-    <li role="menuitem"><a class="print disabled" id="tb-print"
-        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
-        target="_blank"><span>Print this message</span></a></li>
-    {% if not message_view %}
-    <li role="menuitem"><a class="import" href="#" data-popup="uploadform"><span>Import</span></a></li>
-    {% endif %}
-    <li role="menuitem"{{ ' class="with-sublist"'|safe if not message_view }}>
-      <a class="download disabled" id="tb-export"
-        href="{{ url_for('views.message_export', _mbox=folder, _uid=uid, _format='eml') if message_view else '#' }}"><span>Export</span></a>
-      {% if not message_view %}
-      <a class="button icon dropdown" role="button" href="#download" data-popup="download-menu"
-         title="Export"><span class="voice">Download options</span></a>
-      {% endif %}
-    </li>
-    <li role="menuitem"><a class="edit asnew disabled" data-mode="edit"
-        href="{{ url_for('views.compose', _mode='edit') }}"><span>Edit as new</span></a></li>
-    <li role="menuitem"><a class="source disabled" id="tb-source"
-        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _source=1) if message_view else '#' }}"
-        target="_blank"><span>Show source</span></a></li>
-    <li role="menuitem"><a class="move disabled" id="tb-move" href="#move"
-        data-popup="moveto-menu"><span>Move to...</span></a></li>
-    <li role="menuitem"><a class="copy disabled" id="tb-copy" href="#copy"
-        data-popup="copyto-menu"><span>Copy to...</span></a></li>
-    <li role="menuitem"><a class="extwin disabled" id="tb-extwin"
-        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _extwin=1) if message_view else '#' }}"
-        target="_blank"><span>Open in new window</span></a></li>
-  </ul>
-</div>
-
-<div id="download-menu" class="popupmenu">
-  <h2 class="voice" id="aria-label-zipdownloadmenu">Message Download Options Menu</h2>
-  <ul class="menu listing" role="menu" aria-labelledby="aria-label-zipdownloadmenu">
-    <li role="menuitem"><a class="download eml" id="dl-eml" href="#"
-        data-dlfmt="eml"><span>Source (.eml)</span></a></li>
-    <li role="menuitem"><a class="download mbox" id="dl-mbox" href="#"
-        data-dlfmt="mbox"><span>Mbox format (.zip)</span></a></li>
-    <li role="menuitem"><a class="download maildir" id="dl-maildir" href="#"
-        data-dlfmt="maildir"><span>Maildir format (.zip)</span></a></li>
-  </ul>
-</div>
-
-{% set move_target_box = folder %}
-<div id="moveto-menu" class="popupmenu">
-  <h3 class="voice">Move to folder</h3>
-  <ul class="menu listing" role="menu">
-    {% for f in folders %}{% if f.name != move_target_box %}
-    <li role="menuitem"><a class="move folder-selector-link" href="#" data-act="move"
-        data-dest="{{ f.name }}">{{ f.name if '/' not in f.name else f.name.split('/')|last }}</a></li>
-    {% endif %}{% endfor %}
-  </ul>
-</div>
-
-<div id="copyto-menu" class="popupmenu">
-  <h3 class="voice">Copy to folder</h3>
-  <ul class="menu listing" role="menu">
-    {% for f in folders %}{% if f.name != move_target_box %}
-    <li role="menuitem"><a class="copy folder-selector-link" href="#" data-act="copy"
-        data-dest="{{ f.name }}">{{ f.name if '/' not in f.name else f.name.split('/')|last }}</a></li>
-    {% endif %}{% endfor %}
-  </ul>
-</div>
-
-<div id="markmessage-menu" class="popupmenu">
-  <h3 id="aria-label-markmessage-menu" class="voice">Mark selected messages as...</h3>
-  <ul class="menu listing" role="menu" aria-labelledby="aria-label-markmessage-menu">
-    <li role="menuitem"><a class="read disabled" href="#" data-act="read"><span>As read</span></a></li>
-    <li role="menuitem"><a class="unread disabled" href="#" data-act="unread"><span>As unread</span></a></li>
-    <li role="menuitem"><a class="flag disabled" href="#" data-act="flag"><span>As flagged</span></a></li>
-    <li role="menuitem"><a class="unflag disabled" href="#" data-act="unflag"><span>As unflagged</span></a></li>
-  </ul>
-</div>
+1|<div id="mailtoolbar" class="toolbar menu" role="toolbar"
+2|     {% if message_view %}data-uid="{{ uid }}" data-box="{{ folder }}"{% endif %}>
+3|  {% set dis = '' if tb_active else ' disabled' %}
+4|  <a href="{{ url_for('views.compose') }}" class="compose hidden" title="Create a new message"><span class="inner">Compose</span></a>
+5|  <a href="{{ url_for('views.compose', _mode='reply') }}" class="reply{{ dis }}" id="tb-reply"
+6|     title="Reply to sender" data-content-button="true"><span class="inner">Reply</span></a>
+7|  <span class="dropbutton">
+8|    <a href="{{ url_for('views.compose', _mode='replyall') }}" class="reply-all{{ dis }}" id="tb-replyall"
+9|       title="Reply to list or to sender and all recipients"><span class="inner">Reply all</span></a>
+10|    <a href="#reply-all" id="replyallmenulink" class="dropdown" data-popup="replyall-menu" tabindex="0">
+11|      <span class="inner">Reply-all options</span>
+12|    </a>
+13|  </span>
+14|  <span class="dropbutton">
+15|    <a href="{{ url_for('views.compose', _mode='forward') }}" class="forward{{ dis }}" id="tb-forward"
+16|       title="Forward the message"><span class="inner">Forward</span></a>
+17|    <a href="#forward" id="forwardmenulink" class="dropdown" data-popup="forward-menu" tabindex="0">
+18|      <span class="inner">Forwarding options</span>
+19|    </a>
+20|  </span>
+21|  <span class="spacer"></span>
+22|  <a href="#" class="delete{{ dis }}" id="tb-delete" data-act="delete" title="Delete message"><span class="inner">Delete</span></a>
+23|  {% if message_view %}
+24|  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
+25|     class="print{{ dis }}" id="tb-print-direct" title="Print message" target="_blank"
+26|     data-hidden="small"><span class="inner">Print</span></a>
+27|  {% endif %}
+28|  <a href="#" class="archive{{ dis }}" id="tb-archive" data-act="archive" title="Move to the archive folder"><span class="inner">Archive</span></a>
+29|  <a href="#mark" id="markmessagemenulink" class="markmessage" title="Mark messages"
+30|     data-popup="markmessage-menu"><span class="inner">Mark</span></a>
+31|  <a href="#more" id="messagemenulink" class="more" title="More actions..."
+32|     data-popup="message-menu"><span class="inner">More</span></a>
+33|  {% if message_view %}
+34|  <span class="spacer"></span>
+35|  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=prev_uid, _framed=framed, _extwin=1 if extwin else none) if prev_uid else '#' }}"
+36|     class="prev{{ ' disabled' if not prev_uid }}" id="tb-prev" title="Previous message"><span class="inner">Previous</span></a>
+37|  <a href="{{ url_for('views.message_view', _mbox=folder, _uid=next_uid, _framed=framed, _extwin=1 if extwin else none) if next_uid else '#' }}"
+38|     class="next{{ ' disabled' if not next_uid }}" id="tb-next" title="Next message"><span class="inner">Next</span></a>
+39|  {% endif %}
+40|</div>
+41|
+42|<div id="forward-menu" class="popupmenu">
+43|  <h3 id="aria-label-forward-menu" class="voice">Forwarding options</h3>
+44|  <ul class="menu listing" role="menu" aria-labelledby="aria-label-forward-menu">
+45|    <li role="menuitem"><a class="forward inline{{ dis }}" data-mode="forward"
+46|        href="{{ url_for('views.compose', _mode='forward') }}"><span>Forward inline</span></a></li>
+47|    <li role="menuitem"><a class="forward attachment{{ dis }}" data-mode="forward-attachment"
+48|        href="{{ url_for('views.compose', _mode='forward-attachment') }}"><span>Forward as attachment</span></a></li>
+49|    <li role="menuitem"><a class="forward bounce{{ dis }}" data-mode="bounce"
+50|        href="{{ url_for('views.compose', _mode='bounce') }}"><span>Resend (bounce)</span></a></li>
+51|  </ul>
+52|</div>
+53|
+54|<div id="replyall-menu" class="popupmenu">
+55|  <h3 id="aria-label-replyall-menu" class="voice">Reply-all options</h3>
+56|  <ul class="menu listing" role="menu" aria-labelledby="aria-label-replyall-menu">
+57|    <li role="menuitem"><a class="reply all{{ dis }}" data-mode="replyall"
+58|        href="{{ url_for('views.compose', _mode='replyall') }}"><span>Reply all</span></a></li>
+59|    <li role="menuitem"><a class="reply list{{ dis }}" data-mode="replylist"
+60|        href="{{ url_for('views.compose', _mode='replylist') }}"><span>Reply list</span></a></li>
+61|  </ul>
+62|</div>
+63|
+64|<div id="message-menu" class="popupmenu">
+65|  <h3 id="aria-label-message-menu" class="voice">More message actions</h3>
+66|  <ul class="menu listing" role="menu" aria-labelledby="aria-label-message-menu">
+67|    <li role="menuitem"><a class="print{{ dis }}" id="tb-print"
+68|        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
+69|        target="_blank"><span>Print this message</span></a></li>
+70|    {% if not message_view %}
+71|    <li role="menuitem"><a class="import" href="#" data-popup="uploadform"><span>Import</span></a></li>
+72|    {% endif %}
+73|    <li role="menuitem"{{ ' class="with-sublist"'|safe if not message_view }}>
+74|      <a class="download{{ dis }}" id="tb-export"
+75|        href="{{ url_for('views.message_export', _mbox=folder, _uid=uid, _format='eml') if message_view else '#' }}"><span>Export</span></a>
+76|      {% if not message_view %}
+77|      <a class="button icon dropdown" role="button" href="#download" data-popup="download-menu"
+78|         title="Export"><span class="voice">Download options</span></a>
+79|      {% endif %}
+80|    </li>
+81|    <li role="menuitem"><a class="edit asnew{{ dis }}" data-mode="edit"
+82|        href="{{ url_for('views.compose', _mode='edit') }}"><span>Edit as new</span></a></li>
+83|    <li role="menuitem"><a class="source{{ dis }}" id="tb-source"
+84|        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _source=1) if message_view else '#' }}"
+85|        target="_blank"><span>Show source</span></a></li>
+86|    <li role="menuitem"><a class="move{{ dis }}" id="tb-move" href="#move"
+87|        data-popup="moveto-menu"><span>Move to...</span></a></li>
+88|    <li role="menuitem"><a class="copy{{ dis }}" id="tb-copy" href="#copy"
+89|        data-popup="copyto-menu"><span>Copy to...</span></a></li>
+90|    <li role="menuitem"><a class="extwin{{ dis }}" id="tb-extwin"
+91|        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _extwin=1) if message_view else '#' }}"
+92|        target="_blank"><span>Open in new window</span></a></li>
+93|  </ul>
+94|</div>
+95|
+96|<div id="download-menu" class="popupmenu">
+97|  <h2 class="voice" id="aria-label-zipdownloadmenu">Message Download Options Menu</h2>
+98|  <ul class="menu listing" role="menu" aria-labelledby="aria-label-zipdownloadmenu">
+99|    <li role="menuitem"><a class="download eml" id="dl-eml" href="#"
+100|        data-dlfmt="eml"><span>Source (.eml)</span></a></li>
+101|    <li role="menuitem"><a class="download mbox" id="dl-mbox" href="#"
+102|        data-dlfmt="mbox"><span>Mbox format (.zip)</span></a></li>
+103|    <li role="menuitem"><a class="download maildir" id="dl-maildir" href="#"
+104|        data-dlfmt="maildir"><span>Maildir format (.zip)</span></a></li>
+105|  </ul>
+106|</div>
+107|
+108|{% set move_target_box = folder %}
+109|<div id="moveto-menu" class="popupmenu">
+110|  <h3 class="voice">Move to folder</h3>
+111|  <ul class="menu listing" role="menu">
+112|    {% for f in folders %}{% if f.name != move_target_box %}
+113|    <li role="menuitem"><a class="move folder-selector-link" href="#" data-act="move"
+114|        data-dest="{{ f.name }}">{{ f.name if '/' not in f.name else f.name.split('/')|last }}</a></li>
+115|    {% endif %}{% endfor %}
+116|  </ul>
+117|</div>
+118|
+119|<div id="copyto-menu" class="popupmenu">
+120|  <h3 class="voice">Copy to folder</h3>
+121|  <ul class="menu listing" role="menu">
+122|    {% for f in folders %}{% if f.name != move_target_box %}
+123|    <li role="menuitem"><a class="copy folder-selector-link" href="#" data-act="copy"
+124|        data-dest="{{ f.name }}">{{ f.name if '/' not in f.name else f.name.split('/')|last }}</a></li>
+125|    {% endif %}{% endfor %}
+126|  </ul>
+127|</div>
+128|
+129|<div id="markmessage-menu" class="popupmenu">
+130|  <h3 id="aria-label-markmessage-menu" class="voice">Mark selected messages as...</h3>
+131|  <ul class="menu listing" role="menu" aria-labelledby="aria-label-markmessage-menu">
+132|    <li role="menuitem"><a class="read{{ dis }}" href="#" data-act="read"><span>As read</span></a></li>
+133|    <li role="menuitem"><a class="unread{{ dis }}" href="#" data-act="unread"><span>As unread</span></a></li>
+134|    <li role="menuitem"><a class="flag{{ dis }}" href="#" data-act="flag"><span>As flagged</span></a></li>
+135|    <li role="menuitem"><a class="unflag{{ dis }}" href="#" data-act="unflag"><span>As unflagged</span></a></li>
+136|  </ul>
+137|</div>

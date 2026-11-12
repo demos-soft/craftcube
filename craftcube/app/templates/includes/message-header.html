@@ -1,8 +1,10 @@
         <div id="message-header">
           <h2 class="subject">
             <span class="voice">Subject: </span>{{ subject }}
+            {% if not extwin %}
             <a class="extwin" title="Open in new window" target="_blank"
                href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _extwin=1) }}"><span class="inner">Open in new window</span></a>
+            {% endif %}
           </h2>
           <div class="header">
             <img src="{{ url_for('static', filename='images/contactpic.svg') }}"

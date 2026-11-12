@@ -376,14 +376,19 @@ def message_view():
         ctx["remote_blocked"] = False
     ctx["framed"] = framed
     ctx["extwin"] = request.args.get("_extwin") == "1"
+    # standalone (non-iframe) message pages render the toolbar server-enabled
+    # for the viewed message, like the reference action-show page
+    if not framed:
+        ctx["tb_active"] = True
+        ctx.setdefault("action", "show")
     ctx["subject_title"] = ctx.get("subject")
     ctx["print"] = request.args.get("_print") == "1"
     # prev/next navigation within the folder (same order as the message list)
     prev_uid = next_uid = None
     if not framed:
         try:
-            order_uids = box.message_list(folder, page=1, page_size=100000,
-                                          sort="date", order="desc")["uids"]
+            order_uids = [str(u) for u in box.message_list(folder, page=1, page_size=100000,
+                                     sort="", order="desc")["uids"]]
             if uid in order_uids:
                 idx = order_uids.index(uid)
                 prev_uid = order_uids[idx + 1] if idx + 1 < len(order_uids) else None
@@ -399,6 +404,10 @@ def message_view():
                                action="headers", rawh=list(ctx["msg"].items()))
     if framed:
         return render_template("message_part.html", **ctx, task="mail")
+    if request.args.get("_print") == "1":
+        # reference dispatch: action print picks the messageprint template —
+        # no app chrome, details-view headers, logo top-right
+        return render_template("messageprint.html", **ctx, task="mail")
     return render("mail", "message.html", **ctx)
 
 
@@ -618,7 +627,7 @@ def _next_uid_after(box, folder, ref_uid, removed):
     """First remaining uid after ref_uid (newest-first order), given the
     folder's uid order BEFORE the removal."""
     uids = [str(u) for u in box.message_list(folder, page=1, page_size=100000,
-                                             sort="date", order="desc")["uids"]]
+                                             sort="", order="desc")["uids"]]
     removed = {str(u) for u in removed}
     try:
         idx = uids.index(str(ref_uid))
