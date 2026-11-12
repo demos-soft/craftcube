@@ -1,0 +1,12 @@
+apiVersion: v2
+name: craftcube
+description: CraftCube webmail - a Roundcube-compatible webmail client (Flask + IMAP/SMTP)
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - webmail
+  - roundcube
+  - imap
+sources:
+  - https://github.com/craftcube/craftcube

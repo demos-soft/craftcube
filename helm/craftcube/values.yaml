@@ -1,0 +1,98 @@
+# Default values for the craftcube chart.
+
+image:
+  repository: craftcube
+  # defaults to .Chart.AppVersion when empty
+  tag: ""
+  pullPolicy: IfNotPresent
+  pullSecrets: []
+
+replicaCount: 1
+
+# HTTP port the container listens on (gunicorn).
+containerPort: 8000
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  hosts:
+    - host: craftcube.local
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+
+# All app configuration is environment-driven (see README.md).
+config:
+  # IMAP/SMTP servers CraftCube talks to
+  imap:
+    host: imap.example.org
+    port: 143
+    ssl: false
+  smtp:
+    host: smtp.example.org
+    port: 587
+    ssl: false
+  # special mail folders; Dovecot \SpecialUse flags are auto-detected first
+  draftsFolder: Drafts
+  sentFolder: Sent
+  trashFolder: Trash
+  productName: CraftCube
+  # "1": authenticate IMAP with each user's own password (Roundcube default).
+  # "0": shared-mailbox mode using the admin credentials from `secret`.
+  perUserPasswords: "1"
+  pageSize: 20
+
+# Credentials managed as a Kubernetes Secret.
+secret:
+  # Existing secret to consume instead of creating one (keys below must exist).
+  existingSecret: ""
+  create: true
+  # Flask session signing key — SET THIS IN YOUR VALUES, e.g. `openssl rand -hex 32`
+  flaskSecret: ""
+  # Shared admin mailbox credentials (only used with config.perUserPasswords=0)
+  imapAdminUser: ""
+  imapAdminPass: ""
+
+persistence:
+  enabled: true
+  size: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  # empty = default StorageClass
+  storageClassName: ""
+  mountPath: /data
+  # when disabled, SQLite lives on emptyDir (data is lost on reschedule)
+  ephemeral: false
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    memory: 512Mi
+
+# SQLite is single-writer; keep 1 unless the DB is on an RWX volume.
+strategy:
+  type: Recreate
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
+podAnnotations: {}
+podSecurityContext:
+  runAsNonRoot: false
+securityContext: {}
+
+probes:
+  liveness:
+    initialDelaySeconds: 15
+    periodSeconds: 20
+  readiness:
+    initialDelaySeconds: 5
+    periodSeconds: 10

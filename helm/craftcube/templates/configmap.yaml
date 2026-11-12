@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "craftcube.fullname" . }}-config
+  labels:
+    {{- include "craftcube.labels" . | nindent 4 }}
+data:
+  CRAFTCUBE_DB: {{ printf "%s/craftcube.sqlite" .Values.persistence.mountPath | quote }}
+  CRAFTCUBE_IMAP_HOST: {{ .Values.config.imap.host | quote }}
+  CRAFTCUBE_IMAP_PORT: {{ .Values.config.imap.port | quote }}
+  CRAFTCUBE_IMAP_SSL: {{ ternary "1" "0" .Values.config.imap.ssl | quote }}
+  CRAFTCUBE_SMTP_HOST: {{ .Values.config.smtp.host | quote }}
+  CRAFTCUBE_SMTP_PORT: {{ .Values.config.smtp.port | quote }}
+  CRAFTCUBE_SMTP_SSL: {{ ternary "1" "0" .Values.config.smtp.ssl | quote }}
+  CRAFTCUBE_DRAFTS: {{ .Values.config.draftsFolder | quote }}
+  CRAFTCUBE_SENT: {{ .Values.config.sentFolder | quote }}
+  CRAFTCUBE_TRASH: {{ .Values.config.trashFolder | quote }}
+  CRAFTCUBE_PRODUCT_NAME: {{ .Values.config.productName | quote }}
+  CRAFTCUBE_PAGE_SIZE: {{ .Values.config.pageSize | quote }}
+  CRAFTCUBE_PER_USER_PASSWORDS: {{ .Values.config.perUserPasswords | quote }}
