@@ -1341,4 +1341,7 @@ def folders_act():
 @bp.route("/about")
 @login_required
 def about():
+    if request.args.get("_framed") == "1":
+        # reference: about dialog loads `?_task=settings&_action=about&_framed=1`
+        return render_template("about_framed.html", task="settings")
     return render("settings", "about.html")

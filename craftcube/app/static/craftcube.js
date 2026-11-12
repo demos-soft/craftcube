@@ -132,6 +132,126 @@
     window.cc_close_popups = close;
   }
 
+  // ------------------------------------------- dialog (app.js show_popup_dialog
+  // + simple_dialog; jQuery-UI dialog DOM with Elastic's bootstrap_style)
+  function ccDialog(content, title, opts) {
+    opts = opts || {};
+    var isIframe = content.tagName === 'IFRAME';
+    var popup = document.createElement('div');
+    popup.className = 'popup' + (isIframe ? ' iframe' : '');
+    popup.appendChild(content);
+
+    var overlay = document.createElement('div');
+    overlay.className = 'ui-widget-overlay ui-front';
+    overlay.style.cssText = 'position:fixed;left:0;top:0;width:100%;height:100%;z-index:100';
+
+    var dlg = document.createElement('div');
+    dlg.className = 'ui-dialog ui-widget ui-widget-content ui-front ui-draggable ui-resizable';
+    dlg.setAttribute('role', 'dialog');
+    dlg.setAttribute('aria-labelledby', 'cc-dialog-title');
+    dlg.style.cssText = 'position:fixed;z-index:101;display:flex;flex-direction:column';
+
+    var bar = document.createElement('div');
+    bar.className = 'ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix';
+    bar.innerHTML = '<span id="cc-dialog-title" class="ui-dialog-title">' + title + '</span>' +
+      '<a href="#" role="button" class="ui-dialog-titlebar-close ui-corner-all" title="Close">' +
+      '<span class="voice">Close</span></a>';
+    dlg.appendChild(bar);
+    dlg.appendChild(popup);
+
+    function close() {
+      dlg.remove();
+      overlay.remove();
+      if (opts.onclose) opts.onclose();
+    }
+    bar.querySelector('.ui-dialog-titlebar-close').addEventListener('click', function (e) {
+      e.preventDefault(); close();
+    });
+
+    var buttons = opts.buttons || [{ label: 'Close', cls: 'cancel mainaction', click: close }];
+    if (buttons.length) {
+      var pane = document.createElement('div');
+      pane.className = 'ui-dialog-buttonpane ui-widget-content ui-helper-clearfix';
+      var set = document.createElement('div');
+      set.className = 'ui-dialog-buttonset';
+      buttons.forEach(function (b) {
+        var el = document.createElement('button');
+        el.type = 'button';
+        // ui.js bootstrap_style(): btn + btn-primary for .mainaction, else btn-secondary
+        var cls = 'btn ' + (b.cls || '');
+        el.className = cls + (/mainaction|primary/.test(cls) ? ' btn-primary' : ' btn-secondary');
+        el.textContent = b.label;
+        el.addEventListener('click', function () { if (b.click) b.click(); });
+        set.appendChild(el);
+      });
+      pane.appendChild(set);
+      dlg.appendChild(pane);
+    }
+
+    // resizable grip (jQuery-UI resizable markup; Elastic themes .ui-icon.ui-resizable-se)
+    var grip = document.createElement('span');
+    grip.className = 'ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se';
+    grip.style.cssText = 'position:absolute;cursor:se-resize;width:12px;height:12px;right:1px;bottom:1px;z-index:2';
+    dlg.appendChild(grip);
+    grip.addEventListener('mousedown', function (e) {
+      e.preventDefault();
+      var h0 = dlg.offsetHeight, y0 = e.clientY;
+      var move = function (ev) { dlg.style.height = Math.max(200, h0 + ev.clientY - y0) + 'px'; popup.style.height = Math.max(120, dlg.offsetHeight - (pane0 ? pane0.offsetHeight : 0) - bar.offsetHeight) + 'px'; };
+      var up = function () { document.removeEventListener('mousemove', move); document.removeEventListener('mouseup', up); };
+      var pane0 = dlg.querySelector('.ui-dialog-buttonpane');
+      document.addEventListener('mousemove', move);
+      document.addEventListener('mouseup', up);
+    });
+
+    // draggable titlebar (jQuery-UI draggable on .ui-dialog-titlebar)
+    bar.style.cursor = 'default';
+    bar.addEventListener('mousedown', function (e) {
+      if (e.target.closest('.ui-dialog-titlebar-close')) return;
+      var x0 = e.clientX, y0 = e.clientY, l0 = dlg.offsetLeft, t0 = dlg.offsetTop;
+      var move = function (ev) { dlg.style.left = (l0 + ev.clientX - x0) + 'px'; dlg.style.top = (t0 + ev.clientY - y0) + 'px'; };
+      var up = function () { document.removeEventListener('mousemove', move); document.removeEventListener('mouseup', up); };
+      document.addEventListener('mousemove', move);
+      document.addEventListener('mouseup', up);
+    });
+
+    document.body.appendChild(overlay);
+    document.body.appendChild(dlg);
+
+    // center like Elastic's dialog_open()
+    var chrome = bar.offsetHeight + (dlg.querySelector('.ui-dialog-buttonpane') || { offsetHeight: 0 }).offsetHeight;
+    var h = Math.min(opts.height || 400, window.innerHeight - 40 - chrome);
+    var w = Math.min(opts.width || 500, window.innerWidth - 20);
+    dlg.style.width = w + 'px';
+    if (isIframe) { popup.style.height = h + 'px'; }
+    if (window.innerWidth <= 480) {
+      dlg.style.width = '100%'; dlg.style.height = '100%';
+      dlg.style.left = '0'; dlg.style.top = '0';
+    } else {
+      dlg.style.top = Math.max(20, (window.innerHeight - dlg.offsetHeight) / 2) + 'px';
+      dlg.style.left = Math.max(10, (window.innerWidth - w) / 2) + 'px';
+    }
+    var keyH = function (e) {
+      if (e.key === 'Escape') { close(); document.removeEventListener('keydown', keyH, true); }
+    };
+    document.addEventListener('keydown', keyH, true);
+    return { dlg: dlg, popup: popup, close: close };
+  }
+  window.cc_simple_dialog = ccDialog;
+  window.cc_iframe_dialog = function (src, title, height, opts) {
+    opts = opts || {};
+    var f = document.createElement('iframe');
+    f.src = src;
+    f.style.cssText = 'width:100%;height:100%;border:0';
+    var d = ccDialog(f, title, { height: height || 400, buttons: opts.buttons,
+                                 buttons_previous: opts.buttons_previous, onclose: opts.onclose });
+    d.iframe = f;
+    return d;
+  };
+  // ui.js about_dialog(): iframe of the framed about page in a dialog
+  window.cc_about_dialog = function (elem) {
+    cc_iframe_dialog('/about?_framed=1', elem.textContent.trim(), 400);
+    return false;
+  };
   // ------------------------------------------------------------ message list
   function initList() {
     var list = document.getElementById('messagelist');
@@ -459,7 +579,6 @@
     });
   });
 
-  // ------------------------------------------------------------ auto refresh
   function initRefresh() {
     var mins = parseInt(document.body.getAttribute('data-refresh-interval') || '0', 10);
     if (!mins || !document.getElementById('messagelist')) return;

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="iframe">
+<head>
+  <meta charset="utf-8">
+  <title>{{ product_name }} :: About</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  <script>
+  try {
+    if (document.cookie.indexOf('colorMode=dark') > -1
+      || (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.className += ' dark-mode';
+    }
+  } catch (e) { }
+  </script>
+</head>
+<body class="task-settings action-about">
+  <!-- skins/elastic/templates/about.html -->
+  <h1 class="voice">About</h1>
+  <div class="frame-content">
+    <h2 class="sysname">{{ product_name }} {{ version }}</h2>
+    <p class="copyright">Copyright &copy; 2026, The {{ product_name }} Dev Team</p>
+    <p class="license">This program is free software; you can redistribute it and/or
+      modify it under the terms of the
+      <a href="https://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a>
+      as published by the Free Software Foundation, either version 3 of the License,
+      or (at your option) any later version.<br>Some
+      <a href="https://roundcube.net/license" target="_blank">exceptions</a> for skins &amp; plugins apply.</p>
+  </div>
+</body>
+</html>

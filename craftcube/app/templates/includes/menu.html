@@ -21,7 +21,7 @@
       <a class="settings{{ ' selected' if task == 'settings' }}" href="{{ url_for('views.settings') }}"><span class="inner">Settings</span></a>
       <span class="special-buttons">
         <a class="theme dark" href="#" id="darktoggle"><span class="inner">Dark mode</span></a>
-        <a class="about" href="{{ url_for('views.about') }}"><span class="inner">About</span></a>
+        <a class="about" href="{{ url_for('views.about') }}" onclick="return window.cc_about_dialog ? window.cc_about_dialog(this) : true"><span class="inner">About</span></a>
         <a class="logout" href="{{ url_for('views.logout') }}"><span class="inner">Logout</span></a>
       </span>
   </div>

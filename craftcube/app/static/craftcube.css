@@ -114,3 +114,11 @@ html.dark-mode #settings-sections ul.verticaltabs.linkslist li a:hover { backgro
 .pagenav .pagejumper { display: inline-flex; align-items: center; }
 .pagenav input.pagesize { width: 3rem; text-align: center; }
 .pagenav .pagenav-label { margin-left: .5em; }
+
+/* jQuery-UI theme (plugins/jqueryui/themes/elastic/jquery-ui.css), dialog
+   parts: the reference loads this alongside the Elastic skin styles and our
+   vendored styles.css assumes its background/font-weight rules. */
+.ui-widget-content { background-color:#fff; color:#2c363a; }
+.ui-widget-header { font-weight:700; background-color:#fff; }
+.ui-dialog { background-color:#fff; }
+html.dark-mode .ui-widget-content, html.dark-mode .ui-widget-header { color:#c5d1d3; }
