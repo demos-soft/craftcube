@@ -152,6 +152,10 @@ def login():
             session["user_id"] = uid
             session["username"] = username
             session["imap_password"] = password
+            # Roundcube stores the browser-detected timezone at login
+            tz = request.form.get("_timezone")
+            if tz and tz != "_default_":
+                store.set_user_pref(uid, "timezone", tz)
             # make sure default identity exists
             if not store.identities(uid):
                 store.identity_save(uid, {

@@ -23,6 +23,14 @@
         <div class="formbuttons">
           <button type="submit" class="btn btn-primary icon login" id="rcmloginsubmit" tabindex="3">Login</button>
         </div>
+        <input type="hidden" name="_timezone" id="rcmlogintz" value="_default_">
+        <script>
+          // Roundcube-style client timezone detection sent with the login POST
+          try {
+            var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            if (tz) document.getElementById('rcmlogintz').value = tz;
+          } catch (e) { }
+        </script>
         <div id="login-footer" role="contentinfo">
           {{ product_name }}
           &nbsp;&bull;&nbsp; {{ version }}

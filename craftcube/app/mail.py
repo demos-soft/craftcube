@@ -110,8 +110,15 @@ class Imap:
                     special = "junk"
             out.append({"name": name, "flags": flags, "special": special,
                         "inferior": "\\Noselect" in flags})
-        # INBOX first
-        out.sort(key=lambda f: (f["name"].upper() != "INBOX", f["name"].lower()))
+        # Roundcube's list_sorted(): INBOX first, then special mail folders in
+        # config mail_folders order (Drafts, Sent, Junk, Trash, Archive), then
+        # remaining folders alphabetically.
+        rc_special_order = {"drafts": 1, "sent": 2, "junk": 3, "trash": 4,
+                            "archive": 5}
+        out.sort(key=lambda f: (
+            0 if f["name"].upper() == "INBOX" else
+            rc_special_order.get(f["special"], 6),
+            f["name"].lower()))
         return out
 
     def status(self, folder):

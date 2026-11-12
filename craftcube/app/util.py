@@ -3,7 +3,7 @@ import email
 import email.utils
 import html as _html
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 
 # ---------------------------------------------------------------- dates/sizes
@@ -25,17 +25,20 @@ def fmt_date(dt):
     return dt.strftime("%d.%m.%y")
 
 def fmt_list_date(dt):
-    """Elastic message-list date: 'Fri 22:45' inside the current week,
-    '23 Sep' this year, '23.10.25' older."""
+    """Roundcube rcmail::format_date() default semantics: today shows
+    'Today <time>' (date_today=time_format), the last 7 days use date_short
+    ('D H:i'), everything older date_long ('Y-m-d H:i')."""
     if dt is None:
         return ""
     dt = to_local(dt)
     now = datetime.now().astimezone()
-    if (now - dt).days < 7 and dt.isocalendar()[:2] == now.isocalendar()[:2]:
+    if dt.date() == now.date():
+        return "Today " + dt.strftime("%H:%M")
+    week_limit = (now - timedelta(days=6)).replace(hour=0, minute=0,
+                                                   second=0, microsecond=0)
+    if dt > week_limit:
         return dt.strftime("%a %H:%M")
-    if dt.year == now.year:
-        return dt.strftime("%d %b")
-    return dt.strftime("%d.%m.%y")
+    return dt.strftime("%Y-%m-%d %H:%M")
 
 def fmt_summary_date(dt):
     if dt is None:
@@ -120,7 +123,8 @@ def fmt_pref_date(dt, prefs):
         else base
 
 def list_pref_date(dt, prefs):
-    """Message-list date honouring timezone + time_format prefs."""
+    """Message-list date honouring timezone + time/date format prefs,
+    following rcmail::format_date(): Today / D H:i / date_long."""
     if dt is None:
         return ""
     prefs = prefs or {}
@@ -129,10 +133,13 @@ def list_pref_date(dt, prefs):
     tf = prefs.get("time_format", "H")
     tfmt = php_strftime(tf, dt) if ":" in tf else ("%H:%M" if tf == "H" else "%I:%M %p")
     if dt.date() == now.date():
-        return dt.strftime(tfmt)
-    if dt.year == now.year:
-        return dt.strftime("%d %b")
-    return dt.strftime("%d.%m.%y")
+        return "Today " + dt.strftime(tfmt)
+    week_limit = (now - timedelta(days=6)).replace(hour=0, minute=0,
+                                                   second=0, microsecond=0)
+    if dt > week_limit:
+        return dt.strftime("%a ") + dt.strftime(tfmt)
+    df = prefs.get("date_format", "Y-m-d")
+    return php_strftime(df, dt) + " " + dt.strftime(tfmt)
 
 def fmt_datetime(dt):
     if dt is None:
