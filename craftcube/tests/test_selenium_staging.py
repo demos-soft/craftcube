@@ -16,12 +16,11 @@ import time
 import pytest
 
 pytest.importorskip("selenium")
-from selenium import webdriver  # noqa: E402
-from selenium.webdriver.common.by import By  # noqa: E402
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 CC = os.environ.get("CRAFTCUBE_STAGING_URL", "http://k8s3.lan:30090")
-CHROME_BIN = os.environ.get(
-    "CHROME_BIN", "/home/ubuntu/.hermes/tools/chromium-1208/chrome-linux64/chrome")
+CHROME_BIN = os.environ.get("CHROME_BIN", "/home/ubuntu/.hermes/tools/chromium-1208/chrome-linux64/chrome")
 USER = os.environ.get("CRAFTCUBE_STAGING_USER", "test@example.org")
 PASSWORD = os.environ.get("CRAFTCUBE_STAGING_PASS", "secret")
 
@@ -53,12 +52,12 @@ def driver():
     try:
         drv = webdriver.Chrome(options=opts)
     except Exception as exc:  # chromedriver missing etc.
-        pytest.skip("chromedriver unavailable: %s" % exc)
+        pytest.skip(f"chromedriver unavailable: {exc}")
     try:
         _login(drv)
     except Exception as exc:
         drv.quit()
-        pytest.skip("staging login failed: %s" % exc)
+        pytest.skip(f"staging login failed: {exc}")
     yield drv
     drv.quit()
 
@@ -95,8 +94,7 @@ def _open_list(drv):
 
 
 def _rows(drv):
-    _wait_until(drv, lambda d: len(d.find_elements(
-        By.CSS_SELECTOR, "#messagelist tbody tr.message")) > 1)
+    _wait_until(drv, lambda d: len(d.find_elements(By.CSS_SELECTOR, "#messagelist tbody tr.message")) > 1)
     return drv.find_elements(By.CSS_SELECTOR, "#messagelist tbody tr.message")
 
 
@@ -108,13 +106,17 @@ def _click(drv, el, ctrl=False, shift=False):
         "['mousedown','mouseup','click'].forEach(function(t){"
         "el.dispatchEvent(new MouseEvent(t,{bubbles:true,cancelable:true,"
         "detail:1,view:window,ctrlKey:c,shiftKey:s}));});",
-        el, ctrl, shift)
+        el,
+        ctrl,
+        shift,
+    )
 
 
 def _selected_flags(drv):
     return drv.execute_script(
         "return [...document.querySelectorAll('#messagelist tbody tr.message')]"
-        ".map(function(r){return r.classList.contains('selected')?'1':'0';}).join('');")
+        ".map(function(r){return r.classList.contains('selected')?'1':'0';}).join('');"
+    )
 
 
 def test_single_click_selects_without_navigating(driver):
@@ -126,8 +128,7 @@ def test_single_click_selects_without_navigating(driver):
     assert _selected_flags(driver).count("1") == 1
     assert "_uid=" not in driver.current_url, "single click must not open the message"
     # toolbar follows the selection (reference selection_changed)
-    disabled = driver.execute_script(
-        "return document.querySelector('#tb-delete').classList.contains('disabled');")
+    disabled = driver.execute_script("return document.querySelector('#tb-delete').classList.contains('disabled');")
     assert disabled is False
 
 
@@ -154,8 +155,9 @@ def test_dblclick_opens_message_view(driver):
     rows = _rows(driver)
     uid = rows[1].get_attribute("data-uid")
     driver.execute_script(
-        "arguments[0].dispatchEvent(new MouseEvent('dblclick',"
-        "{bubbles:true,cancelable:true,detail:2,view:window}));", rows[1])
+        "arguments[0].dispatchEvent(new MouseEvent('dblclick',{bubbles:true,cancelable:true,detail:2,view:window}));",
+        rows[1],
+    )
     _wait_until(driver, lambda d: "_uid=" in d.current_url)
     assert uid and ("_uid=" + uid) in driver.current_url
     _open_list(driver)
@@ -167,39 +169,45 @@ def test_folder_tree_is_nested_and_folds_persist(driver):
         "var li=document.querySelector('#mailboxlist li[data-name=\"INBOX\"]');"
         "if (!li) return -1;"
         "var ul=li.querySelector('ul');"
-        "return ul ? ul.querySelectorAll('li').length : 0;")
+        "return ul ? ul.querySelectorAll('li').length : 0;"
+    )
     assert nested >= 1, "subtree of INBOX missing from the mail sidebar tree"
     caret_shown = driver.execute_script(
         "var li=document.querySelector('#mailboxlist li[data-name=\"INBOX\"]');"
         "var t=li.querySelector('.treetoggle');"
-        "return !!t && getComputedStyle(t).display !== 'none';")
+        "return !!t && getComputedStyle(t).display !== 'none';"
+    )
     assert caret_shown, "treetoggle caret not visible on a parent folder"
     # collapse the INBOX subtree and verify persistence across a reload
     driver.execute_script(
         "document.querySelector("
         "'#mailboxlist li[data-name=\"INBOX\"] .treetoggle')"
         ".dispatchEvent(new MouseEvent('click',"
-        "{bubbles:true,cancelable:true,view:window}));")
+        "{bubbles:true,cancelable:true,view:window}));"
+    )
     time.sleep(0.3)
     collapsed = driver.execute_script(
         "var li=document.querySelector('#mailboxlist li[data-name=\"INBOX\"]');"
         "var ul=li.querySelector('ul');"
         "return li.getAttribute('aria-expanded') === 'false' "
-        "&& getComputedStyle(ul).display === 'none';")
+        "&& getComputedStyle(ul).display === 'none';"
+    )
     assert collapsed
     driver.refresh()
     time.sleep(1.0)
     still = driver.execute_script(
         "var li=document.querySelector('#mailboxlist li[data-name=\"INBOX\"]');"
         "var ul=li && li.querySelector('ul');"
-        "return ul ? getComputedStyle(ul).display === 'none' : null;")
+        "return ul ? getComputedStyle(ul).display === 'none' : null;"
+    )
     assert still is True
     # restore expanded state for the following tests
     driver.execute_script(
         "document.querySelector("
         "'#mailboxlist li[data-name=\"INBOX\"] .treetoggle')"
         ".dispatchEvent(new MouseEvent('click',"
-        "{bubbles:true,cancelable:true,view:window}));")
+        "{bubbles:true,cancelable:true,view:window}));"
+    )
     time.sleep(0.2)
 
 
@@ -209,21 +217,22 @@ def test_refresh_shows_loading_box_in_place(driver):
         "window.__boxes = [];"
         "new MutationObserver(function(ms){ms.forEach(function(m){"
         "m.addedNodes.forEach(function(n){window.__boxes.push(n.className);});});})"
-        ".observe(document.getElementById('messagestack'), {childList:true});")
+        ".observe(document.getElementById('messagestack'), {childList:true});"
+    )
     before = len(_rows(driver))
     driver.execute_script(
         "document.querySelector('a.refresh')"
         ".dispatchEvent(new MouseEvent('click',"
-        "{bubbles:true,cancelable:true,detail:1,view:window}));")
+        "{bubbles:true,cancelable:true,detail:1,view:window}));"
+    )
     time.sleep(1.5)
-    assert any("loading" in cls for cls in
-               driver.execute_script("return window.__boxes;")), \
+    assert any("loading" in cls for cls in driver.execute_script("return window.__boxes;")), (
         "no 'loading' info box was shown during refresh"
+    )
     # still the same list page, rows intact, info box cleaned up
     assert "_uid=" not in driver.current_url
     assert len(_rows(driver)) == before
-    _wait_until(driver, lambda d: len(d.find_elements(
-        By.CSS_SELECTOR, "#messagestack div")) == 0, timeout=15)
+    _wait_until(driver, lambda d: len(d.find_elements(By.CSS_SELECTOR, "#messagestack div")) == 0, timeout=15)
 
 
 def test_import_menu_item_enabled_without_selection(driver):
@@ -232,15 +241,17 @@ def test_import_menu_item_enabled_without_selection(driver):
     driver.execute_script(
         "[...document.querySelectorAll('#messagelist tbody tr.message.selected')]"
         ".forEach(function(r){r.classList.remove('selected');"
-        "var cb=r.querySelector('td.selection input'); if(cb) cb.checked=false;});")
+        "var cb=r.querySelector('td.selection input'); if(cb) cb.checked=false;});"
+    )
     driver.execute_script(
         "document.querySelector('#messagemenulink')"
         ".dispatchEvent(new MouseEvent('click',"
-        "{bubbles:true,cancelable:true,detail:1,view:window}));")
+        "{bubbles:true,cancelable:true,detail:1,view:window}));"
+    )
     time.sleep(0.4)
     disabled = driver.execute_script(
-        "return document.querySelector('#message-menu a.import')"
-        ".classList.contains('disabled');")
+        "return document.querySelector('#message-menu a.import').classList.contains('disabled');"
+    )
     assert disabled is False, "Import must not be gated on a selection"
 
 
@@ -249,28 +260,26 @@ def test_import_dialog_opens_and_validates(driver):
     driver.execute_script(
         "document.querySelector('#messagemenulink')"
         ".dispatchEvent(new MouseEvent('click',"
-        "{bubbles:true,cancelable:true,detail:1,view:window}));")
+        "{bubbles:true,cancelable:true,detail:1,view:window}));"
+    )
     time.sleep(0.3)
     driver.execute_script(
         "document.querySelector('#message-menu a.import')"
         ".dispatchEvent(new MouseEvent('click',"
-        "{bubbles:true,cancelable:true,detail:1,view:window}));")
-    _wait_until(driver, lambda d: d.find_elements(
-        By.CSS_SELECTOR, ".ui-dialog .ui-dialog-title"))
+        "{bubbles:true,cancelable:true,detail:1,view:window}));"
+    )
+    _wait_until(driver, lambda d: d.find_elements(By.CSS_SELECTOR, ".ui-dialog .ui-dialog-title"))
     title = driver.find_element(By.CSS_SELECTOR, ".ui-dialog .ui-dialog-title").text
     assert title == "Import messages"
     assert driver.find_elements(By.CSS_SELECTOR, ".ui-dialog input[type=file]")
     # clicking Import without a file shows the reference error message
-    driver.execute_script(
-        "var b=document.querySelector('.ui-dialog button.import'); b.click();")
+    driver.execute_script("var b=document.querySelector('.ui-dialog button.import'); b.click();")
     time.sleep(0.5)
     texts = driver.execute_script(
-        "return [...document.querySelectorAll('#messagestack div')]"
-        ".map(function(d){return d.textContent;});")
-    assert any("select a file" in t for t in texts), \
-        "missing 'Please select a file to upload.' feedback: %r" % (texts,)
-    driver.execute_script(
-        "document.querySelector('.ui-dialog .ui-dialog-titlebar-close').click();")
+        "return [...document.querySelectorAll('#messagestack div')].map(function(d){return d.textContent;});"
+    )
+    assert any("select a file" in t for t in texts), f"missing 'Please select a file to upload.' feedback: {texts!r}"
+    driver.execute_script("document.querySelector('.ui-dialog .ui-dialog-titlebar-close').click();")
     time.sleep(0.3)
     assert not driver.find_elements(By.CSS_SELECTOR, ".ui-dialog")
 
@@ -283,11 +292,10 @@ def test_html_spellcheck_rpc(driver):
         driver.get(CC + "/compose")
     _wait_until(driver, lambda d: d.find_elements(By.ID, "composebody"))
     # switch to HTML mode via the reference editor selector
-    driver.execute_script(
-        "window.cc_editor.command('toggle-editor',"
-        "{id:'composebody', html:true});")
-    _wait_until(driver, lambda d: d.execute_script(
-        "return !!window.tinymce && !!window.tinymce.activeEditor;"), timeout=15)
+    driver.execute_script("window.cc_editor.command('toggle-editor',{id:'composebody', html:true});")
+    _wait_until(
+        driver, lambda d: d.execute_script("return !!window.tinymce && !!window.tinymce.activeEditor;"), timeout=15
+    )
     driver.execute_script(
         "window.__xhrs = [];"
         "var oo = XMLHttpRequest.prototype.open;"
@@ -295,17 +303,17 @@ def test_html_spellcheck_rpc(driver):
         "this.__u = u; return oo.apply(this, arguments); };"
         "var os = XMLHttpRequest.prototype.send;"
         "XMLHttpRequest.prototype.send = function() {"
-        "window.__xhrs.push(this.__u); return os.apply(this, arguments); };")
+        "window.__xhrs.push(this.__u); return os.apply(this, arguments); };"
+    )
     driver.execute_script(
         "window.tinymce.activeEditor.setContent('teh quick brown fox');"
         "document.getElementById('tb-spell')"
         ".dispatchEvent(new MouseEvent('click',"
-        "{bubbles:true,cancelable:true,detail:1,view:window}));")
-    _wait_until(driver, lambda d: any(
-        "spell" in u for u in d.execute_script("return window.__xhrs;")), timeout=10)
+        "{bubbles:true,cancelable:true,detail:1,view:window}));"
+    )
+    _wait_until(driver, lambda d: any("spell" in u for u in d.execute_script("return window.__xhrs;")), timeout=10)
     hits = [u for u in driver.execute_script("return window.__xhrs;") if "spell" in u]
-    assert any("spell_html" in u for u in hits), \
-        "spellcheck did not call the RPC endpoint: %r" % (hits,)
+    assert any("spell_html" in u for u in hits), f"spellcheck did not call the RPC endpoint: {hits!r}"
 
 
 def _open_compose(drv):
@@ -334,34 +342,32 @@ def test_plain_spellcheck_googie_layer(driver):
     driver.execute_script(
         "document.getElementById('tb-spell')"
         ".dispatchEvent(new MouseEvent('click',"
-        "{bubbles:true,cancelable:true,detail:1,view:window}));")
-    _wait_until(driver, lambda d: d.find_elements(
-        By.CSS_SELECTOR, ".googie_edit_layer .googie_link"))
+        "{bubbles:true,cancelable:true,detail:1,view:window}));"
+    )
+    _wait_until(driver, lambda d: d.find_elements(By.CSS_SELECTOR, ".googie_edit_layer .googie_link"))
     links = driver.find_elements(By.CSS_SELECTOR, ".googie_edit_layer .googie_link")
-    words = [l.text for l in links]
+    words = [link.text for link in links]
     assert words == ["Teh", "quik"], words
     # the first error opens the Googie suggestion menu
     links[0].click()
-    _wait_until(driver, lambda d: d.find_elements(
-        By.CSS_SELECTOR, ".googie_window .googie_list li a"))
+    _wait_until(driver, lambda d: d.find_elements(By.CSS_SELECTOR, ".googie_window .googie_list li a"))
     items = driver.find_elements(By.CSS_SELECTOR, ".googie_window .googie_list li a")
     sugg = [i.text for i in items]
     assert "The" in sugg, sugg
     items[sugg.index("The")].click()
-    _wait_until(driver, lambda d: d.execute_script(
-        "return document.getElementById('composebody').value"
-        ".split(' ')[0] === 'The';"))
+    _wait_until(
+        driver,
+        lambda d: d.execute_script("return document.getElementById('composebody').value.split(' ')[0] === 'The';"),
+    )
     # clicking Spell again resumes plain editing (reference chain
     # spellcheck_stop -> spell_span click -> resumeEditing)
     driver.execute_script(
         "document.getElementById('tb-spell')"
         ".dispatchEvent(new MouseEvent('click',"
-        "{bubbles:true,cancelable:true,detail:1,view:window}));")
-    _wait_until(driver, lambda d: not d.find_elements(
-        By.CSS_SELECTOR, ".googie_edit_layer"))
-    assert driver.execute_script(
-        "return getComputedStyle(document.getElementById('composebody'))"
-        ".display;") != "none"
+        "{bubbles:true,cancelable:true,detail:1,view:window}));"
+    )
+    _wait_until(driver, lambda d: not d.find_elements(By.CSS_SELECTOR, ".googie_edit_layer"))
+    assert driver.execute_script("return getComputedStyle(document.getElementById('composebody')).display;") != "none"
 
 
 def test_compose_restore_dialog_fills_recipients(driver):
@@ -380,27 +386,25 @@ def test_compose_restore_dialog_fills_recipients(driver):
       localStorage.setItem(env.storage_prefix + 'compose.index',
                            JSON.stringify(['parprobe']));""")
     driver.get(CC + "/compose")
-    _wait_until(driver, lambda d: d.find_elements(
-        By.CSS_SELECTOR, ".ui-dialog .ui-dialog-titlebar"))
+    _wait_until(driver, lambda d: d.find_elements(By.CSS_SELECTOR, ".ui-dialog .ui-dialog-titlebar"))
     title = driver.find_element(By.CSS_SELECTOR, ".ui-dialog-title").text
     assert title == "Restore message?", title
     btns = driver.find_elements(
-        By.CSS_SELECTOR, ".ui-dialog .ui-dialog-buttonpane button, "
-        ".ui-dialog .ui-dialog-buttonpane a")
-    assert [b.text for b in btns] == ["Restore", "Delete", "Ignore"], \
-        [b.text for b in btns]
-    [b for b in btns if b.text == "Restore"][0].click()
-    _wait_until(driver, lambda d: d.execute_script(
-        "return document.getElementById('compose-subject').value"
-        " === 'Parity restore probe';"))
-    posted_to = driver.execute_script(
-        "return document.querySelector('textarea[name=_to]').value;")
+        By.CSS_SELECTOR, ".ui-dialog .ui-dialog-buttonpane button, .ui-dialog .ui-dialog-buttonpane a"
+    )
+    assert [b.text for b in btns] == ["Restore", "Delete", "Ignore"], [b.text for b in btns]
+    next(b for b in btns if b.text == "Restore").click()
+    _wait_until(
+        driver,
+        lambda d: d.execute_script(
+            "return document.getElementById('compose-subject').value === 'Parity restore probe';"
+        ),
+    )
+    posted_to = driver.execute_script("return document.querySelector('textarea[name=_to]').value;")
     assert posted_to == "someone@example.org,Bob <b@x.org>,", posted_to
-    posted_cc = driver.execute_script(
-        "return document.querySelector('textarea[name=_cc]').value;")
+    posted_cc = driver.execute_script("return document.querySelector('textarea[name=_cc]').value;")
     assert posted_cc == "cc@y.org,", posted_cc
-    body = driver.execute_script(
-        "return document.getElementById('composebody').value;")
+    body = driver.execute_script("return document.getElementById('composebody').value;")
     assert body == "restore probe body", body
     driver.execute_script("localStorage.clear();")
 
@@ -417,22 +421,142 @@ def test_compose_save_stays_and_reports(driver):
       d.getElementById('compose-subject').value = 'Save contract selenium';
       d.getElementById('composebody').value = 'selenium save body';""")
     driver.execute_script("document.getElementById('tb-save').click();")
-    _wait_until(driver, lambda d: any(
-        "Message saved to Drafts." == s.text
-        for s in d.find_elements(By.CSS_SELECTOR, "#messagestack div span")))
+    _wait_until(
+        driver,
+        lambda d: any(
+            s.text == "Message saved to Drafts." for s in d.find_elements(By.CSS_SELECTOR, "#messagestack div span")
+        ),
+    )
     assert "/compose" in driver.current_url
-    draft = driver.execute_script(
-        "return document.querySelector('[name=_draft]').value;")
+    draft = driver.execute_script("return document.querySelector('[name=_draft]').value;")
     assert draft, "draft uid not bound to the form"
-    # the draft really exists in the shared Drafts folder
+    # the draft really exists in the draft folder (special-folder detection
+    # may resolve it as 'Drafts' or INBOX/Drafts depending on staging state)
     rows = driver.execute_script("""
-      var req = new XMLHttpRequest();
-      req.open('GET', '/mail?_mbox=INBOX%2FDrafts&_sf=all', false);
-      req.send();
-      return (req.responseText.match(/data-uid="/g) || []).length;""")
+      function count(folder) {
+        var req = new XMLHttpRequest();
+        req.open('GET', '/mail?_mbox=' + encodeURIComponent(folder) +
+                  '&_sf=all', false);
+        req.send();
+        return (req.responseText.match(/data-uid="/g) || []).length;
+      }
+      var best = 0;
+      ['Drafts', 'INBOX/Drafts'].forEach(function (f) {
+        best = Math.max(best, count(f));
+      });
+      return best;""")
     assert rows >= 1, rows
     # cleanup: delete the probe draft via the list action endpoint
+    driver.execute_script(
+        """
+      function del(folder) {
+        var fd = new URLSearchParams({_act: 'delete', _mbox: folder});
+        fd.append('_uids[]', arguments[0]);
+        return fetch('/mail/act', {method: 'POST', body: fd});
+      }
+      del('Drafts').then(function () { return del('INBOX/Drafts'); });""",
+        draft,
+    )
+
+
+def test_singleclick_previews_in_third_column(driver):
+    # reference widescreen: a plain click previews the message in the
+    # content frame (show_message 'preview'); the frame must load the
+    # framed reader document for the clicked uid
+    _open_list(driver)
+    assert "watermark" in driver.execute_script("return document.getElementById('messagecontframe').src;")
+    clicked = driver.execute_script(
+        "var tr=document.querySelectorAll('#messagelist tbody tr.message')[2];"
+        "tr.scrollIntoView({block:'center'});"
+        "var a=tr.querySelector('.subject a span');"
+        "a.dispatchEvent(new MouseEvent('click',"
+        "{bubbles:true,cancelable:true,view:window,detail:1}));"
+        "return tr.getAttribute('data-uid');"
+    )
+    _wait_until(
+        driver,
+        lambda d: d.execute_script(
+            "return (document.getElementById('messagecontframe').src || '').indexOf('_framed=1') > 0;"
+        ),
+    )
+    src = driver.execute_script("return document.getElementById('messagecontframe').src;")
+    assert f"_uid={clicked}" in src and "_framed=1" in src
+    _wait_until(
+        driver,
+        lambda d: (
+            "Subject"
+            in d.execute_script(
+                "try{return document.getElementById('messagecontframe')"
+                ".contentDocument.body.textContent;}catch(e){return '';}"
+            )
+        ),
+    )
+
+
+def test_shift_dragdrop_folder_move_menu(driver):
+    # reference drag_start/drag_end: dragging over a folder highlights it;
+    # SHIFT+drop opens the Move/Copy menu (plain drop moves immediately).
+    _open_list(driver)
+    state = driver.execute_script("""
+      var tr=document.querySelectorAll('#messagelist tbody tr.message')[1];
+      var li=document.querySelector('#mailboxlist li[data-name="Junk"]');
+      var dt=new DataTransfer();
+      tr.dispatchEvent(new DragEvent('dragstart',{bubbles:true,dataTransfer:dt}));
+      li.dispatchEvent(new DragEvent('dragover',{bubbles:true,cancelable:true,
+                                          dataTransfer:dt}));
+      var hl=li.classList.contains('droptarget');
+      li.dispatchEvent(new DragEvent('drop',{bubbles:true,cancelable:true,
+                                     dataTransfer:dt,clientX:60,clientY:60,
+                                     shiftKey:true}));
+      var menu=document.getElementById('dragmessage-menu');
+      return [hl, menu.classList.contains('open'),
+              getComputedStyle(menu).display].join(',');""")
+    hl, open_, disp = state.split(",")
+    assert hl == "true", "droptarget highlight missing on dragover"
+    assert open_ == "true" and disp == "block", "SHIFT drop menu did not appear"
+    # clicking outside dismisses WITHOUT moving anything
+    driver.execute_script(
+        "document.body.dispatchEvent(new MouseEvent('mousedown',{bubbles:true,cancelable:true,view:window}));"
+    )
+    time.sleep(0.3)
+    assert driver.execute_script("return !document.getElementById('dragmessage-menu')    .classList.contains('open');")
+    # the current folder is never a drop target (check_droptarget)
+    same = driver.execute_script("""
+      var tr=document.querySelectorAll('#messagelist tbody tr.message')[0];
+      var li=document.querySelector('#mailboxlist li[data-name="INBOX"]');
+      var dt=new DataTransfer();
+      tr.dispatchEvent(new DragEvent('dragstart',{bubbles:true,dataTransfer:dt}));
+      var ev=new DragEvent('dragover',{bubbles:true,cancelable:true,
+                                       dataTransfer:dt});
+      li.dispatchEvent(ev);
+      return ev.defaultPrevented;""")
+    assert same is False, "INBOX accepted itself as drop target"
+
+
+def test_folder_selector_matches_reference(driver):
+    # Move to... opens the shared #folder-selector (entity_selector): bare
+    # folderlist, current folder included and active, hierarchy indentation,
+    # no action-specific classes/heading
+    _open_list(driver)
     driver.execute_script("""
-      var fd = new URLSearchParams({_act: 'delete', _mbox: 'INBOX/Drafts'});
-      fd.append('_uids[]', arguments[0]);
-      fetch('/mail/act', {method: 'POST', body: fd});""", draft)
+      var tr=document.querySelectorAll('#messagelist tbody tr.message')[0];
+      tr.querySelector('input[type=checkbox]').click();
+      document.getElementById('messagemenulink').click();
+      document.getElementById('tb-move').click();""")
+    _wait_until(
+        driver, lambda d: d.execute_script("return !!document.querySelector('#folder-selector .folderlist a.active')")
+    )
+    rows = driver.execute_script("""
+      return [...document.querySelectorAll('#folder-selector li')].map(li => {
+        var a = li.querySelector('a');
+        return [li.className, a.className, a.textContent.trim(),
+                a.style.paddingLeft];
+      });""")
+    assert rows, "folder-selector did not render"
+    assert any(r[0] == "inbox" and r[1] == "icon active" for r in rows)
+    assert any(r[0] == "drafts" and r[1] == "icon active" for r in rows)
+    assert any("INBOX/Drafts" in r[1] or (r[2] == "Drafts" and r[3] == "16px") for r in rows), (
+        "nested folder indentation missing"
+    )
+    html = driver.execute_script("return document.getElementById('folder-selector').outerHTML;")
+    assert "Move to folder" not in html and "Copy to folder" not in html
