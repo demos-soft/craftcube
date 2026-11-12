@@ -43,8 +43,10 @@
         <ul class="menu toolbar listing iconized" id="toolbar-list-menu">
           <li role="menuitem"><a href="#select" class="select{{ ' active' }}" data-popup="listselect-menu"
               title="Select" aria-haspopup="true" aria-expanded="false" aria-owns="listselect-menu"><span class="inner">Select</span></a></li>
+          {% if not preview_uid %}
           <li role="menuitem"><a href="#threads" class="threads{{ ' disabled' if not listing.items }}" data-popup="threadselect-menu"
               title="Threads" aria-haspopup="true" aria-expanded="false" aria-owns="threadselect-menu"><span class="inner">Threads</span></a></li>
+          {% endif %}
           <li role="menuitem"><a href="#list-options" class="options active" id="listmenulink" data-popup="listoptions-menu"
               title="Options" tabindex="0"><span class="inner">Options</span></a></li>
         </ul>
@@ -170,7 +172,7 @@
             </thead>
             <tbody>
               {% for m in listing['items'] %}
-              <tr class="message{{ ' selected' if preview_uid == m.uid|string }}{{ ' unread' if not m.seen }}{{ ' flagged' if m.flagged }}{{ ' deleted' if m.deleted }}{{ ' thread-child' if list_mode == 'threads' and m.depth }}{{ ' thread-root' if list_mode == 'threads' }}"
+              <tr class="message{{ ' focused' if preview_uid == m.uid|string }}{{ ' unread' if not m.seen }}{{ ' flagged' if m.flagged }}{{ ' deleted' if m.deleted }}{{ ' thread-child' if list_mode == 'threads' and m.depth }}{{ ' thread-root' if list_mode == 'threads' }}"
                   data-uid="{{ m.uid }}" data-box="{{ m.folder or folder }}"
                   {% if list_mode == 'threads' %}data-depth="{{ m.depth }}"{% endif %}>
                 <td class="selection"><input type="checkbox" name="_uids[]" value="{{ m.uid }}" tabindex="-1"></td>

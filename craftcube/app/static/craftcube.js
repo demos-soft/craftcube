@@ -315,16 +315,23 @@
       });
     }
     function updateToolbar() {
+      // Reference semantics (ui.js): toolbar acts on the *selection*
+      // (checkboxes or the clicked/.selected row), not on the merely
+      // focused/previewed row (direct ?_uid= links mark rows 'focused' only).
       var ctx = toolbarContext();
-      enabled('#tb-delete', ctx.length > 0);
-      enabled('#tb-archive', ctx.length > 0);
-      enabled('#markmessagemenulink', ctx.length > 0);
-      enabled('#messagemenulink', ctx.length > 0);
+      var hasSel = ctx.length > 0;
+      document.body.classList.toggle('has-selection', hasSel);
+      enabled('#tb-delete', hasSel);
+      enabled('#tb-archive', hasSel);
+      enabled('#markmessagemenulink', hasSel);
+      // ui.js: the "More" menu is always enabled — it holds folder-level
+      // actions (check mail, mark all read, ...), not just selection ones
+      enabled('#messagemenulink', true);
       enabled('#tb-reply', ctx.length === 1);
-      enabled('#tb-replyall, #replyall-menu a[data-mode]', ctx.length === 1);
-      enabled('#tb-forward, #forward-menu a[data-mode]', ctx.length === 1);
-      enabled('#message-menu a', ctx.length > 0);
-      enabled('#download-menu a', ctx.length > 0);
+      enabled('#tb-replyall, #replyall-menu a[data-mode], #replyallmenulink', ctx.length === 1);
+      enabled('#tb-forward, #forward-menu a[data-mode], #forwardmenulink', ctx.length === 1);
+      enabled('#message-menu a', hasSel);
+      enabled('#download-menu a', hasSel);
       if (ctx.length === 1) {
         var uid = ctx[0];
         var q = '_mbox=' + encodeURIComponent(boxOf(uid)) + '&_uid=' + uid;

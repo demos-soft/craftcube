@@ -145,3 +145,10 @@ html.dark-mode .ui-widget-content, html.dark-mode .ui-widget-header { color:#c5d
   font-weight: 400;
 }
 
+
+/* Message-list toolbar: the Archive button only exists for an actual
+   selection (reference hides it on direct ?_action=view links, showing it
+   once a row is selected/clicked). */
+body.action-view:not(.has-selection) #mailtoolbar a.archive {
+  display: none;
+}

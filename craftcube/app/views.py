@@ -245,7 +245,7 @@ def mail():
                   search_mods=mods, search_filter=sfilter,
                   search_interval=sinterval, search_scope=sscope,
                   list_mode=list_mode,
-                  searching=searching, preview_uid=uid,
+                  searching=searching, preview_uid=uid, action="view" if uid else None,
                   quota_used=quota_used, quota_kb=quota_kb,
                   message_count=listing["total"])
 
