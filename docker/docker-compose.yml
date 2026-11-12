@@ -3,7 +3,7 @@ services:
   craftcube:
     build:
       context: ../craftcube
-      dockerfile: ../docker/app/Dockerfile
+      dockerfile: Containerfile
     ports:
       - "8080:8000"
       - "8000:8000"

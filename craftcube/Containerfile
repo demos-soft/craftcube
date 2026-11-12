@@ -1,0 +1,33 @@
+# CraftCube webmail — production container.
+#
+# Build from this directory (the build context is the Flask app):
+#   docker build -t craftcube .
+#   docker run -p 8080:8000 -e CRAFTCUBE_IMAP_HOST=... craftcube
+#
+# All configuration is via environment variables; see README.md.
+# The compose stack in ../docker/ wires this image to Dovecot + Mailpit
+# for a complete local mail environment.
+
+FROM docker.io/library/python:3.12-slim
+
+WORKDIR /app
+
+# dependencies first: this layer only rebuilds when requirements change
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+# the application (node_modules and local data are excluded via .dockerignore)
+COPY . .
+
+# SQLite database location (mount a volume here in production)
+ENV CRAFTCUBE_DB=/data/craftcube.sqlite
+RUN mkdir -p /data
+
+EXPOSE 8000
+
+# the app answers 200 (or 302 to /login when not authenticated)
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s \
+  CMD python -c "import urllib.request,sys; \
+sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/', timeout=4).status < 500 else 1)"
+
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "-w", "2", "-t", "120", "run:app"]
