@@ -287,34 +287,57 @@ def _uids_from_request():
 @login_required
 def mail_act():
     box = imap_box()
-    folder = request.form.get("_mbox") or "INBOX"
+    folder = request.form.get("_mbox_override") or request.form.get("_mbox") or "INBOX"
     command = request.form.get("_act")
     uids = _uids_from_request()
+    # cross-folder actions from a search-across-folders listing
+    box_map = request.form.get("_box_map")
+    if box_map:
+        grouped = {}
+        for pair in box_map.split(","):
+            if ":" in pair:
+                u, b = pair.split(":", 1)
+                grouped.setdefault(b, []).append(int(u))
+        for b, us in grouped.items():
+            _run_mail_action(box, command, b, us)
+        return redirect(request.form.get("_return") or url_for("views.mail", _mbox=folder))
     if uids:
         try:
-            if command == "read":
-                box.set_flags(folder, uids, ["\\Seen"], "add")
-            elif command == "unread":
-                box.set_flags(folder, uids, ["\\Seen"], "remove")
-            elif command == "flag":
-                box.set_flags(folder, uids, ["\\Flagged"], "add")
-            elif command == "unflag":
-                box.set_flags(folder, uids, ["\\Flagged"], "remove")
-            elif command == "delete":
-                box.delete(folder, uids)
-                flash(f"{len(uids)} message(s) deleted.", "confirmation")
-            elif command == "move":
-                dest = request.form.get("_dest")
-                box.move(folder, uids, dest)
-                flash(f"Moved to {dest}.", "confirmation")
-            elif command == "copy":
-                dest = request.form.get("_dest")
-                box.copy(folder, uids, dest)
-                flash(f"Copied to {dest}.", "confirmation")
+            _run_mail_action(box, command, folder, uids,
+                             dest=request.form.get("_dest"))
         except MailError as e:
             flash(str(e), "error")
     nxt = request.form.get("_return") or url_for("views.mail", _mbox=folder)
     return redirect(nxt)
+
+
+def _run_mail_action(box, command, folder, uids, dest=None):
+    try:
+        if command == "read":
+            box.set_flags(folder, uids, ["\\Seen"], "add")
+        elif command == "unread":
+            box.set_flags(folder, uids, ["\\Seen"], "remove")
+        elif command in ("flag", "flagtoggle"):
+            if command == "flagtoggle":
+                state = box.flag_state(folder, uids[0]) if len(uids) == 1 else False
+                box.set_flags(folder, uids, ["\\Flagged"], "remove" if state else "add")
+            else:
+                box.set_flags(folder, uids, ["\\Flagged"], "add")
+        elif command == "unflag":
+            box.set_flags(folder, uids, ["\\Flagged"], "remove")
+        elif command == "delete":
+            box.delete(folder, uids)
+            flash(f"{len(uids)} message(s) deleted.", "confirmation")
+        elif command == "move":
+            if dest:
+                box.move(folder, uids, dest)
+                flash(f"Moved to {dest}.", "confirmation")
+        elif command == "copy":
+            if dest:
+                box.copy(folder, uids, dest)
+                flash(f"Copied to {dest}.", "confirmation")
+    except MailError as e:
+        flash(str(e), "error")
 
 
 # ---------------------------------------------------------------- compose
@@ -359,6 +382,7 @@ def compose():
     prefill = {"to": "", "cc": "", "bcc": "", "subject": "", "body": "", "html": "",
                "in_reply_to": "", "references": ""}
     attachments_kept = []
+    attach_original = None   # (filename, bytes) for forward-as-attachment
     source_msg = None
     if uid_of:
         src_folder = request.values.get("_mbox") or "INBOX"
@@ -374,6 +398,11 @@ def compose():
         except MailError:
             source_msg = None
 
+    def _orig_filename():
+        s = _decode_header(source_msg.get("Subject", "") or "") or "message"
+        import re as _re
+        return _re.sub(r"[^A-Za-z0-9 ._-]", "_", s)[:80] + ".eml"
+
     if source_msg is not None:
         if mode == "reply":
             rt = source_msg.get("Reply-To") or source_msg.get("From")
@@ -382,6 +411,9 @@ def compose():
             prefill["subject"] = subj if subj.lower().startswith("re:") else f"Re: {subj}"
             prefill["body"] = _quote(source_msg)
             prefill["in_reply_to"] = source_msg.get("Message-ID", "") or ""
+            prefill["references"] = " ".join(
+                x for x in ([_decode_header(source_msg.get("References", "") or "")]
+                            + ([prefill["in_reply_to"]] if prefill["in_reply_to"] else [])) if x)
         elif mode == "replyall":
             addrs = []
             for h in ("Reply-To", "From", "To", "Cc"):
@@ -398,24 +430,68 @@ def compose():
             prefill["subject"] = subj if subj.lower().startswith("re:") else f"Re: {subj}"
             prefill["body"] = _quote(source_msg)
             prefill["in_reply_to"] = source_msg.get("Message-ID", "") or ""
-        elif mode == "forward":
+        elif mode == "replylist":
+            ml = source_msg.get("List-Post") or source_msg.get("Reply-To") or source_msg.get("From")
+            v = _decode_header(ml) if ml else ""
+            # List-Post looks like <mailto:team@list.example>
+            import re as _re
+            m = _re.search(r"mailto:([^>\s]+)", v or "")
+            prefill["to"] = m.group(1) if m else (v or "")
             subj = _decode_header(source_msg.get("Subject", "")) or ""
-            prefill["subject"] = subj if subj.lower().startswith("fw:") else f"Fwd: {subj}"
-            prefill["body"] = _quote(source_msg, header=True)
+            prefill["subject"] = subj if subj.lower().startswith("re:") else f"Re: {subj}"
+            prefill["body"] = _quote(source_msg)
             prefill["in_reply_to"] = source_msg.get("Message-ID", "") or ""
-        else:  # draft / compose-from-message
-            prefill["to"] = _decode_header(source_msg.get("To", "")) or ""
-            prefill["cc"] = _decode_header(source_msg.get("Cc", "")) or ""
-            prefill["subject"] = _decode_header(source_msg.get("Subject", "")) or ""
-            prefill["body"] = _quote(source_msg, header=False)
-            if source_msg.is_multipart():
-                for p in source_msg.walk():
+        elif mode in ("forward", "forward-attachment", "bounce"):
+            subj = _decode_header(source_msg.get("Subject", "")) or ""
+            if mode == "bounce":
+                # resend verbatim: same To/Subject/attachments, no quoting
+                prefill["to"] = _decode_header(source_msg.get("To", "")) or ""
+                prefill["cc"] = _decode_header(source_msg.get("Cc", "")) or ""
+                prefill["subject"] = subj
+                prefill["body"] = _quote(source_msg, header=False)
+                prefill["in_reply_to"] = ""
+            else:
+                prefill["subject"] = subj if subj.lower().startswith(("fw:", "fwd:")) else f"Fwd: {subj}"
+                prefill["body"] = _quote(source_msg, header=True)
+                prefill["in_reply_to"] = ""
+            if mode == "forward-attachment":
+                attach_original = (_orig_filename(), box.raw_message(
+                    request.values.get("_mbox") or "INBOX", uid_of).as_bytes())
+            else:
+                for p in source_msg.walk() if source_msg.is_multipart() else []:
                     if p.get_filename():
                         attachments_kept.append({
                             "filename": p.get_filename(),
                             "ctype": p.get_content_type(),
                             "data": p.get_payload(decode=True) or b"",
+                            "size": len(p.get_payload(decode=True) or b""),
                         })
+        elif mode == "edit":  # edit as new: keep everything verbatim
+            prefill["to"] = _decode_header(source_msg.get("To", "")) or ""
+            prefill["cc"] = _decode_header(source_msg.get("Cc", "")) or ""
+            prefill["subject"] = _decode_header(source_msg.get("Subject", "")) or ""
+            prefill["body"] = _quote(source_msg, header=False)
+            for p in source_msg.walk() if source_msg.is_multipart() else []:
+                if p.get_filename():
+                    attachments_kept.append({
+                        "filename": p.get_filename(),
+                        "ctype": p.get_content_type(),
+                        "data": p.get_payload(decode=True) or b"",
+                        "size": len(p.get_payload(decode=True) or b""),
+                    })
+        else:  # draft / compose-from-message
+            prefill["to"] = _decode_header(source_msg.get("To", "")) or ""
+            prefill["cc"] = _decode_header(source_msg.get("Cc", "")) or ""
+            prefill["subject"] = _decode_header(source_msg.get("Subject", "")) or ""
+            prefill["body"] = _quote(source_msg, header=False)
+            for p in source_msg.walk() if source_msg.is_multipart() else []:
+                if p.get_filename():
+                    attachments_kept.append({
+                        "filename": p.get_filename(),
+                        "ctype": p.get_content_type(),
+                        "data": p.get_payload(decode=True) or b"",
+                        "size": len(p.get_payload(decode=True) or b""),
+                    })
 
     if request.method == "POST":
         ident_id = request.form.get("_ident")
@@ -434,6 +510,8 @@ def compose():
         files = request.files.getlist("_file")
         attachments = [(f.filename, f.mimetype, f.read()) for f in files if f.filename]
         attachments += [(a["filename"], a["ctype"], a["data"]) for a in attachments_kept]
+        if attach_original:
+            attachments.append((attach_original[0], "message/rfc822", attach_original[1]))
 
         msg = build_message(
             ident["email"], ident["name"], to, cc, bcc, subject, body, html=html,
@@ -441,20 +519,22 @@ def compose():
             in_reply_to=request.form.get("_in_reply_to") or None,
             references=request.form.get("_references") or None,
             reply_to=request.form.get("_reply_to") or None,
+            followup_to=request.form.get("_followupto") or None,
+            priority=request.form.get("_priority") or None,
+            mdn=bool(request.form.get("_mdn")),
         )
-        raw = msg.as_bytes()
         act = request.form.get("_action", "send")
         try:
             if act == "save":
-                box.save_draft(raw, replace_uid=int(draft_uid) if draft_uid else None)
+                # the draft keeps its Bcc header
+                box.save_draft(msg.as_bytes(), replace_uid=int(draft_uid) if draft_uid else None)
                 flash("Draft saved.", "confirmation")
                 return redirect(url_for("views.mail", _mbox=box.special("drafts") or "Drafts"))
-            allrec = to + cc + bcc
-            plain = msg
-            if not html:
-                plain = msg
-            # smtplib needs the combined recipient list
-            box.send(msg, raw)
+            # smtplib needs the combined recipient list (incl. Bcc); the
+            # transmitted header block and the Sent copy must not carry Bcc
+            box.send(msg, msg.as_bytes())
+            if draft_uid:
+                box.delete_draft(draft_uid)
             flash("Message sent successfully.", "confirmation")
             return redirect(url_for("views.mail", _mbox=box.special("sent") or "INBOX"))
         except MailError as e:

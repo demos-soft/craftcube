@@ -565,15 +565,29 @@ class Mailbox:
         except MailError:
             pass
         if replace_uid:
-            self.imap.select(drafts)
-            self.imap.set_flags([replace_uid], ["\\Deleted"], mode="add")
-            self.imap.expunge()
+            self.delete_draft(replace_uid)
         self.imap.append(drafts, raw_bytes, ["\\Draft", "\\Seen"])
+
+    def delete_draft(self, uid):
+        drafts = self.special("drafts") or "Drafts"
+        try:
+            self.imap.select(drafts)
+            self.imap.set_flags([int(uid)], ["\\Deleted"], mode="add")
+            self.imap.expunge()
+        except (MailError, ValueError, TypeError):
+            pass
 
     def send(self, msg: EmailMessage, raw_bytes):
         cfg = self
         smtp_user = getattr(self, "smtp_user", None)
         smtp_pass = getattr(self, "smtp_pass", None)
+        # envelope recipients include Bcc; the header itself must not be
+        # transmitted to the other recipients (RFC 5322 §5)
+        rcpts = []
+        for h in ("To", "Cc", "Bcc"):
+            rcpts += [a for _d, a in email.utils.getaddresses([msg.get(h, "") or ""]) if a]
+        if "Bcc" in msg:
+            del msg["Bcc"]
         try:
             if cfg.conf("SMTP_SSL"):
                 s = smtplib.SMTP_SSL(cfg.conf("SMTP_HOST"), cfg.conf("SMTP_PORT"), timeout=30)
@@ -588,7 +602,7 @@ class Mailbox:
                     s.login(smtp_user, smtp_pass)
                 except smtplib.SMTPException:
                     pass  # relay without auth (mailpit)
-            s.send_message(msg)
+            s.sendmail(msg.get("From", smtp_user or ""), rcpts, msg.as_string())
             s.quit()
         except (smtplib.SMTPException, OSError) as e:
             raise MailError(str(e))
@@ -602,7 +616,8 @@ class Mailbox:
 
 
 def build_message(from_addr, from_name, to, cc, bcc, subject, body, html=False,
-                  attachments=None, in_reply_to=None, references=None, reply_to=None):
+                  attachments=None, in_reply_to=None, references=None, reply_to=None,
+                  priority=None, mdn=False, followup_to=None):
     """Compose an RFC2822 message. attachments: [(filename, ctype, bytes)]."""
     msg = EmailMessage()
     frm = format_address(from_name, from_addr) if from_name else from_addr
@@ -611,6 +626,8 @@ def build_message(from_addr, from_name, to, cc, bcc, subject, body, html=False,
         msg["To"] = ", ".join(to)
     if cc:
         msg["Cc"] = ", ".join(cc)
+    if bcc:
+        msg["Bcc"] = ", ".join(bcc)
     if subject:
         msg["Subject"] = subject
     msg["Date"] = email.utils.formatdate(localtime=True)
@@ -621,18 +638,22 @@ def build_message(from_addr, from_name, to, cc, bcc, subject, body, html=False,
         msg["References"] = references
     if reply_to:
         msg["Reply-To"] = reply_to
+    if followup_to:
+        msg["Followup-To"] = followup_to
+    if priority and priority != "3":
+        msg["X-Priority"] = priority
+        msg["Importance"] = {"1": "highest", "2": "high", "4": "low", "5": "lowest"}.get(priority, "normal")
+    if mdn:
+        msg["Disposition-Notification-To"] = frm
 
     if attachments:
-        outer = MIMEMultipart("mixed")
-        for k, v in msg.items():
-            outer[k] = v
-        alt = MIMEMultipart("alternative")
-        alt.attach(MIMEText(body, "html" if html else "plain", "utf-8"))
-        outer.attach(alt)
+        # EmailMessage builds multipart/mixed with the body part itself
+        msg.set_content(body or "", subtype="html" if html else "plain")
         for fname, ctype, data in attachments:
             maintype, _, subtype = (ctype or "application/octet-stream").partition("/")
-            outer.add_attachment(data, maintype=maintype, subtype=subtype or "octet-stream", filename=fname)
-        return outer
+            msg.add_attachment(data, maintype=maintype or "application",
+                               subtype=subtype or "octet-stream", filename=fname)
+        return msg
     if html:
         msg.set_content(body or "", subtype="html", cte="quoted-printable")
     else:
