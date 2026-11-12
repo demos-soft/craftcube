@@ -83,7 +83,8 @@ The first login of an unknown user auto-creates the user row (Roundcube-style
       util.py      dates, sizes, header parsing, HTML sanitizer
       templates/   Jinja2 clones of the Elastic templates
       static/      Elastic styles.css + fonts + CraftCube logo + craftcube.js
-    docker/        Dockerfiles, dovecot config, docker-compose.yml
+    craftcube/Containerfile  production image (gunicorn on :8000)
+    docker/        dovecot config, docker-compose.yml (app + IMAP + SMTP stack)
 
 ## Not (yet) reverse-engineered
 
