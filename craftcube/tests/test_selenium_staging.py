@@ -560,3 +560,69 @@ def test_folder_selector_matches_reference(driver):
     )
     html = driver.execute_script("return document.getElementById('folder-selector').outerHTML;")
     assert "Move to folder" not in html and "Copy to folder" not in html
+
+
+def test_move_to_nested_subfolder_ui(driver):
+    # user-reported gap: Move to... -> nested subfolder must move the message
+    # through the reference folder-selector, not the old exclusion menu.
+    _open_list(driver)
+    _uid, subject = driver.execute_script("""
+      var tr=document.querySelectorAll('#messagelist tbody tr.message')[0];
+      tr.querySelector('input[type=checkbox]').click();
+      return [tr.getAttribute('data-uid'),
+              tr.querySelector('.subject a span').textContent.trim()];""")
+    driver.execute_script("""
+      document.getElementById('messagemenulink').click();
+      document.getElementById('tb-move').click();""")
+    _wait_until(
+        driver,
+        lambda d: d.execute_script("return !!document.querySelector('#folder-selector a[data-dest=\"INBOX/Drafts\"]')"),
+    )
+    driver.execute_script("""
+      document.querySelector('#folder-selector a[data-dest="INBOX/Drafts"]').click();""")
+    _wait_until(
+        driver,
+        lambda d: any(
+            s.text == "Message(s) moved successfully."
+            for s in d.find_elements(By.CSS_SELECTOR, "#messagestack div span")
+        ),
+    )
+
+    driver.get(CC + "/mail?_mbox=INBOX%2FDrafts")
+    _wait_until(
+        driver,
+        lambda d: d.execute_script(
+            "return [...document.querySelectorAll('#messagelist tbody tr.message')]"
+            ".some(r => r.querySelector('.subject a span').textContent.trim() == arguments[0])",
+            subject,
+        ),
+    )
+    new_uid = driver.execute_script(
+        """
+      var tr=[...document.querySelectorAll('#messagelist tbody tr.message')]
+        .find(r => r.querySelector('.subject a span').textContent.trim() == arguments[0]);
+      return tr.getAttribute('data-uid');""",
+        subject,
+    )
+    assert new_uid, "moved message not found in INBOX/Drafts"
+
+    # cleanup: move the new copy back to INBOX
+    driver.execute_script(
+        """
+      var fd = new URLSearchParams({_act: 'move', _mbox: 'INBOX/Drafts', _dest: 'INBOX'});
+      fd.append('_uids[]', arguments[0]);
+      var req = new XMLHttpRequest();
+      req.open('POST', '/mail/act', false);
+      req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      req.send(fd.toString());""",
+        new_uid,
+    )
+    driver.get(CC + "/mail?_mbox=INBOX")
+    _wait_until(
+        driver,
+        lambda d: d.execute_script(
+            "return [...document.querySelectorAll('#messagelist tbody tr.message')]"
+            ".some(r => r.querySelector('.subject a span').textContent.trim() == arguments[0])",
+            subject,
+        ),
+    )
