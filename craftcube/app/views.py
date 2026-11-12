@@ -468,7 +468,8 @@ def compose():
     folders = folders_for_menu()
 
     prefill = {"to": "", "cc": "", "bcc": "", "subject": "", "body": "", "html": "",
-               "in_reply_to": "", "references": ""}
+               "in_reply_to": "", "references": "", "reply_to": "", "followup_to": "",
+               "priority": "3", "mdn": False, "dsn": False}
     attachments_kept = []
     attach_original = None   # (filename, bytes) for forward-as-attachment
     source_msg = None
@@ -624,13 +625,18 @@ def compose():
             if draft_uid:
                 box.delete_draft(draft_uid)
             flash("Message sent successfully.", "confirmation")
+            sent = request.form.get("_store_target")
+            if sent == "":  # "do not save"
+                return redirect(url_for("views.mail", _mbox="INBOX"))
             return redirect(url_for("views.mail", _mbox=box.special("sent") or "INBOX"))
         except MailError as e:
             flash(str(e), "error")
             prefill.update(to=", ".join(to), cc=", ".join(cc), bcc=", ".join(bcc),
                            subject=subject, body=body, html="1" if html else "")
     return render("mail", "compose.html", prefill=prefill, identities=identities,
-                  folders=folders)
+                  folders=folders, mode=mode, uid_of=uid_of,
+                  draft_uid=draft_uid, attachments_kept=attachments_kept,
+                  keep_formatting=(mode == "edit"))
 
 
 # ---------------------------------------------------------------- addressbook

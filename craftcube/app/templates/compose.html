@@ -16,16 +16,38 @@
             <input type="file" name="_file" id="compose-file" multiple style="display:none">
             <button type="button" class="btn btn-secondary attach" onclick="document.getElementById('compose-file').click()">Add attachment</button>
           </div>
-          <ul class="attachmentslist" id="attachment-list"></ul>
+          <ul class="attachmentslist" id="attachment-list">
+            {% for a in attachments_kept %}
+            <li class="attachment-input"><span class="filename">{{ a.filename }}</span><span class="size">{{ a.size|size }}</span></li>
+            {% endfor %}
+          </ul>
           <div class="hint">Drop files here or click the button to attach.</div>
         </div>
         <div id="compose-options" class="formcontent" role="region">
           <h2 class="voice">Compose options</h2>
+          <ul class="proplist">
+            <li><label><input type="checkbox" name="_mdn" value="1"{{ ' checked' if prefill.mdn }}> Return receipt</label></li>
+            <li><label><input type="checkbox" name="_dsn" value="1"{{ ' checked' if prefill.dsn }}> Delivery status notification</label></li>
+            <li><label><input type="checkbox" name="_keepformatting" value="1"{{ ' checked' if keep_formatting }}> Keep formatting</label></li>
+          </ul>
+          <div class="form-group row">
+            <label for="compose-priority" class="col-form-label col-6">Priority</label>
+            <div class="col-6">
+              <select id="compose-priority" name="_priority" class="custom-select">
+                <option value="1"{{ ' selected' if prefill.priority == '1' }}>Highest</option>
+                <option value="2"{{ ' selected' if prefill.priority == '2' }}>High</option>
+                <option value="3"{{ ' selected' if prefill.priority in ('3', '', none) }}>Normal</option>
+                <option value="4"{{ ' selected' if prefill.priority == '4' }}>Low</option>
+                <option value="5"{{ ' selected' if prefill.priority == '5' }}>Lowest</option>
+              </select>
+            </div>
+          </div>
           <div class="form-group row">
             <label for="compose-store-target" class="col-form-label col-6">Save sent message in</label>
             <div class="col-6">
-              <select id="compose-store-target" class="custom-select" disabled>
-                <option>Sent</option>
+              <select id="compose-store-target" name="_store_target" class="custom-select">
+                <option value="sent">Sent</option>
+                <option value="">Do not save</option>
               </select>
             </div>
           </div>
@@ -55,7 +77,7 @@
         <form id="composeform" method="post" enctype="multipart/form-data" class="formcontent scroller" action="">
           <input type="hidden" name="_uid" value="{{ uid_of or '' }}">
           <input type="hidden" name="_mode" value="{{ mode or '' }}">
-          <input type="hidden" name="_draft" value="{{ request.values.get('_draft') or '' }}">
+          <input type="hidden" name="_draft" value="{{ draft_uid or '' }}">
           <input type="hidden" name="_mbox" value="{{ request.values.get('_mbox') or '' }}">
           <input type="hidden" name="_format" id="composeformat" value="{{ 'html' if prefill.html else 'plain' }}">
           <input type="hidden" name="_in_reply_to" value="{{ prefill.in_reply_to }}">
@@ -74,19 +96,27 @@
               </tr>
               <tr class="to">
                 <td class="title"><label for="rcpTo">To</label></td>
-                <td class="field"><input type="text" name="_to" id="rcpTo" value="{{ prefill.to }}" class="form-control" tabindex="1" required></td>
+                <td class="field"><textarea name="_to" id="rcpTo" class="form-control" tabindex="1" required>{{ prefill.to }}</textarea></td>
               </tr>
               <tr class="cc">
                 <td class="title"><label for="rcpCc">Cc</label></td>
-                <td class="field"><input type="text" name="_cc" id="rcpCc" value="{{ prefill.cc }}" class="form-control" tabindex="2"></td>
+                <td class="field"><textarea name="_cc" id="rcpCc" class="form-control" tabindex="2">{{ prefill.cc }}</textarea></td>
               </tr>
               <tr class="bcc">
                 <td class="title"><label for="rcpBcc">Bcc</label></td>
-                <td class="field"><input type="text" name="_bcc" id="rcpBcc" value="{{ prefill.bcc }}" class="form-control" tabindex="3"></td>
+                <td class="field"><textarea name="_bcc" id="rcpBcc" class="form-control" tabindex="3">{{ prefill.bcc }}</textarea></td>
+              </tr>
+              <tr class="replyto{{ ' hidden' if not prefill.reply_to }}">
+                <td class="title"><label for="rcpReplyto">Reply-To</label></td>
+                <td class="field"><input type="text" name="_reply_to" id="rcpReplyto" value="{{ prefill.reply_to }}" class="form-control" tabindex="4"></td>
+              </tr>
+              <tr class="followupto{{ ' hidden' if not prefill.followup_to }}">
+                <td class="title"><label for="rcpFollowupto">Followup-To</label></td>
+                <td class="field"><input type="text" name="_followupto" id="rcpFollowupto" value="{{ prefill.followup_to }}" class="form-control" tabindex="5"></td>
               </tr>
               <tr class="subject">
                 <td class="title"><label for="rcpSubject">Subject</label></td>
-                <td class="field"><input type="text" name="_subject" id="rcpSubject" value="{{ prefill.subject }}" class="form-control" tabindex="4"></td>
+                <td class="field"><input type="text" name="_subject" id="rcpSubject" value="{{ prefill.subject }}" class="form-control" tabindex="6"></td>
               </tr>
               <tr class="message">
                 <td class="title" style="vertical-align:top"><label for="composebody">Message</label></td>
@@ -95,14 +125,14 @@
                     <div class="editor-toolbar">
                       <a href="#" class="mce-i-html icon" id="format-toggle" title="Toggle HTML/Plain text"></a>
                     </div>
-                    <textarea name="_body" id="composebody" class="form-control" rows="16" tabindex="5">{{ prefill.body }}</textarea>
+                    <textarea name="_body" id="composebody" class="form-control" rows="16" tabindex="7">{{ prefill.body }}</textarea>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
           <div class="formbuttons">
-            <button type="submit" name="_action" value="send" class="btn btn-primary icon send" id="sendbtn" tabindex="6">Send</button>
+            <button type="submit" name="_action" value="send" class="btn btn-primary icon send" id="sendbtn" tabindex="8">Send</button>
           </div>
         </form>
       </div>
@@ -120,4 +150,18 @@
       ul.appendChild(li);
     }
   });
+  // drag & drop onto the attachments pane
+  var drop = document.getElementById('compose-attachments');
+  if (drop) {
+    ['dragover', 'drop'].forEach(function (ev) {
+      drop.addEventListener(ev, function (e) {
+        e.preventDefault();
+        if (ev === 'drop') {
+          var inp = document.getElementById('compose-file');
+          inp.files = e.dataTransfer.files;
+          inp.dispatchEvent(new Event('change'));
+        }
+      });
+    });
+  }
 </script>
