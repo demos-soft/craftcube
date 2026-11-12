@@ -464,34 +464,71 @@ def message_export():
 @bp.post("/message/import")
 @login_required
 def message_import():
-    """Import messages into a folder (Elastic 'Import' — MIME or Mbox upload)."""
+    """Import messages into a folder (Elastic 'Import' uploadform).
+
+    Mirrors rcmail_action_mail_import::run(): accepts multiple `_file[]`
+    uploads, detects MIME/mbox by content (zip archives are unpacked first),
+    appends each message to the folder via IMAP.
+    """
+    import mailbox as _mb
+    import os as _os
+    import re as _re
+    import tempfile
+    import zipfile
+
     box = imap_box()
     folder = request.form.get("_mbox") or "INBOX"
-    f = request.files.get("_file")
-    if not f or not f.filename:
-        flash("No file uploaded.", "error")
-        return redirect(url_for("views.mail", _mbox=folder))
-    data = f.read()
-    fmt = request.form.get("_format") or "MIME"
-    count = 0
-    try:
-        if fmt == "Mbox":
-            import mailbox as _mb
-            import tempfile
+    files = request.files.getlist("_file[]") or request.files.getlist("_file")
+    files = [f for f in files if f and f.filename]
+
+    def _import_one(data):
+        """Return number of messages imported from one blob."""
+        head = data[:500].decode("utf-8", "replace")
+        first = next((ln for ln in head.splitlines() if ln.strip()), "")
+        if first.startswith("From "):
             with tempfile.NamedTemporaryFile(suffix=".mbox", delete=False) as tf:
                 tf.write(data)
                 tname = tf.name
-            for msg in _mb.mbox(tname):
-                box.imap.append(folder, msg.as_bytes())
-                count += 1
-            import os as _os
-            _os.unlink(tname)
-        else:
+            n = 0
+            try:
+                for msg in _mb.mbox(tname):
+                    box.imap.append(folder, msg.as_bytes())
+                    n += 1
+            finally:
+                _os.unlink(tname)
+            return n
+        if _re.match(r"^[a-z_-]+:\s+.+", first, _re.IGNORECASE):
             box.imap.append(folder, data)
-            count = 1
-        flash(f"{count} message(s) imported.", "confirmation")
+            return 1
+        return 0
+
+    count = 0
+    max_size = 5 * 1024 * 1024  # matches the uploadform hint (PHP upload_max_filesize)
+    try:
+        for f in files:
+            data = f.read()
+            if len(data) > max_size:
+                flash("The uploaded file exceeds the maximum size of 5 MB.", "error")
+                return redirect(url_for("views.mail", _mbox=folder))
+            low = f.filename.lower()
+            if low.endswith(".zip") or f.mimetype in ("application/zip", "application/x-zip"):
+                try:
+                    import io
+                    with zipfile.ZipFile(io.BytesIO(data)) as z:
+                        for name in z.namelist():
+                            if name.endswith("/"):
+                                continue
+                            count += _import_one(z.read(name))
+                except zipfile.BadZipFile:
+                    pass
+            else:
+                count += _import_one(data)
+        if count:
+            flash(f"Successfully imported {count} messages", "confirmation")
+        else:
+            flash("Import failed! The uploaded file is not a valid message or mailbox file", "error")
     except Exception as e:  # noqa: BLE001
-        flash(f"Import failed: {e}", "error")
+        flash(f"Import failed! The uploaded file is not a valid message or mailbox file ({e})", "error")
     return redirect(url_for("views.mail", _mbox=folder))
 
 

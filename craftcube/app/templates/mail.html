@@ -324,25 +324,17 @@
 
     <!-- message import (Elastic uploadform) -->
     <div id="uploadform" class="popupmenu formcontent">
-      <form method="post" action="{{ url_for('views.message_import') }}" enctype="multipart/form-data">
+      <form id="uploadformFrm" name="importform" method="post" action="{{ url_for('views.message_import') }}" enctype="multipart/form-data">
         <input type="hidden" name="_mbox" value="{{ folder }}">
-        <div class="form-group">
-          <div class="custom-control custom-radio">
-            <input type="radio" id="import-mime" name="_format" value="MIME" class="custom-control-input" checked>
-            <label class="custom-control-label" for="import-mime">MIME</label>
+        <div>
+          <p>You can upload mail using files in <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> or
+            <a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a> format. Multiple files can be compressed into zip archives.</p>
+          <div class="custom-file">
+            <input type="file" multiple name="_file[]" accept=".eml,.mbox,.msg,message/rfc822,text/*.zip,application/zip,application/x-zip"
+                   id="uploadformInput" class="form-control custom-file-input local-upload">
+            <label class="custom-file-label" data-browse="Browse">Choose files...</label>
           </div>
-          <div class="custom-control custom-radio">
-            <input type="radio" id="import-mbox" name="_format" value="Mbox" class="custom-control-input">
-            <label class="custom-control-label" for="import-mbox">Mbox</label>
-          </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text btn btn-primary icon upload">
-              <span class="inner">Choose files...</span>
-              <input type="file" name="_file" class="local-upload">
-            </span>
-          </div>
+          <div class="hint">Maximum allowed file size is 5.0 MB</div>
         </div>
       </form>
     </div>
