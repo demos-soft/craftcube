@@ -917,11 +917,22 @@
       }
       var tr = e.target.closest('tr.message');
       if (!tr) return;
+      // a click on the selection checkbox is always the checkbox's own
+      // business (reference: rowselection ignores input targets);
+      // preventDefault() in the preview branch below would cancel the
+      // native toggle and the box would never show checked
+      if (e.target.tagName === 'INPUT') { updateToolbar(); return; }
       // selection mode (reference rowselection): a row click toggles the
       // checkbox; the subject link still navigates/previews
       if (list.classList.contains('selection') && !e.target.closest('td.subject span.subject a')) {
         var cb2 = tr.querySelector('td.selection input');
-        if (cb2) { cb2.checked = !cb2.checked; updateToolbar(); }
+        if (cb2) {
+          // reference (elastic ui.js rowselection) ignores row-click toggling
+          // when the click already landed on the checkbox itself: its native
+          // toggle must not be undone, or the box never shows checked
+          if (e.target !== cb2) cb2.checked = !cb2.checked;
+          updateToolbar();
+        }
         return;
       }
       // Elastic: clicking anywhere in a message row focuses it and opens
