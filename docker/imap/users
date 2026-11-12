@@ -1,0 +1,2 @@
+test@example.org:{PLAIN}secret
+postmaster@example.org:{PLAIN}secret

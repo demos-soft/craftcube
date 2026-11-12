@@ -1,0 +1,48 @@
+services:
+  # Webmail app (CraftCube)
+  craftcube:
+    build:
+      context: ../craftcube
+      dockerfile: ../docker/app/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      CRAFTCUBE_DB: /data/craftcube.sqlite
+      CRAFTCUBE_IMAP_HOST: dovecot
+      CRAFTCUBE_IMAP_PORT: "143"
+      CRAFTCUBE_SMTP_HOST: dovecot
+      CRAFTCUBE_SMTP_PORT: "2525"
+    volumes:
+      - craftcube-data:/data
+    depends_on:
+      - dovecot
+      - mailpit
+    restart: unless-stopped
+
+  # IMAP + LMTP server (mailboxes)
+  dovecot:
+    build:
+      context: ./imap
+    ports:
+      - "1143:143"   # IMAP (host port 1143: rootless containers cannot bind 143)
+    volumes:
+      - mail-data:/var/mail
+    restart: unless-stopped
+
+  # SMTP receiver + web UI at :8025; auto-relays accepted mail into the dovecot container
+  mailpit:
+    image: docker.io/axllent/mailpit:latest
+    command: ["--smtp-relay-all"]
+    environment:
+      MP_SMTP_RELAY_HOST: dovecot
+      MP_SMTP_RELAY_PORT: "2525"
+    ports:
+      - "1025:1025"   # SMTP (send test mail here; it lands in test@example.org)
+      - "8025:8025"   # web UI
+    depends_on:
+      - dovecot
+    restart: unless-stopped
+
+volumes:
+  craftcube-data:
+  mail-data:
