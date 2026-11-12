@@ -556,7 +556,30 @@ class Mailbox:
         self.imap.select(folder)
         uids = self.imap.uid_search(["ALL"])
         if uids:
+            self.imap.set_flags(uids, ["\\Deleted"], mode="add")
             self.imap.expunge()
+
+    def mark_all_read(self, folder):
+        self.imap.select(folder)
+        uids = self.imap.uid_search(["UNSEEN"])
+        if uids:
+            self.imap.set_flags(uids, ["\\Seen"], mode="add")
+        return len(uids)
+
+    def quota_usage(self):
+        """Return (used_bytes, quota_kb) or (0, 0) when unsupported."""
+        try:
+            typ, data = self.imap.conn.getquota("ROOT")
+        except Exception:
+            return 0, 0
+        if typ != "OK" or not data or not data[0]:
+            return 0, 0
+        import re
+        s = data[0].decode(errors="replace") if isinstance(data[0], bytes) else str(data[0])
+        m = re.search(r"STORAGE (\d+) (\d+)", s)
+        if not m:
+            return 0, 0
+        return int(m.group(1)) * 1024, int(m.group(2))
 
     def save_draft(self, raw_bytes, replace_uid=None):
         drafts = self.special("drafts") or "Drafts"

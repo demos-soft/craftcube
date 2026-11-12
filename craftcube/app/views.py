@@ -165,7 +165,7 @@ def mail():
     page = int(request.args.get("_page", 1) or 1)
     sort = request.args.get("_sort") or "date"
     order = request.args.get("_sort_order") or "desc"
-    search = request.args.get("_q") or request.args.get("_search") or ""
+    search = request.args.get("_q") or ""
     mods = []
     for m in request.args.getlist("_sm") + (request.args.get("_sm_csv") or "").split(","):
         mods += [x for x in m.split(",") if x]
@@ -182,11 +182,17 @@ def mail():
         flash(str(e), "error")
         listing = {"items": [], "page": 1, "pages": 1, "total": 0, "first": 0, "last": 0, "uids": []}
     uid = request.args.get("_uid")
+    quota_used, quota_kb = (0, 0)
+    try:
+        quota_used, quota_kb = box.quota_usage()
+    except Exception:
+        pass
     return render("mail", "mail.html", folder=folder, listing=listing,
                   sort=sort, order=order, search=search,
                   search_mods=mods, search_filter=sfilter,
                   search_interval=sinterval, search_scope=sscope,
                   searching=searching, preview_uid=uid,
+                  quota_used=quota_used, quota_kb=quota_kb,
                   message_count=listing["total"])
 
 
@@ -301,7 +307,7 @@ def mail_act():
         for b, us in grouped.items():
             _run_mail_action(box, command, b, us)
         return redirect(request.form.get("_return") or url_for("views.mail", _mbox=folder))
-    if uids:
+    if uids or command in ("empty", "markallread"):
         try:
             _run_mail_action(box, command, folder, uids,
                              dest=request.form.get("_dest"))
@@ -328,6 +334,12 @@ def _run_mail_action(box, command, folder, uids, dest=None):
         elif command == "delete":
             box.delete(folder, uids)
             flash(f"{len(uids)} message(s) deleted.", "confirmation")
+        elif command == "empty":
+            box.empty_folder(folder)
+            flash(f"Folder {folder} emptied.", "confirmation")
+        elif command == "markallread":
+            n = box.mark_all_read(folder)
+            flash(f"{n} message(s) marked as read.", "confirmation")
         elif command == "move":
             if dest:
                 box.move(folder, uids, dest)

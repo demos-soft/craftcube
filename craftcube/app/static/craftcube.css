@@ -84,3 +84,107 @@ table.listing thead th.checkbox-cell:before { content: ""; }
 
 /* preview iframe should fill its wrapper */
 .iframe-wrapper iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* ---- CraftCube supplement: behaviors stock CSS delegates to JS ---- */
+
+/* message-list selection mode (toggled by JS via .selection on the table) */
+table.messagelist.selection td.selection { display: table-cell !important; }
+
+/* popup menus (stock uses a popover library; we toggle .open in JS) */
+.popupmenu { display: none; background: #fff; border: 1px solid rgba(0,0,0,.15);
+  border-radius: .3rem; box-shadow: 0 6px 24px rgba(0,0,0,.18); min-width: 16rem;
+  max-height: 80vh; overflow: auto; padding: .3rem 0; }
+.popupmenu.open { display: block; }
+html.dark-mode .popupmenu { background: #22252a; border-color: #3a3e45; color: #d8dae0; }
+.popupmenu ul { list-style: none; margin: 0; padding: 0; }
+.popupmenu li a { display: flex; align-items: center; gap: .5rem;
+  padding: .45rem 1rem; color: inherit; text-decoration: none; white-space: nowrap; }
+.popupmenu li a:hover { background: #eef6fb; }
+html.dark-mode .popupmenu li a:hover { background: #2d3238; }
+.popupmenu li a.disabled { opacity: .4; pointer-events: none; }
+.popupmenu li.separator { border-top: 1px solid rgba(0,0,0,.1); margin: .3rem 0; padding: 0; }
+html.dark-mode .popupmenu li.separator { border-color: #3a3e45; }
+.popupmenu li.label { padding: .2rem 1rem; font-weight: 700; opacity: .7; font-size: .85rem; }
+.popupmenu li.checkbox a::before, .popupmenu li.form-control label::before { display: none !important; content: none !important; }
+.popupmenu li.checkbox a { position: relative; }
+.popupmenu li.checkbox a::after { content: "\2610"; margin-left: auto; padding-left: 1rem; }
+.popupmenu li.checkbox.selected a::after { content: "\2611"; }
+.popupmenu li.form-control { padding: .35rem 1rem; display: flex; gap: .75rem; flex-wrap: wrap; }
+.popupmenu .listingtable { width: 100%; border-collapse: collapse; }
+.popupmenu .listingtable td { padding: .4rem 1rem; vertical-align: middle; }
+.popupmenu .listingtable td:first-child { width: 45%; color: #8a8f98; }
+.popupmenu .listingtable tr td { border-top: 1px solid rgba(0,0,0,.06); }
+
+/* generic hidden (stock skin defines .hidden in a layer we didn't vendor) */
+.hidden { display: none !important; }
+
+/* quota widget: stock styles the box and .value fill; ensure it shows filled */
+.quota-widget .bar { position: relative; display: inline-block; vertical-align: middle;
+  width: 5rem; height: 1rem; border: 1px solid #aab; border-radius: .2rem;
+  overflow: hidden; background: #e9ecef; }
+.quota-widget .bar .value { background-color: #37beff; }
+.quota-widget.limited .bar .value, .quota-widget .bar .value.warning { background-color: #ff5552; }
+
+/* searchbar extras */
+.searchbar a.search { display: inline-flex; }
+.searchbar a.options.active { color: #4db2e5; }
+.searchbar input[type=search] { flex: 1; border: 0; background: transparent; outline: none;
+  color: inherit; padding: 0 .4rem; min-width: 6rem; }
+#searchoptions { margin-top: .4rem; }
+#searchoptions .search-field, #searchoptions .search-filter { display: flex; gap: .5rem;
+  flex-wrap: wrap; margin-bottom: .4rem; align-items: center; }
+#searchoptions .form-control { flex: 1; min-width: 5rem; }
+#searchoptions input[type=text], #searchoptions input[type=date] { border: 1px solid rgba(0,0,0,.2);
+  border-radius: .25rem; background: #fff; color: inherit; padding: .2rem .35rem; }
+html.dark-mode #searchoptions input[type=text], html.dark-mode #searchoptions input[type=date] { background: #22252a; border-color: #3a3e45; }
+
+/* toolbar: popup triggers get a caret, disabled links dim */
+.toolbar a[href^="#"]::after { content: "\25BE"; margin-left: .35em; font-size: .7em; opacity: .7; }
+.toolbar a.disabled, .sidebar-footer a.disabled, #sortablelist a.disabled { pointer-events: none; opacity: .4; }
+
+/* message list: cross-folder search result label */
+.subject-cells .folder-label { color: #8a8f98; font-size: .92em; }
+
+/* message preview frame */
+#messagecontframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* message header details table (shared by page + framed part) */
+#message-header .header-fields .recipients-field { margin-left: auto; text-align: right; }
+#message-header .header-fields .recipients-field .recipients { cursor: pointer; }
+#message-header .header-headers .headers-table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+#message-header .header-headers .headers-table td { padding: .15rem .4rem; vertical-align: top;
+  border-top: 1px solid rgba(0,0,0,.06); word-break: break-word; }
+html.dark-mode #message-header .header-headers .headers-table td { border-color: #33363b; }
+#message-header .header-headers .headers-table td:first-child { width: 8rem; color: #8a8f98; }
+#message-header .remote-notice { padding: .4rem .75rem; background: #fdf6e3;
+  border-bottom: 1px solid rgba(0,0,0,.08); font-size: .92rem; }
+html.dark-mode #message-header .remote-notice { background: #33301e; border-color: #3a3e45; }
+body.iframe { background: #fff; }
+html.dark-mode body.iframe { background: #1c1e21; }
+body.iframe #message-content { padding: .75rem; }
+#attachment-list { list-style: none; margin: 0; padding: 0; }
+#attachment-list li.attachment { border: 1px solid rgba(0,0,0,.1); border-radius: .3rem;
+  padding: .4rem .6rem; margin-bottom: .4rem; font-size: .92rem; }
+html.dark-mode #attachment-list li.attachment { border-color: #3a3e45; }
+#attachment-list li.attachment a { display: flex; align-items: center; gap: .4rem; }
+.iconAttachment:before { content: "\1F4CE"; display: inline-block; margin-right: .35rem; }
+
+/* compose: attachment chips */
+#attachment-list .attachment .filename { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#attachment-list .attachment a.remove { margin-left: .5rem; color: #d9534f; }
+#compose-attachments { flex: 1; min-width: 0; }
+
+/* settings section links */
+#settings-sections ul.verticaltabs.linkslist { list-style: none; margin: 0; padding: 0; }
+#settings-sections ul.verticaltabs.linkslist li a { display: block; padding: .6rem 1.25rem;
+  border-bottom: 1px solid rgba(0,0,0,.05); color: inherit; text-decoration: none; }
+html.dark-mode #settings-sections ul.verticaltabs.linkslist li a { border-color: #33363b; }
+#settings-sections ul.verticaltabs.linkslist li a:hover { background: #eef6fb; }
+html.dark-mode #settings-sections ul.verticaltabs.linkslist li a:hover { background: #2a2e34; }
+
+/* pagenav: our anchor rendering must sit inline like the stock spans */
+.pagenav a.firstpage, .pagenav a.prevpage, .pagenav a.nextpage, .pagenav a.lastpage {
+  display: inline-block; text-decoration: none; padding: 0 .3rem; }
+.pagenav .pagejumper { display: inline-flex; align-items: center; }
+.pagenav input.pagesize { width: 3rem; text-align: center; }
+.pagenav .pagenav-label { margin-left: .5em; }

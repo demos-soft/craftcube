@@ -24,6 +24,19 @@ def fmt_date(dt):
         return dt.strftime("%d %b")
     return dt.strftime("%d.%m.%y")
 
+def fmt_list_date(dt):
+    """Elastic message-list date: 'Fri 22:45' inside the current week,
+    '23 Sep' this year, '23.10.25' older."""
+    if dt is None:
+        return ""
+    dt = to_local(dt)
+    now = datetime.now().astimezone()
+    if (now - dt).days < 7 and dt.isocalendar()[:2] == now.isocalendar()[:2]:
+        return dt.strftime("%a %H:%M")
+    if dt.year == now.year:
+        return dt.strftime("%d %b")
+    return dt.strftime("%d.%m.%y")
+
 def fmt_datetime(dt):
     if dt is None:
         return ""
@@ -124,6 +137,19 @@ def sanitize_html(raw):
     s = _Sanitizer()
     s.feed(raw or "")
     return "".join(s.out)
+
+# ---------------------------------------------------------------- remote content
+
+_REMOTE_SRC_RE = re.compile(r'\b(?:src|poster|background)\s*=\s*["\']https?://[^"\']*', re.I)
+_KILL_REMOTE_RE = re.compile(r'\b(src|poster|background)\s*=\s*(["\'])https?://[^"\']*\2', re.I)
+
+def contains_remote_content(safe_html):
+    """True when sanitized markup would load resources from a remote server."""
+    return bool(_REMOTE_SRC_RE.search(safe_html or ""))
+
+def block_remote_content(safe_html):
+    """Drop remote src/poster/background attributes (Elastic privacy blocking)."""
+    return _KILL_REMOTE_RE.sub("", safe_html or "")
 
 # ---------------------------------------------------------------- misc
 

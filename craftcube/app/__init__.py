@@ -28,6 +28,10 @@ def create_app(config_overrides=None):
     def _rcdate(dt):
         return util.fmt_date(dt)
 
+    @app.template_filter("listdate")
+    def _listdate(dt):
+        return util.fmt_list_date(dt)
+
     @app.template_filter("datetime")
     def _datetime(dt):
         return util.fmt_datetime(dt)
