@@ -161,8 +161,9 @@ def sections(prefs, folders):
                 _cb("reply_same_folder", "Place replies in the folder of the message being replied to", p),
                 _sel("reply_mode", "When replying", p),
                 _sel("forward_attachment", "Messages forwarding", p),
-                _sel("default_font", "Default font of HTML message", p),
-                _sel("default_font_size", "Default font size", p),
+                {"type": "fontgroup", "title": "Default font of HTML message",
+                 "fields": [_sel("default_font", "Default font of HTML message", p),
+                            _sel("default_font_size", "Default font size", p)]},
                 _sel("reply_all_mode", "Default action of [Reply all] button", p),
             ]),
             ("sig", "Signature Options", [
@@ -241,7 +242,10 @@ def section_field_names(section):
     names = []
     for _cls, _leg, fields in spec.get(section, {"blocks": []})["blocks"]:
         for f in fields:
-            names.append(f["name"])
+            if f["type"] == "fontgroup":
+                names.extend(sub["name"] for sub in f["fields"])
+            else:
+                names.append(f["name"])
     return [n for n in names if n]
 
 

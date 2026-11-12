@@ -35,6 +35,22 @@
             <td colspan="2" style="width: 100%;"><a href="#" id="mailtoprotohandler">{{ f.title }}</a><span
                 class="mailtoprotohandler-status"></span></td>
           </tr>
+          {% elif f.type == 'fontgroup' %}
+          {# index.php: one label + input-group holding both selects #}
+          <tr class="form-group row">
+            <td class="title col-sm-6"><label for="{{ f.fields[0].id }}" class="col-form-label">{{ f.title }}</label></td>
+            <td class="col-sm-6">
+              <div class="input-group">
+                {% for s in f.fields %}
+                <select name="{{ s.name }}" id="{{ s.id }}" class="custom-select form-control pretty-select">
+                  {% for v, l in s.options %}
+                  <option value="{{ v }}"{{ ' selected' if v == s.value }}>{{ l }}</option>
+                  {% endfor %}
+                </select>
+                {% endfor %}
+              </div>
+            </td>
+          </tr>
           {% elif f.type == 'checkbox' %}
           <tr class="form-group row form-check">
             <td class="title col-sm-6"><label for="{{ f.id }}" class="col-form-label">{{ f.title }}</label></td>
