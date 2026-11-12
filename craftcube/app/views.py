@@ -1996,11 +1996,14 @@ def contact_view(cid):
                  if cid in [m["contact_id"] for m in store.contactgroup_members(g["contactgroup_id"])]]
     framed = request.args.get("_framed") == "1"
     has_photo = store.contact_photo(session["user_id"], cid) is not None
+    ext = util.vcard_parse(row["vcard"]) if row["vcard"] else util.vcard_parse("")
+    _order_group_rows(ext)  # show page uses the same subtype row ordering
     if framed:
-        return render_template("contact_framed.html", row=row, groups=groups, member_of=member_of,
-                               has_photo=has_photo, task="addressbook")
-    return render("addressbook", "contact.html", row=row, groups=groups, member_of=member_of,
-                  has_photo=has_photo)
+        return render_template("contact_framed.html", row=row, groups=groups,
+                               member_of=member_of, has_photo=has_photo, ext=ext,
+                               task="addressbook")
+    return render("addressbook", "contact.html", row=row, groups=groups,
+                  member_of=member_of, has_photo=has_photo, ext=ext)
 
 
 @bp.get("/contact/<int:cid>/photo")
@@ -2022,6 +2025,67 @@ def contact_photo(cid):
     return Response(data, mimetype=mime)
 
 
+def _compose_display_name(ext, full_email=False):
+    """rcube_addressbook::compose_display_name(): join prefix, firstname,
+    middlename, surname, suffix; when that is empty (or equals the address)
+    derive the name from the primary email — full address with
+    $full_email, else the local part split on ./-/_ and capitalized."""
+    fn = " ".join(p for p in (ext.get(k) for k in
+                   # array_intersect_key() preserves the record key order,
+                   # which is CONTACT_COLTYPES order: firstname, surname come
+                   # before middlename/prefix/suffix (verified against a live
+                   # RC save: "Grace Hopper Murray Right RADM")
+                   ("firstname", "surname", "middlename", "prefix", "suffix")) if p)
+    fn = " ".join(fn.split())
+    emails = [v for _t, v in (ext.get("emails") or []) if v]
+    email0 = emails[0] if emails else ""
+    if email0 and (not fn or fn == email0):
+        if full_email:
+            return email0
+        local = email0.split("@", 1)[0]
+        m = re.search(r"(.*)[.\-_](.*)", local)
+        if m:
+            fn = " ".join(_php_ucfirst(x) for x in m.groups()).strip()
+        else:
+            fn = _php_ucfirst(local)
+    return fn
+
+
+def _php_ucfirst(s):
+    return s[:1].upper() + s[1:] if s else s
+
+
+def _contact_head_props(ext):
+    """elastic render_contact_form() head section: the display name is
+    'unset' (row hidden, listed under the rel=head Add-field menu) when it
+    equals the composed name (compose_display_name with name forced empty,
+    full_email=false)."""
+    dname = _compose_display_name({**ext, "name": ""}, full_email=False)
+    ext["name_explicit"] = bool(ext.get("name")) and ext["name"] != dname
+    _order_group_rows(ext)
+
+
+# rcmail_action_contacts_index::contact_field_values(): group rows are
+# emitted iterating the coltype's subtype list first, then any values with
+# subtypes outside the list in record order (stable).
+RC_SUBTYPE_ORDER = {
+    "emails": ["home", "work", "other"],
+    "phones": ["home", "home2", "work", "work2", "mobile", "main",
+               "homefax", "workfax", "car", "pager", "video", "assistant",
+               "other"],
+    "addresses": ["home", "work", "other"],
+    "websites": ["homepage", "work", "blog", "profile", "other"],
+    "im": ["aim", "icq", "msn", "yahoo", "jabber", "skype"],
+}
+
+
+def _order_group_rows(ext):
+    for key, order in RC_SUBTYPE_ORDER.items():
+        rows = ext.get(key) or []
+        ext[key] = sorted(rows, key=lambda r, o=order:
+                          o.index(r[0]) if r[0] in o else len(o))
+
+
 @bp.route("/contact/edit/<int:cid>", methods=["GET", "POST"])
 @bp.route("/contact/new", defaults={"cid": None}, methods=["GET", "POST"])
 @login_required
@@ -2032,53 +2096,88 @@ def contact_edit(cid):
         abort(404)
     if request.method == "POST":
         form = request.form
-        def pairs(prefix):
-            vals = form.getlist(f"_{prefix}_value[]")
-            types = form.getlist(f"_{prefix}_type[]")
+        # rcmail.command('upload-photo') equivalent: the hidden
+        # #upload-formFrm posts only _upload/_cid/_photo (elastic
+        # image_upload_input); record fields stay untouched
+        if form.get("_upload") == "1":
+            up = request.files.get("_photo")
+            if up and up.filename and cid and row is not None:
+                data = {k: row[k] for k in
+                        ("name", "email", "firstname", "surname", "vcard", "words")}
+                store.contact_save(session["user_id"], data, contact_id=cid,
+                                   photo=up.read())
+                flash(i18n.gettext("successfullysaved", g.lang, domain="messages"),
+                      "confirmation")
+            if cid:
+                return redirect(url_for("views.contact_edit", cid=cid,
+                                        _framed=_framed_arg()))
+            return redirect(url_for("views.contact_edit", _framed=_framed_arg()))
+        # reference contract (contacts/save.php + elastic contact form):
+        # _firstname/_surname/... _subtype_email[]+_email[],
+        # _subtype_phone[]+_phone[], _subtype_address[]+_street[]/_locality[]/
+        # _zipcode[]/_region[]/_country[], _subtype_website[]+_website[],
+        # _subtype_im[]+_im[], _gender/_birthday/_notes plus single-valued
+        # _maidenname/_anniversary/_assistant/_manager/_spouse. Legacy names
+        # (no underscore / _email_value[] etc.) remain accepted.
+        def fv(key, legacy=None, default=""):
+            if key in form:
+                return form.get(key) or default
+            if legacy and legacy in form:
+                return form.get(legacy) or default
+            return default
+        def pairs(legacy_prefix, key, legacy_type=None):
+            vals = form.getlist(key) or form.getlist(legacy_prefix)
+            tk = legacy_type or (legacy_prefix.replace("_value", "_type"))
+            types = form.getlist(tk)
             return [(types[i] if i < len(types) else "", v.strip())
-                    for i, v in enumerate(vals) if v.strip()]
+                    for i, v in enumerate(vals) if v and v.strip()]
         ext = {
-            "prefix": form.get("prefix", "").strip(),
-            "firstname": form.get("firstname", "").strip(),
-            "middlename": form.get("middlename", "").strip(),
-            "surname": form.get("surname", "").strip(),
-            "suffix": form.get("suffix", "").strip(),
-            "nickname": form.get("nickname", "").strip(),
-            "organization": form.get("organization", "").strip(),
-            "department": form.get("department", "").strip(),
-            "jobtitle": form.get("jobtitle", "").strip(),
-            "gender": form.get("gender", "").strip(),
-            "birthday": form.get("birthday", "").strip(),
-            "notes": form.get("notes", "").strip(),
-            "emails": pairs("email"),
-            "phones": pairs("phone"),
+            "prefix": fv("_prefix", "prefix").strip(),
+            "firstname": fv("_firstname", "firstname").strip(),
+            "middlename": fv("_middlename", "middlename").strip(),
+            "surname": fv("_surname", "surname").strip(),
+            "suffix": fv("_suffix", "suffix").strip(),
+            "nickname": fv("_nickname", "nickname").strip(),
+            "organization": fv("_organization", "organization").strip(),
+            "department": fv("_department", "department").strip(),
+            "jobtitle": fv("_jobtitle", "jobtitle").strip(),
+            "gender": fv("_gender", "gender").strip(),
+            "birthday": fv("_birthday", "birthday").strip(),
+            "notes": fv("_notes", "notes"),
+            "maidenname": fv("_maidenname").strip(),
+            "anniversary": fv("_anniversary").strip(),
+            "assistant": fv("_assistant").strip(),
+            "manager": fv("_manager").strip(),
+            "spouse": fv("_spouse").strip(),
+            "emails": pairs("_email_value[]", "_email[]", "_subtype_email[]"),
+            "phones": pairs("_phone_value[]", "_phone[]", "_subtype_phone[]"),
+            "websites": pairs("_website_value[]", "_website[]", "_subtype_website[]"),
+            "im": pairs("_im_value[]", "_im[]", "_subtype_im[]"),
             "addresses": [tuple(a) for a in zip(
-                form.getlist("_atype[]"), form.getlist("_astreet[]"),
-                form.getlist("_alocality[]"), form.getlist("_azip[]"),
-                form.getlist("_aregion[]"), form.getlist("_acountry[]"),
+                form.getlist("_subtype_address[]") or form.getlist("_atype[]"),
+                form.getlist("_street[]") or form.getlist("_astreet[]"),
+                form.getlist("_locality[]") or form.getlist("_alocality[]"),
+                form.getlist("_zipcode[]") or form.getlist("_azip[]"),
+                form.getlist("_region[]") or form.getlist("_aregion[]"),
+                form.getlist("_country[]") or form.getlist("_acountry[]"),
                 strict=False)  # parallel form lists; trailing empties are dropped below
                 if any(x.strip() for x in a)],
         }
-        name = form.get("name", "").strip()
-        # rcmail_action_contacts_save::process_input(): Roundcube decodes
-        # full address specs ("Name" <addr@dom>) down to the mailto address
+        name = fv("_name", "name").strip()
+        ext["name"] = name
+        # rcmail_action_contacts_save::process_input():285-293 — generate the
+        # display name before validation (must happen before emails are
+        # normalized), then reset it when it equals the primary address
         ext["emails"] = [(t, email.utils.parseaddr(v)[1] or v)
                          for t, v in ext["emails"] if v.strip()]
         emails = [v for _t, v in ext["emails"]]
-        firstname, surname = ext["firstname"], ext["surname"]
         if not name:
-            # compose_display_name(): name parts joined in CONTACT_COLTYPES
-            # insertion order (firstname, surname, middlename, prefix, suffix)
-            name = " ".join(p for p in (firstname, surname, ext["middlename"],
-                                        ext["prefix"], ext["suffix"]) if p)
-            name = " ".join(name.split())
+            name = _compose_display_name(ext, full_email=True)
             email0 = emails[0] if emails else ""
-            if email0 and (not name or name == email0):
-                name = email0
-            # process_input(): reset composed name when it equals the address
             if email0 and name == email0:
                 name = ""
-        ext["name"] = name
+            ext["name"] = name
+        firstname, surname = ext["firstname"], ext["surname"]
         data = {"name": name, "email": ", ".join(emails), "firstname": firstname,
                 "surname": surname, "vcard": util.vcard_encode(ext),
                 "words": util.contact_words(ext)}
@@ -2088,22 +2187,44 @@ def contact_edit(cid):
         if not (firstname + surname + name) and not emails:
             flash(i18n.gettext("nonamewarning", g.lang, domain="messages"),
                   "warning")
-            return render("addressbook", "contactedit.html", row=data, ext=ext,
-                          contact_types=util.CONTACT_TYPES,
-                          contact_phone_types=util.CONTACT_PHONE_TYPES)
+            _contact_head_props(ext)
+            return _contactedit_out(row=data, ext=ext, cid=cid, replay=True)
         # RC save.php:62-72: photo '-del-' deletes, otherwise an upload replaces
         photo = _UNSET
-        if form.get("delete_photo"):
+        if form.get("delete_photo") or form.get("_photo") == "-del-":
             photo = b""
-        elif (up := request.files.get("photo")) and up.filename:
+        elif (up := (request.files.get("_photo") or request.files.get("photo"))) and up.filename:
             photo = up.read()
         new_id = store.contact_save(session["user_id"], data, contact_id=cid, photo=photo)
         flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
-        return redirect(url_for("views.contact_view", cid=new_id))
+        return redirect(url_for("views.contact_view", cid=new_id, _framed=_framed_arg()))
     ext = util.vcard_parse(row["vcard"]) if row and row["vcard"] else util.vcard_parse("")
-    return render("addressbook", "contactedit.html", row=row, ext=ext,
+    # RC add-contact dialog pre-fills the address; we deep-link instead:
+    # /contact/new?_email=… starts the form with that address filled in
+    if row is None and (pre := request.args.get("_email")):
+        if not ext["emails"]:
+            ext["emails"] = [("work", pre)]
+    _contact_head_props(ext)
+    return _contactedit_out(row=row, ext=ext, cid=cid)
+
+
+def _contactedit_out(row, ext, cid, replay=False):
+    # reference edit-contact renders bare (html.iframe, no shell) inside the
+    # addressbook #contentframe when _framed=1; standalone keeps the full page
+    if request.args.get("_framed") == "1":
+        return render_template("contactedit_framed.html", task="addressbook",
+                               row=row, ext=ext, cid=cid, replay=replay,
+                               action="edit" if cid else "add",
+                               contact_types=util.CONTACT_TYPES,
+                               contact_phone_types=util.CONTACT_PHONE_TYPES,
+                               contact_website_types=util.CONTACT_WEBSITE_TYPES,
+                               contact_im_types=util.CONTACT_IM_TYPES)
+    return render("addressbook", "contactedit.html", row=row, ext=ext, cid=cid,
+                  action="edit" if cid else "add", replay=replay,
                   contact_types=util.CONTACT_TYPES,
-                  contact_phone_types=util.CONTACT_PHONE_TYPES)
+                  contact_phone_types=util.CONTACT_PHONE_TYPES,
+                  contact_website_types=util.CONTACT_WEBSITE_TYPES,
+                  contact_im_types=util.CONTACT_IM_TYPES)
 
 
 @bp.post("/contact/<int:cid>/delete")
@@ -2113,6 +2234,152 @@ def contact_delete(cid):
     store.contact_delete(session["user_id"], [cid])
     flash(i18n.gettext("contactdeleted", g.lang, domain="messages"), "confirmation")
     return redirect(url_for("views.contacts"))
+
+
+@bp.post("/contacts/group-addmembers")
+@bp.post("/contacts/group-delmembers")
+@login_required
+def contact_group_members_toggle():
+    """rcmail.group_member_change(): XHR group-addmembers/group-delmembers
+    with _cid/_gid (program/js/app.js group_member_change)."""
+    store = get_store()
+    add = request.path.endswith("group-addmembers")
+    cid = request.form.get("_cid", type=int)
+    gid = request.form.get("_gid", type=int)
+    row = store.contact(session["user_id"], cid) if cid else None
+    result = None
+    groups = {g["contactgroup_id"] for g in store.contactgroups(session["user_id"])}
+    if row and gid in groups:
+        members = [m["contact_id"] for m in store.contactgroup_members(gid)]
+        if add and cid not in members:
+            store.contactgroup_add(gid, [cid])
+        elif not add and cid in members:
+            store.contactgroup_remove(gid, [cid])
+        count = len([m["contact_id"] for m in store.contactgroup_members(gid)])
+        key = "contactaddedtogroup" if add else "contactremovedfromgroup"
+        result = {"action": "group-members",
+                  "exec": [{"group": gid, "count": count}],
+                  "label": i18n.gettext(key, g.lang, domain="messages")}
+    if request.headers.get("X-Requested-With") == "XMLHttpRequest":
+        return (jsonify(result or {}), 200)
+    flash(i18n.gettext("contactaddedtogroup" if add else "contactremovedfromgroup",
+                       g.lang, domain="messages"), "confirmation")
+    return redirect(url_for("views.contact_view", cid=cid) if cid
+                    else url_for("views.contacts"))
+
+
+# ------------------------------------------------------------ RC-style XHRs
+# rcmail_output_json envelope: {"action": <action>, "exec": "cmd;\ncmd;\n"}
+
+def _rc_json(action, cmds):
+    payload = {"action": action,
+               "exec": "".join(c + "\n" for c in cmds)}
+    return Response(json.dumps(payload, separators=(",", ":")),
+                    mimetype="application/json")
+
+
+def _js(*args):
+    return ",".join(json.dumps(a, separators=(",", ":")) for a in args)
+
+
+@bp.get("/mail/getunread")
+@bp.get("/mail/check-recent")
+@login_required
+def mail_recent():
+    """rcmail_action_mail_getunread / _check_recent.
+
+    Roundcube caches per-folder unseen counts in the session and only sends
+    changed counts on later calls; Craft is stateless, so every call answers
+    like a first call: one set_unread_count per subscribed folder, and
+    set_trash_count for the trash folder (getunread semantics)."""
+    box = imap_box()
+    prefs = g.get("prefs") or {}
+    trash = prefs.get("trash_mbox")
+    check_recent = request.path.endswith("/check-recent")
+    cmds = []
+    try:
+        folders = [f["name"] for f in box.folders(subscribed_only=True)]
+    except MailError:
+        folders = []
+    for name in folders:
+        try:
+            total, unseen = box.imap.status(name)
+        except MailError:
+            continue
+        if check_recent:
+            # send_unread_count(): 4th arg mark, '' when no change tracking
+            cmds.append("this.set_unread_count(%s);"
+                        % _js(name, unseen, name == "INBOX", ""))
+        else:
+            cmds.append("this.set_unread_count(%s);"
+                        % _js(name, unseen, name == "INBOX"))
+        if trash and name == trash:
+            cmds.append("this.set_trash_count(%d);" % total)
+    return _rc_json("check_recent" if check_recent else "getunread", cmds)
+
+
+@bp.get("/mail/autocomplete")
+@login_required
+def mail_autocomplete():
+    """rcmail_action_mail_autocomplete -> this.ksearch_query_results()."""
+    term = request.args.get("_search") or request.args.get("_term") or ""
+    reqid = request.args.get("_reqid") or ""
+    maxnum = int(current_app.config.get("AUTOCOMPLETE_MAX", 15))
+    store = get_store()
+    contacts, sort_keys = {}, {}
+    if term:
+        term_lc = term.lower()
+        for row in store.contacts(session["user_id"], query=term):
+            f = util.vcard_parse(row["vcard"])
+            emails = [e for _t, e in f["emails"] if e]
+            if not emails and row["email"]:
+                emails = [row["email"]]
+            name = row["name"] or " ".join(
+                x for x in (row["firstname"], row["surname"]) if x)
+            idx = 0
+            for email in emails:
+                contact = f"{name} <{email}>" if name else email
+                # multi-email records only list addresses matching the term
+                if len(emails) > 1 and term_lc not in contact.lower():
+                    continue
+                if contact in contacts:
+                    continue
+                disp = name or email
+                contacts[contact] = {"name": contact, "type": None,
+                                     "id": str(row["contact_id"]),
+                                     "source": "sql",
+                                     "fields": {"name": disp, "email": email}}
+                sort_keys[contact] = "%s %03d" % (disp, idx)
+                idx += 1
+                if len(contacts) >= maxnum:
+                    break
+            if len(contacts) >= maxnum:
+                break
+        # matching contact groups (distribution lists)
+        for grp in store.contactgroups(session["user_id"]):
+            if len(contacts) >= maxnum:
+                break
+            if term_lc not in grp["name"].lower():
+                continue
+            gname = grp["name"]
+            try:
+                n = len(store.contactgroup_members(grp["contactgroup_id"]))
+            except Exception:
+                n = 0
+            if n and gname not in contacts:
+                label = f"{gname} ({n})"
+                contacts[gname] = {"name": label,
+                                   "fields": {"name": label},
+                                   "type": "group",
+                                   "id": str(grp["contactgroup_id"]),
+                                   "source": "sql"}
+                sort_keys[gname] = gname
+        result = [contacts[k]
+                  for k in sorted(sort_keys, key=sort_keys.__getitem__)]
+    else:
+        result = []
+    cmd = "this.ksearch_query_results(%s);" % _js(result, term, reqid)
+    return _rc_json("autocomplete", [cmd])
 
 
 @bp.route("/contacts/export")

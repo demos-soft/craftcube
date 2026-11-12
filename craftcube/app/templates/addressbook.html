@@ -13,26 +13,31 @@
       </div>
       <div class="scroller">
         <ul id="directorylist" class="treelist listing iconized" role="tree">
-          <li class="addressbook{{ ' selected' if source == '0' }}" id="rcmliMA">
+          <li class="addressbook{{ ' selected' if source == '0' }}" id="rcmliMA" role="treeitem" aria-level="1"
+              {% if source == '0' %}aria-expanded="true" aria-selected="true"{% else %}aria-expanded="false"{% endif %}>
             <a href="{{ url_for('views.contacts', _source='0') }}">{{ 'Personal Addresses'|lc }}</a>
+            {% if groups %}
+            <div class="treetoggle{{ ' expanded' if source == '0' }}">&nbsp;</div>
+            {% endif %}
             <ul class="groups" role="group">
               {% for g in groups %}
               <li class="contactgroup{{ ' selected' if group == g.contactgroup_id }}"
-                  data-groupid="{{ g.contactgroup_id }}" data-name="{{ g.name }}">
+                  data-groupid="{{ g.contactgroup_id }}" data-name="{{ g.name }}"
+                  role="treeitem" aria-level="2">
                 <a href="{{ url_for('views.contacts', _source='0', _group=g.contactgroup_id) }}">{{ g.name }}</a>
               </li>
               {% endfor %}
             </ul>
           </li>
-          <li class="addressbook readonly{{ ' selected' if source == '1' }}" id="rcmliMQ">
+          <li class="addressbook readonly{{ ' selected' if source == '1' }}" id="rcmliMQ" role="treeitem" aria-level="1">
             <a href="{{ url_for('views.contacts', _source='1') }}">{{ 'Collected Recipients'|lc }}</a>
           </li>
-          <li class="addressbook readonly{{ ' selected' if source == '2' }}" id="rcmliMg">
+          <li class="addressbook readonly{{ ' selected' if source == '2' }}" id="rcmliMg" role="treeitem" aria-level="1">
             <a href="{{ url_for('views.contacts', _source='2') }}">{{ 'Trusted Senders'|lc }}</a>
           </li>
         </ul>
         <h3 class="voice">{{ 'Saved searches'|lc }}</h3>
-        <ul id="savedsearchlist" class="treelist listing iconized"></ul>
+        <ul id="savedsearchlist" class="treelist listing iconized notree" role="tree"></ul>
       </div>
     </div>
 
@@ -58,7 +63,7 @@
                  autocomplete="off" value="{{ q }}">
           <a href="#" class="button icon search" onclick="this.form.submit(); return false"
              title="{{ 'Find contacts'|lc }}"><span class="inner">{{ 'Search'|lc }}</span></a>
-          <a href="#" class="button icon options{{ ' active' if q }}"
+          <a href="#" class="options{{ ' active' if q }}"
              title="{{ 'Search modifiers'|lc }}" data-popup="searchmenu"><span class="inner">{{ 'Options'|lc }}</span></a>
         </form>
       </div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ (lang or 'en_US')[:2] }}" class="iframe">
+<head>
+  <meta charset="utf-8">
+  <title>{{ product_name }} :: Contacts</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/unicorn.svg') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  <script>
+  try {
+    if (document.cookie.indexOf('colorMode=dark') > -1
+      || (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.className += ' dark-mode';
+    }
+  } catch (e) { }
+  </script>
+</head>
+<body class="task-addressbook action-{{ action or 'add' }}">
+  <!-- port of the reference edit-contact frame (_level=2, elastic contactedit.html) -->
+  <h1 class="voice">{{ 'Edit contact' if row else 'New contact' }}</h1>
+{% include "includes/contactedit_form.html" %}
+  <div id="messagestack"></div>
+  {%- with messages = get_flashed_messages(with_categories=true) %}
+  {%- if messages %}<script>window.CC_FLASHES = {{ messages | tojson }};</script>{%- endif %}
+  {%- endwith %}
+  <script src="{{ url_for('static', filename='craftcube.js') }}"></script>
+  <script src="{{ url_for('static', filename='cc_messages.js') }}"></script>
+  <script src="{{ url_for('static', filename='contactform.js') }}"></script>
+</body>
+</html>

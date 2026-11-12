@@ -1,0 +1,131 @@
+{# Reference: 1.7.5 contacts/show framed content —
+   .contact-header(#contactphoto + #contacthead.contact-head.readonly) +
+   #contacttabs with Properties/Personal/Notes/Groups fieldsets
+   (.propform.grouped.readonly), rows .row with label + .contactfieldcontent #}
+<h1 class="voice">{{ 'Contact properties'|lc }}</h1>
+<div class="formcontent">
+  <div class="contact-header">
+    <div id="contactphoto" class="contact-photo">
+      <div id="contactpic"><img src="{{ url_for('views.contact_photo', cid=row.contact_id) if has_photo else url_for('static', filename='images/contactpic.svg') }}" alt=""></div>
+    </div>
+    <fieldset id="contacthead" class="contact-head readonly">
+      <legend>{{ 'Name and Organization'|lc }}</legend>
+      <div class="names">
+        {% if ext.prefix %}<span class="namefield prefix">{{ ext.prefix }}</span> {% endif %}
+        {% if ext.firstname %}<span class="namefield firstname">{{ ext.firstname }}</span> {% endif %}
+        {% if ext.middlename %}<span class="namefield middlename">{{ ext.middlename }}</span> {% endif %}
+        {% if ext.surname %}<span class="namefield surname">{{ ext.surname }}</span> {% endif %}
+        {% if ext.suffix %}<span class="namefield suffix">{{ ext.suffix }}</span> {% endif %}
+      </div>
+      {% if ext.nickname %}<div class="nickname row"><span class="namefield nickname">{{ ext.nickname }}</span></div>{% endif %}
+      {% if ext.organization %}<div class="organization row"><span class="namefield organization">{{ ext.organization }}</span></div>{% endif %}
+      {% if ext.department %}<div class="department row"><span class="namefield department">{{ ext.department }}</span></div>{% endif %}
+      {% if ext.jobtitle %}<div class="jobtitle row"><span class="namefield jobtitle">{{ ext.jobtitle }}</span></div>{% endif %}
+    </fieldset>
+  </div>
+  <div id="contacttabs" class="tabbed">
+    <fieldset class="propform grouped readonly">
+      <legend>{{ 'Properties'|lc }}</legend>
+      <div id="contactsectioncontact">
+        {% set rc_type_labels = {'home2': 'Home 2', 'work2': 'Work 2', 'homefax': 'Home Fax',
+                         'workfax': 'Work Fax', 'homepage': 'Home Page', 'other': 'Other',
+                         'mobile': 'Mobile', 'main': 'Main', 'car': 'Car', 'pager': 'Pager',
+                         'video': 'Video', 'assistant': 'Assistant', 'blog': 'Blog',
+                         'profile': 'Profile'} %}
+        {% if ext.emails %}
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactcontrolleremail"><legend>{{ 'Email'|lc }}</legend>
+          {% for typ, val in ext.emails %}
+          <div class="row"><label class="contactfieldlabel label">{{ rc_type_labels.get(typ, typ|capitalize) if typ else 'Other'|lc }}</label>
+            <div class="contactfieldcontent text"><a href="mailto:{{ val }}" title="{{ 'Compose mail to'|lc }}" class="email">{{ val }}</a></div></div>
+          {% endfor %}
+        </fieldset>
+        {% endif %}
+        {% if ext.phones %}
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactcontrollerphone"><legend>{{ 'Phone'|lc }}</legend>
+          {% for typ, val in ext.phones %}
+          <div class="row"><label class="contactfieldlabel label">{{ rc_type_labels.get(typ, typ|capitalize) if typ else 'Other'|lc }}</label>
+            <div class="contactfieldcontent text"><a href="tel:{{ val|replace(' ', '') }}" class="phone">{{ val }}</a></div></div>
+          {% endfor %}
+        </fieldset>
+        {% endif %}
+        {% if ext.addresses %}
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactfieldgroupaddress contactcontrolleraddress"><legend>{{ 'Address'|lc }}</legend>
+          {% for typ, street, locality, zipcode, region, country in ext.addresses %}
+          <div class="row composite"><label class="contactfieldlabel label">{{ rc_type_labels.get(typ, typ|capitalize) if typ else 'Other'|lc }}</label>
+            <div class="contactfieldcontent composite">
+              <span class="data street">{{ street }}</span> <br/>
+              <span class="data locality">{{ locality }}</span> <span class="data zipcode">{{ zipcode }}</span> <br/>
+              <span class="data country">{{ country }}</span> <span class="data region">{{ region }}</span>
+            </div></div>
+          {% endfor %}
+        </fieldset>
+        {% endif %}
+        {% if ext.websites %}
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactcontrollerwebsite"><legend>{{ 'Website'|lc }}</legend>
+          {% for typ, val in ext.websites %}
+          <div class="row"><label class="contactfieldlabel label">{{ rc_type_labels.get(typ, typ|capitalize) if typ else 'Other'|lc }}</label>
+            <div class="contactfieldcontent text"><a class="link" href="{{ val }}" target="_blank">{{ val }}</a></div></div>
+          {% endfor %}
+        </fieldset>
+        {% endif %}
+        {% if ext.im %}
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactcontrollerim"><legend>IM</legend>
+          {% for svc, val in ext.im %}
+          <div class="row"><label class="contactfieldlabel label">{{ svc|capitalize }}</label>
+            <div class="contactfieldcontent text">{{ val }}</div></div>
+          {% endfor %}
+        </fieldset>
+        {% endif %}
+      </div>
+    </fieldset>
+    {% if ext.gender or ext.birthday or ext.maidenname or ext.anniversary or ext.assistant or ext.manager or ext.spouse %}
+    <fieldset class="propform grouped readonly">
+      <legend>{{ 'Personal'|lc }}</legend>
+      <div id="contactsectionpersonal">
+        {% for f, label, cls in (('gender', 'Gender', 'select'),
+                                 ('maidenname', 'Maiden Name', 'text'),
+                                 ('birthday', 'Birthday', 'date'),
+                                 ('anniversary', 'Anniversary', 'date'),
+                                 ('manager', 'Manager', 'text'),
+                                 ('assistant', 'Assistant', 'text'),
+                                 ('spouse', 'Spouse', 'text')) %}
+        {% if ext[f] %}
+        <fieldset class="contactfieldgroup contactcontroller{{ f }}">
+          <div class="row"><label class="contactfieldlabel label">{{ label|lc }}</label><div class="contactfieldcontent {{ cls }}">{{ ext[f] }}</div></div>
+        </fieldset>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </fieldset>
+    {% endif %}
+    {% if ext.notes %}
+    <fieldset class="propform grouped readonly">
+      <legend>{{ 'Notes'|lc }}</legend>
+      <div id="contactsectionnotes"><fieldset class="contactfieldgroup contactcontrollernotes">
+        <div class="row"><div class="contactfield">{{ ext.notes }}</div></div>
+      </fieldset></div>
+    </fieldset>
+    {% endif %}
+    {% if groups %}
+    <fieldset class="propform grouped readonly">
+      <legend>{{ 'Groups'|lc }}</legend>
+      <form name="form" method="post" action="{{ url_for('views.contact_view', cid=row.contact_id) }}">
+        <input type="hidden" name="_cid" value="{{ row.contact_id }}">
+        <fieldset class="contactfieldgroup contactgroups">
+          <ul class="proplist simplelist">
+            {% for g in groups %}
+            <li><label><input name="_gid[]" class="groupmember" value="{{ g.contactgroup_id }}"{{ ' checked' if g.contactgroup_id in member_of }} type="checkbox">{{ g.name }}</label></li>
+            {% endfor %}
+          </ul>
+        </fieldset>
+      </form>
+    </fieldset>
+    {% endif %}
+  </div>
+</div>
+<div class="formbuttons">
+  {# reference rcmail.command('edit') keeps the editor inside the contact frame;
+     preserve _framed through the link, default target reloads just the frame #}
+  <a class="btn btn-primary edit" href="{{ url_for('views.contact_edit', cid=row.contact_id, _framed='1' if request.args.get('_framed') == '1' else None) }}" value="{{ 'Edit'|lc }}">{{ 'Edit'|lc }}</a>
+</div>
+<script src="{{ url_for('static', filename='contactform.js') }}"></script>

@@ -14,26 +14,16 @@
   } catch (e) { }
   </script>
 </head>
-<body class="task-addressbook action-contact">
+<body class="task-addressbook action-show">
   <div id="layout">
     <div id="layout-content" class="selected">
-      <div class="header"><span class="header-title">{{ row.name }}</span></div>
       <div class="content frame-content" role="main">
-        <div class="contact-header">
-          <div class="contact-photo"><img id="contactpic" src="{{ url_for('views.contact_photo', cid=row.contact_id) if has_photo else url_for('static', filename='images/contactpic.svg') }}" alt=""></div>
-          <div class="contact-head">
-            <div id="contacthead" class="readonly">
-              <div class="names"><span class="namefield">{{ row.name }}</span></div>
-              <div class="email">{{ row.email }}</div>
-            </div>
-          </div>
-        </div>
-        <div class="formbuttons">
-          <a class="btn btn-secondary icon edit" href="{{ url_for('views.contact_edit', cid=row.contact_id) }}">{{ 'Edit'|lc }}</a>
-          <a class="btn btn-secondary icon write" href="{{ url_for('views.compose', _to=row.email) }}">{{ 'Compose'|lc }}</a>
-        </div>
+        {% include "includes/contactshow.html" %}
       </div>
     </div>
   </div>
+  <div id="messagestack"></div>
+  <script src="{{ url_for('static', filename='craftcube.js') }}"></script>
+  <script src="{{ url_for('static', filename='cc_messages.js') }}"></script>
 </body>
 </html>

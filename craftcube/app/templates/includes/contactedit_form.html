@@ -1,0 +1,279 @@
+{# Reference: 1.7.5 contacts/edit rendered contract (render_contact_form in
+   program/actions/contacts/index.php):
+   - head rows render hidden (style=display:none) when empty, with a matching
+     option in the addfieldmenu rel=head (firstname/surname always visible)
+   - email/phone/address groups: one blank row when empty, else value rows only
+   - website/im groups render only when the record has values
+   - personal: gender/birthday always rendered (visible coltypes); the five
+     singles render only when set, missing ones listed in rel=personal menu
+   - notes menu renders empty and hidden (style=display:none)
+   - cc-tpl-* mirrors the compact DOM built by app.js insert_edit_field #}
+<form name="editform" method="post" id="contact-details" class="formcontent" enctype="multipart/form-data">
+  <input type="hidden" name="_cid" value="{{ row.contact_id if row and row['contact_id'] else cid or '' }}">
+  {# new-contact photo lands here (widget copies the file via DataTransfer);
+     on an existing contact the separate #upload-formFrm posts instead #}
+  <input type="file" name="_photo" id="ff_photo_file" accept="image/*" class="smart-upload" style="display:none" tabindex="-1">
+  <div class="contact-header">
+    <fieldset id="contactphoto" class="contact-photo">
+      <legend class="voice">{{ 'Contact photo'|lc }}</legend>
+      <div id="contactpic" class="image-upload" data-placeholder="{{ url_for('static', filename='images/contactpic.svg') }}"><img src="{{ url_for('views.contact_photo', cid=row.contact_id) if row and row['photo'] else url_for('static', filename='images/contactpic.svg') }}" alt=""></div>
+      {# rcmail image_upload_input (elastic ui.js:3627): the reset overlay and
+         file picker are JS-built; hidden marker, '-del-' deletes on save #}
+      <input type="hidden" name="_photo" id="ff_photo" value="{{ '' if row and row['photo'] else '-del-' }}">
+    </fieldset>
+    <fieldset id="contacthead" class="propform contact-head">
+      <legend>{{ 'Name and Organization'|lc }}</legend>
+      <div class="names">
+        <div class="row"{% if not ext.prefix %} style="display:none"{% endif %}><label for="ff_prefix">{{ 'Prefix'|lc }}</label><div><input size="20" maxlength="20" type="text" id="ff_prefix" name="_prefix" class="ff_prefix" value="{{ ext.prefix }}"></div></div>
+        <div class="row"><label for="ff_firstname">{{ 'First Name'|lc }}</label><div><input size="20" maxlength="50" type="text" id="ff_firstname" name="_firstname" class="ff_firstname" value="{{ ext.firstname }}"></div></div>
+        <div class="row"{% if not ext.middlename %} style="display:none"{% endif %}><label for="ff_middlename">{{ 'Middle Name'|lc }}</label><div><input size="20" maxlength="50" type="text" id="ff_middlename" name="_middlename" class="ff_middlename" value="{{ ext.middlename }}"></div></div>
+        <div class="row"><label for="ff_surname">{{ 'Last Name'|lc }}</label><div><input size="20" maxlength="50" type="text" id="ff_surname" name="_surname" class="ff_surname" value="{{ ext.surname }}"></div></div>
+        <div class="row"{% if not ext.suffix %} style="display:none"{% endif %}><label for="ff_suffix">{{ 'Suffix'|lc }}</label><div><input size="20" maxlength="20" type="text" id="ff_suffix" name="_suffix" class="ff_suffix" value="{{ ext.suffix }}"></div></div>
+      </div>
+      <div class="displayname row"{% if not ext.name_explicit %} style="display:none"{% endif %}><label for="ff_name">{{ 'Display Name'|lc }}</label><div><input size="40" maxlength="50" type="text" id="ff_name" name="_name" class="ff_name" value="{{ ext.name }}"></div></div>
+      <div class="nickname row"{% if not ext.nickname %} style="display:none"{% endif %}><label for="ff_nickname">{{ 'Nickname'|lc }}</label><div><input size="40" maxlength="50" type="text" id="ff_nickname" name="_nickname" class="ff_nickname" value="{{ ext.nickname }}"></div></div>
+      <div class="organization row"{% if not ext.organization %} style="display:none"{% endif %}><label for="ff_organization">{{ 'Organization'|lc }}</label><div><input size="40" maxlength="128" type="text" id="ff_organization" name="_organization" class="ff_organization" value="{{ ext.organization }}"></div></div>
+      <div class="department row"{% if not ext.department %} style="display:none"{% endif %}><label for="ff_department">{{ 'Department'|lc }}</label><div><input size="40" maxlength="128" type="text" id="ff_department" name="_department" class="ff_department" value="{{ ext.department }}"></div></div>
+      <div class="jobtitle row"{% if not ext.jobtitle %} style="display:none"{% endif %}><label for="ff_jobtitle">{{ 'Job Title'|lc }}</label><div><input size="40" maxlength="128" type="text" id="ff_jobtitle" name="_jobtitle" class="ff_jobtitle" value="{{ ext.jobtitle }}"></div></div>
+      <p class="addfield"><select class="addfieldmenu custom-select" rel="head">
+        <option value="">{{ 'Add field...'|lc }}</option>
+        {% if not ext.prefix %}<option value="prefix">{{ 'Prefix'|lc }}</option>{% endif %}
+        {% if not ext.middlename %}<option value="middlename">{{ 'Middle Name'|lc }}</option>{% endif %}
+        {% if not ext.suffix %}<option value="suffix">{{ 'Suffix'|lc }}</option>{% endif %}
+        {% if not ext.name_explicit %}<option value="name">{{ 'Display Name'|lc }}</option>{% endif %}
+        {% if not ext.nickname %}<option value="nickname">{{ 'Nickname'|lc }}</option>{% endif %}
+        {% if not ext.organization %}<option value="organization">{{ 'Organization'|lc }}</option>{% endif %}
+        {% if not ext.department %}<option value="department">{{ 'Department'|lc }}</option>{% endif %}
+        {% if not ext.jobtitle %}<option value="jobtitle">{{ 'Job Title'|lc }}</option>{% endif %}
+      </select></p>
+    </fieldset>
+  </div>
+  <div id="contacttabs" class="tabbed">
+    <fieldset class="propform grouped">
+      <legend>{{ 'Properties'|lc }}</legend>
+      {% set phone_labels = {'home2': 'Home 2', 'work2': 'Work 2', 'homefax': 'Home Fax', 'workfax': 'Work Fax'} %}
+      {% set website_labels = {'homepage': 'Home Page'} %}
+      <div id="contactsectioncontact">
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactcontrolleremail"><legend>{{ 'Email'|lc }}</legend>
+          {% for typ, val in ext.emails or [('home', '')] %}
+          <div class="row">
+            <select name="_subtype_email[]" class="contactselectsubtype custom-select" title="{{ 'Email Type'|lc }}">
+              {% for t in contact_types %}<option value="{{ t }}"{{ ' selected' if typ == t or (t == 'other' and typ not in contact_types) }}>{{ t|capitalize }}</option>{% endfor %}
+            </select>
+            <input size="40" maxlength="254" type="text" id="ff_email{{ loop.index0 }}" name="_email[]" class="ff_email" value="{{ val }}">
+            <a href="#del" class="contactfieldbutton deletebutton" title="{{ 'Delete'|lc }}" rel="email"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          </div>
+          {% endfor %}
+        </fieldset>
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactcontrollerphone"><legend>{{ 'Phone'|lc }}</legend>
+          {% for typ, val in ext.phones or [('home', '')] %}
+          <div class="row">
+            <select name="_subtype_phone[]" class="contactselectsubtype custom-select" title="{{ 'Phone Type'|lc }}">
+              {% for t in contact_phone_types %}<option value="{{ t }}"{{ ' selected' if typ == t or (t == 'other' and typ not in contact_phone_types) }}>{{ phone_labels.get(t, t|capitalize) }}</option>{% endfor %}
+            </select>
+            <input size="40" maxlength="20" type="text" id="ff_phone{{ loop.index0 }}" name="_phone[]" class="ff_phone" value="{{ val }}">
+            <a href="#del" class="contactfieldbutton deletebutton" title="{{ 'Delete'|lc }}" rel="phone"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          </div>
+          {% endfor %}
+        </fieldset>
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactfieldgroupaddress contactcontrolleraddress"><legend>{{ 'Address'|lc }}</legend>
+          {% for typ, street, locality, zipcode, region, country in ext.addresses or [('home','','','','','')] %}
+          <div class="row composite">
+            <select name="_subtype_address[]" class="contactselectsubtype custom-select" title="{{ 'Address Type'|lc }}">
+              {% for t in contact_types %}<option value="{{ t }}"{{ ' selected' if typ == t or (t == 'other' and typ not in contact_types) }}>{{ t|capitalize }}</option>{% endfor %}
+            </select>
+            <div class="content">
+              <input size="40" maxlength="50" type="text" name="_street[]" class="ff_street" value="{{ street }}">
+              <input size="28" maxlength="50" type="text" name="_locality[]" class="ff_locality" value="{{ locality }}">
+              <input size="8" maxlength="15" type="text" name="_zipcode[]" class="ff_zipcode" value="{{ zipcode }}">
+              <input size="40" maxlength="50" type="text" name="_country[]" class="ff_country" value="{{ country }}">
+              <input size="12" maxlength="50" type="text" name="_region[]" class="ff_region" value="{{ region }}">
+            </div>
+            <a href="#del" class="contactfieldbutton deletebutton" title="{{ 'Delete'|lc }}" rel="address"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          </div>
+          {% endfor %}
+        </fieldset>
+        {% if ext.websites %}
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactcontrollerwebsite"><legend>{{ 'Website'|lc }}</legend>
+          {% for typ, val in ext.websites %}
+          <div class="row">
+            <select name="_subtype_website[]" class="contactselectsubtype custom-select" title="{{ 'Website Type'|lc }}">
+              {% for t in contact_website_types %}<option value="{{ t }}"{{ ' selected' if typ == t or (t == 'other' and typ not in contact_website_types) }}>{{ website_labels.get(t, t|capitalize) }}</option>{% endfor %}
+            </select>
+            <input size="40" maxlength="128" type="text" id="ff_website{{ loop.index0 }}" name="_website[]" class="ff_website" value="{{ val }}">
+            <a href="#del" class="contactfieldbutton deletebutton" title="{{ 'Delete'|lc }}" rel="website"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          </div>
+          {% endfor %}
+        </fieldset>
+        {% endif %}
+        {% if ext.im %}
+        <fieldset class="contactfieldgroup contactfieldgroupmulti contactcontrollerim"><legend>IM</legend>
+          {% for svc, val in ext.im %}
+          <div class="row">
+            <select name="_subtype_im[]" class="contactselectsubtype custom-select" title="{{ 'IM Type'|lc }}">
+              {% for t in contact_im_types %}<option value="{{ t }}"{{ ' selected' if svc == t or (loop.first and svc not in contact_im_types) }}>{{ t|capitalize }}</option>{% endfor %}
+            </select>
+            <input size="40" maxlength="128" type="text" id="ff_im{{ loop.index0 }}" name="_im[]" class="ff_im" value="{{ val }}">
+            <a href="#del" class="contactfieldbutton deletebutton" title="{{ 'Delete'|lc }}" rel="im"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          </div>
+          {% endfor %}
+        </fieldset>
+        {% endif %}
+        <p class="addfield"><select class="addfieldmenu custom-select" rel="contact" data-compact="true">
+          <option value="">{{ 'Add field...'|lc }}</option>
+          <option value="email">{{ 'Email'|lc }}</option>
+          <option value="phone">{{ 'Phone'|lc }}</option>
+          <option value="address">{{ 'Address'|lc }}</option>
+          <option value="website">{{ 'Website'|lc }}</option>
+          <option value="im">IM</option>
+        </select></p>
+      </div>
+    </fieldset>
+    <fieldset class="propform grouped">
+      <legend>{{ 'Personal'|lc }}</legend>
+      <div id="contactsectionpersonal">
+        <fieldset class="contactfieldgroup contactcontrollergender">
+          <div class="row"><label class="contactfieldlabel label" for="ff_gender0">{{ 'Gender'|lc }}</label>
+            <select id="ff_gender0" name="_gender" class="ff_gender">
+              <option value=""{{ ' selected' if not ext.gender }}>---</option>
+              <option value="male"{{ ' selected' if ext.gender == 'male' }}>{{ 'male'|lc }}</option>
+              <option value="female"{{ ' selected' if ext.gender == 'female' }}>{{ 'female'|lc }}</option>
+              <option value="non-binary"{{ ' selected' if ext.gender == 'non-binary' }}>non-binary</option>
+              <option value="other"{{ ' selected' if ext.gender == 'other' }}>{{ 'other'|lc }}</option>
+            </select>
+            <a href="#del" class="contactfieldbutton deletebutton" title="{{ 'Delete'|lc }}" rel="gender"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          </div>
+        </fieldset>
+        {% if ext.maidenname %}
+        <fieldset class="contactfieldgroup contactcontrollermaidenname">
+          <div class="row"><label class="contactfieldlabel label" for="ff_maidenname0">{{ 'Maiden Name'|lc }}</label>
+            <input type="text" size="40" maxlength="50" id="ff_maidenname0" class="ff_maidenname" name="_maidenname" value="{{ ext.maidenname }}">
+            <a href="#del" class="contactfieldbutton deletebutton" title="{{ 'Delete'|lc }}" rel="maidenname"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          </div>
+        </fieldset>
+        {% endif %}
+        <fieldset class="contactfieldgroup contactcontrollerbirthday">
+          <div class="row"><label class="contactfieldlabel label" for="ff_birthday0">{{ 'Birthday'|lc }}</label>
+            <input type="text" size="12" maxlength="16" id="ff_birthday0" class="datepicker ff_birthday" name="_birthday" value="{{ ext.birthday }}">
+            <a href="#del" class="contactfieldbutton deletebutton" title="{{ 'Delete'|lc }}" rel="birthday"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          </div>
+        </fieldset>
+        {# reference form order: gender, maidenname, birthday, anniversary, manager, assistant, spouse #}
+        {% for f, label in (('anniversary', 'Anniversary'), ('manager', 'Manager'), ('assistant', 'Assistant'), ('spouse', 'Spouse')) %}
+        {% if ext[f] %}
+        <fieldset class="contactfieldgroup contactcontroller{{ f }}">
+          <div class="row"><label class="contactfieldlabel label" for="ff_{{ f }}0">{{ label|lc }}</label>
+            {% if f == 'anniversary' %}
+            <input type="text" size="12" maxlength="16" id="ff_{{ f }}0" class="datepicker ff_{{ f }}" name="_{{ f }}" value="{{ ext[f] }}">
+            {% else %}
+            <input type="text" size="40" maxlength="128" id="ff_{{ f }}0" class="ff_{{ f }}" name="_{{ f }}" value="{{ ext[f] }}">
+            {% endif %}
+            <a href="#del" class="contactfieldbutton deletebutton" title="{{ 'Delete'|lc }}" rel="{{ f }}"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          </div>
+        </fieldset>
+        {% endif %}
+        {% endfor %}
+        <p class="addfield"><select class="addfieldmenu custom-select" rel="personal" data-compact="true">
+          <option value="">{{ 'Add field...'|lc }}</option>
+          {% for f, label in (('maidenname', 'Maiden Name'), ('anniversary', 'Anniversary'), ('manager', 'Manager'), ('assistant', 'Assistant'), ('spouse', 'Spouse')) %}
+          {% if not ext[f] %}<option value="{{ f }}">{{ label|lc }}</option>{% endif %}
+          {% endfor %}
+        </select></p>
+      </div>
+    </fieldset>
+    <fieldset class="propform grouped">
+      <legend>{{ 'Notes'|lc }}</legend>
+      <div id="contactsectionnotes">
+        <fieldset class="contactfieldgroup contactcontrollernotes">
+          <div class="row"><textarea rows="10" id="ff_notes0" name="_notes" class="ff_notes" cols="60">{{ ext.notes }}</textarea></div>
+        </fieldset>
+        <p class="addfield"><select class="addfieldmenu custom-select" rel="notes" data-compact="true" style="display:none">
+          <option value="">{{ 'Add field...'|lc }}</option>
+        </select></p>
+      </div>
+    </fieldset>
+  </div>
+</form>
+<div class="formbuttons">
+  <button type="submit" form="contact-details" class="btn btn-primary submit" value="{{ 'Save'|lc }}"{% if not replay %} disabled{% endif %}>{{ 'Save'|lc }}</button>
+</div>
+{# rcmail upload-form (elastic templates): hidden smart-upload form; the
+   image_upload_input widget opens it on photo click. Editing posts it right
+   away (rcmail.command('upload-photo')); a new contact copies the picked
+   file into the main form instead #}
+<div id="upload-form"><form id="upload-formFrm" name="uploadform" method="post" enctype="multipart/form-data" class="smart-upload">
+  <input type="hidden" name="_upload" value="1">
+  <input type="hidden" name="_cid" value="{{ row.contact_id if row and row['contact_id'] else cid or '' }}">
+  <input name="_photo" accept="image/*" id="upload-formInput" type="file" class="smart-upload" tabindex="-1">
+</form></div>
+{# client-side row templates mirroring rcmail app.js insert_edit_field()
+   compact DOM (menu data-compact=true): row.input-group, subtype select as
+   .input-group-prepend, input.form-control, delete button wrapped in
+   span.input-group-append; JS-created fieldsets carry no legend #}
+<template id="cc-tpl-email">
+  <div class="row input-group">
+    <select name="_subtype_email[]" class="contactselectsubtype custom-select input-group-prepend" title="{{ 'Email Type'|lc }}">
+      {% for t in contact_types %}<option value="{{ t }}">{{ t|capitalize }}</option>{% endfor %}
+    </select>
+    <input type="text" name="_email[]" size="40" class="form-control ff_email">
+    <span class="input-group-append"><a href="#del" class="contactfieldbutton deletebutton input-group-text icon delete" title="{{ 'Delete'|lc }}" rel="email"><span class="inner">{{ 'Delete'|lc }}</span></a></span>
+  </div>
+</template>
+<template id="cc-tpl-phone">
+  <div class="row input-group">
+    <select name="_subtype_phone[]" class="contactselectsubtype custom-select input-group-prepend" title="{{ 'Phone Type'|lc }}">
+      {% for t in contact_phone_types %}<option value="{{ t }}">{{ phone_labels.get(t, t|capitalize) }}</option>{% endfor %}
+    </select>
+    <input type="text" name="_phone[]" size="40" class="form-control ff_phone">
+    <span class="input-group-append"><a href="#del" class="contactfieldbutton deletebutton input-group-text icon delete" title="{{ 'Delete'|lc }}" rel="phone"><span class="inner">{{ 'Delete'|lc }}</span></a></span>
+  </div>
+</template>
+<template id="cc-tpl-address">
+  <div class="row input-group composite">
+    <select name="_subtype_address[]" class="contactselectsubtype custom-select input-group-prepend" title="{{ 'Address Type'|lc }}">
+      {% for t in contact_types %}<option value="{{ t }}">{{ t|capitalize }}</option>{% endfor %}
+    </select>
+    <div class="content input-group-text">
+      <input type="text" name="_street[]" class="form-control ff_street">
+      <input type="text" name="_locality[]" class="form-control ff_locality">
+      <input type="text" name="_zipcode[]" class="form-control ff_zipcode">
+      <input type="text" name="_country[]" class="form-control ff_country">
+      <input type="text" name="_region[]" class="form-control ff_region">
+    </div>
+    <span class="input-group-append"><a href="#del" class="contactfieldbutton deletebutton input-group-text icon delete" title="{{ 'Delete'|lc }}" rel="address"><span class="inner">{{ 'Delete'|lc }}</span></a></span>
+  </div>
+</template>
+{% set website_labels = {'homepage': 'Home Page'} %}
+<template id="cc-tpl-website">
+  <fieldset class="contactfieldgroup contactcontrollerwebsite">
+    <div class="row input-group">
+      <select name="_subtype_website[]" class="contactselectsubtype custom-select input-group-prepend" title="{{ 'Website Type'|lc }}">
+        {% for t in contact_website_types %}<option value="{{ t }}">{{ website_labels.get(t, t|capitalize) }}</option>{% endfor %}
+      </select>
+      <input type="text" name="_website[]" size="40" class="form-control ff_website">
+      <span class="input-group-append"><a href="#del" class="contactfieldbutton deletebutton input-group-text icon delete" title="{{ 'Delete'|lc }}" rel="website"><span class="inner">{{ 'Delete'|lc }}</span></a></span>
+    </div>
+  </fieldset>
+</template>
+<template id="cc-tpl-im">
+  <fieldset class="contactfieldgroup contactcontrollerim">
+    <div class="row input-group">
+      <select name="_subtype_im[]" class="contactselectsubtype custom-select input-group-prepend" title="{{ 'IM Type'|lc }}">
+        {% for t in contact_im_types %}<option value="{{ t }}">{{ t|capitalize }}</option>{% endfor %}
+      </select>
+      <input type="text" name="_im[]" size="40" class="form-control ff_im">
+      <span class="input-group-append"><a href="#del" class="contactfieldbutton deletebutton input-group-text icon delete" title="{{ 'Delete'|lc }}" rel="im"><span class="inner">{{ 'Delete'|lc }}</span></a></span>
+    </div>
+  </fieldset>
+</template>
+{% for f, label, size, cls in (('maidenname', 'Maiden Name', 40, 'form-control ff_maidenname'), ('anniversary', 'Anniversary', 12, 'form-control ff_anniversary datepicker'), ('manager', 'Manager', 40, 'form-control ff_manager'), ('assistant', 'Assistant', 40, 'form-control ff_assistant'), ('spouse', 'Spouse', 40, 'form-control ff_spouse')) %}
+<template id="cc-tpl-{{ f }}">
+  <fieldset class="contactfieldgroup contactcontroller{{ f }}">
+    <div class="row input-group">
+      <span class="input-group-prepend"><label class="contactfieldlabel label input-group-text" for="ff_{{ f }}0">{{ label|lc }}</label></span>
+      <input type="text" name="_{{ f }}" size="{{ size }}" class="{{ cls }}">
+      <span class="input-group-append"><a href="#del" class="contactfieldbutton deletebutton input-group-text icon delete" title="{{ 'Delete'|lc }}" rel="{{ f }}"><span class="inner">{{ 'Delete'|lc }}</span></a></span>
+    </div>
+  </fieldset>
+</template>
+{% endfor %}
