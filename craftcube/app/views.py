@@ -1,12 +1,14 @@
 """All HTTP views: login, mail, compose, addressbook, settings."""
 import contextlib
 import email
+import email.utils
 import functools
 import io
 import json
 import re
 import secrets
 from datetime import UTC
+from email.message import EmailMessage
 from html import escape as html_escape
 from html import unescape
 
@@ -289,11 +291,169 @@ def _hdr(msg, name):
     return _decode_header(str(v)) if v else ""
 
 
+# ------------------------------------------------------------ MDN (receipts)
+# reference: program/actions/mail/show.php mdn_request_handler() and
+# program/actions/mail/sendmdn.php send_mdn()
+
+def _identity_for_message(store, user_id, msg):
+    """rcmail_sendmail::identity_select($message) with MODE_REPLY: prefer the
+    identity matching a To/Cc recipient, then the message's own From:
+    (reply-to-self), else the default identity."""
+    ids = [dict(r) for r in store.identities(user_id)]
+    if not ids:
+        return None
+    recip, names = [], []
+    for h in ("To", "Cc"):
+        for nm, addr in util.header_addresses(msg, h):
+            recip.append(addr.lower())
+            names.append(nm)
+    frm = util.header_addresses(msg, "From")[:1]
+    frm_name, frm_mail = (frm[0][0], frm[0][1].lower()) if frm else ("", "")
+    found = {"to": None, "from": None}
+    for idx, ident in enumerate(ids):
+        email_a = (ident["email"] or "").lower()
+        if frm_mail and frm_mail == email_a:
+            if found["from"] is None:
+                found["from"] = idx
+            if frm_name and ident.get("name") and frm_name == ident["name"]:
+                return ident
+        if email_a in recip:
+            if found["to"] is None:
+                found["to"] = idx
+            pos = recip.index(email_a)
+            if names[pos] and ident.get("name") and names[pos] == ident["name"]:
+                return ident
+    pick = found["to"] if found["to"] is not None else found["from"]
+    if pick is None:
+        return store.default_identity(user_id)
+    return ids[pick]
+
+
+def _send_mdn(box, user_id, folder, uid):
+    """Build and send the disposition notification; returns
+    (sent, error). Flags the message $MDNSent like rcube's MDNSENT."""
+    msg = box.raw_message(folder, uid)
+    mdn_to = _hdr(msg, "Disposition-Notification-To")
+    if not mdn_to:
+        return False, None
+    store = get_store()
+    ident = _identity_for_message(store, user_id, msg)
+    if not ident:
+        return False, "sendingreceiptfailed"
+    from_addr = ident["email"]
+    from_name = ident.get("name") or ""
+    # envelope recipient: first address in Disposition-Notification-To
+    rcpt = util.header_addresses(msg, "Disposition-Notification-To")
+    mailto = rcpt[0][1] if rcpt else ""
+    if not mailto:
+        return False, None
+    subject = _hdr(msg, "Subject") or "(no subject)"
+    message_id = (_hdr(msg, "Message-ID") or "").strip()
+    refs = (_hdr(msg, "References") or "").strip()
+    m = EmailMessage()
+    m["Date"] = email.utils.formatdate(localtime=True)
+    m["From"] = util.format_address(from_name, from_addr) if from_name else from_addr
+    m["To"] = mdn_to
+    m["Subject"] = f"Return Receipt (read): {subject}"
+    m["Message-ID"] = email.utils.make_msgid(domain=from_addr.rsplit("@", 1)[-1] or "craftcube.local")
+    m["X-Sender"] = from_addr
+    if refs or message_id:
+        m["References"] = (refs + " " + message_id).strip()
+    if message_id:
+        m["In-Reply-To"] = message_id
+    # useragent: Roundcube falls back to its own client string
+    agent = current_app.config.get("USERAGENT") or "CraftCube"
+    m["User-Agent"] = agent
+    to_disp = _hdr(msg, "To")
+    dt = util.to_local_tz(util.parse_header_date(msg), store.get_user_prefs(user_id).get("timezone"))
+    date_long = dt.strftime("%Y-%m-%d %H:%M") if dt else ""
+    body = ("This is a Return Receipt for your message\r\n\r\n"
+            f"\tTo: {to_disp}\r\n"
+            f"\tSubject: {subject}\r\n"
+            f"\tDate: {date_long}\r\n\r\n"
+            "Note: This receipt only acknowledges that the message was displayed "
+            "on the recipient's computer. There is no guarantee that the "
+            "recipient has read or understood the message contents.")
+    report = ("Final-Recipient: rfc822; " + from_addr + "\r\n"
+              f"Original-Message-ID: {message_id}\r\n"
+              "Disposition: manual-action/MDN-sent-manually; displayed\r\n")
+    if to_disp:
+        report += f"Original-Recipient: {to_disp}\r\n"
+    report += f"Reporting-UA: {agent}\r\n"
+    m.set_content(body)
+    # the disposition-notification part (Mail_mime addAttachment inline, 7bit)
+    part = EmailMessage()
+    part.set_content(report)
+    part.replace_header("Content-Type", "message/disposition-notification")
+    part["Content-Disposition"] = 'inline; filename="MDNPart2.txt"'
+    part.replace_header("Content-Transfer-Encoding", "7bit")
+    # multipart/report; report-type="disposition-notification" (RFC 3798):
+    # body stays part 1, the notification is appended as part 2
+    m.make_mixed()
+    m.attach(part)
+    m.set_type("multipart/report")
+    m.set_param("report-type", "disposition-notification", header="Content-Type")
+    try:
+        box.send(m, m.as_bytes(), store_target="")
+    except MailError as e:
+        return False, str(e)
+    box.add_flag(folder, uid, "$MDNSent")
+    return True, None
+
+
+def _mdn_request(box, folder, uid, msg):
+    """show.php::mdn_request_handler(). Returns (request, save, sender) where
+    request=True asks the UI, or None/None/None when nothing applies. Must run
+    BEFORE the message is marked \\Seen (the handler requires an unread msg)."""
+    mdn_to = _hdr(msg, "Disposition-Notification-To")
+    if not mdn_to:
+        return None
+    prefs = get_store().get_user_prefs(session["user_id"])
+    cfg = int(prefs.get("mdn_requests", 0) or 0)
+    sender = util.header_addresses(msg, "From")[:1]
+    mailto = sender[0][1] if sender else ""
+    if not mailto:
+        return None
+    flags = box.flags_of(folder, uid)
+    if "$MDNSent" in flags or "\\Seen" in flags:
+        return None
+    box_special = {box.special("drafts"), box.special("sent")}
+    if folder in box_special:
+        return None
+    exists = cfg == 1
+    if cfg in (3, 4, 5, 6):
+        kind = "contacts" if cfg in (3, 4) else "trusted"
+        if get_store().contact_email_known(session["user_id"], mailto, kind):
+            exists = True
+    if exists:
+        sent, _err = _send_mdn(box, session["user_id"], folder, uid)
+        if sent:
+            flash("Successfully sent a read receipt.", "confirmation")
+        else:
+            flash("Could not send the receipt.", "error")
+        return None
+    if cfg in (2, 4, 6):
+        return None  # ignore request
+    name, addr = sender[0]
+    full = f"{name} <{addr}>" if name and name != addr else addr
+    return {"request": True,
+            "save": cfg if cfg in (3, 5) else 0,
+            "sender": {"mailto": mailto, "string": full}}
+
+
 def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
     try:
-        msg = box.get_message(folder, uid, mark_seen=mark_seen)
+        msg = box.get_message(folder, uid, mark_seen=False)
     except MailError:
         abort(404)
+    # show.php:128 mdn_request_handler() runs while the message is still
+    # unread — Roundcube sets \Seen only after the page has been sent
+    # (show.php end). Do the same: evaluate first, mark seen after.
+    mdn_ctx = None
+    with contextlib.suppress(Exception):  # a receipt hiccup must never block the view
+        mdn_ctx = _mdn_request(box, folder, uid, msg)
+    if mark_seen and not box._is_seen(folder, uid):
+        box.set_flags(folder, [uid], ["\\Seen"], "add")
     parts = []
     if msg.is_multipart():
         for p in msg.walk():
@@ -391,6 +551,8 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
             # reference 'ml' flag -- enables the Reply list menu item
             "list_post": bool(_hdr(msg, "List-Post")),
             "remote_blocked": remote_blocked,
+            # env.mdn_request / mdn_request_save / mdn_request_sender (show.php:864)
+            "mdn": mdn_ctx,
             "date": _msg_date(msg), "prev_uid": prev_uid, "next_uid": next_uid}
 
 
@@ -718,6 +880,42 @@ def mail_act():
     return redirect(nxt)
 
 
+@bp.post("/mail/sendmdn")
+@login_required
+def mail_sendmdn():
+    """rcmail_action_mail_sendmdn::run(): send the disposition notification,
+    flash receiptsent/errorsendingreceipt, optionally save the sender
+    (_save=3 -> address book, _save=5 -> trusted senders, addcontact.php)."""
+    box = imap_box()
+    folder = request.form.get("_mbox") or "INBOX"
+    uid = request.form.get("_uid")
+    sent = False
+    if uid:
+        try:
+            sent, _err = _send_mdn(box, session["user_id"], folder, uid)
+        except Exception:  # a failed receipt must never 500
+            sent = False
+    if sent:
+        flash("Successfully sent a read receipt.", "confirmation")
+    else:
+        flash("Could not send the receipt.", "error")
+    save = request.form.get("_save")
+    address = request.form.get("_address") or ""
+    if sent and save in ("3", "5"):
+        # addcontact.php: 5 stores a trusted sender, 3 a regular contact
+        store = get_store()
+        name, email_addr = email.utils.parseaddr(address)
+        if "@" in email_addr:
+            if save == "5":
+                store.collected_upsert(session["user_id"], 2, name or email_addr, email_addr)
+            else:
+                with contextlib.suppress(Exception):
+                    store.contact_save(session["user_id"],
+                                       {"name": name or email_addr, "email": email_addr,
+                                        "firstname": "", "surname": "", "vcard": ""})
+    return jsonify({"sent": sent})
+
+
 def _next_uid_after(box, folder, ref_uid, removed):
     """First remaining uid after ref_uid (newest-first order), given the
     folder's uid order BEFORE the removal."""
@@ -741,6 +939,11 @@ def _run_mail_action(box, command, folder, uids, dest=None):
     try:
         if command == "read":
             box.set_flags(folder, uids, ["\\Seen"], "add")
+        elif command == "mdnsent":
+            # app.js mdn_request_dialog close posts mark _flag=mdnsent after
+            # the receipt dialog; rcube maps MDNSENT -> $MDNSent keyword
+            for u in uids:
+                box.add_flag(folder, u, "$MDNSent")
         elif command == "unread":
             box.set_flags(folder, uids, ["\\Seen"], "remove")
         elif command in ("flag", "flagtoggle"):

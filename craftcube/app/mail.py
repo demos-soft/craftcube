@@ -637,6 +637,27 @@ class Mailbox:
             return "\\Flagged" in s
         return False
 
+    def flags_of(self, folder, uid):
+        """Raw flag list of one message (used for $MDNSent before read-marking)."""
+        self.imap.select(folder, readonly=True)
+        typ, data = self.imap.conn.uid("FETCH", str(uid), "(FLAGS)")
+        if typ == "OK" and data and data[0]:
+            s = data[0].decode(errors="replace") if isinstance(data[0], bytes) else str(data[0])
+            # response is e.g. '44 (FLAGS (\\Seen $MDNSent))' — the FLAGS list
+            # is the LAST parenthesised group (the leading item list is UID)
+            start = s.rfind("(")
+            end = s.rfind(")")
+            if start >= 0 and end > start:
+                return [f.strip() for f in s[start + 1:end].split()]
+        return []
+
+    def add_flag(self, folder, uid, flag):
+        # Dovecot rejects \MDNSENT as a *system* flag; Roundcube therefore
+        # uses the $MDNSent keyword (rcube_imap_generic.php:45 maps the
+        # MDNSENT flag name to it). Returns whether the store succeeded.
+        self.imap.select(folder)
+        return bool(self.imap.set_flags([uid], [flag], mode="add"))
+
     def raw_message(self, folder, uid):
         self.imap.select(folder, readonly=True)
         return self.imap.fetch_message(uid)

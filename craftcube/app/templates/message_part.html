@@ -42,6 +42,20 @@
       parent.cc_iframe_dialog('/message?_mbox={{ folder|urlencode }}&_uid={{ uid }}&_framed=1&_headers=1',
         'Message headers', 400);
     });
+    {% if mdn %}
+    // app.js:528 + is_framed(): the receipt dialog belongs to the parent shell
+    (function () {
+      var save = {{ mdn.save | tojson }}, sender = {{ mdn.sender | tojson }};
+      var uid = {{ uid | tojson }}, mbox = {{ folder | tojson }};
+      setTimeout(function () {
+        try { (window.parent.cc_mdn_dialog || window.cc_mdn_dialog)(uid, mbox, save, sender); }
+        catch (e) { window.cc_mdn_dialog(uid, mbox, save, sender); }
+      }, 100);
+    })();
+    {% endif %}
   </script>
+  {# Elastic renders the message page with its own messagestack (the
+     receiptsent flash of an autosent MDN shows here, inside the preview) #}
+  {% include 'includes/messages.html' %}
 </body>
 </html>

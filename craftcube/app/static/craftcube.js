@@ -578,6 +578,53 @@
     return { dlg: dlg, popup: popup, close: close };
   }
   window.cc_simple_dialog = ccDialog;
+
+  // ------------------------------------------------- mdn_request_dialog (app.js:4630)
+  // "Send read receipt?" dialog: Send / Ignore and, when the pref asks to
+  // remember (mdn_request_save 3/5), "Always send to <email>". Closing the
+  // dialog marks the message $MDNSent unless Send took over the action.
+  window.cc_mdn_dialog = function (uid, mbox, save, sender) {
+    var props = { _uid: uid, _mbox: mbox };
+    var action = 'mdnsent';          // dialog close marks the message
+    function closeAndPost() {
+      var fd = new FormData();
+      if (action === 'sendmdn') {
+        fd.append('_uid', props._uid); fd.append('_mbox', props._mbox);
+        if (props._save) { fd.append('_save', props._save); fd.append('_address', props._address || ''); }
+        fetch('/mail/sendmdn', { method: 'POST', body: fd })
+          .then(function () {
+            // the receiptsent flash renders in the app shell's stack
+            (window.top !== window.self ? parent : window).location.reload();
+          });
+      } else {
+        fd.append('_mbox', mbox); fd.append('_act', 'mdnsent'); fd.append('_uids[]', uid);
+        fetch('/mail/act', { method: 'POST', body: fd });
+      }
+    }
+    var buttons = [{
+      label: 'Send', cls: 'mainaction send',
+      click: function () { action = 'sendmdn'; dlg.close(); },
+    }, {
+      label: 'Ignore', cls: 'cancel',
+      click: function () { dlg.close(); },
+    }];
+    if (save) {
+      buttons.unshift({
+        label: 'Always send to ' + (sender.mailto || ''), cls: 'mainaction send',
+        click: function () {
+          props._save = save; props._address = sender.string || sender.mailto;
+          action = 'sendmdn'; dlg.close();
+        },
+      });
+    }
+    var body = document.createElement('div');
+    body.style.cssText = 'padding:1rem';
+    body.textContent = 'The sender of this message has asked to be notified when you read this message. Do you wish to notify the sender?';
+    var dlg = ccDialog(body, 'Send read receipt?', {
+      height: 200, buttons: buttons, onclose: closeAndPost,
+    });
+    return dlg;
+  };
   window.cc_iframe_dialog = function (src, title, height, opts) {
     opts = opts || {};
     var f = document.createElement('iframe');

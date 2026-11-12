@@ -17,4 +17,14 @@
       </div>
     </div>
 
+{% if mdn %}
+<script>
+  // app.js:528 — env.mdn_request opens the receipt dialog on show
+  (function () {
+    var save = {{ mdn.save | tojson }}, sender = {{ mdn.sender | tojson }};
+    var uid = {{ uid | tojson }}, mbox = {{ folder | tojson }};
+    setTimeout(function () { window.cc_mdn_dialog(uid, mbox, save, sender); }, 100);
+  })();
+</script>
+{% endif %}
 {% include "includes/footer.html" %}
