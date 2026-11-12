@@ -33,6 +33,12 @@ def create_app(config_overrides=None):
     os.makedirs(os.path.dirname(app.config["DB_PATH"]), exist_ok=True)
     app.store = Store(app.config["DB_PATH"])
 
+    @app.route("/healthz")
+    def healthz():
+        # k8s liveness/readiness target: no sessions, templates or IMAP, so a
+        # stalled mailbox can never make the pod look dead
+        return "ok", 200, {"Content-Type": "text/plain"}
+
     from .views import bp as views_bp
     app.register_blueprint(views_bp)
 
