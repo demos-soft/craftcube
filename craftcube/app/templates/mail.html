@@ -337,13 +337,17 @@
       </ul>
     </div>
 
-    <div id="mailboxoptions-menu" class="popupmenu">
-      <h3 class="voice">Folder actions</h3>
-      <ul class="menu listing" role="menu">
-        <li role="menuitem"><a class="purge" href="#" data-act="compact">{{ 'Compact'|lc }}</a></li>
-        <li role="menuitem"><a class="purge" href="#" data-act="empty">{{ 'Empty'|lc }}</a></li>
-        <li role="menuitem"><a class="read" href="#" data-act="markallread">{{ 'Mark all as read'|lc }}</a></li>
-        <li role="menuitem"><a class="folders" href="{{ url_for('views.folders_view') }}">{{ 'Manage folders'|lc }}</a></li>
+    <div id="mailboxoptions-menu" class="popupmenu" aria-hidden="true">
+      <h3 id="aria-label-mailboxoptions-menu" class="voice">{{ 'Folder actions menu'|lc }}</h3>
+      <ul class="menu listing" role="menu" aria-labelledby="aria-label-mailboxoptions-menu">
+        <li role="menuitem"><a class="expunge{{ ' active' if message_count else ' disabled' }}" id="rcmbtn144" role="button"
+            tabindex="{{ 0 if message_count else -1 }}" aria-disabled="{{ 'false' if message_count else 'true' }}" href="#" data-act="compact">{{ 'Compact'|lc }}</a></li>
+        <li role="menuitem"><a class="purge{{ ' active' if message_count else ' disabled' }}" id="rcmbtn145" role="button"
+            tabindex="{{ 0 if message_count else -1 }}" aria-disabled="{{ 'false' if message_count else 'true' }}" href="#" data-act="empty">{{ 'Empty'|lc }}</a></li>
+        <li role="menuitem"><a class="read{{ ' active' if folder_unread else ' disabled' }}" id="rcmbtn146" role="button"
+            tabindex="{{ 0 if folder_unread else -1 }}" aria-disabled="{{ 'false' if folder_unread else 'true' }}" href="#" data-act="markallread">{{ 'Mark all as read'|lc }}</a></li>
+        <li role="menuitem"><a class="folders active" id="rcmbtn147" role="button"
+            tabindex="-1" aria-disabled="true" href="{{ url_for('views.folders_view') }}">{{ 'Manage folders'|lc }}</a></li>
       </ul>
     </div>
 

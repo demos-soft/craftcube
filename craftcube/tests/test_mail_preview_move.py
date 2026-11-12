@@ -170,6 +170,45 @@ class TestMoveCopyMenu:
         assert "current folder no-op" in js_src
 
 
+class TestMessageMenuParity:
+    def test_export_anchor_matches_reference(self, client, box):
+        # reference message-menu: one download anchor with aria-haspopup,
+        # no extra dropdown icon / with-sublist item
+        html = client.get("/mail?_mbox=INBOX").get_data(as_text=True)
+        assert 'id="rcmbtn132"' in html
+        assert 'aria-haspopup="true"' in html
+        assert 'data-popup="zipdownload-menu"' in html
+        menu = html.split('id="message-menu"', 1)[1].split("</div>", 1)[0]
+        assert "button icon dropdown" not in menu
+        assert "with-sublist" not in menu
+
+    def test_zipdownload_menu_markup(self, client, box):
+        html = client.get("/mail?_mbox=INBOX").get_data(as_text=True)
+        assert 'id="zipdownload-menu"' in html
+        assert 'class="toolbarmenu menu"' in html
+        assert 'class="download eml disabled"' in html
+        assert 'id="rcmbtn101"' in html and 'id="rcmbtn103"' in html
+        assert "Message Export Options Menu" in html
+
+    def test_folder_actions_menu_matches_reference(self, client, box):
+        html = client.get("/mail?_mbox=INBOX").get_data(as_text=True)
+        assert 'id="aria-label-mailboxoptions-menu"' in html
+        assert "Folder actions menu" in html
+        assert 'class="expunge disabled"' in html
+        assert 'class="purge disabled"' in html
+        assert 'id="rcmbtn144"' in html and 'id="rcmbtn147"' in html
+
+    def test_popup_anchors_are_decorated_like_reference(self, client, box):
+        js_path = os.path.join(os.path.dirname(__file__), "..", "app", "static", "craftcube.js")
+        with open(js_path, encoding="utf-8") as fh:
+            js_src = fh.read()
+        assert "#markmessage-menu li > a" in js_src
+        assert "#mailboxoptions-menu li > a" in js_src
+        assert "#listselect-menu li > a" in js_src
+        assert "#threadselect-menu li > a" in js_src
+        assert "el.setAttribute('tabindex', on ? '0' : '-1')" in js_src
+
+
 class TestMoveCopyServer:
     def _post(self, client, act, dest="Archive", uids=("7",)):
         data = {"_mbox": "INBOX", "_act": act, "_dest": dest}

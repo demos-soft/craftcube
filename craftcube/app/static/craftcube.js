@@ -838,7 +838,10 @@
     // so enabled() can maintain active/aria-disabled like rcmail.enable_command.
     document.querySelectorAll(
         '#mailtoolbar a[href], #replyall-menu li > a, #forward-menu li > a, ' +
-        '#message-menu li > a, #download-menu li > a').forEach(function (a) {
+        '#message-menu li > a, #zipdownload-menu li > a, ' +
+        '#markmessage-menu li > a, #mailboxoptions-menu li > a, ' +
+        '#listselect-menu li > a, #threadselect-menu li > a, #list-menu li > a'
+    ).forEach(function (a) {
       if (a.hasAttribute('role')) return;
       a.setAttribute('role', 'button');
       a.setAttribute('tabindex', '0');
@@ -852,6 +855,7 @@
         if (el.classList.contains('active') || el.hasAttribute('role')) {
           el.classList.toggle('active', on);
           el.setAttribute('aria-disabled', on ? 'false' : 'true');
+          el.setAttribute('tabindex', on ? '0' : '-1');
         }
       });
     }
@@ -880,7 +884,7 @@
       // per-message action: it must stay enabled without a selection
       enabled('#message-menu a:not(.import)', hasSel);
       enabled('#message-menu a.import', true);
-      enabled('#download-menu a', hasSel);
+      enabled('#zipdownload-menu a', hasSel);
       // ui.js also enables the Mark submenu items with a selection
       enabled('#markmessage-menu a', hasSel);
       if (ctx.length === 1) {
@@ -899,7 +903,7 @@
             a.setAttribute('href', href);
           });
         // direct message actions (print/export/source) point at the viewed message
-        ['#tb-print', '#tb-export', '#tb-source'].forEach(function (idSel) {
+        ['#tb-print', '#rcmbtn132', '#tb-source'].forEach(function (idSel) {
           var a = document.querySelector(idSel);
           if (!a) return;
           var base = (a.getAttribute('href') || '#').split('?')[0];
@@ -1317,7 +1321,7 @@
 
     // Download... submenu (zipdownload): eml = single raw .eml download
     // (reference viewsource _save=1); mbox/maildir = plugin zip of selection
-    document.querySelectorAll('#download-menu a[data-dlfmt]').forEach(function (a) {
+    document.querySelectorAll('#zipdownload-menu a[data-dlfmt]').forEach(function (a) {
       a.addEventListener('click', function (e) {
         e.preventDefault();
         if (a.classList.contains('disabled')) return;

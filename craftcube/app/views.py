@@ -537,6 +537,9 @@ def mail():
     with contextlib.suppress(Exception):
         # server without QUOTA support -> zeros
         quota_used, quota_kb = box.quota_usage()
+    folder_unread = 0
+    with contextlib.suppress(Exception):
+        _total, folder_unread = box.imap.status(folder)
     return render(
         "mail",
         "mail.html",
@@ -560,6 +563,7 @@ def mail():
         quota_used=quota_used,
         quota_kb=quota_kb,
         message_count=listing["total"],
+        folder_unread=folder_unread,
     )
 
 

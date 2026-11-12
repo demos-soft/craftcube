@@ -74,15 +74,15 @@
     <li role="menuitem"><a class="import" href="#" onclick="return cc_import_dialog(event)"><span>{{ 'Import'|lc }}</span></a></li>
     {% endif %}
     {# reference elastic core mail-menu: 'download' command labelled 'Export',
-       present unconditionally in both list and message More menus; the
-       zipdownload plugin supplies the export submenu in list view #}
-    <li role="menuitem"{{ ' class="with-sublist"'|safe if not message_view and plugin_enabled('zipdownload') }}>
-      <a class="download{{ dis }}" id="tb-export" aria-haspopup="true"
-        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _save=1) if message_view else '#download' }}"><span>{{ 'Export'|lc }}...</span></a>
-      {% if not message_view and plugin_enabled('zipdownload') %}
-      <a class="button icon dropdown" role="button" href="#download" data-popup="download-menu"
-         title="{{ 'Export'|lc }}"><span class="voice">Download options</span></a>
-      {% endif %}
+       present unconditionally in both list and message More menus; with the
+       zipdownload plugin enabled the same anchor opens the export submenu
+       (aria-haspopup), exactly like the reference -- no extra dropdown icon. #}
+    <li role="menuitem">
+      <a class="download{{ dis }}" id="rcmbtn132" role="button"
+        tabindex="{{ -1 if dis else 0 }}" aria-disabled="{{ 'true' if dis else 'false' }}"
+        aria-haspopup="true"
+        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _save=1) if message_view else '#download' }}"
+        {% if not message_view and plugin_enabled('zipdownload') %}data-popup="zipdownload-menu"{% endif %}><span>{{ 'Export'|lc }}...</span></a>
     </li>
     <li role="menuitem"><a class="edit asnew{{ dis }}" data-mode="edit"
         href="{{ url_for('views.compose', _mode='edit') }}"><span>{{ 'Edit as new'|lc }}</span></a></li>
@@ -100,15 +100,18 @@
 </div>
 
 {% if plugin_enabled('zipdownload') %}
-<div id="download-menu" class="popupmenu">
-  <h2 class="voice" id="aria-label-zipdownloadmenu">Message Download Options Menu</h2>
-  <ul class="menu listing" role="menu" aria-labelledby="aria-label-zipdownloadmenu">
-    <li role="menuitem"><a class="download eml" id="dl-eml" href="#"
-        data-dlfmt="eml"><span>Source (.eml)</span></a></li>
-    <li role="menuitem"><a class="download mbox" id="dl-mbox" href="#"
-        data-dlfmt="mbox"><span>Mbox format (.zip)</span></a></li>
-    <li role="menuitem"><a class="download maildir" id="dl-maildir" href="#"
-        data-dlfmt="maildir"><span>Maildir format (.zip)</span></a></li>
+<div id="zipdownload-menu" class="popupmenu" aria-hidden="true">
+  <h2 class="voice" id="aria-label-zipdownloadmenu">{{ 'Message Export Options Menu'|lc }}</h2>
+  <ul class="toolbarmenu menu" role="menu" aria-labelledby="aria-label-zipdownloadmenu">
+    <li role="menuitem"><a class="download eml disabled" id="rcmbtn101" role="button"
+        tabindex="-1" aria-disabled="true" href="#"
+        data-dlfmt="eml"><span>{{ 'Source (.eml)'|lc }}</span></a></li>
+    <li role="menuitem"><a class="download mbox disabled" id="rcmbtn102" role="button"
+        tabindex="-1" aria-disabled="true" href="#"
+        data-dlfmt="mbox"><span>{{ 'Mbox format (.zip)'|lc }}</span></a></li>
+    <li role="menuitem"><a class="download maildir disabled" id="rcmbtn103" role="button"
+        tabindex="-1" aria-disabled="true" href="#"
+        data-dlfmt="maildir"><span>{{ 'Maildir format (.zip)'|lc }}</span></a></li>
   </ul>
 </div>
 {% endif %}
