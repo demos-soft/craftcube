@@ -212,9 +212,9 @@ def mail():
     box = imap_box()
     folder = request.args.get("_mbox") or "INBOX"
     page = int(request.args.get("_page", 1) or 1)
-    sort = request.args.get("_sort")
-    if sort is None:
-        sort = "date"
+    # config/defaults.inc.php: message_sort_col = '' (no explicit column) →
+    # Roundcube sorts by arrival (IMAPSORT UID, desc). Not sent-date.
+    sort = request.args.get("_sort") or ""
     order = request.args.get("_sort_order") or "desc"
     search = request.args.get("_q") or ""
     mods = []
