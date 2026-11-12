@@ -36,6 +36,11 @@ table.messagelist.selection td.selection { display: table-cell !important; }
   border-radius: .3rem; box-shadow: 0 6px 24px rgba(0,0,0,.18); min-width: 16rem;
   max-height: 80vh; overflow: auto; padding: .3rem 0; position: absolute; z-index: 100; }
 .popupmenu.open { display: block; }
+/* inside a popover drawer the menu sits bare in .popover-body (reference:
+   .popover-body>.popupmenu{display:block!important}, no float chrome) */
+.popover-body .popupmenu { position: static; background: transparent; border: 0;
+  border-radius: 0; box-shadow: none; min-width: 180px; max-height: none;
+  overflow: visible; padding: 0; height: 100%; z-index: auto; }
 html.dark-mode .popupmenu { background: #161b1d; border-color: #8b9fa7; color: #c5d1d3;
   box-shadow: none; }
 .popupmenu ul { list-style: none; margin: 0; padding: 0; }
@@ -156,6 +161,6 @@ html.dark-mode .ui-widget-content, html.dark-mode .ui-widget-header { color:#c5d
 /* Message-list toolbar: the Archive button only exists for an actual
    selection (reference hides it on direct ?_action=view links, showing it
    once a row is selected/clicked). */
-body.action-view:not(.has-selection) #mailtoolbar a.archive {
+body.action-view:not(.has-selection) #toolbar-menu a.archive {
   display: none;
 }

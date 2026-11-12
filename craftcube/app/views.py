@@ -847,7 +847,7 @@ def compose():
         if not to and not cc and not bcc:
             flash("No recipients given.", "error")
             return render("mail", "compose.html", prefill=prefill, identities=identities,
-                          folders=folders, error="No recipients given.")
+                          folders=folders, error="No recipients given.", action="compose")
         files = request.files.getlist("_file")
         attachments = [(f.filename, f.mimetype, f.read()) for f in files if f.filename]
         attachments += [(a["filename"], a["ctype"], a["data"]) for a in attachments_kept]
@@ -911,6 +911,7 @@ def compose():
                   responses=store.responses(session["user_id"]),
                   folders=folders, mode=mode, uid_of=uid_of,
                   draft_uid=draft_uid, attachments_kept=attachments_kept,
+                  action="compose",
                   keep_formatting=(mode == "edit"))
 
 

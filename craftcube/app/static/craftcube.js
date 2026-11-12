@@ -6,24 +6,268 @@
 (function () {
   'use strict';
 
-  // ------------------------------------------------------------ layout classes
-  function layoutClass() {
-    // Elastic breakpoints (ui.js screen_mode): phone <=480, small <=768,
-    // normal <=1200, large >1200. `touch` mode is set at <=1024.
+  // ------------------------------------------------- layout engine (ui.js)
+  // Ports Elastic's screen_mode()/screen_resize()/screen_resize_small_all()/
+  // app_menu()/show_*/hide_content machinery: on phone/small only the last
+  // selected pane is visible, the menu drawer is a .popover with an overlay,
+  // floating action buttons are created on small screens, and header titles
+  // are margin-balanced (screen_resize_headers).
+  var mode = 'large', touch = false;
+  var panes = {};
+  function pane(id) { return document.getElementById(id); }
+  function computeScreenMode() {
+    // ui.js screen_mode(): phone <=480, small <=768, normal <=1200, large
     var w = window.innerWidth;
-    var mode = w <= 480 ? 'phone' : w <= 768 ? 'small' : w <= 1200 ? 'normal' : 'large';
-    return 'layout-' + mode;
+    mode = w <= 480 ? 'phone' : w > 1200 ? 'large' : w > 768 ? 'normal' : 'small';
+    touch = w <= 1024;
   }
   function applyLayout() {
-    var c = layoutClass();
     var cls = document.documentElement.className
       .replace(/ ?layout-(phone|small|normal|large)/g, '');
-    if (window.innerWidth <= 1024) { if (cls.indexOf('touch') < 0) cls += ' touch'; }
+    if (touch) { if (cls.indexOf('touch') < 0) cls += ' touch'; }
     else cls = cls.replace(/ ?touch/g, '');
-    document.documentElement.className = (cls + ' ' + c).trim();
+    document.documentElement.className = (cls + ' layout-' + mode).trim();
   }
-  document.addEventListener('DOMContentLoaded', applyLayout);
-  window.addEventListener('resize', applyLayout);
+  function show(el, on) { if (el) el.classList.toggle('hidden', !on); }
+  var last_selected = null;
+
+  function appMenu(showIt) {
+    var menu = pane('layout-menu');
+    if (!menu) return;
+    if (showIt) {
+      if (mode === 'phone') {
+        if (!document.getElementById('menu-overlay')) {
+          var ov = document.createElement('div');
+          ov.id = 'menu-overlay';
+          ov.className = 'popover-overlay';
+          ov.addEventListener('click', function () { appMenu(false); });
+          document.body.appendChild(ov);
+        }
+        if (!menu.dataset.ccInit) {
+          menu.dataset.ccInit = '1';
+          menu.addEventListener('click', function (e) {
+            if (mode === 'phone' && e.target.closest('a')) appMenu(false);
+          });
+        }
+        menu.classList.add('popover');
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.remove('hidden', 'popover');
+      }
+    } else {
+      var o = document.getElementById('menu-overlay');
+      if (o) o.remove();
+      menu.classList.add('hidden');
+      menu.classList.remove('popover');
+    }
+  }
+
+  function smallNone() {
+    // hide back-list buttons except those living inside the sidebar
+    document.querySelectorAll('a.back-list-button').forEach(function (b) {
+      if (!b.closest('#layout-sidebar')) b.style.display = 'none';
+    });
+    // ui.js screen_resize_small_none: $('ul.menu.popupmenu').removeClass('popupmenu')
+    document.querySelectorAll('ul.menu.popupmenu').forEach(function (u) {
+      u.classList.remove('popupmenu');
+    });
+  }
+  // ui.js screen_resize_small_all/normal: $('.header > ul.menu', layout.content
+  // /layout.list).addClass('popupmenu') — the header toolbars become popups
+  // on small screens so they never crowd the header buttons
+  function popupHeaderMenus(onContent, onList) {
+    if (onContent) {
+      var c = pane('layout-content');
+      if (c) c.querySelectorAll(':scope > .header > ul.menu').forEach(function (u) {
+        u.classList.add('popupmenu');
+      });
+    }
+    if (onList) {
+      var l = pane('layout-list');
+      if (l) l.querySelectorAll(':scope > .header > ul.menu').forEach(function (u) {
+        u.classList.add('popupmenu');
+      });
+    }
+  }
+  function smallAll() {
+    var got_content = false, s;
+    var content = pane('layout-content'), list = pane('layout-list'), sidebar = pane('layout-sidebar');
+    if (content) {
+      s = content === last_selected;
+      content.classList.toggle('hidden', !s);
+      got_content = s;
+    }
+    if (list) {
+      s = !got_content && list === last_selected;
+      list.classList.toggle('hidden', !s);
+    }
+    if (sidebar) {
+      s = !got_content && (sidebar === last_selected || !list);
+      sidebar.classList.toggle('hidden', !s);
+    }
+    if (got_content) {
+      document.querySelectorAll('a.back-list-button').forEach(function (b) {
+        if (!b.closest('#layout-sidebar')) b.style.display = '';
+      });
+    }
+  }
+  function screenResize() {
+    var menu = pane('layout-menu'), sidebar = pane('layout-sidebar'),
+      list = pane('layout-list'), content = pane('layout-content');
+    if (mode === 'phone') { smallAll(); popupHeaderMenus(true, true); appMenu(false); }
+    else if (mode === 'small') { smallAll(); popupHeaderMenus(true, true); appMenu(true); }
+    else if (mode === 'normal') {
+      var s;
+      if (list) {
+        s = list === last_selected ||
+          (sidebar && last_selected !== sidebar && !sidebar.classList.contains('layout-sticky'));
+        list.classList.toggle('hidden', !s);
+      }
+      if (sidebar) {
+        s = !list || last_selected === sidebar || sidebar.classList.contains('layout-sticky');
+        sidebar.classList.toggle('hidden', !s);
+      }
+      show(content, true);
+      appMenu(true);
+      smallNone();
+      popupHeaderMenus(false, true);   // ui.js normal: only the list header menu collapses
+    } else { // large
+      [menu, sidebar, list, content].forEach(function (el) { if (el) el.classList.remove('hidden'); });
+      smallNone();
+      popupHeaderMenus(false, false);
+    }
+    screenResizeHeaders();
+  }
+  // ui.js screen_resize_headers(): balance .header-title margins so the
+  // title stays centered between the header's left/right button groups.
+  function screenResizeHeaders() {
+    document.querySelectorAll('#layout > div > .header').forEach(function (hdr) {
+      var title = null, sizes = { left: 0, right: 0 };
+      Array.prototype.forEach.call(hdr.children, function (ch) {
+        if (ch.offsetParent === null || ch.classList.contains('position-absolute')) return;
+        if (!title && ch.classList.contains('header-title')) { title = ch; return; }
+        sizes[title ? 'right' : 'left'] += ch.offsetWidth;
+      });
+      if (!title) return;
+      var right = 0, left = 0;
+      if (sizes.right >= sizes.left) { right = 0; left = sizes.right - sizes.left; }
+      else { left = 0; right = sizes.left - sizes.right; }
+      title.style.marginRight = right + 'px';
+      title.style.marginLeft = left + 'px';
+      title.style.paddingRight = '0px';
+    });
+  }
+  // show/hide navigation used by the header buttons (ui.js show_content,
+  // show_sidebar, show_list — these only rebalance headers, they do NOT
+  // re-run screen_resize, which would undo the switch via last_selected)
+  function showContent() {
+    show(pane('layout-list'), false); show(pane('layout-sidebar'), false);
+    var c = pane('layout-content'); show(c, true);
+    var sb = pane('layout-sidebar'); if (sb) sb.classList.remove('layout-sticky');
+    last_selected = c; screenResizeHeaders();
+  }
+  function showSidebar(sticky) {
+    show(pane('layout-list'), false);
+    var sb = pane('layout-sidebar'); show(sb, true);
+    if (sticky) sb.classList.add('layout-sticky');
+    if (mode === 'small' || mode === 'phone') show(pane('layout-content'), false);
+    last_selected = sb; screenResizeHeaders();
+  }
+  function showList() {
+    var list = pane('layout-list'), sidebar = pane('layout-sidebar');
+    if (!list && !sidebar) { history.back(); return; }
+    if (sidebar) { sidebar.classList.add('hidden'); sidebar.classList.remove('layout-sticky'); }
+    show(list, true);
+    if (mode === 'small' || mode === 'phone') show(pane('layout-content'), false);
+    last_selected = list; screenResizeHeaders();
+  }
+
+  // ui.js layout_init(): floating action buttons, small screens only
+  function initFabs() {
+    var list = pane('layout-list'), content = pane('layout-content');
+    if (!(list || content)) return;
+    if (!(window.innerWidth <= 768)) return;   // is_mobile()
+    var cls = document.body.className;
+    var task = (cls.match(/task-([a-z-]+)/) || [])[1] || '';
+    var action = (cls.match(/action-([a-z-]+)/) || [])[1] || 'none';
+    var fabs = [];
+    document.querySelectorAll('[data-fab]').forEach(function (button) {
+      var t = button.getAttribute('data-fab-task') || '*',
+        a = button.getAttribute('data-fab-action') || '*';
+      if ((t === '*' || t === task) &&
+        (a === '*' || a === action || (a === 'none' && action === 'none'))) fabs.push(button);
+    });
+    if (!fabs.length) return;
+    var wrap = document.createElement('div');
+    wrap.className = 'floating-action-buttons';
+    fabs.forEach(function (target) {
+      // create_cloned_button(target, false, false, true)
+      var clone = document.createElement('a');
+      clone.className = target.className
+        .replace(/btn-primary/g, 'primary').replace(/(btn[a-z-]*|button|disabled)/g, '').trim() + ' button';
+      clone.href = '#';
+      var inner = document.createElement('span');
+      inner.className = 'inner';
+      inner.textContent = target.textContent;
+      clone.appendChild(inner);
+      clone.addEventListener('click', function (e) {
+        e.preventDefault();
+        // the source may live in the hidden drawer: follow its href/click
+        if (target.tagName === 'A' && target.getAttribute('href')) location.href = target.getAttribute('href');
+        else target.click();
+      });
+      wrap.appendChild(clone);
+    });
+    (list || content).appendChild(wrap);
+  }
+
+  // ui.js toolbar_init(): the content header's .menu.toolbar is converted
+  // into a ul.menu.toolbar.listing.iconized (items wrapped in li) so the
+  // same element works inline on desktop and as a popup menu (via the
+  // popupmenu class) on small screens, opened by an added kebab button.
+  function toolbarInit() {
+    var content = pane('layout-content');
+    if (!content) return;
+    var header = content.querySelector(':scope > .header');
+    if (!header) return;
+    var toolbar = header.querySelector(':scope > .menu.toolbar, :scope > .toolbar.menu');
+    if (!toolbar || toolbar.tagName === 'UL') return;   // already converted
+    var ul = document.createElement('ul');
+    ul.className = 'menu toolbar listing iconized';
+    ul.id = 'toolbar-menu';   // ui.js toolbar_init(): the source .menu.toolbar
+    // is removed and the items re-hosted under this id
+    Array.prototype.slice.call(toolbar.childNodes).forEach(function (ch) {
+      if (ch.nodeType !== 1) return;  // drop whitespace text nodes (ui.js too)
+      var li = document.createElement('li');
+      li.setAttribute('role', 'menuitem');
+      if (ch.classList.contains('spacer')) li.className = 'spacer';
+      li.appendChild(ch);
+      ul.appendChild(li);
+    });
+    toolbar.parentNode.replaceChild(ul, toolbar);
+    ul.removeAttribute('role');  // the header div carries role=toolbar (ui.js keeps it)
+    var kebab = header.querySelector('a.toolbar-menu-button');
+    if (!kebab) {
+      kebab = document.createElement('a');
+      kebab.className = 'button icon toolbar-menu-button';
+      kebab.href = '#menu';
+      kebab.appendChild(document.createElement('span')).className = 'inner';
+      header.appendChild(kebab);
+    }
+    kebab.setAttribute('data-popup', ul.id);
+  }
+
+  function resize() {
+    computeScreenMode();
+    applyLayout();
+    screenResize();
+  }
+  document.addEventListener('DOMContentLoaded', resize);
+  var resizeTimer = null;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(resize, 25);
+  });
 
   // ui.js: buttons that should be hidden on small screen devices —
   // data-hidden="big|small|phone|large|lbs" becomes hidden-<mode> class
@@ -35,46 +279,47 @@
     });
   });
 
-  // ------------------------------------------------------------ column nav
-  var cols = ['layout-menu', 'layout-sidebar', 'layout-list', 'layout-content'];
-  function visibleColumn() {
-    for (var i = cols.length - 1; i >= 0; i--) {
-      var el = document.getElementById(cols[i]);
-      if (el && el.classList.contains('selected')) return cols[i];
-    }
-    return 'layout-list';
-  }
-  function selectColumn(id) {
-    cols.forEach(function (c) {
-      var el = document.getElementById(c);
-      if (el) el.classList.toggle('selected', c === id);
-    });
-  }
-
+  // ------------------------------------------------------ column navigation
+  // ui.js layout_init(): header buttons drive pane visibility directly
+  // (buttons.menu / back_sidebar / back_list / back_content click handlers).
   document.addEventListener('DOMContentLoaded', function () {
-    applyLayout();
-    if (document.getElementById('layout')) {
-      window.addEventListener('hashchange', onHash);
-      onHash();
+    // layout_init(): the initially selected pane is the "last selected" one
+    last_selected = document.querySelector('#layout > div.selected') ||
+      pane('layout-list') || pane('layout-sidebar') || pane('layout-content');
+    if (last_selected) last_selected.classList.add('selected');
+
+    document.querySelectorAll('a.task-menu-button').forEach(function (b) {
+      b.addEventListener('click', function (e) { e.preventDefault(); appMenu(true); });
+    });
+    document.querySelectorAll('a.back-sidebar-button').forEach(function (b) {
+      b.addEventListener('click', function (e) { e.preventDefault(); showSidebar(); });
+    });
+    document.querySelectorAll('a.back-list-button').forEach(function (b) {
+      b.addEventListener('click', function (e) { e.preventDefault(); showList(); });
+    });
+    document.querySelectorAll('a.back-content-button').forEach(function (b) {
+      b.addEventListener('click', function (e) { e.preventDefault(); showContent(); });
+    });
+    // close button in the menu drawer's popover-header
+    var menu = pane('layout-menu');
+    if (menu) {
+      var x = menu.querySelector('.popover-header a.cancel');
+      if (x) x.addEventListener('click', function (e) { e.preventDefault(); appMenu(false); });
     }
+
     initPopups();
     initList();
     initStack();
     initRefresh();
+    initFabs();
+    toolbarInit();
+    // common_content_handler on frame load: a deep-linked message preview
+    // makes the content pane the selected one on small screens
+    var mframe = document.getElementById('messagecontframe');
+    if (mframe && (window.innerWidth <= 768) &&
+        (mframe.getAttribute('src') || '').indexOf('_uid=') >= 0) showContent();
+    resize();
   });
-  function onHash() {
-    var h = location.hash.replace('#', '');
-    if (['menu', 'sidebar', 'list', 'content', 'back'].indexOf(h) < 0) return;
-    var map = { menu: 'layout-menu', sidebar: 'layout-sidebar', list: 'layout-list', content: 'layout-content' };
-    if (h === 'back') {
-      // go back one level: content->list->sidebar
-      var idx = cols.indexOf(visibleColumn());
-      selectColumn(cols[Math.max(0, idx - 1)]);
-    } else {
-      selectColumn(map[h]);
-    }
-    history.replaceState(null, '', location.pathname + location.search);
-  }
 
   // ------------------------------------------------------------ dark mode
   document.addEventListener('DOMContentLoaded', function () {
@@ -96,8 +341,18 @@
 
   // ------------------------------------------------------------ popup menus
   function initPopups() {
-    var open = null;
+    var open = null, drawer = null;
+    // ui.js is_mobile(): phone and small widths render popups as a
+    // right-side .popover drawer with a Close/Back header + overlay.
+    function isMobile() { return mode === 'phone' || mode === 'small'; }
     function close() {
+      if (drawer) {
+        // restore the menu into its original position
+        if (open._ccHome) open._ccHome.insertBefore(open, open._ccNext || null);
+        if (drawer.wrap.parentNode) drawer.wrap.remove();
+        if (drawer.overlay.parentNode) drawer.overlay.remove();
+        drawer = null;
+      }
       if (open) {
         open.classList.remove('open');
         if (open.classList.contains('searchoptions')) open.classList.add('hidden');
@@ -117,7 +372,35 @@
         menu.classList.remove('hidden');
         menu.classList.add('open');
         // inline panels (search options) expand in place; menus float
-        if (!menu.classList.contains('searchoptions')) {
+        if (menu.classList.contains('searchoptions')) {
+          // stays inline below the searchbar
+        } else if (isMobile()) {
+          // bootstrap popover on mobile: full-height drawer from the right
+          var wrap = document.createElement('div');
+          wrap.className = 'popover';
+          var hdr = document.createElement('div');
+          hdr.className = 'popover-header';
+          var back = document.createElement('a');
+          back.className = 'button icon cancel';
+          back.textContent = 'Close';
+          back.addEventListener('click', function (ev) { ev.preventDefault(); close(); });
+          hdr.appendChild(back);
+          var body = document.createElement('div');
+          body.className = 'popover-body scroller';
+          open._ccHome = menu.parentNode;
+          open._ccNext = menu.nextSibling;
+          body.appendChild(menu);
+          wrap.appendChild(hdr);
+          wrap.appendChild(body);
+          var ov = document.createElement('div');
+          ov.className = 'popover-overlay';
+          ov.style.left = '0';
+          ov.style.right = '0';
+          ov.addEventListener('click', close);
+          document.body.appendChild(ov);
+          document.body.appendChild(wrap);
+          drawer = { wrap: wrap, overlay: ov };
+        } else {
           var r = trig.getBoundingClientRect();
           menu.style.position = 'fixed';
           menu.style.top = (r.bottom + 4) + 'px';
@@ -337,7 +620,7 @@
         var q = '_mbox=' + encodeURIComponent(boxOf(uid)) + '&_uid=' + uid;
         // reply/forward/edit links point at /compose?_mode=...; append context
         document.querySelectorAll(
-            '#mailtoolbar a[href*="compose"], #forward-menu a[data-mode], ' +
+            '#toolbar-menu a[href*="compose"], #forward-menu a[data-mode], ' +
             '#replyall-menu a[data-mode], #message-menu a[data-mode]')
           .forEach(function (a) {
             var href = a.getAttribute('href') || '';
@@ -763,6 +1046,9 @@
       row.classList.add('selected', 'focused');
       row.setAttribute('aria-selected', 'true');
       frame.src = row.getAttribute('data-framed-href');
+      // common_content_handler: on small screens showing the content frame
+      // makes it the selected pane (replaces the list)
+      if (mode === 'phone' || mode === 'small') showContent();
     }
     row.addEventListener('click', function (e) {
       if (e.target.closest('a, input, button')) return;
