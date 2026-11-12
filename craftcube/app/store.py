@@ -142,6 +142,11 @@ class Store:
             c = sqlite3.connect(self.path, timeout=15)
             c.row_factory = sqlite3.Row
             c.execute("PRAGMA foreign_keys = ON")
+            # WAL: readers (incl. k8s liveness probes on /) never block
+            # behind a preferences write; NORMAL keeps it crash-safe enough
+            # for a cache-class DB.
+            c.execute("PRAGMA journal_mode = WAL")
+            c.execute("PRAGMA synchronous = NORMAL")
             self._local.conn = c
         return c
 
@@ -205,6 +210,17 @@ class Store:
     def set_user_pref(self, user_id, key, value):
         prefs = self.get_user_prefs(user_id)
         prefs[key] = value
+        with _lock:
+            c = self._conn()
+            c.execute("UPDATE users SET preferences = ? WHERE user_id = ?", (json.dumps(prefs), user_id))
+            c.commit()
+
+    def set_user_prefs(self, user_id, mapping):
+        """Bulk variant: one read + one write + one commit for a whole form
+        save. The per-key loop was O(n) transactions per preferences page
+        save and starved sqlite readers (liveness probe timeouts)."""
+        prefs = self.get_user_prefs(user_id)
+        prefs.update(mapping)
         with _lock:
             c = self._conn()
             c.execute("UPDATE users SET preferences = ? WHERE user_id = ?", (json.dumps(prefs), user_id))
@@ -361,6 +377,19 @@ class Store:
         return self._conn().execute(
             "SELECT * FROM contacts WHERE user_id = ? AND contact_id = ? AND del = 0", (user_id, contact_id)
         ).fetchone()
+
+    def email_to_contact(self, user_id, email):
+        """Address-book lookup by e-mail (RC photo/add-contact resolution).
+        Returns contact_id of the first contact whose record contains the
+        address, else None."""
+        if not email:
+            return None
+        needle = email.lower()
+        for r in self.contacts(user_id):
+            vcard = (r["vcard"] if "vcard" in r.keys() else "") or ""
+            if needle in vcard.lower() or needle in (r["email"] or "").lower():
+                return r["contact_id"]
+        return None
 
     def contact_photo(self, user_id, contact_id):
         """Raw photo bytes or None (RC stores photo as a separate blob column)."""

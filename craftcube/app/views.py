@@ -2208,9 +2208,8 @@ def render_settings_landing(open_section=None):
 
 
 def prefs_save(store, prefs, section, framed=False):
-    prefs_sections.apply_form(prefs, request.form)
-    for key, value in list(prefs.items()):
-        store.set_user_pref(session["user_id"], key, value)
+    submitted = prefs_sections.apply_form(prefs, request.form)
+    store.set_user_prefs(session["user_id"], submitted)
     # rcmail_action_settings_prefs_save saves and then reloads the language,
     # so the confirmation already shows in the new language
     g.lang = i18n.language_prop(prefs.get("language") or "en_US")

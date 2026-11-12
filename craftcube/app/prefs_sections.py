@@ -323,7 +323,8 @@ def apply_form(prefs, form):
             key = key[:-5]
         if key in CHECKBOXES:
             prefs[key] = 1 if form[name] == "1" else 0
-        elif key in SELECTS or key in FOLDERS or key in TEXTS:
+        elif key in SELECTS or key in FOLDERS or key in TEXTS \
+                or key == "default_addressbook":
             prefs[key] = form[name].strip()
     # unchecked boxes are omitted by the browser: clear the section's boxes
     section = form.get("_section", "")
