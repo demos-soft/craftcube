@@ -121,9 +121,10 @@
 
       <div id="spell-menu" class="popupmenu">
         <ul class="selectable listing iconized" role="menu">
-          <li role="menuitem"><a href="#en_US" tabindex="0" class="active" data-lang="en_US">English (US)</a></li>
-          <li role="menuitem"><a href="#en_GB" tabindex="0" class="active" data-lang="en_GB">English (GB)</a></li>
+          <!-- reference order: enchant dictionary order (CA, GB, US) -->
           <li role="menuitem"><a href="#en_CA" tabindex="0" class="active" data-lang="en_CA">English (Canada)</a></li>
+          <li role="menuitem"><a href="#en_GB" tabindex="0" class="active" data-lang="en_GB">English (GB)</a></li>
+          <li role="menuitem"><a href="#en_US" tabindex="0" class="active" data-lang="en_US">English (US)</a></li>
         </ul>
       </div>
       <div id="responses-menu" class="popupmenu">
@@ -135,7 +136,9 @@
             <li role="menuitem"><a class="insertresponse active" href="#" data-response="{{ r.response_id }}"
                 data-name="{{ r.name }}" data-html="{{ 1 if r.html else 0 }}">{{ r.name }}</a></li>
             {% else %}
-            <li role="menuitem" class="disabled"><a href="#"><span>No responses available</span></a></li>
+            {# reference: placeholder is an insertresponse link, not a plain disabled item #}
+            <li><a href="#" class="insertresponse placeholder disabled" unselectable="on"
+                tabindex="0" aria-disabled="true">No responses available</a></li>
             {% endfor %}
           </ul>
           <li role="separator" class="separator"><label>Manage responses</label></li>
