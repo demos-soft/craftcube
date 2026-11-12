@@ -267,10 +267,13 @@ class Store:
                      data["bcc"], data["signature"], int(data["html_signature"]), int(data["standard"]), now()),
                 )
             if int(data.get("standard", 0)):
-                col = "identity_id" if identity_id else "last_insert_rowid()"
+                # keep exactly one standard identity (rcmail_identity_save);
+                # compare on identity_id — evaluating last_insert_rowid() in
+                # the WHERE clause would be a constant equal to the bound id
+                iid = identity_id or c.execute("SELECT last_insert_rowid()").fetchone()[0]
                 c.execute(
-                    f"UPDATE identities SET standard = 0 WHERE user_id = ? AND del = 0 AND {col} != ?",  # noqa: S608 - col is one of two column-name literals
-                    (user_id, identity_id or c.execute("SELECT last_insert_rowid()").fetchone()[0]),
+                    "UPDATE identities SET standard = 0 WHERE user_id = ? AND del = 0 AND identity_id != ?",
+                    (user_id, iid),
                 )
             c.commit()
             return identity_id or c.execute("SELECT last_insert_rowid()").fetchone()[0]
