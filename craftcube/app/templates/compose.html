@@ -152,6 +152,7 @@
           <input type="hidden" name="_draft" value="{{ draft_uid or '' }}">
           <input type="hidden" name="_mbox" value="{{ request.values.get('_mbox') or '' }}">
           <input type="hidden" name="_format" id="composeformat" value="{{ 'html' if prefill.html else 'plain' }}">
+          {% if spell_checked %}<input type="hidden" name="_spellchecked" value="1">{% endif %}
           <input type="hidden" name="_in_reply_to" value="{{ prefill.in_reply_to }}">
           <input type="hidden" name="_references" value="{{ prefill.references }}">
           <div class="compose-headers formcontainer">
@@ -467,6 +468,21 @@
   });
   window.addEventListener('load', function () {
     cc_editor.init_editor('composebody');
+    // spellcheck_before_send: the server checked on send and came back with
+    // the misspelled words; highlight them without a new RPC
+    // (spellcheck_resume -> spellchecker.markErrors, app.js:5383).
+    // TinyMCE init is async, so retry until the editor instance is up.
+    var spell_found = {{ spell_words | default({}) | tojson }};
+    (function mark_spell(attempt) {
+      if (!Object.keys(spell_found).length || attempt > 15) return;
+      var wrapped = cc_editor.get_editor_for('composebody');
+      var ed = wrapped && wrapped.editor;  // the TinyMCE instance
+      if (ed && ed.plugins && ed.plugins.spellchecker) {
+        ed.plugins.spellchecker.markErrors({words: spell_found});
+      } else {
+        setTimeout(function () { mark_spell(attempt + 1); }, 200);
+      }
+    })(0);
     // signatures are inserted on identity *change* only (app.js
     // change_identity); drafts/new messages start without re-insertion
   });

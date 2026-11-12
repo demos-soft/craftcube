@@ -488,7 +488,11 @@ def utils_spell_html():
     else:
         text = unescape(request.form.get("text", "") or "")
         if text:
-            words = spellchecker.check(text, lang)
+            # spellcheck_ignore_* prefs (rcube_spellchecker.php:49-51)
+            up = get_store().get_user_prefs(session["user_id"])
+            ignore = {k: bool(up.get("spellcheck_ignore_" + k))
+                      for k in ("syms", "nums", "caps")}
+            words = spellchecker.check(text, lang, ignore=ignore)
             if words is None:
                 return Response(json.dumps({"error": "Internal error."}),
                                 status=500, content_type="application/json")
@@ -1196,6 +1200,39 @@ def compose():
                         "size": len(data),
                     })
 
+    spell_words = {}
+    spell_checked = False
+
+    def _compose_render():
+        return render("mail", "compose.html", prefill=prefill, identities=identities,
+                      responses=store.responses(session["user_id"]),
+                      folders=folders, mode=mode, uid_of=uid_of,
+                      draft_uid=draft_uid, attachments_kept=attachments_kept,
+                      action="compose",
+                      keep_formatting=(mode == "edit"),
+                      html_mode=html_mode,
+                      editor_cfg=editor_config("", prefs),
+                      signatures=identity_signatures(identities, prefs),
+                      identities_map={
+                          str(i["identity_id"]): {
+                              k: v for k, v in
+                              (("email", i["email"]),
+                               ("replyto", i["reply-to"] or None),
+                               ("bcc", i["bcc"] or None)) if v}
+                          for i in identities},
+                      editor_env={
+                          "task": "mail", "action": "compose",
+                          "compose_mode": {"draft": "draft", "edit": "edit",
+                                           "reply": "reply", "replyall": "reply",
+                                           "replylist": "reply"}.get(mode, ""),
+                          "top_posting": int(prefs.get("reply_mode", 0) or 0) > 0,
+                          "sig_below": bool(prefs.get("sig_below")),
+                          "show_sig": str(prefs.get("show_sig", "1")) == "1",
+                          "spell_lang": "en",
+                          "composebody": "composebody"},
+                      spell_words=spell_words, spell_checked=spell_checked,
+                      )
+
     if request.method == "POST":
         ident_id = request.form.get("_ident")
         ident = store.identity(session["user_id"], ident_id) if ident_id else store.default_identity(session["user_id"])
@@ -1227,6 +1264,25 @@ def compose():
             mdn=bool(request.form.get("_mdn")),
         )
         act = request.form.get("_action", "send")
+        # spellcheck_before_send (send.php:134-165): check the body before
+        # sending unless this form was already checked (a second Send goes
+        # through); found words are highlighted on re-render
+        if (act == "send" and prefs.get("spellcheck_before_send")
+                and body.strip() and not request.form.get("_spellchecked")):
+            from . import spellchecker
+            lang = (request.form.get("_lang") or "en_US").replace("-", "_")
+            ignore = {k: bool(prefs.get("spellcheck_ignore_" + k))
+                      for k in ("syms", "nums", "caps")}
+            with contextlib.suppress(Exception):
+                words = spellchecker.check(body, lang, ignore=ignore)
+                if words:
+                    flash("Spelling errors detected in the message.", "error")
+                    prefill.update(to=", ".join(to), cc=", ".join(cc),
+                                   bcc=", ".join(bcc), subject=subject,
+                                   body=body, html="1" if html else "")
+                    spell_words.update(words)
+                    spell_checked = True
+                    return _compose_render()
         try:
             if act == "save":
                 # the draft keeps its Bcc header
@@ -1273,35 +1329,11 @@ def compose():
             return redirect(url_for("views.mail", _mbox=store_target or box.special("sent") or "INBOX"))
         except MailError as e:
             flash(str(e), "error")
-            prefill.update(to=", ".join(to), cc=", ".join(cc), bcc=", ".join(bcc),
+            prefill.update(to=", ".join(to), cc=", ".join(cc),
                            subject=subject, body=body, html="1" if html else "")
-    return render("mail", "compose.html", prefill=prefill, identities=identities,
-                  responses=store.responses(session["user_id"]),
-                  folders=folders, mode=mode, uid_of=uid_of,
-                  draft_uid=draft_uid, attachments_kept=attachments_kept,
-                  action="compose",
-                  keep_formatting=(mode == "edit"),
-                  html_mode=html_mode,
-                  editor_cfg=editor_config("", prefs),
-                  signatures=identity_signatures(identities, prefs),
-                  identities_map={
-                      str(i["identity_id"]): {
-                          k: v for k, v in
-                          (("email", i["email"]),
-                           ("replyto", i["reply-to"] or None),
-                           ("bcc", i["bcc"] or None)) if v}
-                      for i in identities},
-                  editor_env={
-                      "task": "mail", "action": "compose",
-                      "compose_mode": {"draft": "draft", "edit": "edit",
-                                       "reply": "reply", "replyall": "reply",
-                                       "replylist": "reply"}.get(mode, ""),
-                      "top_posting": int(prefs.get("reply_mode", 0) or 0) > 0,
-                      "sig_below": bool(prefs.get("sig_below")),
-                      "show_sig": str(prefs.get("show_sig", "1")) == "1",
-                      "spell_lang": "en",
-                      "composebody": "composebody"},
-                  )
+            return _compose_render()
+
+    return _compose_render()
 
 
 # ---------------------------------------------------------------- addressbook

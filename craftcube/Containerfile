@@ -16,6 +16,11 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
+# spellchecking engine (the reference uses pspell/enchant; see app/spellchecker.py)
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends aspell aspell-en \
+    && rm -rf /var/lib/apt/lists/*
+
 # the application (node_modules and local data are excluded via .dockerignore)
 COPY . .
 

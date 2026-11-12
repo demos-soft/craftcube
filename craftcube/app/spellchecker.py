@@ -33,12 +33,28 @@ def _dict_for(lang):
     return (lang or "en").replace("-", "_")
 
 
-def check(text, lang):
+def _ignored(word, ignore):
+    """rcube_spellchecker::_is_correct() ignore options."""
+    if not ignore:
+        return False
+    if ignore.get("syms") and re.search(r"[@#$%^&_+~*=\-]", word):
+        return True
+    if ignore.get("nums") and re.search(r"[0-9]", word):
+        return True
+    return bool(ignore.get("caps") and word == word.upper())
+
+
+def check(text, lang, ignore=None):
     """rcube_spellchecker::check()/get(): {word: [suggestions]} for words
-    that are misspelled; {} when everything is fine."""
+    that are misspelled; {} when everything is fine.
+    ignore: {'syms','nums','caps'} per spellcheck_ignore_* prefs
+    (rcube_spellchecker.php:283-293 - such words count as correct)."""
     engine = _available()
     if not engine:
         return None  # engine error -> caller returns internalerror
+
+    def drop(words):
+        return {w: s for w, s in words.items() if not _ignored(w, ignore)}
     # strip html tags/entities like rcube_spellchecker does
     text = re.sub(r"<[^>]+>", " ", unescape(text))
     if engine == "hunspell":
@@ -62,11 +78,11 @@ def check(text, lang):
             sugg = [s for s in parts[1:] if not s.startswith("*")
                     and s[0] not in "+-?@"]
             words[word] = sugg
-        return words
+        return drop(words)
     # aspell
     d = lang.split("_")[0]
     out = _run(["aspell", "--lang=" + d, "list"], text)
-    return {w: [] for w in out.split() if w.strip()}
+    return drop({w: [] for w in out.split() if w.strip()})
 
 
 def add_word(word):
