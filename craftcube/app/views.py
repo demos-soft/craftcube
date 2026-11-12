@@ -2684,6 +2684,11 @@ def mail_recent():
         folders = [f["name"] for f in box.folders(subscribed_only=True)]
     except MailError:
         folders = []
+    # check_recent.php: when 'check all folders' is off, only the current
+    # folder is recounted; other folders keep their cached badges.
+    check_all = bool(prefs.get("check_all_folders"))
+    if check_recent and not check_all:
+        folders = [request.args.get("_mbox") or "INBOX"]
     for name in folders:
         try:
             total, unseen = box.imap.status(name)

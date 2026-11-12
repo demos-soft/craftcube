@@ -167,6 +167,49 @@ def test_message_format_override_wins_over_prefer_html(client, store, user, mess
     assert "Plain body" in h and "HTML body" not in h
 
 
+class RecentBox:
+    def __init__(self):
+        self.prefs = {}
+        self.status_calls = []
+
+    def folders(self, subscribed_only=False):
+        return [{"name": n} for n in ("INBOX", "Sent", "Junk")]
+
+    class Imap:
+        def __init__(self, outer):
+            self.outer = outer
+
+        def status(self, name):
+            self.outer.status_calls.append(name)
+            return (3, 1)
+
+    @property
+    def imap(self):
+        return RecentBox.Imap(self)
+
+    def __getattr__(self, name):
+        return lambda *a, **k: None
+
+
+def test_check_all_folders_controls_check_recent(client, store, user, monkeypatch):
+    box = RecentBox()
+    monkeypatch.setattr(views, "imap_box", lambda *a, **k: box)
+    monkeypatch.setattr(views, "folders_for_menu", lambda *a, **k: [])
+
+    store.set_user_prefs(user, {"check_all_folders": 0})
+    box.prefs = {"check_all_folders": 0}
+    box.status_calls = []
+    r = client.get("/mail/check-recent?_mbox=Sent")
+    assert r.status_code == 200
+    assert box.status_calls == ["Sent"], box.status_calls
+
+    store.set_user_prefs(user, {"check_all_folders": 1})
+    box.prefs = {"check_all_folders": 1}
+    box.status_calls = []
+    client.get("/mail/check-recent?_mbox=Sent")
+    assert set(box.status_calls) == {"INBOX", "Sent", "Junk"}
+
+
 def test_display_next_after_delete(client, store, user, make_box):
     box = FakeBox({"display_next": 1})
     # the list order (newest first) has the deleted uid followed by a survivor

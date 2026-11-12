@@ -1823,7 +1823,7 @@
     var listEl = document.getElementById('messagelist');
     var currentFolder = (listEl && listEl.getAttribute('data-folder')) || '';
     function tick() {
-      fetch('/mail/check-recent', {headers: {'X-Requested-With': 'XMLHttpRequest'}})
+      fetch('/mail/check-recent?_mbox=' + encodeURIComponent(currentFolder), {headers: {'X-Requested-With': 'XMLHttpRequest'}})
         .then(function (r) { return r.json(); })
         .then(function (d) {
           var changed = false, inboxPrev = -1, inboxNow = 0;
