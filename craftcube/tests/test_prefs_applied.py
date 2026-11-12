@@ -359,3 +359,31 @@ def test_mail_read_time_controls_preview_marking(client, store, user, make_box):
         html = client.get("/mail?_mbox=INBOX&_uid=10").get_data(as_text=True)
         assert f'data-read-time="{rt}"' in html, rt
         assert ("_noseen=1" in html) == noseen, rt
+
+def test_addressbook_name_listing_and_sort_col(client, store, user):
+    for first, last, addr in [("Alice", "Smith", "alice@example.org"),
+                              ("Bob", "Adams", "bob@example.org")]:
+        store.contact_save(user, {
+            "name": f"{first} {last}", "email": addr,
+            "firstname": first, "surname": last, "vcard": "",
+        })
+
+    cases = {
+        "1": ("Alice Smith", "Bob Adams"),
+        "2": ("Smith Alice", "Adams Bob"),
+        "3": ("Smith, Alice", "Adams, Bob"),
+    }
+    for mode, expected in cases.items():
+        store.set_user_prefs(user, {"addressbook_name_listing": mode})
+        h = client.get("/contacts?_dialog=1").get_data(as_text=True)
+        assert expected[0] in h and expected[1] in h, mode
+
+    # sorting column: surname puts Adams before Smith
+    store.set_user_prefs(user, {"addressbook_sort_col": "surname",
+                                "addressbook_name_listing": "0"})
+    h = client.get("/contacts?_dialog=1").get_data(as_text=True)
+    assert h.index("Adams") < h.index("Smith")
+    store.set_user_prefs(user, {"addressbook_sort_col": "firstname",
+                                "addressbook_name_listing": "0"})
+    h = client.get("/contacts?_dialog=1").get_data(as_text=True)
+    assert h.index("Alice") < h.index("Bob")
