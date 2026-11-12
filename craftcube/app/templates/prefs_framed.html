@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="iframe">
+<html lang="{{ (lang or 'en_US')[:2] }}" class="iframe">
 <head>
   <meta charset="utf-8">
   <title>{{ product_name }} :: Preferences</title>
@@ -21,7 +21,7 @@
        prefs_edit.php::run() + rcmail_output_html propform rendering) -->
   <h1 class="voice">{{ sections[section].label }}</h1>
   <div class="formcontent">
-    <form name="form" method="post"
+    <form name="form" id="form" method="post"
           action="{{ url_for('views.settings_preferences', section=section, _framed=1) }}"
           class="propform cols-sm-6-6">
       <input type="hidden" name="_section" value="{{ section }}">
@@ -50,7 +50,7 @@ if (!parent.mailvelope) $('#mailvelope-warning').show()
                 {% for s in f.fields %}
                 <select name="{{ s.name }}" id="{{ s.id }}" class="custom-select form-control pretty-select"{% if s.attrs %} {{ s.attrs|safe }}{% endif %}>
                   {% for v, l in s.options %}
-                  <option value="{{ v }}"{{ ' selected="selected"' if v and v == s.value }}>{{ l }}</option>
+                  <option value="{{ v }}"{% if v and v == s.value %} selected="selected"{% endif %}>{{ l }}</option>
                   {% endfor %}
                 </select>
                 {% endfor %}
@@ -72,7 +72,7 @@ if (!parent.mailvelope) $('#mailvelope-warning').show()
               {% if f.type == 'select' %}
               <select name="{{ f.name }}" id="{{ f.id }}" class="custom-select form-control pretty-select"{% if f.attrs %} {{ f.attrs|safe }}{% endif %}>
                 {% for v, l in f.options %}
-                <option value="{{ v }}"{{ ' selected="selected"' if v and v == f.value }}>{{ l }}</option>
+                <option value="{{ v }}"{% if v and v == f.value %} selected="selected"{% endif %}>{{ l }}</option>
                 {% endfor %}
               </select>
               {% else %}
@@ -89,7 +89,7 @@ if (!parent.mailvelope) $('#mailvelope-warning').show()
     </form>
   </div>
   <div class="formbuttons">
-    <button class="btn btn-primary submit" type="submit" value="Save">{{ 'Save'|lc }}</button>
+    <button class="btn btn-primary submit" type="submit" value="Save" form="form">{{ 'Save'|lc }}</button>
   </div>
   <div id="messagestack"></div>
   {%- with messages = get_flashed_messages(with_categories=true) %}

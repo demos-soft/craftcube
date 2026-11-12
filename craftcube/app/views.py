@@ -2602,11 +2602,28 @@ def render_settings_landing(open_section=None):
 
 
 def prefs_save(store, prefs, section, framed=False):
+    old_lang = prefs.get("language") or "en_US"
     submitted = prefs_sections.apply_form(prefs, request.form)
     store.set_user_prefs(session["user_id"], submitted)
     # rcmail_action_settings_prefs_save saves and then reloads the language,
     # so the confirmation already shows in the new language
     g.lang = i18n.language_prop(prefs.get("language") or "en_US")
+    new_lang = prefs.get("language") or "en_US"
+    if new_lang != old_lang:
+        # prefs_save.php: load_language() + output->command('reload', 500);
+        # verified live on the reference: saving a language change reloads
+        # the whole window (parent frame included) so the task-menu labels
+        # re-render translated without any manual refresh.
+        from html import escape as _esc
+        flash(i18n.gettext("successfullysaved", g.lang, domain="messages"),
+              "confirmation")
+        return Response(
+            "<!DOCTYPE html><html><body><div class=\"voice\">"
+            + _esc(i18n.gettext("successfullysaved", g.lang, domain="messages"))
+            + "</div><script>setTimeout(function(){var t=window;"
+            "if (window.parent !== window) { try { void window.parent.document;"
+            " t = window.parent; } catch (e) {} } t.location.reload();"
+            "}, 500);</script></body></html>")
     flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
     if framed:
         return redirect(url_for("views.settings_preferences", section=section,
