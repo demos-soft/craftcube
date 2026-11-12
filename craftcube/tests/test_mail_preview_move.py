@@ -198,6 +198,24 @@ class TestMessageMenuParity:
         assert 'class="purge disabled"' in html
         assert 'id="rcmbtn144"' in html and 'id="rcmbtn147"' in html
 
+    def test_list_and_thread_select_menus_match_reference(self, client, box):
+        # Reference: list-select items are active; threads menu items are
+        # disabled while list mode is active (threads command disabled).
+        html = client.get("/mail?_mbox=INBOX").get_data(as_text=True)
+        assert 'id="rcmbtn148"' in html and 'class="select all' in html
+        assert 'class="selection' in html
+        assert 'id="rcmbtn154"' in html
+        assert 'class="expand unread disabled"' in html
+        assert 'class="expand all disabled"' in html
+        assert 'class="collapse all disabled"' in html
+
+    def test_thread_select_menu_active_in_threads_mode(self, client, box, monkeypatch):
+        # list mode threads: reference thread menu items become active
+        html = client.get("/mail?_mbox=INBOX&_mode=threads").get_data(as_text=True)
+        assert 'class="expand unread active"' in html
+        assert 'class="expand all active"' in html
+        assert 'class="collapse all active"' in html
+
     def test_popup_anchors_are_decorated_like_reference(self, client, box):
         js_path = os.path.join(os.path.dirname(__file__), "..", "app", "static", "craftcube.js")
         with open(js_path, encoding="utf-8") as fh:

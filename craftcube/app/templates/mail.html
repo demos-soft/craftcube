@@ -276,16 +276,24 @@
       </ul>
     </div>
 
-    <div id="listselect-menu" class="popupmenu">
+    {% set sel_on = listing.total > 0 %}
+    <div id="listselect-menu" class="popupmenu" aria-hidden="true">
       <h3 id="aria-label-listselect-menu" class="voice">{{ 'List selection menu'|lc }}</h3>
       <ul class="menu listing" role="menu" aria-labelledby="aria-label-listselect-menu">
-        <li role="menuitem"><a class="selection toggle-link" href="#" id="list-toggle-button">{{ 'Selection'|lc }}</a></li>
-        <li role="menuitem"><a class="select all" href="#" data-select="all">{{ 'All'|lc }}</a></li>
-        <li role="menuitem"><a class="select page" href="#" data-select="page">{{ 'Current page'|lc }}</a></li>
-        <li role="menuitem"><a class="select unread" href="#" data-select="unread">{{ 'Unread'|lc }}</a></li>
-        <li role="menuitem"><a class="select flagged" href="#" data-select="flagged">{{ 'Flagged'|lc }}</a></li>
-        <li role="menuitem"><a class="select invert" href="#" data-select="invert">{{ 'Invert'|lc }}</a></li>
-        <li role="menuitem"><a class="select none" href="#" data-select="none">{{ 'None'|lc }}</a></li>
+        <li role="menuitem"><a class="selection{{ ' active' if sel_on else ' disabled' }}" href="#" id="list-toggle-button"
+            role="button" tabindex="{{ 0 if sel_on else -1 }}" aria-disabled="true">{{ 'Selection'|lc }}</a></li>
+        <li role="menuitem"><a class="select all{{ ' active' if sel_on else ' disabled' }}" href="#" data-select="all"
+            role="button" tabindex="{{ 0 if sel_on else -1 }}" aria-disabled="{{ 'false' if sel_on else 'true' }}" id="rcmbtn148">{{ 'All'|lc }}</a></li>
+        <li role="menuitem"><a class="select page{{ ' active' if sel_on else ' disabled' }}" href="#" data-select="page"
+            role="button" tabindex="{{ 0 if sel_on else -1 }}" aria-disabled="{{ 'false' if sel_on else 'true' }}" id="rcmbtn149">{{ 'Current page'|lc }}</a></li>
+        <li role="menuitem"><a class="select unread{{ ' active' if sel_on else ' disabled' }}" href="#" data-select="unread"
+            role="button" tabindex="{{ 0 if sel_on else -1 }}" aria-disabled="{{ 'false' if sel_on else 'true' }}" id="rcmbtn150">{{ 'Unread'|lc }}</a></li>
+        <li role="menuitem"><a class="select flagged{{ ' active' if sel_on else ' disabled' }}" href="#" data-select="flagged"
+            role="button" tabindex="{{ 0 if sel_on else -1 }}" aria-disabled="{{ 'false' if sel_on else 'true' }}" id="rcmbtn151">{{ 'Flagged'|lc }}</a></li>
+        <li role="menuitem"><a class="select invert{{ ' active' if sel_on else ' disabled' }}" href="#" data-select="invert"
+            role="button" tabindex="{{ 0 if sel_on else -1 }}" aria-disabled="{{ 'false' if sel_on else 'true' }}" id="rcmbtn152">{{ 'Invert'|lc }}</a></li>
+        <li role="menuitem"><a class="select none{{ ' active' if sel_on else ' disabled' }}" href="#" data-select="none"
+            role="button" tabindex="{{ 0 if sel_on else -1 }}" aria-disabled="{{ 'false' if sel_on else 'true' }}" id="rcmbtn153">{{ 'None'|lc }}</a></li>
       </ul>
     </div>
 
@@ -328,12 +336,16 @@
       </div>
     </div>
 
-    <div id="threadselect-menu" class="popupmenu">
+    {% set th_on = list_mode == 'threads' %}
+    <div id="threadselect-menu" class="popupmenu" aria-hidden="true">
       <h3 id="aria-label-threadselectmenu" class="voice">{{ 'Threads listing menu'|lc }}</h3>
       <ul class="menu listing" role="menu" aria-labelledby="aria-label-threadselectmenu">
-        <li role="menuitem"><a class="expand unread" href="#" data-thread="unread"><span>{{ 'Expand Unread'|lc }}</span></a></li>
-        <li role="menuitem"><a class="expand all" href="#" data-thread="all"><span>{{ 'Expand All'|lc }}</span></a></li>
-        <li role="menuitem"><a class="collapse all" href="#" data-thread="none"><span>{{ 'Collapse All'|lc }}</span></a></li>
+        <li role="menuitem"><a class="expand unread{{ ' active' if th_on else ' disabled' }}" href="#" data-thread="unread"
+            id="rcmbtn154" role="button" tabindex="{{ 0 if th_on else -1 }}" aria-disabled="{{ 'false' if th_on else 'true' }}">{{ 'Expand Unread'|lc }}</a></li>
+        <li role="menuitem"><a class="expand all{{ ' active' if th_on else ' disabled' }}" href="#" data-thread="all"
+            id="rcmbtn155" role="button" tabindex="{{ 0 if th_on else -1 }}" aria-disabled="{{ 'false' if th_on else 'true' }}">{{ 'Expand All'|lc }}</a></li>
+        <li role="menuitem"><a class="collapse all{{ ' active' if th_on else ' disabled' }}" href="#" data-thread="none"
+            id="rcmbtn156" role="button" tabindex="{{ 0 if th_on else -1 }}" aria-disabled="{{ 'false' if th_on else 'true' }}">{{ 'Collapse All'|lc }}</a></li>
       </ul>
     </div>
 

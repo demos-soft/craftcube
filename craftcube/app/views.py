@@ -469,7 +469,7 @@ def mail():
     list_mode = request.args.get("_mode") or (
         folder_viewmode
         if folder_viewmode in ("list", "threads")
-        else ("list" if (getattr(box, "prefs", None) or {}).get("viewmode") == "list" else "threads")
+        else ("threads" if (getattr(box, "prefs", None) or {}).get("viewmode") == "threads" else "list")
     )
     searching = bool(search or mail_mods_norm(sfilter) != "ALL" or sinterval)
 

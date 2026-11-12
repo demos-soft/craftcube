@@ -1366,6 +1366,7 @@
     document.querySelectorAll('#threadselect-menu a[data-thread]').forEach(function (a) {
       a.addEventListener('click', function (e) {
         e.preventDefault();
+        if (a.classList.contains('disabled')) return;
         setThreadState(a.getAttribute('data-thread'));
         window.cc_close_popups();
       });
