@@ -867,8 +867,8 @@ def utils_spell_html():
 @login_required
 def message_export():
     """Export messages — the zipdownload plugin's three formats:
-    eml (single raw .eml), mbox (zip with one RFC4155 mbox), maildir
-    (zip with '<uid> <subject>.eml' entries)."""
+    eml/maildir (zip of '<uid> <subject16>.eml'), mbox (zip of '<mbox>.mbox').
+    Every format is a zip, like the reference plugin."""
     box = imap_box()
     folder = request.args.get("_mbox") or "INBOX"
     uids = (request.form.getlist("_uids[]") + request.args.getlist("_uids[]")
@@ -892,40 +892,46 @@ def message_export():
             abort(404)
         return raw
 
-    if fmt == "eml" and len(uids) == 1:
-        raw = raw_for(uids[0])
-        subject = _hdr(raw, "Subject") or "message"
-        fname = _re.sub(r"[^A-Za-z0-9 ._-]", "_", subject)[:80] + ".eml"
-        return Response(raw.as_string(), mimetype="message/rfc822", headers={
-            "Content-Disposition": f"attachment; filename*=UTF-8''{fname}",
-        })
-
+    # zipdownload has no raw-eml mode: the 'eml' button maps to the maildir
+    # layout below and even a single message arrives as '<mbox>.zip'
+    from datetime import datetime
     from email.utils import parseaddr
+
+    def raw_bytes(m):
+        # stored wire bytes; get_raw_body() equivalent (no synthesized Date)
+        return getattr(m, "_raw_bytes", None) or m.as_bytes()
+
     buf = _io.BytesIO()
+    # zipdownload: zip name '<mbox>.zip' (single folder), entries keep the
+    # folder-derived name inside too
+    zname = folder + ".zip"
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
         if fmt == "mbox":
             body = b""
-            for u in uids:
+            for i, u in enumerate(uids):
                 raw = raw_for(u)
                 frm = parseaddr(str(raw.get("From", "")))[1] or "MAILER-DAEMON"
                 frm = _re.sub(r"\s", "-", frm)
-                d = _msg_date(raw) or util.to_local(__import__("datetime").datetime.now(UTC))
-                # RFC4155 "From " separator line + escaped in-body separators
-                body += (
+                d = _msg_date(raw) or datetime.now(UTC)
+                if d.tzinfo:
+                    d = d.astimezone(UTC)
+                # RFC4155 "From " separator, MBOX_DATE_FORMAT 'D M d H:i:s Y'
+                chunk = (
                     f"From {frm} {d.strftime('%a %b %d %H:%M:%S %Y')}\r\n".encode()
-                    + _re.sub(rb"(?m)^From ", b">From ", raw.as_bytes()) + b"\n")
-            z.writestr("messages.mbox", body)
-            zname = "messages.zip"
-        else:  # maildir: <folder>/<uid> <subject>.eml
+                    + _re.sub(rb"(?m)^From ", b">From ", raw_bytes(raw)))
+                if not chunk.endswith(b"\r\n"):
+                    chunk += b"\r\n"
+                body += chunk + (b"\r\n" if i < len(uids) - 1 else b"")
+            z.writestr(folder + ".mbox", body)
+        else:  # maildir / eml: '<uid> <subject16>.eml' (no folder path for
+               # a single folder — $folders is only set for multi-folder sets)
             for u in uids:
                 raw = raw_for(u)
-                subject = _hdr(raw, "Subject") or ""
-                subject = _re.sub(r"[^A-Za-z0-9 ._ -]", "", subject)[:16]
-                path = folder.replace("/", "/") + "/" if folder.upper() != "INBOX" else ""
-                z.writestr(f"{path}{u}{' ' + subject if subject else ''}.eml", raw.as_string())
-            zname = folder.rsplit("/", 1)[-1] + ".zip"
+                subject = (_hdr(raw, "Subject") or "")[:16]
+                subject = _re.sub(r"[^A-Za-z0-9 ._ -]", "", subject)
+                z.writestr(f"{u}{' ' + subject if subject else ''}.eml", raw_bytes(raw))
     return Response(buf.getvalue(), mimetype="application/zip", headers={
-        "Content-Disposition": f"attachment; filename*=UTF-8''{zname}",
+        "Content-Disposition": f'attachment; filename="{zname}"',
     })
 
 

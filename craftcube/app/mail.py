@@ -268,6 +268,9 @@ class Imap:
             with contextlib.suppress(ValueError, TypeError):
                 msg["Date"] = parsedate_to_datetime(idate).strftime(
                     "%a, %d %b %Y %H:%M:%S %z")
+        # keep the untouched wire bytes (exports must not carry the
+        # synthesized Date; rcube get_raw_body streams the stored message)
+        setattr(msg, "_raw_bytes", raw)  # noqa: B010 - dynamic payload stash
         return msg
 
     def fetch_part(self, uid, section):
