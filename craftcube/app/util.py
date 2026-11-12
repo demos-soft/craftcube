@@ -37,6 +37,11 @@ def fmt_list_date(dt):
         return dt.strftime("%d %b")
     return dt.strftime("%d.%m.%y")
 
+def fmt_summary_date(dt):
+    if dt is None:
+        return ""
+    return to_local(dt).strftime("%Y-%m-%d %H:%M")
+
 def fmt_datetime(dt):
     if dt is None:
         return ""

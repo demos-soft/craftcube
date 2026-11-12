@@ -196,17 +196,19 @@ def mail():
                   message_count=listing["total"])
 
 
-@bp.route("/message")
-@login_required
-def message_view():
-    box = imap_box()
-    folder = request.args.get("_mbox") or "INBOX"
-    uid = request.args.get("_uid")
-    if not uid:
-        abort(404)
-    framed = request.args.get("_framed") == "1"
+def _msg_date(msg):
+    dt = util.parse_header_date(msg)
+    return util.to_local(dt) if dt else None
+
+
+def _hdr(msg, name):
+    v = msg.get(name)
+    return _decode_header(str(v)) if v else ""
+
+
+def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
     try:
-        msg = box.get_message(folder, uid, mark_seen=request.args.get("_noseen") != "1")
+        msg = box.get_message(folder, uid, mark_seen=mark_seen)
     except MailError:
         abort(404)
     parts = []
@@ -218,7 +220,18 @@ def message_view():
                 parts.append(p)
     else:
         parts = [msg]
+    sender_domain = ""
+    fm = email.utils.parseaddr(_hdr(msg, "From"))[1]
+    if "@" in fm:
+        sender_domain = fm.rsplit("@", 1)[1].lower()
+    # remote-content protection (Elastic: "To protect your privacy remote
+    # resources have been blocked." + Allow button, allowed per sender)
+    allowed = allow_remote
+    if allowed is None:
+        allowed = sender_domain in (get_store().get_user_prefs(
+            session["user_id"]).get("remote_senders") or [])
     rendered = []
+    remote_blocked = False
     for p in parts:
         try:
             payload = p.get_payload(decode=True) or b""
@@ -227,14 +240,19 @@ def message_view():
         except Exception:
             text, charset = "", "utf-8"
         if p.get_content_type() == "text/html":
-            rendered.append(("html", util.sanitize_html(text)))
+            safe = util.sanitize_html(text)
+            if not allowed and util.contains_remote_content(safe):
+                safe = util.block_remote_content(safe)
+                remote_blocked = True
+            rendered.append(("html", safe))
         else:
             rendered.append(("plain", text))
     headers = []
-    for h in ("From", "To", "Cc", "Subject", "Date", "Reply-To", "Message-ID"):
-        v = msg.get(h)
+    for h in ("From", "To", "Cc", "Bcc", "Subject", "Date", "Reply-To",
+              "Followup-To", "Message-ID", "In-Reply-To", "References"):
+        v = _hdr(msg, h)
         if v:
-            headers.append((h, _decode_header(str(v))))
+            headers.append((h, v))
     attachments = []
     if msg.is_multipart():
         for i, p in enumerate(msg.walk()):
@@ -246,13 +264,71 @@ def message_view():
                     "ctype": p.get_content_type(),
                     "size": len(p.get_payload(decode=True) or b""),
                 })
-    ctx = dict(folder=folder, uid=uid, msg=msg,
-               subject=_decode_header(msg.get("Subject", "") or "(no subject)"),
-               headers=headers, parts=rendered, attachments=attachments,
-               framed=framed)
+    # prev/next within the folder (arrival order; matches date-desc listings)
+    prev_uid = next_uid = None
+    try:
+        uids = sorted(int(u) for u in box.imap.conn.uid("SEARCH", None, "ALL")[1][0].split())
+    except Exception:
+        uids = []
+    try:
+        i = uids.index(int(uid))
+        prev_uid = uids[i + 1] if i + 1 < len(uids) else None   # newer = previous entry
+        next_uid = uids[i - 1] if i > 0 else None
+    except (ValueError, IndexError):
+        pass
+    return dict(folder=folder, uid=uid, msg=msg,
+                subject=_hdr(msg, "Subject") or "(no subject)",
+                headers=headers, parts=rendered, attachments=attachments,
+                sender=util.header_addresses(msg, "From")[:1],
+                sender_domain=sender_domain,
+                remote_blocked=remote_blocked,
+                date=_msg_date(msg), prev_uid=prev_uid, next_uid=next_uid)
+
+
+@bp.route("/message")
+@login_required
+def message_view():
+    box = imap_box()
+    folder = request.args.get("_mbox") or "INBOX"
+    uid = request.args.get("_uid")
+    if not uid:
+        abort(404)
+    if request.args.get("_source"):
+        raw = box.raw_message(folder, uid)
+        return Response(raw.as_string(), mimetype="text/plain; charset=utf-8")
+    framed = request.args.get("_framed") == "1"
+    ctx = build_message_ctx(box, folder, uid,
+                            mark_seen=request.args.get("_noseen") != "1",
+                            allow_remote=True if request.args.get("_load") == "remote" else None)
+    if request.args.get("_load") == "remote" and ctx["sender_domain"]:
+        prefs = get_store().get_user_prefs(session["user_id"])
+        senders = set(prefs.get("remote_senders") or [])
+        senders.add(ctx["sender_domain"])
+        get_store().set_user_pref(session["user_id"], "remote_senders", sorted(senders))
+        ctx = build_message_ctx(box, folder, uid, mark_seen=False, allow_remote=True)
+        ctx["remote_blocked"] = False
+    ctx["framed"] = framed
+    ctx["print"] = request.args.get("_print") == "1"
     if framed:
         return render_template("message_part.html", **ctx, task="mail")
     return render("mail", "message.html", **ctx)
+
+
+@bp.route("/message/export")
+@login_required
+def message_export():
+    box = imap_box()
+    folder = request.args.get("_mbox") or "INBOX"
+    uid = request.args.get("_uid")
+    if not uid:
+        abort(404)
+    raw = box.raw_message(folder, uid)
+    import re as _re
+    subject = _hdr(raw, "Subject") or "message"
+    fname = _re.sub(r"[^A-Za-z0-9 ._-]", "_", subject)[:80] + ".eml"
+    return Response(raw.as_string(), mimetype="message/rfc822", headers={
+        "Content-Disposition": f"attachment; filename*=UTF-8''{fname}",
+    })
 
 
 @bp.route("/attachment")

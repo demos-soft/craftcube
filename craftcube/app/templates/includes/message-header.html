@@ -1,0 +1,31 @@
+        <div id="message-header">
+          <h2 class="subject">
+            <span class="voice">Subject: </span>{{ subject }}
+            {% if not framed %}
+            <a class="extwin" title="Open in new window" target="_blank"
+               href="{{ url_for('views.message_view', _mbox=folder, _uid=uid) }}"><span class="inner">Open in new window</span></a>
+            {% endif %}
+          </h2>
+          <div class="header">
+            <img src="{{ url_for('static', filename='images/contactpic.svg') }}"
+                 alt="Contact photo" class="contactphoto">
+            <div class="header-content">
+              <div class="header-summary"><span>From <span class="adr"><a href="mailto:{{ sender[0][1] if sender else '' }}"
+                    class="rcmContactAddress" title="{{ sender[0][1] if sender else '' }}">{{ sender[0][0] if sender and sender[0][0] else (sender[0][1] if sender else '') }}</a></span> on <span class="text-nowrap">{{ date|summarydate }}</span></span></div>
+              <table class="header-headers"><tbody>
+                {% for h, v in headers if h not in ('Subject',) %}
+                <tr><td class="header-title">{{ h }}</td><td class="header {{ h|lower|replace('-','') }}">{{ v }}</td></tr>
+                {% endfor %}
+              </tbody></table>
+              <div class="header-links">
+                <a href="#" class="details-toggle" onclick="var h=this.closest('.header-content'); var on=h.classList.toggle('details-view'); this.textContent = on ? 'Less' : 'More'; if(window.cc_set_summary_label) cc_set_summary_label(on ? 'Less' : 'More'); return false;">More</a>
+                {% if remote_blocked %}
+                <a class="remote-allow" href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}">Allow remote content</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          {% if remote_blocked %}
+          <div class="remote-notice">To protect your privacy remote resources have been blocked.</div>
+          {% endif %}
+        </div>

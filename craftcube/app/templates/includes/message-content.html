@@ -1,0 +1,36 @@
+        <div id="message-content">
+          <div class="leftcol" role="region" aria-labelledby="aria-label-messageattachments">
+            <h2 id="aria-label-messageattachments" class="voice">Attachments</h2>
+            {% if attachments %}
+            <ul class="attachmentslist" id="attachment-list">
+              {% for a in attachments %}
+              <li class="message-attachment aria">
+                <a class="filename" href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part) }}">{{ a.filename }}</a>
+                <span class="size">{{ a.size|size }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+            <a class="zipdownload" href="{{ url_for('views.message_export', _mbox=folder, _uid=uid) }}">Download all</a>
+            {% endif %}
+          </div>
+          <div class="rightcol" role="region" aria-labelledby="aria-label-messagebody">
+            <h2 id="aria-label-messagebody" class="voice">Message Body</h2>
+            <div id="message-objects">
+              {% if remote_blocked %}
+              <div id="remote-objects-message" class="notice">
+                <span>To protect your privacy remote resources have been blocked.</span>&nbsp;<span class="boxbuttons"><a
+                  href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}">Allow</a></span>
+              </div>
+              {% endif %}
+            </div>
+            <div id="messagebody">
+              {% for kind, body in parts %}
+                {% if kind == 'html' %}
+                <div class="message-htmlpart"><div class="rcmBody">{{ body|safe }}</div></div>
+                {% else %}
+                <div class="message-part"><div class="pre">{{ body }}</div></div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
