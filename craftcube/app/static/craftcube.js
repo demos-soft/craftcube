@@ -368,13 +368,16 @@
         // restore the menu into its original position
         if (open._ccHome) open._ccHome.insertBefore(open, open._ccNext || null);
         if (drawer.wrap.parentNode) drawer.wrap.remove();
-        if (drawer.overlay.parentNode) drawer.overlay.remove();
+        if (drawer.overlay && drawer.overlay.parentNode) drawer.overlay.remove();
         drawer = null;
       }
       if (open) {
         open.classList.remove('open');
         if (open.classList.contains('searchoptions')) open.classList.add('hidden');
         open.style.position = ''; open.style.top = ''; open.style.left = '';
+        open.style.maxHeight = '';
+        if (open._ccTrig) open._ccTrig.setAttribute('aria-expanded', 'false');
+        open._ccTrig = null;
         open = null;
       }
     }
@@ -387,6 +390,12 @@
         if (open === menu) { close(); return; }
         close();
         open = menu;
+        open._ccTrig = trig;
+        if (!trig.hasAttribute('aria-haspopup')) {
+          // ui.js:2327 -- popover triggers carry the menu a11y state
+          trig.setAttribute('aria-haspopup', 'true');
+          trig.setAttribute('aria-expanded', 'false');
+        }
         menu.classList.remove('hidden');
         menu.classList.add('open');
         // inline panels (search options) expand in place; menus float
@@ -419,12 +428,43 @@
           document.body.appendChild(wrap);
           drawer = { wrap: wrap, overlay: ov };
         } else {
+          // bootstrap popover on desktop (ui.js popup_init -> .popover()):
+          // the menu moves into a .popover shell (arrow + popover-body) that
+          // carries the border/shadow/font-size, positioned below the
+          // trigger and flipped above when there is no room.
+          var wrap = document.createElement('div');
+          wrap.className = 'popover bs-popover-bottom bs-popover-auto show';
+          wrap.setAttribute('role', 'tooltip');
+          var arrow = document.createElement('div');
+          arrow.className = 'arrow';
+          var body = document.createElement('div');
+          body.className = 'popover-body webkit-scroller';
+          open._ccHome = menu.parentNode;
+          open._ccNext = menu.nextSibling;
+          body.appendChild(menu);
+          wrap.appendChild(arrow);
+          wrap.appendChild(body);
+          document.body.appendChild(wrap);
+          drawer = { wrap: wrap, overlay: null };
+          // ui.js: cap the popup height below the window height
+          menu.style.maxHeight = Math.min(36 * 15 - 1, window.innerHeight - 30) + 'px';
           var r = trig.getBoundingClientRect();
-          menu.style.position = 'fixed';
-          menu.style.top = (r.bottom + 4) + 'px';
-          menu.style.left = Math.max(4, Math.min(r.left, window.innerWidth - menu.offsetWidth - 8)) + 'px';
-          menu.style.zIndex = 200;
+          var mw = wrap.offsetWidth;
+          var mh = wrap.offsetHeight;
+          var left = Math.max(4, Math.min(r.left + r.width / 2 - mw / 2,
+                                          window.innerWidth - mw - 4));
+          var top = r.bottom + 8;
+          if (top + mh > window.innerHeight - 4 && r.top - mh - 8 > 4) {
+            top = r.top - mh - 8;   // popover flip: place above
+            wrap.classList.remove('bs-popover-bottom');
+            wrap.classList.add('bs-popover-top');
+          }
+          wrap.style.left = (left + window.scrollX) + 'px';
+          wrap.style.top = (top + window.scrollY) + 'px';
+          arrow.style.left = Math.max(8, Math.min(r.left + r.width / 2 - left - 4, mw - 16)) + 'px';
         }
+        trig.setAttribute('aria-expanded', 'true');
+        menu.setAttribute('aria-hidden', 'false');
         return;
       }
       if (!e.target.closest('.popupmenu.open')) close();
@@ -610,9 +650,26 @@
       var tr = list.querySelector('tr.message[data-uid="' + uid + '"]');
       return tr ? (tr.getAttribute('data-box') || mbox) : mbox;
     }
+    // Elastic renders every toolbar/menu button with role=button,
+    // tabindex=0 and aria-disabled (html::button); mirror that once at init
+    // so enabled() can maintain active/aria-disabled like rcmail.enable_command.
+    document.querySelectorAll(
+        '#mailtoolbar a[href], #replyall-menu li > a, #forward-menu li > a, ' +
+        '#message-menu li > a, #download-menu li > a').forEach(function (a) {
+      if (a.hasAttribute('role')) return;
+      a.setAttribute('role', 'button');
+      a.setAttribute('tabindex', '0');
+      a.setAttribute('aria-disabled', a.classList.contains('disabled') ? 'true' : 'false');
+    });
     function enabled(sel, on) {
       document.querySelectorAll(sel).forEach(function (el) {
         el.classList.toggle('disabled', !on);
+        // reference buttons carry 'active' + aria-disabled once the command
+        // state is known (rcube_html::add_class in enable_command)
+        if (el.classList.contains('active') || el.hasAttribute('role')) {
+          el.classList.toggle('active', on);
+          el.setAttribute('aria-disabled', on ? 'false' : 'true');
+        }
       });
     }
     function updateToolbar() {
@@ -631,6 +688,11 @@
       enabled('#tb-reply', ctx.length === 1);
       enabled('#tb-replyall, #replyall-menu a[data-mode], #replyallmenulink', ctx.length === 1);
       enabled('#tb-forward, #forward-menu a[data-mode], #forwardmenulink', ctx.length === 1);
+      // 'reply-list' is only enabled when the message carries a List-Post
+      // header (app.js:448 enable_command('reply-list', env.list_post))
+      var mlRow = ctx.length === 1 ? list.querySelector('tr.message[data-uid="' + ctx[0] + '"]') : null;
+      var isList = !!(mlRow && mlRow.getAttribute('data-ml') === '1');
+      enabled('#replyall-menu a[data-mode="replylist"]', ctx.length === 1 && isList);
       enabled('#message-menu a', hasSel);
       enabled('#download-menu a', hasSel);
       if (ctx.length === 1) {

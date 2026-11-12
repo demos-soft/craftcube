@@ -174,6 +174,7 @@
               {% for m in listing['items'] %}
               <tr class="message{{ ' focused' if preview_uid == m.uid|string }}{{ ' unread' if not m.seen }}{{ ' flagged' if m.flagged }}{{ ' deleted' if m.deleted }}{{ ' thread-child' if list_mode == 'threads' and m.depth }}{{ ' thread-root' if list_mode == 'threads' }}"
                   data-uid="{{ m.uid }}" data-box="{{ m.folder or folder }}"
+                  data-ml="{{ 1 if m.ml else 0 }}"
                   {% if list_mode == 'threads' %}data-depth="{{ m.depth }}"{% endif %}>
                 <td class="selection"><input type="checkbox" name="_uids[]" value="{{ m.uid }}" tabindex="-1"></td>
                 <td class="subject" tabindex="0">

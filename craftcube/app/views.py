@@ -355,6 +355,8 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
             "headers": headers, "parts": rendered, "attachments": attachments,
             "sender": util.header_addresses(msg, "From")[:1],
             "sender_domain": sender_domain,
+            # reference 'ml' flag -- enables the Reply list menu item
+            "list_post": bool(_hdr(msg, "List-Post")),
             "remote_blocked": remote_blocked,
             "date": _msg_date(msg), "prev_uid": prev_uid, "next_uid": next_uid}
 

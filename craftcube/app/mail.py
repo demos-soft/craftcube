@@ -16,7 +16,9 @@ from email.utils import parsedate_to_datetime
 from .util import format_address, parse_header_date
 
 # fetched envelope: uid, flags, size, date, from, to, subject, reply-to, in-reply-to, message-id, attachments hint
-FETCH_ITEMS = "(FLAGS INTERNALDATE RFC822.SIZE ENVELOPE BODYSTRUCTURE)"
+# LIST-POST drives the reference's per-message "ml" flag (reply-list enable)
+FETCH_ITEMS = ("(FLAGS INTERNALDATE RFC822.SIZE ENVELOPE BODYSTRUCTURE "
+               "BODY.PEEK[HEADER.FIELDS (LIST-POST)])")
 
 SORTS = {
     "": (lambda m: m["uid"] or 0, True),          # no sorting (arrival order)
@@ -272,7 +274,10 @@ def _parse_fetch(item):
     size_m = re.search(r"RFC822\.SIZE (\d+)", meta)
     flags = [f.decode() if isinstance(f, bytes) else f
              for f in (imaplib.ParseFlags(meta.encode()) if "FLAGS" in meta else [])]
+    # the (LIST-POST) header literal is present only when the message has one
+    tail = b"".join(x for x in item[1:] if isinstance(x, bytes)).lower() if len(item) > 1 else b""
     m = {
+        "ml": b"list-post" in tail,
         "uid": int(uid_m.group(1)) if uid_m else None,
         "size": int(size_m.group(1)) if size_m else 0,
         "flags": flags,
@@ -532,10 +537,12 @@ class Mailbox:
         if not uids:
             return []
         seq = ",".join(str(u) for u in uids)
+        header_fields = ("FROM TO CC SUBJECT DATE MESSAGE-ID IN-REPLY-TO "
+                         "REFERENCES CONTENT-TYPE LIST-POST")
         typ, data = self.imap.conn.uid(
             "FETCH", seq,
-            "(FLAGS INTERNALDATE RFC822.SIZE BODYSTRUCTURE"
-            " BODY.PEEK[HEADER.FIELDS (FROM TO CC SUBJECT DATE MESSAGE-ID IN-REPLY-TO REFERENCES CONTENT-TYPE)])")
+            f"(FLAGS INTERNALDATE RFC822.SIZE BODYSTRUCTURE"
+            f" BODY.PEEK[HEADER.FIELDS ({header_fields})])")
         out = []
         if typ != "OK":
             return out
@@ -578,6 +585,9 @@ class Mailbox:
                 "date": d,
                 "attachments": attach,
                 "replied": bool(in_reply_to.strip()),
+                # reference 'ml' flag: presence of a List-Post header
+                # (program/actions/mail/index.php:591) enables Reply list
+                "ml": bool(_decode_header(msg.get("List-Post", ""))),
                 "forwarded": subject.lower().lstrip(" \t").startswith(("fwd:", "fw:", "aw:", "wg:")),
                 "subject": subject,
                 "fromto": fromto,

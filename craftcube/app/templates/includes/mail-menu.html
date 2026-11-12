@@ -56,7 +56,9 @@
   <ul class="menu listing" role="menu" aria-labelledby="aria-label-replyall-menu">
     <li role="menuitem"><a class="reply all{{ dis }}" data-mode="replyall"
         href="{{ url_for('views.compose', _mode='replyall') }}"><span>Reply all</span></a></li>
-    <li role="menuitem"><a class="reply list{{ dis }}" data-mode="replylist"
+    {# reference: 'reply-list' is enabled only for messages with List-Post #}
+    {% set ldis = dis if not message_view or list_post else ' disabled' %}
+    <li role="menuitem"><a class="reply list{{ ldis }}" data-mode="replylist"
         href="{{ url_for('views.compose', _mode='replylist') }}"><span>Reply list</span></a></li>
   </ul>
 </div>
