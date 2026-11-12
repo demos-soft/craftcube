@@ -89,7 +89,7 @@
             <span class="inner">{{ 'Options and attachments'|lc }}</span>
           </a>
           <a class="button save draft" id="tb-save" href="#" title="{{ 'Save as draft'|lc }}" tabindex="2"
-             onclick="var f=document.getElementById('composeform'),i=document.createElement('input');i.type='hidden';i.name='_action';i.value='save';f.appendChild(i);f.submit();return false;">
+             onclick="if (window.cc_save_draft) { cc_save_draft(); return false; } var f=document.getElementById('composeform'),i=document.createElement('input');i.type='hidden';i.name='_action';i.value='save';f.appendChild(i);f.submit();return false;">
             <span class="inner">{{ 'Save'|lc }}</span>
           </a>
           <span class="spacer"></span>
@@ -618,8 +618,10 @@
     window.cc_save_compose_local = save_compose_form_local;
     window.cc_skip_unsavedcheck = function () { skip_unsavedcheck = true; };
 
-    // command('savedraft') — silent AJAX variant (the reference submits the
-    // form into a hidden iframe; the _ajax endpoint answers with draft_id)
+    // command('savedraft') — the reference save_draft(): submits the form
+    // to a background target and stays on the compose screen, reporting
+    // the draft uid so the next save replaces it; "Message saved to
+    // Drafts." on success (app.js save_draft response)
     function save_draft() {
       clearTimeout(save_timer);
       if (env.draft_id && cmp_hash === compose_field_hash()) {
@@ -635,10 +637,15 @@
       fetch(form.action || window.location.href, { method: 'POST', body: fd })
         .then(function (r) { return r.json(); })
         .then(function (j) {
-          if (j && j.draft_id) {
-            env.draft_id = j.draft_id;
-            var hid = form.querySelector('[name=_draft]');
-            if (hid) hid.value = j.draft_id;
+          if (j && j.error) {
+            if (window.cc_display) cc_display(j.error, 'error');
+          } else if (j) {
+            if (j.draft_id) {
+              env.draft_id = j.draft_id;
+              var hid = form.querySelector('[name=_draft]');
+              if (hid) hid.value = j.draft_id;
+            }
+            if (window.cc_display) cc_display(cc_get_label('messagesaved'), 'confirmation');
           }
           // always remove local copy upon saving as draft (app.js:5402)
           remove_compose_data(env.compose_id);
@@ -647,6 +654,7 @@
         })
         .catch(function () { auto_save_start(); });
     }
+    window.cc_save_draft = save_draft;
 
     // auto_save_start (app.js:5423)
     var save_timer = null;

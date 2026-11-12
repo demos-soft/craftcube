@@ -160,6 +160,8 @@ JS_LABEL_KEYS = [
     # GoogieSpell plain-text checker (googiespell.js lang_*)
     "checking", "checkspelling", "resumeediting", "revertto", "nospellerrors",
     "addtodict",
+    # draft save feedback (app.js save_draft -> rcmail.response_display)
+    "messagesaved",
 ]
 
 

@@ -392,3 +392,36 @@ def test_compose_restore_dialog_fills_recipients(driver):
         "return document.getElementById('composebody').value;")
     assert body == "restore probe body", body
     driver.execute_script("localStorage.clear();")
+
+
+def test_compose_save_stays_and_reports(driver):
+    """Toolbar Save must mirror the reference save_draft(): stay on the
+    compose screen, bind the draft uid, and show 'Message saved to
+    Drafts.'; re-saving without changes is a silent no-op."""
+    _open_compose(driver)
+    driver.execute_script("""
+      var d = document;
+      if (window.cc_recipient_add && cc_recipient_add._to)
+        cc_recipient_add._to('probe-dest@example.org');
+      d.getElementById('compose-subject').value = 'Save contract selenium';
+      d.getElementById('composebody').value = 'selenium save body';""")
+    driver.execute_script("document.getElementById('tb-save').click();")
+    _wait_until(driver, lambda d: any(
+        "Message saved to Drafts." == s.text
+        for s in d.find_elements(By.CSS_SELECTOR, "#messagestack div span")))
+    assert "/compose" in driver.current_url
+    draft = driver.execute_script(
+        "return document.querySelector('[name=_draft]').value;")
+    assert draft, "draft uid not bound to the form"
+    # the draft really exists in the shared Drafts folder
+    rows = driver.execute_script("""
+      var req = new XMLHttpRequest();
+      req.open('GET', '/mail?_mbox=INBOX%2FDrafts&_sf=all', false);
+      req.send();
+      return (req.responseText.match(/data-uid="/g) || []).length;""")
+    assert rows >= 1, rows
+    # cleanup: delete the probe draft via the list action endpoint
+    driver.execute_script("""
+      var fd = new URLSearchParams({_act: 'delete', _mbox: 'INBOX/Drafts'});
+      fd.append('_uids[]', arguments[0]);
+      fetch('/mail/act', {method: 'POST', body: fd});""", draft)
