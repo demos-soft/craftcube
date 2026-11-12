@@ -1,0 +1,228 @@
+# CraftCube catalogue messages for is_IS. Converted 1:1 from the
+# Roundcube reference localization (GPL-3.0+); keep languages in
+# sync with tools/i18n.py (verify / sync / add / remove).
+errortitle: Villa kom upp!
+loginfailed: Innskráning mistókst.
+cookiesdisabled: Vafrinn þinn samþykkir ekki vefkökur.
+sessionerror: Innskráningin þín er ógild eða útrunnin.
+cookiesmismatch: Fann misræmi í vefkökum. Endilega hreinsaðu skyndiminni vafrans af vefkökum.
+storageerror: Tenging við geymsluþjón mistókst.
+servererror: Villa í þjóni!
+servererrormsg: 'Villa í þjóni: $msg'
+accountlocked: Of margar tilraunir til innskráningar. Reyndu aftur síðar.
+connerror: Villa í tengingu (mistókst að ná í þjóninn)!
+dberror: Villa í gagnagrunni!
+dbconnerror: Tókst ekki að tengjast gagnagrunninum!
+windowopenerror: Lokað var á sprettgluggann!
+requesttimedout: Fyrirspurn féll á tíma
+errorreadonly: Tókst ekki að framkvæma aðgerð. Mappa er skrifvarin.
+errornoperm: Tókst ekki að framkvæma aðgerð. Heimild var hafnað.
+erroroverquota: Tókst ekki að framkvæma aðgerð. Ekkert laust diskpláss.
+erroroverquotadelete: Ekki nægt laust diskpláss. Notaðu SHIFT+DEL til að eyða skilaboðum.
+invalidrequest: Ógild fyrirspurn! Engin gögn voru vistuð.
+invalidhost: Ógilt heiti á þjóni.
+nomessagesfound: Engin skilaboð fundust í þessu pósthólfi.
+loggedout: Þú hefur lokað setunni. Bless í bili!
+mailboxempty: Pósthólf er tómt
+nomessages: Engin skilaboð
+refreshing: Endurles...
+loading: Hleð...
+uploading: Sendi inn skrá...
+attaching: Hengi við skrá...
+uploadingmany: Sendi inn skrár...
+loadingdata: Hleð inn gögnum...
+checkingmail: Athuga með ný skilaboð...
+sendingmessage: Sendi skilaboð...
+messagesent: Skilaboðin voru send.
+savingmessage: Vista skilaboð...
+messagesaved: Skilaboð vistuð í Drög.
+successfullysaved: Vistun heppnaðist!
+savingresponse: Vista texta svars...
+deleteresponseconfirm: Ertu viss um að þú viljir eyða þessum svartexta?
+nocontactselected: Þú hefur ekki enn valið tengilið.
+addedsuccessfully: Netfangi var bætt í netfangaskrá.
+contactexists: Tengiliður með sama nafn er þegar skráður í netfangaskrána.
+contactnameexists: Tengiliður með sama nafn er þegar skráður í netfangaskrána.
+blockedimages: Til verndar hefur verið lokað á allar fjartengdar myndir í þessum skilaboðum.
+blockedresources: Til verndar hefur verið lokað á öll fjartengd tilföng.
+suspiciousemail: Þessi skilaboð innihalda grunsamleg tölvupóstföng sem gætu verið tilraun til svika.
+bccemail: Áframsendu skilaboðin innihalda leynilega viðtakendur (Bcc).
+bouncehint: Þessi skilaboð verða send án nokkurra breytinga, þ.e.a.s. með upprunalegu meginmáli, haus og viðtakendum.
+encryptedmessage: Þetta eru dulrituð skilaboð og því er ekki hægt að birta þau!
+externalmessagedecryption: Þetta eru dulrituð skilaboð og er hægt að afkóða þau með vafraviðbótinni.
+nopubkeyfor: Enginn gildur dreifilykill fannst fyrir $email
+nopubkeyforsender: Enginn gildur dreifilykill fannst fyrir sendandaauðkennið þitt. Viltu dulrita skilaboðin einungis fyrir viðtakendurna?
+encryptnoattachments: Viðhengi sem þegar er búið að senda inn er ekki hægt að dulrita. Bættu þeim við aftur í dulritunarritlinum.
+searchpubkeyservers: Viltu leita að þeim lyklum sem vantar á opinberum lyklaþjónum?
+encryptpubkeysfound: 'Eftirfarandi dreifilyklar fundust:'
+keyservererror: Mistókst að nálgast lykil á lyklaþjóni.
+keyimportsuccess: Það tókst að flytja $key dreifilykilinn inn í lyklakippuna þína.
+nocontactsfound: Engir tengiliðir fundust.
+contactnotfound: Umbeðinn tengiliður fannst ekki.
+contactsearchonly: Þú verður að nota leitarform til að sjá tengiliði úr völdu nafnaskránni.
+sendingfailed: Sending skilaboðanna misheppnaðist.
+senttooquickly: Bíða í $sec sekúndu(r) áður en þessi skilaboð eru send.
+errorsavingsent: Villa kom upp við vistun sendra skilaboða.
+errorsaving: Villa kom upp við vistun.
+errormoving: Gat ekki fært skilaboðin.
+errorcopying: Gat ekki afritað skilaboð.
+errordeleting: Gat ekki eytt skilaboðum.
+errormarking: Gat ekki merkt skilaboð.
+alerttitle: Varúð
+confirmationtitle: Ertu viss...
+deletecontactconfirm: Ertu viss um að þú viljir eyða völdum tengiliðum?
+deletegroupconfirm: Ertu viss um að þú viljir eyða völdum hópi?
+deletemessagesconfirm: Ertu viss um að þú viljir eyða völdum skilaboðum?
+deletefolderconfirm: Ertu viss um að vilja eyða þessari möppu?
+movefolderconfirm: Ertu viss um að vilja færa þessa möppu?
+purgefolderconfirm: Ertu viss um að þú viljir eyða öllum skilaboðum í þessari möppu?
+contactdeleting: Eyði tengilið(um)...
+groupdeleting: Eyði hóp...
+folderdeleting: Eyði möppu...
+foldermoving: Færi möppu...
+foldersubscribing: Tek möppu í áskrift...
+folderunsubscribing: Segi upp áskrift að möppu...
+formincomplete: Formið var ekki fyllt út að fullu
+noemailwarning: Sláðu inn gildt netfang
+nonamewarning: Sláðu inn nafn
+nopagesizewarning: Sláðu inn síðustærð
+nosenderwarning: Settu inn tölvupóstfang sendanda.
+recipientsadded: Tókst að bæta við tengilið(um).
+norecipientwarning: Í það minnsta einn viðtakandi verður að vera
+disclosedrecipwarning: Allir viðtakendur munu sjá tölvupóstföng hvers annars. Til að komast hjá þessu og vernda persónuauðkenni viðtakenda geturði notað BCC (falið afrit) reitinn.
+disclosedreciptitle: Of margir opinberir viðtakendur
+nosubjectwarning: Efnislínan er tóm. Viltu slá eitthvað inn í hana?
+nosubjecttitle: Án titils
+nobodywarning: Viltu senda þessi skilaboð án texta?
+notsentwarning: Þessi skilaboð hafa ekki verið send og eru þau með óvistaðar breytingar. Viltu henda þessum breytingum?
+restoresavedcomposedata: 'Áður skrifuð en ósend skilaboð fundust.\n\nEfni: $subject\nVistað: $date\n\nViltu endurheimta þessi skilaboð?'
+nosearchname: Sláðu inn nafn eða netfang
+notuploadedwarning: Ekki er búið að senda inn öll viðhengi. Bíddu aðeins eða hættu við innsendinguna.
+searchsuccessful: $nr skilaboð fundust.
+contactsearchsuccessful: $nr tengiliðir fundust.
+searchnomatch: Leit skilaði engu
+searching: Leita...
+checking: Gái...
+stillsearching: Enn að leita...
+nospellerrors: Engar innsláttarvillur fundust
+folderdeleted: Möppu var eytt
+foldersubscribed: Tókst að setja möppu í áskrift.
+folderunsubscribed: Tókst að taka möppu úr áskrift.
+folderpurged: Tókst að tæma möppu.
+folderexpunged: Tókst að þjappa möppu.
+deletedsuccessfully: Tókst að eyða.
+converting: Fjarlægi snið...
+messageopenerror: Gat ekki hlaðið skilaboðum inn af póstþjóni.
+filelinkerror: Mistókst að hengja við skrá.
+fileuploaderror: Innsending skráar mistókst.
+csvfilemismatch: Innflutningur á mörgum CSV-skrám með mismunandi gagnasviðum er ekki studdur.
+filesizeerror: Innsenda skráin er yfir $size leyfilegri stærð.
+filecounterror: Þú getur í mesta lagi sent inn $count skrár í einu.
+msgsizeerror: Mistókst að hengja við skrá. Fór yfir leyfilega hámarksstærð ($size) skilaboða.
+msgsizeerrorfwd: Hámarksstærð skilaboða ($size) náð. $num skilaboð hafa ekki verið hengd við.
+copysuccess: Tókst að afrita $nr tengiliði
+movesuccess: Tókst að færa $nr tengiliði
+copyerror: Gat ekki afritað neina tengiliði.
+moveerror: Gat ekki fært neina tengiliði.
+sourceisreadonly: Þessi nafnaskrárgjafi er skrifvarinn.
+errorsavingcontact: Gat ekki vistað vistfang tengiliðar.
+movingmessage: Færi skilaboð...
+copyingmessage: Afrita skilaboð...
+copyingcontact: Afrita tengiliði...
+movingcontact: Færi tengiliði...
+deletingmessage: Eyði skilaboðum...
+markingmessage: Merki skilaboð...
+addingmember: Bæti tengiliðum í hópinn...
+removingmember: Fjarlægi tengiliði úr hópi...
+receiptsent: Tókst að senda leskvittun.
+errorsendingreceipt: Gat ekki sent leskvittunina.
+deleteidentityconfirm: Ertu viss um að vilja eyða þessu auðkenni?
+nodeletelastidentity: Þú getur ekki eytt þessu auðkenni, þetta er það síðasta sem er eftir.
+forbiddencharacter: Heiti möppu inniheldur óleyfilegan staf.
+selectimportfile: Veldu skrá til að senda inn.
+addresswriterror: Valin nafnaskrá er ekki ritanleg.
+contactaddedtogroup: Tókst að bæta tengiliðunum í þennan hóp.
+contactremovedfromgroup: Tókst að fjarlægja tengiliði úr þessum hóp.
+nogroupassignmentschanged: Engin breyting á úthlutun hópa.
+importwait: Flyt inn, bíddu aðeins...
+importformaterror: Innflutningur mistókst! Innsenda skráin er ekki gild gagnainnflutningsskrá
+importconfirm: <b>Tókst að flytja inn $inserted tengiliði</b>
+importconfirmskipped: <b>Sleppti $skipped fyrirliggjandi tengiliðum</b>
+importconfirminvalid: <b>Sleppti $skipped ógildum tengiliðum</b>
+importconfirmerrors: Mistókst að flytja inn $skipped gilda tengiliði</b>
+importmessagesuccess: Tókst að flytja inn $nr skilaboð
+importmessageerror: Innflutningur mistókst! Innsenda skráin er ekki gild skilaboða- eða pósthólfsskrá
+opnotpermitted: Aðgerð ekki leyfð!
+nofromaddress: Vantar tölvupóstfang í völdu auðkenni.
+editorwarning: Ef skipt er um ritil getur snið texta tapast. Viltu halda áfram?
+httpreceivedencrypterror: Alvarleg villa kom upp í uppsetningu. Hafðu strax samband við kerfisstjórann þinn. <b>Ekki var hægt að senda skilaboðin.</b>
+smtpconnerror: 'SMTP-villa ($code): Tenging við póstþjón mistókst.'
+smtpautherror: 'SMTP-villa ($code): Auðkenning mistókst.'
+smtpfromerror: 'SMTP-villa ($code): Mistókst að setja sendanda "$from" ($msg).'
+smtptoerror: 'SMTP-villa ($code): Mistókst að bæta við viðtakandanum "$to" ($msg).'
+smtprecipientserror: 'SMTP-villa: Mistókst að þátta lista yfir viðtakendur.'
+smtputf8error: 'SMTP-villa: Vefþjónn styður ekki Unicode í tölvupóstföngum.'
+smtpsizeerror: 'SMTP-villa: Stærð skilaboða yfir takmörkum vefþjóns ($limit)'
+smtperror: 'SMTP villa: $msg'
+emailformaterror: 'Ógilt tölvupóstfang: $email'
+toomanyrecipients: Of margir viðtakendur. Fækkaðu þeim í $max.
+maxgroupmembersreached: Fjöldi meðlima í hópnum fer fram úr hámarksfjöldanum $max.
+internalerror: Innri villa kom upp. Prófaðu aftur.
+contactdelerror: Gat ekki eytt tengilið(um).
+contactdeleted: Tókst að eyða tengilið(um).
+contactrestoreerror: Gat ekki endurheimt eydda tengiliði.
+contactrestored: Tókst að endurheimta tengilið(i).
+groupdeleted: Tókst að eyða hópi.
+grouprenamed: Tókst að endurnefna hóp.
+groupcreated: Tókst að búa til hóp.
+savedsearchdeleted: Tókst að eyða vistaðri leit.
+savedsearchdeleteerror: Gat ekki eytt vistaðri leit.
+savedsearchcreated: Tókst að búa til vistaða leit.
+savedsearchcreateerror: Gat ekki búið til vistaða leit.
+messagedeleted: Tókst að eyða skilaboðum.
+messagemoved: Tókst að færa skilaboð.
+messagemovedtotrash: Tókst að færa skilaboð í rusl.
+messagecopied: Tókst að afrita skilaboð.
+messagemarked: Tókst að merkja skilaboð.
+autocompletechars: Settu inn a.m.k. $min stafi fyrir orðaklárun.
+autocompletemore: Fleiri samsvarandi færslur fundust. Sláðu inn fleiri stafi.
+namecannotbeempty: Nafn má ekki vera autt.
+nametoolong: Nafn er of langt.
+namedotforbidden: Heiti möppu má ekki byrja á punkti.
+folderupdated: Tókst að uppfæra möppu
+foldercreated: Tókst að búa til möppu.
+invalidimageformat: Ekki gilt myndasnið.
+mispellingsfound: Stafsetningarvillur fundust í skilaboðunum.
+parentnotwritable: Tókst ekki að útbúa möppu eða færa inn í valda yfirmöppu. Það vantar aðgangsheimildir.
+messagetoobig: Efnishluti skilaboðanna er of stór til að hægt sé að meðhöndla skilaboðin.
+attachmentvalidationerror: 'Þetta viðhengi er grunsamlegt þar sem tegund þess samsvarar ekki tegundinni sem gefin er upp í skilaboðunum. Ef þú treystir ekki sendandanum, ættirðu ekki að opna það í vafranum því það gæti innihaldið óværur.<br/><br/><em>Átti von á: $expected; fann: $detected</em>'
+noscriptwarning: 'Aðvörun: Þessi vefpóstþjónusta þarfnast JavaScript! Til að nota hana þarftu að virkja JavaScript í stillingum vafrans.'
+messageissent: Þessi skilaboð hafa þegar verið send, en hafa ekki verið vistuð. Viltu vista þau núna?
+errnotfound: Skrá fannst ekki
+errnotfoundexplain: Umbeðið tilfang fannst ekki!
+errfailedrequest: Beiðni misfórst
+errauthorizationfailed: Auðkenning mistókst
+errunauthorizedexplain: Gat ekki gengið úr skugga um að þú hafir heimild til að nota þessa þjónustu!
+errrequestcheckfailed: Athugun á beiðni mistókst
+errcsrfprotectionexplain: 'Til að verja þig er aðgangur að þessu tilfang gerður öruggur á móti CSRF.
+
+  Ef þú sérð þetta er líklegast að þú hafir ekki skráð þig út áður en þú hættir í vefviðmótinu.
+
+
+  Nú þarftu að grípa til aðgerða til að geta haldið áfram.'
+errcontactserveradmin: Hafðu samband við kerfisstjóra þjónsins þíns
+clicktoresumesession: Smelltu hér til að halda áfram með fyrri setu
+errcomposesession: Villa í samningarsetu
+errcomposesessionexplain: Umbeðin samningarseta fannst ekki.
+clicktocompose: Smelltu hér til að búa til ný skilaboð
+nosupporterror: Þessi eiginleiki er ekki studdur af vafranum þínum.
+siginserted: Tókst að setja inn undirskrift.
+responseinserted: Tókst að setja inn svar.
+noresponsesavailable: Engin svör tiltæk
+listempty: Listinn er tómur.
+listusebutton: Notaðu 'Búa til' hnappinn til að bæta við færslu.
+keypaircreatesuccess: Tókst að útbúa nýtt lyklapar fyrir $identity.
+emptyattachment: Þetta viðhengi lítur út fyrir að vera tómt. <br>Hafðu samband við þann sem sendi þetta.
+oauthloginfailed: OAuth-innskráning mistókst. Reyndu aftur.
+oauthinvalidrequest: Auðkenningarbeiðni var ógild eða ófullgerð.
+oauthaccessdenied: Auðkenningarþjónn eða notandi höfnuðu beiðninni.

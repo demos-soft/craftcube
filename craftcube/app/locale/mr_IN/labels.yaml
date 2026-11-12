@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for mr_IN. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: $product वरती स्वागत आहे
+username: वापरकर्त्याचे नाव(तुमचे इमेल)
+password: परवलीचा शब्द
+server: सर्व्हर
+login: प्रवेश
+logout: बाहेर जा
+mail: इ-मेल
+settings: तुमची पसंती
+addressbook: पत्ता नोंदवही
+inbox: आलेले संदेश
+drafts: मसुदा
+sent: पाठवलेले
+trash: कचरा पेटी
+junk: नको असलेले कचरा संदेश
+subject: विषय
+from: प्रेषक
+sender: प्रेषक
+to: प्रती
+cc: प्रत
+bcc: गुप्त प्रत
+replyto: यास उत्तर द्या
+date: दिनांक
+size: आकार
+priority: प्राधान्य
+organization: संस्था
+readstatus: वाचन स्थिती
+listoptions: विकल्प सूची
+mailboxlist: फोल्डर्स
+messagesfromto: संदेश $from कडून $to साठी $count वा
+threadsfromto: धागे $from कडून $to साठी $count वा
+messagenrof: Message $nr of $count
+copy: नक्‍कल
+move: हलवा
+moveto: या फोल्डरमधे ठेवा
+download: उतरवून घ्या
+filename: फाईलचे नाव
+filesize: फाईलचा आकार
+addtoaddressbook: पत्ता नोंदवहीत नोंदवा
+sun: रवी
+mon: सोम
+tue: मंगळ
+wed: बुध
+thu: गुरु
+fri: शुक्र
+sat: शनी
+sunday: रविवार
+monday: सोमवार
+tuesday: मंगळवार
+wednesday: बुधवार
+thursday: गुरुवार
+friday: शुक्रवार
+saturday: शनीवार
+jan: जाने
+feb: फेब्
+mar: मार्च
+apr: एप्रिल
+may: मे
+jun: जून
+jul: जुलै
+aug: ऑगस्ट
+sep: सप्टें
+oct: ऑक्टो
+nov: नोव्हें
+dec: डिसें
+longjan: जानेवारी
+longfeb: फेब्रूवारी
+longmar: मार्च
+longapr: एप्रिल
+longmay: मे
+longjun: जून
+longjul: जुलै
+longaug: ऑगस्ट
+longsep: सप्टेंबर
+longoct: ऑक्टोबर
+longnov: नोव्हेंबर
+longdec: डिसेंबर
+today: आज
+refresh: अद्ययावत करा
+checkmail: नवीन संदेश आले आहेत का पहा
+compose: नवीन संदेश तयार करा
+writenewmessage: नवीन संदेश तयार करा
+reply: उत्तर दया
+replytomessage: पाठवणार्‍याला उत्तर द्या
+replytoallmessage: पाठवणार्‍याला आणि प्रत केलेल्या सर्वांना संदेश पाठवा
+replyall: सर्वांना उत्तर दया
+forwardmessage: हा संदेश पुढे पाठवा
+deletemessage: संदेश काढून टाका
+movemessagetotrash: संदेश कचरापेटीत टाका
+printmessage: हा संदेश छापा
+previousmessage: आधिचा संदेश दाखवा
+firstmessage: पहिला संदेश दाखवा
+nextmessage: नंतरचा संदेश दाखवा
+lastmessage: शेवटचा संदेश दाखवा
+backtolist: संदेशांच्या यादीकडे परत चला
+viewsource: मूळ संदेशाचा प्रोग्राम कोड दाखवा
+mark: खूण
+markmessages: संदेशांना खूण करा
+markread: वाचलेला म्हणून खूण करा
+markunread: न वाचलेला म्हणून खूण करा
+markflagged: खूण लावलेला म्हणून खूण करा
+markunflagged: खूण काढलेला म्हणून खूण करा
+moreactions: अधिक कृती..
+more: अधिक
+back: मागे
+options: पर्याय
+select: निवडा
+all: सर्व
+none: कोणताही नाही
+currpage: सध्‍याचे पान
+unread: न वाचलेले
+flagged: खूण लावलेले
+unanswered: उत्तर न दिलेले
+deleted: काढून टाकलेला(ले)
+invert: उलट करा
+filter: गाळणी
+list: यादी
+threads: धागे
+expand-all: सर्व विस्‍तारीत करा
+expand-unread: न वाचलेला विस्‍तारा
+collapse-all: सर्व मिटवा
+threaded: धागा लावलेला
+autoexpand_threads: संदेश धागे विस्‍तारा
+do_expand: सर्व धागे
+expand_only_unread: फक्‍त न वाचलेल्‍या संदेशांबददल
+fromto: पाठवणारा/प्रती
+flag: खूण
+attachment: जोड
+nonesort: कोणताही नाही
+sentdate: पाठवणी दिनांक
+arrival: आगमन दिनांक
+asc: चढत्‍या क्रमाने
+desc: उतरत्‍या क्रमाने
+listcolumns: सुची स्‍तंभ
+listsorting: स्‍तंभ वर्गीकरण
+listorder: वर्गीकरण क्रम
+listmode: यादी दर्शक पध्‍दत
+layoutlist: यादी
+folderactions: फोल्डर कृती..
+compact: छोटा
+empty: रिकामा
+quota: डिस्कचा वापर
+unknown: माहित नसलेला
+unlimited: अमर्याद
+quicksearch: चटकन शोध
+resetsearch: परत शोध
+searchmod: बदलकर्त्‍यांना शोधा
+msgtext: संपूर्ण संदेश
+openinextwin: नवीन खिडकी उघडा
+emlsave: इएमएल स्‍वरूपात उतरवून घ्या
+editasnew: नवीन आहे असा संपादित करा
+sendmessage: आत्ता पाठवा
+savemessage: हा मसूदा साठवून ठेवा
+addattachment: फाईल सोबत जोडा
+charset: कॅरेक्टर सेट
+editortype: संपादकाचा प्रकार
+returnreceipt: पोच पावती
+dsn: पोच स्थिती निर्देशक
+mailreplyintro: '$date या दिवशी $sender ने लिहीले :'
+originalmessage: खरा संदेश
+editidents: ओळख संपादित करा
+spellcheck: लिखाण
+checkspelling: शुध्द लेखन
+resumeediting: परत संदेश संपादित करा
+revertto: परत जा
+attach: जोडा
+attachments: जोडलेल्या
+upload: चढवा
+close: बंद
+messageoptions: संदेश पर्याय..
+low: कमी
+lowest: कमित कमी
+normal: नेहमी प्रमाणे
+high: तातडीचे
+highest: अतिशय तातडीचे
+nosubject: (विषय नाही)
+showimages: चित्र दाखवा
+alwaysshow: $sender कडून आलेल्या संदेशातील चित्रे नेहमी दाखवा
+isdraft: हा मसुदा संदेश आहे
+htmltoggle: एच टी एम एल
+plaintoggle: साधे लिखाण
+savesentmessagein: पाठवलेला संदेश या फोल्डरमधे ठेवा
+dontsave: संदेश साठवू नका
+maxuploadsize: जास्‍तीत जास्‍त फाइलचा आकार $size असू शकतो
+addcc: प्रत करा
+addbcc: गुप्त प्रत करा
+addreplyto: आणखी लोकांना संदेश पाठवा
+mdnrequest: हा संदेश पाठवणार्‍याने हा संदेश तुम्ही वाचल्यावर कळवावयाला सांगितले आहे. तुम्हाला असे कळवणे चालेल ना?
+receiptread: पोच पावती (संदेश वाचला)
+yourmessage: ही तुमच्या संदेशाची पोच पावती आहे.
+receiptnote: 'सूचना: ही पोच पावती तुम्ही ज्यांना  संदेश पाठवला त्यांच्या संगणकावर दिसला एवढेच सांगते. तुम्ही ज्यांना हा संदेश पाठवला, त्यांनी तो वाचला, आणि त्यांना तो नक्की समजला हे मात्र सांगत नाही.'
+name: टोपणनाव
+firstname: नाव
+surname: आडनाव
+middlename: मधले नाव
+nickname: टोपणनाव
+jobtitle: कामाचे शिर्षक
+department: विभाग
+gender: लिंग
+email: इ-मेल्
+phone: दूरध्वनी
+address: पत्ता
+street: रस्ता
+locality: शहर
+region: राज्य / संस्थान
+country: देश
+birthday: वाढदिवस
+website: संकेतस्थळ
+notes: टिपा
+male: पुरूष
+female: स्त्री
+manager: व्यवस्थापक
+assistant: सहाय्यक
+search: शोध
+advsearch: प्रगत शोध
+advanced: आधुनिक
+other: इतर
+typehome: मुख्यपृष्ठ
+typework: काम
+typeother: इतर
+typemobile: भ्रमणध्वनी
+typemain: मुख्य
+typevideo: चलचित्र
+typeassistant: सहाय्यक
+typehomepage: मुख्य पृष्ठ
+editcontact: नोंदवहीतील पत्ता सुधारा
+contacts: संपर्क
+personalinfo: वैयक्तिक माहिती
+edit: संदेश तयार करा
+cancel: रद्द करा
+save: ठेवून द्या
+delete: काढून टाका
+rename: दूसरे नाव द्या
+addphoto: समावेश करा
+replacephoto: बदला
+deletecontact: खूण केलेले सर्व संपर्काचे पत्ते काढून टाका
+composeto: साठी नवीन संदेश तयार करा
+contactsfromto: $from पासून ते $to पर्यंत $count पैकी
+print: छापा
+export: निर्यात करा
+exportvcards: व्ही कार्ड स्वरुपात पत्ते निर्यात करा
+groupdelete: गट नष्ट करा
+previouspage: आधिचा संच दाखवा
+firstpage: पहिला संच दाखवा
+nextpage: नंतरचा संच दाखवा
+lastpage: शेवटचा संच दाखवा
+group: गट
+groups: अनेक गट
+personaladrbook: वैयक्तिक पत्ते
+searchsave: शोध जतन करा
+searchdelete: शोध नष्ट करा
+import: आयात करा
+importcontacts: पत्ते आयात करा
+importreplace: संपूर्ण पत्ता नोंदवही बदला
+done: झाले
+settingsfor: साठी सेटिंग्ज
+about: च्या विषयी
+preferences: तुमची पसंती
+userpreferences: वापरकर्त्याची पसंती
+editpreferences: वापरकर्त्याची पसंती सुधारा
+identities: ओळख
+preferhtml: एच टी एम एल दाखवा
+defaultcharset: नेहमीचा अक्षर संच
+htmlmessage: एच टी एम एल संदेश
+prettydate: विशेष दिवस
+setdefault: हा नेहमीसाठी वापरा
+autodetect: स्वयंचलित
+language: भाषा
+timezone: वेळ  क्षेत्र
+pagesize: प्रत्येक पानावरील ओळी
+signature: सही
+dstactive: दिवसाची वेळ
+htmleditor: एच टी एम एल संदेश तयारा करा
+htmlsignature: एच टी एम एल सही
+previewpane: प्रक्रियापूर्व तावदान दाखवा
+skin: दृष्य गोष्टी
+logoutclear: खात्यातून बाहेर पडतांना कचरा पेटी साफ करा
+logoutcompact: खात्यातून बाहेर पडतांना आलेल्या संदेशांना छोटे आणि व्यवस्थित करा
+uisettings: वापरकर्त्यासाठीचा इंटरफेस
+serversettings: सर्व्हरची सेटिंग्ज
+mailboxview: टपालपेटी पहाणे
+mdnrequests: पाठवणार्‍याच्या सूचना
+askuser: वापरकर्त्याला विचारा
+autosend: स्वयंचलित (आपोआप पाठवणे)
+readwhendeleted: काढून टाकल्यावर संदेश वाचला असे दाखवा
+flagfordeletion: संदेश काढून टाकण्या ऎवजी संदेश काढून टाकण्यासाठी आहे अशी खूण करा
+skipdeleted: काढून टाकलेले संदेश दाखवू नका
+deletealways: जर संदेश कचरापेटीत गेले नाहीत तर काढून टाका
+showremoteimages: संदेशातील चित्रे दाखवा
+fromknownsenders: माहितीतील पाठवणार्‍याकडून संदेश
+always: नेहमी
+showinlineimages: सोबत जोडलेली चित्रे संदेशाच्या खाली दाखवा
+autosavedraft: मसूदा आपोआप जतन करा
+everynminutes: प्रत्येक $n मिनिटांनी
+never: कधीच नाही
+immediately: ताबडतोब
+messagesdisplaying: संदेश दाखवा
+messagescomposition: संदेश तयार करा
+mimeparamfolding: सोबत दिलेल्या फाईल्सची नावे
+2231folding: संपूर्ण आर एफ सी 2231(थंडरबर्ड)
+miscfolding: आर एफ सी  2047/2231 (मायक्रोसॉफ़्ट आऊटलूक)
+2047folding: संपूर्ण आर एफ सी 2047(ईतर)
+force7bit: 8 अक्षरी एमआयएमई संक्षिप्‍तरूप वापरा
+advancedoptions: अधिक पर्याय
+focusonnewmessage: ब्राऊझर खिडकी नवीन संदेशावर केंद्रित करा
+checkallfolders: सर्व फोल्डरमधे नवीन संदेश शोधा
+mainoptions: मुख्‍य पर्याय
+section: भाग
+maintenance: देखभाल
+newmessage: नवीन संदेश
+signatureoptions: सही पर्याय
+whenreplying: उत्‍तर देताना
+replytopposting: नवीन संदेश मुळ संदेशाच्‍या वर चालू करा
+replybottomposting: नवीन संदेश मुळ संदेशाच्‍या खाली चालू करा
+replyremovesignature: उत्‍तर देताना मुळ सही संदेशातून काढून टाका
+autoaddsignature: आपोआप सही करा
+newmessageonly: फक्‍त नवीन संदेश
+replyandforwardonly: फक्‍त उत्‍तरे आ‍णी पुढे पाठवलेले संदेश
+insertsignature: सही मध्‍ये टाका
+afternseconds: $n क्षणानंतर
+reqmdn: नेहमी पोचपावतीची विनंती करा
+reqdsn: नेहमी पोचपावती स्थिती निर्देशाची विनंती करा
+allmessages: सर्व संदेश
+folder: फोल्डर
+folders: फोल्डर्स
+foldername: फोल्डरचे नाव
+subscribed: वर्गणिदार होणे
+messagecount: संदेश
+create: तयार करा
+createfolder: नवीन फोल्डर तयार करा
+managefolders: फोल्डर्सचे नियोजन करा
+specialfolders: विषेश फोल्डर
+sortby: ने वर्गवारी करा
+sortasc: चढत्या क्रमाने
+sortdesc: उतरत्या क्रमाने
+B: बाइट
+KB: केबी
+MB: एमबी
+GB: जीबी
+unicode: युनिकोड
+english: इंग्रजी
+westerneuropean: पश्चिम युरोपियन
+easterneuropean: पूर्व युरोपियन
+southeasterneuropean: दक्षिणपूर्व युरोपियन
+baltic: बाल्‍टीक
+cyrillic: सिरीलिक
+arabic: अरेबिक
+greek: ग्रीक
+hebrew: हिब्रु
+turkish: तुर्कि
+nordic: नॉर्डिक
+thai: थाइ
+celtic: सेल्टिक
+vietnamese: व्हिएतनामी
+japanese: जपानी
+korean: कोरियन
+chinese: चिनी
+oauthlogin: ''
+menu: ''
+darkmode: ''
+lightmode: ''
+show_real_foldernames: ''
+followupto: ''
+listoptionstitle: ''
+fromtoshort: ''
+copyto: ''
+open: ''
+showattachment: ''
+showanyway: ''
+replylist: ''
+forward: ''
+forwardinline: ''
+forwardattachment: ''
+bouncemsg: ''
+bounce: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+markallread: ''
+folders-cur: ''
+folders-sub: ''
+folders-all: ''
+composeoptions: ''
+optionsandattachments: ''
+actions: ''
+first: ''
+last: ''
+previous: ''
+next: ''
+selection: ''
+isread: ''
+unflagged: ''
+withattachment: ''
+undeleted: ''
+replied: ''
+forwarded: ''
+showunread: ''
+lmode: ''
+layout: ''
+layoutwidescreen: ''
+layoutdesktop: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+importmessages: ''
+mailimportdesc: ''
+mailimportzip: ''
+quotatype: ''
+quotatotal: ''
+quotaused: ''
+quotastorage: ''
+quotamessage: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+searchplaceholder: ''
+body: ''
+type: ''
+namex: ''
+searchscope: ''
+currentfolder: ''
+subfolders: ''
+allfolders: ''
+searchinterval-1W: ''
+searchinterval-1M: ''
+searchinterval-1Y: ''
+searchinterval1W: ''
+searchinterval1M: ''
+searchinterval1Y: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+changeformattext: ''
+changeformathtml: ''
+send: ''
+keepformatting: ''
+selectimage: ''
+addimage: ''
+selectmedia: ''
+addmedia: ''
+encrypt: ''
+encryptmessage: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+encryptandsign: ''
+keyid: ''
+keylength: ''
+keyexpired: ''
+keyrevoked: ''
+bccinstead: ''
+addheader: ''
+insert: ''
+insertcontact: ''
+recipient: ''
+recipientedit: ''
+restore: ''
+restoremessage: ''
+ignore: ''
+responses: ''
+insertresponse: ''
+manageresponses: ''
+newresponse: ''
+addresponse: ''
+editresponse: ''
+editresponses: ''
+responsename: ''
+responsetext: ''
+uploadprogress: ''
+togglecomposeoptions: ''
+attachmentrename: ''
+allow: ''
+alwaysallow: ''
+andnmore: ''
+details: ''
+summary: ''
+headers: ''
+allheaders: ''
+togglemoreheaders: ''
+togglefullheaders: ''
+addfollowupto: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nameprefix: ''
+namesuffix: ''
+maidenname: ''
+zipcode: ''
+anniversary: ''
+instantmessenger: ''
+nonbinary: ''
+othergender: ''
+spouse: ''
+allfields: ''
+searchresult: ''
+printcontact: ''
+qrcode: ''
+typehomefax: ''
+typeworkfax: ''
+typecar: ''
+typepager: ''
+typeblog: ''
+typeprofile: ''
+addfield: ''
+addcontact: ''
+contactproperties: ''
+contactnameandorg: ''
+personal: ''
+contactphoto: ''
+discard: ''
+continue: ''
+ok: ''
+uploadphoto: ''
+choosefile: ''
+choosefiles: ''
+browse: ''
+newcontact: ''
+exportall: ''
+exportsel: ''
+newgroup: ''
+addgroup: ''
+grouprename: ''
+groupassign: ''
+groupremove: ''
+groupremoveselected: ''
+uponelevel: ''
+listgroup: ''
+importfromfile: ''
+importtarget: ''
+importgroups: ''
+importgroupsall: ''
+importgroupsexisting: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+manageidentities: ''
+newidentity: ''
+addidentity: ''
+editidentity: ''
+identityencryption: ''
+messagepart: ''
+digitalsig: ''
+dateformat: ''
+timeformat: ''
+showinextwin: ''
+composeextwin: ''
+htmlonreply: ''
+htmlonreplyandforward: ''
+showemail: ''
+autosendknown: ''
+autosendknownignore: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+ignorerequest: ''
+deletejunk: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+refreshinterval: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+displaynext: ''
+defaultfont: ''
+browseroptions: ''
+replyempty: ''
+replytoppostingnoindent: ''
+sigbelow: ''
+sigseparator: ''
+automarkread: ''
+alwayskeepformatting: ''
+replysamefolder: ''
+defaultabook: ''
+autocompletesingle: ''
+listnamedisplay: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+spellcheckbeforesend: ''
+spellcheckoptions: ''
+spellcheckignoresyms: ''
+spellcheckignorenums: ''
+spellcheckignorecaps: ''
+addtodict: ''
+editoroptions: ''
+enableautolink: ''
+mailtoprotohandler: ''
+standardwindows: ''
+forwardmode: ''
+inline: ''
+asattachment: ''
+replyallmode: ''
+replyalldefault: ''
+replyalllist: ''
+olderxdays: ''
+properties: ''
+folderproperties: ''
+parentfolder: ''
+location: ''
+info: ''
+getfoldersize: ''
+changesubscription: ''
+foldertype: ''
+personalfolder: ''
+otherfolder: ''
+sharedfolder: ''
+findfolders: ''
+findcontacts: ''
+findmail: ''
+namespace.personal: ''
+namespace.other: ''
+namespace.shared: ''
+dualuselabel: ''
+dualusemail: ''
+dualusefolder: ''
+generate: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+encryption: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+undo: ''
+installedplugins: ''
+plugin: ''
+version: ''
+source: ''
+destination: ''
+license: ''
+skinauthor: ''
+support: ''
+savedsearches: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+arialabeltopnav: ''
+arialabeltasknav: ''
+arialabeltoolbar: ''
+arialabellistnav: ''
+arialabelactivetask: ''
+arialabelmessagessearchfilter: ''
+arialabelmailsearchform: ''
+arialabelcontactsearchform: ''
+arialabelmailquicksearchbox: ''
+arialabelquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfoldersearchform: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabelmailpreviewframe: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmessagenav: ''
+arialabelmessagebody: ''
+arialabelmessageactions: ''
+arialabelcontactquicksearch: ''
+arialabelcontactsearchbox: ''
+arialabelmessageheaders: ''
+arialabelforwardingoptions: ''
+arialabelreplyalloptions: ''
+arialabelmoremessageactions: ''
+arialabelmorecontactactions: ''
+arialabelmarkmessagesas: ''
+arialabelcomposeoptions: ''
+arialabelresponsesmenu: ''
+arialabelattachmentuploadform: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+arialabelattachmentpreview: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabelabookgroupoptions: ''
+arialabelpreferencesform: ''
+arialabelidentityeditfrom: ''
+arialabelresponseeditfrom: ''
+arialabelsearchterms: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

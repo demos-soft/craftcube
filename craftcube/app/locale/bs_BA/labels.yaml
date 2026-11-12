@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for bs_BA. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Dobrodošli u $product
+username: Korisnik
+password: Šifra
+server: Server
+login: Prijava
+logout: Odjava
+mail: Email
+settings: Podešavanja
+addressbook: Adresar
+inbox: Sanduče
+drafts: Skice
+sent: Poslano
+trash: Smeće
+junk: Spam
+show_real_foldernames: Prikaži prava imena specijalnih foldera
+subject: Naslov
+from: Od
+sender: Pošiljalac
+to: Za
+cc: Cc
+bcc: Bcc
+replyto: Reply-To adresa
+followupto: Prati
+date: Datum
+size: Veličina
+priority: Prioritet
+organization: Organizacija
+readstatus: Status poruke
+listoptions: Izlistaj opcije...
+mailboxlist: Folderi
+messagesfromto: Poruke od $from do $to od ukupno $count
+threadsfromto: Teme od $from do $to od ukupno $count
+messagenrof: Poruka broj $nr od $count
+fromtoshort: $from – $to od ukupno $count
+copy: Kopiraj
+move: Premjesti
+moveto: Premjesti u...
+copyto: Kopiraj u...
+download: Preuzmi
+open: Otvori
+showattachment: Prikaži
+showanyway: Ipak prikaži
+filename: Ime datoteke
+filesize: Veličina datoteke
+addtoaddressbook: Dodaj u adresar
+sun: Ned
+mon: Pon
+tue: Uto
+wed: Sri
+thu: Čet
+fri: Pet
+sat: Sub
+sunday: Nedjelja
+monday: Ponedjeljak
+tuesday: Utorak
+wednesday: Srijeda
+thursday: Četvrtak
+friday: Petak
+saturday: Subota
+jan: Jan
+feb: Feb
+mar: Mar
+apr: Apr
+may: Maj
+jun: Jun
+jul: Jul
+aug: Avg
+sep: Sep
+oct: Okt
+nov: Nov
+dec: Dec
+longjan: Januar
+longfeb: Februar
+longmar: Mart
+longapr: April
+longmay: Maj
+longjun: Juni
+longjul: Juli
+longaug: Avgust
+longsep: Septembar
+longoct: Oktobar
+longnov: Novembar
+longdec: Decembar
+today: Danas
+refresh: Osvježi
+checkmail: Provjeri ima li novih poruka
+compose: Nova poruka
+writenewmessage: Kreiraj novu poruku
+reply: Odgovori
+replytomessage: Odgovori pošiljaocu
+replytoallmessage: Odgovori listi osoba ili pošiljaocu i svim primaocima
+replyall: Odgovori svima
+replylist: Odgovori listi
+forward: Proslijedi
+forwardinline: Proslijedi odmah
+forwardattachment: Proslijedi kao prilog
+forwardmessage: Proslijedi poruku
+deletemessage: Obriši poruku
+movemessagetotrash: Prebaci poruku u smeće
+printmessage: Odštampaj poruku
+previousmessage: Prikaži prethodnu poruku
+firstmessage: Prikaži prvu poruku
+nextmessage: Prikaži sljedeću poruku
+lastmessage: Prikaži zadnju poruku
+backtolist: Nazad na listu poruka
+viewsource: Prikaži izvornu poruku
+mark: Označi
+markmessages: Označi poruke
+markread: Kao pročitane
+markunread: Kao nepročitane
+markflagged: Kao važne
+markunflagged: Kao nevažne
+moreactions: Više akcija...
+folders-all: Svi folder
+more: Više
+back: Nazad
+options: Opcije
+first: Prva
+last: Zadnja
+previous: Prethodno
+next: Sljedeće
+select: Odaberi
+all: Sve
+none: Ništa
+currpage: Trenutna stranica
+isread: Pročitano
+unread: Nepročitano
+flagged: Važno
+unflagged: Nije označeno
+unanswered: Neodgovoreno
+withattachment: Sa prilogom
+deleted: Obrisano
+undeleted: Nije obrisano
+replied: Odgovoreno
+forwarded: Proslijeđeno
+invert: Izokreni
+filter: Filter
+list: Lista
+threads: Teme
+expand-all: Proširi sve
+expand-unread: Proširi nepročitane
+collapse-all: Zatvori sve
+threaded: Teme
+autoexpand_threads: Proširi teme poruka
+do_expand: sve teme
+expand_only_unread: samo sa nepročitanim porukama
+fromto: Od/Za
+flag: Oznaka
+attachment: Prilog
+nonesort: Ništa
+sentdate: Datum slanja
+arrival: Datum primanja
+asc: rastući
+desc: opadajući
+listcolumns: Lista kolona
+listsorting: Sortiranje kolona
+listorder: Raspored sortiranja
+listmode: Način prikaza liste
+layoutlist: Lista
+folderactions: Akcije za foldere...
+compact: Optimiziraj
+empty: Isprazni
+importmessages: Uvezi poruke
+quota: Zauzeće diska
+unknown: nepoznato
+unlimited: neograničeno
+quotatype: Vrsta kvote
+quotatotal: Limit
+quotaused: Iskorišteno
+quotastorage: Prostor na disku
+quotamessage: Broj poruka
+quicksearch: Brza pretraga
+resetsearch: Resetuj pretragu
+searchmod: Modifikacija pretrage
+msgtext: Cijela poruka
+body: Tijelo
+type: Vrsta
+namex: Ime
+searchscope: Opseg
+currentfolder: Trenutni folder
+subfolders: Ovo i podfolderi
+allfolders: Svi folder
+openinextwin: Otvori u novom prozoru
+emlsave: Preuzmi (.eml)
+changeformattext: Prikaži kao obični tekst
+changeformathtml: Prikaži kao HTML
+editasnew: Uredi kao novo
+send: Pošalji
+sendmessage: Pošalji poruku
+savemessage: Sačuvaj skicu
+addattachment: Priloži datoteku
+charset: Skup znakova
+editortype: Vrsta urednika
+returnreceipt: Potvrda o prispijeću poruke
+dsn: Obavještenje o statusu dostave
+mailreplyintro: '$date, $sender je napisao/la:'
+originalmessage: Originalna poruka
+selectimage: Odaberi sliku
+addimage: Dodaj sliku
+selectmedia: Odaberi film
+addmedia: Dodaj film
+insert: Umetni
+recipient: Primaoc
+editidents: Uredi identitete
+spellcheck: Pravopis
+checkspelling: Provjera pravopisa
+resumeediting: Nastavi uređivanje
+revertto: Vrati na
+restore: Vrati
+restoremessage: Vratiti poruku?
+ignore: Zanemari
+responses: Odgovori
+insertresponse: Umetni odgovor
+manageresponses: Upravljaj odgovorima
+newresponse: Kreiraj novi odgovor
+addresponse: Dodaj odgovor
+editresponse: Uredi odgovor
+editresponses: Uredi odgovore
+responsename: Ime
+responsetext: Tekst odgovora
+attach: Priloži
+attachments: Prilozi
+upload: Dodaj
+uploadprogress: $percent ($current od $total)
+close: Zatvori
+messageoptions: Opcije poruke...
+togglecomposeoptions: (De)aktivacija opcija pisanja
+low: Nizak
+lowest: Najniži
+normal: Normalan
+high: Visok
+highest: Najveći
+nosubject: (bez naslova)
+showimages: Prikaži slike
+alwaysshow: Uvijek prikaži slike od $sender
+isdraft: Ovo je skica.
+andnmore: još $nr...
+togglemoreheaders: Prikaži još zaglavlja poruka
+togglefullheaders: Aktiviranje izvornih zaglavlja poruka
+htmltoggle: HTML
+plaintoggle: Obični tekst
+savesentmessagein: Sačuvaj poslane poruke u
+dontsave: ne snimaj
+maxuploadsize: Maksimalna dozvoljena veličina datoteke je $size
+addcc: Dodaj Cc
+addbcc: Dodaj Bcc
+addreplyto: Dodaj odgovor na
+addfollowupto: Dodaj praćenje za
+mdnrequest: Pošiljaoc ove poruke je tražio da bude obaviješten kada pročitate ovu poruku. Želite li obavijestiti pošiljaoca?
+receiptread: Povratnica (pročitano)
+yourmessage: Ovo je povratnica vaše poruke
+receiptnote: 'Napomena: Ova povratnica samo potvrđuje da je poruka bila prikazana na računaru primaoca. Nema garancija da je primaoc pročitao ili razumio sadržaj poruke.'
+name: Ime za prikaz
+firstname: Ime
+surname: Prezime
+middlename: Srednje ime
+nameprefix: Prefiks
+namesuffix: Sufiks
+nickname: Nadimak
+jobtitle: Titula
+department: Odjel
+gender: Spol
+maidenname: Djevojačko ime
+email: Email
+phone: Telefon
+address: Adresa
+street: Ulica
+locality: Grad
+zipcode: Poštanski broj
+region: Oblast
+country: Zemlja
+birthday: Rođendan
+anniversary: Godišnjica
+website: Web stranica
+instantmessenger: IM
+notes: Napomene
+male: Muško
+female: Žensko
+manager: Menadžer
+assistant: Pomoćnik
+spouse: Supružnik
+allfields: Sva polja
+search: Pretraga
+searchresult: Rezultati pretrage
+advsearch: Napredna pretraga
+advanced: Napredno
+other: Ostalo
+printcontact: Štampaj kontakt
+typehome: Kućni broj
+typework: Poslovni broj
+typeother: Ostalo
+typemobile: Mobilni broj
+typemain: Glavni broj
+typehomefax: Fax kuća
+typeworkfax: Fax posao
+typecar: Automobil
+typepager: Pejdžer
+typevideo: Video
+typeassistant: Pomoćnik
+typehomepage: Početna stranica
+typeblog: Blog
+typeprofile: Profil
+addfield: Dodaj polje...
+addcontact: Dodaj kontakt
+editcontact: Uredi kontakt
+contacts: Kontakti
+contactproperties: Svojstva kontakta
+contactnameandorg: Ime i organizacija
+personalinfo: Lični podaci
+personal: Lično
+contactphoto: Kontakt fotografija
+edit: Uredi
+cancel: Otkaži
+save: Sačuvaj
+delete: Obriši
+discard: Odbaci
+rename: Preimenuj
+addphoto: Dodaj
+replacephoto: Zamijeni
+uploadphoto: Dodaj fotografiju
+newcontact: Kreiraj novi kontakt
+deletecontact: Obriši odabrane kontakte
+composeto: Napiši email za
+contactsfromto: Kontakti od $from do $to od ukupno $count
+print: Štampaj
+export: Izvoz
+exportall: Izvezi sve
+exportsel: Izvezi označeno
+exportvcards: Izvezi kontakte u vCard formatu
+newgroup: Kreiraj novu grupu
+addgroup: Dodaj grupu
+grouprename: Preimenuj grupu
+groupdelete: Obriši grupu
+groupremoveselected: Ukloni odabrane kontakte iz grupe
+uponelevel: Nazad jedan nivo
+previouspage: Prikaži prethodnu stranicu
+firstpage: Prikaži prvu stranicu
+nextpage: Prikaži sljedeću stranicu
+lastpage: Prikaži zadnju stranicu
+group: Grupa
+groups: Grupe
+listgroup: Izlistaj članove grupe
+personaladrbook: Lične adrese
+searchsave: Sačuvaj pretragu
+searchdelete: Obriši pretragu
+import: Uvoz
+importcontacts: Uvoz kontakata
+importtarget: Dodaj kontakte u
+importreplace: Zamijeni cijeli adresar
+importgroups: Uvezi grupne zadatke
+importgroupsall: Sve (kreiraj grupe ako je potrebno)
+importgroupsexisting: Samo za postojeće grupe
+done: Završeno
+settingsfor: Podešavanja za
+about: Informacije
+preferences: Podešavanja
+userpreferences: Korisničke opcije
+editpreferences: Uredi korisničke opcije
+identities: Identiteti
+manageidentities: Upravljanje identitetima
+newidentity: Kreiraj novi identitet
+addidentity: Dodaj identitet
+editidentity: Uredi identitet
+preferhtml: Prikaži HTML
+defaultcharset: Glavni skup znakova
+htmlmessage: HTML poruke
+messagepart: Dio
+digitalsig: Digitalni potpis
+dateformat: Format datuma
+timeformat: Format vremena
+prettydate: Formatirani datum
+setdefault: Postavi kao glavno
+autodetect: Automatski
+language: Jezik
+timezone: Vremenska zona
+pagesize: Redova po stranici
+signature: Potpis
+dstactive: Ljetno računanje vremena
+showinextwin: Otvori poruku u novom prozoru
+composeextwin: Napiši u novom prozor
+htmleditor: Piši HTML poruke
+htmlonreply: samo kao odgovor na HTML poruke
+htmlonreplyandforward: prilikom prosljeđivanja ili odgovaranja na HTML poruku
+htmlsignature: HTML potpis
+showemail: Prikaži email adresu sa imenom
+previewpane: Prikaži pregled poruke
+skin: Skin interfejsa
+logoutclear: Očisti smeće prilikom odjavljivanja
+logoutcompact: Optimiziraj sanduče prilikom odjavljivanja
+uisettings: Korisnički interfejs
+serversettings: Postavke servera
+mailboxview: Pregled emaila
+mdnrequests: Prilikom zahtjeva za povratnicu
+askuser: pitaj korisnika
+autosend: pošalji povratnicu
+autosendknown: pošalji povratnicu mojim kontaktima, u suprotnom me pitaj
+autosendknownignore: pošalji povratnicu mojim kontaktima, u suprotnom zanemari
+ignorerequest: Zanemari zahtjev
+readwhendeleted: Označi poruku kao pročitanu pri brisanju
+flagfordeletion: Označi poruku za brisanje umjesto brisanja
+skipdeleted: Ne prikazuj obrisane poruke
+deletealways: Ako premještanje poruka u smeće ne uspije, odmah ih obriši
+deletejunk: Direktno obriši poruke u smeću
+showremoteimages: Prikaži vanjske slike u porukama
+fromknownsenders: od poznatih pošiljatelja
+always: uvijek
+showinlineimages: Prikaži priložene slike ispod poruke
+autosavedraft: Automatski sačuvaj skicu
+everynminutes: svakih $n minuta
+refreshinterval: Osvježi (provjeri ima li novih poruka itd.)
+never: nikad
+immediately: odmah
+messagesdisplaying: Prikaz poruka
+messagescomposition: Pisanje poruka
+mimeparamfolding: Nazivi priloga
+2231folding: Puni RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Puni RFC 2047 (ostalo)
+force7bit: Koristi MIME kodiranje za 8-bitne znakove
+savelocalstorage: Sačuvaj u lokalno skladište browsera (privremeno)
+advancedoptions: Napredne opcije
+toggleadvancedoptions: (De)aktivacija naprednih opcija
+focusonnewmessage: Fokusiraj prozor preglednika na novu poruku
+checkallfolders: Provjeri ima li novih poruka u svim folderima
+defaultfont: Osnovni font za HTML poruke
+mainoptions: Glavne opcije
+browseroptions: Opcije preglednika
+section: Sekcija
+maintenance: Održavanje
+newmessage: Nova poruka
+signatureoptions: Opcija potpisa
+whenreplying: Prilikom odgovora
+replyempty: ne citiraj originalnu poruku
+replytopposting: započni novu poruku iznad originala
+replybottomposting: započni novu poruku ispod originala
+replyremovesignature: Prilikom odgovaranja na poruku, ukloni originalni potpis iz poruke
+autoaddsignature: Automatski dodaj potpis
+newmessageonly: samo za nove poruke
+replyandforwardonly: samo za odgovore i prosljeđivanja
+insertsignature: Umetni potpis
+afternseconds: nakon $n sekundi
+reqmdn: Uvijek zahtjevaj povratnicu
+reqdsn: Uvijek zahtjevaj obavijest o statusu dostave
+replysamefolder: Sačuvaj odgovore u folder poruke na osnovu koje se piše odgovor
+defaultabook: Osnovni adresar
+autocompletesingle: Preskoči alternativne email adrese prilikom automatskog popunjavanja
+listnamedisplay: Izlistaj kontakte kao
+spellcheckbeforesend: Provjeri pravopis prije slanja poruke
+spellcheckoptions: Opcije provjere pravopisa
+spellcheckignoresyms: Zanemari riječi sa simbolima
+spellcheckignorenums: Zanemari riječi sa brojevima
+spellcheckignorecaps: Zanemari riječi napisane velikim slovima
+addtodict: Dodaj u rječnik
+mailtoprotohandler: 'Registruj upravljač protokola za mailto: linkovi'
+standardwindows: Tretiraj popup-ove kao standardne prozore
+forwardmode: Prosljeđivanje poruka
+inline: u istom redu
+asattachment: kao prilog
+replyallmode: Zadana radnja za [Odgovori svima] dugme
+replyalldefault: odgovori svima
+replyalllist: odgovori samo listi mailova (ukoliko je pronađena)
+allmessages: sve poruke
+folder: Folder
+folders: Folderi
+foldername: Naziv foldera
+subscribed: Pretplaćen
+messagecount: Poruke
+create: Kreiraj
+createfolder: Kreiraj novi folder
+managefolders: Upravljanje folderima
+specialfolders: Specijalni folder
+properties: Svojstva
+folderproperties: Svojstva foldera
+parentfolder: Matični folder
+location: Lokacija
+info: Informacije
+getfoldersize: Kliknite da biste dobili informaciju o veličini foldera
+changesubscription: Kliknite da promijenite pretplatu
+foldertype: Vrsta foldera
+personalfolder: Privatni folder
+otherfolder: Folder drugog korisnika
+sharedfolder: Javni folder
+findfolders: Pronađi foldere
+namespace.personal: Lično
+namespace.other: Ostali korisnici
+namespace.shared: Dijeljeno
+sortby: Sortiraj po
+sortasc: Sortiraj uzlazno
+sortdesc: Sortiraj silazno
+undo: Nazad
+installedplugins: Instalirani plugini
+plugin: Plugin
+version: Verzija
+source: Izvorni kod
+license: Licenca
+support: Podrška
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unikod
+english: engleski
+westerneuropean: Zapadna Evropa
+easterneuropean: Istočna Evropa
+southeasterneuropean: Jugoistočna Evropa
+baltic: Baltički
+cyrillic: ćirilični
+arabic: arapski
+greek: grčki
+hebrew: hebrejski
+turkish: turski
+nordic: Nordijski
+thai: tajlandski
+celtic: keltski
+vietnamese: vijetnamski
+japanese: japanski
+korean: korejski
+chinese: kineski
+arialabeltopnav: Kontrola prozora
+arialabeltasknav: Zadaci aplikacije
+arialabeltoolbar: Alatna traka aplikacije
+arialabelactivetask: Aktivni zadatak
+arialabelmessagessearchfilter: Filter listinga emaila
+arialabelmailsearchform: Obrazac za pretragu email poruka
+arialabelcontactsearchform: Obrazac za pretragu kontakata
+arialabelmailquicksearchbox: Unos za email pretragu
+arialabelquicksearchbox: Unos za pretragu
+arialabelfoldersearchfilter: Fitr listi foldera
+arialabelfoldersearchform: Obrazac za pretragu foldera
+arialabelfolderlist: Odabir email foldera
+arialabelmessagelist: Listing email poruka
+arialabelmailpreviewframe: Pregled poruke
+arialabelmailboxmenu: Meni sa akcijama za foldere
+arialabellistselectmenu: Meni za odabir listinga
+arialabelthreadselectmenu: Meni za listing tema
+arialabelmessagelistoptions: Prikaz listi poruka i opcije sortiranja
+arialabelmailimportdialog: Dijalog za uvoz poruke
+arialabelmessagenav: Navigacija za poruku
+arialabelmessagebody: Tijelo poruke
+arialabelmessageactions: Akcije poruke
+arialabelcontactquicksearch: Obrazac za pretragu kontakata
+arialabelcontactsearchbox: Unos za pretragu kontakata
+arialabelmessageheaders: Zaglavlja poruke
+arialabelforwardingoptions: Opcije prosljeđivanja
+arialabelreplyalloptions: Opcije odgovora svima
+arialabelmoremessageactions: Više akcija za poruke
+arialabelmarkmessagesas: Označi odabrane poruke kao...
+arialabelcomposeoptions: Opcije pisanja
+arialabelresponsesmenu: Meni za odbačene odgovore
+arialabelattachmentuploadform: Obrazac za dodavanje priloga
+arialabelattachmentpreview: Pregled priloga
+ariasummarycomposecontacts: Lista kontakata i grupi za primaoce
+arialabelcontactexportoptions: Opcije izvoza kontakata
+arialabelabookgroupoptions: Opcije adresara/grupe
+arialabelpreferencesform: Obrazac podešavanja
+arialabelidentityeditfrom: Obrazac za uređivanje identiteta
+arialabelresponseeditfrom: Obrazac za uređivanje odgovora
+arialabelsearchterms: Pojam za pretragu
+helplistnavigation: Lista navigacije pomoću tastature
+helplistkeyboardnavigation: "Strelice gore/dole: Pomjeri fokusirani red/selekciju.\nRazmak: Odaberi fokusirani red.\nShift + gore/dole: Odaberi dodatni red iznad/ispod.\nCtrl + razmak: Dodaj fokusirani red u selekciju/ukloni iz selekcije."
+helplistkeyboardnavmessages: "Strelice desno/lijevo: proširi/zatvori temu temu emaila (samo u modu za teme).\nEnter: Otvori odabranu/fokusiranu poruku.\nDelete: Premjesti odabranu poruku u Smeće."
+helplistkeyboardnavcontacts: 'Enter: Otvora odabrani/fokusirani kontakt.'
+oauthlogin: ''
+menu: ''
+darkmode: ''
+lightmode: ''
+listoptionstitle: ''
+bouncemsg: ''
+bounce: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+markallread: ''
+folders-cur: ''
+folders-sub: ''
+composeoptions: ''
+optionsandattachments: ''
+actions: ''
+selection: ''
+showunread: ''
+lmode: ''
+layout: ''
+layoutwidescreen: ''
+layoutdesktop: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+mailimportdesc: ''
+mailimportzip: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+searchplaceholder: ''
+searchinterval-1W: ''
+searchinterval-1M: ''
+searchinterval-1Y: ''
+searchinterval1W: ''
+searchinterval1M: ''
+searchinterval1Y: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+keepformatting: ''
+encrypt: ''
+encryptmessage: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+encryptandsign: ''
+keyid: ''
+keylength: ''
+keyexpired: ''
+keyrevoked: ''
+bccinstead: ''
+addheader: ''
+insertcontact: ''
+recipientedit: ''
+attachmentrename: ''
+allow: ''
+alwaysallow: ''
+details: ''
+summary: ''
+headers: ''
+allheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nonbinary: ''
+othergender: ''
+qrcode: ''
+continue: ''
+ok: ''
+choosefile: ''
+choosefiles: ''
+browse: ''
+groupassign: ''
+groupremove: ''
+importfromfile: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+identityencryption: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+displaynext: ''
+replytoppostingnoindent: ''
+sigbelow: ''
+sigseparator: ''
+automarkread: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+olderxdays: ''
+findcontacts: ''
+findmail: ''
+dualuselabel: ''
+dualusemail: ''
+dualusefolder: ''
+generate: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+encryption: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+destination: ''
+skinauthor: ''
+savedsearches: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+arialabellistnav: ''
+arialabelmorecontactactions: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

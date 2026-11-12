@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for ar. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: مرحباً بكم في $product
+username: اسم المستخدم
+password: كلمة المرور
+server: الخادم
+login: تسجيل الدخول
+menu: القائمة
+logout: تسجيل الخروج
+mail: البريد
+settings: الإعدادات
+addressbook: دفتر العناوين
+inbox: البريد الوارد
+drafts: المسودات
+sent: البريد المرسل
+trash: المهملات
+junk: الرسائل غير المرغوب فيها
+subject: الموضوع
+from: المرسل
+sender: المُرسِل
+to: المستقبل
+cc: نسخة إلي
+bcc: نسخة مخفية الوجهة
+replyto: الرد إلى
+followupto: Mail-Followup-To
+date: التاريخ
+size: الحجم
+priority: الأولوية
+organization: المنظمة
+readstatus: حالة القراءة
+listoptionstitle: خيارات القائمة
+mailboxlist: مجلدات
+messagesfromto: الرسالة $from إلى $to من مجموع $count
+threadsfromto: جهات الإتصال $from إلى $to من مجموع $count
+messagenrof: الرسالة $nr من $count
+copy: نسخ
+move: نقل
+moveto: نقل إلى...
+copyto: النسخ إلى …
+download: تنزيل
+open: فتح
+showattachment: إظهار
+showanyway: إظهار ذلك على أي حال
+filename: اسم الملف
+filesize: حجم الملف
+addtoaddressbook: إضافة إلى دفتر العناوين
+sun: أحد
+mon: إثنين
+tue: ثلاثاء
+wed: أربعاء
+thu: خميس
+fri: جمعة
+sat: سبت
+sunday: الأحد
+monday: الإثنين
+tuesday: الثلاثاء
+wednesday: الأربعاء
+thursday: الخميس
+friday: الجمعة
+saturday: السبت
+jan: يناير
+feb: فبراير
+mar: مارس
+apr: أبريل
+may: مايو
+jun: يونيو
+jul: يوليو
+aug: أغسطس
+sep: سبتمبر
+oct: أكتوبر
+nov: نوفمبر
+dec: ديسمبر
+longjan: يناير
+longfeb: فبراير
+longmar: مارس
+longapr: أبريل
+longmay: مايو
+longjun: يونيو
+longjul: يوليو
+longaug: أغسطس
+longsep: سبتمبر
+longoct: أكتوبر
+longnov: نوفمبر
+longdec: ديسمبر
+today: اليوم
+refresh: تحديث
+checkmail: التحقق من وجود رسائل جديدة
+compose: إنشاء
+writenewmessage: إنشاء رسالة جديدة
+reply: رد
+replytomessage: الرد على المرسل
+replytoallmessage: الرد على قائمة أو إلى المرسل وجميع المستلمين
+replyall: الرد على الجميع
+replylist: الرد على القائمة
+forward: إعادة توجيه
+forwardinline: تمرير الرسالة ضمنياً
+forwardattachment: تمرير الرسالة كمرفق
+forwardmessage: تمرير الرسالة
+bounce: إعادة الإرسال
+deletemessage: حذف الرسالة
+movemessagetotrash: انقل الرسالة إلى سلة المهملات
+printmessage: أطبع هذه الرسالة
+previousmessage: عرض الرسالة السابقة
+firstmessage: عرض الرسالة الأولى
+nextmessage: عرض الرسالة التالية
+lastmessage: عرض الرسالة الأخيرة
+backtolist: العودة إلى قائمة الرسائل
+viewsource: إظهار المصدر
+mark: علامة
+markmessages: وسم الرسالة
+markread: مقروءة
+markunread: غير مقروءة
+markflagged: كموْسومة
+markunflagged: كغير موْسومة
+moreactions: إجراءات إضافية...
+folders-all: كافة المجلدات
+more: المزيد
+back: العودة
+options: خيارات
+composeoptions: خيارات الكتابة
+optionsandattachments: الخيارات والمرفقات
+actions: الإجراءات
+first: الأول
+last: الأخير
+previous: السابق
+next: التالي
+select: تحديد
+all: الكل
+none: لاشيء
+currpage: الصفحة الحالية
+unread: غير مقروءة
+flagged: موسوم
+unanswered: بلا رد
+deleted: محذوف
+undeleted: غير محذوفة
+forwarded: المُعاد توجيهها
+invert: عكس
+filter: تصفية
+list: قائمة
+threads: تتابعات
+expand-all: إظهار الكل
+expand-unread: إظهار الغير مقروءة
+collapse-all: ضمّ الكل
+threaded: متتابع
+autoexpand_threads: إظهار تتابعات الرسائل
+do_expand: جميع التتابعات
+expand_only_unread: فقط مع الرسائل الغير مقروءة
+fromto: المرسل/المستلم
+flag: وسم
+attachment: مرفق
+nonesort: لاشيء
+sentdate: تاريخ إرسالها
+arrival: تاريخ وصولها
+asc: تصاعدي
+desc: تنازلي
+listcolumns: أعمدة السرد
+listsorting: أعمدة الترتيب
+listorder: طريقة الترتيب
+listmode: وضع طريقة السرد
+layoutlist: قائمة
+folderactions: إجراءات المجلد...
+compact: ضغط
+empty: تفريغ
+importmessages: إستيراد رسائل
+quota: المساحة المستخدمة
+unknown: مجهول
+unlimited: غير محدود
+quotaused: المساحة المُستعمَلة
+quotastorage: مساحة التخزين
+quotamessage: تعداد الرسائل
+quicksearch: البحث السريع
+searchplaceholder: بحث …
+resetsearch: استعادة البحث للافتراضي
+searchmod: أماكن البحث
+msgtext: كامل الرسالة
+body: هيكل الرسالة
+type: النوع
+namex: الإسم
+searchscope: المجال
+currentfolder: المجلد الحالي
+allfolders: كافة المجلدات
+openinextwin: افتح في نافذة جديدة
+emlsave: تنزيل (.eml)
+editasnew: تعديل كجديد
+send: ارسل
+sendmessage: إرسال الرسالة الآن
+savemessage: حفظ هذه المسودة
+addattachment: إرفاق ملف
+charset: مجموعة المحارف
+editortype: نوع المُحرّر
+returnreceipt: ايصال استلام
+dsn: تنويه حالة التوصيل
+mailreplyintro: 'كتب $sender في $date:'
+originalmessage: الرسالة الأساسية
+selectimage: إختيار صورة
+addimage: إضافة صورة
+selectmedia: إختيار فيديو
+addmedia: إضافة فيديو
+encrypt: تعمية
+encryptmessage: تعمية الرسالة
+importpubkeys: إستيراد مفاتيح عمومية
+encryptandsign: تعمية و توقيع
+recipient: المتلقَّي
+editidents: تعديل الهويات
+spellcheck: التدقيق اﻹملائى
+checkspelling: التدقيق الإملائي
+resumeediting: متابعة التحرير
+revertto: استعادة إلى
+restore: إسترجاع
+restoremessage: هل تود إسترجاع الرسالة ؟
+ignore: تجاهل
+responses: الردود
+manageresponses: إدارة الردود
+editresponses: تعديل الردود
+responsename: الإسم
+attach: إرفاق
+attachments: مرفقات
+upload: تحميل
+close: إغلاق
+messageoptions: خيارات الرسائل...
+low: منخض
+lowest: الأقل
+normal: عادي
+high: مرتفع
+highest: الأعلى
+nosubject: (دون موضوع)
+showimages: إظهار الصور
+alwaysshow: دائماً أظهر الصّور القادمة من $sender
+isdraft: هذه مسودّة رسالة
+andnmore: $nr المزيد ...
+details: التفاصيل
+headers: الرأسيات
+htmltoggle: HTML
+plaintoggle: نص مجرد
+savesentmessagein: احفظ الرسالة المُرسلة في
+dontsave: لا تحفظها
+maxuploadsize: أقصى حجم للملف هو $size
+addcc: أضف CC
+addbcc: أضف BCC
+addreplyto: أضيف Reply-To
+addfollowupto: إضافة Mail-Followup-To
+mdnrequest: طلب المرسل إعلامه عند قراءتك لرسالته. هل تود إعلام المرسل؟
+receiptread: إيصال الاستلام )بالقراءة)
+yourmessage: هذا إيصال بقراءة رسالتك
+receiptnote: 'ملاحظة: يُعلمك هذا الإيصال بأن رسالتك قد ظهرت على جهاز المستقبِل. ليست هناك أية ضمانات أن المستقبل قد قرأ أو فهم محتويات الرسالة.'
+zoomin: تقريب
+rotate: تدوير
+increaseimage: تكبير حجم الصورة
+decreaseimage: تصغير حجم الصورة
+rotateimage: تدوير الصورة
+showtools: إظهار أدوات الصور
+hidetools: إخفاء أدوات الصور
+name: اسم العرض
+firstname: الإسم الأول
+surname: الإسم الأخير
+middlename: الاسم الثاني
+nameprefix: السابقة
+namesuffix: اللاحقة
+nickname: اللقب
+jobtitle: المسمى الوظيفي
+department: الإدارة
+gender: الجنس
+maidenname: إسم الزواج
+email: البريد الإلكتروني
+phone: الهاتف
+address: العنوان
+street: الشارع
+locality: المدينة
+zipcode: الرمز البريدي
+region: المنطقة
+country: الدولة
+birthday: تاريخ الميلاد
+anniversary: المناسبة السنوية
+website: الموقع
+instantmessenger: IM
+notes: ملاحظات
+male: ذكر
+female: أنثى
+manager: مدير
+assistant: المساعد
+spouse: زوجة
+allfields: جميع الحقول
+search: بحث
+searchresult: نتيجة البحث
+advsearch: بحث متقدم
+advanced: مُتقدم
+other: آخر
+typehome: المنزل
+typework: العمل
+typeother: آخر
+typemobile: المحمول
+typemain: الرئيسي
+typehomefax: فاكس المنزل
+typeworkfax: فاكس العمل
+typecar: السيارة
+typepager: الرنان
+typevideo: الفيديو
+typeassistant: المساعد
+typehomepage: الرئيسية
+typeblog: المدوّنة
+typeprofile: الملف الشخصي
+addfield: إضافة حقل...
+addcontact: إضافة مراسل
+editcontact: تحرير بيانات المراسل
+contacts: المراسلين
+contactproperties: خواص جهة الإتصال
+contactnameandorg: الإسم و المنظمة
+personalinfo: المعلومات الشخصية
+contactphoto: صورة المُراسِل
+edit: تحرير
+cancel: إلغاء
+save: حفظ
+delete: حذف
+continue: المواصلة
+rename: إعادة التسمية
+addphoto: إضافة
+replacephoto: استبدال
+uploadphoto: ارفع صورة
+choosefile: اختر ملفا...
+choosefiles: اختر ملفات...
+newcontact: إنشاء مراسل جديد
+deletecontact: حذف المراسلين المحددين
+composeto: إنشاء رسالة إليه
+contactsfromto: المراسلون $from إلى $to من $count
+print: طباعة
+export: تصدير
+exportvcards: صدّر المراسلين بنسق vCard
+newgroup: إنشاء فريق جديد
+grouprename: تغيير اسم المجموعة
+groupdelete: حذف المجموعة
+groupremoveselected: حذف العنوان المختار من المجموعة
+previouspage: عرض المجموعة السابقة
+firstpage: عرض المجموعة الأولى
+nextpage: عرض المجموعة التالية
+lastpage: عرض المجموعة الأخيرة
+group: مجموعة
+groups: المجموعات
+personaladrbook: العناوين الشخصية
+searchsave: حفظ البحث
+searchdelete: حذف البحث
+import: استورد
+importcontacts: استورد المراسلين
+importreplace: استبدل دفتر العناوين بأكمله
+done: تم
+settingsfor: إعدادات
+about: نبذة
+preferences: التفضيلات
+userpreferences: تفضيلات المستخدم
+editpreferences: تحرير تفضيلات المستخدم
+identities: الهويات
+manageidentities: إدارة الهويات
+newidentity: إضافة هوية جديدة
+addidentity: إضافة هوية
+editidentity: تعديل الهوية
+identityencryption: التشفير
+preferhtml: تفضيل صيغة HTML
+defaultcharset: ترميز المحارف الافتراضي
+htmlmessage: رسالة بنسق HTML
+digitalsig: التوقيع الرقمي
+dateformat: نسق التاريخ
+timeformat: نسق الوقت
+prettydate: تواريخ منمقة
+setdefault: تعيين كإفتراضي
+autodetect: آلي
+language: اللغة
+timezone: المنطقة الزمنية
+pagesize: عدد الرسائل في الصفحة
+signature: التوقيع
+dstactive: التوقيت الصيفي
+showinextwin: فتح الرسالة فى نافذة جديدة
+composeextwin: أرسال عن طريق نافذة جديدة
+htmleditor: إنشاء رسائل بنسق HTML
+htmlonreply: حال الرد على الرسائل بصيغة HTML فقط
+htmlsignature: توقيع HTML
+previewpane: إظهار قسم المعاينة
+skin: شكل الواجهة
+logoutclear: إفراغ سلة المحذوفات عند الخروج
+logoutcompact: ضغط صندوق الوارد عن الخروج
+uisettings: واجهة المستخدم
+serversettings: إعدادات الخادم
+mailboxview: مظهر صندوق البريد
+mdnrequests: عند طلب إشعار استلام
+askuser: اسأل المستخدم
+autosend: أرسلها تلقائياً
+autosendknown: أرسل إشعار استلام إلى جهات اتصالي، وإلااسألني
+autosendknownignore: أرسل إشعار استلام إلى جهات اتصالي، وإلاتجاهل الأمر
+ignorerequest: تجاهُل الطلب
+readwhendeleted: تحديد الرسالة كمقروءة عند حذفها
+flagfordeletion: وضع علامة على الرسالة لحذفها بدلاً منحذفها
+skipdeleted: لا تظهر الرسائل المحذوفة
+deletealways: حذف الرسائل مباشرة، إن تعذر نقلها إلىالمهملات
+showremoteimages: إظهار الصور الخارجية المدمجة
+fromknownsenders: للمرسلين المعلومين
+always: دائماً
+showinlineimages: إظهار الصّور المرفقة أسفل الرسالة
+autosavedraft: حفظ المسودة تلقائياً
+everynminutes: كل $n دقيقة
+never: أبداً
+immediately: حالاً
+messagesdisplaying: إظهار الرسائل
+messagescomposition: إنشاء الرسائل
+mimeparamfolding: أسماء الملفات المرفقة
+2231folding: RFC 2231 بأكملها (ثندربيرد)
+miscfolding: RFC 2047/2231 (ميكروسوفت آوتلوك)
+2047folding: RFC 2047 بأكملها (غيرها)
+force7bit: استخدام ترميز MIME للحروف ذات الثمانيةبتّات
+advancedoptions: خيارات متقدّمة
+focusonnewmessage: التركيز على نافذة المتصفح عند وجود رسالةجديدة
+checkallfolders: التحقق من وجود رسائل جديدة في جميعالمجلدات
+mainoptions: الخيارات الأساسية
+browseroptions: خيارات المتصفح
+section: قسم
+maintenance: الصيانة
+newmessage: رسالة جديدة
+signatureoptions: خيارات التوقيع
+whenreplying: عند الرد
+replytopposting: بدء رسالة جديدة ووضع النص أعلى الأصلية
+replybottomposting: بدء رسالة جديدة ووضع النص أسفل الأصلية
+replyremovesignature: إزالة التوقيع من الرسالة عند الرد
+autoaddsignature: إضافة التوقيع آلياً
+newmessageonly: الرسالة الجديدة فقط
+replyandforwardonly: الردود والتمريرات فقط
+insertsignature: إضافة التوقيع
+afternseconds: بعد $n ثواني
+reqmdn: طلب إشعار استلام دائماً
+reqdsn: طلب تنويه لحالة التوصيل دائماً
+replysamefolder: وضع الردود في المجلد الذي يحوي الرسالةالمردود عليها
+defaultabook: دفتر العناوين الافتراضي
+autocompletesingle: تجاهل عنوان البريد الإلكتروني البديل فيالتكملة التلقائية
+spellcheckbeforesend: تحقق من الإملاء قبل إرسال الرسائل
+spellcheckoptions: خيارات التدقيق الإملاءي
+spellcheckignoresyms: تجاهل الكلمات التي تحتوي رموز
+spellcheckignorenums: تجاهل الكلمات التي تحتوي أرقام
+spellcheckignorecaps: تجاهل الكلمات التي بها أحرف كبيرة
+addtodict: إضافة إلى القامس
+asattachment: 'كـ مرفق '
+allmessages: كافة الرسائل
+folder: مجلد
+folders: مجلدات
+foldername: اسم المجلد
+subscribed: مشترك
+messagecount: الرسائل
+create: أنشئ
+createfolder: أنشئ مجلد جديد
+managefolders: إدارة المجلدات
+specialfolders: المجلّدات المُميّزة
+properties: الخواص
+folderproperties: خواص المجلد
+parentfolder: المجلد الحاوي
+location: الموضع
+info: معلومات
+getfoldersize: اضغط لمعرفة حجم المجلد
+changesubscription: اضغط لتغيير حالة الإشتراك
+foldertype: نوع المجلد
+personalfolder: مجلد خاص
+otherfolder: مجلد مستخدم آخر
+sharedfolder: مجلد عام
+findfolders: البحث عن مجلدات
+findmail: البحث عن رسائل إلكترونية
+namespace.other: المستخدِمون الآخرون
+dualusemail: الرسائل
+dualusefolder: المجلدات
+generate: توليد
+encryptioncreatekey: إنشاء زوج مِن المفاتيح
+encryption: التشفير
+sortby: ترتيب بحسب
+sortasc: ترتيب تصاعدي
+sortdesc: ترتيب تنازلي
+undo: تراجع
+installedplugins: الإضافات المثبّتة
+plugin: إضافة
+version: النسخة
+source: المصدر
+license: الترخيص
+support: احصل على الدعم الفني
+dateformatY: YYYY
+dateformaty: YY
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: ب
+KB: ك.ب
+MB: م.ب
+GB: ج.ب
+unicode: يونيكود
+english: الإنجليزية
+westerneuropean: الغرب أوروبية
+easterneuropean: الشرق أوروبية
+southeasterneuropean: الجنوب شرق أوروبية
+baltic: البلطيقية
+cyrillic: الكيريلية
+arabic: العربية
+greek: اليونانية
+hebrew: العبرية
+turkish: التركية
+nordic: النرويجية
+thai: التايلندية
+celtic: الكلتية
+vietnamese: الفيتنامية
+japanese: اليابانية
+korean: الكورية
+chinese: الصينية
+arialabelmailpreviewframe: معاينة الرسالة
+arialabelmessagebody: عرض الرسالة
+arialabelmessageheaders: رأسيات الرسالة
+arialabelmailtomenu: خيارات عنوان البريد الإلكتروني
+arialabelimagetools: الأدوات الخاصة بالصُوَر
+oauthlogin: ''
+darkmode: ''
+lightmode: ''
+show_real_foldernames: ''
+listoptions: ''
+fromtoshort: ''
+bouncemsg: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+markallread: ''
+folders-cur: ''
+folders-sub: ''
+selection: ''
+isread: ''
+unflagged: ''
+withattachment: ''
+replied: ''
+showunread: ''
+lmode: ''
+layout: ''
+layoutwidescreen: ''
+layoutdesktop: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+mailimportdesc: ''
+mailimportzip: ''
+quotatype: ''
+quotatotal: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+subfolders: ''
+searchinterval-1W: ''
+searchinterval-1M: ''
+searchinterval-1Y: ''
+searchinterval1W: ''
+searchinterval1M: ''
+searchinterval1Y: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+changeformattext: ''
+changeformathtml: ''
+keepformatting: ''
+encryptmessagemailvelope: ''
+encryptedsendialog: ''
+keyid: ''
+keylength: ''
+keyexpired: ''
+keyrevoked: ''
+bccinstead: ''
+addheader: ''
+insert: ''
+insertcontact: ''
+recipientedit: ''
+insertresponse: ''
+newresponse: ''
+addresponse: ''
+editresponse: ''
+responsetext: ''
+uploadprogress: ''
+togglecomposeoptions: ''
+attachmentrename: ''
+allow: ''
+alwaysallow: ''
+summary: ''
+allheaders: ''
+togglemoreheaders: ''
+togglefullheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomout: ''
+nonbinary: ''
+othergender: ''
+printcontact: ''
+qrcode: ''
+personal: ''
+discard: ''
+ok: ''
+browse: ''
+exportall: ''
+exportsel: ''
+addgroup: ''
+groupassign: ''
+groupremove: ''
+uponelevel: ''
+listgroup: ''
+importfromfile: ''
+importtarget: ''
+importgroups: ''
+importgroupsall: ''
+importgroupsexisting: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+messagepart: ''
+htmlonreplyandforward: ''
+showemail: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+deletejunk: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+refreshinterval: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+displaynext: ''
+defaultfont: ''
+replyempty: ''
+replytoppostingnoindent: ''
+sigbelow: ''
+sigseparator: ''
+automarkread: ''
+alwayskeepformatting: ''
+listnamedisplay: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+mailtoprotohandler: ''
+standardwindows: ''
+forwardmode: ''
+inline: ''
+replyallmode: ''
+replyalldefault: ''
+replyalllist: ''
+olderxdays: ''
+findcontacts: ''
+namespace.personal: ''
+namespace.shared: ''
+dualuselabel: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+destination: ''
+skinauthor: ''
+savedsearches: ''
+arialabeltopnav: ''
+arialabeltasknav: ''
+arialabeltoolbar: ''
+arialabellistnav: ''
+arialabelactivetask: ''
+arialabelmessagessearchfilter: ''
+arialabelmailsearchform: ''
+arialabelcontactsearchform: ''
+arialabelmailquicksearchbox: ''
+arialabelquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfoldersearchform: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmessagenav: ''
+arialabelmessageactions: ''
+arialabelcontactquicksearch: ''
+arialabelcontactsearchbox: ''
+arialabelforwardingoptions: ''
+arialabelreplyalloptions: ''
+arialabelmoremessageactions: ''
+arialabelmorecontactactions: ''
+arialabelmarkmessagesas: ''
+arialabelcomposeoptions: ''
+arialabelresponsesmenu: ''
+arialabelattachmentuploadform: ''
+arialabelattachmentmenu: ''
+arialabelattachmentpreview: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabelabookgroupoptions: ''
+arialabelpreferencesform: ''
+arialabelidentityeditfrom: ''
+arialabelresponseeditfrom: ''
+arialabelsearchterms: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for ru_RU. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Добро пожаловать в $product!
+username: Имя пользователя
+password: Пароль
+server: Сервер
+login: Войти
+oauthlogin: Войти используя $provider
+menu: Меню
+logout: Выход
+mail: Почта
+settings: Настройки
+addressbook: Контакты
+darkmode: Темный режим
+lightmode: Светлый режим
+inbox: Входящие
+drafts: Черновики
+sent: Отправленные
+trash: Корзина
+junk: СПАМ
+show_real_foldernames: Показывать настоящие названия специальных папок
+subject: Тема
+from: От
+sender: Отправитель
+to: Кому
+cc: Копия
+bcc: Скрытая
+replyto: Ответить
+followupto: Followup-To
+date: Дата
+size: Размер
+priority: Приоритет
+organization: Организация
+readstatus: Статус прочтения
+listoptions: Настройки списка...
+listoptionstitle: Настройки списка
+mailboxlist: Папки
+messagesfromto: Сообщения с $from по $to из $count
+threadsfromto: Обсуждения с $from по $to из $count
+messagenrof: Сообщение $nr из $count
+fromtoshort: $from – $to из $count
+copy: Копировать
+move: Переместить
+moveto: Переместить в...
+copyto: Копировать в...
+download: Загрузить
+open: Открыть
+showattachment: Показать
+showanyway: Все равно показать
+filename: Имя файла
+filesize: Размер файла
+addtoaddressbook: Добавить в контакты
+sun: Вс
+mon: Пн
+tue: Вт
+wed: Ср
+thu: Чт
+fri: Пт
+sat: Сб
+sunday: Воскресенье
+monday: Понедельник
+tuesday: Вторник
+wednesday: Среда
+thursday: Четверг
+friday: Пятница
+saturday: Суббота
+jan: Янв
+feb: Фев
+mar: Мар
+apr: Апр
+may: Май
+jun: Июн
+jul: Июл
+aug: Авг
+sep: Сен
+oct: Окт
+nov: Ноя
+dec: Дек
+longjan: Январь
+longfeb: Февраль
+longmar: Март
+longapr: Апрель
+longmay: Май
+longjun: Июнь
+longjul: Июль
+longaug: Август
+longsep: Сентябрь
+longoct: Октябрь
+longnov: Ноябрь
+longdec: Декабрь
+today: Сегодня
+refresh: Обновить
+checkmail: Доставить почту
+compose: Написать сообщение
+writenewmessage: Новое сообщение
+reply: Ответить
+replytomessage: Ответить
+replytoallmessage: Ответить по списку или отправителю и всем получателям
+replyall: Ответить всем
+replylist: Ответить в список рассылки
+forward: Переслать
+forwardinline: Переслать в теле письма
+forwardattachment: Переслать как вложение
+forwardmessage: Переслать
+bouncemsg: Повторить отправку (недоставлено)
+bounce: Отправить повторно
+deletemessage: В корзину
+movemessagetotrash: Переместить сообщение в корзину
+printmessage: Печать
+previousmessage: Показать предыдущее сообщение
+firstmessage: Показать первое сообщение
+nextmessage: Показать следующее сообщение
+lastmessage: Показать последнее сообщение
+backtolist: К списку сообщений
+viewsource: Исходный текст
+mark: Пометить
+markmessages: Пометить сообщения
+markread: Как прочитанное
+markunread: Как непрочитанное
+markflagged: Установить флаг
+markunflagged: Снять флаг
+markundeleted: Как не удаленное
+moreactions: Дополнительные действия...
+markallread: Отметить все как прочтённые
+folders-cur: Только выбранная папка
+folders-sub: Выбранная папка и её подпапки
+folders-all: Все папки
+more: Еще
+back: Назад
+options: Параметры
+composeoptions: Параметры создания
+optionsandattachments: Параметры и вложения
+actions: Действия
+first: Первое
+last: Последнее
+previous: Предыдущее
+next: Следующее
+select: Выбрать
+selection: Выбор
+all: Все
+none: Отсутствует
+currpage: Текущая страница
+isread: Прочтенные
+unread: Непрочитанные
+flagged: Помеченные
+unflagged: Не помеченные
+unanswered: Неотвеченные
+withattachment: С вложением
+deleted: Удаленные
+undeleted: Не удаленные
+replied: Отвечено
+forwarded: Пересланные
+invert: Инвертировать
+filter: Фильтр
+list: Список
+threads: Обсуждения
+expand-all: Развернуть все
+expand-unread: Развернуть непрочитанные
+collapse-all: Свернуть все
+threaded: Обсуждения
+showunread: Показать непрочитанные сообщения
+autoexpand_threads: Развернуть обсуждения
+do_expand: все обсуждения
+expand_only_unread: только с непрочитанными сообщениями
+fromto: Отправитель/Получатель
+flag: Флаг
+attachment: Вложение
+nonesort: Отсутствует
+sentdate: Дата отправки
+arrival: Дата получения
+asc: по возрастанию
+desc: по убыванию
+listcolumns: Колонки
+listsorting: Сортировать по
+listorder: Порядок сортировки
+listmode: Режим просмотра
+lmode: В виде списка
+layout: Размещение
+layoutwidescreen: Широкоэкранное
+layoutdesktop: Рабочий стол
+layoutlist: Список
+layoutwidescreendesc: Широкоэкранный (три колонки)
+layoutdesktopdesc: Настольный (список сообщений и окно предпросмотра под ним)
+layoutlistdesc: Список (без предпросмотра писем)
+folderactions: Операции над папкой...
+compact: Сжать
+empty: Опустошить
+importmessages: Импорт сообщений
+mailimportdesc: Вы можете загрузить почту используя файлы в формате <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> или <a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a>.
+mailimportzip: Несколько файлов могут быть сжаты в zip-архивы.
+quota: Квота
+unknown: неизвестно
+unlimited: без ограничений
+quotatype: Тип квоты
+quotatotal: Лимит
+quotaused: Использовано
+quotastorage: Дисковое пространство
+quotamessage: Количество сообщений
+shortheaderdate: За $date
+shortheaderto: $to за $date
+shortheaderfrom: От $from за $date
+quicksearch: Быстрый поиск
+searchplaceholder: Поиск...
+resetsearch: Сброс
+searchmod: Варианты поиска
+msgtext: Всё сообщение
+body: Тело письма
+type: Тип
+namex: Имя
+searchscope: Область
+currentfolder: Текущая папка
+subfolders: Эта и вложенные папки
+allfolders: Все папки
+searchinterval-1W: больше недели
+searchinterval-1M: больше месяца
+searchinterval-1Y: больше года
+searchinterval1W: меньше недели
+searchinterval1M: меньше месяца
+searchinterval1Y: меньше года
+openinextwin: Открыть в новом окне
+emlsave: Сохранить (.eml)
+changeformattext: Показать в формате обычного текста
+changeformathtml: Показать в HTML формате
+editasnew: Редактировать как новое
+send: Отправить
+sendmessage: Отправить сейчас
+savemessage: Сохранить черновик
+addattachment: Добавить вложение
+charset: Кодировка
+editortype: Редактор
+returnreceipt: Запрос ответа
+dsn: Уведомление о состоянии доставки
+keepformatting: Сохранить форматирование
+mailreplyintro: '$sender писал(а) $date:'
+originalmessage: Исходное сообщение
+selectimage: Выбрать изображение
+addimage: Добавить изображение
+selectmedia: Выбрать видео
+addmedia: Добавить видео
+encrypt: Зашифровать
+encryptmessage: Зашифровать сообщение
+encryptmessagemailvelope: Зашифровать сообщение с  помощью Mailvelope
+importpubkeys: Импортировать открытые ключи
+encryptedsendialog: Отправка зашифрованного сообщения
+encryptandsign: Зашифровать и подписать
+keyid: ID ключа
+keylength: Бит
+keyexpired: С истёкщим сроком
+keyrevoked: Отозван
+bccinstead: Использовать BCC
+insert: Вставить
+insertcontact: Вставить контакт(ы)
+recipient: Получатель
+recipientedit: Изменить получателя
+editidents: Изменить данные
+spellcheck: Орфография
+checkspelling: Проверить орфографию
+resumeediting: Продолжить редактирование
+revertto: Отменить правки
+restore: Восстановить
+restoremessage: Восстановить сообщение?
+ignore: Пропустить
+responses: Ответы
+insertresponse: Вставить ответ
+manageresponses: Управление ответами
+newresponse: Создать новый ответ
+addresponse: Добавить ответ
+editresponse: Редактировать ответ
+editresponses: Редактировать ответы
+responsename: Название
+responsetext: Текста ответа
+attach: Вложить
+attachments: Вложения
+upload: Загрузить
+uploadprogress: $percent ($current из $total)
+close: Закрыть
+messageoptions: Настройки сообщений...
+togglecomposeoptions: Параметры создания
+attachmentrename: Переименовать вложения
+low: Низкий
+lowest: Низший
+normal: Норм.
+high: Высокий
+highest: Высоч.
+nosubject: (без темы)
+showimages: Показать изображения
+allow: Разрешить
+alwaysshow: Всегда показывать изображенияв письмах от $sender
+alwaysallow: Всегда разрешать от $sender
+isdraft: Это черновик.
+andnmore: ещё $nr...
+details: Подробности
+summary: Итог
+headers: Заголовки
+allheaders: Все заголовки...
+togglemoreheaders: Загрузить ещё заголовки сообщений
+togglefullheaders: Показать оригинальные заголовки сообщения
+htmltoggle: HTML
+plaintoggle: Текст
+savesentmessagein: Сохранить в
+dontsave: не сохранять
+maxuploadsize: Максимальный размер файла $size
+addcc: Копия
+addbcc: Скрытая копия
+addreplyto: Кому ответить
+addfollowupto: Добавить Followup-To
+sendreceipt: Отправить уведомление о прочтении?
+mdnrequest: Отправитель этого сообщения запросил уведомление о прочтении. Отправить уведомление?
+receiptread: Уведомление о прочтении
+yourmessage: Это уведомление о прочтении вашего сообщения
+receiptnote: Это уведомление означает только, что сообщение было открыто получателем, и не гарантирует того, что оно было прочитано и (или) понято.
+sendalwaysto: Всегда отправлять на $email
+zoomin: Увеличить
+zoomout: Уменьшить
+rotate: Вращать
+increaseimage: Увеличить изображение
+decreaseimage: Уменьшить изображение
+rotateimage: Повернуть изображение
+showtools: Показать инструменты
+hidetools: Скрыть инструменты
+name: Отображаемое имя
+firstname: Имя
+surname: Фамилия
+middlename: Отчество
+nameprefix: Префикс
+namesuffix: Суффикс
+nickname: Прозвище
+jobtitle: Должность
+department: Отдел
+gender: Пол
+maidenname: Девичья фамилия
+email: E-Mail
+phone: Телефон
+address: Адрес
+street: Улица
+locality: Город
+zipcode: Индекс
+region: Область
+country: Страна
+birthday: День рождения
+anniversary: Годовщина
+website: Веб-сайт
+instantmessenger: IM
+notes: Заметки
+male: мужской
+female: женский
+manager: Менеджер
+assistant: Помощник
+spouse: Супруг
+allfields: Все поля
+search: Поиск
+searchresult: Результаты поиска
+advsearch: Расширенный поиск
+advanced: Дополнительно
+other: Другое
+printcontact: Печатать контакт
+qrcode: QR код
+typehome: Дом
+typework: Работа
+typeother: Другое
+typemobile: Мобильный
+typemain: Основной
+typehomefax: Домашний факс
+typeworkfax: Рабочий факс
+typecar: Автомобиль
+typepager: Пэйджер
+typevideo: Видео
+typeassistant: Помощник
+typehomepage: Домашняя страница
+typeblog: Блог
+typeprofile: Профиль
+addfield: Добавить поле...
+addcontact: Добавить контакт
+editcontact: Редактировать контакт
+contacts: Контакты
+contactproperties: Свойства контакта
+contactnameandorg: Имя и организация
+personalinfo: Личная информация
+personal: Персональные
+contactphoto: Фото контакта
+edit: Правка
+cancel: Отмена
+save: Сохранить
+delete: Удалить
+discard: Удалить
+continue: Продолжить
+ok: ОК
+rename: Переименовать
+addphoto: Добавить
+replacephoto: Заменить
+uploadphoto: Загрузить фотографию
+choosefile: Выберите файл...
+choosefiles: Выберите файлы...
+browse: Обзор
+newcontact: Создать новый контакт
+deletecontact: Удалить выбранные контакты
+composeto: Создать сообщение для выбранных контактов
+contactsfromto: Контакты с $from по $to из $count
+print: Печать
+export: Экспорт
+exportall: Экспортировать все
+exportsel: Экспортировать выделенные
+exportvcards: Экспортировать контакты в формате vCard
+newgroup: Создать новую группу
+addgroup: Добавить группу
+grouprename: Переименовать группу
+groupdelete: Удалить группу
+groupassign: Добавить в группу...
+groupremove: Удалить из группы
+groupremoveselected: Удалить выбранные контакты из группы
+uponelevel: Вверх на уровень
+previouspage: Показать предыдущую страницу
+firstpage: Показать первую страницу
+nextpage: Показать следующую страницу
+lastpage: Показать последнюю страницу
+group: Группа
+groups: Группы
+listgroup: Список членов группы
+personaladrbook: Персональные адреса
+searchsave: Сохранить запрос
+searchdelete: Удалить запрос
+import: Импортировать
+importcontacts: Импортировать контакты
+importfromfile: Импортировать из файла
+importtarget: Добавить контакты в
+importreplace: Заменить всю адресную книгу
+importgroups: Распределение по группам при импорте.
+importgroupsall: Все (создать группы при необходимости)
+importgroupsexisting: Только для существующих групп
+importdesc: Вы можете загрузить контакты из существующей адресной книги. <br/>В настоящее время мы поддерживаем импорт адресов в формате визитной карточки <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> или CSV (данные разделённые запятой).
+importmapdesc: Перед тем, как продолжить импорт данных CSV (разделенных запятыми), убедитесь, что приведенная ниже информация о сопоставлении полей верна.
+fieldnotmapped: Поле не сопоставлено (не импортировать)
+skipheader: Не импортировать первую строку (заголовки)
+done: Завершено
+settingsfor: Настройки для
+about: О программе
+preferences: Настройки
+userpreferences: Настройки пользователя
+editpreferences: Редактировать настройки пользователя
+identities: Профили
+manageidentities: Управление профилями
+newidentity: Создать новый профиль
+addidentity: Добавить профиль
+editidentity: Изменить профиль
+identityencryption: Шифрование
+preferhtml: Предпочитать HTML
+defaultcharset: Набор символов по-умолчанию
+htmlmessage: Сообщение HTML
+messagepart: Часть
+digitalsig: Цифровая подпись
+dateformat: Формат даты
+timeformat: Формат времени
+prettydate: Красивые даты
+setdefault: Использовать по умолчанию
+autodetect: Определять автоматически
+language: Язык
+timezone: Часовой пояс
+pagesize: Строк на странице
+signature: Подпись
+dstactive: Летнее время
+showinextwin: Открыть сообщение в новом окне
+composeextwin: Создать в новом окне
+htmleditor: Создавать сообщения в HTML
+htmlonreply: только в ответ на сообщение в HTML
+htmlonreplyandforward: при пересылке или ответе на HTML сообщение
+htmlsignature: Подпись в HTML
+showemail: Показывать адрес электронной почты и имя адресата
+previewpane: Показать панель превью
+skin: Стиль оформления
+logoutclear: Очищать корзину при выходе
+logoutcompact: Сжать Входящие при выходе
+uisettings: Пользовательский интерфейс
+serversettings: Настройки сервера
+mailboxview: Вид почтового ящика
+mdnrequests: Уведомления о прочтении
+askuser: спросить перед отправкой
+autosend: отправлять автоматически
+autosendknown: отправлять уведомления контактам из адресной книги, в противном случае спросить
+autosendknownignore: отправлять уведомления только контактам из адресной книги, остальных игнорировать
+autosendtrusted: отправить квитанцию доверенным отправителям, в противном случае спросите меня
+autosendtrustedignore: отправить квитанцию доверенным отправителям, в противном случае игнорировать
+ignorerequest: пропустить запрос
+readwhendeleted: Помечать как прочитанное при удалении
+flagfordeletion: Помечать для удаления вместо удаления
+skipdeleted: Не показывать удаленные сообщения
+deletealways: Удалять сообщения, если не получается поместить их в корзину
+deletejunk: Удалять сообщения из папки СПАМ минуя Корзину
+showremoteimages: Показывать удаленные изображения
+allowremoteresources: Разрешить внешние ресурсы (изображения, стили)
+fromknownsenders: от известных отправителей
+fromtrustedsenders: от доверенных отправителей
+frommycontacts: от моих контактов
+always: всегда
+alwaysbutplain: всегда, кроме тех случаев, когда, ответ составлен обычным текстом
+showinlineimages: Показывать вложенные изображения внизу сообщения
+autosavedraft: Автосохранение черновика
+everynminutes: каждые $n минут
+refreshinterval: Обновить (проверить новые сообщения и т.п.)
+never: никогда
+immediately: немедленно
+messagesdisplaying: Отображение сообщений
+messagescomposition: Создание сообщений
+mimeparamfolding: Имена вложений
+2231folding: RFC 2231 (только для новейших программ)
+miscfolding: RFC 2047/2231  (наибольшая совместимость)
+2047folding: RFC 2047  (для старых программ)
+force7bit: Использовать MIME для 8-битных символов
+savelocalstorage: Сохранить в локальном хранилище веб-обозревателя (временно)
+advancedoptions: Дополнительные настройки
+toggleadvancedoptions: Дополнительные параметры
+focusonnewmessage: Фокусировать окно браузера при новом сообщении
+checkallfolders: Проверять новые сообщения во всех папках
+displaynext: Показать следующую запись списка после удаления/перемещения
+defaultfont: Шрифт по умолчанию HTML сообщения
+mainoptions: Основные настройки
+browseroptions: Настройки обозревателя
+section: Раздел
+maintenance: Обслуживание
+newmessage: Новое сообщение
+signatureoptions: Опции подписи
+whenreplying: При ответе
+replyempty: не цитировать оригинальное сообщение
+replytopposting: начать новое сообщение перед цитируемым
+replytoppostingnoindent: начать новое сообщение перед цитируемым (без отступа)
+replybottomposting: начать новое сообщение после цитируемого
+replyremovesignature: Удалить подпись при ответе
+autoaddsignature: Автоматически добавлять подпись
+newmessageonly: только в новых сообщениях
+replyandforwardonly: только в ответах и пересылках
+insertsignature: Вставить подпись
+sigbelow: Поместить подпись после цитируемого сообщения
+sigseparator: Добавлять стандартный разделитель в подписи
+automarkread: Отметить сообщения как прочитанные
+afternseconds: через $n секунд
+reqmdn: Всегда запрашивать уведомление о доставке
+reqdsn: Всегда запрашивать уведомление о состоянии доставки
+replysamefolder: Помещать ответы в ту же папку, где находится оригинал
+defaultabook: Адресная книга по умолчанию
+autocompletesingle: Пропускать дополнительные адреса в автозавершении
+listnamedisplay: Выводить список контактов как
+contactformmode: Режим формы Контакта
+privatemode: Личный (домашний)
+businessmode: Бизнес (рабочий)
+collectedaddresses: Собранные контакты
+collectedrecipients: Собранные получатели
+collectedrecipientsopt: Сохранять получателей исходящей электронной почты в
+collectedsendersopt: Сохранять доверенных отправителей в
+trustedsenders: Надежные отправители
+spellcheckbeforesend: Проверять орфографию перед отправкой
+spellcheckoptions: Параметры проверки орфографии
+spellcheckignoresyms: Пропускать слова с символами
+spellcheckignorenums: Пропускать слова с цифрами
+spellcheckignorecaps: Пропускать слова из прописных букв
+addtodict: Добавить в словарь
+mailtoprotohandler: 'Зарегистрировать обработчик для ссылок mailto:'
+standardwindows: Обрабатывать всплывающие окна как обычные
+forwardmode: Пересылка сообщений
+inline: в тексте
+asattachment: как вложение
+replyallmode: Действие по умолчанию кнопки [Ответить всем]
+replyalldefault: ответить всем
+replyalllist: ответить только в список рассылки (если найден)
+allmessages: все сообщения
+olderxdays: старше чем $x дней
+folder: Папка
+folders: Папки
+foldername: Имя папки
+subscribed: Подписан
+messagecount: Сообщения
+create: Создать
+createfolder: Создать новую папку
+managefolders: Управление папками
+specialfolders: Особые папки
+properties: Свойства
+folderproperties: Свойства папки
+parentfolder: Родительская папка
+location: Расположение
+info: Информация
+getfoldersize: Показать размер папки
+changesubscription: Изменить подписку
+foldertype: Тип каталога
+personalfolder: Приватный каталог
+otherfolder: Каталог другого пользователя
+sharedfolder: Совместный каталог
+findfolders: Найти папки
+findcontacts: Поиск контактаов
+findmail: Поиск сообщений
+namespace.personal: Персональные
+namespace.other: Других пользователей
+namespace.shared: Общие
+dualuselabel: Может содержать только
+dualusemail: сообщения
+dualusefolder: папки
+generate: Создать
+encryptioncreatekey: Создать новую пару ключей
+openmailvelopesettings: Открыть настройки Mailvelope
+encryptionprivkeysinmailvelope: 'У вас есть $nr подходящих закрытых PGP ключей, хранящиеся на вашей связке ключей Mailvelope:'
+encryptionnoprivkeysinmailvelope: У этого идентификатора отправителя еще нет закрытого ключа PGP, хранящегося расширении Mailvelope. Вы хотите создать ключ для того, чтобы включить зашифрованный обмен сообщениями?
+encryption: Шифрование
+mailvelopeoptions: Mailvelope опции
+mailvelopemainkeyring: Использовать шифрование Mailvelope
+mailvelopenotfound: Расширение Mailvelope не включено / не установлено в вашем браузере.
+sortby: Сортировать по
+sortasc: Возрастанию
+sortdesc: Убыванию
+undo: Отмена
+installedplugins: Установленные дополнения
+plugin: Дополнение
+version: Версия
+source: Источник
+destination: Назначение
+license: Лицензия
+support: Поддержка
+savedsearches: Сохранённые запросы
+dateformatY: ГГГГ
+dateformaty: ГГ
+dateformatm: ММ
+dateformatd: ДД
+dateformatj: Д
+dateformatn: М
+B: Б
+KB: КБ
+MB: МБ
+GB: ГБ
+unicode: Unicode
+english: Английский
+westerneuropean: Западноевропейский
+easterneuropean: Восточноевропейский
+southeasterneuropean: Юго-Восточноевропейский
+baltic: Прибалтийский
+cyrillic: Кириллица
+arabic: Арабский
+greek: Греческий
+hebrew: Иврит
+turkish: Турецкий
+nordic: Скандинавский
+thai: Тайский
+celtic: Кельтский
+vietnamese: Вьетнамский
+japanese: Японский
+korean: Корейский
+chinese: Китайский
+arialabeltopnav: Управление окном
+arialabeltasknav: Задачи приложения
+arialabeltoolbar: Панель инструментов приложения
+arialabellistnav: Навигация по списку
+arialabelactivetask: Активная задача
+arialabelmessagessearchfilter: Фильтр перечня сообщений
+arialabelmailsearchform: Форма поиска в сообщении
+arialabelcontactsearchform: Форма поиска контактов
+arialabelmailquicksearchbox: Ввод поискового запроса адресов эл.почты
+arialabelquicksearchbox: Поисковый запрос
+arialabelfoldersearchfilter: Фильтр перечня папок
+arialabelfoldersearchform: Форма поиска папок
+arialabelfolderlist: Выбор папки эл.почты
+arialabelmessagelist: Перечень сообщений эл.почты
+arialabelmailpreviewframe: Предпросмотр сообщений
+arialabelmailboxmenu: Меню действий над папкой
+arialabellistselectmenu: Меню выделения списка
+arialabelthreadselectmenu: Меню списка обсуждений
+arialabelmessagelistoptions: Параметры отображение списка сообщений и упорядочивания
+arialabelmailimportdialog: Диалог импорта сообщения
+arialabelmessagenav: Навигация по сообщениям
+arialabelmessagebody: Тело сообщения
+arialabelmessageactions: Действия над сообщением
+arialabelcontactquicksearch: Форма поиска контактов
+arialabelcontactsearchbox: Ввод поискового запроса контакта
+arialabelmessageheaders: Заголовки сообщений
+arialabelforwardingoptions: Опции пересылки
+arialabelreplyalloptions: Параметры ответа всем
+arialabelmoremessageactions: Дополнительные действия с сообщением
+arialabelmorecontactactions: Дополнительные действия с контактом
+arialabelmarkmessagesas: Отметить выделенные сообщения как...
+arialabelcomposeoptions: Параметры создания
+arialabelresponsesmenu: Меню заранее подготовленных ответов
+arialabelattachmentuploadform: Форма выгрузки вложения
+arialabelattachmentmenu: Настройки вложений
+arialabelmailtomenu: Параметры адреса
+arialabelattachmentpreview: Предпросмотр вложений
+ariasummarycomposecontacts: Список контактов и групп для выбора в качестве получателей
+arialabelcontactexportoptions: Параметры экспорта контактов
+arialabelabookgroupoptions: Параметры адресной книги/группы
+arialabelpreferencesform: Форма настроек
+arialabelidentityeditfrom: Форма редактирования личных данных
+arialabelresponseeditfrom: Форма редактирования ответа
+arialabelsearchterms: Поисковый запросы
+arialabeldropactionmenu: Меню действий при перетаскивании
+arialabelheadersmenu: Меню добавления получателя (Заголовок)
+arialabelimagetools: Инструменты работы с изображениями
+helplistnavigation: Клавиши навигации по списку
+helplistkeyboardnavigation: "Стрелки вверх/вниз: Перемещает фокус по строкам/выделение.\nПробел: Выделяет строку на которой находится фокус.\nShift + вверх/вниз: Выделяет дополнительную строку выше/ниже.\nCtrl + пробел: Добавляет/удаляет строку на которой находится фокус в/из выделения."
+helplistkeyboardnavmessages: "Стрелки вправо/влево: раскрыть/свернуть сообщения обсуждения (только в режиме просмотра обсуждений).\nEnter: Открыть выделенное сообщение.\nDelete: Переместить выбранные сообщения в Корзину."
+helplistkeyboardnavcontacts: 'Enter: Открыть выбранный контакт.'
+undeletemessage: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+addheader: ''
+nonbinary: ''
+othergender: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+alwayskeepformatting: ''
+editoroptions: ''
+enableautolink: ''
+mailvelopeenable: ''
+skinauthor: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

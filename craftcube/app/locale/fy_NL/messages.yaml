@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for fy_NL. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Der is in flater bard!
+loginfailed: Ynloggen mislearre.
+cookiesdisabled: Jo browser akseptearret gjin koekjes.
+sessionerror: Jo sesje is ûnjildich of ferrûn.
+storageerror: Ferbining mei opslach tsjinner mislearre.
+servererror: Tsjinner Flater!
+servererrormsg: 'Tsjinner Flater: $msg'
+accountlocked: Ynloggen te faak mislearre. Besykje it letter nochris.
+connerror: Ferbinings Flater (Kin de tsjinner net berikke)!
+dberror: Databank Flater!
+windowopenerror: De popup finster waard blokkearre!
+requesttimedout: Fersyk ferrûn
+errorreadonly: Koe operaasje net útfiere. Map kin allinnich lêzen wurde.
+errornoperm: Koe operaasje net útfiere. Tastimming wegere.
+erroroverquota: Koe operaasje net útfiere. Gjin frije skiifromte.
+erroroverquotadelete: Gjin frije skiifromte. Brûk Shift + DEL om in berjocht te wiskjen.
+invalidrequest: Ûnjildich fersyk! Gjin data waard bewarre.
+invalidhost: Unjildige tsjinner namme.
+nomessagesfound: Gjin berjochten fûn yn dit postfek.
+mailboxempty: Postfek is leech
+nomessages: Gjin berjochten
+refreshing: Ferfarskje...
+loading: Lade...
+uploading: Bestân oplade...
+attaching: Bestân tafoegje...
+uploadingmany: Bestânnen oplade...
+loadingdata: Data lade...
+checkingmail: Kontrolearje op nije berjochten...
+sendingmessage: Berjocht ferstjoere...
+messagesent: Berjocht mei sukses ferstjoerd.
+savingmessage: Berjocht bewarje...
+messagesaved: Berjocht bewarre yn ûntwerpen.
+successfullysaved: Mei sukses bewarre.
+savingresponse: Antwurd tekst bewarje...
+deleteresponseconfirm: Wolle jo dizze antwurd tekst echt wiskje?
+addedsuccessfully: Kontakt mei sukses taheakke oan adresboek.
+contactexists: In kontakt mei deselde e-post adres bestiet al.
+contactnameexists: In kontakt mei deselde namme bestiet al.
+blockedimages: Om jo privacy te beskermjen binne eksterne ôfbyldingen blokkeare yn dit berjocht.
+encryptedmessage: Dit is in fersifere berjocht en kin net werjûn wurde. Sorry!
+externalmessagedecryption: Dit is in fersifere berjocht en kin ûntsifere wurde mei jo browser ekstinsje.
+nopubkeyfor: Gjin jildich iepenbiere kaai fûn foar $email
+nopubkeyforsender: Gjin jildich iepenbiere kaai fûn foar jo stjoerder identiteit. Wolle jo it berjocht allinnich foar de ûntfangers fersiferje?
+encryptnoattachments: Al oanbeane taheaksels kinne net fersifere wurde. Asjebleaft op 'e nij taheakje yn de fersifering bewurker.
+searchpubkeyservers: Wolle jo op publike kaai tsjinners sykje nei de missende kaaien?
+encryptpubkeysfound: 'De folgjende publike kaaien binne fûn:'
+nocontactsfound: Gjin kontakten fûn.
+contactnotfound: De opfrege kontakt waard net fûn.
+sendingfailed: Berjocht koe net ferstjoerd wurde.
+senttooquickly: Wachtsje $sec sekonde(n) foar it ferstjoeren fan dit berjocht.
+errorsavingsent: Der barde in flater ûnder it bewarjen fan ferstjoerd berjocht.
+errorsaving: Der barde in flater ûnder it bewarjen.
+errormoving: Koe berjocht(en) net ferpleatse.
+errorcopying: Koe berjocht(en) net kopieare.
+errordeleting: Koe berjocht(en) net wiskje.
+errormarking: Koe berjocht(en) net markearje.
+deletecontactconfirm: Wolle jo selektearre kontakt(en) echt wiskje?
+deletegroupconfirm: Wolle jo selektearre groep echt wiskje?
+deletemessagesconfirm: Wolle jo selektearre berjocht(en) echt wiskje?
+deletefolderconfirm: Wolle jo dizze map echt wiskje?
+purgefolderconfirm: Wolle jo echt alle berjochten yn dizze map wiskje?
+contactdeleting: Kontakt(en) wiskje...
+groupdeleting: Groep wiskje...
+folderdeleting: Map wiskje...
+foldermoving: Map ferpleatse...
+foldersubscribing: Ynskriuwe map...
+folderunsubscribing: Utskriuwe map...
+formincomplete: It formulier wie net hielendal ynfolle.
+noemailwarning: Fier in jildich e-post adres yn.
+nonamewarning: Fier in namme yn.
+nopagesizewarning: Fier in side grutte yn.
+nosenderwarning: Fier stjoerder e-post adres yn.
+norecipientwarning: Fier op syn minst ien ûntfanger yn.
+disclosedreciptitle: Tefolle iepenbiere ûntfangers
+nosubjectwarning: It "Underwerp" fjild is leech. Wolle jo no ien ynfiere?
+nosubjecttitle: Gjin ûnderwerp
+nobodywarning: Dit berjocht sûnder tekst ferstjoere?
+notsentwarning: It berjocht is net ferstjoerd en hat net-bewarre feroarings. Wolle jo de feroarings fuort smite?
+restoresavedcomposedata: 'In earder komponearre mar net-ferstjoerd berjocht waard fûn.\n\nSubject: $subject\nSaved: $date\n\nWolle jo dit berjocht weromsette?'
+nosearchname: Fier in kontakt namme of e-post adres yn.
+notuploadedwarning: Noch net alle taheaksels binne opladen. Jo kinne wachtsje of it opladen ôfbrekke.
+searchsuccessful: $nr berjochten fûn.
+contactsearchsuccessful: $nr kontakten fûn.
+searchnomatch: Sykjen hat gjin risseltaten opsmiten.
+searching: Sykje...
+checking: Kontrolearje...
+stillsearching: Noch oan it sykjen...
+nospellerrors: Gjin stavering flaters fûn.
+folderdeleted: Map mei sukses wiske.
+foldersubscribed: Map mei sukses ynskreaun.
+folderunsubscribed: Map mei sukses útskreaun.
+deletedsuccessfully: Mei sukses wiske.
+converting: Opmaak wiskje...
+messageopenerror: Koe berjocht net fan tsjinner lade.
+filelinkerror: Taheakjen fan bestân mislearre.
+fileuploaderror: Bestân oplade mislearre.
+filesizeerror: It opladen bestân is grutter as de maksimale grutte fan $size.
+filecounterror: Jo kinne maksimaal $count bestânnen yn ien kear oplade.
+msgsizeerror: Bestân taheakje mislearre. Maksimum grutte fan in berjocht ($size) oer gien.
+copysuccess: Mei sukses $nr kontakten kopiearre.
+movesuccess: Mei sukses $nr kontakten ferpleatst.
+copyerror: Koe gjin kontakten kopiearje.
+moveerror: Koe gjin kontakten ferpleatse.
+sourceisreadonly: Dizze adres boarne kin allinnich lêzen wurde.
+errorsavingcontact: Koe kontakt adres net bewarje.
+movingmessage: Berjocht(en) ferpleatse...
+copyingmessage: Berjocht(en) kopiearje...
+copyingcontact: Kontakt(en) kopiearje...
+movingcontact: Kontakt(en) ferpleatse...
+deletingmessage: Berjocht(en) wiskje...
+markingmessage: Berjocht(en) markearje...
+addingmember: Kontakt(en) oan de groep tafoegje...
+removingmember: Kontakt(en) út de groep ferwiderje...
+receiptsent: Mei súkses in lêzen ûntfangstbewiis ferstjoerd.
+errorsendingreceipt: Koe it ûntfangstbewiis net stjoere.
+deleteidentityconfirm: Wolle jo echt dizze identiteit wiskje?
+nodeletelastidentity: Jo kinne dizze identiteit net wiskje, it is jo lêste.
+forbiddencharacter: Mapnamme befettet in ferbean karakter.
+selectimportfile: Selektearje in bestân om op te laden.
+addresswriterror: It selektearre adres boek is net skriuwber.
+contactaddedtogroup: De kontakten mei sukses oan dizze groep taheakke.
+contactremovedfromgroup: De kontakten mei sukses út dizze groep ferwidere.
+nogroupassignmentschanged: Gjin groep opdrachten feroare.
+importwait: Ymportearjen, in amerijke...
+importformaterror: Ymport mislearre! It opladen bestân is net in jildich ymport data bestân.
+importconfirm: <b>Mei sukses ymportearre $inserted kontakten</b>
+importmessagesuccess: Mei sukses $nr berjochten ymportearre
+importmessageerror: Ymport mislearre! It opladen bestân is net in jildich berjocht of postfek bestân
+opnotpermitted: Operaasje net tastien!
+nofromaddress: E-post adres mist yn selektearre identiteit.
+editorwarning: Troch te wiskeljen fan berwurker kin tekst opmaak ferlern gean. Wolle jo trochgean?
+httpreceivedencrypterror: In fatale konfiguraasje flater. Nim fuortendaliks kontakt op mei jo systeembehearder. <B>Jo berjocht kin net stjoerd wurde.</ B>
+smtpconnerror: 'SMTP Flater ($code): Ferbining mei tsjinner mislearre.'
+smtpautherror: 'SMTP Flater ($code): Ferifikaasje mislearre.'
+smtpfromerror: 'SMTP Flater ($code): Stjoerder fêststelle mislearre "$from" ($msg).'
+smtptoerror: 'SMTP Flater ($code): Untfanger tafoegje mislearre "$to" ($msg).'
+smtprecipientserror: 'SMTP Flater: Koe ûntfangers lyst net ferwurkje.'
+smtperror: 'SMTP Flater: $msg'
+emailformaterror: 'Unjildich e-post adres: $email'
+toomanyrecipients: Tefolle ûntfangers. Ferminderje it tal fan ûntfangers nei $max.
+maxgroupmembersreached: It tal fan groep leden is grutter as it maksimum fan $max.
+internalerror: In ynterne flater. Besykje it nochris.
+contactdelerror: Koe kontakt(en) net wiskje.
+contactdeleted: Kontakt(en) mei sukses wiske.
+contactrestoreerror: Koe wiske kontakt(en) net werom sette.
+contactrestored: Kontakt(en) mei sukses werom setten.
+groupdeleted: Groep mei sukses wiske.
+grouprenamed: Groep namme mei sukses feroare.
+groupcreated: Groep mei sukses oanmakke.
+savedsearchdeleted: Bewarre syk opdracht mei sukses wiske.
+savedsearchdeleteerror: Koe bewarre syk opdracht net wiskje.
+savedsearchcreated: Syk opdracht mei sukses bewarre.
+savedsearchcreateerror: Koe syk opdracht net bewarje.
+messagedeleted: Berjocht(en) mei sukses wiske.
+messagemoved: Berjocht(en) mei sukses ferpleatst.
+messagemovedtotrash: Berjocht(en) mei sukses nei Jiskefet ferpleatse.
+messagecopied: Berjocht(en) mei sukses kopieare.
+messagemarked: Berjocht(en) mei sukses markeare.
+autocompletechars: Fier op syn minst $min tekens yn foar autokompleet.
+autocompletemore: Mear oerienkommende risseltaten fûn. Typ mear tekens.
+namecannotbeempty: Namme kin net leech wêze.
+nametoolong: Namme is te lang.
+namedotforbidden: Mapnamme kin net mei in punt begjinne.
+folderupdated: Map mei sukses bywurke.
+foldercreated: Map mei sukses oanmakke.
+invalidimageformat: Gjin jildich ôfbyldings formaat.
+mispellingsfound: Stavering flaters ûntdutsen yn it berjocht.
+parentnotwritable: Koe map net oanmeitsje/ferhúzje yn selektearre boppelizzende map. Gjin tagong rjochten.
+messagetoobig: It berjocht diel is te grut om te ferwurkjen.
+noscriptwarning: 'Warskôging: Dizze webmail tsjinst fereasket Javascript! Om it te brûken moatte jo Javascript ynskeakelje yn jo browser ynstellings.'
+messageissent: Dit berjocht wie al ferstjoerd, mar noch net bewarre. Wolle jo it no bewarje?
+errnotfound: Bestân Net Fûn
+errnotfoundexplain: De frege boarne waard net fûn!
+errfailedrequest: Mislearre Fersyk
+errauthorizationfailed: Autorisaasje Mislearre
+errunauthorizedexplain: Koe net nei gean oft jo machtige binne om tagong te krijen ta dizze tsjinst!
+errrequestcheckfailed: Fersyk Kontrole Mislearre
+errcsrfprotectionexplain: "Foar jo beskerming, tagong ta dizze boarne is befeilige tsjin CSRF.\nAs jo dit sjogge, hawwe jo net útlogge foar it ferlitten fan de web applikaasje.\n\nMinskelike ynteraksje is no ferplichte om fierder te gean."
+errcontactserveradmin: Nim kontakt op mei jo tsjinner-behearder.
+clicktoresumesession: Klik hjir om jo foarige sesje te ferfetsjen
+errcomposesession: Skriuw berjocht sesje flater
+errcomposesessionexplain: Fersyk skriuw berjocht sesje net fûn.
+clicktocompose: Klik hjir om in nij berjocht te skriuwen
+cookiesmismatch: ''
+dbconnerror: ''
+loggedout: ''
+nocontactselected: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+folderpurged: ''
+folderexpunged: ''
+csvfilemismatch: ''
+msgsizeerrorfwd: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+smtputf8error: ''
+smtpsizeerror: ''
+attachmentvalidationerror: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

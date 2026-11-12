@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for he_IL. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: ברוך בואך אל $product
+username: שם משתמש
+password: סיסמה
+server: שרת
+login: כניסה
+oauthlogin: כניסה עם provider$
+menu: תפריט
+logout: יציאה
+mail: רשימת הודעות
+settings: הגדרות אישיות
+addressbook: פנקס כתובות
+darkmode: רקע כהה
+lightmode: רקע בהיר
+inbox: נכנס
+drafts: טיוטות
+sent: נשלח
+trash: אשפה
+junk: זבל
+show_real_foldernames: הצגת שמות אמיתיים של תיקיות מיוחדות
+subject: נושא
+from: מאת
+sender: השולח
+to: אל
+cc: לידיעה
+bcc: מכותב מוסתר
+replyto: כתובת למענה
+followupto: כתובת להעברת הודעה
+date: תאריך
+size: גודל
+priority: עדיפות
+organization: ארגון
+readstatus: נקרא
+listoptions: הצגת אפשרויות...
+listoptionstitle: רשימת אפשרויות
+mailboxlist: תיקיות
+messagesfromto: הודעות $from עד $to מתוך $count
+threadsfromto: שרשור $from עד $to מתוך $count
+messagenrof: הודעה $nr מתוך $count
+fromtoshort: $from – $to מתוך $count
+copy: העתק
+move: העבר
+moveto: תיוק ב...
+copyto: העתקה אל...
+download: הורדה
+open: לפתוח
+showattachment: הצגה
+showanyway: להציג בכל מקרה
+filename: שם קובץ
+filesize: גודל קובץ
+addtoaddressbook: הוספה לפנקס כתובות
+sun: יום א
+mon: יום ב
+tue: יום ג
+wed: יום ד
+thu: יום ה
+fri: יום ו
+sat: יום ש
+sunday: ראשון
+monday: שני
+tuesday: שלישי
+wednesday: רביעי
+thursday: חמישי
+friday: ששי
+saturday: שבת
+jan: ינו
+feb: פבר
+mar: מרץ
+apr: אפר
+may: מאי
+jun: יונ
+jul: יול
+aug: אוג
+sep: ספט
+oct: אוק
+nov: נוב
+dec: דצמ
+longjan: ינואר
+longfeb: פברואר
+longmar: מרץ
+longapr: אפריל
+longmay: מאי
+longjun: יוני
+longjul: יולי
+longaug: אוגוסט
+longsep: ספטמבר
+longoct: אוקטובר
+longnov: נובמבר
+longdec: דצמבר
+today: היום
+refresh: רענון
+checkmail: משיכת הודעות חדשות
+compose: כתיבת הודעה
+writenewmessage: יצירת הודעה חדשה
+reply: תגובה
+replytomessage: מענה לשולח
+replytoallmessage: מענה לשולח ולכל הנמענים
+replyall: מענה לכולם
+replylist: מענה לרשימת תפוצה
+forward: העברה
+forwardinline: העבר בגוף ההודעה
+forwardattachment: העבר כצרופה
+forwardmessage: העבר הודעה
+bouncemsg: שליחה מחדש (כי המערכת החזירה את המשלוח)
+bounce: שליחה מחדש
+deletemessage: מחיקה
+movemessagetotrash: השלכה לאשפה
+printmessage: הדפסה
+previousmessage: הצגת הודעה קודמת
+firstmessage: הצגת ההודעה הראשונה
+nextmessage: הצגת ההודעה הבאה
+lastmessage: הצגת ההודעה האחרונה
+backtolist: חזרה אל רשימת ההודעות
+viewsource: הצגת קוד מקור
+mark: סימון
+markmessages: סימון הודעות
+markread: כנקראו
+markunread: כלא נקראו
+markflagged: כמסומן
+markunflagged: כלא מסומן
+markundeleted: כמי שלא נמחקו
+moreactions: פעולות נוספות...
+markallread: סימון כל ההודעות כאילו נקראו
+folders-cur: רק התיקיה שנבחרה
+folders-sub: רק התיקיה שנבחרה ותת התיקיות שלה
+folders-all: כל התיקיות
+more: עוד
+back: חזרה
+options: אפשרויות
+composeoptions: אפשרויות יצירת הודעה
+optionsandattachments: אפשרויות וצרופות
+actions: פעולות
+first: ראשונה
+last: אחרונה
+previous: הקודמת
+next: הבאה
+select: בחירה
+selection: בחירה
+all: הכל
+none: כלום
+currpage: דף נוכחי
+isread: קריאה
+unread: לא נקראו
+flagged: מסומן
+unflagged: לא מדוגלת
+unanswered: לא נענה
+withattachment: עם צרופה
+deleted: נמחק
+undeleted: לא נמחק
+replied: נענתה
+forwarded: קודמה
+invert: היפוך הסימון
+filter: סינון
+list: רשימה
+threads: שרשור
+expand-all: הרחבה כלית
+expand-unread: הרחבה טרם נקרא
+collapse-all: כינוס כללי
+threaded: משורשר
+showunread: הצגת הודעות שלא נקראו
+autoexpand_threads: הרחבת הודעות משורשרות
+do_expand: כל השרשורים
+expand_only_unread: רק עם הודעות שטרם נקראו
+fromto: שולח/נמען
+flag: דגל
+attachment: צרופה
+nonesort: כלום
+sentdate: תאריך משלוח
+arrival: תאריך הגעה
+asc: בסדר עולה
+desc: בסדר יורד
+listcolumns: רשימת עמודות
+listsorting: המיון לפי העמודה
+listorder: סדר מיון
+listmode: אופן הצגת רשימה
+lmode: מצב רשימה
+layout: מערך
+layoutwidescreen: מסך רחב
+layoutdesktop: מחשב שולחני
+layoutlist: רשימה
+layoutwidescreendesc: פריסה רחבה (3 טורים)
+layoutdesktopdesc: שולחן עבודה (פריסה רחבה והצגת ההודעה למטה)
+layoutlistdesc: רשימה (ללא הצגת ההודעה)
+folderactions: פעולות על תיקיות
+compact: פינוי שטח לא מנוצל
+empty: ריקון
+importmessages: ייבוא הודעות
+mailimportdesc: ניתן להעלות דוא"ל באמצעות קבצים המקודדים כ MIME או MBOX
+mailimportzip: ניתן לדחוס מספר קבצים לתוך ארכיון ZIP
+quota: ניצול קיבולת
+unknown: לא ידוע
+unlimited: ללא הגבלה
+quotatype: טיפוס קווטה
+quotatotal: הגבלה
+quotaused: בשימוש
+quotastorage: נפח כונן
+quotamessage: ספירת הודעות
+shortheaderdate: ביום $date
+shortheaderto: עד $to ביום $date
+shortheaderfrom: מ- $from בתאריך $date
+quicksearch: חיפוש מהיר
+searchplaceholder: חיפוש...
+resetsearch: ניקוי תיבת החיפוש
+searchmod: מאפייני חיפוש
+msgtext: כל ההודעה
+body: גוף ההודעה
+type: סוג
+namex: שם
+searchscope: היקף
+currentfolder: תיקיה נוכחית
+subfolders: תיקיה זו ותת תיקיות
+allfolders: כל התיקיות
+searchinterval-1W: יותר משבוע
+searchinterval-1M: יותר מחודש
+searchinterval-1Y: יותר משנה
+searchinterval1W: פחות משבוע
+searchinterval1M: פחות מחודש
+searchinterval1Y: פחות משנה
+openinextwin: פתיחה בחלון חדש
+emlsave: הורדת הודעה בפורמט  EML
+changeformattext: הצגה בפורמט לא מעוצב
+changeformathtml: הצגה בפורמט HTML
+editasnew: עריכת ההודעה כחדשה
+send: שלח
+sendmessage: משלוח מיידי
+savemessage: שמירת טיוטה
+addattachment: צירוף קובץ
+charset: קידוד
+editortype: סוג עורך
+returnreceipt: אישור קבלה
+dsn: הודעה על מצב המסירה
+keepformatting: המשך עריכה
+mailreplyintro: :כתב $sender, $date בתאריך
+originalmessage: הודעה מקורית
+selectimage: בחר תמונה
+addimage: הוסף תמונה
+selectmedia: בחר סרטון
+addmedia: הוסף סרטון
+encrypt: הצפנה
+encryptmessage: הצפנת הודעה
+encryptmessagemailvelope: הצפנה באמצעות Mailvelope
+importpubkeys: ייבוא מפתחות ציבוריים
+encryptedsendialog: נשלחת הודעה מוצפנת
+encryptandsign: להצפין ולחתום
+keyid: קוד זיהוי מפתח
+keylength: סיביות
+keyexpired: פג תוקף
+keyrevoked: נשלל
+bccinstead: שימוש במכותבים נסתרים
+insert: הוספה בין ערכים
+insertcontact: פה יש להוסיף איש קשר
+recipient: הנמען
+recipientedit: עריכת נמענים
+editidents: עריכת זהויות
+spellcheck: איות
+checkspelling: בדיקת איות
+resumeediting: המשך עריכה
+revertto: חזור למצב קודם
+restore: שיחזור
+restoremessage: לשחזר הודעה?
+ignore: להתעלם
+responses: תגובות
+insertresponse: הכנסת תגובה
+manageresponses: ניהול תגובות
+newresponse: צור מענה חדש
+addresponse: הוסף מענה
+editresponse: עריכת תגובה
+editresponses: עריכת תגובות
+responsename: שם
+responsetext: גוף התגובה
+attach: צירוף
+attachments: צרופות
+upload: העלאה
+uploadprogress: $percent ($current מתוך $total)
+close: סגירה
+messageoptions: אפשרויות הודעה...
+togglecomposeoptions: בחירה בין הגדרות בסיסיות או מתקדמות של יצירת הודעה
+attachmentrename: שינוי שם הצרופה
+low: נמוך
+lowest: נמוך ביותר
+normal: רגיל
+high: גבוה
+highest: גבוה ביותר
+nosubject: (ללא נושא)
+showimages: הצגת תמונות
+allow: הרשאה
+alwaysshow: $sender תמיד להציג תמונות מאת
+alwaysallow: תמיד לקבל מ- $sender
+isdraft: זו טיוטה של הודעה
+andnmore: עוד  $nr
+details: פרטים
+summary: סיכום
+headers: כותרות
+allheaders: כל הכותרות
+togglemoreheaders: הראה נתוני מערכת נוספים של ההודעה
+togglefullheaders: הראה / בטל צפיה בנתוני מערכת של ההודעה
+htmltoggle: HTML
+plaintoggle: ללא עיצוב
+savesentmessagein: היכן לשמור ההודעה?
+dontsave: ללא שמירה
+maxuploadsize: גודל מקסימלי לקובץ הוא  $size
+addcc: הוספת מכותב לידיעה
+addbcc: הוספת מכותב נסתר
+addreplyto: הוספת כתובת למענה
+addfollowupto: הוספת כתובת להעברת הודעה
+sendreceipt: לשלוח אישור קבלה?
+mdnrequest: השולח ביקש לדעת אם ההודעה נקראה. האם להודיע לשולח?
+receiptread: אישור קבלה (נקרא)
+yourmessage: אישור קבלה להודעתך
+receiptnote: 'הערה: האישור אינו מבטיח שהנמען קרא או הבין את תוכן ההודעה.'
+sendalwaysto: לשלוח תמיד אל email$
+zoomin: מבט עמוק יותר לפרטים
+zoomout: מבט רחוק יותר מהפרטים
+rotate: לסובב
+increaseimage: להגדיל תמונה
+decreaseimage: להקטין תמונה
+rotateimage: לסובב תמונה
+showtools: הצגת כלים לעיבוד תמונה
+hidetools: הסתרת כלים לעיבוד תמונה
+name: שם להצגה
+firstname: שם פרטי
+surname: שם משפחה
+middlename: שם אמצעי
+nameprefix: קידומת
+namesuffix: סיומת
+nickname: שם חיבה
+jobtitle: תפקיד באירגון
+department: מחלקה
+gender: מגדר
+maidenname: שם משפחה לפני נישואין
+email: כתובת דוא"ל
+phone: מספר טלפון
+address: כתובת
+street: רחוב
+locality: עיר
+zipcode: מיקוד
+region: אישור
+country: מדינה
+birthday: יום הולדת
+anniversary: יום נישואין
+website: אתר אינטרנט
+instantmessenger: כינוי בצ'ט
+notes: הערות
+male: זכר
+female: נקבה
+manager: מנהל/ת
+assistant: עוזר/ת
+spouse: בן/בת זוג
+allfields: כל השדות
+search: חיפוש
+searchresult: תוצאת חיפוש
+advsearch: חיםוש מתקדם
+advanced: מתקדם
+other: אחר
+printcontact: הדפסת נתונים של איש קשר
+qrcode: קוד QR
+typehome: בית
+typework: עבודה
+typeother: אחר
+typemobile: נייד
+typemain: עיקרי
+typehomefax: פקס בית
+typeworkfax: פקס עבודה
+typecar: מכונית
+typepager: זימונית
+typevideo: וידאו
+typeassistant: עוזר/ת
+typehomepage: דף הבית
+typeblog: יומן רשת
+typeprofile: פרופיל
+addfield: הוסף שדה
+addcontact: הוסף איש קשר
+editcontact: עריכת איש קשר
+contacts: אנשי קשר
+contactproperties: מאפייני איש קשר
+contactnameandorg: שם וארגון
+personalinfo: מידע אישי
+personal: אישי
+contactphoto: תצלום איש קשר
+edit: עריכה
+cancel: ביטול
+save: שמירה
+delete: מחיקה
+discard: להפטר
+continue: המשך
+ok: אשר/י
+rename: שינוי שם
+addphoto: הוספה
+replacephoto: החלפה
+uploadphoto: העלאת תמונה
+choosefile: יש לבחור קובץ...
+choosefiles: יש לבחור קבצים...
+browse: דפדוף
+newcontact: צור איש קשר חדש
+deletecontact: מחיקת אנשי קשר מסומנים
+composeto: יצירת הודעה אל
+contactsfromto: אנשי קשר $from עד $to מתוך $count
+print: הדפסה
+export: ייצוא
+exportall: יצוא של כל הרשומות
+exportsel: צוא של רשומות נבחרות
+exportvcards: ייצוא אנשי קשר בפורמט vCard
+newgroup: הוסף קבוצה חדשה
+addgroup: הוספת קבוצה
+grouprename: שינוי שם קבוצה
+groupdelete: מחיקת קבוצה
+groupassign: שיוך לקבוצה...
+groupremove: הסרה מקבוצה
+groupremoveselected: אנשי הקשר שנבחרו יוסרו מהקבוצה
+uponelevel: רמה אחת מעלה
+previouspage: הצגת הקבוצה הקודמת
+firstpage: הצגת הקבוצה הראשונה
+nextpage: הצגת הקבוצה הבאה
+lastpage: הצגת הקבוצה האחרונה
+group: קבוצה
+groups: קבוצות
+listgroup: רשימה של חברי קבוצה
+personaladrbook: כתובות פרטיות
+searchsave: שמירת החיפוש
+searchdelete: מחיקת החיפוש
+import: ייבוא
+importcontacts: ייבוא אנשי קשר
+importfromfile: ייבוא מקובץ
+importtarget: 'הוספת אנשי קשר אל '
+importreplace: החלפת כל פנקס הכתובות
+importgroups: ייבוא הגדרות קבוצה
+importgroupsall: הכל (יש להקים קבוצות אם צריך)
+importgroupsexisting: רק עבור קבוצות קיימות
+importdesc: ניתן להעלות אנשי קשר מפנקס כתובות קיים.  כרגע יש תמיכה ביבוא רשומות הערוכות בצורת vCard או CSV (מופרד פסיקים)
+importmapdesc: נא לאשר את מיפוי השדות שלהלן לפני שנמשיך עם יבוא קובץ נתונים מסוג CSV (מופרדים ע"י פסיקים)
+fieldnotmapped: השדה ללא מיפוי (לא לייבא)
+skipheader: לא לייבא שורה ראשונה (כותרות)
+done: בוצע
+settingsfor: הגדרות עבור
+about: אודות
+preferences: העדפות
+userpreferences: העדפות משתמש
+editpreferences: עריכה של העדפות משתמש
+identities: זהויות
+manageidentities: נהל זהויות
+newidentity: צור זהות חדשה
+addidentity: הוסף זהות
+editidentity: ערוך זהות
+identityencryption: הצפנה
+preferhtml: הצגת HTML
+defaultcharset: ברירת מחדל של תווים
+htmlmessage: תוכן HTML
+messagepart: גוף ההודעה
+digitalsig: חתימה דיגיטלית
+dateformat: פורמט התאריך
+timeformat: פורמט השעה
+prettydate: תאריכים מעוצבים
+setdefault: קביעה כברירת מחדל
+autodetect: אוטומטי
+language: שפה
+timezone: איזור זמן
+pagesize: מספר שורות בדף
+signature: חתימה
+dstactive: שעון קיץ
+showinextwin: צפיה בהודעה בחלון חדש
+composeextwin: יצירת הודעה בחלון חדש
+htmleditor: יצירת הודעה מעוצבת
+htmlonreply: רק במענה להודעת HTML
+htmlonreplyandforward: להעביר או להשיב להודעה שהגיעה בפורמט HTML
+htmlsignature: חתימה מעוצבת
+showemail: הצגת כתובת דוא"ל עם שם השולח
+previewpane: תצוגה מוקדמת
+skin: ערכת מראה
+logoutclear: ריקון סל אשפה ביציאה
+logoutcompact: פינוי שטח לא מנוצל ביציאה
+uisettings: ממשק משתמש
+serversettings: הגדרות שרת
+mailboxview: הצגת תיבת ההודעות
+mdnrequests: משלוח אישור מסירה
+askuser: שאל את המשתמש
+autosend: שליחה אוטומטית
+autosendknown: משלוח אישור קבלה רק לאנשי הקשר שלי
+autosendknownignore: משלוח אישור קבלה לאנשי הקשר שלי בלבד ולהתעלם מאחרים
+autosendtrusted: לשלוח אישור קבלה לשולחים מוכרים, בכל מקרה אחר לבקש אישור
+autosendtrustedignore: לשלוח אישור קבלה לשולחים מוכרים, אחרת להתעלם
+ignorerequest: להתעלם מהבקשה
+readwhendeleted: סימון הודעה כנקראה לאחר מחיקה
+flagfordeletion: סימון הודעה כמחוקה במקום מחיקה
+skipdeleted: הסתרת הודעות שנמחקו
+deletealways: אם העברה לתיקית מחיקה נכשלת יש למחוק לתמיד
+deletejunk: מחיקה ישירה של הודעות זבל
+showremoteimages: הצגת תמונות משרת מרוחק בגוף ההודעה
+allowremoteresources: אישור שימוש במשאבים מרוחקים (תמונות, סגנונות)
+fromknownsenders: משולחים מוכרים
+fromtrustedsenders: התקבל משולחים מוכרים
+frommycontacts: מאנשי הקשר שלי
+always: תמיד
+alwaysbutplain: תמיד, למעט בעת מענה לטקסט פשוט
+showinlineimages: הצגת תמונות מצורפות בתחתית ההודעה
+autosavedraft: שמירה אוטומטית של טיוטה
+everynminutes: כל $n דקות
+refreshinterval: רענון ההתצוגה לשם בדיקת קיום של הודעות חדשות וכדומה
+never: אף פעם
+immediately: מיידית
+messagesdisplaying: הצגת הודעות
+messagescomposition: כתיבת הודעות
+mimeparamfolding: שמות קבצים מצורפים
+2231folding: תאימות מלאה 2231 תאנדרבירד
+miscfolding: תאימות 2047/2231 אאוטלוק
+2047folding: תאימות מלאה 2047 אחרים
+force7bit: קידוד MIME עבור תווים בעלי 8 ביטים
+savelocalstorage: שמירה באיחסון מקומי של הדפדפן (ארעית)
+advancedoptions: הגדרות נוספות
+toggleadvancedoptions: בחירה בין הגדרות בסיסיות או מתקדמות
+focusonnewmessage: מיקוד הסמן על החלון עם ההודעה החדשה
+checkallfolders: בדיקת הודעות חדשות בכל התיקיות
+displaynext: הצגת הרשומה הבאה לאחר מחיקה/העברה
+defaultfont: גופן ברירת מחדל להודעה בפורמט HTML
+mainoptions: אפשרויות עיקריות
+browseroptions: אפשרויות דפדפן
+section: קטע
+maintenance: תחזוקה
+newmessage: הודעה חדשה
+signatureoptions: אפשרויות לשיבוץ חתימה
+whenreplying: כאשר עונים
+replyempty: לא לצטט הודעה מקורית
+replytopposting: הודעה חדשה תתחיל מעל ההודעה המקורית
+replytoppostingnoindent: הודעה תתחיל מעל הקטע המצוטט (ללא נסיגה)
+replybottomposting: הודעה חדשה תתחיל מתחת להודעה המקורית
+replyremovesignature: החתימה תוסר מההודעה המקורית במענה להודעה
+autoaddsignature: הוספה אוטומטית של חתימה
+newmessageonly: הודעה חדשה בלבד
+replyandforwardonly: מענה והעברת הודעה בלבד
+insertsignature: שיבוץ חתימה
+sigbelow: למקם חתימה מתחת להודעת המצוטטת
+sigseparator: חובת שימוש במפריד תקני בחתימה
+automarkread: סימון הודעה כנקראה
+afternseconds: לאחר $n שניות
+reqmdn: תמיד יש לדרוש אישור קבלה
+reqdsn: תמיד לבקש הודעה על מצב המסירה
+replysamefolder: המענה ישמר בתיקיה של ההודעה המקורית
+defaultabook: ברירת המחדל של רשימת כתובות
+autocompletesingle: לדלג על כתובת דואר חילופית בעת שימוש בהשלמה אוטומטית של הקלדה
+listnamedisplay: הצגת איש הקשר בתור
+contactformmode: הצגה של טופס איש קשר
+privatemode: פרטי (בית)
+businessmode: עיסקי (עבודה)
+collectedaddresses: כתובות שלוקטו
+collectedrecipients: נמענים שלוקטו
+collectedrecipientsopt: לשמור כתובות נמענים של דואר יוצא ב-
+collectedsendersopt: לשמור שולחים מוכרים ב-
+trustedsenders: שולחים מוכרים
+spellcheckbeforesend: בדיקת איות לפני המשלוח
+spellcheckoptions: אפשריות בדיקת איות
+spellcheckignoresyms: התעלמות ממילים המכילות סמלים
+spellcheckignorenums: התעלמות ממילים המכילות מספרים
+spellcheckignorecaps: התעלמות ממילים עם אותציות ראשיות
+addtodict: הוספה למילון
+mailtoprotohandler: קביעת הפרוטוקול לטיפול בקישור מסוג  mailto:links
+standardwindows: חלונות קופצים יטופלו כחלונות רגילים
+forwardmode: הפנית הודעות
+inline: חלק מההודעה
+asattachment: כצרופה
+replyallmode: ברירת המחדל של כפתור [מענה לכולם]
+replyalldefault: מענה לכולם
+replyalllist: מענה לרשימת תפוצה בלבד (אם קיימת)
+allmessages: כל ההודעות
+olderxdays: לפני יותר מ- x$ ימים
+folder: תיקיה
+folders: תיקיות
+foldername: שם תיקיה
+subscribed: מנוי
+messagecount: הודעות
+create: יצירה
+createfolder: יצירת תיקיה חדשה
+managefolders: ניהול תיקיות
+specialfolders: תיקיות מיוחדות
+properties: מאפיינים
+folderproperties: מאפייני תיקיה
+parentfolder: תיקית אב
+location: מיקום
+info: מידע
+getfoldersize: הקשה להצגה של גודל תיקיה
+changesubscription: הקשה לשינוי הרשמה
+foldertype: סוג תיקיה
+personalfolder: תיקיה פרטית
+otherfolder: תיקית משתמש נוספת
+sharedfolder: תיקיה ציבורית
+findfolders: חיפוש תיקיות
+findcontacts: חיפוש אנשי קשר
+findmail: חפש הודעות דואר
+namespace.personal: אישי
+namespace.other: משתמשים אחרים
+namespace.shared: משותף
+dualuselabel: יכול רק להכיל
+dualusemail: הודעות
+dualusefolder: תיקיות
+generate: לחולל
+encryptioncreatekey: יצירה של צמד מפתחות
+openmailvelopesettings: הצגת אפשרויות לתוכנת ההצפנה
+encryptionprivkeysinmailvelope: קיימים $nr מפתחות פרטיים תואמים ברשימת המפתחות שלך בתוכנת ההצפנה
+encryptionnoprivkeysinmailvelope: "לזהות השולחת אין עדיין מפתח הצפנה פרטי השמור בתוכנת ההצפנה שלך. האם ליצור כזה\nכדי לאפשר הצפנת הודעות?"
+encryption: הצפנה
+mailvelopeoptions: אפשרויות למעטפת ההודעה
+mailvelopemainkeyring: השתמש/י בטבעצ מפתחות עיקרית של מעטפת ההודעה
+mailvelopenotfound: ההרחבה העוסקת במעטפת ההודעה אינה מותקנת או מופעלת בדפדפן
+sortby: מיון לפי
+sortasc: מיון בסדר עולה
+sortdesc: מיון בסדר יורד
+undo: ביטול שינוי
+installedplugins: תוספים מותקנים
+plugin: תוסף תוכנה
+version: גירסה
+source: מקור
+destination: יעד
+license: רשיון
+support: קבלת תמיכה
+savedsearches: חיפושים שנשמרו
+dateformatY: YYYY
+dateformaty: YY
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: בייט
+KB: ק"ב
+MB: מ"ב
+GB: ג"ב
+unicode: יוניקוד
+english: אנגלית
+westerneuropean: מערב אירופי
+easterneuropean: מזרח אירופי
+southeasterneuropean: דרום מזרח אירופה
+baltic: בלטי
+cyrillic: קירילי
+arabic: ערבי
+greek: יווני
+hebrew: עברי
+turkish: טורקי
+nordic: נורדי
+thai: תאי
+celtic: קלטי
+vietnamese: וויטנאמי
+japanese: יפני
+korean: קוריאני
+chinese: סיני
+arialabeltopnav: בקרת חלון
+arialabeltasknav: משימות יישום
+arialabeltoolbar: סרגל כלים יישום
+arialabellistnav: רשימת ניווט
+arialabelactivetask: משימה פעילה
+arialabelmessagessearchfilter: מסנן של רשימת ההודעות
+arialabelmailsearchform: טופס חיפוש בתוך הודעות
+arialabelcontactsearchform: תבנית חיפוש אנשי קשר
+arialabelmailquicksearchbox: הקשת מילות חיפוש
+arialabelquicksearchbox: קלט חיפוש
+arialabelfoldersearchfilter: מסנן רשימת תיקיות
+arialabelfoldersearchform: מסך חיפוש תיקייה
+arialabelfolderlist: בחירה של תיקית הודעות
+arialabelmessagelist: רשימת הודעות
+arialabelmailpreviewframe: תצוגה מקדמית של הודעה
+arialabelmailboxmenu: תפריט פעולות תפריט
+arialabellistselectmenu: רשימת פריטים לבחירה
+arialabelthreadselectmenu: בחירת פתילים של הודעות מתוך רשימה
+arialabelmessagelistoptions: אפשרויות להצגת הודעות ומיונן
+arialabelmailimportdialog: תהליך ייבוא הודעות
+arialabelmessagenav: ניווט הודעה
+arialabelmessagebody: גוף הודעה
+arialabelmessageactions: פעולות הודעה
+arialabelcontactquicksearch: תבנית חיפוש אנשי קשר
+arialabelcontactsearchbox: קלט חיפוש איש קשר
+arialabelmessageheaders: תקורות הודעה
+arialabelforwardingoptions: אפשרויות העברה
+arialabelreplyalloptions: אפשרויות מענה לכולם
+arialabelmoremessageactions: עוד פעולות הודעה
+arialabelmorecontactactions: פעולות נוספות על אנשי קשר
+arialabelmarkmessagesas: סימון הודעות נבחרות בתור...
+arialabelcomposeoptions: אפשרויות הלחנה
+arialabelresponsesmenu: תפריט של תגובות מוכנות מראש
+arialabelattachmentuploadform: תבנית העלאת צרופה
+arialabelattachmentmenu: אפשרויות צרופה
+arialabelmailtomenu: אפשרויות כתובת דואר
+arialabelattachmentpreview: תצוגה מקדמית של צרופה
+ariasummarycomposecontacts: רשימה של אנשי קשר וקבוצות שיבחרו כנמענים
+arialabelcontactexportoptions: אפשרויות ייצוא איש קשר
+arialabelabookgroupoptions: אפשרויות קבוצה/פנקס כתובות
+arialabelpreferencesform: תבנית העדפות
+arialabelidentityeditfrom: טופס עריכת זהות
+arialabelresponseeditfrom: טופס עריכת מענה
+arialabelsearchterms: מילות חיםוש
+arialabeldropactionmenu: תפריט גרירה
+arialabelheadersmenu: תפריט הוספת (כותרת) נמען
+arialabelimagetools: כלים לעיבוד תמונה
+helplistnavigation: ניווט ברשימה באמצעות לוח המקשים
+helplistkeyboardnavigation: "חיצים למלעלה/למטה: בחירת שורה/מיקוד בשורה\nמקש רווח: בחירה בשורת המיקוד\nמקש SHIFT+חץ למעלה/למטה: בחירה בשורות נוספות מעל/מתחת לשורה הנוכחית\nמקש CTRL+רווח: הוספה/הסרה של שורה מהקבוצה שנבחרה"
+helplistkeyboardnavmessages: "חץ ימין/שמאל: הרחבה/צימצום של פתיל ההודעות (במצב של הצגת פתילים בלבד)\nENTER: פתיחה של ההודעה שנבחרה\nDELETE: העברה של ההודעה שנבחרה לפח האשפה"
+helplistkeyboardnavcontacts: 'ENTER: פתיחה של איש הקשר שסומן '
+undeletemessage: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+addheader: ''
+nonbinary: ''
+othergender: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+alwayskeepformatting: ''
+editoroptions: ''
+enableautolink: ''
+mailvelopeenable: ''
+skinauthor: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

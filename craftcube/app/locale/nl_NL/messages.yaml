@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for nl_NL. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Er is een fout opgetreden!
+loginfailed: Aanmelden mislukt.
+cookiesdisabled: Uw browser accepteert geen cookies.
+sessionerror: Uw sessie is verlopen of ongeldig.
+cookiesmismatch: Cookie komt niet overeen, verwijder de cookies van uw browser.
+storageerror: Verbinding met IMAP-server mislukt.
+servererror: Serverfout!
+servererrormsg: 'Serverfout: $msg'
+accountlocked: Te veel mislukte inlogpogingen. Probeer het later nogmaals.
+connerror: Verbindingsfout! (Kon de server niet bereiken)
+dberror: Databasefout!
+dbconnerror: Kan geen verbinding maken met de database!
+windowopenerror: Het popup-venster werd geblokkeerd!
+requesttimedout: Verzoek duurde te lang
+errorreadonly: De bewerking kan niet uitgevoerd worden. Map is alleen-lezen.
+errornoperm: Niet in staat om de bewerking uit te voeren. Toestemming geweigerd.
+erroroverquota: Niet in staat om de bewerking uit te voeren. Onvoldoende vrije opslagruimte.
+erroroverquotadelete: Onvoldoende vrije opslagruimte. Gebruik Shift+Del om een bericht te verwijderen.
+invalidrequest: Ongeldige aanvraag! Er zijn geen gegevens opgeslagen.
+invalidhost: Ongeldige servernaam.
+nomessagesfound: Geen berichten gevonden in deze mailbox.
+loggedout: Succesvol uitgelogd. Tot ziens!
+mailboxempty: Mailbox is leeg
+nomessages: Geen berichten
+refreshing: Vernieuwen...
+loading: Laden...
+uploading: Bestand wordt geüpload...
+attaching: Bestand aan het toevoegen...
+uploadingmany: Bestanden worden geüpload...
+loadingdata: Gegevens worden geladen...
+checkingmail: Controleren op nieuwe berichten...
+sendingmessage: Bericht wordt verstuurd...
+messagesent: Bericht succesvol verstuurd.
+savingmessage: Bericht wordt opgeslagen...
+messagesaved: Bericht opgeslagen in Concepten.
+successfullysaved: Succesvol opgeslagen.
+savingresponse: Reactie wordt opgeslagen...
+deleteresponseconfirm: Weet u zeker dat u deze reactie wilt verwijderen?
+nocontactselected: U heeft nog geen contactpersoon geselecteerd.
+addedsuccessfully: Contactpersoon succesvol toegevoegd aan het adresboek.
+contactexists: Er bestaat al een contactpersoon met hetzelfde e-mailadres.
+contactnameexists: Er bestaat al een contactpersoon met deze naam.
+blockedimages: Om uw privacy te beschermen zijn externe afbeeldingen geblokkeerd in dit bericht.
+blockedresources: Om uw privacy te beschermen zijn externe afbeeldingen geblokkeerd in dit bericht.
+suspiciousemail: Dit bericht bevat e-mailadressen die mogelijk niet te vertrouwen zijn.
+bccemail: De doorgestuurde berichten bevatten vertrouwelijke ontvangers (bcc).
+encryptedmessage: Dit is een versleuteld bericht en kan niet weergegeven worden. Excuses!
+externalmessagedecryption: Dit is een versleuteld bericht en kan ontsleuteld worden met uw browserextensie.
+nopubkeyfor: Geen geldige publieke sleutel gevonden voor $email
+nopubkeyforsender: Geen geldige publieke sleutel gevonden voor uw afzenderidentiteit. Wilt u het bericht alleen voor de ontvangers versleutelen?
+encryptnoattachments: Al geüploade bijlagen kunnen niet worden versleuteld. Voeg ze alstublieft opnieuw toe aan de versleutelingsbewerker.
+searchpubkeyservers: Wilt u publieke sleutelservers doorzoeken voor de missende sleutels?
+encryptpubkeysfound: 'The volgende publieke sleutels zijn gevonden:'
+keyservererror: Sleutel van keyserver ophalen is mislukt.
+keyimportsuccess: Publieke sleutel $key succesvol geïmporteerd in uw sleutelhanger.
+nocontactsfound: Geen contactpersonen gevonden.
+contactnotfound: Opgevraagde contactpersoon niet gevonden.
+contactsearchonly: Voer enkele zoektermen in om contactpersonen te zoeken van het geselecteerde adresboek.
+sendingfailed: Verzenden van bericht is mislukt.
+senttooquickly: Wacht alstublieft $sec seconde(n) voordat u dit bericht verstuurt.
+errorsavingsent: Er is een fout opgetreden tijdens het opslaan van het verzonden bericht.
+errorsaving: Er is een fout opgetreden tijdens het opslaan.
+errormoving: Kan bericht(en) niet verplaatsen.
+errorcopying: Kan bericht(en) niet kopiëren.
+errordeleting: Kan bericht(en) niet verwijderen.
+errormarking: Kan bericht(en) niet markeren.
+alerttitle: Let op
+confirmationtitle: Weet u zeker...
+deletecontactconfirm: Weet u zeker dat u de geselecteerde contact(en) wilt verwijderen?
+deletegroupconfirm: Weet u zeker dat u de geselecteerde groep wilt verwijderen?
+deletemessagesconfirm: Weet u zeker dat u de geselecteerde bericht(en) wilt verwijderen?
+deletefolderconfirm: Weet u zeker dat u deze map wilt verwijderen?
+movefolderconfirm: Wilt u deze map echt verplaatsen?
+purgefolderconfirm: Weet u zeker dat u alle berichten in deze map wilt verwijderen?
+contactdeleting: Bezig met verwijderen van contact(en)...
+groupdeleting: Groep wordt verwijderd...
+folderdeleting: Map wordt verwijderd...
+foldermoving: Map wordt verplaatst...
+foldersubscribing: Bezig met abonneren op map...
+folderunsubscribing: Abonnement op map wordt opgezegd...
+formincomplete: Het formulier was niet volledig ingevuld.
+noemailwarning: Geef een geldig e-mailadres op.
+nonamewarning: Vul een naam in.
+nopagesizewarning: Geef een paginagrootte op.
+nosenderwarning: Voer een e-mailadres van de afzender in.
+recipientsadded: Ontvanger(s) succesvol toegevoegd.
+norecipientwarning: Geef tenminste één ontvanger op.
+disclosedrecipwarning: Ontvangers kunnen elkaars e-mailadressen zien. Gebruik het bcc-veld om dit te voorkomen en de privacy van de ontvangers te behouden.
+disclosedreciptitle: Te veel publiek ontvangers
+nosubjectwarning: U heeft geen onderwerp ingevoerd. Wilt u nu een onderwerp opgeven?
+nosubjecttitle: Geen onderwerp
+nobodywarning: Dit bericht zonder inhoud versturen?
+notsentwarning: Het bericht is niet verzonden of opgeslagen. Wilt u wijzigen verwerpen?
+restoresavedcomposedata: 'Eerder opgesteld, maar niet-verzonden bericht gevonden.\n\nOnderwerp: $subject\nOpgeslagen: $date\n\nWilt u dit bericht herstellen?'
+nosearchname: Vul de naam of e-mailadres in van een contactpersoon.
+notuploadedwarning: Nog niet alle bijlagen zijn geüpload. Wacht even of annuleer de upload.
+searchsuccessful: $nr berichten gevonden.
+contactsearchsuccessful: $nr contactpersonen gevonden.
+searchnomatch: Zoekopdracht heeft geen resultaten opgeleverd.
+searching: Zoeken...
+checking: Controleren...
+stillsearching: Nog aan het zoeken...
+nospellerrors: Geen spelfouten gevonden.
+folderdeleted: Map succesvol verwijderd.
+foldersubscribed: Succesvol geabonneerd op map.
+folderunsubscribed: Abonnement op map succesvol opgezegd.
+folderpurged: Map succesvol geleegd.
+folderexpunged: Map succesvol gecomprimeerd.
+deletedsuccessfully: Met succes verwijderd.
+converting: Opmaak van bericht verwijderen...
+messageopenerror: Kan het bericht niet van de server laden.
+filelinkerror: Bestand toevoegen mislukt.
+fileuploaderror: Bestand uploaden mislukt.
+csvfilemismatch: Importeren van meerdere CSV-bestanden met verschillende velden wordt niet ondersteund.
+filesizeerror: Het bestand overschrijdt de maximale grootte van $size.
+filecounterror: Je kan maximaal $count bestanden uploaden per keer.
+msgsizeerror: Bestand toevoegen als bijlage mislukt. Maximale grootte van een bericht ($size) overschreden.
+msgsizeerrorfwd: 'De maximale grootte van een bericht ($size) is overschreden. $num bericht(en) zijn niet bijgevoegd. '
+copysuccess: $nr contactpersonen succesvol gekopieerd.
+movesuccess: $nr contactpersonen succesvol verplaatst.
+copyerror: Kon geen contactpersoon kopieren.
+moveerror: Kon geen contactpersoon verplaatsen.
+sourceisreadonly: Deze adresbron is alleen-lezen.
+errorsavingcontact: Kan contactpersoon niet opslaan.
+movingmessage: Bericht(en) verplaatsen...
+copyingmessage: Bericht(en) kopiëren...
+copyingcontact: Contact(en) kopiëren...
+movingcontact: Contact(en) verplaatsen...
+deletingmessage: Bericht(en) verwijderen...
+markingmessage: Bericht(en) markeren...
+addingmember: Contactpersonen worden toegevoegd aan groep...
+removingmember: Contactpersonen worden verwijderd uit groep...
+receiptsent: Ontvangstbevestiging is verstuurd.
+errorsendingreceipt: Kan de ontvangstbevestiging niet versturen.
+deleteidentityconfirm: Weet u zeker dat u deze identiteit wilt verwijderen?
+nodeletelastidentity: U kunt uw enige identiteit niet verwijderen.
+forbiddencharacter: De naam van de map bevat een karakter dat niet is toegestaan.
+selectimportfile: Selecteer een bestand om te uploaden.
+addresswriterror: Het geselecteerde adresboek is alleen-lezen.
+contactaddedtogroup: Contact(en) met succes toegevoegd aan deze groep.
+contactremovedfromgroup: Contact(en) met succes verwijderd van deze groep.
+nogroupassignmentschanged: Geen groepstoewijzingen aangepast.
+importwait: Importeren, even geduld...
+importformaterror: Importeren mislukt! Het geüploade bestand is geen geldig importbestand.
+importconfirm: <b>$inserted contactpersonen succesvol geïmporteerd</b>
+importmessagesuccess: $nr berichten succesvol geïmporteerd
+importmessageerror: Importeren mislukt! Het verstuurde bestand is geen geldig bericht of mailboxbestand
+opnotpermitted: Deze bewerking is niet toegestaan!
+nofromaddress: E-mailadres ontbreekt in geselecteerde identiteit.
+editorwarning: Door te wisselen van type tekstverwerker kan er opmaak verloren gaan. Weet u zeker dat u verder wilt gaan?
+httpreceivedencrypterror: Er is een onherstelbare configuratiefout opgetreden. Neem direct contact op met uw systeembeheerder. <b>Uw bericht kon niet worden verzonden.</b>
+smtpconnerror: 'SMTP-fout ($code): Verbinding met server mislukt.'
+smtpautherror: 'SMTP-fout ($code): Authenticatie mislukt.'
+smtpfromerror: 'SMTP-fout ($code): Afzender "$from" kan niet ingesteld worden ($msg).'
+smtptoerror: 'SMTP-fout ($code): Ontvanger "$to" kan niet toegevoegd worden ($msg).'
+smtprecipientserror: 'SMTP-fout: Lijst met ontvangers kan niet verwerkt worden.'
+smtputf8error: 'SMTP-fout: server ondersteunt geen Unicode in het e-mailadres.'
+smtpsizeerror: 'SMTP-fout: berichtgrootte overschrijdt de serverlimit ($limit)'
+smtperror: 'SMTP-fout: $msg'
+emailformaterror: 'Ongeldig e-mailadres: $email'
+toomanyrecipients: Te veel ontvangers. Reduceer het aantal ontvangers tot $max.
+maxgroupmembersreached: Het aantal groepsleden overschrijdt het maximale aantal van $max.
+internalerror: Er is een interne fout opgetreden. Probeer het nogmaals.
+contactdelerror: Contact(en) konden niet verwijderd worden.
+contactdeleted: Contact(en) succesvol verwijderd.
+contactrestoreerror: Verwijderde contact(en) konden niet hersteld worden.
+contactrestored: Contact(en) succesvol hersteld.
+groupdeleted: Groep succesvol verwijderd.
+grouprenamed: Groep succesvol hernoemd.
+groupcreated: Groep succesvol aangemaakt.
+savedsearchdeleted: Opgeslagen zoekopdracht succesvol verwijderd.
+savedsearchdeleteerror: Opgeslagen zoekopdracht kon niet worden verwijderd.
+savedsearchcreated: Zoekopdracht succesvol opgeslagen.
+savedsearchcreateerror: Zoekopdracht kon niet worden opgeslagen.
+messagedeleted: Bericht(en) succesvol verwijderd.
+messagemoved: Bericht(en) succesvol verplaatst.
+messagemovedtotrash: Bericht(en) succesvol verplaatst naar de prullenbak.
+messagecopied: Bericht(en) succesvol gekopieerd.
+messagemarked: Bericht(en) succesvol gemarkeerd.
+autocompletechars: Voer tenminste $min karakters in voor automatisch aanvullen.
+autocompletemore: Meerdere resultaten gevonden. Verfijn uw zoekopdracht.
+namecannotbeempty: Naam kan niet leeg zijn.
+nametoolong: Naam is te lang.
+namedotforbidden: Mapnaam kan niet met een punt beginnen.
+folderupdated: Map succesvol bijgewerkt.
+foldercreated: Map succesvol aangemaakt.
+invalidimageformat: Geen geldig afbeeldingsformaat.
+mispellingsfound: Spelfouten gedetecteerd in bericht.
+parentnotwritable: Niet in staat om map aan te maken of verplaatsen in gekozen bovenliggende map. U heeft geen toegangsrechten.
+messagetoobig: Het bericht is te groot om te verwerken.
+attachmentvalidationerror: "WAARSCHUWING! Deze bijlage is verdacht omdat het bestandstype niet overeenkomt met het bestandstype dat gespecificeerd is in het bericht. Open deze bijlage niet in uw browser als u de afzender niet vertrouwt, aangezien deze bijlage kwaadaardige inhoud kan bevatten.\nVerwacht: $expected; gevonden: $detected"
+noscriptwarning: 'Waarschuwing: deze webmailapplicatie vereist Javascript! U dient Javascript in te schakelen in uw browserinstellingen wanneer u gebruik wilt maken van deze applicatie.'
+messageissent: Het bericht was al verzonden, maar nog niet opgeslagen. Wilt u het nu opslaan?
+errnotfound: Bestand niet gevonden
+errnotfoundexplain: De opgevraagde bron werd niet gevonden!
+errfailedrequest: Mislukt verzoek
+errauthorizationfailed: Autoriseren mislukt
+errunauthorizedexplain: Kon niet verifiëren dat u geautoriseerd bent voor toegang tot deze dienst!
+errrequestcheckfailed: Controle verzoek mislukt
+errcsrfprotectionexplain: "Om u te beschermen, is toegang tot deze bron beveiligd tegen CSRF.\nWanneer u dit ziet, heeft u waarschijnlijk niet uitgelogd voordat u de webapplicatie verliet.\n\nMenselijke interactie is nu vereist om door te gaan."
+errcontactserveradmin: Neem alstublieft contact op met uw systeembeheerder.
+clicktoresumesession: Klik hier om uw vorige sessie te hervatten
+errcomposesession: Sessie opstellen fout
+errcomposesessionexplain: Opgevraagde opstellingsessie niet gevonden.
+clicktocompose: Klik hier om een nieuw bericht op te stellen
+nosupporterror: Deze eigenschap wordt niet ondersteund door uw webbrowser.
+siginserted: Handtekening succesvol toegevoegd.
+responseinserted: Antwoord succesvol ingevoegd.
+noresponsesavailable: Geen antwoorden beschikbaar
+listempty: De lijst is leeg.
+listusebutton: Gebruik de Nieuw knop om een nieuwe record toe te voegen.
+keypaircreatesuccess: Aan nieuw sleutelpaar werd met succes aangemaakt voor de identiteit $identity.
+emptyattachment: Deze bijlage lijkt leeg te zijn.<br>Check het met de persoon die dit verzonden heeft.
+oauthloginfailed: OAuth login is mislukt. Probeer het opnieuw.
+oauthaccessdenied: Het verzoek is afgewezen door de autorisatieserver of door de gebruiker.
+bouncehint: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+oauthinvalidrequest: ''

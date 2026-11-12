@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for uz. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: $product ga xush kelibsiz!
+username: Foydalanuvchi nomi
+password: Parol
+server: Server
+login: Kirish
+menu: Menyu
+logout: Chiqish
+mail: Pochta
+settings: Sozlamalar
+addressbook: Kontaktlar
+inbox: Kirish xatlari
+drafts: Qoralama xatlar
+sent: Jo`natilgan xatlar
+trash: Savat
+junk: SPAM
+show_real_foldernames: Maxsus papkalarning haqiqiy nomini ko`rsatish
+subject: Mavzu
+from: Kimdan
+sender: Jo`natuvchi
+to: Kimga
+cc: Nusxasi
+bcc: Berkitilgan
+replyto: Javob berish
+followupto: Kuzatib borish
+date: Sana
+size: O`lchami
+priority: Imtiyoz
+organization: Tashkilot
+readstatus: O`qilganlik statusi
+listoptions: Ro`yxat sozlamalari...
+listoptionstitle: Xossalar ro'yxati
+mailboxlist: Papkalar
+messagesfromto: '$count ta xat $from dan $to ga '
+threadsfromto: '$count ta muhokama $from dan $to ga '
+messagenrof: $count dan $nr ta xat
+fromtoshort: $count ta donadan $from dan– $to ga
+copy: Nusxa olish
+move: Ko`chirish
+moveto: '... ga ko`chirish'
+copyto: '... ga nusxa olish'
+download: Yuklash
+open: Ochish
+showattachment: Ko`rsatish
+showanyway: Shunday bo`lsada, ko`rsatish
+filename: Fayl nomi
+filesize: Fayl o`lchami
+addtoaddressbook: Kontaktlarga qo`shish
+sun: Yak
+mon: Du
+tue: Se
+wed: Chor
+thu: Pa
+fri: Ju
+sat: Sha
+sunday: Yakshanba
+monday: Dushanba
+tuesday: Seshanba
+wednesday: Chorshanba
+thursday: Payshanba
+friday: Juma
+saturday: Shanba
+jan: Yan
+feb: Fev
+mar: Mar
+apr: Apr
+may: May
+jun: Iyun
+jul: Iyul
+aug: Avg
+sep: Sen
+oct: Okt
+nov: Noy
+dec: Dek
+longjan: Yanvar
+longfeb: Fevral
+longmar: Mart
+longapr: Aprel
+longmay: May
+longjun: Iyun
+longjul: Iyul
+longaug: Avgust
+longsep: Sentyabr
+longoct: Oktyabr
+longnov: Noyabr
+longdec: Dekabr
+today: Bugun
+refresh: Yangilash
+checkmail: Pochtani yetkazish
+compose: Xat yozish
+writenewmessage: Yangi xat
+reply: Javob berish
+replytomessage: Javob berish
+replytoallmessage: Ro`yxat bo`yicha yoki jo`natuvchi va barcha qabul qiluvchilarga javob berish
+replyall: Hammaga javob berish
+replylist: Rassilka ro`yxatiga javob berish
+forward: Uzatib yuborish
+forwardinline: Xat tarkibida uzatib yuborish
+forwardattachment: Biriktirma sifatida yuborish
+forwardmessage: Uzatib yuborish
+bouncemsg: Qayta uzatish
+bounce: Qayta uzatish
+deletemessage: Savatga
+movemessagetotrash: Xatni savatga jo`natish
+printmessage: Chop etish
+previousmessage: Avvalgi xatni ko`rsatish
+firstmessage: Dastlabki xatni ko`rsatish
+nextmessage: Keyingi xatni ko`rsatish
+lastmessage: Oxirgi xatni ko`rsatish
+backtolist: Xatlar ro`yxatiga
+viewsource: Dastlabki matn
+mark: Belgilash
+markmessages: Xatni belgilash
+markread: O`qilgandek
+markunread: O`qilmagandek
+markflagged: Belgi o`rnatish
+markunflagged: Belgini olish
+moreactions: Qo`shimcha harakatlar...
+markallread: Barchasini o`qilgan deb belgilash
+folders-cur: Faqat belgilangan papka
+folders-sub: Belgilangan papka va uning tarkibidagi papkalar
+folders-all: Barcha papkalar
+more: Yana
+back: Orqaga
+options: Sozlamalar
+first: Birinchi
+last: Oxirgi
+previous: Avvalgi
+next: Keyingi
+select: Tanlash
+all: Barchasi
+none: Mavjud emas
+currpage: Mazkur sahifa
+isread: O`qilgan
+unread: O`qilmagan
+flagged: Belgilangan
+unflagged: Belgilanmagan
+unanswered: Javob berilmagan
+withattachment: Biriktirmaga ega
+deleted: O`chirilgan
+undeleted: O`chirilmagan
+replied: Javob berilgan
+forwarded: Jo`natilgan
+invert: Invertlash
+filter: Filtr
+list: Ro`yxat
+threads: Muhokama
+expand-all: Barchasini yoyish
+expand-unread: O`qilganlarni yoyish
+collapse-all: Barchasini berkitish
+threaded: Muhokama
+autoexpand_threads: Muhokamalarni yoyish
+do_expand: Barcha muhokamalar
+expand_only_unread: Faqat o`qilmagan xatlar bilan
+fromto: Jo`natuvchi/Qabul qiluvchi
+flag: Belgi
+attachment: Ilovalar
+nonesort: Mavjud emas
+sentdate: Jo`natish vaqti
+arrival: Qabul qilish vaqti
+asc: o`sish tartibida
+desc: kamayish tartibida
+listcolumns: Kolonkalar
+listsorting: bo`yicha taxlash
+listorder: Taxlash tartibi
+listmode: Ko`rish rejimi
+layout: Joylashtirish
+layoutwidescreen: Keng ekranli
+layoutdesktop: Ish stoli
+layoutlist: Ro`yxat
+layoutwidescreendesc: Keng ekran( 3 ustunli ko`rinish)
+layoutdesktopdesc: Ish stoli (keng sahifa va quyida xat ko'rinishi)
+layoutlistdesc: Ro'yxat (xat ko'rinishi yo'q)
+folderactions: '... papka ustida operatsiya'
+compact: Siqish
+empty: Bo`shatish
+importmessages: Xatlarni import qilish
+quota: Kvota
+unknown: ma`lum emas
+unlimited: cheklanmagan
+quotatype: Kvota turi
+quotatotal: Limit
+quotaused: Foydalanilgan
+quotastorage: Disk hajmi
+quotamessage: Xatlar soni
+quicksearch: Tezkor qidirish
+searchplaceholder: Izlash...
+resetsearch: Сброс
+searchmod: Qidirish variantlari
+msgtext: Barcha xatlar
+body: Xat tarkibi
+type: Turi
+namex: Ism
+searchscope: Viloyat
+currentfolder: Mazkur papka
+subfolders: Shu va uning tarkibidagi papkalar
+allfolders: Barcha papkalar
+searchinterval-1W: 1 haftadan ko`proq
+searchinterval-1M: 1 oydan ko`proq
+searchinterval-1Y: 1 yildan ko`proq
+searchinterval1W: 1 hahftadan kamroq
+searchinterval1M: 1 oydan kamroq
+searchinterval1Y: 1 yildan kamroq
+openinextwin: Yangi oynada ochish
+emlsave: Saqlash (.eml)
+changeformattext: Oddiy matn ko`rinishida tasvirlash
+changeformathtml: HTML formatda tasvirlash
+editasnew: Yangi kabi tahrirlash
+send: Jo`natish
+sendmessage: Hoziroq jo`natish
+savemessage: Qoralamaga saqlash
+addattachment: Ilova qo`shish
+charset: Kodirovka
+editortype: Tahrirlovchi
+returnreceipt: Javob so`rovi
+dsn: Yetib borganligi haqida eslatma
+mailreplyintro: '$sender yozgan kun $date:'
+originalmessage: Asl xat
+selectimage: Rasm tanlash
+addimage: Rasm qo`shish
+selectmedia: Video tanlash
+addmedia: Video qo`shish
+encrypt: Shiffrlash
+encryptmessage: Xatni shifrlash
+encryptmessagemailvelope: Mailvelope yordamida xatni shifrlash
+importpubkeys: Ochiq kalitlarni import qilish
+encryptedsendialog: Shifrlangan xatni jo`natish
+keyid: Kalit ID si
+keylength: Bit
+keyexpired: Muddati o`tgan
+keyrevoked: Qayta tuzilgan
+bccinstead: BCCdan foydalanish
+editidents: Ma`lumotlarni o`zgartirish
+spellcheck: Orfografiya
+checkspelling: Orfografiyani tekshirish
+resumeediting: Tahrirlashni  davom ettirish
+revertto: Tuzatmani bekor qilish
+restore: Qayta tiklash
+restoremessage: Xabar qayta tiklansinmi?
+ignore: O`tkazib yuborish
+responses: Javoblar
+insertresponse: Javob qo`yish
+manageresponses: Javoblarni boshqarish
+newresponse: Yangi javob yaratish
+addresponse: Javob yaratish
+editresponse: Javobni tahrirlash
+editresponses: Javoblarni tahrirlash
+responsename: Nomlanishi
+responsetext: Javob matni
+attach: Biriktirish
+attachments: Ilovalar
+upload: Yuklash
+uploadprogress: $percent ( $total dan $current)
+close: Закрыть
+messageoptions: Xat sozlamalari...
+togglecomposeoptions: Yaratish parametrlari
+attachmentrename: Ilova nomini o`zgartirish
+low: Pastroq
+lowest: Pastr
+normal: Normal.
+high: Yuqori
+highest: O`ta yuqori.
+nosubject: (nomlanmagan)
+showimages: Rasmlarni tasvirlash
+alwaysshow: $sender ning barcha xatlarida rasmlarni tasvirlash
+isdraft: Bu qoralama.
+andnmore: yana $nr...
+togglemoreheaders: Yana xat sarlavhalarini yuklash
+togglefullheaders: Xatlarning asl sarlavhalarini ko`rsatish
+htmltoggle: HTML
+plaintoggle: Matn
+savesentmessagein: 'Saqlash:'
+dontsave: saqlama
+maxuploadsize: 'Faylning maksimal hajmi $size '
+addcc: Nusxasi
+addbcc: Berkitilgan nusxasi
+addreplyto: Kimga javob berish
+addfollowupto: Followup-To ga qo`shish
+mdnrequest: Mazkur xat jo`natuvchisi xat o`qilganligi haqida eslatma yuborishni so`ragan. Eslatmani yuborasizmi?
+receiptread: O`qilganligi haqida eslatma
+yourmessage: Bu sizning xatingiz o`qilganligi haqida eslatma
+receiptnote: Bu eslatma xat qabul qiluvchi tomonidan ochilganligini bildiradi, biroq uning o`qilganligini anglatmaydi.
+name: Ko`rsatiladigan nom
+firstname: Ism
+surname: Familiya
+middlename: Otasining ismi
+nameprefix: Prefiks
+namesuffix: Suffiks
+nickname: Taxallus
+jobtitle: Lavozim
+department: Bo`lim
+gender: Jins
+maidenname: Qizlik familiyasi
+email: E-Mail
+phone: Telefon
+address: Manzil
+street: Ko`cha
+locality: Shahar
+zipcode: Indeks
+region: Viloyat
+country: Mamlakat
+birthday: Tug`ilgan kun
+anniversary: Yillik
+website: Veb sayt
+instantmessenger: IM
+notes: Eslatmalar
+male: erkak
+female: ayol
+manager: Boshqaruvchi
+assistant: Yordamchi
+spouse: Turmush o`rtog`i
+allfields: Barcha maydonlar
+search: Qidirish
+searchresult: Qidirish natijalari
+advsearch: Kengaytirilgan qidiruv
+advanced: Qo`shimcha
+other: Boshqa
+printcontact: Kontaktlarni chop etish
+qrcode: QR kod
+typehome: Uy
+typework: Ish
+typeother: Boshqa
+typemobile: Mobil
+typemain: Asosiy
+typehomefax: Uy faksi
+typeworkfax: Ish faksi
+typecar: Avtomobil
+typepager: Peydjer
+typevideo: Video
+typeassistant: Yordamchi
+typehomepage: Uy sahifasi
+typeblog: Blog
+typeprofile: Profil
+addfield: Maydon qo`shish...
+addcontact: Kontakt qo`shish
+editcontact: Kontaktni tahrirlash
+contacts: Kontaktlar
+contactproperties: Kontakt xossalari
+contactnameandorg: Nom va tashkilot
+personalinfo: Shaxsiy ma`lumot
+personal: Shaxsiy
+contactphoto: Kontakt surati
+edit: Tahrirlash
+cancel: Bekor qilish
+save: Saqlash
+delete: O`chirish
+rename: Qayta nomlash
+addphoto: Qo`shish
+replacephoto: Almashtirish
+uploadphoto: Surat yuklash
+newcontact: Yangi kontakt yaratish
+deletecontact: Tanlangan kontaktlarni o`chirish
+composeto: Tanlangan kontaktlar uchun xat yaratish
+contactsfromto: $count ta $from dan $to ga kontaktlar
+print: Chop etish
+export: Eksport qilish
+exportall: Barchasini eksport qilish
+exportsel: Tanlanganlarni eksport qilish
+exportvcards: Kontaktalrni vCard ko`rinishida eksport qilish
+newgroup: Yangi guruh yaratish
+addgroup: Guruh qo`shish
+grouprename: Guruh nomini o`zgartirish
+groupdelete: Guruhni o`chirish
+groupremoveselected: Tanlangan kontaktlarni guruhdan o`chirish
+uponelevel: Bir pog`ona yuqoriga
+previouspage: Avvalgi sahifani ko`rsatish
+firstpage: Birinchi sahifani ko`rsatish
+nextpage: Keyingi sahifani ko`rsatish
+lastpage: Oxirgi sahifani ko`rsatish
+group: Guruh
+groups: Guruhlar
+listgroup: Guruh a`zolari ro`yxati
+personaladrbook: Shaxsiy manzillar
+searchsave: So`rovni saqlash
+searchdelete: So`rovni o`chirish
+import: Import qilish
+importcontacts: Kontaktlarni import qilish
+importtarget: 'Kontaktlarni qo`shish:'
+importreplace: Jami manzillar kitobini almashtirish
+importgroups: Importda guruhlar bo`yicha taqsimlash
+importgroupsall: Barcha (zaruriyat bo`lganda guruh yaratish)
+importgroupsexisting: Faqat mavjud guruhlar uchun
+done: Yakunlandi
+settingsfor: Kun sozlamalari
+about: Dastur haqida
+preferences: Sozlamalar
+userpreferences: Foydalanuvchi sozlamalari
+editpreferences: Foydalanuvchi sozlamalarini tahrirlash
+identities: Profillar
+manageidentities: Profillarni boshqarish
+newidentity: Yangi profil yaratish
+addidentity: Profil qo`shish
+editidentity: Profilni o`zgartirish
+preferhtml: HTML ni afzal ko`rish
+defaultcharset: Dastlabki holdagi simvollar to`plami
+htmlmessage: HTML xat
+messagepart: Qismlar
+digitalsig: Raqamli imzo
+dateformat: Sana formati
+timeformat: Vaqt formati
+prettydate: Chiroyli sanalar
+setdefault: Dastlabki holatdagidek belgilash
+autodetect: Avtomatik aniqlash
+language: Til
+timezone: Vaqt mintaqasi
+pagesize: Sahifada qatorlar soni
+signature: Imzo
+dstactive: Yozgi vaqt
+showinextwin: Xatni yangi sahifada ochish
+composeextwin: Yangi oynada yaratish
+htmleditor: HTML da xat yaratish
+htmlonreply: HTML da faqat javob xati uchun
+htmlonreplyandforward: HTMLda xabarni qayta uzatish yoki javob berishda
+htmlsignature: HTML da imzo
+showemail: Elektron pochta manzili va manzil nomini ko`rsatish
+previewpane: Dastlabki tasvirlash panelini ko`rsatish
+skin: Dizayn uslubi
+logoutclear: Chiqishda savatni bo`shatish
+logoutcompact: Chiqishda kirish xatlarini siqish
+uisettings: Foydalanuvchi interfeysi
+serversettings: Server sozlamalari
+mailboxview: Pochta qutisi ko`rinishi
+mdnrequests: O`qilganligi haqida eslatma
+askuser: Jo`natishdan avval so`rash
+autosend: Avtomatik tarzda yuborish
+autosendknown: Manzil kitobidagi manzillarga eslatma jo`natish, aks holda so`rash
+autosendknownignore: Manzil kitobidagi manzillarga eslatma jo`natish, qolganlariga rad etish
+ignorerequest: So`rovni o`tkazib yuborish
+readwhendeleted: O`chirganda o`qilgan deb belgilash
+flagfordeletion: O`chirish o`rniga o`chiriladigan deb belgilash
+skipdeleted: O`chirilgan xatlarni ko`rsatmaslik
+deletealways: Agar savatga joylashtirish amalga oshmayotgan bo`lsa xatni o`chirish
+deletejunk: SPAM papkasidagi xatlarni Savatga yubormasdan o`chirish
+showremoteimages: Uzoqlashgan rasmlarni ko`rsatish
+fromknownsenders: Ma`lum jo`natuvchidan
+always: doim
+alwaysbutplain: doim, javob faqat matn ko`inishda bo`lgan holdan tashqari
+showinlineimages: Ilovadagi rasmlarni xatning ostki qismida ko`rsatish
+autosavedraft: Qoralamani avto saqlash
+everynminutes: Har $n daqiqada
+refreshinterval: Yangilash (Yangi xatlarni tekshirish va hkz.)
+never: hech qachon
+immediately: zudlik bilan
+messagesdisplaying: Xatlarni tasvirlash
+messagescomposition: Xat yaratish
+mimeparamfolding: Ilovalar nomlari
+2231folding: RFC 2231 (faqat yangi dasturlar uchun)
+miscfolding: RFC 2047/2231  (ko`proq moslik)
+2047folding: RFC 2047  (eski dasturlar uchun)
+force7bit: 8 bitli simvollar uchun MIME dan foydalanish
+savelocalstorage: Veb brauzerning lokal xotirasida saqlash (vaqtincha)
+advancedoptions: Qo`shimcha xossalar
+toggleadvancedoptions: Qo`shimcha xossalar
+focusonnewmessage: Yangi xatda brauzer oynasini fokuslantirish
+checkallfolders: Barcha papkalarda yangi xabarlarni tekshirish
+defaultfont: ' HTML xatda shrift'
+mainoptions: Asosiy xossalar
+browseroptions: Brauzer sozlamalari
+section: Bo`lim
+maintenance: Xizmat ko`rsatish
+newmessage: Yangi xat
+signatureoptions: Imzo xossalari
+whenreplying: Javob berishda
+replyempty: Asl xatlarni izohlamaslik
+replytopposting: izohlanayotgandan xatdan avval yangi xatni boshlash
+replytoppostingnoindent: Iqtibosdan yuqorida yangi xatni yozishni boshlang (ortiqcha bo'sh maydonsiz)
+replybottomposting: izohlanayotgandan xatdan keyin yangi xatni boshlash
+replyremovesignature: javob berishda imzoni yo`qotish
+autoaddsignature: Imzoni avtomatik qo`shish
+newmessageonly: faqat yangi xatlar uchun
+replyandforwardonly: faqat javob va qayta uzatishda
+insertsignature: Imzo qo`yish
+sigbelow: Izohlanayotgan xatdan so`ng imzo qo`yish
+sigseparator: Imzoga standart ajratuvchi qo`yish
+automarkread: Xabarlarni o‘qilgan sifatida belgilash
+afternseconds: ' $n sekunddan so`ng'
+reqmdn: Doim yetkazilganligi haqida eslatmani so`rash
+reqdsn: Doim yetkazilganligi holati to`g`risida eslatmani so`rash
+replysamefolder: javob xatini original xat joylashgan joyga qo`yish
+defaultabook: Dastlabki holdagi Manzillar kitobi
+autocompletesingle: Avto to`ldirishda qo`shimcha manzillarni o`tkazib yuborish
+listnamedisplay: Kontaktlar ro`yxatini ko`rsatish
+spellcheckbeforesend: Jo`natishdan avval orfografiyani tekshirish
+spellcheckoptions: Orfografiyani tekshirish parametri
+spellcheckignoresyms: Simvolli so`zlarni o`tkazib yuborish
+spellcheckignorenums: Raqamli so`zlarni o`tkazib yuborish
+spellcheckignorecaps: Katta harfdagi so`zlarni o`tkazib yuborish
+addtodict: Lug`atga qo`shish
+mailtoprotohandler: 'Bu ssilka uchun qayta ishlovchini ishga tushirish mailto:'
+standardwindows: Popup oynalarini standart holda deb qarash
+forwardmode: xatni qayta uzatish
+inline: matnda
+asattachment: ilova ko`rinishida
+replyallmode: '[Barchaga javob berish] tugmasining dastlabki holdagi vazifasi'
+replyalldefault: Barchaga javob berish
+replyalllist: Rassilka ro`yxatiga javob berish (agar topilsa)
+folder: Papka
+folders: Papkalar
+foldername: Papka nomi
+subscribed: Imzolangan
+messagecount: Xat
+create: Yaratish
+createfolder: Yangi papka yaratish
+managefolders: Papkalarni boshqarish
+specialfolders: Alohida papkalar
+properties: Xossalar
+folderproperties: Papka xossalari
+parentfolder: Asos papka
+location: Joylashgan o`rni
+info: Axborot
+getfoldersize: Papka o`lchamini ko`rsatish
+changesubscription: Obunani o`zgartirish
+foldertype: Katalog turi
+personalfolder: Shaxsiy katalog
+otherfolder: Boshqa foydalanuvchi katalogi
+sharedfolder: Birgalikdagi katalog
+findfolders: Papkalarni qidirish
+findcontacts: Kontaktlarni topish
+findmail: Xat xabarlarini topish
+namespace.personal: Shaxsiy
+namespace.other: Boshqa foydalanuvchilarniki
+namespace.shared: Umumiy
+dualuselabel: O'z ichiga olishi mumkin
+dualusemail: xatlar
+dualusefolder: papkalar
+sortby: Saralash
+sortasc: O`sish tartibida
+sortdesc: Kamayish tartibida
+undo: Bekor qilish
+installedplugins: O`rnatilgan qo`shimcha paket(plugin)lar
+plugin: paketlar
+version: Versiya
+source: Manbaa
+license: Litsenziya
+support: Qo`lllab-quvvatlash
+savedsearches: Saqlangan izlashlar
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unikod
+english: Inglizcha
+westerneuropean: G`arbiy Yevropa
+easterneuropean: Sharqiy Yevropa
+southeasterneuropean: janubi-sharqiy Yevropa
+baltic: Boltiqbo`yi
+cyrillic: Kirillcha
+arabic: Arabcha
+greek: Grekcha
+hebrew: Ibroniycha
+turkish: Turkcha
+nordic: Skandinavcha
+thai: Taylandcha
+celtic: Keltcha
+vietnamese: Vetnamcha
+japanese: Yaponcha
+korean: Koreyscha
+chinese: Xitoycha
+arialabeltopnav: Oynalarni boshqarish
+arialabeltasknav: Dastur vazifalari
+arialabeltoolbar: Dastur uskunalar paneli
+arialabelactivetask: Faol topshiriq
+arialabelmessagessearchfilter: Xatlar ro`yxati filtri
+arialabelmailsearchform: Xatda izlash formasi
+arialabelcontactsearchform: Kontaktlarni izlash formasi
+arialabelmailquicksearchbox: El. pochta manzillarini qidirish so`rovini kiritish
+arialabelquicksearchbox: izlash so`rovi
+arialabelfoldersearchfilter: papka ro`yxatini filtrlash
+arialabelfoldersearchform: Papkalarni izlash formasi
+arialabelfolderlist: ВEl. pochta papkalarini tanlash
+arialabelmessagelist: El. pochta xatlari ro`yxati
+arialabelmailpreviewframe: Xatni dastlabki ko`rish
+arialabelmailboxmenu: Papka ustida ish bajarish menyusi
+arialabellistselectmenu: Ro`yxatni ajratish menyusi
+arialabelthreadselectmenu: Muhokamalar ro`yxati menyusi
+arialabelmessagelistoptions: Xatlar ro`yxati va saralashni tasvirlash parametrlari
+arialabelmailimportdialog: Xatni import qilish dialogi
+arialabelmessagenav: Xatlar bo`yicha navigatsiya
+arialabelmessagebody: Xat tarkibi
+arialabelmessageactions: Xat ustidan amallar
+arialabelcontactquicksearch: Kontaktlarni qidirish formasi
+arialabelcontactsearchbox: Kontakt qidirish so`rovini kiritish
+arialabelmessageheaders: Xat sarlavhasi
+arialabelforwardingoptions: Qayta uzatish xossalari
+arialabelreplyalloptions: Barchaga javob berish xossalari
+arialabelmoremessageactions: Xat ustida qo`shimcha amallar
+arialabelmarkmessagesas: Tanlangan xatlarga belgi qo`yish...
+arialabelcomposeoptions: Yaratish sozlamalari
+arialabelresponsesmenu: Avval tayyorlangan javoblar menyusi
+arialabelattachmentuploadform: ilovalarni chiqarish formasi
+arialabelattachmentmenu: Ilova sozlamalari
+arialabelattachmentpreview: Ilovlalarni tasvirlash
+ariasummarycomposecontacts: Qabul qiluvchi sifatida kontakt va guruhlarni tanlash
+arialabelcontactexportoptions: Kontaktlarni eksport qilish xossalari
+arialabelabookgroupoptions: Manzil kitobi/guruhi xossalari
+arialabelpreferencesform: Sozlamalar formasi
+arialabelidentityeditfrom: Shaxsiy ma`lumotlarni thrirlash formasi
+arialabelresponseeditfrom: Javobni tahrirlash formasi
+arialabelsearchterms: Izlash so`rovi
+arialabeldropactionmenu: Drag-n-Drop harakati menyusi
+helplistnavigation: Ro`yxat bo`yicha navigatsiya tugmalari
+helplistkeyboardnavigation: "Tepa/Past strelkalari: Qatorlar/tanlanganlar bo`yicha fokusni o`zgartiradi.\nProbel: Fokus turgan qatorni belgilaydi.\nShift + tepa/past: Qo`shimcha tepa/past qatorni belgilaydi.\nCtrl + probel: Tanlanganlarda belgilanishlarni Qo`shadi/O`chiradi."
+helplistkeyboardnavmessages: "O`ng/chap strelkalar: muhokama etilayotgan xatlarni yoyish/berkitish сообщения обсуждения.\nEnter: Tanlangan xatlarni ochish.\nDelete: Tanlangan xatni Savatga solish."
+helplistkeyboardnavcontacts: 'Enter: Tanlangan kontaktni ochish.'
+oauthlogin: ''
+darkmode: ''
+lightmode: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+composeoptions: ''
+optionsandattachments: ''
+actions: ''
+selection: ''
+showunread: ''
+lmode: ''
+mailimportdesc: ''
+mailimportzip: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+keepformatting: ''
+encryptandsign: ''
+addheader: ''
+insert: ''
+insertcontact: ''
+recipient: ''
+recipientedit: ''
+allow: ''
+alwaysallow: ''
+details: ''
+summary: ''
+headers: ''
+allheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nonbinary: ''
+othergender: ''
+discard: ''
+continue: ''
+ok: ''
+choosefile: ''
+choosefiles: ''
+browse: ''
+groupassign: ''
+groupremove: ''
+importfromfile: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+identityencryption: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+displaynext: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+allmessages: ''
+olderxdays: ''
+generate: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+encryption: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+destination: ''
+skinauthor: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+arialabellistnav: ''
+arialabelmorecontactactions: ''
+arialabelmailtomenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

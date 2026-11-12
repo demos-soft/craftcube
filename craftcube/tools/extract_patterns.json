@@ -1,0 +1,5 @@
+{
+  "gettext_kwarg": "\\bgettext\\s*\\(([^)]*)\\)",
+  "python_literal": "(['\"])([^'\"\\n]+)\\1",
+  "add_label_call": "\\badd_label[s]?\\s*\\(([^)]*)\\)"
+}

@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for mk_MK. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Настана грешка!
+loginfailed: Најавата не успеа
+cookiesdisabled: Вашиот прелистувач не прифаќа колачиња
+sessionerror: Сесијата е неважечка или е истечена
+storageerror: Поврзувањето со IMAP не успеа
+servererror: Грешка во серверот!
+servererrormsg: 'Грешка со серверот: $msg'
+accountlocked: Премногу обиди за најава. Пробајте повторно подоцна.
+connerror: Грешка со конекција (Неуспешно конектирање со серверот)!
+dberror: Грешка со датабазата!
+windowopenerror: Popup прозорецот беше блокиран!
+requesttimedout: Сесијата за барањето истече
+errorreadonly: Операцијата неможе да се изврши. Папката може само да се прегледува.
+errornoperm: Операцијата неможе да се изврши. Немате доволно пермисии.
+erroroverquota: Операцијата неможе да се изврши. Нема слободно место.
+erroroverquotadelete: Немате повеќе слободно место. Користете SHIFT+DEL да избришете порака.
+invalidrequest: Неважечко барање! Податоците не се зачувани.
+invalidhost: Името на серверот не е валидно.
+nomessagesfound: Немате писма во ова сандаче
+mailboxempty: Поштенското сандаче е празно.
+nomessages: Нема пораки
+refreshing: Освежување...
+loading: Вчитувам...
+uploading: Ја подигам податотеката...
+attaching: Датотеката се прикачува...
+uploadingmany: Датотеките се прикачуваат...
+loadingdata: Ги вчитувам податоците...
+checkingmail: Проверувам нова пошта...
+sendingmessage: Ја испраќам пораката...
+messagesent: Пораката е успешно испратена
+savingmessage: Ја зачувувам пораката...
+messagesaved: Пораката е зачувана во Непратени
+successfullysaved: Успешно зачувано
+savingresponse: Одговорот се снима...
+deleteresponseconfirm: Избриши го одговорот?
+addedsuccessfully: Името е успешно додадено во Именикот
+contactexists: Контакт со иста адреса на Е-пошта веќе постои.
+contactnameexists: Контакт со истото име веќе постои.
+blockedimages: За да се заштити вашата приватност, сликите во оваа порака не се прикажани.
+encryptedmessage: Оваа порака е кодирана и не може да се прикаже. Жалиме!
+externalmessagedecryption: Ова е енкриптирана порака и може да се декриптира со вашата ехтензија.
+nopubkeyfor: Не е пронајден јавен клуч за $email
+nopubkeyforsender: Не е пронајден валиден јавен сертификат за идентитетот на испараќачот. Дали сакате да ја енкриптирате пораката само за примачите ?
+encryptnoattachments: Веќе прикачени додатоци не може да се енкриптираат. Ве молиме додадете ги повторно во уредникот за енкрипција.
+searchpubkeyservers: Дали сакате да ги пребарувате јавните клуч сервери за клучевите што недостасуваат?
+encryptpubkeysfound: 'Следниот јавен клуч е пронајден:'
+nocontactsfound: Нема пронајдено имиња.
+contactnotfound: Бараното име не е пронајдено
+sendingfailed: Не упеав да го испратам писмото
+senttooquickly: Почекајте $sec секунда/и пред да го испратите писмото
+errorsavingsent: Се случи грешка при снимањето на испратената порака.
+errorsaving: Се случи грешка при снимањето.
+errormoving: Не можев да го преместам писмото
+errorcopying: Пораката (пораките) не е успешно ископрана.
+errordeleting: Не можев да го избришам писмото
+errormarking: Не можев да го обележам писмото
+deletecontactconfirm: Дали сте сигурни дека сакате да го избришете одбраното(те) име(ња)?
+deletegroupconfirm: Избриши ја изберената група?
+deletemessagesconfirm: Дали сте сигурни дека сакате да го(и) избришете обележаниот(те) писмо(а)?
+deletefolderconfirm: Дали сте сигурни дека сакате да ја избришете оваа папка?
+purgefolderconfirm: Дали сте сигурни дека сакате да ги избршете сите писма во оваа папка?
+contactdeleting: Контактот (контактите) се брише....
+groupdeleting: Бришење група...
+folderdeleting: Ја бришам папката...
+foldermoving: Ја преместувам папката...
+foldersubscribing: Претплатување папка...
+folderunsubscribing: Отпишување папка...
+formincomplete: Имате изоставено непополнети информации
+noemailwarning: Внесете валидна е-поштенска адреса
+nonamewarning: Внесете име
+nopagesizewarning: Внесете големина на страницата
+nosenderwarning: Ве молиме внесете е-пошта на праќач
+norecipientwarning: Внесете барем еден примач
+disclosedreciptitle: Бремногу јавни приматели
+nosubjectwarning: Немате внесено „Наслов“. Дали сакате да внесете?
+nosubjecttitle: Нема предмет
+nobodywarning: Писмото нема текст во него. Дали сакате да го испратите?
+notsentwarning: Пораката не е пратена и има незачувани промени. Дали сакате да ги отфрлите промените?
+restoresavedcomposedata: 'Претходно компонирана но не испратена порака е пронајдена.\n\n$предмет\nЗачувано: $дата\n\n Дали сакате да ја вратите оваа порака?'
+nosearchname: Внесете име или е-поштенска адреса
+notuploadedwarning: Сè уште нема подигнати прилози. Почекајте или откажете го подигањето
+searchsuccessful: Пронајадени се $nr пораки
+contactsearchsuccessful: $nr контакти пронајдено.
+searchnomatch: Пребарувањето не даде резлутати
+searching: Пребарувам....
+checking: Проверувам...
+stillsearching: Пребарувањето трае уште...
+nospellerrors: Нема грешки во спелувањето
+folderdeleted: Папката е успешно избришана
+foldersubscribed: Успешно претплатена папка.
+folderunsubscribed: Успешно отпишана папк.
+deletedsuccessfully: Успешно избришано
+converting: Форматирањето на писмото е отстрането...
+messageopenerror: Не можев да го вчитам писното од серверот
+filelinkerror: Прикачувањето на дадотеката е неуспешно.
+fileuploaderror: Прикачувањето е неуспешно
+filesizeerror: Подигнатата податотека го надминува ограничувањето од $size
+filecounterror: Мозе да прикачиш максимум $count датотеки одеднаш.
+msgsizeerror: Не успеа да прикачувањето на датотекта.Максималната големина на пораката ($size) е надмината.
+copysuccess: Успешно копирани $nr контакти.
+movesuccess: успешно преместени $nr контакти.
+copyerror: Не можеше да се копираат контакти.
+moveerror: Не можеше да се преместат контакти.
+sourceisreadonly: Изворот на оваа адреса неможе да се промени
+errorsavingcontact: Името неможе да се сними
+movingmessage: Пораката се преместува...
+copyingmessage: Копирање порака(и)...
+copyingcontact: Копирање контакт(и)...
+movingcontact: Преместување контакт(и)...
+deletingmessage: Бришање порака(и)...
+markingmessage: Обележување порака(и)...
+addingmember: Додавање контакт(и) во групата...
+removingmember: Отстранување контакт(и) оф групата...
+receiptsent: Известувањето е успешно пратено
+errorsendingreceipt: Известувањето не е пратено
+deleteidentityconfirm: Дали навистина сакаш да го избришеш овој идентитет?
+nodeletelastidentity: Овој идентитет неможе да се избрише, тој е последниот.
+forbiddencharacter: Името на папката содржи несоодветен формат
+selectimportfile: Изберете ја податотеката која сакате да ја прикачите
+addresswriterror: Одбраниот именик не може да се менува
+contactaddedtogroup: Успешно дададени контакти во групата.
+contactremovedfromgroup: Успешно отстранети контакти од групата.
+nogroupassignmentschanged: Не се промениле групните задачи.
+importwait: Убезувам,, почекајте...
+importformaterror: Внесувањето не успеа! Пркачената датотека не е валидна датотека за внес.
+importconfirm: <b>Успешно се увезени $inserted имиња, $skipped веќе постојат и се прескокнати</b>:<p><em>$names</em></p>
+importmessagesuccess: Успешно внесени $nr пораки
+importmessageerror: Внесувањето не успеа! Прикачената датотека не е валидна порака или датотека од сандаче
+opnotpermitted: Операцијата не е дозволена
+nofromaddress: Недостасува емиал адреса во селектираниот идентитет.
+editorwarning: 'Менување на типот на едитор може да предизвика губење на текс форматирањето.  Дали сакате да продолжите? '
+httpreceivedencrypterror: Се појави фатална конфигурациска грешка. Веднаш контактирајте го администраторот. <b>Вашето писмо не мож.</b>
+smtpconnerror: 'SMTP грешка ($code): Не успеав да се поврзам со серверот'
+smtpautherror: 'SMTP грешка: Не успееа потврдувањето'
+smtpfromerror: 'SMTP грешка ($code): Не успеав да го поставам испраќачот „$from“ ($msg)'
+smtptoerror: 'SMTP грешка ($code): Не успеав да го поставам примачот „$yo“ ($msg)'
+smtprecipientserror: 'SMTP грешка: Не успеав да ја испарсирам листата на примачи'
+smtperror: 'SMTP Error: $msg'
+emailformaterror: 'Невалидна емаил адреса: $email '
+toomanyrecipients: Премногу примачи. Намалете го бројот на примачи на $max.
+maxgroupmembersreached: Бројот на членови на групата го надминува максимумот од $max.
+internalerror: настана внатрешна грешка. Ве молиме обидете се повторно.
+contactdelerror: Не можеше да се избришат контакт(и).
+contactdeleted: Контакт(и) беа успешно избришани.
+contactrestoreerror: Избришаниот контакт(и) не може да се врати.
+contactrestored: Контактот(ите) се успешно вратени.
+groupdeleted: Групата е успешно избришана.
+grouprenamed: Групата е успешно преименувана.
+groupcreated: Групата е успешно создадена.
+savedsearchdeleted: Зачуваните пребарувања се успешно избришани.
+savedsearchdeleteerror: 'Не можеше на се избришат зачуваните пребарувања '
+savedsearchcreated: Зачувани пребарувања беа успешно креирани.
+savedsearchcreateerror: Не можеше да е креираат зачувани пребарувања.
+messagedeleted: Порака(ите) беа успешно избришани.
+messagemoved: Порака(ите) беа успешно преместени.
+messagemovedtotrash: Порака(ите) беа успешно преместени во ѓубрето.
+messagecopied: Порака(ите) беа успешно копирани.
+messagemarked: Порака(ите) беа успешно обележани.
+autocompletechars: Внесете барем $min карактери за автоматско завршување.
+autocompletemore: Пронајдени се повеќе исти внесови. Ве молиме внесете повеќе знаци.
+namecannotbeempty: Името не може да биде празно.
+nametoolong: Името е предолго.
+namedotforbidden: Името на папката не може да почнува со точка.
+folderupdated: Папката е успешно ажурирана.
+foldercreated: Папката е успешно креирана.
+invalidimageformat: Невалиден формат на слика.
+mispellingsfound: Детектирана е правописна грешка во пораката.
+parentnotwritable: Невозможно да се креира/премести папката во селектираната папка родител. Нема права на пристап.
+messagetoobig: Делот со пораката е преголем за да се процесира.
+noscriptwarning: 'Прдупредување: Овој webmail сервис бара Javascript! За да го користите ве молиме вклучете го Javascript во поставувањата на вашиот пребарувач.'
+messageissent: 'Оваа порака беше пратена, но сеуште не е зачувана. Дали сакате да ја зачувате сега ? '
+errnotfound: Датотеката не е најдена
+errnotfoundexplain: Бараниот ресурс не беше пронајден!
+errfailedrequest: Неуспешно барање
+errauthorizationfailed: Овластувањето не успеа
+errunauthorizedexplain: 'Не може да се потврди дали вие се обвластени да пристапите до овој сервис! '
+errrequestcheckfailed: Барањето за проверка не успеа
+errcsrfprotectionexplain: "За ваша заштита, пристапот до овој ресурс е обезбеден против CSRF.\n ако го видите ова, вие најверојатно не сте се одјавиле пред напуштање на веб апликацијата. \n\n Сега е потребна човечка интеракција за да продолжите."
+errcontactserveradmin: Ве молиме контактирајте го вашиот сервер администратор.
+clicktoresumesession: Кликнете овде за да продолжите со претходната сесија
+errcomposesession: Грешка при компонирање сесија
+errcomposesessionexplain: Бараната композиција на сесија не е најдена.
+clicktocompose: Кликнете овде за да компонирате нова порака
+cookiesmismatch: ''
+dbconnerror: ''
+loggedout: ''
+nocontactselected: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+folderpurged: ''
+folderexpunged: ''
+csvfilemismatch: ''
+msgsizeerrorfwd: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+smtputf8error: ''
+smtpsizeerror: ''
+attachmentvalidationerror: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

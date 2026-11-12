@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for km_KH. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: មាន​បញ្ហា​បាន​កើត​ឡើង!
+loginfailed: បាន​បរាជ័យ​ក្នុង​ការ​ចូល។
+cookiesdisabled: កម្មវិធី​អ៊ីនធឺណិត​របស់​អ្នក​មិន​ទទួល​ខូគី​ទេ។
+sessionerror: សម័យ​របស់​អ្នក​មិន​ត្រឹម​ត្រូវ ឬ​ផុត​កំណត់។
+storageerror: មិន​អាច​តភ្ជាប់​ទៅ​ម៉ាស៊ីន​ឃ្លាំង​ផ្ទុក។
+servererror: ម៉ាស៊ីន​មេ​មាន​បញ្ហា!
+servererrormsg: 'បញ្ហា: $msg'
+dberror: កំហុស​មូលដ្ឋាន​ទិន្នន័យ!
+requesttimedout: សំណើ​អស់​ពេល
+errorreadonly: មិនអាចប្រតិបត្តិបានពីព្រោះថតនេះត្រូវបានគេកំណត់សំរាប់តែមើល
+errornoperm: មិនអាចប្រតិបត្តិបានពីព្រោះមិនមានសិទ្ទគ្រប់គ្រាន់
+invalidrequest: មិនអាចរក្សាទុកទិន្នន័យបានពីព្រោះមានបញ្ហានៅពេលបញ្ជូនទិន្នន័យ
+invalidhost: ឈ្មោះ​ម៉ាស៊ីន​មេ​មិន​ត្រឹមត្រូវ។
+nomessagesfound: ពុំមានសំបុត្រក្នុងប្រអប់សំបុត្រនេះទេ
+refreshing: កំពុង​ផ្ទុកឡើងវិញ...
+loading: កំពុងដំណើរការ...
+uploading: កំពុងបញ្ជូនឯកសារ...
+uploadingmany: កំពុង​ផ្ទុកឯកសារ​ឡើង...
+loadingdata: កំពុងបើកឯកសារ...
+checkingmail: កំពុងស្វែងរកមើលសំបុត្រថ្មី៝...
+sendingmessage: កំពុងផ្ញើសំបុត្រ...
+messagesent: សំបុត្រត្រូវបានបញ្ជូនដោយជោគជ័យ!
+savingmessage: កំពុងរក្សាសំបុត្រទុក...
+messagesaved: សំបុត្រត្រូវបានរក្សាទុកក្នុងថតពង្រៀង
+successfullysaved: រក្សាទុកដោយជោគជ័យ
+addedsuccessfully: អាសយដ្ឋានត្រូវបានរក្សាទុកដោយជោគជ័យ
+contactnameexists: មាន​ទំនាក់ទំនង​ដែលមាន​ឈ្មោះ​ដូច​គ្នា​នេះ​រួច​ហើយ។
+blockedimages: រូបភាពដែលមានក្នុងសំបុត្រនេះត្រូវបានបិទដើម្បីរក្សាសុវត្ថភាព
+encryptedmessage: លោកអ្នកមិនអាចមើលសំបុត្រនេះបានទេពីព្រោះសំបុត្រនេះជាសំបុត្រសំងាត់
+nocontactsfound: ពុំមានអាសយដ្ឋានទាក់ទងទេ
+contactnotfound: អាសយដ្ឋានទាក់ទងដែលលោកអ្នកចង់រកពុំមានឡើយ
+sendingfailed: មិនអាចផ្ញើសំបុត្របាន
+senttooquickly: សូមរងចាំ $sec វិនាទីមុននឹងផ្ញើសំបុត្រនេះ
+errormoving: មិនអាចផ្ទេរសំបុត្របាន
+errorcopying: មិនអាចចំលងសំបុត្របាន
+errordeleting: មិនអាចលុបសំបុត្រចោលបាន
+errormarking: មិនអាចកំណត់ចំណាំលើសំបុត្របាន
+deletecontactconfirm: តើលោកអ្នកពិតជាចង់លុបព័ត៌មានទំនាក់ទំនងនេះមែនទេ?
+deletegroupconfirm: តើអ្នកពិត​ជា​ចង់លុប​ក្រុម​បានជ្រើស?
+deletemessagesconfirm: តើលោកអ្នកពិតជាចង់លុបសំបុត្រនេះមែនទេ?
+deletefolderconfirm: តើលោកអ្នកពិតជាចង់លុបថតនេះមែនទេ?
+purgefolderconfirm: តើលោកអ្នកពិតជាចង់លុបសំបុត្រទាំងអស់នៅក្នុងថតនេះមែនទេ?
+contactdeleting: កំពុង​លុប​ទំនាក់ទំនង...
+groupdeleting: កំពុង​លុប​ក្រុម...
+folderdeleting: កំពុងលុបថតសំរាប់ទុកឯកសារ...
+foldermoving: កំពុងផ្ទេរថតសំរាប់ទុកឯកសារ...
+foldersubscribing: កំពុងកំណត់ប្រើថតសំរាប់ទុកឯកសារ...
+folderunsubscribing: កំពុងកំណត់មិនប្រើថតសំរាប់ទុកឯកសារ...
+formincomplete: សូមបំពេញទិន្នន័យអោយបានគ្រប់
+noemailwarning: អ៊ីមែលត្រឹមត្រូវ
+nonamewarning: សូមសរសេរឈ្មោះរបស់អ្នក
+nopagesizewarning: សូមកំណត់ទំហំទំព័រ
+norecipientwarning: សូមសរសេរអ្នកទទួលយ៉ាងហោចណាស់ម្នាក់
+nosubjectwarning: សំបុត្រគ្មានចំណងជើងតើអ្នកចង់សរសេរចំណងជើងនៅពេលនេះទេ?
+nobodywarning: តើលោកអ្នកចង់ផ្ញើសំបុត្រដែលគ្មានតួអត្ថបទសំបុត្រទេ?
+nosearchname: សូមបំពេញឈ្មោះទំនាក់ទំនង ឬអាសយដ្ឋានអ៊ីមែល
+notuploadedwarning: ឯកសារ​ភ្ជាប់​ទាំង​អស់​មិន​ត្រូវ​បាន​ផ្ទុក​ឡើង​នៅឡើយ​ទេ។ សូម​រង់ចាំ​ ឬ​បោះបង់​ការ​​ផ្ទុក​ឡើង។
+searchsuccessful: រកឃើញសំបុត្រចំនួន $nr
+contactsearchsuccessful: រក​ឃើញ​ទំនាក់ទំនង $nr ។
+searchnomatch: រកមិនឃើញអ្វីទាំងអស់
+searching: កំពុងស្វែងរក...
+checking: កំពុងពិនិត្យរក...
+nospellerrors: គ្មានកំហុសអក្ខរាវិរុទ្ធទេ
+folderdeleted: លុបថតបានដោយជោគជ័យ
+foldersubscribed: អាចកំណត់ប្រើថតបានដោយជោគជ័យ
+folderunsubscribed: កំណត់លែងប្រើថតបានដោយជោគជ័យ
+deletedsuccessfully: លុបបានដោយជោគជ័យ
+converting: កំពុងលុបការរចនាចោល...
+messageopenerror: មិនអាចទាញយកសំបុត្រពីម៉ាស៊ីនមេបានទេ
+fileuploaderror: មិនអាចបញ្ជូលភ្ជាប់ឯកសារ
+filesizeerror: ទំហំឯកសារត្រូវបញ្ជូនលើសចំណុះទំហំធំបំផុតគឺ $size
+sourceisreadonly: លោកអ្នកមានសិទ្ធត្រឹមតែមើលប្រភពនៃអាសយដ្ឋាននេះ
+errorsavingcontact: មិនអាចរក្សាអាសយដ្ឋានបានទេ
+movingmessage: កំពុកផ្តេរសំបុត្រ...
+copyingmessage: កំពុងចំលងសំបុត្រ...
+copyingcontact: កំពុង​ចម្លង​ទំនាក់ទំនង...
+deletingmessage: កំពុងលុបសំបុត្រ...
+markingmessage: កំពុងកំណត់សំគាល់សំបុត្រ...
+addingmember: កំពុង​បន្ថែម​ទំនាក់ទំនង​ទៅ​ក្រុម...
+removingmember: កំពុង​លុបទំនាក់ទំនង​ពី​ក្រុម...
+receiptsent: បានបញ្ជូនអត្ថបទបញ្ជាក់ថាបានអានបានសំរេច
+errorsendingreceipt: មិនអាចបញ្ជូនអត្ថបទបញ្ជាក់ថាបានអាន ទេ
+deleteidentityconfirm: តើអ្នក​ពិត​ជា​ចង់​លុប​អត្តសញ្ញាណ​នេះ?
+nodeletelastidentity: លោកអ្នកមិនអាចលុបអត្តសញ្ញាណនេះទេព្រោះវានៅសល់ចុងក្រោយគេ
+forbiddencharacter: ឈ្មោះថតនេះមានអក្សរដែលត្រូវហាមឃាត់
+selectimportfile: សូមជ្រើសរើសឯកសារដើម្បីបញ្ជូនភ្ជាប់
+addresswriterror: សៀវភៅអាសយដ្ឋាននោះមិនអាចសរសេរចូលបានទេ
+contactaddedtogroup: បានដាក់ពត៌មានទំនាក់ទំនងចូលក្នុងក្រុមនេះដោយជោគជ័យ
+contactremovedfromgroup: បានលុបពត៌មានទំនាក់ទំនងចេញពីក្រុមនេះដោយជោគជ័យ
+nogroupassignmentschanged: គ្មាន​ការ​ផ្ដល់​ក្រុម​បាន​ប្ដូរ។
+importwait: សូមមេត្តារង់ចាំកំពុងទាញទិន្នន័យចូល ...
+importconfirm: <b>ព័ត៌មានទំនាក់ទំនង $insertedបានបញ្ចូលដោយជោគជ័យ,ហើយបានរំលងចោលពត៌មានដែលមានស្រាប់$skipped </b>:<p><em>$names</em></p>
+opnotpermitted: ប្រតិ្តបត្តិការត្រូវបានគេហាមឃាត់!
+smtpconnerror: SMTP Error ($code):មិនអាចភ្ជាប់ទៅម៉ាស៊ីនមេ
+smtpautherror: SMTP Error ($code):ព័ត៌មានគនីយមិនត្រឹមត្រូវ
+smtpfromerror: SMTP Error ($code):មិនអាចកំនត់អ្នកផ្ញើ "$from" ($msg)
+smtptoerror: SMTP Error ($code):មិនអាចកំនត់អ្នកទទួល "$to" ($msg)
+smtprecipientserror: SMTP Error:មិនអាចបំលែងបញ្ជីអ្នកទទួល
+smtperror: 'SMTP Error: $msg'
+toomanyrecipients: ចំនួនអ្នកទទួលច្រើនលើសកំនត់!សូមមេត្តាលុបចោលរហូតដល់ $max។
+maxgroupmembersreached: ចំនួនក្រុមលើសកំនត់ហើយចំនួនច្រើនបំផុតគឺ $max
+contactdelerror: មិនអាចលុបអាសយដ្ឋានទំនាក់ទំនង
+contactdeleted: អាសយដ្ឋានទំនាក់ទំនងត្រូវបានលុបដោយជោគជ័យ
+groupdeleted: លុបក្រុមបានដោយជោគជ័យ
+grouprenamed: ប្តូរឈ្មោះក្រុមបានដោយជោគជ័យ
+groupcreated: បង្កើតក្រុមបានដោយជោគជ័យ
+messagedeleted: លុបសំបុត្របានដោយជោគជ័យ
+messagemoved: ផ្ទេរសំបុត្របានដោយជោគជ័យ
+messagecopied: ចំលងសំបុត្របានដោយជោគជ័យ
+messagemarked: កំណត់សំគាល់សំបុត្របានដោយជោគជ័យ
+autocompletechars: សូមសរសេរអក្សរយ៉ាងតិច $minដើម្បីបង្ហាយដោយស្វ័យប្រវត្តិ
+namecannotbeempty: សូមសរសេរឈ្មោះ
+nametoolong: ឈ្មោះវែងពេក
+folderupdated: ផ្លាស់ប្តូរថតបានដោយជោគជ័យ
+foldercreated: បង្កើតថតបានដោយជោគជ័យ
+invalidimageformat: ប្រភេទរូបភាពមិនត្រឹមត្រូវ
+cookiesmismatch: ''
+accountlocked: ''
+connerror: ''
+dbconnerror: ''
+windowopenerror: ''
+erroroverquota: ''
+erroroverquotadelete: ''
+loggedout: ''
+mailboxempty: ''
+nomessages: ''
+attaching: ''
+savingresponse: ''
+deleteresponseconfirm: ''
+nocontactselected: ''
+contactexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+externalmessagedecryption: ''
+nopubkeyfor: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+errorsavingsent: ''
+errorsaving: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+nosenderwarning: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+restoresavedcomposedata: ''
+stillsearching: ''
+folderpurged: ''
+folderexpunged: ''
+filelinkerror: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+copysuccess: ''
+movesuccess: ''
+copyerror: ''
+moveerror: ''
+movingcontact: ''
+importformaterror: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+importmessagesuccess: ''
+importmessageerror: ''
+nofromaddress: ''
+editorwarning: ''
+httpreceivedencrypterror: ''
+smtputf8error: ''
+smtpsizeerror: ''
+emailformaterror: ''
+internalerror: ''
+contactrestoreerror: ''
+contactrestored: ''
+savedsearchdeleted: ''
+savedsearchdeleteerror: ''
+savedsearchcreated: ''
+savedsearchcreateerror: ''
+messagemovedtotrash: ''
+autocompletemore: ''
+namedotforbidden: ''
+mispellingsfound: ''
+parentnotwritable: ''
+messagetoobig: ''
+attachmentvalidationerror: ''
+noscriptwarning: ''
+messageissent: ''
+errnotfound: ''
+errnotfoundexplain: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcontactserveradmin: ''
+clicktoresumesession: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+clicktocompose: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

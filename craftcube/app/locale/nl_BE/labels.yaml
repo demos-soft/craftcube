@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for nl_BE. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Welkom bij $product
+username: Gebruikersnaam
+password: Wachtwoord
+server: Server
+login: Aanmelden
+logout: Afmelden
+mail: Berichten
+settings: Instellingen
+addressbook: Contactpersonen
+inbox: Postvak IN
+drafts: Concepten
+sent: Verzonden berichten
+trash: Prullenbak
+junk: Spam
+subject: Onderwerp
+from: Van
+sender: Afzender
+to: Aan
+cc: Cc
+bcc: Bcc
+replyto: Antwoorden aan
+followupto: Followup aan
+date: Datum
+size: Grootte
+priority: Prioriteit
+organization: Organisatie
+readstatus: Gelezen?
+listoptions: Lijstopties...
+mailboxlist: Mappen
+messagesfromto: Berichten $from - $to van $count
+threadsfromto: Conversaties $from - $to van $count
+messagenrof: Bericht $nr van $count
+fromtoshort: $from - $to van $count
+copy: Kopieer
+move: Verplaats
+moveto: Verplaats naar...
+download: Downloaden
+showattachment: Weergeven
+showanyway: Toch weergeven
+filename: Bestandsnaam
+filesize: Bestandsgrootte
+addtoaddressbook: Voeg toe aan lijst met contactpersonen
+sun: Zo
+mon: Ma
+tue: Di
+wed: Wo
+thu: Do
+fri: Vr
+sat: Za
+sunday: Zondag
+monday: Maandag
+tuesday: Dinsdag
+wednesday: Woensdag
+thursday: Donderdag
+friday: Vrijdag
+saturday: Zaterdag
+jan: Jan
+feb: Feb
+mar: Mrt
+apr: Apr
+may: Mei
+jun: Jun
+jul: Jul
+aug: Aug
+sep: Sep
+oct: Okt
+nov: Nov
+dec: Dec
+longjan: Januari
+longfeb: Februari
+longmar: Maart
+longapr: April
+longmay: Mei
+longjun: Juni
+longjul: Juli
+longaug: Augustus
+longsep: September
+longoct: Oktober
+longnov: November
+longdec: December
+today: Vandaag
+refresh: Vernieuwen
+checkmail: Controleer op nieuwe berichten
+compose: Nieuw bericht opstellen
+writenewmessage: Nieuw bericht
+reply: Beantwoorden
+replytomessage: Beantwoorden aan afzender
+replytoallmessage: Antwoorden naar lijst of naar afzender en alle ontvangers
+replyall: Allen beantwoorden
+replylist: Lijst beantwoorden
+forward: Doorsturen
+forwardinline: Voorwaarts in lijn
+forwardattachment: Doorsturen als bijlage
+forwardmessage: Bericht doorsturen
+deletemessage: Dit bericht verwijderen
+movemessagetotrash: Verplaats bericht naar verwijderde items
+printmessage: Afdrukken
+previousmessage: Vorig bericht
+firstmessage: Eerste bericht
+nextmessage: Volgende bericht
+lastmessage: Laatste bericht
+backtolist: Terug naar berichtenlijst
+viewsource: Broncode bericht weergeven
+mark: Markeren
+markmessages: Markeer berichten
+markread: Als gelezen
+markunread: Als ongelezen
+markflagged: Selecteren
+markunflagged: Niet Selecteren
+moreactions: Meer acties...
+more: Meer
+back: Terug
+options: Opties
+actions: Acties
+select: Selecteren
+all: Alle
+none: Geen
+currpage: Huidige pagina
+isread: Lees
+unread: Ongelezen
+flagged: Geselecteerd
+unanswered: Onbeantwoord
+deleted: Verwijderd
+undeleted: Niet verwijderd
+invert: Selectie omkeren
+filter: Filter
+list: Lijst
+threads: Conversaties
+expand-all: Alles uitklappen
+expand-unread: Ongelezen uitklappen
+collapse-all: Alles inklappen
+threaded: Conversaties
+autoexpand_threads: Klap alle conversaties uit
+do_expand: alle conversaties
+expand_only_unread: alleen met ongelezen berichten
+fromto: Afzender/Ontvanger
+flag: Markeer
+attachment: Bijlage
+nonesort: Geen
+sentdate: Verzenddatum
+arrival: Ontvangstdatum
+asc: oplopend
+desc: aflopend
+listcolumns: Kolommen
+listsorting: Sorteerkolom
+listorder: Sorteervolgorde
+listmode: Lijstweergave mode
+layoutlist: Lijst
+folderactions: Acties voor map...
+compact: Comprimeren
+empty: Legen
+quota: Gebruikte schijfruimte
+unknown: onbekend
+unlimited: onbeperkt
+quotastorage: Schijfruimte
+quicksearch: Snelzoeken
+resetsearch: Zoek opnieuw
+searchmod: Zoekopties
+msgtext: Volledig bericht
+namex: Naam
+searchscope: Bereik
+currentfolder: Huidige map
+searchinterval-1W: ouder dan een week
+searchinterval-1M: ouder dan een maand
+searchinterval-1Y: ouder dan een jaar
+searchinterval1W: jonger dan een week
+searchinterval1M: jonger dan een maand
+searchinterval1Y: jonger dan een jaar
+openinextwin: Openen in een nieuw venster
+emlsave: Opslaan (.eml)
+editasnew: Als nieuw bewerken
+send: Verzenden
+sendmessage: Bericht verzenden
+savemessage: Bewaar als concept
+addattachment: Bestand toevoegen als bijlage
+charset: Karakterset
+editortype: Opmaak
+returnreceipt: Ontvangstbevestiging
+dsn: Delivery Status Notification
+mailreplyintro: 'Op $date, schreef $sender:'
+originalmessage: Orgineel bericht
+selectimage: Selecteer beeld
+addimage: Voeg beeld toe
+selectmedia: Selecteer film
+addmedia: Voeg film toe
+encrypt: Versleutel
+keyid: Sleutel-ID
+keylength: Bits
+keyexpired: Verlopen
+insert: Voeg in
+recipient: Ontvanger
+editidents: Bewerk identiteiten
+spellcheck: Spellen
+checkspelling: Controleer spelling
+resumeediting: Hervat bewerken
+revertto: Ongedaan maken
+ignore: Negeer
+responses: Antwoorden
+insertresponse: Antwoord invoegen
+manageresponses: Antwoorden beheren
+newresponse: Nieuw antwoord
+addresponse: Antwoord invoegen
+editresponse: Antwoord bewerken
+editresponses: Antwoorden bewerken
+responsename: Naam
+attach: Bijvoegen
+attachments: Bijlagen
+upload: Uploaden
+close: Sluiten
+messageoptions: Opties voor bericht...
+low: Laag
+lowest: Laagste
+normal: Normaal
+high: Hoog
+highest: Hoogste
+nosubject: (geen onderwerp)
+showimages: Toon afbeeldingen
+alwaysshow: Afbeeldingen van $sender altijd tonen
+isdraft: Dit is een concept bericht.
+andnmore: $nr meer...
+togglemoreheaders: Toon meer berichthoofden
+togglefullheaders: Schakelen tussen naakte berichtkoppen
+htmltoggle: HTML
+plaintoggle: Platte tekst
+savesentmessagein: Bewaar verzonden bericht in
+dontsave: niet bewaren
+maxuploadsize: Maximum toegestane bestandsgrootte is $size
+addcc: Cc toevoegen
+addbcc: Bcc toevoegen
+addreplyto: Antwoorden aan toevoegen
+addfollowupto: Followup aan toevoegen
+mdnrequest: De afzender heeft een ontvangstbevestiging gevraagd. Wilt u deze versturen?
+receiptread: Ontvangstbevestiging (gelezen)
+yourmessage: Dir is een onvangstbevestiging voor uw bericht
+receiptnote: 'Opmerking: deze ontvangstbevestiging houdt enkel in dat het bericht was weergegeven bij de ontvanger. Er is geen garantie dat de ontvanger het bericht daadwerkelijk heeft gelezen en/of begrepen.'
+name: Naam
+firstname: Voornaam
+surname: Achternaam
+middlename: Middelnaam
+nameprefix: Prefix
+namesuffix: Suffix
+nickname: Roepnaam
+jobtitle: Job titel
+department: Afdeling
+gender: Geslacht
+maidenname: Meisjesnaam
+email: E-mailadres
+phone: Telefoonnummer
+address: Adres
+street: Straat
+locality: Stad
+zipcode: Postcode
+region: Staat/Provincie
+country: Land
+birthday: Verjaardag
+anniversary: Verjaardag
+website: Website
+instantmessenger: IM
+notes: Opmerkingen
+male: man
+female: vrouw
+manager: Manager
+assistant: Assistent
+spouse: Echtgenoot
+allfields: Alle velden
+search: Zoek
+searchresult: Zoekresultaat
+advsearch: Uitgebreid zoeken
+advanced: Geavanceerd
+other: Anders
+printcontact: Contactpersoon afdrukken
+typehome: Thuis
+typework: Werk
+typeother: Anders
+typemobile: Mobiel
+typemain: Hoofd
+typehomefax: Thuis fax
+typeworkfax: Werk fax
+typecar: Auto
+typepager: Pager
+typevideo: Video
+typeassistant: Assistent
+typehomepage: Home page
+typeblog: Blog
+typeprofile: Profiel
+addfield: Veld toevoegen...
+addcontact: Contactpersoon toevoegen
+editcontact: Contactpersoon bewerken
+contacts: Contactpersonen
+contactproperties: Eigenschappen van contactpersoon
+contactnameandorg: Naam en organisatie
+personalinfo: Persoonlijke informatie
+contactphoto: Contact foto
+edit: Bewerken
+cancel: Annuleren
+save: Opslaan
+delete: Verwijderen
+rename: Hernoemen
+addphoto: Toevoegen
+replacephoto: Vervangen
+uploadphoto: Foto  uploaden
+newcontact: Nieuw contact
+deletecontact: Verwijder geselecteerde contactpersonen
+composeto: Mail sturen aan
+contactsfromto: Contactpersonen $from - $to van $count
+print: Afdrukken
+export: Exporteren
+exportall: Exporteer alle
+exportsel: Exporteer geslecteerden
+exportvcards: Exporteer contactpersonen in vCard formaat
+newgroup: Maak een nieuwe groep
+addgroup: Groep toevoegen
+grouprename: Groep hernoemen
+groupdelete: Groep verwijderen
+groupremoveselected: Geselecteerde contacten uit de groep verwijderen
+previouspage: Toon vorige
+firstpage: Toon eerste
+nextpage: Toon volgende
+lastpage: Toon laatste
+group: Groep
+groups: Groepen
+personaladrbook: Personlijke adressen
+searchsave: Zoekopdracht opslaan
+searchdelete: Zoekopdracht wissen
+import: Importeer
+importcontacts: Contactpersonen importeren
+importfromfile: Importeren uit bestand
+importtarget: Contacten toevoegen aan
+importreplace: Vervang het complete adresboek
+importdesc: U kunt contacten uploaden vanuit een bestaand adresboek.<br/>We ondersteunen momenteel het importeren van adressen uit <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> of CSV (door komma's gescheiden) gegevensformaat.
+done: Klaar
+settingsfor: Instellingen voor
+about: Over
+preferences: Voorkeuren
+userpreferences: Gebruikersvoorkeuren
+editpreferences: Gebruikersvoorkeuren bewerken
+identities: Identiteiten
+manageidentities: Identiteiten beheren
+newidentity: Nieuwe identiteit maken
+identityencryption: Versleuteling
+preferhtml: Gebruik HTML-opmaak
+defaultcharset: Standaard karakterset
+htmlmessage: HTML-bericht
+dateformat: Datum formaat
+timeformat: Tijdformaat
+prettydate: Uitgebreide datumweergave
+setdefault: Als standaard instellen
+autodetect: Automatisch
+language: Taal
+timezone: Tijdzone
+pagesize: Berichten per pagina
+signature: Handtekening
+dstactive: Zomer/wintertijd
+showinextwin: Bericht openen in een nieuw venster
+composeextwin: Samenstellen in een nieuw venster
+htmleditor: HTML berichten opmaken
+htmlonreply: enkel bij beantwoorden van een HTML bericht
+htmlonreplyandforward: bij het doorsturen of beantwoorden van een HTML-bericht
+htmlsignature: HTML handtekening
+previewpane: Toon voorbeeldvenster
+skin: Opmaakprofiel
+logoutclear: Prullenbak legen bij uitloggen
+logoutcompact: Postvak IN opschonen bij uitloggen
+uisettings: Gebruikersinterface
+serversettings: Serverinstellingen
+mailboxview: Opmaak Mailbox
+mdnrequests: Ontvangstmeldingen
+askuser: vraag de gebruiker
+autosend: stuur automatisch
+autosendknown: stuur ontvangstbevestiging naar mijn contactpersonen, anders vraag mij
+autosendknownignore: stuur ontvangstbevestiging naar mijn contactpersonen, anders negeer
+ignorerequest: negeer verzoek
+readwhendeleted: Bericht na verwijderen als gelezen markeren
+flagfordeletion: Bericht niet verwijderen maar als verwijderd markeren
+skipdeleted: Verwijderde berichten niet tonen
+deletealways: Verwijder bericht wanneer verplaatsen naar Prullenbak mislukt
+deletejunk: Berichten direct verwijderen in Ongewenst
+showremoteimages: Geef externe toegevoegde berichten weer
+fromknownsenders: Van bekende afzenders
+always: altijd
+showinlineimages: Toon bijgevoegde afbeeldingen onder het bericht
+autosavedraft: Automatisch als concept opslaan
+everynminutes: elke $n minuten
+refreshinterval: Vernieuwen (controleren op nieuwe berichten, enz.)
+never: nooit
+immediately: onmiddellijk
+messagesdisplaying: Berichten weergave
+messagescomposition: Berichten aanmaken
+mimeparamfolding: Namen van bijlagen
+2231folding: Volledig RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Volledig RFC 2047 (andere)
+force7bit: Gebruik MIME codering voor 8-bit karakters
+advancedoptions: Geavanceerde opties
+focusonnewmessage: Focus browserscherm bij nieuw bericht
+checkallfolders: Controleer alle mappen op nieuwe berichten
+displaynext: Volgend lijst-item weergeven na wissen/verplaatsen
+defaultfont: Standaard lettertype van HTML-bericht
+mainoptions: Hoofdopties
+browseroptions: Browseropties
+section: Sectie
+maintenance: Onderhoud
+newmessage: Nieuw bericht
+signatureoptions: Opties voor handtekening
+whenreplying: Bij beantwoorden
+replyempty: het originele bericht niet vermelden
+replytopposting: begin bericht boven het origineel
+replybottomposting: begin bericht onder het origineel
+replyremovesignature: Verwijder handtekening uit het origneel bij beantwoorden
+autoaddsignature: Handtekening automatisch toevoegen
+newmessageonly: alleen bij nieuwe berichten
+replyandforwardonly: alleen bij beantwoorden en doorsturen
+insertsignature: Handtekening invoegen
+afternseconds: Na $n seconden
+reqmdn: Vraag altijd een ontvangstbevestiging
+reqdsn: Vraag altijd een Delivery Status Notification
+replysamefolder: Plaats antwoorden in de map van het beantwoorde bericht
+defaultabook: Standaard adresboek
+autocompletesingle: Alternatieve e-mailadressen in autoaanvulling overslaan
+listnamedisplay: Lijst contacten als
+spellcheckbeforesend: Controleer de spelling voordat u een bericht verstuurt
+spellcheckoptions: Opties voor spellingcontrole
+spellcheckignoresyms: Negeer woorden met symbolen
+spellcheckignorenums: Negeer woorden met getallen
+spellcheckignorecaps: Negeer woorden met allemaal hoofdletters
+addtodict: Toevoegen aan woordenboek
+mailtoprotohandler: 'Registreer protocol handler voor mailto: links'
+forwardmode: Berichten doorsturen
+inline: inline
+allmessages: alle berichten
+folder: Map
+folders: Mappen
+foldername: Naam
+subscribed: Geabonneerd
+messagecount: Berichten
+create: Aanmaken
+createfolder: Nieuwe map aanmaken
+managefolders: Mappen beheren
+specialfolders: Speciale mappen
+properties: Eigenschappen
+folderproperties: Eigenschappen van map
+parentfolder: Bovenliggende map
+location: Locatie
+info: Informatie
+getfoldersize: Klik voor de grootte van de map
+changesubscription: Klik voor abonnement te wijzigen
+encryptioncreatekey: Maak een nieuw sleutelpaar aan
+encryption: Versleuteling
+sortby: Sorteren op
+sortasc: Oplopend sorteren
+sortdesc: Aflopend sorteren
+license: Licentie
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unicode
+english: Engels
+westerneuropean: West-Europees
+easterneuropean: Oost-Europees
+southeasterneuropean: Zuidoost Europees
+baltic: Baltisch
+cyrillic: Cyrillisch
+arabic: Arabisch
+greek: Grieks
+hebrew: Hebreeuws
+turkish: Turks
+nordic: Noord-Germaans
+thai: Thais
+celtic: Keltisch
+vietnamese: Vietnamees
+japanese: Japans
+korean: Koreaans
+chinese: Chinees
+oauthlogin: ''
+menu: ''
+darkmode: ''
+lightmode: ''
+show_real_foldernames: ''
+listoptionstitle: ''
+copyto: ''
+open: ''
+bouncemsg: ''
+bounce: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+markallread: ''
+folders-cur: ''
+folders-sub: ''
+folders-all: ''
+composeoptions: ''
+optionsandattachments: ''
+first: ''
+last: ''
+previous: ''
+next: ''
+selection: ''
+unflagged: ''
+withattachment: ''
+replied: ''
+forwarded: ''
+showunread: ''
+lmode: ''
+layout: ''
+layoutwidescreen: ''
+layoutdesktop: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+importmessages: ''
+mailimportdesc: ''
+mailimportzip: ''
+quotatype: ''
+quotatotal: ''
+quotaused: ''
+quotamessage: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+searchplaceholder: ''
+body: ''
+type: ''
+subfolders: ''
+allfolders: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+changeformattext: ''
+changeformathtml: ''
+keepformatting: ''
+encryptmessage: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+encryptandsign: ''
+keyrevoked: ''
+bccinstead: ''
+addheader: ''
+insertcontact: ''
+recipientedit: ''
+restore: ''
+restoremessage: ''
+responsetext: ''
+uploadprogress: ''
+togglecomposeoptions: ''
+attachmentrename: ''
+allow: ''
+alwaysallow: ''
+details: ''
+summary: ''
+headers: ''
+allheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nonbinary: ''
+othergender: ''
+qrcode: ''
+personal: ''
+discard: ''
+continue: ''
+ok: ''
+choosefile: ''
+choosefiles: ''
+browse: ''
+groupassign: ''
+groupremove: ''
+uponelevel: ''
+listgroup: ''
+importgroups: ''
+importgroupsall: ''
+importgroupsexisting: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+addidentity: ''
+editidentity: ''
+messagepart: ''
+digitalsig: ''
+showemail: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+replytoppostingnoindent: ''
+sigbelow: ''
+sigseparator: ''
+automarkread: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+standardwindows: ''
+asattachment: ''
+replyallmode: ''
+replyalldefault: ''
+replyalllist: ''
+olderxdays: ''
+foldertype: ''
+personalfolder: ''
+otherfolder: ''
+sharedfolder: ''
+findfolders: ''
+findcontacts: ''
+findmail: ''
+namespace.personal: ''
+namespace.other: ''
+namespace.shared: ''
+dualuselabel: ''
+dualusemail: ''
+dualusefolder: ''
+generate: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+undo: ''
+installedplugins: ''
+plugin: ''
+version: ''
+source: ''
+destination: ''
+skinauthor: ''
+support: ''
+savedsearches: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+arialabeltopnav: ''
+arialabeltasknav: ''
+arialabeltoolbar: ''
+arialabellistnav: ''
+arialabelactivetask: ''
+arialabelmessagessearchfilter: ''
+arialabelmailsearchform: ''
+arialabelcontactsearchform: ''
+arialabelmailquicksearchbox: ''
+arialabelquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfoldersearchform: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabelmailpreviewframe: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmessagenav: ''
+arialabelmessagebody: ''
+arialabelmessageactions: ''
+arialabelcontactquicksearch: ''
+arialabelcontactsearchbox: ''
+arialabelmessageheaders: ''
+arialabelforwardingoptions: ''
+arialabelreplyalloptions: ''
+arialabelmoremessageactions: ''
+arialabelmorecontactactions: ''
+arialabelmarkmessagesas: ''
+arialabelcomposeoptions: ''
+arialabelresponsesmenu: ''
+arialabelattachmentuploadform: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+arialabelattachmentpreview: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabelabookgroupoptions: ''
+arialabelpreferencesform: ''
+arialabelidentityeditfrom: ''
+arialabelresponseeditfrom: ''
+arialabelsearchterms: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

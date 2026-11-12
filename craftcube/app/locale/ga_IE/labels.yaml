@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for ga_IE. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Fáilte go $product
+username: Úsáideoir
+password: Pasfhocal
+server: Freastalaí
+login: Logáil isteach
+menu: Roghchlár
+logout: Scoir
+mail: Postas
+settings: Socruithe Pearsanta
+addressbook: Leabhair Seoltaí
+inbox: Isteach
+drafts: Dréachtaí
+sent: Amach
+trash: Bosca bruscair
+junk: Dramhaíl
+show_real_foldernames: Taispeáin fíorainmneacha i gcomhair fillteáin faoi leith
+subject: Ábhair
+from: Seolaí
+sender: Seoltóir
+to: Chuig
+cc: Cc
+bcc: Cóip cheilte
+replyto: Freagair go
+date: Dáta
+size: Méid
+priority: Tosaíocht
+organization: Eagraíocht
+mailboxlist: Fillteán
+messagesfromto: Teachtaireachta as $from go $to as $count
+messagenrof: Teachtaireacht $nr as $count
+fromtoshort: $from – $to as $count
+copy: Macasamhlaigh
+move: Bog
+moveto: Bog chuig...
+copyto: Macasamhlaigh chuig...
+download: Íosluchtú
+open: Oscail
+showattachment: Taispeáin
+showanyway: Taispeáin é ar aon nós
+filename: Ainm an chomhaid
+filesize: Toirt
+addtoaddressbook: Sábháil i mo leabhair seoltaí
+sun: Do
+mon: Lu
+tue: Má
+wed: Cé
+thu: Dé
+fri: Ao
+sat: Sa
+sunday: Domhnach
+monday: An Luan
+tuesday: An Mháirt
+wednesday: An Chéadaoin
+thursday: An Déardaoin
+friday: Aoine
+saturday: An Satharn
+jan: Ean
+feb: Fea
+mar: Már
+apr: Aib
+may: Bea
+jun: Mei
+jul: Iúi
+aug: Lún
+sep: MFó
+oct: DFó
+nov: Sam
+dec: Nol
+longjan: Eanáir
+longfeb: Feabhra
+longmar: Márta
+longapr: Aibreán
+longmay: Bealtaine
+longjun: Meitheamh
+longjul: Iúil
+longaug: Lúnasa
+longsep: Meán Fómhair
+longoct: Deireadh Fómhair
+longnov: Samhain
+longdec: Nollaig
+today: Inniu
+refresh: Athnuaigh
+checkmail: Seiceáil chun teachtaireacht nua
+compose: Scríobh teachtaireacht
+writenewmessage: Scríobh teachtaireacht nua
+reply: Freagair
+replytomessage: Scríobh freagra chun an seolaí
+replytoallmessage: Scríobh freagra chun an seolaí agus na faighteoir
+replyall: Freagra gach
+forward: Cur ar aghaidh
+forwardattachment: Seol ar aghaidh mar cheangaltán é
+forwardmessage: Seol ar aghaidh an teachtaireacht
+bouncemsg: Athsheol
+bounce: Athsheol
+deletemessage: Scrois an teachtaireacht
+movemessagetotrash: Bog an teachtaireacht chuig an bosca bruscair
+printmessage: Clóbhuail an teachtaireacht seo
+previousmessage: Taispeáin an teachtaireacht roimhe seo
+firstmessage: Taispeáin an chéad teachtaireacht eile
+nextmessage: Taispeáin an teachtaireacht ina dhiaidh sin
+lastmessage: Taispeáin an teachtaireacht deireanach
+backtolist: Téigh ar ais go dtí an liosta teachtaireachta
+viewsource: Éiriú bunchód
+mark: Rianaigh
+markmessages: Rianaigh teachtaireachtaí
+markread: Léite
+markunread: Mar neamhléite
+moreactions: Tuilleadh gníomhartha...
+markallread: Rianaigh uile mar léite
+folders-cur: An fillteán roghnaithe amháin
+folders-sub: An fillteán roghnaithe agus a fhofhillteáin
+folders-all: Gach fillteán
+more: Tuilleadh
+back: Siar
+options: Roghanna
+composeoptions: Roghanna cumadóireachta
+optionsandattachments: Roghanna agus ceangaltáin
+actions: Gníomhartha
+first: Céad
+last: Deireanach
+previous: Roimhe
+next: Ar aghaidh
+select: Roghnaigh
+selection: Roghnúchán
+all: Uile
+none: Dada
+currpage: An leathanach reatha
+isread: Léite
+unread: Neamhléite
+flagged: Bratach curtha leis
+unanswered: Gan fhreagra
+withattachment: Le ceangaltán
+deleted: Scriosta
+undeleted: Nach bhfuil scriosta
+replied: Freagartha
+forwarded: Curtha ar aghaidh
+invert: Aisiompaigh
+filter: Scag
+list: Liosta
+threads: Snáitheanna
+expand-all: Fairsingigh Uile
+expand-unread: Fairsingigh na cinn neamhléite
+collapse-all: Leacaigh uile
+threaded: Snáithithe
+showunread: Taispeáin teachtaireachtaí neamhéite
+do_expand: gach snáithe
+expand_only_unread: le teachtaireachtaí neamhléite amháin
+fromto: Ó/Chuig
+flag: Cuir Bratach Air
+attachment: Ceangaltáin
+nonesort: Aon cheann
+sentdate: An dáta ar a seoladh é
+arrival: 'An dáta ar a shroich sé '
+asc: ag dul suas
+desc: ag dul síos
+layout: Leagan amach
+layoutwidescreen: Scáileán leathan
+layoutdesktop: Ríomhaire ar an gcrinlín
+layoutlist: Liosta
+folderactions: Gníomhartha do na fillteáin...
+compact: Comhbhrúigh
+empty: Folmhaigh
+importmessages: Tabhair teachtaireachtaí isteach
+quota: Toilleadh diosca atá athláimhe
+unknown: gan aithne
+unlimited: gan teorainn
+quotatotal: Teorainn
+quotaused: Úsáidte
+quotastorage: Slí ar an diosca
+quotamessage: Líon na dteachtaireachtaí
+shortheaderdate: Ar $date
+shortheaderto: Chuig $to ar $date
+shortheaderfrom: Ó $from ar an $date
+quicksearch: Mearcuardaigh
+searchplaceholder: Cuardaigh...
+resetsearch: Athshocraigh an cuardach
+msgtext: An teachtaireacht ar fad
+body: Colainn
+type: Cineál
+namex: Ainm
+searchscope: Cuimse
+currentfolder: An fillteán reatha
+subfolders: An ceann seo agus fofhillteáin
+allfolders: Gach fillteán
+searchinterval-1W: níos sine ná seachtain
+searchinterval-1M: níos sine ná mí
+searchinterval-1Y: níos sine ná bliain
+searchinterval1W: níos úire na seachtain
+searchinterval1M: níos úire ná mí
+searchinterval1Y: níos úire ná bliain
+openinextwin: Oscail i bhfuinneog nua
+emlsave: Íosluchtú (.eml)
+editasnew: Cuir in eagar mar cheann nua
+send: Seol
+sendmessage: Seol mo teachtaireacht láithreach bonn
+savemessage: Sábháil an dréachta seo
+addattachment: Suimigh Iatán
+charset: Foireann carachtar
+editortype: Sort eagarthóir
+returnreceipt: Admháil léite
+mailreplyintro: 'Ar an $date, scríobh $sender:'
+originalmessage: An teachtaireacht bhunaidh
+selectimage: Roghnaigh íomhá
+addimage: Cuir íomhá leis
+selectmedia: Roghnaigh scannán
+addmedia: Cuir scannán leis
+encrypt: Criptigh
+encryptmessage: Criptigh an teachtaireacht
+encryptandsign: Criptigh agus sínigh
+keylength: Bearta
+keyexpired: Éagtha
+keyrevoked: Aisghairmthe
+bccinstead: Bain feidhm as Bcc
+insert: Ionsáigh
+recipient: Faighteoir
+spellcheck: Litrigh
+checkspelling: Fiosrú ar mo litriú
+resumeediting: Athdhúisigh eagarthóireacht
+revertto: Filleadh ar
+restore: Cuir ar ais
+restoremessage: Cuir an teachtaireacht ar ais?
+ignore: Ná bac leis
+responses: Freagraí
+insertresponse: Cuir isteach freagra
+newresponse: Cruthaigh freagra nua
+addresponse: Cuir freagra leis
+editresponse: Cuir an freagra in eagar
+editresponses: Cuir na freagraí in eagar
+responsename: Ainm
+responsetext: Téacs an fhreagra
+attach: Ceangail
+attachments: Iatání
+upload: Aistriú suas
+uploadprogress: $percent ($current as $total)
+close: Dún
+messageoptions: Roghanna teachtaireachtaí...
+attachmentrename: Athainmnigh an ceangaltán
+low: Íseal
+lowest: Is Ísle
+normal: Gnách
+high: Ard
+highest: Is Airde
+nosubject: (Níl aon Ábhair)
+showimages: Taispeáin na híomhánna
+allow: Ceadaigh
+alwaysshow: Taispeáin íomhánna ó $sender i gcónaí
+isdraft: Seo dréachttheachtaireacht.
+andnmore: $nr eile...
+details: Mionsonraí
+summary: Achoimre
+headers: Ceannteidil
+allheaders: Gach ceannteideal...
+togglemoreheaders: Taispeáin tuilleadh ceannteidil theachtaireachtaí
+htmltoggle: HTML
+plaintoggle: Téacs amháin
+savesentmessagein: Coimeád an teachtaireacht seolta i
+dontsave: ná coimeád é
+addcc: Cuir Cc leis
+addbcc: Cuir Bcc leis
+receiptread: Admháil fillte (léite)
+zoomin: Gluais Isteach
+zoomout: Gluais Amach
+rotate: Rothlaigh
+increaseimage: Méadaigh méid na híomhá
+decreaseimage: Laghdaigh méid na híomhá
+rotateimage: Rothlaigh an íomhá
+showtools: Taispeáin uirlisí don íomhánna
+hidetools: Folaigh uirlisí don íomhá
+name: Leasainm
+firstname: Ainm baiste
+surname: Sloinne
+middlename: An Dara hAinm
+nameprefix: Réimír
+namesuffix: Iarmhír
+nickname: Leasainm
+jobtitle: Teideal oibre
+department: Rannóg
+gender: Gnéas
+maidenname: Sloinne roimh phósadh
+email: Ríomhphost
+phone: Uimhir ghutháin
+address: Seoladh
+street: Sráid
+locality: Cathair
+zipcode: Cód Poist
+region: Stát/Cúige
+country: Tír
+birthday: Lá breithe
+anniversary: Cothrom lae
+website: Suíomh gréasáin
+instantmessenger: TM
+notes: Nótaí
+male: fireann
+female: baineann
+manager: Bainisteoir
+assistant: Cúntóir
+spouse: Céile
+allfields: Gach réimse
+search: Cuardaigh
+searchresult: Toradh an chuardaigh
+advsearch: Cuardach casta
+advanced: Ardroghanna
+other: Eile
+printcontact: Cuir an teagmháil i gcló
+qrcode: Cód QR
+typehome: Baile
+typework: Obair
+typeother: Eile
+typemobile: Soghluaiste
+typemain: Príomh
+typehomefax: Faics baile
+typeworkfax: Faics oibre
+typecar: Gluaisteán
+typepager: Glaoire
+typevideo: Físeán
+typeassistant: Cúntóir
+typehomepage: Leathanach baile
+typeblog: Blag
+typeprofile: Beathaisnéisín
+addfield: Cuir réimse leis...
+addcontact: Cuir teagmháil leis
+editcontact: Chuir chara in eagar
+contacts: Teagmhálacha
+contactproperties: Airíonna na teagmhálaí
+contactnameandorg: Ainm agus Eagraíocht
+personalinfo: Faisnéis phearsanta
+personal: Pearsanta
+contactphoto: Grianghraf den teagmhálaí
+edit: Athraigh
+cancel: Cealaigh
+save: Sábháil
+delete: Scrios
+discard: Cuileáil
+continue: Lean ar aghaidh
+ok: Tá go maith
+rename: Athainmnigh
+addphoto: Cuir leis
+replacephoto: Ionadaigh
+uploadphoto: Uasluchtaigh grianghraf
+choosefile: Roghnaigh comhad...
+choosefiles: Roghnaigh comhaid...
+browse: Siortaigh
+newcontact: Cruthaigh teagmháil nua
+deletecontact: Scrios na daoine seo
+composeto: Scríobh teachtaireacht go
+contactsfromto: Daoine as $from to $to as $count
+print: Priontáil
+export: Easportáil
+exportall: Tabhair amach uile
+exportsel: Bain amach an ní roghnaithe
+newgroup: Cruthaigh baicle nua
+addgroup: Cuir baicle leis
+grouprename: Athainmnigh an bhaicle
+groupdelete: Scrios an bhaicle
+uponelevel: Suas
+previouspage: Taispeáin an foireann roimhe seo
+firstpage: Taispeáin an céad foireann
+nextpage: Taispeáin an foireann ina dhiaidh sin
+lastpage: Taispeáin an foireann deireanach
+group: Baicle
+groups: Grúpaí
+personaladrbook: Seoltaí Pearsanta
+searchdelete: Scrios an cuardach
+import: Tabhair isteach
+importfromfile: Tabhair isteach ó chomhad
+importtarget: Cuir teagmhálaithe le
+importreplace: Ionadaigh an leabhar seoltaí iomlán
+done: Déanta
+settingsfor: Socruithe chun
+about: Maidir le
+preferences: Tosaíocht
+userpreferences: Tosaíocht Pearsanta
+editpreferences: Athraigh tosaíocht pearsanta
+identities: Céannachtaí
+addidentity: Cuir céannacht leis
+editidentity: Cuir céannacht in eagar
+identityencryption: Criptiúchán
+preferhtml: Taispeáin an HTML
+htmlmessage: Teachtaireacht HTML
+messagepart: Cuid
+digitalsig: Síniú Digiteach
+dateformat: Leagan amach an dáta
+timeformat: Leagan amach an am
+prettydate: Dátaí Dheas
+setdefault: Socraigh an réamhshocraithe
+autodetect: Uathoibríoch
+language: Teanga
+timezone: Crios ama
+pagesize: Rónna in aghaidh gach leathanach
+signature: Mana clabhsúir
+dstactive: Laethúil um shamhradh
+showinextwin: Oscail an teachtaireacht i bhfuinneog nua
+composeextwin: Cum i bhfuinneog nua
+htmleditor: Scríobh teachtaireachta HTML
+htmlsignature: Mana clabhsúir HTML
+showemail: Taispeáin an seoladh ríomhphoist leis an ainm taispeána
+previewpane: Taispeáin an pána réamhamharc
+skin: Craiceann an comhéadain
+logoutclear: Glan Bruscar nuair a scoirtear
+logoutcompact: Comhbhrúigh an Bosca Isteach nuair a scoirtear
+uisettings: Comhéadan
+serversettings: Socruithe an Fhreastalaithe
+mailboxview: Amharc Bosca Poist
+askuser: iarr orm
+autosend: seol admháil
+ignorerequest: Ná bac leis an iarratas
+readwhendeleted: Rianaigh an teachtaireacht mar léite nuair a scriostar í
+skipdeleted: Ná taispeáin teachtaireachtaí scriosta
+fromknownsenders: ó sheoltóirí a bhfuil aithne orthu
+always: riamh
+showinlineimages: Taispeáin na híomhánna ceangailte faoin teachtaireacht
+autosavedraft: Sábháil dréachta go huathoibríoch
+everynminutes: gach $n nóiméad
+refreshinterval: Athnuaigh (lorg teachtaireachtaí nua, agus araile)
+never: riamh
+immediately: láithreach
+messagesdisplaying: Ag taispeáint na teachtaireachtaí
+messagescomposition: Ag cumadh na teachtaireachtaí
+2231folding: RFC 2231 iomlán (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: RFC 2047 iomlán (eile)
+advancedoptions: Ardroghanna
+toggleadvancedoptions: Scoránaigh na hardroghanna
+focusonnewmessage: Dírigh fuinneog an líonléitheora ar theachtaireacht nua
+checkallfolders: Dearbháil gach fillteán do theachtaireachtaí nua
+mainoptions: Príomhroghanna
+browseroptions: Roghanna líonléitheora
+section: Roinn
+maintenance: Cothabháil
+newmessage: Teachtaireacht Nua
+signatureoptions: Roghanna don Síniú
+whenreplying: Nuair atá freagra á thabhairt
+replyempty: ná luaigh an teachtaireacht bhunaidh
+replytopposting: tosaigh an teachtaireacht nua os cionn an lua
+replybottomposting: tosaigh an teachtaireacht nua faoin lua
+newmessageonly: teachtaireacht nua amháin
+replyandforwardonly: freagraí agus teachtaireachtaí curtha ar aghaidh amháin
+insertsignature: Ionsáigh an síniú
+automarkread: Rianaigh teachtaireachtaí mar léite
+afternseconds: tar éis $n soicindí
+defaultabook: An leabhar seoltaí réamhshocraithe
+privatemode: Príobháideach (Baile)
+businessmode: Gnó (Obair)
+spellcheckoptions: Roghanna litreora
+addtodict: Cuir leis an bhfoclóir é
+inline: i líne
+asattachment: mar cheangaltán
+replyalldefault: freagair uile
+allmessages: gach teachtaireacht
+folder: Fillteán
+folders: Fillteán
+foldername: Ainm fillteán
+subscribed: Síntiú
+messagecount: Teachtaireachtaí
+create: Cruthaigh
+createfolder: Cruthaigh fillteán nua
+managefolders: Stiúir na fillteán
+specialfolders: Sainfhillteáin
+properties: Airíonna
+folderproperties: Airíonna an fhillteáin
+parentfolder: An máthairfhillteán
+location: Suíomh
+info: Faisnéis
+getfoldersize: Brúigh chun méid an fhillteáin a fháil
+foldertype: An cineál fillteán
+personalfolder: Fillteán príobháideach
+sharedfolder: Fillteán poiblí
+findfolders: Aimsigh fillteáin
+findmail: Aimsigh teachtaireachtaí poist
+namespace.personal: Pearsanta
+namespace.other: Daoine eile
+namespace.shared: Comhroinnte
+dualuselabel: Ina bhfuil amháin
+dualusemail: teachtaireachtaí
+dualusefolder: fillteáin
+generate: Cruthaigh
+openmailvelopesettings: Oscail Socruithe Mailvelope
+encryption: Criptiúchán
+sortby: Sórtáil trí
+sortasc: Sórtáil in ord méadaitheach
+sortdesc: Sórtáil in ord neartaitheach
+undo: Cealaigh
+installedplugins: Breiseáin suiteáilte
+plugin: Breiseán
+version: Leagan
+source: Foinse
+license: Ceadúnas
+support: Faigh tacaíocht
+dateformatY: BBBB
+dateformaty: BB
+dateformatm: MM
+dateformatd: LL
+dateformatj: L
+dateformatn: M
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unicode
+english: Béarla
+westerneuropean: Iarthar na hEorpach
+easterneuropean: Oirthear na hEorpa
+hebrew: Eabhrais
+turkish: Tuircis
+celtic: Ceilteach
+chinese: Síneach
+arialabeltopnav: Rialtán fuinneoige
+arialabelmailpreviewframe: Réamhamharc ar an teachtaireacht
+arialabelmessagebody: Corp na Teachtaireachta
+arialabelmessageactions: Gníomhartha na teachtaireachta
+arialabelmessageheaders: Ceanntáisc na teachtaireachta
+arialabelforwardingoptions: Roghanna cur ar aghaidh
+arialabelmarkmessagesas: Rianaigh na teachtaireachtaí roghnaithe mar...
+arialabelcomposeoptions: Roghanna do chumadh teachtaireachta
+arialabelattachmentmenu: Roghanna do cheangaltáin
+arialabelmailtomenu: Roghanna do sheoltaí ríomhphoist
+arialabelattachmentpreview: Réamhamharc ar cheangaltáin
+arialabelsearchterms: Téarmaí cuardaigh
+arialabelimagetools: Uirlisí don íomhá
+oauthlogin: ''
+darkmode: ''
+lightmode: ''
+followupto: ''
+readstatus: ''
+listoptions: ''
+listoptionstitle: ''
+threadsfromto: ''
+replylist: ''
+forwardinline: ''
+undeletemessage: ''
+markflagged: ''
+markunflagged: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+unflagged: ''
+autoexpand_threads: ''
+listcolumns: ''
+listsorting: ''
+listorder: ''
+listmode: ''
+lmode: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+mailimportdesc: ''
+mailimportzip: ''
+quotatype: ''
+searchmod: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+changeformattext: ''
+changeformathtml: ''
+dsn: ''
+keepformatting: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+keyid: ''
+addheader: ''
+insertcontact: ''
+recipientedit: ''
+editidents: ''
+manageresponses: ''
+togglecomposeoptions: ''
+alwaysallow: ''
+togglefullheaders: ''
+maxuploadsize: ''
+addreplyto: ''
+addfollowupto: ''
+sendreceipt: ''
+mdnrequest: ''
+yourmessage: ''
+receiptnote: ''
+sendalwaysto: ''
+nonbinary: ''
+othergender: ''
+exportvcards: ''
+groupassign: ''
+groupremove: ''
+groupremoveselected: ''
+listgroup: ''
+searchsave: ''
+importcontacts: ''
+importgroups: ''
+importgroupsall: ''
+importgroupsexisting: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+manageidentities: ''
+newidentity: ''
+defaultcharset: ''
+htmlonreply: ''
+htmlonreplyandforward: ''
+mdnrequests: ''
+autosendknown: ''
+autosendknownignore: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+flagfordeletion: ''
+deletealways: ''
+deletejunk: ''
+showremoteimages: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+mimeparamfolding: ''
+force7bit: ''
+savelocalstorage: ''
+displaynext: ''
+defaultfont: ''
+replytoppostingnoindent: ''
+replyremovesignature: ''
+autoaddsignature: ''
+sigbelow: ''
+sigseparator: ''
+reqmdn: ''
+reqdsn: ''
+alwayskeepformatting: ''
+replysamefolder: ''
+autocompletesingle: ''
+listnamedisplay: ''
+contactformmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+spellcheckbeforesend: ''
+spellcheckignoresyms: ''
+spellcheckignorenums: ''
+spellcheckignorecaps: ''
+editoroptions: ''
+enableautolink: ''
+mailtoprotohandler: ''
+standardwindows: ''
+forwardmode: ''
+replyallmode: ''
+replyalllist: ''
+olderxdays: ''
+changesubscription: ''
+otherfolder: ''
+findcontacts: ''
+encryptioncreatekey: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+destination: ''
+skinauthor: ''
+savedsearches: ''
+southeasterneuropean: ''
+baltic: ''
+cyrillic: ''
+arabic: ''
+greek: ''
+nordic: ''
+thai: ''
+vietnamese: ''
+japanese: ''
+korean: ''
+arialabeltasknav: ''
+arialabeltoolbar: ''
+arialabellistnav: ''
+arialabelactivetask: ''
+arialabelmessagessearchfilter: ''
+arialabelmailsearchform: ''
+arialabelcontactsearchform: ''
+arialabelmailquicksearchbox: ''
+arialabelquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfoldersearchform: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmessagenav: ''
+arialabelcontactquicksearch: ''
+arialabelcontactsearchbox: ''
+arialabelreplyalloptions: ''
+arialabelmoremessageactions: ''
+arialabelmorecontactactions: ''
+arialabelresponsesmenu: ''
+arialabelattachmentuploadform: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabelabookgroupoptions: ''
+arialabelpreferencesform: ''
+arialabelidentityeditfrom: ''
+arialabelresponseeditfrom: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

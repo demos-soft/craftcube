@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for es_AR. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: ¡Ha ocurrido un error!
+loginfailed: Contraseña o nombre de usuario incorrecto
+cookiesdisabled: Tu navegador no acepta cookies.
+sessionerror: Tu sesión no es válida o ha expirado.
+cookiesmismatch: Se encontró una discordancia de cookies. Por favor, borrá las cookies de tu navegador.
+storageerror: Error de conexión con el servidor IMAP.
+servererror: ¡Error en el servidor!
+servererrormsg: 'Error en servidor: $msg'
+accountlocked: Demasiados errores de inicio de sesión. Intentá de nuevo más tarde.
+connerror: Error de conexión (No se pudo conectar con el servidor)
+dberror: ¡Error en base de datos!
+dbconnerror: ¡No fue posible conectar con la base de datos!
+windowopenerror: ¡La ventana emergente ha sido bloqueada!
+requesttimedout: Tiempo de espera agotado
+errorreadonly: No se pudo realizar la operación. La carpeta es de sólo lectura.
+errornoperm: No se pudo realizar la operación. Permiso denegado.
+erroroverquota: No se pudo realizar la operación. Espacio en disco insuficiente.
+erroroverquotadelete: Espacio en disco insuficiente. Usá SHIFT+DEL para eliminar un mensaje.
+invalidrequest: ¡Petición no válida! No se guardó ningún dato.
+invalidhost: Nombre de servidor no válido.
+nomessagesfound: No se han encontrado mensajes en esta casilla.
+loggedout: Terminaste la sesión satisfactoriamente. ¡Hasta luego!
+mailboxempty: La casilla está vacía
+nomessages: No hay mensajes
+refreshing: Actualizando...
+loading: Cargando...
+uploading: Subiendo archivo...
+attaching: Adjuntando archivo...
+uploadingmany: Subiendo archivos...
+loadingdata: Cargando datos...
+checkingmail: Verificando si hay nuevos mensajes...
+sendingmessage: Enviando mensaje...
+messagesent: Mensaje enviado correctamente
+savingmessage: Guardar mensaje...
+messagesaved: Mensaje guardado en borradores
+successfullysaved: Guardado correctamente
+savingresponse: Guardando texto de respuesta...
+deleteresponseconfirm: ¿Realmente deseás eliminar este texto de respuesta?
+nocontactselected: Todavía no seleccionaste un contacto.
+addedsuccessfully: Contacto agregado correctamente a la libreta de direcciones.
+contactexists: Ya existe un contacto con la misma dirección de correo electrónico.
+contactnameexists: Ya existe un contacto con el mismo nombre.
+blockedimages: Para proteger tu privacidad, las imágenes externas han sido bloqueadas en este mensaje.
+blockedresources: Para proteger tu privacidad los recursos remotos han sido bloqueados.
+suspiciousemail: Este mensaje contiene direcciones de correo electrónico sospechosas que pueden ser fraudulentas.
+bccemail: El o los mensajes reenviados contienen destinatarios confidenciales (Bcc)
+bouncehint: El mensaje será enviado sin ninguna modificación, ej. usando el cuerpo original, encabezados y destinatarios.
+encryptedmessage: Lo siento, este es un mensaje cifrado y no puede ser mostrado.
+externalmessagedecryption: Este es un mensaje cifrado y se puede descifrar con una extensión de tu navegador.
+nopubkeyfor: No se encontró una clave pública para $email
+nopubkeyforsender: No se encontró una clave pública para tu identidad remitente. ¿Querés encriptar el mensaje solo para los destinatarios?
+encryptnoattachments: Los adjuntos ya subidos no pueden ser encriptados. Volvé a agregarlos en el editor de encriptación.
+searchpubkeyservers: ¿Deseás buscar las claves faltantes en servidores de claves públicas?
+encryptpubkeysfound: 'Se han encontrado las siguientes claves públicas:'
+keyservererror: Error al obtener la clave del servidor de claves.
+keyimportsuccess: La clave pública $key fue importada satisfactoriamente a tu almacén de claves.
+nocontactsfound: No se encontraron contactos.
+contactnotfound: No se encontró el contacto solicitado.
+contactsearchonly: Necesitás usar un formulario de búsqueda para ver contactos de la libreta de direcciones seleccionada.
+sendingfailed: Error al enviar mensaje.
+senttooquickly: Por favor, esperá $sec segundo(s) antes de enviar este mensaje.
+errorsavingsent: Ocurrió un error al guardar el mensaje enviado.
+errorsaving: Ocurrió un error al guardar.
+errormoving: No se pudo mover el/los mensaje(s)
+errorcopying: No se pudo copiar el/los mensaje(s).
+errordeleting: No se ha podido eliminar el/los mensaje(s).
+errormarking: No se puede marcar el/los mensaje(s).
+alerttitle: Atención
+confirmationtitle: Estás seguro...
+deletecontactconfirm: ¿Realmente quiere eliminar los contactos seleccionados?
+deletegroupconfirm: Realmente deseas eliminar el grupo seleccionado?
+deletemessagesconfirm: ¿Realmente quiere eliminar los mensajes seleccionados?
+deletefolderconfirm: ¿Realmente quiere eliminar esta carpeta?
+movefolderconfirm: ¿Realmente deseás mover esta carpeta?
+purgefolderconfirm: ¿Realmente quiere eliminar todos los mensajes de esta carpeta?
+contactdeleting: Eliminando contacto(s)...
+groupdeleting: Eliminando grupo...
+folderdeleting: Eliminando carpeta...
+foldermoving: Moviendo carpeta...
+foldersubscribing: Suscribiendo a carpeta...
+folderunsubscribing: Quitando suscripción a carpeta...
+formincomplete: No se han llenado todos los campos del formulario
+noemailwarning: Por favor, introduzca un e-mail válido
+nonamewarning: Por favor, introduzca su nombre
+nopagesizewarning: Por favor, introduzca un tamaño de página
+nosenderwarning: Por favor, Ingresá la dirección de correo electrónico del remitente.
+recipientsadded: Destinatario(s) agregado(s) satisfactoriamente.
+norecipientwarning: Por favor, introduzca al menos un destinatario
+disclosedreciptitle: Demasiados destinatarios públicos
+nosubjectwarning: El campo "Asunto" esta vacío. ¿Desea completarlo en este momento?
+nosubjecttitle: Sin asunto
+nobodywarning: ¿Quiere enviar este mensaje sin texto?
+notsentwarning: El mensaje no se ha enviado y tiene cambios sin guardar. ¿Querés descartar los cambios?
+restoresavedcomposedata: 'Se ha encontrado un mensaje redactado anteriormente que no ha sido enviado.\n\nAsunto: $subject\nGuardado: $date\n\nDeseas recuperar este mensaje?'
+nosearchname: Por favor, introduzca un nombre o la dirección de e-mail
+notuploadedwarning: Todavia no se subieron todos los archivos adjuntos. Por favor aguarde o cancele la subida.
+searchsuccessful: Se encontraron $nr mensajes
+contactsearchsuccessful: $nr contactos encontrados.
+searchnomatch: La búsqueda no obtuvo resultados
+searching: Buscando...
+checking: Revisando...
+stillsearching: Búsqueda en progreso...
+nospellerrors: No se encontraron errores ortográficos
+folderdeleted: Carpeta eliminada exitosamente
+foldersubscribed: Suscripción a carpeta exitosa.
+folderunsubscribed: Suscripción a carpeta exitosamente eliminada.
+folderpurged: Carpeta vaciada exitosamente
+folderexpunged: Carpeta compactada exitosamente
+deletedsuccessfully: Eliminado exitosamente
+converting: Removiendo el formato del mensaje...
+messageopenerror: No puedo descargar el mensaje del servidor
+filelinkerror: Error al adjuntar archivo.
+fileuploaderror: Error al subir archivos
+csvfilemismatch: No es posible importar múltiples archivos CSV con campos diferentes.
+filesizeerror: El archivo excede el tamaño maximo ($size)
+filecounterror: Podés subir un máximo de $count archivos a la vez.
+msgsizeerror: Error al adjuntar un archivo. Se excedió el tamaño máximo ($size) del mensaje.
+msgsizeerrorfwd: Tamaño máximo del mensaje ($size) excedido. $num mensaje(s) no ha(n) sido ajuntado(s).
+copysuccess: $nr contactos copiados exitosamente.
+movesuccess: $nr contactos movidos exitosamente.
+copyerror: No se pudo copiar ningún contacto.
+moveerror: No se pudo mover ningún contacto.
+sourceisreadonly: Esta dirección es de sólo-lectura
+errorsavingcontact: No se pudo guardar la dirección de contacto
+movingmessage: Moviendo mensaje...
+copyingmessage: Copiando mensaje...
+copyingcontact: Copiando contacto(s)...
+movingcontact: Moviendo contacto(s)...
+deletingmessage: Eliminando contacto(s)...
+markingmessage: Marcando mensaje(s)...
+addingmember: Agregando contacto(s) al grupo...
+removingmember: Quitando contacto(s) del grupo...
+receiptsent: La notificación de lectura se ha enviado con éxito.
+errorsendingreceipt: No se ha podido enviar la notificación de lectura.
+deleteidentityconfirm: Realmente querés eliminar esta identidad?
+nodeletelastidentity: No se puede borrar esta identidad puesto que es la última.
+forbiddencharacter: El nombre de la carpeta contiene un carácter prohibido
+selectimportfile: Por favor, seleccione el archivo a subir
+addresswriterror: La libreta de direcciones seleccionada es de solo-lectura
+contactaddedtogroup: Contactos agregados al grupo correctamente
+contactremovedfromgroup: Contactos eliminados del grupo correctamente
+nogroupassignmentschanged: Ninguna asiganción de grupo fue modificada.
+importwait: Importando, aguarde por favor...
+importformaterror: Importación fallida! El archivo subido no es un archivo de importación de datos válido.
+importconfirm: <b>Se importaron $inserted contactos correctamente. $skipped ya existentes fueron ignorados</b>:<p><em>$names</em></p>
+importmessagesuccess: $nr mensajes importados exitosamente
+importmessageerror: Importación fallida! El archivo subido no es un mensaje o archivo mailbox válido
+opnotpermitted: Operación no permitida!
+nofromaddress: A la identidad seleccionada le falta la dirección de correo electrónico.
+editorwarning: Cambiar el tipo de editor puede causar la pérdida del formato. Deseas continuar?
+httpreceivedencrypterror: Ha ocurrido un error fatal de configuración. Contactá inmediatamente al administrador. <b>Tu mensaje no pudo ser enviado.</b>
+smtpconnerror: 'Error SMTP ($code): Conexión al servidor falló'
+smtpautherror: 'Error SMTP ($code): Falló la autentificación'
+smtpfromerror: 'Error SMTP ($code): No se pudo establecer el remitente "$from" ($msg)'
+smtptoerror: 'Error SMTP ($code): No se puedo agregar el destinatario "$to" ($msg)'
+smtprecipientserror: 'Error SMTP: No se pudo leer la lista de destinatarios'
+smtputf8error: 'Error SMTP: El servidor no soporta Unicode en las direcciones de correo.'
+smtpsizeerror: 'Error SMTP: El mensaje excede el límite del servidor ($limit)'
+smtperror: 'Error SMTP: $msg'
+emailformaterror: 'Dirección de correo electrónico no válida: $email'
+toomanyrecipients: Demasiados destinatarios. Reducí la cantidad a un máximo de $max.
+maxgroupmembersreached: El número de miembros del grupo excede el máximo de $max
+internalerror: Ocurrió un error interno. Por favor, intentá nuevamente.
+contactdelerror: No se pudo eliminar el/los contactos(s).
+contactdeleted: Contacto(s) eliminado/s exitosamente.
+contactrestoreerror: No se pudo recuperar el/los contacto/s eliminado(s).
+contactrestored: Contacto(s) recuperado/s satisfactoriamente.
+groupdeleted: Grupo eliminado correctamente.
+grouprenamed: Grupo renombrado satisfactoriamente.
+groupcreated: Grupo creado satisfactoriamente.
+savedsearchdeleted: Búsqueda guardada se eliminó satisfactoriamente.
+savedsearchdeleteerror: No se pudo eliminar la búsqueda guardada.
+savedsearchcreated: Búsqueda guardada exitosamente.
+savedsearchcreateerror: No se pudo guardar la búsqueda.
+messagedeleted: Mensaje(s) eliminado/s satisfactoriamente.
+messagemoved: Mensaje(s) movidos correctamente.
+messagemovedtotrash: Mensaje(s) movido(s) a la Papelera satisfactoriamente.
+messagecopied: Mensaje(s) copiados correctamente.
+messagemarked: Mensaje(s) marcados satisfactoriamente.
+autocompletechars: Ingresá por lo menos $min caracteres para autocompletar.
+autocompletemore: Se encontraron mas coincidencias. Por favor, escribí mas caracteres.
+namecannotbeempty: El nombre no puede estar vacio.
+nametoolong: El nombre es demasiado largo.
+namedotforbidden: El nombre de la carpeta no puede comenzar con un punto.
+folderupdated: Carpeta actualizada correctamente.
+foldercreated: Carpeta creada satisfactoriamente.
+invalidimageformat: No es un formato de imágen válido.
+mispellingsfound: Errores de ortografía encontrados en el mensaje.
+parentnotwritable: No se pudo crear/mover la carpeta dentro de la carpeta superior seleccionada. No tiene permiso para acceder a ella.
+messagetoobig: El mensaje es demasiado grande para ser procesado.
+attachmentvalidationerror: 'Este adjunto es sospechoso porque su tipo no coinciden con el tipo declarado en el mensaje. Si no confiás en el remitente no deberías abrir el mensaje en el navegador porque podría tener contenido malicioso.<br/><br/><em>Esperado: $expected; encontrado: $detected</em>'
+noscriptwarning: 'Advertencia: Este servicio de webmail requiere Javascript! Para usarlo, por favor, habilite Javascript en las preferencia de tu navegador.'
+messageissent: El mensaje se envió pero todavía no fue guardado. ¿Querés guardarlo ahora?
+errnotfound: Archivo no encontrado
+errnotfoundexplain: ¡No se encontró el recurso solicitado!
+errfailedrequest: Error en la solicitud
+errauthorizationfailed: Falló la autorización
+errunauthorizedexplain: ¡No pudimos verificar que estuvieses autorizado a acceder a este servicio!
+errrequestcheckfailed: Verificación de la solicitud fallida
+errcsrfprotectionexplain: "El acceso a este recurso está protegido contra CSRF.\nSi ves esto probablemente no cerrarste la sesión antes de salir de la aplicación web.\nSe necesita interacción humana para continuar."
+errcontactserveradmin: Por favor, contactate con el administrador del servidor.
+clicktoresumesession: Hacé clic acá para continuar la sesión previa
+errcomposesession: Error al componer la sesión
+errcomposesessionexplain: No se encontró la composición de sesión solicitada.
+clicktocompose: Hacé clic aquí para componer un nuevo mensaje
+nosupporterror: Tu navegador no tiene soporte para esta función.
+siginserted: Firma insertada satisfactoriamente.
+responseinserted: Respuesta insertada satisfactoriamente.
+noresponsesavailable: No hay respuestas disponibles
+listempty: La lista está vacía.
+listusebutton: Usá el botón Crear para agregar un nuevo registro.
+keypaircreatesuccess: Un nuevo par de claves ha sido creado satisfactoriamente para $identity.
+emptyattachment: Este archivo adjunto parece estar vacío.<br>Por favor, consulte con la persona que lo envió.
+oauthloginfailed: Falló la autenticación mediante OAuth. Por favor, intentá nuevamente.
+disclosedrecipwarning: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

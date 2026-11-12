@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for ne_NP. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+loginfailed: लागईन हुन पाएन
+cookiesdisabled: तपाईको ब्राऊसरले कुकी स्वीकार गारिरहेको छैन
+sessionerror: सत्र समाप्त वा अवैद्य
+storageerror: सर्वर संग सम्पर्क हुन पाएन
+nomessagesfound: यो मेलबक्स मा कुनै मेल छैन
+loading: लोड भईरहेको छ...
+loadingdata: डाटा लोड भईरहेको छै...
+checkingmail: नया मेलको खोजी भईरहेको छ...
+sendingmessage: मेल पठाईदै रहेको छ...
+messagesent: मेल सफल्तापूर्वक पठाईयो
+savingmessage: मेल जोगाईदै छ...
+messagesaved: मेल ड्राफ्ट फोल्डरमा जोगाईयो
+successfullysaved: सफल्तापूर्वक जोगाईयो
+addedsuccessfully: सम्पर्क पुस्तिकामा सफल्तापूर्वक सम्पर्क प्रविष्ट गारियो
+blockedimages: तपाईको प्राईवेसी को लागि तथा अन्य स्पामबाट बच्नकोलागि यो मेलमा चित्रहुरु देखाईएका छैनन्।
+encryptedmessage: माफ गर्नुहोसे, यो मेल ईन्क्रिफ्ट गरिएको रूपमा छ, त्यसैले देखाउन सकिदैन!
+nocontactsfound: कुनै सम्पर्क भेटिएन
+contactnotfound: अनुरोध गारिएको सम्पर्क भेटिएन
+sendingfailed: मेल पठाउन सकिएन
+errormoving: मेल सार्न सकिएन
+errordeleting: मेल मेटाउन सकिएन
+deletecontactconfirm: तापाईले छान्नुभएको सम्पर्कहरु, साँचै मेट्न चहानुहुन्छ?
+deletemessagesconfirm: तापाईले छान्नु भएको मेलहरु, साँचै मेट्न चहानुहुन्छ?
+deletefolderconfirm: तापाईले साँचै यो फोल्डर मेट्न चहानु हुन्छ?
+purgefolderconfirm: तापाईले साँचै यो फोल्डरमा भएका सबै मेलहरु मेट्न चहानुहुन्छ?
+formincomplete: फर्म पूर्ण रुपमा भरिएको छैन
+noemailwarning: कृपया वैद्य ई-मेल भर्नुहोस
+nonamewarning: कृपया नाम भर्नुहोस
+nopagesizewarning: कृपया पन्नाको नाप भर्नुहोस
+norecipientwarning: कृपया कम-से-कम एउटा प्रापकको विवरण भर्नुहोस
+nosubjectwarning: मेलको कुनै विषय तोकिएको छैनै। केहि तोक्न चहानुहुन्छ ?
+nobodywarning: बिना केहि लेखि पठाउने?
+nosearchname: कृपया सम्पर्कको नाम या ई-मेल भर्नुहोस
+searchsuccessful: $nr मेलहरु पाइयो
+searchnomatch: खोज असफल रहयो
+searching: खोजि भईरहेको छ...
+checking: जाँच भईरहेको छ...
+nospellerrors: कुनै गलत हिज्जे फेला परेनन्
+folderdeleted: फोल्डर सफल्तापूर्वक मेटियो
+deletedsuccessfully: सफल्तापूर्वक मेटियो
+converting: मेलबाट फोर्माटिङ हटाईदै छ...
+messageopenerror: सर्वरबाट मेल लोड हुन सकेन
+fileuploaderror: फाईल अपलोड हुन असफल
+filesizeerror: अपलोड गरिएको फाईल हद $size भन्दा ठूलो छ
+sourceisreadonly: यो ठेगाना को श्रोत पढ्नको लागि मात्र उपलब्ध छ
+errorsavingcontact: स्मपर्कको ठेगाना जोगाउन सकिएन
+errortitle: ''
+cookiesmismatch: ''
+servererror: ''
+servererrormsg: ''
+accountlocked: ''
+connerror: ''
+dberror: ''
+dbconnerror: ''
+windowopenerror: ''
+requesttimedout: ''
+errorreadonly: ''
+errornoperm: ''
+erroroverquota: ''
+erroroverquotadelete: ''
+invalidrequest: ''
+invalidhost: ''
+loggedout: ''
+mailboxempty: ''
+nomessages: ''
+refreshing: ''
+uploading: ''
+attaching: ''
+uploadingmany: ''
+savingresponse: ''
+deleteresponseconfirm: ''
+nocontactselected: ''
+contactexists: ''
+contactnameexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+externalmessagedecryption: ''
+nopubkeyfor: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+senttooquickly: ''
+errorsavingsent: ''
+errorsaving: ''
+errorcopying: ''
+errormarking: ''
+alerttitle: ''
+confirmationtitle: ''
+deletegroupconfirm: ''
+movefolderconfirm: ''
+contactdeleting: ''
+groupdeleting: ''
+folderdeleting: ''
+foldermoving: ''
+foldersubscribing: ''
+folderunsubscribing: ''
+nosenderwarning: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+restoresavedcomposedata: ''
+notuploadedwarning: ''
+contactsearchsuccessful: ''
+stillsearching: ''
+foldersubscribed: ''
+folderunsubscribed: ''
+folderpurged: ''
+folderexpunged: ''
+filelinkerror: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+copysuccess: ''
+movesuccess: ''
+copyerror: ''
+moveerror: ''
+movingmessage: ''
+copyingmessage: ''
+copyingcontact: ''
+movingcontact: ''
+deletingmessage: ''
+markingmessage: ''
+addingmember: ''
+removingmember: ''
+receiptsent: ''
+errorsendingreceipt: ''
+deleteidentityconfirm: ''
+nodeletelastidentity: ''
+forbiddencharacter: ''
+selectimportfile: ''
+addresswriterror: ''
+contactaddedtogroup: ''
+contactremovedfromgroup: ''
+nogroupassignmentschanged: ''
+importwait: ''
+importformaterror: ''
+importconfirm: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+importmessagesuccess: ''
+importmessageerror: ''
+opnotpermitted: ''
+nofromaddress: ''
+editorwarning: ''
+httpreceivedencrypterror: ''
+smtpconnerror: ''
+smtpautherror: ''
+smtpfromerror: ''
+smtptoerror: ''
+smtprecipientserror: ''
+smtputf8error: ''
+smtpsizeerror: ''
+smtperror: ''
+emailformaterror: ''
+toomanyrecipients: ''
+maxgroupmembersreached: ''
+internalerror: ''
+contactdelerror: ''
+contactdeleted: ''
+contactrestoreerror: ''
+contactrestored: ''
+groupdeleted: ''
+grouprenamed: ''
+groupcreated: ''
+savedsearchdeleted: ''
+savedsearchdeleteerror: ''
+savedsearchcreated: ''
+savedsearchcreateerror: ''
+messagedeleted: ''
+messagemoved: ''
+messagemovedtotrash: ''
+messagecopied: ''
+messagemarked: ''
+autocompletechars: ''
+autocompletemore: ''
+namecannotbeempty: ''
+nametoolong: ''
+namedotforbidden: ''
+folderupdated: ''
+foldercreated: ''
+invalidimageformat: ''
+mispellingsfound: ''
+parentnotwritable: ''
+messagetoobig: ''
+attachmentvalidationerror: ''
+noscriptwarning: ''
+messageissent: ''
+errnotfound: ''
+errnotfoundexplain: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcontactserveradmin: ''
+clicktoresumesession: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+clicktocompose: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for cy_GB. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Croeso i $product
+username: Enw defnyddiwr
+password: Cyfrinair
+server: Gweinydd
+login: Mewngofnodi
+oauthlogin: Mewngofnodi gyda $provider
+menu: Bwydlen
+logout: Allgofnodi
+mail: E-bost
+settings: Gosodiadau Personol
+addressbook: Llyfr Cyfeiriadau
+darkmode: Modd tywyll
+lightmode: Modd golau
+inbox: Mewnflwch
+drafts: Drafftiau
+sent: Danfonwyd
+trash: Sbwriel
+junk: Sothach
+show_real_foldernames: Dangos enwau go-iawn ar gyfer ffolderi arbennig
+subject: Pwnc
+from: Oddi wrth
+sender: Anfonwr
+to: Derbyniwr
+cc: Copi
+bcc: Bcc
+replyto: Ateb-I
+followupto: Followup-To
+date: Dyddiad
+size: Maint
+priority: Blaenoriaeth
+organization: Enw'r Sefydliad
+readstatus: Statws darllen
+listoptions: Dewisiadau rhestr...
+listoptionstitle: Dewisiadau rhestr
+mailboxlist: Ffolderi
+messagesfromto: Negeseuon $from i $to o $count
+threadsfromto: Edefau $from i $to o $count
+messagenrof: Neges $nr o $count
+fromtoshort: $from - $to o $count
+copy: Copio
+move: Symud
+moveto: Symud i...
+copyto: Copio i...
+download: Lawrlwytho
+open: Agor
+showattachment: Dangos
+showanyway: Dangos beth bynnag
+filename: Enw ffeil
+filesize: Maint ffeil
+addtoaddressbook: Ychwanegu i'r llyfr cyfeiriadau
+sun: Sul
+mon: Llun
+tue: Maw
+wed: Mer
+thu: Iau
+fri: Gwe
+sat: Sad
+sunday: Dydd Sul
+monday: Dydd Llun
+tuesday: Dydd Mawrth
+wednesday: Dydd Mercher
+thursday: Dydd Iau
+friday: Dydd Gwener
+saturday: Dydd Sadwrn
+jan: Ion
+feb: Chwe
+mar: Maw
+apr: Ebr
+may: Mai
+jun: Meh
+jul: Gor
+aug: Aws
+sep: Med
+oct: Hyd
+nov: Tach
+dec: Rhag
+longjan: Ionawr
+longfeb: Chwefror
+longmar: Mawrth
+longapr: Ebrill
+longmay: Mai
+longjun: Mehefin
+longjul: Gorffennaf
+longaug: Awst
+longsep: Medi
+longoct: Hydref
+longnov: Tachwedd
+longdec: Rhagfyr
+today: Heddiw
+refresh: Ail-ofyn
+checkmail: Edrych am negeseuon newydd
+compose: Ysgrifennu neges
+writenewmessage: Creu neges newydd
+reply: Ymateb
+replytomessage: Ymateb i'r anfonwr
+replytoallmessage: Ymateb i'r anfonwr a phob derbyniwr
+replyall: Ymateb i bawb
+replylist: Ymateb i'r rhestr
+forward: Anfon ymlaen
+forwardinline: Anfon ymlaen o fewn y neges
+forwardattachment: Anfon ymlaen fel atodiad
+forwardmessage: Danfon y neges ymlaen
+bouncemsg: Ail-anfon (bowns)
+bounce: Ail-anfon
+deletemessage: Dileu'r neges
+undeletemessage: Dad-ddileu neges
+movemessagetotrash: Symud y neges i'r sbwriel
+printmessage: Argraffu'r neges
+previousmessage: Dangos y neges flaenorol
+firstmessage: Dangos y neges gyntaf
+nextmessage: Dangos y neges nesaf
+lastmessage: Dangos y neges olaf
+backtolist: Nôl i'r rhestr o negeseuon
+viewsource: Edrych ar y ffynhonnell
+mark: Nodi
+markmessages: Nodi'r negeseuon
+markread: Wedi eu darllen
+markunread: Heb eu darllen
+markflagged: Wedi eu fflagio
+markunflagged: Heb eu fflagio
+markundeleted: Fel heb ei ddileu
+markasread: Nodi fel darllenwyd
+markasunread: Nodi fel heb ei ddarllen
+markasflagged: Nodi fel fflagio
+markasunflagged: Nodi fel heb ei fflagio
+moreactions: Mwy o weithredoedd...
+markallread: Nodi pob un wedi ei ddarllen
+folders-cur: Ffolder dewiswyd yn unig
+folders-sub: Ffolder dewiswyd a'i isffolderi
+folders-all: Pob ffolder
+more: Mwy
+back: Yn ôl
+options: Dewisiadau
+composeoptions: Dewisiadau ysgrifennu
+optionsandattachments: Dewisiadau ac atodiadau
+actions: Gweithredoedd
+first: Cyntaf
+last: Olaf
+previous: Blaenorol
+next: Nesaf
+select: Dewis
+selection: Dewis
+all: Popeth
+none: Dim
+currpage: Tudalen gyfredol
+isread: Darllenwyd
+unread: Heb eu darllen
+flagged: Nodwyd
+unflagged: Heb eu Fflagio
+unanswered: Heb ei ateb
+withattachment: Gyda atodiad
+deleted: Dilewyd
+undeleted: Heb ei ddileu
+replied: Ymatebwyd
+forwarded: Anfonwyd ymlaen
+invert: Gwrth-droi
+filter: Hidlo
+list: Rhestr
+threads: Edafedd
+expand-all: Ehangu Popeth
+expand-unread: Ehangu Negeseuon Heb eu darllen
+collapse-all: Crebachu Popeth
+threaded: Edafedd
+showunread: Dangos negeseuon heb eu darllen
+autoexpand_threads: Ehangu edefau neges
+do_expand: pob edefyn
+expand_only_unread: dim ond gyda negeseuon heb eu darllen
+fromto: Danfonwr/Derbynnydd
+flag: Fflag
+attachment: Atodiad
+nonesort: Dim
+sentdate: Dyddiad danfon
+arrival: Dyddiad derbyn
+asc: esgynnol
+desc: disgynnol
+listcolumns: Rhestr colofnau
+listsorting: Colofn trefnu
+listorder: Trefn didoli
+listmode: Golwg rhestr
+lmode: Golwg rhestr
+layout: Cynllun
+layoutwidescreen: Sgrîn lydan
+layoutdesktop: Pen bwrdd
+layoutlist: Rhestr
+layoutwidescreendesc: Sgrîn lydan (golwg 3 colofn)
+layoutdesktopdesc: Pen-bwrdd (rhestr lydan a rhagolwg isod)
+layoutlistdesc: Rhestr (dim rhagolwg)
+folderactions: Gweithredoedd ffolder...
+compact: Crynhoi
+empty: Gwagio
+importmessages: Mewnforio negeseuon
+mailimportdesc: Fe allwch chi lwytho fyny ffeiliau ebost mewn fformat <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> neu <a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a>
+mailimportzip: Gellir cywasgu nifer o ffeiliau mewn i archif zip.
+quota: Defnydd
+unknown: anhysbys
+unlimited: diderfyn
+quotatype: Math Cwota
+quotatotal: Cyfyngiad
+quotaused: Defnyddiwyd
+quotastorage: Gofod disg
+quotamessage: Nifer negeseuon
+shortheaderdate: Ar $date
+shortheaderto: I $to ar $date
+shortheaderfrom: O $from i $date
+quicksearch: Chwiliad cyflym
+searchplaceholder: Chwilio...
+resetsearch: Ail-osod chwiliad
+searchmod: Addasyddion chwilio
+msgtext: Y neges yn llawn
+body: Corff
+type: Math
+namex: Enw
+searchscope: Amrediad
+currentfolder: Ffolder cyfredol
+subfolders: Hwn a is-ffolderi
+allfolders: Pob ffolder
+searchinterval-1W: hynach na wythnos
+searchinterval-1M: hynach na mis
+searchinterval-1Y: hynach na blwyddyn
+searchinterval1W: ifancach na wythnos
+searchinterval1M: ifancach na mis
+searchinterval1Y: ifancach na blwyddyn
+infolder: 'Ffolder: $folder'
+currentaddressbook: Llyfr cyfeiriadau cyfredol
+alladdressbooks: Pob llyfr cyfeiriadau
+openinextwin: Agor mewn ffenest newydd
+emlsave: Lawrlwytho (.eml)
+changeformattext: Dangos mewn fformat testun plaen
+changeformathtml: Dangos mewn fformat HTML
+editasnew: Golygu fel neges newydd
+send: Anfon
+sendmessage: Anfon nawr
+savemessage: Cadw'r drafft hwn
+addattachment: Atodi ffeil
+charset: Set nodiau
+editortype: Math golygydd
+returnreceipt: Cadarnhau derbyn
+dsn: Hysbysiad statws danfon
+keepformatting: Cadw'r fformatio
+mailreplyintro: 'Ar $date, ysgrifennodd $sender:'
+originalmessage: Neges Wreiddiol
+selectimage: Dewiswch lun
+addimage: Ychwanegwch lun
+selectmedia: Dewiswch fideo
+addmedia: Ychwanegwch fideo
+encrypt: Amgryptio
+encryptmessage: Amgryptio neges
+encryptmessagemailvelope: Amgryption neges gyda Mailvelope
+importpubkeys: Mewnforio allweddi cyhoeddus
+encryptedsendialog: Anfon neges wedi amgryptio
+encryptandsign: Amgodi ac arwyddo
+keyid: ID Allwedd
+keylength: Didiau
+keyexpired: Wedi darfod
+keyrevoked: Wedi dirymu
+bccinstead: Defnyddio Bcc
+addheader: Ychwanegu maes (Cc, Bcc, ...)
+insert: Mewnosod
+insertcontact: Mewnosod cyswllt/cysylltiadau
+recipient: Derbynnwr
+recipientedit: Golygu derbynnydd
+editidents: Golygu personoliaethau
+spellcheck: Sillafu
+checkspelling: Gwirio sillafu
+resumeediting: Ail-ddechrau golygu
+revertto: Dychwelyd i
+restore: Adfer
+restoremessage: Adfer neges?
+ignore: Anwybyddu
+responses: Ymatebion
+insertresponse: Mewnosod ymateb
+manageresponses: Rheoli ymatebion
+newresponse: Cadw ymateb newydd
+addresponse: Ychwanegu ymateb
+editresponse: Golygu ymateb
+editresponses: Golygu ymatebion
+responsename: Enw
+responsetext: Testun Ymateb
+attach: Atodi
+attachments: Atodiadau
+upload: Lanlwytho
+uploadprogress: $percent ($current o $total)
+close: Cau
+messageoptions: Dewisiadau neges...
+togglecomposeoptions: Newid dewisiadau ysgrifennu
+attachmentrename: Ailenwi atodiad
+low: Isel
+lowest: Isaf
+normal: Cyffredin
+high: Uchel
+highest: Uchaf
+nosubject: (dim pwnc)
+showimages: Dangos lluniau
+allow: Caniatau
+alwaysshow: Dangos lluniau bob amser o $sender
+alwaysallow: Caniatau bob amser o $sender
+isdraft: Mae hwn yn neges ddrafft
+andnmore: $nr mwy...
+details: Manylion
+summary: Crynodeb
+headers: Penawdau
+allheaders: Pob pennawd...
+togglemoreheaders: Dangos fwy o benynnau'r neges
+togglefullheaders: Toglo penawdau llawn y neges
+htmltoggle: HTML
+plaintoggle: Testun plaen
+savesentmessagein: Cadw negeseuon a ddanfonir yn
+dontsave: peidio cadw
+maxuploadsize: Y maint ffeil uchaf a ganiateir yw $size
+addcc: Ychwanegu Cc
+addbcc: Ychwanegu Bcc
+addreplyto: Ychwanegu Ateb-I
+addfollowupto: Ychwanegu Followup-To
+sendreceipt: Danfon hysbysiad derbyn?
+mdnrequest: Mae anfonwr y neges hwn wedi gofyn am hysbysiad eich bod wedi darllen y neges. Hoffech chi hysbysu'r anfonwr?
+receiptread: Cadarnhad Derbyn (darllenwyd)
+yourmessage: Mae hwn yn gadarnhad o dderbyn eich neges
+receiptnote: "Nodyn: Mae'r cadarnhad hwn yn cydnabod fod y neges wedi ei ddangos ar gyfrifiadur y derbynnydd. 'Does dim sicrwydd fod y derbynydd wedi darllen neu ddeall cynnwys y neges."
+sendalwaysto: Danfon bob amser i $email
+zoomin: Chwyddo Mewn
+zoomout: Chwyddo Allan
+rotate: Cylchdroi
+increaseimage: Cynyddu maint delwedd
+decreaseimage: Lleihau maint delwedd
+rotateimage: Cylchdroi delwedd
+showtools: Dangos teclynnau delwedd
+hidetools: Cuddio teclynnau delwedd
+name: Enw ddangosir
+firstname: Enw cyntaf
+surname: Enw olaf
+middlename: Enw Canol
+nameprefix: Rhagddodiad
+namesuffix: Olddodiad
+nickname: Llysenw
+jobtitle: Teitl Swydd
+department: Adran
+gender: Rhyw
+maidenname: Enw cyn priodi
+email: E-bost
+phone: Ffôn
+address: Cyfeiriad
+street: Stryd
+locality: Tref/Dinas
+zipcode: Côd Post/ZIP
+region: Sîr/Talaith
+country: Gwlad
+birthday: Penblwydd
+anniversary: Cylchwyl
+website: Gwefan
+instantmessenger: IM
+notes: Nodiadau
+male: gwryw
+female: benyw
+nonbinary: anneuol
+othergender: arall
+manager: Rheolwr
+assistant: Cynorthwyydd
+spouse: Cymar
+allfields: Pob maes
+search: Chwilio
+searchresult: Canlyniadau chwilio
+advsearch: Chwilio Uwch
+advanced: Uwch
+other: Arall
+printcontact: Cyswllt argraffu
+qrcode: Cod QR
+typehome: Cartref
+typework: Gwaith
+typeother: Arall
+typemobile: Symudol
+typemain: Prif
+typehomefax: Ffacs Adref
+typeworkfax: Ffacs Gwaith
+typecar: Car
+typepager: Peiriant Galw
+typevideo: Fideo
+typeassistant: Cynorthwyydd
+typehomepage: Gwefan
+typeblog: Blog
+typeprofile: Proffil
+addfield: Ychwanegu maes...
+addcontact: Ychwanegu cyswllt
+editcontact: Golygu cyswllt
+contacts: Cysylltiadau
+contactproperties: Nodweddion cyswllt
+contactnameandorg: Enw a Corff
+personalinfo: Gwybodaeth bersonol
+personal: Persono
+contactphoto: Llun cyswllt
+edit: Golygu
+cancel: Canslo
+save: Cadw
+delete: Dileu
+discard: Gwaredu
+continue: Parhau
+ok: Iawn
+rename: Ail-enwi
+addphoto: Ychwanegu
+replacephoto: Amnewid
+uploadphoto: Lanlwytho llun
+choosefile: Dewis ffeil...
+choosefiles: Dewis ffeiliau...
+browse: Pori
+newcontact: Creu cyswllt newydd
+deletecontact: Dileu y cysylltiadau a ddewiswyd
+composeto: Ysgrifennu neges at
+contactsfromto: Cysylltiadau $from i $to o $count
+print: Argraffu
+export: Allforio
+exportall: Allforio popeth
+exportsel: Allforio dewiswyd
+exportvcards: Allforio cysylltiadau mewn fformat vCard
+newgroup: Creu grŵp newydd
+addgroup: Ychwanegu grŵp
+grouprename: Ail-enwi grŵp
+groupdelete: Dileu grŵp
+groupassign: Ychwanegu i'r grŵp...
+groupremove: Tynnu o'r grŵp
+groupremoveselected: Dileu y cysylltiadau dewiswyd o'r grŵp
+uponelevel: Fyny un lefel
+previouspage: Dangos y set flaenorol
+firstpage: Dangos y set gyntaf
+nextpage: Dangos y set nesaf
+lastpage: Dangos y set olaf
+group: Grŵp
+groups: Grwpiau
+listgroup: Rhestru aelodau'r grŵp
+personaladrbook: Cyfeiriadau Personol
+searchsave: Cadw chwiliad
+searchdelete: Dileu chwiliad
+import: Mewnforio
+importcontacts: Mewnforio cysylltiadau
+importfromfile: Mewnforio o ffeil
+importtarget: Ychwanegu cysylltiadau i
+importreplace: Dileu y llyfr cyfeiriadau cyfan wrth lwytho
+importgroups: Mewnforio penodiadau grŵp
+importgroupsall: Holl (creu grwpiau os oes angen)
+importgroupsexisting: Dim ond ar gyfer grwpiau sy'n bodoli
+importdesc: Gallwch lwytho fyny cysylltiadau o lyfr cyfeiriadau blaenorol. <br/>Ar hyn o bryd rydym yn cefnogi mewnforio cyfeiriadau o'r fformatau data <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> neu CSV (comma-separated)
+importmapdesc: Cadarnhewch fod y wybodaeth mapio meysydd isod yn gywir cyn parhau gyda mewnforio data CSV.
+fieldnotmapped: Ni fapiwyd y maes (peidio mewnforio)
+skipheader: Peidio mewnforio'r llinell gyntaf (pennawdau)
+done: Wedi gorffen
+birth_day: Dydd Geni
+birth_month: Mis Geni
+birth_year: Blwyddyn Geni
+settingsfor: Gosodiadau ar gyfer
+about: Amdan
+preferences: Dewisiadau
+userpreferences: Dewisiadau'r defnyddiwr
+editpreferences: Golygu dewisiadau'r defnyddiwr
+identities: Personoliaethau
+manageidentities: Rheoli personoliaethau
+newidentity: Creu personoliaeth newydd
+addidentity: Ychwanegu personoliaeth
+editidentity: Golygu personoliaeth
+identityencryption: Amgryptiad
+preferhtml: Dangos HTML
+defaultcharset: Set Nodau Diofyn
+htmlmessage: Neges HTML
+messagepart: Rhan
+digitalsig: Llofnod Digidol
+dateformat: Fformat dyddiad
+timeformat: Fformat amser
+prettydate: Dyddiadau pert
+setdefault: Rhagosod
+autodetect: Awto
+language: Iaith
+timezone: Parth amser
+pagesize: Rhesi ar bob tudalen
+signature: Llofnod
+dstactive: Amser arbed golau ddydd
+showinextwin: Agor neges mewn ffenest newydd
+composeextwin: Ysgrifennu mewn ffenest newydd
+htmleditor: Ysgrifennu negeseuon HTML
+htmlonreply: wrth ateb i neges HTML yn unig
+htmlonreplyandforward: wrth ddanfon ymlaen neu ymateb i neges HTML
+htmlsignature: Llofnod HTML
+showemail: Dangos cyfeiriad ebost gyda'r enw gweledig
+previewpane: Dangos ffenest rhagolwg
+skin: Croen rhyngwyneb
+logoutclear: Clirio'r Sbwriel wrth allgofnodi
+logoutcompact: Crynhoi'r Mewnflwch wrth allgofnodi
+uisettings: Rhyngwyneb Defnyddiwr
+serversettings: Gosodiadau Gweinydd
+mailboxview: Ymddangosiad y Blychau
+mdnrequests: Hysbysiadau anfonwr
+askuser: gofyn i'r defnyddiwr
+autosend: anfon yn awtomatig
+autosendknown: anfon derbynneb i fy nghysylltiadau, gofyn i mi fel arall
+autosendknownignore: anfon derbynneb i fy nghysylltiadau, anwybyddu fel arall
+autosendtrusted: danfon hysbysiad derbyn i bob danfonwr ymddiriedig, fel arall gofyn
+autosendtrustedignore: danfon hysbysiad derbyn i bob danfonwr ymddiriedig, fel arall anwybyddu
+ignorerequest: anwybyddu'r cais
+readwhendeleted: Nodi'r neges fel darllenwyd wrth ddileu
+flagfordeletion: Fflagio'r neges i'w ddileu yn hytrach na dileu yn syth
+skipdeleted: Peidio dangos negesuon wedi ei dileu
+deletealways: Pan fod symud negeseuon i'r Sbwriel yn methu, dileu nhw
+deletejunk: Dileu negeseuon yn uniongyrchol yn Sbwriel
+showremoteimages: Dangos lluniau o wefannau allanol
+allowremoteresources: Caniatau adnoddau pell (delweddau, arddulliau)
+fromknownsenders: o anfonwyr hysbys
+fromtrustedsenders: o ddanfonwyr ymddiriedig
+frommycontacts: o fy nghysylltiadau
+always: bob amser
+alwaysbutplain: bob amser, heblaw pan yn ymateb i destun plaen
+showinlineimages: Dangos lluniau atodol islaw'r neges
+autosavedraft: Cadw drafft yn awtomatig
+everynminutes: bob $n munud
+refreshinterval: Ail-lwytho (edrych am negeseuon newydd ayyb)
+never: byth
+immediately: ar unwaith
+messagesdisplaying: Dangos Negeseuon
+messagescomposition: Ysgrifennu Negeseuon
+mimeparamfolding: Enw atodiadau
+2231folding: RFC 2231 llawn (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: RFC 2047 llawn (arall)
+force7bit: Defnyddio amgodi MIME ar gyfer llythrennau 8-did
+savelocalstorage: Cadw yn storfa leol y porwr (dros dro)
+advancedoptions: Dewisiadau uwch
+toggleadvancedoptions: Newid dewisiadau uwch
+focusonnewmessage: Ffocysu'r porwr ar y neges newydd
+checkallfolders: Chwilio pob ffolder am negeseuon newydd
+displaynext: Dangos cofnod rhestr nesaf ar ôl dileu/symud
+defaultfont: Ffont arferol ar gyfer negeseuon HTML
+mainoptions: Prif Ddewisiadau
+browseroptions: Dewisiadau Porwr
+section: Adran
+maintenance: Gwaith cynnal a chadw
+newmessage: Neges Newydd
+signatureoptions: Dewisiadau Llofnod
+whenreplying: Wrth ateb
+replyempty: peidio dyfynnu'r neges wreiddiol
+replytopposting: dechrau'r neges newydd uwchben y neges wreiddiol
+replytoppostingnoindent: dechrau neges newydd uwchben y dyfyniad (dim cilosodiad)
+replybottomposting: dechrau'r neges newydd o dan y neges wreiddiol
+replyremovesignature: Wrth ateb, dileu'r llofnod gwreiddiol o'r neges
+autoaddsignature: Ychwanegu llofnod yn awtomatig
+newmessageonly: negeseuon newydd yn unig
+replyandforwardonly: atebion a danfon ymlaen yn unig
+insertsignature: Mewnosod llofnod
+sigbelow: Rhowch y llofnod o dan y neges wedi wreiddiol
+sigseparator: Gorfodi gwahanwr safonol yn y llofnodion
+automarkread: Nodi'r negeseuon fel darllenwyd
+afternseconds: ar ôl $n eiliad
+reqmdn: Bob amser gofyn am dderbynneb danfon
+reqdsn: Gofyn am hysbysiad statws danfon bob amser
+alwayskeepformatting: Cadw fformat y testun gwreiddiol, bob amser
+replysamefolder: Rhoi atebion yn yr un ffolder i'r neges sy'n cael ei ateb
+defaultabook: Llyfr cyfeiriadau diofyn
+autocompletesingle: Hepgor cyfeiriadau ebost amgen wrth awto-gwblhau
+listnamedisplay: Rhestru cysylltiadau fel
+contactformmode: Modd ffurflen gyswllt
+privatemode: Preifat (Gartref)
+businessmode: Busnes (Gwaith)
+collectedaddresses: Cyfeiriadau a gasglwyd
+collectedrecipients: Derbynwyr a gasglwyd
+collectedrecipientsopt: Storio derbynwyr ebost allanol yn
+collectedsendersopt: Storio anfonwyr ymddiriedig yn
+trustedsenders: Anfonwyr Ymddiredig
+spellcheckbeforesend: Gwirio sillafu cyn anfon neges
+spellcheckoptions: Dewisiadau gwirio sillafu
+spellcheckignoresyms: Anwybyddu geiriau gyda symbolau
+spellcheckignorenums: Anwybyddu geiriau gyda rhifau
+spellcheckignorecaps: Anwybyddu geiriau sy'n briflythrennau yn gyfangwbl
+addtodict: Ychwanegu i'r geiriadur
+editoroptions: Dewisiadau Golygydd
+enableautolink: Trosi URLs dilys i ddolenni yn awtomatig
+mailtoprotohandler: 'Cofrestru trafodwr protocol ar gyfer dolenni mailto:'
+standardwindows: Trin ffenestri naid fel ffenestri arferol
+forwardmode: Danfon neges ymlaen
+inline: mewnlin
+asattachment: fel atodiad
+replyallmode: Gweithred diofyn botwm [Ymateb i bawb]
+replyalldefault: ymateb i bawb
+replyalllist: ymateb i'r rhestr trafod yn unig (os canfuwyd)
+allmessages: pob neges
+olderxdays: hynach na $x diwrnod
+folder: Ffolder
+folders: Ffolderi
+foldername: Enw ffolder
+subscribed: Tanysgrifwyd
+messagecount: Negeseuon
+create: Creu
+createfolder: Creu ffolder newydd
+managefolders: Rheoli ffolderi
+specialfolders: Ffolderi arbennig
+properties: Nodweddion
+folderproperties: Ffolder nodweddion
+parentfolder: Ffolder uwchben
+location: Lleoliad
+info: Gwybodaeth
+getfoldersize: Cliciwch i gael maint ffolder
+changesubscription: Cliciwch i newid y tanysgrifiad
+foldertype: Math Ffolder
+personalfolder: Ffolder Preifat
+otherfolder: Ffolder Defnyddiwr Arall
+sharedfolder: Ffolder Cyhoeddus
+findfolders: Canfod ffolderi
+findcontacts: Canfod cysylltiadau
+findmail: Canfod negeseuon ebost
+namespace.personal: Persono
+namespace.other: Defnyddwyr arall
+namespace.shared: Rhannwyd
+dualuselabel: Gall gynnwys yn unig
+dualusemail: negeseuon
+dualusefolder: ffolder
+generate: Cynhyrchu
+encryptioncreatekey: Creu pâr allweddi newydd
+openmailvelopesettings: Agor Gosodiadau Mailvelope
+encryptionprivkeysinmailvelope: 'Mae gennych $nr allwedd preifat cyfatebol wedi eu storio yn eich cylch allwedd Mailvelope:'
+encryptionnoprivkeysinmailvelope: Nid oes gan y anfonwr hwn allwedd preifat PGP wedi ei storio yn eich estyniad Mailvelope. Hoffech chi greu un er mwyn ei ddefnyddio i anfon negeseuon wedi eu amgryptio?
+encryption: Amgryptiad
+mailvelopeoptions: Dewisiadau Mailvelope
+mailvelopemainkeyring: Defnyddio prif gylch allweddi Mailvelope
+mailvelopenotfound: Nid yw'r estyniad Mailvelope ar gael/wedi ei osod yn eich porwr
+mailvelopeenable: Galluogi
+sortby: Trefnu yn ôl
+sortasc: Trefn esgynnol
+sortdesc: Trefn ddisgynnol
+undo: Dad-wneud
+installedplugins: Ategynnau wedi eu gosod
+plugin: Ategyn
+version: Fersiwn
+source: Ffynhonnell
+destination: Cyrchfan
+license: Trwydded
+skinauthor: gan $author
+support: Gofyn am gymorth
+savedsearches: Chwiliadau wedi cadw
+dateformatY: BBBB
+dateformaty: BB
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unicode
+english: Saesneg
+westerneuropean: Gorllewin Ewropeaidd
+easterneuropean: Dwyrain Ewropeaidd
+southeasterneuropean: De-Ddwyrain Ewropeaidd
+baltic: Baltig
+cyrillic: Cyrilig
+arabic: Arabeg
+greek: Groegaidd
+hebrew: Hebraeg
+turkish: Twrceg
+nordic: Nordeg
+thai: Thai
+celtic: Celtaidd
+vietnamese: Fietnamaidd
+japanese: Japaneaidd
+korean: Corëeg
+chinese: Tsieineaidd
+arialabeltopnav: Rheolaeth ffenest
+arialabeltasknav: Tasgiau rhaglen
+arialabeltoolbar: Bar offer y rhaglen
+arialabellistnav: Llywio rhestr
+arialabelactivetask: Tasg gweithredol
+arialabelmessagessearchfilter: Hidlydd rhestr ebost
+arialabelmailsearchform: Ffurflen chwilio neges ebost
+arialabelcontactsearchform: Ffurflen chwilio cysylltiadau
+arialabelmailquicksearchbox: Mewnbwn chwilio ebost
+arialabelquicksearchbox: Mewnbwn chwilio
+arialabelfoldersearchfilter: Hidlydd rhestr ffolderi
+arialabelfoldersearchform: Ffurflen chwilio ffolderi
+arialabelfolderlist: Dewis ffolderi ebost
+arialabelmessagelist: Rhestr Negeseuon Ebost
+arialabelmailpreviewframe: Rhagolwg neges
+arialabelmailboxmenu: Bwydlen gweithrediadau ffolder
+arialabellistselectmenu: Bwydlen dewis rhestr
+arialabelthreadselectmenu: Bwydlen rhestr edefynnau
+arialabelmessagelistoptions: Dewisiadau dangos a trefnu rhestr negeseuon
+arialabelmailimportdialog: Deialog mewnforio negeseuon
+arialabelmessagenav: Llywio neges
+arialabelmessagebody: Corff Neges
+arialabelmessageactions: Gweithrediadau neges
+arialabelcontactquicksearch: Ffurflen chwilio cysylltiadau
+arialabelcontactsearchbox: Mewnbwn chwilio cyswllt
+arialabelmessageheaders: Pennynau neges
+arialabelforwardingoptions: Dewisiadau anfon ymlaen
+arialabelreplyalloptions: Dewisiadau ymateb i bawb
+arialabelmoremessageactions: Mwy o weithrediadau neges
+arialabelmorecontactactions: Mwy o weithreoedd cyswllt
+arialabelmarkmessagesas: Nodi y negeseuon dewiswyd fel...
+arialabelcomposeoptions: Dewisiadau ysgrifennu
+arialabelresponsesmenu: Bwydlen ymatebion parod
+arialabelattachmentuploadform: Ffurflen lanlwytho atodiad
+arialabelattachmentmenu: Dewisiadau atodiad
+arialabelmailtomenu: Dewisiadau cyfeiriad ebost
+arialabelattachmentpreview: Rhagolwg atodiad
+ariasummarycomposecontacts: Rhestr o gysylltiadau a grwpiau i ddewis fel derbynwyr
+arialabelcontactexportoptions: Dewisiadau allforio cysylltiadau
+arialabelabookgroupoptions: Dewisiadau grŵp/llyfr cyfeiriadau
+arialabelpreferencesform: Ffurflen dewisiadau
+arialabelidentityeditfrom: Ffurflen golygu personoliaeth
+arialabelresponseeditfrom: Ffurflen golygu ymateb
+arialabelsearchterms: Chwilio termau
+arialabeldropactionmenu: Bwydlen Llusgo-a-Gollwng
+arialabelheadersmenu: Bwydlen ychwanegu derbynnydd (pennawd)
+arialabelimagetools: Teclynnau delwedd
+helplistnavigation: Rhestru llywio bysellfwrdd
+helplistkeyboardnavigation: "Saeth fyny/lawr: Symud dewis/ffocws dan sylw.\nBwlch: Dewis rhes dan sylw.\nShift + fyny/lawr; Dewis rhes ychwanegol uwchben/islaw.\nCtrl + Bwlch: Ychwanegu rhes dan sylw i'r dewis/dileu o'r dewis."
+helplistkeyboardnavmessages: "Saeth dde/chwith: ehangu/crebachu edefyn neges (yn modd edefynnau yn unig).\nEnter: Agor y neges dewiswyd/dan sylw.\nDelete: Symud y negeseuon dewiswyd i'r Sbwriel."
+helplistkeyboardnavcontacts: 'Enter: Agor y cyswllt dewiswyd/dan sylw.'
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

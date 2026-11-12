@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for fa_AF. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: خطا رخ داد
+loginfailed: ورود با شکست همراه بود
+cookiesdisabled: جستجوگر شما  cookies را قبول نميکند
+sessionerror: جلسه شما وجود ندارد و يا هم از زمان معين آن گذشته است
+storageerror: وصل شدن به آیمیپ سرور موفق نشد
+servererror: خطای سرور!
+servererrormsg: 'خطای سرور: $msg'
+dberror: خطای پایگاه داده
+windowopenerror: پنجره‌ی پاپ‌آپ مسدود شد!
+requesttimedout: عدم پاسخگویی در زمان مقرر
+errorreadonly: ناتوان از انجام عملیات. پوشه فقط خواندنی ست.
+errornoperm: ناتوان از انجام عملیات. مجوز رد شد.
+erroroverquota: ناتوان از انجام عملیات. فضای خالی دیسک کافی نیست.
+erroroverquotadelete: فضای خالی دیسک کافی نیست. برای پاک کردن پیام‌ها از SHIFT+DEL استفاده کنید.
+invalidrequest: درخواست نامعتبر. هیچ داده‌ای ذخیره نشد.
+invalidhost: نام سرور نامعتبر است
+nomessagesfound: هيچ پيغامی در اين صندوق پستي دريافت نه شد
+mailboxempty: میل باکس خالی است
+nomessages: پیامی وجود ندارد
+refreshing: دوباره سازی....
+loading: در حال بارگزاری...
+uploading: در حال بارگزاری فایل...
+attaching: ضمیمه کردن پرونده ...
+uploadingmany: در حال بارگزاری فایل ها...
+loadingdata: در حال بارگزاری داده
+checkingmail: پيغام های جديد را بررسي ميکند
+sendingmessage: پيغام ها را ارسال ميکند
+messagesent: پیام موفقانه ارسال گردید
+savingmessage: در حال ذخیره کردن پیام
+messagesaved: پيغام را به پیش نويس حفظ کرد
+successfullysaved: حفظ پیام موفقانه صورت گرفت
+savingresponse: ذخیره کردن متن پاسخ ...
+deleteresponseconfirm: آیا واقعاً می‌خواهید این متن پاسخ را حذف کنید؟
+addedsuccessfully: آدرس بصورت مکمل در کتاب ادرس علاوه شد
+contactnameexists: یک محتوا با نام مشابه وجود دارد.
+blockedimages: برای حفظ استقلال پيغام شما، تصاویر اجنبی این پیام بلاک شده اند
+encryptedmessage: اين يک پيغام مخفي است و اشکار شده نميتواند   معذرت ميخواهيم
+externalmessagedecryption: این یک پیام رمزگذاری شده است و می‌توانید با استفاده از افزونه مرورگر خود آن را رمزگشائی کنید.
+nopubkeyfor: کلید عمومی معتبری برای $email پیدا نشد.
+nocontactsfound: هيچ آدرسی دريافت نه شد
+contactnotfound: آدرس خواسته شده دريافت نه شد
+sendingfailed: فرستادن پيغام موفق نه شد
+senttooquickly: ثانیه منتظر باشید$secلطفا مدت  قبل از ارسال این پیام
+errormoving: پيغام نقل مکان شده نتوانست
+errorcopying: امکان کپی پیام (ها) وجود ندارد
+errordeleting: پيغام حذف شده نتوانست
+errormarking: امکان انتخاب پیام (ها) وجود ندارد
+deletecontactconfirm: آيا واقعاً شما ميخواهيد که آدرس های انتخاب شده را حذف کنيد؟
+deletegroupconfirm: آیا واقعاً می‌خواهید گروه انتخاب شده حذف شود؟
+deletemessagesconfirm: آيا واقعاً شما ميخواهيد که پيغام هاي انتخاب شده را حذف کنيد؟
+deletefolderconfirm: آيا واقعاً شما ميخواهيد که اين پوشه را حذف کنيد؟
+purgefolderconfirm: آيا واقعاً شما ميخواهيد  تمام پيغام های که  در اين پوشه وجود دارد حذف کنيد؟
+contactdeleting: در حال حذف کانتکت(ها)...
+groupdeleting: در حال حذف گروه...
+folderdeleting: در حال حذف پوشه
+foldermoving: در حال انتقال پوشه
+foldersubscribing: در حال عضویت در فولدر...
+folderunsubscribing: لغو اشتراک پوشه ...
+formincomplete: فورمه بصورت مکمل خانه پري نه شده است
+noemailwarning: لطفاً يک ايميل ادرس موجود را داخل کنيد
+nonamewarning: لطفاً يک نام وارد کنيد
+nopagesizewarning: لطفاً اندازه يک صفحه را داخل کنيد
+norecipientwarning: لطفاً کم از کم يک آدرس گيرينده را نوشته / داخل کنيد
+nosubjectwarning: بخش مضمون خالي است  آیا میخواهید که حالا یکی آنها را درج نمایید؟.
+nobodywarning: اين پيغام را بدون متن بفرستیم؟
+nosearchname: لطفاً يک نام تماس و يا هم يک ايميل ادرس را داخل کنيد
+searchsuccessful: $nr پیام یافت شد
+contactsearchsuccessful: $nr حساب کاربری یافت شد
+searchnomatch: جستجو گر موفق به دریافت هیچ گونه اثری نشد
+searching: در حال جستجو..
+checking: در حال بررسی
+stillsearching: در حال جستجو...
+nospellerrors: هيچ اشتباه املايي را دريافت نه کرد
+folderdeleted: پوشه موفقانه از بين رفت/ حذف گرديد
+foldersubscribed: پوشه با موفقیت مشترک شد.
+folderunsubscribed: پوشه با موفقیت لغو اشتراک شد.
+deletedsuccessfully: با موفقیت حذف شد
+converting: در حال پاک کردن ساختار
+messageopenerror: پيغام از سرور جريان کرده نتوانست
+filelinkerror: ضمیمه کردن پرونده شکست خورد.
+fileuploaderror: بارگزاری فايل با خطا مواجه شد.
+filesizeerror: تثبیت شده میباشد$size حجم فایل آپلود شده بیشتر از حجم کلی
+copysuccess: محتوای $nr با موفقیت کپی شد.
+sourceisreadonly: اجازه نمامه کود / منبع این آدرس قفط خواندنی است
+errorsavingcontact: ادرس این پیام را حفظکرده نتوانست
+movingmessage: ذر حال انتقال پیام...
+markingmessage: در حال نشانه گذاری پیغام(ها)...
+receiptsent: یک رسید برای ارسال کننده این پیام فرستاده شد.
+errorsendingreceipt: رسيد ارسال شده نتوانست
+nodeletelastidentity: شما این شناخت نامه را حذف کرده نمیتوانید. این آخرین شناخت نامه شما است.
+forbiddencharacter: نام پوشه دارای یک کرکتر ممنوعه است.
+selectimportfile: لطفاً یک فایل را برای آپلود کردن انتخاب نمایید.
+addresswriterror: کتابچه آدرس انتخاب شده دارای اجازه نامه نوشتاری نیست.
+importwait: در حال وارد کردن لطفا صبر کنید.
+importconfirm: <b>Successfully imported $inserted contacts, $skipped existing entries skipped</b>:<p><em>$names</em></p>
+opnotpermitted: اجازه این عملکرد را ندارید
+smtperror: 'خطای SMTP: $msg'
+contactrestored: دفتر نشانی(ها) با موفقیت بازیابی شد.
+groupdeleted: گروه با موفقیت حذف شد.
+grouprenamed: تغییر نام گروه با موفقیت انجام شد.
+groupcreated: گروه با موفقیت ایجاد شد
+messagedeleted: پیام(ها) با موفقیت حذف شدند.
+messagemoved: پیام(ها) با موفقیت منتقل شدند.
+messagecopied: پیام(ها) با موفقیت کپی شدند.
+messagemarked: پیام(ها) با موفقیت نشانه گذاری شدند.
+namecannotbeempty: نام نمی تواند خالی باشد.
+nametoolong: نام بسیار طولانی است.
+cookiesmismatch: ''
+accountlocked: ''
+connerror: ''
+dbconnerror: ''
+loggedout: ''
+nocontactselected: ''
+contactexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+errorsavingsent: ''
+errorsaving: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+nosenderwarning: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+restoresavedcomposedata: ''
+notuploadedwarning: ''
+folderpurged: ''
+folderexpunged: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+movesuccess: ''
+copyerror: ''
+moveerror: ''
+copyingmessage: ''
+copyingcontact: ''
+movingcontact: ''
+deletingmessage: ''
+addingmember: ''
+removingmember: ''
+deleteidentityconfirm: ''
+contactaddedtogroup: ''
+contactremovedfromgroup: ''
+nogroupassignmentschanged: ''
+importformaterror: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+importmessagesuccess: ''
+importmessageerror: ''
+nofromaddress: ''
+editorwarning: ''
+httpreceivedencrypterror: ''
+smtpconnerror: ''
+smtpautherror: ''
+smtpfromerror: ''
+smtptoerror: ''
+smtprecipientserror: ''
+smtputf8error: ''
+smtpsizeerror: ''
+emailformaterror: ''
+toomanyrecipients: ''
+maxgroupmembersreached: ''
+internalerror: ''
+contactdelerror: ''
+contactdeleted: ''
+contactrestoreerror: ''
+savedsearchdeleted: ''
+savedsearchdeleteerror: ''
+savedsearchcreated: ''
+savedsearchcreateerror: ''
+messagemovedtotrash: ''
+autocompletechars: ''
+autocompletemore: ''
+namedotforbidden: ''
+folderupdated: ''
+foldercreated: ''
+invalidimageformat: ''
+mispellingsfound: ''
+parentnotwritable: ''
+messagetoobig: ''
+attachmentvalidationerror: ''
+noscriptwarning: ''
+messageissent: ''
+errnotfound: ''
+errnotfoundexplain: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcontactserveradmin: ''
+clicktoresumesession: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+clicktocompose: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

@@ -1,0 +1,228 @@
+# CraftCube catalogue messages for cs_CZ. Converted 1:1 from the
+# Roundcube reference localization (GPL-3.0+); keep languages in
+# sync with tools/i18n.py (verify / sync / add / remove).
+errortitle: Došlo k chybě!
+loginfailed: Přihlášení selhalo.
+cookiesdisabled: Váš prohlížeč nepodporuje cookies, které jsou pro přihlášení nezbytné.
+sessionerror: Vaše přihlášení je neplatné nebo vypršelo.
+cookiesmismatch: Nalezena nekonzistentnost v cookies. Vymažte, prosím, cookies ve vašem prohlížeči.
+storageerror: Připojení na IMAP server selhalo.
+servererror: Chyba serveru!
+servererrormsg: 'Chyba serveru: $msg'
+accountlocked: Příliš mnoho chybných pokusů o přihlášení. Zkuste to později.
+connerror: Chyba připojení (Selhalo připojeni k serveru)!
+dberror: Chyba databáze!
+dbconnerror: Nelze se připojit k databázi!
+windowopenerror: Vyskakovací okno bylo zablokováno!
+requesttimedout: Došlo k vypršení požadavku
+errorreadonly: Příkaz nelze provést, složka je určena jen ke čtení.
+errornoperm: Příkaz nelze provést, nemáte oprávnění.
+erroroverquota: Příkaz nelze provést, není volné místo na disku.
+erroroverquotadelete: Není volné místo na disku. Použijte SHIFT+DEL k odstranění zprávy.
+invalidrequest: Nesprávný požadavek. Data nebyla uložena.
+invalidhost: Špatné jméno serveru.
+nomessagesfound: Ve schránce nebyla nalezena žádná zpráva.
+loggedout: Byli jste odhlášeni. Na shledanou!
+mailboxempty: Schránka je prázdná
+nomessages: Žádné zprávy
+refreshing: Obnovuji...
+loading: Načítám...
+uploading: Nahrávám soubor...
+attaching: Přikládám soubor...
+uploadingmany: Nahrávám soubory...
+loadingdata: Načítám data...
+checkingmail: Kontroluji nové zprávy...
+sendingmessage: Odesílám zprávu...
+messagesent: Zpráva byla odeslána.
+savingmessage: Ukládám zprávu...
+messagesaved: Zpráva uložena do Rozepsané.
+successfullysaved: Uloženo.
+savingresponse: Ukládám text odpovědi...
+deleteresponseconfirm: Opravdu chcete odstranit tento text odpovědi?
+nocontactselected: Dosud jste nevybrali kontakt.
+addedsuccessfully: Kontakt byl přidán do adresáře.
+contactexists: Kontakt se zadanou e-mailovou adresou již existuje.
+contactnameexists: Kontakt se stejným jménem již existuje.
+blockedimages: Z bezpečnostních důvodů byly zablokovány obrázky ve zprávě.
+blockedresources: Z důvodu ochrany soukromí bylo zablokováno načtení vzdálených zdrojů.
+suspiciousemail: Zpráva obsahuje podezřelé adresáty, kteří mohou být podvodní.
+bccemail: Přeposílaná zpráva obsahuje důvěrné příjemce (Bcc).
+bouncehint: Zpráva bude odeslána bez dalších změn, t.j. bude použito původní tělo zprávy, hlavičky i příjemci.
+encryptedmessage: Tato zpráva je zašifrovaná a nelze ji zobrazit.
+externalmessagedecryption: Toto je šifrovaná zpráva a může být dešifrována pomocí rozšíření ve vašem prohlížeči.
+nopubkeyfor: Nenalezen validní veřejný klíč pro $email
+nopubkeyforsender: Pro Vaši identitu odesílatele se nenašel žádný platný veřejný klíč. Chcete správu zašifrovat pro příjemce?
+encryptnoattachments: Přílohy, které jste už uložili na server, není možné zašifrovat. Prosím, přidejte je znovu v editoru pro šifrování.
+searchpubkeyservers: Přejete si prohledat servery s klíči k nalezení chybějících klíčů?
+encryptpubkeysfound: 'Byly nalezeny následující veřejné klíče:'
+keyservererror: Nebylo možné získat klíč ze serveru s klíči.
+keyimportsuccess: Veřejný klíč $key byl vložen do vaší klíčenky.
+nocontactsfound: Kontakty nebyly nalezeny.
+contactnotfound: Požadovaný kontakt nebyl nalezen.
+contactsearchonly: Pro zobrazení kontaktů ze zvoleného adresáře použijte vyhledávací formulář.
+sendingfailed: Odesílání zprávy selhalo.
+senttooquickly: Prosím počkejte $sec sekund před odesláním zprávy.
+errorsavingsent: Nastala chyba při ukládání odeslané zprávy.
+errorsaving: Vyskytla se chyba při ukládání.
+errormoving: Nemohu přesunout zprávu.
+errorcopying: Nemohu zkopírovat zprávu.
+errordeleting: Nemohu smazat zprávu.
+errormarking: Zprávu nelze označit.
+alerttitle: Pozor
+confirmationtitle: Jste si jistý...
+deletecontactconfirm: Opravdu chcete smazat označené kontakty?
+deletegroupconfirm: Opravdu chcete smazat skupinu?
+deletemessagesconfirm: Opravdu chcete smazat označené zprávy?
+deletefolderconfirm: Opravdu chcete smazat tento adresář?
+movefolderconfirm: Opravdu chcete přesunout tento adresář?
+purgefolderconfirm: Opravdu chcete smazat všechny zprávy v této složce?
+contactdeleting: Mažu kontakty...
+groupdeleting: Mažu skupinu...
+folderdeleting: Odstraňuji složku...
+foldermoving: Přesouvám složku...
+foldersubscribing: Přihlašuji složku k odběru...
+folderunsubscribing: Odhlašuji odběr složky...
+formincomplete: Formulář nebyl korektně vyplněn.
+noemailwarning: Zadejte, prosím, platnou e-mailovou adresu.
+nonamewarning: Zadejte, prosím, jméno.
+nopagesizewarning: Zadejte, prosím, velikost stránky.
+nosenderwarning: Zadejte e-mailovou adresu odesílatele.
+recipientsadded: Příjemci byli přidáni.
+norecipientwarning: Zadejte, prosím, alespoň jednoho příjemce.
+disclosedrecipwarning: Všichni příjemci uvidí adresy ostatních příjemců. Pro ochranu soukromí příjemců můžete použít pole Skrytá kopie (Bcc).
+disclosedreciptitle: Příliš mnoho veřejných příjemců
+nosubjectwarning: Předmět nebyl vyplněn. Přejete si jej zadat nyní?
+nosubjecttitle: Žádný předmět
+nobodywarning: Opravdu chtete odeslat prázdnou zprávu?
+notsentwarning: Zpráva nebyla odeslána a obsahuje neuložené změny. Přejete si změny zahodit?
+restoresavedcomposedata: 'Byla nalezena dříve vytvořená ale neodeslaná zpráva.\n\nPředmět: $subject\nUloženo: $date\n\nPřejete si obnovit tuto zprávu?'
+nosearchname: Zadejte, prosím, jméno nebo e-mail kontaktu.
+notuploadedwarning: Ještě nebyly nahrány všechny přílohy. Počkejte prosím nebo nahrávání zrušte.
+searchsuccessful: Nalezeno $nr zpráv.
+contactsearchsuccessful: Nalezeno $nr kontaktů.
+searchnomatch: Nenalezena žádná zpráva
+searching: Vyhledávám...
+checking: Kontroluji...
+stillsearching: Stále vyhledávám...
+nospellerrors: Nebyly nalezeny žádné chyby.
+folderdeleted: Složka byla vymazána.
+foldersubscribed: Složka byla přihlášena k odběru.
+folderunsubscribed: Odběr složky byl odhlášen.
+folderpurged: Složka byla vyprázdněna.
+folderexpunged: Složka byla zkomprimována.
+deletedsuccessfully: Smazáno.
+converting: Odstraňuji formátování ze zprávy...
+messageopenerror: Nemohu načíst zprávu ze serveru.
+filelinkerror: Přikládání souboru selhalo.
+fileuploaderror: Nahrávání souboru selhalo.
+csvfilemismatch: Iimport více CSV souborů s různými poli není podporován.
+filesizeerror: Soubor přesáhl maximální velikost $size.
+filecounterror: Můžete nahrát maximálně $count souborů najednou.
+msgsizeerror: Selhalo připojení souboru. Byla překročena maximální velikost zprávy ($size).
+msgsizeerrorfwd: Překročena maximální délka zprávy ($size). Počet položek, které nebyly připojeny je $num.
+copysuccess: Zkopírováno $nr kontaktů.
+movesuccess: Přesunuto $nr kontaktů.
+copyerror: Kontakty nelze kopírovat.
+moveerror: Kontakty nelze přesunout.
+sourceisreadonly: Tento zdroj adres je pouze pro čtení.
+errorsavingcontact: Nemohu uložit adresu kontaktu.
+movingmessage: Přesouvám zprávu...
+copyingmessage: Kopíruji zprávu...
+copyingcontact: Kopíruji kontakty...
+movingcontact: Přesouvám kontakty...
+deletingmessage: Odstraňuji zprávu...
+markingmessage: Označuji zprávu...
+addingmember: Přidávám kontakty do skupiny...
+removingmember: Odstraňuji kontakty ze skupiny...
+receiptsent: Potvrzení o přřijetí zprávy odesláno.
+errorsendingreceipt: Potvrzení o přijetí zprávy nebylo možné odeslat.
+deleteidentityconfirm: Opravdu chcete odstranit tuto identitu?
+nodeletelastidentity: Alespoň jedna identita musí být ponechána. Identitu nelze odstranit.
+forbiddencharacter: Název složky obsahuje zakázaný znak.
+selectimportfile: Prosím vyberte soubor k nahrání.
+addresswriterror: Vybraný seznam kontaktů není zapisovatelný.
+contactaddedtogroup: Kontakty byly přidány do této skupiny.
+contactremovedfromgroup: Kontakty byly odstraněny z této skupiny.
+nogroupassignmentschanged: Nebylo změněno přiřazení do skupin.
+importwait: Importuji, prosím čekejte...
+importformaterror: Import se nezdařil! Typ souboru není podporován.
+importconfirm: 'Úspěšně naimportováno $inserted kontaktů, $skipped existujících záznamů přeskočeno: $names'
+importconfirmskipped: <b>Přeskočeno $skipped existujících kontaktů</b>
+importconfirminvalid: <b>Přeskočeno $skipped neplatných kontaktů</b>
+importconfirmerrors: <b>Selhal import $errors platných kontaktů</b>
+importmessagesuccess: Naimportováno $nr zpráv
+importmessageerror: Import se nezdařil! Nahraný soubor není platnou zprávou nebo souborem mailboxu
+opnotpermitted: Operace není povolena!
+nofromaddress: Chybějící e-mailová adresa v označeném profilu.
+editorwarning: Přepnutím režimu editoru ztratíte veškeré formátování. Chcete pokračovat?
+httpreceivedencrypterror: Vyskytla se vážná chyba v konfiguraci. Kontaktujte neprodleně administátora. Vaše zpráva nemohla být odeslána.
+smtpconnerror: 'Chyba SMTP ($code): Připojení k serveru selhalo.'
+smtpautherror: 'Chyba SMTP ($code): Chyba přihlášení.'
+smtpfromerror: 'Chyba SMTP ($code): Nelze nastavit odesílatele "$from" ($msg).'
+smtptoerror: 'Chyba SMTP ($code): Nelze přidat příjemce "$to" ($msg).'
+smtprecipientserror: 'Chyba SMTP: Nelze zpracovat seznam příjemců.'
+smtputf8error: 'Chyba SMTP: Unicode v e-mailové adrese není podporován na serveru.'
+smtpsizeerror: 'Chyba SMTP: Zpráva překročila limit serveru ($limit)'
+smtperror: 'Chyba SMTP: $msg'
+emailformaterror: 'Neplatná e-mailová adresa: $email'
+toomanyrecipients: Příliš mnoho příjemců. Změňte počet příjemců na $max.
+maxgroupmembersreached: Počet členských skupin dosáhl maximum z $max
+internalerror: Došlo k interní chybě. Zkuste to prosím znovu.
+contactdelerror: Kontakty nelze odstranit.
+contactdeleted: Kontakty byly odstraněny.
+contactrestoreerror: Nelze obnovit smazané kontakty.
+contactrestored: Kontakty byly obnoveny.
+groupdeleted: Skupina byla odstraněna.
+grouprenamed: Skupina byla přejmenována.
+groupcreated: Skupina byla vytvořena.
+savedsearchdeleted: Uložené hledání bylo ostraněno.
+savedsearchdeleteerror: Nelze odstranit uložené hledání.
+savedsearchcreated: Nové hledání bylo vytvořeno.
+savedsearchcreateerror: Nelze vytvořit uložené hledání.
+messagedeleted: Zpráva byla odstraněna.
+messagemoved: Zpráva byla přesunuta.
+messagemovedtotrash: Zpráva byla přesunuta do koše.
+messagecopied: Zpráva byla zkopirována.
+messagemarked: Zpráva označena.
+autocompletechars: Napište alespoň $min znaků pro automatické doplnění.
+autocompletemore: Napište více znaků. Nalezeno příliš mnoho položek.
+namecannotbeempty: Jméno musí být vyplněno.
+nametoolong: Jméno je příliš dlouhé.
+namedotforbidden: Jméno složky nemůže začínat tečkou.
+folderupdated: Složka byla aktualizována.
+foldercreated: Složka byla vytvořena.
+invalidimageformat: Formát obrázku není podporován.
+mispellingsfound: Ve zprávě byly zjištěny pravopisné chyby.
+parentnotwritable: Nelze vytvořit/přesunout složku do vybrané rodičovské složky. Nemáte práva.
+messagetoobig: Část zprávy je příliš velká pro zpracování.
+attachmentvalidationerror: 'Tato příloha je podezřelá, protože její typ se neshoduje s typem uvedeným ve zprávě. Pokud nedůvěřujete odesílateli, neměli byste přílohu otevírat v prohlížeči, protože může obsahovat škodlivý obsah.<br/><br/><em>Očekáváno: $expected; nalezeno: $detected</em>'
+noscriptwarning: 'Upozornění: Tato emailová aplikace vyžaduje Javascript! Prosím, zapněte Javascript v nastavení prohlížeče.'
+messageissent: Zpráva již byla odeslána, ovšem ještě nebyla uložena. Přejete si ji uložit nyní?
+errnotfound: Soubor nebyl nalezen
+errnotfoundexplain: Požadovaný objekt nebyl nalezen!
+errfailedrequest: Požadavek zamítnut
+errauthorizationfailed: Autorizace selhala
+errunauthorizedexplain: Nemohu ověřit, zda máte právo přistupovat k této službě!
+errrequestcheckfailed: Stav Vašeho požadavku není možné ověřit.
+errcsrfprotectionexplain: 'Pro ochranu Vašeho účtu je přístup do této sekce dočasně zablokován.  Existuje důvodné podezření, že Váš účet byl napaden.
+
+  Pokud vidíte toto upozornění, nejspíše jste se neodhlásili před opuštěním této stránky.
+
+
+  Abyste mohli pokračovat, je nutné kontaktovat pověřenou osobu.'
+errcontactserveradmin: Prosím, kontaktujte správce serveru.
+clicktoresumesession: Klikněte sem pro obnovu Vašeho předchozího sezení.
+errcomposesession: Chybná relace pro vytvoření zprávy
+errcomposesessionexplain: Požadovaná relace pro vytvoření zprávy nebyla nalezena.
+clicktocompose: Klikněte sem pro vytvoření nové zprávy
+nosupporterror: Tato funkcionalita není vaším prohlížečem podporována.
+siginserted: Podpis byl vložen.
+responseinserted: Odpověď byla vložena.
+noresponsesavailable: Žádné odpovědi nejsou k dispozici
+listempty: Seznam je prázdný.
+listusebutton: Použijte tlačítko "Vytvořit" pro přidání nového záznamu.
+keypaircreatesuccess: Pro $identity byl vytvořen nový pár klíčů.
+emptyattachment: Příloha je prázdná.<br>Zkontrolujte její stav s odesílatelem.
+oauthloginfailed: Přihlášení přes OAuth selhalo. Prosím, zkuste to znovu
+oauthinvalidrequest: Žádost o autorizaci byla neplatná nebo neúplná.
+oauthaccessdenied: Uživatel nebo autorizační server zamítl požadavek.

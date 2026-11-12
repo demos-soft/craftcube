@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for nn_NO. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Velkomen til $product
+username: Brukarnamn
+password: Passord
+server: Tenar
+login: Logg inn
+logout: Logg ut
+mail: E-post
+settings: Personlege innstillingar
+addressbook: Adressebok
+inbox: Innboks
+drafts: Kladd
+sent: Sendt
+trash: Sletta
+junk: Søppel
+subject: Emne
+from: Frå
+sender: Avsendar
+to: Til
+cc: Kopi til
+bcc: Blindkopi til
+replyto: Svar til
+followupto: Oppfølging til
+date: Dato
+size: Storleik
+priority: Prioritet
+organization: Organisasjon
+readstatus: Lesestatus
+listoptions: Listeinnstillingar …
+mailboxlist: Mapper
+messagesfromto: Melding $from til $to av $count
+threadsfromto: Tråd $from til $to ($count stk)
+messagenrof: Melding $nr av $count
+fromtoshort: $from-$to av $count
+copy: Kopier
+move: Flytt
+moveto: flytt til …
+download: Last ned
+showattachment: Vis
+showanyway: Vis likevel
+filename: Filnamn
+filesize: Filstorleik
+addtoaddressbook: Legg til i adressebok
+sun: Sun
+mon: Mån
+tue: Tys
+wed: Ons
+thu: Tor
+fri: Fre
+sat: Lau
+sunday: Sundag
+monday: Måndag
+tuesday: Tysdag
+wednesday: Onsdag
+thursday: Torsdag
+friday: Fredag
+saturday: Laurdag
+jan: Jan
+feb: Feb
+mar: Mar
+apr: Apr
+may: Mai
+jun: Jun
+jul: Jul
+aug: Aug
+sep: Sep
+oct: Okt
+nov: Nov
+dec: Des
+longjan: Januar
+longfeb: Februar
+longmar: Mars
+longapr: April
+longmay: Mai
+longjun: Juni
+longjul: Juli
+longaug: August
+longsep: September
+longoct: Oktober
+longnov: November
+longdec: Desember
+today: I dag
+refresh: Frisk opp att
+checkmail: Sjå etter nye meldingar
+compose: Skriv ei melding
+writenewmessage: Skriv ei ny melding
+reply: Svar
+replytomessage: Svar til avsendar
+replytoallmessage: Svar til avsendar og alle mottakarar
+replyall: Svar til alle
+replylist: Svar til liste
+forward: Vidaresend
+forwardinline: Send vidare innbygd
+forwardattachment: Vidresend som vedlegg
+forwardmessage: Vidaresend meldinga
+deletemessage: Slett meldinga
+movemessagetotrash: Flytt meldinga til «sletta»
+printmessage: Skriv ut meldinga
+previousmessage: Vis førre melding
+firstmessage: Vis den første meldinga
+nextmessage: Vis den neste meldinga
+lastmessage: Vis den siste meldinga
+backtolist: Tilbake til meldingslista
+viewsource: Vis kjelde
+mark: Merke
+markmessages: Marker meldingar
+markread: Som lese
+markunread: Som ulese
+markflagged: Som flagga
+markunflagged: Som uflagga
+moreactions: Fleire handlingar
+more: Meir
+back: Tilbake
+options: Innstillingar
+select: Vel
+all: Alle
+none: Ingen
+currpage: Gjeldande side
+isread: Lese
+unread: Uleste
+flagged: Flagga
+unanswered: Ikkje svara
+deleted: Sletta
+undeleted: Ikkje sletta
+invert: Inverter
+filter: Filtrer
+list: List opp
+threads: Trådar
+expand-all: Utvid alle
+expand-unread: Utvid ulesne
+collapse-all: Slå saman alle
+threaded: Tråda
+autoexpand_threads: Utvid eposttråder
+do_expand: alle tråder
+expand_only_unread: berre med ulesne epostar
+fromto: Sendar/Mottakar
+flag: Flagg
+attachment: Vedlegg
+nonesort: Ingen
+sentdate: Sendtdato
+arrival: Mottaksdato
+asc: Alfabetisk
+desc: Motsatt alfabetisk
+listcolumns: Vis kolonner
+listsorting: Sorteringskolonne
+listorder: Sorteringsveg
+listmode: Listevisningmodus
+layoutlist: List opp
+folderactions: Mappehandlingar
+compact: Kompakt
+empty: Tom
+quota: Plassbruk
+unknown: ukjend
+unlimited: ubegrensa
+quicksearch: Snøggsøk
+resetsearch: Tilbakestill søk
+searchmod: Søkeutsagn
+msgtext: Heile eposten
+body: Meldingstekst
+openinextwin: Opna i nytt vindauga
+emlsave: Last ned (.eml)
+editasnew: Rediger som ny
+send: Send
+sendmessage: Send meldinga no
+savemessage: Lagra kladd
+addattachment: Legg ved ei fil
+charset: Teiknkoding
+editortype: Redigeringstype
+returnreceipt: Epost-er-lest-kvittering
+dsn: Leveringsstatus
+mailreplyintro: 'Den $date skreiv $sender:'
+originalmessage: Opphavleg melding
+insert: Sett inn
+recipient: Mottakar
+editidents: Redigere identitetar
+spellcheck: Stavekontroll
+checkspelling: Stavekontroll
+resumeediting: Hald fram redigering
+revertto: Tilbakestill til
+attach: Legg ved
+attachments: Vedlegg
+upload: Last opp
+close: Steng
+messageoptions: Meldingsalternativ
+low: Låg
+lowest: Lågast
+normal: Normal
+high: Høg
+highest: Høgast
+nosubject: (ingen emne)
+showimages: Vis bilete
+alwaysshow: Alltid vis bilete frå $sender
+isdraft: Dette er ein kladd.
+andnmore: $nr fleire …
+togglemoreheaders: Vis fleire meldingshovud
+togglefullheaders: Veksle vising av meldinga sine headere i råformat
+htmltoggle: HTML
+plaintoggle: Vanleg tekst
+savesentmessagein: Lagra sendt epost i
+dontsave: Ikkje lagra
+maxuploadsize: Maksimalt tillatte storleik på filar er $size
+addcc: Legg til kopi
+addbcc: Legg til blindkopi
+addreplyto: Legg til svaradressa
+addfollowupto: Legg til oppfylgjing
+mdnrequest: Sendaren av denne meldinga ynskjer å få kvittering når du har lest meldinga. Ynskjer du å senda denne kvitteringa?
+receiptread: Svarkvittering (eposten-er-lest-kvittering)
+yourmessage: Dette er ein retur-kvittering for meldinga di.
+receiptnote: 'Hugs: Denne kvitteringa seier berre at meldinga di vart vist på mottakar sin datamaskin. Det er ingen garanti for at mottakaren faktisk har lese eller forstått innhaldet i meldinga.'
+name: Visingsnamn
+firstname: Førenamn
+surname: Etternamn
+middlename: Mellomnamn
+nameprefix: Prefiks
+namesuffix: Suffiks
+nickname: Kallenamn
+jobtitle: Jobbtittel
+department: Avdeling
+gender: Kjønn
+maidenname: Pikenamn
+email: E-post
+phone: Telefon
+address: Adresse
+street: Gate
+locality: By
+zipcode: Postnummer
+region: Stat/provins
+country: Land
+birthday: Fødselsdag
+anniversary: Bryllaupsdag
+website: Internettside
+instantmessenger: Lynmelding
+notes: Notatar
+male: Mann
+female: Kvinne
+manager: Leiar
+assistant: Assistent
+spouse: Ektefelle
+allfields: Alle felt
+search: Søk
+advsearch: Avansert søk
+advanced: Avansert
+other: Andre
+typehome: Heim
+typework: Jobb
+typeother: Andre
+typemobile: Mobil
+typemain: Hovud
+typehomefax: Heimefax
+typeworkfax: Jobbfax
+typecar: Bil
+typepager: Personsøkjar
+typevideo: VIdeo
+typeassistant: Assistent
+typehomepage: Heimeside
+typeblog: Blogg
+typeprofile: Profil
+addfield: Legg til felt...
+editcontact: Redigere kontakt
+contacts: Kontakter
+contactproperties: Eigenskapar
+personalinfo: Personleg informasjon
+edit: Redigere
+cancel: Avbryt
+save: Lagre
+delete: Slette
+rename: Gi nytt namn
+addphoto: Legg til
+replacephoto: Erstatt
+uploadphoto: Last opp bilete
+deletecontact: Slett valde kontaktar
+composeto: Ny melding til
+contactsfromto: Kontaktar $from til $to av $count
+print: Skriv ut
+export: Eksport
+exportall: Eksporter alle
+exportsel: Eksporter valde
+exportvcards: Eksporter kontaktar i vCard-format
+grouprename: Endre namn på gruppe
+groupdelete: Slett gruppe
+groupremoveselected: Fjern valde kontaktar frå gruppe
+previouspage: Førre side
+firstpage: Første side
+nextpage: Neste side
+lastpage: Siste side
+group: Gruppe
+groups: Gruppar
+personaladrbook: Personlege adresser
+searchsave: Lagre søk
+searchdelete: Slett søk
+import: Importer
+importcontacts: Importer kontaktar
+importreplace: Byt ut heile adresseboka
+done: Ferdig
+settingsfor: Innstillingar for
+about: Om
+preferences: Innstillingar
+userpreferences: Brukarinnstillingar
+editpreferences: Redigere brukarinnstillingar
+identities: Identitetar
+preferhtml: Føretrekk HTML
+defaultcharset: Standard karaktersett (charset)
+htmlmessage: HTML-melding
+messagepart: Del
+digitalsig: Digital signatur
+dateformat: Datoformat
+timeformat: Tidsformat
+prettydate: Pene datoar
+setdefault: Set som standard
+autodetect: Automatisk
+language: Språk
+timezone: Tidssone
+pagesize: Rader pr side
+signature: Signartur
+dstactive: Sumartid
+showinextwin: Opna melding i nytt vindauge
+composeextwin: Skriv i nytt vindauge
+htmleditor: Lag HTML-meldingar
+htmlonreply: ved svar på HTML-melding
+htmlonreplyandforward: ved vidaresending av eller svar på HTML-melding
+htmlsignature: HTML-signatur
+previewpane: Vis førehandsvisningsboks
+skin: Bunad
+logoutclear: Fjern alt i «sletta element» ved utlogging
+logoutcompact: Samanpress innboks ved utlogging
+uisettings: Brukargrensesnitt
+serversettings: Tenarinstillingar
+mailboxview: Epostboksvisning
+mdnrequests: Sender-notifisering
+askuser: spør brukaren
+autosend: send automatisk
+autosendknown: send kvittering til kontaktane mine, ellers spør meg
+autosendknownignore: send kvittering til kontaktane mine, ellers oversjå
+readwhendeleted: Marker melding som lese ved sletting
+flagfordeletion: Flagg meldinga for sletting i staden for å sletta
+skipdeleted: Ikkje vis sletta epostar
+deletealways: Slett epostar som ikkje kan flyttast til søppelkorga
+deletejunk: Slett meldingar i spam direkte
+showremoteimages: Vis eksterne bilete
+fromknownsenders: frå kjende sendarar
+always: alltid
+showinlineimages: Vis vedlagte bilete under meldinga
+autosavedraft: Lagra kladd automatisk
+everynminutes: kvart $n minutt
+refreshinterval: Oppdater (sjekk for nye meldingar osv.)
+never: aldri
+immediately: med ein gong
+messagesdisplaying: Meldingar som viser
+messagescomposition: Meldingar sin komposisjon
+mimeparamfolding: Vedleggsnamn
+2231folding: Full RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Full RFC 2047 (other)
+force7bit: Bruk MIME-enkoding for 8-bit characterer (æøå og slik)
+advancedoptions: Avanserte val
+focusonnewmessage: Fokuser nettlesarvindauge på ny epost
+checkallfolders: Sjekk alle mappar for nye epostar
+defaultfont: Standard skrifttype i HTML-melding
+mainoptions: Hovudinnstillingar
+browseroptions: Alternativ for nettlesar
+section: Seksjon
+maintenance: Vedlikehald
+newmessage: Ny epost
+signatureoptions: Signatur-innstillingar
+whenreplying: Når du svarar
+replyempty: Ikkje siter den opphavlege meldinga
+replytopposting: start ny epost oppante originalen
+replybottomposting: start ny epost nedanfor originalen
+replyremovesignature: Fjern den original signatur frå eposten når du svarar
+autoaddsignature: Legg signatur til automatisk
+newmessageonly: berre på nye epostar
+replyandforwardonly: berre på svar og vidaresending
+insertsignature: Sett inn signatur
+afternseconds: etter $n sekund
+reqmdn: Alltid be om svarkvittering
+reqdsn: Alltid be om leveringsstatus
+replysamefolder: Legg svar i mappa til meldinga det vert svara på
+defaultabook: Standard adressebok
+autocompletesingle: Hopp over alternative e-postadresser i autofullføring
+listnamedisplay: Vis kontaktar som
+spellcheckbeforesend: Kontroller staving før ei melding sendast
+spellcheckoptions: Alternativ for stavekontroll
+spellcheckignoresyms: Ignorer ord med symbol
+spellcheckignorenums: Ignorer ord med tal
+spellcheckignorecaps: Ignorer ord med berre store bokstavar
+addtodict: Legg til i ordliste
+mailtoprotohandler: Registrer protokollhandsaming for mailto-lenkjer
+forwardmode: Meldingar vidaresendast
+inline: i teksten
+asattachment: som vedlegg
+allmessages: alle meldingar
+folder: Mappe
+folders: Mapper
+foldername: Mappenamn
+subscribed: Abonnert
+messagecount: Meldingar
+create: Opprette
+createfolder: Opprett ny mappe
+managefolders: Mappehandsaming
+specialfolders: Spesialmapper
+properties: Eigenskapar
+folderproperties: Eigenskapar for mappe
+parentfolder: Mappa over
+location: Stad
+info: Informasjon
+getfoldersize: Klikk for å få mappestørrelse
+changesubscription: Klikk for å endre abonnement
+foldertype: Mappetype
+personalfolder: Privat mappe
+otherfolder: Annan brukar si mappe
+sharedfolder: Offentleg mappe
+sortby: Sorter etter
+sortasc: Sorter stigande
+sortdesc: Sorter søkkjande
+undo: Gjer om
+installedplugins: Installerte tillegg
+plugin: Tilleggsmodul
+version: Versjon
+source: Kjelde
+license: Lisens
+support: Få hjelp
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: UNicode
+english: Engelsk
+westerneuropean: Vest-europesik
+easterneuropean: Aust-europesik
+southeasterneuropean: Sør-aust-europeisk
+baltic: Baltisk
+cyrillic: Kyrilisk
+arabic: Arabisk
+greek: Gresk
+hebrew: Hebraisk
+turkish: Tyrkisk
+nordic: Nordisk
+thai: Thai
+celtic: Keltisk
+vietnamese: Vietnamesisk
+japanese: Japansk
+korean: Koreansk
+chinese: Kinesisk
+oauthlogin: ''
+menu: ''
+darkmode: ''
+lightmode: ''
+show_real_foldernames: ''
+listoptionstitle: ''
+copyto: ''
+open: ''
+bouncemsg: ''
+bounce: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+markallread: ''
+folders-cur: ''
+folders-sub: ''
+folders-all: ''
+composeoptions: ''
+optionsandattachments: ''
+actions: ''
+first: ''
+last: ''
+previous: ''
+next: ''
+selection: ''
+unflagged: ''
+withattachment: ''
+replied: ''
+forwarded: ''
+showunread: ''
+lmode: ''
+layout: ''
+layoutwidescreen: ''
+layoutdesktop: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+importmessages: ''
+mailimportdesc: ''
+mailimportzip: ''
+quotatype: ''
+quotatotal: ''
+quotaused: ''
+quotastorage: ''
+quotamessage: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+searchplaceholder: ''
+type: ''
+namex: ''
+searchscope: ''
+currentfolder: ''
+subfolders: ''
+allfolders: ''
+searchinterval-1W: ''
+searchinterval-1M: ''
+searchinterval-1Y: ''
+searchinterval1W: ''
+searchinterval1M: ''
+searchinterval1Y: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+changeformattext: ''
+changeformathtml: ''
+keepformatting: ''
+selectimage: ''
+addimage: ''
+selectmedia: ''
+addmedia: ''
+encrypt: ''
+encryptmessage: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+encryptandsign: ''
+keyid: ''
+keylength: ''
+keyexpired: ''
+keyrevoked: ''
+bccinstead: ''
+addheader: ''
+insertcontact: ''
+recipientedit: ''
+restore: ''
+restoremessage: ''
+ignore: ''
+responses: ''
+insertresponse: ''
+manageresponses: ''
+newresponse: ''
+addresponse: ''
+editresponse: ''
+editresponses: ''
+responsename: ''
+responsetext: ''
+uploadprogress: ''
+togglecomposeoptions: ''
+attachmentrename: ''
+allow: ''
+alwaysallow: ''
+details: ''
+summary: ''
+headers: ''
+allheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nonbinary: ''
+othergender: ''
+searchresult: ''
+printcontact: ''
+qrcode: ''
+addcontact: ''
+contactnameandorg: ''
+personal: ''
+contactphoto: ''
+discard: ''
+continue: ''
+ok: ''
+choosefile: ''
+choosefiles: ''
+browse: ''
+newcontact: ''
+newgroup: ''
+addgroup: ''
+groupassign: ''
+groupremove: ''
+uponelevel: ''
+listgroup: ''
+importfromfile: ''
+importtarget: ''
+importgroups: ''
+importgroupsall: ''
+importgroupsexisting: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+manageidentities: ''
+newidentity: ''
+addidentity: ''
+editidentity: ''
+identityencryption: ''
+showemail: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+ignorerequest: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+displaynext: ''
+replytoppostingnoindent: ''
+sigbelow: ''
+sigseparator: ''
+automarkread: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+standardwindows: ''
+replyallmode: ''
+replyalldefault: ''
+replyalllist: ''
+olderxdays: ''
+findfolders: ''
+findcontacts: ''
+findmail: ''
+namespace.personal: ''
+namespace.other: ''
+namespace.shared: ''
+dualuselabel: ''
+dualusemail: ''
+dualusefolder: ''
+generate: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+encryption: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+destination: ''
+skinauthor: ''
+savedsearches: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+arialabeltopnav: ''
+arialabeltasknav: ''
+arialabeltoolbar: ''
+arialabellistnav: ''
+arialabelactivetask: ''
+arialabelmessagessearchfilter: ''
+arialabelmailsearchform: ''
+arialabelcontactsearchform: ''
+arialabelmailquicksearchbox: ''
+arialabelquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfoldersearchform: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabelmailpreviewframe: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmessagenav: ''
+arialabelmessagebody: ''
+arialabelmessageactions: ''
+arialabelcontactquicksearch: ''
+arialabelcontactsearchbox: ''
+arialabelmessageheaders: ''
+arialabelforwardingoptions: ''
+arialabelreplyalloptions: ''
+arialabelmoremessageactions: ''
+arialabelmorecontactactions: ''
+arialabelmarkmessagesas: ''
+arialabelcomposeoptions: ''
+arialabelresponsesmenu: ''
+arialabelattachmentuploadform: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+arialabelattachmentpreview: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabelabookgroupoptions: ''
+arialabelpreferencesform: ''
+arialabelidentityeditfrom: ''
+arialabelresponseeditfrom: ''
+arialabelsearchterms: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

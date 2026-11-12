@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for fy_NL. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Wolkom by $product
+username: Brûkersnamme
+password: Wachtwurd
+server: Tsjinner
+login: Ynlogge
+logout: Ôfmelde
+mail: E-post
+settings: Ynstellings
+addressbook: Adresboek
+inbox: Postfek Yn
+drafts: Konsepten
+sent: Ferstjoerd
+trash: Jiskefet
+junk: Spam
+show_real_foldernames: Lit echte nammen sjen foar spesjale mappen
+subject: Ûnderwerp
+from: Fan
+sender: Stjoerder
+to: Oan
+cc: Cc
+bcc: Bcc
+replyto: Antwurd oan
+followupto: Oanslutend oan
+date: Datum
+size: Grutte
+priority: Prioriteit
+organization: Organisaasje
+readstatus: Lêzen status
+listoptions: Lyst opsjes...
+mailboxlist: Mappen
+messagesfromto: Berjochten $from nei $to fan $count
+threadsfromto: Rigen $from oan $to fan $count
+messagenrof: Berjocht $nr fan $count
+fromtoshort: $from – $to fan $count
+copy: Kopiearje
+move: Ferpleatse
+moveto: Ferpleatse nei...
+copyto: Kopiearje nei...
+download: Ynlade
+open: Iepenje
+showattachment: Toane
+showanyway: Dochs toane
+filename: Bestânsnamme
+filesize: Bestânsgrutte
+addtoaddressbook: Oan adresboek tafoegje
+sun: si
+mon: mo
+tue: ti
+wed: wo
+thu: to
+fri: fr
+sat: so
+sunday: snein
+monday: moandei
+tuesday: tiisdei
+wednesday: woansdei
+thursday: tongersdei
+friday: freed
+saturday: sneon
+jan: jan
+feb: feb
+mar: mrt
+apr: apr
+may: mai
+jun: jun
+jul: jul
+aug: aug
+sep: sep
+oct: okt
+nov: nov
+dec: des
+longjan: jannewaris
+longfeb: febrewaris
+longmar: maart
+longapr: april
+longmay: maaie
+longjun: juny
+longjul: july
+longaug: augustus
+longsep: septimber
+longoct: oktober
+longnov: novimber
+longdec: desimber
+today: Hjoed
+refresh: Ferfarskje
+checkmail: Op nije berjochten kontrolearje
+compose: Opstelle
+writenewmessage: Nij berjocht oanmeitsje
+reply: Beäntwurdzje
+replytomessage: Antwurd oan stjoerder
+replytoallmessage: Antwurd nei lyst of nei stjoerder en alle ûntfangers
+replyall: Antwurdzje alle
+replylist: Antwurdzje lyst
+forward: Trochstjoere
+forwardinline: Ynsletten trochstjoere
+forwardattachment: Trochstjoere as taheaksel
+forwardmessage: Stjoer it berjocht troch
+deletemessage: Berjocht wiskje
+movemessagetotrash: Berjocht ferpleatse nei jiskefet
+printmessage: Dit berjocht ôfdrukke
+previousmessage: Lit foarige berjocht sjen
+firstmessage: Lit earste berjocht sjen
+nextmessage: Lit folgjende berjocht sjen
+lastmessage: Lit lêste berjocht sjen
+backtolist: Tebek nei berjochtlyst
+viewsource: Toan boarne
+mark: Markearje
+markmessages: Markearje berjochten
+markread: As lêzen
+markunread: As net-lêzen
+markflagged: As flagge
+markunflagged: As net-flagge
+moreactions: Mear aksjes...
+markallread: Markearje alles as lêzen
+folders-cur: Allinnich selektearre map
+folders-sub: Selektearre map en ûnderlizzende mappen
+folders-all: Alle mappen
+more: Mear
+back: Tebek
+options: Opsjes
+first: Earst
+last: Lêst
+previous: Foarige
+next: Folgjende
+select: Selektearje
+all: Alle
+none: Gjin
+currpage: Aktuele side
+isread: Lêzen
+unread: Net-lêzen
+flagged: Flagge
+unflagged: Net-flagge
+unanswered: Unbeantwurde
+withattachment: Mei taheaksel
+deleted: Ferwidere
+undeleted: Net ferwidere
+replied: Antwurde
+forwarded: Trochstjoerd
+invert: Omkeart
+filter: Filter
+list: Lyst
+threads: Streamen
+expand-all: Alles útwreidzje
+expand-unread: Net-lêzen útwreidzje
+collapse-all: Alles ynsakje
+threaded: Streamde
+autoexpand_threads: Berjocht stream útwreidzje
+do_expand: Alle streamen
+expand_only_unread: Allinnich mei net-lêzen berjochten
+fromto: Fan/Nei
+flag: Flagge
+attachment: Taheaksel
+nonesort: Gjin
+sentdate: Ferstjoer datum
+arrival: Oankomst datum
+asc: oprinnend
+desc: delgeande
+listcolumns: Lyst kolommen
+listsorting: Skiftsje kolom
+listorder: Sorting oarder
+listmode: Lyst werjefte modus
+layout: Yndieling
+layoutwidescreen: Breedbyld
+layoutdesktop: Desktop
+layoutlist: Lyst
+folderactions: Map aksjes
+compact: Kompakt
+empty: Leech
+importmessages: Berjochten ymportearje
+quota: Skiifgebrûk
+unknown: ûnbekend
+unlimited: ûnbeheind
+quotatype: Kwota type
+quotatotal: Beheining
+quotaused: Brûkt
+quotastorage: Skiifromte
+quotamessage: Oantal berjochten
+quicksearch: Fluch sykje
+resetsearch: Sykopdracht wiskje
+searchmod: Syk modifikaasjes
+msgtext: Hiele berjocht
+body: Ynhâld
+type: Type
+namex: Namme
+searchscope: Berik
+currentfolder: Aktuele map
+subfolders: Dizze en ûnderlizzende mappen
+allfolders: Alle mappen
+searchinterval-1W: Alder as in wike
+searchinterval-1M: Alder as in moanne
+searchinterval-1Y: Alder as in jier
+searchinterval1W: Nijer as in wike
+searchinterval1M: Nijer as in moanne
+searchinterval1Y: Nijer as in jier
+openinextwin: Iepenje yn nij finster
+emlsave: Ynlade (.eml)
+changeformattext: Toan yn gewoane tekst
+changeformathtml: Toan yn HTML formaat
+editasnew: Bewurkje as nij
+send: Ferstjoere
+sendmessage: Berjocht ferstjoere
+savemessage: Bewarje as konsept
+addattachment: In bestân taheakje
+charset: Tekenset
+editortype: Bewurker type
+returnreceipt: Untfangst werom stjoere
+dsn: Levering status notifikaasje
+mailreplyintro: 'Op $date, skreau $sender:'
+originalmessage: Oarspronklik Berjocht
+selectimage: Ofbylding selektearje
+addimage: Ofbylding tafoegje
+selectmedia: Fideo selektearje
+addmedia: Fideo tafoegje
+encrypt: Fersiferje
+encryptmessage: Berjocht fersiferje
+encryptmessagemailvelope: Berjocht fersiferje mei Mailvelope
+importpubkeys: Publike kaaien ymportearje
+encryptedsendialog: Fersifere berjocht ferstjoere
+keyid: Kaai ID
+keylength: Bits
+keyexpired: Ferrûn
+keyrevoked: Ynlutsen
+bccinstead: Bcc brûke
+insert: Ynfoegje
+editidents: Identiteiten bewurkje
+spellcheck: Stavering
+checkspelling: Stavering kontrolearje
+resumeediting: Bewurkje ferfetsje
+revertto: Tebeksette nei
+restore: Weromsette
+restoremessage: Berjocht weromsette?
+ignore: Negearje
+responses: Antwurden
+insertresponse: In antwurd ynfiere
+manageresponses: Antwurden beheare
+newresponse: Nij antwurd oanmeitsje
+addresponse: Antwurd tafoegje
+editresponse: Antwurd bewurkje
+editresponses: Antwurden bewurkje
+responsename: Namme
+responsetext: Antwurd tekst
+attach: Taheakje
+attachments: Taheaksels
+upload: Oplade
+uploadprogress: $percent ($current fan $total)
+close: Slúte
+messageoptions: Berjocht opsjes...
+togglecomposeoptions: Komposysje opsjes skeakelje
+attachmentrename: Taheaksel omneame
+low: Leech
+lowest: Leechste
+normal: Normaal
+high: Heech
+highest: Heechste
+nosubject: (gjin ûnderwerp)
+showimages: Ofbyldings toane
+alwaysshow: Ofbyldings fan $sender altyd toane
+isdraft: Dit is in konsept berjocht
+andnmore: $nr mear...
+togglemoreheaders: Mear berjocht koppen toane
+togglefullheaders: Ruwe berjocht koppen skeakelje
+htmltoggle: HTML
+plaintoggle: Gewoane tekst
+savesentmessagein: Bewarje ferstjoerd berjoch yn
+dontsave: net bewarje
+maxuploadsize: Maksimum bestâns grutte is $size
+addcc: CC tafoegje
+addbcc: BCC tafoegje
+addreplyto: Reagearje-Op Tafoegje
+addfollowupto: Ferfolch-Op Tafoegje
+mdnrequest: De stjoerder fan dit berjocht hat frege om op de hichte brocht te wurden as jo dit berjocht lêzen hawwe. Wolle jo de ôfstjoerder op de hichte bringe?
+receiptread: Weromstjoerd Untfangstbewiis (lêzen)
+yourmessage: Dit is in Weromstjoerd Untfangstbewiis foar jo berjocht
+receiptnote: 'Tink derom: Dit ûntfangstbewiis erkent allinnich dat it berjocht waard werjûn op de kompjûter fan ûntfanger. Der is gjin garânsje dat de ûntfanger de berjocht ynhâld lêzen of begrepen hat.'
+name: Skerm Namme
+firstname: Foarnamme
+surname: Achternamme
+middlename: Twadde Namme
+nameprefix: Foarheaksel
+namesuffix: Efterheaksel
+nickname: Skûlnamme
+jobtitle: Funksjenamme
+department: Ofdieling
+gender: Geslacht
+maidenname: Famkesnamme
+email: E-post
+phone: Telefoannûmer
+address: Adres
+street: Strjitte
+locality: Doarp/Stêd
+zipcode: Postkoade
+region: Provinsje
+country: Lân
+birthday: Jierdei
+anniversary: Troudei
+website: Webstee
+instantmessenger: IM
+notes: Notysjes
+male: man
+female: frou
+manager: Behearder
+assistant: Assistint
+spouse: Echtgenoat
+allfields: Alle fjilden
+search: Sykje
+searchresult: Syk risseltaten
+advsearch: Avansearre Sykje
+advanced: Avansearre
+other: Oars
+printcontact: Kontakt ôfdrukke
+qrcode: QR Koade
+typehome: Thús
+typework: Wurk
+typeother: Oars
+typemobile: Mobyl
+typemain: Foarnaamste
+typehomefax: Fax Thús
+typeworkfax: Fax Wurk
+typecar: Auto
+typepager: Pieper
+typevideo: Fideo
+typeassistant: Assistint
+typehomepage: Thússide
+typeblog: Blog
+typeprofile: Profyl
+addfield: Fjild tafoegje
+addcontact: Kontakt tafoegje
+editcontact: Kontakt bewurkje
+contacts: Kontakten
+contactproperties: Kontakt eigenskippen
+contactnameandorg: Namme en Organisaasje
+personalinfo: Persoanlike ynformaasje
+personal: Persoanlik
+contactphoto: Kontakt foto
+edit: Bewurkje
+cancel: Annulearje
+save: Bewarje
+delete: Fuortsmite
+rename: Omneame
+addphoto: Tafoegje
+replacephoto: Ferfange
+uploadphoto: Foto oplade
+newcontact: Nij kontakt oanmeitsje
+deletecontact: Selektearre kontakten ferwiderje
+composeto: Skriuw berjocht oan
+contactsfromto: Kontakten $from oant $to fan $count
+print: Ofdrukke
+export: Eksportearje
+exportall: Alles eksportearje
+exportsel: Selektearre eksportearje
+exportvcards: Kontakten eksportearje yn vCard formaat
+newgroup: Nije groep oanmeitsje
+addgroup: Groep tafoegje
+grouprename: Groep omneame
+groupdelete: Groep ferwiderje
+groupremoveselected: Selektearre kontakten út groep ferwiderje
+uponelevel: Ien nivo omheech
+previouspage: Lit foarige side sjen
+firstpage: Lit earste side sjen
+nextpage: Lit folgjende side sjen
+lastpage: Lit lêste side sjen
+group: Groep
+groups: Groepen
+listgroup: Groep leden yn lyst
+personaladrbook: Persoanlike adressen
+searchsave: Sykopdracht bewarje
+searchdelete: Sykopdracht wiskje
+import: Ymportearje
+importcontacts: Kontakten ymportearje
+importtarget: Kontakten tafoegje oan
+importreplace: It hiele adresboek ferfange
+importgroups: Ymportearje groep opdrachten
+importgroupsall: Alle (meitsje groepen oan wêr nedich)
+importgroupsexisting: Allinnich foar besteande groepen
+done: Klear
+settingsfor: Ynstellings foar
+about: Oer
+preferences: Foarkarren
+userpreferences: Brûkers foarkarren
+editpreferences: Brûkers foarkarren bewurkje
+identities: Identiteiten
+manageidentities: Identiteiten beheare
+newidentity: Nije identiteit oanmeitsje
+addidentity: Identiteit tafoegje
+editidentity: Identiteit bewurkje
+preferhtml: Toan HTML
+defaultcharset: Standert Teken Set
+htmlmessage: HTML Berjocht
+messagepart: Diel
+digitalsig: Digitale Hantekening
+dateformat: Datum formaat
+timeformat: Tiid formaat
+prettydate: Moaie datums
+setdefault: Set standert
+autodetect: Auto
+language: Taal
+timezone: Tiidsône
+pagesize: Rigen per side
+signature: Hantekening
+dstactive: Simmertiid
+showinextwin: Berjocht yn nij finster iepenje
+composeextwin: Skriuw yn in nij finster
+htmleditor: Skriuw HTML berjochten
+htmlonreply: Allinnich op HTML berjocht antwurdzje
+htmlonreplyandforward: op trochstjoerd of antwurd nei HTML berjocht
+htmlsignature: HTML hantekening
+showemail: Toan e-post adres mei skermnamme
+previewpane: Toan foarbyld skerm
+skin: Omjouwings tema
+logoutclear: Jiskefet leechje by útloggen
+logoutcompact: Komprimearje Postfek YN by útloggen
+uisettings: Brûkers omjouwing
+serversettings: Tsjinner Ynstellings
+mailboxview: Postfek Yndieling
+mdnrequests: Op fersyk by ûntfangstbewiis
+askuser: freegje my
+autosend: 'stjoer ûntfangstbewiis '
+autosendknown: stjoer ûntfangstbewiis nei kontakten, oars my freegje
+autosendknownignore: stjoer ûntfangstbewiis nei kontakten, oars negearje
+ignorerequest: fersyk negearje
+readwhendeleted: Markearje berjocht as lêzen by wiskjen
+flagfordeletion: Berjocht flagje foar wiskjen yn pleats fan wiskjen
+skipdeleted: Wiske berjochten net sjen litte
+deletealways: As berjochten nei Jiskefet ferpleatse mislearret, wiskje
+deletejunk: Berjochten yn Jiskefet fuort wiskje
+showremoteimages: Werjaan eksterne ynsletten ôfbyldings
+fromknownsenders: fan bekende stjoerders
+always: altyd
+alwaysbutplain: Altyd, útsein as antwurde wurd yn gewoane tekst
+showinlineimages: Lit taheake ôfbyldings ûnder it berjocht sjen
+autosavedraft: Konsept automatysk bewarje
+everynminutes: eltse $n minút(en)
+refreshinterval: Ferfarskje (op nije berjochten kontrolearje, ensaf.)
+never: nea
+immediately: fuortendaliks
+messagesdisplaying: Berjochten Toane
+messagescomposition: Berjochten Skriuwe
+mimeparamfolding: Taheaksel nammen
+2231folding: Fol RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Fol RFC 2047 (other)
+force7bit: Brûk MIME fersifering foar 8-bit tekens
+savelocalstorage: Bewarje yn lokale opslach fan de browser (tydlik)
+advancedoptions: Avansearre opsjes
+toggleadvancedoptions: Avansearre opsjes skeakelje
+focusonnewmessage: Fokus browser finster by nij berjocht
+checkallfolders: Kontrolearje alle mappen op nije berjochten
+defaultfont: Standert lettertype fan HTML berjocht
+mainoptions: Haad Opsjes
+browseroptions: Browser Opsjes
+section: Seleksje
+maintenance: Underhâld
+newmessage: Nij Berjocht
+signatureoptions: Hantekening Opsjes
+whenreplying: By beäntwurdzjen
+replyempty: It oarspronklike berjocht net sitearje
+replytopposting: begjinne nij berjocht boppe de sitaat
+replybottomposting: begjinne nij berjocht ûnder de sitaat
+replyremovesignature: By it beäntwurdzjen oarspronklike hântekening fan berjocht wiskje
+autoaddsignature: Automatysk hantekening tafoegje
+newmessageonly: allinnich nije berjochten
+replyandforwardonly: by antwurdzjen en trochstjoeren
+insertsignature: Hantekening ynfoegje
+sigbelow: Hantekening ûnder it siteare berjocht
+sigseparator: Forsearje standert skiedingsteken yn hantekenings
+afternseconds: nei $n sekonden
+reqmdn: Freegje altyd in ûntfangstbewiis
+reqdsn: Freegje altyd in levering status notifikaasje
+replysamefolder: Set antwurden yn de map fan it berjocht dêr't op antwurde wurd
+defaultabook: Standert adresboek
+autocompletesingle: Sla alternative e-post adressen oer yn autokompleet
+listnamedisplay: Kontakten yn lyst as
+spellcheckbeforesend: Kontrolearje de stavering foar it ferstjoeren fan in berjocht
+spellcheckoptions: Staverings Opsjes
+spellcheckignoresyms: Negearje wurden mei symboalen
+spellcheckignorenums: Negearje wurden mei sifers
+spellcheckignorecaps: Negearje wurden mei alle letters as haadletters
+addtodict: Taheakje oan wurdboek
+mailtoprotohandler: 'Registrearje protokol handler foar mailto: keppelings'
+standardwindows: Omgean mei popups as standert finsters
+forwardmode: Berjocht trochstjoeren
+inline: ynsletten
+asattachment: as taheaksel
+replyallmode: Standert aksje foar [Alles beäntwurdzje] knop
+replyalldefault: op alles antwurdzje
+replyalllist: allinnich antwurdzje nei mailing lyst (wêr fûn)
+folder: Map
+folders: Mappen
+foldername: Map namme
+subscribed: Ynskreaun
+messagecount: Berjochten
+create: Oanmeitsje
+createfolder: Nije map oanmeitsje
+managefolders: Mappen beheare
+specialfolders: Spesjale Mappen
+properties: Eigenskippen
+folderproperties: Map eigenskippen
+parentfolder: Boppelizzende map
+location: Lokaasje
+info: Ynformaasje
+getfoldersize: Klik om map grutte te krijen
+changesubscription: Klik om ynskriuwing te feroarjen
+foldertype: Map Type
+personalfolder: Privee Map
+otherfolder: Oare Brûker's Map
+sharedfolder: Publike Map
+findfolders: Mappen fine
+namespace.personal: Persoanlik
+namespace.other: Oare brûkers
+namespace.shared: Dielt
+sortby: Sortearje op
+sortasc: Sortearje oprinnend
+sortdesc: Sortearje delgeand
+undo: Ungedien meitsje
+installedplugins: Ynstallearre ynstekkers
+plugin: Ynstekker
+version: Ferzje
+source: Boarne
+license: Lisinsje
+support: Krij help
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unicode
+english: Ingelsk
+westerneuropean: West Europeesk
+easterneuropean: East Europeesk
+southeasterneuropean: Súd-East Europeesk
+baltic: Baltysk
+cyrillic: Syrillysk
+arabic: Arabysk
+greek: Gryksk
+hebrew: Hebrieuwsk
+turkish: Turksk
+nordic: Noardsk
+thai: Taisk
+celtic: Keltysk
+vietnamese: Fietnameesk
+japanese: Japansk
+korean: Koreaansk
+chinese: Sineesk
+arialabeltopnav: Finster kontrôle
+arialabeltasknav: Applikaasje taken
+arialabeltoolbar: Applikaasje arkbalke
+arialabelactivetask: Aktive taak
+arialabelmessagessearchfilter: E-post fermelding filter
+arialabelmailsearchform: E-post berjocht syk formulier
+arialabelcontactsearchform: Kontakt syk formulier
+arialabelmailquicksearchbox: E-post sykje ynbring
+arialabelquicksearchbox: Sykje ynbring
+arialabelfoldersearchfilter: Map fermelding filter
+arialabelfoldersearchform: Map syk formulier
+arialabelfolderlist: E-post map seleksje
+arialabelmessagelist: E-post Berjocht Fermelding
+arialabelmailpreviewframe: Berjocht foarbyld
+arialabelmailboxmenu: Map aksje menu
+arialabellistselectmenu: Lyst seleksje menu
+arialabelthreadselectmenu: Stream fermelding menu
+arialabelmessagelistoptions: Berjocht lyst werjefte en sortearjen opsjes
+arialabelmailimportdialog: Berjocht ymport skerm
+arialabelmessagenav: Berjocht navigaasje
+arialabelmessagebody: Berjocht Ynhâld
+arialabelmessageactions: Berjocht aksjes
+arialabelcontactquicksearch: Kontakten syk formulier
+arialabelcontactsearchbox: Kontakt syk ynbring
+arialabelmessageheaders: Berjocht koppen
+arialabelforwardingoptions: Trochstjoer opsjes
+arialabelreplyalloptions: Antwurdzje-alle opsjes
+arialabelmoremessageactions: Mear berjocht aksjes
+arialabelmarkmessagesas: Markearje selektearre berjochten as...
+arialabelcomposeoptions: Skriuw opsjes
+arialabelresponsesmenu: Ynblikte antwurden menu
+arialabelattachmentuploadform: Taheaksel oplaad formulier
+arialabelattachmentpreview: Taheaksel foarbyld
+ariasummarycomposecontacts: Lyst fan kontakten en groepen te selektearjen as ûntfangers
+arialabelcontactexportoptions: Kontakt eksport opsjes
+arialabelabookgroupoptions: Adresboek/groep opsjes
+arialabelpreferencesform: Foarkarren formulier
+arialabelidentityeditfrom: Identiteit bewurkings formulier
+arialabelresponseeditfrom: Antwurd bewurkings formulier
+arialabelsearchterms: Syktermen
+helplistnavigation: Lyst toetseboerd navigaasje
+helplistkeyboardnavigation: "Pylken op/del: Beweegje rige fokus/seleksje.\nSpatie: Selektearje fokuse rige.\nShift + op/del: Selektearje oanfoljende rige boppe/ûnder.\nCtrl + Spatie: Foegje fokuse rige ta oan seleksje/ferwiderje fan seleksje."
+helplistkeyboardnavmessages: "Pylken rjochts/lofts: útwreidzje/ynsakje berjocht stream (allinnich yn stream modus).\nEnter: Iepenje it selektearre/fokuse berjocht.\nDelete: Ferpleats selektearre berjocht nei jiskefet."
+helplistkeyboardnavcontacts: 'Enter: Iepenje it selektearre/fokuse kontakt.'
+oauthlogin: ''
+menu: ''
+darkmode: ''
+lightmode: ''
+listoptionstitle: ''
+bouncemsg: ''
+bounce: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+composeoptions: ''
+optionsandattachments: ''
+actions: ''
+selection: ''
+showunread: ''
+lmode: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+mailimportdesc: ''
+mailimportzip: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+searchplaceholder: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+keepformatting: ''
+encryptandsign: ''
+addheader: ''
+insertcontact: ''
+recipient: ''
+recipientedit: ''
+allow: ''
+alwaysallow: ''
+details: ''
+summary: ''
+headers: ''
+allheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nonbinary: ''
+othergender: ''
+discard: ''
+continue: ''
+ok: ''
+choosefile: ''
+choosefiles: ''
+browse: ''
+groupassign: ''
+groupremove: ''
+importfromfile: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+identityencryption: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+displaynext: ''
+replytoppostingnoindent: ''
+automarkread: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+allmessages: ''
+olderxdays: ''
+findcontacts: ''
+findmail: ''
+dualuselabel: ''
+dualusemail: ''
+dualusefolder: ''
+generate: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+encryption: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+destination: ''
+skinauthor: ''
+savedsearches: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+arialabellistnav: ''
+arialabelmorecontactactions: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

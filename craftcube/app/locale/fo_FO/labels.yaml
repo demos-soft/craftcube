@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for fo_FO. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Vælkomin til $product
+username: Brúkaranavn
+password: Loyniorð
+server: Ambætari
+login: Rita inn
+oauthlogin: Rita inn við $provider
+menu: Menu
+logout: Rita út
+mail: Teldupostur
+settings: Stillingar
+addressbook: Búðstaðarsavn
+darkmode: Myrkt snið
+lightmode: Ljóst snið
+inbox: Postur
+drafts: Skitsur
+sent: Sent
+trash: Skrell
+junk: Møsn
+show_real_foldernames: Vís verulig nøvn til serligar mappur
+subject: Evni
+from: Frá
+sender: Sendari
+to: Til
+cc: Cc
+bcc: Bcc
+replyto: Svara-til
+followupto: Fylg við-til
+date: Tann
+size: Stødd
+priority: Raðfesting
+organization: Fyritøka
+readstatus: Lesistøða
+listoptions: Lýs valmøguleikar...
+listoptionstitle: Finn boð
+mailboxlist: Mappur
+messagesfromto: Boðini frá $from til $to ið tilsamans eru $count
+threadsfromto: Tráðirnir frá $from til $to ið eru $count
+messagenrof: Boð nummar $nr, av $count
+fromtoshort: $from - $to ið eru $count
+copy: Avrita
+move: Flyt
+moveto: Flyt til...
+copyto: Avrita til...
+download: Tak niður
+open: Lat upp
+showattachment: Vís
+showanyway: Vís tað avlíkavæl
+filename: Fílu navn
+filesize: Fílu stødd
+addtoaddressbook: Legg aftrat búðstaðar bók
+sun: Sun
+mon: Mán
+tue: Týs
+wed: Mik
+thu: Hós
+fri: Frí
+sat: Ley
+sunday: Sunnudagur
+monday: Mánadagur
+tuesday: Týsdagur
+wednesday: Mikudagur
+thursday: Hósdagur
+friday: Fríggjardagur
+saturday: Leygardagur
+jan: Jan
+feb: Feb
+mar: Mar
+apr: Apr
+may: Maj
+jun: Jun
+jul: Jul
+aug: Aug
+sep: Sep
+oct: Okt
+nov: Nov
+dec: Des
+longjan: Januar
+longfeb: Februar
+longmar: Mars
+longapr: Apríl
+longmay: Maj
+longjun: Juni
+longjul: July
+longaug: August
+longsep: Septembur
+longoct: Oktobur
+longnov: Novembur
+longdec: Desembur
+today: Í dag
+refresh: Endur innles
+checkmail: Kanna fyri nýggj boð.
+compose: Stovna
+writenewmessage: Stovna nýggj boð
+reply: Svara
+replytomessage: Svara sendara
+replytoallmessage: Svara listanum ella sendaranum og øllum móttakarunum
+replyall: Svara øllum
+replylist: Svara lista
+forward: Send víðari
+forwardinline: Svara víðari, við gomlum teksti
+forwardattachment: Send víðari sum viðhefting
+forwardmessage: Send hesi boð víðari
+bouncemsg: Send umaftur (bounce)
+bounce: Send umaftur
+deletemessage: Strika boð
+movemessagetotrash: Koyr boð í skrell
+printmessage: Útskriva hesi boð
+previousmessage: Vís seinastu boð
+firstmessage: Vís fyrstu boð
+nextmessage: Vís næstu boð
+lastmessage: Vís seinastu boð
+backtolist: Aftur til boð lista
+viewsource: Vís keldu
+mark: Merk
+markmessages: Merk boð
+markread: Sum lisin
+markunread: Sum ólisin
+markflagged: Sum viðmerkt
+markunflagged: Sum óviðmerkt
+moreactions: Fleiri gerir...
+markallread: Merk alt sum lisið
+folders-cur: Einans vald mappa
+folders-sub: Einans vald mappa og undirmappa
+folders-all: Allar mappur
+more: Meira
+back: Aftur
+options: Valmøguleikar
+actions: Gerðir
+first: Fyrst
+last: Síðst
+previous: Fyrra
+next: Seinna
+select: Vel
+all: Alt
+none: Einki
+currpage: Hesa síðu
+isread: Les
+unread: Ólisið
+flagged: Viðmerkt
+unflagged: Ikk merkt
+unanswered: Ikki svara
+withattachment: Við viðhefting
+deleted: Strika
+undeleted: Ikki strika
+replied: Svara
+forwarded: Víðari sent
+invert: Vend við
+filter: Síla
+list: Listið
+threads: Tráðir
+expand-all: Spreið alt
+expand-unread: Spreið ólisið
+collapse-all: Sett saman alt
+threaded: Tráða
+showunread: Vís ólisin boð
+autoexpand_threads: Spreið boð tráðir
+do_expand: Allir tráðir
+expand_only_unread: einans við ólisin boð
+fromto: Frá/Til
+flag: Viðmerk
+attachment: Viðhefting
+nonesort: Einki
+sentdate: Sent dato
+arrival: Móttikið dato
+asc: hækkandi
+desc: lækkandi
+listcolumns: List teigar
+listsorting: Sorterar teiga
+listorder: Sorterar rekkjufylgju
+listmode: Lista vísing
+layout: Snið
+layoutwidescreen: Breiðan skíggja
+layoutdesktop: Skriviborð
+layoutlist: Listið
+folderactions: Mappu gerir...
+compact: Trýst saman
+empty: Tøm
+importmessages: Innflyt boð
+quota: Disk nýtsla
+unknown: ókent
+unlimited: óavmarka
+quotatype: Kvotu slag
+quotatotal: Mark
+quotaused: Brúkt
+quotastorage: Disk pláss
+quotamessage: Tal av boðum
+shortheaderdate: Tann $date
+shortheaderto: Til $to tann $date
+shortheaderfrom: Frá $to tann $date
+quicksearch: Skjót leiting
+searchplaceholder: Leita...
+resetsearch: Nulstilla leiting
+searchmod: Leiti minkarir
+msgtext: Øll boðini
+body: Breyðteksti
+type: Slag
+namex: Navn
+searchscope: Leita frá
+currentfolder: Verandi mappa
+subfolders: Hendan og mappur undir hesari
+allfolders: Allar mappur
+searchinterval-1W: eldri enn eina viku
+searchinterval-1M: eldri enn ein mána
+searchinterval-1Y: eldri enn eitt ár
+searchinterval1W: yngri enn ein vika
+searchinterval1M: yngri enn ein mána
+searchinterval1Y: yngri enn eitt ár
+openinextwin: Lat upp í nýggjum vindeyga
+emlsave: Tak niður (.eml)
+changeformattext: Vís í reinun teksti formati
+changeformathtml: Vís í HTML formati
+editasnew: Broyt sum nýtt
+send: Send
+sendmessage: Send boð
+savemessage: Goym sum skitsa
+addattachment: Viðheft fíl
+charset: Stavusett
+editortype: Útgevara slag
+returnreceipt: Lat aftur kvittan
+dsn: Útflýggja støðu kunngerð
+mailreplyintro: 'Tann $date, skrivaði $sender:'
+originalmessage: Uppruna boð
+selectimage: Vel mynd
+addimage: Legg mynd afturat
+selectmedia: Vel film
+addmedia: Legg film afturat
+encrypt: Brongla
+encryptmessage: Brongla boð
+encryptmessagemailvelope: Brongla boð við Mailvelope
+importpubkeys: Innflyt allmennar lyklar
+encryptedsendialog: Sendur brongla boð
+encryptandsign: Brongla og undirrita
+keyid: Lykla ID
+keylength: Bit
+keyexpired: Útgingin
+keyrevoked: Sagdur úr gildi
+bccinstead: Nýt Bcc
+insert: Legg inn
+recipient: Móttakari
+editidents: Broyt samleikar
+spellcheck: Stava
+checkspelling: Kanna staving
+resumeediting: Taka uppaftur skriving
+revertto: Vend aftur til
+restore: Endurstovna
+restoremessage: Endurstovna boð?
+ignore: Skúgva til viks
+responses: Svør
+insertresponse: Innset eitt svar
+manageresponses: Umsit svør
+newresponse: Stovna nýtt svar
+addresponse: Svara
+editresponse: Broyt svar
+editresponses: Broyt svør
+responsename: Navn
+responsetext: Svar tekstur
+attach: Viðheft
+attachments: Viðheftingar
+upload: Uppsend
+uploadprogress: $percent ($current av $total)
+close: Lat aftur
+messageoptions: Boð valmøguleikar...
+togglecomposeoptions: Skift stovningar møguleikar
+low: Lágt
+lowest: Lægst
+normal: Vanligt
+high: Høgt
+highest: Hægst
+nosubject: (einki evni)
+showimages: Vís myndir
+allow: Loyv
+alwaysshow: Vís altíð myndir frá $sender
+alwaysallow: Loyv altíð frá $sender
+isdraft: Hetta er eini skitsu boð.
+andnmore: $nr afturat...
+details: Upplýsingar
+togglemoreheaders: 'Vís meiri boð teksthøvd '
+togglefullheaders: Vel ráðan boð teksthøvd
+htmltoggle: HTML
+plaintoggle: Reiður tekstur
+savesentmessagein: 'Goym boð í '
+dontsave: goym ikki
+maxuploadsize: Stórsta loyvda fílu stødd er $size
+addcc: Legg Cc afturat
+addbcc: Legg Bcc afturat
+addreplyto: Legg aftrat Svara-til
+addfollowupto: Legg aftrat Fylg við-til
+mdnrequest: Sendarin av hesum boðunum umbiður at verða fráboðaður tá ið tú lesur hesið boð. Ynskir tú at fráboða sendaranum?
+receiptread: Svara móttakara (les)
+yourmessage: Hetta er ein afturvend kvittan av tíni boð
+receiptnote: 'Gev gætur: Kvittanin vísir einans á at boðini vóru sýnd á teldu mótakarans. Vissa er ikki fyri at móttakarin hevur lisið ella skilt boðini.'
+sendalwaysto: Send altíð til $email
+name: Fult navn
+firstname: Fornavn
+surname: Eftirnavn
+middlename: Millunnavn
+nameprefix: Forskoyti
+namesuffix: Eftirskoyti
+nickname: Eyknevni
+jobtitle: Starvsheiti
+department: Deild
+gender: Kyn
+maidenname: Gentunavn
+email: Teldupostur
+phone: Telefon
+address: Búðstaður
+street: Gøta
+locality: Býur
+zipcode: Postnummar
+region: Kommuna
+country: Land
+birthday: Føðingardagur
+anniversary: Ársdagur
+website: Heimasíða
+instantmessenger: IM
+notes: Notatir
+male: maður
+female: kona
+othergender: annað
+manager: Leiðari
+assistant: Hjálparfólk
+spouse: Hjúnafelagi
+allfields: Allir teigar
+search: Leita
+searchresult: Leiti úrslit
+advsearch: Víðkað leiting
+advanced: Vìkað
+other: Annað
+printcontact: Útskriva persón
+qrcode: QR kota
+typehome: Heim
+typework: Arbeiði
+typeother: Annað
+typemobile: Fartelefon
+typemain: Høvuðs
+typehomefax: Heima faks
+typeworkfax: Arbeiðis faks
+typecar: Bilur
+typepager: Persónleitari
+typevideo: Sjónband
+typeassistant: Hjálparfólk
+typehomepage: Heimasíða
+typeblog: Bloggur
+typeprofile: 'Umhvarv '
+addfield: Legg teig afturat...
+addcontact: Stovna persón
+editcontact: Broyt persón
+contacts: Persónar
+contactproperties: Persóna eginleikar
+contactnameandorg: Navn og felag
+personalinfo: Persónligir upplýsingar
+personal: Persónlig
+contactphoto: Mynd av persóni
+edit: Broyt
+cancel: Ógilda
+save: Goym
+delete: Strika
+discard: Strika
+continue: Víðari
+ok: OK
+rename: Nýnevn
+addphoto: Legg aftrat
+replacephoto: Skift út
+uploadphoto: Uppsend mynd
+choosefile: Vel fíl...
+choosefiles: Vel fílar...
+browse: Kaga
+newcontact: Stovna nýggjan persón
+deletecontact: Strika valdar persónar
+composeto: Skriva boð til
+contactsfromto: Persónar frá $from til $to ið eru $count
+print: Skriva út
+export: Tak út
+exportall: Tak alt út
+exportsel: Tak valdar út
+exportvcards: Tak persónar út í vCard slagið
+newgroup: Stovna nýggjan bólk
+addgroup: Stovna bólk
+grouprename: Nýnevn bólk
+groupdelete: Strika bólk
+groupassign: Legg afturat bólki...
+groupremove: Strika frá bólkið
+groupremoveselected: Strika valdar persónar úr bólki
+uponelevel: Upp eitt stig
+previouspage: Vís undanfarnu síðu
+firstpage: Vís fyrstu síðu
+nextpage: Vís næstu síðu
+lastpage: Vís seinastu síðu
+group: Bólkur
+groups: Bólkar
+listgroup: Vís bólka limir
+personaladrbook: Persónligir búðstaðir
+searchsave: Goym leiting
+searchdelete: Strika leiting
+import: Innles
+importcontacts: Innles persónar
+importfromfile: Innles frá fílu
+importtarget: Legg persón afturat
+importreplace: Skift út alt búðstaðarsavni
+importgroups: Innles bólka ásetan
+importgroupsall: Øll (stovna bólkar um neyðugt)
+importgroupsexisting: Einans fyri verandi bólkar
+done: Liðugt
+settingsfor: Stillingar til
+about: Um
+preferences: Vælmøguleikar
+userpreferences: Brúkara vælmøguleikar
+editpreferences: Broyt brúkara framíhjárættindi
+identities: Samleikar
+manageidentities: Umsit samleikar
+newidentity: Stovna nýggjan samleika
+addidentity: Stovna samleika
+editidentity: Broyt samleika
+identityencryption: Bronglan
+preferhtml: Vís HTML
+defaultcharset: Sjálvset tekin set
+htmlmessage: HTML boð
+messagepart: Deilur
+digitalsig: Talgild undirskrift
+dateformat: Dato format
+timeformat: Tíðs format
+prettydate: Pen dato
+setdefault: Set vanligt
+autodetect: Sjálvirki
+language: Mál
+timezone: Tíðarsona
+pagesize: Rekkjur per síðu
+signature: Undirskrift
+dstactive: Summartíð
+showinextwin: Lat boðið upp í nýggjun vindeyga
+composeextwin: Stovna í nýggjum vindeyga
+htmleditor: Stovna HTML boð
+htmlonreply: til svar til HTML boð
+htmlonreplyandforward: til víðari sending ella svar til HTML boð
+htmlsignature: HTML undirskrift
+showemail: Vís teldupostar búðstað við fullum navni
+previewpane: Vís undansýningar rút
+skin: Markamóts snið
+logoutclear: Strika Skrell tá ið tú ritar út
+logoutcompact: Trýst saman postkassa tá ið tú ritar út
+uisettings: Nýtaramarkamót
+serversettings: Ambætara stillingar
+mailboxview: Postkassa sýni
+mdnrequests: Bið um kvittan
+askuser: spyr meg
+autosend: send kvittan
+autosendknown: send kvittan til mínir persónar, annars spyr meg
+autosendknownignore: send kvittan til mínir persónar, annars skúgv til viks
+ignorerequest: skúgva umbøn til viks
+readwhendeleted: Merk boði sum lisið á striking
+flagfordeletion: Viðmerk boði til strikingar ístaðin fyri at strika
+skipdeleted: Vís ikki strika boð
+deletealways: Um flyting av boðum til Skrell ikki riggar, strika tey so
+deletejunk: Strika boð beinleiðis í Møsn
+showremoteimages: Vís regluligar fjarmyndir
+fromknownsenders: frá ókendum sendarum
+always: altíð
+alwaysbutplain: altíð. Fyri uftan tá svara verður reinun teksti
+showinlineimages: Vís viðheftar myndir niðanfyri boðini
+autosavedraft: Goym skitsu sjálvirkandi
+everynminutes: hvønn $n minutt(ir)
+refreshinterval: Endur innles (kannað fyri nýggjum boðum, o.s.fv.)
+never: aldrin
+immediately: í stundini
+messagesdisplaying: Vísir boð
+messagescomposition: Stovnar boð
+mimeparamfolding: Viðheftingar nøvn
+2231folding: Fult RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Fult RFC 2047 (other)
+force7bit: Nýt MIME kodingar til 8-bit tekin
+savelocalstorage: Goym í lokal goymslu á kaga (fyribils)
+advancedoptions: Víðkaðir valmøguleikar
+toggleadvancedoptions: Skift víðkaðar møguleikar
+focusonnewmessage: Legg dent á kaga vindeyga tá ið nýtt boð verður stovna
+checkallfolders: Kannað allar mappur fyri nýggj boð
+defaultfont: Forsett stavsnið í HTML boðum
+mainoptions: Høvuðs Vælmøguleikar
+browseroptions: Kaga Valmøguleikar
+section: Partur
+maintenance: Umsiting
+newmessage: Nýggj boð
+signatureoptions: Undirskrift vælmøguleikar
+whenreplying: Tá ið skriving verður framd
+replyempty: sitera ikki uppruna boðini
+replytopposting: byrja eini nýggj boð uppiyvir sitatinum
+replybottomposting: byrja eini nýggj boð undir sitatinum
+replyremovesignature: Tá ið svaring verðurframd, strika so uppruna sitati frá boðinum
+autoaddsignature: Legg undirskrift á sjálvirkandi
+newmessageonly: Nýggj boð einans
+replyandforwardonly: svar og víðarsendingar einans
+insertsignature: Innset undirskrift
+sigbelow: Set undirskrift undir tey siteraðu boðini
+sigseparator: Tvinga vanliga hvørviskilju í undirskriftum
+automarkread: Merk boð sum lisin
+afternseconds: eftir $n sekund
+reqmdn: Bið altíð um eina kvittan
+reqdsn: Bið altíð um status kunngerð
+replysamefolder: Koyr svar í somu mappuna ið boðini komu frá
+defaultabook: Sjálvset búðstaðar bók
+autocompletesingle: Leyp um aðrar teldupost búðstaðar í sjálvirkandi skrivingini
+listnamedisplay: 'Vís persónar sum '
+spellcheckbeforesend: Kannað stavuvillur áðrenn boðini verða send
+spellcheckoptions: Stavuvilli kanningar vælmøguleikar
+spellcheckignoresyms: Leyp um orð við teknum
+spellcheckignorenums: Leyp um orð við tølum
+spellcheckignorecaps: Leyp um øll orð við øll bókstavum í stórum
+addtodict: Legg aftrat orðabók
+mailtoprotohandler: 'Skráset samskiftisreglur handfara til mailto: leinki'
+standardwindows: Handfar upplatingarvindeygu sum vanlig vindeygu
+forwardmode: Víðarsending av boðum
+inline: innanreglis
+asattachment: sum viðhefting
+replyallmode: Sjálvset gerð til [Reply all] knap
+replyalldefault: Svara øllum
+replyalllist: svara til teldupostalista einans (um funnin)
+allmessages: øll boð
+olderxdays: eldri enn $x dagar
+folder: Mappa
+folders: Mappur
+foldername: Mappu navn
+subscribed: Teknaður til
+messagecount: Boð
+create: Stovna
+createfolder: Stovna nýggja mappu
+managefolders: Umsit mappur
+specialfolders: Serligar Mappur
+properties: Vælmøguleikar
+folderproperties: Mappu vælmøguleikar
+parentfolder: Foreldra mappu
+location: Stað
+info: Upplýsing
+getfoldersize: Trýst fyri at seta mappu stødd
+changesubscription: Trýst fyri at broyta tekning
+foldertype: Mappu slag
+personalfolder: Einskild Mappa
+otherfolder: Mappur hjá ørðum brúkarum
+sharedfolder: Almennar mappur
+findfolders: Finn mappur
+findmail: Finn boð
+namespace.personal: Persónlig
+namespace.other: Aðrir brúkarir
+namespace.shared: Deilt
+dualuselabel: Kann bert innihalda
+dualusemail: boð
+dualusefolder: mappur
+generate: Framleið
+encryptioncreatekey: Skapa nýtt lykla par
+encryption: Bronglan
+mailvelopeenable: Virkja
+sortby: Sortera eftir
+sortasc: Sortera hækkandi
+sortdesc: Sortera lækkandi
+undo: Angra
+installedplugins: Innløgd ískoyti
+plugin: Ískoyti
+version: Útgáva
+source: Kelda
+license: Heimildarskjal
+support: Fá hjálp
+savedsearches: Goymdar leitanir
+dateformatY: ÁÁÁÁ
+dateformaty: ÁÁ
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unicode
+english: Eingilst
+westerneuropean: Vestur Evoropeist
+easterneuropean: Estur Everopeist
+southeasterneuropean: Útsynnings Everopeist
+baltic: Eystursjógvurin
+cyrillic: Cyrillic
+arabic: Arabist
+greek: Grekst
+hebrew: Hebraiskt
+turkish: Turkist
+nordic: Norðurlengst
+thai: Tailenskt
+celtic: Keltiskt
+vietnamese: Vietmanesiskt
+japanese: Japanskt
+korean: Koreanskt
+chinese: Kinesiskt
+arialabeltopnav: Vindeyga kontro
+arialabeltasknav: Uppgávur forrits
+arialabeltoolbar: Amboðsbjálki
+arialabelactivetask: Tendra uppgáva
+arialabelmessagessearchfilter: Telduposta skráinga filtur
+arialabelmailsearchform: Teldupost boð leiti frymil
+arialabelcontactsearchform: Persóna leiti felt
+arialabelmailquicksearchbox: Teldupost leiti felt
+arialabelquicksearchbox: Leitiorð
+arialabelfoldersearchfilter: Mappu skráingingar filtur
+arialabelfoldersearchform: Mappu leiti frymil
+arialabelfolderlist: Teldupost mappu val
+arialabelmessagelist: Telduposta boð skráing
+arialabelmailpreviewframe: Brot av boðið
+arialabelmailboxmenu: Mappu gerða valmynd
+arialabellistselectmenu: Vís valdu menu
+arialabelthreadselectmenu: Tráa skráingar valmynd
+arialabelmessagelistoptions: Boð skrá vísnáður og sorteringa valmøguleikar
+arialabelmailimportdialog: Influttning av boð dialogur
+arialabelmessagenav: Boð navigering
+arialabelmessagebody: Breyðtekstur
+arialabelmessageactions: Boð gerðir
+arialabelcontactquicksearch: Persóna leiti felt
+arialabelcontactsearchbox: Persón leiti orð
+arialabelmessageheaders: Teksthøvd av boð
+arialabelforwardingoptions: Víðarisend møguleikar
+arialabelreplyalloptions: Valmøguleikar til at svara øllum
+arialabelmoremessageactions: Meiri valmøguleikar til boð gerðir
+arialabelmarkmessagesas: Merk valdu boð sum...
+arialabelcomposeoptions: Stovningar møguleikar
+arialabelresponsesmenu: Skapilón svar valmynd
+arialabelattachmentuploadform: Viðheftingar uppsendingar frymil
+arialabelattachmentmenu: Viðheftingar valmøguleikar
+arialabelmailtomenu: Teldupost búðstaðar valmøguleikar
+arialabelattachmentpreview: Brot av víðheftingum
+ariasummarycomposecontacts: Listi av persónum og bólkum at velja sum móttakarar
+arialabelcontactexportoptions: Valmøguleikar fyri persóna útflytan
+arialabelabookgroupoptions: Bústaðarsavn/bólka valmøguleikar
+arialabelpreferencesform: Stillinga frymil
+arialabelidentityeditfrom: Samleika broytingar formur
+arialabelresponseeditfrom: Svar broytingar frymil
+arialabelsearchterms: Leiti orð
+arialabelimagetools: Mynda tól
+helplistnavigation: Vís knappaborð sniðvegir
+helplistkeyboardnavigation: "Pílar upp/niður: Flyt rekkju\nMillumglopp: Vel verandi rekkju\nShift + upp/niður: Vel fleiri rekkjur uppi yvir/niðri undir\nCtrl + millumglopp: Legg verandi rekkju aftrat/tak frá "
+helplistkeyboardnavmessages: "Pílar vinstru/høgru: vaksa/minka boð trá (í tráar hátt einans)\nEnter: Opna valdu boð\nDelete: Flyt valdu boð til skrelluspann."
+helplistkeyboardnavcontacts: 'Enter: Opna verandi persón'
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+composeoptions: ''
+optionsandattachments: ''
+selection: ''
+lmode: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+mailimportdesc: ''
+mailimportzip: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+keepformatting: ''
+addheader: ''
+insertcontact: ''
+recipientedit: ''
+attachmentrename: ''
+summary: ''
+headers: ''
+allheaders: ''
+sendreceipt: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nonbinary: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+displaynext: ''
+replytoppostingnoindent: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+findcontacts: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+destination: ''
+skinauthor: ''
+arialabellistnav: ''
+arialabelmorecontactactions: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

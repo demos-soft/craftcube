@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for ga_IE. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Tharla botún!
+loginfailed: Níor éirigh leis an síniú isteach.
+cookiesdisabled: Ní ghlacann do líonléitheoir le fianáin.
+sessionerror: Tá an seisiúin neamhbhailí nó as feidhm.
+storageerror: Theip ar an iarracht chun nasc leis an bhfreastalaí Prótacal Rochtana Teachtaireachtaí Idirlín (IMAP)
+servererror: Botún ar an bhfreastalaí!
+servererrormsg: 'Botún freastalaithe: %msg'
+accountlocked: Bhí an iomarca iarrachtaí chun síniú isteach nár éirigh leo. Déan iarracht arís níos déanaí.
+connerror: Botún nasctha (Theip air an freastalaí a aimsiú)!
+dberror: Botún sa bhunachar sonraí!
+windowopenerror: Cuireadh bac ar an bhfuinneog aníos!
+requesttimedout: D'imigh an t-iarratas thar am
+errorreadonly: Ní féidir an oibríocht sin a dhéanamh. Tá an fillteán inléite amháin.
+errornoperm: Ní féidir an oibríocht sin a dhéanamh. Diúltaíodh cead duit.
+erroroverquota: Ní féidir an oibríocht sin a dhéanamh. Níl aon slí saor fágtha ar an ndiosc.
+erroroverquotadelete: Níl aon slí saor fágtha ar an ndiosca. Brúigh SHIFT+DEL chun teachtaireacht a scriosadh.
+invalidrequest: Iarratas neamhbhailí! Níor cuireadh sonraí i dtaisce.
+invalidhost: Ainm freastalaithe neamhbhailí.
+nomessagesfound: Níor aimsíodh aon teachtaireacht sa bhosca poist seo.
+loggedout: Chuir tú deireadh leis an dreas seo. Slán leat!
+mailboxempty: Tá an bosca poist folamh
+nomessages: Níl teachtaireachtaí ann
+refreshing: Ag athnuaigh...
+loading: Ag luchtú...
+uploading: Ag luchtú an chomhaid...
+attaching: Ag ceangail an chomhaid...
+uploadingmany: Ag uasluchtú comhaid...
+loadingdata: Ag luchtú sonraí...
+checkingmail: Ag dearbháil an bhfuil teachtaireachtaí nua ann...
+sendingmessage: Ag seoladh na teachtaireachta...
+messagesent: Seoladh an teachtaireacht go rathúil.
+savingmessage: Ag cur an teachtaireacht i dtaisce...
+messagesaved: Cuireadh an teachtaireacht i dtaisce sna Dréachtaí.
+successfullysaved: Cuireadh i dtaisce go rathúil é.
+savingresponse: Ag cur i dtaisce an téacs freagartha...
+deleteresponseconfirm: An bhfuil tú cinnte gur mian leat an téacs freagartha seo a scriosadh?
+nocontactselected: Níl teagmhálaí roghnaithe agat fós.
+addedsuccessfully: Cuireadh an teagmhálaí go rathúil sa leabhar seoltaí.
+contactexists: Tá teagmhálaí leis an seoladh ríomhphoist céanna ann cheana féin.
+contactnameexists: Tá teagmhálaí leis an ainm céanna ann cheana féin.
+blockedimages: Ar mhaithe le do phríobháideachas a chosaint, tá bac ar íomhánna cianda sa teachtaireacht seo.
+blockedresources: Ar mhaithe le do phríobháideachas a chosaint, tá bac ar acmhainní cianda.
+encryptedmessage: Is teachtaireacht chriptithe í seo agus ní féidir í a thaispeáint. Is dona linn sin!
+externalmessagedecryption: Is teachtaireacht chriptithe í seo agus is féidir í a dhíchriptiú le breiseán ar do líonléitheoir.
+nopubkeyfor: Níor aimsíodh eochair phoiblí bhailí i gcomhair $email
+encryptpubkeysfound: 'Aimsíodh na heochracha poiblí seo a leanas:'
+nocontactsfound: Níor aimsíodh aon duine sa leabhar seoltaí.
+contactnotfound: Níor aimsíodh an teagmhálaí atá á lorg agat.
+sendingfailed: Theip ar sheoladh na teachtaireachta.
+senttooquickly: Fan $sec soic(indí) sula sheolann tú an teachtaireacht seo.
+errorsavingsent: Tharla botún fad is a bhí an teachteachtaireacht a sheoladh á cur i dtaisce.
+errorsaving: Tharla botún fad is a bhí sí á cur i dtaisce.
+errormoving: Níorbh fhéidir na teachtaireachtaí a bhogadh.
+errorcopying: Níorbh fhéidir na teachtaireachtaí a mhacasamhlú.
+errordeleting: Níorbh fhéidir na teachtaireachtaí a scriosadh.
+errormarking: Níorbh fhéidir rian a chur ar na teachtaireachtaí
+alerttitle: Aire
+confirmationtitle: An bhfuil tú cinnte...
+deletecontactconfirm: An bhfuil tú cinnte gur mian leat an daoine roghnaithe a scriosadh?
+deletegroupconfirm: An bhfuil tú cinnte gur mian leat an bhaicle roghnaithe a scriosadh?
+deletemessagesconfirm: An bhfuil tú cinnte gur mian leat na teachtaireachtaí roghnaithe a scriosadh?
+deletefolderconfirm: An bhfuil tú cinnte gur mian leat an fillteán seo a scriosadh?
+movefolderconfirm: An mian leat dáiríre an fillteán sin a bhogadh?
+purgefolderconfirm: Ar bhfuil tú cinnte gur mian leat gach teachtaireacht sa bhfillteán seo a scriosadh?
+contactdeleting: Ag scriosadh na teagmhálacha...
+groupdeleting: Ag scriosadh na baicle...
+folderdeleting: Ag scriosadh an fhillteáin...
+foldermoving: Ag bogadh an fhillteáin...
+foldersubscribing: Ag cur síntiús leis an bhfillteán...
+folderunsubscribing: Ag baint síntiús den bhfillteán...
+formincomplete: Níor líon tú an fhoirm go hiomlán.
+noemailwarning: Cuir isteach seoladh ríomhphoist bailí le do thoil.
+nonamewarning: Cuir isteach ainm le do thoil.
+nopagesizewarning: Cuir isteach méid leathanaigh le do thoil.
+nosenderwarning: Cuir isteach seoladh ríomhphoist an tseoltóra.
+recipientsadded: Cuireadh faighteoir(í) go rathúil leis.
+norecipientwarning: Abair liom faighteoir amhain ar a laghad
+disclosedreciptitle: An iomarca faighteoirí poiblí
+nosubjectwarning: Níl aon ábhair ar an teachtaireacht, ba mhaith tú déarfaidh mé ábair?
+nosubjecttitle: Gan ábhar
+nobodywarning: Níl aon teacs san teachtaireacht, ba mhaith tú déarfaidh mé teachtaireacht ar bith?
+notsentwarning: Níor seoladh an teachtaireacht seo agus tá athruithe nach cuireadh i dtaisce inti. An mian leat do chuid athruithe a chuileáil?
+restoresavedcomposedata: 'Aimsíodh teachtaireacht a chumadh ach nár seoladh.\n\nÁbhar: $subject\nTaiscthe: $date\n\nAr mhaith leat an teachtaireacht seo a chur ar ais?'
+nosearchname: Abair liom ainm duine nó seoladh ríomhphost
+notuploadedwarning: Níl gach ceangaltán uasluchtaithe fós. Fan le do thoil nó cealaigh an t-uasluchtú.
+searchsuccessful: Fuair mé $n teachtaireacht
+contactsearchsuccessful: Aimsíodh $nr dteagmhálaí.
+searchnomatch: Níor aimsigh an cuardach aon rud.
+searching: Ag cuardach...
+checking: Ag dearbháil...
+stillsearching: Fós ag cuardach...
+nospellerrors: Níor aimsíodh aon bhotún litrithe.
+folderdeleted: Scriosadh an fillteán.
+deletedsuccessfully: D'éirigh mé, Scrios mé
+converting: Scrios mé formáidithe as an teachtaireacht seo
+messageopenerror: Níorbh fhéidir an teachtaireacht a luchtú ón bhfreastalaí.
+filelinkerror: Níor éirigh leis an gcomhad a cheangail.
+fileuploaderror: Theip ar uasluchtú an chomhaid.
+filesizeerror: Beigh an comhad ró-mhor. Is ea $size uas-saghas chun admháil léite
+filecounterror: Is féidir suas go dtí $count gcomhad a uasluchtú in aon dreas amháin.
+msgsizeerror: Theip air comhad a cheangail. Sáraíodh uasmhéid teachtaireachta ($size).
+copyerror: Níorbh fhéidir aon teagmháil a mhacasamhlú.
+moveerror: Níorbh fhéidir aon teagmháil a bhogadh...
+sourceisreadonly: Tá an foinse seolaigh seo inléite amháin
+errorsavingcontact: Theip mé, Níl an cumas agam an seolagh seo a sábháil
+movingmessage: Ag bogadh na teachtaireachtaí...
+copyingmessage: Ag macasamhlú na teachtaireachtaí...
+copyingcontact: Ag macasamhlú teagmhálach(a)...
+movingcontact: Ag bogadh teachtaireacht(aí)
+deletingmessage: Ag scriosadh teachtaireacht(aí)...
+markingmessage: Ag cur rian ar theachtaireacht(aí)...
+addingmember: Ag cur teagmhálacha leis an mbaicle...
+removingmember: Ag baint teagmhálaí (teagmhálaithe) ón mbaicle...
+receiptsent: Seoladh admháil léite go rathúil.
+errorsendingreceipt: Níorbh fhéidir an admháil a sheoladh.
+deleteidentityconfirm: An bhfuil tú cinnte gur mian leat an t-aitheantas seo a scriosadh?
+nodeletelastidentity: Ní féidir leat an t-aitheantas seo a scriosadh. Is é an ceann deireanach atá agat.
+forbiddencharacter: Tá carachtar neamhcheadaithe in ainm an fhillteáin.
+selectimportfile: Roghnaigh comhad le huasluchtú.
+addresswriterror: Ní féidir scríobh sa leabhar seoltaí roghnaithe.
+contactaddedtogroup: Cuireadh na teagmhálacha go rathúil leis an mbaicle seo.
+contactremovedfromgroup: Baineadh teagmhálaithe go rathúil on mbaicle.
+importwait: Á tabhairt isteach, fan le do thoil...
+importmessagesuccess: Tugadh $nr teachtaireacht isteach go rathúil
+importmessageerror: 'Theip ar an tabhairt isteach! Ní comhad teachtaireachta nó comhad bosca poist bailí é an comhad uasluchtaithe '
+opnotpermitted: Níl cead sin a dhéanamh!
+nofromaddress: 'Tá seoladh ríomhphoist ar iarraidh san aitheantas roghnaithe. '
+smtpconnerror: 'Botún SMTP ($code): Theip ar an nasc leis an bhfreastalaí.'
+smtpautherror: 'Botún SMTP ($code): Theip ar an bhfíordheimhniú.'
+smtperror: 'Botún SMTP: $msg'
+emailformaterror: 'Seoladh ríomhphoist neamhbhailí: $email'
+toomanyrecipients: Tá an iomarca faighteoirí ann. Laghdaigh líon na bhfaighteoir chuig $max.
+internalerror: Tharla botún inmheánach. Déan iarracht eile arís le do thoil.
+contactdelerror: Níorbh fhéidir na teagmhálaithe a scriosadh.
+contactdeleted: Scriosadh na teagmhálaithe go rathúil.
+contactrestoreerror: Níorbh fhéidir na teagmhálacha a scriosadh a chur ar ais.
+contactrestored: Cuireadh teagmhálaí(ithe) ar ais go rathúil.
+groupdeleted: Scriosadh an bhaicle.
+grouprenamed: Athainmníodh an bhaicle.
+groupcreated: Cruthaíodh an bhaicle.
+savedsearchdeleteerror: Níorbh fhéidir an cuardach atá i dtaisce a scriosadh.
+savedsearchcreateerror: Níorbh fhéidir cuardach i dtaisce a chruthú.
+messagedeleted: Scriosadh na teachtaireachtaí.
+messagemoved: Bogadh na teachtaireachtaí go rathúil.
+messagemovedtotrash: Bogadh na teachtaireachtaí go dtí Bruscar.
+messagecopied: Macasamhlaíodh na teachtaireachtaí.
+messagemarked: Cuireadh rian ar na teachtaireachtaí.
+namecannotbeempty: Ní féidir leis a bheith gan ainm.
+nametoolong: Tá an t-ainm rófhada.
+namedotforbidden: Ní féidir lanstád a bheith ag tús ainm an fhillteáin.
+folderupdated: Nuashonraíodh an fillteán.
+foldercreated: Cruthaíodh an fillteán.
+invalidimageformat: Ní formáid íomhá bailí í sin.
+mispellingsfound: Aimsíodh botúin litrithe san teachtaireacht.
+messagetoobig: Tá an teachtaireacht rómhór le gur féidir obair léi.
+noscriptwarning: 'Rabhadh: Tá Javascript de dhíth ar an gcóras ríomhphoist ghréasáin. Chun feidhm a bhaint as cumasaigh Javascript sna socruithe i líonléitheoir.'
+messageissent: Seoladh an teachtaireacht seo cheana, ach níor cuireadh i dtaisce fós í. An mian leat í a chur i dtaisce?
+errnotfound: Níor Aimsíodh an Comhad
+errnotfoundexplain: Níor aimsíodh an acmhainn a lorgadh!
+errfailedrequest: Iarratas ar theip air
+errauthorizationfailed: Theip ar an bhfíordheimhniú
+errunauthorizedexplain: Níorbh fhéidir a fhíordheimhniú go bhfuil cead agat rochtain a fháil ar an seirbhís seo!
+errcontactserveradmin: Déan teagmháil le riarthóir d'fhreastalaí.
+clicktoresumesession: Brúigh anseo chun leanúint ar aghaidh le do dhreas roimhe
+errcomposesession: Botún i gcum teachtaireacht
+clicktocompose: Brúigh anseo chun teachtaireacht nua a chumadh
+nosupporterror: Ní thacaíonn do líonléitheoir leis an ngné sin.
+siginserted: Cuireadh an síniú isteach go rathúil.
+responseinserted: Cuireadh an freagra isteach go rathúil.
+listempty: Tá an liosta folamh.
+listusebutton: Bain feidhm as an gcnaipe Cruthaigh chun taifead nua a chur leis.
+cookiesmismatch: ''
+dbconnerror: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+disclosedrecipwarning: ''
+foldersubscribed: ''
+folderunsubscribed: ''
+folderpurged: ''
+folderexpunged: ''
+csvfilemismatch: ''
+msgsizeerrorfwd: ''
+copysuccess: ''
+movesuccess: ''
+nogroupassignmentschanged: ''
+importformaterror: ''
+importconfirm: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+editorwarning: ''
+httpreceivedencrypterror: ''
+smtpfromerror: ''
+smtptoerror: ''
+smtprecipientserror: ''
+smtputf8error: ''
+smtpsizeerror: ''
+maxgroupmembersreached: ''
+savedsearchdeleted: ''
+savedsearchcreated: ''
+autocompletechars: ''
+autocompletemore: ''
+parentnotwritable: ''
+attachmentvalidationerror: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcomposesessionexplain: ''
+noresponsesavailable: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for ar_SA. Converted 1:1 from the
+# Roundcube reference localization (GPL-3.0+); keep languages in
+# sync with tools/i18n.py (verify / sync / add / remove).
+errortitle: حدث خطأ!
+loginfailed: فشل تسجيل الدخول
+cookiesdisabled: المتصفح الخاص بك لا يقبل الكوكيز
+sessionerror: انتهت صلاحية الجلسة الحالية أو أنها غيرصالحة
+cookiesmismatch: تم اكتشاف عدم تطابق في ملف تعريف الارتباط. من فضلك ، امسح ملفات تعريف الارتباط في المتصفح الخاص بك.
+storageerror: فشل الاتصال بخادم التخزين.
+servererror: خطأ في الخادم!
+servererrormsg: 'خطأ خادم: $msg'
+accountlocked: عدد كبير جدًا من محاولات تسجيل الدخول الفاشلة. حاول مرة أخرى في وقت لاحق.
+connerror: خطأ في الاتصال (فشل في الوصول الى الخادم)!
+dberror: خطأ في قاعدة البيانات!
+dbconnerror: غير قادر على الاتصال بقاعدة البيانات!
+windowopenerror: تم منع النافذة المنبثقة!
+requesttimedout: 'انتهت مهلة الطلب '
+errorreadonly: تعذر تنفيذ العملية. المجلد للقراءة فقط.
+errornoperm: تعذر تنفيذ العملية. ليست لديك الصلاحية.
+erroroverquota: تعذر تنفيذ العملية. لايوجد مساحة كافية.
+erroroverquotadelete: لا يوجد مساحة كافية. استخدم SHIFT+DEL لحذف الرسالة.
+invalidrequest: طلب غير صالح! لم تحفظ أية بيانات.
+invalidhost: اسم الملقم غير صالح.
+nomessagesfound: لم يعثر على أية رسائل في صندوق البريد هذا
+loggedout: لقد أنهيت الجلسة بنجاح. مع السلامة!
+mailboxempty: صندوق البريد فارغ
+nomessages: لا يوجد رسائل
+refreshing: جاري التحديث...
+loading: جاري العمل...
+uploading: جاري رفع الملف...
+attaching: إرفاق الملف جارٍ...
+uploadingmany: جاري تحميل الملفات...
+loadingdata: تحميل البيانات...
+checkingmail: التحقق من وجود رسائل جديدة...
+sendingmessage: إرسال الرسالة...
+messagesent: تم إرسال الرسالة بنجاح
+savingmessage: حفظ الرسالة...
+messagesaved: تم حفظ الرسالة في المسودات
+successfullysaved: تم الحفظ بنجاح
+savingresponse: جاري حفظ نص الرد...
+deleteresponseconfirm: هل تريد فعلاً حذف نص الرد هذا؟
+nocontactselected: لم تقم بتحديد جهة اتصال حتى الآن.
+addedsuccessfully: تمت إضافة المراسل إلى دفتر العناوينبنجاح
+contactexists: توجد جهة اتصال لها عنوان البريد الإلكتروني نفسه.
+contactnameexists: هناك مُرسال له نفس الإسم موجود مسبقاً.
+blockedimages: لحماية خصوصيتك، تم حجب الصور الغير مضمنة(البعيدة) في هذه الرسالة.
+blockedresources: لحماية خصوصيتك تم حظر الموارد البعيدة.
+suspiciousemail: تحتوي هذه الرسالة على عناوين بريد إلكتروني مشبوهة قد تكون احتيالية.
+bccemail: تحتوي الرسالة (الرسائل) المعاد توجيهها على مستلمين مخفيين (نسخة مخفية).
+bouncehint: سيتم إرسال الرسالة دون أي تعديلات، أي باستخدام النص الأصلي والمقدمات والمستلمين.
+encryptedmessage: هذه الرسالة مشفرة ولا يمكن عرضها. عذراً!
+externalmessagedecryption: هذه رسالة مشفرة ويمكن فك تشفيرها بملحق المتصفح الخاص بك.
+nopubkeyfor: لم يتم العثور على مفتاح عام صالح لـ $email
+nopubkeyforsender: لم يتم العثور على مفتاح عام صالح لهوية المرسل الخاصة بك. هل تريد تشفير الرسالة للمستلمين فقط؟
+encryptnoattachments: لا يمكن تشفير المرفقات التي تم تحميلها بالفعل. يرجى إعادة إضافتها في محرر التشفير.
+searchpubkeyservers: هل تريد البحث في خوادم المفاتيح العامة عن المفاتيح المفقودة؟
+encryptpubkeysfound: 'تم العثور على المفاتيح العامة التالية:'
+keyservererror: فشل الحصول على مفتاح من خادم المفاتيح.
+keyimportsuccess: تم استيراد المفتاح العام $key بنجاح إلى حلقة المفاتيح.
+nocontactsfound: لم يعثر على أي مراسل
+contactnotfound: تعذر العثور على المراسل المطلوب
+contactsearchonly: يجب عليك استخدام نموذج بحث لرؤية جهات الاتصال من دفتر العناوين المحدد.
+sendingfailed: فشل إرسال الرسالة
+senttooquickly: رجاء انتظر $sec ثوان قبل إرسال هذه الرسالة
+errorsavingsent: حدث خطأ أثناء حفظ الرسالة المُرسلة.
+errorsaving: حدث خطأ أثناء الحفظ.
+errormoving: تعذر نقل هذه الرسالة
+errorcopying: تعذر نسخ الرسائل
+errordeleting: تعذر حذف هذه الرسالة
+errormarking: تعذر تحديد الرسائل
+alerttitle: انتباه
+confirmationtitle: هل أنت متأكد...
+deletecontactconfirm: هل تريد حقاً حذف المراسلـ(ين) المحدد(ين)؟
+deletegroupconfirm: هل تريد فعلاً حذف المجموعة المحددة؟
+deletemessagesconfirm: هل تريد حذف الرسائل المحددة؟
+deletefolderconfirm: هل تريد حقاً حذف هذا المجلد؟
+movefolderconfirm: هل تريد حقًا نقل هذا المجلد؟
+purgefolderconfirm: هل تريد حقاً حذف جميع الرسائل في هذاالمجلد؟
+contactdeleting: جاري حذف المُراسلين...
+groupdeleting: جاري حذف المجموعة...
+folderdeleting: جاري حذف المجلد...
+foldermoving: جاري نقل المجلد...
+foldersubscribing: الإشتراك في المجلد...
+folderunsubscribing: إلغاء الإشتراك في المجد...
+formincomplete: لم يتم تعبئة بيانات الاستمارة بالكامل
+noemailwarning: الرجاء إدخال عنوان بريد إلكتروني صالح
+nonamewarning: الرجاء إدخال اسم
+nopagesizewarning: الرجاء إدخال حجم الصفحة
+nosenderwarning: الرجاء إدخال عنوان البريد الإلكتروني للمرسِل.
+recipientsadded: تمت إضافة المستلم(ين) بنجاح.
+norecipientwarning: الرجاء إدخال اسم مستقبل واحد على الأقل
+disclosedrecipwarning: سيتمكن جميع المستلمين من رؤية عناوين البريد الإلكتروني لبعضهم البعض. لتجنب ذلك وحماية خصوصيتهم، يمكنك استخدام حقل "نسخة مخفية".
+disclosedreciptitle: عدد كبير جدًا من المستلمين العامين
+nosubjectwarning: حقل "الموضوع" فارغ. هل تريد كتابة موضوعللرسالة؟
+nosubjecttitle: لا يوجد عنوان
+nobodywarning: إرسال هذه الرسالة دون نص؟
+notsentwarning: لم يتم إرسال الرسالة وبها تغييرات غير محفوظة. هل تريد تجاهل التغييرات الخاصة بك؟
+restoresavedcomposedata: 'يوجد رسالة سابقة ولاكن غير مرسلة.\n\nالموضوع: $subject\nحفظ: $date\n\n هل تريد بالفعل استعادة هذة الرسالة ؟'
+nosearchname: الرجاء إدخال اسم مراسل أو عنوان بريدإلكتروني
+notuploadedwarning: لم يتم رفع جميع المرفقات بعد. رجاءً الانتظار أو إلغاء عملية الرفع.
+searchsuccessful: عثر على $nr رسائل
+contactsearchsuccessful: عُثر على $nr مُراسَل
+searchnomatch: لم يعثر على شيء
+searching: جاري البحث...
+checking: جاري التحقق...
+stillsearching: البحث لازال جارياً...
+nospellerrors: لم يعثر على أية أخطاء إملائية
+folderdeleted: تم حذف المجلد بنجاح
+foldersubscribed: تم الإشتراك في المجلد بنجاح
+folderunsubscribed: تم إلغاء الإشتراك في المجلد بنجاح
+folderpurged: تم إفراغ المجلد بنجاح.
+folderexpunged: تم ضغط المجلد بنجاح.
+deletedsuccessfully: تم الحذف بنجاح
+converting: إزالة التنسيق من الرسالة...
+messageopenerror: تعذرت قراءة الرسالة من الخادم
+filelinkerror: فشل إرفاق الملف.
+fileuploaderror: فشل رفع الملف
+csvfilemismatch: لا يتم دعم استيراد ملفات CSV متعددة بحقول مختلفة.
+filesizeerror: حجم الملف الذي تحاول رفعه أكبر من الحجمالأقصى $size
+filecounterror: يمكنك تحميل ملفات بحد أقصى $count مرة واحدة.
+msgsizeerror: فشل إرفاق ملف. تم تجاوز الحد الأقصى لحجم الرسالة ($size).
+msgsizeerrorfwd: تم تجاوز الحد الأقصى لحجم الرسالة ($size). لم يتم إرفاق رسالة (رسائل) $num.
+copysuccess: تم نسخ $nr جهة اتصال بنجاح.
+movesuccess: تم نقل $nr جهة اتصال بنجاح.
+copyerror: لا يمكن نسخ أية جهة اتصال.
+moveerror: لا يمكن نقل أية جهة اتصال.
+sourceisreadonly: لا يمكن تعديل مصدر العنوان هذا
+errorsavingcontact: تعذر حفظ عنوان المراسل
+movingmessage: جاري نقل الرسالة...
+copyingmessage: جاري نسخ الرسالة...
+copyingcontact: جاري نسخ المُراسلين...
+movingcontact: جاري نقل جهات الاتصال...
+deletingmessage: جاري حذف الرسائل...
+markingmessage: جاري تحديد الرسائل...
+addingmember: جاري إضافة المُراسلين إلى المجموعة...
+removingmember: جاري إزالة المراسلين من المجموعة...
+receiptsent: أرسل إيصال الاستلام بنجاح
+errorsendingreceipt: تعذر إرسال إيصال الاستلام
+deleteidentityconfirm: هل تريد فعلاً حذف هذا المعرف؟
+nodeletelastidentity: لا يمكن حذف هذا السجل حيث أنه الوحيدالمتبقي.
+forbiddencharacter: اسم المجلّد يحتوي حروفاً ممنوعة
+selectimportfile: رجاء اختر ملفاً لرفعه
+addresswriterror: دفتر العناوين المحدد غير قابل للكتابة
+contactaddedtogroup: تمت إضافة المراسلين إلى هذه المجموعةبنجاح
+contactremovedfromgroup: تمت إزالة المراسلين من هذه المجموعةبنجاح
+nogroupassignmentschanged: لم يتم تغيير مهام المجموعة.
+importwait: جاري الاستيراد، رجاء انتظر...
+importformaterror: 'فشل في الاستيراد! الملف الذي تحاول رفعة ليس ملف استيراد صالح. '
+importconfirm: <b>تم استيراد $inserted مراسلين بنجاح، وتجاهل$skipped موجودين مسبقاً</b>:<p><em>$names</em></p>
+importconfirmskipped: <b>تم تخطي $skipped جهة/جهات اتصال موجودة</b>
+importconfirminvalid: <b>تم تخطي $invalid جهة/جهات اتصال غير صالحة</b>
+importconfirmerrors: <b>فشل استيراد $errors جهة/جهات اتصال صالحة</b>
+importmessagesuccess: تم استرداد $nr رسالة بنجاح
+importmessageerror: 'فشل في الاستيراد! الملف الذي تحاول رفعة ليس رسالة او صندوق بريد صالح. '
+opnotpermitted: العملية ممنوعة!
+nofromaddress: الهوية المحددة ينقصها عنوان البريد الإلكتروني.
+editorwarning: تغيير نوع المحرر قد يسبب فقد تنسيق النصز  هل ترغب المتابعة؟
+httpreceivedencrypterror: حدث خطأ جسيم في التهيئة. رجاءً اتصال بمدير الخادم حالاً. <b>لا يمكن إرسال بريدك.</b>
+smtpconnerror: 'خطأ SMTP ($code): تعذر الاتصال بالخادم'
+smtpautherror: 'خطأ SMTP ($code): تعذر التحقق من هويتك'
+smtpfromerror: 'خطأ SMTP ($code): تعذر تحديد المرسل "$from" ($msg)'
+smtptoerror: 'خطأ SMTP ($code): تعذرت إضافة المستلم "$to" ($msg)'
+smtprecipientserror: 'خطأ SMTP: تعذرت قراءة قائمة المرسل إليهم'
+smtputf8error: 'خطأ SMTP: لا يدعم الخادم Unicode في عنوان البريد الإلكتروني.'
+smtpsizeerror: 'خطأ SMTP: حجم الرسالة يتجاوز حد الخادم ($limit)'
+smtperror: 'خطأ SMTP: $msg'
+emailformaterror: 'عنوان بريد إلكتروني غير صحيح: $email'
+toomanyrecipients: عدد المرسل إليهم كبير. قلص العدد إلى $max.
+maxgroupmembersreached: عدد أعضاء المجموعة أكثر من $max
+internalerror: حدث خطأ داخلي. الرجاء المحاولة مرة أخرى.
+contactdelerror: تعذر حذف أسماء جهات الإتصال
+contactdeleted: تم حذف أسماء جهات الإتصال بنجاح
+contactrestoreerror: تعذر استعادة المُراسل المحذوف.
+contactrestored: تم استعادة المُراسل بنجاح.
+groupdeleted: تم حذف المجموعة بنجاح
+grouprenamed: تم تغيير إسم المجموعة بنجاح
+groupcreated: تم إنشاء المجموعة بنجاح
+savedsearchdeleted: تم بنجاح حذف البحث المحفوظ.
+savedsearchdeleteerror: تعذر حذف البحث المحفوظ
+savedsearchcreated: تم بنجاح إنشاء البحث المحفوظ.
+savedsearchcreateerror: تعذر إنشاء بحث محفوظ.
+messagedeleted: تم حذف الرسائل بنجاح
+messagemoved: تم نقل الرسائل بنجاح
+messagemovedtotrash: تم نقل الرسالة (الرسائل) إلى المهملات بنجاح.
+messagecopied: تم نسخ الرسائل بنجاح
+messagemarked: تم تحديد الرسائل بنجاح
+autocompletechars: إكتب $min أحرف على الأقل للحصول على التكملةالتلقائية
+autocompletemore: هناك المزيد من النتائج المطابقة. رجاءاكتب كلمات بحث أكثر.
+namecannotbeempty: لا يمكن ترك الإسم فارغاً
+nametoolong: الإسم طويل جداً
+namedotforbidden: لا يمكن أن يبدأ اسم المجلد بنقطة.
+folderupdated: تم تحديث المجلد بنجاح
+foldercreated: تم إنشاء المجلد بنجاح
+invalidimageformat: ليست صيغة صورة صحيحة
+mispellingsfound: عُثر على أخطاء إملائية في الرسالة
+parentnotwritable: تعذر إنشاء/نقل المجلد إلى المجلد المحدد.ليست لديك الصلاحية.
+messagetoobig: جزء الرسالة أكبر بكثير مما يمكن معالجته.
+attachmentvalidationerror: 'هذا المرفق مريب لأن نوعه لا يتطابق مع النوع المعلن في الرسالة. إذا كنت لا تثق في المرسل ، فلا يجب عليك فتحه في المتصفح لأنه قد يحتوي على محتويات ضارة <br/><br/><em>. $expected; تم العثور على: $detected </em>'
+noscriptwarning: 'تحذير: خادم البريد الالكتروني هذا يتطلب جافاسكربت , يرجى تفعيل الـ جافاسكربت في اعدادت المتصفح الخاص بك لتتمكن من استخدامة.'
+messageissent: تم إرسال الرسالة بالفعل ، ولكن لم يتم حفظها بعد. هل تريد حفظها الآن؟
+errnotfound: لم يتم العثور على الملف
+errnotfoundexplain: لم يتم العثور على المورد المطلوب!
+errfailedrequest: لم يتم الطلب
+errauthorizationfailed: فشل التفويض
+errunauthorizedexplain: تعذر التحقق من أنك مخول للوصول إلى هذه الخدمة!
+errrequestcheckfailed: فشل التحقق من الطلب
+errcsrfprotectionexplain: "لحمايتك ، الوصول إلى هذا المورد مؤمن ضد CSRF.\n إذا رأيت هذا ، فمن المحتمل أنك لم تقم بتسجيل الخروج قبل مغادرة تطبيق الويب.\n\n التفاعل البشري مطلوب الآن للمتابعة."
+errcontactserveradmin: يرجى الاتصال بمسؤول الخادم الخاص بك.
+clicktoresumesession: انقر هنا لاستئناف جلستك السابقة
+errcomposesession: خطأ في تكوين الجلسة
+errcomposesessionexplain: لم يتم العثور على جلسة الإنشاء المطلوبة.
+clicktocompose: انقر هنا لإنشاء رسالة جديدة
+nosupporterror: هذه الميزة لا يدعمها متصفح الويب الخاص بك.
+siginserted: تم إدخال توقيع بنجاح.
+responseinserted: تم إدخال الرد بنجاح.
+noresponsesavailable: لا توجد ردود متاحة
+listempty: القائمة فارغة.
+listusebutton: استخدم الزر "إنشاء" لإضافة سجل جديد.
+keypaircreatesuccess: تم إنشاء زوج مفاتيح جديد بنجاح لـ $identity .
+emptyattachment: يبدو أن هذا المرفق فارغ. <br>من فضلك ، تحقق مع الشخص الذي أرسل هذا.
+oauthloginfailed: فشل تسجيل الدخول إلى OAuth. حاول مرة أخرى.
+oauthinvalidrequest: طلب التفويض غير صالح أو غير مكتمل.
+oauthaccessdenied: رفض خادم التفويض أو المستخدم الطلب.

@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for ku. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Bi xêr hatî $product
+username: Navê bikarhêner
+password: Borînpeyv
+server: Rajegir
+login: Têkevê
+oauthlogin: Bi $provider re têkeve
+menu: Menu
+logout: Derkeve
+mail: Ename
+settings: Sazkarî
+addressbook: Pirtûka navnîşanê
+darkmode: Awayê tarî
+lightmode: Awayê ronî
+inbox: Hatî
+drafts: Reşnivîs
+sent: Şandî
+trash: Jêbirdank
+junk: Spam
+show_real_foldernames: Ji bo peldankên taybet navên rast nîşan bide
+subject: Mijar
+from: Ji
+sender: Şander
+to: Bo
+cc: Cc
+bcc: Bcc
+replyto: Bersivê bide
+date: Dîrok
+size: Mezinahî
+priority: Girîngî
+organization: Sazî
+readstatus: Rewşê bixwîne
+listoptions: Vebijêrkên rêzê...
+listoptionstitle: Vebijêrkên rêzê
+mailboxlist: Peldank
+messagesfromto: Peyam $ji bo $to ji $count
+threadsfromto: Mijar $ji bo $to ji $coun
+messagenrof: $nr peyam ji $count
+fromtoshort: $ji – $bo ji $count
+copy: Jê bigire
+move: Bilivîne
+moveto: Bilivîne bo...
+copyto: Jê bigire bo ...
+download: Daxîne
+open: Veke
+showattachment: Nîşan bide
+showanyway: Her çawa be nîşan bide
+filename: Navê pelê
+filesize: Mezinahiya pelê
+addtoaddressbook: Têxe lênûska navnîşanan
+sun: Yek
+mon: Duş
+tue: Sêş
+wed: Çar
+thu: Pên
+fri: Înî
+sat: Şem
+sunday: Yekşem
+monday: Duşem
+tuesday: Sêşem
+wednesday: Çarşem
+thursday: Pêncşem
+friday: Înî
+saturday: Şemî
+jan: Çil
+feb: Reş
+mar: Ada
+apr: Avr
+may: Gul
+jun: Pûş
+jul: Tîr
+aug: Teb
+sep: Îlo
+oct: Cot
+nov: Mij
+dec: Ber
+longjan: Çile
+longfeb: Reşemî
+longmar: Adar
+longapr: Avrêl
+longmay: Gulan
+longjun: Pûşper
+longjul: Tîrmeh
+longaug: Tebax
+longsep: Îlon
+longoct: Cotmeh
+longnov: Mijdar
+longdec: Berfanbar
+today: Îro
+refresh: Rojane bike
+checkmail: Ji bo peyamên nû kontrol bike
+compose: Peyamekê biafirîne
+writenewmessage: Peyameke nû biafirîne
+reply: Bersivê bide
+replytomessage: Bersivê şander bide 
+replytoallmessage: Bersivê ji bo hemû kesên ku ev peyan standine bişîne
+replyall: Bersivê hemûyan bide
+replylist: Lîsteyê bibersivîne
+forward: Beralî bike
+forwardmessage: Bersivê bide peyamê
+bounce: Ji nû ve bişîne
+deletemessage: Peyamê jê bibe
+undeletemessage: Pêyamê jê nebe
+movemessagetotrash: Peyamê bilivîne jêbirdankê
+printmessage: Vê peyamê çap bike
+previousmessage: Peyama berê nîşan bide
+firstmessage: Peyama yekemîn nîşan bide
+nextmessage: Peyama di pêş de nîşan bide
+lastmessage: Peyama dawî nîşan bide
+backtolist: Vegere rêza peyaman
+viewsource: Çavkaniyê nîşan bide
+mark: Nîşan bike
+markmessages: Peyamê nîşan bike
+markread: Wekî xwendî
+markunread: Wekî nexwendî
+markflagged: Wekî nîşankirî
+markunflagged: Wekî nenişankirî
+markundeleted: Wekî ku nejêbirî
+markasread: Wekî xwendî nîşan bide
+markasunread: Wekî nexwendî nîşan bide
+markasflagged: Wekî nîşankirî nîşan bide
+markasunflagged: Wekî nenîşankirî nîşan bide
+moreactions: Bêtir çalakî...
+markallread: Hemûyan wekî xwendî nîşan bike
+folders-cur: Tenê peldanka hilbijartî
+folders-sub: Peldanka hilbijartî û binpeldankên wê
+folders-all: Hemû peldank
+more: Bêtir
+back: Paş
+options: Vebijêrk
+composeoptions: Vebijêrkên nivîsandinê
+optionsandattachments: Vebijêrk û pêvek
+actions: Çalakî
+first: Pêşîn
+last: Dawîn
+previous: Pêşde
+next: Piştde
+select: Hilbijêre
+selection: Hilbijartin
+all: Hemû
+none: Ne yek jî
+currpage: Rûpela niha
+isread: Bixwîne
+unread: Nexwendî
+flagged: Nîşankirî
+unflagged: Ne nîşankirî
+unanswered: Bersivnedayî
+withattachment: Bi pêvek
+deleted: Jêbirî
+undeleted: Nê jêbirî
+replied: Bersivdayî
+forwarded: Beralî bike
+filter: Parzûn
+list: Lîste
+threads: Mijar
+expand-all: Hemûyan fereh bike
+expand-unread: Ên nexwendî veke
+collapse-all: Hemûyan hilweşîne
+showunread: Peyamên nexwendî nîşan bide
+expand_only_unread: tenê bi peyamên nexwendî
+fromto: Ji/Jê re
+flag: Al
+attachment: Pêvek
+nonesort: Ne yek jî
+sentdate: Dema şandinê
+arrival: Dema hatinê
+asc: ber bi jor ve
+desc: ber bi jêr ve
+listcolumns: Stûnan lîste bike
+listsorting: Stûna parzûnkirinê
+listorder: Rêza parzûnkirinê
+listmode: Moda dîtina lîsteyê
+lmode: Moda lîsteyê
+layoutlist: Lîste
+folderactions: Tevgerên dosyeyê...
+compact: Kompakt
+empty: Vala bike
+mailimportdesc: Tu dikare nameyê bi riya barkirina pelan di formatên <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> an<a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a> de bike.
+quota: Bikaranîna dîskê
+unknown: nenas
+unlimited: bêsînor
+quotatotal: Sînor
+quotaused: Bikarhatî
+quotastorage: Valahiya dîskê
+quotamessage: Hejmara peyaman
+shortheaderdate: Di $date de
+shortheaderto: Bo $to di $date de
+quicksearch: Lêgerîna bilez
+searchplaceholder: Bigere
+resetsearch: Lêgerînê ji nû ve saz bike
+msgtext: Hemû peyam
+type: Cûre
+namex: Nav
+currentfolder: Peldanka heyî
+subfolders: Ev û bindosye
+allfolders: Hemû dosye
+searchinterval-1W: ji hefteyekê kevntir
+searchinterval-1M: ji mehekê kevntir
+searchinterval-1Y: ji salekê kevntir
+searchinterval1W: ji hefteyekê biçûktir
+searchinterval1M: ji mehekê biçûktir
+searchinterval1Y: ji salekê biçûktir
+infolder: 'Peldank: $folder'
+currentaddressbook: Pirtûka navnîşanên heyî
+alladdressbooks: Hemû pirtûkên navnîşanan
+openinextwin: Di pencereyeke nû de veke
+emlsave: Daxîne (.eml)
+changeformathtml: Di forma HTMLê de nîşan bide
+editasnew: Wek nû sererast bike
+send: Bişîne
+sendmessage: Peyamê niha bişîne
+savemessage: Wekî reşnivîs tomar bike
+addattachment: Pelekê lê zêde bike
+charset: Curetîp
+editortype: Cureyê serastkat
+returnreceipt: Rapora Vegerînê
+mailreplyintro: 'Di $date de, şandyar nivîsî:'
+originalmessage: Peyama orîjînal
+selectimage: Wêne bibijêre
+addimage: Wêne tev bike
+selectmedia: Fîlmekê bibijêre
+addmedia: Fîlmekê tev bike
+keyid: ID a kilîtê
+bccinstead: Bcc bi kar bîne
+insert: Tev bike
+spellcheck: Bilêvkirin
+checkspelling: Kontrola rastnivîsê
+resumeediting: Serastkirinê bidomîne
+revertto: Şûnde bîne
+restore: Vegerîne
+restoremessage: Peyamê vegerîne?
+ignore: Paşguh bike
+responses: Bersiv
+insertresponse: Bersivekê têxînê
+manageresponses: Bersivan bi rê ve bibe
+newresponse: Bersiveke nê biafirîne
+addresponse: Bersivê tevlî bike
+editresponse: Bersivê biguherîne
+editresponses: Bersivan biguherîne
+responsename: Nav
+responsetext: Nivîsa bersivê
+attach: Pêvek
+attachments: Pêvek
+upload: Bar bike
+uploadprogress: $percent ($current ji $total)
+close: Bigire
+messageoptions: Vebijêrkên peyamê...
+low: Nizm
+lowest: Nizmtirîn
+normal: Asayî
+high: Bilind
+highest: Bilintirîn
+nosubject: (bê mijar)
+showimages: Nîşandana wêneyan
+allow: Bihêle
+alwaysshow: Her tim dîmenên ji $sender nîşan bide
+andnmore: $nr bêtir...
+details: Hûrgulî
+summary: Kurte
+headers: Sernav
+allheaders: Hemû sernav
+togglemoreheaders: Bêtir sernavên peyaman nîşan bide
+htmltoggle: HTML
+plaintoggle: Deqa tazî
+savesentmessagein: 'Peyama şandî tomar bike di '
+dontsave: tomar neke
+addcc: Cc Têxê
+addbcc: Bcc Têxê
+addreplyto: Bibersivîne têxê
+mdnrequest: Şandyarê/a vê peyamê xwest dema ku tu vê peyamê bixwînî ew were agahdarkirin. Tu dixwazî wî/ê agahdar bikî?
+receiptread: Rapora Vegerînê (xwendî)
+yourmessage: Ev rapora vegerîna peyama te ye
+receiptnote: 'Nîşe: Ev dide zanîn ka peyama te şand hat xwendin an na. Naveroka peyamê bi mîgogerî nayê zanîn.'
+zoomin: Mezin bike
+zoomout: Biçûk bike
+rotate: Bizivirîne
+increaseimage: Wêneyê mezin bike
+decreaseimage: Wêneyê biçûk bike
+rotateimage: Wêneyê bizivirîn
+showtools: Alavên wêneyê nîşan bide
+hidetools: Alavên wêneyê veşêre
+name: Navê xuya dibe
+firstname: Nav
+surname: Paşnav
+middlename: Navê navîn
+nameprefix: Pêşgir
+namesuffix: Paşgir
+nickname: Nûçik
+jobtitle: Şana Kar
+department: Beş
+gender: Zayend
+email: E-Peyam
+phone: Telefon
+address: Navnîşan
+street: Kolan
+locality: Bajar
+zipcode: ZIP Code
+region: Parêzgeh
+country: Welat
+birthday: Rojbûn
+anniversary: Sersal
+website: Website
+instantmessenger: IM
+notes: Nîşegel
+male: mêr
+female: jin
+othergender: ên din
+manager: Birêvebir
+assistant: Alîkar
+spouse: Hevjîn
+allfields: Hemû qad
+search: Bigere
+searchresult: Encama lêgerînê
+advsearch: Lêgerîna pêşketî
+advanced: Pêşketî
+other: Ên din
+printcontact: Têkiliyê çap bike
+qrcode: Koda QR
+typehome: Mal
+typework: Kar
+typeother: Ên din
+typemobile: Mobîl
+typemain: Sereke
+typehomefax: Faksa Malê
+typeworkfax: Faksa Kar
+typecar: Otomobîl
+typevideo: Bînûdeng
+typeassistant: Alîkar
+typehomepage: Malper
+typeblog: Blog
+typeprofile: Berg
+addfield: Qadekî zêde bike
+addcontact: Kesekî zêde bike
+editcontact: Têkiliyê serast bike
+contacts: Têkîlî
+contactproperties: Taybetmendiyên Kesan
+contactnameandorg: Nav û rêxistin
+personalinfo: Agahiyên kesane
+personal: Kesane
+contactphoto: Wêneyê Kes
+edit: Serast bike
+cancel: Betal
+save: Tomar bike
+delete: Jê bibe
+continue: Bidomîne
+ok: Baş e
+rename: Navê biguherîne
+addphoto: Tevlî bike
+replacephoto: Dîsa bi cih bike
+uploadphoto: Wêneyê bar bike
+choosefile: Pelê hilbijêre...
+choosefiles: Pelekê hilbijêre....
+browse: Bigere
+newcontact: Kesekî nû biafirîne
+deletecontact: Têkiliyên hilbijartî jê bibe
+composeto: Ji têkiliya hilbijartî re peyam bişîne
+contactsfromto: Têkiliyên $count ên di navbera $from - $to de
+print: Çap bike
+export: Derxe
+exportall: Hemûyan derxe
+exportsel: A bijartî derxe
+newgroup: Komeke nû çêke
+addgroup: Komek tev bike
+grouprename: Dîsa navekî li komê bike
+groupdelete: Komê jê bibe
+groupremove: Ji komê rake
+uponelevel: Astek jor
+previouspage: Seta berê nîşan bide
+firstpage: Seta yekemîn nîşan bide
+nextpage: Seta di rêzê de nîşan bide
+lastpage: Seta dawî nîşan bide
+group: Kom
+groups: Kom
+personaladrbook: Navnîşanên Takekesî
+searchsave: Lêgerînê tomar bike
+searchdelete: Lêgerînê jê bibe
+import: Derxe
+done: Qediya
+birth_day: Rojbûn
+birth_month: Meha rojbûnê
+birth_year: Sala rojbûnê
+settingsfor: Sazkarî ji bo
+about: Derbar
+preferences: Vebijêrk
+userpreferences: Vebijêrkên bikarhêner
+editpreferences: Vebijêrkên bikarhêner serast bike
+identities: Nasname
+manageidentities: Nasnameyan bi rê ve bibe
+newidentity: Nasnameya nû biafirîne
+addidentity: Nasnameyê tevlî bike
+editidentity: Nasnameyê biguherîne
+identityencryption: Şîfrekirin
+preferhtml: Wekî HTML nîşan bide
+htmlmessage: Peyama HTML
+messagepart: Parçe
+digitalsig: Îmzeya Dîjîtal
+dateformat: Formata dîrokê
+timeformat: Formata demê
+prettydate: Kurtenivîsa Dîrokê
+setdefault: Wekî standard tomar bike
+autodetect: Xweber
+language: Ziman
+timezone: Herêma demê
+pagesize: Hejmara peyamên her rûpelekê
+signature: Şanenav
+dstactive: Demjimêra havînî
+showinextwin: Peyamê di çarçoveyeke nû de veke
+composeextwin: Di çarçoveyeke nû de binivîse
+htmleditor: Peyameke HTML biafirîne
+htmlsignature: Şanenava HTML
+previewpane: Panela berê nîşan bide
+skin: Rûkara navrûyê
+uisettings: Navrûya bikarhêner
+serversettings: Sazkariyên rajegir
+askuser: bipirse min
+readwhendeleted: Di dema jêbirinê peyamê de wekî xwendî nîşan bike
+skipdeleted: Peyamên jêbirî nîşan nede
+fromknownsenders: ji şanderên nas
+frommycontacts: ji têkiliyên min
+always: Her dem
+autosavedraft: Xweber hilîne
+everynminutes: Her $n xulek
+never: qet
+immediately: a niha
+2231folding: Full RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Full RFC 2047 (ên din)
+advancedoptions: Vebijêrkên pêşketî
+mainoptions: Vebijêrkên sereke
+browseroptions: Vebijêrkên gerokê
+section: Beş
+newmessage: Peyama nû
+newmessageonly: tenê peyamên nû
+automarkread: Peyaman wekî xwendî nîşan bike
+afternseconds: Piştî  $n çirke
+privatemode: Taybet (Mal)
+businessmode: Karsazî (Kar)
+collectedaddresses: Navnîşanên komkirî
+editoroptions: Vebijêrkên edîtorê
+asattachment: wekî pêvek
+replyallmode: Çalakiya berdest a bişkoka [Bersiva hemûyan bide]
+replyalldefault: bersiva hemûyan bide
+allmessages: hemû peyam
+folder: Peldank
+folders: Peldank
+foldername: Navê peldankê
+subscribed: Ni şanenav
+messagecount: Peyam
+create: Biafirîne
+createfolder: Peldankeke nû biafirîne
+managefolders: Rêveberiya peldankan
+properties: Taybetmendî
+location: Cih
+info: Zanyarî
+foldertype: Cûreya peldankê
+personalfolder: Peldanka taybet
+otherfolder: Peldanka bikarhênerê din
+sharedfolder: Peldanka giştî
+findfolders: Peldankan bigere
+findcontacts: Têkiliyan bigere
+namespace.personal: Kesane
+namespace.other: Bikarhênerên din
+namespace.shared: Parvekirî
+dualusemail: Peyam
+dualusefolder: Peldank
+openmailvelopesettings: Sazkariyên Mailvelope veke
+encryption: Şîfrekirin
+mailvelopeenable: Çalak bike
+sortby: Şêweyê rêzkirinê
+sortasc: Wekî zêde dibe
+sortdesc: Wekî kêm dibe
+undo: Vegere
+plugin: Pêvek
+version: Guherto
+source: Çavkanî
+license: Lîsans
+support: Piştgiriyê bistîne
+savedsearches: Lêgerînên tomarkirî
+dateformatY: SSSS
+dateformaty: SS
+dateformatm: MM
+dateformatd: RR
+dateformatj: R
+dateformatn: M
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unicode
+english: Îngilîzî
+arabic: Erebî
+greek: Yunanî
+turkish: Tirkî
+chinese: Çînî
+arialabelreplyalloptions: Vebijarkên bersivdana hemûyan
+arialabelmoremessageactions: Bêtir çalakiyên peyaman
+arialabelmorecontactactions: Bêtir çalakiyên têkiliyê
+arialabelmarkmessagesas: Peyamên hilbijartî nîşan bike wekî...
+arialabelresponsesmenu: Menuya bersivên amadekirî
+arialabelresponseeditfrom: Forma guhertina bersivê
+arialabelsearchterms: Mercên lêgerîne
+arialabelimagetools: Alavên wêneyê
+followupto: ''
+forwardinline: ''
+forwardattachment: ''
+bouncemsg: ''
+invert: ''
+threaded: ''
+autoexpand_threads: ''
+do_expand: ''
+layout: ''
+layoutwidescreen: ''
+layoutdesktop: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+importmessages: ''
+mailimportzip: ''
+quotatype: ''
+shortheaderfrom: ''
+searchmod: ''
+body: ''
+searchscope: ''
+changeformattext: ''
+dsn: ''
+keepformatting: ''
+encrypt: ''
+encryptmessage: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+encryptandsign: ''
+keylength: ''
+keyexpired: ''
+keyrevoked: ''
+addheader: ''
+insertcontact: ''
+recipient: ''
+recipientedit: ''
+editidents: ''
+togglecomposeoptions: ''
+attachmentrename: ''
+alwaysallow: ''
+isdraft: ''
+togglefullheaders: ''
+maxuploadsize: ''
+addfollowupto: ''
+sendreceipt: ''
+sendalwaysto: ''
+maidenname: ''
+nonbinary: ''
+typepager: ''
+discard: ''
+exportvcards: ''
+groupassign: ''
+groupremoveselected: ''
+listgroup: ''
+importcontacts: ''
+importfromfile: ''
+importtarget: ''
+importreplace: ''
+importgroups: ''
+importgroupsall: ''
+importgroupsexisting: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+defaultcharset: ''
+htmlonreply: ''
+htmlonreplyandforward: ''
+showemail: ''
+logoutclear: ''
+logoutcompact: ''
+mailboxview: ''
+mdnrequests: ''
+autosend: ''
+autosendknown: ''
+autosendknownignore: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+ignorerequest: ''
+flagfordeletion: ''
+deletealways: ''
+deletejunk: ''
+showremoteimages: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+alwaysbutplain: ''
+showinlineimages: ''
+refreshinterval: ''
+messagesdisplaying: ''
+messagescomposition: ''
+mimeparamfolding: ''
+force7bit: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+focusonnewmessage: ''
+checkallfolders: ''
+displaynext: ''
+defaultfont: ''
+maintenance: ''
+signatureoptions: ''
+whenreplying: ''
+replyempty: ''
+replytopposting: ''
+replytoppostingnoindent: ''
+replybottomposting: ''
+replyremovesignature: ''
+autoaddsignature: ''
+replyandforwardonly: ''
+insertsignature: ''
+sigbelow: ''
+sigseparator: ''
+reqmdn: ''
+reqdsn: ''
+alwayskeepformatting: ''
+replysamefolder: ''
+defaultabook: ''
+autocompletesingle: ''
+listnamedisplay: ''
+contactformmode: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+spellcheckbeforesend: ''
+spellcheckoptions: ''
+spellcheckignoresyms: ''
+spellcheckignorenums: ''
+spellcheckignorecaps: ''
+addtodict: ''
+enableautolink: ''
+mailtoprotohandler: ''
+standardwindows: ''
+forwardmode: ''
+inline: ''
+replyalllist: ''
+olderxdays: ''
+specialfolders: ''
+folderproperties: ''
+parentfolder: ''
+getfoldersize: ''
+changesubscription: ''
+findmail: ''
+dualuselabel: ''
+generate: ''
+encryptioncreatekey: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+installedplugins: ''
+destination: ''
+skinauthor: ''
+westerneuropean: ''
+easterneuropean: ''
+southeasterneuropean: ''
+baltic: ''
+cyrillic: ''
+hebrew: ''
+nordic: ''
+thai: ''
+celtic: ''
+vietnamese: ''
+japanese: ''
+korean: ''
+arialabeltopnav: ''
+arialabeltasknav: ''
+arialabeltoolbar: ''
+arialabellistnav: ''
+arialabelactivetask: ''
+arialabelmessagessearchfilter: ''
+arialabelmailsearchform: ''
+arialabelcontactsearchform: ''
+arialabelmailquicksearchbox: ''
+arialabelquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfoldersearchform: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabelmailpreviewframe: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmessagenav: ''
+arialabelmessagebody: ''
+arialabelmessageactions: ''
+arialabelcontactquicksearch: ''
+arialabelcontactsearchbox: ''
+arialabelmessageheaders: ''
+arialabelforwardingoptions: ''
+arialabelcomposeoptions: ''
+arialabelattachmentuploadform: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+arialabelattachmentpreview: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabelabookgroupoptions: ''
+arialabelpreferencesform: ''
+arialabelidentityeditfrom: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

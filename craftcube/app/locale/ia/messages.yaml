@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for ia. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Un error ha occurrite.
+loginfailed: Apertura de session fallite.
+cookiesdisabled: Tu navigator non accepta cookies.
+sessionerror: Le session es invalide o ha expirate.
+cookiesmismatch: Cookie incorrecte detegite. Per favor rade le cookies de tu navigator.
+storageerror: Le connexion al servitor de immagazinage ha fallite.
+servererror: Error de servitor.
+servererrormsg: 'Error de sevitor: $msg'
+accountlocked: Troppo de tentativas fallite de authentication. Reproba plus tarde.
+connerror: Error de connexion (impossibile attinger le servitor).
+dberror: Error de base de datos.
+dbconnerror: Non pote connecter al base de datos!
+windowopenerror: Le fenestra pop-up ha essite blocate.
+requesttimedout: Requesta expirate
+errorreadonly: Impossibile exequer le operation. Le dossier es in modo lectura sol.
+errornoperm: Impossibile exequer le operation. Permission refusate.
+erroroverquota: Impossibile exequer le operation. Nulle spatio libere sur disco.
+erroroverquotadelete: Nulle spatio libere sur disco. Preme SHIFT+DEL pro deler un message.
+invalidrequest: Requesta non valide. Le datos non ha essite salveguardate.
+invalidhost: Nomine de servitor non valide.
+nomessagesfound: Nulle message trovate in iste cassa postal.
+loggedout: Tu ha correctemente terminate le session. A revider!
+mailboxempty: Le cassa postal es vacue
+nomessages: Nulle message
+refreshing: Refrescante…
+loading: Cargante…
+uploading: Incargante un file…
+attaching: Annexa file…
+uploadingmany: Incargante files…
+loadingdata: Cargante datos…
+checkingmail: Verificante si il ha nove messages…
+sendingmessage: Inviante le message…
+messagesent: Message inviate con successo.
+savingmessage: Salveguardante le message…
+messagesaved: Message salveguardate in "Versiones provisori".
+successfullysaved: Salveguardate con successo.
+savingresponse: Salveguardante le texto del responsa…
+deleteresponseconfirm: Es tu secur de voler deler iste texto de responsa?
+nocontactselected: Tu non ha ancora seligite un contacto.
+addedsuccessfully: Le contacto ha essite addite al adressario.
+contactexists: Un contacto con le mesme adresse de e-mail jam existe.
+contactnameexists: Un contacto con le mesme nomine jam existe.
+blockedimages: Pro proteger tu vita private, le imagines a distantia es blocate in iste message.
+blockedresources: Pro proteger tu vita private, le ressources distante ha essite blocate.
+suspiciousemail: Iste message contine adresses de e-posta suspecte de esser fraudulente.
+bccemail: Le sequente message(s) contine destinatarios confidential (Bcc).
+bouncehint: Le message essera inviate sin modificationes, i.e., usante le texto, capites e destinatarios del original.
+encryptedmessage: Iste message ha essite cryptate e non pote esser monstrate.
+externalmessagedecryption: Isto es un message cryptate e pote esser decryptate con tu extension de navigator.
+nopubkeyfor: Nulle clave public valide trovate pro $email
+nopubkeyforsender: Nulle clave public valide ha essite trovate pro tu identitate de expeditor. Vole tu cryptar le message pro le destinatarios solmente?
+encryptnoattachments: Le annexos ja incargate non pote esser cryptate. Per favor re-adde los in le editor cryptographic.
+searchpubkeyservers: Vole tu cercar le claves mancante in le servitores de claves public?
+encryptpubkeysfound: 'Le sequente claves public ha essite trovate:'
+keyservererror: Fallimento de obtener clave ab servitor de claves.
+keyimportsuccess: Le clave public $key ha essite correctemente importate in tu portaclaves.
+nocontactsfound: Nulle contacto trovate.
+contactnotfound: Le contacto requestate non ha essite trovate.
+contactsearchonly: Es necessari usar un formulario de recerca pro vider le contactos del adressario seligite.
+sendingfailed: Le invio del message ha fallite.
+senttooquickly: Per favor, attende $sec secunda(s) ante inviar iste message.
+errorsavingsent: Un error ha occurrite durante le salveguarda del message inviate.
+errorsaving: Un error ha occurrite durante le salveguarda.
+errormoving: Impossibile displaciar le message(s).
+errorcopying: Impossibile copiar le message(s).
+errordeleting: Impossibile deler le message(s).
+errormarking: Impossibile marcar le message(s).
+alerttitle: Attention
+confirmationtitle: Es tu secur…
+deletecontactconfirm: Es tu secur de voler deler le contacto(s) seligite?
+deletegroupconfirm: Es tu secur de voler deler le gruppo seligite?
+deletemessagesconfirm: Es tu secur de voler deler le message(s) seligite?
+deletefolderconfirm: Es tu secur de voler deler le dossier seligite?
+movefolderconfirm: Es tu secur de voler displaciar iste dossier?
+purgefolderconfirm: Es tu secur de voler deler tote le messages in iste dossier?
+contactdeleting: Delente contacto(s)…
+groupdeleting: Delente le gruppo…
+folderdeleting: Delente le dossier…
+foldermoving: Displaciante le dossier…
+foldersubscribing: Subscribente se al dossier…
+folderunsubscribing: Cancellante le subscription al dossier…
+formincomplete: Le formulario non ha essite totalmente completate.
+noemailwarning: Per favor, specifica un adresse de e-mail valide.
+nonamewarning: Per favor, specifica un nomine.
+nopagesizewarning: Per favor, specifica un dimension de pagina.
+nosenderwarning: Per favor, specifica le adresse de e-mail del expeditor.
+recipientsadded: Destinatario(s) correctemente addite.
+norecipientwarning: Per favor, specifica al minus un destinatario.
+disclosedrecipwarning: Tote le destinatarios videra le adresses de e-mail le unes del alteres. Pro evitar isto e proteger lor confidentialitate, usa le campo Bcc.
+disclosedreciptitle: Il ha troppo de destinatarios public
+nosubjectwarning: Le campo "Subjecto" es vacue. Vole tu specificar un subjecto ora?
+nosubjecttitle: Sin subjecto
+nobodywarning: Inviar iste message sin texto?
+notsentwarning: Le message non ha essite inviate e ha modificationes non salveguardate. Abandonar le modificationes?
+restoresavedcomposedata: 'Un message anteriormente componite ma non inviate ha essite trovate.\n\nSubjecto: $subject\nSalveguardate: $date\n\nVole tu restaurar iste message?'
+nosearchname: Per favor, specifica le nomine o adresse de e-mail de un contacto.
+notuploadedwarning: Non tote le annexos ha ancora essite incargate. Per favor, attende o cancella le incargamento.
+searchsuccessful: $nr messages trovate.
+contactsearchsuccessful: $nr contactos trovate.
+searchnomatch: Le recerca non ha producite resultatos.
+searching: Cercante…
+checking: Verificante…
+stillsearching: Continuante le recerca…
+nospellerrors: Nulle error de orthographia trovate.
+folderdeleted: Le dossier ha essite delite.
+foldersubscribed: Le subscription al dossier ha succedite.
+folderunsubscribed: Le subscription al dossier ha essite cancellate.
+folderpurged: Le dossier ha essite vacuate.
+folderexpunged: Le dossier ha essite compactate.
+deletedsuccessfully: Delite con successo.
+converting: Removente le formatation…
+messageopenerror: Impossibile cargar le message ab le servitor.
+filelinkerror: Le annexation del file ha fallite.
+fileuploaderror: Incargamento de file falleva.
+csvfilemismatch: Le importation de plure files CSV con differente campos non es supportate.
+filesizeerror: Le file incargate excede le dimension maxime de $size.
+filecounterror: Tu pote incargar al maximo $count files insimul.
+msgsizeerror: Le annexation de un file ha fallite. Le dimension maxime de un message ($size) ha essite excedite.
+msgsizeerrorfwd: Le dimension maxime de un message ($size) ha essite excedite. $num message(s) non ha essite annexate.
+copysuccess: $nr contactos ha essite copiate.
+movesuccess: $nr contactos ha essite displaciate.
+copyerror: Impossibile copiar le contactos.
+moveerror: Impossibile displaciar le contactos.
+sourceisreadonly: Iste fonte de adresses es pro lectura solmente.
+errorsavingcontact: Impossibile salveguardar le adresse del contacto.
+movingmessage: Displaciante le message(s)…
+copyingmessage: Copiante le message(s)…
+copyingcontact: Copiante le contacto(s)…
+movingcontact: Displaciante le contacto(s)…
+deletingmessage: Delente le message(s)…
+markingmessage: Marcante le message(s)…
+addingmember: Addente contacto(s) al gruppo…
+removingmember: Removente contacto(s) del gruppo…
+receiptsent: Un confirmation de lectura ha essite inviate.
+errorsendingreceipt: Impossibile inviar le confirmation.
+deleteidentityconfirm: Es tu secur de voler deler iste identitate?
+nodeletelastidentity: Non es possibile deler iste identitate; illo es tu ultime.
+forbiddencharacter: Le nomine del dossier contine un character interdicte.
+selectimportfile: Per favor tu selige le file a incargar.
+addresswriterror: Le adressario seligite non permitte le scriptura.
+contactaddedtogroup: Le contactos ha essite addite a iste gruppo.
+contactremovedfromgroup: Le contactos ha essite removite de iste gruppo.
+nogroupassignmentschanged: Nulle assignation de gruppo ha essite cambiate.
+importwait: Importation in curso, un momento…
+importformaterror: Importation fallite. Le file incargate non es un file de datos de importation valide.
+importconfirm: <b>$inserted contactos ha essite importate</b>
+importmessagesuccess: $nr messages ha essite importate
+importmessageerror: Importation fallite. Le file incargate non es un file de cassa postal o message valide.
+opnotpermitted: Operation non permittite.
+nofromaddress: Le adresse de e-mail manca in le identitate seligite.
+editorwarning: Si tu cambia de typo de editor, le formato del texto pote esser perdite. Vole tu continuar?
+httpreceivedencrypterror: Un error fatal de configuration ha occurrite. Contacta immediatemente tu administrator.<b>Non es possibile inviar tu message.</b>
+smtpconnerror: 'Error SMTP ($code): Le connexion al servitor ha fallite.'
+smtpautherror: 'Error SMTP ($code): Authentication fallite.'
+smtpfromerror: 'Error SMTP ($code): Impossibile fixar le expeditor "$from" ($msg).'
+smtptoerror: 'Error SMTP ($code): Impossibile adder le destinatario "$to" ($msg).'
+smtprecipientserror: 'Error SMTP: Impossibile interpretar le lista de destinatarios.'
+smtputf8error: 'Error de SMTP: Le servitor non supporta Unicode in le adresse de e-mail.'
+smtpsizeerror: 'Error de SMTP: Le grandor del message excede le limite del servitor ($limit)'
+smtperror: 'Error SMTP: $msg'
+emailformaterror: 'Adresse de e-mail invalide: $email'
+toomanyrecipients: Troppo de destinatarios. Reduce le numero de destinatarios a $max.
+maxgroupmembersreached: Le numero de membros del gruppo excede le maximo de $max.
+internalerror: Un error interne ha occurrite. Per favor, essaya lo de novo.
+contactdelerror: Impossibile deler le contacto(s).
+contactdeleted: Le contacto(s) ha essite delite.
+contactrestoreerror: Impossibile restaurar le contacto(s) delite.
+contactrestored: Le contacto(s) ha essite restaurate.
+groupdeleted: Le gruppo ha essite delite.
+grouprenamed: Le gruppo ha essite renominate.
+groupcreated: Le gruppo ha essite create.
+savedsearchdeleted: Le recerca salveguardate ha essite delite.
+savedsearchdeleteerror: Impossibile deler le recerca salveguardate.
+savedsearchcreated: Le recerca salveguardate ha essite create.
+savedsearchcreateerror: Impossibile crear le recerca salveguardate.
+messagedeleted: Le message(s) ha essite delite.
+messagemoved: Le message(s) ha essite displaciate.
+messagemovedtotrash: Le message(s) ha essite displaciate al corbe a papiro con successo.
+messagecopied: Le message(s) ha essite copiate.
+messagemarked: Le message(s) ha essite marcate.
+autocompletechars: Specifica al minus $min characteres pro autocompletion.
+autocompletemore: Plure entratas corresponde. Per favor, specifica plus characteres.
+namecannotbeempty: Le nomine non pote esser vacue.
+nametoolong: Le nomine es troppo longe.
+namedotforbidden: Le nomine del dossier non pote comenciar per un puncto.
+folderupdated: Le dossier ha essite actualisate.
+foldercreated: Le dossier ha essite create.
+invalidimageformat: Non es un formato de imagine valide.
+mispellingsfound: Errores de orthographia ha essite detegite in le message.
+parentnotwritable: Impossibile crear/displaciar le dossier in le dossier genitor seligite. Nulle permission de accesso.
+messagetoobig: Le parte del message es troppo grande pro tractar lo.
+attachmentvalidationerror: 'Iste annexo es suspecte perque su typo non corresponde al typo declarate in le message. Si tu non ha confidentia in le expeditor, tu non deberea aperir lo in le navigator perque illo pote haber contento nocive.<br/><br/><em>Expectate: $expected; trovate: $detected</em>'
+noscriptwarning: 'Attention: Iste servicio webmail require JavaScript. Pro usar lo, per favor activa JavaScript in le configuration de tu navigator.'
+messageissent: Le message ha jam essite inviate ma non ancora salveguardate. Vole tu salveguardar lo ora?
+errnotfound: File non trovate
+errnotfoundexplain: Le ressource requestate non ha essite trovate.
+errfailedrequest: Requesta fallite
+errauthorizationfailed: Autorisation fallite
+errunauthorizedexplain: Non poteva verificar que tu es autorisate a acceder a iste servicio.
+errrequestcheckfailed: Verification del requesta fallite
+errcsrfprotectionexplain: "Pro tu protection, le accesso a iste ressource ha essite securisate contra le falsification de requestas inter sitos (CSRF).\nSi tu vide isto, tu probabilemente non ha claudite session ante de quitar le application web.\n\nOra, un interaction human es necessari pro continuar."
+errcontactserveradmin: Per favor contacta le administrator de tu servitor.
+clicktoresumesession: Clicca hic pro continuar tu session anterior
+errcomposesession: Error del session de composition
+errcomposesessionexplain: Session de composition requestate non ha essite trovate.
+clicktocompose: Clicca hic pro componer un nove message
+nosupporterror: Iste function non es supportate per tu navigator web.
+siginserted: Signatura inserite con successo.
+responseinserted: Responsa inserite con successo.
+noresponsesavailable: Necun responsa disponibile
+listempty: Le lista es vacue.
+listusebutton: Usa le button Crear pro adder un nove entrata.
+keypaircreatesuccess: Un nove par de claves ha essite create pro $identity.
+emptyattachment: Iste annexo pare esser vacue.<br>Per favor, verifica lo presso le expeditor.
+oauthloginfailed: Le apertura de session con OAuth ha fallite. Per favor tenta lo de novo.
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

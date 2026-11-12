@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for en_CA. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: An error occurred!
+loginfailed: Login failed.
+cookiesdisabled: Your browser does not accept cookies.
+sessionerror: Your session is invalid or expired.
+storageerror: Connection to storage server failed.
+servererror: Server Error!
+servererrormsg: 'Server Error: $msg'
+connerror: Connection Error (Failed to reach the server)!
+dberror: Database Error!
+requesttimedout: Request timed out
+errorreadonly: Unable to perform operation. Folder is read-only.
+errornoperm: Unable to perform operation. Permission denied.
+erroroverquota: Unable to perform operation. No free disk space.
+erroroverquotadelete: No free disk space. Use SHIFT+DEL to delete a message.
+invalidrequest: Invalid request! No data was saved.
+invalidhost: Invalid server name.
+nomessagesfound: No messages found in this mailbox.
+mailboxempty: Mailbox is empty
+nomessages: No messages
+refreshing: Refreshing...
+loading: Loading...
+uploading: Uploading file...
+uploadingmany: Uploading files...
+loadingdata: Loading data...
+checkingmail: Checking for new messages...
+sendingmessage: Sending message...
+messagesent: Message sent successfully.
+savingmessage: Saving message...
+messagesaved: Message saved to Drafts.
+successfullysaved: Successfully saved.
+savingresponse: Saving response text...
+deleteresponseconfirm: Do you really want to delete this response text?
+addedsuccessfully: Contact added successfully to address book.
+contactnameexists: A contact with the same name already exists.
+blockedimages: To protect your privacy, remote images are blocked in this message.
+encryptedmessage: This is an encrypted message and can not be displayed. Sorry!
+nocontactsfound: No contacts found.
+contactnotfound: The requested contact was not found.
+sendingfailed: Failed to send message.
+senttooquickly: Please wait $sec sec(s). before sending this message.
+errorsavingsent: An error occurred while saving sent message.
+errorsaving: An error occurred while saving.
+errormoving: Could not move the message(s).
+errorcopying: Could not copy the message(s).
+errordeleting: Could not delete the message(s).
+errormarking: Could not mark the message(s).
+deletecontactconfirm: Do you really want to delete selected contact(s)?
+deletegroupconfirm: Do you really want to delete selected group?
+deletemessagesconfirm: Do you really want to delete selected message(s)?
+deletefolderconfirm: Do you really want to delete this folder?
+purgefolderconfirm: Do you really want to delete all messages in this folder?
+contactdeleting: Deleting contact(s)...
+groupdeleting: Deleting group...
+folderdeleting: Deleting folder...
+foldermoving: Moving folder...
+foldersubscribing: Subscribing folder...
+folderunsubscribing: Unsubscribing folder...
+formincomplete: The form was not completely filled out.
+noemailwarning: Please enter a valid email address.
+nonamewarning: Please enter a name.
+nopagesizewarning: Please enter a page size.
+norecipientwarning: Please enter at least one recipient.
+nosubjectwarning: The "Subject" field is empty. Would you like to enter one now?
+nobodywarning: Send this message without text?
+restoresavedcomposedata: 'A previously composed but unsent message was found.\n\nSubject: $subject\nSaved: $date\n\nDo you want to restore this message?'
+nosearchname: Please enter a contact name or email address.
+notuploadedwarning: Not all attachments have been uploaded yet. Please wait or cancel the upload.
+searchsuccessful: $nr messages found.
+contactsearchsuccessful: $nr contacts found.
+searchnomatch: Search returned no matches.
+searching: Searching...
+checking: Checking...
+stillsearching: Still searching...
+nospellerrors: No spelling errors found.
+folderdeleted: Folder successfully deleted.
+foldersubscribed: Folder successfully subscribed.
+folderunsubscribed: Folder successfully unsubscribed.
+deletedsuccessfully: Successfully deleted.
+converting: Removing formatting...
+messageopenerror: Could not load message from server.
+fileuploaderror: File upload failed.
+filesizeerror: The uploaded file exceeds the maximum size of $size.
+copysuccess: Successfully copied $nr contacts.
+movesuccess: Successfully moved $nr contacts.
+copyerror: Could not copy any contacts.
+moveerror: Could not move any contacts.
+sourceisreadonly: This address source is read only.
+errorsavingcontact: Could not save the contact address.
+movingmessage: Moving message(s)...
+copyingmessage: Copying message(s)...
+copyingcontact: Copying contact(s)...
+movingcontact: Moving contact(s)...
+deletingmessage: Deleting message(s)...
+markingmessage: Marking message(s)...
+addingmember: Adding contact(s) to the group...
+removingmember: Removing contact(s) from the group...
+receiptsent: Successfully sent a read receipt.
+errorsendingreceipt: Could not send the receipt.
+deleteidentityconfirm: Do you really want to delete this identity?
+nodeletelastidentity: You cannot delete this identity, it's your last one.
+forbiddencharacter: Folder name contains a forbidden character.
+selectimportfile: Please select a file to upload.
+addresswriterror: The selected address book is not writeable.
+contactaddedtogroup: Successfully added the contacts to this group.
+contactremovedfromgroup: Successfully removed contacts from this group.
+nogroupassignmentschanged: No group assignments changed.
+importwait: Importing, please wait...
+importformaterror: Import failed! The uploaded file is not a valid import data file.
+importconfirm: <b>Successfully imported $inserted contacts</b>
+importmessagesuccess: Successfully imported $nr messages
+importmessageerror: Import failed! The uploaded file is not a valid message or mailbox file
+opnotpermitted: Operation not permitted!
+httpreceivedencrypterror: A fatal configuration error occurred. Contact your administrator immediately. <b>Your message can not be sent.</b>
+smtpconnerror: 'SMTP Error ($code): Connection to server failed.'
+smtpautherror: 'SMTP Error ($code): Authentication failed.'
+smtpfromerror: 'SMTP Error ($code): Failed to set sender "$from" ($msg).'
+smtptoerror: 'SMTP Error ($code): Failed to add recipient "$to" ($msg).'
+smtprecipientserror: 'SMTP Error: Unable to parse recipients list.'
+smtperror: 'SMTP Error: $msg'
+toomanyrecipients: Too many recipients. Reduce the number of recipients to $max.
+maxgroupmembersreached: The number of group members exceeds the maximum of $max.
+internalerror: An internal error occurred. Please try again.
+contactdelerror: Could not delete contact(s).
+contactdeleted: Contact(s) deleted successfully.
+contactrestoreerror: Could not restore deleted contact(s).
+contactrestored: Contact(s) restored successfully.
+groupdeleted: Group deleted successfully.
+grouprenamed: Group renamed successfully.
+groupcreated: Group created successfully.
+savedsearchdeleted: Saved search deleted successfully.
+savedsearchdeleteerror: Could not delete saved search.
+savedsearchcreated: Saved search created successfully.
+savedsearchcreateerror: Could not create saved search.
+messagedeleted: Message(s) deleted successfully.
+messagemoved: Message(s) moved successfully.
+messagecopied: Message(s) copied successfully.
+messagemarked: Message(s) marked successfully.
+autocompletechars: Enter at least $min characters for autocompletion.
+autocompletemore: More matching entries found. Please type more characters.
+namecannotbeempty: Name cannot be empty.
+nametoolong: Name is too long.
+folderupdated: Folder updated successfully.
+foldercreated: Folder created successfully.
+invalidimageformat: Not a valid image format.
+mispellingsfound: Spelling errors detected in the message.
+parentnotwritable: Unable to create/move folder into selected parent folder. No access rights.
+messagetoobig: The message part is too big to process it.
+noscriptwarning: "Warning: This webmail service requires Javascript! In order to use it please enable Javascript in your browser's settings."
+cookiesmismatch: ''
+accountlocked: ''
+dbconnerror: ''
+windowopenerror: ''
+loggedout: ''
+attaching: ''
+nocontactselected: ''
+contactexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+externalmessagedecryption: ''
+nopubkeyfor: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+nosenderwarning: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+folderpurged: ''
+folderexpunged: ''
+filelinkerror: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+nofromaddress: ''
+editorwarning: ''
+smtputf8error: ''
+smtpsizeerror: ''
+emailformaterror: ''
+messagemovedtotrash: ''
+namedotforbidden: ''
+attachmentvalidationerror: ''
+messageissent: ''
+errnotfound: ''
+errnotfoundexplain: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcontactserveradmin: ''
+clicktoresumesession: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+clicktocompose: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

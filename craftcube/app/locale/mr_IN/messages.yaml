@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for mr_IN. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: काहीतरी चूक झाली
+loginfailed: प्रवेश करता आला नाही
+cookiesdisabled: तुमचा ब्राऊझर कुकीज घेऊ शकत नाही
+sessionerror: तुम्ही प्रवेश केल्यानंतर बराच वेळ काही न करता गेला म्हणून तुमचा कालावधी संपला किंवा तुमच्या कालावधीच्या नोंदेत काही चूक झाली आहे.
+storageerror: आयमॅप सर्व्हरशी संपर्क होवू शकला नाही.
+servererror: सर्व्‍हर चूक !
+servererrormsg: 'सर्व्हर चूक : $msg'
+dberror: माहितीसाठा चूक !
+errorreadonly: कृती करण्यास असमर्थ, फोल्डर फक्त बघण्यासाठी
+errornoperm: कृती करण्यास असमर्थ, परवानगी अमान्य
+invalidrequest: अवैध विनंती! माहिती साठवलेली नाही.
+nomessagesfound: या खात्यामधे कोणताही संदेश आलेला नाही
+loading: संदेश आणत आहे
+uploading: फाईल चढवली जात आहे...
+loadingdata: माहिती आणत आहे
+checkingmail: नवीन संदेश आले आहेत का हे पहात आहे
+sendingmessage: संदेश पाठवत आहे
+messagesent: संदेश यशस्वीरित्या पाठवण्यात आला आहे
+savingmessage: संदेश जतन करुन ठेवत आहे
+messagesaved: संदेश मसुदा फोल्डरमधे ठेवत आहे
+successfullysaved: यशस्वीरित्या ठेवला
+addedsuccessfully: नवीन नाव पत्तां नोंदवहीत व्यवस्थित ठेवला
+contactnameexists: सारख्या नावाची नोंद आधीच आहे
+blockedimages: तुमची गोपनीयता पाळण्यासाठी या संदेशातील दुसर्‍या सर्व्हरवरील चित्रे दिसणे थांबवले आहे.
+encryptedmessage: हा गुप्त व सांकेतिक संदेश आहे. तो तुम्हाला असा दाखवता येणार नाही.
+nocontactsfound: कोणताच पत्ता नोंदवहीत नाही.
+contactnotfound: या नावाचा कोणताच पत्ता नोंदवहीत नाही.
+sendingfailed: संदेश पाठवता आला नाही.
+senttooquickly: कृपया हा संदेश पाठवण्यापूर्वी $sec थांबा
+errormoving: संदेश तेथे ठेवता आला नाही.
+errorcopying: संदेशांची नक्‍कल करता आली नाही
+errordeleting: संदेश काढून टाकता आला नाही.
+errormarking: संदेशांवर खूण करता आली नाही.
+deletecontactconfirm: खूण केलेले सर्व पत्ते खरोखरच तुम्हाला काढून टाकायचे आहेत का?
+deletegroupconfirm: निवडलेला गट तुम्हाला नक्की नष्ट करायचा आहे का?
+deletemessagesconfirm: खूण केलेले सर्व संदेश खरोखरच तुम्हाला काढून टाकायचे आहेत का?
+deletefolderconfirm: हा फोल्डर खरोखरच तुम्हाला काढून टाकायचा आहेत का?
+purgefolderconfirm: या फोल्डरमधिल सर्व संदेश खरोखरच तुम्हाला काढून टाकायचे आहेत का?
+folderdeleting: फोल्डर काढून टाकत आहे
+foldermoving: फोल्डर हलवत आहे.
+formincomplete: फॉर्म पूर्णपणे भरलेला  नाही.
+noemailwarning: योग्य, बरोबर, आणि वैध इमेल पत्ता द्या.
+nonamewarning: नाव द्या
+nopagesizewarning: पानाचा आकार द्या
+norecipientwarning: किमान एकतरी पत्ता द्या ज्यांना तुम्हाला संदेश पाठवावयाचा आहे.
+nosubjectwarning: विषय दिलेला नाही. तुम्हाला विषय द्यायचा आहे का?
+nobodywarning: संदेशामधे कोणताही मजकूर नाही. तुम्हाला तसाच संदेश पाठवावयाचा आहे का?
+nosearchname: कृपया ज्यांना तुम्हाला संदेश पाठवावयाचा आहे त्यांचे नाव किंवा इमेल पत्ता द्या.
+notuploadedwarning: सर्व फाईल अजून चढवल्‍या गेलेल्‍या नाहीत. कृपया वाट पहा किंवा मागे फिरा
+searchsuccessful: $nr संदेष मिळाले.
+searchnomatch: शोध घेतल्यानंतर एकही संदेश मिळाला नाही
+searching: शोधत आहे......
+checking: तपासत आहे.....
+nospellerrors: शुध्दलेखनाची चूक सापडली नाही
+folderdeleted: फोल्डर यशस्वी रित्या काढून टाकण्यात आला आहे.
+deletedsuccessfully: यशस्वी रित्या काढून टाकण्यात आला आहे.
+converting: दृष्य स्वरुप काढून टाकण्यात येत आहे.
+messageopenerror: सर्व्हरवरुन संदेश आणता आला नाही.
+fileuploaderror: फाईल चढवता आली नाही
+filesizeerror: तुम्ही चढवलेली फाईल क्षमतेपेक्षा जास्त मोठी आहे.
+sourceisreadonly: पत्ता फक्त वाचण्यासाठी आहे.
+errorsavingcontact: पत्ता नोंदवहीत ठेवता आला नाही.
+movingmessage: संदेश हलवत आहे..
+copyingmessage: संदेशाची नक्‍कल करत आहे...
+receiptsent: पोचपावती यशस्वीरित्या पाठवण्यात आली आहे.
+errorsendingreceipt: पोचपावती पाठवता आली नाही.
+deleteidentityconfirm: तुम्हाला ही ओळख नक्की नष्ट करायची आहे का?
+nodeletelastidentity: तुम्ही हे खाते काढून टाकू शकत नाही कारण हे तुमचे शेवटचे खाते आहे.
+forbiddencharacter: फोल्डरच्या नावात न चालणारी अक्षरे किंवा खूणा आहेत.
+selectimportfile: चढवण्यासाठी फाईल निवडा
+addresswriterror: निवडलेल्या पत्ता नोंदवहीत नोंद करता येत नाही.
+contactaddedtogroup: पत्‍ते यशस्‍वीरित्‍या हया गटात वाढवण्‍यात आले.
+contactremovedfromgroup: पत्‍ते यशस्‍वीरित्‍या हया गटातून काढून टाकले.
+importwait: आयात करत आहे, कृपया वाट पहा.....
+importconfirm: <b>$inserted पत्ते यशस्वीरित्या आयात केल, $skipped आधिच असलेल्या नोंदी केल्या नाहीत</b>:<p><em>$names</em></p>
+opnotpermitted: ही क्रिया करण्यास परवानगी नाही.
+httpreceivedencrypterror: हानीकारक चूक झाली. व्‍यवस्‍थापकाशी तात्‍काळ संपर्क साधा. <b> तुमचा संदेश पाठवला नाही </b>
+smtpconnerror: 'SMTP चूक ($code): सर्व्‍हरशी संपर्क साधता येत नाही'
+smtpautherror: 'SMTP चूक ($code): ओळख पटवता येत नाही'
+smtpfromerror: 'SMTP चूक ($code): "$from" पाठवणार्‍याचे नाव टाकता आले नाही'
+smtptoerror: 'SMTP चूक ($code): प्राप्‍तकर्ता "$to" टाकता आला नाही'
+smtprecipientserror: 'SMTP चूक : प्राप्‍तकर्त्‍यांची यादी चालू करता आली नाही'
+smtperror: 'SMTP चूक : $msg'
+toomanyrecipients: खूप जास्‍त प्राप्‍तकर्ते. प्राप्‍तकर्त्‍यांची संख्‍या $max पर्यंत कमी करा
+maxgroupmembersreached: गट सभासद संख्‍या $max पेक्षा जास्‍त झाली आहे
+cookiesmismatch: ''
+accountlocked: ''
+connerror: ''
+dbconnerror: ''
+windowopenerror: ''
+requesttimedout: ''
+erroroverquota: ''
+erroroverquotadelete: ''
+invalidhost: ''
+loggedout: ''
+mailboxempty: ''
+nomessages: ''
+refreshing: ''
+attaching: ''
+uploadingmany: ''
+savingresponse: ''
+deleteresponseconfirm: ''
+nocontactselected: ''
+contactexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+externalmessagedecryption: ''
+nopubkeyfor: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+errorsavingsent: ''
+errorsaving: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+contactdeleting: ''
+groupdeleting: ''
+foldersubscribing: ''
+folderunsubscribing: ''
+nosenderwarning: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+restoresavedcomposedata: ''
+contactsearchsuccessful: ''
+stillsearching: ''
+foldersubscribed: ''
+folderunsubscribed: ''
+folderpurged: ''
+folderexpunged: ''
+filelinkerror: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+copysuccess: ''
+movesuccess: ''
+copyerror: ''
+moveerror: ''
+copyingcontact: ''
+movingcontact: ''
+deletingmessage: ''
+markingmessage: ''
+addingmember: ''
+removingmember: ''
+nogroupassignmentschanged: ''
+importformaterror: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+importmessagesuccess: ''
+importmessageerror: ''
+nofromaddress: ''
+editorwarning: ''
+smtputf8error: ''
+smtpsizeerror: ''
+emailformaterror: ''
+internalerror: ''
+contactdelerror: ''
+contactdeleted: ''
+contactrestoreerror: ''
+contactrestored: ''
+groupdeleted: ''
+grouprenamed: ''
+groupcreated: ''
+savedsearchdeleted: ''
+savedsearchdeleteerror: ''
+savedsearchcreated: ''
+savedsearchcreateerror: ''
+messagedeleted: ''
+messagemoved: ''
+messagemovedtotrash: ''
+messagecopied: ''
+messagemarked: ''
+autocompletechars: ''
+autocompletemore: ''
+namecannotbeempty: ''
+nametoolong: ''
+namedotforbidden: ''
+folderupdated: ''
+foldercreated: ''
+invalidimageformat: ''
+mispellingsfound: ''
+parentnotwritable: ''
+messagetoobig: ''
+attachmentvalidationerror: ''
+noscriptwarning: ''
+messageissent: ''
+errnotfound: ''
+errnotfoundexplain: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcontactserveradmin: ''
+clicktoresumesession: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+clicktocompose: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

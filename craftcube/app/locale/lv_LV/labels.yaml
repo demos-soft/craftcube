@@ -1,0 +1,734 @@
+# CraftCube catalogue labels for lv_LV. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Esiet laipni lūgti $product
+username: Lietotājvārds
+password: Parole
+server: Serveris
+login: Autorizēties
+oauthlogin: Autorizēties ar $provider
+menu: Izvēlne
+logout: Iziet
+mail: E-pasts
+settings: Iestatījumi
+addressbook: Adrešu grāmata
+darkmode: Tumšais režīms
+lightmode: Gaišais režīms
+inbox: Ienākošās
+drafts: Uzmetumi
+sent: Nosūtītās
+trash: Papīrgrozs
+junk: Mēstules
+show_real_foldernames: Sistēmas mapēm rādīt īstos nosaukumus
+subject: Temats
+from: 'No'
+sender: Sūtītājs
+to: Kam
+cc: Cc
+bcc: Bcc
+replyto: Atbildēt-Uz
+followupto: Sekot-Uz
+date: Datums
+size: Izmērs
+priority: Prioritāte
+organization: Uzņēmums
+readstatus: Izlasīšanas statuss
+listoptions: Vēstuļu saraksta attēlošanas iestatījumi...
+listoptionstitle: Saraksta parametri
+mailboxlist: Mapes
+messagesfromto: Vēstules $from līdz $to no $count
+threadsfromto: Vijumi $from līdz $to no $count
+messagenrof: $nr. vēstule no $count
+fromtoshort: $from – $to no $count
+copy: Kopēt
+move: Pārvietot
+moveto: Pārvietot uz...
+copyto: Kopēt uz ...
+download: lejupielādēt
+open: Atvērt
+showattachment: Rādīt
+showanyway: Vienalga rādīt
+filename: Faila nosaukums
+filesize: Faila izmērs
+addtoaddressbook: Pievienot adrešu grāmatai
+sun: Sv
+mon: P
+tue: O
+wed: T
+thu: C
+fri: P
+sat: Se
+sunday: Svētdiena
+monday: Pirmdiena
+tuesday: Otrdiena
+wednesday: Trešdiena
+thursday: Ceturtdiena
+friday: Piektdiena
+saturday: Sestdiena
+jan: Jan
+feb: Feb
+mar: Mar
+apr: Apr
+may: Maijs
+jun: Jūn
+jul: Jūl
+aug: Aug
+sep: Sep
+oct: Okt
+nov: Nov
+dec: Dec
+longjan: Janvāris
+longfeb: Februāris
+longmar: Marts
+longapr: Aprīlis
+longmay: Maijs
+longjun: Jūnijs
+longjul: Jūlijs
+longaug: Augusts
+longsep: Septembris
+longoct: Oktobris
+longnov: Novembris
+longdec: Decembris
+today: Šodien
+refresh: Atjaunot
+checkmail: Pārbaudīt e-pastu
+compose: Rakstīt vēstuli
+writenewmessage: Rakstīt jaunu vēstuli
+reply: Atbildēt
+replytomessage: Atbildēt sūtītājam
+replytoallmessage: Atbildēt sūtītājam vai listei un visiem adresātiem
+replyall: Atbildēt visiem
+replylist: Atbildēt listei
+forward: Pārsūtīt
+forwardinline: Pārsūtīt iekļaujot vēstulē
+forwardattachment: Pārsūtīt kā pielikumu
+forwardmessage: Pārsūtīt vēstuli
+bouncemsg: Sūtīt atkārtoti (bounce)
+bounce: Sūtīt atkārtoti
+deletemessage: Dzēst vēstuli
+undeletemessage: Atjaunot vēstuli
+movemessagetotrash: Pārvietot vēstuli uz papīrgrozu
+printmessage: Izdrukāt šo vēstuli
+previousmessage: Parādīt iepriekšējo vēstuli
+firstmessage: Parādīt pirmo vēstuli
+nextmessage: Parādīt nākamo vēstuli
+lastmessage: Parādīt pēdējo vēstuli
+backtolist: Atpakaļ uz vēstuļu sarakstu
+viewsource: Parādīt pirmtekstu
+mark: Atzīmēt
+markmessages: 'Atzīmēt vēstules:'
+markread: kā lasītas
+markunread: kā nelasītas
+markflagged: kā atzīmētas
+markunflagged: kā neatzīmētas
+markundeleted: Tā kā nav izdzēstas
+markasread: Atzīmēt kā lasītu
+markasunread: Atzīmēt kā nelasītu
+markasflagged: Atzīmēt kā marķētu
+markasunflagged: Atzīmēt kā nemarķētu
+moreactions: Papildus darbības...
+markallread: Atzīmēt visus kā izlasītus
+folders-cur: Tikai atzīmēto mapi
+folders-sub: Atzīmēt mapi un tās apakšmapes
+folders-all: Visas mapes
+more: Vairāk
+back: Atpakaļ
+options: Opcijas
+composeoptions: Rakstīšanas iestatījumi
+optionsandattachments: Opcijas un pielikumi
+actions: Darbību saraksts
+first: Pirmā
+last: Pēdējā
+previous: Iepriekšējā
+next: Nākošā
+select: Atzīmēt
+selection: Atlase
+all: Visas
+none: Nevienu
+currpage: Pašreizējā lapa
+isread: Lasīt
+unread: Nelasītās
+flagged: Atzīmētās
+unflagged: Nav atzīmēta
+unanswered: Neatbildētās
+withattachment: Ar pielikumu
+deleted: Dzēstās
+undeleted: Nav izdzēstas
+replied: Atbildēta
+forwarded: Pārsūtīta
+invert: Pretēji
+filter: Filtrēt
+list: Rādīt kā sarakstu
+threads: Rādīt kā vijumus
+expand-all: Izvērst visus
+expand-unread: Izvērst neizlasītās
+collapse-all: Sakļaut visas
+threaded: Rādīt vijumus
+showunread: Parādīt neizlasītās vēstules
+autoexpand_threads: Izvērst vēstuļu vijumus
+do_expand: visus vijumus
+expand_only_unread: tikai ar neizlasītām vēstulēm
+fromto: No/Kam
+flag: Atzīmēt
+attachment: Pielikums
+nonesort: Neviena
+sentdate: Nosūtīšanas datums
+arrival: Pienākšanas datums
+asc: augoša
+desc: dilstoša
+listcolumns: Saraksta kolonnas
+listsorting: Kārtošanas kolonnas
+listorder: Kārtošanas secība
+listmode: Attēlošanas veids
+lmode: Attēlošanas veids
+layout: Izklājums
+layoutwidescreen: Platekrāns
+layoutdesktop: Darba virsma
+layoutlist: Saraksts
+layoutwidescreendesc: Platekrāna (3 kolonnu skats)
+layoutdesktopdesc: Datorskats (plats skats ar e-pasta priekšskatījumu apakšā)
+layoutlistdesc: Saraksts (bez e-pasta prieksškatīšanas)
+folderactions: Darbības ar mapēm...
+compact: Saspiest
+empty: Iztukšot
+importmessages: Importēt vēstules
+mailimportdesc: Jūs varat augšupielādēt e-pastu izmantojot <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> vai <a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a> formāta failus.
+mailimportzip: Vairāki faili var tikt sakompresēti zip arhīvos.
+quota: Kvota
+unknown: nezināms
+unlimited: neierobežots
+quotatype: Kvotas tips
+quotatotal: Limits
+quotaused: Izlietots
+quotastorage: Kvota
+quotamessage: Vēstuļu skaits
+shortheaderdate: Datums $date
+shortheaderto: Adresāts $to datumā $date
+shortheaderfrom: No $from datumā $date
+quicksearch: Ārtā meklēšana
+searchplaceholder: Meklēt...
+resetsearch: Atstatīt meklēšanu
+searchmod: 'Meklēšanas modifikatori:'
+msgtext: Visā vēstulē
+body: Pamatteksts
+type: Tips
+namex: Vārds
+searchscope: Kur meklēt
+currentfolder: Pašreizējā mape
+subfolders: Šī un apakšmapes
+allfolders: Visas mapes
+searchinterval-1W: vecākas par nedēļu
+searchinterval-1M: vecākas par mēnesi
+searchinterval-1Y: vecākas par gadu
+searchinterval1W: nedēļu vecas
+searchinterval1M: mēnesi vecas
+searchinterval1Y: gadu vecas
+infolder: 'Mape: $folder'
+currentaddressbook: Adrešu grāmata
+alladdressbooks: Visas adrešu grāmatas
+openinextwin: Atvērt jaunā logā
+emlsave: lejupielādēt (.eml)
+changeformattext: Rādīt kā neformatētu tekstu
+changeformathtml: Rādīt kā HTML formatētu
+editasnew: Rediģēt kā jaunu
+send: Sūtīt
+sendmessage: Sūtīt vēstuli
+savemessage: Saglabāt kā uzmetumu
+addattachment: Pievienot failu
+charset: Rakstzīmju kopa
+editortype: Redaktora tips
+returnreceipt: Saņemšanas apstiprinājums
+dsn: Piegādes atskaite
+keepformatting: Saglabāt formatēšanu
+mailreplyintro: '$sender @ $date rakstīja:'
+originalmessage: Sākotnējā vēstule
+selectimage: Atzīmēt attēlu
+addimage: Pievienot attēlu
+selectmedia: Atzīmēt video
+addmedia: Pievienot video
+encrypt: Šifrēt
+encryptmessage: Šifrēt vēstuli
+encryptmessagemailvelope: Šifrēt vēstuli ar "Mailenvelope"
+importpubkeys: Importēt publiskās atslēgas
+encryptedsendialog: Sūta šifrēto vēstuli
+encryptandsign: Šifrēt un parakstīt
+keyid: Atslēgas ID
+keylength: Biti
+keyexpired: Beidzies termiņš
+keyrevoked: Atsaukta
+bccinstead: Lietot Bcc
+addheader: Pievienot lauku (Cc, Bcc, ...)
+insert: Ievietot
+insertcontact: Pievienot kontaktu(s)
+recipient: Saņēmējs
+recipientedit: Rediģēt saņēmēju
+editidents: Rediģēt identitātes
+spellcheck: Izrunāt
+checkspelling: Pārbaudīt pareizrakstību
+resumeediting: Turpināt rediģēšanu
+revertto: Atgriezt uz
+restore: Atjaunot
+restoremessage: Atjaunot vēstuli?
+ignore: Ignorēt
+responses: Atbildes
+insertresponse: Ievietot atbildi
+manageresponses: Pārvaldīt atbildes
+newresponse: Izveidot jaunu atbildi
+addresponse: Pievienot atbildi
+editresponse: Rediģēt atbildi
+editresponses: Rediģēt atbildes
+responsename: Vārds
+responsetext: Atbildes teksts
+attach: Pievienot
+attachments: Pielikumi
+upload: Augšupielādēt
+uploadprogress: $percent ($current no $total)
+close: Aizvērt
+messageoptions: Vēstuļu iestatījumi...
+togglecomposeoptions: Parādīt rakstīšanas iestatījumus
+attachmentrename: Pārsaukt pielikumu
+low: Zema
+lowest: Zemākā
+normal: Normāla
+high: Augsta
+highest: Augstākā
+nosubject: (bez tēmas)
+showimages: Rādīt attēlus
+allow: Atļaut
+alwaysshow: Vienmēr rādīt attēlus vēstulēs, kuras sūtījis $sender
+alwaysallow: Vienmēr atļaut no sūtītāja $sender
+isdraft: Šis ir melnraksts.
+andnmore: $nr vairāk...
+details: Detaļas
+summary: Kopsavilkums
+headers: Galvene
+allheaders: Visas galvenes
+togglemoreheaders: Rādīt galvenes papildus informāciju
+togglefullheaders: Slēpt galvenes papildus informāciju
+htmltoggle: HTML
+plaintoggle: Vienkāršs teksts
+savesentmessagein: Saglabāt nosūtīto vēstuli mapē
+dontsave: nesaglabāt
+maxuploadsize: Maksimālais atļautais faila izmērs ir $size
+addcc: Pievienot Cc
+addbcc: Pievienot Bcc
+addreplyto: Pievienot Atbildēt-Uz
+addfollowupto: Pievienot Followup-To
+sendreceipt: Vai nosūtīt izlasīšanas paziņojumu?
+mdnrequest: Šīs vēstules sūtītājs vēlas redzēt vēstules saņemšanas apstiprinājumu. Vai Jūs vēlaties nosūtīt šo apstiprinājumu?
+receiptread: Saņemšanas apstiprinājums
+yourmessage: Šis ir Jūsu nosūtītās vēstules saņemšanas apstiprinājums
+receiptnote: 'Piezīme: Šis apsiprinājums nozīmē tikai to, ka vēstule tika parādīta uz saņēmāja datora. Tas nenozīmē, ka saņēmējs ir izlasījis vai sapratis vēstules saturu.'
+sendalwaysto: Vienmēr sūtīt uz $email
+zoomin: Pietuvināt
+zoomout: Attālināt
+rotate: Pagriezt
+increaseimage: Palielināt attēla izmēru
+decreaseimage: Samazināt attēla izmēru
+rotateimage: Pagriezt attēlu
+showtools: Rādīt attēla rīkus
+hidetools: Paslēpt attēla rīkus
+name: Uzrādītais vārds
+firstname: Vārds
+surname: Uzvārds
+middlename: Otrais vārds
+nameprefix: Prefikss
+namesuffix: Sufikss
+nickname: Segvārds
+jobtitle: Amats
+department: Nodaļa
+gender: Dzimums
+maidenname: Pirmslaulības uzvārds
+email: E-pasts
+phone: Tālrunis
+address: Adrese
+street: Iela
+locality: Pilsēta
+zipcode: Pasta indekss
+region: Novads
+country: Pilsēta
+birthday: Dzimšanas diena
+anniversary: Gadadiena
+website: Mājaslapa
+instantmessenger: IM
+notes: Piezīmes
+male: vīrietis
+female: sieviete
+nonbinary: nebinārs
+othergender: cits
+manager: Menedžeris
+assistant: Asistents
+spouse: Laulātais
+allfields: Visi lauki
+search: Meklēt
+searchresult: Meklēšanas rezultāts
+advsearch: Paplašinātā meklēšana
+advanced: Paplašinātie iestatījumi
+other: Cits
+printcontact: Drukāt kontaktu
+qrcode: QR kods
+typehome: Mājas
+typework: Darbs
+typeother: Cits
+typemobile: Mobilais tālrunis
+typemain: Galvenais
+typehomefax: Fakss mājās
+typeworkfax: Fakss darbā
+typecar: Auto
+typepager: Peidžeris
+typevideo: Video
+typeassistant: Asistents
+typehomepage: Mājaslapa
+typeblog: Blogs
+typeprofile: Profils
+addfield: Pievienot lauku...
+addcontact: Pievienot kontaktu
+editcontact: Rediģēt kontaktu
+contacts: Kontakti
+contactproperties: Kontakta īpašības
+contactnameandorg: Vārds un organizācija
+personalinfo: Personīgā informācija
+personal: Personīgās
+contactphoto: Kontakta attēls
+edit: Rediģēt
+cancel: Atcelt
+save: Saglabāt
+delete: Dzēst
+discard: Nesaglabāt
+continue: Turpināt
+ok: LABI
+rename: Pārdēvēt
+addphoto: Pievienot
+replacephoto: Aizvietot
+uploadphoto: Augšupielādēt fotogrāfiju
+choosefile: Norādīt failu...
+choosefiles: Norādīt failus...
+browse: Pārlūkot
+newcontact: Izveidot jaunu kontaktu
+deletecontact: Dzēst atzīmētos kontaktus
+composeto: Rakstīt vēstuli
+contactsfromto: Ieraksti no $from līdz $to - kopā $count
+print: Drukāt
+export: Eksportēt
+exportall: Eksportēt visu
+exportsel: Eksportēt atzīmēto
+exportvcards: Eksportēt kontaktus vCard formātā
+newgroup: Izveidot jaunu grupu
+addgroup: Pievienot grupu
+grouprename: Pārdēvēt grupu
+groupdelete: Izdzēst grupu
+groupassign: Pievienot grupai...
+groupremove: Dzēst no grupas...
+groupremoveselected: Dzēst atzīmētos kontaktus no grupas
+uponelevel: Vienu līmeni uz augšu
+previouspage: Parādīt iepriekšējo lapu
+firstpage: Parādīt pirmo lapu
+nextpage: Parādīt nākamo lapu
+lastpage: Parādīt pēdējo lapu
+group: Grupa
+groups: Grupas
+listgroup: Rādīt grupas kontaktus
+personaladrbook: Personīgās adreses
+searchsave: Saglabāt meklēšanas pieprasījumu
+searchdelete: Dzēst saglabāto meklēšanas pieprasījumu
+import: Importēt
+importcontacts: Importēt kontaktus
+importfromfile: Importēt no faila
+importtarget: Kontaktus pievienot
+importreplace: Aizvietot visu adrešu grāmatu
+importgroups: Importēt grupu piesaistes
+importgroupsall: Visus (ja nepieciešams, izveidojiet grupas)
+importgroupsexisting: Tikai esošām grupām
+importdesc: Jūs varat augšupielādēt kontaktus no jau esošas adrešu grāmatas.<br/>Tiek atbalstīta adrešu importēšana no <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> or CSV (ar komatu-dalīta) datu formāta.
+importmapdesc: Pirms turpināt CSV (komatiem atdalītu) datu importēšanu, pārliecinieties, ka zemāk esošā lauku kartēšanas informācija ir pareiza.
+fieldnotmapped: Lauks nav kartēts (neimportēt)
+skipheader: Neimportēt pirmo rindu (galvenes)
+done: Pabeigts
+birth_day: Dzimšanas diena
+birth_month: Dzimšanas mēnesis
+birth_year: Dzimšanas gads
+settingsfor: Iestatījumi
+about: Par
+preferences: Iestatījumi
+userpreferences: Lietotāja iestatījumi
+editpreferences: Rediģēt iestatījumus
+identities: Identitātes
+manageidentities: Rediģēt identitātes
+newidentity: Izveidot jaunu identitāti
+addidentity: Pievienot identitāti
+editidentity: Rediģēt identitāti
+identityencryption: Šifrēšana
+preferhtml: Rādīt HTML formatētās vēstules
+defaultcharset: Noklusētā rakstzīmju kopa
+htmlmessage: HTML formatēta vēstule
+messagepart: Daļa
+digitalsig: Digitālais paraksts
+dateformat: Datuma formāts
+timeformat: Laika formāts
+prettydate: Rādīt īsos datumus
+setdefault: Uzlikt kā noklusēto
+autodetect: Automātiska
+language: Valoda
+timezone: Laika zona
+pagesize: Rindas lapā
+signature: Paraksts
+dstactive: Vasaras/ziemas laiks
+showinextwin: Vēstules atvērt jaunā logā
+composeextwin: Vēstuli rakstīt jaunā logā
+htmleditor: Rakstīt HTML formatētas vēstules
+htmlonreply: tikai atbildot uz HTML formatētām vēstulēm
+htmlonreplyandforward: tikai pārsūtot vai atbildot uz HTML formatētu vēstuli
+htmlsignature: HTML formatēts paraksts
+showemail: Pie vārda rādīt arī e-pasta adresi
+previewpane: Rādīt priekšskatījuma paneli
+skin: Saskarnes izskats
+logoutclear: Izejot no e-pasta, iztīrīt papīrgrozu
+logoutcompact: Izejot no e-pasta, saspiest iesūtni
+uisettings: Lietotāja saskarne
+serversettings: Servera iestatījumi
+mailboxview: Pastkastes skats
+mdnrequests: Vēstules izlasīšanas atskaites sūtīšana
+askuser: jautāt man vai sūtīt
+autosend: sūtīt automātiski
+autosendknown: automātiski sūtīt ja pieprasītājs ir manos kontaktos, par citiem jautāt
+autosendknownignore: automātiski sūtīt ja pieprasītājs ir manos kontaktos, citiem ignorēt un nesūtīt
+autosendtrusted: sūtīt saņemšanas apstiprinājumu uzticamiem sūtītājiem, pretējā gadījumā jautāt man
+autosendtrustedignore: sūtīt saņemšanas apstiprinājumu uzticamajiem sūtītājiem, pretējā gadījumā ignorēt
+ignorerequest: ignorēt pieprasījumu
+readwhendeleted: Dzēšot vēstules tās atzīmēt kā izlasītas
+flagfordeletion: Dzēšot vēstules tās nedzēst, bet marķēt kā dzēšamas
+skipdeleted: Nerādīt dzēstās vēstules
+deletealways: Izdzēst vēstules, ja tās neizdodas pārvietot uz papīrgrozu
+deletejunk: Automātiski dzēst vēstules no mēstuļu mapītes
+showremoteimages: Rādīt vēstulēs attēlus, kuri atrodas uz cita servera
+allowremoteresources: Atļaut ārējus resursus (attēli, stili)
+fromknownsenders: tikai no zināmiem sūtītājiem
+fromtrustedsenders: no uzticamajiem sūtītājiem
+frommycontacts: no maniem kontaktiem
+always: vienmēr
+alwaysbutplain: vienmēr, izņemot gadījumus, kad tiek atbildēts "parastā teksta" vēstulēm
+showinlineimages: Rādīt pielikuma attēlus zem vēstules
+autosavedraft: Automātiski saglabāt vēstules uzmetumu
+everynminutes: ik pēc $n minūtes(ēm)
+refreshinterval: Pārbaudīt jaunās vēstules
+never: nekad
+immediately: nekavējoties
+messagesdisplaying: Vēstuļu attēlošana
+messagescomposition: Vēstuļu rakstīšana
+mimeparamfolding: Pielikumu nosaukumi
+2231folding: Pilns RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Pilns RFC 2047 (citi)
+force7bit: Izmantot MIME kodējumu 8-bitu simboliem
+savelocalstorage: Saglabāt pārlūka atmiņā (pagaidu)
+advancedoptions: Paplašinātie iestatījumi
+toggleadvancedoptions: Parādīt paplašinātos iestatījumus
+focusonnewmessage: Uzstādīt pārlūka fokusu uz jaunu vēstuli
+checkallfolders: Meklēt visās mapēs jaunās vēstules
+displaynext: Pēc vēstules dzēšanas/pārvietošanas rādīt nākamo vēstuli
+defaultfont: Noklusētais fonts vēstulēm HTML formātā
+mainoptions: Galvenie iestatījumi
+browseroptions: Pārlūka iestatījumi
+section: Sadaļa
+maintenance: Uzturēšana
+newmessage: Vēstuļu pienākšana
+signatureoptions: Paraksta iestatījumi
+whenreplying: Atbildot
+replyempty: neiekļaut vēstules sākotnējo tekstu
+replytopposting: sākt jaunu vēstuli virs oriģināla
+replytoppostingnoindent: sākt jaunu ziņu virs citēšanas (bez identācijas)
+replybottomposting: sākt jaunu vēstuli zem oriģināla
+replyremovesignature: Atbildot izņemt oriģinālo parakstu no vēstules
+autoaddsignature: Automātiski pievienot parakstu
+newmessageonly: tikai jaunām vēstulēm
+replyandforwardonly: tikai atbildēm un pārsūtījumiem
+insertsignature: Ievietot parakstu
+sigbelow: Parakstu novietot zem sūtītās vēstules oriģinālā
+sigseparator: Parakstam obligāti izmantot standarta dalītāju
+automarkread: Atzīmēt vēstules kā lasītas
+afternseconds: pēc $n sekundēm
+reqmdn: Vienmēr pieprasīt saņemšanas apstiprinājumu
+reqdsn: Vienmēr pieprasīt atskati par piegādi
+alwayskeepformatting: Vienmēr lietot oriģinālo teksta formatējumu
+replysamefolder: Glabāt atbildes tajā pašā mapē, kurā ir vēstule, uz kuru tika atbildēts
+defaultabook: Noklusētā adrešu grāmata
+autocompletesingle: Automātiski aizpildot, nerādīt alternatīvās e-pasta adreses
+listnamedisplay: Rādīt kontaktus kā
+contactformmode: Kontaktu formas režīms
+privatemode: Privāts (Mājas)
+businessmode: Biznesa (Darba)
+collectedaddresses: Uzkrātās adreses
+collectedrecipients: Uzkrātie saņēmēji
+collectedrecipientsopt: Uzkrāt izejošo e-pastu adresātus iekš
+collectedsendersopt: Uzkrāt uzticamos sūtītājus iekš
+trustedsenders: Uzticamie sūtītāji
+spellcheckbeforesend: Pirms vēstules nosūtīšanas pārbaudīt pareizrakstību
+spellcheckoptions: Pareizrakstības iestatījumi
+spellcheckignoresyms: Ignorēt vārdus, kuri satur simbolus
+spellcheckignorenums: Ignorēt vārdus, kuri satur skaitļus
+spellcheckignorecaps: Ignorēt vārdus, kuri rakstīti ar lielajiem burtiem
+addtodict: Pievienot vārdnīcai
+editoroptions: Redaktora iestatījumi
+enableautolink: Automātiski konvertēt korektus URL uz hipersaitēm
+mailtoprotohandler: 'Atverot mailto: saites, lietot šo e-pasta programmu'
+standardwindows: Izlēcošie logi kā parasti logi
+forwardmode: Vēstuļu pārsūtīšana
+inline: iekļaujot
+asattachment: kā pielikumu
+replyallmode: '[Atbildēt visiem] pogas noklusētā darbība'
+replyalldefault: atbildēt visiem
+replyalllist: atbildēt tikai sarakstei (ja tāda tiek atrasta)
+allmessages: visām vēstulēm
+olderxdays: vecākas par $x dienām
+folder: Mapi
+folders: Mapes
+foldername: Mapes nosaukums
+subscribed: Abonēta
+messagecount: Vēstules
+create: Izveidot
+createfolder: Izveidot jaunu mapi
+managefolders: Rediģēt mapes
+specialfolders: Īpašās mapes
+properties: Īpašības
+folderproperties: Mapes īpašības
+parentfolder: Virsmape
+location: Atrašanās vieta
+info: Informācija
+getfoldersize: Uzklikšķiniet, lai uzzinātu mapes izmēru
+changesubscription: Uzklikšķiniet, lai mainītu abonēšanas iestatījumus
+foldertype: Mapes tips
+personalfolder: Privāta mape
+otherfolder: Cita lietotāja mape
+sharedfolder: Publiska mape
+findfolders: Meklēt mapes
+findcontacts: Atrast kontaktus
+findmail: Atrast epastus
+namespace.personal: Personīgās
+namespace.other: Citi lietotāji
+namespace.shared: Koplietota
+dualuselabel: Drīkst saturēt tikai
+dualusemail: vēstules
+dualusefolder: mapes
+generate: Ģenerēt
+encryptioncreatekey: Izveidot jaunu atslēgu pāri
+openmailvelopesettings: Parādīt "Mailvelope" iestatījumus
+encryptionprivkeysinmailvelope: 'Jūsu Mailvelope keyringā ir saglabātas $nr atbilstošas privātās atslēgas:'
+encryptionnoprivkeysinmailvelope: Šai sūtītāja identitātei vēl nav saglabāta PGP privātā atslēga jūsu Mailvelope paplašinājumā. Vai vēlaties izveidot jaunu, lai ieslēgtu šifrētu saziņu?
+encryption: Šifrēšana
+mailvelopeoptions: Mailvelope opcijas
+mailvelopemainkeyring: Izmantojiet Mailvelope galveno "keyring"
+mailvelopenotfound: Mailvelope paplašinājums Jūsu interneta pārlūkā nav iespējots/uzinstalēts.
+mailvelopeenable: Ieslēgt
+sortby: Kārtot pēc
+sortasc: Kārtot augošā secībā
+sortdesc: Kārtot dilstošā secībā
+undo: Atsaukt
+installedplugins: Uzstādītie spraudņi
+plugin: Spraudnis
+version: Versija
+source: Oriģināls
+destination: Galamērķis
+license: Licence
+skinauthor: no $author
+support: Atbalsts
+savedsearches: Saglabātie mekkējumi
+dateformatY: YYYY
+dateformaty: YY
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: B
+KB: kB
+MB: MB
+GB: GB
+unicode: Unikods
+english: Angļu
+westerneuropean: Rietumeiropas
+easterneuropean: Austrumeiropas
+southeasterneuropean: Dienvidaustrumu Eiropas
+baltic: Baltijas
+cyrillic: Kirilicas
+arabic: Arābu
+greek: Grieķu
+hebrew: Ebreju
+turkish: Turku
+nordic: Ziemeļvalstu
+thai: Taizemes
+celtic: Ķeltu
+vietnamese: Vjetnamiešu
+japanese: Japāņu
+korean: Korejiešu
+chinese: Ķīniešu
+arialabeltopnav: Loga kontorle
+arialabeltasknav: Programmas uzdevumi
+arialabeltoolbar: Programmas rīkjosla
+arialabellistnav: Saraksta navigācija
+arialabelactivetask: Aktīvā darbība
+arialabelmessagessearchfilter: Epastu saraksta filtrs
+arialabelmailsearchform: Epastu meklēšanas forma
+arialabelcontactsearchform: Kontaktu meklēšanas forma
+arialabelmailquicksearchbox: Epastu meklēšanas ievadlauks
+arialabelquicksearchbox: Meklēšanas ievadlauks
+arialabelfoldersearchfilter: Mapju saraksta filtrs
+arialabelfoldersearchform: Mapju meklēšanas forma
+arialabelfolderlist: Epastu mapju atzīmēšana
+arialabelmessagelist: Epastu saraksts
+arialabelmailpreviewframe: Ziņojuma priekšskats
+arialabelmailboxmenu: Izvēlne darbībām ar mapēm
+arialabellistselectmenu: Izvēlne sarakstu atzīmēšanai
+arialabelthreadselectmenu: Vēstuļu vijumu saraksta izvēlne
+arialabelmessagelistoptions: Vēstuļu attēlošanas un šķirošanas iestatījumi
+arialabelmailimportdialog: Vēstuļu importēšanas dialogs
+arialabelmessagenav: Vēstuļu navigācija
+arialabelmessagebody: Vēstules teksts
+arialabelmessageactions: Darbības ar vēstuli
+arialabelcontactquicksearch: Kontaktu meklēšanas forma
+arialabelcontactsearchbox: Kontaktu meklēšanas ievadlauks
+arialabelmessageheaders: Ziņojuma galvenes
+arialabelforwardingoptions: Pārsūtīšanas iestatījumi
+arialabelreplyalloptions: Atbildēt-visiem iestatījumi
+arialabelmoremessageactions: Citas darbības ar vēstulēm
+arialabelmorecontactactions: Citas darbības ar kontaktiem
+arialabelmarkmessagesas: Atzīmēt norādītās vēstules kā ...
+arialabelcomposeoptions: Rakstīšanas iestatījumi
+arialabelresponsesmenu: Gatavo atbilžu izvēlne
+arialabelattachmentuploadform: Pielikuma augšupielādes forma
+arialabelattachmentmenu: Pielikuma parametri
+arialabelmailtomenu: E-pasta adreses opcijas
+arialabelattachmentpreview: Pielikuma priekšskats
+ariasummarycomposecontacts: Kontaktu un grupu saraksts ko norādīt kā saņēmējus
+arialabelcontactexportoptions: Kontaktu eksportēšanas iestatījumi
+arialabelabookgroupoptions: Adrešu grāmatas/grupas iestatījumi
+arialabelpreferencesform: Iestatījumu forma
+arialabelidentityeditfrom: Identitātes rediģēšanas forma
+arialabelresponseeditfrom: Atbildes rediģēšanas forma
+arialabelsearchterms: Meklēšanas termini
+arialabeldropactionmenu: '"Velc un Noliec" darbības izvēlne'
+arialabelheadersmenu: Adresāta (galvenē) pievienošanas izvēlne
+arialabelimagetools: Attēla rīki
+helplistnavigation: Parādīt klaviatūras īsos taustiņus
+helplistkeyboardnavigation: 'Bultiņas augšup/lejup: Mainīt rindas izsgaismošanu/atzīmēšanu.
+
+  Garais taustiņš: Atzīmēt izgaismoto rindu.
+
+  Shift + augšup/lejup: Atzīmēt papildus rindas augšup/lejup.
+
+  Ctrl + Garais taustiņš: Pievienot vai noņemt izgaismoto rindu no atzīmēto saraksta.'
+helplistkeyboardnavmessages: 'Bultiņas pa labi/kreisi: atvērt vai aizvērt vēstules vijumu (tikai vijumu režīmā)
+
+  Enter: Atvērt atzīmēto/izgaismoto vēstuli.
+
+  Dzēst: Pārvietot atzīmēto vēstuli uz papīrgrozu.'
+helplistkeyboardnavcontacts: 'Enter: atvērt iezīmētos/izgaismotos kontaktus.'
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

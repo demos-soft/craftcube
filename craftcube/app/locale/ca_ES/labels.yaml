@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for ca_ES. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Benvingut a $product
+username: Nom d'usuari
+password: Contrasenya
+server: Servidor
+login: Inicia la sessió
+oauthlogin: Inicia la sessió amb $provider
+menu: Menú
+logout: Tanca sessió
+mail: Correu
+settings: Configuració
+addressbook: Contactes
+darkmode: Mode fosc
+lightmode: Mode clar
+inbox: Safata d'entrada
+drafts: Esborranys
+sent: Enviats
+trash: Paperera
+junk: Correu brossa
+show_real_foldernames: Mostra els noms reals a les carpetes especials
+subject: Assumpte
+from: Remitent
+sender: Remitent
+to: Destinatari
+cc: Cc
+bcc: Bcc
+replyto: Respon a
+followupto: Seguiment-A
+date: Data
+size: Mida
+priority: Prioritat
+organization: Organització
+readstatus: Estat de lectura
+listoptions: Llista d'opcions...
+listoptionstitle: Opcions de llista
+mailboxlist: Carpetes
+messagesfromto: Missatges $from a $to de $count
+threadsfromto: Fils $from a $to de $count
+messagenrof: Missatge $nr de $count
+fromtoshort: $from - $to de $count
+copy: Copia
+move: Mou
+moveto: Mou a...
+copyto: Copia a...
+download: Descarrega
+open: Obre
+showattachment: Mostra
+showanyway: Mostra-ho de totes maneres
+filename: Nom del fitxer
+filesize: Mida del fitxer
+addtoaddressbook: Afegeix a contactes
+sun: dg
+mon: dl
+tue: dm
+wed: dc
+thu: dj
+fri: dv
+sat: ds
+sunday: Diumenge
+monday: Dilluns
+tuesday: Dimarts
+wednesday: Dimecres
+thursday: Dijous
+friday: Divendres
+saturday: Dissabte
+jan: gen
+feb: feb
+mar: mar
+apr: abr
+may: mai
+jun: jun
+jul: jul
+aug: ago
+sep: set
+oct: oct
+nov: nov
+dec: des
+longjan: gener
+longfeb: febrer
+longmar: març
+longapr: abril
+longmay: maig
+longjun: juny
+longjul: juliol
+longaug: agost
+longsep: setembre
+longoct: octubre
+longnov: novembre
+longdec: desembre
+today: Avui
+refresh: Actualitza
+checkmail: Comprova si hi ha missatges nous
+compose: Escriu un missatge
+writenewmessage: Crea un nou missatge
+reply: Respon
+replytomessage: Respon al remitent
+replytoallmessage: Respon a la llista o al remitent i a tots els destinataris
+replyall: Respon a tots
+replylist: Respon a la llista
+forward: Reenvia
+forwardinline: Reenvia com en línia
+forwardattachment: Reenvia com a adjunt
+forwardmessage: Reenvia el missatge
+bouncemsg: Torna a enviar (rebot)
+bounce: Torna a enviar
+deletemessage: Suprimeix el missatge
+undeletemessage: Recupera el missatge
+movemessagetotrash: Mou el missatge a la paperera
+printmessage: Imprimeix aquest missatge
+previousmessage: Mostra el missatge anterior
+firstmessage: Mostra el primer missatge
+nextmessage: Mostra el missatge següent
+lastmessage: Mostra el darrer missatge
+backtolist: Torna a la llista de missatges
+viewsource: Mostra el codi font
+mark: Marca
+markmessages: Marca missatges
+markread: Com a llegit
+markunread: Com a no llegit
+markflagged: Com a marcat
+markunflagged: Com a no marcat
+markundeleted: Com a no suprimit(s)
+markasread: Marca-ho com a llegit
+markasunread: Marca-ho com a no llegit
+markasflagged: Marca-ho com a senyalat
+markasunflagged: Marca-ho com a no senyalat
+moreactions: Més accions...
+markallread: Marca-ho tot com a llegit
+folders-cur: Només la carpeta seleccionada
+folders-sub: Selecciona la carpeta i les seves subcarpetes
+folders-all: Totes les carpetes
+more: Més
+back: Torna
+options: Opcions
+composeoptions: Opcions de redacció
+optionsandattachments: Opcions i fitxers adjunts
+actions: Accions
+first: Primer
+last: Darrer
+previous: Anterior
+next: Següent
+select: Selecciona
+selection: Selecció
+all: Tots
+none: Cap
+currpage: Pàgina actual
+isread: Llegeix
+unread: No llegit
+flagged: Marcat
+unflagged: No marcat
+unanswered: No respost
+withattachment: Amb fitxer adjunt
+deleted: Suprimit
+undeleted: No s'ha suprimit
+replied: Respost
+forwarded: Reenviat
+invert: Inverteix
+filter: Filtre
+list: Llista
+threads: Fils de discussió
+expand-all: Expandeix-ho tot
+expand-unread: Expandeix no llegits
+collapse-all: Redueix-ho tot
+threaded: Encadenat
+showunread: Mostra els missatges no llegits
+autoexpand_threads: Expandeix els missatges encadenats
+do_expand: tots els fils de discussió
+expand_only_unread: només amb missatges no llegits
+fromto: Remitent/Destinatari
+flag: Marca
+attachment: Adjunt
+nonesort: Cap
+sentdate: Data d'enviament
+arrival: Data d'arribada
+asc: ascendent
+desc: descendent
+listcolumns: Llista les columnes
+listsorting: Columna d'ordenació
+listorder: Ordre d'ordenació
+listmode: Mode de vista de llista
+lmode: Mode de llista
+layout: Disposició
+layoutwidescreen: Pantalla panoràmica
+layoutdesktop: Escriptori
+layoutlist: Llista
+layoutwidescreendesc: Pantalla panoràmica (vista de 3 columnes)
+layoutdesktopdesc: Escriptori (llista de bat a bat amb la previsualització del missatge a sota)
+layoutlistdesc: Llista (sense previsualització del missatge)
+folderactions: Accions de carpeta...
+compact: Compacta
+empty: Buida
+importmessages: Importa missatges
+mailimportdesc: Podeu carregar correu mitjançant fitxers en format <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> o <a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a>.
+mailimportzip: Es poden comprimir diversos fitxers en arxius zip.
+quota: Ús del disc
+unknown: desconegut
+unlimited: il·limitat
+quotatype: Tipus de quota
+quotatotal: Límit
+quotaused: Utilitzat
+quotastorage: Espai de disc
+quotamessage: Comptador de missatges
+shortheaderdate: El $date
+shortheaderto: A $to el $date
+shortheaderfrom: De $from el $date
+quicksearch: Cerca ràpida
+searchplaceholder: Cerca...
+resetsearch: Neteja cerca
+searchmod: Cerca modificadors
+msgtext: Missatge sencer
+body: Cos
+type: Tipus
+namex: Nom
+searchscope: Abast
+currentfolder: Carpeta actual
+subfolders: Aquesta i les seves subcarpetes
+allfolders: Totes les carpetes
+searchinterval-1W: Més antic d'una setmana
+searchinterval-1M: Més antic d'un mes
+searchinterval-1Y: Més antic d'un any
+searchinterval1W: Menor d'una setmana
+searchinterval1M: Menor d'un mes
+searchinterval1Y: Menor d'un any
+openinextwin: Obre a una nova finestra
+emlsave: Descarrega (.eml)
+changeformattext: Mostra en format de text net
+changeformathtml: Mostra en format HTML
+editasnew: Edita com a nou
+send: Envia
+sendmessage: Envia el missatge
+savemessage: Desa com a esborrany
+addattachment: Adjunta un fitxer
+charset: Codificació de caràcters
+editortype: Tipus d'editor
+returnreceipt: Confirmació de recepció
+dsn: Notificació d'estat de lliurament
+keepformatting: Conserva la formatació
+mailreplyintro: 'El $date, $sender va escriure:'
+originalmessage: Missatge Original
+selectimage: Selecciona una imatge
+addimage: Afegeix una imatge
+selectmedia: Selecciona una pel·lícula
+addmedia: Afegeix una pel·lícula
+encrypt: Xifra
+encryptmessage: Xifra el missatge
+encryptmessagemailvelope: Xifra el missatge amb Mailvelope
+importpubkeys: Importa claus públiques
+encryptedsendialog: Envia el missatge xifrat
+encryptandsign: Xifra i signa
+keyid: ID de la clau
+keylength: Bits
+keyexpired: Caducat
+keyrevoked: Revocat
+bccinstead: Fes servir Bcc
+insert: Insereix
+insertcontact: Insereix contacte(s)
+recipient: Destinatari
+recipientedit: Edita el destinatari
+editidents: Edita identitats
+spellcheck: Ortografia
+checkspelling: Comprova l'ortografia
+resumeediting: Reprèn l'edició
+revertto: Torna a
+restore: Recupera
+restoremessage: Voleu restaurar el missatge?
+ignore: Ignora
+responses: Respostes
+insertresponse: Introduïu una resposta
+manageresponses: Gestiona respostes
+newresponse: Crea una nova resposta
+addresponse: Afegeix una resposta
+editresponse: Edita la resposta
+editresponses: Edita respostes
+responsename: Nom
+responsetext: Text de la resposta
+attach: Adjunta
+attachments: Adjunts
+upload: Afegeix
+uploadprogress: $percent ($current de $total)
+close: Tanca
+messageoptions: Opcions de missatge...
+togglecomposeoptions: Commuta les opcions de composició
+attachmentrename: Reanomena el fitxer adjunt
+low: Baixa
+lowest: La més baixa
+normal: Normal
+high: Alta
+highest: La més alta
+nosubject: (sense assumpte)
+showimages: Mostra les imatges
+allow: Permet
+alwaysshow: Mostra sempre les imatges de $sender
+alwaysallow: Permet-ho sempre de $sender
+isdraft: Aquest és un missatge esborrany.
+andnmore: $nr més...
+details: Detalls
+summary: Resum
+headers: Capçaleres
+allheaders: Totes les capçaleres...
+togglemoreheaders: Mostra més capçaleres del missatge
+togglefullheaders: Commuta les capçaleres del missatge en brut
+htmltoggle: HTML
+plaintoggle: Text net
+savesentmessagein: Desa el missatge enviat a
+dontsave: no ho desis
+maxuploadsize: La mida màxima permesa del fitxer és $size
+addcc: Afegeix Cc
+addbcc: Afegeix Bcc
+addreplyto: Afegeix Respon-A
+addfollowupto: Afegeix Seguiment-A
+sendreceipt: Voleu enviar el rebut de lectura?
+mdnrequest: El remitent d'aquest missatge ha demanat ser notificat quan llegiu aquest missatge. Voleu notificar al remitent?
+receiptread: Confirmació de recepció (llegit)
+yourmessage: Això és una confirmació de recepció per al vostre missatge
+receiptnote: "Nota: Aquesta confirmació només indica que el missatge ha estat mostrat a l'ordinador del destinatari. No hi ha garantia que el destinatari hagi llegit o entès el contingut del missatge."
+sendalwaysto: Envia-ho sempre a $email
+zoomin: Apropa-ho
+zoomout: Allunya-ho
+rotate: Gira-ho
+increaseimage: Augmenta la mida de la imatge
+decreaseimage: Disminueix la mida de la imatge
+rotateimage: Gira la imatge
+showtools: Mostra eines d'imatge
+hidetools: Amaga eines d'imatge
+name: Nom visible
+firstname: Nom
+surname: Cognom
+middlename: Segon Nom
+nameprefix: Prefix
+namesuffix: Sufix
+nickname: Àlies
+jobtitle: Càrrec
+department: Departament
+gender: Sexe
+maidenname: Cognom de Solter/a
+email: Correu electrònic
+phone: Telèfon
+address: Adreça
+street: Carrer
+locality: Ciutat
+zipcode: Codi postal
+region: Estat/Província
+country: País
+birthday: Data de naixement
+anniversary: Aniversari
+website: Pàgina web
+instantmessenger: IM
+notes: Notes
+male: home
+female: dona
+nonbinary: no-binari
+othergender: un altre
+manager: Gerent
+assistant: Assistent
+spouse: Cònjuge
+allfields: Tots els camps
+search: Cerca
+searchresult: Resultat de la cerca
+advsearch: Cerca Avançada
+advanced: Paràmetres avançats
+other: Un altre
+printcontact: Imprimeix el contacte
+qrcode: Codi QR
+typehome: Casa
+typework: Feina
+typeother: Un altre
+typemobile: Mòbil
+typemain: Principal
+typehomefax: Fax particular
+typeworkfax: Fax de la feina
+typecar: Cotxe
+typepager: Cercapersones
+typevideo: Vídeo
+typeassistant: Assistent
+typehomepage: Pàgina web personal
+typeblog: Bloc
+typeprofile: Perfil
+addfield: Afegeix camp...
+addcontact: Afegeix un contacte
+editcontact: Edita el contacte
+contacts: Contactes
+contactproperties: Propietats del contacte
+contactnameandorg: Nom i Organització
+personalinfo: Informació personal
+personal: Personal
+contactphoto: Foto de contacte
+edit: Edita
+cancel: Cancel·la
+save: Desa
+delete: Suprimeix
+discard: Descarta
+continue: Continua
+ok: D'acord
+rename: Reanomena
+addphoto: Afegeix
+replacephoto: Reemplaça
+uploadphoto: Afegeix una fotografia
+choosefile: Tria un fitxer...
+choosefiles: Tria fitxers...
+browse: Navega
+newcontact: Crea un nou contacte
+deletecontact: Suprimeix els contactes seleccionats
+composeto: Redacta un correu per a
+contactsfromto: Contactes $from a $to de $count
+print: Imprimeix
+export: Exporta
+exportall: Exporta'ls tots
+exportsel: Exporta els seleccionats
+exportvcards: Exporta contactes en format vCard
+newgroup: Crea un grup nou
+addgroup: Afegeix un grup
+grouprename: Reanomena el grup
+groupdelete: Suprimeix el grup
+groupassign: Assigna al grup...
+groupremove: Suprimeix del grup
+groupremoveselected: Suprimeix els contactes seleccionats del grup
+uponelevel: Un nivell amunt
+previouspage: Mostra la pàgina anterior
+firstpage: Mostra la primera pàgina
+nextpage: Mostra la pàgina següent
+lastpage: Mostra la darrera pàgina
+group: Grup
+groups: Grups
+listgroup: Llista els membres del grup
+personaladrbook: Llibreta d'adreces personals
+searchsave: Desa la cerca
+searchdelete: Suprimeix la cerca
+import: Importa
+importcontacts: Importa contactes
+importfromfile: Importa des de fitxer
+importtarget: Afegeix contactes a
+importreplace: Substitueix la llibreta d'adreces sencera
+importgroups: Importa assignacions de grup
+importgroupsall: Tot (crea grups si és necessari)
+importgroupsexisting: Només per a grups existents
+importdesc: Podeu importar contactes des d'una llibreta d'adreces existent. <br/>Actualment es permet la importació d'adreces des d'una <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> o en format de dades CSV (dades separades per coma).
+importmapdesc: Confirmeu que la informació de mapatge de camps següent és correcta abans de continuar amb la importació de dades CSV (separades per comes).
+fieldnotmapped: Camp no mapat (no ho importeu)
+skipheader: No importis la primera línia (capçaleres)
+done: Fet
+settingsfor: Configuració per a
+about: Quant a
+preferences: Preferències
+userpreferences: Preferències de l'usuari
+editpreferences: Edita les preferències de l'usuari
+identities: Identitats
+manageidentities: Gestiona les identitats
+newidentity: Crea una nova identitat
+addidentity: Afegeix una identitat
+editidentity: Edita la identitat
+identityencryption: Encriptació
+preferhtml: Mostra HTML
+defaultcharset: Joc de caràcters per defecte
+htmlmessage: Missatge HTML
+messagepart: Part
+digitalsig: Signatura digital
+dateformat: Format de la data
+timeformat: Format horari
+prettydate: Dates curtes
+setdefault: Posa-ho per defecte
+autodetect: Auto
+language: Idioma
+timezone: Fus horari
+pagesize: Files per pàgina
+signature: Signatura
+dstactive: Horari d'estiu
+showinextwin: Obre el missatge en una nova finestra
+composeextwin: Redacta en una nova finestra
+htmleditor: Escriu missatges en HTML
+htmlonreply: només en resposta a missatges en HTML
+htmlonreplyandforward: quan es reenviï o es respongui un missatge en HTML
+htmlsignature: Signatura en HTML
+showemail: Mostra l'adreça electrònica amb el nom
+previewpane: Mostra el panell de previsualització
+skin: Aparença de la interfície
+logoutclear: Buida la paperera quan es tanqui la sessió
+logoutcompact: Compacta la safata d'entrada quan es tanqui la sessió
+uisettings: Interfície de l'usuari
+serversettings: Configuració del servidor
+mailboxview: Vista de la bústia
+mdnrequests: Quan es demani confirmació de recepció
+askuser: demana'm què vull fer
+autosend: envia la confirmació de recepció
+autosendknown: envia la confirmació de recepció als meus contactes, pels demés demana-m'ho
+autosendknownignore: envia la confirmació als meus contactes, pels demés ignora-ho
+autosendtrusted: envia el rebut als remitents de confiança; en cas contrari, pregunta-m'ho
+autosendtrustedignore: envieu el rebut als remitents de confiança; en cas contrari, ignora-ho
+ignorerequest: Ignora la petició
+readwhendeleted: Marca el missatge com a llegit quan se suprimeixi
+flagfordeletion: Marca el missatge com a suprimit en comptes de suprimir-lo
+skipdeleted: No mostris els missatges suprimits
+deletealways: Si falla quan es mou un missatge a la Paperera, aleshores suprimeix-lo
+deletejunk: Suprimeix directament els missatges de correu brossa
+showremoteimages: Mostra les imatges remotes del missatge
+allowremoteresources: Permet recursos remots (imatges, estils)
+fromknownsenders: de remitents coneguts
+fromtrustedsenders: de remitents de confiança
+frommycontacts: dels meus contactes
+always: sempre
+alwaysbutplain: sempre, excepte quan es respon en text net
+showinlineimages: Mostra les imatges adjuntes sota el missatge
+autosavedraft: Desa l'esborrany automàticament
+everynminutes: cada $n minut(s)
+refreshinterval: Actualitza (comprova nous missatges, etc.)
+never: mai
+immediately: immediatament
+messagesdisplaying: Vista de missatges
+messagescomposition: Composició de missatges
+mimeparamfolding: Noms dels adjunts
+2231folding: Compleix RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Compleix RFC 2047 (un altre)
+force7bit: Fes servir la codificació MIME per a caràcters de 8-bits
+savelocalstorage: Desa-ho (temporalment) a l'espai local del navegador
+advancedoptions: Opcions avançades
+toggleadvancedoptions: Commuta les opcions avançades
+focusonnewmessage: Activa la finestra del navegador quan hi hagi un nou missatge
+checkallfolders: Comprova totes les carpetes per missatges nous
+displaynext: Mostra la següent entrada de la llista després de suprimir/moure
+defaultfont: Font de lletra per defecte del missatge en HTML
+mainoptions: Opcions principals
+browseroptions: Opcions del navegador
+section: Secció
+maintenance: Manteniment
+newmessage: Missatge nou
+signatureoptions: Opcions de signatura
+whenreplying: Quan es respongui
+replyempty: no citis el missatge original
+replytopposting: comença el missatge nou a sobre de l'original
+replytoppostingnoindent: comença el missatge nou a sobre de l'original (sense sagnat)
+replybottomposting: comença el missatge nou per sota de l'original
+replyremovesignature: Quan es respongui suprimeix la signatura original del missatge
+autoaddsignature: Afegeix la signatura automàticament
+newmessageonly: només si és un missatge nou
+replyandforwardonly: només a respostes i reenviaments
+insertsignature: Inclou la signatura
+sigbelow: Posa la signatura a sota del missatge que es respon
+sigseparator: Força el separador estàndard de signatures
+automarkread: Marca els missatges com a llegits
+afternseconds: després de $n segons
+reqmdn: Demana sempre la confirmació de recepció
+reqdsn: Demana sempre una notificació d'estat de lliurament
+replysamefolder: Posa les respostes a la carpeta del missatge que es respon
+defaultabook: Llibreta d'adreces per defecte
+autocompletesingle: Omet adreces alternatives quan s'autocompleti
+listnamedisplay: Llista contactes com a
+contactformmode: Mode de formulari de contacte
+privatemode: Privat (casa)
+businessmode: Empresa (feina)
+collectedaddresses: Adreces recollides
+collectedrecipients: Destinataris recollits
+collectedrecipientsopt: Emmagatzema els destinataris de correu electrònic de sortida a
+collectedsendersopt: Emmagatzema els remitents de confiança a
+trustedsenders: Remitents de Confiança
+spellcheckbeforesend: Comprova l'ortografia abans d'enviar un missatge
+spellcheckoptions: Opcions del corrector ortogràfic
+spellcheckignoresyms: Ignora paraules amb símbols
+spellcheckignorenums: Ignora paraules amb números
+spellcheckignorecaps: Ignora paraules amb lletres capitalitzades
+addtodict: Afegeix al diccionari
+mailtoprotohandler: 'Registra controlador de protocol pels enllaços mailto:'
+standardwindows: Gestiona les finestres emergents com si fossin finestres normals
+forwardmode: Reenviament de missatges
+inline: en línia
+asattachment: com un adjunt
+replyallmode: Acció per defecte del botó [Respon a tots]
+replyalldefault: respon a tots
+replyalllist: respon només a la llista de missatges (si n'hi ha cap)
+allmessages: tots els missatges
+olderxdays: més antic de $x dies
+folder: Carpeta
+folders: Carpetes
+foldername: Nom de la carpeta
+subscribed: Subscrit
+messagecount: Missatges
+create: Crea
+createfolder: Crea una carpeta nova
+managefolders: Gestiona carpetes
+specialfolders: Carpetes especials
+properties: Propietats
+folderproperties: Propietats de la carpeta
+parentfolder: Carpeta superior
+location: Ubicació
+info: Informació
+getfoldersize: Feu clic per veure la mida de la carpeta
+changesubscription: Feu clic per canviar la subscripció
+foldertype: Tipus de Carpeta
+personalfolder: Carpeta privada
+otherfolder: Carpeta d'un altre usuari
+sharedfolder: Carpeta pública
+findfolders: Cerca carpetes
+findcontacts: Cerca contactes
+findmail: Cerqueu missatges de correu electrònic
+namespace.personal: Personal
+namespace.other: Altres usuaris
+namespace.shared: Compartit
+dualuselabel: Només pot contenir
+dualusemail: missatges
+dualusefolder: carpetes
+generate: Genera
+encryptioncreatekey: Crea un nou parell de claus
+openmailvelopesettings: Obre la configuració de Mailvelope
+encryptionprivkeysinmailvelope: 'Teniu $nr claus privades coincidents emmagatzemades al vostre anell de claus de Mailvelope:'
+encryptionnoprivkeysinmailvelope: Aquesta identitat del remitent encara no té cap clau privada PGP emmagatzemada a la vostra extensió Mailvelope. Voleu crear-ne una per activar la missatgeria xifrada?
+encryption: Encriptació
+mailvelopeoptions: Opcions de Mailvelope
+mailvelopemainkeyring: Fes servir l’anell de claus principal de Mailvelope
+mailvelopenotfound: L'extensió Mailvelope no està activada/instal·lada al vostre navegador.
+sortby: Ordena per
+sortasc: Ordena ascendentment
+sortdesc: Ordena descendentment
+undo: Desfés
+installedplugins: Complements instal·lats
+plugin: Complement
+version: Versió
+source: Font
+destination: Destinació
+license: Llicència
+skinauthor: per $author
+support: Obtingueu ajuda
+savedsearches: Cerques desades
+dateformatY: AAAA
+dateformaty: AA
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unicode
+english: Anglès
+westerneuropean: Europeu occidental
+easterneuropean: Europeu oriental
+southeasterneuropean: Europeu Sud-Oriental
+baltic: Bàltic
+cyrillic: Ciríl·lic
+arabic: Àrab
+greek: Grec
+hebrew: Hebreu
+turkish: Turc
+nordic: Nòrdic
+thai: Tailandès
+celtic: Cèltic
+vietnamese: Vietnamita
+japanese: Japonès
+korean: Coreà
+chinese: Xinès
+arialabeltopnav: Finestra de control
+arialabeltasknav: Aplicació de tasques
+arialabeltoolbar: Aplicació de barra d'eines
+arialabellistnav: Navegació per llistes
+arialabelactivetask: Tasca activa
+arialabelmessagessearchfilter: Filtre de llistat de correus electrònics
+arialabelmailsearchform: Formulari de cerca de correus electrònics
+arialabelcontactsearchform: Formulari de cerca de contactes
+arialabelmailquicksearchbox: Entrada per la cerca de correus electrònics
+arialabelquicksearchbox: Entrada de cerca
+arialabelfoldersearchfilter: Filtre de llistat de carpetes
+arialabelfoldersearchform: Formulari de cerca de carpetes
+arialabelfolderlist: Selecció de carpeta de correu electrònic
+arialabelmessagelist: Llistat de missatges de correu electrònic
+arialabelmailpreviewframe: Previsualitza el missatge
+arialabelmailboxmenu: Menú d'accions de carpeta
+arialabellistselectmenu: Menú de seleccions de la llista
+arialabelthreadselectmenu: Menú de llistat de fils
+arialabelmessagelistoptions: Opcions de visualització de llista de missatges i ordenació
+arialabelmailimportdialog: Diàleg per importar missatges
+arialabelmessagenav: Missatge de navegació
+arialabelmessagebody: Cos del missatge
+arialabelmessageactions: Accions del missatge
+arialabelcontactquicksearch: Formulari per la cerca de contactes
+arialabelcontactsearchbox: Entrada per la cerca de contactes
+arialabelmessageheaders: Capçaleres del missatge
+arialabelforwardingoptions: Opcions de re-enviament
+arialabelreplyalloptions: Opcions per respondre a tots
+arialabelmoremessageactions: Més accions de missatge
+arialabelmorecontactactions: Més accions de contacte
+arialabelmarkmessagesas: Marca els missatges seleccionats com a...
+arialabelcomposeoptions: Opcions de composició
+arialabelresponsesmenu: Menú de respostes 'enllaunades' o establertes
+arialabelattachmentuploadform: Formulari per pujar adjunts
+arialabelattachmentmenu: Opcions de fitxers adjunts
+arialabelmailtomenu: Opcions d’adreça de correu electrònic
+arialabelattachmentpreview: Previsualitza l'adjunt
+ariasummarycomposecontacts: Llista de contactes i grups per seleccionar com a destinataris
+arialabelcontactexportoptions: Opcions per exportar contactes
+arialabelabookgroupoptions: Opcions de llibreta d'adreces/grup
+arialabelpreferencesform: Formulari de preferències
+arialabelidentityeditfrom: Formulari d'edició d'identitats
+arialabelresponseeditfrom: Formulari d'edició de respostes
+arialabelsearchterms: Cerca termes
+arialabeldropactionmenu: Menú d'accions d'Arrossega i Deixa anar
+arialabelheadersmenu: Menú per afegir el destinatari (capçalera)
+arialabelimagetools: Eines d'imatge
+helplistnavigation: Llista la navegació per teclat
+helplistkeyboardnavigation: "Fletxes amunt/avall: Mou la fila seleccionada/activa.\nEspai: Selecciona la fila activa.\nMajús + amunt/avall: Selecciona una fila addicional de sobre/sota.\nCtrl + Espai: Afegeix la fila activa a la selecció/suprimeix de la selecció."
+helplistkeyboardnavmessages: "Fletxes dreta/esquerra: expandeix/contrau fils del missatge (només en mode fils).\nRetorn: Obre el missatge seleccionat/actiu.\nSuprimeix: Mou els missatges seleccionats a la Paperera."
+helplistkeyboardnavcontacts: 'Retorn: Obre el contacte seleccionat/actiu'
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+addheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+alwayskeepformatting: ''
+editoroptions: ''
+enableautolink: ''
+mailvelopeenable: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

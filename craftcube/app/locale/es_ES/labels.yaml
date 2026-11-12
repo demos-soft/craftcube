@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for es_ES. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Bienvenido a $product
+username: Nombre de usuario
+password: Contraseña
+server: Servidor
+login: Iniciar sesión
+oauthlogin: Iniciar sesión con $provider
+menu: Menú
+logout: Cerrar sesión
+mail: Correo
+settings: Configuración
+addressbook: Contactos
+darkmode: Modo oscuro
+lightmode: Modo claro
+inbox: Entrada
+drafts: Borradores
+sent: Enviados
+trash: Papelera
+junk: SPAM
+show_real_foldernames: Mostrar nombres reales para carpetas especiales
+subject: Asunto
+from: De
+sender: Remitente
+to: Destinatario
+cc: Cc
+bcc: Cco
+replyto: Responder a
+followupto: Responder a todos
+date: Fecha
+size: Tamaño
+priority: Prioridad
+organization: Organización
+readstatus: Estado de lectura
+listoptions: Opciones de listado...
+listoptionstitle: Lista de opciones
+mailboxlist: Carpetas
+messagesfromto: Mensajes $from a $to de $count
+threadsfromto: Hilos $from a $to de $count
+messagenrof: Mensaje $nr de $count
+fromtoshort: $from – $to de $count
+copy: Copiar
+move: Mover
+moveto: Mover a…
+copyto: Copiar a...
+download: Descargar
+open: Abrir
+showattachment: Mostrar
+showanyway: Mostrarlo de todos modos
+filename: Nombre del archivo
+filesize: Tamaño del archivo
+addtoaddressbook: Añadir a contactos
+sun: dom
+mon: lun
+tue: mar
+wed: mié
+thu: jue
+fri: vie
+sat: sáb
+sunday: domingo
+monday: lunes
+tuesday: martes
+wednesday: miércoles
+thursday: jueves
+friday: viernes
+saturday: sábado
+jan: ene
+feb: feb
+mar: mar
+apr: abr
+may: may
+jun: jun
+jul: jul
+aug: ago
+sep: sep
+oct: oct
+nov: nov
+dec: dic
+longjan: enero
+longfeb: febrero
+longmar: marzo
+longapr: abril
+longmay: mayo
+longjun: junio
+longjul: julio
+longaug: agosto
+longsep: septiembre
+longoct: octubre
+longnov: noviembre
+longdec: diciembre
+today: Hoy
+refresh: Actualizar
+checkmail: Comprobar si hay mensajes nuevos
+compose: Redactar
+writenewmessage: Crear un mensaje nuevo
+reply: Responder
+replytomessage: Responder al remitente
+replytoallmessage: Responder a la lista o al remitente y a todos los destinatarios
+replyall: Responder a todos
+replylist: Responder a la lista
+forward: Reenviar
+forwardinline: Reenviar entre-líneas
+forwardattachment: Reenviar como adjunto
+forwardmessage: Reenviar mensaje
+bouncemsg: Volver a enviar (rebotar)
+bounce: Reenviar
+deletemessage: Eliminar mensaje
+undeletemessage: Restaurar mensaje
+movemessagetotrash: Mover mensaje a la papelera
+printmessage: Imprimir este mensaje
+previousmessage: Mostrar mensaje anterior
+firstmessage: Mostrar primer mensaje
+nextmessage: Mostrar el siguiente mensaje
+lastmessage: Mostrar el último mensaje
+backtolist: Volver a la lista de mensajes
+viewsource: Mostrar código
+mark: Marcar
+markmessages: Marcar mensajes
+markread: Como leído
+markunread: Como no leído
+markflagged: Como resaltado
+markunflagged: Como no resaltado
+markundeleted: Como no eliminado
+markasread: Marcar como leído
+markasunread: Marcar como no leído
+markasflagged: Marcar como bandera
+markasunflagged: Marcar como no bandera
+moreactions: Más acciones…
+markallread: Marcar todos como leídos
+folders-cur: Sólo la carpeta seleccionada
+folders-sub: Carpeta seleccionada y sus subcarpetas
+folders-all: Todas las carpetas
+more: Más
+back: Volver
+options: Opciones
+composeoptions: Opciones de redacción
+optionsandattachments: Opciones y ficheros adjuntos
+actions: Acciones
+first: Primero
+last: Último
+previous: Anterior
+next: Siguiente
+select: Seleccionar
+selection: Selección
+all: Todos
+none: Ninguno
+currpage: Página actual
+isread: Leído
+unread: No leído
+flagged: Resaltado
+unflagged: No Resaltado
+unanswered: Sin contestar
+withattachment: Con adjunto
+deleted: Eliminado
+undeleted: No eliminado
+replied: Contestado
+forwarded: Reenviado
+invert: Invertir
+filter: Filtrar
+list: Lista
+threads: Hilos
+expand-all: Expandir todos
+expand-unread: Expandir no leídos
+collapse-all: Colapsar todos
+threaded: Encadenados
+showunread: Mostrar no leídos
+autoexpand_threads: Expandir hilos de mensajes
+do_expand: todos los hilos
+expand_only_unread: solo con mensajes no leídos
+fromto: De/A
+flag: Resaltar
+attachment: Adjunto
+nonesort: Ninguno
+sentdate: Fecha de envío
+arrival: Fecha de llegada
+asc: ascendente
+desc: descendente
+listcolumns: Listar columnas
+listsorting: Columna de ordenación
+listorder: Criterio de ordenación
+listmode: Modo de vista de lista
+lmode: Forma de ordenación
+layout: Disposición
+layoutwidescreen: Pantalla ancha
+layoutdesktop: Escritorio
+layoutlist: Lista
+layoutwidescreendesc: Pantalla ancha (vista de 3 columnas)
+layoutdesktopdesc: Escritorio (Lista ancha y vista previa del correo debajo)
+layoutlistdesc: Lista (sin vista previa del correo)
+folderactions: Acciones de carpeta...
+compact: Compactar
+empty: Vaciar
+importmessages: Importar mensajes
+mailimportdesc: Puedes subir ficheros usando formatos <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> o <a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a>.
+mailimportzip: Se pueden comprimir varios ficheros en archivos zip.
+quota: Uso de disco
+unknown: desconocido
+unlimited: sin límite
+quotatype: Tipo de cuota
+quotatotal: Límite
+quotaused: Usado
+quotastorage: Espacio en disco
+quotamessage: Número de mensajes
+shortheaderdate: El $date
+shortheaderto: A $to el $date
+shortheaderfrom: De $from el $date
+quicksearch: Búsqueda rápida
+searchplaceholder: Buscar...
+resetsearch: Reiniciar la búsqueda
+searchmod: Opciones de búsqueda
+msgtext: Mensaje completo
+body: Cuerpo
+type: Tipo
+namex: Nombre
+searchscope: Ámbito
+currentfolder: Carpeta actual
+subfolders: Ésta y subcarpetas
+allfolders: Todas las carpetas
+searchinterval-1W: más antiguo que una semana
+searchinterval-1M: más antiguo que un mes
+searchinterval-1Y: más antiguo que un año
+searchinterval1W: más reciente que una semana
+searchinterval1M: más reciente que un mes
+searchinterval1Y: más reciente que un  año
+openinextwin: Abrir en nueva ventana
+emlsave: Descargar (.eml)
+changeformattext: Mostrar en formato de texto simple
+changeformathtml: Mostrar en formato HTML
+editasnew: Editar como nuevo
+send: Enviar
+sendmessage: Enviar el mensaje
+savemessage: Guardar como borrador
+addattachment: Adjuntar un archivo
+charset: Codificación
+editortype: Tipo de editor
+returnreceipt: Confirmación de recibo
+dsn: Notificación de estado de la entrega
+keepformatting: Continuar formateando
+mailreplyintro: 'El $date, $sender escribió:'
+originalmessage: Mensaje Original
+selectimage: Seleccionar imagen
+addimage: Añadir imagen
+selectmedia: Seleccionar película
+addmedia: Añadir película
+encrypt: Encriptar
+encryptmessage: Encriptar mensaje
+encryptmessagemailvelope: Cifrar mensaje con Malivelope
+importpubkeys: Importar claves públicas
+encryptedsendialog: Mandando mensaje encriptado
+encryptandsign: Encriptar y firmar
+keyid: ID de la clave
+keylength: Bits
+keyexpired: Expirado
+keyrevoked: Rechazado
+bccinstead: Usar Cco
+insert: Insertar
+insertcontact: Insertar contacto(s)
+recipient: Destinatario
+recipientedit: Editar destinatario
+editidents: Editar identidades
+spellcheck: Corrector ortográfico
+checkspelling: Revisar ortografía
+resumeediting: Reanudar edición
+revertto: Revertir a
+restore: Restaurar
+restoremessage: ¿Restaurar el mensaje?
+ignore: Ignorar
+responses: Respuestas
+insertresponse: Insertar una respuesta
+manageresponses: Gestionar respuestas
+newresponse: Crear nueva respuesta
+addresponse: Añadir respuesta
+editresponse: Editar respuesta
+editresponses: Editar respuestas
+responsename: Nombre
+responsetext: Texto de respuesta
+attach: Adjuntar
+attachments: Adjuntos
+upload: Cargar
+uploadprogress: $percent ($current de $total)
+close: Cerrar
+messageoptions: Opciones de mensaje...
+togglecomposeoptions: Mostrar opciones de escritura
+attachmentrename: Renombrar el adjunto
+low: Baja
+lowest: La más baja
+normal: Normal
+high: Alta
+highest: La más alta
+nosubject: (sin asunto)
+showimages: Mostrar imágenes
+allow: Permitir
+alwaysshow: Siempre mostrar imágenes de $sender
+alwaysallow: Permitir siempre de $sender
+isdraft: Este es un mensaje de borrador.
+andnmore: $nr más…
+details: Detalles
+summary: Resumen
+headers: Cabeceras
+allheaders: Todas las cabeceras...
+togglemoreheaders: Mostrar más encabezados del mensaje
+togglefullheaders: Desplegar u ocultar encabezados de mensajes
+htmltoggle: HTML
+plaintoggle: Sólo texto
+savesentmessagein: Guardar mensaje enviado en
+dontsave: no guardar
+maxuploadsize: 'Tamaño de archivo máximo permitido: $size'
+addcc: Añadir Cc
+addbcc: Añadir Cco
+addreplyto: Añadir Responder a
+addfollowupto: Añadir Seguir a
+sendreceipt: ¿Enviar confirmación de lectura?
+mdnrequest: El remitente de este mensaje desea ser notificado cuando usted lo lea. ¿Desea enviar esta notificación?
+receiptread: Devolver recibo de confirmación (lectura)
+yourmessage: Esto es un acuse de recibo de su mensaje
+receiptnote: 'Nota: Esta notificación sólo confirma que su mensaje fue abierto en el ordenador del destinatario. Eso no garantiza que el destinatario haya leído o entendido el contenido del mensaje.'
+sendalwaysto: Enviar siempre a $email
+zoomin: Acercar
+zoomout: Alejar
+rotate: Girar
+increaseimage: Aumentar el tamaño de la imagen
+decreaseimage: Disminuir el tamaño de la imagen
+rotateimage: Girar imagen
+showtools: Mostrar herramientas de imagen
+hidetools: Ocultar herramientas de imagen
+name: Nombre de visualización
+firstname: Nombre
+surname: Apellido
+middlename: Segundo nombre
+nameprefix: Prefijo
+namesuffix: Sufijo
+nickname: Alias
+jobtitle: Título Profesional
+department: Departamento
+gender: Sexo
+maidenname: Apellido de soltera
+email: Correo electrónico
+phone: Teléfono
+address: Dirección
+street: Calle
+locality: Ciudad
+zipcode: Código postal
+region: Provincia
+country: País
+birthday: Cumpleaños
+anniversary: Aniversario
+website: Página web
+instantmessenger: Mensajería instantánea
+notes: Notas
+male: masculino
+female: femenino
+nonbinary: no-binario
+othergender: otro
+manager: Director
+assistant: Auxiliar
+spouse: Cónyuge
+allfields: Todos los campos
+search: Buscar
+searchresult: Resultado de búsqueda
+advsearch: Búsqueda avanzada
+advanced: Avanzadas
+other: Otro
+printcontact: Imprimir contacto
+qrcode: Código QR
+typehome: Casa
+typework: Trabajo
+typeother: Otro
+typemobile: Móvil
+typemain: Principal
+typehomefax: Fax de casa
+typeworkfax: Fax del trabajo
+typecar: Automóvil
+typepager: Paginador
+typevideo: Vídeo
+typeassistant: Auxiliar
+typehomepage: Página Principal
+typeblog: Blog
+typeprofile: Perfil
+addfield: Añadir campo...
+addcontact: Añadir contacto
+editcontact: Editar contacto
+contacts: Contactos
+contactproperties: Propiedades del contacto
+contactnameandorg: Nombre y organización
+personalinfo: Información personal
+personal: Personal
+contactphoto: Foto del contacto
+edit: Editar
+cancel: Cancelar
+save: Guardar
+delete: Eliminar
+discard: Descartar
+continue: Continuar
+ok: OK
+rename: Renombrar
+addphoto: Añadir
+replacephoto: Reemplazar
+uploadphoto: Subir foto
+choosefile: Elegir el fichero...
+choosefiles: Elegir los ficheros...
+browse: Navegar
+newcontact: Crear nuevo contacto
+deletecontact: Eliminar contactos seleccionados
+composeto: Escribir mensaje a
+contactsfromto: Contactos $from a $to de $count
+print: Imprimir
+export: Exportar
+exportall: Exportar todo
+exportsel: Exportar seleccionados
+exportvcards: Exportar contactos en formato vCard
+newgroup: Crear nuevo grupo
+addgroup: Añadir grupo
+grouprename: Renombrar grupo
+groupdelete: Borrar grupo
+groupassign: Asignar a un grupo...
+groupremove: Eliminar de un grupo
+groupremoveselected: Eliminar los contactos seleccionados del grupo
+uponelevel: Subir un nivel
+previouspage: Mostrar grupo anterior
+firstpage: Mostrar primer grupo
+nextpage: Mostrar grupo siguiente
+lastpage: Mostrar último grupo
+group: Grupo
+groups: Grupos
+listgroup: Listar miembros del grupo
+personaladrbook: Direcciones personales
+searchsave: Guardar búsqueda
+searchdelete: Borrar búsqueda
+import: Importar
+importcontacts: Importar contactos
+importfromfile: Importar desde archivo
+importtarget: Agregar contactos a
+importreplace: Reemplazar toda la lista de contactos
+importgroups: Importar asignaciones de grupo
+importgroupsall: Todos (crear grupos si es necesario)
+importgroupsexisting: Sólo para los grupos existentes
+importdesc: Puede cargar contactos de una libreta de contactos existente.<br/>Actualmente soportamos la importación de direcciones desde formatos <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> o desde CSV (separados por comas).
+importmapdesc: Confirme que la información de mapeado de campos mostrada abajo es correcta antes de proceder con la importación de datos del CSV (separado por comas).
+fieldnotmapped: Campo no mapeado (no importar)
+skipheader: No importar la primera línea (cabeceras)
+done: Hecho
+settingsfor: Configuración para
+about: Acerca de
+preferences: Preferencias
+userpreferences: Preferencias de usuario
+editpreferences: Editar preferencias de usuario
+identities: Identidades
+manageidentities: Administrar identidades
+newidentity: Crear nueva identidad
+addidentity: Añadir identidad
+editidentity: Editar identidad
+identityencryption: Encriptación
+preferhtml: Mostrar HTML
+defaultcharset: Conjunto de caracteres predeterminado
+htmlmessage: Mensaje HTML
+messagepart: Parte
+digitalsig: Firma digital
+dateformat: Formato de fecha
+timeformat: Formato de hora
+prettydate: Transformar fechas recientes
+setdefault: Establecer como  predeterminado
+autodetect: Automático
+language: Idioma
+timezone: Zona horaria
+pagesize: Filas por página
+signature: Firma
+dstactive: Horario de verano
+showinextwin: Abrir mensaje en una ventana nueva
+composeextwin: Redactar en una ventana nueva
+htmleditor: Redactar mensajes HTML
+htmlonreply: en respuesta a mensaje HTML
+htmlonreplyandforward: en reenvío o respuesta a mensaje HTML
+htmlsignature: Firma HTML
+showemail: Mostrar dirección electrónica con el nombre de visualización
+previewpane: Mostrar panel de vista previa
+skin: Apariencia de la interfaz
+logoutclear: Vaciar Papelera al cerrar sesión
+logoutcompact: Compactar Bandeja de Entrada al cerrar sesión
+uisettings: Interfaz de Usuario
+serversettings: Configuración del servidor
+mailboxview: Vista de Buzón
+mdnrequests: Cuando se solicite confirmación de recibo
+askuser: preguntarme
+autosend: enviar confirmación de recibo
+autosendknown: enviar confirmación de recibo a mis contactos, preguntar por los demás
+autosendknownignore: enviar confirmación de recibo a mis contactos, ignorar los demás
+autosendtrusted: Enviar la confirmación de recepción a mis remitentes de confianza, para el resto preguntarme.
+autosendtrustedignore: Enviar la confirmación de recepción a mis remitentes de confianza, para el resto ignorar.
+ignorerequest: Ignorar petición
+readwhendeleted: Marcar el mensaje como leído al borrarlo
+flagfordeletion: Marcar el mensaje para borrarse en vez de borrarlo
+skipdeleted: No mostrar mensajes borrados
+deletealways: Si mover mensajes a la Papelera fracasa, borrarlos
+deletejunk: Directamente eliminar mensajes en SPAM
+showremoteimages: Mostrar las imágenes externas
+allowremoteresources: Permitir recursos remotos (imágenes, estilos)
+fromknownsenders: de remitentes conocidos
+fromtrustedsenders: de remitentes de confianza
+frommycontacts: de mis contactos
+always: siempre
+alwaysbutplain: siempre, salvo cuando se responda a un texto llano
+showinlineimages: Mostrar imágenes adjuntas debajo del mensaje
+autosavedraft: Guardar borrador automáticamente
+everynminutes: cada $n minuto(s)
+refreshinterval: Actualizar (comprobar mensajes nuevos, etc.)
+never: nunca
+immediately: inmediatamente
+messagesdisplaying: Vista de Mensajes
+messagescomposition: Composición de Mensajes
+mimeparamfolding: Nombres de archivos adjuntos
+2231folding: RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: RFC 2047 (otro)
+force7bit: Usar codificación MIME para caracteres de 8 bits
+savelocalstorage: Guardar (temporalmente) en el almacenamiento local del navegador
+advancedoptions: Opciones avanzadas
+toggleadvancedoptions: Desplegar opciones avanzadas
+focusonnewmessage: Enfocar ventana del navegador al recibir nuevo mensaje
+checkallfolders: Revisar todas las carpetas por nuevos mensajes
+displaynext: Mostrar el siguiente elemento de la lista después de borrar o mover
+defaultfont: Tipo de letra predeterminada de mensaje HTML
+mainoptions: Opciones Principales
+browseroptions: Opciones del Navegador
+section: Sección
+maintenance: Mantenimiento
+newmessage: Nuevo Mensaje
+signatureoptions: Opciones de Firma
+whenreplying: Al responder
+replyempty: no citar el mensaje original
+replytopposting: comenzar mensaje nuevo encima del original
+replytoppostingnoindent: comenzar nuevo mensaje encima del citado (sin sangría)
+replybottomposting: comenzar mensaje nuevo debajo del original
+replyremovesignature: Eliminar la firma original del mensaje al responder
+autoaddsignature: Añadir firma automáticamente
+newmessageonly: solamente nuevo mensaje
+replyandforwardonly: respuestas y reenvíos solamente
+insertsignature: Insertar firma
+sigbelow: Escribir la firma debajo del mensaje entrecomillado
+sigseparator: Forzar el separador estándar en las firmas
+automarkread: Marcar mensajes como leídos
+afternseconds: después de $n segundos
+reqmdn: Siempre solicitar confirmación de recibo
+reqdsn: Siempre solicitar notificación del estado de la entrega
+replysamefolder: Colocar respuestas en la carpeta del mensaje al cual se responde
+defaultabook: Libreta de direcciones predeterminada
+autocompletesingle: Omitir direcciones electrónicas alternas en el autocompletado
+listnamedisplay: Listar contactos como
+contactformmode: Modo de formulario de contacto
+privatemode: Privado (Casa)
+businessmode: Empresa (Trabajo)
+collectedaddresses: Direcciones recogidas
+collectedrecipients: Destinatarios recogidos
+collectedrecipientsopt: Almacena los destinatarios de correo electrónico de salida en
+collectedsendersopt: Almacena los remitentes de confianza en
+trustedsenders: Remitentes de confianza
+spellcheckbeforesend: Comprobar ortografía antes de enviar un mensaje
+spellcheckoptions: Opciones de Revisado de Ortografía
+spellcheckignoresyms: Ignorar palabras con símbolos
+spellcheckignorenums: Ignorar palabras con números
+spellcheckignorecaps: Ignorar palabras con todo mayúsculas
+addtodict: Añadir al diccionario
+mailtoprotohandler: 'Registrar controlador de protocolo para enlaces mailto:'
+standardwindows: Gestionar ventanas emergentes como ventanas estándar
+forwardmode: Reenvío de mensajes
+inline: entre-línea
+asattachment: como adjunto
+replyallmode: Acción predeterminada del botón [Responder a todos]
+replyalldefault: responder a todos
+replyalllist: responder sólo a la lista de correo (si se encuentra)
+allmessages: todos los mensajes
+olderxdays: anterior a $x días
+folder: Bandeja
+folders: Carpetas
+foldername: Nombre de carpeta
+subscribed: Suscrito
+messagecount: Mensajes
+create: Crear
+createfolder: Crear nueva carpeta
+managefolders: Administrar carpetas
+specialfolders: Carpetas especiales
+properties: Propiedades
+folderproperties: Propiedades de carpeta
+parentfolder: Carpeta raíz
+location: Ubicación
+info: Información
+getfoldersize: Clic para saber el tamaño de la bandeja
+changesubscription: Haga clic para cambiar suscripción
+foldertype: Tipo de Carpeta
+personalfolder: Carpeta Privada
+otherfolder: Carpeta de Otro Usuario
+sharedfolder: Carpeta Pública
+findfolders: Encontrar carpetas
+findcontacts: Encontrar contactos
+findmail: Buscar mensajes de correo electrónico
+namespace.personal: Personal
+namespace.other: Otros usuarios
+namespace.shared: Compartido
+dualuselabel: Puede contener únicamente
+dualusemail: mensajes
+dualusefolder: carpetas
+generate: Generar
+encryptioncreatekey: Crear una nueva clave par
+openmailvelopesettings: Abrir ajustes de Mailvelope
+encryptionprivkeysinmailvelope: 'Tiene $nr claves privadas que coinciden almacenadas en su llavero Mailvelope:'
+encryptionnoprivkeysinmailvelope: Esta identidad de remitentes todavía no tiene una clave privada PGP almacenada en su extensión Mailvelope. ¿Quiere crear una para activar la mensajería encriptada?
+encryption: Cifrado
+mailvelopeoptions: Opciones de Mailvelope
+mailvelopemainkeyring: Usar el llavero de claves principal de Mailvelope
+mailvelopenotfound: La extensión Mailvelope no está habilitada/instalada en su navegador.
+mailvelopeenable: Habilitar
+sortby: Ordenar por
+sortasc: Orden ascendente
+sortdesc: Orden descendente
+undo: Deshacer
+installedplugins: Complementos instalados
+plugin: Complemento
+version: Versión
+source: Origen
+destination: Destino
+license: Licencia
+skinauthor: por $author
+support: Obtener soporte
+savedsearches: Búsquedas guardadas
+dateformatY: AAAA
+dateformaty: AA
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unicode
+english: Inglés
+westerneuropean: Europeo Occidental
+easterneuropean: Europeo Oriental
+southeasterneuropean: Europeo Sudoriental
+baltic: Báltico
+cyrillic: Cirílico
+arabic: Árabe
+greek: Griego
+hebrew: Hebreo
+turkish: Turco
+nordic: Nórdico
+thai: Tailandés
+celtic: Celta
+vietnamese: Vietnamita
+japanese: Japonés
+korean: Coreano
+chinese: Chino
+arialabeltopnav: Control de ventana
+arialabeltasknav: Tareas de la aplicación
+arialabeltoolbar: Barra de herramientas de la aplicación
+arialabellistnav: Navegación por listas
+arialabelactivetask: Tarea activa
+arialabelmessagessearchfilter: Filtro de listado de correo electrónico
+arialabelmailsearchform: Formulario de búsqueda de mensaje de correo electrónico
+arialabelcontactsearchform: Formulario de búsqueda de contactos
+arialabelmailquicksearchbox: Entrada de búsqueda de correo electrónico
+arialabelquicksearchbox: Entrada de búsqueda
+arialabelfoldersearchfilter: Filtro de listas de carpetas
+arialabelfoldersearchform: Formulario de búsqueda de carpeta
+arialabelfolderlist: Selección de carpeta de correo electrónico
+arialabelmessagelist: Listado de mensajes de correo electrónico
+arialabelmailpreviewframe: Previsualizar mensaje
+arialabelmailboxmenu: Menú de acciones de carpeta
+arialabellistselectmenu: Menú de selección de listado
+arialabelthreadselectmenu: Menú de listado de conversaciones
+arialabelmessagelistoptions: Opciones para mostrar y ordenar los mensajes
+arialabelmailimportdialog: Diálogo de importación de mensaje
+arialabelmessagenav: Navegación entre mensajes
+arialabelmessagebody: Cuerpo del mensaje
+arialabelmessageactions: Acciones del mensaje
+arialabelcontactquicksearch: Formulario de búsqueda de contactos
+arialabelcontactsearchbox: Entra de búsqueda de contacto
+arialabelmessageheaders: Encabezados del mensaje
+arialabelforwardingoptions: Opciones de reenvío
+arialabelreplyalloptions: Opciones de "Responder a todos"
+arialabelmoremessageactions: Más acciones de mensaje
+arialabelmorecontactactions: Más acciones de contacto
+arialabelmarkmessagesas: Marcar los mensajes seleccionados como…
+arialabelcomposeoptions: Opciones de composición
+arialabelresponsesmenu: Menú de respuestas enlatadas
+arialabelattachmentuploadform: Formulario de subida de adjunto
+arialabelattachmentmenu: Opciones de archivo adjunto
+arialabelmailtomenu: Opciones de dirección de correo electrónico
+arialabelattachmentpreview: Previsualizar adjunto
+ariasummarycomposecontacts: Lista de contactos y grupos para elegir como destinatarios
+arialabelcontactexportoptions: Opciones de exportación de contacto
+arialabelabookgroupoptions: Opciones de grupo de contactos de la agenda
+arialabelpreferencesform: Formulario de preferencias
+arialabelidentityeditfrom: Formulario de edición de identidad
+arialabelresponseeditfrom: Formulario de edición de respuesta
+arialabelsearchterms: Términos de búsqueda
+arialabeldropactionmenu: Menú de acciones de Arrastrar y Soltar
+arialabelheadersmenu: Menú para añadir el destinatario (cabecera)
+arialabelimagetools: Herramientas de imagen
+helplistnavigation: Listar la navegación por teclado
+helplistkeyboardnavigation: "Flechas arriba/abajo: Mover de fila el foco o selección.\nEspacio: Seleccionar la fila enfocada.\nMayúscula + arriba/abajo: Seleccionar otra fila de arriba/abajo.\nControl + Espacio: Añadir fila enfocada a la selección / quitar de la selección."
+helplistkeyboardnavmessages: "Flechas izquierda/derecha: expandir/recoger hilo de mensaje (sólo en modo hilo).\nRetorno: Abrir el mensaje seleccionado/enfocado.\nBorrar: Mover los mensajes seleccionado a la Papelera."
+helplistkeyboardnavcontacts: 'Retorno: Abrir el contacto seleccionado'
+archivefolder: Archivo
+settingstitle: Archivo
+archivetype: Dividir el archivo por
+archivetypeyear: Año (p.ej. Archivo/2012)
+archivetypemonth: Mes (p.ej. Archivo/2012/06)
+archivetypetbmonth: Mes - Compatible con Thunderbird (ej. Archive/2012/2012-06)
+archivetypefolder: Bandeja original
+archivetypefolderyear: Año y la carpeta original (p.ej. Archivo/2012/...)
+archivetypefoldermonth: Año, mes y la carpeta original (p.ej. Archivo/2012/06/...)
+archivetypesender: Correo electrónico del remitente
+readonarchive: Marcar el mensaje como leído al archivar
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+addheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+alwayskeepformatting: ''
+editoroptions: ''
+enableautolink: ''

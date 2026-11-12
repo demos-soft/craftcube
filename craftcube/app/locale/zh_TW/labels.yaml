@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for zh_TW. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: 歡迎使用 $product
+username: 使用者名稱
+password: 使用者密碼
+server: 伺服器
+login: 登入
+oauthlogin: 使用 $provider 登入
+menu: 選單
+logout: 登出
+mail: 電子郵件
+settings: 設定
+addressbook: 通訊錄
+darkmode: 深色模式
+lightmode: 淺色模式
+inbox: 收件匣
+drafts: 草稿匣
+sent: 寄件備份
+trash: 垃圾桶
+junk: 垃圾郵件
+show_real_foldernames: 顯示特殊資料夾的實際名稱
+subject: 主旨
+from: 寄件者
+sender: 寄件者
+to: 收件者
+cc: 副本
+bcc: 密件副本
+replyto: 回覆至
+followupto: 郵件列表回覆地址
+date: 日期
+size: 大小
+priority: 優先次序
+organization: 組織/公司
+readstatus: 讀信狀態
+listoptions: 列表選項...
+listoptionstitle: 列表選項
+mailboxlist: 資料夾
+messagesfromto: 郵件 $from 至 $to，共 $count 封
+threadsfromto: 郵件串 $from 至 $to，共 $count 個
+messagenrof: 第 $nr 封郵件，共有 $count 封
+fromtoshort: $from – $to 共 $count 個
+copy: 複製
+move: 移動
+moveto: 移至...
+copyto: 複製到...
+download: 下載
+open: 開啟
+showattachment: 顯示
+showanyway: 總是顯示
+filename: 檔案名稱
+filesize: 檔案大小
+addtoaddressbook: 新增至通訊錄
+sun: 週日
+mon: 週一
+tue: 週二
+wed: 週三
+thu: 週四
+fri: 週五
+sat: 週六
+sunday: 星期日
+monday: 星期一
+tuesday: 星期二
+wednesday: 星期三
+thursday: 星期四
+friday: 星期五
+saturday: 星期六
+jan: 一
+feb: 二
+mar: 三
+apr: 四
+may: 五
+jun: 六
+jul: 七
+aug: 八
+sep: 九
+oct: 十
+nov: 十一
+dec: 十二
+longjan: 1 月
+longfeb: 2 月
+longmar: 3 月
+longapr: 4 月
+longmay: 5 月
+longjun: 6 月
+longjul: 7 月
+longaug: 8 月
+longsep: 9 月
+longoct: 10 月
+longnov: 11 月
+longdec: 12 月
+today: 今日
+refresh: 重新整理
+checkmail: 檢查新郵件
+compose: 撰寫新郵件
+writenewmessage: 撰寫新郵件
+reply: 回覆
+replytomessage: 回覆
+replytoallmessage: 全部回覆
+replyall: 全部回覆
+replylist: 清單回覆
+forward: 轉寄
+forwardinline: 以內文方式轉寄
+forwardattachment: 以附件方式轉寄
+forwardmessage: 轉寄
+bouncemsg: 重寄 (退回郵件)
+bounce: 重寄
+deletemessage: 刪除郵件
+movemessagetotrash: 移動郵件至垃圾桶
+printmessage: 列印此郵件
+previousmessage: 顯示上一封郵件
+firstmessage: 顯示第一封郵件
+nextmessage: 顯示下一封郵件
+lastmessage: 顯示最後一封郵件
+backtolist: 回到郵件清單
+viewsource: 顯示郵件原始內容
+mark: 標記
+markmessages: 標記選取的郵件
+markread: 標示為已讀取
+markunread: 標示為未讀取
+markflagged: 標上旗標
+markunflagged: 移除旗標
+moreactions: 更多動作...
+markallread: 全部標示為已讀取
+folders-cur: 僅選取的資料夾
+folders-sub: 選取的資料夾及其子資料夾
+folders-all: 所有資料夾
+more: 更多
+back: 返回
+options: 選項
+composeoptions: 撰寫選項
+optionsandattachments: 選項及附件
+actions: 動作
+first: 第一個
+last: 最後一個
+previous: 前一個
+next: 後一個
+select: 選取
+selection: 選取範圍
+all: 全部郵件
+none: 無
+currpage: 目前頁面
+isread: 已讀
+unread: 未讀取的郵件
+flagged: 已加旗標
+unflagged: 無旗標
+unanswered: 未回覆的郵件
+withattachment: 包含附件
+deleted: 已刪除的郵件
+undeleted: 未刪除的郵件
+replied: 已回覆
+forwarded: 已轉寄
+invert: 反選
+filter: 篩選範圍
+list: 清單
+threads: 郵件串
+expand-all: 全部展開
+expand-unread: 展開未讀取
+collapse-all: 全部收起
+threaded: 郵件串
+showunread: 顯示未讀郵件
+autoexpand_threads: 展開郵件串
+do_expand: 所有郵件串
+expand_only_unread: 只展開未讀郵件
+fromto: 寄件者/收件者
+flag: 旗標
+attachment: 附件
+nonesort: 無
+sentdate: 寄送時間
+arrival: 到達時間
+asc: 遞增
+desc: 遞減
+listcolumns: 列出欄位
+listsorting: 排序欄位
+listorder: 排序順序
+listmode: 列表檢視模式
+lmode: 列表模式
+layout: 畫面配置
+layoutwidescreen: 寬螢幕
+layoutdesktop: 桌面
+layoutlist: 清單
+layoutwidescreendesc: 寬螢幕 (3欄檢視)
+layoutdesktopdesc: 桌面 (寬列表，下面是郵件預覽)
+layoutlistdesc: 列表 (無郵件預覽)
+folderactions: 資料夾動作...
+compact: 壓緊
+empty: 清空
+importmessages: 匯入郵件
+mailimportdesc: 可以用 <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> 或 <a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a> 格式檔案上傳郵件。
+mailimportzip: 多個檔案可以壓縮為 ZIP 檔案。
+quota: 磁碟使用量
+unknown: 未知
+unlimited: 無限制
+quotatype: 配額類型
+quotatotal: 上限
+quotaused: 已使用
+quotastorage: 儲存空間
+quotamessage: 郵件數目
+shortheaderdate: 於 $date
+shortheaderto: 於 $date，寄給 $to
+shortheaderfrom: 於 $date，寄自 $from
+quicksearch: 快速搜尋
+searchplaceholder: 搜尋...
+resetsearch: 重設搜尋
+searchmod: 修改搜尋
+msgtext: 整封郵件
+body: 內文
+type: 類型
+namex: 名稱
+searchscope: 範圍
+currentfolder: 目前的資料夾
+subfolders: 目前的資料夾 (含子資料夾)
+allfolders: 所有資料夾
+searchinterval-1W: 超過一週
+searchinterval-1M: 超過一個月
+searchinterval-1Y: 超過一年
+searchinterval1W: 一週之內
+searchinterval1M: 一個月之內
+searchinterval1Y: 一年之內
+openinextwin: 在新視窗開啟
+emlsave: 下載 (.eml)
+changeformattext: 以純文字格式顯示
+changeformathtml: 以 HTML 格式顯示
+editasnew: 以新郵件編輯
+send: 寄出
+sendmessage: 立即寄出
+savemessage: 儲存成草稿
+addattachment: 加入附件檔案
+charset: 郵件編碼
+editortype: 編輯器類型
+returnreceipt: 要求讀取回條
+dsn: 傳送狀態通知
+mailreplyintro: '$sender 於 $date 寫到:'
+originalmessage: 原始郵件
+selectimage: ' 選擇圖片'
+addimage: 加入圖片
+selectmedia: 選擇影片
+addmedia: 加入影片
+encrypt: 加密
+encryptmessage: 加密郵件
+encryptmessagemailvelope: 以 Mailvelope 加密郵件
+importpubkeys: 匯入公鑰
+encryptedsendialog: 發送加密郵件
+encryptandsign: 加密並簽署
+keyid: 金鑰 ID
+keylength: 位元
+keyexpired: 已過期
+keyrevoked: 已撤銷
+bccinstead: 使用「密件副本」
+insert: 插入
+insertcontact: 插入聯絡人
+recipient: 收件者
+recipientedit: 收件者編輯
+editidents: 編輯身份資訊
+spellcheck: 拼字
+checkspelling: 拼字檢查
+resumeediting: 繼續編輯
+revertto: 恢復至
+restore: 回復
+restoremessage: 回復郵件？
+ignore: ' 忽略'
+responses: 預設回應
+insertresponse: 插入預設回應
+manageresponses: 管理預設回應
+newresponse: 建立預設回應
+addresponse: ' 加入預設回應'
+editresponse: 編輯預設回應
+editresponses: 編輯預設回應
+responsename: 名稱
+responsetext: 預設回應內容
+attach: 附件
+attachments: 附件檔案
+upload: 上傳
+uploadprogress: $percent ($total 中的 $current)
+close: 關閉
+messageoptions: 郵件選項...
+togglecomposeoptions: ' 切換撰寫選項'
+attachmentrename: 重新命名附件
+low: 低
+lowest: 最低
+normal: 普通
+high: 高
+highest: 最高
+nosubject: （沒有主旨）
+showimages: 顯示圖片
+allow: 允許
+alwaysshow: 總是顯示來自 $sender 的圖片
+alwaysallow: 必定允許寄自 $sender 的郵件
+isdraft: 這是草稿
+andnmore: 第$nr封或是更多...
+details: 詳情
+summary: 概覽
+headers: 標頭
+allheaders: 所有標頭...
+togglemoreheaders: 顯示更多的郵件標頭
+togglefullheaders: 切換原始郵件標頭
+htmltoggle: HTML
+plaintoggle: 純文字
+savesentmessagein: 儲存寄件備份至
+dontsave: 不要儲存
+maxuploadsize: 上傳檔案大小限制為 $size
+addcc: 新增副本
+addbcc: 新增密件副本
+addreplyto: 新增回覆地址
+addfollowupto: 新增郵件列表回覆地址
+sendreceipt: 傳送讀取回條？
+mdnrequest: 此郵件的寄件者希望在你閱讀此郵件時受到通知。你想要通知寄件者嗎？
+receiptread: 郵件回條（已閱讀）
+yourmessage: 這是你郵件的郵件回條
+receiptnote: 注意：此回條只能確認收件者的電腦顯示了郵件，並不能保證收件者已閱讀或了解郵件的內容。
+sendalwaysto: 總是傳送給 $email
+zoomin: 放大
+zoomout: 縮小
+rotate: 旋轉
+increaseimage: 放大圖像
+decreaseimage: 縮小圖像
+rotateimage: 旋轉圖像
+showtools: 顯示圖像工具
+hidetools: 隱藏圖像工具
+name: 顯示名稱
+firstname: 名字
+surname: 姓氏
+middlename: 中名
+nameprefix: 頭銜 (例如 Dr.)
+namesuffix: 後綴 (例如 Jr.)
+nickname: 暱稱
+jobtitle: 職位
+department: 部門
+gender: 性別
+maidenname: 閨姓
+email: 電子郵件
+phone: 電話
+address: 地址
+street: 街道
+locality: 城市
+zipcode: 郵遞區號
+region: 州/省
+country: 國家/地區
+birthday: 生日
+anniversary: 周年紀念日
+website: 網站
+instantmessenger: 即時通訊
+notes: 註解
+male: 男
+female: 女
+manager: 上司
+assistant: 助理
+spouse: 配偶
+allfields: 所有欄位
+search: 搜尋
+searchresult: ' 搜尋結果'
+advsearch: 進階搜尋
+advanced: 進階
+other: 其他
+printcontact: ' 列印聯絡人'
+qrcode: QR 碼
+typehome: 住家
+typework: 工作
+typeother: 其他
+typemobile: 行動電話
+typemain: 主要
+typehomefax: 住家傳真
+typeworkfax: 工作傳真
+typecar: 汽車
+typepager: 傳呼機
+typevideo: 影片
+typeassistant: 助理
+typehomepage: 首頁
+typeblog: 部落格
+typeprofile: 設定檔
+addfield: 加入欄位...
+addcontact: 加入聯絡人
+editcontact: 編輯聯絡人
+contacts: 聯絡人
+contactproperties: 聯絡人資訊
+contactnameandorg: ' 姓名和組織/公司'
+personalinfo: 個人資訊
+personal: 個人
+contactphoto: 聯絡人相片
+edit: 編輯
+cancel: 取消
+save: 儲存
+delete: 刪除
+discard: 丟棄
+continue: 繼續
+ok: 確定
+rename: 重新命名
+addphoto: 加入
+replacephoto: 取代
+uploadphoto: 上傳相片
+choosefile: 選擇檔案...
+choosefiles: 選擇檔案...
+browse: 瀏覽
+newcontact: ' 新建聯絡人'
+deletecontact: 刪除所選擇的聯絡人
+composeto: 寄信至所選擇的聯絡人
+contactsfromto: 聯絡人 $from 至 $to，共 $count 人
+print: 列印
+export: 匯出
+exportall: 全部匯出
+exportsel: 匯出所選項目
+exportvcards: 匯出通訊錄為 vCard 格式
+newgroup: 新建群組
+addgroup: 加入群組
+grouprename: 重新命名群組
+groupdelete: 刪除群組
+groupassign: 分配到群組...
+groupremove: 從群組移除
+groupremoveselected: 於群組刪除所選的聯絡人
+uponelevel: 回到上一層
+previouspage: 顯示上一頁
+firstpage: 顯示第一頁
+nextpage: 顯示下一頁
+lastpage: 顯示最後一頁
+group: 群組
+groups: 群組
+listgroup: 列出群組成員
+personaladrbook: 個人通訊錄
+searchsave: 儲存搜尋結果
+searchdelete: 刪除搜尋結果
+import: 匯入
+importcontacts: 匯入聯絡人
+importfromfile: 從檔案匯入
+importtarget: 新增聯絡人到
+importreplace: 取代整個通訊錄
+importgroups: 匯入群組
+importgroupsall: 全部 (必要時新增群組)
+importgroupsexisting: 僅限於既有群組
+importdesc: 可以上傳通訊錄的所有聯絡人。<br/>現時支援 <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> 或 CSV 格式。
+importmapdesc: 在繼續進行 CSV（逗號分隔）資料匯入前，請先確認下方的欄位對映資訊正確無誤。
+fieldnotmapped: 欄位未對映（不匯入）
+skipheader: 不匯入第一行（標頭）
+done: 完成
+settingsfor: 設定
+about: 關於
+preferences: 設定
+userpreferences: 個人設定
+editpreferences: 編輯個人設定
+identities: 身份資訊
+manageidentities: 管理識別身份
+newidentity: 新增識別身份
+addidentity: 加入識別身份
+editidentity: 編輯識別身份
+identityencryption: 加密
+preferhtml: 使用 HTML 顯示
+defaultcharset: 預設編碼
+htmlmessage: HTML 郵件
+messagepart: 部分
+digitalsig: 數位簽章
+dateformat: 日期格式
+timeformat: 時間格式
+prettydate: 簡短日期顯示
+setdefault: 設成預設值
+autodetect: 自動選擇
+language: 語言
+timezone: 時區
+pagesize: 每頁顯示列數
+signature: 簽名檔
+dstactive: 日光節約時間
+showinextwin: 在新視窗顯示郵件
+composeextwin: 在新視窗撰寫郵件
+htmleditor: 使用 HTML 撰寫郵件
+htmlonreply: 僅在回覆 HTML 信件時
+htmlonreplyandforward: 僅在轉寄或回覆 HTML 信件時
+htmlsignature: HTML 簽名檔
+showemail: 一併顯示名稱和電郵地址
+previewpane: 顯示預覽窗格
+skin: 版面風格
+logoutclear: 登出時清空垃圾桶
+logoutcompact: 登出時壓緊收件匣
+uisettings: 使用者介面
+serversettings: 伺服器設定
+mailboxview: 信箱顯示
+mdnrequests: 讀取回條回應
+askuser: 詢問我
+autosend: 自動送出
+autosendknown: 傳送回條給我的聯絡人，其他則詢問我
+autosendknownignore: 傳送回條給我的聯絡人，其他則忽略
+autosendtrusted: 傳送回條給受信任的寄件者，否則請問我
+autosendtrustedignore: 傳送回條給受信任的寄件者，否則請忽略
+ignorerequest: 忽略要求
+readwhendeleted: 將刪除的郵件標示為已讀取
+flagfordeletion: 只將郵件標示為刪除，而非真的刪除
+skipdeleted: 不要顯示已刪除的郵件
+deletealways: 如果移動郵件到垃圾桶失敗，就直接刪除
+deletejunk: 直接刪除「垃圾郵件」中的郵件
+showremoteimages: 顯示遠端郵件內文的圖片
+allowremoteresources: 允許遠端資源 (圖像、樣式)
+fromknownsenders: 從已知的寄件者
+fromtrustedsenders: 來自受信任的寄件者
+frommycontacts: 來自我的聯絡人
+always: 總是
+alwaysbutplain: 總是，除非回覆純文字郵件
+showinlineimages: 將附加檔案的圖片顯示於郵件最後
+autosavedraft: 自動儲存草稿
+everynminutes: 每 $n 分鐘
+refreshinterval: 重新整理 (檢查新郵件等)
+never: 永不
+immediately: 立即
+messagesdisplaying: 郵件顯示
+messagescomposition: 撰寫郵件
+mimeparamfolding: 附加檔案名稱的編碼方式
+2231folding: 完全 RFC 2231 模式（Thunderbird）
+miscfolding: RFC 2047/2231 混合模式（MS Outlook）
+2047folding: 完全 RFC 2047 模式（其他）
+force7bit: 對 8 位元字元使用 MIME 編碼
+savelocalstorage: ( 暫時 ) 保存在瀏覽器的本機儲存
+advancedoptions: 進階選項
+toggleadvancedoptions: 切換高級選項
+focusonnewmessage: 收到新郵件時使瀏覽器獲得焦點
+checkallfolders: 對於所有資料夾，都要檢查有否新郵件
+displaynext: 刪除/移動之後，顯示下一個清單項目
+defaultfont: HTML 郵件的預設字型
+mainoptions: 主要選項
+browseroptions: 瀏覽器選項
+section: 分類
+maintenance: 管理
+newmessage: 新郵件
+signatureoptions: 簽名檔選項
+whenreplying: 回覆時
+replyempty: 不要包含原來的信件內容
+replytopposting: 在原文上方開始新郵件
+replytoppostingnoindent: 在原文上方開始新郵件 (無縮排)
+replybottomposting: 在原文下方開始新郵件
+replyremovesignature: 回覆時移除原有簽名檔
+autoaddsignature: 自動附加簽名
+newmessageonly: 僅新郵件
+replyandforwardonly: 僅回覆或轉寄時
+insertsignature: 插入簽名檔
+sigbelow: 將簽名置於引用郵件之後
+sigseparator: 在簽名強制使用標準分隔符號
+automarkread: 將郵件標記為已讀
+afternseconds: $n 秒之後
+reqmdn: 總是索取讀取回條
+reqdsn: 總是要求傳送狀態通知
+replysamefolder: 將回信放在與原信件相同的資料夾
+defaultabook: 預設通訊錄
+autocompletesingle: 在自動完成時略過其他電郵地址
+listnamedisplay: 聯絡人顯示方式
+contactformmode: 聯絡人表單模式
+privatemode: 私人（家）
+businessmode: 商務（工作）
+collectedaddresses: 已蒐集的地址
+collectedrecipients: 已蒐集的收件者
+collectedrecipientsopt: 將寄送電子郵件收件者儲存於
+collectedsendersopt: 將受信任的寄件者儲存於
+trustedsenders: 受信任的寄件者
+spellcheckbeforesend: 寄送前執行拼字檢查
+spellcheckoptions: 拼字檢查選項
+spellcheckignoresyms: 忽略有符號的字
+spellcheckignorenums: 忽略有數字的字
+spellcheckignorecaps: 忽略全大寫字母的字
+addtodict: 加入詞典
+mailtoprotohandler: '註冊為 mailto: 連結的預設處理常式'
+standardwindows: 以新視窗顯示彈出式對話框
+forwardmode: 郵件轉寄方式
+inline: 放入內文
+asattachment: 當成附件
+replyallmode: 「全部回覆」按鈕的預設動作
+replyalldefault: 全部回覆
+replyalllist: 只回覆郵件列表 (如有)
+allmessages: 所有郵件
+folder: 資料夾
+folders: 資料夾
+foldername: 資料夾名稱
+subscribed: 訂閱
+messagecount: 郵件數目
+create: 建立
+createfolder: 建立新資料夾
+managefolders: 管理資料夾
+specialfolders: 特殊資料夾
+properties: 屬性
+folderproperties: 資料夾屬性
+parentfolder: 上一層資料夾
+location: 位置
+info: 資訊
+getfoldersize: 點擊顯示資料夾大小
+changesubscription: 點擊以改變訂閱
+foldertype: 資料夾類型
+personalfolder: 私人資料夾
+otherfolder: 其他使用者資料夾
+sharedfolder: 公用資料夾
+findfolders: 尋找資料夾
+findcontacts: 尋找聯絡人
+findmail: 尋找郵件
+namespace.personal: 個人
+namespace.other: 其他使用者
+namespace.shared: 共享
+dualuselabel: 僅可包含
+dualusemail: 郵件
+dualusefolder: 資料夾
+generate: 建立
+encryptioncreatekey: 建立新的金鑰對
+openmailvelopesettings: 開啟 Mailvelope 設定
+encryptionprivkeysinmailvelope: 有 $nr 個符合的私鑰儲存於 Mailvelope 鑰匙圈：
+encryptionnoprivkeysinmailvelope: 未有在 Mailvelope 附加程式找到寄件者的身分的 PGP 私鑰。是否建立一個新的，以啟用郵件加密？
+encryption: 加密
+mailvelopeoptions: Mailvelope 選項
+mailvelopemainkeyring: 使用 Mailvelope 主鑰匙圈
+mailvelopenotfound: 您的瀏覽器未啟用／安裝 Mailvelope 擴充套件
+sortby: 排序
+sortasc: 遞增排序
+sortdesc: 遞減排序
+undo: 復原
+installedplugins: 已安裝的擴充套件
+plugin: 擴充套件
+version: 版本
+source: 來源
+destination: 目的地
+license: 授權許可
+support: 取得支援
+savedsearches: 儲存的搜尋樣式
+dateformatY: YYYY
+dateformaty: YY
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: 萬國碼
+english: 英文
+westerneuropean: 西歐語系
+easterneuropean: 東歐語系
+southeasterneuropean: 東南歐語系
+baltic: 波羅的海語系
+cyrillic: 西里爾字母
+arabic: 阿拉伯文
+greek: 希臘文
+hebrew: 希伯來文
+turkish: 土耳其文
+nordic: 北歐語系
+thai: 泰文
+celtic: 塞爾特語系
+vietnamese: 越南文
+japanese: 日文
+korean: 韓文
+chinese: 中文
+arialabeltopnav: 視窗控制
+arialabeltasknav: 應用程式任務
+arialabeltoolbar: 應用程式工具列
+arialabellistnav: 清單導覽
+arialabelactivetask: 現行的任務
+arialabelmessagessearchfilter: 電子郵件列表篩選
+arialabelmailsearchform: 電子郵件搜索表單
+arialabelcontactsearchform: 聯絡人搜索表單
+arialabelmailquicksearchbox: ' 電子郵件搜索輸入'
+arialabelquicksearchbox: 搜索輸入
+arialabelfoldersearchfilter: 文件夾列表過濾器
+arialabelfoldersearchform: 文件夾搜索表單
+arialabelfolderlist: 電郵資料夾選擇
+arialabelmessagelist: 電郵列表
+arialabelmailpreviewframe: 郵件預覽
+arialabelmailboxmenu: 資料夾動作選單
+arialabellistselectmenu: 清單選擇選單
+arialabelthreadselectmenu: 郵件串列表選單
+arialabelmessagelistoptions: 郵件清單顯示及排序選項
+arialabelmailimportdialog: 郵件匯入對話匣
+arialabelmessagenav: 郵件導覽
+arialabelmessagebody: 郵件正文
+arialabelmessageactions: 郵件動作
+arialabelcontactquicksearch: 聯絡人搜尋表單
+arialabelcontactsearchbox: 聯絡人搜尋輸入
+arialabelmessageheaders: 郵件標頭
+arialabelforwardingoptions: 轉寄選項
+arialabelreplyalloptions: 「全部回覆」選項
+arialabelmoremessageactions: 更多郵件動作
+arialabelmorecontactactions: 更多聯絡人動作
+arialabelmarkmessagesas: 將所選郵件標示為...
+arialabelcomposeoptions: 撰寫選項
+arialabelresponsesmenu: 「罐頭」預設回應選單
+arialabelattachmentuploadform: 附件上載表單
+arialabelattachmentmenu: 附件選項
+arialabelmailtomenu: 電郵位址選項
+arialabelattachmentpreview: 附件預覽
+ariasummarycomposecontacts: 可以選取為收件者的聯絡人和群組清單
+arialabelcontactexportoptions: 聯絡人匯出選項
+arialabelabookgroupoptions: 通訊錄/群組選項
+arialabelpreferencesform: 設定表單
+arialabelidentityeditfrom: 身份編輯表單
+arialabelresponseeditfrom: 預設回應編輯表單
+arialabelsearchterms: 搜尋項目
+arialabeldropactionmenu: 拖曳動作選單
+arialabelheadersmenu: 收件者 (標頭) 加入選單
+arialabelimagetools: 圖像工具
+helplistnavigation: 清單鍵盤導覽
+helplistkeyboardnavigation: "上下箭嘴：移動焦點／選取列\n空格鍵：選取焦點列\nShift + 上／下：額外選取上面或下面的列\nCtrl + 空格鍵：將焦點列加入選取／將焦點列移出選取"
+helplistkeyboardnavmessages: "左／右箭嘴：展開／收起郵件串 (僅在郵件串模式有效)\nEnter：開啟所選／焦點郵件\nDel：將所選郵件移至垃圾桶"
+helplistkeyboardnavcontacts: Enter：開啟所選／焦點聯絡人
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+keepformatting: ''
+addheader: ''
+nonbinary: ''
+othergender: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+alwayskeepformatting: ''
+editoroptions: ''
+enableautolink: ''
+olderxdays: ''
+mailvelopeenable: ''
+skinauthor: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

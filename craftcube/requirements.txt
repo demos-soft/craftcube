@@ -2,3 +2,4 @@ Flask>=3.0
 gunicorn>=21.2
 cryptography>=42.0
 qrcode>=7.0
+PyYAML>=6.0

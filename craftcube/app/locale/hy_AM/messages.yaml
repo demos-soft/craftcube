@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for hy_AM. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Սխա՛լ
+loginfailed: Մուտքը ձախողվեց
+cookiesdisabled: Сookies–ների ապահովվումը բացակայում է
+sessionerror: Անվավեր կամ ժամկետանց սեսիա
+storageerror: IMAP սերվերի հետ կապը ձախողվեց
+servererror: Սերվերի սխա՛լ
+servererrormsg: Սերվերի սխալ` $msg
+dberror: Տվյալների շտեմարանի սխա՛լ
+requesttimedout: Հարցման թույլատրելի ժամանակը սպառվեց
+errorreadonly: Գործողությունը անհնար է։ Պանակը միայն ընթերցման համար է։
+errornoperm: Գործողության կատարման իրավունքը մերժված է։
+invalidrequest: Սխալ հարցում, ապարդյուն։
+nomessagesfound: Այս փոստարկղում նամակներ չկան
+loading: Բեռնում...
+uploading: Ֆայլի վերբեռնում…
+uploadingmany: Վերբեռնվում են ֆայլերը…
+loadingdata: Տվյալների բեռնավորում…
+checkingmail: Նոր նամակների ստուգում…
+sendingmessage: Նամակի ուղարկում…
+messagesent: Նամակն ուղարկված է
+savingmessage: Նամակի գրանցում…
+messagesaved: Նամակը գրանցվեց որպես սևագիր
+successfullysaved: Գրանցված է
+addedsuccessfully: Հասցեն ավելացված է
+contactnameexists: Նույն անունով արդեն անձ գոյություն ունի։
+blockedimages: Ձեր անվտանգության համար, այս նամակի արտաքին նկարներն բեռնված չեն
+encryptedmessage: Ներողություն, այս նամակը կոդավորված է
+nocontactsfound: Հասցեներ չկան
+contactnotfound: Որոնվող հասցեն չգտնվեց
+sendingfailed: Նամակի ուղարկումը ձախողվեց
+senttooquickly: Խնդրում ենք սպասել $sec վարկյան մինչ այս նամակն ուղարկելը
+errormoving: Նամակի տեղափոխման ձախողում
+errorcopying: Հաղորդագրության պատճենումը ձախողվեց։
+errordeleting: Նամակի ջնջման ձախողում
+errormarking: Հաղորդագրության նշումը ձախողվեց։
+deletecontactconfirm: Ուզու՞մ էք ջնջել նշված անձերին
+deletegroupconfirm: Դուք իսկապե՞ս ուզում եք ջնջել նշված խումբը։
+deletemessagesconfirm: Ուզու՞մ էք ջնջել նշված նամակները
+deletefolderconfirm: Ուզու՞մ էք ջնջել այս դարակը
+purgefolderconfirm: Ուզու՞մ էք ջնջել այս դարակի բոլոր նամակները
+contactdeleting: Անձի ջնջում…
+groupdeleting: Խմբի ջնջում…
+folderdeleting: Դարակը ջնջվում է…
+foldermoving: Դարակը տեղափոխվում է…
+foldersubscribing: Պանակի բաժանորդագրում…
+folderunsubscribing: Պանակի ապաբաժանորդագրում…
+formincomplete: Ձևը թերի է լրացված
+noemailwarning: Մուտքագրեք ճիշտ էլ. հասցե
+nonamewarning: Մուտքագրեք անուն
+nopagesizewarning: Մուտքագրեք էջի չափս
+norecipientwarning: Մուտքագրեք նվազագույնը մեկ հասցեատեր
+nosubjectwarning: Վերնագիր բացակայում է, ցանկանո՞ւմ եք լրացնել
+nobodywarning: Ուղարկե՞լ այս նամակը դատարկ
+nosearchname: Մուտքագրեք հասցեատեր կամ էլ. հասցե
+notuploadedwarning: Ոչ բոլոր կցված նյութերն են վերբեռնվել։ Սպասեք կամ ընդհատեք վերբեռնումը։
+searchsuccessful: Գտնվեց $nr նամակ
+contactsearchsuccessful: Գտնվել է $nr անձ։
+searchnomatch: Համապատասխան նամակներ չգտնվեցին
+searching: Որոնում...
+checking: Ստուգում…
+nospellerrors: Ուղագրական սխալներ չկան
+folderdeleted: Դարակը ջնջվեց
+foldersubscribed: Պանակին բաժանորդագրումը հաջողվեց։
+folderunsubscribed: Պանակից ապաբաժանորդագրումը հաջողվեց։
+deletedsuccessfully: Ջնջված է
+converting: Նամակի ձևավորման հեռացում…
+messageopenerror: Նամակի բեռնվումը սերվերից ձախողվեց
+fileuploaderror: Ֆայլի կցումն ձախողվեց
+filesizeerror: Ֆայլի չափը գերազանցում է մաքսիմալը՝ $size
+sourceisreadonly: Այս հասցեն պաշտպանված է
+errorsavingcontact: Հասցեի գրանցումն ձախողվեց
+movingmessage: Նամակը տեղափոխվում է…
+copyingmessage: Հաղորդագրությունների պատճենում…
+copyingcontact: Անձանց պատճենում…
+deletingmessage: Հաղորդագրությունների ջնջում…
+markingmessage: Հաղորդագրությունների նշում…
+addingmember: Անձանց ավելացում խմբին…
+removingmember: Անձանց հեռացում խմբից…
+receiptsent: Նամակի ընթերցման ծանուցագիրն ուղարկված է
+errorsendingreceipt: Ծանուցագրի ուղարկումը ձախողվեց
+deleteidentityconfirm: Դուք իսկապե՞ս ուզում եք ջնջել այս ինքնությունը։
+nodeletelastidentity: Անհնար է ջնջել վերջին տարբերակը
+forbiddencharacter: Դարակի անունը պարունակում է անթույլատրելի նշան
+selectimportfile: Ընտրեք ուղարկվող ֆայլը
+addresswriterror: Ընտրված հասցեագիրքը ենթակա չէ փոփոխման
+contactaddedtogroup: Անձինք բարեհաջող ավելացվեցին խմբին։
+contactremovedfromgroup: Անձինք բարեհաջող հանվեցին խմբից։
+importwait: Ներկրումն ընթացքի մեջ է...
+importconfirm: $inserted նոր ներկրված հասցեներ, $skipped արդեն առկա հասցեներ՝ <p><em>$names</em></p>
+opnotpermitted: Գործողությունը անթույլատրելի է։
+httpreceivedencrypterror: Համակարգի լարքի սխալ։ Դիմեք համակարգը սպասարկող անձնակազմին։ <b>Ձեր նամակը ուղարկված չէ։</b>
+smtpconnerror: SMTP սխալ ($code)` Սերվերի հետ կապը ձախողվեց։
+smtpautherror: SMTP սխալ ($code)` Նույնականացումը ձախողվեց։
+smtpfromerror: SMTP սխալ ($code)` Որպես "$from" ($msg) հաղորդագրությունը ուղարկելը ձախողվեց։
+smtptoerror: SMTP սխալ ($code)` Հաղորդագրության ստացող "$to"-ին ($msg) ավելացնելը ձախողվեց։
+smtprecipientserror: SMTP սխալ` ստացողների ցուցակի ընթերցման ձախողում։
+smtperror: SMTP սխալ` $msg
+toomanyrecipients: Ստացողների քանակը չափազանց մեծ է։ Նվազեցրեք մինչև $max-ը։
+maxgroupmembersreached: Խմբի անդամների քանաքը գերազանցում է թույլատրելի $max-ը։
+contactdelerror: Անձանց ջնջումը ձախողվեց։
+contactdeleted: Անձանց ջնջումը հաջողվեց։
+contactrestoreerror: Ջնջված անձանց վերականգնումը ձախողվեց։
+contactrestored: Ջնջված անձանց վերականգնումը հաջողվեց։
+groupdeleted: Խումբը ջնջվեց։
+grouprenamed: Խումբը վերանվանվեց։
+groupcreated: Խումբը ստեղծվեց։
+savedsearchdeleted: Պահպանված որոնումը ջնջվեց։
+savedsearchdeleteerror: Պահպանված որոնման ջնջումը ձախողվեց։
+savedsearchcreated: Որոնումը պահպանվեց։
+savedsearchcreateerror: Պահպանված որոնման ստեղծումը ձախողվեց։
+messagedeleted: Հաղորդագրությունները ջնջվեցին։
+messagemoved: Հաղորդագրությունները տեղափոխվեցին։
+messagecopied: Հաղորդագրությունները պատճենվեցին։
+messagemarked: Հաղորդագրությունները նշվեցին։
+autocompletechars: Ավտոլրացման համար ներմուծեք առնվազն $min նիշ։
+autocompletemore: Գտնված են համապատասխանող գրառումներ, ներմուծեք հավելյալ նիշեր։
+namecannotbeempty: Անունը դատարկ չի կարող լինել։
+nametoolong: Անունը չափազանց երկար է։
+folderupdated: Պանակը թարմացվեց։
+foldercreated: Պանակը ստեղծվեց։
+invalidimageformat: Պատկերի սխալ ձևաչափ։
+mispellingsfound: Հաղորդագրության մեջ կան տառասխալներ։
+parentnotwritable: Նշված պանակի մեջ պանակի ստեղծումը կամ տեղափոխումը անհնար է անբավարար իրավունքների պատճառով։
+messagetoobig: Հաղորդագրության մասը չափազանց մեծ է սպասարկման համար։
+cookiesmismatch: ''
+accountlocked: ''
+connerror: ''
+dbconnerror: ''
+windowopenerror: ''
+erroroverquota: ''
+erroroverquotadelete: ''
+invalidhost: ''
+loggedout: ''
+mailboxempty: ''
+nomessages: ''
+refreshing: ''
+attaching: ''
+savingresponse: ''
+deleteresponseconfirm: ''
+nocontactselected: ''
+contactexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+externalmessagedecryption: ''
+nopubkeyfor: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+errorsavingsent: ''
+errorsaving: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+nosenderwarning: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+restoresavedcomposedata: ''
+stillsearching: ''
+folderpurged: ''
+folderexpunged: ''
+filelinkerror: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+copysuccess: ''
+movesuccess: ''
+copyerror: ''
+moveerror: ''
+movingcontact: ''
+nogroupassignmentschanged: ''
+importformaterror: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+importmessagesuccess: ''
+importmessageerror: ''
+nofromaddress: ''
+editorwarning: ''
+smtputf8error: ''
+smtpsizeerror: ''
+emailformaterror: ''
+internalerror: ''
+messagemovedtotrash: ''
+namedotforbidden: ''
+attachmentvalidationerror: ''
+noscriptwarning: ''
+messageissent: ''
+errnotfound: ''
+errnotfoundexplain: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcontactserveradmin: ''
+clicktoresumesession: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+clicktocompose: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

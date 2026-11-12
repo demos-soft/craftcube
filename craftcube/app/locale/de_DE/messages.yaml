@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for de_DE. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Ein Fehler ist aufgetreten!
+loginfailed: Die Anmeldung ist fehlgeschlagen.
+cookiesdisabled: Ihr Browser akzeptiert keine Cookies.
+sessionerror: Ihre Sitzung ist ungültig oder abgelaufen.
+cookiesmismatch: Cookiefehler erkannt. Bitte die Browser Cookies löschen.
+storageerror: Verbindung zum Speicherserver fehlgeschlagen.
+servererror: Serverfehler!
+servererrormsg: 'Serverfehler: $msg'
+accountlocked: Zu viele fehlgeschlagene Anmeldeversuche. Versuchen Sie es später noch einmal.
+connerror: Verbindungsfehler (Fehler beim Erreichen des Servers)!
+dberror: Datenbankfehler!
+dbconnerror: Verbindung zur Datenbank konnte nicht aufgebaut werden!
+windowopenerror: Das Popup-Fenster wurde blockiert!
+requesttimedout: Zeitüberschreitung der Anforderung
+errorreadonly: Die Aktion kann nicht ausgeführt werden. Der Ordner ist schreibgeschützt.
+errornoperm: Die Aktion kann nicht ausgeführt werden. Zugriff verweigert.
+erroroverquota: Die Aktion kann nicht ausgeführt werden. Nicht genug freier Speicherplatz.
+erroroverquotadelete: Nicht genug freier Speicherplatz. Verwenden sie SHIFT+ENTF um Nachrichten zu löschen.
+invalidrequest: Ungültige Anfrage! Es wurden keine Daten gespeichert.
+invalidhost: Ungültiger Servername.
+nomessagesfound: Keine Nachrichten in diesem Postfach.
+loggedout: Sie haben Ihre Sitzung erfolgreich beendet. Auf Wiedersehen!
+mailboxempty: Postfach ist leer
+nomessages: Keine Nachrichten
+refreshing: Aktualisierung läuft …
+loading: Wird geladen …
+uploading: Datei wird hochgeladen …
+attaching: Datei wird angehängt …
+uploadingmany: Dateien werden hochgeladen …
+loadingdata: Daten werden geladen …
+checkingmail: Auf neue Nachrichten wird geprüft …
+sendingmessage: Nachricht wird gesendet …
+messagesent: Nachricht erfolgreich gesendet.
+savingmessage: Nachricht wird gespeichert …
+messagesaved: Nachricht als Entwurf gespeichert.
+successfullysaved: Erfolgreich gespeichert.
+savingresponse: Antwortvorlage wird gespeichert …
+deleteresponseconfirm: Möchten Sie diese Vorlage wirklich löschen?
+nocontactselected: Sie haben noch keinen Kontakt ausgewählt.
+addedsuccessfully: Kontakt zum Adressbuch hinzugefügt.
+contactexists: Es existiert bereits ein Kontakt mit dieser E-Mail-Adresse.
+contactnameexists: Ein Kontakt mit dem gleichen Namen existiert bereits.
+blockedimages: Um Ihre Privatsphäre zu schützen, wurden externe Bilder blockiert.
+blockedresources: Um Ihre Privatsphäre zu schützen, wurden externe Ressourcen blockiert.
+suspiciousemail: Diese Nachricht enthält eine verdächte eMail-Adresse, die gefälscht sein könnte.
+bccemail: Die weitergeleite(n) Nachricht(en) enthalten vertrauliche Empfänger (Bcc).
+bouncehint: Die Nachricht wird unverändert weitergeleitet, das heißt mit dem Originaltext, Kopfzeilen und Empfänger(n)
+encryptedmessage: Dies ist eine verschlüsselte Nachricht und kann leider nicht angezeigt werden.
+externalmessagedecryption: Dies ist eine verschlüsselte Nachricht und kann mit Ihrer Browser-Erweiterung entschlüsselt werden.
+nopubkeyfor: Kein gültiger öffentlicher Schlüssel für $email gefunden
+nopubkeyforsender: Kein gültiger öffentlicher Schlüssel für Ihre Absenderidentität gefunden. Möchten Sie die Nachricht nur für die Empfänger verschlüsseln?
+encryptnoattachments: Bereits hochgeladene Anhänge können nicht verschlüsselt werden. Bitte fügen Sie sie erneut im Verschlüsselungseditor hinzu.
+searchpubkeyservers: Möchten Sie öffentliche Schlüsselserver nach den fehlenden Schlüsseln durchsuchen?
+encryptpubkeysfound: 'Die folgenden öffentlichen Schlüssel wurden gefunden:'
+keyservererror: Fehler beim Holen des Schlüssels vom Schlüsselserver.
+keyimportsuccess: Öffentlicher Schlüssel $key erfolgreich in Ihren Schlüsselbund importiert.
+nocontactsfound: Keine Kontakte gefunden.
+contactnotfound: Der angeforderte Kontakt wurde nicht gefunden.
+contactsearchonly: Du musst das Suchformular nutzen, um die Kontakte vom ausgewählten Adressbuch zu sehen.
+sendingfailed: Versenden der Nachricht fehlgeschlagen.
+senttooquickly: Bitte warten Sie $sec Sekunde(n) vor dem Senden dieser Nachricht.
+errorsavingsent: Ein Fehler ist beim Speichern der gesendeten Nachricht aufgetreten.
+errorsaving: Beim Speichern ist ein Fehler aufgetreten.
+errormoving: Nachricht(en) konnte(n) nicht verschoben werden.
+errorcopying: Nachticht(en) konnte(n) nicht kopiert werden.
+errordeleting: Nachricht(en) konnte(n) nicht gelöscht werden.
+errormarking: Nachricht(en) konnte(n) nicht markiert werden.
+alerttitle: Achtung
+confirmationtitle: Sind Sie sich sicher...
+deletecontactconfirm: Wollen Sie die ausgewählten Kontakte wirklich löschen?
+deletegroupconfirm: Wollen Sie die gewählte Gruppe wirklich löschen?
+deletemessagesconfirm: Wollen Sie die ausgewählten Nachrichten wirklich löschen?
+deletefolderconfirm: Wollen Sie diesen Ordner wirklich löschen?
+movefolderconfirm: Wollen Sie diesen Ordner wirklich verschieben?
+purgefolderconfirm: Wollen Sie diesen Ordner wirklich leeren?
+contactdeleting: Kontakt(e) werden gelöscht …
+groupdeleting: Gruppe wird gelöscht …
+folderdeleting: Ordner wird gelöscht …
+foldermoving: Ordner wird verschoben …
+foldersubscribing: Ordner wird abonniert …
+folderunsubscribing: Ordner wird abbestellt …
+formincomplete: Das Formular wurde nicht vollständig ausgefüllt.
+noemailwarning: Bitte geben Sie eine gültige E-Mail-Adresse ein.
+nonamewarning: Bitte geben Sie einen Namen ein.
+nopagesizewarning: Bitte geben Sie die Einträge pro Seite an.
+nosenderwarning: Bitte geben Sie die E-Mail-Adresse des Senders an.
+recipientsadded: Empfänger erfolgreich hinzugefügt.
+norecipientwarning: Bitte geben Sie mindestens einen Empfänger an.
+disclosedrecipwarning: Alle Empfänger sehen die E-Mail Adressen der anderen Empfänger. Um deren Privatsphäre zu schützen, können Sie das BCC-Feld verwenden.
+disclosedreciptitle: Zu viele öffentliche Empfänger
+nosubjectwarning: Die Betreffzeile ist leer. Möchten Sie jetzt einen Betreff eingeben?
+nosubjecttitle: Kein Betreff
+nobodywarning: Diese Nachricht ohne Inhalt senden?
+notsentwarning: Die Nachricht wurde nicht gesendet und hat nicht gespeicherte Änderungen. Möchten Sie Ihre Änderungen verwerfen?
+restoresavedcomposedata: 'Es wurde ein nicht versandter Entwurf einer Nachricht gefunden.\n\nBetreff: $subject\nGespeichert am: $date\n\nMöchten Sie diese Nachricht wiederherstellen?'
+nosearchname: Bitte geben Sie einen Namen oder eine E-Mail-Adresse ein.
+notuploadedwarning: Es wurden noch nicht alle Dateien hochgeladen. Bitte warten oder Hochladen abbrechen.
+searchsuccessful: $nr Nachrichten gefunden.
+contactsearchsuccessful: $nr Kontakte gefunden.
+searchnomatch: Die Suche lieferte keine Treffer.
+searching: Suche läuft …
+checking: Überprüfung läuft …
+stillsearching: Suche läuft noch …
+nospellerrors: Keine Rechtschreibfehler gefunden.
+folderdeleted: Ordner erfolgreich gelöscht.
+foldersubscribed: Der Ordner wurde erfolgreich abonniert.
+folderunsubscribed: Der Ordner wurde erfolgreich abbestellt.
+folderpurged: Ordner wurde erfolgreich geleert.
+folderexpunged: Ordner wurde erfolgreich ausgeräumt.
+deletedsuccessfully: Erfolgreich gelöscht.
+converting: Formatierungen werden entfernt …
+messageopenerror: Die Nachricht konnte nicht vom Server geladen werden.
+filelinkerror: Anhängen der Datei ist fehlgeschlagen.
+fileuploaderror: Hochladen der Datei fehlgeschlagen.
+csvfilemismatch: Der Import von mehreren CSV-Dateien mit unterschiedlichen Feldern wird nicht unterstützt.
+filesizeerror: Die hochzuladende Datei überschreitet die Maximalgröße von $size.
+filecounterror: Sie können maximal $count Dateien mit einmal hochladen.
+msgsizeerror: Hinzufügen einer Datei fehlgeschlagen. Die maximale Größe einer Nachricht ($size) wurde überschritten.
+msgsizeerrorfwd: Maximalgröße einer Nachricht ($size) überschritten. $num Nachricht(en) wird/wurden nicht angehängt.
+copysuccess: Erfolgreich kopiert $nr Kontakte.
+movesuccess: Erfolgreich verschoben $nr Kontakte.
+copyerror: Die Kontakte konnten nicht kopiert werden.
+moveerror: Die Kontakte konnten nicht verschoben werden.
+sourceisreadonly: Das Adressverzeichnis kann nicht verändert werden.
+errorsavingcontact: Die Änderungen konnten nicht gespeichert werden.
+movingmessage: Nachrichten werden verschoben …
+copyingmessage: Nachrichten werden kopiert …
+copyingcontact: Kontakte werden kopiert …
+movingcontact: Kontakte werden verschoben …
+deletingmessage: Nachrichten werden gelöscht …
+markingmessage: Nachrichten werden markiert …
+addingmember: Kontakte werden der Gruppe hinzugefügt …
+removingmember: Kontakte werden von der Gruppe entfernt …
+receiptsent: Lesebestätigung erfolgreich gesendet.
+errorsendingreceipt: Bestätigung konnte nicht gesendet werden.
+deleteidentityconfirm: Möchten Sie wirklich diese Identität löschen?
+nodeletelastidentity: Diese Identität kann nicht gelöscht werden, da dies die letzte ist.
+forbiddencharacter: Der Ordnername enthält ein ungültiges Zeichen.
+selectimportfile: Bitte wählen Sie eine Datei zum Importieren aus.
+addresswriterror: Das gewählte Adressbuch kann nicht verändert werden.
+contactaddedtogroup: Kontakte wurden dieser Gruppe hinzugefügt.
+contactremovedfromgroup: Kontakte wurden aus dieser Gruppe entfernt.
+nogroupassignmentschanged: Es wurden keine Gruppenzuordnungen geändert.
+importwait: Daten werden importiert, bitte warten …
+importformaterror: Import fehlgeschlagen! Die hochgeladene Datei ist keine gültige Importdatei.
+importconfirm: <b>Es wurden $inserted Adressen erfolgreich importiert.</b>
+importconfirmskipped: <b>$skipped bestehende Einträge wurden übersprungen.</b>
+importconfirminvalid: <b>$invalid ungültige Einträge wurden übersprungen.</b>
+importconfirmerrors: <b>$errors gültige Kontakte wurden nicht importiert.</b>
+importmessagesuccess: Nachrichten $nr erfolgreich importiert
+importmessageerror: Import fehlgeschlagen! Die hochgeladene Datei ist keine gültige Importdatei.
+opnotpermitted: Operation nicht erlaubt!
+nofromaddress: Fehlende E-Mail-Adresse in ausgewählter Identität.
+editorwarning: Wenn sie den Editor wechseln, könnten Textformatierungen verloren gehen. Möchten sie fortfahren?
+httpreceivedencrypterror: Ein fataler Konfigurationsfehler ist aufgetreten. Kontaktieren Sie bitte sofort Ihren Administrator. <b>Ihre Nachricht konnte nicht versendet werden.</b>
+smtpconnerror: 'SMTP Fehler ($code): Die Verbindung ist fehlgeschlagen.'
+smtpautherror: 'SMTP Fehler ($code): Die Authentisierung ist fehlgeschlagen.'
+smtpfromerror: 'SMTP Fehler ($code): Der Absender "$from" konnte nicht gesetzt werden ($msg).'
+smtptoerror: 'SMTP Fehler ($code): Der Empfänger "$to" konnte nicht gesetzt werden ($msg).'
+smtprecipientserror: 'SMTP-Fehler: die Empfängerliste konnte nicht verarbeitet werden.'
+smtputf8error: 'SMTP-Fehler: Der Server unterstützt Unicode in der E-Mail-Adresse nicht.'
+smtpsizeerror: 'SMTP-Fehler: Nachrichtengröße übersteigt die Servergrenze ($limit)'
+smtperror: 'SMTP Fehler: $msg'
+emailformaterror: 'Ungültige E-Mail-Adresse: $email'
+toomanyrecipients: Zuviele Empfänger. Reduzieren Sie die Anzahl Empfängeradressen auf $max.
+maxgroupmembersreached: Die Anzahl Adressen in dieser Gruppe überschreitet das Maximum von $max.
+internalerror: Ein interner Fehler ist aufgetreten. Bitte versuchen Sie es erneut.
+contactdelerror: Fehler beim Löschen.
+contactdeleted: Kontakt(e) erfolgreich gelöscht.
+contactrestoreerror: Konnte die gelöschten Kontakte nicht wiederherstellen.
+contactrestored: Kontakte erfolgreich wiederhergestellt.
+groupdeleted: Gruppe erfolgreich gelöscht.
+grouprenamed: Gruppe erfolgreich umbenannt.
+groupcreated: Gruppe erfolgreich erstellt.
+savedsearchdeleted: Suchergebnisse erfolgreich gelöscht.
+savedsearchdeleteerror: Suchergebnisse konnten nicht gelöscht werden.
+savedsearchcreated: Suchergebnisse wurden erfolgreich wiederherstellt.
+savedsearchcreateerror: Suchergebnisse konnten nicht wiederhergestellt werden.
+messagedeleted: Nachricht(en) erfolgreich gelöscht.
+messagemoved: Nachricht(en) erfolgreich verschoben.
+messagemovedtotrash: Nachricht(en) erfolgreich in Papierkorb gelegt.
+messagecopied: Nachricht(en) erfolgreich kopiert.
+messagemarked: Nachricht(en) erfolgreich markiert.
+autocompletechars: Geben Sie mind. $min Zeichen für die Auto-Vervollständigung ein.
+autocompletemore: Mehrere Treffer. Bitte geben Sie mehr Buchstaben ein.
+namecannotbeempty: Der Name darf nicht leer sein.
+nametoolong: Der Name ist zu lang.
+namedotforbidden: Ordnername darf nicht mit einem Punkt beginnen.
+folderupdated: Der Ordner wurde erfolgreich aktualisiert.
+foldercreated: Der Ordner wurde erfolgreich erstellt.
+invalidimageformat: Kein gültiges Bildformat.
+mispellingsfound: Es wurden noch Rechtschreibfehler in der Nachricht gefunden.
+parentnotwritable: Konnte den Ordner nicht erstellen/verschieben. Keine Berechtigung.
+messagetoobig: Die Nachricht ist zu gross und kann nicht verarbeitet werden.
+attachmentvalidationerror: 'Dieser Anhang ist verdächtig, weil sein Typ nicht mit dem in der Nachricht angegebenen Typ übereinstimmt. Wenn Sie dem Absender nicht vertrauen, sollten Sie ihn nicht im Browser öffnen, da er bösartige Inhalte enthalten kann.<br/><br/><em>Erwartet: $expected; gefunden: $detected</em>'
+noscriptwarning: 'Warnung: Dieser Webmail-Service erfordert Javascript. Um ihn zu benutzten aktivieren Sie Javascript in ihren Browser-Einstellungen.'
+messageissent: Die Nachricht wurde bereits gesendet, aber noch nicht gespeichert. Wollen Sie es jetzt speichern?
+errnotfound: Datei nicht gefunden!
+errnotfoundexplain: Die angeforderte Ressource wurde nicht gefunden!
+errfailedrequest: Anforderung fehlgeschlagen
+errauthorizationfailed: Autorisierung fehlgeschlagen
+errunauthorizedexplain: Es konnte nicht überprüft werden, ob Sie berechtigt sind, auf diesen Dienst zuzugreifen!
+errrequestcheckfailed: Anforderungsprüfung fehlgeschlagen
+errcsrfprotectionexplain: "Zu Ihrer Sicherheit wird der Zugriff auf diese Ressource gegen CSRF geschützt.\nWenn Sie dies sehen, haben Sie sich wahrscheinlich vor dem Verlassen der Webanwendung nicht abgemeldet.\n\nNun ist eine menschliche Interaktion erforderlich, um fortzusetzen."
+errcontactserveradmin: Bitte kontaktieren Sie Ihren Server-Administrator.
+clicktoresumesession: Klicken Sie hier, um Ihre vorherige Sitzung fortzusetzen
+errcomposesession: Verfasssitzungsfehler
+errcomposesessionexplain: Angeforderte Verfasssitzung nicht gefunden.
+clicktocompose: Klicken Sie hier, um eine neue Nachricht zu verfassen
+nosupporterror: Diese Funktion wird von Ihrem Webbrowser nicht unterstützt.
+siginserted: Signatur erfolgreich eingefügt.
+responseinserted: Antwort erfolgreich eingefügt.
+noresponsesavailable: Keine Antworten verfügbar
+listempty: Die Liste ist leer.
+listusebutton: Um einen neuen Datensatz hinzufügen, verwenden Sie bitte die Schaltfläche 'Erstellen'.
+keypaircreatesuccess: En neues Schlüsselpaar wurde erfolgreich für $identity erstellt.
+emptyattachment: Dieser Anhang scheint leer zu sein.<br>Bitte erkundigen Sie sich bei der Person, die diesen gesendet hat.
+oauthloginfailed: OAuth-Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.
+oauthinvalidrequest: Die Autorisierungsanfrage war ungültig oder unvollständig.
+oauthaccessdenied: 'Der Autorisierungsserver oder Benutzer hat die Anfrage abgelehnt. '

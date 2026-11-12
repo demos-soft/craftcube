@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for hy_AM. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Բարի գալուստ $product
+username: Օգտվող
+password: Գաղտնաբառ
+server: Սերվեր
+login: Մուտք
+logout: Ելք
+mail: Էլ–փոստ
+settings: Նախասիրություններ
+addressbook: Հասցեներ
+inbox: Փոստարկղ
+drafts: Սևագրեր
+sent: Ուղարկված
+trash: Աղբարկղ
+junk: Թափոն
+subject: Վերնագիր
+from: Ուղարկող
+sender: Ուղարկող
+to: Ստացող
+cc: Cc
+bcc: Bcc
+replyto: Reply-To
+followupto: Ի հավելում
+date: Ամսաթիվ
+size: Չափ
+priority: Առավելություն
+organization: Կազմակերպություն
+readstatus: Ընթերցման կարգավիճակ
+listoptions: Ցուցակի ընտրանքներ…
+mailboxlist: Դարակներ
+messagesfromto: Նամակներ $from–ից $to–ը եղած $count–ից
+threadsfromto: Թեմաներ $from-ից $to ընդհանուր $count-ից
+messagenrof: Նամակ $nr եղած $count–ից
+fromtoshort: $from-ից $to ընդհանուր $count-ից
+copy: Cc
+move: Տեղափոխել
+moveto: Տեղափոխել...
+download: Ներբեռնել
+open: Բաց
+showattachment: Ցուցադրել
+showanyway: Ամեն դեպքում ցուցադրել
+filename: Ֆայլի անուն
+filesize: Ֆայլի չափ
+addtoaddressbook: Հիշել հասցեն
+sun: Կիր
+mon: Երկ
+tue: Երք
+wed: Չրք
+thu: Հնգ
+fri: Ուրբ
+sat: Շբթ
+sunday: Կիրակի
+monday: Երկուշաբթի
+tuesday: Երեքշաբթի
+wednesday: Չորեքշաբթի
+thursday: Հինգշաբթի
+friday: Ուրբաթ
+saturday: Շաբաթ
+jan: Հնվ
+feb: Փետ
+mar: Մար
+apr: Ապր
+may: Մայիս
+jun: Հուս
+jul: Հուլ
+aug: Օգս
+sep: Սեպ
+oct: Հոկ
+nov: Նոյ
+dec: Դեկ
+longjan: Հունվար
+longfeb: Փետրվար
+longmar: Մարտ
+longapr: Ապրիլ
+longmay: Մայիս
+longjun: Հունիս
+longjul: Հուլիս
+longaug: Օգոստոս
+longsep: Սեպտեմբեր
+longoct: Հոկտեմբեր
+longnov: Նոյեմբեր
+longdec: Դեկտեմբեր
+today: Այսօր
+refresh: Թարմացնել
+checkmail: Ստուգել նոր նամակները
+compose: Գրել նամակ
+writenewmessage: Նոր նամակ
+reply: Պատասխանել
+replytomessage: Պատասխանել նամակին
+replytoallmessage: Պատասխանել բոլորին
+replyall: Պատասխանել բոլորին
+replylist: Պատասխանել ցուցակին
+forward: Փոխանցել
+forwardinline: Փոխանցել նամակի մեջ
+forwardattachment: Փոխանցել կցված
+forwardmessage: Փոխանցել նամակը
+deletemessage: Ջնջել նամակը
+movemessagetotrash: Գցել աղբարկղը
+printmessage: Տպել
+previousmessage: Ցուցադրել նախորդ նամակը
+firstmessage: Ցուցադրել առաջին նամակը
+nextmessage: Ցուցադրել հաջորդ նամակը
+lastmessage: Ցուցադրել վերջին նամակը
+backtolist: Վերադառնալ նամակների ցուցակ
+viewsource: Ցուցադրել նամակի կոդը
+mark: Նշել
+markmessages: Նշել նամակները
+markread: որպես կարդացած
+markunread: որպես չկարդացած
+markflagged: որպես նշված
+markunflagged: որպես չնշված
+moreactions: Հավելյալ գործողություններ…
+more: Ավելին
+back: Ետ
+options: Ընտրանքներ
+select: Նշել
+all: Բոլորը
+none: Չնշել
+currpage: Առկա էջ
+isread: Ընթերցված
+unread: Չկարդացածը
+flagged: Նշված
+unanswered: Անպատասխան
+deleted: Ջնջված
+undeleted: Ջնջված չէ
+forwarded: Փոխանցված
+invert: Փոխատեղել
+filter: Զտիչ
+list: Ցուցակ
+threads: Թեմաներ
+expand-all: Ընդլայնել բոլորը
+expand-unread: Ընդլայնել չկարդացվածը
+collapse-all: Փլչել բոլորը
+threaded: Թեմավորված
+autoexpand_threads: Բաց անել թեմաները
+do_expand: բոլոր թեմաները
+expand_only_unread: միայն չկարդացված հաղորդագրություններով
+fromto: Ումից/Ում
+flag: Նշան
+attachment: Կցորդ
+nonesort: Չնշել
+sentdate: Ուղարկման ամսաթիվ
+arrival: Ստացման Ամսաթիվ
+asc: ըստ աճման
+desc: ըստ նվազման
+listcolumns: Ցուցակի սյունյակներ
+listsorting: Տեսակավորման սյունյակ
+listorder: Տեսակավորման կարգը
+listmode: Ցուցակով տեսքի տարբերակը
+layoutlist: Ցուցակ
+folderactions: Պանակի գործողություններ…
+compact: Սեղմել
+empty: Դատարկել
+quota: Դիսկային տարածք
+unknown: անհայտ
+unlimited: անսահմանափակ
+quicksearch: Արագ որոնում
+resetsearch: Վերսկսել որոնումը
+searchmod: Որոնման փոփոխիչներ
+msgtext: Ողջ հաղորդագրությունը
+body: Մարմին
+type: Ձև
+namex: Անվանում
+openinextwin: Բացել նոր պատուհանում
+emlsave: Ներբեռնել (.eml)
+editasnew: Խմբագրել որպես նոր
+send: Ուղարկել
+sendmessage: Ուղարկել
+savemessage: Հիշել որպես սևագիր
+addattachment: Կցել ֆայլ
+charset: Տառաշար
+editortype: Խմբագրի տիպը
+returnreceipt: Ստացման հավաստագիր
+dsn: Առաքման կարգավիճակի ծանուցում
+mailreplyintro: $date-ին, $sender-ը գրեց.
+originalmessage: Առաջին հաղորդագրությունը
+insert: Ներդնել
+recipient: Ստացող
+editidents: Խմբագրել ինքնությունները
+spellcheck: Տառասխալներ
+checkspelling: Ստուգել ուղագրությունը
+resumeediting: Շարունակել խմբագրումը
+revertto: Վերականգնել
+responsename: Անվանում
+attach: Կցել
+attachments: Կցումներ
+upload: Բեռնել
+close: Փակել
+messageoptions: Հաղորդագրության ընտրանքներ…
+low: Ցածր
+lowest: Նվազագույն
+normal: Նորմալ
+high: Կարևոր
+highest: Կարևորագույն
+nosubject: (առանց վերնագրի)
+showimages: Ցուցադրել նկարները
+alwaysshow: Միշտ ցուցադրել պատկերները $sender–ից
+isdraft: Սա հաղորդագրության սևագիր է
+andnmore: $nr այլ...
+togglemoreheaders: Ցուցադրել բոլոր գլխագրերը
+togglefullheaders: Փոխել գլխագրերը
+htmltoggle: HTML
+plaintoggle: Պարզ տեքստ
+savesentmessagein: Գրանցել ուղարկված նամակը
+dontsave: Չ՛գրանցել
+maxuploadsize: Առավելագույն թույլատրելի ֆայլի չափը $size է
+addcc: Ավելացնել Cc
+addbcc: Ավելացնել Bcc
+addreplyto: Ավելացնել Reply-To
+addfollowupto: Ավելացնել հավելում
+mdnrequest: Նամակի հեղինակը խնդրել է նամակը կարդալուն պես տեղեկացնել իրեն։ Ցանկանում էք Տեղեկացնե՞լ։
+receiptread: Նամակի ընթերցման ծանուցագիր
+yourmessage: Սա Ձեր նամակի ընթերցման ծանուցագիրն է
+receiptnote: Նշում՝ Այս ծանուցագիրը ընդամենը տեղեկացնում է, որ նամակը ցուցադրվել է հասցեատիրոջ համակարչով։ Չկա որևիցե երաշխիք, որ հասցեատերը իսկապես կարդացել է նամակը։
+name: Մականուն
+firstname: Անուն
+surname: Ազգանուն
+middlename: Միջին անուն
+nameprefix: Նախածանց
+namesuffix: Վերջածանց
+nickname: Մականուն
+jobtitle: Պաշտոն
+department: Բաժանմունք
+gender: Սեռ
+maidenname: Մինչամուսնական ազգանուն
+email: Էկ–փոստ
+phone: Հեռախոս
+address: Հասցե
+street: Փողոց
+locality: Քաղաք
+zipcode: Փոստային կոդ
+region: Մարզ
+country: Երկիր
+birthday: Ծննդյան օր
+anniversary: Տարեդարձ
+website: Կայք
+instantmessenger: IM
+notes: Նշումներ
+male: արական
+female: իգական
+manager: Մենեջեր
+assistant: Օգնական
+spouse: ամուսին
+allfields: Բոլոր դաշտերը
+search: Որոնում
+advsearch: Խորացված որոնում
+advanced: Խորացված
+other: Այլ
+typehome: Տուն
+typework: Աշխատանք
+typeother: Այլ
+typemobile: Բջջային
+typemain: Գլխավոր
+typehomefax: Տան ֆաքս
+typeworkfax: Աշտանանքային ֆաքս
+typecar: Մեքենա
+typepager: Փեյջեր
+typevideo: Տեսանյութ
+typeassistant: Օգնական
+typehomepage: Սկիզբ
+typeblog: Բլոգ
+typeprofile: Պրոֆայլ
+addfield: Ավելացնել դաշտ…
+editcontact: Խմբագրել հասցեն
+contacts: Կապորդներ
+contactproperties: Կապորդի հատկանիշներ
+personalinfo: Անձնական տվյալներ
+edit: Խմբագրել
+cancel: Չեղարկել
+save: Հիշել
+delete: Ջնջել
+rename: Վերանվանել
+addphoto: Ավելացնել
+replacephoto: Փոխարինել
+uploadphoto: Վերբեռնել լուսանկար
+deletecontact: Ջնջել նշած նամակները
+composeto: Գրել նամակ
+contactsfromto: Հասցեներ $from–ից $to–ը եղած $count–ից
+print: Տպել
+export: Արտահանել
+exportall: Արտահանել բոլորը
+exportsel: Արտահանել նշվածները
+exportvcards: Արտահանել հասցեները vCard չափաձևով
+grouprename: Վերանվանել խումբը
+groupdelete: Ջնջել խումբը
+groupremoveselected: Հեռացնել նշված անձանց խմբից
+previouspage: Ցուցադրել նախորդ էջը
+firstpage: Ցուցադրել առաջին էջը
+nextpage: Ցուցադրել հաջորդ էջը
+lastpage: Ցուցադրել վերջին էջը
+group: Խումբ
+groups: Խմբեր
+listgroup: Խմբի անդամների ցանկ
+personaladrbook: Անձնական հասցեներ
+searchsave: Պահպանել որոնումը
+searchdelete: Ջնջել որոնումը
+import: Ներկրել
+importcontacts: Ներկրել հասցեներ
+importtarget: Ավելացնել կապորդները
+importreplace: Փոխել ողջ հասցեագիրքը
+done: Ավարտված է
+settingsfor: Նախասիրություններ
+about: Նկարագիր
+preferences: Նախընտրանքներ
+userpreferences: Օգտվողի նախընտրանքներ
+editpreferences: Խմբագրել օգտվողի նախընտրանքները
+identities: Անձիք
+preferhtml: Գերադասել HTML
+defaultcharset: Լռելյալ տառաշար
+htmlmessage: HTML նամակ
+messagepart: մաս
+digitalsig: Թվային ստորագրություն
+dateformat: Ամսաթվի ձևաչափ
+timeformat: Ժամանակի ձևաչափ
+prettydate: Պարզ ամսաթվեր
+setdefault: Հիմնական
+autodetect: Ավտո
+language: Լեզուն
+timezone: Ժամային գոտի
+pagesize: Տողեր առ էջ
+signature: Ստորագրություն
+dstactive: Ամառային ժամանակ
+showinextwin: Բացել հաղորդագրությունը նոր պատուհանում
+composeextwin: Կազմել նոր պատուհանում
+htmleditor: Ստեղծել HTML նամակներ
+htmlonreply: միայն HTML հաղորդագրությանը պատասխանելիս
+htmlonreplyandforward: միայն HTML հաղորդագրությանը պատասխանելիս կամ վերահասցեավորելիս
+htmlsignature: HTML ստորագրություն
+previewpane: Ցուցադրել պատուհանը
+skin: Տեսքի տարբերակ
+logoutclear: Դուրս գալուց դատարկել աղբարկղը
+logoutcompact: Դուրս գալուց կարգի բերել փոստարկղը
+uisettings: Տեսք
+serversettings: Սերվերի կարգավորումներ
+mailboxview: Փոստարկղի տեսք
+mdnrequests: Տեղեկացումներ
+askuser: Հարցնել օգտվողին
+autosend: ուղարկել ավտոմատ
+autosendknown: ուղարկել ստացական իմ կապորդներին, մնացած դեպքերում` հարցնել ինձ
+autosendknownignore: ուղարկել ստացական իմ կապորդներին, մնացած դեպքերում` անտեսել
+readwhendeleted: Ջնջելուց նշել նամակը որպես կարդացած
+flagfordeletion: Ջնջելու փոխարեն նշել որպես ենթակա ջնջման
+skipdeleted: Ցույց չ՛տալ ջնջված նամակները
+deletealways: Հաղորդագրությունները աղբարկղ տեղափոխելիս ձախողման դեպքում ջնջել դրանք։
+deletejunk: Միանգամից ջնջել Թափոն հաղորդագրությունները
+showremoteimages: Ցույց տալ հեռակա պատկերները
+fromknownsenders: հայտնի հասցեատերերից
+always: միշտ
+showinlineimages: Ցուցադրել կցված պատկերները հաղորդագրության տակ
+autosavedraft: Սևագրի ավտոմատ գրանցում
+everynminutes: ամեն $n րոպեն
+refreshinterval: Թարմացնել (ստուգել նոր հաղորդագրությունները և այլն)
+never: երբեք
+immediately: անմիջապես
+messagesdisplaying: նամակները ցուցադրելիս
+messagescomposition: նամակ գրելիս
+mimeparamfolding: Կցորդների անուններ
+2231folding: Կատարյալ RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Կատարյալ RFC 2047 (այլ)
+force7bit: օգտագործել MIME գրանշում 8 բիթանոց նիշերի համար
+advancedoptions: Հավելյալ կարգավորումներ
+focusonnewmessage: Առաջ բերել պատուհանը նոր նամակ ստանալիս
+checkallfolders: Ստուգել բոլոր դարակները նոր նամակների համար
+defaultfont: HTML հաղորդագրության լռելյալ տառատեսակ
+mainoptions: Գլխավոր ընտրանքներ
+browseroptions: Զննարկչի ընտրանքներ
+section: Բաժին
+maintenance: Սպասարկում
+newmessage: Նոր հաղորդագրություն
+signatureoptions: Ստորագրության ընտրանքներ
+whenreplying: Պատասխանելիս
+replyempty: մի քաղվածեքառաջին հաղորդագրությունը
+replytopposting: սկսել նոր հաղորդագրությունը վերևից
+replybottomposting: սկսել նոր հաղորդագրությունը ներքևից
+replyremovesignature: Պատասխանելիս հեռացնել հաղորդագրությունից նախորդ ստորագրությունը
+autoaddsignature: Ավելացնել ստորագրություն
+newmessageonly: միայն նոր հաղորդագրություններում
+replyandforwardonly: պատասխաններում և փոխանցումներում
+insertsignature: Ներդնել ստորագրությունը
+afternseconds: $n վարկյան հետո
+reqmdn: Միշտ պատվիրել ստացական
+reqdsn: Միշտ պատվիրել առաքման կարգավիճակի ծանուցում
+replysamefolder: Հաղորդագրության պատասխանները պահել նույն պանակում
+defaultabook: Հիմնական հասցեագիրքը
+autocompletesingle: Ավտոլրացման ժամանակ բացառել այլընտրանքային էլփոստի հասցեները
+listnamedisplay: Ցուցադրել կապորդները որպես
+spellcheckbeforesend: Ստուգել տառասխալները հաղորդագրությունը ուղարկելուց առաջ
+spellcheckoptions: Սրբագրման ընտրանքներ
+spellcheckignoresyms: Անտեսել նշաններով բառերը
+spellcheckignorenums: Անտեսել թվերով բառերը
+spellcheckignorecaps: Անտեսել լրիվ մեծատառ բառերը
+addtodict: Ավելացնել բառարանում
+mailtoprotohandler: 'mailto: հղումների սպասարկող'
+forwardmode: Հաղորդագրությունների վերահասցեավորում
+inline: մեջը
+asattachment: որպես կցորդ
+allmessages: բոլոր հաղորդագրությունները
+folder: Դարակ
+folders: Դարակներ
+foldername: Դարակի անուն
+subscribed: Բաժանորդագրված
+messagecount: Նամակներ
+create: Ստեղծել
+createfolder: Բացել նոր դարակ
+managefolders: Կարգավորել դարակները
+specialfolders: Հատուկ դարակներ
+properties: Հատկանիշներ
+folderproperties: Պանակի հատկանիշներ
+parentfolder: Ծնող պանակ
+location: Վայր
+info: Տեղեկություն
+getfoldersize: Հպել պանակի չափը իմանալու համար
+changesubscription: Հպել բաժանորդագրությունը փոխելու համար
+foldertype: Պանակի տեսակ
+personalfolder: Անձնական պանակ
+otherfolder: Այլ օգտվողի պանակ
+sharedfolder: Հանրային պանակ
+sortby: Դասավորել
+sortasc: ըստ աճման
+sortdesc: ըստ նվազման
+undo: Ետարկել
+installedplugins: Տեղակայված հավելումները
+plugin: Խրիչ
+version: Տարբերակ
+source: Աղբյուր
+license: Արտոնագիր
+support: Ստանալ օգնություն
+B: Բ
+KB: ԿԲ
+MB: ՄԲ
+GB: ԳԲ
+unicode: Յունիկոդ
+english: Անգլերեն
+westerneuropean: Արևմտա-Եվրոպական
+easterneuropean: Արևելա-Եվրոպական
+southeasterneuropean: Հարավ-արևելաեվրոպական
+baltic: Բալթիկ
+cyrillic: Կիրիլլիկ
+arabic: Արաբական
+greek: Հունական
+hebrew: Հրեական
+turkish: Թուրքական
+nordic: Նորդիկ
+thai: Թայլանդական
+celtic: Կելտական
+vietnamese: Վիետնամական
+japanese: Ճապոնական
+korean: Կորեական
+chinese: Չինական
+arialabelforwardingoptions: Փոխանցելու ընտրանքներ
+oauthlogin: ''
+menu: ''
+darkmode: ''
+lightmode: ''
+show_real_foldernames: ''
+listoptionstitle: ''
+copyto: ''
+bouncemsg: ''
+bounce: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+markallread: ''
+folders-cur: ''
+folders-sub: ''
+folders-all: ''
+composeoptions: ''
+optionsandattachments: ''
+actions: ''
+first: ''
+last: ''
+previous: ''
+next: ''
+selection: ''
+unflagged: ''
+withattachment: ''
+replied: ''
+showunread: ''
+lmode: ''
+layout: ''
+layoutwidescreen: ''
+layoutdesktop: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+importmessages: ''
+mailimportdesc: ''
+mailimportzip: ''
+quotatype: ''
+quotatotal: ''
+quotaused: ''
+quotastorage: ''
+quotamessage: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+searchplaceholder: ''
+searchscope: ''
+currentfolder: ''
+subfolders: ''
+allfolders: ''
+searchinterval-1W: ''
+searchinterval-1M: ''
+searchinterval-1Y: ''
+searchinterval1W: ''
+searchinterval1M: ''
+searchinterval1Y: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+changeformattext: ''
+changeformathtml: ''
+keepformatting: ''
+selectimage: ''
+addimage: ''
+selectmedia: ''
+addmedia: ''
+encrypt: ''
+encryptmessage: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+encryptandsign: ''
+keyid: ''
+keylength: ''
+keyexpired: ''
+keyrevoked: ''
+bccinstead: ''
+addheader: ''
+insertcontact: ''
+recipientedit: ''
+restore: ''
+restoremessage: ''
+ignore: ''
+responses: ''
+insertresponse: ''
+manageresponses: ''
+newresponse: ''
+addresponse: ''
+editresponse: ''
+editresponses: ''
+responsetext: ''
+uploadprogress: ''
+togglecomposeoptions: ''
+attachmentrename: ''
+allow: ''
+alwaysallow: ''
+details: ''
+summary: ''
+headers: ''
+allheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nonbinary: ''
+othergender: ''
+searchresult: ''
+printcontact: ''
+qrcode: ''
+addcontact: ''
+contactnameandorg: ''
+personal: ''
+contactphoto: ''
+discard: ''
+continue: ''
+ok: ''
+choosefile: ''
+choosefiles: ''
+browse: ''
+newcontact: ''
+newgroup: ''
+addgroup: ''
+groupassign: ''
+groupremove: ''
+uponelevel: ''
+importfromfile: ''
+importgroups: ''
+importgroupsall: ''
+importgroupsexisting: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+manageidentities: ''
+newidentity: ''
+addidentity: ''
+editidentity: ''
+identityencryption: ''
+showemail: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+ignorerequest: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+displaynext: ''
+replytoppostingnoindent: ''
+sigbelow: ''
+sigseparator: ''
+automarkread: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+standardwindows: ''
+replyallmode: ''
+replyalldefault: ''
+replyalllist: ''
+olderxdays: ''
+findfolders: ''
+findcontacts: ''
+findmail: ''
+namespace.personal: ''
+namespace.other: ''
+namespace.shared: ''
+dualuselabel: ''
+dualusemail: ''
+dualusefolder: ''
+generate: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+encryption: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+destination: ''
+skinauthor: ''
+savedsearches: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+arialabeltopnav: ''
+arialabeltasknav: ''
+arialabeltoolbar: ''
+arialabellistnav: ''
+arialabelactivetask: ''
+arialabelmessagessearchfilter: ''
+arialabelmailsearchform: ''
+arialabelcontactsearchform: ''
+arialabelmailquicksearchbox: ''
+arialabelquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfoldersearchform: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabelmailpreviewframe: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmessagenav: ''
+arialabelmessagebody: ''
+arialabelmessageactions: ''
+arialabelcontactquicksearch: ''
+arialabelcontactsearchbox: ''
+arialabelmessageheaders: ''
+arialabelreplyalloptions: ''
+arialabelmoremessageactions: ''
+arialabelmorecontactactions: ''
+arialabelmarkmessagesas: ''
+arialabelcomposeoptions: ''
+arialabelresponsesmenu: ''
+arialabelattachmentuploadform: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+arialabelattachmentpreview: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabelabookgroupoptions: ''
+arialabelpreferencesform: ''
+arialabelidentityeditfrom: ''
+arialabelresponseeditfrom: ''
+arialabelsearchterms: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

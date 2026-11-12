@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for be_BE. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Адбылася памылка.
+loginfailed: Не ўдалося ўвайсці.
+cookiesdisabled: Ваш браўзер не падтрымлівае cookie.
+sessionerror: Ваш сеанс хібны або яго тэрмін дзеяння скончыўся.
+cookiesmismatch: Выяўлена неадпаведнасць файлаў cookie. Ачысціце файлы cookie вашага браўзера.
+storageerror: Не атрымалася злучыцца з серверам IMAP.
+servererror: Памылка сервера!
+servererrormsg: 'Памылка сервера: $msg'
+accountlocked: Было занадта шмат няўдалых спробаў увайсці. Паспрабуйце пазней.
+connerror: Памылка злучэння (не атрымалася злучыцца з серверам)!
+dberror: Памылка базы даных!
+dbconnerror: Немагчыма падлучыцца да базы даных!
+windowopenerror: Выплыўное акно было заблакавана!
+requesttimedout: Час чакання адказу скончыўся
+errorreadonly: Не атрымалася выканаць аперацыю. Каталог даступны толькі для чытання.
+errornoperm: Не атрымалася выканаць аперацыю. Адмоўлена ў доступе.
+erroroverquota: Не атрымалася выканаць аперацыю. Не стае вольнага месца на дыску.
+erroroverquotadelete: Не стае вольнага месца на дыску. Націсніце SHIFT+DEL, каб выдаліць ліст.
+invalidrequest: Хібны запыт! Даныя не захаваныя.
+invalidhost: Хібная назва сервера.
+nomessagesfound: У гэтай скрыні няма паведамленняў.
+loggedout: Вы паспяхова спынілі сеанс. Да пабачэння!
+mailboxempty: Скрыня пустая
+nomessages: Няма лістоў
+refreshing: Абнаўленне...
+loading: Загрузка...
+uploading: Запампоўванне файла...
+attaching: Далучэнне файла...
+uploadingmany: Запампоўванне файлаў...
+loadingdata: Загрузка даных...
+checkingmail: Праверка наяўнасці новых лістоў...
+sendingmessage: Адпраўленне ліста...
+messagesent: Ліст паспяхова адпраўлены.
+savingmessage: Захаванне ліста...
+messagesaved: Ліст захаваны ў чарнавікі.
+successfullysaved: Паспяхова захавана.
+savingresponse: Захаванне тэксту адказу...
+deleteresponseconfirm: Сапраўды выдаліць тэкст адказу?
+nocontactselected: Вы яшчэ не абралі кантакт.
+addedsuccessfully: Кантакт паспяхова дададзены ў адрасную кнігу.
+contactexists: Кантакт з такім адрасам электроннай пошты ўжо існуе.
+contactnameexists: Кантакт з такім самым імем ужо існуе.
+blockedimages: Каб абараніць вашу прыватнасць, адлеглыя выявы ў гэтым лісце заблакаваныя.
+blockedresources: У мэтах бяспекі адлеглыя рэсурсы былі заблакаваныя.
+suspiciousemail: Гэты ліст змяшчае падазроныя адрасы электроннай пошты, якія могуць належаць ашуканцам.
+bccemail: Перасланы(ыя) ліст(ы) змяшчае(юць) канфідэнцыйных атрымальнікаў (схаваная копія).
+bouncehint: Ліст будзе адпраўлены без зменаў, г.зн. з зыходным целам, загалоўкамі і атрымальнікамі.
+encryptedmessage: Гэта зашыфраваны ліст. Яго немагчыма паказаць. Выбачайце!
+externalmessagedecryption: Гэта зашыфраваны ліст, яго можна расшыфраваць з дапамогай пашырэння вашага браўзера.
+nopubkeyfor: Для $email не знойдзена прыдатнага публічнага ключа
+nopubkeyforsender: Для вашых асобовых звестак не знойдзена прыдатнага публічнага ключа. Хочаце зашыфраваць ліст толькі для атрымальнікаў?
+encryptnoattachments: Ужо запампаваныя далучаныя файлы немагчыма зашыфраваць. Дадайце іх нанова ў рэдактары шыфравання.
+searchpubkeyservers: Хочаце пашукаць адсутныя ключы на ​​серверах публічных ключоў?
+encryptpubkeysfound: 'Знойдзены наступныя публічныя ключы:'
+keyservererror: Не ўдалося атрымаць ключы з сервера.
+keyimportsuccess: Публічны ключ $key паспяхова імпартаваны ў вашую вязку ключоў.
+nocontactsfound: Кантактаў не знойдзена.
+contactnotfound: Запытаны кантакт не знойдзены.
+contactsearchonly: Каб убачыць кантакты з гэтай адраснай кнігі, неабходна выкарыстаць форму пошуку.
+sendingfailed: Не атрымалася адправіць ліст.
+senttooquickly: Пачакайце $sec секунд(ы) перад адпраўленнем гэтага ліста.
+errorsavingsent: Не атрымалася захаваць адпраўлены ліст.
+errorsaving: Не атрымалася захаваць.
+errormoving: Не атрымалася перамясціць ліст(ы).
+errorcopying: Не атрымалася скапіяваць ліст(ы).
+errordeleting: Не атрымалася выдаліць ліст(ы).
+errormarking: Не атрымалася пазначыць ліст(ы).
+alerttitle: Увага
+confirmationtitle: Сапраўды...
+deletecontactconfirm: Сапраўды выдаліць абраны(я) кантакт(ы)?
+deletegroupconfirm: Сапраўды выдаліць абраную групу?
+deletemessagesconfirm: Сапраўды выдаліць абраны(я) ліст(ы)?
+deletefolderconfirm: Сапраўды выдаліць гэты каталог?
+movefolderconfirm: Сапраўды перамясціць гэты каталог?
+purgefolderconfirm: Сапраўды выдаліць усе лісты з гэтага каталога?
+contactdeleting: Выдаленне кантакта(аў)...
+groupdeleting: Выдаленне групы...
+folderdeleting: Выдаленне каталога...
+foldermoving: Перамяшчэнне каталога...
+foldersubscribing: Падпісанне на каталог...
+folderunsubscribing: Адпісванне ад каталога...
+formincomplete: Форма запоўненая не поўнасцю.
+noemailwarning: Увядзіце прыдатны адрас электроннай пошты.
+nonamewarning: Увядзіце назву.
+nopagesizewarning: Увядзіце памер старонкі.
+nosenderwarning: Увядзіце адрас электроннай пошты адпраўніка.
+recipientsadded: Атрымальнік(і) паспяхова дададзены(ыя).
+norecipientwarning: Увядзіце прынамсі аднаго атрымальніка.
+disclosedreciptitle: Занадта шмат публічных атрымальнікаў
+nosubjectwarning: Тэма ліста пустая. Хочаце ўвесці?
+nosubjecttitle: Няма тэмы
+nobodywarning: Адправіць ліст без тэксту?
+notsentwarning: Ліст не быў адпраўлены і мае незахаваныя змены. Хочаце адкінуць змены?
+restoresavedcomposedata: 'Быў знойдзены створаны, але не адпраўлены ліст.\n\nТэма: $subject\nЗахавана: $date\n\nХочаце аднавіць яго?'
+nosearchname: Увядзіце імя кантакта альбо адрас электроннай пошты.
+notuploadedwarning: Яшчэ не запампаваліся ўсе далучаныя файлы. Пачакайце альбо скасуйце аперацыю.
+searchsuccessful: Знойдзена $nr лістоў.
+contactsearchsuccessful: Знойдзена $nr кантактаў.
+searchnomatch: Пошук не даў выніку.
+searching: Пошук...
+checking: Праверка...
+stillsearching: Усё яшчэ выконваецца пошук...
+nospellerrors: Памылак не выяўлена.
+folderdeleted: Каталог паспяхова выдалены.
+foldersubscribed: Паспяхова падпісана на каталог.
+folderunsubscribed: Паспяхова адпісана ад каталога.
+folderpurged: Каталог паспяхова ачышчаны.
+folderexpunged: Каталог паспяхова сціснуты.
+deletedsuccessfully: Паспяхова выдалена.
+converting: Выдаленне фарматавання...
+messageopenerror: Не атрымалася загрузіць ліст з сервера.
+filelinkerror: Не атрымалася далучыць файл.
+fileuploaderror: Не атрымалася запампаваць файл.
+csvfilemismatch: Імпартаванне некалькіх файлаў CSV з адрознымі палямі не падтрымліваецца.
+filesizeerror: Запампаваны файл перавышае максімальна дазволены памер $size.
+filecounterror: Вы можаце запампаваць не больш за $count файлаў запар.
+msgsizeerror: Не атрымалася далучыць файл. Перавышаны максімальны памер ліста ($size).
+msgsizeerrorfwd: Перавышаны максімальны памер ліста ($size). $num ліст(оў) не было далучана.
+copysuccess: Паспяхова скапіявана $nr кантактаў.
+movesuccess: Паспяхова перамешчана $nr кантактаў.
+copyerror: Не атрымалася скапіяваць ніводнага кантакта.
+moveerror: Не атрымалася перамясціць ніводнага кантакта.
+sourceisreadonly: Гэтая адрасная кніга даступная толькі для чытання.
+errorsavingcontact: Не атрымалася захаваць адрас кантакта.
+movingmessage: Выдаленне ліста(оў)...
+copyingmessage: Капіяванне ліста(оў)...
+copyingcontact: Капіяванне кантакта(аў)...
+movingcontact: Перамяшчэнне кантакта(аў)...
+deletingmessage: Выдаленне ліста(оў)...
+markingmessage: Пазначэнне ліста(оў)...
+addingmember: Даданне кантакта(аў) у групу...
+removingmember: Выдаленне кантакта(аў) з групы...
+receiptsent: Пацвярджэнне аб прачытанні паспяхова адпраўлена.
+errorsendingreceipt: Не атрымалася адправіць пацвярджэнне.
+deleteidentityconfirm: Сапраўды выдаліць гэтыя асабовыя звесткі?
+nodeletelastidentity: Вы не можаце выдаліць гэтыя асабовыя звесткі, бо яны апошняя.
+forbiddencharacter: Назва каталога змяшчае забаронены сімвал.
+selectimportfile: Абярыце файл, які хочаце запампаваць.
+addresswriterror: Абраная адрасная кніга даступная толькі для чытання.
+contactaddedtogroup: Кантакты паспяхова дададзеныя ў групу.
+contactremovedfromgroup: Кантакты паспяхова выдаленыя з групы.
+nogroupassignmentschanged: Усе прызначэнні групы засталіся без зменаў.
+importwait: Імпартаванне...
+importformaterror: Не атрымалася імпартаваць! Запампаваны файл не змяшчае прыдатных даных.
+importconfirm: <b>Паспяхова імпартаваны(а) $inserted кантакт(аў)</b>
+importmessagesuccess: Паспяхова імпартавана $nr лістоў
+importmessageerror: Не атрымалася імпартаваць! Загружаны файл не ёсць прыдатным лістом альбо файлам паштовай скрыні
+opnotpermitted: Аперацыя забароненая!
+nofromaddress: У абраных асабовых звестках няма адраса электроннай пошты.
+editorwarning: Змена тыпу рэдактара можа прывесці да страты фарматавання. Працягнуць?
+httpreceivedencrypterror: Крытычная памылка ў канфігурацыі. Неадкладна звяжыцеся з адміністратарам. <b>Ліст немагчыма адправіць.</b>
+smtpconnerror: 'Памылка SMTP ($code): Не атрымалася злучыцца з серверам.'
+smtpautherror: 'Памылка SMTP ($code): не атрымалася выканаць аўтэнтыфікацыю.'
+smtpfromerror: 'Памылка SMTP ($code): не атрымалася пазначыць адпраўніка "$from" ($msg).'
+smtptoerror: 'Памылка STMP ($code): не атрымалася пазначыць атрымальніка "$to" ($msg).'
+smtprecipientserror: 'Памылка STMP: не атрымалася прачытаць спіс атрымальнікаў.'
+smtputf8error: 'Памылка SMTP: сервер не падтрымлівае Юнікод у адрасах электроннай пошты.'
+smtpsizeerror: 'Памылка STMP: памер ліста перавышае ліміт сервера ($limit)'
+smtperror: 'Памылка SMTP: $msg'
+emailformaterror: 'Хібны адрас электроннай пошты: $email'
+toomanyrecipients: Занадта шмат атрымальнікаў. Паменшыце колькасць атрымальнікаў да $max.
+maxgroupmembersreached: Колькасць удзельнікаў групы перавышае максімум — $max.
+internalerror: Унутраная памылка. Паспрабуйце яшчэ раз.
+contactdelerror: Не атрымалася выдаліць кантакт(ы).
+contactdeleted: Кантакт(ы) выдалены(ыя).
+contactrestoreerror: Не атрымалася аднавіць выдалены(ыя) кантакт(ы).
+contactrestored: Кантакт(ы) адноўлены(ыя).
+groupdeleted: Група паспяхова выдаленая.
+grouprenamed: Назва групы паспяхова змененая.
+groupcreated: Група паспяхова створаная.
+savedsearchdeleted: Захаваны запыт паспяхова выдалены.
+savedsearchdeleteerror: Не атрымалася выдаліць захаваны запыт пошуку.
+savedsearchcreated: Захаваны запыт пошуку паспяхова створаны.
+savedsearchcreateerror: Не атрымалася стварыць захаваны запыт.
+messagedeleted: Ліст(ы) паспяхова выдалены(ыя).
+messagemoved: Ліст(ы) паспяхова перамешчаны(ыя).
+messagemovedtotrash: Ліст(ы) паспяхова перамешчаны(ыя) у сметніцу.
+messagecopied: Ліст(ы) паспяхова скапіяваны(ыя).
+messagemarked: Ліст(ы) паспяхова пазначаны(ыя).
+autocompletechars: Увядзіце прынамсі $min знакаў для аўтадапаўнення.
+autocompletemore: Знойдзена занадта шмат адпаведных запісаў. Увядзіце больш знакаў.
+namecannotbeempty: Назва не можа быць пустой.
+nametoolong: Назва занадта доўгая.
+namedotforbidden: Назва каталога не можа пачынацца з кропкі.
+folderupdated: Каталог паспяхова абноўлены.
+foldercreated: Каталог паспяхова створаны.
+invalidimageformat: Няслушны фармат выявы.
+mispellingsfound: У лісце выяўленыя граматычныя памылкі.
+parentnotwritable: Не атрымалася стварыць/перамясціць каталог ў абраным бацькоўскім каталозе. Няма правоў доступу.
+messagetoobig: Гэтая частка ліста занадта вялікая, каб яе апрацаваць.
+attachmentvalidationerror: 'Гэты далучаны файл выглядае падазроным, бо яго тып не супадае з тыпам, пададзеным у лісце. Калі вы не давяраеце адпраўніку, вам не варта адкрываць яго ў браўзеры, бо ён можа змяшчаць шкоднае змесціва.<br/><br/><em>Чакаецца: $expected; знойдзена: $detected</em>'
+noscriptwarning: 'Увага: паштовай службе патрэбны Javascript! Каб карыстацца ёй, у наладах браўзера трэба ўключыць Javascript.'
+messageissent: Ліст ўжо адпраўлены, але яшчэ не захавана. Хочаце захаваць?
+errnotfound: Файл не знойдзены
+errnotfoundexplain: Запытаны рэсурс не знойдзены.
+errfailedrequest: Не атрымалася выканаць запыт
+errauthorizationfailed: Не атрымалася выканаць аўтарызацыю
+errunauthorizedexplain: Не ўдалося пацвердзіць, што вы маеце права на доступ да гэтай службы.
+errrequestcheckfailed: Не атрымалася праверыць запыт
+errcsrfprotectionexplain: "Каб абараніць вас, доступ да гэтага рэсурсу абаронены ад CSRF.\nКалі вы бачыце гэтае паведамленне, верагодна, вы не выходзілі з сістэмы, перш чым выйсці з вэб-праграмы.\n\nЗараз патрэбна ўзаемадзеянне з чалавекам."
+errcontactserveradmin: Звярніцеся да адміністратара сервера.
+clicktoresumesession: Націсніце сюды, каб аднавіць папярэдні сеанс
+errcomposesession: Не атрымалася пачаць сеанс
+errcomposesessionexplain: Запытаны сеанс стварэння не знойдзены.
+clicktocompose: Націсніце сюды, каб стварыць новы ліст
+nosupporterror: Гэтая функцыя не падтрымліваецца ў вэб-браўзера.
+siginserted: Подпіс паспяхова ўстаўлены.
+responseinserted: Адказ паспяхова ўстаўлены.
+noresponsesavailable: Няма даступных адказаў
+listempty: Спіс пусты.
+listusebutton: Каб дадаць новы запіс, скарыстайцеся кнопкай "Стварыць".
+keypaircreatesuccess: Новая пара ключоў паспяхова створаная для $identity.
+emptyattachment: Здаецца, гэты ліст пусты.<br> Магчыма, змесціва было выдалена антывіруснымі/антыспамавымі службамі. Удакладніце ў адпраўніка.
+oauthloginfailed: Не атрымалася ўвайсці з дапамогай OAuth. Паспрабуйце пазней.
+disclosedrecipwarning: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

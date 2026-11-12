@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for ug. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: $product غا خۇش كەلدىڭىز
+username: ئىشلەتكۈچى نامى
+password: مەخپىي نۇمۇر
+server: مۇلازىمېتىر
+login: كىرىش
+oauthlogin: $تەمىنلىگۈچى بىلەن كىرىش
+menu: تىزىملىك
+logout: چىكىنىش
+mail: خەت
+settings: تەڭشەك
+addressbook: ئادىرىس دەپتىرى
+darkmode: قاراڭغۇ ھالەت
+lightmode: يۇرۇق ھالەت
+inbox: كىلىش ساندۇقى
+drafts: قوليازمىلار
+sent: ئەۋەتىلگەن
+trash: ئەخلەت
+junk: ئەخلەت
+show_real_foldernames: ئالاھىدە قىسقۇچلارنىڭ ھەقىقىي ئىسمىنى كۆرسىتىڭ
+subject: تىما
+from: دىن
+sender: ئەۋەتكۈچى
+to: غا
+cc: قۇشۇمچە
+bcc: ب چ چ
+replyto: غا جاۋاپ قايتۇرۇش
+followupto: غا ئەگىشىش
+date: چېسلا
+size: چوڭلۇق
+priority: مۇھىملىق دەرىجىسى
+organization: ئورگان
+readstatus: ئۇقۇش ھالىتى
+listoptions: تاللانمىلارنى تىزىش...
+listoptionstitle: تاللانمىلارنى تىزىش
+mailboxlist: قىسقۇچلار
+messagesfromto: from$نىڭ to$گە ئەۋەتكەن count$-ئۇچۇرى
+threadsfromto: from$نىڭ to$گە ئەۋەتكەن count$-يىپى
+messagenrof: nr/$count$ خەت
+fromtoshort: to  - $from$ جەمئىي count$
+copy: كۆچۈرۈش
+move: يۆتكەش
+moveto: '...غا يۆتكەش'
+copyto: '...غا كۆچۈرۈش'
+download: چۈشۈرۈش
+open: ئېچىش
+showattachment: كۆرسىتىش
+showanyway: بەرىبىر ئۇنى كۆرسىتىڭ
+filename: ھۆججەت ئىسمى
+filesize: ھۆججەت چوڭلۇقى
+addtoaddressbook: ئادىرىس دەپتىرىگە قېتىش
+sun: يەكشەنبە
+mon: دۈشەنبە
+tue: سەيشەنبە
+wed: چارشەنبە
+thu: پەيشەنبە
+fri: جۈمە
+sat: شەنبە
+sunday: يەكشەنبە
+monday: دۈشەنبە
+tuesday: سەيشەنبە
+wednesday: چارشەنبە
+thursday: پەيشەنبە
+friday: جۈمە
+saturday: شەنبە
+jan: يانۋار
+feb: فېۋرال
+mar: مارت
+apr: ئاپرىل
+may: ماي
+jun: ئىيۇن
+jul: ئىيۇل
+aug: ئاۋغۇست
+sep: سىنتەبىر
+oct: ئۆكتەبىر
+nov: نويابىر
+dec: دېكابىر
+longjan: يانۋار
+longfeb: فېۋرال
+longmar: مارت
+longapr: ئاپرىل
+longmay: ماي
+longjun: ئىيۇن
+longjul: ئىيۇل
+longaug: ئاۋغۇست
+longsep: سىنتەبىر
+longoct: ئۆكتەبىر
+longnov: نويابىر
+longdec: دېكابىر
+today: بۈگۈن
+refresh: يېڭىلاش
+checkmail: يېڭى خەتلەرنى تەكشۈرۈش
+compose: يېزىش
+writenewmessage: يېڭى خەت يېزىش
+reply: جاۋاپ قايتۇرۇش
+replytomessage: ئەۋەتكۈچىگە جاۋاپ بېزىش
+replytoallmessage: تىزىملىككە ياكى ئەۋەتكۈچى بىلەن بارلىق تاپشۇرۋالغۇچىلارغا جاۋاپ قايتۇرۇش
+replyall: ھەممىسىگە جاۋاپ قايتۇرۇش
+replylist: تىزىملىككە جاۋاپ قايتۇرۇش
+forward: يوللاش
+forwardinline: يېڭى ھالەتتە يوللاش
+forwardattachment: قىستۇرما ھالەتتە يوللاش
+forwardmessage: بۇ خەتنى يوللاش
+bouncemsg: قايتا ئەۋەتىش(قاڭقىتىش)
+bounce: قايتا ئەۋەتىش
+deletemessage: خەتنى ئۆچۈرۈش
+movemessagetotrash: خەتنى ئەخلەت چېلىكىگە سېلىش
+printmessage: بۇ خەتنى بېسىپ چىقىرىش
+previousmessage: ئالدىنقى خەتنى كۆرسىتىش
+firstmessage: بىرىنچى خەتنى كۆرسىتىش
+nextmessage: كىيىنكى خەتنى كۆرسىتىش
+lastmessage: ئاخىرقى خەتنى كۆرسىتىش
+backtolist: خەت تىزىملىكىگە قايتىش
+viewsource: مەنبەسىنى كۆرسىتىش
+mark: بەلگە قۇيۇش
+markmessages: خەتكە بەلگە قۇيۇش
+markread: ئۇقۇغان
+markunread: ئۇقۇمىغان
+markflagged: بايراقلانغان
+markunflagged: بايراقسىزلانغان
+markundeleted: ئۆچۈرۈلمىگەن
+moreactions: تېخىمۇ كۆپ ھەركەت
+markallread: ھەممىگە ئوقۇغان بەلگىسىنى قۇيۇش
+folders-cur: پەقەتلا تاللانغان قىسقۇچ
+folders-sub: تاللانغان قىسقۇچ ھەمدە ئۇنىڭ بالا-قىسقۇچلىرى
+folders-all: ھەممە قىسقۇچلار
+more: تېخىمۇ كۆپ
+back: قايتىش
+options: تاللانمىلار
+composeoptions: تاللانما قۇرۇش
+optionsandattachments: تاللانمىلار ھەمدە قىستۇرمىلار
+actions: ھەركەتلەر
+first: تۇنجى
+last: ئاخىرقى
+previous: ئالدىنقى
+next: كىيىنكى
+select: تاللاڭ
+selection: تاللاش
+all: ھەممە
+none: ھېچنىمە
+currpage: نۆۋەتتىكى بەت
+isread: ئۇقۇش
+unread: ئۇقۇماسلىق
+flagged: بايراقلانغان
+unflagged: بايراقلانمىغان
+unanswered: جاۋاپ قايتۇرمىغان
+withattachment: قىستۇرمىلىق
+deleted: ئۆچۈرۋەتكەن
+undeleted: ئۆچۈرۋەتمىگەن
+replied: جاۋاپ قايتۇرغان
+forwarded: يوللىغان
+invert: تەتۈرلەش
+filter: سۈزگۈچ
+list: تىزىملىك
+threads: يىپلار
+expand-all: ھەممىنى يېيىش
+expand-unread: ئوقۇلمىغاننى يېيىش
+collapse-all: ھەممىنى يېيىش
+threaded: يىپلانغان
+showunread: ئوقۇلمىغان خەتلەرنى كۆرسىتىش
+autoexpand_threads: خەت يىپلىرىنى كۆرسىتىش
+do_expand: ھەممە يىپلار
+expand_only_unread: پەقەتلا ئوقۇلمىغان خەتلەرنىڭ
+fromto: دىن/غا
+flag: بايراق
+attachment: قىستۇرما
+nonesort: ھېچنىمە
+sentdate: ئەۋەتىلگەن چېسلا
+arrival: كەلگەن چېسلا
+asc: چوڭايغان
+desc: كىچىكلىگەن
+listcolumns: قۇرلارنى تىزىش
+listsorting: قۇرلارنى رەتلەش
+listorder: رەتلەش تەرتىپى
+listmode: كۆرۈش ھالىتىنى تىزىش
+lmode: ھالەتنى تىزىش
+layout: قۇرۇلما
+layoutwidescreen: كەڭرى ئېكران
+layoutdesktop: ئۈستەل يۈزى
+layoutlist: تىزىملىك
+layoutwidescreendesc: كەڭ ئېكران(3-قۇرلۇق كۆرۈنۈش)
+layoutdesktopdesc: ئۈستەل يۈزى(كەڭرى تىزىملىك ھەمدە خەتنى تۆۋەندە ئالدىن كۆرسىتىش)
+layoutlistdesc: تىزىملىك (خەتنى ئالدىن كۆرسىتىش يوق)
+folderactions: قىسقۇچ ھەركەتلىرى...
+compact: ئىخچام
+empty: قۇرۇق
+importmessages: خەتلەرنى كىرگۈزۈش
+mailimportdesc: سىز خەتنى <a href="https://en.wikipedia.org/wiki/Email#Message_format"> MIME </a> ياكى <a href="https://en.wikipedia.org/wiki/Mbox"> Mbox </a> فورماتىدىكى ھۆججەتلەرنى ئىشلىتىپ چىقىرالايسىز.
+mailimportzip: كۆپلىگەن ھۆججەتلەرنى زىپ ئارخىپىغا سىققىلى بۇلىدۇ.
+quota: دىسكا ئىشلىتىشچانلىقى
+unknown: ناتۇنۇش
+unlimited: چەكسىز
+quotatype: بەلگىلەنگەن مىقدار تۈرى
+quotatotal: چەك
+quotaused: ئىشلەتكەن
+quotastorage: دىسكا بوشلۇقى
+quotamessage: خەت سانى
+shortheaderdate: $چېسلادا
+shortheaderto: to$ غا date$دا
+shortheaderfrom: from$ دىن date$ دا
+quicksearch: تېز ئىزدەش
+searchplaceholder: ئىزدەش...
+resetsearch: ئىزدەشنى ئەسلىگە قايتۇرۇش
+searchmod: ئىزدەش ئۆزگەرتكۈچلىرى
+msgtext: پۈتۈن خەت
+body: مەزمۇن
+type: تۈرى
+namex: ئىسمى
+searchscope: دائىرە
+currentfolder: نۆۋەتتىكى قىسقۇچ
+subfolders: بۇ ھەمدە بالا-قىسقۇچلار
+allfolders: ھەممە قىسقۇچلار
+searchinterval-1W: بىر ھەپتىدىن بۇرۇنقى
+searchinterval-1M: بىر ئايدىن بۇرۇنقى
+searchinterval-1Y: بىر يىلدىن بۇرۇنقى
+searchinterval1W: بىر ھەپتىن بۇيانقى
+searchinterval1M: بىر ئايدىن بۇيانقى
+searchinterval1Y: بىر يىلدىن بۇيانقى
+openinextwin: يېڭى كۆزنەكتە ئېچىش
+emlsave: چۈشۈرۈش (.ئېلخەت)
+changeformattext: ئاددىي تېكىست ھالەتتە كۆرسىتىش
+changeformathtml: HTML ھالەتتە كۆرسىتىش
+editasnew: يېڭى ھالەتتە تەھرىرلەش
+send: ئەۋەتىش
+sendmessage: خەتنى ئەۋەتىش
+savemessage: قوليازما ھالەتتە ساقلاش
+addattachment: بىر ھۆججەت قىستۇرۇش
+charset: خەت بولىقى
+editortype: تەھرىرلەش تۈرى
+returnreceipt: تاپشۇرۋالغۇچىنى قايتۇرۇش
+dsn: يەتكۈزۈش ئەھۋالى ئۇقتۇرۇشى
+keepformatting: داۋاملىق فورماتلاش
+mailreplyintro: 'date$ دا، sender$ يازدى:'
+originalmessage: ئەسلىي خەت
+selectimage: رەسىم تاللاش
+addimage: رەسىم قېتىش
+selectmedia: كىنو تاللاش
+addmedia: كىنو قېتىش
+encrypt: شىفىرلاش
+encryptmessage: خەتنى شىفىرلاش
+encryptmessagemailvelope: خەتنى Mailvelope بىلەن شىفىرلاش
+importpubkeys: ئاممىۋى ئاچقۇچلارنى كىرگۈزۈش
+encryptedsendialog: شىفىرلانغان ئۇچۇرنى يوللاۋاتىدۇ
+encryptandsign: شىفىرلاش ھەمدە ئىمزا قۇيۇش
+keyid: ئاچقۇچ نۇمۇرى
+keylength: بىتلار
+keyexpired: ۋاقتى ئۆتكەن
+keyrevoked: قايتۇرۋالغان
+bccinstead: ب چ چىنى ئىشلىتىش
+insert: كىرگۈزۈش
+insertcontact: تۇنۇش(لار) قېتىش
+recipient: تاپشۇرۋالغۇچى
+recipientedit: تاپشۇرۋالغۇچىنى تەھرىرلەش
+editidents: كىملىكلەرنى تەھرىرلەش
+spellcheck: ئىملا
+checkspelling: ئىملا تەكشۈرۈش
+resumeediting: تەھرىرلەشنى داۋاملاشتۇرۇش
+revertto: قايتۇرۇش
+restore: ئەسلىگە قايتۇرۇش
+restoremessage: ئۇچۇرنى ئەسلىگە قايتۇرامسىز؟
+ignore: كارىم يوق
+responses: ئىنكاسلار
+insertresponse: بىر ئىنكاس يېزىش
+manageresponses: ئىنكاسلارنى باشقۇرۇش
+newresponse: يېڭى ئىنكاس يېزىش
+addresponse: ئىنكاس قېتىش
+editresponse: ئىنكاسنى تەھرىرلەش
+editresponses: ئىنكاسلارنى تەھرىرلەش
+responsename: ئىسمى
+responsetext: ئىنكاس تېكىستى
+attach: قىستۇرۇش
+attachments: قىستۇرمىلار
+upload: چىقىرىش
+uploadprogress: percent$ (total$ نىڭ current$ )
+close: تاقاش
+messageoptions: خەت تاللانمىلىرى...
+togglecomposeoptions: يېزىش تاللانمىلىرىنى بار-يوق قىلىش
+attachmentrename: قىستۇرمىغا يېڭى ئىسىم قۇيۇش
+low: تۆۋەن
+lowest: ئەڭ تۆۋەن
+normal: نورمال
+high: يۇقىرى
+highest: ئەڭ يۇقىرى
+nosubject: (تېما يوق)
+showimages: رەسىملەرنى كۆرسىتىش
+allow: يول قۇيۇش
+alwaysshow: sender$ نىڭ رەسىملىرىنى دائىم كۆرسىتىش
+alwaysallow: sender$ دىن كەلسە دائىم يول قۇيۇش
+isdraft: بۇ يولسا بىر قوليازما خەت
+andnmore: nr$ تېخىمۇ كۆپ...
+details: تەپسىلاتلار
+summary: خۇلاسە
+headers: باشلانمىلار
+allheaders: بارلىق باشلانمىلار...
+togglemoreheaders: تېخىمۇ كۆپ خەت باشلانمىلىرىنى كۆرسىتىش
+togglefullheaders: خام ئۇچۇر باشلانمىلىرىنى بار-يوق قىلىش
+htmltoggle: خ ت م ل
+plaintoggle: ئاددىي تېكىست
+savesentmessagein: يوللىغان ئۇچۇرنى ساقلاش
+dontsave: ساقلىماسلىق
+maxuploadsize: يول قۇيۇلغان ئەڭ چوڭ ھۆججەت چوڭلۇقى بولسا size$
+addcc: قۇشۇمچە قېتىش
+addbcc: ب چ چ قېتىش
+addreplyto: جاۋاپ قايتۇرۇشنى قېتىش
+addfollowupto: داۋاملاشتۇرۇش قېتىش
+sendreceipt: ئۇقۇش تىلخېتىنى ئەۋەتەمسىز؟
+mdnrequest: بۇ خەتنى ئەۋەتكۈچى سىز خەتنى ئۇقۇغاندا ئۇقتۇرۇلۇشنى سورىدى. سىز ئەۋەتكۈچىگە ئۇقتۇرۇشنى خالامسىز؟
+receiptread: تېلىخەتنى قايتۇرۇش(ئۇقۇغان)
+yourmessage: بۇ بولسا ئۇچۇرىڭىزنىڭ قايتۇرما تېلىخېتى
+receiptnote: 'ئۇقتۇرۇش: بۇ تالون پەقەتلا خەتنىڭ تاپشۇرۋالغۇچىنىڭ كومپىيوتېرىدا كۆرسىتىلگەنلىكىنى ئېتراپ قىلىدۇ. تاپشۇرۋالغۇچىنىڭ خەتنى ئۇقۇغانلىقىنى ياكى خەت مەزمۇنىنى چۈشەنگەنلىكىگە كاپالەتلىك قىلمايدۇ.'
+sendalwaysto: دائىم email$ غا ئەۋەتىش
+zoomin: چوڭايتىش
+zoomout: كىچىكلەشتۈرۈش
+rotate: ئايلاندۇرۇش
+increaseimage: رەسىم چوڭلۇقىنى ئاشۇرۇش
+decreaseimage: رەسىم چوڭلۇقىنى كىچىكلىتىش
+rotateimage: رەسىمنى ئايلاندۇرۇش
+showtools: رەسىم قوراللىرىنى كۆرسىتىش
+hidetools: رەسىم قوراللىرىنى يۇشۇرۇش
+name: ئىسمىنى كۆرسىتىش
+firstname: ئىسمى
+surname: فامىلىسى
+middlename: ئوتتۇرانچى ئىسمى
+nameprefix: ئالدى قۇشۇمچە
+namesuffix: ئارقا قۇشۇمچە
+nickname: تەخەللۇس
+jobtitle: خىزمەت ئۇنىۋانى
+department: بۆلۈم
+gender: جىنسى
+maidenname: توي قىلىشتىن بۇرۇنقى فامىلىسى
+email: ئېلىخەت
+phone: تېلىفۇن
+address: ئادىرىس
+street: كوچا
+locality: شەھەر
+zipcode: پوچتا نۇمۇرى
+region: ۋىلايەت
+country: دۆلەت
+birthday: تۇغۇلغان كۈن
+anniversary: خاتىرە كۈن
+website: توربەت
+instantmessenger: ئى م
+notes: خاتىرە
+male: ئەر
+female: ئايال
+manager: دېرىكتور
+assistant: ياردەمچى
+spouse: جۈپتى
+allfields: بارلىق ئورۇنلار
+search: ئىزدەش
+searchresult: ئىزدەش نەتىنجىسى
+advsearch: ئالاھىدە ئىزدەش
+advanced: ئالاھىدە
+other: باشقا
+printcontact: تۇنۇشنى بېسىپ چىقىرىش
+qrcode: ئىككىلىك كود
+typehome: ئۆي
+typework: خىزمەت
+typeother: باشقا
+typemobile: كۆچمە
+typemain: ئاساسىي
+typehomefax: ئۆي فاكىس
+typeworkfax: خىزمەت فاكىسى
+typecar: ماشىنا
+typepager: بەتكۈچ
+typevideo: سىن
+typeassistant: ياردەمچى
+typehomepage: باشبەت
+typeblog: بىلوگ
+typeprofile: تەرجىمال
+addfield: ئورۇن قېتىش...
+addcontact: تونۇش قېتىش
+editcontact: تونۇشنى تەھرىرلەش
+contacts: تونۇشلار
+contactproperties: تونۇش خاسلىقلىرى
+contactnameandorg: ئىسم ۋە ئورگان
+personalinfo: شەخسىي ئۇچۇر
+personal: شەخسىي
+contactphoto: تونۇش رەسىمى
+edit: تەھرىرلەش
+cancel: ئەمەلدىن قالدۇرۇش
+save: ساقلاش
+delete: ئۆچۈرۈش
+discard: تاشلاش
+continue: داۋاملاشتۇرۇش
+ok: ھەئە
+rename: يېڭى ئىسىم قۇيۇش
+addphoto: قېتىش
+replacephoto: ئالماشتۇرۇش
+uploadphoto: رەسىم چىقىرىش
+choosefile: ھۆججەت تاللاش...
+choosefiles: ھۆججەتلەرنى تاللاش...
+browse: كۆز يۈرگۈزۈش
+newcontact: يېڭى تۇنۇش قۇرۇش
+deletecontact: تاللانغان تۇنۇشلارنى ئۆچۈرۈش
+composeto: غا خەت قۇرۇش
+contactsfromto: from$دىن to$غا جەمئىي count$ تۇنۇش
+print: بېسىش
+export: چىقىرىش
+exportall: ھەممىنى چىقىرىش
+exportsel: تاللانغاننى چىقىرىش
+exportvcards: تۇنۇشلارنى ۋكارتىسى فورماتىدا چىقىرىش
+newgroup: يېڭى توپ قۇرۇش
+addgroup: توپ قېتىش
+grouprename: توپ ئىسمىنى يېڭىلاش
+groupdelete: توپنى ئۆچۈرۈش
+groupassign: توپقا بەلگىلەش
+groupremove: توپتىن چىقىرىش
+groupremoveselected: تاللانغان تۇنۇشلارنى توپتىن چىقىرىش
+uponelevel: بىر دەرىجە ئۆستۈرۈش
+previouspage: ئالدىنقى بەتنى كۆرسىتىش
+firstpage: تۇنجى بەتنى كۆرسىتىش
+nextpage: كىيىنكى بەتنى كۆرسىتىش
+lastpage: ئاخىرقى بەتنى كۆرسىتىش
+group: توپ
+groups: توپلار
+listgroup: توپ ئەزالىرىنى تىزىش
+personaladrbook: شەخسىي ئادىرىسلار
+searchsave: ئىزدەشنى ساقلاش
+searchdelete: ئىزدەشنى ئۆچۈرۈش
+import: كىرگۈزۈش
+importcontacts: تۇنۇشلارنى كىرگۈزۈش
+importfromfile: ھۆججەتتىن كىرگۈزۈش
+importtarget: تۇنۇشلارنى قېتىش
+importreplace: پۈتۈن ئادرىس دەپتىرىنى ئالماشتۇرۇش
+importgroups: توپ تاپشۇرۇقلىرىنى كىرگۈزۈش
+importgroupsall: بارلىق (زۆرۆر تېپىلسا توپ قۇرۇش)
+importgroupsexisting: پەقەتلا مەۋجۇت توپلار ئۈچۈن
+importdesc: سىز مەۋجۇت ئادىرىس دەپتىرىدىن تۇنۇشلارنى چىقىرالايسىز. <br/>بىز نۆۋەتتە ئادىرىسلارنى <a href="https://en.wikipedia.org/wiki/VCard"> ۋىكارتىسى </a> ياكى س ئەس ۋ (پەش بىلەن ئايرىلغان) ئۇچۇر فورماتىدا كىرگۈزۈشنى قوللايمىز.
+importmapdesc: س ئەس ۋ (پەش بىلەن ئايرىلغان) ئۇچۇرىنى كىرگۈزۈشتىن بۇرۇن تۆۋەندىكى ئورۇن خەرىتىلەش ئۇچۇرىنىڭ توغىرلىقىنى جەزىملەشتۈرۈڭ.
+fieldnotmapped: ئورۇن خەرىتىلەنمىدى (كىرگۈزمەڭ)
+skipheader: بىرىنچى قۇرنى كىرگۈزمەڭ (باشلانمىلار)
+done: پۈتتى
+settingsfor: تەڭشىكى
+about: ھەققىدە
+preferences: مايىللىقلار
+userpreferences: ئىشلەتكۈچى مايىللىقلىرى
+editpreferences: ئىشلەتكۈچى مايىللىقلىرىنى تەھرىرلەش
+identities: كىملىكلەر
+manageidentities: كىملىكلەرنى باشقۇرۇش
+newidentity: يېڭى كىملىك قۇرۇش
+addidentity: كىملىك قۇشۇش
+editidentity: كىملىكنى تەھرىرلەش
+identityencryption: شىفىرلاش
+preferhtml: خ ت م ل نى كۆرسىتىش
+defaultcharset: ئەسلىدىكى يېزىق بولىقى
+htmlmessage: خ ت م ل ئۇچۇرى
+messagepart: بۆلەك
+digitalsig: رەقەملىك ئىمزا
+dateformat: چېسلا شەكلى
+timeformat: ۋاقىت شەكلى
+prettydate: ئۇماق چېسلالار
+setdefault: سۈكۈتنى بېكىتىش
+autodetect: ئاپتۇماتىك
+language: تىل
+timezone: ۋاقىت رايۇنى
+pagesize: بەت قۇرى
+signature: ئىمزا
+dstactive: يازلىق ۋاقىت قىسقىرىشى
+showinextwin: خەتنى يېڭى كۆزنەكتە ئېچىش
+composeextwin: يېڭى كۆزنەكتە يېزىش
+htmleditor: خ ت م ل ئۇچۇر يېزىش
+htmlonreply: خ ت م ل ئۇچۇرىغا جاۋاپ قايتۇرغاندا
+htmlonreplyandforward: خ ت م ل ئۇچۇرىغا جاۋاپ قايتۇرغاندا ياكى يەتكۈزگەندە
+htmlsignature: خ ت م ل ئىمزا
+showemail: ئېلىخەت ئادىرسىنى ئىسمى بىلەن كۆرسىتىش
+previewpane: ئالدىن كۆرۈش تاختىسىنى كۆرسىتىش
+skin: ئۇلىنىش ئېغىزى تېرىسى
+logoutclear: چېكىنگەندە ئەخلەت چېلىكىنى قۇرۇقداش
+logoutcompact: چېكىنگەندە كىلىش ساندۇقىنى ئىخچاملاش
+uisettings: ئىشلەتكۈچى ئۇلىنىش ئېغىزى
+serversettings: مۇلازىمېتىر تەڭشىكى
+mailboxview: خەت ساندۇقى كۆرۈنۈشى
+mdnrequests: تېلىخەت قايتۇرۇش تەلىپىگە بىنائەن
+askuser: مەندىن سوراڭ
+autosend: تېلخەت ئەۋەتىش
+autosendknown: تېلخەتنى مېنىڭ تۇنۇشلىرىمغا ئەۋەتىڭ، بولمىسا مەندىن سوراڭ
+autosendknownignore: تېلخەتنى مېنىڭ تۇنۇشلىرىمغا ئەۋەتىڭ، بولمىسا كارىڭىز بولمىسۇن
+autosendtrusted: تېلىخەتنى ئىشەنچلىك ئەۋەتكۈچىلەرگە ئەۋەتىڭ، بولمىسا مەندىن سوراڭ
+autosendtrustedignore: تېلخەتنى ئىشەنچلىك ئەۋەتكۈچىلەرگە ئەۋەتىڭ، بولمىسا كارىڭىز بولمىسۇن
+ignorerequest: تەلەپكە كارىڭىز بولمىسۇن
+readwhendeleted: خەتنى ئۆچۈرگەندە ئۇقۇغانلىق بەلگىسىنى قۇيۇش
+flagfordeletion: خەتنى ئۆچۈرۋەتكەندىن كۆرە ئۆچۈرۈلۈش بەلگىسىنى قۇيۇش
+skipdeleted: ئۆچۈرۋەتكەن ئۇچۇرلارنى كۆرسەتمەڭ
+deletealways: ئۇچۇرلارنى ئەخلەت چېلىكىگە يۆتكەش مەغلۇپ بولسا، ئۇلارنى ئۆچۈرۈڭ
+deletejunk: ئەخلەت چېلىكىدىكى ئۇچۇرلارنى بىۋاستە ئۆچۈرۋېتىڭ
+showremoteimages: يىراقتىكى ئەسكەرتىش رەسىملىرىنى كۆرسىتىش
+allowremoteresources: يىراقتىكى مەنبەلەرگە ئىجازەت بېرىش(رەسىم، ئۇسلۇب)
+fromknownsenders: تۇنۇش ئەۋەتكۈچىلەردىن
+fromtrustedsenders: ئىشەنچلىك ئەۋەتكۈچىلەردىن
+frommycontacts: تۇنۇشلىرىمدىن
+always: دائىم
+alwaysbutplain: دائىم، ئاددىي تېكىستقا جاۋاپ بەرگەندىن باشقا
+showinlineimages: خەتكە قىستۇرۇلغان رەسىملەرنى ئاستىدا كۆرسىتىڭ
+autosavedraft: قوليازمىنى ئاپتۇماتىك ساقلاڭ
+everynminutes: ھەر n$ مىنۇت(لار)دا
+refreshinterval: يېڭىلاش (يېڭى ئۇچۇرنى تەكشۈرۈش، قاتارلىق)
+never: ھەرگىز
+immediately: دەرھال
+messagesdisplaying: خەتلەرنى كۆرسىتىش
+messagescomposition: خەتلەرنى يېزىش
+mimeparamfolding: قىستۇرۇلغان ئىسىملار
+2231folding: پۈتۈن ر ف س 2231 (چاقماققۇش)
+miscfolding: ر ف س 2047/2231 (مىكروسوفىت Outlook)
+2047folding: پۈتۈن ر ف س 2047 (باشقا)
+force7bit: 8-بىتلىق خەتلەرگە MIME شىفىرىنى ئىشلىتىڭ
+savelocalstorage: تور كۆرگۈچنىڭ يەرلىك بوشلۇقىغا ساقلاش (ۋاقىتلىق)
+advancedoptions: ئالاھىدە تاللانمىلار
+toggleadvancedoptions: ئالاھىدە تاللانمىلارنى بار-يوق قىلىش
+focusonnewmessage: تور كۆرگۈچنىڭ كۆزنىكىنى يېڭى خەتكە مەركەزلەشتۈرۈڭ
+checkallfolders: يېڭى ئۇچۇرنى ھەممە قىسقۇچلاردىن تەكشۈرۈش
+displaynext: ئۆچۈرۈش/چىقىرۋېتىشتىن كىيىن تىزىملىكنىڭ كىيىنكى قۇرىنى كۆرسىتىش
+defaultfont: خ ت م ل ئۇچۇرىنىڭ ئەسلىي خەت شەكلى
+mainoptions: ئاساسىي تاللانمىلار
+browseroptions: تور كۆرگۈچ تاللانمىلىرى
+section: بۆلەك
+maintenance: ئاسىراش
+newmessage: يېڭى خەت
+signatureoptions: ئىمزا تاللانمىلىرى
+whenreplying: جاۋاپ قايتۇرغاندا
+replyempty: ئەسلىدىكى خەتنى نەقىل كەلتۈرمەڭ
+replytopposting: نەقىلنىڭ ئۈستىدە يېڭى خەت يېزىش
+replytoppostingnoindent: نەقىلنىڭ ئۈستىدە يېڭى خەت يېزىش (بوش ئورۇن يوق)
+replybottomposting: نەقىلنىڭ ئاستىدا يېڭى خەت يېزىش
+replyremovesignature: جاۋاپ قايتۇرغاندا ئەسلىي ئىمزانى خەتتىن ئۆچۈرۋېتىش
+autoaddsignature: ئاپتۇماتىك ئىمزا قۇيۇش
+newmessageonly: يېڭى خەتكىلا
+replyandforwardonly: جاۋاپ قايتۇرۇش ۋە يەتكۈزۈشكىلا
+insertsignature: ئىمزا قۇيۇش
+sigbelow: ئىمزانى نەقىللىگەن ئۇچۇرنىڭ ئاستىغا قۇيۇش
+sigseparator: ئىمزالاردا ئۆلچەملىك ئايرىغۇچنى مەجبۇرى قۇيۇش
+automarkread: خەتكە ئۇقۇغان بەلگىسىنى قۇيۇش
+afternseconds: n$ سىكونتتىن كىيىن
+reqmdn: قايتۇرۇش تېلىخېتىنى دائىم تەلەپ قىلىش
+reqdsn: ئەۋەتىش ئەھۋالى ئۇقتۇرۇشىنى دائىم تەلەپ قىلىش
+replysamefolder: جاۋاپ خەتنى جاۋاپ قايتۇرۇلغان ئۇچۇر قىسقۇچىغا قۇيۇش
+defaultabook: سۈكۈتتىكى ئادىرىس دەپتىرى
+autocompletesingle: ئاپتۇماتىك پۈتكۈزۈشتە ئىككىنچى ئېلىخەت ئادىرىسلىرىنى تاشلاش
+listnamedisplay: تۇنۇشلارنى سۈپىتىدە تىزىش
+contactformmode: تۇنۇش جەدىۋېلى ھالىتى
+privatemode: شەخسىي (ئۆي)
+businessmode: سودا (خىزمەت)
+collectedaddresses: يىغىلغان ئادىرىسلار
+collectedrecipients: يىغىلغان تاپشۇرۋالغۇچىلار
+collectedrecipientsopt: ئەۋەتىلدىغان ئېلىخەتنىڭ تاپشۇرۋالغۇچىلىرىنى ساقلايدىغان ئورۇن
+collectedsendersopt: ئىشەنچلىك ئەۋەتكۈچىلەرنى ساقلاش
+trustedsenders: ئىشەنچلىك ئەۋەتكۈچىلەر
+spellcheckbeforesend: خەتنى ئەۋەتىشتىن بۇرۇن ئىملا تەكشۈرۈش
+spellcheckoptions: ئىملا تەكشۈرۈش تاللانمىلىرى
+spellcheckignoresyms: بەلگىلىك سۆزلەرنى ئۆتكۈزۋېتىش
+spellcheckignorenums: رەقەملىك سۆزلەرنى ئۆتكۈزۋېتىش
+spellcheckignorecaps: ھەممە ھەرىپ چوڭ يېزىلغان سۆزلەرنى ئۆتكۈزۋېتىش
+addtodict: لۇغەتكە قېتىش
+mailtoprotohandler: 'خەت ئەۋەتىش ئۈچۈن كىلىشىمنامە بىر-تەرەپ قىلغۇچنى تىزىملىتىش: ئۇلىنىشلار'
+standardwindows: سەكرەلمىلەرنى ئۆلچەملىك كۆزنەك سۈپىتىدە بىر-تەرەپ قىلىش
+forwardmode: خەت يەتكۈزۈش
+inline: ئەسكەرتىش
+asattachment: قىستۇرما ھالەتتە
+replyallmode: '[ھەممىگە جاۋاپ] كۇنۇپكىسىنىڭ سۈكۈتتىكى ھەركىتى'
+replyalldefault: ھەممىگە جاۋاپ قايتۇرۇش
+replyalllist: خەت ئەۋەتىش تىزىملىكىگىلا جاۋاپ قايتۇرۇش (تېپىلسا)
+allmessages: بارلىق خەتلەر
+olderxdays: x$ كۈندىن چوڭ
+folder: قىسقۇچ
+folders: قىسقۇچلار
+foldername: قىسقۇچ نامى
+subscribed: مۇشتەرى بولغان
+messagecount: خەتلەر
+create: قۇرۇش
+createfolder: يېڭى قىسقۇچ قۇرۇش
+managefolders: قىسقۇچلارنى باشقۇرۇش
+specialfolders: ئالاھىدە قىسقۇچلار
+properties: خاسلىقلار
+folderproperties: قىسقۇچ خاسلىقلىرى
+parentfolder: ئانا قىسقۇچ
+location: ئورۇن
+info: ئۇچۇر
+getfoldersize: بېسىپ قىسقۇچ چوڭلۇقىنى كۆرۈش
+changesubscription: بېسىپ مۇشتەرىلىكنى ئۆزگەرتىش
+foldertype: قىسقۇچ تۈرى
+personalfolder: شەخسىي قىسقۇچ
+otherfolder: باشقا ئىشلەتكۈچىنىڭ قىسقۇچى
+sharedfolder: ئاممىۋى قىسقۇچ
+findfolders: قىسقۇچلارنى تېپىش
+findcontacts: تۇنۇشلارنى تېپىش
+findmail: ئېلىخەت ئۇچۇرلىرىنى تېپىش
+namespace.personal: شەخسىي
+namespace.other: باشقا ئىشلەتكۈچىلەر
+namespace.shared: ھەمبەھىرلىگەن
+dualuselabel: پەقەتلا ئۆز-ئىچىگە ئالىدۇ
+dualusemail: ئۇچۇرلار
+dualusefolder: قىسقۇچلار
+generate: ھاسىل قىلىش
+encryptioncreatekey: يېڭى ئاچقۇچ جۈپى ھاسىل قىلىش
+openmailvelopesettings: خەت لىپاپىسى تەڭشەكلىرىنى ئېچىش
+encryptionprivkeysinmailvelope: 'سىزدە خەت لىپاپىسى ئاچقۇچ زەنجىرىدە ساقلانغان nr$ ماس كىلىدىغان شەخسىي ئاچقۇچلار بار:'
+encryptionnoprivkeysinmailvelope: بۇ ئەۋەتكۈچىنىڭ سىزنىڭ خەت لىپاپىڭىزدا ساقلانغان PGP شەخسىي ئاچقۇچى يوق. شىفىرلانغان خەتنى قوزغىتىش ئۈچۈن بىرنى قۇرۇشنى خالامسىز؟
+encryption: شىفىرلاش
+mailvelopeoptions: خەت لىپاپىسى تاللانمىلىرى
+mailvelopemainkeyring: خەت لىپاپىسى ئاساسىي ئاچقۇچ زەنجىرىنى ئىشلىتىش
+mailvelopenotfound: خەت ئالاقىسى كېڭەيتمىسى تور كۆرگۈچىڭىزدە يوق/قاچىلانمىدى.
+sortby: رەتكە تىزىش
+sortasc: چوڭايغان بۇيىچە رەتكە تىزىش
+sortdesc: كىچىكلىگەن بۇيىچە رەتكە تىزىش
+undo: يېنىۋېلىش
+installedplugins: قاچىلانغان قوراللار
+plugin: قورال
+version: نەشىرى
+source: مەنبە
+destination: مەنزىل
+license: كىنىشكا
+support: ياردەمگە ئېرىشىڭ
+savedsearches: ساقلانغان ئىزدەشلەر
+dateformatY: ي ي ي ي
+dateformaty: ي ي
+dateformatm: ئا ئا
+dateformatd: ك ك
+dateformatj: ك
+dateformatn: ئا
+B: بايت
+KB: كىلوبايت
+MB: مېگابايىت
+GB: گىگابايىت
+unicode: ئۇنىكود
+english: ئىنگىلىزچە
+westerneuropean: غەربىي ياۋرۇپاچە
+easterneuropean: شەرقىي ياۋروپاچە
+southeasterneuropean: شەرقىي-جەنۇبىي ياۋرۇپاچە
+baltic: بالتىق
+cyrillic: قىرىلچە
+arabic: ئەرەپچە
+greek: گىرىكچە
+hebrew: ئىبرانىي
+turkish: تۈركچە
+nordic: شىمالىي ياۋرۇپاچە
+thai: تايلاندچە
+celtic: كېلتىك
+vietnamese: ۋېتنامچە
+japanese: ياپۇنچە
+korean: كورىيەچە
+chinese: خىتايچە
+arialabeltopnav: كۆزنەك باشقۇرۇش
+arialabeltasknav: ئەپ ۋەزىپىلىرى
+arialabeltoolbar: ئەپ قورال بالدىقى
+arialabellistnav: تىزىملىكنى كۆرسىتىش
+arialabelactivetask: جانلىق ۋەزىپە
+arialabelmessagessearchfilter: ئېلىخەت تىزىش سۈزگۈچى
+arialabelmailsearchform: ئېلىخەت ئۇچۇر ئىزدەش جەدىۋېلى
+arialabelcontactsearchform: تۇنۇشلارنى ئىزدەش جەدىۋېلى
+arialabelmailquicksearchbox: ئېلىخەت ئىزدەش كىرگۈزۈش
+arialabelquicksearchbox: ئىزدەش كىرگۈزگۈچ
+arialabelfoldersearchfilter: قىسقۇچ تىزىش سۈزگۈچى
+arialabelfoldersearchform: قىسقۇچ ئىزدەش جەدىۋېلى
+arialabelfolderlist: ئېلىخەت قىسقۇچىنى تاللاش
+arialabelmessagelist: ئېلىخەت خەتلىرىنى تىزىش
+arialabelmailpreviewframe: خەت ئالدىن كۆرگۈزگۈچ
+arialabelmailboxmenu: قىسقۇچ ھەركەت تىزىملىكى
+arialabellistselectmenu: تاللاش تىزىملىكىنى كۆرسىتىش
+arialabelthreadselectmenu: يىپلارنى كۆرسىتىش تىزىملىكى
+arialabelmessagelistoptions: خەت تىزىملىكىنى كۆرسىتىش ھەمدە تۈرگە ئايرىش تاللانمىلىرى
+arialabelmailimportdialog: خەت كىرگۈزۈش دېئالوگى
+arialabelmessagenav: خەت يولباشلاش
+arialabelmessagebody: خەت مەزمۇنى
+arialabelmessageactions: خەت ھەركىتى
+arialabelcontactquicksearch: تۇنۇشلارنى ئىزدەش جەدىۋېلى
+arialabelcontactsearchbox: تۇنۇش ئىزدەش كىرگۈزگۈچ
+arialabelmessageheaders: خەت باشلانمىلىرى
+arialabelforwardingoptions: يەتكۈزۈش تاللانمىلىرى
+arialabelreplyalloptions: ھەممىگە جاۋاپ قايتۇرۇش تاللانمىلىرى
+arialabelmoremessageactions: تېخىمۇ كۆپ خەت ھەركەتلىرى
+arialabelmorecontactactions: تېخىمۇ كۆپ تۇنۇش ھەركەتلىرى
+arialabelmarkmessagesas: تاللانغان خەتكە بەلگىسىنى قۇيۇش...
+arialabelcomposeoptions: يېزىش تاللانمىلىرى
+arialabelresponsesmenu: قاتلانغان ئىنكاس تىزىملىكى
+arialabelattachmentuploadform: قىستۇرما چىقىرىش جەدىۋېلى
+arialabelattachmentmenu: قىستۇرما تاللانمىلىرى
+arialabelmailtomenu: ئېلىخەت ئادىرىس تاللانمىلىرى
+arialabelattachmentpreview: قىستۇرما ئالدىن كۆرگۈزگۈچ
+ariasummarycomposecontacts: تاپشۇرۋالغۇچىلارنى تاللايدىغان توپلارنى ۋە تۇنۇشلارنى تىزىش
+arialabelcontactexportoptions: تۇنۇشلارنى چىقىرىش تاللانمىلىرى
+arialabelabookgroupoptions: ئادرىس دەپتىرى/توپ تاللانمىلىرى
+arialabelpreferencesform: مايىللىق جەدىۋېلى
+arialabelidentityeditfrom: كىملىك تەھرىرلەش جەدىۋېلى
+arialabelresponseeditfrom: ئىنكاس تەھرىرلەش جەدىۋېلى
+arialabelsearchterms: ئىزدەش ئاتالغۇلىرى
+arialabeldropactionmenu: سۆرەش ۋە تاشلاش ھەركەت تىزىملىكى
+arialabelheadersmenu: تاپشۇرۋالغۇچى (باشلانما) قۇشۇش تىزىملىكى
+arialabelimagetools: رەسىم قوراللىرى
+helplistnavigation: كۇنۇپكا تاختىسى يولباشلىغۇچىنى تىزىش
+helplistkeyboardnavigation: "يۇقىرى/تۆۋەن ئىستىرىلكا: قۇر يۆتكەشكە مەركەزلەشتۈرۈش/تاللاش\nبوشلۇق: مەركەزلەشكەن قۇرنى تاللاش.\nيۆتكەش+يۇقىرى/تۆۋەن: يۇقىرى/تۆۋەن قۇشۇمچە قۇرنى تاللاش.\nكونتىرول+بوشلۇق: مەركەزلەشكەن قۇرنى تاللاش ياكى تاللىماسلىق."
+helplistkeyboardnavmessages: "ئىستىرىلكا ئوڭ/سول: خەت يىپىنى كېڭەيتىش/ئىخچاملاش (يىپ ھالىتىدە بولسا).\nكىرىش: تاللانغان/مەركەزلەشكەن خەتنى ئېچىش.\nئۆچۈرۈش: تاللانغان خەتلەرنى ئەخلەت چېلىكىگە تاشلاش."
+helplistkeyboardnavcontacts: 'كىرىش: تاللانغان/مەركەزلەنگەن تۇنۇشنى ئېچىش'
+undeletemessage: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+addheader: ''
+nonbinary: ''
+othergender: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+alwayskeepformatting: ''
+editoroptions: ''
+enableautolink: ''
+mailvelopeenable: ''
+skinauthor: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

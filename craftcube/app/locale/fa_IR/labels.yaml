@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for fa_IR. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: به $product خوش آمدید
+username: نام‌کاربری
+password: گذرواژه
+server: سرور
+login: ورود
+menu: فهرست
+logout: خروج
+mail: پست
+settings: تنظیمات
+addressbook: دفتر نشانی
+inbox: صندوق ورودی
+drafts: پیش‌نویس‌ها
+sent: ارسال شده
+trash: زباله‌دان
+junk: بنجل
+show_real_foldernames: نمایش نام‌های واقعی برای پوشه‌های ویژه
+subject: موضوع
+from: از
+sender: فرستنده
+to: به
+cc: رونوشت
+bcc: رونوشت مخفی
+replyto: پاسخ-به
+followupto: پیگیری-در
+date: تاریخ
+size: اندازه
+priority: اولویت
+organization: سازمان
+readstatus: وضعیت خوانده شدن
+listoptions: فهرست گزینه‌ها...
+listoptionstitle: گزینه‌های لیست
+mailboxlist: پوشه‌ها
+messagesfromto: پیغام‌های $from تا $to از $count
+threadsfromto: رشته‌های $from تا $to از $count
+messagenrof: پیغام $nr از $count
+fromtoshort: $from - $to از $count
+copy: رونوشت
+move: انتقال
+moveto: انتقال به...
+copyto: رونوشت به...
+download: بارگیری
+open: باز کردن
+showattachment: نمایش
+showanyway: نمایش آن در هر صورت
+filename: نام پرونده
+filesize: اندازه پرونده
+addtoaddressbook: افزودن به دفتر نشانی‌ها
+sun: یک‌شنبه
+mon: دوشنبه
+tue: سه‌شنبه
+wed: چهارشنبه
+thu: پنج‌شنبه
+fri: جمعه
+sat: شنبه
+sunday: یک‌شنبه
+monday: دوشنبه
+tuesday: سه‌شنبه
+wednesday: چهارشنبه
+thursday: پنج‌شنبه
+friday: جمعه
+saturday: شنبه
+jan: ژان
+feb: فور
+mar: مار
+apr: آور
+may: مه
+jun: ژون
+jul: ژوی
+aug: اوت
+sep: سپت
+oct: اُکت
+nov: نوا
+dec: دسا
+longjan: ژانویه
+longfeb: فوریه
+longmar: مارس
+longapr: آوریل
+longmay: می
+longjun: ژوئن
+longjul: جولای
+longaug: آگوست
+longsep: سپتامبر
+longoct: اکتبر
+longnov: نوامبر
+longdec: دسامبر
+today: امروز
+refresh: نوسازی
+checkmail: بررسی برای پیام‌های جدید
+compose: نوشتن پیام
+writenewmessage: ایجاد پیام جدید
+reply: پاسخ
+replytomessage: پاسخ به فرستنده
+replytoallmessage: پاسخ به فهرست یا به فرستنده و تمام گیرنده‌ها
+replyall: پاسخ به همه
+replylist: پاسخ به فهرست
+forward: ارجاع
+forwardinline: ارجاع خطی
+forwardattachment: ارجاع به صورت پیوست
+forwardmessage: ارجاع پیام
+bouncemsg: ارسال مجدد (پرش)
+bounce: ارسال مجدد
+deletemessage: حذف پیغام
+movemessagetotrash: انتقال پیغام به زباله‌دان
+printmessage: چاپ این پیغام
+previousmessage: نمایش پیغام قبلی
+firstmessage: نمایش پیغام اول
+nextmessage: نمایش پیغام بعدی
+lastmessage: نمایش پیغام آخر
+backtolist: بازگشت به فهرست پیغام
+viewsource: نمایش منبع
+mark: نشانه‌گذاری
+markmessages: نشانه‌گذاری پیغام‌ها
+markread: به عنوان خوانده‌شده
+markunread: به عنوان خوانده‌نشده
+markflagged: به عنوان پرچم‌دار
+markunflagged: به عنوان بدون پرچم
+moreactions: کارهای دیگر...
+markallread: علامت‌گذاری همه به عنوان خوانده‌شده
+folders-cur: فقط پوشه‌های انتخاب‌شده
+folders-sub: پوشه‌ی انتخاب‌شده و زیرپوشه‌های‌ آن
+folders-all: همه پوشه‌ها
+more: بيشتر
+back: بازگشت
+options: گزینه‌ها
+composeoptions: تنظیمات نوشتن
+optionsandattachments: گزینه‌ها و پیوست‌ها
+actions: اقدام‌ها
+first: اول
+last: آخر
+previous: قبل
+next: بعد
+select: انتخاب
+selection: انتخاب
+all: همه
+none: هیچ‌کدام
+currpage: صفحه جاری
+isread: خوانده شده
+unread: خوانده‌نشده
+flagged: پرچم‌دار
+unflagged: بدون پرچم
+unanswered: پاسخ داده نشده
+withattachment: با پیوست
+deleted: حذف شده
+undeleted: حذف نشده
+replied: پاسخ داده شده
+forwarded: ارجاع داده شده
+invert: وارونه
+filter: صافی
+list: فهرست
+threads: رشته‌ها
+expand-all: باز کردن همه
+expand-unread: بازکردن خوانده نشده‌ها
+collapse-all: جمع کردن همه
+threaded: رشته شده
+autoexpand_threads: باز کردن رشته‌های پیام
+do_expand: همه رشته‌ها
+expand_only_unread: فقط با پیام‌های خوانده نشده
+fromto: از/به
+flag: پرچم
+attachment: پیوست
+nonesort: هیچ‌کدام
+sentdate: تاریخ ارسال
+arrival: تاریخ ورود
+asc: صعودی
+desc: نزولی
+listcolumns: ستون‌های فهرست
+listsorting: ستون مرتب‌سازی
+listorder: ترتیب مرتب‌سازی
+listmode: نوع مشاهده فهرست
+lmode: حالت لیست
+layout: چیدمان
+layoutwidescreen: عریض
+layoutdesktop: رومیزی
+layoutlist: لیست
+layoutwidescreendesc: صفحه‌ی عریض (نمایش ۳ ستونی)
+layoutdesktopdesc: رومیزی (لیست عریض و پیش‌نمایش ایمیل در زیر)
+layoutlistdesc: لیست (بدون پیش‌نمایش ایمیل)
+folderactions: اعمال پوشه...
+compact: فشرده
+empty: خالی
+importmessages: وارد کردن پیام‌ها
+quota: فضای استفاده شده
+unknown: ناشناخته
+unlimited: نامحدود
+quotatype: نوع سهمیه
+quotatotal: محدود کردن
+quotaused: استفاده شده
+quotastorage: فضای دیسک
+quotamessage: تعداد پیغام‌ها
+shortheaderdate: در $date
+shortheaderto: به $to در $date
+shortheaderfrom: از $from در $date
+quicksearch: جستجوی سریع
+searchplaceholder: جستجو...
+resetsearch: جستجوی دوباره
+searchmod: اصلاحات جستجو
+msgtext: کل پیام
+body: بدنه
+type: نوع
+namex: نام
+searchscope: حوزه
+currentfolder: پوشه جاری
+subfolders: این و زیرپوشه‌ها
+allfolders: همه پوشه‌ها
+searchinterval-1W: قدیمی‌تر از یک هفته
+searchinterval-1M: قدیمی‌تر از یک ماه
+searchinterval-1Y: قدیمی‌تر از یک سال
+searchinterval1W: جدیدتر از یک هفته
+searchinterval1M: جدیدتر از یک ماه
+searchinterval1Y: جدیدتر از یک سال
+openinextwin: باز کردن در پنجره‌ی جدید
+emlsave: بارگیری (.eml)
+changeformattext: نمایش در قالب متنی
+changeformathtml: نمایش در قالب اچ‌تی‌ام‌ال
+editasnew: ویرایش به عنوان جدید
+send: ارسال
+sendmessage: ارسال پیغام
+savemessage: ذخیره پیش‌نویس
+addattachment: پیوست کردن یک پرونده
+charset: مجموعه‌نمایه
+editortype: نوع ویرایش‌گر
+returnreceipt: رسید دریافت
+dsn: اعلام وضعیت دریافت
+mailreplyintro: 'در $date، $sender نوشته است:'
+originalmessage: پیام اصلی
+selectimage: انتخاب تصویر
+addimage: افزودن تصویر
+selectmedia: انتخاب فیلم
+addmedia: افزودن رسانه
+encrypt: رمزگذاری
+encryptmessage: رمزگذاری پیغام
+keyid: کلید شناسه
+keylength: بیت‌ها
+keyexpired: منقضی شده
+insert: جاگذارى
+recipient: گیرنده
+editidents: ویرایش شناسه‌ها
+spellcheck: املاء
+checkspelling: بررسی املایی
+resumeediting: ادامه‌ی ویرایش
+revertto: برگرداندن به
+restore: بازیابی
+restoremessage: بازیابی پیام؟
+ignore: نادیده گرفتن
+responses: پاسخ‌ها
+insertresponse: درج پاسخ
+manageresponses: مدیریت پاسخ‌ها
+addresponse: افزودن پاسخ
+editresponse: ویرایش پاسخ
+editresponses: ویرایش پاسخ‌ها
+responsename: نام
+responsetext: متن پاسخ
+attach: پیوست کردن
+attachments: پیوست‌ها
+upload: بارگذاری
+uploadprogress: $percent ($current از $total)
+close: بستن
+messageoptions: گزینه‌های پیام...
+low: کم
+lowest: کم‌ترین
+normal: معمولی
+high: زیاد
+highest: بیش‌ترین
+nosubject: (بدون موضوع)
+showimages: نمایش عکس‌ها
+allow: اجازه دادن
+alwaysshow: همیشه عکس‌های دریافتی از $sender را نمایش داده شود
+isdraft: این یک پیغام پیش‌نویس است.
+andnmore: $nr بیشتر...
+details: جزییات
+headers: سربرگ‌ها
+togglemoreheaders: نمایش سربرگ‌های بیشتر پیام
+togglefullheaders: تعویض سربرگ‌های پیام خام
+htmltoggle: HTML
+plaintoggle: متن ساده
+savesentmessagein: ذخیره پیام ارسالی در
+dontsave: ذخیره نکن
+maxuploadsize: حجم پرونده حداکثر تا میزان $size می‌باشد
+addcc: افزودن رونوشت
+addbcc: افزودن رونوشت مخفی
+addreplyto: افزودن پاسخ-به
+addfollowupto: افزودن پیگیری-به
+mdnrequest: فرستنده‌ی این پیام خواسته است که وقتی شما این پیام را می‌خوانید، آگاه شود. آیا مایلید فرستنده را آگاه سازید؟
+receiptread: رسید دریافت (خواندن)
+yourmessage: این یک رسید دریافت برای پیام شماست
+receiptnote: 'تذکر: این رسید فقط تصدیق می‌کند که پیام، روی رایانه گیرنده نمایش داده شده است. هیچ تضمینی نیست که گیرنده، محتوای پیام را خوانده یا فهمیده باشد.'
+zoomin: بزرگنمایی
+zoomout: کوچکنمایی
+name: نمایش نام
+firstname: نام
+surname: نام خانوادگی
+middlename: نام وسط
+nameprefix: پیشوند
+namesuffix: پسوند
+nickname: نام مستعار
+jobtitle: عنوان شغل
+department: بخش
+gender: جنسیت
+maidenname: نام خانوادگی زن قبل از ازدواج
+email: پست‌الکترونیک
+phone: تلفن
+address: نشانی
+street: خیابان
+locality: شهر
+zipcode: کدپستی
+region: ایالت/استان
+country: کشور
+birthday: زادروز
+anniversary: سالگرد
+website: وب‌سایت
+instantmessenger: پیام‌رسان
+notes: یادداشت‌ها
+male: مرد
+female: زن
+manager: مدیر
+assistant: دستیار
+spouse: همسر
+allfields: همه زمینه‌ها
+search: جستجو
+searchresult: نتیجه جستجو
+advsearch: جستجوی پیشرفته
+advanced: پیشرفته
+other: سایر
+qrcode: کد کیوآر
+typehome: خانه
+typework: کار
+typeother: سایر
+typemobile: تلفن همراه
+typemain: اصلی
+typehomefax: فاکس خانگی
+typeworkfax: فاکس کاری
+typecar: اتومبیل
+typepager: پیجر
+typevideo: ویدئو
+typeassistant: دستیار
+typehomepage: صفحه خانگی
+typeblog: بلاگ
+typeprofile: نمایه
+addfield: افزودن زمینه...
+addcontact: افزودن تماس
+editcontact: ویرایش تماس
+contacts: تماس‌ها
+contactproperties: خصوصیات تماس
+personalinfo: اطلاعات شخصی
+personal: شخصی
+contactphoto: تصویر تماس
+edit: ویرایش
+cancel: لغو
+save: ذخیره
+delete: حذف
+discard: دور انداختن
+continue: ادامه
+ok: بسیارخوب
+rename: تغییر نام
+addphoto: افزودن
+replacephoto: جایگزینی
+uploadphoto: بارگذاری تصویر
+browse: مرور
+deletecontact: حذف تماس‌های انتخاب شده
+composeto: نوشتن پست به
+contactsfromto: تماس‌های $from تا $to از $count
+print: چاپ
+export: صدور
+exportall: خارج کردن همه
+exportsel: خارج کردن انتخاب شده‌ها
+exportvcards: صدور اطلاعات تماس‌ها با فرمت vCard
+newgroup: ایجاد گروه جدید
+addgroup: افزودن گروه
+grouprename: تغییر نام گروه
+groupdelete: حذف گروه
+groupremoveselected: حذف نشانی‌های انتخاب شده از گروه
+previouspage: نمایش صفحه قبلی
+firstpage: نمایش صفحه اول
+nextpage: نمایش صفحه بعدی
+lastpage: نمایش صفحه آخر
+group: گروه
+groups: گروه‌ها
+listgroup: فهرست اعضاء گروه
+personaladrbook: نشانی‌های شخصی
+searchsave: ذخیره جستجو
+searchdelete: حذف جستجو
+import: وارد کردن
+importcontacts: وارد کردن تماس‌ها
+importtarget: افزودن تماس‌ها به
+importreplace: جایگیزینی کامل دفتر نشانی
+importgroups: وارد کردن وظایف گروه
+importgroupsall: همه (ایجاد گروه‌ها در صورت نیاز)
+importgroupsexisting: فقط برای گروه‌های موجود
+done: انجام شد
+settingsfor: تنظیمات برای
+about: درباره
+preferences: ترجیحات
+userpreferences: ترجیحات کاربر
+editpreferences: ویرایش ترجیحات کاربر
+identities: شناسه‌ها
+addidentity: افزودن هویت
+editidentity: ویرایش شناسه
+identityencryption: رمزگذاری
+preferhtml: HTML نمایش
+defaultcharset: مجموعه نمایه پیش‌فرض
+htmlmessage: پیغام HTML
+messagepart: قسمت
+digitalsig: امضای دیجیتال
+dateformat: قالب تاریخ
+timeformat: قالب زمان
+prettydate: تاریخ‌های زیبا
+setdefault: پیش‌فرض کن
+autodetect: خودکار
+language: زبان
+timezone: محدوده‌ی زمانی
+pagesize: سطر در صفحه
+signature: امضاء
+dstactive: ساعت تابستانی
+showinextwin: نمایش پیام در پنجره جدید
+composeextwin: نوشتن پیام  در پنجره جدید
+htmleditor: نوشتن پیام‌های HTML
+htmlonreply: فقط در پاسخ به پیام HTML
+htmlonreplyandforward: در بازگردانی یا پاسخ به پیام‌های HTML
+htmlsignature: امضای HTML
+showemail: نمایش نشانی رایانامه با نام نمایشی
+previewpane: نمایش قاب پیش‌نمایش
+skin: پوسته ظاهری
+logoutclear: تمیز کردن زباله دان هنگام برون‌رفت
+logoutcompact: فشرده‌سازی صندوق در هنگام خروچ
+uisettings: محیط کاربری
+serversettings: تنظیمات سرور
+mailboxview: نمای صندوق پستی
+mdnrequests: تاییدهای فرستنده
+askuser: پرسش از کاربر
+autosend: ارسال رسید
+autosendknown: ارسال رسید به تماس‌های من، در غیر این صورت سوال کن
+autosendknownignore: ارسال رسید به تماس‌های من، درغیر این صورت چشم‌پوشی کن
+readwhendeleted: در هنگام پاک کردن، پیام را به عنوان خوانده شده علامت بزن
+flagfordeletion: پیام را به جای پاک کردن، با پرچم نشانه‌گذاری کن
+skipdeleted: پیام‌های حذف شده را نمایش نده
+deletealways: اگر انتقال پیام به زباله‌دان ناموفق بود، آن‌ها را حذف کن
+deletejunk: حذف مستقیم پیام‌های زباله
+showremoteimages: تصاویر پیوند شده را نمایش بده
+fromknownsenders: از فرستنده شناس
+always: همواره
+showinlineimages: نمایش عکس‌های پیوست شده در پایین پیام
+autosavedraft: ذخیره‌ی خودکار پیش‌نویس
+everynminutes: در هر $n دقیقه
+refreshinterval: تازه کردن (بررسی برای پیام‌های جدید، مثلا)
+never: هرگز
+immediately: بلافاصله
+messagesdisplaying: نمای پیام‌ها
+messagescomposition: نوشتن پیام‌ها
+mimeparamfolding: عناوین پیوستی
+2231folding: Full RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Full RFC 2047 (سایر)
+force7bit: از MIME encoding برای کارکترهای ۸-بیتی استفاده کن
+advancedoptions: گزینه‌های پیشرفته
+focusonnewmessage: مشخص نمودن پیام جدید
+checkallfolders: همه پوشه‌ها را برای مشاهده پیام‌های جدید بررسی کن
+defaultfont: فونت پیش فرض برای پیام HTML
+mainoptions: گزینه‌های اصلی
+browseroptions: گزینه‌‌های مرورگر
+section: بخش
+maintenance: نگهداشت
+newmessage: پیام جدید
+signatureoptions: گزینه‌های امضاء
+whenreplying: هنگام پاسخ
+replyempty: نقل قول نکردن پیام اصلی
+replytopposting: شروع پیام جدید بالای اصلی
+replybottomposting: شروع پیام جدید پایین اصلی
+replyremovesignature: هنگام پاسخ امضاء اصلی را از پیام پاک کن
+autoaddsignature: اضافه کردن خودکار امضاء
+newmessageonly: فقط پیام جدید
+replyandforwardonly: فقط پاسخ‌ها و ارجاع‌ها
+insertsignature: درج امضاء
+afternseconds: بعد از $s ثانیه
+reqmdn: درخواست همیشگی رسید برگشت
+reqdsn: درخواست همیشگی تذکر وضعیت تحویل
+replysamefolder: پاسخ‌ها را در پوشه‌ای پیام‌هایی که باید پاسخ داده شود گرفته بده.
+defaultabook: دفترچه نشانی پیش‌فرض
+autocompletesingle: رد کردن نشانی‌های رایانامه دیگر در تکمیل خودکار
+listnamedisplay: فهرست تماس‌ها به عنوان
+spellcheckbeforesend: بررسی املایی قبل از ارسال پیام
+spellcheckoptions: گزینه‌های بررسی املاء
+spellcheckignoresyms: نادیده گرفتن کلمات دارای نماد
+spellcheckignorenums: نادیده گرفتن کلمات دارای عدد
+spellcheckignorecaps: نادیده گرفتن کلمات با حروف بزرگ
+addtodict: اضافه کردن به واژه‌نامه
+mailtoprotohandler: 'ثبت نگه‌دارنده پروتوکل برای mailto: پیوندها'
+standardwindows: بکار بردن پاپ‌آپ‌ها به صورت پنجره‌ی استاندارد
+forwardmode: بازگردانی پیام
+inline: خطی
+asattachment: به عنوان پیوست
+replyallmode: عمل پیش‌فرض برای دکمه [پاسخ به همه]
+replyalldefault: پاسخ به همه
+replyalllist: پاسخ به فقط لیست پستی (در صورت یافتن)
+allmessages: همه پیام ها
+folder: پوشه
+folders: پوشه‌ها
+foldername: نام پوشه
+subscribed: مشترک شد
+messagecount: پیام‌ها
+create: ایجاد
+createfolder: ایجاد پوشه‌ی جدید
+managefolders: مدیریت پوشه‌ها
+specialfolders: پوشه‌های ویژه
+properties: خصوصیات
+folderproperties: خصوصیات پوشه
+parentfolder: پوشه والد
+location: موقعیت
+info: اطلاعات
+getfoldersize: برای فهمیدن حجم پوشه کلیک کنید
+changesubscription: برای تغییر اشتراک کلیک کنید
+foldertype: نوع پوشه
+personalfolder: پوشه خصوصی
+otherfolder: پوشه کاربران دیگر
+sharedfolder: پوشه عمومی
+findfolders: پیدا کردن پوشه
+namespace.personal: شخصی
+dualusemail: پیغام‌ها
+dualusefolder: پوشه‌ها
+encryption: رمزگذاری
+sortby: مرتب‌سازی بر اساس
+sortasc: مرتب‌سازی صعودی
+sortdesc: مرتب‌سازی نزولی
+undo: برگردان
+installedplugins: افزونه‌های نصب شده
+plugin: افزونه
+version: نسخه
+source: منبع
+license: گواهینامه
+support: پشتیبانی
+dateformatY: YYYY
+dateformaty: YY
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: یونیکد
+english: انگلیسی
+westerneuropean: اروپای غربی
+easterneuropean: اروپای شرقی
+southeasterneuropean: اروپای جنوب شرقی
+baltic: بالتیک
+cyrillic: سیریلیک
+arabic: عربی
+greek: یونانی
+hebrew: عبری
+turkish: ترکی استانبولی
+nordic: شمالی
+thai: تایلندی
+celtic: سلتی
+vietnamese: ویتنامی
+japanese: ژاپنی
+korean: کره‌ای
+chinese: چینی
+arialabeltopnav: کنترل پنجره
+arialabelactivetask: وظیفه فعال
+arialabelmessagessearchfilter: پالایه فهرست‌گیری رایانامه
+arialabelmailsearchform: فرم جستجوی پیام رایانامه
+arialabelcontactsearchform: فرم جستجوی تماس‌ها
+arialabelmailquicksearchbox: ورودی جستجوی رایانامه
+arialabelquicksearchbox: وردوی جستجو
+arialabelfoldersearchfilter: پالایه فهرست‌گیری پوشه
+arialabelfoldersearchform: فرم جستجوی پوشه
+arialabelfolderlist: انتخاب پوشه رایانامه
+arialabelmessagelist: فهرست‌گیری پیام‌های رایانامه
+arialabelmailpreviewframe: پیش‌نمایش پیام
+arialabelmessagenav: ناوبری پیام
+arialabelmessagebody: بدنه پیام
+arialabelmessageactions: کنش‌های پیام
+arialabelcontactquicksearch: فرم جستجوی تماس‌ها
+arialabelcontactsearchbox: ورودی جستجوی تماس
+arialabelmessageheaders: سربرگ‌های پیام
+arialabelforwardingoptions: گزینه‌های بازگردانی
+arialabelreplyalloptions: گزینه‌های پاسخ به همه
+arialabelcomposeoptions: گزینه‌های انشاء
+arialabelattachmentuploadform: فرم بارگذاری پیوست
+arialabelattachmentpreview: پیش‌نمایش پیوست
+arialabelabookgroupoptions: گزینه‌های دفترنشانی/گروه
+arialabelpreferencesform: فرم تنظیمات
+arialabelidentityeditfrom: فرم ویرایش هویت
+arialabelresponseeditfrom: فرم ویرایش واکنش‌گرا
+arialabelsearchterms: شرایط جستجو
+arialabelimagetools: ابزار تصویر
+oauthlogin: ''
+darkmode: ''
+lightmode: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+showunread: ''
+mailimportdesc: ''
+mailimportzip: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+keepformatting: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+encryptandsign: ''
+keyrevoked: ''
+bccinstead: ''
+addheader: ''
+insertcontact: ''
+recipientedit: ''
+newresponse: ''
+togglecomposeoptions: ''
+attachmentrename: ''
+alwaysallow: ''
+summary: ''
+allheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nonbinary: ''
+othergender: ''
+printcontact: ''
+contactnameandorg: ''
+choosefile: ''
+choosefiles: ''
+newcontact: ''
+groupassign: ''
+groupremove: ''
+uponelevel: ''
+importfromfile: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+manageidentities: ''
+newidentity: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+ignorerequest: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+displaynext: ''
+replytoppostingnoindent: ''
+sigbelow: ''
+sigseparator: ''
+automarkread: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+olderxdays: ''
+findcontacts: ''
+findmail: ''
+namespace.other: ''
+namespace.shared: ''
+dualuselabel: ''
+generate: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+destination: ''
+skinauthor: ''
+savedsearches: ''
+arialabeltasknav: ''
+arialabeltoolbar: ''
+arialabellistnav: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmoremessageactions: ''
+arialabelmorecontactactions: ''
+arialabelmarkmessagesas: ''
+arialabelresponsesmenu: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

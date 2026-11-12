@@ -1,0 +1,228 @@
+# CraftCube catalogue messages for sv_SE. Converted 1:1 from the
+# Roundcube reference localization (GPL-3.0+); keep languages in
+# sync with tools/i18n.py (verify / sync / add / remove).
+errortitle: Ett fel uppstod!
+loginfailed: Inloggningen misslyckades
+cookiesdisabled: Webbläsaren accepterar inte cookies.
+sessionerror: Din inloggning är felaktig eller har gått ut
+cookiesmismatch: Något är fel med webbläsarens cookie. Rensa bort den för att kunna fortsätta.
+storageerror: Anslutning till lagringsservern misslyckades.
+servererror: Serverfel!
+servererrormsg: 'Serverfel: $msg'
+accountlocked: För många felaktiga inloggningar. Försök igen senare.
+connerror: Anslutningsfel (misslyckades att kontakta servern)!
+dberror: Databasfel!
+dbconnerror: Anslutning till serverns databas misslyckades!
+windowopenerror: Popup-fönstret blockerades!
+requesttimedout: Begäran tog för lång tid
+errorreadonly: Åtgärden kunde inte utföras. Mappen är skrivskyddad.
+errornoperm: Åtgärden kunde inte utföras. Otillräcklig befogenhet.
+erroroverquota: Åtgärden kunde inte utföras. Otillräckligt lagringsutrymme.
+erroroverquotadelete: Otillräckligt lagringsutrymme. Tryck på SHIFT och DEL för att ta bort ett meddelande.
+invalidrequest: Ogiltig begäran! Informationen sparades inte.
+invalidhost: Ogiltigt servernamn.
+nomessagesfound: Inga meddelanden.
+loggedout: Du är utloggad. Välkommen åter!
+mailboxempty: Brevlådan är tom
+nomessages: Inga meddelanden
+refreshing: Uppdaterar...
+loading: Läser in...
+uploading: Överför fil...
+attaching: Bifogar fil...
+uploadingmany: Överför filer...
+loadingdata: Läser in data...
+checkingmail: Hämtar nya meddelanden...
+sendingmessage: Skickar meddelande...
+messagesent: Meddelandet har skickats.
+savingmessage: Sparar meddelande...
+messagesaved: Meddelandet har sparats i Utkast
+successfullysaved: Sparat.
+savingresponse: Sparar responstext...
+deleteresponseconfirm: Vill du verkligen ta bort denna responstext?
+nocontactselected: Ingen kontakt är vald ännu.
+addedsuccessfully: Kontakten har lagts till i adressboken.
+contactexists: En kontakt med den här adressen finns redan.
+contactnameexists: En kontakt med det här namnet finns redan.
+blockedimages: Externt länkade bilder i meddelandet har blockerats.
+blockedresources: Externt länkade resurser i meddelandet har blockerats.
+suspiciousemail: Meddelandet innehåller mailadresser som kan vara försök till bedrägeri.
+bccemail: Vidarebefordrat meddelande innehåller dolda mottagare (Bcc).
+bouncehint: Meddelandet kommer att skickas utan modifieringar, dvs med ursprungligt innehåll, meddelandehuvud och ursprungliga mottagare.
+encryptedmessage: Meddelandet är krypterat och kan tyvärr inte visas.
+externalmessagedecryption: Meddelandet är krypterat och kan visas med ett tillägg i webbläsaren.
+nopubkeyfor: Ingen giltig offentlig nyckel hittades för $email
+nopubkeyforsender: Ingen giltig offentlig nyckel hittades för din avsändaradress. Vill du kryptera meddelandet enbart för mottagaren?
+encryptnoattachments: Redan uppladdade bilagor kan inte krypteras. Lägg till bilagorna i krypteringsredigeraren istället.
+searchpubkeyservers: Ska saknade nycklar sökas i offentliga nyckelservrar?
+encryptpubkeysfound: 'Följande offentliga nycklar hittades:'
+keyservererror: Nyckeln kunde inte hämtas från nyckelservern.
+keyimportsuccess: Offentlig nyckel $key är tillagd i din nyckelring.
+nocontactsfound: Inga kontakter hittades.
+contactnotfound: Efterfrågad kontakt hittades inte.
+contactsearchonly: Ange sökord för att hitta kontakter i vald adressbok.
+sendingfailed: Meddelandet kunde inte skickas.
+senttooquickly: Vänta ytterligare $sec sekunder med att skicka meddelandet.
+errorsavingsent: Det skickade meddelandet kunde inte sparas.
+errorsaving: Meddelandet kunde inte sparas.
+errormoving: Meddelandet kunde inte flyttas.
+errorcopying: Meddelandet kunde inte kopieras.
+errordeleting: Meddelandet kunde inte tas bort.
+errormarking: Meddelandet kunde inte markeras.
+alerttitle: Uppmärksamhet
+confirmationtitle: Är du säker...
+deletecontactconfirm: Vill du verkligen ta bort valda kontakter?
+deletegroupconfirm: Vill du verkligen ta bort den valda gruppen?
+deletemessagesconfirm: Vill du verkligen ta bort valda meddelanden?
+deletefolderconfirm: Vill du verkligen ta bort den här mappen?
+movefolderconfirm: Vill du verkligen flytta den här mappen?
+purgefolderconfirm: Vill du verkligen ta bort alla meddelanden i den här mappen?
+contactdeleting: Tar bort kontakt...
+groupdeleting: Tar bort grupp...
+folderdeleting: Tar bort mapp...
+foldermoving: Flyttar mapp...
+foldersubscribing: Startar prenumeration på mapp...
+folderunsubscribing: Avslutar prenumeration på mapp...
+formincomplete: Formuläret var inte komplett ifyllt.
+noemailwarning: Ange en giltig adress.
+nonamewarning: Ange ett namn.
+nopagesizewarning: Ange en sidstorlek.
+nosenderwarning: Ange en avsändaradress.
+recipientsadded: Mottagare tillagda.
+norecipientwarning: Ange minst en mottagare.
+disclosedrecipwarning: Alla mottagare kan se varandras adresser. Undvik detta genom att ange adresserna i fältet för dolda mottagare (Bcc) istället.
+disclosedreciptitle: Alltför många mottagaradresser
+nosubjectwarning: Ämnesraden är tom. Vill du ange ett ämne nu?
+nosubjecttitle: Inget ämne
+nobodywarning: Skicka det här meddelandet utan text?
+notsentwarning: Meddelandet har inte skickats ännu men har ändringar som inte är sparade. Vill du strunta i ändringarna?
+restoresavedcomposedata: 'Ett tidigare skrivet men inte skickat meddelande upptäcktes.\n\nÄmne: $subject\nSparat: $date\n\nVill du återskapa meddelandet?'
+nosearchname: Ange ett kontaktnamn eller en adress.
+notuploadedwarning: Alla bilagor har inte överförts ännu. Vänta eller avbryt överföringen.
+searchsuccessful: $nr meddelanden hittades.
+contactsearchsuccessful: $nr kontakter hittades.
+searchnomatch: Sökningen gav inget resultat.
+searching: Söker...
+checking: Kontrollerar...
+stillsearching: Söker fortfarande...
+nospellerrors: Inget stavfel hittades.
+folderdeleted: Mappen togs bort.
+foldersubscribed: Prenumeration på mapp startad.
+folderunsubscribed: Prenumeration på mapp avslutad.
+folderpurged: Mappen är tömd.
+folderexpunged: Mappen är rensad.
+deletedsuccessfully: Borttaget.
+converting: Tar bort formatering...
+messageopenerror: Meddelandet kunde inte hämtas från servern.
+filelinkerror: Filen kunde inte bifogas.
+fileuploaderror: Filuppladdning misslyckades.
+csvfilemismatch: Import av flera CSV-filer med olika fält stöds inte.
+filesizeerror: Den uppladdade filens storlek överstiger högsta tillåtna $size.
+filecounterror: Högst $count filer kan laddas upp samtidigt.
+msgsizeerror: Filen kunde inte bifogas. Största tillåtna storlek ($size) överskreds.
+msgsizeerrorfwd: Tillåten storlek på meddelandet ($size) är överskriden. $num meddelanden har inte bifogats.
+copysuccess: $nr kontakter har kopierats.
+movesuccess: $nr kontakter har flyttats.
+copyerror: Några kontakter kunde inte kopieras.
+moveerror: Några kontakter kunde inte flyttas.
+sourceisreadonly: Denna adresskälla är skrivskyddad.
+errorsavingcontact: Kontaktadressen kunde inte sparas.
+movingmessage: Flyttar meddelande...
+copyingmessage: Kopierar meddelande...
+copyingcontact: Kopierar kontakter...
+movingcontact: Flyttar kontakter...
+deletingmessage: Tar bort meddelande...
+markingmessage: Markerar meddelande...
+addingmember: Lägger till kontakter i gruppen...
+removingmember: Tar bort kontakter från gruppen...
+receiptsent: Mottagarkvitto har skickats.
+errorsendingreceipt: Mottagarkvitto kunde inte skickas.
+deleteidentityconfirm: Vill du verkligen ta bort denna identitet?
+nodeletelastidentity: Du kan inte ta bort identiteten, den är din sista.
+forbiddencharacter: Mappnamnet innehåller otillåtna tecken.
+selectimportfile: Välj en fil att ladda upp.
+addresswriterror: Markerad adressbok är skrivskyddad.
+contactaddedtogroup: Kontakterna har lagts till i gruppen.
+contactremovedfromgroup: Kontakterna har tagits bort från gruppen.
+nogroupassignmentschanged: Ingen grupptillhörighet ändrades.
+importwait: Importerar, var god vänta...
+importformaterror: Importen misslyckades! Filen har inte korrekt dataformat.
+importconfirm: <b>Lyckad import av $inserted kontakter</b>
+importconfirmskipped: <b>Hoppade över $skipped befintliga kontakter</b>
+importconfirminvalid: <b>Hoppade över $invalid ogiltiga kontakter</b>
+importconfirmerrors: <b>Kunde inte läsa in $errors giltiga kontakter</b>
+importmessagesuccess: $nr meddelanden har importerats
+importmessageerror: Importen misslyckades! Filen är inte ett giltigt meddelande eller en brevlåda
+opnotpermitted: Otillåten operation!
+nofromaddress: Vald identitet saknar adress.
+editorwarning: Genom att byta textredigerare kan formateringen av texten gå förlorad. Vill du fortsätta?
+httpreceivedencrypterror: Ett irreparabelt fel har uppstått. Kontakta administratören omgående. <b>Meddelandet kan inte skickas.</b>
+smtpconnerror: 'SMTP-fel ($code): Anslutning till servern misslyckades.'
+smtpautherror: 'SMTP-fel ($code): Inloggningen misslyckades.'
+smtpfromerror: 'SMTP-fel ($code): Kan inte sätta avsändaradress till "$from" ($msg).'
+smtptoerror: 'SMTP-fel ($code): Kan inte lägga till mottagaradress "$to" ($msg).'
+smtprecipientserror: 'SMTP-fel: Felaktigt formaterad lista med mottagaradresser.'
+smtputf8error: 'SMTP-fel: Servern klarar inte mailadresser med Unicode.'
+smtpsizeerror: 'SMTP-fel: Meddelandet är för stort ($limit).'
+smtperror: 'SMTP-fel: $msg'
+emailformaterror: 'Ogiltig adress: $email'
+toomanyrecipients: Förmånga mottagare. Minska antalet till högst $max.
+maxgroupmembersreached: Antalet gruppmedlemmar får inte överstiga $max.
+internalerror: Ett internt fel uppstod. Försök igen.
+contactdelerror: Kontakt kunde inte tas bort.
+contactdeleted: Kontakt borttagen.
+contactrestoreerror: Borttagna kontakter kunde inte återskapas.
+contactrestored: Kontakter återskapade.
+groupdeleted: Grupp borttagen.
+grouprenamed: Gruppnamn ändrat.
+groupcreated: Grupp skapad.
+savedsearchdeleted: Sparad sökning borttagen.
+savedsearchdeleteerror: Kunde inte ta bort sparad sökning.
+savedsearchcreated: Sparad sökning tillagd.
+savedsearchcreateerror: Kunde inte lägga till sparad sökning.
+messagedeleted: Meddelande borttaget.
+messagemoved: Meddelande flyttat.
+messagemovedtotrash: Meddelanden flyttade till Papperskorg.
+messagecopied: Meddelande kopierat.
+messagemarked: Meddelande markerat.
+autocompletechars: Ange minst $min tecken för automatisk komplettering.
+autocompletemore: Ytterligare passande poster funna. Skriv fler tecken.
+namecannotbeempty: Namnet får inte vara tomt.
+nametoolong: Namnet är för långt.
+namedotforbidden: Mappnamnet kan inte inledas med en punkt.
+folderupdated: Mappen är uppdaterad.
+foldercreated: Mappen är skapad.
+invalidimageformat: Ogiltigt bildfilsformat.
+mispellingsfound: Stavfel hittades i meddelandet.
+parentnotwritable: Mappen kunde inte skapas eller flyttas. Åtkomsträttighet saknas.
+messagetoobig: Meddelandet är alltför stort att behandla.
+attachmentvalidationerror: 'Den här bilagan är misstänkt eftersom dess typ inte överensstämmer med typen som anges i meddelandet. Om du inte litar på avsändaren ska du inte öppna bilagan i webbläsaren eftersom innehållet kan vara skadligt.<br/><br/><em>Förväntad: $expected; Funnen: $detected</em>'
+noscriptwarning: 'Varning: Denna webbmailtjänst fungerar inte utan Javascript! Aktivera Javascript i webbläsarens inställningar.'
+messageissent: Meddelandet är skickat men har inte sparats ännu. Vill du spara meddelandet nu?
+errnotfound: Filen hittades inte
+errnotfoundexplain: Efterfrågad resurs hittades inte!
+errfailedrequest: Begäran misslyckades
+errauthorizationfailed: Autentiseringen misslyckades
+errunauthorizedexplain: Din behörighet till den här tjänsten kunde inte bekräftas!
+errrequestcheckfailed: Kontroll av begäran misslyckades
+errcsrfprotectionexplain: 'Åtkomst till den här resursen är skyddad mot CSRF.
+
+  Detta visas därför att utloggning från tjänsten inte gjordes korrekt.
+
+
+  En aktiv handling krävs nu för att fortsätta.'
+errcontactserveradmin: Kontakta administratören.
+clicktoresumesession: Klicka här för att återuppta föregående session
+errcomposesession: Fel i påbörjat meddelande
+errcomposesessionexplain: Det påbörjade meddelandet hittades inte.
+clicktocompose: Klicka här för att skriva ett nytt meddelande
+nosupporterror: Funktionen finns inte i webbläsaren.
+siginserted: Signatur infogad.
+responseinserted: Respons infogad.
+noresponsesavailable: Ingen respons tillgänglig
+listempty: Listan är tom.
+listusebutton: Använd Skapa-knappen för att lägga till information.
+keypaircreatesuccess: Ett nytt nyckelpar har skapats för $identity.
+emptyattachment: Bilagan verkar vara tom.<br>Kontakta avsändaren.
+oauthloginfailed: OAuth-inloggningen misslyckades. Vänligen försök igen.
+oauthinvalidrequest: Autentiseringsbegäran var ogiltig eller inkomplett.
+oauthaccessdenied: Autentiseringsbegäran nekades av servern eller användaren.

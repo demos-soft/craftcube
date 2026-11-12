@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for ro_RO. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Bine aţi venit la $product
+username: Utilizator
+password: Parolă
+server: Server
+login: Autentificare
+oauthlogin: Autentificare cu $provider
+menu: Meniu
+logout: Deconectare
+mail: E-Mail
+settings: Setări personale
+addressbook: Agendă
+darkmode: Mod întunecat
+lightmode: Mod luminos
+inbox: Primite
+drafts: Ciorne
+sent: Trimise
+trash: Gunoi
+junk: Spam
+show_real_foldernames: Arata numele reale pentru folderele speciale
+subject: Subiect
+from: Expeditor
+sender: Expeditor
+to: Destinatar
+cc: Copie (CC)
+bcc: Copie oarbă (BCC)
+replyto: Răspunde la
+followupto: Followup La
+date: Data
+size: Mărime
+priority: Prioritate
+organization: Organizaţie
+readstatus: Citit/Necitit
+listoptions: Listează opţiunile...
+listoptionstitle: Listează opţiuni
+mailboxlist: Dosare
+messagesfromto: Mesaje de la $from până la $to din $count
+threadsfromto: Grupuri de la $from până la $to din $count
+messagenrof: Mesajul $nr din $count
+fromtoshort: $from - $to din $count
+copy: Copiază
+move: Mută
+moveto: Mută in...
+copyto: Copiază în...
+download: Descarcă
+open: Deschide
+showattachment: Arată
+showanyway: Arată oricum
+filename: Nume fişier
+filesize: Mărime fişier
+addtoaddressbook: Adaugă în agendă
+sun: Dum
+mon: Lun
+tue: Mar
+wed: Mie
+thu: Joi
+fri: Vin
+sat: Sâm
+sunday: Duminică
+monday: Luni
+tuesday: Marţi
+wednesday: Miercuri
+thursday: Joi
+friday: Vineri
+saturday: Sâmbătă
+jan: Ian
+feb: Feb
+mar: Mar
+apr: Apr
+may: Mai
+jun: Iun
+jul: Iul
+aug: Aug
+sep: Sep
+oct: Oct
+nov: Noi
+dec: Dec
+longjan: Ianuarie
+longfeb: Februarie
+longmar: Martie
+longapr: Aprilie
+longmay: Mai
+longjun: Iunie
+longjul: Iulie
+longaug: August
+longsep: Septembrie
+longoct: Octombrie
+longnov: Noiembrie
+longdec: Decembrie
+today: Astăzi
+refresh: Actualizează
+checkmail: Verifică mesaje noi
+compose: Scrie un mesaj
+writenewmessage: Scrie mesaj nou
+reply: Răspunde
+replytomessage: Răspunde expeditorului
+replytoallmessage: Răspunde la toţi
+replyall: Răspunde la toţi
+replylist: Răspunde listei
+forward: Înaintează
+forwardinline: Înaintează ca citat
+forwardattachment: Înaintează ca ataşament
+forwardmessage: Trimite mesajul mai departe
+bouncemsg: Retrimite (returnat)
+bounce: Retrimite
+deletemessage: Șterge mesajul
+undeletemessage: Anulează ștergere mesaj
+movemessagetotrash: Mută mesajul la gunoi
+printmessage: Listează mesajul
+previousmessage: Afişează mesajul anterior
+firstmessage: Afişează primul mesaj
+nextmessage: Afişează următorul mesaj
+lastmessage: Afişează ultimul mesaj
+backtolist: Înapoi la mesaje
+viewsource: Afişează sursa
+mark: Marchează
+markmessages: Marchează mesajele
+markread: Ca citit
+markunread: Ca necitit
+markflagged: Ca marcat
+markunflagged: Ca nemarcat
+markundeleted: Ca neșters
+markasread: Marchează ca citit
+markasunread: Marchează ca necitit
+moreactions: Mai multe acțiuni...
+markallread: Marchează tot ca citit
+folders-cur: Doar dosarul selectat
+folders-sub: Dosarul selectat și subdosarele acestuia
+folders-all: Toate dosarele
+more: Mai multe
+back: Înapoi
+options: Opţiuni
+composeoptions: Opțiuni compunere
+optionsandattachments: Opțiuni și atașamente
+actions: Acțiuni
+first: Primul
+last: Ultimul
+previous: Precedentul
+next: Următorul
+select: Selectează
+selection: Selecție
+all: Toate
+none: Niciunul
+currpage: Pagina curentă
+isread: Citit
+unread: Necitite
+flagged: Marcat
+unflagged: Nemarcat
+unanswered: Fără răspuns
+withattachment: Cu atașament
+deleted: Şterse
+undeleted: Nu a fost șters
+forwarded: Redirecționat
+invert: Inversează
+filter: Filtru
+list: Listă
+threads: Grupare după subiect
+expand-all: Extinde toate
+expand-unread: Extinde necitite
+collapse-all: Compactează toate
+threaded: Grupate
+showunread: Arată mesaje necitite
+autoexpand_threads: Extinde mesajele grupate
+do_expand: toate grupările
+expand_only_unread: doar pe cele cu mesaje necitite
+fromto: Expeditor/Destinatar
+flag: Marcaj
+attachment: Ataşament
+nonesort: Fără sortare
+sentdate: Data trimiterii
+arrival: Data primirii
+asc: ascendent
+desc: descendent
+listcolumns: Arată coloane
+listsorting: Sortează după
+listorder: Ordinea de sortare
+listmode: Mod de vizualizare
+lmode: Mod listă
+layout: Aspect
+layoutwidescreen: Ecran panoramic
+layoutdesktop: Desktop
+layoutlist: Listă
+layoutwidescreendesc: Ecran panoramic (vizualizare pe 3 coloane)
+layoutlistdesc: Listă (fără previzualizare mail)
+folderactions: Acțiuni dosar...
+compact: Compactează
+empty: Goleşte
+importmessages: Import mesaje
+quota: Spaţiu folosit
+unknown: necunoscut
+unlimited: nelimitat
+quotatype: Tip cotă
+quotatotal: Limită
+quotaused: Folosit
+quotastorage: Spațiu disc
+quotamessage: Număr mesaje
+shortheaderdate: În $date
+shortheaderto: Către $to în $date
+shortheaderfrom: De la $from în $date
+quicksearch: Căutare rapidă
+searchplaceholder: Caută...
+resetsearch: Anulează căutarea
+searchmod: Parametrii de căutare
+msgtext: Tot mesajul
+body: Corp
+type: Tip
+namex: Nume
+searchscope: Scop
+currentfolder: Dosarul curent
+subfolders: Acesta și sub-folderele
+allfolders: Toate dosarele
+searchinterval-1W: mai vechi de o săptămână
+searchinterval-1M: mai vechi de o lună
+searchinterval-1Y: mai vechi de un an
+searchinterval1W: mai nou de o săptămână
+searchinterval1M: mai nou de o lună
+searchinterval1Y: mai nou de un an
+openinextwin: Deschide în fereastră nouă
+emlsave: Salvează în format .eml
+changeformattext: Afișează în format text
+changeformathtml: Afișează în format HTML
+editasnew: Editează ca nou
+send: Trimite
+sendmessage: Trimite mesaj
+savemessage: Salvează ciornă
+addattachment: Ataşează fişier
+charset: Set de caractere
+editortype: Tip de editor
+returnreceipt: Returnează confirmare de primire
+dsn: Notificare despre starea trimiterii
+keepformatting: Păstrează formatarea
+mailreplyintro: 'În $date, $sender a scris:'
+originalmessage: Mesaj original
+selectimage: Alege imagine
+addimage: Adaugă imagine
+selectmedia: Alege videoclip
+addmedia: Adaugă videoclip
+encrypt: Criptează
+encryptmessage: Criptează mesaj
+encryptmessagemailvelope: Criptează mesajul cu Mailvelope
+importpubkeys: Importă chei publice
+encryptedsendialog: Se trimite mesaj criptat
+encryptandsign: Criptare și semn
+keyid: ID Cheie
+keylength: Biți
+keyexpired: Expirat
+keyrevoked: Revocat
+bccinstead: Folosește Bcc
+insert: Inserează
+insertcontact: Introdu contact(e)
+recipient: Destinatar
+recipientedit: Editare destinatar
+editidents: Editează identităţi
+spellcheck: Ortografie
+checkspelling: Verifică ortografie
+resumeediting: Reia editarea
+revertto: Revino la
+restore: Restaurează
+restoremessage: Restaurezi mesajul?
+ignore: Ignoră
+responses: Răspunsuri
+insertresponse: Adaugă un răspuns
+manageresponses: Administrează răspunsurile
+newresponse: Creează răspuns nou
+addresponse: Adaugă răspuns
+editresponse: Modifică răspunsul
+editresponses: Modifică răspunsurile
+responsename: Nume
+responsetext: Textul răspunsului
+attach: Ataşează
+attachments: Ataşamente
+upload: Încarcă
+uploadprogress: $percent ($current din $total)
+close: Închide
+messageoptions: Opţiuni mesaj...
+attachmentrename: Redenumește atașament
+low: Mică
+lowest: Cea mai mică
+normal: Normală
+high: Mare
+highest: Cea mai mare
+nosubject: (fără subiect)
+showimages: Afişează imagini
+allow: Permite
+alwaysshow: Afişează întotdeauna imaginile de la $sender
+alwaysallow: Permite întotdeauna de la $sender
+isdraft: Acest mesaj este o ciornă.
+andnmore: $nr mai multe...
+details: Detalii
+summary: Rezumat
+headers: Antete
+allheaders: Toate anteturile
+togglemoreheaders: Arată mai mult din antet
+togglefullheaders: Arată mai puțin din antet
+htmltoggle: HTML
+plaintoggle: Text simplu
+savesentmessagein: Salvează mesajele trimise în
+dontsave: Nu salva
+maxuploadsize: Mărimea maxim admisă a fişierului este $size
+addcc: Adaugă CC
+addbcc: Adaugă BCC
+addreplyto: Adaugă Raspunde-La
+addfollowupto: Adaugă Followup-La
+sendreceipt: Trimiți confirmare de citire?
+mdnrequest: Expeditorul acestui mesaj a solicitat să fie notificat la cititrea mesajului. Doriţi să notificaţi expeditorul?
+receiptread: Returnează confirmare (citit)
+yourmessage: Aceasta este o confirmare de primire a mesajului dumneavoastră.
+receiptnote: 'Notă: Această confirmare doar vă informează că mesajul a fost afişat pe calculatorul destinatarului. Nu există nici o garanţie că destinatarul a citit sau a inţeles conţinutul mesajului.'
+sendalwaysto: Trimite întotdeauna către $email
+zoomin: Mărește
+zoomout: Micșorează
+rotate: Rotește
+increaseimage: Mărește dimensiune imagine
+decreaseimage: Micșorează dimensiune imagine
+rotateimage: Rotește imagine
+showtools: Arată instrumente imagine
+hidetools: Ascunde instrumente imagine
+name: Numele Contact
+firstname: Nume
+surname: Prenume
+middlename: Iniţiala tatălui
+nameprefix: Prefix
+namesuffix: Sufix
+nickname: Poreclă
+jobtitle: Funcția
+department: Departament
+gender: Sex
+maidenname: Nume de fată
+email: E-Mail
+phone: Telefon
+address: Adresă
+street: Strada
+locality: Oraș
+zipcode: Cod poştal
+region: Stat/Judeţ
+country: Țara
+birthday: 'Ziua de naştere:'
+anniversary: Aniversare
+website: Pagină web
+instantmessenger: IM (Mesaj Instant)
+notes: Notițe
+male: masculin
+female: feminin
+nonbinary: non-binar
+othergender: altele
+manager: Manager
+assistant: Asistent
+spouse: Soț/soție
+allfields: Toate câmpurile
+search: Căutare
+searchresult: Rezultate căutare
+advsearch: Căutare avansată
+advanced: Avansat
+other: Altele
+printcontact: Imprimă contact
+qrcode: Cod QR
+typehome: Acasă
+typework: Serviciu
+typeother: Altele
+typemobile: Mobil
+typemain: Principal
+typehomefax: Fax acasă
+typeworkfax: Fax serviciu
+typecar: Mașină
+typepager: Pager
+typevideo: Video
+typeassistant: Asistent
+typehomepage: Pagină de pornire
+typeblog: Blog
+typeprofile: Profil
+addfield: Adaugă câmp...
+addcontact: Adaugă contact
+editcontact: Modifică contact
+contacts: Contacte
+contactproperties: Proprietăţile contactului...
+contactnameandorg: Nume și Organizație
+personalinfo: Informații personale
+personal: Personal
+contactphoto: Poză contact
+edit: Editează
+cancel: Renunţă
+save: Salvează
+delete: Şterge
+discard: Renunță
+continue: Continuă
+ok: Ok
+rename: Redenumeşte
+addphoto: Adaugă
+replacephoto: Înlocuiește
+uploadphoto: Încarcă imagine
+choosefile: Alege fișier...
+choosefiles: Alege fișiere...
+browse: Răsfoiește
+newcontact: Creează contact nou
+deletecontact: Şterge contactul selectat
+composeto: Compune e-mail pentru
+contactsfromto: Contacte de la $from până la $to din $count
+print: Listează
+export: Exportă
+exportall: Exportă tot
+exportsel: Exportă partea selectată
+exportvcards: Exportă contactele în format vCard
+newgroup: Creează grup nou
+addgroup: Adaugă grup
+grouprename: Redenumește grupul
+groupdelete: Șterge grupul
+groupassign: Atribuie la grup...
+groupremove: Înlătură de la grup
+groupremoveselected: Șterge contactele selectate din grup
+uponelevel: Mai sus cu un nivel
+previouspage: Pagina anterioară
+firstpage: Prima pagină
+nextpage: Pagina următoare
+lastpage: Ultima pagină
+group: Grup
+groups: Grupuri
+listgroup: Lista membrii grupului
+personaladrbook: Adrese personale
+searchsave: Salvează căutarea
+searchdelete: Şterge căutarea
+import: Importă
+importcontacts: Importă contacte
+importfromfile: Importă din fișier
+importtarget: Adaugă contactele la
+importreplace: Înlocuieşte întreaga agendă
+importgroups: Importă atribuirile în grup
+importgroupsall: Toate (creează grupurile dacă este necesar)
+importgroupsexisting: Doar pentru grupurile existente
+importdesc: Poți încărca contacte dintr-o agendă de adrese existentă.<br/>Momentan acceptăm importarea adreselor din formatul de date <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> sau CSV (separate prin virgulă).
+importmapdesc: Confirmă că informațiile de mapare a câmpurilor de mai jos sunt corecte înainte de a continua cu importul de date CSV (separate prin virgulă).
+done: Finalizat
+settingsfor: Setări pentru
+about: Despre
+preferences: Preferinţe
+userpreferences: Preferinţe utilizator
+editpreferences: Modifică preferinţe utilizator
+identities: Identităţi
+manageidentities: Administrează identități
+newidentity: Creează identitate nouă
+addidentity: Adaugă identitate
+editidentity: Modifică identitate
+identityencryption: Criptare
+preferhtml: Format HTML
+defaultcharset: Set implicit de caractere
+htmlmessage: Mesaj HTML
+messagepart: Parte
+digitalsig: Semnătură digitală
+dateformat: Format dată
+timeformat: Format oră
+prettydate: Dată formatată
+setdefault: Setează implicit
+autodetect: Automat
+language: Limba
+timezone: Fus orar
+pagesize: Rânduri pe pagină
+signature: Semnătură
+dstactive: Reglare ora de vară
+showinextwin: Deschide mesajul în fereastră nouă
+composeextwin: Compune mesajul în fereastră nouă
+htmleditor: Scrie mesaje HTML
+htmlonreply: la răspunsul doar către un mesaj HTML
+htmlonreplyandforward: la trimitere mai departe sau la răspuns la mesaj HTML
+htmlsignature: Semnatură HTML
+showemail: Arată adresa email alături de nume afișat
+previewpane: Previzualizare mail
+skin: Temă interfaţă
+logoutclear: Goleşte Coşul de Gunoi la deconectare
+logoutcompact: Compactează dosarul Primite la deconectare
+uisettings: Interfaţă utilizator
+serversettings: Configuraţii server
+mailboxview: Afişare căsuţă poştală
+mdnrequests: Notificări expeditor
+askuser: întreabă-mă
+autosend: trimite automat
+autosendknown: trimite confirmarea de primire către contactele mele, în rest întreabă-mă
+autosendknownignore: trimite confirmarea de primire către contactele mele, în rest ignoră
+ignorerequest: ignoră solicitare
+readwhendeleted: Marchează mesajul ca citit la ştergere
+flagfordeletion: Marchează mesajul pentru ştergere în loc de a-l şterge direct
+skipdeleted: Nu arăta mesajele şterse
+deletealways: Dacă mutarea mesajelor în Coş eşuează, șterge-le
+deletejunk: Șterge direct mesajele în Junk
+showremoteimages: Arată imaginile care nu fac parte din e-mail
+fromknownsenders: de la expeditori cunoscuţi
+always: întotdeauna
+showinlineimages: Arată imaginile ataşate sub mesaj
+autosavedraft: Salvează ciorna automat
+everynminutes: la fiecare $n minut(e)
+refreshinterval: Actualizare (verificare mesaje noi, etc.)
+never: niciodată
+immediately: imediat
+messagesdisplaying: Afişarea mesajelor
+messagescomposition: Compunerea mesajelor
+mimeparamfolding: Nume ataşamente
+2231folding: RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: RFC 2047 (Altele)
+force7bit: Foloseşte encodarea MIME pentru caracterele cu 8 biţi
+advancedoptions: Opţiuni avansate
+focusonnewmessage: Focalizare pe fereastra browser-ului la mesaje noi
+checkallfolders: Verifică toate dosarele pentru mesaje noi
+defaultfont: Font-ul implicit al mesajului HTML
+mainoptions: Opţiuni principale
+browseroptions: Opțiuni browser
+section: Secţiune
+maintenance: Mentenanţă
+newmessage: Mesaj nou
+signatureoptions: Opţiuni semnătură
+whenreplying: Când răspundeţi
+replyempty: nu cita mesajul original
+replytopposting: începeţi mesajul nou deasupra originalului
+replytoppostingnoindent: Porniți un mesaj nou deasupra citatului (fără indentare)
+replybottomposting: începeţi mesajul nou dedesubtul originalului
+replyremovesignature: Când răspundeţi, se şterge semnătura originală din mesaj
+autoaddsignature: Adăugarea automată a semnăturii
+newmessageonly: numai la mesajele noi
+replyandforwardonly: numai la răspunsuri si cele trimise mai departe
+insertsignature: Introduce o semnătură
+sigbelow: Plasați semnătura sub mesajul citat
+sigseparator: Forțează separator standard în semnături
+afternseconds: după $n secunde
+reqmdn: Cere întotdeauna o confirmare de primire
+reqdsn: Cere întotdeauna o notificare a stării de trimitere
+replysamefolder: Pune răspunsurile în folder-ul mesajului la care se răspunde
+defaultabook: Agenda implicită
+autocompletesingle: Sari peste adresele e-mail alternative la autocompletare
+listnamedisplay: Listează contactele ca
+spellcheckbeforesend: Verifică ortografia înainte de a trimite un mesaj
+spellcheckoptions: Opţiuni verificare ortografie
+spellcheckignoresyms: Ignoră cuvintele cu simboluri
+spellcheckignorenums: Ignoră cuvintele cu numere
+spellcheckignorecaps: Ignoră cuvintele din litere mari
+addtodict: Adaugă la dicţionar
+mailtoprotohandler: 'Îregistrează handler protocol pentru mailto: link-uri'
+standardwindows: Trateaza popupsurile ca ferestre standard
+forwardmode: Trimitere mai departe mesaj
+inline: într-e linii
+asattachment: ca atașament
+replyallmode: Acțiunea implicită pentru butonul [Răspunde la toți]
+replyalldefault: răspunde la toți
+replyalllist: răspunde listei (dacă este găsită)
+allmessages: toate mesajele
+olderxdays: mai vechi de $x zile
+folder: Dosar
+folders: Dosare
+foldername: Nume dosar
+subscribed: Înscris
+messagecount: Mesaje
+create: Creează
+createfolder: Creează dosar nou
+managefolders: Administrează dosare
+specialfolders: Dosare speciale
+properties: Proprietăți
+folderproperties: Proprietăţile folder-ului
+parentfolder: Dosar părinte
+location: Locație
+info: Informații
+getfoldersize: Click pentru dimensiunea dosarului
+changesubscription: Click pentru a modifica abonarea
+foldertype: Tip dosar
+personalfolder: Dosar privat
+otherfolder: Dosarul altui utilizator
+sharedfolder: Dosar public
+findfolders: Găsește dosare
+findcontacts: Găsește contacte
+findmail: Găsește mesaje
+namespace.personal: Personal
+namespace.other: Alți utilizatori
+namespace.shared: Partajat
+dualuselabel: Poate conține doar
+dualusemail: mesaje
+dualusefolder: dosare
+generate: Generează
+encryptioncreatekey: Creează cheie pereche nouă
+encryption: Criptare
+mailvelopeenable: Activat
+sortby: Sortează după
+sortasc: Sortează ascendent
+sortdesc: Sortează descendent
+undo: Anulaţi/Revocați
+installedplugins: Instalare module
+plugin: Plugin
+version: Versiune
+source: Sursă
+destination: Destinație
+license: Licență
+skinauthor: de $author
+support: Cere asistenţă
+savedsearches: Căutări salvate
+B: O
+KB: KO
+MB: MO
+GB: GO
+unicode: Unicode
+english: Englezesc
+westerneuropean: Europa de Vest
+easterneuropean: Europa de Est
+southeasterneuropean: Europa de Sud-Est
+baltic: Baltic
+cyrillic: Chirilic
+arabic: Arab
+greek: Grecesc
+hebrew: Evreiesc
+turkish: Turcesc
+nordic: Ţările Nordice
+thai: Tailandez
+celtic: Celtic
+vietnamese: Vietnamez
+japanese: Japonez
+korean: Coreean
+chinese: Chinezesc
+arialabeltopnav: Controlul ferestrelor
+arialabeltasknav: Sarcini aplicații
+arialabeltoolbar: Bară instrumente aplicații
+arialabelactivetask: Sarcină activă
+arialabelmailsearchform: Formulare căutare mesaj email
+arialabelcontactsearchform: Formular căutare contacte
+arialabelfoldersearchform: Formular căutare dosar
+arialabelmailpreviewframe: Previzualizare mesaj
+arialabelmailboxmenu: Meniu acțiuni dosar
+arialabelmessagebody: Corp mesaj
+arialabelmessageactions: Acțiuni mesaj
+arialabelcontactquicksearch: Formular căutare contacte
+arialabelmessageheaders: Antete mesaj
+arialabelforwardingoptions: Opțiuni redirecționare
+arialabelreplyalloptions: Opțiuni Răspunde la toți
+arialabelmoremessageactions: Mai multe acțiuni mesaj
+arialabelmarkmessagesas: Marchează mesajele selectate ca și...
+arialabelattachmentuploadform: Formular încărcare atașament
+arialabelattachmentmenu: Opțiuni atașament
+arialabelattachmentpreview: Previzualizare atașament
+arialabelcontactexportoptions: Opțiuni export contact
+arialabelabookgroupoptions: Opțiuni Agendă/Grup
+arialabelpreferencesform: Formular preferințe
+arialabelidentityeditfrom: Formular modificare identitate
+arialabelresponseeditfrom: Formular modificare răspuns
+arialabelsearchterms: Termenii căutării
+arialabeldropactionmenu: Meniu acțiune Drag-n-Drop
+markasflagged: ''
+markasunflagged: ''
+replied: ''
+layoutdesktopdesc: ''
+mailimportdesc: ''
+mailimportzip: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+addheader: ''
+togglecomposeoptions: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+displaynext: ''
+automarkread: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+arialabellistnav: ''
+arialabelmessagessearchfilter: ''
+arialabelmailquicksearchbox: ''
+arialabelquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmessagenav: ''
+arialabelcontactsearchbox: ''
+arialabelmorecontactactions: ''
+arialabelcomposeoptions: ''
+arialabelresponsesmenu: ''
+arialabelmailtomenu: ''
+ariasummarycomposecontacts: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

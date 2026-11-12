@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for ka_GE. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: მოგესალმებათ $product
+username: მომხმარებელი
+password: პაროლი
+server: სერვერი
+login: შესვლა
+menu: მენიუ
+logout: გამოსვლა
+mail: ელფოსტა
+settings: პარამეტრები
+addressbook: მისამართები
+inbox: მიღებული
+drafts: დროებითი
+sent: გაგზავნილი
+trash: წაშლილი
+junk: სპამი
+subject: სათაური
+from: გამგზავნი
+sender: გამგზავნელი
+to: ვის
+cc: ასლი
+bcc: ფარული
+replyto: პასუხი
+followupto: მიმდევარი
+date: თარიღი
+size: ზომა
+priority: პრიორიტეტი
+organization: ორგანიზაცია
+readstatus: წაკითხულის სტატუსი
+listoptions: სიის ოფციები...
+mailboxlist: საქაღალდეები
+messagesfromto: შეტყობინება $from-სგან $to-ს სულ $count' ცალი
+messagenrof: შეტყობინება $nr დან $count
+copy: ასლი
+move: გადატანა
+moveto: გადატანა...
+copyto: კოპირება სად...
+download: გადმოწერა
+open: გახსნა
+showattachment: ჩვენება
+filename: ფაილის სახელი
+filesize: ფაილის ზომა
+addtoaddressbook: მისამართებში დამატება
+sun: კვი
+mon: ორშ
+tue: სამ
+wed: ოთხ
+thu: ხუთ
+fri: პარ
+sat: შაბ
+sunday: კვირა
+monday: ორშაბათი
+tuesday: სამშაბათი
+wednesday: ოთხშაბათი
+thursday: ხუთშაბათი
+friday: პარასკევი
+saturday: შაბათი
+jan: იან
+feb: თებ
+mar: მარ
+apr: აპრ
+may: მაისი
+jun: ივნ
+jul: ივლ
+aug: აგვ
+sep: სექ
+oct: ოქტ
+nov: ნოე
+dec: დეკ
+longjan: იანვარი
+longfeb: თებერვალი
+longmar: მარტი
+longapr: აპრილი
+longmay: მაისი
+longjun: ივნისი
+longjul: ივლისი
+longaug: აგვისტო
+longsep: სექტემბერი
+longoct: ოქტომბერი
+longnov: ნოემბერი
+longdec: დეკემბერი
+today: დღეს
+refresh: განახლება
+checkmail: შემოწმება ახალ შეტყობინებაზე
+compose: შეტყობინების დაწერა
+writenewmessage: ახალი შეტყობინება
+reply: პასუხის გაცემა
+replytomessage: პასუხი
+replytoallmessage: პასუხი ყველას
+replyall: პასუხის გაცემა ყველას
+replylist: პასუხის გაცემა სიით
+forward: გადაგზავნა
+forwardinline: გადაგზავნა ხაზშივე
+forwardmessage: გადაგზავნა
+bounce: თავიდან გაგზავნა
+deletemessage: წაშლა
+movemessagetotrash: შეტყობინების წაშლილებში გადატანა
+printmessage: შეტყობინების ამობეჭვდა
+previousmessage: წინა შეტყობინების ნახვა
+firstmessage: პირველი შეტყობინების ნახვა
+nextmessage: შემდეგი შეტყობინების ნახვა
+lastmessage: ბოლო შეტყობინების ნახვა
+backtolist: უკან ჩამონათვალში
+viewsource: შიგთავსი
+mark: მონიშვნა
+markmessages: მონიშნეთ შეტყობინებები
+markread: როგორც წაკითხული
+markunread: როგორც წაუკითხავი
+markflagged: როგორც მონიშნული
+markunflagged: როგორც მოუნიშნავი
+moreactions: მეტი მოქმედება...
+folders-all: ყველა საქაღალდე
+more: მეტი
+back: უკან
+options: მორგება
+actions: ქმედებები
+first: პირველი
+last: ბოლო
+previous: წინა
+next: შემდეგი
+select: მონიშვნა
+selection: მონიშნული
+all: ყველა
+none: არცერთი
+currpage: მიმდინარე გვერდი
+isread: წაკითხვა
+unread: წაუკითხავი
+flagged: მონიშნული
+unflagged: მოუნიშნავი
+unanswered: უპასუხო
+withattachment: მიმაგრებული ფაილით
+deleted: წაშლილი
+undeleted: წაუშლელი
+replied: პასუხგაცემული
+forwarded: გადაგზავნილი
+invert: შებრუნებული
+filter: ფილტრი
+list: სია
+threads: ნაკადები
+expand-all: ყველას გაშლა
+expand-unread: წაუკითხავის გაშლა
+collapse-all: ყველას დაკეცვა
+threaded: ნაკადებით
+do_expand: ყველა ნაკადი
+expand_only_unread: მარტო წაუკითხავი შეტყობინებები
+fromto: ვისგან/ვის
+flag: დროშა
+attachment: მიმაგრებული ფაილი
+nonesort: არცერთი
+sentdate: გაგზავნის თარიღი
+arrival: მოსვლის თარიღი
+asc: ზრდადობით
+desc: კლებადობით
+listcolumns: სვეტების სია
+listsorting: სვეტების დალაგება
+listorder: დალაგება
+layout: განლაგება
+layoutwidescreen: ფართო ეკრანი
+layoutdesktop: სამუშაო მაგიდა
+layoutlist: სია
+folderactions: საქაღალდეზე მოქმედება..
+compact: შეკუმშვა
+empty: გაცარიელება
+importmessages: შეტყობინებების შემოტანა
+quota: შეზღუდვა
+unknown: უცნობი
+unlimited: შეუზღუდავი
+quotatype: კვოტის ტიპი
+quotatotal: ლიმიტი
+quotaused: გამოყენებული
+quotastorage: ადგილი დისკზე
+quotamessage: შეტყობინებების რაოდენობა
+quicksearch: სწრაფი ძიება
+searchplaceholder: ძებნა...
+resetsearch: ძიების გასუფთავება
+searchmod: ძებნის ვარიანტები
+msgtext: ყველა შეტყობინება
+body: შეტყობინების ტექსტი
+type: ტიპი
+namex: სახელი
+searchscope: შუალედი
+currentfolder: მიმდინარე საქაღალდე
+subfolders: ეს და ქვესაქაღალდეები
+allfolders: ყველა საქაღალდე
+searchinterval-1W: ერთ კვირაზე ძველი
+searchinterval-1M: ერთ წელზე ძველი
+searchinterval-1Y: ერთ თვეზე ძველი
+searchinterval1W: ერთ კვირაზე ახალი
+searchinterval1M: ერთ თვეზე ახალი
+searchinterval1Y: ერთ წელზე ახალი
+openinextwin: გახსნა ახალ ფანჯარაში
+emlsave: გადმოწერა (.eml)
+editasnew: რედაქტირება როგორც ახლის
+send: გაგზავნა
+sendmessage: შეტყობინების გაგზავნა
+savemessage: დროებით შენახვა
+addattachment: ფაილის ატვირთვა
+charset: კოდირება
+editortype: რედაქტორი
+returnreceipt: პასუხის მოთხოვნა
+mailreplyintro: '$date-ში, $sender დაწერა:'
+originalmessage: ორიგინალი შეტყობინება
+selectimage: სურათის არჩევა
+addimage: სურათის დამატება
+selectmedia: ფილმის არჩევა
+addmedia: ფილმის დამატება
+encrypt: დაშიფვრა
+keylength: ბიტი
+keyexpired: ვადაგასული
+keyrevoked: გაუქმებულია
+insert: ჩასმა
+recipient: მიმღები
+editidents: იდენტიფიკატორების ჩასწორება
+spellcheck: გრამატიკა
+checkspelling: ორთოგრაფიული შემოწმება
+resumeediting: რედაქტირების გაგრძელება
+revertto: გაუქმება
+restore: აღდგენა
+restoremessage: აღვადგინო შეტყობინება?
+ignore: იგნორირება
+responses: პასუხები
+insertresponse: პასუხის ჩასმა
+manageresponses: პასუხების მართვა
+newresponse: ახალი პასუხის შექმნა
+addresponse: პასუხის დამატება
+editresponse: პასუხის რედაქტირება
+editresponses: პასუხების რედაქტირება
+responsename: სახელი
+responsetext: პასუხის ტექსტი
+attach: მიბმა
+attachments: გზავნილები
+upload: ატვირთვა
+close: დახურვა
+messageoptions: შეტყობინების ოფციები...
+low: დაბალი
+lowest: უდაბლესი
+normal: საშუალო
+high: მაღალი
+highest: უმაღლესი
+nosubject: (უსათაურო)
+showimages: გამოსახულების ჩვენება
+allow: დაშვება
+alwaysshow: ყოველთვის გამოაჩინე სურათები $sender –გან
+andnmore: კიდევ $nr...
+details: დეტალები
+summary: შეჯამება
+headers: თავსართები
+htmltoggle: HTML
+plaintoggle: ტექსტური
+savesentmessagein: შეინახე შეტყობინება
+dontsave: არ შეინახო
+maxuploadsize: მაქსიმალური დაშვებული ფაილის ზომა $size
+addcc: დაამატე კოპიო
+addbcc: დაამატე ფარული კოპიო
+addreplyto: დაამატე გამომგზავნი
+addfollowupto: მიყოლის დამატება
+mdnrequest: გამომგზავნს სურს შეიტყოს წერილის მიღება. გსურთ შეატყობინოთ გამომგზავნს?
+receiptread: გზავნილის დაბრუნება
+yourmessage: ეს არის მიღების დასტური თქვენს შეტყობინებაზე
+receiptnote: 'განმარტება: ეს ნიშნავს რომ ადრესატმა მიიღო შეტყობინება. მაგრამ, არ ნიშნავს რომ წაიკითხა ან გაიგო ტექსტი'
+rotate: შებრუნება
+name: სრული სახელი
+firstname: სახელი
+surname: გვარი
+middlename: შუა სახელი
+nameprefix: პრეფიქსი
+namesuffix: სუფიქსი
+nickname: მეტსახელი
+jobtitle: თანამდებობა
+department: დეპარტამენტი
+gender: სქესი
+maidenname: ქალიშვილობის სახელი
+email: ელ–ფოსტა
+phone: ტელეფონი
+address: მისამართი
+street: ქუჩა
+locality: ქალაქი
+zipcode: ZIP კოდი
+region: შტატი/პროვინცია
+country: ქვეყანა
+birthday: დაბადების დღე
+anniversary: იუბილე
+website: ვებგვერდი
+instantmessenger: IM
+notes: შენიშვნები
+male: მამრობითი
+female: მდედრობით
+nonbinary: არა-ბინარული
+othergender: სხვა
+manager: მენეჯერი
+assistant: დამხმარე
+spouse: მეუღლე
+allfields: ყველა ველი
+search: ძებნა
+searchresult: ძებნის რეზულტატი
+advsearch: გაფართოებული ძებნა
+advanced: დამატებითი
+other: სხვა
+typehome: სახლი
+typework: სამსახური
+typeother: სხვა
+typemobile: მობილური
+typemain: ძირითადი
+typehomefax: სახლის ფაქსი
+typeworkfax: სამსახურის ფაქსი
+typecar: მანქანა
+typepager: პეიჯერი
+typevideo: ვიდეო
+typeassistant: დამხმარე
+typehomepage: საწყისი გვერდი
+typeblog: ბლოგი
+typeprofile: პროფილი
+addfield: ველის დამატება...
+addcontact: კონტაქტის დამატება
+editcontact: კონტაქტის რედაქტირება
+contacts: კონტაქტები
+contactproperties: კონტაქტის თვისებები
+contactnameandorg: სახელი და ორგანიზაცია
+personalinfo: პირადი ინფორმაცია
+personal: პირადი
+contactphoto: კონტაქტის ფოტო
+edit: რედაქტირება
+cancel: გაუქმება
+save: შენახვა
+delete: წაშლა
+discard: მოცილება
+continue: გაგრძელება
+ok: დიახ
+rename: გადარქმევა
+addphoto: დამატება
+replacephoto: გამოცვლა
+uploadphoto: სურათის ატვირთვა
+browse: დათვალიერება
+deletecontact: მონიშნელი კონტაქტის წაშლა
+composeto: ფოსტის გაგზავნა შერჩეულ ადრესატებთან
+contactsfromto: კონტაქტები $from დან $to ში $count
+print: დაბეჭვდა
+export: ექსპორტი
+exportall: ყველას გატანა
+exportsel: მონიშნულების გატანა
+exportvcards: კონტაქტების ექსპორტი vCard ფორმატში
+grouprename: ჯგუფის სახელის შეცვლა
+groupdelete: ჯგუფის წაშლა
+previouspage: წინას ჩვენება
+firstpage: პირველის ჩვენება
+nextpage: შემდეგის ჩვენება
+lastpage: ბოლოს ჩვენება
+group: ჯგუფი
+groups: ჯგუფები
+personaladrbook: პერსონალური მისამართები
+searchsave: ძებნის შენახვა
+searchdelete: ძებნის წაშლა
+import: შემოტანა
+importcontacts: კონტაქტების შემოტანა
+importreplace: ჩაანაცვლეთ არსებული მისამართები
+done: დასრულებულია
+settingsfor: პარამეტრები
+about: შესახებ
+preferences: პარამეტრები
+userpreferences: მომხმარებლის პარამეტრები
+editpreferences: მომხმარებლის პარამეტრების რედაქტირება
+identities: პროფილები
+manageidentities: იდენტიფიკატორების მართვა
+addidentity: იდენტიფიკატორის დამატება
+editidentity: იდენტიფიკატორის ჩასწორება
+identityencryption: დაშიფვრა
+preferhtml: როგორც HTML
+defaultcharset: ნაგულისხმები სიმბოლოთა ნაკრები
+htmlmessage: HTML შეტყობინება
+messagepart: ნაწილი
+digitalsig: ციფრული ხელმოწერა
+dateformat: თარიღის ფორმატი
+timeformat: დროის ფორმატი
+prettydate: კარგი თარიღები
+setdefault: როგორც ზოგაგად
+autodetect: ავტომატური
+language: ენა
+timezone: დროითი ზონა
+pagesize: სტრიქონი გვერდზე
+signature: ხელმოწერა
+dstactive: დროის გადაყვანა
+htmleditor: შეტყობინების შექმნა HTML –ში
+htmlsignature: HTML ხელმოწერა
+previewpane: ჩვენება
+skin: ინტერფეისი
+logoutclear: წაშლილების გასუფთავება გამოსვლისას
+logoutcompact: მიღებულების შეკუმშვა გამოსვლისას
+uisettings: მომხმარებლის ინტერფეისი
+serversettings: სერვერის პარამეტრები
+mailboxview: საფოსტო ყუთის ჩვენება
+mdnrequests: მგზავნელის შეტყობინებები
+askuser: ჰკითხე მომხმარებელს
+autosend: გაგზავნე ავტომატურად
+readwhendeleted: მონიშნე გზავნილი წაკითხულად წაშლის დროს
+flagfordeletion: აღნიშნეთ გზავნილები როგორც წასაშლელი წაშლის ნაცვლად
+skipdeleted: არ გამოაჩინო წაშლილი გზავნილები
+showremoteimages: გამოაჩინე მოშორებული სურათები
+fromknownsenders: ნაცნობი მგზავნელებისგან
+always: ყოველთვის
+showinlineimages: ატვირთული სურათები გამოაჩინე გზავნილის ქვემოთ
+autosavedraft: ავტომატური შენახვა
+everynminutes: ყოველ $n წუთში
+never: არასდროს
+immediately: დაუყონებლივ
+messagesdisplaying: გამოაჩინე შეტყობინებები
+messagescomposition: შეტყობინებების შექმნა
+mimeparamfolding: ბმულის სახელები
+2231folding: Full RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Full RFC 2047 (other)
+force7bit: MIME კოდირების გამოყენება 8 ბიტიანი სიმბოლოებისთვის
+advancedoptions: დამატებითი პარამეტრები
+focusonnewmessage: ფოკუსირება ახალ შეტყობინებებზე
+checkallfolders: შეამოწმე ყველა საქაღალდე ახალ შეტყობინებაზე
+mainoptions: ძირითადი პარამეტრები
+browseroptions: ბრაუზერის პარამეტრები
+section: განყოფილება
+maintenance: მომსახურება
+newmessage: ახალი შეტყობინება
+signatureoptions: ხელმოწერის ოფციები
+whenreplying: პასუხის შემთხვევაში
+replytopposting: დაიწყოს ახალი შეტყობინება ორიგინალის ზემოთ
+replybottomposting: დაიწყოს ახალი შეტყობინება ორიგინალის ქვემოთ
+replyremovesignature: წაიშალოს ხელმოწერა პასუხის შემთხვევაში
+autoaddsignature: ავტომატურად დაემატოს ხელმოწერა
+newmessageonly: მხოლოდ ახალი შეტყობინება
+replyandforwardonly: მხოლოდ გადაგზავნის და პასუხის შემთხვევაში
+insertsignature: ხელმოცერის ჩასმა
+afternseconds: $n წამის შემდეგ
+spellcheckoptions: მართლწერის მორგება
+addtodict: ლექსიკონში დამატება
+forwardmode: შეტყობინებების გადაგზავნა
+inline: ხაზშივე
+asattachment: მიმაგრებული ფაილის სახით
+allmessages: ყველა შეტყობინება
+folder: საქაღალდე
+folders: საქაღალდეები
+foldername: საქაღალდის დასახელება
+subscribed: გამოწერილია
+messagecount: შეტყობინებები
+create: შექმნა
+createfolder: საქაღალდის შექმნა
+managefolders: საქაღალდეების მართვა
+specialfolders: სპეციალური საქაღალდე
+properties: თვისებები
+folderproperties: საქაღალდის თვისებები
+parentfolder: მშობელი საქაღალდე
+location: მდებარეობა
+info: ინფორმაცია
+foldertype: დასტის ტიპი
+personalfolder: კერძო დასტა
+sharedfolder: საჯარო დასტა
+findfolders: საქაღალდეების პოვნა
+namespace.personal: პირადი
+namespace.shared: გაზიარებული
+dualusemail: სეტყობინება
+dualusefolder: ქაღალდე
+generate: გენერაცია
+encryption: დაშიფვრა
+mailvelopeenable: ჩართვა
+sortby: დალაგება
+sortasc: დალაგება ზრდადობით
+sortdesc: დალაგება კლებადობით
+undo: დაბრუნება
+installedplugins: დაყენებული მოდულები
+plugin: მოდული
+version: ვერსია
+source: წყარო
+destination: სამიზნე
+license: ლიცენზია
+support: მხარდაჭერის მიღება
+dateformatY: წწწწ
+dateformaty: წწ
+dateformatm: თთ
+dateformatd: დდ
+dateformatj: დ
+dateformatn: თ
+B: ბტ
+KB: კბტ
+MB: მბტ
+GB: გბტ
+unicode: უნიკოდი
+english: ინსგლისური
+westerneuropean: დასავლურევროპული
+easterneuropean: აღმოსავლეთევროპული
+southeasterneuropean: სამხრეთაღმოსავლეთევროპული
+baltic: ბალტიური
+cyrillic: კირილიცა
+arabic: არაბული
+greek: ბერძნული
+hebrew: ებრაული
+turkish: თურქული
+nordic: სკანდინავიელი
+thai: ტაი
+celtic: კელტური
+vietnamese: ვიეტნამური
+japanese: იაპონური
+korean: კორეული
+chinese: ჩინური
+arialabeltopnav: ფანჯრის მართვა
+arialabeltasknav: აპლიკაციის ამოცანები
+arialabeltoolbar: აპლიკაციის პანელი
+arialabelactivetask: აქტიური ამოცანა
+arialabelquicksearchbox: ძებნის ველი
+arialabelmailpreviewframe: შეტყობინების მინიატურა
+arialabelmessagenav: შეტყობინების ნავიგაცია
+arialabelmessagebody: შეტყობინების სხეული
+arialabelmessageactions: შეტყობინების ქმედებები
+arialabelmessageheaders: შეტყობინების თავსართები
+arialabelforwardingoptions: გადაგზავნის მორგება
+arialabelreplyalloptions: ყველასთვის პასუხის მორგება
+arialabelcomposeoptions: შედგენის პარამეტრები
+arialabelattachmentpreview: მიმაგრებული ფაილის მინიატურა
+arialabelabookgroupoptions: მისამართების წიგნის/ჯგუფის პარამეტრები
+arialabelpreferencesform: მორგების ფანჯრის ფორმა
+oauthlogin: ''
+darkmode: ''
+lightmode: ''
+show_real_foldernames: ''
+listoptionstitle: ''
+threadsfromto: ''
+fromtoshort: ''
+showanyway: ''
+forwardattachment: ''
+bouncemsg: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+markallread: ''
+folders-cur: ''
+folders-sub: ''
+composeoptions: ''
+optionsandattachments: ''
+showunread: ''
+autoexpand_threads: ''
+listmode: ''
+lmode: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+mailimportdesc: ''
+mailimportzip: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+changeformattext: ''
+changeformathtml: ''
+dsn: ''
+keepformatting: ''
+encryptmessage: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+encryptandsign: ''
+keyid: ''
+bccinstead: ''
+addheader: ''
+insertcontact: ''
+recipientedit: ''
+uploadprogress: ''
+togglecomposeoptions: ''
+attachmentrename: ''
+alwaysallow: ''
+isdraft: ''
+allheaders: ''
+togglemoreheaders: ''
+togglefullheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+printcontact: ''
+qrcode: ''
+choosefile: ''
+choosefiles: ''
+newcontact: ''
+newgroup: ''
+addgroup: ''
+groupassign: ''
+groupremove: ''
+groupremoveselected: ''
+uponelevel: ''
+listgroup: ''
+importfromfile: ''
+importtarget: ''
+importgroups: ''
+importgroupsall: ''
+importgroupsexisting: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+newidentity: ''
+showinextwin: ''
+composeextwin: ''
+htmlonreply: ''
+htmlonreplyandforward: ''
+showemail: ''
+autosendknown: ''
+autosendknownignore: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+ignorerequest: ''
+deletealways: ''
+deletejunk: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+refreshinterval: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+displaynext: ''
+defaultfont: ''
+replyempty: ''
+replytoppostingnoindent: ''
+sigbelow: ''
+sigseparator: ''
+automarkread: ''
+reqmdn: ''
+reqdsn: ''
+alwayskeepformatting: ''
+replysamefolder: ''
+defaultabook: ''
+autocompletesingle: ''
+listnamedisplay: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+spellcheckbeforesend: ''
+spellcheckignoresyms: ''
+spellcheckignorenums: ''
+spellcheckignorecaps: ''
+editoroptions: ''
+enableautolink: ''
+mailtoprotohandler: ''
+standardwindows: ''
+replyallmode: ''
+replyalldefault: ''
+replyalllist: ''
+olderxdays: ''
+getfoldersize: ''
+changesubscription: ''
+otherfolder: ''
+findcontacts: ''
+findmail: ''
+namespace.other: ''
+dualuselabel: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+skinauthor: ''
+savedsearches: ''
+arialabellistnav: ''
+arialabelmessagessearchfilter: ''
+arialabelmailsearchform: ''
+arialabelcontactsearchform: ''
+arialabelmailquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfoldersearchform: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelcontactquicksearch: ''
+arialabelcontactsearchbox: ''
+arialabelmoremessageactions: ''
+arialabelmorecontactactions: ''
+arialabelmarkmessagesas: ''
+arialabelresponsesmenu: ''
+arialabelattachmentuploadform: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabelidentityeditfrom: ''
+arialabelresponseeditfrom: ''
+arialabelsearchterms: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

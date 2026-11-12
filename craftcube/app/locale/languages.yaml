@@ -1,0 +1,150 @@
+# CraftCube language index (successor of the reference index.inc):
+# names = code -> display name, aliases = common alias -> canonical code.
+aliases:
+  am: hy_AM
+  az: az_AZ
+  bg: bg_BG
+  bs: bs_BA
+  ca: ca_ES
+  cn: zh_CN
+  cs: cs_CZ
+  cy: cy_GB
+  cz: cs_CZ
+  da: da_DK
+  de: de_DE
+  ee: et_EE
+  el: el_GR
+  en: en_US
+  es: es_ES
+  et: et_EE
+  eu: eu_ES
+  fa: fa_IR
+  ga: ga_IE
+  ge: ka_GE
+  gl: gl_ES
+  he: he_IL
+  hi: hi_IN
+  hr: hr_HR
+  hy: hy_AM
+  ja: ja_JP
+  ka: ka_GE
+  kh: km_KH
+  kh_KH: km_KH
+  km: km_KH
+  kn: kn_IN
+  ko: ko_KR
+  kr: ko_KR
+  lb: lb_LU
+  ml: ml_IN
+  ml_ML: ml_IN
+  mn: mn_MN
+  mr: mr_IN
+  ms: ms_MY
+  ne: ne_NP
+  no: nn_NO
+  pl: pl_PL
+  se: sv_SE
+  si: si_LK
+  sl: sl_SI
+  sq: sq_AL
+  sr: sr_CS
+  sr_cyrillic: sr_CS
+  sr_latin: bs_BA
+  sv: sv_SE
+  tr: tr_TR
+  tw: zh_TW
+  uk: uk_UA
+  vi: vi_VN
+  vn: vi_VN
+  zh: zh_CN
+  zh_HK: zh_TW
+  zh_MO: zh_TW
+names:
+  ar: Arabic (العربية)
+  ar_SA: Arabic (Saudi Arabia)
+  ast: Asturiana (Asturianu)
+  az_AZ: Azerbaijani (Azərbaycanca)
+  be_BE: Belarusian (беларуская мова)
+  ber: Berber (Tamaziʓt)
+  bg_BG: Bulgarian (Български)
+  bn_BD: Bengali (বাংলা)
+  br: Breton (Brezhoneg)
+  bs_BA: Bosnian (Bosanski)
+  ca_ES: Catalan (Català)
+  cs_CZ: Czech (Česky)
+  cy_GB: Welsh (Cymraeg)
+  da_DK: Danish (Dansk)
+  de_CH: German (Schweiz)
+  de_DE: German (Deutsch)
+  el_GR: Greek (Ελληνικά)
+  en_CA: English (Canada)
+  en_GB: English (GB)
+  en_US: English (US)
+  eo: Esperanto
+  es_419: Spanish (Latin America)
+  es_AR: Spanish (Argentina)
+  es_ES: Spanish (Español)
+  et_EE: Estonian (Eesti)
+  eu_ES: Basque (Euskara)
+  fa_AF: Dari (ﻯﺭﺩ)
+  fa_IR: Persian (فارسی)
+  fi_FI: Finnish (Suomi)
+  fo_FO: Faroese (Føroyskt)
+  fr_FR: French (Français)
+  fy_NL: West Frisian (Frysk)
+  ga_IE: Irish (Gaedhilge)
+  gl_ES: Galician (Galego)
+  he_IL: Hebrew (עברית)
+  hi_IN: Hindi (हिनदी)
+  hr_HR: Croatian (Hrvatski)
+  hu_HU: Hungarian (Magyar)
+  hy_AM: Armenian (Հայերեն)
+  ia: Interlingua
+  id_ID: Indonesian (Bahasa Indonesia)
+  is_IS: Icelandic (Íslenska)
+  it_IT: Italian (Italiano)
+  ja_JP: Japanese (日本語)
+  ka_GE: Georgian (ქართული)
+  kab: Kabyle (Taqbaylit)
+  km_KH: Khmer (ភាសាខ្មែរ)
+  kn_IN: Konkani (कोंकणी)
+  ko_KR: Korean (한국어)
+  ku: Kurdish (Kurmancî)
+  ku_IQ: Kurdish (Iraq)
+  lb_LU: Luxembourgish (Lëtzebuergesch)
+  lt_LT: Lithuanian (Lietuviškai)
+  lv_LV: Latvian (Latviešu)
+  mk_MK: Macedonian (Македонски)
+  ml_IN: Malayalam (മലയാളം)
+  mn_MN: Mongolic (Монгол)
+  mr_IN: Marathi (मराठी)
+  ms_MY: Malay (Bahasa Melayu)
+  nb_NO: Norwegian (Bokmål)
+  ne_NP: Nepali (नेपाली)
+  nl_BE: Flemish (Vlaams)
+  nl_NL: Dutch (Nederlands)
+  nn_NO: Norwegian (Nynorsk)
+  pl_PL: Polish (Polski)
+  ps: Pashto
+  pt_BR: Portuguese (Brasil)
+  pt_PT: Portuguese (Português)
+  ro_RO: Romanian (Româneşte)
+  ru_RU: Russian (Русский)
+  si_LK: Sinhalese (සිංහල)
+  sk_SK: Slovak (Slovenčina)
+  sl_SI: Slovenian (Slovenščina)
+  sq_AL: Albanian (Shqip)
+  sr_CS: Serbian (Српски)
+  sv_SE: Swedish (Svenska)
+  ta_IN: Tamil (தமிழ்)
+  th_TH: Thai (ไทย)
+  ti: Tigrinya (ትግርኛ)
+  tr_TR: Turkish (Türkçe)
+  tzl: Talossan
+  ug: Uyghur (ئۇيغۇر)
+  uk_UA: Ukrainian (Українська)
+  ur_PK: Urdu (اُردو)
+  uz: Uzbek (Oʻzbekcha)
+  vi_VN: Vietnamese (Tiếng Việt)
+  zh_CN: Chinese (简体中文)
+  zh_TW: Chinese (正體中文)

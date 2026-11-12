@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for br. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Degouezhet ez eus bet ur fazi !
+loginfailed: Kennaskañ c'hwitet
+cookiesdisabled: Nac'h a ra ho merdeer an toupinoù
+sessionerror: Didalvoudek pe echuet eo hoc'h estez.
+storageerror: C'hwitadenn war kennaskañ ouzh an dafariad mirout
+servererror: Fazi dafariad !
+servererrormsg: 'Fazi dafariad : $msg'
+accountlocked: Re a glaskoù kennaskañ c'hwitet. Klaskot en-dro diwezhatoc'h.
+connerror: Fazi kennaskañ (N'haller ket tizhout an dafariad)!
+dberror: Fazi stlennvon!
+windowopenerror: Stanket eo bet ar prenestr diflugell!
+requesttimedout: Diamzeret he deus an azgoulenn
+errorreadonly: N'haller ket seveniñ ar gwezhiadur. E mod lenn nemetken eo an teuliad.
+errornoperm: N'haller ket seveniñ ar gwezhiadur. Aotre nac'het.
+erroroverquota: N'haller ket seveniñ ar gwezhiadur. Egor dieub ebet er gantenn.
+erroroverquotadelete: Egor dieub ebet er gantenn. Grit Pennlizh.+Dilemel evit dilemel ur gemennadenn.
+invalidrequest: Azgoulenn didalvoudek! N'ez eus bet enrollet roadenn ebet.
+invalidhost: Anv dafariad didalvoudek
+nomessagesfound: Kemennadenn ebet er voest lizhiri
+mailboxempty: Goulo eo ar voest lizhiri
+nomessages: Kemennadenn ebet
+refreshing: Oc'h azgrenaat...
+loading: O kargañ...
+uploading: O pellgas ar restr...
+attaching: O stagañ ar restr...
+uploadingmany: O pellgas ar restroù...
+loadingdata: O kargañ roadennoù...
+checkingmail: O wiriañ kemennadoù nevez...
+sendingmessage: O kas ar gemennadenn...
+messagesent: Kaset eo mat ho kemennadenn
+savingmessage: Oc'h enrollañ ar gemennadenn...
+messagesaved: Kemennadenn enrollet er brouilhedoù
+successfullysaved: Enrollet gant berzh.
+savingresponse: Oc'h enrollañ testenn ar respont...
+deleteresponseconfirm: Fellout a ra deoc'h dilemel testenn ar respont-mañ?
+addedsuccessfully: Darempred ouzhpennet er c'harned chomlec'hioù
+contactexists: Un darempred gant an hevelep chomlec'h postel a zo endeo
+contactnameexists: Un darempred gant an hevelep anv a zo endeo
+blockedimages: Evit gwareziñ ho puhez prevez eo bet stanket skeudennoù a-bell er gemennadenn-se.
+encryptedmessage: Enrineget eo ar gemennadenn ha ne c'hall ket bezañ skrammet. Digarezit!
+externalmessagedecryption: Ur gemennadenn enrineget an hini eo ha gallout a ra bezañ ezrineget gant ho askouezh merdeer.
+nopubkeyfor: N'ez eus bet kavet alc'hwez foran ebet evit $email
+nopubkeyforsender: N'ez eus bet kavet alc'hwez foran talvoudek ebet evit pivelezh ho kaser. Fellout a ra deoc'h enrinegañ ar gemennadenn evit an degemererien hepken?
+encryptnoattachments: Ar c'henstagadurioù pellgaset endeo n'hallont ket bezañ enrineget. Ouzhpennit anezho en-dro en embanner enrinegañ.
+searchpubkeyservers: Fellout a ra deoc'h klask war lec'h an alc'hwezioù a vank en dafariadoù alc'hwezioù foran?
+encryptpubkeysfound: "N'eo ket bet kavet an alc'hwezioù foran da-heul:"
+nocontactsfound: N'eo ket bet kavet darempred ebet
+contactnotfound: N'eo ket bet kavet an darempred goulennet
+sendingfailed: C'hwitadenn en ur gas ar gemennadenn
+senttooquickly: Gortozit $sec eilenn a-raok kas ar gemennadenn-mañ.
+errorsavingsent: Ur fazi a zo c'hoarvezet en ur enrollañ ar gemennadenn kaset.
+errorsaving: Ur fazi a zo c'hoarvezet en ur enrollañ.
+errormoving: N'haller ket dilec'hiañ ar g(c'h)emennadenn(où)
+errorcopying: N'haller ket eilañ ar g(c'h)emennadenn(où)
+errordeleting: N'haller ket dilemel ar g(c'h)emennadenn(où)
+errormarking: N'haller ket merkañ ar g(c'h)emennadenn(où)
+deletecontactconfirm: C'hoant hoc'h eus da zilemel an darempred(où) diuzet?
+deletegroupconfirm: Fellout a ra deoc'h dilemel ar strollad diuzet?
+deletemessagesconfirm: C'hoant hoc'h eus da zilemel ar g(c'h)emennadenn(où) diuzet ?
+deletefolderconfirm: C'hoant hoc'h eus da skarzhañ an teuliad-se ?
+purgefolderconfirm: C'hoant hoc'h eus da skarzhañ an holl gemennadennoù eus an teuliad-se ?
+contactdeleting: O lemel darempredoù kuit...
+groupdeleting: O lemel ar strollad kuit...
+folderdeleting: O lemel an teuliad kuit...
+foldermoving: O tilec'hiañ an teuliad...
+foldersubscribing: O koumanantiñ an teuliad...
+folderunsubscribing: O tigoumanantiñ an teuliad...
+formincomplete: N'eo ket leuniet ar furmskrid penn-da-benn
+noemailwarning: Termenit ur postel elektronek mat mar plij ganeoc'h
+nonamewarning: Termenit un anv mar plij ganeoc'h
+nopagesizewarning: Termenit ur ment pajenn mar plij ganeoc'h
+nosenderwarning: Enankit chomlec'h postel ar c'haser.
+norecipientwarning: Ouzhpennit ur resever da nebeutañ mar plij ganeoc'h
+nosubjectwarning: Dileun eo ar maezienn « Sujed » . C'hoant hoc'h eus da leuniañ anezhiñ diouzhtu ?
+nobodywarning: Kas ar c'hemennad hep testenn ?
+restoresavedcomposedata: "Kavet ez eus bet ur gemennadenn skrivet ha n'eo ket bet kaset.\\n\\nDanvez: $subject\\nEnrollet: $date\\n\\nFellout a ra deoc'h assav ar gemennadenn-mañ?"
+nosearchname: Skrivit un anv darempred pe ur postel elektronek
+notuploadedwarning: N'eo ket bet pellgaset an holl genstagadennoù c'hoazh. Gortozit pe nullit ar pellgas.
+searchsuccessful: $nr kemennad kavet
+contactsearchsuccessful: Kavet ez eus bet $nr a zarempredoù.
+searchnomatch: Disoc'h ebet gant ar glask
+searching: O klask...
+checking: O gwiriañ...
+stillsearching: O klask c'hoazh...
+nospellerrors: Fazi ebet kavet
+folderdeleted: Renkell skarzhet
+foldersubscribed: Koumanantet an teuliad gant berzh.
+folderunsubscribed: Digoumanantet an teuliad gant berzh.
+deletedsuccessfully: Dilemet mat
+converting: O tilemel furmaozañ...
+messageopenerror: N'us ket tu da gargañ ar c'hemennad adalek ar servijer
+filelinkerror: C'hwitadenn war stagadenn ar restr.
+fileuploaderror: Fazi o treuzkas ar restr
+filesizeerror: Re vras eo ar restr treuzkaset $size
+copysuccess: Eilet $nr a zarempredù gant berzh.
+movesuccess: Dilec'hiet $nr a zarempredoù gant berzh.
+copyerror: N'haller eilañ darempred ebet.
+moveerror: N'haller dilec'hiañ darempred ebet.
+sourceisreadonly: Lenn hepken eo an tarzh chomlec'h se
+errorsavingcontact: Ne c'haller ket gwarediñ chomlec'h darempred
+movingmessage: O tilec'hiañ kemennadennoù...
+copyingmessage: Oc'h eilañ kemennadennoù...
+copyingcontact: Oc'h eilañ darempredoù...
+movingcontact: O fiñval an darempred(où)
+deletingmessage: O tilemel kemennadennoù...
+markingmessage: O verkañ darempredoù...
+addingmember: Oc'h ouzhpennañ darempredoù d'ar strollad...
+removingmember: O tilemel darempredoù eus ar strollad...
+receiptsent: Kaset eo bet un testeni degemer gant berzh.
+errorsendingreceipt: N'haller ket kas an testeni degemer.
+deleteidentityconfirm: Fellout a ra deoc'h dilemel ar pivelezh-mañ?
+nodeletelastidentity: N'hallit ket dilemel ar pivelezh-mañ, ho hini diwezhañ eo.
+forbiddencharacter: Un arouezenn difennet a zo e anv an teuliad.
+selectimportfile: Dibabit ur restr da bellgas.
+addresswriterror: Ar c'harned chomlec'h diuzet n'haller ket skrivañ warnañ.
+contactaddedtogroup: Ouzhpennet eo bet an darempredoù er strollad gant berzh.
+contactremovedfromgroup: Dilamet eo bet an darempredoù eus ar strollad gant berzh.
+nogroupassignmentschanged: N'eo bet kemmet deverkadur strollad ebet.
+importwait: Oc'h enporzhiañ, gortozit...
+importformaterror: C'hwitadenn war an enporzhiañ! N'eo ket ur restr roadennoù enporzhiañ talvoudek an hini a zo bet pellgaset.
+importconfirm: <b>Enporzhiet eo bet $inserted a zarempredoù gant berzh</b>
+importmessagesuccess: Enporzhiet $nr a gemennadennoù gant berzh
+importmessageerror: C'hwitadenn war an enporzhiañ! Ar restr pellgaset n'eo ket ur restr kemennadenn talvoudek peur restr boest lizhiri
+opnotpermitted: N'eo ket aotreet ar gwezhiadur!
+nofromaddress: Mankout a ra ar chomlec'h postel er pivelezh dibabet.
+editorwarning: Kemmañ embanner a c'hell sevel kudennoù e mentrezhañ an destenn. Fellout a ra deoc'h kenderc'hel?
+httpreceivedencrypterror: "Ur fazi kefluniadur lazhus a zo c'hoarvezet. Kit e darempred gant ho merour war eeun. <b>N'haller ket kas ho postel</b> "
+smtpconnerror: "Fazi SMTP ($code): c'hwitadenn en ur gennaskañ d'an dafariad."
+smtpautherror: "Fazi SMTP ($code): c'hwitadenn war an naoudi."
+smtpfromerror: "Fazi SMTP ($code): C'hwitadenn evit lakaat ar c'haser \"$from\" ($msg)."
+smtptoerror: "Fazi SMTP ($code): C'hwitadenn war ouzhpennadenn an degemerer \"$to\" ($msg)"
+smtprecipientserror: "Fazi SMTP: N'haller ket dezrannañ roll an degemererien"
+smtperror: 'Fazi SMTP: $msg'
+emailformaterror: "Chomlec'h postel didalvoudek: $email"
+toomanyrecipients: Re a zegemererien. Digreskit an niver a zegemererien da $max.
+maxgroupmembersreached: An niver a izili er strollad a zo ouzhpenn ar c'hementad aotreet $max.
+internalerror: Ur fazi diabarzh a zo c'hoarvezet. Klaskit en-dro.
+contactdelerror: N'eus ket bet gellet dilemel an darempred(où)
+contactdeleted: Dilamet eo bet an darempred(où) gant berzh.
+contactrestoreerror: N'haller ket assav an darempred(où) dilamet.
+contactrestored: Darempred(où) dilamet gant berzh.
+groupdeleted: Dilamet eo bet ar strollad gant berzh.
+grouprenamed: Adanvet eo bet ar strollad gant berzh.
+groupcreated: Krouet eo bet ar strollad gant berzh.
+savedsearchdeleted: Dilamet eo bet ar c'hlask enrollet gant berzh.
+savedsearchdeleteerror: N'haller ket dilemel ar c'hlask enrollet.
+savedsearchcreated: Krouet eo bet ar c'hlask enrollet gant berzh.
+savedsearchcreateerror: N'haller ket krouiñ ar c'hlask enrollet.
+messagedeleted: Dilamet eo bet ar c'hemennadennoù gant berzh.
+messagemoved: Kemennadennoù dilec'hiet gant berzh.
+messagemovedtotrash: Kemennadennoù dilec'hiet er c'hest gant berzh.
+messagecopied: 'Kemennadennoù eilet gant berzh. '
+messagemarked: Kemennadennoù merket gant berzh.
+autocompletechars: Enankit $min arouezenn d'an nebeutañ evit ar c'hlokadur emgefreek
+autocompletemore: Elfennoù kenglotus ouzhpenn kavet. Biziatait muioc'h a arouezennoù.
+namecannotbeempty: N'hall ket an anv bezañ goullo.
+nametoolong: Re hir eo an anv.
+namedotforbidden: N'hall ket anv un teuliad kregiñ ur poent.
+folderupdated: Teuliad hizivaet gant berzh.
+foldercreated: Teuliad krouet gant berzh.
+invalidimageformat: N'eo ket ur mentrezh skeudenn talvoudek.
+mispellingsfound: Dinoet ez eus bet fazioù reizhskrivañ er gemennadenn.
+parentnotwritable: N'haller ket krouiñ/dilec'hiañ an teuliad en teuliad kar dibabet. N'ho peus ket an aotre haeziñ.
+messagetoobig: Re vras eo al lodenn gemennadenn evit he c'heweriañ.
+noscriptwarning: 'Diwallit: Javascript a zo azgoulennet gant ar gwazerezh posteloù-mañ! Evit e arverañ, gweredekait Javascript e arventennoù ho merdeer.'
+messageissent: Kaset eo bet ar gemennadenn endeo, met n'eo ket bet enrollet. Fellout a ra deoc'h he enrollañ bremañ?
+errnotfound: Restr ebet kavet
+errnotfoundexplain: N'eo ket bet kavet al loaz azgoulennet!
+errfailedrequest: Azgoulenn c'hwitet
+errauthorizationfailed: Aotre c'hwitet
+errunauthorizedexplain: N'haller ket gwiriañ hoc'h aotreet da haeziñ ar gwazerezh-mañ!
+errrequestcheckfailed: Gwiriañ an azgoulenn c'hwitet
+errcsrfprotectionexplain: "Evit ho kwarez eo diogelet an haeziñ d'al loaz-mañ gant CSRF.\nMa welit-se n'hoc'h ket digennasket a-raok kuitaat an arload web.\nUn etrewezhiadur denel a zo azgoulennet evit kenderc'hel.  "
+errcontactserveradmin: Kit e darempred gant ardoer ho tafariad.
+clicktoresumesession: Klikit aze evit kenderc'hel gant ho estez kent.
+errcomposesession: Fazi e savidigezh an estez
+errcomposesessionexplain: N'eo ket bet kavet an estez azgoulennet
+clicktocompose: Klikit aze evit skrivañ ur gemennadenn nevez
+listempty: Goullo eo ar roll.
+cookiesmismatch: ''
+dbconnerror: ''
+loggedout: ''
+nocontactselected: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+folderpurged: ''
+folderexpunged: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+smtputf8error: ''
+smtpsizeerror: ''
+attachmentvalidationerror: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

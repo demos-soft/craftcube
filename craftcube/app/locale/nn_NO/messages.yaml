@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for nn_NO. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Noko gjekk feil.
+loginfailed: Feil ved innlogging.
+cookiesdisabled: Nettlesaren din tillet ikkje informasjonskapslar (cookies).
+sessionerror: Økta di er ugyldig eller har gått ut på tid.
+storageerror: Tilkoplinga til lagringstenaren vart mislukka.
+servererror: Tenarfeil.
+servererrormsg: 'Tenarfeil: $msg'
+dberror: Databasefeil!
+requesttimedout: Førespurnaden fekk tidsavbrot
+errorreadonly: Klarte ikkje utføra handlinga. Mappa kan berre lesast.
+errornoperm: Klarte ikkje utføra handlinga. Nekta tilgang.
+invalidrequest: Eg forstår ingen ting! Ingen data lagra.
+invalidhost: Ugyldig tenarnamn.
+nomessagesfound: Ingen meldingar i denne postkassa.
+refreshing: Oppdaterer …
+loading: Hentar …
+uploading: Lastar opp fil …
+uploadingmany: Lastar opp filer …
+loadingdata: Hentar data …
+checkingmail: Ser etter nye meldingar …
+sendingmessage: Sender melding …
+messagesent: Meldinga vart sendt.
+savingmessage: Lagrar melding …
+messagesaved: Melding lagra som kladd.
+successfullysaved: Meldinga vart lagra.
+addedsuccessfully: Kontakta vart lagt til i adresseboka.
+contactnameexists: Det finst allereie en kontakt med dette namnet.
+blockedimages: Av omsyn til personvernet ditt er eksterne bilete blokkerte i denne meldinga.
+encryptedmessage: Dette er ei kryptert melding og kan ikkje visast. Orsak!
+nocontactsfound: Fann ingen kontaktar.
+contactnotfound: Fann ikkje kontakten du såg etter.
+sendingfailed: Klarte ikkje senda meldinga.
+senttooquickly: Du må venta $sec sekund for å senda meldinga.
+errormoving: Klarte ikkje flytte meldinga(r).
+errorcopying: Klarte ikkje kopiera meldinga(r).
+errordeleting: Klarte ikkje sletta meldinga(r).
+errormarking: Klarte ikkje markera meldinga(r).
+deletecontactconfirm: Sletta kontakt(ar)?
+deletegroupconfirm: Vil du sletta den valde gruppa?
+deletemessagesconfirm: Sletta melding(ar)?
+deletefolderconfirm: Sletta mappa?
+purgefolderconfirm: Sletta alle meldingane i denne mappa?
+contactdeleting: Slettar kontakt(ar) …
+groupdeleting: Slettar gruppe …
+folderdeleting: Slettar mappe …
+foldermoving: Flyttar mappe …
+foldersubscribing: Abonnerer på mappe …
+folderunsubscribing: Avsluttar mappeabonnement …
+formincomplete: Skjemaet var ikkje fullstendig fylt ut.
+noemailwarning: Skriv ei gyldig e-postadresse.
+nonamewarning: Skriv eit namn.
+nopagesizewarning: Oppgje sidestorleik.
+norecipientwarning: Skriv minst ein mottakar.
+nosubjectwarning: Emnefeltet er tomt. Vil du skriva eitt emne no?
+nobodywarning: Senda meldinga utan tekst?
+nosearchname: Skriv kontaktnamn eller epostadresse.
+notuploadedwarning: Ikkje alle vedlegga er ferdig opplasta enno. Vent litt til, eller avbryt opplastinga.
+searchsuccessful: Fann $nr meldingar.
+contactsearchsuccessful: $nr kontaktar funne.
+searchnomatch: Søket fann ingenting.
+searching: Søkjer …
+checking: Sjekkar …
+nospellerrors: Fann ingen skrivefeil.
+folderdeleted: Mappe sletta.
+foldersubscribed: Abonnerte på mappa.
+folderunsubscribed: Avslutta mappeabonnement.
+deletedsuccessfully: Sletta.
+converting: Fjernar formatering frå meldinga …
+messageopenerror: Klarte ikkje lasta meldinga frå tenaren.
+fileuploaderror: Filopplasting feila.
+filesizeerror: Fila du lasta opp, er større enn største tillatne filstorleik, $size.
+sourceisreadonly: Denne adressekjelda er berre lesbar.
+errorsavingcontact: Klarte ikkje lagra kontaktadressa.
+movingmessage: Flyttar melding(ar) …
+copyingmessage: Kopierer melding(ar) …
+copyingcontact: Kopierer kontakt(ar) …
+deletingmessage: Slettar melding(ar) …
+markingmessage: Merkar melding(ar) …
+addingmember: Legg til kontakt(ar) i gruppa …
+removingmember: Fjernar kontakt(ar) frå gruppa …
+receiptsent: Har sendt lesekvittering.
+errorsendingreceipt: Klarte ikkje senda lesekvittering.
+deleteidentityconfirm: Vil du sletta denne identiteten?
+nodeletelastidentity: Du kan ikkje sletta denne identiteten, det er den siste.
+forbiddencharacter: Mappenamn inneheld eit teikn som ikkje er tillate.
+selectimportfile: Vel ei fil til å lasta opp.
+addresswriterror: Denne adresseboka kan ikkje skrivast til.
+contactaddedtogroup: La kontaktane til denne gruppa.
+contactremovedfromgroup: Tok vekk kontaktane frå denne gruppa.
+nogroupassignmentschanged: Endra ikkje gruppetilordningane.
+importwait: Importerer, vent …
+importformaterror: Importering feila. Den opplasta fila er i feil format.
+importconfirm: <b>Importerte $inserted kontaktar</b>
+opnotpermitted: Ulovleg operasjon.
+httpreceivedencrypterror: En uopprettelig feil oppstod knytta til innstillingane. Kontakt systemansvarleg umiddelbart. <b>Meldinga kunne ikkje sendast.</b>
+smtpconnerror: 'SMTP-feil ($code): Tilkopling til tenar feila.'
+smtpautherror: 'SMTP-feil ($code): Autentisering feila.'
+smtpfromerror: 'SMTP-feil ($code): Klarte ikkje å angje sendar «$from» ($msg).'
+smtptoerror: 'SMTP-feil ($code): Klarte ikkje å leggja til mottakar «$to» ($msg).'
+smtprecipientserror: 'SMTP-feil: Klarte ikkje tolka mottakarlista.'
+smtperror: 'SMTP-feil: $msg'
+toomanyrecipients: For mange mottakarar. Senk talet til $max.
+maxgroupmembersreached: Ei gruppe kan ikkje ha fleire enn $max medlemmer.
+contactdelerror: Klarte ikkje sletta kontakt(ar).
+contactdeleted: Kontakt(ar) sletta utan feil.
+contactrestoreerror: Klarte ikkje gjenoppretta kontakt(ar).
+contactrestored: Kontakt(ar) gjennomretta utan feil.
+groupdeleted: Gruppa er sletta.
+grouprenamed: Gruppa har bytta namn.
+groupcreated: Gruppa er oppretta.
+savedsearchdeleted: Lagra søk er sletta.
+savedsearchdeleteerror: Klarte ikkje sletta lagra søk.
+savedsearchcreated: Oppretta lagra søk.
+savedsearchcreateerror: Klarte ikkje laga lagra søk.
+messagedeleted: Melding(ar) vart sletta.
+messagemoved: Melding(ar) vart flytta.
+messagecopied: Melding(ar) vart kopiert.
+messagemarked: Melding(ar) vart merka.
+autocompletechars: Skriv minst $min teikn for autofullføring.
+autocompletemore: Flere like oppføringar vart funne. Skriv fleire tegn.
+namecannotbeempty: Namn kan ikkje vera tomt.
+nametoolong: Namnet er for langt.
+folderupdated: Mappa er oppdatert.
+foldercreated: Mappa er oppretta.
+invalidimageformat: Ikke et gyldig bileteformat.
+mispellingsfound: Fann stavefeil i meldinga.
+parentnotwritable: Klarte ikkje laga/flytte mappa i vald overordna mappe. Ingen tilgangsrettar.
+messagetoobig: Meldingsdelen er for stor til å prosesserast.
+noscriptwarning: 'NB: Denne webmail-klienten krev JavaScript. Skru på JavaScript i nettlesaren din for å kunna bruka klienten.'
+cookiesmismatch: ''
+accountlocked: ''
+connerror: ''
+dbconnerror: ''
+windowopenerror: ''
+erroroverquota: ''
+erroroverquotadelete: ''
+loggedout: ''
+mailboxempty: ''
+nomessages: ''
+attaching: ''
+savingresponse: ''
+deleteresponseconfirm: ''
+nocontactselected: ''
+contactexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+externalmessagedecryption: ''
+nopubkeyfor: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+errorsavingsent: ''
+errorsaving: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+nosenderwarning: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+restoresavedcomposedata: ''
+stillsearching: ''
+folderpurged: ''
+folderexpunged: ''
+filelinkerror: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+copysuccess: ''
+movesuccess: ''
+copyerror: ''
+moveerror: ''
+movingcontact: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+importmessagesuccess: ''
+importmessageerror: ''
+nofromaddress: ''
+editorwarning: ''
+smtputf8error: ''
+smtpsizeerror: ''
+emailformaterror: ''
+internalerror: ''
+messagemovedtotrash: ''
+namedotforbidden: ''
+attachmentvalidationerror: ''
+messageissent: ''
+errnotfound: ''
+errnotfoundexplain: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcontactserveradmin: ''
+clicktoresumesession: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+clicktocompose: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

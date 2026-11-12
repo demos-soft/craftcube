@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for ru_RU. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Произошла ошибка!
+loginfailed: Неудачная попытка входа.
+cookiesdisabled: Ваш браузер не принимает cookie.
+sessionerror: Ваша сессия устарела.
+cookiesmismatch: Обнаружено несоответствие cookie. Очистите их в браузере.
+storageerror: Неудачное соединение с IMAP сервером
+servererror: Ошибка сервера!
+servererrormsg: 'Ошибка сервера: $msg'
+accountlocked: Слишком много неудачных попыток входа. Попробуйте позже.
+connerror: Ошибка соединения (Сбой подключения к серверу)!
+dberror: Ошибка базы данных!
+dbconnerror: Невозможно подключиться к базе данных.
+windowopenerror: Всплывающее окно было заблокировано!
+requesttimedout: Превышено время ожидания запроса
+errorreadonly: Невозможно выполнить операцию. Папка доступна только для чтения.
+errornoperm: Невозможно выполнить операцию. Доступ запрещён.
+erroroverquota: Невозможно выполнить операцию. Нет свободного места на диске.
+erroroverquotadelete: Нет свободного места на диске. Используйте SHIFT+DEL для удаления сообщения.
+invalidrequest: Неверный запрос! Информация не сохранена.
+invalidhost: Неверное имя сервера.
+nomessagesfound: Сообщений не найдено
+loggedout: Ваша сессия успешно завершена. Всего доброго!
+mailboxempty: Почтовый ящик пуст
+nomessages: Сообщения отсутствуют
+refreshing: Обновление...
+loading: Загрузка...
+uploading: Файл загружается…
+attaching: Добавление вложения...
+uploadingmany: Загрузка файлов...
+loadingdata: Загрузка данных...
+checkingmail: Проверка новых сообщений...
+sendingmessage: Отправка сообщения...
+messagesent: Сообщение отправлено.
+savingmessage: Сохранение сообщения...
+messagesaved: Сохранено в Черновиках.
+successfullysaved: Сохранено.
+savingresponse: Сохранение текста ответа...
+deleteresponseconfirm: Вы действительно хотите удалить этот текст ответа?
+nocontactselected: Вы не выбрали контакт.
+addedsuccessfully: Контакт добавлен в адресную книгу.
+contactexists: Контакт с этим адресом e-mail уже существует.
+contactnameexists: Контакт с таким именем уже существует.
+blockedimages: В целях безопасности загрузка изображений заблокирована.
+blockedresources: В целях безопасности загрузка внешних ресурсов заблокирована.
+suspiciousemail: Это сообщение содержит подозрительные адреса электронной почты, которые могут быть мошенническими.
+bccemail: Переадресованное сообщение(я) содержит конфиденциальных получателей (Bcc).
+bouncehint: Сообщение будет отправлено без каких-либо изменений, то есть с использованием исходного текста, заголовков и получателей.
+encryptedmessage: Сообщение зашифровано и не может быть показано. Обратитесь к администратору сервера.
+externalmessagedecryption: Это зашифрованное сообщение, оно может быть расшифровано с помощью расширением вашего браузера.
+nopubkeyfor: Не найден действительный открытый ключ для $email
+nopubkeyforsender: Отсутствует действительный открытый ключ для удостоверения вашей личности отправителя. Вы хотите зашифровать сообщение только для получателей?
+encryptnoattachments: Уже загруженные вложения не могут быть зашифрованы. Пожалуйста, повторно добавьте их в редакторе шифрования.
+searchpubkeyservers: Вы хотите выполнить поиск серверов открытых ключей для отсутствующих ключей?
+encryptpubkeysfound: 'Следующие открытые ключи были найдены:'
+keyservererror: Не удалось получить ключ от сервера ключей.
+keyimportsuccess: Открытый ключ $key успешно импортирован в хранилище ключей.
+nocontactsfound: Контакты не найдены.
+contactnotfound: Требуемый контакт не найден.
+contactsearchonly: Для просмотра контактов из выбранной адресной книги необходимо использовать форму поиска.
+sendingfailed: Не удалось отправить сообщение.
+senttooquickly: Вы должны подождать $sec сек. для отправки сообщения.
+errorsavingsent: Произошла ошибка при сохранении отправленного сообщения.
+errorsaving: В процессе сохранения произошла ошибка.
+errormoving: Не удалось переместить сообщение(я).
+errorcopying: Не удалось скопировать сообщение(я).
+errordeleting: Не удалось удалить сообщение(я).
+errormarking: Не удалось пометить сообщение(я).
+alerttitle: Внимание
+confirmationtitle: Внимание
+deletecontactconfirm: Вы действительно хотите удалить выделенные контакты?
+deletegroupconfirm: Вы действительно хотите удалить выделенную группу?
+deletemessagesconfirm: Вы действительно хотите удалить выбранные сообщения?
+deletefolderconfirm: Вы действительно хотите удалить эту папку?
+movefolderconfirm: Вы действительно хотите удалить эту папку?
+purgefolderconfirm: Вы действительно хотите удалить все сообщения в этой папке?
+contactdeleting: Удаление контакта(ов)...
+groupdeleting: Удаление группы...
+folderdeleting: Удаление папки...
+foldermoving: Перемещение папки...
+foldersubscribing: Подписать папку...
+folderunsubscribing: Отписать папку...
+formincomplete: Заполнены не все поля формы.
+noemailwarning: Пожалуйста, введите корректный адрес электронной почты.
+nonamewarning: Пожалуйста, введите имя.
+nopagesizewarning: Пожалуйста, введите размер страницы.
+nosenderwarning: Пожалуйста, введите адрес электронной почты отправителя.
+recipientsadded: Получатель(и) успешно добавлен.
+norecipientwarning: Пожалуйста, введите хотя бы одного получателя.
+disclosedreciptitle: Слишком много внешних получателей
+nosubjectwarning: Поле Тема не заполнено. Хотите заполнить его сейчас?
+nosubjecttitle: Без темы
+nobodywarning: Отправить сообщение без текста?
+notsentwarning: Текущее сообщение не отправлено и не сохранено. Удалить его?
+restoresavedcomposedata: 'Найдено ранее составленное, но неотправленное сообщение.\n\nТема: $subject\nСохранено: $date\n\nХотите восстановить это сообщение?'
+nosearchname: Пожалуйста, введите имя или адрес E-Mail
+notuploadedwarning: Вложения загружены не полностью. Подождите или отмените загрузку.
+searchsuccessful: Найденных сообщений - $nr
+contactsearchsuccessful: $nr контактов найдено.
+searchnomatch: Ничего не найдено.
+searching: Поиск...
+checking: Проверка...
+stillsearching: Поиск...
+nospellerrors: Орфографических ошибок не найдено.
+folderdeleted: Папка удалена.
+foldersubscribed: Папка подписана
+folderunsubscribed: Папка отписана
+folderpurged: Папка очищена.
+folderexpunged: Папка сжата.
+deletedsuccessfully: Удалено.
+converting: Удаление форматирования сообщения...
+messageopenerror: Невозможно загрузить сообщение с сервера.
+filelinkerror: Сбой добавления вложения.
+fileuploaderror: Ошибка загрузки файла.
+csvfilemismatch: Импорт нескольких файлов CSV с разными полями не поддерживается.
+filesizeerror: Загруженный файл больше максимального размера в $size.
+filecounterror: Вы можете загрузить максимум $count файлов одновременно.
+msgsizeerror: 'Не удалось прикрепить файл. Превышен максимальный размер сообщения: ($size).'
+msgsizeerrorfwd: Превышен максимальный размер сообщения ($size). $num сообщение(й) не было(и) прикреплено(ы).
+copysuccess: Успешно скопировано $nr контактов.
+movesuccess: Успешно перемещено $nr контактов.
+copyerror: Контакты не скопированы.
+moveerror: Контакты не перемещены.
+sourceisreadonly: Данный источник адресов только для чтения.
+errorsavingcontact: Невозможно сохранить адрес контакта.
+movingmessage: Перемещение сообщения(й)…
+copyingmessage: Копирование сообщения(й)...
+copyingcontact: Копирование контакта(ов)...
+movingcontact: Перемещение контакта(ов)...
+deletingmessage: Удаление сообщения(й)...
+markingmessage: Выделение сообщения(й)...
+addingmember: Добавление контакта(ов) в группу...
+removingmember: Удаление контакта(ов) из группы...
+receiptsent: Уведомление о прочтении отправлено.
+errorsendingreceipt: Уведомление о прочтении не отправлено.
+deleteidentityconfirm: Вы на самом деле хотите удалить эту сущность?
+nodeletelastidentity: Вы не можете удалить этот профиль, он у вас последний.
+forbiddencharacter: Имя папки содержит недопустимые символы.
+selectimportfile: Выберите файл для загрузки.
+addresswriterror: Выбранная адресная книга недоступна для записи.
+contactaddedtogroup: Контакты добавлены в эту группу.
+contactremovedfromgroup: Контакты удалены из этой группы.
+nogroupassignmentschanged: Распределение по группам не изменено.
+importwait: Импортирование, пожалуйста, подождите...
+importformaterror: Ошибка импорта! Загруженный файл имеет неизвестный  формат данных.
+importconfirm: <b>Успешно импортировано $inserted контактов</b>
+importmessagesuccess: $nr сообщений успешно импортировано.
+importmessageerror: Сбой импорта! Загруженный файл не является файлом сообщения или почтового ящика
+opnotpermitted: Действие запрещено!
+nofromaddress: В выбранном профиле не хватает адреса электронной почты.
+editorwarning: Переключение типа редактора может привести к потере  форматирования текста. Продолжить?
+httpreceivedencrypterror: На сервере возникла неизбежная ошибка. Срочно свяжитесь с Вашим администратором. <b>Ваше сообщение не может быть отправлено.</b>
+smtpconnerror: 'SMTP ошибка ($code): Сбой соединения с сервером.'
+smtpautherror: 'SMTP ошибка ($code): Ошибка авторизации.'
+smtpfromerror: 'SMTP ошибка ($code): Невозможно установить отправителя "$from" ($msg)'
+smtptoerror: 'SMTP ошибка ($code): Невозможно добавить получателя "$to" ($msg)'
+smtprecipientserror: 'SMTP ошибка: Невозможно обработать список получателей.'
+smtputf8error: 'Ошибка SMTP: сервер не поддерживает Unicode в адресе электронной почты.'
+smtpsizeerror: 'Ошибка SMTP: Размер сообщения превышает ограничения сервера ($limit)'
+smtperror: 'SMTP ошибка: $msg'
+emailformaterror: 'Неверный адрес: $email'
+toomanyrecipients: Слишком много получателей. Уменьшите их количество до $max.
+maxgroupmembersreached: Размер группы больше максимально разрешенного - $max.
+internalerror: Произошла внутренняя ошибка. Попробуйте ещё раз.
+contactdelerror: Не возможно удалить контакт(ы).
+contactdeleted: Контакт(ы) успешно удален(ы).
+contactrestoreerror: Не удалось восстановить удалённый(е) контакт(ы).
+contactrestored: Контакт(ы) успешно восстановлен(ы).
+groupdeleted: Группа успешно удалена.
+grouprenamed: Группа успешно переименована.
+groupcreated: Группа успешно создана.
+savedsearchdeleted: Сохранённый запрос успешно удалён.
+savedsearchdeleteerror: Не удалось удалить сохранённый запрос.
+savedsearchcreated: Сохранённый запрос успешно создан.
+savedsearchcreateerror: Не удалось создать сохранённый запрос.
+messagedeleted: Сообщение(я) успешно удалено(ы).
+messagemoved: Сообщение(я) успешно перемещено(ы).
+messagemovedtotrash: Сообщение(я) успешно перемещено в корзину.
+messagecopied: Сообщение(я) успешно скопировано(ы).
+messagemarked: Сообщение(я) успешно выделено(ы).
+autocompletechars: Введите, как минимум, $min символов для автодополнения.
+autocompletemore: Поиск возвратил слишком много результатов. Пожалуйста, уточните.
+namecannotbeempty: Имя не может быть пустым.
+nametoolong: Слишком длинное имя.
+namedotforbidden: Имя папки не может начинаться с точки
+folderupdated: Папка обновлена.
+foldercreated: Папка создана.
+invalidimageformat: Неверный формат изображения.
+mispellingsfound: В сообщении обнаружены орфографические ошибки.
+parentnotwritable: Не удается создать/переместить папку в выбранную родительскую папку. Нет прав доступа.
+messagetoobig: Часть сообщения слишком велика для обработки.
+attachmentvalidationerror: 'Это вложение подозрительно, потому что его тип не соответствует типу, объявленному в сообщении. Если Вы не доверяете отправителю, Вы не должны открывать его в браузере, потому что оно может содержать вредоносное содержимое.<br/><br/><em>Ожидаемое: $expected; найденое: $detected</em>'
+noscriptwarning: 'Внимание: Данному сервису веб-почты требуется Javascript! Для того, чтобы его использовать необходимо включить поддержку Javascript в настройках вашего браузера.'
+messageissent: Сообщение уже отправлено, но еще не сохранено. Вы хотите сохранить его?
+errnotfound: Файл не найден
+errnotfoundexplain: Требуемый ресурс не найден
+errfailedrequest: Неудавшийся запрос
+errauthorizationfailed: Сбой авторизации
+errunauthorizedexplain: Не удалось проверить, что вы имеете право доступа к этой услуге!
+errrequestcheckfailed: Запрос не прошел проверку
+errcsrfprotectionexplain: "Для вашей безопасности, доступ к этому ресурсу защищен от CSRF.\nЕсли вы видите это, вы, вероятно, не вышли, прежде чем покинуть веб-приложения.\n\nДля продолжения теперь потребуется действия человека."
+errcontactserveradmin: Обратитесь к администратору сервера.
+clicktoresumesession: Нажмите здесь, чтобы возобновить предыдущий сеанс
+errcomposesession: Ошибка сеанса написания письма
+errcomposesessionexplain: Требуемый сеанс написания письма не найден.
+clicktocompose: Нажмите для создания нового сообщения
+nosupporterror: Эта функция не поддерживается Вашим веб-браузером.
+siginserted: Подпись вставлена успешно.
+responseinserted: Ответ успешно вставлен.
+noresponsesavailable: Нет доступных ответов
+listempty: Список пуст.
+listusebutton: Используйте кнопку Создать, чтобы добавить новую запись.
+keypaircreatesuccess: Новая пара ключей была создана для $identity.
+emptyattachment: Это вложение похоже на пустое <br>Пожалуйста свяжитесь с отправителем для уточнения.
+oauthloginfailed: Ошибка OAuth авторизации. Пожалуйста, попробуйте еще раз.
+disclosedrecipwarning: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

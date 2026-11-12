@@ -1,0 +1,228 @@
+# CraftCube catalogue messages for tr_TR. Converted 1:1 from the
+# Roundcube reference localization (GPL-3.0+); keep languages in
+# sync with tools/i18n.py (verify / sync / add / remove).
+errortitle: Bir sorun çıktı!
+loginfailed: Oturum açılamadı.
+cookiesdisabled: Tarayıcınız tanımlama bilgilerini kabul etmiyor.
+sessionerror: Oturumunuzun süresi geçmiş ya da geçersiz.
+cookiesmismatch: Tanımlama bilgileri uyuşmuyor. Lütfen tarayıcınızın tanımlama bilgilerini silin.
+storageerror: IMAP sunucusu ile bağlantı kurulamadı.
+servererror: Sunucu sorunu!
+servererrormsg: 'Sunucu sorunu: $msg'
+accountlocked: Çok fazla başarısız oturum açma girişimi yapıldı. Bir süre sonra yeniden deneyin.
+connerror: Bağlantı sorunu (sunucuya erişilemedi)!
+dberror: Veri tabanı sorunu!
+dbconnerror: Veri tabanı bağlantısı kurulamadı!
+windowopenerror: Açılan pencere engellendi!
+requesttimedout: İstek zaman aşımına uğradı
+errorreadonly: İşlem gerçekleştirilemedi. Klasör salt okunur.
+errornoperm: İşlem gerçekleştirilemedi. İzinler yetersiz.
+erroroverquota: Boş alan olmadığından işlem yapılamadı.
+erroroverquotadelete: Diskte boş alan kalmadı. SHIFT+DEL tuşlarına basarak iletiyi silin.
+invalidrequest: İstek geçersiz! Herhangi bir veri kaydedilmedi
+invalidhost: Sunucu adı geçersiz.
+nomessagesfound: Bu e-posta kutusunda bir ileti bulunamadı.
+loggedout: Oturumunuzu kapattınız. Hoşça kalın!
+mailboxempty: E-posta kutusu boş
+nomessages: Herhangi bir ileti yok
+refreshing: Yenileniyor...
+loading: Yükleniyor...
+uploading: Dosya yükleniyor...
+attaching: Dosya ekle...
+uploadingmany: Dosyalar yükleniyor...
+loadingdata: Veriler yükleniyor...
+checkingmail: Yeni iletiler denetleniyor...
+sendingmessage: İleti gönderiliyor...
+messagesent: İleti gönderildi.
+savingmessage: İleti kaydediliyor...
+messagesaved: İleti taslaklara kaydedildi.
+successfullysaved: Kaydedildi
+savingresponse: Yanıt içeriği kaydediliyor...
+deleteresponseconfirm: Bu yanıt içeriğini silmek istediğinize emin misiniz?
+nocontactselected: Henüz bir kişi seçmemişsiniz.
+addedsuccessfully: Kişi adres defterine eklendi
+contactexists: Bu e-posta adresi rehberde var.
+contactnameexists: Rehberde aynı adlı biri zaten var.
+blockedimages: Kişisel gizliliğinizi korumak amacıyla iletideki görseller engellendi.
+blockedresources: Kişisel gizliliğinizi korumak amacıyla iletideki uzak kaynaklar engellendi.
+suspiciousemail: Bu iletide sahte olabilecek şüpheli e-posta adresleri var.
+bccemail: İletilmiş iletilerde gizli alıcılar (Bcc) var.
+bouncehint: İleti herhangi bir değişiklik yapılmadan gönderilecek. Özgün içerik, üst bilgi ve alıcılar korunacak.
+encryptedmessage: Bu ileti şifrelenmiş olduğundan görüntülenemiyor.
+externalmessagedecryption: Bu ileti şifrelenmiş ve şifresi tarayıcınızın eklentileri ile çözülebilir.
+nopubkeyfor: $email için geçerli bir herkese açık anahtar bulunamadı
+nopubkeyforsender: Göndericinin herkese açık anahtar kimliği bulunamadı. İletinin yalnızca alıcılar için şifrelenmesini ister misiniz?
+encryptnoattachments: Yüklediğiniz ek dosyalar şifrelenmemiş. Lütfen dosya eklerini yeniden şifreleme düzenleyicisine ekleyin.
+searchpubkeyservers: Kayıp anahtarları herkese açık anahtar sunucularında aramak ister misiniz?
+encryptpubkeysfound: 'Aşağıdaki herkese açık anahtarlar bulundu:'
+keyservererror: Anahtar, anahtar sunucusundan alınamadı.
+keyimportsuccess: $key herkese açık anahtarı, anahtarlığınızın içine aktarıldı.
+nocontactsfound: Uygun bir kişi bulunamadı
+contactnotfound: Aranan kişi bulunamadı
+contactsearchonly: Seçilmiş adres defterindeki kişileri görüntülemek için bir arama formunu kullanmalısınız.
+sendingfailed: İleti gönderilemedi.
+senttooquickly: Lütfen bu iletiyi göndermeden önce $sec saniye bekleyin.
+errorsavingsent: Gönderilen ileti kayıt edilirken bir sorun çıktı.
+errorsaving: Kayıt sırasında bir sorun çıktı.
+errormoving: İleti taşınamadı.
+errorcopying: İleti kopyalanamadı.
+errordeleting: İleti silinemedi
+errormarking: İleti işaretlenemedi
+alerttitle: Dikkat
+confirmationtitle: Emin misiniz...
+deletecontactconfirm: Seçilmiş kişileri silmek istediğinize emin misiniz?
+deletegroupconfirm: Seçilmiş grupları silmek istediğinize emin misiniz?
+deletemessagesconfirm: Seçilmiş iletileri silmek istediğinize emin misiniz?
+deletefolderconfirm: Bu klasörü silmek istediğinize emin misiniz?
+movefolderconfirm: Bu klasörü taşımak istediğinize emin misiniz?
+purgefolderconfirm: Bu klasördeki tüm iletileri silmek istediğinize emin misiniz?
+contactdeleting: Kişi(ler) siliniyor...
+groupdeleting: Grup siliniyor...
+folderdeleting: Klasör siliniyor...
+foldermoving: Klasör taşınıyor...
+foldersubscribing: Klasöre abone olunuyor...
+folderunsubscribing: Klasör aboneliği kaldırılıyor...
+formincomplete: Form tam olarak doldurulmamış.
+noemailwarning: Lütfen geçerli bir e-posta adresi yazın.
+nonamewarning: Lütfen bir ad yazın.
+nopagesizewarning: Lütfen bir sayfa boyutu yazın.
+nosenderwarning: Göndericinin e-posta adresini yazın.
+recipientsadded: Alıcı(lar) eklendi.
+norecipientwarning: Lütfen en az bir alıcı belirtin
+disclosedrecipwarning: Tüm alıcılar diğer alıcıların e-posta adreslerini görebilir. Bu durumu engellemek ve gizliliği korumak için Gizli kopya alanını kullanabilirsiniz.
+disclosedreciptitle: Herkese açık alıcı sayısı çok fazla
+nosubjectwarning: '"Konu" alanı boş bırakılmış. Şimdi bir konu yazmak ister misiniz?'
+nosubjecttitle: Konu belirtilmemiş
+nobodywarning: İleti boş olarak gönderilsin mi?
+notsentwarning: İleti gönderilmedi ve yaptığınız değişiklikler kaydedilmedi. Değişiklikler silinsin mi?
+restoresavedcomposedata: 'Daha önce hazırlanmış ancak gönderilmemiş bir ileti bulundu.\n\nKonu: $subject\Kaydedilme zamanı: $date\n\nBu iletiyi geri yüklemek istiyor musunuz?'
+nosearchname: Lütfen bir kişi adı ya da e-posta adresi yazın.
+notuploadedwarning: Henüz tüm ek dosyalar yüklenmedi. Lütfen bekleyin ya da yüklemeyi iptal edin.
+searchsuccessful: $nr ileti bulundu
+contactsearchsuccessful: $nr kişi bulundu.
+searchnomatch: Arama ifadenize uygun bir sonuç bulunamadı.
+searching: Aranıyor...
+checking: Denetleniyor...
+stillsearching: Hala aranıyor...
+nospellerrors: Herhangi bir yazım hatası bulunamadı.
+folderdeleted: Klasör silindi.
+foldersubscribed: Klasöre abone olundu.
+folderunsubscribed: Klasör aboneliği kaldırıldı.
+folderpurged: Klasör boşaltıldı.
+folderexpunged: Klasör sıkıştırıldı.
+deletedsuccessfully: Silindi.
+converting: Biçimlendirme kaldırılıyor...
+messageopenerror: İleti sunucudan yüklenemedi.
+filelinkerror: Dosya eklenemedi.
+fileuploaderror: Dosya yüklenemedi.
+csvfilemismatch: İçinde farklı alanlar bulunan bir kaç CSV dosyası içe aktarılamaz.
+filesizeerror: Dosya izin verilen en büyük değer olan $size boyutundan büyük.
+filecounterror: Bir kerede en fazla $count dosya yüklenebilir.
+msgsizeerror: Dosya eklenemedi. İzin verilen en büyük değer olan $size boyutundan büyük.
+msgsizeerrorfwd: Bir ileti için belirlenmiş en büyük boyut değeri ($size) aşıldığından $num ileti eklenmedi.
+copysuccess: $nr kişi kopyalandı.
+movesuccess: $nr kişi taşındı.
+copyerror: Herhangi bir kişi kopyalanamadı.
+moveerror: Herhangi bir kişi taşınamadı.
+sourceisreadonly: Adres kaynağı salt okunur durumda.
+errorsavingcontact: Kişi adresi kaydedilemedi.
+movingmessage: İleti(ler) taşınıyor...
+copyingmessage: İleti(ler) kopyalanıyor...
+copyingcontact: Kişile(ler) kopyalanıyor...
+movingcontact: Kişi(ler) taşınıyor...
+deletingmessage: İleti(ler) siliniyor...
+markingmessage: İleti(ler) işaretleniyor...
+addingmember: Gruba kişi(ler) ekleniyor...
+removingmember: Gruptan kişi(ler) çıkarılıyor...
+receiptsent: Okundu onayı gönderildi.
+errorsendingreceipt: Okundu onayı gönderilemedi.
+deleteidentityconfirm: Bu kimliği silmek istediğinize emin misiniz?
+nodeletelastidentity: Son kimliğiniz olduğu için bu kimliği silemezsiniz.
+forbiddencharacter: Klasör adında izin verilmeyen karakterler var.
+selectimportfile: Lütfen yüklenecek dosyayı seçin.
+addresswriterror: Seçilmiş adres defteri yazılabilir durumda değil.
+contactaddedtogroup: Kişiler bu gruba eklendi.
+contactremovedfromgroup: Kişiler bu gruptan çıkarıldı
+nogroupassignmentschanged: Grup atamalarında bir değişiklik yapılmadı.
+importwait: Lütfen içe aktarma sürerken bekleyin...
+importformaterror: İçe aktarılamadı. Yüklenen dosya geçerli bir içe aktarım dosyası değil.
+importconfirm: <b>$inserted kişi aktarıldı</b>
+importconfirmskipped: <b>Var olan $skipped kişi atlandı</b>
+importconfirminvalid: <b>Geçersiz $invalid kişi atlandı</b>
+importconfirmerrors: <b>Geçerli $errors kişi içe aktarılamadı</b>
+importmessagesuccess: $nr ileti içe aktarıldı
+importmessageerror: İçe aktarılamadı. Yüklenen dosya geçerli bir ileti ya da e-posta kutusu dosyası değil
+opnotpermitted: Bu işleme izin verilmiyor!
+nofromaddress: Bu kimliğin e-posta adresi yok.
+editorwarning: Düzenleyici türünü değiştirmek, yazı biçimlendirmesinin kaybolmasına neden olabilir. İlerlemek istiyor musunuz?
+httpreceivedencrypterror: Ayarlarda bir sorun var. Sistem yöneticinizle görüşün. <b>İletiniz gönderilemedi</b>
+smtpconnerror: 'SMTP sorunu ($code): Sunucu bağlantısı kurulamadı.'
+smtpautherror: 'SMTP sorunu ($code): Kimlik doğrulanamadı.'
+smtpfromerror: 'SMTP sorunu ($code): Gönderici adresi "$from" olarak ayarlanamadı ($msg)'
+smtptoerror: 'SMTP sorunu ($code): "$to" alıcısı eklenemedi ($msg)'
+smtprecipientserror: 'SMTP sorunu: Alıcı listesi ayrıştırılamadı'
+smtputf8error: 'SMTP sorunu: Sunucu e-posta adreslerinde unikod karakterleri desteklemiyor.'
+smtpsizeerror: 'SMTP hatası: İleti boyutu sunucu sınırlamasını aşıyor ($limit)'
+smtperror: 'SMTP sorunu: $msg'
+emailformaterror: 'E-posta adresi geçersiz: $email'
+toomanyrecipients: Çok fazla alıcı var. En fazla $max alıcı olabilir.
+maxgroupmembersreached: Grup üyelerinin sayısı $max sınırını aşıyor.
+internalerror: Sorun var! Lütfen yeniden deneyin.
+contactdelerror: Kişi(ler) silinemedi.
+contactdeleted: Kişi(ler) silindi.
+contactrestoreerror: Silinen kişi(ler) geri yüklenemiyor.
+contactrestored: Kişi(ler) geri yüklendi.
+groupdeleted: Grup silindi
+grouprenamed: Grup adı değiştirildi.
+groupcreated: Grup eklendi.
+savedsearchdeleted: Kayıtlı arama silindi.
+savedsearchdeleteerror: Kayıtlı arama silinemedi.
+savedsearchcreated: Kayıtlı arama eklendi.
+savedsearchcreateerror: Kayıtlı arama eklenemedi.
+messagedeleted: İleti(ler) silindi.
+messagemoved: İleti(ler) taşındı.
+messagemovedtotrash: İleti(ler) çöpe atıldı.
+messagecopied: İleti(ler) kopyalandı.
+messagemarked: İleti(ler) işaretlendi.
+autocompletechars: Otomatik tamamlama için en az $min karakter yazın.
+autocompletemore: Fazla sayıda eşleşen öge bulundu. Lütfen daha fazla karakter yazın.
+namecannotbeempty: Ad alanı boş olamaz.
+nametoolong: Ad çok uzun.
+namedotforbidden: Klasör adı nokta işareti ile başlayamaz.
+folderupdated: Klasör güncellendi
+foldercreated: Klasör eklendi.
+invalidimageformat: Geçerli bir görsel biçimi değil.
+mispellingsfound: İletide yazım hataları var.
+parentnotwritable: Klasör, seçilen üst klasöre eklenemiyor ya da taşınamıyor. Erişim izni yok.
+messagetoobig: Bu ileti parçası işlenemeyecek kadar büyük.
+attachmentvalidationerror: 'Ek dosya türü ileti içinde belirtilen tür ile aynı değil ve bu dosya şüpheli. Bu dosyada zararlı bir içerik bulunuyor olabilir. O nedenle göndericiyi tanımıyor ya da güvenmiyorsanız bu dosyayı tarayıcı içinden açmayın. <br/><br/><em>Beklenen: $expected; Bulunan: $detected</em>'
+noscriptwarning: 'Uyarı: Bu internet e-posta hizmetinin kullanılabilmesi için JavaScript gereklidir! Hizmeti kullanabilmek için lütfen tarayıcınızın JavaScript ayarlarını etkinleştirin.'
+messageissent: İleti zaten gönderilmiş ancak henüz kaydedilmemiş. Şimdi kaydetmek ister misiniz?
+errnotfound: Dosya bulunamadı.
+errnotfoundexplain: İstenen kaynak bulunamadı!..
+errfailedrequest: İstek yerine getirilemedi
+errauthorizationfailed: Kimlik doğrulanamadı
+errunauthorizedexplain: Bu hizmete erişme izniniz yok!
+errrequestcheckfailed: İstek denetlenemedi
+errcsrfprotectionexplain: 'Güvenliğiniz için, CSRF tehditine karşı bu kaynağa erişim engellenmiştir.
+
+  lfBu iletiyi görüyorsanız, büyük olasılıkla oturum kapatılmadan internet uygulamasından çıkılmıştır.
+
+
+  İlerlemek için insan etkileşimi gereklidir.'
+errcontactserveradmin: Sunucu yöneticinize başvurun.
+clicktoresumesession: Önceki oturumu sürdürmek için buraya tıklayın
+errcomposesession: Hazırlama oturumu hatası
+errcomposesessionexplain: İstenilen hazırlama oturumu bulunamadı.
+clicktocompose: Yeni bir ileti hazırlamak için buraya tıklayın.
+nosupporterror: Bu özellik tarayıcınız tarafından desteklenmiyor.
+siginserted: İmza eklendi.
+responseinserted: Yanıt eklendi.
+noresponsesavailable: Kullanılabilecek bir yanıt yok
+listempty: Liste boş.
+listusebutton: Yeni bir kayıt eklemek için Ekle düğmesine tıklayın.
+keypaircreatesuccess: $identity için yeni bir anahtar çifti oluşturuldu.
+emptyattachment: Bu ek dosya boş gibi görünüyor.<br>Lütfen göndericiyle görüşün.
+oauthloginfailed: OAuth oturumu açılamadı. Lütfen yeniden deneyin.
+oauthinvalidrequest: Kimlik doğrulama isteği geçersiz ya da eksik.
+oauthaccessdenied: Kimlik doğrulama sunucusu ya da kullanıcı isteği reddetti.

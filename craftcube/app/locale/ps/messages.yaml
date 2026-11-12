@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for ps. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+loginfailed: ننوتنه په بري سره ترسره نه شوه
+cookiesdisabled: ستاسو لټوني ککوړي ونه منل
+sessionerror: ستاسې ناسته ناباوري يا له مينځه تللې ده
+storageerror: له ای ميپ سرور سره پيوستون په بري سره ترسره نه شو
+nomessagesfound: ليکبکس کې هېڅ استوزي ونه مونده
+loading: د کار په حال کې
+loadingdata: اومتوک د کار په حال کې
+checkingmail: نوي استوزي ګوري
+sendingmessage: استوزه استوي.
+messagesent: استوزه په بري سره واستول شوه
+savingmessage: استوزه خوندي کوي
+messagesaved: استوزه په بارليک کې خوندي شوه
+successfullysaved: په بري‌سره خوندي شوه
+addedsuccessfully: اړيکلوری په بري سره پتې کتاب ته ور زيات شو
+blockedimages: ستاسو د پټتيآ خوندي کېدو لپاره ، له لري انځورنه په دې استوزي‌کې بند کړئ
+encryptedmessage: دا يوه پټه استوزه ده او نه څرګندېږي. بښنه غواړو
+nocontactsfound: هېڅ اړيکلوری يې ونه موند
+contactnotfound: وړاندی شوی اړيکلوری ونه مونده
+sendingfailed: استوزي استونه په بري سره پای ته ونه رسېده
+senttooquickly: مهرباني وکړئ $صبر وکړئ د دې استوزې له لېږلو مخکې
+errormoving: استوزه ونه خوځول شوه
+errordeleting: استوزه ړنګه نه شوه
+deletecontactconfirm: په رښتيا سره غواړئ چې ټاکل شوی اړيکلوری ړنګ کړئ؟
+deletemessagesconfirm: په رښتيا سره غواړئ چې ټاکل شوي استوزي‌ړنګ کړئ؟
+deletefolderconfirm: په رښتيآ سره غواړئ چې دا پوښۍ ړنګه کړئ؟
+purgefolderconfirm: په رښتيا سره غواړئ چې ددې پوښۍ ټول استوزي‌ړنګ کړئ؟
+folderdeleting: پوښۍ ړنګوي
+foldermoving: پوښۍ خوځوي
+formincomplete: دا پورمه بشپړه ډکه شوې نه ده
+noemailwarning: مهرباني وکړئ د يوه شته برېښناليک پته ورځای کړئ
+nonamewarning: مهرباني‌وکړئ يو نوم وليکئ
+nopagesizewarning: مهرباني‌وکړئ د پاڼې کچه ورکړئ
+norecipientwarning: مهرباني‌وکړئ لږ تر لږه يو ترلاسه کوونکی وليکئ
+nosubjectwarning: د مضمون ډګر تش دی يا تاسو غواړئ چې همدا اوس يو له هغو څخه وليکئ
+nobodywarning: دا استوزه پرته له متن څخه استوئ؟
+nosearchname: مهرباني وکړئ  د يو اړيکلوري‌نوم يا برېښناليک پته وليکئ
+searchsuccessful: استوزي ومونده$
+searchnomatch: د پلټلو بيا راګرځېدل هېڅ سمون ونه خوړه
+searching: پلټي
+checking: ګوري
+nospellerrors: هېڅ ليکدودي‌تيروتنه ونه مونده
+folderdeleted: پوښۍ په بشپړه توګه ړنګه شوه
+deletedsuccessfully: په بشپړه توګه ړنګ شول
+converting: له استوزي څخه بڼې ړنګېږي
+messageopenerror: له سرور څخه استوزي پرمخ نه شي تلی
+fileuploaderror: دفايل پورته کول په بري سره سرته ونه رسيده
+filesizeerror: د پورته شوي فايل کچه بايد لږترلږه له $څخه تيری ونه کړي
+sourceisreadonly: ددې پتې يوازې سرچينه لوستل کېږي
+errorsavingcontact: د پتې اړيکلوری يې خوندي‌نه شو کړای
+movingmessage: استوزه خوځوي
+receiptsent: يو لوستل شوی رسليک په بشپړه توګه واستول شو
+errorsendingreceipt: رسليک يې ونه شوای ليږلی
+nodeletelastidentity: تاسې نه شئ کولی چې دا پېژندنه ړنګه کړئ، داستاسو اخرنی پيژندنه ده
+forbiddencharacter: د پوښۍ نوم له فوربايډن تورو څخه جوړ دی
+selectimportfile: مهرباني وکړئ‌يو فايل د پورته کولو لپاره وټاکئ
+addresswriterror: ټاکل شوی پتې کتاب د بياليکلو نه دی
+importwait: نقلوي...صبر وکړئ
+importconfirm: <b>په بشپړه توګه نقل شو $اړيکلوري داخل شول, $شته تيرشوي انټاير څخه تيرشول</b>:<p><em>$نومونه</em></p>
+opnotpermitted: چار اجازه نه لري
+errortitle: ''
+cookiesmismatch: ''
+servererror: ''
+servererrormsg: ''
+accountlocked: ''
+connerror: ''
+dberror: ''
+dbconnerror: ''
+windowopenerror: ''
+requesttimedout: ''
+errorreadonly: ''
+errornoperm: ''
+erroroverquota: ''
+erroroverquotadelete: ''
+invalidrequest: ''
+invalidhost: ''
+loggedout: ''
+mailboxempty: ''
+nomessages: ''
+refreshing: ''
+uploading: ''
+attaching: ''
+uploadingmany: ''
+savingresponse: ''
+deleteresponseconfirm: ''
+nocontactselected: ''
+contactexists: ''
+contactnameexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+externalmessagedecryption: ''
+nopubkeyfor: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+errorsavingsent: ''
+errorsaving: ''
+errorcopying: ''
+errormarking: ''
+alerttitle: ''
+confirmationtitle: ''
+deletegroupconfirm: ''
+movefolderconfirm: ''
+contactdeleting: ''
+groupdeleting: ''
+foldersubscribing: ''
+folderunsubscribing: ''
+nosenderwarning: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+restoresavedcomposedata: ''
+notuploadedwarning: ''
+contactsearchsuccessful: ''
+stillsearching: ''
+foldersubscribed: ''
+folderunsubscribed: ''
+folderpurged: ''
+folderexpunged: ''
+filelinkerror: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+copysuccess: ''
+movesuccess: ''
+copyerror: ''
+moveerror: ''
+copyingmessage: ''
+copyingcontact: ''
+movingcontact: ''
+deletingmessage: ''
+markingmessage: ''
+addingmember: ''
+removingmember: ''
+deleteidentityconfirm: ''
+contactaddedtogroup: ''
+contactremovedfromgroup: ''
+nogroupassignmentschanged: ''
+importformaterror: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+importmessagesuccess: ''
+importmessageerror: ''
+nofromaddress: ''
+editorwarning: ''
+httpreceivedencrypterror: ''
+smtpconnerror: ''
+smtpautherror: ''
+smtpfromerror: ''
+smtptoerror: ''
+smtprecipientserror: ''
+smtputf8error: ''
+smtpsizeerror: ''
+smtperror: ''
+emailformaterror: ''
+toomanyrecipients: ''
+maxgroupmembersreached: ''
+internalerror: ''
+contactdelerror: ''
+contactdeleted: ''
+contactrestoreerror: ''
+contactrestored: ''
+groupdeleted: ''
+grouprenamed: ''
+groupcreated: ''
+savedsearchdeleted: ''
+savedsearchdeleteerror: ''
+savedsearchcreated: ''
+savedsearchcreateerror: ''
+messagedeleted: ''
+messagemoved: ''
+messagemovedtotrash: ''
+messagecopied: ''
+messagemarked: ''
+autocompletechars: ''
+autocompletemore: ''
+namecannotbeempty: ''
+nametoolong: ''
+namedotforbidden: ''
+folderupdated: ''
+foldercreated: ''
+invalidimageformat: ''
+mispellingsfound: ''
+parentnotwritable: ''
+messagetoobig: ''
+attachmentvalidationerror: ''
+noscriptwarning: ''
+messageissent: ''
+errnotfound: ''
+errnotfoundexplain: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcontactserveradmin: ''
+clicktoresumesession: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+clicktocompose: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

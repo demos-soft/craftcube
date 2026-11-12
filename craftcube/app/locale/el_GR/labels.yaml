@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for el_GR. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Καλώς ήρθατε στο $product
+username: Όνομα Χρήστη
+password: Κωδικός Πρόσβασης
+server: Εξυπηρετητής
+login: Σύνδεση
+oauthlogin: Σύνδεση μέσω $provider
+menu: Μενού
+logout: Αποσύνδεση
+mail: E-Mail
+settings: Ρυθμίσεις
+addressbook: Επαφές
+darkmode: Σκοτεινή λειτουργία
+lightmode: Φωτεινή λειτουργία
+inbox: Εισερχόμενα
+drafts: Πρόχειρα
+sent: Απεσταλμένα
+trash: Κάδος Απορριμάτων
+junk: Ανεπιθύμητα
+show_real_foldernames: Εμφάνιση πραγματικών ονομάτων για ειδικούς φακέλους
+subject: Θέμα
+from: Αποστολέας
+sender: Αποστολέας
+to: Παραλήπτης
+cc: Κοινοποίηση
+bcc: Κρυφή κοινοποίηση
+replyto: Απάντηση στο
+followupto: Σε συνέχεια
+date: Ημερομηνία
+size: Μέγεθος
+priority: Πρoτεραιότητα
+organization: Οργανισμός
+readstatus: Κατάσταση ανάγνωσης
+listoptions: Κατάλογος επιλογών
+listoptionstitle: Λίστα επιλογών
+mailboxlist: Φάκελοι
+messagesfromto: Μηνύματα $from από $to έως $count
+threadsfromto: Θέματα $from έως $to από $count
+messagenrof: Μήνυμα $nr από $count
+fromtoshort: $from – $to από $count
+copy: Αντιγραφή
+move: Μετακίνηση
+moveto: Μετακίνηση σε...
+copyto: Αντιγραφή σε...
+download: Λήψη
+open: Ανοιγμα
+showattachment: Εμφάνιση
+showanyway: Εμφάνιση
+filename: Όνομα αρχείου
+filesize: Μέγεθος αρχείου
+addtoaddressbook: Προσθήκη στο βιβλίο διευθύνσεων
+sun: Κυρ
+mon: Δευτ
+tue: Τρι
+wed: Τετ
+thu: Πεμπ
+fri: Παρ
+sat: Σαβ
+sunday: Κυριακή
+monday: Δευτέρα
+tuesday: Τρίτη
+wednesday: Τετάρτη
+thursday: Πέμπτη
+friday: Παρασκευή
+saturday: Σάββατο
+jan: Ιαν
+feb: Φεβ
+mar: Μαρ
+apr: Απρ
+may: Μαι
+jun: Ιουν
+jul: Ιουλ
+aug: Αυγ
+sep: Σεπ
+oct: Οκτ
+nov: Νοε
+dec: Δεκ
+longjan: Ιανουάριος
+longfeb: Φεβρουάριος
+longmar: Μάρτιος
+longapr: Απρίλιος
+longmay: Μαι
+longjun: Ιούνιος
+longjul: Ιούλιος
+longaug: Αύγουστος
+longsep: Σεπτέμβριος
+longoct: Οκτώβριος
+longnov: Νοέμβριος
+longdec: Δεκέμβριος
+today: Σήμερα
+refresh: Ανανέωση
+checkmail: Έλεγχος για νέα μηνύματα
+compose: Δημιουργία μηνύματος
+writenewmessage: Δημιουργία νέου μηνύματος
+reply: Απάντηση
+replytomessage: Απάντηση στον αποστολέα
+replytoallmessage: Απάντηση στη λίστα ή στον αποστολέα και όλους τους παραλήπτες
+replyall: Απάντηση όλων
+replylist: Λίστα παραληπτών απάντησης
+forward: Προώθηση
+forwardinline: Προώθηση με ενσωμάτωση
+forwardattachment: Προώθηση σαν συνημμένο
+forwardmessage: Προώθηση μηνύματος
+bouncemsg: Επαναποστολή (απαραδότου)
+bounce: Επαναποστολή
+deletemessage: Διαγραφή μηνύματος
+undeletemessage: Αναίρεση διαγραφής
+movemessagetotrash: Διαγραφή μηνύματος
+printmessage: Εκτύπωση μηνύματος
+previousmessage: Εμφάνιση του προηγούμενου μηνύματος
+firstmessage: Εμφάνιση του πρώτου μηνύματος
+nextmessage: Εμφάνιση του επόμενου μηνύματος
+lastmessage: Εμφάνιση του τελευταίου μηνύματος
+backtolist: Επιστροφή στη λίστα μηνυμάτων
+viewsource: Προβολή πηγαίου κώδικα
+mark: Μαρκάρισμα
+markmessages: Μαρκάρισμα μηνυμάτων
+markread: Ως αναγνωσμένα
+markunread: Ως μη-αναγνωσμένα
+markflagged: Ως με σήμανση
+markunflagged: Ως χωρίς σήμανση
+markundeleted: Ως μη διεγραμμένο
+markasread: Επισήμανση ως διαβασμένο
+markasunread: Επισήμανση ως μη διαβασμένο
+markasflagged: Προσθήκη σημαίας
+markasunflagged: Αφαίρεση σημαίας
+moreactions: Περισσότερες ενέργειες...
+markallread: Σημείωση όλων ως αναγνωσμένων
+folders-cur: Μόνο αυτός ο φάκελος
+folders-sub: Αυτός ο φάκελος και όλοι οι υποφάκελοι
+folders-all: Όλοι οι φάκελοι
+more: Περισσότερα
+back: Επιστροφή
+options: Επιλογές
+composeoptions: Επιλογές σύνταξης
+optionsandattachments: Επιλογές και συνημμένα
+actions: Ενέργειες
+first: Πρώτο
+last: Τελευταίο
+previous: Προηγούμενο
+next: Επόμενο
+select: Επιλέξτε
+selection: Επιλογή
+all: Όλα
+none: Κανένα
+currpage: Τρέχουσα σελίδα
+isread: Αναγνωσμένο
+unread: Μη αναγνωσμένο
+flagged: Σημειωμένο
+unflagged: Μη σημειωμένο
+unanswered: Αναπάντητο
+withattachment: Με επισύναψη
+deleted: Διεγραμμένο
+undeleted: Μη διεγραμμένο
+replied: Απαντημένο
+forwarded: Προωθημένο
+invert: Αναστροφή
+filter: Φίλτρο
+list: Λίστα
+threads: Θέματα
+expand-all: Ανάπτυξη όλων
+expand-unread: Ανάπτυξη των μη αναγνωσμένων
+collapse-all: Σύμπτυξη όλων
+threaded: Θεματοποιημένα
+showunread: Εμφάνιση αδιάβαστων μηνυμάτων
+autoexpand_threads: Ανάπτυξη θεματοποιημένων μηνυμάτων
+do_expand: όλα τα θέματα
+expand_only_unread: μόνο με τα μη αναγνωσμένα μηνύματα
+fromto: Από/Προς
+flag: Επισήμανση
+attachment: Συνημμένο αρχείο
+nonesort: Κανένα
+sentdate: Ημερ. Αποστολής
+arrival: Ημερ. Λήψης
+asc: αύξουσα
+desc: φθίνουσα
+listcolumns: Στήλες
+listsorting: Ταξινόμηση στηλών
+listorder: Σειρά ταξινόμησης
+listmode: Προβολή σε λίστα
+lmode: Λειτουργία λίστας
+layout: Διάταξη
+layoutwidescreen: Ευρεία οθόνη
+layoutdesktop: Επιφάνεια εργασίας
+layoutlist: Λίστα
+layoutwidescreendesc: Ευρεία οθόνη (3 στήλες)
+layoutdesktopdesc: Επιφάνεια εργασίας (ευρεία λίστα και προεπισκόπηση mail παρακάτω)
+layoutlistdesc: Λίστα (χωρίς προεπισκόπηση)
+folderactions: Ενέργειες στους φακέλους
+compact: Συμπίεση
+empty: Άδειασμα
+importmessages: Εισαγωγή μηνυμάτων
+mailimportdesc: Μπορείτε να μεταφορτώσετε αλληλογραφία χρησιμοποιώντας αρχεία <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> ή <a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a>.
+mailimportzip: Τα πολλαπλά αρχεία δύνανται να συμπιεστούν σε αρχεία zip
+quota: Χρήση δίσκου
+unknown: άγνωστο
+unlimited: απεριόριστο
+quotatype: Είδος περιορισμού
+quotatotal: Όριο
+quotaused: Χρησιμοποιημένα
+quotastorage: Χώρος στο δίσκο
+quotamessage: Πλήθος μηνυμάτων
+shortheaderdate: Στις $date
+shortheaderto: Προς τον/ην $to στις $date
+shortheaderfrom: Από τον/ην $from στις $date
+quicksearch: Γρήγορη Αναζήτηση
+searchplaceholder: Αναζήτηση...
+resetsearch: Επαναφορά Αναζήτησης
+searchmod: Aλλαγή αναζήτησης
+msgtext: Σε όλο το μήνυμα
+body: Σώμα
+type: Τυπος
+namex: όνομα
+searchscope: Εύρος
+currentfolder: Τρέχων φάκελος
+subfolders: Αυτός και υποφάκελοι
+allfolders: Όλοι οι φάκελοι
+searchinterval-1W: παλιότερο από μια εβδομάδα
+searchinterval-1M: παλιότερο από ενα μήνα
+searchinterval-1Y: παλιότερο από ένα έτος
+searchinterval1W: νεότερο από μια εβδομάδα
+searchinterval1M: νεότερο από ένα μήνα
+searchinterval1Y: νεότερο από ένα έτος
+openinextwin: Άνοιγμα σε νέο παράθυρο
+emlsave: Λήψη αρχείου (.eml)
+changeformattext: Εμφάνιση σε μορφή απλού κειμένου
+changeformathtml: Εμφάνιση σε μορφή HTML
+editasnew: Επεξεργασία σαν νέο
+send: Αποστολή
+sendmessage: Αποστολή μηνύματος
+savemessage: Αποθήκευση ως πρόχειρο
+addattachment: Επισύναψη αρχείου
+charset: Κωδικοποίηση χαρακτήρων
+editortype: Είδος επεξεργαστή κειμένου
+returnreceipt: Αναφορά Παράδοσης
+dsn: Κατάσταση αναφοράς παράδοσης
+keepformatting: Διατήρηση μορφοποίησης
+mailreplyintro: 'Στις $date, $sender έγραψε:'
+originalmessage: Αρχικό μήνυμα
+selectimage: Επιλογή εικόνας
+addimage: Προσθήκη εικόνας
+selectmedia: Επιλογή ταινίας
+addmedia: Προσθήκη ταινίας
+encrypt: Κρυπτογράφηση
+encryptmessage: Κρυπτογράφηση μηνύματος
+encryptmessagemailvelope: Κρυπτογράφηση μηνύματος με το Mailvelope
+importpubkeys: Εισαγωγή δημόσιων κλειδιών
+encryptedsendialog: Αποστέλλεται κρυπτογραφημένο μήνυμα
+encryptandsign: Κρυπτογράφηση και υπογραφή
+keyid: Ταυτότητα κλειδιού
+keylength: Bits
+keyexpired: Έχει λήξει
+keyrevoked: Έχει αποσυρθεί
+bccinstead: Χρήση Bcc
+insert: Εισαγωγή
+insertcontact: Προσθήκη επαφής(-ων)
+recipient: Παραλήπτης
+recipientedit: Επεξεργασία παραληπτών
+editidents: Επεξεργασία ταυτοτήτων
+spellcheck: Συλλαβισμός
+checkspelling: Έλεγχος ορθογραφίας
+resumeediting: Συνέχεια επεξεργασίας
+revertto: Επαναφορά στο
+restore: Επαναφορά
+restoremessage: Επαναφορά μηνύματος;
+ignore: Παράβλεψη
+responses: Απαντήσεις
+insertresponse: Εισάγετε μια απάντηση
+manageresponses: Διαχείριση απαντήσεων
+newresponse: Δημιουργία νέας απάντησης
+addresponse: Προσθήκη απάντησης
+editresponse: Μεταβολή απάντησης
+editresponses: Μεταβολή απαντήσεων
+responsename: Όνομα
+responsetext: Κείμενο απάντησης
+attach: Επισύναψη
+attachments: Συνημμένα
+upload: Φόρτωση
+uploadprogress: $percent ($current από $total)
+close: Κλείσιμο
+messageoptions: Επιλογές μηνύματος
+togglecomposeoptions: Εναλλαγή επιλογών σύνθεσης
+attachmentrename: Μετονομασία συνημμένου
+low: Χαμηλή
+lowest: Χαμηλότερη
+normal: Κανονική
+high: Υψηλή
+highest: Μέγιστη δυνατή
+nosubject: (χωρίς θέμα)
+showimages: Προβολή εικόνων
+allow: Να επιτρέπεται
+alwaysshow: Να προβάλλονται πάντα οι εικόνες που αποστέλλονται από τον $sender
+alwaysallow: Να επιτρέπεται πάντα από τον/την $sender
+isdraft: Αυτό το μήνυμα έχει σημανθεί σαν πρόχειρο
+andnmore: $nr περισσότερα...
+details: Λεπτομέρειες
+summary: Συνοπτικά
+headers: Κεφαλίδες
+allheaders: Όλες οι κεφαλίδες...
+togglemoreheaders: Εμφάνιση περισσότερων κεφαλίδων
+togglefullheaders: Εμφάνιση ακατέργαστων κεφαλίδων μηνύματος
+htmltoggle: HTML
+plaintoggle: Απλό κείμενο
+savesentmessagein: Αποθήκευση απεσταλμένου στο φάκελο
+dontsave: να μην αποθηκευθεί
+maxuploadsize: Το μέγιστο επιτρεπόμενο μέγεθος αρχείου είναι $size
+addcc: Προσθήκη Παραλήπτη Κοινοποίησης
+addbcc: Προσθήκη Παραλήπτη Κρυφής Κοινοποίησης
+addreplyto: Προσθήκη Απάντησης-Στο
+addfollowupto: Προσθήκη Σε συνέχεια του
+sendreceipt: Αποστολή αποδεικτικού ανάγνωσης;
+mdnrequest: Ο αποστολέας αυτού του μηνύματος, έχει ζητήσει να ειδοποιηθεί όταν θα το διαβάσετε. Θέλετε να επιτρέψετε την ενημέρωσή του;
+receiptread: Αναφορά παράδοσης (διαβάστε την)
+yourmessage: Αυτό είναι μια αναφορά παράδοσης για το μήνυμά σας
+receiptnote: 'Σημείωση: Αυτή η αναφορά επιβεβαιώνει μόνο ότι το μήνυμά σας εμφανίστηκε στον υπολογιστή του παραλήπτη. Δεν επιβεβαιώνει ότι ο παραλήπτης έχει διαβάσει ή έχει κατανοήσει το περιεχόμενό του.'
+sendalwaysto: Να αποστέλλεται πάντα στον/στην $email
+zoomin: Μεγέθυνση
+zoomout: Σμίκρυνση
+rotate: Περιστροφή
+increaseimage: Αύξηση μεγέθους εικόνας
+decreaseimage: Σμίκρυνση μεγέθους εικόνας
+rotateimage: Περιστροφή εικόνας
+showtools: Εμφάνιση εργαλείων εικόνας
+hidetools: Απόκρυψη εργαλείων εικόνας
+name: Εμφανιζόμενο όνομα
+firstname: Όνομα
+surname: Επώνυμο
+middlename: Πατρώνυμο
+nameprefix: Πρόθεμα
+namesuffix: Κατάληξη
+nickname: Ψευδώνυμο
+jobtitle: Τίτλος εργασίας
+department: Τμήμα
+gender: Φύλο
+maidenname: Πατρώνυμο
+email: E-Mail
+phone: Τηλέφωνο
+address: Διεύθυνση
+street: Οδός
+locality: Πόλη
+zipcode: ΤΚ
+region: Νομός
+country: Χώρα
+birthday: Ημερ/νία Γέννησης
+anniversary: Επέτειος
+website: Ιστοσελίδα
+instantmessenger: IM
+notes: Σημειώσεις
+male: άνδρας
+female: γυναίκα
+nonbinary: μη δυαδικό
+othergender: άλλο
+manager: Υπεύθυνος
+assistant: Υπάλληλος
+spouse: Σύζυγος
+allfields: Όλα τα πεδία
+search: Αναζήτηση
+searchresult: Αποτελέσματα αναζήτησης
+advsearch: Προηγμένη Αναζήτηση
+advanced: Προχωρημένες ρυθμίσεις
+other: Άλλα
+printcontact: Εκτύπωση επαφής
+qrcode: QR Code
+typehome: Οικία
+typework: Εργασία
+typeother: Άλλα
+typemobile: Κινητό
+typemain: Κύρια
+typehomefax: Φαξ οικίας
+typeworkfax: Φαξ εργασίας
+typecar: Αυτοκίνητο
+typepager: Βομβητής
+typevideo: Βίντεο
+typeassistant: Υπάλληλος
+typehomepage: Αρχική Σελίδα
+typeblog: Ιστολόγιο
+typeprofile: Προφίλ
+addfield: Προσθήκη πεδίου...
+addcontact: Προσθήκη επαφής
+editcontact: Επεξεργασία επαφής
+contacts: Επαφές
+contactproperties: Ιδιότητες επαφών
+contactnameandorg: Όνομα και οργανισμός
+personalinfo: Προσωπικές πληροφορίες
+personal: Προσωπικά
+contactphoto: Φωτογραφία επαφής
+edit: Επεξεργασία
+cancel: Ακύρωση
+save: Αποθήκευση
+delete: Διαγραφή
+discard: Διαγραφή
+continue: Συνέχεια
+ok: OK
+rename: Μετονομασία
+addphoto: Προσθήκη
+replacephoto: Αντικατάσταση
+uploadphoto: Φόρτωση εικόνας
+choosefile: Επιλέξτε αρχείο...
+choosefiles: Επιλέξτε αρχεία...
+browse: Περιήγηση
+newcontact: Δημιουργία νέας επαφής
+deletecontact: Διαγραφή επιλεγμένων επαφών
+composeto: Σύνθεση μηνύματος προς
+contactsfromto: Επαφή $from από $to έως $count
+print: Εκτύπωση
+export: Εξαγωγή
+exportall: Εξαγωγή όλων
+exportsel: Εξαγωγή επιλεγμένων
+exportvcards: Εξαγωγή επαφών σε vCard
+newgroup: Δημιουργία νέας ομάδας
+addgroup: Προσθήκη ομάδας
+grouprename: Μετονομασία ομάδας
+groupdelete: Διαγραφή ομάδας
+groupassign: Εκχώρηση στην ομάδα...
+groupremove: Κατάργηση από την ομάδα...
+groupremoveselected: Αφαίρεση επιλεγμένων επαφών από την ομάδα
+uponelevel: Πάνω ένα επίπεδο
+previouspage: Εμφάνιση προηγούμενης σελίδας
+firstpage: Εμφάνιση της πρώτης σελίδας
+nextpage: Εμφάνιση επόμενης σελίδας
+lastpage: Εμφάνιση της τελευταίας σελίδας
+group: Ομάδα
+groups: Ομάδες
+listgroup: Μέλη της ομάδας λίστας
+personaladrbook: Προσωπικές Διευθύνσεις
+searchsave: Αποθήκευση αναζήτησης
+searchdelete: Διαγραφή αποθηκευμένης αναζήτησης
+import: Εισαγωγή
+importcontacts: Εισαγωγή επαφών
+importfromfile: Εισαγωγή από αρχείο
+importtarget: Προσθήκη επαφών σε
+importreplace: Αντικατάσταση όλου του βιβλίου διευθύνσεων
+importgroups: Εισαγωγή αναθέσεων ομάδων
+importgroupsall: Όλα (δημιουργία ομάδων αν είναι απαραίτητο)
+importgroupsexisting: Μόνο για υπάρχουσες ομάδες
+importdesc: Μπορείτε να μεταφορτώσετε επαφές από ένα υπάρχον ευρετήριο.<br/>Προς το παρόν υποστηρίζουμε την εισαγωγή διευθύνσεων με μορφή <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> ή CSV (διαχωρισμένες με κόμμα).
+importmapdesc: Επιβεβαιώστε ότι οι παρακάτω πληροφορίες αντιστοίχισης πεδίων είναι σωστές πριν προχωρήσετε στην εισαγωγή δεδομένων CSV (διαχωρισμένα με κόμμα).
+fieldnotmapped: Πεδίο χωρίς αντιστοίχιση (να μην εισαχθεί)
+skipheader: Να μην εισαχθεί η πρώτη γραμμή (κεφαλίδα)
+done: Ολοκληρώθηκε
+settingsfor: Ρυθμίσεις για
+about: Σχετικά
+preferences: Προτιμήσεις
+userpreferences: Προτιμήσεις χρήστη
+editpreferences: Επεξεργασία προτιμήσεων χρήστη
+identities: Ταυτότητες
+manageidentities: Διαχείριση ταυτοτήτων
+newidentity: Δημιουργία νέας ταυτότητας
+addidentity: Προσθήκη ταυτότητας
+editidentity: Επεξεργασία ταυτότητας
+identityencryption: Κρυπτογράφηση
+preferhtml: Προβολή σε HTML
+defaultcharset: Προεπιλεγμένη κωδικοποίηση χαρακτήρων
+htmlmessage: Μήνυμα σε μορφή HTML
+messagepart: Μέρος
+digitalsig: Ψηφιακή Υπογραφή
+dateformat: Μορφή ημερομηνίας
+timeformat: Μορφή ώρας
+prettydate: Κομψή ημερ/νία
+setdefault: Ορισμός ως προεπιλογή
+autodetect: Αυτόματα
+language: Γλώσσα
+timezone: Ζώνη Ώρας
+pagesize: Γραμμές ανά σελίδα
+signature: Υπογραφή
+dstactive: Θερινή ώρα
+showinextwin: Άνοιγμα μηνύματος σε νέο παράθυρο
+composeextwin: Σύνθεση μηνύματος σε νέο παράθυρο
+htmleditor: Δημιουργία μηνύματος σε μορφή HTML
+htmlonreply: μόνο σε απάντηση μηνύματος μορφής HTML
+htmlonreplyandforward: σε προώθηση ή σε απάντηση σε HTML μήνυμα
+htmlsignature: Υπογραφή HTML
+showemail: Εμφάνιση διεύθυνσης e-mail με το εμφανιζόμενο όνομα
+previewpane: Εμφάνιση προεπισκόπησης
+skin: Θέμα εμφάνισης
+logoutclear: Άδειασμα του κάδου στην έξοδο
+logoutcompact: Συμπίεση φακέλου εισερχομένων στην έξοδο
+uisettings: Περιβάλλον χρήστη
+serversettings: Ρυθμίσεις διακομιστή
+mailboxview: Προβολή Μηνυμάτων
+mdnrequests: Όταν ο αποστολέας έχει ζητήσει αναφορά παράδοσης
+askuser: ρώτησέ με
+autosend: στείλε αυτόματα την απόδειξη παραλαβής
+autosendknown: στείλε αυτόματα αποδείξεις παραλαβής σε όσους έχω στις επαφές, για τους άλλους ρώτα με
+autosendknownignore: στείλε αυτόματα αποδείξεις παραλαβής σε όσους έχω στις επαφές, για τους άλλους καμιά ενέργεια
+autosendtrusted: αποστολή απόδειξης σε έμπιστους αποστολείς, αλλιώς να ερωτηθώ
+autosendtrustedignore: αποστολή απόδειξης σε έμπιστους αποστολείς, αλλιώς να αγνοηθεί
+ignorerequest: παράβλεψη αιτήματος
+readwhendeleted: Κατά τη διαγραφή του μηνύματος, μαρκάρισέ το σαν αναγνωσμένο
+flagfordeletion: Αντί να το διαγράψεις, απλά και μόνο σημείωσέ το
+skipdeleted: Να μην εμφανίζονται τα διαγραμμένα μηνύματα
+deletealways: αν η μετακίνηση στον κάδο αποτύχει, διέγραψέ τα
+deletejunk: Άμεση διαγραφή μηνυμάτων στα Ανεπιθύμητα
+showremoteimages: Να εμφανίζονται οι εικόνες που έχουν αποσταλεί σε συνδέσμους
+allowremoteresources: Να επιτρέπονται οι απομακρυσμένοι πόροι (εικόνες, ύφος)
+fromknownsenders: από γνωστούς αποστολείς
+fromtrustedsenders: από έμπιστους αποστολείς
+frommycontacts: από τις επαφές μου
+always: πάντα
+alwaysbutplain: πάντα, εκτός όταν απαντάω σε απλό κείμενο
+showinlineimages: Οι συνημμένες εικόνες να προβάλλονται στο τέλος του μηνήματος
+autosavedraft: Να γίνεται αυτόματη αποθήκευση σαν πρόχειρο
+everynminutes: κάθε $n λεπτό/α
+refreshinterval: Επαναφόρτωση (έλεγχος για νέα μηνύματα, κλπ.)
+never: ποτέ
+immediately: άμεσα
+messagesdisplaying: Προβολή Μηνυμάτων
+messagescomposition: Δημιουργία Μηνυμάτων
+mimeparamfolding: Ονόματα συνημμένων αρχείων
+2231folding: Full RFC 2231 (μορφή Thunderbird)
+miscfolding: RFC 2047/2231 (μορφή MS Outlook)
+2047folding: Full RFC 2047 (άλλη μορφή)
+force7bit: Να γίνεται χρήση της κωδικοποίησης MIME για τους χαρακτήρες 8-bit
+savelocalstorage: Προσωρινή αποθήκευση στην τοπική αποθήκη του περιηγητή
+advancedoptions: Προχωρημένες επιλογές
+toggleadvancedoptions: Εναλλαγή προχωρημένων επιλογών
+focusonnewmessage: Τα νέα μηνύματα να επιλέγονται αυτόματα
+checkallfolders: Να γίνεται έλεγχος σε όλους τους φακέλους για νέα μηνύματα
+displaynext: Εμφάνιση της επόμενης καταχώρησης μετά τη διαγραφή/μετακίνηση
+defaultfont: Προεπιλεγμένη γραμματοσειρά για τα μηνύματα μορφής HTML
+mainoptions: Βασικές επιλογές
+browseroptions: Επιλογές περιηγητή
+section: Ενότητα
+maintenance: Συντήρηση
+newmessage: Νέο Μήνυμα
+signatureoptions: Επιλογές υπογραφής
+whenreplying: Στις απαντήσεις
+replyempty: χωρίς παράθεση του αρχικού μηνύματος
+replytopposting: το νέο μήνυμα να είναι πάνω από το αρχικό
+replytoppostingnoindent: εμφάνιση του νέου μηνύματος πάνω από το αρχικό (χωρίς εσοχή)
+replybottomposting: το νέο μήνυμα να είναι κάτω από το αρχικό
+replyremovesignature: Όταν το μήνυμα είναι απάντηση, να αφαιρείται η υπογραφή του αρχικού μηνύματος
+autoaddsignature: Η υπογραφή να προστίθεται αυτόματα
+newmessageonly: μόνο στα νέα μηνύματα
+replyandforwardonly: μόνο στις απαντήσεις και προωθήσεις
+insertsignature: Προσθήκη υπογραφής
+sigbelow: Τοποθέτηση υπογραφής κάτω από το παρατιθέν μήνυμα
+sigseparator: Εξαναγκασμός προκαθορισμένου διαχωριστικού στις υπογραφές
+automarkread: Επισήμανση ως αναγνωσμένα
+afternseconds: μετά από $n δευτερόλεπτα
+reqmdn: Να γίνεται πάντα αίτηση για αναφορά απάντησης
+reqdsn: Να γίνεται πάντα αίτηση για αναφορά παράδοσης
+replysamefolder: Τα μηνύματα που είναι απαντήσεις να τοποθετούνται σε ξεχωριστό φάκελο
+defaultabook: Προκαθορισμένο βιβλίο διευθύνσεων
+autocompletesingle: Να μην χρησιμοποιούνται οι εναλλακτικές διευθύνσεις κατά την αυτόματη συμπλήρωση
+listnamedisplay: Εμφάνιση επαφών ως
+contactformmode: Μορφή φόρμας επικοινωνίας
+privatemode: Προσωπικό (Οικίας)
+businessmode: Επαγγελματικό (Εργασίας)
+collectedaddresses: Συλλεχθείσες διευθύνσεις
+collectedrecipients: Συλλεγέντες Παραλήπτες
+collectedrecipientsopt: Αποθήκευση παραληπτών εξερχομένων email σε
+collectedsendersopt: Αποθήκευση έμπιστων αποστολέων σε
+trustedsenders: Έμπιστοι Αποστολείς
+spellcheckbeforesend: Να γίνεται πάντα έλεγχος ορθογραφίας πριν την αποστολή του μηνύματος
+spellcheckoptions: Επιλογές Ορθογραφικού ελέγχου
+spellcheckignoresyms: Οι λέξεις που περιέχουν σύμβολα να αγνοούνται
+spellcheckignorenums: Οι λέξεις που περιέχουν αριθμούς να αγνοούνται
+spellcheckignorecaps: Οι λέξεις γραμμένες με ΚΕΦΑΛΑΙΑ να αγνοούνται
+addtodict: Προσθήκη στο λεξικό
+mailtoprotohandler: 'Καταχώρηση διαχείρισης πρωτοκόλλου δεσμών mailto:'
+standardwindows: Χειριστείτε τα αναδυόμενα παράθυρα ως πρότυπο των Windows
+forwardmode: Προώθηση μηνυμάτων
+inline: με ενσωμάτωση
+asattachment: σαν επισύναψη
+replyallmode: Προεπιλεγμένη ενέργεια του κουμπιού [Απάντηση σε όλους]
+replyalldefault: απάντηση σε όλους
+replyalllist: Απάντηση μόνο σε λίστα e-mail (αν υπάρχει)
+allmessages: όλα τα μηνύματα
+olderxdays: άνω των $x ημερών
+folder: Φάκελος
+folders: Φάκελοι
+foldername: Όνομα φακέλου
+subscribed: Εγγεγραμμένος
+messagecount: Μηνύματα
+create: Δημιουργία
+createfolder: Δημιουργία νέου φακέλου
+managefolders: Διαχείριση φακέλων
+specialfolders: Ειδικοί Φάκελοι
+properties: Ιδιότητες
+folderproperties: Ιδιότητες φακέλου
+parentfolder: Γονικός φάκελος
+location: Τοποθεσία
+info: Πληροφορίες
+getfoldersize: Κάντε κλικ εδώ για να δείτε το μέγεθος του φακέλου
+changesubscription: Κάντε κλικ εδώ για να αλλάξετε τη συνδρομή σας
+foldertype: Τύπος φακέλου
+personalfolder: Προσωπικός φάκελος
+otherfolder: Φάκελοι άλλων χρηστών
+sharedfolder: Κοινόχρηστος φάκελος
+findfolders: Εύρεση φακέλων
+findcontacts: Εύρεση επαφών
+findmail: Εύρεση αλληλογραφίας
+namespace.personal: Προσωπικά
+namespace.other: Άλλοι χρήστες
+namespace.shared: Διαμοιρασμένος
+dualuselabel: Δύναται να περιέχει μόνο
+dualusemail: μηνύματα
+dualusefolder: φάκελοι
+generate: Δημιουργία
+encryptioncreatekey: Δημιουργία νέου ζεύγους κλειδιού
+openmailvelopesettings: Άνοιγμα Ρυθμίσεων Mailvelope
+encryptionprivkeysinmailvelope: 'Έχετε $nr παρόμοια ιδιωτικά κλειδιά αποθηκευμένα στην κλειδοθήκη Mailvelope:'
+encryptionnoprivkeysinmailvelope: Ο παρών αποστολέας δεν έχει ακόμη ιδιωτικό κλειδί PGP αποθηκευμένο στην επέκταση Mailvelope σας. Θα θέλατε να δημιουργήσετε ένα ώστε ενεργοποιήσετε την κρυπτογραφημένη ανταλλαγή μηνυμάτων;
+encryption: Κρυπτογράφηση
+mailvelopeoptions: Ρυθμίσεις Mailvelope
+mailvelopemainkeyring: Χρήση κύριας κλειδοθήκης Mailvelope
+mailvelopenotfound: Η επέκταση Mailvelope δεν είναι ενεργοποιημένη/εγκατεστημένη στον browser σας.
+mailvelopeenable: Ενεργοποίηση
+sortby: Ταξινόμηση κατά
+sortasc: Αύξουσα ταξινόμηση
+sortdesc: Φθίνουσα ταξινόμηση
+undo: Αναίρεση
+installedplugins: Εγκατεστημένα πρόσθετα
+plugin: Πρόσθετο
+version: Έκδοση
+source: Προέλευση
+destination: Προορισμός
+license: Άδεια χρήσης
+skinauthor: με βάση το $author
+support: Υποστήριξη
+savedsearches: Αποθηκευμένες αναζητήσεις
+dateformatY: YYYY
+dateformaty: YY
+dateformatm: MM
+dateformatd: DD
+dateformatj: D
+dateformatn: M
+B: B
+KB: KB
+MB: MB
+GB: GB
+unicode: Unicode
+english: Αγγλικά
+westerneuropean: Δυτικής Ευρώπης
+easterneuropean: Ανατολικής Ευρώπης
+southeasterneuropean: Νοτιο-Ανατολικής Ευρώπης
+baltic: Βαλτικής
+cyrillic: Κυριλλικά
+arabic: Αραβικά
+greek: Ελληνικά
+hebrew: Εβραϊκά
+turkish: Τουρκικά
+nordic: Σκανδιναβικά
+thai: Ταϊλανδέζικα
+celtic: Κελτικά
+vietnamese: Βιετναμέζικα
+japanese: Ιαπωνικά
+korean: Κορεατικά
+chinese: Κινεζικά
+arialabeltopnav: Έλεγχος παραθύρου
+arialabeltasknav: Εργασίες εφαρμογής
+arialabeltoolbar: Μπάρα εργαλείων εφαρμογής
+arialabellistnav: Πλοήγηση λίστας
+arialabelactivetask: Ενεργή εργασία
+arialabelmessagessearchfilter: Φίλτρο λίστας αλληλογραφίας
+arialabelmailsearchform: Φόρμα αναζήτησης μηνύματος e-mail
+arialabelcontactsearchform: Φόρμα αναζήτησης επαφών
+arialabelmailquicksearchbox: Πεδίο αναζήτησης e-mail
+arialabelquicksearchbox: Αναζήτηση εισόδου
+arialabelfoldersearchfilter: Φίλτρο λίστας φακέλων
+arialabelfoldersearchform: Φόρμα αναζήτησης φακέλων
+arialabelfolderlist: Επιλογή καταλόγου e-mail
+arialabelmessagelist: Λίστα μηνυμάτων e-mail
+arialabelmailpreviewframe: Προεπισκόπηση μηνύματος
+arialabelmailboxmenu: Μενού ενεργειών φακέλων
+arialabellistselectmenu: Μενού επιλογής λίστας
+arialabelthreadselectmenu: Μενού λίστας θεμάτων
+arialabelmessagelistoptions: Εμφάνιση λίστας μηνυμάτων και επιλογές ταξινόμησης
+arialabelmailimportdialog: Διάλογος εισαγωγής μηνύματος
+arialabelmessagenav: Πλοήγηση μηνύματος
+arialabelmessagebody: Σώμα μηνύματος
+arialabelmessageactions: Ενέργειες μηνύματος
+arialabelcontactquicksearch: Φόρμα αναζήτησης επαφών
+arialabelcontactsearchbox: Πεδίο αναζήτησης επαφής
+arialabelmessageheaders: Κεφαλίδες μηνυμάτων
+arialabelforwardingoptions: Επιλογές προώθησης
+arialabelreplyalloptions: Επιλογές απάντησης προς όλους
+arialabelmoremessageactions: Περισσότερες ενέργειες μηνύματος
+arialabelmorecontactactions: Περισσότερες ενέργειες επαφών
+arialabelmarkmessagesas: Σήμανση επιλεγμένων μηνυμάτων ως...
+arialabelcomposeoptions: Επιλογές σύνθεσης
+arialabelresponsesmenu: Μενού έτοιμων απαντήσεων
+arialabelattachmentuploadform: Φόρμα μεταφόρτωσης συνημμένων
+arialabelattachmentmenu: Επιλογές συνημμένων
+arialabelmailtomenu: Επιλογές διεύθυνσης email
+arialabelattachmentpreview: Προεπισκόπηση συνημμένων
+ariasummarycomposecontacts: Επιλογή ως παραλήπτες από λίστα επαφών και ομάδων
+arialabelcontactexportoptions: Επιλογές εξαγωγής επαφών
+arialabelabookgroupoptions: Επιλογές βιβλίου διευθύνσεων/ομάδων
+arialabelpreferencesform: Φόρμα προτιμήσεων
+arialabelidentityeditfrom: Φόρμα επεξεργασίας ταυτότητας
+arialabelresponseeditfrom: Φόρμα επεξεργασίας απάντησης
+arialabelsearchterms: Όροι αναζήτησης
+arialabeldropactionmenu: Drag-n-Drop μενού ενεργειών
+arialabelheadersmenu: Μενού προσθήκης παραληπτών (κεφαλίδα)
+arialabelimagetools: Εργαλεία εικόνας
+helplistnavigation: Εμφάνιση πλοήγησης πληκτρολογίου
+helplistkeyboardnavigation: "Βέλη πάνω/κάτω: Μετακίνηση εστίασης/επιλογής γραμμής.\nΔιάστημα: Επιλογή εστιασμένης γραμμής.\nShift + Βέλος πάνω/κάτω: Επιλογή επιπλέον γραμμής πάνω/κάτω.\nCtrl + Διάστημα: Προσθήκη/αφαίρεση εστιασμένης γραμμής στα επιλεγμένα."
+helplistkeyboardnavmessages: "Βέλη αριστερά/δεξιά: εμφάνιση/απόκρυψη νήματος μηνυμάτων (μόνο στη λειτουργία νήματος).\nEnter: Άνοιγμα επιλεγμένου/εστιασμένου μηνύματος.\nΔιαγραφή: Μετακίνηση επιλεγμένων μηνυμάτων στα Διεγραμμένα."
+helplistkeyboardnavcontacts: 'Enter: Άνοιγμα της επιλεγμένης/εστιασμένης επαφής.'
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+addheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+alwayskeepformatting: ''
+editoroptions: ''
+enableautolink: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

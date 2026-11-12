@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for hu_HU. Converted 1:1 from the
+# Roundcube reference localization (GPL-3.0+); keep languages in
+# sync with tools/i18n.py (verify / sync / add / remove).
+errortitle: Hiba történt!
+loginfailed: Sikertelen bejelentkezés.
+cookiesdisabled: A böngésző nem támogatja a sütik használatát
+sessionerror: Érvénytelen vagy lejárt munkamenet
+cookiesmismatch: A cookie-k nem egyeznek meg. Kérjük, töröljed a böngészőből a cookie-kat.
+storageerror: Nem sikerült csatlakozni az IMAP szerverhez
+servererror: Szerverhiba!
+servererrormsg: 'Szerverhiba: $msg'
+accountlocked: Túl sok sikertelen belépési kísérlet történt. Próbálja később.
+connerror: Kapcsolódási hiba (a kiszolgáló elérése sikertelen)!
+dberror: Adatbázishiba!
+dbconnerror: Nem sikerült kapcsolódni az adatbázishoz!
+windowopenerror: A felugró ablak blokkolva lett!
+requesttimedout: A kérés túllépte az időkorlátot
+errorreadonly: A műveletet nem sikerült végrehajtani. A mappa írásvédett.
+errornoperm: A műveletet nem sikerült végrehajtani. Hozzáférés megtagadva.
+erroroverquota: A műveletet nem lehetett végrehajtani, mivel nincs elég szabad tárhely.
+erroroverquotadelete: Elfogyott a tárhely. A SHIFT+DEL billentyű kombinációval lehet üzeneteket törölni.
+invalidrequest: Érvénytelen kérés! Az adatok nem lettek elmentve.
+invalidhost: Hibás szerver hoszt név
+nomessagesfound: A mappa nem tartalmaz üzeneteket
+loggedout: Sikeresen lezáródott a munkamenet. Viszontlátásra!
+mailboxempty: A postaláda üres
+nomessages: Nincsenek üzenetek
+refreshing: Frissítés...
+loading: Betöltés...
+uploading: Fájl feltöltése...
+attaching: Fájl csatolása...
+uploadingmany: Fájlok feltöltése...
+loadingdata: Az adatok betöltése...
+checkingmail: Új üzenetek keresése...
+sendingmessage: Az üzenet küldése...
+messagesent: Az üzenet elküldve
+savingmessage: Az üzenet mentése...
+messagesaved: Az üzenet elmentve a Piszkozatokhoz
+successfullysaved: A mentés sikerült
+savingresponse: A válasz szövegének mentése...
+deleteresponseconfirm: Biztosan törli ezt a válasz szöveget?
+nocontactselected: Nincs kiválasztva még partner.
+addedsuccessfully: A kapcsolat hozzáadása a címjegyzékhez megtörtént.
+contactexists: Egy kapcsolat ugyanezzel az e-mail címmel már létezik.
+contactnameexists: Ezzel a névvel már létezik kapcsolat.
+blockedimages: Biztonsági okokból a távoli képek letöltése tiltott.
+blockedresources: A személyes adatok védelmében a távoli erőforrások blokkolva vannak.
+suspiciousemail: Ez az üzenet gyanús e-mail címeket tartalmaz, amelyek átveréseknél játszhatnak szerepet.
+bccemail: A továbbított üzenet(ek) titkos címzetteket tartalmaz(nak) (Bcc).
+bouncehint: Az üzenet módosítások nélkül, azaz az eredeti szöveg, fejlécek és címzettek felhasználásával kerül elküldésre.
+encryptedmessage: Az üzenet titkosított, ezért nem megjeleníthető
+externalmessagedecryption: Ez egy titkosított üzenet, amit vissza tudsz fejteni a böngésződ bővitményével.
+nopubkeyfor: 'Nem található érvényes publikus kulcs ehhez az e-mailhez: $email'
+nopubkeyforsender: Nem található érvényes publikus kulcs a küldő indentitásodhoz. Szeretnéd titkosítani az üzenetet csak a címzetteknek?
+encryptnoattachments: A már feltöltött csatolmányokat nem lehet titkosítani. Kérlek, csatold újra azokat a titkosító szerkesztőben.
+searchpubkeyservers: Szeretnéd megkeresni a hiányzó kulcsokat publikus kulcs szervereken?
+encryptpubkeysfound: 'A következő publikus kulcs lett megtalálva:'
+keyservererror: Nem sikerült kulcsot kapni a kulcskiszolgálóról.
+keyimportsuccess: A nyilvános kulcsot $key sikeresen importálva a kulcstartódba.
+nocontactsfound: Nem találhatóak kapcsolatok.
+contactnotfound: A kiválasztott kapcsolat nem található.
+contactsearchonly: A keresési űrlapot kell használni a partnerek megjelenítéséhez a kiválasztott címjegyzékből.
+sendingfailed: Az üzenet elküldése nem sikerült
+senttooquickly: Kérem, várjon még $sec másodpercet az üzenet elküldése előtt.
+errorsavingsent: Hiba történt az elküldött üzenet mentése közben.
+errorsaving: A mentés során hiba lépett fel
+errormoving: Az üzenet(ek)et nem sikerült áthelyezni
+errorcopying: Az üzenet(ek)et nem sikerült másolni
+errordeleting: Az üzenet(ek)et nem sikerült törölni
+errormarking: Az üzenet(ek)et nem sikerült megjelölni
+alerttitle: Figyelem
+confirmationtitle: Biztosan...
+deletecontactconfirm: Biztos, hogy törölni szeretné a kijelölt kapcsolato(ka)t?
+deletegroupconfirm: Biztos, hogy törölni szeretné a kijelölt csoportot?
+deletemessagesconfirm: Biztos, hogy törölni szeretné a kijelölt üzenet(ek)et?
+deletefolderconfirm: Biztos, hogy törölni szeretné ezt a mappát?
+movefolderconfirm: Biztos, hogy át szeretné mozgatni ezt a mappát?
+purgefolderconfirm: Biztos benne, hogy az összes üzenet törölhető?
+contactdeleting: Kapcsolat(ok) törlése...
+groupdeleting: Csoport törlése...
+folderdeleting: Mappa törlése...
+foldermoving: Mappa áthelyezése...
+foldersubscribing: Feliratkozás a mappára...
+folderunsubscribing: Leiratkozás a mappáról...
+formincomplete: Az űrlap hiányosan lett kitöltve
+noemailwarning: Adjon meg egy valós e-mail címet
+nonamewarning: Adjon meg egy nevet
+nopagesizewarning: Adja meg a papír méretét
+nosenderwarning: Írd be a küldő e-mail címét.
+recipientsadded: A címzett(ek) sikeresen hozzáadva.
+norecipientwarning: Legalább egy címzettet adjon meg
+disclosedrecipwarning: Minden címzett látni fogja az összes többi címzett e-mail címét. Ezt megelőzendő és a személyes adatok biztonságának megőrzése érdekében használhatod a Titkos másolat/Bcc/ mezőt.
+disclosedreciptitle: Túl sok címzett
+nosubjectwarning: A Tárgy mező üres. Szeretné most kitölteni?
+nosubjecttitle: Nincs tárgy
+nobodywarning: Elküldi az üzenetet üresen?
+notsentwarning: Az üzenet nem lett még elküldve és vannak benne nem mentett változások. Biztos elveted a módosításaidat?
+restoresavedcomposedata: 'Egy elkezdett, de el nem küldött üzenetet talált a program.\n\Tárgy: $subject\nMentve: $date\n\nSzeretnéd visszaállítani és folytatni ez az üzenetet?'
+nosearchname: Adja meg a kapcsolat nevét vagy e-mail címét
+notuploadedwarning: Még nem került feltöltésre minden csatolmány. Kérem, várjon, vagy állítsa le a feltöltést!
+searchsuccessful: $nr üzenet található
+contactsearchsuccessful: $nr találat
+searchnomatch: Nincs találat
+searching: Keresés...
+checking: Ellenőrzés...
+stillsearching: Keresés folyamatban...
+nospellerrors: Nem található helyesírási hiba
+folderdeleted: A mappa sikeresen törölve
+foldersubscribed: Sikerült a mappára feliratkozni
+folderunsubscribed: Sikerült a mappáról leiratkozni
+folderpurged: Mappa sikeresen kiürítve
+folderexpunged: Mappa sikeresen tömörítve.
+deletedsuccessfully: Törölve
+converting: Formázás eltávolítása az üzenetből...
+messageopenerror: A levelek a szerverről nem tölthetők le
+filelinkerror: A fájl csatolása sikertelen.
+fileuploaderror: Feltöltés sikertelen
+csvfilemismatch: Több CSV fájl importálása különböző mezőkkel nem támogatott.
+filesizeerror: A feltöltött fájl mérete meghaladja a maximális $size méretet
+filecounterror: Egyszerre csak $count db fájlt tölthetsz fel.
+msgsizeerror: 'Túl nagy a csatolmány mérete. Egy üzenet maximális mérete: ($size).'
+msgsizeerrorfwd: Az üzenet elérte a maximális méretet($size). $num üzenet nem lett csatolva.
+copysuccess: Sikeresen átmásolva $nr kapcsolat.
+movesuccess: $nr kapcsolat sikeresen áthelyezve.
+copyerror: Nem lehet másolni a kapcsolatokat.
+moveerror: Nem lehet áthelyezni a kapcsolatokat.
+sourceisreadonly: Ez a címforrás csak olvasható
+errorsavingcontact: A kapcsolat címe nem menthető
+movingmessage: Üzenet(ek) áthelyezése...
+copyingmessage: Üzenet(ek) másolása...
+copyingcontact: Kapcsolat(ok) másolása...
+movingcontact: Kapcsolat(ok) áthelyezése...
+deletingmessage: Üzenet(ek) törlése....
+markingmessage: Üzenet(ek) megjelölése...
+addingmember: Kapcsolat(ok) hozzáadása a csoporthoz...
+removingmember: Kapcsolat(ok) törlése a csoportból...
+receiptsent: Az olvasási visszaigazolás el lett küldve
+errorsendingreceipt: Az olvasási visszaigazolást nem sikerült elküldeni
+deleteidentityconfirm: Biztosan törli ezt az azonosítót?
+nodeletelastidentity: Az azonosító nem törölhető, lennie kell legalább egy azonosítónak!
+forbiddencharacter: A mappa neve tiltott karaktert tartalmaz
+selectimportfile: Kérjük, válassza ki a feltölteni kívánt fájlt
+addresswriterror: A kiválasztott címjegyzék nem írható
+contactaddedtogroup: A kapcsolat hozzáadása a csoporthoz sikeresen megtörtént
+contactremovedfromgroup: A kapcsolat törlése a csoportból sikeresen megtörtént
+nogroupassignmentschanged: A csoport hozzárendelések nem változtak.
+importwait: Importálás folyamatban, kérem, várjon...
+importformaterror: Az importálás sikertelen! A feltöltött fájl ismeretlen formátumú.
+importconfirm: <b>Sikeresen importálásra került $inserted kapcsolat, kihagyva $skipped már létező bejegyzés</b>:<p><em>$names</em></p>
+importconfirmskipped: <b>Kihagyva $skipped már létező kapcsolat</b>
+importconfirminvalid: <b>Kihagyva $invalid hibás kapcsolat</b>
+importconfirmerrors: <b>Nem sikerült importálni $errors érvényes kapcsolatot</b>
+importmessagesuccess: Sikeresen importálva $nr üzenet
+importmessageerror: Sikertelen az importálás. A feltöltött fájl nem értelmezhető üzenetként vagy postafiók (mailbox) fájlként.
+opnotpermitted: A művelet nem megengedett!
+nofromaddress: Hiányzik az e-mail cím a kiválasztott identitásban.
+editorwarning: A szerkesztő típusok közötti váltás a szöveg formázásának elvesztésével járhat. Biztos szeretnéd folytatni?
+httpreceivedencrypterror: Végzetes konfigurációs hiba történt, azonnal lépjen kapcsolatba az üzemeltetővel. <b>Az üzenet nem küldhető el.</b>
+smtpconnerror: 'SMTP hiba ($code): Sikertelen kapcsolódás a szerverhez'
+smtpautherror: 'SMTP hiba ($code): Sikertelen bejelentkezés'
+smtpfromerror: 'SMTP hiba ($code): Nem sikerült a feladó beállítása: "$from" ($msg)'
+smtptoerror: 'SMTP hiba ($code): Nem sikerült a következő címzett hozzáadása: "$to" ($msg)'
+smtprecipientserror: 'SMTP hiba ($code): A címzettlista feldolgozása sikertelen'
+smtputf8error: 'SMTP hiba: A kiszolgáló nem támogatja a Unicode karaktereket az e-mail címben.'
+smtpsizeerror: 'SMTP hiba: Az üzenet mérete elérte a kiszolgáló által engedélyzett maximális méretet ($limit)'
+smtperror: 'SMTP hiba ($code): $msg'
+emailformaterror: 'Érvénytelen e-mail cím: $email'
+toomanyrecipients: Túl sok a címzett. Csökkentse a címzettek számát maximum $max címre!
+maxgroupmembersreached: A csoport létszáma meghaladja a maximum $max főt
+internalerror: Belső hiba történt. Kérjük, próbálja újra!
+contactdelerror: Hiba a kapcsolat(ok) törlésekor
+contactdeleted: Kapcsolat(ok) sikeresen törölve
+contactrestoreerror: Nem sikerült a törölt kapcsolat(ok) helyreállítása
+contactrestored: Kapcsolat(ok) sikeresen helyreállítva
+groupdeleted: Csoport sikeresen törölve
+grouprenamed: Csoport sikeresen átnevezve
+groupcreated: Csoport sikeresen létrehozva
+savedsearchdeleted: Mentett keresés sikeresen törölve
+savedsearchdeleteerror: Nem sikerült törölni a mentett keresést
+savedsearchcreated: Keresés sikeresen mentve
+savedsearchcreateerror: Nem sikerült létrehozni mentett keresést
+messagedeleted: Üzenet(ek) sikeresen törölve
+messagemoved: Üzenet(ek) sikeresen áthelyezve.
+messagemovedtotrash: Üzenet(ek) sikeresen áthelyezve a kukába.
+messagecopied: Üzenet(ek) sikeresen másolva
+messagemarked: Üzenet(ek) sikeresen megjelölve
+autocompletechars: Az automatikus kiegészítéshez legalább $min karakter szükséges
+autocompletemore: Több egyezés található. Kérem, adjon meg további karaktereket!
+namecannotbeempty: A név nem lehet üres
+nametoolong: A név túl hosszú
+namedotforbidden: A mappa neve nem kezdődhet ponttal.
+folderupdated: Mappa sikeresen frissítve
+foldercreated: Mappa sikeresen létrehozva
+invalidimageformat: Érvénytelen képformátum
+mispellingsfound: Az üzenetben helyesírási hibák találhatók
+parentnotwritable: Nem sikerült a mappa létrehozása/áthelyezése a kijelölt főmappába. Nincs jogosultsága a művelethez!
+messagetoobig: Az üzenetrész túl nagy a feldolgozáshoz.
+attachmentvalidationerror: 'FIGYELEM! A csatolmány veszélyes lehet, mert a típusa nem egyezik az üzenetben beállított típussal. Amennyiben nem megbízható az üzenet küldője, ne nyissa meg a csatolmányt a böngészőben, mert ártalmas lehet a tartalma.<br/><br/><em>Üzenetben beállított típus: $expected; az érzékelt típus: $detected</em>'
+noscriptwarning: 'FIGYELEM: Ez a webmail szolgáltatás igényli a Javascript futtatásának a lehetőségét! Amennyiben használni szeretné, engedélyezze a JavaScript futtatását a böngészője beállításaiban.'
+messageissent: Az üzenet már el lett küldve, de még nincs elmentve. El akarod menteni most?
+errnotfound: Fájl nem található
+errnotfoundexplain: A kért erőforrás nem található!
+errfailedrequest: Hibás kérés
+errauthorizationfailed: Azonosítás sikertelen
+errunauthorizedexplain: Nem sikerült ellenőrizni, hogy a szolgáltatás használata engdélyezett-e számodra
+errrequestcheckfailed: Kérés Ellenörzés Sikertlelen
+errcsrfprotectionexplain: "Az Ön védelme érdekében az ehhez az erőforráshoz történő hozzáférés CSRF védelemmel lett ellátva. \nHa ezt látja, akkor valószínűleg nem jelentkezett ki, mielőtt elhagyta a webes alkalmazást. \n\nEmberi közbeavatkozás szükség most ahhoz, hogy folytassa."
+errcontactserveradmin: Vedd fel a kapcsolatot a rendszergazdával.
+clicktoresumesession: Kattints ide az előző munkamenet folytatásához
+errcomposesession: Levélírás munkamenet hiba
+errcomposesessionexplain: A kért levélírás munkamenet nem található.
+clicktocompose: Kattints ide új üzenet létrehozásához
+nosupporterror: Ezt a funkciót a webböngésző nem támogatja.
+siginserted: Az aláírás sikeresen beillesztve.
+responseinserted: A válasz sikeresen beillesztve.
+noresponsesavailable: 'Nincs érvényes válasz '
+listempty: A lista üres.
+listusebutton: Használd a Létrehozás gombot, hogy hozzáadj egy új rekordot.
+keypaircreatesuccess: 'Az új kulcspár sikeresen létre lett hozva a következőnek: $identity'
+emptyattachment: Ez a csatolmány üresnek tűnik.<br>Érdeklődj annál, aki ezt küldte.
+oauthloginfailed: Az OAUTH bejelentkezés meghiúsult. Próbáld újra.
+oauthinvalidrequest: Az engedélyezési kérelem érvénytelen vagy hiányos volt.
+oauthaccessdenied: Az engedélyező kiszolgáló vagy a felhasználó elutasította a kérelmet.

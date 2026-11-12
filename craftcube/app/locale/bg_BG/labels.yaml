@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for bg_BG. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Добре дошли в $product
+username: Потребител
+password: Парола
+server: Сървър
+login: Вход
+oauthlogin: Вход с $provider
+menu: Меню
+logout: Изход
+mail: Поща
+settings: Настройки
+addressbook: Адресна книга
+darkmode: Тъмен режим
+lightmode: Светъл режим
+inbox: Входящи
+drafts: Чернови
+sent: Изпратени
+trash: Кошче
+junk: Спам
+show_real_foldernames: Показва истинските имена на служебните папки
+subject: Заглавие
+from: От
+sender: Подател
+to: До
+cc: Копие до
+bcc: Скрито копие до
+replyto: Отговор до
+followupto: Препращане към
+date: Дата
+size: Размер
+priority: Приоритет
+organization: Организация
+readstatus: Статус (прочетено/ново)
+listoptions: Настройки на списък...
+listoptionstitle: Настройки на списък
+mailboxlist: Папки
+messagesfromto: Писма $from до $to от $count
+threadsfromto: Кореспонденции $from до $to от $count
+messagenrof: Писмо $nr от $count
+fromtoshort: $from – $to от $count
+copy: Копиране
+move: Преместване
+moveto: Премести във...
+copyto: Копирай във...
+download: Изтегли
+open: Отвори
+showattachment: Покажи
+showanyway: Показване въпреки това
+filename: Име на файла
+filesize: Размер на файла
+addtoaddressbook: Добави в адресната книга
+sun: Нед
+mon: Пон
+tue: Вто
+wed: Сря
+thu: Чет
+fri: Пет
+sat: Съб
+sunday: Неделя
+monday: Понеделник
+tuesday: Вторник
+wednesday: Сряда
+thursday: Четвъртък
+friday: Петък
+saturday: Събота
+jan: Яну
+feb: Фев
+mar: Мар
+apr: Апр
+may: Май
+jun: Юни
+jul: Юли
+aug: Авг
+sep: Сеп
+oct: Окт
+nov: Ное
+dec: Дек
+longjan: Януари
+longfeb: Февруари
+longmar: Март
+longapr: Април
+longmay: Май
+longjun: Юни
+longjul: Юли
+longaug: Август
+longsep: Септември
+longoct: Октомври
+longnov: Ноември
+longdec: Декември
+today: Днес
+refresh: Обнови
+checkmail: Провери за нова поща
+compose: Напиши
+writenewmessage: Създай ново писмо
+reply: Отговор
+replytomessage: Отговори на подателя
+replytoallmessage: Отговори на списъка или на подателя и всички получатели
+replyall: Отговор на всички
+replylist: Отговор на списък
+forward: Препрати
+forwardinline: Препрати като цитат в писмото
+forwardattachment: Препрати като прикачен файл
+forwardmessage: Препрати писмото
+bouncemsg: Повторно изпращане (bounce)
+bounce: Повторно изпращане
+deletemessage: Изтрий писмото
+undeletemessage: Възстанови писмото
+movemessagetotrash: Премести писмото в Кошче
+printmessage: Печат на писмото
+previousmessage: Предишно писмо
+firstmessage: Първо писмо
+nextmessage: Следващо писмо
+lastmessage: Последно писмо
+backtolist: Обратно към списъка
+viewsource: Покажи изходния код
+mark: Маркирай
+markmessages: Маркирай писмата
+markread: Като прочетени
+markunread: Като нови
+markflagged: Като отбелязани
+markunflagged: Като неотбелязани
+markundeleted: Като неизтрити
+markasread: Маркирай като прочетено
+markasunread: Маркирай като непрочетено
+markasflagged: Маркирай като отбелязано
+markasunflagged: Маркирай като неотбелязано
+moreactions: Допълнителни действия...
+markallread: Маркирай всички като прочетени
+folders-cur: Само за избраната папка
+folders-sub: Избраната папка и всички подпапки
+folders-all: Всички папки
+more: Още
+back: Назад
+options: Настройки
+composeoptions: Настройки за писане
+optionsandattachments: Настройки и прикачени файлове
+actions: Действия
+first: Първо
+last: Последно
+previous: Предишно
+next: Следващо
+select: Избери
+selection: Селекция
+all: Всички
+none: Остави без избор
+currpage: Всички на страницата
+isread: Прочетено
+unread: Нови
+flagged: Отбелязани
+unflagged: Без флаг
+unanswered: Без отговор
+withattachment: С прикачен файл
+deleted: Всички изтрити
+undeleted: Които не са изтрити
+replied: Отговорено
+forwarded: Препратено
+invert: Които не са избрани
+filter: Филтър
+list: Списък
+threads: Кореспонденции
+expand-all: Разгъни всички
+expand-unread: Разгъни непрочетените
+collapse-all: Сгъни всички
+threaded: Групирани по кореспонденции
+showunread: Покажи непрочетените писма
+autoexpand_threads: Разгъни кореспонденции
+do_expand: всички кореспонденции
+expand_only_unread: само с непрочетени писма
+fromto: От/До
+flag: Отбелязано
+attachment: Прикачен файл
+nonesort: Няма
+sentdate: Дата на изпращане
+arrival: Дата на получаване
+asc: нарастваща
+desc: намаляваща
+listcolumns: Колони на списък
+listsorting: Подреди по колона
+listorder: Посока на подреждане
+listmode: Изглед на списък
+lmode: Режим на списък
+layout: Оформление
+layoutwidescreen: Широк екран
+layoutdesktop: Настолен екран
+layoutlist: Списък
+layoutwidescreendesc: Широк екран (изглед с 3 колони)
+layoutdesktopdesc: Настолен екран (широк списък и преглед на пощата по-долу)
+layoutlistdesc: Списък (без преглед на пощата)
+folderactions: Действия за папки...
+compact: Уплътни данни
+empty: Изпразни
+importmessages: Импорт на писма
+mailimportdesc: Можете да качвате поща като използвате файлове във формат <a href="https://en.wikipedia.org/wiki/Email#Message_format">MIME</a> или <a href="https://en.wikipedia.org/wiki/Mbox">Mbox</a>.
+mailimportzip: Няколко файла могат да бъдат компресирани в zip архиви.
+quota: Използвано място
+unknown: няма информация
+unlimited: без ограничение
+quotatype: Тип квота
+quotatotal: Лимит
+quotaused: Използвано
+quotastorage: Дисково пространство
+quotamessage: Брой писма
+shortheaderdate: На $date
+shortheaderto: До $to на $date
+shortheaderfrom: От $from на $date
+quicksearch: Бързо търсене
+searchplaceholder: Търсене...
+resetsearch: Изчисти филтър и покажи всичко
+searchmod: Филтър по
+msgtext: Цялото писмо
+body: Основен текст
+type: Тип
+namex: Име
+searchscope: Обхват
+currentfolder: Текуща папка
+subfolders: Тази и подпапките
+allfolders: Всички папки
+searchinterval-1W: по-стари от седмица
+searchinterval-1M: по-стари от месец
+searchinterval-1Y: по-стари от година
+searchinterval1W: по-нови от седмица
+searchinterval1M: по-нови от месец
+searchinterval1Y: по-нови от година
+infolder: 'Папка: $folder'
+currentaddressbook: Текуща адресна книга
+alladdressbooks: Всички адресни книги
+openinextwin: Отвори в нов прозорец
+emlsave: Изтегли (.eml)
+changeformattext: Покажи в текстов формат
+changeformathtml: Покажи в HTML формат
+editasnew: Редактирай като ново
+send: Изпрати
+sendmessage: Изпрати писмото
+savemessage: Запиши като чернова
+addattachment: Прикачване на файл
+charset: Кодова таблица
+editortype: Вид редактор
+returnreceipt: Обратна разписка
+dsn: Нотификация при доставка
+keepformatting: Запази форматирането
+mailreplyintro: 'На $date, $sender написа:'
+originalmessage: Оригинално писмо
+selectimage: Избери изображение
+addimage: Добави изображение
+selectmedia: Избери клип
+addmedia: Добави клип
+encrypt: Криптиране
+encryptmessage: Криптирай писмо
+encryptmessagemailvelope: Криптирай писмо с Mailvelope
+importpubkeys: Внасяне на публични ключове
+encryptedsendialog: Изпращане на криптирано писмо
+encryptandsign: Криптиране и подписване
+keyid: ИН на ключ
+keylength: Бита
+keyexpired: Изтекъл
+keyrevoked: Отменен
+bccinstead: Използвай Скрито копие до
+addheader: Добави получател (Cc, Bcc, ...)
+insert: Вмъкване
+insertcontact: Вмъкване на контакт(и)
+recipient: Получател
+recipientedit: Редактиране на получател
+editidents: Промени самоличности
+spellcheck: Правопис
+checkspelling: Проверка на правописа
+resumeediting: Продължи черновата
+revertto: Върни се към
+restore: Възстанови
+restoremessage: Възстановяване на съобщението?
+ignore: Игнорирай
+responses: Отговори
+insertresponse: Вмъкване на отговор
+manageresponses: Настройка на отговори
+newresponse: Създай нов отговор
+addresponse: Добавяне на отговор
+editresponse: Редакция на отговор
+editresponses: Редакция на отговори
+responsename: Име
+responsetext: Текст на отговор
+attach: Прикачи
+attachments: Прикачени файлове
+upload: Качи
+uploadprogress: $percent ($current от $total)
+close: Затвори
+messageoptions: Настройки на писма...
+togglecomposeoptions: Превключване опции за създаване
+attachmentrename: Преименуване на прикачен файл
+low: Нисък
+lowest: Най-нисък
+normal: Нормален
+high: Висок
+highest: Най-висок
+nosubject: (няма заглавие)
+showimages: Показвай изображения
+allow: Разреши
+alwaysshow: Винаги показвай изображения от $sender
+alwaysallow: Винаги разрешавай от $sender
+isdraft: Това писмо е чернова.
+andnmore: още $nr...
+details: Детайли
+summary: Резюме
+headers: Заглавни блокове
+allheaders: Всички заглавни блокове
+togglemoreheaders: Покажи още заглавни блокове
+togglefullheaders: Изходни заглавни блокове
+htmltoggle: HTML
+plaintoggle: Текстово
+savesentmessagein: Запази изпратеното писмо в
+dontsave: не запазвай
+maxuploadsize: Максимален размер на файл е $size
+addcc: Добави Копие до
+addbcc: Добави Скрито копие до
+addreplyto: Добави Отговор до
+addfollowupto: Добави Препращане към
+sendreceipt: Да се ​​изпрати ли обратна разписка?
+mdnrequest: Подателят е поискал да бъде уведомен, че сте прочели това писмо. Желаете ли да изпратите обратна разписка?
+receiptread: Обратна разписка (прочетено)
+yourmessage: Това е обратна разписка относно писмото Ви
+receiptnote: 'Забележка: Тази разписка потвърждава само, че писмото е било визуализирано на екрана на получателят. Няма никаква гаранция, че той е разбрал и/или дори прочел неговото съдържание.'
+sendalwaysto: Винаги изпращай до $email
+zoomin: Увеличаване
+zoomout: Намаляване
+rotate: Завъртане
+increaseimage: Увеличаване размера на изображението
+decreaseimage: Намаляване размера на изображението
+rotateimage: Завъртане на изображението
+showtools: Показване на инструменти за изображения
+hidetools: Скриване на инструменти за изображения
+name: Екранно име
+firstname: Име
+surname: Фамилия
+middlename: Презиме
+nameprefix: Титла
+namesuffix: Наставка
+nickname: Псевдоним
+jobtitle: Длъжност
+department: Отдел
+gender: Пол
+maidenname: Моминско име
+email: Ел. поща
+phone: Телефон
+address: Адрес
+street: Улица
+locality: Град
+zipcode: Пощенски код
+region: Област
+country: Държава
+birthday: Рожден ден
+anniversary: Дата годишнина
+website: Сайт
+instantmessenger: Месинджър
+notes: Бележки
+male: мъж
+female: жена
+nonbinary: небинарен
+othergender: друг
+manager: Мениджър
+assistant: Асистент
+spouse: Съпруг(а)
+allfields: Всички полета
+search: Търсене
+searchresult: Резултат от търсене
+advsearch: Разширено търсене
+advanced: Търси
+other: Други
+printcontact: Печат на контакт
+qrcode: QR Код
+typehome: Домашен
+typework: Служебен
+typeother: Друг
+typemobile: Мобилен
+typemain: Основен
+typehomefax: Домашен факс
+typeworkfax: Служебен факс
+typecar: В колата
+typepager: Пейджър
+typevideo: Със видео
+typeassistant: На асистент
+typehomepage: Личен
+typeblog: Блог
+typeprofile: Профил
+addfield: Добави поле...
+addcontact: Добави контакт
+editcontact: Редактирай контакт
+contacts: Контакти
+contactproperties: Данни на контакт
+contactnameandorg: Име и Организация
+personalinfo: Лична информация
+personal: Лична
+contactphoto: Снимка на контакт
+edit: Редактирай
+cancel: Отказ
+save: Запис
+delete: Изтрий
+discard: Изхвърли
+continue: Продължи
+ok: ОК
+rename: Преименувай
+addphoto: Добави
+replacephoto: Замени
+uploadphoto: Качване на снимка
+choosefile: Изберете файл...
+choosefiles: Изберете файлове...
+browse: Преглед
+newcontact: Създай нов контакт
+deletecontact: Изтрий избраните контакти
+composeto: Напиши писмо до
+contactsfromto: Контакти $from до $to от $count
+print: Печат
+export: Експорт
+exportall: Експортиране на всичко
+exportsel: Експортиране на избраното
+exportvcards: Експорт във vCard формат
+newgroup: Създай нова група
+addgroup: Добави група
+grouprename: Преименувай групата
+groupdelete: Изтрий групата
+groupassign: Добави към група...
+groupremove: Премахни от групата
+groupremoveselected: Премахни избраните контакти от групата
+uponelevel: Нагоре едно ниво
+previouspage: Предишна страница
+firstpage: Първа страница
+nextpage: Следваща страница
+lastpage: Последна страница
+group: Група
+groups: Групи
+listgroup: Покажи членове на групата
+personaladrbook: Лични адреси
+searchsave: Запази филтър
+searchdelete: Изтрий филтър
+import: Импорт
+importcontacts: Импортиране на контакти
+importfromfile: Импорт от файл
+importtarget: Добави контакти към
+importreplace: Замени цялата адресна книга
+importgroups: Импорт на задачи на група
+importgroupsall: Всички (създава групи ако е необходимо)
+importgroupsexisting: Само за съществуващите групи
+importdesc: Можете да качвате контакти от съществуваща адресна книга.<br/>В момента поддържаме импорт на адреси от формати <a href="https://en.wikipedia.org/wiki/VCard">vCard</a> или CSV (comma-separated).
+importmapdesc: Уверете се, че информацията за свързване на полето по-долу е вярна, преди да продължите с импортирането на CSV (разделени със запетая) данни
+fieldnotmapped: Полето не е свързано (не импортирай)
+skipheader: Не импортирай първия ред (заглавки)
+done: Готово
+birth_day: Ден на раждане
+birth_month: Месец на раждане
+birth_year: Година на раждане
+settingsfor: Настройки за
+about: Относно
+preferences: Настройки
+userpreferences: Потребителски настройки
+editpreferences: Редактирай потребителските настройки
+identities: Самоличности
+manageidentities: Управление самоличности
+newidentity: Създай нова самоличност
+addidentity: Добави самоличност
+editidentity: Редактирай самоличност
+identityencryption: Криптиране
+preferhtml: Покажи първо HTML версия
+defaultcharset: Кодова таблица по подразбиране
+htmlmessage: HTML писмо
+messagepart: Част
+digitalsig: Електронен Подпис
+dateformat: Формат на дати
+timeformat: Формат на време
+prettydate: Удобни дати
+setdefault: По подразбиране
+autodetect: Автоматично
+language: Език
+timezone: Часова зона
+pagesize: Редове на страница
+signature: Подпис
+dstactive: Маркирай при лятно време
+showinextwin: Отваряй писмата в отделен прозорец
+composeextwin: Писане на ново писмо в отделен прозорец
+htmleditor: Писане на ново писмо като HTML
+htmlonreply: само при отговор на HTML писмо
+htmlonreplyandforward: само при препращане или отговор на HTML писмо
+htmlsignature: HTML подпис
+showemail: Показва адрес на ел. поща с екранното име
+previewpane: Показване на панел за преглед
+skin: Изглед на потребителски интерфейс
+logoutclear: Изпразни Кошчето при изход
+logoutcompact: Уплътни данни във Входящи при изход
+uisettings: Потребителски интерфейс
+serversettings: Настройки на сървъра
+mailboxview: Изглед на пощенска кутия
+mdnrequests: При искане за обратна разписка
+askuser: задай въпрос
+autosend: изпрати автоматично винаги
+autosendknown: изпрати автоматично само на моите контакти, иначе задай въпрос
+autosendknownignore: изпрати автоматично само на моите контакти, иначе отхвърли
+autosendtrusted: изпращай разписка на доверените податели, в противен случай ме попитай
+autosendtrustedignore: изпращай разписка на доверените податели, в противен случай игнорирай
+ignorerequest: игнорирай искането
+readwhendeleted: Маркирай писмото като прочетено при изтриване
+flagfordeletion: Отбележи писмото за изтриване
+skipdeleted: Не показвай изтритите писма
+deletealways: При неуспешно местене на писмо в Кошче, изтрий директно
+deletejunk: В папка Спам изтривай писмата без местене в Кошче
+showremoteimages: Покажи вградени изображения
+allowremoteresources: Разрешаване на отдалечени ресурси (изображения, стилове)
+fromknownsenders: от познати податели
+fromtrustedsenders: от доверени податели
+frommycontacts: от моите контакти
+always: винаги
+alwaysbutplain: винаги, освен когато е отговор на текстов формат
+showinlineimages: Покажи прикачените изображения след писмото
+autosavedraft: Автоматично записвай чернова
+everynminutes: през $n минути
+refreshinterval: Проверявай за нова поща
+never: никога
+immediately: веднага
+messagesdisplaying: Показване на писма
+messagescomposition: Писане на писма
+mimeparamfolding: Имена на прикачени файлове
+2231folding: Според RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Според RFC 2047 (други)
+force7bit: Използване на MIME кодиране за 8-битови символи
+savelocalstorage: Запазване в локално хранилище на баузъра (временно)
+advancedoptions: Разширени настройки
+toggleadvancedoptions: Превключване на разширени опции
+focusonnewmessage: Премигване на прозореца при ново писмо
+checkallfolders: 'Проверка за нови писма във всички папки '
+displaynext: Покажи следващия запис от списъка след изтриване/преместване
+defaultfont: Шрифт по подразбиране за HTML писма
+mainoptions: Основни настройки
+browseroptions: Настройки на текущ браузър
+section: Секция
+maintenance: Поддръжка папки
+newmessage: Ново писмо
+signatureoptions: Настройки на подпис
+whenreplying: При отговор на писмо
+replyempty: не цитирай оригиналното писмо
+replytopposting: започни новото писмо над цитата
+replytoppostingnoindent: започни новото писмо над цитата (no indentation)
+replybottomposting: започни новото писмо след цитата
+replyremovesignature: При отговор на писмо премахни предишния подпис
+autoaddsignature: Автоматично добавяй подпис
+newmessageonly: само на нови писма
+replyandforwardonly: само на отговори и препратени
+insertsignature: Вмъкване на подпис
+sigbelow: Постави подписа след цитираното съобщение
+sigseparator: Използвай стандартен разделител в подписите
+automarkread: Маркиране на писмата като прочетени
+afternseconds: след $n секунди
+reqmdn: Винаги изисквай обратна разписка
+reqdsn: Винаги изисквай статус доставка на писмото
+alwayskeepformatting: Винаги съхранявай оригиналното форматиране на текста
+replysamefolder: Постави отговор в папка на писмото, на което се отговаря
+defaultabook: Адресна книга по подразбиране
+autocompletesingle: Пропусни алтернативни адреси на ел. поща при автоматично попълване
+listnamedisplay: Форматирай списък с контакти като
+contactformmode: Режим на форма за контакт
+privatemode: Личен (Домашен)
+businessmode: Бизнес (Служебен)
+collectedaddresses: Събрани адреси
+collectedrecipients: Събрани Получатели
+collectedrecipientsopt: Съхранявай получателите на изходящи писма в
+collectedsendersopt: Съхранявай доверените податели в
+trustedsenders: Доверени Податели
+spellcheckbeforesend: Провери за правописни грешки преди изпращане на писмото
+spellcheckoptions: Настройки на проверката за правопис
+spellcheckignoresyms: Игнорирай думи съдържащи символи
+spellcheckignorenums: Игнорирай думи съдържащи числа
+spellcheckignorecaps: Игнорирай думи съдържащи единствено главни букви
+addtodict: Добави в речника
+editoroptions: Опции на редактора
+enableautolink: Автоматично конвертиране на валидни адреси в хиперлинкове
+mailtoprotohandler: 'Регистрирай RoundCube като интернет приложение, което обработва mailto: връзките в браузъра'
+standardwindows: Обработва изскачащи прозорци като стандартни прозорци
+forwardmode: Препращай писмата
+inline: цитирани в писмото
+asattachment: като прикачен файл
+replyallmode: Действие по подразбиране на бутон [Отговор на всички]
+replyalldefault: отговори на всички
+replyalllist: отговори само на пощенския списък (ако има)
+allmessages: за всички писма
+olderxdays: по-стари от $x дни
+folder: Папка
+folders: Папки
+foldername: Име на папката
+subscribed: Абониран
+messagecount: Писма
+create: Създай
+createfolder: Нова папка
+managefolders: Управление на папките
+specialfolders: Служебни папки
+properties: Данни
+folderproperties: Свойства на папката
+parentfolder: Основна папка
+location: Местоположение
+info: Информация
+getfoldersize: Щракни за размер на папката
+changesubscription: Щракни за промяна на абонамент
+foldertype: Вид на папката
+personalfolder: Лична папка
+otherfolder: Папка на друг потребител
+sharedfolder: Публична папка
+findfolders: Търсене на папки
+findcontacts: Търсене на контакти
+findmail: Търсене на писма
+namespace.personal: Лична
+namespace.other: Други потребители
+namespace.shared: Споделена
+dualuselabel: Може да съдържа само
+dualusemail: писма
+dualusefolder: папки
+generate: Генериране
+encryptioncreatekey: Създай нова ключова двойка
+openmailvelopesettings: Отвори настройки на Mailvelope
+encryptionprivkeysinmailvelope: 'Имате $nr съвпадащи частни ключа, съхранени във вашия Mailvelope ключодържател:'
+encryptionnoprivkeysinmailvelope: Тази самоличност на подателя все още няма частен PGP ключ, съхраняван във вашето Mailvelope разширение. Искате ли да създадете такъв, за да използвате криптирани писма?
+encryption: Криптиране
+mailvelopeoptions: Настройки на Mailvelope
+mailvelopemainkeyring: Използвай основния ключодържател на Mailvelope
+mailvelopenotfound: Разширението Mailvelope не е активирано/инсталирано във вашия браузър.
+mailvelopeenable: Разреши
+sortby: Сортирай по
+sortasc: Сортирай нарастващо
+sortdesc: Сортирай намаляващо
+undo: Отмени
+installedplugins: Инсталирани добавки
+plugin: Добавка
+version: Версия
+source: Източник
+destination: Цел
+license: Лиценз
+skinauthor: по $author
+support: Поддръжка
+savedsearches: Запазени търсения
+dateformatY: ГГГГ
+dateformaty: ГГ
+dateformatm: ММ
+dateformatd: ДД
+dateformatj: Д
+dateformatn: М
+B: Б
+KB: КБ
+MB: МБ
+GB: ГБ
+unicode: Уникод
+english: Английски
+westerneuropean: Западна Европа
+easterneuropean: Източна Европа
+southeasterneuropean: Югоизточна Европа
+baltic: Балтийски
+cyrillic: Кирилица
+arabic: Арабски
+greek: Гръцки
+hebrew: Иврит
+turkish: Турски
+nordic: Скандинавски
+thai: Тайландски
+celtic: Келтски
+vietnamese: Виетнамски
+japanese: Японски
+korean: Корейски
+chinese: Китайски
+arialabeltopnav: Контрол на прозорците
+arialabeltasknav: Задачи на приложението
+arialabeltoolbar: Ленти с инструменти
+arialabellistnav: Навигация на cписък
+arialabelactivetask: Активна задача
+arialabelmessagessearchfilter: Филтър на списък с писма
+arialabelmailsearchform: Форма за търсене на писма
+arialabelcontactsearchform: Форма за търсене на контакти
+arialabelmailquicksearchbox: Поле за търсене на писма
+arialabelquicksearchbox: Поле за търсене
+arialabelfoldersearchfilter: Филтър за списък папки
+arialabelfoldersearchform: Форма за търсене в папки
+arialabelfolderlist: Избор на папка с писма
+arialabelmessagelist: Списък с писма
+arialabelmailpreviewframe: Преглед на писмо
+arialabelmailboxmenu: Меню с действия върху папка
+arialabellistselectmenu: Меню за избор в списък
+arialabelthreadselectmenu: Меню за списък с кореспонденции
+arialabelmessagelistoptions: Опции за преглед и сортиране на списък с писма
+arialabelmailimportdialog: Диалог за импорт на писма
+arialabelmessagenav: Навигация на писма
+arialabelmessagebody: Текст на писмо
+arialabelmessageactions: Действия за писмо
+arialabelcontactquicksearch: Форма за търсене на контакти
+arialabelcontactsearchbox: Поле за търсене на контакт
+arialabelmessageheaders: Заглавни блокове на писмо
+arialabelforwardingoptions: Настройки за препращане
+arialabelreplyalloptions: Настройки за отговор към всички
+arialabelmoremessageactions: Още действия с писмо
+arialabelmorecontactactions: Още действия с контакт
+arialabelmarkmessagesas: Маркирай избраните писма като...
+arialabelcomposeoptions: Настройки за създаване
+arialabelresponsesmenu: Меню с готови отговори
+arialabelattachmentuploadform: Форма за качване на прикачени файлове
+arialabelattachmentmenu: Настройки на прикачени файлове
+arialabelmailtomenu: Настройки на адреса на ел. поща
+arialabelattachmentpreview: Преглед на прикачени файлове
+ariasummarycomposecontacts: Списък с контакти и групи за избор като получатели
+arialabelcontactexportoptions: Настройки за експорт на контакти
+arialabelabookgroupoptions: Настройки на адресна книга/групи
+arialabelpreferencesform: Форма с предпочитания
+arialabelidentityeditfrom: Форма редакция на самоличност
+arialabelresponseeditfrom: Форма редакция на отговор
+arialabelsearchterms: Търсене за
+arialabeldropactionmenu: Меню за действие Drag-n-Drop
+arialabelheadersmenu: Меню за Добавяне получател (заглавен блок)
+arialabelimagetools: Инструменти за изображения
+helplistnavigation: Списък за клавиатурна навигация
+helplistkeyboardnavigation: "Стрелки нагоре/надолу: Премества фокус/избран ред.\nИнтервал: Избор на фокусиран ред.\nShift + нагоре/надолу: Добавяне към избраните на реда отгоре/отдолу.\nCtrl + Интервал: Добавяне на фокусирания ред към избраните/премахване от избраните."
+helplistkeyboardnavmessages: "Стрелки надясно/наляво: Разпъване/сгъване на писмата на кореспонденцията (само в изглед по кореспонденции).\nEnter: Отваряне на избраното/фокусираното писмо.\nDelete: Премества избраните писва в Кошче."
+helplistkeyboardnavcontacts: 'Enter: Отваряне на избрания/фокусирания контакт.'
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

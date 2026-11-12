@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for mk_MK. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: Добредојдовте во $product
+username: Корисничко име
+password: Лозинка
+server: Сервер
+login: Најава
+logout: Одјава
+mail: Е-пошта
+settings: Нагодувања
+addressbook: Именик
+inbox: Примени
+drafts: Непратени
+sent: Пратени
+trash: Корпа
+junk: Ѓубре
+show_real_foldernames: 'Прикажи ги вистинските имиња за специјалните папки '
+subject: Наслов
+from: Од
+sender: Праќач
+to: Примач
+cc: Копирај
+bcc: Bcc
+replyto: Препрати на
+followupto: Проследи до
+date: Датум
+size: Големина
+priority: Приоритет
+organization: Организација
+readstatus: 'Прочитај статус '
+listoptions: Опции на листа...
+mailboxlist: Папки
+messagesfromto: Писма од $from до $to од $count
+threadsfromto: Теми $од до $до на $брои
+messagenrof: Писмо $nr од $count
+fromtoshort: $од - $до на $брои
+copy: Копирај
+move: Премести
+moveto: Премести во...
+copyto: Копирај во ...
+download: Преземи
+open: Отвори
+showattachment: Прикажи
+showanyway: Прикажи го во секој случај
+filename: Име на податотеката
+filesize: Големина на податотеката
+addtoaddressbook: Додај во именик
+sun: Нед
+mon: Пон
+tue: Вто
+wed: Сре
+thu: Чет
+fri: Пет
+sat: Саб
+sunday: Недела
+monday: Понеделник
+tuesday: Вторник
+wednesday: Среда
+thursday: Четврток
+friday: Петок
+saturday: Сабота
+jan: Јан
+feb: Фев
+mar: Мар
+apr: Апр
+may: Мај
+jun: Јун
+jul: Јул
+aug: Авг
+sep: Сеп
+oct: Окт
+nov: Ное
+dec: Дек
+longjan: Јануари
+longfeb: Февруари
+longmar: Март
+longapr: Април
+longmay: Мај
+longjun: Јуни
+longjul: Јули
+longaug: Август
+longsep: Септември
+longoct: Октомври
+longnov: Ноември
+longdec: Декември
+today: Денес
+refresh: Освежи
+checkmail: Провери пошта
+compose: Пиши ново писмо
+writenewmessage: Ново писмо
+reply: 'Врати '
+replytomessage: Одговори на испраќачот
+replytoallmessage: Одговори на испраќачот и сите примачи
+replyall: Одговори на сите
+replylist: Листа за одговарање
+forward: 'Препрати '
+forwardinline: 'Препрати во линија '
+forwardattachment: 'Препрати како '
+forwardmessage: Препрати писмо
+deletemessage: Избриши писмо
+movemessagetotrash: Премести ги писмата во Корпа
+printmessage: Испечати писмо
+previousmessage: Прикажи го претходното писмо
+firstmessage: Прикажи го првото писмо
+nextmessage: Прикажи го следното писмо
+lastmessage: Прикажи го последното писмо
+backtolist: Назад кон листа на писма
+viewsource: Покажи го изворот на писмото
+mark: 'Означи '
+markmessages: Обележи ги писмата
+markread: Како прочитани
+markunread: Како непрочитани
+markflagged: Како обележано
+markunflagged: Како необележано
+moreactions: Повекје акции...
+markallread: 'Означи ги сите како прочитани '
+folders-cur: 'Означи ја само папката '
+folders-sub: 'Означи ја папката и нејзините подпапки '
+folders-all: Сите папки
+more: Повеќе
+back: Назад
+options: 'Опции '
+first: Прво
+last: Последно
+previous: Претходно
+next: Следно
+select: Одбери
+all: Сите
+none: Ниедно
+currpage: Моменталната страница
+isread: Читај
+unread: Непрочитани
+flagged: Обележано
+unflagged: Не обележано
+unanswered: Неодговорено
+withattachment: Со додатоци
+deleted: Избришано
+undeleted: 'Не избришано '
+replied: Одговорено
+forwarded: Препратено
+invert: Обратно
+filter: Филтер
+list: 'Листа '
+threads: 'Теми '
+expand-all: 'Прошири ги сите '
+expand-unread: 'Прошири ги непрочитаните '
+collapse-all: 'Намали ги сите '
+threaded: 'Навојни '
+autoexpand_threads: 'Прошири ги теми пораките '
+do_expand: 'сите теми '
+expand_only_unread: 'само со непрочитани теми '
+fromto: 'Од/до '
+flag: Облежи
+attachment: Прилог
+nonesort: Ниедно
+sentdate: 'Дата на праќање '
+arrival: 'Дата на пристигање '
+asc: Растечки
+desc: Опаѓачки
+listcolumns: 'Список со колони '
+listsorting: Сортирање колони
+listorder: 'Ред на сортирање '
+listmode: 'Начин на преглед - листа '
+layout: 'Распоред '
+layoutwidescreen: Широк екран
+layoutdesktop: Работната површина
+layoutlist: Список
+folderactions: 'Акции на папка '
+compact: Компактно
+empty: Испразни
+importmessages: Внеси пораки
+quota: Искористен простор
+unknown: непознато
+unlimited: неограничено
+quotatype: 'Тип на квота '
+quotatotal: Лимит
+quotaused: Користени
+quotastorage: Простор на дискот
+quotamessage: Број пораки
+quicksearch: Брзо пребарување
+resetsearch: Ново пребарување
+searchmod: Модификатори на пребарувањето
+msgtext: Цело писмо
+body: Тело
+type: Тип
+namex: Име
+searchscope: Опсег
+currentfolder: 'Моментална папка '
+subfolders: 'Ова ги затвара подпапките '
+allfolders: 'Сите под папки '
+searchinterval-1W: 'постари од една недела '
+searchinterval-1M: 'постари од еден месец '
+searchinterval-1Y: 'постари од една година '
+searchinterval1W: 'помлади од една недела '
+searchinterval1M: 'помлади од еден месец '
+searchinterval1Y: 'помлади од една година '
+openinextwin: Отвори во нов прозорец
+emlsave: Преземи (.eml)
+changeformattext: 'Прикажи во обичен формат на текс '
+changeformathtml: Прикажи во HTML формат
+editasnew: Уреди како ново
+send: Прати
+sendmessage: Испрати сега
+savemessage: Зачувај го писмото во Непратени
+addattachment: Приложи податотека
+charset: Збир од знаци
+editortype: Тип на уредник
+returnreceipt: Врати
+dsn: известување за статусот на испорака
+mailreplyintro: 'На $дата,$праќач напиша:'
+originalmessage: Оригинална порака
+selectimage: 'Селектирај слика '
+addimage: 'Додај слика '
+selectmedia: Селектирај филм
+addmedia: 'Додај филм '
+encrypt: 'Енкриптирај '
+encryptmessage: 'Енкриптирај порака '
+encryptmessagemailvelope: 'Енкриптирај порака  со Mailvelope '
+importpubkeys: 'Внеси јавни клучови '
+encryptedsendialog: 'Праќање енкриптирана порака '
+keyid: Клуч ID
+keylength: 'Битови '
+keyexpired: Истечено
+keyrevoked: Отповикан
+bccinstead: Користи Bcc
+insert: 'Внеси '
+recipient: Примач
+editidents: 'Уреди идентитети '
+spellcheck: Правопис
+checkspelling: Провери правопис
+resumeediting: Продолжи со уредување
+revertto: Врати на
+restore: Врати
+restoremessage: Врати порака?
+ignore: Игнорирај
+responses: Одговори
+insertresponse: Внеси одговор
+manageresponses: Менаџирај одговор
+newresponse: Создај нов одговор
+addresponse: додај одговор
+editresponse: Уреди одговор
+editresponses: 'Уреди одговори '
+responsename: 'Име '
+responsetext: Текст за одговор
+attach: 'Прикчи '
+attachments: Приложено
+upload: Подигни
+uploadprogress: $процент($моментално од $вкупно)
+close: Затвори
+messageoptions: 'Опции на порака '
+togglecomposeoptions: Вклучи ги опциите за состав
+attachmentrename: Преименувај приврзување
+low: Низок
+lowest: Најнизок
+normal: Нормален
+high: Висок
+highest: Највисок
+nosubject: (без наслов)
+showimages: Прикажи слики
+alwaysshow: Секогаш прикажувај ги сликите од $sender
+isdraft: Ова е нацрт-порака.
+andnmore: $nr повеќе...
+togglemoreheaders: Прикажи повеќе заглавија на пораки
+togglefullheaders: 'Вклучи необработени заглавја на пораки '
+htmltoggle: HTML
+plaintoggle: Обичен текст
+savesentmessagein: Сними го пратеното писмо во
+dontsave: не зачувувај
+maxuploadsize: Максималната дозволена големина за податотеката е $size
+addcc: Додај Cc
+addbcc: Додај Bcc
+addreplyto: Додај Одговори-на
+addfollowupto: Додај следење-до
+mdnrequest: Праќачот на оваа порака сака да биде известен кога ќе го прочитате писмото. Дали сакате да го известите?
+receiptread: Извести (прочитано)
+yourmessage: Ова е известување за вашата порака
+receiptnote: 'Напомена: Ова известување само потврдува дека писмото кое сте го пратиле е отворено. Не е гаранција дека примачот го прочитал или разбрал истото.'
+name: Име за приказ
+firstname: Име
+surname: Презиме
+middlename: 'Средно име '
+nameprefix: 'Префикс '
+namesuffix: 'Суфикс '
+nickname: Прекар
+jobtitle: 'Назив на работа '
+department: Оддел
+gender: Пол
+maidenname: Моминско име
+email: Е-пошта
+phone: Телефон
+address: 'Адреса '
+street: 'Улица '
+locality: 'Град '
+zipcode: Поштенски код
+region: Држава / Провинција
+country: Земја
+birthday: Роденден
+anniversary: Годишнина
+website: 'Веб страна '
+instantmessenger: ИМ
+notes: Белешки
+male: Машки
+female: Зенски
+manager: Менаџер
+assistant: 'Асистент '
+spouse: Сопруг
+allfields: 'Сите полиња '
+search: Барај
+searchresult: 'Резултати од пребарување '
+advsearch: Напредно Пребарување
+advanced: Напредно
+other: Друго
+printcontact: 'Испринтај контакт '
+qrcode: QR Код
+typehome: Дома
+typework: Работа
+typeother: Друго
+typemobile: 'Мобилен '
+typemain: 'Главен '
+typehomefax: 'Домашен факс '
+typeworkfax: 'Службен факс '
+typecar: 'Кола '
+typepager: Пејџер
+typevideo: 'Видео '
+typeassistant: 'Асистент '
+typehomepage: 'Домашна страна '
+typeblog: Блог
+typeprofile: 'Профил '
+addfield: Додај поле
+addcontact: 'Додај контакт '
+editcontact: Уреди контакт
+contacts: 'Контакти '
+contactproperties: 'Својства ан контакти '
+contactnameandorg: 'Име и организација '
+personalinfo: Лични информаци
+personal: Лично
+contactphoto: Слика на контакт
+edit: Уреди
+cancel: Откажи
+save: Зачувај
+delete: Избриши
+discard: Отфрли
+rename: Преименувај
+addphoto: Додај
+replacephoto: Замени
+uploadphoto: 'Прикачи слика '
+newcontact: 'Креирај нов контакт '
+deletecontact: Избриши ги следните имиња
+composeto: Напиши порака за
+contactsfromto: Имиња од $from до $to од $count
+print: Испечати
+export: Извези како
+exportall: 'Премести се '
+exportsel: 'Премести селектирани '
+exportvcards: Извези ги контактите во vCard формат
+newgroup: 'Создај нова група '
+addgroup: 'Додај група '
+grouprename: 'Преименувај група '
+groupdelete: 'Ибриши група '
+groupremoveselected: Избриши селектирани контакти од групата
+uponelevel: Едно ниво горе
+previouspage: Прикажи претходна страна
+firstpage: Прикажи ја првата страна
+nextpage: Прикажи ја следната страна
+lastpage: Прикажи ја последната страна
+group: 'Група '
+groups: Групи
+listgroup: 'Листа на членови на групата '
+personaladrbook: Лични адреси
+searchsave: 'Зачувај пребарување '
+searchdelete: 'Избриши пребарување '
+import: Увези
+importcontacts: Увези контакти
+importtarget: 'Додај контакти во '
+importreplace: Замени го целиот именик
+importgroups: 'Внеси задачи за група '
+importgroupsall: Сите (создај групи ако е потребно)
+importgroupsexisting: 'Само за постоечки групи '
+done: Завршено
+settingsfor: Нагодувања за
+about: 'За '
+preferences: Нагодувања
+userpreferences: Кориснички нагодувања
+editpreferences: Промени кориснички нагодувања
+identities: Идентитети
+manageidentities: 'Менаџирај идентитети '
+newidentity: 'Создај нов идентитет '
+addidentity: Додај нов идентитет
+editidentity: Уреди идентитет
+preferhtml: Прикажи во HTML
+defaultcharset: 'Стандарден сет на карактери '
+htmlmessage: HTML писмо
+messagepart: 'Дел '
+digitalsig: 'Дигитален потпис '
+dateformat: 'Дата формат '
+timeformat: 'Формат на време '
+prettydate: Убави датуми
+setdefault: Постави за основно
+autodetect: Автоматски
+language: Јазик
+timezone: Часовна зона
+pagesize: Редови по страна
+signature: Потпис
+dstactive: Промени на времето
+showinextwin: 'Отвори порака во нов прозорец '
+composeextwin: Компонирај во нов прозорец
+htmleditor: Пиши HTML порака
+htmlonreply: 'на одговор до HTML порака '
+htmlonreplyandforward: 'на препраќање или одговор до HTML порака '
+htmlsignature: HTML потпис
+showemail: 'Покажи email адреса со име на екран '
+previewpane: Прикажи прозорец за преглед
+skin: Модел на изгледот
+logoutclear: Исчисти ја Кантата при излез
+logoutcompact: Подреди ги примените при излез
+uisettings: Кориснички изглед
+serversettings: Нагодувања на серверот
+mailboxview: Приказ на поштенското сандаче
+mdnrequests: Известувања за праќачот
+askuser: прашај го корисникот
+autosend: испрати автоматски
+autosendknown: 'прати примач до моите контакти, инаку прашај ме '
+autosendknownignore: 'прати примач до моите контакти, инаку игнорирај '
+ignorerequest: 'игнорирај барање '
+readwhendeleted: Обележи го писмото како прочитано при бришење
+flagfordeletion: Обележи го писмото за бришење наместо да го избришеш
+skipdeleted: Не ги прикажувај избришаните писма
+deletealways: 'Ака преместувањето на пораките до ѓубрето не успее, избриши ги '
+deletejunk: Дирктно избриши пораки во ѓубре
+showremoteimages: Прикажи вметнати слики
+fromknownsenders: од познати праќачи
+always: секогаш
+alwaysbutplain: 'секогаш, освен при одговарање на обичен текст '
+showinlineimages: Прикажи приложени слики под писмото
+autosavedraft: Авоматски зачувувај во Непратени
+everynminutes: секои $n минути
+refreshinterval: Освежи(провери за нови пораки, и сл.)
+never: никогаш
+immediately: Веднаш
+messagesdisplaying: Прикажување на писма
+messagescomposition: Пишување на писма
+mimeparamfolding: Име на прикачените податотеки
+2231folding: Полн RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: Полн RFC 2047 (друго)
+force7bit: 'Користи MIME кодирање за 8-битни карактери '
+savelocalstorage: Зачувајте во локалното складирање на прелистувачот (привремено)
+advancedoptions: Напредни можности
+toggleadvancedoptions: 'Вклучи напредни опции '
+focusonnewmessage: Фокусирај го прозорецот на прелистувачот на новото писмо
+checkallfolders: Провери ги сите папки за нови писма
+defaultfont: 'Стандарден фонд на  HTML пораки '
+mainoptions: Главни можности
+browseroptions: Опции на прелистувач
+section: Заглавие
+maintenance: Одржување
+newmessage: Ново писмо
+signatureoptions: Можности за потписот
+whenreplying: При одговарање
+replyempty: Не ја цитирајте оригиналната порака
+replytopposting: новото писмо започни го над оригиналот
+replytoppostingnoindent: почни нова порака над цитатот (без вовлекување)
+replybottomposting: новото писмо започни го под оригиналот
+replyremovesignature: При одговарање отстрани го изворниот потпис од писмото
+autoaddsignature: Автоматски додавај потпис
+newmessageonly: само нови писма
+replyandforwardonly: само одгорови и препраќања
+insertsignature: Вметни потпис
+sigbelow: 'Стави потпис под цитираната порака '
+sigseparator: Форсирај стандарден одделувач во потписите
+afternseconds: 'после $n секунди '
+reqmdn: 'Секогаш побарај повратна порака '
+reqdsn: Секогаш барајте известување за статусот на испорака
+replysamefolder: Поставете ги одговорите во папката на пораката на која е одговорено
+defaultabook: Стандардна книга на адреси
+autocompletesingle: 'Сконки алтернативни email адреси во автоматско довршување '
+listnamedisplay: 'Листа на контакти како '
+spellcheckbeforesend: 'Провери правопис пред испраќање на порака '
+spellcheckoptions: Опции за проверка на правопис
+spellcheckignoresyms: Игнорирај зборови со симболи
+spellcheckignorenums: 'Игнорирај зборови со броеви '
+spellcheckignorecaps: Игнорирај зборови со сите големи букви
+addtodict: Додај во речник
+mailtoprotohandler: 'Регистрирај управувач на протокол за mailto: линкови'
+standardwindows: 'Справи се со скокачки прозори како обични прозори '
+forwardmode: пораката се препраќа
+inline: во линија
+asattachment: како додаток
+replyallmode: 'Стандардна акција од [Одговори на сите] копче '
+replyalldefault: 'одговори на сите '
+replyalllist: Одговори само на мејлинг листа (ако е пронајдена)
+allmessages: 'Сите пораки '
+folder: Папка
+folders: Папки
+foldername: Име на папката
+subscribed: Претплатен
+messagecount: Пораки
+create: Создај
+createfolder: Создај нова папка
+managefolders: Организирање на папки
+specialfolders: Специјални папки
+properties: 'Својства '
+folderproperties: 'Својства на папка '
+parentfolder: 'Родител папка '
+location: 'Локација '
+info: 'Информација '
+getfoldersize: Кликни за да ја добиеш големината на папката
+changesubscription: 'Кликни за да сменисх претплата '
+foldertype: 'Тип на папка '
+personalfolder: 'Приватна папка '
+otherfolder: Папка на други корисници
+sharedfolder: 'Јавна папка '
+findfolders: 'Најди папки '
+namespace.personal: Лично
+namespace.other: Други корисници
+namespace.shared: Споделено
+sortby: Сортирај по
+sortasc: Сортирај нагорно
+sortdesc: Сортирај надолно
+undo: 'Врати '
+installedplugins: 'Инсталирани прикличоци '
+plugin: 'Прикличоци '
+version: 'Верзии '
+source: Извор
+license: Лиценца
+support: 'Добиј подршка '
+B: Б
+KB: КБ
+MB: МБ
+GB: ГБ
+unicode: Уникод
+english: 'Англиски '
+westerneuropean: Западно европски
+easterneuropean: 'Источно европски '
+southeasterneuropean: Југо-источно европски
+baltic: 'Балтички '
+cyrillic: Кириличен
+arabic: Арапски
+greek: Грчки
+hebrew: Еврејски
+turkish: Турски
+nordic: Нордиски
+thai: Тајландски
+celtic: Селтик
+vietnamese: Виетнамски
+japanese: Јапонски
+korean: Корејски
+chinese: Кинески
+arialabeltopnav: 'Контрола на прозорец '
+arialabeltasknav: 'Задачи на апликацијата '
+arialabeltoolbar: 'Лента со алатки на апликацијата '
+arialabelactivetask: 'Активни задачи '
+arialabelmessagessearchfilter: Филтер за прелистување на е-пошта
+arialabelmailsearchform: 'Форма на пребарување на е-пошта '
+arialabelcontactsearchform: 'Форма на пребарување контакти '
+arialabelmailquicksearchbox: Внес на е-пошта пребарување
+arialabelquicksearchbox: Пребарување влез
+arialabelfoldersearchfilter: Филтер за листата со папки
+arialabelfoldersearchform: 'Форма за пребарување папки '
+arialabelfolderlist: 'Селекција на е-маил папки '
+arialabelmessagelist: Листа на пораки за е-пошта
+arialabelmailpreviewframe: Преглед на порака
+arialabelmailboxmenu: Мени за дејства на папките
+arialabellistselectmenu: Мени за избор на листа
+arialabelthreadselectmenu: Мени за листа на теми
+arialabelmessagelistoptions: 'Приказ на листа на пораки и опции за сортирање '
+arialabelmailimportdialog: 'Дијалог за внес на порака '
+arialabelmessagenav: Навигација за пораки
+arialabelmessagebody: Тело на порака
+arialabelmessageactions: Акции за порака
+arialabelcontactquicksearch: 'Форма за барање контакти '
+arialabelcontactsearchbox: 'Влез за пребарување контакти '
+arialabelmessageheaders: 'Заглавја на порака '
+arialabelforwardingoptions: 'Опции за препраќање '
+arialabelreplyalloptions: 'Опции за Врати на сите '
+arialabelmoremessageactions: 'Повеке акции за порака '
+arialabelmarkmessagesas: Означи ги селектираните пораки како...
+arialabelcomposeoptions: Опции за композиција
+arialabelresponsesmenu: Мени за одобрени одговори
+arialabelattachmentuploadform: 'Форма за прикачени додатоци '
+arialabelattachmentpreview: 'Преглед на додатоци '
+ariasummarycomposecontacts: 'Листа на контакти и групи  за да се селектираат како примачи  '
+arialabelcontactexportoptions: 'опции за изнес на контакти '
+arialabelabookgroupoptions: Опции за Адресар/група
+arialabelpreferencesform: Форма на преференции
+arialabelidentityeditfrom: 'Форма за едитирање идентитети '
+arialabelresponseeditfrom: 'Форма за едитирање на одговори '
+arialabelsearchterms: Термини за пребарување
+helplistnavigation: 'Листа со навигација на тастатура '
+helplistkeyboardnavigation: "Стрелки горе/доле: Помести фокус на ред/селекција.\nСпејс: Селектирај фокусиран ред.\nШифт + горе/доле: Селектирај додатен ред над/под.\nЦтрл + Спејс: Додај го фокусираниот ред во селекцијата/тргни го од селекцијата."
+helplistkeyboardnavmessages: "Стрелки десно/лево: прошири/собери теми на порака (само во теми модул).\nЕнтер: Отвори ја селектираната/фокусираната порака.\nИзбриши: Премести ја селектираната порака во ѓубрето."
+helplistkeyboardnavcontacts: 'Ентер: Отвори го селектираниот/фокусираниот контакт.'
+oauthlogin: ''
+menu: ''
+darkmode: ''
+lightmode: ''
+listoptionstitle: ''
+bouncemsg: ''
+bounce: ''
+undeletemessage: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+composeoptions: ''
+optionsandattachments: ''
+actions: ''
+selection: ''
+showunread: ''
+lmode: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+mailimportdesc: ''
+mailimportzip: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+searchplaceholder: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+keepformatting: ''
+encryptandsign: ''
+addheader: ''
+insertcontact: ''
+recipientedit: ''
+allow: ''
+alwaysallow: ''
+details: ''
+summary: ''
+headers: ''
+allheaders: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+nonbinary: ''
+othergender: ''
+continue: ''
+ok: ''
+choosefile: ''
+choosefiles: ''
+browse: ''
+groupassign: ''
+groupremove: ''
+importfromfile: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+identityencryption: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+displaynext: ''
+automarkread: ''
+alwayskeepformatting: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+editoroptions: ''
+enableautolink: ''
+olderxdays: ''
+findcontacts: ''
+findmail: ''
+dualuselabel: ''
+dualusemail: ''
+dualusefolder: ''
+generate: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+encryption: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+destination: ''
+skinauthor: ''
+savedsearches: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+arialabellistnav: ''
+arialabelmorecontactactions: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for ka_GE. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: დაფიქსირდა შეცდომა!
+loginfailed: შესვლა შეუძლებელია
+cookiesdisabled: თქვენი ბროუზერი კუკიებს არ პასუხობს
+sessionerror: თქვენი სესია არის მცდარი ან ვადაგასული
+storageerror: IMAP სერვერთან დაკავშირება შეუძლებელია
+servererror: შეცდომა სერვერზე!
+servererrormsg: 'სერვერის შეცდომა: $msg'
+accountlocked: ძალიან ბევრი წარუმატებელი შესვლის მცდელობა. მოგვიანებით სცადეთ.
+connerror: კავშირის შეცდომა (სერვერთან კავშირი შეუძლებელია)!
+dberror: მონაცემთა ბაზის შეცდომა!
+requesttimedout: მოთხოვნას ვადა გაუვიდა
+errorreadonly: ოპერაციის შესრულება შეუძლებელია. საქაღალდე არის მხოლოდ წაწკითხვის რეჟიმში.
+errornoperm: მოქმედების შესრულება შეუძლებალია. წვდომა აკრძალულია.
+erroroverquota: მოქმედების შესრულება შეუძლებალია. დისკზე არ დარჩა თავისუფალი ადგილი.
+erroroverquotadelete: დისკზე არ დარჩა თავისუფალი ადგილი. გამოიყენეთ SHIFT+DEL შეტყობინების წასასშლელად.
+invalidrequest: არასწორი მოთხოვნა! მონაცემების შენახვა არ მოხერხდა.
+invalidhost: არასწორი სერვერის სახელი
+nomessagesfound: არ არის ახალი შეტყობინება
+mailboxempty: საფოსტო ყუთი ცარიელია
+nomessages: არ არის შეტყობინებები
+refreshing: განახლება...
+loading: იტვირთება...
+uploading: ფაილი იტვირთება...
+attaching: ფაილის მიმაგრება...
+uploadingmany: ფაილების ატვირთვა...
+loadingdata: მონაცემების ჩატვირთვა...
+checkingmail: ახალი შეტყობინების ნახვა
+sendingmessage: შეტყობინების გაგზავნა
+messagesent: შეტყობინება გაიგზავნა წარმატებით
+savingmessage: შეტყობინების შენახვა...
+messagesaved: შეტყობინების დროებით შენახვა
+successfullysaved: წარმატებით შეინახა
+addedsuccessfully: კონტაქტი წარმატებით დაემატა მისამართებში
+contactnameexists: კონტაქტი იგივე სახელით უკვე არსებობს.
+blockedimages: უსაფრთხოების მიზნით სურათების ჩვენება შეზღუდულია
+encryptedmessage: შეტყობინება დაშიფრულია და სამწუხაროდ ჩვენება შეუძლებელია
+nocontactsfound: კონტაქტი ვერ მოიძებნა
+contactnotfound: მოთხოვნილი კონტაქტი ვერ მოიძებნა
+sendingfailed: შეტყობინება ვერ გაიგზავნა
+senttooquickly: გთხოვთ მოიცადოთ $sec წამი. სანამ იგზავნება შეტყობინება
+errorsavingsent: გაგზავნილი შეტყობინების შენახვის დროს მოხდა შეცდომა.
+errorsaving: შეტყობინების შენახვის დროს მოხდა შეცდომა
+errormoving: შეტყობინების გადატანა შეუძლებელია
+errorcopying: შეტყობინების კოპირება შეუძლებელია.
+errordeleting: შეტყობინების წაშლა შეუძლებელია
+errormarking: შეტყობინების მონიშვნა შეუძლებელია
+alerttitle: ყურადღება
+deletecontactconfirm: ნამდვილად გსურთ მონიშნული კონტაქტების წაშლა?
+deletegroupconfirm: ნამდვილად გსურთ მონიშნული ჯგუფის წაშლა?
+deletemessagesconfirm: ნამდვილად გსურთ მონიშნული შეტყობინებების წაშლა?
+deletefolderconfirm: ნამდვილად გსურთ ამ საქაღალდის წაშლა?
+purgefolderconfirm: ნამდვილად გსურთ ყველა შეტყობინების წაშლა აღნიშნულ საქაღალდეში?
+contactdeleting: კონტაქტის წაშლა...
+groupdeleting: ჯგუფის წაშლა...
+folderdeleting: საქაღალდის წაშლა...
+foldermoving: საქაღალდის გადატანა...
+foldersubscribing: საქაღალდის გამოწერა...
+folderunsubscribing: საქაღალდის გამოწერაის გაუქმება...
+formincomplete: ყველა ველი არ არის შევსებული
+noemailwarning: მიუთითეთ სწორი ელ–ფოსტის მისამართი
+nonamewarning: მიუთითეთ სახელი
+nopagesizewarning: მიუთითეთ ფურცლის ზომა
+norecipientwarning: მიუთითეთ მიმღები
+nosubjectwarning: გსურთ თუ არა შეტყობინების გაგზავნა უსათაუროდ?
+nobodywarning: გსურთ თუ არა შეტყობინების გაგზავნა უტექსტოდ?
+nosearchname: მიუთითეთ სახელი ან ელ–ფოსტის მისამართი
+notuploadedwarning: ჯერ არ ატვირთულა ყველა მიმაგრებული ფაილი. დაელოდეთ ან გააუქმეთ ატვირთვა.
+searchsuccessful: $nr შეტყობინეა მოიძებნა
+contactsearchsuccessful: ნაპოვნია $nr კონტაქტი
+searchnomatch: შეტყობინება ვერ მოიძებნა
+searching: ძიება...
+checking: შემოწმება...
+stillsearching: ჯერ კიდევ ეძებს ...
+nospellerrors: ორთოგრაფიული შეცდომა არ არის
+folderdeleted: საქაღალდე წარმატებით წაიშალა
+foldersubscribed: საქაღალდე წარმატებით გამოწერილია.
+folderunsubscribed: საქაღალდის გამოწერა წარმატებით გაუქმებულია.
+deletedsuccessfully: წარმატებით წაიშალა
+converting: შეტყობინების ფორმატირების გაუქმება...
+messageopenerror: შეტყობინება ვერ ჩაიტვირთა სერვერიდან
+filelinkerror: ფაილის მიმაგრება ვერ მოხდა.
+fileuploaderror: ფაილი ვერ აიტვირთა
+filesizeerror: ატვირთული ფაილის ზომა მეტია დასაშვებ ფაილის მაქსიმალურ ზომაზე ($size)
+copysuccess: წარმატებულად დაკოპირდა $nr კონტაქტი.
+movesuccess: წარმატებულად გადატანილია $nr კონტაქტი.
+copyerror: ვერცერთი კონტაქტის კოპირება ვერ მოხერხდა.
+moveerror: ვერცერთი კონტაქტის გადატანა ვერ მოხერხდა.
+sourceisreadonly: აღნიშნული მისამართის მხოლოდ წაკითხვაა შესაძლებელი
+errorsavingcontact: საკონტაქტო მისამართის შენახვა შეუძლებელია
+movingmessage: შეტყობინების გადატანა...
+copyingmessage: შეტყობინების კოპოირება...
+copyingcontact: კონტაქტის კოპირება...
+movingcontact: კონტაქტის გადატანა...
+deletingmessage: შეტყობინების წაშლა...
+markingmessage: შეტყობინების მონიშვნა...
+addingmember: კონტაქტების დამატება ჯგუფში...
+removingmember: კონტაქტების წაშლა ჯგუფიდან...
+receiptsent: წარმატებით გაიგზავნა
+errorsendingreceipt: არ გაიგზავნა
+nodeletelastidentity: წაშლა შეუძლებელია, ის თქვენთვის ერთადერთია
+forbiddencharacter: საქაღალდის სახელი შეიცავს აკრძალულ სიმბოლოებს
+selectimportfile: გთხოვთ მონიშნოთ ფაილი ასატვირთად
+addresswriterror: მონიშნულ მისამართებში ჩაწერა შეუძლებელია
+contactaddedtogroup: წარმატებულად დაემატა კონტაქტები ჯგუფში.
+contactremovedfromgroup: წარმატებულად წაიშალა კონტაქტები ჯგუფიდან.
+nogroupassignmentschanged: ჯგუფების მიმაგრება არ შეცვლილა.
+importwait: გთხოვთ მოიცადოთ, მიმდინარეობს შემოტანა
+importconfirm: <b>წარმატებით დასრულდა $inserted კონტაქტების შემოტანა, $skipped არსებულის გამოტოვება</b>:<p><em>$names</em></p>
+opnotpermitted: ოპერაცია შეზღუდულია
+httpreceivedencrypterror: სერვერზე მოხდა შეცდომა. დაუყონებლივ დაუკავშირდით ადმინისტრატორს. <b>თქვენი შეტყობინება შესაძლოა ვერ გაიგზავნა.</b>
+smtpconnerror: 'SMTP Error ($code): სერვერთან დაკავშირება ვერ მოხერხდა'
+smtpautherror: 'SMTP Error ($code): ავტორიზაციის შეცდომა'
+smtpfromerror: 'SMTP Error ($code): ვერ მიეთითა გამგზავნი "$from" ($msg)'
+smtptoerror: 'SMTP Error ($code): ვერ დაემატა მიმღები "$to" ($msg)'
+smtprecipientserror: 'SMTP Error: მიმღებთა ჩამონათვალის დამუშავება ვერ მოხერხდა'
+smtperror: 'SMTP Error: $msg'
+maxgroupmembersreached: ჯგუფის წევრების რაოდენობა მეტია დასაშვებ ($size)-ზე
+internalerror: დაფიქსირდა შეცდომა. გთხოვთ სცადოთ მოგვიანებით.
+contactdelerror: კონტაქტის წაშლა არ მოხერხდა.
+contactdeleted: კონტაქტ(ებ)ი წარმატებით წაიშალა.
+contactrestoreerror: წაშლილი კონტაქტების აღდგენა არ მოხერხდა.
+contactrestored: კონრაქტ(ებ)ი წარმატებით აღდგა,
+groupdeleted: ჯგუფი წარმატებით წაიშალა.
+grouprenamed: ჯგუფს წარმატებულად გადაერქვა სახელი.
+groupcreated: ჯგუფი წარმატებით შეიქმნა.
+savedsearchdeleted: შენახული ძიება წარმატებულად წაშლილია.
+savedsearchdeleteerror: შენახული ძიების წაშლა ვერ მოხერხდა.
+savedsearchcreated: შენახული ძიების შექმნილია წარმატებულად.
+savedsearchcreateerror: შენახული ძიების შექმნა ვერ მოხერხდა.
+messagedeleted: შეტყობინებები წარმატებით წაიშალა.
+messagemoved: შეტყობინებები გადატანილია წარმატებით.
+messagecopied: შეტყობინება დაკოპირებულია წარმატებით.
+messagemarked: შეტყობინებები წარმატებით მოინიშნა.
+autocompletechars: შეიყვანეთ მინიმუმ $min სიმბოლო ავტომატური დაბოლოებისათვის.
+autocompletemore: 'დამთხვევა ვერ მოხერხდა. გთხოვთ კიდევ შეიყვანოთ სიმბოლოები.  '
+namecannotbeempty: სახელი არ შეიძლება იყოს ცარიელი.
+nametoolong: სახელი ძალიან მოკლეა.
+namedotforbidden: საქაღალდის სახელი არ შეიძლება იწყებოდეს წერტილით.
+folderupdated: დასტა წარმატებით განახლდა.
+foldercreated: დასტა წარმატებით შეიქმნა.
+invalidimageformat: გამოსახულების ფორმატი არასწორია.
+mispellingsfound: გრამატიკული შეცდომები დაფიქსირდა შეტყობინებაში.
+errnotfound: ფაილი არ მოიძებნა.
+errnotfoundexplain: მოთხოვნილი რესურსი ვერ მოიძებნა!
+errcontactserveradmin: გთხოვთ დაუკავშირდეთ სერვერის ადმინისტრატორს.
+clicktoresumesession: დააჭირეთ აქ რომ განაგრძოთ წინა სესია.
+clicktocompose: დააჭირეთ აქ რომ შექმნათ ახალი შეტყობინება.
+cookiesmismatch: ''
+dbconnerror: ''
+windowopenerror: ''
+loggedout: ''
+savingresponse: ''
+deleteresponseconfirm: ''
+nocontactselected: ''
+contactexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+externalmessagedecryption: ''
+nopubkeyfor: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+nosenderwarning: ''
+recipientsadded: ''
+disclosedrecipwarning: ''
+disclosedreciptitle: ''
+nosubjecttitle: ''
+notsentwarning: ''
+restoresavedcomposedata: ''
+folderpurged: ''
+folderexpunged: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+deleteidentityconfirm: ''
+importformaterror: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+importmessagesuccess: ''
+importmessageerror: ''
+nofromaddress: ''
+editorwarning: ''
+smtputf8error: ''
+smtpsizeerror: ''
+emailformaterror: ''
+toomanyrecipients: ''
+messagemovedtotrash: ''
+parentnotwritable: ''
+messagetoobig: ''
+attachmentvalidationerror: ''
+noscriptwarning: ''
+messageissent: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

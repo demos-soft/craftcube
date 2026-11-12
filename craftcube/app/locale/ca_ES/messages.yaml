@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for ca_ES. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Hi ha hagut un error!
+loginfailed: L'accés ha fallat.
+cookiesdisabled: El vostre navegador no accepta galetes.
+sessionerror: La vostra sessió no existeix o ha caducat.
+cookiesmismatch: S'ha detectat un desajust de galetes. Si us plau, netegeu les galetes del vostre navegador.
+storageerror: Ha fallat la connexió amb el servidor d'emmagatzematge.
+servererror: Error del Servidor!
+servererrormsg: 'Error del Servidor: $msg'
+accountlocked: Hi ha hagut masses intents erronis d'inici de sessió. Torneu a provar-ho més tard.
+connerror: Error de connexió (no s'ha pogut establir la connexió amb el servidor)!
+dberror: Error a la Base de Dades!
+dbconnerror: No s'ha pogut connectar a la base de dades!
+windowopenerror: La finestra emergent ha estat blocada!
+requesttimedout: S'ha exhaurit el temps de la sol·licitud
+errorreadonly: No s'ha pogut de realitzar l'operació. La carpeta és de només lectura.
+errornoperm: No s'ha pogut realitzar l'operació. Permís denegat.
+erroroverquota: No s'ha pogut completar l'operació. No hi ha prou espai lliure al disc dur.
+erroroverquotadelete: No hi ha prou espai lliure al disc. Feu servir MAJÚS+SUPR per suprimir el missatge.
+invalidrequest: Petició no vàlida! No s'han desat les dades.
+invalidhost: Nom de servidor no vàlid.
+nomessagesfound: No s'han trobat missatges en aquesta bústia.
+loggedout: Heu finalitzat correctament la sessió. A reveure!
+mailboxempty: La bústia és buida
+nomessages: No hi ha missatges
+refreshing: S'està actualitzant...
+loading: S'està carregant…
+uploading: S'està pujant el fitxer...
+attaching: S'està adjuntant el fitxer...
+uploadingmany: S'estan pujant els fitxers...
+loadingdata: S'estan carregant les dades...
+checkingmail: S’està comprovant si hi ha missatges nous…
+sendingmessage: S’està enviant el missatge…
+messagesent: Missatge enviat correctament.
+savingmessage: S'està desant el missatge...
+messagesaved: Missatge desat a Esborranys.
+successfullysaved: Desat correctament.
+savingresponse: S'està desant el text de resposta...
+deleteresponseconfirm: Esteu segur de voler suprimir aquest text de resposta?
+nocontactselected: Encara no heu seleccionat un contacte.
+addedsuccessfully: Contacte afegit correctament a la llibreta d'adreces.
+contactexists: Ja existeix un contacte amb la mateixa adreça de correu electrònic.
+contactnameexists: Ja existeix un contacte amb el mateix nom.
+blockedimages: Per protegir la vostra privadesa, les imatges remotes han estat blocades en aquest missatge.
+blockedresources: Per protegir la vostra privacitat s'han blocat els recursos remots.
+suspiciousemail: Aquest missatge conté adreces de correu electrònic sospitoses que poden ser fraudulentes.
+bccemail: Els missatges reenviats contenen destinataris confidencials (Cco).
+bouncehint: El missatge s’enviarà sense cap modificació, és a dir, fent servir el cos original, les capçaleres i els destinataris.
+encryptedmessage: Aquest és un missatge xifrat i no pot ser mostrat. Ho sento!
+externalmessagedecryption: Aquest és un missatge xifrat i pot ser desxifrat amb un complement del vostre navegador.
+nopubkeyfor: No s'ha trobat una clau pública vàlida per $email
+nopubkeyforsender: No s'ha trobat una clau pública vàlida per la identitat del vostre remitent. Voleu xifrar el missatge només pels destinataris?
+encryptnoattachments: No s'han pogut encriptar els adjunts ja carregats. Si us plau, afegiu-los de nou a l'editor d'encriptació.
+searchpubkeyservers: Voleu cercar en servidors de claus públiques les vostres claus no trobades?
+encryptpubkeysfound: "S'han trobat les següents claus públiques:"
+keyservererror: No s'ha pogut obtenir la clau del servidor de claus.
+keyimportsuccess: La clau pública $key s'ha importat correctament al vostre anell de claus.
+nocontactsfound: No s'ha trobat cap contacte.
+contactnotfound: No s'ha trobat el contacte sol·licitat.
+contactsearchonly: Heu de fer servir un formulari de cerca per veure els contactes de la llibreta d’adreces seleccionada.
+sendingfailed: Error mentre s'enviava el missatge.
+senttooquickly: Si us plau, espereu $sec segon(s) abans d'enviar aquest missatge.
+errorsavingsent: S'ha produït un error mentre es desava el missatge enviat.
+errorsaving: S'ha produït un error mentre es desava.
+errormoving: No s'ha pogut moure el(s) missatge(s).
+errorcopying: No s'ha pogut copiar el(s) missatge(s).
+errordeleting: No s'ha pogut suprimir el(s) missatge(s).
+errormarking: No s'ha pogut marcar el(s) missatge(s).
+alerttitle: Atenció
+confirmationtitle: Esteu segur...
+deletecontactconfirm: Esteu segur de voler suprimir el(s) contacte(s) seleccionat(s)?
+deletegroupconfirm: Esteu segur de voler suprimir el grup seleccionat?
+deletemessagesconfirm: Esteu segur de voler suprimir el(s) missatge(s) seleccionat(s)?
+deletefolderconfirm: Esteu segur de voler suprimir aquesta carpeta?
+movefolderconfirm: Realment voleu moure aquesta carpeta?
+purgefolderconfirm: Esteu segur de voler suprimir tots els missatges d'aquesta carpeta?
+contactdeleting: S'està suprimint els contacte(s)...
+groupdeleting: S'està suprimint el grup...
+folderdeleting: S'està suprimint la carpeta...
+foldermoving: S'està movent la carpeta...
+foldersubscribing: S'està subscrivint la carpeta...
+folderunsubscribing: S'està cancel·lant la subscripció de la carpeta...
+formincomplete: El formulari no ha estat emplenat completament.
+noemailwarning: Si us plau, introduïu una adreça de correu electrònic vàlida.
+nonamewarning: Si us plau, introduïu un nom.
+nopagesizewarning: Si us plau, introduïu una mida de pàgina.
+nosenderwarning: Si us plau, introduïu l'adreça de correu electrònic del remitent.
+recipientsadded: S'ha(n) afegit el(s) destinatari(s) correctament.
+norecipientwarning: Si us plau, introduïu com a mínim un destinatari.
+disclosedrecipwarning: Tots els destinataris veuran les adreces de correu electrònic dels altres. Per evitar-ho i protegir la seva privadesa podeu fer servir el camp Cco.
+disclosedreciptitle: Hi ha masses destinataris públics
+nosubjectwarning: El camp "Assumpte" és buit. Voleu introduir-ne un ara?
+nosubjecttitle: Sense assumpte
+nobodywarning: Voleu enviar aquest missatge sense text?
+notsentwarning: El missatge no s'ha pogut enviar i té canvis no desats. Voleu descartar aquests canvis?
+restoresavedcomposedata: "S'ha trobat un missatge començat però que no ha estat enviat.\\n\\nAssumpte: $subject\\nDesat: $date\\n\\nVoleu recuperar aquest missatge?"
+nosearchname: Si us plau, introduïu un nom de contacte o una adreça de correu.
+notuploadedwarning: Encara no s'han pujat tots els adjunts. Si us plau, espereu o cancel·leu la pujada.
+searchsuccessful: $nr missatges trobats.
+contactsearchsuccessful: $nr contactes trobats.
+searchnomatch: No s'ha trobat cap coincidència.
+searching: S'està cercant...
+checking: S'està comprovant...
+stillsearching: Encara s'està cercant...
+nospellerrors: No s'han trobat errors d'ortografia.
+folderdeleted: Carpeta suprimida correctament.
+foldersubscribed: Carpeta subscrita correctament.
+folderunsubscribed: S'ha cancel·lat correctament la subscripció de la carpeta.
+folderpurged: La carpeta s'ha buidat correctament.
+folderexpunged: La carpeta s'ha compactat correctament.
+deletedsuccessfully: Suprimit correctament.
+converting: S'està traient el format del missatge...
+messageopenerror: No s'ha pogut carregar el missatge del servidor.
+filelinkerror: No s'ha pogut adjuntar el fitxer.
+fileuploaderror: La càrrega del fitxer ha fallat.
+csvfilemismatch: No es permet la importació de diversos fitxers CSV amb camps diferents.
+filesizeerror: El fitxer carregat excedeix la mida màxima de $size.
+filecounterror: Podeu carregar un màxim de $count fitxers alhora.
+msgsizeerror: No s'ha pogut adjuntar el fitxer. S'ha sobrepassat la mida màxima del missatge ($size).
+msgsizeerrorfwd: S'ha superat la mida màxima d'un missatge ($size). No s'han adjuntat $num missatge(s).
+copysuccess: S'han copiat $nr contactes correctament.
+movesuccess: S'han mogut $nr contactes correctament.
+copyerror: No s'ha pogut copiar cap contacte.
+moveerror: No s'ha pogut moure cap contacte.
+sourceisreadonly: Aquesta adreça és només de lectura.
+errorsavingcontact: No s'ha pogut desar l'adreça de contacte.
+movingmessage: S'està movent missatge(s)...
+copyingmessage: S'està copiant missatge(s)...
+copyingcontact: S'està copiant contacte(s)...
+movingcontact: S'estan movent els contacte(s)...
+deletingmessage: S'està suprimint missatge(s)...
+markingmessage: S'està marcant missatge(s)...
+addingmember: S'està afegint contacte(s) al grup...
+removingmember: S'està suprimint contacte(s) del grup...
+receiptsent: Confirmació de lectura enviada correctament.
+errorsendingreceipt: No s'ha pogut enviar la confirmació.
+deleteidentityconfirm: Esteu segur de voler suprimir aquesta identitat?
+nodeletelastidentity: No podeu suprimir aquesta identitat, és l'última.
+forbiddencharacter: El nom de carpeta conté un caràcter no permès.
+selectimportfile: Si us plau, seleccioneu un fitxer per carregar.
+addresswriterror: La llibreta d'adreces seleccionada no és modificable.
+contactaddedtogroup: S'han afegit correctament els contactes a aquest grup.
+contactremovedfromgroup: S'han suprimit correctament els contactes d'aquest grup.
+nogroupassignmentschanged: No s'ha canviat cap assignació de grup.
+importwait: S'està important, espereu si us plau...
+importformaterror: La importació ha fallat. El fitxer carregat no és un fitxer de dades vàlid.
+importconfirm: <b>S'han importat $inserted contactes correctament</b>
+importmessagesuccess: <b>S'han importat $nr missatges correctament</b>
+importmessageerror: La importació ha fallat. El fitxer que heu carregat no és un fitxer de missatges vàlid o no és un fitxer de bústia.
+opnotpermitted: Operació no permesa!
+nofromaddress: No s'ha trobat l'adreça de correu electrònic a la identitat seleccionada.
+editorwarning: Si canvieu el tipus d'editor pot ser que perdreu tot el format del text. Voleu continuar?
+httpreceivedencrypterror: Hi ha hagut un error fatal de configuració. Contacteu amb el vostre administrador immediatament. <b>El vostre missatge no pot ser enviat.</b>
+smtpconnerror: 'Error SMTP ($code): La connexió al servidor ha fallat.'
+smtpautherror: 'Error SMTP ($code): La identificació ha fallat.'
+smtpfromerror: "Error SMTP ($code): No s'ha pogut posar \"$from\" com a remitent ($msg)."
+smtptoerror: "Error SMTP ($code): No s'ha pogut posar \"$to\" com a destinatari ($msg)."
+smtprecipientserror: "Error SMTP: No s'ha pogut analitzar la llista de destinataris."
+smtputf8error: "Error SMTP: El servidor no admet caràcters Unicode a l'adreça de correu."
+smtpsizeerror: 'Error SMTP: La mida del missatge supera el límit del servidor ($limit).'
+smtperror: 'Error SMTP: $msg'
+emailformaterror: 'Adreça de correu electrònic no vàlida: $email'
+toomanyrecipients: Hi ha masses destinataris. Reduïu el nombre de destinataris a $max.
+maxgroupmembersreached: El nombre de membres del grup supera el màxim de $max.
+internalerror: S'ha produït un error intern. Si us plau torneu-ho a provar.
+contactdelerror: No s'han pogut suprimir el(s) contacte(s).
+contactdeleted: Contacte(s) suprimit(s) correctament.
+contactrestoreerror: No s'ha pogut restaurar el(s) contacte(s) suprimit(s).
+contactrestored: Contacte(s) restaurat(s) correctament.
+groupdeleted: Grup suprimit correctament.
+grouprenamed: Grup reanomenat correctament.
+groupcreated: Grup creat correctament.
+savedsearchdeleted: S'ha suprimit correctament la cerca desada.
+savedsearchdeleteerror: No s'ha pogut suprimir la cerca desada.
+savedsearchcreated: S'ha creat correctament la cerca desada.
+savedsearchcreateerror: No s'ha pogut crear la cerca desada.
+messagedeleted: Missatge(s) suprimit(s) correctament.
+messagemoved: Missatge(s) mogut(s) correctament.
+messagemovedtotrash: El(s) missatge(s) s'ha(n) mogut correctament a la Paperera.
+messagecopied: Missatge(s) copiat(s) correctament.
+messagemarked: Missatge(s) marcat(s) correctament.
+autocompletechars: Introduïu com a mínim $min caràcters per l'autocompleció.
+autocompletemore: S'han trobat més entrades coincidents. Si us plau, introduïu més caràcters.
+namecannotbeempty: El nom no pot estar buit.
+nametoolong: El nom és massa llarg.
+namedotforbidden: El nom de carpeta no pot començar amb un punt.
+folderupdated: La carpeta ha estat actualitzada correctament.
+foldercreated: La carpeta ha estat creada correctament.
+invalidimageformat: No és un format d'imatge vàlid.
+mispellingsfound: S'han detectat errors d'ortografia al missatge.
+parentnotwritable: No s'ha pogut crear/moure la carpeta dins de la carpeta ascendent seleccionada. No hi ha permisos d'escriptura.
+messagetoobig: La part del missatge és massa gran per processar-la.
+attachmentvalidationerror: "Aquest adjunt és sospitós per què el seu tipus no coincideix amb el tipus declarat en el missatge. Si no us en refieu del remitent, no hauríeu d'obrir aquest missatge en el navegador perquè pot tenir contingut maliciós. <br/><br/><em>S'esperava: $expected; s'ha trobat: $detected</em>"
+noscriptwarning: "Atenció: Aquest client de correu necessita Javascript! Per a poder-lo fer servir heu d'activar Javascript a les opcions del navegador."
+messageissent: El missatge ja ha estat enviat, però encara no s'ha desat. Voleu desar-lo ara?
+errnotfound: No s'ha trobat el fitxer
+errnotfoundexplain: No s'ha trobat el recurs sol·licitat!
+errfailedrequest: La petició ha fallat
+errauthorizationfailed: L'autorització ha fallat
+errunauthorizedexplain: No s'ha pogut verificar que tingueu accés autoritzat a aquest servei!
+errrequestcheckfailed: Ha fallat la verificació de la petició
+errcsrfprotectionexplain: "Per a la vostra protecció, l'accés a aquest recurs està protegit contra CSRF.\nSi veieu això, és probable que no hàgiu tancat la sessió abans de sortir de l'aplicació web.\n\nEn aquest moment cal una intervenció manual per poder continuar."
+errcontactserveradmin: Si us plau, contacteu amb el vostre administrador de sistemes.
+clicktoresumesession: Feu clic aquí per reprendre la vostre sessió anterior
+errcomposesession: Error de sessió de redacció
+errcomposesessionexplain: No s'ha trobat la sessió de redacció sol·licitada.
+clicktocompose: Feu clic aquí per editar un nou missatge
+nosupporterror: Aquesta característica no està suportada pel vostre navegador.
+siginserted: Signatura inserida correctament.
+responseinserted: Resposta inserida correctament.
+noresponsesavailable: No hi ha respostes disponibles
+listempty: La llista és buida.
+listusebutton: Feu servir el botó 'Crea' per afegir un nou registre.
+keypaircreatesuccess: S'ha creat un nou parell de claus per $identity.
+emptyattachment: Sembla ser que aquest fitxer adjunt és buit.<br>Si us plau, consulteu amb la persona que l’ha enviat.
+oauthloginfailed: Ha fallat l'inici de sessió d'OAuth. Si us plau, torneu-ho a provar.
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''

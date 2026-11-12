@@ -1,0 +1,724 @@
+# CraftCube catalogue labels for ta_IN. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+welcome: நல்வரவு
+username: பயனர்
+password: கடவுச்சொல்
+server: சேவையகம்
+login: நுழை
+logout: வெளியேறு
+mail: மின்னஞ்சல்
+settings: அமைப்புகள்
+addressbook: தொடர்புகள்
+inbox: அகப்பெட்டி
+drafts: வரைவுகள்
+sent: அனுப்பிய அஞ்சல்
+trash: குப்பை
+junk: எரிதம்
+subject: தலைப்பு
+from: அனுப்புனர்
+to: பெறுனர்
+cc: நகல்
+bcc: மறை நகல்
+replyto: பதிலளி
+date: தேதி
+size: அளவு
+priority: முக்கியத்துவம்
+organization: நிறுவனம்
+mailboxlist: அடைவுகள்
+messagesfromto: செய்திகள் $countல் $from லிருந்து $to வரை
+messagenrof: $countல் $nr வது செய்தி
+copy: நகல்
+moveto: இதற்கு அனுப்பு...
+download: பதிவிறக்கு
+filename: கோப்பு பெயர்
+filesize: கோப்பு அளவு
+addtoaddressbook: தொடர்புகளுக்கு சேர்க்கவும்
+sun: ஞாயிறு
+mon: திங்கள்
+tue: செவ்வாய்
+wed: புதன்
+thu: வியாழன்
+fri: வெள்ளி
+sat: சனி
+sunday: ஞாயிறு
+monday: திங்கள்
+tuesday: செவ்வாய்
+wednesday: புதன்
+thursday: வியாழன்
+friday: வெள்ளி
+saturday: சனி
+jan: சனவரி
+feb: பிப்ரவரி
+mar: மார்ச்
+apr: ஏப்ரல்
+may: மே
+jun: சூன்
+jul: சூலை
+aug: ஆகஸ்ட்
+sep: செப்டம்பர்
+oct: அக்டோபர்
+nov: நவம்பர்
+dec: டிசம்பர்
+longjan: சனவரி
+longfeb: பிப்ரவரி
+longmar: மார்ச்
+longapr: ஏப்ரல்
+longmay: மே
+longjun: சூன்
+longjul: சூலை
+longaug: ஆகஸ்ட்
+longsep: செப்டம்பர்
+longoct: அக்டோபர்
+longnov: நவம்பர்
+longdec: டிசம்பர்
+today: இன்று
+checkmail: புது அஞ்சல்களை பார்க்கவும்
+compose: அஞ்சல் எழுது
+writenewmessage: புது அஞ்சல் எழுதவும்
+replytomessage: அனுப்புனருக்கு பதிலளி
+replytoallmessage: அனுப்புனர் மற்றும் எல்லா பெறுனர்களுக்கும் பதிலளி
+forwardmessage: செய்தியை முன்அனுப்பு
+deletemessage: செய்தியை நீக்கு
+movemessagetotrash: செய்தியை குப்பைக்கு நகர்த்து
+printmessage: செய்தியை அச்சிடவும்
+previousmessage: முந்திய செய்தியை காட்டவும்
+firstmessage: முதல் செய்தியை காட்டவும்
+nextmessage: அடுத்த செய்தியை காட்டு
+lastmessage: கடைசி செய்தியை காட்டு
+backtolist: செய்தி பட்டியலுக்கு செல்லவும்
+viewsource: மூலத்தை காட்டு
+markmessages: செய்திகளை குறியிடு
+markread: படித்ததாக குறியிடு
+markunread: படிக்காததாக குறியிடு
+markflagged: நட்சத்திரமிட்டதாக குறியிடு
+markunflagged: நட்சத்திரமிடாததாக குறியிடு
+select: தேர்ந்தெடு
+all: எல்லாம்
+none: எதுவுமில்லை
+unread: படிக்காதது
+flagged: நட்சத்திரமிட்டது
+unanswered: பதிலளிக்காதது
+deleted: நீக்கியது
+invert: தலைகீழ்
+filter: வடிப்பான்
+nonesort: எதுவுமில்லை
+compact: குறுகிய
+empty: காலி
+quota: பயன்பாட்டு அளவு
+unknown: தெரியாத
+unlimited: அளவில்லா
+quicksearch: விரைவு தேடல்
+resetsearch: தேடலை மறுஅமை
+searchmod: மாற்றிகளை தேடு
+msgtext: முழு செய்தி
+openinextwin: புது சாளரத்தில் திற
+emlsave: பதிவிறக்கு (.eml)
+editasnew: புதியதாக திருத்து
+sendmessage: இப்போது அனுப்பு
+savemessage: இந்த வரைவை சேமி
+addattachment: ஒரு கோப்பை இணைக்கவும்
+charset: எழுத்து குறிமுறை
+editortype: திருத்தும் வகை
+returnreceipt: திரும்பு சீட்டு
+checkspelling: எழுத்துப்பிழை சரிபார்
+resumeediting: திருத்துவதை தொடரவும்
+revertto: முந்திய நிலைக்கு திரும்பவும்
+attachments: கோப்பு இணைப்புகள்
+upload: பதிவேற்று
+close: மூடு
+low: குறைந்த
+lowest: மிக குறைந்த
+normal: சாதாரண
+high: அதிக
+highest: மிக அதிக
+nosubject: (தலைப்பில்லா)
+showimages: படங்களை காட்டு
+alwaysshow: $-னிடமிருந்து வரும் படங்களை காட்டு
+htmltoggle: HTML
+plaintoggle: எளிய உரை
+savesentmessagein: அனுப்பிய அஞ்சலை இங்கு சேமிக்கவும்
+dontsave: சேமிக்காதே
+maxuploadsize: அனுமதிக்கப்படும் அதிகபட்ச கோப்பு அளவு $
+addcc: நகல் சேர்
+addbcc: மறை நகல் சேர்
+addreplyto: பதிலளிக்க வேண்டியவர்களை சேர்
+mdnrequest: இந்த செய்தியின் அனுப்புனர் இதை படித்தவுடன் அறிவிக்கும்படி கேட்டார். அறிவிக்க விரும்புகிறீர்களா ?
+receiptread: திரும்பு சீட்டு (படி)
+yourmessage: இது உங்கள் செய்தியின் திரும்பு சீட்டு
+receiptnote: 'குறிப்பு: இந்த ஒப்புகை பெறுனரிடம் செய்தியை காட்டியதற்காக வருகிறது. அவர் அதை படித்ததற்கு எந்த உத்திரவாதமும் இல்லை'
+name: காட்சி பெயர்
+firstname: முதற் பெயர்
+surname: கடைசி பெயர்
+email: மின்னஞ்சல்
+editcontact: தொடர்பை திருத்து
+edit: திருத்து
+cancel: ரத்து
+save: சேமி
+delete: நீக்கு
+deletecontact: தேர்ந்தெடுத்த தொடர்புகளை நீக்கு
+composeto: இவர்-கு அஞ்சல் எழுது
+contactsfromto: தொடர்புகள் $countல் $from லிருந்து $to வரை
+print: அச்சிடு
+export: ஏற்றுமதி
+exportvcards: தொடர்புகளை vCard வடிவத்தில் ஏற்றுமதி செய்யவும்
+previouspage: முந்திய குழுவை காட்டு
+firstpage: முதல் குழுவை காட்டு
+nextpage: அடுத்த குழுவை காட்டு
+lastpage: கடைசி குழுவை காட்டு
+groups: குழுக்கள்
+personaladrbook: சுய முகவரி
+import: இறக்குமதி
+importcontacts: தொடர்புகளை இறக்குமதி செய்யவும்
+importreplace: எல்லா தொடர்புகளையும் மாற்றி அமை
+done: முடிந்தது
+settingsfor: இதற்கான அமைப்புகள்
+preferences: விருப்பங்கள்
+userpreferences: பயனர் விருப்பங்கள்
+editpreferences: பயனர் விருப்பங்களை திருத்து
+identities: அடையாளங்கள்
+preferhtml: HTML காட்டு
+htmlmessage: HTML செய்தி
+prettydate: நல்ல தேதி
+setdefault: இயல்பை அமை
+autodetect: தானியங்கி
+language: மொழி
+timezone: நேர மண்டலம்
+pagesize: ஒரு பக்கத்திற்கான வரிகள்
+signature: கையொப்பம்
+dstactive: பகல் ஒளி சேமிப்பு நேரம்
+htmleditor: HTML செய்திகளை எழுது
+htmlsignature: HTML கையொப்பம்
+previewpane: முந்திய பாத்தியை காட்டு
+skin: முகப்பு தோற்றம்
+logoutclear: வெளியேறும் போது குப்பையை காலி செய்
+logoutcompact: வெளியேறும் போது இன்பாக்ஸை குறுக்கவும்
+uisettings: பயனர் முகப்பு
+serversettings: சேவையகம் அமைப்புகள்
+mailboxview: அஞ்சல் பெட்டி காட்சி
+mdnrequests: அனுப்புனர் அறிவிப்புகள்
+askuser: பயனரை கேள்
+autosend: தானாக அனுப்பு
+readwhendeleted: செய்தியை நீக்கும் போது படித்ததாக குறி
+flagfordeletion: நீக்குவதற்கு பதிலாக நீக்குவதாக நட்சத்திரமிடு
+skipdeleted: நீக்கிய செய்திகளை காட்டாதே
+showremoteimages: தொலை தூர துணை படங்களை காட்டு
+fromknownsenders: தெரிந்த அனுப்புனரிடமிருந்து
+always: எப்போதும்
+showinlineimages: இணைத்த படங்களை செய்திகளுக்கு கீழே காட்டவும்
+autosavedraft: தானாக வரைவுகளை சேமி
+everynminutes: ஒவ்வொரு $n நிமிடங்களுக்கும்
+never: எப்போதுமில்லை
+messagesdisplaying: செய்திகளை காட்டுகிறது
+messagescomposition: செய்திகளை எழுதுகிறது
+mimeparamfolding: இணைப்பு பெயர்கள்
+2231folding: முழு RFC 2231 (Thunderbird)
+miscfolding: RFC 2047/2231 (MS Outlook)
+2047folding: முழு RFC 2047 (மற்ற)
+advancedoptions: மேம்பட்ட விருப்பங்கள்
+focusonnewmessage: உலாவி சாளரத்தை புது செய்திக்காக கவனி
+checkallfolders: புது செய்திகளுக்காக எல்லா அடைவுகளையும் சரிபார்
+mainoptions: முக்கிய விருப்பங்கள்
+section: பிரிவு
+maintenance: பராமரிப்பு
+newmessage: புது செய்தி
+signatureoptions: கையொப்ப விருப்பங்கள்
+whenreplying: பதிலளிக்கும் போது
+replytopposting: புது செய்தியை அசலின் மேல் துவக்கு
+replybottomposting: புது செய்தியை அசலின் கீழ் துவக்கு
+replyremovesignature: பதிலளிக்கும் போது அசல் கையெழுத்தை செய்தியிலிருந்து நீக்கவும்
+autoaddsignature: தானாக கையொப்பத்தை சேர்
+newmessageonly: புது செய்தி மட்டும்
+replyandforwardonly: பதிலளிப்பு முன்அனுப்பு மட்டும்
+insertsignature: கையோப்பமிடு
+folder: அடைவு
+folders: அடைவுகள்
+foldername: அடைவு பெயர்
+subscribed: சந்தா
+messagecount: செய்திகள்
+create: உருவாக்கு
+createfolder: புது அடைவு உருவாக்கு
+managefolders: அடைவுகளை நிற்வகி
+specialfolders: சிறப்பு அடைவுகள்
+sortby: வாரியாக அடுக்கு
+sortasc: ஏறு வரிசையாக அடுக்கு
+sortdesc: இறங்கு வரிசையாக அடுக்கு
+B: B
+KB: KB
+MB: MB
+GB: GB
+oauthlogin: ''
+menu: ''
+darkmode: ''
+lightmode: ''
+show_real_foldernames: ''
+sender: ''
+followupto: ''
+readstatus: ''
+listoptions: ''
+listoptionstitle: ''
+threadsfromto: ''
+fromtoshort: ''
+move: ''
+copyto: ''
+open: ''
+showattachment: ''
+showanyway: ''
+refresh: ''
+reply: ''
+replyall: ''
+replylist: ''
+forward: ''
+forwardinline: ''
+forwardattachment: ''
+bouncemsg: ''
+bounce: ''
+undeletemessage: ''
+mark: ''
+markundeleted: ''
+markasread: ''
+markasunread: ''
+markasflagged: ''
+markasunflagged: ''
+moreactions: ''
+markallread: ''
+folders-cur: ''
+folders-sub: ''
+folders-all: ''
+more: ''
+back: ''
+options: ''
+composeoptions: ''
+optionsandattachments: ''
+actions: ''
+first: ''
+last: ''
+previous: ''
+next: ''
+selection: ''
+currpage: ''
+isread: ''
+unflagged: ''
+withattachment: ''
+undeleted: ''
+replied: ''
+forwarded: ''
+list: ''
+threads: ''
+expand-all: ''
+expand-unread: ''
+collapse-all: ''
+threaded: ''
+showunread: ''
+autoexpand_threads: ''
+do_expand: ''
+expand_only_unread: ''
+fromto: ''
+flag: ''
+attachment: ''
+sentdate: ''
+arrival: ''
+asc: ''
+desc: ''
+listcolumns: ''
+listsorting: ''
+listorder: ''
+listmode: ''
+lmode: ''
+layout: ''
+layoutwidescreen: ''
+layoutdesktop: ''
+layoutlist: ''
+layoutwidescreendesc: ''
+layoutdesktopdesc: ''
+layoutlistdesc: ''
+folderactions: ''
+importmessages: ''
+mailimportdesc: ''
+mailimportzip: ''
+quotatype: ''
+quotatotal: ''
+quotaused: ''
+quotastorage: ''
+quotamessage: ''
+shortheaderdate: ''
+shortheaderto: ''
+shortheaderfrom: ''
+searchplaceholder: ''
+body: ''
+type: ''
+namex: ''
+searchscope: ''
+currentfolder: ''
+subfolders: ''
+allfolders: ''
+searchinterval-1W: ''
+searchinterval-1M: ''
+searchinterval-1Y: ''
+searchinterval1W: ''
+searchinterval1M: ''
+searchinterval1Y: ''
+infolder: ''
+currentaddressbook: ''
+alladdressbooks: ''
+changeformattext: ''
+changeformathtml: ''
+send: ''
+dsn: ''
+keepformatting: ''
+mailreplyintro: ''
+originalmessage: ''
+selectimage: ''
+addimage: ''
+selectmedia: ''
+addmedia: ''
+encrypt: ''
+encryptmessage: ''
+encryptmessagemailvelope: ''
+importpubkeys: ''
+encryptedsendialog: ''
+encryptandsign: ''
+keyid: ''
+keylength: ''
+keyexpired: ''
+keyrevoked: ''
+bccinstead: ''
+addheader: ''
+insert: ''
+insertcontact: ''
+recipient: ''
+recipientedit: ''
+editidents: ''
+spellcheck: ''
+restore: ''
+restoremessage: ''
+ignore: ''
+responses: ''
+insertresponse: ''
+manageresponses: ''
+newresponse: ''
+addresponse: ''
+editresponse: ''
+editresponses: ''
+responsename: ''
+responsetext: ''
+attach: ''
+uploadprogress: ''
+messageoptions: ''
+togglecomposeoptions: ''
+attachmentrename: ''
+allow: ''
+alwaysallow: ''
+isdraft: ''
+andnmore: ''
+details: ''
+summary: ''
+headers: ''
+allheaders: ''
+togglemoreheaders: ''
+togglefullheaders: ''
+addfollowupto: ''
+sendreceipt: ''
+sendalwaysto: ''
+zoomin: ''
+zoomout: ''
+rotate: ''
+increaseimage: ''
+decreaseimage: ''
+rotateimage: ''
+showtools: ''
+hidetools: ''
+middlename: ''
+nameprefix: ''
+namesuffix: ''
+nickname: ''
+jobtitle: ''
+department: ''
+gender: ''
+maidenname: ''
+phone: ''
+address: ''
+street: ''
+locality: ''
+zipcode: ''
+region: ''
+country: ''
+birthday: ''
+anniversary: ''
+website: ''
+instantmessenger: ''
+notes: ''
+male: ''
+female: ''
+nonbinary: ''
+othergender: ''
+manager: ''
+assistant: ''
+spouse: ''
+allfields: ''
+search: ''
+searchresult: ''
+advsearch: ''
+advanced: ''
+other: ''
+printcontact: ''
+qrcode: ''
+typehome: ''
+typework: ''
+typeother: ''
+typemobile: ''
+typemain: ''
+typehomefax: ''
+typeworkfax: ''
+typecar: ''
+typepager: ''
+typevideo: ''
+typeassistant: ''
+typehomepage: ''
+typeblog: ''
+typeprofile: ''
+addfield: ''
+addcontact: ''
+contacts: ''
+contactproperties: ''
+contactnameandorg: ''
+personalinfo: ''
+personal: ''
+contactphoto: ''
+discard: ''
+continue: ''
+ok: ''
+rename: ''
+addphoto: ''
+replacephoto: ''
+uploadphoto: ''
+choosefile: ''
+choosefiles: ''
+browse: ''
+newcontact: ''
+exportall: ''
+exportsel: ''
+newgroup: ''
+addgroup: ''
+grouprename: ''
+groupdelete: ''
+groupassign: ''
+groupremove: ''
+groupremoveselected: ''
+uponelevel: ''
+group: ''
+listgroup: ''
+searchsave: ''
+searchdelete: ''
+importfromfile: ''
+importtarget: ''
+importgroups: ''
+importgroupsall: ''
+importgroupsexisting: ''
+importdesc: ''
+importmapdesc: ''
+fieldnotmapped: ''
+skipheader: ''
+birth_day: ''
+birth_month: ''
+birth_year: ''
+about: ''
+manageidentities: ''
+newidentity: ''
+addidentity: ''
+editidentity: ''
+identityencryption: ''
+defaultcharset: ''
+messagepart: ''
+digitalsig: ''
+dateformat: ''
+timeformat: ''
+showinextwin: ''
+composeextwin: ''
+htmlonreply: ''
+htmlonreplyandforward: ''
+showemail: ''
+autosendknown: ''
+autosendknownignore: ''
+autosendtrusted: ''
+autosendtrustedignore: ''
+ignorerequest: ''
+deletealways: ''
+deletejunk: ''
+allowremoteresources: ''
+fromtrustedsenders: ''
+frommycontacts: ''
+alwaysbutplain: ''
+refreshinterval: ''
+immediately: ''
+force7bit: ''
+savelocalstorage: ''
+toggleadvancedoptions: ''
+displaynext: ''
+defaultfont: ''
+browseroptions: ''
+replyempty: ''
+replytoppostingnoindent: ''
+sigbelow: ''
+sigseparator: ''
+automarkread: ''
+afternseconds: ''
+reqmdn: ''
+reqdsn: ''
+alwayskeepformatting: ''
+replysamefolder: ''
+defaultabook: ''
+autocompletesingle: ''
+listnamedisplay: ''
+contactformmode: ''
+privatemode: ''
+businessmode: ''
+collectedaddresses: ''
+collectedrecipients: ''
+collectedrecipientsopt: ''
+collectedsendersopt: ''
+trustedsenders: ''
+spellcheckbeforesend: ''
+spellcheckoptions: ''
+spellcheckignoresyms: ''
+spellcheckignorenums: ''
+spellcheckignorecaps: ''
+addtodict: ''
+editoroptions: ''
+enableautolink: ''
+mailtoprotohandler: ''
+standardwindows: ''
+forwardmode: ''
+inline: ''
+asattachment: ''
+replyallmode: ''
+replyalldefault: ''
+replyalllist: ''
+allmessages: ''
+olderxdays: ''
+properties: ''
+folderproperties: ''
+parentfolder: ''
+location: ''
+info: ''
+getfoldersize: ''
+changesubscription: ''
+foldertype: ''
+personalfolder: ''
+otherfolder: ''
+sharedfolder: ''
+findfolders: ''
+findcontacts: ''
+findmail: ''
+namespace.personal: ''
+namespace.other: ''
+namespace.shared: ''
+dualuselabel: ''
+dualusemail: ''
+dualusefolder: ''
+generate: ''
+encryptioncreatekey: ''
+openmailvelopesettings: ''
+encryptionprivkeysinmailvelope: ''
+encryptionnoprivkeysinmailvelope: ''
+encryption: ''
+mailvelopeoptions: ''
+mailvelopemainkeyring: ''
+mailvelopenotfound: ''
+mailvelopeenable: ''
+undo: ''
+installedplugins: ''
+plugin: ''
+version: ''
+source: ''
+destination: ''
+license: ''
+skinauthor: ''
+support: ''
+savedsearches: ''
+dateformatY: ''
+dateformaty: ''
+dateformatm: ''
+dateformatd: ''
+dateformatj: ''
+dateformatn: ''
+unicode: ''
+english: ''
+westerneuropean: ''
+easterneuropean: ''
+southeasterneuropean: ''
+baltic: ''
+cyrillic: ''
+arabic: ''
+greek: ''
+hebrew: ''
+turkish: ''
+nordic: ''
+thai: ''
+celtic: ''
+vietnamese: ''
+japanese: ''
+korean: ''
+chinese: ''
+arialabeltopnav: ''
+arialabeltasknav: ''
+arialabeltoolbar: ''
+arialabellistnav: ''
+arialabelactivetask: ''
+arialabelmessagessearchfilter: ''
+arialabelmailsearchform: ''
+arialabelcontactsearchform: ''
+arialabelmailquicksearchbox: ''
+arialabelquicksearchbox: ''
+arialabelfoldersearchfilter: ''
+arialabelfoldersearchform: ''
+arialabelfolderlist: ''
+arialabelmessagelist: ''
+arialabelmailpreviewframe: ''
+arialabelmailboxmenu: ''
+arialabellistselectmenu: ''
+arialabelthreadselectmenu: ''
+arialabelmessagelistoptions: ''
+arialabelmailimportdialog: ''
+arialabelmessagenav: ''
+arialabelmessagebody: ''
+arialabelmessageactions: ''
+arialabelcontactquicksearch: ''
+arialabelcontactsearchbox: ''
+arialabelmessageheaders: ''
+arialabelforwardingoptions: ''
+arialabelreplyalloptions: ''
+arialabelmoremessageactions: ''
+arialabelmorecontactactions: ''
+arialabelmarkmessagesas: ''
+arialabelcomposeoptions: ''
+arialabelresponsesmenu: ''
+arialabelattachmentuploadform: ''
+arialabelattachmentmenu: ''
+arialabelmailtomenu: ''
+arialabelattachmentpreview: ''
+ariasummarycomposecontacts: ''
+arialabelcontactexportoptions: ''
+arialabelabookgroupoptions: ''
+arialabelpreferencesform: ''
+arialabelidentityeditfrom: ''
+arialabelresponseeditfrom: ''
+arialabelsearchterms: ''
+arialabeldropactionmenu: ''
+arialabelheadersmenu: ''
+arialabelimagetools: ''
+helplistnavigation: ''
+helplistkeyboardnavigation: ''
+helplistkeyboardnavmessages: ''
+helplistkeyboardnavcontacts: ''
+archivefolder: ''
+settingstitle: ''
+archivetype: ''
+archivetypeyear: ''
+archivetypemonth: ''
+archivetypetbmonth: ''
+archivetypefolder: ''
+archivetypefolderyear: ''
+archivetypefoldermonth: ''
+archivetypesender: ''
+readonarchive: ''

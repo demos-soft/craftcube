@@ -1,0 +1,223 @@
+# CraftCube catalogue messages for vi_VN. Keep languages in sync with
+# tools/i18n.py (verify / sync / add / remove). Empty values fall back
+# to the en_US baseline at runtime.
+errortitle: Có lỗi xảy ra.
+loginfailed: Không đăng nhập được
+cookiesdisabled: Trình duyệt không hỗ trợ cookies
+sessionerror: Phiên làm việc không hợp lệ hoặc đã hết hạn
+storageerror: Không kết nối được với máy chủ.
+servererror: Lỗi máy chủ
+servererrormsg: 'Lỗi máy chủ: $msg'
+connerror: Lỗi kết nối (không kết nối được đến máy chủ)
+dberror: Lỗi cơ sở dữ liệu
+windowopenerror: Cửa sổ thông tin bật lên bị chặn
+requesttimedout: Yêu cầu hết  hạn
+errorreadonly: Không thể thực hiện thao tác. Thư mục chỉ cho phép đọc.
+errornoperm: Bạn không đủ quyền hạn để thực hiện thao tác này.
+erroroverquota: Không thể thực hiện thao tác do không còn đủ chỗ trống trên ổ đĩa.
+erroroverquotadelete: Không còn dư chỗ trống trên ổ đĩa. Sử dụng tổ hợp phím SHIFT+DEL để xoá thư.
+invalidrequest: Yêu cầu không hợp lệ! Không có dữ liệu nào được lưu.
+invalidhost: Sai thông tin tên máy chủ
+nomessagesfound: Không thấy có thư nào trong hộp thư này.
+mailboxempty: Hộp thư rỗng
+nomessages: Không có thư nào
+refreshing: Nạp lại dữ liệu...
+loading: Đang tải...
+uploading: Đang tải tập tin lên...
+uploadingmany: Đang tải các tập tin lên...
+loadingdata: Đang nạp dữ liệu...
+checkingmail: Kiểm tra thư mới...
+sendingmessage: Đang gửi thư...
+messagesent: Thư đã được gửi thành công.
+savingmessage: Đang lưu thư...
+messagesaved: Thư đã được lưu lại vào hộp thư Nháp.
+successfullysaved: Đã lưu thành công
+savingresponse: Đang lưu thông tin...
+deleteresponseconfirm: Bạn có thực sự muốn xoá thông tin này?
+addedsuccessfully: Liên hệ đã được thêm vào sổ địa chỉ thành công.
+contactnameexists: Đã có một liên hệ có tên như thế này.
+blockedimages: Để bảo vệ tính riêng tư, chức năng hiện ảnh từ xa bị cấm trong thư này.
+encryptedmessage: Thư này được mã hóa, không thể xem. Rất tiếc!
+nocontactsfound: Không tìm thấy liên hệ.
+contactnotfound: Không tìm thấy liên lạc được yêu cầu
+sendingfailed: Không gửi được thư
+senttooquickly: Xin đợi vài giây trước khi gửi thư này
+errorsavingsent: Có lỗi xảy ra khi lưu lại thư đã gửi.
+errorsaving: Lỗi trong quá trình lưu.
+errormoving: Không thể chuyển được thư
+errorcopying: Không thể sao chép thư
+errordeleting: Không thể xóa được thư
+errormarking: Không thể đánh dấu (các) thư
+deletecontactconfirm: Bạn có thực sự muốn xoá liên hệ đã chọn?
+deletegroupconfirm: Bạn có thực sự muốn xóa nhóm đã chọn?
+deletemessagesconfirm: Bạn thực sự có muốn xóa (các) thư đã chọn?
+deletefolderconfirm: Bạn có thực sự muốn xóa giữ liệu này?
+purgefolderconfirm: Bạn có thực sự muốn xóa toàn bộ thư trong giữ liệu này?
+contactdeleting: Đang xóa (các) liên lạc...
+groupdeleting: Đang xóa nhóm...
+folderdeleting: Đang xóa thư mục dữ liệu...
+foldermoving: Đang chuyển thư mục dữ liệu..
+foldersubscribing: Đăng ký vào thư mục...
+folderunsubscribing: Bỏ đăng ký thư mục...
+formincomplete: Mẫu đơn chưa được hoàn toàn điền xong.
+noemailwarning: Xin nhập địa chỉ email hợp lệ.
+nonamewarning: Xin nhập tên.
+nopagesizewarning: Xin nhập kích cỡ của trang.
+nosenderwarning: Vui lòng nhập địa chỉ email của người gửi
+recipientsadded: Thông tin người nhận đã được thêm thành công
+norecipientwarning: Vui lòng nhập ít nhất 1 người nhận.
+disclosedrecipwarning: Tất cả người nhận sẽ nhìn được địa chỉ email của người khác. Để tránh việc này, bạn có thể dùng trường địa chỉ Bcc.
+disclosedreciptitle: Có quá nhiều người nhận
+nosubjectwarning: Mục "Tiêu đề" vẫn còn trống. Bạn có muốn nhập tiêu đề bây giờ không?
+nosubjecttitle: Không có tiêu đề
+nobodywarning: Gửi thư không có nội dung?
+restoresavedcomposedata: 'Tìm thấy một thư đã được soạn trước nhưng chưa gửi.\n\nTiêu đề: $subject\nLưu ngày: $date\n\nBạn có muốn khôi phục lại thư này?'
+nosearchname: Nhập liên hệ hoặc địa chỉ email.
+notuploadedwarning: Tất cả các đính kèm vẫn chưa được tải lên hết. Xin đợi hoặc hủy việc tải lên.
+searchsuccessful: $nr thư đã tìm được.
+contactsearchsuccessful: $nr liên hệ đã tìm được.
+searchnomatch: Không tìm thấy sự trùng hợp nào.
+searching: Đang tìm kiếm...
+checking: Đang kiểm tra...
+stillsearching: Đang tiếp tục tìm kiếm...
+nospellerrors: Không tìm thấy lỗi chính tả.
+folderdeleted: Giữ liệu đã được xóa thành công.
+foldersubscribed: Giữ liệu được nhập vào thành công.
+folderunsubscribed: Giữ liệu không nhập vào thành công.
+deletedsuccessfully: Đã xóa thành công
+converting: Loại bỏ định dạng...
+messageopenerror: Không thể tải thư từ máy chủ
+filelinkerror: Đính kèm file bị lỗi.
+fileuploaderror: Tải tập tin lên thất bại
+filesizeerror: Tập tin được tải lên vượt quá dung lượng tối đa....
+copysuccess: Sao chép thành công $nr địa chỉ.
+movesuccess: Đã chuyển thành công $nr địa chỉ liên hệ.
+copyerror: Không thể sao chép địa chỉ liên hệ nào.
+moveerror: Không thể chuyển địa chỉ liên hệ nào.
+sourceisreadonly: Nguồn địa chỉ này chỉ cho đọc
+errorsavingcontact: Không thể lưu địa chỉ liên lạc
+movingmessage: Đang chuyển thư...
+copyingmessage: Đang sao chép thư...
+copyingcontact: Đang sao chép liên lạc...
+movingcontact: Đang chuyển (các) địa chỉ liên hệ...
+deletingmessage: Đang xóa thư...
+markingmessage: Đánh dấu thư...
+addingmember: Đang thêm liên lạc vào nhóm...
+removingmember: Đang xóa liên lạc từ nhóm...
+receiptsent: Biên nhận đọc đã được gửi thành công.
+errorsendingreceipt: Không thể gửi ghi nhận
+deleteidentityconfirm: Bạn có thực sự muốn xóa nhận diện này?
+nodeletelastidentity: Bạn không thể xóa nhận diện này, đó là cái cuối cùng của bạn.
+forbiddencharacter: Tên giữ liệu chứa một ký tự bị cấm.
+selectimportfile: Xin chọn hồ sơ để tải lên.
+addresswriterror: Sổ địa chỉ đã chọn không thể viết lại được
+contactaddedtogroup: Thêm liên lạc vào nhóm này thành công
+contactremovedfromgroup: Xóa liên lạc khỏi nhóm này thành công
+nogroupassignmentschanged: Không quy nhóm nào đả được thay đổi
+importwait: Đang nhập, xin chờ...
+importformaterror: Nhập dữ liệu lỗi. Tệp tin vừa tải lên không phải tệp dữ liệu chính xác.
+importconfirm: Đã nhập $inserted liên hệ đã chèn vào thành công.
+importmessagesuccess: Đã nhập thành công $nr thư.
+importmessageerror: Nhập dữ liệu bị lỗi. Tệp tin vừa tải lên không có định dạng chính xác của tệp cấu hình hòm thư hoặc một thư đơn lẻ.
+opnotpermitted: Thao tác không được cho phép!
+editorwarning: Việc chuyển công cụ soạn thảo có thể làm mất định dạng dữ liệu. Bạn có muốn tiếp tục không?
+httpreceivedencrypterror: Xuất hiện một lỗi cấu hình  tai hại. Hãy liên hệ với người quản trị ngay. <b> Thư của bạn không thể gửi được </b>
+smtpconnerror: 'Lỗi SMTP ($code): Kết nỗi tới máy chủ bị lỗi.'
+smtpautherror: 'Lỗi SMTP ($code): Xác thực thất bại.'
+smtpfromerror: 'Lỗi SMTP ($code):  Không thể bố trí người gửi "$from" ($msg).'
+smtptoerror: 'Lỗi SMTP ($code):  Không thể bố trí người nhận "$to" ($msg).'
+smtprecipientserror: 'Lỗi SMTP: không thể phân loại danh sách người nhận'
+smtperror: 'Lỗi SMTP: $msg'
+toomanyrecipients: Quá nhiều người nhận. Hãy giảm số lượng người nhận xuống tối đa là $max.
+maxgroupmembersreached: Số lượng thành viên trong nhóm vượt quá mức tối đa là $max.
+internalerror: Xuất hiện một lỗi nội bộ. Xin hãy thử lại
+contactdelerror: Không thể xóa liên lạc
+contactdeleted: Liên lạc được xóa thành công
+contactrestoreerror: Không thể khôi phục liên lạc đã xóa
+contactrestored: Liên lạc được khôi phục thành công
+groupdeleted: Nhóm được xóa thành công
+grouprenamed: Nhóm được đặt tên lại thành công
+groupcreated: Nhóm được tạo thành công
+savedsearchdeleted: Tìm kiếm đã lưu được xóa thành công
+savedsearchdeleteerror: Không thể xóa tìm kiếm đã lưu
+savedsearchcreated: Tìm kiếm đã lưu được tạo thành công
+savedsearchcreateerror: Không thể tạo tìm kiếm đã lưu
+messagedeleted: Thư được xóa thành công
+messagemoved: Thư được chuyển đi thành công
+messagecopied: Thư được sao chép thành công
+messagemarked: Thư được đánh dấu thành công
+autocompletechars: Phải nhập ít nhất $min ký tự để năng tự động gõ
+autocompletemore: Nhiều dữ liệu phù hợp hơn được tìm thấy. Hãy gõ thêm  ký tự.
+namecannotbeempty: Tên không được để trống
+nametoolong: Tên quá dài
+folderupdated: Giữ liệu được cập nhật thành công
+foldercreated: Giữ liệu được tạo thành công
+invalidimageformat: Không phải là định dạng ảnh hợp lệ.
+mispellingsfound: Lỗi chính tả được phát hiện trong thư
+parentnotwritable: Không thể tạo/chuyển folder vào folder gốc đã chọn. Không có quyền truy cập.
+messagetoobig: Một phần thư quá lớn để xử lý nó.
+noscriptwarning: 'Cảnh báo: Dịch vụ webmail này yêu cầu sử dụng Javascript. Để sử dụng, bạn cần kích hoạt hỗ trợ Javascript trong cấu hình trình duyệt Internet đang sử dụng.'
+cookiesmismatch: ''
+accountlocked: ''
+dbconnerror: ''
+loggedout: ''
+attaching: ''
+nocontactselected: ''
+contactexists: ''
+blockedresources: ''
+suspiciousemail: ''
+bccemail: ''
+bouncehint: ''
+externalmessagedecryption: ''
+nopubkeyfor: ''
+nopubkeyforsender: ''
+encryptnoattachments: ''
+searchpubkeyservers: ''
+encryptpubkeysfound: ''
+keyservererror: ''
+keyimportsuccess: ''
+contactsearchonly: ''
+alerttitle: ''
+confirmationtitle: ''
+movefolderconfirm: ''
+notsentwarning: ''
+folderpurged: ''
+folderexpunged: ''
+csvfilemismatch: ''
+filecounterror: ''
+msgsizeerror: ''
+msgsizeerrorfwd: ''
+importconfirmskipped: ''
+importconfirminvalid: ''
+importconfirmerrors: ''
+nofromaddress: ''
+smtputf8error: ''
+smtpsizeerror: ''
+emailformaterror: ''
+messagemovedtotrash: ''
+namedotforbidden: ''
+attachmentvalidationerror: ''
+messageissent: ''
+errnotfound: ''
+errnotfoundexplain: ''
+errfailedrequest: ''
+errauthorizationfailed: ''
+errunauthorizedexplain: ''
+errrequestcheckfailed: ''
+errcsrfprotectionexplain: ''
+errcontactserveradmin: ''
+clicktoresumesession: ''
+errcomposesession: ''
+errcomposesessionexplain: ''
+clicktocompose: ''
+nosupporterror: ''
+siginserted: ''
+responseinserted: ''
+noresponsesavailable: ''
+listempty: ''
+listusebutton: ''
+keypaircreatesuccess: ''
+emptyattachment: ''
+oauthloginfailed: ''
+oauthinvalidrequest: ''
+oauthaccessdenied: ''
