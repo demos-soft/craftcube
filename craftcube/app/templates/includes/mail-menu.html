@@ -38,8 +38,8 @@
 </div>
 
 <div id="forward-menu" class="popupmenu">
-  <h3 class="voice">Forwarding options</h3>
-  <ul class="menu listing" role="menu">
+  <h3 id="aria-label-forward-menu" class="voice">Forwarding options</h3>
+  <ul class="menu listing" role="menu" aria-labelledby="aria-label-forward-menu">
     <li role="menuitem"><a class="forward inline disabled" data-mode="forward"
         href="{{ url_for('views.compose', _mode='forward') }}"><span>Forward inline</span></a></li>
     <li role="menuitem"><a class="forward attachment disabled" data-mode="forward-attachment"
@@ -50,8 +50,8 @@
 </div>
 
 <div id="replyall-menu" class="popupmenu">
-  <h3 class="voice">Reply-all options</h3>
-  <ul class="menu listing" role="menu">
+  <h3 id="aria-label-replyall-menu" class="voice">Reply-all options</h3>
+  <ul class="menu listing" role="menu" aria-labelledby="aria-label-replyall-menu">
     <li role="menuitem"><a class="reply all disabled" data-mode="replyall"
         href="{{ url_for('views.compose', _mode='replyall') }}"><span>Reply all</span></a></li>
     <li role="menuitem"><a class="reply list disabled" data-mode="replylist"
@@ -60,8 +60,8 @@
 </div>
 
 <div id="message-menu" class="popupmenu">
-  <h3 class="voice">More message actions</h3>
-  <ul class="menu listing" role="menu">
+  <h3 id="aria-label-message-menu" class="voice">More message actions</h3>
+  <ul class="menu listing" role="menu" aria-labelledby="aria-label-message-menu">
     <li role="menuitem"><a class="print disabled" id="tb-print"
         href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
         target="_blank"><span>Print this message</span></a></li>
@@ -92,8 +92,8 @@
 </div>
 
 <div id="download-menu" class="popupmenu">
-  <h2 class="voice">Export</h2>
-  <ul class="menu listing" role="menu">
+  <h2 class="voice" id="aria-label-zipdownloadmenu">Message Download Options Menu</h2>
+  <ul class="menu listing" role="menu" aria-labelledby="aria-label-zipdownloadmenu">
     <li role="menuitem"><a class="download eml" id="dl-eml" href="#"
         data-dlfmt="eml"><span>Source (.eml)</span></a></li>
     <li role="menuitem"><a class="download mbox" id="dl-mbox" href="#"
@@ -125,8 +125,8 @@
 </div>
 
 <div id="markmessage-menu" class="popupmenu">
-  <h3 class="voice">Mark messages as</h3>
-  <ul class="menu listing" role="menu">
+  <h3 id="aria-label-markmessage-menu" class="voice">Mark selected messages as...</h3>
+  <ul class="menu listing" role="menu" aria-labelledby="aria-label-markmessage-menu">
     <li role="menuitem"><a class="read disabled" href="#" data-act="read"><span>As read</span></a></li>
     <li role="menuitem"><a class="unread disabled" href="#" data-act="unread"><span>As unread</span></a></li>
     <li role="menuitem"><a class="flag disabled" href="#" data-act="flag"><span>As flagged</span></a></li>
