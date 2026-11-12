@@ -64,7 +64,7 @@
       </div>
       <div id="searchmenu" class="hidden searchoptions scroller propform formcontainer"
            aria-labelledby="aria-label-search-menu">
-        <h3 id="aria-label-search-menu" class="voice">Search fields</h3>
+        <h3 id="aria-label-search-menu" class="voice">Search modifiers</h3>
         <div class="formcontent">
           <ul class="proplist">
             <li><label><input type="checkbox" name="s_mods[]" value="name" checked> Name</label></li>
@@ -182,13 +182,13 @@
             data-group-name="" data-groupid="" title="Rename selected group"><span>Rename group</span></a></li>
         <li role="menuitem"><a class="group delete disabled" id="group-delete-link" href="#"
             data-group-name="" data-groupid="" title="Delete selected group"><span>Delete group</span></a></li>
-        <li role="menuitem" class="disabled"><a href="#"><span>Save search</span></a></li>
-        <li role="menuitem" class="disabled"><a href="#"><span>Delete search</span></a></li>
+        <li role="menuitem"><a class="search disabled" href="#"><span>Save search</span></a></li>
+        <li role="menuitem"><a class="search delete disabled" href="#"><span>Delete search</span></a></li>
       </ul>
     </div>
 
     <div id="listselect-menu" class="popupmenu">
-      <h3 id="aria-label-listselect-menu" class="voice">Selection tools</h3>
+      <h3 id="aria-label-listselect-menu" class="voice">List selection menu</h3>
       <ul class="menu listing" role="menu">
         <li role="menuitem"><a class="selection toggle-link" href="#" id="list-toggle-button">Selection</a></li>
         <li role="menuitem"><a class="select page" href="#" data-select="page">Current page</a></li>
@@ -205,7 +205,17 @@
         <li role="menuitem"><a class="assigngroup disabled" id="assigngroup-link" href="#"
             aria-haspopup="true"><span>Assign to group...</span></a></li>
         <li role="menuitem"><a class="removegroup disabled" id="removegroup-link" href="#"><span>Remove from group</span></a></li>
-        <li role="menuitem" class="disabled"><a href="#"><span>Copy to...</span></a></li>
+        <li role="menuitem"><a class="copy disabled" href="#"
+            aria-haspopup="true"><span class="folder-selector-link">Copy to...</span></a></li>
+      </ul>
+    </div>
+
+    <!-- drag-&-drop drop-action menu (ui.js drag_menu) -->
+    <div id="dragcontact-menu" class="popupmenu">
+      <h3 id="aria-label-dragcontact-menu" class="voice">Drag-n-Drop action menu</h3>
+      <ul class="menu listing" role="menu" aria-labelledby="aria-label-dragcontact-menu">
+        <li role="menuitem"><a class="disabled" href="#"><span>Move</span></a></li>
+        <li role="menuitem"><a class="disabled" href="#"><span>Copy</span></a></li>
       </ul>
     </div>
 
