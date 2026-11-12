@@ -17,8 +17,10 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # spellchecking engine (the reference uses pspell/enchant; see app/spellchecker.py)
+# tzdata must track the reference's PHP tzdata: the timezone dropdown offsets
+# are computed from it at runtime (prefs_data.build_timezones)
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends aspell aspell-en \
+    && apt-get install -y --no-install-recommends aspell aspell-en tzdata \
     && rm -rf /var/lib/apt/lists/*
 
 # the application (node_modules and local data are excluded via .dockerignore)
