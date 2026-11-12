@@ -20,7 +20,7 @@
       <a class="btn contacts{{ ' selected' if task == 'addressbook' }}" href="{{ url_for('views.contacts') }}"><span class="inner">Contacts</span></a>
       <a class="btn settings{{ ' selected' if task == 'settings' }}" href="{{ url_for('views.settings') }}"><span class="inner">Settings</span></a>
       <span class="special-buttons">
-        <a class="btn theme dark" href="#" id="darktoggle"><span class="inner">Dark</span></a>
+        <a class="btn theme dark" href="#" id="darktoggle"><span class="inner">Dark mode</span></a>
         <a class="btn about" href="{{ url_for('views.about') }}"><span class="inner">About</span></a>
         <a class="btn logout" href="{{ url_for('views.logout') }}"><span class="inner">Logout</span></a>
       </span>

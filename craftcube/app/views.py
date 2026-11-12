@@ -10,6 +10,9 @@ from flask import (Blueprint, Response, abort, current_app, flash, g,
 from .auth import hash_password, verify_password
 from .mail import Imap, MailError, Mailbox, build_message, _decode_header
 from . import util
+from . import prefs_sections
+
+PREF_SECTIONS = prefs_sections.sections
 
 bp = bp_current = Blueprint("views", __name__)
 
@@ -1173,41 +1176,27 @@ def settings_password():
 
 
 @bp.route("/settings/preferences", methods=["GET", "POST"])
+@bp.route("/settings/preferences/<section>", methods=["GET", "POST"])
 @login_required
-def settings_preferences():
+def settings_preferences(section=None):
     store = get_store()
     prefs = dict(store.get_user_prefs(session["user_id"]))
-    # prefs are stored at the top level of the user prefs dict; folder keys
-    # use the same names as Mailbox.special(kind): drafts/sent/trash/archive/junk
     if request.method == "POST":
-        for key in ("timezone", "time_format", "date_format", "refresh_interval",
-                    "reply_mode", "forward_mode", "html_editor"):
-            if key in request.form:
-                prefs[key] = request.form[key].strip()
-        for form_key, pref_key in (("drafts_mbox", "drafts"), ("sent_mbox", "sent"),
-                                   ("trash_mbox", "trash"), ("archive_mbox", "archive"),
-                                   ("junk_mbox", "junk")):
-            val = request.form.get(form_key, "").strip()
-            if val:
-                prefs[pref_key] = val
-            else:
-                prefs.pop(pref_key, None)
-        for key in ("pretty_date", "display_next", "check_all_folders",
-                    "mdn_default", "dsn_default", "reply_same_folder",
-                    "show_real_foldernames"):
-            prefs[key] = 1 if request.form.get(key) else 0
-        for key in ("pagesize", "read_time"):
-            if key in request.form:
-                try:
-                    prefs[key] = max(0, int(request.form[key]))
-                except ValueError:
-                    pass
-        for key, value in list(prefs.items()):
-            store.set_user_pref(session["user_id"], key, value)
-        flash("Preferences saved.", "confirmation")
-        return redirect(url_for("views.settings_preferences"))
+        return prefs_save(store, prefs, request.form.get("_section") or "general")
     folders = [f["name"] for f in folders_for_menu()]
-    return render("settings", "preferences.html", prefs=prefs, mail_folders=folders)
+    sections = PREF_SECTIONS(prefs, folders)
+    section = section if section in sections else "general"
+    return render("settings", "preferences.html", prefs=prefs, mail_folders=folders,
+                  sections=sections, section=section,
+                  blocks=sections[section]["blocks"])
+
+
+def prefs_save(store, prefs, section):
+    prefs_sections.apply_form(prefs, request.form)
+    for key, value in list(prefs.items()):
+        store.set_user_pref(session["user_id"], key, value)
+    flash("Preferences saved.", "confirmation")
+    return redirect(url_for("views.settings_preferences", section=section))
 
 
 @bp.route("/settings/responses")

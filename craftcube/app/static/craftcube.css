@@ -1,17 +1,42 @@
 /* CraftCube supplemental styles — icon content + inner-label rules that the
    elastic skin carries in ui.css, matching Roundcube Elastic behaviour. */
 
-/* task menu: hide labels, show icons (elastic: 78px rail) */
-#taskmenu a > .inner { display: none; }
-#taskmenu a { min-height: 32px; }
-#taskmenu a:before { margin: 0 auto; }
-#taskmenu a.compose:before { content: "\f055"; color: #37beff; }
+/* task menu: icons with labels below, matching Elastic's 78px rail.
+   Icons + colours mirror skins/elastic styles/widgets/menu.less exactly. */
+#taskmenu a.compose:before { content: "\f044"; }
 #taskmenu a.mail:before { content: "\f0e0"; }
 #taskmenu a.contacts:before { content: "\f0c0"; }
 #taskmenu a.settings:before { content: "\f013"; }
-#taskmenu a.logout:before { content: "\f08b"; }
-#taskmenu a.about:before { content: "\f05a"; }
-#taskmenu a.theme:before { content: "\f186"; }
+#taskmenu a.logout:before { content: "\f011"; }
+#taskmenu a.about:before { content: "\f128"; }
+#taskmenu a.theme.dark:before { content: "\f186"; }
+#taskmenu a.theme.light:before { content: "\f185"; }
+#taskmenu span.inner { font-size: 90%; }
+@media screen and (min-width:481px) {
+  #taskmenu a { color: #fff; padding: .45rem 0; text-align: center; }
+  #taskmenu a.selected, #taskmenu a.selected:hover, #taskmenu a:hover { color: #fff; background: #45555c; }
+  #taskmenu .special-buttons { position: absolute; bottom: 0; left: 0; background-color: #2f3a3f; width: 100%; }
+  #taskmenu .action-buttons a { color: #37beff; background: 0 0; }
+  #taskmenu .action-buttons a:hover { color: #37beff; background: #45555c; }
+  #taskmenu a.logout, #taskmenu a.logout:hover { color: #ff5552 !important; }
+}
+@media screen and (min-width:481px) and (max-width:1024px) {
+  #taskmenu a { width: 42px; height: 42px; font-size: 1.2rem; padding: 0; }
+  #taskmenu a:before { line-height: 42px; }
+  #taskmenu span.inner { display: none; }
+}
+@media screen and (min-width:1025px) {
+  #taskmenu a { width: 78px; font-size: 1rem; }
+  #taskmenu a:before { float: none; margin: 0 auto; }
+  #taskmenu a:focus { background-color: #45555c; }
+  #taskmenu span.inner { padding: 0 .1em; }
+}
+
+/* settings sidebar icons (elastic: listing.iconized) */
+.listing.iconized li.preferences > a:before { content: "\f1de"; }
+.listing.iconized li.folders > a:before { content: "\f07b"; }
+.listing.iconized li.identities > a:before { content: "\f2c2"; }
+.listing.iconized li.responses > a:before { content: "\f075"; }
 
 /* header buttons: elastic uses .button.icon, not .btn */
 .header a.btn:before { display: inline !important; float: none !important; vertical-align: middle; margin-right: 0 !important; }

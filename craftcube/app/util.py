@@ -52,6 +52,31 @@ DATE_FORMATS = {
     "mm/dd/yyyy": "%m/%d/%Y %H:%M",
 }
 
+# PHP date() -> strftime() conversion for preference format strings
+# (e.g. 'Y-m-d', 'd.m.Y', 'G:i', 'h:i A') as offered by the reference UI.
+_PHP_TO_STRFTIME = {
+    "Y": "%Y", "y": "%y", "m": "%m", "d": "%d", "j": "%-d", "n": "%-m",
+    "H": "%H", "G": "%-H", "i": "%M", "s": "%S",
+    "g": "%-I", "h": "%I", "a": "%p", "A": "%p",
+    "D": "%a", "l": "%A", "M": "%b", "F": "%B",
+}
+
+
+def php_strftime(fmt, dt):
+    """Render dt with a PHP-style format string (unknown chars kept literal)."""
+    out = []
+    i = 0
+    while i < len(fmt):
+        c = fmt[i]
+        if c == "\\" and i + 1 < len(fmt):
+            out.append(fmt[i + 1]); i += 2; continue
+        out.append(_PHP_TO_STRFTIME.get(c, c))
+        i += 1
+    try:
+        return dt.strftime("".join(out))
+    except ValueError:
+        return dt.strftime("%Y-%m-%d %H:%M")
+
 def to_local_tz(dt, tzname=None):
     """Convert to local zone, or to the IANA zone named in prefs."""
     if dt is None:
@@ -69,8 +94,14 @@ def to_local_tz(dt, tzname=None):
 def fmt_pref_time(dt, prefs):
     if dt is None:
         return ""
-    fmt = "%H:%M" if (prefs or {}).get("time_format", "H") == "H" else "%I:%M %p"
-    return to_local_tz(dt, (prefs or {}).get("timezone")).strftime(fmt)
+    prefs = prefs or {}
+    tf = prefs.get("time_format", "H")
+    # reference stores PHP formats ('H:i'); legacy CraftCube used 'H'/'h'
+    fmt = php_strftime(tf, to_local_tz(dt, prefs.get("timezone"))) \
+        if ":" in tf else \
+        to_local_tz(dt, prefs.get("timezone")).strftime(
+            "%H:%M" if tf == "H" else "%I:%M %p")
+    return fmt
 
 def fmt_pref_date(dt, prefs):
     """Message view date honouring date_format/pretty_date/time_format prefs."""
@@ -78,13 +109,15 @@ def fmt_pref_date(dt, prefs):
         return ""
     prefs = prefs or {}
     dt = to_local_tz(dt, prefs.get("timezone"))
+    df = prefs.get("date_format", "long")
+    base = php_strftime(df, dt) if any(c in df for c in "Yydj") \
+        else dt.strftime(DATE_FORMATS.get(df, DATE_FORMATS["long"]))
     if prefs.get("pretty_date"):
         # Roundcube 'pretty' style: weekday + human date + time
-        return dt.strftime("%a, ") + dt.strftime(DATE_FORMATS.get(
-            prefs.get("date_format", "long"), DATE_FORMATS["long"])) + \
-            " " + fmt_pref_time(dt, prefs)
-    fmt = DATE_FORMATS.get(prefs.get("date_format", "long"), DATE_FORMATS["long"])
-    return dt.strftime(fmt)
+        return dt.strftime("%a, ") + base + " " + fmt_pref_time(dt, prefs)
+    return base + " " + fmt_pref_time(dt, prefs) \
+        if any(c in df for c in "Yydj") and prefs.get("show_pref_time", 1) \
+        else base
 
 def list_pref_date(dt, prefs):
     """Message-list date honouring timezone + time_format prefs."""
@@ -93,7 +126,8 @@ def list_pref_date(dt, prefs):
     prefs = prefs or {}
     dt = to_local_tz(dt, prefs.get("timezone"))
     now = to_local_tz(datetime.now(timezone.utc), prefs.get("timezone"))
-    tfmt = "%H:%M" if prefs.get("time_format", "H") == "H" else "%I:%M %p"
+    tf = prefs.get("time_format", "H")
+    tfmt = php_strftime(tf, dt) if ":" in tf else ("%H:%M" if tf == "H" else "%I:%M %p")
     if dt.date() == now.date():
         return dt.strftime(tfmt)
     if dt.year == now.year:

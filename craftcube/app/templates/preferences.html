@@ -5,153 +5,61 @@
 
     <h1 class="voice">Preferences</h1>
 
-    <div id="layout-content" class="selected">
-      <div class="header"><span class="header-title">Preferences</span></div>
-      <div class="formcontainer content">
-        <form method="post" class="formcontent">
+    <!-- preference sections -->
+    <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-prefsection">
+      <div class="header">
+        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Settings</span></a>
+        <span id="aria-label-prefsection" class="header-title">Preferences</span>
+      </div>
+      <div class="scroller">
+        <table id="sections-table" class="listing iconized settings-default-icon" role="listbox" data-list="sections_list">
+          <tbody>
+            {% for key, s in sections.items() %}
+            <tr id="rcmrow{{ key }}" class="{{ key }}{{ ' selected' if key == section }}"
+                tabindex="0" role="option" aria-selected="{{ 'true' if key == section else 'false' }}"
+                data-href="{{ url_for('views.settings_preferences', section=key) }}">
+              <td class="section">{{ s.label }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-          <fieldset>
-            <legend>User Interface</legend>
-            <table class="layout propform">
-              <tbody>
-                <tr>
-                  <td class="title"><label for="inputtimezone">Timezone</label></td>
-                  <td class="field">
-                    <select name="timezone" id="inputtimezone" class="custom-select">
-                      <option value="">Server default</option>
-                      {% for tz in ['Europe/Berlin','Europe/London','UTC','America/New_York','America/Los_Angeles','America/Chicago','Asia/Tokyo','Asia/Kolkata','Australia/Sydney'] %}
-                      <option value="{{ tz }}"{{ ' selected' if prefs.get('timezone') == tz }}>{{ tz }}</option>
-                      {% endfor %}
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="title"><label for="inputtimeformat">Time format</label></td>
-                  <td class="field">
-                    <select name="time_format" id="inputtimeformat" class="custom-select">
-                      <option value="H"{{ ' selected' if prefs.get('time_format', 'H') == 'H' }}>24h (HH:mm)</option>
-                      <option value="h"{{ ' selected' if prefs.get('time_format') == 'h' }}>12h (hh:mm aa)</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="title"><label for="inputdateformat">Date format</label></td>
-                  <td class="field">
-                    <select name="date_format" id="inputdateformat" class="custom-select">
-                      <option value="long"{{ ' selected' if prefs.get('date_format', 'long') == 'long' }}>9 January 2026</option>
-                      <option value="short"{{ ' selected' if prefs.get('date_format') == 'short' }}>09.01.26</option>
-                      <option value="yyyy-mm-dd"{{ ' selected' if prefs.get('date_format') == 'yyyy-mm-dd' }}>2026-01-09</option>
-                      <option value="mm/dd/yyyy"{{ ' selected' if prefs.get('date_format') == 'mm/dd/yyyy' }}>01/09/2026</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="title">List options</td>
-                  <td class="field">
-                    <label><input type="checkbox" name="pretty_date" value="1"{{ ' checked' if prefs.get('pretty_date') }}> Use pretty dates (week days, month names)</label><br>
-                    <label><input type="checkbox" name="display_next" value="1"{{ ' checked' if prefs.get('display_next') }}> Show next message after delete/archive</label>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="title"><label for="inputpagesize">Message list / page</label></td>
-                  <td class="field"><input type="number" name="pagesize" id="inputpagesize" min="0" step="10"
-                      value="{{ prefs.get('pagesize', 20) }}" class="form-control" style="max-width:8rem"></td>
-                </tr>
-                <tr>
-                  <td class="title"><label for="inputreadtime">Mark message as read after</label></td>
-                  <td class="field">
-                    <select name="read_time" id="inputreadtime" class="custom-select" style="max-width:12rem">
-                      <option value="0"{{ ' selected' if prefs.get('read_time', 0) == 0 }}>Immediately</option>
-                      <option value="5"{{ ' selected' if prefs.get('read_time') == 5 }}>5 seconds</option>
-                      <option value="10"{{ ' selected' if prefs.get('read_time') == 10 }}>10 seconds</option>
-                      <option value="30"{{ ' selected' if prefs.get('read_time') == 30 }}>30 seconds</option>
-                      <option value="60"{{ ' selected' if prefs.get('read_time') == 60 }}>1 minute</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="title"><label for="inputrefresh">Refresh interval</label></td>
-                  <td class="field">
-                    <select name="refresh_interval" id="inputrefresh" class="custom-select" style="max-width:12rem">
-                      <option value="0"{{ ' selected' if prefs.get('refresh_interval', '0') == '0' }}>Never</option>
-                      <option value="60"{{ ' selected' if prefs.get('refresh_interval') == '60' }}>Every minute</option>
-                      <option value="120"{{ ' selected' if prefs.get('refresh_interval') == '120' }}>Every 2 minutes</option>
-                      <option value="300"{{ ' selected' if prefs.get('refresh_interval') == '300' }}>Every 5 minutes</option>
-                    </select>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+    <div id="layout-content" class="selected" role="main">
+      <div class="header">
+        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <span class="header-title">{{ sections[section].label }}</span>
+      </div>
+      <div class="content">
+        <form name="form" method="post" action="{{ url_for('views.settings_preferences', section=section) }}" class="propform cols-sm-6-6">
+          <input type="hidden" name="_section" value="{{ section }}">
+          {% for class, legend, fields in blocks %}
+          <fieldset class="{{ class }}"><legend>{{ legend }}</legend>
+            <table class="propform cols-sm-6-6"><tbody>
+              {% for f in fields %}
+              <tr>
+                <td class="title"><label for="{{ f.id }}">{{ f.title }}</label></td>
+                <td>
+                  {% if f.type == 'select' %}
+                  <select name="{{ f.name }}" id="{{ f.id }}" class="custom-select">
+                    {% for v, l in f.options %}
+                    <option value="{{ v }}"{{ ' selected' if v == f.value }}>{{ l }}</option>
+                    {% endfor %}
+                  </select>
+                  {% elif f.type == 'checkbox' %}
+                  <input name="{{ f.name }}" id="{{ f.id }}" value="1" type="checkbox"{{ ' checked' if f.checked }}>
+                  {% else %}
+                  <input name="{{ f.name }}" id="{{ f.id }}" size="{{ f.size }}" class="form-control" value="{{ f.value }}" type="text">
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody></table>
           </fieldset>
-
-          <fieldset>
-            <legend>Composing Messages</legend>
-            <table class="layout propform">
-              <tbody>
-                <tr>
-                  <td class="title">Default options for new messages</td>
-                  <td class="field">
-                    <label><input type="checkbox" name="mdn_default" value="1"{{ ' checked' if prefs.get('mdn_default') }}> Always return receipt (MDN)</label><br>
-                    <label><input type="checkbox" name="dsn_default" value="1"{{ ' checked' if prefs.get('dsn_default') }}> Always request delivery notification (DSN)</label>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="title"><label for="inputreplymode">Reply behaviour</label></td>
-                  <td class="field">
-                    <select name="reply_mode" id="inputreplymode" class="custom-select">
-                      <option value="reply"{{ ' selected' if prefs.get('reply_mode', 'reply') == 'reply' }}>Reply to sender only</option>
-                      <option value="all"{{ ' selected' if prefs.get('reply_mode') == 'all' }}>Reply to all</option>
-                      <option value="list"{{ ' selected' if prefs.get('reply_mode') == 'list' }}>Reply to list address</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="title"><label for="inputfwdmode">Forward messages</label></td>
-                  <td class="field">
-                    <select name="forward_mode" id="inputfwdmode" class="custom-select">
-                      <option value="inline"{{ ' selected' if prefs.get('forward_mode', 'inline') == 'inline' }}>Inline</option>
-                      <option value="attachment"{{ ' selected' if prefs.get('forward_mode') == 'attachment' }}>As attachment</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="title">Reply in the same folder as the original message</td>
-                  <td class="field"><input type="checkbox" name="reply_same_folder" value="1"{{ ' checked' if prefs.get('reply_same_folder') }}></td>
-                </tr>
-              </tbody>
-            </table>
-          </fieldset>
-
-          <fieldset>
-            <legend>Special Folders</legend>
-            <table class="layout propform">
-              <tbody>
-                {% for key, label in [('drafts','Drafts folder'),('sent','Sent folder'),('archive','Archive folder'),('junk','Junk folder'),('trash','Trash folder')] %}
-                <tr>
-                  <td class="title"><label for="inputfolder_{{ key }}">{{ label }}</label></td>
-                  <td class="field">
-                    <select name="{{ key }}_mbox" id="inputfolder_{{ key }}" class="custom-select">
-                      <option value="">Auto-detect / default</option>
-                      {% for f in mail_folders %}
-                      <option value="{{ f }}"{{ ' selected' if prefs.get(key) == f }}>{{ f }}</option>
-                      {% endfor %}
-                    </select>
-                  </td>
-                </tr>
-                {% endfor %}
-                <tr>
-                  <td class="title">Folder list</td>
-                  <td class="field">
-                    <label><input type="checkbox" name="show_real_foldernames" value="1"{{ ' checked' if prefs.get('show_real_foldernames') }}> Show real folder names</label><br>
-                    <label><input type="checkbox" name="check_all_folders" value="1"{{ ' checked' if prefs.get('check_all_folders') }}> Show unread messages count for all folders</label>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </fieldset>
-
+          {% endfor %}
           <div class="formbuttons">
-            <button type="submit" class="btn btn-primary icon save">Save</button>
+            <button class="btn btn-primary submit" type="submit" value="Save">Save</button>
           </div>
         </form>
 
