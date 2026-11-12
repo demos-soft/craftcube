@@ -2,6 +2,9 @@
 import email
 import functools
 import io
+import json
+import re
+from html import unescape
 
 from flask import (Blueprint, Response, abort, current_app, flash, g,
                    redirect, render_template, request, session, url_for,
@@ -11,6 +14,7 @@ from .auth import hash_password, verify_password
 from .mail import Imap, MailError, Mailbox, build_message, _decode_header
 from . import util
 from . import prefs_sections
+from . import prefs_data
 
 PREF_SECTIONS = prefs_sections.sections
 
@@ -411,6 +415,50 @@ def message_view():
     return render("mail", "message.html", **ctx)
 
 
+@bp.route("/utils/text2html", methods=["POST"])
+@login_required
+def utils_text2html():
+    # reference: ?_task=utils&_action=text2html (rcmail_action_utils_text2html)
+    from .converters import text2html
+    body = request.get_data(as_text=True)
+    return Response(text2html(body), content_type="text/html; charset=UTF-8")
+
+
+@bp.route("/utils/html2text", methods=["POST"])
+@login_required
+def utils_html2text():
+    # reference: ?_task=utils&_action=html2text (rcmail_action_utils_html2text)
+    from .converters import html2text
+    body = request.get_data(as_text=True)
+    text = html2text(body, links=bool(request.args.get("_do_links")),
+                     width=int(request.args.get("_width") or 0))
+    return Response(text, content_type="text/plain; charset=UTF-8")
+
+
+@bp.post("/utils/spell_html")
+@login_required
+def utils_spell_html():
+    # reference: rcmail_action_utils_spell_html (pspell engine)
+    from . import spellchecker
+    method = request.form.get("method", "")
+    lang = request.form.get("lang", "en")
+    result = {}
+    if method == "addToDictionary":
+        spellchecker.add_word(request.form.get("word", ""))
+        result["result"] = True
+    else:
+        text = unescape(request.form.get("text", "") or "")
+        if text:
+            words = spellchecker.check(text, lang)
+            if words is None:
+                return Response(json.dumps({"error": "Internal error."}),
+                                status=500, content_type="application/json")
+            if words:
+                result["words"] = words
+                result["dictionary"] = False
+    return Response(json.dumps(result), content_type="application/json")
+
+
 @bp.route("/message/export")
 @login_required
 def message_export():
@@ -711,6 +759,89 @@ def _quote(msg, header=True):
     return body
 
 
+def _msg_has_html(msg):
+    # rcube_message::has_html_part(): a text/html part that isn't an attachment
+    try:
+        for p in (msg.walk() if msg.is_multipart() else [msg]):
+            if p.get_content_type() == "text/html" and not p.get_filename() \
+               and p.get_content_disposition() != "attachment":
+                return True
+    except Exception:
+        pass
+    return False
+
+
+def compose_html_mode(mode, source_msg, prefs, post_is_html=None):
+    # rcmail_action_mail_compose::compose_editor_mode() with htmleditor=0
+    # (our config default; the reference ships the same default)
+    if post_is_html is not None:
+        return post_is_html
+    if mode in ("draft", "edit"):
+        return bool(prefs.get("prefer_html", 1)) and source_msg is not None \
+            and _msg_has_html(source_msg)
+    if mode == "reply":
+        return False  # htmleditor == 0
+    if mode == "forward":
+        return False  # htmleditor == 0
+    return False      # new message
+
+
+def editor_config(mode, prefs, spellcheck=True):
+    # rcmail_action::html_editor() (rcmail_action.php:340-432). The
+    # default_font / default_font_size env is set by the compose action
+    # only (program/actions/mail/compose.php:133-140), so identity and
+    # response editors get no content_style (browser default font).
+    lang = "en"
+    fam = prefs_data.AVAILABLE_FONTS.get(prefs.get("default_font") or "Verdana") if mode == "" else None
+    size = (prefs.get("default_font_size") or "10pt") if mode == "" else None
+    if size and size not in prefs_data.AVAILABLE_FONT_SIZES:
+        size = "10pt"
+    style = []
+    if fam:
+        style.append(f"font-family: {fam};")
+    if size:
+        style.append(f"font-size: {size};")
+    return {
+        "mode": mode,
+        "lang": lang,
+        "skin_path": "static",
+        "spellcheck": 1 if spellcheck else 0,
+        "spelldict": 0,
+        "content_css": url_for("static", filename="styles/embed.min.css"),
+        "disabled_plugins": [],
+        "disabled_buttons": [],
+        "extra_plugins": [],
+        "extra_buttons": [],
+        "content_style": ("body {" + " ".join(style) + "}") if style else "",
+        "default_font": fam or "",
+        "default_font_size": size or "",
+    }
+
+
+def identity_signatures(identities, prefs):
+    # rcmail_sendmail::email_identities_field(): signatures[id] = {text, html}
+    from .converters import html2text, text2html
+    sigs = {}
+    top_posting = int(prefs.get("reply_mode", 0) or 0) > 0 and not prefs.get("sig_below")
+    separator = "---" if top_posting else "-- "
+    add_sep = bool(prefs.get("sig_separator"))
+    for i in identities:
+        sig = i["signature"] or ""
+        if not sig:
+            continue
+        if i["html_signature"]:
+            text = html2text(sig, links=False).strip("\r\n")
+            html = sig
+        else:
+            text = sig
+            html = text2html(sig)
+        if add_sep and not re.search(r"^--[ -]\r?\n", text):
+            text = separator + "\n" + text.lstrip("\r\n")
+            html = separator + "<br>" + html
+        sigs[str(i["identity_id"])] = {"text": text, "html": html}
+    return sigs
+
+
 @bp.route("/compose", methods=["GET", "POST"])
 @login_required
 def compose():
@@ -851,6 +982,22 @@ def compose():
                         "size": len(p.get_payload(decode=True) or b""),
                     })
 
+    # html/plain editor decision (compose_editor_mode())
+    html_mode = compose_html_mode(mode, source_msg, prefs)
+    prefill["html"] = "1" if html_mode else ""
+    if html_mode and mode in ("draft", "edit") and source_msg is not None:
+        # the editor loads the message's HTML part, not the plain text
+        for p in source_msg.walk():
+            if p.get_content_type() == "text/html" and not p.get_filename() \
+               and p.get_content_disposition() != "attachment":
+                try:
+                    raw = (p.get_payload(decode=True) or b"").decode(
+                        p.get_content_charset() or "utf-8", errors="replace")
+                    prefill["body"] = util.sanitize_html(raw)
+                except Exception:
+                    pass
+                break
+
     if request.method == "POST":
         ident_id = request.form.get("_ident")
         ident = store.identity(session["user_id"], ident_id) if ident_id else store.default_identity(session["user_id"])
@@ -860,7 +1007,7 @@ def compose():
         bcc = parse_recipients(request.form.get("_bcc"))
         subject = request.form.get("_subject", "")
         body = request.form.get("_body", "")
-        html = request.form.get("_format") == "html"
+        html = request.form.get("_is_html") == "1" or request.form.get("_format") == "html"
         if not to and not cc and not bcc:
             flash("No recipients given.", "error")
             return render("mail", "compose.html", prefill=prefill, identities=identities,
@@ -929,7 +1076,28 @@ def compose():
                   folders=folders, mode=mode, uid_of=uid_of,
                   draft_uid=draft_uid, attachments_kept=attachments_kept,
                   action="compose",
-                  keep_formatting=(mode == "edit"))
+                  keep_formatting=(mode == "edit"),
+                  html_mode=html_mode,
+                  editor_cfg=editor_config("", prefs),
+                  signatures=identity_signatures(identities, prefs),
+                  identities_map={
+                      str(i["identity_id"]): {
+                          k: v for k, v in
+                          (("email", i["email"]),
+                           ("replyto", i["reply-to"] or None),
+                           ("bcc", i["bcc"] or None)) if v}
+                      for i in identities},
+                  editor_env={
+                      "task": "mail", "action": "compose",
+                      "compose_mode": {"draft": "draft", "edit": "edit",
+                                       "reply": "reply", "replyall": "reply",
+                                       "replylist": "reply"}.get(mode, ""),
+                      "top_posting": int(prefs.get("reply_mode", 0) or 0) > 0,
+                      "sig_below": bool(prefs.get("sig_below")),
+                      "show_sig": str(prefs.get("show_sig", "1")) == "1",
+                      "spell_lang": "en",
+                      "composebody": "composebody"},
+                  )
 
 
 # ---------------------------------------------------------------- addressbook
@@ -1303,7 +1471,9 @@ def responses():
         if not edit_row:
             abort(404)
     return render("settings", "responses.html", rows=rows,
-                  editing=bool(edit), edit_row=edit_row)
+                  editing=bool(edit), edit_row=edit_row,
+                  editor_cfg=editor_config(
+                      "response", store.get_user_prefs(session["user_id"])))
 
 
 @bp.route("/settings/responses", methods=["POST"])
@@ -1328,7 +1498,9 @@ def response_edit(rid=None):
             # reference keeps the record open in the edit frame after save
             return redirect(url_for("views.responses", _edit=new_id))
         flash("Name is required.", "error")
-    return render("settings", "responseedit.html", row=row)
+    return render("settings", "responseedit.html", row=row,
+                  editor_cfg=editor_config(
+                      "response", store.get_user_prefs(session["user_id"])))
 
 
 @bp.post("/settings/response/<int:rid>/delete")
@@ -1351,7 +1523,9 @@ def identities():
         if not edit_row:
             abort(404)
     return render("settings", "identities.html", rows=rows,
-                  editing=bool(edit), edit_row=edit_row)
+                  editing=bool(edit), edit_row=edit_row,
+                  editor_cfg=editor_config(
+                      "identity", store.get_user_prefs(session["user_id"])))
 
 
 @bp.route("/settings/identities", methods=["POST"])
@@ -1374,7 +1548,9 @@ def identity_edit(iid=None):
             flash("Identity saved.", "confirmation")
             # reference keeps the record open in the edit frame after save
             return redirect(url_for("views.identities", _edit=new_id or iid))
-    return render("settings", "identityedit.html", row=row)
+    return render("settings", "identityedit.html", row=row,
+                  editor_cfg=editor_config(
+                      "identity", store.get_user_prefs(session["user_id"])))
 
 
 @bp.post("/settings/identity/<int:iid>/delete")

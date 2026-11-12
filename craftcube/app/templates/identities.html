@@ -64,11 +64,12 @@
                 <tr><td class="title"><label for="inputbcc">Bcc</label></td>
                     <td><input type="text" name="bcc" id="inputbcc" value="{{ edit_row.bcc if edit_row else '' }}" class="form-control"></td></tr>
                 <tr><td class="title"><label for="inputsig">Signature</label></td>
-                    <td><textarea name="signature" id="inputsig" rows="6" class="form-control">{{ edit_row.signature if edit_row else '' }}</textarea></td></tr>
+                    <td class="html-editor"><textarea name="signature" id="inputsig" rows="6" spellcheck="1" data-html-editor="1"
+                        class="form-control{{ ' mce_editor' if edit_row and edit_row.html_signature }}">{{ edit_row.signature if edit_row else '' }}</textarea></td></tr>
                 <tr class="proprow">
                   <td class="title">Signature options</td>
                   <td class="field">
-                    <label><input type="checkbox" name="html_signature" value="1" {{ 'checked' if edit_row and edit_row.html_signature }}> HTML signature</label>
+                    <label><input type="checkbox" onclick="return cc_editor.toggle({id: 'inputsig', html: this.checked})" name="html_signature" value="1" {{ 'checked' if edit_row and edit_row.html_signature }}> HTML signature</label>
                   </td>
                 </tr>
                 <tr><td class="title">Options</td>
@@ -96,3 +97,12 @@
     </div>
 
 {% include "includes/footer.html" %}
+{% if editing %}
+<script src="{{ url_for('static', filename='tinymce/tinymce.min.js') }}"></script>
+<script src="{{ url_for('static', filename='editor.js') }}"></script>
+<script>
+  // reference: html_editor('identity', 'rcmfd_signature') + editor_init
+  cc_editor.init_page({ task: 'settings', editor_config: {{ editor_cfg | tojson }} });
+  cc_editor.init_editor('inputsig', 'identity');
+</script>
+{% endif %}

@@ -62,12 +62,13 @@
                 </tr>
                 <tr>
                   <td class="title"><label for="inputbody">Text</label></td>
-                  <td class="field"><textarea name="body" id="inputbody" rows="12" class="form-control">{{ edit_row.body if edit_row else '' }}</textarea></td>
+                  <td class="field html-editor"><textarea name="body" id="inputbody" rows="12" spellcheck="1" data-html-editor="1"
+                      class="form-control{{ ' mce_editor' if edit_row and edit_row.html }}">{{ edit_row.body if edit_row else '' }}</textarea></td>
                 </tr>
                 <tr>
                   <td class="title">Options</td>
                   <td class="field">
-                    <label><input type="checkbox" name="html" value="1"{{ ' checked' if edit_row and edit_row.html }}> HTML signature</label>
+                    <label><input type="checkbox" onclick="return cc_editor.toggle({id: 'inputbody', html: this.checked})" name="html" value="1"{{ ' checked' if edit_row and edit_row.html }}> HTML signature</label>
                   </td>
                 </tr>
               </tbody>
@@ -91,3 +92,12 @@
     </div>
 
 {% include "includes/footer.html" %}
+{% if editing %}
+<script src="{{ url_for('static', filename='tinymce/tinymce.min.js') }}"></script>
+<script src="{{ url_for('static', filename='editor.js') }}"></script>
+<script>
+  // reference: html_editor('response', 'fftext') + editor_init
+  cc_editor.init_page({ task: 'settings', editor_config: {{ editor_cfg | tojson }} });
+  cc_editor.init_editor('inputbody', 'response');
+</script>
+{% endif %}

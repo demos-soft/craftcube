@@ -133,7 +133,7 @@
           <ul id="responseslist" class="rounded-0">
             {% for r in responses %}
             <li role="menuitem"><a class="insertresponse active" href="#" data-response="{{ r.response_id }}"
-                data-name="{{ r.name }}">{{ r.name }}</a></li>
+                data-name="{{ r.name }}" data-html="{{ 1 if r.html else 0 }}">{{ r.name }}</a></li>
             {% else %}
             <li role="menuitem" class="disabled"><a href="#"><span>No responses available</span></a></li>
             {% endfor %}
@@ -156,7 +156,8 @@
               <label for="identities" class="col-2 col-form-label">From</label>
               <div class="col-10">
                 <div class="input-group">
-                  <select name="_ident" id="identities" class="custom-select form-control">
+                  <select name="_ident" id="identities" class="custom-select form-control"
+                          onchange="return cc_editor.change_identity(this)">
                     {% for i in identities %}
                     <option value="{{ i.identity_id }}">{{ i.name }} &lt;{{ i.email }}&gt;{{ ' (default)' if i.standard }}</option>
                     {% endfor %}
@@ -239,15 +240,20 @@
               </div>
             </div>
           </div>
-          <!-- message compose body -->
-          <div id="composebodycontainer">
+          <!-- message compose body — reference structure (compose.html +
+               ui.js html_editor_init): the .html-editor IS the container,
+               the strip toolbar is inserted by JS after the textarea (so
+               TinyMCE's .tox-tinymce+.editor-toolbar rule hides it in html
+               mode) and the hidden <select> is the mode switch -->
+          <div id="composebodycontainer" class="html-editor">
             <label for="composebody" class="voice">Message Body</label>
-            <div class="html-editor">
-              <div class="editor-toolbar">
-                <a href="#" class="mce-i-html icon" id="format-toggle" title="Toggle HTML/Plain text"></a>
-              </div>
-              <textarea name="_body" id="composebody" class="form-control" cols="70" rows="20" tabindex="1">{{ prefill.body }}</textarea>
-            </div>
+            <input type="hidden" name="_is_html" value="{{ '1' if prefill.html else '0' }}">
+            <textarea name="_body" id="composebody" class="form-control{{ ' mce_editor' if prefill.html }}" cols="70" rows="20" tabindex="1" data-html-editor="1">{{ prefill.body }}</textarea>
+            <select name="editorSelector" id="editor-selector" class="hidden form-control custom-select pretty-select"
+                    onchange="return cc_editor.toggle({id: 'composebody', html: this.value == 'html'})">
+              <option value="html">HTML</option>
+              <option value="plain"{{ ' selected' if not prefill.html }}>Plain text</option>
+            </select>
           </div>
         </form>
         <!-- Reference keeps the buttons outside the <form> (compose.html:
@@ -360,47 +366,50 @@
   }
 </script>
 <script>
-  // Signature / Responses / Spell toolbar (elastic behaviour)
+  // Signature / Responses / Spell toolbar (elastic behaviour), routed
+  // through the editor so insertion works in both plain and HTML mode
   (function () {
     var body = document.getElementById('composebody');
     if (!body) return;
-    var sigs = { {% for i in identities %}'{{ i.identity_id }}': {{ (i.signature or '') | tojson }}{% if not loop.last %}, {% endif %}{% endfor %} };
-    var responses = { {% for r in responses %}'{{ r.response_id }}': {{ (r.body or '') | tojson }}{% if not loop.last %}, {% endif %}{% endfor %} };
-
-    function insertAtCursor(text) {
-      var s = body.selectionStart || 0, e = body.selectionEnd || 0;
-      body.value = body.value.slice(0, s) + text + body.value.slice(e);
-      body.selectionStart = body.selectionEnd = s + text.length;
-      body.focus();
-    }
+    var responses = {
+      {% for r in responses %}'{{ r.response_id }}': {{ {'text': r.body or '', 'html': r.html} | tojson }}{% if not loop.last %}, {% endif %}{% endfor %}
+    };
 
     var sigBtn = document.getElementById('tb-signature');
-    if (sigBtn) sigBtn.addEventListener('click', function () {
-      var sel = document.getElementById('identities');
-      var sig = (sigs[sel ? sel.value : ''] || '').replace(/\r\n/g, '\n');
-      if (!sig) return;
-      var v = body.value.replace(/\s+$/, '');
-      var sep = v ? '\n\n-- \n' : '-- \n';
-      if (v.indexOf(sep + sig) > -1) return;  // already inserted
-      insertAtCursor((v ? v + sep : sep) + sig);
-      body.selectionStart = body.selectionEnd = body.value.length;
+    if (sigBtn) sigBtn.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      if (sigBtn.classList.contains('disabled')) return;
+      cc_editor.command('insert-sig');
     });
 
     document.querySelectorAll('#responses-menu a.insertresponse').forEach(function (a) {
       a.addEventListener('click', function (ev) {
         ev.preventDefault();
-        var txt = responses[a.getAttribute('data-response')] || '';
-        if (txt) insertAtCursor(txt);
+        var r = responses[a.getAttribute('data-response')];
+        if (r) {
+          var ed = cc_editor.get_editor_for('composebody');
+          if (ed) {
+            ed.replace((r.html ? { html: r.text } : { text: r.text }));
+          } else {
+            var s = body.selectionStart || 0, e = body.selectionEnd || 0;
+            body.value = body.value.slice(0, s) + r.text + body.value.slice(e);
+            body.selectionStart = body.selectionEnd = s + r.text.length;
+            body.focus();
+          }
+        }
         window.cc_close_popups && window.cc_close_popups();
       });
     });
 
     var spell = document.getElementById('tb-spell');
-    if (spell) spell.addEventListener('click', function () {
-      // browser-native spellcheck engine; language chosen via the spell menu
-      var on = body.getAttribute('spellcheck') !== 'true';
-      body.setAttribute('spellcheck', on ? 'true' : 'false');
-      if (on) body.focus();
+    if (spell) spell.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      // HTML mode: TinyMCE spellchecker RPC; plain mode: native spellcheck
+      if (!cc_editor.command('spellcheck')) {
+        var on = body.getAttribute('spellcheck') !== 'true';
+        body.setAttribute('spellcheck', on ? 'true' : 'false');
+        if (on) body.focus();
+      }
     });
 
     // ui.js spellmenu: selecting a language sets it on the body and marks
@@ -408,8 +417,12 @@
     document.querySelectorAll('#spell-menu a[data-lang]').forEach(function (a) {
       a.addEventListener('click', function (ev) {
         ev.preventDefault();
+        var lang = a.getAttribute('data-lang');
         body.setAttribute('spellcheck', 'true');
-        body.setAttribute('lang', a.getAttribute('data-lang'));
+        body.setAttribute('lang', lang);
+        cc_editor.env.spell_lang = lang.split('_')[0];
+        var ed = cc_editor.get_editor_for('composebody');
+        if (ed) ed.set_language(lang.split('_')[0]);
         document.querySelectorAll('#spell-menu a[data-lang]').forEach(function (x) {
           x.classList.remove('selected'); x.removeAttribute('aria-selected');
         });
@@ -418,5 +431,40 @@
       });
       if (a.getAttribute('data-lang') === 'en_US') { a.classList.add('selected'); a.setAttribute('aria-selected', 'true'); }
     });
+
+    // send: flush the TinyMCE buffer into the textarea first (app.js send)
+    var form = document.getElementById('composeform');
+    if (form) form.addEventListener('submit', function () {
+      var ed = cc_editor.get_editor_for('composebody');
+      if (ed) ed.save();
+    });
   })();
+</script>
+<script src="{{ url_for('static', filename='tinymce/tinymce.min.js') }}"></script>
+<script src="{{ url_for('static', filename='editor.js') }}"></script>
+<script>
+  // server-side env (rcmail.set_env equivalent) + editor bootstrap;
+  // the reference emits html_editor_init (ui.js) + editor_init(null,
+  // 'composebody') (app.js:377). In html mode the textarea carries the
+  // mce_editor class, so tinymce.init() attaches it directly — no toggle.
+  cc_editor.init_page({
+    task: 'mail',
+    action: 'compose',
+    compose_mode: {{ editor_env.compose_mode | tojson }},
+    top_posting: {{ editor_env.top_posting | tojson }},
+    sig_below: {{ editor_env.sig_below | tojson }},
+    show_sig: {{ editor_env.show_sig | tojson }},
+    spell_lang: 'en',
+    composebody: 'composebody',
+    identity: (document.getElementById('identities') || {}).value || null,
+    identities_initialized: false,
+    signatures: {{ signatures | default({}) | tojson }},
+    identities: {{ identities_map | default({}) | tojson }},
+    editor_config: {{ editor_cfg | tojson }}
+  });
+  window.addEventListener('load', function () {
+    cc_editor.init_editor('composebody');
+    // signatures are inserted on identity *change* only (app.js
+    // change_identity); drafts/new messages start without re-insertion
+  });
 </script>

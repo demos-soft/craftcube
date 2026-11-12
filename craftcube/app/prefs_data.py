@@ -710,3 +710,25 @@ DATE_FORMAT = [
 FONTS = [['', ''], ['Andale Mono', 'Andale Mono'], ['Arial', 'Arial'], ['Arial Black', 'Arial Black'], ['Book Antiqua', 'Book Antiqua'], ['Courier New', 'Courier New'], ['Georgia', 'Georgia'], ['Helvetica', 'Helvetica'], ['Impact', 'Impact'], ['Tahoma', 'Tahoma'], ['Terminal', 'Terminal'], ['Times New Roman', 'Times New Roman'], ['Trebuchet MS', 'Trebuchet MS'], ['Verdana', 'Verdana']]
 
 FONT_SIZES = [['', ''], ['8pt', '8pt'], ['9pt', '9pt'], ['10pt', '10pt'], ['11pt', '11pt'], ['12pt', '12pt'], ['14pt', '14pt'], ['18pt', '18pt'], ['24pt', '24pt'], ['36pt', '36pt']]
+
+
+# rcmail config equivalent: available_fonts / available_font_sizes — the
+# default_font preference stores a key of this map; the editor's content
+# style uses the mapped CSS family list (compose.php:135 + rcmail_action.php:410)
+AVAILABLE_FONTS = {
+    'Andale Mono': '"Andale Mono",Times,monospace',
+    'Arial': 'Arial,Helvetica,sans-serif',
+    'Arial Black': '"Arial Black","Avant Garde",sans-serif',
+    'Book Antiqua': '"Book Antiqua",Palatino,serif',
+    'Courier New': '"Courier New",Courier,monospace',
+    'Georgia': 'Georgia,Palatino,serif',
+    'Helvetica': 'Helvetica,Arial,sans-serif',
+    'Impact': 'Impact,Chicago,sans-serif',
+    'Tahoma': 'Tahoma,Arial,Helvetica,sans-serif',
+    'Terminal': 'Terminal,Monaco,monospace',
+    'Times New Roman': '"Times New Roman",Times,serif',
+    'Trebuchet MS': '"Trebuchet MS",Geneva,sans-serif',
+    'Verdana': 'Verdana,Geneva,sans-serif',
+}
+
+AVAILABLE_FONT_SIZES = ['8pt', '9pt', '10pt', '11pt', '12pt', '14pt', '18pt', '24pt', '36pt']

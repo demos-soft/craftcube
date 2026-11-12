@@ -24,12 +24,18 @@
                     <td><input type="text" name="reply_to" id="inputreply" value="{{ row['reply-to'] if row else '' }}" class="form-control"></td></tr>
                 <tr><td class="title"><label for="inputbcc">Bcc</label></td>
                     <td><input type="text" name="bcc" id="inputbcc" value="{{ row.bcc if row else '' }}" class="form-control"></td></tr>
-                <tr><td class="title"><label for="inputsig">Signature</label></td>
-                    <td><textarea name="signature" id="inputsig" rows="6" class="form-control">{{ row.signature if row else '' }}</textarea></td></tr>
-                <tr class="proprow">
-                  <td class="title">Signature options</td>
-                  <td class="field">
-                    <label><input type="checkbox" name="html_signature" value="1" {{ 'checked' if row and row.html_signature }}> HTML signature</label>
+                <tr class="form-group row"><td class="title col-sm-4" style="display: none;"><label for="inputsig">Signature</label></td>
+                    <td class="col-sm-8"><textarea rows="6" spellcheck="1" data-html-editor="1" name="signature" id="inputsig" cols="40"
+                        class="form-control{{ ' mce_editor' if row and row.html_signature }}">{{ row.signature if row else '' }}</textarea></td></tr>
+                <tr class="form-group row form-check" style="display: none;">
+                  <td class="title col-sm-4"><label for="inputhtmlsig">HTML signature</label></td>
+                  <td class="col-sm-8">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" onclick="return cc_editor.toggle({id: 'inputsig', html: this.checked})"
+                             name="html_signature" value="1" id="inputhtmlsig"
+                             class="form-check-input custom-control-input" {{ 'checked' if row and row.html_signature }}>
+                      <label for="inputhtmlsig" class="custom-control-label">HTML</label>
+                    </div>
                   </td>
                 </tr>
                 <tr><td class="title">Options</td>
@@ -48,3 +54,12 @@
     </div>
 
 {% include "includes/footer.html" %}
+<script src="{{ url_for('static', filename='tinymce/tinymce.min.js') }}"></script>
+<script src="{{ url_for('static', filename='editor.js') }}"></script>
+<script>
+  // reference: html_editor('identity', 'rcmfd_signature') + editor_init —
+  // the strip button and checkbox switch to HTML mode; html_signature saves
+  // start with TinyMCE enabled
+  cc_editor.init_page({ task: 'settings', editor_config: {{ editor_cfg | tojson }} });
+  cc_editor.init_editor('inputsig', 'identity');
+</script>
