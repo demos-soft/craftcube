@@ -1602,4 +1602,615 @@
     };
     return false;
   };
+
+  // ------------------------------------------------ recipient autocomplete
+  // rcmail autocomplete/ksearch on To/Cc/Bcc: debounced /mail/autocomplete
+  // XHR (same endpoint/shape as the reference), dropdown insert replaces the
+  // token under the caret. Elastic uses autocomplete_min_length=3.
+  (function () {
+    var inputs = document.querySelectorAll('textarea[data-recipient-input]');
+    if (!inputs.length) return;
+    var box = null, items = [], sel = -1, cur = null, timer = null, seq = 0;
+    function ensureBox() {
+      if (box) return box;
+      box = document.createElement('div');
+      box.className = 'cc-autocomplete hidden';
+      box.style.cssText = 'position:absolute;z-index:1200;background:#fff;' +
+        'border:1px solid #c7c7c7;border-radius:4px;max-height:220px;' +
+        'overflow:auto;box-shadow:0 2px 8px rgba(0,0,0,.25);min-width:260px';
+      document.body.appendChild(box);
+      box.addEventListener('mousedown', function (e) {
+        var li = e.target.closest && e.target.closest('li');
+        if (li) { e.preventDefault(); pick(parseInt(li.getAttribute('data-i'), 10)); }
+      });
+      return box;
+    }
+    function tokenBefore(v, pos) {
+      var s = v.slice(0, pos);
+      var i = Math.max(s.lastIndexOf(','), s.lastIndexOf(';'), s.lastIndexOf('\n'));
+      return {start: i + 1, text: s.slice(i + 1)};
+    }
+    function hide() {
+      if (box) box.classList.add('hidden');
+      items = []; sel = -1;
+    }
+    function render() {
+      var b = ensureBox();
+      b.innerHTML = '';
+      items.forEach(function (c, i) {
+        var li = document.createElement('li');
+        li.textContent = c.name;
+        li.setAttribute('data-i', i);
+        li.style.cssText = 'padding:6px 10px;cursor:pointer;list-style:none' +
+          (i === sel ? ';background:#e9f2fa' : '');
+        li.addEventListener('mouseenter', function () { sel = i; render(); });
+        b.appendChild(li);
+      });
+      var r = cur.getBoundingClientRect();
+      b.style.left = r.left + window.scrollX + 'px';
+      b.style.top = (r.bottom + window.scrollY + 2) + 'px';
+      b.style.width = Math.max(r.width, 260) + 'px';
+      b.classList.remove('hidden');
+    }
+    function pick(i) {
+      var c = items[i];
+      if (!c || !cur) return;
+      var t = tokenBefore(cur.value, cur.selectionStart);
+      var ins = (c.email || c.name) ? ((c.fields && c.fields.name && c.name.indexOf('<') > 0)
+        ? c.name : (c.email || c.name)) : c.name;
+      var after = cur.value.slice(cur.selectionStart);
+      cur.value = cur.value.slice(0, t.start) + ins + (after.match(/^\s*,/) ? after : ', ' + after.replace(/^[,\s]+/, ''));
+      var np = t.start + ins.length + 2;
+      cur.setSelectionRange(np, np);
+      hide();
+      cur.focus();
+    }
+    function query() {
+      if (!cur) return;
+      var t = tokenBefore(cur.value, cur.selectionStart).text.trim();
+      if (t.length < 3 || t.length > 120 || /^[0-9]/.test(t)) { hide(); return; }
+      var mine = ++seq;
+      fetch('/mail/autocomplete?_search=' + encodeURIComponent(t) + '&_reqid=' + mine,
+            {headers: {'X-Requested-With': 'XMLHttpRequest'}})
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (mine !== seq || !cur) return;
+          var text = d.exec || '';
+          var i = text.indexOf('ksearch_query_results(');
+          if (i < 0) { hide(); return; }
+          var s = text.slice(i + 20), depth = 0, end = -1, inStr = false, esc = false;
+          for (var j = 0; j < s.length; j++) {
+            var ch = s[j];
+            if (esc) { esc = false; continue; }
+            if (ch === '\\') { esc = true; continue; }
+            if (ch === '"') { inStr = !inStr; continue; }
+            if (inStr) continue;
+            if (ch === '[') depth++;
+            else if (ch === ']') { depth--; if (!depth) { end = j; break; } }
+          }
+          try { items = JSON.parse(s.slice(0, end + 1)); } catch (e) { items = []; }
+          // group entries need group_expand (not ported); skip like RC does
+          // when a group has an email address
+          items = items.filter(function (c) { return c.type !== 'group'; });
+          if (!items.length) { hide(); return; }
+          sel = 0;
+          render();
+        })
+        .catch(function () {});
+    }
+    inputs.forEach(function (ta) {
+      ta.addEventListener('keyup', function (e) {
+        if (e.key === 'Escape') { hide(); return; }
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp' ||
+            e.key === 'Enter' || e.key === 'Tab') return;
+        cur = ta;
+        clearTimeout(timer);
+        timer = setTimeout(query, 250);
+      });
+      ta.addEventListener('keydown', function (e) {
+        if (!box || box.classList.contains('hidden') || !items.length) return;
+        if (e.key === 'ArrowDown') { e.preventDefault(); sel = (sel + 1) % items.length; render(); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); sel = (sel - 1 + items.length) % items.length; render(); }
+        else if (e.key === 'Enter' && sel >= 0) { e.preventDefault(); pick(sel); }
+        else if (e.key === 'Escape') { hide(); }
+      });
+      ta.addEventListener('blur', function () { setTimeout(hide, 200); });
+    });
+  })();
+
+  // ---------------------------------------------------------------- search bar
+  // Elastic ui.js behaviors for the quicksearch form: the unread toggle
+  // switches #searchfilter between UNSEEN and ALL and submits; checking
+  // "Entire message" disables the other modifiers; master checkboxes
+  // (sender/recipient) sync their sub-lists.
+  (function () {
+    var form = document.getElementById('rcmqsearchform');
+    if (!form) return;
+    var filter = document.getElementById('searchfilter');
+    var unread = document.querySelector('.searchbar a.button.unread');
+    if (unread) {
+      unread.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (!filter) return;
+        filter.value = filter.value === 'UNSEEN' ? 'ALL' : 'UNSEEN';
+        unread.classList.toggle('selected', filter.value === 'UNSEEN');
+        form.submit();
+      });
+    }
+    function mods() {
+      return Array.prototype.slice.call(
+        form.querySelectorAll('input[type=checkbox][name=_sm]'));
+    }
+    function sync() {
+      var by = {};
+      mods().forEach(function (cb) { by[cb.value] = cb; });
+      var disable = by.text && by.text.checked;
+      ['subject', 'from', 'replyto', 'followupto', 'to', 'cc', 'bcc', 'body']
+        .forEach(function (k) {
+          if (by[k]) {
+            by[k].disabled = !!disable;
+            if (disable) by[k].parentNode.classList.toggle('disabled', true);
+            else by[k].parentNode.classList.remove('disabled');
+          }
+        });
+      [['sender', ['from', 'replyto', 'followupto']],
+       ['recipient', ['to', 'cc', 'bcc']]].forEach(function (pair) {
+        var master = by[pair[0]];
+        if (!master) return;
+        if (master.checked) {
+          pair[1].forEach(function (k) { if (by[k]) by[k].checked = true; });
+        }
+        pair[1].forEach(function (k) {
+          if (by[k] && !by[k].checked && master.checked) master.checked = false;
+        });
+      });
+    }
+    form.addEventListener('change', function (e) {
+      if (e.target && e.target.name === '_sm') sync();
+    });
+    // expand master checkbox state on submit so SSR sees the sub-values too
+    form.addEventListener('submit', function () { sync(); });
+  })();
+})();
+
+// Elastic ui.js:1043 'tabbed' containers: turn fieldset legends into a
+// bootstrap-style nav-tabs strip with one visible .tab-pane at a time.
+(function () {
+  function initTabs(root) {
+    var containers = (root || document).querySelectorAll('form.tabbed, div.tabbed');
+    Array.prototype.forEach.call(containers, function (item, idx) {
+      if (item.getAttribute('data-tabbed')) return;
+      item.setAttribute('data-tabbed', '1');
+      var nav = document.createElement('ul');
+      nav.className = 'nav nav-tabs';
+      nav.setAttribute('role', 'tablist');
+      var panes = [], links = [];
+      Array.prototype.forEach.call(item.children, function (fieldset, i) {
+        if (fieldset.tagName !== 'FIELDSET') return;
+        var id = fieldset.id || ('tab' + idx + '-' + i);
+        fieldset.id = id;
+        fieldset.classList.add('tab-pane');
+        fieldset.setAttribute('role', 'tabpanel');
+        var legend = fieldset.querySelector('legend');
+        var li = document.createElement('li');
+        li.className = 'nav-item';
+        var a = document.createElement('a');
+        a.className = 'nav-link';
+        a.setAttribute('role', 'tab');
+        a.setAttribute('href', '#' + id);
+        a.textContent = legend ? legend.textContent : id;
+        if (legend) legend.style.display = 'none';
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          Array.prototype.forEach.call(links, function (l, j) {
+            var on = l === a;
+            l.classList.toggle('active', on);
+            l.setAttribute('aria-selected', on ? 'true' : 'false');
+            panes[j].classList.toggle('active', on);
+          });
+          return false;
+        });
+        li.appendChild(a);
+        nav.appendChild(li);
+        panes.push(fieldset);
+        links.push(a);
+      });
+      if (!links.length) return;
+      item.classList.add('tab-content');
+      item.parentNode.insertBefore(nav, item);
+      links[0].click();
+    });
+  }
+  if (document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', function () { initTabs(); });
+  else initTabs();
+})();
+
+/* Reference elastic ui.js: "Convert checkbox input into Bootstrap's custom
+   switch" (pretty_checkbox) — applied to propforms, form-checks, popup
+   forms, menus and [data-list] checkboxes; framed editor pages focus the
+   first text input like the reference content-frame flow. */
+(function () {
+  var seq = 0;
+  // ui.js: var supported_controls = 'input:not(.button,.no-bs,[type=button],
+  //   [type=radio],[type=checkbox],[type=file]),textarea'
+  var SUPPORTED = 'input:not(.button):not(.no-bs):not([type=button]):not([type=radio])' +
+    ':not([type=checkbox]):not([type=file]),textarea';
+  function isSupported(el) {
+    var m = el.matches || el.msMatchesSelector;
+    return m.call(el, SUPPORTED);
+  }
+  // ui.js "Make propforms bootstrap-like": rows get form-group row, title
+  // cells col-sm-4, control cells col-sm-8, inputs form-control
+  function beautifyPropform(table) {
+    var rows = table.querySelectorAll(':scope > tbody > tr, :scope > tr');
+    var text_rows = 0, form_rows = 0;
+    rows.forEach(function (row) {
+      var cells = row.children;
+      if (cells.length === 2) {
+        var first = cells[0], last = cells[1];
+        var lab = first.querySelector('label');
+        if (lab) { lab.classList.add('col-form-label'); }
+        first.classList.add('col-sm-4');
+        last.classList.add('col-sm-8');
+        row.classList.add('form-group', 'row');
+        var inputs = last.querySelectorAll('input:not([type=hidden]),textarea,select');
+        if (last.querySelectorAll('input[type=checkbox]').length === 1 &&
+            !last.querySelector('.proplist')) {
+          row.classList.add('form-check');
+          if (last.querySelector('a')) { row.classList.add('with-link'); }
+          form_rows++;
+        } else if (!inputs.length) {
+          last.classList.add('form-control-plaintext');
+          text_rows++;
+        } else {
+          form_rows++;
+        }
+      } else if (cells.length === 1) {
+        cells[0].style.width = '100%';
+      }
+    });
+    if (text_rows > form_rows) { table.classList.add('text-only'); }
+  }
+  function pretty(checkbox) {
+    if (checkbox.classList.contains('custom-control-input')) { return; }
+    var id = checkbox.id;
+    if (!id) { id = 'icochk' + (++seq); checkbox.id = id; }
+    var label;
+    if (checkbox.parentElement.tagName === 'LABEL') {
+      label = checkbox.parentElement;
+      label.parentNode.insertBefore(checkbox, label);
+    } else {
+      label = document.createElement('label');
+    }
+    label.setAttribute('for', id);
+    label.className = 'custom-control-label';
+    if (checkbox.title) { label.title = checkbox.title; }
+    label.addEventListener('click', function (e) { e.stopPropagation(); });
+    var wrap = document.createElement('div');
+    wrap.className = 'custom-control custom-switch';
+    checkbox.classList.add('form-check-input', 'custom-control-input');
+    checkbox.parentNode.insertBefore(wrap, checkbox);
+    wrap.appendChild(checkbox);
+    wrap.appendChild(label);
+  }
+  // elastic ui.js:3627-3647 image_upload_input: append the reset overlay to
+  // the .image-upload widget, toggle 'changed' from the placeholder state
+  // and open the hidden smart-upload picker on click
+  function enableSave() {
+    var b = document.querySelector('#contact-details ~ .formbuttons button.submit, .formbuttons button.submit[form=contact-details]');
+    if (b) { b.disabled = false; }
+  }
+  function imageUploadWidget(obj) {
+    var img = obj.querySelector('img');
+    var placeholder = obj.getAttribute('data-placeholder') || '';
+    var btn = document.createElement('a');
+    btn.className = 'icon button delete';
+    btn.href = '#';
+    btn.addEventListener('click', function (e) {
+      // rcmail.command('delete-photo') -> replace_contact_photo('-del-'):
+      // marker + placeholder only, the removal is applied on save
+      e.preventDefault();
+      e.stopPropagation();
+      var ff = document.getElementById('ff_photo');
+      if (ff) { ff.value = '-del-'; }
+      var file = document.getElementById('ff_photo_file');
+      if (file) { file.value = ''; }
+      if (img) { img.src = placeholder; }
+      enableSave();
+    });
+    obj.appendChild(btn);
+    obj.addEventListener('click', function () {
+      var inp = document.getElementById('upload-formInput');
+      if (inp) { inp.click(); }
+    });
+    // rcube_dragdrop 'filedrop' (rcmail.gui_object('filedrop', 'contactpic')):
+    // a dropped image uploads like a picked one (filter ^image/.+)
+    obj.addEventListener('dragover', function (e) {
+      e.preventDefault();
+      obj.classList.add('droptarget');
+    });
+    obj.addEventListener('dragleave', function () {
+      obj.classList.remove('droptarget');
+    });
+    obj.addEventListener('drop', function (e) {
+      e.preventDefault();
+      obj.classList.remove('droptarget');
+      var file = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+      if (file && file.type.indexOf('image/') === 0) { pickFile(file); }
+    });
+    if (img) {
+      var state = function () {
+        var is_ph = (img.currentSrc || img.src || '').indexOf(placeholder) !== -1;
+        obj.classList[is_ph ? 'remove' : 'add']('changed');
+      };
+      img.addEventListener('load', state);
+      state();
+    }
+  }
+  function pickFile(file) {
+    // shared entry for the smart-upload input and the rcube_dragdrop target
+    var frm = document.getElementById('upload-formFrm');
+    var cidEl = frm && frm.querySelector('input[name=_cid]');
+    var cid = cidEl ? cidEl.value : '';
+    if (cid) {
+      // rcmail.command('upload-photo'): uploads right away
+      var fd = new FormData();
+      fd.append('_upload', '1');
+      fd.append('_cid', cid);
+      fd.append('_photo', file, 'photo');
+      fetch(location.pathname + '?_framed=' + (location.search.indexOf('_framed=1') > -1 ? '1' : '0'),
+        { method: 'POST', body: fd }).then(function () { location.reload(); });
+      return;
+    }
+    // new contact (rcmail temp-upload id equivalent): hand the file to
+    // the main editform and preview it like replace_contact_photo()
+    var dst = document.getElementById('ff_photo_file');
+    if (dst) {
+      try {
+        var dt = new DataTransfer();
+        dt.items.add(file);
+        dst.files = dt.files;
+      } catch (e) {}
+    }
+    var ff = document.getElementById('ff_photo');
+    if (ff) { ff.value = ''; }
+    var pic = document.getElementById('contactpic');
+    var img = pic && pic.querySelector('img');
+    if (img) { img.src = URL.createObjectURL(file); }
+    enableSave();
+  }
+  function wireUploadForm() {
+    var inp = document.getElementById('upload-formInput');
+    var frm = document.getElementById('upload-formFrm');
+    if (!inp || !frm) { return; }
+    inp.addEventListener('change', function () {
+      if (!inp.files.length) { return; }
+      pickFile(inp.files[0]);
+    });
+  }
+  function run() {
+    // ui.js order: bootstrap classes, propform row beautification, then
+    // pretty switches. Rows already carrying col-* classes (templates
+    // ported from live reference DOM) are skipped.
+    document.querySelectorAll('.propform ' + SUPPORTED).forEach(function (el) {
+      el.classList.add('form-control');
+    });
+    document.querySelectorAll('.propform input[type=checkbox]').forEach(function (el) {
+      el.classList.add('form-check-input');
+    });
+    document.querySelectorAll('table.propform').forEach(function (table) {
+      var rows = table.querySelectorAll(':scope > tbody > tr, :scope > tr');
+      var done = rows.length && rows[0].classList.contains('col-sm-4');
+      var done2 = rows.length && Array.prototype.some.call(rows[0].children, function (c) {
+        return c.classList.contains('col-sm-4') || c.classList.contains('col-sm-6') ||
+               c.classList.contains('col-sm-8');
+      });
+      if (!done && !done2) { beautifyPropform(table); }
+    });
+    // ui.js:975-985 "Other forms, e.g. Contact advanced search": head rows
+    // (label + control div) get the bootstrap column grid
+    document.querySelectorAll('fieldset.propform:not(.grouped) div.row').forEach(function (row) {
+      if (row.classList.contains('form-group')) { return; }
+      var kids = row.children;
+      if (!kids.length) { return; }
+      var has_input = row.querySelector('input:not([type=hidden]),select,textarea') !== null;
+      if (has_input) {
+        row.querySelectorAll(SUPPORTED).forEach(function (el) { el.classList.add('form-control'); });
+      }
+      kids[kids.length - 1].classList.add('col-sm-8');
+      if (!has_input) { kids[kids.length - 1].classList.add('form-control-plaintext'); }
+      kids[0].classList.add('col-sm-4', 'col-form-label');
+      row.classList.add('form-group');
+    });
+    // ui.js:988-1019 "Contact info/edit form": grouped fieldset rows become
+    // bootstrap input-groups (subtype select or label as prepend, delete
+    // button in an append span); JS-inserted cc-tpl rows carry these
+    // classes already and are skipped
+    document.querySelectorAll('fieldset.propform.grouped fieldset').forEach(function (fs) {
+      fs.querySelectorAll('.row').forEach(function (row) {
+        if (row.classList.contains('input-group')) { return; }
+        var kids = Array.prototype.slice.call(row.children);
+        var has_input = row.querySelector('input,select,textarea') !== null;
+        if (has_input) {
+          row.querySelectorAll(SUPPORTED).forEach(function (el) { el.classList.add('form-control'); });
+        }
+        if (kids.length < 2) { return; }
+        var first = kids[0];
+        if (first.tagName === 'SELECT') {
+          first.classList.add('input-group-prepend');
+        } else {
+          var pre = document.createElement('span');
+          pre.className = 'input-group-prepend';
+          first.parentNode.insertBefore(pre, first);
+          pre.appendChild(first);
+          first.classList.add('input-group-text');
+        }
+        if (!has_input) { kids[kids.length - 1].classList.add('form-control-plaintext'); }
+        var content = row.querySelector('.content');
+        if (content) { content.classList.add('input-group-prepend', 'input-group-append', 'input-group-text'); }
+        var del = row.querySelector('a.deletebutton');
+        if (del) {
+          del.classList.add('input-group-text', 'icon', 'delete');
+          var app = document.createElement('span');
+          app.className = 'input-group-append';
+          del.parentNode.insertBefore(app, del);
+          app.appendChild(del);
+        }
+        row.classList.add('input-group');
+      });
+    });
+    document.querySelectorAll(
+      'input.pretty-checkbox, .propform input[type=checkbox], ' +
+      '.form-check input[type=checkbox], .popupmenu.form input[type=checkbox], ' +
+      '.menu input[type=checkbox], [data-list] input[type=checkbox]'
+    ).forEach(pretty);
+    document.querySelectorAll('.image-upload').forEach(imageUploadWidget);
+    wireUploadForm();
+    // elastic: the contact editor's Save stays disabled while the form is
+    // unchanged (rcmail check_stack); any edit enables it
+    var ef = document.getElementById('contact-details');
+    if (ef) {
+      ef.addEventListener('input', enableSave);
+      ef.addEventListener('change', enableSave);
+    }
+    // framed editors land with the first text field focused (elastic)
+    if (window.top !== window.self) {
+      var f = document.querySelector(
+        '.formcontent input[type=text]:not([disabled]):not([type=hidden]), ' +
+        '.formcontent textarea');
+      if (f && f.offsetParent) {
+        f.focus();
+        try { f.select(); } catch (e) {}
+      }
+      // parent.update_identity_row/update_response_row (app.js:7718-7737):
+      // a framed save syncs the parent list row (insert+select on create)
+      var sm = location.search.match(/[?&]_saved=(\w+)/);
+      if (sm && window.parent.cc_settings_row_upsert) {
+        var idm = location.pathname.match(/\/edit\/(\d+)/);
+        var ne = document.querySelector('input[name=_name]');
+        if (idm && ne) {
+          window.parent.cc_settings_row_upsert({
+            list: /\/settings\/response\//.test(location.pathname)
+              ? '#responses-table' : '#identities-table',
+            id: idm[1], name: ne.value, add: sm[1] === 'insert'
+          });
+        }
+      }
+    }
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', run); }
+  else { run(); }
+})();
+
+/* Reference elastic ui.js ui_common(): "Move form buttons from the content
+   frame into the frame footer (on parent window)". The parent gets a
+   .content-frame-navigation footer bar (prev / .buttons / next); CSS hides
+   the whole bar at >=769px, so on desktop the in-frame .formbuttons stay
+   visible. Only phone/small layouts surface the clones. */
+(function () {
+  function ensureFrameNav() {
+    var lc = document.getElementById('layout-content');
+    if (!lc || lc.classList.contains('no-navbar')) { return null; }
+    if (lc.querySelector(':scope > .frame-content')) { return null; }
+    var fn = lc.querySelector(':scope > .content-frame-navigation');
+    if (!fn) {
+      fn = document.createElement('div');
+      fn.className = 'footer menu toolbar content-frame-navigation hide-nav-buttons';
+      fn.innerHTML = '<a class="button prev"><span class="inner"></span></a>' +
+        '<span class="buttons"></span>' +
+        '<a class="button next"><span class="inner"></span></a>';
+      lc.appendChild(fn);
+    }
+    return fn;
+  }
+
+  function cloneInto(lcRoot, defs, frameWin) {
+    var fn = ensureFrameNav();
+    if (!fn) { return; }
+    var tb = fn.querySelector('.buttons');
+    Array.prototype.slice.call(tb.querySelectorAll('[data-cc-cloned]'))
+      .forEach(function (n) { n.remove(); });
+    defs.forEach(function (d, i) {
+      var a = document.createElement('a');
+      a.href = '#';
+      // ui.js create_cloned_button class transform: btn-primary -> primary,
+      // strip btn*/button/disabled, add button
+      a.className = (d.cls || '').replace('btn-primary', 'primary')
+        .replace(/(btn[a-z-]*|button|disabled)/g, '').trim() + ' button';
+      a.setAttribute('data-cc-cloned', '1');
+      var s = document.createElement('span');
+      s.className = 'inner';
+      s.textContent = d.label;
+      a.appendChild(s);
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        try { frameWin.cc_content_button_click(i); } catch (err) {}
+      });
+      tb.appendChild(a);
+    });
+  }
+
+  function collect(buttons) {
+    var visible = [];
+    buttons.forEach(function (b) {
+      if (b.classList.contains('cancel')) { b.classList.add('hidden'); return; }
+      visible.push(b);
+    });
+    return visible;
+  }
+
+  if (window.top === window.self) {
+    // parent page: framed pages register their buttons here
+    window.cc_register_content_buttons = function (frameWin, defs) {
+      cloneInto(null, defs, frameWin);
+    };
+    // full-page forms: clone own #layout-content .formbuttons into header
+    function initSelf() {
+      var content = document.querySelector('#layout-content.selected') ||
+                    document.querySelector('#layout-content');
+      if (!content) { return; }
+      var box = null;
+      content.querySelectorAll('.formbuttons').forEach(function (x) {
+        if (box || x.classList.contains('cc-cloned')) { return; }
+        if (x.closest('.searchoptions, .popupmenu, .searchbar')) { return; }
+        box = x;
+      });
+      if (!box) { return; }
+      var buttons = Array.prototype.slice.call(
+        box.querySelectorAll('button, a.btn-primary'));
+      var visible = collect(buttons);
+      if (!visible.length) { return; }
+      window.cc_content_button_click = function (i) { visible[i].click(); };
+      var defs = visible.map(function (b) {
+        return { label: (b.textContent || '').trim() || 'Save', cls: b.className };
+      });
+      cloneInto(null, defs, window);
+    }
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initSelf); }
+    else { initSelf(); }
+    return;
+  }
+
+  // framed side
+  function init() {
+    // ui.js: body of a framed page with .formcontent + .formbuttons gets
+    // .formcontainer (flex column: scrolling form, bottom button bar)
+    var fc = document.querySelector('.formcontent');
+    if (fc && fc.parentElement.querySelector('.formbuttons')) {
+      fc.parentElement.classList.add('formcontainer');
+    }
+    var buttons = Array.prototype.slice.call(
+      document.querySelectorAll('.formbuttons button, .formbuttons a.btn-primary'));
+    if (!buttons.length || !window.parent.cc_register_content_buttons) { return; }
+    var visible = collect(buttons);
+    if (!visible.length) { return; }
+    window.cc_content_button_click = function (i) { visible[i].click(); };
+    var defs = visible.map(function (b) {
+      return { label: (b.textContent || '').trim() || 'Save', cls: b.className };
+    });
+    window.parent.cc_register_content_buttons(window, defs);
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); }
+  else { init(); }
 })();
