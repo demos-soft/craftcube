@@ -42,20 +42,28 @@
         </div>
       </div>
       <div class="scroller" tabindex="-1">
-        <ul id="subscription-table" class="treelist listing folderlist iconized" role="listbox"
+        <ul id="subscription-table" class="treelist listing folderlist iconized notree" role="tree"
             data-list="subscription_list" data-label-msg="The list is empty.">
-          <li class="root mailbox"><span>&nbsp;</span></li>
+          <li class="root mailbox" role="treeitem" aria-level="1"><span>&nbsp;</span></li>
           {% for f in all_folders %}
-          <li class="{{ f.special or 'mail' }} mailbox{{ ' selected' if edit_folder == f.name }}"
+          <li class="{{ 'inbox' if f.name|upper == 'INBOX' else (f.special or 'mail') }} mailbox{{ ' selected' if edit_folder == f.name }}"
+              role="treeitem" aria-level="1"
               data-href="{{ url_for('views.folders_view', _edit=f.name) }}">
             <a href="#">{{ f.display_name or f.name }}</a>
-            <input name="_subscribed[]" title="Click to change subscription" value="{{ f.name }}"
-                   disabled checked type="checkbox">
+            <div class="custom-control custom-switch">
+              <input name="_subscribed[]" title="Click to change subscription" value="{{ f.name }}"
+                     disabled checked type="checkbox" id="icochk{{ loop.index }}"
+                     class="form-check-input custom-control-input">
+              <label for="icochk{{ loop.index }}" class="custom-control-label"
+                     title="Click to change subscription"></label>
+            </div>
           </li>
           {% endfor %}
         </ul>
       </div>
-      <div class="footer small"></div>
+      <!-- whitespace inside matters: CSS hides .footer:empty, the reference keeps the strip -->
+      <div class="footer small">
+      </div>
     </div>
 
     <!-- folder properties frame -->
