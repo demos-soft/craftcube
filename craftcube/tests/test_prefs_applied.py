@@ -3,10 +3,11 @@ mail/addressbook/message routes, not just the settings form."""
 
 import email.message
 import re
+from datetime import datetime
 
 import pytest
 
-from app import util, views
+from app import mail, util, views
 
 
 class FakeBox:
@@ -281,3 +282,48 @@ def test_display_next_after_delete(client, store, user, make_box):
     assert r.status_code == 302
     assert "_uid=2" in r.headers["Location"]
     monkeypatch.undo()
+
+class _ArchiveImap:
+    def __init__(self):
+        self.copies = []
+        self.created = []
+        self.flags = []
+
+    def list_folders(self, subscribed_only=False):
+        return [{"name": "Archive", "special": "archive"}]
+
+    def fetch_envelopes(self, uids):
+        return [{"date": datetime(2026, 11, 15)}]
+
+    def create_folder(self, name, subscribe=True):
+        self.created.append(name)
+
+    def select(self, folder, readonly=False):
+        pass
+
+    def copy(self, uids, target):
+        self.copies.append((list(uids), target))
+
+    def set_flags(self, uids, flags, mode):
+        self.flags.append((list(uids), list(flags), mode))
+
+    def expunge(self):
+        pass
+
+
+def test_archive_type_applied():
+    cases = {
+        "": "Archive",
+        "year": "Archive/2026",
+        "month": "Archive/2026/11",
+        "tbmonth": "Archive/2026/2026-11",
+    }
+    for atype, expected in cases.items():
+        imap = _ArchiveImap()
+        box = mail.Mailbox(imap, {}, "unit@example.org")
+        box.prefs = {"archive_type": atype, "read_on_archive": 1}
+        target = box.archive("INBOX", [10])
+        assert target == expected, (atype, target)
+        assert imap.copies[-1][1] == expected
+        assert any(chr(92) + "Seen" in f[1] for f in imap.flags), (atype, imap.flags)
+        assert any(chr(92) + "Deleted" in f[1] for f in imap.flags), (atype, imap.flags)

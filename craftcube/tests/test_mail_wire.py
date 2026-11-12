@@ -126,3 +126,20 @@ class TestAttachmentParamFolding:
         assert "name=report.pdf" in raw
         spaced = self._raw(1, "my report.pdf")
         assert 'name="my report.pdf"' in spaced
+
+class TestForce7Bit:
+    """force_7bit preference: 8-bit bodies are QP instead of raw 8bit."""
+
+    def _raw(self, force):
+        return _b(build_message("t@e.org", "", ["a@x.org"], [], [], "S",
+                                "Grüße", force_7bit=force))
+
+    def test_force_7bit_true(self):
+        raw = self._raw(True)
+        assert "Content-Transfer-Encoding: quoted-printable" in raw
+        assert "charset=UTF-8" in raw
+
+    def test_force_7bit_false(self):
+        raw = self._raw(False)
+        assert "Content-Transfer-Encoding: 8bit" in raw
+        assert "charset=UTF-8" in raw
