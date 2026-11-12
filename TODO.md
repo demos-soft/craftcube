@@ -39,5 +39,6 @@
 - [x] Contact editor JS overlays — fieldset.propform row + grouped input-group decoration, image-upload delete overlay + smart-upload hidden form, drag/drop `droptarget`, Save dirty-state; live-verified incl. byte-exact drop→save→/contact/N/photo roundtrip
 - [x] Contact photo upload — `_upload=1` immediate upload for existing contacts (fields untouched), DataTransfer staging into main form for new contacts
 - [x] Contact editor visual parity — 96/PASS after 21px in-flow `#ff_photo_file` line-box fix + `addfield select fit-content` CSS; element-chain geometry pixel-identical (header y 14, tabs y 433 both sides)
+- [x] Compose visual parity — 96/PASS (toolbar order Save/Attach/Signature/Responses/Spell, From/To/Subject rows, Options-and-attachments panel; only delta was a transient caret in the focused To field)
 - [x] Full suite 165 tests; working tree re-baked into registry `:stage` (Docker+OCI manifests), rollout verified pod==tree md5
-- [ ] Working tree is large and intentionally UNCOMMITTED — awaiting explicit user approval to commit
+- [x] Sweep work committed to `dev` in 9 feature commits (helm, store, vcard, mail, settings, contacts, ui-overlays, docs)
