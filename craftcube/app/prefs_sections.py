@@ -8,22 +8,22 @@ from . import prefs_data as D
 
 DEFAULTS = {
     "language": "en_US", "timezone": "auto", "time_format": "H:i",
-    "date_format": "Y-m-d", "pretty_date": 0, "display_next": 0,
+    "date_format": "Y-m-d", "pretty_date": 1, "display_next": 1,
     "refresh_interval": "1", "standard_windows": 0,
     "mail_read_time": "0", "autoexpand_threads": "0", "mail_pagesize": "50",
     "check_all_folders": 0,
-    "message_extwin": 0, "message_show_email": 0, "prefer_html": 0,
-    "show_images": "0", "mdn_requests": "0", "inline_images": 0,
+    "message_extwin": 0, "message_show_email": 0, "prefer_html": 1,
+    "show_images": "0", "mdn_requests": "0", "inline_images": 1,
     "default_charset": "ISO-8859-1",
     "compose_extwin": 0, "htmleditor": "0", "draft_autosave": "300",
     "mdn_default": 0, "dsn_default": 0, "reply_same_folder": 0,
     "reply_mode": "0", "forward_attachment": "0",
     "default_font": "Verdana", "default_font_size": "10pt",
     "reply_all_mode": "0", "show_sig": "1", "sig_below": 0,
-    "strip_existing_sig": 0, "sig_separator": 0,
+    "strip_existing_sig": 1, "sig_separator": 1,
     "spellcheck_before_send": 0, "spellcheck_ignore_syms": 0,
     "spellcheck_ignore_nums": 0, "spellcheck_ignore_caps": 0,
-    "mime_param_folding": "1", "force_7bit": 0, "compose_save_localstorage": 0,
+    "mime_param_folding": "1", "force_7bit": 0, "compose_save_localstorage": 1,
     "addressbook_name_listing": "0", "addressbook_sort_col": "surname",
     "addressbook_pagesize": "50", "contact_form_mode": "private",
     "autocomplete_single": 0, "collected_recipients": "1",
@@ -36,8 +36,19 @@ DEFAULTS = {
     "mailvelope_main_keyring": 0,
 }
 
-# checkbox fields (saved as 0/1)
-CHECKBOXES = [k for k, v in DEFAULTS.items() if v == 0]
+# checkbox fields (saved as 0/1). Listed explicitly: the reference default of
+# a switch (config/defaults.inc.php) is unrelated to whether it is a checkbox.
+CHECKBOXES = [
+    "pretty_date", "display_next", "standard_windows", "check_all_folders",
+    "message_extwin", "message_show_email", "prefer_html", "inline_images",
+    "compose_extwin", "mdn_default", "dsn_default", "reply_same_folder",
+    "sig_below", "strip_existing_sig", "sig_separator",
+    "spellcheck_before_send", "spellcheck_ignore_syms", "spellcheck_ignore_nums",
+    "spellcheck_ignore_caps", "force_7bit", "compose_save_localstorage",
+    "autocomplete_single", "read_when_deleted", "flag_for_deletion",
+    "skip_deleted", "delete_junk", "read_on_archive", "logout_expunge",
+    "mailvelope_main_keyring", "show_real_foldernames",
+]
 # selects: pref key -> option list name in prefs_data / special
 SELECTS = {
     "language": "LANGUAGES", "timezone": "TIMEZONES",
