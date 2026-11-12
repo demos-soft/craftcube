@@ -6,6 +6,7 @@ import io
 import json
 import re
 from datetime import UTC
+from html import escape as html_escape
 from html import unescape
 
 from flask import (
@@ -738,32 +739,6 @@ def _run_mail_action(box, command, folder, uids, dest=None):
 
 # ---------------------------------------------------------------- compose
 
-def _quote(msg, header=True):
-    frm = msg.get("From", "")
-    dt = util.parse_header_date(msg)
-    body = ""
-    for p in (msg.walk() if msg.is_multipart() else [msg]):
-        if p.get_content_type() == "text/plain":
-            try:
-                body = (p.get_payload(decode=True) or b"").decode(p.get_content_charset() or "utf-8", errors="replace")
-            except Exception:
-                body = ""
-            break
-    if not body:
-        for p in (msg.walk() if msg.is_multipart() else [msg]):
-            if p.get_content_type() == "text/html":
-                try:
-                    charset = p.get_content_charset() or "utf-8"
-                    raw = (p.get_payload(decode=True) or b"").decode(charset, errors="replace")
-                    body = util.sanitize_html(raw)
-                except Exception:
-                    body = ""
-                break
-    if header:
-        body = f"\n\nOn {util.fmt_datetime(dt)}, {frm} wrote:\n" + \
-               "\n".join("> " + line for line in body.splitlines())
-    return body
-
 
 def _msg_has_html(msg):
     # rcube_message::has_html_part(): a text/html part that isn't an attachment
@@ -777,18 +752,191 @@ def _msg_has_html(msg):
 
 
 def compose_html_mode(mode, source_msg, prefs, post_is_html=None):
-    # rcmail_action_mail_compose::compose_editor_mode() with htmleditor=0
-    # (our config default; the reference ships the same default)
+    # rcmail_action_mail_compose::compose_editor_mode() -- the full
+    # htmleditor decision table (compose.php:445-472), verified against the
+    # running reference for every htmleditor value 0..4:
+    #   0 never / 1 always / 2 reply-to-HTML / 3 reply|forward-to-HTML /
+    #   4 always except plain-text reply
+    html_editor = int(prefs.get("htmleditor", 0) or 0)
+    msg_html = bool(prefs.get("prefer_html", 1)) and source_msg is not None \
+        and _msg_has_html(source_msg)
     if post_is_html is not None:
         return post_is_html
     if mode in ("draft", "edit"):
-        return bool(prefs.get("prefer_html", 1)) and source_msg is not None \
-            and _msg_has_html(source_msg)
-    if mode == "reply":
-        return False  # htmleditor == 0
-    if mode == "forward":
-        return False  # htmleditor == 0
-    return False      # new message
+        return msg_html
+    if mode in ("reply", "replyall", "replylist"):
+        return html_editor == 1 or (html_editor >= 2 and msg_html)
+    if mode in ("forward", "forward-attachment"):
+        return html_editor in (1, 4) or (html_editor == 3 and msg_html)
+    return html_editor in (1, 4)      # new message
+
+
+# ---- reply/forward body composition (program/actions/mail/compose.php) ----
+
+def _preferred_part(msg, prefs):
+    """The part used for message (pre)viewing (rcube_message structure):
+    the HTML part when prefer_html is on, else the first text/plain.
+    Returns (body_text, source_is_html)."""
+    parts = list(msg.walk() if msg.is_multipart() else [msg])
+
+    def pick(ctype):
+        for p in parts:
+            if p.get_content_type() == ctype and not p.get_filename() \
+               and p.get_content_disposition() != "attachment":
+                with contextlib.suppress(Exception):
+                    charset = p.get_content_charset() or "utf-8"
+                    return (p.get_payload(decode=True) or b"").decode(charset, errors="replace"), True
+        return None
+    if prefs.get("prefer_html", 1):
+        got = pick("text/html")
+        if got:
+            return got
+    got = pick("text/plain")
+    if got:
+        return got
+    return "", False
+
+
+def _remove_signature(body, max_lines=15):
+    # rcmail_action_mail_compose::remove_signature()
+    body = body.replace("\r\n", "\n")
+    sp = body.rfind("-- \n")
+    if sp != -1 and (sp == 0 or body[sp - 1] == "\n") \
+       and body[sp:].count("\n") < max_lines:
+        body = body[:max(0, sp - 1)]
+    return body
+
+
+def _part_body(msg, is_html, prefs, mode):
+    # rcmail_action_mail_compose::compose_part_body() for a single content
+    # part: convert between source and target format, strip old signature.
+    from .converters import html2text, text2html
+    raw, src_html = _preferred_part(msg, prefs)
+    strip = mode not in ("draft", "edit", "bounce") and prefs.get("strip_existing_sig", 1)
+    if is_html:
+        if src_html:
+            return util.sanitize_html(raw)
+        if strip:
+            raw = _remove_signature(raw)
+        return text2html(raw)
+    if src_html:
+        # "use html part if it has been used for message (pre)viewing",
+        # quoting lines are 2 chars narrower
+        ll = int(prefs.get("line_length", 72) or 72)
+        return html2text(raw, links=1, width=ll - 2 if mode in ("reply", "replyall", "replylist") else ll)
+    if strip:
+        raw = _remove_signature(raw)
+    return raw
+
+
+def _quote_text(text):
+    # rcmail_action_mail_compose::quote_text()
+    out = []
+    for line in text.strip().splitlines():
+        out.append(">" + ("" if line.startswith(">") else " ") + line)
+    return "\n".join(out)
+
+
+def _reply_intro(msg, prefs):
+    # get_reply_header(): mailreplyintro with date_long + sender name
+    dt = util.to_local_tz(util.parse_header_date(msg), prefs.get("timezone"))
+    date = dt.strftime("%Y-%m-%d %H:%M") if dt else ""   # date_long 'Y-m-d H:i'
+    disp, addr = email.utils.parseaddr(_decode_header(msg.get("From", "") or ""))
+    return f"On {date}, {disp or addr} wrote:"
+
+
+def _forward_header(msg, is_html, prefs, extended=True):
+    # get_forward_header(), plain and HTML variants
+    dt = util.to_local_tz(util.parse_header_date(msg), prefs.get("timezone"))
+    date = dt.strftime("%Y-%m-%d %H:%M") if dt else ""
+    subj = _decode_header(msg.get("Subject", "") or "")
+    frm = _decode_header(msg.get("From", "") or "")
+    to = _decode_header(msg.get("To", "") or "")
+    cc = _decode_header(msg.get("Cc", "") or "")
+    replyto = _decode_header(msg.get("Reply-To", "") or "")
+    if not is_html:
+        prefix = "\n\n\n-------- Original Message --------\n"
+        prefix += f"Subject: {subj}\nDate: {date}\nFrom: {frm}\nTo: {to}\n"
+        if extended and cc:
+            prefix += f"Cc: {cc}\n"
+        if extended and replyto and replyto != frm:
+            prefix += f"Reply-To: {replyto}\n"
+        return prefix + "\n"
+    row = '<tr><th align="right" nowrap="nowrap" valign="baseline">{}: </th><td>{}</td></tr>'
+
+    def hdr(value):
+        # rcube::Q($hdr, 'replace'): angle-bracket-containing strings (a
+        # formatted address) skip escaping entirely (rcube_utils
+        # ::rep_specialchars_output), plain ones get &quot; etc.
+        if "<" in value and ">" in value:
+            return value
+        return html_escape(value, quote=False)
+    prefix = ('<br /><p>-------- Original Message --------</p>'
+              '<table border="0" cellpadding="0" cellspacing="0"><tbody>')
+    prefix += row.format("Subject", hdr(subj))
+    prefix += row.format("Date", hdr(date))
+    prefix += row.format("From", hdr(frm))
+    prefix += row.format("To", hdr(to))
+    if extended and cc:
+        prefix += row.format("Cc", hdr(cc))
+    if extended and replyto and replyto != frm:
+        prefix += row.format("Reply-To", hdr(replyto))
+    return prefix + "</tbody></table><br>"
+
+
+def _create_reply_body(body, is_html, msg, prefs, mode):
+    # create_reply_body(): replylist/replyall are REPLY in the reference
+    reply_mode = int(prefs.get("reply_mode", 0) or 0)
+    if reply_mode == -1:
+        return ""
+    indent = reply_mode != 2
+    if reply_mode == 2:
+        prefix = _forward_header(msg, is_html, prefs, extended=False)
+    else:
+        intro = _reply_intro(msg, prefs)
+        prefix = f'<p id="reply-intro">{html_escape(intro)}</p>' if is_html else intro + "\n"
+    if not is_html:
+        if indent:
+            body = _quote_text(body)
+        if reply_mode > 0:
+            return "\n\n\n" + prefix + body
+        return prefix + body + "\n"
+    suffix = ""
+    if indent:
+        prefix += "<blockquote>"
+        suffix += "</blockquote>"
+    if reply_mode == 2:
+        pass
+    elif reply_mode > 0:
+        prefix = "<br>" + prefix
+    else:
+        suffix += "<p><br/></p>"
+    return prefix + body + suffix
+
+
+def _create_forward_body(body, is_html, msg, prefs):
+    # create_forward_body()
+    return _forward_header(msg, is_html, prefs) + body.strip("\r\n")
+
+
+def _html_reply_source(body, mode):
+    # prepare_html_body() wraps the washed part in <div id="{mode}body{n}">
+    # (draft/edit mode keeps it unwrapped); reply-family modes are all REPLY.
+    base = "reply" if mode in ("reply", "replyall", "replylist") else "forward"
+    return f'<div id="{base}body1">{body}</div>'
+
+
+def _quoted_part(msg, is_html, prefs, mode):
+    # compose_part_body() + prepare_html_body(): in HTML mode the washed
+    # source part arrives wrapped in its container div; draft/edit keep it
+    # unwrapped; reply-family modes are all REPLY in the reference.
+    body = _part_body(msg, is_html, prefs, mode)
+    if is_html and mode in ("reply", "replyall", "replylist", "forward"):
+        # the washed part carries no surrounding whitespace (create_reply/
+        # forward_body trim the composed body anyway)
+        body = body.strip("\r\n")
+        body = _html_reply_source(body, mode)
+    return body
 
 
 def editor_config(mode, prefs, spellcheck=True):
@@ -892,6 +1040,12 @@ def compose():
         except MailError:
             source_msg = None
 
+    # html/plain editor decision happens BEFORE the body is composed
+    # (compose_editor_mode()); the POST path keeps the client's _is_html and
+    # editor.js toggle() syncs the hidden _is_html field.
+    post_is_html = (request.form.get("_is_html") == "1") if request.method == "POST" else None
+    html_mode = compose_html_mode(mode, source_msg, prefs, post_is_html)
+
     def _orig_filename():
         s = _decode_header(source_msg.get("Subject", "") or "") or "message"
         import re as _re
@@ -903,7 +1057,8 @@ def compose():
             prefill["to"] = _decode_header(rt) if rt else ""
             subj = _decode_header(source_msg.get("Subject", "")) or ""
             prefill["subject"] = subj if subj.lower().startswith("re:") else f"Re: {subj}"
-            prefill["body"] = _quote(source_msg)
+            prefill["body"] = _create_reply_body(
+                _quoted_part(source_msg, html_mode, prefs, mode), html_mode, source_msg, prefs, mode)
             prefill["in_reply_to"] = source_msg.get("Message-ID", "") or ""
             prefill["references"] = " ".join(
                 x for x in ([_decode_header(source_msg.get("References", "") or "")]
@@ -922,7 +1077,8 @@ def compose():
             prefill["cc"] = ", ".join(uniq[1:])
             subj = _decode_header(source_msg.get("Subject", "")) or ""
             prefill["subject"] = subj if subj.lower().startswith("re:") else f"Re: {subj}"
-            prefill["body"] = _quote(source_msg)
+            prefill["body"] = _create_reply_body(
+                _quoted_part(source_msg, html_mode, prefs, mode), html_mode, source_msg, prefs, mode)
             prefill["in_reply_to"] = source_msg.get("Message-ID", "") or ""
         elif mode == "replylist":
             ml = source_msg.get("List-Post") or source_msg.get("Reply-To") or source_msg.get("From")
@@ -933,7 +1089,8 @@ def compose():
             prefill["to"] = m.group(1) if m else (v or "")
             subj = _decode_header(source_msg.get("Subject", "")) or ""
             prefill["subject"] = subj if subj.lower().startswith("re:") else f"Re: {subj}"
-            prefill["body"] = _quote(source_msg)
+            prefill["body"] = _create_reply_body(
+                _quoted_part(source_msg, html_mode, prefs, mode), html_mode, source_msg, prefs, mode)
             prefill["in_reply_to"] = source_msg.get("Message-ID", "") or ""
         elif mode in ("forward", "forward-attachment", "bounce"):
             subj = _decode_header(source_msg.get("Subject", "")) or ""
@@ -942,11 +1099,14 @@ def compose():
                 prefill["to"] = _decode_header(source_msg.get("To", "")) or ""
                 prefill["cc"] = _decode_header(source_msg.get("Cc", "")) or ""
                 prefill["subject"] = subj
-                prefill["body"] = _quote(source_msg, header=False)
+                prefill["body"] = _part_body(source_msg, html_mode, prefs, mode)
                 prefill["in_reply_to"] = ""
             else:
                 prefill["subject"] = subj if subj.lower().startswith(("fw:", "fwd:")) else f"Fwd: {subj}"
-                prefill["body"] = _quote(source_msg, header=True)
+                # "forward as attachment" carries the original in the .eml
+                # attachment only; the body stays empty (write_forward_attachments)
+                prefill["body"] = "" if mode == "forward-attachment" else _create_forward_body(
+                    _quoted_part(source_msg, html_mode, prefs, mode), html_mode, source_msg, prefs)
                 prefill["in_reply_to"] = ""
             if mode == "forward-attachment":
                 attach_original = (_orig_filename(), box.raw_message(
@@ -964,7 +1124,7 @@ def compose():
             prefill["to"] = _decode_header(source_msg.get("To", "")) or ""
             prefill["cc"] = _decode_header(source_msg.get("Cc", "")) or ""
             prefill["subject"] = _decode_header(source_msg.get("Subject", "")) or ""
-            prefill["body"] = _quote(source_msg, header=False)
+            prefill["body"] = _part_body(source_msg, html_mode, prefs, mode)
             for p in source_msg.walk() if source_msg.is_multipart() else []:
                 if p.get_filename():
                     attachments_kept.append({
@@ -977,7 +1137,7 @@ def compose():
             prefill["to"] = _decode_header(source_msg.get("To", "")) or ""
             prefill["cc"] = _decode_header(source_msg.get("Cc", "")) or ""
             prefill["subject"] = _decode_header(source_msg.get("Subject", "")) or ""
-            prefill["body"] = _quote(source_msg, header=False)
+            prefill["body"] = _part_body(source_msg, html_mode, prefs, mode)
             for p in source_msg.walk() if source_msg.is_multipart() else []:
                 if p.get_filename():
                     attachments_kept.append({
@@ -987,20 +1147,23 @@ def compose():
                         "size": len(p.get_payload(decode=True) or b""),
                     })
 
-    # html/plain editor decision (compose_editor_mode())
-    html_mode = compose_html_mode(mode, source_msg, prefs)
     prefill["html"] = "1" if html_mode else ""
-    if html_mode and mode in ("draft", "edit") and source_msg is not None:
-        # the editor loads the message's HTML part, not the plain text
-        for p in source_msg.walk():
-            if p.get_content_type() == "text/html" and not p.get_filename() \
-               and p.get_content_disposition() != "attachment":
-                with contextlib.suppress(Exception):
-                    # undecodable part -> leave the pre-filled body empty
-                    charset = p.get_content_charset() or "utf-8"
-                    raw = (p.get_payload(decode=True) or b"").decode(charset, errors="replace")
-                    prefill["body"] = util.sanitize_html(raw)
-                break
+    if html_mode and mode in ("forward", "forward-attachment") and source_msg is not None \
+       and str(prefs.get("forward_attachment", "0")) != "1":
+        # write_compose_attachments() keeps inline (disposition=inline) images
+        # only when the body references them; they are carried over as
+        # attachments so cid: references keep resolving in the editor.
+        for p in source_msg.walk() if source_msg.is_multipart() else []:
+            if p.get_content_disposition() == "inline" and p.get_content_maintype() == "image" \
+               and not p.get_filename():
+                data = p.get_payload(decode=True) or b""
+                if data and b"cid:" in prefill["body"].encode("utf-8", errors="ignore"):
+                    attachments_kept.append({
+                        "filename": p.get_filename() or "inline.jpg",
+                        "ctype": p.get_content_type(),
+                        "data": data,
+                        "size": len(data),
+                    })
 
     if request.method == "POST":
         ident_id = request.form.get("_ident")

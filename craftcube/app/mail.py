@@ -7,6 +7,7 @@ import contextlib
 import email
 import email.utils
 import imaplib
+import re
 import smtplib
 import ssl as _ssl
 from email.message import EmailMessage
@@ -183,17 +184,35 @@ class Imap:
         return out
 
     def fetch_message(self, uid):
-        typ, data = self.conn.uid("FETCH", str(uid), "(RFC822 FLAGS)")
+        typ, data = self.conn.uid("FETCH", str(uid), "(RFC822 FLAGS INTERNALDATE)")
         if typ != "OK":
             raise MailError("Message not found")
         raw = None
+        idate = None
         for item in _iter_fetch(data):
-            if isinstance(item, tuple) and len(item) > 1 and item[1]:
-                raw = item[1]
-                break
+            if isinstance(item, tuple) and len(item) > 1:
+                meta = item[0].decode() if isinstance(item[0], bytes) else str(item[0])
+                m = re.search(r"INTERNALDATE \"([^\"]+)\"", meta)
+                if m:
+                    idate = m.group(1)
+                if item[1] and raw is None:
+                    raw = item[1]
+            elif isinstance(item, (bytes, str)):
+                m = re.search(r"INTERNALDATE \"([^\"]+)\"",
+                              item.decode() if isinstance(item, bytes) else item)
+                if m:
+                    idate = m.group(1)
         if raw is None:
             raise MailError("Message not found")
-        return email.message_from_bytes(raw)
+        msg = email.message_from_bytes(raw)
+        # Roundcube's storage layer reports the INTERNALDATE as the message
+        # date when there is no Date header (rcube_imap get_headers); reply
+        # and forward headers depend on it.
+        if idate and not msg.get("Date"):
+            with contextlib.suppress(ValueError, TypeError):
+                msg["Date"] = parsedate_to_datetime(idate).strftime(
+                    "%a, %d %b %Y %H:%M:%S %z")
+        return msg
 
     def fetch_part(self, uid, section):
         _typ, data = self.conn.uid("FETCH", str(uid), f"(BODY.PEEK[{section}])")
