@@ -351,6 +351,17 @@ def test_plain_spellcheck_googie_layer(driver):
     _wait_until(driver, lambda d: d.execute_script(
         "return document.getElementById('composebody').value"
         ".split(' ')[0] === 'The';"))
+    # clicking Spell again resumes plain editing (reference chain
+    # spellcheck_stop -> spell_span click -> resumeEditing)
+    driver.execute_script(
+        "document.getElementById('tb-spell')"
+        ".dispatchEvent(new MouseEvent('click',"
+        "{bubbles:true,cancelable:true,detail:1,view:window}));")
+    _wait_until(driver, lambda d: not d.find_elements(
+        By.CSS_SELECTOR, ".googie_edit_layer"))
+    assert driver.execute_script(
+        "return getComputedStyle(document.getElementById('composebody'))"
+        ".display;") != "none"
 
 
 def test_compose_restore_dialog_fills_recipients(driver):

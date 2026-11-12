@@ -496,15 +496,13 @@
       googie.setDecoration(false);
       googie.decorateTextarea('composebody');
       window.googie = googie;
+      // app.js: env.editor_config.spellchecker = googie (toolbar Spell
+      // toggles through editor.spellcheck_start/stop)
+      cc_editor.spellchecker = googie;
       googie.spelling_state_observer = function (state) {
         var sp = document.getElementById('tb-spell');
         if (sp) sp.classList.toggle('selected',
             state === 'checking_spell' || state === 'resume_editing');
-      };
-      googie.custom_no_spelling_error = function (obj) {
-        // no elastic spell_container UI: surface via the message stack
-        if (window.cc_display) cc_display(cc_get_label('nospellerrors'), 'info', 4000);
-        obj.resumeEditingState();
       };
       googie.custom_ajax_error = function (obj) {
         if (window.cc_display) cc_display(

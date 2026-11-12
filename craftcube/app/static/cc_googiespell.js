@@ -157,6 +157,10 @@ function GoogieSpell(img_dir, server_url, has_dict) {
 
         if (this.main_controller) this.appendIndicator();
 
+        // googiespell.js prepare(): drop any 'Resume editing' binding so a
+        // fresh check starts clean
+        if (this.main_controller && this.spell_span) this.spell_span.onclick = null;
+
         this.error_links = [];
         this.ta_scroll_top = this.text_area.scrollTop;
         this.ignore = false;
@@ -304,7 +308,7 @@ function GoogieSpell(img_dir, server_url, has_dict) {
 
         var r = elm.getBoundingClientRect(),
             pos = { top: r.top + window.scrollY, left: r.left + window.scrollX },
-            list = el('ul', 'googie_list toolbarmenu');
+            list = el('ul', 'googie_list toolbarmenu menu listing iconized');
         list.setAttribute('googie_action_btn', '1');
 
         this.error_window.innerHTML = '';
@@ -444,6 +448,10 @@ function GoogieSpell(img_dir, server_url, has_dict) {
 
         this.hideErrorWindow();
 
+        // googiespell.js resumeEditing(): main_controller dims the span
+        // until checkSpellingState() rebuilds it below
+        if (this.main_controller && this.spell_span) this.spell_span.className = 'googie_no_style';
+
         if (!this.ignore) {
             if (this.edit_layer && this.edit_layer.parentNode) {
                 this.edit_layer.parentNode.removeChild(this.edit_layer);
@@ -518,40 +526,85 @@ function GoogieSpell(img_dir, server_url, has_dict) {
             this.error_links.forEach(function (elm) { me.custom_item_evaluator(me, elm); });
         }
 
-        // sync the textarea's font/scroll so the layer sits exactly over
-        // the same box (reference sizes through jQuery .width/.height)
-        var ta = this.text_area,
-            cs = window.getComputedStyle(ta);
-        ['fontFamily', 'fontSize', 'lineHeight', 'paddingTop', 'paddingRight',
-         'paddingBottom', 'paddingLeft', 'borderTopWidth', 'borderRightWidth',
-         'borderBottomWidth', 'borderLeftWidth', 'whiteSpace', 'wordWrap']
-            .forEach(function (p) { this.edit_layer.style[p] = cs[p]; }, this);
-        this.edit_layer.style.boxSizing = 'border-box';
-        this.edit_layer.style.background = cs.backgroundColor;
-        this.edit_layer.style.color = cs.color;
-        this.edit_layer.style.width = ta.offsetWidth + 'px';
-        this.edit_layer.style.height = ta.offsetHeight + 'px';
-
+        // reference sizing: the layer keeps the googie_edit_layer CSS
+        // (padding/border/monospace from styles.css via the .html-editor
+        // parent) and only the clientWidth/offsetHeight set inline by
+        // createEditLayer — do NOT re-derive styles from the textarea
         this.edit_layer.appendChild(output);
 
         // Hide text area and show edit layer
-        ta.style.display = 'none';
-        ta.parentNode.insertBefore(this.edit_layer, ta);
+        this.text_area.style.display = 'none';
+        this.text_area.parentNode.insertBefore(this.edit_layer, this.text_area);
         this.edit_layer.scrollTop = this.ta_scroll_top;
     };
 
     // ------------------------------------------------------ state UI
-    this.flashNoSpellingErrorState = function () {
+    this.flashNoSpellingErrorState = function (callback) {
         this.setStateChanged('no_error_found');
+        // googiespell.js: with main_controller the (detached) span flashes
+        // the label for a second, then the state resets to the plain
+        // 'Check spelling' span
+        if (this.main_controller && this.spell_span) {
+            var ref = this,
+                done = function () {
+                    ref.checkSpellingState();
+                };
+            this.spell_span.innerHTML = '';
+            this.spell_span.onclick = null;
+            var msg = document.createElement('span');
+            msg.textContent = this.lang_no_error_found;
+            this.spell_span.appendChild(msg);
+            this.spell_span.className = 'googie_check_spelling_ok';
+            setTimeout(callback ? function () { callback(); done(); } : done, 1000);
+        }
     };
 
     this.resumeEditingState = function () {
         this.setStateChanged('resume_editing');
+
+        // Change link text to resume (googiespell.js resumeEditingState;
+        // with setDecoration(false) the span is detached but the reference
+        // still rebinds it — editor.spellcheck_stop() triggers its click)
+        if (this.main_controller && this.spell_span) {
+            var rsm = document.createElement('span');
+            rsm.textContent = this.lang_rsm_edt;
+            var ref = this;
+            this.spell_span.innerHTML = '';
+            this.spell_span.onclick = function () {
+                ref.resumeEditing();
+            };
+            this.spell_span.appendChild(rsm);
+            this.spell_span.className = 'googie_resume_editing';
+        }
+
         try { this.edit_layer.scrollTop = this.ta_scroll_top; } catch (e) {}
+    };
+
+    this.createSpellDiv = function () {
+        var elm = el('span', 'googie_check_spelling_link');
+        elm.textContent = this.lang_chck_spell;
+        return elm;
     };
 
     this.checkSpellingState = function (fire) {
         if (fire) this.setStateChanged('ready');
+        this.switch_lan_pic = document.createElement('span');
+
+        var span_chck = this.createSpellDiv(),
+            ref = this;
+        span_chck.onclick = function () {
+            if (ref.custom_spellcheck_starter) ref.custom_spellcheck_starter();
+            else ref.spellCheck();
+        };
+
+        // googiespell.js appends the span into spell_container only when
+        // main_controller; decorateTextarea() built no container because
+        // compose sets setDecoration(false) — the span stays detached
+        if (this.main_controller && this.spell_container) {
+            this.spell_container.innerHTML = '';
+            this.spell_container.appendChild(span_chck);
+        }
+        this.spell_span = span_chck;
     };
 
     this.setSpellContainer = function () { /* no decoration in elastic */ };
@@ -565,7 +618,9 @@ function GoogieSpell(img_dir, server_url, has_dict) {
     this.decorateTextarea = function (id) {
         this.text_area = typeof id === 'string' ? document.getElementById(id) : id;
         // reference builds a spell_container row only with decoration on;
-        // compose.php calls setDecoration(false), so nothing to insert
+        // compose.php calls setDecoration(false), so nothing to insert —
+        // but checkSpellingState() still primes the (detached) spell_span
+        if (this.text_area) this.checkSpellingState();
     };
 
     // ------------------------------------------------------ misc

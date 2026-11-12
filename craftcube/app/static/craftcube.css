@@ -239,3 +239,9 @@ html.dark-mode ul.nav-tabs .nav-link.active { background: #21292c;
 .ui-dialog .ui-dialog-buttonpane { text-align: right; white-space: nowrap;
   background-image: none; padding: 0 1.5rem; height: 4rem; }
 .ui-dialog .ui-dialog-buttonpane button { margin: .65rem 0 .65rem .5rem; }
+
+/* The GoogieSpell error window is a .popupmenu, but the reference renders
+   it with .popover chrome: full-height list (no 80vh clip), no padding,
+   z-index 1300, #d4dbde border and 3px/3px/5px #f1f3f4 shadow. */
+.googie_window.popupmenu { max-height: none; overflow: visible; padding: 0;
+  z-index: 1300; border-color: #d4dbde; box-shadow: 3px 3px 5px #f1f3f4; }

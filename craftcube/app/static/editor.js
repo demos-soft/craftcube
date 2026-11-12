@@ -401,10 +401,13 @@
         }
         if (ed.plugins && ed.plugins.spellchecker) ed.plugins.spellchecker.active = false;
       } else if (ed = this.spellchecker) {
-        // app.js spellcheck_stop: while the googie layer is up, "Spell"
-        // re-triggers spellCheck() (it resumes editing first)
+        // editor.js spellcheck_stop: while the googie layer is up, the
+        // spell_span is bound to resumeEditing() by resumeEditingState() —
+        // triggering its click is exactly what the reference does
         if (ed.state && ed.state !== 'ready' && ed.state !== 'no_error_found') {
-          ed.spellCheck();
+          if (ed.spell_span) {
+            ed.spell_span.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+          }
         }
       }
       this.spellcheck_active = false;
@@ -652,14 +655,16 @@
       return cc_toggle_editor(props || {});
     }
     if (cmd === 'spellcheck') {
-      if (ed && ed.is_html()) {
+      if (ed) {
+        // app.js spellcheck command: toggle purely on editor state —
+        // in plain mode that is the googie state (start spellCheck, or
+        // stop which resumes editing through the spell_span)
+        if (!ed.spellchecker && !ed.is_html() && window.googie) ed.spellchecker = window.googie;
         if (ed.spellcheck_state()) ed.spellcheck_stop();
         else ed.spellcheck_start();
         return true;
       }
       if (window.googie) {
-        // plain mode: app.js uses editor.spellchecker (GoogieSpell);
-        // start() and stop() both end in spellCheck() while layer toggles
         window.googie.spellCheck();
         return true;
       }
