@@ -330,12 +330,25 @@
       var dark = document.documentElement.classList.contains('dark-mode');
       var inner = t.querySelector('.inner');
       if (inner) inner.textContent = dark ? 'Light mode' : 'Dark mode';
+      // the class names the ACTION: sun (theme light) while dark is on,
+      // moon (theme dark) while light is on — like the elastic ui.js
+      t.classList.toggle('light', dark);
+      t.classList.toggle('dark', !dark);
+      t.setAttribute('title', dark ? 'Light mode' : 'Dark mode');
     }
     label();
     t.addEventListener('click', function (e) {
       e.preventDefault();
       var dark = document.documentElement.classList.toggle('dark-mode');
       document.cookie = 'colorMode=' + (dark ? 'dark' : 'light') + ';path=/;max-age=31536000';
+      // ui.js switch_iframe_color_mode(): push the mode into same-origin
+      // iframes (watermark, framed previews) that already rendered
+      document.querySelectorAll('iframe').forEach(function (f) {
+        try {
+          var h = f.contentDocument && f.contentDocument.documentElement;
+          if (h) h.classList.toggle('dark-mode', dark);
+        } catch (err) { /* cross-origin: ignore like the reference */ }
+      });
       label();
     });
   });
