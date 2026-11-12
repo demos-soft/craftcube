@@ -30,7 +30,13 @@ from flask import (
 from . import compose_wash, i18n, prefs_data, prefs_sections, util
 from .auth import hash_password, verify_password
 from .mail import Imap, Mailbox, MailError, _decode_header, build_message, wire_bytes
+from .plugins import get_api
 from .store import _UNSET
+
+
+def ph(name, args):
+    """Trigger a plugin hook (rcube_plugin_api::exec_hook)."""
+    return get_api().exec_hook(name, args)
 
 PREF_SECTIONS = prefs_sections.sections
 
@@ -139,12 +145,15 @@ def folders_for_menu():
         f = dict(f)
         f["display"] = folder_label(f["name"], prefs)
         out.append(f)
-    return out
+    # rcmail::listfolders(): 'folders_list' fires with the folder tree
+    return ph("folders_list", {"folders": out})["folders"]
 
 
 def render(task, tmpl, **ctx):
     g.task = task
     ctx.setdefault("folders", folders_for_menu())
+    # rcube_output_html::render(): plugins may amend the template properties
+    ctx = ph("render_page", {"template": tmpl, "task": task, "props": ctx})["props"]
     # Roundcube page titles: "<product> :: <task title>" (mail list uses the
     # folder name, message view the subject; compose keeps the default)
     if "page_title" not in ctx:
@@ -242,10 +251,12 @@ def login():
                     "name": "", "organization": "", "email": username,
                     "reply_to": "", "bcc": "", "signature": "", "html_signature": 0, "standard": 1,
                 })
+            ph("login_after", {"user_id": uid})
             return redirect(request.args.get("_next") or url_for("views.mail"))
         error = i18n.gettext("loginfailed", g.lang, domain="messages")
     return render_template("login.html", task="login", error=error,
-                           folders=[], product_name=current_app.config["PRODUCT_NAME"])
+                           folders=[], product_name=current_app.config["PRODUCT_NAME"],
+                           loginform_content=ph("loginform_content", {"content": ""})["content"])
 
 
 @bp.route("/logout")
@@ -255,6 +266,7 @@ def logout():
     box = imap_box()
     with contextlib.suppress(MailError):
         box.logout_actions()
+    ph("session_destroy", {})
     session.clear()
     return redirect(url_for("views.login"))
 
@@ -303,6 +315,9 @@ def mail():
     except MailError as e:
         flash(str(e), "error")
         listing = {"items": [], "page": 1, "pages": 1, "total": 0, "first": 0, "last": 0, "uids": []}
+    # rcmail_action_mail_index: 'messages_list' lets plugins amend the list
+    listing["items"] = ph("messages_list",
+                          {"messages": listing["items"], "mbox": folder})["messages"]
     uid = request.args.get("_uid")
     quota_used = quota_kb = 0
     with contextlib.suppress(Exception):
@@ -760,6 +775,25 @@ def message_view():
         fmts = dict(session.get("msg_formats") or {})
         fmts[f"{folder}:{uid}"] = request.args.get("_format")
         session["msg_formats"] = fmts
+    if request.args.get("_save"):
+        # rcmail_action_mail_viewsource::_save=1 — raw message download
+        # named from the subject ("filename_from_subject"). The reference
+        # also GET-checks a request token; CraftCube uses the session.
+        raw = box.raw_message(folder, uid)
+        subject = _hdr(raw, "Subject") or ""
+        name = re.sub(r"[:\t\n\r\x00\x0B/]+\s*", " ", subject[:128])
+        name = name.strip(" \t\n\r\x00\x0B./_") or uid
+        # headers->charset: RC treats us-ascii/missing as the default
+        # charset; emits e.g. "text/plain;charset=UTF-8"
+        declared = (raw.get_param("charset", header="Content-Type")
+                    or "").strip().strip('"').lower()
+        charset = "UTF-8" if declared in ("", "us-ascii", "ascii") else declared
+        body = getattr(raw, "_raw_bytes", None) or raw.as_bytes()
+        resp = Response(body, mimetype="text/plain")
+        resp.headers["Content-Type"] = f"text/plain;charset={charset}"
+        resp.headers["Content-Disposition"] = f'attachment; filename="{name}.eml"'
+        resp.headers["Content-Length"] = str(len(body))
+        return resp
     if request.args.get("_source"):
         raw = box.raw_message(folder, uid)
         return Response(raw.as_string(), mimetype="text/plain; charset=utf-8")
@@ -782,6 +816,9 @@ def message_view():
         ctx = build_message_ctx(box, folder, uid, mark_seen=False, allow_remote=True)
         ctx["remote_blocked"] = False
     ctx["framed"] = framed
+    # show.php: 'message_read' after the message object is fully built
+    ctx = ph("message_read", {"message": ctx["msg"], "mbox": folder,
+                              "uid": uid, "props": ctx})["props"]
     ctx["extwin"] = request.args.get("_extwin") == "1"
     # standalone (non-iframe) message pages render the toolbar server-enabled
     # for the viewed message, like the reference action-show page
@@ -865,76 +902,31 @@ def utils_spell_html():
     return Response(json.dumps(result), content_type="application/json")
 
 
-@bp.route("/message/export")
+@bp.route("/message/export", methods=["GET", "POST"])
 @login_required
 def message_export():
-    """Export messages — the zipdownload plugin's three formats:
-    eml/maildir (zip of '<uid> <subject16>.eml'), mbox (zip of '<mbox>.mbox').
-    Every format is a zip, like the reference plugin."""
-    box = imap_box()
-    folder = request.args.get("_mbox") or "INBOX"
-    uids = (request.form.getlist("_uids[]") + request.args.getlist("_uids[]")
-            if request.method == "POST" else list(request.args.getlist("_uids[]")))
-    uid = request.args.get("_uid")
-    if uid and uid not in uids:
-        uids.append(uid)
-    if not uids:
+    """Export messages - provided by the zipdownload plugin (like the
+    reference, where the elastic download menu dispatches the plugin
+    action); every format comes back as a zip."""
+    plugin = get_api().get_plugin("zipdownload")
+    if plugin is None:
+        abort(404)  # plugin disabled: no export, like Roundcube
+    return plugin.download_messages()
+
+
+@bp.route("/plugin/<name>/<action>", methods=["GET", "POST"])
+@login_required
+def plugin_action(name, action):
+    """Generic dispatch of a registered plugin action, the Roundcube
+    ``_action=plugin.<name>.<action>`` equivalent for CraftCube's URLs."""
+    full = f"plugin.{name}.{action}"
+    api = get_api()
+    if full not in api.state.actions:
         abort(404)
-    fmt = request.args.get("_format") or "eml"
-    import io as _io
-    import re as _re
-    import zipfile
-
-    def raw_for(u):
-        try:
-            raw = box.raw_message(folder, u)
-        except MailError:
-            abort(404)  # unknown uid: 404, not a server error
-        if raw is None:
-            abort(404)
-        return raw
-
-    # zipdownload has no raw-eml mode: the 'eml' button maps to the maildir
-    # layout below and even a single message arrives as '<mbox>.zip'
-    from datetime import datetime
-    from email.utils import parseaddr
-
-    def raw_bytes(m):
-        # stored wire bytes; get_raw_body() equivalent (no synthesized Date)
-        return getattr(m, "_raw_bytes", None) or m.as_bytes()
-
-    buf = _io.BytesIO()
-    # zipdownload: zip name '<mbox>.zip' (single folder), entries keep the
-    # folder-derived name inside too
-    zname = folder + ".zip"
-    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
-        if fmt == "mbox":
-            body = b""
-            for i, u in enumerate(uids):
-                raw = raw_for(u)
-                frm = parseaddr(str(raw.get("From", "")))[1] or "MAILER-DAEMON"
-                frm = _re.sub(r"\s", "-", frm)
-                d = _msg_date(raw) or datetime.now(UTC)
-                if d.tzinfo:
-                    d = d.astimezone(UTC)
-                # RFC4155 "From " separator, MBOX_DATE_FORMAT 'D M d H:i:s Y'
-                chunk = (
-                    f"From {frm} {d.strftime('%a %b %d %H:%M:%S %Y')}\r\n".encode()
-                    + _re.sub(rb"(?m)^From ", b">From ", raw_bytes(raw)))
-                if not chunk.endswith(b"\r\n"):
-                    chunk += b"\r\n"
-                body += chunk + (b"\r\n" if i < len(uids) - 1 else b"")
-            z.writestr(folder + ".mbox", body)
-        else:  # maildir / eml: '<uid> <subject16>.eml' (no folder path for
-               # a single folder — $folders is only set for multi-folder sets)
-            for u in uids:
-                raw = raw_for(u)
-                subject = (_hdr(raw, "Subject") or "")[:16]
-                subject = _re.sub(r"[^A-Za-z0-9 ._ -]", "", subject)
-                z.writestr(f"{u}{' ' + subject if subject else ''}.eml", raw_bytes(raw))
-    return Response(buf.getvalue(), mimetype="application/zip", headers={
-        "Content-Disposition": f'attachment; filename="{zname}"',
-    })
+    result = api.exec_action(full)
+    if result is None:
+        abort(404)
+    return result
 
 
 @bp.post("/message/import")
@@ -1687,6 +1679,9 @@ def compose():
         if attach_original:
             attachments.append((attach_original[0], "message/rfc822", attach_original[1]))
 
+        # rcmail_sendmail::send(): 'message_outgoing_body' transforms the body
+        body = ph("message_outgoing_body",
+                  {"body": body, "type": "html" if html else "plain"})["body"]
         msg = build_message(
             ident["email"], ident["name"], to, cc, bcc, subject, body, html=html,
             attachments=attachments or None,
@@ -1707,6 +1702,7 @@ def compose():
             try:
                 new_uid = box.save_draft(
                     wire_bytes(msg), replace_uid=int(draft_uid) if draft_uid else None)
+                ph("message_draftsaved", {"uid": new_uid, "parentuid": draft_uid})
                 return jsonify({"draft_id": new_uid or ""})
             except MailError as e:
                 return jsonify({"error": str(e)}), 500
@@ -1732,12 +1728,18 @@ def compose():
         try:
             if act == "save":
                 # the draft keeps its Bcc header
-                box.save_draft(wire_bytes(msg), replace_uid=int(draft_uid) if draft_uid else None)
+                _du = box.save_draft(wire_bytes(msg), replace_uid=int(draft_uid) if draft_uid else None)
+                ph("message_draftsaved", {"uid": _du, "parentuid": draft_uid})
                 flash(i18n.gettext("messagesaved", g.lang, domain="messages"), "confirmation")
                 return redirect(url_for("views.mail", _mbox=box.special("drafts") or "Drafts"))
             # smtplib needs the combined recipient list (incl. Bcc); the
             # transmitted header block and the Sent copy must not carry Bcc
             store_target = request.form.get("_store_target")
+            # rcmail_sendmail::send(): plugins may amend headers or abort
+            _h = ph("message_before_send", {"message": msg, "mode": "send"})
+            if _h.get("abort"):
+                raise MailError("sending aborted by plugin")
+            msg = _h.get("message", msg)
             # reply_same_folder (compose.php:241): when the user did not
             # choose an explicit save folder, a reply's copy goes into the
             # folder of the replied-to message
@@ -1748,6 +1750,7 @@ def compose():
             box.send(msg, wire_bytes(msg),
                      store_target=store_target if store_target is not None else None,
                      extra_rcpts=[a for _d, a in email.utils.getaddresses(bcc) if a])
+            ph("message_sent", {"result": True, "mode": mode or "compose"})
             if draft_uid:
                 box.delete_draft(draft_uid)
             # 'Collected addresses' prefs: store recipients (type 1) and the

@@ -72,14 +72,17 @@
     {% if not message_view %}
     <li role="menuitem"><a class="import" href="#" data-popup="uploadform"><span>{{ 'Import'|lc }}</span></a></li>
     {% endif %}
+    {# like Roundcube: the export items come from the zipdownload plugin #}
+    {% if plugin_enabled('zipdownload') %}
     <li role="menuitem"{{ ' class="with-sublist"'|safe if not message_view }}>
       <a class="download{{ dis }}" id="tb-export"
-        href="{{ url_for('views.message_export', _mbox=folder, _uid=uid, _format='eml') if message_view else '#' }}"><span>{{ 'Export'|lc }}</span></a>
+        href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _save=1) if message_view else '#' }}"><span>{{ 'Download'|lc }}</span></a>
       {% if not message_view %}
       <a class="button icon dropdown" role="button" href="#download" data-popup="download-menu"
          title="{{ 'Export'|lc }}"><span class="voice">Download options</span></a>
       {% endif %}
     </li>
+    {% endif %}
     <li role="menuitem"><a class="edit asnew{{ dis }}" data-mode="edit"
         href="{{ url_for('views.compose', _mode='edit') }}"><span>{{ 'Edit as new'|lc }}</span></a></li>
     <li role="menuitem"><a class="source{{ dis }}" id="tb-source"
@@ -95,6 +98,7 @@
   </ul>
 </div>
 
+{% if plugin_enabled('zipdownload') %}
 <div id="download-menu" class="popupmenu">
   <h2 class="voice" id="aria-label-zipdownloadmenu">Message Download Options Menu</h2>
   <ul class="menu listing" role="menu" aria-labelledby="aria-label-zipdownloadmenu">
@@ -106,6 +110,7 @@
         data-dlfmt="maildir"><span>Maildir format (.zip)</span></a></li>
   </ul>
 </div>
+{% endif %}
 
 {% set move_target_box = folder %}
 <div id="moveto-menu" class="popupmenu">

@@ -53,6 +53,7 @@
         <a href="{{ url_for('views.mail', _mbox=folder, _sort=sort, _sort_order=order) }}"
            class="button icon toolbar-button refresh" title="{{ 'Check for new messages'|lc }}"><span class="inner">{{ 'Refresh'|lc }}</span></a>
         <a class="button icon toolbar-menu-button" href="#list-menu" data-popup="list-menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
+        {{ plugin_container("listcontrols") }}
         <a class="button icon toolbar-list-button active" href="#list-menu" data-popup="toolbar-list-menu"
            title="" aria-haspopup="true" aria-expanded="false" aria-owns="toolbar-list-menu"></a>
       </div>
@@ -273,6 +274,7 @@
     </div>
 
     <div id="listoptions-menu" class="popupmenu propform" role="dialog" aria-labelledby="aria-label-listoptions">
+      {{ plugin_container("listoptions") }}
       <h3 id="aria-label-listoptions" class="voice">{{ 'Message list display and sorting options'|lc }}</h3>
       <div class="form-group row">
         <label for="listoptions-sortcol" class="col-form-label col-sm-4">{{ 'Sorting column'|lc }}</label>

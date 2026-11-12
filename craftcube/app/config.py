@@ -1,5 +1,6 @@
 """CraftCube configuration (env-overridable)."""
 import os
+from typing import ClassVar
 
 
 class Config:
@@ -25,6 +26,11 @@ class Config:
 
     PRODUCT_NAME = os.environ.get("CRAFTCUBE_PRODUCT_NAME", "CraftCube")
     VERSION = "1.0.0"
+
+    # enabled plugins, like Roundcube $config['plugins']; the bundled
+    # zipdownload port provides the message-export actions, so it ships on
+    PLUGINS: ClassVar = [x for x in os.environ.get(
+        "CRAFTCUBE_PLUGINS", "zipdownload").replace(" ", "").split(",") if x]
 
     # pages of the message/contact lists when the user has no preference;
     # matches the reference defaults (config/defaults.inc.php:

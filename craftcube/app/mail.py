@@ -285,6 +285,9 @@ class Imap:
         # keep the untouched wire bytes (exports must not carry the
         # synthesized Date; rcube get_raw_body streams the stored message)
         setattr(msg, "_raw_bytes", raw)  # noqa: B010 - dynamic payload stash
+        # raw INTERNALDATE, needed for the RFC4155 "From " line by zipdownload
+        if idate:
+            setattr(msg, "_internaldate", idate)  # noqa: B010
         return msg
 
     def fetch_part(self, uid, section):

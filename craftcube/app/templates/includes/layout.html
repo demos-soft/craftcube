@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  {%- for css in plugin_stylesheets %}<link rel="stylesheet" href="{{ css }}">{% endfor -%}
   {% if dark_mode_support|default(true) %}
   <script>
   try {

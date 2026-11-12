@@ -1031,16 +1031,28 @@
       });
     });
 
-    // Download... submenu (zipdownload): build export URL for current selection
+    // Download... submenu (zipdownload): eml = single raw .eml download
+    // (reference viewsource _save=1); mbox/maildir = plugin zip of selection
     document.querySelectorAll('#download-menu a[data-dlfmt]').forEach(function (a) {
       a.addEventListener('click', function (e) {
         e.preventDefault();
         if (a.classList.contains('disabled')) return;
         var uids = toolbarContext();
         if (!uids.length) return;
-        var url = '/message/export?_mbox=' + encodeURIComponent(boxOf(uids[0])) +
-                  '&_format=' + a.getAttribute('data-dlfmt');
-        uids.forEach(function (u) { url += '&_uids[]=' + u; });
+        var fmt = a.getAttribute('data-dlfmt');
+        var box = boxOf(uids[0]);
+        var url;
+        if (fmt === 'eml') {
+          url = '/message?_mbox=' + encodeURIComponent(box) +
+                '&_uid=' + encodeURIComponent(uids[0]) + '&_save=1';
+        } else {
+          url = '/message/export?_mode=' + fmt +
+                '&_mbox=' + encodeURIComponent(box);
+          uids.forEach(function (u) {
+            var b = boxOf(u);
+            url += '&_uid[]=' + encodeURIComponent(b === box ? u : u + '-' + b);
+          });
+        }
         location.href = url;
         window.cc_close_popups();
       });

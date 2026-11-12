@@ -3,7 +3,8 @@
   <div id="messagestack"></div>
   {% include 'includes/messages.html' %}
 
-  <script>window.cc_labels = {{ js_labels | default({}) | tojson }};</script>
+  <script>window.cc_labels = Object.assign({{ js_labels | default({}) | tojson }}, {{ plugin_label_map | default({}) | tojson }});</script>
+  {%- for js in plugin_scripts %}<script src="{{ js }}"></script>{% endfor -%}
   <script src="{{ url_for('static', filename='cc_messages.js') }}"></script>
   <script src="{{ url_for('static', filename='craftcube.js') }}"></script>
   {% block scripts %}{% endblock %}
