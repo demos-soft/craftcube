@@ -1,8 +1,10 @@
   </div><!-- /#layout -->
 
+  <div id="messagestack"></div>
   {% include 'includes/messages.html' %}
 
   <script>window.cc_labels = {{ js_labels | default({}) | tojson }};</script>
+  <script src="{{ url_for('static', filename='cc_messages.js') }}"></script>
   <script src="{{ url_for('static', filename='craftcube.js') }}"></script>
   {% block scripts %}{% endblock %}
 </body>

@@ -83,32 +83,93 @@ SECTION_LABELS = [
 ]
 
 
-def _sel(key, title, prefs):
+def _id(key):
+    """field ids exactly as the reference sets $field_id (incl. its quirks:
+    'rcmfdcompose_extwin' without underscore, bare 'show_real_foldernames',
+    plugin ids 'ff_*' and special-folder ids '<name>_mbox')."""
+    return ID_OVERRIDES.get(key, "rcmfd_" + key)
+
+
+# rcmail_action_settings_index::user_prefs() $field_id values that differ
+# from the default rcmfd_<pref> pattern:
+ID_OVERRIDES = {
+    "language": "rcmfd_lang",
+    "pretty_date": "rcmfd_prettydate",
+    "display_next": "rcmfd_displaynext",
+    "prefer_html": "rcmfd_htmlmsg",
+    "compose_extwin": "rcmfdcompose_extwin",
+    "draft_autosave": "rcmfd_autosave",
+    "mime_param_folding": "rcmfd_param_folding",
+    "show_real_foldernames": "show_real_foldernames",
+    "drafts_mbox": "_drafts_mbox",
+    "sent_mbox": "_sent_mbox",
+    "junk_mbox": "_junk_mbox",
+    "trash_mbox": "_trash_mbox",
+    "archive_mbox": "_archive_mbox",
+    "archive_type": "ff_archive_type",
+    "read_when_deleted": "rcmfd_read_deleted",
+    "read_on_archive": "ff_read_on_archive",
+}
+
+
+def _sel(key, title, prefs, attrs=""):
     opts = getattr(D, SELECTS[key])
     val = str(prefs.get(key, DEFAULTS.get(key, "")))
     return {"type": "select", "key": key, "name": "_" + key,
-            "id": "rcmfd_" + key, "title": title, "options": opts,
-            "value": val}
+            "id": _id(key), "title": title, "options": opts,
+            "value": val, "attrs": attrs}
 
 
-def _cb(key, title, prefs, hint=None):
-    return {"type": "checkbox", "key": key, "name": "_" + key,
-            "id": "rcmfd_" + key, "title": title,
-            "checked": bool(prefs.get(key, DEFAULTS.get(key, 0)))}
+def _cb(key, title, prefs, hint=None, onchange=""):
+    row = {"type": "checkbox", "key": key, "name": "_" + key,
+           "id": _id(key), "title": title,
+           "checked": bool(prefs.get(key, DEFAULTS.get(key, 0)))}
+    if onchange:
+        row["attrs"] = f'onchange="{onchange}"'
+    return row
+
+
+def _mailview_main(p):
+    # settings/index.php:557-616 — prefer_html is coupled to show_images:
+    # the checkbox toggles the select's disabled state (and resets it to 0)
+    # client-side, and the initial state mirrors PHP empty(prefer_html).
+    prefer = str(p.get("prefer_html", DEFAULTS["prefer_html"])) not in (
+        "", "0", "None", "False")
+    show = _sel("show_images", "Allow remote resources (images, styles)", p)
+    if not prefer:
+        show["value"] = "0"
+        show["attrs"] = 'disabled="disabled"'
+    return [
+        _cb("message_extwin", "Open message in a new window", p),
+        _cb("message_show_email", "Show email address with display name", p),
+        _cb("prefer_html", "Display HTML", p,
+            onchange="$('#rcmfd_show_images').prop('disabled', !this.checked)"
+                     ".val(0)"),
+        show,
+        _sel("mdn_requests", "On request for return receipt", p),
+        _cb("inline_images", "Display attached images below the message", p),
+    ]
 
 
 def _txt(key, title, prefs):
     return {"type": "text", "key": key, "name": "_" + key,
-            "id": "rcmfd_" + key, "title": title,
+            "id": _id(key), "title": title,
             "value": str(prefs.get(key, DEFAULTS[key])),
             "size": TEXTS[key]}
 
 
 def _folder(key, title, prefs, folders):
+    # rcmail_action::folder_selector(noselection '---', folder_filter mail,
+    # folder_rights w) over SUBSCRIBED folders; INBOX implicitly included.
+    # All selectors but _sent_mbox carry the "no INBOX as special" guard
+    # (index.php #1486114, #1488279, #1489219).
     opts = [("", "---")] + [(f, f) for f in folders]
+    onchange = ("if ($(this).val() == 'INBOX') $(this).val('')"
+                if key != "sent" else "")
     return {"type": "select", "key": key, "name": "_" + key + "_mbox",
-            "id": "rcmfd_" + key + "_mbox", "title": title, "options": opts,
-            "value": str(prefs.get(key, DEFAULTS.get(key, "")))}
+            "id": _id(key + "_mbox"), "title": title, "options": opts,
+            "value": str(prefs.get(key, DEFAULTS.get(key, ""))),
+            "attrs": (("onchange=\"" + onchange + "\"") if onchange else "")}
 
 
 def sections(prefs, folders):
@@ -142,14 +203,7 @@ def sections(prefs, folders):
             ]),
         ]},
         "mailview": {"label": "Displaying Messages", "blocks": [
-            ("main", "Main Options", [
-                _cb("message_extwin", "Open message in a new window", p),
-                _cb("message_show_email", "Show email address with display name", p),
-                _cb("prefer_html", "Display HTML", p),
-                _sel("show_images", "Allow remote resources (images, styles)", p),
-                _sel("mdn_requests", "On request for return receipt", p),
-                _cb("inline_images", "Display attached images below the message", p),
-            ]),
+            ("main", "Main Options", _mailview_main(p)),
             ("advanced", "Advanced options", [
                 _sel("default_charset", "Default Character Set", p),
             ]),

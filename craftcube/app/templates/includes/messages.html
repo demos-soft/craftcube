@@ -1,11 +1,7 @@
+{#- Flash bridge: the reference emits rcmail.display_message(...) JS calls and
+    renders the toasts client-side into #messagestack; do the same. -#}
 {%- with messages = get_flashed_messages(with_categories=true) %}
   {%- if messages %}
-  <div id="messagestack">
-    {%- for cat, msg in messages %}
-    <div class="alert alert-{{ 'danger' if cat == 'error' else 'success' if cat == 'confirmation' else 'info' }}">
-      <span>{{ msg }}</span>
-    </div>
-    {%- endfor %}
-  </div>
+  <script>window.CC_FLASHES = {{ messages | tojson }};</script>
   {%- endif %}
 {%- endwith %}

@@ -16,8 +16,9 @@
   } catch (e) { }
   </script>
 </head>
-<body class="task-settings action-edit-prefs formcontainer">
-  <!-- skins/elastic/templates/settings.html section frame (post-ui.js state) -->
+<body class="task-settings action-prefs-edit">
+  <!-- port of the reference prefs-edit frame (program/actions/settings/
+       prefs_edit.php::run() + rcmail_output_html propform rendering) -->
   <h1 class="voice">{{ sections[section].label }}</h1>
   <div class="formcontent">
     <form name="form" method="post"
@@ -27,50 +28,36 @@
       {# ui.js focuses the first form field when the frame loads #}
       {% set ns = namespace(done=false) %}
       {% for class, legend, fields in blocks %}
-      <fieldset class="{{ class }}"{% if class == 'advanced' %} id="advanced-options"{% endif %}><legend{% if class == 'advanced' %} class="closed" tabindex="0" role="button" aria-expanded="false"{% endif %}>{{ legend }}</legend>
-        <div{% if class == 'advanced' %} class="collapse"{% endif %}>
+      <fieldset class="{{ class }}"><legend>{{ legend }}</legend>
         <table class="propform cols-sm-6-6"><tbody>
           {% for f in fields %}
           {% if f.type == 'mailto' %}
-          <tr class="form-group row">
-            <td colspan="2" style="width: 100%;"><a href="#" id="mailtoprotohandler">{{ f.title }}</a><span
-                class="mailtoprotohandler-status"></span></td>
-          </tr>
+          <tr><td colspan="2"><a href="#" id="{{ f.id }}">{{ f.title }}</a><span
+                class="mailtoprotohandler-status"></span></td></tr>
           {% elif f.type == 'fontgroup' %}
-          {# index.php: one label + input-group holding both selects #}
-          <tr class="form-group row">
-            <td class="title col-sm-6"><label for="{{ f.fields[0].id }}" class="col-form-label">{{ f.title }}</label></td>
-            <td class="col-sm-6">
-              <div class="input-group">
+          {# index.php: label for=...size id + input-group holding both selects #}
+          <tr><td class="title"><label for="{{ f.fields[1].id }}">{{ f.title }}</label></td>
+            <td><div class="input-group">
                 {% for s in f.fields %}
-                <select name="{{ s.name }}" id="{{ s.id }}" class="custom-select form-control pretty-select">
+                <select name="{{ s.name }}" id="{{ s.id }}" class="custom-select"{% if s.attrs %} {{ s.attrs|safe }}{% endif %}>
                   {% for v, l in s.options %}
-                  <option value="{{ v }}"{{ ' selected' if v == s.value }}>{{ l }}</option>
+                  <option value="{{ v }}"{{ ' selected="selected"' if v == s.value }}>{{ l }}</option>
                   {% endfor %}
                 </select>
                 {% endfor %}
-              </div>
-            </td>
+            </div></td>
           </tr>
           {% elif f.type == 'checkbox' %}
-          <tr class="form-group row form-check">
-            <td class="title col-sm-6"><label for="{{ f.id }}" class="col-form-label">{{ f.title }}</label></td>
-            <td class="col-sm-6">
-              <div class="custom-control custom-switch">
-                <input name="{{ f.name }}" id="{{ f.id }}" value="1"{{ ' checked' if f.checked }}
-                       type="checkbox" class="form-check-input custom-control-input">
-                <label for="{{ f.id }}" class="custom-control-label" title=""></label>
-              </div>
-            </td>
+          <tr><td class="title"><label for="{{ f.id }}">{{ f.title }}</label></td>
+            <td><input name="{{ f.name }}" id="{{ f.id }}" value="1"{{ (' ' ~ f.attrs)|safe if f.attrs }}{{ ' checked="checked"' if f.checked }} type="checkbox"></td>
           </tr>
           {% else %}
-          <tr class="form-group row">
-            <td class="title col-sm-6"><label for="{{ f.id }}" class="col-form-label">{{ f.title }}</label></td>
-            <td class="col-sm-6">
+          <tr><td class="title"><label for="{{ f.id }}">{{ f.title }}</label></td>
+            <td>
               {% if f.type == 'select' %}
-              <select name="{{ f.name }}" id="{{ f.id }}" class="custom-select form-control pretty-select"{{ ' autofocus' if not ns.done and loop.first and (ns.done, True)[1] }}>
+              <select name="{{ f.name }}" id="{{ f.id }}" class="custom-select"{% if f.attrs %} {{ f.attrs|safe }}{% endif %}{{ ' autofocus' if not ns.done and loop.first and (ns.done, True)[1] }}>
                 {% for v, l in f.options %}
-                <option value="{{ v }}"{{ ' selected' if v == f.value }}>{{ l }}</option>
+                <option value="{{ v }}"{{ ' selected="selected"' if v == f.value }}>{{ l }}</option>
                 {% endfor %}
               </select>
               {% else %}
@@ -82,7 +69,6 @@
           {% endif %}
           {% endfor %}
         </tbody></table>
-        </div>
       </fieldset>
       {% endfor %}
     </form>
@@ -90,36 +76,27 @@
   <div class="formbuttons">
     <button class="btn btn-primary submit" type="submit" value="Save">{{ 'Save'|lc }}</button>
   </div>
-  <div id="messagestack">
-    {%- with messages = get_flashed_messages(with_categories=true) %}
-    {%- for cat, msg in messages %}
-    <div class="alert alert-{{ 'danger' if cat == 'error' else 'success' if cat == 'confirmation' else 'info' }}">
-      <span>{{ msg }}</span>
-    </div>
-    {%- endfor %}
-    {%- endwith %}
-  </div>
+  <div id="messagestack"></div>
+  {%- with messages = get_flashed_messages(with_categories=true) %}
+  {%- if messages %}<script>window.CC_FLASHES = {{ messages | tojson }};</script>{%- endif %}
+  {%- endwith %}
+  <script src="{{ url_for('static', filename='cc_messages.js') }}"></script>
   <script>
-  // craftcube.js initStack(): click- or timeout-dismiss the toasts.
+  // skins/elastic/ui.js: advanced fieldsets are wrapped into a bootstrap
+  // collapse at init (server markup stays bare, like the reference).
   (function () {
-    document.querySelectorAll('#messagestack .alert').forEach(function (el) {
-      el.addEventListener('click', function () { el.remove(); });
-      setTimeout(function () {
-        el.style.transition = 'opacity .5s';
-        el.style.opacity = '0';
-        setTimeout(function () { el.remove(); }, 600);
-      }, 6000);
-    });
-  })();
-  </script>
-  <script>
-  // skins/elastic/ui.js: fieldset.advanced tables get wrapped in .collapse
-  // and the legend toggles them ("Advanced options" starts collapsed).
-  // bootstrap's collapse boils down to the .show class here.
-  (function () {
-    document.querySelectorAll('fieldset.advanced > legend').forEach(function (lg) {
-      var box = lg.parentElement.querySelector('.collapse');
-      if (!box) return;
+    document.querySelectorAll('fieldset.advanced').forEach(function (fs) {
+      var lg = fs.querySelector('legend');
+      var table = fs.querySelector('table');
+      if (!lg || !table || table.parentElement.classList.contains('collapse')) return;
+      var box = document.createElement('div');
+      box.className = 'collapse';
+      fs.insertBefore(box, table);
+      box.appendChild(table);
+      lg.classList.add('closed');
+      lg.setAttribute('tabindex', '0');
+      lg.setAttribute('role', 'button');
+      lg.setAttribute('aria-expanded', 'false');
       function toggle() {
         var open = box.classList.toggle('show');
         lg.classList.toggle('closed', !open);

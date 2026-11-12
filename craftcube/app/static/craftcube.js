@@ -384,7 +384,6 @@
     initPopups();
     initList();
     initStandaloneMessage();
-    initStack();
     initRefresh();
     initFabs();
     toolbarInit();
@@ -1442,18 +1441,4 @@
     };
     return false;
   };
-
-  // ------------------------------------------------------------ message stack
-  function initStack() {
-    var stack = document.getElementById('messagestack');
-    if (!stack) return;
-    stack.querySelectorAll('.alert').forEach(function (el) {
-      el.addEventListener('click', function () { el.remove(); });
-      setTimeout(function () {
-        el.style.transition = 'opacity .5s';
-        el.style.opacity = '0';
-        setTimeout(function () { el.remove(); }, 600);
-      }, 6000);
-    });
-  }
 })();

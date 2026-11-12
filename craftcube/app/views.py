@@ -1166,7 +1166,9 @@ def _run_mail_action(box, command, folder, uids, dest=None):
             flash(i18n.gettext("messagemoved", g.lang, domain="messages"), "confirmation")
         elif command == "compact":
             box.compact(folder)
-            flash(i18n.gettext("folderpurged", g.lang, domain="messages"), "confirmation")
+            # folder_expunge.php: 'folderexpunged' (not folderpurged)
+            flash(i18n.gettext("folderexpunged", g.lang, domain="messages"),
+                  "confirmation")
         elif command == "empty":
             box.empty_folder(folder)
             flash(i18n.gettext("folderpurged", g.lang, domain="messages"), "confirmation")
@@ -1948,6 +1950,15 @@ def contact_edit(cid):
         data = {"name": name, "email": ", ".join(emails), "firstname": firstname,
                 "surname": surname, "vcard": util.vcard_encode(ext),
                 "words": util.contact_words(ext)}
+        # rcube_contacts::validate() requires some name or email
+        # (rcube_contacts.php:631-639 'nonamewarning'); contacts/save.php:55-58
+        # shows it as a warning and re-renders the form with the posted record
+        if not (firstname + surname + name) and not emails:
+            flash(i18n.gettext("nonamewarning", g.lang, domain="messages"),
+                  "warning")
+            return render("addressbook", "contactedit.html", row=data, ext=ext,
+                          contact_types=util.CONTACT_TYPES,
+                          contact_phone_types=util.CONTACT_PHONE_TYPES)
         # RC save.php:62-72: photo '-del-' deletes, otherwise an upload replaces
         photo = _UNSET
         if form.get("delete_photo"):
@@ -2236,14 +2247,18 @@ def response_edit(rid=None):
     if request.method == "POST":
         name = request.form.get("name", "").strip()
         body = request.form.get("body", "")
-        if name:
+        is_html = 1 if request.form.get("html") else 0
+        if name and body.strip():
             new_id = store.response_save(session["user_id"], name, body,
-                                         html=1 if request.form.get("html") else 0,
-                                         rid=rid)
+                                         html=is_html, rid=rid)
             flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
             # reference keeps the record open in the edit frame after save
             return redirect(url_for("views.responses", _edit=new_id))
+        # response_save.php:55-59: show_message('formincomplete','error') +
+        # overwrite_action('edit-response', post) - the form re-renders with
+        # the submitted values and a sticky error box
         flash(i18n.gettext("formincomplete", g.lang, domain="messages"), "error")
+        row = {"name": name, "body": body, "html": is_html, "id": rid}
     return render("settings", "responseedit.html", row=row,
                   editor_cfg=editor_config(
                       "response", store.get_user_prefs(session["user_id"])))
@@ -2287,13 +2302,24 @@ def identity_edit(iid=None):
         abort(404)
     if request.method == "POST":
         data = identity_from_form(request.form, row)
+        # identity_save.php: empty email -> warning + re-render form (#keep post)
         if not data["email"]:
-            flash(i18n.gettext("noemailwarning", g.lang, domain="messages"), "error")
-        else:
-            new_id = store.identity_save(session["user_id"], data, identity_id=iid)
-            flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
-            # reference keeps the record open in the edit frame after save
-            return redirect(url_for("views.identities", _edit=new_id or iid))
+            flash(i18n.gettext("noemailwarning", g.lang, domain="messages"),
+                  "warning")
+            return render("settings", "identityedit.html", row=data,
+                          editor_cfg=editor_config(
+                              "identity", store.get_user_prefs(session["user_id"])))
+        # identity_save.php:93-97: rcube_utils::check_email failure
+        if not util.check_email(data["email"]):
+            flash(i18n.gettext("emailformaterror", g.lang, domain="messages",
+                               vars={"email": data["email"]}), "error")
+            return render("settings", "identityedit.html", row=data,
+                          editor_cfg=editor_config(
+                              "identity", store.get_user_prefs(session["user_id"])))
+        new_id = store.identity_save(session["user_id"], data, identity_id=iid)
+        flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
+        # reference keeps the record open in the edit frame after save
+        return redirect(url_for("views.identities", _edit=new_id or iid))
     return render("settings", "identityedit.html", row=row,
                   editor_cfg=editor_config(
                       "identity", store.get_user_prefs(session["user_id"])))
@@ -2355,9 +2381,25 @@ def folders_act():
                 fvm[name] = vm
                 store.set_user_pref(session["user_id"], "folder_viewmodes", fvm)
 
+        def folder_name_error(nm):
+            # rcmail_action_settings_folder_save::run() checks
+            # (folder_save.php:48-59 + rcube_storage::folder_validate)
+            if not nm:
+                return i18n.gettext("namecannotbeempty", g.lang, domain="messages")
+            if len(nm) > 128:
+                return i18n.gettext("nametoolong", g.lang, domain="messages")
+            if "/" in nm:  # hierarchy delimiter
+                return (i18n.gettext("forbiddencharacter", g.lang,
+                                     domain="messages") + " (/)")
+            return None
+
         if act == "create":
             name = request.form.get("name", "").strip()
             parent = request.form.get("parent", "").strip()
+            error = folder_name_error(name)
+            if error:
+                flash(error, "error")
+                return redirect(url_for("views.folders_view"))
             if name:
                 full = f"{parent}/{name}" if parent else name
                 box.imap.create_folder(full)
@@ -2369,6 +2411,11 @@ def folders_act():
             old = request.form.get("folder")
             new = request.form.get("name", "").strip()
             parent = request.form.get("parent")
+            if old:
+                error = folder_name_error(new)
+                if error:
+                    flash(error, "error")
+                    return redirect(url_for("views.folders_view", _edit=old))
             if old and new:
                 base = old.rsplit("/", 1)[0] if "/" in old else ""
                 if parent is None:
@@ -2393,7 +2440,9 @@ def folders_act():
             name = request.form.get("folder")
             if name:
                 box.empty_folder(name)
-                flash(f"Folder {name} emptied.", "confirmation")
+                # folder_purge.php:55 'folderpurged' confirmation
+                flash(i18n.gettext("folderpurged", g.lang, domain="messages"),
+                      "confirmation")
         elif act in ("subscribe", "unsubscribe"):
             # reference: settings folder_subscribe/folder_unsubscribe actions
             name = request.form.get("folder")

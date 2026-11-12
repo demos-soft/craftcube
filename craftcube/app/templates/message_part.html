@@ -56,6 +56,8 @@
   </script>
   {# Elastic renders the message page with its own messagestack (the
      receiptsent flash of an autosent MDN shows here, inside the preview) #}
+  <div id="messagestack"></div>
   {% include 'includes/messages.html' %}
+  <script src="{{ url_for('static', filename='cc_messages.js') }}"></script>
 </body>
 </html>

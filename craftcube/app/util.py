@@ -865,3 +865,46 @@ def vcard_parse(text):
         elif prop == "NOTE":
             f["notes"] = val
     return f
+
+
+def check_email(email_addr):
+    """rcube_utils::check_email() (rcube_utils.php:85-159). The DNS branch
+    only runs when email_dns_check is on (it is off), so this is the whole
+    effective check on the reference."""
+    import ipaddress
+
+    if re.search(r"[\x00-\x1f\x7f\x80-\x9f]", email_addr):  # \p{Cc}
+        return False
+    if len(email_addr.encode()) > 254:
+        return False
+    pos = email_addr.rfind("@")
+    if not pos:
+        return False
+    domain_part = email_addr[pos + 1:]
+    local_part = email_addr[:pos]
+    if local_part.startswith('"'):
+        local_quoted = re.sub(r'\\(["\\])', "", local_part[1:-1])
+        if re.search(r'\\|"', local_quoted):
+            return False
+    elif (re.search(r"(^\.|\.\.|\.$)", local_part)
+          or re.search(r'[ ",:;<>@]', local_part)):
+        return False
+    m = re.match(r"^\[((IPv6:[0-9a-f:.]+)|([0-9.]+))\]$", domain_part, re.I)
+    if m:
+        try:
+            ipaddress.ip_address(re.sub(r"^IPv6:", "", m.group(1), flags=re.I))
+            return True
+        except ValueError:
+            return False
+    domain_array = domain_part.split(".")
+    if len(domain_array) < 2:
+        return False
+    for part in domain_array:
+        if not re.match(r"^((xn--)?([A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9])|([A-Za-z0-9]))$", part):
+            return False
+    last_part = domain_array[-1]
+    if not last_part.startswith("xn--") and (  # noqa: SIM103 - mirrors rcube_utils::check_email()
+            re.search(r"[^a-zA-Z0-9]", last_part)
+            or re.match(r"^[0-9]+$", last_part)):
+        return False
+    return True

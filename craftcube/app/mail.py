@@ -106,21 +106,31 @@ class Imap:
     # ------------------------------------------------------------ folders
 
     def list_folders(self, subscribed_only=False):
+        typ, data = self.conn.list()
+        subscribed = None
         if subscribed_only:
             # the reference's mail tree lists subscribed folders only
-            # (rcube_imap::listfolders(); LIST RETURN (SUBSCRIBED) is its
-            # LIST-EXTENDED path). Fall back to the full LIST if the server
-            # chokes on the extended syntax.
+            # (rcube_imap::listfolders()). PHP's LIST RETURN (SUBSCRIBED)
+            # is rejected by this Dovecot, so intersect LIST with LSUB —
+            # the fallback the reference itself falls back to.
+            subscribed = set()
             try:
-                typ, _ = self.conn._simple_command(
-                    "LIST", "RETURN", "(SUBSCRIBED)", '""', "*")
-                typ, data = self.conn._untagged_response(typ, None, "LIST")
-                if typ != "OK":
-                    typ, data = self.conn.list()
+                styp, sdata = self.conn.lsub('""', '"*"')
             except imaplib.IMAP4.error:
-                typ, data = self.conn.list()
-        else:
-            typ, data = self.conn.list()
+                styp, sdata = "NO", None
+            if styp == "OK":
+                import re as _re
+                for line in sdata or []:
+                    s = line.decode(errors="replace") if isinstance(
+                        line, bytes) else str(line)
+                    mm = _re.match(
+                        r"^\((?P<flags>[^)]*)\)\s+(?:\".\"|NIL)\s+(?P<name>.*)$",
+                        s)
+                    if mm:
+                        nm = mm.group("name").strip()
+                        if nm.startswith('"') and nm.endswith('"'):
+                            nm = nm[1:-1]
+                        subscribed.add(nm)
         out = []
         if typ != "OK":
             return out
@@ -151,6 +161,10 @@ class Imap:
                     special = "junk"
             out.append({"name": name, "flags": flags, "special": special,
                         "inferior": "\\Noselect" in flags})
+        if subscribed is not None:
+            # intersect with LSUB; INBOX is implicitly subscribed
+            out = [f for f in out
+                   if f["name"] in subscribed or f["name"].upper() == "INBOX"]
         # Roundcube's list_sorted(): INBOX first, then special mail folders in
         # config mail_folders order (Drafts, Sent, Junk, Trash, Archive), then
         # remaining folders alphabetically.
