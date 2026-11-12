@@ -164,15 +164,29 @@ def mail():
     folder = request.args.get("_mbox") or "INBOX"
     page = int(request.args.get("_page", 1) or 1)
     sort = request.args.get("_sort") or "date"
-    search = request.args.get("_search") or ""
+    order = request.args.get("_sort_order") or "desc"
+    search = request.args.get("_q") or request.args.get("_search") or ""
+    mods = []
+    for m in request.args.getlist("_sm") + (request.args.get("_sm_csv") or "").split(","):
+        mods += [x for x in m.split(",") if x]
+    sfilter = request.args.get("_sf") or "all"
+    sinterval = request.args.get("_si") or "all"
+    sscope = request.args.get("_ss") or "base"
+    searching = bool(search or sfilter != "all" or sinterval != "all")
     try:
-        listing = box.message_list(folder, page=page, sort=sort, search=search)
+        listing = box.message_list(folder, page=page, sort=sort, order=order,
+                                   search=search or None, search_mods=mods or None,
+                                   search_filter=sfilter, search_interval=sinterval,
+                                   search_scope=sscope if searching else "base")
     except MailError as e:
         flash(str(e), "error")
         listing = {"items": [], "page": 1, "pages": 1, "total": 0, "first": 0, "last": 0, "uids": []}
     uid = request.args.get("_uid")
     return render("mail", "mail.html", folder=folder, listing=listing,
-                  sort=sort, search=search, preview_uid=uid,
+                  sort=sort, order=order, search=search,
+                  search_mods=mods, search_filter=sfilter,
+                  search_interval=sinterval, search_scope=sscope,
+                  searching=searching, preview_uid=uid,
                   message_count=listing["total"])
 
 

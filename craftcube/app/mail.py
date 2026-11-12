@@ -18,12 +18,33 @@ from .util import parse_header_date, format_address
 FETCH_ITEMS = "(FLAGS INTERNALDATE RFC822.SIZE ENVELOPE BODYSTRUCTURE)"
 
 SORTS = {
+    "arrival": (lambda m: m["uid"] or 0, True),
     "date": (lambda m: m["date"].timestamp() if m.get("date") else 0, True),
     "subject": (lambda m: (m.get("subject") or "").lower(), False),
     "from": (lambda m: (m.get("from") or "").lower(), False),
     "to": (lambda m: (m.get("to") or "").lower(), False),
+    "cc": (lambda m: (m.get("cc") or "").lower(), False),
+    "fromto": (lambda m: (m.get("from") or m.get("to") or "").lower(), False),
     "size": (lambda m: m.get("size") or 0, True),
 }
+
+SEARCH_FILTERS = {
+    "all": None,
+    "unread": ["UNSEEN"],
+    "flagged": ["FLAGGED"],
+    "answered": ["ANSWERED"],
+    "unanswered": ["UNANSWERED"],
+}
+
+SEARCH_INTERVALS = {
+    "all": None,
+    "today": ["SINCE"],   # today
+    "last7": ["SINCE"],   # -7d
+    "last14": ["SINCE"],
+    "last30": ["SINCE"],
+    "thismonth": None,    # implemented specially
+}
+
 
 
 class MailError(Exception):
@@ -223,8 +244,8 @@ def _parse_fetch(item):
     import re
     uid_m = re.search(r"UID (\d+)", meta)
     size_m = re.search(r"RFC822\.SIZE (\d+)", meta)
-    flags = re.findall(r"\\[A-Za-z]+|\\\\Seen", meta)
-    flags = imaplib.ParseFlags(meta.encode()) if "FLAGS" in meta else []
+    flags = [f.decode() if isinstance(f, bytes) else f
+             for f in (imaplib.ParseFlags(meta.encode()) if "FLAGS" in meta else [])]
     m = {
         "uid": int(uid_m.group(1)) if uid_m else None,
         "size": int(size_m.group(1)) if size_m else 0,
@@ -316,34 +337,112 @@ class Mailbox:
                 return f["name"]
         return conf
 
-    def message_list(self, folder, page=1, page_size=20, sort="date",
-                     search=None, scope_subject=True):
-        total = self.imap.select(folder, readonly=True)
-        if search:
-            crit = []
-            if scope_subject:
-                crit = ["TEXT", _q(search)]
+    def message_list(self, folder, page=1, page_size=20, sort="date", order="desc",
+                     search=None, search_mods=None, search_filter="all",
+                     search_interval="all", search_scope="base"):
+        if search_scope == "all":
+            return self._search_all_folders(page, page_size, sort, order, search,
+                                            search_mods, search_filter, search_interval)
+        if search_scope == "sub":
+            names = [f["name"] for f in self.imap.list_folders()
+                     if f["name"] == folder or f["name"].startswith(folder + "/")]
+            merged = []
+            for name in names:
+                d = self._list_one(name, page_size, search, search_mods,
+                                   search_filter, search_interval)
+                for m in d["items"]:
+                    m["folder"] = name
+                merged.extend(d["items"])
+            return self._paginate(merged, page, page_size, sort, order)
+        return self._list_one(folder, page_size, search, search_mods,
+                              search_filter, search_interval, page=page,
+                              sort=sort, order=order)
+
+    def _search_criteria(self, search, mods, search_filter, search_interval):
+        crit = []
+        if search_filter and search_filter != "all":
+            crit += SEARCH_FILTERS.get(search_filter) or []
+        if search_interval and search_interval != "all":
+            import datetime
+            today = datetime.date.today()
+            if search_interval == "today":
+                since = today
+            elif search_interval == "thismonth":
+                since = today.replace(day=1)
             else:
-                crit = ["SUBJECT", _q(search)]
-            uids = self.imap.uid_search(crit)
-        else:
-            uids = self.imap.uid_search(["ALL"])
-        # fetch envelope info for a bounded window (newest last)
+                days = {"last7": 7, "last14": 14, "last30": 30}.get(search_interval, 7)
+                since = today - datetime.timedelta(days=days)
+            crit += ["SINCE", since.strftime("%d-%b-%Y")]
+        if search:
+            mods = mods or ["subject", "from", "to", "body"]
+            fields = {"subject": "SUBJECT", "from": "FROM", "to": "TO",
+                      "cc": "CC", "body": "BODY", "text": "TEXT"}
+            terms = []
+            for mod in mods:
+                f = fields.get(mod)
+                if f and f not in terms:
+                    terms += [f, _q(search)]
+            if not terms:
+                terms = ["TEXT", _q(search)]
+            # interleaved right-associated OR chain:
+            # OR SUBJECT "x" OR FROM "x" OR TO "x" BODY "x"
+            if len(terms) > 2:
+                pairs = [terms[i:i + 2] for i in range(0, len(terms), 2)]
+                chain = []
+                for idx, pair in enumerate(pairs):
+                    if idx < len(pairs) - 1:
+                        chain.append("OR")
+                    chain += pair
+                crit += chain
+            else:
+                crit += terms
+        return crit or ["ALL"]
+
+    def _list_one(self, folder, page_size, search=None, mods=None,
+                  search_filter="all", search_interval="all", page=1,
+                  sort="date", order="desc"):
+        total = self.imap.select(folder, readonly=True)
+        crit = self._search_criteria(search, mods, search_filter, search_interval)
+        uids = self.imap.uid_search(crit)
         MAX_SCAN = 400
         window = uids[-MAX_SCAN:]
         msgs = self._enrich(folder, window)
+        return self._paginate(msgs, page, page_size, sort, order, uidvalidity=total)
+
+    def _paginate(self, msgs, page, page_size, sort, order, uidvalidity=0):
         key, _asc = SORTS.get(sort, SORTS["date"])
-        msgs.sort(key=key, reverse=(sort == "date"))
-        pages = max(1, (len(msgs) + page_size - 1) // page_size)
+        reverse = order != "asc"
+        try:
+            msgs.sort(key=key, reverse=reverse)
+        except TypeError:
+            msgs.sort(key=lambda m: str(key(m)), reverse=reverse)
+        pages = max(1, (len(msgs) + page_size - 1) // page_size) if page_size else 1
         page = max(1, min(page, pages))
-        start = (page - 1) * page_size
-        items = msgs[start:start + page_size]
+        start = (page - 1) * (page_size or len(msgs) or 1)
+        items = msgs[start:start + (page_size or len(msgs))]
         return {
             "items": items, "page": page, "pages": pages,
             "total": len(msgs), "first": start + 1 if msgs else 0,
-            "last": start + len(items), "uidvalidity": total,
+            "last": start + len(items), "uidvalidity": uidvalidity,
             "uids": [m["uid"] for m in msgs],
         }
+
+    def _search_all_folders(self, page, page_size, sort, order, search, mods,
+                            search_filter, search_interval):
+        merged = []
+        for f in self.imap.list_folders():
+            if f.get("inferior"):
+                continue
+            try:
+                d = self._list_one(f["name"], None, search, mods,
+                                   search_filter, search_interval)
+            except MailError:
+                continue
+            for m in d["items"]:
+                m["folder"] = f["name"]
+            merged.extend(d["items"])
+        return self._paginate(merged, page, page_size, sort, order)
+
 
     def _enrich(self, folder, uids):
         """Envelope data is unreliable to parse from raw IMAP FETCH meta, so we
@@ -353,11 +452,12 @@ class Mailbox:
         seq = ",".join(str(u) for u in uids)
         typ, data = self.imap.conn.uid(
             "FETCH", seq,
-            "(FLAGS INTERNALDATE RFC822.SIZE BODY.PEEK[HEADER.FIELDS (FROM TO SUBJECT DATE MESSAGE-ID IN-REPLY-TO CONTENT-TYPE)])")
+            "(FLAGS INTERNALDATE RFC822.SIZE BODYSTRUCTURE BODY.PEEK[HEADER.FIELDS (FROM TO CC SUBJECT DATE MESSAGE-ID IN-REPLY-TO CONTENT-TYPE)])")
         out = []
         if typ != "OK":
             return out
         import re
+        sent = self.special("sent")
         for item in _iter_fetch(data):
             if not isinstance(item, tuple):
                 continue
@@ -365,11 +465,21 @@ class Mailbox:
             raw = item[1] if len(item) > 1 and item[1] else b""
             uid_m = re.search(r"UID (\d+)", meta)
             size_m = re.search(r"RFC822\.SIZE (\d+)", meta)
-            flags = imaplib.ParseFlags(meta.encode()) if "FLAGS" in meta else []
+            flags = [f.decode() if isinstance(f, bytes) else f
+                     for f in (imaplib.ParseFlags(meta.encode()) if "FLAGS" in meta else [])]
             msg = email.message_from_bytes(raw)
             d = parse_header_date(msg)
-            info = _envelope_from_message(msg)
             ct = (msg.get_content_type() or "")
+            # attachment hint from BODYSTRUCTURE: disposition "attachment" or a
+            # filename parameter anywhere in the structure
+            attach = bool(re.search(r'"attachment"|\("application', meta)) or \
+                ct in ("multipart/mixed", "message/rfc822") or bool(msg.get_filename())
+            subject = _decode_header(msg.get("Subject", "")) or ""
+            in_reply_to = _decode_header(msg.get("In-Reply-To", "") or "") \
+                or _decode_header(msg.get("References", "") or "")
+            info = _envelope_from_message(msg)
+            # Elastic shows sender in normal folders, recipients in Sent
+            fromto = info["to"] if (sent and folder == sent) else info["from"]
             out.append({
                 "uid": int(uid_m.group(1)) if uid_m else None,
                 "size": int(size_m.group(1)) if size_m else 0,
@@ -379,8 +489,12 @@ class Mailbox:
                 "deleted": "\\Deleted" in flags,
                 "answered": "\\Answered" in flags,
                 "date": d,
-                "attachments": "multipart/mixed" in ct or bool(msg.get_content_disposition() == "attachment"),
-                **info,
+                "attachments": attach,
+                "replied": bool(in_reply_to.strip()),
+                "forwarded": subject.lower().lstrip(" \t").startswith(("fwd:", "fw:", "aw:", "wg:")),
+                "subject": subject,
+                "fromto": fromto,
+                **{k: v for k, v in info.items() if k not in ("subject",)},
             })
         return out
 
@@ -396,6 +510,14 @@ class Mailbox:
         if typ == "OK" and data and data[0]:
             s = data[0].decode(errors="replace") if isinstance(data[0], bytes) else str(data[0])
             return "\\Seen" in s
+        return False
+
+    def flag_state(self, folder, uid):
+        self.imap.select(folder)
+        typ, data = self.imap.conn.uid("FETCH", str(uid), "(FLAGS)")
+        if typ == "OK" and data and data[0]:
+            s = data[0].decode(errors="replace") if isinstance(data[0], bytes) else str(data[0])
+            return "\\Flagged" in s
         return False
 
     def raw_message(self, folder, uid):
