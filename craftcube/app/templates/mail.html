@@ -44,7 +44,7 @@
           <li role="menuitem"><a href="#select" class="select{{ ' active' }}" data-popup="listselect-menu"
               title="Select" aria-haspopup="true" aria-expanded="false" aria-owns="listselect-menu"><span class="inner">Select</span></a></li>
           {% if not preview_uid %}
-          <li role="menuitem"><a href="#threads" class="threads{{ ' disabled' if not listing.items }}" data-popup="threadselect-menu"
+          <li role="menuitem"><a href="#threads" class="threads disabled" data-popup="threadselect-menu"
               title="Threads" aria-haspopup="true" aria-expanded="false" aria-owns="threadselect-menu"><span class="inner">Threads</span></a></li>
           {% endif %}
           <li role="menuitem"><a href="#list-options" class="options active" id="listmenulink" data-popup="listoptions-menu"
@@ -205,7 +205,7 @@
         </form>
       </div>
 
-      <div class="pagenav menu pagenav-list{{ ' expanded' if listing.pages > 1 }} footer small"
+      <div class="pagenav menu footer small"
            role="toolbar" aria-label="List navigation">
         <a href="{{ url_for('views.mail', _mbox=folder, _page=1, _sort=sort, _sort_order=order, _q=search) }}"
            class="firstpage{{ ' disabled' if listing.page <= 1 }}" title="Show first page"><span class="inner">First</span></a>
@@ -214,7 +214,7 @@
         <span class="pagenav-text" aria-live="polite" aria-relevant="text">
           {%- if listing.total %}Messages {{ listing.first }} to {{ listing.last }} of {{ listing.total }}{% else %}&nbsp;{% endif -%}
         </span>
-        <input class="form-control" type="text" size="3" disabled title="Current page" value="{{ listing.page }}">
+        <input class="form-control rcpagejumper" type="text" size="3"{{ '' if listing.pages > 1 else ' disabled' }} title="Current page" value="{{ listing.page }}">
         <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.page+1, _sort=sort, _sort_order=order, _q=search) }}"
            class="nextpage{{ ' disabled' if listing.page >= listing.pages }}" title="Show next page"><span class="inner">Next</span></a>
         <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.pages, _sort=sort, _sort_order=order, _q=search) }}"
@@ -223,7 +223,7 @@
     </div>
 
     <!-- message preview -->
-    <div id="layout-content"{{ ' class="selected"'|safe if preview_uid }}>
+    <div id="layout-content">
       <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
         <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
@@ -253,8 +253,8 @@
     </div>
 
     <div id="listselect-menu" class="popupmenu">
-      <h3 class="voice">Selection tools</h3>
-      <ul class="menu listing" role="menu">
+      <h3 id="aria-label-listselect-menu" class="voice">List selection menu</h3>
+      <ul class="menu listing" role="menu" aria-labelledby="aria-label-listselect-menu">
         <li role="menuitem"><a class="selection toggle-link" href="#" id="list-toggle-button">Selection</a></li>
         <li role="menuitem"><a class="select all" href="#" data-select="all">All</a></li>
         <li role="menuitem"><a class="select page" href="#" data-select="page">Current page</a></li>
@@ -304,8 +304,8 @@
     </div>
 
     <div id="threadselect-menu" class="popupmenu">
-      <h3 class="voice">Threads</h3>
-      <ul class="menu listing" role="menu">
+      <h3 id="aria-label-threadselectmenu" class="voice">Threads listing menu</h3>
+      <ul class="menu listing" role="menu" aria-labelledby="aria-label-threadselectmenu">
         <li role="menuitem"><a class="expand unread" href="#" data-thread="unread"><span>Expand Unread</span></a></li>
         <li role="menuitem"><a class="expand all" href="#" data-thread="all"><span>Expand All</span></a></li>
         <li role="menuitem"><a class="collapse all" href="#" data-thread="none"><span>Collapse All</span></a></li>
