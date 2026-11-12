@@ -185,7 +185,7 @@
                     <span class="msgicon status{{ ' unread' if not m.seen }}{{ ' replied' if m.replied }}{{ ' forwarded' if m.forwarded }}"
                           title="{{ 'Read' if m.seen else 'Unread' }}"></span>
                     <a href="{{ url_for('views.message_view', _mbox=m.folder or folder, _uid=m.uid) }}">
-                      <span>{{ m.subject }}</span></a>
+                      <span>{{ m.subject or '(no subject)' }}</span></a>
                   </span>
                 </td>
                 <td class="flags">

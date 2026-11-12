@@ -16,10 +16,6 @@ body.task-login #layout-content { text-align: center; width: 100%; display: bloc
 
 /* ---- message list: server-rendered bits the reference emits via JS ---- */
 table.messagelist { table-layout: auto; width: 100%; }
-.messagelist td.subject > a { display: flex; align-items: center; text-decoration: none; }
-.messagelist td.subject span.subject { flex: 2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.messagelist td.subject span.msgicon { float: none; display: inline-block; }
-.messagelist td.subject span.subject:empty:before { content: "(no subject)"; font-style: italic; }
 
 /* the stock skin hides .messagelist>thead (sorting lives in the list
    Options popup); other server-rendered listings keep their headers */

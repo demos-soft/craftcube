@@ -107,7 +107,10 @@ def fmt_pref_time(dt, prefs):
     return fmt
 
 def fmt_pref_date(dt, prefs):
-    """Message view date honouring date_format/pretty_date/time_format prefs."""
+    """Message view date honouring date_format/time_format prefs.
+    The reference renders the header date with an explicit date_long format
+    (show.php: format_date($date, config['date_long'])), so pretty-date has
+    no effect here — it only affects listing dates (format_date(null))."""
     if dt is None:
         return ""
     prefs = prefs or {}
@@ -115,9 +118,6 @@ def fmt_pref_date(dt, prefs):
     df = prefs.get("date_format", "long")
     base = php_strftime(df, dt) if any(c in df for c in "Yydj") \
         else dt.strftime(DATE_FORMATS.get(df, DATE_FORMATS["long"]))
-    if prefs.get("pretty_date"):
-        # Roundcube 'pretty' style: weekday + human date + time
-        return dt.strftime("%a, ") + base + " " + fmt_pref_time(dt, prefs)
     return base + " " + fmt_pref_time(dt, prefs) \
         if any(c in df for c in "Yydj") and prefs.get("show_pref_time", 1) \
         else base
