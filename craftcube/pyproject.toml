@@ -10,6 +10,9 @@ target-version = "py311"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = [
+    "staging: browser tests against the live staging instance (Selenium)",
+]
 
 [tool.ruff.lint]
 select = [
