@@ -1,0 +1,42 @@
+[project]
+name = "craftcube"
+version = "1.0.0"
+description = "CraftCube — a Python re-implementation of the Roundcube Webmail UI"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "E4",   # pycodestyle import layout
+    "E7",   # pycodestyle statement/layout
+    "E501", # line length
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes (unused imports/vars, undefined names)
+    "I",    # isort
+    "UP",   # pyupgrade
+    "B",    # bugbear (likely bugs: loop var capture, mutable defaults, ...)
+    "C4",   # comprehensions
+    "SIM",  # simplify
+    "RET",  # early-return / redundant control flow
+    "S",    # bandit security checks
+    "RUF",  # ruff-specific
+]
+ignore = [
+    "S101", # assert used in tests is fine
+    "S104", # 0.0.0.0 bind is required by the Docker harness
+    "S105", # hardcoded password-like strings exist as config defaults
+    "S108", # /tmp paths are used by the dev harness only
+    "SIM105", # contextlib.suppress is less readable for narrow fallbacks
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Preference catalogues are transcriptions of Roundcube's defaults and
+# language strings: long single-line entries are intentional, and locale
+# display names carry genuine non-ASCII punctuation (CLDR "Oʻzbekcha").
+"app/prefs_data.py" = ["E501", "RUF001"]
+"app/prefs_sections.py" = ["E501"]
+"app/i18n.py" = ["E501"]
+"tests/*" = ["S"]
