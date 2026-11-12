@@ -99,13 +99,53 @@ spacing, selected-row highlight class.
 - Reference Roundcube lives in `staging/k8s3/roundcube-reference.yaml`
   (test fixture, not part of the product chart).
 
+## Settings frame, info-box and validation round (2026-11-03, second pass)
+- Preference-frame layout ported to the Elastic/Bootstrap contract
+  (`tr.form-group.row`, `td.title.col-sm-6`/`td.col-sm-6`, custom-control
+  switches, `custom-select form-control pretty-select`, fontgroup
+  input-group, mailto colspan row, client-side advanced-fieldset collapse).
+  Row geometry is pixel-identical to the reference frame (pitch 39px,
+  matching y-offsets on the compose section; Special Folders frame A/B:
+  structure, control types, widths and colours all match).
+- Timezone dropdown generated at runtime exactly like PHP
+  (`DateTimeZone::listIdentifiers` + DST fold + ordering): 420/420 options
+  identical to the live reference.
+- `prefer_html` off ⇒ `show_images` disabled + forced to “none” (reference
+  coupling mirrored in render and in browser-like persistence).
+- Folder tree/special-folder selectors use LIST ∩ LSUB (+INBOX), matching
+  the reference tree (`INBOX`, `Drafts`, `Sent` in the shared mailbox).
+- Info boxes are now the client-side `#messagestack` (port of
+  `rcmail.display_message`: 5 s default, 10 s error/warning, dedupe, click
+  dismiss, framed→parent forwarding, elastic icon/span markup). Live DOM of
+  a triggered box matches the reference.
+- Server-side validation parity, A/B-verified exact text/type/value
+  retention: `noemailwarning`, `emailformaterror` (incl. the PHP
+  `check_email()` edge rejecting `postmaster@localhost`), `formincomplete`,
+  `nonamewarning`, `namecannotbeempty`, `nametoolong`, `forbiddencharacter`;
+  `folderpurged` / `folderexpunged` confirmations. Forms re-render with the
+  submitted values like the reference.
+- Default identity is seeded with an empty display name (like
+  `rcmail::startup`); the identities list renders `<email>` exactly as
+  Elastic.
+- Visual verdict (browser screenshots, light mode; dark palettes are
+  byte-identical vendored CSS): login, settings landing, all 8 preference
+  frames, Special Folders frame, identities, contacts, mail list, message
+  view, compose, info box. Remaining accepted divergences: TinyMCE strip vs
+  the reference's minimal built-in editor on compose, direct-URL page
+  shapes, About unicorn block.
+- Round 2 committed as `5e9624a` (frame + LSUB + info-box + validation),
+  `1b8c5fe` (tzdata), `ad6ccfd` (row markup, autofocus, info-box DOM,
+  identity seed).
+
 ## Quality gates
 - pytest: 108 passed · ruff: all checks passed · eslint: clean (config warning only)
 - Cluster: craftcube / craftcube-dovecot / craftcube-mailpit / roundcube-reference
   all 1/1 ready; both web UIs HTTP 200.
 
 ## Not (yet) reverse-engineered
-Thread expand/collapse UI (SORT=REFERENCES-style grouping + depth
-indentation implemented and live-verified per folder), caching layer, plugins,
-Sieve, spell check, PGP, message
-import/export, autolink behavior, `mailto_handler` behavior.
+Roundcube-style plugin infrastructure (requested next), thread
+expand/collapse UI (SORT=REFERENCES-style grouping + depth indentation
+implemented and live-verified per folder), caching layer, Sieve, spell
+check, PGP, autolink behavior, `mailto_handler` behavior.
+(Message import/export and the zipdownload export formats are done — see
+the export/import parity section.)
