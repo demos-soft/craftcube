@@ -39,7 +39,7 @@ def make_box(monkeypatch, store, user):
 
 
 def test_mail_pagesize_controls_listing(client, store, user, make_box):
-    for size in ("1", "10", "43", "50"):
+    for size in ("2", "10", "43", "50"):
         store.set_user_prefs(user, {"mail_pagesize": size})
         make_box.prefs = {"mail_pagesize": size}
         client.get("/mail?_mbox=INBOX")

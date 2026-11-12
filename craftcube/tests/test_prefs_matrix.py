@@ -135,6 +135,15 @@ def test_every_select_option_round_trips(client, store, user):
                     assert out[key] == value, (section, key, value)
 
 
+def test_pagesize_values_are_clamped_like_reference():
+    # prefs_save.php: max(2, input) and max_pagesize 200
+    for section, field in (("mailbox", "_mail_pagesize"), ("addressbook", "_addressbook_pagesize")):
+        for raw, expected in (("1", "2"), ("0", "2"), ("abc", "2"), ("201", "200"), ("200", "200"), ("7", "7")):
+            out = prefs_sections.apply_form(dict(prefs_sections.DEFAULTS), {"_section": section, field: raw})
+            key = field[1:]
+            assert out[key] == expected, (section, raw, out[key])
+
+
 def test_mailview_prefer_html_show_images_coupling(client, store, user):
     prefs = {"prefer_html": 1, "show_images": "2"}
     out = prefs_sections.apply_form(

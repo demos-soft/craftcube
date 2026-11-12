@@ -549,7 +549,15 @@ def apply_form(prefs, form):
             prefs[key] = form[name].strip()
         elif key in CHECKBOXES:
             prefs[key] = 1 if form[name] == "1" else 0
-        elif key in SELECTS or key in TEXTS or key == "default_addressbook":
+        elif key in TEXTS:
+            # prefs_save.php: max(2, int) and max_pagesize 200 for both
+            # mail_pagesize and addressbook_pagesize
+            try:
+                n = int(form[name].strip())
+            except (TypeError, ValueError):
+                n = 0
+            prefs[key] = str(max(2, min(n, 200)))
+        elif key in SELECTS or key == "default_addressbook":
             prefs[key] = form[name].strip()
     # unchecked boxes are omitted by the browser: clear the section's boxes
     section = form.get("_section", "")
