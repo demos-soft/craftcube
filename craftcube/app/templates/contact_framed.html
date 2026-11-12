@@ -29,8 +29,8 @@
           </div>
         </div>
         <div class="formbuttons">
-          <a class="btn btn-secondary icon edit" href="{{ url_for('views.contact_edit', cid=row.contact_id) }}">Edit</a>
-          <a class="btn btn-secondary icon write" href="{{ url_for('views.compose', _to=row.email) }}">Compose</a>
+          <a class="btn btn-secondary icon edit" href="{{ url_for('views.contact_edit', cid=row.contact_id) }}">{{ 'Edit'|lc }}</a>
+          <a class="btn btn-secondary icon write" href="{{ url_for('views.compose', _to=row.email) }}">{{ 'Compose'|lc }}</a>
         </div>
       </div>
     </div>

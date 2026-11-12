@@ -1,21 +1,21 @@
 {% include "includes/layout.html" %}
 {% if not extwin %}{% include "includes/menu.html" %}{% endif %}
 
-    <h1 class="voice">Compose</h1>
+    <h1 class="voice">{{ 'Compose'|lc }}</h1>
 
     <!-- compose options and attachments -->
     <div id="layout-sidebar" class="listbox sidebar-right">
       <div class="header">
-        <a class="button icon back-content-button" href="#content" data-hidden="big"><span class="inner">Back</span></a>
-        <span class="header-title all-sizes">Options and attachments</span>
+        <a class="button icon back-content-button" href="#content" data-hidden="big"><span class="inner">{{ 'Back'|lc }}</span></a>
+        <span class="header-title all-sizes">{{ 'Options and attachments'|lc }}</span>
       </div>
       <div class="scroller">
         <div id="compose-attachments" class="file-upload droptarget" role="region" aria-labelledby="aria-label-compose-attachments">
-          <h2 id="aria-label-compose-attachments" class="voice">Attachments</h2>
+          <h2 id="aria-label-compose-attachments" class="voice">{{ 'Attachments'|lc }}</h2>
           <div class="upload-form">
             <div class="hint">Maximum allowed file size is 5.0 MB</div>
             <input type="file" name="_file" id="compose-file" multiple style="display:none">
-            <button type="button" class="btn btn-secondary attach" onclick="document.getElementById('compose-file').click()">Attach a file</button>
+            <button type="button" class="btn btn-secondary attach" onclick="document.getElementById('compose-file').click()">{{ 'Attach a file'|lc }}</button>
           </div>
           <ul class="attachmentslist" id="attachment-list">
             {% for a in attachments_kept %}
@@ -24,9 +24,9 @@
           </ul>
         </div>
         <div id="compose-options" class="formcontent" role="region" aria-labelledby="aria-label-composeoptions">
-          <h2 id="aria-label-composeoptions" class="voice">Composition options</h2>
+          <h2 id="aria-label-composeoptions" class="voice">{{ 'Composition options'|lc }}</h2>
           <div class="form-group row form-check">
-            <label for="compose-mdn" class="col-form-label col-6">Return receipt</label>
+            <label for="compose-mdn" class="col-form-label col-6">{{ 'Return receipt'|lc }}</label>
             <div class="col-6 form-check">
               <div class="custom-control custom-switch">
                 <input name="_mdn" id="compose-mdn" tabindex="2" class="form-check-input custom-control-input" value="1" type="checkbox"{{ ' checked' if prefill.mdn }}>
@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="form-group row form-check">
-            <label for="compose-dsn" class="col-form-label col-6">Delivery status notification</label>
+            <label for="compose-dsn" class="col-form-label col-6">{{ 'Delivery status notification'|lc }}</label>
             <div class="col-6 form-check">
               <div class="custom-control custom-switch">
                 <input name="_dsn" id="compose-dsn" tabindex="2" class="form-check-input custom-control-input" value="1" type="checkbox"{{ ' checked' if prefill.dsn }}>
@@ -44,7 +44,7 @@
             </div>
           </div>
           <div class="form-group row form-check">
-            <label for="compose-keep-formatting" class="col-form-label col-6">Keep formatting</label>
+            <label for="compose-keep-formatting" class="col-form-label col-6">{{ 'Keep formatting'|lc }}</label>
             <div class="col-6 form-check">
               <div class="custom-control custom-switch">
                 <input name="_keepformatting" id="compose-keep-formatting" tabindex="2" class="form-check-input custom-control-input" value="1" type="checkbox"{{ ' checked' if keep_formatting }}>
@@ -53,19 +53,19 @@
             </div>
           </div>
           <div class="form-group row">
-            <label for="compose-priority" class="col-form-label col-6">Priority</label>
+            <label for="compose-priority" class="col-form-label col-6">{{ 'Priority'|lc }}</label>
             <div class="col-6">
               <select id="compose-priority" name="_priority" class="custom-select">
-                <option value="5"{{ ' selected' if prefill.priority == '5' }}>Lowest</option>
-                <option value="4"{{ ' selected' if prefill.priority == '4' }}>Low</option>
-                <option value="3"{{ ' selected' if prefill.priority in ('3', '', none) }}>Normal</option>
-                <option value="2"{{ ' selected' if prefill.priority == '2' }}>High</option>
-                <option value="1"{{ ' selected' if prefill.priority == '1' }}>Highest</option>
+                <option value="5"{{ ' selected' if prefill.priority == '5' }}>{{ 'Lowest'|lc }}</option>
+                <option value="4"{{ ' selected' if prefill.priority == '4' }}>{{ 'Low'|lc }}</option>
+                <option value="3"{{ ' selected' if prefill.priority in ('3', '', none) }}>{{ 'Normal'|lc }}</option>
+                <option value="2"{{ ' selected' if prefill.priority == '2' }}>{{ 'High'|lc }}</option>
+                <option value="1"{{ ' selected' if prefill.priority == '1' }}>{{ 'Highest'|lc }}</option>
               </select>
             </div>
           </div>
           <div class="form-group row">
-            <label for="compose-store-target" class="col-form-label col-6">Save sent message in</label>
+            <label for="compose-store-target" class="col-form-label col-6">{{ 'Save sent message in'|lc }}</label>
             <div class="col-6">
               <select id="compose-store-target" name="_store_target" class="custom-select">
                 <option value="">- don't save -</option>
@@ -80,27 +80,27 @@
     </div>
 
     <div id="layout-content" class="listbox selected" role="main">
-      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
+      <h2 id="aria-label-toolbar" class="voice">{{ 'Application toolbar'|lc }}</h2>
       <div class="header">
-        <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
-        <span class="header-title">Compose</span>
+        <a class="button icon task-menu-button" href="#menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
+        <span class="header-title">{{ 'Compose'|lc }}</span>
         <div id="messagetoolbar" class="toolbar menu" role="toolbar" aria-labelledby="aria-label-toolbar">
           <a class="options" href="#options" onclick="document.getElementById('layout-sidebar').classList.add('selected')" data-hidden="big">
-            <span class="inner">Options and attachments</span>
+            <span class="inner">{{ 'Options and attachments'|lc }}</span>
           </a>
-          <a class="button save draft" id="tb-save" href="#" title="Save as draft" tabindex="2"
+          <a class="button save draft" id="tb-save" href="#" title="{{ 'Save as draft'|lc }}" tabindex="2"
              onclick="var f=document.getElementById('composeform'),i=document.createElement('input');i.type='hidden';i.name='_action';i.value='save';f.appendChild(i);f.submit();return false;">
-            <span class="inner">Save</span>
+            <span class="inner">{{ 'Save'|lc }}</span>
           </a>
           <span class="spacer"></span>
-          <a class="button attach" id="tb-attach" href="#" title="Attach a file" tabindex="2"
-             onclick="document.getElementById('compose-file').click(); return false;"><span class="inner">Attach</span></a>
-          <a class="button signature disabled" id="tb-signature" href="#" title="Insert signature" aria-disabled="true" tabindex="-1"><span class="inner">Signature</span></a>
-          <a href="#responses" id="responsesmenulink" class="button responses" title="Insert a response"
-             unselectable="on" tabindex="2" data-popup="responses-menu"><span class="inner">Responses</span></a>
+          <a class="button attach" id="tb-attach" href="#" title="{{ 'Attach a file'|lc }}" tabindex="2"
+             onclick="document.getElementById('compose-file').click(); return false;"><span class="inner">{{ 'Attach'|lc }}</span></a>
+          <a class="button signature disabled" id="tb-signature" href="#" title="{{ 'Insert signature'|lc }}" aria-disabled="true" tabindex="-1"><span class="inner">{{ 'Signature'|lc }}</span></a>
+          <a href="#responses" id="responsesmenulink" class="button responses" title="{{ 'Insert a response'|lc }}"
+             unselectable="on" tabindex="2" data-popup="responses-menu"><span class="inner">{{ 'Responses'|lc }}</span></a>
           <span class="dropbutton">
-            <a class="button spellcheck" id="tb-spell" href="#" title="Check spelling" tabindex="2"><span class="inner">Spell</span></a>
-            <a href="#languages" id="spellmenulink" class="button dropdown" title="Language" tabindex="2" data-popup="spell-menu"><span class="inner">Language</span></a>
+            <a class="button spellcheck" id="tb-spell" href="#" title="{{ 'Check spelling'|lc }}" tabindex="2"><span class="inner">{{ 'Spell'|lc }}</span></a>
+            <a href="#languages" id="spellmenulink" class="button dropdown" title="{{ 'Language'|lc }}" tabindex="2" data-popup="spell-menu"><span class="inner">{{ 'Language'|lc }}</span></a>
           </span>
         </div>
       </div>
@@ -108,14 +108,14 @@
       <div id="compose-content" class="formcontainer content">
       <!-- attachment options popup (compose.html #attachmentmenu) -->
       <div id="attachmentmenu" class="popupmenu">
-        <h3 id="aria-label-attachmentmenu" class="voice">Attachment options</h3>
+        <h3 id="aria-label-attachmentmenu" class="voice">{{ 'Attachment options'|lc }}</h3>
         <ul class="menu listing" role="menu" aria-labelledby="aria-label-attachmentmenu">
           <li role="menuitem"><a class="extwin disabled" id="attachmenuopen" role="button" tabindex="-1"
-              aria-disabled="true" href="#"><span>Open</span></a></li>
+              aria-disabled="true" href="#"><span>{{ 'Open'|lc }}</span></a></li>
           <li role="menuitem"><a class="download disabled" id="attachmenudownload" role="button" tabindex="-1"
-              aria-disabled="true" href="#"><span>Download</span></a></li>
+              aria-disabled="true" href="#"><span>{{ 'Download'|lc }}</span></a></li>
           <li role="menuitem"><a class="rename disabled" id="attachmenurename" role="button" tabindex="-1"
-              aria-disabled="true" href="#"><span>Rename</span></a></li>
+              aria-disabled="true" href="#"><span>{{ 'Rename'|lc }}</span></a></li>
         </ul>
       </div>
 
@@ -128,9 +128,9 @@
         </ul>
       </div>
       <div id="responses-menu" class="popupmenu">
-        <h3 id="aria-label-responsesmenu" class="voice">Canned responses menu</h3>
+        <h3 id="aria-label-responsesmenu" class="voice">{{ 'Canned responses menu'|lc }}</h3>
         <ul class="menu listing" role="menu" aria-labelledby="aria-label-responsesmenu">
-          <li role="separator" class="separator"><label>Insert a response</label></li>
+          <li role="separator" class="separator"><label>{{ 'Insert a response'|lc }}</label></li>
           <ul id="responseslist" class="rounded-0">
             {% for r in responses %}
             <li role="menuitem"><a class="insertresponse active" href="#" data-response="{{ r.response_id }}"
@@ -138,12 +138,12 @@
             {% else %}
             {# reference: placeholder is an insertresponse link, not a plain disabled item #}
             <li><a href="#" class="insertresponse placeholder disabled" unselectable="on"
-                tabindex="0" aria-disabled="true">No responses available</a></li>
+                tabindex="0" aria-disabled="true">{{ 'No responses available'|lc }}</a></li>
             {% endfor %}
           </ul>
-          <li role="separator" class="separator"><label>Manage responses</label></li>
-          <li role="menuitem"><a class="edit responses active" title="Edit responses"
-              href="{{ url_for('views.responses') }}"><span>Edit responses</span></a></li>
+          <li role="separator" class="separator"><label>{{ 'Manage responses'|lc }}</label></li>
+          <li role="menuitem"><a class="edit responses active" title="{{ 'Edit responses'|lc }}"
+              href="{{ url_for('views.responses') }}"><span>{{ 'Edit responses'|lc }}</span></a></li>
         </ul>
       </div>
         <form id="composeform" method="post" enctype="multipart/form-data" class="formcontent scroller" action="">
@@ -158,7 +158,7 @@
           <input type="hidden" name="_references" value="{{ prefill.references }}">
           <div class="compose-headers formcontainer">
             <div id="compose_from" class="form-group row">
-              <label for="identities" class="col-2 col-form-label">From</label>
+              <label for="identities" class="col-2 col-form-label">{{ 'From'|lc }}</label>
               <div class="col-10">
                 <div class="input-group">
                   <select name="_ident" id="identities" class="custom-select form-control"
@@ -168,7 +168,7 @@
                     {% endfor %}
                   </select>
                   <span class="input-group-append">
-                    <a href="{{ url_for('views.identities') }}" class="input-group-text icon edit" title="Edit identities" tabindex="1"><span class="inner">Edit identities</span></a>
+                    <a href="{{ url_for('views.identities') }}" class="input-group-text icon edit" title="{{ 'Edit identities'|lc }}" tabindex="1"><span class="inner">{{ 'Edit identities'|lc }}</span></a>
                   </span>
                 </div>
               </div>
@@ -180,7 +180,7 @@
                   <textarea name="_to" spellcheck="false" id="_to" tabindex="1" aria-required="true"
                             data-recipient-input="true" autofocus>{{ prefill.to }}</textarea>
                   <span class="input-group-append">
-                    <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_to" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_to') : true"><span class="inner">Add contact</span></a>
+                    <a href="#add-contact" class="input-group-text icon add recipient" title="{{ 'Add contact'|lc }}" tabindex="1" data-add-contact="_to" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_to') : true"><span class="inner">{{ 'Add contact'|lc }}</span></a>
                   </span>
                   <span class="input-group-append">
                     <a href="#add-header" class="input-group-text icon add" title="Add recipient (header)" tabindex="1" data-popup="headers-menu"><span class="inner">Add recipient (header)</span></a>
@@ -194,52 +194,52 @@
                 <div class="input-group">
                   <textarea name="_cc" id="_cc" class="form-control" tabindex="1" rows="1">{{ prefill.cc }}</textarea>
                   <span class="input-group-append">
-                    <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_cc" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_cc') : true"><span class="inner">Add contact</span></a>
+                    <a href="#add-contact" class="input-group-text icon add recipient" title="{{ 'Add contact'|lc }}" tabindex="1" data-add-contact="_cc" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_cc') : true"><span class="inner">{{ 'Add contact'|lc }}</span></a>
                   </span>
                   <span class="input-group-append">
-                    <a href="#delete" class="input-group-text icon delete" title="Delete" tabindex="1" data-reset-header="_cc"><span class="inner">Delete</span></a>
+                    <a href="#delete" class="input-group-text icon delete" title="{{ 'Delete'|lc }}" tabindex="1" data-reset-header="_cc"><span class="inner">{{ 'Delete'|lc }}</span></a>
                   </span>
                 </div>
               </div>
             </div>
             <div id="compose_bcc" class="hidden form-group row">
-              <label for="_bcc" class="col-2 col-form-label">Bcc</label>
+              <label for="_bcc" class="col-2 col-form-label">{{ 'Bcc'|lc }}</label>
               <div class="col-10">
                 <div class="input-group">
                   <textarea name="_bcc" id="_bcc" class="form-control" tabindex="1" rows="1">{{ prefill.bcc }}</textarea>
                   <span class="input-group-append">
-                    <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_bcc" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_bcc') : true"><span class="inner">Add contact</span></a>
+                    <a href="#add-contact" class="input-group-text icon add recipient" title="{{ 'Add contact'|lc }}" tabindex="1" data-add-contact="_bcc" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_bcc') : true"><span class="inner">{{ 'Add contact'|lc }}</span></a>
                   </span>
                   <span class="input-group-append">
-                    <a href="#delete" class="input-group-text icon delete" title="Delete" tabindex="1" data-reset-header="_bcc"><span class="inner">Delete</span></a>
+                    <a href="#delete" class="input-group-text icon delete" title="{{ 'Delete'|lc }}" tabindex="1" data-reset-header="_bcc"><span class="inner">{{ 'Delete'|lc }}</span></a>
                   </span>
                 </div>
               </div>
             </div>
             <div id="compose_replyto" class="hidden form-group row">
-              <label for="_replyto" class="col-2 col-form-label">Reply-To</label>
+              <label for="_replyto" class="col-2 col-form-label">{{ 'Reply-To'|lc }}</label>
               <div class="col-10">
                 <div class="input-group">
                   <input type="text" name="_reply_to" id="_replyto" value="{{ prefill.reply_to }}" class="form-control" tabindex="1">
                   <span class="input-group-append">
-                    <a href="#delete" class="input-group-text icon delete" title="Delete" tabindex="1" data-reset-header="_replyto"><span class="inner">Delete</span></a>
+                    <a href="#delete" class="input-group-text icon delete" title="{{ 'Delete'|lc }}" tabindex="1" data-reset-header="_replyto"><span class="inner">{{ 'Delete'|lc }}</span></a>
                   </span>
                 </div>
               </div>
             </div>
             <div id="compose_followupto" class="hidden form-group row">
-              <label for="_followupto" class="col-2 col-form-label">Followup-To</label>
+              <label for="_followupto" class="col-2 col-form-label">{{ 'Followup-To'|lc }}</label>
               <div class="col-10">
                 <div class="input-group">
                   <input type="text" name="_followup_to" id="_followupto" value="{{ prefill.followup_to }}" class="form-control" tabindex="1">
                   <span class="input-group-append">
-                    <a href="#delete" class="input-group-text icon delete" title="Delete" tabindex="1" data-reset-header="_followupto"><span class="inner">Delete</span></a>
+                    <a href="#delete" class="input-group-text icon delete" title="{{ 'Delete'|lc }}" tabindex="1" data-reset-header="_followupto"><span class="inner">{{ 'Delete'|lc }}</span></a>
                   </span>
                 </div>
               </div>
             </div>
             <div id="compose_subject" class="form-group row">
-              <label for="compose-subject" class="col-2 col-form-label">Subject</label>
+              <label for="compose-subject" class="col-2 col-form-label">{{ 'Subject'|lc }}</label>
               <div class="col-10">
                 <input type="text" name="_subject" id="compose-subject" value="{{ prefill.subject }}" class="form-control" tabindex="1">
               </div>
@@ -251,13 +251,13 @@
                TinyMCE's .tox-tinymce+.editor-toolbar rule hides it in html
                mode) and the hidden <select> is the mode switch -->
           <div id="composebodycontainer" class="html-editor">
-            <label for="composebody" class="voice">Message Body</label>
+            <label for="composebody" class="voice">{{ 'Message Body'|lc }}</label>
             <input type="hidden" name="_is_html" value="{{ '1' if prefill.html else '0' }}">
             <textarea name="_body" id="composebody" class="form-control{{ ' mce_editor' if prefill.html }}" cols="70" rows="20" tabindex="1" data-html-editor="1">{{ prefill.body }}</textarea>
             <select name="editorSelector" id="editor-selector" class="hidden form-control custom-select pretty-select"
                     onchange="return cc_editor.toggle({id: 'composebody', html: this.value == 'html'})">
-              <option value="html">HTML</option>
-              <option value="plain"{{ ' selected' if not prefill.html }}>Plain text</option>
+              <option value="html">{{ 'HTML'|lc }}</option>
+              <option value="plain"{{ ' selected' if not prefill.html }}>{{ 'Plain text'|lc }}</option>
             </select>
           </div>
         </form>
@@ -265,21 +265,21 @@
              </form> then .formbuttons), so they align with the pane edge,
              not the form's 1rem inset. form="composeform" keeps submit. -->
         <div class="formbuttons">
-          <button type="submit" form="composeform" name="_action" value="send" class="btn btn-primary icon send" id="sendbtn" tabindex="1">Send</button>
+          <button type="submit" form="composeform" name="_action" value="send" class="btn btn-primary icon send" id="sendbtn" tabindex="1">{{ 'Send'|lc }}</button>
           <div class="float-right">
-            {% if not extwin %}<a href="?" class="button icon btn btn-link extwin" data-hidden="small" role="button" aria-disabled="false" tabindex="1" target="_blank">Open in new window</a>{% endif %}
+            {% if not extwin %}<a href="?" class="button icon btn btn-link extwin" data-hidden="small" role="button" aria-disabled="false" tabindex="1" target="_blank">{{ 'Open in new window'|lc }}</a>{% endif %}
           </div>
         </div>
       </div>
     </div>
 
 <div id="headers-menu" class="popupmenu">
-  <h3 id="aria-label-headersmenu" class="voice">Recipient (header) adding menu</h3>
+  <h3 id="aria-label-headersmenu" class="voice">{{ 'Recipient (header) adding menu'|lc }}</h3>
   <ul class="menu listing" role="menu" aria-labelledby="aria-label-headersmenu">
     <li role="menuitem"><a data-target="cc" href="#" role="button" tabindex="-1" class="recipient active">Cc</a></li>
-    <li role="menuitem"><a data-target="bcc" href="#" role="button" tabindex="-1" class="recipient active">Bcc</a></li>
-    <li role="menuitem"><a data-target="replyto" href="#" role="button" tabindex="-1" class="recipient active">Reply-To</a></li>
-    <li role="menuitem"><a data-target="followupto" href="#" role="button" tabindex="-1" class="recipient active">Followup-To</a></li>
+    <li role="menuitem"><a data-target="bcc" href="#" role="button" tabindex="-1" class="recipient active">{{ 'Bcc'|lc }}</a></li>
+    <li role="menuitem"><a data-target="replyto" href="#" role="button" tabindex="-1" class="recipient active">{{ 'Reply-To'|lc }}</a></li>
+    <li role="menuitem"><a data-target="followupto" href="#" role="button" tabindex="-1" class="recipient active">{{ 'Followup-To'|lc }}</a></li>
   </ul>
 </div>
 
@@ -652,31 +652,30 @@
       var subject = (formdata._subject || '').replace(/[&<>"]/g, function (c) {
         return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
       });
-      var msg = 'A previously composed but unsent message was found.\n\n' +
-        'Subject: ' + subject + '\nSaved: ' +
-        new Date(formdata.changed).toLocaleString() +
-        '\n\nDo you want to restore this message?';
+      var msg = window.cc_get_label('restoresavedcomposedata', {
+        subject: subject, date: new Date(formdata.changed).toLocaleString(),
+      });
       var box = document.createElement('div');
       box.style.cssText = 'padding:1rem;white-space:pre-wrap';
       box.textContent = msg;
       var dlg = null;
       function buttons() {
         return [
-          { label: 'Restore', cls: 'mainaction restore', click: function () {
+          { label: window.cc_get_label('restore'), cls: 'mainaction restore', click: function () {
               dlg.close();
               restore_compose_form(formdata);
               remove_compose_data(key);
               save_compose_form_local();
             } },
-          { label: 'Delete', cls: 'delete', click: function () {
+          { label: window.cc_get_label('delete'), cls: 'delete', click: function () {
               dlg.close(); remove_compose_data(key); show_next();
             } },
-          { label: 'Ignore', cls: 'cancel', click: function () {
+          { label: window.cc_get_label('ignore'), cls: 'cancel', click: function () {
               dlg.close(); show_next();
             } }
         ];
       }
-      dlg = window.cc_simple_dialog(box, 'Restore message?', { buttons: buttons(), height: 280 });
+      dlg = window.cc_simple_dialog(box, window.cc_get_label('restoremessage'), { buttons: buttons(), height: 280 });
     }
 
     window.addEventListener('load', function () {
@@ -728,7 +727,7 @@
       // skip_unsavedcheck's guard via the submit handler below
       window.onbeforeunload = function () {
         if (!skip_unsavedcheck && cmp_hash !== compose_field_hash()) {
-          return 'The message has not been sent and has unsaved changes. Do you want to discard your changes?';
+          return window.cc_get_label('notsentwarning');
         }
       };
 

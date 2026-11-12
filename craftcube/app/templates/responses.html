@@ -3,14 +3,14 @@
 {% set settings_nav = 'responses' %}
 {% include "includes/settings-sidebar.html" %}
 
-    <h1 class="voice">Responses</h1>
+    <h1 class="voice">{{ 'Responses'|lc }}</h1>
 
     <!-- responses list — skins/elastic/templates/responses.html -->
     <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-responseslist">
       <div class="header">
-        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Settings</span></a>
-        <span id="aria-label-responseslist" class="header-title">Responses</span>
-        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
+        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">{{ 'Settings'|lc }}</span></a>
+        <span id="aria-label-responseslist" class="header-title">{{ 'Responses'|lc }}</span>
+        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
       </div>
       <div class="scroller">
         <table id="responses-table" class="listing" role="listbox" data-list="responses_list"
@@ -32,19 +32,19 @@
 
     <!-- response edit form (reference loads it into preferences-frame) -->
     <div id="layout-content" role="main">
-      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
+      <h2 id="aria-label-toolbar" class="voice">{{ 'Application toolbar'|lc }}</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
-        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
         <span class="header-title"></span>
         <div id="responsestoolbar" class="toolbar menu">
-          <a class="create" title="Create new response" data-fab="true" role="button"
-             href="{{ url_for('views.responses', _edit='new') }}"><span class="inner">Create</span></a>
+          <a class="create" title="{{ 'Create new response'|lc }}" data-fab="true" role="button"
+             href="{{ url_for('views.responses', _edit='new') }}"><span class="inner">{{ 'Create'|lc }}</span></a>
           {% if edit_row %}
-          <a class="delete" title="Delete" role="button"
-             href="#" onclick="if (confirm('Delete this response?')) document.getElementById('response-delete-form').submit(); return false"><span class="inner">Delete</span></a>
+          <a class="delete" title="{{ 'Delete'|lc }}" role="button"
+             href="#" onclick="if (confirm('Delete this response?')) document.getElementById('response-delete-form').submit(); return false"><span class="inner">{{ 'Delete'|lc }}</span></a>
           {% else %}
-          <a class="delete disabled" title="Delete" role="button" tabindex="-1" aria-disabled="true"
-             href="#"><span class="inner">Delete</span></a>
+          <a class="delete disabled" title="{{ 'Delete'|lc }}" role="button" tabindex="-1" aria-disabled="true"
+             href="#"><span class="inner">{{ 'Delete'|lc }}</span></a>
           {% endif %}
         </div>
       </div>
@@ -56,7 +56,7 @@
             <table class="layout propform">
               <tbody>
                 <tr>
-                  <td class="title"><label for="inputname">Name</label></td>
+                  <td class="title"><label for="inputname">{{ 'Name'|lc }}</label></td>
                   <td class="field"><input type="text" name="name" id="inputname"
                       value="{{ edit_row.name if edit_row else '' }}" class="form-control" required></td>
                 </tr>
@@ -66,7 +66,7 @@
                       class="form-control{{ ' mce_editor' if edit_row and edit_row.html }}">{{ edit_row.body if edit_row else '' }}</textarea></td>
                 </tr>
                 <tr>
-                  <td class="title">Options</td>
+                  <td class="title">{{ 'Options'|lc }}</td>
                   <td class="field">
                     <label><input type="checkbox" onclick="return cc_editor.toggle({id: 'inputbody', html: this.checked})" name="html" value="1"{{ ' checked' if edit_row and edit_row.html }}> HTML signature</label>
                   </td>
@@ -75,8 +75,8 @@
             </table>
           </fieldset>
           <div class="formbuttons">
-            <button type="submit" class="btn btn-primary icon save">Save</button>
-            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.responses') }}">Cancel</a>
+            <button type="submit" class="btn btn-primary icon save">{{ 'Save'|lc }}</button>
+            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.responses') }}">{{ 'Cancel'|lc }}</a>
           </div>
         </form>
         {% if edit_row %}
@@ -86,7 +86,7 @@
       {% else %}
       <div class="iframe-wrapper">
         <iframe name="preferences-frame" id="preferences-frame"
-                src="{{ url_for('static', filename='watermark.html') }}" title="Response edit form"></iframe>
+                src="{{ url_for('static', filename='watermark.html') }}" title="{{ 'Response edit form'|lc }}"></iframe>
       </div>
       {% endif %}
     </div>

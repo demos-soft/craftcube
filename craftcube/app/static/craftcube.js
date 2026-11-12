@@ -6,6 +6,18 @@
 (function () {
   'use strict';
 
+  // rcube app.get_label() (app.js): catalogue text with $var substitution
+  function cc_get_label(key, vars) {
+    var text = (window.cc_labels || {})[key] || ('[' + key + ']');
+    if (vars) {
+      Object.keys(vars).forEach(function (k) {
+        text = text.replace('$' + k, vars[k]);
+      });
+    }
+    return text.replace(/\\n/g, '\n');
+  }
+  window.cc_get_label = cc_get_label;
+
   // ------------------------------------------------- layout engine (ui.js)
   // Ports Elastic's screen_mode()/screen_resize()/screen_resize_small_all()/
   // app_menu()/show_*/hide_content machinery: on phone/small only the last
@@ -333,12 +345,14 @@
     function label() {
       var dark = document.documentElement.classList.contains('dark-mode');
       var inner = t.querySelector('.inner');
-      if (inner) inner.textContent = dark ? 'Light mode' : 'Dark mode';
+      var lblD = t.getAttribute('data-label-dark') || 'Dark mode';
+      var lblL = t.getAttribute('data-label-light') || 'Light mode';
+      if (inner) inner.textContent = dark ? lblL : lblD;
       // the class names the ACTION: sun (theme light) while dark is on,
       // moon (theme dark) while light is on — like the elastic ui.js
       t.classList.toggle('light', dark);
       t.classList.toggle('dark', !dark);
-      t.setAttribute('title', dark ? 'Light mode' : 'Dark mode');
+      t.setAttribute('title', dark ? lblL : lblD);
     }
     label();
     t.addEventListener('click', function (e) {
@@ -602,15 +616,15 @@
       }
     }
     var buttons = [{
-      label: 'Send', cls: 'mainaction send',
+      label: cc_get_label('send'), cls: 'mainaction send',
       click: function () { action = 'sendmdn'; dlg.close(); },
     }, {
-      label: 'Ignore', cls: 'cancel',
+      label: cc_get_label('ignore'), cls: 'cancel',
       click: function () { dlg.close(); },
     }];
     if (save) {
       buttons.unshift({
-        label: 'Always send to ' + (sender.mailto || ''), cls: 'mainaction send',
+        label: cc_get_label('sendalwaysto', { email: sender.mailto || '' }), cls: 'mainaction send',
         click: function () {
           props._save = save; props._address = sender.string || sender.mailto;
           action = 'sendmdn'; dlg.close();
@@ -619,8 +633,8 @@
     }
     var body = document.createElement('div');
     body.style.cssText = 'padding:1rem';
-    body.textContent = 'The sender of this message has asked to be notified when you read this message. Do you wish to notify the sender?';
-    var dlg = ccDialog(body, 'Send read receipt?', {
+    body.textContent = cc_get_label('mdnrequest');
+    var dlg = ccDialog(body, cc_get_label('sendreceipt'), {
       height: 200, buttons: buttons, onclose: closeAndPost,
     });
     return dlg;
@@ -872,12 +886,12 @@
         if (a.classList.contains('disabled')) return;
         var cmd = a.getAttribute('data-act');
         if (cmd === 'empty') {
-          if (confirm('Really empty this folder?')) act('empty', [], {});
+          if (confirm(cc_get_label('purgefolderconfirm'))) act('empty', [], {});
         } else if (cmd === 'markallread') {
           act('markallread', [], {});
         } else if (cmd === 'delete') {
           var uids = toolbarContext();
-          if (uids.length && confirm('Really delete the selected message(s)?')) {
+          if (uids.length && confirm(cc_get_label('deletemessagesconfirm'))) {
             var extra = {};
             var sel = document.querySelector('#messagelist tr.selected');
             if (sel) extra._return_uid = sel.getAttribute('data-uid') || '';
@@ -1047,7 +1061,7 @@
       var cmd = a.getAttribute('data-act') || a.getAttribute('data-mode');
       e.preventDefault();
       if (cmd === 'delete') {
-        if (confirm('Really delete the message?')) {
+        if (confirm(cc_get_label('deletemessagesconfirm'))) {
           post({ _mbox: box, _uids: uid, _act: 'delete' });
         }
       } else if (cmd === 'archive' || cmd === 'read' || cmd === 'unread' ||
@@ -1279,7 +1293,7 @@
     var win = window.open(url, 'rcmextwin' + Date.now(), features);
     // popup-blocker detection like app.js:2281
     if (!win || win.closed) {
-      if (window.cc_simple_dialog) cc_simple_dialog('The popup window was blocked!', 'Error');
+      if (window.cc_simple_dialog) cc_simple_dialog(cc_get_label('windowopenerror'), 'Error');
       return null;
     }
     return win;
@@ -1335,7 +1349,7 @@
   // "Add contact" opens the contacts list in a dialog; Insert appends the
   // selected addresses to the recipient field, comma-separated
   window.cc_recipient_dialog = function (field) {
-    var d = cc_iframe_dialog('/contacts?_dialog=1&_source=0', 'Insert contact(s)', 600, {
+    var d = cc_iframe_dialog('/contacts?_dialog=1&_source=0', cc_get_label('insertcontact'), 600, {
       buttons: [
         { label: 'Insert', cls: 'insert recipient mainaction',
           click: function () {

@@ -4,7 +4,7 @@ import re
 
 from flask import Flask, g, render_template
 
-from . import util
+from . import i18n, util
 from .config import Config
 from .store import Store
 
@@ -59,6 +59,15 @@ def create_app(config_overrides=None):
             return f"{name} <{email}>"
         return email
 
+    @app.template_filter("lc")
+    def _lc(text):
+        # translate an English UI literal through its catalogue key
+        return i18n.translate_en(text, g.get("lang", "en_US"))
+
+    # rcube-style UI gettext usable in templates and includes alike
+    app.jinja_env.globals["_"] = lambda key, **vars: i18n.gettext(
+        key, g.get("lang", "en_US"), vars or None)
+
     @app.context_processor
     def inject_globals():
         return {
@@ -67,6 +76,9 @@ def create_app(config_overrides=None):
             "current_user": g.get("user"),
             "task": g.get("task", ""),
             "action": g.get("action", ""),
+            "lang": g.get("lang", "en_US"),
+            # rcube app.env.labels: the catalogue slice client JS needs
+            "js_labels": i18n.js_labels(g.get("lang", "en_US")),
         }
 
     @app.errorhandler(404)

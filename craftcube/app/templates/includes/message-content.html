@@ -1,6 +1,6 @@
         <div id="message-content">
           <div class="leftcol" role="region" aria-labelledby="aria-label-messageattachments">
-            <h2 id="aria-label-messageattachments" class="voice">Attachments</h2>
+            <h2 id="aria-label-messageattachments" class="voice">{{ 'Attachments'|lc }}</h2>
             {% if attachments %}
             <ul class="attachmentslist" id="attachment-list">
               {% for a in attachments %}
@@ -14,12 +14,12 @@
             {% endif %}
           </div>
           <div class="rightcol" role="region" aria-labelledby="aria-label-messagebody">
-            <h2 id="aria-label-messagebody" class="voice">Message Body</h2>
+            <h2 id="aria-label-messagebody" class="voice">{{ 'Message Body'|lc }}</h2>
             <div id="message-objects">
               {% if remote_blocked %}
               <div id="remote-objects-message" class="notice">
-                <span>To protect your privacy remote resources have been blocked.</span>&nbsp;<span class="boxbuttons"><a
-                  href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}{{ '&_extwin=1' if extwin else '' }}">Allow</a></span>
+                <span>{{ 'To protect your privacy remote resources have been blocked.'|lc }}</span>&nbsp;<span class="boxbuttons"><a
+                  href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _load='remote') }}{{ '&_framed=1' if framed else '' }}{{ '&_extwin=1' if extwin else '' }}">{{ 'Allow'|lc }}</a></span>
               </div>
               {% endif %}
             </div>
@@ -46,9 +46,9 @@
                 <span class="image-filesize">~{{ a.size|size }}</span>
                 <span class="attachment-links"><a class="open"
                     href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part, _inline=1) }}"
-                    onclick="window.open(this.href); return false;" title="Show">Show</a>&nbsp;<a class="download"
+                    onclick="window.open(this.href); return false;" title="{{ 'Show'|lc }}">{{ 'Show'|lc }}</a>&nbsp;<a class="download"
                     href="{{ url_for('views.attachment', _mbox=folder, _uid=uid, _part=a.part) }}"
-                    title="Download">Download</a></span>
+                    title="{{ 'Download'|lc }}">{{ 'Download'|lc }}</a></span>
                 <br style="clear:both">
               </p>
               {% endfor %}

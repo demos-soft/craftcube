@@ -1,28 +1,29 @@
 <div id="layout-menu">
-  <h2 id="aria-label-tasknav" class="voice">Application tasks</h2>
+  <h2 id="aria-label-tasknav" class="voice">{{ _('arialabeltasknav') }}</h2>
   <div class="popover-header">
     <img src="{{ url_for('static', filename='images/logo.svg') }}" id="logo" alt="Logo">
-    <a class="button icon cancel"><span class="inner">Close</span></a>
+    <a class="button icon cancel"><span class="inner">{{ _('close') }}</span></a>
   </div>
   <div id="taskmenu" class="menu toolbar" role="navigation" aria-labelledby="aria-label-tasknav">
       <span class="action-buttons">
         {% if task == 'mail' and action == 'compose' %}
-          <a class="compose selected" title="Create a new message" href="{{ url_for('views.compose') }}"><span class="inner">Compose</span></a>
+          <a class="compose selected" title="{{ _('writenewmessage') }}" href="{{ url_for('views.compose') }}"><span class="inner">{{ _('compose') }}</span></a>
         {% else %}
-          <a class="compose" title="Create a new message" href="{{ url_for('views.compose') }}" data-fab="true" data-fab-task="mail" data-fab-action="none"><span class="inner">Compose</span></a>
+          <a class="compose" title="{{ _('writenewmessage') }}" href="{{ url_for('views.compose') }}" data-fab="true" data-fab-task="mail" data-fab-action="none"><span class="inner">{{ _('compose') }}</span></a>
         {% endif %}
       </span>
       {% if action == 'compose' and task == 'mail' %}
-        <a class="mail" href="{{ url_for('views.mail') }}"><span class="inner">Mail</span></a>
+        <a class="mail" href="{{ url_for('views.mail') }}"><span class="inner">{{ _('mail') }}</span></a>
       {% else %}
-        <a class="mail{{ ' selected' if task == 'mail' }}" href="{{ url_for('views.mail') }}"><span class="inner">Mail</span></a>
+        <a class="mail{{ ' selected' if task == 'mail' }}" href="{{ url_for('views.mail') }}"><span class="inner">{{ _('mail') }}</span></a>
       {% endif %}
-      <a class="contacts{{ ' selected' if task == 'addressbook' }}" href="{{ url_for('views.contacts') }}"><span class="inner">Contacts</span></a>
-      <a class="settings{{ ' selected' if task == 'settings' }}" href="{{ url_for('views.settings') }}"><span class="inner">Settings</span></a>
+      <a class="contacts{{ ' selected' if task == 'addressbook' }}" href="{{ url_for('views.contacts') }}"><span class="inner">{{ _('contacts') }}</span></a>
+      <a class="settings{{ ' selected' if task == 'settings' }}" href="{{ url_for('views.settings') }}"><span class="inner">{{ _('settings') }}</span></a>
       <span class="special-buttons">
-        <a class="theme dark" href="#" id="darktoggle"><span class="inner">Dark mode</span></a>
-        <a class="about" href="{{ url_for('views.about') }}" onclick="return window.cc_about_dialog ? window.cc_about_dialog(this) : true"><span class="inner">About</span></a>
-        <a class="logout" href="{{ url_for('views.logout') }}"><span class="inner">Logout</span></a>
+        <a class="theme dark" href="#" id="darktoggle" data-label-dark="{{ _('darkmode') }}"
+           data-label-light="{{ _('lightmode') }}"><span class="inner">{{ _('darkmode') }}</span></a>
+        <a class="about" href="{{ url_for('views.about') }}" onclick="return window.cc_about_dialog ? window.cc_about_dialog(this) : true"><span class="inner">{{ _('about') }}</span></a>
+        <a class="logout" href="{{ url_for('views.logout') }}"><span class="inner">{{ _('logout') }}</span></a>
       </span>
   </div>
 </div>

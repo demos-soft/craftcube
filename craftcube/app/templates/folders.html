@@ -3,42 +3,42 @@
 {% set settings_nav = 'folders' %}
 {% include "includes/settings-sidebar.html" %}
 
-    <h1 class="voice">Folders</h1>
+    <h1 class="voice">{{ 'Folders'|lc }}</h1>
 
     <!-- folders list — skins/elastic/templates/folders.html -->
     <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-folderslist">
       <div class="header">
-        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Settings</span></a>
-        <span id="aria-label-folderslist" class="header-title">Folders</span>
-        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
+        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">{{ 'Settings'|lc }}</span></a>
+        <span id="aria-label-folderslist" class="header-title">{{ 'Folders'|lc }}</span>
+        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
       </div>
       <div role="search" aria-labelledby="aria-label-foldersearchform" class="searchbar menu">
-        <h2 id="aria-label-foldersearchform" class="voice">Folder search form</h2>
+        <h2 id="aria-label-foldersearchform" class="voice">{{ 'Folder search form'|lc }}</h2>
         <form name="rcmqsearchform" id="folder-filter-form" method="get" action="{{ url_for('views.folders_view') }}">
-          <label for="foldersearch" class="voice">Search terms</label>
-          <input name="_q" id="foldersearch" class="no-bs" placeholder="Search..." type="text" autocomplete="off"
+          <label for="foldersearch" class="voice">{{ 'Search terms'|lc }}</label>
+          <input name="_q" id="foldersearch" class="no-bs" placeholder="{{ 'Search...'|lc }}" type="text" autocomplete="off"
                  value="{{ q or '' }}">
         </form>
-        <a class="button reset" title="Reset search" tabindex="0" role="button" href="#"
-           onclick="document.getElementById('foldersearch').value='';return false"><span class="inner">Reset search</span></a>
-        <a href="#search-filter" class="button options" title="Options" tabindex="0" data-target="foldersearchmenu"
-           role="button" data-popup="foldersearchmenu"><span class="inner">Options</span></a>
-        <a href="#search" class="button search" title="Find folders" tabindex="0" role="button"
-           onclick="location.href='{{ url_for('views.folders_view') }}?_q='+document.getElementById('foldersearch').value;return false"><span class="inner">Find folders</span></a>
+        <a class="button reset" title="{{ 'Reset search'|lc }}" tabindex="0" role="button" href="#"
+           onclick="document.getElementById('foldersearch').value='';return false"><span class="inner">{{ 'Reset search'|lc }}</span></a>
+        <a href="#search-filter" class="button options" title="{{ 'Options'|lc }}" tabindex="0" data-target="foldersearchmenu"
+           role="button" data-popup="foldersearchmenu"><span class="inner">{{ 'Options'|lc }}</span></a>
+        <a href="#search" class="button search" title="{{ 'Find folders'|lc }}" tabindex="0" role="button"
+           onclick="location.href='{{ url_for('views.folders_view') }}?_q='+document.getElementById('foldersearch').value;return false"><span class="inner">{{ 'Find folders'|lc }}</span></a>
       </div>
       <div id="foldersearchmenu" class="hidden searchoptions scroller propform formcontainer"
            aria-labelledby="aria-label-search-menu" aria-controls="subscription-table">
-        <h3 id="aria-label-search-menu" class="voice">Search modifiers</h3>
+        <h3 id="aria-label-search-menu" class="voice">{{ 'Search modifiers'|lc }}</h3>
         <div class="formcontent">
           <select name="folderfilter" id="folderlist-filter" class="custom-select"
                   onchange="location.href='{{ url_for('views.folders_view') }}?_filter='+this.value">
-            <option value="---"{{ ' selected' if folder_filter == '---' }}>All</option>
-            <option value=""{{ ' selected' if folder_filter == '' }}>Personal</option>
+            <option value="---"{{ ' selected' if folder_filter == '---' }}>{{ 'All'|lc }}</option>
+            <option value=""{{ ' selected' if folder_filter == '' }}>{{ 'Personal'|lc }}</option>
           </select>
         </div>
         <div class="formbuttons">
           <button type="button" class="btn btn-primary icon search"
-                  onclick="location.href='{{ url_for('views.folders_view') }}?_filter='+document.getElementById('folderlist-filter').value">Search</button>
+                  onclick="location.href='{{ url_for('views.folders_view') }}?_filter='+document.getElementById('folderlist-filter').value">{{ 'Search'|lc }}</button>
         </div>
       </div>
       <div class="scroller" tabindex="-1">
@@ -51,11 +51,11 @@
               data-href="{{ url_for('views.folders_view', _edit=f.name) }}">
             <a href="#">{{ f.display_name or f.name }}</a>
             <div class="custom-control custom-switch">
-              <input name="_subscribed[]" title="Click to change subscription" value="{{ f.name }}"
+              <input name="_subscribed[]" title="{{ 'Click to change subscription'|lc }}" value="{{ f.name }}"
                      disabled checked type="checkbox" id="icochk{{ loop.index }}"
                      class="form-check-input custom-control-input">
               <label for="icochk{{ loop.index }}" class="custom-control-label"
-                     title="Click to change subscription"></label>
+                     title="{{ 'Click to change subscription'|lc }}"></label>
             </div>
           </li>
           {% endfor %}
@@ -68,41 +68,41 @@
 
     <!-- folder properties frame -->
     <div id="layout-content" role="main">
-      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
+      <h2 id="aria-label-toolbar" class="voice">{{ 'Application toolbar'|lc }}</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
-        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
         <span class="header-title"></span>
         <div id="folderstoolbar" class="toolbar menu">
-          <a class="create" title="Create new folder" role="button"
-             href="#" onclick="return window.cc_create_folder ? window.cc_create_folder() : true"><span class="inner">Create</span></a>
+          <a class="create" title="{{ 'Create new folder'|lc }}" role="button"
+             href="#" onclick="return window.cc_create_folder ? window.cc_create_folder() : true"><span class="inner">{{ 'Create'|lc }}</span></a>
           {% if edit_folder %}
-          <a class="delete" title="Delete" role="button"
-             href="#" onclick="if (confirm('Delete folder {{ edit_folder }}?')) document.getElementById('folder-delete-form').submit(); return false"><span class="inner">Delete</span></a>
-          <a class="purge" title="Empty" role="button"
-             href="#" onclick="document.getElementById('folder-empty-form').submit(); return false"><span class="inner">Empty</span></a>
+          <a class="delete" title="{{ 'Delete'|lc }}" role="button"
+             href="#" onclick="if (confirm('Delete folder {{ edit_folder }}?')) document.getElementById('folder-delete-form').submit(); return false"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          <a class="purge" title="{{ 'Empty'|lc }}" role="button"
+             href="#" onclick="document.getElementById('folder-empty-form').submit(); return false"><span class="inner">{{ 'Empty'|lc }}</span></a>
           {% else %}
-          <a class="delete disabled" title="Delete" role="button" tabindex="-1" aria-disabled="true"
-             href="#"><span class="inner">Delete</span></a>
-          <a class="purge disabled" title="Empty" role="button" tabindex="-1" aria-disabled="true"
-             href="#"><span class="inner">Empty</span></a>
+          <a class="delete disabled" title="{{ 'Delete'|lc }}" role="button" tabindex="-1" aria-disabled="true"
+             href="#"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          <a class="purge disabled" title="{{ 'Empty'|lc }}" role="button" tabindex="-1" aria-disabled="true"
+             href="#"><span class="inner">{{ 'Empty'|lc }}</span></a>
           {% endif %}
         </div>
       </div>
       {% if editing %}
       <div class="content">
         <div class="formcontent propform">
-          <h1 class="voice">Folder properties</h1>
+          <h1 class="voice">{{ 'Folder properties'|lc }}</h1>
           <form method="post" action="{{ url_for('views.folders_view') }}">
             <input type="hidden" name="_act" value="rename">
             <input type="hidden" name="folder" value="{{ edit_folder }}">
             <table class="layout">
               <tbody>
-                <tr><td class="title"><label for="inputname">Folder name</label></td>
+                <tr><td class="title"><label for="inputname">{{ 'Folder name'|lc }}</label></td>
                     <td><input type="text" name="name" id="inputname" value="{{ edit_folder }}" class="form-control" required></td></tr>
               </tbody>
             </table>
             <div class="formbuttons">
-              <button type="submit" class="btn btn-primary icon save">Save</button>
+              <button type="submit" class="btn btn-primary icon save">{{ 'Save'|lc }}</button>
             </div>
           </form>
         </div>

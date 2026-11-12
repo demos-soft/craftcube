@@ -27,7 +27,7 @@ from flask import (
     url_for,
 )
 
-from . import prefs_data, prefs_sections, util
+from . import i18n, prefs_data, prefs_sections, util
 from .auth import hash_password, verify_password
 from .mail import Imap, Mailbox, MailError, _decode_header, build_message
 
@@ -89,16 +89,27 @@ def _load_user():
         # stays 'auto' until the user picks a zone explicitly.
         if g.prefs.get("timezone") in (None, "", "auto"):
             g.prefs["timezone"] = session.get("tz") or None
+        # rcmail language: user preference normalized by language_prop()
+        g.lang = i18n.language_prop(g.prefs.get("language") or "en_US")
+    else:
+        # anonymous: rcube falls back to the browser's Accept-Language
+        g.lang = i18n.language_prop(
+            request.accept_languages.best_match(sorted(i18n.available_languages()), default="en_US"))
 
 
 def folder_label(name, prefs=None):
     """Roundcube-style folder display name: INBOX -> Inbox, basename of subfolders,
-    special folders titled-cased; raw name when 'show_real_foldernames' is on."""
+    special folders use the reference's labels (rcube_label 'inbox' etc.);
+    raw name when 'show_real_foldernames' is on."""
     if (prefs or {}).get("show_real_foldernames"):
         return name
     base = name.rsplit("/", 1)[-1]
-    if base.upper() == "INBOX":
-        return "Inbox"
+    key = base.lower()
+    # rcmail_action::localize_foldername(): only folders whose class has a
+    # catalogue label get translated; others keep their display name
+    if key in ("inbox", "drafts", "sent", "trash", "junk", "archive") \
+            and key in i18n.catalogue(g.get("lang", "en_US")):
+        return i18n.gettext(key, g.get("lang", "en_US"))
     return base[:1].upper() + base[1:]
 
 
@@ -117,21 +128,24 @@ def render(task, tmpl, **ctx):
     ctx.setdefault("folders", folders_for_menu())
     # Roundcube page titles: "<product> :: <task title>" (mail list uses the
     # folder name, message view the subject; compose keeps the default)
-    ctx.setdefault("page_title", {
-        "mail.html": ctx.get("folder_title"),
-        "message.html": ctx.get("subject_title"),
-        "compose.html": "Compose",
-        "addressbook.html": "Contacts",
-        "contact.html": "Contacts",
-        "contactedit.html": "Contacts",
-        "contact_framed.html": "Contacts",
-        "preferences.html": "Preferences",
-        "responses.html": "Preferences",
-        "responseedit.html": "Preferences",
-        "identities.html": "Preferences",
-        "identityedit.html": "Preferences",
-        "folders.html": "Preferences",
-    }.get(tmpl))
+    if "page_title" not in ctx:
+        # reference set_pagetitle(): the fixed task titles are gettext keys,
+        # mail list uses the (already localized) folder name, message view
+        # the raw subject
+        title = {
+            "compose.html": i18n.gettext("compose", g.lang),
+            "addressbook.html": i18n.gettext("contacts", g.lang),
+            "contact.html": i18n.gettext("contacts", g.lang),
+            "contactedit.html": i18n.gettext("contacts", g.lang),
+            "contact_framed.html": i18n.gettext("contacts", g.lang),
+            "preferences.html": i18n.gettext("preferences", g.lang),
+            "responses.html": i18n.gettext("preferences", g.lang),
+            "responseedit.html": i18n.gettext("preferences", g.lang),
+            "identities.html": i18n.gettext("preferences", g.lang),
+            "identityedit.html": i18n.gettext("preferences", g.lang),
+            "folders.html": i18n.gettext("preferences", g.lang),
+        }.get(tmpl, ctx.get("folder_title") or ctx.get("subject_title"))
+        ctx["page_title"] = title
     return render_template(tmpl, **ctx)
 
 
@@ -208,7 +222,7 @@ def login():
                     "reply_to": "", "bcc": "", "signature": "", "html_signature": 0, "standard": 1,
                 })
             return redirect(request.args.get("_next") or url_for("views.mail"))
-        error = "Login failed. Check your user name and password."
+        error = i18n.gettext("loginfailed", g.lang, domain="messages")
     return render_template("login.html", task="login", error=error,
                            folders=[], product_name=current_app.config["PRODUCT_NAME"])
 
@@ -428,9 +442,9 @@ def _mdn_request(box, folder, uid, msg):
     if exists:
         sent, _err = _send_mdn(box, session["user_id"], folder, uid)
         if sent:
-            flash("Successfully sent a read receipt.", "confirmation")
+            flash(i18n.gettext("receiptsent", g.lang, domain="messages"), "confirmation")
         else:
-            flash("Could not send the receipt.", "error")
+            flash(i18n.gettext("errorsendingreceipt", g.lang, domain="messages"), "error")
         return None
     if cfg in (2, 4, 6):
         return None  # ignore request
@@ -785,7 +799,7 @@ def message_import():
         for f in files:
             data = f.read()
             if len(data) > max_size:
-                flash("The uploaded file exceeds the maximum size of 5 MB.", "error")
+                flash(i18n.gettext("filesizeerror", g.lang, {"size": "5 MB"}, "messages"), "error")
                 return redirect(url_for("views.mail", _mbox=folder))
             low = f.filename.lower()
             if low.endswith(".zip") or f.mimetype in ("application/zip", "application/x-zip"):
@@ -803,7 +817,7 @@ def message_import():
         if count:
             flash(f"Successfully imported {count} messages", "confirmation")
         else:
-            flash("Import failed! The uploaded file is not a valid message or mailbox file", "error")
+            flash(i18n.gettext("importmessageerror", g.lang, domain="messages"), "error")
     except Exception as e:
         flash(f"Import failed! The uploaded file is not a valid message or mailbox file ({e})", "error")
     return redirect(url_for("views.mail", _mbox=folder))
@@ -899,9 +913,9 @@ def mail_sendmdn():
         except Exception:  # a failed receipt must never 500
             sent = False
     if sent:
-        flash("Successfully sent a read receipt.", "confirmation")
+        flash(i18n.gettext("receiptsent", g.lang, domain="messages"), "confirmation")
     else:
-        flash("Could not send the receipt.", "error")
+        flash(i18n.gettext("errorsendingreceipt", g.lang, domain="messages"), "error")
     save = request.form.get("_save")
     address = request.form.get("_address") or ""
     if sent and save in ("3", "5"):
@@ -959,25 +973,25 @@ def _run_mail_action(box, command, folder, uids, dest=None):
             box.set_flags(folder, uids, ["\\Flagged"], "remove")
         elif command == "delete":
             box.delete(folder, uids)
-            flash(f"{len(uids)} message(s) deleted.", "confirmation")
+            flash(i18n.gettext("messagedeleted", g.lang, domain="messages"), "confirmation")
         elif command == "archive":
-            target = box.archive(folder, uids)
-            flash(f"Archived to {target}.", "confirmation")
+            box.archive(folder, uids)
+            flash(i18n.gettext("messagemoved", g.lang, domain="messages"), "confirmation")
         elif command == "compact":
             box.compact(folder)
-            flash(f"Folder {folder} compacted.", "confirmation")
+            flash(i18n.gettext("folderpurged", g.lang, domain="messages"), "confirmation")
         elif command == "empty":
             box.empty_folder(folder)
-            flash(f"Folder {folder} emptied.", "confirmation")
+            flash(i18n.gettext("folderpurged", g.lang, domain="messages"), "confirmation")
         elif command == "markallread":
-            n = box.mark_all_read(folder)
-            flash(f"{n} message(s) marked as read.", "confirmation")
+            box.mark_all_read(folder)
+            flash(i18n.gettext("messagemarked", g.lang, domain="messages"), "confirmation")
         elif command == "move" and dest:
             box.move(folder, uids, dest)
-            flash(f"Moved to {dest}.", "confirmation")
+            flash(i18n.gettext("messagemoved", g.lang, domain="messages"), "confirmation")
         elif command == "copy" and dest:
             box.copy(folder, uids, dest)
-            flash(f"Copied to {dest}.", "confirmation")
+            flash(i18n.gettext("messagecopied", g.lang, domain="messages"), "confirmation")
     except MailError as e:
         flash(str(e), "error")
 
@@ -1467,7 +1481,7 @@ def compose():
         body = request.form.get("_body", "")
         html = request.form.get("_is_html") == "1" or request.form.get("_format") == "html"
         if not to and not cc and not bcc:
-            flash("No recipients given.", "error")
+            flash(i18n.gettext("norecipientwarning", g.lang, domain="messages"), "error")
             return render("mail", "compose.html", prefill=prefill, identities=identities,
                           folders=folders, error="No recipients given.", action="compose")
         files = request.files.getlist("_file")
@@ -1510,7 +1524,7 @@ def compose():
             with contextlib.suppress(Exception):
                 words = spellchecker.check(body, lang, ignore=ignore)
                 if words:
-                    flash("Spelling errors detected in the message.", "error")
+                    flash(i18n.gettext("mispellingsfound", g.lang, domain="messages"), "error")
                     prefill.update(to=", ".join(to), cc=", ".join(cc),
                                    bcc=", ".join(bcc), subject=subject,
                                    body=body, html="1" if html else "")
@@ -1521,7 +1535,7 @@ def compose():
             if act == "save":
                 # the draft keeps its Bcc header
                 box.save_draft(msg.as_bytes(), replace_uid=int(draft_uid) if draft_uid else None)
-                flash("Draft saved.", "confirmation")
+                flash(i18n.gettext("messagesaved", g.lang, domain="messages"), "confirmation")
                 return redirect(url_for("views.mail", _mbox=box.special("drafts") or "Drafts"))
             # smtplib needs the combined recipient list (incl. Bcc); the
             # transmitted header block and the Sent copy must not carry Bcc
@@ -1557,7 +1571,7 @@ def compose():
                     nm, addr = _decode_header(frm), _eu.parseaddr(frm)[1]
                     if addr and str(up.get("collected_senders", "2")) == "2":
                         store.collected_upsert(session["user_id"], 2, nm or addr, addr)
-            flash("Message sent successfully.", "confirmation")
+            flash(i18n.gettext("messagesent", g.lang, domain="messages"), "confirmation")
             if extwin:
                 # sent_successfully (app.js:5974): an extwin popup stays on
                 # the locked form and closes itself after a second
@@ -1703,7 +1717,7 @@ def contact_edit(cid):
         data = {"name": name, "email": ", ".join(emails), "firstname": firstname,
                 "surname": surname, "vcard": util.vcard_encode(ext)}
         new_id = store.contact_save(session["user_id"], data, contact_id=cid)
-        flash("Contact saved.", "confirmation")
+        flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
         return redirect(url_for("views.contact_view", cid=new_id))
     ext = util.vcard_parse(row["vcard"]) if row and row["vcard"] else util.vcard_parse("")
     return render("addressbook", "contactedit.html", row=row, ext=ext,
@@ -1715,7 +1729,7 @@ def contact_edit(cid):
 def contact_delete(cid):
     store = get_store()
     store.contact_delete(session["user_id"], [cid])
-    flash("Contact deleted.", "confirmation")
+    flash(i18n.gettext("contactdeleted", g.lang, domain="messages"), "confirmation")
     return redirect(url_for("views.contacts"))
 
 
@@ -1747,7 +1761,7 @@ def contacts_import():
     store = get_store()
     f = request.files.get("_file")
     if not f or not f.filename:
-        flash("No file uploaded.", "error")
+        flash(i18n.gettext("fileuploaderror", g.lang, domain="messages"), "error")
         return redirect(url_for("views.contacts"))
     text = f.read().decode("utf-8", errors="replace")
     count = 0
@@ -1806,10 +1820,10 @@ def contact_group_assign():
     if gid and cids:
         if action == "remove":
             store.contactgroup_remove(gid, cids)
-            flash("Removed from list.", "confirmation")
+            flash(i18n.gettext("contactremovedfromgroup", g.lang, domain="messages"), "confirmation")
         else:
             store.contactgroup_add(gid, cids)
-            flash("Added to list.", "confirmation")
+            flash(i18n.gettext("contactaddedtogroup", g.lang, domain="messages"), "confirmation")
     return redirect(url_for("views.contacts"))
 
 
@@ -1870,7 +1884,7 @@ def collected_delete():
 def contact_group_add(cid, gid):
     store = get_store()
     store.contactgroup_add(gid, [cid])
-    flash("Added to list.", "confirmation")
+    flash(i18n.gettext("contactaddedtogroup", g.lang, domain="messages"), "confirmation")
     return redirect(url_for("views.contact_view", cid=cid))
 
 
@@ -1903,7 +1917,7 @@ def settings_preferences(section=None):
         return prefs_save(store, prefs, request.form.get("_section") or "general",
                           framed=framed)
     folders = [f["name"] for f in folders_for_menu()]
-    sections = PREF_SECTIONS(prefs, folders)
+    sections = i18n.translate_sections(PREF_SECTIONS(prefs, folders), g.lang)
     if section not in sections:
         return render_settings_landing()
     blocks = sections[section]["blocks"]
@@ -1920,7 +1934,8 @@ def render_settings_landing(open_section=None):
     prefs = dict(store.get_user_prefs(session["user_id"]))
     folders = [f["name"] for f in folders_for_menu()]
     return render("settings", "preferences.html", prefs=prefs, mail_folders=folders,
-                  sections=PREF_SECTIONS(prefs, folders), section=None, blocks=[],
+                  sections=i18n.translate_sections(PREF_SECTIONS(prefs, folders), g.lang),
+                  section=None, blocks=[],
                   open_section=open_section)
 
 
@@ -1928,7 +1943,10 @@ def prefs_save(store, prefs, section, framed=False):
     prefs_sections.apply_form(prefs, request.form)
     for key, value in list(prefs.items()):
         store.set_user_pref(session["user_id"], key, value)
-    flash("Preferences saved.", "confirmation")
+    # rcmail_action_settings_prefs_save saves and then reloads the language,
+    # so the confirmation already shows in the new language
+    g.lang = i18n.language_prop(prefs.get("language") or "en_US")
+    flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
     if framed:
         return redirect(url_for("views.settings_preferences", section=section,
                                 _framed="1"))
@@ -1970,10 +1988,10 @@ def response_edit(rid=None):
             new_id = store.response_save(session["user_id"], name, body,
                                          html=1 if request.form.get("html") else 0,
                                          rid=rid)
-            flash("Response saved.", "confirmation")
+            flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
             # reference keeps the record open in the edit frame after save
             return redirect(url_for("views.responses", _edit=new_id))
-        flash("Name is required.", "error")
+        flash(i18n.gettext("formincomplete", g.lang, domain="messages"), "error")
     return render("settings", "responseedit.html", row=row,
                   editor_cfg=editor_config(
                       "response", store.get_user_prefs(session["user_id"])))
@@ -1983,7 +2001,7 @@ def response_edit(rid=None):
 @login_required
 def response_delete(rid):
     get_store().response_delete(session["user_id"], rid)
-    flash("Response deleted.", "confirmation")
+    flash(i18n.gettext("deletedsuccessfully", g.lang, domain="messages"), "confirmation")
     return redirect(url_for("views.responses"))
 
 
@@ -2018,10 +2036,10 @@ def identity_edit(iid=None):
     if request.method == "POST":
         data = identity_from_form(request.form, row)
         if not data["email"]:
-            flash("E-mail address is required.", "error")
+            flash(i18n.gettext("noemailwarning", g.lang, domain="messages"), "error")
         else:
             new_id = store.identity_save(session["user_id"], data, identity_id=iid)
-            flash("Identity saved.", "confirmation")
+            flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
             # reference keeps the record open in the edit frame after save
             return redirect(url_for("views.identities", _edit=new_id or iid))
     return render("settings", "identityedit.html", row=row,
@@ -2034,7 +2052,7 @@ def identity_edit(iid=None):
 def identity_delete(iid):
     store = get_store()
     store.identity_delete(session["user_id"], iid)
-    flash("Identity deleted.", "confirmation")
+    flash(i18n.gettext("deletedsuccessfully", g.lang, domain="messages"), "confirmation")
     return redirect(url_for("views.identities"))
 
 
@@ -2071,19 +2089,19 @@ def folders_act():
             if name:
                 box.imap.create_folder(name)
                 box.imap.subscribe(name)
-                flash(f"Folder {name} created.", "confirmation")
+                flash(i18n.gettext("foldercreated", g.lang, domain="messages"), "confirmation")
         elif act == "rename":
             old = request.form.get("folder")
             new = request.form.get("name", "").strip()
             if old and new and old != new:
                 box.imap.rename_folder(old, new)
-                flash("Folder renamed.", "confirmation")
+                flash(i18n.gettext("folderupdated", g.lang, domain="messages"), "confirmation")
                 return redirect(url_for("views.folders_view", _edit=new))
         elif act == "delete":
             name = request.form.get("folder")
             if name:
                 box.imap.delete_folder(name)
-                flash(f"Folder {name} deleted.", "confirmation")
+                flash(i18n.gettext("folderdeleted", g.lang, domain="messages"), "confirmation")
         elif act == "empty":
             name = request.form.get("folder")
             if name:

@@ -3,13 +3,13 @@
 {% set settings_nav = 'preferences' %}
 {% include "includes/settings-sidebar.html" %}
 
-    <h1 class="voice">Preferences</h1>
+    <h1 class="voice">{{ 'Preferences'|lc }}</h1>
 
     <!-- preference sections -->
     <div id="layout-list" class="listbox{{ ' selected' if section }}" aria-labelledby="aria-label-prefsection">
       <div class="header">
-        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Settings</span></a>
-        <span id="aria-label-prefsection" class="header-title">Preferences</span>
+        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">{{ 'Settings'|lc }}</span></a>
+        <span id="aria-label-prefsection" class="header-title">{{ 'Preferences'|lc }}</span>
       </div>
       <div class="scroller">
         <table id="sections-table" class="listing iconized settings-default-icon" role="listbox" data-list="sections_list">
@@ -28,11 +28,11 @@
 
     <div id="layout-content" role="main">
       <div class="header">
-        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
         <span class="header-title">{{ 'Preferences' if open_section }}</span>
       </div>
       <div class="iframe-wrapper">
-        <iframe id="preferences-frame" name="preferences-frame" title="Preferences form"
+        <iframe id="preferences-frame" name="preferences-frame" title="{{ 'Preferences form'|lc }}"
                 src="{{ url_for('views.settings_preferences', section=open_section, _framed='1') if open_section else url_for('static', filename='watermark.html') }}"></iframe>
       </div>
     </div>

@@ -1,6 +1,6 @@
 {% include "includes/layout.html" %}
 
-    <h1 class="voice">{{ product_name }} Login</h1>
+    <h1 class="voice">{{ product_name }} {{ _('login') }}</h1>
 
     <div id="layout-content" class="selected no-navbar" role="main">
       <img src="{{ url_for('static', filename='images/logo.svg') }}" id="logo" alt="Logo">
@@ -8,18 +8,18 @@
         <table>
           <tbody>
             <tr class="form-group row">
-              <td class="title" style="display: none;"><label for="rcmloginuser">Username</label></td>
+              <td class="title" style="display: none;"><label for="rcmloginuser">{{ _('username') }}</label></td>
               <td class="input input-group input-group-lg">
                 <span class="input-group-prepend"><i class="input-group-text icon user"></i></span>
-                <input name="_user" id="rcmloginuser" required size="40" placeholder="Username" autofocus
+                <input name="_user" id="rcmloginuser" required size="40" placeholder="{{ _('username') }}" autofocus
                    class="form-control" autocapitalize="off" autocomplete="username" value="" type="text">
               </td>
             </tr>
             <tr class="form-group row">
-              <td class="title" style="display: none;"><label for="rcmloginpwd">Password</label></td>
+              <td class="title" style="display: none;"><label for="rcmloginpwd">{{ _('password') }}</label></td>
               <td class="input input-group input-group-lg">
                 <span class="input-group-prepend"><i class="input-group-text icon pass"></i></span>
-                <input name="_pass" id="rcmloginpwd" required size="40" placeholder="Password"
+                <input name="_pass" id="rcmloginpwd" required size="40" placeholder="{{ _('password') }}"
                    class="form-control" autocapitalize="off" autocomplete="off" type="password">
               </td>
             </tr>
@@ -31,7 +31,7 @@
         <p class="formbuttons">
           <button type="submit" id="rcmloginsubmit"
                   class="button mainaction submit btn btn-primary btn-lg text-uppercase w-100"
-                  tabindex="3">Login</button>
+                  tabindex="3">{{ _('login') }}</button>
         </p>
         <input type="hidden" name="_timezone" id="rcmlogintz" value="_default_">
         <script>
@@ -49,7 +49,7 @@
     </div>
 
     <noscript>
-      <p class="noscriptwarning">JavaScript is disabled. Some functionality may not work.</p>
+      <p class="noscriptwarning">{{ _('noscriptwarning') }}</p>
     </noscript>
 
 {% include "includes/footer.html" %}

@@ -1,12 +1,12 @@
 {% include "includes/layout.html" %}
 {% include "includes/menu.html" %}
 
-    <h1 class="voice">About</h1>
+    <h1 class="voice">{{ 'About'|lc }}</h1>
 
     <div id="layout-content" class="selected no-navbar" role="main">
       <div class="header">
-        <a class="button icon close" href="{{ url_for('views.mail') }}" style="position:absolute;right:.5rem;top:0"><span class="inner">Close</span></a>
-        <span class="header-title">About</span>
+        <a class="button icon close" href="{{ url_for('views.mail') }}" style="position:absolute;right:.5rem;top:0"><span class="inner">{{ 'Close'|lc }}</span></a>
+        <span class="header-title">{{ 'About'|lc }}</span>
       </div>
       <div class="content frame-content" role="main" style="text-align:center">
         <img src="{{ url_for('static', filename='images/logo.svg') }}" id="aboutlogo" style="max-height:96px;margin:1rem auto">

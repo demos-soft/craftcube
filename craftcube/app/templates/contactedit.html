@@ -5,14 +5,14 @@
 
     <div id="layout-content" class="selected">
       <div class="header">
-        <a class="button icon back-content-button" href="{{ url_for('views.contact_view', cid=row.contact_id) if row else url_for('views.contacts') }}"><span class="inner">Cancel</span></a>
+        <a class="button icon back-content-button" href="{{ url_for('views.contact_view', cid=row.contact_id) if row else url_for('views.contacts') }}"><span class="inner">{{ 'Cancel'|lc }}</span></a>
         <span class="header-title">{{ 'Edit' if row else 'Create' }} contact</span>
       </div>
       <div class="formcontainer content">
         <form method="post" class="formcontent">
 
           <fieldset class="contact-section">
-            <legend>Name and Organization</legend>
+            <legend>{{ 'Name and Organization'|lc }}</legend>
             <table class="layout propform">
               <tbody>
                 <tr>
@@ -20,25 +20,25 @@
                   <td class="field"><input type="text" name="name" id="inputname" value="{{ ext.name }}" class="form-control"></td>
                 </tr>
                 <tr>
-                  <td class="title">Name</td>
+                  <td class="title">{{ 'Name'|lc }}</td>
                   <td class="field names">
-                    <input type="text" name="prefix" size="6" placeholder="Prefix" value="{{ ext.prefix }}" class="form-control namefield">
+                    <input type="text" name="prefix" size="6" placeholder="{{ 'Prefix'|lc }}" value="{{ ext.prefix }}" class="form-control namefield">
                     <input type="text" name="firstname" placeholder="First name" value="{{ ext.firstname }}" class="form-control namefield">
                     <input type="text" name="middlename" placeholder="Middle name" value="{{ ext.middlename }}" class="form-control namefield">
                     <input type="text" name="surname" placeholder="Surname" value="{{ ext.surname }}" class="form-control namefield">
-                    <input type="text" name="suffix" size="6" placeholder="Suffix" value="{{ ext.suffix }}" class="form-control namefield">
+                    <input type="text" name="suffix" size="6" placeholder="{{ 'Suffix'|lc }}" value="{{ ext.suffix }}" class="form-control namefield">
                   </td>
                 </tr>
                 <tr>
-                  <td class="title"><label for="inputnickname">Nickname</label></td>
+                  <td class="title"><label for="inputnickname">{{ 'Nickname'|lc }}</label></td>
                   <td class="field"><input type="text" name="nickname" id="inputnickname" value="{{ ext.nickname }}" class="form-control"></td>
                 </tr>
                 <tr>
-                  <td class="title"><label for="inputorganization">Organization</label></td>
+                  <td class="title"><label for="inputorganization">{{ 'Organization'|lc }}</label></td>
                   <td class="field"><input type="text" name="organization" id="inputorganization" value="{{ ext.organization }}" class="form-control"></td>
                 </tr>
                 <tr>
-                  <td class="title"><label for="inputdepartment">Department</label></td>
+                  <td class="title"><label for="inputdepartment">{{ 'Department'|lc }}</label></td>
                   <td class="field"><input type="text" name="department" id="inputdepartment" value="{{ ext.department }}" class="form-control"></td>
                 </tr>
                 <tr>
@@ -50,7 +50,7 @@
           </fieldset>
 
           <fieldset class="contact-section">
-            <legend>Email</legend>
+            <legend>{{ 'Email'|lc }}</legend>
             <table class="layout propform contacttable" id="contactemail">
               <tbody>
                 {% for typ, val in ext.emails or [] %}
@@ -78,7 +78,7 @@
           </fieldset>
 
           <fieldset class="contact-section">
-            <legend>Phone</legend>
+            <legend>{{ 'Phone'|lc }}</legend>
             <table class="layout propform contacttable" id="contactphone">
               <tbody>
                 {% for typ, val in ext.phones or [] %}
@@ -106,7 +106,7 @@
           </fieldset>
 
           <fieldset class="contact-section">
-            <legend>Address</legend>
+            <legend>{{ 'Address'|lc }}</legend>
             <table class="layout propform contacttable addresses" id="contactaddress">
               <tbody>
                 {% for typ, street, locality, zipcode, region, country in ext.addresses or [] %}
@@ -119,11 +119,11 @@
                     </select>
                   </td>
                   <td class="field">
-                    <input type="text" name="_astreet[]" placeholder="Street" value="{{ street }}" class="form-control"><br>
-                    <input type="text" name="_alocality[]" placeholder="City" value="{{ locality }}" class="form-control" style="max-width:12rem">
+                    <input type="text" name="_astreet[]" placeholder="{{ 'Street'|lc }}" value="{{ street }}" class="form-control"><br>
+                    <input type="text" name="_alocality[]" placeholder="{{ 'City'|lc }}" value="{{ locality }}" class="form-control" style="max-width:12rem">
                     <input type="text" name="_azip[]" placeholder="Zip" value="{{ zipcode }}" class="form-control" style="max-width:6rem">
                     <input type="text" name="_aregion[]" placeholder="State" value="{{ region }}" class="form-control" style="max-width:7rem">
-                    <input type="text" name="_acountry[]" placeholder="Country" value="{{ country }}" class="form-control" style="max-width:9rem">
+                    <input type="text" name="_acountry[]" placeholder="{{ 'Country'|lc }}" value="{{ country }}" class="form-control" style="max-width:9rem">
                   </td>
                 </tr>
                 {% endfor %}
@@ -134,11 +134,11 @@
                     </select>
                   </td>
                   <td class="field">
-                    <input type="text" name="_astreet[]" placeholder="Street" value="" class="form-control"><br>
-                    <input type="text" name="_alocality[]" placeholder="City" value="" class="form-control" style="max-width:12rem">
+                    <input type="text" name="_astreet[]" placeholder="{{ 'Street'|lc }}" value="" class="form-control"><br>
+                    <input type="text" name="_alocality[]" placeholder="{{ 'City'|lc }}" value="" class="form-control" style="max-width:12rem">
                     <input type="text" name="_azip[]" placeholder="Zip" value="" class="form-control" style="max-width:6rem">
                     <input type="text" name="_aregion[]" placeholder="State" value="" class="form-control" style="max-width:7rem">
-                    <input type="text" name="_acountry[]" placeholder="Country" value="" class="form-control" style="max-width:9rem">
+                    <input type="text" name="_acountry[]" placeholder="{{ 'Country'|lc }}" value="" class="form-control" style="max-width:9rem">
                   </td>
                 </tr>
               </tbody>
@@ -146,22 +146,22 @@
           </fieldset>
 
           <fieldset class="contact-section">
-            <legend>Personal</legend>
+            <legend>{{ 'Personal'|lc }}</legend>
             <table class="layout propform">
               <tbody>
                 <tr>
-                  <td class="title"><label for="inputgender">Gender</label></td>
+                  <td class="title"><label for="inputgender">{{ 'Gender'|lc }}</label></td>
                   <td class="field">
                     <select name="gender" id="inputgender" class="custom-select" style="max-width:10rem">
                       <option value=""{{ ' selected' if not ext.gender }}></option>
                       <option value="M"{{ ' selected' if ext.gender == 'M' }}>Male</option>
                       <option value="F"{{ ' selected' if ext.gender == 'F' }}>Female</option>
-                      <option value="O"{{ ' selected' if ext.gender == 'O' }}>Other</option>
+                      <option value="O"{{ ' selected' if ext.gender == 'O' }}>{{ 'Other'|lc }}</option>
                     </select>
                   </td>
                 </tr>
                 <tr>
-                  <td class="title"><label for="inputbirthday">Birthday</label></td>
+                  <td class="title"><label for="inputbirthday">{{ 'Birthday'|lc }}</label></td>
                   <td class="field"><input type="date" name="birthday" id="inputbirthday" value="{{ ext.birthday }}" class="form-control" style="max-width:12rem"></td>
                 </tr>
               </tbody>
@@ -169,13 +169,13 @@
           </fieldset>
 
           <fieldset class="contact-section">
-            <legend>Notes</legend>
+            <legend>{{ 'Notes'|lc }}</legend>
             <textarea name="notes" rows="4" class="form-control">{{ ext.notes }}</textarea>
           </fieldset>
 
           <div class="formbuttons">
-            <button type="submit" class="btn btn-primary icon save">Save</button>
-            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.contact_view', cid=row.contact_id) if row else url_for('views.contacts') }}">Cancel</a>
+            <button type="submit" class="btn btn-primary icon save">{{ 'Save'|lc }}</button>
+            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.contact_view', cid=row.contact_id) if row else url_for('views.contacts') }}">{{ 'Cancel'|lc }}</a>
           </div>
         </form>
       </div>

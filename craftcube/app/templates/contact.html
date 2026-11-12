@@ -3,14 +3,14 @@
 
     <div id="layout-content" class="selected">
       <div class="header">
-        <a class="button icon back-list-button" href="{{ url_for('views.contacts') }}#back"><span class="inner">Back</span></a>
+        <a class="button icon back-list-button" href="{{ url_for('views.contacts') }}#back"><span class="inner">{{ 'Back'|lc }}</span></a>
         <span class="header-title">Contact</span>
         <div class="toolbar menu" role="toolbar">
-          <a class="btn btn-link edit" href="{{ url_for('views.contact_edit', cid=row.contact_id) }}" title="Edit contact"><span class="inner">Edit</span></a>
-          <a class="btn btn-link compose" href="{{ url_for('views.compose', _to=row.email) }}" title="Write email"><span class="inner">Compose</span></a>
+          <a class="btn btn-link edit" href="{{ url_for('views.contact_edit', cid=row.contact_id) }}" title="{{ 'Edit contact'|lc }}"><span class="inner">{{ 'Edit'|lc }}</span></a>
+          <a class="btn btn-link compose" href="{{ url_for('views.compose', _to=row.email) }}" title="Write email"><span class="inner">{{ 'Compose'|lc }}</span></a>
           <form method="post" action="{{ url_for('views.contact_delete', cid=row.contact_id) }}" class="d-inline"
-                onsubmit="return confirm('Delete this contact?')">
-            <button type="submit" class="btn btn-link delete" title="Delete contact"><span class="inner">Delete</span></button>
+                onsubmit="return confirm('{{ _('deletecontactconfirm') }}')">
+            <button type="submit" class="btn btn-link delete" title="Delete contact"><span class="inner">{{ 'Delete'|lc }}</span></button>
           </form>
         </div>
       </div>

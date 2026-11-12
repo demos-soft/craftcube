@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Insert contact(s)</title>
+<title>{{ 'Insert contact(s)'|lc }}</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
 <style>
@@ -19,16 +19,16 @@
 <div id="recipient-dialog-content" class="listbox" role="region" aria-labelledby="aria-label-composecontacts">
   <h2 id="aria-label-composecontacts" class="voice">Compose contacts</h2>
   <div role="search" aria-labelledby="aria-label-contactsearchform" class="searchbar menu">
-    <h2 id="aria-label-contactsearchform" class="voice">Contacts search form</h2>
+    <h2 id="aria-label-contactsearchform" class="voice">{{ 'Contacts search form'|lc }}</h2>
     <form id="rd-search" method="get">
-      <label for="searchform" class="voice">Search terms</label>
-      <input name="_q" id="searchform" class="no-bs" placeholder="Search..." type="text" value="{{ q }}">
+      <label for="searchform" class="voice">{{ 'Search terms'|lc }}</label>
+      <input name="_q" id="searchform" class="no-bs" placeholder="{{ 'Search...'|lc }}" type="text" value="{{ q }}">
       <input type="hidden" name="_dialog" value="1">
     </form>
     <a class="button reset" href="{{ url_for('views.contacts', _source=source, _dialog=1) }}"
-       title="Reset search" tabindex="0" role="button"><span class="inner">Reset search</span></a>
-    <a href="#" class="button search" title="Find contacts" tabindex="0" role="button"
-       onclick="document.getElementById('rd-search').submit(); return false;"><span class="inner">Find contacts</span></a>
+       title="{{ 'Reset search'|lc }}" tabindex="0" role="button"><span class="inner">{{ 'Reset search'|lc }}</span></a>
+    <a href="#" class="button search" title="{{ 'Find contacts'|lc }}" tabindex="0" role="button"
+       onclick="document.getElementById('rd-search').submit(); return false;"><span class="inner">{{ 'Find contacts'|lc }}</span></a>
   </div>
   <div class="scroller" tabindex="-1">
     <ul id="directorylist" class="treelist listing iconized">
@@ -52,25 +52,25 @@
           <td class="name">{{ c.name or c.email }}</td>
         </tr>
         {% else %}
-        <tr class="listempty"><td colspan="2">No contacts found.</td></tr>
+        <tr class="listempty"><td colspan="2">{{ 'No contacts found.'|lc }}</td></tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
-  <div class="pagenav menu footer small" role="toolbar" aria-label="List navigation">
+  <div class="pagenav menu footer small" role="toolbar" aria-label="{{ 'List navigation'|lc }}">
     <a class="firstpage{{ ' disabled' if page <= 1 }}" href="{{ url_for('views.contacts', _source=source, _dialog=1, _q=q, _page=1) }}"
-       title="Show first page" role="button" href tabindex="{{ -1 if page <= 1 else 0 }}"
-       {% if page <= 1 %}aria-disabled="true"{% endif %}><span class="inner">First</span></a>
+       title="{{ 'Show first page'|lc }}" role="button" href tabindex="{{ -1 if page <= 1 else 0 }}"
+       {% if page <= 1 %}aria-disabled="true"{% endif %}><span class="inner">{{ 'First'|lc }}</span></a>
     <a class="prevpage{{ ' disabled' if page <= 1 }}" href="{{ url_for('views.contacts', _source=source, _dialog=1, _q=q, _page=page - 1) }}"
-       title="Show previous page" role="button" tabindex="{{ -1 if page <= 1 else 0 }}"
-       {% if page <= 1 %}aria-disabled="true"{% endif %}><span class="inner">Previous</span></a>
+       title="{{ 'Show previous page'|lc }}" role="button" tabindex="{{ -1 if page <= 1 else 0 }}"
+       {% if page <= 1 %}aria-disabled="true"{% endif %}><span class="inner">{{ 'Previous'|lc }}</span></a>
     <span class="pagenav-text" aria-live="polite" aria-relevant="text">{{ total }}</span>
     <a class="nextpage{{ ' disabled' if not more }}" href="{{ url_for('views.contacts', _source=source, _dialog=1, _q=q, _page=page + 1) }}"
-       title="Show next page" role="button" tabindex="{{ -1 if not more else 0 }}"
-       {% if not more %}aria-disabled="true"{% endif %}><span class="inner">Next</span></a>
+       title="{{ 'Show next page'|lc }}" role="button" tabindex="{{ -1 if not more else 0 }}"
+       {% if not more %}aria-disabled="true"{% endif %}><span class="inner">{{ 'Next'|lc }}</span></a>
     <a class="lastpage{{ ' disabled' if not more }}" href="{{ url_for('views.contacts', _source=source, _dialog=1, _q=q, _page=pages) }}"
-       title="Show last page" role="button" tabindex="{{ -1 if not more else 0 }}"
-       {% if not more %}aria-disabled="true"{% endif %}><span class="inner">Last</span></a>
+       title="{{ 'Show last page'|lc }}" role="button" tabindex="{{ -1 if not more else 0 }}"
+       {% if not more %}aria-disabled="true"{% endif %}><span class="inner">{{ 'Last'|lc }}</span></a>
   </div>
 </div>
 <script>

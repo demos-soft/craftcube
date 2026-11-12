@@ -6,15 +6,15 @@
     <!-- sources/groups list -->
     <div id="layout-sidebar" class="listbox" role="navigation" aria-labelledby="directorylist-header">
       <div class="header">
-        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
-        <span id="directorylist-header" class="header-title">Groups</span>
-        <a title="Addressbook/group options" class="button icon sidebar-menu"
-           data-popup="groupoptions-menu" href="#"><span class="inner">Actions</span></a>
+        <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
+        <span id="directorylist-header" class="header-title">{{ 'Groups'|lc }}</span>
+        <a title="{{ 'Addressbook/group options'|lc }}" class="button icon sidebar-menu"
+           data-popup="groupoptions-menu" href="#"><span class="inner">{{ 'Actions'|lc }}</span></a>
       </div>
       <div class="scroller">
         <ul id="directorylist" class="treelist listing iconized" role="tree">
           <li class="addressbook{{ ' selected' if source == '0' }}" id="rcmliMA">
-            <a href="{{ url_for('views.contacts', _source='0') }}">Personal Addresses</a>
+            <a href="{{ url_for('views.contacts', _source='0') }}">{{ 'Personal Addresses'|lc }}</a>
             <ul class="groups" role="group">
               {% for g in groups %}
               <li class="contactgroup{{ ' selected' if group == g.contactgroup_id }}"
@@ -25,13 +25,13 @@
             </ul>
           </li>
           <li class="addressbook readonly{{ ' selected' if source == '1' }}" id="rcmliMQ">
-            <a href="{{ url_for('views.contacts', _source='1') }}">Collected Recipients</a>
+            <a href="{{ url_for('views.contacts', _source='1') }}">{{ 'Collected Recipients'|lc }}</a>
           </li>
           <li class="addressbook readonly{{ ' selected' if source == '2' }}" id="rcmliMg">
-            <a href="{{ url_for('views.contacts', _source='2') }}">Trusted Senders</a>
+            <a href="{{ url_for('views.contacts', _source='2') }}">{{ 'Trusted Senders'|lc }}</a>
           </li>
         </ul>
-        <h3 class="voice">Saved searches</h3>
+        <h3 class="voice">{{ 'Saved searches'|lc }}</h3>
         <ul id="savedsearchlist" class="treelist listing iconized"></ul>
       </div>
     </div>
@@ -39,32 +39,32 @@
     <!-- contacts list -->
     <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-contactslist">
       <div class="header">
-        <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
-        <a class="button icon back-sidebar-button folders" href="#sidebar"><span class="inner">Groups</span></a>
+        <a class="button icon task-menu-button" href="#menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
+        <a class="button icon back-sidebar-button folders" href="#sidebar"><span class="inner">{{ 'Groups'|lc }}</span></a>
         <span class="header-title">{{ list_title }}</span>
         <div class="toolbar menu" role="toolbar">
           <a href="#select" class="button select{{ ' disabled' if not rows }}" data-popup="listselect-menu"
-             title="Select"><span class="inner">Select</span></a>
+             title="{{ 'Select'|lc }}"><span class="inner">{{ 'Select'|lc }}</span></a>
         </div>
-        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
+        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
       </div>
       <div class="searchbar menu" role="search" aria-labelledby="aria-label-contactquicksearchbox">
-        <h2 id="aria-label-contactquicksearchbox" class="voice">Contacts search form</h2>
+        <h2 id="aria-label-contactquicksearchbox" class="voice">{{ 'Contacts search form'|lc }}</h2>
         <form name="searchform" id="searchform" action="{{ url_for('views.contacts') }}" method="get">
           <input type="hidden" name="_source" value="{{ source }}">
           {% if group %}<input type="hidden" name="_group" value="{{ group }}">{% endif %}
-          <label for="contactsearchform" class="voice">Search terms</label>
-          <input name="_q" id="contactsearchform" class="no-bs" placeholder="Search..." type="text"
+          <label for="contactsearchform" class="voice">{{ 'Search terms'|lc }}</label>
+          <input name="_q" id="contactsearchform" class="no-bs" placeholder="{{ 'Search...'|lc }}" type="text"
                  autocomplete="off" value="{{ q }}">
           <a href="#" class="button icon search" onclick="this.form.submit(); return false"
-             title="Find contacts"><span class="inner">Search</span></a>
+             title="{{ 'Find contacts'|lc }}"><span class="inner">{{ 'Search'|lc }}</span></a>
           <a href="#" class="button icon options{{ ' active' if q }}"
-             title="Search modifiers" data-popup="searchmenu"><span class="inner">Options</span></a>
+             title="{{ 'Search modifiers'|lc }}" data-popup="searchmenu"><span class="inner">{{ 'Options'|lc }}</span></a>
         </form>
       </div>
       <div id="searchmenu" class="hidden searchoptions scroller propform formcontainer"
            aria-labelledby="aria-label-search-menu">
-        <h3 id="aria-label-search-menu" class="voice">Search modifiers</h3>
+        <h3 id="aria-label-search-menu" class="voice">{{ 'Search modifiers'|lc }}</h3>
         <div class="formcontent">
           <ul class="proplist">
             <li><label><input type="checkbox" name="s_mods[]" value="name" checked> Name</label></li>
@@ -78,18 +78,18 @@
               <label for="s_scope" class="input-group-text">Search scope</label>
             </div>
             <select name="s_scope" id="s_scope" class="custom-select">
-              <option value="base">Current address book</option>
-              <option value="all">All address books</option>
+              <option value="base">{{ 'Current address book'|lc }}</option>
+              <option value="all">{{ 'All address books'|lc }}</option>
             </select>
           </div>
         </div>
         <div class="formbuttons">
           <button type="button" class="btn btn-primary icon search"
-                  onclick="document.getElementById('searchform').submit()">Search</button>
+                  onclick="document.getElementById('searchform').submit()">{{ 'Search'|lc }}</button>
         </div>
       </div>
       <div class="scroller">
-        <h2 id="aria-label-contactslist" class="voice">Contacts</h2>
+        <h2 id="aria-label-contactslist" class="voice">{{ 'Contacts'|lc }}</h2>
         <form method="post" action="{{ url_for('views.collected_delete' if readonly else 'views.contacts_delete') }}" id="contactact">
           {% if readonly %}<input type="hidden" name="_source" value="{{ source }}">{% endif %}
           <table class="listing iconized contactlist{{ ' readonly' if readonly }}" id="contacts-table"
@@ -107,69 +107,69 @@
                 </td>
               </tr>
               {% else %}
-              <tr class="listempty"><td colspan="2">No contacts found.</td></tr>
+              <tr class="listempty"><td colspan="2">{{ 'No contacts found.'|lc }}</td></tr>
               {% endfor %}
             </tbody>
           </table>
         </form>
       </div>
-      <div class="pagenav menu footer small" role="toolbar" aria-label="List navigation">
+      <div class="pagenav menu footer small" role="toolbar" aria-label="{{ 'List navigation'|lc }}">
         <a href="{{ url_for('views.contacts', _source=source, _group=group, _q=q, _page=1) }}"
-           class="firstpage{{ ' disabled' if page <= 1 }}" title="Show first page"><span class="inner">First</span></a>
+           class="firstpage{{ ' disabled' if page <= 1 }}" title="{{ 'Show first page'|lc }}"><span class="inner">{{ 'First'|lc }}</span></a>
         <a href="{{ url_for('views.contacts', _source=source, _group=group, _q=q, _page=page-1) }}"
-           class="prevpage{{ ' disabled' if page <= 1 }}" title="Show previous page"><span class="inner">Previous</span></a>
+           class="prevpage{{ ' disabled' if page <= 1 }}" title="{{ 'Show previous page'|lc }}"><span class="inner">{{ 'Previous'|lc }}</span></a>
         <span class="pagenav-text" aria-live="polite" aria-relevant="text">
           {%- if rows %}{{ (page-1)*20+1 }} – {{ (page-1)*20 + rows|length }} of {{ total }}{% else %}&nbsp;{% endif -%}
         </span>
         <a href="{{ url_for('views.contacts', _source=source, _group=group, _q=q, _page=page+1) }}"
-           class="nextpage{{ ' disabled' if not more }}" title="Show next page"><span class="inner">Next</span></a>
+           class="nextpage{{ ' disabled' if not more }}" title="{{ 'Show next page'|lc }}"><span class="inner">{{ 'Next'|lc }}</span></a>
         <a href="{{ url_for('views.contacts', _source=source, _group=group, _q=q, _page=999999) }}"
-           class="lastpage{{ ' disabled' if not more }}" title="Show last page"><span class="inner">Last</span></a>
+           class="lastpage{{ ' disabled' if not more }}" title="{{ 'Show last page'|lc }}"><span class="inner">{{ 'Last'|lc }}</span></a>
       </div>
     </div>
 
     <!-- contact details frame -->
     <div id="layout-content" role="main">
-      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
+      <h2 id="aria-label-toolbar" class="voice">{{ 'Application toolbar'|lc }}</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
-        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
         <span class="header-title"></span>
         <!-- toolbar -->
         <div id="addressbooktoolbar" class="toolbar menu">
           <a href="{{ url_for('views.contact_edit', cid=None) }}" class="create{{ ' disabled' if readonly }}"
-             title="Create a new contact" data-fab="true"><span class="inner">Create</span></a>
-          <a href="#" class="print disabled" id="tb-print-contact" title="Print contact"
-             data-hidden="small"><span class="inner">Print</span></a>
+             title="Create a new contact" data-fab="true"><span class="inner">{{ 'Create'|lc }}</span></a>
+          <a href="#" class="print disabled" id="tb-print-contact" title="{{ 'Print contact'|lc }}"
+             data-hidden="small"><span class="inner">{{ 'Print'|lc }}</span></a>
           <a href="#" class="delete disabled" id="tb-delete-contact" title="Delete contact"
-             data-readonly="{{ '1' if readonly else '0' }}"><span class="inner">Delete</span></a>
+             data-readonly="{{ '1' if readonly else '0' }}"><span class="inner">{{ 'Delete'|lc }}</span></a>
           <span class="spacer"></span>
           <a href="#search" class="search" id="btn-search" title="Advanced search"
-             onclick="document.querySelector('#contactsearchform').focus(); return false;"><span class="inner">Search</span></a>
-          <a href="#" class="import" id="btn-import" title="Import contacts"
-             data-popup="contactimportmenu"><span class="inner">Import</span></a>
+             onclick="document.querySelector('#contactsearchform').focus(); return false;"><span class="inner">{{ 'Search'|lc }}</span></a>
+          <a href="#" class="import" id="btn-import" title="{{ 'Import contacts'|lc }}"
+             data-popup="contactimportmenu"><span class="inner">{{ 'Import'|lc }}</span></a>
           <span class="dropbutton">
             <a href="{{ url_for('views.contacts_export', _source=source) }}" class="export disabled" id="tb-export-contact"
-               title="Export contacts in vCard format"><span class="inner">Export</span></a>
+               title="{{ 'Export contacts in vCard format'|lc }}"><span class="inner">{{ 'Export'|lc }}</span></a>
             <a href="#export" class="dropdown" data-popup="export-menu">
-              <span class="inner">Contact export options</span>
+              <span class="inner">{{ 'Contact export options'|lc }}</span>
             </a>
           </span>
           <a href="#more" id="contactmenulink" class="more" title="More actions"
-             data-popup="contact-menu"><span class="inner">More</span></a>
+             data-popup="contact-menu"><span class="inner">{{ 'More'|lc }}</span></a>
         </div>
       </div>
-      <h2 id="aria-label-contact-frame" class="voice">Contact properties</h2>
+      <h2 id="aria-label-contact-frame" class="voice">{{ 'Contact properties'|lc }}</h2>
       <div class="iframe-wrapper">
-        <iframe id="contentframe" name="contentframe" title="Contact properties" src="{{ url_for('static', filename='watermark.html') }}"></iframe>
+        <iframe id="contentframe" name="contentframe" title="{{ 'Contact properties'|lc }}" src="{{ url_for('static', filename='watermark.html') }}"></iframe>
       </div>
     </div>
 
     <!-- popup menus -->
     <div id="export-menu" class="popupmenu">
-      <h3 id="aria-label-export-menu" class="voice">Contact export options</h3>
+      <h3 id="aria-label-export-menu" class="voice">{{ 'Contact export options'|lc }}</h3>
       <ul class="menu listing" role="menu">
-        <li role="menuitem"><a class="export all" href="{{ url_for('views.contacts_export', _source=source) }}"><span>Export all</span></a></li>
-        <li role="menuitem"><a class="export select disabled" id="export-selected" href="#" data-source="{{ source }}"><span>Export selected</span></a></li>
+        <li role="menuitem"><a class="export all" href="{{ url_for('views.contacts_export', _source=source) }}"><span>{{ 'Export all'|lc }}</span></a></li>
+        <li role="menuitem"><a class="export select disabled" id="export-selected" href="#" data-source="{{ source }}"><span>{{ 'Export selected'|lc }}</span></a></li>
       </ul>
     </div>
 
@@ -177,45 +177,45 @@
       <h3 id="aria-label-groupoptions-menu" class="voice">Addressbook/group options</h3>
       <ul class="menu listing" role="menu">
         <li role="menuitem"><a class="create" href="#group-create" id="group-create-link"
-            data-form="newgroupform"><span>Add group</span></a></li>
+            data-form="newgroupform"><span>{{ 'Add group'|lc }}</span></a></li>
         <li role="menuitem"><a class="group rename disabled" id="group-rename-link" href="#"
-            data-group-name="" data-groupid="" title="Rename selected group"><span>Rename group</span></a></li>
+            data-group-name="" data-groupid="" title="Rename selected group"><span>{{ 'Rename group'|lc }}</span></a></li>
         <li role="menuitem"><a class="group delete disabled" id="group-delete-link" href="#"
-            data-group-name="" data-groupid="" title="Delete selected group"><span>Delete group</span></a></li>
-        <li role="menuitem"><a class="search disabled" href="#"><span>Save search</span></a></li>
-        <li role="menuitem"><a class="search delete disabled" href="#"><span>Delete search</span></a></li>
+            data-group-name="" data-groupid="" title="Delete selected group"><span>{{ 'Delete group'|lc }}</span></a></li>
+        <li role="menuitem"><a class="search disabled" href="#"><span>{{ 'Save search'|lc }}</span></a></li>
+        <li role="menuitem"><a class="search delete disabled" href="#"><span>{{ 'Delete search'|lc }}</span></a></li>
       </ul>
     </div>
 
     <div id="listselect-menu" class="popupmenu">
-      <h3 id="aria-label-listselect-menu" class="voice">List selection menu</h3>
+      <h3 id="aria-label-listselect-menu" class="voice">{{ 'List selection menu'|lc }}</h3>
       <ul class="menu listing" role="menu">
-        <li role="menuitem"><a class="selection toggle-link" href="#" id="list-toggle-button">Selection</a></li>
-        <li role="menuitem"><a class="select page" href="#" data-select="page">Current page</a></li>
-        <li role="menuitem"><a class="select invert" href="#" data-select="invert">Invert</a></li>
-        <li role="menuitem"><a class="select none" href="#" data-select="none">None</a></li>
+        <li role="menuitem"><a class="selection toggle-link" href="#" id="list-toggle-button">{{ 'Selection'|lc }}</a></li>
+        <li role="menuitem"><a class="select page" href="#" data-select="page">{{ 'Current page'|lc }}</a></li>
+        <li role="menuitem"><a class="select invert" href="#" data-select="invert">{{ 'Invert'|lc }}</a></li>
+        <li role="menuitem"><a class="select none" href="#" data-select="none">{{ 'None'|lc }}</a></li>
       </ul>
     </div>
 
     <div id="contact-menu" class="popupmenu">
-      <h3 id="aria-label-contact-menu" class="voice">More contact actions</h3>
+      <h3 id="aria-label-contact-menu" class="voice">{{ 'More contact actions'|lc }}</h3>
       <ul class="menu listing" role="menu">
         <li role="menuitem"><a class="qrcode disabled" id="contact-qrcode" href="#"
-            data-hidden="small"><span>QR Code</span></a></li>
+            data-hidden="small"><span>{{ 'QR Code'|lc }}</span></a></li>
         <li role="menuitem"><a class="assigngroup disabled" id="assigngroup-link" href="#"
-            aria-haspopup="true"><span>Assign to group...</span></a></li>
-        <li role="menuitem"><a class="removegroup disabled" id="removegroup-link" href="#"><span>Remove from group</span></a></li>
+            aria-haspopup="true"><span>{{ 'Assign to group...'|lc }}</span></a></li>
+        <li role="menuitem"><a class="removegroup disabled" id="removegroup-link" href="#"><span>{{ 'Remove from group'|lc }}</span></a></li>
         <li role="menuitem"><a class="copy disabled" href="#"
-            aria-haspopup="true"><span class="folder-selector-link">Copy to...</span></a></li>
+            aria-haspopup="true"><span class="folder-selector-link">{{ 'Copy to...'|lc }}</span></a></li>
       </ul>
     </div>
 
     <!-- drag-&-drop drop-action menu (ui.js drag_menu) -->
     <div id="dragcontact-menu" class="popupmenu">
-      <h3 id="aria-label-dragcontact-menu" class="voice">Drag-n-Drop action menu</h3>
+      <h3 id="aria-label-dragcontact-menu" class="voice">{{ 'Drag-n-Drop action menu'|lc }}</h3>
       <ul class="menu listing" role="menu" aria-labelledby="aria-label-dragcontact-menu">
-        <li role="menuitem"><a class="disabled" href="#"><span>Move</span></a></li>
-        <li role="menuitem"><a class="disabled" href="#"><span>Copy</span></a></li>
+        <li role="menuitem"><a class="disabled" href="#"><span>{{ 'Move'|lc }}</span></a></li>
+        <li role="menuitem"><a class="disabled" href="#"><span>{{ 'Copy'|lc }}</span></a></li>
       </ul>
     </div>
 
@@ -233,12 +233,12 @@
     </div>
 
     <div id="contactimportmenu" class="popupmenu formcontent">
-      <h3 class="voice">Import contacts</h3>
+      <h3 class="voice">{{ 'Import contacts'|lc }}</h3>
       <form method="post" action="{{ url_for('views.contacts_import') }}" enctype="multipart/form-data">
         <div class="input-group">
           <div class="input-group-prepend">
             <span class="input-group-text btn btn-primary icon upload">
-              <span class="inner">Choose files...</span>
+              <span class="inner">{{ 'Choose files...'|lc }}</span>
               <input type="file" name="_file" accept=".vcf,.vcard,text/vcard" class="local-upload">
             </span>
           </div>
@@ -253,7 +253,7 @@
         <div class="input-group">
           <input type="text" name="name" class="form-control" placeholder="Group name" required>
           <div class="input-group-append">
-            <button type="submit" class="btn btn-primary icon add"><span class="inner">Save</span></button>
+            <button type="submit" class="btn btn-primary icon add"><span class="inner">{{ 'Save'|lc }}</span></button>
           </div>
         </div>
       </form>
@@ -351,7 +351,7 @@
   if (del) del.addEventListener('click', function (e) {
     e.preventDefault();
     if (del.classList.contains('disabled') || !checkedVals().length) return;
-    if (!confirm('Really delete the selected item(s)?')) return;
+    if (!confirm('{{ _('deletecontactconfirm') }}')) return;
     var form = document.getElementById('contactact');
     form.querySelectorAll('input.submit-uids').forEach(function (x) { x.remove(); });
     checkedRows().forEach(function (r) {
@@ -447,7 +447,7 @@
   if (gdl) gdl.addEventListener('click', function (e) {
     e.preventDefault();
     if (gdl.classList.contains('disabled')) return;
-    if (!confirm('Delete group "' + gdl.getAttribute('data-group-name') + '"?')) return;
+    if (!confirm('{{ _('deletegroupconfirm') }}')) return;
     var f = document.createElement('form');
     f.method = 'post';
     f.action = '/contactgroup/' + gdl.getAttribute('data-groupid') + '/delete';

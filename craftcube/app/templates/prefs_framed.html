@@ -88,7 +88,7 @@
     </form>
   </div>
   <div class="formbuttons">
-    <button class="btn btn-primary submit" type="submit" value="Save">Save</button>
+    <button class="btn btn-primary submit" type="submit" value="Save">{{ 'Save'|lc }}</button>
   </div>
   <div id="messagestack">
     {%- with messages = get_flashed_messages(with_categories=true) %}

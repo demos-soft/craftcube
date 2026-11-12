@@ -6,9 +6,9 @@
     <h1 class="voice">Settings : Identities</h1>
     <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-identitieslist">
       <div class="header">
-        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Settings</span></a>
-        <span id="aria-label-identitieslist" class="header-title">Identities</span>
-        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
+        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">{{ 'Settings'|lc }}</span></a>
+        <span id="aria-label-identitieslist" class="header-title">{{ 'Identities'|lc }}</span>
+        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
       </div>
       <div class="scroller">
         <table id="identities-table" class="listing" role="listbox" data-list="identity_list"
@@ -30,19 +30,19 @@
 
     <!-- identity edit form (reference loads it into preferences-frame) -->
     <div id="layout-content" role="main">
-      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
+      <h2 id="aria-label-toolbar" class="voice">{{ 'Application toolbar'|lc }}</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
-        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
         <span class="header-title"></span>
         <div id="identitiestoolbar" class="toolbar menu">
-          <a class="create" title="Create new identity" data-fab="true" role="button"
-             href="{{ url_for('views.identities', _edit='new') }}"><span class="inner">Create</span></a>
+          <a class="create" title="{{ 'Create new identity'|lc }}" data-fab="true" role="button"
+             href="{{ url_for('views.identities', _edit='new') }}"><span class="inner">{{ 'Create'|lc }}</span></a>
           {% if edit_row %}
-          <a class="delete" title="Delete" role="button"
-             href="#" onclick="if (confirm('Delete this identity?')) document.getElementById('identity-delete-form').submit(); return false"><span class="inner">Delete</span></a>
+          <a class="delete" title="{{ 'Delete'|lc }}" role="button"
+             href="#" onclick="if (confirm('Delete this identity?')) document.getElementById('identity-delete-form').submit(); return false"><span class="inner">{{ 'Delete'|lc }}</span></a>
           {% else %}
-          <a class="delete disabled" title="Delete" role="button" tabindex="-1" aria-disabled="true"
-             href="#"><span class="inner">Delete</span></a>
+          <a class="delete disabled" title="{{ 'Delete'|lc }}" role="button" tabindex="-1" aria-disabled="true"
+             href="#"><span class="inner">{{ 'Delete'|lc }}</span></a>
           {% endif %}
         </div>
       </div>
@@ -57,13 +57,13 @@
                     <td><input type="text" name="name" id="inputname" value="{{ edit_row['name'] if edit_row else '' }}" class="form-control"></td></tr>
                 <tr><td class="title"><label for="inputemail">E-mail</label></td>
                     <td><input type="text" name="email" id="inputemail" value="{{ edit_row.email if edit_row else '' }}" class="form-control" required></td></tr>
-                <tr><td class="title"><label for="inputorg">Organization</label></td>
+                <tr><td class="title"><label for="inputorg">{{ 'Organization'|lc }}</label></td>
                     <td><input type="text" name="organization" id="inputorg" value="{{ edit_row.organization if edit_row else '' }}" class="form-control"></td></tr>
-                <tr><td class="title"><label for="inputreply">Reply-To</label></td>
+                <tr><td class="title"><label for="inputreply">{{ 'Reply-To'|lc }}</label></td>
                     <td><input type="text" name="reply_to" id="inputreply" value="{{ edit_row['reply-to'] if edit_row else '' }}" class="form-control"></td></tr>
-                <tr><td class="title"><label for="inputbcc">Bcc</label></td>
+                <tr><td class="title"><label for="inputbcc">{{ 'Bcc'|lc }}</label></td>
                     <td><input type="text" name="bcc" id="inputbcc" value="{{ edit_row.bcc if edit_row else '' }}" class="form-control"></td></tr>
-                <tr><td class="title"><label for="inputsig">Signature</label></td>
+                <tr><td class="title"><label for="inputsig">{{ 'Signature'|lc }}</label></td>
                     <td class="html-editor"><textarea name="signature" id="inputsig" rows="6" spellcheck="1" data-html-editor="1"
                         class="form-control{{ ' mce_editor' if edit_row and edit_row.html_signature }}">{{ edit_row.signature if edit_row else '' }}</textarea></td></tr>
                 <tr class="proprow">
@@ -72,7 +72,7 @@
                     <label><input type="checkbox" onclick="return cc_editor.toggle({id: 'inputsig', html: this.checked})" name="html_signature" value="1" {{ 'checked' if edit_row and edit_row.html_signature }}> HTML signature</label>
                   </td>
                 </tr>
-                <tr><td class="title">Options</td>
+                <tr><td class="title">{{ 'Options'|lc }}</td>
                     <td>
                       <label><input type="checkbox" name="standard" value="1" {{ 'checked' if (edit_row and edit_row.standard) or not edit_row }}> Set as default</label>
                     </td></tr>
@@ -80,8 +80,8 @@
             </table>
           </fieldset>
           <div class="formbuttons">
-            <button type="submit" class="btn btn-primary icon save">Save</button>
-            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.identities') }}">Cancel</a>
+            <button type="submit" class="btn btn-primary icon save">{{ 'Save'|lc }}</button>
+            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.identities') }}">{{ 'Cancel'|lc }}</a>
           </div>
         </form>
         {% if edit_row %}
@@ -91,7 +91,7 @@
       {% else %}
       <div class="iframe-wrapper">
         <iframe name="preferences-frame" id="preferences-frame"
-                src="{{ url_for('static', filename='watermark.html') }}" title="Identity edit form"></iframe>
+                src="{{ url_for('static', filename='watermark.html') }}" title="{{ 'Identity edit form'|lc }}"></iframe>
       </div>
       {% endif %}
     </div>

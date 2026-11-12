@@ -7,7 +7,7 @@
 
     <div id="layout-content" class="selected">
       <div class="header">
-        <a class="button icon back-content-button" href="{{ url_for('views.responses') }}"><span class="inner">Cancel</span></a>
+        <a class="button icon back-content-button" href="{{ url_for('views.responses') }}"><span class="inner">{{ 'Cancel'|lc }}</span></a>
         <span class="header-title">{{ 'Edit' if row else 'Create' }} response</span>
       </div>
       <div class="formcontainer content">
@@ -17,22 +17,22 @@
             <table class="layout propform">
               <tbody>
                 <tr>
-                  <td class="title"><label for="inputname">Name</label></td>
+                  <td class="title"><label for="inputname">{{ 'Name'|lc }}</label></td>
                   <td class="field"><input type="text" name="name" id="inputname"
                       value="{{ row.name if row else '' }}" class="form-control" required></td>
                 </tr>
-                <tr class="form-group row"><td class="title col-sm-4" style="display: none;"><label for="inputbody">Response Text</label></td>
+                <tr class="form-group row"><td class="title col-sm-4" style="display: none;"><label for="inputbody">{{ 'Response Text'|lc }}</label></td>
                   <td class="col-sm-8"><textarea rows="18" spellcheck="1" data-html-editor="1" name="body" id="inputbody" cols="60"
                       class="form-control{{ ' mce_editor' if row and row.html }}">{{ row.body if row else '' }}</textarea></td>
                 </tr>
                 <tr class="form-group row form-check" style="display: none;">
-                  <td class="title col-sm-4"><label for="inputishtml">HTML</label></td>
+                  <td class="title col-sm-4"><label for="inputishtml">{{ 'HTML'|lc }}</label></td>
                   <td class="col-sm-8">
                     <div class="custom-control custom-switch">
                       <input type="checkbox" onclick="return cc_editor.toggle({id: 'inputbody', html: this.checked})"
                              name="html" value="1" id="inputishtml"
                              class="form-check-input custom-control-input"{{ ' checked' if row and row.html }}>
-                      <label for="inputishtml" class="custom-control-label">HTML</label>
+                      <label for="inputishtml" class="custom-control-label">{{ 'HTML'|lc }}</label>
                     </div>
                   </td>
                 </tr>
@@ -40,8 +40,8 @@
             </table>
           </fieldset>
           <div class="formbuttons">
-            <button type="submit" class="btn btn-primary icon save">Save</button>
-            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.responses') }}">Cancel</a>
+            <button type="submit" class="btn btn-primary icon save">{{ 'Save'|lc }}</button>
+            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.responses') }}">{{ 'Cancel'|lc }}</a>
           </div>
         </form>
       </div>

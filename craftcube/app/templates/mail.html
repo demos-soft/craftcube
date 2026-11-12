@@ -1,17 +1,17 @@
 {% include "includes/layout.html" %}
 {% include "includes/menu.html" %}
 
-    <h1 class="voice">Mail</h1>
+    <h1 class="voice">{{ 'Mail'|lc }}</h1>
 
     <!-- folders list -->
     <div id="layout-sidebar" class="listbox" role="navigation" aria-labelledby="aria-label-folderlist">
       <div class="header">
-        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
         <span class="header-title username">{{ current_user.username }}</span>
-        <a href="#folder-actions" class="button icon sidebar-menu" title="Folder actions..."
-           data-popup="mailboxoptions-menu"><span class="inner">Actions</span></a>
+        <a href="#folder-actions" class="button icon sidebar-menu" title="{{ 'Folder actions...'|lc }}"
+           data-popup="mailboxoptions-menu"><span class="inner">{{ 'Actions'|lc }}</span></a>
       </div>
-      <h2 id="aria-label-folderlist" class="voice">Email folder selection</h2>
+      <h2 id="aria-label-folderlist" class="voice">{{ 'Email folder selection'|lc }}</h2>
       <div id="folderlist-content" class="scroller">
         <ul id="mailboxlist" class="treelist listing folderlist notree" role="tree">
           {% for f in folders %}
@@ -37,56 +37,56 @@
     <!-- messages list -->
     <div id="layout-list" class="listbox selected">
       <div id="messagelist-header" class="header">
-        <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
-        <a class="button icon back-sidebar-button folders" href="#sidebar"><span class="inner">Folders</span></a>
+        <a class="button icon task-menu-button" href="#menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
+        <a class="button icon back-sidebar-button folders" href="#sidebar"><span class="inner">{{ 'Folders'|lc }}</span></a>
         <span class="header-title">{{ folder_title }}</span>
         <ul class="menu toolbar listing iconized" id="toolbar-list-menu">
           <li role="menuitem"><a href="#select" class="select{{ ' active' }}" data-popup="listselect-menu"
-              title="Select" aria-haspopup="true" aria-expanded="false" aria-owns="listselect-menu"><span class="inner">Select</span></a></li>
+              title="{{ 'Select'|lc }}" aria-haspopup="true" aria-expanded="false" aria-owns="listselect-menu"><span class="inner">{{ 'Select'|lc }}</span></a></li>
           {% if not preview_uid %}
           <li role="menuitem"><a href="#threads" class="threads disabled" data-popup="threadselect-menu"
-              title="Threads" aria-haspopup="true" aria-expanded="false" aria-owns="threadselect-menu"><span class="inner">Threads</span></a></li>
+              title="{{ 'Threads'|lc }}" aria-haspopup="true" aria-expanded="false" aria-owns="threadselect-menu"><span class="inner">{{ 'Threads'|lc }}</span></a></li>
           {% endif %}
           <li role="menuitem"><a href="#list-options" class="options active" id="listmenulink" data-popup="listoptions-menu"
-              title="Options" tabindex="0"><span class="inner">Options</span></a></li>
+              title="{{ 'Options'|lc }}" tabindex="0"><span class="inner">{{ 'Options'|lc }}</span></a></li>
         </ul>
         <a href="{{ url_for('views.mail', _mbox=folder, _sort=sort, _sort_order=order) }}"
-           class="button icon toolbar-button refresh" title="Check for new messages"><span class="inner">Refresh</span></a>
-        <a class="button icon toolbar-menu-button" href="#list-menu" data-popup="list-menu"><span class="inner">Menu</span></a>
+           class="button icon toolbar-button refresh" title="{{ 'Check for new messages'|lc }}"><span class="inner">{{ 'Refresh'|lc }}</span></a>
+        <a class="button icon toolbar-menu-button" href="#list-menu" data-popup="list-menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
         <a class="button icon toolbar-list-button active" href="#list-menu" data-popup="toolbar-list-menu"
            title="" aria-haspopup="true" aria-expanded="false" aria-owns="toolbar-list-menu"></a>
       </div>
 
       <!-- search -->
       <div class="searchbar menu" role="search" aria-labelledby="aria-label-mailquicksearchbox">
-        <h2 id="aria-label-mailquicksearchbox" class="voice">Email search input</h2>
+        <h2 id="aria-label-mailquicksearchbox" class="voice">{{ 'Email search input'|lc }}</h2>
         <form name="rcmqsearchform" id="rcmqsearchform" action="{{ url_for('views.mail') }}" method="get">
           <input type="hidden" name="_mbox" value="{{ folder }}">
-          <label for="mailsearchform" class="voice">Search terms</label>
-          <input name="_q" id="mailsearchform" class="no-bs" placeholder="Search..." type="text"
+          <label for="mailsearchform" class="voice">{{ 'Search terms'|lc }}</label>
+          <input name="_q" id="mailsearchform" class="no-bs" placeholder="{{ 'Search...'|lc }}" type="text"
                  autocomplete="off" value="{{ search }}">
         </form>
-        <a class="button reset{{ ' hidden' if not search }}" href="#" title="Reset search"
-           role="button"><span class="inner">Reset search</span></a>
+        <a class="button reset{{ ' hidden' if not search }}" href="#" title="{{ 'Reset search'|lc }}"
+           role="button"><span class="inner">{{ 'Reset search'|lc }}</span></a>
         <a class="button unread{{ ' selected' if search_filter == 'unread' }}" href="#" role="button"
-           title="Show unread messages" data-toggle-unread></a>
-        <a href="#search-filter" class="button options{{ ' selected' if searching }}" title="Options"
-           role="button" data-popup="searchmenu"><span class="inner">Options</span></a>
-        <a href="#search" class="button search" title="Find mail messages" role="button"
-           onclick="document.getElementById('rcmqsearchform').submit(); return false"><span class="inner">Find mail messages</span></a>
+           title="{{ 'Show unread messages'|lc }}" data-toggle-unread></a>
+        <a href="#search-filter" class="button options{{ ' selected' if searching }}" title="{{ 'Options'|lc }}"
+           role="button" data-popup="searchmenu"><span class="inner">{{ 'Options'|lc }}</span></a>
+        <a href="#search" class="button search" title="{{ 'Find mail messages'|lc }}" role="button"
+           onclick="document.getElementById('rcmqsearchform').submit(); return false"><span class="inner">{{ 'Find mail messages'|lc }}</span></a>
       </div>
 
       <!-- search options -->
       <div id="searchmenu" class="hidden searchoptions scroller propform formcontainer"
            aria-labelledby="aria-label-search-menu" aria-controls="messagelist">
-        <h3 id="aria-label-search-menu" class="voice">Search modifiers</h3>
+        <h3 id="aria-label-search-menu" class="voice">{{ 'Search modifiers'|lc }}</h3>
         <div class="formcontent">
           {% set mods = search_mods or ['subject','from','to','body'] %}
           <ul class="proplist">
             <li><label><input type="checkbox" name="_sm" value="subject" form="rcmqsearchform"{{ ' checked' if 'subject' in mods }}> Subject</label></li>
             <li class="with-sublist">
               <label><input type="checkbox" name="_sm" value="sender" form="rcmqsearchform"{{ ' checked' if 'sender' in mods or 'from' in mods or 'replyto' in mods or 'followupto' in mods }}> Sender</label>
-              <a class="button icon dropdown" role="button" href="#" title="Details"></a>
+              <a class="button icon dropdown" role="button" href="#" title="{{ 'Details'|lc }}"></a>
               <ul class="proplist d-none">
                 <li><label><input type="checkbox" name="_sm" value="from" form="rcmqsearchform"{{ ' checked' if 'from' in mods }}> From</label></li>
                 <li><label><input type="checkbox" name="_sm" value="replyto" form="rcmqsearchform"{{ ' checked' if 'replyto' in mods }}> Reply-To</label></li>
@@ -95,7 +95,7 @@
             </li>
             <li class="with-sublist">
               <label><input type="checkbox" name="_sm" value="recipient" form="rcmqsearchform"{{ ' checked' if 'to' in mods or 'cc' in mods or 'bcc' in mods }}> Recipient</label>
-              <a class="button icon dropdown" role="button" href="#" title="Details"></a>
+              <a class="button icon dropdown" role="button" href="#" title="{{ 'Details'|lc }}"></a>
               <ul class="proplist d-none">
                 <li><label><input type="checkbox" name="_sm" value="to" form="rcmqsearchform"{{ ' checked' if 'to' in mods }}> To</label></li>
                 <li><label><input type="checkbox" name="_sm" value="cc" form="rcmqsearchform"{{ ' checked' if 'cc' in mods }}> Cc</label></li>
@@ -107,28 +107,28 @@
           </ul>
           <div class="input-group">
             <div class="input-group-prepend">
-              <label for="searchfilter" class="input-group-text">Type</label>
+              <label for="searchfilter" class="input-group-text">{{ 'Type'|lc }}</label>
             </div>
             <select name="_sf" id="searchfilter" class="custom-select" form="rcmqsearchform">
-              <option value="all"{{ ' selected' if search_filter == 'all' }}>All</option>
-              <option value="unread"{{ ' selected' if search_filter == 'unread' }}>Unread</option>
-              <option value="flagged"{{ ' selected' if search_filter == 'flagged' }}>Flagged</option>
+              <option value="all"{{ ' selected' if search_filter == 'all' }}>{{ 'All'|lc }}</option>
+              <option value="unread"{{ ' selected' if search_filter == 'unread' }}>{{ 'Unread'|lc }}</option>
+              <option value="flagged"{{ ' selected' if search_filter == 'flagged' }}>{{ 'Flagged'|lc }}</option>
               <option value="answered"{{ ' selected' if search_filter == 'answered' }}>Answered</option>
-              <option value="unanswered"{{ ' selected' if search_filter == 'unanswered' }}>Unanswered</option>
+              <option value="unanswered"{{ ' selected' if search_filter == 'unanswered' }}>{{ 'Unanswered'|lc }}</option>
               {# reference: deleted/undeleted only when skip_deleted is off #}
               {% if not (g.prefs or {}).get('skip_deleted') %}
-              <option value="deleted"{{ ' selected' if search_filter == 'deleted' }}>Deleted</option>
+              <option value="deleted"{{ ' selected' if search_filter == 'deleted' }}>{{ 'Deleted'|lc }}</option>
               <option value="undeleted"{{ ' selected' if search_filter == 'undeleted' }}>Undeleted</option>
               {% endif %}
             </select>
           </div>
           <div class="input-group">
             <div class="input-group-prepend">
-              <label for="s_interval" class="input-group-text">Date</label>
+              <label for="s_interval" class="input-group-text">{{ 'Date'|lc }}</label>
             </div>
             <select name="_si" id="s_interval" class="custom-select" form="rcmqsearchform">
               <option value="all"{{ ' selected' if search_interval == 'all' }}>Any</option>
-              <option value="today"{{ ' selected' if search_interval == 'today' }}>Today</option>
+              <option value="today"{{ ' selected' if search_interval == 'today' }}>{{ 'Today'|lc }}</option>
               <option value="last7"{{ ' selected' if search_interval == 'last7' }}>Last 7 days</option>
               <option value="last14"{{ ' selected' if search_interval == 'last14' }}>Last 14 days</option>
               <option value="last30"{{ ' selected' if search_interval == 'last30' }}>Last 30 days</option>
@@ -137,22 +137,22 @@
           </div>
           <div class="input-group">
             <div class="input-group-prepend">
-              <label for="s_scope" class="input-group-text">Scope</label>
+              <label for="s_scope" class="input-group-text">{{ 'Scope'|lc }}</label>
             </div>
             <select name="_ss" id="s_scope" class="custom-select" form="rcmqsearchform">
-              <option value="base"{{ ' selected' if search_scope == 'base' }}>Current folder</option>
+              <option value="base"{{ ' selected' if search_scope == 'base' }}>{{ 'Current folder'|lc }}</option>
               <option value="sub"{{ ' selected' if search_scope == 'sub' }}>Subfolders</option>
-              <option value="all"{{ ' selected' if search_scope == 'all' }}>All folders</option>
+              <option value="all"{{ ' selected' if search_scope == 'all' }}>{{ 'All folders'|lc }}</option>
             </select>
           </div>
         </div>
         <div class="formbuttons">
-          <button type="submit" class="btn btn-primary icon search" form="rcmqsearchform">Search</button>
+          <button type="submit" class="btn btn-primary icon search" form="rcmqsearchform">{{ 'Search'|lc }}</button>
         </div>
       </div>
 
       <div id="messagelist-content" class="scroller" tabindex="-1">
-        <h2 id="aria-label-messagelist" class="voice">Email Messages Listing</h2>
+        <h2 id="aria-label-messagelist" class="voice">{{ 'Email Messages Listing'|lc }}</h2>
         <form method="post" action="{{ url_for('views.mail_act') }}" id="mailact">
           <input type="hidden" name="_mbox" value="{{ folder }}">
           <input type="hidden" name="_return" value="{{ request.full_path }}">
@@ -161,18 +161,18 @@
                  data-folder="{{ folder }}">
             <thead>
               <tr>
-                <th class="selection"><span class="inner">Select</span></th>
-                <th class="subject{{ ' sorted ' ~ order if sort == 'subject' }}"><a class="sortcol" rel="subject" title="Sort by"
-                    href="{{ url_for('views.mail', _mbox=folder, _sort='subject', _sort_order=('asc' if sort=='subject' and order=='desc' else 'desc'), _q=search) }}">Subject</a></th>
-                <th class="status"><span class="status">Read status</span></th>
-                <th class="fromto{{ ' sorted ' ~ order if sort in ('fromto','from','to') }}"><a class="sortcol" rel="fromto" title="Sort by"
-                    href="{{ url_for('views.mail', _mbox=folder, _sort='fromto', _sort_order=('asc' if sort in ('fromto','from','to') and order=='desc' else 'desc'), _q=search) }}">From</a></th>
-                <th class="date{{ ' sorted ' ~ order if sort == 'date' }}"><a class="sortcol" rel="date" title="Sort by"
-                    href="{{ url_for('views.mail', _mbox=folder, _sort='date', _sort_order=('asc' if sort=='date' and order=='desc' else 'desc'), _q=search) }}">Date</a></th>
-                <th class="size{{ ' sorted ' ~ order if sort == 'size' }}"><a class="sortcol" rel="size" title="Sort by"
-                    href="{{ url_for('views.mail', _mbox=folder, _sort='size', _sort_order=('asc' if sort=='size' and order=='desc' else 'asc'), _q=search) }}">Size</a></th>
-                <th class="flag"><span class="flagged">Flagged</span></th>
-                <th class="attachment"><span class="attachment">Attachment</span></th>
+                <th class="selection"><span class="inner">{{ 'Select'|lc }}</span></th>
+                <th class="subject{{ ' sorted ' ~ order if sort == 'subject' }}"><a class="sortcol" rel="subject" title="{{ 'Sort by'|lc }}"
+                    href="{{ url_for('views.mail', _mbox=folder, _sort='subject', _sort_order=('asc' if sort=='subject' and order=='desc' else 'desc'), _q=search) }}">{{ 'Subject'|lc }}</a></th>
+                <th class="status"><span class="status">{{ 'Read status'|lc }}</span></th>
+                <th class="fromto{{ ' sorted ' ~ order if sort in ('fromto','from','to') }}"><a class="sortcol" rel="fromto" title="{{ 'Sort by'|lc }}"
+                    href="{{ url_for('views.mail', _mbox=folder, _sort='fromto', _sort_order=('asc' if sort in ('fromto','from','to') and order=='desc' else 'desc'), _q=search) }}">{{ 'From'|lc }}</a></th>
+                <th class="date{{ ' sorted ' ~ order if sort == 'date' }}"><a class="sortcol" rel="date" title="{{ 'Sort by'|lc }}"
+                    href="{{ url_for('views.mail', _mbox=folder, _sort='date', _sort_order=('asc' if sort=='date' and order=='desc' else 'desc'), _q=search) }}">{{ 'Date'|lc }}</a></th>
+                <th class="size{{ ' sorted ' ~ order if sort == 'size' }}"><a class="sortcol" rel="size" title="{{ 'Sort by'|lc }}"
+                    href="{{ url_for('views.mail', _mbox=folder, _sort='size', _sort_order=('asc' if sort=='size' and order=='desc' else 'asc'), _q=search) }}">{{ 'Size'|lc }}</a></th>
+                <th class="flag"><span class="flagged">{{ 'Flagged'|lc }}</span></th>
+                <th class="attachment"><span class="attachment">{{ 'Attachment'|lc }}</span></th>
               </tr>
             </thead>
             <tbody>
@@ -212,36 +212,36 @@
       </div>
 
       <div class="pagenav menu footer small"
-           role="toolbar" aria-label="List navigation">
+           role="toolbar" aria-label="{{ 'List navigation'|lc }}">
         <a href="{{ url_for('views.mail', _mbox=folder, _page=1, _sort=sort, _sort_order=order, _q=search) }}"
-           class="firstpage{{ ' disabled' if listing.page <= 1 }}" title="Show first page"><span class="inner">First</span></a>
+           class="firstpage{{ ' disabled' if listing.page <= 1 }}" title="{{ 'Show first page'|lc }}"><span class="inner">{{ 'First'|lc }}</span></a>
         <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.page-1, _sort=sort, _sort_order=order, _q=search) }}"
-           class="prevpage{{ ' disabled' if listing.page <= 1 }}" title="Show previous page"><span class="inner">Previous</span></a>
+           class="prevpage{{ ' disabled' if listing.page <= 1 }}" title="{{ 'Show previous page'|lc }}"><span class="inner">{{ 'Previous'|lc }}</span></a>
         <span class="pagenav-text" aria-live="polite" aria-relevant="text">
           {%- if listing.total %}Messages {{ listing.first }} to {{ listing.last }} of {{ listing.total }}{% else %}&nbsp;{% endif -%}
         </span>
-        <input class="form-control rcpagejumper" type="text" size="3"{{ '' if listing.pages > 1 else ' disabled' }} title="Current page" value="{{ listing.page }}">
+        <input class="form-control rcpagejumper" type="text" size="3"{{ '' if listing.pages > 1 else ' disabled' }} title="{{ 'Current page'|lc }}" value="{{ listing.page }}">
         <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.page+1, _sort=sort, _sort_order=order, _q=search) }}"
-           class="nextpage{{ ' disabled' if listing.page >= listing.pages }}" title="Show next page"><span class="inner">Next</span></a>
+           class="nextpage{{ ' disabled' if listing.page >= listing.pages }}" title="{{ 'Show next page'|lc }}"><span class="inner">{{ 'Next'|lc }}</span></a>
         <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.pages, _sort=sort, _sort_order=order, _q=search) }}"
-           class="lastpage{{ ' disabled' if listing.page >= listing.pages }}" title="Show last page"><span class="inner">Last</span></a>
+           class="lastpage{{ ' disabled' if listing.page >= listing.pages }}" title="{{ 'Show last page'|lc }}"><span class="inner">{{ 'Last'|lc }}</span></a>
       </div>
     </div>
 
     <!-- message preview -->
     <div id="layout-content">
-      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
+      <h2 id="aria-label-toolbar" class="voice">{{ 'Application toolbar'|lc }}</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
-        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
         <span class="header-title"></span>
         {% include "includes/mail-menu.html" %}
       </div>
-      <h2 id="aria-label-mailpreviewframe" class="voice">Message preview</h2>
+      <h2 id="aria-label-mailpreviewframe" class="voice">{{ 'Message preview'|lc }}</h2>
       <div class="iframe-wrapper">
         {# 'Mark messages as read' pref: 0 immediately, N>0 after N seconds
            (client schedules the flag), -1 never in preview. #}
         {% set rt = (g.prefs or {}).get('mail_read_time', '0')|string %}
-        <iframe id="messagecontframe" name="messagecontframe" title="Message preview"
+        <iframe id="messagecontframe" name="messagecontframe" title="{{ 'Message preview'|lc }}"
                 data-read-time="{{ rt }}" data-folder="{{ folder }}"
                 src="{{ url_for('views.message_view', _mbox=folder, _uid=preview_uid, _framed=1, _noseen=1 if rt != '0' else none) if preview_uid else url_for('static', filename='watermark.html') }}"></iframe>
       </div>
@@ -251,46 +251,46 @@
     <div id="list-menu" class="popupmenu">
       <h3 class="voice">List menu</h3>
       <ul class="menu listing" role="menu">
-        <li role="menuitem"><a class="purge" href="#" data-act="compact">Compact</a></li>
-        <li role="menuitem"><a class="purge" href="#" data-act="empty">Empty</a></li>
-        <li role="menuitem"><a class="read" href="#" data-act="markallread">Mark all as read</a></li>
-        <li role="menuitem"><a class="folders" href="{{ url_for('views.folders_view') }}">Manage folders</a></li>
+        <li role="menuitem"><a class="purge" href="#" data-act="compact">{{ 'Compact'|lc }}</a></li>
+        <li role="menuitem"><a class="purge" href="#" data-act="empty">{{ 'Empty'|lc }}</a></li>
+        <li role="menuitem"><a class="read" href="#" data-act="markallread">{{ 'Mark all as read'|lc }}</a></li>
+        <li role="menuitem"><a class="folders" href="{{ url_for('views.folders_view') }}">{{ 'Manage folders'|lc }}</a></li>
       </ul>
     </div>
 
     <div id="listselect-menu" class="popupmenu">
-      <h3 id="aria-label-listselect-menu" class="voice">List selection menu</h3>
+      <h3 id="aria-label-listselect-menu" class="voice">{{ 'List selection menu'|lc }}</h3>
       <ul class="menu listing" role="menu" aria-labelledby="aria-label-listselect-menu">
-        <li role="menuitem"><a class="selection toggle-link" href="#" id="list-toggle-button">Selection</a></li>
-        <li role="menuitem"><a class="select all" href="#" data-select="all">All</a></li>
-        <li role="menuitem"><a class="select page" href="#" data-select="page">Current page</a></li>
-        <li role="menuitem"><a class="select unread" href="#" data-select="unread">Unread</a></li>
-        <li role="menuitem"><a class="select flagged" href="#" data-select="flagged">Flagged</a></li>
-        <li role="menuitem"><a class="select invert" href="#" data-select="invert">Invert</a></li>
-        <li role="menuitem"><a class="select none" href="#" data-select="none">None</a></li>
+        <li role="menuitem"><a class="selection toggle-link" href="#" id="list-toggle-button">{{ 'Selection'|lc }}</a></li>
+        <li role="menuitem"><a class="select all" href="#" data-select="all">{{ 'All'|lc }}</a></li>
+        <li role="menuitem"><a class="select page" href="#" data-select="page">{{ 'Current page'|lc }}</a></li>
+        <li role="menuitem"><a class="select unread" href="#" data-select="unread">{{ 'Unread'|lc }}</a></li>
+        <li role="menuitem"><a class="select flagged" href="#" data-select="flagged">{{ 'Flagged'|lc }}</a></li>
+        <li role="menuitem"><a class="select invert" href="#" data-select="invert">{{ 'Invert'|lc }}</a></li>
+        <li role="menuitem"><a class="select none" href="#" data-select="none">{{ 'None'|lc }}</a></li>
       </ul>
     </div>
 
     <div id="listoptions-menu" class="popupmenu propform" role="dialog" aria-labelledby="aria-label-listoptions">
-      <h3 id="aria-label-listoptions" class="voice">Message list display and sorting options</h3>
+      <h3 id="aria-label-listoptions" class="voice">{{ 'Message list display and sorting options'|lc }}</h3>
       <div class="form-group row">
-        <label for="listoptions-sortcol" class="col-form-label col-sm-4">Sorting column</label>
+        <label for="listoptions-sortcol" class="col-form-label col-sm-4">{{ 'Sorting column'|lc }}</label>
         <div class="col-sm-8">
           <select id="listoptions-sortcol" name="sort_col" onchange="cc_apply_list_options()">
-            <option value=""{{ ' selected' if sort == '' }}>None</option>
-            <option value="arrival"{{ ' selected' if sort == 'arrival' }}>Arrival date</option>
-            <option value="date"{{ ' selected' if sort == 'date' }}>Sent date</option>
-            <option value="subject"{{ ' selected' if sort == 'subject' }}>Subject</option>
+            <option value=""{{ ' selected' if sort == '' }}>{{ 'None'|lc }}</option>
+            <option value="arrival"{{ ' selected' if sort == 'arrival' }}>{{ 'Arrival date'|lc }}</option>
+            <option value="date"{{ ' selected' if sort == 'date' }}>{{ 'Sent date'|lc }}</option>
+            <option value="subject"{{ ' selected' if sort == 'subject' }}>{{ 'Subject'|lc }}</option>
             <option value="fromto"{{ ' selected' if sort == 'fromto' }}>From/To</option>
-            <option value="from"{{ ' selected' if sort == 'from' }}>From</option>
+            <option value="from"{{ ' selected' if sort == 'from' }}>{{ 'From'|lc }}</option>
             <option value="to"{{ ' selected' if sort == 'to' }}>To</option>
             <option value="cc"{{ ' selected' if sort == 'cc' }}>Cc</option>
-            <option value="size"{{ ' selected' if sort == 'size' }}>Size</option>
+            <option value="size"{{ ' selected' if sort == 'size' }}>{{ 'Size'|lc }}</option>
           </select>
         </div>
       </div>
       <div class="form-group row">
-        <label for="listoptions-sortord" class="col-form-label col-sm-4">Sorting order</label>
+        <label for="listoptions-sortord" class="col-form-label col-sm-4">{{ 'Sorting order'|lc }}</label>
         <div class="col-sm-8">
           <select id="listoptions-sortord" name="sort_ord" onchange="cc_apply_list_options()">
             <option value="ASC"{{ ' selected' if order == 'asc' }}>ascending</option>
@@ -299,32 +299,32 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="listoptions-threads" class="col-form-label col-sm-4">List mode</label>
+        <label for="listoptions-threads" class="col-form-label col-sm-4">{{ 'List mode'|lc }}</label>
         <div class="col-sm-8">
           <select id="listoptions-threads" name="mode" onchange="cc_apply_list_options()">
-            <option value="list"{{ ' selected' if list_mode != 'threads' }}>List</option>
-            <option value="threads"{{ ' selected' if list_mode == 'threads' }}>Threads</option>
+            <option value="list"{{ ' selected' if list_mode != 'threads' }}>{{ 'List'|lc }}</option>
+            <option value="threads"{{ ' selected' if list_mode == 'threads' }}>{{ 'Threads'|lc }}</option>
           </select>
         </div>
       </div>
     </div>
 
     <div id="threadselect-menu" class="popupmenu">
-      <h3 id="aria-label-threadselectmenu" class="voice">Threads listing menu</h3>
+      <h3 id="aria-label-threadselectmenu" class="voice">{{ 'Threads listing menu'|lc }}</h3>
       <ul class="menu listing" role="menu" aria-labelledby="aria-label-threadselectmenu">
-        <li role="menuitem"><a class="expand unread" href="#" data-thread="unread"><span>Expand Unread</span></a></li>
-        <li role="menuitem"><a class="expand all" href="#" data-thread="all"><span>Expand All</span></a></li>
-        <li role="menuitem"><a class="collapse all" href="#" data-thread="none"><span>Collapse All</span></a></li>
+        <li role="menuitem"><a class="expand unread" href="#" data-thread="unread"><span>{{ 'Expand Unread'|lc }}</span></a></li>
+        <li role="menuitem"><a class="expand all" href="#" data-thread="all"><span>{{ 'Expand All'|lc }}</span></a></li>
+        <li role="menuitem"><a class="collapse all" href="#" data-thread="none"><span>{{ 'Collapse All'|lc }}</span></a></li>
       </ul>
     </div>
 
     <div id="mailboxoptions-menu" class="popupmenu">
       <h3 class="voice">Folder actions</h3>
       <ul class="menu listing" role="menu">
-        <li role="menuitem"><a class="purge" href="#" data-act="compact">Compact</a></li>
-        <li role="menuitem"><a class="purge" href="#" data-act="empty">Empty</a></li>
-        <li role="menuitem"><a class="read" href="#" data-act="markallread">Mark all as read</a></li>
-        <li role="menuitem"><a class="folders" href="{{ url_for('views.folders_view') }}">Manage folders</a></li>
+        <li role="menuitem"><a class="purge" href="#" data-act="compact">{{ 'Compact'|lc }}</a></li>
+        <li role="menuitem"><a class="purge" href="#" data-act="empty">{{ 'Empty'|lc }}</a></li>
+        <li role="menuitem"><a class="read" href="#" data-act="markallread">{{ 'Mark all as read'|lc }}</a></li>
+        <li role="menuitem"><a class="folders" href="{{ url_for('views.folders_view') }}">{{ 'Manage folders'|lc }}</a></li>
       </ul>
     </div>
 
@@ -338,7 +338,7 @@
           <div class="custom-file">
             <input type="file" multiple name="_file[]" accept=".eml,.mbox,.msg,message/rfc822,text/*.zip,application/zip,application/x-zip"
                    id="uploadformInput" class="form-control custom-file-input local-upload">
-            <label class="custom-file-label" data-browse="Browse">Choose files...</label>
+            <label class="custom-file-label" data-browse="Browse">{{ 'Choose files...'|lc }}</label>
           </div>
           <div class="hint">Maximum allowed file size is 5.0 MB</div>
         </div>
