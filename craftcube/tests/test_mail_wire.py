@@ -97,3 +97,32 @@ class TestBuildMessage:
         raw = _b(build_message("t@e.org", "", [], [], [], "S", "see attached",
                                attachments=[("a.bin", None, b"x")]))
         assert "see attached\r\n\r\n--=_" in raw
+
+class TestAttachmentParamFolding:
+    """mime_param_folding values 0/1/2 match the PEAR Mail_mime oracle."""
+
+    def _raw(self, folding, name="ü name.txt", ctype="text/plain", data=b"hello"):
+        return _b(build_message("t@e.org", "", [], [], [], "S", "body",
+                                attachments=[(name, ctype, data)],
+                                mime_param_folding=folding))
+
+    def test_folding_0_full_rfc2231(self):
+        raw = self._raw(0)
+        assert "name*=UTF-8''%C3%BC%20name.txt" in raw
+        assert "filename*=UTF-8''%C3%BC%20name.txt;" in raw
+
+    def test_folding_1_outlook(self):
+        raw = self._raw(1)
+        assert 'name="=?UTF-8?Q?=C3=BC_name=2Etxt?="' in raw
+        assert "filename*=UTF-8''%C3%BC%20name.txt;" in raw
+
+    def test_folding_2_full_rfc2047(self):
+        raw = self._raw(2)
+        assert 'name="=?UTF-8?Q?=C3=BC_name=2Etxt?="' in raw
+        assert 'filename="=?UTF-8?Q?=C3=BC_name=2Etxt?=";' in raw
+
+    def test_ascii_atom_and_quoted_ascii(self):
+        raw = self._raw(1, "report.pdf")
+        assert "name=report.pdf" in raw
+        spaced = self._raw(1, "my report.pdf")
+        assert 'name="my report.pdf"' in spaced

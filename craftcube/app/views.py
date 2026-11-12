@@ -2123,6 +2123,7 @@ def compose():
             mdn=bool(request.form.get("_mdn")),
             force_7bit=bool(prefs.get("force_7bit")),
             keepformatting=bool(request.form.get("_keepformatting")),
+            mime_param_folding=int(prefs.get("mime_param_folding", 1) or 1),
         )
         act = request.form.get("_action", "send")
         if act == "save" and request.form.get("_ajax"):

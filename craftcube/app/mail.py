@@ -480,8 +480,8 @@ class Imap:
         raw = raw.split("SORT", 1)[-1] if raw.strip().startswith("SORT") else raw
         try:
             return [int(x) for x in raw.split()]
-        except ValueError:
-            raise MailError("IMAP SORT failed")
+        except ValueError as exc:
+            raise MailError("IMAP SORT failed") from exc
 
     # ------------------------------------------------------------ messages
 
@@ -1183,7 +1183,7 @@ class Mailbox:
 def build_message(from_addr, from_name, to, cc, bcc, subject, body, html=False,
                   attachments=None, in_reply_to=None, references=None, reply_to=None,
                   priority=None, mdn=False, followup_to=None, force_7bit=False,
-                  flowed=True, keepformatting=False):
+                  flowed=True, keepformatting=False, mime_param_folding=1):
     """Compose an RFC2822 message the way rcmail_sendmail::create_message()
     does: same header set and order (MIME-Version, Date, From, To, Cc,
     Subject, Reply-To + Mail-Reply-To, Mail-Followup-To, In-Reply-To,
@@ -1305,7 +1305,7 @@ def build_message(from_addr, from_name, to, cc, bcc, subject, body, html=False,
             body_child.set_payload(pl + "\r\n")  # setTXTBody(..., append_newline)
         children = [body_child]
         for fname, ctype, data in attachments or []:
-            children.append(_attachment_part(fname, ctype, data))
+            children.append(_attachment_part(fname, ctype, data, mime_param_folding))
         top = _rc_part(top_headers, None, children=children,
                        content_type=f'multipart/mixed;\r\n boundary="{boundary}"')
     return top
@@ -1453,21 +1453,69 @@ def _rc_part(headers, payload=None, children=None, content_type=None):
     return p
 
 
-def _attachment_part(fname, ctype, data):
+def _rfc2047_qp(value):
+    """Mail_mimePart::encodeQP(): byte-wise QP for RFC2047 parameters,
+    spaces become '_', and the RFC2047-permitted escape ranges are =XX."""
+    out = []
+    for b in value.encode("utf-8"):
+        if b == 0x20:
+            out.append("_")
+        elif (0x00 <= b <= 0x1F or 0x22 <= b <= 0x29 or b == 0x2C
+              or b == 0x2E or 0x3A <= b <= 0x40 or 0x5B <= b <= 0x60
+              or 0x7B <= b <= 0xFF):
+            out.append(f"={b:02X}")
+        else:
+            out.append(chr(b))
+    return "".join(out)
+
+
+def _attachment_param(key, value, folding):
+    """Mail_mimePart::buildHeaderParam() for a Content-Type/Disposition
+    parameter. folding: 0 RFC2231, 1 RFC2047 name + RFC2231 filename,
+    2 RFC2047 both."""
+    safe = all(ch.isalnum() or ch in "!#$%&'*+-./^_`|~" for ch in value)
+    if value.isascii() and safe:
+        return key + "=" + value
+    if value.isascii():
+        quoted = value.replace(chr(92), chr(92) * 2).replace('"', chr(92) + '"')
+        return f'{key}="{quoted}"'
+    if folding in (1, 2) and key == "name":
+        return f'{key}="=?UTF-8?Q?{_rfc2047_qp(value)}?="'
+    if folding == 2 and key == "filename":
+        return f'{key}="=?UTF-8?Q?{_rfc2047_qp(value)}?="'
+    from urllib.parse import quote
+    encoded = "UTF-8''" + quote(value, safe="")
+    header = f" {key}*={encoded}"
+    if len(header) <= 75:
+        return header.lstrip()
+    prefix = f" {key}*0*="
+    limit = max(16, 75 - len(prefix) - 3)
+    pieces = []
+    rest = encoded
+    n = 0
+    while rest:
+        chunk = rest[:limit]
+        while chunk.endswith("%") or chunk[-2:] == "%X":
+            chunk = chunk[:-1]
+        if not chunk:
+            chunk = rest[:limit]
+        pieces.append(f"{key}*{n}*={chunk}")
+        rest = rest[len(chunk):]
+        n += 1
+    crlf = chr(13) + chr(10)
+    return (crlf + " ").join(pieces)
+
+
+def _attachment_part(fname, ctype, data, folding=1):
     """Mail_mimePart subpart: CTE first, then Content-Type with name= and
-    Content-Disposition with filename= on a folded line (RFC2231 if non-ASCII)."""
-    def qname(key, val):
-        if val.isascii() and not re.search(r'[\s"\\:;<>,@\[\]()]', val):
-            return key + "=" + val          # Mail_mime: atom, unquoted
-        from urllib.parse import quote
-        if val.isascii():
-            return f'{key}="{val.replace(chr(92), chr(92)*2).replace(chr(34), chr(92)+chr(34))}"'
-        return f"{key}*0*=UTF-8''{quote(val, safe='')}"
-    disp = f"attachment;\r\n {qname('filename', fname)};\r\n size={len(data)}"
+    Content-Disposition with filename=; mime_param_folding matches the
+    reference parameter encoding."""
+    crlf = chr(13) + chr(10)
+    disp = f"attachment;{crlf} {_attachment_param('filename', fname, folding)};{crlf} size={len(data)}"
     return _rc_part(
         [("Content-Transfer-Encoding", "base64"),
          ("Content-Type", (ctype or "application/octet-stream")
-          + ";\r\n " + qname("name", fname)),
+          + f";{crlf} " + _attachment_param("name", fname, folding)),
          ("Content-Disposition", disp)],
         _b64_body(data))
 
