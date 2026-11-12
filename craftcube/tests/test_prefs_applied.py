@@ -7,7 +7,7 @@ from datetime import datetime
 
 import pytest
 
-from app import mail, util, views
+from app import mail, spellchecker, util, views
 
 
 class FakeBox:
@@ -327,3 +327,26 @@ def test_archive_type_applied():
         assert imap.copies[-1][1] == expected
         assert any(chr(92) + "Seen" in f[1] for f in imap.flags), (atype, imap.flags)
         assert any(chr(92) + "Deleted" in f[1] for f in imap.flags), (atype, imap.flags)
+
+def test_spellcheck_prefs_control_send(client, store, user, make_box, monkeypatch):
+    seen = []
+    monkeypatch.setattr(spellchecker, "check",
+                        lambda text, lang, ignore=None: seen.append(ignore) or {})
+
+    form = {"_action": "send", "_to": "a@example.org", "_subject": "S",
+            "_body": "hello", "_is_html": "0"}
+
+    store.set_user_prefs(user, {"spellcheck_before_send": 0})
+    make_box.prefs = dict(store.get_user_prefs(user))
+    client.post("/compose", data=form)
+    assert not seen
+
+    store.set_user_prefs(user, {
+        "spellcheck_before_send": 1,
+        "spellcheck_ignore_syms": 1,
+        "spellcheck_ignore_nums": 1,
+        "spellcheck_ignore_caps": 1,
+    })
+    make_box.prefs = dict(store.get_user_prefs(user))
+    client.post("/compose", data=form)
+    assert seen[-1] == {"syms": True, "nums": True, "caps": True}, seen[-1]
