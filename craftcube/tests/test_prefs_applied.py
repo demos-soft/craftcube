@@ -399,6 +399,7 @@ def test_layout_and_compose_prefs_attributes(client, store, user, make_box):
         "autoexpand_threads": "2",
         "standard_windows": 1,
         "compose_extwin": 1,
+        "message_extwin": 1,
         "refresh_interval": "5",
         "draft_autosave": "60",
     })
@@ -408,6 +409,7 @@ def test_layout_and_compose_prefs_attributes(client, store, user, make_box):
     assert 'data-autoexpand-threads="2"' in mail
     assert 'data-standard-windows="1"' in mail
     assert 'data-compose-extwin="1"' in mail
+    assert 'data-message-extwin="1"' in mail
     assert 'data-refresh-interval="5"' in mail
 
     compose = client.get("/compose").get_data(as_text=True)
