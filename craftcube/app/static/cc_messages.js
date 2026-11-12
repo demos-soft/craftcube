@@ -32,8 +32,7 @@
     el.style.opacity = '0';
     setTimeout(function () {
       if (el.parentNode) el.parentNode.removeChild(el);
-      var k = el.getAttribute('data-key');
-      if (k && messages[k]) delete messages[k];
+      if (el.ccKey && messages[el.ccKey]) delete messages[el.ccKey];
     }, 600);
   }
 
@@ -74,7 +73,7 @@
       el.className += ' ui alert ' + alertCls;
     }
     el.setAttribute('role', 'alert');
-    el.setAttribute('data-key', key);
+    el.ccKey = key;
     el.addEventListener('click', function () { hide(el); });
     stack.appendChild(el);
     messages[key] = { el: el, span: el.querySelector('span'), count: 1 };
@@ -89,8 +88,9 @@
     var pend = window.cc_pending || [];
     window.cc_pending = [];
     pend.forEach(function (m) { display(m[0], m[1], m[2]); });
-    // server-side flash bridge (templates emit window.CC_FLASHES)
-    (window.CC_FLASHES || []).forEach(function (m) { display(m[1], m[0], 0); });
+    // server-side flash bridge: RC's re-rendered pages call
+    // rcmail.display_message(msg, type) with the default timeout
+    (window.CC_FLASHES || []).forEach(function (m) { display(m[1], m[0]); });
   }
   if (document.readyState !== 'loading') drain();
   else document.addEventListener('DOMContentLoaded', drain);

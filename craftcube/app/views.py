@@ -236,8 +236,10 @@ def login():
                 session["tz"] = tz
             # make sure default identity exists
             if not store.identities(uid):
+                # Roundcube seeds the default identity with an empty display
+                # name (rcmail::startup); the list renders it as "<email>".
                 store.identity_save(uid, {
-                    "name": username, "organization": "", "email": username,
+                    "name": "", "organization": "", "email": username,
                     "reply_to": "", "bcc": "", "signature": "", "html_signature": 0, "standard": 1,
                 })
             return redirect(request.args.get("_next") or url_for("views.mail"))

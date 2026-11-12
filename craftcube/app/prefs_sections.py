@@ -124,6 +124,8 @@ def _cb(key, title, prefs, hint=None, onchange=""):
     row = {"type": "checkbox", "key": key, "name": "_" + key,
            "id": _id(key), "title": title,
            "checked": bool(prefs.get(key, DEFAULTS.get(key, 0)))}
+    if hint:
+        row["hint"] = hint
     if onchange:
         row["attrs"] = f'onchange="{onchange}"'
     return row

@@ -25,21 +25,20 @@
           action="{{ url_for('views.settings_preferences', section=section, _framed=1) }}"
           class="propform cols-sm-6-6">
       <input type="hidden" name="_section" value="{{ section }}">
-      {# ui.js focuses the first form field when the frame loads #}
-      {% set ns = namespace(done=false) %}
       {% for class, legend, fields in blocks %}
       <fieldset class="{{ class }}"><legend>{{ legend }}</legend>
         <table class="propform cols-sm-6-6"><tbody>
           {% for f in fields %}
           {% if f.type == 'mailto' %}
-          <tr><td colspan="2"><a href="#" id="{{ f.id }}">{{ f.title }}</a><span
+          <tr class="form-group row"><td colspan="2"><a href="#" id="{{ f.id }}">{{ f.title }}</a><span
                 class="mailtoprotohandler-status"></span></td></tr>
           {% elif f.type == 'fontgroup' %}
           {# index.php: label for=...size id + input-group holding both selects #}
-          <tr><td class="title"><label for="{{ f.fields[1].id }}">{{ f.title }}</label></td>
-            <td><div class="input-group">
+          <tr class="form-group row">
+            <td class="title col-sm-6"><label for="{{ f.fields[1].id }}" class="col-form-label">{{ f.title }}</label></td>
+            <td class="col-sm-6"><div class="input-group">
                 {% for s in f.fields %}
-                <select name="{{ s.name }}" id="{{ s.id }}" class="custom-select"{% if s.attrs %} {{ s.attrs|safe }}{% endif %}>
+                <select name="{{ s.name }}" id="{{ s.id }}" class="custom-select form-control pretty-select"{% if s.attrs %} {{ s.attrs|safe }}{% endif %}>
                   {% for v, l in s.options %}
                   <option value="{{ v }}"{{ ' selected="selected"' if v == s.value }}>{{ l }}</option>
                   {% endfor %}
@@ -48,21 +47,27 @@
             </div></td>
           </tr>
           {% elif f.type == 'checkbox' %}
-          <tr><td class="title"><label for="{{ f.id }}">{{ f.title }}</label></td>
-            <td><input name="{{ f.name }}" id="{{ f.id }}" value="1"{{ (' ' ~ f.attrs)|safe if f.attrs }}{{ ' checked="checked"' if f.checked }} type="checkbox"></td>
+          {# Elastic renders settings checkboxes as bootstrap custom-switch pills #}
+          <tr class="form-group row form-check">
+            <td class="title col-sm-6"><label for="{{ f.id }}" class="col-form-label">{{ f.title }}</label></td>
+            <td class="col-sm-6"><div class="custom-control custom-switch">
+              <input name="{{ f.name }}" id="{{ f.id }}" value="1" type="checkbox" class="form-check-input custom-control-input"{{ (' ' ~ f.attrs)|safe if f.attrs }}{{ ' checked="checked"' if f.checked }}>
+              <label for="{{ f.id }}" class="custom-control-label" title="{{ f.hint or '' }}"></label>
+            </div></td>
           </tr>
           {% else %}
-          <tr><td class="title"><label for="{{ f.id }}">{{ f.title }}</label></td>
-            <td>
+          <tr class="form-group row">
+            <td class="title col-sm-6"><label for="{{ f.id }}" class="col-form-label">{{ f.title }}</label></td>
+            <td class="col-sm-6">
               {% if f.type == 'select' %}
-              <select name="{{ f.name }}" id="{{ f.id }}" class="custom-select"{% if f.attrs %} {{ f.attrs|safe }}{% endif %}{{ ' autofocus' if not ns.done and loop.first and (ns.done, True)[1] }}>
+              <select name="{{ f.name }}" id="{{ f.id }}" class="custom-select form-control pretty-select"{% if f.attrs %} {{ f.attrs|safe }}{% endif %}>
                 {% for v, l in f.options %}
                 <option value="{{ v }}"{{ ' selected="selected"' if v == f.value }}>{{ l }}</option>
                 {% endfor %}
               </select>
               {% else %}
               <input name="{{ f.name }}" id="{{ f.id }}" size="{{ f.size }}" class="form-control"
-                     value="{{ f.value }}" type="text"{{ ' autofocus' if not ns.done and loop.first and (ns.done, True)[1] }}>
+                     value="{{ f.value }}" type="text">
               {% endif %}
             </td>
           </tr>
