@@ -1,5 +1,5 @@
 {% include "includes/layout.html" %}
-{% include "includes/menu.html" %}
+{% if not extwin %}{% include "includes/menu.html" %}{% endif %}
 
     <h1 class="voice">Compose</h1>
 
@@ -153,6 +153,7 @@
           <input type="hidden" name="_mbox" value="{{ request.values.get('_mbox') or '' }}">
           <input type="hidden" name="_format" id="composeformat" value="{{ 'html' if prefill.html else 'plain' }}">
           {% if spell_checked %}<input type="hidden" name="_spellchecked" value="1">{% endif %}
+          {% if sent_ok %}<input type="hidden" id="cc-sent-ok" name="_sent_ok" value="1">{% endif %}
           <input type="hidden" name="_in_reply_to" value="{{ prefill.in_reply_to }}">
           <input type="hidden" name="_references" value="{{ prefill.references }}">
           <div class="compose-headers formcontainer">
@@ -266,7 +267,7 @@
         <div class="formbuttons">
           <button type="submit" form="composeform" name="_action" value="send" class="btn btn-primary icon send" id="sendbtn" tabindex="1">Send</button>
           <div class="float-right">
-            <a href="?" class="button icon btn btn-link extwin" data-hidden="small" role="button" aria-disabled="false" tabindex="1" target="_blank">Open in new window</a>
+            {% if not extwin %}<a href="?" class="button icon btn btn-link extwin" data-hidden="small" role="button" aria-disabled="false" tabindex="1" target="_blank">Open in new window</a>{% endif %}
           </div>
         </div>
       </div>
@@ -478,6 +479,17 @@
   };
   window.addEventListener('load', function () {
     cc_editor.init_editor('composebody');
+    {% if sent_ok %}
+    // sent_successfully (app.js:5974): in an extwin popup the form stays
+    // locked and the window closes itself after a second
+    (function () {
+      var f = document.getElementById('composeform');
+      f.querySelectorAll('input,select,textarea,button').forEach(function (e) { e.disabled = true; });
+      document.querySelectorAll('#sendbtn, .formbuttons button').forEach(function (el) { el.disabled = true; });
+      window.cc_skip_unsavedcheck && window.cc_skip_unsavedcheck();
+      setTimeout(function () { window.close(); }, 1000);
+    })();
+    {% endif %}
     // spellcheck_before_send: the server checked on send and came back with
     // the misspelled words; highlight them without a new RPC
     // (spellcheck_resume -> spellchecker.markErrors, app.js:5383).
@@ -566,6 +578,11 @@
       }
     }
     window.cc_remove_compose_data = remove_compose_data;
+    // used by the extwin "Open in new window" button (app.js:926 case extwin:
+    // save local copy, skip the unsaved check, hand the form to the popup —
+    // the popup restores the snapshot silently since compose_id matches)
+    window.cc_save_compose_local = save_compose_form_local;
+    window.cc_skip_unsavedcheck = function () { skip_unsavedcheck = true; };
 
     // command('savedraft') — silent AJAX variant (the reference submits the
     // form into a hidden iframe; the _ajax endpoint answers with draft_id)
@@ -714,6 +731,119 @@
           return 'The message has not been sent and has unsaved changes. Do you want to discard your changes?';
         }
       };
+
+      // "Open in new window" (app.js:926 case extwin): snapshot the form to
+      // local storage, then open the compose screen in a popup carrying the
+      // same compose_id — the popup restores the snapshot silently
+      var extwinbtn = document.querySelector('.formbuttons a.extwin');
+      if (extwinbtn) {
+        extwinbtn.addEventListener('click', function (ev) {
+          ev.preventDefault();
+          save_compose_form_local();
+          skip_unsavedcheck = true;
+          var url = new URL(window.location.href);
+          url.searchParams.set('_compose_id', env.compose_id);
+          url.searchParams.delete('_extwin');  // cc_open_window appends it
+          window.cc_open_window(url.pathname + '?' + url.searchParams.toString(), false);
+        });
+      }
+      // extwin popups: send through a hidden iframe like the reference
+      // (app.js get_save_target + sent_successfully) so the popup document
+      // itself never navigates — window.close() stays permitted.
+      if ({{ 'true' if extwin else 'false' }}) {
+        var save_frame = document.createElement('iframe');
+        save_frame.name = 'ccsavetarget';
+        save_frame.style.cssText = 'position:absolute;width:1px;height:1px;border:0;left:-2000px';
+        save_frame.src = 'javascript:false;';
+        document.body.appendChild(save_frame);
+        form.addEventListener('submit', function (e) {
+          // let the Save-draft toolbar button keep its full-page flow and
+          // the autosave path (fetch) untouched
+          var act = (new FormData(form).get('_action')) || 'send';
+          if (act !== 'send') return;
+          e.preventDefault();
+          var ed2 = cc_editor.get_editor_for('composebody');
+          if (ed2) ed2.save();
+          save_frame.onload = function () {
+            var doc = null;
+            try { doc = save_frame.contentDocument; } catch (e2) {}
+            var html = doc && doc.documentElement ? doc.documentElement.innerHTML : '';
+            // ignore the initial blank-frame load; only react to real app
+            // responses (compose re-render or post-send redirect page)
+            var real = false;
+            try { real = doc && doc.location.href.indexOf('http') === 0; } catch (e5) {}
+            if (!real) return;
+            var alert_el = doc && doc.querySelector('#messagestack .alert span');
+            var msg = alert_el ? alert_el.textContent.trim() : '';
+            var stack = document.getElementById('messagestack');
+            if (!stack) {
+              stack = document.createElement('div');
+              stack.id = 'messagestack';
+              document.body.appendChild(stack);
+            }
+            if (doc.getElementById('cc-sent-ok')) {
+              // sent from within the extwin popup (reference:
+              // sent_successfully closes the popup after 1s)
+              skip_unsavedcheck = true;
+              remove_compose_data(env.compose_id);
+              var stack0 = document.getElementById('messagestack');
+              if (!stack0) {
+                stack0 = document.createElement('div');
+                stack0.className = 'messagestack dialogs';
+                stack0.id = 'messagestack';
+                document.body.appendChild(stack0);
+              }
+              stack0.innerHTML = '<div class="alert alert-success"><span>' +
+                (doc.querySelector('.message') ? doc.querySelector('.message').textContent : 'Message sent successfully.') +
+                '</span></div>';
+              try {
+                if (window.opener && window.opener.location &&
+                    /\/mail/.test(window.opener.location.pathname)) {
+                  window.opener.location.reload();
+                }
+              } catch (e3) {}
+              setTimeout(function () { window.close(); }, 1000);
+            } else if (html.indexOf('id="composeform"') >= 0) {
+              // spellcheck/MailError re-render: mirror the message and mark
+              // the misspelled words in our own editor (spellcheck_resume)
+              stack.innerHTML = '<div class="alert alert-danger"><span>' +
+                msg.replace(/[&<>"]/g, function (c) {
+                  return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+                }) + '</span></div>';
+              var mw = html.match(/var spell_found = (\{.*?\});/);
+              if (mw) {
+                try {
+                  var words = JSON.parse(mw[1]);
+                  var w2 = cc_editor.get_editor_for('composebody');
+                  if (w2 && w2.editor && w2.editor.plugins && w2.editor.plugins.spellchecker) {
+                    w2.editor.plugins.spellchecker.markErrors({words: words});
+                  }
+                } catch (e4) {}
+              }
+              return;
+            }
+            // sent_successfully: lock the form, tell the opener, close
+            stack.innerHTML = '<div class="alert alert-success"><span>' +
+              (msg || 'Message sent successfully.') + '</span></div>';
+            skip_unsavedcheck = true;
+            remove_compose_data(env.compose_id);
+            form.querySelectorAll('input,select,textarea,button').forEach(function (el) { el.disabled = true; });
+            // Send/save buttons sit outside <form> (linked via form= attr)
+            document.querySelectorAll('#sendbtn, .formbuttons button, .toolbar a').forEach(function (el) { el.disabled = true; });
+            try {
+              if (window.opener && window.opener.location &&
+                  /\/mail/.test(window.opener.location.pathname)) {
+                window.opener.cc_refresh_tick && window.opener.cc_refresh_tick();
+              }
+            } catch (e3) {}
+            setTimeout(function () { window.close(); }, 1000);
+          };
+          // fire the submission into the frame (form.submit() bypasses
+          // submit events, so this does not re-enter the handler)
+          form.target = 'ccsavetarget';
+          form.submit();
+        });
+      }
       form.addEventListener('submit', function () {
         skip_unsavedcheck = true;
         remove_compose_data(env.compose_id);

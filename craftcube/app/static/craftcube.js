@@ -1214,6 +1214,56 @@
     }
   });
 
+  // ---------------------------------------------------------------- open_window
+  // app.js:2259 — sized popup window unless the 'standard_windows' pref
+  // asks for regular browser windows (which can then be handled as tabs).
+  var standard_windows = document.body.getAttribute('data-standard-windows') === '1';
+  window.cc_open_window = function (url, small) {
+    url += (url.indexOf('?') > -1 ? '&' : '?') + '_extwin=1';
+    var features = '';
+    if (!standard_windows) {
+      var w = Math.min(small ? 900 : 1150, window.innerWidth);
+      var h = window.innerHeight;
+      var l = (window.screenLeft || window.screenX) + 20;
+      var t = (window.screenTop || window.screenY) + 20;
+      features = 'width=' + w + ',height=' + h + ',top=' + t + ',left=' + l +
+        ',resizable=yes,location=no,scrollbars=yes,toolbar=no,menubar=no,status=no';
+    }
+    var win = window.open(url, 'rcmextwin' + Date.now(), features);
+    // popup-blocker detection like app.js:2281
+    if (!win || win.closed) {
+      if (window.cc_simple_dialog) cc_simple_dialog('The popup window was blocked!', 'Error');
+      return null;
+    }
+    return win;
+  };
+
+  // compose_extwin / message_extwin (app.js:4855 open_compose_step,
+  // app.js:2755 show_message): the same actions open popups instead of
+  // navigating — except while already inside an extwin popup.
+  var in_extwin = /[?&]_extwin=1/.test(location.search);
+  if (!in_extwin && document.body.getAttribute('data-compose-extwin') === '1') {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href]');
+      if (!a || a.getAttribute('data-act') || a.target === '_blank') return;
+      var href = a.getAttribute('href');
+      if (href.indexOf('/compose') !== 0) return;
+      e.preventDefault();
+      window.cc_open_window(href, false);
+    }, true);
+  }
+  if (!in_extwin && document.body.getAttribute('data-message-extwin') === '1') {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('td.subject a[href^="/message"], a.extwin[href^="/message"]');
+      if (!a) return;
+      // preview mode is unaffected (show_message preview=true, app.js:2740);
+      // only the standalone open becomes a small popup window
+      if (window.innerWidth > 768 && document.getElementById('messagecontframe')) return;
+      e.preventDefault();
+      window.cc_open_window(a.getAttribute('href'), true);
+    }, true);
+  }
+
   // ------------------------------------------------------------ auto refresh
   function initRefresh() {
     var mins = parseInt(document.body.getAttribute('data-refresh-interval') || '0', 10);

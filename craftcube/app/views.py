@@ -1207,6 +1207,10 @@ def compose():
 
     spell_words = {}
     spell_checked = False
+    # open_compose_step / open_window (app.js:2259/4855): in extwin popups
+    # the compose screen replaces the redirect-based flow with stay-and-close
+    extwin = request.values.get("_extwin") == "1"
+    sent_ok = False
 
     def _compose_render():
         return render("mail", "compose.html", prefill=prefill, identities=identities,
@@ -1243,6 +1247,7 @@ def compose():
                           "spell_lang": "en",
                           "composebody": "composebody"},
                       spell_words=spell_words, spell_checked=spell_checked,
+                      extwin=extwin, sent_ok=sent_ok,
                       )
 
     if request.method == "POST":
@@ -1346,6 +1351,11 @@ def compose():
                     if addr and str(up.get("collected_senders", "2")) == "2":
                         store.collected_upsert(session["user_id"], 2, nm or addr, addr)
             flash("Message sent successfully.", "confirmation")
+            if extwin:
+                # sent_successfully (app.js:5974): an extwin popup stays on
+                # the locked form and closes itself after a second
+                sent_ok = True
+                return _compose_render()
             if store_target == "":  # "don't save"
                 return redirect(url_for("views.mail", _mbox=box.special("drafts") or "INBOX"))
             return redirect(url_for("views.mail", _mbox=store_target or box.special("sent") or "INBOX"))

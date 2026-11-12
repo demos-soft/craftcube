@@ -180,9 +180,17 @@ class Store:
         row = self._conn().execute("SELECT preferences FROM users WHERE user_id = ?", (user_id,)).fetchone()
         if row and row["preferences"]:
             try:
-                return json.loads(row["preferences"])
+                prefs = json.loads(row["preferences"])
             except ValueError:
                 return {}
+            # a checkbox stored as the string "0" must not be truthy: coerce
+            # known boolean keys to int (legacy/externally written values)
+            if isinstance(prefs, dict):
+                from .prefs_sections import CHECKBOXES
+                for key in list(prefs):
+                    if key in CHECKBOXES and isinstance(prefs[key], str):
+                        prefs[key] = 1 if prefs[key] == "1" else 0
+                return prefs
         return {}
 
     def set_user_pref(self, user_id, key, value):
