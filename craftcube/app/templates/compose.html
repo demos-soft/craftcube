@@ -159,7 +159,7 @@
                   <select name="_ident" id="identities" class="custom-select form-control"
                           onchange="return cc_editor.change_identity(this)">
                     {% for i in identities %}
-                    <option value="{{ i.identity_id }}">{{ i.name }} &lt;{{ i.email }}&gt;{{ ' (default)' if i.standard }}</option>
+                    <option value="{{ i.identity_id }}">{{ i | rc_recipient }}</option>
                     {% endfor %}
                   </select>
                   <span class="input-group-append">

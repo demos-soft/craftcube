@@ -1,6 +1,7 @@
 """CraftCube — a Python re-implementation of the Roundcube Webmail UI."""
 import functools
 import os
+import re
 
 from flask import (Flask, abort, flash, g, redirect, render_template,
                    request, session, url_for)
@@ -45,6 +46,22 @@ def create_app(config_overrides=None):
     @app.template_filter("size")
     def _size(n):
         return util.human_size(n)
+
+    @app.template_filter("rc_recipient")
+    def _rc_recipient(ident):
+        # rcube format_email_recipient(email, name)
+        def field(key):
+            try:
+                return ident[key]
+            except (KeyError, IndexError, TypeError):
+                return getattr(ident, key, "") or ""
+        email = (field("email") or "").strip()
+        name = field("name") or ""
+        if name and name != email:
+            if re.search(r'[()<>\.\[\]@,;:"]', name):
+                name = '"' + re.sub(r'(["\\])', r"\\\1", name) + '"'
+            return f"{name} <{email}>"
+        return email
 
     @app.context_processor
     def inject_globals():
