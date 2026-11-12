@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="craftcube/app/static/images/logo.svg" width="110" alt="CraftCube logo">
+</p>
+
 # CraftCube
 
 CraftCube is a webmail client: a Python re-implementation of the
