@@ -1,55 +1,15 @@
 {% include "includes/layout.html" %}
 {% include "includes/menu.html" %}
 
-    <h1 class="voice">{{ 'Edit identity' if row else 'New identity' }}</h1>
+    <h1 class="voice">{{ 'Edit identity' if row and row.identity_id else 'New identity' }}</h1>
 
     <div id="layout-content" class="selected">
       <div class="header">
         <a class="button icon back-content-button" href="{{ url_for('views.identities') }}"><span class="inner">{{ 'Cancel'|lc }}</span></a>
-        <span class="header-title">{{ 'Edit' if row else 'Create' }} identity</span>
+        <span class="header-title">{{ 'Edit' if row and row.identity_id else 'Create' }} identity</span>
       </div>
       <div class="formcontainer content">
-        <form method="post" class="formcontent propform">
-          <fieldset>
-            <legend>Identity</legend>
-            <table class="layout">
-              <tbody>
-                <tr><td class="title"><label for="inputname">Display name</label></td>
-                    <td><input type="text" name="name" id="inputname" value="{{ row['name'] if row else '' }}" class="form-control"></td></tr>
-                <tr><td class="title"><label for="inputemail">E-mail</label></td>
-                    <td><input type="text" name="email" id="inputemail" value="{{ row.email if row else '' }}" class="form-control" required></td></tr>
-                <tr><td class="title"><label for="inputorg">{{ 'Organization'|lc }}</label></td>
-                    <td><input type="text" name="organization" id="inputorg" value="{{ row.organization if row else '' }}" class="form-control"></td></tr>
-                <tr><td class="title"><label for="inputreply">{{ 'Reply-To'|lc }}</label></td>
-                    <td><input type="text" name="reply_to" id="inputreply" value="{{ row['reply-to'] if row else '' }}" class="form-control"></td></tr>
-                <tr><td class="title"><label for="inputbcc">{{ 'Bcc'|lc }}</label></td>
-                    <td><input type="text" name="bcc" id="inputbcc" value="{{ row.bcc if row else '' }}" class="form-control"></td></tr>
-                <tr class="form-group row"><td class="title col-sm-4" style="display: none;"><label for="inputsig">{{ 'Signature'|lc }}</label></td>
-                    <td class="col-sm-8"><textarea rows="6" spellcheck="1" data-html-editor="1" name="signature" id="inputsig" cols="40"
-                        class="form-control{{ ' mce_editor' if row and row.html_signature }}">{{ row.signature if row else '' }}</textarea></td></tr>
-                <tr class="form-group row form-check" style="display: none;">
-                  <td class="title col-sm-4"><label for="inputhtmlsig">{{ 'HTML signature'|lc }}</label></td>
-                  <td class="col-sm-8">
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" onclick="return cc_editor.toggle({id: 'inputsig', html: this.checked})"
-                             name="html_signature" value="1" id="inputhtmlsig"
-                             class="form-check-input custom-control-input" {{ 'checked' if row and row.html_signature }}>
-                      <label for="inputhtmlsig" class="custom-control-label">{{ 'HTML'|lc }}</label>
-                    </div>
-                  </td>
-                </tr>
-                <tr><td class="title">{{ 'Options'|lc }}</td>
-                    <td>
-                      <label><input type="checkbox" name="standard" value="1" {{ 'checked' if row and row.standard or not row }}> Set as default</label>
-                    </td></tr>
-              </tbody>
-            </table>
-          </fieldset>
-          <div class="formbuttons">
-            <button type="submit" class="btn btn-primary icon save">{{ 'Save'|lc }}</button>
-            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.identities') }}">{{ 'Cancel'|lc }}</a>
-          </div>
-        </form>
+{% include "includes/identityedit_form.html" %}
       </div>
     </div>
 
@@ -61,5 +21,5 @@
   // the strip button and checkbox switch to HTML mode; html_signature saves
   // start with TinyMCE enabled
   cc_editor.init_page({ task: 'settings', editor_config: {{ editor_cfg | tojson }} });
-  cc_editor.init_editor('inputsig', 'identity');
+  cc_editor.init_editor('rcmfd_signature', 'identity');
 </script>

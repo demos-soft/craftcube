@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ (lang or 'en_US')[:2] }}" class="iframe">
+<head>
+  <meta charset="utf-8">
+  <title>{{ product_name }} :: Preferences</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/unicorn.svg') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  <script>
+  try {
+    if (document.cookie.indexOf('colorMode=dark') > -1
+      || (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.className += ' dark-mode';
+    }
+  } catch (e) { }
+  </script>
+</head>
+<body class="task-settings action-edit-identity">
+  <!-- port of the reference edit-identity frame (_level=2): voice title +
+       propform + formbuttons, no task rail, no settings sidebar -->
+  <h1 class="voice">{{ 'Edit identity' if row and row.identity_id else 'New identity' }}</h1>
+{% include "includes/identityedit_form.html" %}
+  <div id="messagestack"></div>
+  {%- with messages = get_flashed_messages(with_categories=true) %}
+  {%- if messages %}<script>window.CC_FLASHES = {{ messages | tojson }};</script>{%- endif %}
+  {%- endwith %}
+  <script src="{{ url_for('static', filename='craftcube.js') }}"></script>
+  <script src="{{ url_for('static', filename='cc_messages.js') }}"></script>
+  <script src="{{ url_for('static', filename='tinymce/tinymce.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='editor.js') }}"></script>
+  <script>
+    cc_editor.init_page({ task: 'settings', editor_config: {{ editor_cfg | tojson }} });
+    cc_editor.init_editor('rcmfd_signature', 'identity');
+  </script>
+</body>
+</html>

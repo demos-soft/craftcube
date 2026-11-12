@@ -1,0 +1,32 @@
+{# Shared response editor body (program/actions/settings/response_edit.php):
+   form[name=form] with table.propform rows Name / Response Text / HTML and
+   Save-only formbuttons. Included by responseedit.html (full page) and
+   responseedit_framed.html (preferences-frame page). #}
+<div class="formcontent">
+<form name="form" id="form" method="post" class="propform">
+  <input type="hidden" name="_id" value="{{ row.response_id if row and row.response_id else '' }}">
+  <table class="propform">
+    <tbody>
+      <tr><td class="title"><label for="ffname">{{ 'Name'|lc }}</label></td>
+        <td><input type="text" size="60" id="ffname" name="_name" value="{{ row.name if row else '' }}" class="form-control" required></td></tr>
+      <tr class="form-group row"><td class="title col-sm-6" style="display: none;"><label for="fftext">{{ 'Response Text'|lc }}</label></td>
+        <td class="col-sm-6"><textarea rows="18" spellcheck="1" data-html-editor="1" name="_text" id="fftext" cols="60"
+            class="form-control{{ ' mce_editor' if row and row.html }}">{{ row.body if row else '' }}</textarea></td></tr>
+      <tr class="form-group row form-check" style="display: none;">
+        <td class="title col-sm-6"><label for="ffis_html">{{ 'HTML'|lc }}</label></td>
+        <td class="col-sm-6">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" onclick="return cc_editor.toggle({id: 'fftext', html: this.checked})"
+                   name="_is_html" value="1" id="ffis_html"
+                   class="form-check-input custom-control-input"{{ ' checked' if row and row.html }}>
+            <label for="ffis_html" class="custom-control-label"></label>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+</div>
+<div class="formbuttons">
+  <button type="submit" form="form" class="btn btn-primary submit">{{ 'Save'|lc }}</button>
+</div>

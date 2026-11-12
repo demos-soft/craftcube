@@ -253,7 +253,7 @@ def sections(prefs, folders):
                  "name": "_default_addressbook", "id": "rcmfd_default_addressbook",
                  "title": "Default address book",
                  "options": [("0", "Personal Addresses")],
-                 "value": str(p.get("default_addressbook", "0"))},
+                 "value": str(p.get("default_addressbook", ""))},
                 _sel("addressbook_name_listing", "List contacts as", p),
                 _sel("addressbook_sort_col", "Sorting column", p),
                 _txt("addressbook_pagesize", "Rows per page", p),
@@ -272,10 +272,6 @@ def sections(prefs, folders):
                 _folder("sent", "Sent", p, folders),
                 _folder("junk", "Junk", p, folders),
                 _folder("trash", "Trash", p, folders),
-                _folder("archive", "Archive", p, folders),
-            ]),
-            ("archive", "Archive", [
-                _sel("archive_type", "Divide archive by", p),
             ]),
         ]},
         "server": {"label": "Server Settings", "blocks": [
@@ -284,7 +280,6 @@ def sections(prefs, folders):
                 _cb("flag_for_deletion", "Flag the message for deletion instead of delete", p),
                 _cb("skip_deleted", "Do not show deleted messages", p),
                 _cb("delete_junk", "Directly delete messages in Junk", p),
-                _cb("read_on_archive", "Mark the message as read on archive", p),
             ]),
             ("maintenance", "Maintenance", [
                 _sel("logout_purge", "Clear Trash on logout", p),

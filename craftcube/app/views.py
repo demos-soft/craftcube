@@ -163,6 +163,13 @@ def folders_for_menu():
     return ph("folders_list", {"folders": out})["folders"]
 
 
+def _framed_arg():
+    """Preserve the _framed=1 flow marker through redirects (reference
+    keeps loading framed pages inside their parent frame)."""
+    from flask import request as _rq
+    return "1" if (_rq.args.get("_framed") == "1" or _rq.form.get("_framed") == "1") else None
+
+
 def render(task, tmpl, **ctx):
     g.task = task
     ctx.setdefault("folders", folders_for_menu())
@@ -201,15 +208,29 @@ def parse_recipients(value):
 
 
 def identity_from_form(form, existing=None):
+    # reference contract (settings/identity_edit.php): _name/_email/_organization/
+    # _reply-to/_bcc/_standard/_signature/_html_signature; legacy names are still
+    # accepted for robustness
+    def g(*keys, default=""):
+        for k in keys:
+            if k in form:
+                return form.get(k)
+        return default
+    std = g("_standard", "standard")
+    html_sig = g("_html_signature", "html_signature")
     return {
-        "name": form.get("name", "").strip(),
-        "organization": form.get("organization", "").strip(),
-        "email": form.get("email", "").strip(),
-        "reply_to": form.get("reply_to", "").strip(),
-        "bcc": form.get("bcc", "").strip(),
-        "signature": form.get("signature", ""),
-        "html_signature": 1 if form.get("html_signature") else 0,
-        "standard": 1 if form.get("standard") else 0,
+        "name": g("_name", "name").strip(),
+        "organization": g("_organization", "organization").strip(),
+        "email": g("_email", "email").strip(),
+        "reply_to": g("_reply-to", "reply_to").strip(),
+        "bcc": g("_bcc", "bcc").strip(),
+        "signature": g("_signature", "signature"),
+        "html_signature": 1 if html_sig and html_sig != "0" else 0,
+        "standard": 1 if std and std != "0" else 0,
+        # keep the record id so re-rendered forms (noemailwarning etc.)
+        # still carry the hidden _iid
+        "identity_id": g("_iid") or
+        (dict(existing).get("identity_id", "") if existing is not None else ""),
     }
 
 
@@ -2339,6 +2360,7 @@ def responses():
             abort(404)
     return render("settings", "responses.html", rows=rows,
                   editing=bool(edit), edit_row=edit_row,
+                  framed_page=request.args.get("_framed") == "1",
                   editor_cfg=editor_config(
                       "response", store.get_user_prefs(session["user_id"])))
 
@@ -2354,24 +2376,39 @@ def response_edit(rid=None):
     row = store.response(session["user_id"], rid) if rid else None
     if rid and not row:
         abort(404)
+    framed = request.args.get("_framed") == "1"
+
+    def out(row_ctx):
+        cfg = editor_config("response", store.get_user_prefs(session["user_id"]))
+        if framed:
+            return render_template("responseedit_framed.html", task="settings",
+                                   row=row_ctx, editor_cfg=cfg)
+        return render("settings", "responseedit.html", row=row_ctx, editor_cfg=cfg)
+
     if request.method == "POST":
-        name = request.form.get("name", "").strip()
-        body = request.form.get("body", "")
-        is_html = 1 if request.form.get("html") else 0
+        # reference contract (settings/response_save.php): _id/_name/_text/_is_html;
+        # legacy names (name/body/html) remain accepted
+        name = (request.form.get("_name") or request.form.get("name") or "").strip()
+        body = request.form.get("_text")
+        if body is None:
+            body = request.form.get("body", "")
+        is_html_val = request.form.get("_is_html", request.form.get("html"))
+        is_html = 1 if is_html_val and is_html_val != "0" else 0
         if name and body.strip():
             new_id = store.response_save(session["user_id"], name, body,
                                          html=is_html, rid=rid)
             flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
-            # reference keeps the record open in the edit frame after save
-            return redirect(url_for("views.responses", _edit=new_id))
+            # reference keeps the record open in the edit frame after save;
+            # app.js update_response_row(id, name, add) then syncs the parent list
+            return redirect(url_for("views.response_edit", rid=new_id,
+                                    _framed=_framed_arg(),
+                                    _saved="insert" if rid is None else "update"))
         # response_save.php:55-59: show_message('formincomplete','error') +
         # overwrite_action('edit-response', post) - the form re-renders with
         # the submitted values and a sticky error box
         flash(i18n.gettext("formincomplete", g.lang, domain="messages"), "error")
-        row = {"name": name, "body": body, "html": is_html, "id": rid}
-    return render("settings", "responseedit.html", row=row,
-                  editor_cfg=editor_config(
-                      "response", store.get_user_prefs(session["user_id"])))
+        row = {"name": name, "body": body, "html": is_html, "response_id": rid}
+    return out(row)
 
 
 @bp.post("/settings/response/<int:rid>/delete")
@@ -2379,7 +2416,7 @@ def response_edit(rid=None):
 def response_delete(rid):
     get_store().response_delete(session["user_id"], rid)
     flash(i18n.gettext("deletedsuccessfully", g.lang, domain="messages"), "confirmation")
-    return redirect(url_for("views.responses"))
+    return redirect(url_for("views.responses", _framed=_framed_arg()))
 
 
 @bp.route("/settings/identities")
@@ -2395,6 +2432,7 @@ def identities():
             abort(404)
     return render("settings", "identities.html", rows=rows,
                   editing=bool(edit), edit_row=edit_row,
+                  framed_page=request.args.get("_framed") == "1",
                   editor_cfg=editor_config(
                       "identity", store.get_user_prefs(session["user_id"])))
 
@@ -2410,29 +2448,37 @@ def identity_edit(iid=None):
     row = store.identity(session["user_id"], iid) if iid else None
     if iid and not row:
         abort(404)
+    framed = request.args.get("_framed") == "1"
+
+    def out(row_ctx):
+        # reference: the frame page (_level=2 style) is a bare propform;
+        # the standalone (non-framed) URL keeps the full page shell
+        cfg = editor_config("identity", store.get_user_prefs(session["user_id"]))
+        if framed:
+            return render_template("identityedit_framed.html", task="settings",
+                                   row=row_ctx, editor_cfg=cfg)
+        return render("settings", "identityedit.html", row=row_ctx, editor_cfg=cfg)
+
     if request.method == "POST":
         data = identity_from_form(request.form, row)
         # identity_save.php: empty email -> warning + re-render form (#keep post)
         if not data["email"]:
             flash(i18n.gettext("noemailwarning", g.lang, domain="messages"),
                   "warning")
-            return render("settings", "identityedit.html", row=data,
-                          editor_cfg=editor_config(
-                              "identity", store.get_user_prefs(session["user_id"])))
+            return out(data)
         # identity_save.php:93-97: rcube_utils::check_email failure
         if not util.check_email(data["email"]):
             flash(i18n.gettext("emailformaterror", g.lang, domain="messages",
                                vars={"email": data["email"]}), "error")
-            return render("settings", "identityedit.html", row=data,
-                          editor_cfg=editor_config(
-                              "identity", store.get_user_prefs(session["user_id"])))
+            return out(data)
         new_id = store.identity_save(session["user_id"], data, identity_id=iid)
         flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
-        # reference keeps the record open in the edit frame after save
-        return redirect(url_for("views.identities", _edit=new_id or iid))
-    return render("settings", "identityedit.html", row=row,
-                  editor_cfg=editor_config(
-                      "identity", store.get_user_prefs(session["user_id"])))
+        # reference keeps the record open in the edit frame after save;
+        # app.js update_identity_row(id, name, add) then syncs the parent list
+        return redirect(url_for("views.identity_edit", iid=new_id or iid,
+                                _framed=_framed_arg(),
+                                _saved="insert" if iid is None else "update"))
+    return out(row)
 
 
 @bp.post("/settings/identity/<int:iid>/delete")
@@ -2441,7 +2487,7 @@ def identity_delete(iid):
     store = get_store()
     store.identity_delete(session["user_id"], iid)
     flash(i18n.gettext("deletedsuccessfully", g.lang, domain="messages"), "confirmation")
-    return redirect(url_for("views.identities"))
+    return redirect(url_for("views.identities", _framed=_framed_arg()))
 
 
 # ---------------------------------------------------------------- folders
@@ -2466,10 +2512,12 @@ def folders_view():
     if edit and edit != "new" and "/" in edit:
         parent_of = edit.rsplit("/", 1)[0]
     fvpref = get_store().get_user_prefs(session["user_id"]).get("folder_viewmodes") or {}
-    folder_viewmode = fvpref.get(edit, "list") if edit else "list"
+    folder_viewmode = (fvpref.get(edit) if edit else None) or \
+        get_store().get_user_prefs(session["user_id"]).get("viewmode") or "threads"
     return render("settings", "folders.html", all_folders=allf,
                   folder_filter=flt if flt is not None else "---",
                   q=q or "",
+                  framed_page=request.args.get("_framed") == "1",
                   editing=bool(edit), edit_folder=edit if edit else None,
                   parent_of=parent_of, folder_viewmode=folder_viewmode)
 
@@ -2509,14 +2557,14 @@ def folders_act():
             error = folder_name_error(name)
             if error:
                 flash(error, "error")
-                return redirect(url_for("views.folders_view"))
+                return redirect(url_for("views.folders_view", _framed=_framed_arg()))
             if name:
                 full = f"{parent}/{name}" if parent else name
                 box.imap.create_folder(full)
                 box.imap.subscribe(full)
                 save_viewmode(full)
                 flash(i18n.gettext("foldercreated", g.lang, domain="messages"), "confirmation")
-                return redirect(url_for("views.folders_view", _edit=full))
+                return redirect(url_for("views.folders_view", _edit=full, _framed=_framed_arg()))
         elif act == "rename":
             old = request.form.get("folder")
             new = request.form.get("name", "").strip()
@@ -2525,7 +2573,7 @@ def folders_act():
                 error = folder_name_error(new)
                 if error:
                     flash(error, "error")
-                    return redirect(url_for("views.folders_view", _edit=old))
+                    return redirect(url_for("views.folders_view", _edit=old, _framed=_framed_arg()))
             if old and new:
                 base = old.rsplit("/", 1)[0] if "/" in old else ""
                 if parent is None:
@@ -2540,7 +2588,7 @@ def folders_act():
                         store.set_user_pref(session["user_id"], "folder_viewmodes", fvm)
                 save_viewmode(target)
                 flash(i18n.gettext("folderupdated", g.lang, domain="messages"), "confirmation")
-                return redirect(url_for("views.folders_view", _edit=target))
+                return redirect(url_for("views.folders_view", _edit=target, _framed=_framed_arg()))
         elif act == "delete":
             name = request.form.get("folder")
             if name:
@@ -2561,10 +2609,10 @@ def folders_act():
                     box.imap.subscribe(name)
                 else:
                     box.imap.unsubscribe(name)
-                return redirect(url_for("views.folders_view", _edit=name))
+                return redirect(url_for("views.folders_view", _edit=name, _framed=_framed_arg()))
     except MailError as e:
         flash(str(e), "error")
-    return redirect(url_for("views.folders_view"))
+    return redirect(url_for("views.folders_view", _framed=_framed_arg()))
 
 
 # ---------------------------------------------------------------- about

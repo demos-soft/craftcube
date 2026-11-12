@@ -3,47 +3,15 @@
 {% set settings_nav = 'responses' %}
 {% include "includes/settings-sidebar.html" %}
 
-    <h1 class="voice">{{ 'Edit response' if row else 'New response' }}</h1>
+    <h1 class="voice">{{ 'Edit response' if row and row.id else 'Add response' }}</h1>
 
     <div id="layout-content" class="selected">
       <div class="header">
         <a class="button icon back-content-button" href="{{ url_for('views.responses') }}"><span class="inner">{{ 'Cancel'|lc }}</span></a>
-        <span class="header-title">{{ 'Edit' if row else 'Create' }} response</span>
+        <span class="header-title">{{ 'Edit' if row and row.id else 'Create' }} response</span>
       </div>
       <div class="formcontainer content">
-        <form method="post" class="formcontent">
-          <fieldset>
-            <legend>Response</legend>
-            <table class="layout propform">
-              <tbody>
-                <tr>
-                  <td class="title"><label for="inputname">{{ 'Name'|lc }}</label></td>
-                  <td class="field"><input type="text" name="name" id="inputname"
-                      value="{{ row.name if row else '' }}" class="form-control" required></td>
-                </tr>
-                <tr class="form-group row"><td class="title col-sm-4" style="display: none;"><label for="inputbody">{{ 'Response Text'|lc }}</label></td>
-                  <td class="col-sm-8"><textarea rows="18" spellcheck="1" data-html-editor="1" name="body" id="inputbody" cols="60"
-                      class="form-control{{ ' mce_editor' if row and row.html }}">{{ row.body if row else '' }}</textarea></td>
-                </tr>
-                <tr class="form-group row form-check" style="display: none;">
-                  <td class="title col-sm-4"><label for="inputishtml">{{ 'HTML'|lc }}</label></td>
-                  <td class="col-sm-8">
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" onclick="return cc_editor.toggle({id: 'inputbody', html: this.checked})"
-                             name="html" value="1" id="inputishtml"
-                             class="form-check-input custom-control-input"{{ ' checked' if row and row.html }}>
-                      <label for="inputishtml" class="custom-control-label">{{ 'HTML'|lc }}</label>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </fieldset>
-          <div class="formbuttons">
-            <button type="submit" class="btn btn-primary icon save">{{ 'Save'|lc }}</button>
-            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.responses') }}">{{ 'Cancel'|lc }}</a>
-          </div>
-        </form>
+{% include "includes/responseedit_form.html" %}
       </div>
     </div>
 
@@ -53,5 +21,5 @@
 <script>
   // reference: html_editor('response', 'fftext') + editor_init
   cc_editor.init_page({ task: 'settings', editor_config: {{ editor_cfg | tojson }} });
-  cc_editor.init_editor('inputbody', 'response');
+  cc_editor.init_editor('fftext', 'response');
 </script>

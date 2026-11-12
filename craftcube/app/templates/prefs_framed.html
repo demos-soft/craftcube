@@ -28,6 +28,16 @@
       {% for class, legend, fields in blocks %}
       <fieldset class="{{ class }}"><legend>{{ legend }}</legend>
         <table class="propform cols-sm-6-6"><tbody>
+          {% if class == 'mailvelope' %}
+          {# index.php encryption section: boxwarning + Enable when the
+             browser has no Mailvelope extension (checked in the frame's parent) #}
+          <tr><td colspan="2"><div style="display:none" class="boxwarning" id="mailvelope-warning"><a href="https://www.mailvelope.com" target="_blank" rel="noopener">Mailvelope</a> extension is not enabled/installed in your browser.<script type="text/javascript">
+/* <![CDATA[ */
+if (!parent.mailvelope) $('#mailvelope-warning').show()
+/* ]]> */
+</script>
+<button type="button" class="btn btn-secondary" onclick="if (window.cc_display) cc_display('Mailvelope extension is not enabled/installed in your browser.', 'error')">Enable</button></div></td></tr>
+          {% endif %}
           {% for f in fields %}
           {% if f.type == 'mailto' %}
           <tr class="form-group row"><td colspan="2"><a href="#" id="{{ f.id }}">{{ f.title }}</a><span
@@ -40,7 +50,7 @@
                 {% for s in f.fields %}
                 <select name="{{ s.name }}" id="{{ s.id }}" class="custom-select form-control pretty-select"{% if s.attrs %} {{ s.attrs|safe }}{% endif %}>
                   {% for v, l in s.options %}
-                  <option value="{{ v }}"{{ ' selected="selected"' if v == s.value }}>{{ l }}</option>
+                  <option value="{{ v }}"{{ ' selected="selected"' if v and v == s.value }}>{{ l }}</option>
                   {% endfor %}
                 </select>
                 {% endfor %}
@@ -62,7 +72,7 @@
               {% if f.type == 'select' %}
               <select name="{{ f.name }}" id="{{ f.id }}" class="custom-select form-control pretty-select"{% if f.attrs %} {{ f.attrs|safe }}{% endif %}>
                 {% for v, l in f.options %}
-                <option value="{{ v }}"{{ ' selected="selected"' if v == f.value }}>{{ l }}</option>
+                <option value="{{ v }}"{{ ' selected="selected"' if v and v == f.value }}>{{ l }}</option>
                 {% endfor %}
               </select>
               {% else %}
@@ -85,6 +95,7 @@
   {%- with messages = get_flashed_messages(with_categories=true) %}
   {%- if messages %}<script>window.CC_FLASHES = {{ messages | tojson }};</script>{%- endif %}
   {%- endwith %}
+  <script src="{{ url_for('static', filename='craftcube.js') }}"></script>
   <script src="{{ url_for('static', filename='cc_messages.js') }}"></script>
   <script>
   // skins/elastic/ui.js: advanced fieldsets are wrapped into a bootstrap

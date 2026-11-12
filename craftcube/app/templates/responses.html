@@ -20,7 +20,9 @@
             {% for r in rows %}
             <tr id="rcmrow{{ r.response_id }}"{{ ' class="selected"'|safe if editing and r.response_id == edit_row.response_id }}
                 role="option" tabindex="0"
-                data-href="{{ url_for('views.responses', _edit=r.response_id) }}">
+                aria-selected="{{ 'true' if editing and edit_row and r.response_id == edit_row.response_id else 'false' }}"
+                data-record-id="{{ r.response_id }}"
+                data-framed-href="{{ url_for('views.response_edit', rid=r.response_id, _framed='1') }}">
               <td class="name">{{ r.name }}</td>
             </tr>
             {% endfor %}
@@ -35,15 +37,18 @@
       <h2 id="aria-label-toolbar" class="voice">{{ 'Application toolbar'|lc }}</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
         <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
-        <span class="header-title"></span>
+        <span class="header-title">{{ 'Responses'|lc }}</span>
         <div id="responsestoolbar" class="toolbar menu">
           <a class="create" title="{{ 'Create new response'|lc }}" data-fab="true" role="button"
-             href="{{ url_for('views.responses', _edit='new') }}"><span class="inner">{{ 'Create'|lc }}</span></a>
+             data-framed-href="{{ url_for('views.response_edit', _framed='1') }}"
+             href="{{ url_for('views.responses', _edit='new', _framed='1' if framed_page|default(false) else None) }}"><span class="inner">{{ 'Create'|lc }}</span></a>
           {% if edit_row %}
           <a class="delete" title="{{ 'Delete'|lc }}" role="button"
+             data-delete-base="{{ url_for('views.response_delete', rid=1)[:-9] }}" data-confirm="Delete this response?"
              href="#" onclick="if (confirm('Delete this response?')) document.getElementById('response-delete-form').submit(); return false"><span class="inner">{{ 'Delete'|lc }}</span></a>
           {% else %}
           <a class="delete disabled" title="{{ 'Delete'|lc }}" role="button" tabindex="-1" aria-disabled="true"
+             data-delete-base="{{ url_for('views.response_delete', rid=1)[:-9] }}" data-confirm="Delete this response?"
              href="#"><span class="inner">{{ 'Delete'|lc }}</span></a>
           {% endif %}
         </div>
@@ -76,11 +81,11 @@
           </fieldset>
           <div class="formbuttons">
             <button type="submit" class="btn btn-primary icon save">{{ 'Save'|lc }}</button>
-            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.responses') }}">{{ 'Cancel'|lc }}</a>
+            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.responses', _framed='1' if framed_page|default(false) else None) }}">{{ 'Cancel'|lc }}</a>
           </div>
         </form>
         {% if edit_row %}
-        <form id="response-delete-form" method="post" action="{{ url_for('views.response_delete', rid=edit_row.response_id) }}"></form>
+        <form id="response-delete-form" method="post" action="{{ url_for('views.response_delete', rid=edit_row.response_id, _framed='1' if framed_page|default(false) else None) }}"></form>
         {% endif %}
       </div>
       {% else %}

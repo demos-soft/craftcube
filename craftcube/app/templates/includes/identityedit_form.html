@@ -1,0 +1,45 @@
+{# Shared identity editor body (skins/elastic identityedit.html +
+   settings/identity_edit.php): formcontent propform with Settings and
+   Signature fieldsets, hidden Encryption fieldset, image-upload hint and
+   Save-only formbuttons. Included by identityedit.html (full page) and
+   identityedit_framed.html (preferences-frame page). #}
+<div class="formcontent">
+<form name="form" id="form" method="post" class="propform">
+  <input type="hidden" name="_iid" value="{{ row.identity_id if row and row.identity_id else '' }}">
+  <fieldset>
+    <legend>{{ 'Settings'|lc }}</legend>
+    <table class="propform">
+      <tbody>
+        <tr><td class="title"><label for="rcmfd_name">{{ 'Display Name'|lc }}</label></td>
+          <td><input type="text" size="40" id="rcmfd_name" name="_name" class="ff_name" value="{{ row['name'] if row else '' }}"></td></tr>
+        <tr><td class="title"><label for="rcmfd_email">{{ 'Email'|lc }}</label></td>
+          <td><input type="text" size="40" id="rcmfd_email" name="_email" class="ff_email" value="{{ row.email if row else '' }}"></td></tr>
+        <tr><td class="title"><label for="rcmfd_organization">{{ 'Organization'|lc }}</label></td>
+          <td><input type="text" size="40" id="rcmfd_organization" name="_organization" class="ff_organization" value="{{ row.organization if row else '' }}"></td></tr>
+        <tr><td class="title"><label for="rcmfd_reply-to">{{ 'Reply-To'|lc }}</label></td>
+          <td><input type="text" size="40" id="rcmfd_reply-to" name="_reply-to" class="ff_reply-to" value="{{ row['reply-to'] if row else '' }}"></td></tr>
+        <tr><td class="title"><label for="rcmfd_bcc">Bcc</label></td>
+          <td><input type="text" size="40" id="rcmfd_bcc" name="_bcc" class="ff_bcc" value="{{ row.bcc if row else '' }}"></td></tr>
+        <tr><td class="title"><label for="rcmfd_standard">{{ 'Set default'|lc }}</label></td>
+          <td><input type="checkbox" id="rcmfd_standard" name="_standard" class="ff_standard" value="1"{{ ' checked' if (row and row.standard) or not row }}></td></tr>
+      </tbody>
+    </table>
+  </fieldset>
+  <fieldset>
+    <legend>{{ 'Signature'|lc }}</legend>
+    <table class="propform">
+      <tbody>
+        <tr><td class="title"><label for="rcmfd_signature">{{ 'Signature'|lc }}</label></td>
+          <td><textarea rows="6" spellcheck="1" data-html-editor="1" id="rcmfd_signature" name="_signature" class="ff_signature{{ ' mce_editor' if row and row.html_signature }}" cols="40">{{ row.signature if row else '' }}</textarea></td></tr>
+        <tr><td class="title"><label for="rcmfd_html_signature">{{ 'HTML signature'|lc }}</label></td>
+          <td><input type="checkbox" onclick="return cc_editor.toggle({id: 'rcmfd_signature', html: this.checked})" id="rcmfd_html_signature" name="_html_signature" class="ff_html_signature" value="1"{{ ' checked' if row and row.html_signature }}></td></tr>
+      </tbody>
+    </table>
+  </fieldset>
+  <fieldset class="identity-encryption" style="display:none"><legend>{{ 'Encryption'|lc }}</legend><div class="identity-encryption-block"></div></fieldset>
+</form>
+<form id="identityImageUpload" style="display: none"><div class="hint">{{ 'Maximum allowed file size is 64 KB'|lc }}</div></form>
+</div>
+<div class="formbuttons">
+  <button type="submit" form="form" class="btn btn-primary submit" value="{{ 'Save'|lc }}">{{ 'Save'|lc }}</button>
+</div>

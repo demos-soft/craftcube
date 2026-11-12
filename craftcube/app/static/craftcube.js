@@ -87,7 +87,14 @@
   function pane(id) { return document.getElementById(id); }
   function computeScreenMode() {
     // ui.js screen_mode(): phone <=480, small <=768, normal <=1200, large
-    var w = window.innerWidth;
+    // reference window_width(): framed pages measure the TOP window, so an
+    // iframe inside a wide shell keeps the parent's layout mode (elastic ui.js)
+    var w;
+    try {
+      var wn = window;
+      while (wn !== wn.top && wn.parent && wn.parent.document) wn = wn.parent;
+      w = wn.innerWidth;
+    } catch (e) { w = window.innerWidth; }
     mode = w <= 480 ? 'phone' : w > 1200 ? 'large' : w > 768 ? 'normal' : 'small';
     touch = w <= 1024;
   }
@@ -1307,10 +1314,23 @@
     });
   });
 
+  // framed (iframe) pages: reference ui.js drops the task rail and sidebar
+  // from every *_framed=1 page (they belong to the parent window only)
+  if (document.documentElement.classList.contains('iframe')) {
+    ['#layout-menu', '#layout-sidebar'].forEach(function (sel) {
+      var el = document.querySelector(sel);
+      if (el) el.remove();
+    });
+  }
+
   // ------------------------------- rows opening a section in a local frame
   // (ui.js: clicking a settings section row loads the form into
-  //  #preferences-frame and marks the row selected, URL unchanged)
-  document.querySelectorAll('tr[data-framed-href], li[data-framed-href]').forEach(function (row) {
+  //  #preferences-frame and marks the row selected, URL unchanged;
+  //  toolbar buttons — Create — navigate the frame too)
+  document.querySelectorAll('tr[data-framed-href], li[data-framed-href], a[data-framed-href]').forEach(cc_bind_framed_row);
+  function cc_bind_framed_row(row) {
+    if (row.hasAttribute('data-framed-bound')) return;
+    row.setAttribute('data-framed-bound', '1');
     function go() {
       var frame = document.getElementById('preferences-frame');
       if (!frame) return;
@@ -1321,21 +1341,116 @@
           el.setAttribute('aria-selected', 'false');
         });
       }
-      row.classList.add('selected', 'focused');
-      row.setAttribute('aria-selected', 'true');
+      // cross-list deselection (elastic: sidebar and section list never
+      // carry the selection at the same time)
+      var other = row.tagName === 'LI'
+        ? document.querySelector('#sections-table')
+        : document.querySelector('#settings-menu');
+      if (other) other.querySelectorAll('.selected').forEach(function (el) {
+        el.classList.remove('selected', 'focused');
+        el.setAttribute('aria-selected', 'false');
+      });
+      if (row.tagName !== 'A') {
+        row.classList.add('selected', 'focused');
+        row.setAttribute('aria-selected', 'true');
+      }
       frame.src = row.getAttribute('data-framed-href');
+      cc_record_select(row);
       // common_content_handler: on small screens showing the content frame
       // makes it the selected pane (replaces the list)
       if (mode === 'phone' || mode === 'small') showContent();
     }
     row.addEventListener('click', function (e) {
+      if (row.tagName === 'A') { e.preventDefault(); go(); return; }
       if (e.target.closest('a, input, button')) return;
       go();
     });
     row.addEventListener('keydown', function (e) {
       if (e.key === 'Enter') go();
     });
-  });
+  }
+
+  // app.js update_identity_row()/update_response_row(): after a framed
+  // save the editor page syncs the parent list — insert+select on create,
+  // cell text replace on update (reference replaces the identity cell with
+  // the bare name, email included only on a full list render)
+  window.cc_settings_row_upsert = function (o) {
+    var list = document.querySelector(o.list);
+    if (!list) return;
+    var tbody = list.querySelector('tbody') || list;
+    var sel = 'tr[data-record-id="' + o.id + '"]';
+    var row = tbody.querySelector(sel);
+    function select_only(tr) {
+      tbody.querySelectorAll('tr.selected, tr.focused').forEach(function (el) {
+        el.classList.remove('selected', 'focused');
+        el.setAttribute('aria-selected', 'false');
+      });
+      tr.classList.add('selected', 'focused');
+      tr.setAttribute('aria-selected', 'true');
+    }
+    if (row) {
+      var cell = row.querySelector('td');
+      if (cell) cell.textContent = o.name;
+      if (o.add) select_only(row);
+      return;
+    }
+    if (!o.add) return;
+    var base = tbody.querySelector('tr[data-framed-href]');
+    var tr;
+    if (base) {
+      tr = base.cloneNode(true);
+    } else {
+      tr = document.createElement('tr');
+      tr.setAttribute('role', 'option');
+      tr.setAttribute('tabindex', '0');
+      var td = document.createElement('td');
+      td.className = o.list.indexOf('responses') > -1 ? 'name' : 'mail';
+      tr.appendChild(td);
+    }
+    tr.id = 'rcmrow' + o.id;
+    tr.setAttribute('data-record-id', o.id);
+    tr.setAttribute('aria-selected', 'false');
+    tr.removeAttribute('onclick');
+    var href = (o.list.indexOf('responses') > -1
+      ? '/settings/response/edit/'
+      : '/settings/identity/edit/') + o.id + '?_framed=1';
+    tr.setAttribute('data-framed-href', href);
+    tr.querySelector('td').textContent = o.name;
+    // fresh row needs the framed-click behavior
+    tbody.appendChild(tr);
+    cc_bind_framed_row(tr);
+    select_only(tr);
+    var empty = list.parentNode.querySelector('.tablenoselrows, tr.a-empty');
+    if (empty) empty.remove();
+  };
+
+  // elastic identities/responses lists: Delete is disabled until a record is
+  // selected; selecting a row arms it for that record (rcmail.enable_command)
+  function cc_record_select(row) {
+    var del = document.querySelector('#layout-content .toolbar a.delete');
+    if (!del || !del.hasAttribute('data-delete-base')) return;
+    var rid = row.tagName !== 'A' ? row.getAttribute('data-record-id') : null;
+    if (!rid) {
+      del.classList.add('disabled');
+      del.setAttribute('tabindex', '-1');
+      del.setAttribute('aria-disabled', 'true');
+      del.onclick = null;
+      return;
+    }
+    del.classList.remove('disabled');
+    del.removeAttribute('tabindex');
+    del.setAttribute('aria-disabled', 'false');
+    del.onclick = function (e) {
+      e.preventDefault();
+      if (!window.confirm(del.getAttribute('data-confirm') || 'Delete?')) return false;
+      var f = document.createElement('form');
+      f.method = 'post';
+      f.action = del.getAttribute('data-delete-base') + '/' + rid + '/delete';
+      document.body.appendChild(f);
+      f.submit();
+      return false;
+    };
+  }
 
   // --------------------------------------------------- empty-list info message
   // (ui.js: data-label-msg/-ext/-create-command -> div.listing-info)
