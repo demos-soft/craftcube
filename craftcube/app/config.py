@@ -28,3 +28,7 @@ class Config:
 
     PAGE_SIZE = int(os.environ.get("CRAFTCUBE_PAGE_SIZE", "20"))
     PER_USER_PASSWORDS = os.environ.get("CRAFTCUBE_PER_USER_PASSWORDS", "1") == "1"
+    # shared-mailbox mode (PER_USER_PASSWORDS=0): authenticate IMAP/SMTP with
+    # these admin credentials instead of the user's own password
+    IMAP_ADMIN_USER = os.environ.get("CRAFTCUBE_IMAP_ADMIN_USER", "")
+    IMAP_ADMIN_PASS = os.environ.get("CRAFTCUBE_IMAP_ADMIN_PASS", "")
