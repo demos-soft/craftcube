@@ -360,6 +360,12 @@ def test_mail_read_time_controls_preview_marking(client, store, user, make_box):
         assert f'data-read-time="{rt}"' in html, rt
         assert ("_noseen=1" in html) == noseen, rt
 
+def test_show_real_foldernames_controls_folder_label(app):
+    with app.test_request_context("/"):
+        assert views.folder_label("INBOX/Drafts", {"show_real_foldernames": 1}) == "INBOX/Drafts"
+        assert views.folder_label("INBOX/Drafts", {"show_real_foldernames": 0}) == "Drafts"
+
+
 def test_addressbook_name_listing_and_sort_col(client, store, user):
     for first, last, addr in [("Alice", "Smith", "alice@example.org"),
                               ("Bob", "Adams", "bob@example.org")]:
