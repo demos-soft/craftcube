@@ -27,7 +27,8 @@
       {# ui.js focuses the first form field when the frame loads #}
       {% set ns = namespace(done=false) %}
       {% for class, legend, fields in blocks %}
-      <fieldset class="{{ class }}"><legend>{{ legend }}</legend>
+      <fieldset class="{{ class }}"{% if class == 'advanced' %} id="advanced-options"{% endif %}><legend{% if class == 'advanced' %} class="closed" tabindex="0" role="button" aria-expanded="false"{% endif %}>{{ legend }}</legend>
+        <div{% if class == 'advanced' %} class="collapse"{% endif %}>
         <table class="propform cols-sm-6-6"><tbody>
           {% for f in fields %}
           {% if f.type == 'mailto' %}
@@ -81,6 +82,7 @@
           {% endif %}
           {% endfor %}
         </tbody></table>
+        </div>
       </fieldset>
       {% endfor %}
     </form>
@@ -107,6 +109,26 @@
         el.style.opacity = '0';
         setTimeout(function () { el.remove(); }, 600);
       }, 6000);
+    });
+  })();
+  </script>
+  <script>
+  // skins/elastic/ui.js: fieldset.advanced tables get wrapped in .collapse
+  // and the legend toggles them ("Advanced options" starts collapsed).
+  // bootstrap's collapse boils down to the .show class here.
+  (function () {
+    document.querySelectorAll('fieldset.advanced > legend').forEach(function (lg) {
+      var box = lg.parentElement.querySelector('.collapse');
+      if (!box) return;
+      function toggle() {
+        var open = box.classList.toggle('show');
+        lg.classList.toggle('closed', !open);
+        lg.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+      lg.addEventListener('click', toggle);
+      lg.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+      });
     });
   })();
   </script>
