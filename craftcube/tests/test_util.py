@@ -66,6 +66,15 @@ class TestDates:
         weekday = util.i18n.gettext(two_days.strftime("%a").lower(), "de_DE")
         assert util.fmt_list_date(two_days, "de_DE").startswith(weekday + " ")
 
+    def test_list_pref_date_date_format_and_time_format(self):
+        from zoneinfo import ZoneInfo
+
+        berlin = ZoneInfo("Europe/Berlin")
+        d = datetime.datetime(2026, 1, 1, 14, 5, tzinfo=berlin)
+        prefs = {"pretty_date": 0, "timezone": "Europe/Berlin",
+                 "date_format": "d.m.Y", "time_format": "H:i"}
+        assert util.list_pref_date(d, prefs) == "01.01.2026 14:05"
+
     def test_list_pref_date_localized_today(self):
         from zoneinfo import ZoneInfo
 
