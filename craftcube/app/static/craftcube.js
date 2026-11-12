@@ -720,31 +720,39 @@
         flag.classList.toggle('unflagged');
         return;
       }
-      var a = e.target.closest('td.subject span.subject a');
-      if (a) {
-        var url = a.getAttribute('href');
-        var frame = document.getElementById('messagecontframe');
-        // Elastic opens the preview everywhere the layout is not single-pane
-        // (is_mobile() = phone/small, <=768); normal/large keep list+content
-        if (frame && window.innerWidth > 768) {
-          e.preventDefault();
-          frame.src = url + (url.indexOf('?') > -1 ? '&' : '?') + '_framed=1';
-          var content = document.getElementById('layout-content');
-          if (content) content.classList.add('selected');
-          rows().forEach(function (r) { r.classList.remove('selected'); });
-          var tr = a.closest('tr');
-          tr.classList.add('selected');
-          var icon = tr.querySelector('.msgicon.status');
-          if (icon) { icon.classList.remove('unread'); icon.title = ''; }
-          tr.classList.remove('unread');
-          updateToolbar();
-        }
+      var tr = e.target.closest('tr.message');
+      if (!tr) return;
+      // selection mode (reference rowselection): a row click toggles the
+      // checkbox; the subject link still navigates/previews
+      if (list.classList.contains('selection') && !e.target.closest('td.subject span.subject a')) {
+        var cb2 = tr.querySelector('td.selection input');
+        if (cb2) { cb2.checked = !cb2.checked; updateToolbar(); }
         return;
       }
-      var tr2 = e.target.closest('tr.message');
-      if (tr2 && list.classList.contains('selection')) {
-        var cb2 = tr2.querySelector('td.selection input');
-        if (cb2) { cb2.checked = !cb2.checked; updateToolbar(); }
+      // Elastic: clicking anywhere in a message row focuses it and opens
+      // the preview (only the anchor is a real href for keyboard/no-JS)
+      var url = null;
+      var a2 = e.target.closest('td.subject span.subject a');
+      if (a2) url = a2.getAttribute('href');
+      else {
+        var link = tr.querySelector('td.subject span.subject a');
+        if (link) url = link.getAttribute('href');
+      }
+      var frame = document.getElementById('messagecontframe');
+      // Elastic opens the preview everywhere the layout is not single-pane
+      // (is_mobile() = phone/small, <=768); normal/large keep list+content
+      if (url && frame && window.innerWidth > 768) {
+        e.preventDefault();
+        frame.src = url + (url.indexOf('?') > -1 ? '&' : '?') + '_framed=1';
+        var content = document.getElementById('layout-content');
+        if (content) content.classList.add('selected');
+        rows().forEach(function (r) { r.classList.remove('selected'); });
+        tr.classList.add('selected');
+        var icon = tr.querySelector('.msgicon.status');
+        if (icon) { icon.classList.remove('unread'); icon.title = ''; }
+        tr.classList.remove('unread');
+        updateToolbar();
+        setTimeout(scheduleRead, 300);
       }
     });
 
@@ -1148,11 +1156,20 @@
   function initRefresh() {
     var mins = parseInt(document.body.getAttribute('data-refresh-interval') || '0', 10);
     if (!mins || !document.getElementById('messagelist')) return;
-    setTimeout(function () {
+    function tick() {
       var url = new URL(location.href);
-      url.searchParams.delete('_uid'); // don't steal focus back to the preview
+      // Elastic's check_mime_message reloads the list *with* the previewed
+      // message (_uid stays in the request), so the content frame and the
+      // focused row survive the refresh. Dropping _uid here made the opened
+      // message vanish and its row lose focus after one interval.
+      var sel = document.querySelector('#messagelist tr.selected, #messagelist tr.focused');
+      var uid = sel && sel.getAttribute('data-uid');
+      if (uid) url.searchParams.set('_uid', uid);
+      else url.searchParams.delete('_uid');
       location.href = url.toString();
-    }, mins * 60000);
+    }
+    setTimeout(tick, mins * 60000);
+    window.cc_refresh_tick = tick; // exposed for tests
   }
 
   // --------------------------------------------- recipient_selector (ui.js):
