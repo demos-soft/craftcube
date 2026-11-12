@@ -235,3 +235,108 @@ def attachment_icon(content_type, filename):
         "ppt": "ppt", "pptx": "ppt", "txt": "txt", "md": "txt",
         "ics": "calendar", "vcf": "vcard",
     }.get(ext, "unknown")
+
+
+# ---------------------------------------------------------------- vcards
+
+CONTACT_TYPES = ["work", "home", "other"]
+
+def vcard_encode(f):
+    """Serialize extended contact fields to a minimal vCard 4.0."""
+    lines = ["BEGIN:VCARD", "VERSION:4.0"]
+    def esc(v):
+        return (v or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+    lines.append("FN:" + esc(f.get("name")))
+    lines.append("N:%s;%s;%s;%s;%s" % tuple(esc(f.get(k)) for k in
+                 ("surname", "firstname", "middlename", "prefix", "suffix")))
+    if f.get("nickname"):
+        lines.append("NICKNAME:" + esc(f["nickname"]))
+    if f.get("organization"):
+        lines.append("ORG:" + esc(f["organization"]))
+    if f.get("department"):
+        lines.append("X-DEPARTMENT:" + esc(f["department"]))
+    if f.get("jobtitle"):
+        lines.append("TITLE:" + esc(f["jobtitle"]))
+    for typ, val in f.get("emails") or []:
+        if val:
+            lines.append("EMAIL;TYPE=%s:%s" % (typ or "work", esc(val)))
+    for typ, val in f.get("phones") or []:
+        if val:
+            lines.append("TEL;TYPE=%s:%s" % (typ or "work", esc(val)))
+    for addr in f.get("addresses") or []:
+        typ, street, locality, zipcode, region, country = (list(addr) + [""] * 6)[:6]
+        if any((street, locality, zipcode, region, country)):
+            lines.append("ADR;TYPE=%s:;;%s;%s;%s;%s;%s" % (
+                typ or "home", esc(street), esc(locality), esc(region),
+                esc(zipcode), esc(country)))
+    if f.get("gender"):
+        lines.append("GENDER:" + esc(f["gender"]))
+    if f.get("birthday"):
+        lines.append("BIRTHDAY:" + esc(f["birthday"]))
+    if f.get("notes"):
+        lines.append("NOTE:" + esc(f["notes"]))
+    lines.append("END:VCARD")
+    return "\n".join(lines)
+
+
+def _vcard_unesc(v):
+    out, i = [], 0
+    while i < len(v):
+        ch = v[i]
+        if ch == "\\" and i + 1 < len(v):
+            nxt = v[i + 1]
+            out.append({"n": "\n", ";": ";", ",": ",", "\\": "\\"}.get(nxt, nxt))
+            i += 2
+            continue
+        out.append(ch)
+        i += 1
+    return "".join(out)
+
+
+def vcard_parse(text):
+    """Inverse of vcard_encode; tolerant of missing/unknown lines."""
+    f = {"name": "", "prefix": "", "firstname": "", "middlename": "",
+         "surname": "", "suffix": "", "nickname": "", "organization": "",
+         "department": "", "jobtitle": "", "gender": "", "birthday": "",
+         "notes": "", "emails": [], "phones": [], "addresses": []}
+    if not text or "BEGIN:VCARD" not in text:
+        return f
+    for raw in text.splitlines():
+        raw = raw.strip()
+        if not raw or ":" not in raw:
+            continue
+        head, val = raw.split(":", 1)
+        val = _vcard_unesc(val)
+        parts = head.split(";")
+        prop = parts[0].upper()
+        typ = "work"
+        for p in parts[1:]:
+            if p.upper().startswith("TYPE="):
+                typ = p.split("=", 1)[1].lower()
+        if prop == "FN":
+            f["name"] = val
+        elif prop == "N":
+            bits = val.split(";") + [""] * 5
+            f["surname"], f["firstname"], f["middlename"], f["prefix"], f["suffix"] = bits[:5]
+        elif prop == "NICKNAME":
+            f["nickname"] = val
+        elif prop == "ORG":
+            f["organization"] = val
+        elif prop == "X-DEPARTMENT":
+            f["department"] = val
+        elif prop == "TITLE":
+            f["jobtitle"] = val
+        elif prop == "EMAIL":
+            f["emails"].append((typ, val))
+        elif prop == "TEL":
+            f["phones"].append((typ, val))
+        elif prop == "ADR":
+            bits = val.split(";") + [""] * 7
+            f["addresses"].append((typ, bits[2], bits[3], bits[5], bits[4], bits[6]))
+        elif prop == "GENDER":
+            f["gender"] = val
+        elif prop == "BIRTHDAY":
+            f["birthday"] = val
+        elif prop == "NOTE":
+            f["notes"] = val
+    return f

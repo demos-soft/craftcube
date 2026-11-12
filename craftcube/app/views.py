@@ -703,18 +703,47 @@ def contact_edit(cid):
     if cid and not row:
         abort(404)
     if request.method == "POST":
-        name = request.form.get("name", "").strip()
-        emails = [e.strip() for e in request.form.get("email", "").replace("\n", ",").split(",") if e.strip()]
-        firstname = request.form.get("firstname", "").strip()
-        surname = request.form.get("surname", "").strip()
+        form = request.form
+        def pairs(prefix):
+            vals = form.getlist(f"_{prefix}_value[]")
+            types = form.getlist(f"_{prefix}_type[]")
+            return [(types[i] if i < len(types) else "", v.strip())
+                    for i, v in enumerate(vals) if v.strip()]
+        ext = {
+            "prefix": form.get("prefix", "").strip(),
+            "firstname": form.get("firstname", "").strip(),
+            "middlename": form.get("middlename", "").strip(),
+            "surname": form.get("surname", "").strip(),
+            "suffix": form.get("suffix", "").strip(),
+            "nickname": form.get("nickname", "").strip(),
+            "organization": form.get("organization", "").strip(),
+            "department": form.get("department", "").strip(),
+            "jobtitle": form.get("jobtitle", "").strip(),
+            "gender": form.get("gender", "").strip(),
+            "birthday": form.get("birthday", "").strip(),
+            "notes": form.get("notes", ""),
+            "emails": pairs("email"),
+            "phones": pairs("phone"),
+            "addresses": [tuple(a) for a in zip(
+                form.getlist("_atype[]"), form.getlist("_astreet[]"),
+                form.getlist("_alocality[]"), form.getlist("_azip[]"),
+                form.getlist("_aregion[]"), form.getlist("_acountry[]"))
+                if any(x.strip() for x in a)],
+        }
+        name = form.get("name", "").strip()
+        emails = [v for _t, v in ext["emails"]]
+        firstname, surname = ext["firstname"], ext["surname"]
         if not name:
             name = " ".join(filter(None, [firstname, surname])) or (emails[0] if emails else "Unnamed")
+        ext["name"] = name
         data = {"name": name, "email": ", ".join(emails), "firstname": firstname,
-                "surname": surname, "vcard": ""}
+                "surname": surname, "vcard": util.vcard_encode(ext)}
         new_id = store.contact_save(session["user_id"], data, contact_id=cid)
         flash("Contact saved.", "confirmation")
         return redirect(url_for("views.contact_view", cid=new_id))
-    return render("addressbook", "contactedit.html", row=row)
+    ext = util.vcard_parse(row["vcard"]) if row and row["vcard"] else util.vcard_parse("")
+    return render("addressbook", "contactedit.html", row=row, ext=ext,
+                  contact_types=util.CONTACT_TYPES)
 
 
 @bp.post("/contact/<int:cid>/delete")
