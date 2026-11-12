@@ -45,7 +45,7 @@
     <li role="menuitem"><a class="forward attachment disabled" data-mode="forward-attachment"
         href="{{ url_for('views.compose', _mode='forward-attachment') }}"><span>Forward as attachment</span></a></li>
     <li role="menuitem"><a class="forward bounce disabled" data-mode="bounce"
-        href="{{ url_for('views.compose', _mode='bounce') }}"><span>Bounce</span></a></li>
+        href="{{ url_for('views.compose', _mode='bounce') }}"><span>Resend (bounce)</span></a></li>
   </ul>
 </div>
 
@@ -55,7 +55,7 @@
     <li role="menuitem"><a class="reply all disabled" data-mode="replyall"
         href="{{ url_for('views.compose', _mode='replyall') }}"><span>Reply all</span></a></li>
     <li role="menuitem"><a class="reply list disabled" data-mode="replylist"
-        href="{{ url_for('views.compose', _mode='replylist') }}"><span>Reply to list</span></a></li>
+        href="{{ url_for('views.compose', _mode='replylist') }}"><span>Reply list</span></a></li>
   </ul>
 </div>
 
@@ -70,7 +70,7 @@
     {% endif %}
     <li role="menuitem"{{ ' class="with-sublist"'|safe if not message_view }}>
       <a class="download disabled" id="tb-export"
-        href="{{ url_for('views.message_export', _mbox=folder, _uid=uid, _format='eml') if message_view else '#' }}"><span>Download...</span></a>
+        href="{{ url_for('views.message_export', _mbox=folder, _uid=uid, _format='eml') if message_view else '#' }}"><span>Export</span></a>
       {% if not message_view %}
       <a class="button icon dropdown" role="button" href="#download" data-popup="download-menu"
          title="Export"><span class="voice">Download options</span></a>
@@ -127,9 +127,9 @@
 <div id="markmessage-menu" class="popupmenu">
   <h3 class="voice">Mark messages as</h3>
   <ul class="menu listing" role="menu">
-    <li role="menuitem"><a class="read disabled" href="#" data-act="read"><span>Read</span></a></li>
-    <li role="menuitem"><a class="unread disabled" href="#" data-act="unread"><span>Unread</span></a></li>
-    <li role="menuitem"><a class="flag disabled" href="#" data-act="flag"><span>Flagged</span></a></li>
-    <li role="menuitem"><a class="unflag disabled" href="#" data-act="unflag"><span>Unflagged</span></a></li>
+    <li role="menuitem"><a class="read disabled" href="#" data-act="read"><span>As read</span></a></li>
+    <li role="menuitem"><a class="unread disabled" href="#" data-act="unread"><span>As unread</span></a></li>
+    <li role="menuitem"><a class="flag disabled" href="#" data-act="flag"><span>As flagged</span></a></li>
+    <li role="menuitem"><a class="unflag disabled" href="#" data-act="unflag"><span>As unflagged</span></a></li>
   </ul>
 </div>

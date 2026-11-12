@@ -15,7 +15,7 @@
       <div id="folderlist-content" class="scroller">
         <ul id="mailboxlist" class="treelist listing folderlist notree" role="tree">
           {% for f in folders %}
-          <li class="mailbox{{ ' ' ~ f.special if f.special }}{{ ' selected' if f.name == folder }}"
+          <li class="mailbox{{ ' inbox' if f.name.upper() == 'INBOX' else (' ' ~ f.special if f.special) }}{{ ' selected' if f.name == folder }}"
               role="treeitem" aria-level="1" data-name="{{ f.name }}">
             <a href="{{ url_for('views.mail', _mbox=f.name) }}">{{ f.display }}</a>
             {% if f.unseen %}<span class="unreadcount">{{ f.unseen }}</span>{% endif %}
@@ -87,8 +87,8 @@
               <a class="button icon dropdown" role="button" href="#" title="Details"></a>
               <ul class="proplist d-none">
                 <li><label><input type="checkbox" name="_sm" value="from" form="rcmqsearchform"{{ ' checked' if 'from' in mods }}> From</label></li>
-                <li><label><input type="checkbox" name="_sm" value="replyto" form="rcmqsearchform"{{ ' checked' if 'replyto' in mods }}> Reply-to</label></li>
-                <li><label><input type="checkbox" name="_sm" value="followupto" form="rcmqsearchform"{{ ' checked' if 'followupto' in mods }}> Follow-up-to</label></li>
+                <li><label><input type="checkbox" name="_sm" value="replyto" form="rcmqsearchform"{{ ' checked' if 'replyto' in mods }}> Reply-To</label></li>
+                <li><label><input type="checkbox" name="_sm" value="followupto" form="rcmqsearchform"{{ ' checked' if 'followupto' in mods }}> Followup-To</label></li>
               </ul>
             </li>
             <li class="with-sublist">
@@ -101,7 +101,7 @@
               </ul>
             </li>
             <li><label><input type="checkbox" name="_sm" value="body" form="rcmqsearchform"{{ ' checked' if 'body' in mods }}> Body</label></li>
-            <li><label><input type="checkbox" name="_sm" value="text" form="rcmqsearchform"{{ ' checked' if 'text' in mods }}> Text</label></li>
+            <li><label><input type="checkbox" name="_sm" value="text" form="rcmqsearchform"{{ ' checked' if 'text' in mods }}> Entire message</label></li>
           </ul>
           <div class="input-group">
             <div class="input-group-prepend">
@@ -130,7 +130,7 @@
           </div>
           <div class="input-group">
             <div class="input-group-prepend">
-              <label for="s_scope" class="input-group-text">Search scope</label>
+              <label for="s_scope" class="input-group-text">Scope</label>
             </div>
             <select name="_ss" id="s_scope" class="custom-select" form="rcmqsearchform">
               <option value="base"{{ ' selected' if search_scope == 'base' }}>Current folder</option>
@@ -263,14 +263,14 @@
       </ul>
     </div>
 
-    <div id="listoptions-menu" class="popupmenu propform" role="dialog">
-      <h3 class="voice">Message list options</h3>
+    <div id="listoptions-menu" class="popupmenu propform" role="dialog" aria-labelledby="aria-label-listoptions">
+      <h3 id="aria-label-listoptions" class="voice">Message list display and sorting options</h3>
       <div class="form-group row">
         <label for="listoptions-sortcol" class="col-form-label col-sm-4">Sorting column</label>
         <div class="col-sm-8">
           <select id="listoptions-sortcol" name="sort_col" onchange="cc_apply_list_options()">
-            <option value=""{{ ' selected' if sort == '' }}>No sorting</option>
-            <option value="arrival"{{ ' selected' if sort == 'arrival' }}>Arrival</option>
+            <option value=""{{ ' selected' if sort == '' }}>None</option>
+            <option value="arrival"{{ ' selected' if sort == 'arrival' }}>Arrival date</option>
             <option value="date"{{ ' selected' if sort == 'date' }}>Sent date</option>
             <option value="subject"{{ ' selected' if sort == 'subject' }}>Subject</option>
             <option value="fromto"{{ ' selected' if sort == 'fromto' }}>From/To</option>
@@ -285,8 +285,8 @@
         <label for="listoptions-sortord" class="col-form-label col-sm-4">Sorting order</label>
         <div class="col-sm-8">
           <select id="listoptions-sortord" name="sort_ord" onchange="cc_apply_list_options()">
-            <option value="ASC"{{ ' selected' if order == 'asc' }}>Ascending</option>
-            <option value="DESC"{{ ' selected' if order == 'desc' }}>Descending</option>
+            <option value="ASC"{{ ' selected' if order == 'asc' }}>ascending</option>
+            <option value="DESC"{{ ' selected' if order == 'desc' }}>descending</option>
           </select>
         </div>
       </div>
