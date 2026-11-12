@@ -42,3 +42,11 @@
 - [x] Compose visual parity — 96/PASS (toolbar order Save/Attach/Signature/Responses/Spell, From/To/Subject rows, Options-and-attachments panel; only delta was a transient caret in the focused To field)
 - [x] Full suite 165 tests; working tree re-baked into registry `:stage` (Docker+OCI manifests), rollout verified pod==tree md5
 - [x] Sweep work committed to `dev` in 9 feature commits (helm, store, vcard, mail, settings, contacts, ui-overlays, docs)
+
+## Post-sweep defect fixes (user-reported; committed 9553586..0c082b9 on dev, baked image 72ffdfa0b4e1)
+- [x] Language switch does not apply — three stacked causes: dead framed prefs Save button (form lacked `id="form"`, outside-form button lacked `form="form"`), no RC-style `reload(500)` window reload after language change (prefs_save.php parity), hardcoded `<html lang="en">` on 8 templates; browser E2E: de_DE auto-reload into German rail and back (9553586)
+- [x] Folder settings — four causes: short-key storage (`trash` vs RC `trash_mbox` full keys), `Mailbox.special()` lookup key, selectors now tree-ordered RC-style with `---` + INBOX guard, added Archive + Divide-archive-by rows, folder-manager subscription state from LSUB (Dovecot omits \Subscribed in LIST); delete-to-Trash verified E2E incl. confirm dialog and move-back (0978821)
+- [x] Message list checkbox swallowed — row click handler ran preview logic with `preventDefault()` on checkbox clicks; INPUT-target early return like RC rowselection (18bf423)
+- [x] Archive group fieldset + plugin labels — reference renders 'Divide archive by' in `fieldset.archive` (legend 'Archive', archive plugin domain); ported the plugin's settings labels verbatim into 6 locales, legend/options translate (de Archiv/Archiv aufteilen nach, live-verified); geometry gap 53px == RC; visual verdict 96 PASS (0c082b9)
+- [x] Staging pod restart loop — 1s liveness on `/` behind 2 sync gunicorn workers starved by slow IMAP renders; added IMAP-free `/healthz`, probes -> /healthz timeout 3s, gthread 4w x 8 threads; 40-req load: p95 0.15s, 0 restarts (c80e5b0)
+- [x] Full suite 176 tests; both defect flows re-verified in real browser against the re-baked image; staging restored (en_US, no special-folder prefs, Trash unsubscribed, test message in INBOX)
