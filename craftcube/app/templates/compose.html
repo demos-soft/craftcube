@@ -10,7 +10,7 @@
         <span class="header-title all-sizes">Options and attachments</span>
       </div>
       <div class="scroller">
-        <div id="compose-attachments" class="file-upload" role="region" aria-labelledby="aria-label-compose-attachments">
+        <div id="compose-attachments" class="file-upload droptarget" role="region" aria-labelledby="aria-label-compose-attachments">
           <h2 id="aria-label-compose-attachments" class="voice">Attachments</h2>
           <div class="upload-form">
             <div class="hint">Maximum allowed file size is 5.0 MB</div>
@@ -25,11 +25,33 @@
         </div>
         <div id="compose-options" class="formcontent" role="region" aria-labelledby="aria-label-composeoptions">
           <h2 id="aria-label-composeoptions" class="voice">Composition options</h2>
-          <ul class="proplist">
-            <li><label><input type="checkbox" name="_mdn" value="1"{{ ' checked' if prefill.mdn }}> Return receipt</label></li>
-            <li><label><input type="checkbox" name="_dsn" value="1"{{ ' checked' if prefill.dsn }}> Delivery status notification</label></li>
-            <li><label><input type="checkbox" name="_keepformatting" value="1"{{ ' checked' if keep_formatting }}> Keep formatting</label></li>
-          </ul>
+          <div class="form-group row form-check">
+            <label for="compose-mdn" class="col-form-label col-6">Return receipt</label>
+            <div class="col-6 form-check">
+              <div class="custom-control custom-switch">
+                <input name="_mdn" id="compose-mdn" tabindex="2" class="form-check-input custom-control-input" value="1" type="checkbox"{{ ' checked' if prefill.mdn }}>
+                <label for="compose-mdn" class="custom-control-label" title=""></label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row form-check">
+            <label for="compose-dsn" class="col-form-label col-6">Delivery status notification</label>
+            <div class="col-6 form-check">
+              <div class="custom-control custom-switch">
+                <input name="_dsn" id="compose-dsn" tabindex="2" class="form-check-input custom-control-input" value="1" type="checkbox"{{ ' checked' if prefill.dsn }}>
+                <label for="compose-dsn" class="custom-control-label" title=""></label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row form-check">
+            <label for="compose-keep-formatting" class="col-form-label col-6">Keep formatting</label>
+            <div class="col-6 form-check">
+              <div class="custom-control custom-switch">
+                <input name="_keepformatting" id="compose-keep-formatting" tabindex="2" class="form-check-input custom-control-input" value="1" type="checkbox"{{ ' checked' if keep_formatting }}>
+                <label for="compose-keep-formatting" class="custom-control-label" title=""></label>
+              </div>
+            </div>
+          </div>
           <div class="form-group row">
             <label for="compose-priority" class="col-form-label col-6">Priority</label>
             <div class="col-6">
@@ -66,20 +88,19 @@
           <a class="options" href="#options" onclick="document.getElementById('layout-sidebar').classList.add('selected')" data-hidden="big">
             <span class="inner">Options and attachments</span>
           </a>
-          <button type="submit" form="composeform" name="_action" value="save" class="btn btn-link save draft" title="Save as draft">
+          <a class="button save draft" id="tb-save" href="#" title="Save as draft" tabindex="2"
+             onclick="var f=document.getElementById('composeform'),i=document.createElement('input');i.type='hidden';i.name='_action';i.value='save';f.appendChild(i);f.submit();return false;">
             <span class="inner">Save</span>
-          </button>
+          </a>
           <span class="spacer"></span>
-          <button type="button" class="btn btn-link attach" title="Attach a file"
-                  onclick="document.getElementById('compose-file').click()"><span class="inner">Attach</span></button>
-          <button type="button" class="btn btn-link signature" id="tb-signature" title="Insert signature"><span class="inner">Signature</span></button>
+          <a class="button attach" id="tb-attach" href="#" title="Attach a file" tabindex="2"
+             onclick="document.getElementById('compose-file').click(); return false;"><span class="inner">Attach</span></a>
+          <a class="button signature disabled" id="tb-signature" href="#" title="Insert signature" aria-disabled="true" tabindex="-1"><span class="inner">Signature</span></a>
+          <a href="#responses" id="responsesmenulink" class="button responses" title="Insert a response"
+             unselectable="on" tabindex="2" data-popup="responses-menu"><span class="inner">Responses</span></a>
           <span class="dropbutton">
-            <a href="#responses" id="responsesmenulink" class="responses" title="Insert a response"
-               data-popup="responses-menu"><span class="inner">Responses</span></a>
-          </span>
-          <span class="dropbutton">
-            <button type="button" class="btn btn-link spellcheck" id="tb-spell" title="Check spelling"><span class="inner">Spell</span></button>
-            <a href="#languages" id="spellmenulink" class="dropdown" title="Language" data-popup="spell-menu"><span class="inner">Language</span></a>
+            <a class="button spellcheck" id="tb-spell" href="#" title="Check spelling" tabindex="2"><span class="inner">Spell</span></a>
+            <a href="#languages" id="spellmenulink" class="button dropdown" title="Language" tabindex="2" data-popup="spell-menu"><span class="inner">Language</span></a>
           </span>
         </div>
       </div>
@@ -150,7 +171,7 @@
               <label for="_to" class="col-2 col-form-label">To</label>
               <div class="col-10">
                 <div class="input-group">
-                  <textarea name="_to" id="_to" class="form-control" tabindex="1" aria-required="true" rows="1">{{ prefill.to }}</textarea>
+                  <textarea name="_to" id="_to" class="form-control" tabindex="1" aria-required="true" rows="1" autofocus>{{ prefill.to }}</textarea>
                   <span class="input-group-append">
                     <a href="#add-contact" class="input-group-text icon add recipient" title="Add contact" tabindex="1" data-add-contact="_to" onclick="return window.cc_recipient_dialog ? window.cc_recipient_dialog('_to') : true"><span class="inner">Add contact</span></a>
                   </span>
@@ -224,16 +245,19 @@
               <div class="editor-toolbar">
                 <a href="#" class="mce-i-html icon" id="format-toggle" title="Toggle HTML/Plain text"></a>
               </div>
-              <textarea name="_body" id="composebody" class="form-control" rows="16" tabindex="1">{{ prefill.body }}</textarea>
-            </div>
-          </div>
-          <div class="formbuttons">
-            <button type="submit" name="_action" value="send" class="btn btn-primary icon send" id="sendbtn" tabindex="1">Send</button>
-            <div class="float-right">
-              <a href="{{ url_for('views.compose') }}?{{ request.query_string.decode() }}" class="button icon btn btn-link extwin" data-hidden="small" tabindex="1" target="_blank"><span class="inner">Open in new window</span></a>
+              <textarea name="_body" id="composebody" class="form-control" cols="70" rows="20" tabindex="1">{{ prefill.body }}</textarea>
             </div>
           </div>
         </form>
+        <!-- Reference keeps the buttons outside the <form> (compose.html:
+             </form> then .formbuttons), so they align with the pane edge,
+             not the form's 1rem inset. form="composeform" keeps submit. -->
+        <div class="formbuttons">
+          <button type="submit" form="composeform" name="_action" value="send" class="btn btn-primary icon send" id="sendbtn" tabindex="1">Send</button>
+          <div class="float-right">
+            <a href="?" class="button icon btn btn-link extwin" data-hidden="small" role="button" aria-disabled="false" tabindex="1" target="_blank">Open in new window</a>
+          </div>
+        </div>
       </div>
     </div>
 
