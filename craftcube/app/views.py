@@ -1231,14 +1231,24 @@ def prefs_save(store, prefs, section):
 def responses():
     store = get_store()
     rows = store.responses(session["user_id"])
-    return render("settings", "responses.html", rows=rows)
+    edit = request.args.get("_edit")
+    edit_row = None
+    if edit and edit != "new":
+        edit_row = store.response(session["user_id"], int(edit))
+        if not edit_row:
+            abort(404)
+    return render("settings", "responses.html", rows=rows,
+                  editing=bool(edit), edit_row=edit_row)
 
 
+@bp.route("/settings/responses", methods=["POST"])
 @bp.route("/settings/response/edit/<int:rid>", methods=["GET", "POST"])
 @bp.route("/settings/response/new", defaults={"rid": None}, methods=["GET", "POST"])
 @login_required
-def response_edit(rid):
+def response_edit(rid=None):
     store = get_store()
+    if rid is None and request.args.get("_edit", "").isdigit():
+        rid = int(request.args["_edit"])
     row = store.response(session["user_id"], rid) if rid else None
     if rid and not row:
         abort(404)
@@ -1250,7 +1260,8 @@ def response_edit(rid):
                                          html=1 if request.form.get("html") else 0,
                                          rid=rid)
             flash("Response saved.", "confirmation")
-            return redirect(url_for("views.responses"))
+            # reference keeps the record open in the edit frame after save
+            return redirect(url_for("views.responses", _edit=new_id))
         flash("Name is required.", "error")
     return render("settings", "responseedit.html", row=row)
 
@@ -1268,14 +1279,24 @@ def response_delete(rid):
 def identities():
     store = get_store()
     rows = store.identities(session["user_id"])
-    return render("settings", "identities.html", rows=rows)
+    edit = request.args.get("_edit")
+    edit_row = None
+    if edit and edit != "new":
+        edit_row = store.identity(session["user_id"], int(edit))
+        if not edit_row:
+            abort(404)
+    return render("settings", "identities.html", rows=rows,
+                  editing=bool(edit), edit_row=edit_row)
 
 
+@bp.route("/settings/identities", methods=["POST"])
 @bp.route("/settings/identity/edit/<int:iid>", methods=["GET", "POST"])
 @bp.route("/settings/identity/new", defaults={"iid": None}, methods=["GET", "POST"])
 @login_required
-def identity_edit(iid):
+def identity_edit(iid=None):
     store = get_store()
+    if iid is None and request.args.get("_edit", "").isdigit():
+        iid = int(request.args["_edit"])
     row = store.identity(session["user_id"], iid) if iid else None
     if iid and not row:
         abort(404)
@@ -1284,9 +1305,10 @@ def identity_edit(iid):
         if not data["email"]:
             flash("E-mail address is required.", "error")
         else:
-            store.identity_save(session["user_id"], data, identity_id=iid)
+            new_id = store.identity_save(session["user_id"], data, identity_id=iid)
             flash("Identity saved.", "confirmation")
-            return redirect(url_for("views.identities"))
+            # reference keeps the record open in the edit frame after save
+            return redirect(url_for("views.identities", _edit=new_id or iid))
     return render("settings", "identityedit.html", row=row)
 
 
@@ -1305,7 +1327,20 @@ def identity_delete(iid):
 @login_required
 def folders_view():
     box = imap_box()
-    return render("settings", "folders.html", all_folders=box.folders())
+    allf = box.folders()
+    q = request.args.get("_q")
+    if q:
+        allf = [f for f in allf if q.lower() in f["name"].lower()]
+    flt = request.args.get("_filter")
+    if flt == "":  # "Personal": hide special folders
+        allf = [f for f in allf if not f["special"] and f["name"].upper() != "INBOX"]
+    for f in allf:
+        f["display_name"] = folder_label(f["name"])
+    edit = request.args.get("_edit")
+    return render("settings", "folders.html", all_folders=allf,
+                  folder_filter=flt if flt is not None else "---",
+                  q=q or "",
+                  editing=bool(edit), edit_folder=edit if edit else None)
 
 
 @bp.post("/settings/folders")
@@ -1326,6 +1361,7 @@ def folders_act():
             if old and new and old != new:
                 box.imap.rename_folder(old, new)
                 flash("Folder renamed.", "confirmation")
+                return redirect(url_for("views.folders_view", _edit=new))
         elif act == "delete":
             name = request.form.get("folder")
             if name:

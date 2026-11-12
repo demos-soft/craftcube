@@ -270,6 +270,7 @@ class Store:
                     (user_id, identity_id or c.execute("SELECT last_insert_rowid()").fetchone()[0]),
                 )
             c.commit()
+            return identity_id or c.execute("SELECT last_insert_rowid()").fetchone()[0]
 
     def identity_delete(self, user_id, identity_id):
         with _lock:

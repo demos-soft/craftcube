@@ -1,40 +1,98 @@
 {% include "includes/layout.html" %}
 {% include "includes/menu.html" %}
-
-    <h1 class="voice">Identities</h1>
-
 {% set settings_nav = 'identities' %}
 {% include "includes/settings-sidebar.html" %}
 
-    <div id="layout-content" class="selected">
+    <h1 class="voice">Settings : Identities</h1>
+    <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-identitieslist">
       <div class="header">
-        <span class="header-title">Identities</span>
-        <div class="toolbar menu">
-          <a class="btn btn-link create" href="{{ url_for('views.identity_edit', iid=None) }}"><span class="inner">Create</span></a>
-        </div>
+        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Settings</span></a>
+        <span id="aria-label-identitieslist" class="header-title">Identities</span>
+        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
       </div>
-      <div class="content">
-        <table class="listing table" id="identities-table">
-          <thead><tr><th>Name</th><th>E-mail</th><th>Organization</th><th></th></tr></thead>
+      <div class="scroller">
+        <table id="identities-table" class="listing" role="listbox" data-list="identity_list"
+               data-label-msg="The list is empty." data-label-ext="Use the Create button to add a new record."
+               data-create-command="add">
           <tbody>
             {% for i in rows %}
-            <tr{{ ' class="selected"' if i.standard }}>
-              <td class="mail"><a href="{{ url_for('views.identity_edit', iid=i.identity_id) }}">{{ i.name }}{{ ' (default)' if i.standard }}</a></td>
-              <td>{{ i.email }}</td>
-              <td>{{ i.organization }}</td>
-              <td class="action">
-                <form method="post" action="{{ url_for('views.identity_delete', iid=i.identity_id) }}" class="d-inline"
-                      onsubmit="return confirm('Delete this identity?')">
-                  <button type="submit" class="btn btn-link delete" title="Delete"><span class="inner">Delete</span></button>
-                </form>
-              </td>
+            <tr id="rcmrow{{ i.identity_id }}"{{ ' class="selected"'|safe if editing and i.identity_id == edit_row.identity_id }} role="option" tabindex="0"
+                aria-selected="{{ 'true' if editing and edit_row and i.identity_id == edit_row.identity_id else 'false' }}"
+                data-href="{{ url_for('views.identities', _edit=i.identity_id) }}">
+              <td class="mail">&lt;{{ i.email }}&gt;</td>
             </tr>
-            {% else %}
-            <tr class="listempty"><td colspan="4">No identities.</td></tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
+      <div class="footer"></div>
+    </div>
+
+    <!-- identity edit form (reference loads it into preferences-frame) -->
+    <div id="layout-content" role="main">
+      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
+      <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
+        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <span class="header-title"></span>
+        <div id="identitiestoolbar" class="toolbar menu">
+          <a class="create" title="Create new identity" data-fab="true" role="button"
+             href="{{ url_for('views.identities', _edit='new') }}"><span class="inner">Create</span></a>
+          {% if edit_row %}
+          <a class="delete" title="Delete" role="button"
+             href="#" onclick="if (confirm('Delete this identity?')) document.getElementById('identity-delete-form').submit(); return false"><span class="inner">Delete</span></a>
+          {% else %}
+          <a class="delete disabled" title="Delete" role="button" tabindex="-1" aria-disabled="true"
+             href="#"><span class="inner">Delete</span></a>
+          {% endif %}
+        </div>
+      </div>
+      {% if editing %}
+      <div class="content">
+        <form method="post" class="formcontent propform">
+          <fieldset>
+            <legend>{{ 'Edit' if edit_row else 'Create' }} identity</legend>
+            <table class="layout">
+              <tbody>
+                <tr><td class="title"><label for="inputname">Display name</label></td>
+                    <td><input type="text" name="name" id="inputname" value="{{ edit_row['name'] if edit_row else '' }}" class="form-control"></td></tr>
+                <tr><td class="title"><label for="inputemail">E-mail</label></td>
+                    <td><input type="text" name="email" id="inputemail" value="{{ edit_row.email if edit_row else '' }}" class="form-control" required></td></tr>
+                <tr><td class="title"><label for="inputorg">Organization</label></td>
+                    <td><input type="text" name="organization" id="inputorg" value="{{ edit_row.organization if edit_row else '' }}" class="form-control"></td></tr>
+                <tr><td class="title"><label for="inputreply">Reply-To</label></td>
+                    <td><input type="text" name="reply_to" id="inputreply" value="{{ edit_row['reply-to'] if edit_row else '' }}" class="form-control"></td></tr>
+                <tr><td class="title"><label for="inputbcc">Bcc</label></td>
+                    <td><input type="text" name="bcc" id="inputbcc" value="{{ edit_row.bcc if edit_row else '' }}" class="form-control"></td></tr>
+                <tr><td class="title"><label for="inputsig">Signature</label></td>
+                    <td><textarea name="signature" id="inputsig" rows="6" class="form-control">{{ edit_row.signature if edit_row else '' }}</textarea></td></tr>
+                <tr class="proprow">
+                  <td class="title">Signature options</td>
+                  <td class="field">
+                    <label><input type="checkbox" name="html_signature" value="1" {{ 'checked' if edit_row and edit_row.html_signature }}> HTML signature</label>
+                  </td>
+                </tr>
+                <tr><td class="title">Options</td>
+                    <td>
+                      <label><input type="checkbox" name="standard" value="1" {{ 'checked' if (edit_row and edit_row.standard) or not edit_row }}> Set as default</label>
+                    </td></tr>
+              </tbody>
+            </table>
+          </fieldset>
+          <div class="formbuttons">
+            <button type="submit" class="btn btn-primary icon save">Save</button>
+            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.identities') }}">Cancel</a>
+          </div>
+        </form>
+        {% if edit_row %}
+        <form id="identity-delete-form" method="post" action="{{ url_for('views.identity_delete', iid=edit_row.identity_id) }}"></form>
+        {% endif %}
+      </div>
+      {% else %}
+      <div class="iframe-wrapper">
+        <iframe name="preferences-frame" id="preferences-frame"
+                src="{{ url_for('static', filename='watermark.html') }}" title="Identity edit form"></iframe>
+      </div>
+      {% endif %}
     </div>
 
 {% include "includes/footer.html" %}

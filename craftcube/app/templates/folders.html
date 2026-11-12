@@ -1,51 +1,116 @@
 {% include "includes/layout.html" %}
 {% include "includes/menu.html" %}
-
-    <h1 class="voice">Folders</h1>
-
 {% set settings_nav = 'folders' %}
 {% include "includes/settings-sidebar.html" %}
 
-    <div id="layout-content" class="selected">
-      <div class="header"><span class="header-title">Folders</span></div>
+    <h1 class="voice">Folders</h1>
+
+    <!-- folders list — skins/elastic/templates/folders.html -->
+    <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-folderslist">
+      <div class="header">
+        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Settings</span></a>
+        <span id="aria-label-folderslist" class="header-title">Folders</span>
+        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
+      </div>
+      <div role="search" aria-labelledby="aria-label-foldersearchform" class="searchbar menu">
+        <h2 id="aria-label-foldersearchform" class="voice">Folder search form</h2>
+        <form name="rcmqsearchform" id="folder-filter-form" method="get" action="{{ url_for('views.folders_view') }}">
+          <label for="foldersearch" class="voice">Search terms</label>
+          <input name="_q" id="foldersearch" class="no-bs" placeholder="Search..." type="text" autocomplete="off"
+                 value="{{ q or '' }}">
+        </form>
+        <a class="button reset" title="Reset search" tabindex="0" role="button" href="#"
+           onclick="document.getElementById('foldersearch').value='';return false"><span class="inner">Reset search</span></a>
+        <a href="#search-filter" class="button options" title="Options" tabindex="0" data-target="foldersearchmenu"
+           role="button" data-popup="foldersearchmenu"><span class="inner">Options</span></a>
+        <a href="#search" class="button search" title="Find folders" tabindex="0" role="button"
+           onclick="location.href='{{ url_for('views.folders_view') }}?_q='+document.getElementById('foldersearch').value;return false"><span class="inner">Find folders</span></a>
+      </div>
+      <div id="foldersearchmenu" class="hidden searchoptions scroller propform formcontainer"
+           aria-labelledby="aria-label-search-menu" aria-controls="subscription-table">
+        <h3 id="aria-label-search-menu" class="voice">Search modifiers</h3>
+        <div class="formcontent">
+          <select name="folderfilter" id="folderlist-filter" class="custom-select"
+                  onchange="location.href='{{ url_for('views.folders_view') }}?_filter='+this.value">
+            <option value="---"{{ ' selected' if folder_filter == '---' }}>All</option>
+            <option value=""{{ ' selected' if folder_filter == '' }}>Personal</option>
+          </select>
+        </div>
+        <div class="formbuttons">
+          <button type="button" class="btn btn-primary icon search"
+                  onclick="location.href='{{ url_for('views.folders_view') }}?_filter='+document.getElementById('folderlist-filter').value">Search</button>
+        </div>
+      </div>
+      <div class="scroller" tabindex="-1">
+        <ul id="subscription-table" class="treelist listing folderlist iconized" role="listbox"
+            data-list="subscription_list" data-label-msg="The list is empty.">
+          <li class="root mailbox"><span>&nbsp;</span></li>
+          {% for f in all_folders %}
+          <li class="{{ f.special or 'mail' }} mailbox{{ ' selected' if edit_folder == f.name }}"
+              data-href="{{ url_for('views.folders_view', _edit=f.name) }}">
+            <a href="#">{{ f.display_name or f.name }}</a>
+            <input name="_subscribed[]" title="Click to change subscription" value="{{ f.name }}"
+                   disabled checked type="checkbox">
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="footer small"></div>
+    </div>
+
+    <!-- folder properties frame -->
+    <div id="layout-content" role="main">
+      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
+      <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
+        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <span class="header-title"></span>
+        <div id="folderstoolbar" class="toolbar menu">
+          <a class="create" title="Create new folder" role="button"
+             href="#" onclick="return window.cc_create_folder ? window.cc_create_folder() : true"><span class="inner">Create</span></a>
+          {% if edit_folder %}
+          <a class="delete" title="Delete" role="button"
+             href="#" onclick="if (confirm('Delete folder {{ edit_folder }}?')) document.getElementById('folder-delete-form').submit(); return false"><span class="inner">Delete</span></a>
+          <a class="purge" title="Empty" role="button"
+             href="#" onclick="document.getElementById('folder-empty-form').submit(); return false"><span class="inner">Empty</span></a>
+          {% else %}
+          <a class="delete disabled" title="Delete" role="button" tabindex="-1" aria-disabled="true"
+             href="#"><span class="inner">Delete</span></a>
+          <a class="purge disabled" title="Empty" role="button" tabindex="-1" aria-disabled="true"
+             href="#"><span class="inner">Empty</span></a>
+          {% endif %}
+        </div>
+      </div>
+      {% if editing %}
       <div class="content">
-        <table class="listing table" id="foldertable">
-          <thead><tr><th>Name</th><th>Messages</th><th>Unread</th><th></th></tr></thead>
-          <tbody>
-            {% for f in all_folders %}
-            <tr>
-              <td class="mailbox">{{ f.name }}{{ ' [' + f.special + ']' if f.special }}</td>
-              <td>{{ f.total }}</td>
-              <td>{{ f.unseen }}</td>
-              <td class="action">
-                {% if f.name != 'INBOX' %}
-                <form method="post" action="{{ url_for('views.folders_view') }}" class="d-inline">
-                  <input type="hidden" name="_act" value="empty"><input type="hidden" name="folder" value="{{ f.name }}">
-                  <button type="submit" class="btn btn-link" title="Empty folder"><span class="inner">Empty</span></button>
-                </form>
-                <form method="post" action="{{ url_for('views.folders_view') }}" class="d-inline" onsubmit="return confirm('Delete folder {{ f.name }}?')">
-                  <input type="hidden" name="_act" value="delete"><input type="hidden" name="folder" value="{{ f.name }}">
-                  <button type="submit" class="btn btn-link delete"><span class="inner">Delete</span></button>
-                </form>
-                {% endif %}
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-        <fieldset class="settings-group">
-          <legend>Create folder</legend>
+        <div class="formcontent propform">
+          <h1 class="voice">Folder properties</h1>
           <form method="post" action="{{ url_for('views.folders_view') }}">
-            <input type="hidden" name="_act" value="create">
-            <div class="input-group">
-              <input type="text" name="name" class="form-control" placeholder="Folder name" required>
-              <div class="input-group-append">
-                <button type="submit" class="btn btn-primary icon create">Create</button>
-              </div>
+            <input type="hidden" name="_act" value="rename">
+            <input type="hidden" name="folder" value="{{ edit_folder }}">
+            <table class="layout">
+              <tbody>
+                <tr><td class="title"><label for="inputname">Folder name</label></td>
+                    <td><input type="text" name="name" id="inputname" value="{{ edit_folder }}" class="form-control" required></td></tr>
+              </tbody>
+            </table>
+            <div class="formbuttons">
+              <button type="submit" class="btn btn-primary icon save">Save</button>
             </div>
           </form>
-        </fieldset>
+        </div>
+        <form id="folder-delete-form" method="post" action="{{ url_for('views.folders_view') }}">
+          <input type="hidden" name="_act" value="delete"><input type="hidden" name="folder" value="{{ edit_folder }}">
+        </form>
+        <form id="folder-empty-form" method="post" action="{{ url_for('views.folders_view') }}">
+          <input type="hidden" name="_act" value="empty"><input type="hidden" name="folder" value="{{ edit_folder }}">
+        </form>
       </div>
+      {% else %}
+      <div class="iframe-wrapper">
+        <iframe name="preferences-frame" id="preferences-frame"
+                src="{{ url_for('static', filename='watermark.html') }}"></iframe>
+      </div>
+      {% endif %}
     </div>
 
 {% include "includes/footer.html" %}

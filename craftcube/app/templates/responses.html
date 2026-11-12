@@ -5,36 +5,89 @@
 
     <h1 class="voice">Responses</h1>
 
-    <div id="layout-content" class="selected">
+    <!-- responses list — skins/elastic/templates/responses.html -->
+    <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-responseslist">
       <div class="header">
-        <span class="header-title">Responses</span>
-        <div class="toolbar menu" role="toolbar">
-          <a href="{{ url_for('views.response_edit', rid=None) }}" class="button icon add"
-             title="Create a new response"><span class="inner">Create</span></a>
-        </div>
+        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Settings</span></a>
+        <span id="aria-label-responseslist" class="header-title">Responses</span>
+        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
       </div>
-      <div class="scroller content">
-        <table class="listing responses" summary="Responses list">
-          <thead>
-            <tr><th class="subject">Name</th><th class="actions">&nbsp;</th></tr>
-          </thead>
+      <div class="scroller">
+        <table id="responses-table" class="listing" role="listbox" data-list="responses_list"
+               data-label-msg="The list is empty." data-label-ext="Use the Create button to add a new record."
+               data-create-command="add">
           <tbody>
             {% for r in rows %}
-            <tr>
-              <td class="subject"><a href="{{ url_for('views.response_edit', rid=r.response_id) }}">{{ r.name }}</a></td>
-              <td class="actions">
-                <form method="post" action="{{ url_for('views.response_delete', rid=r.response_id) }}"
-                      onsubmit="return confirm('Delete this response?')" class="actions">
-                  <button type="submit" class="btn btn-link icon delete" title="Delete"><span class="inner">Delete</span></button>
-                </form>
-              </td>
+            <tr id="rcmrow{{ r.response_id }}"{{ ' class="selected"'|safe if editing and r.response_id == edit_row.response_id }}
+                role="option" tabindex="0"
+                data-href="{{ url_for('views.responses', _edit=r.response_id) }}">
+              <td class="name">{{ r.name }}</td>
             </tr>
-            {% else %}
-            <tr><td colspan="2" class="listing empty">No responses defined.</td></tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
+      <div class="footer"></div>
+    </div>
+
+    <!-- response edit form (reference loads it into preferences-frame) -->
+    <div id="layout-content" role="main">
+      <h2 id="aria-label-toolbar" class="voice">Application toolbar</h2>
+      <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
+        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <span class="header-title"></span>
+        <div id="responsestoolbar" class="toolbar menu">
+          <a class="create" title="Create new response" data-fab="true" role="button"
+             href="{{ url_for('views.responses', _edit='new') }}"><span class="inner">Create</span></a>
+          {% if edit_row %}
+          <a class="delete" title="Delete" role="button"
+             href="#" onclick="if (confirm('Delete this response?')) document.getElementById('response-delete-form').submit(); return false"><span class="inner">Delete</span></a>
+          {% else %}
+          <a class="delete disabled" title="Delete" role="button" tabindex="-1" aria-disabled="true"
+             href="#"><span class="inner">Delete</span></a>
+          {% endif %}
+        </div>
+      </div>
+      {% if editing %}
+      <div class="content">
+        <form method="post" class="formcontent propform">
+          <fieldset>
+            <legend>{{ 'Edit' if edit_row else 'Create' }} response</legend>
+            <table class="layout propform">
+              <tbody>
+                <tr>
+                  <td class="title"><label for="inputname">Name</label></td>
+                  <td class="field"><input type="text" name="name" id="inputname"
+                      value="{{ edit_row.name if edit_row else '' }}" class="form-control" required></td>
+                </tr>
+                <tr>
+                  <td class="title"><label for="inputbody">Text</label></td>
+                  <td class="field"><textarea name="body" id="inputbody" rows="12" class="form-control">{{ edit_row.body if edit_row else '' }}</textarea></td>
+                </tr>
+                <tr>
+                  <td class="title">Options</td>
+                  <td class="field">
+                    <label><input type="checkbox" name="html" value="1"{{ ' checked' if edit_row and edit_row.html }}> HTML signature</label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+          <div class="formbuttons">
+            <button type="submit" class="btn btn-primary icon save">Save</button>
+            <a class="btn btn-secondary icon cancel" href="{{ url_for('views.responses') }}">Cancel</a>
+          </div>
+        </form>
+        {% if edit_row %}
+        <form id="response-delete-form" method="post" action="{{ url_for('views.response_delete', rid=edit_row.response_id) }}"></form>
+        {% endif %}
+      </div>
+      {% else %}
+      <div class="iframe-wrapper">
+        <iframe name="preferences-frame" id="preferences-frame"
+                src="{{ url_for('static', filename='watermark.html') }}" title="Response edit form"></iframe>
+      </div>
+      {% endif %}
     </div>
 
 {% include "includes/footer.html" %}

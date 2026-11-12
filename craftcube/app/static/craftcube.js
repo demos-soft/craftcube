@@ -252,6 +252,33 @@
     cc_iframe_dialog('/about?_framed=1', elem.textContent.trim(), 400);
     return false;
   };
+  // mail.js create-folder command: name prompt in a dialog, posted to the
+  // folders action (reference uses a framed folder-edit form; a dialog form
+  // is the closest static equivalent)
+  window.cc_create_folder = function () {
+    var form = document.createElement('form');
+    form.method = 'post';
+    form.action = location.pathname;
+    form.className = 'propform';
+    form.innerHTML = '<input type="hidden" name="_act" value="create">' +
+      '<div class="formcontent"><div class="form-group row">' +
+      '<label for="cc-newfolder" class="col-form-label col-sm-4">Folder name</label>' +
+      '<div class="col-sm-8"><input type="text" name="name" id="cc-newfolder" class="form-control" required></div></div></div>';
+    var inp = form.querySelector('input');
+    var ref = cc_simple_dialog(form, 'Create folder', {
+      width: 360,
+      buttons: [
+        { label: 'Create', cls: 'mainaction create', click: function () {
+            if (inp.value.trim()) form.submit();
+          } },
+        { label: 'Cancel', cls: 'cancel', click: function () { dlg.close(); } },
+      ]
+    });
+    var dlg = ref;
+    inp.focus();
+    return false;
+  };
+
   // ------------------------------------------------------------ message list
   function initList() {
     var list = document.getElementById('messagelist');
@@ -568,7 +595,7 @@
 
   // ----------------------------------------------- listing rows with data-href
   // (Elastic navigates list rows via JS; e.g. Settings > Preferences sections)
-  document.querySelectorAll('tr[data-href]').forEach(function (row) {
+  document.querySelectorAll('tr[data-href], li[data-href]').forEach(function (row) {
     function go() { location.href = row.getAttribute('data-href'); }
     row.addEventListener('click', function (e) {
       if (e.target.closest('a, input, button')) return;
@@ -579,6 +606,23 @@
     });
   });
 
+  // --------------------------------------------------- empty-list info message
+  // (ui.js: data-label-msg/-ext/-create-command -> div.listing-info)
+  document.querySelectorAll('table[data-label-msg], ul[data-label-msg]').forEach(function (table) {
+    var info = document.createElement('div');
+    info.className = 'listing-info hidden';
+    table.parentNode.insertBefore(info, table.nextSibling);
+    var list = table.tagName === 'UL' ? table : table.querySelector('tbody') || table;
+    if (!list.querySelector('tr,li')) {
+      var msg = table.getAttribute('data-label-msg');
+      var ext = table.getAttribute('data-label-ext');
+      if (ext) msg += ' ' + ext;
+      info.textContent = msg;
+      info.classList.remove('hidden');
+    }
+  });
+
+  // ------------------------------------------------------------ auto refresh
   function initRefresh() {
     var mins = parseInt(document.body.getAttribute('data-refresh-interval') || '0', 10);
     if (!mins || !document.getElementById('messagelist')) return;

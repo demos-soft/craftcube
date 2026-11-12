@@ -1,15 +1,15 @@
-{# Settings navigation sidebar (Elastic: Preferences / Identities / Folders / Responses) #}
-<div id="layout-sidebar" class="listbox" role="navigation">
+{# Settings navigation sidebar — skins/elastic/templates/includes/settings-menu.html #}
+<div id="layout-sidebar" class="listbox" role="navigation" aria-labelledby="aria-label-settingstabs">
   <div class="header">
-    <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
-    <span class="header-title">Settings</span>
+    <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
+    <span id="aria-label-settingstabs" class="header-title">Settings</span>
   </div>
   <div class="scroller">
-    <ul class="listing settings-table treelist iconized">
-      <li class="preferences{{ ' selected' if settings_nav == 'preferences' }}"><a href="{{ url_for('views.settings_preferences') }}"><span class="inner">Preferences</span></a></li>
-      <li class="folders{{ ' selected' if settings_nav == 'folders' }}"><a href="{{ url_for('views.folders_view') }}"><span class="inner">Folders</span></a></li>
-      <li class="identities{{ ' selected' if settings_nav == 'identities' }}"><a href="{{ url_for('views.identities') }}"><span class="inner">Identities</span></a></li>
-      <li class="responses{{ ' selected' if settings_nav == 'responses' }}"><a href="{{ url_for('views.responses') }}"><span class="inner">Responses</span></a></li>
+    <ul id="settings-menu" class="listing iconized settings-default-icon">
+      <li class="listitem preferences{{ ' selected' if settings_nav == 'preferences' }}"><a title="Edit user preferences" href="{{ url_for('views.settings_preferences') }}">Preferences</a></li>
+      <li class="listitem folders{{ ' selected' if settings_nav == 'folders' }}"><a title="Manage folders" href="{{ url_for('views.folders_view') }}">Folders</a></li>
+      <li class="listitem identities{{ ' selected' if settings_nav == 'identities' }}"><a title="Manage identities" href="{{ url_for('views.identities') }}">Identities</a></li>
+      <li class="listitem responses{{ ' selected' if settings_nav == 'responses' }}"><a title="Manage responses" href="{{ url_for('views.responses') }}">Responses</a></li>
     </ul>
   </div>
 </div>
