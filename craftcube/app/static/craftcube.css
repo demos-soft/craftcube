@@ -1,0 +1,86 @@
+/* CraftCube supplemental styles — icon content + inner-label rules that the
+   elastic skin carries in ui.css, matching Roundcube Elastic behaviour. */
+
+/* task menu: hide labels, show icons (elastic: 78px rail) */
+#taskmenu a > .inner { display: none; }
+#taskmenu a { min-height: 32px; }
+#taskmenu a:before { margin: 0 auto; }
+#taskmenu a.compose:before { content: "\f055"; color: #37beff; }
+#taskmenu a.mail:before { content: "\f0e0"; }
+#taskmenu a.contacts:before { content: "\f0c0"; }
+#taskmenu a.settings:before { content: "\f013"; }
+#taskmenu a.logout:before { content: "\f08b"; }
+#taskmenu a.about:before { content: "\f05a"; }
+#taskmenu a.theme:before { content: "\f186"; }
+
+/* header buttons: elastic uses .button.icon, not .btn */
+.header a.btn:before { display: inline !important; float: none !important; vertical-align: middle; margin-right: 0 !important; }
+.header a.btn .inner { display: none; }
+a.btn.folders:before { content: "\f07b"; }
+a.btn.refresh:before { content: "\f021"; }
+a.btn.create:before { content: "\f0fe"; }
+a.btn.delete:before { content: "\f2ed"; font-weight: 400; }
+a.btn.edit:before { content: "\f303"; }
+a.btn.compose:before { content: "\f055"; }
+a.btn.reply:before { content: "\f3e5"; }
+a.btn.forward:before { content: "\f120"; }
+a.btn.search:before { content: "\f002"; }
+a.btn.add:before { content: "\f067"; }
+
+/* list toolbar buttons in the list header (Select etc.) */
+#messagelist-header .toolbar a.select:before { content: "\f14a"; font-weight: 400; display: block; float: left; margin-right: .25rem; width: 1.18em; font-family: Icons; font-size: 1.25em; }
+#messagelist-header .toolbar a.select .inner { display: none; }
+
+/* taskmenu compose button should look flat like a task, not a bootstrap btn */
+#taskmenu .action-buttons a.compose { background: transparent; color: #37beff; border: 0; border-radius: 0; }
+#taskmenu .action-buttons a.compose.selected { color: #41b849; }
+#taskmenu .special-buttons a { background: transparent; border: 0; }
+
+/* login page logo placement (elastic) */
+body.task-login #layout-content { text-align: center; width: 100%; display: block; }
+#login-form table, #login-form tbody { display: block; }
+
+/* dark toggle label swap */
+html.dark-mode #taskmenu a.theme:before { content: "\f185"; }
+
+/* message list column layout (elastic puts these in ui.css) */
+table.messagelist { table-layout: auto; width: 100%; }
+.messagelist td.subject, .messagelist th.subject { width: 100%; }
+.messagelist td.subject > a { display: flex; align-items: center; text-decoration: none; }
+.messagelist td.subject span.subject { flex: 2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.messagelist td.fromto, .messagelist th.fromto,
+.messagelist td.date, .messagelist th.date,
+.messagelist td.size, .messagelist th.size { white-space: nowrap; text-align: left; }
+.messagelist td.fromto a { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 9em; display: inline-block; vertical-align: bottom; }
+.messagelist td.size, .messagelist th.size { text-align: right; }
+.messagelist td.date, .messagelist th.date { width: 6.5em; }
+.messagelist td.size, .messagelist th.size { width: 4.5em; padding-right: .5rem; }
+.messagelist td.subject span.msgicon { float: none; display: inline-block; }
+.messagelist td.subject span.msgicon.status:before { content: "\f0e0"; font-weight: 400; }
+.messagelist td.subject span.msgicon.status.unread:before { content: "\f0e0"; font-weight: 900; }
+.messagelist tr.unread td.subject span.subject,
+.messagelist tr.unread td.subject span.msgicon.status { font-weight: 700; }
+.messagelist td.subject span.subject:empty:before { content: "(no subject)"; font-style: italic; }
+.messagelist th.sorted:after { content: " ▾"; font-size: .8em; }
+
+/* folder icons in the folder list */
+.folderlist li.mailbox a:before { content: "\f07b"; font-family: Icons; font-size: 1.25em; display: block; float: left; margin: 0 .25rem 0 0; width: 1.18em; font-weight: 400; }
+.folderlist li.mailbox.inbox > a:before { content: "\f01c"; }
+.folderlist li.mailbox.trash > a:before { content: "\f1f8"; }
+.folderlist li.mailbox.sent > a:before { content: "\f1d8"; }
+.folderlist li.mailbox.drafts > a:before { content: "\f303"; }
+.folderlist li.mailbox.junk > a:before { content: "\f1f8"; }
+.folderlist li.mailbox > a { display: flex; align-items: center; }
+.folderlist li.mailbox .unreadcount { margin-left: auto; }
+
+/* sortable header links without bootstrap button look */
+.messagelist thead th a { color: inherit; text-decoration: none; }
+.messagelist thead th a:hover { text-decoration: underline; }
+
+/* the elastic skin hides listing <thead> (it renders headers via JS); we render server-side */
+table.listing thead { display: table-header-group; }
+table.listing thead th { background-color: #fff; font-weight: 700; text-align: left; padding: .4rem .25rem; border-bottom: 1px solid #d4dbde; white-space: nowrap; }
+table.listing thead th.checkbox-cell:before { content: ""; }
+
+/* preview iframe should fill its wrapper */
+.iframe-wrapper iframe { width: 100%; height: 100%; border: 0; display: block; }
