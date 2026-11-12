@@ -56,6 +56,26 @@ class TestDates:
         assert util.fmt_pref_time(d, {**prefs, "time_format": "H"}) == "14:05"
         assert util.fmt_pref_time(d, {**prefs, "time_format": "H:i"}) == "14:05"
 
+    def test_list_date_localized_today_and_weekday(self):
+        from zoneinfo import ZoneInfo
+
+        berlin = ZoneInfo("Europe/Berlin")
+        now = datetime.datetime.now(berlin)
+        assert util.fmt_list_date(now, "de_DE").startswith("Heute ")
+        two_days = now - datetime.timedelta(days=2)
+        weekday = util.i18n.gettext(two_days.strftime("%a").lower(), "de_DE")
+        assert util.fmt_list_date(two_days, "de_DE").startswith(weekday + " ")
+
+    def test_list_pref_date_localized_today(self):
+        from zoneinfo import ZoneInfo
+
+        berlin = ZoneInfo("Europe/Berlin")
+        now = datetime.datetime.now(berlin)
+        prefs = {"pretty_date": 1, "timezone": "Europe/Berlin", "time_format": "H:i"}
+        assert util.list_pref_date(now, prefs, "de_DE").startswith("Heute ")
+        prefs["pretty_date"] = 0
+        assert util.list_pref_date(now, prefs, "de_DE").startswith("2026-")
+
 
 class TestSanitizer:
     def test_strips_scripts(self):
