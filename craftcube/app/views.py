@@ -1,4 +1,5 @@
 """All HTTP views: login, mail, compose, addressbook, settings."""
+import base64
 import contextlib
 import email
 import email.utils
@@ -2787,23 +2788,110 @@ def folders_view():
     flt = request.args.get("_filter")
     if flt == "":  # "Personal": hide special folders
         allf = [f for f in allf if not f["special"] and f["name"].upper() != "INBOX"]
+    uprefs = get_store().get_user_prefs(session["user_id"])
     for f in allf:
         f["display_name"] = folder_label(f["name"])
         # LSUB-derived per-folder subscription (see Imap.list_folders)
         f["subscribed"] = bool(f.get("subscribed"))
     edit = request.args.get("_edit")
-    parent_of = ""
-    if edit and edit != "new" and "/" in edit:
-        parent_of = edit.rsplit("/", 1)[0]
-    fvpref = get_store().get_user_prefs(session["user_id"]).get("folder_viewmodes") or {}
-    folder_viewmode = (fvpref.get(edit) if edit else None) or \
-        get_store().get_user_prefs(session["user_id"]).get("viewmode") or "threads"
-    return render("settings", "folders.html", all_folders=allf,
+    if edit and edit != "new" and edit not in {f["name"] for f in allf}:
+        edit = None  # deep link to a folder that no longer exists
+    if edit and request.args.get("_framed") == "1":
+        # reference: the folder properties form lives in the settings
+        # content frame (folder_edit.php); the list page never re-renders
+        return _folderedit_framed(box, uprefs, allf, edit)
+    roots = _folder_roots(allf)
+    # toolbar states are data-driven from the selected row (elastic
+    # selection handler): delete needs a non-special non-INBOX folder,
+    # purge needs messages > 0 — carry both as data attributes
+    # delete protection follows folder_edit/folders_list semantics: only
+    # INBOX and folders configured as a special *_mbox are protected
+    # (a folder merely *named* Drafts stays deletable — verified live)
+    configured = {uprefs.get(k) for k in
+                  ("drafts_mbox", "sent_mbox", "junk_mbox", "trash_mbox",
+                   "archive_mbox") if uprefs.get(k)}
+    for f in allf:
+        msgs, _size = box.imap.status_size(f["name"])
+        f["messages"] = msgs
+        f["protected"] = (f["name"].upper() == "INBOX"
+                          or f["name"] in configured)
+        f["li_id"] = "rcmli" + base64.b64encode(f["name"].encode()).decode()
+    return render("settings", "folders.html", all_folders=allf, tree=roots,
                   folder_filter=flt if flt is not None else "---",
                   q=q or "",
                   framed_page=request.args.get("_framed") == "1",
-                  editing=bool(edit), edit_folder=edit if edit else None,
-                  parent_of=parent_of, folder_viewmode=folder_viewmode)
+                  edit_folder=edit if edit else None)
+
+
+def _folder_roots(allf):
+    """Reference folder tree order: INBOX first, siblings alphabetical
+    case-insensitively, children nested under their parent li."""
+    by = {f["name"]: f for f in allf}
+    for f in allf:
+        f["sub"] = []
+    roots = []
+    for f in sorted(allf, key=lambda x: x["name"].lower()):
+        parent = by.get(f["name"].rsplit("/", 1)[0]) if "/" in f["name"] else None
+        if parent is not None:
+            parent["sub"].append(f)
+        else:
+            roots.append(f)
+    for f in allf:
+        f["sub"].sort(key=lambda x: x["name"].lower())
+    roots.sort(key=lambda x: (0 if x["name"].upper() == "INBOX" else 1,
+                              x["name"].lower()))
+    return roots
+
+
+def _show_bytes(n):
+    """rcube::show_byte_conversion_size(): 0 renders bare '0', values divide
+    by 1023 with the localized byte units (B/KB/MB/GB)."""
+    if not n:
+        return "0"
+    for unit, div in (("GB", 1024 ** 3), ("MB", 1024 ** 2), ("KB", 1024)):
+        if n >= div:
+            return "%d %s" % (round(n / 1023 / (div / 1023)), unit)
+    return "%d B" % n
+
+
+def _folderedit_framed(box, uprefs, allf, edit):
+    is_new = edit == "new"
+    # folder_edit.php: a folder configured as special (or INBOX) shows a
+    # plaintext location block; a merely same-named folder stays editable
+    configured = {uprefs.get(k) for k in
+                  ("drafts_mbox", "sent_mbox", "junk_mbox", "trash_mbox",
+                   "archive_mbox") if uprefs.get(k)}
+    is_inbox = (not is_new) and (edit.upper() == "INBOX" or edit in configured)
+    disp_name = edit.rsplit("/", 1)[-1]
+    for f in allf:
+        if f["name"] == edit:
+            disp_name = f["display_name"]
+    parent_of = "" if is_new or "/" not in edit else edit.rsplit("/", 1)[0]
+    fvm = uprefs.get("folder_viewmodes") or {}
+    # folder_edit.php:198: no stored view_mode -> config default_list_mode
+    # (unset on the reference) -> 'list'
+    viewmode = fvm.get(edit) or "list"
+    parents = []
+
+    def walk(nodes, depth):
+        for f in nodes:
+            parents.append((f["name"], f["display_name"], depth))
+            walk(f["sub"], depth + 1)
+    for f in allf:
+        f.setdefault("sub", [])
+    walk(_folder_roots(allf), 0)
+    msgs, size_str = None, None
+    if not is_new:
+        m, z = box.imap.status_size(edit)
+        msgs, size_str = m, _show_bytes(z or 0)
+    return render_template("folderedit_framed.html", task="settings",
+                           lang=uprefs.get("language") or "en_US",
+                           edit_folder=edit, is_new=is_new, is_inbox=is_inbox,
+                           disp_name=disp_name,
+                           name_value="" if is_new else edit.rsplit("/", 1)[-1],
+                           parent_of=parent_of, parents=parents,
+                           viewmode=viewmode, msgs=msgs, size_str=size_str,
+                           saved=request.args.get("_saved") == "1")
 
 
 @bp.post("/settings/folders")
@@ -2848,11 +2936,27 @@ def folders_act():
                 box.imap.subscribe(full)
                 save_viewmode(full)
                 flash(i18n.gettext("foldercreated", g.lang, domain="messages"), "confirmation")
-                return redirect(url_for("views.folders_view", _edit=full, _framed=_framed_arg()))
+                if _framed_arg():
+                    # framed save: land on the new folder's editor, whose
+                    # inline script bounces the top window to the list with
+                    # the folder selected (reference reload-list contract)
+                    return redirect(url_for("views.folders_view", _edit=full,
+                                            _framed="1", _saved="1"))
+                return redirect(url_for("views.folders_view"))
         elif act == "rename":
             old = request.form.get("folder")
             new = request.form.get("name", "").strip()
             parent = request.form.get("parent")
+            if old and not new:
+                # protected (special) folder editor: no name is submitted,
+                # only the view mode persists
+                save_viewmode(old)
+                flash(i18n.gettext("folderupdated", g.lang, domain="messages"),
+                      "confirmation")
+                if _framed_arg():
+                    return redirect(url_for("views.folders_view", _edit=old,
+                                            _framed="1", _saved="1"))
+                return redirect(url_for("views.folders_view"))
             if old:
                 error = folder_name_error(new)
                 if error:
@@ -2872,7 +2976,10 @@ def folders_act():
                         store.set_user_pref(session["user_id"], "folder_viewmodes", fvm)
                 save_viewmode(target)
                 flash(i18n.gettext("folderupdated", g.lang, domain="messages"), "confirmation")
-                return redirect(url_for("views.folders_view", _edit=target, _framed=_framed_arg()))
+                if _framed_arg():
+                    return redirect(url_for("views.folders_view", _edit=target,
+                                            _framed="1", _saved="1"))
+                return redirect(url_for("views.folders_view"))
         elif act == "delete":
             name = request.form.get("folder")
             if name:

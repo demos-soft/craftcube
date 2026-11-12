@@ -404,6 +404,22 @@ class Imap:
         u = re.search(r"UNSEEN (\d+)", s)
         return (int(m.group(1)) if m else 0), (int(u.group(1)) if u else 0)
 
+    def status_size(self, folder):
+        """(messages, size_bytes|None) — RFC2971 STATUS (MESSAGES SIZE) as used
+        by the folder-properties Information block; SIZE is a Dovecot extension,
+        None when the server refuses it (reference shows nothing sensible then)."""
+        import re
+        try:
+            typ, data = self.conn.status(_q(folder), "(MESSAGES SIZE)")
+        except imaplib.IMAP4.error:
+            return 0, None
+        if typ != "OK" or not data or not data[0]:
+            return 0, None
+        s = data[0].decode() if isinstance(data[0], bytes) else data[0]
+        m = re.search(r"MESSAGES (\d+)", s)
+        z = re.search(r"SIZE (\d+)", s)
+        return (int(m.group(1)) if m else 0), (int(z.group(1)) if z else None)
+
     def create_folder(self, name, subscribe=False):
         typ, msg = self.conn.create(_q(name))
         if typ != "OK":

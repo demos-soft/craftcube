@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="{{ (lang or 'en_US')[:2] }}" class="iframe">
+<head>
+  <meta charset="utf-8">
+  <title>{{ product_name }} :: {{ 'Folder properties'|lc }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/unicorn.svg') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  <script>
+  try {
+    if (document.cookie.indexOf('colorMode=dark') > -1
+      || (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.className += ' dark-mode';
+    }
+  } catch (e) { }
+  </script>
+</head>
+<body class="task-settings action-folder-edit">
+  <!-- port of the reference folder-edit frame
+       (program/actions/settings/folder_edit.php::run()) -->
+  <h1 class="voice">{{ 'Folder properties'|lc }}</h1>
+  <div class="formcontent">
+    <form name="form" id="form" method="post" action="{{ url_for('views.folders_act') }}" class="propform">
+      <input type="hidden" name="_framed" value="1">
+      <input type="hidden" name="_act" value="{{ 'create' if is_new else 'rename' }}">
+      {% if not is_new %}<input type="hidden" name="folder" value="{{ edit_folder }}">{% endif %}
+      <fieldset class="location"><legend>{{ 'Location'|lc }}</legend>
+        <table class="propform{% if is_inbox %} text-only{% endif %}"><tbody>
+          {% if is_inbox %}
+          {# folder_edit.php: INBOX and configured special folders are not
+             renamable — plaintext display name, no parent select #}
+          <tr class="form-group row"><td class="title col-sm-4"><label for="_name" class="col-form-label">{{ 'Folder name'|lc }}</label></td>
+            <td class="col-sm-8 form-control-plaintext">{{ disp_name }}<input type="hidden" name="parent" value=""></td></tr>
+          {% else %}
+          <tr class="form-group row"><td class="title col-sm-4"><label for="_name" class="col-form-label">{{ 'Folder name'|lc }}</label></td>
+            <td class="col-sm-8"><span class="input-group"><input name="name" id="_name" size="30" class="form-control" value="{{ name_value }}" type="text"></span></td></tr>
+          <tr class="form-group row"><td class="title col-sm-4"><label for="_parent" class="col-form-label">{{ 'Parent folder'|lc }}</label></td>
+            <td class="col-sm-8"><select id="_parent" name="parent" class="form-control custom-select pretty-select">
+              <option value="">---</option>
+              {% for val, label, depth in parents %}
+              <option value="{{ val }}"{% if val == parent_of %} selected="selected"{% endif %}>{{ ('&nbsp;&nbsp;&nbsp;&nbsp;' * depth)|safe }}{{ label }}</option>
+              {% endfor %}
+            </select></td></tr>
+          {% endif %}
+        </tbody></table>
+      </fieldset>
+      <fieldset class="settings"><legend>{{ 'Settings'|lc }}</legend>
+        <table class="propform"><tbody>
+          <tr class="form-group row"><td class="title col-sm-4"><label for="_viewmode" class="col-form-label">{{ 'List view mode'|lc }}</label></td>
+            <td class="col-sm-8"><select name="viewmode" id="_viewmode" class="form-control custom-select pretty-select">
+              <option value="list"{% if viewmode != 'threads' %} selected="selected"{% endif %}>{{ 'List'|lc }}</option>
+              <option value="threads"{% if viewmode == 'threads' %} selected="selected"{% endif %}>{{ 'Threads'|lc }}</option>
+            </select></td></tr>
+        </tbody></table>
+      </fieldset>
+      {% if not is_new %}
+      <fieldset class="information"><legend>{{ 'Information'|lc }}</legend>
+        <table class="propform text-only"><tbody>
+          <tr class="form-group row"><td class="title col-sm-4"><label class="col-form-label">{{ 'Messages'|lc }}</label></td>
+            <td class="col-sm-8 form-control-plaintext">{{ msgs }}</td></tr>
+          <tr class="form-group row"><td class="title col-sm-4"><label class="col-form-label">{{ 'Size'|lc }}</label></td>
+            <td class="col-sm-8 form-control-plaintext">{{ size_str }}</td></tr>
+        </tbody></table>
+      </fieldset>
+      {% endif %}
+    </form>
+  </div>
+  <div class="formbuttons">
+    <button class="btn btn-primary submit" type="submit" form="form">{{ 'Save'|lc }}</button>
+  </div>
+  <div id="messagestack"></div>
+  {%- with messages = get_flashed_messages(with_categories=true) %}
+  {%- if messages %}<script>window.CC_FLASHES = {{ messages | tojson }};</script>{%- endif %}
+  {%- endwith %}
+  <script src="{{ url_for('static', filename='craftcube.js') }}"></script>
+  <script src="{{ url_for('static', filename='cc_messages.js') }}"></script>
+  {% if saved %}
+  <script>
+  // reference post-save contract: rcmail.command('reload-list') bounces the
+  // top window back to the folder list with the saved folder selected
+  setTimeout(function () {
+    if (window.top !== window.self) {
+      window.top.location.href = '{{ url_for('views.folders_view') }}?_edit={{ edit_folder if edit_folder != 'new' else ''|e }}';
+    }
+  }, 500);
+  </script>
+  {% endif %}
+  {% if not is_new and not is_inbox %}
+  <script>
+  // rcmail_set_focus on the name field when editing an existing folder
+  document.getElementById('_name').focus();
+  </script>
+  {% endif %}
+</body>
+</html>

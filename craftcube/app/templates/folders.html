@@ -1,146 +1,278 @@
 {% include "includes/layout.html" %}
-{% set fq = '&_framed=1' if framed_page|default(false) else '' %}
 {% include "includes/menu.html" %}
 {% set settings_nav = 'folders' %}
 {% include "includes/settings-sidebar.html" %}
 
-    <h1 class="voice">{{ 'Folders'|lc }}</h1>
-
-    <!-- folders list — skins/elastic/templates/folders.html -->
+    <h1 class="voice">Settings : Folders</h1>
     <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-folderslist">
       <div class="header">
         <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">{{ 'Settings'|lc }}</span></a>
         <span id="aria-label-folderslist" class="header-title">{{ 'Folders'|lc }}</span>
-        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
+        <a class="button icon search-toggle" href="#" title="{{ 'Find folders'|lc }}" role="button"><span class="inner">{{ 'Find folders'|lc }}</span></a>
       </div>
+      {# reference searchbar (program/actions/settings/folders_list.php):
+         GET form on _q + reset/options/search buttons + filter menu #}
       <div role="search" aria-labelledby="aria-label-foldersearchform" class="searchbar menu">
         <h2 id="aria-label-foldersearchform" class="voice">{{ 'Folder search form'|lc }}</h2>
-        <form name="rcmqsearchform" id="folder-filter-form" method="get" action="{{ url_for('views.folders_view') }}">
-        {% if framed_page|default(false) %}<input type="hidden" name="_framed" value="1">{% endif %}
+        <form name="rcmqsearchform" action="{{ url_for('views.folders_view') }}" method="get">
           <label for="foldersearch" class="voice">{{ 'Search terms'|lc }}</label>
-          <input name="_q" id="foldersearch" class="no-bs" placeholder="{{ 'Search...'|lc }}" type="text" autocomplete="off"
-                 value="{{ q or '' }}">
+          <input name="_q" id="foldersearch" class="no-bs" placeholder="{{ 'Search...'|lc }}" type="text" value="{{ q }}">
         </form>
-        <a class="button reset" title="{{ 'Reset search'|lc }}" tabindex="0" role="button" href="#"
-           onclick="document.getElementById('foldersearch').value='';return false"><span class="inner">{{ 'Reset search'|lc }}</span></a>
-        <a href="#search-filter" class="button options" title="{{ 'Options'|lc }}" tabindex="0" data-target="foldersearchmenu"
-           role="button" data-popup="foldersearchmenu"><span class="inner">{{ 'Options'|lc }}</span></a>
-        <a href="#search" class="button search" title="{{ 'Find folders'|lc }}" tabindex="0" role="button"
-           onclick="location.href='{{ url_for('views.folders_view') }}?_q='+document.getElementById('foldersearch').value{{ " + '&_framed=1'"|safe if framed_page|default(false) else '' }};return false"><span class="inner">{{ 'Find folders'|lc }}</span></a>
+        <a class="button reset" title="{{ 'Reset search'|lc }}" tabindex="0" role="button" href="#" id="folders-reset-search"><span class="inner">{{ 'Reset search'|lc }}</span></a>
+        <a href="#search-filter" class="button options" title="{{ 'Options'|lc }}" tabindex="0" data-target="foldersearchmenu" role="button" id="folders-search-options"><span class="inner">{{ 'Options'|lc }}</span></a>
+        <a href="#search" class="button search" title="{{ 'Find folders'|lc }}" tabindex="0" role="button" id="folders-find"><span class="inner">{{ 'Find folders'|lc }}</span></a>
       </div>
-      <div id="foldersearchmenu" class="hidden searchoptions scroller propform formcontainer"
-           aria-labelledby="aria-label-search-menu" aria-controls="subscription-table">
-        <h3 id="aria-label-search-menu" class="voice">{{ 'Search modifiers'|lc }}</h3>
-        <div class="formcontent">
-          <select name="folderfilter" id="folderlist-filter" class="custom-select"
-                  onchange="location.href='{{ url_for('views.folders_view') }}?_filter='+this.value{{ " + '&_framed=1'"|safe if framed_page|default(false) else '' }}">
-            <option value="---"{{ ' selected' if folder_filter == '---' }}>{{ 'All'|lc }}</option>
-            <option value=""{{ ' selected' if folder_filter == '' }}>{{ 'Personal'|lc }}</option>
-          </select>
-        </div>
-        <div class="formbuttons">
-          <button type="button" class="btn btn-primary icon search"
-                  onclick="location.href='{{ url_for('views.folders_view') }}?_filter='+document.getElementById('folderlist-filter').value{{ " + '&_framed=1'"|safe if framed_page|default(false) else '' }}">{{ 'Search'|lc }}</button>
-        </div>
-      </div>
-      <div class="scroller" tabindex="-1">
-        <ul id="subscription-table" class="treelist listing folderlist iconized notree" role="tree"
-            data-list="subscription_list" data-label-msg="The list is empty.">
-          <li class="root mailbox" role="treeitem" aria-level="1"><span>&nbsp;</span></li>
-          {% for f in all_folders %}
-          <li class="{{ 'inbox' if f.name|upper == 'INBOX' else (f.special or 'mail') }} mailbox{{ ' selected' if edit_folder == f.name }}"
-              role="treeitem" aria-level="1"
-              data-href="{{ url_for('views.folders_view', _edit=f.name, _framed='1' if framed_page|default(false) else None) }}">
-            <a href="#">{{ f.display_name or f.name }}</a>
-            <div class="custom-control custom-switch">
-              <input name="_subscribed[]" title="{{ 'Click to change subscription'|lc }}" value="{{ f.name }}"
-                     {{ 'disabled' if f.name|upper == 'INBOX' }}{{ ' checked' if f.subscribed }} type="checkbox" id="icochk{{ loop.index }}"
-                     class="form-check-input custom-control-input"
-                     onchange="cc_subscription_toggle('{{ f.name }}', this.checked)">
-              <label for="icochk{{ loop.index }}" class="custom-control-label"
-                     title="{{ 'Click to change subscription'|lc }}"></label>
-            </div>
-          </li>
-          {% endfor %}
+      <div id="foldersearchmenu" class="hidden searchoptions scroller propform formcontainer" aria-labelledby="aria-label-search-menu" aria-controls="subscription-table">
+        <ul class="listing" role="menu">
+          <li role="menuitem"><a href="#" class="folder-filter" data-filter="">{{ 'Personal'|lc }}</a></li>
+          <li role="menuitem"><a href="#" class="folder-filter" data-filter="---">{{ 'All'|lc }}</a></li>
         </ul>
       </div>
-      <!-- whitespace inside matters: CSS hides .footer:empty, the reference keeps the strip -->
-      <div class="footer small">
+      <div class="scroller">
+        {# reference treelist (folders_list.php::list_render): a flat root
+           placeholder li, then INBOX first with children nested in a ul
+           under a .treetoggle caret; subscription state is a bare checkbox #}
+        <ul id="subscription-table" class="treelist listing folderlist iconized" role="listbox" data-list="subscription_list" data-label-msg="{{ 'The list is empty.'|lc }}"
+            {% if folder_filter %}data-filter="{{ folder_filter }}"{% endif %}>
+          <li id="rcmliKg" class="root mailbox"><span>&nbsp;</span></li>
+          {%- macro folderli(f) %}
+          <li id="{{ f.li_id }}" class="{% if f.name|upper == 'INBOX' %}inbox{% elif f.special %}{{ f.special }}{% else %} subscribed-mailbox{% endif %} mailbox" data-folder="{{ f.name }}" data-messages="{{ f.messages }}" data-special="{{ f.special or '' }}" data-protected="{{ '1' if f['protected'] else '' }}" data-framed-href="{{ url_for('views.folders_view', _edit=f.name, _framed='1') }}">
+            <a href="#">{{ f.display_name }}</a>
+            <input name="_subscribed[]" title="{{ 'Click to change subscription'|lc }}" value="{{ f.name }}" data-folder="{{ f.name }}"{{ ' disabled' if f.name|upper == 'INBOX' }}{{ ' checked' if f.subscribed }} type="checkbox">
+            {%- if f.sub %}
+            <div class="treetoggle expanded">&nbsp;</div>
+            <ul>
+              {%- for c in f.sub %}
+              {{ folderli(c) }}
+              {%- endfor %}
+            </ul>
+            {%- endif %}
+          </li>
+          {%- endmacro %}
+          {%- for f in tree %}
+          {{ folderli(f) }}
+          {%- endfor %}
+        </ul>
       </div>
+      <div class="footer"></div>
     </div>
 
-    <!-- folder properties frame -->
+    <!-- folder properties frame: the reference always loads the editor
+         (folder_edit.php) into #preferences-frame, list page stays intact -->
     <div id="layout-content" role="main">
       <h2 id="aria-label-toolbar" class="voice">{{ 'Application toolbar'|lc }}</h2>
       <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
         <a class="button icon back-list-button" href="#back"><span class="inner">{{ 'Back'|lc }}</span></a>
         <span class="header-title"></span>
+        <!-- toolbar -->
         <div id="folderstoolbar" class="toolbar menu">
-          <a class="create" title="{{ 'Create new folder'|lc }}" role="button"
-             href="{{ url_for('views.folders_view', _edit='new', _framed='1' if framed_page|default(false) else None) }}"><span class="inner">{{ 'Create'|lc }}</span></a>
-          {% if edit_folder and edit_folder != 'new' %}
-          <a class="delete" title="{{ 'Delete'|lc }}" role="button"
-             href="#" onclick="if (confirm('Delete folder {{ edit_folder }}?')) document.getElementById('folder-delete-form').submit(); return false"><span class="inner">{{ 'Delete'|lc }}</span></a>
-          <a class="purge" title="{{ 'Empty'|lc }}" role="button"
-             href="#" onclick="document.getElementById('folder-empty-form').submit(); return false"><span class="inner">{{ 'Empty'|lc }}</span></a>
-          {% else %}
-          <a class="delete disabled" title="{{ 'Delete'|lc }}" role="button" tabindex="-1" aria-disabled="true"
-             href="#"><span class="inner">{{ 'Delete'|lc }}</span></a>
-          <a class="purge disabled" title="{{ 'Empty'|lc }}" role="button" tabindex="-1" aria-disabled="true"
-             href="#"><span class="inner">{{ 'Empty'|lc }}</span></a>
-          {% endif %}
+          <a class="create" title="{{ 'Create new folder'|lc }}" role="button" href="#" data-framed-href="{{ url_for('views.folders_view', _edit='new', _framed='1') }}"><span class="inner">{{ 'Create'|lc }}</span></a>
+          <a class="delete disabled" title="{{ 'Delete'|lc }}" role="button" tabindex="-1" aria-disabled="true" href="#"><span class="inner">{{ 'Delete'|lc }}</span></a>
+          <a class="purge disabled" title="{{ 'Empty'|lc }}" role="button" tabindex="-1" aria-disabled="true" href="#"><span class="inner">{{ 'Empty'|lc }}</span></a>
         </div>
       </div>
-      {% if editing %}
-      <div class="content">
-        <div class="formcontent propform">
-          <h1 class="voice">{{ 'Folder properties'|lc }}</h1>
-          <form method="post" action="{{ url_for('views.folders_view') }}{{fq}}">
-          <input type="hidden" name="_framed" value="{{ '1' if framed_page|default(false) else '' }}">
-            <input type="hidden" name="_act" value="{{ 'create' if edit_folder == 'new' else 'rename' }}">
-            {% if edit_folder and edit_folder != 'new' %}
-            <input type="hidden" name="folder" value="{{ edit_folder }}">
-            {% endif %}
-            <table class="layout">
-              <tbody>
-                <tr><td class="title"><label for="inputname">{{ 'Folder name'|lc }}</label></td>
-                    <td><input type="text" name="name" id="inputname"
-                        value="{{ '' if edit_folder == 'new' else edit_folder.split('/')[-1] }}" class="form-control" required></td></tr>
-                <tr><td class="title"><label for="inputparent">{{ 'Parent folder'|lc }}</label></td>
-                    <td><select name="parent" id="inputparent" class="form-select">
-                      <option value="">---</option>
-                      {% for f in all_folders %}
-                        {% if edit_folder == 'new' or not edit_folder
-                              or (f.name != edit_folder and not f.name.startswith(edit_folder ~ '/')) %}
-                        <option value="{{ f.name }}" {{ 'selected' if f.name == parent_of }}>{{ f.display_name }}</option>
-                        {% endif %}
-                      {% endfor %}
-                    </select></td></tr>
-                <tr><td class="title"><label for="inputviewmode">{{ 'View mode'|lc }}</label></td>
-                    <td><select name="viewmode" id="inputviewmode" class="form-select">
-                      <option value="list" {{ 'selected' if folder_viewmode != 'threads' }}>{{ 'List'|lc }}</option>
-                      <option value="threads" {{ 'selected' if folder_viewmode == 'threads' }}>{{ 'Threads'|lc }}</option>
-                    </select></td></tr>
-              </tbody>
-            </table>
-            <div class="formbuttons">
-              <button type="submit" class="btn btn-primary icon save">{{ 'Save'|lc }}</button>
-            </div>
-          </form>
-        </div>
-        <form id="folder-delete-form" method="post" action="{{ url_for('views.folders_view') }}">
-          <input type="hidden" name="_act" value="delete"><input type="hidden" name="folder" value="{{ edit_folder }}">
-        </form>
-        <form id="folder-empty-form" method="post" action="{{ url_for('views.folders_view') }}">
-          <input type="hidden" name="_act" value="empty"><input type="hidden" name="folder" value="{{ edit_folder }}">
-        </form>
-      </div>
-      {% else %}
       <div class="iframe-wrapper">
-        <iframe name="preferences-frame" id="preferences-frame"
-                src="{{ url_for('static', filename='watermark.html') }}"></iframe>
+        <iframe name="preferences-frame" id="preferences-frame" src="{{ url_for('static', filename='watermark.html') }}"></iframe>
       </div>
-      {% endif %}
     </div>
 
 {% include "includes/footer.html" %}
+<script>
+// folder manager client behavior (elastic ui.js selection/search parity):
+// row click -> select + load editor into the frame; toolbar state machine;
+// caret collapse; search toggle + filter menu; RC-style confirm dialogs.
+(function () {
+  var stbl = document.getElementById('subscription-table');
+  var frame = document.getElementById('preferences-frame');
+  if (!stbl || !frame) return;
+
+  function select_row(li) {
+    stbl.querySelectorAll('.selected').forEach(function (el) {
+      el.classList.remove('selected', 'focused');
+    });
+    li.classList.add('selected', 'focused');
+    var href = li.getAttribute('data-framed-href');
+    if (href) frame.src = href;
+  }
+  // the row anchor is part of the row: clicking the name selects too
+  stbl.addEventListener('click', function (e) {
+    var a = e.target.closest('li > a[href="#"]');
+    if (!a) return;
+    e.preventDefault();
+    e.stopPropagation();
+    select_row(a.parentNode);
+  }, true);
+
+  // subscription checkbox: same contract as the AJAX folder_subscribe /
+  // folder_unsubscribe actions (via the shared helper)
+  stbl.addEventListener('change', function (e) {
+    var cb = e.target.closest('input[name="_subscribed[]"]');
+    if (cb && window.cc_subscription_toggle) {
+      cc_subscription_toggle(cb.getAttribute('data-folder'), cb.checked);
+    }
+  });
+
+  // caret toggles collapse the child ul without selecting the row
+  stbl.querySelectorAll('.treetoggle').forEach(function (t) {
+    t.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var li = t.parentNode;
+      var open = t.classList.toggle('expanded');
+      t.classList.toggle('collapsed', !open);
+      var ul = null;
+      for (var i = 0; i < li.children.length; i++) {
+        if (li.children[i].tagName === 'UL') { ul = li.children[i]; break; }
+      }
+      if (ul) ul.style.display = open ? '' : 'none';
+    });
+  });
+
+  // ---- toolbar enable/disable (app.js selection_changed parity).
+  // craftcube.js toolbarInit() (elastic ui.js toolbar_init port) re-hosts
+  // the #folderstoolbar anchors into ul#toolbar-menu, so resolve through
+  // both shapes and bind via delegation.
+  function tb(cls) {
+    return document.querySelector('#toolbar-menu a.' + cls +
+      ', #folderstoolbar a.' + cls);
+  }
+  function set_tb(cls, on) {
+    var a = tb(cls);
+    if (!a) return;
+    a.classList.toggle('disabled', !on);
+    a.setAttribute('aria-disabled', on ? 'false' : 'true');
+    a.tabIndex = on ? 0 : -1;
+  }
+  function sync(li) {
+    var f = (li && li.getAttribute('data-folder')) || '';
+    var protectedf = li && li.getAttribute('data-protected');
+    var msgs = li ? parseInt(li.getAttribute('data-messages') || '0', 10) : 0;
+    set_tb('delete', !!(f && !protectedf));
+    set_tb('purge', !!(f && msgs > 0));
+    stbl.setAttribute('data-selected', f);
+  }
+  new MutationObserver(function (mrs) {
+    mrs.forEach(function (m) {
+      if (m.target.classList && m.target.classList.contains('selected')) {
+        sync(m.target);
+      }
+    });
+  }).observe(stbl, { attributes: true, subtree: true,
+                     attributeFilter: ['class'] });
+
+  function folder_form_post(act, folder) {
+    var f = document.createElement('form');
+    f.method = 'post';
+    f.action = '{{ url_for('views.folders_act') }}';
+    var i1 = document.createElement('input');
+    i1.type = 'hidden'; i1.name = '_act'; i1.value = act;
+    var i2 = document.createElement('input');
+    i2.type = 'hidden'; i2.name = 'folder'; i2.value = folder;
+    f.appendChild(i1); f.appendChild(i2);
+    document.body.appendChild(f);
+    f.submit();
+  }
+  // app.js delete_folder()/purge_mailbox(): confirm_dialog content is the
+  // deletefolderconfirm/purgefolderconfirm message, dialog title is
+  // 'confirmationtitle' ('Are you sure...'), never window.confirm()
+  function confirm_folder(label, act) {
+    var f = stbl.getAttribute('data-selected');
+    if (!f || !window.cc_simple_dialog) return;
+    var dlg = null;
+    var buttons = [
+      { label: cc_get_label('delete'), cls: 'delete mainaction',
+        click: function () { if (dlg) dlg.close(); folder_form_post(act, f); } },
+      { label: cc_get_label('cancel'), cls: 'cancel',
+        click: function () { if (dlg) dlg.close(); } }
+    ];
+    dlg = cc_simple_dialog(cc_get_label(label), cc_get_label('confirmationtitle'),
+                           { buttons: buttons, noresize: true });
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('#toolbar-menu a, #folderstoolbar a') : null;
+    if (!a) return;
+    if (a.classList.contains('create')) {
+      // the framed-row binding loads the create form into the frame; the
+      // toolbar stays locked until a folder is selected again
+      set_tb('delete', false);
+      set_tb('purge', false);
+    } else if (a.classList.contains('delete')) {
+      e.preventDefault();
+      if (!a.classList.contains('disabled')) confirm_folder('deletefolderconfirm', 'delete');
+    } else if (a.classList.contains('purge')) {
+      e.preventDefault();
+      if (!a.classList.contains('disabled')) confirm_folder('purgefolderconfirm', 'empty');
+    }
+  });
+
+  // ---- search bar (elastic .searchbar toggle + filter menu)
+  var searchbar = document.querySelector('#layout-list .searchbar');
+  var toggle = document.querySelector('.search-toggle');
+  if (toggle && searchbar) {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      var on = searchbar.classList.toggle('active');
+      if (on) {
+        var inp = document.getElementById('foldersearch');
+        if (inp) inp.focus();
+      }
+    });
+  }
+  var find = document.getElementById('folders-find');
+  if (find) {
+    find.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      find.closest('form, .searchbar').querySelector('form').submit();
+    });
+  }
+  var reset = document.getElementById('folders-reset-search');
+  if (reset) {
+    reset.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var inp = document.getElementById('foldersearch');
+      if (inp) inp.value = '';
+      location.href = '{{ url_for('views.folders_view') }}';
+    });
+  }
+  var opts = document.getElementById('folders-search-options');
+  var omap = document.getElementById('foldersearchmenu');
+  if (opts && omap) {
+    opts.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      omap.classList.toggle('hidden');
+      if (!omap.classList.contains('hidden')) omap.style.display = '';
+    });
+    document.addEventListener('click', function (e) {
+      if (!omap.classList.contains('hidden') && !e.target.closest('#foldersearchmenu')) {
+        omap.classList.add('hidden');
+      }
+    });
+    omap.querySelectorAll('.folder-filter').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var url = new URL(location.href);
+        var v = a.getAttribute('data-filter');
+        if (v === '---') url.searchParams.delete('_filter');
+        else url.searchParams.set('_filter', v);
+        location.href = url.toString();
+      });
+    });
+  }
+
+  // server-side filter must keep the visible list in sync when searching
+  {% if q %}
+  if (searchbar) searchbar.classList.add('active');
+  {% endif %}
+
+  // deep link: select the folder row and load its properties into the frame
+  var edit = {{ (edit_folder or '') | tojson }};
+  if (edit && edit !== 'new') {
+    var li = stbl.querySelector('li[data-folder="' + edit + '"]');
+    if (li) select_row(li);
+  } else if (edit === 'new') {
+    frame.src = '{{ url_for('views.folders_view', _edit='new', _framed='1') }}';
+  }
+})();
+</script>
