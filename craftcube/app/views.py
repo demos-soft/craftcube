@@ -1182,7 +1182,9 @@ def contact_group_remove(cid, gid):
 @bp.route("/settings")
 @login_required
 def settings():
-    return redirect(url_for("views.settings_preferences"))
+    # Reference shows the preferences list with nothing selected and the
+    # watermark pane until a section row is clicked (?_task=settings landing).
+    return render_settings_landing()
 
 
 @bp.post("/settings/password")
@@ -1214,12 +1216,21 @@ def settings_preferences(section=None):
     prefs = dict(store.get_user_prefs(session["user_id"]))
     if request.method == "POST":
         return prefs_save(store, prefs, request.form.get("_section") or "general")
+    if section not in PREF_SECTIONS(prefs, [f["name"] for f in folders_for_menu()]):
+        return render_settings_landing()
     folders = [f["name"] for f in folders_for_menu()]
     sections = PREF_SECTIONS(prefs, folders)
-    section = section if section in sections else "general"
     return render("settings", "preferences.html", prefs=prefs, mail_folders=folders,
                   sections=sections, section=section,
                   blocks=sections[section]["blocks"])
+
+
+def render_settings_landing():
+    store = get_store()
+    prefs = dict(store.get_user_prefs(session["user_id"]))
+    folders = [f["name"] for f in folders_for_menu()]
+    return render("settings", "preferences.html", prefs=prefs, mail_folders=folders,
+                  sections=PREF_SECTIONS(prefs, folders), section=None, blocks=[])
 
 
 def prefs_save(store, prefs, section):
