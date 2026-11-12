@@ -1,0 +1,1067 @@
+openapi: 3.0.3
+info:
+  title: CraftCube Webmail API
+  description: >-
+    HTTP surface of CraftCube, a Python/Flask re-implementation of the
+    Roundcube Webmail UI. Session authentication (Flask session cookie) is
+    required for every operation except /login. Responses are HTML documents
+    (the application renders server-side templates like Roundcube), with a
+    few plain-text/JSON utility endpoints and binary downloads for
+    attachments and exports. Redirects (302) implement the Post/Redirect/Get
+    flow used by every mutating form.
+  version: "1.0.0"
+servers:
+  - url: http://localhost:8080
+    description: Local Docker harness (docker/docker-compose.yml)
+
+tags:
+  - name: auth
+    description: Login and logout
+  - name: mail
+    description: Message listing, viewing, actions, attachments, import/export
+  - name: compose
+    description: Message composition and drafts
+  - name: utils
+    description: Format converters and spellchecker used by the HTML editor
+  - name: contacts
+    description: Address book, contacts and contact groups
+  - name: settings
+    description: Preferences, identities, responses, folders
+  - name: misc
+    description: Root redirect and the about dialog
+
+security:
+  - sessionCookie: []
+
+paths:
+  /login:
+    get:
+      tags: [auth]
+      operationId: getLoginPage
+      summary: Show the login form
+      security: []
+      parameters:
+        - name: _next
+          in: query
+          description: URL to redirect to after a successful login
+          schema: { type: string }
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [auth]
+      operationId: login
+      summary: Authenticate against IMAP and start a session
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              required: [_user, _pass]
+              properties:
+                _user: { type: string, description: "IMAP username (email address)" }
+                _pass: { type: string, format: password }
+                _timezone: { type: string, description: "IANA timezone (e.g. Europe/Berlin)" }
+      responses:
+        "302":
+          description: Redirect to _next or /mail on success; back to /login on failure
+          headers:
+            Set-Cookie:
+              schema: { type: string }
+              description: "Session cookie set on successful login"
+          content:
+            text/html: { schema: { type: string } }
+        "200":
+          description: Login form re-rendered with an error message
+          content:
+            text/html: { schema: { type: string } }
+
+  /logout:
+    get:
+      tags: [auth]
+      operationId: logout
+      summary: Destroy the session and redirect to the login page
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /:
+    get:
+      tags: [misc]
+      operationId: root
+      summary: Redirect to the message list
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /mail:
+    get:
+      tags: [mail]
+      operationId: listMessages
+      summary: Message list (Elastic mail view)
+      parameters:
+        - name: _mbox
+          in: query
+          schema: { type: string, default: INBOX }
+          description: Folder name
+        - name: _page
+          in: query
+          schema: { type: integer, minimum: 1, default: 1 }
+        - name: _uid
+          in: query
+          schema: { type: string }
+          description: Split-view / preview message uid
+        - name: _sort
+          in: query
+          schema: { type: string, enum: ["", "date", "subject", "from", "to", "size"], default: "" }
+          description: Empty means sort by arrival, like Roundcube defaults
+        - name: _sort_order
+          in: query
+          schema: { type: string, enum: [asc, desc], default: desc }
+        - name: _mode
+          in: query
+          schema: { type: string, enum: [list, threads] }
+        - name: _q
+          in: query
+          schema: { type: string }
+          description: Search query
+        - name: _sm
+          in: query
+          style: form
+          explode: true
+          schema: { type: array, items: { type: string } }
+          description: Search header modifiers (e.g. subject, body, from)
+        - name: _sf
+          in: query
+          schema: { type: string, enum: [all, unread, flagged, unflagged, replied, draft], default: all }
+        - name: _si
+          in: query
+          schema: { type: string, enum: [all, 1day, 1week, 1month], default: all }
+        - name: _ss
+          in: query
+          schema: { type: string, enum: [base, subfolders, all], default: base }
+        - name: _frame
+          in: query
+          schema: { type: integer }
+          description: List frame id for framed list refreshes
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+
+  /mail/act:
+    post:
+      tags: [mail]
+      operationId: mailAction
+      summary: Apply a mail action to a set of uids
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              required: [_act]
+              properties:
+                _act:
+                  type: string
+                  enum: [read, unread, flag, flagtoggle, delete, undelete,
+                         move, copy, markallread, empty, compact]
+                _mbox: { type: string }
+                _mbox_override: { type: string, description: Per-row folder for search-across-folders listings }
+                _uids[]:
+                  type: array
+                  items: { type: string }
+                  description: Message uids
+                _box_map:
+                  type: string
+                  description: "Cross-folder uid map, comma-separated uid:folder pairs"
+                _dest: { type: string, description: Target folder for move/copy }
+                _return: { type: string, description: URL to redirect back to }
+                _return_uid: { type: string, description: uid the UI was viewing (for show-next-after-delete) }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /message:
+    get:
+      tags: [mail]
+      operationId: viewMessage
+      summary: Render a single message
+      parameters:
+        - name: _mbox
+          in: query
+          schema: { type: string, default: INBOX }
+        - name: _uid
+          in: query
+          required: true
+          schema: { type: string }
+        - name: _print
+          in: query
+          schema: { type: integer, enum: [0, 1] }
+          description: Render the print layout (no application chrome)
+        - name: _extwin
+          in: query
+          schema: { type: integer, enum: [0, 1] }
+          description: External-window mode (no task rail)
+        - name: _headers
+          in: query
+          schema: { type: integer, enum: [0, 1] }
+          description: Render raw header source
+        - name: _part
+          in: query
+          schema: { type: string }
+          description: Render a single MIME part
+        - name: _source
+          in: query
+          schema: { type: integer, enum: [0, 1] }
+          description: Download the raw message (eml)
+        - name: _noseen
+          in: query
+          schema: { type: integer, enum: [0, 1] }
+          description: Do not mark the message as seen
+        - name: _mdn
+          in: query
+          schema: { type: integer, enum: [0, 1] }
+          description: Show the MDN/disposition-notification UI
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /message/export:
+    get:
+      tags: [mail]
+      operationId: exportMessages
+      summary: Export messages (zipdownload-style eml / mbox / maildir)
+      parameters:
+        - name: _mbox
+          in: query
+          schema: { type: string, default: INBOX }
+        - name: _uids[]
+          in: query
+          style: form
+          explode: true
+          required: true
+          schema: { type: array, items: { type: string } }
+        - name: _uid
+          in: query
+          schema: { type: string }
+          description: Single message for format=eml
+        - name: _format
+          in: query
+          schema: { type: string, enum: [eml, mbox, maildir], default: eml }
+      responses:
+        "200":
+          description: The exported payload
+          content:
+            message/rfc822:
+              schema: { type: string, format: binary }
+            application/mbox:
+              schema: { type: string, format: binary }
+            application/zip:
+              schema: { type: string, format: binary }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /message/import:
+    post:
+      tags: [mail]
+      operationId: importMessages
+      summary: Import message files into a folder
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                _file[]:
+                  type: array
+                  items: { type: string, format: binary }
+                  description: .eml/.mbox/zip uploads
+                _mbox: { type: string, description: Target folder }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /attachment:
+    get:
+      tags: [mail]
+      operationId: downloadAttachment
+      summary: Stream an attachment (or inline part) of a message
+      parameters:
+        - name: _mbox
+          in: query
+          schema: { type: string, default: INBOX }
+        - name: _uid
+          in: query
+          required: true
+          schema: { type: string }
+        - name: _part
+          in: query
+          required: true
+          schema: { type: string }
+          description: MIME part index
+        - name: _inline
+          in: query
+          schema: { type: integer, enum: [0, 1] }
+          description: Serve with inline disposition
+        - name: _name
+          in: query
+          schema: { type: string }
+          description: Override filename for download
+        - name: _etag
+          in: query
+          schema: { type: string }
+      responses:
+        "200":
+          description: The part body
+          content:
+            application/octet-stream:
+              schema: { type: string, format: binary }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /compose:
+    get:
+      tags: [compose]
+      operationId: getCompose
+      summary: Render the compose form
+      parameters:
+        - name: _uid
+          in: query
+          schema: { type: string }
+          description: Source message uid (reply/forward/edit modes)
+        - name: _mbox
+          in: query
+          schema: { type: string }
+        - name: _mode
+          in: query
+          schema: { type: string, enum: ["", reply, replyall, replylist, forward, forward_attached, edit, draft, bounce] }
+        - name: _draft
+          in: query
+          schema: { type: string }
+          description: Draft uid to resume
+        - name: _to
+          in: query
+          schema: { type: string }
+        - name: _subject
+          in: query
+          schema: { type: string }
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [compose]
+      operationId: composePost
+      summary: Save a draft or send the message
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                _action: { type: string, enum: [send, save, sendmdn], default: send }
+                _ident: { type: integer, description: Identity id }
+                _to: { type: string }
+                _cc: { type: string }
+                _bcc: { type: string }
+                _reply_to: { type: string }
+                _followupto: { type: string }
+                _subject: { type: string }
+                _body: { type: string }
+                _html: { type: string, enum: ["0", "1"], description: "1 when the body is HTML" }
+                _is_html: { type: string, enum: ["0", "1"] }
+                _format: { type: string, enum: ["", flowed, html], description: Editor format state }
+                _priority: { type: integer }
+                _replyto: { type: string }
+                _in_reply_to: { type: string }
+                _references: { type: string }
+                _draft_uid: { type: string }
+                _uid: { type: string }
+                _mode: { type: string }
+                _signature: { type: string }
+                _dsn: { type: string, description: Delivery status notification request }
+                _mdn: { type: string, description: Disposition notification request }
+              additionalProperties: true
+      responses:
+        "302":
+          description: Redirect after send/save (list, saved-draft notice, or errors back to the form)
+          content:
+            text/html: { schema: { type: string } }
+        "200":
+          description: Compose form re-rendered with validation errors
+          content:
+            text/html: { schema: { type: string } }
+
+  /utils/text2html:
+    post:
+      tags: [utils]
+      operationId: text2html
+      summary: Convert plain text to HTML (rcube_text2html port)
+      description: Reference parity endpoint for `?_task=utils&_action=text2html`.
+      requestBody:
+        required: true
+        content:
+          text/plain:
+            schema: { type: string }
+      responses:
+        "200":
+          description: Converted HTML
+          content:
+            text/html: { schema: { type: string } }
+
+  /utils/html2text:
+    post:
+      tags: [utils]
+      operationId: html2text
+      summary: Convert HTML to plain text (rcube_html2text port)
+      description: Reference parity endpoint for `?_task=utils&_action=html2text`.
+      parameters:
+        - name: _do_links
+          in: query
+          schema: { type: integer, enum: [0, 1], default: 0 }
+          description: Keep links (reference default LINKS_NONE)
+        - name: _width
+          in: query
+          schema: { type: integer, default: 0 }
+          description: Line width, 0 = no wrapping
+      requestBody:
+        required: true
+        content:
+          text/html:
+            schema: { type: string }
+      responses:
+        "200":
+          description: Converted plain text
+          content:
+            text/plain: { schema: { type: string } }
+
+  /utils/spell_html:
+    post:
+      tags: [utils]
+      operationId: spellHtml
+      summary: Spellchecker RPC for the editor's spellchecker plugin
+      description: Reference parity endpoint for `?_task=utils&_action=spell_html`.
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                method: { type: string, enum: [spelling, addToDictionary] }
+                lang: { type: string, default: en }
+                text: { type: string, description: HTML/plain text to check (method=spelling) }
+                word: { type: string, description: Word to learn (method=addToDictionary) }
+      responses:
+        "200":
+          description: TinyMCE spellchecker JSON contract
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  words:
+                    type: object
+                    additionalProperties:
+                      type: object
+                      properties:
+                        suggestions: { type: array, items: { type: string } }
+                        misspellings: { type: integer }
+                        userDictionary: { type: boolean }
+                  dictionary: { type: boolean }
+                  result: { type: boolean }
+        "500":
+          description: Internal error in the spell engine
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error: { type: string }
+
+  /contacts:
+    get:
+      tags: [contacts]
+      operationId: listContacts
+      summary: Address book listing
+      parameters:
+        - name: _q
+          in: query
+          schema: { type: string }
+        - name: _group
+          in: query
+          schema: { type: integer }
+        - name: _source
+          in: query
+          schema: { type: string, default: "0" }
+        - name: _page
+          in: query
+          schema: { type: integer, minimum: 1, default: 1 }
+        - name: _sort
+          in: query
+          schema: { type: string }
+        - name: _sort_order
+          in: query
+          schema: { type: string, enum: [asc, desc] }
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+
+  /contact/{cid}:
+    get:
+      tags: [contacts]
+      operationId: viewContact
+      summary: Contact card
+      parameters:
+        - $ref: "#/components/parameters/Cid"
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+        "404": { $ref: "#/components/responses/NotFound" }
+
+  /contact/new:
+    get:
+      tags: [contacts]
+      operationId: getNewContact
+      summary: Empty contact form
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [contacts]
+      operationId: createContact
+      summary: Create a contact
+      requestBody: { $ref: "#/components/requestBodies/ContactForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contact/edit/{cid}:
+    get:
+      tags: [contacts]
+      operationId: getEditContact
+      summary: Contact edit form
+      parameters:
+        - $ref: "#/components/parameters/Cid"
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+        "404": { $ref: "#/components/responses/NotFound" }
+    post:
+      tags: [contacts]
+      operationId: updateContact
+      summary: Save a contact
+      parameters:
+        - $ref: "#/components/parameters/Cid"
+      requestBody: { $ref: "#/components/requestBodies/ContactForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contact/{cid}/delete:
+    post:
+      tags: [contacts]
+      operationId: deleteContact
+      summary: Delete one contact
+      parameters:
+        - $ref: "#/components/parameters/Cid"
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contact/delete:
+    post:
+      tags: [contacts]
+      operationId: deleteContacts
+      summary: Delete selected contacts
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                _uids[]:
+                  type: array
+                  items: { type: integer }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contact/collected/delete:
+    post:
+      tags: [contacts]
+      operationId: deleteCollected
+      summary: Delete collected (recent) addresses
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                _uids[]: { type: array, items: { type: integer } }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contact/{cid}/qrcode:
+    get:
+      tags: [contacts]
+      operationId: contactQrCode
+      summary: vCard QR code image for a contact
+      parameters:
+        - $ref: "#/components/parameters/Cid"
+        - name: _width
+          in: query
+          schema: { type: integer, default: 300 }
+      responses:
+        "200":
+          description: PNG image
+          content:
+            image/png: { schema: { type: string, format: binary } }
+
+  /contact/{cid}/group/{gid}:
+    post:
+      tags: [contacts]
+      operationId: addContactToGroup
+      summary: Add a contact to a group
+      parameters:
+        - $ref: "#/components/parameters/Cid"
+        - $ref: "#/components/parameters/Gid"
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contact/{cid}/group/{gid}/remove:
+    post:
+      tags: [contacts]
+      operationId: removeContactFromGroup
+      summary: Remove a contact from a group
+      parameters:
+        - $ref: "#/components/parameters/Cid"
+        - $ref: "#/components/parameters/Gid"
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contact/group:
+    post:
+      tags: [contacts]
+      operationId: assignGroup
+      summary: Assign selected contacts to a group
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                _uids[]: { type: array, items: { type: integer } }
+                _gid: { type: integer }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contactgroup/add:
+    post:
+      tags: [contacts]
+      operationId: createContactGroup
+      summary: Create a contact group
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contactgroup/{gid}/delete:
+    post:
+      tags: [contacts]
+      operationId: deleteContactGroup
+      summary: Delete a contact group
+      parameters:
+        - $ref: "#/components/parameters/Gid"
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contactgroup/{gid}/rename:
+    post:
+      tags: [contacts]
+      operationId: renameContactGroup
+      summary: Rename a contact group
+      parameters:
+        - $ref: "#/components/parameters/Gid"
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /contacts/export:
+    get:
+      tags: [contacts]
+      operationId: exportContacts
+      summary: Download contacts as vCard
+      parameters:
+        - name: _uids[]
+          in: query
+          style: form
+          explode: true
+          schema: { type: array, items: { type: integer } }
+          description: Empty = all (matching current search/group)
+        - name: _q
+          in: query
+          schema: { type: string }
+        - name: _group
+          in: query
+          schema: { type: integer }
+      responses:
+        "200":
+          description: vCard file
+          content:
+            text/vcard: { schema: { type: string } }
+
+  /contacts/import:
+    post:
+      tags: [contacts]
+      operationId: importContacts
+      summary: Import contacts from vCard upload
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                _file: { type: string, format: binary }
+                _import_group: { type: integer }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings:
+    get:
+      tags: [settings]
+      operationId: settings
+      summary: Settings landing page
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+
+  /settings/preferences:
+    get:
+      tags: [settings]
+      operationId: getPreferences
+      summary: Preferences form (all sections)
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [settings]
+      operationId: savePreferences
+      summary: Save preferences
+      requestBody: { $ref: "#/components/requestBodies/PreferencesForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/preferences/{section}:
+    get:
+      tags: [settings]
+      operationId: getPreferencesSection
+      summary: Preferences form for one section
+      parameters:
+        - name: section
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [server, loading, display, messaging, composemsg,
+                   spellchecking, folders, identities, responses]
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [settings]
+      operationId: savePreferencesSection
+      summary: Save one preferences section
+      parameters:
+        - name: section
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [server, loading, display, messaging, composemsg,
+                   spellchecking, folders, identities, responses]
+      requestBody: { $ref: "#/components/requestBodies/PreferencesForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/identities:
+    get:
+      tags: [settings]
+      operationId: listIdentities
+      summary: Identity list (inline edit pane)
+      parameters:
+        - name: _edit
+          in: query
+          schema: { type: integer }
+          description: identity_id to open in the edit pane
+        - name: _new
+          in: query
+          schema: { type: integer, enum: [1] }
+          description: Open the create pane
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [settings]
+      operationId: identityPost
+      summary: Create/update an identity (form carries identity_id when editing)
+      requestBody: { $ref: "#/components/requestBodies/IdentityForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/identity/new:
+    get:
+      tags: [settings]
+      operationId: getNewIdentity
+      summary: Standalone identity create form
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [settings]
+      operationId: createIdentity
+      summary: Create an identity
+      requestBody: { $ref: "#/components/requestBodies/IdentityForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/identity/edit/{iid}:
+    get:
+      tags: [settings]
+      operationId: getEditIdentity
+      summary: Standalone identity edit form
+      parameters:
+        - name: iid
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [settings]
+      operationId: updateIdentity
+      summary: Save an identity
+      parameters:
+        - name: iid
+          in: path
+          required: true
+          schema: { type: integer }
+      requestBody: { $ref: "#/components/requestBodies/IdentityForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/identity/{iid}/delete:
+    post:
+      tags: [settings]
+      operationId: deleteIdentity
+      summary: Delete an identity
+      parameters:
+        - name: iid
+          in: path
+          required: true
+          schema: { type: integer }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/responses:
+    get:
+      tags: [settings]
+      operationId: listResponses
+      summary: Response templates list (inline edit pane)
+      parameters:
+        - name: _edit
+          in: query
+          schema: { type: integer }
+        - name: _new
+          in: query
+          schema: { type: integer, enum: [1] }
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [settings]
+      operationId: responsePost
+      summary: Create/update a response template
+      requestBody: { $ref: "#/components/requestBodies/ResponseForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/response/new:
+    get:
+      tags: [settings]
+      operationId: getNewResponse
+      summary: Standalone response create form
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [settings]
+      operationId: createResponse
+      summary: Create a response template
+      requestBody: { $ref: "#/components/requestBodies/ResponseForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/response/edit/{rid}:
+    get:
+      tags: [settings]
+      operationId: getEditResponse
+      summary: Standalone response edit form
+      parameters:
+        - $ref: "#/components/parameters/Rid"
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [settings]
+      operationId: updateResponse
+      summary: Save a response template
+      parameters:
+        - $ref: "#/components/parameters/Rid"
+      requestBody: { $ref: "#/components/requestBodies/ResponseForm" }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/response/{rid}/delete:
+    post:
+      tags: [settings]
+      operationId: deleteResponse
+      summary: Delete a response template
+      parameters:
+        - $ref: "#/components/parameters/Rid"
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /settings/folders:
+    get:
+      tags: [settings]
+      operationId: listFolders
+      summary: Folder management view
+      parameters:
+        - name: _edit
+          in: query
+          schema: { type: string }
+          description: Folder name to open in the edit pane
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+    post:
+      tags: [settings]
+      operationId: foldersAction
+      summary: Create/rename/delete/empty a folder
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                _act: { type: string, enum: [create, rename, delete, empty] }
+                name: { type: string, description: New folder name (create/rename) }
+                folder: { type: string, description: Existing folder (rename/delete/empty) }
+      responses:
+        "302": { $ref: "#/components/responses/Redirect" }
+
+  /about:
+    get:
+      tags: [misc]
+      operationId: about
+      summary: About dialog
+      parameters:
+        - name: _framed
+          in: query
+          schema: { type: integer, enum: [0, 1] }
+          description: Render without application chrome (dialog content)
+      responses:
+        "200": { $ref: "#/components/responses/Html" }
+
+components:
+  securitySchemes:
+    sessionCookie:
+      type: apiKey
+      in: cookie
+      name: session
+      description: >-
+        Flask signed session cookie issued by POST /login. All operations
+        except /login require an authenticated session.
+
+  parameters:
+    Cid:
+      name: cid
+      in: path
+      required: true
+      schema: { type: integer }
+      description: Contact id
+    Gid:
+      name: gid
+      in: path
+      required: true
+      schema: { type: integer }
+      description: Contact group id
+    Rid:
+      name: rid
+      in: path
+      required: true
+      schema: { type: integer }
+      description: Response template id
+
+  responses:
+    Html:
+      description: HTML document
+      content:
+        text/html:
+          schema: { type: string }
+    Redirect:
+      description: Post/Redirect/Get redirect back to the referring view
+      headers:
+        Location:
+          schema: { type: string }
+          description: Target URL
+      content:
+        text/html:
+          schema: { type: string }
+    NotFound:
+      description: Missing required parameter or unknown resource
+      content:
+        text/html:
+          schema: { type: string }
+
+  requestBodies:
+    ContactForm:
+      content:
+        application/x-www-form-urlencoded:
+          schema:
+            type: object
+            properties:
+              name: { type: string }
+              email: { type: string }
+              _email: { type: array, items: { type: string } }
+              firstname: { type: string }
+              surname: { type: string }
+              telephone: { type: string }
+              organization: { type: string }
+              address: { type: string }
+              vcard: { type: string, description: Full vCard payload when posted from the card editor }
+            additionalProperties: true
+    IdentityForm:
+      content:
+        application/x-www-form-urlencoded:
+          schema:
+            type: object
+            properties:
+              identity_id: { type: integer, description: Present when updating }
+              name: { type: string }
+              email: { type: string }
+              organization: { type: string }
+              reply-to: { type: string }
+              bcc: { type: string }
+              signature: { type: string }
+              html_signature: { type: string, enum: ["0", "1"] }
+              standard: { type: string, enum: ["0", "1"], description: Default identity }
+    ResponseForm:
+      content:
+        application/x-www-form-urlencoded:
+          schema:
+            type: object
+            properties:
+              name: { type: string }
+              text: { type: string, description: Template body }
+              _is_html: { type: string, enum: ["0", "1"] }
+    PreferencesForm:
+      description: >-
+        Preference keys are flat form fields mirroring the settings catalogue
+        (e.g. theme, language, pagesize, preview_split, sig_above,
+        html_editor, editor_font_size, ...). Unknown keys are ignored.
+      content:
+        application/x-www-form-urlencoded:
+          schema:
+            type: object
+            additionalProperties: true
