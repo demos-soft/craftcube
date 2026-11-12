@@ -17,13 +17,13 @@
     </a>
   </span>
   <span class="spacer"></span>
-  <a href="#" class="delete disabled" id="tb-delete" title="Delete message"><span class="inner">Delete</span></a>
+  <a href="#" class="delete disabled" id="tb-delete" data-act="delete" title="Delete message"><span class="inner">Delete</span></a>
   {% if message_view %}
   <a href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _print=1) if message_view else '#' }}"
      class="print disabled" id="tb-print-direct" title="Print message" target="_blank"
      data-hidden="small"><span class="inner">Print</span></a>
   {% endif %}
-  <a href="#" class="archive disabled" id="tb-archive" title="Move to the archive folder"><span class="inner">Archive</span></a>
+  <a href="#" class="archive disabled" id="tb-archive" data-act="archive" title="Move to the archive folder"><span class="inner">Archive</span></a>
   <a href="#mark" id="markmessagemenulink" class="markmessage" title="Mark messages"
      data-popup="markmessage-menu"><span class="inner">Mark</span></a>
   <a href="#more" id="messagemenulink" class="more" title="More actions..."

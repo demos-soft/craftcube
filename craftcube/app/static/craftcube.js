@@ -354,6 +354,13 @@
           var base = (a.getAttribute('href') || '#').split('?')[0];
           if (base !== '#') a.setAttribute('href', base + '?' + q);
         });
+        // "Open in new window" has no static href in list view: point it at
+        // the message view of the current selection
+        var extwin = document.querySelector('#tb-extwin');
+        if (extwin) {
+          var base = (extwin.getAttribute('href') || '#').split('?')[0];
+          if (base === '#') extwin.setAttribute('href', '/message?' + q);
+        }
       }
     }
 
@@ -452,6 +459,8 @@
             if (sel) extra._return_uid = sel.getAttribute('data-uid') || '';
             act('delete', uids, extra);
           }
+        } else if (cmd === 'archive') {
+          act('archive', toolbarContext(), {});
         } else if (cmd === 'move' || cmd === 'copy') {
           act(cmd, toolbarContext(), { _dest: a.getAttribute('data-dest') });
         } else {
