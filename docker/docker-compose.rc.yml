@@ -1,0 +1,31 @@
+# Reference Roundcube for side-by-side comparison with CraftCube.
+# Shares the dev mailbox with the main stack (dovecot on docker_default).
+# Start:  docker compose -f docker-compose.rc.yml up -d
+# UI:     http://localhost:8081   (login test@example.org / secret)
+services:
+  roundcube:
+    image: docker.io/roundcube/roundcubemail:1.6.20-apache
+    environment:
+      ROUNDCUBEMAIL_DEFAULT_HOST: dovecot
+      ROUNDCUBEMAIL_DEFAULT_PORT: "143"
+      ROUNDCUBEMAIL_SMTP_SERVER: dovecot
+      ROUNDCUBEMAIL_SMTP_PORT: "2525"
+      ROUNDCUBEMAIL_DB_TYPE: sqlite
+      ROUNDCUBEMAIL_SKIN: elastic
+      ROUNDCUBEMAIL_PLUGINS: ""
+      ROUNDCUBEMAIL_USERNAME_DOMAIN: example.org
+    ports:
+      - "8081:80"
+    volumes:
+      - rc-db:/var/roundcube/db
+    networks:
+      - default
+      - docker_default
+    restart: unless-stopped
+
+networks:
+  docker_default:
+    external: true
+
+volumes:
+  rc-db:
