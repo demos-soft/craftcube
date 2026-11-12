@@ -79,13 +79,74 @@ def check(text, lang, ignore=None):
                     and s[0] not in "+-?@"]
             words[word] = sugg
         return drop(words)
-    # aspell
+    # aspell: pipe mode gives suggestions (`& word n c: s1, s2…`);
+    # `# word n c:` = misspelled without suggestions; `-` = correct
     d = lang.split("_")[0]
-    out = _run(["aspell", "--lang=" + d, "list"], text)
-    return drop({w: [] for w in out.split() if w.strip()})
+    out = _run(["aspell", "--lang=" + d, "--encoding=utf-8", "pipe"], text)
+    words = {}
+    for line in out.splitlines():
+        if line.startswith("&"):
+            parts = line.split()
+            if len(parts) > 1:
+                sug = line.split(":", 1)[1] if ":" in line else ""
+                words[parts[1]] = [s.strip() for s in sug.split(",") if s.strip()]
+        elif line.startswith("#"):
+            parts = line.split()
+            if len(parts) > 1:
+                words.setdefault(parts[1], [])
+    return drop(words)
 
 
 def add_word(word):
     # personal dictionaries are not enabled (spellcheck_dictionary=false in
     # the reference default) — accept silently like rcube_spellchecker does
     return True
+
+
+# rcube_spellchecker_engine::$separator (spellchecker/engine.php:34)
+_SEP_RE = re.compile(r"[\s()\[\]{}<>/\"]+|[:;?!,.](?=\W|$)")
+
+# rcube_spellchecker::check(): links are replaced by same-length blanks
+_LINK_RE = re.compile(r"(^|\s)(www\.\S+|[a-z]+://\S+)")
+
+MAX_SUGGESTIONS = 10  # engine.php::MAX_SUGGESTIONS
+
+
+def find_matches(text, lang, ignore=None):
+    """rcube_spellchecker::check() + ->matches for the Googie XML protocol:
+    ordered [(word, offset, length, suggestions)] of misspellments; offsets
+    are character positions into the plain (link-blanked) text.
+
+    Mirrors spellchecker/pspell.php::check(): tokenize on $separator, trim
+    the token, skip words pspell considers correct; offsets use the raw
+    token start ($pos = $w[1] - $diff, no leading-trim correction).
+    Returns None when no engine is available (caller errors).
+    """
+    blanked = _LINK_RE.sub(lambda m: m.group(1) + " " * len(m.group(2)), text)
+    tokens = []
+    pos = 0
+    for m in _SEP_RE.finditer(blanked):
+        tok = blanked[pos:m.start()]
+        if tok:
+            word = tok.strip()
+            if word:
+                tokens.append((word, pos))
+        pos = m.end()
+    tok = blanked[pos:]
+    if tok and tok.strip():
+        tokens.append((tok.strip(), pos))
+    if not tokens:
+        return [], len(blanked)
+    # one engine pass over the unique candidate words, reusing check()
+    unique = "\n".join(dict.fromkeys(w for w, _ in tokens))
+    result = check(unique, lang, ignore=ignore)
+    if result is None:
+        return None, len(blanked)
+    matches = []
+    for word, offset in tokens:
+        # pspell treats words without letters as correct (numbers, symbols)
+        if not any(ch.isalpha() for ch in word):
+            continue
+        if word in result:
+            matches.append((word, offset, len(word), result[word][:MAX_SUGGESTIONS]))
+    return matches, len(blanked)

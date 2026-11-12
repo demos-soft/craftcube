@@ -1028,6 +1028,48 @@ def utils_html2text():
     return Response(text, content_type="text/plain; charset=UTF-8")
 
 
+@bp.post("/utils/spell")
+@login_required
+def utils_spell():
+    """GoogieSpell plain-text endpoint: mirrors rcmail_action_utils_spell.
+
+    Raw XML request body (<text>…</text> / <learnword>…), `lang` query
+    param; reply is rcube_spellchecker::get_xml():
+    <spellresult charschecked="N"><c o="O" l="L">sug1\tsug2</c>…
+    """
+    import html as _html
+    from . import spellchecker
+    lang = request.values.get("lang") or "en"
+    body = request.get_data(as_text=True) or ""
+    up = get_store().get_user_prefs(session["user_id"])
+    ignore = {k: bool(up.get("spellcheck_ignore_" + k))
+              for k in ("syms", "nums", "caps")}
+    xml_head = '<?xml version="1.0" encoding="UTF-8"?>'
+    learn = body.find("<learnword>")
+    if learn != -1:
+        word = _html.unescape(
+            body[body.index("<text>", learn) + 6:body.index("</text>", learn)])
+        spellchecker.add_word(word)
+        return Response(xml_head + "<learnwordresult></learnwordresult>",
+                        mimetype="text/xml")
+    left = body.find("<text>")
+    right = body.rfind("</text>")
+    text = _html.unescape(body[left + 6:right]) if left != -1 and right > left else ""
+    if not text:
+        return Response(xml_head + '<spellresult charschecked="0">'
+                        "</spellresult>", mimetype="text/xml")
+    matches, checked = spellchecker.find_matches(text, lang, ignore=ignore)
+    if matches is None:
+        # rcmail_action_utils_spell: engine error -> <error> + 500
+        return Response(xml_head + '<spellresult error="Internal error.">'
+                        "</spellresult>", status=500, mimetype="text/xml")
+    out = [xml_head, '<spellresult charschecked="%d">' % checked]
+    for _word, pos, ln, sugg in matches:
+        out.append('<c o="%d" l="%d">%s</c>' % (pos, ln, "\t".join(sugg)))
+    out.append("</spellresult>")
+    return Response("".join(out), mimetype="text/xml")
+
+
 @bp.post("/utils/spell_html")
 @login_required
 def utils_spell_html():

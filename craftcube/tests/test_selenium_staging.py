@@ -306,3 +306,48 @@ def test_html_spellcheck_rpc(driver):
     hits = [u for u in driver.execute_script("return window.__xhrs;") if "spell" in u]
     assert any("spell_html" in u for u in hits), \
         "spellcheck did not call the RPC endpoint: %r" % (hits,)
+
+
+def _open_compose(drv):
+    # /compose is a plain server-rendered page; right after a fixture login
+    # an occasional driver.get lands back on the inbox, so retry until the
+    # textarea is present.
+    for _ in range(3):
+        drv.get(CC + "/compose")
+        try:
+            _wait_until(drv, lambda d: d.find_elements(By.ID, "composebody"), timeout=8)
+            return
+        except AssertionError:
+            continue
+    raise AssertionError("compose body never appeared")
+
+
+def test_plain_spellcheck_googie_layer(driver):
+    """Plain compose Spell must open the GoogieSpell edit layer with
+    clickable errors and server suggestions (googiespell.js parity),
+    not merely toggle the native spellcheck attribute."""
+    _open_compose(driver)
+    _wait_until(driver, lambda d: d.execute_script("return !!window.googie;"), timeout=25)
+    body = driver.find_element(By.ID, "composebody")
+    driver.execute_script("arguments[0].value = '';", body)
+    body.send_keys("Teh quik brown fox sent the moon.")
+    driver.execute_script(
+        "document.getElementById('tb-spell')"
+        ".dispatchEvent(new MouseEvent('click',"
+        "{bubbles:true,cancelable:true,detail:1,view:window}));")
+    _wait_until(driver, lambda d: d.find_elements(
+        By.CSS_SELECTOR, ".googie_edit_layer .googie_link"))
+    links = driver.find_elements(By.CSS_SELECTOR, ".googie_edit_layer .googie_link")
+    words = [l.text for l in links]
+    assert words == ["Teh", "quik"], words
+    # the first error opens the Googie suggestion menu
+    links[0].click()
+    _wait_until(driver, lambda d: d.find_elements(
+        By.CSS_SELECTOR, ".googie_window .googie_list li a"))
+    items = driver.find_elements(By.CSS_SELECTOR, ".googie_window .googie_list li a")
+    sugg = [i.text for i in items]
+    assert "The" in sugg, sugg
+    items[sugg.index("The")].click()
+    _wait_until(driver, lambda d: d.execute_script(
+        "return document.getElementById('composebody').value"
+        ".split(' ')[0] === 'The';"))

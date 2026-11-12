@@ -385,16 +385,37 @@
       if (this.editor) {
         tinymce.execCommand('mceSpellCheck', true);
         this.spellcheck_observer();
+      } else if (this.spellchecker) {
+        // plain mode: GoogieSpell (app.js spellcheck_start)
+        this.spellchecker.spellCheck();
+        this.spellcheck_observer();
       }
     };
 
     this.spellcheck_stop = function () {
       var ed = this.editor;
-      if (ed && this.spellcheck_active) {
-        ed.execCommand('mceSpellCheck', false);
-        this.spellcheck_active = false;
-        this.spellcheck_observer();
+      if (ed) {
+        if (ed.spellchecker) {
+          ed.spellchecker.suggestions = [];
+          ed.spellchecker.markErrors(false);
+        }
+        if (ed.plugins && ed.plugins.spellchecker) ed.plugins.spellchecker.active = false;
+      } else if (ed = this.spellchecker) {
+        // app.js spellcheck_stop: while the googie layer is up, "Spell"
+        // re-triggers spellCheck() (it resumes editing first)
+        if (ed.state && ed.state !== 'ready' && ed.state !== 'no_error_found') {
+          ed.spellCheck();
+        }
       }
+      this.spellcheck_active = false;
+      this.spellcheck_observer();
+    };
+
+    // app.js: editor.spellcheck_state()
+    this.spellcheck_state = function () {
+      if (this.editor) return !!this.spellcheck_active;
+      var g = this.spellchecker;
+      return !!(g && g.state && g.state !== 'ready' && g.state !== 'no_error_found');
     };
 
     this.get_language = function () {
@@ -632,11 +653,17 @@
     }
     if (cmd === 'spellcheck') {
       if (ed && ed.is_html()) {
-        if (ed.spellcheck_active) ed.spellcheck_stop();
+        if (ed.spellcheck_state()) ed.spellcheck_stop();
         else ed.spellcheck_start();
         return true;
       }
-      return false; // plain mode: the page keeps native spellcheck
+      if (window.googie) {
+        // plain mode: app.js uses editor.spellchecker (GoogieSpell);
+        // start() and stop() both end in spellCheck() while layer toggles
+        window.googie.spellCheck();
+        return true;
+      }
+      return false; // no googie loaded: the page keeps native spellcheck
     }
     if (cmd === 'insert-sig') {
       return cc_change_identity(byId('identities'), true);

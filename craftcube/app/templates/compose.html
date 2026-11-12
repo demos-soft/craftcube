@@ -426,6 +426,7 @@
         body.setAttribute('spellcheck', 'true');
         body.setAttribute('lang', lang);
         cc_editor.env.spell_lang = lang.split('_')[0];
+        if (window.googie) googie.setCurrentLanguage(lang.split('_')[0]);
         var ed = cc_editor.get_editor_for('composebody');
         if (ed) ed.set_language(lang.split('_')[0]);
         document.querySelectorAll('#spell-menu a[data-lang]').forEach(function (x) {
@@ -447,6 +448,7 @@
 </script>
 <script src="{{ url_for('static', filename='tinymce/tinymce.min.js') }}"></script>
 <script src="{{ url_for('static', filename='editor.js') }}"></script>
+<script src="{{ url_for('static', filename='cc_googiespell.js') }}"></script>
 <script>
   // server-side env (rcmail.set_env equivalent) + editor bootstrap;
   // the reference emits html_editor_init (ui.js) + editor_init(null,
@@ -479,6 +481,38 @@
   };
   window.addEventListener('load', function () {
     cc_editor.init_editor('composebody');
+    // GoogieSpell for the plain-text editor — reference
+    // program/actions/mail/compose.php: new GoogieSpell('', url+'&lang=',
+    // dictionary); setDecoration(false); decorateTextarea('composebody').
+    if (window.GoogieSpell && !window.googie) {
+      var googie = new GoogieSpell('', '/utils/spell?lang=', false);
+      googie.lang_chck_spell = cc_get_label('checkspelling');
+      googie.lang_rsm_edt = cc_get_label('resumeediting');
+      googie.lang_close = cc_get_label('close');
+      googie.lang_revert = cc_get_label('revertto');
+      googie.lang_no_error_found = cc_get_label('nospellerrors');
+      googie.lang_learn_word = cc_get_label('addtodict');
+      googie.setCurrentLanguage((cc_editor.env.spell_lang || 'en').split('_')[0]);
+      googie.setDecoration(false);
+      googie.decorateTextarea('composebody');
+      window.googie = googie;
+      googie.spelling_state_observer = function (state) {
+        var sp = document.getElementById('tb-spell');
+        if (sp) sp.classList.toggle('selected',
+            state === 'checking_spell' || state === 'resume_editing');
+      };
+      googie.custom_no_spelling_error = function (obj) {
+        // no elastic spell_container UI: surface via the message stack
+        if (window.cc_display) cc_display(cc_get_label('nospellerrors'), 'info', 4000);
+        obj.resumeEditingState();
+      };
+      googie.custom_ajax_error = function (obj) {
+        if (window.cc_display) cc_display(
+            'An error was encountered on the server. Please try again later.',
+            'error', 6000);
+        obj.resumeEditing();
+      };
+    }
     {% if sent_ok %}
     // sent_successfully (app.js:5974): in an extwin popup the form stays
     // locked and the window closes itself after a second

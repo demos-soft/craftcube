@@ -157,6 +157,9 @@ JS_LABEL_KEYS = [
     "restoremessage", "restoresavedcomposedata", "notsentwarning",
     # mail list refresh + import dialog (ui.js checkmail / mail_import)
     "loading", "import", "importmessages", "selectimportfile",
+    # GoogieSpell plain-text checker (googiespell.js lang_*)
+    "checking", "checkspelling", "resumeediting", "revertto", "nospellerrors",
+    "addtodict",
 ]
 
 

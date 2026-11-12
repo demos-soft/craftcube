@@ -2005,6 +2005,8 @@
       if (el.ccKey === key) window.cc_hide(el);
     });
   }
+  // the compose page's GoogieSpell busy indicator shares the message stack
+  window.cc_hide_busy = cc_hide_busy;
   window.cc_refresh_list = function (elem, event) {
     if (event) event.preventDefault();
     var url = (elem && elem.getAttribute('href')) || window.location.href;
