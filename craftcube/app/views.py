@@ -1787,7 +1787,10 @@ def editor_config(mode, prefs, spellcheck=True):
         "spellcheck": 1 if spellcheck else 0,
         "spelldict": 0,
         "content_css": url_for("static", filename="styles/embed.min.css"),
-        "disabled_plugins": [],
+        # rcmail_action::html_editor(): enable_autolink=false removes the
+        # TinyMCE autolink plugin; enable_spellcheck=false removes spellchecker
+        "disabled_plugins": ([] if prefs.get("enable_autolink", 1) else ["autolink"]) +
+                            ([] if spellcheck else ["spellchecker"]),
         "disabled_buttons": [],
         "extra_plugins": [],
         "extra_buttons": [],
@@ -2032,7 +2035,7 @@ def compose():
             draft_uid=draft_uid,
             attachments_kept=attachments_kept,
             action="compose",
-            keep_formatting=(mode == "edit"),
+            keep_formatting=(mode == "edit" or bool(prefs.get("keep_formatting_default"))),
             html_mode=html_mode,
             editor_cfg=editor_config("", prefs),
             signatures=identity_signatures(identities, prefs),

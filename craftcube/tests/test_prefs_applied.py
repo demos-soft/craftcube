@@ -2,6 +2,7 @@
 mail/addressbook/message routes, not just the settings form."""
 
 import email.message
+import re
 
 import pytest
 
@@ -236,6 +237,28 @@ def test_autocomplete_single_limits_multiple_addresses(client, store, user):
     r = client.get("/mail/autocomplete?_search=grace&_reqid=x")
     text = r.get_data(as_text=True)
     assert text.count("ghopper@navy.example") == 0
+
+
+def test_enable_autolink_disables_editor_plugin(app):
+    with app.test_request_context("/"):
+        off = views.editor_config("", {"enable_autolink": 0})
+        assert "autolink" in off["disabled_plugins"]
+        on = views.editor_config("", {"enable_autolink": 1})
+        assert "autolink" not in on["disabled_plugins"]
+
+
+def test_keep_formatting_default_seeds_compose_checkbox(client, store, user, make_box):
+    store.set_user_prefs(user, {"keep_formatting_default": 1})
+    make_box.prefs = dict(store.get_user_prefs(user))
+    html = client.get("/compose").get_data(as_text=True)
+    m = re.search(r'id="compose-keep-formatting"[^>]*', html)
+    assert m and "checked" in m.group(0)
+
+    store.set_user_prefs(user, {"keep_formatting_default": 0})
+    make_box.prefs = dict(store.get_user_prefs(user))
+    html = client.get("/compose").get_data(as_text=True)
+    m = re.search(r'id="compose-keep-formatting"[^>]*', html)
+    assert m and "checked" not in m.group(0)
 
 
 def test_display_next_after_delete(client, store, user, make_box):

@@ -197,6 +197,9 @@
 
     conf.disabled_plugins = config.disabled_plugins || [];
     conf.disabled_buttons = config.disabled_buttons || [];
+    // rcmail_action::html_editor: disabled plugins are removed from the
+    // TinyMCE plugin list (e.g. autolink when enable_autolink is off)
+    conf.disabled_plugins.forEach(function (p) { conf.plugins = conf.plugins.replace(p, ''); });
     conf.extra_plugins = config.extra_plugins || [];
     conf.extra_buttons = config.extra_buttons || [];
 
