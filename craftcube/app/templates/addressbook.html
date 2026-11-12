@@ -3,87 +3,448 @@
 
     <h1 class="voice">Address book</h1>
 
-    <!-- contacts list -->
-    <div id="layout-sidebar" class="listbox" role="navigation">
+    <!-- sources/groups list -->
+    <div id="layout-sidebar" class="listbox" role="navigation" aria-labelledby="directorylist-header">
       <div class="header">
         <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
-        <span class="header-title username">{{ current_user.username }}</span>
+        <span id="directorylist-header" class="header-title">Groups</span>
+        <a title="Addressbook/group options" class="button icon sidebar-menu"
+           data-popup="groupoptions-menu" href="#"><span class="inner">Actions</span></a>
       </div>
       <div class="scroller">
-        <ul id="contactlist" class="treelist listing contactlist">
-          <li class="mailbox contactgroup{{ ' selected' if not group }}">
-            <a href="{{ url_for('views.contacts') }}">All</a>
+        <ul id="directorylist" class="treelist listing iconized" role="tree">
+          <li class="addressbook{{ ' selected' if source == '0' }}" id="rcmliMA">
+            <a href="{{ url_for('views.contacts', _source='0') }}">Personal Addresses</a>
+            <ul class="groups" role="group">
+              {% for g in groups %}
+              <li class="contactgroup{{ ' selected' if group == g.contactgroup_id }}"
+                  data-groupid="{{ g.contactgroup_id }}" data-name="{{ g.name }}">
+                <a href="{{ url_for('views.contacts', _source='0', _group=g.contactgroup_id) }}">{{ g.name }}</a>
+              </li>
+              {% endfor %}
+            </ul>
           </li>
-          {% for g in groups %}
-          <li class="mailbox contactgroup{{ ' selected' if group == g.contactgroup_id }}">
-            <a href="{{ url_for('views.contacts', _group=g.contactgroup_id) }}">{{ g.name }}</a>
+          <li class="addressbook readonly{{ ' selected' if source == '1' }}" id="rcmliMQ">
+            <a href="{{ url_for('views.contacts', _source='1') }}">Collected Recipients</a>
           </li>
-          {% endfor %}
+          <li class="addressbook readonly{{ ' selected' if source == '2' }}" id="rcmliMg">
+            <a href="{{ url_for('views.contacts', _source='2') }}">Trusted Senders</a>
+          </li>
         </ul>
-        <form method="post" action="{{ url_for('views.contactgroup_add') }}" style="padding:.5rem">
-          <div class="input-group">
-            <input type="text" name="name" class="form-control" placeholder="New list" size="16">
-            <div class="input-group-append">
-              <button type="submit" class="btn btn-secondary icon add" title="Create list">Add</button>
-            </div>
-          </div>
-        </form>
+        <h3 class="voice">Saved searches</h3>
+        <ul id="savedsearchlist" class="treelist listing iconized"></ul>
       </div>
     </div>
 
-    <!-- contact list -->
-    <div id="layout-list" class="listbox selected">
+    <!-- contacts list -->
+    <div id="layout-list" class="listbox selected" aria-labelledby="aria-label-contactslist">
       <div class="header">
         <a class="button icon task-menu-button" href="#menu"><span class="inner">Menu</span></a>
-        <a class="button icon back-sidebar-button" href="#sidebar"><span class="inner">Lists</span></a>
-        <span class="header-title">Contacts</span>
+        <a class="button icon back-sidebar-button folders" href="#sidebar"><span class="inner">Groups</span></a>
+        <span class="header-title">{{ list_title }}</span>
         <div class="toolbar menu" role="toolbar">
-          <a class="btn btn-link create" href="{{ url_for('views.contact_edit', cid=None) }}" title="Create new contact"><span class="inner">New</span></a>
-          {% if group %}
-          <form method="post" action="{{ url_for('views.contactgroup_delete', gid=group) }}" class="d-inline"
-                onsubmit="return confirm('Delete this list?')">
-            <button type="submit" class="btn btn-link delete" title="Delete list"><span class="inner">Delete list</span></button>
-          </form>
-          {% endif %}
+          <a href="#select" class="button select{{ ' disabled' if not rows }}" data-popup="listselect-menu"
+             title="Select"><span class="inner">Select</span></a>
         </div>
+        <a class="button icon toolbar-menu-button" href="#list-menu"><span class="inner">Menu</span></a>
       </div>
-      <div class="searchbar menu">
-        <form action="{{ url_for('views.contacts') }}" method="get">
+      <div class="searchbar menu" role="search" aria-labelledby="aria-label-contactquicksearchbox">
+        <h2 id="aria-label-contactquicksearchbox" class="voice">Contact search form</h2>
+        <form name="searchform" id="searchform" action="{{ url_for('views.contacts') }}" method="get">
+          <input type="hidden" name="_source" value="{{ source }}">
           {% if group %}<input type="hidden" name="_group" value="{{ group }}">{% endif %}
-          <input type="text" class="form-control" name="_q" value="{{ q }}" placeholder="Search…" autocomplete="off">
-          <button type="submit" class="button icon search" title="Search"><span class="inner">Search</span></button>
-          {% if q %}<a class="button icon close" href="{{ url_for('views.contacts') }}"><span class="inner">Reset</span></a>{% endif %}
+          <label for="contactsearchform" class="voice">Search terms</label>
+          <input name="_q" id="contactsearchform" class="no-bs" placeholder="Search..." type="text"
+                 autocomplete="off" value="{{ q }}">
+          <a href="#" class="button icon search" onclick="this.form.submit(); return false"
+             title="Find contacts"><span class="inner">Search</span></a>
+          <a href="#" class="button icon options{{ ' active' if q }}"
+             title="Search modifiers" data-popup="searchmenu"><span class="inner">Options</span></a>
         </form>
       </div>
-      <div class="scroller">
-        <table class="listing contactlist" id="contacttable">
-          <thead>
-            <tr><th class="name">Name</th><th class="email">Email</th></tr>
-          </thead>
-          <tbody>
-            {% for c in rows %}
-            <tr>
-              <td class="name"><a href="{{ url_for('views.contact_view', cid=c.contact_id, _framed=1) }}" target="contentframe">{{ c.name or c.firstname }}</a></td>
-              <td class="email"><a>{{ c.email }}</a></td>
-            </tr>
-            {% else %}
-            <tr class="listempty"><td colspan="2">No contacts found.</td></tr>
-            {% endfor %}
-          </tbody>
-        </table>
+      <div id="searchmenu" class="hidden searchoptions scroller propform formcontainer"
+           aria-labelledby="aria-label-search-menu">
+        <h3 id="aria-label-search-menu" class="voice">Search fields</h3>
+        <div class="formcontent">
+          <ul class="proplist">
+            <li><label><input type="checkbox" name="s_mods[]" value="name" checked> Name</label></li>
+            <li><label><input type="checkbox" name="s_mods[]" value="firstname"> First name</label></li>
+            <li><label><input type="checkbox" name="s_mods[]" value="surname"> Surname</label></li>
+            <li><label><input type="checkbox" name="s_mods[]" value="email"> E-mail</label></li>
+            <li><label><input type="checkbox" name="s_mods[]" value="*"> All fields</label></li>
+          </ul>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <label for="s_scope" class="input-group-text">Search scope</label>
+            </div>
+            <select name="s_scope" id="s_scope" class="custom-select">
+              <option value="base">Current address book</option>
+              <option value="all">All address books</option>
+            </select>
+          </div>
+        </div>
+        <div class="formbuttons">
+          <button type="button" class="btn btn-primary icon search"
+                  onclick="document.getElementById('searchform').submit()">Search</button>
+        </div>
       </div>
-      <div class="pagenav menu footer small">
-        <a href="{{ url_for('views.contacts', _q=q, _group=group, _page=page-1) }}" class="prevpage{{ ' disabled' if page <= 1 }}"><span class="inner">Prev</span></a>
-        <span class="pagenav-text">{% if rows %}{{ (page-1)*20+1 }}-{% endif %}</span>
-        <a href="{{ url_for('views.contacts', _q=q, _group=group, _page=page+1) }}" class="nextpage{{ ' disabled' if not more }}"><span class="inner">Next</span></a>
+      <div class="scroller">
+        <h2 id="aria-label-contactslist" class="voice">Contacts</h2>
+        <form method="post" action="{{ url_for('views.collected_delete' if readonly else 'views.contacts_delete') }}" id="contactact">
+          {% if readonly %}<input type="hidden" name="_source" value="{{ source }}">{% endif %}
+          <table class="listing iconized contactlist{{ ' readonly' if readonly }}" id="contacts-table"
+                 role="listbox" data-label-msg="No contacts found."
+                 data-source="{{ source }}" data-group="{{ group or '' }}">
+            <tbody>
+              {% for c in rows %}
+              <tr class="contact{{ ' readonly' if readonly }}{{ ' person' if not readonly }}"
+                  id="rcmrow{{ c.address_id if readonly else c.contact_id }}" role="option"
+                  {% if readonly %}data-email="{{ c.email }}"{% else %}data-contactid="{{ c.contact_id }}"{% endif %}>
+                <td class="selection"><input type="checkbox" name="_uids[]"
+                    value="{{ c.email if readonly else c.contact_id }}" tabindex="-1"></td>
+                <td class="name" tabindex="0" id="l:rcmrow{{ c.address_id if readonly else c.contact_id }}">
+                  {% if readonly %}{{ c.name }} &lt;{{ c.email }}&gt;{% else %}{{ c.name }}{% endif %}
+                </td>
+              </tr>
+              {% else %}
+              <tr class="listempty"><td colspan="2">No contacts found.</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <div class="pagenav menu footer small" role="toolbar" aria-label="List navigation">
+        <a href="{{ url_for('views.contacts', _source=source, _group=group, _q=q, _page=1) }}"
+           class="firstpage{{ ' disabled' if page <= 1 }}" title="Show first page"><span class="inner">First</span></a>
+        <a href="{{ url_for('views.contacts', _source=source, _group=group, _q=q, _page=page-1) }}"
+           class="prevpage{{ ' disabled' if page <= 1 }}" title="Show previous page"><span class="inner">Previous</span></a>
+        <span class="pagenav-text" aria-live="polite" aria-relevant="text">
+          {%- if rows %}{{ (page-1)*20+1 }} – {{ (page-1)*20 + rows|length }} of {{ total }}{% else %}&nbsp;{% endif -%}
+        </span>
+        <a href="{{ url_for('views.contacts', _source=source, _group=group, _q=q, _page=page+1) }}"
+           class="nextpage{{ ' disabled' if not more }}" title="Show next page"><span class="inner">Next</span></a>
+        <a href="{{ url_for('views.contacts', _source=source, _group=group, _q=q, _page=999999) }}"
+           class="lastpage{{ ' disabled' if not more }}" title="Show last page"><span class="inner">Last</span></a>
       </div>
     </div>
 
-    <div id="layout-content">
-      <div class="header"><span class="header-title"></span></div>
+    <!-- contact details frame -->
+    <div id="layout-content" role="main">
+      <h2 id="aria-label-toolbar" class="voice">Toolbar</h2>
+      <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
+        <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
+        <span class="header-title"></span>
+        <!-- toolbar -->
+        <div id="addressbooktoolbar" class="toolbar menu">
+          <a href="{{ url_for('views.contact_edit', cid=None) }}" class="create{{ ' disabled' if readonly }}"
+             title="Create a new contact" data-fab="true"><span class="inner">Create</span></a>
+          <a href="#" class="print disabled" id="tb-print-contact" title="Print contact"
+             data-hidden="small"><span class="inner">Print</span></a>
+          <a href="#" class="delete disabled" id="tb-delete-contact" title="Delete contact"
+             data-readonly="{{ '1' if readonly else '0' }}"><span class="inner">Delete</span></a>
+          <span class="spacer"></span>
+          <a href="#search" class="search" id="btn-search" title="Advanced search"
+             onclick="document.querySelector('#contactsearchform').focus(); return false;"><span class="inner">Search</span></a>
+          <a href="#" class="import" id="btn-import" title="Import contacts"
+             data-popup="contactimportmenu"><span class="inner">Import</span></a>
+          <span class="dropbutton">
+            <a href="{{ url_for('views.contacts_export', _source=source) }}" class="export disabled" id="tb-export-contact"
+               title="Export contacts in vCard format"><span class="inner">Export</span></a>
+            <a href="#export" class="dropdown" data-popup="export-menu">
+              <span class="inner">Contact export options</span>
+            </a>
+          </span>
+          <a href="#more" id="contactmenulink" class="more" title="More actions"
+             data-popup="contact-menu"><span class="inner">More</span></a>
+        </div>
+      </div>
+      <h2 id="aria-label-contact-frame" class="voice">Contact properties</h2>
       <div class="iframe-wrapper">
         <iframe id="contentframe" name="contentframe" title="Contact preview" src="about:blank"></iframe>
       </div>
     </div>
 
+    <!-- popup menus -->
+    <div id="export-menu" class="popupmenu">
+      <h3 id="aria-label-export-menu" class="voice">Contact export options</h3>
+      <ul class="menu listing" role="menu">
+        <li role="menuitem"><a class="export all" href="{{ url_for('views.contacts_export', _source=source) }}"><span>Export all</span></a></li>
+        <li role="menuitem"><a class="export select disabled" id="export-selected" href="#" data-source="{{ source }}"><span>Export selected</span></a></li>
+      </ul>
+    </div>
+
+    <div id="groupoptions-menu" class="popupmenu">
+      <h3 id="aria-label-groupoptions-menu" class="voice">Addressbook/group options</h3>
+      <ul class="menu listing" role="menu">
+        <li role="menuitem"><a class="create" href="#group-create" id="group-create-link"
+            data-form="newgroupform"><span>Add group</span></a></li>
+        <li role="menuitem"><a class="group rename disabled" id="group-rename-link" href="#"
+            data-group-name="" data-groupid="" title="Rename selected group"><span>Rename group</span></a></li>
+        <li role="menuitem"><a class="group delete disabled" id="group-delete-link" href="#"
+            data-group-name="" data-groupid="" title="Delete selected group"><span>Delete group</span></a></li>
+        <li role="menuitem" class="disabled"><a href="#"><span>Save search</span></a></li>
+        <li role="menuitem" class="disabled"><a href="#"><span>Delete search</span></a></li>
+      </ul>
+    </div>
+
+    <div id="listselect-menu" class="popupmenu">
+      <h3 id="aria-label-listselect-menu" class="voice">Selection tools</h3>
+      <ul class="menu listing" role="menu">
+        <li role="menuitem"><a class="selection toggle-link" href="#" id="list-toggle-button">Selection</a></li>
+        <li role="menuitem"><a class="select page" href="#" data-select="page">Current page</a></li>
+        <li role="menuitem"><a class="select invert" href="#" data-select="invert">Invert</a></li>
+        <li role="menuitem"><a class="select none" href="#" data-select="none">None</a></li>
+      </ul>
+    </div>
+
+    <div id="contact-menu" class="popupmenu">
+      <h3 id="aria-label-contact-menu" class="voice">More contact actions</h3>
+      <ul class="menu listing" role="menu">
+        <li role="menuitem"><a class="qrcode disabled" id="contact-qrcode" href="#"
+            data-hidden="small"><span>QR Code</span></a></li>
+        <li role="menuitem"><a class="assigngroup disabled" id="assigngroup-link" href="#"
+            aria-haspopup="true"><span>Assign to group...</span></a></li>
+        <li role="menuitem"><a class="removegroup disabled" id="removegroup-link" href="#"><span>Remove from group</span></a></li>
+        <li role="menuitem" class="disabled"><a href="#"><span>Copy to...</span></a></li>
+      </ul>
+    </div>
+
+    <!-- assign-to-group picker -->
+    <div id="assigngroup-menu" class="popupmenu">
+      <h3 class="voice">Assign to group</h3>
+      <ul class="menu listing" role="menu">
+        {% for g in groups %}
+        <li role="menuitem"><a class="assigngroup folder-selector-link" href="#"
+            data-gid="{{ g.contactgroup_id }}">{{ g.name }}</a></li>
+        {% else %}
+        <li role="menuitem" class="disabled"><a href="#"><span>No groups</span></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div id="contactimportmenu" class="popupmenu formcontent">
+      <h3 class="voice">Import contacts</h3>
+      <form method="post" action="{{ url_for('views.contacts_import') }}" enctype="multipart/form-data">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text btn btn-primary icon upload">
+              <span class="inner">Choose files...</span>
+              <input type="file" name="_file" accept=".vcf,.vcard,text/vcard" class="local-upload">
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- group create dialog -->
+    <div id="newgroupform" class="popupmenu formcontent">
+      <h3 class="voice">Create group</h3>
+      <form method="post" action="{{ url_for('views.contactgroup_add') }}">
+        <div class="input-group">
+          <input type="text" name="name" class="form-control" placeholder="Group name" required>
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-primary icon add"><span class="inner">Save</span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+
 {% include "includes/footer.html" %}
+
+<script>
+(function () {
+  var table = document.getElementById('contacts-table');
+  if (!table) return;
+  var readonly = table.getAttribute('data-source') !== '0';
+  var groupEl = document.querySelector('#directorylist li.contactgroup.selected');
+
+  function rows() { return [].slice.call(table.querySelectorAll('tr.contact')); };
+  function checkedRows() { return rows().filter(function (r) { var c = r.querySelector('td.selection input'); return c && c.checked; }); }
+  function checkedVals() { return checkedRows().map(function (r) { return r.querySelector('td.selection input').value; }); }
+  function enabled(sel, on) {
+    document.querySelectorAll(sel).forEach(function (el) { el.classList.toggle('disabled', !on); });
+  }
+  function updateToolbar() {
+    var sel = checkedRows();
+    var single = sel.length === 1;
+    enabled('#tb-delete-contact', sel.length > 0);
+    enabled('#tb-print-contact', single && !readonly);
+    enabled('#contact-menu .qrcode, #contact-menu .assigngroup, #contact-menu .removegroup', sel.length > 0);
+    enabled('#export-menu .export.select, #tb-export-contact', !readonly);
+    if (single && !readonly) {
+      var cid = sel[0].getAttribute('data-contactid');
+      var pr = document.getElementById('tb-print-contact');
+      pr.setAttribute('href', '/contact/' + cid + '?_print=1');
+      pr.setAttribute('target', '_blank');
+      var qr = document.getElementById('contact-qrcode');
+      qr.setAttribute('href', '/contact/' + cid + '/qrcode');
+      qr.setAttribute('target', '_blank');
+    }
+  }
+
+  // row interactions: preview via name click; toggle check in selection mode
+  table.addEventListener('change', function (e) { if (e.target.type === 'checkbox') updateToolbar(); });
+  table.addEventListener('click', function (e) {
+    var nameCell = e.target.closest('td.name');
+    if (nameCell && !readonly) {
+      var tr = nameCell.closest('tr.contact');
+      var cid = tr.getAttribute('data-contactid');
+      var frame = document.getElementById('contentframe');
+      if (frame) {
+        frame.src = '/contact/' + cid + '?_framed=1';
+        var content = document.getElementById('layout-content');
+        if (content) content.classList.add('selected');
+      }
+      rows().forEach(function (r) { r.classList.remove('selected'); });
+      tr.classList.add('selected');
+      e.preventDefault();
+      return;
+    }
+    var tr2 = e.target.closest('tr.contact');
+    if (tr2 && table.classList.contains('selection')) {
+      var cb = tr2.querySelector('td.selection input');
+      if (cb) { cb.checked = !cb.checked; updateToolbar(); }
+    }
+  });
+
+  // selection toggle + select menu
+  var toggle = document.getElementById('list-toggle-button');
+  if (toggle) toggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    var on = table.classList.toggle('selection');
+    document.querySelectorAll('#listselect-menu a[data-select]').forEach(function (el) {
+      el.classList.toggle('disabled', !on);
+    });
+    if (!on) rows().forEach(function (r) { var c = r.querySelector('td.selection input'); if (c) c.checked = false; });
+    updateToolbar();
+    window.cc_close_popups();
+  });
+  document.querySelectorAll('#listselect-menu a[data-select]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (a.classList.contains('disabled')) return;
+      var mode = a.getAttribute('data-select');
+      rows().forEach(function (r) {
+        var cb = r.querySelector('td.selection input');
+        if (!cb) return;
+        if (mode === 'page') cb.checked = true;
+        else if (mode === 'invert') cb.checked = !cb.checked;
+        else if (mode === 'none') cb.checked = false;
+      });
+      updateToolbar();
+      window.cc_close_popups();
+    });
+  });
+
+  // delete (contacts or collected entries): rebuild _uids[] into the form
+  var del = document.getElementById('tb-delete-contact');
+  if (del) del.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (del.classList.contains('disabled') || !checkedVals().length) return;
+    if (!confirm('Really delete the selected item(s)?')) return;
+    var form = document.getElementById('contactact');
+    form.querySelectorAll('input.submit-uids').forEach(function (x) { x.remove(); });
+    checkedRows().forEach(function (r) {
+      var cb = r.querySelector('td.selection input');
+      var h = document.createElement('input');
+      h.type = 'hidden'; h.name = '_uids[]'; h.value = cb.value; h.className = 'submit-uids';
+      form.appendChild(h);
+    });
+    form.submit();
+  });
+
+  // export selected
+  var exp = document.getElementById('export-selected');
+  if (exp) exp.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (exp.classList.contains('disabled')) return;
+    var url = '/contacts/export?_source=' + table.getAttribute('data-source');
+    checkedVals().forEach(function (v) { url += '&_cid=' + encodeURIComponent(v); });
+    location.href = url;
+    window.cc_close_popups();
+  });
+
+  // assign / remove group
+  function groupForm(gid, doWhat) {
+    var f = document.createElement('form');
+    f.method = 'post';
+    f.action = '/contact/group';
+    function field(n, v) { var h = document.createElement('input'); h.type = 'hidden'; h.name = n; h.value = v; f.appendChild(h); }
+    field('_gid', gid); field('_do', doWhat);
+    checkedVals().forEach(function (v) { field('_uids[]', v); });
+    document.body.appendChild(f);
+    f.submit();
+  }
+  document.getElementById('assigngroup-link').addEventListener('click', function (e) {
+    e.preventDefault();
+    if (this.classList.contains('disabled')) return;
+    // open the group picker popup next to this link (generic popup mechanism)
+    var trig = document.createElement('span');
+    trig.setAttribute('data-popup', 'assigngroup-menu');
+    trig.style.position = 'fixed';
+    var r = this.getBoundingClientRect();
+    trig.style.left = r.left + 'px'; trig.style.top = r.top + 'px';
+    document.body.appendChild(trig);
+    trig.click();
+    trig.remove();
+  });
+  document.querySelectorAll('#assigngroup-menu a[data-gid]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      groupForm(a.getAttribute('data-gid'), 'assign');
+    });
+  });
+  var rg = document.getElementById('removegroup-link');
+  if (rg) rg.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (rg.classList.contains('disabled') || !groupEl) return;
+    groupForm(groupEl.getAttribute('data-groupid'), 'remove');
+  });
+
+  // import: submit on file pick
+  document.querySelectorAll('#contactimportmenu input.local-upload').forEach(function (inp) {
+    inp.addEventListener('change', function () { if (inp.files.length) inp.form.submit(); });
+  });
+
+  // group rename / delete via Actions menu
+  function refreshGroupMenu() {
+    var sel = document.querySelector('#directorylist li.contactgroup.selected');
+    var rn = document.getElementById('group-rename-link');
+    var dl = document.getElementById('group-delete-link');
+    if (!sel) { rn.classList.add('disabled'); dl.classList.add('disabled'); return; }
+    rn.classList.remove('disabled'); dl.classList.remove('disabled');
+    rn.setAttribute('data-groupid', sel.getAttribute('data-groupid'));
+    rn.setAttribute('data-group-name', sel.getAttribute('data-name'));
+    dl.setAttribute('data-groupid', sel.getAttribute('data-groupid'));
+    dl.setAttribute('data-group-name', sel.getAttribute('data-name'));
+  }
+  refreshGroupMenu();
+  var grn = document.getElementById('group-rename-link');
+  if (grn) grn.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (grn.classList.contains('disabled')) return;
+    var name = prompt('Group name:', grn.getAttribute('data-group-name'));
+    if (!name) return;
+    var f = document.createElement('form');
+    f.method = 'post';
+    f.action = '/contactgroup/' + grn.getAttribute('data-groupid') + '/rename';
+    var h = document.createElement('input'); h.type = 'hidden'; h.name = 'name'; h.value = name;
+    f.appendChild(h);
+    document.body.appendChild(f);
+    f.submit();
+  });
+  var gdl = document.getElementById('group-delete-link');
+  if (gdl) gdl.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (gdl.classList.contains('disabled')) return;
+    if (!confirm('Delete group "' + gdl.getAttribute('data-group-name') + '"?')) return;
+    var f = document.createElement('form');
+    f.method = 'post';
+    f.action = '/contactgroup/' + gdl.getAttribute('data-groupid') + '/delete';
+    document.body.appendChild(f);
+    f.submit();
+  });
+
+  updateToolbar();
+})();
+</script>

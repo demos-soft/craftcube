@@ -406,3 +406,33 @@ class Store:
             for cid in contact_ids:
                 c.execute("DELETE FROM contactgroupmembers WHERE contactgroup_id = ? AND contact_id = ?", (group_id, cid))
             c.commit()
+
+    # ------------------------------------------------- collected / trusted
+    # Roundcube addressbook types: 1 = Collected Recipients, 2 = Trusted Senders
+
+    def collected_list(self, user_id, atype, query=None):
+        sql = 'SELECT * FROM collected_addresses WHERE user_id = ? AND "type" = ?'
+        args = [user_id, atype]
+        if query:
+            like = f"%{query}%"
+            sql += " AND (name LIKE ? OR email LIKE ?)"
+            args += [like, like]
+        sql += " ORDER BY COALESCE(NULLIF(name,''), email) COLLATE NOCASE"
+        return self._conn().execute(sql, args).fetchall()
+
+    def collected_upsert(self, user_id, atype, name, email):
+        with _lock:
+            c = self._conn()
+            c.execute(
+                'INSERT INTO collected_addresses (user_id, "type", name, email, changed) VALUES (?,?,?,?,?) '
+                'ON CONFLICT (user_id, "type", email) DO UPDATE SET name=excluded.name, changed=excluded.changed',
+                (user_id, atype, name, email, now()))
+            c.commit()
+
+    def collected_delete(self, user_id, atype, emails):
+        with _lock:
+            c = self._conn()
+            q = ",".join("?" * len(emails))
+            c.execute(f'DELETE FROM collected_addresses WHERE user_id = ? AND "type" = ? AND email IN ({q})',
+                      [user_id, atype] + list(emails))
+            c.commit()

@@ -661,21 +661,64 @@ def compose():
 
 # ---------------------------------------------------------------- addressbook
 
+SOURCES = {"0": "Personal Addresses", "1": "Collected Recipients", "2": "Trusted Senders"}
+
+
 @bp.route("/contacts")
 @login_required
 def contacts():
     store = get_store()
     q = request.args.get("_q", "").strip()
     group = request.args.get("_group", type=int)
+    source = request.args.get("_source") or "0"
+    if source not in SOURCES:
+        source = "0"
     page = int(request.args.get("_page", 1) or 1)
     size = current_app.config["PAGE_SIZE"]
-    rows = store.contacts(session["user_id"], query=q or None, group=group,
-                          offset=(page - 1) * size, limit=size + 1)
-    more = len(rows) > size
-    rows = rows[:size]
+    readonly = source != "0"
+    aprefs = g.get("prefs") or {}
+    if readonly:
+        allrows = store.collected_list(session["user_id"], int(source), q or None)
+    else:
+        allrows = store.contacts(session["user_id"], query=q or None, group=group)
+    # prefs: sorting column and contact name listing mode
+    sort_col = aprefs.get("addressbook_sort_col", "surname")
+
+    def _key(r):
+        keys = r.keys()
+        col = sort_col if sort_col in keys else "name"
+        return ((r[col] if col in keys else "") or r["name"] or r["email"] or "").lower()
+    allrows = sorted(allrows, key=_key)
+    listing_mode = str(aprefs.get("addressbook_name_listing", "0"))
+    if listing_mode != "0":
+        def _disp(r):
+            keys = r.keys()
+            f = (r["firstname"] or "") if "firstname" in keys else ""
+            s = (r["surname"] or "") if "surname" in keys else ""
+            if listing_mode == "1":
+                return " ".join(filter(None, [f, s])) or r["name"] or r["email"]
+            if listing_mode == "2":
+                return " ".join(filter(None, [s, f])) or r["name"] or r["email"]
+            if listing_mode == "3":
+                return ", ".join(filter(None, [s, f])) or r["name"] or r["email"]
+            return r["name"]
+        allrows = [{**r, "name": _disp(r)} for r in allrows]
+    try:
+        size = int(aprefs.get("addressbook_pagesize")
+                   or current_app.config["PAGE_SIZE"]) or current_app.config["PAGE_SIZE"]
+    except (TypeError, ValueError):
+        size = current_app.config["PAGE_SIZE"]
+    total = len(allrows)
+    pages = max(1, (total + size - 1) // size)
+    page = max(1, min(page, pages))
+    rows = allrows[(page - 1) * size: page * size]
+    more = page < pages
     groups = store.contactgroups(session["user_id"])
     return render("addressbook", "addressbook.html", rows=rows, q=q, group=group,
-                  groups=groups, page=page, more=more)
+                  source=source, sources=SOURCES, readonly=readonly,
+                  groups=groups, page=page, more=more, total=total,
+                  list_title=("Search" if q else SOURCES[source]),
+                  search_mods=["name", "firstname", "surname", "email", "*"])
 
 
 @bp.route("/contact/<int:cid>")
@@ -755,6 +798,100 @@ def contact_delete(cid):
     return redirect(url_for("views.contacts"))
 
 
+@bp.route("/contacts/export")
+@login_required
+def contacts_export():
+    """vCard export — 'Export all' / 'Export selected' (contacts.vcf)."""
+    store = get_store()
+    cids = request.args.getlist("_cid")
+    if cids:
+        rows = [store.contact(session["user_id"], int(c)) for c in cids]
+        rows = [r for r in rows if r]
+    else:
+        rows = store.contacts(session["user_id"])
+    parts = []
+    for r in rows:
+        vc = r["vcard"] or util.vcard_encode({"name": r["name"],
+                                              "emails": [("", r["email"])]})
+        parts.append(vc)
+    body = "\r\n".join(parts) + "\r\n" if parts else ""
+    return Response(body, mimetype="text/vcard", headers={
+        "Content-Disposition": 'attachment; filename="contacts.vcf"'})
+
+
+@bp.post("/contacts/import")
+@login_required
+def contacts_import():
+    """Import contacts from an uploaded .vcf file."""
+    store = get_store()
+    f = request.files.get("_file")
+    if not f or not f.filename:
+        flash("No file uploaded.", "error")
+        return redirect(url_for("views.contacts"))
+    text = f.read().decode("utf-8", errors="replace")
+    count = 0
+    for chunk in text.split("BEGIN:VCARD")[1:]:
+        vcard = "BEGIN:VCARD" + chunk.split("END:VCARD")[0] + "END:VCARD"
+        ext = util.vcard_parse(vcard)
+        name = ext["name"] or " ".join(filter(None, [ext["firstname"], ext["surname"]]))
+        emails = [v for _t, v in ext["emails"]]
+        if not name and not emails:
+            continue
+        name = name or (emails[0] if emails else "Unnamed")
+        data = {"name": name, "email": ", ".join(emails),
+                "firstname": ext["firstname"], "surname": ext["surname"],
+                "vcard": util.vcard_encode(ext)}
+        store.contact_save(session["user_id"], data)
+        count += 1
+    flash(f"{count} contact(s) imported.", "confirmation")
+    return redirect(url_for("views.contacts"))
+
+
+@bp.get("/contact/<int:cid>/qrcode")
+@login_required
+def contact_qrcode(cid):
+    """Contact QR code (SVG), like Roundcube's contacts/qrcode action."""
+    store = get_store()
+    row = store.contact(session["user_id"], cid)
+    if not row:
+        abort(404)
+    try:
+        import qrcode
+        import qrcode.image.svg
+    except ImportError:
+        abort(404)
+    ext = util.vcard_parse(row["vcard"]) if row["vcard"] else {}
+    # QR input is limited: only common fields, as Roundcube does
+    fields = {k: ext.get(k) for k in ("name", "firstname", "surname", "middlename",
+                                      "nickname", "organization", "jobtitle",
+                                      "prefix", "suffix")}
+    fields["emails"] = ext.get("emails")
+    fields["phones"] = ext.get("phones")
+    data = util.vcard_encode({k: v for k, v in fields.items() if v})
+    img = qrcode.make(data, image_factory=qrcode.image.svg.SvgPathImage)
+    buf = io.BytesIO()
+    img.save(buf)
+    return Response(buf.getvalue(), mimetype="image/svg+xml")
+
+
+@bp.post("/contact/group")
+@login_required
+def contact_group_assign():
+    """Assign / remove selected contacts to/from a group (More ▸ Assign/Remove)."""
+    store = get_store()
+    gid = request.form.get("_gid", type=int)
+    cids = [int(x) for x in request.form.getlist("_uids[]")]
+    action = request.form.get("_do") or "assign"
+    if gid and cids:
+        if action == "remove":
+            store.contactgroup_remove(gid, cids)
+            flash("Removed from list.", "confirmation")
+        else:
+            store.contactgroup_add(gid, cids)
+            flash("Added to list.", "confirmation")
+    return redirect(url_for("views.contacts"))
+
+
 @bp.post("/contact/delete")
 @login_required
 def contacts_delete():
@@ -782,6 +919,29 @@ def contactgroup_delete(gid):
     store = get_store()
     store.contactgroup_delete(session["user_id"], gid)
     return redirect(url_for("views.contacts"))
+
+
+@bp.post("/contactgroup/<int:gid>/rename")
+@login_required
+def contactgroup_rename(gid):
+    store = get_store()
+    name = request.form.get("name", "").strip()
+    if name:
+        store.contactgroup_save(session["user_id"], name, group_id=gid)
+    return redirect(url_for("views.contacts"))
+
+
+@bp.post("/contact/collected/delete")
+@login_required
+def collected_delete():
+    """Delete selected entries from Collected Recipients / Trusted Senders."""
+    store = get_store()
+    atype = request.form.get("_source", type=int) or 1
+    emails = request.form.getlist("_uids[]")
+    if emails:
+        store.collected_delete(session["user_id"], atype, emails)
+        flash(f"{len(emails)} entry(s) deleted.", "confirmation")
+    return redirect(url_for("views.contacts", _source=atype))
 
 
 @bp.post("/contact/<int:cid>/group/<int:gid>")
