@@ -3008,10 +3008,41 @@ def folders_act():
 
 # ---------------------------------------------------------------- about
 
+def _about_plugin_info():
+    """rcmail_action_settings_about::plugins_list(): metadata of the active
+    plugins (plus their required plugins), sorted by name; rows are only
+    rendered when at least one plugin provides info."""
+    api = get_api()
+    plugin_info = {}
+    for name in api.active_plugins:
+        info = api.get_info(name)
+        if info:
+            plugin_info[name] = info
+    # load info from required plugins, too
+    for name, info in list(plugin_info.items()):
+        for req in info.get("require") or []:
+            if req not in plugin_info:
+                req_info = api.get_info(req)
+                if req_info:
+                    plugin_info[req] = req_info
+    return [
+        {
+            "name": info.get("name") or name,
+            "version": info.get("version") or "",
+            "license": info.get("license") or "",
+            "license_uri": info.get("license_uri") or "",
+            "uri": info.get("src_uri") or info.get("uri") or "",
+        }
+        for name, info in sorted(plugin_info.items())  # ksort SORT_LOCALE
+    ]
+
+
 @bp.route("/about")
 @login_required
 def about():
+    plugins = _about_plugin_info()
     if request.args.get("_framed") == "1":
         # reference: about dialog loads `?_task=settings&_action=about&_framed=1`
-        return render_template("about_framed.html", task="settings")
-    return render("settings", "about.html")
+        return render_template("about_framed.html", task="settings",
+                               plugins=plugins)
+    return render("settings", "about.html", plugins=plugins)

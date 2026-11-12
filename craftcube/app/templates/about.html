@@ -38,6 +38,7 @@
          target="_blank" rel="noopener" tabindex="-1">Creative Commons Attribution-ShareAlike</a></span><br>
          </span></p>
       <h3>{{ 'Installed plugins'|lc }}</h3>
+      {% if plugins %}
       <table id="pluginlist" class="records-table table">
         <thead class="thead-default"><tr>
           <th class="name">{{ 'Plugin'|lc }}</th>
@@ -45,8 +46,18 @@
           <th class="license">{{ 'License'|lc }}</th>
           <th class="source">{{ 'Source'|lc }}</th>
         </tr></thead>
-        <tbody></tbody>
+        <tbody>
+          {% for p in plugins %}
+          <tr>
+            <td class="name">{{ p.name }}</td>
+            <td class="version">{{ p.version }}</td>
+            <td class="license">{% if p.license_uri %}<a href="{{ p.license_uri }}" target="_blank" rel="noopener">{{ p.license }}</a>{% else %}{{ p.license }}{% endif %}</td>
+            <td class="source">{% if p.uri %}<a href="{{ p.uri }}" target="_blank" rel="noopener" tabindex="-1">{{ 'download'|lc }}</a>{% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
       </table>
+      {% endif %}
     </div>
   </div>
 </body>

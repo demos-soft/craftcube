@@ -25,6 +25,7 @@ Semantics kept faithful to the PHP original:
 from __future__ import annotations
 
 import importlib.util
+import json
 import logging
 import re
 import sys
@@ -42,6 +43,35 @@ MAIN_TASKS = ("login", "mail", "addressbook", "settings", "utils")
 
 _NAME_RE = re.compile(r"[^a-zA-Z0-9_-]")          # load_plugin() guard
 _TASK_RE = re.compile(r"^[a-z0-9_.-]+$")          # asciiwords()
+
+# rcube_plugin_api::$license_uris — short license id -> license page
+LICENSE_URIS = {
+    "Apache": "https://www.apache.org/licenses/LICENSE-2.0.html",
+    "Apache-2": "https://www.apache.org/licenses/LICENSE-2.0.html",
+    "Apache-1": "https://www.apache.org/licenses/LICENSE-1.0",
+    "Apache-1.1": "https://www.apache.org/licenses/LICENSE-1.1",
+    "GPL": "https://www.gnu.org/licenses/gpl.html",
+    "GPL-2.0": "https://www.gnu.org/licenses/gpl-2.0.html",
+    "GPL-2.0+": "https://www.gnu.org/licenses/gpl.html",
+    "GPL-3.0": "https://www.gnu.org/licenses/gpl-3.0.html",
+    "GPL-3.0+": "https://www.gnu.org/licenses/gpl.html",
+    "AGPL-3.0": "https://www.gnu.org/licenses/agpl.html",
+    "AGPL-3.0+": "https://www.gnu.org/licenses/agpl.html",
+    "LGPL": "https://www.gnu.org/licenses/lgpl.html",
+    "LGPL-2.0": "https://www.gnu.org/licenses/lgpl-2.0.html",
+    "LGPL-2.1": "https://www.gnu.org/licenses/lgpl-2.1.html",
+    "LGPL-3.0": "https://www.gnu.org/licenses/lgpl.html",
+    "LGPL-3.0+": "https://www.gnu.org/licenses/lgpl.html",
+    "BSD": "https://opensource.org/licenses/bsd-license.html",
+    "BSD-2-Clause": "https://opensource.org/licenses/BSD-2-Clause",
+    "BSD-3-Clause": "https://opensource.org/licenses/BSD-3-Clause",
+    "FreeBSD": "https://opensource.org/licenses/BSD-2-Clause",
+    "MIT": "https://www.opensource.org/licenses/mit-license.php",
+    "PHP": "https://opensource.org/licenses/PHP-3.0",
+    "PHP-3": "https://www.php.net/license/3_01.txt",
+    "PHP-3.0": "https://www.php.net/license/3_0.txt",
+    "PHP-3.01": "https://www.php.net/license/3_01.txt",
+}
 
 
 class Plugin:
@@ -270,6 +300,60 @@ class PluginAPI:
     def load_plugins(self, names):
         for name in names:
             self.load_plugin(name)
+
+    # --- plugin metadata ---------------------------------------------------
+    def get_info(self, plugin_name):
+        """rcube_plugin_api::get_info(): plugin class info() first, falling
+        back to the plugin's composer.json metadata, then to a minimal
+        name/version entry.  Returns False when nothing is known."""
+        if _NAME_RE.search(plugin_name):  # path traversal guard
+            log.error("Invalid plugin name: %s", plugin_name)
+            return False
+        plugin = self.plugins.get(plugin_name)
+        info = type(plugin).info() if plugin else False
+        if not info:
+            info = {}
+            composer = self.dir / plugin_name / "composer.json"
+            if composer.is_file():
+                try:
+                    json_data = json.loads(composer.read_text())
+                except ValueError:
+                    json_data = None
+                if isinstance(json_data, dict):
+                    # list of plugins required (like the PHP require pass)
+                    require = []
+                    for dname in (json_data.get("require") or {}):
+                        m = re.match(r"^([^/]+)/([a-zA-Z0-9_-]+)$", str(dname))
+                        if not m:
+                            continue
+                        vendor, name = m.groups()
+                        if name != "plugin-installer" and vendor not in ("pear", "pear-pear"):
+                            if (self.dir / name / f"{name}.py").is_file():
+                                require.append(name)
+                    full = json_data.get("name")
+                    if isinstance(full, str) and "/" in full:
+                        info["vendor"], info["name"] = full.split("/", 1)
+                    info["version"] = json_data.get("version")
+                    info["license"] = json_data.get("license")
+                    info["require"] = require
+                    if json_data.get("homepage"):
+                        info["uri"] = json_data["homepage"]
+        if not info:
+            if plugin is not None:
+                info = {"name": plugin_name, "version": "--"}
+            else:
+                return False
+        elif info.get("license"):
+            # convert the composer SPDX identifier to something shorter
+            license = str(info["license"])
+            m = re.match(r"^([ALGP]+)[-v]([0-9.]+)(\+|-or-later)?", license)
+            if m:
+                info["license"] = (m.group(1) + "-"
+                                   + "%.1f" % float(m.group(2))
+                                   + ("+" if m.group(3) else ""))
+            if not info.get("license_uri") and info["license"] in LICENSE_URIS:
+                info["license_uri"] = LICENSE_URIS[info["license"]]
+        return info
 
     # --- hooks -----------------------------------------------------------
     def register_hook(self, hook, callback):
