@@ -682,43 +682,85 @@ CONTACT_PHONE_TYPES = ["home", "home2", "work", "work2", "mobile", "main",
                        "homefax", "workfax", "car", "pager", "video",
                        "assistant", "other"]
 CONTACT_TYPES = CONTACT_EMAIL_TYPES
+# rcube_vcard $immap (rcube_vcard.php:69-77): extension tag -> service name
+IM_SERVICE_TAGS = {"X-JABBER": "jabber", "X-ICQ": "icq", "X-MSN": "msn",
+                   "X-AIM": "aim", "X-YAHOO": "yahoo", "X-SKYPE": "skype",
+                   "X-SKYPE-USERNAME": "skype"}
+IM_SERVICE_NAMES = {"jabber": "X-JABBER", "icq": "X-ICQ", "msn": "X-MSN",
+                    "aim": "X-AIM", "yahoo": "X-YAHOO",
+                    # RC's array_flip keeps the LAST duplicate tag (rcube_vcard.php:75-76)
+                    "skype": "X-SKYPE-USERNAME"}
+CONTACT_WEBSITE_TYPES = ["homepage", "work", "blog", "profile", "other"]
+CONTACT_IM_TYPES = ["aim", "icq", "msn", "yahoo", "jabber", "skype"]
+
+# rcube_vcard type maps (rcube_vcard.php:50-73). $typemap resolves a stored
+# vCard TYPE (combined, uppercased, INTERNET/PREF stripped) to the internal
+# subtype; the phone/address maps rewrite the form subtype on save.
+RC_TYPEMAP = {
+    "IPHONE": "mobile", "CELL": "mobile", "WORK,FAX": "workfax",
+    "WORK,CELL": "other", "HOME,FAX": "homefax", "OTHER,FAX": "other",
+    "FAX": "homefax",
+}
+RC_PHONETYPEMAP = {
+    "HOME1": "HOME", "BUSINESS1": "WORK", "BUSINESS2": "WORK2",
+    "BUSINESSFAX": "WORK,FAX", "MOBILE": "CELL",
+}
+RC_ADDRESSTYPEMAP = {"BUSINESS": "WORK"}
+# array_flip($typemap) keyed by the uppercased subtype (rcube_vcard::set())
+RC_TYPEMAP_FLIP = {v.upper(): k for k, v in RC_TYPEMAP.items()}
+
+
+def rc_subtype(prop, raw_type):
+    """rcube_vcard::get_assoc() subtype resolution for a stored TYPE
+    (EMAIL/TEL/ADR/URL): combine TYPE parts (drop INTERNET/PREF), consult the
+    typemap, else the first remaining part. An empty TYPE stays empty so the
+    stored-vcard bytes are preserved on re-export (Roundcube drops TYPE=other
+    and TYPE=internet on export); get_assoc's 'force other' only affects the
+    edit-form display, not the serialized round-trip."""
+    parts = [t.strip().lower() for t in (raw_type or "").split(",") if t.strip()]
+    meaningful = [t for t in parts if t not in ("internet", "pref")]
+    if not meaningful:
+        return ""
+    combined = ",".join(meaningful).upper()
+    if combined in RC_TYPEMAP:
+        return RC_TYPEMAP[combined]
+    if meaningful[0].upper() in RC_TYPEMAP:
+        return RC_TYPEMAP[meaningful[0].upper()]
+    # TEL/EMAIL with only a PREF marker fall back like get_assoc()
+    if combined in ("", "PREF", "INTERNET"):
+        return {"TEL": "main", "EMAIL": "other"}.get(prop, combined.lower())
+    return meaningful[0]
+
+
+def rc_stored_type(prop, subtype):
+    """rcube_vcard::set() save direction: form subtype -> stored TYPE.
+    phone gets the phonetypemap rewrite first; then the flipped typemap
+    applies for all non-email fields (address: addresstypemap)."""
+    tu = (subtype or "").upper()
+    if not tu:
+        return ""
+    typ = subtype
+    if prop == "EMAIL":
+        return subtype.lower()
+    if prop == "TEL" and tu in RC_PHONETYPEMAP:
+        typ = RC_PHONETYPEMAP[tu]
+    elif prop == "ADR" and tu in RC_ADDRESSTYPEMAP:
+        typ = RC_ADDRESSTYPEMAP[tu]
+    # NOTE: set()'s array_flip($typemap) lookup is keyed by $type_uc while
+    # the flip's keys are the lowercase typemap VALUES, so it never matches
+    # lowercase form subtypes (verified live: form 'homefax' stores
+    # TYPE=homefax, 'workfax' stores TYPE=workfax, 'other' stays other and
+    # is dropped by export()).
+    return typ.lower()
 
 def vcard_encode(f):
-    """Serialize extended contact fields to a minimal vCard 4.0."""
-    lines = ["BEGIN:VCARD", "VERSION:4.0"]
-    def esc(v):
-        return (v or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
-    lines.append("FN:" + esc(f.get("name")))
-    n = ";".join(esc(f.get(k)) for k in ("surname", "firstname", "middlename", "prefix", "suffix"))
-    lines.append(f"N:{n}")
-    if f.get("nickname"):
-        lines.append("NICKNAME:" + esc(f["nickname"]))
-    if f.get("organization"):
-        lines.append("ORG:" + esc(f["organization"]))
-    if f.get("department"):
-        lines.append("X-DEPARTMENT:" + esc(f["department"]))
-    if f.get("jobtitle"):
-        lines.append("TITLE:" + esc(f["jobtitle"]))
-    for typ, val in f.get("emails") or []:
-        if val:
-            lines.append(f"EMAIL;TYPE={typ}:{esc(val)}")
-    for typ, val in f.get("phones") or []:
-        if val:
-            lines.append(f"TEL;TYPE={typ}:{esc(val)}")
-    for addr in f.get("addresses") or []:
-        typ, street, locality, zipcode, region, country = (list(addr) + [""] * 6)[:6]
-        if any((street, locality, zipcode, region, country)):
-            lines.append(
-                f"ADR;TYPE={typ}:;;{esc(street)};{esc(locality)};"
-                f"{esc(region)};{esc(zipcode)};{esc(country)}")
-    if f.get("gender"):
-        lines.append("GENDER:" + esc(f["gender"]))
-    if f.get("birthday"):
-        lines.append("BIRTHDAY:" + esc(f["birthday"]))
-    if f.get("notes"):
-        lines.append("NOTE:" + esc(f["notes"]))
-    lines.append("END:VCARD")
-    return "\n".join(lines)
+    """Serialize a contact dict to the stored vCard.
+
+    Roundcube builds the stored blob in rcube_contacts::convert_save_data()
+    via rcube_vcard::export(false) — identical bytes to the download export,
+    minus CATEGORIES. Delegate to vcard_export() so stored vcards are
+    byte-identical to the reference."""
+    return vcard_export(f)
 
 
 def _vc_esc(v):
@@ -743,9 +785,12 @@ def _vc_fold(line):
 
 
 def _vc_typ(typ):
-    """v3 TYPE= parameter; Roundcube lowercases and drops empty/'other'."""
-    typ = (typ or "").lower()
-    return f";TYPE={typ}" if typ and typ != "other" else ""
+    """v3 TYPE= parameter; rcube_vcard::export() lowercases TYPE parts and
+    drops 'other' (non-standard) and 'internet' (redundant); with nothing
+    left the attribute is omitted entirely."""
+    parts = [t for t in (typ or "").lower().split(",")
+             if t and t not in ("other", "internet")]
+    return ";TYPE=" + ",".join(parts) if parts else ""
 
 
 def vcard_export(f, categories=()):
@@ -757,10 +802,14 @@ def vcard_export(f, categories=()):
     n = ";".join(_vc_esc(f.get(k)) for k in
                  ("surname", "firstname", "middlename", "prefix", "suffix"))
     lines.append("N:" + n)
-    lines.append("FN:" + _vc_esc(f.get("name")))
+    # rcube_vcard::export(): "Make sure FN is not empty (RFC2426)" — fall back
+    # to the primary email address when no display name is set
+    fn = f.get("name") or next((v for _t, v in (f.get("emails") or []) if v), "")
+    lines.append("FN:" + _vc_esc(fn))
     for typ, val in f.get("emails") or []:
         if val:
-            lines.append("EMAIL" + _vc_typ(typ) + ":" + _vc_esc(val))
+            lines.append("EMAIL" + _vc_typ(rc_stored_type("EMAIL", typ))
+                         + ":" + _vc_esc(val))
     if f.get("nickname"):
         lines.append("NICKNAME:" + _vc_esc(f["nickname"]))
     if f.get("jobtitle"):
@@ -771,20 +820,36 @@ def vcard_export(f, categories=()):
         lines.append("X-DEPARTMENT:" + _vc_esc(f["department"]))
     if f.get("gender"):
         lines.append("X-GENDER:" + _vc_esc(f["gender"]))
+    if f.get("maidenname"):
+        lines.append("X-MAIDENNAME:" + _vc_esc(f["maidenname"]))
     for typ, val in f.get("phones") or []:
         if val:
-            lines.append("TEL" + _vc_typ(typ) + ":" + _vc_esc(val))
+            lines.append("TEL" + _vc_typ(rc_stored_type("TEL", typ)) + ":" + _vc_esc(val))
     for addr in f.get("addresses") or []:
         typ, street, locality, zipcode, region, country = (list(addr) + [""] * 6)[:6]
         if any((street, locality, zipcode, region, country)):
-            lines.append("ADR" + _vc_typ(typ) + ":;;"
+            # RFC value order: ext;post;street;city;region;postcode;country
+            lines.append("ADR" + _vc_typ(rc_stored_type("ADR", typ)) + ":;;"
                          + _vc_esc(street) + ";" + _vc_esc(locality) + ";"
                          + _vc_esc(region) + ";" + _vc_esc(zipcode) + ";"
                          + _vc_esc(country))
     if f.get("birthday"):
         lines.append("BDAY;VALUE=date:" + _vc_esc(f["birthday"]))
+    if f.get("anniversary"):
+        lines.append("X-ANNIVERSARY;VALUE=date:" + _vc_esc(f["anniversary"]))
+    for typ, val in f.get("websites") or []:
+        if val:
+            lines.append("URL" + _vc_typ(rc_stored_type("URL", typ)) + ":" + _vc_esc(val))
+    for svc, val in f.get("im") or []:
+        tag = IM_SERVICE_NAMES.get((svc or "").lower())
+        if tag and val:
+            lines.append(tag + ":" + _vc_esc(val))
     if f.get("notes"):
         lines.append("NOTE:" + _vc_esc(f["notes"]))
+    for k, tag in (("assistant", "X-ASSISTANT"), ("manager", "X-MANAGER"),
+                   ("spouse", "X-SPOUSE")):
+        if f.get(k):
+            lines.append(tag + ":" + _vc_esc(f[k]))
     cats = [c for c in (categories or []) if c]
     if cats:
         lines.append("CATEGORIES:" + ";".join(_vc_esc(c) for c in cats))
@@ -814,7 +879,9 @@ def vcard_parse(text):
     f = {"name": "", "prefix": "", "firstname": "", "middlename": "",
          "surname": "", "suffix": "", "nickname": "", "organization": "",
          "department": "", "jobtitle": "", "gender": "", "birthday": "",
-         "notes": "", "emails": [], "phones": [], "addresses": []}
+         "notes": "", "emails": [], "phones": [], "addresses": [],
+         "maidenname": "", "anniversary": "", "assistant": "", "manager": "",
+         "spouse": "", "websites": [], "im": []}
     if not text or "BEGIN:VCARD" not in text:
         return f
     # unfold RFC5322-style continuation lines (CRLF + space/tab)
@@ -832,8 +899,8 @@ def vcard_parse(text):
         val = _vcard_unesc(val)
         parts = head.split(";")
         prop = parts[0].upper()
-        # no TYPE= parameter means "no subtype" (Roundcube drops TYPE=other on
-        # export); keep it distinct from an explicit type for byte stability
+        # raw TYPE= parameter; get_assoc() resolves it via the vcard typemap
+        # and forces "other" for email/phone/address/website without one
         typ = ""
         for p in parts[1:]:
             if p.upper().startswith("TYPE="):
@@ -852,16 +919,30 @@ def vcard_parse(text):
         elif prop == "TITLE":
             f["jobtitle"] = val
         elif prop == "EMAIL":
-            f["emails"].append((typ, val))
+            f["emails"].append((rc_subtype("EMAIL", typ), val))
         elif prop == "TEL":
-            f["phones"].append((typ, val))
+            f["phones"].append((rc_subtype("TEL", typ), val))
         elif prop == "ADR":
             bits = val.split(";") + [""] * 7
-            f["addresses"].append((typ, bits[2], bits[3], bits[5], bits[4], bits[6]))
+            f["addresses"].append((rc_subtype("ADR", typ), bits[2], bits[3], bits[5], bits[4], bits[6]))
         elif prop in ("GENDER", "X-GENDER"):
             f["gender"] = val
         elif prop in ("BIRTHDAY", "BDAY"):
             f["birthday"] = val
+        elif prop in ("X-MAIDENNAME", "MAIDENNAME"):
+            f["maidenname"] = val
+        elif prop in ("X-ANNIVERSARY", "ANNIVERSARY"):
+            f["anniversary"] = val
+        elif prop in ("X-ASSISTANT", "ASSISTANT"):
+            f["assistant"] = val
+        elif prop in ("X-MANAGER", "MANAGER"):
+            f["manager"] = val
+        elif prop in ("X-SPOUSE", "SPOUSE"):
+            f["spouse"] = val
+        elif prop == "URL":
+            f["websites"].append((rc_subtype("URL", typ), val))
+        elif prop in IM_SERVICE_TAGS:
+            f["im"].append((IM_SERVICE_TAGS[prop], val))
         elif prop == "NOTE":
             f["notes"] = val
     return f

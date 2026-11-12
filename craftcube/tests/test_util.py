@@ -80,12 +80,55 @@ class TestSanitizer:
 
 
 class TestVCard:
-    def test_encode_escapes(self):
+    def test_encode_v3_escapes(self):
+        # storage format is rcube_vcard::export(false): vCard 3.0, CRLF,
+        # semicolons escaped, commas NOT escaped (Roundcube 1.7.5 oracle)
         f = {"name": "Jane, Doe", "firstname": "Jane", "surname": "Doe",
              "emails": [("work", "j@d.org")], "phones": [], "addresses": []}
         v = util.vcard_encode(f)
-        assert "FN:Jane\\, Doe" in v
+        assert v.startswith("BEGIN:VCARD\r\nVERSION:3.0\r\n")
+        assert "FN:Jane, Doe\r\n" in v
         assert "EMAIL;TYPE=work:j@d.org" in v
+
+    def test_encode_fn_falls_back_to_email(self):
+        # rcube_vcard::export(): "Make sure FN is not empty" -> primary email
+        f = {"name": "", "emails": [("work", "only@x.org")]}
+        v = util.vcard_encode(f)
+        assert "FN:only@x.org\r\n" in v
+        assert "N:;;;;\r\n" in v
+
+    def test_encode_matches_reference_stored_vcard(self):
+        # byte-exact against the staging reference DB (contacts.contact_id=1)
+        f = {"name": "Ada Lovelace King Right Hon", "prefix": "Right",
+             "firstname": "Ada", "middlename": "King", "surname": "Lovelace",
+             "suffix": "Hon", "nickname": "countess",
+             "organization": "Analytical Engine Ltd", "department": "Engines",
+             "jobtitle": "Chief Programmer", "gender": "female",
+             "birthday": "1815-12-10", "notes": "first programmer; enbows arrows",
+             "emails": [("work", "ada@example.org"),
+                        ("home", "ada.lovelace@analytical.example")],
+             "phones": [("home", "+44 20 7946 0000"),
+                        ("cell", "+44 7700 900000")],
+             "addresses": [("work", "12 Byron Row", "London", "SW1", "",
+                            "United Kingdom")]}
+        oracle = (
+            "BEGIN:VCARD\r\nVERSION:3.0\r\n"
+            "N:Lovelace;Ada;King;Right;Hon\r\n"
+            "FN:Ada Lovelace King Right Hon\r\n"
+            "EMAIL;TYPE=work:ada@example.org\r\n"
+            "EMAIL;TYPE=home:ada.lovelace@analytical.example\r\n"
+            "NICKNAME:countess\r\n"
+            "TITLE:Chief Programmer\r\n"
+            "ORG:Analytical Engine Ltd\r\n"
+            "X-DEPARTMENT:Engines\r\n"
+            "X-GENDER:female\r\n"
+            "TEL;TYPE=home:+44 20 7946 0000\r\n"
+            "TEL;TYPE=cell:+44 7700 900000\r\n"
+            "ADR;TYPE=work:;;12 Byron Row;London;;SW1;United Kingdom\r\n"
+            "BDAY;VALUE=date:1815-12-10\r\n"
+            "NOTE:first programmer\\; enbows arrows\r\n"
+            "END:VCARD\r\n")
+        assert util.vcard_encode(f) == oracle
 
     def test_encode_address_layout(self):
         f = {"name": "A", "addresses": [("home", "S1", "Berlin", "10115", "BE", "DE")],

@@ -170,3 +170,19 @@ def test_contact_words_tokens():
     w = util.contact_words(ext)
     assert "fold" in w and "test" in w
     assert "123" in w and "townsville" in w and "sentence0" in w
+
+
+
+def test_live_full_record_byte_parity():
+    # Live Roundcube 1.7.5 save of a full-featured contact (browser UI,
+    # every coltype incl. websites/IM/dates); stored bytes from the RC DB.
+    ref = 'BEGIN:VCARD\r\nVERSION:3.0\r\nN:Hopper;Grace;Murray;Right;RADM\r\nFN:Grace Hopper Murray Right RADM\r\nEMAIL;TYPE=work:grace@navy.example\r\nEMAIL;TYPE=home:gmhopper@cobol.example\r\nNICKNAME:amazing grace\r\nTITLE:Rear Admiral\r\nORG:Navy\r\nX-DEPARTMENT:COBOL\r\nX-GENDER:female\r\nX-MAIDENNAME:Bachman\r\nTEL;TYPE=cell:+1 555 0100\r\nTEL;TYPE=homefax:+1 555 0111\r\nADR;TYPE=work:;;1 Navy Yard;Arlington;VA;22202;USA\r\nBDAY;VALUE=date:1906-12-09\r\nX-ANNIVERSARY;VALUE=date:1930-08-15\r\nURL;TYPE=homepage:https://grace.example.org\r\nURL:https://alt.example.net\r\nX-JABBER:gmhopper\r\nX-SKYPE-USERNAME:hopper.g\r\nNOTE:compiler pioneer\\; nanoseconds\r\nX-ASSISTANT:Helper\r\nX-MANAGER:Boss\r\nX-SPOUSE:Amaral\r\nEND:VCARD\r\n'
+    ext = util.vcard_parse(ref)
+    assert util.vcard_export(ext) == ref
+    assert ext["name"] == "Grace Hopper Murray Right RADM"
+    assert ext["phones"] == [("mobile", "+1 555 0100"), ("homefax", "+1 555 0111")]
+    # the TYPE-less URL keeps an empty subtype in the byte model (RC strips
+    # TYPE=other at save; get_assoc only forces "other" for the edit form)
+    assert ext["websites"] == [("homepage", "https://grace.example.org"), ("", "https://alt.example.net")]
+    assert ext["im"] == [("jabber", "gmhopper"), ("skype", "hopper.g")]
+    assert ext["addresses"][0][:3] == ("work", "1 Navy Yard", "Arlington")
