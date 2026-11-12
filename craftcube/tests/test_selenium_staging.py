@@ -351,3 +351,44 @@ def test_plain_spellcheck_googie_layer(driver):
     _wait_until(driver, lambda d: d.execute_script(
         "return document.getElementById('composebody').value"
         ".split(' ')[0] === 'The';"))
+
+
+def test_compose_restore_dialog_fills_recipients(driver):
+    """A cross-session compose snapshot must restore recipients into the
+    posted form value, not only as cosmetic chips (reference
+    app.js compose_restore_dialog + Restore/Delete/Ignore semantics)."""
+    _open_compose(driver)
+    driver.execute_script("""
+      var env = window.cc_compose_env;
+      var data = {session: 'OTHERSESSION', changed: new Date().getTime(),
+                  _from: '1', _to: 'someone@example.org, Bob <b@x.org>',
+                  _cc: 'cc@y.org', _subject: 'Parity restore probe',
+                  _body: 'restore probe body', _is_html: '0'};
+      localStorage.setItem(env.storage_prefix + 'compose.parprobe',
+                           JSON.stringify(data));
+      localStorage.setItem(env.storage_prefix + 'compose.index',
+                           JSON.stringify(['parprobe']));""")
+    driver.get(CC + "/compose")
+    _wait_until(driver, lambda d: d.find_elements(
+        By.CSS_SELECTOR, ".ui-dialog .ui-dialog-titlebar"))
+    title = driver.find_element(By.CSS_SELECTOR, ".ui-dialog-title").text
+    assert title == "Restore message?", title
+    btns = driver.find_elements(
+        By.CSS_SELECTOR, ".ui-dialog .ui-dialog-buttonpane button, "
+        ".ui-dialog .ui-dialog-buttonpane a")
+    assert [b.text for b in btns] == ["Restore", "Delete", "Ignore"], \
+        [b.text for b in btns]
+    [b for b in btns if b.text == "Restore"][0].click()
+    _wait_until(driver, lambda d: d.execute_script(
+        "return document.getElementById('compose-subject').value"
+        " === 'Parity restore probe';"))
+    posted_to = driver.execute_script(
+        "return document.querySelector('textarea[name=_to]').value;")
+    assert posted_to == "someone@example.org,Bob <b@x.org>,", posted_to
+    posted_cc = driver.execute_script(
+        "return document.querySelector('textarea[name=_cc]').value;")
+    assert posted_cc == "cc@y.org,", posted_cc
+    body = driver.execute_script(
+        "return document.getElementById('composebody').value;")
+    assert body == "restore probe body", body
+    driver.execute_script("localStorage.clear();")

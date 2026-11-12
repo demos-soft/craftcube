@@ -1403,7 +1403,9 @@
           li.remove(); rebuild(); inp.focus();
         });
         ul.insertBefore(li, ul.querySelector('li.input'));
-        if (!seed) rebuild();
+        // always sync the posted value: the compose-restore dialog and the
+        // extwin snapshot seed chips with seed=true and never rebuild after
+        rebuild();
         inp.value = '';
       }
       function chip_addr(li) {
