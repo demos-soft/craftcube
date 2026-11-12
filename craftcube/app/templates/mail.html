@@ -59,7 +59,7 @@
           <li role="menuitem"><a href="#list-options" class="options active" id="listmenulink" onclick="return cc_listoptions_dialog(this, event)"
               title="{{ 'Options'|lc }}" tabindex="0"><span class="inner">{{ 'Options'|lc }}</span></a></li>
         </ul>
-        <a href="{{ url_for('views.mail', _mbox=folder, _sort=sort, _sort_order=order) }}"
+        <a href="{{ mail_url() }}"
            class="button icon toolbar-button refresh" title="{{ 'Check for new messages'|lc }}"
            onclick="return cc_refresh_list(this, event)"><span class="inner">{{ 'Refresh'|lc }}</span></a>
         <a class="button icon toolbar-menu-button" href="#list-menu" data-popup="list-menu"><span class="inner">{{ 'Menu'|lc }}</span></a>
@@ -181,14 +181,14 @@
                 <th class="selection"><span class="inner">{{ 'Select'|lc }}</span></th>
                 <th class="threads" id="rcmthreads"><span class="threads"></span></th>
                 <th class="subject{{ ' sorted ' ~ order if sort == 'subject' }}"><a class="sortcol" rel="subject" title="{{ 'Sort by'|lc }}"
-                    href="{{ url_for('views.mail', _mbox=folder, _sort='subject', _sort_order=('asc' if sort=='subject' and order=='desc' else 'desc'), _q=search) }}">{{ 'Subject'|lc }}</a></th>
+                    href="{{ mail_url(_sort='subject', _sort_order=('asc' if sort=='subject' and order=='desc' else 'desc')) }}">{{ 'Subject'|lc }}</a></th>
                 <th class="status"><span class="status">{{ 'Read status'|lc }}</span></th>
                 <th class="fromto{{ ' sorted ' ~ order if sort in ('fromto','from','to') }}"><a class="sortcol" rel="fromto" title="{{ 'Sort by'|lc }}"
-                    href="{{ url_for('views.mail', _mbox=folder, _sort='fromto', _sort_order=('asc' if sort in ('fromto','from','to') and order=='desc' else 'desc'), _q=search) }}">{{ 'From'|lc }}</a></th>
+                    href="{{ mail_url(_sort='fromto', _sort_order=('asc' if sort in ('fromto','from','to') and order=='desc' else 'desc')) }}">{{ 'From'|lc }}</a></th>
                 <th class="date{{ ' sorted ' ~ order if sort == 'date' }}"><a class="sortcol" rel="date" title="{{ 'Sort by'|lc }}"
-                    href="{{ url_for('views.mail', _mbox=folder, _sort='date', _sort_order=('asc' if sort=='date' and order=='desc' else 'desc'), _q=search) }}">{{ 'Date'|lc }}</a></th>
+                    href="{{ mail_url(_sort='date', _sort_order=('asc' if sort=='date' and order=='desc' else 'desc')) }}">{{ 'Date'|lc }}</a></th>
                 <th class="size{{ ' sorted ' ~ order if sort == 'size' }}"><a class="sortcol" rel="size" title="{{ 'Sort by'|lc }}"
-                    href="{{ url_for('views.mail', _mbox=folder, _sort='size', _sort_order=('asc' if sort=='size' and order=='desc' else 'asc'), _q=search) }}">{{ 'Size'|lc }}</a></th>
+                    href="{{ mail_url(_sort='size', _sort_order=('desc' if sort=='size' and order=='asc' else 'asc')) }}">{{ 'Size'|lc }}</a></th>
                 <th class="flag"><span class="flagged">{{ 'Flagged'|lc }}</span></th>
                 <th class="attachment"><span class="attachment">{{ 'Attachment'|lc }}</span></th>
               </tr>
@@ -208,7 +208,7 @@
                   <span class="subject">
                     <span class="msgicon status{{ ' unread' if not m.seen }}{{ ' replied' if m.replied }}{{ ' forwarded' if m.forwarded }}"
                           title="{{ 'Read' if m.seen else 'Unread' }}"></span>
-                    <a href="{{ url_for('views.message_view', _mbox=m.folder or folder, _uid=m.uid) }}">
+                    <a href="{{ message_url(m.uid, m.folder) }}">
                       <span>{{ m.subject or '(no subject)' }}</span></a>
                   </span>
                 </td>
@@ -231,17 +231,17 @@
 
       <div class="pagenav menu footer small"
            role="toolbar" aria-label="{{ 'List navigation'|lc }}">
-        <a href="{{ url_for('views.mail', _mbox=folder, _page=1, _sort=sort, _sort_order=order, _q=search) }}"
+        <a href="{{ mail_url(_page=1) }}"
            class="firstpage{{ ' disabled' if listing.page <= 1 }}" title="{{ 'Show first page'|lc }}"><span class="inner">{{ 'First'|lc }}</span></a>
-        <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.page-1, _sort=sort, _sort_order=order, _q=search) }}"
+        <a href="{{ mail_url(_page=listing.page-1) }}"
            class="prevpage{{ ' disabled' if listing.page <= 1 }}" title="{{ 'Show previous page'|lc }}"><span class="inner">{{ 'Previous'|lc }}</span></a>
         <span class="pagenav-text" aria-live="polite" aria-relevant="text">
           {%- if listing.total %}Messages {{ listing.first }} to {{ listing.last }} of {{ listing.total }}{% else %}&nbsp;{% endif -%}
         </span>
         <input class="form-control rcpagejumper" type="text" size="3"{{ '' if listing.pages > 1 else ' disabled' }} title="{{ 'Current page'|lc }}" value="{{ listing.page }}">
-        <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.page+1, _sort=sort, _sort_order=order, _q=search) }}"
+        <a href="{{ mail_url(_page=listing.page+1) }}"
            class="nextpage{{ ' disabled' if listing.page >= listing.pages }}" title="{{ 'Show next page'|lc }}"><span class="inner">{{ 'Next'|lc }}</span></a>
-        <a href="{{ url_for('views.mail', _mbox=folder, _page=listing.pages, _sort=sort, _sort_order=order, _q=search) }}"
+        <a href="{{ mail_url(_page=listing.pages) }}"
            class="lastpage{{ ' disabled' if listing.page >= listing.pages }}" title="{{ 'Show last page'|lc }}"><span class="inner">{{ 'Last'|lc }}</span></a>
       </div>
     </div>

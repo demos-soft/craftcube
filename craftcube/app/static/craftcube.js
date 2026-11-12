@@ -1040,7 +1040,28 @@
         else { selAnchor = tr; focusRow(tr); updateToolbar(); return; }
       }
       selectRow(tr, e.ctrlKey || e.metaKey, e.shiftKey);
+      previewRow(tr, e.ctrlKey || e.metaKey || e.shiftKey);
     });
+    // reference widescreen behavior: a plain click (and keyboard focus
+    // moves) previews the message in the third column through the framed
+    // view (show_message(..., 'preview')); dblclick/Enter still opens the
+    // full reader page. Multi-selection does not preview (rcmail shows a
+    // preview only for a single-message selection).
+    function previewRow(tr, multi) {
+      if (multi || window.innerWidth <= 768) return;
+      var frame = document.getElementById('messagecontframe');
+      if (!frame || !tr) return;
+      var uid = tr.getAttribute('data-uid');
+      if (!uid) return;
+      var url = '/message?_mbox=' +
+        encodeURIComponent(tr.getAttribute('data-box') || mbox) +
+        '&_uid=' + uid + '&_framed=1';
+      // -1/deferred read marking stays with the preview frame (views
+      // renders data-read-time; server passes _noseen so the raw \Seen
+      // flag is not touched before the timer fires)
+      if ((frame.getAttribute('data-read-time') || '0') !== '0') url += '&_noseen=1';
+      frame.src = url;
+    }
     // list.js dblclick: open the double-clicked message (full page view,
     // same as the reference top-level navigation to _action=view)
     list.addEventListener('dblclick', function (e) {
@@ -1049,6 +1070,73 @@
       var a = rowLink(tr);
       if (a) window.location.href = a.getAttribute('href');
     });
+    // ------------------------------------------------------------ drag&drop
+    // reference drag_start/show_dragmenu/drag_menu_action: dragging selected
+    // rows onto a sidebar folder opens the Move/Copy menu at the drop point
+    var dragUids = null;
+    var dragMenu = document.getElementById('dragmessage-menu');
+    var dropHl = null;
+    function clearDropHl() { if (dropHl) dropHl.classList.remove('droptarget'); dropHl = null; }
+    function hideDragMenu() {
+      if (!dragMenu) return;
+      dragMenu.classList.remove('open');
+      dragMenu.style.display = ''; dragMenu.style.top = ''; dragMenu.style.left = '';
+    }
+    rows().forEach(function (r) { r.draggable = true; });
+    list.addEventListener('dragstart', function (e) {
+      var tr = e.target.closest('tr.message');
+      if (!tr) return;
+      if (!tr.classList.contains('selected')) selectRow(tr, false, false);
+      dragUids = toolbarContext();
+      e.dataTransfer.setData('text/plain', 'messages');
+      e.dataTransfer.effectAllowed = 'copyMove';
+    });
+    list.addEventListener('dragend', clearDropHl);
+    document.querySelectorAll('#mailboxlist li[data-name]').forEach(function (li) {
+      var name = li.getAttribute('data-name');
+      li.addEventListener('dragover', function (e) {
+        if (!dragUids || name === mbox) return;
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        if (dropHl !== li) { clearDropHl(); li.classList.add('droptarget'); dropHl = li; }
+      });
+      li.addEventListener('dragleave', function () {
+        if (dropHl === li) li.classList.remove('droptarget');
+      });
+      li.addEventListener('drop', function (e) {
+        e.preventDefault();
+        clearDropHl();
+        if (!dragUids || !dragMenu || name === mbox) return;
+        // app.js drag_end: SHIFT+drop shows the Move/Copy menu; a plain drop
+        // executes move immediately (drag_menu returns true only for SHIFT).
+        if (e.shiftKey) {
+          dragMenu._dest = name;
+          dragMenu.classList.add('open');
+          dragMenu.style.position = 'fixed';
+          dragMenu.style.display = 'block';
+          dragMenu.style.top = Math.max(4, e.clientY - 12) + 'px';
+          dragMenu.style.left = Math.max(4, e.clientX - 12) + 'px';
+        } else {
+          act('move', dragUids, { _dest: name });
+        }
+        dragUids = null;
+      });
+    });
+    if (dragMenu) {
+      dragMenu.querySelectorAll('a[data-dragact]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          var dest = dragMenu._dest, uids = dragUids;
+          hideDragMenu();
+          if (!dest || !uids || !uids.length) return;
+          act(a.getAttribute('data-dragact'), uids, { _dest: dest });
+        });
+      });
+      document.addEventListener('mousedown', function (e) {
+        if (dragMenu.classList.contains('open') &&
+            !e.target.closest('#dragmessage-menu')) hideDragMenu();
+      });
+    }
     // keyboard row navigation (rcube_list_widget::keyup_select, arrows)
     document.addEventListener('keydown', function (e) {
       var cur = list.querySelector('tr.message.focused');
@@ -1063,6 +1151,7 @@
       e.preventDefault();
       if (n >= 0 && all[n] !== cur) {
         selectRow(all[n], e.ctrlKey || e.metaKey, e.shiftKey);
+        previewRow(all[n], e.ctrlKey || e.metaKey || e.shiftKey);
         all[n].scrollIntoView(false);
       }
     });
@@ -1092,14 +1181,36 @@
           }
         } else if (cmd === 'archive') {
           act('archive', toolbarContext(), {});
-        } else if (cmd === 'move' || cmd === 'copy') {
-          act(cmd, toolbarContext(), { _dest: a.getAttribute('data-dest') });
         } else {
           act(cmd, toolbarContext(), {});
         }
         window.cc_close_popups();
       });
     });
+
+    // Move to... / Copy to... open the shared reference folder-selector.
+    // The clicked toolbar item decides the action; the selector itself has
+    // no action-specific classes or heading (app.js entity_selector).
+    var folderSelector = document.getElementById('folder-selector');
+    document.querySelectorAll('[data-folder-action]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        if (folderSelector) folderSelector._action = a.getAttribute('data-folder-action');
+      });
+    });
+    if (folderSelector) {
+      folderSelector.querySelectorAll('a[data-dest]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          if (a.classList.contains('virtual')) return;
+          var dest = a.getAttribute('data-dest');
+          if (!dest || dest === mbox) return;  // move_messages: current folder no-op
+          var uids = toolbarContext();
+          if (!uids.length) return;
+          act(folderSelector._action || 'move', uids, { _dest: dest });
+          window.cc_close_popups();
+        });
+      });
+    }
 
     function act(command, uids, extra) {
       if (!actForm) return;
@@ -1144,6 +1255,9 @@
       url.searchParams.set('_sort_order', ord);
       url.searchParams.set('_mode', mode);
       url.searchParams.delete('_page');
+      // reference set_list_options stores the state (env + folder view
+      // mode); ask the server to persist it so paging/back/folders keep it
+      url.searchParams.set('_save_opts', '1');
       location.href = url.toString();
     };
 
@@ -1264,6 +1378,8 @@
       // only when a preview is actually showing (read_when_previewed);
       // a blank frame means the row is merely selected, never mark read
       if (!frame || !frame.src || frame.src === 'about:blank') return;
+      // the watermark empty state means 'nothing previewed' (env:blankpage)
+      if (frame.src.indexOf('watermark') >= 0) { clearTimeout(scheduleRead._t); return; }
       var rt = parseInt(frame.getAttribute('data-read-time') || '0', 10);
       var sel = document.querySelector('#messagelist tr.selected');
       if (rt <= 0 || !sel || !sel.classList.contains('unread')) return;

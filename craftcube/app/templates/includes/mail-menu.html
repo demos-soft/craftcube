@@ -89,10 +89,10 @@
     <li role="menuitem"><a class="source{{ dis }}" id="tb-source"
         href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _source=1) if message_view else '#' }}"
         target="_blank"><span>{{ 'Show source'|lc }}</span></a></li>
-    <li role="menuitem"><a class="move{{ dis }}" id="tb-move" href="#move"
-        data-popup="moveto-menu"><span>{{ 'Move to...'|lc }}</span></a></li>
-    <li role="menuitem"><a class="copy{{ dis }}" id="tb-copy" href="#copy"
-        data-popup="copyto-menu"><span>{{ 'Copy to...'|lc }}</span></a></li>
+    <li role="menuitem"><a class="move active" id="tb-move" href="#move"
+        data-popup="folder-selector" data-folder-action="move"><span>{{ 'Move to...'|lc }}</span></a></li>
+    <li role="menuitem"><a class="copy active" id="tb-copy" href="#copy"
+        data-popup="folder-selector" data-folder-action="copy"><span>{{ 'Copy to...'|lc }}</span></a></li>
     <li role="menuitem"><a class="extwin{{ dis }}" id="tb-extwin"
         href="{{ url_for('views.message_view', _mbox=folder, _uid=uid, _extwin=1) if message_view else '#' }}"
         target="_blank"><span>{{ 'Open in new window'|lc }}</span></a></li>
@@ -114,23 +114,32 @@
 {% endif %}
 
 {% set move_target_box = folder %}
-<div id="moveto-menu" class="popupmenu">
-  <h3 class="voice">Move to folder</h3>
-  <ul class="menu listing" role="menu">
-    {% for f in folders %}{% if f.name != move_target_box %}
-    <li role="menuitem"><a class="move folder-selector-link" href="#" data-act="move"
-        data-dest="{{ f.name }}">{{ f.name if '/' not in f.name else f.name.split('/')|last }}</a></li>
-    {% endif %}{% endfor %}
+{# reference folder_selector (app.js:9098-9215): a flat list over the mail
+   tree, 16px indent per hierarchy level, current folder included and active
+   (move/copy then no-ops on it); virtual nodes are aria-disabled #}
+<div id="folder-selector" class="popupmenu" aria-hidden="true">
+  <ul class="toolbarmenu menu listing folderlist" role="menu">
+    {% for f in folders %}
+    {% set depth = (f.name.split('/')|length - 1) %}
+    <li{% if f.special %} class="{{ f.special }}"{% elif f.name.upper() == 'INBOX' %} class="inbox"{% endif %}>
+      <a href="#" class="icon {{ 'virtual' if f.inferior else 'active' }}"
+         {% if f.inferior %}aria-disabled="true" tabindex="-1"{% endif %}
+         data-dest="{{ f.name }}" style="padding-left: {{ depth * 16 }}px"><span>{{ f.display or f.name }}</span></a>
+    </li>
+    {% endfor %}
   </ul>
 </div>
 
-<div id="copyto-menu" class="popupmenu">
-  <h3 class="voice">Copy to folder</h3>
-  <ul class="menu listing" role="menu">
-    {% for f in folders %}{% if f.name != move_target_box %}
-    <li role="menuitem"><a class="copy folder-selector-link" href="#" data-act="copy"
-        data-dest="{{ f.name }}">{{ f.name if '/' not in f.name else f.name.split('/')|last }}</a></li>
-    {% endif %}{% endfor %}
+{# elastic #dragmessage-menu: Move/Copy choice shown at the drop point only
+   when SHIFT is held (app.js drag_menu: modkey == SHIFT_KEY); a plain drop
+   moves immediately; the menu is also shown at the cursor #}
+<div id="dragmessage-menu" class="popupmenu">
+  <h3 id="aria-label-dragmessage-menu" class="voice">{{ 'Drag-n-Drop action menu'|lc }}</h3>
+  <ul class="menu listing" role="menu" aria-labelledby="aria-label-dragmessage-menu">
+    <li role="menuitem"><a class="active" id="rcmbtn142" role="button" tabindex="0"
+        aria-disabled="false" href="#" data-dragact="move">{{ 'Move'|lc }}</a></li>
+    <li role="menuitem"><a class="active" id="rcmbtn143" role="button" tabindex="0"
+        aria-disabled="false" href="#" data-dragact="copy">{{ 'Copy'|lc }}</a></li>
   </ul>
 </div>
 

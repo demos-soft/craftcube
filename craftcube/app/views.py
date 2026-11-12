@@ -1,4 +1,5 @@
 """All HTTP views: login, mail, compose, addressbook, settings."""
+
 import base64
 import contextlib
 import email
@@ -53,6 +54,7 @@ def ph(name, args):
     """Trigger a plugin hook (rcube_plugin_api::exec_hook)."""
     return get_api().exec_hook(name, args)
 
+
 PREF_SECTIONS = prefs_sections.sections
 
 bp = bp_current = Blueprint("views", __name__)
@@ -60,12 +62,14 @@ bp = bp_current = Blueprint("views", __name__)
 
 # ---------------------------------------------------------------- helpers
 
+
 def login_required(f):
     @functools.wraps(f)
     def wrapper(*a, **kw):
         if not session.get("user_id"):
             return redirect(url_for("views.login", _next=request.path))
         return f(*a, **kw)
+
     return wrapper
 
 
@@ -108,9 +112,7 @@ def _no_cache(resp):
     stamp = datetime.now(UTC).strftime("%a, %d %b %Y %H:%M:%S GMT")
     resp.headers.setdefault("Expires", stamp)
     resp.headers.setdefault("Last-Modified", stamp)
-    resp.headers.setdefault(
-        "Cache-Control",
-        "private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0")
+    resp.headers.setdefault("Cache-Control", "private, no-cache, no-store, must-revalidate, post-check=0, pre-check=0")
     resp.headers.setdefault("Pragma", "no-cache")
     return resp
 
@@ -121,8 +123,7 @@ def _load_user():
         g.user = get_store().get_user(session["username"])
         # Roundcube semantics: the effective config is always the full set of
         # defaults overlaid with the user's saved preferences.
-        g.prefs = {**prefs_sections.DEFAULTS,
-                   **get_store().get_user_prefs(session["user_id"])}
+        g.prefs = {**prefs_sections.DEFAULTS, **get_store().get_user_prefs(session["user_id"])}
         # Roundcube keeps browser-detected timezone in the *session*
         # (rcmail::get_offset/remote_autodetect); the 'timezone' preference
         # stays 'auto' until the user picks a zone explicitly.
@@ -133,7 +134,8 @@ def _load_user():
     else:
         # anonymous: rcube falls back to the browser's Accept-Language
         g.lang = i18n.language_prop(
-            request.accept_languages.best_match(sorted(i18n.available_languages()), default="en_US"))
+            request.accept_languages.best_match(sorted(i18n.available_languages()), default="en_US")
+        )
 
 
 def folder_label(name, prefs=None):
@@ -146,8 +148,7 @@ def folder_label(name, prefs=None):
     key = base.lower()
     # rcmail_action::localize_foldername(): only folders whose class has a
     # catalogue label get translated; others keep their display name
-    if key in ("inbox", "drafts", "sent", "trash", "junk", "archive") \
-            and key in i18n.catalogue(g.get("lang", "en_US")):
+    if key in ("inbox", "drafts", "sent", "trash", "junk", "archive") and key in i18n.catalogue(g.get("lang", "en_US")):
         return i18n.gettext(key, g.get("lang", "en_US"))
     return base[:1].upper() + base[1:]
 
@@ -161,7 +162,26 @@ def folders_for_menu():
         f["display"] = folder_label(f["name"], prefs)
         out.append(f)
     # rcmail::listfolders(): 'folders_list' fires with the folder tree
-    return ph("folders_list", {"folders": out})["folders"]
+    out = ph("folders_list", {"folders": out})["folders"]
+    # render_folder_tree_html fills env.mailboxes_list depth-first; the
+    # folder-selector (move/copy) uses that order, not the flat special-order
+    # list (INBOX, its children, then siblings)
+    return flatten_tree(out)
+
+
+def flatten_tree(entries):
+    """Depth-first flattening of the nested folder tree (reference
+    env.mailboxes_list order used by folder_selector)."""
+    roots = folder_tree(entries)
+    flat = []
+
+    def walk(nodes):
+        for f in nodes:
+            flat.append(f)
+            walk(f["sub"])
+
+    walk(roots)
+    return flat
 
 
 def folder_tree(entries):
@@ -190,6 +210,7 @@ def _framed_arg():
     """Preserve the _framed=1 flow marker through redirects (reference
     keeps loading framed pages inside their parent frame)."""
     from flask import request as _rq
+
     return "1" if (_rq.args.get("_framed") == "1" or _rq.form.get("_framed") == "1") else None
 
 
@@ -243,6 +264,7 @@ def identity_from_form(form, existing=None):
             if k in form:
                 return form.get(k)
         return default
+
     std = g("_standard", "standard")
     html_sig = g("_html_signature", "html_signature")
     return {
@@ -256,12 +278,12 @@ def identity_from_form(form, existing=None):
         "standard": 1 if std and std != "0" else 0,
         # keep the record id so re-rendered forms (noemailwarning etc.)
         # still carry the hidden _iid
-        "identity_id": g("_iid") or
-        (dict(existing).get("identity_id", "") if existing is not None else ""),
+        "identity_id": g("_iid") or (dict(existing).get("identity_id", "") if existing is not None else ""),
     }
 
 
 # ---------------------------------------------------------------- login
+
 
 @bp.route("/login", methods=["GET", "POST"])
 def login():
@@ -309,16 +331,30 @@ def login():
             if not store.identities(uid):
                 # Roundcube seeds the default identity with an empty display
                 # name (rcmail::startup); the list renders it as "<email>".
-                store.identity_save(uid, {
-                    "name": "", "organization": "", "email": username,
-                    "reply_to": "", "bcc": "", "signature": "", "html_signature": 0, "standard": 1,
-                })
+                store.identity_save(
+                    uid,
+                    {
+                        "name": "",
+                        "organization": "",
+                        "email": username,
+                        "reply_to": "",
+                        "bcc": "",
+                        "signature": "",
+                        "html_signature": 0,
+                        "standard": 1,
+                    },
+                )
             ph("login_after", {"user_id": uid})
             return redirect(request.args.get("_next") or url_for("views.mail"))
         error = i18n.gettext("loginfailed", g.lang, domain="messages")
-    return render_template("login.html", task="login", error=error,
-                           folders=[], product_name=current_app.config["PRODUCT_NAME"],
-                           loginform_content=ph("loginform_content", {"content": ""})["content"])
+    return render_template(
+        "login.html",
+        task="login",
+        error=error,
+        folders=[],
+        product_name=current_app.config["PRODUCT_NAME"],
+        loginform_content=ph("loginform_content", {"content": ""})["content"],
+    )
 
 
 @bp.route("/logout")
@@ -335,6 +371,7 @@ def logout():
 
 # ---------------------------------------------------------------- mail
 
+
 @bp.route("/")
 @login_required
 def index():
@@ -347,26 +384,46 @@ def mail():
     box = imap_box()
     folder = request.args.get("_mbox") or "INBOX"
     page = int(request.args.get("_page", 1) or 1)
+    if "_save_opts" in request.args:
+        # list-options dialog Save (reference set_list_options): the choice
+        # becomes the list state (rcmail env + per-folder view mode), not a
+        # one-shot URL. Craft is SSR: persist sort/order as user prefs and
+        # the mode per folder, then continue on the clean URL.
+        store = get_store()
+        _ord = (request.args.get("_sort_order") or "desc").lower()
+        store.set_user_pref(session["user_id"], "message_sort_col", request.args.get("_sort") or "")
+        store.set_user_pref(session["user_id"], "message_sort_order", _ord if _ord in ("asc", "desc") else "desc")
+        if request.args.get("_mode") in ("list", "threads"):
+            _p = dict(store.get_user_prefs(session["user_id"]))
+            _fvm = dict(_p.get("folder_viewmodes") or {})
+            _fvm[folder] = request.args["_mode"]
+            store.set_user_pref(session["user_id"], "folder_viewmodes", _fvm)
+        _qs = {k: v for k, v in request.args.to_dict(flat=False).items() if k != "_save_opts"}
+        return redirect(url_for("views.mail", **_qs))
     # config/defaults.inc.php: message_sort_col = '' (no explicit column) →
     # Roundcube sorts by arrival (IMAPSORT UID, desc). Not sent-date.
-    sort = request.args.get("_sort") or ""
+    # Saved list-options prefs act as the default; explicit URL still wins.
+    _up = getattr(box, "prefs", None) or {}
+    sort = request.args.get("_sort")
+    if sort is None:
+        sort = _up.get("message_sort_col") or ""
+    order = request.args.get("_sort_order") or _up.get("message_sort_order") or "desc"
+    order = order.lower() if order.lower() in ("asc", "desc") else "desc"
     # elastic "smart" From/To column: Sent/Drafts (and subfolders) sort by To
     # (rcmail_action_mail_index::message_list_smart_column_name)
     if sort == "fromto":
         _fp = getattr(box, "prefs", None) or {}
         _pfx = tuple(p for p in (_fp.get("sent_mbox"), _fp.get("drafts_mbox")) if p)
-        sort = ("to" if _pfx and folder.startswith(_pfx) and folder.upper() != "INBOX"
-                else "from")
-    order = request.args.get("_sort_order") or "desc"
+        sort = "to" if _pfx and folder.startswith(_pfx) and folder.upper() != "INBOX" else "from"
     search = request.args.get("_q") or ""
     # search modifiers: reference UI sends _headers (comma list); Craft's SSR
     # form posts _sm checkboxes. Master checkboxes expand like elastic ui.js
     # set_searchmod (sender -> from/replyto/followupto, recipient ->
     # to/cc/bcc, text selects only itself).
     mods = []
-    for m in (request.args.getlist("_sm")
-              + request.args.getlist("_sm[]")
-              + (request.args.get("_headers") or "").split(",")):
+    for m in (
+        request.args.getlist("_sm") + request.args.getlist("_sm[]") + (request.args.get("_headers") or "").split(",")
+    ):
         mods += [x for x in m.split(",") if x]
     if "sender" in mods:
         mods = [m for m in mods if m != "sender"] + ["from", "replyto", "followupto"]
@@ -376,11 +433,11 @@ def mail():
         mods = ["text"]
     mods = list(dict.fromkeys(mods))
     mods_given = bool(mods)
-    sfilter = (request.args.get("_filter") or request.args.get("_sf") or "ALL")
-    sinterval = (request.args.get("_interval") or request.args.get("_si") or "")
+    sfilter = request.args.get("_filter") or request.args.get("_sf") or "ALL"
+    sinterval = request.args.get("_interval") or request.args.get("_si") or ""
     if sinterval == "all":  # legacy alias
         sinterval = ""
-    sscope = (request.args.get("_scope") or request.args.get("_ss") or "base")
+    sscope = request.args.get("_scope") or request.args.get("_ss") or "base"
     # rcmail_action_mail_index::search_mods(): '*' default subject+from,
     # Sent/Drafts folders default to subject+to; user prefs persist per-folder
     if not mods:
@@ -390,15 +447,13 @@ def mail():
         for key in ("sent_mbox", "drafts_mbox"):
             if prefs_all.get(key):
                 special[prefs_all[key]] = ["subject", "to"]
-        eff = stored.get(folder) or stored.get("*") \
-            or special.get(folder) or ["subject", "from"]
+        eff = stored.get(folder) or stored.get("*") or special.get(folder) or ["subject", "from"]
         if isinstance(eff, dict):
             eff = list(eff.keys())
         mods = list(eff)
-    if (search and mods_given and sscope != "all" and folder):
+    if search and mods_given and sscope != "all" and folder:
         # search.php::update_search_mods() — persist for this folder only
-        supported = ["subject", "from", "to", "cc", "bcc", "replyto",
-                     "followupto", "body", "text"]
+        supported = ["subject", "from", "to", "cc", "bcc", "replyto", "followupto", "body", "text"]
         keep = [m for m in mods if m in supported]
         if keep:
             store = get_store()
@@ -412,42 +467,100 @@ def mail():
     fvpref = (getattr(box, "prefs", None) or {}).get("folder_viewmodes") or {}
     folder_viewmode = fvpref.get(folder)
     list_mode = request.args.get("_mode") or (
-        folder_viewmode if folder_viewmode in ("list", "threads") else
-        ("list" if (getattr(box, "prefs", None) or {}).get("viewmode") == "list"
-         else "threads"))
+        folder_viewmode
+        if folder_viewmode in ("list", "threads")
+        else ("list" if (getattr(box, "prefs", None) or {}).get("viewmode") == "list" else "threads")
+    )
     searching = bool(search or mail_mods_norm(sfilter) != "ALL" or sinterval)
+
+    # list-context link carry: reference keeps sort/mode/filter in
+    # rcmail.env so paging, column clicks and message back-navigation all
+    # reuse the current list state. Craft's equivalent: every in-mail link
+    # is built from the same base args.
+    link_args = {"_mbox": folder}
+    if sort:
+        link_args["_sort"] = sort
+    if order != "desc":
+        link_args["_sort_order"] = order
+    link_args["_mode"] = list_mode
+    if search:
+        link_args["_q"] = search
+    if searching and mail_mods_norm(sfilter) != "ALL":
+        link_args["_filter"] = sfilter
+    if sinterval:
+        link_args["_interval"] = sinterval
+    if searching and sscope and sscope != "base":
+        link_args["_scope"] = sscope
+
+    def mail_url(**over):
+        args = dict(link_args)
+        for key, val in over.items():
+            if val is None:
+                args.pop(key, None)
+            else:
+                args[key] = val
+        return url_for("views.mail", **args)
+
+    def message_url(msg_uid, msg_box=None):
+        # _back lets the reader's Back link restore this exact list view.
+        # The list URL travels base64-encoded — like the reference's _list
+        # list-state param — so no nested '?'/&' ever appears in the URL
+        return url_for(
+            "views.message_view",
+            _mbox=msg_box or folder,
+            _uid=msg_uid,
+            _back=base64.urlsafe_b64encode(request.full_path.encode()).decode().rstrip("="),
+        )
+
     try:
-        pspec = (getattr(box, "prefs", {}).get("mail_pagesize")
-                 or getattr(box, "prefs", {}).get("pagesize"))
-        listing = box.message_list(folder, page=page, sort=sort, order=order,
-                                   page_size=(int(pspec) if pspec else None)
-                                   or current_app.config["PAGE_SIZE"],
-                                   search=search or None, search_mods=mods or None,
-                                   search_filter=sfilter, search_interval=sinterval,
-                                   search_scope=sscope if searching else "base",
-                                   threads=(list_mode == "threads"))
+        pspec = getattr(box, "prefs", {}).get("mail_pagesize") or getattr(box, "prefs", {}).get("pagesize")
+        listing = box.message_list(
+            folder,
+            page=page,
+            sort=sort,
+            order=order,
+            page_size=(int(pspec) if pspec else None) or current_app.config["PAGE_SIZE"],
+            search=search or None,
+            search_mods=mods or None,
+            search_filter=sfilter,
+            search_interval=sinterval,
+            search_scope=sscope if searching else "base",
+            threads=(list_mode == "threads"),
+        )
     except MailError as e:
         flash(str(e), "error")
         listing = {"items": [], "page": 1, "pages": 1, "total": 0, "first": 0, "last": 0, "uids": []}
     # rcmail_action_mail_index: 'messages_list' lets plugins amend the list
-    listing["items"] = ph("messages_list",
-                          {"messages": listing["items"], "mbox": folder})["messages"]
+    listing["items"] = ph("messages_list", {"messages": listing["items"], "mbox": folder})["messages"]
     uid = request.args.get("_uid")
     quota_used = quota_kb = 0
     with contextlib.suppress(Exception):
         # server without QUOTA support -> zeros
         quota_used, quota_kb = box.quota_usage()
-    return render("mail", "mail.html", folder=folder,
-                  folder_title=folder_label(folder, getattr(box, "prefs", None) or g.get("prefs") or {}),
-                  listing=listing,
-                  sort=sort, order=order, search=search,
-                  search_mods=mods, search_filter=mail_mods_norm(sfilter),
-                  search_interval=sinterval, search_scope=sscope,
-                  search_has_attachment=_search_has_attachment(),
-                  list_mode=list_mode,
-                  searching=searching, preview_uid=uid, action="view" if uid else None,
-                  quota_used=quota_used, quota_kb=quota_kb,
-                  message_count=listing["total"])
+    return render(
+        "mail",
+        "mail.html",
+        folder=folder,
+        folder_title=folder_label(folder, getattr(box, "prefs", None) or g.get("prefs") or {}),
+        listing=listing,
+        mail_url=mail_url,
+        message_url=message_url,
+        sort=sort,
+        order=order,
+        search=search,
+        search_mods=mods,
+        search_filter=mail_mods_norm(sfilter),
+        search_interval=sinterval,
+        search_scope=sscope,
+        search_has_attachment=_search_has_attachment(),
+        list_mode=list_mode,
+        searching=searching,
+        preview_uid=uid,
+        action="view" if uid else None,
+        quota_used=quota_used,
+        quota_kb=quota_kb,
+        message_count=listing["total"],
+    )
 
 
 def _msg_date(msg):
@@ -610,16 +723,20 @@ def _send_mdn(box, user_id, folder, uid):
     to_disp = _hdr(msg, "To")
     dt = util.to_local_tz(util.parse_header_date(msg), store.get_user_prefs(user_id).get("timezone"))
     date_long = dt.strftime("%Y-%m-%d %H:%M") if dt else ""
-    body = ("This is a Return Receipt for your message\r\n\r\n"
-            f"\tTo: {to_disp}\r\n"
-            f"\tSubject: {subject}\r\n"
-            f"\tDate: {date_long}\r\n\r\n"
-            "Note: This receipt only acknowledges that the message was displayed "
-            "on the recipient's computer. There is no guarantee that the "
-            "recipient has read or understood the message contents.")
-    report = ("Final-Recipient: rfc822; " + from_addr + "\r\n"
-              f"Original-Message-ID: {message_id}\r\n"
-              "Disposition: manual-action/MDN-sent-manually; displayed\r\n")
+    body = (
+        "This is a Return Receipt for your message\r\n\r\n"
+        f"\tTo: {to_disp}\r\n"
+        f"\tSubject: {subject}\r\n"
+        f"\tDate: {date_long}\r\n\r\n"
+        "Note: This receipt only acknowledges that the message was displayed "
+        "on the recipient's computer. There is no guarantee that the "
+        "recipient has read or understood the message contents."
+    )
+    report = (
+        "Final-Recipient: rfc822; " + from_addr + "\r\n"
+        f"Original-Message-ID: {message_id}\r\n"
+        "Disposition: manual-action/MDN-sent-manually; displayed\r\n"
+    )
     if to_disp:
         report += f"Original-Recipient: {to_disp}\r\n"
     report += f"Reporting-UA: {agent}\r\n"
@@ -679,9 +796,7 @@ def _mdn_request(box, folder, uid, msg):
         return None  # ignore request
     name, addr = sender[0]
     full = f"{name} <{addr}>" if name and name != addr else addr
-    return {"request": True,
-            "save": cfg if cfg in (3, 5) else 0,
-            "sender": {"mailto": mailto, "string": full}}
+    return {"request": True, "save": cfg if cfg in (3, 5) else 0, "sender": {"mailto": mailto, "string": full}}
 
 
 def _header_date_short(dt):
@@ -691,6 +806,7 @@ def _header_date_short(dt):
     if not dt:
         return ""
     from datetime import datetime
+
     now = datetime.now(dt.tzinfo) if dt.tzinfo else datetime.now()
     days = (now.date() - dt.date()).days
     if days == 0:
@@ -718,8 +834,7 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
     # session (msg_formats mbox:uid); effective prefer_html = override else
     # the prefer_html preference (rc default on).
     fmt = (session.get("msg_formats") or {}).get(f"{folder}:{uid}")
-    prefer_html = (fmt == "html") if fmt in ("text", "html") \
-        else bool(int(prefs.get("prefer_html", 1) or 0))
+    prefer_html = (fmt == "html") if fmt in ("text", "html") else bool(int(prefs.get("prefer_html", 1) or 0))
     # rcube_message body selection: multipart/alternative renders only the
     # preferred flavour (show.php:672, rcube_message first_text_part() falls
     # back to an html2text-converted HTML part when plain is requested);
@@ -729,9 +844,13 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
     def _walk(p):
         if p.get_content_maintype() == "multipart":
             if p.get_content_type() == "multipart/alternative":
-                subs = [c for c in p.walk() if not c.is_multipart()
-                        and c.get_content_type() in ("text/plain", "text/html")
-                        and c.get_content_disposition() != "attachment"]
+                subs = [
+                    c
+                    for c in p.walk()
+                    if not c.is_multipart()
+                    and c.get_content_type() in ("text/plain", "text/html")
+                    and c.get_content_disposition() != "attachment"
+                ]
                 plains = [c for c in subs if c.get_content_type() == "text/plain"]
                 htmls = [c for c in subs if c.get_content_type() == "text/html"]
                 if prefer_html:
@@ -747,21 +866,22 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
                     for c in payload:
                         if hasattr(c, "get_content_maintype"):
                             _walk(c)
-        elif (p.get_content_type() in ("text/plain", "text/html")
-                and p.get_content_disposition() != "attachment"):
+        elif p.get_content_type() in ("text/plain", "text/html") and p.get_content_disposition() != "attachment":
             parts.append((p, False))
+
     if msg.is_multipart():
         _walk(msg)
-    elif (msg.get_content_type() in ("text/plain", "text/html")
-            and msg.get_content_disposition() != "attachment"):
+    elif msg.get_content_type() in ("text/plain", "text/html") and msg.get_content_disposition() != "attachment":
         parts = [(msg, msg.get_content_type() == "text/html" and not prefer_html)]
     # show.php:118-121 — toggle link offered whenever the message has an
     # inline, non-empty text/html part (rcube_message::has_html_part())
     optional_format = None
     for p in msg.walk() if msg.is_multipart() else [msg]:
-        if (p.get_content_type() == "text/html"
-                and p.get_content_disposition() != "attachment"
-                and (p.get_payload(decode=True) or b"").strip()):
+        if (
+            p.get_content_type() == "text/html"
+            and p.get_content_disposition() != "attachment"
+            and (p.get_payload(decode=True) or b"").strip()
+        ):
             optional_format = "text" if prefer_html else "html"
             break
     sender_domain = ""
@@ -803,8 +923,7 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
         cid = m.group(2)
         referred_cids.add(cid)
         if cid in cid_parts:
-            return (f'src="/attachment?_mbox={quote(folder)}'
-                    f'&_uid={uid}&_part={cid_parts[cid]}&_inline=1"')
+            return f'src="/attachment?_mbox={quote(folder)}&_uid={uid}&_part={cid_parts[cid]}&_inline=1"'
         return ""
 
     _CID_SRC_RE = re.compile(r"""\bsrc=(["'])cid:([^"'\s>]+)\1""")
@@ -834,8 +953,19 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
                 text = util.unfold_flowed(text, p.get_param("delsp") == "yes")
             rendered.append(("plain", text))
     headers = []
-    for h in ("From", "To", "Cc", "Bcc", "Subject", "Date", "Reply-To",
-              "Followup-To", "Message-ID", "In-Reply-To", "References"):
+    for h in (
+        "From",
+        "To",
+        "Cc",
+        "Bcc",
+        "Subject",
+        "Date",
+        "Reply-To",
+        "Followup-To",
+        "Message-ID",
+        "In-Reply-To",
+        "References",
+    ):
         v = _hdr(msg, h)
         if v:
             headers.append((h, v))
@@ -847,26 +977,24 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
     # message still shows "From …", verified against the reference).
     from_addr = util.header_addresses(msg, "From")
     photo_src = url_for("static", filename="images/contactpic.svg")
-    try:
+    with contextlib.suppress(Exception):
         if from_addr:
             pcid = get_store().email_to_contact(session["user_id"], from_addr[0][1])
             if pcid and get_store().contact_photo(session["user_id"], pcid):
                 photo_src = url_for("views.contact_photo", cid=pcid)
-    except Exception:
-        pass
     date_short = _header_date_short(_msg_date(msg))
     attachments = []
     image_attachments = []
     if msg.is_multipart():
         # cid: references in the rendered HTML keep their part out of the
         # thumbnails (rcube_message::is_referred_attachment, show.php:725)
-        referred = set(re.findall(r'cid:([^"\'\s>]+)', " ".join(
-            b for k, b in rendered if k == "html")) or []) | referred_cids
+        referred = (
+            set(re.findall(r'cid:([^"\'\s>]+)', " ".join(b for k, b in rendered if k == "html")) or []) | referred_cids
+        )
         for i, p in enumerate(msg.walk()):
             fn = p.get_filename()
             cid = (p.get("Content-ID") or "").strip("<> ")
-            if (fn or p.get_content_disposition() == "attachment") \
-                    and cid not in referred:
+            if (fn or p.get_content_disposition() == "attachment") and cid not in referred:
                 entry = {
                     "part": str(i),
                     "filename": fn or f"part{i}.bin",
@@ -877,9 +1005,7 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
                 # inline image thumbnails below the body (show.php:714,
                 # inline_images pref default true)
                 cid = (p.get("Content-ID") or "").strip("<> ")
-                if (entry["ctype"].startswith("image/")
-                        and prefs.get("inline_images", 1)
-                        and cid not in referred):
+                if entry["ctype"].startswith("image/") and prefs.get("inline_images", 1) and cid not in referred:
                     image_attachments.append(entry)
     # prev/next within the folder (arrival order; matches date-desc listings)
     prev_uid = next_uid = None
@@ -889,30 +1015,38 @@ def build_message_ctx(box, folder, uid, mark_seen=True, allow_remote=None):
         uids = []
     try:
         i = uids.index(int(uid))
-        prev_uid = uids[i + 1] if i + 1 < len(uids) else None   # newer = previous entry
+        prev_uid = uids[i + 1] if i + 1 < len(uids) else None  # newer = previous entry
         next_uid = uids[i - 1] if i > 0 else None
     except (ValueError, IndexError):
         pass
-    return {"folder": folder, "uid": uid, "msg": msg,
-            "subject": _hdr(msg, "Subject") or "(no subject)",
-            "headers": headers, "parts": rendered, "attachments": attachments,
-            "optional_format": optional_format,
-            "image_attachments": image_attachments,
-            "sender": util.header_addresses(msg, "From")[:1],
-            "sender_domain": sender_domain,
-            "from_addr": from_addr,
-            "to_addr": util.header_addresses(msg, "To"),
-            "cc_addr": util.header_addresses(msg, "Cc"),
-            "replyto_addr": util.header_addresses(msg, "Reply-To"),
-            "has_from": bool(from_addr),
-            "photo_src": photo_src,
-            "date_short": date_short,
-            # reference 'ml' flag -- enables the Reply list menu item
-            "list_post": bool(_hdr(msg, "List-Post")),
-            "remote_blocked": remote_blocked,
-            # env.mdn_request / mdn_request_save / mdn_request_sender (show.php:864)
-            "mdn": mdn_ctx,
-            "date": _msg_date(msg), "prev_uid": prev_uid, "next_uid": next_uid}
+    return {
+        "folder": folder,
+        "uid": uid,
+        "msg": msg,
+        "subject": _hdr(msg, "Subject") or "(no subject)",
+        "headers": headers,
+        "parts": rendered,
+        "attachments": attachments,
+        "optional_format": optional_format,
+        "image_attachments": image_attachments,
+        "sender": util.header_addresses(msg, "From")[:1],
+        "sender_domain": sender_domain,
+        "from_addr": from_addr,
+        "to_addr": util.header_addresses(msg, "To"),
+        "cc_addr": util.header_addresses(msg, "Cc"),
+        "replyto_addr": util.header_addresses(msg, "Reply-To"),
+        "has_from": bool(from_addr),
+        "photo_src": photo_src,
+        "date_short": date_short,
+        # reference 'ml' flag -- enables the Reply list menu item
+        "list_post": bool(_hdr(msg, "List-Post")),
+        "remote_blocked": remote_blocked,
+        # env.mdn_request / mdn_request_save / mdn_request_sender (show.php:864)
+        "mdn": mdn_ctx,
+        "date": _msg_date(msg),
+        "prev_uid": prev_uid,
+        "next_uid": next_uid,
+    }
 
 
 @bp.route("/message")
@@ -938,11 +1072,10 @@ def message_view():
         raw = box.raw_message(folder, uid)
         subject = _hdr(raw, "Subject") or ""
         name = re.sub(r"[:\t\n\r\x00\x0B/]+\s*", " ", subject[:128])
-        name = name.strip(" \t\n\r\x00\x0B./_") or uid
+        name = name.strip(" \t\n\r\x00\x0b./_") or uid
         # headers->charset: RC treats us-ascii/missing as the default
         # charset; emits e.g. "text/plain;charset=UTF-8"
-        declared = (raw.get_param("charset", header="Content-Type")
-                    or "").strip().strip('"').lower()
+        declared = (raw.get_param("charset", header="Content-Type") or "").strip().strip('"').lower()
         charset = "UTF-8" if declared in ("", "us-ascii", "ascii") else declared
         body = getattr(raw, "_raw_bytes", None) or raw.as_bytes()
         resp = Response(body, mimetype="text/plain")
@@ -957,9 +1090,13 @@ def message_view():
     # Reference behavior (verified live): ?_action=show renders a dedicated
     # reader page — no list/sidebar columns, toolbar with Print/Previous/Next.
     # The shell-with-preview layout is only for /mail?_uid= (index + preview).
-    ctx = build_message_ctx(box, folder, uid,
-                            mark_seen=request.args.get("_noseen") != "1",
-                            allow_remote=True if request.args.get("_load") == "remote" else None)
+    ctx = build_message_ctx(
+        box,
+        folder,
+        uid,
+        mark_seen=request.args.get("_noseen") != "1",
+        allow_remote=True if request.args.get("_load") == "remote" else None,
+    )
     if request.args.get("_load") == "remote" and ctx["sender_domain"]:
         prefs = get_store().get_user_prefs(session["user_id"])
         senders = set(prefs.get("remote_senders") or [])
@@ -969,8 +1106,7 @@ def message_view():
         ctx["remote_blocked"] = False
     ctx["framed"] = framed
     # show.php: 'message_read' after the message object is fully built
-    ctx = ph("message_read", {"message": ctx["msg"], "mbox": folder,
-                              "uid": uid, "props": ctx})["props"]
+    ctx = ph("message_read", {"message": ctx["msg"], "mbox": folder, "uid": uid, "props": ctx})["props"]
     ctx["extwin"] = request.args.get("_extwin") == "1"
     # standalone (non-iframe) message pages render the toolbar server-enabled
     # for the viewed message, like the reference action-show page
@@ -984,8 +1120,9 @@ def message_view():
     if not framed:
         with contextlib.suppress(Exception):
             # navigation is best-effort: a list fetch hiccup just hides prev/next
-            order_uids = [str(u) for u in box.message_list(folder, page=1, page_size=100000,
-                                     sort="", order="desc")["uids"]]
+            order_uids = [
+                str(u) for u in box.message_list(folder, page=1, page_size=100000, sort="", order="desc")["uids"]
+            ]
             if uid in order_uids:
                 idx = order_uids.index(uid)
                 # reference direction: 'prev' is the row ABOVE in the list
@@ -997,14 +1134,21 @@ def message_view():
     if request.args.get("_headers") == "1":
         # reference `?_action=headers`: raw header source, all headers in
         # wire order, names bold (headers.php headers_output)
-        return render_template("headers.html", **ctx, task="mail",
-                               action="headers", rawh=list(ctx["msg"].items()))
+        return render_template("headers.html", **ctx, task="mail", action="headers", rawh=list(ctx["msg"].items()))
     if framed:
         return render_template("message_part.html", **ctx, task="mail")
     if request.args.get("_print") == "1":
         # reference dispatch: action print picks the messageprint template —
         # no app chrome, details-view headers, logo top-right
         return render_template("messageprint.html", **ctx, task="mail")
+    # Back link restores the exact list view the message was opened from
+    # (reference carries this as the base64 _list list-state param); only
+    # same-app relative list URLs are accepted.
+    back_raw = request.args.get("_back") or ""
+    if not back_raw.startswith("/mail"):
+        with contextlib.suppress(Exception):
+            back_raw = base64.urlsafe_b64decode(back_raw + "=" * (-len(back_raw) % 4)).decode("utf-8", "replace")
+    ctx["back_url"] = back_raw if back_raw.startswith("/mail") else None
     return render("mail", "message.html", **ctx)
 
 
@@ -1013,6 +1157,7 @@ def message_view():
 def utils_text2html():
     # reference: ?_task=utils&_action=text2html (rcmail_action_utils_text2html)
     from .converters import text2html
+
     body = request.get_data(as_text=True)
     return Response(text2html(body), content_type="text/html; charset=UTF-8")
 
@@ -1022,9 +1167,9 @@ def utils_text2html():
 def utils_html2text():
     # reference: ?_task=utils&_action=html2text (rcmail_action_utils_html2text)
     from .converters import html2text
+
     body = request.get_data(as_text=True)
-    text = html2text(body, links=bool(request.args.get("_do_links")),
-                     width=int(request.args.get("_width") or 0))
+    text = html2text(body, links=bool(request.args.get("_do_links")), width=int(request.args.get("_width") or 0))
     return Response(text, content_type="text/plain; charset=UTF-8")
 
 
@@ -1038,34 +1183,34 @@ def utils_spell():
     <spellresult charschecked="N"><c o="O" l="L">sug1\tsug2</c>…
     """
     import html as _html
+
     from . import spellchecker
+
     lang = request.values.get("lang") or "en"
     body = request.get_data(as_text=True) or ""
     up = get_store().get_user_prefs(session["user_id"])
-    ignore = {k: bool(up.get("spellcheck_ignore_" + k))
-              for k in ("syms", "nums", "caps")}
+    ignore = {k: bool(up.get("spellcheck_ignore_" + k)) for k in ("syms", "nums", "caps")}
     xml_head = '<?xml version="1.0" encoding="UTF-8"?>'
     learn = body.find("<learnword>")
     if learn != -1:
-        word = _html.unescape(
-            body[body.index("<text>", learn) + 6:body.index("</text>", learn)])
+        word = _html.unescape(body[body.index("<text>", learn) + 6 : body.index("</text>", learn)])
         spellchecker.add_word(word)
-        return Response(xml_head + "<learnwordresult></learnwordresult>",
-                        mimetype="text/xml")
+        return Response(xml_head + "<learnwordresult></learnwordresult>", mimetype="text/xml")
     left = body.find("<text>")
     right = body.rfind("</text>")
-    text = _html.unescape(body[left + 6:right]) if left != -1 and right > left else ""
+    text = _html.unescape(body[left + 6 : right]) if left != -1 and right > left else ""
     if not text:
-        return Response(xml_head + '<spellresult charschecked="0">'
-                        "</spellresult>", mimetype="text/xml")
+        return Response(xml_head + '<spellresult charschecked="0"></spellresult>', mimetype="text/xml")
     matches, checked = spellchecker.find_matches(text, lang, ignore=ignore)
     if matches is None:
         # rcmail_action_utils_spell: engine error -> <error> + 500
-        return Response(xml_head + '<spellresult error="Internal error.">'
-                        "</spellresult>", status=500, mimetype="text/xml")
-    out = [xml_head, '<spellresult charschecked="%d">' % checked]
+        return Response(
+            xml_head + '<spellresult error="Internal error."></spellresult>', status=500, mimetype="text/xml"
+        )
+    out = [xml_head, f'<spellresult charschecked="{checked}">']
     for _word, pos, ln, sugg in matches:
-        out.append('<c o="%d" l="%d">%s</c>' % (pos, ln, "\t".join(sugg)))
+        joined = "\t".join(sugg)
+        out.append(f'<c o="{pos}" l="{ln}">{joined}</c>')
     out.append("</spellresult>")
     return Response("".join(out), mimetype="text/xml")
 
@@ -1075,6 +1220,7 @@ def utils_spell():
 def utils_spell_html():
     # reference: rcmail_action_utils_spell_html (pspell engine)
     from . import spellchecker
+
     method = request.form.get("method", "")
     lang = request.form.get("lang", "en")
     result = {}
@@ -1086,12 +1232,10 @@ def utils_spell_html():
         if text:
             # spellcheck_ignore_* prefs (rcube_spellchecker.php:49-51)
             up = get_store().get_user_prefs(session["user_id"])
-            ignore = {k: bool(up.get("spellcheck_ignore_" + k))
-                      for k in ("syms", "nums", "caps")}
+            ignore = {k: bool(up.get("spellcheck_ignore_" + k)) for k in ("syms", "nums", "caps")}
             words = spellchecker.check(text, lang, ignore=ignore)
             if words is None:
-                return Response(json.dumps({"error": "Internal error."}),
-                                status=500, content_type="application/json")
+                return Response(json.dumps({"error": "Internal error."}), status=500, content_type="application/json")
             if words:
                 result["words"] = words
                 result["dictionary"] = False
@@ -1178,6 +1322,7 @@ def message_import():
             if low.endswith(".zip") or f.mimetype in ("application/zip", "application/x-zip"):
                 try:
                     import io
+
                     with zipfile.ZipFile(io.BytesIO(data)) as z:
                         for name in z.namelist():
                             if name.endswith("/"):
@@ -1218,9 +1363,13 @@ def attachment():
     fn = target.get_filename() or "attachment.bin"
     ctype = target.get_content_type()
     disposition = "inline" if request.args.get("_inline") else "attachment"
-    return Response(data, mimetype=ctype, headers={
-        "Content-Disposition": f"{disposition}; filename*=UTF-8''{fn}",
-    })
+    return Response(
+        data,
+        mimetype=ctype,
+        headers={
+            "Content-Disposition": f"{disposition}; filename*=UTF-8''{fn}",
+        },
+    )
 
 
 def _uids_from_request():
@@ -1253,15 +1402,13 @@ def mail_act():
         # the deleted message BEFORE deleting, to reopen it after the redirect.
         ret_uid = request.form.get("_return_uid", "")
         next_preview = None
-        if (command == "delete" and ret_uid
-                and (getattr(box, "prefs", None) or {}).get("display_next")):
+        if command == "delete" and ret_uid and (getattr(box, "prefs", None) or {}).get("display_next"):
             try:
                 next_preview = _next_uid_after(box, folder, ret_uid, uids)
             except Exception:
                 next_preview = None
         try:
-            _run_mail_action(box, command, folder, uids,
-                             dest=request.form.get("_dest"))
+            _run_mail_action(box, command, folder, uids, dest=request.form.get("_dest"))
         except MailError as e:
             flash(str(e), "error")
         if next_preview:
@@ -1300,23 +1447,23 @@ def mail_sendmdn():
                 store.collected_upsert(session["user_id"], 2, name or email_addr, email_addr)
             else:
                 with contextlib.suppress(Exception):
-                    store.contact_save(session["user_id"],
-                                       {"name": name or email_addr, "email": email_addr,
-                                        "firstname": "", "surname": "", "vcard": ""})
+                    store.contact_save(
+                        session["user_id"],
+                        {"name": name or email_addr, "email": email_addr, "firstname": "", "surname": "", "vcard": ""},
+                    )
     return jsonify({"sent": sent})
 
 
 def _next_uid_after(box, folder, ref_uid, removed):
     """First remaining uid after ref_uid (newest-first order), given the
     folder's uid order BEFORE the removal."""
-    uids = [str(u) for u in box.message_list(folder, page=1, page_size=100000,
-                                             sort="", order="desc")["uids"]]
+    uids = [str(u) for u in box.message_list(folder, page=1, page_size=100000, sort="", order="desc")["uids"]]
     removed = {str(u) for u in removed}
     try:
         idx = uids.index(str(ref_uid))
     except ValueError:
         idx = 0
-    for u in uids[idx + 1:]:
+    for u in uids[idx + 1 :]:
         if u not in removed:
             return u
     for u in reversed(uids[:idx]):
@@ -1357,8 +1504,7 @@ def _run_mail_action(box, command, folder, uids, dest=None):
         elif command == "compact":
             box.compact(folder)
             # folder_expunge.php: 'folderexpunged' (not folderpurged)
-            flash(i18n.gettext("folderexpunged", g.lang, domain="messages"),
-                  "confirmation")
+            flash(i18n.gettext("folderexpunged", g.lang, domain="messages"), "confirmation")
         elif command == "empty":
             box.empty_folder(folder)
             flash(i18n.gettext("folderpurged", g.lang, domain="messages"), "confirmation")
@@ -1382,9 +1528,12 @@ def _msg_has_html(msg):
     # rcube_message::has_html_part(): a text/html part that isn't an attachment
     with contextlib.suppress(Exception):
         # malformed MIME structure -> treat as plain text
-        for p in (msg.walk() if msg.is_multipart() else [msg]):
-            if p.get_content_type() == "text/html" and not p.get_filename() \
-               and p.get_content_disposition() != "attachment":
+        for p in msg.walk() if msg.is_multipart() else [msg]:
+            if (
+                p.get_content_type() == "text/html"
+                and not p.get_filename()
+                and p.get_content_disposition() != "attachment"
+            ):
                 return True
     return False
 
@@ -1396,8 +1545,7 @@ def compose_html_mode(mode, source_msg, prefs, post_is_html=None):
     #   0 never / 1 always / 2 reply-to-HTML / 3 reply|forward-to-HTML /
     #   4 always except plain-text reply
     html_editor = int(prefs.get("htmleditor", 0) or 0)
-    msg_html = bool(prefs.get("prefer_html", 1)) and source_msg is not None \
-        and _msg_has_html(source_msg)
+    msg_html = bool(prefs.get("prefer_html", 1)) and source_msg is not None and _msg_has_html(source_msg)
     if post_is_html is not None:
         return post_is_html
     if mode in ("draft", "edit"):
@@ -1406,10 +1554,11 @@ def compose_html_mode(mode, source_msg, prefs, post_is_html=None):
         return html_editor == 1 or (html_editor >= 2 and msg_html)
     if mode in ("forward", "forward-attachment"):
         return html_editor in (1, 4) or (html_editor == 3 and msg_html)
-    return html_editor in (1, 4)      # new message
+    return html_editor in (1, 4)  # new message
 
 
 # ---- reply/forward body composition (program/actions/mail/compose.php) ----
+
 
 def _preferred_part(msg, prefs):
     """The part used for message (pre)viewing (rcube_message structure):
@@ -1419,8 +1568,7 @@ def _preferred_part(msg, prefs):
 
     def pick(ctype):
         for p in parts:
-            if p.get_content_type() == ctype and not p.get_filename() \
-               and p.get_content_disposition() != "attachment":
+            if p.get_content_type() == ctype and not p.get_filename() and p.get_content_disposition() != "attachment":
                 with contextlib.suppress(Exception):
                     charset = p.get_content_charset() or "utf-8"
                     body = (p.get_payload(decode=True) or b"").decode(charset, errors="replace")
@@ -1429,6 +1577,7 @@ def _preferred_part(msg, prefs):
                     delsp = flowed and p.get_param("delsp") == "yes"
                     return body, ctype == "text/html", flowed, delsp
         return None
+
     if prefs.get("prefer_html", 1):
         got = pick("text/html")
         if got:
@@ -1443,9 +1592,8 @@ def _remove_signature(body, max_lines=15):
     # rcmail_action_mail_compose::remove_signature()
     body = body.replace("\r\n", "\n")
     sp = body.rfind("-- \n")
-    if sp != -1 and (sp == 0 or body[sp - 1] == "\n") \
-       and body[sp:].count("\n") < max_lines:
-        body = body[:max(0, sp - 1)]
+    if sp != -1 and (sp == 0 or body[sp - 1] == "\n") and body[sp:].count("\n") < max_lines:
+        body = body[: max(0, sp - 1)]
     return body
 
 
@@ -1453,6 +1601,7 @@ def _part_body(msg, is_html, prefs, mode):
     # rcmail_action_mail_compose::compose_part_body() for a single content
     # part: convert between source and target format, strip old signature.
     from .converters import text2html
+
     raw, src_html, flowed, delsp = _preferred_part(msg, prefs)
     strip = mode not in ("draft", "edit", "bounce") and prefs.get("strip_existing_sig", 1)
     if is_html:
@@ -1460,12 +1609,17 @@ def _part_body(msg, is_html, prefs, mode):
             if mode in ("reply", "replyall", "replylist", "forward", "edit", "draft"):
                 # prepare_html_body(): wash_html with container
                 # '{mode}body{n}' (none for draft) and css_prefix 'v{n}'
-                base = {"reply": "reply", "replyall": "reply", "replylist": "reply",
-                        "forward": "forward", "edit": "edit"}.get(mode)
+                base = {
+                    "reply": "reply",
+                    "replyall": "reply",
+                    "replylist": "reply",
+                    "forward": "forward",
+                    "edit": "edit",
+                }.get(mode)
                 n = _html_part_no(msg, prefs)
                 return compose_wash.compose_wash_html(
-                    raw, container_id=f"{base}body{n}" if base else None,
-                    css_prefix=f"v{n}")
+                    raw, container_id=f"{base}body{n}" if base else None, css_prefix=f"v{n}"
+                )
             return util.sanitize_html(raw)
         if strip:
             raw = _remove_signature(raw)
@@ -1499,7 +1653,7 @@ def _quote_text(text):
 def _reply_intro(msg, prefs):
     # get_reply_header(): mailreplyintro with date_long + sender name
     dt = util.to_local_tz(util.parse_header_date(msg), prefs.get("timezone"))
-    date = dt.strftime("%Y-%m-%d %H:%M") if dt else ""   # date_long 'Y-m-d H:i'
+    date = dt.strftime("%Y-%m-%d %H:%M") if dt else ""  # date_long 'Y-m-d H:i'
     disp, addr = email.utils.parseaddr(_decode_header(msg.get("From", "") or ""))
     return f"On {date}, {disp or addr} wrote:"
 
@@ -1530,8 +1684,8 @@ def _forward_header(msg, is_html, prefs, extended=True):
         if "<" in value and ">" in value:
             return value
         return html_escape(value, quote=False)
-    prefix = ('<br /><p>-------- Original Message --------</p>'
-              '<table border="0" cellpadding="0" cellspacing="0"><tbody>')
+
+    prefix = '<br /><p>-------- Original Message --------</p><table border="0" cellpadding="0" cellspacing="0"><tbody>'
     prefix += row.format("Subject", hdr(subj))
     prefix += row.format("Date", hdr(date))
     prefix += row.format("From", hdr(frm))
@@ -1581,9 +1735,13 @@ def _create_forward_body(body, is_html, msg, prefs):
 def _html_part_no(msg, prefs):
     """1-based index of the chosen html part among the html content parts —
     the static $part_no counter of prepare_html_body() (compose.php:990)."""
-    parts = [p for p in (msg.walk() if msg.is_multipart() else [msg])
-             if not p.get_filename() and p.get_content_disposition() != "attachment"
-             and not p.get_content_type().startswith("multipart/")]
+    parts = [
+        p
+        for p in (msg.walk() if msg.is_multipart() else [msg])
+        if not p.get_filename()
+        and p.get_content_disposition() != "attachment"
+        and not p.get_content_type().startswith("multipart/")
+    ]
     seq = [i for i, p in enumerate(parts) if p.get_content_type() == "text/html"]
     if not seq:
         return 1
@@ -1638,6 +1796,7 @@ def editor_config(mode, prefs, spellcheck=True):
 def identity_signatures(identities, prefs):
     # rcmail_sendmail::email_identities_field(): signatures[id] = {text, html}
     from .converters import html2text, text2html
+
     sigs = {}
     top_posting = int(prefs.get("reply_mode", 0) or 0) > 0 and not prefs.get("sig_below")
     separator = "---" if top_posting else "-- "
@@ -1670,9 +1829,21 @@ def compose():
     identities = store.identities(session["user_id"])
     folders = folders_for_menu()
 
-    prefill = {"to": "", "cc": "", "bcc": "", "subject": "", "body": "", "html": "",
-               "in_reply_to": "", "references": "", "reply_to": "", "followup_to": "",
-               "priority": "3", "mdn": False, "dsn": False}
+    prefill = {
+        "to": "",
+        "cc": "",
+        "bcc": "",
+        "subject": "",
+        "body": "",
+        "html": "",
+        "in_reply_to": "",
+        "references": "",
+        "reply_to": "",
+        "followup_to": "",
+        "priority": "3",
+        "mdn": False,
+        "dsn": False,
+    }
     # defaults from Settings > Preferences (Composing Messages)
     prefs = getattr(box, "prefs", None) or {}
     prefill["mdn"] = bool(prefs.get("mdn_default"))
@@ -1681,14 +1852,16 @@ def compose():
     # forward_attachment 1 = forward as attachment. Legacy values still work.
     if mode == "reply" and str(prefs.get("reply_mode", "0")) in ("all",):
         mode = "replyall"
-    elif mode == "reply" and (str(prefs.get("reply_mode", "0")) == "list"
-                              or str(prefs.get("reply_all_mode", "0")) == "1"):
+    elif mode == "reply" and (
+        str(prefs.get("reply_mode", "0")) == "list" or str(prefs.get("reply_all_mode", "0")) == "1"
+    ):
         mode = "replylist"
-    if mode == "forward" and (prefs.get("forward_mode") == "attachment"
-                              or str(prefs.get("forward_attachment", "0")) == "1"):
+    if mode == "forward" and (
+        prefs.get("forward_mode") == "attachment" or str(prefs.get("forward_attachment", "0")) == "1"
+    ):
         mode = "forward-attachment"
     attachments_kept = []
-    attach_original = None   # (filename, bytes) for forward-as-attachment
+    attach_original = None  # (filename, bytes) for forward-as-attachment
     source_msg = None
     src_folder = ""
     if uid_of:
@@ -1715,28 +1888,35 @@ def compose():
     # the source message's Disposition-Notification-To / Return-Receipt-To
     # header in DRAFT/EDIT modes, else from the mdn_default preference.
     if not post_is_html and mode in ("draft", "edit") and source_msg is not None:
-        prefill["mdn"] = bool(source_msg.get("Disposition-Notification-To")
-                              or source_msg.get("Return-Receipt-To"))
+        prefill["mdn"] = bool(source_msg.get("Disposition-Notification-To") or source_msg.get("Return-Receipt-To"))
 
     def _orig_filename():
         s = _decode_header(source_msg.get("Subject", "") or "") or "message"
         import re as _re
+
         return _re.sub(r"[^A-Za-z0-9 ._-]", "_", s)[:80] + ".eml"
 
     if source_msg is not None:
-        ident_sel = _identity_for_message(store, session["user_id"], source_msg) \
-            or store.default_identity(session["user_id"])
+        ident_sel = _identity_for_message(store, session["user_id"], source_msg) or store.default_identity(
+            session["user_id"]
+        )
         ident_email = (ident_sel or {}).get("email") or session["username"]
         if mode in ("reply", "replyall", "replylist"):
             prefill["to"], prefill["cc"] = _reply_recipients(source_msg, mode, ident_email)
             subj = _decode_header(source_msg.get("Subject", "")) or ""
             prefill["subject"] = subj if subj.lower().startswith("re:") else f"Re: {subj}"
             prefill["body"] = _create_reply_body(
-                _quoted_part(source_msg, html_mode, prefs, mode), html_mode, source_msg, prefs, mode)
+                _quoted_part(source_msg, html_mode, prefs, mode), html_mode, source_msg, prefs, mode
+            )
             prefill["in_reply_to"] = source_msg.get("Message-ID", "") or ""
             prefill["references"] = " ".join(
-                x for x in ([_decode_header(source_msg.get("References", "") or "")]
-                            + ([prefill["in_reply_to"]] if prefill["in_reply_to"] else [])) if x)
+                x
+                for x in (
+                    [_decode_header(source_msg.get("References", "") or "")]
+                    + ([prefill["in_reply_to"]] if prefill["in_reply_to"] else [])
+                )
+                if x
+            )
         elif mode in ("forward", "forward-attachment", "bounce"):
             subj = _decode_header(source_msg.get("Subject", "")) or ""
             if mode == "bounce":
@@ -1750,21 +1930,30 @@ def compose():
                 prefill["subject"] = subj if subj.lower().startswith(("fw:", "fwd:")) else f"Fwd: {subj}"
                 # "forward as attachment" carries the original in the .eml
                 # attachment only; the body stays empty (write_forward_attachments)
-                prefill["body"] = "" if mode == "forward-attachment" else _create_forward_body(
-                    _quoted_part(source_msg, html_mode, prefs, mode), html_mode, source_msg, prefs)
+                prefill["body"] = (
+                    ""
+                    if mode == "forward-attachment"
+                    else _create_forward_body(
+                        _quoted_part(source_msg, html_mode, prefs, mode), html_mode, source_msg, prefs
+                    )
+                )
                 prefill["in_reply_to"] = ""
             if mode == "forward-attachment":
-                attach_original = (_orig_filename(), box.raw_message(
-                    request.values.get("_mbox") or "INBOX", uid_of).as_bytes())
+                attach_original = (
+                    _orig_filename(),
+                    box.raw_message(request.values.get("_mbox") or "INBOX", uid_of).as_bytes(),
+                )
             else:
                 for p in source_msg.walk() if source_msg.is_multipart() else []:
                     if p.get_filename():
-                        attachments_kept.append({
-                            "filename": p.get_filename(),
-                            "ctype": p.get_content_type(),
-                            "data": p.get_payload(decode=True) or b"",
-                            "size": len(p.get_payload(decode=True) or b""),
-                        })
+                        attachments_kept.append(
+                            {
+                                "filename": p.get_filename(),
+                                "ctype": p.get_content_type(),
+                                "data": p.get_payload(decode=True) or b"",
+                                "size": len(p.get_payload(decode=True) or b""),
+                            }
+                        )
         elif mode == "edit":  # edit as new: keep everything verbatim
             prefill["to"] = _decode_header(source_msg.get("To", "")) or ""
             prefill["cc"] = _decode_header(source_msg.get("Cc", "")) or ""
@@ -1772,12 +1961,14 @@ def compose():
             prefill["body"] = _part_body(source_msg, html_mode, prefs, mode)
             for p in source_msg.walk() if source_msg.is_multipart() else []:
                 if p.get_filename():
-                    attachments_kept.append({
-                        "filename": p.get_filename(),
-                        "ctype": p.get_content_type(),
-                        "data": p.get_payload(decode=True) or b"",
-                        "size": len(p.get_payload(decode=True) or b""),
-                    })
+                    attachments_kept.append(
+                        {
+                            "filename": p.get_filename(),
+                            "ctype": p.get_content_type(),
+                            "data": p.get_payload(decode=True) or b"",
+                            "size": len(p.get_payload(decode=True) or b""),
+                        }
+                    )
         else:  # draft / compose-from-message
             prefill["to"] = _decode_header(source_msg.get("To", "")) or ""
             prefill["cc"] = _decode_header(source_msg.get("Cc", "")) or ""
@@ -1785,30 +1976,37 @@ def compose():
             prefill["body"] = _part_body(source_msg, html_mode, prefs, mode)
             for p in source_msg.walk() if source_msg.is_multipart() else []:
                 if p.get_filename():
-                    attachments_kept.append({
-                        "filename": p.get_filename(),
-                        "ctype": p.get_content_type(),
-                        "data": p.get_payload(decode=True) or b"",
-                        "size": len(p.get_payload(decode=True) or b""),
-                    })
+                    attachments_kept.append(
+                        {
+                            "filename": p.get_filename(),
+                            "ctype": p.get_content_type(),
+                            "data": p.get_payload(decode=True) or b"",
+                            "size": len(p.get_payload(decode=True) or b""),
+                        }
+                    )
 
     prefill["html"] = "1" if html_mode else ""
-    if html_mode and mode in ("forward", "forward-attachment") and source_msg is not None \
-       and str(prefs.get("forward_attachment", "0")) != "1":
+    if (
+        html_mode
+        and mode in ("forward", "forward-attachment")
+        and source_msg is not None
+        and str(prefs.get("forward_attachment", "0")) != "1"
+    ):
         # write_compose_attachments() keeps inline (disposition=inline) images
         # only when the body references them; they are carried over as
         # attachments so cid: references keep resolving in the editor.
         for p in source_msg.walk() if source_msg.is_multipart() else []:
-            if p.get_content_disposition() == "inline" and p.get_content_maintype() == "image" \
-               and not p.get_filename():
+            if p.get_content_disposition() == "inline" and p.get_content_maintype() == "image" and not p.get_filename():
                 data = p.get_payload(decode=True) or b""
                 if data and b"cid:" in prefill["body"].encode("utf-8", errors="ignore"):
-                    attachments_kept.append({
-                        "filename": p.get_filename() or "inline.jpg",
-                        "ctype": p.get_content_type(),
-                        "data": data,
-                        "size": len(data),
-                    })
+                    attachments_kept.append(
+                        {
+                            "filename": p.get_filename() or "inline.jpg",
+                            "ctype": p.get_content_type(),
+                            "data": data,
+                            "size": len(data),
+                        }
+                    )
 
     spell_words = {}
     spell_checked = False
@@ -1818,42 +2016,58 @@ def compose():
     sent_ok = False
 
     def _compose_render():
-        return render("mail", "compose.html", prefill=prefill, identities=identities,
-                      responses=store.responses(session["user_id"]),
-                      folders=folders, mode=mode, uid_of=uid_of,
-                      draft_uid=draft_uid, attachments_kept=attachments_kept,
-                      action="compose",
-                      keep_formatting=(mode == "edit"),
-                      html_mode=html_mode,
-                      editor_cfg=editor_config("", prefs),
-                      signatures=identity_signatures(identities, prefs),
-                      identities_map={
-                          str(i["identity_id"]): {
-                              k: v for k, v in
-                              (("email", i["email"]),
-                               ("replyto", i["reply-to"] or None),
-                               ("bcc", i["bcc"] or None)) if v}
-                          for i in identities},
-                      editor_env={
-                          "task": "mail", "action": "compose",
-                          "compose_id": request.form.get("_compose_id")
-                                        or request.args.get("_compose_id")
-                                        or str(secrets.randbelow(900000000) + 100000000),
-                          "draft_autosave": int(prefs.get("draft_autosave", 300) or 0),
-                          "save_localstorage": bool(prefs.get("compose_save_localstorage", 1)),
-                          "user_id": session["user_id"],
-                          "session_id": session.get("sid", ""),
-                          "compose_mode": {"draft": "draft", "edit": "edit",
-                                           "reply": "reply", "replyall": "reply",
-                                           "replylist": "reply"}.get(mode, ""),
-                          "top_posting": int(prefs.get("reply_mode", 0) or 0) > 0,
-                          "sig_below": bool(prefs.get("sig_below")),
-                          "show_sig": str(prefs.get("show_sig", "1")) == "1",
-                          "spell_lang": "en",
-                          "composebody": "composebody"},
-                      spell_words=spell_words, spell_checked=spell_checked,
-                      extwin=extwin, sent_ok=sent_ok,
-                      )
+        return render(
+            "mail",
+            "compose.html",
+            prefill=prefill,
+            identities=identities,
+            responses=store.responses(session["user_id"]),
+            folders=folders,
+            mode=mode,
+            uid_of=uid_of,
+            draft_uid=draft_uid,
+            attachments_kept=attachments_kept,
+            action="compose",
+            keep_formatting=(mode == "edit"),
+            html_mode=html_mode,
+            editor_cfg=editor_config("", prefs),
+            signatures=identity_signatures(identities, prefs),
+            identities_map={
+                str(i["identity_id"]): {
+                    k: v
+                    for k, v in (("email", i["email"]), ("replyto", i["reply-to"] or None), ("bcc", i["bcc"] or None))
+                    if v
+                }
+                for i in identities
+            },
+            editor_env={
+                "task": "mail",
+                "action": "compose",
+                "compose_id": request.form.get("_compose_id")
+                or request.args.get("_compose_id")
+                or str(secrets.randbelow(900000000) + 100000000),
+                "draft_autosave": int(prefs.get("draft_autosave", 300) or 0),
+                "save_localstorage": bool(prefs.get("compose_save_localstorage", 1)),
+                "user_id": session["user_id"],
+                "session_id": session.get("sid", ""),
+                "compose_mode": {
+                    "draft": "draft",
+                    "edit": "edit",
+                    "reply": "reply",
+                    "replyall": "reply",
+                    "replylist": "reply",
+                }.get(mode, ""),
+                "top_posting": int(prefs.get("reply_mode", 0) or 0) > 0,
+                "sig_below": bool(prefs.get("sig_below")),
+                "show_sig": str(prefs.get("show_sig", "1")) == "1",
+                "spell_lang": "en",
+                "composebody": "composebody",
+            },
+            spell_words=spell_words,
+            spell_checked=spell_checked,
+            extwin=extwin,
+            sent_ok=sent_ok,
+        )
 
     if request.method == "POST":
         ident_id = request.form.get("_ident")
@@ -1867,8 +2081,15 @@ def compose():
         html = request.form.get("_is_html") == "1" or request.form.get("_format") == "html"
         if not to and not cc and not bcc:
             flash(i18n.gettext("norecipientwarning", g.lang, domain="messages"), "error")
-            return render("mail", "compose.html", prefill=prefill, identities=identities,
-                          folders=folders, error="No recipients given.", action="compose")
+            return render(
+                "mail",
+                "compose.html",
+                prefill=prefill,
+                identities=identities,
+                folders=folders,
+                error="No recipients given.",
+                action="compose",
+            )
         files = request.files.getlist("_file")
         attachments = [(f.filename, f.mimetype, f.read()) for f in files if f.filename]
         attachments += [(a["filename"], a["ctype"], a["data"]) for a in attachments_kept]
@@ -1876,10 +2097,16 @@ def compose():
             attachments.append((attach_original[0], "message/rfc822", attach_original[1]))
 
         # rcmail_sendmail::send(): 'message_outgoing_body' transforms the body
-        body = ph("message_outgoing_body",
-                  {"body": body, "type": "html" if html else "plain"})["body"]
+        body = ph("message_outgoing_body", {"body": body, "type": "html" if html else "plain"})["body"]
         msg = build_message(
-            ident["email"], ident["name"], to, cc, bcc, subject, body, html=html,
+            ident["email"],
+            ident["name"],
+            to,
+            cc,
+            bcc,
+            subject,
+            body,
+            html=html,
             attachments=attachments or None,
             in_reply_to=request.form.get("_in_reply_to") or None,
             references=request.form.get("_references") or None,
@@ -1896,8 +2123,7 @@ def compose():
             # store silently and report the draft uid so the next save
             # replaces it instead of piling up copies
             try:
-                new_uid = box.save_draft(
-                    wire_bytes(msg), replace_uid=int(draft_uid) if draft_uid else None)
+                new_uid = box.save_draft(wire_bytes(msg), replace_uid=int(draft_uid) if draft_uid else None)
                 ph("message_draftsaved", {"uid": new_uid, "parentuid": draft_uid})
                 return jsonify({"draft_id": new_uid or ""})
             except MailError as e:
@@ -1905,19 +2131,28 @@ def compose():
         # spellcheck_before_send (send.php:134-165): check the body before
         # sending unless this form was already checked (a second Send goes
         # through); found words are highlighted on re-render
-        if (act == "send" and prefs.get("spellcheck_before_send")
-                and body.strip() and not request.form.get("_spellchecked")):
+        if (
+            act == "send"
+            and prefs.get("spellcheck_before_send")
+            and body.strip()
+            and not request.form.get("_spellchecked")
+        ):
             from . import spellchecker
+
             lang = (request.form.get("_lang") or "en_US").replace("-", "_")
-            ignore = {k: bool(prefs.get("spellcheck_ignore_" + k))
-                      for k in ("syms", "nums", "caps")}
+            ignore = {k: bool(prefs.get("spellcheck_ignore_" + k)) for k in ("syms", "nums", "caps")}
             with contextlib.suppress(Exception):
                 words = spellchecker.check(body, lang, ignore=ignore)
                 if words:
                     flash(i18n.gettext("mispellingsfound", g.lang, domain="messages"), "error")
-                    prefill.update(to=", ".join(to), cc=", ".join(cc),
-                                   bcc=", ".join(bcc), subject=subject,
-                                   body=body, html="1" if html else "")
+                    prefill.update(
+                        to=", ".join(to),
+                        cc=", ".join(cc),
+                        bcc=", ".join(bcc),
+                        subject=subject,
+                        body=body,
+                        html="1" if html else "",
+                    )
                     spell_words.update(words)
                     spell_checked = True
                     return _compose_render()
@@ -1939,13 +2174,20 @@ def compose():
             # reply_same_folder (compose.php:241): when the user did not
             # choose an explicit save folder, a reply's copy goes into the
             # folder of the replied-to message
-            if (store_target in (None, "") and prefs.get("reply_same_folder")
-                    and mode in ("reply", "replyall", "replylist")
-                    and uid_of and src_folder):
+            if (
+                store_target in (None, "")
+                and prefs.get("reply_same_folder")
+                and mode in ("reply", "replyall", "replylist")
+                and uid_of
+                and src_folder
+            ):
                 store_target = src_folder
-            box.send(msg, wire_bytes(msg),
-                     store_target=store_target if store_target is not None else None,
-                     extra_rcpts=[a for _d, a in email.utils.getaddresses(bcc) if a])
+            box.send(
+                msg,
+                wire_bytes(msg),
+                store_target=store_target if store_target is not None else None,
+                extra_rcpts=[a for _d, a in email.utils.getaddresses(bcc) if a],
+            )
             ph("message_sent", {"result": True, "mode": mode or "compose"})
             if draft_uid:
                 box.delete_draft(draft_uid)
@@ -1957,14 +2199,14 @@ def compose():
                 cr = str(up.get("collected_recipients", "1"))
                 if cr == "1":
                     import email.utils as _eu
-                    for raw in (to + cc + bcc):
-                        nm, addr = _decode_header(raw.rsplit("<", 1)[0] if "<" in raw else raw), \
-                            _eu.parseaddr(raw)[1]
+
+                    for raw in to + cc + bcc:
+                        nm, addr = _decode_header(raw.rsplit("<", 1)[0] if "<" in raw else raw), _eu.parseaddr(raw)[1]
                         if addr:
-                            store.collected_upsert(session["user_id"], 1,
-                                                   (nm or "").strip() or addr, addr)
+                            store.collected_upsert(session["user_id"], 1, (nm or "").strip() or addr, addr)
                 if mode in ("reply", "replyall", "replylist") and source_msg is not None:
                     import email.utils as _eu
+
                     frm = source_msg.get("From") or ""
                     nm, addr = _decode_header(frm), _eu.parseaddr(frm)[1]
                     if addr and str(up.get("collected_senders", "2")) == "2":
@@ -1980,8 +2222,7 @@ def compose():
             return redirect(url_for("views.mail", _mbox=store_target or box.special("sent") or "INBOX"))
         except MailError as e:
             flash(str(e), "error")
-            prefill.update(to=", ".join(to), cc=", ".join(cc),
-                           subject=subject, body=body, html="1" if html else "")
+            prefill.update(to=", ".join(to), cc=", ".join(cc), subject=subject, body=body, html="1" if html else "")
             return _compose_render()
 
     return _compose_render()
@@ -2016,9 +2257,11 @@ def contacts():
         keys = r.keys()
         col = sort_col if sort_col in keys else "name"
         return ((r[col] if col in keys else "") or r["name"] or r["email"] or "").lower()
+
     allrows = sorted(allrows, key=_key)
     listing_mode = str(aprefs.get("addressbook_name_listing", "0"))
     if listing_mode != "0":
+
         def _disp(r):
             keys = r.keys()
             f = (r["firstname"] or "") if "firstname" in keys else ""
@@ -2030,27 +2273,50 @@ def contacts():
             if listing_mode == "3":
                 return ", ".join(filter(None, [s, f])) or r["name"] or r["email"]
             return r["name"]
+
         allrows = [{**r, "name": _disp(r)} for r in allrows]
     try:
-        size = int(aprefs.get("addressbook_pagesize")
-                   or current_app.config["PAGE_SIZE"]) or current_app.config["PAGE_SIZE"]
+        size = (
+            int(aprefs.get("addressbook_pagesize") or current_app.config["PAGE_SIZE"])
+            or current_app.config["PAGE_SIZE"]
+        )
     except (TypeError, ValueError):
         size = current_app.config["PAGE_SIZE"]
     total = len(allrows)
     pages = max(1, (total + size - 1) // size)
     page = max(1, min(page, pages))
-    rows = allrows[(page - 1) * size: page * size]
+    rows = allrows[(page - 1) * size : page * size]
     more = page < pages
     if request.args.get("_dialog") == "1":
         # Elastic recipient_selector(): the contacts list inside a dialog iframe
-        return render_template("recipient_dialog.html", rows=rows, q=q, source=source,
-                               readonly=readonly, page=page, more=more, total=total, pages=pages)
+        return render_template(
+            "recipient_dialog.html",
+            rows=rows,
+            q=q,
+            source=source,
+            readonly=readonly,
+            page=page,
+            more=more,
+            total=total,
+            pages=pages,
+        )
     groups = store.contactgroups(session["user_id"])
-    return render("addressbook", "addressbook.html", rows=rows, q=q, group=group,
-                  source=source, sources=SOURCES, readonly=readonly,
-                  groups=groups, page=page, more=more, total=total,
-                  list_title=("Search" if q else SOURCES[source]),
-                  search_mods=["name", "firstname", "surname", "email", "*"])
+    return render(
+        "addressbook",
+        "addressbook.html",
+        rows=rows,
+        q=q,
+        group=group,
+        source=source,
+        sources=SOURCES,
+        readonly=readonly,
+        groups=groups,
+        page=page,
+        more=more,
+        total=total,
+        list_title=("Search" if q else SOURCES[source]),
+        search_mods=["name", "firstname", "surname", "email", "*"],
+    )
 
 
 @bp.route("/contact/<int:cid>")
@@ -2061,18 +2327,28 @@ def contact_view(cid):
     if not row:
         abort(404)
     groups = store.contactgroups(session["user_id"])
-    member_of = [g["contactgroup_id"] for g in groups
-                 if cid in [m["contact_id"] for m in store.contactgroup_members(g["contactgroup_id"])]]
+    member_of = [
+        g["contactgroup_id"]
+        for g in groups
+        if cid in [m["contact_id"] for m in store.contactgroup_members(g["contactgroup_id"])]
+    ]
     framed = request.args.get("_framed") == "1"
     has_photo = store.contact_photo(session["user_id"], cid) is not None
     ext = util.vcard_parse(row["vcard"]) if row["vcard"] else util.vcard_parse("")
     _order_group_rows(ext)  # show page uses the same subtype row ordering
     if framed:
-        return render_template("contact_framed.html", row=row, groups=groups,
-                               member_of=member_of, has_photo=has_photo, ext=ext,
-                               task="addressbook")
-    return render("addressbook", "contact.html", row=row, groups=groups,
-                  member_of=member_of, has_photo=has_photo, ext=ext)
+        return render_template(
+            "contact_framed.html",
+            row=row,
+            groups=groups,
+            member_of=member_of,
+            has_photo=has_photo,
+            ext=ext,
+            task="addressbook",
+        )
+    return render(
+        "addressbook", "contact.html", row=row, groups=groups, member_of=member_of, has_photo=has_photo, ext=ext
+    )
 
 
 @bp.get("/contact/<int:cid>/photo")
@@ -2099,12 +2375,19 @@ def _compose_display_name(ext, full_email=False):
     middlename, surname, suffix; when that is empty (or equals the address)
     derive the name from the primary email — full address with
     $full_email, else the local part split on ./-/_ and capitalized."""
-    fn = " ".join(p for p in (ext.get(k) for k in
-                   # array_intersect_key() preserves the record key order,
-                   # which is CONTACT_COLTYPES order: firstname, surname come
-                   # before middlename/prefix/suffix (verified against a live
-                   # RC save: "Grace Hopper Murray Right RADM")
-                   ("firstname", "surname", "middlename", "prefix", "suffix")) if p)
+    fn = " ".join(
+        p
+        for p in (
+            ext.get(k)
+            for k in
+            # array_intersect_key() preserves the record key order,
+            # which is CONTACT_COLTYPES order: firstname, surname come
+            # before middlename/prefix/suffix (verified against a live
+            # RC save: "Grace Hopper Murray Right RADM")
+            ("firstname", "surname", "middlename", "prefix", "suffix")
+        )
+        if p
+    )
     fn = " ".join(fn.split())
     emails = [v for _t, v in (ext.get("emails") or []) if v]
     email0 = emails[0] if emails else ""
@@ -2113,10 +2396,7 @@ def _compose_display_name(ext, full_email=False):
             return email0
         local = email0.split("@", 1)[0]
         m = re.search(r"(.*)[.\-_](.*)", local)
-        if m:
-            fn = " ".join(_php_ucfirst(x) for x in m.groups()).strip()
-        else:
-            fn = _php_ucfirst(local)
+        fn = " ".join(_php_ucfirst(x) for x in m.groups()).strip() if m else _php_ucfirst(local)
     return fn
 
 
@@ -2139,9 +2419,21 @@ def _contact_head_props(ext):
 # subtypes outside the list in record order (stable).
 RC_SUBTYPE_ORDER = {
     "emails": ["home", "work", "other"],
-    "phones": ["home", "home2", "work", "work2", "mobile", "main",
-               "homefax", "workfax", "car", "pager", "video", "assistant",
-               "other"],
+    "phones": [
+        "home",
+        "home2",
+        "work",
+        "work2",
+        "mobile",
+        "main",
+        "homefax",
+        "workfax",
+        "car",
+        "pager",
+        "video",
+        "assistant",
+        "other",
+    ],
     "addresses": ["home", "work", "other"],
     "websites": ["homepage", "work", "blog", "profile", "other"],
     "im": ["aim", "icq", "msn", "yahoo", "jabber", "skype"],
@@ -2151,8 +2443,7 @@ RC_SUBTYPE_ORDER = {
 def _order_group_rows(ext):
     for key, order in RC_SUBTYPE_ORDER.items():
         rows = ext.get(key) or []
-        ext[key] = sorted(rows, key=lambda r, o=order:
-                          o.index(r[0]) if r[0] in o else len(o))
+        ext[key] = sorted(rows, key=lambda r, o=order: o.index(r[0]) if r[0] in o else len(o))
 
 
 @bp.route("/contact/edit/<int:cid>", methods=["GET", "POST"])
@@ -2171,16 +2462,13 @@ def contact_edit(cid):
         if form.get("_upload") == "1":
             up = request.files.get("_photo")
             if up and up.filename and cid and row is not None:
-                data = {k: row[k] for k in
-                        ("name", "email", "firstname", "surname", "vcard", "words")}
-                store.contact_save(session["user_id"], data, contact_id=cid,
-                                   photo=up.read())
-                flash(i18n.gettext("successfullysaved", g.lang, domain="messages"),
-                      "confirmation")
+                data = {k: row[k] for k in ("name", "email", "firstname", "surname", "vcard", "words")}
+                store.contact_save(session["user_id"], data, contact_id=cid, photo=up.read())
+                flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
             if cid:
-                return redirect(url_for("views.contact_edit", cid=cid,
-                                        _framed=_framed_arg()))
+                return redirect(url_for("views.contact_edit", cid=cid, _framed=_framed_arg()))
             return redirect(url_for("views.contact_edit", _framed=_framed_arg()))
+
         # reference contract (contacts/save.php + elastic contact form):
         # _firstname/_surname/... _subtype_email[]+_email[],
         # _subtype_phone[]+_phone[], _subtype_address[]+_street[]/_locality[]/
@@ -2194,12 +2482,13 @@ def contact_edit(cid):
             if legacy and legacy in form:
                 return form.get(legacy) or default
             return default
+
         def pairs(legacy_prefix, key, legacy_type=None):
             vals = form.getlist(key) or form.getlist(legacy_prefix)
             tk = legacy_type or (legacy_prefix.replace("_value", "_type"))
             types = form.getlist(tk)
-            return [(types[i] if i < len(types) else "", v.strip())
-                    for i, v in enumerate(vals) if v and v.strip()]
+            return [(types[i] if i < len(types) else "", v.strip()) for i, v in enumerate(vals) if v and v.strip()]
+
         ext = {
             "prefix": fv("_prefix", "prefix").strip(),
             "firstname": fv("_firstname", "firstname").strip(),
@@ -2222,23 +2511,26 @@ def contact_edit(cid):
             "phones": pairs("_phone_value[]", "_phone[]", "_subtype_phone[]"),
             "websites": pairs("_website_value[]", "_website[]", "_subtype_website[]"),
             "im": pairs("_im_value[]", "_im[]", "_subtype_im[]"),
-            "addresses": [tuple(a) for a in zip(
-                form.getlist("_subtype_address[]") or form.getlist("_atype[]"),
-                form.getlist("_street[]") or form.getlist("_astreet[]"),
-                form.getlist("_locality[]") or form.getlist("_alocality[]"),
-                form.getlist("_zipcode[]") or form.getlist("_azip[]"),
-                form.getlist("_region[]") or form.getlist("_aregion[]"),
-                form.getlist("_country[]") or form.getlist("_acountry[]"),
-                strict=False)  # parallel form lists; trailing empties are dropped below
-                if any(x.strip() for x in a)],
+            "addresses": [
+                tuple(a)
+                for a in zip(
+                    form.getlist("_subtype_address[]") or form.getlist("_atype[]"),
+                    form.getlist("_street[]") or form.getlist("_astreet[]"),
+                    form.getlist("_locality[]") or form.getlist("_alocality[]"),
+                    form.getlist("_zipcode[]") or form.getlist("_azip[]"),
+                    form.getlist("_region[]") or form.getlist("_aregion[]"),
+                    form.getlist("_country[]") or form.getlist("_acountry[]"),
+                    strict=False,
+                )  # parallel form lists; trailing empties are dropped below
+                if any(x.strip() for x in a)
+            ],
         }
         name = fv("_name", "name").strip()
         ext["name"] = name
         # rcmail_action_contacts_save::process_input():285-293 — generate the
         # display name before validation (must happen before emails are
         # normalized), then reset it when it equals the primary address
-        ext["emails"] = [(t, email.utils.parseaddr(v)[1] or v)
-                         for t, v in ext["emails"] if v.strip()]
+        ext["emails"] = [(t, email.utils.parseaddr(v)[1] or v) for t, v in ext["emails"] if v.strip()]
         emails = [v for _t, v in ext["emails"]]
         if not name:
             name = _compose_display_name(ext, full_email=True)
@@ -2247,15 +2539,19 @@ def contact_edit(cid):
                 name = ""
             ext["name"] = name
         firstname, surname = ext["firstname"], ext["surname"]
-        data = {"name": name, "email": ", ".join(emails), "firstname": firstname,
-                "surname": surname, "vcard": util.vcard_encode(ext),
-                "words": util.contact_words(ext)}
+        data = {
+            "name": name,
+            "email": ", ".join(emails),
+            "firstname": firstname,
+            "surname": surname,
+            "vcard": util.vcard_encode(ext),
+            "words": util.contact_words(ext),
+        }
         # rcube_contacts::validate() requires some name or email
         # (rcube_contacts.php:631-639 'nonamewarning'); contacts/save.php:55-58
         # shows it as a warning and re-renders the form with the posted record
         if not (firstname + surname + name) and not emails:
-            flash(i18n.gettext("nonamewarning", g.lang, domain="messages"),
-                  "warning")
+            flash(i18n.gettext("nonamewarning", g.lang, domain="messages"), "warning")
             _contact_head_props(ext)
             return _contactedit_out(row=data, ext=ext, cid=cid, replay=True)
         # RC save.php:62-72: photo '-del-' deletes, otherwise an upload replaces
@@ -2270,9 +2566,8 @@ def contact_edit(cid):
     ext = util.vcard_parse(row["vcard"]) if row and row["vcard"] else util.vcard_parse("")
     # RC add-contact dialog pre-fills the address; we deep-link instead:
     # /contact/new?_email=… starts the form with that address filled in
-    if row is None and (pre := request.args.get("_email")):
-        if not ext["emails"]:
-            ext["emails"] = [("work", pre)]
+    if row is None and (pre := request.args.get("_email")) and not ext["emails"]:
+        ext["emails"] = [("work", pre)]
     _contact_head_props(ext)
     return _contactedit_out(row=row, ext=ext, cid=cid)
 
@@ -2281,19 +2576,32 @@ def _contactedit_out(row, ext, cid, replay=False):
     # reference edit-contact renders bare (html.iframe, no shell) inside the
     # addressbook #contentframe when _framed=1; standalone keeps the full page
     if request.args.get("_framed") == "1":
-        return render_template("contactedit_framed.html", task="addressbook",
-                               row=row, ext=ext, cid=cid, replay=replay,
-                               action="edit" if cid else "add",
-                               contact_types=util.CONTACT_TYPES,
-                               contact_phone_types=util.CONTACT_PHONE_TYPES,
-                               contact_website_types=util.CONTACT_WEBSITE_TYPES,
-                               contact_im_types=util.CONTACT_IM_TYPES)
-    return render("addressbook", "contactedit.html", row=row, ext=ext, cid=cid,
-                  action="edit" if cid else "add", replay=replay,
-                  contact_types=util.CONTACT_TYPES,
-                  contact_phone_types=util.CONTACT_PHONE_TYPES,
-                  contact_website_types=util.CONTACT_WEBSITE_TYPES,
-                  contact_im_types=util.CONTACT_IM_TYPES)
+        return render_template(
+            "contactedit_framed.html",
+            task="addressbook",
+            row=row,
+            ext=ext,
+            cid=cid,
+            replay=replay,
+            action="edit" if cid else "add",
+            contact_types=util.CONTACT_TYPES,
+            contact_phone_types=util.CONTACT_PHONE_TYPES,
+            contact_website_types=util.CONTACT_WEBSITE_TYPES,
+            contact_im_types=util.CONTACT_IM_TYPES,
+        )
+    return render(
+        "addressbook",
+        "contactedit.html",
+        row=row,
+        ext=ext,
+        cid=cid,
+        action="edit" if cid else "add",
+        replay=replay,
+        contact_types=util.CONTACT_TYPES,
+        contact_phone_types=util.CONTACT_PHONE_TYPES,
+        contact_website_types=util.CONTACT_WEBSITE_TYPES,
+        contact_im_types=util.CONTACT_IM_TYPES,
+    )
 
 
 @bp.post("/contact/<int:cid>/delete")
@@ -2326,25 +2634,27 @@ def contact_group_members_toggle():
             store.contactgroup_remove(gid, [cid])
         count = len([m["contact_id"] for m in store.contactgroup_members(gid)])
         key = "contactaddedtogroup" if add else "contactremovedfromgroup"
-        result = {"action": "group-members",
-                  "exec": [{"group": gid, "count": count}],
-                  "label": i18n.gettext(key, g.lang, domain="messages")}
+        result = {
+            "action": "group-members",
+            "exec": [{"group": gid, "count": count}],
+            "label": i18n.gettext(key, g.lang, domain="messages"),
+        }
     if request.headers.get("X-Requested-With") == "XMLHttpRequest":
         return (jsonify(result or {}), 200)
-    flash(i18n.gettext("contactaddedtogroup" if add else "contactremovedfromgroup",
-                       g.lang, domain="messages"), "confirmation")
-    return redirect(url_for("views.contact_view", cid=cid) if cid
-                    else url_for("views.contacts"))
+    flash(
+        i18n.gettext("contactaddedtogroup" if add else "contactremovedfromgroup", g.lang, domain="messages"),
+        "confirmation",
+    )
+    return redirect(url_for("views.contact_view", cid=cid) if cid else url_for("views.contacts"))
 
 
 # ------------------------------------------------------------ RC-style XHRs
 # rcmail_output_json envelope: {"action": <action>, "exec": "cmd;\ncmd;\n"}
 
+
 def _rc_json(action, cmds):
-    payload = {"action": action,
-               "exec": "".join(c + "\n" for c in cmds)}
-    return Response(json.dumps(payload, separators=(",", ":")),
-                    mimetype="application/json")
+    payload = {"action": action, "exec": "".join(c + "\n" for c in cmds)}
+    return Response(json.dumps(payload, separators=(",", ":")), mimetype="application/json")
 
 
 def _js(*args):
@@ -2377,13 +2687,11 @@ def mail_recent():
             continue
         if check_recent:
             # send_unread_count(): 4th arg mark, '' when no change tracking
-            cmds.append("this.set_unread_count(%s);"
-                        % _js(name, unseen, name == "INBOX", ""))
+            cmds.append("this.set_unread_count({});".format(_js(name, unseen, name == "INBOX", "")))
         else:
-            cmds.append("this.set_unread_count(%s);"
-                        % _js(name, unseen, name == "INBOX"))
+            cmds.append("this.set_unread_count({});".format(_js(name, unseen, name == "INBOX")))
         if trash and name == trash:
-            cmds.append("this.set_trash_count(%d);" % total)
+            cmds.append(f"this.set_trash_count({total});")
     return _rc_json("check_recent" if check_recent else "getunread", cmds)
 
 
@@ -2403,8 +2711,7 @@ def mail_autocomplete():
             emails = [e for _t, e in f["emails"] if e]
             if not emails and row["email"]:
                 emails = [row["email"]]
-            name = row["name"] or " ".join(
-                x for x in (row["firstname"], row["surname"]) if x)
+            name = row["name"] or " ".join(x for x in (row["firstname"], row["surname"]) if x)
             idx = 0
             for email in emails:
                 contact = f"{name} <{email}>" if name else email
@@ -2414,11 +2721,14 @@ def mail_autocomplete():
                 if contact in contacts:
                     continue
                 disp = name or email
-                contacts[contact] = {"name": contact, "type": None,
-                                     "id": str(row["contact_id"]),
-                                     "source": "sql",
-                                     "fields": {"name": disp, "email": email}}
-                sort_keys[contact] = "%s %03d" % (disp, idx)
+                contacts[contact] = {
+                    "name": contact,
+                    "type": None,
+                    "id": str(row["contact_id"]),
+                    "source": "sql",
+                    "fields": {"name": disp, "email": email},
+                }
+                sort_keys[contact] = f"{disp} {idx:03d}"
                 idx += 1
                 if len(contacts) >= maxnum:
                     break
@@ -2437,17 +2747,18 @@ def mail_autocomplete():
                 n = 0
             if n and gname not in contacts:
                 label = f"{gname} ({n})"
-                contacts[gname] = {"name": label,
-                                   "fields": {"name": label},
-                                   "type": "group",
-                                   "id": str(grp["contactgroup_id"]),
-                                   "source": "sql"}
+                contacts[gname] = {
+                    "name": label,
+                    "fields": {"name": label},
+                    "type": "group",
+                    "id": str(grp["contactgroup_id"]),
+                    "source": "sql",
+                }
                 sort_keys[gname] = gname
-        result = [contacts[k]
-                  for k in sorted(sort_keys, key=sort_keys.__getitem__)]
+        result = [contacts[k] for k in sorted(sort_keys, key=sort_keys.__getitem__)]
     else:
         result = []
-    cmd = "this.ksearch_query_results(%s);" % _js(result, term, reqid)
+    cmd = f"this.ksearch_query_results({_js(result, term, reqid)});"
     return _rc_json("autocomplete", [cmd])
 
 
@@ -2481,8 +2792,11 @@ def contacts_export():
             ext["emails"] = [("work", e.strip()) for e in r["email"].split(",")]
         parts.append(util.vcard_export(ext, categories=cat_of.get(r["contact_id"], [])))
     body = "".join(parts)
-    return Response(body, content_type="text/vcard; charset=UTF-8", headers={
-        "Content-Disposition": 'attachment; filename="contacts.vcf"'})
+    return Response(
+        body,
+        content_type="text/vcard; charset=UTF-8",
+        headers={"Content-Disposition": 'attachment; filename="contacts.vcf"'},
+    )
 
 
 @bp.post("/contacts/import")
@@ -2504,9 +2818,14 @@ def contacts_import():
         if not name and not emails:
             continue
         name = name or (emails[0] if emails else "Unnamed")
-        data = {"name": name, "email": ", ".join(emails),
-                "firstname": ext["firstname"], "surname": ext["surname"],
-                "vcard": util.vcard_encode(ext), "words": util.contact_words(ext)}
+        data = {
+            "name": name,
+            "email": ", ".join(emails),
+            "firstname": ext["firstname"],
+            "surname": ext["surname"],
+            "vcard": util.vcard_encode(ext),
+            "words": util.contact_words(ext),
+        }
         store.contact_save(session["user_id"], data)
         count += 1
     flash(f"{count} contact(s) imported.", "confirmation")
@@ -2528,9 +2847,20 @@ def contact_qrcode(cid):
         abort(404)
     ext = util.vcard_parse(row["vcard"]) if row["vcard"] else {}
     # QR input is limited: only common fields, as Roundcube does
-    fields = {k: ext.get(k) for k in ("name", "firstname", "surname", "middlename",
-                                      "nickname", "organization", "jobtitle",
-                                      "prefix", "suffix")}
+    fields = {
+        k: ext.get(k)
+        for k in (
+            "name",
+            "firstname",
+            "surname",
+            "middlename",
+            "nickname",
+            "organization",
+            "jobtitle",
+            "prefix",
+            "suffix",
+        )
+    }
     fields["emails"] = ext.get("emails")
     fields["phones"] = ext.get("phones")
     data = util.vcard_encode({k: v for k, v in fields.items() if v})
@@ -2629,6 +2959,7 @@ def contact_group_remove(cid, gid):
 
 # ---------------------------------------------------------------- settings
 
+
 @bp.route("/settings")
 @login_required
 def settings():
@@ -2645,8 +2976,7 @@ def settings_preferences(section=None):
     prefs = dict(store.get_user_prefs(session["user_id"]))
     framed = request.args.get("_framed") == "1"
     if request.method == "POST":
-        return prefs_save(store, prefs, request.form.get("_section") or "general",
-                          framed=framed)
+        return prefs_save(store, prefs, request.form.get("_section") or "general", framed=framed)
     folders = [f["name"] for f in folders_for_menu()]
     sections = i18n.translate_sections(PREF_SECTIONS(prefs, folders), g.lang)
     if section not in sections:
@@ -2654,8 +2984,7 @@ def settings_preferences(section=None):
     blocks = sections[section]["blocks"]
     if framed:
         # reference: section forms render bare inside #preferences-frame
-        return render_template("prefs_framed.html", task="settings",
-                               sections=sections, section=section, blocks=blocks)
+        return render_template("prefs_framed.html", task="settings", sections=sections, section=section, blocks=blocks)
     # Deep link: show the landing with this section opened in the frame.
     return render_settings_landing(open_section=section)
 
@@ -2664,10 +2993,16 @@ def render_settings_landing(open_section=None):
     store = get_store()
     prefs = dict(store.get_user_prefs(session["user_id"]))
     folders = [f["name"] for f in folders_for_menu()]
-    return render("settings", "preferences.html", prefs=prefs, mail_folders=folders,
-                  sections=i18n.translate_sections(PREF_SECTIONS(prefs, folders), g.lang),
-                  section=None, blocks=[],
-                  open_section=open_section)
+    return render(
+        "settings",
+        "preferences.html",
+        prefs=prefs,
+        mail_folders=folders,
+        sections=i18n.translate_sections(PREF_SECTIONS(prefs, folders), g.lang),
+        section=None,
+        blocks=[],
+        open_section=open_section,
+    )
 
 
 def prefs_save(store, prefs, section, framed=False):
@@ -2684,19 +3019,19 @@ def prefs_save(store, prefs, section, framed=False):
         # the whole window (parent frame included) so the task-menu labels
         # re-render translated without any manual refresh.
         from html import escape as _esc
-        flash(i18n.gettext("successfullysaved", g.lang, domain="messages"),
-              "confirmation")
+
+        flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
         return Response(
-            "<!DOCTYPE html><html><body><div class=\"voice\">"
+            '<!DOCTYPE html><html><body><div class="voice">'
             + _esc(i18n.gettext("successfullysaved", g.lang, domain="messages"))
             + "</div><script>setTimeout(function(){var t=window;"
             "if (window.parent !== window) { try { void window.parent.document;"
             " t = window.parent; } catch (e) {} } t.location.reload();"
-            "}, 500);</script></body></html>")
+            "}, 500);</script></body></html>"
+        )
     flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
     if framed:
-        return redirect(url_for("views.settings_preferences", section=section,
-                                _framed="1"))
+        return redirect(url_for("views.settings_preferences", section=section, _framed="1"))
     return redirect(url_for("views.settings_preferences", section=section))
 
 
@@ -2711,11 +3046,15 @@ def responses():
         edit_row = store.response(session["user_id"], int(edit))
         if not edit_row:
             abort(404)
-    return render("settings", "responses.html", rows=rows,
-                  editing=bool(edit), edit_row=edit_row,
-                  framed_page=request.args.get("_framed") == "1",
-                  editor_cfg=editor_config(
-                      "response", store.get_user_prefs(session["user_id"])))
+    return render(
+        "settings",
+        "responses.html",
+        rows=rows,
+        editing=bool(edit),
+        edit_row=edit_row,
+        framed_page=request.args.get("_framed") == "1",
+        editor_cfg=editor_config("response", store.get_user_prefs(session["user_id"])),
+    )
 
 
 @bp.route("/settings/responses", methods=["POST"])
@@ -2734,8 +3073,7 @@ def response_edit(rid=None):
     def out(row_ctx):
         cfg = editor_config("response", store.get_user_prefs(session["user_id"]))
         if framed:
-            return render_template("responseedit_framed.html", task="settings",
-                                   row=row_ctx, editor_cfg=cfg)
+            return render_template("responseedit_framed.html", task="settings", row=row_ctx, editor_cfg=cfg)
         return render("settings", "responseedit.html", row=row_ctx, editor_cfg=cfg)
 
     if request.method == "POST":
@@ -2748,14 +3086,18 @@ def response_edit(rid=None):
         is_html_val = request.form.get("_is_html", request.form.get("html"))
         is_html = 1 if is_html_val and is_html_val != "0" else 0
         if name and body.strip():
-            new_id = store.response_save(session["user_id"], name, body,
-                                         html=is_html, rid=rid)
+            new_id = store.response_save(session["user_id"], name, body, html=is_html, rid=rid)
             flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
             # reference keeps the record open in the edit frame after save;
             # app.js update_response_row(id, name, add) then syncs the parent list
-            return redirect(url_for("views.response_edit", rid=new_id,
-                                    _framed=_framed_arg(),
-                                    _saved="insert" if rid is None else "update"))
+            return redirect(
+                url_for(
+                    "views.response_edit",
+                    rid=new_id,
+                    _framed=_framed_arg(),
+                    _saved="insert" if rid is None else "update",
+                )
+            )
         # response_save.php:55-59: show_message('formincomplete','error') +
         # overwrite_action('edit-response', post) - the form re-renders with
         # the submitted values and a sticky error box
@@ -2783,11 +3125,15 @@ def identities():
         edit_row = store.identity(session["user_id"], int(edit))
         if not edit_row:
             abort(404)
-    return render("settings", "identities.html", rows=rows,
-                  editing=bool(edit), edit_row=edit_row,
-                  framed_page=request.args.get("_framed") == "1",
-                  editor_cfg=editor_config(
-                      "identity", store.get_user_prefs(session["user_id"])))
+    return render(
+        "settings",
+        "identities.html",
+        rows=rows,
+        editing=bool(edit),
+        edit_row=edit_row,
+        framed_page=request.args.get("_framed") == "1",
+        editor_cfg=editor_config("identity", store.get_user_prefs(session["user_id"])),
+    )
 
 
 @bp.route("/settings/identities", methods=["POST"])
@@ -2808,29 +3154,31 @@ def identity_edit(iid=None):
         # the standalone (non-framed) URL keeps the full page shell
         cfg = editor_config("identity", store.get_user_prefs(session["user_id"]))
         if framed:
-            return render_template("identityedit_framed.html", task="settings",
-                                   row=row_ctx, editor_cfg=cfg)
+            return render_template("identityedit_framed.html", task="settings", row=row_ctx, editor_cfg=cfg)
         return render("settings", "identityedit.html", row=row_ctx, editor_cfg=cfg)
 
     if request.method == "POST":
         data = identity_from_form(request.form, row)
         # identity_save.php: empty email -> warning + re-render form (#keep post)
         if not data["email"]:
-            flash(i18n.gettext("noemailwarning", g.lang, domain="messages"),
-                  "warning")
+            flash(i18n.gettext("noemailwarning", g.lang, domain="messages"), "warning")
             return out(data)
         # identity_save.php:93-97: rcube_utils::check_email failure
         if not util.check_email(data["email"]):
-            flash(i18n.gettext("emailformaterror", g.lang, domain="messages",
-                               vars={"email": data["email"]}), "error")
+            flash(i18n.gettext("emailformaterror", g.lang, domain="messages", vars={"email": data["email"]}), "error")
             return out(data)
         new_id = store.identity_save(session["user_id"], data, identity_id=iid)
         flash(i18n.gettext("successfullysaved", g.lang, domain="messages"), "confirmation")
         # reference keeps the record open in the edit frame after save;
         # app.js update_identity_row(id, name, add) then syncs the parent list
-        return redirect(url_for("views.identity_edit", iid=new_id or iid,
-                                _framed=_framed_arg(),
-                                _saved="insert" if iid is None else "update"))
+        return redirect(
+            url_for(
+                "views.identity_edit",
+                iid=new_id or iid,
+                _framed=_framed_arg(),
+                _saved="insert" if iid is None else "update",
+            )
+        )
     return out(row)
 
 
@@ -2844,6 +3192,7 @@ def identity_delete(iid):
 
 
 # ---------------------------------------------------------------- folders
+
 
 @bp.route("/settings/folders")
 @login_required
@@ -2875,20 +3224,24 @@ def folders_view():
     # delete protection follows folder_edit/folders_list semantics: only
     # INBOX and folders configured as a special *_mbox are protected
     # (a folder merely *named* Drafts stays deletable — verified live)
-    configured = {uprefs.get(k) for k in
-                  ("drafts_mbox", "sent_mbox", "junk_mbox", "trash_mbox",
-                   "archive_mbox") if uprefs.get(k)}
+    configured = {
+        uprefs.get(k) for k in ("drafts_mbox", "sent_mbox", "junk_mbox", "trash_mbox", "archive_mbox") if uprefs.get(k)
+    }
     for f in allf:
         msgs, _size = box.imap.status_size(f["name"])
         f["messages"] = msgs
-        f["protected"] = (f["name"].upper() == "INBOX"
-                          or f["name"] in configured)
+        f["protected"] = f["name"].upper() == "INBOX" or f["name"] in configured
         f["li_id"] = "rcmli" + base64.b64encode(f["name"].encode()).decode()
-    return render("settings", "folders.html", all_folders=allf, tree=roots,
-                  folder_filter=flt if flt is not None else "---",
-                  q=q or "",
-                  framed_page=request.args.get("_framed") == "1",
-                  edit_folder=edit if edit else None)
+    return render(
+        "settings",
+        "folders.html",
+        all_folders=allf,
+        tree=roots,
+        folder_filter=flt if flt is not None else "---",
+        q=q or "",
+        framed_page=request.args.get("_framed") == "1",
+        edit_folder=edit if edit else None,
+    )
 
 
 def _folder_roots(allf):
@@ -2906,8 +3259,7 @@ def _folder_roots(allf):
             roots.append(f)
     for f in allf:
         f["sub"].sort(key=lambda x: x["name"].lower())
-    roots.sort(key=lambda x: (0 if x["name"].upper() == "INBOX" else 1,
-                              x["name"].lower()))
+    roots.sort(key=lambda x: (0 if x["name"].upper() == "INBOX" else 1, x["name"].lower()))
     return roots
 
 
@@ -2916,19 +3268,19 @@ def _show_bytes(n):
     by 1023 with the localized byte units (B/KB/MB/GB)."""
     if not n:
         return "0"
-    for unit, div in (("GB", 1024 ** 3), ("MB", 1024 ** 2), ("KB", 1024)):
+    for unit, div in (("GB", 1024**3), ("MB", 1024**2), ("KB", 1024)):
         if n >= div:
-            return "%d %s" % (round(n / 1023 / (div / 1023)), unit)
-    return "%d B" % n
+            return f"{round(n / 1023 / (div / 1023))} {unit}"
+    return f"{n} B"
 
 
 def _folderedit_framed(box, uprefs, allf, edit):
     is_new = edit == "new"
     # folder_edit.php: a folder configured as special (or INBOX) shows a
     # plaintext location block; a merely same-named folder stays editable
-    configured = {uprefs.get(k) for k in
-                  ("drafts_mbox", "sent_mbox", "junk_mbox", "trash_mbox",
-                   "archive_mbox") if uprefs.get(k)}
+    configured = {
+        uprefs.get(k) for k in ("drafts_mbox", "sent_mbox", "junk_mbox", "trash_mbox", "archive_mbox") if uprefs.get(k)
+    }
     is_inbox = (not is_new) and (edit.upper() == "INBOX" or edit in configured)
     disp_name = edit.rsplit("/", 1)[-1]
     for f in allf:
@@ -2945,6 +3297,7 @@ def _folderedit_framed(box, uprefs, allf, edit):
         for f in nodes:
             parents.append((f["name"], f["display_name"], depth))
             walk(f["sub"], depth + 1)
+
     for f in allf:
         f.setdefault("sub", [])
     walk(_folder_roots(allf), 0)
@@ -2952,14 +3305,22 @@ def _folderedit_framed(box, uprefs, allf, edit):
     if not is_new:
         m, z = box.imap.status_size(edit)
         msgs, size_str = m, _show_bytes(z or 0)
-    return render_template("folderedit_framed.html", task="settings",
-                           lang=uprefs.get("language") or "en_US",
-                           edit_folder=edit, is_new=is_new, is_inbox=is_inbox,
-                           disp_name=disp_name,
-                           name_value="" if is_new else edit.rsplit("/", 1)[-1],
-                           parent_of=parent_of, parents=parents,
-                           viewmode=viewmode, msgs=msgs, size_str=size_str,
-                           saved=request.args.get("_saved") == "1")
+    return render_template(
+        "folderedit_framed.html",
+        task="settings",
+        lang=uprefs.get("language") or "en_US",
+        edit_folder=edit,
+        is_new=is_new,
+        is_inbox=is_inbox,
+        disp_name=disp_name,
+        name_value="" if is_new else edit.rsplit("/", 1)[-1],
+        parent_of=parent_of,
+        parents=parents,
+        viewmode=viewmode,
+        msgs=msgs,
+        size_str=size_str,
+        saved=request.args.get("_saved") == "1",
+    )
 
 
 @bp.post("/settings/folders")
@@ -2987,8 +3348,7 @@ def folders_act():
             if len(nm) > 128:
                 return i18n.gettext("nametoolong", g.lang, domain="messages")
             if "/" in nm:  # hierarchy delimiter
-                return (i18n.gettext("forbiddencharacter", g.lang,
-                                     domain="messages") + " (/)")
+                return i18n.gettext("forbiddencharacter", g.lang, domain="messages") + " (/)"
             return None
 
         if act == "create":
@@ -3008,8 +3368,7 @@ def folders_act():
                     # framed save: land on the new folder's editor, whose
                     # inline script bounces the top window to the list with
                     # the folder selected (reference reload-list contract)
-                    return redirect(url_for("views.folders_view", _edit=full,
-                                            _framed="1", _saved="1"))
+                    return redirect(url_for("views.folders_view", _edit=full, _framed="1", _saved="1"))
                 return redirect(url_for("views.folders_view"))
         elif act == "rename":
             old = request.form.get("folder")
@@ -3019,11 +3378,9 @@ def folders_act():
                 # protected (special) folder editor: no name is submitted,
                 # only the view mode persists
                 save_viewmode(old)
-                flash(i18n.gettext("folderupdated", g.lang, domain="messages"),
-                      "confirmation")
+                flash(i18n.gettext("folderupdated", g.lang, domain="messages"), "confirmation")
                 if _framed_arg():
-                    return redirect(url_for("views.folders_view", _edit=old,
-                                            _framed="1", _saved="1"))
+                    return redirect(url_for("views.folders_view", _edit=old, _framed="1", _saved="1"))
                 return redirect(url_for("views.folders_view"))
             if old:
                 error = folder_name_error(new)
@@ -3045,8 +3402,7 @@ def folders_act():
                 save_viewmode(target)
                 flash(i18n.gettext("folderupdated", g.lang, domain="messages"), "confirmation")
                 if _framed_arg():
-                    return redirect(url_for("views.folders_view", _edit=target,
-                                            _framed="1", _saved="1"))
+                    return redirect(url_for("views.folders_view", _edit=target, _framed="1", _saved="1"))
                 return redirect(url_for("views.folders_view"))
         elif act == "delete":
             name = request.form.get("folder")
@@ -3058,8 +3414,7 @@ def folders_act():
             if name:
                 box.empty_folder(name)
                 # folder_purge.php:55 'folderpurged' confirmation
-                flash(i18n.gettext("folderpurged", g.lang, domain="messages"),
-                      "confirmation")
+                flash(i18n.gettext("folderpurged", g.lang, domain="messages"), "confirmation")
         elif act in ("subscribe", "unsubscribe"):
             # reference: settings folder_subscribe/folder_unsubscribe actions
             name = request.form.get("folder")
@@ -3076,6 +3431,7 @@ def folders_act():
 
 # ---------------------------------------------------------------- about
 
+
 def _about_plugin_info():
     """rcmail_action_settings_about::plugins_list(): metadata of the active
     plugins (plus their required plugins), sorted by name; rows are only
@@ -3087,7 +3443,7 @@ def _about_plugin_info():
         if info:
             plugin_info[name] = info
     # load info from required plugins, too
-    for name, info in list(plugin_info.items()):
+    for _name, info in list(plugin_info.items()):
         for req in info.get("require") or []:
             if req not in plugin_info:
                 req_info = api.get_info(req)
@@ -3111,6 +3467,5 @@ def about():
     plugins = _about_plugin_info()
     if request.args.get("_framed") == "1":
         # reference: about dialog loads `?_task=settings&_action=about&_framed=1`
-        return render_template("about_framed.html", task="settings",
-                               plugins=plugins)
+        return render_template("about_framed.html", task="settings", plugins=plugins)
     return render("settings", "about.html", plugins=plugins)
