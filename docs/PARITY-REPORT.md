@@ -44,6 +44,23 @@ oracles were executed inside the reference pod and locked into the test suite.
 - Identity rows `Name <email>` + reference ordering; responses/folders CRUD
   fields match; folders view gains parent + per-folder list/threads view mode.
 
+## Message operations — parity (A/B vs reference, IMAP-verified)
+- List search semantics: `_sf=subject|from|body|text|all` hit sets verified
+  against seeded fixtures (5/5).
+- Craft ops: flag/flagtoggle/unread/markallread row classes; copy (source
+  kept), move, delete→Trash verified by message identity — note IMAP COPY/
+  MOVE assigns new UIDs, checks must key on subject, not source UID.
+- Delete semantics decoded from reference: Roundcube's server `delete`
+  action is PERMANENT (raw \Deleted+expunge); the UI 'delete' is JS that
+  issues move-to-Trash (app.js move_messages), with permanent delete inside
+  Trash, in delete_junk, or on Shift. Craft's server-side delete replicates
+  the effective UI behavior incl. all three edge cases.
+- RC web-ops A/B'd in the shared mailbox: reference XHR move/delete succeed
+  (`_target_mbox` is the move target param) and are visible from Craft
+  instantly (shared Dovecot).
+- New: `undelete` ported (clears \Deleted; the Mark → "As not deleted"
+  popup item shown iff `flag_for_deletion && !skip_deleted`, per elastic).
+
 ## Views — visual verdict (light + dark)
 Geometry + computed-style diff (taskmenu, toolbar, list, tabs, search form,
 footer, list header, first row) vs reference, both modes:
