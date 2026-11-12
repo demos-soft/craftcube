@@ -65,6 +65,11 @@ def _load_user():
     if session.get("user_id"):
         g.user = get_store().get_user(session["username"])
         g.prefs = get_store().get_user_prefs(session["user_id"])
+        # Roundcube keeps browser-detected timezone in the *session*
+        # (rcmail::get_offset/remote_autodetect); the 'timezone' preference
+        # stays 'auto' until the user picks a zone explicitly.
+        if g.prefs.get("timezone") in (None, "", "auto"):
+            g.prefs["timezone"] = session.get("tz") or None
 
 
 def folder_label(name, prefs=None):
@@ -169,10 +174,11 @@ def login():
             session["user_id"] = uid
             session["username"] = username
             session["imap_password"] = password
-            # Roundcube stores the browser-detected timezone at login
+            # Roundcube keeps the browser-detected timezone in the session
+            # only (the stored preference remains 'auto' unless chosen)
             tz = request.form.get("_timezone")
             if tz and tz != "_default_":
-                store.set_user_pref(uid, "timezone", tz)
+                session["tz"] = tz
             # make sure default identity exists
             if not store.identities(uid):
                 store.identity_save(uid, {
@@ -1187,57 +1193,46 @@ def settings():
     return render_settings_landing()
 
 
-@bp.post("/settings/password")
-@login_required
-def settings_password():
-    store = get_store()
-    old = request.form.get("_current", "")
-    new = request.form.get("_new", "")
-    confirm = request.form.get("_confirm", "")
-    user = store.get_user(session["username"])
-    if not verify_password(old, user["password"]):
-        flash("Current password is incorrect.", "error")
-    elif len(new) < 4:
-        flash("New password too short.", "error")
-    elif new != confirm:
-        flash("New passwords do not match.", "error")
-    else:
-        store.set_user_password(session["user_id"], hash_password(new))
-        flash("Password changed.", "confirmation")
-        session["imap_password"] = new
-    return redirect(url_for("views.settings"))
-
-
 @bp.route("/settings/preferences", methods=["GET", "POST"])
 @bp.route("/settings/preferences/<section>", methods=["GET", "POST"])
 @login_required
 def settings_preferences(section=None):
     store = get_store()
     prefs = dict(store.get_user_prefs(session["user_id"]))
+    framed = request.args.get("_framed") == "1"
     if request.method == "POST":
-        return prefs_save(store, prefs, request.form.get("_section") or "general")
-    if section not in PREF_SECTIONS(prefs, [f["name"] for f in folders_for_menu()]):
-        return render_settings_landing()
+        return prefs_save(store, prefs, request.form.get("_section") or "general",
+                          framed=framed)
     folders = [f["name"] for f in folders_for_menu()]
     sections = PREF_SECTIONS(prefs, folders)
-    return render("settings", "preferences.html", prefs=prefs, mail_folders=folders,
-                  sections=sections, section=section,
-                  blocks=sections[section]["blocks"])
+    if section not in sections:
+        return render_settings_landing()
+    blocks = sections[section]["blocks"]
+    if framed:
+        # reference: section forms render bare inside #preferences-frame
+        return render_template("prefs_framed.html", task="settings",
+                               sections=sections, section=section, blocks=blocks)
+    # Deep link: show the landing with this section opened in the frame.
+    return render_settings_landing(open_section=section)
 
 
-def render_settings_landing():
+def render_settings_landing(open_section=None):
     store = get_store()
     prefs = dict(store.get_user_prefs(session["user_id"]))
     folders = [f["name"] for f in folders_for_menu()]
     return render("settings", "preferences.html", prefs=prefs, mail_folders=folders,
-                  sections=PREF_SECTIONS(prefs, folders), section=None, blocks=[])
+                  sections=PREF_SECTIONS(prefs, folders), section=None, blocks=[],
+                  open_section=open_section)
 
 
-def prefs_save(store, prefs, section):
+def prefs_save(store, prefs, section, framed=False):
     prefs_sections.apply_form(prefs, request.form)
     for key, value in list(prefs.items()):
         store.set_user_pref(session["user_id"], key, value)
     flash("Preferences saved.", "confirmation")
+    if framed:
+        return redirect(url_for("views.settings_preferences", section=section,
+                                _framed="1"))
     return redirect(url_for("views.settings_preferences", section=section))
 
 

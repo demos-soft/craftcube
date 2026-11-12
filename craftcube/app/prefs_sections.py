@@ -113,6 +113,8 @@ def sections(prefs, folders):
             ]),
             ("browser", "Browser Options", [
                 _cb("standard_windows", "Handle popups as standard windows", p),
+                {"type": "mailto", "name": "_mailto_handler", "id": "mailtoprotohandler",
+                 "title": "Register protocol handler for mailto: links"},
             ]),
         ]},
         "mailbox": {"label": "Mailbox View", "blocks": [

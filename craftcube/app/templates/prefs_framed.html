@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="iframe">
+<head>
+  <meta charset="utf-8">
+  <title>{{ product_name }} :: Preferences</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='deps/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='craftcube.css') }}">
+  <script>
+  try {
+    if (document.cookie.indexOf('colorMode=dark') > -1
+      || (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.className += ' dark-mode';
+    }
+  } catch (e) { }
+  </script>
+</head>
+<body class="task-settings action-edit-prefs formcontainer">
+  <!-- skins/elastic/templates/settings.html section frame (post-ui.js state) -->
+  <h1 class="voice">{{ sections[section].label }}</h1>
+  <div class="formcontent">
+    <form name="form" method="post"
+          action="{{ url_for('views.settings_preferences', section=section, _framed=1) }}"
+          class="propform cols-sm-6-6">
+      <input type="hidden" name="_section" value="{{ section }}">
+      {# ui.js focuses the first form field when the frame loads #}
+      {% set ns = namespace(done=false) %}
+      {% for class, legend, fields in blocks %}
+      <fieldset class="{{ class }}"><legend>{{ legend }}</legend>
+        <table class="propform cols-sm-6-6"><tbody>
+          {% for f in fields %}
+          {% if f.type == 'mailto' %}
+          <tr class="form-group row">
+            <td colspan="2" style="width: 100%;"><a href="#" id="mailtoprotohandler">{{ f.title }}</a><span
+                class="mailtoprotohandler-status"></span></td>
+          </tr>
+          {% elif f.type == 'checkbox' %}
+          <tr class="form-group row form-check">
+            <td class="title col-sm-6"><label for="{{ f.id }}" class="col-form-label">{{ f.title }}</label></td>
+            <td class="col-sm-6">
+              <div class="custom-control custom-switch">
+                <input name="{{ f.name }}" id="{{ f.id }}" value="1"{{ ' checked' if f.checked }}
+                       type="checkbox" class="form-check-input custom-control-input">
+                <label for="{{ f.id }}" class="custom-control-label" title=""></label>
+              </div>
+            </td>
+          </tr>
+          {% else %}
+          <tr class="form-group row">
+            <td class="title col-sm-6"><label for="{{ f.id }}" class="col-form-label">{{ f.title }}</label></td>
+            <td class="col-sm-6">
+              {% if f.type == 'select' %}
+              <select name="{{ f.name }}" id="{{ f.id }}" class="custom-select form-control pretty-select"{{ ' autofocus' if not ns.done and loop.first and (ns.done, True)[1] }}>
+                {% for v, l in f.options %}
+                <option value="{{ v }}"{{ ' selected' if v == f.value }}>{{ l }}</option>
+                {% endfor %}
+              </select>
+              {% else %}
+              <input name="{{ f.name }}" id="{{ f.id }}" size="{{ f.size }}" class="form-control"
+                     value="{{ f.value }}" type="text"{{ ' autofocus' if not ns.done and loop.first and (ns.done, True)[1] }}>
+              {% endif %}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+        </tbody></table>
+      </fieldset>
+      {% endfor %}
+    </form>
+  </div>
+  <div class="formbuttons">
+    <button class="btn btn-primary submit" type="submit" value="Save">Save</button>
+  </div>
+  <div id="messagestack">
+    {%- with messages = get_flashed_messages(with_categories=true) %}
+    {%- for cat, msg in messages %}
+    <div class="alert alert-{{ 'danger' if cat == 'error' else 'success' if cat == 'confirmation' else 'info' }}">
+      <span>{{ msg }}</span>
+    </div>
+    {%- endfor %}
+    {%- endwith %}
+  </div>
+  <script>
+  // craftcube.js initStack(): click- or timeout-dismiss the toasts.
+  (function () {
+    document.querySelectorAll('#messagestack .alert').forEach(function (el) {
+      el.addEventListener('click', function () { el.remove(); });
+      setTimeout(function () {
+        el.style.transition = 'opacity .5s';
+        el.style.opacity = '0';
+        setTimeout(function () { el.remove(); }, 600);
+      }, 6000);
+    });
+  })();
+  </script>
+  <script>
+  // ui.js check_protocol_handler(): the mailto registration link only works
+  // where the browser supports protocol handlers.
+  (function () {
+    var a = document.getElementById('mailtoprotohandler');
+    if (!a) return;
+    if (!window.navigator.registerProtocolHandler) {
+      a.parentNode.parentNode.classList.add('hidden');
+      return;
+    }
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      try {
+        window.navigator.registerProtocolHandler('mailto',
+          window.location.origin + '/compose?_to=%s', document.title.split(' :: ')[0]);
+        a.parentNode.querySelector('.mailtoprotohandler-status').textContent = ' (registered)';
+      } catch (err) { /* browser denied */ }
+    });
+  })();
+  </script>
+</body>
+</html>

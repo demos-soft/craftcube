@@ -748,6 +748,31 @@
     });
   });
 
+  // ------------------------------- rows opening a section in a local frame
+  // (ui.js: clicking a settings section row loads the form into
+  //  #preferences-frame and marks the row selected, URL unchanged)
+  document.querySelectorAll('tr[data-framed-href], li[data-framed-href]').forEach(function (row) {
+    function go() {
+      var frame = document.getElementById('preferences-frame');
+      if (!frame) return;
+      var table = row.closest('table, ul');
+      if (table) table.querySelectorAll('.selected').forEach(function (el) {
+        el.classList.remove('selected', 'focused');
+        el.setAttribute('aria-selected', 'false');
+      });
+      row.classList.add('selected', 'focused');
+      row.setAttribute('aria-selected', 'true');
+      frame.src = row.getAttribute('data-framed-href');
+    }
+    row.addEventListener('click', function (e) {
+      if (e.target.closest('a, input, button')) return;
+      go();
+    });
+    row.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') go();
+    });
+  });
+
   // --------------------------------------------------- empty-list info message
   // (ui.js: data-label-msg/-ext/-create-command -> div.listing-info)
   document.querySelectorAll('table[data-label-msg], ul[data-label-msg]').forEach(function (table) {

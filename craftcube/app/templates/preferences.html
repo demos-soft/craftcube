@@ -15,9 +15,9 @@
         <table id="sections-table" class="listing iconized settings-default-icon" role="listbox" data-list="sections_list">
           <tbody>
             {% for key, s in sections.items() %}
-            <tr id="rcmrow{{ key }}" class="{{ key }}{{ ' selected' if key == section }}"
-                tabindex="0" role="option" aria-selected="{{ 'true' if key == section else 'false' }}"
-                data-href="{{ url_for('views.settings_preferences', section=key) }}">
+            <tr id="rcmrow{{ key }}" class="{{ key }}{{ ' selected focused' if key == open_section }}"
+                tabindex="0" role="option" aria-selected="{{ 'true' if key == open_section else 'false' }}"
+                data-framed-href="{{ url_for('views.settings_preferences', section=key, _framed='1') }}">
               <td class="section">{{ s.label }}</td>
             </tr>
             {% endfor %}
@@ -26,69 +26,15 @@
       </div>
     </div>
 
-    <div id="layout-content"{{ ' class="selected"'|safe if section }} role="main">
+    <div id="layout-content" role="main">
       <div class="header">
         <a class="button icon back-list-button" href="#back"><span class="inner">Back</span></a>
-        <span class="header-title">{{ sections[section].label if section }}</span>
+        <span class="header-title">{{ 'Preferences' if open_section }}</span>
       </div>
-      {% if section %}
-      <div class="content">
-        <form name="form" method="post" action="{{ url_for('views.settings_preferences', section=section) }}" class="propform cols-sm-6-6">
-          <input type="hidden" name="_section" value="{{ section }}">
-          {% for class, legend, fields in blocks %}
-          <fieldset class="{{ class }}"><legend>{{ legend }}</legend>
-            <table class="propform cols-sm-6-6"><tbody>
-              {% for f in fields %}
-              <tr>
-                <td class="title"><label for="{{ f.id }}">{{ f.title }}</label></td>
-                <td>
-                  {% if f.type == 'select' %}
-                  <select name="{{ f.name }}" id="{{ f.id }}" class="custom-select">
-                    {% for v, l in f.options %}
-                    <option value="{{ v }}"{{ ' selected' if v == f.value }}>{{ l }}</option>
-                    {% endfor %}
-                  </select>
-                  {% elif f.type == 'checkbox' %}
-                  <input name="{{ f.name }}" id="{{ f.id }}" value="1" type="checkbox"{{ ' checked' if f.checked }}>
-                  {% else %}
-                  <input name="{{ f.name }}" id="{{ f.id }}" size="{{ f.size }}" class="form-control" value="{{ f.value }}" type="text">
-                  {% endif %}
-                </td>
-              </tr>
-              {% endfor %}
-            </tbody></table>
-          </fieldset>
-          {% endfor %}
-          <div class="formbuttons">
-            <button class="btn btn-primary submit" type="submit" value="Save">Save</button>
-          </div>
-        </form>
-
-        <fieldset id="password-fieldset">
-          <legend>Change password</legend>
-          <form method="post" action="{{ url_for('views.settings_password') }}" class="propform">
-            <table class="layout">
-              <tbody>
-                <tr><td class="title"><label for="currentpass">Current password</label></td>
-                    <td><input type="password" name="_current" id="currentpass" class="form-control" autocomplete="current-password"></td></tr>
-                <tr><td class="title"><label for="newpass">New password</label></td>
-                    <td><input type="password" name="_new" id="newpass" class="form-control" autocomplete="new-password"></td></tr>
-                <tr><td class="title"><label for="confpass">Confirm password</label></td>
-                    <td><input type="password" name="_confirm" id="confpass" class="form-control" autocomplete="new-password"></td></tr>
-              </tbody>
-            </table>
-            <div class="formbuttons">
-              <button type="submit" class="btn btn-primary icon save">Save</button>
-            </div>
-          </form>
-        </fieldset>
-      </div>
-      {% else %}
-      <div class="content">
+      <div class="iframe-wrapper">
         <iframe id="preferences-frame" name="preferences-frame" title="Preferences form"
-                src="{{ url_for('static', filename='watermark.html') }}"></iframe>
+                src="{{ url_for('views.settings_preferences', section=open_section, _framed='1') if open_section else url_for('static', filename='watermark.html') }}"></iframe>
       </div>
-      {% endif %}
     </div>
 
 {% include "includes/footer.html" %}
