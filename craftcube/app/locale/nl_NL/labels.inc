@@ -708,3 +708,4 @@ $labels['archivetypefolder'] = 'Originele map';
 $labels['archivetypefolderyear'] = 'Jaar en de oorspronkelijke map (bv. Archief/2012/...)';
 $labels['archivetypefoldermonth'] = 'Jaar, maand en de oorspronkelijke map (bv. Archief/2012/06/...)';
 $labels['archivetypesender'] = 'Afzender e-mail';
+$labels['readonarchive'] = 'Markeer bericht al gelezen op archiveren';

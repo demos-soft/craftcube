@@ -307,6 +307,8 @@ def sections(prefs, folders):
                 _cb("flag_for_deletion", "Flag the message for deletion instead of delete", p),
                 _cb("skip_deleted", "Do not show deleted messages", p),
                 _cb("delete_junk", "Directly delete messages in Junk", p),
+                # archive plugin adds this row to the reference section
+                _cb("read_on_archive", "Mark the message as read on archive", p),
             ]),
             ("maintenance", "Maintenance", [
                 _sel("logout_purge", "Clear Trash on logout", p),

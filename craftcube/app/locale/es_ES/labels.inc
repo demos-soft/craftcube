@@ -727,3 +727,4 @@ $labels['archivetypefolder'] = 'Bandeja original';
 $labels['archivetypefolderyear'] = 'Año y la carpeta original (p.ej. Archivo/2012/...)';
 $labels['archivetypefoldermonth'] = 'Año, mes y la carpeta original (p.ej. Archivo/2012/06/...)';
 $labels['archivetypesender'] = 'Correo electrónico del remitente';
+$labels['readonarchive'] = 'Marcar el mensaje como leído al archivar';

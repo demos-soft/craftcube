@@ -718,3 +718,4 @@ $labels['archivetypefolder'] = 'Cartella di origine';
 $labels['archivetypefolderyear'] = 'Anno e la cartella originale (p.e. Archivio/2012/...)';
 $labels['archivetypefoldermonth'] = 'Anno, mese e la cartella originale (p.e. Archivio/2012/06/...)';
 $labels['archivetypesender'] = 'Mittente email';
+$labels['readonarchive'] = 'Segna i messaggi in archivio come letti';

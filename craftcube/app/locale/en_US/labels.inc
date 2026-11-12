@@ -806,3 +806,4 @@ $labels['archivetypefolder'] = 'Original folder';
 $labels['archivetypefolderyear'] = 'Year and the original folder (e.g. Archive/2012/...)';
 $labels['archivetypefoldermonth'] = 'Year, month and the original folder (e.g. Archive/2012/06/...)';
 $labels['archivetypesender'] = 'Sender email';
+$labels['readonarchive'] = 'Mark the message as read on archive';

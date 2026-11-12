@@ -738,3 +738,4 @@ $labels['archivetypefolder'] = 'Dossier original';
 $labels['archivetypefolderyear'] = 'Année et le dossier original (p. ex. Archive/2012/…)';
 $labels['archivetypefoldermonth'] = 'Année, mois et le dossier original (p. ex. Archive/2012/06/…)';
 $labels['archivetypesender'] = 'Courriel de l’expéditeur';
+$labels['readonarchive'] = 'Marquer le courriel comme lu lors de l’archivage';

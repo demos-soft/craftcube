@@ -70,3 +70,14 @@ class TestFolderSelectorParity:
         box.conf = lambda _k: "FALLBACK"
         box.imap = type("I", (), {"list_folders": lambda self: []})()
         assert Mailbox.special(box, "trash") == "Trash"
+
+    def test_server_section_has_read_on_archive_row(self, client, monkeypatch):
+        # the reference server section gains 'Mark the message as read on
+        # archive' from the archive plugin, after 'Directly delete messages
+        # in Junk' (verified row order in the reference DOM)
+        from app import views
+        monkeypatch.setattr(views, "folders_for_menu", lambda: [])
+        h = client.get("/settings/preferences/server?_framed=1").get_data(as_text=True)
+        assert 'name="_read_on_archive"' in h
+        assert h.index("_delete_junk") < h.index("_read_on_archive")
+        assert h.index("_read_on_archive") < h.index("Maintenance")
